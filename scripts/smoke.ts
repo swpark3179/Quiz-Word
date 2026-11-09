@@ -1,6 +1,8 @@
 /**
- * 화면 점검 — 실행 중인 개발 서버(npm run dev)를 설치된 Edge/Chrome 으로 열어 주요 흐름을 눌러 보고 스크린샷을 남긴다.
- * 실행: npx tsx scripts/smoke.ts [스크린샷 폴더]
+ * 화면 점검 — 실행 중인 앱(npm start 또는 npm run dev)을 설치된 Edge/Chrome 으로 열어 주요 흐름을 눌러 보고 스크린샷을 남긴다.
+ * 실행: npm run smoke [-- 스크린샷 폴더]
+ *   BROWSER=chrome            Edge 대신 Chrome 사용
+ *   BROWSER_PATH=/path/chrome 브라우저 실행 파일을 직접 지정
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -19,8 +21,23 @@ async function shot(page: Page, name: string) {
   await page.screenshot({ path: path.join(OUT, `${name}.png`), fullPage: false });
 }
 
+/** 요소가 스크롤하지 않고도 화면 안에 다 보이는지 */
+async function inView(page: Page, selector: string) {
+  const box = await page.locator(selector).first().boundingBox();
+  const view = page.viewportSize();
+  return !!box && !!view && box.y >= 0 && box.y + box.height <= view.height;
+}
+
+/** 단어장 목록(가상 스크롤 영역) */
+const LIST = 'main .overflow-y-auto';
+
 async function main() {
-  const browser = await chromium.launch({ channel: process.env.BROWSER ?? 'msedge', headless: true });
+  // BROWSER_PATH 로 실행 파일을 직접 지정할 수 있다 (Edge/Chrome 채널이 없는 환경)
+  const browser = await chromium.launch(
+    process.env.BROWSER_PATH
+      ? { executablePath: process.env.BROWSER_PATH, headless: true }
+      : { channel: process.env.BROWSER ?? 'msedge', headless: true },
+  );
   const ctx = await browser.newContext({ viewport: { width: 1360, height: 900 }, locale: 'ko-KR' });
   const page = await ctx.newPage();
   page.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`));
@@ -48,18 +65,82 @@ async function main() {
   // 한글 검색
   await page.goto(`${BASE}/words?q=${encodeURIComponent('해결')}`);
   await page.waitForTimeout(200);
-  const krCount = await page.locator('button:has(span.font-semibold)').count();
+  const krCount = await page.locator(`${LIST} button`).count();
   krCount > 0 ? ok(`한글 검색 결과 ${krCount}행`) : fail('한글 검색 결과 없음');
 
+  // 단축키 도움말 · 화면 이동
+  await page.goto(`${BASE}/`);
+  await page.waitForSelector('text=오늘도 조금씩');
+  await page.keyboard.press('Shift+Slash');
+  await page.waitForSelector('dialog[open]');
+  (await page.locator('dialog[open] >> text=키보드 단축키').count()) ? ok('? 로 단축키 도움말') : fail('단축키 도움말이 안 열림');
+  await shot(page, '03b-shortcuts');
+  await page.keyboard.press('Escape');
+  await page.keyboard.press('g');
+  await page.keyboard.press('w');
+  await page.waitForSelector('input[aria-label="단어 검색"]');
+  ok('G → W 로 단어장 이동');
+
+  // 빠르게 쳐도 글자가 빠지지 않는지, ↑↓ Enter 로 고르기
+  await page.keyboard.type('add');
+  await page.waitForTimeout(150);
+  const typed = await page.inputValue('input[aria-label="단어 검색"]');
+  typed === 'add' ? ok('빠른 입력 유지') : fail(`빠르게 치면 글자가 빠짐: "${typed}"`);
+  await page.keyboard.press('ArrowDown');
+  await page.keyboard.press('ArrowDown');
+  const picked = (await page.locator(`${LIST} button`).nth(2).locator('span.font-semibold').first().textContent())?.trim();
+  await page.keyboard.press('Enter');
+  await page.waitForSelector('h2');
+  const openedWord = (await page.locator('h2').first().textContent())?.trim();
+  openedWord === picked ? ok(`↑↓ Enter 로 "${picked}" 열기`) : fail(`고른 단어(${picked})와 열린 단어(${openedWord})가 다름`);
+
+  // 상세에서 이전·다음, 한 번에 목록으로
+  const position = () => page.locator('button[aria-label="이전 단어"] + span').textContent();
+  const posBefore = (await position())?.trim();
+  await page.keyboard.press('ArrowRight');
+  await page.waitForTimeout(150);
+  const posAfter = (await position())?.trim();
+  posBefore?.startsWith('3 /') && posAfter?.startsWith('4 /')
+    ? ok(`→ 로 다음 단어 (${posBefore} → ${posAfter})`)
+    : fail(`이전·다음 이동 실패 (${posBefore} → ${posAfter})`);
+  await page.keyboard.press('Backspace');
+  await page.waitForSelector('input[aria-label="단어 검색"]');
+  page.url().includes('q=add') ? ok('Backspace 한 번에 검색 결과로') : fail(`목록으로 돌아오지 못함: ${page.url()}`);
+
+  // 목록을 내려 보다가 단어를 열고 돌아오면 보던 위치 그대로
+  await page.click('aside a[href="#/"]');
+  await page.click('aside a[href="#/words"]');
+  await page.waitForSelector(`${LIST} button`);
+  await page.locator(LIST).evaluate((el) => (el.scrollTop = 6400));
+  await page.waitForTimeout(200);
+  await page.locator(`${LIST} button`).nth(14).click();
+  await page.waitForSelector('text=단어장으로');
+  await page.click('text=단어장으로');
+  await page.waitForSelector(`${LIST} button`);
+  const restored = await page.locator(LIST).evaluate((el) => el.scrollTop);
+  Math.abs(restored - 6400) < 5 ? ok('목록 위치 복원') : fail(`목록 위치가 복원되지 않음 (${restored})`);
+
   // 플래시카드
+  await page.goto(`${BASE}/flash`);
+  await page.waitForSelector('button:has-text("시작하기")');
+  /\d+장 시작하기/.test((await page.locator('button:has-text("시작하기")').textContent()) ?? '') ? ok('시작 버튼에 카드 수 표시') : fail('시작 버튼에 카드 수가 없음');
   await page.goto(`${BASE}/flash/play?set=all&basic=1&status=any&count=6&order=freq`);
-  await page.waitForSelector('text=모른다');
+  await page.waitForSelector('button:has-text("모른다")');
   await shot(page, '04-flash-front');
   const first = (await page.locator('.text-5xl, .text-6xl').first().textContent())?.trim();
   await page.keyboard.press('ArrowLeft'); // 모른다
   await page.waitForSelector('text=모른다고 했어요');
+  await page.waitForTimeout(250);
+  (await inView(page, 'button:has-text("다음")')) ? ok('플래시카드 "다음" 버튼이 스크롤 없이 보임') : fail('"다음" 버튼이 화면 밖에 있음');
   await shot(page, '05-flash-back');
   await page.keyboard.press('Space');
+  // 답한 뒤 Esc → 한 번 묻고, 계속하기를 누르면 그대로
+  await page.keyboard.press('Escape');
+  await page.waitForSelector('dialog[open]');
+  await page.keyboard.press('ArrowRight'); // 창이 떠 있는 동안에는 카드 단축키가 먹지 않아야 한다
+  (await page.locator('text=안다고 했어요').count()) ? fail('확인 창이 떠 있는데 카드 단축키가 동작함') : ok('Esc → 그만할지 확인');
+  await page.click('dialog[open] >> text=계속하기');
+  await page.waitForTimeout(100);
   let reappeared = false;
   for (let i = 0; i < 12; i++) {
     const cur = await page.locator('.text-5xl, .text-6xl').first().textContent().catch(() => null);
@@ -86,7 +167,11 @@ async function main() {
     if (n < 4) fail(`보기 수 ${n}`);
     await page.keyboard.press('1');
     await page.waitForTimeout(80);
-    if (i === 0) await shot(page, '08-quiz-answered');
+    if (i === 0) {
+      await page.waitForTimeout(250);
+      (await inView(page, 'button:has-text("다음 문제")')) ? ok('객관식 "다음 문제" 버튼이 스크롤 없이 보임') : fail('"다음 문제" 버튼이 화면 밖에 있음');
+      await shot(page, '08-quiz-answered');
+    }
     await page.keyboard.press('Enter');
     await page.waitForTimeout(80);
   }
@@ -128,6 +213,14 @@ async function main() {
   await page.goto(`${BASE}/flash/play?set=core&status=any&count=3`);
   await page.waitForTimeout(250);
   await shot(page, '15-mobile-flash');
+  (await page.locator('nav.fixed').count()) === 0 ? ok('좁은 화면: 학습 중에는 하단 탭 숨김') : fail('학습 중에 하단 탭이 보임');
+  await page.goto(`${BASE}/words`);
+  await page.waitForSelector(`${LIST} button`);
+  const tabs = await page.locator('nav.fixed').boundingBox();
+  const listBox = await page.locator(LIST).boundingBox();
+  tabs && listBox && listBox.y + listBox.height <= tabs.y + 1 ? ok('좁은 화면: 하단 탭이 목록을 가리지 않음') : fail('하단 탭이 목록을 가림');
+  (await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)) ? ok('좁은 화면: 가로 넘침 없음') : fail('좁은 화면에서 가로로 넘침');
+  await shot(page, '16-mobile-words');
 
   await browser.close();
   console.log(results.join('\n'));

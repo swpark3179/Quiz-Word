@@ -10,7 +10,9 @@ import type { Word } from '../lib/schema';
 import { speak } from '../lib/tts';
 import { useProgress } from '../store/progress';
 import { Highlighted } from './ContextSentence';
-import { Button, Card, Kbd, PosBadge, ProgressBar, SpeakButton } from './ui';
+import { isModalOpen, isTyping } from './Dialog';
+import { SessionHeader, StickyActions, useExitGuard } from './SessionParts';
+import { Button, Card, Kbd, PosBadge, SpeakButton } from './ui';
 import { WordBrief } from './WordInfo';
 
 export type QuizMode = 'meaning' | 'context' | 'mixed';
@@ -47,6 +49,9 @@ export function QuizSession({ ids: initialIds, mode, title, onResult, onExit }: 
 
   const id = ids[index];
   const w = id ? WORD_BY_ID.get(id) : undefined;
+  const finished = index >= ids.length;
+  const wrongIds = useMemo(() => ids.filter((x) => results[x] === false), [ids, results]);
+  const { requestExit, dialog: exitDialog } = useExitGuard(onExit, !finished && Object.keys(results).length > 0);
   const q = useMemo(() => {
     if (!w) return undefined;
     return questions[index] ?? makeQuestion(w, mode, choices);
@@ -92,7 +97,20 @@ export function QuizSession({ ids: initialIds, mode, title, onResult, onExit }: 
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if (e.ctrlKey || e.metaKey || e.altKey || isTyping(e) || isModalOpen()) return;
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        requestExit();
+        return;
+      }
+      if (finished) {
+        // 결과 화면: Enter 로 틀린 것만 다시 (없으면 나가기)
+        if (e.key !== 'Enter') return;
+        e.preventDefault();
+        if (wrongIds.length) restart(wrongIds);
+        else onExit();
+        return;
+      }
       if (e.key.toLowerCase() === 'p' && w) {
         speak(q?.context ? q.context.en : w.word, { voiceURI: settings.ttsVoice, rate: settings.ttsRate });
         return;
@@ -110,10 +128,9 @@ export function QuizSession({ ids: initialIds, mode, title, onResult, onExit }: 
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [picked, q, choose, next, w, settings]);
+  }, [picked, q, choose, next, w, settings, finished, wrongIds, requestExit, onExit]);
 
-  if (index >= ids.length) {
-    const wrongIds = ids.filter((x) => results[x] === false);
+  if (finished) {
     const correctN = ids.length - wrongIds.length;
     const pct = Math.round((correctN / Math.max(1, ids.length)) * 100);
     return (
@@ -146,12 +163,12 @@ export function QuizSession({ ids: initialIds, mode, title, onResult, onExit }: 
           <div className="mt-8 flex flex-wrap justify-center gap-2">
             {wrongIds.length > 0 && (
               <Button variant="primary" onClick={() => restart(wrongIds)}>
-                <RotateCcw size={16} /> 틀린 것만 다시 풀기
+                <RotateCcw size={16} /> 틀린 것만 다시 풀기 <Kbd>Enter</Kbd>
               </Button>
             )}
             <Button onClick={() => restart([...ids].sort(() => Math.random() - 0.5))}>전체 다시</Button>
-            <Button variant="ghost" onClick={onExit}>
-              나가기
+            <Button variant={wrongIds.length ? 'ghost' : 'primary'} onClick={onExit}>
+              나가기 <Kbd>{wrongIds.length ? 'Esc' : 'Enter'}</Kbd>
             </Button>
           </div>
         </Card>
@@ -165,15 +182,7 @@ export function QuizSession({ ids: initialIds, mode, title, onResult, onExit }: 
 
   return (
     <div className="mx-auto max-w-2xl">
-      <div className="mb-4 flex items-center gap-3">
-        <button onClick={onExit} className="rounded-lg p-1.5 text-muted hover:bg-surface-2 hover:text-ink" title="나가기">
-          <X size={18} />
-        </button>
-        <ProgressBar value={index + (answered ? 1 : 0)} max={ids.length} className="flex-1" />
-        <span className="text-[13px] tabular-nums text-muted">
-          {index + 1} / {ids.length}
-        </span>
-      </div>
+      <SessionHeader onExit={requestExit} value={index + (answered ? 1 : 0)} max={ids.length} label={`${index + 1} / ${ids.length}`} />
 
       <Card key={`${index}-${ids.length}`} className="anim-card-in p-6 sm:p-8">
         {q.mode === 'context' && q.context ? (
@@ -246,22 +255,24 @@ export function QuizSession({ ids: initialIds, mode, title, onResult, onExit }: 
               {wasCorrect ? '정답이에요' : '틀렸어요 — 오답노트에 담았어요'}
             </div>
             <WordBrief w={w} contextLimit={1} highlightSense={q.context?.sense} />
-            <div className="mt-6 flex items-center justify-between">
+            {/* 카드 안쪽 여백(p-6 sm:p-8)을 지우고 카드 아래 끝에 맞춘다 */}
+            <StickyActions className="-mx-6 -mb-6 mt-6 px-6 sm:-mx-8 sm:-mb-8 sm:px-8">
               <Link to={`/word/${w.id}`} target="_blank" className="text-[13px] font-medium text-muted hover:text-primary">
                 상세 보기 ↗
               </Link>
-              <Button variant="primary" onClick={next}>
+              <Button variant="primary" className="min-w-28" onClick={next}>
                 {index + 1 < ids.length ? '다음 문제' : '결과 보기'} <Kbd>Enter</Kbd>
               </Button>
-            </div>
+            </StickyActions>
           </div>
         )}
       </Card>
       {!answered && (
-        <div className="mt-4 text-center text-[12px] text-muted">
-          <Kbd>1</Kbd>~<Kbd>{q.options.length}</Kbd> 보기 선택 · <Kbd>P</Kbd> 발음
+        <div className="keys-hint mt-4 text-center text-[12px] text-muted">
+          <Kbd>1</Kbd>~<Kbd>{q.options.length}</Kbd> 보기 선택 · <Kbd>P</Kbd> 발음 · <Kbd>Esc</Kbd> 그만하기
         </div>
       )}
+      {exitDialog}
     </div>
   );
 }

@@ -240,3 +240,55 @@ code.inline {
 ::selection {
   background: var(--primary-soft);
 }
+
+/* 키보드로 옮겨 다닐 때 지금 위치가 보이게 */
+:where(a, button, select, summary, [role='switch']):focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+/* 스크롤 영역 안의 줄은 바깥 테두리가 잘리므로 안쪽으로 */
+.focus-inset:focus-visible {
+  outline-offset: -2px;
+}
+
+/* 모달 (<dialog>) */
+dialog.modal {
+  margin: auto;
+  padding: 0;
+  width: min(calc(100vw - 2rem), var(--modal-width, 26rem));
+  max-height: min(85vh, 44rem);
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-lg);
+}
+dialog.modal:focus {
+  outline: none;
+}
+dialog.modal[open] {
+  animation: card-in 0.18s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+dialog.modal::backdrop {
+  background: rgb(10 12 24 / 0.45);
+  backdrop-filter: blur(2px);
+}
+
+/* 터치 기기(키보드 없음)에서는 단축키 표시를 감춘다 */
+@media (hover: none) and (pointer: coarse) {
+  .kbd,
+  .keys-hint {
+    display: none;
+  }
+}
+
+/* 움직임 줄이기를 켠 사용자에게는 애니메이션을 보여 주지 않는다 (모든 애니메이션의 끝 모습이 기본 모습이라 꺼도 된다) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
