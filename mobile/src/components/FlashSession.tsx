@@ -18,11 +18,10 @@ import Animated, {
   withSpring,
   withTiming,
 } from 'react-native-reanimated';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { answer, createQueue, currentId, isFinished, summary, type FlashQueue } from '@shared/flashQueue';
 import type { Word } from '@shared/schema';
 import { CountUp, ProgressRing } from '@/components/motion';
-import { Button, Icon, PosBadge, PressableScale, ProgressBar, T } from '@/components/ui';
+import { Button, Icon, PosBadge, PressableScale, ProgressBar, ScreenSafeArea, T } from '@/components/ui';
 import { SpeakButton, WordBrief } from '@/components/word';
 import { WORD_BY_ID } from '@/data/words';
 import { speak } from '@/lib/tts';
@@ -114,7 +113,7 @@ export function FlashSession({ ids, title, onAnswer }: FlashSessionProps) {
   const repeat = !!id && id in queue.first;
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: c.bg }} edges={['top', 'bottom']}>
+    <ScreenSafeArea style={{ backgroundColor: c.bg }}>
       {/* 상단 막대 */}
       <View style={styles.bar}>
         <Pressable onPress={exit} hitSlop={10} style={[styles.close, { backgroundColor: c.surface2 }]} accessibilityLabel="닫기">
@@ -170,7 +169,7 @@ export function FlashSession({ ids, title, onAnswer }: FlashSessionProps) {
 
       {/* 모른다 → "+N장 뒤 다시" 칩이 카운터로 날아간다 */}
       {chipKey > 0 && stage && counter && <RequeueChip key={chipKey} from={{ x: stage.x + stage.width / 2, y: stage.y + stage.height / 2 }} to={{ x: counter.x, y: counter.y }} reduced={reduced} />}
-    </SafeAreaView>
+    </ScreenSafeArea>
   );
 }
 
@@ -410,7 +409,7 @@ function FlashSummary({ queue, title, onAgain }: { queue: FlashQueue; title: str
     void haptic.done();
   }, []);
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: c.bg }} edges={['top', 'bottom']}>
+    <ScreenSafeArea style={{ backgroundColor: c.bg }}>
       <ScrollView contentContainerStyle={styles.summary}>
         <T v="subhead" color="muted">
           {title}
@@ -457,7 +456,7 @@ function FlashSummary({ queue, title, onAgain }: { queue: FlashQueue; title: str
           <Button title="닫기" variant="tinted" style={{ flex: 1 }} onPress={() => router.back()} />
         </View>
       </Animated.View>
-    </SafeAreaView>
+    </ScreenSafeArea>
   );
 }
 
