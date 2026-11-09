@@ -115,7 +115,19 @@ jobs:
           else
             echo "::warning::openssl could not parse the p12 even with -legacy; relying on 'security import'."
           fi
-          security import cert.p12 -k "$KEYCHAIN" -P "$IOS_P12_PASSWORD" -T /usr/bin/codesign -T /usr/bin/security
+          import_p12() { security import "$1" -k "$KEYCHAIN" -P "$IOS_P12_PASSWORD" -T /usr/bin/codesign -T /usr/bin/security; }
+          if ! import_p12 cert.p12; then
+            # Windows 내보내기·OpenSSL 3 기본값(AES-256 + SHA-256 MAC) p12 는 macOS 가 읽지 못하고
+            # "MAC verification failed (wrong password?)" 를 낸다 → 3DES + SHA-1 MAC 형식으로 바꿔 다시 넣는다.
+            echo "::warning::macOS could not import the p12 (likely AES/SHA-256 format); converting to 3DES/SHA-1 and retrying."
+            ( umask 077; openssl pkcs12 -legacy -in cert.p12 -nodes -passin "pass:$IOS_P12_PASSWORD" -out cert.pem ) \
+              || { rm -f cert.p12 cert.pem; echo "::error::openssl could not open the p12 either — check IOS_P12_PASSWORD / IOS_P12_BASE64."; exit 1; }
+            openssl pkcs12 -export -in cert.pem -passout "pass:$IOS_P12_PASSWORD" \
+              -certpbe PBE-SHA1-3DES -keypbe PBE-SHA1-3DES -macalg sha1 -out cert-legacy.p12
+            rm -f cert.pem
+            import_p12 cert-legacy.p12
+          fi
+          rm -f cert.p12 cert-legacy.p12
           security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$IOS_KEYCHAIN_PASSWORD" $KEYCHAIN
           PROFILE_DIR="$HOME/Library/MobileDevice/Provisioning Profiles"
           mkdir -p "$PROFILE_DIR"
