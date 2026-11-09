@@ -36,6 +36,9 @@ const config: ExpoConfig = {
     'expo-router',
     'expo-sqlite',
     'expo-font',
+    // expo-audio 는 발음 재생용 오디오 세션 설정에만 쓰지만, 네이티브 코드에 녹음 API 가 들어 있어
+    // 마이크 사용 설명이 없으면 App Store Connect 가 빌드를 반려한다(ITMS-90683). 앱은 마이크 권한을 요청하지 않는다.
+    ['expo-audio', { microphonePermission: '이 앱은 마이크를 사용하지 않습니다. (발음 재생용 오디오 모듈에 포함된 권한 문구)' }],
     [
       'expo-splash-screen',
       {
