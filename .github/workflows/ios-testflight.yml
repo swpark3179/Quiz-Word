@@ -13,7 +13,8 @@
 #     IOS_P12_PASSWORD                - p12 비밀번호
 #     IOS_KEYCHAIN_PASSWORD           - 빌드용 임시 키체인 비밀번호 (아무 문자열)
 #     IOS_TEAM_ID                     - Apple Developer Team ID
-#     IOS_CODE_SIGN_IDENTITY          - 예: "Apple Distribution"
+#     IOS_CODE_SIGN_IDENTITY          - p12 인증서 이름. 보통 Apple Distribution (따옴표 없이)
+#                                       또는 전체 이름 Apple Distribution: 이름 (TEAMID). 2019년 이전 인증서는 iPhone Distribution
 #     ASC_KEY_ID / ASC_ISSUER_ID      - App Store Connect API 키
 #     ASC_PRIVATE_KEY                 - AuthKey_XXXX.p8 내용 (원문 또는 base64)
 #   이 앱용으로 새로 만들기:
@@ -127,6 +128,9 @@ jobs:
           IOS_CODE_SIGN_IDENTITY: ${{ secrets.IOS_CODE_SIGN_IDENTITY }}
           IOS_PROVISIONING_PROFILE_NAME: ${{ secrets.IOS_PROVISIONING_PROFILE_NAME }}
         run: |
+          for v in IOS_TEAM_ID IOS_CODE_SIGN_IDENTITY IOS_PROVISIONING_PROFILE_NAME; do
+            if [ -z "${!v}" ]; then echo "::error::Missing secret $v"; exit 1; fi
+          done
           WORKSPACE=$(ls -d *.xcworkspace | head -n1)
           SCHEME=$(basename "$WORKSPACE" .xcworkspace)
           xcodebuild \

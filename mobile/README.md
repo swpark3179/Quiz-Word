@@ -70,6 +70,9 @@ Quiz-Bank 와 같은 방식(Expo prebuild → xcodebuild → altool)이며 macOS
    - Quiz-Bank 와 같은 값: `IOS_P12_BASE64`, `IOS_P12_PASSWORD`, `IOS_KEYCHAIN_PASSWORD`, `IOS_TEAM_ID`, `IOS_CODE_SIGN_IDENTITY`, `ASC_KEY_ID`, `ASC_ISSUER_ID`, `ASC_PRIVATE_KEY`
    - 새로 만든 값: `IOS_PROVISIONING_PROFILE_BASE64` (1번 프로파일 파일을 base64), `IOS_PROVISIONING_PROFILE_NAME` (프로파일 이름)
    - base64 만들기 (PowerShell): `[Convert]::ToBase64String([IO.File]::ReadAllBytes("profile.mobileprovision")) | Set-Clipboard`
+   - `IOS_CODE_SIGN_IDENTITY`: p12 에 든 배포 인증서 이름. 보통 `Apple Distribution` 만 넣으면 됩니다 (따옴표·공백 없이, 전체 이름 `Apple Distribution: 이름 (TEAMID)` 도 가능).
+     정확한 이름은 `certutil -dump cert.p12` (Windows, Subject 의 CN) 또는 `security find-identity -v -p codesigning` (Mac) 으로 확인합니다.
+     `Apple Development`(개발용)는 안 되고, 1번 프로파일을 만들 때 고른 인증서와 같아야 합니다.
 4. **Expo (OTA)**
    - `cd mobile && npx eas-cli@latest login` (계정 swpark3179)
    - `npx eas-cli@latest init` → 알려 주는 project id 를 `app.config.ts` 의 `EAS_PROJECT_ID` 에 붙여 넣기
