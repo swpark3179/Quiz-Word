@@ -17,11 +17,10 @@ import Animated, {
   withSpring,
   withTiming,
 } from 'react-native-reanimated';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { buildContextQuestion, buildMeaningQuestion, type Question } from '@shared/distractors';
 import type { Word } from '@shared/schema';
 import { CountUp, ProgressRing } from '@/components/motion';
-import { Button, Icon, PosBadge, ProgressBar, T } from '@/components/ui';
+import { Button, Icon, PosBadge, ProgressBar, ScreenSafeArea, T } from '@/components/ui';
 import { Highlighted, SpeakButton, WordBrief } from '@/components/word';
 import { contextsOf, WORD_BY_ID, WORDS } from '@/data/words';
 import { speak } from '@/lib/tts';
@@ -112,7 +111,7 @@ export function QuizSession({ ids: initialIds, mode, title, onResult }: { ids: s
   const ok = answered && picked === correctIndex;
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: c.bg }} edges={['top', 'bottom']}>
+    <ScreenSafeArea style={{ backgroundColor: c.bg }}>
       <View style={styles.bar}>
         <Pressable onPress={exit} hitSlop={10} style={[styles.close, { backgroundColor: c.surface2 }]} accessibilityLabel="닫기">
           <Icon name="xmark" size={14} color={c.text2} />
@@ -183,7 +182,7 @@ export function QuizSession({ ids: initialIds, mode, title, onResult }: { ids: s
           </Animated.View>
         )}
       </ScrollView>
-    </SafeAreaView>
+    </ScreenSafeArea>
   );
 }
 
@@ -252,7 +251,7 @@ function QuizSummary({ ids, results, title, onRestart }: { ids: string[]; result
     void haptic.done();
   }, []);
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: c.bg }} edges={['top', 'bottom']}>
+    <ScreenSafeArea style={{ backgroundColor: c.bg }}>
       <ScrollView contentContainerStyle={styles.summary}>
         <T v="subhead" color="muted">
           {title}
@@ -291,7 +290,7 @@ function QuizSummary({ ids, results, title, onRestart }: { ids: string[]; result
           <Button title="닫기" variant="tinted" style={{ flex: 1 }} onPress={() => router.back()} />
         </View>
       </Animated.View>
-    </SafeAreaView>
+    </ScreenSafeArea>
   );
 }
 

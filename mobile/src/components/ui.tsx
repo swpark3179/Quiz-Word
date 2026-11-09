@@ -3,6 +3,7 @@ import { SymbolView, type SFSymbol } from 'expo-symbols';
 import { useEffect, type ReactNode } from 'react';
 import { Pressable, StyleSheet, Text, View, type PressableProps, type StyleProp, type TextProps, type TextStyle, type ViewStyle } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { STATUS_LABEL, type WordStatus } from '@shared/srs';
 import { elevation, motion, posColor, radius, type, useTheme, type Colors, type TypeVariant } from '@/theme';
 import { haptic } from '@/theme/haptics';
@@ -226,6 +227,21 @@ export function ProgressBar({ value, max, style }: { value: number; max: number;
       <Animated.View style={[{ height: '100%', borderRadius: 3, backgroundColor: c.primary }, a]} />
     </View>
   );
+}
+
+/* ───── 전체 화면 모달의 안전 영역 ───── */
+/**
+ * 세션(플래시카드·객관식·복습)처럼 fullScreenModal 로 띄우는 화면의 바깥 틀.
+ *
+ * react-native-safe-area-context 의 <SafeAreaView> 는 네이티브 모달 안에서 루트 SafeAreaProvider 를 찾지 못해
+ * 자기 뷰의 여백을 직접 재는데, 모달이 아래에서 올라오는 도중(아직 화면 밖)에 잰 0 이 그대로 굳는다 (New Architecture).
+ * 그러면 닫기 버튼이 상태 표시줄(시계·카메라) 자리에 붙어 누를 수 없다.
+ * 그래서 루트 Provider 가 아는 기기 화면의 여백을 패딩으로 직접 준다 — fullScreenModal 은 화면 전체를 덮으므로
+ * 이 값이 곧 모달의 여백이다 (react-navigation 의 native-stack 도 fullScreenModal 헤더에 같은 값을 쓴다).
+ */
+export function ScreenSafeArea({ children, style }: { children: ReactNode; style?: StyleProp<ViewStyle> }) {
+  const insets = useSafeAreaInsets();
+  return <View style={[{ flex: 1, paddingTop: insets.top, paddingBottom: insets.bottom }, style]}>{children}</View>;
 }
 
 /* ───── 빈 화면 ───── */
