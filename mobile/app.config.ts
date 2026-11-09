@@ -25,7 +25,7 @@ const config: ExpoConfig = {
   ios: {
     icon: { light: './assets/icon.png', dark: './assets/icon-dark.png', tinted: './assets/icon-tinted.png' },
     supportsTablet: false,
-    bundleIdentifier: 'com.swpark3179.quizword',
+    bundleIdentifier: 'com.swpark3179.quizword2',
     buildNumber: BUILD_NUMBER,
     infoPlist: {
       ITSAppUsesNonExemptEncryption: false,

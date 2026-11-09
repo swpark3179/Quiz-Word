@@ -17,7 +17,7 @@
 #     ASC_KEY_ID / ASC_ISSUER_ID      - App Store Connect API 키
 #     ASC_PRIVATE_KEY                 - AuthKey_XXXX.p8 내용 (원문 또는 base64)
 #   이 앱용으로 새로 만들기:
-#     IOS_PROVISIONING_PROFILE_BASE64 - com.swpark3179.quizword 의 App Store 프로비저닝 프로파일 base64
+#     IOS_PROVISIONING_PROFILE_BASE64 - com.swpark3179.quizword2 의 App Store 프로비저닝 프로파일 base64
 #     IOS_PROVISIONING_PROFILE_NAME   - 그 프로파일의 Name (UUID 아님)
 
 name: iOS TestFlight
@@ -31,7 +31,7 @@ on:
         default: true
 
 env:
-  BUNDLE_ID: com.swpark3179.quizword
+  BUNDLE_ID: com.swpark3179.quizword2
   NODE_VERSION: 22
 
 jobs:

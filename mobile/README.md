@@ -61,10 +61,10 @@ Quiz-Bank 와 같은 방식(Expo prebuild → xcodebuild → altool)이며 macOS
 ### 처음 한 번만 할 일 (체크리스트)
 
 1. **Apple Developer** (developer.apple.com → Certificates, IDs & Profiles)
-   - Identifiers → **App ID** 추가: `com.swpark3179.quizword`
+   - Identifiers → **App ID** 추가: `com.swpark3179.quizword2`
    - Profiles → **App Store** 배포 프로파일 생성 (기존 Apple Distribution 인증서 선택) → 다운로드
 2. **App Store Connect** → 앱 → `+` 새로운 앱
-   - 플랫폼 iOS, 번들 ID `com.swpark3179.quizword`, SKU 아무 값, 이름은 App Store 전체에서 유일해야 함 (예: "Quiz Word SW")
+   - 플랫폼 iOS, 번들 ID `com.swpark3179.quizword2`, SKU 아무 값, 이름은 App Store 전체에서 유일해야 함 (예: "Quiz Word SW")
    - TestFlight → 내부 테스트 그룹 만들고 본인 추가 (내부 테스트는 심사 없음)
 3. **GitHub** 저장소(private 권장)를 만들고 이 폴더를 push → Settings → Secrets and variables → Actions 에 시크릿 등록
    - Quiz-Bank 와 같은 값: `IOS_P12_BASE64`, `IOS_P12_PASSWORD`, `IOS_KEYCHAIN_PASSWORD`, `IOS_TEAM_ID`, `IOS_CODE_SIGN_IDENTITY`, `ASC_KEY_ID`, `ASC_ISSUER_ID`, `ASC_PRIVATE_KEY`
