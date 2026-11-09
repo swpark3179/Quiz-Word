@@ -65,6 +65,54 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 프로파일이 번들 ID·팀·이름과 안 맞으면 archive 단계(약 10분 뒤)에서야 실패하므로 먼저 검사한다
+      - name: Validate provisioning profile
+        env:
+          IOS_PROVISIONING_PROFILE_BASE64: ${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}
+          IOS_PROVISIONING_PROFILE_NAME: ${{ secrets.IOS_PROVISIONING_PROFILE_NAME }}
+          IOS_TEAM_ID: ${{ secrets.IOS_TEAM_ID }}
+        run: |
+          PROFILE="$RUNNER_TEMP/check.mobileprovision"
+          echo "$IOS_PROVISIONING_PROFILE_BASE64" | base64 -d > "$PROFILE" 2>/dev/null || true
+          # .mobileprovision 은 서명된 CMS 지만 plist 본문이 평문으로 들어 있어 그 부분만 잘라 읽는다
+          status=0
+          python3 - "$PROFILE" <<'PY' || status=$?
+          import datetime, os, plistlib, sys
+          raw = open(sys.argv[1], 'rb').read()
+          start, end = raw.find(b'<?xml'), raw.find(b'</plist>')
+          if start < 0 or end < 0:
+              print('::error::IOS_PROVISIONING_PROFILE_BASE64 가 .mobileprovision 파일의 base64 가 아닙니다.')
+              sys.exit(1)
+          p = plistlib.loads(raw[start:end + len(b'</plist>')])
+          bundle = os.environ['BUNDLE_ID']
+          team = (p.get('TeamIdentifier') or [''])[0]
+          app_id = p.get('Entitlements', {}).get('application-identifier', '')
+          profile_bundle = app_id.split('.', 1)[1] if '.' in app_id else app_id
+          expires = p.get('ExpirationDate')
+          print(f"Profile App ID: {profile_bundle} / expires: {expires:%Y-%m-%d}" if expires else f"Profile App ID: {profile_bundle}")
+          errors = []
+          if profile_bundle not in (bundle, '*'):
+              errors.append(f'프로파일의 App ID 는 {profile_bundle} 인데 앱 번들 ID 는 {bundle} 입니다. '
+                            f'Apple Developer 에서 {bundle} 용 App Store 프로파일을 새로 만들고 '
+                            'IOS_PROVISIONING_PROFILE_BASE64 와 IOS_PROVISIONING_PROFILE_NAME 을 바꾸세요.')
+          want_team = os.environ.get('IOS_TEAM_ID', '')
+          if want_team and team != want_team:
+              errors.append('프로파일의 Team ID 가 IOS_TEAM_ID 와 다릅니다.')
+          want_name = os.environ.get('IOS_PROVISIONING_PROFILE_NAME', '')
+          if want_name and p.get('Name') != want_name:
+              errors.append('IOS_PROVISIONING_PROFILE_NAME 이 프로파일의 Name 과 다릅니다 (UUID 가 아니라 Name, 대소문자·공백까지 같아야 함).')
+          if p.get('ProvisionedDevices') or p.get('ProvisionsAllDevices'):
+              errors.append('App Store 배포용 프로파일이 아닙니다 (Development / Ad Hoc / Enterprise). Distribution → App Store Connect 로 만드세요.')
+          now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
+          if expires and expires < now:
+              errors.append(f'프로파일이 {expires:%Y-%m-%d} 에 만료됐습니다. 다시 만드세요.')
+          for e in errors:
+              print(f'::error::{e}')
+          sys.exit(1 if errors else 0)
+          PY
+          rm -f "$PROFILE"
+          exit $status
+
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}

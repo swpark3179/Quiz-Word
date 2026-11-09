@@ -62,6 +62,7 @@ Quiz-Bank 와 같은 방식(Expo prebuild → xcodebuild → altool)이며 macOS
 
 1. **Apple Developer** (developer.apple.com → Certificates, IDs & Profiles)
    - Identifiers → **App ID** 추가: `com.swpark3179.quizword2`
+     (번들 ID 를 바꾸면 그 ID 로 App ID·프로파일을 다시 만들고 프로파일 시크릿 2개를 바꿔야 합니다. 워크플로가 빌드 전에 검사합니다)
    - Profiles → **App Store** 배포 프로파일 생성 (기존 Apple Distribution 인증서 선택) → 다운로드
 2. **App Store Connect** → 앱 → `+` 새로운 앱
    - 플랫폼 iOS, 번들 ID `com.swpark3179.quizword2`, SKU 아무 값, 이름은 App Store 전체에서 유일해야 함 (예: "Quiz Word SW")
