@@ -32,6 +32,7 @@ export default function RootLayout() {
       <ThemeProvider value={navTheme}>
         <StatusBar style="auto" />
         <Stack screenOptions={{ headerTintColor: c.primary, headerBackTitle: '뒤로', contentStyle: { backgroundColor: c.bg } }}>
+          <Stack.Screen name="index" options={{ headerShown: false }} />
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen
             name="word/[id]"
