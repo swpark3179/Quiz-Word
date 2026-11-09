@@ -1,0 +1,1479 @@
+[
+ {
+  "lemma": "abandon",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "abandon",
+   "word": "abandon",
+   "pos": "동사",
+   "ipa": "əˈbændən",
+   "meaning": "(계획·방식을) 버리다, 포기하다"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:abandon.0",
+    "en": "...sometimes referencing abandoned approaches or maintaining exploratory context that confuses actual implementation work.",
+    "ko": "때로는 폐기된 접근법을 다시 언급하거나, 탐색용 맥락을 계속 끌고 가 실제 구현 작업을 혼란스럽게 만든다."
+   }
+  ]
+ },
+ {
+  "lemma": "address",
+  "kind": "vocab-core",
+  "surfaces": [
+   "addresses",
+   "address"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "address",
+   "word": "address",
+   "pos": "동사·명사",
+   "ipa": "əˈdres",
+   "meaning": "① (문제를) 다루다, 해결하다 ② 주소"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#20.1",
+    "en": "The address subagent keeps asking which customer account it is working on."
+   },
+   {
+    "sid": "lesson-d2#18.3",
+    "en": "What combination of changes best addresses this while preserving each agent's ability to decide when to act versus respond?"
+   },
+   {
+    "sid": "lesson-d5#3.2",
+    "en": "Which practice best addresses this failure mode going forward?"
+   },
+   {
+    "sid": "lesson-d3#27.2",
+    "en": "Report each failure sequentially in its own message: first address the currency-formatting mismatch, and once confirmed fixed, the filename extension issue, because the two problems are independent."
+   },
+   {
+    "sid": "lesson-d1#35.2",
+    "en": "What restructuring addresses this attention dilution problem?"
+   },
+   {
+    "sid": "lesson-d5#10.3",
+    "en": "Refer the request to a supervisor, who can decide cases the written policy does not address"
+   },
+   {
+    "sid": "lesson-d1#6.2",
+    "en": "Which change addresses the problem?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:address.0",
+    "en": "What's the most effective way to address this?",
+    "ko": "이 문제를 해결하는 가장 효과적인 방법은?"
+   },
+   {
+    "vid": "vocab:address.1",
+    "en": "...also want to update my shipping address for order #5678.",
+    "ko": "order #5678 의 배송 주소도 바꾸고 싶다."
+   }
+  ]
+ },
+ {
+  "lemma": "agent",
+  "kind": "new",
+  "surfaces": [
+   "agent",
+   "agents"
+  ],
+  "freq": 185,
+  "sentences": [
+   {
+    "sid": "lesson-d1#1.0",
+    "en": "An architect is building a client-side agent loop against the Messages API for a data-cleanup task."
+   },
+   {
+    "sid": "lesson-d2#1.0",
+    "en": "Your agent has two user-defined tools, and Claude keeps calling the wrong one."
+   },
+   {
+    "sid": "lesson-d4#33.0",
+    "en": "An insurer's claims agent calls the company's own policy-database lookup tool, reads what comes back, and then decides on its next step, often over several turns."
+   },
+   {
+    "sid": "lesson-d5#10.0",
+    "en": "A retail customer asks a support agent to match a lower price they found on a competitor's website."
+   },
+   {
+    "sid": "mock04#1.0",
+    "en": "[Scenario: Customer Support Resolution Agent]"
+   },
+   {
+    "sid": "sample01#1.1",
+    "en": "In production, the agent occasionally calls the wrong tool and sometimes misses tool calls entirely."
+   },
+   {
+    "sid": "selfcheck-d1-kor#13.0",
+    "en": "시험 가이드 기준으로, Agent SDK의 코디네이터가 정의해 둔 서브에이전트를 생성할 수 있게 하는 설정으로 가장 알맞은 것은?"
+   },
+   {
+    "sid": "selfcheck-d2-kor#12.0",
+    "en": "Agent SDK 커스텀 도구 핸들러에서 예외를 잡지 않으면 어떻게 되나?"
+   }
+  ]
+ },
+ {
+  "lemma": "agreement",
+  "kind": "new",
+  "surfaces": [
+   "agreement"
+  ],
+  "freq": 2,
+  "maybeProper": true,
+  "sentences": [
+   {
+    "sid": "lesson-d4#23.1",
+    "en": "The contract says only that renewal terms are set out in the Master Agreement, and that document was never sent to the pipeline."
+   },
+   {
+    "sid": "lesson-d4#23.6",
+    "en": "Stop retrying, make `renewal_date` optional so the model can report that it is missing, and send the record to a person or supply the Master Agreement"
+   }
+  ]
+ },
+ {
+  "lemma": "call",
+  "kind": "new",
+  "surfaces": [
+   "calls",
+   "call",
+   "called",
+   "calling"
+  ],
+  "freq": 147,
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.1",
+    "en": "Separately, each time the coordinator invokes this subagent it supplies a different per-call prompt describing the specific table and migration at hand."
+   },
+   {
+    "sid": "lesson-d2#1.0",
+    "en": "Your agent has two user-defined tools, and Claude keeps calling the wrong one."
+   },
+   {
+    "sid": "lesson-d3#26.0",
+    "en": "In a checkout module, orderTotal() calls applyDiscount() and addTax() internally."
+   },
+   {
+    "sid": "lesson-d4#15.1",
+    "en": "The system prompt also says: \"Before calling the tool, briefly explain which clauses look ambiguous.\""
+   },
+   {
+    "sid": "lesson-d5#18.0",
+    "en": "A team is designing the error payload that subagents return to a coordinator when a tool call fails."
+   },
+   {
+    "sid": "mock04#19.1",
+    "en": "To rename a widely-used internal API, Claude must first locate every call site across a large monorepo."
+   },
+   {
+    "sid": "sample01#1.1",
+    "en": "In production, the agent occasionally calls the wrong tool and sometimes misses tool calls entirely."
+   },
+   {
+    "sid": "lesson-d1#19.0",
+    "en": "A refund agent's system prompt says \"always call get_customer before process_refund\"."
+   }
+  ]
+ },
+ {
+  "lemma": "cause",
+  "kind": "new",
+  "surfaces": [
+   "cause",
+   "causes",
+   "causing",
+   "caused"
+  ],
+  "freq": 19,
+  "sentences": [
+   {
+    "sid": "lesson-d1#25.2",
+    "en": "What is the cause and the correct fix?"
+   },
+   {
+    "sid": "lesson-d2#4.2",
+    "en": "Which fix targets the actual cause?"
+   },
+   {
+    "sid": "lesson-d3#20.1",
+    "en": "Which earlier decision most likely caused this outcome?"
+   },
+   {
+    "sid": "lesson-d4#12.3",
+    "en": "What is the most likely cause, and what should the team do?"
+   },
+   {
+    "sid": "lesson-d5#2.3",
+    "en": "What is the most likely cause?"
+   },
+   {
+    "sid": "sample01#2.3",
+    "en": "What is the most likely cause and correct architectural fix?"
+   },
+   {
+    "sid": "mock04#12.6",
+    "en": "Increase the context window size so the accumulated exploration output no longer causes any degradation in later answers"
+   },
+   {
+    "sid": "lesson-d1#7.2",
+    "en": "What is the most likely cause, and how should the architect fix it?"
+   }
+  ]
+ },
+ {
+  "lemma": "crosse",
+  "kind": "new",
+  "surfaces": [
+   "crosses"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#37.1",
+    "en": "You need a review that catches local bugs and also bugs where a value is misused after it crosses a file boundary."
+   }
+  ]
+ },
+ {
+  "lemma": "deep",
+  "kind": "new",
+  "surfaces": [
+   "deep"
+  ],
+  "freq": 1,
+  "maybeProper": true,
+  "sentences": [
+   {
+    "sid": "selfcheck-d4-kor#6.1",
+    "en": "리뷰 수준(review level)을 Deep으로 올린다"
+   }
+  ]
+ },
+ {
+  "lemma": "doc-reviewer",
+  "kind": "new",
+  "surfaces": [
+   "doc-reviewer"
+  ],
+  "freq": 9,
+  "sentences": [
+   {
+    "sid": "lesson-d1#12.0",
+    "en": "A team is building a \"doc-reviewer\" subagent that should be able to read and comment on documentation but must never be able to modify files, even accidentally."
+   },
+   {
+    "sid": "lesson-d1#12.2",
+    "en": "How should the doc-reviewer's AgentDefinition be configured to guarantee this constraint?"
+   },
+   {
+    "sid": "lesson-d1#13.0",
+    "en": "Your team adds a doc-reviewer subagent that must be able to read and search documentation but must never change it."
+   },
+   {
+    "sid": "lesson-d1#12.3",
+    "en": "Set tools to [\"Read\", \"Grep\"] on the doc-reviewer definition so it inherits only the listed read tools regardless of what the coordinator has available"
+   },
+   {
+    "sid": "lesson-d1#12.4",
+    "en": "Leave tools unset on the doc-reviewer definition and instead instruct it in the prompt field never to call Edit or Write during its review"
+   },
+   {
+    "sid": "lesson-d1#12.6",
+    "en": "Give doc-reviewer the same tools as the coordinator, then rely on the description field to signal that the subagent is read-only in practice"
+   },
+   {
+    "sid": "lesson-d1#13.2",
+    "en": "Set tools: [\"Read\", \"Grep\"] in the doc-reviewer's own AgentDefinition"
+   },
+   {
+    "sid": "lesson-d1#13.3",
+    "en": "Leave tools unset and add \"Never edit or write files\" to the doc-reviewer's prompt"
+   }
+  ]
+ },
+ {
+  "lemma": "drop",
+  "kind": "vocab-core",
+  "surfaces": [
+   "drops",
+   "drop",
+   "dropped",
+   "dropping"
+  ],
+  "freq": 17,
+  "vocab": {
+   "id": "drop",
+   "word": "drop",
+   "pos": "동사·명사",
+   "ipa": "drɑːp",
+   "meaning": "① (정보를) 빠뜨리다, 버리다 ② 떨어지다, 줄다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#36.0",
+    "en": "Customers report that some paid orders vanish without a trace, and nobody knows which part of the system drops them."
+   },
+   {
+    "sid": "lesson-d3#23.1",
+    "en": "They don't yet know how cache invalidation, conflicting edits or clients dropping mid-edit should be handled."
+   },
+   {
+    "sid": "mock04#34.1",
+    "en": "The synthesis subagent merges findings from the web-search and document-analysis subagents into a unified narrative but drops the record of which source each claim came from."
+   },
+   {
+    "sid": "lesson-d5#11.4",
+    "en": "Keep the sentiment rule and drop the confidence rule, because anger reliably signals a case that needs a person, while self-ratings are subjective"
+   },
+   {
+    "sid": "lesson-d3#24.1",
+    "en": "After the first pass, records with a null middle-name field are being dropped instead of migrated with an empty string."
+   },
+   {
+    "sid": "mock04#36.2",
+    "en": "Synthesis quality has dropped and it now misses findings buried in the middle of the passed-in content (lost-in-the-middle)."
+   },
+   {
+    "sid": "lesson-d1#3.5",
+    "en": "The tools parameter must be dropped from requests after the fifth call, leaving Claude unable to request tool_use for the rest of the session"
+   },
+   {
+    "sid": "lesson-d5#11.5",
+    "en": "Keep the confidence rule and drop the sentiment rule, because the model is the best judge of when it is out of its depth"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:drop.0",
+    "en": "The synthesis subagent merges findings from the web-search and document-analysis subagents into a unified narrative but drops the record of which source each claim came from.",
+    "ko": "종합 서브에이전트는 결과를 하나의 서술로 합치지만, 각 주장이 어느 출처에서 왔는지에 대한 기록을 잃어버린다."
+   }
+  ]
+ },
+ {
+  "lemma": "early",
+  "kind": "new",
+  "surfaces": [
+   "earlier",
+   "early"
+  ],
+  "freq": 42,
+  "sentences": [
+   {
+    "sid": "lesson-d1#5.1",
+    "en": "Three turns earlier in the main conversation, the user chose a specific authentication provider."
+   },
+   {
+    "sid": "lesson-d2#19.1",
+    "en": "The enrichment tools depend on fields that only extract_metadata produces, and in early tests the model sometimes calls an enrichment tool first with guessed values."
+   },
+   {
+    "sid": "lesson-d3#20.0",
+    "en": "A team lead reviewing a completed library migration finds that early file conversions used one pattern, while later files in the same migration used a different, incompatible pattern, forcing a second pass to reconcile them."
+   },
+   {
+    "sid": "lesson-d5#22.1",
+    "en": "When asked about a class it examined in detail early on, it now describes what such a class typically looks like, and its two latest answers about that component disagree."
+   },
+   {
+    "sid": "mock04#16.2",
+    "en": "They sent each change as a separate sequential message; after the third message the project no longer compiles because the earlier edits did not anticipate the later ones."
+   },
+   {
+    "sid": "sample01#6.1",
+    "en": "After turn 25, response quality degrades — the model starts forgetting earlier findings and repeating tool calls it already made."
+   },
+   {
+    "sid": "lesson-d4#34.2",
+    "en": "Add \"challenge every design decision you made earlier\" to the generating session's final prompt before it submits"
+   },
+   {
+    "sid": "mock04-kor#22.2",
+    "en": "합성 서브에이전트의 시스템 프롬프트에 'recall the earlier research'(앞선 조사를 떠올려라)라는 지시를 추가해 이전 발견 사항을 가져오게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "escalate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "escalation",
+   "escalated",
+   "escalate",
+   "escalates"
+  ],
+  "freq": 24,
+  "vocab": {
+   "id": "escalate",
+   "word": "escalate",
+   "pos": "동사",
+   "ipa": "ˈeskəleɪt",
+   "meaning": "(상위 담당자에게) 넘기다, 단계를 올려 처리하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#6.0",
+    "en": "Your ticket-triage system sends every ticket through five subagents: classifier, sentiment analyzer, knowledge-base search, summarizer and escalation checker."
+   },
+   {
+    "sid": "lesson-d5#11.1",
+    "en": "In testing, a furious customer with a routine 30-day size exchange gets escalated."
+   },
+   {
+    "sid": "mock04#2.1",
+    "en": "When the support agent invokes escalate_to_human, human agents report they must re-read the entire raw conversation to understand each case, and average handle time for escalated tickets has risen."
+   },
+   {
+    "sid": "sample01#17.0",
+    "en": "A customer support agent has 14 tools: CRM lookup, order history, payment read, payment write, fraud check, compliance log, email send, SMS send, escalation, refund approve, refund reject, audit write, ticket create, ticket close."
+   },
+   {
+    "sid": "lesson-d2#11.7",
+    "en": "Use `errorCategory: \"business\"` with `isRetryable: false`; the refusal is a policy rule on the request, so the caller should escalate it instead of resubmitting"
+   },
+   {
+    "sid": "lesson-d5#7.1",
+    "en": "Which design gets escalation right in both directions?"
+   },
+   {
+    "sid": "mock04#2.2",
+    "en": "What should the agent do at the moment of escalation to fix this?"
+   },
+   {
+    "sid": "lesson-d1#28.6",
+    "en": "Remove the hook and add the escalation instruction to the system prompt, because the agent clearly ignores the hook."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:escalate.0",
+    "en": "Halt analysis and escalate to the coordinator immediately.",
+    "ko": "분석을 멈추고 즉시 코디네이터에게 넘긴다."
+   }
+  ]
+ },
+ {
+  "lemma": "figure",
+  "kind": "vocab-core",
+  "surfaces": [
+   "figure",
+   "figures"
+  ],
+  "freq": 26,
+  "vocab": {
+   "id": "figure",
+   "word": "figure",
+   "pos": "명사",
+   "ipa": "ˈfɪɡjər",
+   "meaning": "① 수치, 숫자 (금액·통계) ② 그림, 도표 ③ (figure out) 알아내다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#38.0",
+    "en": "During a competitive-intelligence synthesis, two subagents report different figures for a competitor's annual revenue: one cites a press release stating $420 million, the other cites an analyst report stating $460 million."
+   },
+   {
+    "sid": "mock04#22.1",
+    "en": "The synthesis subagent's reports read as generic overviews: in 30% of runs they omit the specific figures and named sources the web-search subagent surfaced."
+   },
+   {
+    "sid": "lesson-d5#40.1",
+    "en": "The coordinator initially treats this as a contradiction requiring reconciliation, but on closer inspection the two figures come from reports published fourteen months apart."
+   },
+   {
+    "sid": "mock04#35.1",
+    "en": "Two sources report different market-size figures for the same market — $4.2B (2021 data) versus $6.8B (2023 data)."
+   },
+   {
+    "sid": "mock04#35.3",
+    "en": "Reviewers, seeing the discarded figure elsewhere, flag the report as unreliable."
+   },
+   {
+    "sid": "lesson-d5#37.2",
+    "en": "Return only the figure from the source it judges more authoritative, so the coordinator gets one clean value"
+   },
+   {
+    "sid": "lesson-d5#37.4",
+    "en": "Finish the analysis and include both figures, each annotated with its source and flagged as conflicting, so the coordinator can decide how to reconcile them"
+   },
+   {
+    "sid": "mock04#22.7",
+    "en": "Give the synthesis subagent its own web-search tool so it can re-gather the missing figures and named sources itself"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:figure.0",
+    "en": "...in 30% of runs they omit the specific figures and named sources the web-search subagent surfaced.",
+    "ko": "실행의 30%에서 웹 검색 서브에이전트가 찾아낸 구체적인 수치와 출처 이름이 빠져 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "file",
+  "kind": "new",
+  "surfaces": [
+   "file",
+   "files"
+  ],
+  "freq": 187,
+  "sentences": [
+   {
+    "sid": "lesson-d1#1.1",
+    "en": "The first response has stop_reason set to \"tool_use\" and contains a tool_use block requesting a file-listing tool."
+   },
+   {
+    "sid": "lesson-d2#26.0",
+    "en": "Your React project has a fixed convention: every component `Foo.tsx` is tested by a file named `Foo.test.tsx`."
+   },
+   {
+    "sid": "lesson-d3#1.1",
+    "en": "Nobody edited any instruction file in between."
+   },
+   {
+    "sid": "lesson-d4#37.0",
+    "en": "A refactor touches 300 files, and several modules pass data to one another."
+   },
+   {
+    "sid": "lesson-d5#24.0",
+    "en": "A main agent is coordinating exploration of a repository with over 50,000 files and needs a complete list of every test file before planning a coverage audit."
+   },
+   {
+    "sid": "mock04#12.1",
+    "en": "Your team's /investigate-flaky skill greps the entire test suite, reads dozens of files, and prints verbose exploration before it answers."
+   },
+   {
+    "sid": "sample01#11.0",
+    "en": "A dev team wants Claude Code to automatically run `npm run lint:fix` every time it writes or edits a TypeScript file."
+   },
+   {
+    "sid": "selfcheck-d3-kor#6.2",
+    "en": "`/context`를 실행해 Memory files 목록을 본다 (파일 위치 확인·편집은 `/memory`)"
+   }
+  ]
+ },
+ {
+  "lemma": "flag",
+  "kind": "vocab-core",
+  "surfaces": [
+   "flag",
+   "flags",
+   "flagged",
+   "flagging"
+  ],
+  "freq": 31,
+  "vocab": {
+   "id": "flag",
+   "word": "flag",
+   "pos": "동사·명사",
+   "ipa": "flæɡ",
+   "meaning": "① (문제가 있다고) 표시하다 / 표시된 지적 항목 ② (명령줄) 옵션"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#24.0",
+    "en": "A developer implements a PreToolUse hook that gates the `process_refund` tool by checking a boolean flag `is_verified`."
+   },
+   {
+    "sid": "lesson-d4#1.0",
+    "en": "A team's single-pass code reviewer flags too many non-issues, and they want it to filter its own findings."
+   },
+   {
+    "sid": "lesson-d5#39.0",
+    "en": "Your coordinator keeps flagging 'contradictions' between subagents."
+   },
+   {
+    "sid": "mock04#35.3",
+    "en": "Reviewers, seeing the discarded figure elsewhere, flag the report as unreliable."
+   },
+   {
+    "sid": "lesson-d2#29.6",
+    "en": "Run Grep with the multiline flag to locate both matches, then retry Edit unchanged, which uses the Grep results to pick the target"
+   },
+   {
+    "sid": "lesson-d3#30.4",
+    "en": "The step ran claude without the -p flag, so the CLI opened its interactive session and waited for keyboard input that the runner cannot provide"
+   },
+   {
+    "sid": "sample01#4.5",
+    "en": "Implement PreToolCall hooks that flag and reject tool calls made in direct response to retrieved document content without user confirmation"
+   },
+   {
+    "sid": "lesson-d1#24.1",
+    "en": "The flag is expected to be set to `true` by a separate `mark_verified` tool after a human reviewer approves a photo ID."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:flag.0",
+    "en": "Add the `-p` flag: `claude -p \"Analyze this pull request for security issues\"`",
+    "ko": "`-p` 플래그를 추가한다: `claude -p \"...\"`"
+   },
+   {
+    "vid": "vocab:flag.1",
+    "en": "Configure Claude to only surface findings it assesses as high confidence, filtering out uncertain flags.",
+    "ko": "Claude가 신뢰도가 높다고 판단한 발견만 보여 주고, 불확실한 지적 항목은 걸러 내도록 설정한다."
+   }
+  ]
+ },
+ {
+  "lemma": "headcount",
+  "kind": "new",
+  "surfaces": [
+   "headcounts"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#37.0",
+    "en": "Halfway through a batch of filings, a subagent finds that two credible documents give different headcounts for the same company."
+   }
+  ]
+ },
+ {
+  "lemma": "issue",
+  "kind": "vocab-core",
+  "surfaces": [
+   "issue",
+   "issues",
+   "issued"
+  ],
+  "freq": 25,
+  "vocab": {
+   "id": "issue",
+   "word": "issue",
+   "pos": "명사·동사",
+   "ipa": "ˈɪʃuː",
+   "meaning": "① 문제, 이슈 ② (환불·토큰 등을) 내주다, 발행하다 — issuer: 발급자"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#35.1",
+    "en": "Reviewers have noticed that when a single pass tries to hold all 40 files in context at once, subtle cross-file issues are missed and comments become generic."
+   },
+   {
+    "sid": "lesson-d2#29.1",
+    "en": "Claude issues an Edit call with old_string set to exactly that log statement and the call fails."
+   },
+   {
+    "sid": "lesson-d4#1.0",
+    "en": "A team's single-pass code reviewer flags too many non-issues, and they want it to filter its own findings."
+   },
+   {
+    "sid": "mock04#23.1",
+    "en": "The coordinator dispatches three independent regional web-search subagents (EU, US, APAC), but issues each Task call only after the previous subagent returns."
+   },
+   {
+    "sid": "lesson-d3#27.2",
+    "en": "Report each failure sequentially in its own message: first address the currency-formatting mismatch, and once confirmed fixed, the filename extension issue, because the two problems are independent."
+   },
+   {
+    "sid": "lesson-d5#8.7",
+    "en": "Keep working on the issue, because the agent already decided that frustration alone is not an escalation trigger"
+   },
+   {
+    "sid": "mock04-kor#46.1",
+    "en": "CI 파이프라인이 Claude Code를 호출해 풀 리퀘스트마다 리뷰를 수행하고, 셸 게이트 스크립트가 stdout에서 \"CRITICAL\" 이라는 단어를 grep해 빌드를 실패시킵니다. 그런데 Claude가 심각한 발견 사항을 실행할 때마다 \"severe issue\", \"major bug\", \"critical defect\"처럼 다르게 표현하기 때문에 게이트 결과가 들쭉날쭉합니다. 가장 효과적인 해결책은 무엇일까요?"
+   },
+   {
+    "sid": "lesson-d4#35.1",
+    "en": "QA later finds subtle issues the model missed during that self-review step."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:issue.0",
+    "en": "Generate a structured handoff summary: issue, verified identifiers, tool results, ...",
+    "ko": "문제 내용, 확인된 식별자, 도구 결과 등을 담은 구조화된 핸드오프 요약을 생성한다"
+   },
+   {
+    "vid": "vocab:issue.1",
+    "en": "Logs show the agent issues full refunds when only a partial credit was warranted in 17% of cases...",
+    "ko": "로그를 보면 부분 크레딧이면 충분했던 경우의 17%에서 에이전트가 전액 환불을 처리한다."
+   }
+  ]
+ },
+ {
+  "lemma": "keep",
+  "kind": "new",
+  "surfaces": [
+   "keep",
+   "keeping",
+   "keeps",
+   "kept"
+  ],
+  "freq": 97,
+  "sentences": [
+   {
+    "sid": "lesson-d1#16.1",
+    "en": "Subagents keep returning unusable notes whenever the search results don't look the way the script expected."
+   },
+   {
+    "sid": "lesson-d2#1.0",
+    "en": "Your agent has two user-defined tools, and Claude keeps calling the wrong one."
+   },
+   {
+    "sid": "lesson-d3#10.1",
+    "en": "A senior engineer also keeps a `~/.claude/skills/review/SKILL.md` on their laptop for personal projects, unaware it uses the same name."
+   },
+   {
+    "sid": "lesson-d4#13.1",
+    "en": "The extraction pipeline's examples all show crisp doses such as \"400 mg\", and the output keeps showing precise amounts the patient never gave."
+   },
+   {
+    "sid": "lesson-d5#15.0",
+    "en": "In a four-source research pipeline, the patent database sometimes rejects credentials while the other sources keep working."
+   },
+   {
+    "sid": "mock04#18.2",
+    "en": "What technique best keeps the migration on track?"
+   },
+   {
+    "sid": "sample01#2.5",
+    "en": "The loop has no maximum iteration guard; a tool returning ambiguous results can cause the model to keep requesting the same tool indefinitely"
+   },
+   {
+    "sid": "lesson-d1#20.1",
+    "en": "The address subagent keeps asking which customer account it is working on."
+   }
+  ]
+ },
+ {
+  "lemma": "late",
+  "kind": "new",
+  "surfaces": [
+   "later",
+   "latest"
+  ],
+  "freq": 30,
+  "sentences": [
+   {
+    "sid": "lesson-d3#20.0",
+    "en": "A team lead reviewing a completed library migration finds that early file conversions used one pattern, while later files in the same migration used a different, incompatible pattern, forcing a second pass to reconcile them."
+   },
+   {
+    "sid": "lesson-d4#20.1",
+    "en": "An audit later finds several instances where deposits were mislabeled as withdrawals, even though every amount and transaction_type field is present and passes schema validation."
+   },
+   {
+    "sid": "lesson-d5#19.2",
+    "en": "The coordinator later synthesizes a report claiming full regulatory coverage."
+   },
+   {
+    "sid": "mock04#16.2",
+    "en": "They sent each change as a separate sequential message; after the third message the project no longer compiles because the earlier edits did not anticipate the later ones."
+   },
+   {
+    "sid": "lesson-d1#39.4",
+    "en": "Run claude --continue in the project directory to reload the latest conversation there"
+   },
+   {
+    "sid": "lesson-d2#10.5",
+    "en": "The `errorCategory` should be set to `'transient'` instead of `'validation'` because the error can be resolved later by the agent, implying a temporary condition."
+   },
+   {
+    "sid": "lesson-d3#26.1",
+    "en": "The latest run fails all three tests: test_applyDiscount, test_addTax and test_orderTotal."
+   },
+   {
+    "sid": "lesson-d4#29.0",
+    "en": "A developer is assembling a batch of translation requests and needs to assign each one an identifier that the Message Batches API will accept and later use to correlate a result with its original request."
+   }
+  ]
+ },
+ {
+  "lemma": "leave",
+  "kind": "new",
+  "surfaces": [
+   "leaving",
+   "leave",
+   "left"
+  ],
+  "freq": 31,
+  "sentences": [
+   {
+    "sid": "lesson-d2#18.1",
+    "en": "Currently, every subagent is configured with the full union of all tools used anywhere in the pipeline, so each has around 15 tools available, and each agent's tool choice is left at {\"type\": \"auto\"} in every turn."
+   },
+   {
+    "sid": "lesson-d3#31.0",
+    "en": "You want a CI review job in which any tool call you have not pre-approved is refused, not left waiting."
+   },
+   {
+    "sid": "lesson-d4#24.1",
+    "en": "On one submission, the employee left the project code blank on the physical form, so it does not appear anywhere in the scanned image."
+   },
+   {
+    "sid": "lesson-d1#12.4",
+    "en": "Leave tools unset on the doc-reviewer definition and instead instruct it in the prompt field never to call Edit or Write during its review"
+   },
+   {
+    "sid": "lesson-d5#15.2",
+    "en": "Require at least one finding for every topic, so no section of the report is ever left empty"
+   },
+   {
+    "sid": "mock04#20.6",
+    "en": "Request a larger context window and continue as-is, leaving the superseded intermediate diffs sitting in the history."
+   },
+   {
+    "sid": "lesson-d1#13.3",
+    "en": "Leave tools unset and add \"Never edit or write files\" to the doc-reviewer's prompt"
+   },
+   {
+    "sid": "lesson-d2#12.4",
+    "en": "Only the enriched records, leaving the failed customers out so the coordinator receives a clean batch"
+   }
+  ]
+ },
+ {
+  "lemma": "master",
+  "kind": "new",
+  "surfaces": [
+   "master"
+  ],
+  "freq": 2,
+  "maybeProper": true,
+  "sentences": [
+   {
+    "sid": "lesson-d4#23.1",
+    "en": "The contract says only that renewal terms are set out in the Master Agreement, and that document was never sent to the pipeline."
+   },
+   {
+    "sid": "lesson-d4#23.6",
+    "en": "Stop retrying, make `renewal_date` optional so the model can report that it is missing, and send the record to a person or supply the Master Agreement"
+   }
+  ]
+ },
+ {
+  "lemma": "mg",
+  "kind": "new",
+  "surfaces": [
+   "mg"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#13.1",
+    "en": "The extraction pipeline's examples all show crisp doses such as \"400 mg\", and the output keeps showing precise amounts the patient never gave."
+   }
+  ]
+ },
+ {
+  "lemma": "miss",
+  "kind": "new",
+  "surfaces": [
+   "misses",
+   "missing",
+   "miss",
+   "missed"
+  ],
+  "freq": 31,
+  "sentences": [
+   {
+    "sid": "lesson-d1#35.1",
+    "en": "Reviewers have noticed that when a single pass tries to hold all 40 files in context at once, subtle cross-file issues are missed and comments become generic."
+   },
+   {
+    "sid": "lesson-d4#14.1",
+    "en": "Sometimes `quantity` arrives as \"2\" instead of 2, and some records are missing the required `invoice_id`."
+   },
+   {
+    "sid": "mock04#25.2",
+    "en": "Reviewers note the reports consistently miss emerging subtopics that only surface mid-investigation."
+   },
+   {
+    "sid": "sample01#1.1",
+    "en": "In production, the agent occasionally calls the wrong tool and sometimes misses tool calls entirely."
+   },
+   {
+    "sid": "lesson-d2#10.6",
+    "en": "The `isError` field should be set to `false` because the tool can still return a result when the `customer_id` is missing, making the invocation technically successful."
+   },
+   {
+    "sid": "lesson-d3#27.5",
+    "en": "Ask Claude to evaluate the test results and fix whichever failure appears more severe first, relying on its internal judgment of the impact on report correctness without stating the exact currency mismatch or missing extension details."
+   },
+   {
+    "sid": "lesson-d5#31.5",
+    "en": "Review a fixed random sample of weight values across the whole pipeline, sized to the overall 94% accuracy, and treat documents with missing units like the rest."
+   },
+   {
+    "sid": "lesson-d1#9.1",
+    "en": "The synthesized report ends up missing pricing models, regulatory incentives, and major competitors entirely."
+   }
+  ]
+ },
+ {
+  "lemma": "order",
+  "kind": "new",
+  "surfaces": [
+   "order",
+   "ordering",
+   "orders"
+  ],
+  "freq": 40,
+  "sentences": [
+   {
+    "sid": "lesson-d1#21.1",
+    "en": "A reviewer worries this design assumes the hooks run in a guaranteed order relative to each other."
+   },
+   {
+    "sid": "lesson-d2#19.2",
+    "en": "What is the recommended way to guarantee correct ordering for this first step?"
+   },
+   {
+    "sid": "lesson-d4#22.1",
+    "en": "On one order, the extracted line-item amounts sum to $940 while the extracted \"order_total\" field reads $980."
+   },
+   {
+    "sid": "lesson-d5#1.1",
+    "en": "By turn 12 it no longer knows the order number the customer gave in turn 3."
+   },
+   {
+    "sid": "mock04#10.2",
+    "en": "Logs show the agent proceeds with the most recently active match, and in several cases it has processed refunds against the wrong customer's order."
+   },
+   {
+    "sid": "sample01#17.0",
+    "en": "A customer support agent has 14 tools: CRM lookup, order history, payment read, payment write, fraud check, compliance log, email send, SMS send, escalation, refund approve, refund reject, audit write, ticket create, ticket close."
+   },
+   {
+    "sid": "lesson-d1#32.0",
+    "en": "Every night a job takes each new product spec and runs the same steps in the same order."
+   },
+   {
+    "sid": "mock04#5.1",
+    "en": "The coordinator has already run get_customer and confirmed the account, then spawns subagents to check order history and refund eligibility in parallel."
+   }
+  ]
+ },
+ {
+  "lemma": "read-only",
+  "kind": "new",
+  "surfaces": [
+   "read-only"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d3#19.0",
+    "en": "While in plan mode, an architect notices that Claude keeps reading files and running read-only search commands without prompting for approval on each one, even though no edits have occurred."
+   },
+   {
+    "sid": "lesson-d1#12.6",
+    "en": "Give doc-reviewer the same tools as the coordinator, then rely on the description field to signal that the subagent is read-only in practice"
+   },
+   {
+    "sid": "lesson-d1#13.4",
+    "en": "Write a description that says the doc-reviewer is a read-only agent"
+   },
+   {
+    "sid": "lesson-d3#19.3",
+    "en": "Plan mode inherently blocks all edits and does not require approval for read operations, as the mode's read-only guarantee makes approval prompts unnecessary."
+   },
+   {
+    "sid": "lesson-d3#19.4",
+    "en": "Read-only commands are permanently exempt from every permission mode in Claude Code, no matter which mode is currently active"
+   }
+  ]
+ },
+ {
+  "lemma": "report",
+  "kind": "new",
+  "surfaces": [
+   "report",
+   "reports",
+   "reporting",
+   "reported"
+  ],
+  "freq": 120,
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.1",
+    "en": "The final report makes the right claims but can't say which URL, document or page any claim came from."
+   },
+   {
+    "sid": "lesson-d2#18.2",
+    "en": "The team reports agents occasionally reaching for tools clearly outside their remit, like the QA agent invoking a deploy tool."
+   },
+   {
+    "sid": "lesson-d3#26.2",
+    "en": "How should you report these failures to Claude?"
+   },
+   {
+    "sid": "lesson-d4#18.0",
+    "en": "Lab reports are extracted with a strict tool whose schema lists `referring_physician` as a required string."
+   },
+   {
+    "sid": "lesson-d5#15.1",
+    "en": "How should the coordinator's synthesis output schema handle each topic so the final report stays trustworthy?"
+   },
+   {
+    "sid": "mock04#11.2",
+    "en": "Everything works for the lead, but three newly onboarded engineers who cloned the repo report that Claude Code ignores the conventions entirely, even though `git status` shows a clean checkout."
+   },
+   {
+    "sid": "selfcheck-d4-kor#2.0",
+    "en": "오탐을 줄이려고 리뷰 프롬프트에 \"be conservative, only report high-confidence findings\"를 넣었다. 오탐은 조금 줄었지만, 나중에 장애로 이어진 off-by-one 버그를 리뷰가 놓쳤다. 현재 문서 기준으로 가장 그럴듯한 설명과 대응은?"
+   },
+   {
+    "sid": "mock04-kor#37.1",
+    "en": "코디네이터 에이전트에게 40만 줄짜리 레거시 청구(billing) 모놀리스의 마이그레이션 계획을 만들라는 요청이 들어왔습니다. 엔지니어는 다섯 개 서브에이전트 작업(billing, invoicing, tax, reporting, auth)으로 나누는 분할을 처음부터 하드코딩했습니다. 운영 실행 결과를 보면 최종 계획에서, 어떤 서브에이전트에도 배정되지 않았던 'dunning'(연체 독촉) 하위 시스템 전체와 통화 변환 계층이 빠져 있습니다. 가장 효과적인 분할 전략은 무엇일까요?"
+   }
+  ]
+ },
+ {
+  "lemma": "run",
+  "kind": "new",
+  "surfaces": [
+   "runs",
+   "run",
+   "running"
+  ],
+  "freq": 170,
+  "sentences": [
+   {
+    "sid": "lesson-d1#18.0",
+    "en": "A coordinator runs a \"web-researcher\" subagent that gathers ten sources on a topic, then spawns a \"synthesis\" subagent to write the final report."
+   },
+   {
+    "sid": "lesson-d2#16.1",
+    "en": "The synthesis agent keeps running its own web searches, and the QA agent once called the deploy tool."
+   },
+   {
+    "sid": "lesson-d3#10.2",
+    "en": "When this engineer works in the shared repository and runs `/review`, which skill actually executes?"
+   },
+   {
+    "sid": "lesson-d4#16.0",
+    "en": "A pipeline first needs Claude to run extract_metadata on an uploaded document before any enrichment or summarization steps proceed."
+   },
+   {
+    "sid": "lesson-d5#2.1",
+    "en": "The agent's context contains the full system prompt and a running summary that has been condensed several times."
+   },
+   {
+    "sid": "mock04#12.2",
+    "en": "Developers notice that after running it, the main session is cluttered with raw output and Claude's subsequent answers in that session degrade in quality."
+   },
+   {
+    "sid": "sample01#11.0",
+    "en": "A dev team wants Claude Code to automatically run `npm run lint:fix` every time it writes or edits a TypeScript file."
+   },
+   {
+    "sid": "sample01-kor#11.1",
+    "en": "`CLAUDE.md` 에 \"TypeScript 파일을 편집한 뒤에는 항상 npm run lint:fix를 실행하라\"를 추가한다."
+   }
+  ]
+ },
+ {
+  "lemma": "saw",
+  "kind": "new",
+  "surfaces": [
+   "saw"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#35.5",
+    "en": "Send the finished code to a separate Claude instance for review, one that never saw the generation session"
+   }
+  ]
+ },
+ {
+  "lemma": "set",
+  "kind": "new",
+  "surfaces": [
+   "setting",
+   "set",
+   "sets"
+  ],
+  "freq": 81,
+  "sentences": [
+   {
+    "sid": "lesson-d1#1.1",
+    "en": "The first response has stop_reason set to \"tool_use\" and contains a tool_use block requesting a file-listing tool."
+   },
+   {
+    "sid": "lesson-d2#16.0",
+    "en": "In a multi-agent pipeline, every subagent shares the same tool set."
+   },
+   {
+    "sid": "lesson-d3#17.1",
+    "en": "You want one set of testing conventions to load only when Claude is working on these files."
+   },
+   {
+    "sid": "lesson-d4#15.0",
+    "en": "A contract-extraction request sets tool_choice to {\"type\": \"tool\", \"name\": \"extract_clauses\"}."
+   },
+   {
+    "sid": "lesson-d5#18.1",
+    "en": "Which set of fields best supports intelligent coordinator recovery decisions?"
+   },
+   {
+    "sid": "mock04#12.7",
+    "en": "Set context:fork in the skill's SKILL.md frontmatter so exploration runs in an isolated context and only the result returns"
+   },
+   {
+    "sid": "sample01#5.7",
+    "en": "Lower `temperature` setting to make the model more conservative"
+   },
+   {
+    "sid": "lesson-d1#11.2",
+    "en": "What is the best way to set this up?"
+   }
+  ]
+ },
+ {
+  "lemma": "since",
+  "kind": "new",
+  "surfaces": [
+   "since"
+  ],
+  "freq": 35,
+  "sentences": [
+   {
+    "sid": "lesson-d2#3.0",
+    "en": "A teammate wants to cut a nested-input tool's description down to one line and add three schema-valid `input_examples` instead, since \"examples show Claude more than prose does.\""
+   },
+   {
+    "sid": "mock04#39.2",
+    "en": "Since then a teammate moved several files and renamed a package."
+   },
+   {
+    "sid": "lesson-d1#29.3",
+    "en": "In the tool's own MCP server definition, since PreToolUse hooks cannot inspect individual tool arguments under any circumstances"
+   },
+   {
+    "sid": "lesson-d3#10.5",
+    "en": "Both skills execute in sequence, first the personal skill and then the project skill, since Claude Code merges same-named skills rather than choosing one."
+   },
+   {
+    "sid": "lesson-d4#20.4",
+    "en": "This indicates that the input_schema was likely malformed, since a correctly constructed JSON schema can apply constraints that verify the relationship between amount and transaction_type, preventing such semantic mislabeling."
+   },
+   {
+    "sid": "lesson-d5#8.5",
+    "en": "Make the billing-date change first, since it takes one step, and then transfer the customer"
+   },
+   {
+    "sid": "lesson-d1#29.6",
+    "en": "Inside the callback function itself, by reading input_data[\"tool_input\"][\"category\"] and applying the conditional logic there, since matchers only filter by tool name"
+   },
+   {
+    "sid": "lesson-d2#2.4",
+    "en": "The near-duplicate descriptions give the model no differentiating signal, since descriptions are its main basis for choosing similar tools."
+   }
+  ]
+ },
+ {
+  "lemma": "state",
+  "kind": "vocab-core",
+  "surfaces": [
+   "state",
+   "states",
+   "stating",
+   "stated"
+  ],
+  "freq": 28,
+  "vocab": {
+   "id": "state",
+   "word": "state",
+   "pos": "동사·명사",
+   "ipa": "steɪt",
+   "meaning": "① (분명히) 밝히다, 명시하다 ② 상태"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#17.2",
+    "en": "Which `tool_choice` configuration should be used to guarantee the `parse_resume` call, and what does Anthropic documentation state about natural-language commentary before a forced tool call?"
+   },
+   {
+    "sid": "lesson-d5#38.0",
+    "en": "During a competitive-intelligence synthesis, two subagents report different figures for a competitor's annual revenue: one cites a press release stating $420 million, the other cites an analyst report stating $460 million."
+   },
+   {
+    "sid": "mock04#20.2",
+    "en": "The history is full of superseded intermediate diffs, but the current task and goal are unchanged and the latest file states are still valid."
+   },
+   {
+    "sid": "lesson-d1#16.5",
+    "en": "State the objective, the boundaries (2025 supply chains only; another subagent covers the 2021 crisis) and the required output (findings as records with source URL and document name), and leave the search steps to the subagent"
+   },
+   {
+    "sid": "lesson-d2#19.5",
+    "en": "Add a detailed description to each enrichment tool stating that they require metadata fields only extract_metadata can provide, and keep tool_choice set to auto throughout the conversation."
+   },
+   {
+    "sid": "lesson-d3#23.6",
+    "en": "Follow 2–3 concrete examples of edits, each paired with the exact document state it should produce, as the definition of correct behaviour"
+   },
+   {
+    "sid": "sample01#19.7",
+    "en": "Rewrite descriptions to explicitly state when to call each tool and what data each returns — include the entity type and use case"
+   },
+   {
+    "sid": "mock04#21.2",
+    "en": "Over time Claude starts overlooking the failing-test details and the constraints stated at the start of the session."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:state.0",
+    "en": "Rewrite descriptions to explicitly state when to call each tool and what data each returns",
+    "ko": "각 도구를 언제 호출해야 하는지, 어떤 데이터를 반환하는지 명시하도록 설명을 다시 쓴다"
+   },
+   {
+    "vid": "vocab:state.1",
+    "en": "Company policy states that any refund above $500 must be approved by a manager rather than auto-issued.",
+    "ko": "회사 정책에 따르면 $500 초과 환불은 자동으로 지급하지 않고 반드시 관리자 승인을 받아야 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "still",
+  "kind": "new",
+  "surfaces": [
+   "still"
+  ],
+  "freq": 28,
+  "sentences": [
+   {
+    "sid": "lesson-d1#19.1",
+    "en": "Audits show that a small share of refunds still go out without the customer's identity being verified first."
+   },
+   {
+    "sid": "lesson-d2#22.0",
+    "en": "A developer has a local-scoped `analytics` server that still points at an old staging endpoint."
+   },
+   {
+    "sid": "lesson-d3#9.2",
+    "en": "When you type `/review`, it should still run the shared team workflow in every repository."
+   },
+   {
+    "sid": "lesson-d4#11.1",
+    "en": "You want fewer false positives, and you still want real problems caught in code the bot has never seen."
+   },
+   {
+    "sid": "lesson-d5#24.2",
+    "en": "What best keeps the main agent's context focused on high-level coordination while still producing the list?"
+   },
+   {
+    "sid": "mock04#1.3",
+    "en": "Production logs show that in 11% of sessions the loop terminates while a tool_use block is still pending, so the refund is never actually executed."
+   },
+   {
+    "sid": "lesson-d1#28.2",
+    "en": "Which change stops the retries and still keeps the limit guaranteed?"
+   },
+   {
+    "sid": "lesson-d2#4.1",
+    "en": "Both tools now have detailed descriptions of what they do, but some web tasks still go to `analyze_content`."
+   }
+  ]
+ },
+ {
+  "lemma": "stratum",
+  "kind": "new",
+  "surfaces": [
+   "stratum"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#34.5",
+    "en": "Sample auto-accepted extractions randomly within each document-type and field stratum, and have humans check them"
+   }
+  ]
+ },
+ {
+  "lemma": "support",
+  "kind": "new",
+  "surfaces": [
+   "support",
+   "supporting",
+   "supported",
+   "supports"
+  ],
+  "freq": 41,
+  "sentences": [
+   {
+    "sid": "lesson-d1#28.0",
+    "en": "An unattended support agent, where no permission prompt may ever appear, has a PreToolUse hook that denies refunds over $500 with the reason \"Refund denied\"."
+   },
+   {
+    "sid": "lesson-d4#26.2",
+    "en": "What should be added to the structured finding schema to support this analysis?"
+   },
+   {
+    "sid": "lesson-d5#1.0",
+    "en": "A support bot built on the Messages API sends the system prompt, its tool definitions and the customer's newest message on each request."
+   },
+   {
+    "sid": "mock04#1.0",
+    "en": "[Scenario: Customer Support Resolution Agent]"
+   },
+   {
+    "sid": "sample01#1.0",
+    "en": "An engineer builds an agentic customer support bot with the loop logic shown below."
+   },
+   {
+    "sid": "lesson-d2#24.5",
+    "en": "Do not attempt to configure Kerberos directly in Claude Code MCP authentication; use an intermediary service that authenticates via Kerberos and then uses Anthropic-supported credentials such as API keys or OAuth tokens."
+   },
+   {
+    "sid": "lesson-d3#30.7",
+    "en": "The runner's Node.js version is older than the CLI supports, so the process stayed running while failing to parse its own command-line arguments"
+   },
+   {
+    "sid": "lesson-d1#34.0",
+    "en": "A team is building an automated pipeline that takes a raw customer support transcript, produces a structured summary, then translates that summary into three fixed target languages."
+   }
+  ]
+ },
+ {
+  "lemma": "surface",
+  "kind": "vocab-core",
+  "surfaces": [
+   "surfaced",
+   "surface",
+   "surfacing",
+   "surfaces"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "surface",
+   "word": "surface",
+   "pos": "동사·명사",
+   "ipa": "ˈsɜːrfɪs",
+   "meaning": "(숨은 것을) 드러내다 / 드러나다, 표면화되다 / 표면"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#11.1",
+    "en": "The team wants that exploratory back-and-forth kept separate from the main conversation, with only the final recommendation surfacing back to the user."
+   },
+   {
+    "sid": "lesson-d5#19.1",
+    "en": "Instead of surfacing the failure, the subagent returns an empty findings list with status 'success' so the pipeline continues cleanly."
+   },
+   {
+    "sid": "mock04#22.1",
+    "en": "The synthesis subagent's reports read as generic overviews: in 30% of runs they omit the specific figures and named sources the web-search subagent surfaced."
+   },
+   {
+    "sid": "lesson-d5#34.1",
+    "en": "Which ongoing practice best measures their error rate and surfaces new failure modes?"
+   },
+   {
+    "sid": "mock04#25.2",
+    "en": "Reviewers note the reports consistently miss emerging subtopics that only surface mid-investigation."
+   },
+   {
+    "sid": "mock04#47.7",
+    "en": "Lower the pass threshold so more borderline findings surface in the same session during self-review"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:surface.0",
+    "en": "Configure Claude to only surface findings it assesses as high confidence, filtering out uncertain flags.",
+    "ko": "신뢰도가 높다고 판단한 발견만 보여 주고 불확실한 지적은 걸러 내도록 Claude를 설정한다."
+   },
+   {
+    "vid": "vocab:surface.1",
+    "en": "...only surface when a different team member reviews the PR.",
+    "ko": "다른 팀원이 PR을 리뷰할 때에야 비로소 드러난다."
+   }
+  ]
+ },
+ {
+  "lemma": "tool",
+  "kind": "new",
+  "surfaces": [
+   "tool",
+   "tools"
+  ],
+  "freq": 348,
+  "sentences": [
+   {
+    "sid": "lesson-d1#1.1",
+    "en": "The first response has stop_reason set to \"tool_use\" and contains a tool_use block requesting a file-listing tool."
+   },
+   {
+    "sid": "lesson-d2#1.0",
+    "en": "Your agent has two user-defined tools, and Claude keeps calling the wrong one."
+   },
+   {
+    "sid": "lesson-d3#31.0",
+    "en": "You want a CI review job in which any tool call you have not pre-approved is refused, not left waiting."
+   },
+   {
+    "sid": "lesson-d4#14.0",
+    "en": "An invoice pipeline reads records from a non-strict extraction tool."
+   },
+   {
+    "sid": "lesson-d5#1.0",
+    "en": "A support bot built on the Messages API sends the system prompt, its tool definitions and the customer's newest message on each request."
+   },
+   {
+    "sid": "mock04#1.1",
+    "en": "A customer support resolution agent built with the Claude Agent SDK reaches backend systems through custom MCP tools (get_customer, lookup_order, process_refund, escalate_to_human)."
+   },
+   {
+    "sid": "sample01#1.1",
+    "en": "In production, the agent occasionally calls the wrong tool and sometimes misses tool calls entirely."
+   },
+   {
+    "sid": "selfcheck-d2-kor#1.0",
+    "en": "Define tools 문서가 도구 성능에 \"단연 가장 중요한 요소\"로 꼽는 것은?"
+   }
+  ]
+ },
+ {
+  "lemma": "yet",
+  "kind": "new",
+  "surfaces": [
+   "yet"
+  ],
+  "freq": 7,
+  "sentences": [
+   {
+    "sid": "lesson-d2#31.0",
+    "en": "A newly onboarded architect asks Claude Code to trace how a login request flows from the HTTP route handler through to the database call, in a codebase Claude has not explored yet."
+   },
+   {
+    "sid": "lesson-d3#23.1",
+    "en": "They don't yet know how cache invalidation, conflicting edits or clients dropping mid-edit should be handled."
+   },
+   {
+    "sid": "mock04#47.2",
+    "en": "It consistently rates its own output clean, yet human reviewers keep finding real bugs it missed."
+   },
+   {
+    "sid": "lesson-d3#5.2",
+    "en": "The engineer has not yet read or edited any files in the `services/billing/reports/` subdirectory."
+   },
+   {
+    "sid": "mock04#52.2",
+    "en": "The review almost never finds problems, yet audits show 20% of the generated tests have weak or tautological assertions."
+   },
+   {
+    "sid": "lesson-d2#12.2",
+    "en": "Nothing yet: the subagent first retries the permission failures with backoff, then reports once they clear"
+   },
+   {
+    "sid": "mock04#31.8",
+    "en": "Add an interception hook that inspects every extraction call and blocks it whenever no classification has run yet."
+   }
+  ]
+ }
+]

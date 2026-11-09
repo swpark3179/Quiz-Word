@@ -1,0 +1,1301 @@
+[
+ {
+  "lemma": "payload",
+  "kind": "vocab-core",
+  "surfaces": [
+   "payload",
+   "payloads"
+  ],
+  "freq": 8,
+  "vocab": {
+   "id": "payload",
+   "word": "payload",
+   "pos": "명사",
+   "ipa": "ˈpeɪloʊd",
+   "meaning": "페이로드 — 요청·메시지에 실린 실제 데이터 본문"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#27.1",
+    "en": "Each one embeds scanned page images, and the batch payload comes to about 400 MB."
+   },
+   {
+    "sid": "lesson-d5#16.2",
+    "en": "Which payload best lets the coordinator choose how to recover?"
+   },
+   {
+    "sid": "sample01#8.4",
+    "en": "Implement structured trace logging at each step: request payload, `stop_reason`, tool calls with inputs/outputs, and final response — with a session correlation ID"
+   },
+   {
+    "sid": "lesson-d5#18.0",
+    "en": "A team is designing the error payload that subagents return to a coordinator when a tool call fails."
+   },
+   {
+    "sid": "lesson-d4#30.2",
+    "en": "Split the 150,000 invoices across at least 2 batch submissions, because a single Message Batch is capped at 100,000 requests or 256 MB total payload, whichever comes first. (More batches may be needed if the total payload exceeds 256 MB.)"
+   },
+   {
+    "sid": "lesson-d5#5.0",
+    "en": "A returns-processing agent calls an order-lookup tool that returns a JSON payload with 40+ fields (shipping carrier metadata, internal warehouse codes, marketing tags, etc.) for every order it checks, and after a dozen lookups the raw payloads dominate the context window even though only 5 fields (order status, purchase date, item, amount, return-window deadline) matter for return eligibility."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:payload.0",
+    "en": "Implement structured trace logging at each step: request payload, `stop_reason`, tool calls with inputs/outputs, and final response...",
+    "ko": "각 단계마다 구조화된 트레이스 로그를 남긴다: 요청 페이로드, `stop_reason`, 도구 호출의 입력/출력, 최종 응답..."
+   }
+  ]
+ },
+ {
+  "lemma": "payment",
+  "kind": "vocab-core",
+  "surfaces": [
+   "payments",
+   "payment"
+  ],
+  "freq": 17,
+  "vocab": {
+   "id": "payment",
+   "word": "payment",
+   "pos": "명사",
+   "ipa": "ˈpeɪmənt",
+   "meaning": "지급, 결제 (대금)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#39.0",
+    "en": "An architect ran a two-hour investigation into a flaky payment-retry bug yesterday afternoon and named the session 'payment-retry-bug' before stopping for the day."
+   },
+   {
+    "sid": "lesson-d3#22.0",
+    "en": "Your team must decide whether a new payments integration should use a webhook receiver or a polling worker."
+   },
+   {
+    "sid": "mock04#38.1",
+    "en": "The coordinator spawns a subagent with a single Task call to trace how a payment webhook propagates through the `orders` module."
+   },
+   {
+    "sid": "sample01#17.0",
+    "en": "A customer support agent has 14 tools: CRM lookup, order history, payment read, payment write, fraud check, compliance log, email send, SMS send, escalation, refund approve, refund reject, audit write, ticket create, ticket close."
+   },
+   {
+    "sid": "lesson-d4#11.4",
+    "en": "Two examples that look alike: a top-level handler that logs and rethrows, marked acceptable, and a `catch` around a payment write that swallows the error, marked as an issue, each with a one-line reason"
+   },
+   {
+    "sid": "sample01#17.1",
+    "en": "In production it frequently selects wrong tools and processes payments without completing fraud checks."
+   },
+   {
+    "sid": "lesson-d1#36.2",
+    "en": "An orchestrator that spawns four subagents in parallel up front, one each for the API, the queue, the database and the payment service, and then merges their reports"
+   },
+   {
+    "sid": "sample01#5.0",
+    "en": "An agentic pipeline automates vendor payments."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:payment.0",
+    "en": "An agentic pipeline automates vendor payments.",
+    "ko": "공급업체 대금 지급을 자동화한 에이전트 파이프라인."
+   }
+  ]
+ },
+ {
+  "lemma": "payment-retry-bug",
+  "kind": "new",
+  "surfaces": [
+   "payment-retry-bug"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d1#39.0",
+    "en": "An architect ran a two-hour investigation into a flaky payment-retry bug yesterday afternoon and named the session 'payment-retry-bug' before stopping for the day."
+   },
+   {
+    "sid": "lesson-d1#39.3",
+    "en": "Run claude --resume payment-retry-bug in the project directory to reload that conversation"
+   },
+   {
+    "sid": "lesson-d1#39.6",
+    "en": "Run claude --resume with no name and pick payment-retry-bug from the session list"
+   }
+  ]
+ },
+ {
+  "lemma": "pdfs",
+  "kind": "new",
+  "surfaces": [
+   "pdfs"
+  ],
+  "freq": 6,
+  "maybeProper": true,
+  "sentences": [
+   {
+    "sid": "lesson-d2#6.0",
+    "en": "A tool named `analyze_content`, originally built for summarizing pasted text, has its description copied almost verbatim onto a newer tool, `analyze_document`, meant for uploaded PDFs."
+   },
+   {
+    "sid": "mock04#32.1",
+    "en": "The document-analysis subagent handles mixed inputs: some are PDFs requiring parse_pdf, and some are already plain-text snippets that need no tool at all."
+   },
+   {
+    "sid": "sample01#15.0",
+    "en": "A data pipeline needs to extract structured invoice data (vendor, line items, totals) from free-text invoice PDFs."
+   },
+   {
+    "sid": "sample01#6.0",
+    "en": "A long-running research agent processes 40-page technical PDFs and maintains conversation history across 30+ turns."
+   },
+   {
+    "sid": "lesson-d2#6.3",
+    "en": "Rename `analyze_content` to a more specific name, such as `summarize_pasted_text`, and limit its description to pasted text only, while `analyze_document` handles uploaded PDFs."
+   },
+   {
+    "sid": "sample01#6.5",
+    "en": "The PDFs should be chunked into 1,000-token segments before ingestion"
+   }
+  ]
+ },
+ {
+  "lemma": "peak",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "peak",
+   "word": "peak",
+   "pos": "명사·형용사",
+   "ipa": "piːk",
+   "meaning": "절정, 최고조 (peak hours: 사용량이 가장 많은 시간대)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "peer-reviewed",
+  "kind": "vocab-core",
+  "surfaces": [
+   "peer-reviewed-literature"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "peer-reviewed",
+   "word": "peer-reviewed",
+   "pos": "형용사",
+   "ipa": "ˌpɪr rɪˈvjuːd",
+   "meaning": "동료 심사를 거친 — 같은 분야 전문가의 검토를 통과한 (학술 문헌)"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#33.2",
+    "en": "It routes queries to the wrong tool in 31% of cases — for example, sending peer-reviewed-literature queries to search_web."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:peer-reviewed.0",
+    "en": "...for example, sending peer-reviewed-literature queries to search_web.",
+    "ko": "예를 들어 동료 심사 문헌을 찾는 쿼리를 `search_web` 으로 보낸다."
+   }
+  ]
+ },
+ {
+  "lemma": "peer-to-peer",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "peer-to-peer",
+   "word": "peer-to-peer",
+   "pos": "형용사",
+   "ipa": "ˌpɪr tə ˈpɪr",
+   "meaning": "P2P, 대등 간 직접 연결의 — 중앙을 거치지 않고 서로 직접 주고받는"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "penalty",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "penalty",
+   "word": "penalty",
+   "pos": "명사",
+   "ipa": "ˈpenəlti",
+   "meaning": "위약금, 벌칙 / 불이익"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "pending",
+  "kind": "vocab-core",
+  "surfaces": [
+   "pending"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "pending",
+   "word": "pending",
+   "pos": "형용사",
+   "ipa": "ˈpendɪŋ",
+   "meaning": "아직 처리되지 않은, 대기 중인"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#1.3",
+    "en": "Production logs show that in 11% of sessions the loop terminates while a tool_use block is still pending, so the refund is never actually executed."
+   },
+   {
+    "sid": "mock04#18.4",
+    "en": "Keep a scratchpad manifest of migrated vs pending files, updated after each file, so progress survives context growth."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:pending.0",
+    "en": "...and numeric status codes (1=pending, 2=shipped).",
+    "ko": "숫자 상태 코드(1=처리 대기, 2=배송됨)."
+   }
+  ]
+ },
+ {
+  "lemma": "per",
+  "kind": "vocab-core",
+  "surfaces": [
+   "per"
+  ],
+  "freq": 38,
+  "vocab": {
+   "id": "per",
+   "word": "per",
+   "pos": "전치사",
+   "ipa": "pɜːr",
+   "meaning": "~당, ~마다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.1",
+    "en": "Separately, each time the coordinator invokes this subagent it supplies a different per-call prompt describing the specific table and migration at hand."
+   },
+   {
+    "sid": "lesson-d4#30.1",
+    "en": "What must the team account for given the platform's per-batch limits?"
+   },
+   {
+    "sid": "mock04#30.2",
+    "en": "Traces show that in 22% of runs it issues a fresh web_search or parse_pdf call instead of combining the findings the coordinator already passed in its prompt, adding 6-9 s of latency per run."
+   },
+   {
+    "sid": "lesson-d2#18.4",
+    "en": "Restrict each subagent's tool set to only what its role needs, while keeping tool_choice at {\"type\": \"auto\"} so each agent still decides per turn whether to call a tool."
+   },
+   {
+    "sid": "lesson-d3#32.4",
+    "en": "Add the test-quality definition and fixture list to the pull request template authors fill in per PR"
+   },
+   {
+    "sid": "lesson-d5#26.3",
+    "en": "Give each subagent its own uniquely named scratchpad file, e.g., one per module, and have the coordinator aggregate all files only after all subagents have finished their investigations."
+   },
+   {
+    "sid": "sample01#7.0",
+    "en": "A company is building three Claude integrations: (1) a simple FAQ chatbot for a marketing website, (2) a complex multi-step contract analysis agent that must identify subtle legal risks, (3) a high-volume document classification pipeline processing 50,000 documents per day."
+   },
+   {
+    "sid": "lesson-d1#20.0",
+    "en": "A coordinator splits a three-part complaint and spawns one subagent per concern."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:per.0",
+    "en": "...a high-volume document classification pipeline processing 50,000 documents per day.",
+    "ko": "하루 5만 건을 처리하는 대량 문서 분류 파이프라인."
+   },
+   {
+    "vid": "vocab:per.1",
+    "en": "...into two branches, one per report variant, sharing the evidence",
+    "ko": "보고서 종류별로 하나씩 두 갈래로 포크해, 두 갈래가 증거를 공유하게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "per-batch",
+  "kind": "new",
+  "surfaces": [
+   "per-batch"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d4#30.1",
+    "en": "What must the team account for given the platform's per-batch limits?"
+   },
+   {
+    "sid": "lesson-d4#27.3",
+    "en": "It is accepted, because 60,000 is under the 100,000-request cap, which is the only per-batch limit that matters"
+   }
+  ]
+ },
+ {
+  "lemma": "per-call",
+  "kind": "new",
+  "surfaces": [
+   "per-call"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.1",
+    "en": "Separately, each time the coordinator invokes this subagent it supplies a different per-call prompt describing the specific table and migration at hand."
+   },
+   {
+    "sid": "lesson-d1#17.3",
+    "en": "AgentDefinition.prompt sets the subagent's persistent system prompt and expertise, while the per-call prompt passed at invocation supplies the specific task details for that run"
+   },
+   {
+    "sid": "lesson-d1#17.4",
+    "en": "AgentDefinition.prompt is ignored at runtime once a per-call prompt is supplied, so only the invocation-time prompt actually reaches the subagent's model"
+   },
+   {
+    "sid": "lesson-d1#17.5",
+    "en": "The per-call prompt is merged into the coordinator's own system prompt instead of the subagent's, so the subagent only ever sees AgentDefinition.prompt"
+   }
+  ]
+ },
+ {
+  "lemma": "per-file",
+  "kind": "new",
+  "surfaces": [
+   "per-file"
+  ],
+  "freq": 6,
+  "sentences": [
+   {
+    "sid": "lesson-d4#38.0",
+    "en": "Per-file passes on two interdependent files each recommend a different fix for what turns out to be the same underlying data-flow issue, and the two recommendations conflict."
+   },
+   {
+    "sid": "lesson-d4#38.1",
+    "en": "What architectural step should resolve this rather than picking one per-file recommendation at random?"
+   },
+   {
+    "sid": "lesson-d4#37.3",
+    "en": "Run the per-file passes as successive turns in one conversation, so later passes can draw on what earlier files showed"
+   },
+   {
+    "sid": "lesson-d4#37.6",
+    "en": "Script one fresh per-file pass for every file and skip integration passes, since each file has already had full attention"
+   },
+   {
+    "sid": "lesson-d4#38.3",
+    "en": "Re-running each per-file pass a second time and keeping whichever recommendation is worded with higher confidence language"
+   },
+   {
+    "sid": "lesson-d4#38.4",
+    "en": "Merging the two files into one before review so a single per-file pass can cover both without needing an integration step"
+   }
+  ]
+ },
+ {
+  "lemma": "per-request",
+  "kind": "vocab-core",
+  "surfaces": [
+   "per-request"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "per-request",
+   "word": "per-request",
+   "pos": "형용사",
+   "ipa": "pɜːr rɪˈkwest",
+   "meaning": "요청당, 요청 한 건마다의"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#9.7",
+    "en": "Reduce `max_tokens` to 1,000 to lower per-request cost"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:per-request.0",
+    "en": "Reduce `max_tokens` to 1,000 to lower per-request cost",
+    "ko": "요청당 비용을 낮추려고 `max_tokens` 를 1,000으로 줄인다."
+   }
+  ]
+ },
+ {
+  "lemma": "perfectly",
+  "kind": "new",
+  "surfaces": [
+   "perfectly"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "mock04#45.1",
+    "en": "A senior engineer added the team's coding-convention instructions to `~/.claude/CLAUDE.md`, and the tool follows them perfectly on her machine."
+   }
+  ]
+ },
+ {
+  "lemma": "perform",
+  "kind": "vocab-core",
+  "surfaces": [
+   "performs"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "perform",
+   "word": "perform",
+   "pos": "동사",
+   "ipa": "pərˈfɔːrm",
+   "meaning": "수행하다, (작업을) 해내다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#10.1",
+    "en": "The prompt performs well on those twenty inputs but degrades noticeably whenever a customer submits a new input that is similar to, but not identical to, one of the twenty."
+   },
+   {
+    "sid": "mock04#47.1",
+    "en": "In the pipeline, the same Claude Code session that generates an implementation also performs the automated review step."
+   },
+   {
+    "sid": "lesson-d4#12.2",
+    "en": "After deployment, the model performs well on similar short English emails but starts mislabeling longer documents and documents in other languages that it previously handled correctly under the old, example-free prompt."
+   },
+   {
+    "sid": "lesson-d4#7.5",
+    "en": "Run the rewritten criteria against a set of real cases with known answers, and turn the category back on once recall or F1 shows it performs well"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:perform.0",
+    "en": "...the same Claude Code session that generates an implementation also performs the automated review step.",
+    "ko": "구현을 생성한 바로 그 Claude Code 세션이 자동 리뷰 단계까지 수행한다."
+   }
+  ]
+ },
+ {
+  "lemma": "performance",
+  "kind": "vocab-core",
+  "surfaces": [
+   "performance"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "performance",
+   "word": "performance",
+   "pos": "명사",
+   "ipa": "pərˈfɔːrməns",
+   "meaning": "① 성능 ② (업무) 성과, 수행"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#7.0",
+    "en": "After developers began dismissing all of a reviewer's comments, a team added its noisy performance-hints category to the skip list."
+   },
+   {
+    "sid": "lesson-d4#7.1",
+    "en": "Security and correctness comments are now trusted again, and the team has rewritten the performance criteria in explicit terms."
+   },
+   {
+    "sid": "lesson-d4#3.3",
+    "en": "Skip it, since the code still returns correct data and the slower, uncached path is a performance matter for a separate review, not a comment fault."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:performance.0",
+    "en": "\"Provide extremely detailed descriptions. This is by far the most important factor in tool performance.\"",
+    "ko": "\"아주 자세한 설명을 제공하라. 이것이 도구 성능에 단연 가장 중요한 요인이다.\""
+   }
+  ]
+ },
+ {
+  "lemma": "periodically",
+  "kind": "vocab-core",
+  "surfaces": [
+   "periodically"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "periodically",
+   "word": "periodically",
+   "pos": "부사",
+   "ipa": "ˌpɪriˈɑːdɪkli",
+   "meaning": "주기적으로"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#24.5",
+    "en": "Increase the timeout on the PreToolUse hook to re-check the flag periodically; the hook will eventually notice the review was incorrect and block the refund."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:periodically.0",
+    "en": "Continue all phases in the main conversation, using /compact periodically to reduce context usage.",
+    "ko": "모든 단계를 메인 대화에서 진행하면서, 컨텍스트 사용량을 줄이려고 주기적으로 `/compact` 를 쓴다."
+   }
+  ]
+ },
+ {
+  "lemma": "permanent",
+  "kind": "vocab-core",
+  "surfaces": [
+   "permanent",
+   "permanently"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "permanent",
+   "word": "permanent",
+   "pos": "형용사",
+   "ipa": "ˈpɜːrmənənt",
+   "meaning": "영구적인, 되돌릴 수 없는 (permanent error: 재시도해도 해결되지 않는 오류)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#8.4",
+    "en": "The agent works out from `isError: true` that the failure is permanent, so it stops and correctly explains the refund policy to the customer."
+   },
+   {
+    "sid": "lesson-d3#19.4",
+    "en": "Read-only commands are permanently exempt from every permission mode in Claude Code, no matter which mode is currently active"
+   }
+  ]
+ },
+ {
+  "lemma": "permission",
+  "kind": "vocab-core",
+  "surfaces": [
+   "permission",
+   "permissions"
+  ],
+  "freq": 18,
+  "vocab": {
+   "id": "permission",
+   "word": "permission",
+   "pos": "명사",
+   "ipa": "pərˈmɪʃn",
+   "meaning": "권한, 허가 — 어떤 동작을 해도 되는지 정한 것"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#28.0",
+    "en": "An unattended support agent, where no permission prompt may ever appear, has a PreToolUse hook that denies refunds over $500 with the reason \"Refund denied\"."
+   },
+   {
+    "sid": "lesson-d2#12.1",
+    "en": "The enriched records, plus the unresolved customers each with their permission error and description, plus a record of which lookups were attempted"
+   },
+   {
+    "sid": "lesson-d3#19.4",
+    "en": "Read-only commands are permanently exempt from every permission mode in Claude Code, no matter which mode is currently active"
+   },
+   {
+    "sid": "sample01#18.4",
+    "en": "Claude Code refuses — `CLAUDE.md` rules are enforced like permission denials"
+   },
+   {
+    "sid": "sample01-kor#18.2",
+    "en": "Claude Code는 거부한다 — `CLAUDE.md` 규칙은 권한 거부(permission deny)처럼 강제된다."
+   },
+   {
+    "sid": "lesson-d1#42.0",
+    "en": "While a session is resumed via --continue --fork-session to try a riskier approach, the architect notices that a permission the original session had approved with 'allow for this session' is being re-prompted in the new branch."
+   },
+   {
+    "sid": "lesson-d2#12.2",
+    "en": "Nothing yet: the subagent first retries the permission failures with backoff, then reports once they clear"
+   },
+   {
+    "sid": "lesson-d3#19.5",
+    "en": "The architect's local settings have disabled every single permission check for the remainder of this particular session entirely"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:permission.0",
+    "en": "Claude Code refuses — `CLAUDE.md` rules are enforced like permission denials",
+    "ko": "Claude Code는 거부한다 — `CLAUDE.md` 규칙은 권한 거부처럼 강제된다."
+   }
+  ]
+ },
+ {
+  "lemma": "permit",
+  "kind": "new",
+  "surfaces": [
+   "permitted"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#10.4",
+    "en": "Decline the request, treating the own-site adjustment terms as the full list of permitted adjustments"
+   }
+  ]
+ },
+ {
+  "lemma": "persistent",
+  "kind": "vocab-core",
+  "surfaces": [
+   "persistent"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "persistent",
+   "word": "persistent",
+   "pos": "형용사",
+   "ipa": "pərˈsɪstənt",
+   "meaning": "① 계속되는, 사라지지 않는 ② (저장되어) 유지되는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.3",
+    "en": "AgentDefinition.prompt sets the subagent's persistent system prompt and expertise, while the per-call prompt passed at invocation supplies the specific task details for that run"
+   },
+   {
+    "sid": "mock04#9.4",
+    "en": "Keep a persistent case-facts block (order id, amount, dates) outside the summary and re-inject it verbatim each turn."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:persistent.0",
+    "en": "Have the subagent retry transient failures internally and only report persistent errors.",
+    "ko": "서브에이전트가 일시적인 오류는 내부에서 재시도하고, 계속되는 오류만 보고한다."
+   },
+   {
+    "vid": "vocab:persistent.1",
+    "en": "Extract transactional facts (amounts, dates, order numbers) into a persistent \"case facts\" block.",
+    "ko": "거래 사실(금액·날짜·주문번호)을 영속적인 \"case facts\" 블록으로 뽑아 둔다."
+   }
+  ]
+ },
+ {
+  "lemma": "person",
+  "kind": "new",
+  "surfaces": [
+   "person"
+  ],
+  "freq": 6,
+  "sentences": [
+   {
+    "sid": "lesson-d5#8.0",
+    "en": "Earlier in a chat, a customer sounded irritated but never asked for a person."
+   },
+   {
+    "sid": "lesson-d4#23.6",
+    "en": "Stop retrying, make `renewal_date` optional so the model can report that it is missing, and send the record to a person or supply the Master Agreement"
+   },
+   {
+    "sid": "lesson-d5#8.2",
+    "en": "The customer now replies: \"No, just put me through to a person.\""
+   },
+   {
+    "sid": "lesson-d5#11.4",
+    "en": "Keep the sentiment rule and drop the confidence rule, because anger reliably signals a case that needs a person, while self-ratings are subjective"
+   },
+   {
+    "sid": "lesson-d5#7.3",
+    "en": "Hand off only on specific conditions you can see in the conversation: the customer asks for a person, written policy doesn't cover the request, or the agent can't make meaningful progress."
+   },
+   {
+    "sid": "lesson-d5#8.8",
+    "en": "Ask the customer why they want a person before deciding whether to escalate"
+   }
+  ]
+ },
+ {
+  "lemma": "persona",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "persona",
+   "word": "persona",
+   "pos": "명사",
+   "ipa": "pərˈsoʊnə",
+   "meaning": "페르소나 — (챗봇이 연기하는) 캐릭터·인물 설정"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "personal",
+  "kind": "new",
+  "surfaces": [
+   "personal"
+  ],
+  "freq": 9,
+  "sentences": [
+   {
+    "sid": "lesson-d3#10.1",
+    "en": "A senior engineer also keeps a `~/.claude/skills/review/SKILL.md` on their laptop for personal projects, unaware it uses the same name."
+   },
+   {
+    "sid": "mock04#11.4",
+    "en": "Add an `@import` to the repo-root CLAUDE.md pointing at `~/.claude/CLAUDE.md` so each clone pulls in the personal file"
+   },
+   {
+    "sid": "lesson-d3#10.3",
+    "en": "The personal skill at `~/.claude/skills/review/SKILL.md`, because a skill with the same name at the personal level overrides one from the project level."
+   },
+   {
+    "sid": "lesson-d3#10.4",
+    "en": "The project skill at `.claude/skills/review/SKILL.md`, because project-scoped skills always take priority over personal ones with the same name."
+   },
+   {
+    "sid": "lesson-d3#10.5",
+    "en": "Both skills execute in sequence, first the personal skill and then the project skill, since Claude Code merges same-named skills rather than choosing one."
+   },
+   {
+    "sid": "lesson-d3#3.5",
+    "en": "Populate each developer's personal `~/.claude/CLAUDE.md` via a one-time onboarding script, which developers can then edit as needed."
+   },
+   {
+    "sid": "lesson-d3#9.4",
+    "en": "`~/.claude/skills/review/SKILL.md`, because a personal copy only adds to the team skill and is merged with it"
+   },
+   {
+    "sid": "lesson-d3#9.5",
+    "en": "`~/.claude/skills/review-strict/SKILL.md`, a personal skill with its own name that you invoke as `/review-strict`"
+   }
+  ]
+ },
+ {
+  "lemma": "personal access token",
+  "kind": "vocab-core",
+  "surfaces": [
+   "personal-access token",
+   "personal access token"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "personal-access-token",
+   "word": "personal access token",
+   "pos": "명사구",
+   "ipa": "ˌpɜːrsənl ˈækses ˌtoʊkən",
+   "meaning": "개인 액세스 토큰(PAT) — 비밀번호 대신 API·CLI 인증에 쓰는 개인 비밀값"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#20.0",
+    "en": "Your team is rolling out a shared GitHub MCP server, and each engineer authenticates with their own personal access token."
+   },
+   {
+    "sid": "mock04#40.1",
+    "en": "A security scan flags that the team's committed .mcp.json contains a hardcoded GitHub personal-access token used by an MCP server."
+   },
+   {
+    "sid": "lesson-d2#21.1",
+    "en": "Every teammate has their own GitHub personal access token, and the config must be checked into the repo without ever committing a real secret."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:personal-access-token.0",
+    "en": "...the team's committed .mcp.json contains a hardcoded GitHub personal-access token used by an MCP server.",
+    "ko": "팀이 커밋한 `.mcp.json` 에 MCP 서버가 쓰는 GitHub 개인 액세스 토큰이 하드코딩되어 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "personally",
+  "kind": "new",
+  "surfaces": [
+   "personally"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#10.0",
+    "en": "A team built a classification prompt with twenty exact input-output pairs, one for every edge case they had personally encountered in their historical data."
+   }
+  ]
+ },
+ {
+  "lemma": "pharmaceutical",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "pharmaceutical",
+   "word": "pharmaceutical",
+   "pos": "형용사",
+   "ipa": "ˌfɑːrməˈsuːtɪkl",
+   "meaning": "제약의"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "phase",
+  "kind": "vocab-core",
+  "surfaces": [
+   "phase"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "phase",
+   "word": "phase",
+   "pos": "명사",
+   "ipa": "feɪz",
+   "meaning": "(작업의) 단계"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#18.0",
+    "en": "Midway through planning a multi-phase migration, Claude has to find every usage pattern of the old library across hundreds of files before it can propose an approach."
+   },
+   {
+    "sid": "lesson-d5#21.0",
+    "en": "Phase-2 subagents, each tracing a different refund-related flow, keep spending most of their tokens re-mapping the modules that phase 1 already mapped."
+   },
+   {
+    "sid": "mock04#26.1",
+    "en": "After the shared search and document-analysis phase completes, stakeholders want two report variants from the same evidence — a one-page executive brief and a technical deep-dive — without re-running the costly searches."
+   },
+   {
+    "sid": "lesson-d5#21.5",
+    "en": "Condense what phase 1 established into a short summary and put it at the top of each phase-2 subagent's prompt"
+   },
+   {
+    "sid": "mock04#26.4",
+    "en": "Fork the session at the end of the research phase into two branches, one per report variant, sharing the evidence"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:phase.0",
+    "en": "After the shared search and document-analysis phase completes, stakeholders want two report variants from the same evidence...",
+    "ko": "공유 검색·문서 분석 단계가 끝난 뒤, 이해관계자들이 같은 증거로 두 가지 보고서를 원한다."
+   }
+  ]
+ },
+ {
+  "lemma": "phi",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "phi",
+   "word": "PHI",
+   "pos": "약어",
+   "ipa": "ˌpiː.eɪtʃˈaɪ",
+   "meaning": "보호 대상 건강 정보(Protected Health Information) — HIPAA 가 보호하는 환자 정보"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "phone",
+  "kind": "new",
+  "surfaces": [
+   "phone"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d5#12.5",
+    "en": "When a lookup returns several matches, do not choose between them. Ask the customer for one more identifier, such as the booking reference or phone number, and continue only once exactly one record matches."
+   },
+   {
+    "sid": "lesson-d5#13.3",
+    "en": "Ask the customer for one more identifier, such as a ticket number or phone number, then continue the claim review"
+   }
+  ]
+ },
+ {
+  "lemma": "photo",
+  "kind": "new",
+  "surfaces": [
+   "photo"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#24.1",
+    "en": "The flag is expected to be set to `true` by a separate `mark_verified` tool after a human reviewer approves a photo ID."
+   }
+  ]
+ },
+ {
+  "lemma": "phrase",
+  "kind": "vocab-core",
+  "surfaces": [
+   "phrase",
+   "phrases",
+   "phrasing",
+   "phrased"
+  ],
+  "freq": 11,
+  "vocab": {
+   "id": "phrase",
+   "word": "phrase",
+   "pos": "명사·동사",
+   "ipa": "freɪz",
+   "meaning": "① 문구, 구절 ② (말로) 표현하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#1.2",
+    "en": "The engineering team wrote a wrapper loop that ends the conversation whenever the assistant's text matches a closing phrase like \"let me know if there's anything else.\""
+   },
+   {
+    "sid": "lesson-d1#4.4",
+    "en": "Stop and search the text for a phrase such as \"done\" to confirm"
+   },
+   {
+    "sid": "lesson-d2#2.6",
+    "en": "The user's request phrasing was too vague to reliably distinguish between the tools, so the fix belongs in the user's prompt rather than the tool definitions."
+   },
+   {
+    "sid": "lesson-d4#2.4",
+    "en": "High-confidence phrasing conflicts with the model's safety training, which is designed to avoid under-reporting risks, causing it to over-report findings as a precautionary default across a wider range of inputs."
+   },
+   {
+    "sid": "lesson-d5#36.6",
+    "en": "Have each subagent return a list of claims, each phrased as a short quotation from the documents it read"
+   },
+   {
+    "sid": "mock04#29.1",
+    "en": "The coordinator's agentic loop sometimes stops before the report subagent has run: it ends whenever the latest assistant text contains the phrase 'research complete'."
+   },
+   {
+    "sid": "mock04#29.2",
+    "en": "Intermittently the synthesis subagent uses that phrase mid-analysis, halting the workflow."
+   },
+   {
+    "sid": "mock04#46.2",
+    "en": "The gate is flaky because Claude phrases severe findings differently each run — \"severe issue,\" \"major bug,\" \"critical defect.\""
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:phrase.0",
+    "en": "...it ends whenever the latest assistant text contains the phrase 'research complete'.",
+    "ko": "최신 어시스턴트 텍스트에 'research complete'라는 문구가 들어 있으면 루프를 끝내도록 되어 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "physically",
+  "kind": "vocab-core",
+  "surfaces": [
+   "physically",
+   "physical"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "physically",
+   "word": "physically",
+   "pos": "부사",
+   "ipa": "ˈfɪzɪkli",
+   "meaning": "물리적으로, 실제로"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#24.1",
+    "en": "On one submission, the employee left the project code blank on the physical form, so it does not appear anywhere in the scanned image."
+   },
+   {
+    "sid": "mock04#58.1",
+    "en": "For scanned documents where the tax ID is physically cut off at the page edge and simply absent from the source text, the validation-retry loop retries five times and still fails, burning tokens on every attempt."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:physically.0",
+    "en": "For scanned documents where the tax ID is physically cut off at the page edge and simply absent from the source text...",
+    "ko": "세금 ID가 페이지 가장자리에서 물리적으로 잘려 원문 텍스트에 아예 없는 스캔 문서에 대해..."
+   }
+  ]
+ },
+ {
+  "lemma": "physician",
+  "kind": "vocab-core",
+  "surfaces": [
+   "physician"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "physician",
+   "word": "physician",
+   "pos": "명사",
+   "ipa": "fɪˈzɪʃn",
+   "meaning": "의사 (referring physician: 진료를 의뢰한 의사)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#18.1",
+    "en": "Many reports name no referring physician, but every record still has a plausible-looking name in that field."
+   },
+   {
+    "sid": "lesson-d4#18.3",
+    "en": "Keep the field required and add a system-prompt line such as \"Never invent a physician name that is not in the report.\""
+   },
+   {
+    "sid": "lesson-d4#18.6",
+    "en": "Keep the field required and add `input_examples` that show physician names in the correct format"
+   }
+  ]
+ },
+ {
+  "lemma": "pick",
+  "kind": "new",
+  "surfaces": [
+   "pick",
+   "picks",
+   "picked",
+   "picking"
+  ],
+  "freq": 19,
+  "sentences": [
+   {
+    "sid": "lesson-d1#39.1",
+    "en": "This morning, a teammate wants the architect to pick the investigation back up with full context of everything already read and concluded, without hunting through the interactive session picker."
+   },
+   {
+    "sid": "lesson-d3#32.1",
+    "en": "Where should this project-specific guidance be encoded so every CI run picks it up automatically without being repeated in each workflow prompt?"
+   },
+   {
+    "sid": "lesson-d4#38.1",
+    "en": "What architectural step should resolve this rather than picking one per-file recommendation at random?"
+   },
+   {
+    "sid": "lesson-d5#12.1",
+    "en": "Logs show it picked the one with the most recent activity and discussed it with the wrong guest."
+   },
+   {
+    "sid": "mock04#35.2",
+    "en": "The synthesis subagent silently picks $6.8B and presents it as the single authoritative fact."
+   },
+   {
+    "sid": "lesson-d2#28.5",
+    "en": "Grep for the block first, then repeat the same Edit so it can use the search results to pick the right match"
+   },
+   {
+    "sid": "lesson-d1#5.2",
+    "en": "The subagent picks a different provider."
+   },
+   {
+    "sid": "lesson-d4#9.1",
+    "en": "For requests like \"where is the retry timeout set?\" it picks a different tool from one session to the next."
+   }
+  ]
+ },
+ {
+  "lemma": "pick up",
+  "kind": "vocab-core",
+  "surfaces": [
+   "pick up"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "pick-up",
+   "word": "pick up",
+   "pos": "동사구",
+   "ipa": "ˌpɪk ˈʌp",
+   "meaning": "① (중단한 곳부터) 이어받다, 다시 시작하다 ② (변경·설정을) 알아채 반영하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#7.3",
+    "en": "The subagent inherited a stale cached copy of the conversation and needs its session resumed to pick up the recent turns"
+   }
+  ]
+ },
+ {
+  "lemma": "picker",
+  "kind": "new",
+  "surfaces": [
+   "picker"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d1#39.1",
+    "en": "This morning, a teammate wants the architect to pick the investigation back up with full context of everything already read and concluded, without hunting through the interactive session picker."
+   },
+   {
+    "sid": "lesson-d1#38.6",
+    "en": "It opens the session picker with 'auth-refactor' pre-filled as a search term, because the CI host has no exact match"
+   },
+   {
+    "sid": "lesson-d1#40.6",
+    "en": "Call resume without an ID and have the service pick the user's conversation from the session picker"
+   }
+  ]
+ },
+ {
+  "lemma": "pilot",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "pilot",
+   "word": "pilot",
+   "pos": "명사",
+   "ipa": "ˈpaɪlət",
+   "meaning": "시범 운영, 파일럿 (프로젝트)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "pin",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "pin",
+   "word": "pin",
+   "pos": "동사·명사",
+   "ipa": "pɪn",
+   "meaning": "(버전을) 고정하다 — 자동으로 바뀌지 않게 특정 버전에 묶어 두다 / 핀"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "pin down",
+  "kind": "vocab-core",
+  "surfaces": [
+   "pinned down"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "pin-down",
+   "word": "pin down",
+   "pos": "동사구",
+   "ipa": "pɪn ˈdaʊn",
+   "meaning": "(정확히) 밝혀내다, 확정하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#38.7",
+    "en": "tool_choice was set to auto rather than forcing the Grep tool, so the entrypoint was never pinned down"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:pin-down.0",
+    "en": "tool_choice was set to auto rather than forcing the Grep tool, so the entrypoint was never pinned down",
+    "ko": "`tool_choice` 가 `Grep` 도구 강제가 아니라 `auto` 로 설정되어 있어, 진입점이 끝내 확정되지 않았다."
+   }
+  ]
+ },
+ {
+  "lemma": "pipe",
+  "kind": "new",
+  "surfaces": [
+   "pipe"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#29.5",
+    "en": "Pipe the prompt through cat instead of passing it as an argument"
+   }
+  ]
+ },
+ {
+  "lemma": "pipeline",
+  "kind": "vocab-core",
+  "surfaces": [
+   "pipeline"
+  ],
+  "freq": 42,
+  "vocab": {
+   "id": "pipeline",
+   "word": "pipeline",
+   "pos": "명사",
+   "ipa": "ˈpaɪplaɪn",
+   "meaning": "파이프라인 — 여러 처리 단계를 차례로 이은 흐름"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.0",
+    "en": "In a research pipeline, the coordinator hands the synthesis subagent its findings as smooth prose such as \"studies show adoption doubled\"."
+   },
+   {
+    "sid": "lesson-d2#15.0",
+    "en": "A single generalist agent handling an entire content pipeline (research, outline, draft, edit, publish) has 20 tools and shows declining tool-selection accuracy as more tools were added over time."
+   },
+   {
+    "sid": "lesson-d3#29.0",
+    "en": "A pipeline step runs `claude \"explain the failing test\"` and the job hangs until it times out."
+   },
+   {
+    "sid": "lesson-d4#13.1",
+    "en": "The extraction pipeline's examples all show crisp doses such as \"400 mg\", and the output keeps showing precise amounts the patient never gave."
+   },
+   {
+    "sid": "lesson-d5#15.0",
+    "en": "In a four-source research pipeline, the patent database sometimes rejects credentials while the other sources keep working."
+   },
+   {
+    "sid": "mock04#46.1",
+    "en": "A CI pipeline calls Claude Code to review each pull request, and a shell gate script greps stdout for the word \"CRITICAL\" to fail the build."
+   },
+   {
+    "sid": "sample01#15.0",
+    "en": "A data pipeline needs to extract structured invoice data (vendor, line items, totals) from free-text invoice PDFs."
+   },
+   {
+    "sid": "lesson-d1#34.0",
+    "en": "A team is building an automated pipeline that takes a raw customer support transcript, produces a structured summary, then translates that summary into three fixed target languages."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:pipeline.0",
+    "en": "An agentic pipeline automates vendor payments.",
+    "ko": "공급업체 대금 지급을 자동화한 에이전트 파이프라인."
+   }
+  ]
+ },
+ {
+  "lemma": "place",
+  "kind": "new",
+  "surfaces": [
+   "place"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d3#3.6",
+    "en": "Place a `CLAUDE.local.md` at the root of each repository, distributed by an onboarding script and added to `.gitignore` to prevent accidental commits."
+   },
+   {
+    "sid": "mock04#49.5",
+    "en": "Split CLAUDE.md into two files and symlink the right one into place per job before each run starts"
+   }
+  ]
+ },
+ {
+  "lemma": "placeholder",
+  "kind": "vocab-core",
+  "surfaces": [
+   "placeholders",
+   "placeholder"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "placeholder",
+   "word": "placeholder",
+   "pos": "명사",
+   "ipa": "ˈpleɪshoʊldər",
+   "meaning": "자리 표시자 — 나중에 채울 임시 값"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#21.5",
+    "en": "Add the server with local scope, and set the header to `Authorization: Bearer <token>` in .mcp.json, with each teammate replacing the placeholder with their own token"
+   },
+   {
+    "sid": "mock04#34.7",
+    "en": "Instruct synthesis to insert (source) placeholders in the narrative that a human fills in after the report is generated."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:placeholder.0",
+    "en": "Configure the server in project scope with a placeholder token.",
+    "ko": "프로젝트 범위에 임시(플레이스홀더) 토큰으로 서버를 설정한다."
+   }
+  ]
+ }
+]

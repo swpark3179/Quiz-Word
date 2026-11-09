@@ -1,0 +1,978 @@
+[
+ {
+  "lemma": "placement",
+  "skip": null,
+  "word": "placement",
+  "pos": ["명사"],
+  "ipa": "ˈpleɪsmənt",
+  "meaning": "배치, (어디에) 두는 위치",
+  "short": "배치, 두는 위치",
+  "senses": [
+   { "pos": "명사", "ko": "배치, (어디에) 두는 위치" },
+   { "pos": "명사", "ko": "(일자리·학교) 배정, 알선" }
+  ],
+  "forms": ["placements", "place", "placed"],
+  "synonyms": ["positioning", "arrangement", "location"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "plain",
+  "skip": null,
+  "word": "plain",
+  "pos": ["형용사"],
+  "ipa": "pleɪn",
+  "meaning": "① 그냥, 아무것도 덧붙이지 않은 ② (서식 없는) 일반의 (plain text: 일반 텍스트)",
+  "short": "(서식 없는) 일반의, 그냥",
+  "senses": [
+   { "pos": "형용사", "ko": "(서식 없는) 일반의" },
+   { "pos": "형용사", "ko": "그냥, 아무것도 덧붙이지 않은" },
+   { "pos": "형용사", "ko": "쉬운, 평이한" },
+   { "pos": "형용사", "ko": "분명한, 명백한" }
+  ],
+  "forms": ["plain-text", "plain text", "plainly"],
+  "synonyms": ["simple", "bare", "unformatted"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#6.2", "surface": "plain", "pos": "형용사", "sense": "(서식 없는) 일반의" },
+   { "sid": "mock04#7.1", "surface": "plain", "pos": "형용사", "sense": "그냥, 아무것도 덧붙이지 않은" },
+   { "sid": "lesson-d3#24.4", "surface": "plain", "pos": "형용사", "sense": "쉬운, 평이한" },
+   { "sid": "mock04#32.3", "surface": "plain-text", "pos": "형용사", "sense": "(서식 없는) 일반의" }
+  ]
+ },
+ {
+  "lemma": "plan",
+  "skip": null,
+  "word": "plan",
+  "pos": ["명사", "동사"],
+  "ipa": "plæn",
+  "meaning": "① 계획, 방안 ② 계획하다, 계획을 세우다 ③ (plan mode) 계획 모드 — 실행 전에 계획만 세우는 Claude Code 모드",
+  "short": "계획, 계획하다",
+  "senses": [
+   { "pos": "명사", "ko": "계획, 방안" },
+   { "pos": "동사", "ko": "계획하다, 계획을 세우다" },
+   { "pos": "명사", "ko": "(plan mode) 계획 모드" }
+  ],
+  "forms": ["plans", "planned", "planning", "planner"],
+  "synonyms": ["scheme", "strategy", "design"],
+  "domain": "계획·목표·전략",
+  "basic": true,
+  "contexts": [
+   { "sid": "mock04#37.1", "surface": "plan", "pos": "명사", "sense": "계획, 방안" },
+   { "sid": "lesson-d1#32.4", "surface": "plans", "pos": "동사", "sense": "계획하다, 계획을 세우다" },
+   { "sid": "mock04-kor#14.3", "surface": "plan", "pos": "명사", "sense": "(plan mode) 계획 모드" },
+   { "sid": "lesson-d4#37.2", "surface": "plan", "pos": "명사", "sense": "계획, 방안" }
+  ]
+ },
+ {
+  "lemma": "platform",
+  "skip": null,
+  "word": "platform",
+  "pos": ["명사"],
+  "ipa": "ˈplætfɔːrm",
+  "meaning": "① 플랫폼 — 서비스·도구가 돌아가는 기반 시스템 (platform team: 공통 기반 시스템 담당 팀) ② (역의) 승강장",
+  "short": "플랫폼, 기반 시스템",
+  "senses": [
+   { "pos": "명사", "ko": "플랫폼, 기반 시스템" },
+   { "pos": "명사", "ko": "(역의) 승강장" }
+  ],
+  "forms": ["platforms"],
+  "synonyms": ["infrastructure", "framework"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#30.1", "surface": "platform", "pos": "명사", "sense": "플랫폼, 기반 시스템" },
+   { "sid": "lesson-d3#30.0", "surface": "platform", "pos": "명사", "sense": "플랫폼, 기반 시스템" },
+   { "sid": "lesson-d4#32.0", "surface": "platform", "pos": "명사", "sense": "플랫폼, 기반 시스템" }
+  ]
+ },
+ {
+  "lemma": "plausible",
+  "skip": null,
+  "word": "plausible",
+  "pos": ["형용사"],
+  "ipa": "ˈplɔːzəbl",
+  "meaning": "그럴듯한 (맞아 보이지만 확실하진 않은)",
+  "short": "그럴듯한",
+  "senses": [
+   { "pos": "형용사", "ko": "그럴듯한, 있을 법한" },
+   { "pos": "부사", "ko": "(plausibly) 그럴듯하게, 아마도" }
+  ],
+  "forms": ["plausibly", "plausible-looking", "plausibility", "implausible"],
+  "synonyms": ["believable", "credible", "likely"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#18.1", "surface": "plausible-looking", "pos": "형용사", "sense": "그럴듯한, 있을 법한" },
+   { "sid": "lesson-d3#19.1", "surface": "plausibly", "pos": "부사", "sense": "(plausibly) 그럴듯하게, 아마도" },
+   { "sid": "mock04#55.1", "surface": "plausible-looking", "pos": "형용사", "sense": "그럴듯한, 있을 법한" }
+  ]
+ },
+ {
+  "lemma": "plenty",
+  "skip": null,
+  "word": "plenty",
+  "pos": ["명사", "부사"],
+  "ipa": "ˈplenti",
+  "meaning": "충분함, 넉넉한 양 (plenty of: 많은, 충분한)",
+  "short": "충분함, 넉넉한 양",
+  "senses": [
+   { "pos": "명사", "ko": "충분함, 넉넉한 양" },
+   { "pos": "부사", "ko": "충분히, 꽤" }
+  ],
+  "forms": ["plentiful"],
+  "synonyms": ["abundance", "lots"],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#28.3", "surface": "plenty", "pos": "명사", "sense": "충분함, 넉넉한 양" }
+  ]
+ },
+ {
+  "lemma": "plugin",
+  "skip": null,
+  "word": "plugin",
+  "pos": ["명사"],
+  "ipa": "ˈplʌɡɪn",
+  "meaning": "플러그인 — 기능을 덧붙이는 확장 모듈 (Claude Code: 명령·에이전트·훅 등을 묶어 배포하는 패키지)",
+  "short": "플러그인(확장 기능 모듈)",
+  "senses": [
+   { "pos": "명사", "ko": "플러그인, 확장 기능 모듈" }
+  ],
+  "forms": ["plugins", "plug-in"],
+  "synonyms": ["extension", "add-on"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#33.0", "surface": "plugin", "pos": "명사", "sense": "플러그인, 확장 기능 모듈" }
+  ]
+ },
+ {
+  "lemma": "plus",
+  "skip": null,
+  "word": "plus",
+  "pos": ["전치사", "접속사", "명사"],
+  "ipa": "plʌs",
+  "meaning": "① ~에 더하여, ~와 함께 ② (수량) 더하기 ③ 게다가 ④ 이점, 장점",
+  "short": "~에 더하여, ~와 함께",
+  "senses": [
+   { "pos": "전치사", "ko": "~에 더하여, ~와 함께" },
+   { "pos": "전치사", "ko": "(수량) 더하기, ~을 합한" },
+   { "pos": "접속사", "ko": "게다가" },
+   { "pos": "명사", "ko": "이점, 장점" }
+  ],
+  "forms": [],
+  "synonyms": ["besides", "along with"],
+  "domain": "논리·관계·연결어",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#28.5", "surface": "plus", "pos": "전치사", "sense": "~에 더하여, ~와 함께" },
+   { "sid": "lesson-d4#28.4", "surface": "plus", "pos": "전치사", "sense": "(수량) 더하기, ~을 합한" },
+   { "sid": "mock04#31.6", "surface": "plus", "pos": "전치사", "sense": "~에 더하여, ~와 함께" }
+  ]
+ },
+ {
+  "lemma": "po",
+  "skip": null,
+  "word": "PO",
+  "pos": ["약어"],
+  "ipa": "ˌpiːˈoʊ",
+  "meaning": "구매 주문(서) — Purchase Order",
+  "short": "구매 주문(서)",
+  "senses": [
+   { "pos": "약어", "ko": "구매 주문(서)" }
+  ],
+  "forms": ["POs"],
+  "synonyms": ["purchase order"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#55.1", "surface": "PO", "pos": "약어", "sense": "구매 주문(서)" },
+   { "sid": "mock04#55.4", "surface": "PO", "pos": "약어", "sense": "구매 주문(서)" },
+   { "sid": "mock04#55.7", "surface": "PO", "pos": "약어", "sense": "구매 주문(서)" }
+  ]
+ },
+ {
+  "lemma": "point",
+  "skip": null,
+  "word": "point",
+  "pos": ["동사", "명사"],
+  "ipa": "pɔɪnt",
+  "meaning": "① (point at/to) ~을 가리키다, (연결 대상을) ~로 지정하다 ② (특정) 시점, 지점 ③ (point out) 짚어 주다, 지적하다 ④ 요점, 핵심",
+  "short": "가리키다, 시점·지점",
+  "senses": [
+   { "pos": "동사", "ko": "가리키다, (연결 대상으로) 지정하다" },
+   { "pos": "명사", "ko": "(특정) 시점, 지점" },
+   { "pos": "동사", "ko": "(point out) 짚어 주다, 지적하다" },
+   { "pos": "명사", "ko": "요점, 핵심" }
+  ],
+  "forms": ["points", "pointed", "pointing", "pointer"],
+  "synonyms": ["indicate", "direct", "target"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#22.0", "surface": "points", "pos": "동사", "sense": "가리키다, (연결 대상으로) 지정하다" },
+   { "sid": "lesson-d2#14.4", "surface": "point", "pos": "명사", "sense": "(특정) 시점, 지점" },
+   { "sid": "lesson-d5#12.4", "surface": "point", "pos": "동사", "sense": "(point out) 짚어 주다, 지적하다" },
+   { "sid": "mock04#11.4", "surface": "pointing", "pos": "동사", "sense": "가리키다, (연결 대상으로) 지정하다" }
+  ]
+ },
+ {
+  "lemma": "pointer",
+  "skip": null,
+  "word": "pointer",
+  "pos": ["명사"],
+  "ipa": "ˈpɔɪntər",
+  "meaning": "① (위치를 알려 주는) 참조, 가리키는 것 ② (프로그래밍) 포인터 ③ 조언, 힌트",
+  "short": "(위치를 가리키는) 참조",
+  "senses": [
+   { "pos": "명사", "ko": "(위치를 알려 주는) 참조, 가리키는 것" },
+   { "pos": "명사", "ko": "(프로그래밍) 포인터" },
+   { "pos": "명사", "ko": "조언, 힌트" }
+  ],
+  "forms": ["pointers"],
+  "synonyms": ["reference", "link"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#16.6", "surface": "pointer", "pos": "명사", "sense": "(위치를 알려 주는) 참조, 가리키는 것" }
+  ]
+ },
+ {
+  "lemma": "policy",
+  "skip": null,
+  "word": "policy",
+  "pos": ["명사"],
+  "ipa": "ˈpɑːləsi",
+  "meaning": "정책, 규정",
+  "short": "정책, 규정",
+  "senses": [
+   { "pos": "명사", "ko": "정책, 규정" },
+   { "pos": "명사", "ko": "(관리형) 정책 설정" },
+   { "pos": "명사", "ko": "보험 증권, 보험 계약" }
+  ],
+  "forms": ["policies"],
+  "synonyms": ["rule", "guideline", "regulation"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#8.1", "surface": "policy", "pos": "명사", "sense": "정책, 규정" },
+   { "sid": "lesson-d3#2.4", "surface": "policy", "pos": "명사", "sense": "(관리형) 정책 설정" },
+   { "sid": "mock04#3.1", "surface": "policy", "pos": "명사", "sense": "정책, 규정" },
+   { "sid": "lesson-d1#27.0", "surface": "policy", "pos": "명사", "sense": "정책, 규정" }
+  ]
+ },
+ {
+  "lemma": "polite",
+  "skip": null,
+  "word": "polite",
+  "pos": ["형용사"],
+  "ipa": "pəˈlaɪt",
+  "meaning": "정중한, 예의 바른",
+  "short": "정중한, 예의 바른",
+  "senses": [
+   { "pos": "형용사", "ko": "정중한, 예의 바른" }
+  ],
+  "forms": ["politely", "politeness", "impolite"],
+  "synonyms": ["courteous", "respectful"],
+  "domain": "상태·성질",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#11.2", "surface": "polite", "pos": "형용사", "sense": "정중한, 예의 바른" },
+   { "sid": "mock04#1.6", "surface": "polite", "pos": "형용사", "sense": "정중한, 예의 바른" }
+  ]
+ },
+ {
+  "lemma": "poll",
+  "skip": null,
+  "word": "poll",
+  "pos": ["동사"],
+  "ipa": "poʊl",
+  "meaning": "(상태를) 주기적으로 확인하다, 폴링하다",
+  "short": "주기적으로 확인하다",
+  "senses": [
+   { "pos": "동사", "ko": "(상태를) 주기적으로 확인하다, 폴링하다" },
+   { "pos": "명사", "ko": "(polling) 폴링, 주기적 상태 확인" },
+   { "pos": "명사", "ko": "여론 조사, 투표" }
+  ],
+  "forms": ["polls", "polled", "polling"],
+  "synonyms": ["check", "query"],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#32.3", "surface": "poll", "pos": "동사", "sense": "(상태를) 주기적으로 확인하다, 폴링하다" },
+   { "sid": "lesson-d3#22.0", "surface": "polling", "pos": "명사", "sense": "(polling) 폴링, 주기적 상태 확인" },
+   { "sid": "lesson-d4#32.4", "surface": "poll", "pos": "동사", "sense": "(상태를) 주기적으로 확인하다, 폴링하다" }
+  ]
+ },
+ {
+  "lemma": "populate",
+  "skip": null,
+  "word": "populate",
+  "pos": ["동사"],
+  "ipa": "ˈpɑːpjuleɪt",
+  "meaning": "(빈 곳에 데이터를) 채워 넣다",
+  "short": "(데이터를) 채워 넣다",
+  "senses": [
+   { "pos": "동사", "ko": "(빈 곳에 데이터를) 채워 넣다" },
+   { "pos": "동사", "ko": "(지역에) 살다, 거주하다" }
+  ],
+  "forms": ["populates", "populated", "populating"],
+  "synonyms": ["fill", "fill in"],
+  "domain": "생성·추가",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#3.5", "surface": "Populate", "pos": "동사", "sense": "(빈 곳에 데이터를) 채워 넣다" }
+  ]
+ },
+ {
+  "lemma": "position",
+  "skip": null,
+  "word": "position",
+  "pos": ["명사", "동사"],
+  "ipa": "pəˈzɪʃn",
+  "meaning": "① 위치, (순서상의) 자리 ② 입장, 견해 ③ 직책, 일자리 ④ (특정 위치에) 두다, 배치하다",
+  "short": "위치, 자리",
+  "senses": [
+   { "pos": "명사", "ko": "위치, (순서상의) 자리" },
+   { "pos": "명사", "ko": "입장, 견해" },
+   { "pos": "명사", "ko": "직책, 일자리" },
+   { "pos": "동사", "ko": "(특정 위치에) 두다, 배치하다" }
+  ],
+  "forms": ["positions", "positioned", "positioning", "positional"],
+  "synonyms": ["place", "location", "spot"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#1.3", "surface": "position", "pos": "명사", "sense": "위치, (순서상의) 자리" },
+   { "sid": "lesson-d4#8.3", "surface": "position", "pos": "명사", "sense": "위치, (순서상의) 자리" }
+  ]
+ },
+ {
+  "lemma": "possible",
+  "skip": null,
+  "word": "possible",
+  "pos": ["형용사"],
+  "ipa": "ˈpɑːsəbl",
+  "meaning": "① 가능한, 할 수 있는 ② 있을 수 있는, 가능성 있는 (as few as possible: 가능한 한 적게)",
+  "short": "가능한, 있을 수 있는",
+  "senses": [
+   { "pos": "형용사", "ko": "가능한, 할 수 있는" },
+   { "pos": "형용사", "ko": "있을 수 있는, 가능성 있는" },
+   { "pos": "형용사", "ko": "(as ~ as possible) 가능한 한" }
+  ],
+  "forms": ["possibly", "possibility", "impossible"],
+  "synonyms": ["feasible", "potential"],
+  "domain": "상태·성질",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#25.2", "surface": "possible", "pos": "형용사", "sense": "가능한, 할 수 있는" },
+   { "sid": "mock04#51.2", "surface": "possible", "pos": "형용사", "sense": "있을 수 있는, 가능성 있는" },
+   { "sid": "lesson-d3#15.0", "surface": "possible", "pos": "형용사", "sense": "(as ~ as possible) 가능한 한" },
+   { "sid": "lesson-d5#20.6", "surface": "possible", "pos": "형용사", "sense": "있을 수 있는, 가능성 있는" }
+  ]
+ },
+ {
+  "lemma": "post",
+  "skip": null,
+  "word": "post",
+  "pos": ["동사"],
+  "ipa": "poʊst",
+  "meaning": "① (댓글·메시지를) 올리다, 게시하다 ② (HTTP) POST 요청을 보내다",
+  "short": "(댓글을) 올리다, 게시하다",
+  "senses": [
+   { "pos": "동사", "ko": "(댓글·메시지를) 올리다, 게시하다" },
+   { "pos": "동사", "ko": "(HTTP) POST 요청을 보내다" },
+   { "pos": "명사", "ko": "게시물, 글" }
+  ],
+  "forms": ["posts", "posted", "posting"],
+  "synonyms": ["publish", "submit"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#50.1", "surface": "posts", "pos": "동사", "sense": "(댓글·메시지를) 올리다, 게시하다" },
+   { "sid": "vocab:post.1", "surface": "POSTs", "pos": "동사", "sense": "(HTTP) POST 요청을 보내다" },
+   { "sid": "lesson-d4#32.5", "surface": "posts", "pos": "동사", "sense": "(댓글·메시지를) 올리다, 게시하다" },
+   { "sid": "mock04#50.4", "surface": "posted", "pos": "동사", "sense": "(댓글·메시지를) 올리다, 게시하다" }
+  ]
+ },
+ {
+  "lemma": "post-hoc",
+  "skip": null,
+  "word": "post-hoc",
+  "pos": ["형용사"],
+  "ipa": "ˌpoʊst ˈhɑːk",
+  "meaning": "사후의 — 일이 다 일어난 뒤에 하는",
+  "short": "사후의",
+  "senses": [
+   { "pos": "형용사", "ko": "사후의, 일이 끝난 뒤에 하는" }
+  ],
+  "forms": [],
+  "synonyms": ["retrospective", "after-the-fact"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#5.6", "surface": "post-hoc", "pos": "형용사", "sense": "사후의, 일이 끝난 뒤에 하는" }
+  ]
+ },
+ {
+  "lemma": "post-process",
+  "skip": null,
+  "word": "post-process",
+  "pos": ["동사"],
+  "ipa": "ˌpoʊst ˈprɑːses",
+  "meaning": "후처리하다 — 출력이 나온 뒤 코드로 다듬다",
+  "short": "후처리하다",
+  "senses": [
+   { "pos": "동사", "ko": "후처리하다" },
+   { "pos": "명사", "ko": "(post-processing) 후처리" },
+   { "pos": "명사", "ko": "(post-processor) 후처리기" }
+  ],
+  "forms": ["post-processes", "post-processed", "post-processing", "post-processor"],
+  "synonyms": [],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#15.6", "surface": "Post-process", "pos": "동사", "sense": "후처리하다" },
+   { "sid": "mock04#46.4", "surface": "post-processing", "pos": "명사", "sense": "(post-processing) 후처리" },
+   { "sid": "mock04#34.6", "surface": "post-processor", "pos": "명사", "sense": "(post-processor) 후처리기" }
+  ]
+ },
+ {
+  "lemma": "posttooluse",
+  "skip": null,
+  "word": "PostToolUse",
+  "pos": ["명사"],
+  "ipa": "ˌpoʊst ˈtuːl juːz",
+  "meaning": "PostToolUse 훅 — 도구 실행 직후에 실행되어 결과를 검사·가공하는 훅",
+  "short": "도구 실행 직후 훅",
+  "senses": [
+   { "pos": "명사", "ko": "도구 실행 직후에 실행되는 훅" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#4.7", "surface": "PostToolUse", "pos": "명사", "sense": "도구 실행 직후에 실행되는 훅" },
+   { "sid": "lesson-d1#22.4", "surface": "PostToolUse", "pos": "명사", "sense": "도구 실행 직후에 실행되는 훅" },
+   { "sid": "lesson-d1#30.0", "surface": "PostToolUse", "pos": "명사", "sense": "도구 실행 직후에 실행되는 훅" }
+  ]
+ },
+ {
+  "lemma": "potential",
+  "skip": null,
+  "word": "potential",
+  "pos": ["형용사"],
+  "ipa": "pəˈtenʃl",
+  "meaning": "잠재적인, ~일 가능성이 있는",
+  "short": "잠재적인, 가능성 있는",
+  "senses": [
+   { "pos": "형용사", "ko": "잠재적인, ~일 가능성이 있는" },
+   { "pos": "부사", "ko": "(potentially) 잠재적으로, 어쩌면" },
+   { "pos": "명사", "ko": "잠재력, 가능성" }
+  ],
+  "forms": ["potentially"],
+  "synonyms": ["possible", "prospective"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#40.1", "surface": "potentially", "pos": "부사", "sense": "(potentially) 잠재적으로, 어쩌면" },
+   { "sid": "vocab:potential.0", "surface": "potential", "pos": "형용사", "sense": "잠재적인, ~일 가능성이 있는" }
+  ]
+ },
+ {
+  "lemma": "power",
+  "skip": null,
+  "word": "power",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈpaʊər",
+  "meaning": "① (기기·서비스를) 구동하다, 동력을 주다 (-powered: ~로 구동되는, ~ 기반의) ② 힘, 능력, 권한 ③ 전력, 전원",
+  "short": "구동하다, 힘·능력",
+  "senses": [
+   { "pos": "형용사", "ko": "(~-powered) ~로 구동되는, ~ 기반의" },
+   { "pos": "동사", "ko": "(기기·서비스를) 구동하다, 동력을 주다" },
+   { "pos": "명사", "ko": "힘, 능력, 권한" },
+   { "pos": "명사", "ko": "전력, 전원" }
+  ],
+  "forms": ["powers", "powered", "powering", "powerful"],
+  "synonyms": ["drive", "run"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#9.0", "surface": "powered", "pos": "형용사", "sense": "(~-powered) ~로 구동되는, ~ 기반의" }
+  ]
+ },
+ {
+  "lemma": "pr",
+  "skip": null,
+  "word": "PR",
+  "pos": ["약어"],
+  "ipa": "ˌpiːˈɑːr",
+  "meaning": "풀 리퀘스트 — 코드 변경을 리뷰·병합해 달라는 요청",
+  "short": "풀 리퀘스트(변경 병합 요청)",
+  "senses": [
+   { "pos": "약어", "ko": "풀 리퀘스트, 코드 변경 병합 요청" },
+   { "pos": "약어", "ko": "(public relations) 홍보" }
+  ],
+  "forms": ["PRs", "pull request", "pull requests"],
+  "synonyms": ["pull request", "merge request"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#33.0", "surface": "PR", "pos": "약어", "sense": "풀 리퀘스트, 코드 변경 병합 요청" },
+   { "sid": "lesson-d1#35.0", "surface": "pull request", "pos": "약어", "sense": "풀 리퀘스트, 코드 변경 병합 요청" },
+   { "sid": "mock04#46.1", "surface": "pull request", "pos": "약어", "sense": "풀 리퀘스트, 코드 변경 병합 요청" }
+  ]
+ },
+ {
+  "lemma": "practice",
+  "skip": null,
+  "word": "practice",
+  "pos": ["명사"],
+  "ipa": "ˈpræktɪs",
+  "meaning": "① 실제 (in practice: 실제로는) ② 관행, 실무 방식",
+  "short": "관행, 실제로는",
+  "senses": [
+   { "pos": "부사구", "ko": "(in practice) 실제로는" },
+   { "pos": "명사", "ko": "관행, 실무 방식" },
+   { "pos": "명사", "ko": "연습" },
+   { "pos": "동사", "ko": "연습하다, 실천하다" }
+  ],
+  "forms": ["practices", "practical", "practically"],
+  "synonyms": ["custom", "convention", "method"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#42.2", "surface": "In practice", "pos": "부사구", "sense": "(in practice) 실제로는" },
+   { "sid": "lesson-d1#17.0", "surface": "practices", "pos": "명사", "sense": "관행, 실무 방식" },
+   { "sid": "lesson-d5#3.2", "surface": "practice", "pos": "명사", "sense": "관행, 실무 방식" },
+   { "sid": "lesson-d3#23.5", "surface": "practice", "pos": "명사", "sense": "관행, 실무 방식" }
+  ]
+ },
+ {
+  "lemma": "pre",
+  "skip": null,
+  "word": "pre-approve",
+  "pos": ["동사"],
+  "ipa": "ˌpriː əˈpruːv",
+  "meaning": "미리 승인하다, 사전 허용하다",
+  "short": "미리 승인하다",
+  "senses": [
+   { "pos": "동사", "ko": "미리 승인하다, 사전 허용하다" }
+  ],
+  "forms": ["pre-approved", "pre-approves", "pre-approval"],
+  "synonyms": ["preauthorize", "allowlist"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#31.0", "surface": "pre-approved", "pos": "동사", "sense": "미리 승인하다, 사전 허용하다" }
+  ]
+ },
+ {
+  "lemma": "precautionary",
+  "skip": null,
+  "word": "precautionary",
+  "pos": ["형용사"],
+  "ipa": "prɪˈkɔːʃəneri",
+  "meaning": "예방적인, 만일을 위한",
+  "short": "예방적인, 만일을 위한",
+  "senses": [
+   { "pos": "형용사", "ko": "예방적인, 만일을 위한" }
+  ],
+  "forms": ["precaution", "precautions"],
+  "synonyms": ["preventive", "protective"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#2.4", "surface": "precautionary", "pos": "형용사", "sense": "예방적인, 만일을 위한" }
+  ]
+ },
+ {
+  "lemma": "precedence",
+  "skip": null,
+  "word": "precedence",
+  "pos": ["명사"],
+  "ipa": "ˈpresɪdəns",
+  "meaning": "우선순위 — 무엇이 먼저 적용되는지",
+  "short": "우선순위, 우선함",
+  "senses": [
+   { "pos": "명사", "ko": "우선순위, 우선함 (take precedence over: ~보다 우선하다)" }
+  ],
+  "forms": ["precede", "preceding", "precedent"],
+  "synonyms": ["priority"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:precedence.0", "surface": "precedence", "pos": "명사", "sense": "우선순위, 우선함 (take precedence over: ~보다 우선하다)" }
+  ]
+ },
+ {
+  "lemma": "precision",
+  "skip": null,
+  "word": "precision",
+  "pos": ["명사"],
+  "ipa": "prɪˈsɪʒn",
+  "meaning": "① 정밀함, 정확성 ② (평가 지표) 정밀도 — 찾아낸 것 중 실제로 맞은 비율",
+  "short": "정밀함, 정확성",
+  "senses": [
+   { "pos": "명사", "ko": "정밀함, 정확성" },
+   { "pos": "명사", "ko": "(평가 지표) 정밀도" },
+   { "pos": "형용사", "ko": "(precise) 정확한, 정밀한" },
+   { "pos": "부사", "ko": "(precisely) 정확하게" }
+  ],
+  "forms": ["precise", "precisely", "imprecise"],
+  "synonyms": ["accuracy", "exactness"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#2.5", "surface": "precision", "pos": "명사", "sense": "정밀함, 정확성" },
+   { "sid": "lesson-d4#2.2", "surface": "precision", "pos": "명사", "sense": "(평가 지표) 정밀도" },
+   { "sid": "lesson-d4#13.1", "surface": "precise", "pos": "형용사", "sense": "(precise) 정확한, 정밀한" },
+   { "sid": "lesson-d3#25.0", "surface": "precisely", "pos": "부사", "sense": "(precisely) 정확하게" }
+  ]
+ },
+ {
+  "lemma": "predate",
+  "skip": null,
+  "word": "predate",
+  "pos": ["동사"],
+  "ipa": "ˌpriːˈdeɪt",
+  "meaning": "(시기상) ~보다 앞서다, 먼저 있었다",
+  "short": "(시기상) ~보다 앞서다",
+  "senses": [
+   { "pos": "동사", "ko": "(시기상) ~보다 앞서다, 먼저 있었다" }
+  ],
+  "forms": ["predates", "predated", "predating"],
+  "synonyms": ["precede", "antedate"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:predate.0", "surface": "predate", "pos": "동사", "sense": "(시기상) ~보다 앞서다, 먼저 있었다" }
+  ]
+ },
+ {
+  "lemma": "prefer",
+  "skip": null,
+  "word": "prefer",
+  "pos": ["동사"],
+  "ipa": "prɪˈfɜːr",
+  "meaning": "선호하다, (여럿 중) 더 원하다",
+  "short": "선호하다, 더 원하다",
+  "senses": [
+   { "pos": "동사", "ko": "선호하다, (여럿 중) 더 원하다" },
+   { "pos": "명사", "ko": "(preference) 선호, 취향" }
+  ],
+  "forms": ["prefers", "preferred", "preferring", "preference", "preferences"],
+  "synonyms": ["favor", "choose"],
+  "domain": "비교·평가·판단",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#25.3", "surface": "prefer", "pos": "동사", "sense": "선호하다, (여럿 중) 더 원하다" },
+   { "sid": "lesson-d4#1.4", "surface": "preferences", "pos": "명사", "sense": "(preference) 선호, 취향" },
+   { "sid": "mock04#31.5", "surface": "prefers", "pos": "동사", "sense": "선호하다, (여럿 중) 더 원하다" }
+  ]
+ },
+ {
+  "lemma": "prefill",
+  "skip": null,
+  "word": "prefill",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈpriːfɪl",
+  "meaning": "① (입력란을) 미리 채워 두다 ② (API) prefill — 응답 앞부분을 assistant 메시지로 미리 넣어 출력의 시작을 정하는 기법",
+  "short": "미리 채워 두다",
+  "senses": [
+   { "pos": "동사", "ko": "(입력란을) 미리 채워 두다" },
+   { "pos": "동사", "ko": "(응답 앞부분을) 미리 넣다, 프리필하다" },
+   { "pos": "명사", "ko": "프리필 (응답 시작 부분을 미리 넣는 기법)" }
+  ],
+  "forms": ["prefilled", "pre-filled", "prefilling"],
+  "synonyms": ["pre-populate", "pre-fill"],
+  "domain": "생성·추가",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#38.6", "surface": "pre-filled", "pos": "동사", "sense": "(입력란을) 미리 채워 두다" },
+   { "sid": "selfcheck-d4-kor#12.2", "surface": "prefill", "pos": "동사", "sense": "(응답 앞부분을) 미리 넣다, 프리필하다" }
+  ]
+ },
+ {
+  "lemma": "prefix",
+  "skip": null,
+  "word": "prefix",
+  "pos": ["명사"],
+  "ipa": "ˈpriːfɪks",
+  "meaning": "접두사, 앞부분 — 맨 앞에 붙는 고정된 부분",
+  "short": "접두사, 앞부분",
+  "senses": [
+   { "pos": "명사", "ko": "접두사, (맨 앞에 붙는) 고정 앞부분" },
+   { "pos": "동사", "ko": "앞에 붙이다" }
+  ],
+  "forms": ["prefixes", "prefixed"],
+  "synonyms": [],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#25.4", "surface": "prefix", "pos": "명사", "sense": "접두사, (맨 앞에 붙는) 고정 앞부분" }
+  ]
+ },
+ {
+  "lemma": "premium",
+  "skip": null,
+  "word": "premium",
+  "pos": ["명사", "형용사"],
+  "ipa": "ˈpriːmiəm",
+  "meaning": "할증(된), 고급의 — premium price: 웃돈을 얹은 가격",
+  "short": "할증, 고급의",
+  "senses": [
+   { "pos": "명사", "ko": "할증(료), 웃돈" },
+   { "pos": "형용사", "ko": "고급의, 프리미엄의" },
+   { "pos": "명사", "ko": "보험료" }
+  ],
+  "forms": ["premiums"],
+  "synonyms": ["surcharge", "high-end"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "prepend",
+  "skip": null,
+  "word": "prepend",
+  "pos": ["동사"],
+  "ipa": "priːˈpend",
+  "meaning": "앞에 덧붙이다 (↔ append)",
+  "short": "앞에 덧붙이다",
+  "senses": [
+   { "pos": "동사", "ko": "앞에 덧붙이다" }
+  ],
+  "forms": ["prepends", "prepended", "prepending"],
+  "synonyms": ["prefix"],
+  "domain": "생성·추가",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#53.1", "surface": "prepends", "pos": "동사", "sense": "앞에 덧붙이다" }
+  ]
+ },
+ {
+  "lemma": "preprocessing",
+  "skip": null,
+  "word": "preprocessing",
+  "pos": ["명사"],
+  "ipa": "ˌpriːˈprɑːsesɪŋ",
+  "meaning": "전처리 — 본 처리 전에 입력을 걸러 내거나 다듬는 일",
+  "short": "전처리",
+  "senses": [
+   { "pos": "명사", "ko": "전처리 (본 처리 전 입력 다듬기)" }
+  ],
+  "forms": ["preprocess", "preprocessed", "preprocessor"],
+  "synonyms": [],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#32.6", "surface": "preprocessing", "pos": "명사", "sense": "전처리 (본 처리 전 입력 다듬기)" }
+  ]
+ },
+ {
+  "lemma": "prerequisite",
+  "skip": null,
+  "word": "prerequisite",
+  "pos": ["명사"],
+  "ipa": "ˌpriːˈrekwəzɪt",
+  "meaning": "전제 조건 — 먼저 갖춰야 할 것",
+  "short": "전제 조건, 선행 조건",
+  "senses": [
+   { "pos": "명사", "ko": "전제 조건, 선행 조건" },
+   { "pos": "형용사", "ko": "먼저 필요한, 선행하는" }
+  ],
+  "forms": ["prerequisites"],
+  "synonyms": ["precondition", "requirement"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#17.5", "surface": "prerequisite", "pos": "명사", "sense": "전제 조건, 선행 조건" },
+   { "sid": "lesson-d1#21.6", "surface": "prerequisite", "pos": "형용사", "sense": "먼저 필요한, 선행하는" }
+  ]
+ },
+ {
+  "lemma": "present",
+  "skip": null,
+  "word": "present",
+  "pos": ["동사", "형용사"],
+  "ipa": "prɪˈzent · ˈpreznt",
+  "meaning": "① 제시하다, 보여 주다 ② (그 안에) 있는, 존재하는",
+  "short": "제시하다, (안에) 있는",
+  "senses": [
+   { "pos": "동사", "ko": "제시하다, 보여 주다" },
+   { "pos": "형용사", "ko": "(그 안에) 있는, 존재하는" },
+   { "pos": "형용사", "ko": "현재의" },
+   { "pos": "명사", "ko": "선물" }
+  ],
+  "forms": ["presents", "presented", "presenting", "presentation"],
+  "synonyms": ["show", "display"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#27.1", "surface": "presented", "pos": "동사", "sense": "제시하다, 보여 주다" },
+   { "sid": "lesson-d4#20.1", "surface": "present", "pos": "형용사", "sense": "(그 안에) 있는, 존재하는" },
+   { "sid": "lesson-d5#41.0", "surface": "presents", "pos": "동사", "sense": "제시하다, 보여 주다" },
+   { "sid": "mock04#55.6", "surface": "present", "pos": "형용사", "sense": "(그 안에) 있는, 존재하는" }
+  ]
+ },
+ {
+  "lemma": "preserve",
+  "skip": null,
+  "word": "preserve",
+  "pos": ["동사"],
+  "ipa": "prɪˈzɜːrv",
+  "meaning": "(바뀌지 않게) 보존하다, 유지하다",
+  "short": "보존하다, 유지하다",
+  "senses": [
+   { "pos": "동사", "ko": "(바뀌지 않게) 보존하다, 유지하다" },
+   { "pos": "명사", "ko": "(preservation) 보존" }
+  ],
+  "forms": ["preserves", "preserved", "preserving", "preservation"],
+  "synonyms": ["keep", "maintain", "retain"],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#18.3", "surface": "preserving", "pos": "동사", "sense": "(바뀌지 않게) 보존하다, 유지하다" },
+   { "sid": "mock04#34.5", "surface": "Preserve", "pos": "동사", "sense": "(바뀌지 않게) 보존하다, 유지하다" },
+   { "sid": "lesson-d5#4.3", "surface": "Preserve", "pos": "동사", "sense": "(바뀌지 않게) 보존하다, 유지하다" }
+  ]
+ },
+ {
+  "lemma": "preset",
+  "skip": null,
+  "word": "preset",
+  "pos": ["형용사", "명사"],
+  "ipa": "ˌpriːˈset",
+  "meaning": "미리 정해 둔 (preset categories: 미리 정한 선택지) / 사전 설정",
+  "short": "미리 정해 둔",
+  "senses": [
+   { "pos": "형용사", "ko": "미리 정해 둔" },
+   { "pos": "명사", "ko": "사전 설정, 프리셋" }
+  ],
+  "forms": ["presets"],
+  "synonyms": ["predefined", "predetermined"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#26.4", "surface": "preset", "pos": "형용사", "sense": "미리 정해 둔" }
+  ]
+ },
+ {
+  "lemma": "press",
+  "skip": null,
+  "word": "press",
+  "pos": ["명사", "동사"],
+  "ipa": "pres",
+  "meaning": "① 언론, 보도 (press release: 보도 자료) ② 누르다",
+  "short": "보도 자료, 언론",
+  "senses": [
+   { "pos": "명사", "ko": "(press release) 보도 자료" },
+   { "pos": "명사", "ko": "언론, 신문·방송" },
+   { "pos": "동사", "ko": "누르다" }
+  ],
+  "forms": ["presses", "pressed", "pressing"],
+  "synonyms": ["media", "news"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#38.3", "surface": "press", "pos": "명사", "sense": "(press release) 보도 자료" },
+   { "sid": "lesson-d5#38.0", "surface": "press", "pos": "명사", "sense": "(press release) 보도 자료" }
+  ]
+ },
+ {
+  "lemma": "pretooluse",
+  "skip": null,
+  "word": "PreToolUse",
+  "pos": ["명사"],
+  "ipa": "ˌpriː ˈtuːl juːz",
+  "meaning": "PreToolUse 훅 — 도구 실행 직전에 호출을 검사·차단하는 훅",
+  "short": "도구 실행 직전 훅",
+  "senses": [
+   { "pos": "명사", "ko": "도구 실행 직전에 호출을 검사·차단하는 훅" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#22.0", "surface": "PreToolUse", "pos": "명사", "sense": "도구 실행 직전에 호출을 검사·차단하는 훅" },
+   { "sid": "mock04#3.6", "surface": "PreToolUse", "pos": "명사", "sense": "도구 실행 직전에 호출을 검사·차단하는 훅" },
+   { "sid": "lesson-d1#24.0", "surface": "PreToolUse", "pos": "명사", "sense": "도구 실행 직전에 호출을 검사·차단하는 훅" }
+  ]
+ },
+ {
+  "lemma": "prevent",
+  "skip": null,
+  "word": "prevent",
+  "pos": ["동사"],
+  "ipa": "prɪˈvent",
+  "meaning": "막다, 방지하다 — 일어나지 않게 미리",
+  "short": "막다, 방지하다",
+  "senses": [
+   { "pos": "동사", "ko": "막다, 방지하다" },
+   { "pos": "동사", "ko": "(prevent A from ~) A가 ~하지 못하게 하다" }
+  ],
+  "forms": ["prevents", "prevented", "preventing", "prevention", "preventive"],
+  "synonyms": ["stop", "avoid", "block"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#24.4", "surface": "prevent", "pos": "동사", "sense": "막다, 방지하다" },
+   { "sid": "sample01#12.0", "surface": "prevent", "pos": "동사", "sense": "(prevent A from ~) A가 ~하지 못하게 하다" },
+   { "sid": "lesson-d3#3.6", "surface": "prevent", "pos": "동사", "sense": "막다, 방지하다" },
+   { "sid": "mock04#24.6", "surface": "prevents", "pos": "동사", "sense": "(prevent A from ~) A가 ~하지 못하게 하다" }
+  ]
+ },
+ {
+  "lemma": "previous",
+  "skip": null,
+  "word": "previous",
+  "pos": ["형용사"],
+  "ipa": "ˈpriːviəs",
+  "meaning": "이전의, 앞선",
+  "short": "이전의, 앞선",
+  "senses": [
+   { "pos": "형용사", "ko": "이전의, 앞선" },
+   { "pos": "부사", "ko": "(previously) 이전에, 앞서" }
+  ],
+  "forms": ["previously"],
+  "synonyms": ["prior", "earlier", "preceding"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#23.1", "surface": "previous", "pos": "형용사", "sense": "이전의, 앞선" },
+   { "sid": "lesson-d4#12.2", "surface": "previously", "pos": "부사", "sense": "(previously) 이전에, 앞서" },
+   { "sid": "lesson-d3#29.3", "surface": "previous", "pos": "형용사", "sense": "이전의, 앞선" },
+   { "sid": "sample01#4.1", "surface": "previous", "pos": "형용사", "sense": "이전의, 앞선" }
+  ]
+ },
+ {
+  "lemma": "price",
+  "skip": null,
+  "word": "price",
+  "pos": ["명사", "동사"],
+  "ipa": "praɪs",
+  "meaning": "① 가격 ② (pricing) 가격 책정, 가격 정책 ③ 가격을 매기다",
+  "short": "가격, 가격 책정",
+  "senses": [
+   { "pos": "명사", "ko": "가격" },
+   { "pos": "명사", "ko": "(pricing) 가격 책정, 가격 정책" },
+   { "pos": "동사", "ko": "가격을 매기다" }
+  ],
+  "forms": ["prices", "priced", "pricing"],
+  "synonyms": ["cost", "rate", "fee"],
+  "domain": "비즈니스·업무",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#10.0", "surface": "price", "pos": "명사", "sense": "가격" },
+   { "sid": "sample01#16.0", "surface": "pricing", "pos": "명사", "sense": "(pricing) 가격 책정, 가격 정책" },
+   { "sid": "mock04#28.2", "surface": "prices", "pos": "명사", "sense": "가격" },
+   { "sid": "lesson-d1#9.1", "surface": "pricing", "pos": "명사", "sense": "(pricing) 가격 책정, 가격 정책" }
+  ]
+ }
+]

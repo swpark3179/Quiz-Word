@@ -1,0 +1,1388 @@
+[
+ {
+  "lemma": "primary",
+  "kind": "new",
+  "surfaces": [
+   "primary"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d1#3.0",
+    "en": "A junior engineer proposes capping an autonomous research agent at exactly 5 tool-call iterations and treating that cap as the loop's primary stopping mechanism, regardless of stop_reason."
+   },
+   {
+    "sid": "lesson-d2#10.2",
+    "en": "What is the primary flaw in this retry guidance?"
+   },
+   {
+    "sid": "lesson-d5#17.2",
+    "en": "What is the primary problem with this design, and what should replace it?"
+   },
+   {
+    "sid": "lesson-d3#27.4",
+    "en": "Withhold the filename extension failure and report only the currency-formatting mismatch as the primary defect found first, deferring the secondary extension issue to avoid distracting Claude from the more critical formatting fix."
+   }
+  ]
+ },
+ {
+  "lemma": "principal",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "principal",
+   "word": "principal",
+   "pos": "명사·형용사",
+   "ipa": "ˈprɪnsəpl",
+   "meaning": "① (보안) 주체 — 권한을 받아 행동하는 사용자·서비스 ② 주된, 주요한"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "print",
+  "kind": "new",
+  "surfaces": [
+   "prints"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "mock04#12.1",
+    "en": "Your team's /investigate-flaky skill greps the entire test suite, reads dozens of files, and prints verbose exploration before it answers."
+   }
+  ]
+ },
+ {
+  "lemma": "prior",
+  "kind": "vocab-core",
+  "surfaces": [
+   "prior"
+  ],
+  "freq": 10,
+  "vocab": {
+   "id": "prior",
+   "word": "prior",
+   "pos": "형용사",
+   "ipa": "ˈpraɪər",
+   "meaning": "이전의, 앞선"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#37.0",
+    "en": "An architect is asked to design an agent that investigates why a production incident occurred, given only a vague alert message and no prior knowledge of which service is at fault."
+   },
+   {
+    "sid": "mock04#20.4",
+    "en": "Start a brand-new session with no prior context and re-describe the entire task, accepting the loss of current file state."
+   },
+   {
+    "sid": "mock04#22.6",
+    "en": "Add a 'recall the earlier research' instruction to the synthesis subagent's system prompt so it retrieves prior findings"
+   },
+   {
+    "sid": "mock04#28.4",
+    "en": "Fork the prior session so the stale results are copied into a new branch that continues the report"
+   },
+   {
+    "sid": "mock04#28.7",
+    "en": "Start a fresh session, inject a summary of the prior conclusions, and re-run the searches"
+   },
+   {
+    "sid": "mock04#30.4",
+    "en": "Increase the synthesis subagent's context window so all prior findings fit and it stops re-fetching them from the web."
+   },
+   {
+    "sid": "mock04#37.7",
+    "en": "Expand the fixed list from five to twelve subagent tasks based on the engineer's prior knowledge of the billing domain"
+   },
+   {
+    "sid": "mock04#38.5",
+    "en": "Subagents do not inherit the coordinator's conversation; prior findings must be passed in the Task prompt"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:prior.0",
+    "en": "Include prior review findings in context, instructing Claude to only report new or still-unaddressed issues.",
+    "ko": "이전 리뷰 결과를 컨텍스트에 넣고, 새 이슈나 아직 해결되지 않은 이슈만 보고하라고 지시한다."
+   }
+  ]
+ },
+ {
+  "lemma": "prioritize",
+  "kind": "vocab-core",
+  "surfaces": [
+   "prioritize"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "prioritize",
+   "word": "prioritize",
+   "pos": "동사",
+   "ipa": "praɪˈɔːrətaɪz",
+   "meaning": "우선순위를 매기다, 먼저 처리하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#33.0",
+    "en": "A team building a resume-parsing pipeline wants Claude to output a confidence score for each extracted field so reviewers can prioritize their limited time."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:prioritize.0",
+    "en": "Reduce requested suggestions from 10 to 5, assuming Claude will prioritize the most valuable cases.",
+    "ko": "요청하는 제안 수를 10개에서 5개로 줄이며, Claude가 가장 가치 있는 경우를 우선할 것이라고 가정한다."
+   }
+  ]
+ },
+ {
+  "lemma": "priority",
+  "kind": "vocab-core",
+  "surfaces": [
+   "priority"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "priority",
+   "word": "priority",
+   "pos": "명사",
+   "ipa": "praɪˈɔːrəti",
+   "meaning": "우선순위, 우선권 — Priority Tier: 용량을 약정해 우선 처리받는 등급"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#1.4",
+    "en": "Give the intended tool a higher priority weight in your backend router"
+   },
+   {
+    "sid": "lesson-d3#10.4",
+    "en": "The project skill at `.claude/skills/review/SKILL.md`, because project-scoped skills always take priority over personal ones with the same name."
+   },
+   {
+    "sid": "lesson-d2#22.5",
+    "en": "Nothing. Project scope always takes priority over local scope, so the production definition is already the one loading"
+   },
+   {
+    "sid": "lesson-d2#5.5",
+    "en": "Increase the priority weight of the newer tool in the backend routing configuration without touching either tool's description."
+   }
+  ]
+ },
+ {
+  "lemma": "privilege",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "privilege",
+   "word": "privilege",
+   "pos": "명사",
+   "ipa": "ˈprɪvəlɪdʒ",
+   "meaning": "(시스템) 권한 — least privilege: 꼭 필요한 최소 권한만 주는 원칙"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "proactively",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "proactively",
+   "word": "proactively",
+   "pos": "부사",
+   "ipa": "proʊˈæktɪvli",
+   "meaning": "먼저 나서서, 선제적으로"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:proactively.0",
+    "en": "Have the web search agent proactively cache extra context around each source during initial research.",
+    "ko": "웹 검색 에이전트가 초기 조사 때 각 소스 주변 맥락을 미리 캐싱해 두게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "probe",
+  "kind": "vocab-core",
+  "surfaces": [
+   "probing",
+   "probes"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "probe",
+   "word": "probe",
+   "pos": "동사",
+   "ipa": "proʊb",
+   "meaning": "(이것저것 시도하며) 탐색하다, 살펴보다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#41.5",
+    "en": "Expose the schema catalog as an MCP resource that the agent reads once upfront, instead of probing with repeated exploratory tool calls."
+   },
+   {
+    "sid": "mock04#41.8",
+    "en": "Add a short-lived cache in front of the query tool so that repeated schema probes return faster on later calls."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:probe.0",
+    "en": "Expose the schema catalog as an MCP resource that the agent reads once upfront, instead of probing with repeated exploratory tool calls.",
+    "ko": "스키마 카탈로그를 MCP 리소스로 노출해 에이전트가 처음에 한 번 읽게 하고, 반복적인 탐색용 도구 호출로 더듬어 찾지 않게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "problem",
+  "kind": "new",
+  "surfaces": [
+   "problems",
+   "problem"
+  ],
+  "freq": 12,
+  "sentences": [
+   {
+    "sid": "lesson-d1#3.1",
+    "en": "What is the main architectural problem with relying on a fixed iteration cap this way?"
+   },
+   {
+    "sid": "lesson-d4#11.1",
+    "en": "You want fewer false positives, and you still want real problems caught in code the bot has never seen."
+   },
+   {
+    "sid": "lesson-d5#17.2",
+    "en": "What is the primary problem with this design, and what should replace it?"
+   },
+   {
+    "sid": "mock04#52.2",
+    "en": "The review almost never finds problems, yet audits show 20% of the generated tests have weak or tautological assertions."
+   },
+   {
+    "sid": "lesson-d2#8.3",
+    "en": "The agent can't tell that a policy blocked the request. It may keep resending a request that can never succeed, or tell the customer it was a temporary system problem."
+   },
+   {
+    "sid": "lesson-d3#21.2",
+    "en": "Use accept-edits mode so Claude extracts the first service right away, with the remaining boundaries adjusted as problems appear in the code"
+   },
+   {
+    "sid": "lesson-d1#35.2",
+    "en": "What restructuring addresses this attention dilution problem?"
+   },
+   {
+    "sid": "lesson-d4#8.1",
+    "en": "The team wants the most effective fix for this output-consistency problem."
+   }
+  ]
+ },
+ {
+  "lemma": "procedure",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "procedure",
+   "word": "procedure",
+   "pos": "명사",
+   "ipa": "prəˈsiːdʒər",
+   "meaning": "절차"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:procedure.0",
+    "en": "...deployment workflow instructions, and database migration procedures.",
+    "ko": "배포 워크플로 지침, DB 마이그레이션 절차."
+   }
+  ]
+ },
+ {
+  "lemma": "proceed",
+  "kind": "vocab-core",
+  "surfaces": [
+   "proceeds",
+   "proceed",
+   "proceeding"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "proceed",
+   "word": "proceed",
+   "pos": "동사",
+   "ipa": "proʊˈsiːd",
+   "meaning": "(다음 단계로) 진행하다, 계속하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#16.0",
+    "en": "A pipeline first needs Claude to run extract_metadata on an uploaded document before any enrichment or summarization steps proceed."
+   },
+   {
+    "sid": "mock04#10.2",
+    "en": "Logs show the agent proceeds with the most recently active match, and in several cases it has processed refunds against the wrong customer's order."
+   },
+   {
+    "sid": "lesson-d3#19.2",
+    "en": "Plan mode has silently switched over to acceptEdits mode partway through this session, which is why operations proceed without prompts"
+   },
+   {
+    "sid": "lesson-d5#9.7",
+    "en": "Ask the patient to confirm they do not want a staff member before proceeding with the reschedule."
+   },
+   {
+    "sid": "mock04#10.7",
+    "en": "Pick the match with the highest fuzzy name-similarity score and proceed, logging the confidence value for audit."
+   },
+   {
+    "sid": "lesson-d5#10.2",
+    "en": "How should the agent proceed?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:proceed.0",
+    "en": "Return the error with context to the coordinator agent, letting it decide how to proceed.",
+    "ko": "맥락과 함께 오류를 코디네이터 에이전트에 돌려주고, 어떻게 진행할지는 코디네이터가 정하게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "process",
+  "kind": "vocab-core",
+  "surfaces": [
+   "processes",
+   "processing",
+   "processed",
+   "process"
+  ],
+  "freq": 15,
+  "vocab": {
+   "id": "process",
+   "word": "process",
+   "pos": "동사·명사",
+   "ipa": "ˈprɑːses",
+   "meaning": "① 처리하다 ② 과정, 절차"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#17.0",
+    "en": "Your document-processing agent holds a generic fetch_url tool."
+   },
+   {
+    "sid": "mock04#10.2",
+    "en": "Logs show the agent proceeds with the most recently active match, and in several cases it has processed refunds against the wrong customer's order."
+   },
+   {
+    "sid": "sample01#17.1",
+    "en": "In production it frequently selects wrong tools and processes payments without completing fraud checks."
+   },
+   {
+    "sid": "lesson-d1#25.4",
+    "en": "Matchers can only target tool names that begin with the `mcp__` server prefix. A custom in-process tool like `refund` must be renamed to include this prefix before any matcher can reliably target it."
+   },
+   {
+    "sid": "lesson-d3#30.7",
+    "en": "The runner's Node.js version is older than the CLI supports, so the process stayed running while failing to parse its own command-line arguments"
+   },
+   {
+    "sid": "lesson-d4#30.5",
+    "en": "Use the synchronous Messages API instead of the Batches API, because batches are limited to 500 requests per hour and 150,000 invoices cannot be processed overnight."
+   },
+   {
+    "sid": "lesson-d5#5.0",
+    "en": "A returns-processing agent calls an order-lookup tool that returns a JSON payload with 40+ fields (shipping carrier metadata, internal warehouse codes, marketing tags, etc.) for every order it checks, and after a dozen lookups the raw payloads dominate the context window even though only 5 fields (order status, purchase date, item, amount, return-window deadline) matter for return eligibility."
+   },
+   {
+    "sid": "selfcheck-d2-kor#12.2",
+    "en": "in-process MCP 서버가 원래 예외 메시지를 담은 오류 결과로 바꿔 Claude에게 주고, 에이전트 루프는 계속된다"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:process.0",
+    "en": "A long-running research agent processes 40-page technical PDFs and maintains conversation history across 30+ turns.",
+    "ko": "장시간 실행되는 리서치 에이전트가 40쪽 분량의 기술 PDF를 처리하며 30턴 이상 대화 기록을 유지한다."
+   }
+  ]
+ },
+ {
+  "lemma": "procurement",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "procurement",
+   "word": "procurement",
+   "pos": "명사",
+   "ipa": "prəˈkjʊrmənt",
+   "meaning": "조달, 구매 — 회사가 필요한 물품·서비스를 사들이는 업무"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "produce",
+  "kind": "vocab-core",
+  "surfaces": [
+   "produces",
+   "producing",
+   "produce",
+   "produced"
+  ],
+  "freq": 22,
+  "vocab": {
+   "id": "produce",
+   "word": "produce",
+   "pos": "동사",
+   "ipa": "prəˈduːs",
+   "meaning": "만들어 내다, (결과를) 내다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#34.0",
+    "en": "A team is building an automated pipeline that takes a raw customer support transcript, produces a structured summary, then translates that summary into three fixed target languages."
+   },
+   {
+    "sid": "lesson-d2#19.1",
+    "en": "The enrichment tools depend on fields that only extract_metadata produces, and in early tests the model sometimes calls an enrichment tool first with guessed values."
+   },
+   {
+    "sid": "lesson-d5#24.2",
+    "en": "What best keeps the main agent's context focused on high-level coordination while still producing the list?"
+   },
+   {
+    "sid": "mock04#15.1",
+    "en": "A shared `/scaffold-component` skill expects a component-name argument, but telemetry shows teammates invoke it with no argument or a malformed one about a third of the time, producing empty or misnamed scaffolds."
+   },
+   {
+    "sid": "sample01#20.0",
+    "en": "Which approach produces the most reliable structured output from Claude?"
+   },
+   {
+    "sid": "lesson-d3#23.6",
+    "en": "Follow 2–3 concrete examples of edits, each paired with the exact document state it should produce, as the definition of correct behaviour"
+   },
+   {
+    "sid": "lesson-d4#17.6",
+    "en": "`tool_choice: {\"type\": \"none\"}`, so Claude can freely decide in text whether to also produce a `parse_resume` tool call afterward"
+   },
+   {
+    "sid": "mock04#26.2",
+    "en": "What is the best way to produce both?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:produce.0",
+    "en": "An agentic pipeline runs in production and occasionally produces incorrect outputs.",
+    "ko": "운영 중인 에이전트 파이프라인이 가끔 잘못된 결과를 낸다."
+   }
+  ]
+ },
+ {
+  "lemma": "product",
+  "kind": "new",
+  "surfaces": [
+   "product"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.0",
+    "en": "Every night a job takes each new product spec and runs the same steps in the same order."
+   },
+   {
+    "sid": "lesson-d4#31.5",
+    "en": "An overnight report that groups the day's support tickets by theme for the product team"
+   },
+   {
+    "sid": "lesson-d1#32.1",
+    "en": "It writes a product description, code checks the length and banned terms, and then the description is translated into German and French."
+   }
+  ]
+ },
+ {
+  "lemma": "production",
+  "kind": "vocab-core",
+  "surfaces": [
+   "in production",
+   "production"
+  ],
+  "freq": 14,
+  "vocab": {
+   "id": "production",
+   "word": "production",
+   "pos": "명사",
+   "ipa": "prəˈdʌkʃn",
+   "meaning": "운영 환경, 프로덕션 — 실제 사용자가 쓰는 서비스 (in production: 운영 중에)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#37.0",
+    "en": "An architect is asked to design an agent that investigates why a production incident occurred, given only a vague alert message and no prior knowledge of which service is at fault."
+   },
+   {
+    "sid": "lesson-d2#22.1",
+    "en": "The repository's committed .mcp.json also defines `analytics`, pointing at the team's production endpoint."
+   },
+   {
+    "sid": "lesson-d5#12.0",
+    "en": "In production, a hotel-booking support agent searches by guest name and check-in city and gets back two reservations with different booking references."
+   },
+   {
+    "sid": "mock04#1.3",
+    "en": "Production logs show that in 11% of sessions the loop terminates while a tool_use block is still pending, so the refund is never actually executed."
+   },
+   {
+    "sid": "sample01#1.1",
+    "en": "In production, the agent occasionally calls the wrong tool and sometimes misses tool calls entirely."
+   },
+   {
+    "sid": "lesson-d2#22.3",
+    "en": "The developer wants the team's production definition."
+   },
+   {
+    "sid": "mock04#37.3",
+    "en": "Production runs show the final plan omits an entire 'dunning' subsystem and a currency-conversion layer that no subagent was ever assigned."
+   },
+   {
+    "sid": "sample01#10.1",
+    "en": "In production, subagents consistently fail because they claim they 'have no context' about the task."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:production.0",
+    "en": "In production, the agent occasionally calls the wrong tool and sometimes misses tool calls entirely.",
+    "ko": "운영 환경에서 에이전트가 가끔 엉뚱한 도구를 호출하고, 도구 호출을 아예 놓치기도 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "productivity",
+  "kind": "vocab-core",
+  "surfaces": [
+   "productivity",
+   "productive"
+  ],
+  "freq": 10,
+  "vocab": {
+   "id": "productivity",
+   "word": "productivity",
+   "pos": "명사",
+   "ipa": "ˌproʊdʌkˈtɪvəti",
+   "meaning": "생산성"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#37.0",
+    "en": "[Scenario: Developer Productivity with Claude]"
+   },
+   {
+    "sid": "mock04#38.0",
+    "en": "[Scenario: Developer Productivity with Claude]"
+   },
+   {
+    "sid": "mock04#39.0",
+    "en": "[Scenario: Developer Productivity with Claude]"
+   },
+   {
+    "sid": "mock04#40.0",
+    "en": "[Scenario: Developer Productivity with Claude]"
+   },
+   {
+    "sid": "mock04#41.0",
+    "en": "[Scenario: Developer Productivity with Claude]"
+   },
+   {
+    "sid": "mock04#42.0",
+    "en": "[Scenario: Developer Productivity with Claude]"
+   },
+   {
+    "sid": "mock04#43.0",
+    "en": "[Scenario: Developer Productivity with Claude]"
+   },
+   {
+    "sid": "mock04#44.0",
+    "en": "[Scenario: Developer Productivity with Claude]"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:productivity.0",
+    "en": "[Scenario: Developer Productivity with Claude] A coordinator agent is asked to produce a migration plan for a 400,000-line legacy billing monolith.",
+    "ko": "[시나리오: Claude 를 활용한 개발자 생산성] 코디네이터 에이전트에게 40만 줄짜리 레거시 청구(billing) 모놀리스의 마이그레이션 계획을 만들라는 요청이 들어왔다."
+   }
+  ]
+ },
+ {
+  "lemma": "prof",
+  "kind": "new",
+  "surfaces": [
+   "proves"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#20.5",
+    "en": "The mislabeling proves that without a tool_choice that forces a specific tool invocation, the model may output transaction_type labels that diverge from the source document's content, leading to semantic inaccuracies in the extracted data."
+   }
+  ]
+ },
+ {
+  "lemma": "profile",
+  "kind": "vocab-core",
+  "surfaces": [
+   "profile"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "profile",
+   "word": "profile",
+   "pos": "명사",
+   "ipa": "ˈproʊfaɪl",
+   "meaning": "프로필 — 사용자·계정별 설정·정보 묶음 (named profile: 이름 붙인 설정 묶음, inference profile: 추론 프로필)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#32.5",
+    "en": "Pass the test-quality definition and fixture list via --append-system-prompt in the CI shell profile"
+   },
+   {
+    "sid": "lesson-d5#12.3",
+    "en": "When a lookup returns several matches, continue with the record that has the most recent activity or the most complete profile, because that is usually the active customer."
+   },
+   {
+    "sid": "mock04#11.5",
+    "en": "Have each engineer run /memory after cloning so the user-scoped memory files are force-reloaded from the lead's profile"
+   },
+   {
+    "sid": "lesson-d5#13.5",
+    "en": "Open the record with the most complete profile, such as saved contact details, then continue the claim review"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:profile.0",
+    "en": "A container sets ANTHROPIC_PROFILE=prod-batch, but no `prod-batch` profile file exists in the configuration directory.",
+    "ko": "한 컨테이너가 ANTHROPIC_PROFILE=prod-batch를 설정했지만, 설정 디렉터리에 `prod-batch` 프로필 파일이 없다."
+   }
+  ]
+ },
+ {
+  "lemma": "programmatic",
+  "kind": "vocab-core",
+  "surfaces": [
+   "programmatically",
+   "programmatic"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "programmatic",
+   "word": "programmatic",
+   "pos": "형용사",
+   "ipa": "ˌproʊɡrəˈmætɪk",
+   "meaning": "프로그램(코드)으로 처리하는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.5",
+    "en": "A fixed prompt chain sequenced in code (write, then a programmatic gate, then translate), where each step is its own LLM call"
+   },
+   {
+    "sid": "mock04#33.6",
+    "en": "Add a separate router model that classifies each query and then selects the matching search tool programmatically before dispatch."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:programmatic.0",
+    "en": "Add a programmatic prerequisite that blocks `lookup_order` and `process_refund` calls.",
+    "ko": "`lookup_order`·`process_refund` 호출을 막는 프로그램 방식의 전제 조건을 추가한다."
+   }
+  ]
+ },
+ {
+  "lemma": "progress",
+  "kind": "vocab-core",
+  "surfaces": [
+   "progress"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "progress",
+   "word": "progress",
+   "pos": "명사",
+   "ipa": "ˈprɑːɡres",
+   "meaning": "진행 상황, 진척 (in progress: 진행 중)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#7.3",
+    "en": "Hand off only on specific conditions you can see in the conversation: the customer asks for a person, written policy doesn't cover the request, or the agent can't make meaningful progress."
+   },
+   {
+    "sid": "mock04#18.4",
+    "en": "Keep a scratchpad manifest of migrated vs pending files, updated after each file, so progress survives context growth."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:progress.0",
+    "en": "Keep a scratchpad manifest of migrated vs pending files, updated after each file, so progress survives context growth.",
+    "ko": "마이그레이션 완료 파일과 대기 파일을 기록한 scratchpad 매니페스트를 두고 파일마다 갱신해, 컨텍스트가 커져도 진행 상황이 유지되게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "progressive",
+  "kind": "vocab-core",
+  "surfaces": [
+   "progressive"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "progressive",
+   "word": "progressive",
+   "pos": "형용사",
+   "ipa": "prəˈɡresɪv",
+   "meaning": "점진적인, 단계적으로 진행되는"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#9.1",
+    "en": "In longer billing-dispute conversations, the agent uses progressive summarization to keep the history compact."
+   },
+   {
+    "sid": "mock04-kor#9.0",
+    "en": "청구 분쟁처럼 대화가 길어지면, 에이전트는 기록을 간결하게 유지하려고 점진적 요약(progressive summarization)을 사용합니다. 테스터들은 몇 턴이 지나면 에이전트가 앞에서 분명히 나왔던 환불 금액과 주문 날짜를 틀리게 말한다는 것을 발견했습니다. 가장 좋은 해결책은 무엇일까요?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:progressive.0",
+    "en": "Your support agent uses progressive summarization—when context reaches 70% capacity, older turns are summarized while recent ones remain verbatim.",
+    "ko": "지원 에이전트는 점진적 요약을 쓴다. 컨텍스트가 70% 차면 오래된 턴은 요약하고 최근 턴은 원문 그대로 둔다."
+   }
+  ]
+ },
+ {
+  "lemma": "prohibit",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "prohibit",
+   "word": "prohibit",
+   "pos": "동사",
+   "ipa": "proʊˈhɪbɪt",
+   "meaning": "금지하다"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "project",
+  "kind": "new",
+  "surfaces": [
+   "project",
+   "projects"
+  ],
+  "freq": 45,
+  "sentences": [
+   {
+    "sid": "lesson-d2#23.1",
+    "en": "When that developer runs Claude Code in the project, which server definition is used?"
+   },
+   {
+    "sid": "lesson-d3#10.0",
+    "en": "A project's `.claude/skills/review/SKILL.md` is checked into the repo for team-wide use."
+   },
+   {
+    "sid": "lesson-d4#24.1",
+    "en": "On one submission, the employee left the project code blank on the physical form, so it does not appear anywhere in the scanned image."
+   },
+   {
+    "sid": "mock04#16.2",
+    "en": "They sent each change as a separate sequential message; after the third message the project no longer compiles because the earlier edits did not anticipate the later ones."
+   },
+   {
+    "sid": "lesson-d1#39.3",
+    "en": "Run claude --resume payment-retry-bug in the project directory to reload that conversation"
+   },
+   {
+    "sid": "mock04-kor#24.0",
+    "en": "서브에이전트는 user 스코프에 등록되었는데 코디네이터는 project 스코프에서 실행되어, 코디네이터가 서브에이전트를 볼 수 없다."
+   },
+   {
+    "sid": "selfcheck-d2-kor#20.1",
+    "en": "project 스코프 `.mcp.json`에 `\"Authorization\": \"Bearer ${TICKET_TOKEN}\"`을 쓰고 각자 환경 변수를 설정한다"
+   },
+   {
+    "sid": "lesson-d2#26.0",
+    "en": "Your React project has a fixed convention: every component `Foo.tsx` is tested by a file named `Foo.test.tsx`."
+   }
+  ]
+ },
+ {
+  "lemma": "project-level",
+  "kind": "new",
+  "surfaces": [
+   "project-level"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d3#1.5",
+    "en": "Copy the convention into ~/.claude/CLAUDE.md, because the user level overrides conflicting project-level instructions"
+   },
+   {
+    "sid": "lesson-d3#3.4",
+    "en": "Commit a `CLAUDE.md` file to the root of each repository, as source control ensures every team member receives the same project-level instructions."
+   }
+  ]
+ },
+ {
+  "lemma": "project-specific",
+  "kind": "vocab-core",
+  "surfaces": [
+   "project-specific"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "project-specific",
+   "word": "project-specific",
+   "pos": "형용사",
+   "ipa": "ˌprɑːdʒekt spəˈsɪfɪk",
+   "meaning": "프로젝트 전용의, 그 프로젝트에만 해당하는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#32.1",
+    "en": "Where should this project-specific guidance be encoded so every CI run picks it up automatically without being repeated in each workflow prompt?"
+   },
+   {
+    "sid": "sample01#13.0",
+    "en": "A team wants project-specific commands available to all engineers using Claude Code on the repo, without adding entries to each engineer's user settings."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:project-specific.0",
+    "en": "A team wants project-specific commands available to all engineers using Claude Code on the repo, without adding entries to each engineer's user settings.",
+    "ko": "팀은 저장소에서 Claude Code를 쓰는 모든 엔지니어가 프로젝트 전용 커맨드를 쓸 수 있길 원한다. 단, 각 엔지니어의 사용자 설정에 항목을 추가하지 않고서."
+   }
+  ]
+ },
+ {
+  "lemma": "promise",
+  "kind": "new",
+  "surfaces": [
+   "promises",
+   "promised",
+   "promise"
+  ],
+  "freq": 6,
+  "sentences": [
+   {
+    "sid": "lesson-d4#28.0",
+    "en": "Contracts arrive around the clock, and stakeholders have been promised every extraction result within 30 hours of a contract's arrival."
+   },
+   {
+    "sid": "lesson-d5#2.0",
+    "en": "Turn 30 of a billing chat: the customer says, \"You promised my $214.88 refund by the 15th.\""
+   },
+   {
+    "sid": "lesson-d4#28.2",
+    "en": "Which submission schedule keeps that promise in the worst case?"
+   },
+   {
+    "sid": "lesson-d5#4.0",
+    "en": "You are redesigning a billing agent whose running summary keeps paraphrasing refund amounts, invoice numbers and promised deadlines."
+   },
+   {
+    "sid": "lesson-d4#3.2",
+    "en": "Report it, since the docstring promises a cache lookup before the API call and the function body goes straight to the API on each invocation."
+   },
+   {
+    "sid": "lesson-d5#4.3",
+    "en": "Write a custom summary prompt that tells Claude to list every amount, date and promise under Context to Preserve"
+   }
+  ]
+ },
+ {
+  "lemma": "promotional",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "promotional",
+   "word": "promotional",
+   "pos": "형용사",
+   "ipa": "prəˈmoʊʃənl",
+   "meaning": "홍보용의, 판촉의"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:promotional.0",
+    "en": "These details were stated 20+ turns ago and got condensed into vague summaries like \"discussed promotional pricing.\"",
+    "ko": "이 세부 내용은 20턴도 더 전에 나왔고, \"프로모션 가격 논의\" 같은 모호한 요약으로 압축됐다."
+   }
+  ]
+ },
+ {
+  "lemma": "prompt",
+  "kind": "new",
+  "surfaces": [
+   "prompt",
+   "prompts",
+   "prompted",
+   "prompting"
+  ],
+  "freq": 152,
+  "sentences": [
+   {
+    "sid": "lesson-d1#16.2",
+    "en": "How should the delegation prompt be rewritten?"
+   },
+   {
+    "sid": "lesson-d2#17.1",
+    "en": "It has started pulling arbitrary web pages that are not documents, even though its prompt says to load only documents."
+   },
+   {
+    "sid": "lesson-d3#19.0",
+    "en": "While in plan mode, an architect notices that Claude keeps reading files and running read-only search commands without prompting for approval on each one, even though no edits have occurred."
+   },
+   {
+    "sid": "lesson-d4#1.1",
+    "en": "Which line should they add to the review prompt?"
+   },
+   {
+    "sid": "lesson-d5#1.0",
+    "en": "A support bot built on the Messages API sends the system prompt, its tool definitions and the customer's newest message on each request."
+   },
+   {
+    "sid": "mock04#22.2",
+    "en": "Tracing shows the Task prompt sent to the synthesis subagent contains only the report topic and formatting instructions."
+   },
+   {
+    "sid": "sample01#14.1",
+    "en": "The system prompt says: 'Classify each support ticket as the appropriate category.'"
+   },
+   {
+    "sid": "selfcheck-d1-kor#36.0",
+    "en": "현재 Prompting best practices가 최신 모델에서도 명시적 프롬프트 체이닝이 여전히 유용하다고 보는 상황은?"
+   }
+  ]
+ },
+ {
+  "lemma": "prompt caching",
+  "kind": "vocab-core",
+  "surfaces": [
+   "prompt caching"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "prompt-caching",
+   "word": "prompt caching",
+   "pos": "명사구",
+   "ipa": "ˈprɑːmpt ˌkæʃɪŋ",
+   "meaning": "프롬프트 캐싱 — 반복되는 프롬프트 앞부분을 캐시해 비용과 지연을 줄이는 기능"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#21.0",
+    "en": "What is the correct way to use prompt caching to reduce cost on a system that answers questions about the same 100k-token legal document for many different users?"
+   },
+   {
+    "sid": "selfcheck-d4-kor#28.3",
+    "en": "prompt caching을 함께 쓴다"
+   },
+   {
+    "sid": "sample01#9.5",
+    "en": "Implement prompt caching for the static system prompt and core documents; route simple classification queries to Haiku while keeping Opus for complex analysis"
+   }
+  ]
+ },
+ {
+  "lemma": "prompt injection",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "prompt-injection",
+   "word": "prompt injection",
+   "pos": "명사구",
+   "ipa": "ˈprɑːmpt ɪnˌdʒekʃn",
+   "meaning": "프롬프트 인젝션 — 입력 속에 숨긴 지시로 모델의 원래 지시를 가로채는 공격"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "propagate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "propagates"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "propagate",
+   "word": "propagate",
+   "pos": "동사",
+   "ipa": "ˈprɑːpəɡeɪt",
+   "meaning": "(오류·정보를) 위로 전달하다, 퍼뜨리다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#38.1",
+    "en": "The coordinator spawns a subagent with a single Task call to trace how a payment webhook propagates through the `orders` module."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:propagate.0",
+    "en": "When designing error propagation to the coordinator, what approach enables the best recovery?",
+    "ko": "코디네이터로 오류를 전달하는 방식을 설계할 때, 가장 잘 복구할 수 있는 방법은?"
+   }
+  ]
+ },
+ {
+  "lemma": "properly",
+  "kind": "new",
+  "surfaces": [
+   "properly"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#24.4",
+    "en": "Describe to Claude, in plain prose, that records with null values are being dropped, and ask it to handle nulls properly in the transformation function"
+   }
+  ]
+ },
+ {
+  "lemma": "proportion",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "proportion",
+   "word": "proportion",
+   "pos": "명사",
+   "ipa": "prəˈpɔːrʃn",
+   "meaning": "비율 — in proportion: 비례하여"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "proportionally",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "proportionally",
+   "word": "proportionally",
+   "pos": "부사",
+   "ipa": "prəˈpɔːrʃənəli",
+   "meaning": "비례하여"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:proportionally.0",
+    "en": "Token usage has nearly doubled without proportionally increasing breadth or depth.",
+    "ko": "토큰 사용량은 거의 두 배가 됐지만 조사의 폭과 깊이는 그만큼 비례해 늘지 않았다."
+   }
+  ]
+ },
+ {
+  "lemma": "propose",
+  "kind": "vocab-core",
+  "surfaces": [
+   "proposed",
+   "proposes",
+   "proposal",
+   "propose"
+  ],
+  "freq": 9,
+  "vocab": {
+   "id": "propose",
+   "word": "propose",
+   "pos": "동사",
+   "ipa": "prəˈpoʊz",
+   "meaning": "제안하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#3.0",
+    "en": "A junior engineer proposes capping an autonomous research agent at exactly 5 tool-call iterations and treating that cap as the loop's primary stopping mechanism, regardless of stop_reason."
+   },
+   {
+    "sid": "lesson-d2#15.1",
+    "en": "The architect proposes splitting it into five specialized subagents, each scoped to roughly 4 tools for its stage, coordinated by a lightweight orchestrator."
+   },
+   {
+    "sid": "lesson-d3#18.0",
+    "en": "Midway through planning a multi-phase migration, Claude has to find every usage pattern of the old library across hundreds of files before it can propose an approach."
+   },
+   {
+    "sid": "mock04#39.3",
+    "en": "The resumed agent replays cached Read and Grep results from the old history and proposes edits against paths that no longer exist."
+   },
+   {
+    "sid": "lesson-d1#41.0",
+    "en": "After an expensive codebase analysis that ended with a JWT proposal, an engineer wants to try OAuth2 on a separate branch."
+   },
+   {
+    "sid": "lesson-d2#7.0",
+    "en": "You propose splitting a generic analyze_document into extract_data_points, summarize_content and verify_claim_against_source."
+   },
+   {
+    "sid": "lesson-d3#21.3",
+    "en": "Use plan mode so Claude reads through the code and drafts a proposed split for review, with file edits held back until the plan is approved"
+   },
+   {
+    "sid": "mock04#14.6",
+    "en": "Require the skill to run in plan mode every time so a human reviews and approves each proposed action before it executes"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:propose.0",
+    "en": "...so a human reviews and approves each proposed action before it executes",
+    "ko": "제안된 각 동작이 실행되기 전에 사람이 검토하고 승인하게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "proprietary",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "proprietary",
+   "word": "proprietary",
+   "pos": "형용사",
+   "ipa": "prəˈpraɪəteri",
+   "meaning": "독자적인, 사내 전용의 — 특정 회사가 소유·개발한"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "prose",
+  "kind": "vocab-core",
+  "surfaces": [
+   "prose"
+  ],
+  "freq": 14,
+  "vocab": {
+   "id": "prose",
+   "word": "prose",
+   "pos": "명사",
+   "ipa": "proʊz",
+   "meaning": "산문 — 목록·코드가 아닌 줄글"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.0",
+    "en": "In a research pipeline, the coordinator hands the synthesis subagent its findings as smooth prose such as \"studies show adoption doubled\"."
+   },
+   {
+    "sid": "lesson-d2#3.0",
+    "en": "A teammate wants to cut a nested-input tool's description down to one line and add three schema-valid `input_examples` instead, since \"examples show Claude more than prose does.\""
+   },
+   {
+    "sid": "sample01#15.2",
+    "en": "In production, 30% of responses include markdown code fences or introductory prose."
+   },
+   {
+    "sid": "lesson-d3#24.4",
+    "en": "Describe to Claude, in plain prose, that records with null values are being dropped, and ask it to handle nulls properly in the transformation function"
+   },
+   {
+    "sid": "lesson-d4#5.3",
+    "en": "Write one prose paragraph per category and start each paragraph with the category's name"
+   },
+   {
+    "sid": "mock04#17.5",
+    "en": "Expand the request into a longer prose description defining what \"robust\" and \"idiomatic\" mean for validation"
+   },
+   {
+    "sid": "lesson-d1#10.3",
+    "en": "Keep the prose handoff, and add \"always cite your sources\" to the synthesis subagent's system prompt in its AgentDefinition"
+   },
+   {
+    "sid": "lesson-d3#25.3",
+    "en": "Write a detailed prose specification of how empty cells, quoted commas and duplicate headers map to JSON fields, give it to Claude with the converter request, and refine the wording after reviewing the output."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:prose.0",
+    "en": "You've been describing the requirements in prose, but Claude interprets them differently each time.",
+    "ko": "요구사항을 글(산문)로 설명해 왔는데, Claude가 매번 다르게 해석한다."
+   }
+  ]
+ },
+ {
+  "lemma": "protocol",
+  "kind": "vocab-core",
+  "surfaces": [
+   "protocol"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "protocol",
+   "word": "protocol",
+   "pos": "명사",
+   "ipa": "ˈproʊtəkɔːl",
+   "meaning": "프로토콜 — 통신·처리에서 지켜야 할 약속된 규약"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#8.6",
+    "en": "The MCP server turns the generic message into a JSON-RPC protocol error, so the model never sees that the call failed."
+   }
+  ]
+ },
+ {
+  "lemma": "prototype",
+  "kind": "new",
+  "surfaces": [
+   "prototype"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#11.0",
+    "en": "A support team's prototype routes a conversation to a human whenever its sentiment score turns negative or the model rates its own confidence below 0.6."
+   }
+  ]
+ },
+ {
+  "lemma": "provenance",
+  "kind": "vocab-core",
+  "surfaces": [
+   "provenance"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "provenance",
+   "word": "provenance",
+   "pos": "명사",
+   "ipa": "ˈprɑːvənəns",
+   "meaning": "출처, 내력 — 데이터·주장이 어디서 왔는지에 대한 정보"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#36.2",
+    "en": "Which change to the subagent output contract would best prevent this loss of provenance?"
+   }
+  ]
+ },
+ {
+  "lemma": "provide",
+  "kind": "vocab-core",
+  "surfaces": [
+   "provides",
+   "provide",
+   "provided"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "provide",
+   "word": "provide",
+   "pos": "동사",
+   "ipa": "prəˈvaɪd",
+   "meaning": "제공하다, 주다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#2.0",
+    "en": "A team names two tools `process_data` and `process_information`, and both share the description \"Processes data provided by the user.\""
+   },
+   {
+    "sid": "lesson-d1#30.6",
+    "en": "`additionalContext`, because it provides a way to add extra information that overrides the original tool output."
+   },
+   {
+    "sid": "lesson-d3#30.4",
+    "en": "The step ran claude without the -p flag, so the CLI opened its interactive session and waited for keyboard input that the runner cannot provide"
+   },
+   {
+    "sid": "mock04#17.4",
+    "en": "Provide 2-3 concrete input-to-output examples showing the exact validation style and library you want"
+   },
+   {
+    "sid": "sample01#12.5",
+    "en": "Both the `settings.json` deny rules and the `PreToolUse` hook are valid architectural approaches; the hook provides more flexibility"
+   },
+   {
+    "sid": "lesson-d2#19.4",
+    "en": "Remove the enrichment tools from the agent's tool list on the first turn and only provide extract_metadata, then after extract_metadata returns, re-add add_tags, link_related, and generate_summary for subsequent turns."
+   },
+   {
+    "sid": "lesson-d2#19.5",
+    "en": "Add a detailed description to each enrichment tool stating that they require metadata fields only extract_metadata can provide, and keep tool_choice set to auto throughout the conversation."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:provide.0",
+    "en": "Provide 2-3 concrete input-to-output examples showing the exact validation style and library you want",
+    "ko": "원하는 검증 스타일과 라이브러리를 정확히 보여 주는 구체적인 입력-출력 예시를 2-3개 제공한다."
+   }
+  ]
+ },
+ {
+  "lemma": "provider",
+  "kind": "vocab-core",
+  "surfaces": [
+   "provider"
+  ],
+  "freq": 10,
+  "vocab": {
+   "id": "provider",
+   "word": "provider",
+   "pos": "명사",
+   "ipa": "prəˈvaɪdər",
+   "meaning": "제공자, 공급자 — 서비스·데이터·ID 를 제공하는 쪽 (identity provider: ID 공급자)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#5.1",
+    "en": "Three turns earlier in the main conversation, the user chose a specific authentication provider."
+   },
+   {
+    "sid": "lesson-d5#19.0",
+    "en": "A regulatory-filings subagent cannot reach its data provider because the provider's API key expired."
+   },
+   {
+    "sid": "lesson-d1#5.2",
+    "en": "The subagent picks a different provider."
+   },
+   {
+    "sid": "lesson-d5#20.0",
+    "en": "Your news subagent gets an overloaded error from its search provider on the first call."
+   },
+   {
+    "sid": "lesson-d1#7.0",
+    "en": "An architect delegates a task to a subagent using the Agent tool, expecting it to reference a decision the user made three turns earlier in the main conversation about which authentication provider to use."
+   },
+   {
+    "sid": "lesson-d5#19.5",
+    "en": "The subagent stopped retrying the provider too early, so the coordinator never received data a longer retry window would have fetched"
+   },
+   {
+    "sid": "lesson-d1#7.1",
+    "en": "The subagent's response ignores that decision entirely and proposes a different provider."
+   },
+   {
+    "sid": "lesson-d5#19.6",
+    "en": "The coordinator accepted the subagent's output without a validation pass, so the empty findings list was never checked against the provider"
+   }
+  ]
+ },
+ {
+  "lemma": "proxy",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "proxy",
+   "word": "proxy",
+   "pos": "동사·명사",
+   "ipa": "ˈprɑːksi",
+   "meaning": "(요청을) 대신 전달하다 / 대리 서버"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:proxy.0",
+    "en": "Create an MCP server wrapper that reads tokens from a `.env` file and proxies requests to the GitHub API.",
+    "ko": "`.env` 파일에서 토큰을 읽어 GitHub API로 요청을 대신 전달하는 MCP 래퍼 서버를 만든다."
+   }
+  ]
+ }
+]

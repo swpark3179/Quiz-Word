@@ -1,0 +1,976 @@
+[
+ {
+  "lemma": "deactivate",
+  "skip": null,
+  "word": "deactivate",
+  "pos": ["동사"],
+  "ipa": "diˈæktɪveɪt",
+  "meaning": "비활성화하다 — 기능·키를 꺼서 쓰지 못하게 하다",
+  "short": "비활성화하다, 끄다",
+  "senses": [
+   { "pos": "동사", "ko": "비활성화하다, 끄다" }
+  ],
+  "forms": ["deactivates", "deactivated", "deactivating", "deactivation"],
+  "synonyms": ["disable", "turn off"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "deadline",
+  "skip": null,
+  "word": "deadline",
+  "pos": ["명사"],
+  "ipa": "ˈdedlaɪn",
+  "meaning": "마감 기한",
+  "short": "마감 기한",
+  "senses": [
+   { "pos": "명사", "ko": "마감 기한" }
+  ],
+  "forms": ["deadlines"],
+  "synonyms": ["due date", "time limit"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#3.3", "surface": "deadline", "pos": "명사", "sense": "마감 기한" },
+   { "sid": "lesson-d5#4.0", "surface": "deadlines", "pos": "명사", "sense": "마감 기한" },
+   { "sid": "lesson-d5#5.2", "surface": "deadline", "pos": "명사", "sense": "마감 기한" },
+   { "sid": "lesson-d5#2.5", "surface": "deadline", "pos": "명사", "sense": "마감 기한" }
+  ]
+ },
+ {
+  "lemma": "deal",
+  "skip": null,
+  "word": "deal",
+  "pos": ["동사", "명사"],
+  "ipa": "diːl",
+  "meaning": "① (~ with) 다루다, 처리하다 ② 거래, 합의 ③ (카드 등을) 나눠 주다",
+  "short": "다루다, 처리하다",
+  "senses": [
+   { "pos": "동사", "ko": "(~ with) 다루다, 처리하다" },
+   { "pos": "명사", "ko": "거래, 합의" },
+   { "pos": "동사", "ko": "(카드 등을) 나눠 주다" }
+  ],
+  "forms": ["deals", "dealt", "dealing"],
+  "synonyms": ["handle", "address", "tackle"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#22.2", "surface": "deals", "pos": "동사", "sense": "(~ with) 다루다, 처리하다" },
+   { "sid": "lesson-d5#20.5", "surface": "deal", "pos": "동사", "sense": "(~ with) 다루다, 처리하다" }
+  ]
+ },
+ {
+  "lemma": "debug",
+  "skip": null,
+  "word": "debug",
+  "pos": ["동사"],
+  "ipa": "diːˈbʌɡ",
+  "meaning": "디버그하다 — 버그의 원인을 찾아 고치다",
+  "short": "디버그하다, 버그를 고치다",
+  "senses": [
+   { "pos": "동사", "ko": "디버그하다, 버그를 찾아 고치다" },
+   { "pos": "명사", "ko": "(debugging) 디버깅, 버그 찾기" }
+  ],
+  "forms": ["debugs", "debugged", "debugging", "debugger"],
+  "synonyms": ["troubleshoot"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#21.1", "surface": "debugging", "pos": "명사", "sense": "(debugging) 디버깅, 버그 찾기" }
+  ]
+ },
+ {
+  "lemma": "decide",
+  "skip": null,
+  "word": "decide",
+  "pos": ["동사"],
+  "ipa": "dɪˈsaɪd",
+  "meaning": "① 결정하다, 정하다 ② (결과·방향을) 좌우하다, 결정짓다",
+  "short": "결정하다, 정하다",
+  "senses": [
+   { "pos": "동사", "ko": "결정하다, 정하다" },
+   { "pos": "동사", "ko": "(결과·방향을) 좌우하다, 결정짓다" }
+  ],
+  "forms": ["decides", "decided", "deciding", "decision"],
+  "synonyms": ["determine", "choose", "settle"],
+  "domain": "비교·평가·판단",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#22.0", "surface": "decide", "pos": "동사", "sense": "결정하다, 정하다" },
+   { "sid": "lesson-d4#7.2", "surface": "decide", "pos": "동사", "sense": "(결과·방향을) 좌우하다, 결정짓다" },
+   { "sid": "mock04#1.8", "surface": "decide", "pos": "동사", "sense": "결정하다, 정하다" },
+   { "sid": "lesson-d4#33.0", "surface": "decides", "pos": "동사", "sense": "결정하다, 정하다" }
+  ]
+ },
+ {
+  "lemma": "decision",
+  "skip": null,
+  "word": "decision",
+  "pos": ["명사"],
+  "ipa": "dɪˈsɪʒn",
+  "meaning": "결정, 판단",
+  "short": "결정, 판단",
+  "senses": [
+   { "pos": "명사", "ko": "결정, 판단" },
+   { "pos": "명사", "ko": "결단력" }
+  ],
+  "forms": ["decisions", "decide", "decisive"],
+  "synonyms": ["choice", "judgment", "determination"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#20.1", "surface": "decision", "pos": "명사", "sense": "결정, 판단" },
+   { "sid": "lesson-d1#7.1", "surface": "decision", "pos": "명사", "sense": "결정, 판단" },
+   { "sid": "lesson-d5#18.1", "surface": "decisions", "pos": "명사", "sense": "결정, 판단" },
+   { "sid": "mock04#51.5", "surface": "decisions", "pos": "명사", "sense": "결정, 판단" }
+  ]
+ },
+ {
+  "lemma": "declare",
+  "skip": null,
+  "word": "declare",
+  "pos": ["동사"],
+  "ipa": "dɪˈkler",
+  "meaning": "(설정·코드에) 선언하다, 명시하다",
+  "short": "선언하다, 명시하다",
+  "senses": [
+   { "pos": "동사", "ko": "(설정·코드에) 선언하다, 명시하다" },
+   { "pos": "동사", "ko": "공표하다, 발표하다" },
+   { "pos": "동사", "ko": "(세관·세무서에) 신고하다" }
+  ],
+  "forms": ["declares", "declared", "declaring", "declaration"],
+  "synonyms": ["specify", "state", "announce"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#14.5", "surface": "Declare", "pos": "동사", "sense": "(설정·코드에) 선언하다, 명시하다" },
+   { "sid": "lesson-d2#2.3", "surface": "declared", "pos": "동사", "sense": "(설정·코드에) 선언하다, 명시하다" }
+  ]
+ },
+ {
+  "lemma": "decline",
+  "skip": null,
+  "word": "decline",
+  "pos": ["동사"],
+  "ipa": "dɪˈklaɪn",
+  "meaning": "① 줄어들다, 떨어지다 ② 거절하다",
+  "short": "거절하다, 줄어들다",
+  "senses": [
+   { "pos": "동사", "ko": "거절하다" },
+   { "pos": "동사", "ko": "줄어들다, 떨어지다" },
+   { "pos": "명사", "ko": "감소, 하락" }
+  ],
+  "forms": ["declines", "declined", "declining"],
+  "synonyms": ["refuse", "reject", "decrease"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#8.1", "surface": "declines", "pos": "동사", "sense": "거절하다" },
+   { "sid": "lesson-d2#15.0", "surface": "declining", "pos": "동사", "sense": "줄어들다, 떨어지다" },
+   { "sid": "lesson-d5#10.4", "surface": "Decline", "pos": "동사", "sense": "거절하다" },
+   { "sid": "mock04#55.5", "surface": "decline", "pos": "동사", "sense": "거절하다" }
+  ]
+ },
+ {
+  "lemma": "decompose",
+  "skip": null,
+  "word": "decompose",
+  "pos": ["동사"],
+  "ipa": "ˌdiːkəmˈpoʊz",
+  "meaning": "(큰 작업을) 작은 단위로 쪼개다, 분해하다",
+  "short": "쪼개다, 분해하다",
+  "senses": [
+   { "pos": "동사", "ko": "(큰 작업을) 작은 단위로 쪼개다, 분해하다" },
+   { "pos": "명사", "ko": "(decomposition) 분해, 작업 나누기" },
+   { "pos": "동사", "ko": "부패하다, 썩다" }
+  ],
+  "forms": ["decomposes", "decomposed", "decomposing", "decomposition"],
+  "synonyms": ["break down", "split"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#17.5", "surface": "Decompose", "pos": "동사", "sense": "(큰 작업을) 작은 단위로 쪼개다, 분해하다" },
+   { "sid": "lesson-d1#32.3", "surface": "decomposition", "pos": "명사", "sense": "(decomposition) 분해, 작업 나누기" },
+   { "sid": "mock04#25.4", "surface": "decomposition", "pos": "명사", "sense": "(decomposition) 분해, 작업 나누기" },
+   { "sid": "lesson-d1#36.1", "surface": "decomposition", "pos": "명사", "sense": "(decomposition) 분해, 작업 나누기" }
+  ]
+ },
+ {
+  "lemma": "decorative",
+  "skip": null,
+  "word": "decorative",
+  "pos": ["형용사"],
+  "ipa": "ˈdekərətɪv",
+  "meaning": "① 장식용의 ② (실제 효과 없이) 겉치레뿐인",
+  "short": "장식용의, 겉치레뿐인",
+  "senses": [
+   { "pos": "형용사", "ko": "장식용의, 꾸밈용의" },
+   { "pos": "형용사", "ko": "(실제 효과 없이) 겉치레뿐인" }
+  ],
+  "forms": ["decorate", "decoration", "decoratively"],
+  "synonyms": ["ornamental", "cosmetic"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#2.6", "surface": "decorative", "pos": "형용사", "sense": "(실제 효과 없이) 겉치레뿐인" }
+  ]
+ },
+ {
+  "lemma": "dedicated",
+  "skip": null,
+  "word": "dedicated",
+  "pos": ["형용사"],
+  "ipa": "ˈdedɪkeɪtɪd",
+  "meaning": "전용의, 한 가지 일만 맡는",
+  "short": "전용의",
+  "senses": [
+   { "pos": "형용사", "ko": "전용의, 한 가지 일만 맡는" },
+   { "pos": "형용사", "ko": "헌신적인, 열성적인" }
+  ],
+  "forms": ["dedicate", "dedication"],
+  "synonyms": ["specialized", "exclusive"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#4.6", "surface": "dedicated", "pos": "형용사", "sense": "전용의, 한 가지 일만 맡는" },
+   { "sid": "lesson-d1#8.3", "surface": "dedicated", "pos": "형용사", "sense": "전용의, 한 가지 일만 맡는" },
+   { "sid": "mock04#51.5", "surface": "dedicated", "pos": "형용사", "sense": "전용의, 한 가지 일만 맡는" },
+   { "sid": "mock04#56.5", "surface": "dedicated", "pos": "형용사", "sense": "전용의, 한 가지 일만 맡는" }
+  ]
+ },
+ {
+  "lemma": "deduplicate",
+  "skip": null,
+  "word": "deduplicate",
+  "pos": ["동사"],
+  "ipa": "diːˈduːplɪkeɪt",
+  "meaning": "중복을 없애다",
+  "short": "중복을 없애다",
+  "senses": [
+   { "pos": "동사", "ko": "중복을 없애다" }
+  ],
+  "forms": ["deduplicates", "deduplicated", "deduplicating", "deduplication"],
+  "synonyms": ["dedupe"],
+  "domain": "삭제·제거",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:deduplicate.0", "surface": "deduplicate", "pos": "동사", "sense": "중복을 없애다" }
+  ]
+ },
+ {
+  "lemma": "deem",
+  "skip": null,
+  "word": "deem",
+  "pos": ["동사"],
+  "ipa": "diːm",
+  "meaning": "(~라고) 여기다, 판단하다",
+  "short": "(~라고) 여기다, 판단하다",
+  "senses": [
+   { "pos": "동사", "ko": "(~라고) 여기다, 판단하다" }
+  ],
+  "forms": ["deems", "deemed", "deeming"],
+  "synonyms": ["consider", "judge", "regard"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#8.6", "surface": "deems", "pos": "동사", "sense": "(~라고) 여기다, 판단하다" }
+  ]
+ },
+ {
+  "lemma": "deep-dive",
+  "skip": null,
+  "word": "deep-dive",
+  "pos": ["명사"],
+  "ipa": "ˈdiːp daɪv",
+  "meaning": "심층 분석 (자료), 깊이 파고들기",
+  "short": "심층 분석(자료)",
+  "senses": [
+   { "pos": "명사", "ko": "심층 분석 (자료)" },
+   { "pos": "명사", "ko": "깊이 파고들기" }
+  ],
+  "forms": ["deep-dives"],
+  "synonyms": ["in-depth analysis"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#26.3", "surface": "deep-dive", "pos": "명사", "sense": "심층 분석 (자료)" },
+   { "sid": "mock04#26.1", "surface": "deep-dive", "pos": "명사", "sense": "심층 분석 (자료)" }
+  ]
+ },
+ {
+  "lemma": "deeply",
+  "skip": null,
+  "word": "deeply",
+  "pos": ["부사"],
+  "ipa": "ˈdiːpli",
+  "meaning": "① (생각을) 깊이, 깊게 ② (구조상) 깊숙이 ③ 매우, 몹시",
+  "short": "깊이, 깊게",
+  "senses": [
+   { "pos": "부사", "ko": "(생각을) 깊이, 깊게" },
+   { "pos": "부사", "ko": "(구조상) 깊숙이, 여러 단계 아래로" },
+   { "pos": "부사", "ko": "매우, 몹시" }
+  ],
+  "forms": ["deep", "depth"],
+  "synonyms": ["thoroughly", "profoundly"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#36.0", "surface": "deeply", "pos": "부사", "sense": "(생각을) 깊이, 깊게" },
+   { "sid": "lesson-d3#14.0", "surface": "deeply", "pos": "부사", "sense": "(구조상) 깊숙이, 여러 단계 아래로" },
+   { "sid": "mock04#58.5", "surface": "deeply", "pos": "부사", "sense": "(생각을) 깊이, 깊게" }
+  ]
+ },
+ {
+  "lemma": "default",
+  "skip": null,
+  "word": "default",
+  "pos": ["명사", "형용사"],
+  "ipa": "dɪˈfɔːlt",
+  "meaning": "① 기본값, 기본 설정 (by default: 따로 정하지 않으면) ② 기본(값)의 ③ (채무) 불이행",
+  "short": "기본값, 기본의",
+  "senses": [
+   { "pos": "명사", "ko": "기본값, 기본 설정" },
+   { "pos": "형용사", "ko": "기본(값)의" },
+   { "pos": "명사", "ko": "(채무) 불이행" },
+   { "pos": "동사", "ko": "(값이) 기본값으로 정해지다" }
+  ],
+  "forms": ["defaults", "defaulted"],
+  "synonyms": ["preset", "standard"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#25.5", "surface": "default", "pos": "명사", "sense": "기본값, 기본 설정" },
+   { "sid": "lesson-d3#18.6", "surface": "default", "pos": "형용사", "sense": "기본(값)의" },
+   { "sid": "lesson-d2#16.5", "surface": "default", "pos": "형용사", "sense": "기본(값)의" },
+   { "sid": "lesson-d5#27.2", "surface": "default", "pos": "형용사", "sense": "기본(값)의" }
+  ]
+ },
+ {
+  "lemma": "defect",
+  "skip": null,
+  "word": "defect",
+  "pos": ["명사"],
+  "ipa": "ˈdiːfekt",
+  "meaning": "결함, 버그",
+  "short": "결함, 버그",
+  "senses": [
+   { "pos": "명사", "ko": "결함, 버그" },
+   { "pos": "동사", "ko": "(조직·국가를) 이탈하다, 망명하다" }
+  ],
+  "forms": ["defects", "defective"],
+  "synonyms": ["flaw", "bug", "fault"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#47.5", "surface": "defects", "pos": "명사", "sense": "결함, 버그" },
+   { "sid": "lesson-d3#27.3", "surface": "defects", "pos": "명사", "sense": "결함, 버그" },
+   { "sid": "mock04#46.2", "surface": "defect", "pos": "명사", "sense": "결함, 버그" },
+   { "sid": "mock04#51.1", "surface": "defects", "pos": "명사", "sense": "결함, 버그" }
+  ]
+ },
+ {
+  "lemma": "defense",
+  "skip": null,
+  "word": "defense",
+  "pos": ["명사"],
+  "ipa": "dɪˈfens",
+  "meaning": "방어(책), 방어 수단",
+  "short": "방어(책), 방어 수단",
+  "senses": [
+   { "pos": "명사", "ko": "방어(책), 방어 수단" },
+   { "pos": "명사", "ko": "변호, 옹호" }
+  ],
+  "forms": ["defenses", "defend", "defensive"],
+  "synonyms": ["protection", "safeguard"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#4.3", "surface": "defense", "pos": "명사", "sense": "방어(책), 방어 수단" }
+  ]
+ },
+ {
+  "lemma": "defer",
+  "skip": null,
+  "word": "defer",
+  "pos": ["동사"],
+  "ipa": "dɪˈfɜːr",
+  "meaning": "① 미루다 ② (판단을) 남에게 맡기다",
+  "short": "미루다, (판단을) 따르다",
+  "senses": [
+   { "pos": "동사", "ko": "미루다, 연기하다" },
+   { "pos": "동사", "ko": "(~ to) (남의 판단을) 따르다, 맡기다" }
+  ],
+  "forms": ["defers", "deferred", "deferring", "deferral"],
+  "synonyms": ["postpone", "put off", "delay"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#27.4", "surface": "deferring", "pos": "동사", "sense": "미루다, 연기하다" },
+   { "sid": "lesson-d1#5.7", "surface": "defer", "pos": "동사", "sense": "(~ to) (남의 판단을) 따르다, 맡기다" }
+  ]
+ },
+ {
+  "lemma": "define",
+  "skip": null,
+  "word": "define",
+  "pos": ["동사"],
+  "ipa": "dɪˈfaɪn",
+  "meaning": "정의하다, (명확히) 정하다",
+  "short": "정의하다, 정하다",
+  "senses": [
+   { "pos": "동사", "ko": "정의하다, (명확히) 정하다" },
+   { "pos": "동사", "ko": "(윤곽·경계를) 뚜렷하게 하다" }
+  ],
+  "forms": ["defines", "defined", "defining", "predefined", "user-defined", "definition"],
+  "synonyms": ["specify", "determine", "set"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#19.0", "surface": "defined", "pos": "동사", "sense": "정의하다, (명확히) 정하다" },
+   { "sid": "lesson-d2#22.1", "surface": "defines", "pos": "동사", "sense": "정의하다, (명확히) 정하다" },
+   { "sid": "lesson-d5#30.5", "surface": "defined", "pos": "동사", "sense": "정의하다, (명확히) 정하다" },
+   { "sid": "mock04#17.5", "surface": "defining", "pos": "동사", "sense": "정의하다, (명확히) 정하다" }
+  ]
+ },
+ {
+  "lemma": "definition",
+  "skip": null,
+  "word": "definition",
+  "pos": ["명사"],
+  "ipa": "ˌdefɪˈnɪʃn",
+  "meaning": "정의 — (도구·함수의) 이름·설명·입력 형식을 적은 명세",
+  "short": "정의, (도구) 명세",
+  "senses": [
+   { "pos": "명사", "ko": "(도구·설정의) 정의, 명세" },
+   { "pos": "명사", "ko": "(개념·단어의) 정의, 뜻" },
+   { "pos": "명사", "ko": "(화질의) 선명도" }
+  ],
+  "forms": ["definitions"],
+  "synonyms": ["specification"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#3.0", "surface": "definition", "pos": "명사", "sense": "(도구·설정의) 정의, 명세" },
+   { "sid": "lesson-d3#23.6", "surface": "definition", "pos": "명사", "sense": "(개념·단어의) 정의, 뜻" },
+   { "sid": "mock04#24.2", "surface": "definitions", "pos": "명사", "sense": "(도구·설정의) 정의, 명세" },
+   { "sid": "lesson-d5#1.0", "surface": "definitions", "pos": "명사", "sense": "(도구·설정의) 정의, 명세" }
+  ]
+ },
+ {
+  "lemma": "deflection",
+  "skip": null,
+  "word": "deflection",
+  "pos": ["명사"],
+  "ipa": "dɪˈflekʃn",
+  "meaning": "① (고객 지원) 자체 해결 — 사람 상담원까지 가지 않고 처리됨 (deflection rate) ② 빗나감, 회피",
+  "short": "(상담원 없이) 자체 해결",
+  "senses": [
+   { "pos": "명사", "ko": "(고객 지원) 자체 해결" },
+   { "pos": "명사", "ko": "빗나감, 회피" }
+  ],
+  "forms": ["deflect", "deflections"],
+  "synonyms": [],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#7.4", "surface": "deflection", "pos": "명사", "sense": "(고객 지원) 자체 해결" }
+  ]
+ },
+ {
+  "lemma": "degrade",
+  "skip": null,
+  "word": "degrade",
+  "pos": ["동사"],
+  "ipa": "dɪˈɡreɪd",
+  "meaning": "(품질·성능이) 떨어지다, 저하되다",
+  "short": "(성능이) 떨어지다, 저하되다",
+  "senses": [
+   { "pos": "동사", "ko": "(품질·성능이) 떨어지다, 저하되다" },
+   { "pos": "동사", "ko": "(품질·성능을) 떨어뜨리다" },
+   { "pos": "명사", "ko": "(degradation) 저하, 악화" },
+   { "pos": "동사", "ko": "(사람을) 깎아내리다" }
+  ],
+  "forms": ["degrades", "degraded", "degrading", "degradation"],
+  "synonyms": ["deteriorate", "decline", "worsen"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#6.1", "surface": "degrades", "pos": "동사", "sense": "(품질·성능이) 떨어지다, 저하되다" },
+   { "sid": "lesson-d2#15.3", "surface": "degrading", "pos": "동사", "sense": "(품질·성능을) 떨어뜨리다" },
+   { "sid": "mock04#12.6", "surface": "degradation", "pos": "명사", "sense": "(degradation) 저하, 악화" },
+   { "sid": "lesson-d4#10.1", "surface": "degrades", "pos": "동사", "sense": "(품질·성능이) 떨어지다, 저하되다" }
+  ]
+ },
+ {
+  "lemma": "delay",
+  "skip": null,
+  "word": "delay",
+  "pos": ["명사", "동사"],
+  "ipa": "dɪˈleɪ",
+  "meaning": "지연, 대기 시간 · 늦추다",
+  "short": "지연, 늦추다",
+  "senses": [
+   { "pos": "명사", "ko": "지연, 대기 시간" },
+   { "pos": "동사", "ko": "늦추다, 미루다" }
+  ],
+  "forms": ["delays", "delayed", "delaying"],
+  "synonyms": ["lag", "postpone"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#7.4", "surface": "delay", "pos": "명사", "sense": "지연, 대기 시간" }
+  ]
+ },
+ {
+  "lemma": "delegate",
+  "skip": null,
+  "word": "delegate",
+  "pos": ["동사"],
+  "ipa": "ˈdelɪɡeɪt",
+  "meaning": "(일·권한을) 맡기다, 위임하다",
+  "short": "맡기다, 위임하다",
+  "senses": [
+   { "pos": "동사", "ko": "(일·권한을) 맡기다, 위임하다" },
+   { "pos": "명사", "ko": "(delegation) 위임, 작업 맡기기" },
+   { "pos": "명사", "ko": "대표(자), 대리인" }
+  ],
+  "forms": ["delegates", "delegated", "delegating", "delegation", "delegations"],
+  "synonyms": ["assign", "hand off", "entrust"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#18.0", "surface": "delegates", "pos": "동사", "sense": "(일·권한을) 맡기다, 위임하다" },
+   { "sid": "lesson-d1#16.2", "surface": "delegation", "pos": "명사", "sense": "(delegation) 위임, 작업 맡기기" },
+   { "sid": "mock04#19.6", "surface": "Delegate", "pos": "동사", "sense": "(일·권한을) 맡기다, 위임하다" },
+   { "sid": "lesson-d1#5.0", "surface": "delegates", "pos": "동사", "sense": "(일·권한을) 맡기다, 위임하다" }
+  ]
+ },
+ {
+  "lemma": "delete",
+  "skip": null,
+  "word": "delete",
+  "pos": ["동사"],
+  "ipa": "dɪˈliːt",
+  "meaning": "삭제하다, 지우다",
+  "short": "삭제하다, 지우다",
+  "senses": [
+   { "pos": "동사", "ko": "삭제하다, 지우다" }
+  ],
+  "forms": ["deletes", "deleted", "deleting", "deletion"],
+  "synonyms": ["remove", "erase"],
+  "domain": "삭제·제거",
+  "basic": true,
+  "contexts": [
+   { "sid": "mock04#43.7", "surface": "Delete", "pos": "동사", "sense": "삭제하다, 지우다" },
+   { "sid": "lesson-d2#22.6", "surface": "Delete", "pos": "동사", "sense": "삭제하다, 지우다" },
+   { "sid": "mock04#49.7", "surface": "Delete", "pos": "동사", "sense": "삭제하다, 지우다" },
+   { "sid": "lesson-d2#5.6", "surface": "Delete", "pos": "동사", "sense": "삭제하다, 지우다" }
+  ]
+ },
+ {
+  "lemma": "deliberation",
+  "skip": null,
+  "word": "deliberation",
+  "pos": ["명사"],
+  "ipa": "dɪˌlɪbəˈreɪʃn",
+  "meaning": "숙고, 신중한 검토",
+  "short": "숙고, 신중한 검토",
+  "senses": [
+   { "pos": "명사", "ko": "숙고, 신중한 검토" },
+   { "pos": "형용사", "ko": "(deliberate) 의도적인, 고의의" },
+   { "pos": "형용사", "ko": "(deliberate) 신중한, 숙고한" }
+  ],
+  "forms": ["deliberations", "deliberate", "deliberately"],
+  "synonyms": ["consideration", "reflection"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#23.7", "surface": "deliberation", "pos": "명사", "sense": "숙고, 신중한 검토" },
+   { "sid": "lesson-d4#11.0", "surface": "deliberate", "pos": "형용사", "sense": "(deliberate) 의도적인, 고의의" },
+   { "sid": "mock04#30.7", "surface": "deliberate", "pos": "형용사", "sense": "(deliberate) 신중한, 숙고한" },
+   { "sid": "lesson-d4#11.6", "surface": "deliberate", "pos": "형용사", "sense": "(deliberate) 의도적인, 고의의" }
+  ]
+ },
+ {
+  "lemma": "delimiter",
+  "skip": null,
+  "word": "delimiter",
+  "pos": ["명사"],
+  "ipa": "dɪˈlɪmɪtər",
+  "meaning": "구분자 — 내용의 시작과 끝을 나누는 기호·태그",
+  "short": "구분자, 구분 기호",
+  "senses": [
+   { "pos": "명사", "ko": "구분자 (시작과 끝을 나누는 기호·태그)" }
+  ],
+  "forms": ["delimiters", "delimit"],
+  "synonyms": ["separator"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "delta",
+  "skip": null,
+  "word": "delta",
+  "pos": ["명사"],
+  "ipa": "ˈdeltə",
+  "meaning": "델타, 변화분 — 스트리밍에서 조금씩 덧붙여 오는 출력 조각 (content_block_delta)",
+  "short": "변화분, (스트리밍) 출력 조각",
+  "senses": [
+   { "pos": "명사", "ko": "(스트리밍의) 출력 조각, 변화분" },
+   { "pos": "명사", "ko": "차이, 변화량" },
+   { "pos": "명사", "ko": "삼각주" }
+  ],
+  "forms": ["deltas"],
+  "synonyms": ["difference", "change"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "demarcate",
+  "skip": null,
+  "word": "demarcate",
+  "pos": ["동사"],
+  "ipa": "ˈdiːmɑːrkeɪt",
+  "meaning": "경계를 정하다, 구분 짓다",
+  "short": "경계를 정하다, 구분 짓다",
+  "senses": [
+   { "pos": "동사", "ko": "경계를 정하다, 구분 짓다" }
+  ],
+  "forms": ["demarcates", "demarcated", "demarcating", "demarcation"],
+  "synonyms": ["delimit", "separate", "mark off"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:demarcate.0", "surface": "demarcate", "pos": "동사", "sense": "경계를 정하다, 구분 짓다" }
+  ]
+ },
+ {
+  "lemma": "demonstrate",
+  "skip": null,
+  "word": "demonstrate",
+  "pos": ["동사"],
+  "ipa": "ˈdemənstreɪt",
+  "meaning": "(예시로) 보여 주다, 입증하다",
+  "short": "(예시로) 보여 주다, 입증하다",
+  "senses": [
+   { "pos": "동사", "ko": "(예시로) 보여 주다" },
+   { "pos": "동사", "ko": "입증하다, 증명하다" },
+   { "pos": "동사", "ko": "시위하다" }
+  ],
+  "forms": ["demonstrates", "demonstrated", "demonstrating", "demonstration"],
+  "synonyms": ["show", "illustrate", "prove"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:demonstrate.0", "surface": "demonstrating", "pos": "동사", "sense": "(예시로) 보여 주다" }
+  ]
+ },
+ {
+  "lemma": "deny",
+  "skip": null,
+  "word": "deny",
+  "pos": ["동사"],
+  "ipa": "dɪˈnaɪ",
+  "meaning": "① (권한·요청을) 거부하다, 막다 ② 부인하다",
+  "short": "거부하다, 막다",
+  "senses": [
+   { "pos": "동사", "ko": "(권한·요청을) 거부하다, 막다" },
+   { "pos": "동사", "ko": "부인하다" },
+   { "pos": "명사", "ko": "(denial) 거부, 거절" }
+  ],
+  "forms": ["denies", "denied", "denying", "denial", "denials"],
+  "synonyms": ["reject", "refuse", "block"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#22.1", "surface": "denies", "pos": "동사", "sense": "(권한·요청을) 거부하다, 막다" },
+   { "sid": "sample01#18.4", "surface": "denials", "pos": "명사", "sense": "(denial) 거부, 거절" },
+   { "sid": "lesson-d1#22.2", "surface": "denied", "pos": "동사", "sense": "(권한·요청을) 거부하다, 막다" },
+   { "sid": "lesson-d1#28.0", "surface": "denies", "pos": "동사", "sense": "(권한·요청을) 거부하다, 막다" }
+  ]
+ },
+ {
+  "lemma": "denylist",
+  "skip": null,
+  "word": "denylist",
+  "pos": ["명사"],
+  "ipa": "ˈdaɪnaɪlɪst",
+  "meaning": "거부 목록 — 막을 대상을 적어 둔 목록 (↔ allowlist)",
+  "short": "거부 목록, 차단 목록",
+  "senses": [
+   { "pos": "명사", "ko": "거부 목록, 차단 목록" }
+  ],
+  "forms": ["denylists"],
+  "synonyms": ["blocklist", "blacklist"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "departure",
+  "skip": null,
+  "word": "departure",
+  "pos": ["명사"],
+  "ipa": "dɪˈpɑːrtʃər",
+  "meaning": "① 출발 ② (기존 방식에서) 벗어남, 이탈",
+  "short": "출발",
+  "senses": [
+   { "pos": "명사", "ko": "출발" },
+   { "pos": "명사", "ko": "(기존 방식에서) 벗어남, 이탈" }
+  ],
+  "forms": ["departures", "depart"],
+  "synonyms": ["leaving", "exit"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#13.4", "surface": "departure", "pos": "명사", "sense": "출발" }
+  ]
+ },
+ {
+  "lemma": "depend",
+  "skip": null,
+  "word": "depend",
+  "pos": ["동사"],
+  "ipa": "dɪˈpend",
+  "meaning": "(~에) 달려 있다, 의존하다",
+  "short": "(~에) 달려 있다, 의존하다",
+  "senses": [
+   { "pos": "동사", "ko": "(~에) 달려 있다, 의존하다" },
+   { "pos": "동사", "ko": "(~을) 믿다, 신뢰하다" },
+   { "pos": "형용사", "ko": "(dependable) 믿을 만한" }
+  ],
+  "forms": ["depends", "depended", "depending", "dependable", "dependency", "dependent"],
+  "synonyms": ["rely on", "hinge on"],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#11.1", "surface": "depend", "pos": "동사", "sense": "(~에) 달려 있다, 의존하다" },
+   { "sid": "lesson-d2#16.2", "surface": "dependable", "pos": "형용사", "sense": "(dependable) 믿을 만한" },
+   { "sid": "mock04#31.1", "surface": "depends", "pos": "동사", "sense": "(~에) 달려 있다, 의존하다" },
+   { "sid": "lesson-d5#25.5", "surface": "depends", "pos": "동사", "sense": "(~에) 달려 있다, 의존하다" }
+  ]
+ },
+ {
+  "lemma": "dependency",
+  "skip": null,
+  "word": "dependency",
+  "pos": ["명사"],
+  "ipa": "dɪˈpendənsi",
+  "meaning": "의존 관계, (패키지) 의존성",
+  "short": "의존 관계, 의존성",
+  "senses": [
+   { "pos": "명사", "ko": "(모듈·패키지의) 의존 관계, 의존성" },
+   { "pos": "명사", "ko": "(사람·물질에 대한) 의존" }
+  ],
+  "forms": ["dependencies"],
+  "synonyms": ["reliance"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#23.3", "surface": "dependencies", "pos": "명사", "sense": "(모듈·패키지의) 의존 관계, 의존성" },
+   { "sid": "mock04#13.6", "surface": "dependency", "pos": "명사", "sense": "(모듈·패키지의) 의존 관계, 의존성" }
+  ]
+ },
+ {
+  "lemma": "dependent",
+  "skip": null,
+  "word": "dependent",
+  "pos": ["형용사"],
+  "ipa": "dɪˈpendənt",
+  "meaning": "(~에) 의존하는, 영향을 받는",
+  "short": "(~에) 의존하는",
+  "senses": [
+   { "pos": "형용사", "ko": "(~에) 의존하는, 영향을 받는" },
+   { "pos": "명사", "ko": "부양가족" }
+  ],
+  "forms": ["dependents", "dependence"],
+  "synonyms": ["reliant", "contingent"],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#16.7", "surface": "dependent", "pos": "형용사", "sense": "(~에) 의존하는, 영향을 받는" }
+  ]
+ },
+ {
+  "lemma": "deploy",
+  "skip": null,
+  "word": "deploy",
+  "pos": ["동사"],
+  "ipa": "dɪˈplɔɪ",
+  "meaning": "배포하다, (운영 환경에) 투입하다",
+  "short": "배포하다",
+  "senses": [
+   { "pos": "동사", "ko": "배포하다, (운영 환경에) 투입하다" },
+   { "pos": "명사", "ko": "(deployment) 배포" },
+   { "pos": "동사", "ko": "(병력·인력을) 배치하다" }
+  ],
+  "forms": ["deploys", "deployed", "deploying", "deployment"],
+  "synonyms": ["release", "roll out", "ship"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#4.0", "surface": "deploys", "pos": "동사", "sense": "배포하다, (운영 환경에) 투입하다" },
+   { "sid": "lesson-d4#12.2", "surface": "deployment", "pos": "명사", "sense": "(deployment) 배포" },
+   { "sid": "mock04#51.5", "surface": "deploy", "pos": "동사", "sense": "배포하다, (운영 환경에) 투입하다" },
+   { "sid": "lesson-d3#6.0", "surface": "deployment", "pos": "명사", "sense": "(deployment) 배포" }
+  ]
+ },
+ {
+  "lemma": "deposit",
+  "skip": null,
+  "word": "deposit",
+  "pos": ["명사", "동사"],
+  "ipa": "dɪˈpɑːzɪt",
+  "meaning": "① 입금(액), 예금 ② 보증금, 계약금 ③ 입금하다, 맡기다",
+  "short": "입금(액), 예금",
+  "senses": [
+   { "pos": "명사", "ko": "입금(액), 예금" },
+   { "pos": "명사", "ko": "보증금, 계약금" },
+   { "pos": "동사", "ko": "입금하다, 맡기다" }
+  ],
+  "forms": ["deposits", "deposited", "depositing"],
+  "synonyms": ["payment"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#20.1", "surface": "deposits", "pos": "명사", "sense": "입금(액), 예금" }
+  ]
+ },
+ {
+  "lemma": "deprecate",
+  "skip": null,
+  "word": "deprecate",
+  "pos": ["동사"],
+  "ipa": "ˈdeprəkeɪt",
+  "meaning": "(기능·모델을) 지원 중단 예정으로 지정하다 — deprecated: 곧 없어질 예정인, 사용 중단이 권고된",
+  "short": "사용 중단 예정으로 하다",
+  "senses": [
+   { "pos": "동사", "ko": "(기능을) 지원 중단 예정으로 지정하다" },
+   { "pos": "형용사", "ko": "(deprecated) 사용 중단이 권고된" },
+   { "pos": "동사", "ko": "반대하다, 비난하다" }
+  ],
+  "forms": ["deprecates", "deprecated", "deprecating", "deprecation"],
+  "synonyms": ["phase out"],
+  "domain": "시작·종료",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#23.5", "surface": "deprecated", "pos": "형용사", "sense": "(deprecated) 사용 중단이 권고된" },
+   { "sid": "lesson-d2#29.0", "surface": "deprecated", "pos": "형용사", "sense": "(deprecated) 사용 중단이 권고된" }
+  ]
+ },
+ {
+  "lemma": "depth",
+  "skip": null,
+  "word": "depth",
+  "pos": ["명사"],
+  "ipa": "depθ",
+  "meaning": "① 깊이, (폴더 등의) 중첩 단계 ② (검토·분석의) 깊이, 철저함 ③ (out of one's depth) 감당하기 어려운",
+  "short": "깊이, (중첩) 단계",
+  "senses": [
+   { "pos": "명사", "ko": "깊이, (폴더 등의) 중첩 단계" },
+   { "pos": "명사", "ko": "(검토·분석의) 깊이, 철저함" },
+   { "pos": "명사", "ko": "(out of one's depth) 능력 밖, 감당하기 어려움" }
+  ],
+  "forms": ["depths", "deep", "deeply"],
+  "synonyms": ["deepness", "level"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#16.0", "surface": "depth", "pos": "명사", "sense": "깊이, (폴더 등의) 중첩 단계" },
+   { "sid": "lesson-d4#36.3", "surface": "depth", "pos": "명사", "sense": "(검토·분석의) 깊이, 철저함" },
+   { "sid": "lesson-d5#11.5", "surface": "depth", "pos": "명사", "sense": "(out of one's depth) 능력 밖, 감당하기 어려움" },
+   { "sid": "lesson-d3#15.0", "surface": "depth", "pos": "명사", "sense": "깊이, (폴더 등의) 중첩 단계" }
+  ]
+ },
+ {
+  "lemma": "derive",
+  "skip": null,
+  "word": "derive",
+  "pos": ["동사"],
+  "ipa": "dɪˈraɪv",
+  "meaning": "① (결론·값을) 끌어내다, 도출하다 ② (~에서) 파생되다, 유래하다",
+  "short": "끌어내다, 도출하다",
+  "senses": [
+   { "pos": "동사", "ko": "(결론·값을) 끌어내다, 도출하다" },
+   { "pos": "동사", "ko": "(~에서) 파생되다, 유래하다" }
+  ],
+  "forms": ["derives", "derived", "deriving", "derivation", "derivative"],
+  "synonyms": ["deduce", "infer", "obtain"],
+  "domain": "원인·결과·영향",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#28.5", "surface": "derived", "pos": "동사", "sense": "(결론·값을) 끌어내다, 도출하다" },
+   { "sid": "lesson-d3#25.5", "surface": "deriving", "pos": "동사", "sense": "(결론·값을) 끌어내다, 도출하다" }
+  ]
+ },
+ {
+  "lemma": "describe",
+  "skip": null,
+  "word": "describe",
+  "pos": ["동사"],
+  "ipa": "dɪˈskraɪb",
+  "meaning": "① 설명하다, 묘사하다 ② (~라고) 평하다, 일컫다",
+  "short": "설명하다, 묘사하다",
+  "senses": [
+   { "pos": "동사", "ko": "설명하다, 묘사하다" },
+   { "pos": "동사", "ko": "(~라고) 평하다, 일컫다" }
+  ],
+  "forms": ["describes", "described", "describing", "description", "descriptive"],
+  "synonyms": ["explain", "depict", "outline"],
+  "domain": "요청·소통",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#25.0", "surface": "described", "pos": "동사", "sense": "설명하다, 묘사하다" },
+   { "sid": "lesson-d4#10.5", "surface": "describe", "pos": "동사", "sense": "설명하다, 묘사하다" },
+   { "sid": "lesson-d5#10.1", "surface": "describes", "pos": "동사", "sense": "설명하다, 묘사하다" },
+   { "sid": "lesson-d1#17.1", "surface": "describing", "pos": "동사", "sense": "설명하다, 묘사하다" }
+  ]
+ },
+ {
+  "lemma": "description",
+  "skip": null,
+  "word": "description",
+  "pos": ["명사"],
+  "ipa": "dɪˈskrɪpʃn",
+  "meaning": "설명 — (도구 정의의) 설명 문구",
+  "short": "설명, 설명 문구",
+  "senses": [
+   { "pos": "명사", "ko": "(도구 정의의) 설명 문구" },
+   { "pos": "명사", "ko": "설명, 묘사" }
+  ],
+  "forms": ["descriptions", "describe", "descriptive"],
+  "synonyms": ["explanation", "account"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#19.2", "surface": "descriptions", "pos": "명사", "sense": "(도구 정의의) 설명 문구" },
+   { "sid": "lesson-d1#32.1", "surface": "description", "pos": "명사", "sense": "설명, 묘사" },
+   { "sid": "lesson-d2#2.0", "surface": "description", "pos": "명사", "sense": "(도구 정의의) 설명 문구" },
+   { "sid": "mock04#33.1", "surface": "description", "pos": "명사", "sense": "(도구 정의의) 설명 문구" }
+  ]
+ },
+ {
+  "lemma": "descriptive",
+  "skip": null,
+  "word": "descriptive",
+  "pos": ["형용사"],
+  "ipa": "dɪˈskrɪptɪv",
+  "meaning": "설명적인, 서술형의 — 내용을 그대로 풀어 쓰는",
+  "short": "설명적인, 서술형의",
+  "senses": [
+   { "pos": "형용사", "ko": "설명적인, 서술형의" },
+   { "pos": "부사", "ko": "(descriptively) 내용이 드러나게" }
+  ],
+  "forms": ["descriptively", "describe", "description"],
+  "synonyms": ["explanatory"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#29.4", "surface": "descriptive", "pos": "형용사", "sense": "설명적인, 서술형의" },
+   { "sid": "lesson-d4#5.6", "surface": "descriptively", "pos": "부사", "sense": "(descriptively) 내용이 드러나게" }
+  ]
+ }
+]

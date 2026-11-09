@@ -1,0 +1,1315 @@
+[
+ {
+  "lemma": "obviously",
+  "kind": "new",
+  "surfaces": [
+   "obviously"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#11.5",
+    "en": "Several examples of obviously bad code, such as an empty `catch {}`, each marked high severity, so the bot learns what a real issue looks like"
+   }
+  ]
+ },
+ {
+  "lemma": "occasionally",
+  "kind": "vocab-core",
+  "surfaces": [
+   "occasionally"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "occasionally",
+   "word": "occasionally",
+   "pos": "부사",
+   "ipa": "əˈkeɪʒnəli",
+   "meaning": "가끔, 이따금"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#18.2",
+    "en": "The team reports agents occasionally reaching for tools clearly outside their remit, like the QA agent invoking a deploy tool."
+   },
+   {
+    "sid": "mock04#4.2",
+    "en": "Logs show the model occasionally misreads these heterogeneous fields, e.g., treating a refund amount in the wrong units."
+   },
+   {
+    "sid": "sample01#1.1",
+    "en": "In production, the agent occasionally calls the wrong tool and sometimes misses tool calls entirely."
+   },
+   {
+    "sid": "sample01#3.1",
+    "en": "In testing, the model frequently passes malformed date strings (`\"next Tuesday\"`, `\"ASAP\"`) and occasionally swaps the `from` and `to` parameters."
+   },
+   {
+    "sid": "sample01#8.0",
+    "en": "An agentic pipeline runs in production and occasionally produces incorrect outputs."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:occasionally.0",
+    "en": "...calls `lookup_order` using only the customer's stated name, occasionally leading to misidentified accounts and incorrect refunds.",
+    "ko": "고객이 말한 이름만으로 `lookup_order` 를 호출해, 때때로 계정을 잘못 식별하고 환불을 잘못 처리하게 된다."
+   }
+  ]
+ },
+ {
+  "lemma": "occupy",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "occupy",
+   "word": "occupy",
+   "pos": "동사",
+   "ipa": "ˈɑːkjupaɪ",
+   "meaning": "(공간을) 차지하다"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "occurrence",
+  "kind": "vocab-core",
+  "surfaces": [
+   "occurrence",
+   "occurred",
+   "occurs",
+   "occurrences",
+   "occur"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "occurrence",
+   "word": "occurrence",
+   "pos": "명사",
+   "ipa": "əˈkɜːrəns",
+   "meaning": "① (문자열 등이) 나타난 곳, 출현 ② 발생"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#37.0",
+    "en": "An architect is asked to design an agent that investigates why a production incident occurred, given only a vague alert message and no prior knowledge of which service is at fault."
+   },
+   {
+    "sid": "lesson-d2#28.1",
+    "en": "The same block appears many times, and even with the neighbouring lines added, the text never occurs only once."
+   },
+   {
+    "sid": "lesson-d3#19.0",
+    "en": "While in plan mode, an architect notices that Claude keeps reading files and running read-only search commands without prompting for approval on each one, even though no edits have occurred."
+   },
+   {
+    "sid": "mock04#43.2",
+    "en": "Its Edit call fails with a non-unique-match error because the target string appears on many lines that must all be updated consistently, and no single surrounding context makes one occurrence unique."
+   },
+   {
+    "sid": "lesson-d4#20.3",
+    "en": "Schema validation confirms that required fields exist and have the correct types but it cannot verify that the values are semantically correct relative to the source document, so mislabeling errors like this can still occur."
+   },
+   {
+    "sid": "lesson-d2#29.0",
+    "en": "A developer wants Claude Code to update a deprecated log statement `logger.warn(\"legacy-path\")` that appears twice in the same file, in two different functions, where only one of the two occurrences should change."
+   },
+   {
+    "sid": "mock04#43.4",
+    "en": "Switch to a Bash sed global substitution that rewrites every occurrence and bypasses the Edit tool entirely."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:occurrence.0",
+    "en": "...and no single surrounding context makes one occurrence unique.",
+    "ko": "어떤 주변 문맥으로도 한 곳만 고유하게 특정할 수 없습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "offender",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "offender",
+   "word": "offender",
+   "pos": "명사",
+   "ipa": "əˈfendər",
+   "meaning": "위반자 — repeat offender: 같은 위반을 되풀이하는 사용자"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "offending",
+  "kind": "vocab-core",
+  "surfaces": [
+   "offending"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "offending",
+   "word": "offending",
+   "pos": "형용사",
+   "ipa": "əˈfendɪŋ",
+   "meaning": "문제가 된, 문제를 일으킨 (바로 그)"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#57.4",
+    "en": "Append the failed extraction and the validation errors in a follow-up message, asking the model to fix only the offending fields."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:offending.0",
+    "en": "...asking the model to fix only the offending fields.",
+    "ko": "문제가 된 필드만 고치도록 모델에 요청한다"
+   }
+  ]
+ },
+ {
+  "lemma": "offer",
+  "kind": "new",
+  "surfaces": [
+   "offered",
+   "offer"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d5#8.1",
+    "en": "So the agent acknowledged the frustration and offered a human as an option."
+   },
+   {
+    "sid": "lesson-d5#9.4",
+    "en": "Acknowledge the frustration, go ahead and reschedule the appointment now, and offer to escalate to a staff member."
+   },
+   {
+    "sid": "lesson-d5#9.0",
+    "en": "A healthcare scheduling assistant follows a configured escalation policy: when a request is within the assistant's capability and the patient has not asked for a staff member, the assistant should acknowledge any expressed frustration, complete the request directly, and offer escalation to a staff member as an option rather than a requirement -- reserving mandatory escalation for requests it cannot complete, cases needing clinical judgment, or an explicit request for a human."
+   }
+  ]
+ },
+ {
+  "lemma": "often",
+  "kind": "new",
+  "surfaces": [
+   "often"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d4#33.0",
+    "en": "An insurer's claims agent calls the company's own policy-database lookup tool, reads what comes back, and then decides on its next step, often over several turns."
+   },
+   {
+    "sid": "lesson-d5#30.3",
+    "en": "Measure how often fields at each score level are actually right on a labeled validation set of past documents, then set the cut-off where observed accuracy meets the target."
+   }
+  ]
+ },
+ {
+  "lemma": "oidc",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "oidc",
+   "word": "OIDC",
+   "pos": "약어",
+   "ipa": "ˌoʊ.aɪ.diːˈsiː",
+   "meaning": "OpenID Connect — OAuth 위에서 ID 토큰으로 신원을 확인하는 표준"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "old",
+  "kind": "new",
+  "surfaces": [
+   "old",
+   "older"
+  ],
+  "freq": 13,
+  "sentences": [
+   {
+    "sid": "lesson-d2#22.0",
+    "en": "A developer has a local-scoped `analytics` server that still points at an old staging endpoint."
+   },
+   {
+    "sid": "lesson-d3#18.0",
+    "en": "Midway through planning a multi-phase migration, Claude has to find every usage pattern of the old library across hundreds of files before it can propose an approach."
+   },
+   {
+    "sid": "lesson-d4#12.2",
+    "en": "After deployment, the model performs well on similar short English emails but starts mislabeling longer documents and documents in other languages that it previously handled correctly under the old, example-free prompt."
+   },
+   {
+    "sid": "mock04#39.3",
+    "en": "The resumed agent replays cached Read and Grep results from the old history and proposes edits against paths that no longer exist."
+   },
+   {
+    "sid": "lesson-d5#2.4",
+    "en": "The Messages API is stateless, so it dropped the older turns once the conversation passed a set length"
+   },
+   {
+    "sid": "lesson-d2#4.0",
+    "en": "After a web-extraction tool was added, `analyze_content` kept its old description: \"Summarizes any content: emails, notes, web pages.\""
+   },
+   {
+    "sid": "lesson-d4#4.0",
+    "en": "In a legacy module, most functions use mixed old naming styles."
+   },
+   {
+    "sid": "lesson-d3#30.7",
+    "en": "The runner's Node.js version is older than the CLI supports, so the process stayed running while failing to parse its own command-line arguments"
+   }
+  ]
+ },
+ {
+  "lemma": "omit",
+  "kind": "vocab-core",
+  "surfaces": [
+   "omit",
+   "omits",
+   "omission"
+  ],
+  "freq": 12,
+  "vocab": {
+   "id": "omit",
+   "word": "omit",
+   "pos": "동사",
+   "ipa": "əˈmɪt",
+   "meaning": "빠뜨리다, 생략하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#6.1",
+    "en": "The synthesis step's final memo omits the regulatory risk finding, which appeared in the third of five sections in the middle of the document."
+   },
+   {
+    "sid": "mock04#22.1",
+    "en": "The synthesis subagent's reports read as generic overviews: in 30% of runs they omit the specific figures and named sources the web-search subagent surfaced."
+   },
+   {
+    "sid": "lesson-d3#27.3",
+    "en": "Combine both failures into a single message that shows the full test run output, noting that the currency-formatting mismatch and the filename extension omission are unrelated defects, and ask Claude to fix both."
+   },
+   {
+    "sid": "lesson-d4#1.4",
+    "en": "\"Report any bugs that could cause incorrect behavior, a test failure, or a misleading result; only omit nits like pure style or naming preferences.\""
+   },
+   {
+    "sid": "lesson-d2#10.1",
+    "en": "The current design returns `isError: true` with additional custom fields `errorCategory: \"validation\"` and `isRetryable: true` whenever the caller omits a required `customer_id` argument, on the reasoning that the agent might supply it correctly on a later attempt within the same conversation."
+   },
+   {
+    "sid": "mock04#37.3",
+    "en": "Production runs show the final plan omits an entire 'dunning' subsystem and a currency-conversion layer that no subagent was ever assigned."
+   },
+   {
+    "sid": "lesson-d5#17.3",
+    "en": "The string omits why the search failed; return an error category, the attempted query, and the partial results gathered"
+   },
+   {
+    "sid": "lesson-d3#27.0",
+    "en": "A test run against a newly generated report-export module in Claude Code produces two failures: a currency-formatting mismatch in the summary totals and a completely unrelated failure where the export filename generator omits the file extension on Windows paths."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:omit.0",
+    "en": "...the synthesis agent reliably cites the first 15K tokens and the final 10K tokens, but frequently omits critical findings in the middle 50K tokens.",
+    "ko": "합성 에이전트는 처음 15K 토큰과 마지막 10K 토큰은 꾸준히 인용하지만, 중간 50K 토큰에 있는 중요한 발견은 자주 빠뜨린다."
+   }
+  ]
+ },
+ {
+  "lemma": "on its own",
+  "kind": "vocab-core",
+  "surfaces": [
+   "on its own"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "on-its-own",
+   "word": "on its own",
+   "pos": "부사구",
+   "ipa": "ɑːn ɪts ˈoʊn",
+   "meaning": "① 스스로, 혼자 힘으로 ② 그것만으로"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#22.5",
+    "en": "Hooks that match the same event run in parallel, in no guaranteed order, so Hook B cannot rely on Hook A having run. Each gate has to read the state it needs on its own"
+   },
+   {
+    "sid": "lesson-d3#26.4",
+    "en": "Report each of the three failures in its own message, one after another, so that each fix can be confirmed on its own"
+   },
+   {
+    "sid": "lesson-d5#29.5",
+    "en": "Split the existing labeled results by document type and by field, and check that this type meets the bar on its own"
+   },
+   {
+    "sid": "mock04#37.6",
+    "en": "Raise the coordinator's maximum iteration count so it has more turns to notice the missing subsystems on its own while it works"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:on-its-own.0",
+    "en": "...so it has more turns to notice the missing subsystems on its own while it works",
+    "ko": "작업하면서 빠진 하위 시스템을 스스로 알아챌 턴을 더 많이 준다"
+   }
+  ]
+ },
+ {
+  "lemma": "on-call",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "on-call",
+   "word": "on-call",
+   "pos": "형용사·명사",
+   "ipa": "ˈɑːn kɔːl",
+   "meaning": "온콜(대기 근무)의 — 장애가 나면 바로 대응하도록 대기하는"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "on-demand",
+  "kind": "vocab-core",
+  "surfaces": [
+   "on demand",
+   "on-demand"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "on-demand",
+   "word": "on-demand",
+   "pos": "형용사·부사",
+   "ipa": "ˌɑːn dɪˈmænd",
+   "meaning": "필요할 때마다 (그때그때) 하는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#40.1",
+    "en": "A backend service needs to resume a specific user's conversation on demand, potentially hours after the user's last message, while other users' sessions remain active in the same directory."
+   },
+   {
+    "sid": "lesson-d3#12.6",
+    "en": "Keep the style guide in CLAUDE.md and move the pnpm rule into a skill, since a one-line rule is cheap to load on demand"
+   },
+   {
+    "sid": "mock04#11.7",
+    "en": "Convert the conventions into a skill under .claude/skills/ so they activate on demand for all users when relevant"
+   },
+   {
+    "sid": "mock04#45.6",
+    "en": "Convert the conventions into a Skill so they load on demand whenever the tool judges them relevant to the task"
+   },
+   {
+    "sid": "mock04#49.4",
+    "en": "Move the review rubric into an on-demand Skill under .claude/skills so only the review job loads it"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:on-demand.0",
+    "en": "Create a skill that references the exemplar endpoints and includes pattern-following instructions, invoked on-demand via slash command.",
+    "ko": "예시 엔드포인트를 참조하고 패턴 준수 지침을 담은 스킬을 만들어, 슬래시 커맨드로 필요할 때 호출한다."
+   }
+  ]
+ },
+ {
+  "lemma": "onboard",
+  "kind": "vocab-core",
+  "surfaces": [
+   "onboarded",
+   "onboarding"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "onboard",
+   "word": "onboard",
+   "pos": "동사",
+   "ipa": "ˈɑːnbɔːrd",
+   "meaning": "(새 구성원을) 합류시키다, 적응시키다 — newly onboarded 새로 합류한"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#31.0",
+    "en": "A newly onboarded architect asks Claude Code to trace how a login request flows from the HTTP route handler through to the database call, in a codebase Claude has not explored yet."
+   },
+   {
+    "sid": "mock04#11.2",
+    "en": "Everything works for the lead, but three newly onboarded engineers who cloned the repo report that Claude Code ignores the conventions entirely, even though `git status` shows a clean checkout."
+   },
+   {
+    "sid": "lesson-d3#2.3",
+    "en": "Run an onboarding script that writes the instruction into each developer's ~/.claude/CLAUDE.md"
+   },
+   {
+    "sid": "mock04#45.2",
+    "en": "A newly onboarded teammate clones the same repository, but the tool ignores those conventions for him."
+   },
+   {
+    "sid": "lesson-d3#3.5",
+    "en": "Populate each developer's personal `~/.claude/CLAUDE.md` via a one-time onboarding script, which developers can then edit as needed."
+   },
+   {
+    "sid": "lesson-d3#3.6",
+    "en": "Place a `CLAUDE.local.md` at the root of each repository, distributed by an onboarding script and added to `.gitignore` to prevent accidental commits."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:onboard.0",
+    "en": "A newly onboarded teammate clones the same repository, but the tool ignores those conventions for him.",
+    "ko": "새로 합류한 팀원이 같은 저장소를 클론했지만, 그의 환경에서는 도구가 그 규칙을 무시합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "once",
+  "kind": "new",
+  "surfaces": [
+   "once"
+  ],
+  "freq": 25,
+  "sentences": [
+   {
+    "sid": "lesson-d2#16.1",
+    "en": "The synthesis agent keeps running its own web searches, and the QA agent once called the deploy tool."
+   },
+   {
+    "sid": "mock04#31.3",
+    "en": "The coordinator invokes it once per document, and the required first step is always the same."
+   },
+   {
+    "sid": "lesson-d1#11.3",
+    "en": "Fork the session once for each strategy, so each branch starts with the full analysis and the original session stays intact"
+   },
+   {
+    "sid": "lesson-d3#1.6",
+    "en": "Paste the convention into every prompt, because Claude re-reads CLAUDE.md from disk only once a week"
+   },
+   {
+    "sid": "lesson-d4#28.3",
+    "en": "Submit once a night, because most batches finish in under an hour, which leaves plenty of slack"
+   },
+   {
+    "sid": "lesson-d5#12.5",
+    "en": "When a lookup returns several matches, do not choose between them. Ask the customer for one more identifier, such as the booking reference or phone number, and continue only once exactly one record matches."
+   },
+   {
+    "sid": "lesson-d2#28.1",
+    "en": "The same block appears many times, and even with the neighbouring lines added, the text never occurs only once."
+   },
+   {
+    "sid": "lesson-d1#17.4",
+    "en": "AgentDefinition.prompt is ignored at runtime once a per-call prompt is supplied, so only the invocation-time prompt actually reaches the subagent's model"
+   }
+  ]
+ },
+ {
+  "lemma": "one at a time",
+  "kind": "vocab-core",
+  "surfaces": [
+   "one at a time"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "one-at-a-time",
+   "word": "one at a time",
+   "pos": "부사구",
+   "ipa": "ˌwʌn ət ə ˈtaɪm",
+   "meaning": "한 번에 하나씩"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#16.5",
+    "en": "Enable plan mode and approve the three changes one at a time in sequence, reviewing each plan before the next"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:one-at-a-time.0",
+    "en": "Enable plan mode and approve the three changes one at a time in sequence, reviewing each plan before the next",
+    "ko": "plan mode를 켜고 세 변경을 하나씩 순서대로 승인하며, 다음 변경으로 넘어가기 전에 각 계획을 검토한다"
+   }
+  ]
+ },
+ {
+  "lemma": "one-line",
+  "kind": "new",
+  "surfaces": [
+   "one-line"
+  ],
+  "freq": 6,
+  "sentences": [
+   {
+    "sid": "lesson-d1#6.1",
+    "en": "Token costs are too high, and most one-line tickets only need classifying."
+   },
+   {
+    "sid": "lesson-d3#12.0",
+    "en": "Your project CLAUDE.md holds two things: the one-line rule \"Use pnpm, not npm\" and a 300-line API style guide that matters only when someone writes endpoints."
+   },
+   {
+    "sid": "mock04#33.1",
+    "en": "The web-search subagent is equipped with two tools, search_web and search_academic, each carrying a one-line description (\"search the web\" / \"search academic sources\")."
+   },
+   {
+    "sid": "lesson-d4#11.4",
+    "en": "Two examples that look alike: a top-level handler that logs and rethrows, marked acceptable, and a `catch` around a payment write that swallows the error, marked as an issue, each with a one-line reason"
+   },
+   {
+    "sid": "lesson-d3#12.6",
+    "en": "Keep the style guide in CLAUDE.md and move the pnpm rule into a skill, since a one-line rule is cheap to load on demand"
+   },
+   {
+    "sid": "lesson-d1#8.0",
+    "en": "A support-ticket triage system always invokes a full pipeline of five subagents (classifier, sentiment analyzer, knowledge-base search, summarizer, and escalation checker) for every incoming ticket, including simple one-line requests that only need classification."
+   }
+  ]
+ },
+ {
+  "lemma": "one-off",
+  "kind": "vocab-core",
+  "surfaces": [
+   "one-off"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "one-off",
+   "word": "one-off",
+   "pos": "형용사",
+   "ipa": "ˌwʌn ˈɔːf",
+   "meaning": "일회성의, 한 번만 쓰는"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#51.1",
+    "en": "The CI reviewer handles clear-cut defects well but is inconsistent on genuinely ambiguous cases — for example, whether a bare `except:` is acceptable in a one-off script versus a shared library."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:one-off.0",
+    "en": "...whether a bare `except:` is acceptable in a one-off script versus a shared library.",
+    "ko": "맨 `except:` 가 일회성 스크립트에서와 공유 라이브러리에서 각각 허용 가능한지"
+   }
+  ]
+ },
+ {
+  "lemma": "ongoing",
+  "kind": "new",
+  "surfaces": [
+   "ongoing"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#34.1",
+    "en": "Which ongoing practice best measures their error rate and surfaces new failure modes?"
+   }
+  ]
+ },
+ {
+  "lemma": "only",
+  "kind": "new",
+  "surfaces": [
+   "only"
+  ],
+  "freq": 145,
+  "sentences": [
+   {
+    "sid": "lesson-d1#18.2",
+    "en": "The coordinator's prompt to synthesis only said \"Write a report based on the research that was just completed.\""
+   },
+   {
+    "sid": "lesson-d2#11.1",
+    "en": "An agent calls it using a token scoped only to `read`."
+   },
+   {
+    "sid": "lesson-d3#11.1",
+    "en": "The team wants that exploratory back-and-forth kept separate from the main conversation, with only the final recommendation surfacing back to the user."
+   },
+   {
+    "sid": "lesson-d4#2.0",
+    "en": "A prompt engineer tries to fix a noisy security-findings category by adding the line \"only report high-confidence findings\" to the system prompt."
+   },
+   {
+    "sid": "lesson-d5#10.1",
+    "en": "The store's documented policy only describes price adjustments when the store's own website lowers a price within 14 days of purchase; it does not mention competitor pricing at all."
+   },
+   {
+    "sid": "mock04#10.1",
+    "en": "A customer gives only the name \"Maria Garcia.\" get_customer returns three distinct matching accounts."
+   },
+   {
+    "sid": "sample01#14.6",
+    "en": "Use few-shot examples only, no category definitions"
+   },
+   {
+    "sid": "selfcheck-d4-kor#2.0",
+    "en": "오탐을 줄이려고 리뷰 프롬프트에 \"be conservative, only report high-confidence findings\"를 넣었다. 오탐은 조금 줄었지만, 나중에 장애로 이어진 off-by-one 버그를 리뷰가 놓쳤다. 현재 문서 기준으로 가장 그럴듯한 설명과 대응은?"
+   }
+  ]
+ },
+ {
+  "lemma": "onto",
+  "kind": "new",
+  "surfaces": [
+   "onto"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d2#6.0",
+    "en": "A tool named `analyze_content`, originally built for summarizing pasted text, has its description copied almost verbatim onto a newer tool, `analyze_document`, meant for uploaded PDFs."
+   },
+   {
+    "sid": "mock04#39.6",
+    "en": "Run fork_session on the three-day-old session to branch the refactor onto a new line of history"
+   }
+  ]
+ },
+ {
+  "lemma": "open",
+  "kind": "new",
+  "surfaces": [
+   "opening",
+   "open",
+   "opens",
+   "opened"
+  ],
+  "freq": 15,
+  "sentences": [
+   {
+    "sid": "lesson-d1#16.0",
+    "en": "A coordinator delegates market research with a script: \"Search 'chip shortage 2025', open the top five results, summarise each, then search 'chip prices'.\""
+   },
+   {
+    "sid": "lesson-d2#27.5",
+    "en": "Use Read to open every file under src/components and manually inspect each one for an associated describe block before counting"
+   },
+   {
+    "sid": "lesson-d3#29.2",
+    "en": "Add -p so Claude Code runs the query and exits instead of opening an interactive session"
+   },
+   {
+    "sid": "lesson-d4#6.2",
+    "en": "Write each category's criteria as its own prose paragraph, in the order security, correctness, style, and open each paragraph with a sentence naming the category it covers."
+   },
+   {
+    "sid": "lesson-d5#13.4",
+    "en": "Open the record with the most recent departure date on the route, then continue the claim review"
+   },
+   {
+    "sid": "mock04#31.5",
+    "en": "Set tool_choice to \"any\" so the subagent must use some tool on the opening turn, whichever one it prefers."
+   },
+   {
+    "sid": "lesson-d1#16.4",
+    "en": "Shorten it to an open goal such as \"Research the semiconductor shortage\" and let the subagent decide everything else"
+   },
+   {
+    "sid": "lesson-d2#31.3",
+    "en": "Use Read to open every file under the src directory up front, building a complete mental model of the whole codebase before looking for the login flow specifically."
+   }
+  ]
+ },
+ {
+  "lemma": "open-ended",
+  "kind": "vocab-core",
+  "surfaces": [
+   "open-ended"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "open-ended",
+   "word": "open-ended",
+   "pos": "형용사",
+   "ipa": "ˌoʊpən ˈendɪd",
+   "meaning": "개방형의 — 정해진 답·범위 없이 열려 있는"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#25.1",
+    "en": "For open-ended briefs like 'assess the competitive landscape for X', the coordinator runs a fixed three-step chain (search then summarize then format)."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:open-ended.0",
+    "en": "For open-ended briefs like 'assess the competitive landscape for X', the coordinator runs a fixed three-step chain ...",
+    "ko": "'assess the competitive landscape for X'(X의 경쟁 구도를 평가하라) 같은 개방형 요청에 대해 코디네이터는 고정된 3단계 체인을 실행합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "operation",
+  "kind": "vocab-core",
+  "surfaces": [
+   "operations",
+   "operation"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "operation",
+   "word": "operation",
+   "pos": "명사",
+   "ipa": "ˌɑːpəˈreɪʃn",
+   "meaning": "① 작업, 연산 ② 운영, 가동"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#11.2",
+    "en": "The server returns `isError: true` with generic text \"Operation failed.\""
+   },
+   {
+    "sid": "lesson-d3#19.2",
+    "en": "Plan mode has silently switched over to acceptEdits mode partway through this session, which is why operations proceed without prompts"
+   },
+   {
+    "sid": "sample01#17.4",
+    "en": "Add 'Always run fraud check before payment operations' to the system prompt"
+   },
+   {
+    "sid": "lesson-d2#7.1",
+    "en": "A reviewer objects: \"Anthropic says to consolidate related operations into fewer tools, so splitting makes selection worse.\""
+   },
+   {
+    "sid": "lesson-d3#19.3",
+    "en": "Plan mode inherently blocks all edits and does not require approval for read operations, as the mode's read-only guarantee makes approval prompts unnecessary."
+   },
+   {
+    "sid": "sample01#18.6",
+    "en": "`CLAUDE.md` rules override user instructions for git operations specifically"
+   },
+   {
+    "sid": "lesson-d2#8.0",
+    "en": "Your refund tool's handler catches every failure and returns `isError: true` with the text \"Operation failed\"."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:operation.0",
+    "en": "Add 'Always run fraud check before payment operations' to the system prompt",
+    "ko": "시스템 프롬프트에 \"결제 작업 전에는 항상 사기 검사를 실행하라\"를 추가한다"
+   }
+  ]
+ },
+ {
+  "lemma": "operator",
+  "kind": "new",
+  "surfaces": [
+   "operator"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#15.5",
+    "en": "Keep the schema to findings only, and write source failures to a separate operator log so the report stays clean"
+   }
+  ]
+ },
+ {
+  "lemma": "opposing counsel",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "opposing-counsel",
+   "word": "opposing counsel",
+   "pos": "명사구",
+   "ipa": "əˌpoʊzɪŋ ˈkaʊnsl",
+   "meaning": "상대측 변호인"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "ops",
+  "kind": "new",
+  "surfaces": [
+   "ops"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "sample01#2.1",
+    "en": "After 3 hours in production, ops notices some claims are stuck in infinite loops consuming thousands of tokens."
+   }
+  ]
+ },
+ {
+  "lemma": "optimal",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "optimal",
+   "word": "optimal",
+   "pos": "형용사",
+   "ipa": "ˈɑːptɪməl",
+   "meaning": "최적의"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:optimal.0",
+    "en": "...but the synthesis agent performs optimally under 50K tokens.",
+    "ko": "그런데 합성 에이전트는 50K 토큰 미만에서 최적으로 동작한다."
+   }
+  ]
+ },
+ {
+  "lemma": "option",
+  "kind": "new",
+  "surfaces": [
+   "option"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d1#40.2",
+    "en": "Which session option should the service use?"
+   },
+   {
+    "sid": "lesson-d5#8.1",
+    "en": "So the agent acknowledged the frustration and offered a human as an option."
+   },
+   {
+    "sid": "mock04#42.5",
+    "en": "Remove Grep from the agent's allowedTools so the MCP search tool becomes the only code search option it can use at all."
+   },
+   {
+    "sid": "lesson-d5#9.0",
+    "en": "A healthcare scheduling assistant follows a configured escalation policy: when a request is within the assistant's capability and the patient has not asked for a staff member, the assistant should acknowledge any expressed frustration, complete the request directly, and offer escalation to a staff member as an option rather than a requirement -- reserving mandatory escalation for requests it cannot complete, cases needing clinical judgment, or an explicit request for a human."
+   }
+  ]
+ },
+ {
+  "lemma": "optional",
+  "kind": "vocab-core",
+  "surfaces": [
+   "optional"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "optional",
+   "word": "optional",
+   "pos": "형용사",
+   "ipa": "ˈɑːpʃənl",
+   "meaning": "선택적인, 필수가 아닌"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#18.5",
+    "en": "Make `referring_physician` optional and allow null, so \"not in the report\" is a valid answer that downstream code can see"
+   },
+   {
+    "sid": "lesson-d5#15.4",
+    "en": "Give each topic a support level and an optional gap note that names the unavailable source, the reason it failed and what was tried"
+   },
+   {
+    "sid": "mock04#56.7",
+    "en": "Add an \"other\" value to the enum plus an optional document_type_detail string so novel types are captured instead of misclassified."
+   },
+   {
+    "sid": "selfcheck-d4-kor#24.2",
+    "en": "여러 번 시도했지만 스키마에 맞는 출력이 끝내 남지 않았다. 스키마를 단순화하거나, 정보가 없을 수 있는 필드를 optional로 바꾸는 것을 검토한다"
+   },
+   {
+    "sid": "lesson-d4#23.6",
+    "en": "Stop retrying, make `renewal_date` optional so the model can report that it is missing, and send the record to a person or supply the Master Agreement"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:optional.0",
+    "en": "Add an \"other\" value to the enum plus an optional document_type_detail string so novel types are captured instead of misclassified.",
+    "ko": "enum에 `\"other\"` 값과 선택적 `document_type_detail` 문자열을 추가해, 새로운 유형이 잘못 분류되지 않고 포착되게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "orchestration",
+  "kind": "vocab-core",
+  "surfaces": [
+   "orchestration",
+   "orchestrator",
+   "orchestrator-workers"
+  ],
+  "freq": 10,
+  "vocab": {
+   "id": "orchestration",
+   "word": "orchestration",
+   "pos": "명사",
+   "ipa": "ˌɔːrkɪˈstreɪʃn",
+   "meaning": "오케스트레이션 — 여러 에이전트·작업을 나누고 배분해 전체 흐름을 조율하는 것"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#15.1",
+    "en": "The architect proposes splitting it into five specialized subagents, each scoped to roughly 4 tools for its stage, coordinated by a lightweight orchestrator."
+   },
+   {
+    "sid": "mock04#25.3",
+    "en": "What orchestration change best fits this workload?"
+   },
+   {
+    "sid": "lesson-d1#32.4",
+    "en": "An orchestrator LLM that reads each spec and plans the writing, checking and translation subtasks for it"
+   },
+   {
+    "sid": "selfcheck-d1-kor#33.0",
+    "en": "Building effective agents에서 orchestrator-workers가 병렬화(sectioning)와 구별되는 핵심은?"
+   },
+   {
+    "sid": "lesson-d1#33.5",
+    "en": "Make extract, validate and format separate API calls that orchestration code sequences, with a check between validate and format"
+   },
+   {
+    "sid": "lesson-d2#15.6",
+    "en": "The orchestrator caches tool results across subagents, which eliminates the need for most subagents to make tool calls at all"
+   },
+   {
+    "sid": "lesson-d1#34.4",
+    "en": "An orchestrator agent that plans the summary and translation subtasks per transcript, then delegates them to workers"
+   },
+   {
+    "sid": "lesson-d1#36.2",
+    "en": "An orchestrator that spawns four subagents in parallel up front, one each for the API, the queue, the database and the payment service, and then merges their reports"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:orchestration.0",
+    "en": "What orchestration change best fits this workload?",
+    "ko": "이 작업에 가장 잘 맞는 오케스트레이션 변경은 무엇일까요?"
+   }
+  ]
+ },
+ {
+  "lemma": "organization",
+  "kind": "new",
+  "surfaces": [
+   "organization"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#3.3",
+    "en": "Deploy a `managed-settings.json` file to the system directory (e.g., `/etc/claude-code/` on Linux) using the organization's configuration management system, as it enforces policies that override developer and project settings."
+   }
+  ]
+ },
+ {
+  "lemma": "original",
+  "kind": "vocab-core",
+  "surfaces": [
+   "original",
+   "originally"
+  ],
+  "freq": 18,
+  "vocab": {
+   "id": "original",
+   "word": "original",
+   "pos": "형용사",
+   "ipa": "əˈrɪdʒənl",
+   "meaning": "원래의, 처음 그대로의"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#42.0",
+    "en": "While a session is resumed via --continue --fork-session to try a riskier approach, the architect notices that a permission the original session had approved with 'allow for this session' is being re-prompted in the new branch."
+   },
+   {
+    "sid": "lesson-d2#5.0",
+    "en": "A tool named `analyze_content` was originally built to summarize any pasted content, including emails and internal notes, but its description was never updated after a web-specific successor tool was introduced."
+   },
+   {
+    "sid": "lesson-d4#29.0",
+    "en": "A developer is assembling a batch of translation requests and needs to assign each one an identifier that the Message Batches API will accept and later use to correlate a result with its original request."
+   },
+   {
+    "sid": "lesson-d3#24.6",
+    "en": "Ask Claude to regenerate the whole migration script from the original schema description in a fresh session, so the null handling is written again from scratch"
+   },
+   {
+    "sid": "lesson-d5#34.3",
+    "en": "Re-run the original validation set every month"
+   },
+   {
+    "sid": "mock04#57.6",
+    "en": "Lower temperature to 0 and re-run the original prompt exactly once, expecting deterministic output that satisfies the rule."
+   },
+   {
+    "sid": "lesson-d2#6.0",
+    "en": "A tool named `analyze_content`, originally built for summarizing pasted text, has its description copied almost verbatim onto a newer tool, `analyze_document`, meant for uploaded PDFs."
+   },
+   {
+    "sid": "lesson-d1#11.3",
+    "en": "Fork the session once for each strategy, so each branch starts with the full analysis and the original session stays intact"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:original.0",
+    "en": "Lower temperature to 0 and re-run the original prompt exactly once...",
+    "ko": "temperature를 0으로 낮추고 원래 프롬프트를 정확히 한 번 다시 실행해..."
+   }
+  ]
+ },
+ {
+  "lemma": "originate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "originating"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "originate",
+   "word": "originate",
+   "pos": "동사",
+   "ipa": "əˈrɪdʒɪneɪt",
+   "meaning": "(~에서) 비롯되다, 처음 나오다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#34.5",
+    "en": "Preserve claim-to-source mappings through synthesis so each claim carries its originating sources into report generation."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:originate.0",
+    "en": "...so each claim carries its originating sources into report generation.",
+    "ko": "각 주장이 원래 출처를 달고 보고서 생성 단계까지 가게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "others",
+  "kind": "new",
+  "surfaces": [
+   "others"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "mock04#18.1",
+    "en": "During a 200-file framework migration carried out in one long session, logs show Claude re-migrating files it already converted and skipping others as the conversation grows."
+   },
+   {
+    "sid": "lesson-d4#8.0",
+    "en": "A team's code-review assistant prompt already spells out an exhaustive, itemized rubric for flagging issues, but reviewers still receive inconsistently formatted findings across runs: some list severity before location, others omit the suggested fix entirely."
+   },
+   {
+    "sid": "mock04#30.1",
+    "en": "The synthesis subagent is initialized with the full registry of 18 tools shared across the system (web_search, fetch_url, parse_pdf, extract_tables, generate_chart, render_report, and others)."
+   },
+   {
+    "sid": "mock04#16.4",
+    "en": "Run each of the three changes in its own fresh session so every edit stays cleanly isolated from the others"
+   }
+  ]
+ },
+ {
+  "lemma": "otherwise",
+  "kind": "new",
+  "surfaces": [
+   "otherwise"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#3.0",
+    "en": "A reviewer flags a docstring that says \"returns the cached value if present, otherwise fetches from the API,\" but the function under review always calls the API regardless of a cache."
+   }
+  ]
+ },
+ {
+  "lemma": "otpm",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "otpm",
+   "word": "OTPM",
+   "pos": "약어",
+   "ipa": "ˌoʊ.tiː.piːˈem",
+   "meaning": "분당 출력 토큰 한도 (Output Tokens Per Minute)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "outage",
+  "kind": "vocab-core",
+  "surfaces": [
+   "outages",
+   "outage"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "outage",
+   "word": "outage",
+   "pos": "명사",
+   "ipa": "ˈaʊtɪdʒ",
+   "meaning": "(서비스·시스템) 장애, 일시 중단"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#7.2",
+    "en": "Real accounts are being turned away during transient outages."
+   },
+   {
+    "sid": "lesson-d2#11.5",
+    "en": "Use `errorCategory: \"transient\"` with `isRetryable: true`; the deploy service refused the call as it does during an outage, so retrying with backoff should get through"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:outage.0",
+    "en": "Real accounts are being turned away during transient outages.",
+    "ko": "일시적인 장애 동안 실제 계정이 있는 고객들이 돌려보내지고 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "outbound",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "outbound",
+   "word": "outbound",
+   "pos": "형용사",
+   "ipa": "ˈaʊtbaʊnd",
+   "meaning": "밖으로 나가는, 송신의 (outbound request: 외부로 나가는 요청)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "outcome",
+  "kind": "vocab-core",
+  "surfaces": [
+   "outcome"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "outcome",
+   "word": "outcome",
+   "pos": "명사",
+   "ipa": "ˈaʊtkʌm",
+   "meaning": "결과, 성과"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#20.1",
+    "en": "Which earlier decision most likely caused this outcome?"
+   },
+   {
+    "sid": "lesson-d5#11.7",
+    "en": "Stop using either signal as a trigger: route on checkable conditions (customer asked for a human, no policy covers the request, no way forward), and track sentiment as an outcome from the start to the end of the conversation"
+   }
+  ]
+ },
+ {
+  "lemma": "outline",
+  "kind": "new",
+  "surfaces": [
+   "outline"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#15.0",
+    "en": "A single generalist agent handling an entire content pipeline (research, outline, draft, edit, publish) has 20 tools and shows declining tool-selection accuracy as more tools were added over time."
+   }
+  ]
+ },
+ {
+  "lemma": "output",
+  "kind": "new",
+  "surfaces": [
+   "output",
+   "outputs"
+  ],
+  "freq": 90,
+  "sentences": [
+   {
+    "sid": "lesson-d1#18.1",
+    "en": "The synthesis subagent's output ignores nearly all of the researcher's findings and instead re-derives generic conclusions from scratch."
+   },
+   {
+    "sid": "lesson-d3#30.1",
+    "en": "The first run hangs until the job times out, with no output ever written to the log."
+   },
+   {
+    "sid": "lesson-d4#10.0",
+    "en": "A team built a classification prompt with twenty exact input-output pairs, one for every edge case they had personally encountered in their historical data."
+   },
+   {
+    "sid": "lesson-d5#15.1",
+    "en": "How should the coordinator's synthesis output schema handle each topic so the final report stays trustworthy?"
+   },
+   {
+    "sid": "mock04#12.2",
+    "en": "Developers notice that after running it, the main session is cluttered with raw output and Claude's subsequent answers in that session degrade in quality."
+   },
+   {
+    "sid": "sample01#20.0",
+    "en": "Which approach produces the most reliable structured output from Claude?"
+   },
+   {
+    "sid": "lesson-d2#26.5",
+    "en": "Run the test suite through Bash and treat any component missing from the output as untested"
+   },
+   {
+    "sid": "selfcheck-d4-kor#18.0",
+    "en": "`output_config.format`으로 structured outputs를 켰다. 그래도 응답이 스키마와 맞지 않을 수 있는 경우는?"
+   }
+  ]
+ },
+ {
+  "lemma": "outside",
+  "kind": "new",
+  "surfaces": [
+   "outside"
+  ],
+  "freq": 7,
+  "sentences": [
+   {
+    "sid": "lesson-d2#18.2",
+    "en": "The team reports agents occasionally reaching for tools clearly outside their remit, like the QA agent invoking a deploy tool."
+   },
+   {
+    "sid": "lesson-d3#8.6",
+    "en": "The skill was saved under ~/.claude/skills/lint-report/SKILL.md, which lives outside the repository and was never version-controlled."
+   },
+   {
+    "sid": "lesson-d4#3.4",
+    "en": "Skip it, since caching is an internal detail rather than part of the function's contract, so the docstring's mention of it falls outside the criterion."
+   },
+   {
+    "sid": "mock04#14.4",
+    "en": "Add a stronger system-prompt instruction explicitly forbidding edits to any file that lives outside the `docs/` directory"
+   },
+   {
+    "sid": "mock04#14.7",
+    "en": "Add a global PreToolUse hook that inspects every Edit across all sessions and rejects any write outside the `docs/` folder"
+   },
+   {
+    "sid": "mock04#56.6",
+    "en": "Brainstorm and add every conceivable document type to the enum so that no future document falls outside it."
+   },
+   {
+    "sid": "mock04#9.4",
+    "en": "Keep a persistent case-facts block (order id, amount, dates) outside the summary and re-inject it verbatim each turn."
+   }
+  ]
+ },
+ {
+  "lemma": "outweigh",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "outweigh",
+   "word": "outweigh",
+   "pos": "동사",
+   "ipa": "ˌaʊtˈweɪ",
+   "meaning": "~보다 더 크다, ~보다 우선하다"
+  },
+  "sentences": []
+ }
+]

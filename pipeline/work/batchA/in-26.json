@@ -1,0 +1,1315 @@
+[
+ {
+  "lemma": "migrate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "migration",
+   "re-migrating",
+   "migrated",
+   "migrating"
+  ],
+  "freq": 18,
+  "vocab": {
+   "id": "migrate",
+   "word": "migrate",
+   "pos": "동사",
+   "ipa": "ˈmaɪɡreɪt",
+   "meaning": "(새 환경·형식으로) 옮기다, 마이그레이션하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.0",
+    "en": "An architect is defining a \"database-migration\" AgentDefinition with a long prompt field describing SQL best practices, rollback strategy, and data integrity checks."
+   },
+   {
+    "sid": "lesson-d3#18.0",
+    "en": "Midway through planning a multi-phase migration, Claude has to find every usage pattern of the old library across hundreds of files before it can propose an approach."
+   },
+   {
+    "sid": "mock04#18.1",
+    "en": "During a 200-file framework migration carried out in one long session, logs show Claude re-migrating files it already converted and skipping others as the conversation grows."
+   },
+   {
+    "sid": "lesson-d1#17.1",
+    "en": "Separately, each time the coordinator invokes this subagent it supplies a different per-call prompt describing the specific table and migration at hand."
+   },
+   {
+    "sid": "lesson-d3#20.0",
+    "en": "A team lead reviewing a completed library migration finds that early file conversions used one pattern, while later files in the same migration used a different, incompatible pattern, forcing a second pass to reconcile them."
+   },
+   {
+    "sid": "mock04#18.2",
+    "en": "What technique best keeps the migration on track?"
+   },
+   {
+    "sid": "lesson-d3#24.0",
+    "en": "A data engineer is iterating with Claude Code on a migration script that transforms legacy customer records into a new schema."
+   },
+   {
+    "sid": "mock04#37.1",
+    "en": "A coordinator agent is asked to produce a migration plan for a 400,000-line legacy billing monolith."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:migrate.0",
+    "en": "...logs show Claude re-migrating files it already converted and skipping others as the conversation grows.",
+    "ko": "대화가 길어질수록 Claude가 이미 변환한 파일을 다시 마이그레이션하고 다른 파일은 건너뛰는 모습이 로그에 나타납니다."
+   }
+  ]
+ },
+ {
+  "lemma": "milligram",
+  "kind": "new",
+  "surfaces": [
+   "milligrams"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#13.5",
+    "en": "Add an instruction to convert every amount to a standard unit such as milligrams, so each dose field always holds a number"
+   }
+  ]
+ },
+ {
+  "lemma": "million",
+  "kind": "new",
+  "surfaces": [
+   "million"
+  ],
+  "freq": 7,
+  "sentences": [
+   {
+    "sid": "lesson-d5#38.0",
+    "en": "During a competitive-intelligence synthesis, two subagents report different figures for a competitor's annual revenue: one cites a press release stating $420 million, the other cites an analyst report stating $460 million."
+   },
+   {
+    "sid": "lesson-d5#38.3",
+    "en": "Report $420 million (press release) and $460 million (analyst report) for revenue, flagged as conflicting"
+   },
+   {
+    "sid": "lesson-d5#38.4",
+    "en": "Report $460 million (analyst report) for revenue, and leave the press release figure out of the final report"
+   },
+   {
+    "sid": "lesson-d5#38.5",
+    "en": "Report $420 million (press release) for revenue, and leave the analyst figure out of the final report"
+   },
+   {
+    "sid": "lesson-d5#38.6",
+    "en": "Report $440 million (average of the two figures) for revenue, and cite both sources as its basis"
+   }
+  ]
+ },
+ {
+  "lemma": "minimum",
+  "kind": "vocab-core",
+  "surfaces": [
+   "minimum"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "minimum",
+   "word": "minimum",
+   "pos": "명사·형용사",
+   "ipa": "ˈmɪnɪməm",
+   "meaning": "최소(의), 최솟값 — minimum viable 최소한으로 필요한"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#8.2",
+    "en": "What is the minimum viable observability implementation?"
+   },
+   {
+    "sid": "mock04#29.6",
+    "en": "Add a minimum iteration count that the coordinator must reach before it is allowed to stop looping"
+   },
+   {
+    "sid": "sample01-kor#8.0",
+    "en": "운영 중인 에이전트 파이프라인이 가끔 잘못된 결과를 냅니다. 엔지니어링 팀은 어떤 도구가 어떤 순서로, 어떤 입력으로 호출됐는지, 모델의 중간 추론이 무엇이었는지 볼 수 없어서 버그를 재현하지 못합니다. 최소한으로 갖춰야 할(minimum viable) 관측성 구현은 무엇일까요?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:minimum.0",
+    "en": "What is the minimum viable observability implementation?",
+    "ko": "최소한으로 필요한(minimum viable) 관측성 구현은?"
+   }
+  ]
+ },
+ {
+  "lemma": "minor",
+  "kind": "vocab-core",
+  "surfaces": [
+   "minor"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "minor",
+   "word": "minor",
+   "pos": "형용사",
+   "ipa": "ˈmaɪnər",
+   "meaning": "사소한, 중요하지 않은 (minor version: 부 버전)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#1.5",
+    "en": "\"Only report important issues, and skip anything that seems minor.\""
+   },
+   {
+    "sid": "selfcheck-d4-kor#3.0",
+    "en": "같은 종류의 문제(예외를 삼키는 빈 catch 블록)가 어떤 실행에서는 major, 다른 실행에서는 minor로 분류된다. 가장 효과적인 개선은?"
+   },
+   {
+    "sid": "selfcheck-d3-kor#35.2",
+    "en": "severity가 minor인 지적을 모두 숨긴다"
+   }
+  ]
+ },
+ {
+  "lemma": "mint",
+  "kind": "vocab-core",
+  "surfaces": [
+   "minted"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "mint",
+   "word": "mint",
+   "pos": "동사",
+   "ipa": "mɪnt",
+   "meaning": "(토큰 등을) 새로 발급하다, 찍어 내다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#24.0",
+    "en": "An internal MCP server requires a Kerberos-derived token that must be freshly minted for every connection, and no OAuth authorization server is involved."
+   }
+  ]
+ },
+ {
+  "lemma": "minute",
+  "kind": "new",
+  "surfaces": [
+   "minutes"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d1#15.0",
+    "en": "Style-checker, security-scanner and test-coverage reviews are independent of each other, and each takes about ten minutes."
+   },
+   {
+    "sid": "lesson-d1#15.1",
+    "en": "Which coordinator behaviour gets all three results back in roughly ten minutes instead of thirty?"
+   }
+  ]
+ },
+ {
+  "lemma": "mirror",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "mirror",
+   "word": "mirror",
+   "pos": "동사·명사",
+   "ipa": "ˈmɪrər",
+   "meaning": "그대로 반영하다, 똑같이 따르다 / 거울, 미러"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "misclassify",
+  "kind": "vocab-core",
+  "surfaces": [
+   "misclassifies",
+   "misclassified"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "misclassify",
+   "word": "misclassify",
+   "pos": "동사",
+   "ipa": "ˌmɪsˈklæsɪfaɪ",
+   "meaning": "잘못 분류하다"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#14.0",
+    "en": "A support ticket classifier consistently misclassifies tickets."
+   },
+   {
+    "sid": "lesson-d4#10.4",
+    "en": "Add a new input-output pair whenever a customer input is misclassified, extending the list over time"
+   },
+   {
+    "sid": "mock04#56.7",
+    "en": "Add an \"other\" value to the enum plus an optional document_type_detail string so novel types are captured instead of misclassified."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:misclassify.0",
+    "en": "A support ticket classifier consistently misclassifies tickets.",
+    "ko": "지원 티켓 분류기가 계속 티켓을 잘못 분류합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "misconfigured",
+  "kind": "vocab-core",
+  "surfaces": [
+   "misconfigured"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "misconfigured",
+   "word": "misconfigured",
+   "pos": "형용사",
+   "ipa": "ˌmɪskənˈfɪɡjərd",
+   "meaning": "설정이 잘못된"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#54.4",
+    "en": "The schema is misconfigured; adding \"additionalProperties\": false will force the line-item amounts to reconcile with the stated invoice total."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:misconfigured.0",
+    "en": "The schema is misconfigured; adding \"additionalProperties\": false will force the line-item amounts to reconcile with the stated invoice total.",
+    "ko": "스키마 설정이 잘못된 것이며, `\"additionalProperties\": false` 를 추가하면 품목 금액이 명시된 인보이스 총액과 맞도록 강제된다"
+   }
+  ]
+ },
+ {
+  "lemma": "misinterpret",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "misinterpret",
+   "word": "misinterpret",
+   "pos": "동사",
+   "ipa": "ˌmɪsɪnˈtɜːrprɪt",
+   "meaning": "잘못 해석하다, 오해하다"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:misinterpret.0",
+    "en": "Production logs reveal that the agent misinterprets data from your MCP tools.",
+    "ko": "운영 로그를 보면 에이전트가 MCP 도구의 데이터를 잘못 해석한다."
+   }
+  ]
+ },
+ {
+  "lemma": "mislabel",
+  "kind": "vocab-core",
+  "surfaces": [
+   "mislabeling",
+   "mislabeled"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "mislabel",
+   "word": "mislabel",
+   "pos": "동사",
+   "ipa": "ˌmɪsˈleɪbl",
+   "meaning": "라벨을 잘못 붙이다, 잘못 분류하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#12.2",
+    "en": "After deployment, the model performs well on similar short English emails but starts mislabeling longer documents and documents in other languages that it previously handled correctly under the old, example-free prompt."
+   },
+   {
+    "sid": "lesson-d4#20.1",
+    "en": "An audit later finds several instances where deposits were mislabeled as withdrawals, even though every amount and transaction_type field is present and passes schema validation."
+   },
+   {
+    "sid": "lesson-d4#20.3",
+    "en": "Schema validation confirms that required fields exist and have the correct types but it cannot verify that the values are semantically correct relative to the source document, so mislabeling errors like this can still occur."
+   },
+   {
+    "sid": "lesson-d4#20.4",
+    "en": "This indicates that the input_schema was likely malformed, since a correctly constructed JSON schema can apply constraints that verify the relationship between amount and transaction_type, preventing such semantic mislabeling."
+   },
+   {
+    "sid": "lesson-d4#20.5",
+    "en": "The mislabeling proves that without a tool_choice that forces a specific tool invocation, the model may output transaction_type labels that diverge from the source document's content, leading to semantic inaccuracies in the extracted data."
+   },
+   {
+    "sid": "lesson-d4#20.6",
+    "en": "This is expected only when strict mode is disabled, because strict mode enforces that field values must satisfy the schema's semantic rules, such as ensuring transaction_type accurately reflects the amount sign, thereby preventing mislabeling."
+   }
+  ]
+ },
+ {
+  "lemma": "misleading",
+  "kind": "vocab-core",
+  "surfaces": [
+   "misleads",
+   "misleading"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "misleading",
+   "word": "misleading",
+   "pos": "형용사",
+   "ipa": "ˌmɪsˈliːdɪŋ",
+   "meaning": "오해를 부르는, 잘못 이끄는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#1.4",
+    "en": "\"Report any bugs that could cause incorrect behavior, a test failure, or a misleading result; only omit nits like pure style or naming preferences.\""
+   },
+   {
+    "sid": "lesson-d2#10.4",
+    "en": "The flaw is that `isRetryable` should be `false`. A missing required argument is a validation error, which means the request is malformed. Retrying the same request will not succeed; the agent must correct the input before retrying. Setting `isRetryable` to `true` misleads the agent into thinking the same request can be retried as-is."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:misleading.0",
+    "en": "Add few-shot examples of misleading comments to help the model recognize similar patterns",
+    "ko": "모델이 비슷한 패턴을 알아보도록, 오해를 부르는 주석의 퓨샷 예시를 추가한다."
+   }
+  ]
+ },
+ {
+  "lemma": "mismatch",
+  "kind": "vocab-core",
+  "surfaces": [
+   "mismatches",
+   "mismatch"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "mismatch",
+   "word": "mismatch",
+   "pos": "명사·동사",
+   "ipa": "ˈmɪsmætʃ",
+   "meaning": "불일치, 어긋남 / (서로) 맞지 않다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#27.2",
+    "en": "Report each failure sequentially in its own message: first address the currency-formatting mismatch, and once confirmed fixed, the filename extension issue, because the two problems are independent."
+   },
+   {
+    "sid": "mock04#54.5",
+    "en": "Schema enforcement removes syntax and type errors but not semantic ones, so a downstream arithmetic check must flag or retry mismatches."
+   },
+   {
+    "sid": "lesson-d3#27.3",
+    "en": "Combine both failures into a single message that shows the full test run output, noting that the currency-formatting mismatch and the filename extension omission are unrelated defects, and ask Claude to fix both."
+   },
+   {
+    "sid": "lesson-d3#27.4",
+    "en": "Withhold the filename extension failure and report only the currency-formatting mismatch as the primary defect found first, deferring the secondary extension issue to avoid distracting Claude from the more critical formatting fix."
+   },
+   {
+    "sid": "lesson-d3#27.5",
+    "en": "Ask Claude to evaluate the test results and fix whichever failure appears more severe first, relying on its internal judgment of the impact on report correctness without stating the exact currency mismatch or missing extension details."
+   },
+   {
+    "sid": "lesson-d3#27.0",
+    "en": "A test run against a newly generated report-export module in Claude Code produces two failures: a currency-formatting mismatch in the summary totals and a completely unrelated failure where the export filename generator omits the file extension on Windows paths."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:mismatch.0",
+    "en": "...so a downstream arithmetic check must flag or retry mismatches.",
+    "ko": "다운스트림 산술 검사로 불일치를 표시하거나 재시도해야 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "misnamed",
+  "kind": "vocab-core",
+  "surfaces": [
+   "misnamed"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "misnamed",
+   "word": "misnamed",
+   "pos": "형용사",
+   "ipa": "ˌmɪsˈneɪmd",
+   "meaning": "이름이 잘못 붙은"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#15.1",
+    "en": "A shared `/scaffold-component` skill expects a component-name argument, but telemetry shows teammates invoke it with no argument or a malformed one about a third of the time, producing empty or misnamed scaffolds."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:misnamed.0",
+    "en": "...teammates invoke it with no argument or a malformed one about a third of the time, producing empty or misnamed scaffolds.",
+    "ko": "팀원들이 약 3분의 1의 경우 인자 없이 또는 잘못된 형식의 인자로 호출해, 비어 있거나 이름이 잘못된 스캐폴드가 만들어집니다."
+   }
+  ]
+ },
+ {
+  "lemma": "misplace",
+  "kind": "new",
+  "surfaces": [
+   "misplace"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#19.4",
+    "en": "Mark more fields as required so Claude can't skip or misplace any values"
+   }
+  ]
+ },
+ {
+  "lemma": "misread",
+  "kind": "vocab-core",
+  "surfaces": [
+   "misreads"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "misread",
+   "word": "misread",
+   "pos": "동사",
+   "ipa": "ˌmɪsˈriːd",
+   "meaning": "잘못 읽다, 잘못 해석하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#4.2",
+    "en": "Logs show the model occasionally misreads these heterogeneous fields, e.g., treating a refund amount in the wrong units."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:misread.0",
+    "en": "Logs show the model occasionally misreads these heterogeneous fields, e.g., treating a refund amount in the wrong units.",
+    "ko": "로그를 보면 모델이 이런 이질적인 필드를 가끔 잘못 읽어, 예를 들어 환불 금액을 잘못된 단위로 해석합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "misuse",
+  "kind": "vocab-core",
+  "surfaces": [
+   "misused"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "misuse",
+   "word": "misuse",
+   "pos": "명사·동사",
+   "ipa": "ˌmɪsˈjuːs",
+   "meaning": "오용(하다), 악용(하다)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#37.1",
+    "en": "You need a review that catches local bugs and also bugs where a value is misused after it crosses a file boundary."
+   }
+  ]
+ },
+ {
+  "lemma": "mitigation",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "mitigation",
+   "word": "mitigation",
+   "pos": "명사",
+   "ipa": "ˌmɪtɪˈɡeɪʃn",
+   "meaning": "완화(책) — 위험·피해를 줄이는 조치 (mitigate: 완화하다)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "mix",
+  "kind": "new",
+  "surfaces": [
+   "mixed",
+   "mix"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d4#4.0",
+    "en": "In a legacy module, most functions use mixed old naming styles."
+   },
+   {
+    "sid": "mock04#32.1",
+    "en": "The document-analysis subagent handles mixed inputs: some are PDFs requiring parse_pdf, and some are already plain-text snippets that need no tool at all."
+   },
+   {
+    "sid": "lesson-d4#17.4",
+    "en": "`tool_choice: {\"type\": \"any\"}`, because `any` allows Claude to freely mix natural-language commentary with the forced tool call in the same response"
+   }
+  ]
+ },
+ {
+  "lemma": "mode",
+  "kind": "new",
+  "surfaces": [
+   "mode",
+   "modes"
+  ],
+  "freq": 32,
+  "sentences": [
+   {
+    "sid": "lesson-d3#19.0",
+    "en": "While in plan mode, an architect notices that Claude keeps reading files and running read-only search commands without prompting for approval on each one, even though no edits have occurred."
+   },
+   {
+    "sid": "lesson-d5#3.2",
+    "en": "Which practice best addresses this failure mode going forward?"
+   },
+   {
+    "sid": "lesson-d4#18.4",
+    "en": "Turn off strict mode on the tool so Claude is free to leave the required field out when the report lacks it"
+   },
+   {
+    "sid": "mock04#14.6",
+    "en": "Require the skill to run in plan mode every time so a human reviews and approves each proposed action before it executes"
+   },
+   {
+    "sid": "sample01#14.7",
+    "en": "Switch to structured JSON output mode"
+   },
+   {
+    "sid": "selfcheck-d2-kor#4.0",
+    "en": "`analyze(file_id, mode)` 도구 하나가 mode 값에 따라 OCR 텍스트, 요약, 개인정보 탐지 결과를 서로 다른 JSON 모양으로 돌려준다."
+   },
+   {
+    "sid": "mock04-kor#16.2",
+    "en": "plan mode를 켜고 세 변경을 하나씩 순서대로 승인하며, 다음 변경으로 넘어가기 전에 각 계획을 검토한다."
+   },
+   {
+    "sid": "lesson-d5#34.1",
+    "en": "Which ongoing practice best measures their error rate and surfaces new failure modes?"
+   }
+  ]
+ },
+ {
+  "lemma": "model",
+  "kind": "new",
+  "surfaces": [
+   "model",
+   "models"
+  ],
+  "freq": 142,
+  "sentences": [
+   {
+    "sid": "lesson-d1#9.1",
+    "en": "The synthesized report ends up missing pricing models, regulatory incentives, and major competitors entirely."
+   },
+   {
+    "sid": "lesson-d2#19.1",
+    "en": "The enrichment tools depend on fields that only extract_metadata produces, and in early tests the model sometimes calls an enrichment tool first with guessed values."
+   },
+   {
+    "sid": "lesson-d3#21.0",
+    "en": "A platform team is restructuring a monolith into three microservices, touching shared data models, service boundaries, and deployment topology, with several viable ways to split the code."
+   },
+   {
+    "sid": "lesson-d4#10.2",
+    "en": "What change would best help the model generalize its judgment to these novel-but-similar inputs?"
+   },
+   {
+    "sid": "lesson-d5#11.0",
+    "en": "A support team's prototype routes a conversation to a human whenever its sentiment score turns negative or the model rates its own confidence below 0.6."
+   },
+   {
+    "sid": "mock04#4.2",
+    "en": "Logs show the model occasionally misreads these heterogeneous fields, e.g., treating a refund amount in the wrong units."
+   },
+   {
+    "sid": "sample01#19.1",
+    "en": "In testing, the model calls `get_user_info` when it should call `fetch_account_details` and vice versa."
+   },
+   {
+    "sid": "lesson-d2#2.1",
+    "en": "The model routes roughly half of matching tasks to the wrong tool."
+   }
+  ]
+ },
+ {
+  "lemma": "moderation",
+  "kind": "vocab-core",
+  "surfaces": [
+   "moderation"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "moderation",
+   "word": "moderation",
+   "pos": "명사",
+   "ipa": "ˌmɑːdəˈreɪʃn",
+   "meaning": "① (콘텐츠) 검수, 모더레이션 ② 절제, 적당함"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#50.6",
+    "en": "Route every comment through a human moderation queue before it is posted, so a reviewer approves each one first"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:moderation.0",
+    "en": "Route every comment through a human moderation queue before it is posted, so a reviewer approves each one first",
+    "ko": "모든 코멘트를 게시 전에 사람 검수 대기열로 보내, 리뷰어가 하나씩 먼저 승인하게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "modification",
+  "kind": "new",
+  "surfaces": [
+   "modification"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#31.5",
+    "en": "Use Glob to list every file in the repository sorted by modification time, then read the twenty most recently modified files on the assumption they relate to login."
+   }
+  ]
+ },
+ {
+  "lemma": "modify",
+  "kind": "new",
+  "surfaces": [
+   "modify",
+   "modified"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d1#12.0",
+    "en": "A team is building a \"doc-reviewer\" subagent that should be able to read and comment on documentation but must never be able to modify files, even accidentally."
+   },
+   {
+    "sid": "lesson-d2#28.6",
+    "en": "Read the whole file, make the change in the full contents, then Write the complete modified file back"
+   },
+   {
+    "sid": "lesson-d2#30.5",
+    "en": "Glob for the most recently modified files and Read those, since recent changes usually touch the active flow"
+   },
+   {
+    "sid": "lesson-d1#24.7",
+    "en": "Modify the PreToolUse hook to inspect the explicit verification result included in the `process_refund` tool call parameters, confirming that the human review expressly passed, instead of relying on a separate boolean flag that can be set incorrectly."
+   },
+   {
+    "sid": "lesson-d2#31.5",
+    "en": "Use Glob to list every file in the repository sorted by modification time, then read the twenty most recently modified files on the assumption they relate to login."
+   }
+  ]
+ },
+ {
+  "lemma": "module",
+  "kind": "vocab-core",
+  "surfaces": [
+   "modules",
+   "module"
+  ],
+  "freq": 14,
+  "vocab": {
+   "id": "module",
+   "word": "module",
+   "pos": "명사",
+   "ipa": "ˈmɑːdʒuːl",
+   "meaning": "모듈 — 코드를 기능 단위로 나눈 묶음"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#26.0",
+    "en": "In a checkout module, orderTotal() calls applyDiscount() and addTax() internally."
+   },
+   {
+    "sid": "lesson-d4#37.0",
+    "en": "A refactor touches 300 files, and several modules pass data to one another."
+   },
+   {
+    "sid": "lesson-d5#21.0",
+    "en": "Phase-2 subagents, each tracing a different refund-related flow, keep spending most of their tokens re-mapping the modules that phase 1 already mapped."
+   },
+   {
+    "sid": "mock04#38.1",
+    "en": "The coordinator spawns a subagent with a single Task call to trace how a payment webhook propagates through the `orders` module."
+   },
+   {
+    "sid": "lesson-d4#4.0",
+    "en": "In a legacy module, most functions use mixed old naming styles."
+   },
+   {
+    "sid": "lesson-d5#21.1",
+    "en": "Their module maps also differ slightly from one another."
+   },
+   {
+    "sid": "mock04#37.5",
+    "en": "Run a mapping pass enumerating the repository's real modules, then dynamically spawn one subagent per discovered component"
+   },
+   {
+    "sid": "lesson-d3#27.0",
+    "en": "A test run against a newly generated report-export module in Claude Code produces two failures: a currency-formatting mismatch in the summary totals and a completely unrelated failure where the export filename generator omits the file extension on Windows paths."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:module.0",
+    "en": "Run a mapping pass enumerating the repository's real modules, then dynamically spawn one subagent per discovered component",
+    "ko": "저장소의 실제 모듈을 열거하는 매핑 단계를 먼저 실행한 뒤, 발견된 구성 요소마다 서브에이전트를 하나씩 동적으로 생성한다"
+   }
+  ]
+ },
+ {
+  "lemma": "moment",
+  "kind": "new",
+  "surfaces": [
+   "moment"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d3#5.3",
+    "en": "At the moment the session starts, which files are loaded into context?"
+   },
+   {
+    "sid": "mock04#2.2",
+    "en": "What should the agent do at the moment of escalation to fix this?"
+   }
+  ]
+ },
+ {
+  "lemma": "monday",
+  "kind": "new",
+  "surfaces": [
+   "monday"
+  ],
+  "freq": 2,
+  "maybeProper": true,
+  "sentences": [
+   {
+    "sid": "lesson-d3#1.0",
+    "en": "A developer notices that in Monday's session Claude followed the package's error-handling convention, but in Tuesday's session on the same repo it ignored it."
+   },
+   {
+    "sid": "lesson-d4#31.2",
+    "en": "A weekly compliance audit that summarizes the past week's access logs for a Monday review meeting"
+   }
+  ]
+ },
+ {
+  "lemma": "monolithic",
+  "kind": "vocab-core",
+  "surfaces": [
+   "monolith"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "monolithic",
+   "word": "monolithic",
+   "pos": "형용사",
+   "ipa": "ˌmɑːnəˈlɪθɪk",
+   "meaning": "(나뉘지 않은) 한 덩어리의, 거대한 단일 구조의"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#21.0",
+    "en": "A platform team is restructuring a monolith into three microservices, touching shared data models, service boundaries, and deployment topology, with several viable ways to split the code."
+   },
+   {
+    "sid": "mock04#37.1",
+    "en": "A coordinator agent is asked to produce a migration plan for a 400,000-line legacy billing monolith."
+   },
+   {
+    "sid": "mock04#37.8",
+    "en": "Give the coordinator a larger context window so that the entire monolith fits inside one single prompt for analysis"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:monolithic.0",
+    "en": "You've been assigned to restructure the team's monolithic application into microservices.",
+    "ko": "팀의 모놀리식 애플리케이션을 마이크로서비스로 재구성하는 일을 맡았다."
+   }
+  ]
+ },
+ {
+  "lemma": "monorepo",
+  "kind": "vocab-core",
+  "surfaces": [
+   "monorepo"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "monorepo",
+   "word": "monorepo",
+   "pos": "명사",
+   "ipa": "ˈmɑːnoʊriːpoʊ",
+   "meaning": "모노레포 — 여러 프로젝트를 한 저장소에 모아 관리하는 방식(저장소)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#35.0",
+    "en": "A reviewer is designing an agentic code review for a pull request that touches 40 files across a monorepo."
+   },
+   {
+    "sid": "lesson-d5#27.0",
+    "en": "An architect has been running a single Claude Code session for several hours exploring a large monorepo."
+   },
+   {
+    "sid": "mock04#19.1",
+    "en": "To rename a widely-used internal API, Claude must first locate every call site across a large monorepo."
+   },
+   {
+    "sid": "mock04#42.1",
+    "en": "The team added a code-intelligence MCP server that does semantic, cross-file symbol search over an indexed monorepo."
+   },
+   {
+    "sid": "mock04#42.7",
+    "en": "Add a CLAUDE.md rule instructing the agent to never use Grep for any code search anywhere in the monorepo, whatever the task is."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:monorepo.0",
+    "en": "...Claude must first locate every call site across a large monorepo.",
+    "ko": "Claude가 먼저 대형 모노레포 전체에서 모든 호출 지점을 찾아야 합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "month",
+  "kind": "new",
+  "surfaces": [
+   "months",
+   "month"
+  ],
+  "freq": 6,
+  "sentences": [
+   {
+    "sid": "lesson-d4#25.0",
+    "en": "Over two months, developers have dismissed 40% of a security-review bot's findings."
+   },
+   {
+    "sid": "lesson-d5#39.2",
+    "en": "On review, the two reports were published fourteen months apart."
+   },
+   {
+    "sid": "lesson-d5#40.1",
+    "en": "The coordinator initially treats this as a contradiction requiring reconciliation, but on closer inspection the two figures come from reports published fourteen months apart."
+   },
+   {
+    "sid": "lesson-d5#34.3",
+    "en": "Re-run the original validation set every month"
+   },
+   {
+    "sid": "lesson-d5#40.4",
+    "en": "Have each subagent replace each figure it extracts with a twelve-month average before passing it to the coordinator"
+   },
+   {
+    "sid": "lesson-d5#3.1",
+    "en": "After the third summarization pass, the running summary reads \"the customer wants a refund soon and mentioned an order from last month,\" even though the original messages contained an exact order number, a refund amount of $214.88, and a customer-stated deadline of the 15th."
+   }
+  ]
+ },
+ {
+  "lemma": "morning",
+  "kind": "new",
+  "surfaces": [
+   "morning"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d1#39.1",
+    "en": "This morning, a teammate wants the architect to pick the investigation back up with full context of everything already read and concluded, without hunting through the interactive session picker."
+   },
+   {
+    "sid": "lesson-d4#31.3",
+    "en": "Nightly regression-test generation for 40,000 modules, which engineers review the next morning"
+   }
+  ]
+ },
+ {
+  "lemma": "move",
+  "kind": "new",
+  "surfaces": [
+   "move",
+   "moved",
+   "moving",
+   "moves"
+  ],
+  "freq": 32,
+  "sentences": [
+   {
+    "sid": "lesson-d3#4.0",
+    "en": "To reduce the context used at launch, a team moves the frontend and database sections of its 300-line root CLAUDE.md into docs/frontend.md and docs/db.md."
+   },
+   {
+    "sid": "lesson-d4#31.0",
+    "en": "Four teams want to move their Claude workloads to the Message Batches API to get the 50% discount."
+   },
+   {
+    "sid": "mock04#39.2",
+    "en": "Since then a teammate moved several files and renamed a package."
+   },
+   {
+    "sid": "lesson-d1#19.4",
+    "en": "Move the agent to a larger, more capable model that follows instructions more reliably"
+   },
+   {
+    "sid": "lesson-d2#1.3",
+    "en": "Move the intended tool to the first position in the tools array"
+   },
+   {
+    "sid": "lesson-d5#25.7",
+    "en": "Move the session to a larger model so it can recall the details from earlier in the transcript"
+   },
+   {
+    "sid": "lesson-d4#33.1",
+    "en": "To get the 50% discount, the team wants to move the pipeline to the Message Batches API."
+   },
+   {
+    "sid": "lesson-d1#28.4",
+    "en": "Move the message into the top-level systemMessage field so the agent sees a clearer explanation."
+   }
+  ]
+ },
+ {
+  "lemma": "multi",
+  "kind": "new",
+  "surfaces": [
+   "multi"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#18.0",
+    "en": "Midway through planning a multi-phase migration, Claude has to find every usage pattern of the old library across hundreds of files before it can propose an approach."
+   }
+  ]
+ },
+ {
+  "lemma": "multi-agent",
+  "kind": "vocab-core",
+  "surfaces": [
+   "multi-agent"
+  ],
+  "freq": 18,
+  "vocab": {
+   "id": "multi-agent",
+   "word": "multi-agent",
+   "pos": "형용사",
+   "ipa": "ˌmʌlti ˈeɪdʒənt",
+   "meaning": "멀티 에이전트의 — 여러 에이전트가 역할을 나눠 협업하는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#16.0",
+    "en": "In a multi-agent pipeline, every subagent shares the same tool set."
+   },
+   {
+    "sid": "mock04#22.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "sample01#10.0",
+    "en": "A multi-agent system has a hub agent that spawns specialist subagents."
+   },
+   {
+    "sid": "mock04#23.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#24.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#25.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#26.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#27.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:multi-agent.0",
+    "en": "A multi-agent system has a hub agent that spawns specialist subagents.",
+    "ko": "허브 에이전트가 전문 서브에이전트들을 생성하는 멀티 에이전트 시스템이 있습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "multi-hour",
+  "kind": "vocab-core",
+  "surfaces": [
+   "multi-hour"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "multi-hour",
+   "word": "multi-hour",
+   "pos": "형용사",
+   "ipa": "ˌmʌlti ˈaʊər",
+   "meaning": "몇 시간에 걸친"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#25.0",
+    "en": "During a multi-hour exploration, the agent wrote to NOTES.md that OrderService extends TransactionalBase and has a distinctive retry mechanism."
+   },
+   {
+    "sid": "mock04#20.1",
+    "en": "Midway through a coherent multi-hour refactor, the session approaches its context limit."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:multi-hour.0",
+    "en": "Midway through a coherent multi-hour refactor, the session approaches its context limit.",
+    "ko": "일관된 흐름으로 몇 시간째 진행 중인 리팩터링 도중 세션이 컨텍스트 한도에 가까워졌습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "multi-step",
+  "kind": "vocab-core",
+  "surfaces": [
+   "multi-step"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "multi-step",
+   "word": "multi-step",
+   "pos": "형용사",
+   "ipa": "ˌmʌlti ˈstep",
+   "meaning": "여러 단계로 된, 다단계의"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#7.2",
+    "en": "Hand off any case the agent judges to be complicated, so a human reviews every multi-step case."
+   },
+   {
+    "sid": "sample01#7.0",
+    "en": "A company is building three Claude integrations: (1) a simple FAQ chatbot for a marketing website, (2) a complex multi-step contract analysis agent that must identify subtle legal risks, (3) a high-volume document classification pipeline processing 50,000 documents per day."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:multi-step.0",
+    "en": "...(2) a complex multi-step contract analysis agent that must identify subtle legal risks, ...",
+    "ko": "(2) 미묘한 법적 리스크를 찾아야 하는 복잡한 다단계 계약 분석 에이전트"
+   }
+  ]
+ },
+ {
+  "lemma": "multi-tenant",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "multi-tenant",
+   "word": "multi-tenant",
+   "pos": "형용사",
+   "ipa": "ˌmʌlti ˈtenənt",
+   "meaning": "멀티테넌트의 — 한 시스템을 여러 고객(조직)이 나눠 쓰는"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "multi-turn",
+  "kind": "vocab-core",
+  "surfaces": [
+   "multi-turn"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "multi-turn",
+   "word": "multi-turn",
+   "pos": "형용사",
+   "ipa": "ˌmʌlti ˈtɜːrn",
+   "meaning": "여러 턴에 걸친 (대화)"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#38.6",
+    "en": "The Message Batches API strips prior turns, so the multi-turn context was silently dropped from the trace"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:multi-turn.0",
+    "en": "The Message Batches API strips prior turns, so the multi-turn context was silently dropped from the trace",
+    "ko": "Message Batches API가 이전 턴을 제거해, 여러 턴에 걸친 컨텍스트가 추적 과정에서 조용히 빠졌다"
+   }
+  ]
+ },
+ {
+  "lemma": "multiline",
+  "kind": "new",
+  "surfaces": [
+   "multiline"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#29.6",
+    "en": "Run Grep with the multiline flag to locate both matches, then retry Edit unchanged, which uses the Grep results to pick the target"
+   }
+  ]
+ },
+ {
+  "lemma": "multiplier",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "multiplier",
+   "word": "multiplier",
+   "pos": "명사",
+   "ipa": "ˈmʌltɪplaɪər",
+   "meaning": "배수, 승수 — 곱해지는 값 (multiply: 곱하다, 몇 배로 늘리다)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "name",
+  "kind": "new",
+  "surfaces": [
+   "named",
+   "name",
+   "names",
+   "naming"
+  ],
+  "freq": 100,
+  "sentences": [
+   {
+    "sid": "lesson-d1#25.0",
+    "en": "An architect writes a PreToolUse hook with the regex matcher `/refund/` intending it to gate a single custom tool named `refund`."
+   },
+   {
+    "sid": "lesson-d2#2.0",
+    "en": "A team names two tools `process_data` and `process_information`, and both share the description \"Processes data provided by the user.\""
+   },
+   {
+    "sid": "lesson-d3#10.1",
+    "en": "A senior engineer also keeps a `~/.claude/skills/review/SKILL.md` on their laptop for personal projects, unaware it uses the same name."
+   },
+   {
+    "sid": "lesson-d4#15.0",
+    "en": "A contract-extraction request sets tool_choice to {\"type\": \"tool\", \"name\": \"extract_clauses\"}."
+   },
+   {
+    "sid": "lesson-d5#12.0",
+    "en": "In production, a hotel-booking support agent searches by guest name and check-in city and gets back two reservations with different booking references."
+   },
+   {
+    "sid": "mock04#10.1",
+    "en": "A customer gives only the name \"Maria Garcia.\" get_customer returns three distinct matching accounts."
+   },
+   {
+    "sid": "sample01#14.4",
+    "en": "Define explicit named categories with concrete examples of each in the system prompt"
+   },
+   {
+    "sid": "lesson-d1#25.1",
+    "en": "During a review, a colleague notices the matcher would also fire on a tool named `issue_refund_note` that only writes an internal comment and should never be gated."
+   }
+  ]
+ },
+ {
+  "lemma": "narrative",
+  "kind": "vocab-core",
+  "surfaces": [
+   "narrative"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "narrative",
+   "word": "narrative",
+   "pos": "명사·형용사",
+   "ipa": "ˈnærətɪv",
+   "meaning": "서술(형) — 줄글로 풀어 쓴 설명"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#34.1",
+    "en": "The synthesis subagent merges findings from the web-search and document-analysis subagents into a unified narrative but drops the record of which source each claim came from."
+   },
+   {
+    "sid": "lesson-d5#41.4",
+    "en": "Tell the synthesis agent to rewrite every finding in one consistent, confident voice so the report reads as a single authoritative narrative"
+   },
+   {
+    "sid": "lesson-d5#41.7",
+    "en": "Keep the blended narrative and add a bibliography of every source at the end, so readers can check the strength of the evidence themselves"
+   },
+   {
+    "sid": "mock04#34.7",
+    "en": "Instruct synthesis to insert (source) placeholders in the narrative that a human fills in after the report is generated."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:narrative.0",
+    "en": "Keep the narrative format but add a summarization step that uses Claude to generate a structured JSON summary.",
+    "ko": "서술형 형식은 유지하되, Claude로 구조화된 JSON 요약을 만드는 요약 단계를 추가한다."
+   }
+  ]
+ },
+ {
+  "lemma": "narrow",
+  "kind": "new",
+  "surfaces": [
+   "narrow"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d3#31.2",
+    "en": "--permission-mode dontAsk with a narrow --allowedTools list"
+   },
+   {
+    "sid": "lesson-d1#9.0",
+    "en": "A coordinator for a market-research assistant splits the broad query 'analyze the competitive landscape for electric vehicle charging networks' into narrow subtasks like 'find charger connector types' and 'list charging speeds,' each assigned to a separate subagent."
+   }
+  ]
+ },
+ {
+  "lemma": "natural",
+  "kind": "new",
+  "surfaces": [
+   "natural"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d4#17.1",
+    "en": "They also want to know whether Claude can include natural-language reasoning about ambiguous resume sections before that tool call."
+   },
+   {
+    "sid": "lesson-d4#17.2",
+    "en": "Which `tool_choice` configuration should be used to guarantee the `parse_resume` call, and what does Anthropic documentation state about natural-language commentary before a forced tool call?"
+   },
+   {
+    "sid": "lesson-d4#17.4",
+    "en": "`tool_choice: {\"type\": \"any\"}`, because `any` allows Claude to freely mix natural-language commentary with the forced tool call in the same response"
+   },
+   {
+    "sid": "lesson-d4#17.5",
+    "en": "`tool_choice: {\"type\": \"tool\", \"name\": \"parse_resume\"}`, because this is the documented way to force the specific tool; the trade-off is that forced tool use suppresses natural-language text before the tool call"
+   }
+  ]
+ }
+]

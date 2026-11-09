@@ -1,0 +1,950 @@
+[
+ {
+  "lemma": "obviously",
+  "skip": null,
+  "word": "obviously",
+  "pos": ["부사"],
+  "ipa": "ˈɑːbviəsli",
+  "meaning": "명백히, 누가 봐도 분명히",
+  "short": "명백히, 분명히",
+  "senses": [
+   { "pos": "부사", "ko": "명백히, 누가 봐도 분명히" }
+  ],
+  "forms": ["obvious"],
+  "synonyms": ["clearly", "evidently", "plainly"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#11.5", "surface": "obviously", "pos": "부사", "sense": "명백히, 누가 봐도 분명히" }
+  ]
+ },
+ {
+  "lemma": "occasionally",
+  "skip": null,
+  "word": "occasionally",
+  "pos": ["부사"],
+  "ipa": "əˈkeɪʒnəli",
+  "meaning": "가끔, 이따금",
+  "short": "가끔, 이따금",
+  "senses": [
+   { "pos": "부사", "ko": "가끔, 이따금" }
+  ],
+  "forms": ["occasional", "occasion"],
+  "synonyms": ["sometimes", "now and then", "from time to time"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#8.0", "surface": "occasionally", "pos": "부사", "sense": "가끔, 이따금" },
+   { "sid": "mock04#4.2", "surface": "occasionally", "pos": "부사", "sense": "가끔, 이따금" },
+   { "sid": "lesson-d2#18.2", "surface": "occasionally", "pos": "부사", "sense": "가끔, 이따금" },
+   { "sid": "sample01#1.1", "surface": "occasionally", "pos": "부사", "sense": "가끔, 이따금" }
+  ]
+ },
+ {
+  "lemma": "occupy",
+  "skip": null,
+  "word": "occupy",
+  "pos": ["동사"],
+  "ipa": "ˈɑːkjupaɪ",
+  "meaning": "(공간을) 차지하다",
+  "short": "(공간을) 차지하다",
+  "senses": [
+   { "pos": "동사", "ko": "(공간·자리를) 차지하다" },
+   { "pos": "동사", "ko": "(시간·관심을) 쓰게 하다, 바쁘게 하다" }
+  ],
+  "forms": ["occupies", "occupied", "occupying"],
+  "synonyms": ["take up", "fill"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "occurrence",
+  "skip": null,
+  "word": "occurrence",
+  "pos": ["명사"],
+  "ipa": "əˈkɜːrəns",
+  "meaning": "① (문자열 등이) 나타난 곳, 출현 ② 발생",
+  "short": "나타난 곳, 발생",
+  "senses": [
+   { "pos": "명사", "ko": "(문자열 등이) 나타난 곳, 출현" },
+   { "pos": "명사", "ko": "발생, 일어남" },
+   { "pos": "동사", "ko": "(occur) 일어나다, 발생하다" },
+   { "pos": "동사", "ko": "(occur) 나타나다, 존재하다" }
+  ],
+  "forms": ["occurrences", "occur", "occurs", "occurred", "occurring"],
+  "synonyms": ["instance", "appearance"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#43.2", "surface": "occurrence", "pos": "명사", "sense": "(문자열 등이) 나타난 곳, 출현" },
+   { "sid": "lesson-d1#37.0", "surface": "occurred", "pos": "동사", "sense": "(occur) 일어나다, 발생하다" },
+   { "sid": "lesson-d2#28.1", "surface": "occurs", "pos": "동사", "sense": "(occur) 나타나다, 존재하다" },
+   { "sid": "mock04#43.4", "surface": "occurrence", "pos": "명사", "sense": "(문자열 등이) 나타난 곳, 출현" }
+  ]
+ },
+ {
+  "lemma": "offender",
+  "skip": null,
+  "word": "offender",
+  "pos": ["명사"],
+  "ipa": "əˈfendər",
+  "meaning": "위반자 — repeat offender: 같은 위반을 되풀이하는 사용자",
+  "short": "위반자",
+  "senses": [
+   { "pos": "명사", "ko": "위반자, 범법자" },
+   { "pos": "명사", "ko": "(repeat offender) 같은 위반을 되풀이하는 사용자" }
+  ],
+  "forms": ["offenders", "offend", "offense"],
+  "synonyms": ["violator"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "offending",
+  "skip": null,
+  "word": "offending",
+  "pos": ["형용사"],
+  "ipa": "əˈfendɪŋ",
+  "meaning": "문제가 된, 문제를 일으킨 (바로 그)",
+  "short": "문제가 된, 문제를 일으킨",
+  "senses": [
+   { "pos": "형용사", "ko": "문제가 된, 문제를 일으킨" },
+   { "pos": "형용사", "ko": "불쾌하게 하는, 기분 상하게 하는" }
+  ],
+  "forms": ["offend", "offense"],
+  "synonyms": ["problematic", "faulty"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#57.4", "surface": "offending", "pos": "형용사", "sense": "문제가 된, 문제를 일으킨" }
+  ]
+ },
+ {
+  "lemma": "offer",
+  "skip": null,
+  "word": "offer",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈɔːfər",
+  "meaning": "① (선택지로) 제안하다, 제공하다 ② (offer to do) ~하겠다고 제안하다 ③ 제안, 제의",
+  "short": "제안하다, 제공하다",
+  "senses": [
+   { "pos": "동사", "ko": "(선택지로) 제안하다, 제공하다" },
+   { "pos": "동사", "ko": "(offer to do) ~하겠다고 제안하다" },
+   { "pos": "명사", "ko": "제안, 제의" }
+  ],
+  "forms": ["offers", "offered", "offering"],
+  "synonyms": ["provide", "propose", "suggest"],
+  "domain": "요청·소통",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#8.1", "surface": "offered", "pos": "동사", "sense": "(선택지로) 제안하다, 제공하다" },
+   { "sid": "lesson-d5#9.4", "surface": "offer", "pos": "동사", "sense": "(offer to do) ~하겠다고 제안하다" },
+   { "sid": "lesson-d5#9.0", "surface": "offer", "pos": "동사", "sense": "(선택지로) 제안하다, 제공하다" }
+  ]
+ },
+ {
+  "lemma": "often",
+  "skip": null,
+  "word": "often",
+  "pos": ["부사"],
+  "ipa": "ˈɔːfn",
+  "meaning": "① 자주, 흔히 ② (how often) 얼마나 자주 (빈도)",
+  "short": "자주, 흔히",
+  "senses": [
+   { "pos": "부사", "ko": "자주, 흔히" },
+   { "pos": "부사", "ko": "(how often) 얼마나 자주, 빈도" }
+  ],
+  "forms": [],
+  "synonyms": ["frequently"],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#33.0", "surface": "often", "pos": "부사", "sense": "자주, 흔히" },
+   { "sid": "lesson-d5#30.3", "surface": "often", "pos": "부사", "sense": "(how often) 얼마나 자주, 빈도" }
+  ]
+ },
+ {
+  "lemma": "oidc",
+  "skip": null,
+  "word": "OIDC",
+  "pos": ["약어"],
+  "ipa": "ˌoʊ.aɪ.diːˈsiː",
+  "meaning": "OpenID Connect — OAuth 위에서 ID 토큰으로 신원을 확인하는 표준",
+  "short": "오픈아이디 커넥트(신원 확인 표준)",
+  "senses": [
+   { "pos": "약어", "ko": "오픈아이디 커넥트, 토큰으로 사용자 신원을 확인하는 인증 표준" }
+  ],
+  "forms": [],
+  "synonyms": ["OpenID Connect"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "old",
+  "skip": null,
+  "word": "old",
+  "pos": ["형용사"],
+  "ipa": "oʊld",
+  "meaning": "① 이전의, 예전의 ② 오래된, 낡은 ③ (older) 더 이전의, 더 오래된 ④ 나이 든",
+  "short": "이전의, 오래된",
+  "senses": [
+   { "pos": "형용사", "ko": "이전의, 예전의" },
+   { "pos": "형용사", "ko": "오래된, 낡은" },
+   { "pos": "형용사", "ko": "(older) 더 이전의, 더 오래된" },
+   { "pos": "형용사", "ko": "나이 든" }
+  ],
+  "forms": ["older", "oldest"],
+  "synonyms": ["previous", "former", "outdated"],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#22.0", "surface": "old", "pos": "형용사", "sense": "이전의, 예전의" },
+   { "sid": "lesson-d4#4.0", "surface": "old", "pos": "형용사", "sense": "오래된, 낡은" },
+   { "sid": "lesson-d5#2.4", "surface": "older", "pos": "형용사", "sense": "(older) 더 이전의, 더 오래된" },
+   { "sid": "mock04#39.3", "surface": "old", "pos": "형용사", "sense": "이전의, 예전의" }
+  ]
+ },
+ {
+  "lemma": "omit",
+  "skip": null,
+  "word": "omit",
+  "pos": ["동사"],
+  "ipa": "əˈmɪt",
+  "meaning": "빠뜨리다, 생략하다",
+  "short": "빠뜨리다, 생략하다",
+  "senses": [
+   { "pos": "동사", "ko": "빠뜨리다, 생략하다" },
+   { "pos": "명사", "ko": "(omission) 누락, 생략" }
+  ],
+  "forms": ["omits", "omitted", "omitting", "omission"],
+  "synonyms": ["leave out", "skip", "exclude"],
+  "domain": "삭제·제거",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#6.1", "surface": "omits", "pos": "동사", "sense": "빠뜨리다, 생략하다" },
+   { "sid": "lesson-d3#27.3", "surface": "omission", "pos": "명사", "sense": "(omission) 누락, 생략" },
+   { "sid": "lesson-d4#1.4", "surface": "omit", "pos": "동사", "sense": "빠뜨리다, 생략하다" },
+   { "sid": "mock04#22.1", "surface": "omit", "pos": "동사", "sense": "빠뜨리다, 생략하다" }
+  ]
+ },
+ {
+  "lemma": "on its own",
+  "skip": null,
+  "word": "on its own",
+  "pos": ["부사구"],
+  "ipa": "ɑːn ɪts ˈoʊn",
+  "meaning": "① 스스로, 혼자 힘으로 ② 그것만으로",
+  "short": "스스로, 그것만으로",
+  "senses": [
+   { "pos": "부사구", "ko": "스스로, 혼자 힘으로" },
+   { "pos": "부사구", "ko": "그것만으로, 따로 떼어서" }
+  ],
+  "forms": [],
+  "synonyms": ["independently", "by itself", "alone"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#37.6", "surface": "on its own", "pos": "부사구", "sense": "스스로, 혼자 힘으로" },
+   { "sid": "lesson-d3#26.4", "surface": "on its own", "pos": "부사구", "sense": "그것만으로, 따로 떼어서" },
+   { "sid": "lesson-d5#29.5", "surface": "on its own", "pos": "부사구", "sense": "그것만으로, 따로 떼어서" },
+   { "sid": "lesson-d1#22.5", "surface": "on its own", "pos": "부사구", "sense": "스스로, 혼자 힘으로" }
+  ]
+ },
+ {
+  "lemma": "on-call",
+  "skip": null,
+  "word": "on-call",
+  "pos": ["형용사", "명사"],
+  "ipa": "ˈɑːn kɔːl",
+  "meaning": "온콜(대기 근무)의 — 장애가 나면 바로 대응하도록 대기하는",
+  "short": "온콜(대기 근무)의",
+  "senses": [
+   { "pos": "형용사", "ko": "온콜의, (장애 대응을 위해) 대기 근무 중인" },
+   { "pos": "명사", "ko": "대기 근무, 대기 근무 담당자" }
+  ],
+  "forms": [],
+  "synonyms": ["standby"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "on-demand",
+  "skip": null,
+  "word": "on-demand",
+  "pos": ["형용사", "부사"],
+  "ipa": "ˌɑːn dɪˈmænd",
+  "meaning": "필요할 때마다 (그때그때) 하는",
+  "short": "필요할 때 하는",
+  "senses": [
+   { "pos": "형용사", "ko": "필요할 때마다 하는, 요청 시 제공되는" },
+   { "pos": "부사", "ko": "(on demand) 필요할 때, 요청이 있을 때" }
+  ],
+  "forms": ["on demand"],
+  "synonyms": ["as needed", "when needed"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#49.4", "surface": "on-demand", "pos": "형용사", "sense": "필요할 때마다 하는, 요청 시 제공되는" },
+   { "sid": "lesson-d3#12.6", "surface": "on demand", "pos": "부사", "sense": "(on demand) 필요할 때, 요청이 있을 때" },
+   { "sid": "lesson-d1#40.1", "surface": "on demand", "pos": "부사", "sense": "(on demand) 필요할 때, 요청이 있을 때" },
+   { "sid": "mock04#45.6", "surface": "on demand", "pos": "부사", "sense": "(on demand) 필요할 때, 요청이 있을 때" }
+  ]
+ },
+ {
+  "lemma": "onboard",
+  "skip": null,
+  "word": "onboard",
+  "pos": ["동사"],
+  "ipa": "ˈɑːnbɔːrd",
+  "meaning": "(새 구성원을) 합류시키다, 적응시키다 — newly onboarded 새로 합류한",
+  "short": "(새 구성원을) 합류시키다",
+  "senses": [
+   { "pos": "동사", "ko": "(새 구성원을) 합류시키다, 적응시키다" },
+   { "pos": "명사", "ko": "(onboarding) 신규 구성원 적응 과정, 온보딩" }
+  ],
+  "forms": ["onboards", "onboarded", "onboarding"],
+  "synonyms": ["integrate"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#45.2", "surface": "onboarded", "pos": "동사", "sense": "(새 구성원을) 합류시키다, 적응시키다" },
+   { "sid": "lesson-d3#2.3", "surface": "onboarding", "pos": "명사", "sense": "(onboarding) 신규 구성원 적응 과정, 온보딩" },
+   { "sid": "lesson-d2#31.0", "surface": "onboarded", "pos": "동사", "sense": "(새 구성원을) 합류시키다, 적응시키다" },
+   { "sid": "mock04#11.2", "surface": "onboarded", "pos": "동사", "sense": "(새 구성원을) 합류시키다, 적응시키다" }
+  ]
+ },
+ {
+  "lemma": "once",
+  "skip": null,
+  "word": "once",
+  "pos": ["부사", "접속사"],
+  "ipa": "wʌns",
+  "meaning": "① 한 번 ② (과거에) 한때, 한번은 ③ (접속사) 일단 ~하면, ~하자마자",
+  "short": "한 번, 일단 ~하면",
+  "senses": [
+   { "pos": "부사", "ko": "한 번" },
+   { "pos": "부사", "ko": "(과거에) 한때, 한번은" },
+   { "pos": "접속사", "ko": "일단 ~하면, ~하자마자" }
+  ],
+  "forms": [],
+  "synonyms": ["one time", "as soon as"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#31.3", "surface": "once", "pos": "부사", "sense": "한 번" },
+   { "sid": "lesson-d2#16.1", "surface": "once", "pos": "부사", "sense": "(과거에) 한때, 한번은" },
+   { "sid": "lesson-d1#17.4", "surface": "once", "pos": "접속사", "sense": "일단 ~하면, ~하자마자" },
+   { "sid": "lesson-d4#28.3", "surface": "once", "pos": "부사", "sense": "한 번" }
+  ]
+ },
+ {
+  "lemma": "one at a time",
+  "skip": null,
+  "word": "one at a time",
+  "pos": ["부사구"],
+  "ipa": "ˌwʌn ət ə ˈtaɪm",
+  "meaning": "한 번에 하나씩",
+  "short": "한 번에 하나씩",
+  "senses": [
+   { "pos": "부사구", "ko": "한 번에 하나씩" }
+  ],
+  "forms": [],
+  "synonyms": ["one by one", "individually", "sequentially"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#16.5", "surface": "one at a time", "pos": "부사구", "sense": "한 번에 하나씩" }
+  ]
+ },
+ {
+  "lemma": "one-line",
+  "skip": null,
+  "word": "one-line",
+  "pos": ["형용사"],
+  "ipa": "ˌwʌn ˈlaɪn",
+  "meaning": "한 줄짜리의, 아주 짧은",
+  "short": "한 줄짜리의",
+  "senses": [
+   { "pos": "형용사", "ko": "한 줄짜리의, 아주 짧은" }
+  ],
+  "forms": [],
+  "synonyms": ["single-line", "brief"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#6.1", "surface": "one-line", "pos": "형용사", "sense": "한 줄짜리의, 아주 짧은" },
+   { "sid": "lesson-d3#12.6", "surface": "one-line", "pos": "형용사", "sense": "한 줄짜리의, 아주 짧은" },
+   { "sid": "mock04#33.1", "surface": "one-line", "pos": "형용사", "sense": "한 줄짜리의, 아주 짧은" },
+   { "sid": "lesson-d4#11.4", "surface": "one-line", "pos": "형용사", "sense": "한 줄짜리의, 아주 짧은" }
+  ]
+ },
+ {
+  "lemma": "one-off",
+  "skip": null,
+  "word": "one-off",
+  "pos": ["형용사"],
+  "ipa": "ˌwʌn ˈɔːf",
+  "meaning": "일회성의, 한 번만 쓰는",
+  "short": "일회성의, 한 번만 쓰는",
+  "senses": [
+   { "pos": "형용사", "ko": "일회성의, 한 번만 쓰는" },
+   { "pos": "명사", "ko": "단 한 번의 일, 일회성 사건" }
+  ],
+  "forms": [],
+  "synonyms": ["single-use", "ad hoc"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#51.1", "surface": "one-off", "pos": "형용사", "sense": "일회성의, 한 번만 쓰는" }
+  ]
+ },
+ {
+  "lemma": "ongoing",
+  "skip": null,
+  "word": "ongoing",
+  "pos": ["형용사"],
+  "ipa": "ˈɑːnɡoʊɪŋ",
+  "meaning": "계속 진행 중인, 지속적인",
+  "short": "지속적인, 진행 중인",
+  "senses": [
+   { "pos": "형용사", "ko": "계속 진행 중인, 지속적인" }
+  ],
+  "forms": [],
+  "synonyms": ["continuous", "continuing"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#34.1", "surface": "ongoing", "pos": "형용사", "sense": "계속 진행 중인, 지속적인" }
+  ]
+ },
+ {
+  "lemma": "only",
+  "skip": null,
+  "word": "only",
+  "pos": ["부사", "형용사"],
+  "ipa": "ˈoʊnli",
+  "meaning": "① 오직, ~만 ② 유일한 ③ (only + 시점) ~에야 비로소",
+  "short": "오직, ~만",
+  "senses": [
+   { "pos": "부사", "ko": "오직, ~만" },
+   { "pos": "형용사", "ko": "유일한" },
+   { "pos": "부사", "ko": "(only + 시점) ~에야 비로소" }
+  ],
+  "forms": [],
+  "synonyms": ["solely", "just", "merely"],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#11.1", "surface": "only", "pos": "부사", "sense": "오직, ~만" },
+   { "sid": "mock04#10.1", "surface": "only", "pos": "부사", "sense": "오직, ~만" },
+   { "sid": "sample01#14.6", "surface": "only", "pos": "부사", "sense": "오직, ~만" },
+   { "sid": "lesson-d1#18.2", "surface": "only", "pos": "부사", "sense": "오직, ~만" }
+  ]
+ },
+ {
+  "lemma": "onto",
+  "skip": null,
+  "word": "onto",
+  "pos": ["전치사"],
+  "ipa": "ˈɑːntuː",
+  "meaning": "~ 위로, ~ 쪽으로 (옮겨서)",
+  "short": "~ 위로, ~ 쪽으로",
+  "senses": [
+   { "pos": "전치사", "ko": "~ 위로, ~ 쪽으로 (옮겨서)" }
+  ],
+  "forms": [],
+  "synonyms": ["upon"],
+  "domain": "이동·전달",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#6.0", "surface": "onto", "pos": "전치사", "sense": "~ 위로, ~ 쪽으로 (옮겨서)" },
+   { "sid": "mock04#39.6", "surface": "onto", "pos": "전치사", "sense": "~ 위로, ~ 쪽으로 (옮겨서)" }
+  ]
+ },
+ {
+  "lemma": "open",
+  "skip": null,
+  "word": "open",
+  "pos": ["동사", "형용사"],
+  "ipa": "ˈoʊpən",
+  "meaning": "① (파일·결과 등을) 열다 ② (세션을) 시작하다, (글을) ~로 시작하다 ③ 열린, 제한이 없는 ④ (opening) 처음의, 첫",
+  "short": "열다, 시작하다",
+  "senses": [
+   { "pos": "동사", "ko": "(파일·결과 등을) 열다" },
+   { "pos": "동사", "ko": "시작하다, (글을) ~로 시작하다" },
+   { "pos": "형용사", "ko": "열린, 제한이 없는" },
+   { "pos": "형용사", "ko": "(opening) 처음의, 첫" }
+  ],
+  "forms": ["opens", "opened", "opening"],
+  "synonyms": ["start", "launch"],
+  "domain": "시작·종료",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#16.0", "surface": "open", "pos": "동사", "sense": "(파일·결과 등을) 열다" },
+   { "sid": "lesson-d4#6.2", "surface": "open", "pos": "동사", "sense": "시작하다, (글을) ~로 시작하다" },
+   { "sid": "lesson-d1#16.4", "surface": "open", "pos": "형용사", "sense": "열린, 제한이 없는" },
+   { "sid": "mock04#31.5", "surface": "opening", "pos": "형용사", "sense": "(opening) 처음의, 첫" }
+  ]
+ },
+ {
+  "lemma": "open-ended",
+  "skip": null,
+  "word": "open-ended",
+  "pos": ["형용사"],
+  "ipa": "ˌoʊpən ˈendɪd",
+  "meaning": "개방형의 — 정해진 답·범위 없이 열려 있는",
+  "short": "개방형의, 범위가 열린",
+  "senses": [
+   { "pos": "형용사", "ko": "개방형의, 정해진 답·범위가 없는" }
+  ],
+  "forms": [],
+  "synonyms": ["unbounded", "open"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#25.1", "surface": "open-ended", "pos": "형용사", "sense": "개방형의, 정해진 답·범위가 없는" }
+  ]
+ },
+ {
+  "lemma": "operation",
+  "skip": null,
+  "word": "operation",
+  "pos": ["명사"],
+  "ipa": "ˌɑːpəˈreɪʃn",
+  "meaning": "① 작업, 연산 ② 운영, 가동",
+  "short": "작업, 연산",
+  "senses": [
+   { "pos": "명사", "ko": "작업, 연산 (실행되는 동작)" },
+   { "pos": "명사", "ko": "운영, 가동" },
+   { "pos": "명사", "ko": "수술" }
+  ],
+  "forms": ["operations", "operate", "operational", "operator"],
+  "synonyms": ["task", "action", "process"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#11.2", "surface": "Operation", "pos": "명사", "sense": "작업, 연산 (실행되는 동작)" },
+   { "sid": "sample01#17.4", "surface": "operations", "pos": "명사", "sense": "작업, 연산 (실행되는 동작)" },
+   { "sid": "lesson-d3#19.3", "surface": "operations", "pos": "명사", "sense": "작업, 연산 (실행되는 동작)" },
+   { "sid": "lesson-d2#7.1", "surface": "operations", "pos": "명사", "sense": "작업, 연산 (실행되는 동작)" }
+  ]
+ },
+ {
+  "lemma": "operator",
+  "skip": null,
+  "word": "operator",
+  "pos": ["명사"],
+  "ipa": "ˈɑːpəreɪtər",
+  "meaning": "① (시스템) 운영자, 운영 담당자 ② (프로그래밍) 연산자",
+  "short": "운영자, 운영 담당자",
+  "senses": [
+   { "pos": "명사", "ko": "(시스템) 운영자, 운영 담당자" },
+   { "pos": "명사", "ko": "(프로그래밍) 연산자" }
+  ],
+  "forms": ["operators", "operate", "operation"],
+  "synonyms": ["administrator"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#15.5", "surface": "operator", "pos": "명사", "sense": "(시스템) 운영자, 운영 담당자" }
+  ]
+ },
+ {
+  "lemma": "opposing counsel",
+  "skip": null,
+  "word": "opposing counsel",
+  "pos": ["명사구"],
+  "ipa": "əˌpoʊzɪŋ ˈkaʊnsl",
+  "meaning": "상대측 변호인",
+  "short": "상대측 변호인",
+  "senses": [
+   { "pos": "명사구", "ko": "상대측 변호인" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "ops",
+  "skip": null,
+  "word": "ops",
+  "pos": ["명사"],
+  "ipa": "ɑːps",
+  "meaning": "운영팀, 운영 담당 (operations의 줄임말)",
+  "short": "운영팀",
+  "senses": [
+   { "pos": "명사", "ko": "(operations) 운영팀, 운영 담당" }
+  ],
+  "forms": [],
+  "synonyms": ["operations"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#2.1", "surface": "ops", "pos": "명사", "sense": "(operations) 운영팀, 운영 담당" }
+  ]
+ },
+ {
+  "lemma": "optimal",
+  "skip": null,
+  "word": "optimal",
+  "pos": ["형용사"],
+  "ipa": "ˈɑːptɪməl",
+  "meaning": "최적의",
+  "short": "최적의",
+  "senses": [
+   { "pos": "형용사", "ko": "최적의" },
+   { "pos": "부사", "ko": "(optimally) 최적으로" }
+  ],
+  "forms": ["optimally", "optimize", "optimum"],
+  "synonyms": ["best", "ideal", "optimum"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:optimal.0", "surface": "optimally", "pos": "부사", "sense": "(optimally) 최적으로" }
+  ]
+ },
+ {
+  "lemma": "option",
+  "skip": null,
+  "word": "option",
+  "pos": ["명사"],
+  "ipa": "ˈɑːpʃn",
+  "meaning": "① 선택지, 선택 사항 ② (프로그램·명령의) 옵션, 설정 항목",
+  "short": "선택지, 옵션",
+  "senses": [
+   { "pos": "명사", "ko": "선택지, 선택 사항" },
+   { "pos": "명사", "ko": "(프로그램·명령의) 옵션, 설정 항목" }
+  ],
+  "forms": ["options", "optional"],
+  "synonyms": ["choice", "alternative"],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#8.1", "surface": "option", "pos": "명사", "sense": "선택지, 선택 사항" },
+   { "sid": "lesson-d1#40.2", "surface": "option", "pos": "명사", "sense": "(프로그램·명령의) 옵션, 설정 항목" },
+   { "sid": "mock04#42.5", "surface": "option", "pos": "명사", "sense": "선택지, 선택 사항" }
+  ]
+ },
+ {
+  "lemma": "optional",
+  "skip": null,
+  "word": "optional",
+  "pos": ["형용사"],
+  "ipa": "ˈɑːpʃənl",
+  "meaning": "선택적인, 필수가 아닌",
+  "short": "선택적인, 필수가 아닌",
+  "senses": [
+   { "pos": "형용사", "ko": "선택적인, 필수가 아닌" }
+  ],
+  "forms": ["optionally", "option"],
+  "synonyms": ["elective", "voluntary"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#18.5", "surface": "optional", "pos": "형용사", "sense": "선택적인, 필수가 아닌" },
+   { "sid": "lesson-d5#15.4", "surface": "optional", "pos": "형용사", "sense": "선택적인, 필수가 아닌" },
+   { "sid": "mock04#56.7", "surface": "optional", "pos": "형용사", "sense": "선택적인, 필수가 아닌" },
+   { "sid": "lesson-d4#23.6", "surface": "optional", "pos": "형용사", "sense": "선택적인, 필수가 아닌" }
+  ]
+ },
+ {
+  "lemma": "orchestration",
+  "skip": null,
+  "word": "orchestration",
+  "pos": ["명사"],
+  "ipa": "ˌɔːrkɪˈstreɪʃn",
+  "meaning": "오케스트레이션 — 여러 에이전트·작업을 나누고 배분해 전체 흐름을 조율하는 것",
+  "short": "(여러 작업의) 조율",
+  "senses": [
+   { "pos": "명사", "ko": "오케스트레이션, 여러 에이전트·작업을 조율하는 것" },
+   { "pos": "명사", "ko": "(orchestrator) 작업을 나눠 주고 조율하는 주체" }
+  ],
+  "forms": ["orchestrate", "orchestrated", "orchestrator", "orchestrators"],
+  "synonyms": ["coordination"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#25.3", "surface": "orchestration", "pos": "명사", "sense": "오케스트레이션, 여러 에이전트·작업을 조율하는 것" },
+   { "sid": "lesson-d2#15.1", "surface": "orchestrator", "pos": "명사", "sense": "(orchestrator) 작업을 나눠 주고 조율하는 주체" },
+   { "sid": "lesson-d1#33.5", "surface": "orchestration", "pos": "명사", "sense": "오케스트레이션, 여러 에이전트·작업을 조율하는 것" },
+   { "sid": "lesson-d1#32.4", "surface": "orchestrator", "pos": "명사", "sense": "(orchestrator) 작업을 나눠 주고 조율하는 주체" }
+  ]
+ },
+ {
+  "lemma": "organization",
+  "skip": null,
+  "word": "organization",
+  "pos": ["명사"],
+  "ipa": "ˌɔːrɡənəˈzeɪʃn",
+  "meaning": "① 조직, 단체 ② 구성, 정리(체계화)",
+  "short": "조직, 단체",
+  "senses": [
+   { "pos": "명사", "ko": "조직, 단체" },
+   { "pos": "명사", "ko": "구성, 정리(체계화)" }
+  ],
+  "forms": ["organizations", "organize", "organizational"],
+  "synonyms": ["company", "institution"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#3.3", "surface": "organization", "pos": "명사", "sense": "조직, 단체" }
+  ]
+ },
+ {
+  "lemma": "original",
+  "skip": null,
+  "word": "original",
+  "pos": ["형용사"],
+  "ipa": "əˈrɪdʒənl",
+  "meaning": "원래의, 처음 그대로의",
+  "short": "원래의, 처음 그대로의",
+  "senses": [
+   { "pos": "형용사", "ko": "원래의, 처음 그대로의" },
+   { "pos": "부사", "ko": "(originally) 원래, 처음에는" },
+   { "pos": "형용사", "ko": "독창적인" }
+  ],
+  "forms": ["originally", "origin"],
+  "synonyms": ["initial", "first"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#34.3", "surface": "original", "pos": "형용사", "sense": "원래의, 처음 그대로의" },
+   { "sid": "lesson-d2#6.0", "surface": "originally", "pos": "부사", "sense": "(originally) 원래, 처음에는" },
+   { "sid": "lesson-d1#11.3", "surface": "original", "pos": "형용사", "sense": "원래의, 처음 그대로의" },
+   { "sid": "mock04#57.6", "surface": "original", "pos": "형용사", "sense": "원래의, 처음 그대로의" }
+  ]
+ },
+ {
+  "lemma": "originate",
+  "skip": null,
+  "word": "originate",
+  "pos": ["동사"],
+  "ipa": "əˈrɪdʒɪneɪt",
+  "meaning": "(~에서) 비롯되다, 처음 나오다",
+  "short": "비롯되다, 처음 나오다",
+  "senses": [
+   { "pos": "동사", "ko": "(~에서) 비롯되다, 처음 나오다" },
+   { "pos": "형용사", "ko": "(originating) 원래의, 출처가 된" }
+  ],
+  "forms": ["originates", "originated", "originating", "origin"],
+  "synonyms": ["stem from", "arise"],
+  "domain": "원인·결과·영향",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#34.5", "surface": "originating", "pos": "형용사", "sense": "(originating) 원래의, 출처가 된" }
+  ]
+ },
+ {
+  "lemma": "others",
+  "skip": null,
+  "word": "others",
+  "pos": ["대명사"],
+  "ipa": "ˈʌðərz",
+  "meaning": "① 다른 것들, 다른 사람들 ② (the others) 나머지 ③ (some ~, others ~) 어떤 것은 ~, 또 어떤 것은 ~",
+  "short": "다른 것들, 나머지",
+  "senses": [
+   { "pos": "대명사", "ko": "다른 것들, 다른 사람들" },
+   { "pos": "대명사", "ko": "(the others) 나머지" },
+   { "pos": "대명사", "ko": "(some ~, others ~) 어떤 것은 ~, 또 어떤 것은 ~" }
+  ],
+  "forms": ["other"],
+  "synonyms": ["the rest"],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   { "sid": "mock04#18.1", "surface": "others", "pos": "대명사", "sense": "다른 것들, 다른 사람들" },
+   { "sid": "mock04#16.4", "surface": "others", "pos": "대명사", "sense": "(the others) 나머지" },
+   { "sid": "lesson-d4#8.0", "surface": "others", "pos": "대명사", "sense": "(some ~, others ~) 어떤 것은 ~, 또 어떤 것은 ~" },
+   { "sid": "mock04#30.1", "surface": "others", "pos": "대명사", "sense": "다른 것들, 다른 사람들" }
+  ]
+ },
+ {
+  "lemma": "otherwise",
+  "skip": null,
+  "word": "otherwise",
+  "pos": ["부사"],
+  "ipa": "ˈʌðərwaɪz",
+  "meaning": "① 그렇지 않으면 ② 다르게, 다른 방식으로 ③ 그 외에는",
+  "short": "그렇지 않으면",
+  "senses": [
+   { "pos": "부사", "ko": "그렇지 않으면" },
+   { "pos": "부사", "ko": "다르게, 다른 방식으로" },
+   { "pos": "부사", "ko": "그 외에는, 그 점을 빼면" }
+  ],
+  "forms": [],
+  "synonyms": ["or else", "else"],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#3.0", "surface": "otherwise", "pos": "부사", "sense": "그렇지 않으면" }
+  ]
+ },
+ {
+  "lemma": "otpm",
+  "skip": null,
+  "word": "OTPM",
+  "pos": ["약어"],
+  "ipa": "ˌoʊ.tiː.piːˈem",
+  "meaning": "분당 출력 토큰 한도 (Output Tokens Per Minute)",
+  "short": "분당 출력 토큰 한도",
+  "senses": [
+   { "pos": "약어", "ko": "분당 출력 토큰 한도" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "outage",
+  "skip": null,
+  "word": "outage",
+  "pos": ["명사"],
+  "ipa": "ˈaʊtɪdʒ",
+  "meaning": "(서비스·시스템) 장애, 일시 중단",
+  "short": "(서비스) 장애, 일시 중단",
+  "senses": [
+   { "pos": "명사", "ko": "(서비스·시스템) 장애, 일시 중단" },
+   { "pos": "명사", "ko": "정전" }
+  ],
+  "forms": ["outages"],
+  "synonyms": ["downtime", "disruption"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#7.2", "surface": "outages", "pos": "명사", "sense": "(서비스·시스템) 장애, 일시 중단" },
+   { "sid": "lesson-d2#11.5", "surface": "outage", "pos": "명사", "sense": "(서비스·시스템) 장애, 일시 중단" }
+  ]
+ },
+ {
+  "lemma": "outbound",
+  "skip": null,
+  "word": "outbound",
+  "pos": ["형용사"],
+  "ipa": "ˈaʊtbaʊnd",
+  "meaning": "밖으로 나가는, 송신의 (outbound request: 외부로 나가는 요청)",
+  "short": "밖으로 나가는, 송신의",
+  "senses": [
+   { "pos": "형용사", "ko": "밖으로 나가는, 송신의" },
+   { "pos": "형용사", "ko": "(교통편이) 떠나는, 출국하는" }
+  ],
+  "forms": [],
+  "synonyms": ["outgoing"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "outcome",
+  "skip": null,
+  "word": "outcome",
+  "pos": ["명사"],
+  "ipa": "ˈaʊtkʌm",
+  "meaning": "결과, 성과",
+  "short": "결과, 성과",
+  "senses": [
+   { "pos": "명사", "ko": "결과, 성과" }
+  ],
+  "forms": ["outcomes"],
+  "synonyms": ["result", "consequence"],
+  "domain": "원인·결과·영향",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#20.1", "surface": "outcome", "pos": "명사", "sense": "결과, 성과" },
+   { "sid": "lesson-d5#11.7", "surface": "outcome", "pos": "명사", "sense": "결과, 성과" }
+  ]
+ },
+ {
+  "lemma": "outline",
+  "skip": null,
+  "word": "outline",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈaʊtlaɪn",
+  "meaning": "① 개요, 윤곽 ② 개요를 잡다, 대략 설명하다",
+  "short": "개요, 개요를 잡다",
+  "senses": [
+   { "pos": "명사", "ko": "개요, 윤곽" },
+   { "pos": "동사", "ko": "개요를 잡다, 대략 설명하다" }
+  ],
+  "forms": ["outlines", "outlined", "outlining"],
+  "synonyms": ["overview", "summary", "sketch"],
+  "domain": "계획·목표·전략",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#15.0", "surface": "outline", "pos": "명사", "sense": "개요, 윤곽" }
+  ]
+ },
+ {
+  "lemma": "output",
+  "skip": null,
+  "word": "output",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈaʊtpʊt",
+  "meaning": "① 출력, 출력물, 결과물 ② 출력하다, 내보내다 ③ 생산량",
+  "short": "출력(물), 결과물",
+  "senses": [
+   { "pos": "명사", "ko": "출력, 출력물, 결과물" },
+   { "pos": "동사", "ko": "출력하다, 내보내다" },
+   { "pos": "명사", "ko": "생산량, 산출량" }
+  ],
+  "forms": ["outputs", "outputted"],
+  "synonyms": ["result"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#30.1", "surface": "output", "pos": "명사", "sense": "출력, 출력물, 결과물" },
+   { "sid": "sample01#20.0", "surface": "output", "pos": "명사", "sense": "출력, 출력물, 결과물" },
+   { "sid": "lesson-d1#18.1", "surface": "output", "pos": "명사", "sense": "출력, 출력물, 결과물" },
+   { "sid": "mock04#12.2", "surface": "output", "pos": "명사", "sense": "출력, 출력물, 결과물" }
+  ]
+ },
+ {
+  "lemma": "outside",
+  "skip": null,
+  "word": "outside",
+  "pos": ["전치사", "형용사", "명사"],
+  "ipa": "ˌaʊtˈsaɪd",
+  "meaning": "① ~ 밖에, ~의 바깥에 ② (범위·권한을) 벗어난 ③ 외부의 ④ 바깥, 외부",
+  "short": "~ 밖에, 범위를 벗어난",
+  "senses": [
+   { "pos": "전치사", "ko": "~ 밖에, ~의 바깥에" },
+   { "pos": "전치사", "ko": "(범위·권한을) 벗어난" },
+   { "pos": "형용사", "ko": "외부의, 바깥의" },
+   { "pos": "명사", "ko": "바깥, 외부" }
+  ],
+  "forms": [],
+  "synonyms": ["beyond", "external"],
+  "domain": "구조·구성·부분",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#8.6", "surface": "outside", "pos": "전치사", "sense": "~ 밖에, ~의 바깥에" },
+   { "sid": "lesson-d2#18.2", "surface": "outside", "pos": "전치사", "sense": "(범위·권한을) 벗어난" },
+   { "sid": "mock04#14.7", "surface": "outside", "pos": "전치사", "sense": "~ 밖에, ~의 바깥에" },
+   { "sid": "lesson-d4#3.4", "surface": "outside", "pos": "전치사", "sense": "(범위·권한을) 벗어난" }
+  ]
+ },
+ {
+  "lemma": "outweigh",
+  "skip": null,
+  "word": "outweigh",
+  "pos": ["동사"],
+  "ipa": "ˌaʊtˈweɪ",
+  "meaning": "~보다 더 크다, ~보다 우선하다",
+  "short": "~보다 더 크다, 우선하다",
+  "senses": [
+   { "pos": "동사", "ko": "~보다 더 크다, ~보다 우선하다" }
+  ],
+  "forms": ["outweighs", "outweighed", "outweighing"],
+  "synonyms": ["exceed", "override"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": []
+ }
+]

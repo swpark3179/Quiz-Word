@@ -1,0 +1,925 @@
+[
+ {
+  "lemma": "mandatory",
+  "skip": null,
+  "word": "mandatory",
+  "pos": ["형용사"],
+  "ipa": "ˈmændətɔːri",
+  "meaning": "필수의, 의무적인",
+  "short": "필수의, 의무적인",
+  "senses": [
+   { "pos": "형용사", "ko": "필수의, 의무적인" }
+  ],
+  "forms": ["mandatorily"],
+  "synonyms": ["required", "compulsory", "obligatory"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#9.0", "surface": "mandatory", "pos": "형용사", "sense": "필수의, 의무적인" }
+  ]
+ },
+ {
+  "lemma": "manifest",
+  "skip": null,
+  "word": "manifest",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈmænɪfest",
+  "meaning": "① 매니페스트 — 대상 항목과 진행 상태를 적어 둔 목록(파일) ② 드러나다, 나타나다",
+  "short": "매니페스트(진행 상태 목록)",
+  "senses": [
+   { "pos": "명사", "ko": "매니페스트(항목·진행 상태 목록)" },
+   { "pos": "동사", "ko": "드러나다, 나타나다" }
+  ],
+  "forms": ["manifests", "manifested"],
+  "synonyms": ["list", "inventory", "record"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#18.4", "surface": "manifest", "pos": "명사", "sense": "매니페스트(항목·진행 상태 목록)" },
+   { "sid": "lesson-d5#28.4", "surface": "manifest", "pos": "명사", "sense": "매니페스트(항목·진행 상태 목록)" },
+   { "sid": "lesson-d5#28.6", "surface": "manifest", "pos": "명사", "sense": "매니페스트(항목·진행 상태 목록)" }
+  ]
+ },
+ {
+  "lemma": "manually",
+  "skip": null,
+  "word": "manually",
+  "pos": ["부사"],
+  "ipa": "ˈmænjuəli",
+  "meaning": "수동으로, 사람이 직접 (manual: 수동의)",
+  "short": "수동으로, 사람이 직접",
+  "senses": [
+   { "pos": "부사", "ko": "수동으로, 사람이 직접" },
+   { "pos": "형용사", "ko": "(manual) 수동의, 손으로 하는" },
+   { "pos": "명사", "ko": "(manual) 설명서, 매뉴얼" }
+  ],
+  "forms": ["manual"],
+  "synonyms": ["by hand"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#11.4", "surface": "manually", "pos": "부사", "sense": "수동으로, 사람이 직접" },
+   { "sid": "lesson-d5#31.6", "surface": "manual", "pos": "형용사", "sense": "(manual) 수동의, 손으로 하는" },
+   { "sid": "lesson-d2#24.4", "surface": "manually", "pos": "부사", "sense": "수동으로, 사람이 직접" },
+   { "sid": "mock04#39.5", "surface": "manually", "pos": "부사", "sense": "수동으로, 사람이 직접" }
+  ]
+ },
+ {
+  "lemma": "map",
+  "skip": null,
+  "word": "map",
+  "pos": ["동사", "명사"],
+  "ipa": "mæp",
+  "meaning": "① 대응시키다, 매핑하다 (mapping: 대응 관계) ② 지도 / (구조를) 파악하다",
+  "short": "대응시키다, 매핑하다",
+  "senses": [
+   { "pos": "동사", "ko": "대응시키다, 매핑하다" },
+   { "pos": "명사", "ko": "(mapping) 대응 관계, 매핑" },
+   { "pos": "동사", "ko": "(구조를) 파악하다, 조사해 정리하다" },
+   { "pos": "명사", "ko": "지도, 구조도" }
+  ],
+  "forms": ["maps", "mapped", "mapping", "mappings"],
+  "synonyms": ["associate", "correspond", "link"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#1.6", "surface": "mapped", "pos": "동사", "sense": "대응시키다, 매핑하다" },
+   { "sid": "sample01#7.1", "surface": "mapping", "pos": "명사", "sense": "(mapping) 대응 관계, 매핑" },
+   { "sid": "lesson-d5#21.0", "surface": "mapped", "pos": "동사", "sense": "(구조를) 파악하다, 조사해 정리하다" },
+   { "sid": "lesson-d5#21.1", "surface": "maps", "pos": "명사", "sense": "지도, 구조도" }
+  ]
+ },
+ {
+  "lemma": "maria",
+  "skip": "proper"
+ },
+ {
+  "lemma": "mark",
+  "skip": null,
+  "word": "mark",
+  "pos": ["동사", "명사"],
+  "ipa": "mɑːrk",
+  "meaning": "① (~로) 표시하다, 지정하다 ② 부호, 기호 (punctuation mark: 문장 부호) ③ 표시, 자국",
+  "short": "표시하다, 지정하다",
+  "senses": [
+   { "pos": "동사", "ko": "(~로) 표시하다, 지정하다" },
+   { "pos": "명사", "ko": "부호, 기호" },
+   { "pos": "명사", "ko": "표시, 자국" }
+  ],
+  "forms": ["marks", "marked", "marking"],
+  "synonyms": ["label", "flag", "tag"],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#19.4", "surface": "Mark", "pos": "동사", "sense": "(~로) 표시하다, 지정하다" },
+   { "sid": "lesson-d4#29.5", "surface": "mark", "pos": "명사", "sense": "부호, 기호" },
+   { "sid": "lesson-d5#14.6", "surface": "marked", "pos": "동사", "sense": "(~로) 표시하다, 지정하다" },
+   { "sid": "lesson-d4#11.3", "surface": "marked", "pos": "동사", "sense": "(~로) 표시하다, 지정하다" }
+  ]
+ },
+ {
+  "lemma": "marker",
+  "skip": null,
+  "word": "marker",
+  "pos": ["명사"],
+  "ipa": "ˈmɑːrkər",
+  "meaning": "표시, 표식 — 구간·위치를 알아보게 넣는 기호",
+  "short": "표시, 표식",
+  "senses": [
+   { "pos": "명사", "ko": "표시, 표식(구간·위치를 알리는 기호)" }
+  ],
+  "forms": ["markers"],
+  "synonyms": ["indicator", "tag", "flag"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#49.6", "surface": "markers", "pos": "명사", "sense": "표시, 표식(구간·위치를 알리는 기호)" },
+   { "sid": "lesson-d1#21.0", "surface": "marker", "pos": "명사", "sense": "표시, 표식(구간·위치를 알리는 기호)" }
+  ]
+ },
+ {
+  "lemma": "market",
+  "skip": null,
+  "word": "market",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈmɑːrkɪt",
+  "meaning": "① 시장 ② (marketing) 마케팅 ③ (상품을) 시장에 내놓다, 홍보하다",
+  "short": "시장",
+  "senses": [
+   { "pos": "명사", "ko": "시장" },
+   { "pos": "명사", "ko": "(marketing) 마케팅" },
+   { "pos": "동사", "ko": "(상품을) 시장에 내놓다, 홍보하다" }
+  ],
+  "forms": ["markets", "marketing"],
+  "synonyms": ["marketplace"],
+  "domain": "비즈니스·업무",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#16.0", "surface": "market", "pos": "명사", "sense": "시장" },
+   { "sid": "sample01#7.0", "surface": "marketing", "pos": "명사", "sense": "(marketing) 마케팅" },
+   { "sid": "mock04#28.1", "surface": "market", "pos": "명사", "sense": "시장" },
+   { "sid": "lesson-d5#6.0", "surface": "market", "pos": "명사", "sense": "시장" }
+  ]
+ },
+ {
+  "lemma": "market-research",
+  "skip": null,
+  "word": "market-research",
+  "pos": ["명사구"],
+  "ipa": "ˈmɑːrkɪt rɪˈsɜːrtʃ",
+  "meaning": "시장 조사 (market-research ~: 시장 조사용 ~)",
+  "short": "시장 조사",
+  "senses": [
+   { "pos": "명사구", "ko": "시장 조사" }
+  ],
+  "forms": [],
+  "synonyms": ["market analysis"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#36.0", "surface": "market-research", "pos": "명사구", "sense": "시장 조사" },
+   { "sid": "lesson-d1#9.0", "surface": "market-research", "pos": "명사구", "sense": "시장 조사" }
+  ]
+ },
+ {
+  "lemma": "market-size",
+  "skip": null,
+  "word": "market-size",
+  "pos": ["명사구"],
+  "ipa": "ˈmɑːrkɪt saɪz",
+  "meaning": "시장 규모",
+  "short": "시장 규모",
+  "senses": [
+   { "pos": "명사구", "ko": "시장 규모" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#35.1", "surface": "market-size", "pos": "명사구", "sense": "시장 규모" },
+   { "sid": "mock04#35.6", "surface": "market-size", "pos": "명사구", "sense": "시장 규모" }
+  ]
+ },
+ {
+  "lemma": "markup",
+  "skip": null,
+  "word": "markup",
+  "pos": ["명사"],
+  "ipa": "ˈmɑːrkʌp",
+  "meaning": "마크업 — 서식을 나타내는 기호 (Markdown 기호, HTML 태그 등)",
+  "short": "마크업(서식 기호)",
+  "senses": [
+   { "pos": "명사", "ko": "마크업(서식을 나타내는 기호·태그)" },
+   { "pos": "명사", "ko": "(가격) 인상분, 이윤 폭" }
+  ],
+  "forms": ["markups"],
+  "synonyms": ["formatting", "tags"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "match",
+  "skip": null,
+  "word": "match",
+  "pos": ["동사", "명사"],
+  "ipa": "mætʃ",
+  "meaning": "① (조건·패턴과) 일치하다, 맞다 ② 일치하는 것, 일치 결과",
+  "short": "일치하다, 맞다",
+  "senses": [
+   { "pos": "동사", "ko": "(조건·패턴과) 일치하다, 맞다" },
+   { "pos": "형용사", "ko": "(matching) 해당하는, 짝이 되는" },
+   { "pos": "동사", "ko": "(가격 등을) 맞춰 주다" },
+   { "pos": "명사", "ko": "일치하는 것, 일치 결과" }
+  ],
+  "forms": ["matches", "matched", "matching"],
+  "synonyms": ["correspond", "fit", "agree"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#14.3", "surface": "matches", "pos": "동사", "sense": "(조건·패턴과) 일치하다, 맞다" },
+   { "sid": "lesson-d2#27.0", "surface": "matching", "pos": "형용사", "sense": "(matching) 해당하는, 짝이 되는" },
+   { "sid": "lesson-d5#10.0", "surface": "match", "pos": "동사", "sense": "(가격 등을) 맞춰 주다" },
+   { "sid": "sample01#11.3", "surface": "matching", "pos": "동사", "sense": "(조건·패턴과) 일치하다, 맞다" }
+  ]
+ },
+ {
+  "lemma": "matcher",
+  "skip": null,
+  "word": "matcher",
+  "pos": ["명사"],
+  "ipa": "ˈmætʃər",
+  "meaning": "매처 — 훅이 어떤 도구에 반응할지 정하는 패턴",
+  "short": "매처(훅 대상 지정 패턴)",
+  "senses": [
+   { "pos": "명사", "ko": "매처(훅이 반응할 도구를 정하는 패턴)" }
+  ],
+  "forms": ["matchers"],
+  "synonyms": ["pattern", "filter"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#23.0", "surface": "matcher", "pos": "명사", "sense": "매처(훅이 반응할 도구를 정하는 패턴)" },
+   { "sid": "lesson-d1#27.1", "surface": "matcher", "pos": "명사", "sense": "매처(훅이 반응할 도구를 정하는 패턴)" },
+   { "sid": "lesson-d1#29.1", "surface": "matcher", "pos": "명사", "sense": "매처(훅이 반응할 도구를 정하는 패턴)" },
+   { "sid": "lesson-d1#25.1", "surface": "matcher", "pos": "명사", "sense": "매처(훅이 반응할 도구를 정하는 패턴)" }
+  ]
+ },
+ {
+  "lemma": "material",
+  "skip": null,
+  "word": "material",
+  "pos": ["명사", "형용사"],
+  "ipa": "məˈtɪriəl",
+  "meaning": "① 자료, (글의) 내용 ② 재료, 소재 ③ (형) 중요한, 실질적인",
+  "short": "자료, 내용",
+  "senses": [
+   { "pos": "명사", "ko": "자료, 내용" },
+   { "pos": "명사", "ko": "재료, 소재" },
+   { "pos": "형용사", "ko": "중요한, 실질적인" }
+  ],
+  "forms": ["materials"],
+  "synonyms": ["content", "information", "data"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#14.4", "surface": "material", "pos": "명사", "sense": "자료, 내용" },
+   { "sid": "lesson-d5#15.3", "surface": "material", "pos": "명사", "sense": "자료, 내용" },
+   { "sid": "lesson-d1#18.4", "surface": "material", "pos": "명사", "sense": "자료, 내용" }
+  ]
+ },
+ {
+  "lemma": "math",
+  "skip": "code"
+ },
+ {
+  "lemma": "matter",
+  "skip": null,
+  "word": "matter",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈmætər",
+  "meaning": "① 중요하다 ② 문제, 사안 ③ (no matter ~) ~와 상관없이",
+  "short": "중요하다",
+  "senses": [
+   { "pos": "동사", "ko": "중요하다" },
+   { "pos": "명사", "ko": "문제, 사안" },
+   { "pos": "부사구", "ko": "(no matter ~) ~와 상관없이" }
+  ],
+  "forms": ["matters", "mattered"],
+  "synonyms": ["count", "issue", "concern"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#1.2", "surface": "matter", "pos": "동사", "sense": "중요하다" },
+   { "sid": "lesson-d4#3.3", "surface": "matter", "pos": "명사", "sense": "문제, 사안" },
+   { "sid": "lesson-d3#19.4", "surface": "matter", "pos": "부사구", "sense": "(no matter ~) ~와 상관없이" },
+   { "sid": "lesson-d3#12.0", "surface": "matters", "pos": "동사", "sense": "중요하다" }
+  ]
+ },
+ {
+  "lemma": "max",
+  "skip": null,
+  "word": "max",
+  "pos": ["약어"],
+  "ipa": "mæks",
+  "meaning": "최대 (maximum 의 줄임말)",
+  "short": "최대",
+  "senses": [
+   { "pos": "약어", "ko": "최대(maximum의 줄임)" }
+  ],
+  "forms": [],
+  "synonyms": ["maximum"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#9.0", "surface": "max", "pos": "약어", "sense": "최대(maximum의 줄임)" }
+  ]
+ },
+ {
+  "lemma": "maximum",
+  "skip": null,
+  "word": "maximum",
+  "pos": ["명사", "형용사"],
+  "ipa": "ˈmæksɪməm",
+  "meaning": "최대(의), 최댓값",
+  "short": "최대의, 최댓값",
+  "senses": [
+   { "pos": "형용사", "ko": "최대의" },
+   { "pos": "명사", "ko": "최대, 최댓값" }
+  ],
+  "forms": ["maximums", "maximize"],
+  "synonyms": ["max", "peak", "ceiling"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#30.4", "surface": "maximum", "pos": "형용사", "sense": "최대의" },
+   { "sid": "sample01#2.5", "surface": "maximum", "pos": "형용사", "sense": "최대의" },
+   { "sid": "mock04#37.6", "surface": "maximum", "pos": "형용사", "sense": "최대의" },
+   { "sid": "lesson-d5#27.5", "surface": "maximum", "pos": "형용사", "sense": "최대의" }
+  ]
+ },
+ {
+  "lemma": "mcp",
+  "skip": null,
+  "word": "MCP",
+  "pos": ["약어"],
+  "ipa": "ˌem.siːˈpiː",
+  "meaning": "Model Context Protocol — 모델에 외부 도구·데이터를 연결하는 표준 프로토콜",
+  "short": "모델 컨텍스트 프로토콜",
+  "senses": [
+   { "pos": "약어", "ko": "모델 컨텍스트 프로토콜(외부 도구 연결 표준)" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#10.0", "surface": "MCP", "pos": "약어", "sense": "모델 컨텍스트 프로토콜(외부 도구 연결 표준)" },
+   { "sid": "sample01#4.0", "surface": "MCP", "pos": "약어", "sense": "모델 컨텍스트 프로토콜(외부 도구 연결 표준)" },
+   { "sid": "mock04#1.1", "surface": "MCP", "pos": "약어", "sense": "모델 컨텍스트 프로토콜(외부 도구 연결 표준)" },
+   { "sid": "lesson-d1#30.0", "surface": "MCP", "pos": "약어", "sense": "모델 컨텍스트 프로토콜(외부 도구 연결 표준)" }
+  ]
+ },
+ {
+  "lemma": "mean",
+  "skip": null,
+  "word": "mean",
+  "pos": ["동사", "명사", "형용사"],
+  "ipa": "miːn",
+  "meaning": "① 의미하다, 뜻하다 ② (be meant to/for) ~하도록 의도되다, ~용이다 ③ (means) 수단, 방법 ④ 평균(의)",
+  "short": "의미하다, 뜻하다",
+  "senses": [
+   { "pos": "동사", "ko": "의미하다, 뜻하다" },
+   { "pos": "동사", "ko": "(be meant to/for) ~하도록 의도되다, ~용이다" },
+   { "pos": "명사", "ko": "(means) 수단, 방법" },
+   { "pos": "형용사", "ko": "평균의" }
+  ],
+  "forms": ["means", "meant", "meaning"],
+  "synonyms": ["signify", "indicate", "intend"],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#32.2", "surface": "means", "pos": "동사", "sense": "의미하다, 뜻하다" },
+   { "sid": "lesson-d2#6.0", "surface": "meant", "pos": "동사", "sense": "(be meant to/for) ~하도록 의도되다, ~용이다" },
+   { "sid": "mock04#17.5", "surface": "mean", "pos": "동사", "sense": "의미하다, 뜻하다" },
+   { "sid": "lesson-d3#28.1", "surface": "meant", "pos": "동사", "sense": "의미하다, 뜻하다" }
+  ]
+ },
+ {
+  "lemma": "meaningful",
+  "skip": null,
+  "word": "meaningful",
+  "pos": ["형용사"],
+  "ipa": "ˈmiːnɪŋfl",
+  "meaning": "의미 있는, 유의미한",
+  "short": "의미 있는, 유의미한",
+  "senses": [
+   { "pos": "형용사", "ko": "의미 있는, 유의미한" }
+  ],
+  "forms": ["meaningfully"],
+  "synonyms": ["significant", "substantial", "worthwhile"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#7.3", "surface": "meaningful", "pos": "형용사", "sense": "의미 있는, 유의미한" },
+   { "sid": "mock04#17.1", "surface": "meaningful", "pos": "형용사", "sense": "의미 있는, 유의미한" }
+  ]
+ },
+ {
+  "lemma": "measure",
+  "skip": null,
+  "word": "measure",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈmeʒər",
+  "meaning": "① 측정하다, 재다 ② 조치, 대책 ③ 척도, 기준",
+  "short": "측정하다, 재다",
+  "senses": [
+   { "pos": "동사", "ko": "측정하다, 재다" },
+   { "pos": "명사", "ko": "조치, 대책" },
+   { "pos": "명사", "ko": "척도, 기준" }
+  ],
+  "forms": ["measures", "measured", "measuring", "measurement"],
+  "synonyms": ["gauge", "assess", "quantify"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#34.1", "surface": "measures", "pos": "동사", "sense": "측정하다, 재다" },
+   { "sid": "lesson-d2#7.4", "surface": "measure", "pos": "명사", "sense": "조치, 대책" },
+   { "sid": "lesson-d5#30.3", "surface": "Measure", "pos": "동사", "sense": "측정하다, 재다" }
+  ]
+ },
+ {
+  "lemma": "mechanism",
+  "skip": null,
+  "word": "mechanism",
+  "pos": ["명사"],
+  "ipa": "ˈmekənɪzəm",
+  "meaning": "(무언가를 하는) 수단, 장치, 메커니즘",
+  "short": "수단, 장치, 메커니즘",
+  "senses": [
+   { "pos": "명사", "ko": "수단, 장치, 메커니즘" }
+  ],
+  "forms": ["mechanisms"],
+  "synonyms": ["means", "method", "system"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#24.7", "surface": "mechanism", "pos": "명사", "sense": "수단, 장치, 메커니즘" },
+   { "sid": "lesson-d1#3.0", "surface": "mechanism", "pos": "명사", "sense": "수단, 장치, 메커니즘" },
+   { "sid": "lesson-d5#25.0", "surface": "mechanism", "pos": "명사", "sense": "수단, 장치, 메커니즘" }
+  ]
+ },
+ {
+  "lemma": "medical",
+  "skip": null,
+  "word": "medical",
+  "pos": ["형용사"],
+  "ipa": "ˈmedɪkl",
+  "meaning": "의료의, 의학의 (medical records: 의료 기록)",
+  "short": "의료의, 의학의",
+  "senses": [
+   { "pos": "형용사", "ko": "의료의, 의학의" }
+  ],
+  "forms": ["medically"],
+  "synonyms": ["clinical", "healthcare"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "medium",
+  "skip": null,
+  "word": "medium",
+  "pos": ["형용사", "명사"],
+  "ipa": "ˈmiːdiəm",
+  "meaning": "① 중간의, 보통의 ② (명) 매체, 수단 (복수 media)",
+  "short": "중간의, 보통의",
+  "senses": [
+   { "pos": "형용사", "ko": "중간의, 보통의" },
+   { "pos": "명사", "ko": "매체, 수단" }
+  ],
+  "forms": ["media", "mediums"],
+  "synonyms": ["moderate", "middle", "average"],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#30.5", "surface": "medium", "pos": "형용사", "sense": "중간의, 보통의" }
+  ]
+ },
+ {
+  "lemma": "meet",
+  "skip": null,
+  "word": "meet",
+  "pos": ["동사", "명사"],
+  "ipa": "miːt",
+  "meaning": "① (요건·기준을) 충족하다, 맞추다 ② 만나다 ③ (meeting) 회의",
+  "short": "(요건을) 충족하다",
+  "senses": [
+   { "pos": "동사", "ko": "(요건·기준을) 충족하다" },
+   { "pos": "명사", "ko": "(meeting) 회의" },
+   { "pos": "동사", "ko": "만나다" }
+  ],
+  "forms": ["meets", "met", "meeting", "meetings"],
+  "synonyms": ["satisfy", "fulfill", "fit"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#2.1", "surface": "meets", "pos": "동사", "sense": "(요건·기준을) 충족하다" },
+   { "sid": "lesson-d4#31.2", "surface": "meeting", "pos": "명사", "sense": "(meeting) 회의" },
+   { "sid": "lesson-d5#29.5", "surface": "meets", "pos": "동사", "sense": "(요건·기준을) 충족하다" },
+   { "sid": "lesson-d5#30.3", "surface": "meets", "pos": "동사", "sense": "(요건·기준을) 충족하다" }
+  ]
+ },
+ {
+  "lemma": "member",
+  "skip": null,
+  "word": "member",
+  "pos": ["명사"],
+  "ipa": "ˈmembər",
+  "meaning": "① 구성원, 일원 (staff member: 직원, team member: 팀원) ② 회원",
+  "short": "구성원, 일원",
+  "senses": [
+   { "pos": "명사", "ko": "구성원, 일원" },
+   { "pos": "명사", "ko": "회원" }
+  ],
+  "forms": ["members", "membership"],
+  "synonyms": ["participant"],
+  "domain": "사람·조직·역할",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#9.2", "surface": "member", "pos": "명사", "sense": "구성원, 일원" },
+   { "sid": "lesson-d3#3.4", "surface": "member", "pos": "명사", "sense": "구성원, 일원" },
+   { "sid": "lesson-d5#9.5", "surface": "member", "pos": "명사", "sense": "구성원, 일원" }
+  ]
+ },
+ {
+  "lemma": "memo",
+  "skip": null,
+  "word": "memo",
+  "pos": ["명사"],
+  "ipa": "ˈmemoʊ",
+  "meaning": "메모, 전표 — credit memo 대변 메모(대금을 깎아 주는 전표)",
+  "short": "메모, 전표",
+  "senses": [
+   { "pos": "명사", "ko": "메모, 짧은 보고 문서" },
+   { "pos": "명사", "ko": "(credit memo) 대변 메모, 전표" }
+  ],
+  "forms": ["memos", "memorandum"],
+  "synonyms": ["note", "memorandum"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#6.1", "surface": "memo", "pos": "명사", "sense": "메모, 짧은 보고 문서" },
+   { "sid": "mock04#56.2", "surface": "memo", "pos": "명사", "sense": "(credit memo) 대변 메모, 전표" },
+   { "sid": "lesson-d5#6.5", "surface": "memo", "pos": "명사", "sense": "메모, 짧은 보고 문서" }
+  ]
+ },
+ {
+  "lemma": "memory",
+  "skip": null,
+  "word": "memory",
+  "pos": ["명사"],
+  "ipa": "ˈmeməri",
+  "meaning": "① 기억, 기억력 ② (Claude Code) 메모리 — CLAUDE.md 처럼 세션마다 불러오는 지침 ③ (컴퓨터) 메모리, 기억 장치",
+  "short": "기억, 메모리",
+  "senses": [
+   { "pos": "명사", "ko": "기억, 기억력" },
+   { "pos": "명사", "ko": "메모리(세션마다 불러오는 지침 파일)" },
+   { "pos": "명사", "ko": "(컴퓨터) 메모리, 기억 장치" }
+  ],
+  "forms": ["memories", "memorize"],
+  "synonyms": ["recall", "recollection"],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#1.3", "surface": "memory", "pos": "명사", "sense": "기억, 기억력" },
+   { "sid": "mock04#40.6", "surface": "memory", "pos": "명사", "sense": "메모리(세션마다 불러오는 지침 파일)" },
+   { "sid": "mock04#16.6", "surface": "memory", "pos": "명사", "sense": "기억, 기억력" },
+   { "sid": "mock04#11.5", "surface": "memory", "pos": "명사", "sense": "메모리(세션마다 불러오는 지침 파일)" }
+  ]
+ },
+ {
+  "lemma": "mental",
+  "skip": null,
+  "word": "mental",
+  "pos": ["형용사"],
+  "ipa": "ˈmentl",
+  "meaning": "정신의, 마음속의 (mental model: 머릿속에 그린 이해 구조)",
+  "short": "마음속의, 정신의",
+  "senses": [
+   { "pos": "형용사", "ko": "마음속의, 정신의" }
+  ],
+  "forms": ["mentally"],
+  "synonyms": ["cognitive", "internal"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#31.3", "surface": "mental", "pos": "형용사", "sense": "마음속의, 정신의" }
+  ]
+ },
+ {
+  "lemma": "mention",
+  "skip": null,
+  "word": "mention",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈmenʃn",
+  "meaning": "① 언급하다, 말하다 ② 언급",
+  "short": "언급하다",
+  "senses": [
+   { "pos": "동사", "ko": "언급하다, 말하다" },
+   { "pos": "명사", "ko": "언급" }
+  ],
+  "forms": ["mentions", "mentioned", "mentioning"],
+  "synonyms": ["refer to", "cite", "note"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#25.1", "surface": "mention", "pos": "동사", "sense": "언급하다, 말하다" },
+   { "sid": "lesson-d4#3.4", "surface": "mention", "pos": "명사", "sense": "언급" },
+   { "sid": "lesson-d5#10.1", "surface": "mention", "pos": "동사", "sense": "언급하다, 말하다" }
+  ]
+ },
+ {
+  "lemma": "menu",
+  "skip": null,
+  "word": "menu",
+  "pos": ["명사"],
+  "ipa": "ˈmenjuː",
+  "meaning": "메뉴 — 고를 수 있는 항목 목록",
+  "short": "메뉴(선택 목록)",
+  "senses": [
+   { "pos": "명사", "ko": "메뉴(선택 항목 목록)" }
+  ],
+  "forms": ["menus"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#11.5", "surface": "menu", "pos": "명사", "sense": "메뉴(선택 항목 목록)" }
+  ]
+ },
+ {
+  "lemma": "merchant",
+  "skip": null,
+  "word": "merchant",
+  "pos": ["명사"],
+  "ipa": "ˈmɜːrtʃənt",
+  "meaning": "가맹점, 판매자",
+  "short": "가맹점, 판매자",
+  "senses": [
+   { "pos": "명사", "ko": "가맹점, 판매자" }
+  ],
+  "forms": ["merchants"],
+  "synonyms": ["seller", "vendor", "retailer"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#29.0", "surface": "merchant", "pos": "명사", "sense": "가맹점, 판매자" }
+  ]
+ },
+ {
+  "lemma": "merely",
+  "skip": null,
+  "word": "merely",
+  "pos": ["부사"],
+  "ipa": "ˈmɪrli",
+  "meaning": "단지, 그저",
+  "short": "단지, 그저",
+  "senses": [
+   { "pos": "부사", "ko": "단지, 그저" }
+  ],
+  "forms": ["mere"],
+  "synonyms": ["only", "just", "simply"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "merge",
+  "skip": null,
+  "word": "merge",
+  "pos": ["동사", "명사"],
+  "ipa": "mɜːrdʒ",
+  "meaning": "합치다, 병합(하다)",
+  "short": "합치다, 병합하다",
+  "senses": [
+   { "pos": "동사", "ko": "합치다, 병합하다" },
+   { "pos": "동사", "ko": "(코드 변경이) 머지되다, 반영되다" },
+   { "pos": "명사", "ko": "병합, 머지" }
+  ],
+  "forms": ["merges", "merged", "merging", "merger"],
+  "synonyms": ["combine", "consolidate", "unify"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#34.1", "surface": "merges", "pos": "동사", "sense": "합치다, 병합하다" },
+   { "sid": "lesson-d4#32.0", "surface": "merging", "pos": "동사", "sense": "(코드 변경이) 머지되다, 반영되다" },
+   { "sid": "lesson-d5#39.7", "surface": "merge", "pos": "동사", "sense": "합치다, 병합하다" },
+   { "sid": "lesson-d2#22.6", "surface": "merged", "pos": "동사", "sense": "합치다, 병합하다" }
+  ]
+ },
+ {
+  "lemma": "message",
+  "skip": null,
+  "word": "message",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈmesɪdʒ",
+  "meaning": "① 메시지, 전하는 글 ② (API·대화의) 메시지 — 한 턴의 입력·응답 단위 ③ (동) 메시지를 보내다",
+  "short": "메시지",
+  "senses": [
+   { "pos": "명사", "ko": "메시지, 전하는 글" },
+   { "pos": "명사", "ko": "(대화의) 메시지(한 턴의 입력·응답)" },
+   { "pos": "동사", "ko": "메시지를 보내다" }
+  ],
+  "forms": ["messages", "messaging"],
+  "synonyms": ["note", "communication"],
+  "domain": "요청·소통",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#6.5", "surface": "message", "pos": "명사", "sense": "메시지, 전하는 글" },
+   { "sid": "sample01#10.3", "surface": "message", "pos": "명사", "sense": "(대화의) 메시지(한 턴의 입력·응답)" },
+   { "sid": "lesson-d5#1.0", "surface": "message", "pos": "명사", "sense": "(대화의) 메시지(한 턴의 입력·응답)" },
+   { "sid": "mock04#16.2", "surface": "message", "pos": "명사", "sense": "(대화의) 메시지(한 턴의 입력·응답)" }
+  ]
+ },
+ {
+  "lemma": "metadata",
+  "skip": null,
+  "word": "metadata",
+  "pos": ["명사"],
+  "ipa": "ˈmetədeɪtə",
+  "meaning": "메타데이터 — 데이터를 설명하는 부가 정보 (형식·출처·코드 등)",
+  "short": "메타데이터(부가 정보)",
+  "senses": [
+   { "pos": "명사", "ko": "메타데이터(데이터에 대한 부가 정보)" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#9.1", "surface": "metadata", "pos": "명사", "sense": "메타데이터(데이터에 대한 부가 정보)" },
+   { "sid": "lesson-d5#5.0", "surface": "metadata", "pos": "명사", "sense": "메타데이터(데이터에 대한 부가 정보)" },
+   { "sid": "lesson-d2#19.5", "surface": "metadata", "pos": "명사", "sense": "메타데이터(데이터에 대한 부가 정보)" }
+  ]
+ },
+ {
+  "lemma": "methodology",
+  "skip": null,
+  "word": "methodology",
+  "pos": ["명사"],
+  "ipa": "ˌmeθəˈdɑːlədʒi",
+  "meaning": "방법론, (연구) 방법",
+  "short": "방법론, 연구 방법",
+  "senses": [
+   { "pos": "명사", "ko": "방법론, (연구) 방법" }
+  ],
+  "forms": ["methodologies"],
+  "synonyms": ["method", "approach", "procedure"],
+  "domain": "계획·목표·전략",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "microservices",
+  "skip": null,
+  "word": "microservice",
+  "pos": ["명사"],
+  "ipa": "ˈmaɪkroʊsɜːrvɪs",
+  "meaning": "마이크로서비스 — 기능별로 잘게 나눠 따로 배포·운영하는 작은 서비스 (그런 구조)",
+  "short": "마이크로서비스",
+  "senses": [
+   { "pos": "명사", "ko": "마이크로서비스(기능별로 나눈 독립 서비스)" }
+  ],
+  "forms": ["microservices"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#21.0", "surface": "microservices", "pos": "명사", "sense": "마이크로서비스(기능별로 나눈 독립 서비스)" }
+  ]
+ },
+ {
+  "lemma": "mid",
+  "skip": null,
+  "word": "mid",
+  "pos": ["형용사", "전치사"],
+  "ipa": "mɪd",
+  "meaning": "중간의, ~ 도중에 (주로 결합어: mid-edit 편집 도중, mid-way 중간쯤에)",
+  "short": "중간의, 도중에",
+  "senses": [
+   { "pos": "형용사", "ko": "중간의, 한가운데의" },
+   { "pos": "전치사", "ko": "~ 도중에, ~ 중간에" }
+  ],
+  "forms": [],
+  "synonyms": ["middle", "midway"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "mid-analysis",
+  "skip": null,
+  "word": "mid-analysis",
+  "pos": ["부사"],
+  "ipa": "ˌmɪd əˈnæləsɪs",
+  "meaning": "분석 도중에",
+  "short": "분석 도중에",
+  "senses": [
+   { "pos": "부사", "ko": "분석 도중에" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#29.2", "surface": "mid-analysis", "pos": "부사", "sense": "분석 도중에" }
+  ]
+ },
+ {
+  "lemma": "mid-session",
+  "skip": null,
+  "word": "mid-session",
+  "pos": ["부사", "형용사"],
+  "ipa": "ˌmɪd ˈseʃn",
+  "meaning": "세션 도중에(의)",
+  "short": "세션 도중에",
+  "senses": [
+   { "pos": "부사", "ko": "세션 도중에" },
+   { "pos": "형용사", "ko": "세션 도중의" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#27.6", "surface": "mid-session", "pos": "부사", "sense": "세션 도중에" },
+   { "sid": "mock04#13.7", "surface": "mid-session", "pos": "부사", "sense": "세션 도중에" }
+  ]
+ },
+ {
+  "lemma": "middle",
+  "skip": null,
+  "word": "middle",
+  "pos": ["명사", "형용사"],
+  "ipa": "ˈmɪdl",
+  "meaning": "① 중간, 한가운데 (in the middle of ~: ~의 중간에, ~ 도중에) ② 중간의, 가운데의",
+  "short": "중간, 한가운데",
+  "senses": [
+   { "pos": "명사", "ko": "중간, 한가운데" },
+   { "pos": "형용사", "ko": "중간의, 가운데의" }
+  ],
+  "forms": [],
+  "synonyms": ["center", "midst"],
+  "domain": "구조·구성·부분",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#6.1", "surface": "middle", "pos": "명사", "sense": "중간, 한가운데" },
+   { "sid": "mock04#7.5", "surface": "middle", "pos": "명사", "sense": "중간, 한가운데" },
+   { "sid": "mock04#36.2", "surface": "middle", "pos": "명사", "sense": "중간, 한가운데" }
+  ]
+ },
+ {
+  "lemma": "middle-name",
+  "skip": null,
+  "word": "middle-name",
+  "pos": ["명사구"],
+  "ipa": "ˌmɪdl ˈneɪm",
+  "meaning": "중간 이름, 미들 네임 (이름과 성 사이에 오는 이름)",
+  "short": "중간 이름(미들 네임)",
+  "senses": [
+   { "pos": "명사구", "ko": "중간 이름, 미들 네임" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#24.1", "surface": "middle-name", "pos": "명사구", "sense": "중간 이름, 미들 네임" },
+   { "sid": "lesson-d3#24.3", "surface": "middle-name", "pos": "명사구", "sense": "중간 이름, 미들 네임" },
+   { "sid": "lesson-d3#24.5", "surface": "middle-name", "pos": "명사구", "sense": "중간 이름, 미들 네임" }
+  ]
+ },
+ {
+  "lemma": "midway",
+  "skip": null,
+  "word": "midway",
+  "pos": ["부사", "형용사"],
+  "ipa": "ˌmɪdˈweɪ",
+  "meaning": "(진행) 도중에, 중간쯤에",
+  "short": "도중에, 중간쯤에",
+  "senses": [
+   { "pos": "부사", "ko": "(진행) 도중에, 중간쯤에" },
+   { "pos": "형용사", "ko": "중간 지점의" }
+  ],
+  "forms": [],
+  "synonyms": ["halfway", "midstream"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#20.1", "surface": "Midway", "pos": "부사", "sense": "(진행) 도중에, 중간쯤에" },
+   { "sid": "lesson-d3#18.0", "surface": "Midway", "pos": "부사", "sense": "(진행) 도중에, 중간쯤에" }
+  ]
+ }
+]

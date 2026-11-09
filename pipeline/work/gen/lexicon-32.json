@@ -1,0 +1,942 @@
+[
+ {
+  "lemma": "primary",
+  "skip": null,
+  "word": "primary",
+  "pos": ["형용사"],
+  "ipa": "ˈpraɪmeri",
+  "meaning": "① 주된, 주요한 ② 1차의, 기본의 (primary key: 기본 키)",
+  "short": "주된, 주요한",
+  "senses": [
+   { "pos": "형용사", "ko": "주된, 주요한" },
+   { "pos": "형용사", "ko": "1차의, 기본의" }
+  ],
+  "forms": ["primarily"],
+  "synonyms": ["main", "chief", "principal"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#10.2", "surface": "primary", "pos": "형용사", "sense": "주된, 주요한" },
+   { "sid": "lesson-d5#17.2", "surface": "primary", "pos": "형용사", "sense": "주된, 주요한" },
+   { "sid": "lesson-d1#3.0", "surface": "primary", "pos": "형용사", "sense": "주된, 주요한" }
+  ]
+ },
+ {
+  "lemma": "principal",
+  "skip": null,
+  "word": "principal",
+  "pos": ["명사", "형용사"],
+  "ipa": "ˈprɪnsəpl",
+  "meaning": "① (보안) 주체 — 권한을 받아 행동하는 사용자·서비스 ② 주된, 주요한",
+  "short": "(보안) 주체, 주요한",
+  "senses": [
+   { "pos": "명사", "ko": "(보안) 권한 주체" },
+   { "pos": "형용사", "ko": "주된, 주요한" },
+   { "pos": "명사", "ko": "(대출의) 원금" }
+  ],
+  "forms": ["principals", "principally"],
+  "synonyms": ["main", "chief", "primary"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "print",
+  "skip": null,
+  "word": "print",
+  "pos": ["동사", "명사"],
+  "ipa": "prɪnt",
+  "meaning": "① (화면에) 출력하다, 찍어 내다 ② 인쇄하다 ③ 인쇄(물), 활자",
+  "short": "(화면에) 출력하다",
+  "senses": [
+   { "pos": "동사", "ko": "(화면에) 출력하다, 찍어 내다" },
+   { "pos": "동사", "ko": "인쇄하다" },
+   { "pos": "명사", "ko": "인쇄(물), 활자" }
+  ],
+  "forms": ["prints", "printed", "printing", "printer"],
+  "synonyms": ["output", "display", "emit"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#12.1", "surface": "prints", "pos": "동사", "sense": "(화면에) 출력하다, 찍어 내다" }
+  ]
+ },
+ {
+  "lemma": "prior",
+  "skip": null,
+  "word": "prior",
+  "pos": ["형용사"],
+  "ipa": "ˈpraɪər",
+  "meaning": "이전의, 앞선",
+  "short": "이전의, 앞선",
+  "senses": [
+   { "pos": "형용사", "ko": "이전의, 앞선" },
+   { "pos": "형용사", "ko": "사전의, 미리 가진 (prior knowledge: 사전 지식)" },
+   { "pos": "전치사구", "ko": "(prior to) ~ 이전에" }
+  ],
+  "forms": ["prior to"],
+  "synonyms": ["previous", "earlier", "preceding"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#28.4", "surface": "prior", "pos": "형용사", "sense": "이전의, 앞선" },
+   { "sid": "lesson-d1#37.0", "surface": "prior", "pos": "형용사", "sense": "사전의, 미리 가진 (prior knowledge: 사전 지식)" },
+   { "sid": "mock04#38.5", "surface": "prior", "pos": "형용사", "sense": "이전의, 앞선" }
+  ]
+ },
+ {
+  "lemma": "prioritize",
+  "skip": null,
+  "word": "prioritize",
+  "pos": ["동사"],
+  "ipa": "praɪˈɔːrətaɪz",
+  "meaning": "우선순위를 매기다, 먼저 처리하다",
+  "short": "우선순위를 매기다, 우선하다",
+  "senses": [
+   { "pos": "동사", "ko": "우선순위를 매기다" },
+   { "pos": "동사", "ko": "(~을) 우선하다, 먼저 처리하다" }
+  ],
+  "forms": ["prioritizes", "prioritized", "prioritizing", "prioritization"],
+  "synonyms": ["rank", "favor"],
+  "domain": "계획·목표·전략",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#33.0", "surface": "prioritize", "pos": "동사", "sense": "우선순위를 매기다" },
+   { "sid": "vocab:prioritize.0", "surface": "prioritize", "pos": "동사", "sense": "(~을) 우선하다, 먼저 처리하다" }
+  ]
+ },
+ {
+  "lemma": "priority",
+  "skip": null,
+  "word": "priority",
+  "pos": ["명사"],
+  "ipa": "praɪˈɔːrəti",
+  "meaning": "우선순위, 우선권 — Priority Tier: 용량을 약정해 우선 처리받는 등급",
+  "short": "우선순위, 우선권",
+  "senses": [
+   { "pos": "명사", "ko": "우선순위, 우선권" },
+   { "pos": "동사구", "ko": "(take priority over) ~보다 우선하다" },
+   { "pos": "명사", "ko": "(Priority Tier) 우선 처리 등급" }
+  ],
+  "forms": ["priorities", "prioritize"],
+  "synonyms": ["precedence", "preference"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#1.4", "surface": "priority", "pos": "명사", "sense": "우선순위, 우선권" },
+   { "sid": "lesson-d3#10.4", "surface": "take priority over", "pos": "동사구", "sense": "(take priority over) ~보다 우선하다" },
+   { "sid": "lesson-d2#22.5", "surface": "takes priority over", "pos": "동사구", "sense": "(take priority over) ~보다 우선하다" }
+  ]
+ },
+ {
+  "lemma": "privilege",
+  "skip": null,
+  "word": "privilege",
+  "pos": ["명사"],
+  "ipa": "ˈprɪvəlɪdʒ",
+  "meaning": "(시스템) 권한 — least privilege: 꼭 필요한 최소 권한만 주는 원칙",
+  "short": "(시스템) 권한",
+  "senses": [
+   { "pos": "명사", "ko": "(시스템) 권한 (least privilege: 최소 권한 원칙)" },
+   { "pos": "명사", "ko": "특권, 특혜" }
+  ],
+  "forms": ["privileges", "privileged"],
+  "synonyms": ["permission", "right"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "proactively",
+  "skip": null,
+  "word": "proactively",
+  "pos": ["부사"],
+  "ipa": "proʊˈæktɪvli",
+  "meaning": "먼저 나서서, 선제적으로",
+  "short": "먼저 나서서, 선제적으로",
+  "senses": [
+   { "pos": "부사", "ko": "먼저 나서서, 선제적으로" }
+  ],
+  "forms": ["proactive"],
+  "synonyms": ["preemptively", "in advance"],
+  "domain": "계획·목표·전략",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:proactively.0", "surface": "proactively", "pos": "부사", "sense": "먼저 나서서, 선제적으로" }
+  ]
+ },
+ {
+  "lemma": "probe",
+  "skip": null,
+  "word": "probe",
+  "pos": ["동사"],
+  "ipa": "proʊb",
+  "meaning": "(이것저것 시도하며) 탐색하다, 살펴보다",
+  "short": "탐색하다, 살펴보다",
+  "senses": [
+   { "pos": "동사", "ko": "(이것저것 시도하며) 탐색하다, 살펴보다" },
+   { "pos": "명사", "ko": "탐색 (시도), 조사" }
+  ],
+  "forms": ["probes", "probed", "probing"],
+  "synonyms": ["explore", "investigate", "examine"],
+  "domain": "검색·조회",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#41.5", "surface": "probing", "pos": "동사", "sense": "(이것저것 시도하며) 탐색하다, 살펴보다" },
+   { "sid": "mock04#41.8", "surface": "probes", "pos": "명사", "sense": "탐색 (시도), 조사" }
+  ]
+ },
+ {
+  "lemma": "problem",
+  "skip": null,
+  "word": "problem",
+  "pos": ["명사"],
+  "ipa": "ˈprɑːbləm",
+  "meaning": "① 문제, 문제점 ② (풀어야 할) 과제, 문제",
+  "short": "문제, 문제점",
+  "senses": [
+   { "pos": "명사", "ko": "문제, 문제점" },
+   { "pos": "명사", "ko": "(풀어야 할) 과제, 문제" }
+  ],
+  "forms": ["problems", "problematic"],
+  "synonyms": ["issue", "flaw", "trouble"],
+  "domain": "오류·실패·위험",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#3.1", "surface": "problem", "pos": "명사", "sense": "문제, 문제점" },
+   { "sid": "lesson-d4#11.1", "surface": "problems", "pos": "명사", "sense": "문제, 문제점" },
+   { "sid": "lesson-d5#17.2", "surface": "problem", "pos": "명사", "sense": "문제, 문제점" },
+   { "sid": "mock04#52.2", "surface": "problems", "pos": "명사", "sense": "문제, 문제점" }
+  ]
+ },
+ {
+  "lemma": "procedure",
+  "skip": null,
+  "word": "procedure",
+  "pos": ["명사"],
+  "ipa": "prəˈsiːdʒər",
+  "meaning": "절차",
+  "short": "절차",
+  "senses": [
+   { "pos": "명사", "ko": "절차, 순서" },
+   { "pos": "명사", "ko": "(의료) 수술, 시술" }
+  ],
+  "forms": ["procedures", "procedural"],
+  "synonyms": ["process", "protocol", "steps"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:procedure.0", "surface": "procedures", "pos": "명사", "sense": "절차, 순서" }
+  ]
+ },
+ {
+  "lemma": "proceed",
+  "skip": null,
+  "word": "proceed",
+  "pos": ["동사"],
+  "ipa": "proʊˈsiːd",
+  "meaning": "(다음 단계로) 진행하다, 계속하다",
+  "short": "진행하다, 계속하다",
+  "senses": [
+   { "pos": "동사", "ko": "(다음 단계로) 진행하다, 계속하다" }
+  ],
+  "forms": ["proceeds", "proceeded", "proceeding"],
+  "synonyms": ["continue", "go ahead", "advance"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#10.2", "surface": "proceed", "pos": "동사", "sense": "(다음 단계로) 진행하다, 계속하다" },
+   { "sid": "mock04#10.2", "surface": "proceeds", "pos": "동사", "sense": "(다음 단계로) 진행하다, 계속하다" },
+   { "sid": "lesson-d4#16.0", "surface": "proceed", "pos": "동사", "sense": "(다음 단계로) 진행하다, 계속하다" },
+   { "sid": "lesson-d3#19.2", "surface": "proceed", "pos": "동사", "sense": "(다음 단계로) 진행하다, 계속하다" }
+  ]
+ },
+ {
+  "lemma": "process",
+  "skip": null,
+  "word": "process",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈprɑːses",
+  "meaning": "① 처리하다 ② 과정, 절차",
+  "short": "처리하다, 과정",
+  "senses": [
+   { "pos": "동사", "ko": "처리하다" },
+   { "pos": "명사", "ko": "과정, 절차" },
+   { "pos": "명사", "ko": "(컴퓨터) 프로세스, 실행 중인 프로그램" }
+  ],
+  "forms": ["processes", "processed", "processing", "processor"],
+  "synonyms": ["handle", "treat"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#10.2", "surface": "processed", "pos": "동사", "sense": "처리하다" },
+   { "sid": "lesson-d3#30.7", "surface": "process", "pos": "명사", "sense": "(컴퓨터) 프로세스, 실행 중인 프로그램" },
+   { "sid": "lesson-d4#30.5", "surface": "processed", "pos": "동사", "sense": "처리하다" },
+   { "sid": "sample01#17.1", "surface": "processes", "pos": "동사", "sense": "처리하다" }
+  ]
+ },
+ {
+  "lemma": "procurement",
+  "skip": null,
+  "word": "procurement",
+  "pos": ["명사"],
+  "ipa": "prəˈkjʊrmənt",
+  "meaning": "조달, 구매 — 회사가 필요한 물품·서비스를 사들이는 업무",
+  "short": "조달, 구매",
+  "senses": [
+   { "pos": "명사", "ko": "(회사의) 조달, 구매 업무" }
+  ],
+  "forms": ["procure"],
+  "synonyms": ["purchasing", "acquisition"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "produce",
+  "skip": null,
+  "word": "produce",
+  "pos": ["동사"],
+  "ipa": "prəˈduːs",
+  "meaning": "만들어 내다, (결과를) 내다",
+  "short": "만들어 내다, (결과를) 내다",
+  "senses": [
+   { "pos": "동사", "ko": "만들어 내다, (결과를) 내다" },
+   { "pos": "명사", "ko": "농산물" }
+  ],
+  "forms": ["produces", "produced", "producing", "product", "production"],
+  "synonyms": ["generate", "create", "yield"],
+  "domain": "생성·추가",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#20.0", "surface": "produces", "pos": "동사", "sense": "만들어 내다, (결과를) 내다" },
+   { "sid": "mock04#26.2", "surface": "produce", "pos": "동사", "sense": "만들어 내다, (결과를) 내다" },
+   { "sid": "lesson-d2#19.1", "surface": "produces", "pos": "동사", "sense": "만들어 내다, (결과를) 내다" },
+   { "sid": "lesson-d5#24.2", "surface": "producing", "pos": "동사", "sense": "만들어 내다, (결과를) 내다" }
+  ]
+ },
+ {
+  "lemma": "product",
+  "skip": null,
+  "word": "product",
+  "pos": ["명사"],
+  "ipa": "ˈprɑːdʌkt",
+  "meaning": "① 제품, 상품 ② 결과물, 산물 ③ (수학) 곱",
+  "short": "제품, 상품",
+  "senses": [
+   { "pos": "명사", "ko": "제품, 상품" },
+   { "pos": "명사", "ko": "결과물, 산물" },
+   { "pos": "명사", "ko": "(수학) 곱" }
+  ],
+  "forms": ["products", "produce", "production"],
+  "synonyms": ["item", "goods", "merchandise"],
+  "domain": "비즈니스·업무",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#32.0", "surface": "product", "pos": "명사", "sense": "제품, 상품" },
+   { "sid": "lesson-d4#31.5", "surface": "product", "pos": "명사", "sense": "제품, 상품" },
+   { "sid": "lesson-d1#32.1", "surface": "product", "pos": "명사", "sense": "제품, 상품" }
+  ]
+ },
+ {
+  "lemma": "production",
+  "skip": null,
+  "word": "production",
+  "pos": ["명사"],
+  "ipa": "prəˈdʌkʃn",
+  "meaning": "운영 환경, 프로덕션 — 실제 사용자가 쓰는 서비스 (in production: 운영 중에)",
+  "short": "운영 환경, 실서비스",
+  "senses": [
+   { "pos": "명사", "ko": "운영 환경, 프로덕션" },
+   { "pos": "명사", "ko": "생산, 제작" }
+  ],
+  "forms": ["productions"],
+  "synonyms": ["live environment", "prod"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#22.1", "surface": "production", "pos": "명사", "sense": "운영 환경, 프로덕션" },
+   { "sid": "sample01#1.1", "surface": "In production", "pos": "명사", "sense": "운영 환경, 프로덕션" },
+   { "sid": "mock04#1.3", "surface": "Production", "pos": "명사", "sense": "운영 환경, 프로덕션" },
+   { "sid": "lesson-d1#37.0", "surface": "production", "pos": "명사", "sense": "운영 환경, 프로덕션" }
+  ]
+ },
+ {
+  "lemma": "productivity",
+  "skip": null,
+  "word": "productivity",
+  "pos": ["명사"],
+  "ipa": "ˌproʊdʌkˈtɪvəti",
+  "meaning": "생산성",
+  "short": "생산성",
+  "senses": [
+   { "pos": "명사", "ko": "생산성" },
+   { "pos": "형용사", "ko": "(productive) 생산적인, 성과 있는" }
+  ],
+  "forms": ["productive", "productively"],
+  "synonyms": ["efficiency", "output"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#37.0", "surface": "Productivity", "pos": "명사", "sense": "생산성" }
+  ]
+ },
+ {
+  "lemma": "prof",
+  "skip": null,
+  "word": "prove",
+  "pos": ["동사"],
+  "ipa": "pruːv",
+  "meaning": "① 증명하다, 입증하다 ② (~으로) 판명되다, 드러나다",
+  "short": "증명하다, 입증하다",
+  "senses": [
+   { "pos": "동사", "ko": "증명하다, 입증하다" },
+   { "pos": "동사", "ko": "(~으로) 판명되다, 드러나다" }
+  ],
+  "forms": ["proves", "proved", "proven", "proving", "proof"],
+  "synonyms": ["demonstrate", "show", "confirm"],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#20.5", "surface": "proves", "pos": "동사", "sense": "증명하다, 입증하다" }
+  ]
+ },
+ {
+  "lemma": "profile",
+  "skip": null,
+  "word": "profile",
+  "pos": ["명사"],
+  "ipa": "ˈproʊfaɪl",
+  "meaning": "프로필 — 사용자·계정별 설정·정보 묶음 (named profile: 이름 붙인 설정 묶음, inference profile: 추론 프로필)",
+  "short": "프로필(설정·정보 묶음)",
+  "senses": [
+   { "pos": "명사", "ko": "(사용자·고객의) 프로필, 정보" },
+   { "pos": "명사", "ko": "(셸·도구의) 설정 파일, 설정 묶음" },
+   { "pos": "명사", "ko": "윤곽, 개요" },
+   { "pos": "동사", "ko": "(성능을) 분석하다, 프로파일링하다" }
+  ],
+  "forms": ["profiles", "profiling"],
+  "synonyms": ["record"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#12.3", "surface": "profile", "pos": "명사", "sense": "(사용자·고객의) 프로필, 정보" },
+   { "sid": "lesson-d3#32.5", "surface": "profile", "pos": "명사", "sense": "(셸·도구의) 설정 파일, 설정 묶음" },
+   { "sid": "lesson-d5#13.5", "surface": "profile", "pos": "명사", "sense": "(사용자·고객의) 프로필, 정보" }
+  ]
+ },
+ {
+  "lemma": "programmatic",
+  "skip": null,
+  "word": "programmatic",
+  "pos": ["형용사"],
+  "ipa": "ˌproʊɡrəˈmætɪk",
+  "meaning": "프로그램(코드)으로 처리하는",
+  "short": "코드로 처리하는",
+  "senses": [
+   { "pos": "형용사", "ko": "프로그램(코드)으로 처리하는" },
+   { "pos": "부사", "ko": "(programmatically) 코드로, 프로그램 방식으로" }
+  ],
+  "forms": ["programmatically"],
+  "synonyms": ["automated", "code-based"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#32.5", "surface": "programmatic", "pos": "형용사", "sense": "프로그램(코드)으로 처리하는" },
+   { "sid": "mock04#33.6", "surface": "programmatically", "pos": "부사", "sense": "(programmatically) 코드로, 프로그램 방식으로" }
+  ]
+ },
+ {
+  "lemma": "progress",
+  "skip": null,
+  "word": "progress",
+  "pos": ["명사"],
+  "ipa": "ˈprɑːɡres",
+  "meaning": "진행 상황, 진척 (in progress: 진행 중)",
+  "short": "진행 상황, 진척",
+  "senses": [
+   { "pos": "명사", "ko": "진행 상황, 진척" },
+   { "pos": "동사", "ko": "진행되다, 나아가다" }
+  ],
+  "forms": ["progresses", "progressed", "progressing", "progressive"],
+  "synonyms": ["advancement", "headway"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#7.3", "surface": "progress", "pos": "명사", "sense": "진행 상황, 진척" },
+   { "sid": "mock04#18.4", "surface": "progress", "pos": "명사", "sense": "진행 상황, 진척" }
+  ]
+ },
+ {
+  "lemma": "progressive",
+  "skip": null,
+  "word": "progressive",
+  "pos": ["형용사"],
+  "ipa": "prəˈɡresɪv",
+  "meaning": "점진적인, 단계적으로 진행되는",
+  "short": "점진적인, 단계적인",
+  "senses": [
+   { "pos": "형용사", "ko": "점진적인, 단계적으로 진행되는" },
+   { "pos": "형용사", "ko": "진보적인" }
+  ],
+  "forms": ["progressively"],
+  "synonyms": ["gradual", "incremental"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#9.1", "surface": "progressive", "pos": "형용사", "sense": "점진적인, 단계적으로 진행되는" }
+  ]
+ },
+ {
+  "lemma": "prohibit",
+  "skip": null,
+  "word": "prohibit",
+  "pos": ["동사"],
+  "ipa": "proʊˈhɪbɪt",
+  "meaning": "금지하다",
+  "short": "금지하다",
+  "senses": [
+   { "pos": "동사", "ko": "(규칙으로) 금지하다" }
+  ],
+  "forms": ["prohibits", "prohibited", "prohibiting", "prohibition"],
+  "synonyms": ["forbid", "ban", "bar"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "project",
+  "skip": null,
+  "word": "project",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈprɑːdʒekt",
+  "meaning": "① (코드) 프로젝트, 작업 디렉터리 ② (project 스코프) 저장소에 커밋되어 팀이 공유하는 설정 범위 ③ (업무) 프로젝트, 과제 ④ 예상하다, 추정하다",
+  "short": "프로젝트(작업 저장소)",
+  "senses": [
+   { "pos": "명사", "ko": "(코드) 프로젝트, 작업 디렉터리" },
+   { "pos": "명사", "ko": "(project 스코프) 팀 공유 설정 범위" },
+   { "pos": "명사", "ko": "(업무) 프로젝트, 과제" },
+   { "pos": "동사", "ko": "예상하다, 추정하다" }
+  ],
+  "forms": ["projects", "projected", "projection"],
+  "synonyms": ["repository", "codebase"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#23.1", "surface": "project", "pos": "명사", "sense": "(코드) 프로젝트, 작업 디렉터리" },
+   { "sid": "mock04-kor#24.0", "surface": "project", "pos": "명사", "sense": "(project 스코프) 팀 공유 설정 범위" },
+   { "sid": "lesson-d4#24.1", "surface": "project", "pos": "명사", "sense": "(업무) 프로젝트, 과제" },
+   { "sid": "mock04#16.2", "surface": "project", "pos": "명사", "sense": "(코드) 프로젝트, 작업 디렉터리" }
+  ]
+ },
+ {
+  "lemma": "project-level",
+  "skip": null,
+  "word": "project-level",
+  "pos": ["형용사"],
+  "ipa": "ˈprɑːdʒekt ˌlevl",
+  "meaning": "프로젝트 수준의 — 해당 프로젝트(저장소) 전체에 적용되는",
+  "short": "프로젝트 단위의",
+  "senses": [
+   { "pos": "형용사", "ko": "프로젝트 수준의, 프로젝트 전체에 적용되는" }
+  ],
+  "forms": [],
+  "synonyms": ["project-wide", "project-scoped"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#1.5", "surface": "project-level", "pos": "형용사", "sense": "프로젝트 수준의, 프로젝트 전체에 적용되는" },
+   { "sid": "lesson-d3#3.4", "surface": "project-level", "pos": "형용사", "sense": "프로젝트 수준의, 프로젝트 전체에 적용되는" }
+  ]
+ },
+ {
+  "lemma": "project-specific",
+  "skip": null,
+  "word": "project-specific",
+  "pos": ["형용사"],
+  "ipa": "ˌprɑːdʒekt spəˈsɪfɪk",
+  "meaning": "프로젝트 전용의, 그 프로젝트에만 해당하는",
+  "short": "프로젝트 전용의",
+  "senses": [
+   { "pos": "형용사", "ko": "프로젝트 전용의, 그 프로젝트에만 해당하는" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#32.1", "surface": "project-specific", "pos": "형용사", "sense": "프로젝트 전용의, 그 프로젝트에만 해당하는" },
+   { "sid": "sample01#13.0", "surface": "project-specific", "pos": "형용사", "sense": "프로젝트 전용의, 그 프로젝트에만 해당하는" }
+  ]
+ },
+ {
+  "lemma": "promise",
+  "skip": null,
+  "word": "promise",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈprɑːmɪs",
+  "meaning": "① 약속하다 ② 약속 ③ (문서·코드가) ~을 한다고 명시하다, 보장하다",
+  "short": "약속하다, 약속",
+  "senses": [
+   { "pos": "동사", "ko": "약속하다" },
+   { "pos": "명사", "ko": "약속" },
+   { "pos": "동사", "ko": "(문서가) ~을 한다고 명시하다, 보장하다" }
+  ],
+  "forms": ["promises", "promised", "promising"],
+  "synonyms": ["pledge", "guarantee", "commit"],
+  "domain": "요청·소통",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#2.0", "surface": "promised", "pos": "동사", "sense": "약속하다" },
+   { "sid": "lesson-d4#28.2", "surface": "promise", "pos": "명사", "sense": "약속" },
+   { "sid": "lesson-d4#3.2", "surface": "promises", "pos": "동사", "sense": "(문서가) ~을 한다고 명시하다, 보장하다" },
+   { "sid": "lesson-d4#28.0", "surface": "promised", "pos": "동사", "sense": "약속하다" }
+  ]
+ },
+ {
+  "lemma": "promotional",
+  "skip": null,
+  "word": "promotional",
+  "pos": ["형용사"],
+  "ipa": "prəˈmoʊʃənl",
+  "meaning": "홍보용의, 판촉의",
+  "short": "홍보용의, 판촉의",
+  "senses": [
+   { "pos": "형용사", "ko": "홍보용의, 판촉의" }
+  ],
+  "forms": ["promotion", "promote"],
+  "synonyms": ["marketing", "advertising"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:promotional.0", "surface": "promotional", "pos": "형용사", "sense": "홍보용의, 판촉의" }
+  ]
+ },
+ {
+  "lemma": "prompt",
+  "skip": null,
+  "word": "prompt",
+  "pos": ["명사", "동사", "형용사"],
+  "ipa": "prɑːmpt",
+  "meaning": "① 프롬프트 — 모델에 주는 지시·입력 문장 ② (사용자에게 승인·입력을) 요청하다, 묻다 ③ 촉발하다, ~하게 만들다 ④ 즉각적인",
+  "short": "프롬프트(모델 지시문)",
+  "senses": [
+   { "pos": "명사", "ko": "프롬프트, 모델에 주는 지시문" },
+   { "pos": "동사", "ko": "(승인·입력을) 요청하다, 묻다" },
+   { "pos": "동사", "ko": "촉발하다, ~하게 만들다" },
+   { "pos": "형용사", "ko": "즉각적인, 신속한" }
+  ],
+  "forms": ["prompts", "prompted", "prompting", "promptly"],
+  "synonyms": ["instruction", "query"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#1.1", "surface": "prompt", "pos": "명사", "sense": "프롬프트, 모델에 주는 지시문" },
+   { "sid": "lesson-d3#19.0", "surface": "prompting", "pos": "동사", "sense": "(승인·입력을) 요청하다, 묻다" },
+   { "sid": "lesson-d1#16.2", "surface": "prompt", "pos": "명사", "sense": "프롬프트, 모델에 주는 지시문" },
+   { "sid": "sample01#14.1", "surface": "prompt", "pos": "명사", "sense": "프롬프트, 모델에 주는 지시문" }
+  ]
+ },
+ {
+  "lemma": "prompt caching",
+  "skip": null,
+  "word": "prompt caching",
+  "pos": ["명사구"],
+  "ipa": "ˈprɑːmpt ˌkæʃɪŋ",
+  "meaning": "프롬프트 캐싱 — 반복되는 프롬프트 앞부분을 캐시해 비용과 지연을 줄이는 기능",
+  "short": "프롬프트 캐싱",
+  "senses": [
+   { "pos": "명사구", "ko": "프롬프트 캐싱 (반복 앞부분을 캐시해 비용·지연 절감)" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#21.0", "surface": "prompt caching", "pos": "명사구", "sense": "프롬프트 캐싱 (반복 앞부분을 캐시해 비용·지연 절감)" },
+   { "sid": "sample01#9.5", "surface": "prompt caching", "pos": "명사구", "sense": "프롬프트 캐싱 (반복 앞부분을 캐시해 비용·지연 절감)" }
+  ]
+ },
+ {
+  "lemma": "prompt injection",
+  "skip": null,
+  "word": "prompt injection",
+  "pos": ["명사구"],
+  "ipa": "ˈprɑːmpt ɪnˌdʒekʃn",
+  "meaning": "프롬프트 인젝션 — 입력 속에 숨긴 지시로 모델의 원래 지시를 가로채는 공격",
+  "short": "프롬프트 인젝션(지시 가로채기 공격)",
+  "senses": [
+   { "pos": "명사구", "ko": "프롬프트 인젝션 (숨긴 지시로 원래 지시를 가로채는 공격)" }
+  ],
+  "forms": ["prompt injections"],
+  "synonyms": [],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "propagate",
+  "skip": null,
+  "word": "propagate",
+  "pos": ["동사"],
+  "ipa": "ˈprɑːpəɡeɪt",
+  "meaning": "(오류·정보를) 위로 전달하다, 퍼뜨리다",
+  "short": "전달하다, 퍼지다",
+  "senses": [
+   { "pos": "동사", "ko": "(오류·정보를) 위로 전달하다, 퍼뜨리다" },
+   { "pos": "동사", "ko": "(시스템을 거쳐) 퍼지다, 흘러가다" },
+   { "pos": "명사", "ko": "(propagation) 전파, 전달" }
+  ],
+  "forms": ["propagates", "propagated", "propagating", "propagation"],
+  "synonyms": ["spread", "pass on", "transmit"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#38.1", "surface": "propagates", "pos": "동사", "sense": "(시스템을 거쳐) 퍼지다, 흘러가다" },
+   { "sid": "vocab:propagate.0", "surface": "propagation", "pos": "명사", "sense": "(propagation) 전파, 전달" }
+  ]
+ },
+ {
+  "lemma": "properly",
+  "skip": null,
+  "word": "properly",
+  "pos": ["부사"],
+  "ipa": "ˈprɑːpərli",
+  "meaning": "제대로, 올바르게, 적절히",
+  "short": "제대로, 올바르게",
+  "senses": [
+   { "pos": "부사", "ko": "제대로, 올바르게" }
+  ],
+  "forms": ["proper", "improperly"],
+  "synonyms": ["correctly", "appropriately"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#24.4", "surface": "properly", "pos": "부사", "sense": "제대로, 올바르게" }
+  ]
+ },
+ {
+  "lemma": "proportion",
+  "skip": null,
+  "word": "proportion",
+  "pos": ["명사"],
+  "ipa": "prəˈpɔːrʃn",
+  "meaning": "비율 — in proportion: 비례하여",
+  "short": "비율",
+  "senses": [
+   { "pos": "명사", "ko": "비율, 몫" },
+   { "pos": "명사", "ko": "(in proportion) 비례, 균형" }
+  ],
+  "forms": ["proportions", "proportional", "proportionally"],
+  "synonyms": ["ratio", "share", "fraction"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "proportionally",
+  "skip": null,
+  "word": "proportionally",
+  "pos": ["부사"],
+  "ipa": "prəˈpɔːrʃənəli",
+  "meaning": "비례하여",
+  "short": "비례하여",
+  "senses": [
+   { "pos": "부사", "ko": "비례하여, 그만큼" }
+  ],
+  "forms": ["proportional", "proportion"],
+  "synonyms": ["correspondingly", "accordingly"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:proportionally.0", "surface": "proportionally", "pos": "부사", "sense": "비례하여, 그만큼" }
+  ]
+ },
+ {
+  "lemma": "propose",
+  "skip": null,
+  "word": "propose",
+  "pos": ["동사"],
+  "ipa": "prəˈpoʊz",
+  "meaning": "제안하다",
+  "short": "제안하다",
+  "senses": [
+   { "pos": "동사", "ko": "제안하다" },
+   { "pos": "명사", "ko": "(proposal) 제안(서)" },
+   { "pos": "동사", "ko": "청혼하다" }
+  ],
+  "forms": ["proposes", "proposed", "proposing", "proposal"],
+  "synonyms": ["suggest", "recommend", "put forward"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#15.1", "surface": "proposes", "pos": "동사", "sense": "제안하다" },
+   { "sid": "lesson-d1#41.0", "surface": "proposal", "pos": "명사", "sense": "(proposal) 제안(서)" },
+   { "sid": "mock04#39.3", "surface": "proposes", "pos": "동사", "sense": "제안하다" },
+   { "sid": "lesson-d3#21.3", "surface": "proposed", "pos": "동사", "sense": "제안하다" }
+  ]
+ },
+ {
+  "lemma": "proprietary",
+  "skip": null,
+  "word": "proprietary",
+  "pos": ["형용사"],
+  "ipa": "prəˈpraɪəteri",
+  "meaning": "독자적인, 사내 전용의 — 특정 회사가 소유·개발한",
+  "short": "독자적인, 사내 전용의",
+  "senses": [
+   { "pos": "형용사", "ko": "독자적인, 특정 회사 소유의" }
+  ],
+  "forms": [],
+  "synonyms": ["in-house", "closed-source"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "prose",
+  "skip": null,
+  "word": "prose",
+  "pos": ["명사"],
+  "ipa": "proʊz",
+  "meaning": "산문 — 목록·코드가 아닌 줄글",
+  "short": "산문, 줄글",
+  "senses": [
+   { "pos": "명사", "ko": "산문, (목록·코드가 아닌) 줄글" }
+  ],
+  "forms": [],
+  "synonyms": ["text", "narrative"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#10.0", "surface": "prose", "pos": "명사", "sense": "산문, (목록·코드가 아닌) 줄글" },
+   { "sid": "lesson-d2#3.0", "surface": "prose", "pos": "명사", "sense": "산문, (목록·코드가 아닌) 줄글" },
+   { "sid": "sample01#15.2", "surface": "prose", "pos": "명사", "sense": "산문, (목록·코드가 아닌) 줄글" },
+   { "sid": "lesson-d4#5.3", "surface": "prose", "pos": "명사", "sense": "산문, (목록·코드가 아닌) 줄글" }
+  ]
+ },
+ {
+  "lemma": "protocol",
+  "skip": null,
+  "word": "protocol",
+  "pos": ["명사"],
+  "ipa": "ˈproʊtəkɔːl",
+  "meaning": "프로토콜 — 통신·처리에서 지켜야 할 약속된 규약",
+  "short": "프로토콜, 규약",
+  "senses": [
+   { "pos": "명사", "ko": "(통신) 프로토콜, 규약" },
+   { "pos": "명사", "ko": "(정해진) 절차, 규정" }
+  ],
+  "forms": ["protocols"],
+  "synonyms": ["standard", "convention"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#8.6", "surface": "protocol", "pos": "명사", "sense": "(통신) 프로토콜, 규약" }
+  ]
+ },
+ {
+  "lemma": "prototype",
+  "skip": null,
+  "word": "prototype",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈproʊtətaɪp",
+  "meaning": "① 시제품, 시험판, 프로토타입 ② 시제품을 만들다",
+  "short": "시제품, 시험판",
+  "senses": [
+   { "pos": "명사", "ko": "시제품, 시험판" },
+   { "pos": "동사", "ko": "시제품을 만들다" }
+  ],
+  "forms": ["prototypes", "prototyping"],
+  "synonyms": ["draft", "mock-up", "pilot"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#11.0", "surface": "prototype", "pos": "명사", "sense": "시제품, 시험판" }
+  ]
+ },
+ {
+  "lemma": "provenance",
+  "skip": null,
+  "word": "provenance",
+  "pos": ["명사"],
+  "ipa": "ˈprɑːvənəns",
+  "meaning": "출처, 내력 — 데이터·주장이 어디서 왔는지에 대한 정보",
+  "short": "출처, 내력",
+  "senses": [
+   { "pos": "명사", "ko": "출처, 내력" }
+  ],
+  "forms": [],
+  "synonyms": ["origin", "source"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#36.2", "surface": "provenance", "pos": "명사", "sense": "출처, 내력" }
+  ]
+ },
+ {
+  "lemma": "provide",
+  "skip": null,
+  "word": "provide",
+  "pos": ["동사"],
+  "ipa": "prəˈvaɪd",
+  "meaning": "제공하다, 주다",
+  "short": "제공하다, 주다",
+  "senses": [
+   { "pos": "동사", "ko": "제공하다, 주다" },
+   { "pos": "접속사", "ko": "(provided that) ~라면" }
+  ],
+  "forms": ["provides", "provided", "providing", "provider"],
+  "synonyms": ["supply", "give", "offer"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#30.6", "surface": "provides", "pos": "동사", "sense": "제공하다, 주다" },
+   { "sid": "mock04#17.4", "surface": "Provide", "pos": "동사", "sense": "제공하다, 주다" },
+   { "sid": "sample01#12.5", "surface": "provides", "pos": "동사", "sense": "제공하다, 주다" },
+   { "sid": "lesson-d2#2.0", "surface": "provided", "pos": "동사", "sense": "제공하다, 주다" }
+  ]
+ },
+ {
+  "lemma": "provider",
+  "skip": null,
+  "word": "provider",
+  "pos": ["명사"],
+  "ipa": "prəˈvaɪdər",
+  "meaning": "제공자, 공급자 — 서비스·데이터·ID 를 제공하는 쪽 (identity provider: ID 공급자)",
+  "short": "제공자, 공급 업체",
+  "senses": [
+   { "pos": "명사", "ko": "(서비스·데이터의) 제공자, 공급자" }
+  ],
+  "forms": ["providers"],
+  "synonyms": ["supplier", "vendor", "source"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#19.0", "surface": "provider", "pos": "명사", "sense": "(서비스·데이터의) 제공자, 공급자" },
+   { "sid": "lesson-d1#5.1", "surface": "provider", "pos": "명사", "sense": "(서비스·데이터의) 제공자, 공급자" },
+   { "sid": "lesson-d5#20.0", "surface": "provider", "pos": "명사", "sense": "(서비스·데이터의) 제공자, 공급자" }
+  ]
+ },
+ {
+  "lemma": "proxy",
+  "skip": null,
+  "word": "proxy",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈprɑːksi",
+  "meaning": "(요청을) 대신 전달하다 / 대리 서버",
+  "short": "대신 전달하다, 대리 서버",
+  "senses": [
+   { "pos": "동사", "ko": "(요청을) 대신 전달하다, 중계하다" },
+   { "pos": "명사", "ko": "대리 서버, 프록시" },
+   { "pos": "명사", "ko": "대리인, 대용물" }
+  ],
+  "forms": ["proxies", "proxied", "proxying"],
+  "synonyms": ["relay", "forward", "intermediary"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:proxy.0", "surface": "proxies", "pos": "동사", "sense": "(요청을) 대신 전달하다, 중계하다" }
+  ]
+ }
+]

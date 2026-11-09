@@ -1,0 +1,1317 @@
+[
+ {
+  "lemma": "space",
+  "kind": "new",
+  "surfaces": [
+   "spaces"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#29.4",
+    "en": "doc 2026 report final v2, since spaces between each descriptive segment keep the identifier readable when scanning a long results file by eye"
+   }
+  ]
+ },
+ {
+  "lemma": "span",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "span",
+   "word": "span",
+   "pos": "동사·명사",
+   "ipa": "spæn",
+   "meaning": "① (범위에) 걸치다, 아우르다 ② 구간, 범위 (code span: 인라인 코드 구간)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "spare",
+  "kind": "new",
+  "surfaces": [
+   "spare"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#28.6",
+    "en": "Submit every 4 hours, because a 4-hour wait plus the full 24-hour batch window still fits inside 30 hours with time to spare for overhead"
+   }
+  ]
+ },
+ {
+  "lemma": "spawn",
+  "kind": "vocab-core",
+  "surfaces": [
+   "spawns",
+   "spawned",
+   "spawn",
+   "spawning"
+  ],
+  "freq": 21,
+  "vocab": {
+   "id": "spawn",
+   "word": "spawn",
+   "pos": "동사",
+   "ipa": "spɔːn",
+   "meaning": "(하위 작업·프로세스를) 새로 띄우다, 생성하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#14.0",
+    "en": "After a web-researcher subagent finishes, a coordinator spawns a synthesis subagent."
+   },
+   {
+    "sid": "lesson-d5#21.2",
+    "en": "What should the coordinator change before spawning them?"
+   },
+   {
+    "sid": "mock04#38.1",
+    "en": "The coordinator spawns a subagent with a single Task call to trace how a payment webhook propagates through the `orders` module."
+   },
+   {
+    "sid": "sample01#10.0",
+    "en": "A multi-agent system has a hub agent that spawns specialist subagents."
+   },
+   {
+    "sid": "lesson-d1#18.0",
+    "en": "A coordinator runs a \"web-researcher\" subagent that gathers ten sources on a topic, then spawns a \"synthesis\" subagent to write the final report."
+   },
+   {
+    "sid": "mock04#5.1",
+    "en": "The coordinator has already run get_customer and confirmed the account, then spawns subagents to check order history and refund eligibility in parallel."
+   },
+   {
+    "sid": "lesson-d5#21.6",
+    "en": "Run /compact in the coordinator before spawning, so the phase-1 findings are kept in a summary the subagents can draw on"
+   },
+   {
+    "sid": "sample01#10.6",
+    "en": "Each spawned agent starts with a clean empty message history — context must be passed explicitly"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:spawn.0",
+    "en": "A multi-agent system has a hub agent that spawns specialist subagents.",
+    "ko": "허브 에이전트가 전문 서브에이전트들을 생성하는 멀티 에이전트 시스템이 있습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "speak",
+  "kind": "new",
+  "surfaces": [
+   "speak"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#9.2",
+    "en": "The assistant can complete the rescheduling directly, and the patient has not asked to speak with a staff member."
+   }
+  ]
+ },
+ {
+  "lemma": "specialist",
+  "kind": "vocab-core",
+  "surfaces": [
+   "specialist"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "specialist",
+   "word": "specialist",
+   "pos": "명사",
+   "ipa": "ˈspeʃəlɪst",
+   "meaning": "전문가 / 전문 담당(의)"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#10.0",
+    "en": "A multi-agent system has a hub agent that spawns specialist subagents."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:specialist.0",
+    "en": "A multi-agent system has a hub agent that spawns specialist subagents.",
+    "ko": "허브 에이전트가 전문 서브에이전트들을 생성하는 멀티 에이전트 시스템이 있습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "specialize",
+  "kind": "vocab-core",
+  "surfaces": [
+   "specialized",
+   "specialised"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "specialize",
+   "word": "specialize",
+   "pos": "동사",
+   "ipa": "ˈspeʃəlaɪz",
+   "meaning": "(특정 일에) 특화하다, 전문화하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#15.1",
+    "en": "The architect proposes splitting it into five specialized subagents, each scoped to roughly 4 tools for its stage, coordinated by a lightweight orchestrator."
+   },
+   {
+    "sid": "sample01#17.5",
+    "en": "Decompose into hub-and-spoke with specialized subagents; add PreToolCall hook enforcing fraud-check prerequisite before payment writes"
+   },
+   {
+    "sid": "lesson-d2#14.3",
+    "en": "Split it into specialised agents, each choosing from about 4–5 tools for its stage"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:specialize.0",
+    "en": "Decompose into hub-and-spoke with specialized subagents; add PreToolCall hook enforcing fraud-check prerequisite before payment writes",
+    "ko": "전문 서브에이전트로 구성된 허브 앤 스포크로 분해하고, 결제 쓰기 전에 사기 검사 선행을 강제하는 PreToolCall 훅을 추가한다"
+   }
+  ]
+ },
+ {
+  "lemma": "specific",
+  "kind": "vocab-core",
+  "surfaces": [
+   "specifically",
+   "specific"
+  ],
+  "freq": 20,
+  "vocab": {
+   "id": "specific",
+   "word": "specific",
+   "pos": "형용사",
+   "ipa": "spəˈsɪfɪk",
+   "meaning": "① 구체적인 ② 특정한, ~에 한정된"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.1",
+    "en": "Separately, each time the coordinator invokes this subagent it supplies a different per-call prompt describing the specific table and migration at hand."
+   },
+   {
+    "sid": "lesson-d2#5.0",
+    "en": "A tool named `analyze_content` was originally built to summarize any pasted content, including emails and internal notes, but its description was never updated after a web-specific successor tool was introduced."
+   },
+   {
+    "sid": "lesson-d3#16.0",
+    "en": "An infrastructure team wants Claude Code to load Terraform-specific formatting and tagging conventions only when Claude edits files under the terraform/ directory, at any subfolder depth."
+   },
+   {
+    "sid": "lesson-d5#31.1",
+    "en": "A new architect discovers that the 'weight' field is correct only 70% of the time specifically when the source document's units are ambiguous (for example, a number with no unit label present)."
+   },
+   {
+    "sid": "mock04#22.1",
+    "en": "The synthesis subagent's reports read as generic overviews: in 30% of runs they omit the specific figures and named sources the web-search subagent surfaced."
+   },
+   {
+    "sid": "lesson-d4#17.5",
+    "en": "`tool_choice: {\"type\": \"tool\", \"name\": \"parse_resume\"}`, because this is the documented way to force the specific tool; the trade-off is that forced tool use suppresses natural-language text before the tool call"
+   },
+   {
+    "sid": "sample01#18.6",
+    "en": "`CLAUDE.md` rules override user instructions for git operations specifically"
+   },
+   {
+    "sid": "lesson-d1#29.0",
+    "en": "A PreToolUse hook needs to block refunds above $500 only when they target a specific merchant category, based on a field named category inside the refund tool's arguments."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:specific.0",
+    "en": "...in 30% of runs they omit the specific figures and named sources the web-search subagent surfaced.",
+    "ko": "실행의 30%에서 웹 검색 서브에이전트가 찾아낸 구체적인 수치와 출처 이름이 빠져 있습니다."
+   },
+   {
+    "vid": "vocab:specific.1",
+    "en": "`CLAUDE.md` rules override user instructions for git operations specifically",
+    "ko": "git 작업에 한해서는 `CLAUDE.md` 규칙이 사용자 지시보다 우선한다"
+   }
+  ]
+ },
+ {
+  "lemma": "specification",
+  "kind": "vocab-core",
+  "surfaces": [
+   "spec",
+   "specification"
+  ],
+  "freq": 10,
+  "vocab": {
+   "id": "specification",
+   "word": "specification",
+   "pos": "명사",
+   "ipa": "ˌspesɪfɪˈkeɪʃn",
+   "meaning": "명세(서), 사양 — 무엇을 어떻게 해야 하는지 정한 문서 (줄여서 spec)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.0",
+    "en": "Every night a job takes each new product spec and runs the same steps in the same order."
+   },
+   {
+    "sid": "lesson-d3#28.1",
+    "en": "Twice, Claude has handled empty cells and quoted commas differently from what your written spec meant."
+   },
+   {
+    "sid": "lesson-d2#10.3",
+    "en": "The error contract includes fields that are not part of the MCP specification. MCP tool responses only define `isError` to indicate an error; there is no standard `errorCategory` or `isRetryable` field, so consumers may ignore these custom fields and miss the intended recovery guidance."
+   },
+   {
+    "sid": "lesson-d1#32.2",
+    "en": "The content of a spec never changes which steps run."
+   },
+   {
+    "sid": "lesson-d3#23.4",
+    "en": "Interview them about anything ambiguous, putting first the questions whose answers would change the architecture, then write the result up as a spec"
+   },
+   {
+    "sid": "lesson-d1#32.4",
+    "en": "An orchestrator LLM that reads each spec and plans the writing, checking and translation subtasks for it"
+   },
+   {
+    "sid": "lesson-d3#25.3",
+    "en": "Write a detailed prose specification of how empty cells, quoted commas and duplicate headers map to JSON fields, give it to Claude with the converter request, and refine the wording after reviewing the output."
+   },
+   {
+    "sid": "lesson-d1#32.6",
+    "en": "An adaptive agent that inspects each spec first and then generates subtasks based on what it finds"
+   }
+  ]
+ },
+ {
+  "lemma": "specify",
+  "kind": "new",
+  "surfaces": [
+   "specify",
+   "specified"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d2#5.3",
+    "en": "Leave both tools with their original names, but ask users to specify which tool they want by internal ID every time."
+   },
+   {
+    "sid": "lesson-d4#13.4",
+    "en": "Add one example where a vague amount is extracted as written and one where the dose is absent and the output says it is not specified, and explicitly allow the model to admit uncertainty"
+   }
+  ]
+ },
+ {
+  "lemma": "speculative",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "speculative",
+   "word": "speculative",
+   "pos": "형용사",
+   "ipa": "ˈspekjəleɪtɪv",
+   "meaning": "추측에 근거한, 확실하지 않은"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:speculative.0",
+    "en": "Implement speculative execution that automatically calls likely-needed tools alongside any requested tool.",
+    "ko": "요청된 도구와 함께 필요할 것 같은 도구까지 자동으로 호출하는 추측 실행을 구현한다."
+   }
+  ]
+ },
+ {
+  "lemma": "speed",
+  "kind": "new",
+  "surfaces": [
+   "speeds"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#9.0",
+    "en": "A coordinator for a market-research assistant splits the broad query 'analyze the competitive landscape for electric vehicle charging networks' into narrow subtasks like 'find charger connector types' and 'list charging speeds,' each assigned to a separate subagent."
+   }
+  ]
+ },
+ {
+  "lemma": "spell",
+  "kind": "new",
+  "surfaces": [
+   "spells"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d3#28.3",
+    "en": "A longer, more detailed prose specification that spells out each rule for empty cells, quoted commas and duplicate headers"
+   },
+   {
+    "sid": "lesson-d4#8.0",
+    "en": "A team's code-review assistant prompt already spells out an exhaustive, itemized rubric for flagging issues, but reviewers still receive inconsistently formatted findings across runs: some list severity before location, others omit the suggested fix entirely."
+   }
+  ]
+ },
+ {
+  "lemma": "spend",
+  "kind": "new",
+  "surfaces": [
+   "spend",
+   "spent",
+   "spending",
+   "spends"
+  ],
+  "freq": 6,
+  "sentences": [
+   {
+    "sid": "lesson-d3#13.2",
+    "en": "The team wants sessions spent on frontend work to stop paying the context cost of those conventions."
+   },
+   {
+    "sid": "lesson-d5#21.0",
+    "en": "Phase-2 subagents, each tracing a different refund-related flow, keep spending most of their tokens re-mapping the modules that phase 1 already mapped."
+   },
+   {
+    "sid": "lesson-d1#35.5",
+    "en": "Keep one pass over the diff, but have the model rank the files by risk first, then spend its review effort on the highest-risk ones"
+   },
+   {
+    "sid": "lesson-d5#22.0",
+    "en": "An agent has spent hours exploring a large repository."
+   },
+   {
+    "sid": "lesson-d5#39.1",
+    "en": "For example, one reports regional unemployment at 5.1% and another at 6.3%, and it spends extra research rounds trying to reconcile them."
+   },
+   {
+    "sid": "lesson-d5#20.7",
+    "en": "Retry both failures a few times with backoff, then send the coordinator the total retry count so it knows how much effort was spent"
+   }
+  ]
+ },
+ {
+  "lemma": "spike",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "spike",
+   "word": "spike",
+   "pos": "명사·동사",
+   "ipa": "spaɪk",
+   "meaning": "급증, 급등 / 급증하다"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "spin up",
+  "kind": "vocab-core",
+  "surfaces": [
+   "spin up"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "spin-up",
+   "word": "spin up",
+   "pos": "동사구",
+   "ipa": "ˌspɪn ˈʌp",
+   "meaning": "(서버·인스턴스·에이전트를) 새로 띄우다, 가동하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#4.6",
+    "en": "Spin up a dedicated formatting subagent that the coordinator calls after every backend lookup to rewrite the raw fields."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:spin-up.0",
+    "en": "Spin up a dedicated formatting subagent that the coordinator calls after every backend lookup to rewrite the raw fields.",
+    "ko": "백엔드 조회가 끝날 때마다 코디네이터가 호출해 원본 필드를 다시 쓰게 하는 전용 포맷팅 서브에이전트를 띄운다"
+   }
+  ]
+ },
+ {
+  "lemma": "split",
+  "kind": "vocab-core",
+  "surfaces": [
+   "split",
+   "splits",
+   "splitting"
+  ],
+  "freq": 20,
+  "vocab": {
+   "id": "split",
+   "word": "split",
+   "pos": "동사·명사",
+   "ipa": "splɪt",
+   "meaning": "나누다, 쪼개다 / 분할"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#20.0",
+    "en": "A coordinator splits a three-part complaint and spawns one subagent per concern."
+   },
+   {
+    "sid": "lesson-d2#15.1",
+    "en": "The architect proposes splitting it into five specialized subagents, each scoped to roughly 4 tools for its stage, coordinated by a lightweight orchestrator."
+   },
+   {
+    "sid": "lesson-d3#21.0",
+    "en": "A platform team is restructuring a monolith into three microservices, touching shared data models, service boundaries, and deployment topology, with several viable ways to split the code."
+   },
+   {
+    "sid": "lesson-d4#27.4",
+    "en": "It is rejected with a 413 request_too_large error because it goes over 256 MB, so the team should split the documents across at least two batches"
+   },
+   {
+    "sid": "lesson-d5#29.5",
+    "en": "Split the existing labeled results by document type and by field, and check that this type meets the bar on its own"
+   },
+   {
+    "sid": "mock04#49.5",
+    "en": "Split CLAUDE.md into two files and symlink the right one into place per job before each run starts"
+   },
+   {
+    "sid": "sample01#21.4",
+    "en": "Split the document into 10k chunks and cache each chunk separately"
+   },
+   {
+    "sid": "lesson-d2#7.0",
+    "en": "You propose splitting a generic analyze_document into extract_data_points, summarize_content and verify_claim_against_source."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:split.0",
+    "en": "Split process_refund into process_full_refund and process_partial_credit, each with its own description stating exactly when to use it.",
+    "ko": "`process_refund` 를 `process_full_refund` 와 `process_partial_credit` 로 나누고, 각 도구의 description에 언제 써야 하는지 정확히 적는다"
+   }
+  ]
+ },
+ {
+  "lemma": "spread",
+  "kind": "new",
+  "surfaces": [
+   "spread"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#27.5",
+    "en": "It is accepted but throttled to 1,000 requests per hour, so the team should spread the work across several nights"
+   }
+  ]
+ },
+ {
+  "lemma": "src",
+  "kind": "new",
+  "surfaces": [
+   "src"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d2#30.2",
+    "en": "Read every file under src/ first, so nothing on the login path can be missed"
+   },
+   {
+    "sid": "lesson-d3#6.4",
+    "en": "Split the guidance into CLAUDE.md files in the src/, tests/, security/ and deploy/ directories next to the code, and slim the root CLAUDE.md down"
+   },
+   {
+    "sid": "lesson-d2#31.3",
+    "en": "Use Read to open every file under the src directory up front, building a complete mental model of the whole codebase before looking for the login flow specifically."
+   }
+  ]
+ },
+ {
+  "lemma": "stabilize",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "stabilize",
+   "word": "stabilize",
+   "pos": "동사",
+   "ipa": "ˈsteɪbəlaɪz",
+   "meaning": "안정되다, 안정시키다"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "stable",
+  "kind": "vocab-core",
+  "surfaces": [
+   "stable"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "stable",
+   "word": "stable",
+   "pos": "형용사",
+   "ipa": "ˈsteɪbl",
+   "meaning": "안정된, (실행마다) 달라지지 않고 일정한"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#1.5",
+    "en": "Send a stable conversation ID with each request so the API can find the earlier turns of the session"
+   },
+   {
+    "sid": "mock04#46.7",
+    "en": "Set temperature to 0 so the phrasing of findings stays stable between runs and the grep matches consistently"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:stable.0",
+    "en": "Set temperature to 0 so the phrasing of findings stays stable between runs and the grep matches consistently",
+    "ko": "temperature를 0으로 설정해 실행 간 발견 사항의 표현이 안정되고 grep이 일관되게 매칭되도록 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "staff",
+  "kind": "new",
+  "surfaces": [
+   "staff"
+  ],
+  "freq": 7,
+  "sentences": [
+   {
+    "sid": "lesson-d5#9.2",
+    "en": "The assistant can complete the rescheduling directly, and the patient has not asked to speak with a staff member."
+   },
+   {
+    "sid": "lesson-d5#31.6",
+    "en": "Move weight extraction to manual entry by staff for the full set of bills of lading, and stop using the model for that field whether or not a unit is given."
+   },
+   {
+    "sid": "lesson-d5#9.4",
+    "en": "Acknowledge the frustration, go ahead and reschedule the appointment now, and offer to escalate to a staff member."
+   },
+   {
+    "sid": "lesson-d5#9.5",
+    "en": "Escalate to a staff member immediately, since the irritated tone signals the situation needs human handling."
+   },
+   {
+    "sid": "lesson-d5#9.7",
+    "en": "Ask the patient to confirm they do not want a staff member before proceeding with the reschedule."
+   },
+   {
+    "sid": "lesson-d5#9.0",
+    "en": "A healthcare scheduling assistant follows a configured escalation policy: when a request is within the assistant's capability and the patient has not asked for a staff member, the assistant should acknowledge any expressed frustration, complete the request directly, and offer escalation to a staff member as an option rather than a requirement -- reserving mandatory escalation for requests it cannot complete, cases needing clinical judgment, or an explicit request for a human."
+   }
+  ]
+ },
+ {
+  "lemma": "stage",
+  "kind": "vocab-core",
+  "surfaces": [
+   "stage",
+   "stages",
+   "staging",
+   "staged",
+   "unstaged"
+  ],
+  "freq": 8,
+  "vocab": {
+   "id": "stage",
+   "word": "stage",
+   "pos": "명사·동사",
+   "ipa": "steɪdʒ",
+   "meaning": "① (처리 과정의) 단계 ② (git) 변경을 스테이징하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#15.1",
+    "en": "The architect proposes splitting it into five specialized subagents, each scoped to roughly 4 tools for its stage, coordinated by a lightweight orchestrator."
+   },
+   {
+    "sid": "lesson-d3#8.1",
+    "en": "The developer confirms the file was never staged in any commit."
+   },
+   {
+    "sid": "lesson-d1#37.6",
+    "en": "A prompt chain with predefined stages for collecting logs, correlating errors and inspecting code, then drafting a report"
+   },
+   {
+    "sid": "mock04#32.6",
+    "en": "Keep \"any\" but add a preprocessing stage that strips plain-text inputs out of the batch before dispatch to the subagent."
+   },
+   {
+    "sid": "selfcheck-d2-kor#27.0",
+    "en": "설정 파일에서 staging 섹션의 `replicas: 2`만 4로 바꾸려는데, Edit가 \"old_string이 3번 나온다\"며 실패했다. 다음 조치로 가장 알맞은 것은?"
+   },
+   {
+    "sid": "lesson-d2#22.0",
+    "en": "A developer has a local-scoped `analytics` server that still points at an old staging endpoint."
+   },
+   {
+    "sid": "lesson-d3#9.7",
+    "en": "`.claude/skills/review/SKILL.md`, edited in place and left unstaged so teammates don't receive the change"
+   },
+   {
+    "sid": "lesson-d2#14.3",
+    "en": "Split it into specialised agents, each choosing from about 4–5 tools for its stage"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:stage.0",
+    "en": "Keep \"any\" but add a preprocessing stage that strips plain-text inputs out of the batch before dispatch to the subagent.",
+    "ko": "`\"any\"` 는 유지하되, 서브에이전트로 보내기 전에 일반 텍스트 입력을 배치에서 걸러 내는 전처리 단계를 추가한다"
+   }
+  ]
+ },
+ {
+  "lemma": "stakeholder",
+  "kind": "vocab-core",
+  "surfaces": [
+   "stakeholders",
+   "stakeholder"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "stakeholder",
+   "word": "stakeholder",
+   "pos": "명사",
+   "ipa": "ˈsteɪkhoʊldər",
+   "meaning": "이해관계자"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#28.0",
+    "en": "Contracts arrive around the clock, and stakeholders have been promised every extraction result within 30 hours of a contract's arrival."
+   },
+   {
+    "sid": "lesson-d5#41.0",
+    "en": "A stakeholder reading your pipeline's final report says it presents everything with the same certainty."
+   },
+   {
+    "sid": "mock04#26.1",
+    "en": "After the shared search and document-analysis phase completes, stakeholders want two report variants from the same evidence — a one-page executive brief and a technical deep-dive — without re-running the costly searches."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:stakeholder.0",
+    "en": "...stakeholders have rejected any approach that filters findings before developer review.",
+    "ko": "이해관계자들은 개발자 리뷰 전에 발견 사항을 걸러 내는 방식은 모두 거부했다."
+   }
+  ]
+ },
+ {
+  "lemma": "stale",
+  "kind": "vocab-core",
+  "surfaces": [
+   "stale"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "stale",
+   "word": "stale",
+   "pos": "형용사",
+   "ipa": "steɪl",
+   "meaning": "(시간이 지나) 낡은, 최신이 아닌"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#7.3",
+    "en": "The subagent inherited a stale cached copy of the conversation and needs its session resumed to pick up the recent turns"
+   },
+   {
+    "sid": "lesson-d4#3.5",
+    "en": "Report it only after confirming a caller depends on the cached behavior, since a stale docstring that nobody relies on does not affect behavior."
+   },
+   {
+    "sid": "mock04#28.4",
+    "en": "Fork the prior session so the stale results are copied into a new branch that continues the report"
+   },
+   {
+    "sid": "mock04#39.5",
+    "en": "Use --resume but manually enlarge the context window so that more of the stale history is retained anyway"
+   },
+   {
+    "sid": "mock04#39.7",
+    "en": "Start a fresh session and inject a short summary of prior conclusions, discarding stale tool results"
+   },
+   {
+    "sid": "mock04#39.8",
+    "en": "Re-run the same session with /compact to shrink the stale tool outputs before making any further edits"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:stale.0",
+    "en": "Fork the prior session so the stale results are copied into a new branch that continues the report",
+    "ko": "이전 세션을 포크해, 낡은 결과가 복사된 새 분기에서 보고서 작성을 이어 간다"
+   }
+  ]
+ },
+ {
+  "lemma": "stall",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "stall",
+   "word": "stall",
+   "pos": "명사·동사",
+   "ipa": "stɔːl",
+   "meaning": "멈춤, 지연 / (진행이) 멎다"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "stand",
+  "kind": "new",
+  "surfaces": [
+   "standing"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "mock04#17.7",
+    "en": "Add a standing CLAUDE.md rule stating that all validation code should always be robust and idiomatic"
+   }
+  ]
+ },
+ {
+  "lemma": "standalone",
+  "kind": "vocab-core",
+  "surfaces": [
+   "standalone"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "standalone",
+   "word": "standalone",
+   "pos": "형용사·부사",
+   "ipa": "ˈstændəloʊn",
+   "meaning": "단독의, 단독으로 — 다른 구성 요소 없이 그것 하나만으로"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#24.2",
+    "en": "The subagent definitions exist and work when tested standalone."
+   },
+   {
+    "sid": "lesson-d1#41.5",
+    "en": "The standalone function cannot branch a finished session. Resume the original session and ask about OAuth2 there instead"
+   },
+   {
+    "sid": "lesson-d1#41.6",
+    "en": "The fork needs fork_session=True on the original session first. Until then the standalone call creates nothing on disk"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:standalone.0",
+    "en": "The subagent definitions exist and work when tested standalone.",
+    "ko": "서브에이전트 정의는 존재하고, 단독으로 테스트하면 정상 동작한다."
+   }
+  ]
+ },
+ {
+  "lemma": "standard",
+  "kind": "new",
+  "surfaces": [
+   "standard"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d5#27.2",
+    "en": "Hours later, asked about OrderService again, the agent describes it as 'typically extending a standard base controller with default error handling,' ignoring its earlier finding."
+   },
+   {
+    "sid": "lesson-d4#13.5",
+    "en": "Add an instruction to convert every amount to a standard unit such as milligrams, so each dose field always holds a number"
+   },
+   {
+    "sid": "lesson-d2#10.3",
+    "en": "The error contract includes fields that are not part of the MCP specification. MCP tool responses only define `isError` to indicate an error; there is no standard `errorCategory` or `isRetryable` field, so consumers may ignore these custom fields and miss the intended recovery guidance."
+   },
+   {
+    "sid": "lesson-d4#4.4",
+    "en": "Don't flag it, because names are judged against the documented project standard and not against nearby code"
+   }
+  ]
+ },
+ {
+  "lemma": "standardize",
+  "kind": "vocab-core",
+  "surfaces": [
+   "standardized"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "standardize",
+   "word": "standardize",
+   "pos": "동사",
+   "ipa": "ˈstændərdaɪz",
+   "meaning": "표준화하다, (방식을) 하나로 통일하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#11.1",
+    "en": "Your team standardized naming and error-handling conventions by adding them to `~/.claude/CLAUDE.md` on the tech lead's machine."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:standardize.0",
+    "en": "Your team standardized naming and error-handling conventions by adding them to `~/.claude/CLAUDE.md` on the tech lead's machine.",
+    "ko": "팀은 이름 짓기와 오류 처리 컨벤션을 테크 리드 머신의 `~/.claude/CLAUDE.md` 에 추가해 표준화했다."
+   }
+  ]
+ },
+ {
+  "lemma": "start",
+  "kind": "new",
+  "surfaces": [
+   "starts",
+   "start",
+   "started",
+   "starting"
+  ],
+  "freq": 37,
+  "sentences": [
+   {
+    "sid": "lesson-d2#17.1",
+    "en": "It has started pulling arbitrary web pages that are not documents, even though its prompt says to load only documents."
+   },
+   {
+    "sid": "lesson-d3#5.3",
+    "en": "At the moment the session starts, which files are loaded into context?"
+   },
+   {
+    "sid": "lesson-d4#11.0",
+    "en": "Developers have started ignoring a review bot because it flags every broad `catch` block in a TypeScript service, including deliberate ones."
+   },
+   {
+    "sid": "mock04#19.2",
+    "en": "Doing this discovery inline reads dozens of files and floods the main session with search output before any edits begin, and the later edits then start to wander."
+   },
+   {
+    "sid": "sample01#6.1",
+    "en": "After turn 25, response quality degrades — the model starts forgetting earlier findings and repeating tool calls it already made."
+   },
+   {
+    "sid": "lesson-d1#11.3",
+    "en": "Fork the session once for each strategy, so each branch starts with the full analysis and the original session stays intact"
+   },
+   {
+    "sid": "lesson-d5#11.7",
+    "en": "Stop using either signal as a trigger: route on checkable conditions (customer asked for a human, no policy covers the request, no way forward), and track sentiment as an outcome from the start to the end of the conversation"
+   },
+   {
+    "sid": "lesson-d4#12.2",
+    "en": "After deployment, the model performs well on similar short English emails but starts mislabeling longer documents and documents in other languages that it previously handled correctly under the old, example-free prompt."
+   }
+  ]
+ },
+ {
+  "lemma": "startup",
+  "kind": "vocab-core",
+  "surfaces": [
+   "startup"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "startup",
+   "word": "startup",
+   "pos": "명사",
+   "ipa": "ˈstɑːrtʌp",
+   "meaning": "① (프로그램·세션의) 시작, 시작 시점 ② 스타트업, 신생 기업"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#13.7",
+    "en": "Move the audit instructions into CLAUDE.md so they load once at startup instead of being triggered mid-session by file names"
+   },
+   {
+    "sid": "mock04#15.4",
+    "en": "Document the correct usage in the project CLAUDE.md so it is always loaded into the model's context at startup"
+   },
+   {
+    "sid": "mock04#5.5",
+    "en": "Store the confirmed customer record in a global variable that the SDK automatically injects into every spawned subagent's context at startup."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:startup.0",
+    "en": "Move the audit instructions into CLAUDE.md so they load once at startup instead of being triggered mid-session by file names",
+    "ko": "감사 지침을 CLAUDE.md로 옮겨, 세션 도중 파일 이름 때문에 트리거되지 않고 시작 시 한 번만 로드되게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "stateless",
+  "kind": "vocab-core",
+  "surfaces": [
+   "stateless"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "stateless",
+   "word": "stateless",
+   "pos": "형용사",
+   "ipa": "ˈsteɪtləs",
+   "meaning": "무상태의 — 이전 요청 내용을 기억하지 않는 (stateful: 상태를 유지하는)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#2.4",
+    "en": "The Messages API is stateless, so it dropped the older turns once the conversation passed a set length"
+   }
+  ]
+ },
+ {
+  "lemma": "statement",
+  "kind": "vocab-core",
+  "surfaces": [
+   "statement",
+   "statements"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "statement",
+   "word": "statement",
+   "pos": "명사",
+   "ipa": "ˈsteɪtmənt",
+   "meaning": "① (코드의) 문, 구문 — log statement: 로그 출력 문 ② 진술, 서술 ③ (은행) 거래 내역서"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#29.0",
+    "en": "A developer wants Claude Code to update a deprecated log statement `logger.warn(\"legacy-path\")` that appears twice in the same file, in two different functions, where only one of the two occurrences should change."
+   },
+   {
+    "sid": "lesson-d4#20.0",
+    "en": "A financial services firm uses a tool-based schema to extract transaction records from PDF statements, including a required amount field and a required transaction_type field."
+   },
+   {
+    "sid": "lesson-d2#29.1",
+    "en": "Claude issues an Edit call with old_string set to exactly that log statement and the call fails."
+   }
+  ]
+ },
+ {
+  "lemma": "static",
+  "kind": "vocab-core",
+  "surfaces": [
+   "static"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "static",
+   "word": "static",
+   "pos": "형용사",
+   "ipa": "ˈstætɪk",
+   "meaning": "정적인, 고정된 — 요청마다 바뀌지 않고 늘 같은"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#24.4",
+    "en": "Configure a static `headers` entry with the token value hardcoded, then rotate the config file manually whenever the token expires."
+   },
+   {
+    "sid": "sample01#9.5",
+    "en": "Implement prompt caching for the static system prompt and core documents; route simple classification queries to Haiku while keeping Opus for complex analysis"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:static.0",
+    "en": "Implement prompt caching for the static system prompt and core documents",
+    "ko": "정적인 시스템 프롬프트와 핵심 문서에 프롬프트 캐싱을 적용한다"
+   }
+  ]
+ },
+ {
+  "lemma": "statistic",
+  "kind": "vocab-core",
+  "surfaces": [
+   "statistic"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "statistic",
+   "word": "statistic",
+   "pos": "명사",
+   "ipa": "stəˈtɪstɪk",
+   "meaning": "통계 수치, 통계 자료 (하나)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#39.6",
+    "en": "Instruct subagents to keep only the most recent figure for each statistic and discard older ones"
+   },
+   {
+    "sid": "mock04#35.8",
+    "en": "Route every conflicting statistic to a human reviewer and block synthesis until the reviewer picks a figure for each one."
+   },
+   {
+    "sid": "lesson-d5#40.5",
+    "en": "Have each subagent keep only the newest figure it finds for each statistic before passing it to the coordinator"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:statistic.0",
+    "en": "Route every conflicting statistic to a human reviewer and block synthesis until the reviewer picks a figure for each one.",
+    "ko": "충돌하는 모든 통계를 사람 검토자에게 보내고, 검토자가 각각의 수치를 고를 때까지 종합을 막는다"
+   }
+  ]
+ },
+ {
+  "lemma": "status",
+  "kind": "new",
+  "surfaces": [
+   "status"
+  ],
+  "freq": 7,
+  "sentences": [
+   {
+    "sid": "lesson-d5#19.1",
+    "en": "Instead of surfacing the failure, the subagent returns an empty findings list with status 'success' so the pipeline continues cleanly."
+   },
+   {
+    "sid": "lesson-d5#16.3",
+    "en": "{\"status\": \"UNAVAILABLE\"}, a fixed code the coordinator's logic can branch on reliably"
+   },
+   {
+    "sid": "lesson-d5#17.5",
+    "en": "The string is unstructured; return a fixed status code such as UNAVAILABLE so the coordinator can branch on it reliably"
+   },
+   {
+    "sid": "lesson-d5#28.4",
+    "en": "A structured JSON manifest with one entry per agent, holding its status and the path to its own export file"
+   },
+   {
+    "sid": "lesson-d5#28.6",
+    "en": "No manifest: rely on the coordinator's auto-compaction summary to carry the run's status into the next session"
+   },
+   {
+    "sid": "lesson-d5#5.2",
+    "en": "Parse each lookup response in code and hand the model only status, purchase date, item, amount and return deadline"
+   },
+   {
+    "sid": "lesson-d5#5.0",
+    "en": "A returns-processing agent calls an order-lookup tool that returns a JSON payload with 40+ fields (shipping carrier metadata, internal warehouse codes, marketing tags, etc.) for every order it checks, and after a dozen lookups the raw payloads dominate the context window even though only 5 fields (order status, purchase date, item, amount, return-window deadline) matter for return eligibility."
+   }
+  ]
+ },
+ {
+  "lemma": "stay",
+  "kind": "new",
+  "surfaces": [
+   "stays",
+   "stay",
+   "stayed",
+   "staying"
+  ],
+  "freq": 22,
+  "sentences": [
+   {
+    "sid": "lesson-d4#31.1",
+    "en": "Which workload should stay on the synchronous Messages API?"
+   },
+   {
+    "sid": "lesson-d5#11.2",
+    "en": "A polite customer whose request no written policy covers stays with the agent."
+   },
+   {
+    "sid": "mock04#40.2",
+    "en": "The team wants the server config to stay shared and version-controlled, but each engineer (and CI) must supply their own credential without leaking it."
+   },
+   {
+    "sid": "lesson-d1#11.3",
+    "en": "Fork the session once for each strategy, so each branch starts with the full analysis and the original session stays intact"
+   },
+   {
+    "sid": "lesson-d2#20.5",
+    "en": "Add the server with --scope project with the token written into the header, then add .mcp.json to .gitignore so the token stays out of the repository"
+   },
+   {
+    "sid": "lesson-d3#30.7",
+    "en": "The runner's Node.js version is older than the CLI supports, so the process stayed running while failing to parse its own command-line arguments"
+   },
+   {
+    "sid": "lesson-d5#15.1",
+    "en": "How should the coordinator's synthesis output schema handle each topic so the final report stays trustworthy?"
+   },
+   {
+    "sid": "lesson-d1#42.2",
+    "en": "A session-level grant stays bound to the session that issued it, so a forked branch starts without it"
+   }
+  ]
+ },
+ {
+  "lemma": "stderr",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "stderr",
+   "word": "stderr",
+   "pos": "약어",
+   "ipa": "ˌstændərd ˈerər",
+   "meaning": "표준 오류 (standard error) — 프로그램이 오류 메시지를 내보내는 출력 통로"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "stdin",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "stdin",
+   "word": "stdin",
+   "pos": "약어",
+   "ipa": "ˌstændərd ˈɪn",
+   "meaning": "표준 입력 (standard input) — 프로그램이 입력을 받는 기본 통로"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "stdio",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "stdio",
+   "word": "stdio",
+   "pos": "약어",
+   "ipa": "ˌstændərd ˌaɪˈoʊ",
+   "meaning": "표준 입출력 (stdin·stdout) — MCP 에서 서버를 하위 프로세스로 띄워 표준 입출력으로 통신하는 방식"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "stdout",
+  "kind": "vocab-core",
+  "surfaces": [
+   "stdout"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "stdout",
+   "word": "stdout",
+   "pos": "약어",
+   "ipa": "ˌstændərd ˈaʊt",
+   "meaning": "표준 출력 (standard output) — 프로그램이 결과를 내보내는 기본 통로"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#46.1",
+    "en": "A CI pipeline calls Claude Code to review each pull request, and a shell gate script greps stdout for the word \"CRITICAL\" to fail the build."
+   },
+   {
+    "sid": "lesson-d2#24.2",
+    "en": "Configure `headersHelper` to run a script that generates the token and writes the resulting header JSON to stdout on each connection."
+   },
+   {
+    "sid": "mock04-kor#46.1",
+    "en": "CI 파이프라인이 Claude Code를 호출해 풀 리퀘스트마다 리뷰를 수행하고, 셸 게이트 스크립트가 stdout에서 \"CRITICAL\" 이라는 단어를 grep해 빌드를 실패시킵니다. 그런데 Claude가 심각한 발견 사항을 실행할 때마다 \"severe issue\", \"major bug\", \"critical defect\"처럼 다르게 표현하기 때문에 게이트 결과가 들쭉날쭉합니다. 가장 효과적인 해결책은 무엇일까요?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:stdout.0",
+    "en": "...a shell gate script greps stdout for the word \"CRITICAL\" to fail the build.",
+    "ko": "셸 게이트 스크립트가 stdout에서 \"CRITICAL\" 이라는 단어를 grep해 빌드를 실패시킨다."
+   }
+  ]
+ },
+ {
+  "lemma": "steer",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "steer",
+   "word": "steer",
+   "pos": "동사",
+   "ipa": "stɪr",
+   "meaning": "(원하는 방향으로) 이끌다, 조종하다"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:steer.0",
+    "en": "The system prompt contains keyword-sensitive instructions that steer behavior based on terms like \"account,\" creating unintended tool selection patterns.",
+    "ko": "시스템 프롬프트에 \"account\" 같은 용어에 따라 행동을 유도하는 키워드 민감 지침이 있어, 의도치 않은 도구 선택 패턴이 생긴다."
+   }
+  ]
+ },
+ {
+  "lemma": "step",
+  "kind": "new",
+  "surfaces": [
+   "step",
+   "steps"
+  ],
+  "freq": 53,
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.0",
+    "en": "Every night a job takes each new product spec and runs the same steps in the same order."
+   },
+   {
+    "sid": "lesson-d2#19.2",
+    "en": "What is the recommended way to guarantee correct ordering for this first step?"
+   },
+   {
+    "sid": "lesson-d3#29.0",
+    "en": "A pipeline step runs `claude \"explain the failing test\"` and the job hangs until it times out."
+   },
+   {
+    "sid": "lesson-d4#16.0",
+    "en": "A pipeline first needs Claude to run extract_metadata on an uploaded document before any enrichment or summarization steps proceed."
+   },
+   {
+    "sid": "lesson-d5#30.1",
+    "en": "Before using these scores to decide which fields skip human review, what step should the architect take to make the scores trustworthy for routing decisions?"
+   },
+   {
+    "sid": "mock04#25.1",
+    "en": "For open-ended briefs like 'assess the competitive landscape for X', the coordinator runs a fixed three-step chain (search then summarize then format)."
+   },
+   {
+    "sid": "sample01#8.4",
+    "en": "Implement structured trace logging at each step: request payload, `stop_reason`, tool calls with inputs/outputs, and final response — with a session correlation ID"
+   },
+   {
+    "sid": "lesson-d1#32.2",
+    "en": "The content of a spec never changes which steps run."
+   }
+  ]
+ },
+ {
+  "lemma": "stern",
+  "kind": "vocab-core",
+  "surfaces": [
+   "stern"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "stern",
+   "word": "stern",
+   "pos": "형용사",
+   "ipa": "stɜːrn",
+   "meaning": "엄격한, 단호한 (말투가 강하고 딱딱한)"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#53.5",
+    "en": "Add a stern system-prompt line (\"Return only valid JSON, no markdown, no commentary\") and set temperature to 0 for deterministic formatting."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:stern.0",
+    "en": "Add a stern system-prompt line (\"Return only valid JSON, no markdown, no commentary\") and set temperature to 0 for deterministic formatting.",
+    "ko": "시스템 프롬프트에 엄격한 한 줄(\"Return only valid JSON, no markdown, no commentary\")을 추가하고, 결정적인 형식을 위해 temperature를 0으로 설정한다"
+   }
+  ]
+ }
+]

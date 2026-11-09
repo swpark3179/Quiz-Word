@@ -1,0 +1,110 @@
+[
+ {
+  "lemma": "yesterday",
+  "kind": "new",
+  "surfaces": [
+   "yesterday"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d1#39.0",
+    "en": "An architect ran a two-hour investigation into a flaky payment-retry bug yesterday afternoon and named the session 'payment-retry-bug' before stopping for the day."
+   },
+   {
+    "sid": "lesson-d1#39.5",
+    "en": "Run claude in the project directory and paste a summary of yesterday's findings first"
+   }
+  ]
+ },
+ {
+  "lemma": "yield",
+  "kind": "vocab-core",
+  "surfaces": [
+   "yields"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "yield",
+   "word": "yield",
+   "pos": "동사",
+   "ipa": "jiːld",
+   "meaning": "① (결과를) 낳다, 내놓다 ② 양보하다, (제어권을) 넘기다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#17.1",
+    "en": "Asking Claude to \"make the input validation more robust and idiomatic\" yields inconsistent output across runs: sometimes it adds zod, sometimes hand-written checks, sometimes nothing meaningful."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:yield.0",
+    "en": "Asking Claude to \"make the input validation more robust and idiomatic\" yields inconsistent output across runs...",
+    "ko": "Claude에게 \"입력 검증을 더 견고하고 관용적으로 만들어 줘\"라고 요청하면 실행할 때마다 들쭉날쭉한 결과가 나온다..."
+   }
+  ]
+ },
+ {
+  "lemma": "zdr",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "zdr",
+   "word": "ZDR",
+   "pos": "약어",
+   "ipa": "ˌziː.diːˈɑːr",
+   "meaning": "데이터 무보존(Zero Data Retention) — 요청·응답 데이터를 저장하지 않기로 한 약정"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "zero",
+  "kind": "new",
+  "surfaces": [
+   "zero"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "mock04#54.1",
+    "en": "After migrating to tool_use with a strict JSON schema, JSON parse failures dropped to zero."
+   },
+   {
+    "sid": "lesson-d2#27.4",
+    "en": "Use Bash to run the full test suite and count how many components report zero assertions executed against them"
+   },
+   {
+    "sid": "lesson-d4#8.5",
+    "en": "Set the temperature to zero in the API call, making token sampling more repeatable from one run to the next"
+   }
+  ]
+ },
+ {
+  "lemma": "zod",
+  "kind": "vocab-core",
+  "surfaces": [
+   "zod"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "zod",
+   "word": "Zod",
+   "pos": "명사",
+   "ipa": "zɑːd",
+   "meaning": "Zod — TypeScript용 스키마 선언·검증 라이브러리"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#17.1",
+    "en": "Asking Claude to \"make the input validation more robust and idiomatic\" yields inconsistent output across runs: sometimes it adds zod, sometimes hand-written checks, sometimes nothing meaningful."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:zod.0",
+    "en": "...yields inconsistent output across runs: sometimes it adds zod, sometimes hand-written checks, sometimes nothing meaningful.",
+    "ko": "실행할 때마다 결과가 들쭉날쭉하다. 어떤 때는 `zod` 를 추가하고, 어떤 때는 손으로 쓴 검사 코드를 넣고, 어떤 때는 의미 있는 변화가 거의 없다."
+   }
+  ]
+ }
+]

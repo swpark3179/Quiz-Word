@@ -1,0 +1,970 @@
+[
+ {
+  "lemma": "chatbot",
+  "skip": null,
+  "word": "chatbot",
+  "pos": ["명사"],
+  "ipa": "ˈtʃætbɑːt",
+  "meaning": "챗봇 (사용자와 대화하며 자동으로 답하는 프로그램)",
+  "short": "챗봇",
+  "senses": [
+   { "pos": "명사", "ko": "챗봇, 자동 대화 프로그램" }
+  ],
+  "forms": ["chatbots"],
+  "synonyms": ["bot"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#7.0", "surface": "chatbot", "pos": "명사", "sense": "챗봇, 자동 대화 프로그램" }
+  ]
+ },
+ {
+  "lemma": "cheap",
+  "skip": null,
+  "word": "cheap",
+  "pos": ["형용사"],
+  "ipa": "tʃiːp",
+  "meaning": "① (비용이) 싼, 저렴한 ② (처리 부담이) 적은, 가벼운 ③ 값싼, 질 낮은",
+  "short": "저렴한, 부담이 적은",
+  "senses": [
+   { "pos": "형용사", "ko": "(비용이) 싼, 저렴한" },
+   { "pos": "형용사", "ko": "(처리 부담이) 적은, 가벼운" },
+   { "pos": "형용사", "ko": "값싼, 질 낮은" }
+  ],
+  "forms": ["cheaper", "cheapest", "cheaply"],
+  "synonyms": ["inexpensive", "low-cost"],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#6.4", "surface": "cheap", "pos": "형용사", "sense": "(비용이) 싼, 저렴한" },
+   { "sid": "lesson-d3#12.6", "surface": "cheap", "pos": "형용사", "sense": "(처리 부담이) 적은, 가벼운" },
+   { "sid": "lesson-d5#2.7", "surface": "cheaper", "pos": "형용사", "sense": "(비용이) 싼, 저렴한" }
+  ]
+ },
+ {
+  "lemma": "cheaply",
+  "skip": null,
+  "word": "cheaply",
+  "pos": ["부사"],
+  "ipa": "ˈtʃiːpli",
+  "meaning": "싸게, 적은 비용으로",
+  "short": "적은 비용으로, 싸게",
+  "senses": [
+   { "pos": "부사", "ko": "적은 비용으로, 싸게" }
+  ],
+  "forms": [],
+  "synonyms": ["inexpensively"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#26.1", "surface": "cheaply", "pos": "부사", "sense": "적은 비용으로, 싸게" }
+  ]
+ },
+ {
+  "lemma": "check",
+  "skip": null,
+  "word": "check",
+  "pos": ["동사", "명사"],
+  "ipa": "tʃek",
+  "meaning": "① 확인하다, 점검하다 / 확인, 검사 ② (check in/into) (저장소에) 등록하다, 커밋하다 ③ 억제하다, 막다",
+  "short": "확인하다, 검사",
+  "senses": [
+   { "pos": "동사", "ko": "확인하다, 점검하다" },
+   { "pos": "명사", "ko": "확인, 검사" },
+   { "pos": "동사", "ko": "(check in) 저장소에 등록하다, 커밋하다" },
+   { "pos": "동사", "ko": "억제하다, 막다" }
+  ],
+  "forms": ["checks", "checked", "checking"],
+  "synonyms": ["verify", "inspect", "examine"],
+  "domain": "확인·검증",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#24.0", "surface": "checking", "pos": "동사", "sense": "확인하다, 점검하다" },
+   { "sid": "lesson-d1#17.0", "surface": "checks", "pos": "명사", "sense": "확인, 검사" },
+   { "sid": "lesson-d3#10.0", "surface": "checked", "pos": "동사", "sense": "(check in) 저장소에 등록하다, 커밋하다" },
+   { "sid": "lesson-d4#21.1", "surface": "check", "pos": "명사", "sense": "확인, 검사" }
+  ]
+ },
+ {
+  "lemma": "checkable",
+  "skip": null,
+  "word": "checkable",
+  "pos": ["형용사"],
+  "ipa": "ˈtʃekəbl",
+  "meaning": "확인할 수 있는, 검증 가능한",
+  "short": "확인 가능한",
+  "senses": [
+   { "pos": "형용사", "ko": "확인할 수 있는, 검증 가능한" }
+  ],
+  "forms": [],
+  "synonyms": ["verifiable"],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#11.7", "surface": "checkable", "pos": "형용사", "sense": "확인할 수 있는, 검증 가능한" }
+  ]
+ },
+ {
+  "lemma": "checker",
+  "skip": null,
+  "word": "checker",
+  "pos": ["명사"],
+  "ipa": "ˈtʃekər",
+  "meaning": "① 검사기, 점검 도구 (조건을 확인하는 프로그램) ② 검사원, 확인하는 사람",
+  "short": "검사기, 점검 도구",
+  "senses": [
+   { "pos": "명사", "ko": "검사기, 점검 도구" },
+   { "pos": "명사", "ko": "검사원, 확인하는 사람" }
+  ],
+  "forms": ["checkers"],
+  "synonyms": ["validator", "inspector"],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#6.0", "surface": "checker", "pos": "명사", "sense": "검사기, 점검 도구" },
+   { "sid": "lesson-d1#8.0", "surface": "checker", "pos": "명사", "sense": "검사기, 점검 도구" }
+  ]
+ },
+ {
+  "lemma": "checklist",
+  "skip": null,
+  "word": "checklist",
+  "pos": ["명사"],
+  "ipa": "ˈtʃeklɪst",
+  "meaning": "체크리스트, 점검 목록",
+  "short": "점검 목록",
+  "senses": [
+   { "pos": "명사", "ko": "체크리스트, 점검 목록" }
+  ],
+  "forms": ["checklists"],
+  "synonyms": [],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#8.3", "surface": "checklist", "pos": "명사", "sense": "체크리스트, 점검 목록" },
+   { "sid": "lesson-d5#28.3", "surface": "checklist", "pos": "명사", "sense": "체크리스트, 점검 목록" },
+   { "sid": "mock04#52.6", "surface": "checklist", "pos": "명사", "sense": "체크리스트, 점검 목록" }
+  ]
+ },
+ {
+  "lemma": "checkout",
+  "skip": null,
+  "word": "checkout",
+  "pos": ["명사"],
+  "ipa": "ˈtʃekaʊt",
+  "meaning": "① (git) 체크아웃 — 저장소에서 꺼내 놓은 작업 사본 ② (쇼핑) 결제 단계",
+  "short": "(저장소의) 작업 사본",
+  "senses": [
+   { "pos": "명사", "ko": "(git) 체크아웃, 작업 사본" },
+   { "pos": "명사", "ko": "(쇼핑) 결제 단계, 계산대" }
+  ],
+  "forms": ["checkouts"],
+  "synonyms": ["working copy"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#48.2", "surface": "checkout", "pos": "명사", "sense": "(git) 체크아웃, 작업 사본" },
+   { "sid": "lesson-d3#26.0", "surface": "checkout", "pos": "명사", "sense": "(쇼핑) 결제 단계, 계산대" },
+   { "sid": "lesson-d3#30.6", "surface": "checkout", "pos": "명사", "sense": "(git) 체크아웃, 작업 사본" },
+   { "sid": "mock04#48.8", "surface": "checkout", "pos": "명사", "sense": "(git) 체크아웃, 작업 사본" }
+  ]
+ },
+ {
+  "lemma": "checkpoint",
+  "skip": null,
+  "word": "checkpoint",
+  "pos": ["명사"],
+  "ipa": "ˈtʃekpɔɪnt",
+  "meaning": "① 체크포인트 (작업 상태를 저장해 둔 중간 지점) ② 검문소",
+  "short": "중간 저장 지점",
+  "senses": [
+   { "pos": "명사", "ko": "체크포인트, 중간 저장 지점" },
+   { "pos": "명사", "ko": "검문소" }
+  ],
+  "forms": ["checkpoints"],
+  "synonyms": ["snapshot"],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": [
+   { "sid": "selfcheck-d5-kor#22.1", "surface": "checkpoint", "pos": "명사", "sense": "체크포인트, 중간 저장 지점" }
+  ]
+ },
+ {
+  "lemma": "chip",
+  "skip": null,
+  "word": "chip",
+  "pos": ["명사"],
+  "ipa": "tʃɪp",
+  "meaning": "① (반도체) 칩 ② 조각, 부스러기",
+  "short": "(반도체) 칩",
+  "senses": [
+   { "pos": "명사", "ko": "(반도체) 칩" },
+   { "pos": "명사", "ko": "조각, 부스러기" }
+  ],
+  "forms": ["chips"],
+  "synonyms": ["microchip", "semiconductor"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#16.0", "surface": "chip", "pos": "명사", "sense": "(반도체) 칩" }
+  ]
+ },
+ {
+  "lemma": "choice",
+  "skip": null,
+  "word": "choice",
+  "pos": ["명사"],
+  "ipa": "tʃɔɪs",
+  "meaning": "① 선택, 결정 ② 선택지, 고를 수 있는 것",
+  "short": "선택, 선택지",
+  "senses": [
+   { "pos": "명사", "ko": "선택, 결정" },
+   { "pos": "명사", "ko": "선택지, 고를 수 있는 것" }
+  ],
+  "forms": ["choices"],
+  "synonyms": ["selection", "option"],
+  "domain": "비교·평가·판단",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#22.4", "surface": "choice", "pos": "명사", "sense": "선택, 결정" },
+   { "sid": "lesson-d4#9.3", "surface": "choice", "pos": "명사", "sense": "선택지, 고를 수 있는 것" },
+   { "sid": "lesson-d2#18.1", "surface": "choice", "pos": "명사", "sense": "선택, 결정" },
+   { "sid": "lesson-d4#9.6", "surface": "choice", "pos": "명사", "sense": "선택, 결정" }
+  ]
+ },
+ {
+  "lemma": "choose",
+  "skip": null,
+  "word": "choose",
+  "pos": ["동사"],
+  "ipa": "tʃuːz",
+  "meaning": "① 고르다, 선택하다 ② (choose to do) ~하기로 결정하다",
+  "short": "고르다, 선택하다",
+  "senses": [
+   { "pos": "동사", "ko": "고르다, 선택하다" },
+   { "pos": "동사", "ko": "(~하기로) 결정하다" }
+  ],
+  "forms": ["chooses", "chose", "chosen", "choosing"],
+  "synonyms": ["select", "pick", "opt"],
+  "domain": "비교·평가·판단",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#1.2", "surface": "chooses", "pos": "동사", "sense": "고르다, 선택하다" },
+   { "sid": "mock04#24.6", "surface": "choosing", "pos": "동사", "sense": "(~하기로) 결정하다" },
+   { "sid": "lesson-d1#5.1", "surface": "chose", "pos": "동사", "sense": "고르다, 선택하다" },
+   { "sid": "lesson-d5#16.2", "surface": "choose", "pos": "동사", "sense": "고르다, 선택하다" }
+  ]
+ },
+ {
+  "lemma": "chunk",
+  "skip": null,
+  "word": "chunk",
+  "pos": ["명사", "동사"],
+  "ipa": "tʃʌŋk",
+  "meaning": "청크, 조각 — 큰 데이터를 나눈 한 덩어리 / 조각으로 나누다",
+  "short": "조각, 조각으로 나누다",
+  "senses": [
+   { "pos": "명사", "ko": "청크, (데이터) 조각" },
+   { "pos": "동사", "ko": "조각으로 나누다" }
+  ],
+  "forms": ["chunks", "chunked", "chunking"],
+  "synonyms": ["piece", "segment"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#21.4", "surface": "chunks", "pos": "명사", "sense": "청크, (데이터) 조각" },
+   { "sid": "sample01#6.5", "surface": "chunked", "pos": "동사", "sense": "조각으로 나누다" }
+  ]
+ },
+ {
+  "lemma": "ci",
+  "skip": null,
+  "word": "CI",
+  "pos": ["약어"],
+  "ipa": "ˌsiːˈaɪ",
+  "meaning": "CI(지속적 통합) — 커밋마다 빌드·테스트를 자동으로 돌리는 파이프라인",
+  "short": "지속적 통합",
+  "senses": [
+   { "pos": "약어", "ko": "지속적 통합 (자동 빌드·테스트)" }
+  ],
+  "forms": [],
+  "synonyms": ["continuous integration"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#38.1", "surface": "CI", "pos": "약어", "sense": "지속적 통합 (자동 빌드·테스트)" },
+   { "sid": "lesson-d3#31.0", "surface": "CI", "pos": "약어", "sense": "지속적 통합 (자동 빌드·테스트)" },
+   { "sid": "sample01#13.5", "surface": "CI", "pos": "약어", "sense": "지속적 통합 (자동 빌드·테스트)" },
+   { "sid": "mock04#40.2", "surface": "CI", "pos": "약어", "sense": "지속적 통합 (자동 빌드·테스트)" }
+  ]
+ },
+ {
+  "lemma": "circumstance",
+  "skip": null,
+  "word": "circumstance",
+  "pos": ["명사"],
+  "ipa": "ˈsɜːrkəmstæns",
+  "meaning": "상황, 사정",
+  "short": "상황, 사정",
+  "senses": [
+   { "pos": "명사", "ko": "상황, 사정" },
+   { "pos": "명사", "ko": "(경제적) 형편, 처지" }
+  ],
+  "forms": ["circumstances"],
+  "synonyms": ["situation", "condition"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#12.0", "surface": "circumstances", "pos": "명사", "sense": "상황, 사정" },
+   { "sid": "lesson-d1#29.3", "surface": "circumstances", "pos": "명사", "sense": "상황, 사정" },
+   { "sid": "mock04#30.6", "surface": "circumstances", "pos": "명사", "sense": "상황, 사정" }
+  ]
+ },
+ {
+  "lemma": "cite",
+  "skip": null,
+  "word": "cite",
+  "pos": ["동사"],
+  "ipa": "saɪt",
+  "meaning": "인용하다, (근거로) 들다",
+  "short": "인용하다, 근거로 들다",
+  "senses": [
+   { "pos": "동사", "ko": "인용하다, 출처로 밝히다" },
+   { "pos": "동사", "ko": "(근거로) 들다, 제시하다" }
+  ],
+  "forms": ["cites", "cited", "citing", "citation", "citations", "uncited"],
+  "synonyms": ["quote", "reference"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#14.1", "surface": "cites", "pos": "동사", "sense": "인용하다, 출처로 밝히다" },
+   { "sid": "lesson-d5#38.6", "surface": "cite", "pos": "동사", "sense": "(근거로) 들다, 제시하다" },
+   { "sid": "mock04#28.2", "surface": "cites", "pos": "동사", "sense": "(근거로) 들다, 제시하다" },
+   { "sid": "lesson-d1#10.3", "surface": "cite", "pos": "동사", "sense": "인용하다, 출처로 밝히다" }
+  ]
+ },
+ {
+  "lemma": "city",
+  "skip": null,
+  "word": "city",
+  "pos": ["명사"],
+  "ipa": "ˈsɪti",
+  "meaning": "도시",
+  "short": "도시",
+  "senses": [
+   { "pos": "명사", "ko": "도시" }
+  ],
+  "forms": ["cities"],
+  "synonyms": ["town"],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#12.0", "surface": "city", "pos": "명사", "sense": "도시" }
+  ]
+ },
+ {
+  "lemma": "claim",
+  "skip": null,
+  "word": "claim",
+  "pos": ["명사", "동사"],
+  "ipa": "kleɪm",
+  "meaning": "① 주장(하다) — 사실이라고 내세우다 ② (보험금) 청구(건) — claims agent: 청구 처리 에이전트",
+  "short": "주장, 청구(건)",
+  "senses": [
+   { "pos": "명사", "ko": "주장" },
+   { "pos": "동사", "ko": "(사실이라고) 주장하다" },
+   { "pos": "명사", "ko": "(보험금 등의) 청구(건)" },
+   { "pos": "동사", "ko": "(권리를) 요구하다, 차지하다" }
+  ],
+  "forms": ["claims", "claimed", "claiming"],
+  "synonyms": ["assert", "allege", "contend"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#10.1", "surface": "claims", "pos": "명사", "sense": "주장" },
+   { "sid": "sample01#10.1", "surface": "claim", "pos": "동사", "sense": "(사실이라고) 주장하다" },
+   { "sid": "lesson-d4#33.0", "surface": "claims", "pos": "명사", "sense": "(보험금 등의) 청구(건)" },
+   { "sid": "lesson-d5#19.2", "surface": "claiming", "pos": "동사", "sense": "(사실이라고) 주장하다" }
+  ]
+ },
+ {
+  "lemma": "claim-to-source",
+  "skip": null,
+  "word": "claim-to-source",
+  "pos": ["형용사"],
+  "ipa": "ˌkleɪm tə ˈsɔːrs",
+  "meaning": "주장-출처 (대응)의 — 각 주장과 그 근거 출처를 짝지은",
+  "short": "주장과 출처를 짝지은",
+  "senses": [
+   { "pos": "형용사", "ko": "주장과 출처를 짝지은" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#34.5", "surface": "claim-to-source", "pos": "형용사", "sense": "주장과 출처를 짝지은" }
+  ]
+ },
+ {
+  "lemma": "clarify",
+  "skip": null,
+  "word": "clarify",
+  "pos": ["동사"],
+  "ipa": "ˈklærəfaɪ",
+  "meaning": "명확히 하다, (모호한 점을) 분명히 묻다",
+  "short": "명확히 하다",
+  "senses": [
+   { "pos": "동사", "ko": "명확히 하다, 분명히 밝히다" },
+   { "pos": "동사", "ko": "(모호한 점을) 되묻다, 확인하다" }
+  ],
+  "forms": ["clarifies", "clarified", "clarifying", "clarification"],
+  "synonyms": ["explain", "specify"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:clarify.0", "surface": "clarifying", "pos": "동사", "sense": "명확히 하다, 분명히 밝히다" }
+  ]
+ },
+ {
+  "lemma": "class",
+  "skip": null,
+  "word": "class",
+  "pos": ["명사"],
+  "ipa": "klæs",
+  "meaning": "① (프로그래밍) 클래스 ② 종류, 부류 ③ 수업, 학급",
+  "short": "클래스, 종류",
+  "senses": [
+   { "pos": "명사", "ko": "(프로그래밍) 클래스" },
+   { "pos": "명사", "ko": "종류, 부류" },
+   { "pos": "명사", "ko": "수업, 학급" }
+  ],
+  "forms": ["classes"],
+  "synonyms": ["category", "kind", "type"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#27.1", "surface": "class", "pos": "명사", "sense": "(프로그래밍) 클래스" },
+   { "sid": "lesson-d4#14.2", "surface": "class", "pos": "명사", "sense": "종류, 부류" },
+   { "sid": "lesson-d5#25.1", "surface": "class", "pos": "명사", "sense": "(프로그래밍) 클래스" },
+   { "sid": "lesson-d5#27.4", "surface": "classes", "pos": "명사", "sense": "(프로그래밍) 클래스" }
+  ]
+ },
+ {
+  "lemma": "classifier",
+  "skip": null,
+  "word": "classifier",
+  "pos": ["명사"],
+  "ipa": "ˈklæsɪfaɪər",
+  "meaning": "분류기 — 입력을 정해진 범주로 나누는 모델·규칙",
+  "short": "분류기",
+  "senses": [
+   { "pos": "명사", "ko": "분류기, 분류 모델" }
+  ],
+  "forms": ["classifiers"],
+  "synonyms": ["categorizer"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#14.0", "surface": "classifier", "pos": "명사", "sense": "분류기, 분류 모델" },
+   { "sid": "lesson-d1#6.0", "surface": "classifier", "pos": "명사", "sense": "분류기, 분류 모델" },
+   { "sid": "mock04#1.8", "surface": "classifier", "pos": "명사", "sense": "분류기, 분류 모델" },
+   { "sid": "mock04#29.7", "surface": "classifier", "pos": "명사", "sense": "분류기, 분류 모델" }
+  ]
+ },
+ {
+  "lemma": "classify",
+  "skip": null,
+  "word": "classify",
+  "pos": ["동사"],
+  "ipa": "ˈklæsɪfaɪ",
+  "meaning": "분류하다 — 기준에 따라 정해진 갈래로 나누다",
+  "short": "분류하다",
+  "senses": [
+   { "pos": "동사", "ko": "분류하다" },
+   { "pos": "동사", "ko": "(문서를) 기밀로 지정하다" }
+  ],
+  "forms": ["classifies", "classified", "classifying", "classification"],
+  "synonyms": ["categorize", "sort", "label"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#14.1", "surface": "Classify", "pos": "동사", "sense": "분류하다" },
+   { "sid": "lesson-d1#6.1", "surface": "classifying", "pos": "동사", "sense": "분류하다" },
+   { "sid": "mock04#31.6", "surface": "classify", "pos": "동사", "sense": "분류하다" },
+   { "sid": "sample01#14.2", "surface": "classified", "pos": "동사", "sense": "분류하다" }
+  ]
+ },
+ {
+  "lemma": "clause",
+  "skip": null,
+  "word": "clause",
+  "pos": ["명사"],
+  "ipa": "klɔːz",
+  "meaning": "① (계약·법률의) 조항 ② (문법) 절 ③ (SQL 등 코드의) 절, 구문",
+  "short": "(계약) 조항",
+  "senses": [
+   { "pos": "명사", "ko": "(계약·법률의) 조항" },
+   { "pos": "명사", "ko": "(문법) 절" },
+   { "pos": "명사", "ko": "(코드의) 절, 구문" }
+  ],
+  "forms": ["clauses"],
+  "synonyms": ["provision", "term"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#15.1", "surface": "clauses", "pos": "명사", "sense": "(계약·법률의) 조항" }
+  ]
+ },
+ {
+  "lemma": "clean",
+  "skip": null,
+  "word": "clean",
+  "pos": ["형용사", "동사"],
+  "ipa": "kliːn",
+  "meaning": "① 깨끗한, (변경·흔적 없는) 초기 상태의 ② (오류·결함 없이) 깔끔한 ③ 청소하다, 정리하다",
+  "short": "깨끗한, 결함 없는",
+  "senses": [
+   { "pos": "형용사", "ko": "(변경·흔적 없이) 깨끗한, 초기 상태의" },
+   { "pos": "형용사", "ko": "(오류·결함 없이) 깔끔한" },
+   { "pos": "동사", "ko": "청소하다, 정리하다" }
+  ],
+  "forms": ["cleaner", "cleaned", "cleaning", "cleanly"],
+  "synonyms": ["fresh", "tidy", "spotless"],
+  "domain": "상태·성질",
+  "basic": true,
+  "contexts": [
+   { "sid": "mock04#48.2", "surface": "clean", "pos": "형용사", "sense": "(변경·흔적 없이) 깨끗한, 초기 상태의" },
+   { "sid": "mock04#47.2", "surface": "clean", "pos": "형용사", "sense": "(오류·결함 없이) 깔끔한" },
+   { "sid": "sample01#10.6", "surface": "clean", "pos": "형용사", "sense": "(변경·흔적 없이) 깨끗한, 초기 상태의" },
+   { "sid": "lesson-d2#12.4", "surface": "clean", "pos": "형용사", "sense": "(오류·결함 없이) 깔끔한" }
+  ]
+ },
+ {
+  "lemma": "cleanly",
+  "skip": null,
+  "word": "cleanly",
+  "pos": ["부사"],
+  "ipa": "ˈkliːnli",
+  "meaning": "깔끔하게, (섞이거나 꼬이지 않고) 깨끗이",
+  "short": "깔끔하게, 깨끗이",
+  "senses": [
+   { "pos": "부사", "ko": "깔끔하게, 깨끗이" },
+   { "pos": "부사", "ko": "(문제없이) 순조롭게" }
+  ],
+  "forms": [],
+  "synonyms": ["neatly", "smoothly"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#16.4", "surface": "cleanly", "pos": "부사", "sense": "깔끔하게, 깨끗이" },
+   { "sid": "lesson-d5#19.1", "surface": "cleanly", "pos": "부사", "sense": "(문제없이) 순조롭게" }
+  ]
+ },
+ {
+  "lemma": "cleanup",
+  "skip": null,
+  "word": "cleanup",
+  "pos": ["명사"],
+  "ipa": "ˈkliːnʌp",
+  "meaning": "① (데이터 등의) 정리, 정제 ② 청소, 뒷정리",
+  "short": "정리, 정제",
+  "senses": [
+   { "pos": "명사", "ko": "(데이터 등의) 정리, 정제" },
+   { "pos": "명사", "ko": "청소, 뒷정리" }
+  ],
+  "forms": ["cleanups"],
+  "synonyms": ["tidying"],
+  "domain": "삭제·제거",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#1.0", "surface": "cleanup", "pos": "명사", "sense": "(데이터 등의) 정리, 정제" }
+  ]
+ },
+ {
+  "lemma": "clear",
+  "skip": null,
+  "word": "clear",
+  "pos": ["형용사", "동사"],
+  "ipa": "klɪr",
+  "meaning": "① 분명한, 명확한 ② (문제·오류가) 해소되다, 풀리다 ③ 지우다, 비우다",
+  "short": "명확한, 해소되다",
+  "senses": [
+   { "pos": "형용사", "ko": "분명한, 명확한" },
+   { "pos": "동사", "ko": "(문제·오류가) 해소되다, 풀리다" },
+   { "pos": "동사", "ko": "지우다, 비우다" }
+  ],
+  "forms": ["clearer", "clears", "cleared", "clearing", "clearly"],
+  "synonyms": ["obvious", "explicit", "plain"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#13.7", "surface": "clear", "pos": "형용사", "sense": "분명한, 명확한" },
+   { "sid": "lesson-d2#13.7", "surface": "clears", "pos": "동사", "sense": "(문제·오류가) 해소되다, 풀리다" },
+   { "sid": "lesson-d1#28.4", "surface": "clearer", "pos": "형용사", "sense": "분명한, 명확한" },
+   { "sid": "mock04#33.4", "surface": "clear", "pos": "형용사", "sense": "분명한, 명확한" }
+  ]
+ },
+ {
+  "lemma": "clear-cut",
+  "skip": null,
+  "word": "clear-cut",
+  "pos": ["형용사"],
+  "ipa": "ˌklɪr ˈkʌt",
+  "meaning": "명백한, 판단이 분명한",
+  "short": "명백한",
+  "senses": [
+   { "pos": "형용사", "ko": "명백한, 판단이 분명한" }
+  ],
+  "forms": [],
+  "synonyms": ["obvious", "unambiguous", "definite"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#51.1", "surface": "clear-cut", "pos": "형용사", "sense": "명백한, 판단이 분명한" },
+   { "sid": "lesson-d4#9.4", "surface": "clear-cut", "pos": "형용사", "sense": "명백한, 판단이 분명한" }
+  ]
+ },
+ {
+  "lemma": "clearly",
+  "skip": null,
+  "word": "clearly",
+  "pos": ["부사"],
+  "ipa": "ˈklɪrli",
+  "meaning": "① 분명히, 명백히 ② 또렷하게, 명확하게",
+  "short": "분명히, 명백히",
+  "senses": [
+   { "pos": "부사", "ko": "분명히, 명백히" },
+   { "pos": "부사", "ko": "또렷하게, 명확하게" }
+  ],
+  "forms": [],
+  "synonyms": ["obviously", "evidently"],
+  "domain": "상태·성질",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#18.2", "surface": "clearly", "pos": "부사", "sense": "분명히, 명백히" },
+   { "sid": "lesson-d4#24.6", "surface": "clearly", "pos": "부사", "sense": "또렷하게, 명확하게" },
+   { "sid": "lesson-d5#9.1", "surface": "clearly", "pos": "부사", "sense": "분명히, 명백히" },
+   { "sid": "lesson-d1#28.6", "surface": "clearly", "pos": "부사", "sense": "분명히, 명백히" }
+  ]
+ },
+ {
+  "lemma": "cli",
+  "skip": null,
+  "word": "CLI",
+  "pos": ["약어"],
+  "ipa": "ˌsiː.elˈaɪ",
+  "meaning": "CLI(명령줄 인터페이스) — 터미널에 명령어를 입력해 쓰는 방식",
+  "short": "명령줄 인터페이스",
+  "senses": [
+   { "pos": "약어", "ko": "명령줄 인터페이스" }
+  ],
+  "forms": [],
+  "synonyms": ["command line"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#30.4", "surface": "CLI", "pos": "약어", "sense": "명령줄 인터페이스" },
+   { "sid": "lesson-d3#30.6", "surface": "CLI", "pos": "약어", "sense": "명령줄 인터페이스" },
+   { "sid": "lesson-d3#30.7", "surface": "CLI", "pos": "약어", "sense": "명령줄 인터페이스" }
+  ]
+ },
+ {
+  "lemma": "client",
+  "skip": null,
+  "word": "client",
+  "pos": ["명사"],
+  "ipa": "ˈklaɪənt",
+  "meaning": "① (서버에 요청을 보내는) 클라이언트 (프로그램) ② 고객, 의뢰인",
+  "short": "클라이언트, 고객",
+  "senses": [
+   { "pos": "명사", "ko": "(서버에 요청하는) 클라이언트" },
+   { "pos": "명사", "ko": "고객, 의뢰인" }
+  ],
+  "forms": ["clients"],
+  "synonyms": ["customer"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#33.6", "surface": "client", "pos": "명사", "sense": "(서버에 요청하는) 클라이언트" },
+   { "sid": "lesson-d3#23.1", "surface": "clients", "pos": "명사", "sense": "(서버에 요청하는) 클라이언트" },
+   { "sid": "sample01#8.3", "surface": "client", "pos": "명사", "sense": "(서버에 요청하는) 클라이언트" },
+   { "sid": "mock04#43.1", "surface": "client", "pos": "명사", "sense": "(서버에 요청하는) 클라이언트" }
+  ]
+ },
+ {
+  "lemma": "clinical",
+  "skip": null,
+  "word": "clinical",
+  "pos": ["형용사"],
+  "ipa": "ˈklɪnɪkl",
+  "meaning": "임상의, 진료의 (clinical judgment: 의료적 판단)",
+  "short": "임상의, 진료의",
+  "senses": [
+   { "pos": "형용사", "ko": "임상의, 진료의" },
+   { "pos": "형용사", "ko": "(감정 없이) 냉정한, 객관적인" }
+  ],
+  "forms": ["clinically"],
+  "synonyms": ["medical"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#13.0", "surface": "Clinical", "pos": "형용사", "sense": "임상의, 진료의" },
+   { "sid": "lesson-d5#9.1", "surface": "clinical", "pos": "형용사", "sense": "임상의, 진료의" },
+   { "sid": "lesson-d5#9.0", "surface": "clinical", "pos": "형용사", "sense": "임상의, 진료의" }
+  ]
+ },
+ {
+  "lemma": "clock",
+  "skip": null,
+  "word": "clock",
+  "pos": ["명사"],
+  "ipa": "klɑːk",
+  "meaning": "① 시계 ② (around the clock) 24시간 내내, 밤낮없이",
+  "short": "시계, 24시간 내내",
+  "senses": [
+   { "pos": "명사", "ko": "시계" },
+   { "pos": "명사", "ko": "(around the clock) 24시간 내내" }
+  ],
+  "forms": ["clocks"],
+  "synonyms": ["timepiece"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#28.0", "surface": "clock", "pos": "명사", "sense": "(around the clock) 24시간 내내" }
+  ]
+ },
+ {
+  "lemma": "clone",
+  "skip": null,
+  "word": "clone",
+  "pos": ["동사", "명사"],
+  "ipa": "kloʊn",
+  "meaning": "(저장소를) 복제하다, 클론하다 / 복제본",
+  "short": "복제하다, 클론하다",
+  "senses": [
+   { "pos": "동사", "ko": "(저장소를) 복제하다, 클론하다" },
+   { "pos": "명사", "ko": "복제본" }
+  ],
+  "forms": ["clones", "cloned", "cloning"],
+  "synonyms": ["copy", "duplicate"],
+  "domain": "생성·추가",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#45.2", "surface": "clones", "pos": "동사", "sense": "(저장소를) 복제하다, 클론하다" },
+   { "sid": "mock04#11.4", "surface": "clone", "pos": "명사", "sense": "복제본" },
+   { "sid": "mock04#11.2", "surface": "cloned", "pos": "동사", "sense": "(저장소를) 복제하다, 클론하다" },
+   { "sid": "mock04#11.5", "surface": "cloning", "pos": "동사", "sense": "(저장소를) 복제하다, 클론하다" }
+  ]
+ },
+ {
+  "lemma": "close",
+  "skip": null,
+  "word": "close",
+  "pos": ["동사", "형용사"],
+  "ipa": "kloʊz",
+  "meaning": "① 닫다, (건을) 종결하다 ② 가까운, 면밀한 (closer inspection: 더 자세히 살펴봄) ③ (closing) 끝맺는, 마지막의 ④ (fail closed) 차단된 상태의",
+  "short": "닫다, 종결하다",
+  "senses": [
+   { "pos": "동사", "ko": "닫다, (건을) 종결하다" },
+   { "pos": "형용사", "ko": "가까운, 면밀한" },
+   { "pos": "형용사", "ko": "(closing) 끝맺는, 마지막의" },
+   { "pos": "형용사", "ko": "(closed) 닫힌, 차단된" }
+  ],
+  "forms": ["closes", "closed", "closing", "closer", "closely"],
+  "synonyms": ["shut", "end", "conclude"],
+  "domain": "시작·종료",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#7.1", "surface": "closes", "pos": "동사", "sense": "닫다, (건을) 종결하다" },
+   { "sid": "lesson-d5#40.1", "surface": "closer", "pos": "형용사", "sense": "가까운, 면밀한" },
+   { "sid": "mock04#1.2", "surface": "closing", "pos": "형용사", "sense": "(closing) 끝맺는, 마지막의" },
+   { "sid": "lesson-d1#22.7", "surface": "closed", "pos": "형용사", "sense": "(closed) 닫힌, 차단된" }
+  ]
+ },
+ {
+  "lemma": "closely",
+  "skip": null,
+  "word": "closely",
+  "pos": ["부사"],
+  "ipa": "ˈkloʊsli",
+  "meaning": "① 자세히, 면밀히 ② 밀접하게, 가까이",
+  "short": "자세히, 면밀히",
+  "senses": [
+   { "pos": "부사", "ko": "자세히, 면밀히" },
+   { "pos": "부사", "ko": "밀접하게, 가까이" }
+  ],
+  "forms": [],
+  "synonyms": ["carefully", "attentively"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#14.6", "surface": "closely", "pos": "부사", "sense": "자세히, 면밀히" }
+  ]
+ },
+ {
+  "lemma": "clue",
+  "skip": null,
+  "word": "clue",
+  "pos": ["명사"],
+  "ipa": "kluː",
+  "meaning": "단서, 실마리",
+  "short": "단서, 실마리",
+  "senses": [
+   { "pos": "명사", "ko": "단서, 실마리" }
+  ],
+  "forms": ["clues"],
+  "synonyms": ["hint", "cue", "indication"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#58.5", "surface": "clues", "pos": "명사", "sense": "단서, 실마리" }
+  ]
+ },
+ {
+  "lemma": "clutter",
+  "skip": null,
+  "word": "clutter",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈklʌtər",
+  "meaning": "(불필요한 것으로) 어수선하게 만들다 / 잡동사니",
+  "short": "어수선하게 만들다",
+  "senses": [
+   { "pos": "동사", "ko": "(불필요한 것으로) 어수선하게 만들다" },
+   { "pos": "명사", "ko": "잡동사니, 어수선함" }
+  ],
+  "forms": ["clutters", "cluttered", "cluttering"],
+  "synonyms": ["litter", "mess up"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#12.2", "surface": "cluttered", "pos": "동사", "sense": "(불필요한 것으로) 어수선하게 만들다" }
+  ]
+ },
+ {
+  "lemma": "cod",
+  "skip": null,
+  "word": "coding",
+  "pos": ["명사"],
+  "ipa": "ˈkoʊdɪŋ",
+  "meaning": "① 코딩, 프로그래밍 (코드를 작성하는 일) ② 부호화, 코드 부여",
+  "short": "코딩, 프로그래밍",
+  "senses": [
+   { "pos": "명사", "ko": "코딩, 프로그래밍" },
+   { "pos": "명사", "ko": "부호화, 코드 부여" }
+  ],
+  "forms": [],
+  "synonyms": ["programming"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#18.0", "surface": "coding", "pos": "명사", "sense": "코딩, 프로그래밍" }
+  ]
+ },
+ {
+  "lemma": "code",
+  "skip": null,
+  "word": "code",
+  "pos": ["명사", "동사"],
+  "ipa": "koʊd",
+  "meaning": "① (프로그램) 코드 ② 부호, 코드 번호 ③ 규범, 규약 ④ 코딩하다, 부호화하다",
+  "short": "(프로그램) 코드",
+  "senses": [
+   { "pos": "명사", "ko": "(프로그램) 코드" },
+   { "pos": "명사", "ko": "부호, 코드 번호" },
+   { "pos": "명사", "ko": "규범, 규약" },
+   { "pos": "동사", "ko": "코딩하다, 부호화하다" }
+  ],
+  "forms": ["codes", "coded", "coding"],
+  "synonyms": ["source code"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#32.1", "surface": "code", "pos": "명사", "sense": "(프로그램) 코드" },
+   { "sid": "lesson-d4#1.0", "surface": "code", "pos": "명사", "sense": "(프로그램) 코드" },
+   { "sid": "mock04#11.0", "surface": "Code", "pos": "명사", "sense": "(프로그램) 코드" }
+  ]
+ },
+ {
+  "lemma": "code-intelligence",
+  "skip": null,
+  "word": "code-intelligence",
+  "pos": ["명사구"],
+  "ipa": "ˈkoʊd ɪnˌtelɪdʒəns",
+  "meaning": "코드 인텔리전스 — 심볼·참조 관계를 이해해 코드를 찾고 분석하는 기능",
+  "short": "코드 분석 기능",
+  "senses": [
+   { "pos": "명사구", "ko": "코드 인텔리전스, 코드 분석 기능" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#42.1", "surface": "code-intelligence", "pos": "명사구", "sense": "코드 인텔리전스, 코드 분석 기능" }
+  ]
+ },
+ {
+  "lemma": "code-review",
+  "skip": null,
+  "word": "code-review",
+  "pos": ["명사구"],
+  "ipa": "ˈkoʊd rɪˌvjuː",
+  "meaning": "코드 리뷰 — 변경된 코드를 읽고 결함을 검토하는 일",
+  "short": "코드 리뷰, 코드 검토",
+  "senses": [
+   { "pos": "명사구", "ko": "코드 리뷰, 코드 검토" }
+  ],
+  "forms": ["code review", "code reviews"],
+  "synonyms": [],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#35.0", "surface": "code review", "pos": "명사구", "sense": "코드 리뷰, 코드 검토" },
+   { "sid": "lesson-d4#32.0", "surface": "code-review", "pos": "명사구", "sense": "코드 리뷰, 코드 검토" },
+   { "sid": "mock04#49.1", "surface": "code-review", "pos": "명사구", "sense": "코드 리뷰, 코드 검토" },
+   { "sid": "lesson-d4#8.0", "surface": "code-review", "pos": "명사구", "sense": "코드 리뷰, 코드 검토" }
+  ]
+ },
+ {
+  "lemma": "codebase",
+  "skip": null,
+  "word": "codebase",
+  "pos": ["명사"],
+  "ipa": "ˈkoʊdbeɪs",
+  "meaning": "코드베이스 (한 프로젝트를 이루는 전체 소스 코드)",
+  "short": "전체 소스 코드",
+  "senses": [
+   { "pos": "명사", "ko": "코드베이스, 전체 소스 코드" }
+  ],
+  "forms": ["codebases"],
+  "synonyms": ["source code"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#11.0", "surface": "codebase", "pos": "명사", "sense": "코드베이스, 전체 소스 코드" },
+   { "sid": "lesson-d2#31.0", "surface": "codebase", "pos": "명사", "sense": "코드베이스, 전체 소스 코드" },
+   { "sid": "lesson-d5#26.0", "surface": "codebase", "pos": "명사", "sense": "코드베이스, 전체 소스 코드" },
+   { "sid": "lesson-d3#18.5", "surface": "codebase", "pos": "명사", "sense": "코드베이스, 전체 소스 코드" }
+  ]
+ },
+ {
+  "lemma": "coexist",
+  "skip": null,
+  "word": "coexist",
+  "pos": ["동사"],
+  "ipa": "ˌkoʊɪɡˈzɪst",
+  "meaning": "공존하다, 한곳에 함께 있다",
+  "short": "공존하다, 함께 있다",
+  "senses": [
+   { "pos": "동사", "ko": "공존하다, 함께 있다" }
+  ],
+  "forms": ["coexists", "coexisted", "coexistence"],
+  "synonyms": ["co-occur"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#28.6", "surface": "coexist", "pos": "동사", "sense": "공존하다, 함께 있다" }
+  ]
+ }
+]

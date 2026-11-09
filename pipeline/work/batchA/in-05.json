@@ -1,0 +1,1280 @@
+[
+ {
+  "lemma": "belong",
+  "kind": "new",
+  "surfaces": [
+   "belongs"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#2.6",
+    "en": "The user's request phrasing was too vague to reliably distinguish between the tools, so the fix belongs in the user's prompt rather than the tool definitions."
+   }
+  ]
+ },
+ {
+  "lemma": "below",
+  "kind": "new",
+  "surfaces": [
+   "below"
+  ],
+  "freq": 7,
+  "sentences": [
+   {
+    "sid": "lesson-d1#27.1",
+    "en": "A teammate registers the hook matcher below under PreToolUse."
+   },
+   {
+    "sid": "lesson-d5#11.0",
+    "en": "A support team's prototype routes a conversation to a human whenever its sentiment score turns negative or the model rates its own confidence below 0.6."
+   },
+   {
+    "sid": "sample01#1.0",
+    "en": "An engineer builds an agentic customer support bot with the loop logic shown below."
+   },
+   {
+    "sid": "mock04#55.4",
+    "en": "Add a required confidence float to every field so downstream code can discard PO numbers below a chosen threshold."
+   },
+   {
+    "sid": "lesson-d1#41.1",
+    "en": "They run the Python line below, and no agent output appears."
+   },
+   {
+    "sid": "sample01#3.0",
+    "en": "A tool definition for a flight search API is shown below."
+   },
+   {
+    "sid": "sample01#2.2",
+    "en": "The loop is shown below."
+   }
+  ]
+ },
+ {
+  "lemma": "benchmark",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "benchmark",
+   "word": "benchmark",
+   "pos": "명사·동사",
+   "ipa": "ˈbentʃmɑːrk",
+   "meaning": "벤치마크 — 성능을 비교·측정하는 기준 테스트(세트)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "beneath",
+  "kind": "new",
+  "surfaces": [
+   "beneath"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#6.3",
+    "en": "Merge the criteria into one bulleted list sorted by severity, with the category name in parentheses at the end of each bullet and the examples nested beneath it."
+   }
+  ]
+ },
+ {
+  "lemma": "benefit",
+  "kind": "new",
+  "surfaces": [
+   "benefit"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#15.2",
+    "en": "What is the main reliability benefit of this redesign, based on the relationship between tool count and selection accuracy?"
+   }
+  ]
+ },
+ {
+  "lemma": "best-of-n",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "best-of-n",
+   "word": "best-of-N",
+   "pos": "명사",
+   "ipa": "ˌbest əv ˈen",
+   "meaning": "best-of-N — 같은 요청을 N번 돌려 결과를 비교해 고르거나 검증하는 기법"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "beta",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "beta",
+   "word": "beta",
+   "pos": "명사·형용사",
+   "ipa": "ˈbeɪtə",
+   "meaning": "베타 — 정식 출시 전 시험 단계(의 기능) (beta header: 베타 기능을 켜는 요청 헤더)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "between",
+  "kind": "new",
+  "surfaces": [
+   "between"
+  ],
+  "freq": 21,
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.2",
+    "en": "What is the correct relationship between these two prompt sources?"
+   },
+   {
+    "sid": "lesson-d2#15.2",
+    "en": "What is the main reliability benefit of this redesign, based on the relationship between tool count and selection accuracy?"
+   },
+   {
+    "sid": "lesson-d3#1.1",
+    "en": "Nobody edited any instruction file in between."
+   },
+   {
+    "sid": "lesson-d5#39.0",
+    "en": "Your coordinator keeps flagging 'contradictions' between subagents."
+   },
+   {
+    "sid": "lesson-d4#20.4",
+    "en": "This indicates that the input_schema was likely malformed, since a correctly constructed JSON schema can apply constraints that verify the relationship between amount and transaction_type, preventing such semantic mislabeling."
+   },
+   {
+    "sid": "mock04#18.6",
+    "en": "Do the entire migration in a single large message to avoid any state loss between separate conversation turns."
+   },
+   {
+    "sid": "lesson-d1#34.1",
+    "en": "The steps and their order never change between runs."
+   },
+   {
+    "sid": "lesson-d2#2.6",
+    "en": "The user's request phrasing was too vague to reliably distinguish between the tools, so the fix belongs in the user's prompt rather than the tool definitions."
+   }
+  ]
+ },
+ {
+  "lemma": "bias",
+  "kind": "vocab-core",
+  "surfaces": [
+   "biased"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "bias",
+   "word": "bias",
+   "pos": "명사·동사",
+   "ipa": "ˈbaɪəs",
+   "meaning": "편향, 치우침 / 한쪽으로 치우치게 하다 (biased: 편향된)"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#52.7",
+    "en": "Have a separate, independent Claude instance review the tests, since a session is biased toward its own output"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:bias.0",
+    "en": "Have a separate, independent Claude instance review the tests, since a session is biased toward its own output",
+    "ko": "세션은 자기 결과물 쪽으로 편향되므로, 별도의 독립 Claude 인스턴스가 테스트를 리뷰하게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "bibliography",
+  "kind": "vocab-core",
+  "surfaces": [
+   "bibliography"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "bibliography",
+   "word": "bibliography",
+   "pos": "명사",
+   "ipa": "ˌbɪbliˈɑːɡrəfi",
+   "meaning": "참고 문헌 목록"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#41.7",
+    "en": "Keep the blended narrative and add a bibliography of every source at the end, so readers can check the strength of the evidence themselves"
+   }
+  ]
+ },
+ {
+  "lemma": "bidirectional",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "bidirectional",
+   "word": "bidirectional",
+   "pos": "형용사",
+   "ipa": "ˌbaɪdəˈrekʃənl",
+   "meaning": "양방향의"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:bidirectional.0",
+    "en": "...or Slack Apps (bidirectional, requires workspace approval).",
+    "ko": "또는 Slack Apps(양방향, 워크스페이스 승인 필요)."
+   }
+  ]
+ },
+ {
+  "lemma": "bill",
+  "kind": "vocab-core",
+  "surfaces": [
+   "bill",
+   "bills"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "bill",
+   "word": "bill",
+   "pos": "명사·동사",
+   "ipa": "bɪl",
+   "meaning": "청구서, 계산서 / (요금을) 청구하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#31.0",
+    "en": "A logistics company's bill-of-lading extraction pipeline shows 94% field accuracy in aggregate."
+   },
+   {
+    "sid": "lesson-d5#31.6",
+    "en": "Move weight extraction to manual entry by staff for the full set of bills of lading, and stop using the model for that field whether or not a unit is given."
+   }
+  ]
+ },
+ {
+  "lemma": "billing",
+  "kind": "vocab-core",
+  "surfaces": [
+   "billing-dispute",
+   "billing"
+  ],
+  "freq": 14,
+  "vocab": {
+   "id": "billing",
+   "word": "billing",
+   "pos": "명사",
+   "ipa": "ˈbɪlɪŋ",
+   "meaning": "요금 청구, 결제"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#31.0",
+    "en": "An agent connects to two MCP servers named \"billing\" and \"inventory\"."
+   },
+   {
+    "sid": "lesson-d5#2.0",
+    "en": "Turn 30 of a billing chat: the customer says, \"You promised my $214.88 refund by the 15th.\""
+   },
+   {
+    "sid": "mock04#37.1",
+    "en": "A coordinator agent is asked to produce a migration plan for a 400,000-line legacy billing monolith."
+   },
+   {
+    "sid": "mock04-kor#37.1",
+    "en": "코디네이터 에이전트에게 40만 줄짜리 레거시 청구(billing) 모놀리스의 마이그레이션 계획을 만들라는 요청이 들어왔습니다. 엔지니어는 다섯 개 서브에이전트 작업(billing, invoicing, tax, reporting, auth)으로 나누는 분할을 처음부터 하드코딩했습니다. 운영 실행 결과를 보면 최종 계획에서, 어떤 서브에이전트에도 배정되지 않았던 'dunning'(연체 독촉) 하위 시스템 전체와 통화 변환 계층이 빠져 있습니다. 가장 효과적인 분할 전략은 무엇일까요?"
+   },
+   {
+    "sid": "lesson-d1#31.1",
+    "en": "An architect wants a single PreToolUse hook to run for every tool exposed by the \"billing\" server, without matching any tool from \"inventory\" or any built-in tool like Bash or Read."
+   },
+   {
+    "sid": "lesson-d5#3.0",
+    "en": "A billing support agent has been summarizing a lengthy chat every few turns to keep the prompt short."
+   },
+   {
+    "sid": "mock04#37.2",
+    "en": "The engineer hard-codes an upfront decomposition into five subagent tasks (billing, invoicing, tax, reporting, auth)."
+   },
+   {
+    "sid": "lesson-d5#4.0",
+    "en": "You are redesigning a billing agent whose running summary keeps paraphrasing refund amounts, invoice numbers and promised deadlines."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:billing.0",
+    "en": "When your agent resolves complex cases (billing disputes, multi-order returns), customer satisfaction is 15% lower than for simple cases.",
+    "ko": "에이전트가 복잡한 케이스(청구 분쟁, 여러 주문 반품)를 해결할 때 고객 만족도가 단순 케이스보다 15% 낮다."
+   }
+  ]
+ },
+ {
+  "lemma": "billing-date",
+  "kind": "new",
+  "surfaces": [
+   "billing-date"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d5#8.3",
+    "en": "The billing-date change they need takes one tool call."
+   },
+   {
+    "sid": "lesson-d5#8.5",
+    "en": "Make the billing-date change first, since it takes one step, and then transfer the customer"
+   }
+  ]
+ },
+ {
+  "lemma": "bind",
+  "kind": "new",
+  "surfaces": [
+   "bound"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#42.2",
+    "en": "A session-level grant stays bound to the session that issued it, so a forked branch starts without it"
+   }
+  ]
+ },
+ {
+  "lemma": "birth",
+  "kind": "new",
+  "surfaces": [
+   "birth"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#21.5",
+    "en": "A response that puts the patient's date of birth under `guardian` instead of `patient`"
+   }
+  ]
+ },
+ {
+  "lemma": "blank",
+  "kind": "vocab-core",
+  "surfaces": [
+   "blank"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "blank",
+   "word": "blank",
+   "pos": "형용사·명사",
+   "ipa": "blæŋk",
+   "meaning": "비어 있는 / 빈칸"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#24.1",
+    "en": "On one submission, the employee left the project code blank on the physical form, so it does not appear anywhere in the scanned image."
+   }
+  ]
+ },
+ {
+  "lemma": "blend",
+  "kind": "vocab-core",
+  "surfaces": [
+   "blended"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "blend",
+   "word": "blend",
+   "pos": "동사",
+   "ipa": "blend",
+   "meaning": "(여러 개를) 섞다, 혼합하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#23.2",
+    "en": "The local-scoped entry is used for this developer, and nothing from the project entry in .mcp.json is blended into its definition"
+   },
+   {
+    "sid": "lesson-d5#41.7",
+    "en": "Keep the blended narrative and add a bibliography of every source at the end, so readers can check the strength of the evidence themselves"
+   },
+   {
+    "sid": "mock04#35.6",
+    "en": "Average the two figures into a single blended market-size number so the report reflects both sources about equally."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:blend.0",
+    "en": "Average the two figures into a single blended market-size number so the report reflects both sources about equally.",
+    "ko": "보고서가 두 출처를 거의 같은 비중으로 반영하도록, 두 수치를 평균 내 하나의 혼합 시장 규모 수치로 만든다."
+   }
+  ]
+ },
+ {
+  "lemma": "blind spot",
+  "kind": "vocab-core",
+  "surfaces": [
+   "blind spots"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "blind-spot",
+   "word": "blind spot",
+   "pos": "명사구",
+   "ipa": "ˈblaɪnd spɑːt",
+   "meaning": "사각지대, 맹점"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#11.6",
+    "en": "Escalate only when both signals fire together, so negative sentiment and low confidence cover each other's blind spots"
+   }
+  ]
+ },
+ {
+  "lemma": "blob",
+  "kind": "vocab-core",
+  "surfaces": [
+   "blob"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "blob",
+   "word": "blob",
+   "pos": "명사",
+   "ipa": "blɑːb",
+   "meaning": "블롭 — 내용을 따지지 않고 한 덩어리로 다루는 (바이너리) 데이터"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#40.4",
+    "en": "Encrypt the .mcp.json file and commit the encrypted blob, then decrypt it with a shared key at session start."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:blob.0",
+    "en": "Encrypt the .mcp.json file and commit the encrypted blob, then decrypt it with a shared key at session start.",
+    "ko": "`.mcp.json` 파일을 암호화해 암호화된 덩어리를 커밋하고, 세션 시작 시 공유 키로 복호화한다."
+   }
+  ]
+ },
+ {
+  "lemma": "block",
+  "kind": "vocab-core",
+  "surfaces": [
+   "blocks",
+   "block",
+   "blocked"
+  ],
+  "freq": 51,
+  "vocab": {
+   "id": "block",
+   "word": "block",
+   "pos": "명사·동사",
+   "ipa": "blɑːk",
+   "meaning": "① (콘텐츠) 블록, 덩어리 ② 막다, 차단하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#1.1",
+    "en": "The first response has stop_reason set to \"tool_use\" and contains a tool_use block requesting a file-listing tool."
+   },
+   {
+    "sid": "lesson-d2#28.0",
+    "en": "An agent must change one block in a generated file."
+   },
+   {
+    "sid": "lesson-d4#11.0",
+    "en": "Developers have started ignoring a review bot because it flags every broad `catch` block in a TypeScript service, including deliberate ones."
+   },
+   {
+    "sid": "mock04#1.3",
+    "en": "Production logs show that in 11% of sessions the loop terminates while a tool_use block is still pending, so the refund is never actually executed."
+   },
+   {
+    "sid": "lesson-d3#19.3",
+    "en": "Plan mode inherently blocks all edits and does not require approval for read operations, as the mode's read-only guarantee makes approval prompts unnecessary."
+   },
+   {
+    "sid": "lesson-d5#14.6",
+    "en": "The tool_result blocks the subagent marked with is_error: true, because these appear in the coordinator's context automatically"
+   },
+   {
+    "sid": "sample01#1.4",
+    "en": "The engineer is parsing Claude's conversational text output to detect tool calls instead of using the structural `stop_reason` and `tool_use` content blocks"
+   },
+   {
+    "sid": "lesson-d1#27.0",
+    "en": "Your policy is to block refund_customer calls over $500 when the category is \"restricted\"."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:block.0",
+    "en": "The engineer is parsing Claude's conversational text output to detect tool calls instead of using the structural `stop_reason` and `tool_use` content blocks",
+    "ko": "구조화된 `stop_reason` 과 `tool_use` 콘텐츠 블록 대신, Claude의 대화형 텍스트 출력을 파싱해 도구 호출을 감지하고 있다"
+   },
+   {
+    "vid": "vocab:block.1",
+    "en": "Add a `PreToolUse` hook that checks the command and exits with code 2 to block it",
+    "ko": "명령을 검사해 종료 코드 2로 끝내 차단하는 `PreToolUse` 훅을 추가한다"
+   }
+  ]
+ },
+ {
+  "lemma": "blocklist",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "blocklist",
+   "word": "blocklist",
+   "pos": "명사",
+   "ipa": "ˈblɑːklɪst",
+   "meaning": "차단 목록 — 막을 단어·대상을 적어 둔 목록 (denylist 와 같은 말)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "body",
+  "kind": "vocab-core",
+  "surfaces": [
+   "body",
+   "bodies"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "body",
+   "word": "body",
+   "pos": "명사",
+   "ipa": "ˈbɑːdi",
+   "meaning": "본문 — 머리말·설정 부분을 뺀 본 내용"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#14.2",
+    "en": "Adding the reminder \"only write to docs/, never edit source\" to the skill body has not reliably stopped it."
+   },
+   {
+    "sid": "lesson-d4#3.2",
+    "en": "Report it, since the docstring promises a cache lookup before the API call and the function body goes straight to the API on each invocation."
+   },
+   {
+    "sid": "mock04#36.1",
+    "en": "The coordinator passes each subagent's output forward verbatim: the web-search subagent's full scraped page bodies — roughly 38k tokens — flow straight into the synthesis subagent's prompt."
+   },
+   {
+    "sid": "lesson-d4#36.5",
+    "en": "Reflection is limited by a thinking-token budget that is exhausted before the model can re-examine the full body of generated code"
+   },
+   {
+    "sid": "mock04#15.6",
+    "en": "Have the skill body instruct Claude to ask the user for the component name whenever the argument is missing or empty"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:body.0",
+    "en": "Adding the reminder \"only write to docs/, never edit source\" to the skill body has not reliably stopped it.",
+    "ko": "스킬 본문에 \"only write to docs/, never edit source\"(docs/에만 쓰고 소스는 절대 수정하지 말 것)라는 문구를 추가했지만 확실히 막지 못했습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "boilerplate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "boilerplate"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "boilerplate",
+   "word": "boilerplate",
+   "pos": "명사",
+   "ipa": "ˈbɔɪlərpleɪt",
+   "meaning": "상용구 — 어디에나 반복되는 판에 박힌 내용"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#36.5",
+    "en": "Keep passing the raw pages but add a prompt instruction telling synthesis to focus on the important parts and ignore boilerplate."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:boilerplate.0",
+    "en": "Keep passing the raw pages but add a prompt instruction telling synthesis to focus on the important parts and ignore boilerplate.",
+    "ko": "원본 페이지는 계속 넘기되, 종합 단계에 중요한 부분에 집중하고 상용구는 무시하라는 프롬프트 지시를 추가한다."
+   }
+  ]
+ },
+ {
+  "lemma": "book",
+  "kind": "new",
+  "surfaces": [
+   "booking"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d5#12.0",
+    "en": "In production, a hotel-booking support agent searches by guest name and check-in city and gets back two reservations with different booking references."
+   },
+   {
+    "sid": "lesson-d5#13.1",
+    "en": "The lookup tool returns three passenger records with the same name on that route, each with a different booking reference."
+   },
+   {
+    "sid": "lesson-d5#12.5",
+    "en": "When a lookup returns several matches, do not choose between them. Ask the customer for one more identifier, such as the booking reference or phone number, and continue only once exactly one record matches."
+   }
+  ]
+ },
+ {
+  "lemma": "boolean",
+  "kind": "new",
+  "surfaces": [
+   "boolean"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d1#24.0",
+    "en": "A developer implements a PreToolUse hook that gates the `process_refund` tool by checking a boolean flag `is_verified`."
+   },
+   {
+    "sid": "lesson-d1#24.7",
+    "en": "Modify the PreToolUse hook to inspect the explicit verification result included in the `process_refund` tool call parameters, confirming that the human review expressly passed, instead of relying on a separate boolean flag that can be set incorrectly."
+   }
+  ]
+ },
+ {
+  "lemma": "borderline",
+  "kind": "vocab-core",
+  "surfaces": [
+   "borderline"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "borderline",
+   "word": "borderline",
+   "pos": "형용사",
+   "ipa": "ˈbɔːrdərlaɪn",
+   "meaning": "경계선상의, (어느 쪽인지) 애매한"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#47.7",
+    "en": "Lower the pass threshold so more borderline findings surface in the same session during self-review"
+   },
+   {
+    "sid": "mock04#51.7",
+    "en": "Lower the bar so every borderline case is flagged and pushed to a human reviewer for a decision"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:borderline.0",
+    "en": "Lower the bar so every borderline case is flagged and pushed to a human reviewer for a decision",
+    "ko": "기준을 낮춰 모든 경계 사례를 표시하고 사람 리뷰어에게 넘겨 결정하게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "bot",
+  "kind": "new",
+  "surfaces": [
+   "bot"
+  ],
+  "freq": 8,
+  "sentences": [
+   {
+    "sid": "lesson-d4#11.0",
+    "en": "Developers have started ignoring a review bot because it flags every broad `catch` block in a TypeScript service, including deliberate ones."
+   },
+   {
+    "sid": "lesson-d5#1.0",
+    "en": "A support bot built on the Messages API sends the system prompt, its tool definitions and the customer's newest message on each request."
+   },
+   {
+    "sid": "mock04#50.2",
+    "en": "They have started ignoring the bot entirely — including its genuine security findings."
+   },
+   {
+    "sid": "sample01#1.0",
+    "en": "An engineer builds an agentic customer support bot with the loop logic shown below."
+   },
+   {
+    "sid": "lesson-d4#11.1",
+    "en": "You want fewer false positives, and you still want real problems caught in code the bot has never seen."
+   },
+   {
+    "sid": "lesson-d4#25.0",
+    "en": "Over two months, developers have dismissed 40% of a security-review bot's findings."
+   },
+   {
+    "sid": "lesson-d4#11.3",
+    "en": "A list of the files and functions where a broad `catch` is approved, each marked acceptable, so the bot skips those exact locations"
+   },
+   {
+    "sid": "lesson-d4#11.5",
+    "en": "Several examples of obviously bad code, such as an empty `catch {}`, each marked high severity, so the bot learns what a real issue looks like"
+   }
+  ]
+ },
+ {
+  "lemma": "bottleneck",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "bottleneck",
+   "word": "bottleneck",
+   "pos": "명사",
+   "ipa": "ˈbɑːtlnek",
+   "meaning": "병목 — 전체 흐름을 느리게 만드는 지점"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:bottleneck.0",
+    "en": "The bottleneck is investigation time: developers must click into each finding to read Claude's reasoning before deciding.",
+    "ko": "병목은 조사 시간이다. 개발자가 판단을 내리려면 발견마다 클릭해 들어가 Claude의 추론을 읽어야 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "boundary",
+  "kind": "vocab-core",
+  "surfaces": [
+   "boundaries",
+   "boundary"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "boundary",
+   "word": "boundary",
+   "pos": "명사",
+   "ipa": "ˈbaʊndri",
+   "meaning": "경계, (책임·범위의) 한계선"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#21.0",
+    "en": "A platform team is restructuring a monolith into three microservices, touching shared data models, service boundaries, and deployment topology, with several viable ways to split the code."
+   },
+   {
+    "sid": "lesson-d4#37.1",
+    "en": "You need a review that catches local bugs and also bugs where a value is misused after it crosses a file boundary."
+   },
+   {
+    "sid": "lesson-d1#16.5",
+    "en": "State the objective, the boundaries (2025 supply chains only; another subagent covers the 2021 crisis) and the required output (findings as records with source URL and document name), and leave the search steps to the subagent"
+   },
+   {
+    "sid": "mock04#33.4",
+    "en": "Expand and differentiate both tool descriptions with input formats, example queries, source coverage, and clear boundaries."
+   },
+   {
+    "sid": "lesson-d3#21.2",
+    "en": "Use accept-edits mode so Claude extracts the first service right away, with the remaining boundaries adjusted as problems appear in the code"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:boundary.0",
+    "en": "Expand each tool's description to include input formats, example queries, edge cases, and boundaries explaining when to use it versus similar tools.",
+    "ko": "각 도구 설명을 확장해 입력 형식·예시 쿼리·엣지 케이스와 함께, 비슷한 도구 대신 언제 써야 하는지 설명하는 사용 경계까지 담는다."
+   }
+  ]
+ },
+ {
+  "lemma": "brace",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "brace",
+   "word": "brace",
+   "pos": "명사",
+   "ipa": "breɪs",
+   "meaning": "중괄호 { } (curly brace)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "brainstorm",
+  "kind": "vocab-core",
+  "surfaces": [
+   "brainstorm"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "brainstorm",
+   "word": "brainstorm",
+   "pos": "동사",
+   "ipa": "ˈbreɪnstɔːrm",
+   "meaning": "(아이디어를) 떠오르는 대로 끌어내다, 브레인스토밍하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#11.0",
+    "en": "A team's `explore-alternatives` skill asks Claude to brainstorm several competing architecture approaches before settling on a recommendation."
+   },
+   {
+    "sid": "mock04#56.6",
+    "en": "Brainstorm and add every conceivable document type to the enum so that no future document falls outside it."
+   },
+   {
+    "sid": "lesson-d3#11.4",
+    "en": "Set `disable-model-invocation: true` on the skill, so a teammate starts the brainstorm by typing the command and Claude cannot trigger it."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:brainstorm.0",
+    "en": "Brainstorm and add every conceivable document type to the enum so that no future document falls outside it.",
+    "ko": "생각할 수 있는 모든 문서 유형을 브레인스토밍해 enum에 추가해서, 앞으로 어떤 문서도 범위 밖으로 벗어나지 않게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "branch",
+  "kind": "vocab-core",
+  "surfaces": [
+   "branch",
+   "branches"
+  ],
+  "freq": 16,
+  "vocab": {
+   "id": "branch",
+   "word": "branch",
+   "pos": "명사·동사",
+   "ipa": "bræntʃ",
+   "meaning": "① (git) 브랜치 ② 갈라지다, 분기하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#41.0",
+    "en": "After an expensive codebase analysis that ended with a JWT proposal, an engineer wants to try OAuth2 on a separate branch."
+   },
+   {
+    "sid": "sample01#18.0",
+    "en": "A team commits a `CLAUDE.md` file with: 'Never commit directly to main branch'."
+   },
+   {
+    "sid": "lesson-d3#21.5",
+    "en": "Run Claude headless in CI with bypassPermissions so it extracts the services on a branch, with the resulting pull request reviewed afterward"
+   },
+   {
+    "sid": "lesson-d5#16.3",
+    "en": "{\"status\": \"UNAVAILABLE\"}, a fixed code the coordinator's logic can branch on reliably"
+   },
+   {
+    "sid": "mock04#26.4",
+    "en": "Fork the session at the end of the research phase into two branches, one per report variant, sharing the evidence"
+   },
+   {
+    "sid": "lesson-d1#42.0",
+    "en": "While a session is resumed via --continue --fork-session to try a riskier approach, the architect notices that a permission the original session had approved with 'allow for this session' is being re-prompted in the new branch."
+   },
+   {
+    "sid": "lesson-d3#30.6",
+    "en": "The checkout used a shallow fetch-depth, so the CLI could not resolve the diff against the base branch and sat scanning the git history for missing commits"
+   },
+   {
+    "sid": "lesson-d5#17.5",
+    "en": "The string is unstructured; return a fixed status code such as UNAVAILABLE so the coordinator can branch on it reliably"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:branch.0",
+    "en": "A team commits a `CLAUDE.md` file with: 'Never commit directly to main branch'.",
+    "ko": "팀이 \"main 브랜치에 직접 커밋하지 마라\"는 내용의 `CLAUDE.md` 를 커밋했습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "branch off",
+  "kind": "vocab-core",
+  "surfaces": [
+   "branch off"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "branch-off",
+   "word": "branch off",
+   "pos": "동사구",
+   "ipa": "ˌbræntʃ ˈɔːf",
+   "meaning": "(본줄기에서) 갈라져 나가다, 분기하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#40.5",
+    "en": "Pass fork_session=True on each follow-up request to branch off the user's earlier conversation state"
+   },
+   {
+    "sid": "mock04#20.5",
+    "en": "Fork the session to branch off a divergent line of work and continue the refactor in the forked copy of the history."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:branch-off.0",
+    "en": "Fork the session to branch off a divergent line of work and continue the refactor in the forked copy of the history.",
+    "ko": "세션을 포크해 갈라지는 작업 갈래로 분기하고, 포크된 기록 사본에서 리팩터링을 이어 간다."
+   }
+  ]
+ },
+ {
+  "lemma": "brand-new",
+  "kind": "vocab-core",
+  "surfaces": [
+   "brand-new"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "brand-new",
+   "word": "brand-new",
+   "pos": "형용사",
+   "ipa": "ˌbrænd ˈnuː",
+   "meaning": "완전히 새로운"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#29.4",
+    "en": "Collect a brand-new labeled dataset just for that type before looking at anything"
+   },
+   {
+    "sid": "mock04#20.4",
+    "en": "Start a brand-new session with no prior context and re-describe the entire task, accepting the loss of current file state."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:brand-new.0",
+    "en": "Start a brand-new session with no prior context and re-describe the entire task, accepting the loss of current file state.",
+    "ko": "이전 컨텍스트가 전혀 없는 완전히 새로운 세션을 시작해 작업 전체를 다시 설명하고, 현재 파일 상태에 대한 맥락을 잃는 것을 감수한다."
+   }
+  ]
+ },
+ {
+  "lemma": "breadth",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "breadth",
+   "word": "breadth",
+   "pos": "명사",
+   "ipa": "bredθ",
+   "meaning": "(다루는) 폭, 범위"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:breadth.0",
+    "en": "Token usage has nearly doubled without proportionally increasing breadth or depth.",
+    "ko": "토큰 사용량은 거의 두 배가 됐지만, 조사의 폭이나 깊이는 그만큼 늘지 않았다."
+   }
+  ]
+ },
+ {
+  "lemma": "break",
+  "kind": "new",
+  "surfaces": [
+   "broke"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#9.6",
+    "en": "The coordinator broke the topic into a few detailed technical areas, so the remaining parts of the landscape had no subagent assigned"
+   }
+  ]
+ },
+ {
+  "lemma": "breakpoint",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "breakpoint",
+   "word": "breakpoint",
+   "pos": "명사",
+   "ipa": "ˈbreɪkpɔɪnt",
+   "meaning": "(캐시) 중단점 — 프롬프트에서 '여기까지 캐시하라'고 표시하는 지점 (cache_control) / (디버거) 중단점"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "brevity",
+  "kind": "vocab-core",
+  "surfaces": [
+   "brevity"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "brevity",
+   "word": "brevity",
+   "pos": "명사",
+   "ipa": "ˈbrevəti",
+   "meaning": "간결함"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#2.5",
+    "en": "Each summarization pass traded precision for brevity, so the exact amount and deadline were condensed into vague wording"
+   }
+  ]
+ },
+ {
+  "lemma": "brief",
+  "kind": "vocab-core",
+  "surfaces": [
+   "briefly",
+   "briefs",
+   "brief"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "brief",
+   "word": "brief",
+   "pos": "명사·형용사",
+   "ipa": "briːf",
+   "meaning": "① (작업) 의뢰, 과제 설명 ② 요약 보고서 ③ 짧은, 간단한"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#15.1",
+    "en": "The system prompt also says: \"Before calling the tool, briefly explain which clauses look ambiguous.\""
+   },
+   {
+    "sid": "mock04#25.1",
+    "en": "For open-ended briefs like 'assess the competitive landscape for X', the coordinator runs a fixed three-step chain (search then summarize then format)."
+   },
+   {
+    "sid": "lesson-d5#5.4",
+    "en": "Send each lookup response to a second model call that writes a brief summary, and keep only that summary in history"
+   },
+   {
+    "sid": "mock04#26.1",
+    "en": "After the shared search and document-analysis phase completes, stakeholders want two report variants from the same evidence — a one-page executive brief and a technical deep-dive — without re-running the costly searches."
+   },
+   {
+    "sid": "mock04#7.1",
+    "en": "When the customer database is briefly unreachable, get_customer returns a plain empty result, and the agent tells the customer \"I can't find any account with that information\" and closes the case."
+   },
+   {
+    "sid": "mock04#26.3",
+    "en": "Continue the same session, generate the brief first, then ask for the deep-dive in the following turn"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:brief.0",
+    "en": "For open-ended briefs like 'assess the competitive landscape for X', the coordinator runs a fixed three-step chain...",
+    "ko": "'X의 경쟁 구도를 평가하라' 같은 개방형 요청에 대해 코디네이터는 고정된 3단계 체인을 실행합니다."
+   },
+   {
+    "vid": "vocab:brief.1",
+    "en": "...two report variants from the same evidence — a one-page executive brief and a technical deep-dive...",
+    "ko": "...같은 증거로 두 가지 보고서, 즉 한 페이지짜리 임원 요약본과 기술 심층 분석본을..."
+   }
+  ]
+ },
+ {
+  "lemma": "broad",
+  "kind": "vocab-core",
+  "surfaces": [
+   "broader",
+   "broad"
+  ],
+  "freq": 8,
+  "vocab": {
+   "id": "broad",
+   "word": "broad",
+   "pos": "형용사",
+   "ipa": "brɔːd",
+   "meaning": "넓은, 폭넓은"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#13.2",
+    "en": "The subagent cannot obtain broader credentials itself."
+   },
+   {
+    "sid": "lesson-d4#11.0",
+    "en": "Developers have started ignoring a review bot because it flags every broad `catch` block in a TypeScript service, including deliberate ones."
+   },
+   {
+    "sid": "lesson-d1#5.5",
+    "en": "Give the subagent broader tool permissions so it can read the coordinator's conversation history"
+   },
+   {
+    "sid": "mock04#25.5",
+    "en": "Raise the temperature of the synthesis subagent so that it produces broader, more varied topical coverage"
+   },
+   {
+    "sid": "lesson-d2#9.5",
+    "en": "errorCategory \"permission\", isRetryable false, so the agent asks for a credential with broader access"
+   },
+   {
+    "sid": "lesson-d4#11.3",
+    "en": "A list of the files and functions where a broad `catch` is approved, each marked acceptable, so the bot skips those exact locations"
+   },
+   {
+    "sid": "lesson-d1#9.0",
+    "en": "A coordinator for a market-research assistant splits the broad query 'analyze the competitive landscape for electric vehicle charging networks' into narrow subtasks like 'find charger connector types' and 'list charging speeds,' each assigned to a separate subagent."
+   },
+   {
+    "sid": "lesson-d4#11.6",
+    "en": "No examples, just an instruction saying \"do not flag broad catch blocks\", so the deliberate uses stop showing up"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:broad.0",
+    "en": "Raise the temperature of the synthesis subagent so that it produces broader, more varied topical coverage",
+    "ko": "합성 서브에이전트의 `temperature` 를 높여, 더 넓고 다양한 주제를 다루는 결과를 내게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "bucket",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "bucket",
+   "word": "bucket",
+   "pos": "명사",
+   "ipa": "ˈbʌkɪt",
+   "meaning": "버킷 — token bucket: 허용량이 일정한 속도로 다시 차오르는 한도 방식 / 양동이, 묶음"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "budget",
+  "kind": "vocab-core",
+  "surfaces": [
+   "budget"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "budget",
+   "word": "budget",
+   "pos": "명사",
+   "ipa": "ˈbʌdʒɪt",
+   "meaning": "예산 — (토큰·비용 등) 쓸 수 있게 정해 둔 한도"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#9.5",
+    "en": "Several subagents researched connector types in parallel, so the coordinator ran out of budget before the other areas were covered"
+   },
+   {
+    "sid": "lesson-d4#35.3",
+    "en": "Raise the extended thinking budget for the review step, so the model reasons longer over the code it just wrote"
+   },
+   {
+    "sid": "mock04#9.7",
+    "en": "Enable extended thinking with a larger thinking budget so the model reasons more carefully before quoting any refund figure."
+   },
+   {
+    "sid": "lesson-d4#36.3",
+    "en": "Reflection raises the reasoning budget but applies the same depth of checking to each issue, so extra effort adds little scrutiny"
+   },
+   {
+    "sid": "lesson-d4#36.5",
+    "en": "Reflection is limited by a thinking-token budget that is exhausted before the model can re-examine the full body of generated code"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:budget.0",
+    "en": "Enable extended thinking with a larger thinking budget so the model reasons more carefully before quoting any refund figure.",
+    "ko": "더 큰 thinking 예산으로 확장 사고(extended thinking)를 켜서, 모델이 환불 금액을 인용하기 전에 더 신중하게 추론하게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "bug",
+  "kind": "new",
+  "surfaces": [
+   "bug",
+   "bugs"
+  ],
+  "freq": 21,
+  "sentences": [
+   {
+    "sid": "lesson-d1#24.2",
+    "en": "In an incident, the `mark_verified` tool executed and the human reviewer explicitly rejected the ID, but due to a software bug the `is_verified` flag was incorrectly set to `true`."
+   },
+   {
+    "sid": "lesson-d4#34.0",
+    "en": "A team wants a review step that catches the subtle bugs its code-generation agent keeps missing."
+   },
+   {
+    "sid": "mock04#46.2",
+    "en": "The gate is flaky because Claude phrases severe findings differently each run — \"severe issue,\" \"major bug,\" \"critical defect.\""
+   },
+   {
+    "sid": "sample01#14.2",
+    "en": "In testing, 'app crashes on login' is classified as bug, feature_request, and question in different runs."
+   },
+   {
+    "sid": "lesson-d3#26.6",
+    "en": "Paste only the applyDiscount and addTax failures and leave out test_orderTotal so it doesn't distract Claude from the real bugs"
+   },
+   {
+    "sid": "mock04-kor#46.1",
+    "en": "CI 파이프라인이 Claude Code를 호출해 풀 리퀘스트마다 리뷰를 수행하고, 셸 게이트 스크립트가 stdout에서 \"CRITICAL\" 이라는 단어를 grep해 빌드를 실패시킵니다. 그런데 Claude가 심각한 발견 사항을 실행할 때마다 \"severe issue\", \"major bug\", \"critical defect\"처럼 다르게 표현하기 때문에 게이트 결과가 들쭉날쭉합니다. 가장 효과적인 해결책은 무엇일까요?"
+   },
+   {
+    "sid": "sample01-kor#14.0",
+    "en": "지원 티켓 분류기가 계속 티켓을 잘못 분류합니다. 시스템 프롬프트에는 '각 지원 티켓을 적절한 카테고리로 분류하라'고 되어 있습니다. 테스트에서 '로그인 시 앱이 멈춤'이 실행마다 bug, feature_request, question으로 다르게 분류됩니다. 해결책은 무엇일까요?"
+   },
+   {
+    "sid": "lesson-d1#39.0",
+    "en": "An architect ran a two-hour investigation into a flaky payment-retry bug yesterday afternoon and named the session 'payment-retry-bug' before stopping for the day."
+   }
+  ]
+ },
+ {
+  "lemma": "build",
+  "kind": "new",
+  "surfaces": [
+   "builds",
+   "building",
+   "built",
+   "build"
+  ],
+  "freq": 29,
+  "sentences": [
+   {
+    "sid": "lesson-d1#1.0",
+    "en": "An architect is building a client-side agent loop against the Messages API for a data-cleanup task."
+   },
+   {
+    "sid": "lesson-d2#31.1",
+    "en": "To build this understanding efficiently while keeping context usage low, what is the best incremental strategy?"
+   },
+   {
+    "sid": "lesson-d3#23.0",
+    "en": "An architect is building a real-time collaborative editor for the first time."
+   },
+   {
+    "sid": "lesson-d4#10.0",
+    "en": "A team built a classification prompt with twenty exact input-output pairs, one for every edge case they had personally encountered in their historical data."
+   },
+   {
+    "sid": "lesson-d5#1.0",
+    "en": "A support bot built on the Messages API sends the system prompt, its tool definitions and the customer's newest message on each request."
+   },
+   {
+    "sid": "mock04#1.1",
+    "en": "A customer support resolution agent built with the Claude Agent SDK reaches backend systems through custom MCP tools (get_customer, lookup_order, process_refund, escalate_to_human)."
+   },
+   {
+    "sid": "sample01#1.0",
+    "en": "An engineer builds an agentic customer support bot with the loop logic shown below."
+   },
+   {
+    "sid": "selfcheck-d1-kor#33.0",
+    "en": "Building effective agents에서 orchestrator-workers가 병렬화(sectioning)와 구별되는 핵심은?"
+   }
+  ]
+ }
+]

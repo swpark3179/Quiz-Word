@@ -1,0 +1,181 @@
+[
+ {
+  "lemma": "yesterday",
+  "skip": null,
+  "word": "yesterday",
+  "pos": [
+   "부사",
+   "명사"
+  ],
+  "ipa": "ˈjestərdeɪ",
+  "meaning": "① 어제 ② 어제의, 지난 일",
+  "short": "어제",
+  "senses": [
+   {
+    "pos": "부사",
+    "ko": "어제"
+   },
+   {
+    "pos": "명사",
+    "ko": "어제, 지난날"
+   }
+  ],
+  "forms": [
+   "yesterday's"
+  ],
+  "synonyms": [],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d1#39.0",
+    "surface": "yesterday",
+    "pos": "부사",
+    "sense": "어제"
+   },
+   {
+    "sid": "lesson-d1#39.5",
+    "surface": "yesterday's",
+    "pos": "명사",
+    "sense": "어제, 지난날"
+   }
+  ]
+ },
+ {
+  "lemma": "yield",
+  "skip": null,
+  "word": "yield",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "jiːld",
+  "meaning": "① (결과를) 낳다, 내놓다 ② 양보하다, (제어권을) 넘기다",
+  "short": "낳다, 내놓다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(결과를) 낳다, 내놓다"
+   },
+   {
+    "pos": "동사",
+    "ko": "양보하다, (제어권을) 넘기다"
+   },
+   {
+    "pos": "명사",
+    "ko": "수확량, 수율"
+   }
+  ],
+  "forms": [
+   "yields",
+   "yielded",
+   "yielding"
+  ],
+  "synonyms": [
+   "produce",
+   "generate",
+   "give"
+  ],
+  "domain": "원인·결과·영향",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#17.1",
+    "surface": "yields",
+    "pos": "동사",
+    "sense": "(결과를) 낳다, 내놓다"
+   }
+  ]
+ },
+ {
+  "lemma": "zdr",
+  "skip": null,
+  "word": "ZDR",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌziː.diːˈɑːr",
+  "meaning": "데이터 무보존(Zero Data Retention) — 요청·응답 데이터를 저장하지 않기로 한 약정",
+  "short": "데이터 무보존",
+  "senses": [
+   {
+    "pos": "약어",
+    "ko": "데이터 무보존 (Zero Data Retention)"
+   }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "zero",
+  "skip": null,
+  "word": "zero",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ˈzɪroʊ",
+  "meaning": "① 영, 0 ② (수량이) 하나도 없는",
+  "short": "영(0), 하나도 없는",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "영, 0"
+   },
+   {
+    "pos": "형용사",
+    "ko": "하나도 없는, 전무한"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "nil",
+   "none"
+  ],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "mock04#54.1",
+    "surface": "zero",
+    "pos": "명사",
+    "sense": "영, 0"
+   },
+   {
+    "sid": "lesson-d2#27.4",
+    "surface": "zero",
+    "pos": "형용사",
+    "sense": "하나도 없는, 전무한"
+   },
+   {
+    "sid": "lesson-d4#8.5",
+    "surface": "zero",
+    "pos": "명사",
+    "sense": "영, 0"
+   }
+  ]
+ },
+ {
+  "lemma": "zod",
+  "skip": null,
+  "word": "Zod",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "zɑːd",
+  "meaning": "Zod — TypeScript용 스키마 선언·검증 라이브러리",
+  "short": "스키마 검증 라이브러리",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "(TypeScript) 스키마 검증 라이브러리"
+   }
+  ],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": []
+ }
+]

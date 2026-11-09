@@ -1,0 +1,4358 @@
+[
+  {
+    "id": "back",
+    "word": "back",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "부사",
+      "명사",
+      "동사"
+    ],
+    "ipa": "bæk",
+    "meaning": "① (되)돌아, 돌려 (come back: 돌아오다, send back: 돌려보내다) ② 다시, 원래대로 ③ 등, 뒤쪽 ④ 뒷받침하다",
+    "short": "(되)돌아, 돌려",
+    "senses": [
+      {
+        "pos": "부사",
+        "ko": "(되)돌아, 돌려"
+      },
+      {
+        "pos": "부사",
+        "ko": "다시, 원래 상태로"
+      },
+      {
+        "pos": "명사",
+        "ko": "등, 뒤쪽"
+      },
+      {
+        "pos": "동사",
+        "ko": "뒷받침하다, 지원하다"
+      }
+    ],
+    "forms": [
+      "backs",
+      "backed",
+      "backing"
+    ],
+    "domain": "이동·전달",
+    "freq": 27,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 14,
+        "en": "The synthesis subagent's report comes back generic and cites none of the sources the researcher found.",
+        "surface": "back",
+        "pos": "부사",
+        "sense": "(되)돌아, 돌려",
+        "ko": "종합 서브에이전트의 보고서는 일반론만 담겨 있고 연구자가 찾은 출처를 하나도 인용하지 않습니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 7,
+        "en": "What should decide when the category goes back on?",
+        "surface": "back",
+        "pos": "부사",
+        "sense": "다시, 원래 상태로",
+        "ko": "이 범주를 언제 다시 켤지는 무엇으로 정해야 할까요?"
+      },
+      {
+        "src": "lesson-d2",
+        "q": 13,
+        "en": "What should it send back to the coordinator?",
+        "surface": "back",
+        "pos": "부사",
+        "sense": "(되)돌아, 돌려",
+        "ko": "코디네이터에게 무엇을 돌려줘야 합니까?"
+      },
+      {
+        "src": "lesson-d5",
+        "q": 12,
+        "en": "In production, a hotel-booking support agent searches by guest name and check-in city and gets back two reservations with different booking references.",
+        "surface": "back",
+        "pos": "부사",
+        "sense": "(되)돌아, 돌려",
+        "ko": "운영 중인 호텔 예약 지원 에이전트가 투숙객 이름과 체크인 도시로 검색했더니, 예약 번호가 다른 예약 두 건이 나왔습니다."
+      }
+    ]
+  },
+  {
+    "id": "back-and-forth",
+    "word": "back-and-forth",
+    "tier": "core",
+    "pos": [
+      "명사",
+      "부사"
+    ],
+    "ipa": "ˌbæk ən ˈfɔːrθ",
+    "meaning": "① (대화·의견을) 주고받기, 오가는 논의 ② (back and forth) 앞뒤로, 왔다 갔다",
+    "short": "주고받기, 오가는 논의",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(대화·의견을) 주고받기"
+      },
+      {
+        "pos": "부사",
+        "ko": "(back and forth) 앞뒤로, 왔다 갔다"
+      }
+    ],
+    "forms": [
+      "forth"
+    ],
+    "synonyms": [
+      "exchange",
+      "dialogue"
+    ],
+    "domain": "요청·소통",
+    "freq": 1,
+    "sources": [
+      "lesson-d3"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d3",
+        "q": 11,
+        "en": "The team wants that exploratory back-and-forth kept separate from the main conversation, with only the final recommendation surfacing back to the user.",
+        "surface": "back-and-forth",
+        "pos": "명사",
+        "sense": "(대화·의견을) 주고받기",
+        "ko": "팀은 이 탐색 과정을 메인 대화와 분리하고, 최종 권장안만 사용자에게 돌아오게 하려 합니다."
+      }
+    ]
+  },
+  {
+    "id": "back-off",
+    "word": "back off",
+    "tier": "extra",
+    "pos": [
+      "동사구"
+    ],
+    "ipa": "ˌbæk ˈɔːf",
+    "meaning": "(잠시) 물러서다 — 재시도 간격을 늘리며 요청을 줄이다",
+    "short": "물러서다, 재시도 간격을 늘리다",
+    "senses": [
+      {
+        "pos": "동사구",
+        "ko": "(재시도 간격을 늘리며) 물러서다"
+      },
+      {
+        "pos": "동사구",
+        "ko": "(주장·압박에서) 물러서다, 양보하다"
+      }
+    ],
+    "forms": [
+      "backs off",
+      "backed off",
+      "backing off"
+    ],
+    "synonyms": [
+      "retreat",
+      "throttle"
+    ],
+    "domain": "제어·제한·관리",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "backend",
+    "word": "backend",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbækend",
+    "meaning": "백엔드 — 화면 뒤에서 데이터·업무 처리를 맡는 서버 시스템",
+    "short": "백엔드, 서버 쪽 시스템",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "백엔드, 뒤에서 처리를 맡는 서버 시스템"
+      }
+    ],
+    "forms": [
+      "back-end",
+      "backends"
+    ],
+    "synonyms": [
+      "server side"
+    ],
+    "domain": "시스템·도구·기술",
+    "freq": 7,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 1,
+        "en": "A customer support resolution agent built with the Claude Agent SDK reaches backend systems through custom MCP tools (get_customer, lookup_order, process_refund, escalate_to_human).",
+        "surface": "backend",
+        "pos": "명사",
+        "sense": "백엔드, 뒤에서 처리를 맡는 서버 시스템",
+        "ko": "Claude Agent SDK로 만든 고객 지원 해결 에이전트가 커스텀 MCP 도구(get_customer, lookup_order, process_refund, escalate_to_human)로 백엔드 시스템에 접근합니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 40,
+        "en": "A backend service needs to resume a specific user's conversation on demand, potentially hours after the user's last message, while other users' sessions remain active in the same directory.",
+        "surface": "backend",
+        "pos": "명사",
+        "sense": "백엔드, 뒤에서 처리를 맡는 서버 시스템",
+        "ko": "백엔드 서비스는 같은 디렉터리에서 다른 사용자들의 세션이 활성 상태인 가운데, 사용자의 마지막 메시지로부터 몇 시간 뒤일 수도 있는 시점에 특정 사용자의 대화를 요청에 따라 재개해야 합니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 1,
+        "en": "Give the intended tool a higher priority weight in your backend router",
+        "surface": "backend",
+        "pos": "명사",
+        "sense": "백엔드, 뒤에서 처리를 맡는 서버 시스템",
+        "ko": "백엔드 라우터에서 의도한 도구에 더 높은 우선순위 가중치를 준다"
+      },
+      {
+        "src": "mock04",
+        "q": 4,
+        "en": "get_customer and lookup_order call two different backend systems that return dates in different formats (ISO vs. US) and amounts with inconsistent currency notation.",
+        "surface": "backend",
+        "pos": "명사",
+        "sense": "백엔드, 뒤에서 처리를 맡는 서버 시스템",
+        "ko": "get_customer와 lookup_order는 서로 다른 두 백엔드 시스템을 호출하는데, 두 시스템은 날짜를 서로 다른 형식(ISO와 미국식)으로 반환하고 금액의 통화 표기도 일관되지 않습니다."
+      }
+    ],
+    "note": "사용자가 보는 화면(*frontend*) 뒤에서 **데이터 저장·업무 로직을 처리하는 서버 쪽 시스템**입니다.\r\n\r\n## 문제 속 쓰임\r\n> ...reaches **backend** systems through custom MCP tools (get_customer, lookup_order, process_refund, escalate_to_human).\r\n> 커스텀 MCP 도구(`get_customer`, `lookup_order`, `process_refund`, `escalate_to_human`)로 **백엔드** 시스템에 접근합니다.\r\n> get_customer and lookup_order call two different **backend** systems that return dates in different formats...\r\n> `get_customer` 와 `lookup_order` 는 서로 다른 두 **백엔드** 시스템을 호출하는데, 두 시스템은 날짜를 서로 다른 형식으로 반환하고...\r\n\r\n## 반대말\r\n- **frontend** — 사용자 화면 쪽\r\n\r\n## 시험 포인트\r\n여러 백엔드가 **제각각 형식**(날짜·통화)으로 돌려주면, 결과가 컨텍스트에 들어가기 전에 **PostToolUse hook** 으로 하나의 표준 형식으로 정규화하는 것이 견고한 해결책입니다."
+  },
+  {
+    "id": "background",
+    "word": "background",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbækɡraʊnd",
+    "meaning": "① 백그라운드 — 사용자를 기다리게 하지 않고 뒤에서 따로 실행되는 상태 (in the background: 뒤에서) ② 배경, 배경 지식",
+    "short": "백그라운드, 배경",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "백그라운드, 뒤에서 따로 실행되는 상태"
+      },
+      {
+        "pos": "명사",
+        "ko": "배경 정보, 맥락"
+      },
+      {
+        "pos": "명사",
+        "ko": "(사람의) 배경, 경력"
+      }
+    ],
+    "forms": [
+      "backgrounds"
+    ],
+    "synonyms": [
+      "context"
+    ],
+    "domain": "시스템·도구·기술",
+    "freq": 2,
+    "sources": [
+      "lesson-d1",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 41,
+        "en": "The fork runs in the background. Resume the original session_id to see the OAuth2 exploration, since forks report back to their parent",
+        "surface": "background",
+        "pos": "명사",
+        "sense": "백그라운드, 뒤에서 따로 실행되는 상태",
+        "ko": "포크는 백그라운드에서 실행된다. 포크는 부모에게 보고하므로, OAuth2 탐색을 보려면 원래 `session_id` 를 재개한다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 32,
+        "en": "Send each diff to the Messages API from a background job queue, and have the merge check pass while the verdict posts as a comment",
+        "surface": "background",
+        "pos": "명사",
+        "sense": "백그라운드, 뒤에서 따로 실행되는 상태",
+        "ko": "백그라운드 작업 큐에서 diff를 Messages API로 보내고, 판정이 코멘트로 올라오는 동안 머지 체크는 통과시킨다."
+      }
+    ]
+  },
+  {
+    "id": "bad",
+    "word": "bad",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "bæd",
+    "meaning": "나쁜, 잘못된",
+    "short": "나쁜, 잘못된",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "나쁜, 잘못된"
+      },
+      {
+        "pos": "형용사",
+        "ko": "(정도가) 심한, 심각한"
+      }
+    ],
+    "forms": [
+      "badly"
+    ],
+    "synonyms": [
+      "poor",
+      "faulty"
+    ],
+    "domain": "정확·품질·신뢰",
+    "freq": 1,
+    "sources": [
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 11,
+        "en": "Several examples of obviously bad code, such as an empty `catch {}`, each marked high severity, so the bot learns what a real issue looks like",
+        "surface": "bad",
+        "pos": "형용사",
+        "sense": "나쁜, 잘못된",
+        "ko": "빈 `catch {}` 같은 명백히 나쁜 코드 예시 여러 개를 각각 높은 심각도로 표시해, 진짜 문제가 어떤 모습인지 배우게 한다."
+      }
+    ]
+  },
+  {
+    "id": "baggage",
+    "word": "baggage",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbæɡɪdʒ",
+    "meaning": "① (여행) 짐, 수하물 ② (과거에서 이어진) 부담, 짐",
+    "short": "수하물, 짐",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(여행) 짐, 수하물"
+      },
+      {
+        "pos": "명사",
+        "ko": "(과거에서 이어진) 부담"
+      }
+    ],
+    "synonyms": [
+      "luggage"
+    ],
+    "domain": "일반",
+    "freq": 2,
+    "sources": [
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 13,
+        "en": "An airline support agent searches for a passenger by name and flight route to check a baggage claim.",
+        "surface": "baggage",
+        "pos": "명사",
+        "sense": "(여행) 짐, 수하물",
+        "ko": "항공사 지원 에이전트가 수하물 클레임을 확인하려고 승객 이름과 비행 노선으로 검색합니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 13,
+        "en": "Combine the baggage details from the three records into one summary, then continue the claim review",
+        "surface": "baggage",
+        "pos": "명사",
+        "sense": "(여행) 짐, 수하물",
+        "ko": "세 기록의 수하물 정보를 하나의 요약으로 합친 뒤 클레임 검토를 이어 간다"
+      }
+    ]
+  },
+  {
+    "id": "ban",
+    "word": "ban",
+    "tier": "core",
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "ipa": "bæn",
+    "meaning": "금지하다 / 금지 (banned terms: 금지어)",
+    "short": "금지하다, 금지된",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "금지하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "금지"
+      },
+      {
+        "pos": "형용사",
+        "ko": "금지된"
+      }
+    ],
+    "forms": [
+      "banned",
+      "banning",
+      "bans"
+    ],
+    "synonyms": [
+      "prohibit",
+      "forbid",
+      "block"
+    ],
+    "domain": "제어·제한·관리",
+    "freq": 1,
+    "sources": [
+      "lesson-d1"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 32,
+        "en": "It writes a product description, code checks the length and banned terms, and then the description is translated into German and French.",
+        "surface": "banned",
+        "pos": "형용사",
+        "sense": "금지된",
+        "ko": "제품 설명을 쓰고, 코드가 길이와 금지어를 검사한 뒤, 설명을 독일어와 프랑스어로 번역합니다."
+      }
+    ]
+  },
+  {
+    "id": "band",
+    "word": "band",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "bænd",
+    "meaning": "① (점수·값의) 구간, 범위 ② 띠, 끈 ③ 악단, 밴드",
+    "short": "(점수의) 구간, 범위",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(점수·값의) 구간, 범위"
+      },
+      {
+        "pos": "명사",
+        "ko": "띠, 끈"
+      },
+      {
+        "pos": "명사",
+        "ko": "악단, 밴드"
+      }
+    ],
+    "forms": [
+      "bands"
+    ],
+    "synonyms": [
+      "range",
+      "bracket",
+      "tier"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 1,
+    "sources": [
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 26,
+        "en": "Add a confidence_score field that rates how certain the model is about each finding, so dismissal rates can be compared per score band",
+        "surface": "band",
+        "pos": "명사",
+        "sense": "(점수·값의) 구간, 범위",
+        "ko": "모델이 지적마다 얼마나 확신하는지 매기는 confidence_score 필드를 추가해, 점수 구간별 기각률을 비교할 수 있게 한다."
+      }
+    ]
+  },
+  {
+    "id": "bar",
+    "word": "bar",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "bɑːr",
+    "meaning": "① (통과해야 할) 기준, 문턱 ② 막대, 바",
+    "short": "기준, 문턱",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(통과해야 할) 기준, 문턱"
+      },
+      {
+        "pos": "명사",
+        "ko": "막대, 바"
+      },
+      {
+        "pos": "동사",
+        "ko": "막다, 금지하다"
+      }
+    ],
+    "forms": [
+      "bars",
+      "barred"
+    ],
+    "synonyms": [
+      "threshold",
+      "standard"
+    ],
+    "domain": "비교·평가·판단",
+    "freq": 2,
+    "sources": [
+      "mock04",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 29,
+        "en": "Split the existing labeled results by document type and by field, and check that this type meets the bar on its own",
+        "surface": "bar",
+        "pos": "명사",
+        "sense": "(통과해야 할) 기준, 문턱",
+        "ko": "기존 라벨 결과를 문서 유형별·필드별로 나눠, 그 유형이 단독으로 기준을 넘는지 확인한다"
+      },
+      {
+        "src": "mock04",
+        "q": 51,
+        "en": "Lower the bar so every borderline case is flagged and pushed to a human reviewer for a decision",
+        "surface": "bar",
+        "pos": "명사",
+        "sense": "(통과해야 할) 기준, 문턱",
+        "ko": "기준을 낮춰 모든 경계 사례를 표시하고 사람 리뷰어에게 넘겨 결정하게 한다"
+      }
+    ],
+    "note": "1. **(넘어야 할) 기준, 수준** — 높이뛰기 가로대처럼 통과 기준 (*raise / lower the bar*)\r\n2. **막대, 바** — *progress bar*(진행 표시줄), *status bar*(상태 표시줄)\r\n\r\n## 문제 속 쓰임\r\n> Lower the **bar** so every borderline case is flagged and pushed to a human reviewer for a decision\r\n> **기준**을 낮춰 모든 경계 사례를 표시하고 사람 리뷰어에게 넘겨 결정하게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **raise the bar** : 기준을 높이다\r\n- **lower the bar** : 기준을 낮추다\r\n\r\n## 시험 포인트\r\n모호한 사례를 **전부 사람에게 넘기는** 보기는 과잉 대응입니다. 판정 이유를 담은 대표 **few-shot 예시 2~4개**로 일관성을 높이는 것이 정답이었습니다."
+  },
+  {
+    "id": "bare",
+    "word": "bare",
+    "tier": "core",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ber",
+    "meaning": "아무것도 덧붙이지 않은, 맨 ~ (최소한만 있는)",
+    "short": "맨, 아무것도 덧붙이지 않은",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "아무것도 덧붙이지 않은, 맨 ~"
+      },
+      {
+        "pos": "형용사",
+        "ko": "벌거벗은, 드러난"
+      }
+    ],
+    "forms": [
+      "barely"
+    ],
+    "synonyms": [
+      "plain",
+      "naked",
+      "raw"
+    ],
+    "domain": "상태·성질",
+    "freq": 2,
+    "sources": [
+      "mock04",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 51,
+        "en": "The CI reviewer handles clear-cut defects well but is inconsistent on genuinely ambiguous cases — for example, whether a bare `except:` is acceptable in a one-off script versus a shared library.",
+        "surface": "bare",
+        "pos": "형용사",
+        "sense": "아무것도 덧붙이지 않은, 맨 ~",
+        "ko": "CI 리뷰어는 명백한 결함은 잘 처리하지만, 진짜로 모호한 사례(예: 맨 `except:` 가 일회성 스크립트에서와 공유 라이브러리에서 각각 허용 가능한지)에서는 판정이 일관되지 않습니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 31,
+        "en": "Add a prompt rule that assigns the most common unit from past documents to a bare weight number, and release those values to the output without a reviewer.",
+        "surface": "bare",
+        "pos": "형용사",
+        "sense": "아무것도 덧붙이지 않은, 맨 ~",
+        "ko": "단위 없는 weight 숫자에는 과거 문서에서 가장 흔한 단위를 붙이는 프롬프트 규칙을 추가하고, 그 값을 검토 없이 출력한다."
+      }
+    ],
+    "note": "**덧붙은 것 없이 맨 그대로**인 상태입니다. 파이썬의 *bare `except:`* 는 잡을 예외 종류를 **지정하지 않은** except 절로, 모든 예외(`KeyboardInterrupt` 포함)를 삼켜 버려 공유 코드에서는 보통 피합니다.\r\n\r\n## 문제 속 쓰임\r\n> ...whether a **bare** `except:` is acceptable in a one-off script versus a shared library.\r\n> **맨** `except:` 가 일회성 스크립트에서와 공유 라이브러리에서 각각 허용 가능한지\r\n\r\n## 함께 쓰는 표현\r\n- **bare minimum** : 꼭 필요한 최소한\r\n- **bare repository** : (Git) 작업 디렉터리 없이 저장소 데이터만 있는 저장소\r\n- **bare-bones** : 꼭 필요한 것만 갖춘"
+  },
+  {
+    "id": "base",
+    "word": "base",
+    "tier": "core",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "beɪs",
+    "meaning": "① 기반, (지식) 베이스 ② ~에 기반을 두다 (based: ~ 기반의)",
+    "short": "기반, 기준",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "기반, (지식) 베이스"
+      },
+      {
+        "pos": "명사",
+        "ko": "(비교·상속의) 기준, 기본"
+      },
+      {
+        "pos": "동사",
+        "ko": "~에 기반을 두다"
+      }
+    ],
+    "forms": [
+      "based",
+      "basing",
+      "bases"
+    ],
+    "synonyms": [
+      "foundation",
+      "basis"
+    ],
+    "domain": "구조·구성·부분",
+    "freq": 9,
+    "sources": [
+      "sample01",
+      "lesson-d1",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 17,
+        "en": "A document-search subagent hits an authentication error against a knowledge base and simply returns the string 'search unavailable' to the coordinator.",
+        "surface": "base",
+        "pos": "명사",
+        "sense": "기반, (지식) 베이스",
+        "ko": "문서 검색 서브에이전트가 지식 베이스에서 인증 오류를 만나, 코디네이터에게 'search unavailable'이라는 문자열만 돌려줍니다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 30,
+        "en": "The checkout used a shallow fetch-depth, so the CLI could not resolve the diff against the base branch and sat scanning the git history for missing commits",
+        "surface": "base",
+        "pos": "명사",
+        "sense": "(비교·상속의) 기준, 기본",
+        "ko": "checkout이 얕은 fetch-depth를 써서 CLI가 기준 브랜치와의 diff를 구하지 못하고, 빠진 커밋을 찾아 git 이력을 계속 스캔했다"
+      },
+      {
+        "src": "sample01",
+        "q": 4,
+        "en": "A company deploys an MCP server that gives Claude access to internal knowledge bases and HR systems.",
+        "surface": "bases",
+        "pos": "명사",
+        "sense": "기반, (지식) 베이스",
+        "ko": "한 회사가 Claude에게 사내 지식베이스와 HR 시스템 접근 권한을 주는 MCP 서버를 배포했습니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 27,
+        "en": "Have the agent save class names and base classes it discovers to a notes file, so it can read them before answering questions.",
+        "surface": "base",
+        "pos": "명사",
+        "sense": "(비교·상속의) 기준, 기본",
+        "ko": "발견한 클래스 이름과 상위 클래스를 노트 파일에 저장하게 해, 질문에 답하기 전에 읽을 수 있게 한다."
+      }
+    ],
+    "note": "1. **기반, 바탕 / (지식) 베이스** — *knowledge base*(지식베이스), *codebase*(코드베이스)\r\n2. **~에 기반을 두다** — *be based on* (~을 바탕으로 하다), *Claude-based* (Claude 기반의)\r\n\r\n## 문제 속 쓰임\r\n> A company deploys an MCP server that gives Claude access to internal knowledge **bases** and HR systems.\r\n> 한 회사가 Claude에게 사내 지식**베이스**와 HR 시스템 접근 권한을 주는 MCP 서버를 배포했습니다.\r\n\r\n## 함께 쓰는 표현\r\n- **knowledge base** : 지식베이스 (사내 문서 모음)\r\n- **base model** : (파인튜닝 전) 기본 모델\r\n- **based on** ~ : ~을 바탕으로"
+  },
+  {
+    "id": "based-on",
+    "word": "based on",
+    "tier": "core",
+    "pos": [
+      "전치사구"
+    ],
+    "ipa": "beɪst ɑːn",
+    "meaning": "~을 바탕으로, ~에 근거해",
+    "short": "~을 바탕으로, ~에 근거해",
+    "senses": [
+      {
+        "pos": "전치사구",
+        "ko": "~을 바탕으로, ~에 근거해"
+      }
+    ],
+    "synonyms": [
+      "according to",
+      "on the basis of"
+    ],
+    "domain": "논리·관계·연결어",
+    "freq": 9,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 18,
+        "en": "The coordinator's prompt to synthesis only said \"Write a report based on the research that was just completed.\"",
+        "surface": "based on",
+        "pos": "전치사구",
+        "sense": "~을 바탕으로, ~에 근거해",
+        "ko": "코디네이터가 종합 서브에이전트에 보낸 프롬프트는 \"방금 완료된 조사를 바탕으로 보고서를 써라\"뿐이었습니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 15,
+        "en": "What is the main reliability benefit of this redesign, based on the relationship between tool count and selection accuracy?",
+        "surface": "based on",
+        "pos": "전치사구",
+        "sense": "~을 바탕으로, ~에 근거해",
+        "ko": "도구 수와 선택 정확도의 관계에 비춰 볼 때, 이 재설계의 주된 신뢰성 이점은 무엇입니까?"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 38,
+        "en": "A separate cross-file integration pass that examines both files together and produces one recommendation based on the actual data flow",
+        "surface": "based on",
+        "pos": "전치사구",
+        "sense": "~을 바탕으로, ~에 근거해",
+        "ko": "두 파일을 함께 살펴보고 실제 데이터 흐름에 근거해 하나의 수정안을 내는 별도의 파일 간 통합 패스"
+      },
+      {
+        "src": "mock04",
+        "q": 34,
+        "en": "Add a citation post-processor that guesses the most likely source for each uncited sentence based on topical similarity.",
+        "surface": "based on",
+        "pos": "전치사구",
+        "sense": "~을 바탕으로, ~에 근거해",
+        "ko": "주제 유사도를 바탕으로 인용 없는 문장마다 가장 그럴듯한 출처를 추측해 붙이는 인용 후처리기를 추가한다"
+      }
+    ],
+    "note": "어떤 판단·결과가 **무엇을 근거로 나왔는지** 를 나타냅니다. *according to*, *on the basis of* 와 비슷합니다.\r\n\r\n## 문제 속 쓰임\r\n> Add a citation post-processor that guesses the most likely source for each uncited sentence **based on** topical similarity.\r\n> 주제 유사도를 **바탕으로** 인용 없는 문장마다 가장 그럴듯한 출처를 추측해 붙이는 인용 후처리기를 추가한다\r\n\r\n## 함께 쓰는 표현\r\n- **based on evidence / data** : 근거 / 데이터에 기반해\r\n- **decide based on** ~ : ~을 기준으로 결정하다\r\n\r\n## 시험 포인트\r\n\"유사도를 **바탕으로 추측**해 출처를 붙인다\"처럼 사라진 정보를 사후에 짐작하는 보기는 오답입니다. 정답은 **주장–출처 매핑을 처음부터 보존**해 다음 단계로 넘기는 것입니다."
+  },
+  {
+    "id": "basis",
+    "word": "basis",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbeɪsɪs",
+    "meaning": "근거, 기반 (on a ~ basis: ~ 단위로, ~ 방식으로)",
+    "short": "근거, 기반",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "근거, 기반"
+      },
+      {
+        "pos": "명사",
+        "ko": "(처리하는) 단위, 방식"
+      }
+    ],
+    "synonyms": [
+      "foundation",
+      "grounds"
+    ],
+    "domain": "논리·관계·연결어",
+    "freq": 2,
+    "sources": [
+      "lesson-d2",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 2,
+        "en": "The near-duplicate descriptions give the model no differentiating signal, since descriptions are its main basis for choosing similar tools.",
+        "surface": "basis",
+        "pos": "명사",
+        "sense": "근거, 기반",
+        "ko": "거의 똑같은 설명이 모델에게 둘을 구별할 신호를 주지 못한다. 비슷한 도구 사이에서 고를 때 설명이 모델의 주된 근거이기 때문이다"
+      },
+      {
+        "src": "lesson-d5",
+        "q": 38,
+        "en": "Report $440 million (average of the two figures) for revenue, and cite both sources as its basis",
+        "surface": "basis",
+        "pos": "명사",
+        "sense": "근거, 기반",
+        "ko": "매출을 $440 million(두 수치의 평균)으로 쓰고, 두 출처를 그 근거로 인용한다"
+      }
+    ]
+  },
+  {
+    "id": "batch",
+    "word": "batch",
+    "tier": "core",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "bætʃ",
+    "meaning": "① 묶음, 일괄 처리 단위 ② (여러 개를) 한데 묶다",
+    "short": "묶음, 일괄 처리",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "묶음, 일괄 처리 단위"
+      },
+      {
+        "pos": "동사",
+        "ko": "(여러 개를) 한데 묶다"
+      }
+    ],
+    "forms": [
+      "batched",
+      "batching",
+      "batches"
+    ],
+    "synonyms": [
+      "bundle",
+      "group",
+      "set"
+    ],
+    "domain": "실행·처리",
+    "freq": 56,
+    "sources": [
+      "mock04",
+      "mock04-kor",
+      "lesson-d2",
+      "lesson-d4",
+      "selfcheck-d4-kor",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 27,
+        "en": "A nightly job submits 60,000 document-review requests in one batch.",
+        "surface": "batch",
+        "pos": "명사",
+        "sense": "묶음, 일괄 처리 단위",
+        "ko": "야간 작업이 문서 검토 요청 60,000건을 배치 하나로 제출합니다."
+      },
+      {
+        "src": "vocab",
+        "q": 0,
+        "en": "Batch the three interacting changes into a single message so Claude edits the enum and all dependent switch sites together",
+        "surface": "Batch",
+        "pos": "동사",
+        "sense": "(여러 개를) 한데 묶다",
+        "ko": "서로 얽힌 세 변경을 하나의 메시지로 묶어, Claude가 enum과 이에 의존하는 모든 switch 지점을 함께 수정하게 한다"
+      },
+      {
+        "src": "mock04",
+        "q": 59,
+        "en": "A 50,000-document extraction batch completes and 300 requests returned errors.",
+        "surface": "batch",
+        "pos": "명사",
+        "sense": "묶음, 일괄 처리 단위",
+        "ko": "50,000건 규모의 문서 추출 배치가 완료되었고, 그중 300건의 요청이 오류를 반환했습니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 37,
+        "en": "Halfway through a batch of filings, a subagent finds that two credible documents give different headcounts for the same company.",
+        "surface": "batch",
+        "pos": "명사",
+        "sense": "묶음, 일괄 처리 단위",
+        "ko": "공시 배치를 절반쯤 처리했을 때, 서브에이전트가 신뢰할 만한 두 문서가 같은 회사의 직원 수를 다르게 제시한다는 것을 발견합니다."
+      }
+    ],
+    "note": "1. **묶음, 일괄 처리 단위** — 여러 요청을 모아 한꺼번에 처리하는 것. *Message Batches API* 는 많은 요청을 비동기로, 더 싸게 처리합니다\r\n2. **한데 묶다** — 여러 변경·요청을 하나로 모아 보내다\r\n\r\n## 문제 속 쓰임\r\n> **Batch** the three interacting changes into a single message so Claude edits the enum and all dependent switch sites together\r\n> 서로 얽힌 세 변경을 하나의 메시지로 **묶어**, Claude가 enum과 이에 의존하는 모든 switch 지점을 함께 수정하게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **batch processing** : 일괄 처리\r\n- **in batches** : 여러 묶음으로 나눠서\r\n- **batch job** : 일괄 작업\r\n\r\n## 시험 포인트\r\n서로 영향을 주는 변경은 **한 메시지로 묶고**, 독립적인 변경은 순차로 처리합니다. Batch API 는 지연을 견딜 수 있는 대량 작업용이며, 결과는 **`custom_id`** 로 맞춥니다."
+  },
+  {
+    "id": "bearer",
+    "word": "bearer",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈberər",
+    "meaning": "소지자 — Bearer 토큰: 가진 쪽이면 누구나 쓸 수 있는 접근 토큰 (Authorization: Bearer …)",
+    "short": "소지자 (토큰 인증 방식)",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(토큰) 소지자 인증 방식"
+      },
+      {
+        "pos": "명사",
+        "ko": "소지자, 전달자"
+      }
+    ],
+    "forms": [
+      "bearers",
+      "bear"
+    ],
+    "synonyms": [
+      "holder",
+      "carrier"
+    ],
+    "domain": "확인·검증",
+    "freq": 3,
+    "sources": [
+      "lesson-d2",
+      "selfcheck-d2-kor"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 20,
+        "en": "Add the server with --scope project, set the header to \"Authorization: Bearer ${GITHUB_TOKEN}\" in .mcp.json, and have each engineer export GITHUB_TOKEN in their own shell",
+        "surface": "Bearer",
+        "pos": "명사",
+        "sense": "(토큰) 소지자 인증 방식",
+        "ko": "`--scope project`로 서버를 추가하고, `.mcp.json`에서 헤더를 \"Authorization: Bearer ${GITHUB_TOKEN}\"으로 설정한 뒤, 엔지니어마다 자기 셸에서 GITHUB_TOKEN을 export한다"
+      },
+      {
+        "src": "lesson-d2",
+        "q": 20,
+        "en": "Add the server with --scope project and write the header as \"Bearer ${GITHUB_TOKEN:-YOUR_REAL_TOKEN}\", so the server still works for anyone who hasn't set the variable",
+        "surface": "Bearer",
+        "pos": "명사",
+        "sense": "(토큰) 소지자 인증 방식",
+        "ko": "`--scope project`로 서버를 추가하고 헤더를 \"Bearer ${GITHUB_TOKEN:-YOUR_REAL_TOKEN}\"으로 써서, 변수를 설정하지 않은 사람에게도 서버가 동작하게 한다"
+      }
+    ]
+  },
+  {
+    "id": "bearing",
+    "word": "bearing",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈberɪŋ",
+    "meaning": "① 관련, 영향 (have no bearing on: ~와 관계가 없다) ② 방향, 방위 ③ 태도, 거동",
+    "short": "관련, 영향",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "관련, 영향"
+      },
+      {
+        "pos": "명사",
+        "ko": "방향, 방위"
+      },
+      {
+        "pos": "명사",
+        "ko": "태도, 거동"
+      }
+    ],
+    "forms": [
+      "bearings"
+    ],
+    "synonyms": [
+      "relevance",
+      "relation",
+      "influence"
+    ],
+    "domain": "원인·결과·영향",
+    "freq": 1,
+    "sources": [
+      "lesson-d2"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 7,
+        "en": "Consolidation is a token-saving measure for large MCP tool libraries. It has no bearing on how Claude selects between tools.",
+        "surface": "bearing",
+        "pos": "명사",
+        "sense": "관련, 영향",
+        "ko": "합치기는 큰 MCP 도구 라이브러리에서 토큰을 아끼기 위한 조치일 뿐, Claude가 도구를 고르는 방식과는 상관이 없다"
+      }
+    ]
+  },
+  {
+    "id": "become",
+    "word": "become",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "동사"
+    ],
+    "ipa": "bɪˈkʌm",
+    "meaning": "~이 되다, ~해지다",
+    "short": "~이 되다, ~해지다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "~이 되다, ~해지다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(~에게) 어울리다"
+      }
+    ],
+    "forms": [
+      "becomes",
+      "became",
+      "becoming"
+    ],
+    "synonyms": [
+      "turn into",
+      "get",
+      "grow"
+    ],
+    "domain": "변경·수정",
+    "freq": 5,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d3"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 8,
+        "en": "Response times have become unacceptable.",
+        "surface": "become",
+        "pos": "동사",
+        "sense": "~이 되다, ~해지다",
+        "ko": "응답 시간이 용납할 수 없을 만큼 길어졌습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 42,
+        "en": "Remove Grep from the agent's allowedTools so the MCP search tool becomes the only code search option it can use at all.",
+        "surface": "becomes",
+        "pos": "동사",
+        "sense": "~이 되다, ~해지다",
+        "ko": "에이전트의 `allowedTools` 에서 `Grep` 을 빼서, MCP 검색 도구가 쓸 수 있는 유일한 코드 검색 수단이 되게 한다"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 24,
+        "en": "Show Claude a sample legacy record whose middle-name field is null, along with the migrated record it should become, with that field as an empty string",
+        "surface": "become",
+        "pos": "동사",
+        "sense": "~이 되다, ~해지다",
+        "ko": "middle-name이 null인 레거시 레코드 샘플과, 그 필드가 빈 문자열인 기대 이전 결과 레코드를 함께 보여 준다"
+      },
+      {
+        "src": "lesson-d1",
+        "q": 35,
+        "en": "Reviewers have noticed that when a single pass tries to hold all 40 files in context at once, subtle cross-file issues are missed and comments become generic.",
+        "surface": "become",
+        "pos": "동사",
+        "sense": "~이 되다, ~해지다",
+        "ko": "한 번의 패스가 40개 파일을 모두 컨텍스트에 담으려 하면 미묘한 파일 간 문제를 놓치고 코멘트가 일반론으로 흐른다는 사실을 리뷰어들이 알아챘습니다."
+      }
+    ]
+  },
+  {
+    "id": "before",
+    "word": "before",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "전치사",
+      "접속사",
+      "부사"
+    ],
+    "ipa": "bɪˈfɔːr",
+    "meaning": "① ~ 전에, ~보다 먼저 ② ~하기 전에 ③ 이전에, 앞서",
+    "short": "~ 전에, ~하기 전에",
+    "senses": [
+      {
+        "pos": "전치사",
+        "ko": "~ 전에, ~보다 먼저"
+      },
+      {
+        "pos": "접속사",
+        "ko": "~하기 전에"
+      },
+      {
+        "pos": "부사",
+        "ko": "이전에, 앞서"
+      }
+    ],
+    "synonyms": [
+      "prior to",
+      "ahead of"
+    ],
+    "domain": "시간·순서·빈도",
+    "freq": 124,
+    "sources": [
+      "sample01",
+      "mock04",
+      "mock04-kor",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 19,
+        "en": "A refund agent's system prompt says \"always call get_customer before process_refund\".",
+        "surface": "before",
+        "pos": "전치사",
+        "sense": "~ 전에, ~보다 먼저",
+        "ko": "환불 에이전트의 시스템 프롬프트에 \"process_refund 전에 항상 get_customer를 호출하라\"고 적혀 있습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 12,
+        "en": "Your team's /investigate-flaky skill greps the entire test suite, reads dozens of files, and prints verbose exploration before it answers.",
+        "surface": "before",
+        "pos": "접속사",
+        "sense": "~하기 전에",
+        "ko": "팀의 /investigate-flaky 스킬은 테스트 스위트 전체를 grep으로 검색하고, 수십 개 파일을 읽고, 답하기 전에 장황한 탐색 과정을 출력합니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 10,
+        "en": "A team is reviewing an MCP tool's error contract before launch.",
+        "surface": "before",
+        "pos": "전치사",
+        "sense": "~ 전에, ~보다 먼저",
+        "ko": "출시 전 한 팀이 MCP 도구의 오류 계약을 검토합니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 15,
+        "en": "The system prompt also says: \"Before calling the tool, briefly explain which clauses look ambiguous.\"",
+        "surface": "Before",
+        "pos": "전치사",
+        "sense": "~ 전에, ~보다 먼저",
+        "ko": "시스템 프롬프트에는 \"도구를 호출하기 전에 어떤 조항이 모호해 보이는지 간단히 설명하라\"는 지시도 있습니다."
+      }
+    ]
+  },
+  {
+    "id": "begin",
+    "word": "begin",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "동사"
+    ],
+    "ipa": "bɪˈɡɪn",
+    "meaning": "① 시작하다, 시작되다 ② (begin with) ~로 시작하다",
+    "short": "시작하다, 시작되다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "시작하다, 시작되다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(문자열·이름이) ~로 시작하다"
+      }
+    ],
+    "forms": [
+      "begins",
+      "began",
+      "begun",
+      "beginning"
+    ],
+    "synonyms": [
+      "start",
+      "commence"
+    ],
+    "domain": "시작·종료",
+    "freq": 7,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d3",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d3",
+        "q": 25,
+        "en": "Which approach best sets up an effective iterative refinement loop before implementation begins?",
+        "surface": "begins",
+        "pos": "동사",
+        "sense": "시작하다, 시작되다",
+        "ko": "구현을 시작하기 전에 효과적인 반복 개선 루프를 만드는 가장 좋은 방법은 무엇입니까?"
+      },
+      {
+        "src": "lesson-d1",
+        "q": 25,
+        "en": "Matchers can only target tool names that begin with the `mcp__` server prefix. A custom in-process tool like `refund` must be renamed to include this prefix before any matcher can reliably target it.",
+        "surface": "begin",
+        "pos": "동사",
+        "sense": "(문자열·이름이) ~로 시작하다",
+        "ko": "matcher는 `mcp__` 서버 접두사로 시작하는 도구 이름만 대상으로 할 수 있다. `refund` 같은 인프로세스 커스텀 도구는 matcher가 안정적으로 겨눌 수 있도록 이 접두사를 포함하게 이름을 바꿔야 한다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 7,
+        "en": "After developers began dismissing all of a reviewer's comments, a team added its noisy performance-hints category to the skip list.",
+        "surface": "began",
+        "pos": "동사",
+        "sense": "시작하다, 시작되다",
+        "ko": "개발자들이 리뷰어의 모든 코멘트를 무시하기 시작하자, 팀은 오탐이 많은 \"성능 힌트\" 범주를 건너뛰기 목록에 넣었습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 56,
+        "en": "A new vendor begins sending \"credit memo\" documents, which are not in the enum, and the model force-fits them to \"invoice\", corrupting downstream routing.",
+        "surface": "begins",
+        "pos": "동사",
+        "sense": "시작하다, 시작되다",
+        "ko": "새 공급업체가 enum에 없는 \"credit memo\"(대변 메모) 문서를 보내기 시작했고, 모델은 이를 억지로 \"invoice\"에 끼워 맞춰 다운스트림 라우팅을 오염시킵니다."
+      }
+    ]
+  },
+  {
+    "id": "behalf",
+    "word": "behalf",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "bɪˈhæf",
+    "meaning": "(on behalf of / on ~'s behalf) ~을 대신하여, ~을 위하여",
+    "short": "~을 대신하여",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(on ~'s behalf) ~을 대신하여"
+      },
+      {
+        "pos": "명사",
+        "ko": "~의 이익을 위하여"
+      }
+    ],
+    "synonyms": [
+      "in place of"
+    ],
+    "domain": "논리·관계·연결어",
+    "freq": 1,
+    "sources": [
+      "lesson-d2"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 18,
+        "en": "Keep the shared 15-tool set for all subagents, but switch every subagent's tool_choice to {\"type\": \"none\"} so no subagent can call tools directly, requiring the coordinator to invoke tools on its behalf.",
+        "surface": "behalf",
+        "pos": "명사",
+        "sense": "(on ~'s behalf) ~을 대신하여",
+        "ko": "모든 서브에이전트에 공유 15개 도구 세트를 유지하되, `tool_choice`를 `{\"type\": \"none\"}`으로 바꿔 서브에이전트가 직접 도구를 부르지 못하게 하고 코디네이터가 대신 호출하게 한다"
+      }
+    ]
+  },
+  {
+    "id": "behavior",
+    "word": "behavior",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "bɪˈheɪvjər",
+    "meaning": "동작, (시스템·모델이) 행동하는 방식",
+    "short": "동작, 행동 방식",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "동작, (시스템·모델이) 행동하는 방식"
+      },
+      {
+        "pos": "명사",
+        "ko": "(사람의) 행동, 품행"
+      }
+    ],
+    "forms": [
+      "behave",
+      "behaved",
+      "behaving",
+      "behavioral",
+      "behaviour",
+      "behaviors"
+    ],
+    "synonyms": [
+      "conduct",
+      "operation"
+    ],
+    "domain": "상태·성질",
+    "freq": 14,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d3",
+        "q": 19,
+        "en": "What most plausibly explains this behavior?",
+        "surface": "behavior",
+        "pos": "명사",
+        "sense": "동작, (시스템·모델이) 행동하는 방식",
+        "ko": "이 동작을 가장 그럴듯하게 설명하는 것은 무엇입니까?"
+      },
+      {
+        "src": "lesson-d1",
+        "q": 15,
+        "en": "Which coordinator behaviour gets all three results back in roughly ten minutes instead of thirty?",
+        "surface": "behaviour",
+        "pos": "명사",
+        "sense": "동작, (시스템·모델이) 행동하는 방식",
+        "ko": "어떤 코디네이터 동작이 세 결과를 30분이 아니라 약 10분 만에 받게 해 줍니까?"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 3,
+        "en": "Under an explicit-criteria rule that only flags comments contradicted by actual code behavior, should this finding be reported?",
+        "surface": "behavior",
+        "pos": "명사",
+        "sense": "동작, (시스템·모델이) 행동하는 방식",
+        "ko": "\"실제 코드 동작과 모순되는 주석만 지적한다\"는 명시적 기준 아래에서 이 발견을 보고해야 할까요?"
+      },
+      {
+        "src": "mock04",
+        "q": 6,
+        "en": "Logs show the agent issues full refunds when only a partial credit was warranted in 17% of cases because it cannot tell from the single tool which behavior it is invoking.",
+        "surface": "behavior",
+        "pos": "명사",
+        "sense": "동작, (시스템·모델이) 행동하는 방식",
+        "ko": "로그를 보면 에이전트가 하나의 도구만으로는 자신이 어떤 동작을 호출하는지 구분하지 못해, 부분 크레딧이면 충분했던 경우의 17%에서 전액 환불을 처리합니다."
+      }
+    ],
+    "note": "시스템·모델·사람이 **어떻게 움직이는지(동작하는 방식)** 를 말합니다. 영국식 철자는 *behaviour*, 동사는 *behave* 입니다.\r\n\r\n## 문제 속 쓰임\r\n> ...because it cannot tell from the single tool which **behavior** it is invoking.\r\n> 하나의 도구만으로는 자신이 어떤 **동작**을 호출하는지 구분하지 못해...\r\n> What is the correct **behavior**?\r\n> 올바른 **동작**은 무엇일까요?\r\n\r\n## 함께 쓰는 표현\r\n- **expected behavior** : 기대 동작\r\n- **change behavior** : 동작을 바꾸다 (*cleanups that change behavior*)\r\n- **behavioral** (형) 동작·행동의\r\n\r\n## 시험 포인트\r\n한 도구가 **서로 다른 동작**(전액 환불 / 부분 크레딧)을 뭉뚱그리면 오용이 생깁니다. 도구를 나누고 각 description 에 언제 쓰는지 경계를 적는 것이 정답입니다."
+  },
+  {
+    "id": "behind",
+    "word": "behind",
+    "tier": "core",
+    "pos": [
+      "전치사",
+      "부사"
+    ],
+    "ipa": "bɪˈhaɪnd",
+    "meaning": "① (이유·근거로서) ~의 이면에 있는, ~을 뒷받침하는 ② ~ 뒤에 ③ 뒤처져",
+    "short": "~의 이면에 있는, 근거인",
+    "senses": [
+      {
+        "pos": "전치사",
+        "ko": "(이유·근거로서) ~의 이면에 있는"
+      },
+      {
+        "pos": "전치사",
+        "ko": "~ 뒤에"
+      },
+      {
+        "pos": "부사",
+        "ko": "뒤처져, 밀려"
+      }
+    ],
+    "domain": "원인·결과·영향",
+    "freq": 4,
+    "sources": [
+      "mock04",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 10,
+        "en": "Replace the twenty pairs with a handful of examples chosen to show the reasoning behind the labels",
+        "surface": "behind",
+        "pos": "전치사",
+        "sense": "(이유·근거로서) ~의 이면에 있는",
+        "ko": "20개 쌍을 라벨의 판단 근거를 보여 주도록 고른 소수의 예시로 교체한다."
+      },
+      {
+        "src": "mock04",
+        "q": 51,
+        "en": "Add two to four few-shot examples of representative ambiguous cases, each with the reasoning behind its verdict",
+        "surface": "behind",
+        "pos": "전치사",
+        "sense": "(이유·근거로서) ~의 이면에 있는",
+        "ko": "대표적인 모호 사례 2–4개를 few-shot 예시로 추가하고, 각 예시에 판정의 근거가 된 추론을 함께 적는다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 26,
+        "en": "Add a detected_pattern field that names the code construct behind each finding, so dismissal rates can be compared per construct",
+        "surface": "behind",
+        "pos": "전치사",
+        "sense": "(이유·근거로서) ~의 이면에 있는",
+        "ko": "각 지적 뒤의 코드 구조를 이름으로 기록하는 detected_pattern 필드를 추가해, 구조별 기각률을 비교할 수 있게 한다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 36,
+        "en": "Reflection runs in the same context that wrote the code, so the model reuses the reasoning behind its earlier decisions when it checks them",
+        "surface": "behind",
+        "pos": "전치사",
+        "sense": "(이유·근거로서) ~의 이면에 있는",
+        "ko": "성찰은 코드를 쓴 바로 그 컨텍스트에서 이뤄지므로, 모델이 이전 결정을 점검할 때 그 결정의 근거였던 추론을 다시 사용한다."
+      }
+    ]
+  },
+  {
+    "id": "belong",
+    "word": "belong",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "bɪˈlɔːŋ",
+    "meaning": "① (~에) 속하다, 있어야 맞다 ② (belong to) ~의 것이다, ~에 소속되다",
+    "short": "(~에) 속하다, 있어야 맞다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(~에) 속하다, 있어야 맞다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(~ to) ~의 것이다, 소속되다"
+      }
+    ],
+    "forms": [
+      "belongs",
+      "belonged",
+      "belonging",
+      "belongings"
+    ],
+    "synonyms": [
+      "fit"
+    ],
+    "domain": "구조·구성·부분",
+    "freq": 1,
+    "sources": [
+      "lesson-d2"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 2,
+        "en": "The user's request phrasing was too vague to reliably distinguish between the tools, so the fix belongs in the user's prompt rather than the tool definitions.",
+        "surface": "belongs",
+        "pos": "동사",
+        "sense": "(~에) 속하다, 있어야 맞다",
+        "ko": "사용자 요청의 표현이 너무 모호해서 두 도구를 구분할 수 없으므로, 고칠 곳은 도구 정의가 아니라 사용자 프롬프트다"
+      }
+    ]
+  },
+  {
+    "id": "below",
+    "word": "below",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "부사",
+      "전치사"
+    ],
+    "ipa": "bɪˈloʊ",
+    "meaning": "① 아래에, 다음에 (나오는) ② (수치가) ~ 미만으로, ~보다 낮게 ③ (위치가) ~ 아래에",
+    "short": "아래에, ~ 미만으로",
+    "senses": [
+      {
+        "pos": "부사",
+        "ko": "아래에 (나오는), 다음에"
+      },
+      {
+        "pos": "전치사",
+        "ko": "(수치가) ~ 미만으로, ~보다 낮게"
+      },
+      {
+        "pos": "전치사",
+        "ko": "(위치가) ~ 아래에"
+      }
+    ],
+    "synonyms": [
+      "under",
+      "beneath"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 7,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "sample01",
+        "q": 2,
+        "en": "The loop is shown below.",
+        "surface": "below",
+        "pos": "부사",
+        "sense": "아래에 (나오는), 다음에",
+        "ko": "루프는 아래와 같습니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 11,
+        "en": "A support team's prototype routes a conversation to a human whenever its sentiment score turns negative or the model rates its own confidence below 0.6.",
+        "surface": "below",
+        "pos": "전치사",
+        "sense": "(수치가) ~ 미만으로, ~보다 낮게",
+        "ko": "지원팀의 프로토타입은 감정 점수가 부정적으로 바뀌거나 모델이 스스로 매긴 확신도가 0.6 아래로 떨어지면 대화를 사람에게 넘깁니다."
+      },
+      {
+        "src": "mock04",
+        "q": 55,
+        "en": "Add a required confidence float to every field so downstream code can discard PO numbers below a chosen threshold.",
+        "surface": "below",
+        "pos": "전치사",
+        "sense": "(수치가) ~ 미만으로, ~보다 낮게",
+        "ko": "모든 필드에 필수 신뢰도 float를 추가해, 다운스트림 코드가 정해 둔 임계값 미만의 PO 번호를 버리게 한다"
+      },
+      {
+        "src": "lesson-d1",
+        "q": 27,
+        "en": "A teammate registers the hook matcher below under PreToolUse.",
+        "surface": "below",
+        "pos": "부사",
+        "sense": "아래에 (나오는), 다음에",
+        "ko": "팀원이 아래 훅 matcher를 PreToolUse 아래에 등록했습니다."
+      }
+    ]
+  },
+  {
+    "id": "benchmark",
+    "word": "benchmark",
+    "tier": "extra",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "ˈbentʃmɑːrk",
+    "meaning": "벤치마크 — 성능을 비교·측정하는 기준 테스트(세트)",
+    "short": "성능 비교 기준 테스트",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(성능 비교용) 기준 테스트, 벤치마크"
+      },
+      {
+        "pos": "동사",
+        "ko": "기준에 대어 성능을 비교·측정하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "기준점, 척도"
+      }
+    ],
+    "forms": [
+      "benchmarks",
+      "benchmarked",
+      "benchmarking"
+    ],
+    "synonyms": [
+      "standard",
+      "yardstick"
+    ],
+    "domain": "비교·평가·판단",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "beneath",
+    "word": "beneath",
+    "tier": "core",
+    "pos": [
+      "전치사",
+      "부사"
+    ],
+    "ipa": "bɪˈniːθ",
+    "meaning": "① ~ 아래에, 밑에 ② (수준이) ~보다 못한, ~에 어울리지 않는",
+    "short": "~ 아래에, 밑에",
+    "senses": [
+      {
+        "pos": "전치사",
+        "ko": "~ 아래에, 밑에"
+      },
+      {
+        "pos": "전치사",
+        "ko": "(수준이) ~보다 못한, ~에 어울리지 않는"
+      }
+    ],
+    "synonyms": [
+      "under",
+      "below",
+      "underneath"
+    ],
+    "domain": "구조·구성·부분",
+    "freq": 1,
+    "sources": [
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 6,
+        "en": "Merge the criteria into one bulleted list sorted by severity, with the category name in parentheses at the end of each bullet and the examples nested beneath it.",
+        "surface": "beneath",
+        "pos": "전치사",
+        "sense": "~ 아래에, 밑에",
+        "ko": "기준을 심각도순 글머리표 목록 하나로 합치고, 각 항목 끝 괄호에 범주 이름을 달고 예시는 그 아래에 둔다."
+      }
+    ]
+  },
+  {
+    "id": "benefit",
+    "word": "benefit",
+    "tier": "core",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "ˈbenɪfɪt",
+    "meaning": "① 이점, 혜택 ② 이득을 보다, ~에 도움이 되다 ③ (복지) 수당, 급여",
+    "short": "이점, 혜택",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "이점, 혜택"
+      },
+      {
+        "pos": "동사",
+        "ko": "이득을 보다, 도움이 되다"
+      },
+      {
+        "pos": "명사",
+        "ko": "(복지) 수당, 급여"
+      }
+    ],
+    "forms": [
+      "benefits",
+      "benefited",
+      "benefiting",
+      "beneficial"
+    ],
+    "synonyms": [
+      "advantage",
+      "gain"
+    ],
+    "domain": "원인·결과·영향",
+    "freq": 1,
+    "sources": [
+      "lesson-d2"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 15,
+        "en": "What is the main reliability benefit of this redesign, based on the relationship between tool count and selection accuracy?",
+        "surface": "benefit",
+        "pos": "명사",
+        "sense": "이점, 혜택",
+        "ko": "도구 수와 선택 정확도의 관계에 비춰 볼 때, 이 재설계의 주된 신뢰성 이점은 무엇입니까?"
+      }
+    ]
+  },
+  {
+    "id": "best-of-n",
+    "word": "best-of-N",
+    "tier": "extra",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˌbest əv ˈen",
+    "meaning": "best-of-N — 같은 요청을 N번 돌려 결과를 비교해 고르거나 검증하는 기법",
+    "short": "여러 번 생성해 골라내는 기법",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "같은 요청을 여러 번 돌려 결과를 비교·선택하는 기법"
+      }
+    ],
+    "forms": [
+      "best of n"
+    ],
+    "domain": "비교·평가·판단",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "beta",
+    "word": "beta",
+    "tier": "extra",
+    "pos": [
+      "명사",
+      "형용사"
+    ],
+    "ipa": "ˈbeɪtə",
+    "meaning": "베타 — 정식 출시 전 시험 단계(의 기능) (beta header: 베타 기능을 켜는 요청 헤더)",
+    "short": "베타(정식 출시 전 시험 단계)",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "베타, 정식 출시 전 시험 단계"
+      },
+      {
+        "pos": "형용사",
+        "ko": "베타 단계의, 시험판의"
+      },
+      {
+        "pos": "명사",
+        "ko": "(그리스 문자) 베타, 두 번째"
+      }
+    ],
+    "synonyms": [
+      "preview"
+    ],
+    "domain": "시스템·도구·기술",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "between",
+    "word": "between",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "전치사",
+      "부사"
+    ],
+    "ipa": "bɪˈtwiːn",
+    "meaning": "① (둘 이상) 사이의, ~ 간의 ② (시간상) ~ 사이에 ③ (in between) 그 사이에, 중간에",
+    "short": "~ 사이의, ~ 간의",
+    "senses": [
+      {
+        "pos": "전치사",
+        "ko": "(둘 이상) 사이의, ~ 간의"
+      },
+      {
+        "pos": "전치사",
+        "ko": "(시간상) ~ 사이에"
+      },
+      {
+        "pos": "부사",
+        "ko": "(in ~) 그 사이에, 중간에"
+      }
+    ],
+    "synonyms": [
+      "among"
+    ],
+    "domain": "논리·관계·연결어",
+    "freq": 21,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 39,
+        "en": "Your coordinator keeps flagging 'contradictions' between subagents.",
+        "surface": "between",
+        "pos": "전치사",
+        "sense": "(둘 이상) 사이의, ~ 간의",
+        "ko": "코디네이터가 서브에이전트 사이의 '모순'을 계속 표시합니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 34,
+        "en": "The steps and their order never change between runs.",
+        "surface": "between",
+        "pos": "전치사",
+        "sense": "(시간상) ~ 사이에",
+        "ko": "단계와 그 순서는 실행마다 바뀌지 않습니다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 1,
+        "en": "Nobody edited any instruction file in between.",
+        "surface": "between",
+        "pos": "부사",
+        "sense": "(in ~) 그 사이에, 중간에",
+        "ko": "그사이 지침 파일을 고친 사람은 없습니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 2,
+        "en": "The user's request phrasing was too vague to reliably distinguish between the tools, so the fix belongs in the user's prompt rather than the tool definitions.",
+        "surface": "between",
+        "pos": "전치사",
+        "sense": "(둘 이상) 사이의, ~ 간의",
+        "ko": "사용자 요청의 표현이 너무 모호해서 두 도구를 구분할 수 없으므로, 고칠 곳은 도구 정의가 아니라 사용자 프롬프트다"
+      }
+    ]
+  },
+  {
+    "id": "bias",
+    "word": "bias",
+    "tier": "core",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "ˈbaɪəs",
+    "meaning": "편향, 치우침 / 한쪽으로 치우치게 하다 (biased: 편향된)",
+    "short": "편향, 편향된",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "편향, 치우침"
+      },
+      {
+        "pos": "동사",
+        "ko": "한쪽으로 치우치게 하다"
+      },
+      {
+        "pos": "형용사",
+        "ko": "(-ed형) 편향된, 치우친"
+      }
+    ],
+    "forms": [
+      "biased",
+      "unbiased",
+      "biases",
+      "biasing"
+    ],
+    "synonyms": [
+      "prejudice",
+      "skew"
+    ],
+    "domain": "정확·품질·신뢰",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 52,
+        "en": "Have a separate, independent Claude instance review the tests, since a session is biased toward its own output",
+        "surface": "biased",
+        "pos": "형용사",
+        "sense": "(-ed형) 편향된, 치우친",
+        "ko": "세션은 자기 결과물 쪽으로 편향되므로, 별도의 독립 Claude 인스턴스가 테스트를 리뷰하게 한다"
+      }
+    ],
+    "note": "판단이 **한쪽으로 치우치는 경향**입니다. *biased toward* ~ 는 \"~ 쪽으로 편향된\"입니다.\r\n\r\n## 문제 속 쓰임\r\n> Have a separate, independent Claude instance review the tests, since a session is **biased** toward its own output\r\n> 세션은 자기 결과물 쪽으로 **편향되므로**, 별도의 독립 Claude 인스턴스가 테스트를 리뷰하게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **biased toward** ~ : ~ 쪽으로 치우친\r\n- **self-preference bias** : 자기가 만든 결과물을 더 좋게 평가하는 편향\r\n- **unbiased** (형) 치우치지 않은\r\n\r\n## 시험 포인트\r\n같은 세션이 **만들고 리뷰까지** 하면 자기 결과물에 관대해집니다. 컨텍스트를 공유하지 않는 **독립 인스턴스**의 리뷰가 정답입니다."
+  },
+  {
+    "id": "bibliography",
+    "word": "bibliography",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˌbɪbliˈɑːɡrəfi",
+    "meaning": "참고 문헌 목록",
+    "short": "참고 문헌 목록",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "참고 문헌 목록"
+      }
+    ],
+    "forms": [
+      "bibliographies"
+    ],
+    "synonyms": [
+      "references",
+      "works cited"
+    ],
+    "domain": "데이터·정보·문서",
+    "freq": 1,
+    "sources": [
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 41,
+        "en": "Keep the blended narrative and add a bibliography of every source at the end, so readers can check the strength of the evidence themselves",
+        "surface": "bibliography",
+        "pos": "명사",
+        "sense": "참고 문헌 목록",
+        "ko": "섞인 서술은 그대로 두고 끝에 모든 출처의 참고문헌을 붙여, 독자가 근거의 강도를 직접 확인하게 한다"
+      }
+    ]
+  },
+  {
+    "id": "bidirectional",
+    "word": "bidirectional",
+    "tier": "extra",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˌbaɪdəˈrekʃənl",
+    "meaning": "양방향의",
+    "short": "양방향의",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "양방향의"
+      }
+    ],
+    "forms": [
+      "bidirectionally"
+    ],
+    "synonyms": [
+      "two-way"
+    ],
+    "domain": "연결·통합",
+    "freq": 0,
+    "sources": [],
+    "contexts": [
+      {
+        "src": "vocab",
+        "q": 0,
+        "en": "...or Slack Apps (bidirectional, requires workspace approval).",
+        "surface": "bidirectional",
+        "pos": "형용사",
+        "sense": "양방향의",
+        "ko": "또는 Slack Apps(양방향, 워크스페이스 승인 필요)."
+      }
+    ],
+    "note": "정보가 **양쪽 방향으로 오가는** 것입니다. 알림을 보내기만 하는 단방향(*one-way*)과 달리, 상대가 보내는 이벤트·응답도 **받아서 처리**할 수 있습니다.\r\n\r\n## 문제 속 쓰임\r\n> ...or Slack Apps (**bidirectional**, requires workspace approval).\r\n> 또는 Slack Apps(**양방향**, 워크스페이스 승인 필요).\r\n\r\n## 함께 쓰는 표현\r\n- **bidirectional communication** : 양방향 통신\r\n- **bidirectional sync** : 양쪽의 변경을 서로 반영하는 동기화\r\n\r\n## 반대말\r\n- **one-way**, **unidirectional** — 단방향의 (보내기만 함)"
+  },
+  {
+    "id": "bill",
+    "word": "bill",
+    "tier": "core",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "bɪl",
+    "meaning": "청구서, 계산서 / (요금을) 청구하다",
+    "short": "청구서, (운송) 증서",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "청구서, 계산서"
+      },
+      {
+        "pos": "동사",
+        "ko": "(요금을) 청구하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "(bill of lading) 선하증권, 운송 증서"
+      },
+      {
+        "pos": "명사",
+        "ko": "법안"
+      }
+    ],
+    "forms": [
+      "billed",
+      "bills"
+    ],
+    "synonyms": [
+      "invoice",
+      "charge"
+    ],
+    "domain": "비즈니스·업무",
+    "freq": 2,
+    "sources": [
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 31,
+        "en": "Move weight extraction to manual entry by staff for the full set of bills of lading, and stop using the model for that field whether or not a unit is given.",
+        "surface": "bills",
+        "pos": "명사",
+        "sense": "(bill of lading) 선하증권, 운송 증서",
+        "ko": "모든 선하증권의 weight 추출을 직원 수기 입력으로 바꾸고, 단위 유무와 관계없이 이 필드에는 모델을 쓰지 않는다."
+      }
+    ],
+    "note": "**청구서, 계산서**입니다. 동사로는 \"(요금을) 청구하다\"이며, 명사 *billing* 은 \"요금 청구\"입니다.\r\n\r\n## 문제 속 쓰임\r\n> enum을 없애면 \"Invoice\", \"**bill**\" 같은 표기 변형이 섞여 다운스트림이 의존하는 검증과 정규화가 사라집니다.\r\n\r\n해설 속 문장으로, *invoice* 와 *bill* 은 둘 다 **\"청구서\"** 를 뜻해 자유 문자열로 두면 같은 유형이 여러 표기로 갈린다는 이야기입니다.\r\n\r\n## 비교\r\n- **bill** — 일반적인 청구서·계산서 (식당 계산서 포함)\r\n- **invoice** — 거래처에 보내는 공식 송장·청구서 (품목·금액·지급 기한 명시)\r\n\r\n## 시험 포인트\r\n같은 뜻의 다른 표기를 막으려면 **enum** 으로 값을 고정하고, 목록 밖 유형은 `\"other\"` + 상세 문자열 필드로 받는 것이 정답 패턴입니다."
+  },
+  {
+    "id": "bill-of-lading",
+    "word": "bill of lading",
+    "tier": "core",
+    "pos": [
+      "명사구"
+    ],
+    "ipa": "ˌbɪl əv ˈleɪdɪŋ",
+    "meaning": "선하증권 — 운송 회사가 화물을 받았음을 증명하며 발행하는 운송 서류",
+    "short": "선하증권(화물 운송 서류)",
+    "senses": [
+      {
+        "pos": "명사구",
+        "ko": "선하증권(화물 운송 증서)"
+      }
+    ],
+    "forms": [
+      "bill-of-lading",
+      "bills of lading",
+      "lading"
+    ],
+    "domain": "비즈니스·업무",
+    "freq": 2,
+    "sources": [
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 31,
+        "en": "A logistics company's bill-of-lading extraction pipeline shows 94% field accuracy in aggregate.",
+        "surface": "bill-of-lading",
+        "pos": "명사구",
+        "sense": "선하증권(화물 운송 증서)",
+        "ko": "물류 회사의 선하증권(bill of lading) 추출 파이프라인은 전체 필드 정확도가 94%입니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 31,
+        "en": "Move weight extraction to manual entry by staff for the full set of bills of lading, and stop using the model for that field whether or not a unit is given.",
+        "surface": "bills of lading",
+        "pos": "명사구",
+        "sense": "선하증권(화물 운송 증서)",
+        "ko": "모든 선하증권의 weight 추출을 직원 수기 입력으로 바꾸고, 단위 유무와 관계없이 이 필드에는 모델을 쓰지 않는다."
+      }
+    ]
+  },
+  {
+    "id": "billing",
+    "word": "billing",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbɪlɪŋ",
+    "meaning": "요금 청구, 결제",
+    "short": "요금 청구, 결제",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "요금 청구, 결제"
+      }
+    ],
+    "forms": [
+      "billing-dispute"
+    ],
+    "synonyms": [
+      "invoicing",
+      "charging"
+    ],
+    "domain": "비즈니스·업무",
+    "freq": 14,
+    "sources": [
+      "mock04",
+      "mock04-kor",
+      "lesson-d1",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 3,
+        "en": "A billing support agent has been summarizing a lengthy chat every few turns to keep the prompt short.",
+        "surface": "billing",
+        "pos": "명사",
+        "sense": "요금 청구, 결제",
+        "ko": "청구 지원 에이전트가 프롬프트를 짧게 유지하려고 긴 상담을 몇 턴마다 요약해 왔습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 37,
+        "en": "A coordinator agent is asked to produce a migration plan for a 400,000-line legacy billing monolith.",
+        "surface": "billing",
+        "pos": "명사",
+        "sense": "요금 청구, 결제",
+        "ko": "코디네이터 에이전트에게 40만 줄짜리 레거시 청구(billing) 모놀리스의 마이그레이션 계획을 만들라는 요청이 들어왔습니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 2,
+        "en": "Turn 30 of a billing chat: the customer says, \"You promised my $214.88 refund by the 15th.\"",
+        "surface": "billing",
+        "pos": "명사",
+        "sense": "요금 청구, 결제",
+        "ko": "청구 상담 30번째 턴에 고객이 \"15일까지 $214.88 환불해 주기로 하셨잖아요\"라고 말합니다."
+      }
+    ],
+    "note": "상품·서비스 이용료를 **청구하고 결제받는 일 전반**을 말합니다. 고객 지원 문제에서는 이중 청구·할인 미적용 같은 **요금 관련 문의**를 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> When your agent resolves complex cases (**billing** disputes, multi-order returns), customer satisfaction is 15% lower than for simple cases.\r\n> 에이전트가 복잡한 케이스(**청구** 분쟁, 여러 주문 반품)를 해결할 때 고객 만족도가 단순 케이스보다 15% 낮다.\r\n\r\n## 함께 쓰는 표현\r\n- **billing dispute** : 청구 금액에 대한 이의 제기·분쟁\r\n- **billing question / issue** : 요금 문의 / 청구 문제\r\n- **billing address** : 청구지 주소 (카드 명세서가 가는 주소)\r\n- **bill** (동) 청구하다 · (명) 청구서\r\n\r\n## 비슷한 말\r\n- **charge** — (요금을) 부과하다 — *I've been charged twice* 는 '이중 청구됐다'\r\n- **invoicing** — 청구서(인보이스) 발행 (주로 기업 간 거래)"
+  },
+  {
+    "id": "billing-date",
+    "word": "billing date",
+    "tier": "core",
+    "pos": [
+      "명사구"
+    ],
+    "ipa": "ˈbɪlɪŋ deɪt",
+    "meaning": "(요금) 청구일, 결제일",
+    "short": "청구일, 결제일",
+    "senses": [
+      {
+        "pos": "명사구",
+        "ko": "(요금) 청구일, 결제일"
+      }
+    ],
+    "forms": [
+      "billing-date",
+      "billing dates"
+    ],
+    "domain": "비즈니스·업무",
+    "freq": 2,
+    "sources": [
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 8,
+        "en": "The billing-date change they need takes one tool call.",
+        "surface": "billing-date",
+        "pos": "명사구",
+        "sense": "(요금) 청구일, 결제일",
+        "ko": "고객에게 필요한 청구일 변경은 도구 호출 한 번이면 됩니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 8,
+        "en": "Make the billing-date change first, since it takes one step, and then transfer the customer",
+        "surface": "billing-date",
+        "pos": "명사구",
+        "sense": "(요금) 청구일, 결제일",
+        "ko": "한 단계면 되니 청구일 변경을 먼저 하고, 그다음 고객을 연결한다"
+      }
+    ]
+  },
+  {
+    "id": "bind",
+    "word": "bind",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "baɪnd",
+    "meaning": "① 묶다, 결합하다 ② (값·주소를) 바인딩하다, 연결하다 ③ (bound) (~에) 묶인, 매인",
+    "short": "(~에) 묶인, 묶다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "묶다, 결합하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(값·주소를) 바인딩하다, 연결하다"
+      },
+      {
+        "pos": "형용사",
+        "ko": "(-ed형 bound) (~에) 묶인, 매인"
+      }
+    ],
+    "forms": [
+      "binds",
+      "bound",
+      "binding"
+    ],
+    "synonyms": [
+      "tie",
+      "attach",
+      "link"
+    ],
+    "domain": "연결·통합",
+    "freq": 1,
+    "sources": [
+      "lesson-d1"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 42,
+        "en": "A session-level grant stays bound to the session that issued it, so a forked branch starts without it",
+        "surface": "bound",
+        "pos": "형용사",
+        "sense": "(-ed형 bound) (~에) 묶인, 매인",
+        "ko": "세션 단위 허용은 그것을 발급한 세션에 묶여 있으므로, 포크된 갈래는 그 허용 없이 시작한다"
+      }
+    ]
+  },
+  {
+    "id": "birth",
+    "word": "birth",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "명사"
+    ],
+    "ipa": "bɜːrθ",
+    "meaning": "① 출생, 탄생 (date of birth: 생년월일) ② (새로운 것의) 시작, 기원",
+    "short": "출생, 탄생",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "출생, 탄생"
+      },
+      {
+        "pos": "명사",
+        "ko": "(새로운 것의) 시작, 기원"
+      }
+    ],
+    "forms": [
+      "births"
+    ],
+    "synonyms": [
+      "origin"
+    ],
+    "domain": "일반",
+    "freq": 1,
+    "sources": [
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 21,
+        "en": "A response that puts the patient's date of birth under `guardian` instead of `patient`",
+        "surface": "birth",
+        "pos": "명사",
+        "sense": "출생, 탄생",
+        "ko": "환자의 생년월일을 `patient`가 아니라 `guardian` 아래에 넣은 응답"
+      }
+    ]
+  },
+  {
+    "id": "blank",
+    "word": "blank",
+    "tier": "core",
+    "pos": [
+      "형용사",
+      "명사"
+    ],
+    "ipa": "blæŋk",
+    "meaning": "비어 있는 / 빈칸",
+    "short": "비어 있는, 빈칸",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "비어 있는, 빈"
+      },
+      {
+        "pos": "명사",
+        "ko": "빈칸, 공란"
+      },
+      {
+        "pos": "형용사",
+        "ko": "(표정이) 멍한, 무표정한"
+      }
+    ],
+    "forms": [
+      "blanks",
+      "blankly"
+    ],
+    "synonyms": [
+      "empty",
+      "unfilled"
+    ],
+    "domain": "상태·성질",
+    "freq": 1,
+    "sources": [
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 24,
+        "en": "On one submission, the employee left the project code blank on the physical form, so it does not appear anywhere in the scanned image.",
+        "surface": "blank",
+        "pos": "형용사",
+        "sense": "비어 있는, 빈",
+        "ko": "한 제출 건에서 직원이 종이 양식의 프로젝트 코드 칸을 비워 두어, 스캔 이미지 어디에도 코드가 없습니다."
+      }
+    ]
+  },
+  {
+    "id": "blend",
+    "word": "blend",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "blend",
+    "meaning": "(여러 개를) 섞다, 혼합하다",
+    "short": "섞다, 혼합된",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(여러 개를) 섞다, 혼합하다"
+      },
+      {
+        "pos": "형용사",
+        "ko": "(-ed형) 섞인, 혼합된"
+      },
+      {
+        "pos": "명사",
+        "ko": "혼합(물)"
+      }
+    ],
+    "forms": [
+      "blended",
+      "blending",
+      "blends"
+    ],
+    "synonyms": [
+      "mix",
+      "merge",
+      "combine"
+    ],
+    "domain": "연결·통합",
+    "freq": 3,
+    "sources": [
+      "mock04",
+      "lesson-d2",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 23,
+        "en": "The local-scoped entry is used for this developer, and nothing from the project entry in .mcp.json is blended into its definition",
+        "surface": "blended",
+        "pos": "동사",
+        "sense": "(여러 개를) 섞다, 혼합하다",
+        "ko": "이 개발자에게는 local 스코프 항목이 쓰이며, `.mcp.json`의 project 항목에서는 아무것도 섞여 들어오지 않는다"
+      },
+      {
+        "src": "lesson-d5",
+        "q": 41,
+        "en": "Keep the blended narrative and add a bibliography of every source at the end, so readers can check the strength of the evidence themselves",
+        "surface": "blended",
+        "pos": "형용사",
+        "sense": "(-ed형) 섞인, 혼합된",
+        "ko": "섞인 서술은 그대로 두고 끝에 모든 출처의 참고문헌을 붙여, 독자가 근거의 강도를 직접 확인하게 한다"
+      },
+      {
+        "src": "mock04",
+        "q": 35,
+        "en": "Average the two figures into a single blended market-size number so the report reflects both sources about equally.",
+        "surface": "blended",
+        "pos": "형용사",
+        "sense": "(-ed형) 섞인, 혼합된",
+        "ko": "보고서가 두 출처를 거의 같은 비중으로 반영하도록, 두 수치를 평균 내 하나의 혼합 시장 규모 수치로 만든다"
+      }
+    ],
+    "note": "여러 가지를 **섞어 하나로 만드는** 것입니다. *blended* 는 \"섞인, 혼합된\" — 문제에서는 서로 다른 두 출처의 수치를 평균 내 만든 **혼합 수치**를 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> Average the two figures into a single **blended** market-size number so the report reflects both sources about equally.\r\n> 보고서가 두 출처를 거의 같은 비중으로 반영하도록, 두 수치를 평균 내 하나의 **혼합** 시장 규모 수치로 만든다.\r\n\r\n## 함께 쓰는 표현\r\n- **blend A with B** : A와 B를 섞다\r\n- **a blend of** ~ : ~이 섞인 것\r\n\r\n## 시험 포인트\r\n출처마다 수치가 다를 때 평균 내 **섞어 버리는** 보기는 오답입니다. 먼저 시점·출처 차이인지 보고, 두 값을 **출처·발행 날짜 주석과 함께 둘 다 보존**하는 보기가 정답입니다."
+  },
+  {
+    "id": "blind-spot",
+    "word": "blind spot",
+    "tier": "core",
+    "pos": [
+      "명사구"
+    ],
+    "ipa": "ˈblaɪnd spɑːt",
+    "meaning": "사각지대, 맹점",
+    "short": "사각지대, 맹점",
+    "senses": [
+      {
+        "pos": "명사구",
+        "ko": "사각지대, 맹점"
+      }
+    ],
+    "forms": [
+      "blind spots"
+    ],
+    "synonyms": [
+      "weak point",
+      "gap"
+    ],
+    "domain": "오류·실패·위험",
+    "freq": 1,
+    "sources": [
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 11,
+        "en": "Escalate only when both signals fire together, so negative sentiment and low confidence cover each other's blind spots",
+        "surface": "blind spots",
+        "pos": "명사구",
+        "sense": "사각지대, 맹점",
+        "ko": "두 신호가 동시에 나올 때만 이관해, 부정 감정과 낮은 확신도가 서로의 사각지대를 메우게 한다"
+      }
+    ]
+  },
+  {
+    "id": "blob",
+    "word": "blob",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "blɑːb",
+    "meaning": "블롭 — 내용을 따지지 않고 한 덩어리로 다루는 (바이너리) 데이터",
+    "short": "(데이터) 덩어리, 블롭",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(데이터) 덩어리, 블롭"
+      },
+      {
+        "pos": "명사",
+        "ko": "(형체 없는) 작은 덩어리, 방울"
+      }
+    ],
+    "forms": [
+      "blobs"
+    ],
+    "synonyms": [
+      "chunk",
+      "lump"
+    ],
+    "domain": "데이터·정보·문서",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 40,
+        "en": "Encrypt the .mcp.json file and commit the encrypted blob, then decrypt it with a shared key at session start.",
+        "surface": "blob",
+        "pos": "명사",
+        "sense": "(데이터) 덩어리, 블롭",
+        "ko": "`.mcp.json` 파일을 암호화해 암호화된 덩어리를 커밋하고, 세션 시작 시 공유 키로 복호화한다"
+      }
+    ],
+    "note": "구조를 따지지 않고 **한 덩어리로 다루는 데이터**입니다. 흔히 *Binary Large Object* 의 줄임말로 설명하며, 암호화된 결과나 파일 내용처럼 안을 들여다보지 않는 바이트 묶음을 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> Encrypt the .mcp.json file and commit the encrypted **blob**, then decrypt it with a shared key at session start.\r\n> `.mcp.json` 파일을 암호화해 암호화된 **덩어리**를 커밋하고, 세션 시작 시 공유 키로 복호화한다.\r\n\r\n## 함께 쓰는 표현\r\n- **blob storage** : 파일 같은 비정형 데이터를 담는 저장소\r\n- **an opaque blob** : 내용을 해석하지 않고 통째로 다루는 데이터\r\n\r\n## 시험 포인트\r\n공유 `.mcp.json` 의 비밀값은 암호화한 blob 을 커밋할 것이 아니라 `${GITHUB_TOKEN}` 같은 **환경 변수 참조**로 두어, 머신·CI 마다 자기 값을 넣게 하는 것이 정답입니다."
+  },
+  {
+    "id": "block",
+    "word": "block",
+    "tier": "core",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "blɑːk",
+    "meaning": "① (콘텐츠) 블록, 덩어리 ② 막다, 차단하다",
+    "short": "블록, 차단하다",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(콘텐츠) 블록, 덩어리"
+      },
+      {
+        "pos": "동사",
+        "ko": "막다, 차단하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "(코드) 블록, 구문 단위"
+      },
+      {
+        "pos": "명사",
+        "ko": "(도시의) 구역, 블록"
+      }
+    ],
+    "forms": [
+      "blocked",
+      "blocking",
+      "blocks"
+    ],
+    "synonyms": [
+      "chunk",
+      "prevent",
+      "stop"
+    ],
+    "domain": "구조·구성·부분",
+    "freq": 51,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "sample01",
+        "q": 1,
+        "en": "The engineer is parsing Claude's conversational text output to detect tool calls instead of using the structural `stop_reason` and `tool_use` content blocks",
+        "surface": "blocks",
+        "pos": "명사",
+        "sense": "(콘텐츠) 블록, 덩어리",
+        "ko": "구조화된 `stop_reason` 과 `tool_use` 콘텐츠 블록 대신, Claude의 대화형 텍스트 출력을 파싱해 도구 호출을 감지하고 있다"
+      },
+      {
+        "src": "lesson-d1",
+        "q": 27,
+        "en": "Your policy is to block refund_customer calls over $500 when the category is \"restricted\".",
+        "surface": "block",
+        "pos": "동사",
+        "sense": "막다, 차단하다",
+        "ko": "정책은 category가 \"restricted\"일 때 500달러를 넘는 refund_customer 호출을 막는 것입니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 11,
+        "en": "Developers have started ignoring a review bot because it flags every broad `catch` block in a TypeScript service, including deliberate ones.",
+        "surface": "block",
+        "pos": "명사",
+        "sense": "(코드) 블록, 구문 단위",
+        "ko": "TypeScript 서비스에서 리뷰 봇이 의도된 것까지 포함해 모든 광범위한 `catch` 블록을 지적하자 개발자들이 봇을 무시하기 시작했습니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 28,
+        "en": "An agent must change one block in a generated file.",
+        "surface": "block",
+        "pos": "명사",
+        "sense": "(코드) 블록, 구문 단위",
+        "ko": "에이전트가 생성된(generated) 파일에서 블록 하나를 바꿔야 합니다."
+      }
+    ],
+    "note": "1. **블록, 덩어리** — API 응답 `content` 를 이루는 단위 (`text` 블록, `tool_use` 블록 등)\r\n2. **막다, 차단하다** — 실행·진행을 못 하게 막는다\r\n\r\n## 문제 속 쓰임\r\n> The engineer is parsing Claude's conversational text output to detect tool calls instead of using the structural `stop_reason` and `tool_use` content **blocks**\r\n> 구조화된 `stop_reason` 과 `tool_use` 콘텐츠 **블록** 대신, Claude의 대화형 텍스트 출력을 파싱해 도구 호출을 감지하고 있다\r\n> Add a `PreToolUse` hook that checks the command and exits with code 2 to **block** it\r\n> 명령을 검사해 종료 코드 2로 끝내 **차단하는** `PreToolUse` 훅을 추가한다\r\n\r\n## 함께 쓰는 표현\r\n- **content block** : 응답 `content` 배열의 한 항목\r\n- **block a tool call** : 도구 호출을 차단하다\r\n- **blocking** (형) 막는, 끝날 때까지 기다리게 하는\r\n\r\n## 시험 포인트\r\n도구 호출 여부는 텍스트를 파싱하지 말고 `stop_reason` 과 `tool_use` **블록**으로 판단합니다. 또 `PreToolUse` 훅이 **종료 코드 2** 로 끝나면 그 호출이 차단됩니다 — 프롬프트가 아닌 결정적 차단 수단입니다."
+  },
+  {
+    "id": "blocklist",
+    "word": "blocklist",
+    "tier": "extra",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈblɑːklɪst",
+    "meaning": "차단 목록 — 막을 단어·대상을 적어 둔 목록 (denylist 와 같은 말)",
+    "short": "차단 목록",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "차단 목록"
+      }
+    ],
+    "forms": [
+      "block-list",
+      "blocklists"
+    ],
+    "synonyms": [
+      "denylist",
+      "blacklist"
+    ],
+    "domain": "제어·제한·관리",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "body",
+    "word": "body",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbɑːdi",
+    "meaning": "본문 — 머리말·설정 부분을 뺀 본 내용",
+    "short": "본문",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "본문, 본 내용"
+      },
+      {
+        "pos": "명사",
+        "ko": "(함수의) 본체, 구현부"
+      },
+      {
+        "pos": "명사",
+        "ko": "(코드·자료의) 전체 분량, 덩어리"
+      },
+      {
+        "pos": "명사",
+        "ko": "몸, 신체"
+      }
+    ],
+    "forms": [
+      "bodies"
+    ],
+    "synonyms": [
+      "content",
+      "main text"
+    ],
+    "domain": "구조·구성·부분",
+    "freq": 5,
+    "sources": [
+      "mock04",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 14,
+        "en": "Adding the reminder \"only write to docs/, never edit source\" to the skill body has not reliably stopped it.",
+        "surface": "body",
+        "pos": "명사",
+        "sense": "본문, 본 내용",
+        "ko": "스킬 본문에 \"only write to docs/, never edit source\"(docs/에만 쓰고 소스는 절대 수정하지 말 것)라는 문구를 추가했지만 확실히 막지 못했습니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 3,
+        "en": "Report it, since the docstring promises a cache lookup before the API call and the function body goes straight to the API on each invocation.",
+        "surface": "body",
+        "pos": "명사",
+        "sense": "(함수의) 본체, 구현부",
+        "ko": "보고한다. docstring은 API 호출 전에 캐시를 조회한다고 약속하는데, 함수 본문은 호출될 때마다 곧장 API로 간다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 36,
+        "en": "Reflection is limited by a thinking-token budget that is exhausted before the model can re-examine the full body of generated code",
+        "surface": "body",
+        "pos": "명사",
+        "sense": "(코드·자료의) 전체 분량, 덩어리",
+        "ko": "성찰은 사고 토큰 예산의 제약을 받는데, 모델이 생성된 코드 전체를 다시 살펴보기 전에 예산이 바닥난다."
+      },
+      {
+        "src": "mock04",
+        "q": 36,
+        "en": "The coordinator passes each subagent's output forward verbatim: the web-search subagent's full scraped page bodies — roughly 38k tokens — flow straight into the synthesis subagent's prompt.",
+        "surface": "bodies",
+        "pos": "명사",
+        "sense": "본문, 본 내용",
+        "ko": "코디네이터는 각 서브에이전트의 출력을 원문 그대로 다음 단계로 넘깁니다: 웹 검색 서브에이전트가 긁어 온 페이지 본문 전체, 약 38k 토큰이 그대로 종합 서브에이전트의 프롬프트로 들어갑니다."
+      }
+    ],
+    "note": "머리말·설정 같은 앞부분을 뺀 **본 내용(본문)** 입니다. 스킬(`SKILL.md`)에서는 frontmatter 아래에 쓰는 지시문을, HTTP 에서는 요청·응답의 본문을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> Adding the reminder \"only write to docs/, never edit source\" to the skill **body** has not reliably stopped it.\r\n> 스킬 **본문**에 \"only write to docs/, never edit source\"(docs/에만 쓰고 소스는 절대 수정하지 말 것)라는 문구를 추가했지만 확실히 막지 못했습니다.\r\n\r\n## 함께 쓰는 표현\r\n- **skill body** : 스킬 본문 (frontmatter 아래 지시 부분)\r\n- **request / response body** : 요청 / 응답 본문\r\n- **page bodies** : 웹 페이지 본문들\r\n\r\n## 시험 포인트\r\n본문에 적은 지시는 모델이 참고하는 **안내일 뿐 보장이 아닙니다**. \"절대 못 하게\" 해야 한다면 frontmatter 의 도구 설정처럼 **하네스가 강제하는** 결정적 장치가 정답입니다."
+  },
+  {
+    "id": "boilerplate",
+    "word": "boilerplate",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbɔɪlərpleɪt",
+    "meaning": "상용구 — 어디에나 반복되는 판에 박힌 내용",
+    "short": "상용구, 판에 박힌 내용",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "상용구, 판에 박힌 내용"
+      },
+      {
+        "pos": "명사",
+        "ko": "(코드) 매번 반복되는 기본 틀"
+      }
+    ],
+    "synonyms": [
+      "template",
+      "standard text"
+    ],
+    "domain": "데이터·정보·문서",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 36,
+        "en": "Keep passing the raw pages but add a prompt instruction telling synthesis to focus on the important parts and ignore boilerplate.",
+        "surface": "boilerplate",
+        "pos": "명사",
+        "sense": "상용구, 판에 박힌 내용",
+        "ko": "원본 페이지는 계속 넘기되, 종합 단계에 중요한 부분에 집중하고 상용구는 무시하라는 프롬프트 지시를 추가한다"
+      }
+    ],
+    "note": "어느 문서에나 똑같이 들어가는 **판에 박힌 내용**입니다. 웹 페이지의 메뉴·머리글·바닥글·저작권 문구처럼 정보 가치가 거의 없는 부분, 코드에서는 매번 되풀이해 쓰는 틀 코드를 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> Keep passing the raw pages but add a prompt instruction telling synthesis to focus on the important parts and ignore **boilerplate**.\r\n> 원본 페이지는 계속 넘기되, 종합 단계에 중요한 부분에 집중하고 **상용구**는 무시하라는 프롬프트 지시를 추가한다.\r\n\r\n## 함께 쓰는 표현\r\n- **boilerplate code** : 반복되는 틀 코드\r\n- **strip boilerplate** : 상용구를 걷어 내다\r\n\r\n## 시험 포인트\r\n원본을 그대로 넘기면서 \"상용구는 무시하라\"고 **지시만 하는** 보기는 오답입니다. 넘기기 **전에** 관련 발견 사항만 추려 전달하고, 핵심 요약을 앞에 두는 보기가 정답입니다."
+  },
+  {
+    "id": "booking",
+    "word": "booking",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbʊkɪŋ",
+    "meaning": "예약 (booking reference: 예약 번호)",
+    "short": "예약",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "예약"
+      }
+    ],
+    "forms": [
+      "bookings",
+      "book"
+    ],
+    "synonyms": [
+      "reservation"
+    ],
+    "domain": "비즈니스·업무",
+    "freq": 4,
+    "sources": [
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 13,
+        "en": "The lookup tool returns three passenger records with the same name on that route, each with a different booking reference.",
+        "surface": "booking",
+        "pos": "명사",
+        "sense": "예약",
+        "ko": "조회 도구가 그 노선에서 이름이 같은 승객 기록 세 건을 반환했고, 각각 예약 번호가 다릅니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 12,
+        "en": "When a lookup returns several matches, do not choose between them. Ask the customer for one more identifier, such as the booking reference or phone number, and continue only once exactly one record matches.",
+        "surface": "booking",
+        "pos": "명사",
+        "sense": "예약",
+        "ko": "조회 결과가 여러 건이면, 그중에서 고르지 않는다. 예약 번호나 전화번호 같은 식별자를 하나 더 요청하고, 정확히 한 건만 일치할 때 진행한다."
+      }
+    ]
+  },
+  {
+    "id": "boolean",
+    "word": "boolean",
+    "tier": "core",
+    "pos": [
+      "형용사",
+      "명사"
+    ],
+    "ipa": "ˈbuːliən",
+    "meaning": "① 참·거짓 두 값만 갖는, 불리언(논리형)의 ② 불리언 값, 참·거짓 값",
+    "short": "참·거짓 값의, 불리언",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "참·거짓 두 값만 갖는, 불리언의"
+      },
+      {
+        "pos": "명사",
+        "ko": "불리언 값, 참·거짓 값"
+      }
+    ],
+    "forms": [
+      "booleans"
+    ],
+    "domain": "데이터·정보·문서",
+    "freq": 2,
+    "sources": [
+      "lesson-d1"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 24,
+        "en": "A developer implements a PreToolUse hook that gates the `process_refund` tool by checking a boolean flag `is_verified`.",
+        "surface": "boolean",
+        "pos": "형용사",
+        "sense": "참·거짓 두 값만 갖는, 불리언의",
+        "ko": "개발자가 불리언 플래그 `is_verified` 를 검사해 `process_refund` 도구를 막는 PreToolUse 훅을 구현합니다."
+      }
+    ]
+  },
+  {
+    "id": "borderline",
+    "word": "borderline",
+    "tier": "core",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˈbɔːrdərlaɪn",
+    "meaning": "경계선상의, (어느 쪽인지) 애매한",
+    "short": "경계선상의, 애매한",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "경계선상의, (어느 쪽인지) 애매한"
+      },
+      {
+        "pos": "명사",
+        "ko": "경계선"
+      }
+    ],
+    "synonyms": [
+      "marginal",
+      "ambiguous"
+    ],
+    "domain": "비교·평가·판단",
+    "freq": 2,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 51,
+        "en": "Lower the bar so every borderline case is flagged and pushed to a human reviewer for a decision",
+        "surface": "borderline",
+        "pos": "형용사",
+        "sense": "경계선상의, (어느 쪽인지) 애매한",
+        "ko": "기준을 낮춰 모든 경계 사례를 표시하고 사람 리뷰어에게 넘겨 결정하게 한다"
+      },
+      {
+        "src": "mock04",
+        "q": 47,
+        "en": "Lower the pass threshold so more borderline findings surface in the same session during self-review",
+        "surface": "borderline",
+        "pos": "형용사",
+        "sense": "경계선상의, (어느 쪽인지) 애매한",
+        "ko": "통과 기준을 낮춰, 같은 세션의 자기 리뷰에서 경계선상의 발견 사항이 더 많이 드러나게 한다"
+      }
+    ],
+    "note": "기준선 바로 근처라 **이쪽인지 저쪽인지 판단하기 애매한** 상태입니다. *clear-cut*(명백한)과 반대되는 느낌입니다.\r\n\r\n## 문제 속 쓰임\r\n> Lower the bar so every **borderline** case is flagged and pushed to a human reviewer for a decision\r\n> 기준을 낮춰 모든 **경계** 사례를 표시하고 사람 리뷰어에게 넘겨 결정하게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **borderline case** : 경계 사례, 애매한 경우\r\n- **borderline findings** : 문제인지 아닌지 애매한 지적 사항\r\n\r\n## 비슷한 말 · 반대말\r\n- **ambiguous** — 모호한 · **gray area** — 판단이 애매한 영역\r\n- **clear-cut** — 명백한\r\n\r\n## 시험 포인트\r\n애매한 사례를 **전부 사람에게 넘기거나 기준만 낮추는** 보기는 오답입니다. 판정 이유를 담은 **대표 few-shot 예시 2~4개**를 넣는 것이 정답 패턴입니다."
+  },
+  {
+    "id": "bot",
+    "word": "bot",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "bɑːt",
+    "meaning": "봇 — 정해진 일을 자동으로 하는 프로그램 (지원 봇·리뷰 봇 등)",
+    "short": "봇(자동화 프로그램)",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "봇, 자동화 프로그램"
+      }
+    ],
+    "forms": [
+      "bots"
+    ],
+    "domain": "시스템·도구·기술",
+    "freq": 8,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "sample01",
+        "q": 1,
+        "en": "An engineer builds an agentic customer support bot with the loop logic shown below.",
+        "surface": "bot",
+        "pos": "명사",
+        "sense": "봇, 자동화 프로그램",
+        "ko": "엔지니어가 에이전트형 고객지원 봇을 만들었고, 루프 로직은 아래와 같습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 50,
+        "en": "They have started ignoring the bot entirely — including its genuine security findings.",
+        "surface": "bot",
+        "pos": "명사",
+        "sense": "봇, 자동화 프로그램",
+        "ko": "개발자들은 이제 진짜 보안 발견 사항까지 포함해 봇을 통째로 무시하기 시작했습니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 1,
+        "en": "A support bot built on the Messages API sends the system prompt, its tool definitions and the customer's newest message on each request.",
+        "surface": "bot",
+        "pos": "명사",
+        "sense": "봇, 자동화 프로그램",
+        "ko": "Messages API로 만든 지원 봇이 요청마다 system 프롬프트, 도구 정의, 고객의 최신 메시지만 보냅니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 11,
+        "en": "You want fewer false positives, and you still want real problems caught in code the bot has never seen.",
+        "surface": "bot",
+        "pos": "명사",
+        "sense": "봇, 자동화 프로그램",
+        "ko": "오탐은 줄이면서, 봇이 본 적 없는 코드의 진짜 문제는 계속 잡고 싶습니다."
+      }
+    ]
+  },
+  {
+    "id": "bottleneck",
+    "word": "bottleneck",
+    "tier": "extra",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbɑːtlnek",
+    "meaning": "병목 — 전체 흐름을 느리게 만드는 지점",
+    "short": "병목(지점)",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "병목, 흐름을 늦추는 지점"
+      }
+    ],
+    "forms": [
+      "bottlenecks"
+    ],
+    "synonyms": [
+      "choke point",
+      "constraint"
+    ],
+    "domain": "오류·실패·위험",
+    "freq": 0,
+    "sources": [],
+    "contexts": [
+      {
+        "src": "vocab",
+        "q": 0,
+        "en": "The bottleneck is investigation time: developers must click into each finding to read Claude's reasoning before deciding.",
+        "surface": "bottleneck",
+        "pos": "명사",
+        "sense": "병목, 흐름을 늦추는 지점",
+        "ko": "병목은 조사 시간이다. 개발자가 판단을 내리려면 발견마다 클릭해 들어가 Claude의 추론을 읽어야 한다."
+      }
+    ],
+    "note": "병의 좁은 목처럼, 전체 흐름에서 **가장 느려 나머지를 붙잡는 한 지점**입니다. 다른 곳을 아무리 빠르게 해도 **병목을 풀지 않으면 전체 속도는 그대로**입니다.\r\n\r\n## 문제 속 쓰임\r\n> The **bottleneck** is investigation time: developers must click into each finding to read Claude's reasoning before deciding.\r\n> **병목**은 조사 시간이다. 개발자가 판단을 내리려면 발견마다 클릭해 들어가 Claude의 추론을 읽어야 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **address / remove a bottleneck** : 병목을 해결하다·없애다\r\n- **become a bottleneck** : 병목이 되다\r\n- **performance bottleneck** : 성능 병목\r\n\r\n## 시험 포인트\r\n지문이 **병목이 무엇인지 짚어 주면**, 다른 곳을 개선하는 선택지보다 **그 병목 자체를 줄이는** 선택지를 고릅니다. 이때 지문에 나온 제약 조건(예: 필터링 금지)도 함께 지키는지 확인하세요."
+  },
+  {
+    "id": "boundary",
+    "word": "boundary",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbaʊndri",
+    "meaning": "경계, (책임·범위의) 한계선",
+    "short": "경계, 한계선",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "경계, 경계선"
+      },
+      {
+        "pos": "명사",
+        "ko": "(책임·범위의) 한계, 범위"
+      }
+    ],
+    "forms": [
+      "boundaries"
+    ],
+    "synonyms": [
+      "border",
+      "limit",
+      "scope"
+    ],
+    "domain": "구조·구성·부분",
+    "freq": 5,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d3",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 37,
+        "en": "You need a review that catches local bugs and also bugs where a value is misused after it crosses a file boundary.",
+        "surface": "boundary",
+        "pos": "명사",
+        "sense": "경계, 경계선",
+        "ko": "파일 내부의 버그와, 값이 파일 경계를 넘은 뒤 잘못 쓰이는 버그를 모두 잡는 리뷰가 필요합니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 16,
+        "en": "State the objective, the boundaries (2025 supply chains only; another subagent covers the 2021 crisis) and the required output (findings as records with source URL and document name), and leave the search steps to the subagent",
+        "surface": "boundaries",
+        "pos": "명사",
+        "sense": "(책임·범위의) 한계, 범위",
+        "ko": "목표, 경계(2025년 공급망만, 2021년 위기는 다른 서브에이전트 담당), 요구 출력(출처 URL과 문서명을 담은 레코드 형태의 결과)을 명시하고, 검색 단계는 서브에이전트에 맡긴다"
+      },
+      {
+        "src": "mock04",
+        "q": 33,
+        "en": "Expand and differentiate both tool descriptions with input formats, example queries, source coverage, and clear boundaries.",
+        "surface": "boundaries",
+        "pos": "명사",
+        "sense": "(책임·범위의) 한계, 범위",
+        "ko": "두 도구 설명을 입력 형식, 예시 쿼리, 다루는 출처 범위, 명확한 사용 경계를 담아 확장하고 서로 구별되게 한다"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 21,
+        "en": "A platform team is restructuring a monolith into three microservices, touching shared data models, service boundaries, and deployment topology, with several viable ways to split the code.",
+        "surface": "boundaries",
+        "pos": "명사",
+        "sense": "경계, 경계선",
+        "ko": "플랫폼 팀이 모놀리스를 마이크로서비스 세 개로 재구성하려 하는데, 공유 데이터 모델, 서비스 경계, 배포 토폴로지가 모두 바뀌고 코드를 나누는 방법도 여러 가지가 가능합니다."
+      }
+    ],
+    "note": "두 영역을 가르는 **선**, 또는 **어디까지가 내 몫인지의 한계**입니다. 설계 문제에서는 서비스·모듈·도구·에이전트가 **맡는 범위를 나누는 선**을 뜻합니다.\r\n\r\n## 문제 속 쓰임\r\n> Expand each tool's description to include input formats, example queries, edge cases, and **boundaries** explaining when to use it versus similar tools.\r\n> 각 도구 설명을 확장해 입력 형식·예시 쿼리·엣지 케이스와 함께, 비슷한 도구 대신 언제 써야 하는지 설명하는 **사용 경계**까지 담는다.\r\n\r\n## 함께 쓰는 표현\r\n- **service boundaries** : 서비스 경계 (마이크로서비스를 어디서 나눌지)\r\n- **define / set boundaries** : 경계를 정하다\r\n- **clear boundaries** : 분명한 경계\r\n\r\n## 시험 포인트\r\n도구·에이전트끼리 역할이 겹쳐 잘못 고르거나 같은 일을 중복할 때는, **경계를 분명히 정해 주는** 선택지(도구 설명에 사용 경계 명시, 위임 전에 조사 범위 나누기)가 근본 해법으로 나옵니다."
+  },
+  {
+    "id": "brace",
+    "word": "brace",
+    "tier": "extra",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "breɪs",
+    "meaning": "중괄호 { } (curly brace)",
+    "short": "중괄호",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "중괄호"
+      },
+      {
+        "pos": "동사",
+        "ko": "(충격·어려움에) 대비하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "버팀대, 교정기"
+      }
+    ],
+    "forms": [
+      "braces"
+    ],
+    "synonyms": [
+      "curly bracket"
+    ],
+    "domain": "데이터·정보·문서",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "brainstorm",
+    "word": "brainstorm",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "ˈbreɪnstɔːrm",
+    "meaning": "(아이디어를) 떠오르는 대로 끌어내다, 브레인스토밍하다",
+    "short": "아이디어를 떠올리다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(아이디어를) 떠오르는 대로 끌어내다"
+      },
+      {
+        "pos": "명사",
+        "ko": "브레인스토밍, 아이디어 짜내기"
+      }
+    ],
+    "forms": [
+      "brainstormed",
+      "brainstorming",
+      "brainstorms"
+    ],
+    "synonyms": [
+      "ideate"
+    ],
+    "domain": "계획·목표·전략",
+    "freq": 3,
+    "sources": [
+      "mock04",
+      "lesson-d3"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d3",
+        "q": 11,
+        "en": "A team's `explore-alternatives` skill asks Claude to brainstorm several competing architecture approaches before settling on a recommendation.",
+        "surface": "brainstorm",
+        "pos": "동사",
+        "sense": "(아이디어를) 떠오르는 대로 끌어내다",
+        "ko": "팀의 `explore-alternatives` 스킬은 권장안을 정하기 전에 경쟁하는 아키텍처 접근을 여러 개 브레인스토밍하게 합니다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 11,
+        "en": "Set `disable-model-invocation: true` on the skill, so a teammate starts the brainstorm by typing the command and Claude cannot trigger it.",
+        "surface": "brainstorm",
+        "pos": "명사",
+        "sense": "브레인스토밍, 아이디어 짜내기",
+        "ko": "스킬에 `disable-model-invocation: true` 를 설정해, 팀원이 명령을 입력해야만 브레인스토밍이 시작되고 Claude는 스스로 호출하지 못하게 한다"
+      },
+      {
+        "src": "mock04",
+        "q": 56,
+        "en": "Brainstorm and add every conceivable document type to the enum so that no future document falls outside it.",
+        "surface": "Brainstorm",
+        "pos": "동사",
+        "sense": "(아이디어를) 떠오르는 대로 끌어내다",
+        "ko": "생각할 수 있는 모든 문서 유형을 브레인스토밍해 enum에 추가해서, 앞으로 어떤 문서도 범위 밖으로 벗어나지 않게 한다"
+      }
+    ],
+    "note": "정해진 틀 없이 **떠오르는 대로 아이디어를 최대한 많이 끌어내는** 것입니다.\r\n\r\n## 문제 속 쓰임\r\n> **Brainstorm** and add every conceivable document type to the enum so that no future document falls outside it.\r\n> 생각할 수 있는 모든 문서 유형을 **브레인스토밍해** enum에 추가해서, 앞으로 어떤 문서도 범위 밖으로 벗어나지 않게 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **brainstorm ideas / options** : 아이디어·선택지를 떠올려 내다\r\n- **brainstorming session** : 브레인스토밍 회의\r\n\r\n## 시험 포인트\r\nenum 에 **가능한 값을 전부 떠올려 넣는** 보기는 오답입니다. 목록 밖의 값이 생길 수 있으면 `\"other\"` + 상세 문자열 필드를 두는 것이 정답 패턴입니다."
+  },
+  {
+    "id": "branch",
+    "word": "branch",
+    "tier": "core",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "bræntʃ",
+    "meaning": "① (git) 브랜치 ② 갈라지다, 분기하다",
+    "short": "브랜치, 분기하다",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(git·작업의) 브랜치, 갈래"
+      },
+      {
+        "pos": "동사",
+        "ko": "(조건에 따라) 분기하다, 갈라지다"
+      },
+      {
+        "pos": "명사",
+        "ko": "지점, 지사"
+      },
+      {
+        "pos": "명사",
+        "ko": "나뭇가지"
+      }
+    ],
+    "forms": [
+      "branched",
+      "branching",
+      "branches"
+    ],
+    "synonyms": [
+      "fork",
+      "diverge"
+    ],
+    "domain": "구조·구성·부분",
+    "freq": 16,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "lesson-d3",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "sample01",
+        "q": 18,
+        "en": "A team commits a `CLAUDE.md` file with: 'Never commit directly to main branch'.",
+        "surface": "branch",
+        "pos": "명사",
+        "sense": "(git·작업의) 브랜치, 갈래",
+        "ko": "팀이 'main 브랜치에 직접 커밋하지 마라'는 내용의 `CLAUDE.md` 를 커밋했습니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 16,
+        "en": "{\"status\": \"UNAVAILABLE\"}, a fixed code the coordinator's logic can branch on reliably",
+        "surface": "branch",
+        "pos": "동사",
+        "sense": "(조건에 따라) 분기하다, 갈라지다",
+        "ko": "`{\"status\": \"UNAVAILABLE\"}`. 코디네이터 로직이 안정적으로 분기할 수 있는 고정 코드"
+      },
+      {
+        "src": "mock04",
+        "q": 26,
+        "en": "Fork the session at the end of the research phase into two branches, one per report variant, sharing the evidence",
+        "surface": "branches",
+        "pos": "명사",
+        "sense": "(git·작업의) 브랜치, 갈래",
+        "ko": "조사 단계가 끝난 시점에서 세션을 보고서 종류별로 하나씩 두 갈래로 포크해, 두 갈래가 증거를 공유하게 한다"
+      },
+      {
+        "src": "lesson-d1",
+        "q": 41,
+        "en": "After an expensive codebase analysis that ended with a JWT proposal, an engineer wants to try OAuth2 on a separate branch.",
+        "surface": "branch",
+        "pos": "명사",
+        "sense": "(git·작업의) 브랜치, 갈래",
+        "ko": "JWT 방안으로 끝난 비싼 코드베이스 분석 뒤, 엔지니어가 OAuth2를 별도 갈래에서 시도해 보려 합니다."
+      }
+    ],
+    "note": "1. **(git) 브랜치** — 본줄기(main)에서 갈라져 따로 작업하는 갈래\r\n2. **갈라지다, 분기하다** — 하나의 흐름이 여러 갈래로 나뉜다\r\n\r\n## 문제 속 쓰임\r\n> A team commits a `CLAUDE.md` file with: 'Never commit directly to main **branch**'.\r\n> 팀이 \"main **브랜치**에 직접 커밋하지 마라\"는 내용의 `CLAUDE.md` 를 커밋했습니다.\r\n\r\n## 함께 쓰는 표현\r\n- **main / feature branch** : 기본 / 기능 브랜치\r\n- **branch off** : (본줄기에서) 갈라져 나가다\r\n- **branching** (명) 분기 — 조건에 따라 흐름이 나뉘는 것\r\n\r\n## 시험 포인트\r\n`CLAUDE.md` 의 \"main 브랜치에 커밋 금지\"는 **권고(맥락)일 뿐 강제가 아니라서**, 사용자가 요청하면 Claude Code 는 그대로 커밋합니다. 반드시 막아야 한다면 권한 설정·훅 같은 결정적 수단이 필요합니다."
+  },
+  {
+    "id": "branch-off",
+    "word": "branch off",
+    "tier": "core",
+    "pos": [
+      "동사구"
+    ],
+    "ipa": "ˌbræntʃ ˈɔːf",
+    "meaning": "(본줄기에서) 갈라져 나가다, 분기하다",
+    "short": "갈라져 나가다, 분기하다",
+    "senses": [
+      {
+        "pos": "동사구",
+        "ko": "(본줄기에서) 갈라져 나가다, 분기하다"
+      }
+    ],
+    "forms": [
+      "branched off",
+      "branching off",
+      "branches off"
+    ],
+    "synonyms": [
+      "fork",
+      "diverge",
+      "split off"
+    ],
+    "domain": "구조·구성·부분",
+    "freq": 2,
+    "sources": [
+      "mock04",
+      "lesson-d1"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 40,
+        "en": "Pass fork_session=True on each follow-up request to branch off the user's earlier conversation state",
+        "surface": "branch off",
+        "pos": "동사구",
+        "sense": "(본줄기에서) 갈라져 나가다, 분기하다",
+        "ko": "후속 요청마다 `fork_session=True` 를 넘겨 사용자의 이전 대화 상태에서 갈래를 만든다"
+      },
+      {
+        "src": "mock04",
+        "q": 20,
+        "en": "Fork the session to branch off a divergent line of work and continue the refactor in the forked copy of the history.",
+        "surface": "branch off",
+        "pos": "동사구",
+        "sense": "(본줄기에서) 갈라져 나가다, 분기하다",
+        "ko": "세션을 포크해 갈라지는 작업 갈래로 분기하고, 포크된 기록 사본에서 리팩터링을 이어 간다"
+      }
+    ],
+    "note": "본줄기에서 **갈라져 나와 다른 갈래로 진행하는** 것입니다. 세션에서는 포크(fork)로 지금까지의 기록을 복사한 뒤 다른 방향을 따로 시험할 때 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Fork the session to **branch off** a divergent line of work and continue the refactor in the forked copy of the history.\r\n> 세션을 포크해 갈라지는 작업 갈래로 **분기하고**, 포크된 기록 사본에서 리팩터링을 이어 간다.\r\n\r\n## 함께 쓰는 표현\r\n- **branch off from** ~ : ~에서 갈라져 나오다\r\n- **fork a session** : 세션을 갈래로 복제하다\r\n\r\n## 시험 포인트\r\n포크는 **기록 전체를 복사**하므로 부풀어 오른 컨텍스트를 줄이지 못합니다. 같은 작업을 계속하는데 기록만 길어졌다면 `/compact`, 같은 기반에서 **다른 방향**을 따로 시험할 때 포크가 정답입니다."
+  },
+  {
+    "id": "brand-new",
+    "word": "brand-new",
+    "tier": "core",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˌbrænd ˈnuː",
+    "meaning": "완전히 새로운",
+    "short": "완전히 새로운",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "완전히 새로운"
+      }
+    ],
+    "forms": [
+      "brand new"
+    ],
+    "synonyms": [
+      "new",
+      "fresh"
+    ],
+    "domain": "상태·성질",
+    "freq": 2,
+    "sources": [
+      "mock04",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 29,
+        "en": "Collect a brand-new labeled dataset just for that type before looking at anything",
+        "surface": "brand-new",
+        "pos": "형용사",
+        "sense": "완전히 새로운",
+        "ko": "다른 것을 보기 전에, 그 유형만을 위한 새 라벨 데이터셋을 수집한다"
+      },
+      {
+        "src": "mock04",
+        "q": 20,
+        "en": "Start a brand-new session with no prior context and re-describe the entire task, accepting the loss of current file state.",
+        "surface": "brand-new",
+        "pos": "형용사",
+        "sense": "완전히 새로운",
+        "ko": "이전 컨텍스트가 전혀 없는 완전히 새로운 세션을 시작해 작업 전체를 다시 설명하고, 현재 파일 상태에 대한 맥락을 잃는 것을 감수한다"
+      }
+    ],
+    "note": "쓴 적 없는 **완전히 새것**이라는 강조입니다. *new* 보다 \"아무것도 이어받지 않은\" 느낌이 강합니다.\r\n\r\n## 문제 속 쓰임\r\n> Start a **brand-new** session with no prior context and re-describe the entire task, accepting the loss of current file state.\r\n> 이전 컨텍스트가 전혀 없는 **완전히 새로운** 세션을 시작해 작업 전체를 다시 설명하고, 현재 파일 상태에 대한 맥락을 잃는 것을 감수한다.\r\n\r\n## 비슷한 말\r\n- **fresh** — 새로 시작하는 (*fresh session*)\r\n\r\n## 시험 포인트\r\n작업이 그대로 이어지는데 **완전히 새 세션**을 여는 보기는 맥락만 잃는 오답입니다(그때는 `/compact`). 새 세션은 이전 도구 결과가 **낡았을 때** 정답이 됩니다."
+  },
+  {
+    "id": "breadth",
+    "word": "breadth",
+    "tier": "extra",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "bredθ",
+    "meaning": "(다루는) 폭, 범위",
+    "short": "폭, 범위",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(다루는) 폭, 범위"
+      },
+      {
+        "pos": "명사",
+        "ko": "(물리적) 너비, 폭"
+      }
+    ],
+    "synonyms": [
+      "scope",
+      "range",
+      "extent"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 0,
+    "sources": [],
+    "contexts": [
+      {
+        "src": "vocab",
+        "q": 0,
+        "en": "Token usage has nearly doubled without proportionally increasing breadth or depth.",
+        "surface": "breadth",
+        "pos": "명사",
+        "sense": "(다루는) 폭, 범위",
+        "ko": "토큰 사용량은 거의 두 배가 됐지만, 조사의 폭이나 깊이는 그만큼 늘지 않았다."
+      }
+    ],
+    "note": "얼마나 **넓게** 다루는지, 즉 **범위의 폭**입니다. 흔히 *depth(깊이)* 와 짝을 이루어 \"넓게 vs 깊게\"를 대비합니다.\r\n\r\n## 문제 속 쓰임\r\n> Token usage has nearly doubled without proportionally increasing **breadth** or depth.\r\n> 토큰 사용량은 거의 두 배가 됐지만, 조사의 **폭**이나 깊이는 그만큼 늘지 않았다.\r\n\r\n## 함께 쓰는 표현\r\n- **breadth and depth** : 폭과 깊이\r\n- **breadth of coverage** : 다루는 범위의 폭\r\n- **breadth-first search** : 너비 우선 탐색\r\n\r\n## 비교\r\n- **breadth** /bredθ/ — 폭, 넓이 (형용사 *broad* 의 명사형)\r\n- **breath** /breθ/ — 숨, 호흡"
+  },
+  {
+    "id": "break",
+    "word": "break",
+    "tier": "core",
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "ipa": "breɪk",
+    "meaning": "① (break into/down) 작은 부분으로 나누다 ② 깨다, 망가뜨리다 ③ (규칙·약속을) 어기다 ④ 휴식, 중단",
+    "short": "(작게) 나누다, 깨다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(~ into/down) 작은 부분으로 나누다"
+      },
+      {
+        "pos": "동사",
+        "ko": "깨다, 망가뜨리다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(규칙·약속을) 어기다"
+      },
+      {
+        "pos": "명사",
+        "ko": "휴식, 중단"
+      }
+    ],
+    "forms": [
+      "breaks",
+      "broke",
+      "broken",
+      "breaking"
+    ],
+    "synonyms": [
+      "split",
+      "divide",
+      "decompose"
+    ],
+    "domain": "구조·구성·부분",
+    "freq": 1,
+    "sources": [
+      "lesson-d1"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 9,
+        "en": "The coordinator broke the topic into a few detailed technical areas, so the remaining parts of the landscape had no subagent assigned",
+        "surface": "broke",
+        "pos": "동사",
+        "sense": "(~ into/down) 작은 부분으로 나누다",
+        "ko": "코디네이터가 주제를 몇 개의 세부 기술 영역으로만 나눠, 경쟁 구도의 나머지 부분에는 배정된 서브에이전트가 없었다"
+      }
+    ]
+  },
+  {
+    "id": "breakpoint",
+    "word": "breakpoint",
+    "tier": "extra",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbreɪkpɔɪnt",
+    "meaning": "(캐시) 중단점 — 프롬프트에서 '여기까지 캐시하라'고 표시하는 지점 (cache_control) / (디버거) 중단점",
+    "short": "(캐시) 중단점",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(캐시) 중단점, 캐시 구분 지점"
+      },
+      {
+        "pos": "명사",
+        "ko": "(디버거) 중단점"
+      }
+    ],
+    "forms": [
+      "breakpoints"
+    ],
+    "domain": "시스템·도구·기술",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "brevity",
+    "word": "brevity",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbrevəti",
+    "meaning": "간결함",
+    "short": "간결함",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "간결함"
+      },
+      {
+        "pos": "명사",
+        "ko": "(시간의) 짧음"
+      }
+    ],
+    "synonyms": [
+      "conciseness",
+      "succinctness"
+    ],
+    "domain": "상태·성질",
+    "freq": 1,
+    "sources": [
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 2,
+        "en": "Each summarization pass traded precision for brevity, so the exact amount and deadline were condensed into vague wording",
+        "surface": "brevity",
+        "pos": "명사",
+        "sense": "간결함",
+        "ko": "요약 단계마다 간결함을 위해 정밀도를 희생해, 정확한 금액과 기한이 모호한 표현으로 압축됐다"
+      }
+    ]
+  },
+  {
+    "id": "brief",
+    "word": "brief",
+    "tier": "core",
+    "pos": [
+      "명사",
+      "형용사"
+    ],
+    "ipa": "briːf",
+    "meaning": "① (작업) 의뢰, 과제 설명 ② 요약 보고서 ③ 짧은, 간단한",
+    "short": "간단한, 요약 보고서",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(작업) 의뢰, 과제 설명"
+      },
+      {
+        "pos": "명사",
+        "ko": "요약 보고서"
+      },
+      {
+        "pos": "형용사",
+        "ko": "짧은, 간단한"
+      },
+      {
+        "pos": "부사",
+        "ko": "(-ly형) 잠깐, 간단히"
+      }
+    ],
+    "forms": [
+      "briefly",
+      "briefing",
+      "briefed",
+      "briefs"
+    ],
+    "synonyms": [
+      "short",
+      "concise",
+      "summary"
+    ],
+    "domain": "데이터·정보·문서",
+    "freq": 6,
+    "sources": [
+      "mock04",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 25,
+        "en": "For open-ended briefs like 'assess the competitive landscape for X', the coordinator runs a fixed three-step chain (search then summarize then format).",
+        "surface": "briefs",
+        "pos": "명사",
+        "sense": "(작업) 의뢰, 과제 설명",
+        "ko": "'assess the competitive landscape for X'(X의 경쟁 구도를 평가하라) 같은 개방형 요청에 대해 코디네이터는 고정된 3단계 체인(검색 → 요약 → 서식 지정)을 실행합니다."
+      },
+      {
+        "src": "mock04",
+        "q": 26,
+        "en": "After the shared search and document-analysis phase completes, stakeholders want two report variants from the same evidence — a one-page executive brief and a technical deep-dive — without re-running the costly searches.",
+        "surface": "brief",
+        "pos": "명사",
+        "sense": "요약 보고서",
+        "ko": "공유 검색·문서 분석 단계가 끝난 뒤, 이해관계자들은 비용이 큰 검색을 다시 실행하지 않고 같은 증거로 두 가지 보고서, 즉 한 페이지짜리 임원 요약본과 기술 심층 분석본을 원합니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 5,
+        "en": "Send each lookup response to a second model call that writes a brief summary, and keep only that summary in history",
+        "surface": "brief",
+        "pos": "형용사",
+        "sense": "짧은, 간단한",
+        "ko": "각 조회 응답을 두 번째 모델 호출로 보내 짧은 요약을 쓰게 하고, 이력에는 그 요약만 남긴다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 15,
+        "en": "The system prompt also says: \"Before calling the tool, briefly explain which clauses look ambiguous.\"",
+        "surface": "briefly",
+        "pos": "부사",
+        "sense": "(-ly형) 잠깐, 간단히",
+        "ko": "시스템 프롬프트에는 \"도구를 호출하기 전에 어떤 조항이 모호해 보이는지 간단히 설명하라\"는 지시도 있습니다."
+      }
+    ],
+    "note": "1. **(작업) 의뢰, 과제 설명** — 무엇을 조사·작성할지 적은 요청 (*research brief*)\r\n2. **요약 보고서** — 핵심만 짧게 정리한 문서 (*executive brief*)\r\n3. **(형) 짧은, 간단한** — *a brief description* 짧은 설명\r\n\r\n## 문제 속 쓰임\r\n> For open-ended **briefs** like 'assess the competitive landscape for X', the coordinator runs a fixed three-step chain...\r\n> 'X의 경쟁 구도를 평가하라' 같은 개방형 **요청**에 대해 코디네이터는 고정된 3단계 체인을 실행합니다.\r\n> ...two report variants from the same evidence — a one-page executive **brief** and a technical deep-dive...\r\n> ...같은 증거로 두 가지 보고서, 즉 한 페이지짜리 임원 **요약본**과 기술 심층 분석본을...\r\n\r\n## 함께 쓰는 표현\r\n- **executive brief** : 임원용 요약 보고서\r\n- **briefly** (부) 간단히, 잠깐 · **briefing** (명) 상황 설명, 브리핑"
+  },
+  {
+    "id": "broad",
+    "word": "broad",
+    "tier": "core",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "brɔːd",
+    "meaning": "넓은, 폭넓은",
+    "short": "넓은, 폭넓은",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "넓은, 폭넓은"
+      },
+      {
+        "pos": "형용사",
+        "ko": "(가리지 않고) 포괄적인, 광범위한"
+      },
+      {
+        "pos": "형용사",
+        "ko": "대략적인, 개괄적인"
+      }
+    ],
+    "forms": [
+      "broader",
+      "broadest",
+      "broadly",
+      "broaden"
+    ],
+    "synonyms": [
+      "wide",
+      "general",
+      "extensive"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 8,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 13,
+        "en": "The subagent cannot obtain broader credentials itself.",
+        "surface": "broader",
+        "pos": "형용사",
+        "sense": "넓은, 폭넓은",
+        "ko": "서브에이전트는 스스로 더 넓은 자격 증명을 얻을 수 없습니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 11,
+        "en": "Developers have started ignoring a review bot because it flags every broad `catch` block in a TypeScript service, including deliberate ones.",
+        "surface": "broad",
+        "pos": "형용사",
+        "sense": "(가리지 않고) 포괄적인, 광범위한",
+        "ko": "TypeScript 서비스에서 리뷰 봇이 의도된 것까지 포함해 모든 광범위한 `catch` 블록을 지적하자 개발자들이 봇을 무시하기 시작했습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 25,
+        "en": "Raise the temperature of the synthesis subagent so that it produces broader, more varied topical coverage",
+        "surface": "broader",
+        "pos": "형용사",
+        "sense": "넓은, 폭넓은",
+        "ko": "합성 서브에이전트의 `temperature` 를 높여, 더 넓고 다양한 주제를 다루는 결과를 내게 한다"
+      },
+      {
+        "src": "lesson-d1",
+        "q": 5,
+        "en": "Give the subagent broader tool permissions so it can read the coordinator's conversation history",
+        "surface": "broader",
+        "pos": "형용사",
+        "sense": "넓은, 폭넓은",
+        "ko": "서브에이전트에 더 넓은 도구 권한을 줘 코디네이터의 대화 이력을 읽을 수 있게 한다"
+      }
+    ],
+    "note": "범위가 **넓은** 것입니다. 문제에서는 비교급 *broader* 로 \"더 넓은 주제를 다루는\"이라는 뜻입니다.\r\n\r\n## 문제 속 쓰임\r\n> Raise the temperature of the synthesis subagent so that it produces **broader**, more varied topical coverage\r\n> 합성 서브에이전트의 `temperature` 를 높여, **더 넓고** 다양한 주제를 다루는 결과를 내게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **broad coverage / scope** : 넓은 범위\r\n- **broadly** (부) 대체로, 넓게 · **broaden** (동) 넓히다\r\n\r\n## 반대말\r\n- **narrow** — 좁은\r\n\r\n## 시험 포인트\r\n조사가 새 하위 주제를 놓치는 문제에 `temperature` 를 올리는 보기는 오답입니다. 중간 발견에 따라 하위 작업을 늘리는 **동적 분해**가 정답입니다."
+  },
+  {
+    "id": "bucket",
+    "word": "bucket",
+    "tier": "extra",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbʌkɪt",
+    "meaning": "버킷 — token bucket: 허용량이 일정한 속도로 다시 차오르는 한도 방식 / 양동이, 묶음",
+    "short": "버킷, 묶음",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(토큰 버킷) 다시 차오르는 허용량"
+      },
+      {
+        "pos": "명사",
+        "ko": "(분류한) 묶음, 그룹"
+      },
+      {
+        "pos": "명사",
+        "ko": "양동이"
+      }
+    ],
+    "forms": [
+      "buckets"
+    ],
+    "synonyms": [
+      "group",
+      "bin"
+    ],
+    "domain": "제어·제한·관리",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "budget",
+    "word": "budget",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbʌdʒɪt",
+    "meaning": "예산 — (토큰·비용 등) 쓸 수 있게 정해 둔 한도",
+    "short": "(쓸 수 있는) 한도, 예산",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(토큰·시간의) 사용 한도, 예산"
+      },
+      {
+        "pos": "명사",
+        "ko": "(돈의) 예산"
+      },
+      {
+        "pos": "동사",
+        "ko": "예산을 세우다, 배분하다"
+      }
+    ],
+    "forms": [
+      "budgeted",
+      "budgeting",
+      "budgets"
+    ],
+    "synonyms": [
+      "allowance",
+      "limit",
+      "allocation"
+    ],
+    "domain": "제어·제한·관리",
+    "freq": 5,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 9,
+        "en": "Several subagents researched connector types in parallel, so the coordinator ran out of budget before the other areas were covered",
+        "surface": "budget",
+        "pos": "명사",
+        "sense": "(토큰·시간의) 사용 한도, 예산",
+        "ko": "여러 서브에이전트가 커넥터 유형을 병렬로 조사하는 바람에, 다른 영역을 다루기 전에 코디네이터의 예산이 바닥났다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 35,
+        "en": "Raise the extended thinking budget for the review step, so the model reasons longer over the code it just wrote",
+        "surface": "budget",
+        "pos": "명사",
+        "sense": "(토큰·시간의) 사용 한도, 예산",
+        "ko": "리뷰 단계의 extended thinking 예산을 올려, 모델이 방금 쓴 코드에 대해 더 오래 추론하게 한다."
+      },
+      {
+        "src": "mock04",
+        "q": 9,
+        "en": "Enable extended thinking with a larger thinking budget so the model reasons more carefully before quoting any refund figure.",
+        "surface": "budget",
+        "pos": "명사",
+        "sense": "(토큰·시간의) 사용 한도, 예산",
+        "ko": "더 큰 thinking 예산으로 확장 사고(extended thinking)를 켜서, 모델이 환불 금액을 인용하기 전에 더 신중하게 추론하게 한다"
+      }
+    ],
+    "note": "쓸 수 있도록 **미리 정해 둔 한도(예산)** 입니다. 돈뿐 아니라 토큰·시간·호출 횟수에도 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Enable extended thinking with a larger thinking **budget** so the model reasons more carefully before quoting any refund figure.\r\n> 더 큰 thinking **예산**으로 확장 사고(extended thinking)를 켜서, 모델이 환불 금액을 인용하기 전에 더 신중하게 추론하게 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **thinking budget** : 확장 사고에 쓸 수 있는 토큰 한도 (`budget_tokens`)\r\n- **token budget** : 토큰 예산\r\n- **within / over budget** : 예산 안 / 예산 초과\r\n\r\n## 시험 포인트\r\n요약 과정에서 금액·날짜가 **이미 틀어진** 문제는 thinking 예산을 늘려도 풀리지 않습니다. 핵심 사실을 요약 밖 블록에 두고 그대로 다시 주입하는 것이 정답입니다."
+  },
+  {
+    "id": "bug",
+    "word": "bug",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "bʌɡ",
+    "meaning": "① (프로그램의) 버그, 결함 ② 벌레, 곤충 ③ 귀찮게 하다",
+    "short": "버그, 결함",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(프로그램의) 버그, 결함"
+      },
+      {
+        "pos": "명사",
+        "ko": "벌레, 곤충"
+      },
+      {
+        "pos": "동사",
+        "ko": "귀찮게 하다"
+      }
+    ],
+    "forms": [
+      "bugs",
+      "buggy"
+    ],
+    "synonyms": [
+      "defect",
+      "error",
+      "flaw"
+    ],
+    "domain": "오류·실패·위험",
+    "freq": 21,
+    "sources": [
+      "sample01",
+      "sample01-kor",
+      "mock04",
+      "mock04-kor",
+      "lesson-d1",
+      "lesson-d3",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 34,
+        "en": "A team wants a review step that catches the subtle bugs its code-generation agent keeps missing.",
+        "surface": "bugs",
+        "pos": "명사",
+        "sense": "(프로그램의) 버그, 결함",
+        "ko": "한 팀이 코드 생성 에이전트가 계속 놓치는 미묘한 버그를 잡을 리뷰 단계를 원합니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 24,
+        "en": "In an incident, the `mark_verified` tool executed and the human reviewer explicitly rejected the ID, but due to a software bug the `is_verified` flag was incorrectly set to `true`.",
+        "surface": "bug",
+        "pos": "명사",
+        "sense": "(프로그램의) 버그, 결함",
+        "ko": "한 사고에서 `mark_verified` 도구가 실행됐고 검토자는 신분증을 명시적으로 거부했지만, 소프트웨어 버그로 `is_verified` 가 잘못 `true` 로 설정됐습니다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 26,
+        "en": "Paste only the applyDiscount and addTax failures and leave out test_orderTotal so it doesn't distract Claude from the real bugs",
+        "surface": "bugs",
+        "pos": "명사",
+        "sense": "(프로그램의) 버그, 결함",
+        "ko": "`applyDiscount` 와 `addTax` 실패만 붙여 넣고, `test_orderTotal` 은 진짜 버그에서 주의를 돌리지 않도록 뺀다"
+      },
+      {
+        "src": "mock04",
+        "q": 46,
+        "en": "The gate is flaky because Claude phrases severe findings differently each run — \"severe issue,\" \"major bug,\" \"critical defect.\"",
+        "surface": "bug",
+        "pos": "명사",
+        "sense": "(프로그램의) 버그, 결함",
+        "ko": "Claude가 심각한 발견 사항을 실행할 때마다 \"severe issue\", \"major bug\", \"critical defect\"처럼 다르게 표현하기 때문에 게이트 결과가 들쭉날쭉합니다."
+      }
+    ]
+  },
+  {
+    "id": "build",
+    "word": "build",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "ipa": "bɪld",
+    "meaning": "① 만들다, 구축하다 ② (build on) ~을 바탕으로 만들다 ③ (이해·신뢰를) 쌓다 ④ (소프트웨어) 빌드",
+    "short": "만들다, 구축하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "만들다, 구축하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(~ on) ~을 바탕으로 만들다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(이해·신뢰를) 쌓다, 키우다"
+      },
+      {
+        "pos": "명사",
+        "ko": "(소프트웨어) 빌드, 빌드 결과물"
+      }
+    ],
+    "forms": [
+      "builds",
+      "built",
+      "building",
+      "builder"
+    ],
+    "synonyms": [
+      "create",
+      "construct",
+      "develop"
+    ],
+    "domain": "생성·추가",
+    "freq": 29,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "selfcheck-d1-kor",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 1,
+        "en": "An architect is building a client-side agent loop against the Messages API for a data-cleanup task.",
+        "surface": "building",
+        "pos": "동사",
+        "sense": "만들다, 구축하다",
+        "ko": "아키텍트가 데이터 정리 작업을 위해 Messages API로 클라이언트 측 에이전트 루프를 만들고 있습니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 1,
+        "en": "A support bot built on the Messages API sends the system prompt, its tool definitions and the customer's newest message on each request.",
+        "surface": "built",
+        "pos": "동사",
+        "sense": "(~ on) ~을 바탕으로 만들다",
+        "ko": "Messages API로 만든 지원 봇이 요청마다 system 프롬프트, 도구 정의, 고객의 최신 메시지만 보냅니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 31,
+        "en": "To build this understanding efficiently while keeping context usage low, what is the best incremental strategy?",
+        "surface": "build",
+        "pos": "동사",
+        "sense": "(이해·신뢰를) 쌓다, 키우다",
+        "ko": "컨텍스트 사용을 낮게 유지하면서 효율적으로 이해를 쌓는 가장 좋은 점진적 전략은 무엇입니까?"
+      },
+      {
+        "src": "sample01",
+        "q": 1,
+        "en": "An engineer builds an agentic customer support bot with the loop logic shown below.",
+        "surface": "builds",
+        "pos": "동사",
+        "sense": "만들다, 구축하다",
+        "ko": "엔지니어가 에이전트형 고객지원 봇을 만들었고, 루프 로직은 아래와 같습니다."
+      }
+    ]
+  },
+  {
+    "id": "built-in",
+    "word": "built-in",
+    "tier": "core",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˌbɪlt ˈɪn",
+    "meaning": "내장된, 기본 제공되는",
+    "short": "내장된, 기본 제공되는",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "내장된, 기본 제공되는"
+      },
+      {
+        "pos": "형용사",
+        "ko": "붙박이의, 붙어 있는"
+      }
+    ],
+    "synonyms": [
+      "native",
+      "integrated",
+      "inherent"
+    ],
+    "domain": "시스템·도구·기술",
+    "freq": 5,
+    "sources": [
+      "mock04",
+      "lesson-d1"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 30,
+        "en": "An architect is consolidating tool-output normalization into a single PostToolUse hook that must work for both MCP tools and built-in tools.",
+        "surface": "built-in",
+        "pos": "형용사",
+        "sense": "내장된, 기본 제공되는",
+        "ko": "아키텍트가 도구 출력 정규화를 MCP 도구와 내장 도구 모두에 동작해야 하는 하나의 PostToolUse 훅으로 통합하고 있습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 42,
+        "en": "In practice the agent almost always reaches for the built-in Grep tool instead, so it misses semantically related call sites that don't share literal text.",
+        "surface": "built-in",
+        "pos": "형용사",
+        "sense": "내장된, 기본 제공되는",
+        "ko": "그런데 실제로 에이전트는 거의 항상 내장 Grep 도구를 쓰기 때문에, 같은 문자열을 공유하지 않는 의미상 관련된 호출 지점을 놓칩니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 31,
+        "en": "An architect wants a single PreToolUse hook to run for every tool exposed by the \"billing\" server, without matching any tool from \"inventory\" or any built-in tool like Bash or Read.",
+        "surface": "built-in",
+        "pos": "형용사",
+        "sense": "내장된, 기본 제공되는",
+        "ko": "아키텍트는 \"billing\" 서버가 노출하는 모든 도구에 대해 실행되고, \"inventory\"의 도구나 Bash·Read 같은 내장 도구에는 매칭되지 않는 PreToolUse 훅 하나를 원합니다."
+      }
+    ],
+    "note": "따로 설치하지 않아도 **처음부터 들어 있는(기본 제공)** 것입니다. Claude Code 에서는 `Read`, `Grep`, `Bash` 처럼 기본으로 있는 도구를 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> In practice the agent almost always reaches for the **built-in** Grep tool instead, so it misses semantically related call sites that don't share literal text.\r\n> 그런데 실제로 에이전트는 거의 항상 **내장** `Grep` 도구를 쓰기 때문에, 같은 문자열을 공유하지 않는 의미상 관련된 호출 지점을 놓칩니다.\r\n\r\n## 함께 쓰는 표현\r\n- **built-in tools** : 내장 도구\r\n- **built-in support** : 기본 지원\r\n\r\n## 시험 포인트\r\n에이전트가 MCP 도구 대신 **내장 도구**만 쓴다면, 먼저 MCP 도구 설명을 보강합니다(무엇을 하는지, 언제 내장 도구보다 나은지, 예시 쿼리). 도구 제거나 강제 `tool_choice` 는 첫 단계가 아닙니다."
+  },
+  {
+    "id": "bulk",
+    "word": "bulk",
+    "tier": "extra",
+    "pos": [
+      "명사",
+      "형용사"
+    ],
+    "ipa": "bʌlk",
+    "meaning": "대량(의), 대부분 (the bulk of: ~의 대부분)",
+    "short": "대량(의), 대부분",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(the ~ of) 대부분"
+      },
+      {
+        "pos": "형용사",
+        "ko": "대량의, 한꺼번에 하는"
+      },
+      {
+        "pos": "명사",
+        "ko": "(큰) 부피, 덩치"
+      }
+    ],
+    "forms": [
+      "bulky"
+    ],
+    "synonyms": [
+      "majority",
+      "mass"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "bullet",
+    "word": "bullet",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbʊlɪt",
+    "meaning": "① 글머리 기호(•), 글머리표 항목 ② 총알",
+    "short": "글머리 기호 (항목)",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "글머리 기호, 글머리표 항목"
+      },
+      {
+        "pos": "명사",
+        "ko": "총알"
+      }
+    ],
+    "forms": [
+      "bullets"
+    ],
+    "synonyms": [
+      "bullet point",
+      "item"
+    ],
+    "domain": "데이터·정보·문서",
+    "freq": 1,
+    "sources": [
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 6,
+        "en": "Merge the criteria into one bulleted list sorted by severity, with the category name in parentheses at the end of each bullet and the examples nested beneath it.",
+        "surface": "bullet",
+        "pos": "명사",
+        "sense": "글머리 기호, 글머리표 항목",
+        "ko": "기준을 심각도순 글머리표 목록 하나로 합치고, 각 항목 끝 괄호에 범주 이름을 달고 예시는 그 아래에 둔다."
+      }
+    ]
+  },
+  {
+    "id": "bulleted",
+    "word": "bulleted",
+    "tier": "core",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˈbʊlɪtɪd",
+    "meaning": "글머리 기호(•)를 붙인 (bulleted list: 글머리표 목록)",
+    "short": "글머리 기호를 붙인",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "글머리 기호를 붙인"
+      }
+    ],
+    "synonyms": [
+      "itemized"
+    ],
+    "domain": "데이터·정보·문서",
+    "freq": 1,
+    "sources": [
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 6,
+        "en": "Merge the criteria into one bulleted list sorted by severity, with the category name in parentheses at the end of each bullet and the examples nested beneath it.",
+        "surface": "bulleted",
+        "pos": "형용사",
+        "sense": "글머리 기호를 붙인",
+        "ko": "기준을 심각도순 글머리표 목록 하나로 합치고, 각 항목 끝 괄호에 범주 이름을 달고 예시는 그 아래에 둔다."
+      }
+    ]
+  },
+  {
+    "id": "burn",
+    "word": "burn",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "bɜːrn",
+    "meaning": "(자원을) 헛되이 써 버리다, 태우다",
+    "short": "(자원을) 헛되이 쓰다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(자원을) 헛되이 써 버리다, 소모하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "태우다, 타다"
+      },
+      {
+        "pos": "명사",
+        "ko": "화상, 덴 자국"
+      }
+    ],
+    "forms": [
+      "burning",
+      "burned",
+      "burnt",
+      "burns"
+    ],
+    "synonyms": [
+      "waste",
+      "consume",
+      "use up"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 58,
+        "en": "For scanned documents where the tax ID is physically cut off at the page edge and simply absent from the source text, the validation-retry loop retries five times and still fails, burning tokens on every attempt.",
+        "surface": "burning",
+        "pos": "동사",
+        "sense": "(자원을) 헛되이 써 버리다, 소모하다",
+        "ko": "세금 ID가 페이지 가장자리에서 물리적으로 잘려 원문 텍스트에 아예 없는 스캔 문서에 대해, validation-retry 루프가 다섯 번 재시도하고도 여전히 실패하며 매번 토큰을 소모합니다."
+      }
+    ],
+    "note": "원래 \"태우다\"지만, 문제에서는 토큰·비용·시간 같은 자원을 **헛되이 써 버리는** 것입니다.\r\n\r\n## 문제 속 쓰임\r\n> ...the validation-retry loop retries five times and still fails, **burning** tokens on every attempt.\r\n> ...validation-retry 루프가 다섯 번 재시도하고도 여전히 실패하며 매번 토큰을 **소모합니다**.\r\n\r\n## 함께 쓰는 표현\r\n- **burn tokens / budget** : 토큰·예산을 낭비하다\r\n- **burn through** ~ : ~을 빠르게 다 써 버리다\r\n\r\n## 시험 포인트\r\n원문에 정보가 **아예 없으면** 재시도는 토큰만 태웁니다. 재시도는 형식 오류에만 효과가 있으므로, 없음을 감지해 `null` 을 돌려주고 사람 검토로 넘기는 것이 정답입니다."
+  },
+  {
+    "id": "bury",
+    "word": "bury",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "ˈberi",
+    "meaning": "(다른 내용 속에) 묻다, 파묻히게 하다",
+    "short": "(속에) 묻다, 파묻다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(다른 내용 속에) 묻다, 파묻히게 하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(땅에) 묻다, 매장하다"
+      }
+    ],
+    "forms": [
+      "buried",
+      "burying",
+      "buries"
+    ],
+    "synonyms": [
+      "hide",
+      "obscure"
+    ],
+    "domain": "상태·성질",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 36,
+        "en": "Synthesis quality has dropped and it now misses findings buried in the middle of the passed-in content (lost-in-the-middle).",
+        "surface": "buried",
+        "pos": "동사",
+        "sense": "(다른 내용 속에) 묻다, 파묻히게 하다",
+        "ko": "종합 품질이 떨어졌고, 이제 전달된 내용의 중간에 묻힌 발견 사항을 놓칩니다(lost-in-the-middle)."
+      }
+    ],
+    "note": "정보가 다른 많은 내용 사이에 **묻혀 잘 보이지 않게 된** 상태입니다. 수동형 *buried in* ~ 꼴로 자주 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Synthesis quality has dropped and it now misses findings **buried** in the middle of the passed-in content (lost-in-the-middle).\r\n> 종합 품질이 떨어졌고, 이제 전달된 내용의 중간에 **묻힌** 발견 사항을 놓칩니다(lost-in-the-middle).\r\n\r\n## 함께 쓰는 표현\r\n- **buried in** ~ : ~ 속에 묻힌 (*buried in the logs*)\r\n- **lost-in-the-middle** : 긴 입력의 중간 정보를 놓치는 현상\r\n\r\n## 시험 포인트\r\nlost-in-the-middle 은 용량이 아니라 **구성**의 문제입니다. 넘기기 전에 관련 내용만 다듬고 핵심 요약을 맨 앞에 두는 보기가 정답이며, 더 큰 컨텍스트 창은 오답입니다."
+  },
+  {
+    "id": "business",
+    "word": "business",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈbɪznəs",
+    "meaning": "① 업무, 비즈니스 (business rule: 업무 규칙) ② 사업, 회사 ③ (관여할) 일, 용무",
+    "short": "업무, 비즈니스",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "업무, 비즈니스"
+      },
+      {
+        "pos": "명사",
+        "ko": "사업, 회사"
+      },
+      {
+        "pos": "명사",
+        "ko": "(관여할) 일, 용무"
+      }
+    ],
+    "forms": [
+      "businesses"
+    ],
+    "synonyms": [
+      "commerce",
+      "company"
+    ],
+    "domain": "비즈니스·업무",
+    "freq": 5,
+    "sources": [
+      "mock04",
+      "lesson-d2",
+      "selfcheck-d2-kor"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 57,
+        "en": "Extractions pass the JSON schema but sometimes violate a business rule (invoice_date later than due_date).",
+        "surface": "business",
+        "pos": "명사",
+        "sense": "업무, 비즈니스",
+        "ko": "추출 결과가 JSON 스키마는 통과하지만 가끔 비즈니스 규칙(invoice_date가 due_date보다 늦음)을 위반합니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 31,
+        "en": "Use Bash to run a full-text word count across the repository and read the files with the highest counts, on the assumption larger files hold core business logic.",
+        "surface": "business",
+        "pos": "명사",
+        "sense": "업무, 비즈니스",
+        "ko": "Bash로 저장소 전체의 단어 수를 세고, 큰 파일이 핵심 비즈니스 로직을 담는다는 가정 아래 수가 가장 많은 파일을 읽는다"
+      }
+    ]
+  },
+  {
+    "id": "by-hand",
+    "word": "by hand",
+    "tier": "core",
+    "pos": [
+      "부사구"
+    ],
+    "ipa": "baɪ ˈhænd",
+    "meaning": "(자동화 없이) 손으로, 수작업으로",
+    "short": "손으로, 수작업으로",
+    "senses": [
+      {
+        "pos": "부사구",
+        "ko": "(자동화 없이) 손으로, 수작업으로"
+      },
+      {
+        "pos": "부사구",
+        "ko": "(우편 대신) 직접 전달하여"
+      }
+    ],
+    "synonyms": [
+      "manually"
+    ],
+    "domain": "실행·처리",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 49,
+        "en": "Delete the rubric from CLAUDE.md and inline its full text into each review command invocation by hand",
+        "surface": "by hand",
+        "pos": "부사구",
+        "sense": "(자동화 없이) 손으로, 수작업으로",
+        "ko": "CLAUDE.md에서 루브릭을 지우고, 리뷰 명령을 호출할 때마다 그 전문을 직접 인라인한다"
+      }
+    ],
+    "note": "도구나 자동화 없이 **사람이 직접 손으로** 하는 것입니다. 문제에서는 \"매번 수작업으로\"라는 번거로움을 드러냅니다.\r\n\r\n## 문제 속 쓰임\r\n> Delete the rubric from CLAUDE.md and inline its full text into each review command invocation **by hand**\r\n> CLAUDE.md에서 루브릭을 지우고, 리뷰 명령을 호출할 때마다 그 전문을 **직접** 인라인한다\r\n\r\n## 비슷한 말\r\n- **manually** — 수동으로\r\n\r\n## 시험 포인트\r\n특정 작업에만 필요한 긴 내용을 **수작업으로** 붙이는 보기는 오답입니다. 그 내용을 필요할 때만 로드되는 스킬(`.claude/skills/`)로 옮기는 것이 정답입니다."
+  },
+  {
+    "id": "bypass",
+    "word": "bypass",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "ˈbaɪpæs",
+    "meaning": "우회하다, (절차를) 건너뛰다",
+    "short": "우회하다, 건너뛰다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "우회하다, (절차를) 건너뛰다"
+      },
+      {
+        "pos": "명사",
+        "ko": "우회로, 우회 수단"
+      }
+    ],
+    "forms": [
+      "bypassed",
+      "bypassing",
+      "bypasses"
+    ],
+    "synonyms": [
+      "circumvent",
+      "skip",
+      "sidestep"
+    ],
+    "domain": "제어·제한·관리",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 43,
+        "en": "Switch to a Bash sed global substitution that rewrites every occurrence and bypasses the Edit tool entirely.",
+        "surface": "bypasses",
+        "pos": "동사",
+        "sense": "우회하다, (절차를) 건너뛰다",
+        "ko": "`Bash` 의 `sed` 전역 치환으로 바꿔 모든 위치를 다시 쓰고, `Edit` 도구는 완전히 우회한다"
+      }
+    ],
+    "note": "정해진 경로·절차를 **거치지 않고 옆으로 돌아가는** 것입니다. 설계 문제에서는 대개 **통제·검증 지점을 건너뛴다**는 부정적인 뉘앙스로 나옵니다.\r\n\r\n## 문제 속 쓰임\r\n> Each agent directly sends its findings to the report generation agent, **bypassing** the coordinator.\r\n> 각 에이전트가 코디네이터를 **거치지 않고** 보고서 생성 에이전트로 결과를 직접 보낸다.\r\n\r\n## 함께 쓰는 표현\r\n- **bypass the coordinator / a check** : 코디네이터·검사를 건너뛰다\r\n- **bypass a restriction** : 제한을 우회하다\r\n- **bypass** (명) 우회로\r\n\r\n## 시험 포인트\r\n허브 역할을 하는 코디네이터를 **bypass 하는 직접 통신** 선택지는 대개 오답입니다. 코디네이터를 거쳐야 모든 상호작용을 관찰하고, 오류를 일관되게 처리하고, 각 에이전트가 받을 정보를 통제할 수 있기 때문입니다."
+  }
+]

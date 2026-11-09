@@ -1,0 +1,1465 @@
+[
+ {
+  "lemma": "fire",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fires",
+   "fire"
+  ],
+  "freq": 11,
+  "vocab": {
+   "id": "fire",
+   "word": "fire",
+   "pos": "동사",
+   "ipa": "ˈfaɪər",
+   "meaning": "(요청·호출을) 보내다, 실행하다 / (이벤트·훅이) 발동하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#23.2",
+    "en": "Which of them does the gate fire on?"
+   },
+   {
+    "sid": "lesson-d3#30.0",
+    "en": "A platform team wraps `claude` inside a GitHub Actions job that fires on every pull request to summarize the diff."
+   },
+   {
+    "sid": "mock04#41.2",
+    "en": "Traces show that before every real query it fires 6-10 exploratory tool calls (list_tables, describe_table, sample_rows) to rediscover what exists, adding seconds of latency and thousands of tokens per session."
+   },
+   {
+    "sid": "lesson-d5#11.6",
+    "en": "Escalate only when both signals fire together, so negative sentiment and low confidence cover each other's blind spots"
+   },
+   {
+    "sid": "lesson-d1#25.1",
+    "en": "During a review, a colleague notices the matcher would also fire on a tool named `issue_refund_note` that only writes an internal comment and should never be gated."
+   },
+   {
+    "sid": "lesson-d1#25.5",
+    "en": "The hook fires on every single tool call by default unless a timeout value is explicitly configured. Adding a timeout would stop it from matching `issue_refund_note`."
+   },
+   {
+    "sid": "lesson-d1#27.3",
+    "en": "The hook fires, because the regex matches the tool name and the arguments together, so only restricted-category refunds reach the callback."
+   },
+   {
+    "sid": "lesson-d1#27.4",
+    "en": "The hook never fires, so the refund goes unchecked. The pattern is tested only against the tool name, and \"refund_customer\" does not contain \"category=restricted\"."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fire.0",
+    "en": "Traces show that before every real query it fires 6-10 exploratory tool calls (list_tables, describe_table, sample_rows) to rediscover what exists...",
+    "ko": "트레이스를 보면 실제 쿼리를 할 때마다 그 전에 무엇이 있는지 다시 알아내려고 탐색용 도구 호출을 6번에서 10번씩 실행한다."
+   }
+  ]
+ },
+ {
+  "lemma": "firm",
+  "kind": "vocab-core",
+  "surfaces": [
+   "firm"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "firm",
+   "word": "firm",
+   "pos": "명사·형용사",
+   "ipa": "fɜːrm",
+   "meaning": "① 회사 (law firm: 법률 회사) ② 확고한"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#20.0",
+    "en": "A financial services firm uses a tool-based schema to extract transaction records from PDF statements, including a required amount field and a required transaction_type field."
+   }
+  ]
+ },
+ {
+  "lemma": "first",
+  "kind": "new",
+  "surfaces": [
+   "first"
+  ],
+  "freq": 68,
+  "sentences": [
+   {
+    "sid": "lesson-d1#1.1",
+    "en": "The first response has stop_reason set to \"tool_use\" and contains a tool_use block requesting a file-listing tool."
+   },
+   {
+    "sid": "lesson-d2#19.1",
+    "en": "The enrichment tools depend on fields that only extract_metadata produces, and in early tests the model sometimes calls an enrichment tool first with guessed values."
+   },
+   {
+    "sid": "lesson-d3#23.0",
+    "en": "An architect is building a real-time collaborative editor for the first time."
+   },
+   {
+    "sid": "lesson-d4#16.0",
+    "en": "A pipeline first needs Claude to run extract_metadata on an uploaded document before any enrichment or summarization steps proceed."
+   },
+   {
+    "sid": "lesson-d5#20.0",
+    "en": "Your news subagent gets an overloaded error from its search provider on the first call."
+   },
+   {
+    "sid": "mock04#19.1",
+    "en": "To rename a widely-used internal API, Claude must first locate every call site across a large monorepo."
+   },
+   {
+    "sid": "sample01#21.2",
+    "en": "Add `cache_control: {type: ephemeral}` to the document block in the system prompt; the first call writes the cache, subsequent calls read it at ~10% cost"
+   },
+   {
+    "sid": "lesson-d1#19.1",
+    "en": "Audits show that a small share of refunds still go out without the customer's identity being verified first."
+   }
+  ]
+ },
+ {
+  "lemma": "first-contact resolution",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "first-contact-resolution",
+   "word": "first-contact resolution",
+   "pos": "명사구",
+   "ipa": "ˌfɜːrst ˈkɑːntækt ˌrezəˈluːʃn",
+   "meaning": "첫 응대 해결률 — 넘기지 않고 처음 응대에서 끝낸 비율"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:first-contact-resolution.0",
+    "en": "Your agent achieves 55% first-contact resolution, well below the 80% target.",
+    "ko": "에이전트의 첫 응대 해결률이 55%로, 목표인 80%에 한참 못 미친다."
+   }
+  ]
+ },
+ {
+  "lemma": "fit",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fits",
+   "fit"
+  ],
+  "freq": 21,
+  "vocab": {
+   "id": "fit",
+   "word": "fit",
+   "pos": "동사·명사",
+   "ipa": "fɪt",
+   "meaning": "① (공간·한도 안에) 들어가다 ② (~에) 맞다, 적합하다 / 잘 맞는 것"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.3",
+    "en": "Which decomposition fits best?"
+   },
+   {
+    "sid": "lesson-d5#28.2",
+    "en": "Which design fits this lesson best?"
+   },
+   {
+    "sid": "mock04#25.3",
+    "en": "What orchestration change best fits this workload?"
+   },
+   {
+    "sid": "lesson-d3#22.3",
+    "en": "Direct execution in acceptEdits mode, because the final diff is small and fits in a single review"
+   },
+   {
+    "sid": "lesson-d4#15.6",
+    "en": "A tool_use block for whichever registered tool Claude thinks fits best, with the explanation in front of it"
+   },
+   {
+    "sid": "lesson-d2#7.5",
+    "en": "Consolidation fits several actions on one resource that share a contract, like create, review and merge on a pull request. Extraction, summarization and claim verification take different inputs and return different outputs, so each needs its own tool and description."
+   },
+   {
+    "sid": "lesson-d1#34.2",
+    "en": "Which decomposition strategy best fits this workflow?"
+   },
+   {
+    "sid": "lesson-d4#19.3",
+    "en": "Switch tool_choice from the forced tool to {\"type\": \"any\"} so Claude can pick a schema that fits each report better"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fit.0",
+    "en": "Switch to a larger-context model so all of the test output fits comfortably in the window, however many runs accumulate.",
+    "ko": "실행이 아무리 쌓여도 모든 테스트 출력이 창에 넉넉히 들어가도록 컨텍스트가 더 큰 모델로 바꾼다"
+   },
+   {
+    "vid": "vocab:fit.1",
+    "en": "What orchestration change best fits this workload?",
+    "ko": "이 작업에 가장 잘 맞는 오케스트레이션 변경은 무엇일까요?"
+   }
+  ]
+ },
+ {
+  "lemma": "fix",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fix",
+   "fixed",
+   "fixes"
+  ],
+  "freq": 93,
+  "vocab": {
+   "id": "fix",
+   "word": "fix",
+   "pos": "동사·명사",
+   "ipa": "fɪks",
+   "meaning": "① 고치다 / 수정(안), 해결책 ② (fixed) 고정된, 정해진"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.2",
+    "en": "Which handoff format fixes this?"
+   },
+   {
+    "sid": "lesson-d2#14.2",
+    "en": "Which change most directly fixes this?"
+   },
+   {
+    "sid": "lesson-d3#24.2",
+    "en": "What is the most effective way to fix this specific edge case handling?"
+   },
+   {
+    "sid": "lesson-d4#12.0",
+    "en": "A team adds five few-shot examples to a document-classification prompt to fix inconsistent labeling."
+   },
+   {
+    "sid": "lesson-d5#12.2",
+    "en": "Which system-prompt instruction fixes this?"
+   },
+   {
+    "sid": "mock04#11.3",
+    "en": "What is the most effective fix?"
+   },
+   {
+    "sid": "sample01#16.3",
+    "en": "Root cause and architectural fix?"
+   },
+   {
+    "sid": "sample01-kor#11.1",
+    "en": "`CLAUDE.md` 에 \"TypeScript 파일을 편집한 뒤에는 항상 npm run lint:fix를 실행하라\"를 추가한다."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fix.0",
+    "en": "What is the most likely cause and correct architectural fix?",
+    "ko": "가장 가능성 높은 원인과 올바른 아키텍처 수정은?"
+   }
+  ]
+ },
+ {
+  "lemma": "fixture",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fixtures",
+   "fixture"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "fixture",
+   "word": "fixture",
+   "pos": "명사",
+   "ipa": "ˈfɪkstʃər",
+   "meaning": "(테스트) 픽스처 — 테스트에 쓰려고 미리 준비해 두는 데이터·환경"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#32.2",
+    "en": "Commit a CLAUDE.md file at the repository root containing the test-quality definition and fixture list"
+   },
+   {
+    "sid": "lesson-d3#32.3",
+    "en": "Put the test-quality definition and fixture list in the `prompt` field of each review job in the workflow YAML"
+   },
+   {
+    "sid": "lesson-d3#32.4",
+    "en": "Add the test-quality definition and fixture list to the pull request template authors fill in per PR"
+   },
+   {
+    "sid": "lesson-d3#32.5",
+    "en": "Pass the test-quality definition and fixture list via --append-system-prompt in the CI shell profile"
+   },
+   {
+    "sid": "lesson-d3#32.0",
+    "en": "An engineering lead wants CI-invoked Claude Code reviews to consistently flag missing test coverage using the team's specific definition of a \"valuable test\" (asserts behavior, not implementation details) and to know which fixtures already exist in the test helpers directory."
+   }
+  ]
+ },
+ {
+  "lemma": "flaky",
+  "kind": "vocab-core",
+  "surfaces": [
+   "flaky"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "flaky",
+   "word": "flaky",
+   "pos": "형용사",
+   "ipa": "ˈfleɪki",
+   "meaning": "(테스트·결과가) 들쭉날쭉한, 불안정한 — 같은 조건에서도 됐다 안 됐다 하는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#39.0",
+    "en": "An architect ran a two-hour investigation into a flaky payment-retry bug yesterday afternoon and named the session 'payment-retry-bug' before stopping for the day."
+   },
+   {
+    "sid": "mock04#12.1",
+    "en": "Your team's /investigate-flaky skill greps the entire test suite, reads dozens of files, and prints verbose exploration before it answers."
+   },
+   {
+    "sid": "mock04#46.2",
+    "en": "The gate is flaky because Claude phrases severe findings differently each run — \"severe issue,\" \"major bug,\" \"critical defect.\""
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:flaky.0",
+    "en": "The gate is flaky because Claude phrases severe findings differently each run — \"severe issue,\" \"major bug,\" \"critical defect.\"",
+    "ko": "Claude가 심각한 발견 사항을 실행할 때마다 \"severe issue\", \"major bug\", \"critical defect\"처럼 다르게 표현하기 때문에 게이트 결과가 들쭉날쭉하다."
+   }
+  ]
+ },
+ {
+  "lemma": "flatten",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "flatten",
+   "word": "flatten",
+   "pos": "동사",
+   "ipa": "ˈflætn",
+   "meaning": "평평하게 하다 — (중첩 구조를) 단순하게 펼치다"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "flaw",
+  "kind": "vocab-core",
+  "surfaces": [
+   "flaw",
+   "flaws"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "flaw",
+   "word": "flaw",
+   "pos": "명사",
+   "ipa": "flɔː",
+   "meaning": "결함, 흠 — 설계·논리의 약점"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#10.2",
+    "en": "What is the primary flaw in this retry guidance?"
+   },
+   {
+    "sid": "lesson-d4#36.0",
+    "en": "An engineer configures the generation session with a high extended thinking effort and instructs the model to reflect deeply on flaws before submitting its code."
+   },
+   {
+    "sid": "lesson-d1#22.3",
+    "en": "What is the design flaw?"
+   },
+   {
+    "sid": "lesson-d4#22.6",
+    "en": "Prompt wording flaw; add worked examples with matching totals to the extraction prompt so the model keeps order_total consistent"
+   },
+   {
+    "sid": "lesson-d2#10.4",
+    "en": "The flaw is that `isRetryable` should be `false`. A missing required argument is a validation error, which means the request is malformed. Retrying the same request will not succeed; the agent must correct the input before retrying. Setting `isRetryable` to `true` misleads the agent into thinking the same request can be retried as-is."
+   }
+  ]
+ },
+ {
+  "lemma": "fleet",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "fleet",
+   "word": "fleet",
+   "pos": "명사",
+   "ipa": "fliːt",
+   "meaning": "(서버·기기의) 무리 — fleet of VMs: 여러 대의 가상 머신 집합"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "flexibility",
+  "kind": "vocab-core",
+  "surfaces": [
+   "flexibility"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "flexibility",
+   "word": "flexibility",
+   "pos": "명사",
+   "ipa": "ˌfleksəˈbɪləti",
+   "meaning": "유연성 — 상황에 맞게 바꾸거나 세밀하게 조정할 수 있는 정도"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#12.5",
+    "en": "Both the `settings.json` deny rules and the `PreToolUse` hook are valid architectural approaches; the hook provides more flexibility"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:flexibility.0",
+    "en": "Both the `settings.json` deny rules and the `PreToolUse` hook are valid architectural approaches; the hook provides more flexibility",
+    "ko": "`settings.json` deny 규칙과 `PreToolUse` 훅 모두 유효한 아키텍처적 접근이며, 훅이 더 유연하다"
+   }
+  ]
+ },
+ {
+  "lemma": "flight",
+  "kind": "new",
+  "surfaces": [
+   "flight"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d5#13.0",
+    "en": "An airline support agent searches for a passenger by name and flight route to check a baggage claim."
+   },
+   {
+    "sid": "sample01#3.0",
+    "en": "A tool definition for a flight search API is shown below."
+   }
+  ]
+ },
+ {
+  "lemma": "float",
+  "kind": "vocab-core",
+  "surfaces": [
+   "float"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "float",
+   "word": "float",
+   "pos": "명사·동사",
+   "ipa": "floʊt",
+   "meaning": "① (프로그래밍) 부동소수점 수, 실수형 — 소수점이 있는 숫자 ② (물에) 뜨다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#55.4",
+    "en": "Add a required confidence float to every field so downstream code can discard PO numbers below a chosen threshold."
+   },
+   {
+    "sid": "mock04-kor#55.1",
+    "en": "모든 필드에 필수 신뢰도 float를 추가해, 다운스트림 코드가 정해 둔 임계값 미만의 PO 번호를 버리게 한다."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:float.0",
+    "en": "Add a required confidence float to every field so downstream code can discard PO numbers below a chosen threshold.",
+    "ko": "모든 필드에 필수 신뢰도 float(실수 값)를 추가해, 다운스트림 코드가 정해 둔 임계값 미만의 PO 번호를 버리게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "flood",
+  "kind": "vocab-core",
+  "surfaces": [
+   "floods",
+   "flood"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "flood",
+   "word": "flood",
+   "pos": "동사·명사",
+   "ipa": "flʌd",
+   "meaning": "(출력·데이터로) 넘쳐나게 하다, 가득 채우다 / 홍수"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#24.1",
+    "en": "Running the search directly would flood the main conversation with thousands of matched paths it will not need again."
+   },
+   {
+    "sid": "mock04#19.2",
+    "en": "Doing this discovery inline reads dozens of files and floods the main session with search output before any edits begin, and the later edits then start to wander."
+   },
+   {
+    "sid": "mock04#44.3",
+    "en": "Done inline, this verbose discovery floods the main session's context and later steps degrade from lost-in-the-middle effects."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:flood.0",
+    "en": "Done inline, this verbose discovery floods the main session's context and later steps degrade from lost-in-the-middle effects.",
+    "ko": "이 장황한 탐색을 메인 세션 안에서 바로 하면 메인 세션의 컨텍스트가 넘쳐나고, 이후 단계는 lost-in-the-middle 효과로 품질이 떨어진다."
+   }
+  ]
+ },
+ {
+  "lemma": "flow",
+  "kind": "vocab-core",
+  "surfaces": [
+   "flow",
+   "flows"
+  ],
+  "freq": 11,
+  "vocab": {
+   "id": "flow",
+   "word": "flow",
+   "pos": "명사·동사",
+   "ipa": "floʊ",
+   "meaning": "① (처리·대화의) 흐름 ② (데이터가) 흘러 들어가다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#31.0",
+    "en": "A newly onboarded architect asks Claude Code to trace how a login request flows from the HTTP route handler through to the database call, in a codebase Claude has not explored yet."
+   },
+   {
+    "sid": "lesson-d4#38.0",
+    "en": "Per-file passes on two interdependent files each recommend a different fix for what turns out to be the same underlying data-flow issue, and the two recommendations conflict."
+   },
+   {
+    "sid": "lesson-d5#21.0",
+    "en": "Phase-2 subagents, each tracing a different refund-related flow, keep spending most of their tokens re-mapping the modules that phase 1 already mapped."
+   },
+   {
+    "sid": "mock04#36.1",
+    "en": "The coordinator passes each subagent's output forward verbatim: the web-search subagent's full scraped page bodies — roughly 38k tokens — flow straight into the synthesis subagent's prompt."
+   },
+   {
+    "sid": "lesson-d2#24.3",
+    "en": "Configure the `oauth` block with `authServerMetadataUrl` pointed at the internal Kerberos realm so Claude Code discovers the flow automatically."
+   },
+   {
+    "sid": "lesson-d4#37.5",
+    "en": "Send the whole diff to a single review with a larger model so it can see every file and every data flow at once"
+   },
+   {
+    "sid": "lesson-d5#23.3",
+    "en": "Trace the refund flow's dependencies across modules and report the call chain"
+   },
+   {
+    "sid": "mock04#3.6",
+    "en": "Add a PreToolUse hook on process_refund that blocks any amount over $500 and redirects the flow to escalate_to_human."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:flow.0",
+    "en": "Add a PreToolUse hook on process_refund that blocks any amount over $500 and redirects the flow to escalate_to_human.",
+    "ko": "`process_refund` 에 PreToolUse 훅을 추가해 $500 초과 금액을 차단하고 흐름을 `escalate_to_human` 으로 돌린다"
+   }
+  ]
+ },
+ {
+  "lemma": "fluent",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "fluent",
+   "word": "fluent",
+   "pos": "형용사",
+   "ipa": "ˈfluːənt",
+   "meaning": "유창한, 술술 읽히는"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "flush",
+  "kind": "vocab-core",
+  "surfaces": [
+   "flushed"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "flush",
+   "word": "flush",
+   "pos": "동사",
+   "ipa": "flʌʃ",
+   "meaning": "(버퍼에 쌓인 출력을) 내보내다, 비우다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#29.4",
+    "en": "Add --output-format stream-json so output is flushed continuously"
+   }
+  ]
+ },
+ {
+  "lemma": "focus",
+  "kind": "vocab-core",
+  "surfaces": [
+   "focus",
+   "focused"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "focus",
+   "word": "focus",
+   "pos": "명사·동사",
+   "ipa": "ˈfoʊkəs",
+   "meaning": "집중(하다), 초점(을 맞추다)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#6.1",
+    "en": "The architect wants to reorganize this into focused, maintainable files while keeping everything loaded for every session."
+   },
+   {
+    "sid": "lesson-d5#24.2",
+    "en": "What best keeps the main agent's context focused on high-level coordination while still producing the list?"
+   },
+   {
+    "sid": "mock04#49.2",
+    "en": "That rubric is needed only by the review job, but it is now injected into every CI job — test generation, doc updates — inflating token cost and diluting the model's focus on those tasks."
+   },
+   {
+    "sid": "lesson-d1#10.5",
+    "en": "Have the coordinator shorten the findings to a few key sentences so the synthesis subagent can focus on the most important claims"
+   },
+   {
+    "sid": "lesson-d5#25.6",
+    "en": "Run /compact focused on OrderService so the summary keeps the class details in the main context"
+   },
+   {
+    "sid": "mock04#36.5",
+    "en": "Keep passing the raw pages but add a prompt instruction telling synthesis to focus on the important parts and ignore boilerplate."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:focus.0",
+    "en": "...inflating token cost and diluting the model's focus on those tasks.",
+    "ko": "토큰 비용을 부풀리고 해당 작업에 대한 모델의 집중을 흐리고 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "fold",
+  "kind": "new",
+  "surfaces": [
+   "folding"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#34.5",
+    "en": "A single agent that reads the transcript and writes the three translations in one pass, folding summarization into it"
+   }
+  ]
+ },
+ {
+  "lemma": "folder",
+  "kind": "new",
+  "surfaces": [
+   "folder"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d3#17.0",
+    "en": "Your team's React test files live in `src/components/__tests__/`, in src/pages/tests/, next to the components they test, and in a root tests/ folder."
+   },
+   {
+    "sid": "mock04#60.2",
+    "en": "Even when the type is already known from the intake folder that routed the document, the caller still sends all six tools with tool_choice \"auto\", and in 9% of cases the model invokes the wrong extractor."
+   },
+   {
+    "sid": "lesson-d3#11.6",
+    "en": "Set `paths: docs/architecture/*​*` on the skill, so it loads when Claude works on files in the architecture folder."
+   },
+   {
+    "sid": "mock04#14.7",
+    "en": "Add a global PreToolUse hook that inspects every Edit across all sessions and rejects any write outside the `docs/` folder"
+   },
+   {
+    "sid": "lesson-d3#17.3",
+    "en": "Put a CLAUDE.md with the test conventions in each folder that holds tests"
+   }
+  ]
+ },
+ {
+  "lemma": "follow",
+  "kind": "new",
+  "surfaces": [
+   "follow",
+   "follows",
+   "following",
+   "followed"
+  ],
+  "freq": 21,
+  "sentences": [
+   {
+    "sid": "lesson-d1#4.0",
+    "en": "A response contains a text block followed by a tool_use block, and its stop_reason is \"tool_use\"."
+   },
+   {
+    "sid": "lesson-d2#27.1",
+    "en": "Assume that the project follows a consistent and reliable naming convention that pairs each component file with its corresponding test file (for example, `Button.tsx` is tested by `Button.test.tsx`)."
+   },
+   {
+    "sid": "lesson-d3#1.0",
+    "en": "A developer notices that in Monday's session Claude followed the package's error-handling convention, but in Tuesday's session on the same repo it ignored it."
+   },
+   {
+    "sid": "lesson-d5#20.3",
+    "en": "Which retry policy should it follow?"
+   },
+   {
+    "sid": "mock04#45.1",
+    "en": "A senior engineer added the team's coding-convention instructions to `~/.claude/CLAUDE.md`, and the tool follows them perfectly on her machine."
+   },
+   {
+    "sid": "sample01#18.3",
+    "en": "Claude Code follows the instruction and commits to main — `CLAUDE.md` is advisory context, not enforcement"
+   },
+   {
+    "sid": "lesson-d2#6.1",
+    "en": "Following the pattern of renaming a tool to eliminate overlap, what should the team do?"
+   },
+   {
+    "sid": "lesson-d3#18.1",
+    "en": "You want the main session to keep enough context for the plan and the implementation that follows."
+   }
+  ]
+ },
+ {
+  "lemma": "follow-up",
+  "kind": "vocab-core",
+  "surfaces": [
+   "follow-up"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "follow-up",
+   "word": "follow-up",
+   "pos": "명사·형용사",
+   "ipa": "ˈfɑːloʊ ʌp",
+   "meaning": "후속(의) — 앞선 결과를 이어받아 하는 질문·작업·조치"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#40.3",
+    "en": "Pass the session ID stored for each user to resume when that user sends a follow-up request"
+   },
+   {
+    "sid": "mock04#25.4",
+    "en": "Use dynamic decomposition: the coordinator spawns follow-up subtasks as earlier findings reveal them"
+   },
+   {
+    "sid": "lesson-d1#40.4",
+    "en": "Pass continue_conversation=True on each follow-up request and let it reattach to the user's session"
+   },
+   {
+    "sid": "mock04#27.5",
+    "en": "Route requests through the coordinator: subagents return gaps to it, and it dispatches follow-up searches"
+   },
+   {
+    "sid": "lesson-d1#40.5",
+    "en": "Pass fork_session=True on each follow-up request to branch off the user's earlier conversation state"
+   },
+   {
+    "sid": "mock04#57.4",
+    "en": "Append the failed extraction and the validation errors in a follow-up message, asking the model to fix only the offending fields."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:follow-up.0",
+    "en": "Use dynamic decomposition: the coordinator spawns follow-up subtasks as earlier findings reveal them",
+    "ko": "동적 분해를 쓴다. 앞선 발견이 새로운 하위 작업을 드러내면 코디네이터가 그에 맞는 후속 하위 작업을 생성한다"
+   }
+  ]
+ },
+ {
+  "lemma": "footprint",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "footprint",
+   "word": "footprint",
+   "pos": "명사",
+   "ipa": "ˈfʊtprɪnt",
+   "meaning": "차지하는 양 — (컨텍스트·메모리에서) 차지하는 크기"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "forbidden",
+  "kind": "vocab-core",
+  "surfaces": [
+   "forbidding"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "forbidden",
+   "word": "forbidden",
+   "pos": "형용사",
+   "ipa": "fərˈbɪdn",
+   "meaning": "금지된"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#14.4",
+    "en": "Add a stronger system-prompt instruction explicitly forbidding edits to any file that lives outside the `docs/` directory"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:forbidden.0",
+    "en": "...list forbidden operations Claude should avoid.",
+    "ko": "Claude가 피해야 할 금지 작업 목록을 넣는다."
+   }
+  ]
+ },
+ {
+  "lemma": "force",
+  "kind": "vocab-core",
+  "surfaces": [
+   "force",
+   "forced",
+   "forcing",
+   "forces"
+  ],
+  "freq": 29,
+  "vocab": {
+   "id": "force",
+   "word": "force",
+   "pos": "동사·명사",
+   "ipa": "fɔːrs",
+   "meaning": "(억지로) ~하게 만들다, 강제하다 / 힘"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#20.0",
+    "en": "A team lead reviewing a completed library migration finds that early file conversions used one pattern, while later files in the same migration used a different, incompatible pattern, forcing a second pass to reconcile them."
+   },
+   {
+    "sid": "lesson-d4#17.2",
+    "en": "Which `tool_choice` configuration should be used to guarantee the `parse_resume` call, and what does Anthropic documentation state about natural-language commentary before a forced tool call?"
+   },
+   {
+    "sid": "lesson-d2#15.5",
+    "en": "Each subagent now runs on a smaller context window, which forces the model to think more carefully before selecting a tool"
+   },
+   {
+    "sid": "mock04#11.5",
+    "en": "Have each engineer run /memory after cloning so the user-scoped memory files are force-reloaded from the lead's profile"
+   },
+   {
+    "sid": "sample01#15.5",
+    "en": "Use a tool definition with the invoice schema and `tool_choice: any` to force schema-compliant extraction"
+   },
+   {
+    "sid": "lesson-d4#19.1",
+    "en": "The extractor runs with strict: true and a forced tool_choice, and every record passed schema validation."
+   },
+   {
+    "sid": "lesson-d2#18.5",
+    "en": "Keep the shared 15-tool set for all subagents, but switch every subagent's tool_choice to {\"type\": \"any\"} so a tool call is always forced, ensuring subagents cannot respond without selecting a tool."
+   },
+   {
+    "sid": "mock04#24.6",
+    "en": "tool_choice is forced to a specific tool, which prevents the coordinator from ever choosing to delegate work"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:force.0",
+    "en": "Use a tool definition with the invoice schema and `tool_choice: any` to force schema-compliant extraction",
+    "ko": "송장 스키마를 담은 도구 정의와 `tool_choice: any` 를 써서 스키마에 맞는 추출을 강제한다"
+   }
+  ]
+ },
+ {
+  "lemma": "force-fit",
+  "kind": "vocab-core",
+  "surfaces": [
+   "force-fits"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "force-fit",
+   "word": "force-fit",
+   "pos": "동사",
+   "ipa": "ˈfɔːrs fɪt",
+   "meaning": "(맞지 않는 것을) 억지로 끼워 맞추다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#56.2",
+    "en": "A new vendor begins sending \"credit memo\" documents, which are not in the enum, and the model force-fits them to \"invoice\", corrupting downstream routing."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:force-fit.0",
+    "en": "A new vendor begins sending \"credit memo\" documents, which are not in the enum, and the model force-fits them to \"invoice\", corrupting downstream routing.",
+    "ko": "새 공급업체가 enum에 없는 \"credit memo\" 문서를 보내기 시작했고, 모델은 이를 `\"invoice\"` 에 억지로 끼워 맞춰 다운스트림 라우팅을 오염시킨다."
+   }
+  ]
+ },
+ {
+  "lemma": "forget",
+  "kind": "new",
+  "surfaces": [
+   "forgetting"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "sample01#6.1",
+    "en": "After turn 25, response quality degrades — the model starts forgetting earlier findings and repeating tool calls it already made."
+   }
+  ]
+ },
+ {
+  "lemma": "fork",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fork",
+   "forked",
+   "forks"
+  ],
+  "freq": 15,
+  "vocab": {
+   "id": "fork",
+   "word": "fork",
+   "pos": "동사·명사",
+   "ipa": "fɔːrk",
+   "meaning": "(세션·저장소를) 갈라 복제하다, 분기하다 / 분기본"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#11.3",
+    "en": "Fork the session once for each strategy, so each branch starts with the full analysis and the original session stays intact"
+   },
+   {
+    "sid": "lesson-d5#21.3",
+    "en": "Nothing in the prompts: non-fork subagents inherit the coordinator's conversation, so a better-worded task question is enough"
+   },
+   {
+    "sid": "mock04#12.7",
+    "en": "Set context:fork in the skill's SKILL.md frontmatter so exploration runs in an isolated context and only the result returns"
+   },
+   {
+    "sid": "selfcheck-d5-kor#21.0",
+    "en": "2단계 탐색 서브에이전트(fork 아님)가 1단계에서 이미 파악한 모듈 구조를 다시 탐색하느라 시간을 썼다. 원인과 해결로 옳은 것은?"
+   },
+   {
+    "sid": "lesson-d1#41.3",
+    "en": "fork_session() only writes the forked transcript and returns its ID. Pass forked.session_id to ClaudeAgentOptions(resume=...) to start working on the branch"
+   },
+   {
+    "sid": "mock04#20.5",
+    "en": "Fork the session to branch off a divergent line of work and continue the refactor in the forked copy of the history."
+   },
+   {
+    "sid": "lesson-d1#41.4",
+    "en": "The fork runs in the background. Resume the original session_id to see the OAuth2 exploration, since forks report back to their parent"
+   },
+   {
+    "sid": "mock04#26.4",
+    "en": "Fork the session at the end of the research phase into two branches, one per report variant, sharing the evidence"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fork.0",
+    "en": "Fork the session to branch off a divergent line of work and continue the refactor in the forked copy of the history.",
+    "ko": "세션을 포크해 갈라지는 작업 갈래로 분기하고, 포크된 기록 사본에서 리팩터링을 이어 간다"
+   }
+  ]
+ },
+ {
+  "lemma": "form",
+  "kind": "new",
+  "surfaces": [
+   "form"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d4#24.1",
+    "en": "On one submission, the employee left the project code blank on the physical form, so it does not appear anywhere in the scanned image."
+   },
+   {
+    "sid": "lesson-d5#36.0",
+    "en": "A market-research pipeline dispatches five research subagents, each of which reads several documents and returns a free-form paragraph summary to a coordinator agent."
+   },
+   {
+    "sid": "lesson-d4#24.7",
+    "en": "Switch to a larger model and resend the scan with the error history, so it can better locate the project_code on the form"
+   }
+  ]
+ },
+ {
+  "lemma": "format",
+  "kind": "vocab-core",
+  "surfaces": [
+   "format",
+   "formats",
+   "formatting",
+   "formatted"
+  ],
+  "freq": 32,
+  "vocab": {
+   "id": "format",
+   "word": "format",
+   "pos": "명사·동사",
+   "ipa": "ˈfɔːrmæt",
+   "meaning": "형식, 서식 / (형식에 맞게) 정리하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.2",
+    "en": "Which handoff format fixes this?"
+   },
+   {
+    "sid": "lesson-d3#16.0",
+    "en": "An infrastructure team wants Claude Code to load Terraform-specific formatting and tagging conventions only when Claude edits files under the terraform/ directory, at any subfolder depth."
+   },
+   {
+    "sid": "lesson-d5#35.1",
+    "en": "You are revising the output format the lead agent gives its subagents."
+   },
+   {
+    "sid": "mock04#22.2",
+    "en": "Tracing shows the Task prompt sent to the synthesis subagent contains only the report topic and formatting instructions."
+   },
+   {
+    "sid": "lesson-d2#11.6",
+    "en": "Use `errorCategory: \"validation\"` with `isRetryable: true`; the token was rejected as malformed input, so resubmitting it in the expected format should be accepted"
+   },
+   {
+    "sid": "lesson-d4#18.6",
+    "en": "Keep the field required and add `input_examples` that show physician names in the correct format"
+   },
+   {
+    "sid": "sample01#3.3",
+    "en": "Add `\"required\": [\"from\", \"to\", \"date\"]` and enrich descriptions with format examples and constraints"
+   },
+   {
+    "sid": "lesson-d1#33.0",
+    "en": "An agent's system prompt says: \"First extract the fields, then validate them, then format the report.\""
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:format.0",
+    "en": "get_customer and lookup_order call two different backend systems that return dates in different formats...",
+    "ko": "`get_customer` 와 `lookup_order` 는 서로 다른 두 백엔드 시스템을 호출하는데, 두 시스템은 날짜를 서로 다른 형식(ISO와 미국식)으로 반환한다."
+   }
+  ]
+ },
+ {
+  "lemma": "forth",
+  "kind": "new",
+  "surfaces": [
+   "forth"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#11.1",
+    "en": "The team wants that exploratory back-and-forth kept separate from the main conversation, with only the final recommendation surfacing back to the user."
+   }
+  ]
+ },
+ {
+  "lemma": "forward",
+  "kind": "vocab-core",
+  "surfaces": [
+   "forward",
+   "forwards"
+  ],
+  "freq": 8,
+  "vocab": {
+   "id": "forward",
+   "word": "forward",
+   "pos": "부사·동사",
+   "ipa": "ˈfɔːrwərd",
+   "meaning": "앞으로, 다음 단계로 / (받은 것을) 전달하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#35.2",
+    "en": "Which architectural change is most effective at catching those issues going forward?"
+   },
+   {
+    "sid": "lesson-d5#27.3",
+    "en": "What should the architect do going forward to prevent this?"
+   },
+   {
+    "sid": "mock04#36.1",
+    "en": "The coordinator passes each subagent's output forward verbatim: the web-search subagent's full scraped page bodies — roughly 38k tokens — flow straight into the synthesis subagent's prompt."
+   },
+   {
+    "sid": "lesson-d5#3.2",
+    "en": "Which practice best addresses this failure mode going forward?"
+   },
+   {
+    "sid": "lesson-d5#31.3",
+    "en": "What review policy should be applied to the weight field going forward?"
+   },
+   {
+    "sid": "lesson-d5#40.2",
+    "en": "What structural change to subagent output would prevent this kind of false contradiction going forward?"
+   },
+   {
+    "sid": "lesson-d5#11.7",
+    "en": "Stop using either signal as a trigger: route on checkable conditions (customer asked for a human, no policy covers the request, no way forward), and track sentiment as an outcome from the start to the end of the conversation"
+   },
+   {
+    "sid": "lesson-d5#14.7",
+    "en": "The raw connection errors, because the SDK forwards them to the parent along with the subagent's final message"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:forward.0",
+    "en": "The coordinator passes each subagent's output forward verbatim...",
+    "ko": "코디네이터는 각 서브에이전트의 출력을 원문 그대로 다음 단계로 넘긴다."
+   }
+  ]
+ },
+ {
+  "lemma": "fourteen",
+  "kind": "new",
+  "surfaces": [
+   "fourteen"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d5#39.2",
+    "en": "On review, the two reports were published fourteen months apart."
+   },
+   {
+    "sid": "lesson-d5#40.1",
+    "en": "The coordinator initially treats this as a contradiction requiring reconciliation, but on closer inspection the two figures come from reports published fourteen months apart."
+   }
+  ]
+ },
+ {
+  "lemma": "fragment",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "fragment",
+   "word": "fragment",
+   "pos": "명사",
+   "ipa": "ˈfræɡmənt",
+   "meaning": "조각, 일부분"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "framework",
+  "kind": "vocab-core",
+  "surfaces": [
+   "framework"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "framework",
+   "word": "framework",
+   "pos": "명사",
+   "ipa": "ˈfreɪmwɜːrk",
+   "meaning": "① (소프트웨어) 프레임워크 — 앱의 뼈대와 규칙을 제공하는 기반 ② (생각·평가의) 틀"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#18.1",
+    "en": "During a 200-file framework migration carried out in one long session, logs show Claude re-migrating files it already converted and skipping others as the conversation grows."
+   },
+   {
+    "sid": "lesson-d3#20.4",
+    "en": "The migration was scoped to a single library instead of being combined into one larger project with an unrelated framework upgrade"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:framework.0",
+    "en": "During a 200-file framework migration carried out in one long session, logs show Claude re-migrating files it already converted...",
+    "ko": "하나의 긴 세션에서 파일 200개 규모의 프레임워크 마이그레이션을 진행하는 동안, Claude가 이미 변환한 파일을 다시 마이그레이션하는 모습이 로그에 나타난다."
+   }
+  ]
+ },
+ {
+  "lemma": "fraud",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fraud"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "fraud",
+   "word": "fraud",
+   "pos": "명사",
+   "ipa": "frɔːd",
+   "meaning": "사기, 부정 거래"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#17.0",
+    "en": "A customer support agent has 14 tools: CRM lookup, order history, payment read, payment write, fraud check, compliance log, email send, SMS send, escalation, refund approve, refund reject, audit write, ticket create, ticket close."
+   },
+   {
+    "sid": "sample01#17.1",
+    "en": "In production it frequently selects wrong tools and processes payments without completing fraud checks."
+   },
+   {
+    "sid": "sample01#17.4",
+    "en": "Add 'Always run fraud check before payment operations' to the system prompt"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fraud.0",
+    "en": "A customer support agent has 14 tools: CRM lookup, order history, payment read, payment write, fraud check, compliance log, ...",
+    "ko": "고객지원 에이전트가 14개의 도구(CRM 조회, 주문 이력, 결제 조회, 결제 쓰기, 사기 검사, 컴플라이언스 로그, …)를 갖고 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "fraud-check",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fraud-check"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "fraud-check",
+   "word": "fraud-check",
+   "pos": "명사",
+   "ipa": "ˈfrɔːd tʃek",
+   "meaning": "사기 검사 — 결제 전에 부정 거래인지 확인하는 단계"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#17.5",
+    "en": "Decompose into hub-and-spoke with specialized subagents; add PreToolCall hook enforcing fraud-check prerequisite before payment writes"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fraud-check.0",
+    "en": "...add PreToolCall hook enforcing fraud-check prerequisite before payment writes",
+    "ko": "결제 쓰기 전에 사기 검사 선행을 강제하는 PreToolCall 훅을 추가한다"
+   }
+  ]
+ },
+ {
+  "lemma": "free",
+  "kind": "new",
+  "surfaces": [
+   "free"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d4#12.2",
+    "en": "After deployment, the model performs well on similar short English emails but starts mislabeling longer documents and documents in other languages that it previously handled correctly under the old, example-free prompt."
+   },
+   {
+    "sid": "lesson-d5#36.0",
+    "en": "A market-research pipeline dispatches five research subagents, each of which reads several documents and returns a free-form paragraph summary to a coordinator agent."
+   },
+   {
+    "sid": "lesson-d4#18.4",
+    "en": "Turn off strict mode on the tool so Claude is free to leave the required field out when the report lacks it"
+   }
+  ]
+ },
+ {
+  "lemma": "free-text",
+  "kind": "vocab-core",
+  "surfaces": [
+   "free-text"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "free-text",
+   "word": "free-text",
+   "pos": "형용사·명사",
+   "ipa": "ˌfriː ˈtekst",
+   "meaning": "자유 형식 텍스트(의) — 정해진 구조·선택지 없이 쓴 글"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#15.0",
+    "en": "A data pipeline needs to extract structured invoice data (vendor, line items, totals) from free-text invoice PDFs."
+   },
+   {
+    "sid": "mock04#56.4",
+    "en": "Remove the enum constraint entirely and let the model emit any free-text string for document_type on each document."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:free-text.0",
+    "en": "A data pipeline needs to extract structured invoice data (vendor, line items, totals) from free-text invoice PDFs.",
+    "ko": "데이터 파이프라인이 자유 텍스트 형태의 송장 PDF에서 구조화된 송장 데이터(공급업체, 품목, 합계)를 추출해야 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "freely",
+  "kind": "new",
+  "surfaces": [
+   "freely"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d4#17.4",
+    "en": "`tool_choice: {\"type\": \"any\"}`, because `any` allows Claude to freely mix natural-language commentary with the forced tool call in the same response"
+   },
+   {
+    "sid": "lesson-d5#28.3",
+    "en": "A Markdown checklist that every agent edits freely, ticking items and rewriting notes as it goes"
+   },
+   {
+    "sid": "lesson-d4#17.6",
+    "en": "`tool_choice: {\"type\": \"none\"}`, so Claude can freely decide in text whether to also produce a `parse_resume` tool call afterward"
+   }
+  ]
+ },
+ {
+  "lemma": "freeze",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "freeze",
+   "word": "freeze",
+   "pos": "동사",
+   "ipa": "friːz",
+   "meaning": "동결하다, 고정해 더 바꾸지 않다 — frozen: 고정된"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "french",
+  "kind": "new",
+  "surfaces": [
+   "french"
+  ],
+  "freq": 1,
+  "maybeProper": true,
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.1",
+    "en": "It writes a product description, code checks the length and banned terms, and then the description is translated into German and French."
+   }
+  ]
+ },
+ {
+  "lemma": "frequently",
+  "kind": "vocab-core",
+  "surfaces": [
+   "frequently"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "frequently",
+   "word": "frequently",
+   "pos": "부사",
+   "ipa": "ˈfriːkwəntli",
+   "meaning": "자주, 빈번히"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#26.0",
+    "en": "A security review assistant extracts structured findings from source code and developers frequently dismiss a large share of the findings tied to one particular helper function used for input sanitization."
+   },
+   {
+    "sid": "sample01#17.1",
+    "en": "In production it frequently selects wrong tools and processes payments without completing fraud checks."
+   },
+   {
+    "sid": "mock04#18.5",
+    "en": "Run `/compact` frequently so the history stays short, letting the model re-summarize the file list each time it runs."
+   },
+   {
+    "sid": "sample01#3.1",
+    "en": "In testing, the model frequently passes malformed date strings (`\"next Tuesday\"`, `\"ASAP\"`) and occasionally swaps the `from` and `to` parameters."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:frequently.0",
+    "en": "In testing, the model frequently passes malformed date strings (`\"next Tuesday\"`, `\"ASAP\"`) and occasionally swaps the `from` and `to` parameters.",
+    "ko": "테스트에서 모델이 날짜에 `\"next Tuesday\"`, `\"ASAP\"` 같은 잘못된 문자열을 자주 넣고, 가끔 `from` 과 `to` 를 뒤바꾼다."
+   }
+  ]
+ },
+ {
+  "lemma": "fresh",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fresh",
+   "freshly"
+  ],
+  "freq": 17,
+  "vocab": {
+   "id": "fresh",
+   "word": "fresh",
+   "pos": "형용사",
+   "ipa": "freʃ",
+   "meaning": "① (이전 기록 없이) 새로운, 깨끗한 ② 방금 얻은, 최신의"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#38.1",
+    "en": "A CI job on a fresh ephemeral build host then runs `claude -r \"auth-refactor\" \"Finish this PR\"`."
+   },
+   {
+    "sid": "lesson-d2#24.0",
+    "en": "An internal MCP server requires a Kerberos-derived token that must be freshly minted for every connection, and no OAuth authorization server is involved."
+   },
+   {
+    "sid": "mock04#30.2",
+    "en": "Traces show that in 22% of runs it issues a fresh web_search or parse_pdf call instead of combining the findings the coordinator already passed in its prompt, adding 6-9 s of latency per run."
+   },
+   {
+    "sid": "lesson-d3#24.6",
+    "en": "Ask Claude to regenerate the whole migration script from the original schema description in a fresh session, so the null handling is written again from scratch"
+   },
+   {
+    "sid": "lesson-d4#37.4",
+    "en": "Script one headless `claude -p` review per file, each in a fresh context, then run integration passes that read the files sharing data together"
+   },
+   {
+    "sid": "lesson-d5#22.5",
+    "en": "Have the agent re-read the whole repository so the class details are fresh in its context again"
+   },
+   {
+    "sid": "lesson-d1#11.4",
+    "en": "Spawn two fresh subagents with the prompts \"Try strategy A based on the analysis so far\" and \"Try strategy B based on the analysis so far\""
+   },
+   {
+    "sid": "lesson-d4#37.6",
+    "en": "Script one fresh per-file pass for every file and skip integration passes, since each file has already had full attention"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fresh.0",
+    "en": "Run each of the three changes in its own fresh session so every edit stays cleanly isolated from the others",
+    "ko": "세 변경을 각각 새 세션에서 실행해, 모든 수정이 서로 깔끔하게 격리되도록 한다"
+   }
+  ]
+ }
+]

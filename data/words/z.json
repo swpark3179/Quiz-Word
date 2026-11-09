@@ -1,0 +1,113 @@
+[
+  {
+    "id": "zdr",
+    "word": "ZDR",
+    "tier": "extra",
+    "pos": [
+      "약어"
+    ],
+    "ipa": "ˌziː.diːˈɑːr",
+    "meaning": "데이터 무보존(Zero Data Retention) — 요청·응답 데이터를 저장하지 않기로 한 약정",
+    "short": "데이터 무보존",
+    "senses": [
+      {
+        "pos": "약어",
+        "ko": "데이터 무보존 (Zero Data Retention)"
+      }
+    ],
+    "forms": [
+      "zero data retention"
+    ],
+    "domain": "저장·기록",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "zero",
+    "word": "zero",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "명사",
+      "형용사"
+    ],
+    "ipa": "ˈzɪroʊ",
+    "meaning": "① 영, 0 ② (수량이) 하나도 없는",
+    "short": "영(0), 하나도 없는",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "영, 0"
+      },
+      {
+        "pos": "형용사",
+        "ko": "하나도 없는, 전무한"
+      }
+    ],
+    "synonyms": [
+      "nil",
+      "none"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 3,
+    "sources": [
+      "mock04",
+      "lesson-d2",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 54,
+        "en": "After migrating to tool_use with a strict JSON schema, JSON parse failures dropped to zero.",
+        "surface": "zero",
+        "pos": "명사",
+        "sense": "영, 0",
+        "ko": "엄격한 JSON 스키마를 쓰는 tool_use로 전환한 뒤 JSON 파싱 실패는 0건이 되었습니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 27,
+        "en": "Use Bash to run the full test suite and count how many components report zero assertions executed against them",
+        "surface": "zero",
+        "pos": "형용사",
+        "sense": "하나도 없는, 전무한",
+        "ko": "Bash로 전체 테스트 스위트를 실행하고, 실행된 단언(assertion)이 0개라고 보고되는 컴포넌트 수를 센다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 8,
+        "en": "Set the temperature to zero in the API call, making token sampling more repeatable from one run to the next",
+        "surface": "zero",
+        "pos": "명사",
+        "sense": "영, 0",
+        "ko": "API 호출의 temperature를 0으로 설정해 실행 간 토큰 샘플링을 더 재현 가능하게 만든다."
+      }
+    ]
+  },
+  {
+    "id": "zod",
+    "word": "Zod",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "zɑːd",
+    "meaning": "Zod — TypeScript용 스키마 선언·검증 라이브러리",
+    "short": "스키마 검증 라이브러리",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(TypeScript) 스키마 검증 라이브러리"
+      }
+    ],
+    "domain": "시스템·도구·기술",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [],
+    "note": "**TypeScript 용 스키마 선언·검증 라이브러리**입니다. 객체의 모양을 스키마로 정의해 두면 실행 중에 값을 검사하고, 같은 스키마에서 타입도 얻을 수 있습니다.\r\n\r\n## 문제 속 쓰임\r\n> ...yields inconsistent output across runs: sometimes it adds **zod**, sometimes hand-written checks, sometimes nothing meaningful.\r\n> 실행할 때마다 결과가 들쭉날쭉하다. 어떤 때는 **`zod`** 를 추가하고, 어떤 때는 손으로 쓴 검사 코드를 넣고, 어떤 때는 의미 있는 변화가 거의 없다.\r\n\r\n## 함께 쓰는 표현\r\n- **zod schema** : zod 로 정의한 스키마 (`z.object({...})`)\r\n- **schema validation** : 스키마 검증\r\n\r\n## 시험 포인트\r\n특정 라이브러리(예: zod)로 일관되게 쓰게 하려면 \"더 견고하게\"라는 말 대신 **그 라이브러리를 쓴 구체적인 입력-출력 예시**를 보여 주는 것이 정답입니다."
+  }
+]

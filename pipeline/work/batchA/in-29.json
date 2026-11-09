@@ -1,0 +1,1468 @@
+[
+ {
+  "lemma": "overall",
+  "kind": "vocab-core",
+  "surfaces": [
+   "overall"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "overall",
+   "word": "overall",
+   "pos": "형용사·부사",
+   "ipa": "ˌoʊvərˈɔːl",
+   "meaning": "전반적인, 전체적으로"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#29.0",
+    "en": "A team has one labeled evaluation set covering three document types and has computed only an overall accuracy."
+   },
+   {
+    "sid": "mock04#50.7",
+    "en": "Train a sentiment classifier on developer reactions and suppress whichever categories draw negative responses overall"
+   },
+   {
+    "sid": "lesson-d5#29.3",
+    "en": "Use the overall accuracy, because the labeled set already includes that document type"
+   },
+   {
+    "sid": "lesson-d5#31.5",
+    "en": "Review a fixed random sample of weight values across the whole pipeline, sized to the overall 94% accuracy, and treat documents with missing units like the rest."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:overall.0",
+    "en": "...suppress whichever categories draw negative responses overall",
+    "ko": "전반적으로 부정적인 반응을 끄는 범주를 숨긴다."
+   }
+  ]
+ },
+ {
+  "lemma": "overhead",
+  "kind": "vocab-core",
+  "surfaces": [
+   "overhead"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "overhead",
+   "word": "overhead",
+   "pos": "명사",
+   "ipa": "ˈoʊvərhed",
+   "meaning": "추가 부담 — 본 작업 외에 더 드는 시간·비용"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#41.4",
+    "en": "What is the best way to reduce this overhead?"
+   },
+   {
+    "sid": "lesson-d4#28.6",
+    "en": "Submit every 4 hours, because a 4-hour wait plus the full 24-hour batch window still fits inside 30 hours with time to spare for overhead"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:overhead.0",
+    "en": "What's the most effective approach to reduce overhead while maintaining reliability?",
+    "ko": "신뢰성을 유지하면서 오버헤드를 줄이는 가장 효과적인 방법은?"
+   }
+  ]
+ },
+ {
+  "lemma": "overlap",
+  "kind": "vocab-core",
+  "surfaces": [
+   "overlap"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "overlap",
+   "word": "overlap",
+   "pos": "동사·명사",
+   "ipa": "ˌoʊvərˈlæp",
+   "meaning": "(일부가) 겹치다 / 겹침"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#14.0",
+    "en": "A research agent has grown from 5 tools to 18, and several of them now partly overlap."
+   },
+   {
+    "sid": "lesson-d2#6.1",
+    "en": "Following the pattern of renaming a tool to eliminate overlap, what should the team do?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:overlap.0",
+    "en": "...both investigating the same subtopics, resulting in significant overlap.",
+    "ko": "둘 다 같은 하위 주제를 조사해 상당한 중복이 생긴다."
+   }
+  ]
+ },
+ {
+  "lemma": "overloaded",
+  "kind": "vocab-core",
+  "surfaces": [
+   "overloaded"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "overloaded",
+   "word": "overloaded",
+   "pos": "형용사",
+   "ipa": "ˌoʊvərˈloʊdɪd",
+   "meaning": "과부하가 걸린 — overloaded error: 서버가 과부하라 지금 처리하지 못함 (HTTP 529)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#20.0",
+    "en": "Your news subagent gets an overloaded error from its search provider on the first call."
+   },
+   {
+    "sid": "lesson-d5#20.6",
+    "en": "Retry the overloaded error a limited number of times locally. Report the authentication failure to the coordinator right away, with the attempts made, the 12 articles and possible alternatives"
+   }
+  ]
+ },
+ {
+  "lemma": "overlook",
+  "kind": "vocab-core",
+  "surfaces": [
+   "overlooking",
+   "overlook"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "overlook",
+   "word": "overlook",
+   "pos": "동사",
+   "ipa": "ˌoʊvərˈlʊk",
+   "meaning": "(중요한 것을) 놓치다, 간과하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#21.2",
+    "en": "Over time Claude starts overlooking the failing-test details and the constraints stated at the start of the session."
+   },
+   {
+    "sid": "lesson-d3#1.4",
+    "en": "Rewrite the convention with stronger wording such as IMPORTANT or MUST so Claude can't overlook it"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:overlook.0",
+    "en": "Over time Claude starts overlooking the failing-test details and the constraints stated at the start of the session.",
+    "ko": "시간이 지나자 Claude가 실패한 테스트의 세부 정보와 세션 초반에 밝힌 제약 조건을 놓치기 시작한다."
+   }
+  ]
+ },
+ {
+  "lemma": "overly",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "overly",
+   "word": "overly",
+   "pos": "부사",
+   "ipa": "ˈoʊvərli",
+   "meaning": "지나치게, 너무"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:overly.0",
+    "en": "...filtering out sources related to non-visual creative industries due to overly restrictive relevance criteria.",
+    "ko": "지나치게 엄격한 관련성 기준 때문에 비시각 창작 산업 관련 소스를 걸러 낸다."
+   }
+  ]
+ },
+ {
+  "lemma": "overnight",
+  "kind": "vocab-core",
+  "surfaces": [
+   "overnight"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "overnight",
+   "word": "overnight",
+   "pos": "부사·형용사",
+   "ipa": "ˌoʊvərˈnaɪt",
+   "meaning": "밤사이에, 밤새 (처리되는)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#30.5",
+    "en": "Use the synchronous Messages API instead of the Batches API, because batches are limited to 500 requests per hour and 150,000 invoices cannot be processed overnight."
+   },
+   {
+    "sid": "mock04#57.7",
+    "en": "Move all rule violations to the Message Batches API and reprocess them overnight at the discounted batch rate."
+   },
+   {
+    "sid": "lesson-d4#31.5",
+    "en": "An overnight report that groups the day's support tickets by theme for the product team"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:overnight.0",
+    "en": "...a technical debt report generated overnight for the next morning.",
+    "ko": "다음 날 아침을 위해 밤사이에 생성되는 기술 부채 보고서."
+   }
+  ]
+ },
+ {
+  "lemma": "override",
+  "kind": "vocab-core",
+  "surfaces": [
+   "overriding",
+   "override",
+   "overrides"
+  ],
+  "freq": 10,
+  "vocab": {
+   "id": "override",
+   "word": "override",
+   "pos": "동사",
+   "ipa": "ˌoʊvərˈraɪd",
+   "meaning": "(기존 설정을) 덮어쓰다, 우선하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#24.8",
+    "en": "Replace the model with a larger, more capable language model that can independently re-read the entire conversation and determine whether the human review actually succeeded, overriding the flag when necessary."
+   },
+   {
+    "sid": "lesson-d2#23.4",
+    "en": "Both entries are combined for this developer, and the local entry's fields override the project entry's only where they are set"
+   },
+   {
+    "sid": "lesson-d3#1.5",
+    "en": "Copy the convention into ~/.claude/CLAUDE.md, because the user level overrides conflicting project-level instructions"
+   },
+   {
+    "sid": "lesson-d4#15.5",
+    "en": "A plain-text explanation only, because the instruction to explain overrides the forced tool"
+   },
+   {
+    "sid": "sample01#18.5",
+    "en": "Claude Code asks the user to confirm before overriding the `CLAUDE.md` instruction"
+   },
+   {
+    "sid": "lesson-d1#30.6",
+    "en": "`additionalContext`, because it provides a way to add extra information that overrides the original tool output."
+   },
+   {
+    "sid": "lesson-d3#10.3",
+    "en": "The personal skill at `~/.claude/skills/review/SKILL.md`, because a skill with the same name at the personal level overrides one from the project level."
+   },
+   {
+    "sid": "sample01#18.6",
+    "en": "`CLAUDE.md` rules override user instructions for git operations specifically"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:override.0",
+    "en": "Configure the server in project scope with a placeholder token, then instruct developers to override it in local scope.",
+    "ko": "프로젝트 범위에 플레이스홀더 토큰으로 설정한 뒤, 개발자들에게 로컬 범위에서 덮어쓰게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "oversized",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "oversized",
+   "word": "oversized",
+   "pos": "형용사",
+   "ipa": "ˌoʊvərˈsaɪzd",
+   "meaning": "너무 큰, 크기 한도를 넘은"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "overview",
+  "kind": "vocab-core",
+  "surfaces": [
+   "overviews"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "overview",
+   "word": "overview",
+   "pos": "명사",
+   "ipa": "ˈoʊvərvjuː",
+   "meaning": "개요, 큰 그림만 훑은 요약"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#22.1",
+    "en": "The synthesis subagent's reports read as generic overviews: in 30% of runs they omit the specific figures and named sources the web-search subagent surfaced."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:overview.0",
+    "en": "The synthesis subagent's reports read as generic overviews: in 30% of runs they omit the specific figures and named sources...",
+    "ko": "합성 서브에이전트가 만드는 보고서가 일반적인 개요처럼 읽힌다. 실행의 30%에서 구체적인 수치와 출처 이름이 빠져 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "overwrite",
+  "kind": "vocab-core",
+  "surfaces": [
+   "overwrite",
+   "overwritten"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "overwrite",
+   "word": "overwrite",
+   "pos": "동사",
+   "ipa": "ˌoʊvərˈraɪt",
+   "meaning": "덮어쓰다 — 기존 내용을 지우고 새 내용으로 바꿔 쓰다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#26.1",
+    "en": "The architect must prevent one subagent's findings from being overwritten by another before the coordinator can reliably aggregate the results."
+   },
+   {
+    "sid": "mock04#14.1",
+    "en": "A shared `generate-docs` skill is supposed to read source and write Markdown into `docs/`, but twice it has run `Edit` and shell `rm` and overwritten source files."
+   },
+   {
+    "sid": "lesson-d5#26.6",
+    "en": "Have every subagent overwrite the same fixed scratchpad filename each time it records a newly discovered finding."
+   },
+   {
+    "sid": "mock04#9.6",
+    "en": "Call get_customer and lookup_order again on every turn to refetch the numbers, then overwrite the stored summary with the fresh results."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:overwrite.0",
+    "en": "...but twice it has run `Edit` and shell `rm` and overwritten source files.",
+    "ko": "두 번이나 `Edit` 과 셸 `rm` 을 실행해 소스 파일을 덮어썼다."
+   }
+  ]
+ },
+ {
+  "lemma": "own",
+  "kind": "new",
+  "surfaces": [
+   "own"
+  ],
+  "freq": 62,
+  "sentences": [
+   {
+    "sid": "lesson-d1#40.0",
+    "en": "An application serves many concurrent users, each with their own long-running investigation conversation against the same repository directory."
+   },
+   {
+    "sid": "lesson-d2#16.1",
+    "en": "The synthesis agent keeps running its own web searches, and the QA agent once called the deploy tool."
+   },
+   {
+    "sid": "lesson-d3#3.1",
+    "en": "They need security and compliance instructions that every developer receives on every machine, in every repository, and that individual developers or teams cannot disable through their own settings."
+   },
+   {
+    "sid": "lesson-d4#1.0",
+    "en": "A team's single-pass code reviewer flags too many non-issues, and they want it to filter its own findings."
+   },
+   {
+    "sid": "lesson-d5#10.1",
+    "en": "The store's documented policy only describes price adjustments when the store's own website lowers a price within 14 days of purchase; it does not mention competitor pricing at all."
+   },
+   {
+    "sid": "mock04#24.1",
+    "en": "A newly configured coordinator answers research questions directly from its own knowledge instead of delegating; its attempts to invoke subagents never appear in the trace."
+   },
+   {
+    "sid": "lesson-d2#20.0",
+    "en": "Your team is rolling out a shared GitHub MCP server, and each engineer authenticates with their own personal access token."
+   },
+   {
+    "sid": "lesson-d3#9.1",
+    "en": "You want a stricter version for your own use."
+   }
+  ]
+ },
+ {
+  "lemma": "own-site",
+  "kind": "new",
+  "surfaces": [
+   "own-site"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d5#10.4",
+    "en": "Decline the request, treating the own-site adjustment terms as the full list of permitted adjustments"
+   },
+   {
+    "sid": "lesson-d5#10.5",
+    "en": "Approve the match, extending the own-site adjustment terms to a competitor's lower price as well"
+   }
+  ]
+ },
+ {
+  "lemma": "package",
+  "kind": "new",
+  "surfaces": [
+   "package",
+   "packages"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d3#1.0",
+    "en": "A developer notices that in Monday's session Claude followed the package's error-handling convention, but in Tuesday's session on the same repo it ignored it."
+   },
+   {
+    "sid": "mock04#39.2",
+    "en": "Since then a teammate moved several files and renamed a package."
+   },
+   {
+    "sid": "selfcheck-d2-kor#29.4",
+    "en": "packages/ 아래 모든 파일을 Read한다"
+   }
+  ]
+ },
+ {
+  "lemma": "page",
+  "kind": "new",
+  "surfaces": [
+   "page",
+   "pages"
+  ],
+  "freq": 15,
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.1",
+    "en": "The final report makes the right claims but can't say which URL, document or page any claim came from."
+   },
+   {
+    "sid": "lesson-d2#17.1",
+    "en": "It has started pulling arbitrary web pages that are not documents, even though its prompt says to load only documents."
+   },
+   {
+    "sid": "lesson-d4#27.1",
+    "en": "Each one embeds scanned page images, and the batch payload comes to about 400 MB."
+   },
+   {
+    "sid": "mock04#26.1",
+    "en": "After the shared search and document-analysis phase completes, stakeholders want two report variants from the same evidence — a one-page executive brief and a technical deep-dive — without re-running the costly searches."
+   },
+   {
+    "sid": "lesson-d2#4.0",
+    "en": "After a web-extraction tool was added, `analyze_content` kept its old description: \"Summarizes any content: emails, notes, web pages.\""
+   },
+   {
+    "sid": "mock04#36.1",
+    "en": "The coordinator passes each subagent's output forward verbatim: the web-search subagent's full scraped page bodies — roughly 38k tokens — flow straight into the synthesis subagent's prompt."
+   },
+   {
+    "sid": "lesson-d1#10.4",
+    "en": "Pass each finding as a structured record: the claim's content in one field, with the source URL, document name and page number in separate fields"
+   },
+   {
+    "sid": "lesson-d4#9.4",
+    "en": "Several clear-cut examples, such as \"open the API docs page\" → `search_docs`, so the model sees each tool used correctly"
+   }
+  ]
+ },
+ {
+  "lemma": "pair",
+  "kind": "new",
+  "surfaces": [
+   "pairs",
+   "paired",
+   "pair"
+  ],
+  "freq": 8,
+  "sentences": [
+   {
+    "sid": "lesson-d2#27.1",
+    "en": "Assume that the project follows a consistent and reliable naming convention that pairs each component file with its corresponding test file (for example, `Button.tsx` is tested by `Button.test.tsx`)."
+   },
+   {
+    "sid": "lesson-d4#10.0",
+    "en": "A team built a classification prompt with twenty exact input-output pairs, one for every edge case they had personally encountered in their historical data."
+   },
+   {
+    "sid": "lesson-d3#23.6",
+    "en": "Follow 2–3 concrete examples of edits, each paired with the exact document state it should produce, as the definition of correct behaviour"
+   },
+   {
+    "sid": "lesson-d5#36.3",
+    "en": "Have each subagent return a list of claims, each paired with a document name or URL and a supporting excerpt"
+   },
+   {
+    "sid": "lesson-d3#28.6",
+    "en": "A few sample rows, one with an empty cell and one with a quoted comma, each paired with the exact JSON it must become"
+   },
+   {
+    "sid": "lesson-d4#10.3",
+    "en": "Replace the twenty pairs with a handful of examples chosen to show the reasoning behind the labels"
+   },
+   {
+    "sid": "lesson-d4#10.4",
+    "en": "Add a new input-output pair whenever a customer input is misclassified, extending the list over time"
+   },
+   {
+    "sid": "lesson-d4#9.5",
+    "en": "One input-to-tool pair for every ambiguous question users have asked so far, with no explanation, so every known case is covered"
+   }
+  ]
+ },
+ {
+  "lemma": "paragraph",
+  "kind": "new",
+  "surfaces": [
+   "paragraph"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d5#36.0",
+    "en": "A market-research pipeline dispatches five research subagents, each of which reads several documents and returns a free-form paragraph summary to a coordinator agent."
+   },
+   {
+    "sid": "lesson-d4#5.3",
+    "en": "Write one prose paragraph per category and start each paragraph with the category's name"
+   },
+   {
+    "sid": "lesson-d4#6.2",
+    "en": "Write each category's criteria as its own prose paragraph, in the order security, correctness, style, and open each paragraph with a sentence naming the category it covers."
+   }
+  ]
+ },
+ {
+  "lemma": "parallel",
+  "kind": "vocab-core",
+  "surfaces": [
+   "in parallel",
+   "parallel"
+  ],
+  "freq": 10,
+  "vocab": {
+   "id": "parallel",
+   "word": "parallel",
+   "pos": "형용사",
+   "ipa": "ˈpærəlel",
+   "meaning": "병렬의, 동시에 진행하는 (in parallel: 병렬로, parallelization: 병렬화)"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#5.1",
+    "en": "The coordinator has already run get_customer and confirmed the account, then spawns subagents to check order history and refund eligibility in parallel."
+   },
+   {
+    "sid": "lesson-d1#11.5",
+    "en": "Return both Task calls in one coordinator response, so the two parallel subagents share the coordinator's analysis"
+   },
+   {
+    "sid": "lesson-d1#20.6",
+    "en": "Subagents running in parallel cannot read account data, so the investigations have to run one after another"
+   },
+   {
+    "sid": "lesson-d1#21.3",
+    "en": "It is unsafe, because every registered PreToolUse hook always executes in parallel for every tool call in the session regardless of its matcher, so the file could be read before it is ever written."
+   },
+   {
+    "sid": "lesson-d1#22.5",
+    "en": "Hooks that match the same event run in parallel, in no guaranteed order, so Hook B cannot rely on Hook A having run. Each gate has to read the state it needs on its own"
+   },
+   {
+    "sid": "lesson-d1#36.2",
+    "en": "An orchestrator that spawns four subagents in parallel up front, one each for the API, the queue, the database and the payment service, and then merges their reports"
+   },
+   {
+    "sid": "lesson-d1#37.4",
+    "en": "A fixed set of parallel subagents for the database, cache and load balancer that report to a merging step for diagnosis"
+   },
+   {
+    "sid": "lesson-d1#6.3",
+    "en": "Run all five subagents in parallel so each ticket finishes in the time of the slowest one"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:parallel.0",
+    "en": "...then spawns subagents to check order history and refund eligibility in parallel.",
+    "ko": "주문 이력과 환불 자격을 병렬로 확인하는 서브에이전트들을 생성한다."
+   }
+  ]
+ },
+ {
+  "lemma": "parameter",
+  "kind": "vocab-core",
+  "surfaces": [
+   "parameters",
+   "parameter"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "parameter",
+   "word": "parameter",
+   "pos": "명사",
+   "ipa": "pəˈræmɪtər",
+   "meaning": "매개변수, 파라미터 — 함수·도구에 넘기는 입력 항목"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#3.1",
+    "en": "In testing, the model frequently passes malformed date strings (`\"next Tuesday\"`, `\"ASAP\"`) and occasionally swaps the `from` and `to` parameters."
+   },
+   {
+    "sid": "lesson-d1#3.5",
+    "en": "The tools parameter must be dropped from requests after the fifth call, leaving Claude unable to request tool_use for the rest of the session"
+   },
+   {
+    "sid": "lesson-d2#25.3",
+    "en": "Rewrite the description to say what it returns, when to prefer it over Grep, and what each parameter means"
+   },
+   {
+    "sid": "lesson-d2#3.5",
+    "en": "input_examples replace the input_schema, so the parameter descriptions would be lost"
+   },
+   {
+    "sid": "lesson-d1#24.7",
+    "en": "Modify the PreToolUse hook to inspect the explicit verification result included in the `process_refund` tool call parameters, confirming that the human review expressly passed, instead of relying on a separate boolean flag that can be set incorrectly."
+   },
+   {
+    "sid": "lesson-d2#7.3",
+    "en": "The reviewer is right. Keep analyze_document and add an action parameter with the values extract, summarize and verify, the same pattern used for pull request tools."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:parameter.0",
+    "en": "...and occasionally swaps the `from` and `to` parameters.",
+    "ko": "가끔 `from` 과 `to` 파라미터를 뒤바꾼다."
+   }
+  ]
+ },
+ {
+  "lemma": "paraphrase",
+  "kind": "vocab-core",
+  "surfaces": [
+   "paraphrasing"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "paraphrase",
+   "word": "paraphrase",
+   "pos": "동사",
+   "ipa": "ˈpærəfreɪz",
+   "meaning": "바꿔 말하다, 의역하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#4.0",
+    "en": "You are redesigning a billing agent whose running summary keeps paraphrasing refund amounts, invoice numbers and promised deadlines."
+   }
+  ]
+ },
+ {
+  "lemma": "parcel",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "parcel",
+   "word": "parcel",
+   "pos": "명사",
+   "ipa": "ˈpɑːrsl",
+   "meaning": "소포, 택배"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "parent",
+  "kind": "new",
+  "surfaces": [
+   "parent"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d1#20.5",
+    "en": "The fix is to give the subagent the SubagentStop hook, which shares the parent's state with it"
+   },
+   {
+    "sid": "lesson-d5#14.7",
+    "en": "The raw connection errors, because the SDK forwards them to the parent along with the subagent's final message"
+   },
+   {
+    "sid": "lesson-d1#41.4",
+    "en": "The fork runs in the background. Resume the original session_id to see the OAuth2 exploration, since forks report back to their parent"
+   }
+  ]
+ },
+ {
+  "lemma": "parenthesis",
+  "kind": "new",
+  "surfaces": [
+   "parentheses"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#6.3",
+    "en": "Merge the criteria into one bulleted list sorted by severity, with the category name in parentheses at the end of each bullet and the examples nested beneath it."
+   }
+  ]
+ },
+ {
+  "lemma": "parse",
+  "kind": "vocab-core",
+  "surfaces": [
+   "parsing",
+   "parse",
+   "parsed"
+  ],
+  "freq": 16,
+  "vocab": {
+   "id": "parse",
+   "word": "parse",
+   "pos": "동사",
+   "ipa": "pɑːrs",
+   "meaning": "파싱하다 — 텍스트를 구조에 맞게 분석해 읽어 내다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#17.0",
+    "en": "A team building a resume-parsing tool wants to guarantee that structured candidate data is extracted via a `parse_resume` tool on the current turn."
+   },
+   {
+    "sid": "lesson-d5#33.0",
+    "en": "A team building a resume-parsing pipeline wants Claude to output a confidence score for each extracted field so reviewers can prioritize their limited time."
+   },
+   {
+    "sid": "mock04#53.1",
+    "en": "Production logs show that 8% of extraction responses fail the downstream JSON.parse() step because Claude wraps its output in markdown code fences or prepends a sentence like \"Here is the extracted data:\"."
+   },
+   {
+    "sid": "lesson-d3#25.4",
+    "en": "Name a widely used CSV parsing library in the prompt and tell Claude to build the converter on it, keeping the library's default handling of empty cells and quoted commas, then review the output."
+   },
+   {
+    "sid": "sample01#1.4",
+    "en": "The engineer is parsing Claude's conversational text output to detect tool calls instead of using the structural `stop_reason` and `tool_use` content blocks"
+   },
+   {
+    "sid": "mock04#54.1",
+    "en": "After migrating to tool_use with a strict JSON schema, JSON parse failures dropped to zero."
+   },
+   {
+    "sid": "lesson-d3#28.4",
+    "en": "An instruction to build on a well-known CSV parsing library and accept its default handling of these cases"
+   },
+   {
+    "sid": "lesson-d4#2.6",
+    "en": "The word \"confidence\" is not in the set of tokens the model is trained to parse for output constraints, so the instruction is treated as decorative text and ignored, leaving the original behavior unchanged."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:parse.0",
+    "en": "The engineer is parsing Claude's conversational text output to detect tool calls instead of using the structural `stop_reason` and `tool_use` content blocks",
+    "ko": "구조화된 `stop_reason` 과 `tool_use` 콘텐츠 블록 대신, Claude의 대화형 텍스트 출력을 파싱해 도구 호출을 감지하고 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "part",
+  "kind": "new",
+  "surfaces": [
+   "parts",
+   "part"
+  ],
+  "freq": 12,
+  "sentences": [
+   {
+    "sid": "lesson-d1#20.0",
+    "en": "A coordinator splits a three-part complaint and spawns one subagent per concern."
+   },
+   {
+    "sid": "lesson-d2#28.7",
+    "en": "Call Write with just the corrected block so that only that part of the file is replaced"
+   },
+   {
+    "sid": "lesson-d3#22.4",
+    "en": "Plan mode first, because the hard part is choosing between valid approaches, and that choice should be settled before any edits"
+   },
+   {
+    "sid": "lesson-d4#29.5",
+    "en": "doc#2026#report#final#v2, since separating each descriptive segment with a distinct punctuation mark avoids any ambiguity about where one part ends"
+   },
+   {
+    "sid": "lesson-d5#6.6",
+    "en": "Split the combined input into two shorter parts, and pass both parts to the synthesis step as separate inputs in order"
+   },
+   {
+    "sid": "mock04#36.5",
+    "en": "Keep passing the raw pages but add a prompt instruction telling synthesis to focus on the important parts and ignore boilerplate."
+   },
+   {
+    "sid": "lesson-d1#36.0",
+    "en": "Customers report that some paid orders vanish without a trace, and nobody knows which part of the system drops them."
+   },
+   {
+    "sid": "lesson-d4#3.4",
+    "en": "Skip it, since caching is an internal detail rather than part of the function's contract, so the docstring's mention of it falls outside the criterion."
+   }
+  ]
+ },
+ {
+  "lemma": "partial",
+  "kind": "vocab-core",
+  "surfaces": [
+   "partial",
+   "partially"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "partial",
+   "word": "partial",
+   "pos": "형용사",
+   "ipa": "ˈpɑːrʃl",
+   "meaning": "부분적인, 일부만의"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#6.1",
+    "en": "process_refund handles both full order refunds and small partial goodwill credits."
+   },
+   {
+    "sid": "lesson-d1#9.4",
+    "en": "The coordinator began synthesis before the last subagents had reported back, so the report was built from partial findings"
+   },
+   {
+    "sid": "lesson-d2#13.4",
+    "en": "Return the 47 enriched records as partial results, with a report listing the 3 unresolved customers, the permission error and the lookups attempted"
+   },
+   {
+    "sid": "lesson-d5#17.3",
+    "en": "The string omits why the search failed; return an error category, the attempted query, and the partial results gathered"
+   },
+   {
+    "sid": "lesson-d5#18.2",
+    "en": "Failure category, the attempted action, partial results gathered, and suggested alternative approaches"
+   },
+   {
+    "sid": "mock04#59.4",
+    "en": "Resubmit the entire 50,000-document batch, since Batch API jobs are atomic and cannot be reprocessed partially or selectively."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:partial.0",
+    "en": "...only propagate errors it cannot resolve to the coordinator, including what was attempted and any partial results.",
+    "ko": "스스로 해결하지 못한 오류만, 시도한 내역과 부분 결과를 함께 담아 코디네이터에 넘긴다."
+   }
+  ]
+ },
+ {
+  "lemma": "partial-credit",
+  "kind": "vocab-core",
+  "surfaces": [
+   "partial credit",
+   "partial-credit"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "partial-credit",
+   "word": "partial-credit",
+   "pos": "명사구",
+   "ipa": "ˌpɑːrʃl ˈkredɪt",
+   "meaning": "부분 크레딧 — 전액 환불 대신 일부 금액만 보상으로 주는 것"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#6.2",
+    "en": "Logs show the agent issues full refunds when only a partial credit was warranted in 17% of cases because it cannot tell from the single tool which behavior it is invoking."
+   },
+   {
+    "sid": "mock04#6.6",
+    "en": "Add three few-shot partial-credit conversations to the system prompt and keep the single process_refund tool unchanged."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:partial-credit.0",
+    "en": "Add three few-shot partial-credit conversations to the system prompt and keep the single process_refund tool unchanged.",
+    "ko": "부분 크레딧 대화 세 개를 few-shot 예시로 시스템 프롬프트에 넣고, 단일 `process_refund` 도구는 그대로 둔다."
+   }
+  ]
+ },
+ {
+  "lemma": "particular",
+  "kind": "vocab-core",
+  "surfaces": [
+   "particular"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "particular",
+   "word": "particular",
+   "pos": "형용사",
+   "ipa": "pərˈtɪkjələr",
+   "meaning": "특정한, 바로 그 (in particular: 특히)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#26.0",
+    "en": "A security review assistant extracts structured findings from source code and developers frequently dismiss a large share of the findings tied to one particular helper function used for input sanitization."
+   },
+   {
+    "sid": "lesson-d5#35.0",
+    "en": "Reviewers of your research pipeline's final report cannot tell which document supports any particular claim."
+   },
+   {
+    "sid": "mock04#44.1",
+    "en": "An engineer asks the tool to determine which of 30 services emits a particular Kafka event."
+   },
+   {
+    "sid": "lesson-d3#19.5",
+    "en": "The architect's local settings have disabled every single permission check for the remainder of this particular session entirely"
+   },
+   {
+    "sid": "mock04#50.1",
+    "en": "The CI reviewer posts naming-convention and style comments, but developers report that roughly 60% of these particular comments are wrong or trivial."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:particular.0",
+    "en": "An engineer asks the tool to determine which of 30 services emits a particular Kafka event.",
+    "ko": "한 엔지니어가 도구에게 30개 서비스 중 어느 서비스가 특정 Kafka 이벤트를 발행하는지 알아내 달라고 요청한다."
+   }
+  ]
+ },
+ {
+  "lemma": "particularly",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "particularly",
+   "word": "particularly",
+   "pos": "부사",
+   "ipa": "pərˈtɪkjələrli",
+   "meaning": "특히"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:particularly.0",
+    "en": "The agent sometimes selects `get_customer` when `lookup_order` would be more appropriate, particularly for ambiguous requests.",
+    "ko": "에이전트가 특히 모호한 요청에서 `lookup_order` 가 더 적절한데도 `get_customer` 를 고르기도 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "partition",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "partition",
+   "word": "partition",
+   "pos": "동사·명사",
+   "ipa": "pɑːrˈtɪʃn",
+   "meaning": "(겹치지 않게) 나누다, 분할(하다)"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:partition.0",
+    "en": "Have the coordinator explicitly partition the research space before delegation.",
+    "ko": "코디네이터가 위임하기 전에 조사 공간을 명시적으로 분할하게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "partly",
+  "kind": "new",
+  "surfaces": [
+   "partly"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#14.0",
+    "en": "A research agent has grown from 5 tools to 18, and several of them now partly overlap."
+   }
+  ]
+ },
+ {
+  "lemma": "partway",
+  "kind": "vocab-core",
+  "surfaces": [
+   "partway"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "partway",
+   "word": "partway",
+   "pos": "부사",
+   "ipa": "ˌpɑːrtˈweɪ",
+   "meaning": "도중에, 중간쯤에서 (partway through: ~하는 도중에)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#16.0",
+    "en": "A filings subagent's database times out partway through its work."
+   },
+   {
+    "sid": "lesson-d1#3.2",
+    "en": "The loop can halt while stop_reason is still \"tool_use\", leaving a task Claude was partway through unfinished and its answer incomplete"
+   },
+   {
+    "sid": "lesson-d3#19.2",
+    "en": "Plan mode has silently switched over to acceptEdits mode partway through this session, which is why operations proceed without prompts"
+   }
+  ]
+ },
+ {
+  "lemma": "pass",
+  "kind": "vocab-core",
+  "surfaces": [
+   "passes",
+   "passed",
+   "passing",
+   "pass"
+  ],
+  "freq": 70,
+  "vocab": {
+   "id": "pass",
+   "word": "pass",
+   "pos": "동사",
+   "ipa": "pæs",
+   "meaning": "① (값·맥락을) 넘기다, 전달하다 ② (테스트를) 통과하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#35.1",
+    "en": "Reviewers have noticed that when a single pass tries to hold all 40 files in context at once, subtle cross-file issues are missed and comments become generic."
+   },
+   {
+    "sid": "lesson-d2#9.0",
+    "en": "Fifteen attendees are passed to `create_calendar_event`, and the calendar refuses with \"Too many attendees (max 10)\"."
+   },
+   {
+    "sid": "lesson-d3#20.0",
+    "en": "A team lead reviewing a completed library migration finds that early file conversions used one pattern, while later files in the same migration used a different, incompatible pattern, forcing a second pass to reconcile them."
+   },
+   {
+    "sid": "lesson-d4#1.0",
+    "en": "A team's single-pass code reviewer flags too many non-issues, and they want it to filter its own findings."
+   },
+   {
+    "sid": "lesson-d5#6.0",
+    "en": "A research assistant aggregates outputs from five subagents (market sizing, competitor pricing, regulatory risk, customer sentiment, distribution channels) into one long combined document that is then passed to a synthesis step."
+   },
+   {
+    "sid": "mock04#21.1",
+    "en": "In a long debugging session Claude repeatedly runs the full test suite; each run dumps roughly 2,000 lines of passing-test noise into the context."
+   },
+   {
+    "sid": "sample01#3.1",
+    "en": "In testing, the model frequently passes malformed date strings (`\"next Tuesday\"`, `\"ASAP\"`) and occasionally swaps the `from` and `to` parameters."
+   },
+   {
+    "sid": "lesson-d3#24.1",
+    "en": "After the first pass, records with a null middle-name field are being dropped instead of migrated with an empty string."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:pass.0",
+    "en": "Each spawned agent starts with a clean empty message history — context must be passed explicitly",
+    "ko": "생성된 각 에이전트는 비어 있는 새 메시지 기록으로 시작한다 — 맥락은 명시적으로 전달해야 한다."
+   },
+   {
+    "vid": "vocab:pass.1",
+    "en": "In testing, the model frequently passes malformed date strings...",
+    "ko": "테스트에서 모델이 날짜에 잘못된 문자열을 자주 넣는다."
+   }
+  ]
+ },
+ {
+  "lemma": "passage",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "passage",
+   "word": "passage",
+   "pos": "명사",
+   "ipa": "ˈpæsɪdʒ",
+   "meaning": "(글의) 구절, 단락"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "passed-in",
+  "kind": "vocab-core",
+  "surfaces": [
+   "passed-in"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "passed-in",
+   "word": "passed-in",
+   "pos": "형용사",
+   "ipa": "ˌpæst ˈɪn",
+   "meaning": "(입력·인자로) 전달받은, 넘겨받은"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#36.2",
+    "en": "Synthesis quality has dropped and it now misses findings buried in the middle of the passed-in content (lost-in-the-middle)."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:passed-in.0",
+    "en": "...it now misses findings buried in the middle of the passed-in content (lost-in-the-middle).",
+    "ko": "이제 전달된 내용의 중간에 묻힌 발견 사항을 놓친다(lost-in-the-middle)."
+   }
+  ]
+ },
+ {
+  "lemma": "passenger",
+  "kind": "new",
+  "surfaces": [
+   "passenger"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d5#13.0",
+    "en": "An airline support agent searches for a passenger by name and flight route to check a baggage claim."
+   },
+   {
+    "sid": "lesson-d5#13.1",
+    "en": "The lookup tool returns three passenger records with the same name on that route, each with a different booking reference."
+   }
+  ]
+ },
+ {
+  "lemma": "passing-test",
+  "kind": "new",
+  "surfaces": [
+   "passing-test"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "mock04#21.1",
+    "en": "In a long debugging session Claude repeatedly runs the full test suite; each run dumps roughly 2,000 lines of passing-test noise into the context."
+   },
+   {
+    "sid": "mock04#21.6",
+    "en": "Enable extended thinking so Claude reasons harder over the full accumulated output, including every passing-test line."
+   }
+  ]
+ },
+ {
+  "lemma": "past",
+  "kind": "new",
+  "surfaces": [
+   "past"
+  ],
+  "freq": 6,
+  "sentences": [
+   {
+    "sid": "lesson-d4#31.2",
+    "en": "A weekly compliance audit that summarizes the past week's access logs for a Monday review meeting"
+   },
+   {
+    "sid": "lesson-d5#19.7",
+    "en": "The subagent kept the pipeline running past a credential error, so the other subagents produced results that should have been discarded"
+   },
+   {
+    "sid": "mock04#3.7",
+    "en": "Fine-tune the model on historical tickets so it learns the $500 threshold from past manager approvals and applies it."
+   },
+   {
+    "sid": "lesson-d5#30.3",
+    "en": "Measure how often fields at each score level are actually right on a labeled validation set of past documents, then set the cut-off where observed accuracy meets the target."
+   },
+   {
+    "sid": "mock04#51.5",
+    "en": "Fine-tune a dedicated model on the team's full history of past review decisions and deploy it"
+   },
+   {
+    "sid": "lesson-d5#31.7",
+    "en": "Add a prompt rule that assigns the most common unit from past documents to a bare weight number, and release those values to the output without a reviewer."
+   }
+  ]
+ },
+ {
+  "lemma": "paste",
+  "kind": "new",
+  "surfaces": [
+   "paste",
+   "pasted"
+  ],
+  "freq": 11,
+  "sentences": [
+   {
+    "sid": "lesson-d2#5.0",
+    "en": "A tool named `analyze_content` was originally built to summarize any pasted content, including emails and internal notes, but its description was never updated after a web-specific successor tool was introduced."
+   },
+   {
+    "sid": "lesson-d1#14.5",
+    "en": "Paste the researcher's complete findings and source details into the prompt of the Task call that spawns the synthesis subagent"
+   },
+   {
+    "sid": "lesson-d3#1.6",
+    "en": "Paste the convention into every prompt, because Claude re-reads CLAUDE.md from disk only once a week"
+   },
+   {
+    "sid": "lesson-d5#21.4",
+    "en": "Paste every phase-1 subagent's full report verbatim into each phase-2 prompt so that no detail is lost"
+   },
+   {
+    "sid": "lesson-d2#6.0",
+    "en": "A tool named `analyze_content`, originally built for summarizing pasted text, has its description copied almost verbatim onto a newer tool, `analyze_document`, meant for uploaded PDFs."
+   },
+   {
+    "sid": "lesson-d1#18.4",
+    "en": "Paste the web-researcher's full notes and source details into the synthesis subagent's prompt text, so it can write the report from that material"
+   },
+   {
+    "sid": "lesson-d3#26.6",
+    "en": "Paste only the applyDiscount and addTax failures and leave out test_orderTotal so it doesn't distract Claude from the real bugs"
+   },
+   {
+    "sid": "lesson-d1#39.5",
+    "en": "Run claude in the project directory and paste a summary of yesterday's findings first"
+   }
+  ]
+ },
+ {
+  "lemma": "patent",
+  "kind": "vocab-core",
+  "surfaces": [
+   "patents",
+   "patent"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "patent",
+   "word": "patent",
+   "pos": "명사",
+   "ipa": "ˈpætnt",
+   "meaning": "특허"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#14.0",
+    "en": "A research coordinator sends a patents subagent to search a patent database."
+   },
+   {
+    "sid": "lesson-d5#14.2",
+    "en": "The subagent retries twice and then returns only: \"Patent search could not be completed.\""
+   },
+   {
+    "sid": "lesson-d5#15.0",
+    "en": "In a four-source research pipeline, the patent database sometimes rejects credentials while the other sources keep working."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:patent.0",
+    "en": "...and patent databases returned \"Connection timeout.\"",
+    "ko": "특허 데이터베이스는 \"연결 시간 초과\"를 반환했다."
+   }
+  ]
+ },
+ {
+  "lemma": "path",
+  "kind": "vocab-core",
+  "surfaces": [
+   "paths",
+   "path"
+  ],
+  "freq": 19,
+  "vocab": {
+   "id": "path",
+   "word": "path",
+   "pos": "명사",
+   "ipa": "pæθ",
+   "meaning": "① (파일) 경로 ② (일이 흘러가는) 길, 경로"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#37.1",
+    "en": "The number of logs, services, and code paths to inspect cannot be known ahead of time."
+   },
+   {
+    "sid": "lesson-d3#14.1",
+    "en": "Which paths frontmatter correctly scopes the rule to this requirement?"
+   },
+   {
+    "sid": "lesson-d5#24.1",
+    "en": "Running the search directly would flood the main conversation with thousands of matched paths it will not need again."
+   },
+   {
+    "sid": "mock04#39.3",
+    "en": "The resumed agent replays cached Read and Grep results from the old history and proposes edits against paths that no longer exist."
+   },
+   {
+    "sid": "lesson-d2#27.3",
+    "en": "Use Glob to list component files and test files separately by their naming pattern, then compare the two path lists for gaps"
+   },
+   {
+    "sid": "lesson-d4#3.3",
+    "en": "Skip it, since the code still returns correct data and the slower, uncached path is a performance matter for a separate review, not a comment fault."
+   },
+   {
+    "sid": "selfcheck-d3-kor#32.1",
+    "en": "`--output-format json`과 path·line·severity·message를 필수로 한 `--json-schema`를 주고 `structured_output`을 읽는다"
+   },
+   {
+    "sid": "lesson-d2#29.3",
+    "en": "Call Write with the updated log line and the file path, which replaces just that line in the function that needs the change"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:path.0",
+    "en": "...and proposes edits against paths that no longer exist.",
+    "ko": "더는 존재하지 않는 경로를 대상으로 수정을 제안한다."
+   }
+  ]
+ },
+ {
+  "lemma": "patient",
+  "kind": "new",
+  "surfaces": [
+   "patient"
+  ],
+  "freq": 6,
+  "sentences": [
+   {
+    "sid": "lesson-d4#13.1",
+    "en": "The extraction pipeline's examples all show crisp doses such as \"400 mg\", and the output keeps showing precise amounts the patient never gave."
+   },
+   {
+    "sid": "lesson-d5#9.1",
+    "en": "A patient messages the assistant in a clearly irritated tone about needing to reschedule a routine appointment with no clinical urgency."
+   },
+   {
+    "sid": "lesson-d5#9.2",
+    "en": "The assistant can complete the rescheduling directly, and the patient has not asked to speak with a staff member."
+   },
+   {
+    "sid": "lesson-d4#21.5",
+    "en": "A response that puts the patient's date of birth under `guardian` instead of `patient`"
+   },
+   {
+    "sid": "lesson-d5#9.7",
+    "en": "Ask the patient to confirm they do not want a staff member before proceeding with the reschedule."
+   },
+   {
+    "sid": "lesson-d5#9.0",
+    "en": "A healthcare scheduling assistant follows a configured escalation policy: when a request is within the assistant's capability and the patient has not asked for a staff member, the assistant should acknowledge any expressed frustration, complete the request directly, and offer escalation to a staff member as an option rather than a requirement -- reserving mandatory escalation for requests it cannot complete, cases needing clinical judgment, or an explicit request for a human."
+   }
+  ]
+ },
+ {
+  "lemma": "pattern",
+  "kind": "vocab-core",
+  "surfaces": [
+   "pattern",
+   "patterns"
+  ],
+  "freq": 19,
+  "vocab": {
+   "id": "pattern",
+   "word": "pattern",
+   "pos": "명사",
+   "ipa": "ˈpætərn",
+   "meaning": "패턴, 반복되는 형식·유형"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#6.1",
+    "en": "Following the pattern of renaming a tool to eliminate overlap, what should the team do?"
+   },
+   {
+    "sid": "lesson-d3#18.0",
+    "en": "Midway through planning a multi-phase migration, Claude has to find every usage pattern of the old library across hundreds of files before it can propose an approach."
+   },
+   {
+    "sid": "lesson-d1#23.3",
+    "en": "Only process_refund, because the pattern ends with the word refund"
+   },
+   {
+    "sid": "lesson-d4#12.4",
+    "en": "The examples unintentionally taught an unrelated pattern tied to length and language; diversify them"
+   },
+   {
+    "sid": "mock04#51.4",
+    "en": "Write an exhaustive list in CLAUDE.md of every code pattern and the correct verdict for each one"
+   },
+   {
+    "sid": "lesson-d3#20.0",
+    "en": "A team lead reviewing a completed library migration finds that early file conversions used one pattern, while later files in the same migration used a different, incompatible pattern, forcing a second pass to reconcile them."
+   },
+   {
+    "sid": "lesson-d1#23.5",
+    "en": "All three tools, because a pattern containing an asterisk matches every tool"
+   },
+   {
+    "sid": "lesson-d2#27.3",
+    "en": "Use Glob to list component files and test files separately by their naming pattern, then compare the two path lists for gaps"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:pattern.0",
+    "en": "Write an exhaustive list in CLAUDE.md of every code pattern and the correct verdict for each one",
+    "ko": "CLAUDE.md에 모든 코드 패턴과 각각의 올바른 판정을 망라한 목록을 작성한다."
+   }
+  ]
+ },
+ {
+  "lemma": "pause",
+  "kind": "new",
+  "surfaces": [
+   "pause"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#27.6",
+    "en": "It is accepted, but its requests use up the Messages API rate limits, so the team should pause synchronous traffic while it runs"
+   }
+  ]
+ },
+ {
+  "lemma": "pay",
+  "kind": "new",
+  "surfaces": [
+   "paid",
+   "paying"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d1#36.0",
+    "en": "Customers report that some paid orders vanish without a trace, and nobody knows which part of the system drops them."
+   },
+   {
+    "sid": "lesson-d3#13.2",
+    "en": "The team wants sessions spent on frontend work to stop paying the context cost of those conventions."
+   }
+  ]
+ }
+]

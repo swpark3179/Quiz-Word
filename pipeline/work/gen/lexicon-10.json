@@ -1,0 +1,964 @@
+[
+ {
+  "lemma": "correct",
+  "skip": null,
+  "word": "correct",
+  "pos": ["형용사", "동사"],
+  "ipa": "kəˈrekt",
+  "meaning": "① 올바른, 정확한 ② (잘못을) 바로잡다, 고치다",
+  "short": "올바른, 정확한",
+  "senses": [
+   { "pos": "형용사", "ko": "올바른, 정확한" },
+   { "pos": "동사", "ko": "(잘못을) 바로잡다, 고치다" }
+  ],
+  "forms": ["corrects", "corrected", "correcting", "correctly", "correctness", "correction"],
+  "synonyms": ["right", "accurate", "proper"],
+  "domain": "정확·품질·신뢰",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#17.2", "surface": "correct", "pos": "형용사", "sense": "올바른, 정확한" },
+   { "sid": "lesson-d3#30.2", "surface": "correct", "pos": "형용사", "sense": "올바른, 정확한" },
+   { "sid": "mock04#1.4", "surface": "correct", "pos": "형용사", "sense": "올바른, 정확한" },
+   { "sid": "sample01#2.3", "surface": "correct", "pos": "형용사", "sense": "올바른, 정확한" }
+  ]
+ },
+ {
+  "lemma": "correctly",
+  "skip": null,
+  "word": "correctly",
+  "pos": ["부사"],
+  "ipa": "kəˈrektli",
+  "meaning": "올바르게, 정확하게",
+  "short": "올바르게, 정확하게",
+  "senses": [
+   { "pos": "부사", "ko": "올바르게, 정확하게" }
+  ],
+  "forms": ["correct", "incorrectly"],
+  "synonyms": ["properly", "accurately", "right"],
+  "domain": "정확·품질·신뢰",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#1.2", "surface": "correctly", "pos": "부사", "sense": "올바르게, 정확하게" },
+   { "sid": "lesson-d5#27.1", "surface": "correctly", "pos": "부사", "sense": "올바르게, 정확하게" },
+   { "sid": "mock04#8.1", "surface": "correctly", "pos": "부사", "sense": "올바르게, 정확하게" },
+   { "sid": "lesson-d4#22.0", "surface": "correctly", "pos": "부사", "sense": "올바르게, 정확하게" }
+  ]
+ },
+ {
+  "lemma": "correctness",
+  "skip": null,
+  "word": "correctness",
+  "pos": ["명사"],
+  "ipa": "kəˈrektnəs",
+  "meaning": "① 정확성, 올바름 — (코드·결과가) 맞게 동작하는 정도 ② (언행의) 적절함",
+  "short": "정확성, 올바름",
+  "senses": [
+   { "pos": "명사", "ko": "정확성, 올바름" },
+   { "pos": "명사", "ko": "(언행의) 적절함" }
+  ],
+  "forms": ["correct"],
+  "synonyms": ["accuracy"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#5.0", "surface": "correctness", "pos": "명사", "sense": "정확성, 올바름" },
+   { "sid": "lesson-d3#27.5", "surface": "correctness", "pos": "명사", "sense": "정확성, 올바름" },
+   { "sid": "lesson-d4#7.1", "surface": "correctness", "pos": "명사", "sense": "정확성, 올바름" }
+  ]
+ },
+ {
+  "lemma": "correlation",
+  "skip": null,
+  "word": "correlation",
+  "pos": ["명사"],
+  "ipa": "ˌkɔːrəˈleɪʃn",
+  "meaning": "상관관계, (서로) 대응·연결",
+  "short": "상관관계, 대응·연결",
+  "senses": [
+   { "pos": "명사", "ko": "(요청과 결과의) 대응·연결" },
+   { "pos": "명사", "ko": "상관관계" },
+   { "pos": "동사", "ko": "연관 짓다, 대응시키다" }
+  ],
+  "forms": ["correlate", "correlates", "correlated", "correlating"],
+  "synonyms": ["association", "link"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#8.4", "surface": "correlation", "pos": "명사", "sense": "(요청과 결과의) 대응·연결" },
+   { "sid": "lesson-d4#29.0", "surface": "correlate", "pos": "동사", "sense": "연관 짓다, 대응시키다" },
+   { "sid": "lesson-d1#36.3", "surface": "correlates", "pos": "동사", "sense": "연관 짓다, 대응시키다" },
+   { "sid": "vocab:correlation.0", "surface": "correlation", "pos": "명사", "sense": "(요청과 결과의) 대응·연결" }
+  ]
+ },
+ {
+  "lemma": "correspond",
+  "skip": null,
+  "word": "correspond",
+  "pos": ["동사"],
+  "ipa": "ˌkɔːrəˈspɑːnd",
+  "meaning": "① (~에) 해당하다, 대응하다 ② (편지를) 주고받다",
+  "short": "해당하다, 대응하다",
+  "senses": [
+   { "pos": "동사", "ko": "(~에) 해당하다, 대응하다" },
+   { "pos": "형용사", "ko": "해당하는, 대응하는" },
+   { "pos": "동사", "ko": "(편지를) 주고받다" }
+  ],
+  "forms": ["corresponds", "corresponded", "corresponding", "correspondence"],
+  "synonyms": ["match", "relate to"],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#27.1", "surface": "corresponding", "pos": "형용사", "sense": "해당하는, 대응하는" }
+  ]
+ },
+ {
+  "lemma": "corrupt",
+  "skip": null,
+  "word": "corrupt",
+  "pos": ["동사", "형용사"],
+  "ipa": "kəˈrʌpt",
+  "meaning": "(데이터를) 손상시키다 / 손상된",
+  "short": "손상시키다, 손상된",
+  "senses": [
+   { "pos": "동사", "ko": "(데이터를) 손상시키다, 망가뜨리다" },
+   { "pos": "형용사", "ko": "(데이터가) 손상된" },
+   { "pos": "형용사", "ko": "부패한, 타락한" }
+  ],
+  "forms": ["corrupts", "corrupted", "corrupting", "corruption"],
+  "synonyms": ["damage", "break"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#56.2", "surface": "corrupting", "pos": "동사", "sense": "(데이터를) 손상시키다, 망가뜨리다" },
+   { "sid": "vocab:corrupt.0", "surface": "corrupted", "pos": "형용사", "sense": "(데이터가) 손상된" }
+  ]
+ },
+ {
+  "lemma": "cost",
+  "skip": null,
+  "word": "cost",
+  "pos": ["명사", "동사"],
+  "ipa": "kɔːst",
+  "meaning": "① 비용 ② (비용이) 들다 ③ 대가, 희생",
+  "short": "비용",
+  "senses": [
+   { "pos": "명사", "ko": "비용" },
+   { "pos": "동사", "ko": "(비용이) 들다" },
+   { "pos": "명사", "ko": "대가, 희생" }
+  ],
+  "forms": ["costs", "costing", "costly"],
+  "synonyms": ["expense", "price"],
+  "domain": "비즈니스·업무",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#6.1", "surface": "costs", "pos": "명사", "sense": "비용" },
+   { "sid": "sample01#9.0", "surface": "costs", "pos": "동사", "sense": "(비용이) 들다" },
+   { "sid": "lesson-d2#30.1", "surface": "cost", "pos": "명사", "sense": "비용" },
+   { "sid": "mock04#49.2", "surface": "cost", "pos": "명사", "sense": "비용" }
+  ]
+ },
+ {
+  "lemma": "costly",
+  "skip": null,
+  "word": "costly",
+  "pos": ["형용사"],
+  "ipa": "ˈkɔːstli",
+  "meaning": "비용이 많이 드는, 대가가 큰",
+  "short": "비용이 많이 드는",
+  "senses": [
+   { "pos": "형용사", "ko": "비용이 많이 드는" },
+   { "pos": "형용사", "ko": "대가가 큰, 손실이 큰" }
+  ],
+  "forms": ["costlier", "costliest"],
+  "synonyms": ["expensive", "pricey"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#26.1", "surface": "costly", "pos": "형용사", "sense": "비용이 많이 드는" }
+  ]
+ },
+ {
+  "lemma": "count",
+  "skip": null,
+  "word": "count",
+  "pos": ["명사", "동사"],
+  "ipa": "kaʊnt",
+  "meaning": "① 개수, 횟수 ② (수를) 세다 ③ (~으로) 간주되다, 인정되다",
+  "short": "개수, 횟수",
+  "senses": [
+   { "pos": "명사", "ko": "개수, 횟수" },
+   { "pos": "동사", "ko": "(수를) 세다" },
+   { "pos": "동사", "ko": "(~으로) 간주되다, 인정되다" },
+   { "pos": "동사", "ko": "중요하다" }
+  ],
+  "forms": ["counts", "counted", "counting"],
+  "synonyms": ["number", "total", "tally"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#15.2", "surface": "count", "pos": "명사", "sense": "개수, 횟수" },
+   { "sid": "lesson-d2#27.0", "surface": "count", "pos": "동사", "sense": "(수를) 세다" },
+   { "sid": "lesson-d2#17.3", "surface": "count", "pos": "동사", "sense": "(~으로) 간주되다, 인정되다" },
+   { "sid": "mock04#29.6", "surface": "count", "pos": "명사", "sense": "개수, 횟수" }
+  ]
+ },
+ {
+  "lemma": "counter",
+  "skip": null,
+  "word": "counter",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈkaʊntər",
+  "meaning": "① 카운터, 계수기 (횟수를 세는 변수) ② 계산대, 판매대 ③ 반박하다, 대응하다",
+  "short": "카운터, 계수기",
+  "senses": [
+   { "pos": "명사", "ko": "카운터, 계수기" },
+   { "pos": "명사", "ko": "계산대, 판매대" },
+   { "pos": "동사", "ko": "반박하다, 대응하다" }
+  ],
+  "forms": ["counters"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#3.4", "surface": "counter", "pos": "명사", "sense": "카운터, 계수기" }
+  ]
+ },
+ {
+  "lemma": "couple",
+  "skip": null,
+  "word": "couple",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈkʌpl",
+  "meaning": "① (a couple) 두어 개, 몇몇 ② 한 쌍, 커플 ③ 결합하다, 연결하다",
+  "short": "두어 개, 몇몇",
+  "senses": [
+   { "pos": "명사", "ko": "(두어 개) 몇몇" },
+   { "pos": "명사", "ko": "한 쌍, 커플" },
+   { "pos": "동사", "ko": "결합하다, 연결하다" }
+  ],
+  "forms": ["couples", "coupled", "coupling"],
+  "synonyms": ["a few", "pair"],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#13.0", "surface": "couple", "pos": "명사", "sense": "(두어 개) 몇몇" }
+  ]
+ },
+ {
+  "lemma": "cover",
+  "skip": null,
+  "word": "cover",
+  "pos": ["동사"],
+  "ipa": "ˈkʌvər",
+  "meaning": "(범위를) 다루다, 포함하다, 아우르다",
+  "short": "다루다, 포함하다",
+  "senses": [
+   { "pos": "동사", "ko": "(범위를) 다루다, 포함하다, 아우르다" },
+   { "pos": "동사", "ko": "(권한·규정이) 적용되다, 해당되다" },
+   { "pos": "동사", "ko": "덮다, 가리다" }
+  ],
+  "forms": ["covers", "covered", "covering", "coverage"],
+  "synonyms": ["include", "encompass", "span"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#6.0", "surface": "covering", "pos": "동사", "sense": "(범위를) 다루다, 포함하다, 아우르다" },
+   { "sid": "lesson-d2#12.0", "surface": "cover", "pos": "동사", "sense": "(권한·규정이) 적용되다, 해당되다" },
+   { "sid": "mock04#33.5", "surface": "covers", "pos": "동사", "sense": "(범위를) 다루다, 포함하다, 아우르다" },
+   { "sid": "lesson-d5#11.2", "surface": "covers", "pos": "동사", "sense": "(권한·규정이) 적용되다, 해당되다" }
+  ]
+ },
+ {
+  "lemma": "coverage",
+  "skip": null,
+  "word": "coverage",
+  "pos": ["명사"],
+  "ipa": "ˈkʌvərɪdʒ",
+  "meaning": "다루는 범위, 포괄 정도",
+  "short": "다루는 범위, 포괄 정도",
+  "senses": [
+   { "pos": "명사", "ko": "다루는 범위, 포괄 정도" },
+   { "pos": "명사", "ko": "(테스트) 커버리지" },
+   { "pos": "명사", "ko": "(보험의) 보장 범위" },
+   { "pos": "명사", "ko": "(언론의) 보도" }
+  ],
+  "forms": ["cover"],
+  "synonyms": ["scope", "extent"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#19.2", "surface": "coverage", "pos": "명사", "sense": "다루는 범위, 포괄 정도" },
+   { "sid": "lesson-d2#27.0", "surface": "coverage", "pos": "명사", "sense": "(테스트) 커버리지" },
+   { "sid": "mock04#25.5", "surface": "coverage", "pos": "명사", "sense": "다루는 범위, 포괄 정도" },
+   { "sid": "lesson-d3#32.0", "surface": "coverage", "pos": "명사", "sense": "(테스트) 커버리지" }
+  ]
+ },
+ {
+  "lemma": "crash",
+  "skip": null,
+  "word": "crash",
+  "pos": ["동사", "명사"],
+  "ipa": "kræʃ",
+  "meaning": "(프로그램이) 갑자기 죽다, 멈추다 · 충돌(다운)",
+  "short": "갑자기 죽다, 멈추다",
+  "senses": [
+   { "pos": "동사", "ko": "(프로그램이) 갑자기 죽다, 멈추다" },
+   { "pos": "명사", "ko": "(프로그램) 충돌, 다운" },
+   { "pos": "동사", "ko": "(차량이) 충돌하다" }
+  ],
+  "forms": ["crashes", "crashed", "crashing"],
+  "synonyms": ["fail", "go down"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#14.2", "surface": "crashes", "pos": "동사", "sense": "(프로그램이) 갑자기 죽다, 멈추다" }
+  ]
+ },
+ {
+  "lemma": "create",
+  "skip": null,
+  "word": "create",
+  "pos": ["동사"],
+  "ipa": "kriˈeɪt",
+  "meaning": "① 만들다, 생성하다 ② (상황을) 일으키다, 낳다",
+  "short": "만들다, 생성하다",
+  "senses": [
+   { "pos": "동사", "ko": "만들다, 생성하다" },
+   { "pos": "동사", "ko": "(상황을) 일으키다, 낳다" }
+  ],
+  "forms": ["creates", "created", "creating", "creation"],
+  "synonyms": ["make", "generate", "produce"],
+  "domain": "생성·추가",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#36.4", "surface": "creates", "pos": "동사", "sense": "만들다, 생성하다" },
+   { "sid": "sample01#11.4", "surface": "Create", "pos": "동사", "sense": "만들다, 생성하다" },
+   { "sid": "lesson-d1#41.6", "surface": "creates", "pos": "동사", "sense": "만들다, 생성하다" },
+   { "sid": "sample01#13.3", "surface": "Create", "pos": "동사", "sense": "만들다, 생성하다" }
+  ]
+ },
+ {
+  "lemma": "credential",
+  "skip": null,
+  "word": "credential",
+  "pos": ["명사"],
+  "ipa": "krəˈdenʃl",
+  "meaning": "자격 증명 — 비밀번호·토큰 같은 인증 정보",
+  "short": "자격 증명, 인증 정보",
+  "senses": [
+   { "pos": "명사", "ko": "자격 증명, 인증 정보" },
+   { "pos": "명사", "ko": "(자격을 보여 주는) 자격, 경력" }
+  ],
+  "forms": ["credentials"],
+  "synonyms": [],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#13.1", "surface": "credentials", "pos": "명사", "sense": "자격 증명, 인증 정보" },
+   { "sid": "lesson-d5#15.0", "surface": "credentials", "pos": "명사", "sense": "자격 증명, 인증 정보" },
+   { "sid": "mock04#40.2", "surface": "credential", "pos": "명사", "sense": "자격 증명, 인증 정보" },
+   { "sid": "lesson-d5#19.7", "surface": "credential", "pos": "명사", "sense": "자격 증명, 인증 정보" }
+  ]
+ },
+ {
+  "lemma": "credible",
+  "skip": null,
+  "word": "credible",
+  "pos": ["형용사"],
+  "ipa": "ˈkredəbl",
+  "meaning": "믿을 만한, 신뢰할 수 있는",
+  "short": "믿을 만한, 신뢰할 수 있는",
+  "senses": [
+   { "pos": "형용사", "ko": "믿을 만한, 신뢰할 수 있는" }
+  ],
+  "forms": ["credibility"],
+  "synonyms": ["reliable", "trustworthy", "believable"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#37.0", "surface": "credible", "pos": "형용사", "sense": "믿을 만한, 신뢰할 수 있는" },
+   { "sid": "lesson-d5#38.1", "surface": "credible", "pos": "형용사", "sense": "믿을 만한, 신뢰할 수 있는" }
+  ]
+ },
+ {
+  "lemma": "credit",
+  "skip": null,
+  "word": "credit",
+  "pos": ["명사"],
+  "ipa": "ˈkredɪt",
+  "meaning": "① 크레딧, 적립금 (보상 금액) ② (회계) 대변",
+  "short": "크레딧, 적립금",
+  "senses": [
+   { "pos": "명사", "ko": "크레딧, 적립금 (보상 금액)" },
+   { "pos": "명사", "ko": "(회계) 대변" },
+   { "pos": "명사", "ko": "공로, 인정" },
+   { "pos": "명사", "ko": "신용 (거래)" }
+  ],
+  "forms": ["credits"],
+  "synonyms": [],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#6.1", "surface": "credits", "pos": "명사", "sense": "크레딧, 적립금 (보상 금액)" },
+   { "sid": "mock04#56.2", "surface": "credit", "pos": "명사", "sense": "(회계) 대변" }
+  ]
+ },
+ {
+  "lemma": "crisis",
+  "skip": null,
+  "word": "crisis",
+  "pos": ["명사"],
+  "ipa": "ˈkraɪsɪs",
+  "meaning": "위기, 중대 국면",
+  "short": "위기",
+  "senses": [
+   { "pos": "명사", "ko": "위기, 중대 국면" }
+  ],
+  "forms": ["crises"],
+  "synonyms": ["emergency"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#16.5", "surface": "crisis", "pos": "명사", "sense": "위기, 중대 국면" }
+  ]
+ },
+ {
+  "lemma": "crisp",
+  "skip": null,
+  "word": "crisp",
+  "pos": ["형용사"],
+  "ipa": "krɪsp",
+  "meaning": "① 명확한, 딱 떨어지는 ② 바삭바삭한 ③ (공기·날씨가) 상쾌한",
+  "short": "명확한, 딱 떨어지는",
+  "senses": [
+   { "pos": "형용사", "ko": "명확한, 딱 떨어지는" },
+   { "pos": "형용사", "ko": "바삭바삭한" },
+   { "pos": "형용사", "ko": "(공기·날씨가) 상쾌한" }
+  ],
+  "forms": ["crisper", "crisply"],
+  "synonyms": ["clear", "precise", "sharp"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#13.1", "surface": "crisp", "pos": "형용사", "sense": "명확한, 딱 떨어지는" }
+  ]
+ },
+ {
+  "lemma": "criteria",
+  "skip": null,
+  "word": "criteria",
+  "pos": ["명사"],
+  "ipa": "kraɪˈtɪriə",
+  "meaning": "(판단) 기준 — criterion 의 복수",
+  "short": "(판단) 기준",
+  "senses": [
+   { "pos": "명사", "ko": "(판단) 기준" }
+  ],
+  "forms": ["criterion"],
+  "synonyms": ["standards", "benchmarks"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#25.1", "surface": "criterion", "pos": "명사", "sense": "(판단) 기준" },
+   { "sid": "mock04#52.6", "surface": "criteria", "pos": "명사", "sense": "(판단) 기준" },
+   { "sid": "lesson-d4#4.2", "surface": "criteria", "pos": "명사", "sense": "(판단) 기준" },
+   { "sid": "lesson-d4#7.1", "surface": "criteria", "pos": "명사", "sense": "(판단) 기준" }
+  ]
+ },
+ {
+  "lemma": "critical",
+  "skip": null,
+  "word": "critical",
+  "pos": ["형용사"],
+  "ipa": "ˈkrɪtɪkl",
+  "meaning": "① 심각한, 치명적인 ② 비판적인 ③ 매우 중요한",
+  "short": "심각한, 치명적인",
+  "senses": [
+   { "pos": "형용사", "ko": "심각한, 치명적인" },
+   { "pos": "형용사", "ko": "매우 중요한" },
+   { "pos": "부사", "ko": "비판적으로" },
+   { "pos": "형용사", "ko": "비판적인" }
+  ],
+  "forms": ["critically", "criticality"],
+  "synonyms": ["severe", "crucial", "vital"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#25.5", "surface": "critical", "pos": "형용사", "sense": "심각한, 치명적인" },
+   { "sid": "lesson-d3#27.4", "surface": "critical", "pos": "형용사", "sense": "매우 중요한" },
+   { "sid": "vocab:critical.1", "surface": "critically", "pos": "부사", "sense": "비판적으로" },
+   { "sid": "mock04#46.2", "surface": "critical", "pos": "형용사", "sense": "심각한, 치명적인" }
+  ]
+ },
+ {
+  "lemma": "critique",
+  "skip": null,
+  "word": "critique",
+  "pos": ["명사", "동사"],
+  "ipa": "krɪˈtiːk",
+  "meaning": "비평(하다) — 검토해 문제점을 짚다",
+  "short": "비평(하다)",
+  "senses": [
+   { "pos": "명사", "ko": "비평, 평가" },
+   { "pos": "동사", "ko": "비평하다, 문제점을 짚다" }
+  ],
+  "forms": ["critiques", "critiqued", "critiquing"],
+  "synonyms": ["review", "evaluate"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:critique.0", "surface": "critique", "pos": "명사", "sense": "비평, 평가" }
+  ]
+ },
+ {
+  "lemma": "crm",
+  "skip": null,
+  "word": "CRM",
+  "pos": ["약어"],
+  "ipa": "ˌsiːɑːrˈem",
+  "meaning": "고객 관계 관리(Customer Relationship Management) 시스템",
+  "short": "고객 관계 관리 시스템",
+  "senses": [
+   { "pos": "약어", "ko": "고객 관계 관리 시스템" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#17.0", "surface": "CRM", "pos": "약어", "sense": "고객 관계 관리 시스템" }
+  ]
+ },
+ {
+  "lemma": "cross",
+  "skip": null,
+  "word": "cross",
+  "pos": ["형용사", "동사"],
+  "ipa": "krɔːs",
+  "meaning": "① (cross-) 교차하는, ~ 간의 (여러 대상에 걸친) ② 건너다, 가로지르다 ③ 화난, 짜증 난",
+  "short": "교차하는, ~ 간의",
+  "senses": [
+   { "pos": "형용사", "ko": "(접두어) 교차하는, ~ 간의" },
+   { "pos": "동사", "ko": "건너다, 가로지르다" },
+   { "pos": "형용사", "ko": "화난, 짜증 난" }
+  ],
+  "forms": ["crosses", "crossed", "crossing"],
+  "synonyms": ["traverse"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "cross-file",
+  "skip": null,
+  "word": "cross-file",
+  "pos": ["형용사"],
+  "ipa": "ˌkrɔːs ˈfaɪl",
+  "meaning": "여러 파일에 걸친, 파일 간의",
+  "short": "여러 파일에 걸친, 파일 간의",
+  "senses": [
+   { "pos": "형용사", "ko": "여러 파일에 걸친, 파일 간의" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#35.1", "surface": "cross-file", "pos": "형용사", "sense": "여러 파일에 걸친, 파일 간의" },
+   { "sid": "mock04#42.1", "surface": "cross-file", "pos": "형용사", "sense": "여러 파일에 걸친, 파일 간의" },
+   { "sid": "lesson-d4#38.2", "surface": "cross-file", "pos": "형용사", "sense": "여러 파일에 걸친, 파일 간의" }
+  ]
+ },
+ {
+  "lemma": "csv-to-json",
+  "skip": "code"
+ },
+ {
+  "lemma": "cumulative",
+  "skip": null,
+  "word": "cumulative",
+  "pos": ["형용사"],
+  "ipa": "ˈkjuːmjələtɪv",
+  "meaning": "누적된, 쌓여 가는",
+  "short": "누적된, 쌓여 가는",
+  "senses": [
+   { "pos": "형용사", "ko": "누적된, 쌓여 가는" }
+  ],
+  "forms": ["cumulatively"],
+  "synonyms": ["accumulated", "aggregate"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#6.4", "surface": "cumulative", "pos": "형용사", "sense": "누적된, 쌓여 가는" }
+  ]
+ },
+ {
+  "lemma": "cup",
+  "skip": null,
+  "word": "cup",
+  "pos": ["명사"],
+  "ipa": "kʌp",
+  "meaning": "① 컵, 잔 ② (계량 단위) 한 컵 분량 ③ 우승컵",
+  "short": "컵, 한 컵 분량",
+  "senses": [
+   { "pos": "명사", "ko": "컵, 잔" },
+   { "pos": "명사", "ko": "(계량 단위) 한 컵 분량" },
+   { "pos": "명사", "ko": "(경기의) 우승컵" }
+  ],
+  "forms": ["cups"],
+  "synonyms": [],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#13.0", "surface": "cup", "pos": "명사", "sense": "(계량 단위) 한 컵 분량" }
+  ]
+ },
+ {
+  "lemma": "currency",
+  "skip": null,
+  "word": "currency",
+  "pos": ["명사"],
+  "ipa": "ˈkɜːrənsi",
+  "meaning": "통화, 화폐 (단위)",
+  "short": "통화, 화폐 (단위)",
+  "senses": [
+   { "pos": "명사", "ko": "통화, 화폐 (단위)" },
+   { "pos": "명사", "ko": "(정보의) 최신성, 통용" }
+  ],
+  "forms": ["currencies"],
+  "synonyms": ["money"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#4.1", "surface": "currency", "pos": "명사", "sense": "통화, 화폐 (단위)" },
+   { "sid": "lesson-d3#27.5", "surface": "currency", "pos": "명사", "sense": "통화, 화폐 (단위)" },
+   { "sid": "mock04#4.4", "surface": "currency", "pos": "명사", "sense": "통화, 화폐 (단위)" }
+  ]
+ },
+ {
+  "lemma": "currency-conversion",
+  "skip": null,
+  "word": "currency-conversion",
+  "pos": ["명사구"],
+  "ipa": "ˈkɜːrənsi kənˈvɜːrʒn",
+  "meaning": "통화 변환, 환전",
+  "short": "통화 변환, 환전",
+  "senses": [
+   { "pos": "명사구", "ko": "통화 변환, 환전" }
+  ],
+  "forms": [],
+  "synonyms": ["currency exchange"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#37.3", "surface": "currency-conversion", "pos": "명사구", "sense": "통화 변환, 환전" }
+  ]
+ },
+ {
+  "lemma": "currency-formatting",
+  "skip": null,
+  "word": "currency-formatting",
+  "pos": ["명사구"],
+  "ipa": "ˈkɜːrənsi ˈfɔːrmætɪŋ",
+  "meaning": "통화(금액) 표기 형식 (지정)",
+  "short": "통화 표기 형식",
+  "senses": [
+   { "pos": "명사구", "ko": "통화 표기 형식" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#27.0", "surface": "currency-formatting", "pos": "명사구", "sense": "통화 표기 형식" },
+   { "sid": "lesson-d3#27.2", "surface": "currency-formatting", "pos": "명사구", "sense": "통화 표기 형식" }
+  ]
+ },
+ {
+  "lemma": "current",
+  "skip": null,
+  "word": "current",
+  "pos": ["형용사"],
+  "ipa": "ˈkɜːrənt",
+  "meaning": "현재의, 지금의",
+  "short": "현재의, 지금의",
+  "senses": [
+   { "pos": "형용사", "ko": "현재의, 지금의" },
+   { "pos": "부사", "ko": "현재, 지금은" },
+   { "pos": "명사", "ko": "(물·전기의) 흐름, 전류" }
+  ],
+  "forms": ["currently"],
+  "synonyms": ["present", "existing"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#17.0", "surface": "current", "pos": "형용사", "sense": "현재의, 지금의" },
+   { "sid": "lesson-d1#30.1", "surface": "Currently", "pos": "부사", "sense": "현재, 지금은" },
+   { "sid": "mock04#20.2", "surface": "current", "pos": "형용사", "sense": "현재의, 지금의" },
+   { "sid": "lesson-d3#12.1", "surface": "currently", "pos": "부사", "sense": "현재, 지금은" }
+  ]
+ },
+ {
+  "lemma": "custom",
+  "skip": null,
+  "word": "custom",
+  "pos": ["형용사"],
+  "ipa": "ˈkʌstəm",
+  "meaning": "맞춤(형)의, 사용자가 직접 정의한",
+  "short": "맞춤형의, 직접 정의한",
+  "senses": [
+   { "pos": "형용사", "ko": "맞춤(형)의, 사용자가 직접 정의한" },
+   { "pos": "명사", "ko": "관습, 풍습" },
+   { "pos": "명사", "ko": "(복수형) 세관" }
+  ],
+  "forms": ["customize", "customized", "customs"],
+  "synonyms": ["customized", "tailored", "user-defined"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#25.0", "surface": "custom", "pos": "형용사", "sense": "맞춤(형)의, 사용자가 직접 정의한" },
+   { "sid": "mock04#1.1", "surface": "custom", "pos": "형용사", "sense": "맞춤(형)의, 사용자가 직접 정의한" },
+   { "sid": "sample01#11.4", "surface": "custom", "pos": "형용사", "sense": "맞춤(형)의, 사용자가 직접 정의한" },
+   { "sid": "lesson-d5#4.3", "surface": "custom", "pos": "형용사", "sense": "맞춤(형)의, 사용자가 직접 정의한" }
+  ]
+ },
+ {
+  "lemma": "customer",
+  "skip": null,
+  "word": "customer",
+  "pos": ["명사"],
+  "ipa": "ˈkʌstəmər",
+  "meaning": "고객, 손님",
+  "short": "고객",
+  "senses": [
+   { "pos": "명사", "ko": "고객, 손님" }
+  ],
+  "forms": ["customers"],
+  "synonyms": ["client"],
+  "domain": "사람·조직·역할",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#19.1", "surface": "customer", "pos": "명사", "sense": "고객, 손님" },
+   { "sid": "lesson-d2#13.0", "surface": "customer", "pos": "명사", "sense": "고객, 손님" },
+   { "sid": "lesson-d4#10.1", "surface": "customer", "pos": "명사", "sense": "고객, 손님" },
+   { "sid": "sample01#1.0", "surface": "customer", "pos": "명사", "sense": "고객, 손님" }
+  ]
+ },
+ {
+  "lemma": "cut",
+  "skip": null,
+  "word": "cut",
+  "pos": ["동사", "명사"],
+  "ipa": "kʌt",
+  "meaning": "① (양·시간을) 줄이다, 축소하다 ② 자르다, 잘라 내다 ③ 삭감, 감축",
+  "short": "줄이다, 축소하다",
+  "senses": [
+   { "pos": "동사", "ko": "(양·시간을) 줄이다, 축소하다" },
+   { "pos": "동사", "ko": "자르다, 잘라 내다" },
+   { "pos": "명사", "ko": "삭감, 감축" }
+  ],
+  "forms": ["cuts", "cutting"],
+  "synonyms": ["reduce", "trim", "shorten"],
+  "domain": "삭제·제거",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#32.7", "surface": "cut", "pos": "동사", "sense": "(양·시간을) 줄이다, 축소하다" },
+   { "sid": "lesson-d2#3.0", "surface": "cut", "pos": "동사", "sense": "(양·시간을) 줄이다, 축소하다" },
+   { "sid": "lesson-d2#25.6", "surface": "Cut", "pos": "동사", "sense": "(양·시간을) 줄이다, 축소하다" }
+  ]
+ },
+ {
+  "lemma": "cut-off",
+  "skip": null,
+  "word": "cut-off",
+  "pos": ["동사구", "명사"],
+  "ipa": "ˌkʌt ˈɔːf",
+  "meaning": "① (cut off) 도중에 잘리다, 끊기다 ② (cut-off) 기준점, 마감 시점",
+  "short": "기준점, 도중에 잘리다",
+  "senses": [
+   { "pos": "동사구", "ko": "도중에 잘리다, 끊기다" },
+   { "pos": "명사", "ko": "기준점, 마감 시점" },
+   { "pos": "형용사", "ko": "잘린, 끊긴" }
+  ],
+  "forms": [],
+  "synonyms": ["threshold", "truncate"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#22.4", "surface": "cut off", "pos": "동사구", "sense": "도중에 잘리다, 끊기다" },
+   { "sid": "lesson-d5#32.1", "surface": "cut-off", "pos": "명사", "sense": "기준점, 마감 시점" },
+   { "sid": "mock04#58.3", "surface": "cut-off", "pos": "형용사", "sense": "잘린, 끊긴" },
+   { "sid": "lesson-d5#30.3", "surface": "cut-off", "pos": "명사", "sense": "기준점, 마감 시점" }
+  ]
+ },
+ {
+  "lemma": "cycle",
+  "skip": null,
+  "word": "cycle",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈsaɪkl",
+  "meaning": "① 주기, (한 차례의) 사이클 ② 순환, 반복 ③ 순환하다, 반복되다",
+  "short": "주기, 한 차례 반복",
+  "senses": [
+   { "pos": "명사", "ko": "주기, (한 차례의) 사이클" },
+   { "pos": "명사", "ko": "순환, 반복" },
+   { "pos": "동사", "ko": "순환하다, 반복되다" }
+  ],
+  "forms": ["cycles", "cycled", "cycling"],
+  "synonyms": ["round", "period", "iteration"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#28.5", "surface": "cycles", "pos": "명사", "sense": "주기, (한 차례의) 사이클" }
+  ]
+ },
+ {
+  "lemma": "damp",
+  "skip": null,
+  "word": "damp",
+  "pos": ["동사", "형용사"],
+  "ipa": "dæmp",
+  "meaning": "① (변동·영향을) 줄이다, 완화하다 ② 축축한, 눅눅한",
+  "short": "(변동을) 줄이다, 완화하다",
+  "senses": [
+   { "pos": "동사", "ko": "(변동·영향을) 줄이다, 완화하다" },
+   { "pos": "형용사", "ko": "축축한, 눅눅한" }
+  ],
+  "forms": ["damps", "damped", "damping", "dampen"],
+  "synonyms": ["dampen", "reduce", "soften"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#30.4", "surface": "damp", "pos": "동사", "sense": "(변동·영향을) 줄이다, 완화하다" }
+  ]
+ },
+ {
+  "lemma": "data",
+  "skip": null,
+  "word": "data",
+  "pos": ["명사"],
+  "ipa": "ˈdeɪtə",
+  "meaning": "데이터, 자료",
+  "short": "데이터, 자료",
+  "senses": [
+   { "pos": "명사", "ko": "데이터, 자료" }
+  ],
+  "forms": ["datum"],
+  "synonyms": ["information"],
+  "domain": "데이터·정보·문서",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#10.0", "surface": "data", "pos": "명사", "sense": "데이터, 자료" },
+   { "sid": "lesson-d5#19.0", "surface": "data", "pos": "명사", "sense": "데이터, 자료" },
+   { "sid": "mock04#35.1", "surface": "data", "pos": "명사", "sense": "데이터, 자료" },
+   { "sid": "sample01#15.0", "surface": "data", "pos": "명사", "sense": "데이터, 자료" }
+  ]
+ },
+ {
+  "lemma": "database",
+  "skip": null,
+  "word": "database",
+  "pos": ["명사"],
+  "ipa": "ˈdeɪtəbeɪs",
+  "meaning": "데이터베이스",
+  "short": "데이터베이스",
+  "senses": [
+   { "pos": "명사", "ko": "데이터베이스" }
+  ],
+  "forms": ["databases"],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#30.0", "surface": "database", "pos": "명사", "sense": "데이터베이스" },
+   { "sid": "lesson-d5#14.1", "surface": "database", "pos": "명사", "sense": "데이터베이스" },
+   { "sid": "mock04#41.1", "surface": "database", "pos": "명사", "sense": "데이터베이스" },
+   { "sid": "lesson-d3#4.0", "surface": "database", "pos": "명사", "sense": "데이터베이스" }
+  ]
+ },
+ {
+  "lemma": "dataset",
+  "skip": null,
+  "word": "dataset",
+  "pos": ["명사"],
+  "ipa": "ˈdeɪtəset",
+  "meaning": "데이터 세트 — (분석·평가용으로) 모아 둔 데이터 묶음",
+  "short": "데이터 세트",
+  "senses": [
+   { "pos": "명사", "ko": "데이터 세트 (모아 둔 데이터 묶음)" }
+  ],
+  "forms": ["datasets"],
+  "synonyms": ["data set", "corpus"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#29.4", "surface": "dataset", "pos": "명사", "sense": "데이터 세트 (모아 둔 데이터 묶음)" }
+  ]
+ },
+ {
+  "lemma": "date",
+  "skip": null,
+  "word": "date",
+  "pos": ["명사", "동사"],
+  "ipa": "deɪt",
+  "meaning": "① 날짜, 일자 ② 날짜를 적다, (연대를) 추정하다 ③ 데이트, 만날 약속",
+  "short": "날짜",
+  "senses": [
+   { "pos": "명사", "ko": "날짜, 일자" },
+   { "pos": "동사", "ko": "날짜를 적다, (연대를) 추정하다" },
+   { "pos": "명사", "ko": "데이트, 만날 약속" }
+  ],
+  "forms": ["dates", "dated", "dating"],
+  "synonyms": [],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#23.2", "surface": "date", "pos": "명사", "sense": "날짜, 일자" },
+   { "sid": "mock04#4.1", "surface": "dates", "pos": "명사", "sense": "날짜, 일자" },
+   { "sid": "sample01#3.1", "surface": "date", "pos": "명사", "sense": "날짜, 일자" },
+   { "sid": "lesson-d5#13.4", "surface": "date", "pos": "명사", "sense": "날짜, 일자" }
+  ]
+ },
+ {
+  "lemma": "dated",
+  "skip": null,
+  "word": "dated",
+  "pos": ["형용사"],
+  "ipa": "ˈdeɪtɪd",
+  "meaning": "① (ID·버전에) 날짜가 붙은 — dateless: 날짜가 없는 ② 낡은, 시대에 뒤진",
+  "short": "날짜가 붙은, 낡은",
+  "senses": [
+   { "pos": "형용사", "ko": "(ID·버전에) 날짜가 붙은" },
+   { "pos": "형용사", "ko": "낡은, 시대에 뒤진" }
+  ],
+  "forms": ["dateless"],
+  "synonyms": ["outdated", "old-fashioned"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "day",
+  "skip": null,
+  "word": "day",
+  "pos": ["명사"],
+  "ipa": "deɪ",
+  "meaning": "① 날, 하루 ② 낮 ③ (하루의) 일과",
+  "short": "날, 하루",
+  "senses": [
+   { "pos": "명사", "ko": "날, 하루" },
+   { "pos": "명사", "ko": "낮" },
+   { "pos": "명사", "ko": "(하루의) 일과, 근무 시간" }
+  ],
+  "forms": ["days", "daily"],
+  "synonyms": [],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#39.0", "surface": "day", "pos": "명사", "sense": "(하루의) 일과, 근무 시간" },
+   { "sid": "lesson-d5#10.1", "surface": "days", "pos": "명사", "sense": "날, 하루" },
+   { "sid": "mock04#39.1", "surface": "days", "pos": "명사", "sense": "날, 하루" },
+   { "sid": "sample01#7.0", "surface": "day", "pos": "명사", "sense": "날, 하루" }
+  ]
+ }
+]

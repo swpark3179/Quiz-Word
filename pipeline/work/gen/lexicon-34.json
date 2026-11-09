@@ -1,0 +1,484 @@
+[
+ {
+  "lemma": "real", "skip": null, "word": "real", "pos": ["형용사"], "ipa": "ˈriːəl",
+  "meaning": "① 실제의, 진짜의 ② 진정한, 실질적인", "short": "실제의, 진짜의",
+  "senses": [ { "pos": "형용사", "ko": "실제의, 진짜의" }, { "pos": "형용사", "ko": "진정한, 실질적인" } ],
+  "forms": ["really", "reality"], "synonyms": ["actual", "genuine"], "domain": "정확·품질·신뢰", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#21.1", "surface": "real", "pos": "형용사", "sense": "실제의, 진짜의" },
+   { "sid": "lesson-d4#11.1", "surface": "real", "pos": "형용사", "sense": "진정한, 실질적인" },
+   { "sid": "mock04#47.2", "surface": "real", "pos": "형용사", "sense": "실제의, 진짜의" },
+   { "sid": "mock04#55.2", "surface": "real", "pos": "형용사", "sense": "실제의, 진짜의" }
+  ]
+ },
+ {
+  "lemma": "really", "skip": null, "word": "really", "pos": ["부사"], "ipa": "ˈriːəli",
+  "meaning": "정말로, 실제로", "short": "정말로, 실제로",
+  "senses": [ { "pos": "부사", "ko": "정말로, 실제로" } ],
+  "forms": [], "synonyms": ["truly", "actually"], "domain": "정도·양·크기", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#1.2", "surface": "really", "pos": "부사", "sense": "정말로, 실제로" }
+  ]
+ },
+ {
+  "lemma": "realm", "skip": null, "word": "realm", "pos": ["명사"], "ipa": "relm",
+  "meaning": "① 영역, 분야 ② (인증 시스템의) 렐름, 인증 영역", "short": "영역, 인증 영역",
+  "senses": [ { "pos": "명사", "ko": "영역, 분야" }, { "pos": "명사", "ko": "(인증 시스템의) 렐름, 인증 영역" } ],
+  "forms": ["realms"], "synonyms": ["domain", "sphere"], "domain": "구조·구성·부분", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#24.3", "surface": "realm", "pos": "명사", "sense": "(인증 시스템의) 렐름, 인증 영역" }
+  ]
+ },
+ {
+  "lemma": "reason", "skip": null, "word": "reason", "pos": ["명사", "동사"], "ipa": "ˈriːzn",
+  "meaning": "① 이유, 까닭 ② 추론하다, 논리적으로 따져 생각하다 ③ 추론, 사고 과정", "short": "이유, 추론하다",
+  "senses": [ { "pos": "명사", "ko": "이유, 까닭" }, { "pos": "동사", "ko": "추론하다, 논리적으로 따져 생각하다" }, { "pos": "명사", "ko": "추론, 사고 과정 (reasoning)" } ],
+  "forms": ["reasons", "reasoned", "reasoning"], "synonyms": ["cause", "rationale"], "domain": "원인·결과·영향", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#28.0", "surface": "reason", "pos": "명사", "sense": "이유, 까닭" },
+   { "sid": "lesson-d5#15.4", "surface": "reason", "pos": "명사", "sense": "이유, 까닭" },
+   { "sid": "mock04#2.6", "surface": "reasons", "pos": "동사", "sense": "추론하다, 논리적으로 따져 생각하다" },
+   { "sid": "lesson-d4#17.1", "surface": "reasoning", "pos": "명사", "sense": "추론, 사고 과정 (reasoning)" }
+  ]
+ },
+ {
+  "lemma": "recall", "skip": null, "word": "recall", "pos": ["동사", "명사"], "ipa": "rɪˈkɔːl",
+  "meaning": "① 떠올리다, 기억해 내다 ② 재현율 — 찾아야 할 것 중 실제로 찾아낸 비율", "short": "떠올리다, 재현율",
+  "senses": [ { "pos": "동사", "ko": "떠올리다, 기억해 내다" }, { "pos": "명사", "ko": "재현율 (찾아야 할 것 중 찾아낸 비율)" }, { "pos": "명사", "ko": "기억해 내기, 회상" } ],
+  "forms": ["recalls", "recalled", "recalling"], "synonyms": ["remember", "retrieve"], "domain": "저장·기록", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#22.3", "surface": "recall", "pos": "동사", "sense": "떠올리다, 기억해 내다" },
+   { "sid": "lesson-d4#7.5", "surface": "recall", "pos": "명사", "sense": "재현율 (찾아야 할 것 중 찾아낸 비율)" },
+   { "sid": "lesson-d5#22.6", "surface": "recall", "pos": "명사", "sense": "기억해 내기, 회상" },
+   { "sid": "lesson-d5#27.6", "surface": "recalls", "pos": "동사", "sense": "떠올리다, 기억해 내다" }
+  ]
+ },
+ {
+  "lemma": "receive", "skip": null, "word": "receive", "pos": ["동사"], "ipa": "rɪˈsiːv",
+  "meaning": "받다", "short": "받다, 수신하다",
+  "senses": [ { "pos": "동사", "ko": "받다, 수령하다" }, { "pos": "동사", "ko": "(메시지·신호를) 수신하다" } ],
+  "forms": ["receives", "received", "receiving"], "synonyms": ["get", "obtain"], "domain": "이동·전달", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#3.1", "surface": "receives", "pos": "동사", "sense": "받다, 수령하다" },
+   { "sid": "lesson-d2#12.4", "surface": "receives", "pos": "동사", "sense": "받다, 수령하다" },
+   { "sid": "lesson-d5#19.5", "surface": "received", "pos": "동사", "sense": "받다, 수령하다" },
+   { "sid": "lesson-d4#8.0", "surface": "receive", "pos": "동사", "sense": "받다, 수령하다" }
+  ]
+ },
+ {
+  "lemma": "receiver", "skip": null, "word": "receiver", "pos": ["명사"], "ipa": "rɪˈsiːvər",
+  "meaning": "① 받는 사람, 수신자 ② 수신기, 수신부", "short": "수신자, 수신부",
+  "senses": [ { "pos": "명사", "ko": "받는 사람, 수신자" }, { "pos": "명사", "ko": "수신기, 수신부" } ],
+  "forms": ["receivers"], "synonyms": ["recipient", "listener"], "domain": "시스템·도구·기술", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#22.0", "surface": "receiver", "pos": "명사", "sense": "수신기, 수신부" }
+  ]
+ },
+ {
+  "lemma": "recent", "skip": null, "word": "recent", "pos": ["형용사"], "ipa": "ˈriːsnt",
+  "meaning": "최근의, 근래의", "short": "최근의",
+  "senses": [ { "pos": "형용사", "ko": "최근의, 근래의" } ],
+  "forms": ["recently"], "synonyms": ["latest", "new"], "domain": "시간·순서·빈도", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#12.1", "surface": "recent", "pos": "형용사", "sense": "최근의, 근래의" },
+   { "sid": "lesson-d1#37.5", "surface": "recent", "pos": "형용사", "sense": "최근의, 근래의" },
+   { "sid": "lesson-d2#30.5", "surface": "recent", "pos": "형용사", "sense": "최근의, 근래의" },
+   { "sid": "lesson-d1#7.3", "surface": "recent", "pos": "형용사", "sense": "최근의, 근래의" }
+  ]
+ },
+ {
+  "lemma": "recently", "skip": null, "word": "recently", "pos": ["부사"], "ipa": "ˈriːsntli",
+  "meaning": "최근에, 얼마 전에", "short": "최근에, 얼마 전에",
+  "senses": [ { "pos": "부사", "ko": "최근에, 얼마 전에" } ],
+  "forms": [], "synonyms": ["lately"], "domain": "시간·순서·빈도", "basic": false,
+  "contexts": [
+   { "sid": "mock04#10.2", "surface": "recently", "pos": "부사", "sense": "최근에, 얼마 전에" },
+   { "sid": "lesson-d2#30.5", "surface": "recently", "pos": "부사", "sense": "최근에, 얼마 전에" },
+   { "sid": "lesson-d2#31.5", "surface": "recently", "pos": "부사", "sense": "최근에, 얼마 전에" },
+   { "sid": "mock04#10.4", "surface": "recently", "pos": "부사", "sense": "최근에, 얼마 전에" }
+  ]
+ },
+ {
+  "lemma": "recheck", "skip": null, "word": "recheck", "pos": ["동사"], "ipa": "ˌriːˈtʃek",
+  "meaning": "다시 확인하다, 재점검하다", "short": "다시 확인하다",
+  "senses": [ { "pos": "동사", "ko": "다시 확인하다, 재점검하다" } ],
+  "forms": ["rechecks", "rechecked", "rechecking"], "synonyms": ["double-check", "re-verify"], "domain": "확인·검증", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#35.6", "surface": "recheck", "pos": "동사", "sense": "다시 확인하다, 재점검하다" }
+  ]
+ },
+ {
+  "lemma": "recommend", "skip": null, "word": "recommend", "pos": ["동사"], "ipa": "ˌrekəˈmend",
+  "meaning": "권하다, 추천하다 — recommended (형) 권장되는", "short": "권하다, 추천하다",
+  "senses": [ { "pos": "동사", "ko": "권하다, 추천하다" }, { "pos": "명사", "ko": "권고, 추천(안) (recommendation)" }, { "pos": "형용사", "ko": "(recommended) 권장되는" } ],
+  "forms": ["recommends", "recommended", "recommending", "recommendation", "recommendations"], "synonyms": ["suggest", "advise"], "domain": "요청·소통", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#38.0", "surface": "recommend", "pos": "동사", "sense": "권하다, 추천하다" },
+   { "sid": "lesson-d3#11.0", "surface": "recommendation", "pos": "명사", "sense": "권고, 추천(안) (recommendation)" },
+   { "sid": "lesson-d2#19.2", "surface": "recommended", "pos": "형용사", "sense": "(recommended) 권장되는" },
+   { "sid": "mock04#2.4", "surface": "recommended", "pos": "형용사", "sense": "(recommended) 권장되는" }
+  ]
+ },
+ {
+  "lemma": "recomputes", "skip": null, "word": "recompute", "pos": ["동사"], "ipa": "ˌriːkəmˈpjuːt",
+  "meaning": "다시 계산하다, 재계산하다", "short": "다시 계산하다",
+  "senses": [ { "pos": "동사", "ko": "다시 계산하다, 재계산하다" } ],
+  "forms": ["recomputes", "recomputed", "recomputing"], "synonyms": ["recalculate"], "domain": "실행·처리", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#22.4", "surface": "recomputes", "pos": "동사", "sense": "다시 계산하다, 재계산하다" }
+  ]
+ },
+ {
+  "lemma": "reconcile", "skip": null, "word": "reconcile", "pos": ["동사"], "ipa": "ˈrekənsaɪl",
+  "meaning": "(서로 다른 것을) 맞춰 일치시키다, 조정하다", "short": "맞춰 일치시키다, 조정하다",
+  "senses": [ { "pos": "동사", "ko": "(서로 다른 것을) 맞춰 일치시키다, 조정하다" }, { "pos": "명사", "ko": "대사, 정합 확인 (reconciliation)" } ],
+  "forms": ["reconciles", "reconciled", "reconciling", "reconciliation"], "synonyms": ["harmonize", "square"], "domain": "확인·검증", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#20.0", "surface": "reconcile", "pos": "동사", "sense": "(서로 다른 것을) 맞춰 일치시키다, 조정하다" },
+   { "sid": "mock04#54.2", "surface": "reconciliation", "pos": "명사", "sense": "대사, 정합 확인 (reconciliation)" },
+   { "sid": "lesson-d5#40.1", "surface": "reconciliation", "pos": "명사", "sense": "(서로 다른 것을) 맞춰 일치시키다, 조정하다" },
+   { "sid": "lesson-d5#37.4", "surface": "reconcile", "pos": "동사", "sense": "(서로 다른 것을) 맞춰 일치시키다, 조정하다" }
+  ]
+ },
+ {
+  "lemma": "reconstruct", "skip": null, "word": "reconstruct", "pos": ["동사"], "ipa": "ˌriːkənˈstrʌkt",
+  "meaning": "(없어진 것을) 재구성하다, 다시 짜 맞추다", "short": "재구성하다, 복원하다",
+  "senses": [ { "pos": "동사", "ko": "(없어진 것을) 재구성하다, 다시 짜 맞추다" }, { "pos": "동사", "ko": "복원하다, 재건하다" } ],
+  "forms": ["reconstructs", "reconstructed", "reconstructing", "reconstruction"], "synonyms": ["rebuild", "restore"], "domain": "생성·추가", "basic": false,
+  "contexts": [
+   { "sid": "mock04#58.5", "surface": "reconstructs", "pos": "동사", "sense": "(없어진 것을) 재구성하다, 다시 짜 맞추다" }
+  ]
+ },
+ {
+  "lemma": "record", "skip": null, "word": "record", "pos": ["명사", "동사"], "ipa": "ˈrekərd",
+  "meaning": "① 기록 ② (데이터) 레코드 — 데이터 한 건 ③ 기록하다", "short": "기록, 레코드",
+  "senses": [ { "pos": "명사", "ko": "기록" }, { "pos": "명사", "ko": "(데이터) 레코드, 데이터 한 건" }, { "pos": "동사", "ko": "기록하다" } ],
+  "forms": ["records", "recorded", "recording"], "synonyms": ["log", "entry"], "domain": "저장·기록", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#22.1", "surface": "record", "pos": "명사", "sense": "기록" },
+   { "sid": "mock04#34.1", "surface": "record", "pos": "명사", "sense": "기록" },
+   { "sid": "lesson-d2#13.0", "surface": "records", "pos": "명사", "sense": "(데이터) 레코드, 데이터 한 건" },
+   { "sid": "lesson-d3#24.1", "surface": "records", "pos": "명사", "sense": "(데이터) 레코드, 데이터 한 건" }
+  ]
+ },
+ {
+  "lemma": "recovery", "skip": null, "word": "recovery", "pos": ["명사"], "ipa": "rɪˈkʌvəri",
+  "meaning": "복구, 회복 — recover (동) 되찾다, 복구하다", "short": "복구, 회복",
+  "senses": [ { "pos": "명사", "ko": "복구, 회복" }, { "pos": "동사", "ko": "(recover) 되찾다, 복구하다" }, { "pos": "동사", "ko": "(recover) 정상 상태로 돌아오다" } ],
+  "forms": ["recover", "recovers", "recovered", "recovering"], "synonyms": ["restoration"], "domain": "오류·실패·위험", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#14.3", "surface": "recovery", "pos": "명사", "sense": "복구, 회복" },
+   { "sid": "mock04#57.2", "surface": "recovery", "pos": "명사", "sense": "복구, 회복" },
+   { "sid": "lesson-d1#16.6", "surface": "recover", "pos": "동사", "sense": "(recover) 정상 상태로 돌아오다" },
+   { "sid": "mock04#58.3", "surface": "recover", "pos": "동사", "sense": "(recover) 되찾다, 복구하다" }
+  ]
+ },
+ {
+  "lemma": "recurring", "skip": null, "word": "recurring", "pos": ["형용사"], "ipa": "rɪˈkɜːrɪŋ",
+  "meaning": "되풀이되는, 반복해 생기는 — recur: 다시 일어나다", "short": "되풀이되는, 반복되는",
+  "senses": [ { "pos": "형용사", "ko": "되풀이되는, 반복해 생기는" }, { "pos": "동사", "ko": "(recur) 다시 일어나다, 반복되다" } ],
+  "forms": ["recur", "recurs", "recurred"], "synonyms": ["repeated", "repeating"], "domain": "시간·순서·빈도", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#35.6", "surface": "recur", "pos": "동사", "sense": "(recur) 다시 일어나다, 반복되다" }
+  ]
+ },
+ {
+  "lemma": "red team", "skip": null, "word": "red team", "pos": ["명사구"], "ipa": "ˈred tiːm",
+  "meaning": "레드팀 — 일부러 공격해 약점을 찾는 팀 (red-teaming: 모의 공격 시험)", "short": "레드팀(모의 공격 팀)",
+  "senses": [ { "pos": "명사구", "ko": "레드팀 (모의 공격으로 약점을 찾는 팀)" } ],
+  "forms": ["red teams", "red-teaming"], "synonyms": [], "domain": "오류·실패·위험", "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "redirect", "skip": null, "word": "redirect", "pos": ["동사"], "ipa": "ˌriːdəˈrekt",
+  "meaning": "(흐름·요청을) 다른 곳으로 돌리다", "short": "다른 곳으로 돌리다",
+  "senses": [ { "pos": "동사", "ko": "(흐름·요청을) 다른 곳으로 돌리다" }, { "pos": "명사", "ko": "리디렉션, 우회 경로" } ],
+  "forms": ["redirects", "redirected", "redirecting"], "synonyms": ["reroute", "divert"], "domain": "이동·전달", "basic": false,
+  "contexts": [
+   { "sid": "mock04#3.6", "surface": "redirects", "pos": "동사", "sense": "(흐름·요청을) 다른 곳으로 돌리다" }
+  ]
+ },
+ {
+  "lemma": "redis", "skip": null, "word": "Redis", "pos": ["명사"], "ipa": "ˈredɪs",
+  "meaning": "Redis — 메모리 기반 키-값 저장소 (캐시로 많이 씀)", "short": "메모리 기반 키-값 저장소",
+  "senses": [ { "pos": "명사", "ko": "Redis (메모리 기반 키-값 저장소)" } ],
+  "forms": [], "synonyms": [], "domain": "시스템·도구·기술", "basic": false,
+  "contexts": [
+   { "sid": "sample01#21.3", "surface": "Redis", "pos": "명사", "sense": "Redis (메모리 기반 키-값 저장소)" },
+   { "sid": "sample01#9.6", "surface": "Redis", "pos": "명사", "sense": "Redis (메모리 기반 키-값 저장소)" }
+  ]
+ },
+ {
+  "lemma": "rediscover", "skip": null, "word": "rediscover", "pos": ["동사"], "ipa": "ˌriːdɪˈskʌvər",
+  "meaning": "(이미 찾은 것을) 다시 찾아내다", "short": "다시 찾아내다",
+  "senses": [ { "pos": "동사", "ko": "(이미 찾은 것을) 다시 찾아내다" }, { "pos": "동사", "ko": "재발견하다" } ],
+  "forms": ["rediscovers", "rediscovered", "rediscovering"], "synonyms": ["find again"], "domain": "검색·조회", "basic": false,
+  "contexts": [
+   { "sid": "mock04#38.2", "surface": "rediscover", "pos": "동사", "sense": "(이미 찾은 것을) 다시 찾아내다" },
+   { "sid": "mock04#41.2", "surface": "rediscover", "pos": "동사", "sense": "(이미 찾은 것을) 다시 찾아내다" }
+  ]
+ },
+ {
+  "lemma": "reduce", "skip": null, "word": "reduce", "pos": ["동사"], "ipa": "rɪˈduːs",
+  "meaning": "줄이다, 낮추다 — reduction (명) 감소, 절감", "short": "줄이다, 낮추다",
+  "senses": [ { "pos": "동사", "ko": "줄이다, 낮추다" }, { "pos": "명사", "ko": "감소, 절감 (reduction)" } ],
+  "forms": ["reduces", "reduced", "reducing", "reduction"], "synonyms": ["cut", "decrease", "lower"], "domain": "정도·양·크기", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#4.0", "surface": "reduce", "pos": "동사", "sense": "줄이다, 낮추다" },
+   { "sid": "mock04#23.3", "surface": "reduces", "pos": "동사", "sense": "줄이다, 낮추다" },
+   { "sid": "lesson-d2#14.6", "surface": "reduce", "pos": "동사", "sense": "줄이다, 낮추다" },
+   { "sid": "sample01#9.3", "surface": "reduction", "pos": "명사", "sense": "감소, 절감 (reduction)" }
+  ]
+ },
+ {
+  "lemma": "redundant", "skip": null, "word": "redundant", "pos": ["형용사"], "ipa": "rɪˈdʌndənt",
+  "meaning": "불필요하게 중복된, 쓸데없는", "short": "불필요하게 중복된",
+  "senses": [ { "pos": "형용사", "ko": "불필요하게 중복된" }, { "pos": "형용사", "ko": "쓸데없는, 여분의" } ],
+  "forms": ["redundancy"], "synonyms": ["duplicate", "superfluous"], "domain": "정도·양·크기", "basic": false,
+  "contexts": [
+   { "sid": "vocab:redundant.0", "surface": "redundant", "pos": "형용사", "sense": "불필요하게 중복된" }
+  ]
+ },
+ {
+  "lemma": "refactor", "skip": null, "word": "refactor", "pos": ["동사", "명사"], "ipa": "ˌriːˈfæktər",
+  "meaning": "리팩터링(하다) — 동작은 그대로 두고 코드 구조를 고치다", "short": "리팩터링(하다)",
+  "senses": [ { "pos": "동사", "ko": "리팩터링하다 (동작은 두고 구조를 고치다)" }, { "pos": "명사", "ko": "리팩터링 (코드 구조 개선 작업)" } ],
+  "forms": ["refactors", "refactored", "refactoring"], "synonyms": ["restructure"], "domain": "변경·수정", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#37.0", "surface": "refactor", "pos": "명사", "sense": "리팩터링 (코드 구조 개선 작업)" },
+   { "sid": "mock04#20.1", "surface": "refactor", "pos": "명사", "sense": "리팩터링 (코드 구조 개선 작업)" },
+   { "sid": "lesson-d1#11.0", "surface": "refactoring", "pos": "명사", "sense": "리팩터링 (코드 구조 개선 작업)" },
+   { "sid": "mock04#39.1", "surface": "refactor", "pos": "명사", "sense": "리팩터링 (코드 구조 개선 작업)" }
+  ]
+ },
+ {
+  "lemma": "refer", "skip": null, "word": "refer", "pos": ["동사"], "ipa": "rɪˈfɜːr",
+  "meaning": "① (refer to) 가리키다, 언급하다 ② (~에게) 넘기다, 회부하다 ③ 참조하다", "short": "가리키다, 넘기다",
+  "senses": [ { "pos": "동사", "ko": "(refer to) 가리키다, 언급하다" }, { "pos": "동사", "ko": "(~에게) 넘기다, 회부하다" }, { "pos": "동사", "ko": "참조하다" } ],
+  "forms": ["refers", "referred", "referring"], "synonyms": ["mention", "hand off"], "domain": "요청·소통", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#18.6", "surface": "referring", "pos": "동사", "sense": "(refer to) 가리키다, 언급하다" },
+   { "sid": "lesson-d5#10.3", "surface": "Refer", "pos": "동사", "sense": "(~에게) 넘기다, 회부하다" },
+   { "sid": "lesson-d4#18.1", "surface": "referring", "pos": "동사", "sense": "(~에게) 넘기다, 회부하다" }
+  ]
+ },
+ {
+  "lemma": "reference", "skip": null, "word": "reference", "pos": ["동사", "명사"], "ipa": "ˈrefrəns",
+  "meaning": "① 참조하다, 가리키다 ② 참조, 참고 자료", "short": "참조하다, 참조",
+  "senses": [ { "pos": "동사", "ko": "참조하다, 가리키다" }, { "pos": "명사", "ko": "참조, 참고 자료" }, { "pos": "명사", "ko": "(예약·주문 등의) 조회 번호" } ],
+  "forms": ["references", "referenced", "referencing"], "synonyms": ["refer to", "cite"], "domain": "데이터·정보·문서", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#7.0", "surface": "reference", "pos": "동사", "sense": "참조하다, 가리키다" },
+   { "sid": "mock04#40.7", "surface": "Reference", "pos": "동사", "sense": "참조하다, 가리키다" },
+   { "sid": "lesson-d2#26.6", "surface": "reference", "pos": "명사", "sense": "참조, 참고 자료" },
+   { "sid": "lesson-d5#12.0", "surface": "references", "pos": "명사", "sense": "(예약·주문 등의) 조회 번호" }
+  ]
+ },
+ {
+  "lemma": "refine", "skip": null, "word": "refine", "pos": ["동사"], "ipa": "rɪˈfaɪn",
+  "meaning": "다듬다, 더 정교하게 고치다", "short": "다듬다, 정교하게 고치다",
+  "senses": [ { "pos": "동사", "ko": "다듬다, 더 정교하게 고치다" }, { "pos": "명사", "ko": "개선, 정교화 (refinement)" } ],
+  "forms": ["refines", "refined", "refining", "refinement"], "synonyms": ["improve", "polish", "fine-tune"], "domain": "변경·수정", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#23.5", "surface": "refine", "pos": "동사", "sense": "다듬다, 더 정교하게 고치다" },
+   { "sid": "lesson-d3#25.3", "surface": "refine", "pos": "동사", "sense": "다듬다, 더 정교하게 고치다" },
+   { "sid": "lesson-d3#25.1", "surface": "refinement", "pos": "명사", "sense": "개선, 정교화 (refinement)" },
+   { "sid": "mock04#17.3", "surface": "refinement", "pos": "명사", "sense": "개선, 정교화 (refinement)" }
+  ]
+ },
+ {
+  "lemma": "reflect", "skip": null, "word": "reflect", "pos": ["동사"], "ipa": "rɪˈflekt",
+  "meaning": "반영하다, 나타내다", "short": "반영하다, 되돌아보다",
+  "senses": [ { "pos": "동사", "ko": "반영하다, 나타내다" }, { "pos": "동사", "ko": "깊이 되돌아보다, 숙고하다" }, { "pos": "명사", "ko": "(reflection) 자기 검토, 성찰" } ],
+  "forms": ["reflects", "reflected", "reflecting", "reflection"], "synonyms": ["show", "mirror"], "domain": "비교·평가·판단", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#5.4", "surface": "reflect", "pos": "동사", "sense": "반영하다, 나타내다" },
+   { "sid": "mock04#35.6", "surface": "reflects", "pos": "동사", "sense": "반영하다, 나타내다" },
+   { "sid": "lesson-d4#36.0", "surface": "reflect", "pos": "동사", "sense": "깊이 되돌아보다, 숙고하다" },
+   { "sid": "lesson-d4#36.3", "surface": "Reflection", "pos": "명사", "sense": "(reflection) 자기 검토, 성찰" }
+  ]
+ },
+ {
+  "lemma": "reformats", "skip": null, "word": "reformat", "pos": ["동사"], "ipa": "ˌriːˈfɔːrmæt",
+  "meaning": "형식을 다시 맞추다, 재포맷하다", "short": "형식을 다시 맞추다",
+  "senses": [ { "pos": "동사", "ko": "형식을 다시 맞추다, 재포맷하다" } ],
+  "forms": ["reformats", "reformatted", "reformatting"], "synonyms": ["restructure"], "domain": "변경·수정", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#8.6", "surface": "reformats", "pos": "동사", "sense": "형식을 다시 맞추다, 재포맷하다" }
+  ]
+ },
+ {
+  "lemma": "refresh", "skip": null, "word": "refresh", "pos": ["동사"], "ipa": "rɪˈfreʃ",
+  "meaning": "새로 고치다, 최신 상태로 갱신하다", "short": "새로 고치다, 갱신하다",
+  "senses": [ { "pos": "동사", "ko": "새로 고치다, 최신 상태로 갱신하다" }, { "pos": "동사", "ko": "(기억을) 되살리다" } ],
+  "forms": ["refreshes", "refreshed", "refreshing"], "synonyms": ["update", "renew"], "domain": "변경·수정", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#3.5", "surface": "refreshed", "pos": "동사", "sense": "새로 고치다, 최신 상태로 갱신하다" },
+   { "sid": "mock04#16.6", "surface": "refresh", "pos": "동사", "sense": "(기억을) 되살리다" }
+  ]
+ },
+ {
+  "lemma": "refund", "skip": null, "word": "refund", "pos": ["명사", "동사"], "ipa": "ˈriːfʌnd",
+  "meaning": "환불(하다)", "short": "환불(하다)",
+  "senses": [ { "pos": "명사", "ko": "환불, 환불금" }, { "pos": "동사", "ko": "환불하다" } ],
+  "forms": ["refunds", "refunded", "refunding"], "synonyms": ["reimbursement", "repayment"], "domain": "비즈니스·업무", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#19.0", "surface": "refund", "pos": "명사", "sense": "환불, 환불금" },
+   { "sid": "lesson-d2#8.1", "surface": "refund", "pos": "명사", "sense": "환불, 환불금" },
+   { "sid": "lesson-d1#19.1", "surface": "refunds", "pos": "명사", "sense": "환불, 환불금" },
+   { "sid": "lesson-d5#2.0", "surface": "refund", "pos": "명사", "sense": "환불, 환불금" }
+  ]
+ },
+ {
+  "lemma": "refuse", "skip": null, "word": "refuse", "pos": ["동사"], "ipa": "rɪˈfjuːz",
+  "meaning": "거부하다, 거절하다", "short": "거부하다, 거절하다",
+  "senses": [ { "pos": "동사", "ko": "거부하다, 거절하다" }, { "pos": "명사", "ko": "거부, 거절 (refusal)" } ],
+  "forms": ["refuses", "refused", "refusing", "refusal"], "synonyms": ["decline", "deny", "reject"], "domain": "제어·제한·관리", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#9.0", "surface": "refuses", "pos": "동사", "sense": "거부하다, 거절하다" },
+   { "sid": "lesson-d3#31.0", "surface": "refused", "pos": "동사", "sense": "거부하다, 거절하다" },
+   { "sid": "sample01#18.4", "surface": "refuses", "pos": "동사", "sense": "거부하다, 거절하다" },
+   { "sid": "lesson-d2#11.7", "surface": "refusal", "pos": "명사", "sense": "거부, 거절 (refusal)" }
+  ]
+ },
+ {
+  "lemma": "regardless", "skip": null, "word": "regardless", "pos": ["부사"], "ipa": "rɪˈɡɑːrdləs",
+  "meaning": "(~와) 상관없이", "short": "~와 상관없이",
+  "senses": [ { "pos": "부사", "ko": "(regardless of) ~와 상관없이" }, { "pos": "부사", "ko": "그래도, 어쨌든" } ],
+  "forms": [], "synonyms": ["irrespective", "anyway"], "domain": "논리·관계·연결어", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#3.0", "surface": "regardless", "pos": "부사", "sense": "(regardless of) ~와 상관없이" },
+   { "sid": "mock04#1.7", "surface": "regardless", "pos": "부사", "sense": "(regardless of) ~와 상관없이" },
+   { "sid": "sample01#10.4", "surface": "regardless", "pos": "부사", "sense": "(regardless of) ~와 상관없이" },
+   { "sid": "lesson-d4#3.0", "surface": "regardless", "pos": "부사", "sense": "(regardless of) ~와 상관없이" }
+  ]
+ },
+ {
+  "lemma": "regenerate", "skip": null, "word": "regenerate", "pos": ["동사"], "ipa": "rɪˈdʒenəreɪt",
+  "meaning": "다시 생성하다, 새로 만들어 내다", "short": "다시 생성하다",
+  "senses": [ { "pos": "동사", "ko": "다시 생성하다, 새로 만들어 내다" }, { "pos": "동사", "ko": "재생하다, 되살아나다" } ],
+  "forms": ["regenerates", "regenerated", "regenerating", "regeneration"], "synonyms": ["recreate", "rebuild"], "domain": "생성·추가", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#24.6", "surface": "regenerate", "pos": "동사", "sense": "다시 생성하다, 새로 만들어 내다" },
+   { "sid": "mock04#43.7", "surface": "regenerate", "pos": "동사", "sense": "다시 생성하다, 새로 만들어 내다" }
+  ]
+ },
+ {
+  "lemma": "regex", "skip": null, "word": "regex", "pos": ["명사"], "ipa": "ˈredʒeks",
+  "meaning": "정규 표현식 — 문자열 패턴을 기호로 적어 찾는 규칙", "short": "정규 표현식",
+  "senses": [ { "pos": "명사", "ko": "정규 표현식" } ],
+  "forms": ["regexes", "regular expression"], "synonyms": ["regular expression", "regexp"], "domain": "시스템·도구·기술", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#25.0", "surface": "regex", "pos": "명사", "sense": "정규 표현식" },
+   { "sid": "mock04#1.6", "surface": "regex", "pos": "명사", "sense": "정규 표현식" },
+   { "sid": "sample01#15.6", "surface": "regex", "pos": "명사", "sense": "정규 표현식" },
+   { "sid": "lesson-d1#23.4", "surface": "regular expression", "pos": "명사", "sense": "정규 표현식" }
+  ]
+ },
+ {
+  "lemma": "region", "skip": null, "word": "region", "pos": ["명사"], "ipa": "ˈriːdʒən",
+  "meaning": "지역, 영역 — regional (형) 지역별의, 지역의", "short": "지역, 영역",
+  "senses": [ { "pos": "명사", "ko": "지역, 영역" }, { "pos": "형용사", "ko": "(regional) 지역별의, 지역의" } ],
+  "forms": ["regions", "regional"], "synonyms": ["area", "zone"], "domain": "구조·구성·부분", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#13.1", "surface": "region", "pos": "명사", "sense": "지역, 영역" },
+   { "sid": "lesson-d5#40.0", "surface": "region", "pos": "명사", "sense": "지역, 영역" },
+   { "sid": "lesson-d5#39.1", "surface": "regional", "pos": "형용사", "sense": "(regional) 지역별의, 지역의" },
+   { "sid": "mock04#23.1", "surface": "regional", "pos": "형용사", "sense": "(regional) 지역별의, 지역의" }
+  ]
+ },
+ {
+  "lemma": "register", "skip": null, "word": "register", "pos": ["동사"], "ipa": "ˈredʒɪstər",
+  "meaning": "등록하다", "short": "등록하다",
+  "senses": [ { "pos": "동사", "ko": "등록하다" }, { "pos": "형용사", "ko": "(registered) 등록된" } ],
+  "forms": ["registers", "registered", "registering"], "synonyms": ["enroll", "sign up"], "domain": "저장·기록", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#22.0", "surface": "registers", "pos": "동사", "sense": "등록하다" },
+   { "sid": "mock04#45.7", "surface": "Register", "pos": "동사", "sense": "등록하다" },
+   { "sid": "mock04#24.4", "surface": "registered", "pos": "동사", "sense": "등록하다" },
+   { "sid": "lesson-d4#15.6", "surface": "registered", "pos": "형용사", "sense": "(registered) 등록된" }
+  ]
+ },
+ {
+  "lemma": "registry", "skip": null, "word": "registry", "pos": ["명사"], "ipa": "ˈredʒɪstri",
+  "meaning": "레지스트리 — 등록된 항목을 모아 둔 목록", "short": "레지스트리, 등록 목록",
+  "senses": [ { "pos": "명사", "ko": "레지스트리 (등록 항목 목록)" }, { "pos": "명사", "ko": "등록소, 등기소" } ],
+  "forms": ["registries"], "synonyms": ["catalog", "directory"], "domain": "저장·기록", "basic": false,
+  "contexts": [
+   { "sid": "mock04#30.1", "surface": "registry", "pos": "명사", "sense": "레지스트리 (등록 항목 목록)" }
+  ]
+ },
+ {
+  "lemma": "regression", "skip": null, "word": "regression", "pos": ["명사"], "ipa": "rɪˈɡreʃn",
+  "meaning": "회귀 — 변경 뒤 예전엔 되던 것이 다시 나빠지는 것 (regression test: 회귀 테스트)", "short": "회귀(성능 퇴보)",
+  "senses": [ { "pos": "명사", "ko": "회귀 (변경 뒤 예전 기능이 나빠짐)" }, { "pos": "명사", "ko": "(통계) 회귀 분석" } ],
+  "forms": ["regressions"], "synonyms": ["relapse", "decline"], "domain": "오류·실패·위험", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#12.7", "surface": "regression", "pos": "명사", "sense": "회귀 (변경 뒤 예전 기능이 나빠짐)" }
+  ]
+ },
+ {
+  "lemma": "regulatory", "skip": null, "word": "regulatory", "pos": ["형용사"], "ipa": "ˈreɡjələtɔːri",
+  "meaning": "규제의, 규제 당국의 (regulatory filing: 규제 기관 제출 서류) — regulation: 규제, 법규", "short": "규제의, 규제 당국의",
+  "senses": [ { "pos": "형용사", "ko": "규제의, 규제 당국의" }, { "pos": "형용사", "ko": "법규·규정과 관련된" } ],
+  "forms": ["regulation", "regulations"], "synonyms": ["legal", "compliance-related"], "domain": "제어·제한·관리", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#9.1", "surface": "regulatory", "pos": "형용사", "sense": "규제의, 규제 당국의" },
+   { "sid": "lesson-d5#19.2", "surface": "regulatory", "pos": "형용사", "sense": "법규·규정과 관련된" },
+   { "sid": "lesson-d5#6.0", "surface": "regulatory", "pos": "형용사", "sense": "법규·규정과 관련된" },
+   { "sid": "lesson-d5#6.4", "surface": "regulatory", "pos": "형용사", "sense": "법규·규정과 관련된" }
+  ]
+ },
+ {
+  "lemma": "reimbursement", "skip": null, "word": "reimbursement", "pos": ["명사"], "ipa": "ˌriːɪmˈbɜːrsmənt",
+  "meaning": "환급, 비용 정산 (reimburse: 정산해 주다)", "short": "환급, 비용 정산",
+  "senses": [ { "pos": "명사", "ko": "환급, 비용 정산" }, { "pos": "명사", "ko": "상환금, 변제" } ],
+  "forms": ["reimburse", "reimburses", "reimbursed"], "synonyms": ["refund", "repayment"], "domain": "비즈니스·업무", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#24.0", "surface": "reimbursement", "pos": "명사", "sense": "환급, 비용 정산" }
+  ]
+ },
+ {
+  "lemma": "reject", "skip": null, "word": "reject", "pos": ["동사"], "ipa": "rɪˈdʒekt",
+  "meaning": "거부하다, 받아들이지 않다", "short": "거부하다, 거절하다",
+  "senses": [ { "pos": "동사", "ko": "거부하다, 받아들이지 않다" }, { "pos": "동사", "ko": "(요청·입력을) 거절하다, 차단하다" } ],
+  "forms": ["rejects", "rejected", "rejecting", "rejection"], "synonyms": ["refuse", "decline", "deny"], "domain": "제어·제한·관리", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#24.2", "surface": "rejected", "pos": "동사", "sense": "거부하다, 받아들이지 않다" },
+   { "sid": "lesson-d5#15.0", "surface": "rejects", "pos": "동사", "sense": "거부하다, 받아들이지 않다" },
+   { "sid": "mock04#14.7", "surface": "rejects", "pos": "동사", "sense": "(요청·입력을) 거절하다, 차단하다" },
+   { "sid": "lesson-d4#22.5", "surface": "rejected", "pos": "동사", "sense": "(요청·입력을) 거절하다, 차단하다" }
+  ]
+ },
+ {
+  "lemma": "relate", "skip": null, "word": "relate", "pos": ["동사"], "ipa": "rɪˈleɪt",
+  "meaning": "① (~와) 관련되다, 관련짓다 ② (relate to) 공감하다", "short": "관련되다, 관련짓다",
+  "senses": [ { "pos": "동사", "ko": "(~와) 관련되다, 관련짓다" }, { "pos": "동사", "ko": "(relate to) 공감하다, 이해하다" } ],
+  "forms": ["relates", "related", "relating", "relation"], "synonyms": ["connect", "link"], "domain": "논리·관계·연결어", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#31.5", "surface": "relate", "pos": "동사", "sense": "(~와) 관련되다, 관련짓다" }
+  ]
+ },
+ {
+  "lemma": "related", "skip": null, "word": "related", "pos": ["형용사"], "ipa": "rɪˈleɪtɪd",
+  "meaning": "관련된, 연관된", "short": "관련된, 연관된",
+  "senses": [ { "pos": "형용사", "ko": "관련된, 연관된" }, { "pos": "형용사", "ko": "친척의, 혈연관계의" } ],
+  "forms": [], "synonyms": ["connected", "linked"], "domain": "논리·관계·연결어", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#7.1", "surface": "related", "pos": "형용사", "sense": "관련된, 연관된" },
+   { "sid": "mock04#42.2", "surface": "related", "pos": "형용사", "sense": "관련된, 연관된" },
+   { "sid": "lesson-d1#36.3", "surface": "related", "pos": "형용사", "sense": "관련된, 연관된" }
+  ]
+ },
+ {
+  "lemma": "relationship", "skip": null, "word": "relationship", "pos": ["명사"], "ipa": "rɪˈleɪʃnʃɪp",
+  "meaning": "① 관계, 관련성 ② (사람 사이의) 관계", "short": "관계, 관련성",
+  "senses": [ { "pos": "명사", "ko": "관계, 관련성" }, { "pos": "명사", "ko": "인간관계, 사이" } ],
+  "forms": ["relationships"], "synonyms": ["connection", "link", "correlation"], "domain": "논리·관계·연결어", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#17.2", "surface": "relationship", "pos": "명사", "sense": "관계, 관련성" },
+   { "sid": "lesson-d2#15.2", "surface": "relationship", "pos": "명사", "sense": "관계, 관련성" },
+   { "sid": "lesson-d4#20.4", "surface": "relationship", "pos": "명사", "sense": "관계, 관련성" }
+  ]
+ }
+]

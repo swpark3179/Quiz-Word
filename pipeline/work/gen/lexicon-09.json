@@ -1,0 +1,982 @@
+[
+ {
+  "lemma": "conduct",
+  "skip": null,
+  "word": "conduct",
+  "pos": ["동사"],
+  "ipa": "kənˈdʌkt",
+  "meaning": "(조사·검토를) 실시하다, 수행하다",
+  "short": "실시하다, 수행하다",
+  "senses": [
+   { "pos": "동사", "ko": "(조사·검토를) 실시하다, 수행하다" },
+   { "pos": "동사", "ko": "(악단을) 지휘하다" },
+   { "pos": "동사", "ko": "(열·전기를) 전도하다" }
+  ],
+  "forms": ["conducts", "conducted", "conducting"],
+  "synonyms": ["carry out", "perform"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:conduct.0", "surface": "conduct", "pos": "동사", "sense": "(조사·검토를) 실시하다, 수행하다" }
+  ]
+ },
+ {
+  "lemma": "confidence",
+  "skip": null,
+  "word": "confidence",
+  "pos": ["명사"],
+  "ipa": "ˈkɑːnfɪdəns",
+  "meaning": "확신도, 신뢰도 — 얼마나 확실하다고 보는지",
+  "short": "확신도, 신뢰도",
+  "senses": [
+   { "pos": "명사", "ko": "확신도, 신뢰도" },
+   { "pos": "명사", "ko": "(남에 대한) 신뢰, 믿음" },
+   { "pos": "명사", "ko": "자신감" }
+  ],
+  "forms": ["confident", "confidently"],
+  "synonyms": ["certainty"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#11.0", "surface": "confidence", "pos": "명사", "sense": "확신도, 신뢰도" },
+   { "sid": "vocab:confidence.1", "surface": "confidence", "pos": "명사", "sense": "(남에 대한) 신뢰, 믿음" },
+   { "sid": "mock04#10.7", "surface": "confidence", "pos": "명사", "sense": "확신도, 신뢰도" },
+   { "sid": "lesson-d5#30.0", "surface": "confidence", "pos": "명사", "sense": "확신도, 신뢰도" }
+  ]
+ },
+ {
+  "lemma": "configure",
+  "skip": null,
+  "word": "configure",
+  "pos": ["동사"],
+  "ipa": "kənˈfɪɡjər",
+  "meaning": "(설정 값을) 구성하다, 설정하다",
+  "short": "설정하다, 구성하다",
+  "senses": [
+   { "pos": "동사", "ko": "(설정 값을) 구성하다, 설정하다" },
+   { "pos": "명사", "ko": "설정, 구성 (방식)" }
+  ],
+  "forms": ["configures", "configured", "configuring", "configuration", "config"],
+  "synonyms": ["set up"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#12.2", "surface": "configured", "pos": "동사", "sense": "(설정 값을) 구성하다, 설정하다" },
+   { "sid": "lesson-d3#11.2", "surface": "configuration", "pos": "명사", "sense": "설정, 구성 (방식)" },
+   { "sid": "lesson-d2#18.1", "surface": "configured", "pos": "동사", "sense": "(설정 값을) 구성하다, 설정하다" },
+   { "sid": "sample01#11.1", "surface": "configured", "pos": "동사", "sense": "(설정 값을) 구성하다, 설정하다" }
+  ]
+ },
+ {
+  "lemma": "confirm",
+  "skip": null,
+  "word": "confirm",
+  "pos": ["동사"],
+  "ipa": "kənˈfɜːrm",
+  "meaning": "확인하다, (맞다고) 확정하다",
+  "short": "확인하다, 확정하다",
+  "senses": [
+   { "pos": "동사", "ko": "확인하다, (맞다고) 확정하다" },
+   { "pos": "명사", "ko": "확인, 승인" }
+  ],
+  "forms": ["confirms", "confirmed", "confirming", "confirmation"],
+  "synonyms": ["verify", "validate"],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#30.2", "surface": "confirms", "pos": "동사", "sense": "확인하다, (맞다고) 확정하다" },
+   { "sid": "vocab:confirm.0", "surface": "confirmation", "pos": "명사", "sense": "확인, 승인" },
+   { "sid": "mock04#5.1", "surface": "confirmed", "pos": "동사", "sense": "확인하다, (맞다고) 확정하다" },
+   { "sid": "sample01#18.5", "surface": "confirm", "pos": "동사", "sense": "확인하다, (맞다고) 확정하다" }
+  ]
+ },
+ {
+  "lemma": "conflict",
+  "skip": null,
+  "word": "conflict",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈkɑːnflɪkt",
+  "meaning": "충돌, 상충(하다) — 서로 맞지 않음",
+  "short": "충돌, 상충(하다)",
+  "senses": [
+   { "pos": "명사", "ko": "충돌, 상충" },
+   { "pos": "동사", "ko": "충돌하다, 상충하다" },
+   { "pos": "명사", "ko": "(사람 사이의) 갈등, 분쟁" }
+  ],
+  "forms": ["conflicts", "conflicted", "conflicting"],
+  "synonyms": ["clash", "contradiction"],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#22.2", "surface": "conflict", "pos": "명사", "sense": "충돌, 상충" },
+   { "sid": "lesson-d4#38.0", "surface": "conflict", "pos": "동사", "sense": "충돌하다, 상충하다" },
+   { "sid": "mock04#35.7", "surface": "conflict", "pos": "명사", "sense": "충돌, 상충" },
+   { "sid": "lesson-d2#22.8", "surface": "conflicting", "pos": "동사", "sense": "충돌하다, 상충하다" }
+  ]
+ },
+ {
+  "lemma": "confuse",
+  "skip": null,
+  "word": "confuse",
+  "pos": ["동사"],
+  "ipa": "kənˈfjuːz",
+  "meaning": "헷갈리게 하다, 혼동하다",
+  "short": "헷갈리게 하다, 혼동하다",
+  "senses": [
+   { "pos": "동사", "ko": "헷갈리게 하다, 혼란스럽게 하다" },
+   { "pos": "동사", "ko": "(A를 B와) 혼동하다" },
+   { "pos": "형용사", "ko": "헷갈리는, 혼란스러운" }
+  ],
+  "forms": ["confuses", "confused", "confusing", "confusion"],
+  "synonyms": ["puzzle", "mix up"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#8.2", "surface": "confusing", "pos": "형용사", "sense": "헷갈리는, 혼란스러운" }
+  ]
+ },
+ {
+  "lemma": "connect",
+  "skip": null,
+  "word": "connect",
+  "pos": ["동사"],
+  "ipa": "kəˈnekt",
+  "meaning": "① (서버·시스템에) 연결하다, 접속하다 ② (사물·생각을) 잇다, 관련짓다",
+  "short": "연결하다, 접속하다",
+  "senses": [
+   { "pos": "동사", "ko": "(서버·시스템에) 연결하다, 접속하다" },
+   { "pos": "동사", "ko": "(사물·생각을) 잇다, 관련짓다" }
+  ],
+  "forms": ["connects", "connected", "connecting"],
+  "synonyms": ["link", "attach"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#31.0", "surface": "connects", "pos": "동사", "sense": "(서버·시스템에) 연결하다, 접속하다" },
+   { "sid": "mock04#41.1", "surface": "connects", "pos": "동사", "sense": "(서버·시스템에) 연결하다, 접속하다" }
+  ]
+ },
+ {
+  "lemma": "connection",
+  "skip": null,
+  "word": "connection",
+  "pos": ["명사"],
+  "ipa": "kəˈnekʃn",
+  "meaning": "① (네트워크·DB) 연결, 접속 ② 관련(성), 관계",
+  "short": "연결, 접속",
+  "senses": [
+   { "pos": "명사", "ko": "(네트워크·DB) 연결, 접속" },
+   { "pos": "명사", "ko": "관련(성), 관계" }
+  ],
+  "forms": ["connections"],
+  "synonyms": ["link"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#14.1", "surface": "connections", "pos": "명사", "sense": "(네트워크·DB) 연결, 접속" },
+   { "sid": "lesson-d2#24.0", "surface": "connection", "pos": "명사", "sense": "(네트워크·DB) 연결, 접속" },
+   { "sid": "mock04#7.5", "surface": "connection", "pos": "명사", "sense": "(네트워크·DB) 연결, 접속" },
+   { "sid": "lesson-d2#24.2", "surface": "connection", "pos": "명사", "sense": "(네트워크·DB) 연결, 접속" }
+  ]
+ },
+ {
+  "lemma": "connector",
+  "skip": null,
+  "word": "connector",
+  "pos": ["명사"],
+  "ipa": "kəˈnektər",
+  "meaning": "① 커넥터, 연결 단자(플러그) ② (시스템 사이의) 연결 모듈",
+  "short": "커넥터, 연결 단자",
+  "senses": [
+   { "pos": "명사", "ko": "커넥터, 연결 단자" },
+   { "pos": "명사", "ko": "(시스템 사이의) 연결 모듈" }
+  ],
+  "forms": ["connectors"],
+  "synonyms": ["plug"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#9.5", "surface": "connector", "pos": "명사", "sense": "커넥터, 연결 단자" },
+   { "sid": "lesson-d1#9.0", "surface": "connector", "pos": "명사", "sense": "커넥터, 연결 단자" }
+  ]
+ },
+ {
+  "lemma": "consecutive",
+  "skip": null,
+  "word": "consecutive",
+  "pos": ["형용사"],
+  "ipa": "kənˈsekjətɪv",
+  "meaning": "연속된, 잇따른",
+  "short": "연속된, 잇따른",
+  "senses": [
+   { "pos": "형용사", "ko": "연속된, 잇따른" }
+  ],
+  "forms": ["consecutively"],
+  "synonyms": ["successive", "sequential"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#1.7", "surface": "consecutive", "pos": "형용사", "sense": "연속된, 잇따른" }
+  ]
+ },
+ {
+  "lemma": "consent",
+  "skip": null,
+  "word": "consent",
+  "pos": ["명사", "동사"],
+  "ipa": "kənˈsent",
+  "meaning": "동의(하다) — (사용자의) 허락",
+  "short": "동의, 허락",
+  "senses": [
+   { "pos": "명사", "ko": "동의, 허락" },
+   { "pos": "동사", "ko": "동의하다, 허락하다" }
+  ],
+  "forms": ["consents", "consented", "consenting"],
+  "synonyms": ["permission", "approval", "agree"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "consequently",
+  "skip": null,
+  "word": "consequently",
+  "pos": ["부사"],
+  "ipa": "ˈkɑːnsəkwentli",
+  "meaning": "그 결과, 따라서",
+  "short": "그 결과, 따라서",
+  "senses": [
+   { "pos": "부사", "ko": "그 결과, 따라서" }
+  ],
+  "forms": ["consequent", "consequence"],
+  "synonyms": ["therefore", "as a result", "thus"],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#24.3", "surface": "consequently", "pos": "부사", "sense": "그 결과, 따라서" }
+  ]
+ },
+ {
+  "lemma": "conservative",
+  "skip": null,
+  "word": "conservative",
+  "pos": ["형용사"],
+  "ipa": "kənˈsɜːrvətɪv",
+  "meaning": "보수적인, 신중한 (위험을 피하는)",
+  "short": "보수적인, 신중한",
+  "senses": [
+   { "pos": "형용사", "ko": "보수적인, 신중한" },
+   { "pos": "형용사", "ko": "(추정치를) 적게 잡은, 줄여 잡은" },
+   { "pos": "형용사", "ko": "(정치적으로) 보수적인" }
+  ],
+  "forms": ["conservatively"],
+  "synonyms": ["cautious", "careful"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#1.2", "surface": "conservative", "pos": "형용사", "sense": "보수적인, 신중한" },
+   { "sid": "sample01#5.7", "surface": "conservative", "pos": "형용사", "sense": "보수적인, 신중한" }
+  ]
+ },
+ {
+  "lemma": "consider",
+  "skip": null,
+  "word": "consider",
+  "pos": ["동사"],
+  "ipa": "kənˈsɪdər",
+  "meaning": "① 고려하다, 검토하다 ② (~라고) 여기다, 간주하다",
+  "short": "고려하다, 검토하다",
+  "senses": [
+   { "pos": "동사", "ko": "고려하다, 검토하다" },
+   { "pos": "동사", "ko": "(~라고) 여기다, 간주하다" }
+  ],
+  "forms": ["considers", "considered", "considering", "consideration"],
+  "synonyms": ["weigh", "evaluate", "regard"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#4.3", "surface": "considers", "pos": "동사", "sense": "고려하다, 검토하다" }
+  ]
+ },
+ {
+  "lemma": "consistent",
+  "skip": null,
+  "word": "consistent",
+  "pos": ["형용사"],
+  "ipa": "kənˈsɪstənt",
+  "meaning": "일관된, 매번 같은",
+  "short": "일관된, 매번 같은",
+  "senses": [
+   { "pos": "형용사", "ko": "일관된, 매번 같은" },
+   { "pos": "부사", "ko": "일관되게, 늘" },
+   { "pos": "형용사", "ko": "(~와) 일치하는, 모순 없는" }
+  ],
+  "forms": ["consistently", "consistency", "inconsistent"],
+  "synonyms": ["uniform", "steady", "coherent"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#27.1", "surface": "consistent", "pos": "형용사", "sense": "일관된, 매번 같은" },
+   { "sid": "sample01#10.1", "surface": "consistently", "pos": "부사", "sense": "일관되게, 늘" },
+   { "sid": "mock04#17.2", "surface": "consistent", "pos": "형용사", "sense": "일관된, 매번 같은" },
+   { "sid": "sample01#14.0", "surface": "consistently", "pos": "부사", "sense": "일관되게, 늘" }
+  ]
+ },
+ {
+  "lemma": "consolidate",
+  "skip": null,
+  "word": "consolidate",
+  "pos": ["동사"],
+  "ipa": "kənˈsɑːlɪdeɪt",
+  "meaning": "하나로 통합하다, 합치다",
+  "short": "하나로 통합하다, 합치다",
+  "senses": [
+   { "pos": "동사", "ko": "하나로 통합하다, 합치다" },
+   { "pos": "명사", "ko": "통합, 하나로 합침" },
+   { "pos": "동사", "ko": "(지위·성과를) 굳히다, 강화하다" }
+  ],
+  "forms": ["consolidates", "consolidated", "consolidating", "consolidation"],
+  "synonyms": ["merge", "combine", "unify"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#30.0", "surface": "consolidating", "pos": "동사", "sense": "하나로 통합하다, 합치다" },
+   { "sid": "lesson-d2#7.4", "surface": "Consolidation", "pos": "명사", "sense": "통합, 하나로 합침" },
+   { "sid": "mock04#33.5", "surface": "Consolidate", "pos": "동사", "sense": "하나로 통합하다, 합치다" },
+   { "sid": "lesson-d2#7.1", "surface": "consolidate", "pos": "동사", "sense": "하나로 통합하다, 합치다" }
+  ]
+ },
+ {
+  "lemma": "constant",
+  "skip": null,
+  "word": "constant",
+  "pos": ["명사", "형용사"],
+  "ipa": "ˈkɑːnstənt",
+  "meaning": "① (코드의) 상수 ② 끊임없는, 일정한",
+  "short": "(코드의) 상수",
+  "senses": [
+   { "pos": "명사", "ko": "(코드의) 상수" },
+   { "pos": "형용사", "ko": "끊임없는, 일정한" }
+  ],
+  "forms": ["constants", "constantly"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#43.1", "surface": "constant", "pos": "명사", "sense": "(코드의) 상수" },
+   { "sid": "mock04#43.7", "surface": "constant", "pos": "명사", "sense": "(코드의) 상수" }
+  ]
+ },
+ {
+  "lemma": "constrained decoding",
+  "skip": null,
+  "word": "constrained decoding",
+  "pos": ["명사구"],
+  "ipa": "kənˈstreɪnd diːˈkoʊdɪŋ",
+  "meaning": "제약 디코딩 — 스키마·문법에 맞는 토큰만 고르게 해 출력 형식을 보장하는 생성 방식",
+  "short": "제약 디코딩",
+  "senses": [
+   { "pos": "명사구", "ko": "제약 디코딩 (형식을 보장하는 생성 방식)" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "selfcheck-d5-kor#29.2", "surface": "constrained decoding", "pos": "명사구", "sense": "제약 디코딩 (형식을 보장하는 생성 방식)" }
+  ]
+ },
+ {
+  "lemma": "constraint",
+  "skip": null,
+  "word": "constraint",
+  "pos": ["명사"],
+  "ipa": "kənˈstreɪnt",
+  "meaning": "제약 (조건) — 반드시 지켜야 하는 한계",
+  "short": "제약 (조건)",
+  "senses": [
+   { "pos": "명사", "ko": "제약 (조건), 한계" },
+   { "pos": "명사", "ko": "억제, 구속" }
+  ],
+  "forms": ["constraints", "constrain", "constrained"],
+  "synonyms": ["restriction", "limitation", "limit"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#12.2", "surface": "constraint", "pos": "명사", "sense": "제약 (조건), 한계" },
+   { "sid": "mock04#21.2", "surface": "constraints", "pos": "명사", "sense": "제약 (조건), 한계" },
+   { "sid": "sample01#3.3", "surface": "constraints", "pos": "명사", "sense": "제약 (조건), 한계" },
+   { "sid": "mock04#56.4", "surface": "constraint", "pos": "명사", "sense": "제약 (조건), 한계" }
+  ]
+ },
+ {
+  "lemma": "construct",
+  "skip": null,
+  "word": "construct",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈkɑːnstrʌkt",
+  "meaning": "① (코드의) 구문 요소 — 함수·반복문·try 블록 같은 구성 단위 ② 구성하다, 만들다",
+  "short": "구문 요소, 구성하다",
+  "senses": [
+   { "pos": "명사", "ko": "(코드의) 구문 요소" },
+   { "pos": "동사", "ko": "구성하다, 만들다" }
+  ],
+  "forms": ["constructs", "constructed", "constructing", "construction"],
+  "synonyms": ["build", "assemble"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#25.6", "surface": "construct", "pos": "명사", "sense": "(코드의) 구문 요소" },
+   { "sid": "lesson-d4#20.4", "surface": "constructed", "pos": "동사", "sense": "구성하다, 만들다" },
+   { "sid": "lesson-d4#26.3", "surface": "construct", "pos": "명사", "sense": "(코드의) 구문 요소" }
+  ]
+ },
+ {
+  "lemma": "consult",
+  "skip": null,
+  "word": "consult",
+  "pos": ["동사"],
+  "ipa": "kənˈsʌlt",
+  "meaning": "(자료를) 찾아보다, 참고하다 / 상담하다",
+  "short": "찾아보다, 참고하다",
+  "senses": [
+   { "pos": "동사", "ko": "(자료를) 찾아보다, 참고하다" },
+   { "pos": "동사", "ko": "(전문가와) 상담하다" }
+  ],
+  "forms": ["consults", "consulted", "consulting", "consultation"],
+  "synonyms": ["refer to", "check"],
+  "domain": "검색·조회",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#35.3", "surface": "consulted", "pos": "동사", "sense": "(자료를) 찾아보다, 참고하다" },
+   { "sid": "lesson-d5#36.4", "surface": "consulted", "pos": "동사", "sense": "(자료를) 찾아보다, 참고하다" }
+  ]
+ },
+ {
+  "lemma": "consume",
+  "skip": null,
+  "word": "consume",
+  "pos": ["동사"],
+  "ipa": "kənˈsuːm",
+  "meaning": "(자원·토큰을) 소모하다, 써 버리다",
+  "short": "소모하다, 써 버리다",
+  "senses": [
+   { "pos": "동사", "ko": "(자원·토큰을) 소모하다, 써 버리다" },
+   { "pos": "명사", "ko": "소비자, (결과를) 받아 쓰는 쪽" }
+  ],
+  "forms": ["consumes", "consumed", "consuming", "consumer", "consumers", "consumption"],
+  "synonyms": ["use up", "spend"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#2.1", "surface": "consuming", "pos": "동사", "sense": "(자원·토큰을) 소모하다, 써 버리다" },
+   { "sid": "lesson-d2#10.3", "surface": "consumers", "pos": "명사", "sense": "소비자, (결과를) 받아 쓰는 쪽" }
+  ]
+ },
+ {
+  "lemma": "contact",
+  "skip": null,
+  "word": "contact",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈkɑːntækt",
+  "meaning": "① 연락(처) ② 연락하다 ③ 접촉",
+  "short": "연락(처)",
+  "senses": [
+   { "pos": "명사", "ko": "연락(처)" },
+   { "pos": "동사", "ko": "연락하다" },
+   { "pos": "명사", "ko": "접촉" }
+  ],
+  "forms": ["contacts", "contacted", "contacting"],
+  "synonyms": ["get in touch"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#13.5", "surface": "contact", "pos": "명사", "sense": "연락(처)" }
+  ]
+ },
+ {
+  "lemma": "contain",
+  "skip": null,
+  "word": "contain",
+  "pos": ["동사"],
+  "ipa": "kənˈteɪn",
+  "meaning": "(안에) 담고 있다, 포함하다",
+  "short": "포함하다, 담고 있다",
+  "senses": [
+   { "pos": "동사", "ko": "(안에) 담고 있다, 포함하다" },
+   { "pos": "동사", "ko": "(피해·문제를) 억제하다, 막다" }
+  ],
+  "forms": ["contains", "contained", "containing"],
+  "synonyms": ["include", "hold"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#1.1", "surface": "contains", "pos": "동사", "sense": "(안에) 담고 있다, 포함하다" },
+   { "sid": "lesson-d3#5.1", "surface": "contains", "pos": "동사", "sense": "(안에) 담고 있다, 포함하다" },
+   { "sid": "sample01#16.1", "surface": "containing", "pos": "동사", "sense": "(안에) 담고 있다, 포함하다" },
+   { "sid": "lesson-d4#15.2", "surface": "contain", "pos": "동사", "sense": "(안에) 담고 있다, 포함하다" }
+  ]
+ },
+ {
+  "lemma": "container",
+  "skip": null,
+  "word": "container",
+  "pos": ["명사"],
+  "ipa": "kənˈteɪnər",
+  "meaning": "① (Docker 등의) 컨테이너 — 격리된 실행 환경 ② 그릇, 담는 것",
+  "short": "컨테이너(격리 실행 환경)",
+  "senses": [
+   { "pos": "명사", "ko": "(격리된 실행 환경) 컨테이너" },
+   { "pos": "명사", "ko": "그릇, 담는 것" }
+  ],
+  "forms": ["containers"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#48.7", "surface": "container", "pos": "명사", "sense": "(격리된 실행 환경) 컨테이너" }
+  ]
+ },
+ {
+  "lemma": "contamination",
+  "skip": null,
+  "word": "cross-contamination",
+  "pos": ["명사"],
+  "ipa": "ˌkrɔːs kənˌtæmɪˈneɪʃn",
+  "meaning": "① 교차 오염 ② (서로 다른 기준·정보가) 뒤섞여 영향을 줌",
+  "short": "교차 오염, 뒤섞임",
+  "senses": [
+   { "pos": "명사", "ko": "교차 오염" },
+   { "pos": "명사", "ko": "(기준·정보가) 서로 뒤섞임" }
+  ],
+  "forms": ["contamination"],
+  "synonyms": [],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#6.1", "surface": "cross-contamination", "pos": "명사", "sense": "(기준·정보가) 서로 뒤섞임" }
+  ]
+ },
+ {
+  "lemma": "content",
+  "skip": null,
+  "word": "content",
+  "pos": ["명사"],
+  "ipa": "ˈkɑːntent",
+  "meaning": "내용(물), 콘텐츠",
+  "short": "내용(물), 콘텐츠",
+  "senses": [
+   { "pos": "명사", "ko": "내용(물), 콘텐츠" },
+   { "pos": "형용사", "ko": "만족하는" }
+  ],
+  "forms": ["contents"],
+  "synonyms": ["material"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#32.2", "surface": "content", "pos": "명사", "sense": "내용(물), 콘텐츠" },
+   { "sid": "lesson-d3#18.3", "surface": "contents", "pos": "명사", "sense": "내용(물), 콘텐츠" },
+   { "sid": "mock04#36.2", "surface": "content", "pos": "명사", "sense": "내용(물), 콘텐츠" },
+   { "sid": "sample01#1.4", "surface": "content", "pos": "명사", "sense": "내용(물), 콘텐츠" }
+  ]
+ },
+ {
+  "lemma": "contested",
+  "skip": null,
+  "word": "contested",
+  "pos": ["형용사"],
+  "ipa": "kənˈtestɪd",
+  "meaning": "이견이 있는, 논란이 되는",
+  "short": "이견이 있는, 논란이 되는",
+  "senses": [
+   { "pos": "형용사", "ko": "이견이 있는, 논란이 되는" }
+  ],
+  "forms": ["contest", "uncontested"],
+  "synonyms": ["disputed", "controversial"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#41.6", "surface": "contested", "pos": "형용사", "sense": "이견이 있는, 논란이 되는" }
+  ]
+ },
+ {
+  "lemma": "context",
+  "skip": null,
+  "word": "context",
+  "pos": ["명사"],
+  "ipa": "ˈkɑːntekst",
+  "meaning": "① 컨텍스트 — 모델이 한 번에 보는 입력 전체 ② 맥락, 배경 정보",
+  "short": "컨텍스트, 맥락",
+  "senses": [
+   { "pos": "명사", "ko": "컨텍스트(모델이 보는 입력 전체)" },
+   { "pos": "명사", "ko": "맥락, 배경 정보" }
+  ],
+  "forms": ["contexts", "contextual"],
+  "synonyms": ["background"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#35.1", "surface": "context", "pos": "명사", "sense": "컨텍스트(모델이 보는 입력 전체)" },
+   { "sid": "sample01#10.1", "surface": "context", "pos": "명사", "sense": "맥락, 배경 정보" },
+   { "sid": "mock04#20.1", "surface": "context", "pos": "명사", "sense": "컨텍스트(모델이 보는 입력 전체)" },
+   { "sid": "lesson-d2#30.1", "surface": "context", "pos": "명사", "sense": "맥락, 배경 정보" }
+  ]
+ },
+ {
+  "lemma": "continue",
+  "skip": null,
+  "word": "continue",
+  "pos": ["동사"],
+  "ipa": "kənˈtɪnjuː",
+  "meaning": "① 계속하다, 이어서 하다 ② 계속되다, 이어지다 ③ (~으로) 진행하다",
+  "short": "계속하다, 이어서 하다",
+  "senses": [
+   { "pos": "동사", "ko": "계속하다, 이어서 하다" },
+   { "pos": "동사", "ko": "계속되다, 이어지다" },
+   { "pos": "동사", "ko": "(~을 골라) 진행하다" }
+  ],
+  "forms": ["continues", "continued", "continuing", "continuation"],
+  "synonyms": ["proceed", "resume", "carry on"],
+  "domain": "실행·처리",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#1.2", "surface": "continue", "pos": "동사", "sense": "계속하다, 이어서 하다" },
+   { "sid": "lesson-d5#19.1", "surface": "continues", "pos": "동사", "sense": "계속되다, 이어지다" },
+   { "sid": "mock04#10.4", "surface": "Continue", "pos": "동사", "sense": "(~을 골라) 진행하다" },
+   { "sid": "mock04#39.1", "surface": "continue", "pos": "동사", "sense": "계속하다, 이어서 하다" }
+  ]
+ },
+ {
+  "lemma": "continuous",
+  "skip": null,
+  "word": "continuous",
+  "pos": ["형용사"],
+  "ipa": "kənˈtɪnjuəs",
+  "meaning": "지속적인, 끊김 없이 이어지는",
+  "short": "지속적인, 끊김 없는",
+  "senses": [
+   { "pos": "형용사", "ko": "지속적인, 끊김 없이 이어지는" },
+   { "pos": "부사", "ko": "끊임없이, 계속" }
+  ],
+  "forms": ["continuously"],
+  "synonyms": ["uninterrupted", "ongoing"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#29.4", "surface": "continuously", "pos": "부사", "sense": "끊임없이, 계속" },
+   { "sid": "vocab:continuous.0", "surface": "Continuous", "pos": "형용사", "sense": "지속적인, 끊김 없이 이어지는" }
+  ]
+ },
+ {
+  "lemma": "contract",
+  "skip": null,
+  "word": "contract",
+  "pos": ["명사"],
+  "ipa": "ˈkɑːntrækt",
+  "meaning": "① 계약(서) ② (인터페이스·출력 형식의) 약속, 규약",
+  "short": "계약(서), 규약",
+  "senses": [
+   { "pos": "명사", "ko": "계약(서)" },
+   { "pos": "명사", "ko": "(인터페이스·출력 형식의) 약속, 규약" }
+  ],
+  "forms": ["contracts"],
+  "synonyms": ["agreement"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#10.0", "surface": "contract", "pos": "명사", "sense": "(인터페이스·출력 형식의) 약속, 규약" },
+   { "sid": "lesson-d4#23.1", "surface": "contract", "pos": "명사", "sense": "계약(서)" },
+   { "sid": "lesson-d5#36.2", "surface": "contract", "pos": "명사", "sense": "(인터페이스·출력 형식의) 약속, 규약" },
+   { "sid": "lesson-d4#23.0", "surface": "contract", "pos": "명사", "sense": "계약(서)" }
+  ]
+ },
+ {
+  "lemma": "contradict",
+  "skip": null,
+  "word": "contradict",
+  "pos": ["동사"],
+  "ipa": "ˌkɑːntrəˈdɪkt",
+  "meaning": "모순되다, 반대되는 말을 하다",
+  "short": "모순되다, 어긋나다",
+  "senses": [
+   { "pos": "동사", "ko": "모순되다, 어긋나다" },
+   { "pos": "명사", "ko": "모순, 상충" },
+   { "pos": "동사", "ko": "반대되는 말을 하다, 반박하다" }
+  ],
+  "forms": ["contradicts", "contradicted", "contradicting", "contradiction", "contradictions", "contradictory"],
+  "synonyms": ["conflict with", "oppose"],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#38.2", "surface": "contradicts", "pos": "동사", "sense": "모순되다, 어긋나다" },
+   { "sid": "lesson-d5#39.0", "surface": "contradictions", "pos": "명사", "sense": "모순, 상충" },
+   { "sid": "lesson-d4#3.1", "surface": "contradicted", "pos": "동사", "sense": "모순되다, 어긋나다" },
+   { "sid": "lesson-d5#40.1", "surface": "contradiction", "pos": "명사", "sense": "모순, 상충" }
+  ]
+ },
+ {
+  "lemma": "contributor",
+  "skip": null,
+  "word": "contributor",
+  "pos": ["명사"],
+  "ipa": "kənˈtrɪbjətər",
+  "meaning": "① (프로젝트에) 기여하는 사람, 참여자 ② (결과의) 기여 요인",
+  "short": "기여자, 참여자",
+  "senses": [
+   { "pos": "명사", "ko": "기여자, (프로젝트) 참여자" },
+   { "pos": "명사", "ko": "(결과의) 기여 요인" }
+  ],
+  "forms": ["contributors", "contribute", "contribution"],
+  "synonyms": ["participant"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#20.1", "surface": "contributor", "pos": "명사", "sense": "기여자, (프로젝트) 참여자" }
+  ]
+ },
+ {
+  "lemma": "control",
+  "skip": null,
+  "word": "control",
+  "pos": ["명사", "동사"],
+  "ipa": "kənˈtroʊl",
+  "meaning": "① 통제, 제어 (장치) ② 통제하다, 제어하다 ③ (소스·버전) 관리",
+  "short": "통제, 제어(하다)",
+  "senses": [
+   { "pos": "명사", "ko": "통제, 제어 (장치)" },
+   { "pos": "동사", "ko": "통제하다, 제어하다" },
+   { "pos": "명사", "ko": "(소스·버전) 관리" }
+  ],
+  "forms": ["controls", "controlled", "controlling"],
+  "synonyms": ["regulate", "manage", "govern"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#5.3", "surface": "control", "pos": "명사", "sense": "통제, 제어 (장치)" },
+   { "sid": "lesson-d2#16.3", "surface": "controlled", "pos": "동사", "sense": "통제하다, 제어하다" },
+   { "sid": "lesson-d3#3.4", "surface": "control", "pos": "명사", "sense": "(소스·버전) 관리" },
+   { "sid": "lesson-d2#17.5", "surface": "controlled", "pos": "동사", "sense": "통제하다, 제어하다" }
+  ]
+ },
+ {
+  "lemma": "controller",
+  "skip": null,
+  "word": "controller",
+  "pos": ["명사"],
+  "ipa": "kənˈtroʊlər",
+  "meaning": "① (웹 프레임워크의) 컨트롤러 — 요청을 받아 처리하는 코드 부분 ② 제어 장치 ③ (회계) 관리자, 감사관",
+  "short": "컨트롤러(요청 처리 코드)",
+  "senses": [
+   { "pos": "명사", "ko": "(웹 프레임워크의) 컨트롤러" },
+   { "pos": "명사", "ko": "제어 장치" },
+   { "pos": "명사", "ko": "(회계) 관리자, 감사관" }
+  ],
+  "forms": ["controllers"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#27.2", "surface": "controller", "pos": "명사", "sense": "(웹 프레임워크의) 컨트롤러" }
+  ]
+ },
+ {
+  "lemma": "convention",
+  "skip": null,
+  "word": "convention",
+  "pos": ["명사"],
+  "ipa": "kənˈvenʃn",
+  "meaning": "(팀·코드의) 관례, 규칙",
+  "short": "관례, 규칙",
+  "senses": [
+   { "pos": "명사", "ko": "(팀·코드의) 관례, 규칙" },
+   { "pos": "명사", "ko": "(대규모) 회의, 대회" }
+  ],
+  "forms": ["conventions", "conventional"],
+  "synonyms": ["norm", "practice", "standard"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#26.0", "surface": "convention", "pos": "명사", "sense": "(팀·코드의) 관례, 규칙" },
+   { "sid": "lesson-d3#1.0", "surface": "convention", "pos": "명사", "sense": "(팀·코드의) 관례, 규칙" },
+   { "sid": "mock04#11.1", "surface": "conventions", "pos": "명사", "sense": "(팀·코드의) 관례, 규칙" },
+   { "sid": "lesson-d5#26.2", "surface": "convention", "pos": "명사", "sense": "(팀·코드의) 관례, 규칙" }
+  ]
+ },
+ {
+  "lemma": "conversation",
+  "skip": null,
+  "word": "conversation",
+  "pos": ["명사"],
+  "ipa": "ˌkɑːnvərˈseɪʃn",
+  "meaning": "① 대화 ② (모델과 주고받는) 대화 세션",
+  "short": "대화, 대화 세션",
+  "senses": [
+   { "pos": "명사", "ko": "대화" },
+   { "pos": "명사", "ko": "(모델과 주고받는) 대화 세션" }
+  ],
+  "forms": ["conversations", "conversational"],
+  "synonyms": ["dialogue", "chat"],
+  "domain": "요청·소통",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#26.0", "surface": "conversation", "pos": "명사", "sense": "대화" },
+   { "sid": "lesson-d4#35.0", "surface": "conversation", "pos": "명사", "sense": "(모델과 주고받는) 대화 세션" },
+   { "sid": "mock04#1.2", "surface": "conversation", "pos": "명사", "sense": "(모델과 주고받는) 대화 세션" },
+   { "sid": "lesson-d5#11.0", "surface": "conversation", "pos": "명사", "sense": "대화" }
+  ]
+ },
+ {
+  "lemma": "conversational",
+  "skip": null,
+  "word": "conversational",
+  "pos": ["형용사"],
+  "ipa": "ˌkɑːnvərˈseɪʃənl",
+  "meaning": "대화형의, 대화체의",
+  "short": "대화형의, 대화체의",
+  "senses": [
+   { "pos": "형용사", "ko": "대화형의, 대화체의" }
+  ],
+  "forms": ["conversationally"],
+  "synonyms": ["colloquial"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#1.4", "surface": "conversational", "pos": "형용사", "sense": "대화형의, 대화체의" }
+  ]
+ },
+ {
+  "lemma": "convert",
+  "skip": null,
+  "word": "convert",
+  "pos": ["동사"],
+  "ipa": "kənˈvɜːrt",
+  "meaning": "변환하다, (다른 형태로) 바꾸다 — converter: 변환기",
+  "short": "변환하다, 바꾸다",
+  "senses": [
+   { "pos": "동사", "ko": "변환하다, (다른 형태로) 바꾸다" },
+   { "pos": "명사", "ko": "변환" },
+   { "pos": "명사", "ko": "변환기" }
+  ],
+  "forms": ["converts", "converted", "converting", "conversion", "conversions", "converter"],
+  "synonyms": ["transform", "change", "turn into"],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#8.4", "surface": "Convert", "pos": "동사", "sense": "변환하다, (다른 형태로) 바꾸다" },
+   { "sid": "lesson-d3#20.0", "surface": "conversions", "pos": "명사", "sense": "변환" },
+   { "sid": "lesson-d3#28.0", "surface": "converter", "pos": "명사", "sense": "변환기" },
+   { "sid": "mock04#18.1", "surface": "converted", "pos": "동사", "sense": "변환하다, (다른 형태로) 바꾸다" }
+  ]
+ },
+ {
+  "lemma": "coordinate",
+  "skip": null,
+  "word": "coordinate",
+  "pos": ["동사", "명사"],
+  "ipa": "koʊˈɔːrdɪneɪt",
+  "meaning": "① (여러 작업·사람을) 조율하다, 조정하다 ② 좌표",
+  "short": "조율하다, 조정하다",
+  "senses": [
+   { "pos": "동사", "ko": "(여러 작업·사람을) 조율하다, 조정하다" },
+   { "pos": "명사", "ko": "좌표" }
+  ],
+  "forms": ["coordinates", "coordinated", "coordinating", "coordination", "coordinator"],
+  "synonyms": ["organize", "orchestrate"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#15.1", "surface": "coordinated", "pos": "동사", "sense": "(여러 작업·사람을) 조율하다, 조정하다" },
+   { "sid": "lesson-d5#24.0", "surface": "coordinating", "pos": "동사", "sense": "(여러 작업·사람을) 조율하다, 조정하다" }
+  ]
+ },
+ {
+  "lemma": "coordination",
+  "skip": null,
+  "word": "coordination",
+  "pos": ["명사"],
+  "ipa": "koʊˌɔːrdɪˈneɪʃn",
+  "meaning": "① 조율, 조정 ② (몸의) 협응 능력",
+  "short": "조율, 조정",
+  "senses": [
+   { "pos": "명사", "ko": "조율, 조정" },
+   { "pos": "명사", "ko": "(몸의) 협응 능력" }
+  ],
+  "forms": ["coordinate"],
+  "synonyms": ["orchestration", "organization"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#24.2", "surface": "coordination", "pos": "명사", "sense": "조율, 조정" }
+  ]
+ },
+ {
+  "lemma": "coordinator",
+  "skip": null,
+  "word": "coordinator",
+  "pos": ["명사"],
+  "ipa": "koʊˈɔːrdɪneɪtər",
+  "meaning": "코디네이터 — 일을 나눠 맡기고 결과를 모으는 조정 역할(에이전트)",
+  "short": "코디네이터(조정 에이전트)",
+  "senses": [
+   { "pos": "명사", "ko": "코디네이터(조정 역할 에이전트)" },
+   { "pos": "명사", "ko": "(행사·업무의) 진행 담당자" }
+  ],
+  "forms": ["coordinators"],
+  "synonyms": ["orchestrator"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#10.0", "surface": "coordinator", "pos": "명사", "sense": "코디네이터(조정 역할 에이전트)" },
+   { "sid": "lesson-d5#14.0", "surface": "coordinator", "pos": "명사", "sense": "코디네이터(조정 역할 에이전트)" },
+   { "sid": "mock04#23.1", "surface": "coordinator", "pos": "명사", "sense": "코디네이터(조정 역할 에이전트)" },
+   { "sid": "lesson-d2#13.3", "surface": "coordinator", "pos": "명사", "sense": "코디네이터(조정 역할 에이전트)" }
+  ]
+ },
+ {
+  "lemma": "copy",
+  "skip": null,
+  "word": "copy",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈkɑːpi",
+  "meaning": "① 복사하다, 베끼다 ② 사본, 복사본 ③ (책·신문의) 한 부",
+  "short": "복사하다, 사본",
+  "senses": [
+   { "pos": "동사", "ko": "복사하다, 베끼다" },
+   { "pos": "명사", "ko": "사본, 복사본" },
+   { "pos": "명사", "ko": "(책·신문의) 한 부" }
+  ],
+  "forms": ["copies", "copied", "copying"],
+  "synonyms": ["duplicate", "replicate"],
+  "domain": "생성·추가",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#6.0", "surface": "copied", "pos": "동사", "sense": "복사하다, 베끼다" },
+   { "sid": "lesson-d1#7.3", "surface": "copy", "pos": "명사", "sense": "사본, 복사본" },
+   { "sid": "lesson-d3#1.5", "surface": "Copy", "pos": "동사", "sense": "복사하다, 베끼다" },
+   { "sid": "lesson-d2#21.6", "surface": "copy", "pos": "명사", "sense": "사본, 복사본" }
+  ]
+ },
+ {
+  "lemma": "core",
+  "skip": null,
+  "word": "core",
+  "pos": ["형용사", "명사"],
+  "ipa": "kɔːr",
+  "meaning": "핵심(의), 중심이 되는",
+  "short": "핵심(의), 중심이 되는",
+  "senses": [
+   { "pos": "형용사", "ko": "핵심의, 중심이 되는" },
+   { "pos": "명사", "ko": "핵심, 중심부" },
+   { "pos": "명사", "ko": "(처리 장치의) 코어" }
+  ],
+  "forms": ["cores"],
+  "synonyms": ["central", "key", "essential"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#9.1", "surface": "core", "pos": "형용사", "sense": "핵심의, 중심이 되는" },
+   { "sid": "lesson-d2#30.3", "surface": "core", "pos": "형용사", "sense": "핵심의, 중심이 되는" },
+   { "sid": "lesson-d2#31.4", "surface": "core", "pos": "형용사", "sense": "핵심의, 중심이 되는" }
+  ]
+ }
+]

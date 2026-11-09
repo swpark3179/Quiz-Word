@@ -1,0 +1,2359 @@
+[
+  {
+    "id": "gain",
+    "word": "gain",
+    "tier": "core",
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "ipa": "ɡeɪn",
+    "meaning": "① 얻다, 확보하다 ② 이득, 향상(분) ③ (무게·속도를) 늘리다",
+    "short": "얻다, 확보하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "얻다, 확보하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "이득, 향상(분)"
+      },
+      {
+        "pos": "동사",
+        "ko": "(무게·속도를) 늘리다"
+      }
+    ],
+    "forms": [
+      "gains",
+      "gained",
+      "gaining"
+    ],
+    "synonyms": [
+      "obtain",
+      "acquire",
+      "get"
+    ],
+    "domain": "일반",
+    "freq": 1,
+    "sources": [
+      "lesson-d2"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 31,
+        "en": "Start by reading CLAUDE.md or AGENTS.md if they exist to gain high-level architecture context, then use Grep to locate the route handler and its imports, and read files incrementally along the call chain.",
+        "surface": "gain",
+        "pos": "동사",
+        "sense": "얻다, 확보하다",
+        "ko": "CLAUDE.md나 AGENTS.md가 있으면 먼저 읽어 상위 구조를 파악하고, Grep으로 라우트 핸들러와 그 import를 찾은 뒤, 호출 사슬을 따라 파일을 점진적으로 읽는다"
+      }
+    ]
+  },
+  {
+    "id": "gap",
+    "word": "gap",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ɡæp",
+    "meaning": "(정보·범위의) 빈틈, 공백 — 빠져 있는 부분",
+    "short": "빈틈, 공백",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(정보·범위의) 빈틈, 공백"
+      },
+      {
+        "pos": "명사",
+        "ko": "(둘 사이의) 차이, 격차"
+      }
+    ],
+    "forms": [
+      "gaps"
+    ],
+    "synonyms": [
+      "hole",
+      "omission",
+      "shortfall"
+    ],
+    "domain": "구조·구성·부분",
+    "freq": 6,
+    "sources": [
+      "mock04",
+      "lesson-d2",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 27,
+        "en": "Logs show the document-analysis subagent attempting to invoke the web-search subagent directly to fill gaps, producing routing errors and duplicated searches.",
+        "surface": "gaps",
+        "pos": "명사",
+        "sense": "(정보·범위의) 빈틈, 공백",
+        "ko": "로그를 보면 문서 분석 서브에이전트가 빈 정보를 채우려고 웹 검색 서브에이전트를 직접 호출하려 하고, 그 결과 라우팅 오류와 중복 검색이 발생합니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 27,
+        "en": "Use Glob to list component files and test files separately by their naming pattern, then compare the two path lists for gaps",
+        "surface": "gaps",
+        "pos": "명사",
+        "sense": "(정보·범위의) 빈틈, 공백",
+        "ko": "Glob으로 이름 패턴에 따라 컴포넌트 파일과 테스트 파일을 따로 나열한 뒤, 두 경로 목록을 비교해 빈틈을 찾는다"
+      },
+      {
+        "src": "lesson-d5",
+        "q": 16,
+        "en": "Failure type \"timeout (transient)\", the exact query and the database it went to, the 40 of 200 filings already retrieved, and a read replica that could fill the gap",
+        "surface": "gap",
+        "pos": "명사",
+        "sense": "(정보·범위의) 빈틈, 공백",
+        "ko": "실패 유형 \"timeout (transient)\", 정확한 질의와 그 질의를 보낸 데이터베이스, 이미 가져온 공시 200건 중 40건, 공백을 메울 수 있는 읽기 전용 복제본(read replica)"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 22,
+        "en": "Schema definition gap; tighten the schema with a numeric range or pattern on order_total so that inconsistent totals are rejected",
+        "surface": "gap",
+        "pos": "명사",
+        "sense": "(정보·범위의) 빈틈, 공백",
+        "ko": "스키마 정의의 공백이다. order_total에 수치 범위나 패턴을 걸어 일관되지 않은 총액이 거부되게 스키마를 조인다."
+      }
+    ],
+    "note": "있어야 할 것이 **비어 있는 틈**입니다. 리서치에서는 아직 못 찾은 **빠진 정보**, 정책에서는 규정이 **다루지 않는 부분**을 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> Logs show the document-analysis subagent attempting to invoke the web-search subagent directly to fill **gaps**, producing routing errors and duplicated searches.\r\n> 로그를 보면 문서 분석 서브에이전트가 **빈 정보**를 채우려고 웹 검색 서브에이전트를 직접 호출하려 하고, 그 결과 라우팅 오류와 중복 검색이 발생한다.\r\n\r\n## 함께 쓰는 표현\r\n- **fill gaps / fill the gap** : 빈 곳을 채우다\r\n- **coverage gap** : 다루지 못한 범위\r\n- **policy gap** : 정책이 다루지 않는 부분\r\n\r\n## 시험 포인트\r\n서브에이전트가 빈 정보를 채우려고 **다른 서브에이전트를 직접 부르는** 것은 안티패턴입니다. 빈 정보를 코디네이터에 돌려보내고 **코디네이터가 후속 검색을 배분**하는 허브 앤 스포크가 정답입니다."
+  },
+  {
+    "id": "garbage",
+    "word": "garbage",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈɡɑːrbɪdʒ",
+    "meaning": "쓰레기 — (프로그램에서) 쓸모없는 엉터리 출력·데이터",
+    "short": "쓰레기, 엉터리 출력",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(프로그램의) 엉터리 출력·데이터"
+      },
+      {
+        "pos": "명사",
+        "ko": "쓰레기"
+      }
+    ],
+    "synonyms": [
+      "junk",
+      "nonsense",
+      "rubbish"
+    ],
+    "domain": "오류·실패·위험",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 32,
+        "en": "Logs show it calling parse_pdf on plain-text inputs — returning garbage — in 18% of cases.",
+        "surface": "garbage",
+        "pos": "명사",
+        "sense": "(프로그램의) 엉터리 출력·데이터",
+        "ko": "로그를 보면 18%의 경우에 일반 텍스트 입력에도 parse_pdf를 호출해 엉터리 결과를 돌려줍니다."
+      }
+    ],
+    "note": "원래 \"쓰레기\"이고, 개발 문맥에서는 **의미 없는 엉터리 결과·데이터**를 말합니다. 맞지 않는 입력에 도구를 잘못 썼을 때 자주 나옵니다.\r\n\r\n## 문제 속 쓰임\r\n> Logs show it calling parse_pdf on plain-text inputs — returning **garbage** — in 18% of cases.\r\n> 로그를 보면 18%의 경우에 일반 텍스트 입력에도 `parse_pdf` 를 호출해 **엉터리 결과**를 돌려준다.\r\n\r\n## 함께 쓰는 표현\r\n- **garbage in, garbage out (GIGO)** : 입력이 엉망이면 출력도 엉망\r\n- **return garbage** : 엉터리 값을 돌려주다\r\n\r\n## 시험 포인트\r\n도구가 필요 없는 입력에도 도구를 부른다면 `tool_choice` 가 `\"any\"`(반드시 도구 하나 호출)로 묶여 있는 것이 원인입니다. 모델이 직접 답할 수도 있게 **`\"auto\"`** 로 바꾸는 보기가 정답입니다."
+  },
+  {
+    "id": "gate",
+    "word": "gate",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ɡeɪt",
+    "meaning": "관문 — 조건을 통과해야 다음으로 넘어가게 막는 지점",
+    "short": "관문(통과 조건 검사)",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "관문(통과 조건을 검사하는 지점)"
+      },
+      {
+        "pos": "동사",
+        "ko": "(조건으로) 막다, 통제하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "문, 출입구"
+      }
+    ],
+    "forms": [
+      "gated",
+      "gating",
+      "gates"
+    ],
+    "synonyms": [
+      "checkpoint",
+      "guard",
+      "gatekeeper"
+    ],
+    "domain": "제어·제한·관리",
+    "freq": 14,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 23,
+        "en": "A gate is registered with the matcher `.*refund`.",
+        "surface": "gate",
+        "pos": "명사",
+        "sense": "관문(통과 조건을 검사하는 지점)",
+        "ko": "게이트가 matcher `.*refund` 로 등록돼 있습니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 24,
+        "en": "A developer implements a PreToolUse hook that gates the `process_refund` tool by checking a boolean flag `is_verified`.",
+        "surface": "gates",
+        "pos": "동사",
+        "sense": "(조건으로) 막다, 통제하다",
+        "ko": "개발자가 불리언 플래그 `is_verified` 를 검사해 `process_refund` 도구를 막는 PreToolUse 훅을 구현합니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 32,
+        "en": "A platform team runs an automated code-review gate that blocks a pull request from merging until Claude returns a verdict on the diff, typically within a few seconds.",
+        "surface": "gate",
+        "pos": "명사",
+        "sense": "관문(통과 조건을 검사하는 지점)",
+        "ko": "플랫폼 팀이 Claude가 diff에 대한 판정을 돌려줄 때까지 PR 머지를 막는 자동 코드 리뷰 게이트를 운영하는데, 판정은 보통 몇 초 안에 나옵니다."
+      },
+      {
+        "src": "sample01",
+        "q": 5,
+        "en": "A human-in-the-loop gate at the `payment_approve` tool call, requiring explicit human confirmation for payments above a threshold",
+        "surface": "gate",
+        "pos": "명사",
+        "sense": "관문(통과 조건을 검사하는 지점)",
+        "ko": "`payment_approve` 도구 호출 지점에, 임계값을 넘는 지급은 사람의 명시적 확인을 요구하는 human-in-the-loop 게이트"
+      }
+    ],
+    "note": "조건을 통과해야만 **다음 단계로 넘어가게** 하는 확인 지점입니다. 테스트·리뷰·승인 같은 관문을 두어 진행을 통제하는 것을 *gating* 이라고 합니다.\r\n\r\n## 문제 속 쓰임\r\n> Add explicit verification **gates** between steps requiring the agent to checkpoint after resolving each concern.\r\n> 단계 사이에 명시적인 검증 **게이트**를 두어, 에이전트가 우려 사항 하나를 해결할 때마다 체크포인트를 거치게 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **quality gate** : 품질 기준을 넘어야 통과하는 관문\r\n- **approval gate** : 승인을 받아야 넘어가는 관문\r\n- **gated on** ~ : ~이 충족돼야 허용되는\r\n\r\n## 시험 포인트\r\n반드시 지켜야 할 **순서를 강제**할 때는 관문이 유용하지만, 비효율의 원인이 순차 처리라면 단계마다 게이트를 더하는 선택지는 호출 수와 지연만 늘려 오답이 되기 쉽습니다."
+  },
+  {
+    "id": "gather",
+    "word": "gather",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "ˈɡæðər",
+    "meaning": "모으다, 수집하다",
+    "short": "모으다, 수집하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "모으다, 수집하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(사람이) 모이다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(들은 바로) 짐작하다, 알게 되다"
+      }
+    ],
+    "forms": [
+      "gathered",
+      "gathering",
+      "gathers"
+    ],
+    "synonyms": [
+      "collect",
+      "compile",
+      "assemble"
+    ],
+    "domain": "검색·조회",
+    "freq": 5,
+    "sources": [
+      "lesson-d1",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 18,
+        "en": "A coordinator runs a \"web-researcher\" subagent that gathers ten sources on a topic, then spawns a \"synthesis\" subagent to write the final report.",
+        "surface": "gathers",
+        "pos": "동사",
+        "sense": "모으다, 수집하다",
+        "ko": "코디네이터가 주제에 대한 출처 열 개를 모으는 \"web-researcher\" 서브에이전트를 실행한 뒤, 최종 보고서를 쓸 \"synthesis\" 서브에이전트를 띄웁니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 6,
+        "en": "Gather the severity examples into one shared block at the end of the prompt, with each category's inclusion rules above it and the category named on each example.",
+        "surface": "Gather",
+        "pos": "동사",
+        "sense": "모으다, 수집하다",
+        "ko": "심각도 예시를 프롬프트 끝의 공용 블록 하나에 모으고, 그 위에 범주별 포함 규칙을 두며 각 예시에 범주 이름을 표시한다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 17,
+        "en": "The string omits why the search failed; return an error category, the attempted query, and the partial results gathered",
+        "surface": "gathered",
+        "pos": "동사",
+        "sense": "모으다, 수집하다",
+        "ko": "문자열에 실패 이유가 없다. 오류 범주, 시도한 질의, 모은 부분 결과를 반환한다"
+      },
+      {
+        "src": "lesson-d1",
+        "q": 14,
+        "en": "Give the synthesis subagent web search tools so it can gather the material it needs",
+        "surface": "gather",
+        "pos": "동사",
+        "sense": "모으다, 수집하다",
+        "ko": "종합 서브에이전트에 웹 검색 도구를 줘 필요한 자료를 스스로 모으게 한다"
+      }
+    ]
+  },
+  {
+    "id": "general",
+    "word": "general",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˈdʒenrəl",
+    "meaning": "① 일반적인, 범용의 ② 대략적인, 막연한 ③ (명사) 장군",
+    "short": "일반적인, 범용의",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "일반적인, 범용의"
+      },
+      {
+        "pos": "형용사",
+        "ko": "대략적인, 막연한"
+      },
+      {
+        "pos": "명사",
+        "ko": "장군"
+      }
+    ],
+    "forms": [
+      "generally",
+      "generality"
+    ],
+    "synonyms": [
+      "generic",
+      "broad",
+      "universal"
+    ],
+    "domain": "상태·성질",
+    "freq": 6,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 5,
+        "en": "The model now sometimes calls the general tool for web-only tasks.",
+        "surface": "general",
+        "pos": "형용사",
+        "sense": "일반적인, 범용의",
+        "ko": "이제 모델이 웹 전용 작업에도 가끔 이 범용 도구를 호출합니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 2,
+        "en": "General confidence language gives the model no concrete rule for what to report, so it still applies the same underlying judgment that produced the false positives before the change.",
+        "surface": "General",
+        "pos": "형용사",
+        "sense": "대략적인, 막연한",
+        "ko": "일반적인 확신 표현은 무엇을 보고할지에 대한 구체적 규칙을 주지 않으므로, 모델은 변경 전에 오탐을 만들던 같은 판단을 계속 적용한다."
+      },
+      {
+        "src": "mock04",
+        "q": 27,
+        "en": "Merge the document-analysis and web-search subagents into one general subagent that handles both kinds of work",
+        "surface": "general",
+        "pos": "형용사",
+        "sense": "일반적인, 범용의",
+        "ko": "문서 분석 서브에이전트와 웹 검색 서브에이전트를 두 종류의 작업을 모두 처리하는 범용 서브에이전트 하나로 합친다"
+      },
+      {
+        "src": "mock04",
+        "q": 33,
+        "en": "Consolidate the two tools into one unified search tool whose single description covers both general web pages and academic sources.",
+        "surface": "general",
+        "pos": "형용사",
+        "sense": "일반적인, 범용의",
+        "ko": "두 도구를 일반 웹 페이지와 학술 출처를 모두 다루는 설명 하나짜리 통합 검색 도구로 합친다"
+      }
+    ]
+  },
+  {
+    "id": "generalist",
+    "word": "generalist",
+    "tier": "core",
+    "pos": [
+      "형용사",
+      "명사"
+    ],
+    "ipa": "ˈdʒenrəlɪst",
+    "meaning": "범용형(의) — 한 가지에 특화되지 않고 여러 일을 두루 맡는 사람·것 (↔ specialist)",
+    "short": "범용형, 두루 맡는 것",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "범용형의, 여러 일을 두루 맡는"
+      },
+      {
+        "pos": "명사",
+        "ko": "다방면에 걸친 사람, 제너럴리스트"
+      }
+    ],
+    "forms": [
+      "generalists"
+    ],
+    "synonyms": [
+      "all-rounder",
+      "jack-of-all-trades"
+    ],
+    "domain": "사람·조직·역할",
+    "freq": 1,
+    "sources": [
+      "lesson-d2"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 15,
+        "en": "A single generalist agent handling an entire content pipeline (research, outline, draft, edit, publish) has 20 tools and shows declining tool-selection accuracy as more tools were added over time.",
+        "surface": "generalist",
+        "pos": "형용사",
+        "sense": "범용형의, 여러 일을 두루 맡는",
+        "ko": "콘텐츠 파이프라인 전체(리서치·개요·초안·편집·게시)를 맡은 범용 에이전트 하나가 도구 20개를 갖고 있고, 도구가 추가될수록 도구 선택 정확도가 떨어졌습니다."
+      }
+    ]
+  },
+  {
+    "id": "generalize",
+    "word": "generalize",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "ˈdʒenrəlaɪz",
+    "meaning": "일반화하다 — 본 적 없는 경우에도 같은 판단을 적용하다",
+    "short": "일반화하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "일반화하다(새 경우에도 같은 판단 적용)"
+      },
+      {
+        "pos": "동사",
+        "ko": "일반론으로 말하다"
+      }
+    ],
+    "forms": [
+      "generalized",
+      "generalizing",
+      "generalization",
+      "generalizes"
+    ],
+    "synonyms": [
+      "extrapolate",
+      "extend"
+    ],
+    "domain": "비교·평가·판단",
+    "freq": 1,
+    "sources": [
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 10,
+        "en": "What change would best help the model generalize its judgment to these novel-but-similar inputs?",
+        "surface": "generalize",
+        "pos": "동사",
+        "sense": "일반화하다(새 경우에도 같은 판단 적용)",
+        "ko": "이런 \"새롭지만 비슷한\" 입력으로 모델의 판단을 일반화시키려면 무엇을 바꿔야 할까요?"
+      }
+    ]
+  },
+  {
+    "id": "generate",
+    "word": "generate",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "ˈdʒenəreɪt",
+    "meaning": "생성하다, 만들어 내다",
+    "short": "생성하다, 만들어 내다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "생성하다, 만들어 내다"
+      },
+      {
+        "pos": "명사",
+        "ko": "(generator) 생성기"
+      },
+      {
+        "pos": "동사",
+        "ko": "(전기·수익 등을) 발생시키다"
+      }
+    ],
+    "forms": [
+      "generated",
+      "generating",
+      "generator",
+      "generates"
+    ],
+    "synonyms": [
+      "produce",
+      "create",
+      "output"
+    ],
+    "domain": "생성·추가",
+    "freq": 23,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 35,
+        "en": "A team built a pipeline where the same Claude instance that generates code is then asked, within the same conversation, to 'review your own work for bugs before finishing.'",
+        "surface": "generates",
+        "pos": "동사",
+        "sense": "생성하다, 만들어 내다",
+        "ko": "같은 Claude 인스턴스가 코드를 생성한 뒤, 같은 대화 안에서 \"끝내기 전에 자기 작업에 버그가 있는지 리뷰하라\"는 요청을 받는 파이프라인이 있습니다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 27,
+        "en": "A test run against a newly generated report-export module in Claude Code produces two failures: a currency-formatting mismatch in the summary totals and a completely unrelated failure where the export filename generator omits the file extension on Windows paths.",
+        "surface": "generator",
+        "pos": "명사",
+        "sense": "(generator) 생성기",
+        "ko": "Claude Code로 새로 만든 리포트 내보내기 모듈의 테스트 실행에서 실패가 두 개 나왔습니다. 요약 합계의 통화 형식 불일치, 그리고 전혀 무관하게 Windows 경로에서 내보내기 파일 이름 생성기가 확장자를 빠뜨리는 문제입니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 32,
+        "en": "An adaptive agent that inspects each spec first and then generates subtasks based on what it finds",
+        "surface": "generates",
+        "pos": "동사",
+        "sense": "생성하다, 만들어 내다",
+        "ko": "적응형 에이전트가 사양서를 먼저 살펴본 뒤 발견한 내용에 따라 하위 작업을 만든다"
+      },
+      {
+        "src": "lesson-d2",
+        "q": 28,
+        "en": "An agent must change one block in a generated file.",
+        "surface": "generated",
+        "pos": "동사",
+        "sense": "생성하다, 만들어 내다",
+        "ko": "에이전트가 생성된(generated) 파일에서 블록 하나를 바꿔야 합니다."
+      }
+    ],
+    "note": "없던 것을 **새로 만들어 내는** 것입니다. 모델이 텍스트·코드·요약을 만들어 내는 것을 가리킬 때 가장 흔히 씁니다. 명사는 *generation*(생성)입니다.\r\n\r\n## 문제 속 쓰임\r\n> **Generate** a structured handoff summary: issue, verified identifiers, tool results, actions attempted, and recommended next step.\r\n> 문제 내용, 확인된 식별자, 도구 결과, 시도한 조치, 권장 다음 단계를 담은 구조화된 핸드오프 요약을 **생성한다**\r\n\r\n## 함께 쓰는 표현\r\n- **generate a summary / report** : 요약·보고서를 만들다\r\n- **generated code / file** : 생성된 코드·파일\r\n- **regenerate** : 다시 생성하다\r\n\r\n## 시험 포인트\r\n사람 상담원이 원문 대화를 처음부터 다시 읽어야 한다면, 이슈·확인된 식별자·시도한 조치·권장 다음 단계를 담은 **구조화된 핸드오프 요약**을 만들어 넘기는 보기가 정답입니다."
+  },
+  {
+    "id": "generation",
+    "word": "generation",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˌdʒenəˈreɪʃn",
+    "meaning": "① 생성 — (모델이) 텍스트·코드를 만들어 내는 것 ② 세대",
+    "short": "생성",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(텍스트·코드의) 생성"
+      },
+      {
+        "pos": "명사",
+        "ko": "세대"
+      }
+    ],
+    "forms": [
+      "generations"
+    ],
+    "synonyms": [
+      "creation",
+      "production"
+    ],
+    "domain": "생성·추가",
+    "freq": 22,
+    "sources": [
+      "mock04",
+      "lesson-d2",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 11,
+        "en": "[Scenario: Code Generation with Claude Code]",
+        "surface": "Generation",
+        "pos": "명사",
+        "sense": "(텍스트·코드의) 생성",
+        "ko": "[시나리오: Claude Code를 활용한 코드 생성]"
+      },
+      {
+        "src": "lesson-d2",
+        "q": 2,
+        "en": "The model's context window is too small to hold both full tool definitions during a single request's generation pass, leading to ambiguous routing.",
+        "surface": "generation",
+        "pos": "명사",
+        "sense": "(텍스트·코드의) 생성",
+        "ko": "모델의 컨텍스트 윈도가 너무 작아 한 요청의 생성 과정에서 두 도구 정의를 다 담지 못해 라우팅이 모호해진다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 36,
+        "en": "An engineer configures the generation session with a high extended thinking effort and instructs the model to reflect deeply on flaws before submitting its code.",
+        "surface": "generation",
+        "pos": "명사",
+        "sense": "(텍스트·코드의) 생성",
+        "ko": "엔지니어가 생성 세션에 높은 extended thinking effort를 설정하고, 코드를 제출하기 전에 결함을 깊이 성찰하라고 지시했습니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 31,
+        "en": "Nightly regression-test generation for 40,000 modules, which engineers review the next morning",
+        "surface": "generation",
+        "pos": "명사",
+        "sense": "(텍스트·코드의) 생성",
+        "ko": "엔지니어가 다음 날 아침 검토하는, 40,000개 모듈의 야간 회귀 테스트 생성"
+      }
+    ],
+    "note": "1. **생성** — 모델이 텍스트·코드·테스트를 만들어 내는 일 (*code generation*, *test generation*)\r\n2. **세대** — 제품·모델의 *next generation*(차세대)\r\n\r\n## 문제 속 쓰임\r\n> [Scenario: Code **Generation** with Claude Code]\r\n> [시나리오: Claude Code 를 활용한 코드 **생성**]\r\n\r\n## 함께 쓰는 표현\r\n- **code generation** : 코드 생성\r\n- **test generation** : 테스트 생성\r\n- **retrieval-augmented generation (RAG)** : 검색 증강 생성\r\n\r\n## 시험 포인트\r\n코드를 **생성한 같은 세션**이 리뷰까지 하면 자기 결과를 관대하게 보므로, 리뷰는 맥락을 공유하지 않는 **별도의 독립 인스턴스**에서 돌리는 보기가 정답입니다."
+  },
+  {
+    "id": "generic",
+    "word": "generic",
+    "tier": "core",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "dʒəˈnerɪk",
+    "meaning": "일반적인, 특정하지 않은",
+    "short": "일반적인, 특정하지 않은",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "일반적인, 특정하지 않은"
+      },
+      {
+        "pos": "형용사",
+        "ko": "범용의, 여러 용도에 쓰는"
+      }
+    ],
+    "forms": [
+      "generically"
+    ],
+    "synonyms": [
+      "general",
+      "nonspecific",
+      "vague"
+    ],
+    "domain": "상태·성질",
+    "freq": 10,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 14,
+        "en": "The synthesis subagent's report comes back generic and cites none of the sources the researcher found.",
+        "surface": "generic",
+        "pos": "형용사",
+        "sense": "일반적인, 특정하지 않은",
+        "ko": "종합 서브에이전트의 보고서는 일반론만 담겨 있고 연구자가 찾은 출처를 하나도 인용하지 않습니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 17,
+        "en": "Your document-processing agent holds a generic fetch_url tool.",
+        "surface": "generic",
+        "pos": "형용사",
+        "sense": "범용의, 여러 용도에 쓰는",
+        "ko": "문서 처리 에이전트가 범용 fetch_url 도구를 갖고 있습니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 11,
+        "en": "The server returns `isError: true` with generic text \"Operation failed.\"",
+        "surface": "generic",
+        "pos": "형용사",
+        "sense": "일반적인, 특정하지 않은",
+        "ko": "서버는 `isError: true`와 일반 텍스트 \"Operation failed.\"를 돌려줍니다."
+      },
+      {
+        "src": "mock04",
+        "q": 22,
+        "en": "The synthesis subagent's reports read as generic overviews: in 30% of runs they omit the specific figures and named sources the web-search subagent surfaced.",
+        "surface": "generic",
+        "pos": "형용사",
+        "sense": "일반적인, 특정하지 않은",
+        "ko": "합성(synthesis) 서브에이전트가 만드는 보고서가 일반적인 개요처럼 읽힙니다: 실행의 30%에서 웹 검색 서브에이전트가 찾아낸 구체적인 수치와 출처 이름이 빠져 있습니다."
+      }
+    ],
+    "note": "특정한 상황에 맞춘 것이 아니라 **두루뭉술하게 어디에나 쓰는** 것을 말합니다. 오류 이야기에서는 *무엇이 왜 실패했는지 알 수 없는* 뭉뚱그린 응답이라는 부정적인 느낌이 있습니다.\r\n\r\n## 문제 속 쓰임\r\n> ...returning a **generic** \"search unavailable\" status only after all retries are exhausted.\r\n> 재시도를 모두 소진한 뒤에야 **일반적인** \"search unavailable\" 상태만 돌려준다.\r\n\r\n## 함께 쓰는 표현\r\n- **generic error message** : 원인을 알 수 없는 일반 오류 메시지\r\n- **generic tool** : 범용 도구 (= *general-purpose tool*)\r\n\r\n## 반대말\r\n- **specific**, **detailed** — 구체적인, 자세한\r\n\r\n## 시험 포인트\r\n오류를 위로 넘길 때 **generic** 한 상태값만 주면 상위에서 판단할 근거가 사라집니다. 실패 유형·시도한 쿼리·부분 결과를 담은 **구조화된 오류 정보**를 넘기는 선택지가 정답 쪽입니다."
+  },
+  {
+    "id": "genuine",
+    "word": "genuine",
+    "tier": "core",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˈdʒenjuɪn",
+    "meaning": "진짜의, 진정한 (겉보기만 그런 것이 아닌)",
+    "short": "진짜의, 진정한",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "진짜의, 진정한"
+      },
+      {
+        "pos": "부사",
+        "ko": "(genuinely) 정말로, 진짜로"
+      }
+    ],
+    "forms": [
+      "genuinely"
+    ],
+    "synonyms": [
+      "real",
+      "authentic",
+      "true"
+    ],
+    "domain": "정확·품질·신뢰",
+    "freq": 3,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 50,
+        "en": "They have started ignoring the bot entirely — including its genuine security findings.",
+        "surface": "genuine",
+        "pos": "형용사",
+        "sense": "진짜의, 진정한",
+        "ko": "개발자들은 이제 진짜 보안 발견 사항까지 포함해 봇을 통째로 무시하기 시작했습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 51,
+        "en": "The CI reviewer handles clear-cut defects well but is inconsistent on genuinely ambiguous cases — for example, whether a bare `except:` is acceptable in a one-off script versus a shared library.",
+        "surface": "genuinely",
+        "pos": "부사",
+        "sense": "(genuinely) 정말로, 진짜로",
+        "ko": "CI 리뷰어는 명백한 결함은 잘 처리하지만, 진짜로 모호한 사례(예: 맨 `except:` 가 일회성 스크립트에서와 공유 라이브러리에서 각각 허용 가능한지)에서는 판정이 일관되지 않습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 1,
+        "en": "Run a lightweight intent classifier over each assistant message to decide whether the turn is a genuine completion.",
+        "surface": "genuine",
+        "pos": "형용사",
+        "sense": "진짜의, 진정한",
+        "ko": "어시스턴트 메시지마다 경량 의도 분류기를 돌려, 그 턴이 진짜 완료인지 판단한다"
+      }
+    ],
+    "note": "겉모양만 그런 것이 아니라 **실제로 그러한, 진짜인** 것입니다. 오탐·거짓 경보와 대비해 *genuine issue*(진짜 문제)처럼 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> They have started ignoring the bot entirely — including its **genuine** security findings.\r\n> 개발자들은 이제 **진짜** 보안 발견 사항까지 포함해 봇을 통째로 무시하기 시작했다.\r\n\r\n## 함께 쓰는 표현\r\n- **genuine issue / bug** : 진짜 문제 / 버그\r\n- **genuinely** (부) 진정으로, 정말로\r\n\r\n## 비슷한 말 · 반대말\r\n- **real**, **legitimate** — 진짜의, 정당한\r\n- **false positive** — 오탐 (진짜 문제가 아닌데 문제로 본 것)\r\n\r\n## 시험 포인트\r\n특정 범주의 **오탐** 때문에 진짜 지적까지 무시당한다면, 그 범주만 **일시적으로 끄고** 명시적 기준으로 프롬프트를 다시 써서 신뢰를 회복하는 보기가 정답입니다."
+  },
+  {
+    "id": "get",
+    "word": "get",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "동사"
+    ],
+    "ipa": "ɡet",
+    "meaning": "① 얻다, 받다 ② (get + 과거분사) ~되다, ~당하다 ③ (get through) 통과하다, 성공하다 ④ 가져오다, 조회하다",
+    "short": "얻다, ~되다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "얻다, 받다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(get + 과거분사) ~되다, ~당하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(get through) 통과하다, 성공하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(데이터를) 가져오다, 조회하다"
+      }
+    ],
+    "forms": [
+      "gets",
+      "got",
+      "gotten",
+      "getting"
+    ],
+    "synonyms": [
+      "obtain",
+      "receive",
+      "fetch"
+    ],
+    "domain": "일반",
+    "freq": 14,
+    "sources": [
+      "sample01",
+      "sample01-kor",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 31,
+        "en": "Four teams want to move their Claude workloads to the Message Batches API to get the 50% discount.",
+        "surface": "get",
+        "pos": "동사",
+        "sense": "얻다, 받다",
+        "ko": "네 팀이 50% 할인을 받으려고 Claude 작업을 Message Batches API로 옮기려 합니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 11,
+        "en": "In testing, a furious customer with a routine 30-day size exchange gets escalated.",
+        "surface": "gets",
+        "pos": "동사",
+        "sense": "(get + 과거분사) ~되다, ~당하다",
+        "ko": "테스트에서 일반적인 30일 사이즈 교환을 요청한 몹시 화난 고객은 이관됐습니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 11,
+        "en": "Use `errorCategory: \"transient\"` with `isRetryable: true`; the deploy service refused the call as it does during an outage, so retrying with backoff should get through",
+        "surface": "get through",
+        "pos": "동사",
+        "sense": "(get through) 통과하다, 성공하다",
+        "ko": "`errorCategory: \"transient\"`, `isRetryable: true`. 배포 서비스가 장애 때처럼 호출을 거절한 것이니 백오프로 재시도하면 통과한다"
+      },
+      {
+        "src": "sample01",
+        "q": 19,
+        "en": "The tool descriptions are: 'Gets user information' and 'Fetches account details'.",
+        "surface": "Gets",
+        "pos": "동사",
+        "sense": "(데이터를) 가져오다, 조회하다",
+        "ko": "도구 설명은 각각 'Gets user information', 'Fetches account details'입니다."
+      }
+    ]
+  },
+  {
+    "id": "give",
+    "word": "give",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "동사"
+    ],
+    "ipa": "ɡɪv",
+    "meaning": "① 주다, 제공하다 ② (정보를) 알려 주다, 말하다 ③ (given) ~이 주어진 상태에서, ~을 고려하면",
+    "short": "주다, 제공하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "주다, 제공하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(정보를) 알려 주다, 말하다"
+      },
+      {
+        "pos": "전치사",
+        "ko": "(given) ~이 주어진 상태에서, ~을 고려하면"
+      }
+    ],
+    "forms": [
+      "gives",
+      "gave",
+      "given",
+      "giving"
+    ],
+    "synonyms": [
+      "provide",
+      "offer",
+      "supply"
+    ],
+    "domain": "이동·전달",
+    "freq": 46,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 20,
+        "en": "Which setup gives every contributor the server without committing anyone's token?",
+        "surface": "gives",
+        "pos": "동사",
+        "sense": "주다, 제공하다",
+        "ko": "누구의 토큰도 커밋하지 않고 모든 기여자가 서버를 받게 하는 설정은 무엇입니까?"
+      },
+      {
+        "src": "lesson-d5",
+        "q": 1,
+        "en": "By turn 12 it no longer knows the order number the customer gave in turn 3.",
+        "surface": "gave",
+        "pos": "동사",
+        "sense": "(정보를) 알려 주다, 말하다",
+        "ko": "12번째 턴이 되자 봇은 고객이 3번째 턴에 알려 준 주문번호를 모릅니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 37,
+        "en": "An architect is asked to design an agent that investigates why a production incident occurred, given only a vague alert message and no prior knowledge of which service is at fault.",
+        "surface": "given",
+        "pos": "전치사",
+        "sense": "(given) ~이 주어진 상태에서, ~을 고려하면",
+        "ko": "아키텍트가 모호한 알림 메시지 하나만 주어지고 어느 서비스가 문제인지 사전 지식이 없는 상태에서, 운영 장애가 왜 발생했는지 조사하는 에이전트를 설계해야 합니다."
+      },
+      {
+        "src": "sample01",
+        "q": 4,
+        "en": "A company deploys an MCP server that gives Claude access to internal knowledge bases and HR systems.",
+        "surface": "gives",
+        "pos": "동사",
+        "sense": "주다, 제공하다",
+        "ko": "한 회사가 Claude에게 사내 지식베이스와 HR 시스템 접근 권한을 주는 MCP 서버를 배포했습니다."
+      }
+    ]
+  },
+  {
+    "id": "glitch",
+    "word": "glitch",
+    "tier": "extra",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ɡlɪtʃ",
+    "meaning": "(일시적인) 작은 오류, 결함",
+    "short": "(일시적인) 작은 오류",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(일시적인) 작은 오류, 결함"
+      }
+    ],
+    "forms": [
+      "glitches"
+    ],
+    "synonyms": [
+      "hiccup",
+      "bug",
+      "blip"
+    ],
+    "domain": "오류·실패·위험",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "glob",
+    "word": "glob",
+    "tier": "core",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "ɡlɑːb",
+    "meaning": "글롭 — *.ts 같은 와일드카드 패턴으로 파일 경로를 찾는 방식 (Claude Code 의 Glob 도구)",
+    "short": "글롭(와일드카드 경로 패턴)",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "글롭(와일드카드 파일 경로 패턴)"
+      },
+      {
+        "pos": "명사",
+        "ko": "(Glob) 경로 패턴으로 파일을 찾는 도구"
+      },
+      {
+        "pos": "동사",
+        "ko": "글롭 패턴으로 파일을 찾다"
+      }
+    ],
+    "forms": [
+      "globbing",
+      "globs"
+    ],
+    "synonyms": [
+      "wildcard pattern"
+    ],
+    "domain": "검색·조회",
+    "freq": 18,
+    "sources": [
+      "lesson-d1",
+      "lesson-d2",
+      "selfcheck-d2-kor",
+      "lesson-d3",
+      "selfcheck-d3-kor"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d3",
+        "q": 13,
+        "en": "Move the API conventions into a .claude/rules/ file whose YAML frontmatter has a paths glob matching the API handler files",
+        "surface": "glob",
+        "pos": "명사",
+        "sense": "글롭(와일드카드 파일 경로 패턴)",
+        "ko": "API 규칙을 `.claude/rules/` 파일로 옮기고, YAML frontmatter의 `paths` glob이 API 핸들러 파일과 일치하게 한다"
+      },
+      {
+        "src": "lesson-d2",
+        "q": 27,
+        "en": "Use Glob to list component files and test files separately by their naming pattern, then compare the two path lists for gaps",
+        "surface": "Glob",
+        "pos": "명사",
+        "sense": "(Glob) 경로 패턴으로 파일을 찾는 도구",
+        "ko": "Glob으로 이름 패턴에 따라 컴포넌트 파일과 테스트 파일을 따로 나열한 뒤, 두 경로 목록을 비교해 빈틈을 찾는다"
+      },
+      {
+        "src": "lesson-d2",
+        "q": 26,
+        "en": "Glob for the component files and Glob for the `*.test.tsx` files, then compare the two lists",
+        "surface": "Glob",
+        "pos": "동사",
+        "sense": "글롭 패턴으로 파일을 찾다",
+        "ko": "컴포넌트 파일을 Glob하고 `*.test.tsx` 파일을 Glob한 뒤 두 목록을 비교한다"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 6,
+        "en": "Split the guidance into code-style.md, testing.md, security.md and deployment.md in .claude/rules/ with paths globs for each area, and slim CLAUDE.md down",
+        "surface": "globs",
+        "pos": "명사",
+        "sense": "글롭(와일드카드 파일 경로 패턴)",
+        "ko": "`.claude/rules/` 에 네 파일을 두되 영역마다 `paths` glob을 지정하고, CLAUDE.md는 줄인다"
+      }
+    ],
+    "note": "`*`(아무 문자열), `**`(하위 폴더 전체) 같은 **와일드카드 패턴으로 파일 경로를 고르는** 방식입니다. Claude Code 의 **Glob** 도구는 이름·경로 패턴으로 파일을 찾고, 파일 내용 검색은 **Grep** 도구가 맡습니다.\r\n\r\n## 문제 속 쓰임\r\n> Declare `allowed-tools` in the skill's SKILL.md frontmatter limited to Read/**Glob**/Write so the harness blocks Edit and Bash\r\n> 스킬의 SKILL.md frontmatter에 `allowed-tools` 를 `Read`, **`Glob`**, `Write` 로 제한해 선언하고, 하네스가 `Edit` 과 `Bash` 를 차단하게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **glob pattern** : 글롭 패턴 (예: `src/**/*.test.ts`)\r\n- **globbing** : 글롭 패턴으로 파일 목록을 펼치는 것\r\n\r\n## 비교\r\n- **Glob** — 파일 **이름·경로** 패턴으로 찾기\r\n- **Grep** — 파일 **내용**에서 문자열·정규식 찾기"
+  },
+  {
+    "id": "global",
+    "word": "global",
+    "tier": "core",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˈɡloʊbl",
+    "meaning": "전역의, 전체에 적용되는 / 세계적인",
+    "short": "전역의, 전체에 적용되는",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "전역의, 전체에 적용되는"
+      },
+      {
+        "pos": "형용사",
+        "ko": "세계적인, 전 세계의"
+      }
+    ],
+    "forms": [
+      "globally"
+    ],
+    "synonyms": [
+      "universal",
+      "system-wide",
+      "worldwide"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 4,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 14,
+        "en": "Add a global PreToolUse hook that inspects every Edit across all sessions and rejects any write outside the `docs/` folder",
+        "surface": "global",
+        "pos": "형용사",
+        "sense": "전역의, 전체에 적용되는",
+        "ko": "모든 세션의 모든 `Edit` 을 검사해 `docs/` 폴더 밖 쓰기를 거부하는 전역 PreToolUse 훅을 추가한다"
+      },
+      {
+        "src": "mock04",
+        "q": 43,
+        "en": "Switch to a Bash sed global substitution that rewrites every occurrence and bypasses the Edit tool entirely.",
+        "surface": "global",
+        "pos": "형용사",
+        "sense": "전역의, 전체에 적용되는",
+        "ko": "`Bash` 의 `sed` 전역 치환으로 바꿔 모든 위치를 다시 쓰고, `Edit` 도구는 완전히 우회한다"
+      },
+      {
+        "src": "mock04",
+        "q": 5,
+        "en": "Store the confirmed customer record in a global variable that the SDK automatically injects into every spawned subagent's context at startup.",
+        "surface": "global",
+        "pos": "형용사",
+        "sense": "전역의, 전체에 적용되는",
+        "ko": "확인된 고객 레코드를 전역 변수에 저장해, SDK가 생성되는 모든 서브에이전트의 컨텍스트에 시작 시점에 자동으로 주입하게 한다"
+      },
+      {
+        "src": "mock04",
+        "q": 50,
+        "en": "Add a single global confidence threshold so only comments the model rates above 0.8 are posted to the pull request",
+        "surface": "global",
+        "pos": "형용사",
+        "sense": "전역의, 전체에 적용되는",
+        "ko": "모델이 0.8 초과로 평가한 코멘트만 풀 리퀘스트에 게시되도록 단일 전역 신뢰도 임계값을 추가한다"
+      }
+    ],
+    "note": "특정 부분이 아니라 **전체(모든 곳)에 걸쳐 적용되는** 것입니다. 프로그래밍에서는 어디서나 접근하는 **전역** 변수·설정을, 일반적으로는 \"세계적인\"을 뜻합니다.\r\n\r\n## 문제 속 쓰임\r\n> Add a **global** PreToolUse hook that inspects every Edit across all sessions and rejects any write outside the `docs/` folder\r\n> 모든 세션의 모든 `Edit` 을 검사해 `docs/` 폴더 밖 쓰기를 거부하는 **전역** PreToolUse 훅을 추가한다\r\n\r\n## 함께 쓰는 표현\r\n- **global variable** : 전역 변수\r\n- **global setting / config** : 전역 설정\r\n\r\n## 반대말\r\n- **local**, **scoped** — 특정 범위에만 적용되는\r\n\r\n## 시험 포인트\r\n한 스킬만 제한하면 되는 문제에서 **모든 세션에 거는 전역 훅**은 범위가 너무 넓어 오답입니다. \"전역 변수로 서브에이전트에 자동 주입\" 같은 보기도 오답이며, 서브에이전트에 필요한 정보는 **Task 프롬프트에 명시적으로** 넣어야 합니다."
+  },
+  {
+    "id": "go",
+    "word": "go",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "동사"
+    ],
+    "ipa": "ɡoʊ",
+    "meaning": "① 가다, (~로) 보내지다 ② (keep going) 계속 진행하다 ③ (as ... go) 진행하면서 ④ (어떤 상태가) 되다",
+    "short": "가다, 보내지다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "가다, (~로) 보내지다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(keep going) 계속 진행하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(as ... go) 진행하면서, 하는 대로"
+      },
+      {
+        "pos": "동사",
+        "ko": "(어떤 상태가) 되다"
+      }
+    ],
+    "forms": [
+      "goes",
+      "went",
+      "gone",
+      "going"
+    ],
+    "synonyms": [
+      "move",
+      "proceed",
+      "head"
+    ],
+    "domain": "이동·전달",
+    "freq": 23,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 4,
+        "en": "Both tools now have detailed descriptions of what they do, but some web tasks still go to `analyze_content`.",
+        "surface": "go",
+        "pos": "동사",
+        "sense": "가다, (~로) 보내지다",
+        "ko": "이제 두 도구 모두 무엇을 하는지 자세히 설명되어 있지만, 일부 웹 작업이 여전히 `analyze_content`로 갑니다."
+      },
+      {
+        "src": "mock04",
+        "q": 20,
+        "en": "What should the developer do to keep going without losing the thread?",
+        "surface": "keep going",
+        "pos": "동사",
+        "sense": "(keep going) 계속 진행하다",
+        "ko": "맥락을 잃지 않고 작업을 이어 가기 위해 개발자가 해야 할 일은 무엇입니까?"
+      },
+      {
+        "src": "lesson-d5",
+        "q": 26,
+        "en": "Several subagents are running concurrently, each investigating a different module of a large codebase and recording findings as they go.",
+        "surface": "go",
+        "pos": "동사",
+        "sense": "(as ... go) 진행하면서, 하는 대로",
+        "ko": "여러 서브에이전트가 동시에 실행되며, 각자 큰 코드베이스의 서로 다른 모듈을 조사하면서 발견을 기록합니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 7,
+        "en": "What should decide when the category goes back on?",
+        "surface": "goes",
+        "pos": "동사",
+        "sense": "(어떤 상태가) 되다",
+        "ko": "이 범주를 언제 다시 켤지는 무엇으로 정해야 할까요?"
+      }
+    ]
+  },
+  {
+    "id": "goal",
+    "word": "goal",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ɡoʊl",
+    "meaning": "① 목표, 목적 ② (경기의) 골, 득점",
+    "short": "목표, 목적",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "목표, 목적"
+      },
+      {
+        "pos": "명사",
+        "ko": "(경기의) 골, 득점"
+      }
+    ],
+    "forms": [
+      "goals"
+    ],
+    "synonyms": [
+      "objective",
+      "aim",
+      "target"
+    ],
+    "domain": "계획·목표·전략",
+    "freq": 2,
+    "sources": [
+      "mock04",
+      "lesson-d1"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 20,
+        "en": "The history is full of superseded intermediate diffs, but the current task and goal are unchanged and the latest file states are still valid.",
+        "surface": "goal",
+        "pos": "명사",
+        "sense": "목표, 목적",
+        "ko": "기록은 이미 폐기된 중간 diff로 가득하지만, 현재 작업과 목표는 그대로이고 최신 파일 상태도 여전히 유효합니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 16,
+        "en": "Shorten it to an open goal such as \"Research the semiconductor shortage\" and let the subagent decide everything else",
+        "surface": "goal",
+        "pos": "명사",
+        "sense": "목표, 목적",
+        "ko": "\"반도체 부족 사태를 조사하라\" 같은 열린 목표로 줄이고, 나머지는 서브에이전트가 모두 정하게 한다"
+      }
+    ]
+  },
+  {
+    "id": "golden",
+    "word": "golden",
+    "tier": "extra",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˈɡoʊldən",
+    "meaning": "기준 정답의 — golden answer/dataset: 미리 정해 둔 모범 정답(세트)",
+    "short": "기준 정답의, 모범 정답의",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "기준 정답의, 모범 정답의"
+      },
+      {
+        "pos": "형용사",
+        "ko": "금빛의, 황금의"
+      },
+      {
+        "pos": "형용사",
+        "ko": "(기회가) 절호의"
+      }
+    ],
+    "synonyms": [
+      "reference",
+      "gold-standard"
+    ],
+    "domain": "정확·품질·신뢰",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "good",
+    "word": "good",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ɡʊd",
+    "meaning": "① 좋은, 훌륭한 ② (better) 더 나은 ③ (best) 가장 좋은, 최선의 / 가장 잘",
+    "short": "좋은, 최선의",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "좋은, 훌륭한"
+      },
+      {
+        "pos": "형용사",
+        "ko": "(better) 더 나은, 더 좋은"
+      },
+      {
+        "pos": "형용사",
+        "ko": "(best) 가장 좋은, 최선의"
+      },
+      {
+        "pos": "부사",
+        "ko": "(best) 가장 잘, 가장 효과적으로"
+      }
+    ],
+    "forms": [
+      "better",
+      "best"
+    ],
+    "synonyms": [
+      "fine",
+      "great",
+      "excellent"
+    ],
+    "domain": "비교·평가·판단",
+    "freq": 66,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "selfcheck-d1-kor",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 11,
+        "en": "What is the best way to set this up?",
+        "surface": "best",
+        "pos": "형용사",
+        "sense": "(best) 가장 좋은, 최선의",
+        "ko": "가장 좋은 구성 방법은 무엇입니까?"
+      },
+      {
+        "src": "lesson-d2",
+        "q": 18,
+        "en": "What combination of changes best addresses this while preserving each agent's ability to decide when to act versus respond?",
+        "surface": "best",
+        "pos": "부사",
+        "sense": "(best) 가장 잘, 가장 효과적으로",
+        "ko": "각 에이전트가 행동할지 답할지 스스로 정하는 능력을 지키면서 이 문제를 가장 잘 해결하는 변경 조합은 무엇입니까?"
+      },
+      {
+        "src": "sample01",
+        "q": 5,
+        "en": "Better logging and post-hoc audit trail",
+        "surface": "Better",
+        "pos": "형용사",
+        "sense": "(better) 더 나은, 더 좋은",
+        "ko": "더 나은 로깅과 사후 감사 추적"
+      },
+      {
+        "src": "lesson-d5",
+        "q": 16,
+        "en": "Which payload best lets the coordinator choose how to recover?",
+        "surface": "best",
+        "pos": "부사",
+        "sense": "(best) 가장 잘, 가장 효과적으로",
+        "ko": "코디네이터가 복구 방법을 고르기에 가장 좋은 페이로드는 무엇입니까?"
+      }
+    ]
+  },
+  {
+    "id": "goodwill",
+    "word": "goodwill",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˌɡʊdˈwɪl",
+    "meaning": "호의, 선의 — goodwill credit: 불편에 대한 보상으로 주는 크레딧",
+    "short": "호의, 선의",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "호의, 선의"
+      },
+      {
+        "pos": "명사",
+        "ko": "(회계) 영업권"
+      }
+    ],
+    "synonyms": [
+      "kindness",
+      "benevolence"
+    ],
+    "domain": "비즈니스·업무",
+    "freq": 2,
+    "sources": [
+      "mock04",
+      "mock04-kor"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 6,
+        "en": "process_refund handles both full order refunds and small partial goodwill credits.",
+        "surface": "goodwill",
+        "pos": "명사",
+        "sense": "호의, 선의",
+        "ko": "process_refund는 주문 전액 환불과 소액 부분 호의 크레딧(goodwill credit)을 모두 처리합니다."
+      }
+    ],
+    "note": "상대에게 베푸는 **호의·선의**입니다. 고객지원에서 *goodwill credit* 은 의무는 아니지만 불편을 겪은 고객에게 **사과·보상 차원으로 주는 소액 크레딧**을 말합니다. 회계에서는 \"영업권\"이라는 뜻도 있습니다.\r\n\r\n## 문제 속 쓰임\r\n> process_refund handles both full order refunds and small partial **goodwill** credits.\r\n> `process_refund` 는 주문 전액 환불과 소액 부분 **호의** 크레딧(goodwill credit)을 모두 처리한다.\r\n\r\n## 함께 쓰는 표현\r\n- **goodwill credit** : 보상 차원의 크레딧\r\n- **goodwill gesture** : 호의의 표시 (선의로 해 주는 조치)\r\n\r\n## 시험 포인트\r\n한 도구가 **전액 환불과 소액 크레딧**처럼 성격이 다른 동작을 함께 맡아 오용된다면, 도구를 둘로 나누고 각 description 에 **언제 쓰는지**를 적는 보기가 정답입니다."
+  },
+  {
+    "id": "grace-period",
+    "word": "grace period",
+    "tier": "extra",
+    "pos": [
+      "명사구"
+    ],
+    "ipa": "ˈɡreɪs ˌpɪriəd",
+    "meaning": "유예 기간",
+    "short": "유예 기간",
+    "senses": [
+      {
+        "pos": "명사구",
+        "ko": "유예 기간"
+      }
+    ],
+    "forms": [
+      "grace periods"
+    ],
+    "synonyms": [
+      "buffer period"
+    ],
+    "domain": "시간·순서·빈도",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "gradually",
+    "word": "gradually",
+    "tier": "extra",
+    "pos": [
+      "부사"
+    ],
+    "ipa": "ˈɡrædʒuəli",
+    "meaning": "점차, 서서히",
+    "short": "점차, 서서히",
+    "senses": [
+      {
+        "pos": "부사",
+        "ko": "점차, 서서히"
+      }
+    ],
+    "forms": [
+      "gradual"
+    ],
+    "synonyms": [
+      "progressively",
+      "incrementally",
+      "slowly"
+    ],
+    "domain": "시간·순서·빈도",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "grant",
+    "word": "grant",
+    "tier": "core",
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "ipa": "ɡrænt",
+    "meaning": "(권한을) 부여하다 / 부여된 권한",
+    "short": "(권한을) 부여하다, 부여된 권한",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(권한을) 부여하다, 허락하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "부여된 권한, 허가"
+      },
+      {
+        "pos": "명사",
+        "ko": "보조금"
+      }
+    ],
+    "forms": [
+      "granted",
+      "granting",
+      "grants"
+    ],
+    "synonyms": [
+      "allow",
+      "permit",
+      "authorize"
+    ],
+    "domain": "제어·제한·관리",
+    "freq": 3,
+    "sources": [
+      "lesson-d1"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 42,
+        "en": "A session-level grant stays bound to the session that issued it, so a forked branch starts without it",
+        "surface": "grant",
+        "pos": "명사",
+        "sense": "부여된 권한, 허가",
+        "ko": "세션 단위 허용은 그것을 발급한 세션에 묶여 있으므로, 포크된 갈래는 그 허용 없이 시작한다"
+      },
+      {
+        "src": "lesson-d1",
+        "q": 42,
+        "en": "A fork starts the branch in a new working directory, and grants are tied to the directory they were given in",
+        "surface": "grants",
+        "pos": "명사",
+        "sense": "부여된 권한, 허가",
+        "ko": "포크는 갈래를 새 작업 디렉터리에서 시작하며, 허용은 그것이 주어진 디렉터리에 묶여 있다"
+      },
+      {
+        "src": "lesson-d1",
+        "q": 42,
+        "en": "Session-level grants lapse after a set number of turns, and the resumed history had already passed that point",
+        "surface": "grants",
+        "pos": "명사",
+        "sense": "부여된 권한, 허가",
+        "ko": "세션 단위 허용은 정해진 턴 수가 지나면 만료되는데, 재개된 이력이 이미 그 지점을 지났다"
+      }
+    ]
+  },
+  {
+    "id": "grep",
+    "word": "grep",
+    "tier": "core",
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "ipa": "ɡrep",
+    "meaning": "grep 검색(하다) — 파일 내용에서 문자열·정규식 패턴을 찾다",
+    "short": "(문자열 패턴을) 검색하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(파일 내용에서 문자열·패턴을) 검색하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "(Grep) 파일 내용 검색 도구"
+      }
+    ],
+    "forms": [
+      "grepping",
+      "grepped",
+      "greps"
+    ],
+    "synonyms": [
+      "search",
+      "scan"
+    ],
+    "domain": "검색·조회",
+    "freq": 42,
+    "sources": [
+      "mock04",
+      "mock04-kor",
+      "lesson-d1",
+      "lesson-d2",
+      "selfcheck-d2-kor",
+      "selfcheck-d3-kor",
+      "selfcheck-d5-kor"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 12,
+        "en": "Your team's /investigate-flaky skill greps the entire test suite, reads dozens of files, and prints verbose exploration before it answers.",
+        "surface": "greps",
+        "pos": "동사",
+        "sense": "(파일 내용에서 문자열·패턴을) 검색하다",
+        "ko": "팀의 /investigate-flaky 스킬은 테스트 스위트 전체를 grep으로 검색하고, 수십 개 파일을 읽고, 답하기 전에 장황한 탐색 과정을 출력합니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 25,
+        "en": "Claude keeps reaching for Grep instead.",
+        "surface": "Grep",
+        "pos": "명사",
+        "sense": "(Grep) 파일 내용 검색 도구",
+        "ko": "Claude는 그 대신 계속 Grep을 씁니다."
+      },
+      {
+        "src": "mock04",
+        "q": 38,
+        "en": "Logs show the subagent re-runs Grep to rediscover the entrypoint the coordinator had already located two turns earlier, and reaches a conclusion that contradicts the coordinator's established finding.",
+        "surface": "Grep",
+        "pos": "명사",
+        "sense": "(Grep) 파일 내용 검색 도구",
+        "ko": "로그를 보면 서브에이전트가 코디네이터가 두 턴 전에 이미 찾아 둔 진입점을 다시 찾으려고 Grep을 재실행하고, 코디네이터가 확정한 결과와 모순되는 결론에 도달합니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 12,
+        "en": "The coordinator itself has Read, Edit, Write, Grep, and Glob available.",
+        "surface": "Grep",
+        "pos": "명사",
+        "sense": "(Grep) 파일 내용 검색 도구",
+        "ko": "코디네이터 자신은 Read, Edit, Write, Grep, Glob을 쓸 수 있습니다."
+      }
+    ],
+    "note": "유닉스 명령 `grep` 에서 나온 말로, 파일 **내용에서 문자열·정규식 패턴을 찾는** 것입니다. 동사로 *grep the codebase*(코드베이스를 grep 하다)처럼 쓰며, Claude Code 에는 같은 일을 하는 **Grep** 도구가 있습니다.\r\n\r\n## 문제 속 쓰임\r\n> Your team's /investigate-flaky skill **greps** the entire test suite, reads dozens of files, and prints verbose exploration before it answers.\r\n> 팀의 `/investigate-flaky` 스킬은 테스트 스위트 전체를 **grep으로 검색하고**, 수십 개 파일을 읽고, 답하기 전에 장황한 탐색 과정을 출력한다.\r\n\r\n## 함께 쓰는 표현\r\n- **grep for** ~ : ~을 grep 으로 찾다 (*greps stdout for \"CRITICAL\"*)\r\n- **grep -r** : 하위 폴더까지 재귀적으로 검색\r\n\r\n## 시험 포인트\r\n스킬이 grep·파일 읽기로 **장황한 출력을 메인 세션에 쏟아낸다면**, SKILL.md frontmatter 에 `context: fork` 를 설정해 **격리된 컨텍스트**에서 실행하고 결과만 받는 보기가 정답입니다. 또 모델의 자연어 출력을 grep 해서 빌드를 판정하는 방식은 불안정합니다."
+  },
+  {
+    "id": "ground-truth",
+    "word": "ground truth",
+    "tier": "core",
+    "pos": [
+      "명사구"
+    ],
+    "ipa": "ˌɡraʊnd ˈtruːθ",
+    "meaning": "실측 정답 — 사람이 확인한 실제 정답 데이터",
+    "short": "실측 정답(확인된 실제 정답)",
+    "senses": [
+      {
+        "pos": "명사구",
+        "ko": "실측 정답(사람이 확인한 실제 정답)"
+      }
+    ],
+    "synonyms": [
+      "gold standard",
+      "reference labels"
+    ],
+    "domain": "정확·품질·신뢰",
+    "freq": 1,
+    "sources": [
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 32,
+        "en": "Compare the scores with ground truth on a labeled validation set and choose the threshold, per field if needed, from the measured accuracy",
+        "surface": "ground truth",
+        "pos": "명사구",
+        "sense": "실측 정답(사람이 확인한 실제 정답)",
+        "ko": "라벨된 검증 세트에서 점수를 정답과 비교하고, 측정된 정확도를 보고 (필요하면 필드별로) 임계값을 고른다"
+      }
+    ]
+  },
+  {
+    "id": "grounding",
+    "word": "grounding",
+    "tier": "extra",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈɡraʊndɪŋ",
+    "meaning": "근거 대기 — 답을 원문·자료에 근거하게 하는 것 (direct-quote grounding: 직접 인용으로 근거 잡기)",
+    "short": "근거 대기(자료에 근거함)",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(답을 자료에) 근거 두기"
+      },
+      {
+        "pos": "명사",
+        "ko": "기초 지식, 기본 교육"
+      },
+      {
+        "pos": "명사",
+        "ko": "(전기) 접지"
+      }
+    ],
+    "forms": [
+      "grounded",
+      "ground"
+    ],
+    "synonyms": [
+      "anchoring",
+      "attribution"
+    ],
+    "domain": "정확·품질·신뢰",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "group",
+    "word": "group",
+    "tier": "core",
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "ipa": "ɡruːp",
+    "meaning": "① (같은 기준으로) 묶다, 분류하다 ② 그룹, 무리",
+    "short": "묶다, 분류하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(같은 기준으로) 묶다, 분류하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "그룹, 무리"
+      }
+    ],
+    "forms": [
+      "groups",
+      "grouped",
+      "grouping"
+    ],
+    "synonyms": [
+      "cluster",
+      "categorize",
+      "sort"
+    ],
+    "domain": "구조·구성·부분",
+    "freq": 2,
+    "sources": [
+      "lesson-d3",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d3",
+        "q": 13,
+        "en": "Keep the conventions in CLAUDE.md but group them under clear markdown headers so Claude can skip them",
+        "surface": "group",
+        "pos": "동사",
+        "sense": "(같은 기준으로) 묶다, 분류하다",
+        "ko": "규칙은 CLAUDE.md에 두되 명확한 마크다운 제목으로 묶어 Claude가 건너뛸 수 있게 한다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 31,
+        "en": "An overnight report that groups the day's support tickets by theme for the product team",
+        "surface": "groups",
+        "pos": "동사",
+        "sense": "(같은 기준으로) 묶다, 분류하다",
+        "ko": "그날의 지원 티켓을 주제별로 묶어 제품팀에 주는 야간 리포트"
+      }
+    ]
+  },
+  {
+    "id": "growth",
+    "word": "growth",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ɡroʊθ",
+    "meaning": "증가, 커짐 / (grow) 커지다, 늘어나다",
+    "short": "증가, 커짐",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "증가, 커짐"
+      },
+      {
+        "pos": "동사",
+        "ko": "(grow) 커지다, 늘어나다"
+      }
+    ],
+    "forms": [
+      "grow",
+      "growing",
+      "grew",
+      "grown",
+      "grows"
+    ],
+    "synonyms": [
+      "increase",
+      "expansion"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 6,
+    "sources": [
+      "mock04",
+      "lesson-d2",
+      "lesson-d3"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 18,
+        "en": "Keep a scratchpad manifest of migrated vs pending files, updated after each file, so progress survives context growth.",
+        "surface": "growth",
+        "pos": "명사",
+        "sense": "증가, 커짐",
+        "ko": "마이그레이션 완료 파일과 대기 파일을 기록한 scratchpad 매니페스트를 두고 파일마다 갱신해, 컨텍스트가 커져도 진행 상황이 유지되게 한다"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 13,
+        "en": "A project's CLAUDE.md has grown to about 400 lines.",
+        "surface": "grown",
+        "pos": "동사",
+        "sense": "(grow) 커지다, 늘어나다",
+        "ko": "프로젝트 CLAUDE.md가 약 400줄로 늘었습니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 14,
+        "en": "A research agent has grown from 5 tools to 18, and several of them now partly overlap.",
+        "surface": "grown",
+        "pos": "동사",
+        "sense": "(grow) 커지다, 늘어나다",
+        "ko": "리서치 에이전트의 도구가 5개에서 18개로 늘었고, 그중 몇 개는 기능이 일부 겹칩니다."
+      },
+      {
+        "src": "mock04",
+        "q": 18,
+        "en": "During a 200-file framework migration carried out in one long session, logs show Claude re-migrating files it already converted and skipping others as the conversation grows.",
+        "surface": "grows",
+        "pos": "동사",
+        "sense": "(grow) 커지다, 늘어나다",
+        "ko": "하나의 긴 세션에서 파일 200개 규모의 프레임워크 마이그레이션을 진행하는 동안, 대화가 길어질수록 Claude가 이미 변환한 파일을 다시 마이그레이션하고 다른 파일은 건너뛰는 모습이 로그에 나타납니다."
+      }
+    ],
+    "note": "양이나 크기가 **점점 늘어나는** 것입니다. 동사는 *grow*(커지다, 늘어나다)이며, 문제에서는 대화가 길어지며 **컨텍스트가 커지는** 상황에 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Keep a scratchpad manifest of migrated vs pending files, updated after each file, so progress survives context **growth**.\r\n> 마이그레이션 완료 파일과 대기 파일을 기록한 scratchpad 매니페스트를 두고 파일마다 갱신해, 컨텍스트가 **커져도** 진행 상황이 유지되게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **context growth** : 컨텍스트 증가\r\n- **as the conversation grows** : 대화가 길어질수록\r\n- **has grown to** ~ : 점점 커져 ~하게 되었다\r\n\r\n## 시험 포인트\r\n진행 기록을 대화 밖 파일에 두는 것이 정답인 이유는, 컨텍스트가 커지며 요약·압축이 일어나도 **파일의 기록은 사라지지 않기** 때문입니다. 더 큰 컨텍스트 창이나 `/compact` 는 보조 수단일 뿐입니다."
+  },
+  {
+    "id": "guarantee",
+    "word": "guarantee",
+    "tier": "core",
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "ipa": "ˌɡærənˈtiː",
+    "meaning": "보장하다, 반드시 ~이 되게 하다 / 보장",
+    "short": "보장하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "보장하다, 반드시 ~이 되게 하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "보장"
+      }
+    ],
+    "forms": [
+      "guaranteed",
+      "guaranteeing",
+      "guarantees"
+    ],
+    "synonyms": [
+      "ensure",
+      "assure"
+    ],
+    "domain": "정확·품질·신뢰",
+    "freq": 18,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 3,
+        "en": "What is the best way to guarantee the policy holds?",
+        "surface": "guarantee",
+        "pos": "동사",
+        "sense": "보장하다, 반드시 ~이 되게 하다",
+        "ko": "이 정책이 반드시 지켜지도록 보장하는 가장 좋은 방법은 무엇입니까?"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 19,
+        "en": "Plan mode inherently blocks all edits and does not require approval for read operations, as the mode's read-only guarantee makes approval prompts unnecessary.",
+        "surface": "guarantee",
+        "pos": "명사",
+        "sense": "보장",
+        "ko": "플랜 모드는 본질적으로 모든 편집을 막고 읽기 작업에는 승인을 요구하지 않는다. 모드의 읽기 전용 보장 덕분에 승인 프롬프트가 필요 없다"
+      },
+      {
+        "src": "lesson-d1",
+        "q": 13,
+        "en": "Which configuration actually guarantees that?",
+        "surface": "guarantees",
+        "pos": "동사",
+        "sense": "보장하다, 반드시 ~이 되게 하다",
+        "ko": "어떤 구성이 이를 실제로 보장합니까?"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 16,
+        "en": "Which tool_choice setting guarantees extract_metadata runs on this turn?",
+        "surface": "guarantees",
+        "pos": "동사",
+        "sense": "보장하다, 반드시 ~이 되게 하다",
+        "ko": "이번 턴에 extract_metadata 실행을 보장하는 tool_choice 설정은 무엇입니까?"
+      }
+    ],
+    "note": "\"아마 그럴 것\"이 아니라 **어떤 경우에도 반드시 그렇게 되도록 확실히 하는** 것입니다. 시험에서 *guarantee* 가 보이면 대체로 지켜지는 방법이 아니라 **확정적인 방법**을 묻는 신호입니다.\r\n\r\n## 문제 속 쓰임\r\n> What is the best way to **guarantee** the policy holds?\r\n> 이 정책이 반드시 지켜지도록 **보장하는** 가장 좋은 방법은 무엇일까요?\r\n\r\n## 함께 쓰는 표현\r\n- **guarantee that** ~ : ~임을 보장하다\r\n- **guaranteed** (형) 보장된, 확실한\r\n- **no guarantee** : 보장이 없음\r\n\r\n## 비슷한 말\r\n- **ensure** — 확실히 하다 (*guarantee* 가 더 강함)\r\n\r\n## 시험 포인트\r\n*guarantee*, *must*, *never* 같은 말이 나오면 프롬프트 지시·파인튜닝 같은 **확률적 방법은 오답**이고, 훅·권한 설정·frontmatter 같은 **결정적(deterministic) 장치**가 정답입니다."
+  },
+  {
+    "id": "guard",
+    "word": "guard",
+    "tier": "core",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "ɡɑːrd",
+    "meaning": "방지 장치, 안전장치 / 지키다, 막다",
+    "short": "방지 장치, 안전장치",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "방지 장치, 안전장치"
+      },
+      {
+        "pos": "동사",
+        "ko": "지키다, 막다"
+      },
+      {
+        "pos": "명사",
+        "ko": "경비원, 보호자"
+      }
+    ],
+    "forms": [
+      "guarded",
+      "guarding",
+      "guards"
+    ],
+    "synonyms": [
+      "safeguard",
+      "protection"
+    ],
+    "domain": "제어·제한·관리",
+    "freq": 1,
+    "sources": [
+      "sample01"
+    ],
+    "contexts": [
+      {
+        "src": "sample01",
+        "q": 2,
+        "en": "The loop has no maximum iteration guard; a tool returning ambiguous results can cause the model to keep requesting the same tool indefinitely",
+        "surface": "guard",
+        "pos": "명사",
+        "sense": "방지 장치, 안전장치",
+        "ko": "루프에 최대 반복 횟수 가드가 없다. 도구가 모호한 결과를 반환하면 모델이 같은 도구를 끝없이 재요청할 수 있다"
+      }
+    ],
+    "note": "1. **(명) 방지 장치, 안전장치** — 루프가 끝없이 돌거나 잘못된 값이 들어오는 것을 **막아 주는 조건 검사**\r\n2. **(동) 지키다, 막다** — *guard against* ~에 대비해 막다\r\n\r\n## 문제 속 쓰임\r\n> The loop has no maximum iteration **guard**; a tool returning ambiguous results can cause the model to keep requesting the same tool indefinitely\r\n> 루프에 최대 반복 횟수 **가드**가 없다. 도구가 모호한 결과를 반환하면 모델이 같은 도구를 끝없이 재요청할 수 있다\r\n\r\n## 함께 쓰는 표현\r\n- **iteration guard / cap** : 최대 반복 횟수 제한\r\n- **guard against** ~ : ~을 막다, ~에 대비하다\r\n- **guardrail** : 가드레일 — 벗어나지 않게 막는 안전 규칙\r\n\r\n## 시험 포인트\r\n에이전트 루프가 **무한 반복**하며 토큰을 태운다면 **최대 반복 횟수 가드**가 없는 것이 원인입니다. 다만 정상 종료 여부 판단은 문구가 아니라 `stop_reason` 으로 합니다."
+  },
+  {
+    "id": "guardrail",
+    "word": "guardrail",
+    "tier": "extra",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈɡɑːrdreɪl",
+    "meaning": "가드레일 — 모델·시스템이 벗어나지 않게 정해 둔 안전장치·규칙",
+    "short": "안전장치, 제한 규칙",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(시스템의) 안전장치, 제한 규칙"
+      },
+      {
+        "pos": "명사",
+        "ko": "(도로의) 가드레일, 난간"
+      }
+    ],
+    "forms": [
+      "guardrails"
+    ],
+    "synonyms": [
+      "safeguard",
+      "constraint"
+    ],
+    "domain": "제어·제한·관리",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "guess",
+    "word": "guess",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "ipa": "ɡes",
+    "meaning": "① 추측하다, 짐작하다 ② 추측, 짐작",
+    "short": "추측하다, 짐작하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "추측하다, 짐작하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "추측, 짐작"
+      }
+    ],
+    "forms": [
+      "guesses",
+      "guessed",
+      "guessing"
+    ],
+    "synonyms": [
+      "infer",
+      "estimate",
+      "speculate"
+    ],
+    "domain": "비교·평가·판단",
+    "freq": 2,
+    "sources": [
+      "mock04",
+      "lesson-d2"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 34,
+        "en": "Add a citation post-processor that guesses the most likely source for each uncited sentence based on topical similarity.",
+        "surface": "guesses",
+        "pos": "동사",
+        "sense": "추측하다, 짐작하다",
+        "ko": "주제 유사도를 바탕으로 인용 없는 문장마다 가장 그럴듯한 출처를 추측해 붙이는 인용 후처리기를 추가한다"
+      },
+      {
+        "src": "lesson-d2",
+        "q": 19,
+        "en": "The enrichment tools depend on fields that only extract_metadata produces, and in early tests the model sometimes calls an enrichment tool first with guessed values.",
+        "surface": "guessed",
+        "pos": "동사",
+        "sense": "추측하다, 짐작하다",
+        "ko": "보강 도구는 extract_metadata만 만들어 내는 필드에 의존하는데, 초기 테스트에서 모델이 가끔 추측한 값으로 보강 도구를 먼저 불렀습니다."
+      }
+    ]
+  },
+  {
+    "id": "guest",
+    "word": "guest",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ɡest",
+    "meaning": "① (호텔 등의) 투숙객, 이용객 ② (초대받은) 손님",
+    "short": "손님, 투숙객",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "투숙객, 이용객"
+      },
+      {
+        "pos": "명사",
+        "ko": "(초대받은) 손님"
+      }
+    ],
+    "forms": [
+      "guests"
+    ],
+    "synonyms": [
+      "visitor",
+      "customer"
+    ],
+    "domain": "사람·조직·역할",
+    "freq": 2,
+    "sources": [
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 12,
+        "en": "Logs show it picked the one with the most recent activity and discussed it with the wrong guest.",
+        "surface": "guest",
+        "pos": "명사",
+        "sense": "투숙객, 이용객",
+        "ko": "로그를 보니 에이전트는 최근 활동이 가장 많은 건을 골라 엉뚱한 투숙객과 그 예약을 논의했습니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 12,
+        "en": "In production, a hotel-booking support agent searches by guest name and check-in city and gets back two reservations with different booking references.",
+        "surface": "guest",
+        "pos": "명사",
+        "sense": "투숙객, 이용객",
+        "ko": "운영 중인 호텔 예약 지원 에이전트가 투숙객 이름과 체크인 도시로 검색했더니, 예약 번호가 다른 예약 두 건이 나왔습니다."
+      }
+    ]
+  },
+  {
+    "id": "guidance",
+    "word": "guidance",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈɡaɪdns",
+    "meaning": "① 지침, 안내 — 어떻게 하라고 알려 주는 내용 ② 지도, 조언",
+    "short": "지침, 안내",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "지침, 안내"
+      },
+      {
+        "pos": "명사",
+        "ko": "지도, 조언"
+      }
+    ],
+    "synonyms": [
+      "direction",
+      "instructions",
+      "advice"
+    ],
+    "domain": "데이터·정보·문서",
+    "freq": 8,
+    "sources": [
+      "lesson-d2",
+      "lesson-d3"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 10,
+        "en": "What is the primary flaw in this retry guidance?",
+        "surface": "guidance",
+        "pos": "명사",
+        "sense": "지침, 안내",
+        "ko": "이 재시도 안내의 주된 결함은 무엇입니까?"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 6,
+        "en": "Split the guidance into code-style.md, testing.md, security.md and deployment.md in .claude/rules/ with no paths frontmatter, and slim CLAUDE.md down",
+        "surface": "guidance",
+        "pos": "명사",
+        "sense": "지침, 안내",
+        "ko": "`.claude/rules/` 에 `code-style.md`·`testing.md`·`security.md`·`deployment.md` 를 `paths` frontmatter 없이 두고, CLAUDE.md는 줄인다"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 32,
+        "en": "Where should this project-specific guidance be encoded so every CI run picks it up automatically without being repeated in each workflow prompt?",
+        "surface": "guidance",
+        "pos": "명사",
+        "sense": "지침, 안내",
+        "ko": "각 워크플로 프롬프트에 반복하지 않고 모든 CI 실행이 자동으로 이 프로젝트 고유 지침을 받게 하려면 어디에 둬야 합니까?"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 4,
+        "en": "Context use stays the same, because imported files load at launch with the root file. To load less, the guidance would need to go into subdirectory CLAUDE.md files or path-scoped rules",
+        "surface": "guidance",
+        "pos": "명사",
+        "sense": "지침, 안내",
+        "ko": "사용량은 그대로다. 가져온 파일은 루트 파일과 함께 시작 시 로드되기 때문이다. 덜 로드하려면 하위 디렉터리 CLAUDE.md나 경로 한정 규칙으로 옮겨야 한다"
+      }
+    ]
+  },
+  {
+    "id": "guide",
+    "word": "guide",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "ɡaɪd",
+    "meaning": "① 안내서, 지침서 (style guide: 스타일 가이드) ② 이끌다, 방향을 잡아 주다 ③ 안내자",
+    "short": "안내서, 지침서",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "안내서, 지침서"
+      },
+      {
+        "pos": "동사",
+        "ko": "이끌다, 방향을 잡아 주다"
+      },
+      {
+        "pos": "명사",
+        "ko": "안내자, 가이드"
+      }
+    ],
+    "forms": [
+      "guides",
+      "guided",
+      "guiding"
+    ],
+    "synonyms": [
+      "manual",
+      "handbook"
+    ],
+    "domain": "데이터·정보·문서",
+    "freq": 4,
+    "sources": [
+      "mock04",
+      "lesson-d3"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d3",
+        "q": 12,
+        "en": "Keep the pnpm rule in CLAUDE.md, move the style guide into a skill, and have CLAUDE.md say \"follow our API conventions\"",
+        "surface": "guide",
+        "pos": "명사",
+        "sense": "안내서, 지침서",
+        "ko": "pnpm 규칙은 CLAUDE.md에 두고, 스타일 가이드는 스킬로 옮긴 뒤 CLAUDE.md에는 \"API 규칙을 따를 것\"이라고 적는다"
+      },
+      {
+        "src": "mock04",
+        "q": 6,
+        "en": "Enlarge the context window so the full refund policy document can sit next to the conversation and guide each call.",
+        "surface": "guide",
+        "pos": "동사",
+        "sense": "이끌다, 방향을 잡아 주다",
+        "ko": "컨텍스트 창을 키워 전체 환불 정책 문서를 대화 옆에 두고, 매 호출을 안내하게 한다"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 12,
+        "en": "Keep the style guide in CLAUDE.md and move the pnpm rule into a skill, since a one-line rule is cheap to load on demand",
+        "surface": "guide",
+        "pos": "명사",
+        "sense": "안내서, 지침서",
+        "ko": "스타일 가이드는 CLAUDE.md에 두고 pnpm 규칙을 스킬로 옮긴다. 한 줄 규칙은 필요할 때 로드해도 싸기 때문이다"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 12,
+        "en": "Your project CLAUDE.md holds two things: the one-line rule \"Use pnpm, not npm\" and a 300-line API style guide that matters only when someone writes endpoints.",
+        "surface": "guide",
+        "pos": "명사",
+        "sense": "안내서, 지침서",
+        "ko": "프로젝트 CLAUDE.md에 두 가지가 있습니다: 한 줄짜리 규칙 \"npm 말고 pnpm을 쓴다\"와, 엔드포인트를 작성할 때만 필요한 300줄짜리 API 스타일 가이드입니다."
+      }
+    ]
+  },
+  {
+    "id": "guideline",
+    "word": "guideline",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈɡaɪdlaɪn",
+    "meaning": "지침, 가이드라인 (주로 복수 guidelines)",
+    "short": "지침, 가이드라인",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "지침, 가이드라인"
+      }
+    ],
+    "forms": [
+      "guidelines"
+    ],
+    "synonyms": [
+      "rule",
+      "standard",
+      "principle"
+    ],
+    "domain": "데이터·정보·문서",
+    "freq": 1,
+    "sources": [
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 33,
+        "en": "Have the model give a short written rationale next to each extracted value, with fixed wording guidelines in the prompt, and skip numeric scores.",
+        "surface": "guidelines",
+        "pos": "명사",
+        "sense": "지침, 가이드라인",
+        "ko": "추출한 값마다 짧은 서술형 근거를 고정 문구 지침과 함께 쓰게 하고, 숫자 점수는 생략한다."
+      }
+    ]
+  }
+]

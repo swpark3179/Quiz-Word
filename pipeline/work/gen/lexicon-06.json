@@ -1,0 +1,959 @@
+[
+ {
+  "lemma": "built-in",
+  "skip": null,
+  "word": "built-in",
+  "pos": ["형용사"],
+  "ipa": "ˌbɪlt ˈɪn",
+  "meaning": "내장된, 기본 제공되는",
+  "short": "내장된, 기본 제공되는",
+  "senses": [
+   { "pos": "형용사", "ko": "내장된, 기본 제공되는" },
+   { "pos": "형용사", "ko": "붙박이의, 붙어 있는" }
+  ],
+  "forms": [],
+  "synonyms": ["native", "integrated", "inherent"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#30.0", "surface": "built-in", "pos": "형용사", "sense": "내장된, 기본 제공되는" },
+   { "sid": "mock04#42.2", "surface": "built-in", "pos": "형용사", "sense": "내장된, 기본 제공되는" },
+   { "sid": "lesson-d1#31.1", "surface": "built-in", "pos": "형용사", "sense": "내장된, 기본 제공되는" }
+  ]
+ },
+ {
+  "lemma": "bulk",
+  "skip": null,
+  "word": "bulk",
+  "pos": ["명사", "형용사"],
+  "ipa": "bʌlk",
+  "meaning": "대량(의), 대부분 (the bulk of: ~의 대부분)",
+  "short": "대량(의), 대부분",
+  "senses": [
+   { "pos": "명사", "ko": "(the ~ of) 대부분" },
+   { "pos": "형용사", "ko": "대량의, 한꺼번에 하는" },
+   { "pos": "명사", "ko": "(큰) 부피, 덩치" }
+  ],
+  "forms": ["bulky"],
+  "synonyms": ["majority", "mass"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "bullet",
+  "skip": null,
+  "word": "bullet",
+  "pos": ["명사"],
+  "ipa": "ˈbʊlɪt",
+  "meaning": "① 글머리 기호(•), 글머리표 항목 ② 총알",
+  "short": "글머리 기호 (항목)",
+  "senses": [
+   { "pos": "명사", "ko": "글머리 기호, 글머리표 항목" },
+   { "pos": "명사", "ko": "총알" }
+  ],
+  "forms": ["bullets", "bulleted"],
+  "synonyms": ["bullet point", "item"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#6.3", "surface": "bullet", "pos": "명사", "sense": "글머리 기호, 글머리표 항목" }
+  ]
+ },
+ {
+  "lemma": "bulleted",
+  "skip": null,
+  "word": "bulleted",
+  "pos": ["형용사"],
+  "ipa": "ˈbʊlɪtɪd",
+  "meaning": "글머리 기호(•)를 붙인 (bulleted list: 글머리표 목록)",
+  "short": "글머리 기호를 붙인",
+  "senses": [
+   { "pos": "형용사", "ko": "글머리 기호를 붙인" }
+  ],
+  "forms": ["bullet"],
+  "synonyms": ["itemized"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#6.3", "surface": "bulleted", "pos": "형용사", "sense": "글머리 기호를 붙인" }
+  ]
+ },
+ {
+  "lemma": "burn",
+  "skip": null,
+  "word": "burn",
+  "pos": ["동사"],
+  "ipa": "bɜːrn",
+  "meaning": "(자원을) 헛되이 써 버리다, 태우다",
+  "short": "(자원을) 헛되이 쓰다",
+  "senses": [
+   { "pos": "동사", "ko": "(자원을) 헛되이 써 버리다, 소모하다" },
+   { "pos": "동사", "ko": "태우다, 타다" },
+   { "pos": "명사", "ko": "화상, 덴 자국" }
+  ],
+  "forms": ["burns", "burned", "burnt", "burning"],
+  "synonyms": ["waste", "consume", "use up"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#58.1", "surface": "burning", "pos": "동사", "sense": "(자원을) 헛되이 써 버리다, 소모하다" }
+  ]
+ },
+ {
+  "lemma": "bury",
+  "skip": null,
+  "word": "bury",
+  "pos": ["동사"],
+  "ipa": "ˈberi",
+  "meaning": "(다른 내용 속에) 묻다, 파묻히게 하다",
+  "short": "(속에) 묻다, 파묻다",
+  "senses": [
+   { "pos": "동사", "ko": "(다른 내용 속에) 묻다, 파묻히게 하다" },
+   { "pos": "동사", "ko": "(땅에) 묻다, 매장하다" }
+  ],
+  "forms": ["buries", "buried", "burying"],
+  "synonyms": ["hide", "obscure"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#36.2", "surface": "buried", "pos": "동사", "sense": "(다른 내용 속에) 묻다, 파묻히게 하다" }
+  ]
+ },
+ {
+  "lemma": "business",
+  "skip": null,
+  "word": "business",
+  "pos": ["명사"],
+  "ipa": "ˈbɪznəs",
+  "meaning": "① 업무, 비즈니스 (business rule: 업무 규칙) ② 사업, 회사 ③ (관여할) 일, 용무",
+  "short": "업무, 비즈니스",
+  "senses": [
+   { "pos": "명사", "ko": "업무, 비즈니스" },
+   { "pos": "명사", "ko": "사업, 회사" },
+   { "pos": "명사", "ko": "(관여할) 일, 용무" }
+  ],
+  "forms": ["businesses"],
+  "synonyms": ["commerce", "company"],
+  "domain": "비즈니스·업무",
+  "basic": true,
+  "contexts": [
+   { "sid": "mock04#57.1", "surface": "business", "pos": "명사", "sense": "업무, 비즈니스" },
+   { "sid": "lesson-d2#31.4", "surface": "business", "pos": "명사", "sense": "업무, 비즈니스" }
+  ]
+ },
+ {
+  "lemma": "by hand",
+  "skip": null,
+  "word": "by hand",
+  "pos": ["부사구"],
+  "ipa": "baɪ ˈhænd",
+  "meaning": "(자동화 없이) 손으로, 수작업으로",
+  "short": "손으로, 수작업으로",
+  "senses": [
+   { "pos": "부사구", "ko": "(자동화 없이) 손으로, 수작업으로" },
+   { "pos": "부사구", "ko": "(우편 대신) 직접 전달하여" }
+  ],
+  "forms": [],
+  "synonyms": ["manually"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#49.7", "surface": "by hand", "pos": "부사구", "sense": "(자동화 없이) 손으로, 수작업으로" }
+  ]
+ },
+ {
+  "lemma": "bypass",
+  "skip": null,
+  "word": "bypass",
+  "pos": ["동사"],
+  "ipa": "ˈbaɪpæs",
+  "meaning": "우회하다, (절차를) 건너뛰다",
+  "short": "우회하다, 건너뛰다",
+  "senses": [
+   { "pos": "동사", "ko": "우회하다, (절차를) 건너뛰다" },
+   { "pos": "명사", "ko": "우회로, 우회 수단" }
+  ],
+  "forms": ["bypasses", "bypassed", "bypassing"],
+  "synonyms": ["circumvent", "skip", "sidestep"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#43.4", "surface": "bypasses", "pos": "동사", "sense": "우회하다, (절차를) 건너뛰다" }
+  ]
+ },
+ {
+  "lemma": "cache",
+  "skip": null,
+  "word": "cache",
+  "pos": ["명사", "동사"],
+  "ipa": "kæʃ",
+  "meaning": "캐시(하다) — 다시 쓸 결과를 저장해 두고 재사용하다",
+  "short": "캐시, 캐시하다",
+  "senses": [
+   { "pos": "명사", "ko": "캐시, 임시 저장소" },
+   { "pos": "동사", "ko": "캐시하다, (재사용하려고) 저장해 두다" },
+   { "pos": "형용사", "ko": "(-ed형) 캐시된, 저장해 둔" }
+  ],
+  "forms": ["caches", "cached", "caching", "uncached"],
+  "synonyms": ["store", "buffer"],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#23.1", "surface": "cache", "pos": "명사", "sense": "캐시, 임시 저장소" },
+   { "sid": "lesson-d2#14.6", "surface": "Cache", "pos": "동사", "sense": "캐시하다, (재사용하려고) 저장해 두다" },
+   { "sid": "mock04#28.2", "surface": "cached", "pos": "형용사", "sense": "(-ed형) 캐시된, 저장해 둔" },
+   { "sid": "sample01#21.1", "surface": "Cache", "pos": "동사", "sense": "캐시하다, (재사용하려고) 저장해 두다" }
+  ]
+ },
+ {
+  "lemma": "calendar",
+  "skip": null,
+  "word": "calendar",
+  "pos": ["명사"],
+  "ipa": "ˈkælɪndər",
+  "meaning": "① 달력, 캘린더 ② 일정(표), 스케줄",
+  "short": "캘린더, 일정표",
+  "senses": [
+   { "pos": "명사", "ko": "달력, 캘린더" },
+   { "pos": "명사", "ko": "일정(표), 스케줄" }
+  ],
+  "forms": ["calendars"],
+  "synonyms": ["schedule"],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#9.0", "surface": "calendar", "pos": "명사", "sense": "달력, 캘린더" }
+  ]
+ },
+ {
+  "lemma": "calibrate",
+  "skip": null,
+  "word": "calibrate",
+  "pos": ["동사"],
+  "ipa": "ˈkælɪbreɪt",
+  "meaning": "(기준에 맞게) 보정하다, 맞추다",
+  "short": "보정하다, 맞추다",
+  "senses": [
+   { "pos": "동사", "ko": "(기준에 맞게) 보정하다, 맞추다" },
+   { "pos": "명사", "ko": "(-ion형) 보정, 눈금 맞추기" },
+   { "pos": "형용사", "ko": "(-ed형) 보정을 거친, 조정된" }
+  ],
+  "forms": ["calibrates", "calibrated", "calibrating", "calibration"],
+  "synonyms": ["adjust", "tune"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#33.1", "surface": "calibration", "pos": "명사", "sense": "(-ion형) 보정, 눈금 맞추기" },
+   { "sid": "lesson-d5#34.0", "surface": "calibrated", "pos": "형용사", "sense": "(-ed형) 보정을 거친, 조정된" }
+  ]
+ },
+ {
+  "lemma": "callback",
+  "skip": null,
+  "word": "callback",
+  "pos": ["명사"],
+  "ipa": "ˈkɔːlbæk",
+  "meaning": "① 콜백 (함수) — 특정 시점에 대신 호출되도록 등록해 둔 함수 ② 회신 전화",
+  "short": "콜백 함수",
+  "senses": [
+   { "pos": "명사", "ko": "콜백 (나중에 호출되도록 등록한 함수)" },
+   { "pos": "명사", "ko": "회신 전화, 다시 걸기" }
+  ],
+  "forms": ["callbacks"],
+  "synonyms": ["handler"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#26.4", "surface": "callback", "pos": "명사", "sense": "콜백 (나중에 호출되도록 등록한 함수)" },
+   { "sid": "lesson-d1#27.3", "surface": "callback", "pos": "명사", "sense": "콜백 (나중에 호출되도록 등록한 함수)" },
+   { "sid": "lesson-d1#29.6", "surface": "callback", "pos": "명사", "sense": "콜백 (나중에 호출되도록 등록한 함수)" }
+  ]
+ },
+ {
+  "lemma": "caller",
+  "skip": null,
+  "word": "caller",
+  "pos": ["명사"],
+  "ipa": "ˈkɔːlər",
+  "meaning": "호출자 — 함수·API·도구를 부르는 쪽",
+  "short": "호출자",
+  "senses": [
+   { "pos": "명사", "ko": "호출자, 호출하는 쪽" },
+   { "pos": "명사", "ko": "전화를 건 사람, 방문자" }
+  ],
+  "forms": ["callers"],
+  "synonyms": ["invoker", "client"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#11.3", "surface": "caller", "pos": "명사", "sense": "호출자, 호출하는 쪽" },
+   { "sid": "lesson-d4#3.5", "surface": "caller", "pos": "명사", "sense": "호출자, 호출하는 쪽" },
+   { "sid": "lesson-d2#11.7", "surface": "caller", "pos": "명사", "sense": "호출자, 호출하는 쪽" },
+   { "sid": "mock04#60.2", "surface": "caller", "pos": "명사", "sense": "호출자, 호출하는 쪽" }
+  ]
+ },
+ {
+  "lemma": "candidate",
+  "skip": null,
+  "word": "candidate",
+  "pos": ["명사"],
+  "ipa": "ˈkændɪdət",
+  "meaning": "후보 — 해당될 수도 있어 살펴볼 대상",
+  "short": "후보, 검토 대상",
+  "senses": [
+   { "pos": "명사", "ko": "후보, (해당될 수 있는) 검토 대상" },
+   { "pos": "명사", "ko": "(채용·선거의) 지원자, 후보자" }
+  ],
+  "forms": ["candidates"],
+  "synonyms": ["option", "applicant", "nominee"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#19.4", "surface": "candidate", "pos": "명사", "sense": "후보, (해당될 수 있는) 검토 대상" },
+   { "sid": "lesson-d4#17.0", "surface": "candidate", "pos": "명사", "sense": "(채용·선거의) 지원자, 후보자" },
+   { "sid": "lesson-d2#15.3", "surface": "candidate", "pos": "명사", "sense": "후보, (해당될 수 있는) 검토 대상" },
+   { "sid": "mock04#44.6", "surface": "candidate", "pos": "명사", "sense": "후보, (해당될 수 있는) 검토 대상" }
+  ]
+ },
+ {
+  "lemma": "cannot",
+  "skip": null,
+  "word": "cannot",
+  "pos": ["동사"],
+  "ipa": "ˈkænɑːt",
+  "meaning": "① ~할 수 없다 (can not 을 붙여 쓴 형태) ② ~일 리가 없다",
+  "short": "~할 수 없다",
+  "senses": [
+   { "pos": "동사", "ko": "~할 수 없다" },
+   { "pos": "동사", "ko": "~일 리가 없다" }
+  ],
+  "forms": ["can't"],
+  "synonyms": ["be unable to"],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#13.2", "surface": "cannot", "pos": "동사", "sense": "~할 수 없다" },
+   { "sid": "mock04#14.3", "surface": "cannot", "pos": "동사", "sense": "~할 수 없다" },
+   { "sid": "lesson-d1#37.1", "surface": "cannot", "pos": "동사", "sense": "~할 수 없다" },
+   { "sid": "lesson-d5#19.0", "surface": "cannot", "pos": "동사", "sense": "~할 수 없다" }
+  ]
+ },
+ {
+  "lemma": "canonical",
+  "skip": null,
+  "word": "canonical",
+  "pos": ["형용사"],
+  "ipa": "kəˈnɑːnɪkl",
+  "meaning": "표준의, 정식의 — 하나로 정해 둔 기준 형태의",
+  "short": "표준의, 정식의",
+  "senses": [
+   { "pos": "형용사", "ko": "표준의, 정식의" },
+   { "pos": "형용사", "ko": "전형적인, 대표적인" }
+  ],
+  "forms": ["canonically", "canonicalize"],
+  "synonyms": ["standard", "authoritative"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#4.7", "surface": "canonical", "pos": "형용사", "sense": "표준의, 정식의" }
+  ]
+ },
+ {
+  "lemma": "cap",
+  "skip": null,
+  "word": "cap",
+  "pos": ["명사", "동사"],
+  "ipa": "kæp",
+  "meaning": "상한(을 두다) — 넘지 못하게 정한 최대치",
+  "short": "상한, 상한을 두다",
+  "senses": [
+   { "pos": "명사", "ko": "상한, 최대치" },
+   { "pos": "동사", "ko": "상한을 두다, 제한하다" },
+   { "pos": "명사", "ko": "모자, 뚜껑" }
+  ],
+  "forms": ["caps", "capped", "capping"],
+  "synonyms": ["limit", "ceiling", "restrict"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#3.1", "surface": "cap", "pos": "명사", "sense": "상한, 최대치" },
+   { "sid": "lesson-d5#24.3", "surface": "capped", "pos": "동사", "sense": "상한을 두다, 제한하다" },
+   { "sid": "mock04#1.7", "surface": "cap", "pos": "명사", "sense": "상한, 최대치" },
+   { "sid": "lesson-d4#27.3", "surface": "cap", "pos": "명사", "sense": "상한, 최대치" }
+  ]
+ },
+ {
+  "lemma": "capable",
+  "skip": null,
+  "word": "capable",
+  "pos": ["형용사"],
+  "ipa": "ˈkeɪpəbl",
+  "meaning": "① 성능이 좋은, 유능한 ② (~을) 할 수 있는",
+  "short": "성능이 좋은, 유능한",
+  "senses": [
+   { "pos": "형용사", "ko": "성능이 좋은, 유능한" },
+   { "pos": "형용사", "ko": "(~ of) ~을 할 수 있는" },
+   { "pos": "명사", "ko": "(-ity형) 능력, 처리 가능 범위" }
+  ],
+  "forms": ["capability", "capabilities", "capably", "incapable"],
+  "synonyms": ["competent", "powerful", "able"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#7.2", "surface": "capable", "pos": "형용사", "sense": "성능이 좋은, 유능한" },
+   { "sid": "lesson-d5#9.0", "surface": "capability", "pos": "명사", "sense": "(-ity형) 능력, 처리 가능 범위" },
+   { "sid": "lesson-d2#14.5", "surface": "capable", "pos": "형용사", "sense": "성능이 좋은, 유능한" },
+   { "sid": "lesson-d1#19.4", "surface": "capable", "pos": "형용사", "sense": "성능이 좋은, 유능한" }
+  ]
+ },
+ {
+  "lemma": "capacity",
+  "skip": null,
+  "word": "capacity",
+  "pos": ["명사"],
+  "ipa": "kəˈpæsəti",
+  "meaning": "용량, (감당할 수 있는) 처리 능력",
+  "short": "용량, 처리 능력",
+  "senses": [
+   { "pos": "명사", "ko": "용량, 수용 한도" },
+   { "pos": "명사", "ko": "(감당할 수 있는) 처리 능력" },
+   { "pos": "명사", "ko": "자격, 역할" }
+  ],
+  "forms": ["capacities"],
+  "synonyms": ["volume", "capability", "limit"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:capacity.0", "surface": "capacity", "pos": "명사", "sense": "용량, 수용 한도" }
+  ]
+ },
+ {
+  "lemma": "capture",
+  "skip": null,
+  "word": "capture",
+  "pos": ["동사"],
+  "ipa": "ˈkæptʃər",
+  "meaning": "(정보를) 담아 두다, 포착하다",
+  "short": "담아 두다, 포착하다",
+  "senses": [
+   { "pos": "동사", "ko": "(정보를) 담아 두다, 포착하다" },
+   { "pos": "동사", "ko": "붙잡다, 포획하다" },
+   { "pos": "명사", "ko": "(화면) 캡처, 포착" }
+  ],
+  "forms": ["captures", "captured", "capturing"],
+  "synonyms": ["record", "catch", "preserve"],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#56.7", "surface": "captured", "pos": "동사", "sense": "(정보를) 담아 두다, 포착하다" }
+  ]
+ },
+ {
+  "lemma": "carefully",
+  "skip": null,
+  "word": "carefully",
+  "pos": ["부사"],
+  "ipa": "ˈkerfəli",
+  "meaning": "주의 깊게, 신중하게",
+  "short": "신중하게, 주의 깊게",
+  "senses": [
+   { "pos": "부사", "ko": "주의 깊게, 신중하게" }
+  ],
+  "forms": ["careful", "care"],
+  "synonyms": ["cautiously", "thoroughly"],
+  "domain": "정확·품질·신뢰",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#23.5", "surface": "carefully", "pos": "부사", "sense": "주의 깊게, 신중하게" },
+   { "sid": "lesson-d2#15.5", "surface": "carefully", "pos": "부사", "sense": "주의 깊게, 신중하게" },
+   { "sid": "mock04#52.4", "surface": "carefully", "pos": "부사", "sense": "주의 깊게, 신중하게" }
+  ]
+ },
+ {
+  "lemma": "carrier",
+  "skip": null,
+  "word": "carrier",
+  "pos": ["명사"],
+  "ipa": "ˈkæriər",
+  "meaning": "운송업체, 배송사 (shipping carrier)",
+  "short": "운송업체, 배송사",
+  "senses": [
+   { "pos": "명사", "ko": "운송업체, 배송사" },
+   { "pos": "명사", "ko": "통신사, 이동통신 사업자" },
+   { "pos": "명사", "ko": "(병균 등의) 보균자, 운반체" }
+  ],
+  "forms": ["carriers"],
+  "synonyms": ["shipper", "courier"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#5.0", "surface": "carrier", "pos": "명사", "sense": "운송업체, 배송사" }
+  ]
+ },
+ {
+  "lemma": "carry",
+  "skip": null,
+  "word": "carry",
+  "pos": ["동사"],
+  "ipa": "ˈkæri",
+  "meaning": "(정보를) 지니다, 달고 가다, 옮기다",
+  "short": "지니다, 옮기다",
+  "senses": [
+   { "pos": "동사", "ko": "(정보를) 지니다, 달고 있다" },
+   { "pos": "동사", "ko": "(다음 단계로) 옮기다, 전달하다" },
+   { "pos": "동사", "ko": "(~ over/through) 그대로 이어지다" },
+   { "pos": "동사", "ko": "(물건을) 들고 가다, 나르다" }
+  ],
+  "forms": ["carries", "carried", "carrying"],
+  "synonyms": ["bear", "convey", "transfer"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#33.1", "surface": "carrying", "pos": "동사", "sense": "(정보를) 지니다, 달고 있다" },
+   { "sid": "lesson-d5#28.6", "surface": "carry", "pos": "동사", "sense": "(다음 단계로) 옮기다, 전달하다" },
+   { "sid": "lesson-d3#31.5", "surface": "carry", "pos": "동사", "sense": "(~ over/through) 그대로 이어지다" },
+   { "sid": "lesson-d2#3.2", "surface": "carry", "pos": "동사", "sense": "(정보를) 지니다, 달고 있다" }
+  ]
+ },
+ {
+  "lemma": "carry out",
+  "skip": null,
+  "word": "carry out",
+  "pos": ["동사구"],
+  "ipa": "ˌkæri ˈaʊt",
+  "meaning": "(작업·계획을) 수행하다, 실행하다",
+  "short": "수행하다, 실행하다",
+  "senses": [
+   { "pos": "동사구", "ko": "(작업·계획을) 수행하다, 실행하다" }
+  ],
+  "forms": ["carries out", "carried out", "carrying out"],
+  "synonyms": ["perform", "execute", "conduct"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#18.1", "surface": "carried out", "pos": "동사구", "sense": "(작업·계획을) 수행하다, 실행하다" },
+   { "sid": "lesson-d3#20.3", "surface": "carry out", "pos": "동사구", "sense": "(작업·계획을) 수행하다, 실행하다" }
+  ]
+ },
+ {
+  "lemma": "case",
+  "skip": null,
+  "word": "case",
+  "pos": ["명사"],
+  "ipa": "keɪs",
+  "meaning": "① 경우, 사례 ② (처리할) 건, 사안 (상담·지원 건) ③ (글자의) 대소문자 ④ 상자, 케이스",
+  "short": "경우, (처리할) 건",
+  "senses": [
+   { "pos": "명사", "ko": "경우, 사례" },
+   { "pos": "명사", "ko": "(처리할) 건, 사안" },
+   { "pos": "명사", "ko": "(글자의) 대소문자" },
+   { "pos": "명사", "ko": "상자, 케이스" }
+  ],
+  "forms": ["cases"],
+  "synonyms": ["instance", "situation", "matter"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#28.2", "surface": "case", "pos": "명사", "sense": "경우, 사례" },
+   { "sid": "mock04#2.1", "surface": "case", "pos": "명사", "sense": "(처리할) 건, 사안" },
+   { "sid": "lesson-d5#10.3", "surface": "cases", "pos": "명사", "sense": "(처리할) 건, 사안" },
+   { "sid": "lesson-d2#5.4", "surface": "case", "pos": "명사", "sense": "경우, 사례" }
+  ]
+ },
+ {
+  "lemma": "case-facts",
+  "skip": null,
+  "word": "case-facts",
+  "pos": ["명사구"],
+  "ipa": "ˈkeɪs ˌfækts",
+  "meaning": "케이스 사실 — 주문 번호·금액·날짜처럼 그 건에서 정확히 지켜야 할 핵심 사실",
+  "short": "(그 건의) 핵심 사실",
+  "senses": [
+   { "pos": "명사구", "ko": "(그 건의) 핵심 사실 정보" }
+  ],
+  "forms": ["case facts"],
+  "synonyms": ["key facts"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#4.4", "surface": "case-facts", "pos": "명사구", "sense": "(그 건의) 핵심 사실 정보" },
+   { "sid": "mock04#9.4", "surface": "case-facts", "pos": "명사구", "sense": "(그 건의) 핵심 사실 정보" }
+  ]
+ },
+ {
+  "lemma": "cat",
+  "skip": "code"
+ },
+ {
+  "lemma": "catalog",
+  "skip": null,
+  "word": "catalog",
+  "pos": ["명사"],
+  "ipa": "ˈkætəlɔːɡ",
+  "meaning": "카탈로그, 목록 — 무엇이 있는지 정리해 둔 목록",
+  "short": "목록, 목록화하다",
+  "senses": [
+   { "pos": "명사", "ko": "카탈로그, 목록" },
+   { "pos": "동사", "ko": "목록으로 정리하다, 분류해 기록하다" }
+  ],
+  "forms": ["catalogs", "cataloged", "cataloging", "catalogue"],
+  "synonyms": ["list", "index", "inventory"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#41.5", "surface": "catalog", "pos": "명사", "sense": "카탈로그, 목록" },
+   { "sid": "lesson-d3#20.2", "surface": "catalog", "pos": "동사", "sense": "목록으로 정리하다, 분류해 기록하다" }
+  ]
+ },
+ {
+  "lemma": "catch",
+  "skip": null,
+  "word": "catch",
+  "pos": ["동사"],
+  "ipa": "kætʃ",
+  "meaning": "(문제를) 잡아내다, 발견하다",
+  "short": "(문제를) 잡아내다",
+  "senses": [
+   { "pos": "동사", "ko": "(문제를) 잡아내다, 발견하다" },
+   { "pos": "동사", "ko": "(예외·오류를) 받아 처리하다" },
+   { "pos": "명사", "ko": "(코드) 예외 처리 구문" },
+   { "pos": "동사", "ko": "(공·물건을) 잡다" }
+  ],
+  "forms": ["catches", "caught", "catching"],
+  "synonyms": ["detect", "spot", "find"],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#34.0", "surface": "catches", "pos": "동사", "sense": "(문제를) 잡아내다, 발견하다" },
+   { "sid": "lesson-d2#8.0", "surface": "catches", "pos": "동사", "sense": "(예외·오류를) 받아 처리하다" },
+   { "sid": "sample01#5.2", "surface": "caught", "pos": "동사", "sense": "(문제를) 잡아내다, 발견하다" },
+   { "sid": "lesson-d4#35.2", "surface": "catching", "pos": "동사", "sense": "(문제를) 잡아내다, 발견하다" }
+  ]
+ },
+ {
+  "lemma": "category",
+  "skip": null,
+  "word": "category",
+  "pos": ["명사"],
+  "ipa": "ˈkætəɡɔːri",
+  "meaning": "범주, 카테고리 — 분류의 한 갈래",
+  "short": "범주, 카테고리",
+  "senses": [
+   { "pos": "명사", "ko": "범주, 카테고리" },
+   { "pos": "동사", "ko": "(-ize형) 분류하다" }
+  ],
+  "forms": ["categories", "categorize", "categorized", "miscategorized"],
+  "synonyms": ["class", "type", "group"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#5.0", "surface": "category", "pos": "명사", "sense": "범주, 카테고리" },
+   { "sid": "lesson-d2#11.3", "surface": "categorized", "pos": "동사", "sense": "(-ize형) 분류하다" },
+   { "sid": "sample01#14.1", "surface": "category", "pos": "명사", "sense": "범주, 카테고리" },
+   { "sid": "lesson-d1#24.4", "surface": "category", "pos": "명사", "sense": "범주, 카테고리" }
+  ]
+ },
+ {
+  "lemma": "caveat",
+  "skip": null,
+  "word": "caveat",
+  "pos": ["명사"],
+  "ipa": "ˈkæviæt",
+  "meaning": "단서, 주의 사항",
+  "short": "단서, 주의 사항",
+  "senses": [
+   { "pos": "명사", "ko": "단서, 주의 사항" }
+  ],
+  "forms": ["caveats"],
+  "synonyms": ["qualification", "warning", "proviso"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#41.6", "surface": "caveats", "pos": "명사", "sense": "단서, 주의 사항" }
+  ]
+ },
+ {
+  "lemma": "ceiling",
+  "skip": null,
+  "word": "ceiling",
+  "pos": ["명사"],
+  "ipa": "ˈsiːlɪŋ",
+  "meaning": "상한(선) — 넘을 수 없는 최대치",
+  "short": "상한(선), 최대치",
+  "senses": [
+   { "pos": "명사", "ko": "상한(선), 최대치" },
+   { "pos": "명사", "ko": "천장" }
+  ],
+  "forms": ["ceilings"],
+  "synonyms": ["cap", "limit", "maximum"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#58.3", "surface": "ceiling", "pos": "명사", "sense": "상한(선), 최대치" }
+  ]
+ },
+ {
+  "lemma": "cell",
+  "skip": null,
+  "word": "cell",
+  "pos": ["명사"],
+  "ipa": "sel",
+  "meaning": "① (표의) 칸, 셀 ② 세포 ③ 휴대전화 (cell phone)",
+  "short": "(표의) 칸, 셀",
+  "senses": [
+   { "pos": "명사", "ko": "(표의) 칸, 셀" },
+   { "pos": "명사", "ko": "세포" },
+   { "pos": "명사", "ko": "휴대전화" }
+  ],
+  "forms": ["cells"],
+  "synonyms": ["field", "slot"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#28.1", "surface": "cells", "pos": "명사", "sense": "(표의) 칸, 셀" },
+   { "sid": "lesson-d3#28.6", "surface": "cell", "pos": "명사", "sense": "(표의) 칸, 셀" }
+  ]
+ },
+ {
+  "lemma": "certain",
+  "skip": null,
+  "word": "certain",
+  "pos": ["형용사"],
+  "ipa": "ˈsɜːrtn",
+  "meaning": "① 확신하는, 확실한 ② 어떤, 특정한",
+  "short": "확신하는, 확실한",
+  "senses": [
+   { "pos": "형용사", "ko": "확신하는, 확실한" },
+   { "pos": "형용사", "ko": "어떤, 특정한" }
+  ],
+  "forms": ["certainly", "certainty", "uncertain"],
+  "synonyms": ["sure", "confident"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#26.5", "surface": "certain", "pos": "형용사", "sense": "확신하는, 확실한" }
+  ]
+ },
+ {
+  "lemma": "certainty",
+  "skip": null,
+  "word": "certainty",
+  "pos": ["명사"],
+  "ipa": "ˈsɜːrtnti",
+  "meaning": "확실성, 확신 (certainty score: 얼마나 확실한지 나타낸 점수)",
+  "short": "확실성, 확신",
+  "senses": [
+   { "pos": "명사", "ko": "확실성, 확신 (정도)" },
+   { "pos": "명사", "ko": "확실한 일, 기정사실" }
+  ],
+  "forms": ["certainties", "certain", "uncertainty"],
+  "synonyms": ["confidence", "sureness"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#41.0", "surface": "certainty", "pos": "명사", "sense": "확실성, 확신 (정도)" },
+   { "sid": "lesson-d5#33.3", "surface": "certainty", "pos": "명사", "sense": "확실성, 확신 (정도)" }
+  ]
+ },
+ {
+  "lemma": "chain",
+  "skip": null,
+  "word": "chain",
+  "pos": ["명사", "동사"],
+  "ipa": "tʃeɪn",
+  "meaning": "체인, 연쇄 — 단계를 정해진 순서로 이은 흐름 / 잇다",
+  "short": "체인, 연쇄 흐름",
+  "senses": [
+   { "pos": "명사", "ko": "(단계를 이은) 체인, 연쇄 흐름" },
+   { "pos": "명사", "ko": "(호출이 이어진) 연결 경로" },
+   { "pos": "명사", "ko": "(공급) 망, 연결망" },
+   { "pos": "동사", "ko": "(차례로) 잇다, 연결하다" }
+  ],
+  "forms": ["chains", "chained", "chaining"],
+  "synonyms": ["sequence", "pipeline", "series"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#25.1", "surface": "chain", "pos": "명사", "sense": "(단계를 이은) 체인, 연쇄 흐름" },
+   { "sid": "lesson-d5#23.3", "surface": "chain", "pos": "명사", "sense": "(호출이 이어진) 연결 경로" },
+   { "sid": "lesson-d1#16.5", "surface": "chains", "pos": "명사", "sense": "(공급) 망, 연결망" },
+   { "sid": "lesson-d1#32.5", "surface": "chain", "pos": "명사", "sense": "(단계를 이은) 체인, 연쇄 흐름" }
+  ]
+ },
+ {
+  "lemma": "challenge",
+  "skip": null,
+  "word": "challenge",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈtʃælɪndʒ",
+  "meaning": "① 이의를 제기하다, 따져 보다 ② 어려운 과제, 난제 ③ 도전(하다)",
+  "short": "이의를 제기하다, 따져 보다",
+  "senses": [
+   { "pos": "동사", "ko": "이의를 제기하다, 따져 보다" },
+   { "pos": "명사", "ko": "어려운 과제, 난제" },
+   { "pos": "동사", "ko": "도전하다" },
+   { "pos": "명사", "ko": "도전" }
+  ],
+  "forms": ["challenges", "challenged", "challenging"],
+  "synonyms": ["question", "dispute"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#34.2", "surface": "challenge", "pos": "동사", "sense": "이의를 제기하다, 따져 보다" },
+   { "sid": "lesson-d4#35.4", "surface": "challenge", "pos": "동사", "sense": "이의를 제기하다, 따져 보다" }
+  ]
+ },
+ {
+  "lemma": "chance",
+  "skip": null,
+  "word": "chance",
+  "pos": ["명사"],
+  "ipa": "tʃæns",
+  "meaning": "① 가능성, 확률 ② 기회 ③ 우연, 운",
+  "short": "가능성, 확률",
+  "senses": [
+   { "pos": "명사", "ko": "가능성, 확률" },
+   { "pos": "명사", "ko": "기회" },
+   { "pos": "명사", "ko": "우연, 운" }
+  ],
+  "forms": ["chances"],
+  "synonyms": ["likelihood", "probability", "possibility"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#2.3", "surface": "chance", "pos": "명사", "sense": "가능성, 확률" }
+  ]
+ },
+ {
+  "lemma": "change",
+  "skip": null,
+  "word": "change",
+  "pos": ["명사", "동사"],
+  "ipa": "tʃeɪndʒ",
+  "meaning": "① 변경 (사항), 수정 ② 바꾸다, 수정하다 ③ 바뀌다, 달라지다 ④ 거스름돈",
+  "short": "변경, 바꾸다",
+  "senses": [
+   { "pos": "명사", "ko": "변경 (사항), 수정" },
+   { "pos": "동사", "ko": "바꾸다, 수정하다" },
+   { "pos": "동사", "ko": "바뀌다, 달라지다" },
+   { "pos": "명사", "ko": "거스름돈, 잔돈" }
+  ],
+  "forms": ["changes", "changed", "changing"],
+  "synonyms": ["modify", "alter", "modification"],
+  "domain": "변경·수정",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#1.2", "surface": "change", "pos": "명사", "sense": "변경 (사항), 수정" },
+   { "sid": "lesson-d1#13.0", "surface": "change", "pos": "동사", "sense": "바꾸다, 수정하다" },
+   { "sid": "sample01#18.1", "surface": "changes", "pos": "명사", "sense": "변경 (사항), 수정" },
+   { "sid": "lesson-d3#21.1", "surface": "changed", "pos": "동사", "sense": "바꾸다, 수정하다" }
+  ]
+ },
+ {
+  "lemma": "channel",
+  "skip": null,
+  "word": "channel",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈtʃænl",
+  "meaning": "① (유통·소통의) 경로, 채널 ② (방송·메신저의) 채널 ③ (특정 방향으로) 돌리다, 보내다",
+  "short": "경로, 채널",
+  "senses": [
+   { "pos": "명사", "ko": "(유통·소통의) 경로, 채널" },
+   { "pos": "명사", "ko": "(방송·메신저의) 채널" },
+   { "pos": "동사", "ko": "(특정 방향으로) 돌리다, 보내다" }
+  ],
+  "forms": ["channels", "channeled", "channeling"],
+  "synonyms": ["route", "medium", "path"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#6.0", "surface": "channels", "pos": "명사", "sense": "(유통·소통의) 경로, 채널" }
+  ]
+ },
+ {
+  "lemma": "character",
+  "skip": null,
+  "word": "character",
+  "pos": ["명사"],
+  "ipa": "ˈkærəktər",
+  "meaning": "① 문자, 글자 ② 성격, 특성 ③ (작품의) 등장인물",
+  "short": "문자, 글자",
+  "senses": [
+   { "pos": "명사", "ko": "문자, 글자" },
+   { "pos": "명사", "ko": "성격, 특성" },
+   { "pos": "명사", "ko": "(작품의) 등장인물" }
+  ],
+  "forms": ["characters", "characteristic", "characterize"],
+  "synonyms": ["symbol", "letter"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#27.5", "surface": "character", "pos": "명사", "sense": "문자, 글자" },
+   { "sid": "lesson-d5#5.5", "surface": "characters", "pos": "명사", "sense": "문자, 글자" }
+  ]
+ },
+ {
+  "lemma": "charge",
+  "skip": null,
+  "word": "charge",
+  "pos": ["동사", "명사"],
+  "ipa": "tʃɑːrdʒ",
+  "meaning": "① 충전하다 (charging: 충전) ② (요금을) 청구하다, 부과하다 ③ 요금, 수수료 ④ (in charge) 책임, 담당",
+  "short": "충전하다, 충전",
+  "senses": [
+   { "pos": "동사", "ko": "충전하다" },
+   { "pos": "명사", "ko": "(-ing형) 충전" },
+   { "pos": "동사", "ko": "(요금을) 청구하다, 부과하다" },
+   { "pos": "명사", "ko": "요금, 수수료" }
+  ],
+  "forms": ["charges", "charged", "charging", "charger"],
+  "synonyms": ["recharge"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#9.0", "surface": "charging", "pos": "명사", "sense": "(-ing형) 충전" }
+  ]
+ },
+ {
+  "lemma": "charger",
+  "skip": null,
+  "word": "charger",
+  "pos": ["명사"],
+  "ipa": "ˈtʃɑːrdʒər",
+  "meaning": "충전기",
+  "short": "충전기",
+  "senses": [
+   { "pos": "명사", "ko": "충전기" }
+  ],
+  "forms": ["chargers"],
+  "synonyms": [],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#9.0", "surface": "charger", "pos": "명사", "sense": "충전기" }
+  ]
+ },
+ {
+  "lemma": "chat",
+  "skip": null,
+  "word": "chat",
+  "pos": ["명사", "동사"],
+  "ipa": "tʃæt",
+  "meaning": "① (온라인) 채팅, 대화 ② 이야기를 나누다, 수다 떨다",
+  "short": "채팅, 대화",
+  "senses": [
+   { "pos": "명사", "ko": "(온라인) 채팅, 대화" },
+   { "pos": "동사", "ko": "이야기를 나누다, 수다 떨다" }
+  ],
+  "forms": ["chats", "chatted", "chatting", "chatbot"],
+  "synonyms": ["conversation", "talk"],
+  "domain": "요청·소통",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#4.1", "surface": "chats", "pos": "명사", "sense": "(온라인) 채팅, 대화" },
+   { "sid": "lesson-d4#31.4", "surface": "chat", "pos": "명사", "sense": "(온라인) 채팅, 대화" },
+   { "sid": "lesson-d5#8.0", "surface": "chat", "pos": "명사", "sense": "(온라인) 채팅, 대화" }
+  ]
+ }
+]

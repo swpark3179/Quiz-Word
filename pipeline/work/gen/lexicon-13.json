@@ -1,0 +1,954 @@
+[
+ {
+  "lemma": "distract",
+  "skip": null,
+  "word": "distract",
+  "pos": ["동사"],
+  "ipa": "dɪˈstrækt",
+  "meaning": "(주의를) 흐트러뜨리다, 딴 데로 돌리다",
+  "short": "주의를 흐트러뜨리다",
+  "senses": [
+   { "pos": "동사", "ko": "(주의를) 흐트러뜨리다, 딴 데로 돌리다" },
+   { "pos": "형용사", "ko": "(distracting) 방해가 되는, 산만하게 하는" }
+  ],
+  "forms": ["distracts", "distracted", "distracting", "distraction"],
+  "synonyms": ["divert"],
+  "domain": "원인·결과·영향",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#26.6", "surface": "distract", "pos": "동사", "sense": "(주의를) 흐트러뜨리다, 딴 데로 돌리다" },
+   { "sid": "lesson-d3#27.4", "surface": "distracting", "pos": "동사", "sense": "(주의를) 흐트러뜨리다, 딴 데로 돌리다" }
+  ]
+ },
+ {
+  "lemma": "distribute",
+  "skip": null,
+  "word": "distribute",
+  "pos": ["동사"],
+  "ipa": "dɪˈstrɪbjuːt",
+  "meaning": "① 배포하다, 나눠 주다 ② (여러 곳에) 분산시키다",
+  "short": "배포하다, 나눠 주다",
+  "senses": [
+   { "pos": "동사", "ko": "배포하다, 나눠 주다" },
+   { "pos": "동사", "ko": "(여러 곳에) 분산시키다" }
+  ],
+  "forms": ["distributes", "distributed", "distributing", "distribution"],
+  "synonyms": ["hand out", "deploy", "spread"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#3.6", "surface": "distributed", "pos": "동사", "sense": "배포하다, 나눠 주다" }
+  ]
+ },
+ {
+  "lemma": "distribution",
+  "skip": null,
+  "word": "distribution",
+  "pos": ["명사"],
+  "ipa": "ˌdɪstrɪˈbjuːʃn",
+  "meaning": "① 유통, 배급 ② (데이터의) 분포 ③ 배포, 분배",
+  "short": "유통, 배포",
+  "senses": [
+   { "pos": "명사", "ko": "유통, 배급" },
+   { "pos": "명사", "ko": "(데이터의) 분포" },
+   { "pos": "명사", "ko": "배포, 분배" }
+  ],
+  "forms": ["distributions", "distribute"],
+  "synonyms": ["allocation", "dissemination"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#6.0", "surface": "distribution", "pos": "명사", "sense": "유통, 배급" }
+  ]
+ },
+ {
+  "lemma": "diverge",
+  "skip": null,
+  "word": "diverge",
+  "pos": ["동사"],
+  "ipa": "daɪˈvɜːrdʒ",
+  "meaning": "(서로) 갈라지다, 어긋나다",
+  "short": "갈라지다, 어긋나다",
+  "senses": [
+   { "pos": "동사", "ko": "(서로) 갈라지다, 어긋나다" },
+   { "pos": "형용사", "ko": "(divergent) 갈라져 나온, 서로 다른" }
+  ],
+  "forms": ["diverges", "diverged", "diverging", "divergent", "divergence"],
+  "synonyms": ["deviate", "differ", "split"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#20.5", "surface": "diverge", "pos": "동사", "sense": "(서로) 갈라지다, 어긋나다" },
+   { "sid": "mock04#20.5", "surface": "divergent", "pos": "형용사", "sense": "(divergent) 갈라져 나온, 서로 다른" }
+  ]
+ },
+ {
+  "lemma": "diverse",
+  "skip": null,
+  "word": "diverse",
+  "pos": ["형용사"],
+  "ipa": "daɪˈvɜːrs",
+  "meaning": "다양한, 서로 다른 (diversity: 다양성)",
+  "short": "다양한, 서로 다른",
+  "senses": [
+   { "pos": "형용사", "ko": "다양한, 서로 다른" },
+   { "pos": "명사", "ko": "(diversity) 다양성" }
+  ],
+  "forms": ["diversity", "diversely"],
+  "synonyms": ["varied", "various", "different"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "diversify",
+  "skip": null,
+  "word": "diversify",
+  "pos": ["동사"],
+  "ipa": "daɪˈvɜːrsɪfaɪ",
+  "meaning": "다양화하다",
+  "short": "다양화하다",
+  "senses": [
+   { "pos": "동사", "ko": "다양화하다" },
+   { "pos": "동사", "ko": "(사업·투자를) 다각화하다" }
+  ],
+  "forms": ["diversifies", "diversified", "diversifying", "diversification"],
+  "synonyms": ["vary", "broaden"],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#12.4", "surface": "diversify", "pos": "동사", "sense": "다양화하다" }
+  ]
+ },
+ {
+  "lemma": "divide",
+  "skip": null,
+  "word": "divide",
+  "pos": ["동사", "명사"],
+  "ipa": "dɪˈvaɪd",
+  "meaning": "① 나누다, 분할하다 ② (수를) 나누다 ③ 차이, 격차",
+  "short": "나누다, 분할하다",
+  "senses": [
+   { "pos": "동사", "ko": "나누다, 분할하다" },
+   { "pos": "동사", "ko": "(수를) 나누다, 나눗셈하다" },
+   { "pos": "명사", "ko": "차이, 격차" }
+  ],
+  "forms": ["divides", "divided", "dividing", "division"],
+  "synonyms": ["split", "separate", "partition"],
+  "domain": "구조·구성·부분",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#30.4", "surface": "Divide", "pos": "동사", "sense": "나누다, 분할하다" }
+  ]
+ },
+ {
+  "lemma": "doc",
+  "skip": null,
+  "word": "doc",
+  "pos": ["명사"],
+  "ipa": "dɑːk",
+  "meaning": "문서 (document의 줄임말) — docs: 문서 자료, 설명서",
+  "short": "문서",
+  "senses": [
+   { "pos": "명사", "ko": "문서 (document의 줄임말)" },
+   { "pos": "명사", "ko": "(docs) 문서 자료, 설명서" }
+  ],
+  "forms": ["docs"],
+  "synonyms": ["document"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#49.2", "surface": "doc", "pos": "명사", "sense": "문서 (document의 줄임말)" }
+  ]
+ },
+ {
+  "lemma": "docstring",
+  "skip": null,
+  "word": "docstring",
+  "pos": ["명사"],
+  "ipa": "ˈdɑːkstrɪŋ",
+  "meaning": "독스트링 — 함수·클래스 안에 쓰는 설명 문자열",
+  "short": "독스트링(함수 설명 문자열)",
+  "senses": [
+   { "pos": "명사", "ko": "독스트링 (함수·클래스 설명 문자열)" }
+  ],
+  "forms": ["docstrings"],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#3.0", "surface": "docstring", "pos": "명사", "sense": "독스트링 (함수·클래스 설명 문자열)" },
+   { "sid": "lesson-d4#3.2", "surface": "docstring", "pos": "명사", "sense": "독스트링 (함수·클래스 설명 문자열)" },
+   { "sid": "lesson-d4#3.5", "surface": "docstring", "pos": "명사", "sense": "독스트링 (함수·클래스 설명 문자열)" },
+   { "sid": "lesson-d4#3.4", "surface": "docstring", "pos": "명사", "sense": "독스트링 (함수·클래스 설명 문자열)" }
+  ]
+ },
+ {
+  "lemma": "document",
+  "skip": null,
+  "word": "document",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈdɑːkjumənt",
+  "meaning": "① 문서, 서류 ② (문서로) 기록하다, 문서화하다",
+  "short": "문서, 서류",
+  "senses": [
+   { "pos": "명사", "ko": "문서, 서류" },
+   { "pos": "동사", "ko": "(문서로) 기록하다, 문서화하다" }
+  ],
+  "forms": ["documents", "documented", "documenting", "documentation"],
+  "synonyms": ["file", "paper", "record"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#10.1", "surface": "document", "pos": "명사", "sense": "문서, 서류" },
+   { "sid": "lesson-d5#10.1", "surface": "documented", "pos": "동사", "sense": "(문서로) 기록하다, 문서화하다" },
+   { "sid": "sample01#16.1", "surface": "document", "pos": "명사", "sense": "문서, 서류" },
+   { "sid": "mock04#31.3", "surface": "document", "pos": "명사", "sense": "문서, 서류" }
+  ]
+ },
+ {
+  "lemma": "document-analysis",
+  "skip": null,
+  "word": "document-analysis",
+  "pos": ["명사구"],
+  "ipa": "ˈdɑːkjumənt əˈnæləsɪs",
+  "meaning": "문서 분석(의) — 수집한 문서를 읽고 분석하는 단계·서브에이전트",
+  "short": "문서 분석(단계)",
+  "senses": [
+   { "pos": "명사구", "ko": "문서 분석(의)" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#26.1", "surface": "document-analysis", "pos": "명사구", "sense": "문서 분석(의)" },
+   { "sid": "mock04#31.1", "surface": "document-analysis", "pos": "명사구", "sense": "문서 분석(의)" },
+   { "sid": "mock04#27.1", "surface": "document-analysis", "pos": "명사구", "sense": "문서 분석(의)" },
+   { "sid": "mock04#32.1", "surface": "document-analysis", "pos": "명사구", "sense": "문서 분석(의)" }
+  ]
+ },
+ {
+  "lemma": "document-processing",
+  "skip": null,
+  "word": "document-processing",
+  "pos": ["명사구"],
+  "ipa": "ˈdɑːkjumənt ˌprɑːsesɪŋ",
+  "meaning": "문서 처리(의) — 문서를 읽고 추출·가공하는 작업",
+  "short": "문서 처리(용)",
+  "senses": [
+   { "pos": "명사구", "ko": "문서 처리(의)" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#17.0", "surface": "document-processing", "pos": "명사구", "sense": "문서 처리(의)" },
+   { "sid": "lesson-d2#19.0", "surface": "document-processing", "pos": "명사구", "sense": "문서 처리(의)" }
+  ]
+ },
+ {
+  "lemma": "document-type",
+  "skip": null,
+  "word": "document-type",
+  "pos": ["명사구"],
+  "ipa": "ˈdɑːkjumənt taɪp",
+  "meaning": "문서 유형 — 송장·영수증처럼 문서를 나눈 종류",
+  "short": "문서 유형",
+  "senses": [
+   { "pos": "명사구", "ko": "문서 유형" }
+  ],
+  "forms": ["document type", "document types"],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#29.0", "surface": "document types", "pos": "명사구", "sense": "문서 유형" },
+   { "sid": "mock04#56.5", "surface": "document-type", "pos": "명사구", "sense": "문서 유형" },
+   { "sid": "mock04#60.1", "surface": "document types", "pos": "명사구", "sense": "문서 유형" },
+   { "sid": "lesson-d5#29.5", "surface": "document type", "pos": "명사구", "sense": "문서 유형" }
+  ]
+ },
+ {
+  "lemma": "documentation",
+  "skip": null,
+  "word": "documentation",
+  "pos": ["명사"],
+  "ipa": "ˌdɑːkjumenˈteɪʃn",
+  "meaning": "① (공식) 문서, 설명서 ② 문서화, 기록 작업",
+  "short": "문서, 공식 설명서",
+  "senses": [
+   { "pos": "명사", "ko": "(공식) 문서, 설명서" },
+   { "pos": "명사", "ko": "문서화, 기록 작업" }
+  ],
+  "forms": [],
+  "synonyms": ["docs", "manual"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#24.1", "surface": "documentation", "pos": "명사", "sense": "(공식) 문서, 설명서" },
+   { "sid": "lesson-d1#13.0", "surface": "documentation", "pos": "명사", "sense": "(공식) 문서, 설명서" },
+   { "sid": "lesson-d4#17.2", "surface": "documentation", "pos": "명사", "sense": "(공식) 문서, 설명서" },
+   { "sid": "lesson-d1#12.0", "surface": "documentation", "pos": "명사", "sense": "(공식) 문서, 설명서" }
+  ]
+ },
+ {
+  "lemma": "domain",
+  "skip": null,
+  "word": "domain",
+  "pos": ["명사"],
+  "ipa": "doʊˈmeɪn",
+  "meaning": "① (지식의) 분야, 영역 ② (웹) 도메인 — 사이트 주소",
+  "short": "분야, 영역",
+  "senses": [
+   { "pos": "명사", "ko": "(지식의) 분야, 영역" },
+   { "pos": "명사", "ko": "(웹) 도메인, 사이트 주소" }
+  ],
+  "forms": ["domains"],
+  "synonyms": ["field", "area", "realm"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#37.7", "surface": "domain", "pos": "명사", "sense": "(지식의) 분야, 영역" },
+   { "sid": "vocab:domain.1", "surface": "domains", "pos": "명사", "sense": "(웹) 도메인, 사이트 주소" }
+  ]
+ },
+ {
+  "lemma": "domestic",
+  "skip": null,
+  "word": "domestic",
+  "pos": ["형용사"],
+  "ipa": "dəˈmestɪk",
+  "meaning": "국내의",
+  "short": "국내의",
+  "senses": [
+   { "pos": "형용사", "ko": "국내의" },
+   { "pos": "형용사", "ko": "가정의, 집안의" }
+  ],
+  "forms": ["domestically"],
+  "synonyms": ["national", "internal"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "dominate",
+  "skip": null,
+  "word": "dominate",
+  "pos": ["동사"],
+  "ipa": "ˈdɑːmɪneɪt",
+  "meaning": "대부분을 차지하다, 지배하다",
+  "short": "대부분을 차지하다",
+  "senses": [
+   { "pos": "동사", "ko": "대부분을 차지하다" },
+   { "pos": "동사", "ko": "지배하다, 장악하다" }
+  ],
+  "forms": ["dominates", "dominated", "dominating", "dominant"],
+  "synonyms": ["overwhelm", "control", "prevail"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#5.0", "surface": "dominate", "pos": "동사", "sense": "대부분을 차지하다" }
+  ]
+ },
+ {
+  "lemma": "dose",
+  "skip": null,
+  "word": "dose",
+  "pos": ["명사"],
+  "ipa": "doʊs",
+  "meaning": "(약의) 1회 투여량, 복용량 — dosage: 용량",
+  "short": "(약의) 복용량",
+  "senses": [
+   { "pos": "명사", "ko": "(약의) 1회 투여량, 복용량" },
+   { "pos": "동사", "ko": "(약을) 투여하다" }
+  ],
+  "forms": ["doses", "dosage"],
+  "synonyms": ["dosage", "amount"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#13.1", "surface": "doses", "pos": "명사", "sense": "(약의) 1회 투여량, 복용량" },
+   { "sid": "lesson-d4#13.3", "surface": "doses", "pos": "명사", "sense": "(약의) 1회 투여량, 복용량" },
+   { "sid": "lesson-d4#13.5", "surface": "dose", "pos": "명사", "sense": "(약의) 1회 투여량, 복용량" },
+   { "sid": "lesson-d4#13.6", "surface": "dose", "pos": "명사", "sense": "(약의) 1회 투여량, 복용량" }
+  ]
+ },
+ {
+  "lemma": "dot",
+  "skip": null,
+  "word": "dot",
+  "pos": ["명사"],
+  "ipa": "dɑːt",
+  "meaning": "① (기호) 점, 마침표 (.) ② (작은) 점, 반점",
+  "short": "점, 마침표 기호",
+  "senses": [
+   { "pos": "명사", "ko": "(기호) 점, 마침표 (.)" },
+   { "pos": "명사", "ko": "(작은) 점, 반점" }
+  ],
+  "forms": ["dots", "dotted"],
+  "synonyms": ["period", "point"],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#23.4", "surface": "dot", "pos": "명사", "sense": "(기호) 점, 마침표 (.)" }
+  ]
+ },
+ {
+  "lemma": "double",
+  "skip": null,
+  "word": "double",
+  "pos": ["동사", "형용사", "명사"],
+  "ipa": "ˈdʌbl",
+  "meaning": "① 두 배가 되다, 두 배로 늘리다 ② 두 배의, 이중의 ③ 두 배(의 수량)",
+  "short": "두 배가 되다",
+  "senses": [
+   { "pos": "동사", "ko": "두 배가 되다, 두 배로 늘리다" },
+   { "pos": "형용사", "ko": "두 배의, 이중의" },
+   { "pos": "명사", "ko": "두 배(의 수량)" }
+  ],
+  "forms": ["doubles", "doubled", "doubling"],
+  "synonyms": ["twofold"],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#10.0", "surface": "doubled", "pos": "동사", "sense": "두 배가 되다, 두 배로 늘리다" }
+  ]
+ },
+ {
+  "lemma": "downgrade",
+  "skip": null,
+  "word": "downgrade",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈdaʊnɡreɪd",
+  "meaning": "(등급·설정을) 낮추다 / 하향",
+  "short": "(등급·설정을) 낮추다",
+  "senses": [
+   { "pos": "동사", "ko": "(등급·설정을) 낮추다" },
+   { "pos": "명사", "ko": "하향, 다운그레이드" }
+  ],
+  "forms": ["downgrades", "downgraded", "downgrading"],
+  "synonyms": ["demote", "lower"],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "downstream",
+  "skip": null,
+  "word": "downstream",
+  "pos": ["형용사", "부사"],
+  "ipa": "ˌdaʊnˈstriːm",
+  "meaning": "(처리 흐름의) 뒤 단계의, 하위의 — 결과를 받아 쓰는 쪽",
+  "short": "뒤 단계의, 하위의",
+  "senses": [
+   { "pos": "형용사", "ko": "(처리 흐름의) 뒤 단계의, 하위의" },
+   { "pos": "부사", "ko": "(처리 흐름의) 뒤 단계에서" },
+   { "pos": "형용사", "ko": "(강의) 하류의" }
+  ],
+  "forms": [],
+  "synonyms": ["subsequent"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#55.2", "surface": "Downstream", "pos": "형용사", "sense": "(처리 흐름의) 뒤 단계의, 하위의" },
+   { "sid": "lesson-d5#34.2", "surface": "downstream", "pos": "부사", "sense": "(처리 흐름의) 뒤 단계에서" },
+   { "sid": "lesson-d4#18.5", "surface": "downstream", "pos": "형용사", "sense": "(처리 흐름의) 뒤 단계의, 하위의" },
+   { "sid": "lesson-d3#26.5", "surface": "downstream", "pos": "형용사", "sense": "(처리 흐름의) 뒤 단계의, 하위의" }
+  ]
+ },
+ {
+  "lemma": "dozen",
+  "skip": null,
+  "word": "dozen",
+  "pos": ["명사"],
+  "ipa": "ˈdʌzn",
+  "meaning": "12개 — dozens of: 수십 개의",
+  "short": "수십 개, 12개",
+  "senses": [
+   { "pos": "명사", "ko": "12개, 다스" },
+   { "pos": "명사", "ko": "(dozens of) 수십 개" }
+  ],
+  "forms": ["dozens"],
+  "synonyms": ["twelve"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#12.1", "surface": "dozens", "pos": "명사", "sense": "(dozens of) 수십 개" },
+   { "sid": "lesson-d5#5.0", "surface": "dozen", "pos": "명사", "sense": "12개, 다스" },
+   { "sid": "mock04#44.2", "surface": "dozens", "pos": "명사", "sense": "(dozens of) 수십 개" },
+   { "sid": "mock04#19.2", "surface": "dozens", "pos": "명사", "sense": "(dozens of) 수십 개" }
+  ]
+ },
+ {
+  "lemma": "draft",
+  "skip": null,
+  "word": "draft",
+  "pos": ["명사", "동사"],
+  "ipa": "dræft",
+  "meaning": "초안(을 쓰다)",
+  "short": "초안, 초안을 쓰다",
+  "senses": [
+   { "pos": "명사", "ko": "초안" },
+   { "pos": "동사", "ko": "초안을 쓰다, 작성하다" }
+  ],
+  "forms": ["drafts", "drafted", "drafting"],
+  "synonyms": ["outline", "compose"],
+  "domain": "생성·추가",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#6.5", "surface": "draft", "pos": "명사", "sense": "초안" },
+   { "sid": "lesson-d4#31.4", "surface": "drafts", "pos": "동사", "sense": "초안을 쓰다, 작성하다" },
+   { "sid": "lesson-d1#37.6", "surface": "drafting", "pos": "동사", "sense": "초안을 쓰다, 작성하다" },
+   { "sid": "lesson-d3#21.3", "surface": "drafts", "pos": "동사", "sense": "초안을 쓰다, 작성하다" }
+  ]
+ },
+ {
+  "lemma": "draw",
+  "skip": null,
+  "word": "draw",
+  "pos": ["동사"],
+  "ipa": "drɔː",
+  "meaning": "① (반응·관심을) 끌어내다, 받다 ② (결론을) 끌어내다",
+  "short": "활용하다, 끌어내다",
+  "senses": [
+   { "pos": "동사구", "ko": "(draw on) ~을 활용하다, 참고하다" },
+   { "pos": "동사", "ko": "(반응·관심을) 끌어내다, 받다" },
+   { "pos": "동사", "ko": "(결론을) 끌어내다" },
+   { "pos": "동사", "ko": "(그림을) 그리다" }
+  ],
+  "forms": ["draws", "drew", "drawn", "drawing"],
+  "synonyms": ["elicit", "attract", "rely on"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#37.3", "surface": "draw", "pos": "동사구", "sense": "(draw on) ~을 활용하다, 참고하다" },
+   { "sid": "mock04#50.7", "surface": "draw", "pos": "동사", "sense": "(반응·관심을) 끌어내다, 받다" },
+   { "sid": "lesson-d5#21.6", "surface": "draw", "pos": "동사구", "sense": "(draw on) ~을 활용하다, 참고하다" }
+  ]
+ },
+ {
+  "lemma": "drift",
+  "skip": null,
+  "word": "drift",
+  "pos": ["명사", "동사"],
+  "ipa": "drɪft",
+  "meaning": "(조금씩) 어긋나다, 표류하다 — model drift: 시간이 지나며 모델 동작이 달라지는 것",
+  "short": "점진적 변화, 어긋남",
+  "senses": [
+   { "pos": "명사", "ko": "(시간에 따른) 점진적 변화, 어긋남" },
+   { "pos": "동사", "ko": "(조금씩) 어긋나다, 표류하다" }
+  ],
+  "forms": ["drifts", "drifted", "drifting"],
+  "synonyms": ["shift", "deviation"],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#12.7", "surface": "drift", "pos": "명사", "sense": "(시간에 따른) 점진적 변화, 어긋남" }
+  ]
+ },
+ {
+  "lemma": "drive",
+  "skip": null,
+  "word": "drive",
+  "pos": ["동사"],
+  "ipa": "draɪv",
+  "meaning": "(루프·과정을) 구동하다, 이끌다 — ~-driven: ~에 따라 움직이는",
+  "short": "구동하다, 이끌다",
+  "senses": [
+   { "pos": "동사", "ko": "(루프·과정을) 구동하다, 이끌다" },
+   { "pos": "형용사", "ko": "(~-driven) ~에 따라 움직이는" },
+   { "pos": "동사", "ko": "운전하다" }
+  ],
+  "forms": ["drives", "drove", "driven", "driving", "driver"],
+  "synonyms": ["run", "steer", "power"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#1.4", "surface": "drive", "pos": "동사", "sense": "(루프·과정을) 구동하다, 이끌다" },
+   { "sid": "mock04#29.3", "surface": "driven", "pos": "동사", "sense": "(루프·과정을) 구동하다, 이끌다" }
+  ]
+ },
+ {
+  "lemma": "driver",
+  "skip": null,
+  "word": "driver",
+  "pos": ["명사"],
+  "ipa": "ˈdraɪvər",
+  "meaning": "① (소프트웨어) 드라이버 — 장치·DB 연결을 맡는 프로그램 ② 운전자 ③ 원동력, 주요 요인",
+  "short": "(소프트웨어) 드라이버",
+  "senses": [
+   { "pos": "명사", "ko": "(소프트웨어) 드라이버" },
+   { "pos": "명사", "ko": "운전자, 기사" },
+   { "pos": "명사", "ko": "원동력, 주요 요인" }
+  ],
+  "forms": ["drivers"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#16.4", "surface": "driver", "pos": "명사", "sense": "(소프트웨어) 드라이버" }
+  ]
+ },
+ {
+  "lemma": "due",
+  "skip": null,
+  "word": "due",
+  "pos": ["전치사구", "형용사"],
+  "ipa": "duː",
+  "meaning": "① (due to) ~ 때문에 ② (기한이) ~까지인, 예정된 ③ 마땅한, 적절한",
+  "short": "~ 때문에",
+  "senses": [
+   { "pos": "전치사구", "ko": "(due to) ~ 때문에" },
+   { "pos": "형용사", "ko": "(기한이) ~까지인, 예정된" },
+   { "pos": "형용사", "ko": "마땅한, 적절한" }
+  ],
+  "forms": ["overdue", "duly"],
+  "synonyms": ["because of", "owing to"],
+  "domain": "원인·결과·영향",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#24.2", "surface": "due", "pos": "전치사구", "sense": "(due to) ~ 때문에" }
+  ]
+ },
+ {
+  "lemma": "due diligence",
+  "skip": null,
+  "word": "due diligence",
+  "pos": ["명사구"],
+  "ipa": "ˌduː ˈdɪlɪdʒəns",
+  "meaning": "실사 — 거래·투자 전에 상대 회사를 꼼꼼히 조사하는 일",
+  "short": "실사(거래 전 조사)",
+  "senses": [
+   { "pos": "명사구", "ko": "실사 (거래 전 꼼꼼한 조사)" },
+   { "pos": "명사구", "ko": "(마땅히 기울여야 할) 주의 의무" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "dummy",
+  "skip": null,
+  "word": "dummy",
+  "pos": ["명사", "형용사"],
+  "ipa": "ˈdʌmi",
+  "meaning": "더미, 가짜의 — 형식을 맞추려고 넣는 의미 없는 값",
+  "short": "더미, 가짜의",
+  "senses": [
+   { "pos": "명사", "ko": "더미, 가짜 (값·객체)" },
+   { "pos": "형용사", "ko": "가짜의, 형식상의" },
+   { "pos": "명사", "ko": "(마네킹 같은) 인체 모형" }
+  ],
+  "forms": ["dummies"],
+  "synonyms": ["fake", "placeholder", "mock"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "dump",
+  "skip": null,
+  "word": "dump",
+  "pos": ["동사", "명사"],
+  "ipa": "dʌmp",
+  "meaning": "(대량 출력을) 한꺼번에 쏟아 내다 / 덤프(통째로 뽑아낸 출력)",
+  "short": "한꺼번에 쏟아 내다",
+  "senses": [
+   { "pos": "동사", "ko": "(대량 출력을) 한꺼번에 쏟아 내다" },
+   { "pos": "명사", "ko": "덤프 (통째로 뽑아낸 출력)" },
+   { "pos": "동사", "ko": "(쓰레기 등을) 내다 버리다" }
+  ],
+  "forms": ["dumps", "dumped", "dumping"],
+  "synonyms": ["unload", "spill"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#21.1", "surface": "dumps", "pos": "동사", "sense": "(대량 출력을) 한꺼번에 쏟아 내다" },
+   { "sid": "mock04#13.1", "surface": "dumping", "pos": "동사", "sense": "(대량 출력을) 한꺼번에 쏟아 내다" }
+  ]
+ },
+ {
+  "lemma": "dunning",
+  "skip": null,
+  "word": "dunning",
+  "pos": ["명사"],
+  "ipa": "ˈdʌnɪŋ",
+  "meaning": "(연체 대금) 독촉 — 미납 고객에게 결제를 재촉하는 청구 업무",
+  "short": "(연체 대금) 독촉",
+  "senses": [
+   { "pos": "명사", "ko": "(연체 대금) 독촉" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#37.3", "surface": "dunning", "pos": "명사", "sense": "(연체 대금) 독촉" }
+  ]
+ },
+ {
+  "lemma": "duplicate",
+  "skip": null,
+  "word": "duplicate",
+  "pos": ["형용사", "명사", "동사"],
+  "ipa": "ˈduːplɪkət",
+  "meaning": "중복된 (것) / (이미 있는 것과) 중복되다, 되풀이하다",
+  "short": "중복된, 중복되다",
+  "senses": [
+   { "pos": "형용사", "ko": "중복된" },
+   { "pos": "동사", "ko": "(이미 있는 것과) 중복되다, 되풀이하다" },
+   { "pos": "동사", "ko": "복제하다, 사본을 만들다" },
+   { "pos": "명사", "ko": "중복된 것, 사본" }
+  ],
+  "forms": ["duplicates", "duplicated", "duplicating", "duplication"],
+  "synonyms": ["copy", "repeat", "redundant"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#5.2", "surface": "duplicate", "pos": "형용사", "sense": "중복된" },
+   { "sid": "lesson-d4#12.5", "surface": "duplicate", "pos": "동사", "sense": "복제하다, 사본을 만들다" },
+   { "sid": "mock04#10.6", "surface": "duplicate", "pos": "형용사", "sense": "중복된" },
+   { "sid": "lesson-d3#25.3", "surface": "duplicate", "pos": "형용사", "sense": "중복된" }
+  ]
+ },
+ {
+  "lemma": "duration",
+  "skip": null,
+  "word": "duration",
+  "pos": ["명사"],
+  "ipa": "duˈreɪʃn",
+  "meaning": "(지속) 기간, 지속 시간 — for the duration of: ~하는 동안 내내",
+  "short": "지속 기간",
+  "senses": [
+   { "pos": "명사", "ko": "(지속) 기간, 지속 시간" }
+  ],
+  "forms": ["durations"],
+  "synonyms": ["length", "period", "span"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#12.5", "surface": "duration", "pos": "명사", "sense": "(지속) 기간, 지속 시간" }
+  ]
+ },
+ {
+  "lemma": "during",
+  "skip": null,
+  "word": "during",
+  "pos": ["전치사"],
+  "ipa": "ˈdʊrɪŋ",
+  "meaning": "~ 동안, ~ 중에",
+  "short": "~ 동안, ~ 중에",
+  "senses": [
+   { "pos": "전치사", "ko": "~ 동안, ~ 중에" }
+  ],
+  "forms": [],
+  "synonyms": ["throughout", "in the course of"],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#35.1", "surface": "during", "pos": "전치사", "sense": "~ 동안, ~ 중에" },
+   { "sid": "lesson-d1#25.1", "surface": "During", "pos": "전치사", "sense": "~ 동안, ~ 중에" },
+   { "sid": "mock04#18.1", "surface": "During", "pos": "전치사", "sense": "~ 동안, ~ 중에" },
+   { "sid": "sample01#4.1", "surface": "During", "pos": "전치사", "sense": "~ 동안, ~ 중에" }
+  ]
+ },
+ {
+  "lemma": "dynamic",
+  "skip": null,
+  "word": "dynamic",
+  "pos": ["형용사"],
+  "ipa": "daɪˈnæmɪk",
+  "meaning": "동적인 — 미리 고정하지 않고 실행 중 상황에 맞춰 정하는",
+  "short": "동적인",
+  "senses": [
+   { "pos": "형용사", "ko": "동적인 (실행 중 상황에 맞춰 정하는)" },
+   { "pos": "부사", "ko": "(dynamically) 동적으로, 상황에 따라" },
+   { "pos": "형용사", "ko": "활동적인, 역동적인" }
+  ],
+  "forms": ["dynamically", "dynamics"],
+  "synonyms": ["adaptive"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#25.4", "surface": "dynamic", "pos": "형용사", "sense": "동적인 (실행 중 상황에 맞춰 정하는)" },
+   { "sid": "lesson-d1#8.3", "surface": "dynamically", "pos": "부사", "sense": "(dynamically) 동적으로, 상황에 따라" },
+   { "sid": "mock04#37.5", "surface": "dynamically", "pos": "부사", "sense": "(dynamically) 동적으로, 상황에 따라" }
+  ]
+ },
+ {
+  "lemma": "easy",
+  "skip": null,
+  "word": "easy",
+  "pos": ["형용사"],
+  "ipa": "ˈiːzi",
+  "meaning": "① 쉬운, 수월한 ② 편안한, 느긋한",
+  "short": "쉬운, 수월한",
+  "senses": [
+   { "pos": "형용사", "ko": "쉬운, 수월한" },
+   { "pos": "형용사", "ko": "편안한, 느긋한" }
+  ],
+  "forms": ["easier", "easiest", "easily"],
+  "synonyms": ["simple", "straightforward"],
+  "domain": "상태·성질",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#25.6", "surface": "easier", "pos": "형용사", "sense": "쉬운, 수월한" },
+   { "sid": "mock04#40.6", "surface": "easy", "pos": "형용사", "sense": "쉬운, 수월한" },
+   { "sid": "lesson-d4#29.3", "surface": "easier", "pos": "형용사", "sense": "쉬운, 수월한" }
+  ]
+ },
+ {
+  "lemma": "edge",
+  "skip": null,
+  "word": "edge",
+  "pos": ["명사"],
+  "ipa": "edʒ",
+  "meaning": "가장자리, 끝",
+  "short": "가장자리, 끝",
+  "senses": [
+   { "pos": "명사", "ko": "가장자리, 끝" },
+   { "pos": "명사", "ko": "우위, 강점" }
+  ],
+  "forms": ["edges"],
+  "synonyms": ["border", "boundary", "margin"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#58.1", "surface": "edge", "pos": "명사", "sense": "가장자리, 끝" }
+  ]
+ },
+ {
+  "lemma": "edge case",
+  "skip": null,
+  "word": "edge case",
+  "pos": ["명사구"],
+  "ipa": "ˈedʒ keɪs",
+  "meaning": "엣지 케이스 — 드물게 생기는 경계·예외 상황",
+  "short": "엣지 케이스(예외 상황)",
+  "senses": [
+   { "pos": "명사구", "ko": "엣지 케이스 (드문 경계·예외 상황)" }
+  ],
+  "forms": ["edge cases"],
+  "synonyms": ["corner case"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#24.2", "surface": "edge case", "pos": "명사구", "sense": "엣지 케이스 (드문 경계·예외 상황)" },
+   { "sid": "lesson-d4#10.0", "surface": "edge case", "pos": "명사구", "sense": "엣지 케이스 (드문 경계·예외 상황)" }
+  ]
+ },
+ {
+  "lemma": "edit",
+  "skip": null,
+  "word": "edit",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈedɪt",
+  "meaning": "① (파일·글을) 편집하다, 수정하다 ② 편집, 수정 (사항)",
+  "short": "편집하다, 수정하다",
+  "senses": [
+   { "pos": "동사", "ko": "(파일·글을) 편집하다, 수정하다" },
+   { "pos": "명사", "ko": "편집, 수정 (사항)" }
+  ],
+  "forms": ["edits", "edited", "editing", "editor"],
+  "synonyms": ["modify", "revise", "change"],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#1.1", "surface": "edited", "pos": "동사", "sense": "(파일·글을) 편집하다, 수정하다" },
+   { "sid": "lesson-d5#23.4", "surface": "edit", "pos": "명사", "sense": "편집, 수정 (사항)" },
+   { "sid": "sample01#11.0", "surface": "edits", "pos": "동사", "sense": "(파일·글을) 편집하다, 수정하다" },
+   { "sid": "mock04#14.2", "surface": "edit", "pos": "동사", "sense": "(파일·글을) 편집하다, 수정하다" }
+  ]
+ },
+ {
+  "lemma": "editor",
+  "skip": null,
+  "word": "editor",
+  "pos": ["명사"],
+  "ipa": "ˈedɪtər",
+  "meaning": "① (소프트웨어) 편집기, 에디터 ② 편집자",
+  "short": "편집기, 에디터",
+  "senses": [
+   { "pos": "명사", "ko": "(소프트웨어) 편집기, 에디터" },
+   { "pos": "명사", "ko": "편집자" }
+  ],
+  "forms": ["editors"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#23.0", "surface": "editor", "pos": "명사", "sense": "(소프트웨어) 편집기, 에디터" },
+   { "sid": "lesson-d3#23.3", "surface": "editor", "pos": "명사", "sense": "(소프트웨어) 편집기, 에디터" }
+  ]
+ },
+ {
+  "lemma": "effect",
+  "skip": null,
+  "word": "effect",
+  "pos": ["명사"],
+  "ipa": "ɪˈfekt",
+  "meaning": "효과, 영향, (어떤 원인이 낳는) 현상",
+  "short": "효과, 영향",
+  "senses": [
+   { "pos": "명사", "ko": "효과, 영향" },
+   { "pos": "명사", "ko": "(어떤 원인이 낳는) 현상" },
+   { "pos": "동사", "ko": "(변화를) 일으키다, 가져오다" }
+  ],
+  "forms": ["effects", "effective"],
+  "synonyms": ["impact", "influence", "result"],
+  "domain": "원인·결과·영향",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#4.2", "surface": "effect", "pos": "명사", "sense": "효과, 영향" },
+   { "sid": "mock04#44.3", "surface": "effects", "pos": "명사", "sense": "(어떤 원인이 낳는) 현상" }
+  ]
+ },
+ {
+  "lemma": "effective",
+  "skip": null,
+  "word": "effective",
+  "pos": ["형용사"],
+  "ipa": "ɪˈfektɪv",
+  "meaning": "① 효과적인 ② 실질적인, 실제로 작동하는",
+  "short": "효과적인",
+  "senses": [
+   { "pos": "형용사", "ko": "효과적인" },
+   { "pos": "형용사", "ko": "실질적인, 실제로 작동하는" },
+   { "pos": "형용사", "ko": "(규정이) 시행되는, 유효한" }
+  ],
+  "forms": ["effectively", "effectiveness"],
+  "synonyms": ["efficacious", "productive"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#11.3", "surface": "effective", "pos": "형용사", "sense": "효과적인" },
+   { "sid": "sample01#16.7", "surface": "effective", "pos": "형용사", "sense": "실질적인, 실제로 작동하는" },
+   { "sid": "lesson-d4#8.1", "surface": "effective", "pos": "형용사", "sense": "효과적인" },
+   { "sid": "lesson-d3#24.2", "surface": "effective", "pos": "형용사", "sense": "효과적인" }
+  ]
+ },
+ {
+  "lemma": "efficiently",
+  "skip": null,
+  "word": "efficiently",
+  "pos": ["부사"],
+  "ipa": "ɪˈfɪʃntli",
+  "meaning": "효율적으로 — 시간·자원을 낭비하지 않고",
+  "short": "효율적으로",
+  "senses": [
+   { "pos": "부사", "ko": "효율적으로" }
+  ],
+  "forms": ["efficient", "efficiency"],
+  "synonyms": ["economically"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#31.1", "surface": "efficiently", "pos": "부사", "sense": "효율적으로" },
+   { "sid": "lesson-d3#15.1", "surface": "efficiently", "pos": "부사", "sense": "효율적으로" }
+  ]
+ }
+]

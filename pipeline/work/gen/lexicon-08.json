@@ -1,0 +1,973 @@
+[
+ {
+  "lemma": "coherent",
+  "skip": null,
+  "word": "coherent",
+  "pos": ["형용사"],
+  "ipa": "koʊˈhɪrənt",
+  "meaning": "일관된, 앞뒤가 맞게 하나로 이어지는",
+  "short": "일관된, 앞뒤가 맞는",
+  "senses": [
+   { "pos": "형용사", "ko": "일관된, 앞뒤가 맞는" },
+   { "pos": "형용사", "ko": "(말·글이) 조리 있는, 이해하기 쉬운" }
+  ],
+  "forms": ["coherence", "coherently", "incoherent"],
+  "synonyms": ["consistent", "logical"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#20.1", "surface": "coherent", "pos": "형용사", "sense": "일관된, 앞뒤가 맞는" }
+  ]
+ },
+ {
+  "lemma": "collaborate",
+  "skip": null,
+  "word": "collaborate",
+  "pos": ["동사"],
+  "ipa": "kəˈlæbəreɪt",
+  "meaning": "협업하다, 함께 작업하다",
+  "short": "협업하다, 함께 작업하다",
+  "senses": [
+   { "pos": "동사", "ko": "협업하다, 함께 작업하다" },
+   { "pos": "형용사", "ko": "(collaborative) 협업하는, 공동 작업의" }
+  ],
+  "forms": ["collaborates", "collaborated", "collaborating", "collaboration", "collaborative", "collaboratively"],
+  "synonyms": ["cooperate", "work together"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#23.0", "surface": "collaborative", "pos": "형용사", "sense": "(collaborative) 협업하는, 공동 작업의" }
+  ]
+ },
+ {
+  "lemma": "colleague",
+  "skip": null,
+  "word": "colleague",
+  "pos": ["명사"],
+  "ipa": "ˈkɑːliːɡ",
+  "meaning": "(직장) 동료",
+  "short": "동료",
+  "senses": [
+   { "pos": "명사", "ko": "(직장) 동료" }
+  ],
+  "forms": ["colleagues"],
+  "synonyms": ["coworker", "teammate"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#25.1", "surface": "colleague", "pos": "명사", "sense": "(직장) 동료" },
+   { "sid": "lesson-d1#25.3", "surface": "colleague", "pos": "명사", "sense": "(직장) 동료" }
+  ]
+ },
+ {
+  "lemma": "collect",
+  "skip": null,
+  "word": "collect",
+  "pos": ["동사"],
+  "ipa": "kəˈlekt",
+  "meaning": "① 모으다, 수집하다 ② (돈·요금을) 걷다, 징수하다",
+  "short": "모으다, 수집하다",
+  "senses": [
+   { "pos": "동사", "ko": "모으다, 수집하다" },
+   { "pos": "동사", "ko": "(돈·요금을) 걷다, 징수하다" }
+  ],
+  "forms": ["collects", "collected", "collecting", "collection"],
+  "synonyms": ["gather", "compile"],
+  "domain": "데이터·정보·문서",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#36.3", "surface": "collects", "pos": "동사", "sense": "모으다, 수집하다" },
+   { "sid": "lesson-d4#5.5", "surface": "collect", "pos": "동사", "sense": "모으다, 수집하다" },
+   { "sid": "lesson-d5#29.4", "surface": "Collect", "pos": "동사", "sense": "모으다, 수집하다" },
+   { "sid": "lesson-d1#37.6", "surface": "collecting", "pos": "동사", "sense": "모으다, 수집하다" }
+  ]
+ },
+ {
+  "lemma": "collection",
+  "skip": null,
+  "word": "collection",
+  "pos": ["명사"],
+  "ipa": "kəˈlekʃn",
+  "meaning": "① 수집, 모으기 ② 모음, 컬렉션 (모아 놓은 것)",
+  "short": "수집, 모음",
+  "senses": [
+   { "pos": "명사", "ko": "수집, 모으기" },
+   { "pos": "명사", "ko": "모음, 집합, 컬렉션" }
+  ],
+  "forms": ["collections"],
+  "synonyms": ["gathering", "set"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#39.5", "surface": "collection", "pos": "명사", "sense": "수집, 모으기" }
+  ]
+ },
+ {
+  "lemma": "colon",
+  "skip": null,
+  "word": "colon",
+  "pos": ["명사"],
+  "ipa": "ˈkoʊlən",
+  "meaning": "콜론, 쌍점 (문장부호 :)",
+  "short": "콜론, 쌍점",
+  "senses": [
+   { "pos": "명사", "ko": "콜론, 쌍점 (:)" }
+  ],
+  "forms": ["colons"],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#29.3", "surface": "colon", "pos": "명사", "sense": "콜론, 쌍점 (:)" }
+  ]
+ },
+ {
+  "lemma": "column",
+  "skip": null,
+  "word": "column",
+  "pos": ["명사"],
+  "ipa": "ˈkɑːləm",
+  "meaning": "① (표·데이터의) 열, 칼럼 ② (신문의) 칼럼, 기고란 ③ 기둥",
+  "short": "(표의) 열",
+  "senses": [
+   { "pos": "명사", "ko": "(표·데이터의) 열" },
+   { "pos": "명사", "ko": "(신문) 칼럼, 기고란" },
+   { "pos": "명사", "ko": "기둥" }
+  ],
+  "forms": ["columns"],
+  "synonyms": ["field"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#25.0", "surface": "column", "pos": "명사", "sense": "(표·데이터의) 열" }
+  ]
+ },
+ {
+  "lemma": "combine",
+  "skip": null,
+  "word": "combine",
+  "pos": ["동사"],
+  "ipa": "kəmˈbaɪn",
+  "meaning": "결합하다, 합치다",
+  "short": "결합하다, 합치다",
+  "senses": [
+   { "pos": "동사", "ko": "결합하다, 합치다" },
+   { "pos": "동사", "ko": "(정보를) 종합하다" },
+   { "pos": "동사", "ko": "(~와) 함께 쓰다, 병행하다" },
+   { "pos": "명사", "ko": "(combination) 조합, 결합" }
+  ],
+  "forms": ["combines", "combined", "combining", "combination"],
+  "synonyms": ["merge", "join", "unite"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#23.4", "surface": "combined", "pos": "동사", "sense": "결합하다, 합치다" },
+   { "sid": "mock04#30.2", "surface": "combining", "pos": "동사", "sense": "(정보를) 종합하다" },
+   { "sid": "lesson-d1#42.3", "surface": "Combining", "pos": "동사", "sense": "(~와) 함께 쓰다, 병행하다" },
+   { "sid": "lesson-d2#18.3", "surface": "combination", "pos": "명사", "sense": "(combination) 조합, 결합" }
+  ]
+ },
+ {
+  "lemma": "come",
+  "skip": null,
+  "word": "come",
+  "pos": ["동사"],
+  "ipa": "kʌm",
+  "meaning": "① 오다 ② (come from) ~에서 나오다, 비롯되다 ③ (come to) (합계가) ~에 이르다 ④ (결과가) ~하게 나오다, 돌아오다",
+  "short": "오다, 나오다",
+  "senses": [
+   { "pos": "동사", "ko": "오다" },
+   { "pos": "동사", "ko": "(come from) ~에서 나오다, 비롯되다" },
+   { "pos": "동사", "ko": "(come to) (합계가) ~에 이르다" },
+   { "pos": "동사", "ko": "(결과가) ~하게 나오다, 돌아오다" }
+  ],
+  "forms": ["comes", "came", "coming"],
+  "synonyms": ["arrive", "originate"],
+  "domain": "이동·전달",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#10.1", "surface": "came", "pos": "동사", "sense": "(come from) ~에서 나오다, 비롯되다" },
+   { "sid": "lesson-d4#27.1", "surface": "comes", "pos": "동사", "sense": "(come to) (합계가) ~에 이르다" },
+   { "sid": "lesson-d1#14.1", "surface": "comes", "pos": "동사", "sense": "(결과가) ~하게 나오다, 돌아오다" },
+   { "sid": "lesson-d2#3.3", "surface": "comes", "pos": "동사", "sense": "오다" }
+  ]
+ },
+ {
+  "lemma": "come up",
+  "skip": null,
+  "word": "come up",
+  "pos": ["동사구"],
+  "ipa": "ˌkʌm ˈʌp",
+  "meaning": "(화제·문제가) 나오다, 생기다",
+  "short": "(화제가) 나오다, 생기다",
+  "senses": [
+   { "pos": "동사구", "ko": "(화제·문제가) 나오다, 생기다" },
+   { "pos": "동사구", "ko": "(일정이) 다가오다" }
+  ],
+  "forms": ["comes up", "came up", "coming up"],
+  "synonyms": ["arise", "emerge", "crop up"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#23.0", "surface": "come up", "pos": "동사구", "sense": "(화제·문제가) 나오다, 생기다" },
+   { "sid": "lesson-d3#11.5", "surface": "comes up", "pos": "동사구", "sense": "(화제·문제가) 나오다, 생기다" },
+   { "sid": "mock04#13.1", "surface": "come up", "pos": "동사구", "sense": "(화제·문제가) 나오다, 생기다" }
+  ]
+ },
+ {
+  "lemma": "comfortably",
+  "skip": null,
+  "word": "comfortably",
+  "pos": ["부사"],
+  "ipa": "ˈkʌmftərbli",
+  "meaning": "넉넉히, 여유 있게",
+  "short": "넉넉히, 여유 있게",
+  "senses": [
+   { "pos": "부사", "ko": "넉넉히, 여유 있게" },
+   { "pos": "부사", "ko": "편안하게" }
+  ],
+  "forms": [],
+  "synonyms": ["easily", "amply"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#21.5", "surface": "comfortably", "pos": "부사", "sense": "넉넉히, 여유 있게" },
+   { "sid": "mock04#36.4", "surface": "comfortably", "pos": "부사", "sense": "넉넉히, 여유 있게" }
+  ]
+ },
+ {
+  "lemma": "comma",
+  "skip": null,
+  "word": "comma",
+  "pos": ["명사"],
+  "ipa": "ˈkɑːmə",
+  "meaning": "쉼표, 콤마 (문장부호 ,)",
+  "short": "쉼표, 콤마",
+  "senses": [
+   { "pos": "명사", "ko": "쉼표, 콤마" }
+  ],
+  "forms": ["commas"],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#28.1", "surface": "commas", "pos": "명사", "sense": "쉼표, 콤마" },
+   { "sid": "lesson-d3#28.6", "surface": "comma", "pos": "명사", "sense": "쉼표, 콤마" },
+   { "sid": "lesson-d3#25.2", "surface": "comma", "pos": "명사", "sense": "쉼표, 콤마" }
+  ]
+ },
+ {
+  "lemma": "command",
+  "skip": null,
+  "word": "command",
+  "pos": ["명사"],
+  "ipa": "kəˈmænd",
+  "meaning": "명령(어), 커맨드 — 셸 명령이나 슬래시 커맨드",
+  "short": "명령어, 커맨드",
+  "senses": [
+   { "pos": "명사", "ko": "(컴퓨터) 명령어, 커맨드" },
+   { "pos": "명사", "ko": "명령, 지시" },
+   { "pos": "명사", "ko": "지휘, 통제" }
+  ],
+  "forms": ["commands"],
+  "synonyms": ["instruction", "directive"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#19.0", "surface": "commands", "pos": "명사", "sense": "(컴퓨터) 명령어, 커맨드" },
+   { "sid": "sample01#12.0", "surface": "commands", "pos": "명사", "sense": "(컴퓨터) 명령어, 커맨드" },
+   { "sid": "lesson-d3#7.1", "surface": "command", "pos": "명사", "sense": "(컴퓨터) 명령어, 커맨드" },
+   { "sid": "mock04#15.3", "surface": "command", "pos": "명사", "sense": "(컴퓨터) 명령어, 커맨드" }
+  ]
+ },
+ {
+  "lemma": "comment",
+  "skip": null,
+  "word": "comment",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈkɑːment",
+  "meaning": "① (리뷰) 의견, 코멘트 ② (코드의) 주석 ③ 의견을 달다, 논평하다",
+  "short": "코멘트, 주석",
+  "senses": [
+   { "pos": "명사", "ko": "(리뷰) 의견, 코멘트" },
+   { "pos": "명사", "ko": "(코드의) 주석" },
+   { "pos": "동사", "ko": "의견을 달다, 논평하다" }
+  ],
+  "forms": ["comments", "commented", "commenting"],
+  "synonyms": ["remark", "note", "annotation"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#50.1", "surface": "comments", "pos": "명사", "sense": "(리뷰) 의견, 코멘트" },
+   { "sid": "lesson-d4#3.1", "surface": "comments", "pos": "명사", "sense": "(코드의) 주석" },
+   { "sid": "lesson-d1#12.0", "surface": "comment", "pos": "동사", "sense": "의견을 달다, 논평하다" },
+   { "sid": "lesson-d3#33.0", "surface": "comments", "pos": "명사", "sense": "(리뷰) 의견, 코멘트" }
+  ]
+ },
+ {
+  "lemma": "commentary",
+  "skip": null,
+  "word": "commentary",
+  "pos": ["명사"],
+  "ipa": "ˈkɑːmənteri",
+  "meaning": "(덧붙이는) 설명, 논평",
+  "short": "덧붙이는 설명, 논평",
+  "senses": [
+   { "pos": "명사", "ko": "(덧붙이는) 설명, 논평" },
+   { "pos": "명사", "ko": "(경기) 실황 해설" }
+  ],
+  "forms": [],
+  "synonyms": ["remarks", "explanation"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#17.2", "surface": "commentary", "pos": "명사", "sense": "(덧붙이는) 설명, 논평" },
+   { "sid": "mock04#53.5", "surface": "commentary", "pos": "명사", "sense": "(덧붙이는) 설명, 논평" },
+   { "sid": "lesson-d4#17.4", "surface": "commentary", "pos": "명사", "sense": "(덧붙이는) 설명, 논평" }
+  ]
+ },
+ {
+  "lemma": "commit",
+  "skip": null,
+  "word": "commit",
+  "pos": ["동사"],
+  "ipa": "kəˈmɪt",
+  "meaning": "① (git) 커밋하다 ② (~로) 확정하다, 전념하다",
+  "short": "커밋하다, 확정하다",
+  "senses": [
+   { "pos": "동사", "ko": "(git) 커밋하다" },
+   { "pos": "명사", "ko": "(git) 커밋, 변경 기록" },
+   { "pos": "동사", "ko": "(~로) 확정하다, 전념하다" },
+   { "pos": "동사", "ko": "(잘못을) 저지르다" }
+  ],
+  "forms": ["commits", "committed", "committing", "commitment"],
+  "synonyms": ["check in", "pledge"],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#18.1", "surface": "commit", "pos": "동사", "sense": "(git) 커밋하다" },
+   { "sid": "lesson-d3#7.1", "surface": "commit", "pos": "명사", "sense": "(git) 커밋, 변경 기록" },
+   { "sid": "vocab:commit.1", "surface": "committing", "pos": "동사", "sense": "(~로) 확정하다, 전념하다" },
+   { "sid": "lesson-d2#20.1", "surface": "committing", "pos": "동사", "sense": "(git) 커밋하다" }
+  ]
+ },
+ {
+  "lemma": "common",
+  "skip": null,
+  "word": "common",
+  "pos": ["형용사"],
+  "ipa": "ˈkɑːmən",
+  "meaning": "① 흔한, 일반적인 ② 공통의, 공동의",
+  "short": "흔한, 일반적인",
+  "senses": [
+   { "pos": "형용사", "ko": "흔한, 일반적인" },
+   { "pos": "형용사", "ko": "공통의, 공동의" }
+  ],
+  "forms": ["commonly"],
+  "synonyms": ["usual", "typical", "widespread"],
+  "domain": "상태·성질",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#23.5", "surface": "common", "pos": "형용사", "sense": "흔한, 일반적인" },
+   { "sid": "lesson-d4#4.3", "surface": "common", "pos": "형용사", "sense": "흔한, 일반적인" },
+   { "sid": "lesson-d5#31.7", "surface": "common", "pos": "형용사", "sense": "흔한, 일반적인" }
+  ]
+ },
+ {
+  "lemma": "compact",
+  "skip": null,
+  "word": "compact",
+  "pos": ["동사", "형용사"],
+  "ipa": "kəmˈpækt",
+  "meaning": "① 압축하다 — 대화 기록을 요약해 줄이다 ② 간결한",
+  "short": "압축하다, 간결한",
+  "senses": [
+   { "pos": "동사", "ko": "(대화 기록을) 압축하다, 요약해 줄이다" },
+   { "pos": "형용사", "ko": "간결한, 작게 압축된" },
+   { "pos": "명사", "ko": "(compaction) 압축, 컨텍스트 요약" }
+  ],
+  "forms": ["compacts", "compacted", "compacting", "compaction"],
+  "synonyms": ["condense", "compress"],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#24.6", "surface": "compact", "pos": "동사", "sense": "(대화 기록을) 압축하다, 요약해 줄이다" },
+   { "sid": "mock04#9.1", "surface": "compact", "pos": "형용사", "sense": "간결한, 작게 압축된" },
+   { "sid": "vocab:compact.0", "surface": "compaction", "pos": "명사", "sense": "(compaction) 압축, 컨텍스트 요약" }
+  ]
+ },
+ {
+  "lemma": "company",
+  "skip": null,
+  "word": "company",
+  "pos": ["명사"],
+  "ipa": "ˈkʌmpəni",
+  "meaning": "① 회사 ② 함께 있음, 동행",
+  "short": "회사",
+  "senses": [
+   { "pos": "명사", "ko": "회사" },
+   { "pos": "명사", "ko": "함께 있음, 동행" }
+  ],
+  "forms": ["companies"],
+  "synonyms": ["firm", "business", "corporation"],
+  "domain": "사람·조직·역할",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#8.1", "surface": "company", "pos": "명사", "sense": "회사" },
+   { "sid": "lesson-d3#3.0", "surface": "company", "pos": "명사", "sense": "회사" },
+   { "sid": "sample01#4.0", "surface": "company", "pos": "명사", "sense": "회사" },
+   { "sid": "lesson-d5#31.0", "surface": "company", "pos": "명사", "sense": "회사" }
+  ]
+ },
+ {
+  "lemma": "compare",
+  "skip": null,
+  "word": "compare",
+  "pos": ["동사"],
+  "ipa": "kəmˈper",
+  "meaning": "① 비교하다, 대조하다 ② (~에) 비유하다",
+  "short": "비교하다, 대조하다",
+  "senses": [
+   { "pos": "동사", "ko": "비교하다, 대조하다" },
+   { "pos": "동사", "ko": "(~에) 비유하다" }
+  ],
+  "forms": ["compares", "compared", "comparing", "comparison"],
+  "synonyms": ["contrast", "match"],
+  "domain": "비교·평가·판단",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#26.4", "surface": "compare", "pos": "동사", "sense": "비교하다, 대조하다" },
+   { "sid": "lesson-d4#22.4", "surface": "compares", "pos": "동사", "sense": "비교하다, 대조하다" },
+   { "sid": "lesson-d1#27.6", "surface": "compared", "pos": "동사", "sense": "비교하다, 대조하다" },
+   { "sid": "lesson-d5#32.3", "surface": "Compare", "pos": "동사", "sense": "비교하다, 대조하다" }
+  ]
+ },
+ {
+  "lemma": "compete",
+  "skip": null,
+  "word": "compete",
+  "pos": ["동사"],
+  "ipa": "kəmˈpiːt",
+  "meaning": "경쟁하다, (한정된 것을) 두고 다투다",
+  "short": "경쟁하다, 다투다",
+  "senses": [
+   { "pos": "동사", "ko": "(한정된 것을 두고) 경쟁하다, 다투다" },
+   { "pos": "형용사", "ko": "(competing) 서로 경합하는, 대립하는" }
+  ],
+  "forms": ["competes", "competed", "competing", "competition"],
+  "synonyms": ["contend", "vie"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#19.7", "surface": "competes", "pos": "동사", "sense": "(한정된 것을 두고) 경쟁하다, 다투다" },
+   { "sid": "lesson-d1#11.0", "surface": "competing", "pos": "형용사", "sense": "(competing) 서로 경합하는, 대립하는" },
+   { "sid": "lesson-d3#11.0", "surface": "competing", "pos": "형용사", "sense": "(competing) 서로 경합하는, 대립하는" }
+  ]
+ },
+ {
+  "lemma": "competitive",
+  "skip": null,
+  "word": "competitive",
+  "pos": ["형용사"],
+  "ipa": "kəmˈpetətɪv",
+  "meaning": "경쟁의 — competitive landscape: 경쟁 구도",
+  "short": "경쟁의",
+  "senses": [
+   { "pos": "형용사", "ko": "경쟁의, 경쟁에 관한" },
+   { "pos": "형용사", "ko": "(가격 등이) 경쟁력 있는" }
+  ],
+  "forms": ["competitively", "competitiveness"],
+  "synonyms": ["rival"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#25.1", "surface": "competitive", "pos": "형용사", "sense": "경쟁의, 경쟁에 관한" },
+   { "sid": "lesson-d1#9.0", "surface": "competitive", "pos": "형용사", "sense": "경쟁의, 경쟁에 관한" }
+  ]
+ },
+ {
+  "lemma": "competitor",
+  "skip": null,
+  "word": "competitor",
+  "pos": ["명사"],
+  "ipa": "kəmˈpetɪtər",
+  "meaning": "경쟁자, 경쟁사",
+  "short": "경쟁사, 경쟁자",
+  "senses": [
+   { "pos": "명사", "ko": "경쟁사, 경쟁자" }
+  ],
+  "forms": ["competitors"],
+  "synonyms": ["rival"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#9.1", "surface": "competitors", "pos": "명사", "sense": "경쟁사, 경쟁자" },
+   { "sid": "lesson-d5#10.0", "surface": "competitor", "pos": "명사", "sense": "경쟁사, 경쟁자" },
+   { "sid": "lesson-d5#10.1", "surface": "competitor", "pos": "명사", "sense": "경쟁사, 경쟁자" },
+   { "sid": "lesson-d5#38.0", "surface": "competitor", "pos": "명사", "sense": "경쟁사, 경쟁자" }
+  ]
+ },
+ {
+  "lemma": "compile",
+  "skip": null,
+  "word": "compile",
+  "pos": ["동사"],
+  "ipa": "kəmˈpaɪl",
+  "meaning": "① 컴파일하다 ② (자료를) 모아 엮다",
+  "short": "컴파일하다",
+  "senses": [
+   { "pos": "동사", "ko": "컴파일하다, (코드가) 빌드되다" },
+   { "pos": "동사", "ko": "(자료를) 모아 엮다" }
+  ],
+  "forms": ["compiles", "compiled", "compiling", "compiler", "compilation"],
+  "synonyms": ["build"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#16.2", "surface": "compiles", "pos": "동사", "sense": "컴파일하다, (코드가) 빌드되다" }
+  ]
+ },
+ {
+  "lemma": "complaint",
+  "skip": null,
+  "word": "complaint",
+  "pos": ["명사"],
+  "ipa": "kəmˈpleɪnt",
+  "meaning": "불만, 민원 (complain: 불평하다)",
+  "short": "불만, 민원",
+  "senses": [
+   { "pos": "명사", "ko": "불만, 민원" }
+  ],
+  "forms": ["complaints", "complain"],
+  "synonyms": ["grievance"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#20.0", "surface": "complaint", "pos": "명사", "sense": "불만, 민원" }
+  ]
+ },
+ {
+  "lemma": "complete",
+  "skip": null,
+  "word": "complete",
+  "pos": ["동사", "형용사"],
+  "ipa": "kəmˈpliːt",
+  "meaning": "① 완료하다, 끝내다 ② 완전한, 빠짐없는",
+  "short": "완료하다, 완전한",
+  "senses": [
+   { "pos": "동사", "ko": "완료하다, 끝내다" },
+   { "pos": "형용사", "ko": "완전한, 빠짐없는" },
+   { "pos": "명사", "ko": "(completion) 완료, 완성" }
+  ],
+  "forms": ["completes", "completed", "completing", "completion", "completely", "incomplete"],
+  "synonyms": ["finish", "whole", "entire"],
+  "domain": "시작·종료",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#14.2", "surface": "completed", "pos": "동사", "sense": "완료하다, 끝내다" },
+   { "sid": "lesson-d2#28.6", "surface": "complete", "pos": "형용사", "sense": "완전한, 빠짐없는" },
+   { "sid": "mock04#26.1", "surface": "completes", "pos": "동사", "sense": "완료하다, 끝내다" },
+   { "sid": "sample01#17.1", "surface": "completing", "pos": "동사", "sense": "완료하다, 끝내다" }
+  ]
+ },
+ {
+  "lemma": "completeness",
+  "skip": null,
+  "word": "completeness",
+  "pos": ["명사"],
+  "ipa": "kəmˈpliːtnəs",
+  "meaning": "완전성, 빠짐없음",
+  "short": "완전성, 빠짐없음",
+  "senses": [
+   { "pos": "명사", "ko": "완전성, 빠짐없음" }
+  ],
+  "forms": [],
+  "synonyms": ["thoroughness", "entirety"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:completeness.0", "surface": "completeness", "pos": "명사", "sense": "완전성, 빠짐없음" }
+  ]
+ },
+ {
+  "lemma": "complex",
+  "skip": null,
+  "word": "complex",
+  "pos": ["형용사"],
+  "ipa": "kəmˈpleks",
+  "meaning": "복잡한, 여러 요소·단계가 얽힌",
+  "short": "복잡한",
+  "senses": [
+   { "pos": "형용사", "ko": "복잡한, 여러 요소가 얽힌" },
+   { "pos": "명사", "ko": "(complexity) 복잡성, 복잡도" },
+   { "pos": "명사", "ko": "(건물) 단지, 복합 시설" }
+  ],
+  "forms": ["complexity", "complexities"],
+  "synonyms": ["complicated", "intricate"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#9.5", "surface": "complex", "pos": "형용사", "sense": "복잡한, 여러 요소가 얽힌" },
+   { "sid": "lesson-d2#15.3", "surface": "complexity", "pos": "명사", "sense": "(complexity) 복잡성, 복잡도" },
+   { "sid": "sample01#7.0", "surface": "complex", "pos": "형용사", "sense": "복잡한, 여러 요소가 얽힌" }
+  ]
+ },
+ {
+  "lemma": "compliance",
+  "skip": null,
+  "word": "compliance",
+  "pos": ["명사"],
+  "ipa": "kəmˈplaɪəns",
+  "meaning": "(규정) 준수, 컴플라이언스",
+  "short": "규정 준수",
+  "senses": [
+   { "pos": "명사", "ko": "(규정) 준수, 컴플라이언스" },
+   { "pos": "명사", "ko": "(요구에) 따름, 순응" }
+  ],
+  "forms": ["comply", "compliant"],
+  "synonyms": ["adherence", "conformity"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#2.0", "surface": "compliance", "pos": "명사", "sense": "(규정) 준수, 컴플라이언스" },
+   { "sid": "lesson-d4#31.2", "surface": "compliance", "pos": "명사", "sense": "(규정) 준수, 컴플라이언스" },
+   { "sid": "sample01#17.0", "surface": "compliance", "pos": "명사", "sense": "(규정) 준수, 컴플라이언스" },
+   { "sid": "lesson-d3#3.1", "surface": "compliance", "pos": "명사", "sense": "(규정) 준수, 컴플라이언스" }
+  ]
+ },
+ {
+  "lemma": "complicate",
+  "skip": null,
+  "word": "complicated",
+  "pos": ["형용사"],
+  "ipa": "ˈkɑːmplɪkeɪtɪd",
+  "meaning": "복잡한, 까다로운 (complicate: 복잡하게 만들다)",
+  "short": "복잡한, 까다로운",
+  "senses": [
+   { "pos": "형용사", "ko": "복잡한, 까다로운" }
+  ],
+  "forms": ["complicate", "complication"],
+  "synonyms": ["complex", "intricate"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#7.2", "surface": "complicated", "pos": "형용사", "sense": "복잡한, 까다로운" }
+  ]
+ },
+ {
+  "lemma": "component",
+  "skip": null,
+  "word": "component",
+  "pos": ["명사"],
+  "ipa": "kəmˈpoʊnənt",
+  "meaning": "구성 요소, (소프트웨어의) 컴포넌트",
+  "short": "구성 요소, 컴포넌트",
+  "senses": [
+   { "pos": "명사", "ko": "(소프트웨어) 컴포넌트" },
+   { "pos": "명사", "ko": "구성 요소, 부품" }
+  ],
+  "forms": ["components"],
+  "synonyms": ["module", "part", "element"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#26.0", "surface": "component", "pos": "명사", "sense": "(소프트웨어) 컴포넌트" },
+   { "sid": "mock04#37.5", "surface": "component", "pos": "명사", "sense": "구성 요소, 부품" },
+   { "sid": "lesson-d5#22.1", "surface": "component", "pos": "명사", "sense": "구성 요소, 부품" },
+   { "sid": "lesson-d2#26.1", "surface": "components", "pos": "명사", "sense": "(소프트웨어) 컴포넌트" }
+  ]
+ },
+ {
+  "lemma": "composite",
+  "skip": null,
+  "word": "composite",
+  "pos": ["형용사"],
+  "ipa": "kəmˈpɑːzət",
+  "meaning": "여러 요소를 합친, 복합의",
+  "short": "복합의, 합친",
+  "senses": [
+   { "pos": "형용사", "ko": "여러 요소를 합친, 복합의" },
+   { "pos": "명사", "ko": "합성물, 복합체" }
+  ],
+  "forms": [],
+  "synonyms": ["combined", "compound"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:composite.0", "surface": "composite", "pos": "형용사", "sense": "여러 요소를 합친, 복합의" }
+  ]
+ },
+ {
+  "lemma": "comprehensive",
+  "skip": null,
+  "word": "comprehensive",
+  "pos": ["형용사"],
+  "ipa": "ˌkɑːmprɪˈhensɪv",
+  "meaning": "포괄적인, 빠짐없이 다루는",
+  "short": "포괄적인",
+  "senses": [
+   { "pos": "형용사", "ko": "포괄적인, 빠짐없이 다루는" }
+  ],
+  "forms": ["comprehensively"],
+  "synonyms": ["thorough", "exhaustive", "complete"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:comprehensive.0", "surface": "comprehensive", "pos": "형용사", "sense": "포괄적인, 빠짐없이 다루는" }
+  ]
+ },
+ {
+  "lemma": "compute",
+  "skip": null,
+  "word": "compute",
+  "pos": ["동사"],
+  "ipa": "kəmˈpjuːt",
+  "meaning": "① 계산하다, 산출하다 ② (명사) 컴퓨팅 자원, 연산량",
+  "short": "계산하다, 산출하다",
+  "senses": [
+   { "pos": "동사", "ko": "계산하다, 산출하다" },
+   { "pos": "명사", "ko": "컴퓨팅 자원, 연산량" }
+  ],
+  "forms": ["computes", "computed", "computing", "computation"],
+  "synonyms": ["calculate", "work out"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#29.0", "surface": "computed", "pos": "동사", "sense": "계산하다, 산출하다" },
+   { "sid": "lesson-d5#23.4", "surface": "computes", "pos": "동사", "sense": "계산하다, 산출하다" }
+  ]
+ },
+ {
+  "lemma": "concatenate",
+  "skip": null,
+  "word": "concatenate",
+  "pos": ["동사"],
+  "ipa": "kənˈkætəneɪt",
+  "meaning": "(문자열·내용을) 이어 붙이다",
+  "short": "이어 붙이다",
+  "senses": [
+   { "pos": "동사", "ko": "(문자열·내용을) 이어 붙이다" }
+  ],
+  "forms": ["concatenates", "concatenated", "concatenating", "concatenation"],
+  "synonyms": ["join", "append", "chain"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#17.6", "surface": "concatenated", "pos": "동사", "sense": "(문자열·내용을) 이어 붙이다" }
+  ]
+ },
+ {
+  "lemma": "conceivable",
+  "skip": null,
+  "word": "conceivable",
+  "pos": ["형용사"],
+  "ipa": "kənˈsiːvəbl",
+  "meaning": "생각할 수 있는, 상상할 수 있는",
+  "short": "생각할 수 있는",
+  "senses": [
+   { "pos": "형용사", "ko": "생각할 수 있는, 상상할 수 있는" }
+  ],
+  "forms": ["conceivably", "inconceivable"],
+  "synonyms": ["imaginable", "possible"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#56.6", "surface": "conceivable", "pos": "형용사", "sense": "생각할 수 있는, 상상할 수 있는" }
+  ]
+ },
+ {
+  "lemma": "concentrate",
+  "skip": null,
+  "word": "concentrate",
+  "pos": ["동사"],
+  "ipa": "ˈkɑːnsntreɪt",
+  "meaning": "집중하다, (한곳에) 모이다",
+  "short": "집중하다, 모이다",
+  "senses": [
+   { "pos": "동사", "ko": "집중하다" },
+   { "pos": "동사", "ko": "(한곳에) 모이다, 몰리다" }
+  ],
+  "forms": ["concentrates", "concentrated", "concentrating", "concentration"],
+  "synonyms": ["focus", "cluster"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "concern",
+  "skip": null,
+  "word": "concern",
+  "pos": ["명사"],
+  "ipa": "kənˈsɜːrn",
+  "meaning": "① (해결해야 할) 문의 사항, 용건 ② 우려, 걱정",
+  "short": "용건, 우려",
+  "senses": [
+   { "pos": "명사", "ko": "(해결할) 문의 사항, 용건" },
+   { "pos": "명사", "ko": "우려, 걱정" },
+   { "pos": "명사", "ko": "(설계상의) 관심사" },
+   { "pos": "동사", "ko": "~에 관련되다, 걱정시키다" }
+  ],
+  "forms": ["concerns", "concerned", "concerning"],
+  "synonyms": ["issue", "worry", "matter"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#20.0", "surface": "concern", "pos": "명사", "sense": "(해결할) 문의 사항, 용건" },
+   { "sid": "lesson-d1#25.3", "surface": "concern", "pos": "명사", "sense": "우려, 걱정" }
+  ]
+ },
+ {
+  "lemma": "concise",
+  "skip": null,
+  "word": "concise",
+  "pos": ["형용사"],
+  "ipa": "kənˈsaɪs",
+  "meaning": "간결한, 요점만 담은",
+  "short": "간결한",
+  "senses": [
+   { "pos": "형용사", "ko": "간결한, 요점만 담은" }
+  ],
+  "forms": ["concisely", "conciseness"],
+  "synonyms": ["brief", "succinct", "terse"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#44.8", "surface": "concise", "pos": "형용사", "sense": "간결한, 요점만 담은" },
+   { "sid": "lesson-d1#17.6", "surface": "concise", "pos": "형용사", "sense": "간결한, 요점만 담은" }
+  ]
+ },
+ {
+  "lemma": "conclude",
+  "skip": null,
+  "word": "conclude",
+  "pos": ["동사"],
+  "ipa": "kənˈkluːd",
+  "meaning": "결론을 내리다, 끝맺다",
+  "short": "결론을 내리다",
+  "senses": [
+   { "pos": "동사", "ko": "결론을 내리다" },
+   { "pos": "동사", "ko": "끝맺다, 마치다" },
+   { "pos": "명사", "ko": "(conclusion) 결론" }
+  ],
+  "forms": ["concludes", "concluded", "concluding", "conclusion", "conclusions"],
+  "synonyms": ["deduce", "infer", "determine"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#39.1", "surface": "concluded", "pos": "동사", "sense": "결론을 내리다" },
+   { "sid": "mock04#38.2", "surface": "conclusion", "pos": "명사", "sense": "(conclusion) 결론" },
+   { "sid": "lesson-d1#18.1", "surface": "conclusions", "pos": "명사", "sense": "(conclusion) 결론" },
+   { "sid": "lesson-d4#35.6", "surface": "conclusions", "pos": "명사", "sense": "(conclusion) 결론" }
+  ]
+ },
+ {
+  "lemma": "concrete",
+  "skip": null,
+  "word": "concrete",
+  "pos": ["형용사"],
+  "ipa": "ˈkɑːŋkriːt",
+  "meaning": "구체적인, 실제의",
+  "short": "구체적인",
+  "senses": [
+   { "pos": "형용사", "ko": "구체적인, 실제의" },
+   { "pos": "명사", "ko": "콘크리트" }
+  ],
+  "forms": ["concretely"],
+  "synonyms": ["specific", "tangible", "definite"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#17.4", "surface": "concrete", "pos": "형용사", "sense": "구체적인, 실제의" },
+   { "sid": "sample01#14.4", "surface": "concrete", "pos": "형용사", "sense": "구체적인, 실제의" },
+   { "sid": "lesson-d4#2.5", "surface": "concrete", "pos": "형용사", "sense": "구체적인, 실제의" },
+   { "sid": "lesson-d3#23.6", "surface": "concrete", "pos": "형용사", "sense": "구체적인, 실제의" }
+  ]
+ },
+ {
+  "lemma": "concurrently",
+  "skip": null,
+  "word": "concurrently",
+  "pos": ["부사"],
+  "ipa": "kənˈkɜːrəntli",
+  "meaning": "동시에, 병렬로",
+  "short": "동시에, 병렬로",
+  "senses": [
+   { "pos": "부사", "ko": "동시에, 병렬로" },
+   { "pos": "형용사", "ko": "(concurrent) 동시에 일어나는, 동시 접속의" }
+  ],
+  "forms": ["concurrent", "concurrency"],
+  "synonyms": ["simultaneously", "in parallel"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#26.0", "surface": "concurrently", "pos": "부사", "sense": "동시에, 병렬로" },
+   { "sid": "lesson-d1#40.0", "surface": "concurrent", "pos": "형용사", "sense": "(concurrent) 동시에 일어나는, 동시 접속의" },
+   { "sid": "mock04#23.6", "surface": "concurrently", "pos": "부사", "sense": "동시에, 병렬로" }
+  ]
+ },
+ {
+  "lemma": "condense",
+  "skip": null,
+  "word": "condense",
+  "pos": ["동사"],
+  "ipa": "kənˈdens",
+  "meaning": "(내용을) 압축하다, 줄여 요약하다",
+  "short": "압축하다, 줄여 요약하다",
+  "senses": [
+   { "pos": "동사", "ko": "(내용을) 압축하다, 줄여 요약하다" },
+   { "pos": "동사", "ko": "(기체가) 응축되다" }
+  ],
+  "forms": ["condenses", "condensed", "condensing", "condensation"],
+  "synonyms": ["compress", "summarize", "shorten"],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#2.1", "surface": "condensed", "pos": "동사", "sense": "(내용을) 압축하다, 줄여 요약하다" },
+   { "sid": "mock04#20.7", "surface": "condense", "pos": "동사", "sense": "(내용을) 압축하다, 줄여 요약하다" },
+   { "sid": "lesson-d5#21.5", "surface": "Condense", "pos": "동사", "sense": "(내용을) 압축하다, 줄여 요약하다" },
+   { "sid": "mock04#13.5", "surface": "condensed", "pos": "동사", "sense": "(내용을) 압축하다, 줄여 요약하다" }
+  ]
+ },
+ {
+  "lemma": "condition",
+  "skip": null,
+  "word": "condition",
+  "pos": ["명사"],
+  "ipa": "kənˈdɪʃn",
+  "meaning": "① (처한) 상황, 상태 ② 조건",
+  "short": "상황, 조건",
+  "senses": [
+   { "pos": "명사", "ko": "(처한) 상황, 상태" },
+   { "pos": "명사", "ko": "조건" }
+  ],
+  "forms": ["conditions", "conditional"],
+  "synonyms": ["state", "situation", "requirement"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#8.3", "surface": "condition", "pos": "명사", "sense": "(처한) 상황, 상태" },
+   { "sid": "lesson-d5#7.3", "surface": "conditions", "pos": "명사", "sense": "조건" },
+   { "sid": "lesson-d2#10.5", "surface": "condition", "pos": "명사", "sense": "(처한) 상황, 상태" },
+   { "sid": "lesson-d5#11.7", "surface": "conditions", "pos": "명사", "sense": "조건" }
+  ]
+ },
+ {
+  "lemma": "conditional",
+  "skip": null,
+  "word": "conditional",
+  "pos": ["형용사"],
+  "ipa": "kənˈdɪʃənl",
+  "meaning": "조건부의 — 조건이 맞을 때만 적용되는",
+  "short": "조건부의",
+  "senses": [
+   { "pos": "형용사", "ko": "조건부의, 조건에 따른" }
+  ],
+  "forms": ["conditionally"],
+  "synonyms": ["contingent"],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#29.6", "surface": "conditional", "pos": "형용사", "sense": "조건부의, 조건에 따른" }
+  ]
+ }
+]

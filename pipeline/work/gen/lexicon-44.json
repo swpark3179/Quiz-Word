@@ -1,0 +1,2019 @@
+[
+ {
+  "lemma": "top-level",
+  "skip": null,
+  "word": "top-level",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌtɑːp ˈlevl",
+  "meaning": "최상위의, 최상위 수준의",
+  "short": "최상위의",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "최상위의, 최상위 수준의"
+   },
+   {
+    "pos": "형용사",
+    "ko": "고위급의, 최고위의"
+   }
+  ],
+  "synonyms": [
+   "highest-level",
+   "outermost"
+  ],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#28.4",
+    "surface": "top-level",
+    "pos": "형용사",
+    "sense": "최상위의, 최상위 수준의"
+   },
+   {
+    "sid": "lesson-d4#11.4",
+    "surface": "top-level",
+    "pos": "형용사",
+    "sense": "최상위의, 최상위 수준의"
+   },
+   {
+    "sid": "lesson-d5#24.5",
+    "surface": "top-level",
+    "pos": "형용사",
+    "sense": "최상위의, 최상위 수준의"
+   }
+  ]
+ },
+ {
+  "lemma": "topic",
+  "skip": null,
+  "word": "topic",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtɑːpɪk",
+  "meaning": "① 주제, 소재 ② 화제, 이야깃거리",
+  "short": "주제, 화제",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "주제, 소재"
+   },
+   {
+    "pos": "명사",
+    "ko": "화제, 이야깃거리"
+   }
+  ],
+  "forms": [
+   "topics"
+  ],
+  "synonyms": [
+   "subject",
+   "theme"
+  ],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#18.0",
+    "surface": "topic",
+    "pos": "명사",
+    "sense": "주제, 소재"
+   },
+   {
+    "sid": "lesson-d5#15.1",
+    "surface": "topic",
+    "pos": "명사",
+    "sense": "주제, 소재"
+   },
+   {
+    "sid": "lesson-d3#11.5",
+    "surface": "topic",
+    "pos": "명사",
+    "sense": "화제, 이야깃거리"
+   },
+   {
+    "sid": "mock04#13.6",
+    "surface": "topics",
+    "pos": "명사",
+    "sense": "화제, 이야깃거리"
+   }
+  ]
+ },
+ {
+  "lemma": "topical",
+  "skip": null,
+  "word": "topical",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈtɑːpɪkl",
+  "meaning": "주제(상)의, 주제에 관한",
+  "short": "주제의, 주제에 관한",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "주제(상)의, 주제에 관한"
+   },
+   {
+    "pos": "형용사",
+    "ko": "시사적인, 화제가 되는"
+   }
+  ],
+  "synonyms": [
+   "thematic"
+  ],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#25.5",
+    "surface": "topical",
+    "pos": "형용사",
+    "sense": "주제(상)의, 주제에 관한"
+   },
+   {
+    "sid": "mock04#34.6",
+    "surface": "topical",
+    "pos": "형용사",
+    "sense": "주제(상)의, 주제에 관한"
+   }
+  ]
+ },
+ {
+  "lemma": "topology",
+  "skip": null,
+  "word": "topology",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "təˈpɑːlədʒi",
+  "meaning": "토폴로지 — 구성 요소들이 서로 연결된 구조(누가 누구와 통신하는지)",
+  "short": "토폴로지(연결 구조)",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "토폴로지, 구성 요소의 연결 구조"
+   }
+  ],
+  "synonyms": [
+   "layout",
+   "structure"
+  ],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d3#21.0",
+    "surface": "topology",
+    "pos": "명사",
+    "sense": "토폴로지, 구성 요소의 연결 구조"
+   },
+   {
+    "sid": "mock04#27.2",
+    "surface": "topology",
+    "pos": "명사",
+    "sense": "토폴로지, 구성 요소의 연결 구조"
+   }
+  ]
+ },
+ {
+  "lemma": "total",
+  "skip": null,
+  "word": "total",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ˈtoʊtl",
+  "meaning": "① 합계, 총액 ② 전체의, 총~ ③ 합계가 ~이 되다",
+  "short": "합계, 전체의",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "합계, 총액"
+   },
+   {
+    "pos": "형용사",
+    "ko": "전체의, 총~"
+   },
+   {
+    "pos": "동사",
+    "ko": "합계가 ~이 되다"
+   }
+  ],
+  "forms": [
+   "totals",
+   "totaled",
+   "totaling"
+  ],
+  "synonyms": [
+   "sum",
+   "overall",
+   "entire"
+  ],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#19.0",
+    "surface": "total",
+    "pos": "명사",
+    "sense": "합계, 총액"
+   },
+   {
+    "sid": "sample01#15.0",
+    "surface": "totals",
+    "pos": "명사",
+    "sense": "합계, 총액"
+   },
+   {
+    "sid": "lesson-d1#8.5",
+    "surface": "total",
+    "pos": "형용사",
+    "sense": "전체의, 총~"
+   },
+   {
+    "sid": "lesson-d2#15.4",
+    "surface": "total",
+    "pos": "형용사",
+    "sense": "전체의, 총~"
+   }
+  ]
+ },
+ {
+  "lemma": "touch",
+  "skip": null,
+  "word": "touch",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "tʌtʃ",
+  "meaning": "① 건드리다, 손대다 (변경·영향) ② 만지다, 닿다 ③ 접촉, 연락",
+  "short": "건드리다, 손대다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "건드리다, 손대다 (변경·영향)"
+   },
+   {
+    "pos": "동사",
+    "ko": "만지다, 닿다"
+   },
+   {
+    "pos": "명사",
+    "ko": "접촉, 연락"
+   }
+  ],
+  "forms": [
+   "touches",
+   "touched",
+   "touching"
+  ],
+  "synonyms": [
+   "affect",
+   "modify"
+  ],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#35.0",
+    "surface": "touches",
+    "pos": "동사",
+    "sense": "건드리다, 손대다 (변경·영향)"
+   },
+   {
+    "sid": "lesson-d4#37.0",
+    "surface": "touches",
+    "pos": "동사",
+    "sense": "건드리다, 손대다 (변경·영향)"
+   },
+   {
+    "sid": "mock04#14.3",
+    "surface": "touch",
+    "pos": "동사",
+    "sense": "건드리다, 손대다 (변경·영향)"
+   },
+   {
+    "sid": "lesson-d2#5.5",
+    "surface": "touching",
+    "pos": "동사",
+    "sense": "건드리다, 손대다 (변경·영향)"
+   }
+  ]
+ },
+ {
+  "lemma": "toward",
+  "skip": null,
+  "word": "toward",
+  "pos": [
+   "전치사"
+  ],
+  "ipa": "tɔːrd",
+  "meaning": "① ~쪽으로, ~을 향해 ② ~에 대해, ~ 쪽으로 치우친",
+  "short": "~쪽으로, ~을 향해",
+  "senses": [
+   {
+    "pos": "전치사",
+    "ko": "~쪽으로, ~을 향해"
+   },
+   {
+    "pos": "전치사",
+    "ko": "~에 대해, ~ 쪽으로 치우친"
+   }
+  ],
+  "synonyms": [
+   "towards"
+  ],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#52.7",
+    "surface": "toward",
+    "pos": "전치사",
+    "sense": "~에 대해, ~ 쪽으로 치우친"
+   }
+  ]
+ },
+ {
+  "lemma": "trace",
+  "skip": null,
+  "word": "trace",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "treɪs",
+  "meaning": "① 추적 기록, 트레이스 ② 추적하다, (흐름을) 따라가 보다",
+  "short": "추적하다, 추적 기록",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "추적 기록, 트레이스"
+   },
+   {
+    "pos": "동사",
+    "ko": "추적하다, (흐름을) 따라가 보다"
+   },
+   {
+    "pos": "명사",
+    "ko": "흔적, 자취"
+   }
+  ],
+  "forms": [
+   "traces",
+   "traced",
+   "tracing"
+  ],
+  "synonyms": [
+   "track",
+   "follow"
+  ],
+  "domain": "검색·조회",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d2#30.0",
+    "surface": "trace",
+    "pos": "동사",
+    "sense": "추적하다, (흐름을) 따라가 보다"
+   },
+   {
+    "sid": "mock04#22.2",
+    "surface": "Tracing",
+    "pos": "동사",
+    "sense": "추적하다, (흐름을) 따라가 보다"
+   },
+   {
+    "sid": "sample01#8.4",
+    "surface": "trace",
+    "pos": "명사",
+    "sense": "추적 기록, 트레이스"
+   },
+   {
+    "sid": "lesson-d1#36.0",
+    "surface": "trace",
+    "pos": "명사",
+    "sense": "흔적, 자취"
+   }
+  ]
+ },
+ {
+  "lemma": "track",
+  "skip": null,
+  "word": "track",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "træk",
+  "meaning": "① (on track) 제 궤도, 정상 진행 ② 추적하다, 기록해 관리하다",
+  "short": "추적하다, 제 궤도",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "제 궤도, 정상 진행 (on track)"
+   },
+   {
+    "pos": "동사",
+    "ko": "추적하다, 기록해 관리하다"
+   },
+   {
+    "pos": "명사",
+    "ko": "트랙, 선로"
+   }
+  ],
+  "synonyms": [
+   "monitor",
+   "follow"
+  ],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#18.2",
+    "surface": "track",
+    "pos": "명사",
+    "sense": "제 궤도, 정상 진행 (on track)"
+   },
+   {
+    "sid": "lesson-d5#11.7",
+    "surface": "track",
+    "pos": "동사",
+    "sense": "추적하다, 기록해 관리하다"
+   }
+  ]
+ },
+ {
+  "lemma": "trade",
+  "skip": null,
+  "word": "trade",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "treɪd",
+  "meaning": "① (~을 ~과) 맞바꾸다, 희생하다 ② 거래하다 ③ 무역, 거래",
+  "short": "맞바꾸다, 거래하다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "맞바꾸다, 희생하다 (trade A for B)"
+   },
+   {
+    "pos": "동사",
+    "ko": "거래하다"
+   },
+   {
+    "pos": "명사",
+    "ko": "무역, 거래"
+   }
+  ],
+  "forms": [
+   "trades",
+   "traded",
+   "trading"
+  ],
+  "synonyms": [
+   "exchange",
+   "swap"
+  ],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d5#2.5",
+    "surface": "traded",
+    "pos": "동사",
+    "sense": "맞바꾸다, 희생하다 (trade A for B)"
+   }
+  ]
+ },
+ {
+  "lemma": "trade-off",
+  "skip": null,
+  "word": "trade-off",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtreɪd ɔːf",
+  "meaning": "상충 관계, 맞바꿈 — 하나를 얻으면 다른 하나를 잃는 관계",
+  "short": "상충 관계, 맞바꿈",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "상충 관계, 맞바꿈"
+   }
+  ],
+  "synonyms": [
+   "compromise",
+   "balance"
+  ],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#17.5",
+    "surface": "trade-off",
+    "pos": "명사",
+    "sense": "상충 관계, 맞바꿈"
+   }
+  ]
+ },
+ {
+  "lemma": "traffic",
+  "skip": null,
+  "word": "traffic",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtræfɪk",
+  "meaning": "① 트래픽, 통신량 ② 교통, 통행량",
+  "short": "트래픽, 통신량",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "트래픽, 통신량"
+   },
+   {
+    "pos": "명사",
+    "ko": "교통, 통행량"
+   }
+  ],
+  "synonyms": [
+   "load"
+  ],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#27.6",
+    "surface": "traffic",
+    "pos": "명사",
+    "sense": "트래픽, 통신량"
+   }
+  ]
+ },
+ {
+  "lemma": "trail",
+  "skip": null,
+  "word": "trail",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "treɪl",
+  "meaning": "자취, 흔적 — audit trail: (나중에 확인할 수 있는) 감사 추적 기록",
+  "short": "자취, 추적 기록",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "자취, 흔적"
+   },
+   {
+    "pos": "명사",
+    "ko": "추적 기록 (audit trail)"
+   }
+  ],
+  "synonyms": [
+   "record",
+   "trace"
+  ],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "sample01#5.6",
+    "surface": "trail",
+    "pos": "명사",
+    "sense": "추적 기록 (audit trail)"
+   }
+  ]
+ },
+ {
+  "lemma": "trailing",
+  "skip": null,
+  "word": "trailing",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈtreɪlɪŋ",
+  "meaning": "뒤에 붙은, 끝에 남은 (trailing noise: 뒤에 붙은 잡음)",
+  "short": "뒤에 붙은, 끝에 남은",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "뒤에 붙은, 끝에 남은"
+   },
+   {
+    "pos": "형용사",
+    "ko": "뒤따르는, 뒤처지는"
+   }
+  ],
+  "synonyms": [
+   "following",
+   "trailing-edge"
+  ],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "train",
+  "skip": null,
+  "word": "train",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "treɪn",
+  "meaning": "① (모델을) 학습시키다, 훈련시키다 ② 훈련, 학습 ③ 기차, 열차",
+  "short": "학습시키다, 훈련",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(모델을) 학습시키다, 훈련시키다"
+   },
+   {
+    "pos": "명사",
+    "ko": "훈련, 학습 (training)"
+   },
+   {
+    "pos": "명사",
+    "ko": "기차, 열차"
+   }
+  ],
+  "forms": [
+   "trains",
+   "trained",
+   "training"
+  ],
+  "synonyms": [
+   "teach",
+   "tune"
+  ],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#50.7",
+    "surface": "Train",
+    "pos": "동사",
+    "sense": "(모델을) 학습시키다, 훈련시키다"
+   },
+   {
+    "sid": "lesson-d4#2.6",
+    "surface": "trained",
+    "pos": "동사",
+    "sense": "(모델을) 학습시키다, 훈련시키다"
+   },
+   {
+    "sid": "lesson-d2#19.6",
+    "surface": "training",
+    "pos": "명사",
+    "sense": "훈련, 학습 (training)"
+   },
+   {
+    "sid": "lesson-d4#2.4",
+    "surface": "training",
+    "pos": "명사",
+    "sense": "훈련, 학습 (training)"
+   }
+  ]
+ },
+ {
+  "lemma": "transaction",
+  "skip": null,
+  "word": "transaction",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "trænˈzækʃn",
+  "meaning": "① 거래, 입출금 내역 ② 트랜잭션 (한 묶음으로 처리되는 작업)",
+  "short": "거래, 트랜잭션",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "거래, 입출금 내역"
+   },
+   {
+    "pos": "명사",
+    "ko": "트랜잭션 (한 묶음의 처리)"
+   }
+  ],
+  "forms": [
+   "transactions"
+  ],
+  "synonyms": [
+   "deal",
+   "payment"
+  ],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#20.0",
+    "surface": "transaction",
+    "pos": "명사",
+    "sense": "거래, 입출금 내역"
+   },
+   {
+    "sid": "lesson-d1#24.6",
+    "surface": "transaction",
+    "pos": "명사",
+    "sense": "거래, 입출금 내역"
+   }
+  ]
+ },
+ {
+  "lemma": "transactional",
+  "skip": null,
+  "word": "transactional",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "trænˈzækʃənl",
+  "meaning": "거래(처리)에 관한",
+  "short": "거래(처리)에 관한",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "거래(처리)에 관한"
+   }
+  ],
+  "synonyms": [],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d5#4.4",
+    "surface": "transactional",
+    "pos": "형용사",
+    "sense": "거래(처리)에 관한"
+   }
+  ]
+ },
+ {
+  "lemma": "transcript",
+  "skip": null,
+  "word": "transcript",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtrænskrɪpt",
+  "meaning": "(대화) 기록 전문, 녹취록 — 주고받은 메시지를 그대로 적은 것",
+  "short": "대화 기록, 녹취록",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "(대화) 기록 전문, 녹취록"
+   },
+   {
+    "pos": "명사",
+    "ko": "사본, 필사본"
+   }
+  ],
+  "synonyms": [
+   "record",
+   "log"
+  ],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#34.0",
+    "surface": "transcript",
+    "pos": "명사",
+    "sense": "(대화) 기록 전문, 녹취록"
+   },
+   {
+    "sid": "lesson-d5#14.4",
+    "surface": "transcript",
+    "pos": "명사",
+    "sense": "(대화) 기록 전문, 녹취록"
+   },
+   {
+    "sid": "mock04#2.3",
+    "surface": "transcript",
+    "pos": "명사",
+    "sense": "(대화) 기록 전문, 녹취록"
+   },
+   {
+    "sid": "lesson-d1#34.3",
+    "surface": "transcript",
+    "pos": "명사",
+    "sense": "(대화) 기록 전문, 녹취록"
+   }
+  ]
+ },
+ {
+  "lemma": "transfer",
+  "skip": null,
+  "word": "transfer",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "trænsˈfɜːr",
+  "meaning": "① (고객을 다른 담당에게) 넘기다, 연결하다 ② 옮기다, 전송하다 ③ 이체, 이전",
+  "short": "(담당에게) 넘기다, 옮기다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(고객을 다른 담당에게) 넘기다, 연결하다"
+   },
+   {
+    "pos": "동사",
+    "ko": "옮기다, 전송하다"
+   },
+   {
+    "pos": "명사",
+    "ko": "이체, 이전"
+   }
+  ],
+  "forms": [
+   "transfers",
+   "transferred",
+   "transferring"
+  ],
+  "synonyms": [
+   "move",
+   "hand over"
+  ],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d5#8.5",
+    "surface": "transfer",
+    "pos": "동사",
+    "sense": "(고객을 다른 담당에게) 넘기다, 연결하다"
+   }
+  ]
+ },
+ {
+  "lemma": "transform",
+  "skip": null,
+  "word": "transform",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "trænsˈfɔːrm",
+  "meaning": "① 변환하다, 바꾸다 ② 변환",
+  "short": "변환하다, 바꾸다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "변환하다, 바꾸다"
+   },
+   {
+    "pos": "명사",
+    "ko": "변환"
+   }
+  ],
+  "forms": [
+   "transforms",
+   "transformed",
+   "transforming"
+  ],
+  "synonyms": [
+   "convert",
+   "change"
+  ],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d3#24.0",
+    "surface": "transforms",
+    "pos": "동사",
+    "sense": "변환하다, 바꾸다"
+   }
+  ]
+ },
+ {
+  "lemma": "transformation",
+  "skip": null,
+  "word": "transformation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌtrænsfərˈmeɪʃn",
+  "meaning": "변환, 변형",
+  "short": "변환, 변형",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "변환, 변형"
+   },
+   {
+    "pos": "명사",
+    "ko": "탈바꿈, 큰 변화"
+   }
+  ],
+  "synonyms": [
+   "conversion",
+   "change"
+  ],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d3#24.4",
+    "surface": "transformation",
+    "pos": "명사",
+    "sense": "변환, 변형"
+   },
+   {
+    "sid": "lesson-d3#24.5",
+    "surface": "transformation",
+    "pos": "명사",
+    "sense": "변환, 변형"
+   }
+  ]
+ },
+ {
+  "lemma": "transient",
+  "skip": null,
+  "word": "transient",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈtrænziənt",
+  "meaning": "일시적인, 곧 사라지는",
+  "short": "일시적인, 곧 사라지는",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "일시적인, 곧 사라지는"
+   },
+   {
+    "pos": "형용사",
+    "ko": "덧없는, 순간적인"
+   }
+  ],
+  "synonyms": [
+   "temporary",
+   "short-lived"
+  ],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#7.2",
+    "surface": "transient",
+    "pos": "형용사",
+    "sense": "일시적인, 곧 사라지는"
+   },
+   {
+    "sid": "lesson-d4#22.7",
+    "surface": "Transient",
+    "pos": "형용사",
+    "sense": "일시적인, 곧 사라지는"
+   },
+   {
+    "sid": "lesson-d5#16.5",
+    "surface": "transient",
+    "pos": "형용사",
+    "sense": "일시적인, 곧 사라지는"
+   },
+   {
+    "sid": "vocab:transient.0",
+    "surface": "transient",
+    "pos": "형용사",
+    "sense": "일시적인, 곧 사라지는"
+   }
+  ]
+ },
+ {
+  "lemma": "translate",
+  "skip": null,
+  "word": "translate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "trænsˈleɪt",
+  "meaning": "① 번역하다, 옮기다 ② (~로) 이어지다, 반영되다",
+  "short": "번역하다, 옮기다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "번역하다, 옮기다"
+   },
+   {
+    "pos": "동사",
+    "ko": "(~로) 이어지다, 반영되다"
+   }
+  ],
+  "forms": [
+   "translates",
+   "translated",
+   "translating"
+  ],
+  "synonyms": [
+   "convert",
+   "render"
+  ],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#32.1",
+    "surface": "translated",
+    "pos": "동사",
+    "sense": "번역하다, 옮기다"
+   },
+   {
+    "sid": "lesson-d1#34.0",
+    "surface": "translates",
+    "pos": "동사",
+    "sense": "번역하다, 옮기다"
+   },
+   {
+    "sid": "lesson-d1#32.5",
+    "surface": "translate",
+    "pos": "동사",
+    "sense": "번역하다, 옮기다"
+   },
+   {
+    "sid": "lesson-d1#32.7",
+    "surface": "translates",
+    "pos": "동사",
+    "sense": "번역하다, 옮기다"
+   }
+  ]
+ },
+ {
+  "lemma": "translation",
+  "skip": null,
+  "word": "translation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "trænsˈleɪʃn",
+  "meaning": "번역, 번역문",
+  "short": "번역, 번역문",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "번역, 번역문"
+   }
+  ],
+  "forms": [
+   "translations"
+  ],
+  "synonyms": [],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#29.0",
+    "surface": "translation",
+    "pos": "명사",
+    "sense": "번역, 번역문"
+   },
+   {
+    "sid": "lesson-d1#32.4",
+    "surface": "translation",
+    "pos": "명사",
+    "sense": "번역, 번역문"
+   },
+   {
+    "sid": "lesson-d1#34.4",
+    "surface": "translation",
+    "pos": "명사",
+    "sense": "번역, 번역문"
+   },
+   {
+    "sid": "lesson-d1#34.5",
+    "surface": "translations",
+    "pos": "명사",
+    "sense": "번역, 번역문"
+   }
+  ]
+ },
+ {
+  "lemma": "transport",
+  "skip": null,
+  "word": "transport",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈtrænspɔːrt",
+  "meaning": "(통신) 전송 방식 — 클라이언트와 서버가 메시지를 주고받는 통로 (stdio, Streamable HTTP) / 운송하다",
+  "short": "전송 방식, 운송하다",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "(통신) 전송 방식"
+   },
+   {
+    "pos": "동사",
+    "ko": "운송하다, 수송하다"
+   }
+  ],
+  "synonyms": [
+   "carry",
+   "convey"
+  ],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "treat",
+  "skip": null,
+  "word": "treat",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "triːt",
+  "meaning": "(~로) 여기다, 다루다, 취급하다",
+  "short": "여기다, 다루다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(~로) 여기다, 다루다, 취급하다"
+   },
+   {
+    "pos": "동사",
+    "ko": "치료하다, 처리하다"
+   }
+  ],
+  "forms": [
+   "treats",
+   "treated",
+   "treating"
+  ],
+  "synonyms": [
+   "handle",
+   "regard",
+   "consider"
+  ],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#3.0",
+    "surface": "treating",
+    "pos": "동사",
+    "sense": "(~로) 여기다, 다루다, 취급하다"
+   },
+   {
+    "sid": "lesson-d4#4.2",
+    "surface": "treat",
+    "pos": "동사",
+    "sense": "(~로) 여기다, 다루다, 취급하다"
+   },
+   {
+    "sid": "lesson-d5#40.1",
+    "surface": "treats",
+    "pos": "동사",
+    "sense": "(~로) 여기다, 다루다, 취급하다"
+   },
+   {
+    "sid": "mock04#4.2",
+    "surface": "treating",
+    "pos": "동사",
+    "sense": "(~로) 여기다, 다루다, 취급하다"
+   }
+  ]
+ },
+ {
+  "lemma": "tree",
+  "skip": null,
+  "word": "tree",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "triː",
+  "meaning": "① (디렉터리) 트리, 계층 구조 ② 나무",
+  "short": "트리, 계층 구조",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "트리, 계층 구조"
+   },
+   {
+    "pos": "명사",
+    "ko": "나무"
+   }
+  ],
+  "forms": [
+   "trees"
+  ],
+  "synonyms": [
+   "hierarchy"
+  ],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d2#27.0",
+    "surface": "tree",
+    "pos": "명사",
+    "sense": "트리, 계층 구조"
+   }
+  ]
+ },
+ {
+  "lemma": "trend",
+  "skip": null,
+  "word": "trend",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "trend",
+  "meaning": "추세, 경향",
+  "short": "추세, 경향",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "추세, 경향"
+   },
+   {
+    "pos": "동사",
+    "ko": "~한 추세를 보이다"
+   }
+  ],
+  "synonyms": [
+   "tendency",
+   "pattern"
+  ],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#26.1",
+    "surface": "trend",
+    "pos": "명사",
+    "sense": "추세, 경향"
+   }
+  ]
+ },
+ {
+  "lemma": "triage",
+  "skip": null,
+  "word": "triage",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈtriːɑːʒ",
+  "meaning": "분류(하다) — 들어온 건을 긴급도·종류별로 나눠 처리 순서와 담당을 정하다",
+  "short": "분류(하다), 우선순위 정하기",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "(긴급도별) 분류, 선별"
+   },
+   {
+    "pos": "동사",
+    "ko": "분류하다, 우선순위를 정하다"
+   }
+  ],
+  "synonyms": [
+   "sort",
+   "prioritize"
+  ],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#33.5",
+    "surface": "triage",
+    "pos": "명사",
+    "sense": "(긴급도별) 분류, 선별"
+   },
+   {
+    "sid": "lesson-d1#8.0",
+    "surface": "triage",
+    "pos": "명사",
+    "sense": "(긴급도별) 분류, 선별"
+   },
+   {
+    "sid": "lesson-d1#6.0",
+    "surface": "ticket-triage",
+    "pos": "명사",
+    "sense": "(긴급도별) 분류, 선별"
+   }
+  ]
+ },
+ {
+  "lemma": "trial",
+  "skip": null,
+  "word": "trial",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtraɪəl",
+  "meaning": "시험(판), 시범 — trial run: 시험 실행",
+  "short": "시험(판), 시범",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "시험(판), 시범"
+   },
+   {
+    "pos": "명사",
+    "ko": "재판"
+   }
+  ],
+  "synonyms": [
+   "test",
+   "pilot"
+  ],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#7.6",
+    "surface": "trial",
+    "pos": "명사",
+    "sense": "시험(판), 시범"
+   }
+  ]
+ },
+ {
+  "lemma": "trigger",
+  "skip": null,
+  "word": "trigger",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈtrɪɡər",
+  "meaning": "(어떤 동작을) 일으키다, 실행시키다 / 계기, 발동 조건",
+  "short": "일으키다, 계기",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(어떤 동작을) 일으키다, 실행시키다"
+   },
+   {
+    "pos": "명사",
+    "ko": "계기, 발동 조건"
+   }
+  ],
+  "forms": [
+   "triggers",
+   "triggered",
+   "triggering"
+  ],
+  "synonyms": [
+   "cause",
+   "initiate",
+   "set off"
+  ],
+  "domain": "시작·종료",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "sample01#22.0",
+    "surface": "trigger",
+    "pos": "동사",
+    "sense": "(어떤 동작을) 일으키다, 실행시키다"
+   },
+   {
+    "sid": "lesson-d4#25.6",
+    "surface": "triggered",
+    "pos": "동사",
+    "sense": "(어떤 동작을) 일으키다, 실행시키다"
+   },
+   {
+    "sid": "lesson-d5#11.7",
+    "surface": "trigger",
+    "pos": "명사",
+    "sense": "계기, 발동 조건"
+   },
+   {
+    "sid": "lesson-d5#8.7",
+    "surface": "trigger",
+    "pos": "명사",
+    "sense": "계기, 발동 조건"
+   }
+  ]
+ },
+ {
+  "lemma": "trim",
+  "skip": null,
+  "word": "trim",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "trɪm",
+  "meaning": "(불필요한 부분을) 잘라 내다, 다듬다",
+  "short": "잘라 내다, 다듬다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(불필요한 부분을) 잘라 내다, 다듬다"
+   },
+   {
+    "pos": "동사",
+    "ko": "줄이다, 삭감하다"
+   }
+  ],
+  "synonyms": [
+   "cut",
+   "prune",
+   "shorten"
+  ],
+  "domain": "삭제·제거",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#21.4",
+    "surface": "Trim",
+    "pos": "동사",
+    "sense": "(불필요한 부분을) 잘라 내다, 다듬다"
+   },
+   {
+    "sid": "mock04#36.4",
+    "surface": "trimmed",
+    "pos": "동사",
+    "sense": "(불필요한 부분을) 잘라 내다, 다듬다"
+   },
+   {
+    "sid": "mock04#36.7",
+    "surface": "Trim",
+    "pos": "동사",
+    "sense": "(불필요한 부분을) 잘라 내다, 다듬다"
+   }
+  ]
+ },
+ {
+  "lemma": "trivial",
+  "skip": null,
+  "word": "trivial",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈtrɪviəl",
+  "meaning": "① 사소한, 하찮은 ② 아주 쉬운, 뻔한",
+  "short": "사소한, 하찮은",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "사소한, 하찮은"
+   },
+   {
+    "pos": "형용사",
+    "ko": "아주 쉬운, 뻔한"
+   }
+  ],
+  "synonyms": [
+   "minor",
+   "insignificant"
+  ],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#50.1",
+    "surface": "trivial",
+    "pos": "형용사",
+    "sense": "사소한, 하찮은"
+   }
+  ]
+ },
+ {
+  "lemma": "true",
+  "skip": null,
+  "word": "true",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "truː",
+  "meaning": "① 참(true) 값 (불리언) ② 사실인, 진실한 ③ 진짜의, 참된",
+  "short": "참, 사실인",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "참(true), 불리언 값"
+   },
+   {
+    "pos": "형용사",
+    "ko": "사실인, 진실한"
+   },
+   {
+    "pos": "형용사",
+    "ko": "진짜의, 참된"
+   }
+  ],
+  "synonyms": [
+   "correct",
+   "real"
+  ],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#19.1",
+    "surface": "true",
+    "pos": "형용사",
+    "sense": "참(true), 불리언 값"
+   },
+   {
+    "sid": "lesson-d1#40.4",
+    "surface": "True",
+    "pos": "형용사",
+    "sense": "참(true), 불리언 값"
+   },
+   {
+    "sid": "lesson-d2#28.4",
+    "surface": "true",
+    "pos": "형용사",
+    "sense": "참(true), 불리언 값"
+   },
+   {
+    "sid": "lesson-d5#14.6",
+    "surface": "true",
+    "pos": "형용사",
+    "sense": "참(true), 불리언 값"
+   }
+  ]
+ },
+ {
+  "lemma": "truly",
+  "skip": null,
+  "word": "truly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈtruːli",
+  "meaning": "정말로, 진정으로",
+  "short": "정말로, 진정으로",
+  "senses": [
+   {
+    "pos": "부사",
+    "ko": "정말로, 진정으로"
+   },
+   {
+    "pos": "부사",
+    "ko": "진심으로"
+   }
+  ],
+  "synonyms": [
+   "really",
+   "genuinely"
+  ],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#29.7",
+    "surface": "truly",
+    "pos": "부사",
+    "sense": "정말로, 진정으로"
+   }
+  ]
+ },
+ {
+  "lemma": "truncate",
+  "skip": null,
+  "word": "truncate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈtrʌŋkeɪt",
+  "meaning": "(뒷부분을) 잘라 내다, 잘리다 — truncation: 잘림",
+  "short": "(뒷부분을) 잘라 내다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(뒷부분을) 잘라 내다, 잘리다"
+   },
+   {
+    "pos": "명사",
+    "ko": "잘림, 절단 (truncation)"
+   }
+  ],
+  "forms": [
+   "truncates",
+   "truncated",
+   "truncating",
+   "truncation"
+  ],
+  "synonyms": [
+   "cut off",
+   "shorten",
+   "trim"
+  ],
+  "domain": "삭제·제거",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#17.6",
+    "surface": "truncated",
+    "pos": "동사",
+    "sense": "(뒷부분을) 잘라 내다, 잘리다"
+   },
+   {
+    "sid": "lesson-d5#5.5",
+    "surface": "Truncate",
+    "pos": "동사",
+    "sense": "(뒷부분을) 잘라 내다, 잘리다"
+   },
+   {
+    "sid": "sample01#1.5",
+    "surface": "truncating",
+    "pos": "동사",
+    "sense": "(뒷부분을) 잘라 내다, 잘리다"
+   },
+   {
+    "sid": "mock04#41.7",
+    "surface": "truncation",
+    "pos": "명사",
+    "sense": "잘림, 절단 (truncation)"
+   }
+  ]
+ },
+ {
+  "lemma": "trust",
+  "skip": null,
+  "word": "trust",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "trʌst",
+  "meaning": "신뢰(하다) — trusted: 믿을 수 있는, 검증된",
+  "short": "신뢰하다, 믿을 수 있는",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "신뢰하다, 믿다"
+   },
+   {
+    "pos": "명사",
+    "ko": "신뢰, 믿음"
+   },
+   {
+    "pos": "형용사",
+    "ko": "믿을 수 있는, 검증된 (trusted, trustworthy)"
+   }
+  ],
+  "forms": [
+   "trusts",
+   "trusted",
+   "trusting",
+   "trustworthy"
+  ],
+  "synonyms": [
+   "rely on",
+   "believe"
+  ],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#7.1",
+    "surface": "trusted",
+    "pos": "동사",
+    "sense": "신뢰하다, 믿다"
+   },
+   {
+    "sid": "mock04#40.5",
+    "surface": "trusted",
+    "pos": "형용사",
+    "sense": "믿을 수 있는, 검증된 (trusted, trustworthy)"
+   },
+   {
+    "sid": "lesson-d5#15.1",
+    "surface": "trustworthy",
+    "pos": "형용사",
+    "sense": "믿을 수 있는, 검증된 (trusted, trustworthy)"
+   },
+   {
+    "sid": "lesson-d5#30.1",
+    "surface": "trustworthy",
+    "pos": "형용사",
+    "sense": "믿을 수 있는, 검증된 (trusted, trustworthy)"
+   }
+  ]
+ },
+ {
+  "lemma": "try",
+  "skip": null,
+  "word": "try",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "traɪ",
+  "meaning": "① 시도하다, 애쓰다 ② 시험해 보다, 써 보다 ③ 시도",
+  "short": "시도하다, 해 보다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "시도하다, 애쓰다"
+   },
+   {
+    "pos": "동사",
+    "ko": "시험해 보다, 써 보다"
+   },
+   {
+    "pos": "명사",
+    "ko": "시도"
+   }
+  ],
+  "forms": [
+   "tries",
+   "tried",
+   "trying"
+  ],
+  "synonyms": [
+   "attempt",
+   "test"
+  ],
+  "domain": "실행·처리",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d4#2.0",
+    "surface": "tries",
+    "pos": "동사",
+    "sense": "시도하다, 애쓰다"
+   },
+   {
+    "sid": "lesson-d5#39.1",
+    "surface": "trying",
+    "pos": "동사",
+    "sense": "시도하다, 애쓰다"
+   },
+   {
+    "sid": "lesson-d1#11.0",
+    "surface": "try",
+    "pos": "동사",
+    "sense": "시험해 보다, 써 보다"
+   },
+   {
+    "sid": "mock04#2.5",
+    "surface": "try",
+    "pos": "동사",
+    "sense": "시험해 보다, 써 보다"
+   }
+  ]
+ },
+ {
+  "lemma": "ttl",
+  "skip": null,
+  "word": "TTL",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌtiː.tiːˈel",
+  "meaning": "TTL(time to live) — 캐시·데이터가 만료되기 전까지 유지되는 시간",
+  "short": "유효 시간",
+  "senses": [
+   {
+    "pos": "약어",
+    "ko": "TTL, 유효 시간 (time to live)"
+   }
+  ],
+  "synonyms": [
+   "expiry time"
+  ],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "tuesday",
+  "skip": "proper"
+ },
+ {
+  "lemma": "turn",
+  "skip": null,
+  "word": "turn",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "tɜːrn",
+  "meaning": "① (대화의) 턴 — 사용자와 모델이 한 번 주고받는 차례 ② 돌다, 바뀌다",
+  "short": "(대화의) 턴, 차례",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "(대화의) 턴, 차례"
+   },
+   {
+    "pos": "동사",
+    "ko": "돌다, 방향을 바꾸다"
+   },
+   {
+    "pos": "동사",
+    "ko": "~이 되다, 바뀌다"
+   }
+  ],
+  "forms": [
+   "turns",
+   "turned",
+   "turning"
+  ],
+  "synonyms": [
+   "round",
+   "exchange"
+  ],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#5.1",
+    "surface": "turns",
+    "pos": "명사",
+    "sense": "(대화의) 턴, 차례"
+   },
+   {
+    "sid": "lesson-d4#16.2",
+    "surface": "turn",
+    "pos": "명사",
+    "sense": "(대화의) 턴, 차례"
+   },
+   {
+    "sid": "lesson-d5#1.1",
+    "surface": "turn",
+    "pos": "명사",
+    "sense": "(대화의) 턴, 차례"
+   },
+   {
+    "sid": "sample01#6.0",
+    "surface": "turns",
+    "pos": "명사",
+    "sense": "(대화의) 턴, 차례"
+   }
+  ]
+ },
+ {
+  "lemma": "turn away",
+  "skip": null,
+  "word": "turn away",
+  "pos": [
+   "동사구"
+  ],
+  "ipa": "tɜːrn əˈweɪ",
+  "meaning": "(찾아온 사람을) 돌려보내다, 받아 주지 않다",
+  "short": "돌려보내다",
+  "senses": [
+   {
+    "pos": "동사구",
+    "ko": "(찾아온 사람을) 돌려보내다, 받아 주지 않다"
+   },
+   {
+    "pos": "동사구",
+    "ko": "외면하다, 고개를 돌리다"
+   }
+  ],
+  "forms": [
+   "turns away",
+   "turned away",
+   "turning away"
+  ],
+  "synonyms": [
+   "reject",
+   "refuse"
+  ],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#7.2",
+    "surface": "turned away",
+    "pos": "동사구",
+    "sense": "(찾아온 사람을) 돌려보내다, 받아 주지 않다"
+   }
+  ]
+ },
+ {
+  "lemma": "turn on",
+  "skip": null,
+  "word": "turn on",
+  "pos": [
+   "동사구"
+  ],
+  "ipa": "tɜːrn ˈɑːn",
+  "meaning": "(기능·설정을) 켜다 — turn off: 끄다",
+  "short": "(기능을) 켜다",
+  "senses": [
+   {
+    "pos": "동사구",
+    "ko": "(기능·설정을) 켜다"
+   },
+   {
+    "pos": "동사구",
+    "ko": "(기능·설정을) 끄다 (turn off)"
+   }
+  ],
+  "forms": [
+   "turns on",
+   "turned on",
+   "turn off",
+   "turns off",
+   "turned off"
+  ],
+  "synonyms": [
+   "enable",
+   "switch on"
+  ],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#44.7",
+    "surface": "Turn on",
+    "pos": "동사구",
+    "sense": "(기능·설정을) 켜다"
+   },
+   {
+    "sid": "lesson-d4#18.4",
+    "surface": "Turn off",
+    "pos": "동사구",
+    "sense": "(기능·설정을) 끄다 (turn off)"
+   },
+   {
+    "sid": "lesson-d5#4.5",
+    "surface": "Turn off",
+    "pos": "동사구",
+    "sense": "(기능·설정을) 끄다 (turn off)"
+   },
+   {
+    "sid": "lesson-d4#4.6",
+    "surface": "Turn off",
+    "pos": "동사구",
+    "sense": "(기능·설정을) 끄다 (turn off)"
+   }
+  ]
+ },
+ {
+  "lemma": "tutoring",
+  "skip": null,
+  "word": "tutoring",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtuːtərɪŋ",
+  "meaning": "개인 지도, 학습 도우미 (tutoring app: 학습 도우미 앱)",
+  "short": "개인 지도, 학습 도우미",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "개인 지도, 학습 도우미"
+   }
+  ],
+  "synonyms": [
+   "coaching"
+  ],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "tweak",
+  "skip": null,
+  "word": "tweak",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "twiːk",
+  "meaning": "(조금) 손보다, 미세 조정(하다)",
+  "short": "손보다, 미세 조정",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(조금) 손보다, 미세 조정하다"
+   },
+   {
+    "pos": "명사",
+    "ko": "미세 조정, 손질"
+   }
+  ],
+  "forms": [
+   "tweaks",
+   "tweaked",
+   "tweaking"
+  ],
+  "synonyms": [
+   "adjust",
+   "fine-tune"
+  ],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#53.2",
+    "surface": "tweaks",
+    "pos": "명사",
+    "sense": "미세 조정, 손질"
+   }
+  ]
+ }
+]

@@ -1,0 +1,1361 @@
+[
+ {
+  "lemma": "integer",
+  "kind": "new",
+  "surfaces": [
+   "integer"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "selfcheck-d4-kor#16.0",
+    "en": "계약서 추출 스키마에 `renewal_notice_days`(integer, required)를 넣었다. 갱신 통지 조항이 없는 계약서에서도 30이나 60 같은 값이 채워져 나온다. 가장 좋은 수정은?"
+   }
+  ]
+ },
+ {
+  "lemma": "integration",
+  "kind": "vocab-core",
+  "surfaces": [
+   "integrations",
+   "integration"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "integration",
+   "word": "integration",
+   "pos": "명사",
+   "ipa": "ˌɪntɪˈɡreɪʃən",
+   "meaning": "① 연동, 통합 — 다른 시스템·서비스에 붙여 쓰는 것 ② (CI의) 지속적 통합"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#5.0",
+    "en": "A coordinator agent delegates an integration task to a subagent."
+   },
+   {
+    "sid": "lesson-d3#22.0",
+    "en": "Your team must decide whether a new payments integration should use a webhook receiver or a polling worker."
+   },
+   {
+    "sid": "lesson-d4#37.4",
+    "en": "Script one headless `claude -p` review per file, each in a fresh context, then run integration passes that read the files sharing data together"
+   },
+   {
+    "sid": "sample01#7.0",
+    "en": "A company is building three Claude integrations: (1) a simple FAQ chatbot for a marketing website, (2) a complex multi-step contract analysis agent that must identify subtle legal risks, (3) a high-volume document classification pipeline processing 50,000 documents per day."
+   },
+   {
+    "sid": "lesson-d4#37.6",
+    "en": "Script one fresh per-file pass for every file and skip integration passes, since each file has already had full attention"
+   },
+   {
+    "sid": "lesson-d4#38.2",
+    "en": "A separate cross-file integration pass that examines both files together and produces one recommendation based on the actual data flow"
+   },
+   {
+    "sid": "lesson-d4#38.4",
+    "en": "Merging the two files into one before review so a single per-file pass can cover both without needing an integration step"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:integration.0",
+    "en": "A company is building three Claude integrations: (1) a simple FAQ chatbot for a marketing website, ...",
+    "ko": "한 회사가 세 가지 Claude 연동을 구축한다: (1) 마케팅 웹사이트용 단순 FAQ 챗봇, ..."
+   }
+  ]
+ },
+ {
+  "lemma": "integrity",
+  "kind": "vocab-core",
+  "surfaces": [
+   "integrity"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "integrity",
+   "word": "integrity",
+   "pos": "명사",
+   "ipa": "ɪnˈteɡrəti",
+   "meaning": "무결성 — 데이터가 손상·변조 없이 온전함 / 정직성"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.0",
+    "en": "An architect is defining a \"database-migration\" AgentDefinition with a long prompt field describing SQL best practices, rollback strategy, and data integrity checks."
+   }
+  ]
+ },
+ {
+  "lemma": "intelligence",
+  "kind": "new",
+  "surfaces": [
+   "intelligence"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#38.0",
+    "en": "During a competitive-intelligence synthesis, two subagents report different figures for a competitor's annual revenue: one cites a press release stating $420 million, the other cites an analyst report stating $460 million."
+   }
+  ]
+ },
+ {
+  "lemma": "intelligent",
+  "kind": "new",
+  "surfaces": [
+   "intelligent"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#18.1",
+    "en": "Which set of fields best supports intelligent coordinator recovery decisions?"
+   }
+  ]
+ },
+ {
+  "lemma": "intend",
+  "kind": "vocab-core",
+  "surfaces": [
+   "intending",
+   "intended"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "intend",
+   "word": "intend",
+   "pos": "동사",
+   "ipa": "ɪnˈtend",
+   "meaning": "의도하다 — intended: 의도한, 원래 쓰려던"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#25.0",
+    "en": "An architect writes a PreToolUse hook with the regex matcher `/refund/` intending it to gate a single custom tool named `refund`."
+   },
+   {
+    "sid": "lesson-d2#1.3",
+    "en": "Move the intended tool to the first position in the tools array"
+   },
+   {
+    "sid": "lesson-d3#21.4",
+    "en": "Describe the intended service layout in CLAUDE.md so Claude follows it while extracting code, with each edit approved in default permission mode"
+   },
+   {
+    "sid": "lesson-d1#30.3",
+    "en": "`updatedMCPToolOutput`, because it is the field intended for cross‑tool output replacement."
+   },
+   {
+    "sid": "lesson-d2#1.4",
+    "en": "Give the intended tool a higher priority weight in your backend router"
+   },
+   {
+    "sid": "lesson-d2#2.3",
+    "en": "The tools were declared in the wrong order in the tools array, and reordering them so that the intended tool is listed first will correct the routing behavior."
+   },
+   {
+    "sid": "lesson-d2#10.3",
+    "en": "The error contract includes fields that are not part of the MCP specification. MCP tool responses only define `isError` to indicate an error; there is no standard `errorCategory` or `isRetryable` field, so consumers may ignore these custom fields and miss the intended recovery guidance."
+   }
+  ]
+ },
+ {
+  "lemma": "intent",
+  "kind": "vocab-core",
+  "surfaces": [
+   "intent"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "intent",
+   "word": "intent",
+   "pos": "명사",
+   "ipa": "ɪnˈtent",
+   "meaning": "의도 — 사용자가 실제로 원하는 것"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#1.8",
+    "en": "Run a lightweight intent classifier over each assistant message to decide whether the turn is a genuine completion."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:intent.0",
+    "en": "Run a lightweight intent classifier over each assistant message to decide whether the turn is a genuine completion.",
+    "ko": "어시스턴트 메시지마다 경량 의도 분류기를 돌려, 그 턴이 진짜 완료인지 판단한다"
+   }
+  ]
+ },
+ {
+  "lemma": "interact",
+  "kind": "vocab-core",
+  "surfaces": [
+   "interacting",
+   "interact",
+   "interactive"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "interact",
+   "word": "interact",
+   "pos": "동사",
+   "ipa": "ˌɪntərˈækt",
+   "meaning": "상호 작용하다, 서로 영향을 주고받다 — interactive: 대화형의, 사람이 응답하며 쓰는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#39.1",
+    "en": "This morning, a teammate wants the architect to pick the investigation back up with full context of everything already read and concluded, without hunting through the interactive session picker."
+   },
+   {
+    "sid": "lesson-d3#29.2",
+    "en": "Add -p so Claude Code runs the query and exits instead of opening an interactive session"
+   },
+   {
+    "sid": "mock04#16.7",
+    "en": "Batch the three interacting changes into a single message so Claude edits the enum and all dependent switch sites together"
+   },
+   {
+    "sid": "lesson-d1#35.3",
+    "en": "Review each file in its own pass for local issues, then run a second pass over those findings to check how the files interact"
+   },
+   {
+    "sid": "lesson-d3#30.4",
+    "en": "The step ran claude without the -p flag, so the CLI opened its interactive session and waited for keyboard input that the runner cannot provide"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:interact.0",
+    "en": "Batch the three interacting changes into a single message so Claude edits the enum and all dependent switch sites together",
+    "ko": "서로 얽힌 세 변경을 하나의 메시지로 묶어, Claude가 enum과 이에 의존하는 모든 switch 지점을 함께 수정하게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "intercept",
+  "kind": "vocab-core",
+  "surfaces": [
+   "interception"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "intercept",
+   "word": "intercept",
+   "pos": "동사",
+   "ipa": "ˌɪntərˈsept",
+   "meaning": "(중간에서) 가로채다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#31.8",
+    "en": "Add an interception hook that inspects every extraction call and blocks it whenever no classification has run yet."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:intercept.0",
+    "en": "Use a PostToolUse hook to intercept tool results and apply formatting transformations before agent processing",
+    "ko": "PostToolUse 훅으로 도구 결과를 가로채, 에이전트가 처리하기 전에 형식 변환을 적용한다."
+   }
+  ]
+ },
+ {
+  "lemma": "interdependent",
+  "kind": "vocab-core",
+  "surfaces": [
+   "interdependent"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "interdependent",
+   "word": "interdependent",
+   "pos": "형용사",
+   "ipa": "ˌɪntərdɪˈpendənt",
+   "meaning": "서로 의존하는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#38.0",
+    "en": "Per-file passes on two interdependent files each recommend a different fix for what turns out to be the same underlying data-flow issue, and the two recommendations conflict."
+   }
+  ]
+ },
+ {
+  "lemma": "interleaved thinking",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "interleaved-thinking",
+   "word": "interleaved thinking",
+   "pos": "명사구",
+   "ipa": "ˌɪntərˈliːvd ˈθɪŋkɪŋ",
+   "meaning": "인터리브드 사고 — 도구 호출 사이사이에도 사고 블록을 끼워 넣어, 도구 결과를 보고 다시 추론하는 방식"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "intermediary",
+  "kind": "vocab-core",
+  "surfaces": [
+   "intermediary"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "intermediary",
+   "word": "intermediary",
+   "pos": "명사",
+   "ipa": "ˌɪntərˈmiːdieri",
+   "meaning": "중개자, 중간 단계(서비스)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#24.5",
+    "en": "Do not attempt to configure Kerberos directly in Claude Code MCP authentication; use an intermediary service that authenticates via Kerberos and then uses Anthropic-supported credentials such as API keys or OAuth tokens."
+   }
+  ]
+ },
+ {
+  "lemma": "intermediate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "intermediate"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "intermediate",
+   "word": "intermediate",
+   "pos": "형용사",
+   "ipa": "ˌɪntərˈmiːdiət",
+   "meaning": "중간(단계)의"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#20.2",
+    "en": "The history is full of superseded intermediate diffs, but the current task and goal are unchanged and the latest file states are still valid."
+   },
+   {
+    "sid": "sample01#8.1",
+    "en": "The engineering team cannot reproduce bugs because they have no visibility into which tools were called, in what order, with what inputs, or what the model's intermediate reasoning was."
+   },
+   {
+    "sid": "mock04#44.2",
+    "en": "Answering requires grepping and reading across dozens of files, producing thousands of lines of intermediate tool output."
+   },
+   {
+    "sid": "mock04#20.6",
+    "en": "Request a larger context window and continue as-is, leaving the superseded intermediate diffs sitting in the history."
+   },
+   {
+    "sid": "mock04#44.5",
+    "en": "Increase the main session's context window so that all of the thousands of lines of intermediate tool output fit"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:intermediate.0",
+    "en": "Add an intermediate summarization agent that condenses findings before passing to synthesis",
+    "ko": "결과를 합성 단계로 넘기기 전에 압축하는 중간 요약 에이전트를 추가한다."
+   }
+  ]
+ },
+ {
+  "lemma": "intermittently",
+  "kind": "vocab-core",
+  "surfaces": [
+   "intermittently"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "intermittently",
+   "word": "intermittently",
+   "pos": "부사",
+   "ipa": "ˌɪntərˈmɪtəntli",
+   "meaning": "간헐적으로, (불규칙하게) 가끔씩"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#29.2",
+    "en": "Intermittently the synthesis subagent uses that phrase mid-analysis, halting the workflow."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:intermittently.0",
+    "en": "Intermittently the synthesis subagent uses that phrase mid-analysis, halting the workflow.",
+    "ko": "간헐적으로 합성 서브에이전트가 분석 도중에 이 문구를 쓰면서 워크플로가 중단된다."
+   }
+  ]
+ },
+ {
+  "lemma": "internal",
+  "kind": "vocab-core",
+  "surfaces": [
+   "internal",
+   "internally"
+  ],
+  "freq": 18,
+  "vocab": {
+   "id": "internal",
+   "word": "internal",
+   "pos": "형용사",
+   "ipa": "ɪnˈtɜːrnl",
+   "meaning": "내부의, 사내의 — internally 내부적으로"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#25.1",
+    "en": "During a review, a colleague notices the matcher would also fire on a tool named `issue_refund_note` that only writes an internal comment and should never be gated."
+   },
+   {
+    "sid": "lesson-d2#13.0",
+    "en": "A subagent responsible for enriching customer records calls an internal `lookup_address` tool for 50 customers."
+   },
+   {
+    "sid": "lesson-d3#26.0",
+    "en": "In a checkout module, orderTotal() calls applyDiscount() and addTax() internally."
+   },
+   {
+    "sid": "mock04#19.1",
+    "en": "To rename a widely-used internal API, Claude must first locate every call site across a large monorepo."
+   },
+   {
+    "sid": "sample01#16.0",
+    "en": "A RAG-based assistant is instructed via system prompt: 'Never reveal internal pricing'."
+   },
+   {
+    "sid": "lesson-d4#3.4",
+    "en": "Skip it, since caching is an internal detail rather than part of the function's contract, so the docstring's mention of it falls outside the criterion."
+   },
+   {
+    "sid": "lesson-d5#5.0",
+    "en": "A returns-processing agent calls an order-lookup tool that returns a JSON payload with 40+ fields (shipping carrier metadata, internal warehouse codes, marketing tags, etc.) for every order it checks, and after a dozen lookups the raw payloads dominate the context window even though only 5 fields (order status, purchase date, item, amount, return-window deadline) matter for return eligibility."
+   },
+   {
+    "sid": "lesson-d2#24.0",
+    "en": "An internal MCP server requires a Kerberos-derived token that must be freshly minted for every connection, and no OAuth authorization server is involved."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:internal.0",
+    "en": "A RAG-based assistant is instructed via system prompt: 'Never reveal internal pricing'.",
+    "ko": "RAG 기반 어시스턴트가 시스템 프롬프트로 \"내부 가격을 절대 공개하지 마라\" 는 지시를 받았다."
+   }
+  ]
+ },
+ {
+  "lemma": "internalize",
+  "kind": "vocab-core",
+  "surfaces": [
+   "internalizes"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "internalize",
+   "word": "internalize",
+   "pos": "동사",
+   "ipa": "ɪnˈtɜːrnəlaɪz",
+   "meaning": "내재화하다, 완전히 몸에 익히다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#17.6",
+    "en": "Fine-tune a model on the team's existing validation code so it internalizes the house validation style"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:internalize.0",
+    "en": "Fine-tune a model on the team's existing validation code so it internalizes the house validation style",
+    "ko": "팀의 기존 검증 코드로 모델을 파인튜닝해, 팀 고유의 검증 스타일을 내재화하게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "interpret",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "interpret",
+   "word": "interpret",
+   "pos": "동사",
+   "ipa": "ɪnˈtɜːrprɪt",
+   "meaning": "해석하다, (의미를) 이해하다"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:interpret.0",
+    "en": "You've been describing the requirements in prose, but Claude interprets them differently each time.",
+    "ko": "요구사항을 줄글로 설명해 왔는데, Claude가 매번 다르게 해석한다."
+   }
+  ]
+ },
+ {
+  "lemma": "interval",
+  "kind": "vocab-core",
+  "surfaces": [
+   "interval"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "interval",
+   "word": "interval",
+   "pos": "명사",
+   "ipa": "ˈɪntərvl",
+   "meaning": "간격, 주기"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#3.4",
+    "en": "Shorten the interval between summarization passes so each pass condenses fewer new messages into the running summary"
+   }
+  ]
+ },
+ {
+  "lemma": "intervention",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "intervention",
+   "word": "intervention",
+   "pos": "명사",
+   "ipa": "ˌɪntərˈvenʃn",
+   "meaning": "개입 — (다른 주체가) 끼어들어 처리함"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:intervention.0",
+    "en": "Report both the timeout and \"0 results\" as failures requiring coordinator intervention.",
+    "ko": "타임아웃과 \"0 results\"를 모두 코디네이터의 개입이 필요한 실패로 보고한다."
+   }
+  ]
+ },
+ {
+  "lemma": "interview",
+  "kind": "new",
+  "surfaces": [
+   "interview"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#23.4",
+    "en": "Interview them about anything ambiguous, putting first the questions whose answers would change the architecture, then write the result up as a spec"
+   }
+  ]
+ },
+ {
+  "lemma": "introduce",
+  "kind": "new",
+  "surfaces": [
+   "introduced"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#5.0",
+    "en": "A tool named `analyze_content` was originally built to summarize any pasted content, including emails and internal notes, but its description was never updated after a web-specific successor tool was introduced."
+   }
+  ]
+ },
+ {
+  "lemma": "introductory",
+  "kind": "vocab-core",
+  "surfaces": [
+   "introductory"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "introductory",
+   "word": "introductory",
+   "pos": "형용사",
+   "ipa": "ˌɪntrəˈdʌktəri",
+   "meaning": "서두의, 도입부의 — 본론 앞에 붙는"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#15.2",
+    "en": "In production, 30% of responses include markdown code fences or introductory prose."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:introductory.0",
+    "en": "In production, 30% of responses include markdown code fences or introductory prose.",
+    "ko": "운영에서 응답의 30%에 마크다운 코드 펜스나 서두 문장이 섞여 나온다."
+   }
+  ]
+ },
+ {
+  "lemma": "invalidation",
+  "kind": "new",
+  "surfaces": [
+   "invalidation"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#23.1",
+    "en": "They don't yet know how cache invalidation, conflicting edits or clients dropping mid-edit should be handled."
+   }
+  ]
+ },
+ {
+  "lemma": "invent",
+  "kind": "vocab-core",
+  "surfaces": [
+   "inventing",
+   "invent"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "invent",
+   "word": "invent",
+   "pos": "동사",
+   "ipa": "ɪnˈvent",
+   "meaning": "① (없는 것을) 지어내다, 꾸며 내다 ② 발명하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#55.1",
+    "en": "For documents that lack a purchase-order number, audit logs show Claude inventing plausible-looking PO numbers about 11% of the time instead of signaling absence."
+   },
+   {
+    "sid": "lesson-d4#18.3",
+    "en": "Keep the field required and add a system-prompt line such as \"Never invent a physician name that is not in the report.\""
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:invent.0",
+    "en": "...audit logs show Claude inventing plausible-looking PO numbers about 11% of the time instead of signaling absence.",
+    "ko": "감사 로그를 보면 Claude가 약 11%의 경우 값이 없다고 알리는 대신 그럴듯해 보이는 PO 번호를 지어낸다."
+   }
+  ]
+ },
+ {
+  "lemma": "inventory",
+  "kind": "vocab-core",
+  "surfaces": [
+   "inventory"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "inventory",
+   "word": "inventory",
+   "pos": "명사",
+   "ipa": "ˈɪnvəntɔːri",
+   "meaning": "① (빠짐없는) 목록, 명세 ② 재고"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#31.0",
+    "en": "An agent connects to two MCP servers named \"billing\" and \"inventory\"."
+   },
+   {
+    "sid": "lesson-d5#23.2",
+    "en": "Build a complete inventory of every test file in the repository and return the paths as one list"
+   },
+   {
+    "sid": "lesson-d1#31.1",
+    "en": "An architect wants a single PreToolUse hook to run for every tool exposed by the \"billing\" server, without matching any tool from \"inventory\" or any built-in tool like Bash or Read."
+   },
+   {
+    "sid": "lesson-d5#24.3",
+    "en": "Run the search in the main agent with the output capped at the first 200 matches, and treat that capped set as the test file inventory."
+   }
+  ]
+ },
+ {
+  "lemma": "investigate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "investigate",
+   "mid-investigation",
+   "investigations",
+   "investigation",
+   "investigates",
+   "investigating"
+  ],
+  "freq": 11,
+  "vocab": {
+   "id": "investigate",
+   "word": "investigate",
+   "pos": "동사",
+   "ipa": "ɪnˈvestɪɡeɪt",
+   "meaning": "(원인을) 조사하다, 파고들다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#36.1",
+    "en": "Which design is adaptive decomposition for this investigation?"
+   },
+   {
+    "sid": "lesson-d5#26.0",
+    "en": "Several subagents are running concurrently, each investigating a different module of a large codebase and recording findings as they go."
+   },
+   {
+    "sid": "mock04#12.1",
+    "en": "Your team's /investigate-flaky skill greps the entire test suite, reads dozens of files, and prints verbose exploration before it answers."
+   },
+   {
+    "sid": "lesson-d1#37.0",
+    "en": "An architect is asked to design an agent that investigates why a production incident occurred, given only a vague alert message and no prior knowledge of which service is at fault."
+   },
+   {
+    "sid": "mock04#25.2",
+    "en": "Reviewers note the reports consistently miss emerging subtopics that only surface mid-investigation."
+   },
+   {
+    "sid": "lesson-d5#26.3",
+    "en": "Give each subagent its own uniquely named scratchpad file, e.g., one per module, and have the coordinator aggregate all files only after all subagents have finished their investigations."
+   },
+   {
+    "sid": "lesson-d1#39.0",
+    "en": "An architect ran a two-hour investigation into a flaky payment-retry bug yesterday afternoon and named the session 'payment-retry-bug' before stopping for the day."
+   },
+   {
+    "sid": "lesson-d5#8.6",
+    "en": "Hand off to a human now, without making the change or investigating further"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:investigate.0",
+    "en": "The bottleneck is investigation time: developers must click into each finding to read Claude's reasoning before deciding.",
+    "ko": "병목은 조사 시간이다. 개발자가 발견 항목마다 눌러 들어가 Claude의 추론을 읽어야 처리 여부를 정할 수 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "invoice",
+  "kind": "vocab-core",
+  "surfaces": [
+   "invoice",
+   "invoicing",
+   "invoices"
+  ],
+  "freq": 16,
+  "vocab": {
+   "id": "invoice",
+   "word": "invoice",
+   "pos": "명사·동사",
+   "ipa": "ˈɪnvɔɪs",
+   "meaning": "송장, 청구서(인보이스) — invoicing 청구서 발행"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#14.0",
+    "en": "An invoice pipeline reads records from a non-strict extraction tool."
+   },
+   {
+    "sid": "lesson-d5#4.0",
+    "en": "You are redesigning a billing agent whose running summary keeps paraphrasing refund amounts, invoice numbers and promised deadlines."
+   },
+   {
+    "sid": "mock04#37.2",
+    "en": "The engineer hard-codes an upfront decomposition into five subagent tasks (billing, invoicing, tax, reporting, auth)."
+   },
+   {
+    "sid": "sample01#15.0",
+    "en": "A data pipeline needs to extract structured invoice data (vendor, line items, totals) from free-text invoice PDFs."
+   },
+   {
+    "sid": "mock04-kor#37.1",
+    "en": "코디네이터 에이전트에게 40만 줄짜리 레거시 청구(billing) 모놀리스의 마이그레이션 계획을 만들라는 요청이 들어왔습니다. 엔지니어는 다섯 개 서브에이전트 작업(billing, invoicing, tax, reporting, auth)으로 나누는 분할을 처음부터 하드코딩했습니다. 운영 실행 결과를 보면 최종 계획에서, 어떤 서브에이전트에도 배정되지 않았던 'dunning'(연체 독촉) 하위 시스템 전체와 통화 변환 계층이 빠져 있습니다. 가장 효과적인 분할 전략은 무엇일까요?"
+   },
+   {
+    "sid": "lesson-d4#30.0",
+    "en": "A data-ingestion job needs to classify 150,000 scanned invoices in one nightly run using the Message Batches API."
+   },
+   {
+    "sid": "mock04#54.2",
+    "en": "However, reconciliation shows 6% of extracted invoices have line-item amounts that do not sum to the stated invoice total."
+   },
+   {
+    "sid": "sample01#15.5",
+    "en": "Use a tool definition with the invoice schema and `tool_choice: any` to force schema-compliant extraction"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:invoice.0",
+    "en": "A data pipeline needs to extract structured invoice data (vendor, line items, totals) from free-text invoice PDFs.",
+    "ko": "데이터 파이프라인이 자유 텍스트 형태의 송장 PDF에서 구조화된 송장 데이터(공급업체, 품목, 합계)를 추출해야 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "invoke",
+  "kind": "vocab-core",
+  "surfaces": [
+   "invokes",
+   "invoking",
+   "invoke",
+   "invocations",
+   "invocation",
+   "invoked"
+  ],
+  "freq": 29,
+  "vocab": {
+   "id": "invoke",
+   "word": "invoke",
+   "pos": "동사",
+   "ipa": "ɪnˈvoʊk",
+   "meaning": "(함수·도구·스킬을) 호출하다, 실행하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.1",
+    "en": "Separately, each time the coordinator invokes this subagent it supplies a different per-call prompt describing the specific table and migration at hand."
+   },
+   {
+    "sid": "lesson-d2#18.2",
+    "en": "The team reports agents occasionally reaching for tools clearly outside their remit, like the QA agent invoking a deploy tool."
+   },
+   {
+    "sid": "mock04#15.1",
+    "en": "A shared `/scaffold-component` skill expects a component-name argument, but telemetry shows teammates invoke it with no argument or a malformed one about a third of the time, producing empty or misnamed scaffolds."
+   },
+   {
+    "sid": "lesson-d3#9.5",
+    "en": "`~/.claude/skills/review-strict/SKILL.md`, a personal skill with its own name that you invoke as `/review-strict`"
+   },
+   {
+    "sid": "lesson-d4#20.5",
+    "en": "The mislabeling proves that without a tool_choice that forces a specific tool invocation, the model may output transaction_type labels that diverge from the source document's content, leading to semantic inaccuracies in the extracted data."
+   },
+   {
+    "sid": "mock04#15.2",
+    "en": "What is the most effective way to reduce these malformed invocations?"
+   },
+   {
+    "sid": "lesson-d1#17.3",
+    "en": "AgentDefinition.prompt sets the subagent's persistent system prompt and expertise, while the per-call prompt passed at invocation supplies the specific task details for that run"
+   },
+   {
+    "sid": "lesson-d2#10.6",
+    "en": "The `isError` field should be set to `false` because the tool can still return a result when the `customer_id` is missing, making the invocation technically successful."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:invoke.0",
+    "en": "Create a skill that references the exemplar endpoints and includes pattern-following instructions, invoked on-demand via slash command.",
+    "ko": "예시 엔드포인트를 참조하고 패턴 준수 지침을 담은 스킬을 만들어, 슬래시 커맨드로 필요할 때 호출한다."
+   }
+  ]
+ },
+ {
+  "lemma": "involve",
+  "kind": "vocab-core",
+  "surfaces": [
+   "involvement",
+   "involved"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "involve",
+   "word": "involve",
+   "pos": "동사",
+   "ipa": "ɪnˈvɑːlv",
+   "meaning": "① (일·변경을) 수반하다, 포함하다 ② (사람을) 관여시키다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#24.0",
+    "en": "An internal MCP server requires a Kerberos-derived token that must be freshly minted for every connection, and no OAuth authorization server is involved."
+   },
+   {
+    "sid": "lesson-d1#8.4",
+    "en": "Convert all five subagents into a single subagent that runs every step sequentially without coordinator involvement."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:involve.0",
+    "en": "This will involve changes across dozens of files and requires decisions about service boundaries and module dependencies.",
+    "ko": "이 작업에는 수십 개 파일에 걸친 변경이 따르고, 서비스 경계와 모듈 의존성에 대한 결정이 필요하다."
+   },
+   {
+    "vid": "vocab:involve.1",
+    "en": "...causing excessive coordinator involvement in routine error handling.",
+    "ko": "일상적인 오류 처리에 코디네이터가 지나치게 개입하게 된다."
+   }
+  ]
+ },
+ {
+  "lemma": "irritated",
+  "kind": "vocab-core",
+  "surfaces": [
+   "irritated"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "irritated",
+   "word": "irritated",
+   "pos": "형용사",
+   "ipa": "ˈɪrɪteɪtɪd",
+   "meaning": "짜증 난, 언짢은"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#8.0",
+    "en": "Earlier in a chat, a customer sounded irritated but never asked for a person."
+   },
+   {
+    "sid": "lesson-d5#9.1",
+    "en": "A patient messages the assistant in a clearly irritated tone about needing to reschedule a routine appointment with no clinical urgency."
+   },
+   {
+    "sid": "lesson-d5#9.5",
+    "en": "Escalate to a staff member immediately, since the irritated tone signals the situation needs human handling."
+   }
+  ]
+ },
+ {
+  "lemma": "isolate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "isolated"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "isolate",
+   "word": "isolate",
+   "pos": "동사",
+   "ipa": "ˈaɪsəleɪt",
+   "meaning": "격리하다, 따로 떼어 놓다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#12.7",
+    "en": "Set context:fork in the skill's SKILL.md frontmatter so exploration runs in an isolated context and only the result returns"
+   },
+   {
+    "sid": "mock04#16.4",
+    "en": "Run each of the three changes in its own fresh session so every edit stays cleanly isolated from the others"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:isolate.0",
+    "en": "Use the Explore subagent for Phase 1 to isolate verbose output and return a summary, then continue Phases 2-3 in the main conversation.",
+    "ko": "1단계에는 Explore 서브에이전트를 써서 장황한 출력을 격리하고 요약만 돌려받은 뒤, 2~3단계는 메인 대화에서 이어 간다."
+   }
+  ]
+ },
+ {
+  "lemma": "item",
+  "kind": "new",
+  "surfaces": [
+   "item",
+   "items"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d4#5.4",
+    "en": "Combine all the rules into one list sorted by severity, so every Important item sits together"
+   },
+   {
+    "sid": "lesson-d5#28.3",
+    "en": "A Markdown checklist that every agent edits freely, ticking items and rewriting notes as it goes"
+   },
+   {
+    "sid": "lesson-d5#32.5",
+    "en": "Pick the threshold that sends exactly as many items to review as reviewers can handle"
+   },
+   {
+    "sid": "lesson-d5#5.2",
+    "en": "Parse each lookup response in code and hand the model only status, purchase date, item, amount and return deadline"
+   },
+   {
+    "sid": "lesson-d5#5.0",
+    "en": "A returns-processing agent calls an order-lookup tool that returns a JSON payload with 40+ fields (shipping carrier metadata, internal warehouse codes, marketing tags, etc.) for every order it checks, and after a dozen lookups the raw payloads dominate the context window even though only 5 fields (order status, purchase date, item, amount, return-window deadline) matter for return eligibility."
+   }
+  ]
+ },
+ {
+  "lemma": "itemize",
+  "kind": "vocab-core",
+  "surfaces": [
+   "itemized"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "itemize",
+   "word": "itemize",
+   "pos": "동사",
+   "ipa": "ˈaɪtəmaɪz",
+   "meaning": "항목별로 나누어 적다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#8.0",
+    "en": "A team's code-review assistant prompt already spells out an exhaustive, itemized rubric for flagging issues, but reviewers still receive inconsistently formatted findings across runs: some list severity before location, others omit the suggested fix entirely."
+   }
+  ]
+ },
+ {
+  "lemma": "iteration",
+  "kind": "vocab-core",
+  "surfaces": [
+   "iteration",
+   "iterations",
+   "iterating",
+   "iterative",
+   "iterate"
+  ],
+  "freq": 12,
+  "vocab": {
+   "id": "iteration",
+   "word": "iteration",
+   "pos": "명사",
+   "ipa": "ˌɪtəˈreɪʃn",
+   "meaning": "반복, (고치고 다시 해 보는) 한 회차"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#3.0",
+    "en": "A junior engineer proposes capping an autonomous research agent at exactly 5 tool-call iterations and treating that cap as the loop's primary stopping mechanism, regardless of stop_reason."
+   },
+   {
+    "sid": "lesson-d3#24.0",
+    "en": "A data engineer is iterating with Claude Code on a migration script that transforms legacy customer records into a new schema."
+   },
+   {
+    "sid": "mock04#1.7",
+    "en": "Add a max-iteration cap and also stop after two consecutive text-only assistant responses, regardless of stop_reason."
+   },
+   {
+    "sid": "sample01#2.5",
+    "en": "The loop has no maximum iteration guard; a tool returning ambiguous results can cause the model to keep requesting the same tool indefinitely"
+   },
+   {
+    "sid": "lesson-d1#3.1",
+    "en": "What is the main architectural problem with relying on a fixed iteration cap this way?"
+   },
+   {
+    "sid": "lesson-d3#25.1",
+    "en": "Which approach best sets up an effective iterative refinement loop before implementation begins?"
+   },
+   {
+    "sid": "mock04#23.4",
+    "en": "Add a fixed iteration cap so the coordinator stops waiting after a set number of rounds and reports what it has"
+   },
+   {
+    "sid": "lesson-d3#27.1",
+    "en": "How should these two failures be presented to Claude for the next iteration?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:iteration.0",
+    "en": "What's the most effective approach for the next iteration?",
+    "ko": "다음 회차에서 가장 효과적인 접근은?"
+   },
+   {
+    "vid": "vocab:iteration.1",
+    "en": "Set a maximum iteration count (e.g., 10 calls) and stop when reached.",
+    "ko": "최대 반복 횟수(예: 10회)를 정해 두고 도달하면 멈춘다."
+   }
+  ]
+ },
+ {
+  "lemma": "itinerary",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "itinerary",
+   "word": "itinerary",
+   "pos": "명사",
+   "ipa": "aɪˈtɪnəreri",
+   "meaning": "여행 일정(표)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "itpm",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "itpm",
+   "word": "ITPM",
+   "pos": "약어",
+   "ipa": "ˌaɪ.tiː.piːˈem",
+   "meaning": "분당 입력 토큰 한도 (Input Tokens Per Minute)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "jailbreak",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "jailbreak",
+   "word": "jailbreak",
+   "pos": "명사·동사",
+   "ipa": "ˈdʒeɪlbreɪk",
+   "meaning": "탈옥 — 모델의 안전 규칙을 우회하도록 꾀는 공격(프롬프트)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "jitter",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "jitter",
+   "word": "jitter",
+   "pos": "명사",
+   "ipa": "ˈdʒɪtər",
+   "meaning": "지터 — 재시도 간격에 섞는 무작위 지연 (여러 클라이언트가 같은 순간에 몰리지 않게)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "job",
+  "kind": "new",
+  "surfaces": [
+   "job",
+   "jobs"
+  ],
+  "freq": 28,
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.0",
+    "en": "Every night a job takes each new product spec and runs the same steps in the same order."
+   },
+   {
+    "sid": "lesson-d3#29.0",
+    "en": "A pipeline step runs `claude \"explain the failing test\"` and the job hangs until it times out."
+   },
+   {
+    "sid": "lesson-d4#27.0",
+    "en": "A nightly job submits 60,000 document-review requests in one batch."
+   },
+   {
+    "sid": "mock04#49.2",
+    "en": "That rubric is needed only by the review job, but it is now injected into every CI job — test generation, doc updates — inflating token cost and diluting the model's focus on those tasks."
+   },
+   {
+    "sid": "mock04-kor#49.1",
+    "en": "프로젝트의 항상 로드되는 CLAUDE.md에 길고 상세한 코드 리뷰 루브릭이 들어가 비대해졌습니다. 이 루브릭은 리뷰 job에서만 필요한데, 지금은 테스트 생성이나 문서 업데이트 같은 모든 CI job에 주입되어 토큰 비용을 부풀리고 해당 작업에 대한 모델의 집중을 흐리고 있습니다. 가장 좋은 해결책은 무엇일까요?"
+   },
+   {
+    "sid": "lesson-d1#38.1",
+    "en": "A CI job on a fresh ephemeral build host then runs `claude -r \"auth-refactor\" \"Finish this PR\"`."
+   },
+   {
+    "sid": "lesson-d3#30.0",
+    "en": "A platform team wraps `claude` inside a GitHub Actions job that fires on every pull request to summarize the diff."
+   },
+   {
+    "sid": "lesson-d4#30.0",
+    "en": "A data-ingestion job needs to classify 150,000 scanned invoices in one nightly run using the Message Batches API."
+   }
+  ]
+ },
+ {
+  "lemma": "json-rpc",
+  "kind": "vocab-core",
+  "surfaces": [
+   "json-rpc"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "json-rpc",
+   "word": "JSON-RPC",
+   "pos": "명사",
+   "ipa": "ˈdʒeɪsən ˌɑːr.piːˈsiː",
+   "meaning": "JSON-RPC — JSON 으로 원격 함수 호출을 주고받는 프로토콜 (MCP 의 메시지 형식)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#8.6",
+    "en": "The MCP server turns the generic message into a JSON-RPC protocol error, so the model never sees that the call failed."
+   },
+   {
+    "sid": "selfcheck-d2-kor#8.1",
+    "en": "오류를 JSON-RPC 프로토콜 오류로 바꿔 에이전트가 보지 못하게 한다"
+   },
+   {
+    "sid": "selfcheck-d2-kor#7.1",
+    "en": "JSON-RPC 메시지 자체가 파싱되지 않는 경우"
+   }
+  ]
+ },
+ {
+  "lemma": "judge",
+  "kind": "vocab-core",
+  "surfaces": [
+   "judge",
+   "judges",
+   "judgment",
+   "judged"
+  ],
+  "freq": 12,
+  "vocab": {
+   "id": "judge",
+   "word": "judge",
+   "pos": "동사·명사",
+   "ipa": "dʒʌdʒ",
+   "meaning": "① 판단하다, 판정하다 ② 판정자 (LLM-as-a-judge)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#10.2",
+    "en": "What change would best help the model generalize its judgment to these novel-but-similar inputs?"
+   },
+   {
+    "sid": "lesson-d3#22.6",
+    "en": "Headless with bypassPermissions, then review the resulting pull request to judge which approach Claude picked"
+   },
+   {
+    "sid": "lesson-d5#11.5",
+    "en": "Keep the confidence rule and drop the sentiment rule, because the model is the best judge of when it is out of its depth"
+   },
+   {
+    "sid": "mock04#29.7",
+    "en": "Have a separate classifier judge after every assistant message whether the report is truly finished"
+   },
+   {
+    "sid": "lesson-d4#5.1",
+    "en": "Security findings are now being judged against the style threshold."
+   },
+   {
+    "sid": "lesson-d3#27.5",
+    "en": "Ask Claude to evaluate the test results and fix whichever failure appears more severe first, relying on its internal judgment of the impact on report correctness without stating the exact currency mismatch or missing extension details."
+   },
+   {
+    "sid": "lesson-d5#37.2",
+    "en": "Return only the figure from the source it judges more authoritative, so the coordinator gets one clean value"
+   },
+   {
+    "sid": "mock04#45.6",
+    "en": "Convert the conventions into a Skill so they load on demand whenever the tool judges them relevant to the task"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:judge.0",
+    "en": "Have a separate classifier judge after every assistant message whether the report is truly finished",
+    "ko": "별도의 분류기가 어시스턴트 메시지마다 보고서가 정말 끝났는지 판단하게 한다"
+   },
+   {
+    "vid": "vocab:judge.1",
+    "en": "...so they load on demand whenever the tool judges them relevant to the task",
+    "ko": "도구가 작업과 관련 있다고 판단할 때마다 필요 시 로드되게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "junior",
+  "kind": "new",
+  "surfaces": [
+   "junior"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#3.0",
+    "en": "A junior engineer proposes capping an autonomous research agent at exactly 5 tool-call iterations and treating that cap as the loop's primary stopping mechanism, regardless of stop_reason."
+   }
+  ]
+ },
+ {
+  "lemma": "just",
+  "kind": "new",
+  "surfaces": [
+   "just"
+  ],
+  "freq": 10,
+  "sentences": [
+   {
+    "sid": "lesson-d1#18.2",
+    "en": "The coordinator's prompt to synthesis only said \"Write a report based on the research that was just completed.\""
+   },
+   {
+    "sid": "lesson-d5#8.2",
+    "en": "The customer now replies: \"No, just put me through to a person.\""
+   },
+   {
+    "sid": "lesson-d2#28.7",
+    "en": "Call Write with just the corrected block so that only that part of the file is replaced"
+   },
+   {
+    "sid": "lesson-d3#11.3",
+    "en": "Set `context: fork` on the skill, so it runs in a subagent with its own context and hands back just its result to the caller."
+   },
+   {
+    "sid": "lesson-d4#11.6",
+    "en": "No examples, just an instruction saying \"do not flag broad catch blocks\", so the deliberate uses stop showing up"
+   },
+   {
+    "sid": "lesson-d1#12.5",
+    "en": "Set the coordinator's own allowedTools to just [\"Read\", \"Grep\"] for the duration of the review so neither agent can access Edit or Write"
+   },
+   {
+    "sid": "lesson-d2#29.3",
+    "en": "Call Write with the updated log line and the file path, which replaces just that line in the function that needs the change"
+   },
+   {
+    "sid": "lesson-d4#35.3",
+    "en": "Raise the extended thinking budget for the review step, so the model reasons longer over the code it just wrote"
+   }
+  ]
+ },
+ {
+  "lemma": "jwt",
+  "kind": "vocab-core",
+  "surfaces": [
+   "jwt"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "jwt",
+   "word": "JWT",
+   "pos": "약어",
+   "ipa": "ˌdʒeɪ.dʌbljuːˈtiː",
+   "meaning": "JSON Web Token — 서명된 JSON 형식의 인증 토큰"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#41.0",
+    "en": "After an expensive codebase analysis that ended with a JWT proposal, an engineer wants to try OAuth2 on a separate branch."
+   }
+  ]
+ },
+ {
+  "lemma": "kafka",
+  "kind": "vocab-core",
+  "surfaces": [
+   "kafka"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "kafka",
+   "word": "Kafka",
+   "pos": "명사",
+   "ipa": "ˈkɑːfkə",
+   "meaning": "카프카(Apache Kafka) — 서비스 간 이벤트·메시지를 주고받는 분산 스트리밍 플랫폼"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#44.1",
+    "en": "An engineer asks the tool to determine which of 30 services emits a particular Kafka event."
+   },
+   {
+    "sid": "mock04-kor#44.1",
+    "en": "한 엔지니어가 도구에게 30개 서비스 중 어느 서비스가 특정 Kafka 이벤트를 발행하는지 알아내 달라고 요청합니다. 답을 찾으려면 수십 개 파일을 grep하고 읽어야 하며, 그 과정에서 수천 줄의 중간 도구 출력이 생깁니다. 이 장황한 탐색을 메인 세션 안에서 바로 하면 메인 세션의 컨텍스트가 넘쳐나고, 이후 단계는 lost-in-the-middle 효과로 품질이 떨어집니다. 가장 좋은 접근 방식은 무엇일까요?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:kafka.0",
+    "en": "An engineer asks the tool to determine which of 30 services emits a particular Kafka event.",
+    "ko": "한 엔지니어가 도구에게 30개 서비스 중 어느 서비스가 특정 Kafka 이벤트를 발행하는지 알아내 달라고 요청한다."
+   }
+  ]
+ }
+]

@@ -1,0 +1,956 @@
+[
+ {
+  "lemma": "effort",
+  "skip": null,
+  "word": "effort",
+  "pos": ["명사"],
+  "ipa": "ˈefərt",
+  "meaning": "① 노력, 수고 ② (API) effort — 모델이 답에 들이는 사고·토큰 사용량 수준을 정하는 설정 (low·medium·high 등)",
+  "short": "노력, 수고",
+  "senses": [
+   { "pos": "명사", "ko": "노력, 수고" },
+   { "pos": "명사", "ko": "(API) effort — 사고·토큰 사용 수준 설정" }
+  ],
+  "forms": ["efforts"],
+  "synonyms": ["exertion", "work"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#35.5", "surface": "effort", "pos": "명사", "sense": "노력, 수고" },
+   { "sid": "lesson-d4#36.0", "surface": "effort", "pos": "명사", "sense": "(API) effort — 사고·토큰 사용 수준 설정" },
+   { "sid": "lesson-d5#20.7", "surface": "effort", "pos": "명사", "sense": "노력, 수고" },
+   { "sid": "lesson-d4#36.3", "surface": "effort", "pos": "명사", "sense": "노력, 수고" }
+  ]
+ },
+ {
+  "lemma": "either",
+  "skip": null,
+  "word": "either",
+  "pos": ["한정사", "대명사", "접속사", "부사"],
+  "ipa": "ˈiːðər",
+  "meaning": "① (둘 중) 어느 쪽이든, 어느 한쪽의 ② (부정문에서) 어느 쪽도 (~않다) ③ (either A or B) A나 B 중 하나 ④ (부정문 끝) ~도 역시",
+  "short": "어느 쪽이든, 어느 쪽도",
+  "senses": [
+   { "pos": "한정사", "ko": "(둘 중) 어느 쪽이든, 어느 한쪽의" },
+   { "pos": "한정사", "ko": "(부정문에서) 어느 쪽도 (~않다)" },
+   { "pos": "접속사", "ko": "(either A or B) A나 B 중 하나" },
+   { "pos": "부사", "ko": "(부정문 끝) ~도 역시" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "논리·관계·연결어",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#22.1", "surface": "either", "pos": "한정사", "sense": "(둘 중) 어느 쪽이든, 어느 한쪽의" },
+   { "sid": "lesson-d2#5.5", "surface": "either", "pos": "한정사", "sense": "(부정문에서) 어느 쪽도 (~않다)" },
+   { "sid": "lesson-d5#11.7", "surface": "either", "pos": "한정사", "sense": "(부정문에서) 어느 쪽도 (~않다)" }
+  ]
+ },
+ {
+  "lemma": "elapsed",
+  "skip": null,
+  "word": "elapsed",
+  "pos": ["형용사"],
+  "ipa": "ɪˈlæpst",
+  "meaning": "(시간이) 지난, 경과한 (elapsed time: 경과 시간)",
+  "short": "(시간이) 경과한",
+  "senses": [
+   { "pos": "형용사", "ko": "(시간이) 지난, 경과한" },
+   { "pos": "동사", "ko": "(elapse) (시간이) 흐르다, 지나다" }
+  ],
+  "forms": ["elapse", "elapses"],
+  "synonyms": ["passed"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#18.4", "surface": "elapsed", "pos": "형용사", "sense": "(시간이) 지난, 경과한" }
+  ]
+ },
+ {
+  "lemma": "electric",
+  "skip": null,
+  "word": "electric",
+  "pos": ["형용사"],
+  "ipa": "ɪˈlektrɪk",
+  "meaning": "① 전기의, 전기로 움직이는 ② 짜릿한, 열광적인",
+  "short": "전기의, 전기로 움직이는",
+  "senses": [
+   { "pos": "형용사", "ko": "전기의, 전기로 움직이는" },
+   { "pos": "형용사", "ko": "짜릿한, 열광적인" }
+  ],
+  "forms": ["electrical", "electricity"],
+  "synonyms": ["electrical"],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#9.0", "surface": "electric", "pos": "형용사", "sense": "전기의, 전기로 움직이는" }
+  ]
+ },
+ {
+  "lemma": "eligibility",
+  "skip": null,
+  "word": "eligibility",
+  "pos": ["명사"],
+  "ipa": "ˌelɪdʒəˈbɪləti",
+  "meaning": "자격, (조건을 충족하는) 대상 여부",
+  "short": "자격, 대상 여부",
+  "senses": [
+   { "pos": "명사", "ko": "자격, (조건을 충족하는) 대상 여부" }
+  ],
+  "forms": ["eligible"],
+  "synonyms": ["qualification", "entitlement"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#5.1", "surface": "eligibility", "pos": "명사", "sense": "자격, (조건을 충족하는) 대상 여부" },
+   { "sid": "lesson-d5#5.0", "surface": "eligibility", "pos": "명사", "sense": "자격, (조건을 충족하는) 대상 여부" }
+  ]
+ },
+ {
+  "lemma": "eliminate",
+  "skip": null,
+  "word": "eliminate",
+  "pos": ["동사"],
+  "ipa": "ɪˈlɪmɪneɪt",
+  "meaning": "없애다, 제거하다",
+  "short": "없애다, 제거하다",
+  "senses": [
+   { "pos": "동사", "ko": "없애다, 제거하다" },
+   { "pos": "동사", "ko": "(경쟁에서) 탈락시키다" }
+  ],
+  "forms": ["eliminates", "eliminated", "eliminating", "elimination"],
+  "synonyms": ["remove", "get rid of", "eradicate"],
+  "domain": "삭제·제거",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#53.2", "surface": "eliminate", "pos": "동사", "sense": "없애다, 제거하다" },
+   { "sid": "sample01#15.7", "surface": "eliminate", "pos": "동사", "sense": "없애다, 제거하다" },
+   { "sid": "lesson-d2#6.1", "surface": "eliminate", "pos": "동사", "sense": "없애다, 제거하다" },
+   { "sid": "lesson-d2#15.6", "surface": "eliminates", "pos": "동사", "sense": "없애다, 제거하다" }
+  ]
+ },
+ {
+  "lemma": "elsewhere",
+  "skip": null,
+  "word": "elsewhere",
+  "pos": ["부사"],
+  "ipa": "ˈelswer",
+  "meaning": "다른 곳에(서)",
+  "short": "다른 곳에(서)",
+  "senses": [
+   { "pos": "부사", "ko": "다른 곳에(서)" }
+  ],
+  "forms": [],
+  "synonyms": ["somewhere else"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#35.3", "surface": "elsewhere", "pos": "부사", "sense": "다른 곳에(서)" },
+   { "sid": "lesson-d3#14.0", "surface": "elsewhere", "pos": "부사", "sense": "다른 곳에(서)" },
+   { "sid": "mock04#58.6", "surface": "elsewhere", "pos": "부사", "sense": "다른 곳에(서)" }
+  ]
+ },
+ {
+  "lemma": "email",
+  "skip": null,
+  "word": "email",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈiːmeɪl",
+  "meaning": "① 이메일, 전자 우편 ② 이메일 주소 ③ 이메일을 보내다",
+  "short": "이메일",
+  "senses": [
+   { "pos": "명사", "ko": "이메일, 전자 우편" },
+   { "pos": "명사", "ko": "이메일 주소" },
+   { "pos": "동사", "ko": "이메일을 보내다" }
+  ],
+  "forms": ["emails", "emailed", "emailing"],
+  "synonyms": ["e-mail"],
+  "domain": "요청·소통",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#12.1", "surface": "emails", "pos": "명사", "sense": "이메일, 전자 우편" },
+   { "sid": "mock04#10.5", "surface": "email", "pos": "명사", "sense": "이메일 주소" },
+   { "sid": "lesson-d2#4.0", "surface": "emails", "pos": "명사", "sense": "이메일, 전자 우편" }
+  ]
+ },
+ {
+  "lemma": "embed",
+  "skip": null,
+  "word": "embed",
+  "pos": ["동사"],
+  "ipa": "ɪmˈbed",
+  "meaning": "(안에) 끼워 넣다, 심어 두다",
+  "short": "끼워 넣다, 심어 두다",
+  "senses": [
+   { "pos": "동사", "ko": "(안에) 끼워 넣다, 심어 두다" },
+   { "pos": "명사", "ko": "(embedding) 임베딩, 의미 벡터" }
+  ],
+  "forms": ["embeds", "embedded", "embedding"],
+  "synonyms": ["insert", "implant"],
+  "domain": "생성·추가",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#4.1", "surface": "embed", "pos": "동사", "sense": "(안에) 끼워 넣다, 심어 두다" },
+   { "sid": "mock04#49.1", "surface": "embed", "pos": "동사", "sense": "(안에) 끼워 넣다, 심어 두다" },
+   { "sid": "lesson-d4#27.1", "surface": "embeds", "pos": "동사", "sense": "(안에) 끼워 넣다, 심어 두다" },
+   { "sid": "lesson-d4#29.3", "surface": "embedding", "pos": "동사", "sense": "(안에) 끼워 넣다, 심어 두다" }
+  ]
+ },
+ {
+  "lemma": "emerge",
+  "skip": null,
+  "word": "emerge",
+  "pos": ["동사"],
+  "ipa": "ɪˈmɜːrdʒ",
+  "meaning": "(새로) 나타나다, 드러나다 — emerging: 새로 떠오르는",
+  "short": "나타나다, 드러나다",
+  "senses": [
+   { "pos": "동사", "ko": "(새로) 나타나다, 드러나다" },
+   { "pos": "형용사", "ko": "(emerging) 새로 떠오르는" }
+  ],
+  "forms": ["emerges", "emerged", "emerging", "emergence"],
+  "synonyms": ["appear", "arise", "surface"],
+  "domain": "시작·종료",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#25.2", "surface": "emerging", "pos": "형용사", "sense": "(emerging) 새로 떠오르는" }
+  ]
+ },
+ {
+  "lemma": "emit",
+  "skip": null,
+  "word": "emit",
+  "pos": ["동사"],
+  "ipa": "iˈmɪt",
+  "meaning": "(출력·이벤트를) 내보내다, 생성해 내다",
+  "short": "내보내다, 생성해 내다",
+  "senses": [
+   { "pos": "동사", "ko": "(출력·이벤트를) 내보내다, 생성해 내다" },
+   { "pos": "동사", "ko": "(빛·열·가스를) 내뿜다, 방출하다" }
+  ],
+  "forms": ["emits", "emitted", "emitting", "emission"],
+  "synonyms": ["output", "produce", "generate"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#44.1", "surface": "emits", "pos": "동사", "sense": "(출력·이벤트를) 내보내다, 생성해 내다" },
+   { "sid": "mock04#23.6", "surface": "Emit", "pos": "동사", "sense": "(출력·이벤트를) 내보내다, 생성해 내다" },
+   { "sid": "mock04#46.5", "surface": "emitted", "pos": "동사", "sense": "(출력·이벤트를) 내보내다, 생성해 내다" },
+   { "sid": "mock04#1.6", "surface": "emit", "pos": "동사", "sense": "(출력·이벤트를) 내보내다, 생성해 내다" }
+  ]
+ },
+ {
+  "lemma": "emphatic",
+  "skip": null,
+  "word": "emphatic",
+  "pos": ["형용사"],
+  "ipa": "ɪmˈfætɪk",
+  "meaning": "힘주어 강조하는, 단호한",
+  "short": "강조하는, 단호한",
+  "senses": [
+   { "pos": "형용사", "ko": "힘주어 강조하는, 단호한" },
+   { "pos": "형용사", "ko": "(결과가) 확실한, 뚜렷한" }
+  ],
+  "forms": ["emphatically", "emphasis", "emphasize"],
+  "synonyms": ["forceful", "insistent"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#19.3", "surface": "emphatic", "pos": "형용사", "sense": "힘주어 강조하는, 단호한" },
+   { "sid": "mock04#31.6", "surface": "emphatic", "pos": "형용사", "sense": "힘주어 강조하는, 단호한" },
+   { "sid": "sample01#16.4", "surface": "emphatic", "pos": "형용사", "sense": "힘주어 강조하는, 단호한" }
+  ]
+ },
+ {
+  "lemma": "employee",
+  "skip": null,
+  "word": "employee",
+  "pos": ["명사"],
+  "ipa": "ɪmˈplɔɪiː",
+  "meaning": "직원, 종업원",
+  "short": "직원",
+  "senses": [
+   { "pos": "명사", "ko": "직원, 종업원" }
+  ],
+  "forms": ["employees", "employer", "employ", "employment"],
+  "synonyms": ["staff member", "worker"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#24.1", "surface": "employee", "pos": "명사", "sense": "직원, 종업원" },
+   { "sid": "sample01#4.2", "surface": "employee", "pos": "명사", "sense": "직원, 종업원" }
+  ]
+ },
+ {
+  "lemma": "empty",
+  "skip": null,
+  "word": "empty",
+  "pos": ["형용사", "동사"],
+  "ipa": "ˈempti",
+  "meaning": "① 비어 있는, 빈 ② 비우다 ③ 공허한, 의미 없는",
+  "short": "비어 있는, 빈",
+  "senses": [
+   { "pos": "형용사", "ko": "비어 있는, 빈" },
+   { "pos": "동사", "ko": "비우다" },
+   { "pos": "형용사", "ko": "공허한, 의미 없는" }
+  ],
+  "forms": ["empties", "emptied", "emptying", "emptiness"],
+  "synonyms": ["blank", "vacant"],
+  "domain": "상태·성질",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#24.2", "surface": "empty", "pos": "형용사", "sense": "비어 있는, 빈" },
+   { "sid": "lesson-d3#28.1", "surface": "empty", "pos": "형용사", "sense": "비어 있는, 빈" },
+   { "sid": "lesson-d5#19.1", "surface": "empty", "pos": "형용사", "sense": "비어 있는, 빈" },
+   { "sid": "lesson-d1#22.1", "surface": "empty", "pos": "형용사", "sense": "비어 있는, 빈" }
+  ]
+ },
+ {
+  "lemma": "enable",
+  "skip": null,
+  "word": "enable",
+  "pos": ["동사"],
+  "ipa": "ɪˈneɪbl",
+  "meaning": "① (기능을) 켜다, 활성화하다 ② ~할 수 있게 하다",
+  "short": "켜다, 활성화하다",
+  "senses": [
+   { "pos": "동사", "ko": "(기능을) 켜다, 활성화하다" },
+   { "pos": "동사", "ko": "~할 수 있게 하다" }
+  ],
+  "forms": ["enables", "enabled", "enabling"],
+  "synonyms": ["activate", "turn on", "allow"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#8.3", "surface": "Enable", "pos": "동사", "sense": "(기능을) 켜다, 활성화하다" },
+   { "sid": "mock04#16.5", "surface": "Enable", "pos": "동사", "sense": "(기능을) 켜다, 활성화하다" },
+   { "sid": "mock04#47.5", "surface": "Enable", "pos": "동사", "sense": "(기능을) 켜다, 활성화하다" }
+  ]
+ },
+ {
+  "lemma": "encode",
+  "skip": null,
+  "word": "encode",
+  "pos": ["동사"],
+  "ipa": "ɪnˈkoʊd",
+  "meaning": "① (규칙·지식을 정해진 곳에) 담아 두다, 명시하다 ② 부호화하다, 인코딩하다",
+  "short": "담아 두다, 인코딩하다",
+  "senses": [
+   { "pos": "동사", "ko": "(규칙·지식을) 담아 두다, 명시하다" },
+   { "pos": "동사", "ko": "부호화하다, 인코딩하다" }
+  ],
+  "forms": ["encodes", "encoded", "encoding"],
+  "synonyms": ["codify", "record"],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#32.1", "surface": "encoded", "pos": "동사", "sense": "(규칙·지식을) 담아 두다, 명시하다" }
+  ]
+ },
+ {
+  "lemma": "encounter",
+  "skip": null,
+  "word": "encounter",
+  "pos": ["동사"],
+  "ipa": "ɪnˈkaʊntər",
+  "meaning": "(문제 등에) 부딪히다, 마주치다",
+  "short": "부딪히다, 마주치다",
+  "senses": [
+   { "pos": "동사", "ko": "(문제 등에) 부딪히다, 마주치다" },
+   { "pos": "명사", "ko": "만남, 마주침" }
+  ],
+  "forms": ["encounters", "encountered", "encountering"],
+  "synonyms": ["face", "meet", "run into"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#10.0", "surface": "encountered", "pos": "동사", "sense": "(문제 등에) 부딪히다, 마주치다" }
+  ]
+ },
+ {
+  "lemma": "encrypt",
+  "skip": null,
+  "word": "encrypt",
+  "pos": ["동사"],
+  "ipa": "ɪnˈkrɪpt",
+  "meaning": "암호화하다 (↔ decrypt: 복호화하다)",
+  "short": "암호화하다",
+  "senses": [
+   { "pos": "동사", "ko": "암호화하다" }
+  ],
+  "forms": ["encrypts", "encrypted", "encrypting", "encryption", "decrypt"],
+  "synonyms": ["encipher", "encode"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#16.5", "surface": "Encrypt", "pos": "동사", "sense": "암호화하다" },
+   { "sid": "mock04#40.4", "surface": "Encrypt", "pos": "동사", "sense": "암호화하다" }
+  ]
+ },
+ {
+  "lemma": "end",
+  "skip": null,
+  "word": "end",
+  "pos": ["동사", "명사"],
+  "ipa": "end",
+  "meaning": "① 끝나다, 끝내다 ② 끝, 마지막 ③ (end up) 결국 ~하게 되다 ④ 목적, 목표",
+  "short": "끝나다, 끝내다",
+  "senses": [
+   { "pos": "동사", "ko": "끝나다, 끝내다" },
+   { "pos": "명사", "ko": "끝, 마지막" },
+   { "pos": "동사구", "ko": "(end up) 결국 ~하게 되다" },
+   { "pos": "명사", "ko": "목적, 목표" }
+  ],
+  "forms": ["ends", "ended", "ending"],
+  "synonyms": ["finish", "terminate", "stop"],
+  "domain": "시작·종료",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#41.0", "surface": "ended", "pos": "동사", "sense": "끝나다, 끝내다" },
+   { "sid": "lesson-d5#11.7", "surface": "end", "pos": "명사", "sense": "끝, 마지막" },
+   { "sid": "lesson-d1#9.1", "surface": "ends", "pos": "동사구", "sense": "(end up) 결국 ~하게 되다" },
+   { "sid": "mock04#1.2", "surface": "ends", "pos": "동사", "sense": "끝나다, 끝내다" }
+  ]
+ },
+ {
+  "lemma": "end-to-end",
+  "skip": null,
+  "word": "end-to-end",
+  "pos": ["형용사", "부사"],
+  "ipa": "ˌend tə ˈend",
+  "meaning": "처음부터 끝까지의, 전 과정의",
+  "short": "처음부터 끝까지의",
+  "senses": [
+   { "pos": "형용사", "ko": "처음부터 끝까지의, 전 과정의" },
+   { "pos": "부사", "ko": "처음부터 끝까지" }
+  ],
+  "forms": [],
+  "synonyms": ["overall"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#23.2", "surface": "End-to-end", "pos": "형용사", "sense": "처음부터 끝까지의, 전 과정의" },
+   { "sid": "sample01#5.1", "surface": "end-to-end", "pos": "부사", "sense": "처음부터 끝까지" }
+  ]
+ },
+ {
+  "lemma": "endpoint",
+  "skip": null,
+  "word": "endpoint",
+  "pos": ["명사"],
+  "ipa": "ˈendpɔɪnt",
+  "meaning": "① (API) 엔드포인트 — 요청을 받는 서버 주소(URL) ② 끝점, 종점",
+  "short": "엔드포인트(요청 받는 주소)",
+  "senses": [
+   { "pos": "명사", "ko": "(API) 엔드포인트, 요청 받는 주소" },
+   { "pos": "명사", "ko": "끝점, 종점" }
+  ],
+  "forms": ["endpoints"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#22.0", "surface": "endpoint", "pos": "명사", "sense": "(API) 엔드포인트, 요청 받는 주소" },
+   { "sid": "lesson-d3#12.0", "surface": "endpoints", "pos": "명사", "sense": "(API) 엔드포인트, 요청 받는 주소" },
+   { "sid": "lesson-d2#22.1", "surface": "endpoint", "pos": "명사", "sense": "(API) 엔드포인트, 요청 받는 주소" }
+  ]
+ },
+ {
+  "lemma": "enforce",
+  "skip": null,
+  "word": "enforce",
+  "pos": ["동사"],
+  "ipa": "ɪnˈfɔːrs",
+  "meaning": "(규칙을) 강제하다, 반드시 지키게 하다",
+  "short": "강제하다, 반드시 지키게 하다",
+  "senses": [
+   { "pos": "동사", "ko": "(규칙을) 강제하다, 반드시 지키게 하다" },
+   { "pos": "명사", "ko": "(enforcement) 강제, 집행" },
+   { "pos": "동사", "ko": "(법을) 집행하다, 시행하다" }
+  ],
+  "forms": ["enforces", "enforced", "enforcing", "enforcement"],
+  "synonyms": ["impose", "mandate"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#21.0", "surface": "enforce", "pos": "동사", "sense": "(규칙을) 강제하다, 반드시 지키게 하다" },
+   { "sid": "lesson-d4#20.2", "surface": "enforcement", "pos": "명사", "sense": "(enforcement) 강제, 집행" },
+   { "sid": "sample01#18.4", "surface": "enforced", "pos": "동사", "sense": "(규칙을) 강제하다, 반드시 지키게 하다" },
+   { "sid": "lesson-d3#3.3", "surface": "enforces", "pos": "동사", "sense": "(규칙을) 강제하다, 반드시 지키게 하다" }
+  ]
+ },
+ {
+  "lemma": "engineer",
+  "skip": null,
+  "word": "engineer",
+  "pos": ["명사", "동사"],
+  "ipa": "ˌendʒɪˈnɪr",
+  "meaning": "① 엔지니어, 기술자 ② (engineering) 공학, 엔지니어링 (부서) ③ (교묘하게) 설계하다, 꾸미다",
+  "short": "엔지니어, 기술자",
+  "senses": [
+   { "pos": "명사", "ko": "엔지니어, 기술자" },
+   { "pos": "명사", "ko": "(engineering) 공학, 엔지니어링 (부서)" },
+   { "pos": "동사", "ko": "(교묘하게) 설계하다, 꾸미다" }
+  ],
+  "forms": ["engineers", "engineering", "engineered"],
+  "synonyms": ["developer", "technician"],
+  "domain": "사람·조직·역할",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#22.0", "surface": "engineer", "pos": "명사", "sense": "엔지니어, 기술자" },
+   { "sid": "mock04#1.2", "surface": "engineering", "pos": "명사", "sense": "(engineering) 공학, 엔지니어링 (부서)" },
+   { "sid": "sample01#1.0", "surface": "engineer", "pos": "명사", "sense": "엔지니어, 기술자" },
+   { "sid": "lesson-d4#2.0", "surface": "engineer", "pos": "명사", "sense": "엔지니어, 기술자" }
+  ]
+ },
+ {
+  "lemma": "english",
+  "skip": "proper"
+ },
+ {
+  "lemma": "enhance",
+  "skip": null,
+  "word": "enhance",
+  "pos": ["동사"],
+  "ipa": "ɪnˈhæns",
+  "meaning": "높이다, 강화하다",
+  "short": "높이다, 강화하다",
+  "senses": [
+   { "pos": "동사", "ko": "높이다, 강화하다" },
+   { "pos": "동사", "ko": "(내용을) 보강하다, 개선하다" }
+  ],
+  "forms": ["enhances", "enhanced", "enhancing", "enhancement"],
+  "synonyms": ["improve", "strengthen", "boost"],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:enhance.0", "surface": "Enhance", "pos": "동사", "sense": "(내용을) 보강하다, 개선하다" }
+  ]
+ },
+ {
+  "lemma": "enlarge",
+  "skip": null,
+  "word": "enlarge",
+  "pos": ["동사"],
+  "ipa": "ɪnˈlɑːrdʒ",
+  "meaning": "크게 하다, 늘리다",
+  "short": "크게 하다, 늘리다",
+  "senses": [
+   { "pos": "동사", "ko": "크게 하다, 늘리다" },
+   { "pos": "동사", "ko": "(사진·화면을) 확대하다" }
+  ],
+  "forms": ["enlarges", "enlarged", "enlarging", "enlargement"],
+  "synonyms": ["expand", "increase", "extend"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#6.4", "surface": "Enlarge", "pos": "동사", "sense": "크게 하다, 늘리다" },
+   { "sid": "mock04#5.7", "surface": "Enlarge", "pos": "동사", "sense": "크게 하다, 늘리다" },
+   { "sid": "mock04#39.5", "surface": "enlarge", "pos": "동사", "sense": "크게 하다, 늘리다" }
+  ]
+ },
+ {
+  "lemma": "enough",
+  "skip": null,
+  "word": "enough",
+  "pos": ["한정사", "부사", "대명사"],
+  "ipa": "ɪˈnʌf",
+  "meaning": "① 충분한 ② (형용사·부사 뒤) 충분히, ~할 만큼 ③ 충분한 양·것",
+  "short": "충분한, 충분히",
+  "senses": [
+   { "pos": "한정사", "ko": "충분한" },
+   { "pos": "부사", "ko": "(형용사·부사 뒤) 충분히, ~할 만큼" },
+   { "pos": "대명사", "ko": "충분한 양·것" }
+  ],
+  "forms": [],
+  "synonyms": ["sufficient", "adequate"],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#18.1", "surface": "enough", "pos": "한정사", "sense": "충분한" },
+   { "sid": "sample01#16.4", "surface": "enough", "pos": "부사", "sense": "(형용사·부사 뒤) 충분히, ~할 만큼" },
+   { "sid": "lesson-d2#8.5", "surface": "enough", "pos": "대명사", "sense": "충분한 양·것" },
+   { "sid": "mock04#58.3", "surface": "enough", "pos": "한정사", "sense": "충분한" }
+  ]
+ },
+ {
+  "lemma": "enrich",
+  "skip": null,
+  "word": "enrich",
+  "pos": ["동사"],
+  "ipa": "ɪnˈrɪtʃ",
+  "meaning": "(정보를 더해) 풍부하게 하다, 보강하다",
+  "short": "보강하다, 풍부하게 하다",
+  "senses": [
+   { "pos": "동사", "ko": "(정보를 더해) 풍부하게 하다, 보강하다" },
+   { "pos": "명사", "ko": "(enrichment) 보강, 정보 추가" }
+  ],
+  "forms": ["enriches", "enriched", "enriching", "enrichment"],
+  "synonyms": ["augment", "supplement", "enhance"],
+  "domain": "생성·추가",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#13.0", "surface": "enriching", "pos": "동사", "sense": "(정보를 더해) 풍부하게 하다, 보강하다" },
+   { "sid": "lesson-d2#19.0", "surface": "enrichment", "pos": "명사", "sense": "(enrichment) 보강, 정보 추가" },
+   { "sid": "mock04#42.6", "surface": "Enrich", "pos": "동사", "sense": "(정보를 더해) 풍부하게 하다, 보강하다" },
+   { "sid": "sample01#3.3", "surface": "enrich", "pos": "동사", "sense": "(정보를 더해) 풍부하게 하다, 보강하다" }
+  ]
+ },
+ {
+  "lemma": "ensure",
+  "skip": null,
+  "word": "ensure",
+  "pos": ["동사"],
+  "ipa": "ɪnˈʃʊr",
+  "meaning": "반드시 ~하게 하다, 보장하다",
+  "short": "보장하다, 반드시 ~하게 하다",
+  "senses": [
+   { "pos": "동사", "ko": "반드시 ~하게 하다, 보장하다" }
+  ],
+  "forms": ["ensures", "ensured", "ensuring"],
+  "synonyms": ["guarantee", "make sure", "secure"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#3.4", "surface": "ensures", "pos": "동사", "sense": "반드시 ~하게 하다, 보장하다" },
+   { "sid": "lesson-d2#18.5", "surface": "ensuring", "pos": "동사", "sense": "반드시 ~하게 하다, 보장하다" },
+   { "sid": "lesson-d1#25.6", "surface": "ensuring", "pos": "동사", "sense": "반드시 ~하게 하다, 보장하다" }
+  ]
+ },
+ {
+  "lemma": "enter",
+  "skip": null,
+  "word": "enter",
+  "pos": ["동사"],
+  "ipa": "ˈentər",
+  "meaning": "① 들어가다, 들어오다 ② (정보를) 입력하다 ③ (단계·상태에) 들어서다",
+  "short": "들어가다, 들어오다",
+  "senses": [
+   { "pos": "동사", "ko": "들어가다, 들어오다" },
+   { "pos": "동사", "ko": "(정보를) 입력하다" },
+   { "pos": "동사", "ko": "(단계·상태에) 들어서다" }
+  ],
+  "forms": ["enters", "entered", "entering", "entry"],
+  "synonyms": ["go into", "get into"],
+  "domain": "이동·전달",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#22.6", "surface": "enters", "pos": "동사", "sense": "들어가다, 들어오다" },
+   { "sid": "mock04#4.7", "surface": "enters", "pos": "동사", "sense": "들어가다, 들어오다" }
+  ]
+ },
+ {
+  "lemma": "enterprise",
+  "skip": null,
+  "word": "enterprise",
+  "pos": ["명사"],
+  "ipa": "ˈentərpraɪz",
+  "meaning": "① 기업, 회사 (enterprise ~: 기업용) ② (대규모) 사업, 진취성",
+  "short": "기업, 기업용",
+  "senses": [
+   { "pos": "명사", "ko": "기업, 기업용" },
+   { "pos": "명사", "ko": "(대규모) 사업, 진취성" }
+  ],
+  "forms": ["enterprises"],
+  "synonyms": ["company", "business", "corporation"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#8.4", "surface": "enterprise", "pos": "명사", "sense": "기업, 기업용" }
+  ]
+ },
+ {
+  "lemma": "entire",
+  "skip": null,
+  "word": "entire",
+  "pos": ["형용사"],
+  "ipa": "ɪnˈtaɪər",
+  "meaning": "전체의, 온 — entirely: 완전히, 아예",
+  "short": "전체의, 완전히",
+  "senses": [
+   { "pos": "형용사", "ko": "전체의, 온" },
+   { "pos": "부사", "ko": "(entirely) 완전히, 아예" }
+  ],
+  "forms": ["entirely"],
+  "synonyms": ["whole", "complete", "full"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#15.0", "surface": "entire", "pos": "형용사", "sense": "전체의, 온" },
+   { "sid": "sample01#1.1", "surface": "entirely", "pos": "부사", "sense": "(entirely) 완전히, 아예" },
+   { "sid": "lesson-d1#7.1", "surface": "entirely", "pos": "부사", "sense": "(entirely) 완전히, 아예" },
+   { "sid": "lesson-d4#12.6", "surface": "entirely", "pos": "부사", "sense": "(entirely) 완전히, 아예" }
+  ]
+ },
+ {
+  "lemma": "entity",
+  "skip": null,
+  "word": "entity",
+  "pos": ["명사"],
+  "ipa": "ˈentəti",
+  "meaning": "엔티티, 개체 — 고객·주문처럼 데이터로 다루는 대상 하나",
+  "short": "엔티티, 개체",
+  "senses": [
+   { "pos": "명사", "ko": "엔티티, (데이터) 개체" },
+   { "pos": "명사", "ko": "(법적) 실체, 단체" }
+  ],
+  "forms": ["entities"],
+  "synonyms": ["object"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#19.7", "surface": "entity", "pos": "명사", "sense": "엔티티, (데이터) 개체" }
+  ]
+ },
+ {
+  "lemma": "entry",
+  "skip": null,
+  "word": "entry",
+  "pos": ["명사"],
+  "ipa": "ˈentri",
+  "meaning": "(목록·설정의) 항목, 기재 사항",
+  "short": "항목, 기재 사항",
+  "senses": [
+   { "pos": "명사", "ko": "(목록·설정의) 항목, 기재 사항" },
+   { "pos": "명사", "ko": "(데이터) 입력, 기입" },
+   { "pos": "명사", "ko": "들어감, 입장" }
+  ],
+  "forms": ["entries"],
+  "synonyms": ["item", "record", "listing"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#22.6", "surface": "entry", "pos": "명사", "sense": "(목록·설정의) 항목, 기재 사항" },
+   { "sid": "lesson-d5#31.6", "surface": "entry", "pos": "명사", "sense": "(데이터) 입력, 기입" },
+   { "sid": "sample01#13.0", "surface": "entries", "pos": "명사", "sense": "(목록·설정의) 항목, 기재 사항" },
+   { "sid": "lesson-d5#28.4", "surface": "entry", "pos": "명사", "sense": "(목록·설정의) 항목, 기재 사항" }
+  ]
+ },
+ {
+  "lemma": "entrypoint",
+  "skip": null,
+  "word": "entrypoint",
+  "pos": ["명사"],
+  "ipa": "ˈentri pɔɪnt",
+  "meaning": "진입점 — 실행·처리 흐름이 시작되는 곳",
+  "short": "진입점",
+  "senses": [
+   { "pos": "명사", "ko": "진입점 (실행이 시작되는 곳)" }
+  ],
+  "forms": ["entrypoints"],
+  "synonyms": ["entry point"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#38.2", "surface": "entrypoint", "pos": "명사", "sense": "진입점 (실행이 시작되는 곳)" },
+   { "sid": "mock04#38.7", "surface": "entrypoint", "pos": "명사", "sense": "진입점 (실행이 시작되는 곳)" }
+  ]
+ },
+ {
+  "lemma": "enum",
+  "skip": null,
+  "word": "enum",
+  "pos": ["명사"],
+  "ipa": "ˈiːnəm",
+  "meaning": "열거형 — 허용 값을 미리 정해 둔 목록 타입",
+  "short": "열거형(허용 값 목록)",
+  "senses": [
+   { "pos": "명사", "ko": "열거형 (허용 값 목록 타입)" }
+  ],
+  "forms": ["enums"],
+  "synonyms": ["enumeration"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#56.1", "surface": "enum", "pos": "명사", "sense": "열거형 (허용 값 목록 타입)" },
+   { "sid": "lesson-d4#25.3", "surface": "enum", "pos": "명사", "sense": "열거형 (허용 값 목록 타입)" },
+   { "sid": "mock04#16.1", "surface": "enum", "pos": "명사", "sense": "열거형 (허용 값 목록 타입)" }
+  ]
+ },
+ {
+  "lemma": "enumerate",
+  "skip": null,
+  "word": "enumerate",
+  "pos": ["동사"],
+  "ipa": "ɪˈnuːməreɪt",
+  "meaning": "(하나하나) 열거하다, 나열하다",
+  "short": "열거하다, 나열하다",
+  "senses": [
+   { "pos": "동사", "ko": "(하나하나) 열거하다, 나열하다" },
+   { "pos": "동사", "ko": "(개수를) 세다" }
+  ],
+  "forms": ["enumerates", "enumerated", "enumerating", "enumeration"],
+  "synonyms": ["list", "itemize"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#51.2", "surface": "Enumerating", "pos": "동사", "sense": "(하나하나) 열거하다, 나열하다" },
+   { "sid": "mock04#37.5", "surface": "enumerating", "pos": "동사", "sense": "(하나하나) 열거하다, 나열하다" }
+  ]
+ },
+ {
+  "lemma": "environment",
+  "skip": null,
+  "word": "environment",
+  "pos": ["명사"],
+  "ipa": "ɪnˈvaɪrənmənt",
+  "meaning": "(실행) 환경 — 프로그램이 돌아가는 머신·설정 조건",
+  "short": "(실행) 환경",
+  "senses": [
+   { "pos": "명사", "ko": "(실행) 환경" },
+   { "pos": "명사", "ko": "(자연) 환경" },
+   { "pos": "명사", "ko": "(주변) 여건, 분위기" }
+  ],
+  "forms": ["environments", "environmental"],
+  "synonyms": ["setting", "context"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#13.5", "surface": "environment", "pos": "명사", "sense": "(실행) 환경" },
+   { "sid": "mock04#48.7", "surface": "environment", "pos": "명사", "sense": "(실행) 환경" },
+   { "sid": "lesson-d2#21.3", "surface": "environment", "pos": "명사", "sense": "(실행) 환경" }
+  ]
+ },
+ {
+  "lemma": "ephemeral",
+  "skip": null,
+  "word": "ephemeral",
+  "pos": ["형용사"],
+  "ipa": "ɪˈfemərəl",
+  "meaning": "일회성의 — 작업이 끝나면 사라지는, 잠깐만 존재하는",
+  "short": "일회성의, 임시의",
+  "senses": [
+   { "pos": "형용사", "ko": "일회성의, 잠깐만 존재하는" }
+  ],
+  "forms": [],
+  "synonyms": ["temporary", "transient", "short-lived"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#38.1", "surface": "ephemeral", "pos": "형용사", "sense": "일회성의, 잠깐만 존재하는" }
+  ]
+ },
+ {
+  "lemma": "equally",
+  "skip": null,
+  "word": "equally",
+  "pos": ["부사"],
+  "ipa": "ˈiːkwəli",
+  "meaning": "① 똑같이, 동등하게 ② (문장 앞) 마찬가지로, 동시에",
+  "short": "똑같이, 동등하게",
+  "senses": [
+   { "pos": "부사", "ko": "똑같이, 동등하게" },
+   { "pos": "부사", "ko": "(문장 앞) 마찬가지로, 동시에" }
+  ],
+  "forms": ["equal", "equality"],
+  "synonyms": ["evenly", "uniformly"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#35.6", "surface": "equally", "pos": "부사", "sense": "똑같이, 동등하게" }
+  ]
+ },
+ {
+  "lemma": "equip",
+  "skip": null,
+  "word": "equip",
+  "pos": ["동사"],
+  "ipa": "ɪˈkwɪp",
+  "meaning": "(도구·기능을) 갖추게 하다 — be equipped with: ~을 갖추다",
+  "short": "갖추게 하다",
+  "senses": [
+   { "pos": "동사", "ko": "(도구·기능을) 갖추게 하다" },
+   { "pos": "명사", "ko": "(equipment) 장비, 설비" }
+  ],
+  "forms": ["equips", "equipped", "equipping", "equipment"],
+  "synonyms": ["provide", "furnish", "outfit"],
+  "domain": "생성·추가",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#33.1", "surface": "equipped", "pos": "동사", "sense": "(도구·기능을) 갖추게 하다" }
+  ]
+ },
+ {
+  "lemma": "error",
+  "skip": null,
+  "word": "error",
+  "pos": ["명사"],
+  "ipa": "ˈerər",
+  "meaning": "① 오류, 에러 ② (사람의) 실수, 잘못",
+  "short": "오류, 에러",
+  "senses": [
+   { "pos": "명사", "ko": "오류, 에러" },
+   { "pos": "명사", "ko": "(사람의) 실수, 잘못" }
+  ],
+  "forms": ["errors", "erroneous"],
+  "synonyms": ["mistake", "fault", "bug"],
+  "domain": "오류·실패·위험",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#21.1", "surface": "error", "pos": "명사", "sense": "오류, 에러" },
+   { "sid": "lesson-d2#10.0", "surface": "error", "pos": "명사", "sense": "오류, 에러" },
+   { "sid": "lesson-d5#17.0", "surface": "error", "pos": "명사", "sense": "오류, 에러" },
+   { "sid": "mock04#27.1", "surface": "errors", "pos": "명사", "sense": "오류, 에러" }
+  ]
+ },
+ {
+  "lemma": "error-handling",
+  "skip": null,
+  "word": "error-handling",
+  "pos": ["명사구"],
+  "ipa": "ˈerər ˌhændlɪŋ",
+  "meaning": "오류 처리 (방식)",
+  "short": "오류 처리",
+  "senses": [
+   { "pos": "명사구", "ko": "오류 처리 (방식)" }
+  ],
+  "forms": ["error handling"],
+  "synonyms": ["exception handling"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#1.0", "surface": "error-handling", "pos": "명사구", "sense": "오류 처리 (방식)" },
+   { "sid": "lesson-d5#27.2", "surface": "error handling", "pos": "명사구", "sense": "오류 처리 (방식)" },
+   { "sid": "mock04#11.1", "surface": "error-handling", "pos": "명사구", "sense": "오류 처리 (방식)" }
+  ]
+ },
+ {
+  "lemma": "escape",
+  "skip": null,
+  "word": "escape",
+  "pos": ["동사", "명사"],
+  "ipa": "ɪˈskeɪp",
+  "meaning": "① (특수 문자를) 이스케이프하다 — 문법 기호로 해석되지 않게 바꿔 적다 ② 벗어나다, 빠져나가다",
+  "short": "이스케이프하다, 벗어나다",
+  "senses": [
+   { "pos": "동사", "ko": "(특수 문자를) 이스케이프하다" },
+   { "pos": "동사", "ko": "벗어나다, 빠져나가다" },
+   { "pos": "명사", "ko": "탈출, 벗어남" }
+  ],
+  "forms": ["escapes", "escaped", "escaping"],
+  "synonyms": ["flee", "evade"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "essentially",
+  "skip": null,
+  "word": "essentially",
+  "pos": ["부사"],
+  "ipa": "ɪˈsenʃəli",
+  "meaning": "① 사실상, 거의 ② 본질적으로, 근본적으로",
+  "short": "사실상, 본질적으로",
+  "senses": [
+   { "pos": "부사", "ko": "사실상, 거의" },
+   { "pos": "부사", "ko": "본질적으로, 근본적으로" }
+  ],
+  "forms": ["essential", "essence"],
+  "synonyms": ["basically", "virtually", "fundamentally"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#2.1", "surface": "essentially", "pos": "부사", "sense": "사실상, 거의" }
+  ]
+ }
+]

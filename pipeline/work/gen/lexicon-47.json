@@ -1,0 +1,2035 @@
+[
+ {
+  "lemma": "warrant",
+  "skip": null,
+  "word": "warrant",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈwɔːrənt",
+  "meaning": "(조치를) 정당화하다 — warranted: 그럴 만한, 필요하고 타당한",
+  "short": "정당화하다, 타당한",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(조치를) 정당화하다"
+   },
+   {
+    "pos": "형용사",
+    "ko": "(조치가) 타당한, 필요한"
+   },
+   {
+    "pos": "명사",
+    "ko": "영장, 보증서"
+   }
+  ],
+  "forms": [
+   "warrants",
+   "warranted",
+   "warranting"
+  ],
+  "synonyms": [
+   "justify",
+   "merit"
+  ],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#6.2",
+    "surface": "warranted",
+    "pos": "형용사",
+    "sense": "(조치가) 타당한, 필요한"
+   }
+  ]
+ },
+ {
+  "lemma": "way",
+  "skip": null,
+  "word": "way",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "weɪ",
+  "meaning": "① 방법, 방식 ② 길, 경로 ③ (~하는) 대로, 식으로",
+  "short": "방법, 방식",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "방법, 방식"
+   },
+   {
+    "pos": "명사",
+    "ko": "길, 경로"
+   },
+   {
+    "pos": "명사",
+    "ko": "(~하는) 대로, 식으로"
+   }
+  ],
+  "forms": [
+   "ways"
+  ],
+  "synonyms": [
+   "method",
+   "approach",
+   "manner"
+  ],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d1#11.2",
+    "surface": "way",
+    "pos": "명사",
+    "sense": "방법, 방식"
+   },
+   {
+    "sid": "lesson-d3#21.0",
+    "surface": "ways",
+    "pos": "명사",
+    "sense": "방법, 방식"
+   },
+   {
+    "sid": "lesson-d1#16.1",
+    "surface": "way",
+    "pos": "명사",
+    "sense": "(~하는) 대로, 식으로"
+   },
+   {
+    "sid": "lesson-d4#5.2",
+    "surface": "way",
+    "pos": "명사",
+    "sense": "방법, 방식"
+   }
+  ]
+ },
+ {
+  "lemma": "weak",
+  "skip": null,
+  "word": "weak",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "wiːk",
+  "meaning": "① 약한 ② 부실한, 빈약한",
+  "short": "약한, 부실한",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "약한, 힘이 없는"
+   },
+   {
+    "pos": "형용사",
+    "ko": "부실한, 빈약한"
+   }
+  ],
+  "forms": [
+   "weaker",
+   "weakest",
+   "weakly"
+  ],
+  "synonyms": [
+   "feeble",
+   "poor"
+  ],
+  "domain": "정확·품질·신뢰",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "mock04#52.2",
+    "surface": "weak",
+    "pos": "형용사",
+    "sense": "부실한, 빈약한"
+   }
+  ]
+ },
+ {
+  "lemma": "web",
+  "skip": null,
+  "word": "web",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "web",
+  "meaning": "① 웹 (인터넷의 월드 와이드 웹) ② 거미줄, 망",
+  "short": "웹",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "웹 (인터넷)"
+   },
+   {
+    "pos": "명사",
+    "ko": "거미줄, 망"
+   }
+  ],
+  "forms": [
+   "webs"
+  ],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d2#16.1",
+    "surface": "web",
+    "pos": "명사",
+    "sense": "웹 (인터넷)"
+   },
+   {
+    "sid": "lesson-d2#17.1",
+    "surface": "web",
+    "pos": "명사",
+    "sense": "웹 (인터넷)"
+   }
+  ]
+ },
+ {
+  "lemma": "web-researcher",
+  "skip": "code"
+ },
+ {
+  "lemma": "web-search",
+  "skip": "code"
+ },
+ {
+  "lemma": "webhook",
+  "skip": null,
+  "word": "webhook",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈwebhʊk",
+  "meaning": "웹훅 — 이벤트가 생기면 지정한 URL로 HTTP 요청을 보내 알려 주는 방식",
+  "short": "웹훅(이벤트 알림 방식)",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "웹훅 (이벤트 발생 시 URL로 알림)"
+   }
+  ],
+  "forms": [
+   "webhooks"
+  ],
+  "synonyms": [],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d3#22.0",
+    "surface": "webhook",
+    "pos": "명사",
+    "sense": "웹훅 (이벤트 발생 시 URL로 알림)"
+   },
+   {
+    "sid": "mock04#38.1",
+    "surface": "webhook",
+    "pos": "명사",
+    "sense": "웹훅 (이벤트 발생 시 URL로 알림)"
+   }
+  ]
+ },
+ {
+  "lemma": "website",
+  "skip": null,
+  "word": "website",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈwebsaɪt",
+  "meaning": "웹사이트",
+  "short": "웹사이트",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "웹사이트"
+   }
+  ],
+  "forms": [
+   "websites"
+  ],
+  "synonyms": [
+   "site"
+  ],
+  "domain": "시스템·도구·기술",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d5#10.0",
+    "surface": "website",
+    "pos": "명사",
+    "sense": "웹사이트"
+   },
+   {
+    "sid": "sample01#7.0",
+    "surface": "website",
+    "pos": "명사",
+    "sense": "웹사이트"
+   },
+   {
+    "sid": "lesson-d5#10.1",
+    "surface": "website",
+    "pos": "명사",
+    "sense": "웹사이트"
+   }
+  ]
+ },
+ {
+  "lemma": "week",
+  "skip": null,
+  "word": "week",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "wiːk",
+  "meaning": "주, 일주일",
+  "short": "주, 일주일",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "주, 일주일"
+   }
+  ],
+  "forms": [
+   "weeks",
+   "weekly"
+  ],
+  "synonyms": [],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d4#2.1",
+    "surface": "week",
+    "pos": "명사",
+    "sense": "주, 일주일"
+   },
+   {
+    "sid": "mock04#28.2",
+    "surface": "week",
+    "pos": "명사",
+    "sense": "주, 일주일"
+   },
+   {
+    "sid": "lesson-d3#1.6",
+    "surface": "week",
+    "pos": "명사",
+    "sense": "주, 일주일"
+   },
+   {
+    "sid": "lesson-d4#31.2",
+    "surface": "week's",
+    "pos": "명사",
+    "sense": "주, 일주일"
+   }
+  ]
+ },
+ {
+  "lemma": "weekly",
+  "skip": null,
+  "word": "weekly",
+  "pos": [
+   "형용사",
+   "부사"
+  ],
+  "ipa": "ˈwiːkli",
+  "meaning": "① 주간의, 매주의 ② 매주",
+  "short": "주간의, 매주의",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "주간의, 매주의"
+   },
+   {
+    "pos": "부사",
+    "ko": "매주, 주 1회"
+   }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "mock04#28.1",
+    "surface": "weekly",
+    "pos": "형용사",
+    "sense": "주간의, 매주의"
+   },
+   {
+    "sid": "lesson-d4#31.2",
+    "surface": "weekly",
+    "pos": "형용사",
+    "sense": "주간의, 매주의"
+   }
+  ]
+ },
+ {
+  "lemma": "weigh",
+  "skip": null,
+  "word": "weigh",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "weɪ",
+  "meaning": "(따져 보며) 저울질하다, 비교 검토하다",
+  "short": "저울질하다, 따져 보다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(따져 보며) 저울질하다, 비교 검토하다"
+   },
+   {
+    "pos": "동사",
+    "ko": "무게가 ~이다, 무게를 재다"
+   }
+  ],
+  "forms": [
+   "weighs",
+   "weighed",
+   "weighing"
+  ],
+  "synonyms": [
+   "consider",
+   "evaluate"
+  ],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "weight",
+  "skip": null,
+  "word": "weight",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "weɪt",
+  "meaning": "① 무게, 중량 ② 가중치 — 얼마나 중시할지 정하는 값",
+  "short": "무게, 가중치",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "무게, 중량"
+   },
+   {
+    "pos": "명사",
+    "ko": "가중치 (중시 정도를 정하는 값)"
+   }
+  ],
+  "forms": [
+   "weights"
+  ],
+  "synonyms": [],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d5#31.1",
+    "surface": "weight",
+    "pos": "명사",
+    "sense": "무게, 중량"
+   },
+   {
+    "sid": "lesson-d2#1.4",
+    "surface": "weight",
+    "pos": "명사",
+    "sense": "가중치 (중시 정도를 정하는 값)"
+   },
+   {
+    "sid": "lesson-d5#31.4",
+    "surface": "weight",
+    "pos": "명사",
+    "sense": "무게, 중량"
+   },
+   {
+    "sid": "lesson-d2#5.5",
+    "surface": "weight",
+    "pos": "명사",
+    "sense": "가중치 (중시 정도를 정하는 값)"
+   }
+  ]
+ },
+ {
+  "lemma": "well",
+  "skip": null,
+  "word": "well",
+  "pos": [
+   "부사",
+   "형용사"
+  ],
+  "ipa": "wel",
+  "meaning": "① 잘, 훌륭하게 ② 충분히, 넉넉히 ③ 건강한",
+  "short": "잘, 충분히",
+  "senses": [
+   {
+    "pos": "부사",
+    "ko": "잘, 훌륭하게"
+   },
+   {
+    "pos": "부사",
+    "ko": "충분히, 넉넉히"
+   },
+   {
+    "pos": "형용사",
+    "ko": "건강한, 괜찮은"
+   }
+  ],
+  "forms": [
+   "better",
+   "best"
+  ],
+  "synonyms": [
+   "properly",
+   "skillfully"
+  ],
+  "domain": "정확·품질·신뢰",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d4#10.1",
+    "surface": "well",
+    "pos": "부사",
+    "sense": "잘, 훌륭하게"
+   },
+   {
+    "sid": "mock04#51.1",
+    "surface": "well",
+    "pos": "부사",
+    "sense": "잘, 훌륭하게"
+   },
+   {
+    "sid": "lesson-d4#28.4",
+    "surface": "well",
+    "pos": "부사",
+    "sense": "충분히, 넉넉히"
+   },
+   {
+    "sid": "lesson-d4#12.2",
+    "surface": "well",
+    "pos": "부사",
+    "sense": "잘, 훌륭하게"
+   }
+  ]
+ },
+ {
+  "lemma": "well-formed",
+  "skip": null,
+  "word": "well-formed",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌwel ˈfɔːrmd",
+  "meaning": "형식이 올바른, 문법에 맞게 짜인 (well-formed JSON)",
+  "short": "형식이 올바른",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "형식이 올바른, 문법에 맞는"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "valid",
+   "properly formatted"
+  ],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d2#3.3",
+    "surface": "well-formed",
+    "pos": "형용사",
+    "sense": "형식이 올바른, 문법에 맞는"
+   },
+   {
+    "sid": "lesson-d4#23.7",
+    "surface": "well-formed",
+    "pos": "형용사",
+    "sense": "형식이 올바른, 문법에 맞는"
+   }
+  ]
+ },
+ {
+  "lemma": "well-structured",
+  "skip": null,
+  "word": "well-structured",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌwel ˈstrʌktʃərd",
+  "meaning": "구조가 잘 잡힌, 짜임새 있는",
+  "short": "짜임새 있는",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "구조가 잘 잡힌, 짜임새 있는"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "organized",
+   "well-organized"
+  ],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#25.7",
+    "surface": "well-structured",
+    "pos": "형용사",
+    "sense": "구조가 잘 잡힌, 짜임새 있는"
+   }
+  ]
+ },
+ {
+  "lemma": "whatever",
+  "skip": null,
+  "word": "whatever",
+  "pos": [
+   "대명사",
+   "형용사"
+  ],
+  "ipa": "wʌtˈevər",
+  "meaning": "무엇이든, 어떤 ~이든 (상관없이)",
+  "short": "무엇이든, 어떤 ~이든",
+  "senses": [
+   {
+    "pos": "대명사",
+    "ko": "무엇이든, ~하는 것은 무엇이든"
+   },
+   {
+    "pos": "형용사",
+    "ko": "어떤 ~이든 (상관없이)"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "no matter what"
+  ],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#42.7",
+    "surface": "whatever",
+    "pos": "대명사",
+    "sense": "무엇이든, ~하는 것은 무엇이든"
+   },
+   {
+    "sid": "mock04#7.7",
+    "surface": "whatever",
+    "pos": "형용사",
+    "sense": "어떤 ~이든 (상관없이)"
+   }
+  ]
+ },
+ {
+  "lemma": "whenever",
+  "skip": null,
+  "word": "whenever",
+  "pos": [
+   "접속사"
+  ],
+  "ipa": "wenˈevər",
+  "meaning": "① ~할 때마다 ② ~하면 언제든",
+  "short": "~할 때마다",
+  "senses": [
+   {
+    "pos": "접속사",
+    "ko": "~할 때마다"
+   },
+   {
+    "pos": "접속사",
+    "ko": "~하면 언제든"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "every time",
+   "each time"
+  ],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#16.1",
+    "surface": "whenever",
+    "pos": "접속사",
+    "sense": "~할 때마다"
+   },
+   {
+    "sid": "lesson-d5#11.0",
+    "surface": "whenever",
+    "pos": "접속사",
+    "sense": "~할 때마다"
+   },
+   {
+    "sid": "lesson-d4#10.4",
+    "surface": "whenever",
+    "pos": "접속사",
+    "sense": "~하면 언제든"
+   },
+   {
+    "sid": "mock04#29.1",
+    "surface": "whenever",
+    "pos": "접속사",
+    "sense": "~할 때마다"
+   }
+  ]
+ },
+ {
+  "lemma": "wherever",
+  "skip": null,
+  "word": "wherever",
+  "pos": [
+   "접속사"
+  ],
+  "ipa": "werˈevər",
+  "meaning": "~하는 곳이면 어디서나",
+  "short": "어디서든, ~하는 곳마다",
+  "senses": [
+   {
+    "pos": "접속사",
+    "ko": "~하는 곳이면 어디서나"
+   },
+   {
+    "pos": "부사",
+    "ko": "도대체 어디에"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "anywhere"
+  ],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#38.4",
+    "surface": "wherever",
+    "pos": "접속사",
+    "sense": "~하는 곳이면 어디서나"
+   }
+  ]
+ },
+ {
+  "lemma": "whether",
+  "skip": null,
+  "word": "whether",
+  "pos": [
+   "접속사"
+  ],
+  "ipa": "ˈweðər",
+  "meaning": "~인지 (아닌지), ~이든 아니든",
+  "short": "~인지 (아닌지)",
+  "senses": [
+   {
+    "pos": "접속사",
+    "ko": "~인지 (아닌지)"
+   },
+   {
+    "pos": "접속사",
+    "ko": "~이든 아니든"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "if"
+  ],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d3#22.0",
+    "surface": "whether",
+    "pos": "접속사",
+    "sense": "~인지 (아닌지)"
+   },
+   {
+    "sid": "lesson-d5#31.6",
+    "surface": "whether",
+    "pos": "접속사",
+    "sense": "~이든 아니든"
+   },
+   {
+    "sid": "lesson-d1#19.6",
+    "surface": "whether",
+    "pos": "접속사",
+    "sense": "~인지 (아닌지)"
+   },
+   {
+    "sid": "mock04#51.1",
+    "surface": "whether",
+    "pos": "접속사",
+    "sense": "~인지 (아닌지)"
+   }
+  ]
+ },
+ {
+  "lemma": "whichever",
+  "skip": null,
+  "word": "whichever",
+  "pos": [
+   "대명사",
+   "형용사"
+  ],
+  "ipa": "wɪtʃˈevər",
+  "meaning": "어느 것이든, 어느 ~이든",
+  "short": "어느 것이든",
+  "senses": [
+   {
+    "pos": "대명사",
+    "ko": "어느 것이든, ~하는 쪽"
+   },
+   {
+    "pos": "형용사",
+    "ko": "어느 ~이든"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "any that"
+  ],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#30.2",
+    "surface": "whichever",
+    "pos": "대명사",
+    "sense": "어느 것이든, ~하는 쪽"
+   },
+   {
+    "sid": "lesson-d1#17.6",
+    "surface": "whichever",
+    "pos": "형용사",
+    "sense": "어느 ~이든"
+   },
+   {
+    "sid": "lesson-d5#37.5",
+    "surface": "whichever",
+    "pos": "대명사",
+    "sense": "어느 것이든, ~하는 쪽"
+   },
+   {
+    "sid": "mock04#31.5",
+    "surface": "whichever",
+    "pos": "대명사",
+    "sense": "어느 것이든, ~하는 쪽"
+   }
+  ]
+ },
+ {
+  "lemma": "while",
+  "skip": null,
+  "word": "while",
+  "pos": [
+   "접속사",
+   "명사"
+  ],
+  "ipa": "waɪl",
+  "meaning": "① ~하는 동안, ~하면서 ② ~인 반면 ③ 잠시, 한동안",
+  "short": "~하는 동안, ~인 반면",
+  "senses": [
+   {
+    "pos": "접속사",
+    "ko": "~하는 동안, ~하면서"
+   },
+   {
+    "pos": "접속사",
+    "ko": "~인 반면"
+   },
+   {
+    "pos": "명사",
+    "ko": "잠시, 한동안"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "whereas",
+   "during"
+  ],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d3#19.0",
+    "surface": "While",
+    "pos": "접속사",
+    "sense": "~하는 동안, ~하면서"
+   },
+   {
+    "sid": "lesson-d4#22.1",
+    "surface": "while",
+    "pos": "접속사",
+    "sense": "~인 반면"
+   },
+   {
+    "sid": "lesson-d5#15.0",
+    "surface": "while",
+    "pos": "접속사",
+    "sense": "~인 반면"
+   },
+   {
+    "sid": "sample01#9.5",
+    "surface": "while",
+    "pos": "접속사",
+    "sense": "~하는 동안, ~하면서"
+   }
+  ]
+ },
+ {
+  "lemma": "whole",
+  "skip": null,
+  "word": "whole",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "hoʊl",
+  "meaning": "① 전체의, 전부의 ② 통째로 된, 온전한 ③ 전체",
+  "short": "전체의, 전부의",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "전체의, 전부의"
+   },
+   {
+    "pos": "형용사",
+    "ko": "통째로 된, 온전한"
+   },
+   {
+    "pos": "명사",
+    "ko": "전체, 전부"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "entire",
+   "complete",
+   "full"
+  ],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d2#21.0",
+    "surface": "whole",
+    "pos": "형용사",
+    "sense": "전체의, 전부의"
+   },
+   {
+    "sid": "lesson-d4#14.2",
+    "surface": "whole",
+    "pos": "형용사",
+    "sense": "전체의, 전부의"
+   },
+   {
+    "sid": "lesson-d3#24.6",
+    "surface": "whole",
+    "pos": "형용사",
+    "sense": "통째로 된, 온전한"
+   },
+   {
+    "sid": "lesson-d5#22.5",
+    "surface": "whole",
+    "pos": "형용사",
+    "sense": "통째로 된, 온전한"
+   }
+  ]
+ },
+ {
+  "lemma": "whose",
+  "skip": null,
+  "word": "whose",
+  "pos": [
+   "대명사"
+  ],
+  "ipa": "huːz",
+  "meaning": "① (관계사) 그것의 ~가 ② (의문) 누구의",
+  "short": "그것의 ~가, 누구의",
+  "senses": [
+   {
+    "pos": "대명사",
+    "ko": "(관계사) 그것의 ~가"
+   },
+   {
+    "pos": "대명사",
+    "ko": "(의문) 누구의"
+   }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#18.0",
+    "surface": "whose",
+    "pos": "대명사",
+    "sense": "(관계사) 그것의 ~가"
+   },
+   {
+    "sid": "lesson-d5#11.2",
+    "surface": "whose",
+    "pos": "대명사",
+    "sense": "(관계사) 그것의 ~가"
+   },
+   {
+    "sid": "lesson-d2#13.5",
+    "surface": "whose",
+    "pos": "대명사",
+    "sense": "(관계사) 그것의 ~가"
+   },
+   {
+    "sid": "mock04#33.5",
+    "surface": "whose",
+    "pos": "대명사",
+    "sense": "(관계사) 그것의 ~가"
+   }
+  ]
+ },
+ {
+  "lemma": "wide",
+  "skip": null,
+  "word": "wide",
+  "pos": [
+   "형용사",
+   "부사"
+  ],
+  "ipa": "waɪd",
+  "meaning": "① (범위가) 넓은, 광범위한 ② 폭이 ~인",
+  "short": "넓은, 광범위한",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "(범위가) 넓은, 광범위한"
+   },
+   {
+    "pos": "형용사",
+    "ko": "폭이 ~인"
+   }
+  ],
+  "forms": [
+   "wider",
+   "widest",
+   "widely"
+  ],
+  "synonyms": [
+   "broad",
+   "extensive"
+  ],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d2#11.4",
+    "surface": "wider",
+    "pos": "형용사",
+    "sense": "(범위가) 넓은, 광범위한"
+   },
+   {
+    "sid": "lesson-d4#2.4",
+    "surface": "wider",
+    "pos": "형용사",
+    "sense": "(범위가) 넓은, 광범위한"
+   }
+  ]
+ },
+ {
+  "lemma": "widely-used",
+  "skip": null,
+  "word": "widely-used",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈwaɪdli juːzd",
+  "meaning": "널리 쓰이는",
+  "short": "널리 쓰이는",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "널리 쓰이는"
+   }
+  ],
+  "forms": [
+   "widely used"
+  ],
+  "synonyms": [
+   "popular",
+   "common"
+  ],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#19.1",
+    "surface": "widely-used",
+    "pos": "형용사",
+    "sense": "널리 쓰이는"
+   },
+   {
+    "sid": "lesson-d3#25.4",
+    "surface": "widely used",
+    "pos": "형용사",
+    "sense": "널리 쓰이는"
+   }
+  ]
+ },
+ {
+  "lemma": "widen",
+  "skip": null,
+  "word": "widen",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈwaɪdn",
+  "meaning": "넓히다, 확대하다",
+  "short": "넓히다, 확대하다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "넓히다, 확대하다"
+   },
+   {
+    "pos": "동사",
+    "ko": "넓어지다"
+   }
+  ],
+  "forms": [
+   "widens",
+   "widened",
+   "widening"
+  ],
+  "synonyms": [
+   "broaden",
+   "expand"
+  ],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#7.4",
+    "surface": "widen",
+    "pos": "동사",
+    "sense": "넓히다, 확대하다"
+   }
+  ]
+ },
+ {
+  "lemma": "window",
+  "skip": null,
+  "word": "window",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈwɪndoʊ",
+  "meaning": "① (컨텍스트) 창 — context window: 모델이 한 번에 담을 수 있는 토큰 범위 ② (시간의) 구간",
+  "short": "(컨텍스트) 창, 구간",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "(컨텍스트) 창, 토큰 범위"
+   },
+   {
+    "pos": "명사",
+    "ko": "(시간의) 구간"
+   },
+   {
+    "pos": "명사",
+    "ko": "창문, 창"
+   }
+  ],
+  "forms": [
+   "windows"
+  ],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#33.6",
+    "surface": "window",
+    "pos": "명사",
+    "sense": "(컨텍스트) 창, 토큰 범위"
+   },
+   {
+    "sid": "lesson-d4#28.6",
+    "surface": "window",
+    "pos": "명사",
+    "sense": "(시간의) 구간"
+   },
+   {
+    "sid": "lesson-d3#18.4",
+    "surface": "window",
+    "pos": "명사",
+    "sense": "(컨텍스트) 창, 토큰 범위"
+   },
+   {
+    "sid": "sample01#6.4",
+    "surface": "window",
+    "pos": "명사",
+    "sense": "(컨텍스트) 창, 토큰 범위"
+   }
+  ]
+ },
+ {
+  "lemma": "withdrawal",
+  "skip": null,
+  "word": "withdrawal",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "wɪðˈdrɔːəl",
+  "meaning": "① 출금, 인출 ② 철수, 철회",
+  "short": "출금, 인출",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "출금, 인출"
+   },
+   {
+    "pos": "명사",
+    "ko": "철수, 철회"
+   }
+  ],
+  "forms": [
+   "withdrawals",
+   "withdraw"
+  ],
+  "synonyms": [
+   "removal"
+  ],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#20.1",
+    "surface": "withdrawals",
+    "pos": "명사",
+    "sense": "출금, 인출"
+   }
+  ]
+ },
+ {
+  "lemma": "withhold",
+  "skip": null,
+  "word": "withhold",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "wɪðˈhoʊld",
+  "meaning": "주지 않다, 보류하다",
+  "short": "주지 않다, 보류하다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "주지 않다, 보류하다"
+   },
+   {
+    "pos": "동사",
+    "ko": "(정보를) 알리지 않다, 숨기다"
+   }
+  ],
+  "forms": [
+   "withholds",
+   "withheld",
+   "withholding"
+  ],
+  "synonyms": [
+   "hold back",
+   "keep back"
+  ],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d3#27.4",
+    "surface": "Withhold",
+    "pos": "동사",
+    "sense": "(정보를) 알리지 않다, 숨기다"
+   }
+  ]
+ },
+ {
+  "lemma": "within",
+  "skip": null,
+  "word": "within",
+  "pos": [
+   "전치사"
+  ],
+  "ipa": "wɪˈðɪn",
+  "meaning": "~ 안에서, ~ 이내에",
+  "short": "~ 이내에, ~ 안에서",
+  "senses": [
+   {
+    "pos": "전치사",
+    "ko": "~ 이내에"
+   },
+   {
+    "pos": "전치사",
+    "ko": "~ 안에서"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "inside"
+  ],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#28.0",
+    "surface": "within",
+    "pos": "전치사",
+    "sense": "~ 이내에"
+   },
+   {
+    "sid": "lesson-d5#10.1",
+    "surface": "within",
+    "pos": "전치사",
+    "sense": "~ 이내에"
+   },
+   {
+    "sid": "mock04#52.1",
+    "surface": "within",
+    "pos": "전치사",
+    "sense": "~ 안에서"
+   },
+   {
+    "sid": "mock04#26.6",
+    "surface": "within",
+    "pos": "전치사",
+    "sense": "~ 안에서"
+   }
+  ]
+ },
+ {
+  "lemma": "without",
+  "skip": null,
+  "word": "without",
+  "pos": [
+   "전치사"
+  ],
+  "ipa": "wɪˈðaʊt",
+  "meaning": "① ~ 없이 ② ~하지 않고",
+  "short": "~ 없이, ~하지 않고",
+  "senses": [
+   {
+    "pos": "전치사",
+    "ko": "~ 없이"
+   },
+   {
+    "pos": "전치사",
+    "ko": "~하지 않고"
+   }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "논리·관계·연결어",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d1#19.1",
+    "surface": "without",
+    "pos": "전치사",
+    "sense": "~ 없이"
+   },
+   {
+    "sid": "lesson-d3#19.0",
+    "surface": "without",
+    "pos": "전치사",
+    "sense": "~하지 않고"
+   },
+   {
+    "sid": "lesson-d2#20.1",
+    "surface": "without",
+    "pos": "전치사",
+    "sense": "~하지 않고"
+   },
+   {
+    "sid": "lesson-d5#19.6",
+    "surface": "without",
+    "pos": "전치사",
+    "sense": "~ 없이"
+   }
+  ]
+ },
+ {
+  "lemma": "word",
+  "skip": null,
+  "word": "word",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "wɜːrd",
+  "meaning": "① 단어, 낱말 ② 표현, 말씨 (wording) ③ (~라고) 표현하다",
+  "short": "단어, 표현",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "단어, 낱말"
+   },
+   {
+    "pos": "명사",
+    "ko": "표현, 말씨"
+   },
+   {
+    "pos": "동사",
+    "ko": "(~라고) 표현하다"
+   }
+  ],
+  "forms": [
+   "words",
+   "wording",
+   "worded"
+  ],
+  "synonyms": [
+   "term",
+   "phrasing"
+  ],
+  "domain": "데이터·정보·문서",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d4#12.1",
+    "surface": "words",
+    "pos": "명사",
+    "sense": "단어, 낱말"
+   },
+   {
+    "sid": "lesson-d3#1.4",
+    "surface": "wording",
+    "pos": "명사",
+    "sense": "표현, 말씨"
+   },
+   {
+    "sid": "mock04#46.1",
+    "surface": "word",
+    "pos": "명사",
+    "sense": "단어, 낱말"
+   },
+   {
+    "sid": "lesson-d5#2.5",
+    "surface": "wording",
+    "pos": "명사",
+    "sense": "표현, 말씨"
+   }
+  ]
+ },
+ {
+  "lemma": "work",
+  "skip": null,
+  "word": "work",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "wɜːrk",
+  "meaning": "① 작동하다, 동작하다 ② 일하다, 작업하다 ③ 일, 작업(물)",
+  "short": "작동하다, 작업(하다)",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "작동하다, 동작하다"
+   },
+   {
+    "pos": "동사",
+    "ko": "일하다, 작업하다"
+   },
+   {
+    "pos": "명사",
+    "ko": "일, 작업, 작업물"
+   }
+  ],
+  "forms": [
+   "works",
+   "worked",
+   "working"
+  ],
+  "synonyms": [
+   "function",
+   "operate"
+  ],
+  "domain": "실행·처리",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d1#20.1",
+    "surface": "working",
+    "pos": "동사",
+    "sense": "일하다, 작업하다"
+   },
+   {
+    "sid": "mock04#11.2",
+    "surface": "works",
+    "pos": "동사",
+    "sense": "작동하다, 동작하다"
+   },
+   {
+    "sid": "lesson-d2#27.0",
+    "surface": "work",
+    "pos": "명사",
+    "sense": "일, 작업, 작업물"
+   },
+   {
+    "sid": "lesson-d1#30.0",
+    "surface": "work",
+    "pos": "동사",
+    "sense": "작동하다, 동작하다"
+   }
+  ]
+ },
+ {
+  "lemma": "worker",
+  "skip": null,
+  "word": "worker",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈwɜːrkər",
+  "meaning": "① 워커 (작업을 대신 처리하는 프로세스) ② 노동자, 직원",
+  "short": "워커, 작업자",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "워커 (작업을 처리하는 프로세스)"
+   },
+   {
+    "pos": "명사",
+    "ko": "노동자, 직원"
+   }
+  ],
+  "forms": [
+   "workers"
+  ],
+  "synonyms": [],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d3#22.0",
+    "surface": "worker",
+    "pos": "명사",
+    "sense": "워커 (작업을 처리하는 프로세스)"
+   },
+   {
+    "sid": "lesson-d1#34.4",
+    "surface": "workers",
+    "pos": "명사",
+    "sense": "워커 (작업을 처리하는 프로세스)"
+   },
+   {
+    "sid": "lesson-d4#33.3",
+    "surface": "worker",
+    "pos": "명사",
+    "sense": "워커 (작업을 처리하는 프로세스)"
+   }
+  ]
+ },
+ {
+  "lemma": "workflow",
+  "skip": null,
+  "word": "workflow",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈwɜːrkfloʊ",
+  "meaning": "워크플로 — 작업이 정해진 단계·순서로 이어지는 흐름",
+  "short": "워크플로(작업 흐름)",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "워크플로, 작업 흐름"
+   }
+  ],
+  "forms": [
+   "workflows"
+  ],
+  "synonyms": [
+   "process",
+   "pipeline"
+  ],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#34.2",
+    "surface": "workflow",
+    "pos": "명사",
+    "sense": "워크플로, 작업 흐름"
+   },
+   {
+    "sid": "lesson-d3#33.0",
+    "surface": "workflow",
+    "pos": "명사",
+    "sense": "워크플로, 작업 흐름"
+   },
+   {
+    "sid": "lesson-d3#30.5",
+    "surface": "workflow",
+    "pos": "명사",
+    "sense": "워크플로, 작업 흐름"
+   },
+   {
+    "sid": "mock04#29.2",
+    "surface": "workflow",
+    "pos": "명사",
+    "sense": "워크플로, 작업 흐름"
+   }
+  ]
+ },
+ {
+  "lemma": "workload",
+  "skip": null,
+  "word": "workload",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈwɜːrkloʊd",
+  "meaning": "작업량, (처리해야 할) 작업의 성격·부하",
+  "short": "작업량, 작업 부하",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "작업량, 작업 부하"
+   }
+  ],
+  "forms": [
+   "workloads"
+  ],
+  "synonyms": [],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#31.0",
+    "surface": "workloads",
+    "pos": "명사",
+    "sense": "작업량, 작업 부하"
+   },
+   {
+    "sid": "mock04#25.3",
+    "surface": "workload",
+    "pos": "명사",
+    "sense": "작업량, 작업 부하"
+   },
+   {
+    "sid": "lesson-d4#31.1",
+    "surface": "workload",
+    "pos": "명사",
+    "sense": "작업량, 작업 부하"
+   }
+  ]
+ },
+ {
+  "lemma": "worktree",
+  "skip": null,
+  "word": "worktree",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈwɜːrktriː",
+  "meaning": "워크트리 — 하나의 저장소에서 브랜치별로 따로 작업 디렉터리를 두는 Git 기능",
+  "short": "워크트리, 별도 작업 폴더",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "워크트리 (Git의 별도 작업 디렉터리)"
+   }
+  ],
+  "forms": [
+   "worktrees"
+  ],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "selfcheck-d1-kor#39.0",
+    "surface": "worktree",
+    "pos": "명사",
+    "sense": "워크트리 (Git의 별도 작업 디렉터리)"
+   }
+  ]
+ },
+ {
+  "lemma": "worry",
+  "skip": null,
+  "word": "worry",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈwɜːri",
+  "meaning": "① 걱정하다, 우려하다 ② 걱정, 근심",
+  "short": "걱정하다, 우려하다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "걱정하다, 우려하다"
+   },
+   {
+    "pos": "형용사",
+    "ko": "걱정하는, 불안한"
+   },
+   {
+    "pos": "명사",
+    "ko": "걱정, 근심"
+   }
+  ],
+  "forms": [
+   "worries",
+   "worried",
+   "worrying"
+  ],
+  "synonyms": [
+   "concern",
+   "fret"
+  ],
+  "domain": "오류·실패·위험",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d1#21.1",
+    "surface": "worries",
+    "pos": "동사",
+    "sense": "걱정하다, 우려하다"
+   },
+   {
+    "sid": "lesson-d4#16.1",
+    "surface": "worried",
+    "pos": "형용사",
+    "sense": "걱정하는, 불안한"
+   }
+  ]
+ },
+ {
+  "lemma": "worse",
+  "skip": null,
+  "word": "worse",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "wɜːrs",
+  "meaning": "더 나쁜, 악화된",
+  "short": "더 나쁜, 악화된",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "더 나쁜, 악화된"
+   },
+   {
+    "pos": "부사",
+    "ko": "더 나쁘게"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "poorer",
+   "inferior"
+  ],
+  "domain": "정확·품질·신뢰",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d2#7.1",
+    "surface": "worse",
+    "pos": "형용사",
+    "sense": "더 나쁜, 악화된"
+   },
+   {
+    "sid": "lesson-d4#9.3",
+    "surface": "worse",
+    "pos": "형용사",
+    "sense": "더 나쁜, 악화된"
+   }
+  ]
+ },
+ {
+  "lemma": "worst",
+  "skip": null,
+  "word": "worst",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "wɜːrst",
+  "meaning": "최악의, 가장 나쁜",
+  "short": "최악의, 가장 나쁜",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "최악의, 가장 나쁜"
+   },
+   {
+    "pos": "명사",
+    "ko": "최악(의 상황)"
+   }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "정확·품질·신뢰",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d4#28.2",
+    "surface": "worst",
+    "pos": "형용사",
+    "sense": "최악의, 가장 나쁜"
+   }
+  ]
+ },
+ {
+  "lemma": "wrap",
+  "skip": null,
+  "word": "wrap",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ræp",
+  "meaning": "감싸다, (앞뒤로) 둘러싸다",
+  "short": "감싸다, 둘러싸다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "감싸다, 둘러싸다"
+   },
+   {
+    "pos": "동사",
+    "ko": "(다른 코드로) 감싸 처리하다"
+   }
+  ],
+  "forms": [
+   "wraps",
+   "wrapped",
+   "wrapping"
+  ],
+  "synonyms": [
+   "enclose",
+   "envelop"
+  ],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#53.1",
+    "surface": "wraps",
+    "pos": "동사",
+    "sense": "감싸다, 둘러싸다"
+   },
+   {
+    "sid": "lesson-d4#6.5",
+    "surface": "Wrap",
+    "pos": "동사",
+    "sense": "감싸다, 둘러싸다"
+   },
+   {
+    "sid": "lesson-d3#30.0",
+    "surface": "wraps",
+    "pos": "동사",
+    "sense": "(다른 코드로) 감싸 처리하다"
+   },
+   {
+    "sid": "lesson-d4#14.4",
+    "surface": "Wrap",
+    "pos": "동사",
+    "sense": "(다른 코드로) 감싸 처리하다"
+   }
+  ]
+ },
+ {
+  "lemma": "wrapper",
+  "skip": null,
+  "word": "wrapper",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈræpər",
+  "meaning": "래퍼 — 기존 기능을 감싸 동작을 덧붙이거나 제어하는 코드 층",
+  "short": "래퍼(감싸는 코드 층)",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "래퍼 (기능을 감싸는 코드 층)"
+   },
+   {
+    "pos": "명사",
+    "ko": "포장지, 겉싸개"
+   }
+  ],
+  "forms": [
+   "wrappers"
+  ],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#1.2",
+    "surface": "wrapper",
+    "pos": "명사",
+    "sense": "래퍼 (기능을 감싸는 코드 층)"
+   }
+  ]
+ },
+ {
+  "lemma": "write",
+  "skip": null,
+  "word": "write",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "raɪt",
+  "meaning": "① (글·코드를) 쓰다, 작성하다 ② (파일에) 쓰다, 기록하다",
+  "short": "쓰다, 작성하다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(글·코드를) 쓰다, 작성하다"
+   },
+   {
+    "pos": "동사",
+    "ko": "(파일에) 쓰다, 기록하다"
+   },
+   {
+    "pos": "형용사",
+    "ko": "문서로 된, 서면의"
+   }
+  ],
+  "forms": [
+   "writes",
+   "writing",
+   "wrote",
+   "written"
+  ],
+  "synonyms": [
+   "compose",
+   "author"
+  ],
+  "domain": "생성·추가",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d3#12.0",
+    "surface": "writes",
+    "pos": "동사",
+    "sense": "(글·코드를) 쓰다, 작성하다"
+   },
+   {
+    "sid": "sample01#11.0",
+    "surface": "writes",
+    "pos": "동사",
+    "sense": "(파일에) 쓰다, 기록하다"
+   },
+   {
+    "sid": "lesson-d5#11.2",
+    "surface": "written",
+    "pos": "형용사",
+    "sense": "문서로 된, 서면의"
+   },
+   {
+    "sid": "mock04#1.2",
+    "surface": "wrote",
+    "pos": "동사",
+    "sense": "(글·코드를) 쓰다, 작성하다"
+   }
+  ]
+ },
+ {
+  "lemma": "wrong",
+  "skip": null,
+  "word": "wrong",
+  "pos": [
+   "형용사",
+   "부사",
+   "명사"
+  ],
+  "ipa": "rɔːŋ",
+  "meaning": "① 틀린, 잘못된 ② 잘못되어 ③ 잘못, 부당한 행위",
+  "short": "틀린, 잘못된",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "틀린, 잘못된"
+   },
+   {
+    "pos": "부사",
+    "ko": "잘못되어, 틀리게"
+   },
+   {
+    "pos": "명사",
+    "ko": "잘못, 부당한 행위"
+   }
+  ],
+  "forms": [
+   "wrongly"
+  ],
+  "synonyms": [
+   "incorrect",
+   "mistaken"
+  ],
+  "domain": "오류·실패·위험",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d2#1.0",
+    "surface": "wrong",
+    "pos": "형용사",
+    "sense": "틀린, 잘못된"
+   },
+   {
+    "sid": "lesson-d1#9.2",
+    "surface": "wrong",
+    "pos": "부사",
+    "sense": "잘못되어, 틀리게"
+   },
+   {
+    "sid": "lesson-d4#19.6",
+    "surface": "wrong",
+    "pos": "형용사",
+    "sense": "틀린, 잘못된"
+   },
+   {
+    "sid": "mock04#10.2",
+    "surface": "wrong",
+    "pos": "형용사",
+    "sense": "틀린, 잘못된"
+   }
+  ]
+ },
+ {
+  "lemma": "wrongly",
+  "skip": null,
+  "word": "wrongly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈrɔːŋli",
+  "meaning": "잘못하여, 부당하게",
+  "short": "잘못, 부당하게",
+  "senses": [
+   {
+    "pos": "부사",
+    "ko": "잘못하여, 부당하게"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "incorrectly",
+   "unjustly"
+  ],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#22.2",
+    "surface": "wrongly",
+    "pos": "부사",
+    "sense": "잘못하여, 부당하게"
+   }
+  ]
+ }
+]

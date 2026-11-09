@@ -1,0 +1,1369 @@
+[
+ {
+  "lemma": "top-level",
+  "kind": "new",
+  "surfaces": [
+   "top-level"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d1#28.4",
+    "en": "Move the message into the top-level systemMessage field so the agent sees a clearer explanation."
+   },
+   {
+    "sid": "lesson-d4#11.4",
+    "en": "Two examples that look alike: a top-level handler that logs and rethrows, marked acceptable, and a `catch` around a payment write that swallows the error, marked as an issue, each with a one-line reason"
+   },
+   {
+    "sid": "lesson-d5#24.5",
+    "en": "Run the search in the main agent one top-level directory at a time, and note each batch of matched paths before starting the next."
+   }
+  ]
+ },
+ {
+  "lemma": "topic",
+  "kind": "new",
+  "surfaces": [
+   "topics",
+   "topic"
+  ],
+  "freq": 13,
+  "sentences": [
+   {
+    "sid": "lesson-d1#18.0",
+    "en": "A coordinator runs a \"web-researcher\" subagent that gathers ten sources on a topic, then spawns a \"synthesis\" subagent to write the final report."
+   },
+   {
+    "sid": "lesson-d5#15.1",
+    "en": "How should the coordinator's synthesis output schema handle each topic so the final report stays trustworthy?"
+   },
+   {
+    "sid": "mock04#22.2",
+    "en": "Tracing shows the Task prompt sent to the synthesis subagent contains only the report topic and formatting instructions."
+   },
+   {
+    "sid": "lesson-d3#11.5",
+    "en": "Set `user-invocable: false` on the skill, so it is hidden from the slash menu and Claude loads it when the topic comes up."
+   },
+   {
+    "sid": "lesson-d1#18.5",
+    "en": "Raise the synthesis subagent's maxTurns limit, so it has more turns to work through the topic and build the report from what it finds"
+   },
+   {
+    "sid": "lesson-d5#15.2",
+    "en": "Require at least one finding for every topic, so no section of the report is ever left empty"
+   },
+   {
+    "sid": "mock04#13.6",
+    "en": "Delete the skill's `description` frontmatter so Claude can no longer match it to conversation topics or dependency files"
+   },
+   {
+    "sid": "lesson-d1#18.7",
+    "en": "Give the synthesis subagent the same search tools as web-researcher, so it can run its own searches on the topic before writing the report"
+   }
+  ]
+ },
+ {
+  "lemma": "topical",
+  "kind": "vocab-core",
+  "surfaces": [
+   "topical"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "topical",
+   "word": "topical",
+   "pos": "형용사",
+   "ipa": "ˈtɑːpɪkl",
+   "meaning": "주제(상)의, 주제에 관한"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#25.5",
+    "en": "Raise the temperature of the synthesis subagent so that it produces broader, more varied topical coverage"
+   },
+   {
+    "sid": "mock04#34.6",
+    "en": "Add a citation post-processor that guesses the most likely source for each uncited sentence based on topical similarity."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:topical.0",
+    "en": "...guesses the most likely source for each uncited sentence based on topical similarity.",
+    "ko": "주제 유사도를 바탕으로 인용 없는 문장마다 가장 그럴듯한 출처를 추측해 붙인다"
+   }
+  ]
+ },
+ {
+  "lemma": "topology",
+  "kind": "vocab-core",
+  "surfaces": [
+   "topology"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "topology",
+   "word": "topology",
+   "pos": "명사",
+   "ipa": "təˈpɑːlədʒi",
+   "meaning": "토폴로지 — 구성 요소들이 서로 연결된 구조(누가 누구와 통신하는지)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#21.0",
+    "en": "A platform team is restructuring a monolith into three microservices, touching shared data models, service boundaries, and deployment topology, with several viable ways to split the code."
+   },
+   {
+    "sid": "mock04#27.2",
+    "en": "How should the topology be corrected?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:topology.0",
+    "en": "How should the topology be corrected?",
+    "ko": "토폴로지를 바로잡는 올바른 방법은 무엇일까요?"
+   }
+  ]
+ },
+ {
+  "lemma": "total",
+  "kind": "new",
+  "surfaces": [
+   "totals",
+   "total"
+  ],
+  "freq": 14,
+  "sentences": [
+   {
+    "sid": "lesson-d4#19.0",
+    "en": "During an audit of an expense-report extractor, the team finds records with the tax amount in the tip field and line items that don't add up to the total."
+   },
+   {
+    "sid": "mock04#54.2",
+    "en": "However, reconciliation shows 6% of extracted invoices have line-item amounts that do not sum to the stated invoice total."
+   },
+   {
+    "sid": "sample01#15.0",
+    "en": "A data pipeline needs to extract structured invoice data (vendor, line items, totals) from free-text invoice PDFs."
+   },
+   {
+    "sid": "lesson-d1#8.5",
+    "en": "Run all five subagents in parallel for every ticket so total latency matches the slowest subagent instead of the sum."
+   },
+   {
+    "sid": "lesson-d2#15.4",
+    "en": "Splitting into subagents reduces the total number of API calls made across the whole pipeline, which is the main source of the earlier selection errors"
+   },
+   {
+    "sid": "lesson-d5#20.7",
+    "en": "Retry both failures a few times with backoff, then send the coordinator the total retry count so it knows how much effort was spent"
+   },
+   {
+    "sid": "lesson-d3#27.0",
+    "en": "A test run against a newly generated report-export module in Claude Code produces two failures: a currency-formatting mismatch in the summary totals and a completely unrelated failure where the export filename generator omits the file extension on Windows paths."
+   },
+   {
+    "sid": "lesson-d4#19.5",
+    "en": "Add checks in their own code after extraction, such as line items summing to the total and cross-field consistency, and send any failures back to Claude"
+   }
+  ]
+ },
+ {
+  "lemma": "touch",
+  "kind": "new",
+  "surfaces": [
+   "touch",
+   "touches",
+   "touching"
+  ],
+  "freq": 7,
+  "sentences": [
+   {
+    "sid": "lesson-d1#35.0",
+    "en": "A reviewer is designing an agentic code review for a pull request that touches 40 files across a monorepo."
+   },
+   {
+    "sid": "lesson-d3#21.0",
+    "en": "A platform team is restructuring a monolith into three microservices, touching shared data models, service boundaries, and deployment topology, with several viable ways to split the code."
+   },
+   {
+    "sid": "lesson-d4#37.0",
+    "en": "A refactor touches 300 files, and several modules pass data to one another."
+   },
+   {
+    "sid": "mock04#14.3",
+    "en": "What is the best way to guarantee the skill cannot touch source?"
+   },
+   {
+    "sid": "lesson-d2#30.5",
+    "en": "Glob for the most recently modified files and Read those, since recent changes usually touch the active flow"
+   },
+   {
+    "sid": "mock04#16.1",
+    "en": "A developer needs three changes that all touch the shared `PaymentStatus` enum and the several functions that switch on it."
+   },
+   {
+    "sid": "lesson-d2#5.5",
+    "en": "Increase the priority weight of the newer tool in the backend routing configuration without touching either tool's description."
+   }
+  ]
+ },
+ {
+  "lemma": "toward",
+  "kind": "new",
+  "surfaces": [
+   "toward"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "mock04#52.7",
+    "en": "Have a separate, independent Claude instance review the tests, since a session is biased toward its own output"
+   }
+  ]
+ },
+ {
+  "lemma": "trace",
+  "kind": "vocab-core",
+  "surfaces": [
+   "trace",
+   "tracing",
+   "traces",
+   "traced"
+  ],
+  "freq": 17,
+  "vocab": {
+   "id": "trace",
+   "word": "trace",
+   "pos": "명사·동사",
+   "ipa": "treɪs",
+   "meaning": "① 추적 기록, 트레이스 ② 추적하다, (흐름을) 따라가 보다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#36.0",
+    "en": "Customers report that some paid orders vanish without a trace, and nobody knows which part of the system drops them."
+   },
+   {
+    "sid": "lesson-d2#30.0",
+    "en": "In a repository Claude has never seen, you need to trace a login request from its HTTP route handler down to the database query."
+   },
+   {
+    "sid": "lesson-d5#21.0",
+    "en": "Phase-2 subagents, each tracing a different refund-related flow, keep spending most of their tokens re-mapping the modules that phase 1 already mapped."
+   },
+   {
+    "sid": "mock04#22.2",
+    "en": "Tracing shows the Task prompt sent to the synthesis subagent contains only the report topic and formatting instructions."
+   },
+   {
+    "sid": "lesson-d4#29.3",
+    "en": "doc/2026/report:final, since embedding the ingestion date and a colon-separated section label makes the request easier to trace during a later audit"
+   },
+   {
+    "sid": "sample01#8.4",
+    "en": "Implement structured trace logging at each step: request payload, `stop_reason`, tool calls with inputs/outputs, and final response — with a session correlation ID"
+   },
+   {
+    "sid": "lesson-d2#31.0",
+    "en": "A newly onboarded architect asks Claude Code to trace how a login request flows from the HTTP route handler through to the database call, in a codebase Claude has not explored yet."
+   },
+   {
+    "sid": "lesson-d5#36.1",
+    "en": "When the coordinator assembles the final report, reviewers find that several claims can no longer be traced to any specific source."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:trace.0",
+    "en": "Implement structured trace logging at each step: request payload, `stop_reason`, tool calls with inputs/outputs, and final response",
+    "ko": "각 단계마다 구조화된 트레이스 로그를 남긴다: 요청 페이로드, `stop_reason`, 도구 호출의 입력/출력, 최종 응답"
+   },
+   {
+    "vid": "vocab:trace.1",
+    "en": "Tracing shows the Task prompt sent to the synthesis subagent contains only the report topic and formatting instructions.",
+    "ko": "추적해 보니 합성 서브에이전트에 보내는 Task 프롬프트에는 보고서 주제와 형식 지시만 들어 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "track",
+  "kind": "vocab-core",
+  "surfaces": [
+   "track",
+   "tracker"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "track",
+   "word": "track",
+   "pos": "명사·동사",
+   "ipa": "træk",
+   "meaning": "① (on track) 제 궤도, 정상 진행 ② 추적하다, 기록해 관리하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#18.2",
+    "en": "What technique best keeps the migration on track?"
+   },
+   {
+    "sid": "lesson-d5#11.7",
+    "en": "Stop using either signal as a trigger: route on checkable conditions (customer asked for a human, no policy covers the request, no way forward), and track sentiment as an outcome from the start to the end of the conversation"
+   },
+   {
+    "sid": "selfcheck-d2-kor#19.0",
+    "en": "개발자가 저장소 A에서 아래 명령을 실행했다. 저장소 B로 옮겨 `/mcp`를 보니 tracker가 없다. 가장 그럴듯한 원인은?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:track.0",
+    "en": "What technique best keeps the migration on track?",
+    "ko": "마이그레이션이 제 궤도를 유지하게 하는 가장 좋은 기법은 무엇일까요?"
+   }
+  ]
+ },
+ {
+  "lemma": "trade",
+  "kind": "new",
+  "surfaces": [
+   "traded"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#2.5",
+    "en": "Each summarization pass traded precision for brevity, so the exact amount and deadline were condensed into vague wording"
+   }
+  ]
+ },
+ {
+  "lemma": "trade-off",
+  "kind": "vocab-core",
+  "surfaces": [
+   "trade-off"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "trade-off",
+   "word": "trade-off",
+   "pos": "명사",
+   "ipa": "ˈtreɪd ɔːf",
+   "meaning": "상충 관계, 맞바꿈 — 하나를 얻으면 다른 하나를 잃는 관계"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#17.5",
+    "en": "`tool_choice: {\"type\": \"tool\", \"name\": \"parse_resume\"}`, because this is the documented way to force the specific tool; the trade-off is that forced tool use suppresses natural-language text before the tool call"
+   }
+  ]
+ },
+ {
+  "lemma": "traffic",
+  "kind": "new",
+  "surfaces": [
+   "traffic"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#27.6",
+    "en": "It is accepted, but its requests use up the Messages API rate limits, so the team should pause synchronous traffic while it runs"
+   }
+  ]
+ },
+ {
+  "lemma": "trail",
+  "kind": "vocab-core",
+  "surfaces": [
+   "trail"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "trail",
+   "word": "trail",
+   "pos": "명사",
+   "ipa": "treɪl",
+   "meaning": "자취, 흔적 — audit trail: (나중에 확인할 수 있는) 감사 추적 기록"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#5.6",
+    "en": "Better logging and post-hoc audit trail"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:trail.0",
+    "en": "Better logging and post-hoc audit trail",
+    "ko": "더 나은 로깅과 사후 감사 추적"
+   }
+  ]
+ },
+ {
+  "lemma": "trailing",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "trailing",
+   "word": "trailing",
+   "pos": "형용사",
+   "ipa": "ˈtreɪlɪŋ",
+   "meaning": "뒤에 붙은, 끝에 남은 (trailing noise: 뒤에 붙은 잡음)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "train",
+  "kind": "new",
+  "surfaces": [
+   "train",
+   "training",
+   "trained"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d2#19.6",
+    "en": "Set tool_choice to {\"type\": \"any\"} for the entire conversation, so the model must select a tool on every turn, relying on its training to choose extract_metadata first when metadata is absent."
+   },
+   {
+    "sid": "lesson-d4#2.4",
+    "en": "High-confidence phrasing conflicts with the model's safety training, which is designed to avoid under-reporting risks, causing it to over-report findings as a precautionary default across a wider range of inputs."
+   },
+   {
+    "sid": "mock04#50.7",
+    "en": "Train a sentiment classifier on developer reactions and suppress whichever categories draw negative responses overall"
+   },
+   {
+    "sid": "lesson-d4#2.6",
+    "en": "The word \"confidence\" is not in the set of tokens the model is trained to parse for output constraints, so the instruction is treated as decorative text and ignored, leaving the original behavior unchanged."
+   }
+  ]
+ },
+ {
+  "lemma": "transaction",
+  "kind": "new",
+  "surfaces": [
+   "transaction"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d4#20.0",
+    "en": "A financial services firm uses a tool-based schema to extract transaction records from PDF statements, including a required amount field and a required transaction_type field."
+   },
+   {
+    "sid": "lesson-d1#24.6",
+    "en": "Add a PostToolUse hook on `process_refund` that verifies the flag again after the refund has been initiated, so it can reverse the transaction if the flag is invalid."
+   }
+  ]
+ },
+ {
+  "lemma": "transactional",
+  "kind": "vocab-core",
+  "surfaces": [
+   "transactional"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "transactional",
+   "word": "transactional",
+   "pos": "형용사",
+   "ipa": "trænˈzækʃənl",
+   "meaning": "거래(처리)에 관한"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#4.4",
+    "en": "Pull the transactional facts into a structured case-facts block that is sent with every prompt and kept out of the history being summarized"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:transactional.0",
+    "en": "Extract transactional facts (amounts, dates, order numbers) into a persistent \"case facts\" block included in each prompt, outside the summarized history.",
+    "ko": "거래 관련 사실(금액·날짜·주문번호)을 요약된 기록 밖의 영속적인 \"case facts\" 블록으로 뽑아 매 프롬프트에 넣는다."
+   }
+  ]
+ },
+ {
+  "lemma": "transcript",
+  "kind": "vocab-core",
+  "surfaces": [
+   "transcript"
+  ],
+  "freq": 13,
+  "vocab": {
+   "id": "transcript",
+   "word": "transcript",
+   "pos": "명사",
+   "ipa": "ˈtrænskrɪpt",
+   "meaning": "(대화) 기록 전문, 녹취록 — 주고받은 메시지를 그대로 적은 것"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#34.0",
+    "en": "A team is building an automated pipeline that takes a raw customer support transcript, produces a structured summary, then translates that summary into three fixed target languages."
+   },
+   {
+    "sid": "lesson-d5#14.4",
+    "en": "The full transcript of the subagent, because subagents share the coordinator's conversation history"
+   },
+   {
+    "sid": "mock04#2.3",
+    "en": "Attach the full untrimmed transcript of the conversation so the human agent has every message available to read."
+   },
+   {
+    "sid": "lesson-d1#34.3",
+    "en": "A fixed prompt chain that summarizes the transcript, runs a code-based check on the summary, then translates it"
+   },
+   {
+    "sid": "lesson-d5#22.6",
+    "en": "Limit what verbose exploration output enters the main context, and keep key findings somewhere that does not rely on recall from the long transcript"
+   },
+   {
+    "sid": "lesson-d1#34.4",
+    "en": "An orchestrator agent that plans the summary and translation subtasks per transcript, then delegates them to workers"
+   },
+   {
+    "sid": "lesson-d5#25.7",
+    "en": "Move the session to a larger model so it can recall the details from earlier in the transcript"
+   },
+   {
+    "sid": "lesson-d1#34.5",
+    "en": "A single agent that reads the transcript and writes the three translations in one pass, folding summarization into it"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:transcript.0",
+    "en": "Attach the full untrimmed transcript of the conversation so the human agent has every message available to read.",
+    "ko": "사람 상담원이 모든 메시지를 읽을 수 있도록, 잘라 내지 않은 대화 전체 기록을 첨부한다"
+   }
+  ]
+ },
+ {
+  "lemma": "transfer",
+  "kind": "new",
+  "surfaces": [
+   "transfer"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#8.5",
+    "en": "Make the billing-date change first, since it takes one step, and then transfer the customer"
+   }
+  ]
+ },
+ {
+  "lemma": "transform",
+  "kind": "new",
+  "surfaces": [
+   "transforms"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#24.0",
+    "en": "A data engineer is iterating with Claude Code on a migration script that transforms legacy customer records into a new schema."
+   }
+  ]
+ },
+ {
+  "lemma": "transformation",
+  "kind": "new",
+  "surfaces": [
+   "transformation"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d3#24.4",
+    "en": "Describe to Claude, in plain prose, that records with null values are being dropped, and ask it to handle nulls properly in the transformation function"
+   },
+   {
+    "sid": "lesson-d3#24.5",
+    "en": "Wrap the transformation function in a try/except that logs each failing record to a file and continues, then check the log for null middle-name cases"
+   }
+  ]
+ },
+ {
+  "lemma": "transient",
+  "kind": "vocab-core",
+  "surfaces": [
+   "transient"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "transient",
+   "word": "transient",
+   "pos": "형용사",
+   "ipa": "ˈtrænziənt",
+   "meaning": "일시적인, 곧 사라지는"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#7.2",
+    "en": "Real accounts are being turned away during transient outages."
+   },
+   {
+    "sid": "lesson-d2#9.3",
+    "en": "errorCategory \"transient\", isRetryable true, so the agent waits and resends the same request with backoff"
+   },
+   {
+    "sid": "lesson-d4#22.7",
+    "en": "Transient sampling artifact; retry the request at temperature 0 and accept the first response that passes schema validation"
+   },
+   {
+    "sid": "lesson-d5#16.5",
+    "en": "Failure type \"timeout (transient)\", the exact query and the database it went to, the 40 of 200 filings already retrieved, and a read replica that could fill the gap"
+   },
+   {
+    "sid": "selfcheck-d2-kor#11.1",
+    "en": "번역된 9개 장, 실패한 3개 장과 오류 분류(transient), 이미 쓴 재시도 횟수와 시도 내용"
+   },
+   {
+    "sid": "mock04#7.6",
+    "en": "A structured error with errorCategory (e.g. transient) and isRetryable, so an access failure differs from an empty result."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:transient.0",
+    "en": "Have the subagent retry transient failures internally and only report persistent errors.",
+    "ko": "서브에이전트가 일시적인 오류는 내부에서 재시도하고, 계속되는 오류만 보고하게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "translate",
+  "kind": "new",
+  "surfaces": [
+   "translated",
+   "translate",
+   "translates"
+  ],
+  "freq": 6,
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.1",
+    "en": "It writes a product description, code checks the length and banned terms, and then the description is translated into German and French."
+   },
+   {
+    "sid": "lesson-d1#34.0",
+    "en": "A team is building an automated pipeline that takes a raw customer support transcript, produces a structured summary, then translates that summary into three fixed target languages."
+   },
+   {
+    "sid": "lesson-d1#32.5",
+    "en": "A fixed prompt chain sequenced in code (write, then a programmatic gate, then translate), where each step is its own LLM call"
+   },
+   {
+    "sid": "lesson-d1#32.7",
+    "en": "One LLM call that writes and translates the description together, to cut latency"
+   },
+   {
+    "sid": "lesson-d1#34.3",
+    "en": "A fixed prompt chain that summarizes the transcript, runs a code-based check on the summary, then translates it"
+   },
+   {
+    "sid": "lesson-d1#34.6",
+    "en": "An adaptive agent that inspects the transcript first, then generates the subtasks needed to summarize and translate it"
+   }
+  ]
+ },
+ {
+  "lemma": "translation",
+  "kind": "new",
+  "surfaces": [
+   "translation",
+   "translations"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d4#29.0",
+    "en": "A developer is assembling a batch of translation requests and needs to assign each one an identifier that the Message Batches API will accept and later use to correlate a result with its original request."
+   },
+   {
+    "sid": "lesson-d1#32.4",
+    "en": "An orchestrator LLM that reads each spec and plans the writing, checking and translation subtasks for it"
+   },
+   {
+    "sid": "lesson-d1#34.4",
+    "en": "An orchestrator agent that plans the summary and translation subtasks per transcript, then delegates them to workers"
+   },
+   {
+    "sid": "lesson-d1#34.5",
+    "en": "A single agent that reads the transcript and writes the three translations in one pass, folding summarization into it"
+   }
+  ]
+ },
+ {
+  "lemma": "transport",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "transport",
+   "word": "transport",
+   "pos": "명사·동사",
+   "ipa": "ˈtrænspɔːrt",
+   "meaning": "(통신) 전송 방식 — 클라이언트와 서버가 메시지를 주고받는 통로 (stdio, Streamable HTTP) / 운송하다"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "treat",
+  "kind": "vocab-core",
+  "surfaces": [
+   "treating",
+   "treat",
+   "treated",
+   "treats"
+  ],
+  "freq": 12,
+  "vocab": {
+   "id": "treat",
+   "word": "treat",
+   "pos": "동사",
+   "ipa": "triːt",
+   "meaning": "(~로) 여기다, 다루다, 취급하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#3.0",
+    "en": "A junior engineer proposes capping an autonomous research agent at exactly 5 tool-call iterations and treating that cap as the loop's primary stopping mechanism, regardless of stop_reason."
+   },
+   {
+    "sid": "lesson-d4#4.2",
+    "en": "How should well-written review criteria treat that helper's name?"
+   },
+   {
+    "sid": "lesson-d5#40.1",
+    "en": "The coordinator initially treats this as a contradiction requiring reconciliation, but on closer inspection the two figures come from reports published fourteen months apart."
+   },
+   {
+    "sid": "mock04#4.2",
+    "en": "Logs show the model occasionally misreads these heterogeneous fields, e.g., treating a refund amount in the wrong units."
+   },
+   {
+    "sid": "lesson-d2#26.5",
+    "en": "Run the test suite through Bash and treat any component missing from the output as untested"
+   },
+   {
+    "sid": "mock04#55.2",
+    "en": "Downstream systems then treat the fabricated values as real."
+   },
+   {
+    "sid": "lesson-d4#2.6",
+    "en": "The word \"confidence\" is not in the set of tokens the model is trained to parse for output constraints, so the instruction is treated as decorative text and ignored, leaving the original behavior unchanged."
+   },
+   {
+    "sid": "lesson-d5#10.4",
+    "en": "Decline the request, treating the own-site adjustment terms as the full list of permitted adjustments"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:treat.0",
+    "en": "...the model occasionally misreads these heterogeneous fields, e.g., treating a refund amount in the wrong units.",
+    "ko": "모델이 이런 이질적인 필드를 가끔 잘못 읽어, 예를 들어 환불 금액을 잘못된 단위로 해석한다."
+   },
+   {
+    "vid": "vocab:treat.1",
+    "en": "Treat every unsuccessful get_customer response, whatever its cause, as an escalation trigger...",
+    "ko": "원인과 관계없이 실패한 `get_customer` 응답을 모두 에스컬레이션 트리거로 본다"
+   }
+  ]
+ },
+ {
+  "lemma": "tree",
+  "kind": "new",
+  "surfaces": [
+   "tree"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#27.0",
+    "en": "An architect asks Claude Code to count how many files in the `src/components` directory tree currently have no matching test file at all, as a first step in planning test coverage work."
+   }
+  ]
+ },
+ {
+  "lemma": "trend",
+  "kind": "vocab-core",
+  "surfaces": [
+   "trend"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "trend",
+   "word": "trend",
+   "pos": "명사",
+   "ipa": "trend",
+   "meaning": "추세, 경향"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#26.1",
+    "en": "The team wants to analyze this dismissal trend systematically over time."
+   }
+  ]
+ },
+ {
+  "lemma": "triage",
+  "kind": "vocab-core",
+  "surfaces": [
+   "triage"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "triage",
+   "word": "triage",
+   "pos": "명사·동사",
+   "ipa": "ˈtriːɑːʒ",
+   "meaning": "분류(하다) — 들어온 건을 긴급도·종류별로 나눠 처리 순서와 담당을 정하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#6.0",
+    "en": "Your ticket-triage system sends every ticket through five subagents: classifier, sentiment analyzer, knowledge-base search, summarizer and escalation checker."
+   },
+   {
+    "sid": "lesson-d4#33.5",
+    "en": "Keep the tool-calling agent on the synchronous Messages API, and batch only the single-pass triage step that decides which claims need the agent"
+   },
+   {
+    "sid": "lesson-d1#8.0",
+    "en": "A support-ticket triage system always invokes a full pipeline of five subagents (classifier, sentiment analyzer, knowledge-base search, summarizer, and escalation checker) for every incoming ticket, including simple one-line requests that only need classification."
+   }
+  ]
+ },
+ {
+  "lemma": "trial",
+  "kind": "vocab-core",
+  "surfaces": [
+   "trial"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "trial",
+   "word": "trial",
+   "pos": "명사",
+   "ipa": "ˈtraɪəl",
+   "meaning": "시험(판), 시범 — trial run: 시험 실행"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#7.6",
+    "en": "Turn it back on when a trial run on a few PRs produces noticeably fewer comments than before"
+   }
+  ]
+ },
+ {
+  "lemma": "trigger",
+  "kind": "vocab-core",
+  "surfaces": [
+   "trigger",
+   "triggered"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "trigger",
+   "word": "trigger",
+   "pos": "동사·명사",
+   "ipa": "ˈtrɪɡər",
+   "meaning": "(어떤 동작을) 일으키다, 실행시키다 / 계기, 발동 조건"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#22.0",
+    "en": "Which `stop_reason` should trigger an increase in `max_tokens`, not a loop retry or exit?"
+   },
+   {
+    "sid": "lesson-d3#11.4",
+    "en": "Set `disable-model-invocation: true` on the skill, so a teammate starts the brainstorm by typing the command and Claude cannot trigger it."
+   },
+   {
+    "sid": "lesson-d4#25.6",
+    "en": "A `detected_pattern` field naming the code construct that triggered the finding, such as a call to the team's sanitization helper"
+   },
+   {
+    "sid": "lesson-d5#11.7",
+    "en": "Stop using either signal as a trigger: route on checkable conditions (customer asked for a human, no policy covers the request, no way forward), and track sentiment as an outcome from the start to the end of the conversation"
+   },
+   {
+    "sid": "mock04#13.7",
+    "en": "Move the audit instructions into CLAUDE.md so they load once at startup instead of being triggered mid-session by file names"
+   },
+   {
+    "sid": "lesson-d5#8.7",
+    "en": "Keep working on the issue, because the agent already decided that frustration alone is not an escalation trigger"
+   },
+   {
+    "sid": "mock04#7.7",
+    "en": "Treat every unsuccessful get_customer response, whatever its cause, as an escalation trigger and route all of them to escalate_to_human."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:trigger.0",
+    "en": "Which situation represents the most appropriate trigger for calling `escalate_to_human`?",
+    "ko": "`escalate_to_human` 을 호출할 계기로 가장 적절한 상황은?"
+   },
+   {
+    "vid": "vocab:trigger.1",
+    "en": "...indicating incomplete upstream data, triggering a full retry or task failure.",
+    "ko": "상류 데이터가 불완전하다고 알려 전체 재시도나 작업 실패를 일으킨다."
+   }
+  ]
+ },
+ {
+  "lemma": "trim",
+  "kind": "vocab-core",
+  "surfaces": [
+   "trim",
+   "trimmed"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "trim",
+   "word": "trim",
+   "pos": "동사",
+   "ipa": "trɪm",
+   "meaning": "(불필요한 부분을) 잘라 내다, 다듬다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#21.4",
+    "en": "Trim each run's output to the failing-test lines before it accumulates, and keep the key constraints in a summary at the top of the context."
+   },
+   {
+    "sid": "mock04#36.4",
+    "en": "Move synthesis to a larger-context model so all 38k tokens fit comfortably in the prompt and nothing has to be trimmed or reordered."
+   },
+   {
+    "sid": "mock04#36.7",
+    "en": "Trim each subagent's output to relevant extracted findings before handoff, and open the synthesis prompt with a key-facts summary under headers."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:trim.0",
+    "en": "Trim each run's output to the failing-test lines before it accumulates, and keep the key constraints in a summary at the top of the context.",
+    "ko": "각 실행의 출력이 쌓이기 전에 실패한 테스트 관련 줄만 남도록 잘라 내고, 핵심 제약 조건은 컨텍스트 맨 앞의 요약에 유지한다"
+   }
+  ]
+ },
+ {
+  "lemma": "trivial",
+  "kind": "vocab-core",
+  "surfaces": [
+   "trivial"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "trivial",
+   "word": "trivial",
+   "pos": "형용사",
+   "ipa": "ˈtrɪviəl",
+   "meaning": "① 사소한, 하찮은 ② 아주 쉬운, 뻔한"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#50.1",
+    "en": "The CI reviewer posts naming-convention and style comments, but developers report that roughly 60% of these particular comments are wrong or trivial."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:trivial.0",
+    "en": "...developers report that roughly 60% of these particular comments are wrong or trivial.",
+    "ko": "개발자들은 바로 이 범주의 코멘트 중 약 60%가 틀렸거나 사소하다고 보고한다."
+   }
+  ]
+ },
+ {
+  "lemma": "true",
+  "kind": "new",
+  "surfaces": [
+   "true"
+  ],
+  "freq": 12,
+  "sentences": [
+   {
+    "sid": "lesson-d4#19.1",
+    "en": "The extractor runs with strict: true and a forced tool_choice, and every record passed schema validation."
+   },
+   {
+    "sid": "lesson-d1#40.4",
+    "en": "Pass continue_conversation=True on each follow-up request and let it reattach to the user's session"
+   },
+   {
+    "sid": "lesson-d2#28.4",
+    "en": "Call Edit with replace_all: true so the call stops failing on the duplicate matches"
+   },
+   {
+    "sid": "lesson-d5#14.6",
+    "en": "The tool_result blocks the subagent marked with is_error: true, because these appear in the coordinator's context automatically"
+   },
+   {
+    "sid": "selfcheck-d2-kor#16.3",
+    "en": "disable_parallel_tool_use를 true로 설정하면 해결된다"
+   },
+   {
+    "sid": "selfcheck-d4-kor#23.0",
+    "en": "`stated_total`과 `calculated_total`을 따로 받고, 불일치하면 `conflict_detected`를 true로 표시하게 한다"
+   },
+   {
+    "sid": "lesson-d1#40.5",
+    "en": "Pass fork_session=True on each follow-up request to branch off the user's earlier conversation state"
+   },
+   {
+    "sid": "lesson-d2#29.5",
+    "en": "Set replace_all to true on the Edit call, which applies the replacement to the first match in the file and leaves the later one alone"
+   }
+  ]
+ },
+ {
+  "lemma": "truly",
+  "kind": "new",
+  "surfaces": [
+   "truly"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "mock04#29.7",
+    "en": "Have a separate classifier judge after every assistant message whether the report is truly finished"
+   }
+  ]
+ },
+ {
+  "lemma": "truncate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "truncating",
+   "truncation",
+   "truncated",
+   "truncate"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "truncate",
+   "word": "truncate",
+   "pos": "동사",
+   "ipa": "ˈtrʌŋkeɪt",
+   "meaning": "(뒷부분을) 잘라 내다, 잘리다 — truncation: 잘림"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.6",
+    "en": "Both prompt sources are concatenated and then truncated to the shorter of the two, so only whichever prompt is more concise is guaranteed to reach the subagent intact"
+   },
+   {
+    "sid": "lesson-d5#5.5",
+    "en": "Truncate each lookup response to its first 1,000 characters in code and keep only that leading excerpt in history"
+   },
+   {
+    "sid": "mock04#41.7",
+    "en": "Raise the context window so that more exploratory results fit inside the session without truncation or early summarization."
+   },
+   {
+    "sid": "sample01#1.5",
+    "en": "The `max_tokens` limit is too low, truncating the tool call"
+   },
+   {
+    "sid": "lesson-d1#35.4",
+    "en": "Move the review to a model with a larger context window, so the full diff is read in one sitting without being truncated"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:truncate.0",
+    "en": "The `max_tokens` limit is too low, truncating the tool call",
+    "ko": "`max_tokens` 한도가 너무 낮아 도구 호출이 잘린다"
+   }
+  ]
+ },
+ {
+  "lemma": "trust",
+  "kind": "vocab-core",
+  "surfaces": [
+   "trusted",
+   "trustworthy"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "trust",
+   "word": "trust",
+   "pos": "동사·명사",
+   "ipa": "trʌst",
+   "meaning": "신뢰(하다) — trusted: 믿을 수 있는, 검증된"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#7.1",
+    "en": "Security and correctness comments are now trusted again, and the team has rewritten the performance criteria in explicit terms."
+   },
+   {
+    "sid": "lesson-d5#15.1",
+    "en": "How should the coordinator's synthesis output schema handle each topic so the final report stays trustworthy?"
+   },
+   {
+    "sid": "mock04#40.5",
+    "en": "Move the server to user-scoped `~/.claude.json` so the token lives only on a single trusted machine per engineer."
+   },
+   {
+    "sid": "lesson-d5#30.1",
+    "en": "Before using these scores to decide which fields skip human review, what step should the architect take to make the scores trustworthy for routing decisions?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:trust.0",
+    "en": "Move the server to user-scoped `~/.claude.json` so the token lives only on a single trusted machine per engineer.",
+    "ko": "서버를 사용자 스코프인 `~/.claude.json` 으로 옮겨, 토큰이 엔지니어마다 신뢰할 수 있는 한 대의 머신에만 있게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "try",
+  "kind": "new",
+  "surfaces": [
+   "try",
+   "tries",
+   "tried",
+   "trying"
+  ],
+  "freq": 13,
+  "sentences": [
+   {
+    "sid": "lesson-d1#11.0",
+    "en": "After an hour of codebase analysis, a coordinator wants to try two competing refactoring strategies."
+   },
+   {
+    "sid": "lesson-d4#2.0",
+    "en": "A prompt engineer tries to fix a noisy security-findings category by adding the line \"only report high-confidence findings\" to the system prompt."
+   },
+   {
+    "sid": "lesson-d5#39.1",
+    "en": "For example, one reports regional unemployment at 5.1% and another at 6.3%, and it spends extra research rounds trying to reconcile them."
+   },
+   {
+    "sid": "mock04#2.5",
+    "en": "Escalate earlier in ambiguous cases so humans receive tickets before much conversation has accumulated, instead of waiting for the agent to try more tools."
+   },
+   {
+    "sid": "lesson-d1#35.1",
+    "en": "Reviewers have noticed that when a single pass tries to hold all 40 files in context at once, subtle cross-file issues are missed and comments become generic."
+   },
+   {
+    "sid": "lesson-d5#14.5",
+    "en": "Only that final message, because it never sees the subagent's tool calls, retries or raw responses, so it can't tell what failed or what was already tried"
+   },
+   {
+    "sid": "lesson-d1#41.0",
+    "en": "After an expensive codebase analysis that ended with a JWT proposal, an engineer wants to try OAuth2 on a separate branch."
+   },
+   {
+    "sid": "lesson-d5#15.4",
+    "en": "Give each topic a support level and an optional gap note that names the unavailable source, the reason it failed and what was tried"
+   }
+  ]
+ },
+ {
+  "lemma": "ttl",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "ttl",
+   "word": "TTL",
+   "pos": "약어",
+   "ipa": "ˌtiː.tiːˈel",
+   "meaning": "TTL(time to live) — 캐시·데이터가 만료되기 전까지 유지되는 시간"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "tuesday",
+  "kind": "new",
+  "surfaces": [
+   "tuesday"
+  ],
+  "freq": 1,
+  "maybeProper": true,
+  "sentences": [
+   {
+    "sid": "lesson-d3#1.0",
+    "en": "A developer notices that in Monday's session Claude followed the package's error-handling convention, but in Tuesday's session on the same repo it ignored it."
+   }
+  ]
+ },
+ {
+  "lemma": "turn",
+  "kind": "vocab-core",
+  "surfaces": [
+   "turns",
+   "turn"
+  ],
+  "freq": 64,
+  "vocab": {
+   "id": "turn",
+   "word": "turn",
+   "pos": "명사·동사",
+   "ipa": "tɜːrn",
+   "meaning": "① (대화의) 턴 — 사용자와 모델이 한 번 주고받는 차례 ② 돌다, 바뀌다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#5.1",
+    "en": "Three turns earlier in the main conversation, the user chose a specific authentication provider."
+   },
+   {
+    "sid": "lesson-d2#18.1",
+    "en": "Currently, every subagent is configured with the full union of all tools used anywhere in the pipeline, so each has around 15 tools available, and each agent's tool choice is left at {\"type\": \"auto\"} in every turn."
+   },
+   {
+    "sid": "lesson-d4#16.2",
+    "en": "Which tool_choice setting guarantees extract_metadata runs on this turn?"
+   },
+   {
+    "sid": "lesson-d5#1.1",
+    "en": "By turn 12 it no longer knows the order number the customer gave in turn 3."
+   },
+   {
+    "sid": "mock04#38.2",
+    "en": "Logs show the subagent re-runs Grep to rediscover the entrypoint the coordinator had already located two turns earlier, and reaches a conclusion that contradicts the coordinator's established finding."
+   },
+   {
+    "sid": "sample01#6.0",
+    "en": "A long-running research agent processes 40-page technical PDFs and maintains conversation history across 30+ turns."
+   },
+   {
+    "sid": "lesson-d1#7.0",
+    "en": "An architect delegates a task to a subagent using the Agent tool, expecting it to reference a decision the user made three turns earlier in the main conversation about which authentication provider to use."
+   },
+   {
+    "sid": "lesson-d4#17.0",
+    "en": "A team building a resume-parsing tool wants to guarantee that structured candidate data is extracted via a `parse_resume` tool on the current turn."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:turn.0",
+    "en": "...maintains conversation history across 30+ turns.",
+    "ko": "30턴 이상 대화 기록을 유지한다."
+   },
+   {
+    "vid": "vocab:turn.1",
+    "en": "...to decide whether the turn is a genuine completion.",
+    "ko": "그 턴이 진짜 완료인지 판단한다."
+   }
+  ]
+ },
+ {
+  "lemma": "turn away",
+  "kind": "vocab-core",
+  "surfaces": [
+   "turned away"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "turn-away",
+   "word": "turn away",
+   "pos": "동사구",
+   "ipa": "tɜːrn əˈweɪ",
+   "meaning": "(찾아온 사람을) 돌려보내다, 받아 주지 않다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#7.2",
+    "en": "Real accounts are being turned away during transient outages."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:turn-away.0",
+    "en": "Real accounts are being turned away during transient outages.",
+    "ko": "일시적인 장애 동안 실제 계정이 있는 고객들이 돌려보내지고 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "turn on",
+  "kind": "vocab-core",
+  "surfaces": [
+   "turn on",
+   "turn off"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "turn-on",
+   "word": "turn on",
+   "pos": "동사구",
+   "ipa": "tɜːrn ˈɑːn",
+   "meaning": "(기능·설정을) 켜다 — turn off: 끄다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#18.4",
+    "en": "Turn off strict mode on the tool so Claude is free to leave the required field out when the report lacks it"
+   },
+   {
+    "sid": "lesson-d5#4.5",
+    "en": "Turn off summarization and rely on a 1M-token context window so the original turns are never condensed"
+   },
+   {
+    "sid": "mock04#44.7",
+    "en": "Turn on plan mode so the tool plans the searches before it runs them and waits for approval of that plan"
+   },
+   {
+    "sid": "lesson-d4#4.6",
+    "en": "Turn off naming checks completely, because naming always generates false positives"
+   }
+  ]
+ },
+ {
+  "lemma": "tutoring",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "tutoring",
+   "word": "tutoring",
+   "pos": "명사",
+   "ipa": "ˈtuːtərɪŋ",
+   "meaning": "개인 지도, 학습 도우미 (tutoring app: 학습 도우미 앱)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "tweak",
+  "kind": "vocab-core",
+  "surfaces": [
+   "tweaks"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "tweak",
+   "word": "tweak",
+   "pos": "동사·명사",
+   "ipa": "twiːk",
+   "meaning": "(조금) 손보다, 미세 조정(하다)"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#53.2",
+    "en": "Prompt tweaks reduced but did not eliminate the failures."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:tweak.0",
+    "en": "Prompt tweaks reduced but did not eliminate the failures.",
+    "ko": "프롬프트를 손봐서 실패를 줄이긴 했지만 없애지는 못했다."
+   }
+  ]
+ }
+]

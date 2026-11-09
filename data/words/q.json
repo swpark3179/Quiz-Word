@@ -1,0 +1,583 @@
+[
+  {
+    "id": "qualifier",
+    "word": "qualifier",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈkwɑːlɪfaɪər",
+    "meaning": "한정어, 단서 — 범위·조건을 좁히는 말",
+    "short": "한정어, 단서",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "한정어, 단서"
+      },
+      {
+        "pos": "명사",
+        "ko": "예선 통과자, 예선"
+      }
+    ],
+    "forms": [
+      "qualifiers"
+    ],
+    "synonyms": [
+      "modifier",
+      "caveat"
+    ],
+    "domain": "논리·관계·연결어",
+    "freq": 1,
+    "sources": [
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 2,
+        "en": "Adding any qualifier to a system prompt increases output length, which expands the set of tokens the evaluator inspects and independently raises the chance that a finding is miscategorized as high severity.",
+        "surface": "qualifier",
+        "pos": "명사",
+        "sense": "한정어, 단서",
+        "ko": "시스템 프롬프트에 수식어를 넣으면 출력이 길어지고, 평가자가 검사할 토큰이 늘어나 발견이 높은 심각도로 잘못 분류될 가능성이 독립적으로 커진다."
+      }
+    ]
+  },
+  {
+    "id": "quality",
+    "word": "quality",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈkwɑːləti",
+    "meaning": "품질, 질",
+    "short": "품질, 질",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "품질, 질"
+      },
+      {
+        "pos": "명사",
+        "ko": "특성, 자질"
+      }
+    ],
+    "forms": [
+      "qualities"
+    ],
+    "domain": "정확·품질·신뢰",
+    "freq": 9,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d3"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 12,
+        "en": "Developers notice that after running it, the main session is cluttered with raw output and Claude's subsequent answers in that session degrade in quality.",
+        "surface": "quality",
+        "pos": "명사",
+        "sense": "품질, 질",
+        "ko": "개발자들은 이 스킬을 실행한 뒤 메인 세션이 원본 출력으로 어수선해지고, 그 세션에서 Claude가 이후에 내놓는 답변의 품질이 떨어진다는 것을 알아챘습니다."
+      },
+      {
+        "src": "sample01",
+        "q": 6,
+        "en": "After turn 25, response quality degrades — the model starts forgetting earlier findings and repeating tool calls it already made.",
+        "surface": "quality",
+        "pos": "명사",
+        "sense": "품질, 질",
+        "ko": "25턴 이후 응답 품질이 떨어져, 모델이 앞서 찾은 내용을 잊고 이미 했던 도구 호출을 반복합니다."
+      },
+      {
+        "src": "mock04",
+        "q": 36,
+        "en": "Synthesis quality has dropped and it now misses findings buried in the middle of the passed-in content (lost-in-the-middle).",
+        "surface": "quality",
+        "pos": "명사",
+        "sense": "품질, 질",
+        "ko": "종합 품질이 떨어졌고, 이제 전달된 내용의 중간에 묻힌 발견 사항을 놓칩니다(lost-in-the-middle)."
+      },
+      {
+        "src": "mock04",
+        "q": 52,
+        "en": "In the pipeline, Claude Code generates test cases and then, within the same session, reviews those tests for quality.",
+        "surface": "quality",
+        "pos": "명사",
+        "sense": "품질, 질",
+        "ko": "파이프라인에서 Claude Code가 테스트 케이스를 생성한 뒤, 같은 세션 안에서 그 테스트의 품질을 리뷰합니다."
+      }
+    ],
+    "note": "결과물이 **얼마나 좋은지(질)** 를 말합니다. 문제에서는 응답·답변의 품질이 \"떨어진다(degrade)\"는 증상으로 자주 나옵니다.\r\n\r\n## 문제 속 쓰임\r\n> After turn 25, response **quality** degrades — the model starts forgetting earlier findings and repeating tool calls it already made.\r\n> 25턴 이후 응답 **품질**이 떨어져, 모델이 앞서 찾은 내용을 잊고 이미 했던 도구 호출을 반복한다.\r\n\r\n## 함께 쓰는 표현\r\n- **quality degrades / drops** : 품질이 떨어지다\r\n- **output quality** : 출력 품질\r\n- **high-quality / low-quality** : 질 높은 / 질 낮은\r\n\r\n## 시험 포인트\r\n긴 대화나 장황한 탐색 뒤에 품질이 떨어지면 원인은 대개 **컨텍스트에 쌓인 내용**입니다. 더 큰 컨텍스트 창보다 요약·압축, 출력 다듬기, 서브에이전트나 `context: fork` 로 격리하는 보기가 정답 쪽입니다."
+  },
+  {
+    "id": "quarterly",
+    "word": "quarterly",
+    "tier": "extra",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˈkwɔːrtərli",
+    "meaning": "분기별의 (3개월마다)",
+    "short": "분기별의",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "분기별의, 3개월마다의"
+      },
+      {
+        "pos": "부사",
+        "ko": "분기마다"
+      }
+    ],
+    "domain": "시간·순서·빈도",
+    "freq": 0,
+    "sources": [],
+    "contexts": [
+      {
+        "src": "vocab",
+        "q": 0,
+        "en": "...requests to \"analyze the quarterly report I uploaded\" are routed to the web search agent.",
+        "surface": "quarterly",
+        "pos": "형용사",
+        "sense": "분기별의, 3개월마다의",
+        "ko": "\"내가 업로드한 분기 보고서를 분석해 줘\"라는 요청이 웹 검색 에이전트로 보내진다."
+      }
+    ],
+    "note": "1년을 넷으로 나눈 **3개월(분기)마다**의 뜻입니다. 기업 실적·보고서 이야기에 자주 나옵니다.\r\n\r\n## 문제 속 쓰임\r\n> ...requests to \"analyze the **quarterly** report I uploaded\" are routed to the web search agent.\r\n> \"내가 업로드한 **분기** 보고서를 분석해 줘\"라는 요청이 웹 검색 에이전트로 보내진다.\r\n\r\n## 함께 쓰는 표현\r\n- **quarterly report / earnings** : 분기 보고서 / 분기 실적\r\n- **quarter** (명) 분기 · **Q1~Q4** 1~4분기\r\n- **on a quarterly basis** : 분기마다\r\n\r\n## 비슷한 말\r\n- **monthly** 매월 · **annual / yearly** 매년 · **weekly** 매주 · **nightly** 매일 밤"
+  },
+  {
+    "id": "query",
+    "word": "query",
+    "tier": "core",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "ˈkwɪri",
+    "meaning": "① 질의, 검색어(쿼리) ② (데이터를) 조회하다",
+    "short": "질의, 조회하다",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "질의, 검색어(쿼리)"
+      },
+      {
+        "pos": "동사",
+        "ko": "(데이터를) 조회하다"
+      }
+    ],
+    "forms": [
+      "queries",
+      "queried",
+      "querying"
+    ],
+    "synonyms": [
+      "request",
+      "lookup"
+    ],
+    "domain": "검색·조회",
+    "freq": 20,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 30,
+        "en": "In a repository Claude has never seen, you need to trace a login request from its HTTP route handler down to the database query.",
+        "surface": "query",
+        "pos": "명사",
+        "sense": "질의, 검색어(쿼리)",
+        "ko": "Claude가 처음 보는 저장소에서, 로그인 요청을 HTTP 라우트 핸들러부터 데이터베이스 쿼리까지 추적해야 합니다."
+      },
+      {
+        "src": "mock04",
+        "q": 41,
+        "en": "The agent connects to a database MCP server to help engineers query a legacy schema.",
+        "surface": "query",
+        "pos": "동사",
+        "sense": "(데이터를) 조회하다",
+        "ko": "에이전트가 데이터베이스 MCP 서버에 연결해 엔지니어들이 레거시 스키마를 조회하도록 돕습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 33,
+        "en": "It routes queries to the wrong tool in 31% of cases — for example, sending peer-reviewed-literature queries to search_web.",
+        "surface": "queries",
+        "pos": "명사",
+        "sense": "질의, 검색어(쿼리)",
+        "ko": "이 서브에이전트는 동료 심사 문헌을 찾는 쿼리를 search_web으로 보내는 식으로, 31%의 경우 쿼리를 잘못된 도구로 보냅니다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 29,
+        "en": "Add -p so Claude Code runs the query and exits instead of opening an interactive session",
+        "surface": "query",
+        "pos": "명사",
+        "sense": "질의, 검색어(쿼리)",
+        "ko": "`-p` 를 붙여 Claude Code가 대화형 세션을 여는 대신 질의를 실행하고 종료하게 한다"
+      }
+    ],
+    "note": "1. **질의, 검색어(쿼리)** — 검색 엔진·데이터베이스·도구에 던지는 질문 하나\r\n2. **조회하다, 질의하다** — 데이터베이스나 시스템에 물어 값을 가져온다\r\n\r\n## 문제 속 쓰임\r\n> It routes **queries** to the wrong tool in 31% of cases — for example, sending peer-reviewed-literature **queries** to search_web.\r\n> 31%의 경우 **쿼리**를 잘못된 도구로 보낸다. 예를 들어 동료 심사 문헌을 찾는 **쿼리**를 `search_web` 으로 보낸다.\r\n\r\n## 함께 쓰는 표현\r\n- **search query** : 검색어\r\n- **query a database** : 데이터베이스를 조회하다\r\n- **example queries** : 예시 쿼리 (도구 설명에 넣으면 도구 선택이 정확해짐)\r\n\r\n## 시험 포인트\r\n쿼리를 엉뚱한 도구로 보내는 문제의 첫 처방은 **도구 설명 보강**(입력 형식, 예시 쿼리, 사용 경계)입니다. 라우터 모델 추가나 `tool_choice` 강제는 그다음이거나 오답입니다."
+  },
+  {
+    "id": "question",
+    "word": "question",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "ˈkwestʃən",
+    "meaning": "① 질문 ② 문제, 의문점 ③ 의문을 제기하다",
+    "short": "질문, 의문",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "질문"
+      },
+      {
+        "pos": "명사",
+        "ko": "문제, 의문점"
+      },
+      {
+        "pos": "동사",
+        "ko": "의문을 제기하다, 심문하다"
+      }
+    ],
+    "forms": [
+      "questions",
+      "questioned",
+      "questioning"
+    ],
+    "synonyms": [
+      "inquiry",
+      "doubt"
+    ],
+    "domain": "요청·소통",
+    "freq": 13,
+    "sources": [
+      "sample01",
+      "sample01-kor",
+      "mock04",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 24,
+        "en": "A newly configured coordinator answers research questions directly from its own knowledge instead of delegating; its attempts to invoke subagents never appear in the trace.",
+        "surface": "questions",
+        "pos": "명사",
+        "sense": "질문",
+        "ko": "새로 구성한 코디네이터가 위임하지 않고 자기 지식만으로 조사 질문에 바로 답하며, 서브에이전트를 호출하려는 시도는 추적 기록에 전혀 나타나지 않습니다."
+      },
+      {
+        "src": "sample01",
+        "q": 14,
+        "en": "In testing, 'app crashes on login' is classified as bug, feature_request, and question in different runs.",
+        "surface": "question",
+        "pos": "명사",
+        "sense": "질문",
+        "ko": "테스트에서 '로그인 시 앱이 멈춤'이 실행마다 bug, feature_request, question으로 다르게 분류됩니다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 23,
+        "en": "Interview them about anything ambiguous, putting first the questions whose answers would change the architecture, then write the result up as a spec",
+        "surface": "questions",
+        "pos": "명사",
+        "sense": "질문",
+        "ko": "모호한 점을 인터뷰하게 하되 답에 따라 아키텍처가 바뀌는 질문을 먼저 하게 하고, 결과를 사양서로 정리하게 한다"
+      },
+      {
+        "src": "lesson-d5",
+        "q": 25,
+        "en": "Have the agent read NOTES.md before it answers any question that depends on an earlier finding",
+        "surface": "question",
+        "pos": "명사",
+        "sense": "질문",
+        "ko": "이전 발견에 의존하는 질문에 답하기 전에 NOTES.md를 읽게 한다"
+      }
+    ]
+  },
+  {
+    "id": "queue",
+    "word": "queue",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "kjuː",
+    "meaning": "대기열, 큐 — 처리 차례를 기다리는 줄",
+    "short": "대기열, 큐",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "대기열, 큐"
+      },
+      {
+        "pos": "동사",
+        "ko": "줄을 서다, 대기시키다"
+      }
+    ],
+    "forms": [
+      "queued",
+      "queuing",
+      "queueing",
+      "queues"
+    ],
+    "domain": "시스템·도구·기술",
+    "freq": 3,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 36,
+        "en": "An orchestrator that spawns four subagents in parallel up front, one each for the API, the queue, the database and the payment service, and then merges their reports",
+        "surface": "queue",
+        "pos": "명사",
+        "sense": "대기열, 큐",
+        "ko": "오케스트레이터가 처음부터 API, 큐, 데이터베이스, 결제 서비스에 하나씩 네 서브에이전트를 병렬로 띄운 뒤 보고를 합친다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 32,
+        "en": "Send each diff to the Messages API from a background job queue, and have the merge check pass while the verdict posts as a comment",
+        "surface": "queue",
+        "pos": "명사",
+        "sense": "대기열, 큐",
+        "ko": "백그라운드 작업 큐에서 diff를 Messages API로 보내고, 판정이 코멘트로 올라오는 동안 머지 체크는 통과시킨다."
+      },
+      {
+        "src": "mock04",
+        "q": 50,
+        "en": "Route every comment through a human moderation queue before it is posted, so a reviewer approves each one first",
+        "surface": "queue",
+        "pos": "명사",
+        "sense": "대기열, 큐",
+        "ko": "모든 코멘트를 게시 전에 사람 검수 대기열로 보내, 리뷰어가 하나씩 먼저 승인하게 한다"
+      }
+    ],
+    "note": "처리되기를 **차례대로 기다리는 줄**입니다. 먼저 들어온 것이 먼저 나가는(FIFO) 구조를 뜻할 때가 많고, 업무에서는 \"검토 대기 목록\"처럼 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Route every comment through a human moderation **queue** before it is posted, so a reviewer approves each one first\r\n> 모든 코멘트를 게시 전에 사람 검수 **대기열**로 보내, 리뷰어가 하나씩 먼저 승인하게 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **review / moderation queue** : 검토·검수 대기열\r\n- **message queue** : 메시지 큐 (시스템 사이에 작업을 넘기는 대기열)\r\n- **queued** (형) 대기열에 들어간, 대기 중인\r\n\r\n## 시험 포인트\r\n특정 범주의 오탐 때문에 리뷰 봇이 신뢰를 잃었을 때 **모든 코멘트를 사람 검수 큐에 넣는** 보기는 과잉 대응이라 오답입니다. 그 범주만 잠시 끄고 명시적 기준으로 프롬프트를 고치는 것이 정답입니다."
+  },
+  {
+    "id": "quick",
+    "word": "quick",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "kwɪk",
+    "meaning": "① 빠른, 신속한 ② 잠깐의, 간단한",
+    "short": "빠른, 간단한",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "빠른, 신속한"
+      },
+      {
+        "pos": "형용사",
+        "ko": "잠깐의, 간단한"
+      }
+    ],
+    "forms": [
+      "quickly"
+    ],
+    "synonyms": [
+      "fast",
+      "rapid",
+      "brief"
+    ],
+    "domain": "시간·순서·빈도",
+    "freq": 2,
+    "sources": [
+      "selfcheck-d3-kor",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 30,
+        "en": "Add worked examples of well-scored fields to the prompt so the model's numbers follow a consistent scale, then choose the cut-off from a quick read of a few sample outputs.",
+        "surface": "quick",
+        "pos": "형용사",
+        "sense": "잠깐의, 간단한",
+        "ko": "점수가 잘 매겨진 필드의 예시를 프롬프트에 넣어 숫자가 일관된 척도를 따르게 하고, 몇 개 샘플 출력을 훑어보고 기준값을 정한다."
+      }
+    ]
+  },
+  {
+    "id": "quiet",
+    "word": "quiet",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˈkwaɪət",
+    "meaning": "① 조용한 ② 잠잠한, 알림이 없는",
+    "short": "조용한, 잠잠한",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "조용한, 잠잠한"
+      },
+      {
+        "pos": "형용사",
+        "ko": "한적한, 평온한"
+      }
+    ],
+    "synonyms": [
+      "silent",
+      "calm"
+    ],
+    "domain": "상태·성질",
+    "freq": 1,
+    "sources": [
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 7,
+        "en": "Turn it back on right away, but add \"only report high-confidence findings\" to its criteria so it stays quiet",
+        "surface": "quiet",
+        "pos": "형용사",
+        "sense": "조용한, 잠잠한",
+        "ko": "바로 다시 켜되, 조용하도록 기준에 \"only report high-confidence findings\"를 추가한다."
+      }
+    ]
+  },
+  {
+    "id": "quietly",
+    "word": "quietly",
+    "tier": "extra",
+    "pos": [
+      "부사"
+    ],
+    "ipa": "ˈkwaɪətli",
+    "meaning": "조용히, 알리지 않고 (silently 와 비슷)",
+    "short": "조용히, 알리지 않고",
+    "senses": [
+      {
+        "pos": "부사",
+        "ko": "조용히"
+      },
+      {
+        "pos": "부사",
+        "ko": "알리지 않고, 몰래"
+      }
+    ],
+    "synonyms": [
+      "silently"
+    ],
+    "domain": "상태·성질",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "quote",
+    "word": "quote",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "kwoʊt",
+    "meaning": "① (금액·수치를) 말해 주다, 제시하다 ② 인용하다",
+    "short": "인용하다, 제시하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(금액·수치를) 말해 주다, 제시하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "인용하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "인용문, 인용구"
+      },
+      {
+        "pos": "동사",
+        "ko": "(문자열을) 따옴표로 묶다"
+      }
+    ],
+    "forms": [
+      "quoting",
+      "quoted",
+      "quotation",
+      "quotes",
+      "quotations"
+    ],
+    "synonyms": [
+      "cite",
+      "state"
+    ],
+    "domain": "요청·소통",
+    "freq": 13,
+    "sources": [
+      "mock04",
+      "lesson-d3",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 9,
+        "en": "Testers find that after several turns it quotes the wrong refund amount and an incorrect order date, even though those values appeared earlier.",
+        "surface": "quotes",
+        "pos": "동사",
+        "sense": "(금액·수치를) 말해 주다, 제시하다",
+        "ko": "테스터들은 몇 턴이 지나면 에이전트가 앞에서 분명히 나왔던 환불 금액과 주문 날짜를 틀리게 말한다는 것을 발견했습니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 35,
+        "en": "Have each subagent return its findings as short direct quotations, so the wording is exact",
+        "surface": "quotations",
+        "pos": "명사",
+        "sense": "인용문, 인용구",
+        "ko": "서브에이전트가 발견을 짧은 직접 인용문으로 반환하게 해 표현을 정확하게 한다"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 28,
+        "en": "Twice, Claude has handled empty cells and quoted commas differently from what your written spec meant.",
+        "surface": "quoted",
+        "pos": "동사",
+        "sense": "(문자열을) 따옴표로 묶다",
+        "ko": "두 번이나 Claude가 빈 셀과 따옴표 안의 쉼표를 작성한 사양의 의도와 다르게 처리했습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 9,
+        "en": "Enable extended thinking with a larger thinking budget so the model reasons more carefully before quoting any refund figure.",
+        "surface": "quoting",
+        "pos": "동사",
+        "sense": "(금액·수치를) 말해 주다, 제시하다",
+        "ko": "더 큰 thinking 예산으로 확장 사고(extended thinking)를 켜서, 모델이 환불 금액을 인용하기 전에 더 신중하게 추론하게 한다"
+      }
+    ],
+    "note": "1. **(금액·수치를) 말해 주다, 제시하다** — 고객에게 가격·환불액을 \"알려 준다\"는 뜻. 명사 *quote* 는 \"견적\"\r\n2. **인용하다** — 남의 말·글을 그대로 옮긴다 (*quote a source*)\r\n\r\n## 문제 속 쓰임\r\n> Testers find that after several turns it **quotes** the wrong refund amount and an incorrect order date, even though those values appeared earlier.\r\n> 테스터들은 몇 턴이 지나면 에이전트가 앞에서 분명히 나왔던 환불 금액과 주문 날짜를 **틀리게 말한다**는 것을 발견했다.\r\n\r\n## 함께 쓰는 표현\r\n- **quote a price / an amount** : 가격·금액을 제시하다\r\n- **quote verbatim** : 글자 그대로 인용하다\r\n- **quotation marks** : 따옴표\r\n\r\n## 시험 포인트\r\n점진적 요약 뒤에 금액·날짜를 틀리게 말한다면, 그 사실들을 요약 밖의 **고정된 case-facts 블록**에 두고 매 턴 그대로 다시 넣는 보기가 정답입니다. 더 큰 창이나 확장 사고는 손실 압축을 고치지 못합니다."
+  }
+]

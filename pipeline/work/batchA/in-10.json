@@ -1,0 +1,1568 @@
+[
+ {
+  "lemma": "correct",
+  "kind": "new",
+  "surfaces": [
+   "correct",
+   "corrected"
+  ],
+  "freq": 33,
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.2",
+    "en": "What is the correct relationship between these two prompt sources?"
+   },
+   {
+    "sid": "lesson-d2#19.2",
+    "en": "What is the recommended way to guarantee correct ordering for this first step?"
+   },
+   {
+    "sid": "lesson-d3#30.2",
+    "en": "The team confirms the API key secret is valid and the prompt text is correct."
+   },
+   {
+    "sid": "lesson-d5#25.2",
+    "en": "The notes file is still on disk and correct."
+   },
+   {
+    "sid": "mock04#1.4",
+    "en": "What is the correct way to drive the agentic loop?"
+   },
+   {
+    "sid": "sample01#2.3",
+    "en": "What is the most likely cause and correct architectural fix?"
+   },
+   {
+    "sid": "lesson-d4#13.3",
+    "en": "Add more examples with exact numeric doses so the model sees even more clearly what a correct extraction looks like"
+   },
+   {
+    "sid": "lesson-d1#25.2",
+    "en": "What is the cause and the correct fix?"
+   }
+  ]
+ },
+ {
+  "lemma": "correctly",
+  "kind": "new",
+  "surfaces": [
+   "correctly"
+  ],
+  "freq": 14,
+  "sentences": [
+   {
+    "sid": "lesson-d1#1.2",
+    "en": "What should the loop do next to correctly continue the agentic execution?"
+   },
+   {
+    "sid": "lesson-d3#14.1",
+    "en": "Which paths frontmatter correctly scopes the rule to this requirement?"
+   },
+   {
+    "sid": "lesson-d4#12.2",
+    "en": "After deployment, the model performs well on similar short English emails but starts mislabeling longer documents and documents in other languages that it previously handled correctly under the old, example-free prompt."
+   },
+   {
+    "sid": "lesson-d5#27.1",
+    "en": "Early on, the agent correctly identified that OrderService extends a custom TransactionalBase class with a distinctive retry mechanism."
+   },
+   {
+    "sid": "mock04#8.1",
+    "en": "For refunds above the agent's $500 authority, process_refund correctly declines, but it returns a generic isError response."
+   },
+   {
+    "sid": "lesson-d2#8.4",
+    "en": "The agent works out from `isError: true` that the failure is permanent, so it stops and correctly explains the refund policy to the customer."
+   },
+   {
+    "sid": "lesson-d3#16.1",
+    "en": "Which YAML frontmatter for a new .claude/rules/terraform.md file correctly scopes the rule to this requirement?"
+   },
+   {
+    "sid": "lesson-d4#22.0",
+    "en": "A purchase-order extractor uses a strict JSON schema, so every response has correctly typed fields and no missing keys."
+   }
+  ]
+ },
+ {
+  "lemma": "correctness",
+  "kind": "new",
+  "surfaces": [
+   "correctness"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d4#5.0",
+    "en": "One review prompt holds security, correctness and style criteria, and each category has its own rules and severity examples."
+   },
+   {
+    "sid": "lesson-d3#27.5",
+    "en": "Ask Claude to evaluate the test results and fix whichever failure appears more severe first, relying on its internal judgment of the impact on report correctness without stating the exact currency mismatch or missing extension details."
+   },
+   {
+    "sid": "lesson-d4#6.0",
+    "en": "An architect is structuring a long review prompt that defines separate criteria for security, correctness, and style categories, each with its own inclusion rules and severity examples."
+   },
+   {
+    "sid": "lesson-d4#7.1",
+    "en": "Security and correctness comments are now trusted again, and the team has rewritten the performance criteria in explicit terms."
+   },
+   {
+    "sid": "lesson-d4#6.2",
+    "en": "Write each category's criteria as its own prose paragraph, in the order security, correctness, style, and open each paragraph with a sentence naming the category it covers."
+   }
+  ]
+ },
+ {
+  "lemma": "correlation",
+  "kind": "vocab-core",
+  "surfaces": [
+   "correlation",
+   "correlates",
+   "correlating",
+   "correlate"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "correlation",
+   "word": "correlation",
+   "pos": "명사",
+   "ipa": "ˌkɔːrəˈleɪʃn",
+   "meaning": "상관관계, (서로) 대응·연결"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#29.0",
+    "en": "A developer is assembling a batch of translation requests and needs to assign each one an identifier that the Message Batches API will accept and later use to correlate a result with its original request."
+   },
+   {
+    "sid": "lesson-d1#36.3",
+    "en": "A prompt chain sequenced in code that collects logs, then correlates errors, then inspects the related code, each as its own LLM call with a gate between steps"
+   },
+   {
+    "sid": "sample01#8.4",
+    "en": "Implement structured trace logging at each step: request payload, `stop_reason`, tool calls with inputs/outputs, and final response — with a session correlation ID"
+   },
+   {
+    "sid": "sample01-kor#8.2",
+    "en": "각 단계마다 구조화된 트레이스 로그를 남긴다: 요청 페이로드, `stop_reason`, 도구 호출의 입력/출력, 최종 응답 — 세션 상관(correlation) ID 포함."
+   },
+   {
+    "sid": "lesson-d1#37.6",
+    "en": "A prompt chain with predefined stages for collecting logs, correlating errors and inspecting code, then drafting a report"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:correlation.0",
+    "en": "Batch processing lacks request correlation identifiers for matching outputs to input requests.",
+    "ko": "배치 처리에는 출력을 입력 요청과 매칭할 상관 식별자가 없다."
+   }
+  ]
+ },
+ {
+  "lemma": "correspond",
+  "kind": "new",
+  "surfaces": [
+   "corresponding"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#27.1",
+    "en": "Assume that the project follows a consistent and reliable naming convention that pairs each component file with its corresponding test file (for example, `Button.tsx` is tested by `Button.test.tsx`)."
+   }
+  ]
+ },
+ {
+  "lemma": "corrupt",
+  "kind": "vocab-core",
+  "surfaces": [
+   "corrupting"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "corrupt",
+   "word": "corrupt",
+   "pos": "동사·형용사",
+   "ipa": "kəˈrʌpt",
+   "meaning": "(데이터를) 손상시키다 / 손상된"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#56.2",
+    "en": "A new vendor begins sending \"credit memo\" documents, which are not in the enum, and the model force-fits them to \"invoice\", corrupting downstream routing."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:corrupt.0",
+    "en": "The document analysis subagent encounters a corrupted PDF file it cannot parse.",
+    "ko": "문서 분석 서브에이전트가 파싱할 수 없는 손상된 PDF 파일을 만났다."
+   }
+  ]
+ },
+ {
+  "lemma": "cost",
+  "kind": "new",
+  "surfaces": [
+   "costs",
+   "cost"
+  ],
+  "freq": 10,
+  "sentences": [
+   {
+    "sid": "lesson-d1#6.1",
+    "en": "Token costs are too high, and most one-line tickets only need classifying."
+   },
+   {
+    "sid": "lesson-d2#30.1",
+    "en": "Which exploration strategy gives the most useful context for the lowest cost?"
+   },
+   {
+    "sid": "lesson-d3#13.2",
+    "en": "The team wants sessions spent on frontend work to stop paying the context cost of those conventions."
+   },
+   {
+    "sid": "mock04#49.2",
+    "en": "That rubric is needed only by the review job, but it is now injected into every CI job — test generation, doc updates — inflating token cost and diluting the model's focus on those tasks."
+   },
+   {
+    "sid": "sample01#21.0",
+    "en": "What is the correct way to use prompt caching to reduce cost on a system that answers questions about the same 100k-token legal document for many different users?"
+   },
+   {
+    "sid": "lesson-d5#7.4",
+    "en": "Never hand off, because every escalation lowers the deflection rate and adds cost."
+   },
+   {
+    "sid": "sample01#9.0",
+    "en": "A company's Claude-powered legal document review agent costs $180,000/month."
+   },
+   {
+    "sid": "sample01#9.3",
+    "en": "What is the highest-impact cost reduction architecture?"
+   }
+  ]
+ },
+ {
+  "lemma": "costly",
+  "kind": "vocab-core",
+  "surfaces": [
+   "costly"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "costly",
+   "word": "costly",
+   "pos": "형용사",
+   "ipa": "ˈkɔːstli",
+   "meaning": "비용이 많이 드는, 대가가 큰"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#26.1",
+    "en": "After the shared search and document-analysis phase completes, stakeholders want two report variants from the same evidence — a one-page executive brief and a technical deep-dive — without re-running the costly searches."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:costly.0",
+    "en": "...stakeholders want two report variants from the same evidence ... without re-running the costly searches.",
+    "ko": "이해관계자들이 같은 증거로 두 가지 보고서를 원합니다. 비용이 큰 검색을 다시 실행하지 않고..."
+   }
+  ]
+ },
+ {
+  "lemma": "count",
+  "kind": "new",
+  "surfaces": [
+   "count",
+   "counting",
+   "counts"
+  ],
+  "freq": 14,
+  "sentences": [
+   {
+    "sid": "lesson-d2#15.2",
+    "en": "What is the main reliability benefit of this redesign, based on the relationship between tool count and selection accuracy?"
+   },
+   {
+    "sid": "lesson-d5#16.6",
+    "en": "A retry count of 3, start and end timestamps, the subagent ID, and a pointer to a log file holding the full details"
+   },
+   {
+    "sid": "mock04#29.6",
+    "en": "Add a minimum iteration count that the coordinator must reach before it is allowed to stop looping"
+   },
+   {
+    "sid": "lesson-d2#27.0",
+    "en": "An architect asks Claude Code to count how many files in the `src/components` directory tree currently have no matching test file at all, as a first step in planning test coverage work."
+   },
+   {
+    "sid": "lesson-d5#17.4",
+    "en": "The string omits retry history; retry the search with backoff and return the final attempt count to the coordinator"
+   },
+   {
+    "sid": "mock04#37.6",
+    "en": "Raise the coordinator's maximum iteration count so it has more turns to notice the missing subsystems on its own while it works"
+   },
+   {
+    "sid": "lesson-d2#17.3",
+    "en": "Keep fetch_url and add stronger prompt instructions listing which URLs count as documents"
+   },
+   {
+    "sid": "lesson-d5#18.4",
+    "en": "Retry count, call timestamp, elapsed time, and the identifier of the subagent that ran the failed task"
+   }
+  ]
+ },
+ {
+  "lemma": "counter",
+  "kind": "new",
+  "surfaces": [
+   "counter"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#3.4",
+    "en": "Once the counter hits five, tool_result blocks stop being appended to the history, leaving Claude's stop_reason stuck at \"tool_use\""
+   }
+  ]
+ },
+ {
+  "lemma": "couple",
+  "kind": "new",
+  "surfaces": [
+   "couple"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#13.0",
+    "en": "Clinical intake notes say things like \"a couple tablets\" or \"about half a cup\"."
+   }
+  ]
+ },
+ {
+  "lemma": "cover",
+  "kind": "vocab-core",
+  "surfaces": [
+   "covers",
+   "covering",
+   "covered",
+   "cover"
+  ],
+  "freq": 15,
+  "vocab": {
+   "id": "cover",
+   "word": "cover",
+   "pos": "동사",
+   "ipa": "ˈkʌvər",
+   "meaning": "(범위를) 다루다, 포함하다, 아우르다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#6.0",
+    "en": "A project's single CLAUDE.md has grown to over 500 lines covering code style, testing, security requirements, and deployment steps, and the team notices Claude adheres to instructions less reliably than before."
+   },
+   {
+    "sid": "lesson-d5#11.2",
+    "en": "A polite customer whose request no written policy covers stays with the agent."
+   },
+   {
+    "sid": "lesson-d1#15.3",
+    "en": "Put all three reviews into the prompt of one general-purpose subagent so a single spawn covers them"
+   },
+   {
+    "sid": "lesson-d4#38.4",
+    "en": "Merging the two files into one before review so a single per-file pass can cover both without needing an integration step"
+   },
+   {
+    "sid": "mock04#33.5",
+    "en": "Consolidate the two tools into one unified search tool whose single description covers both general web pages and academic sources."
+   },
+   {
+    "sid": "lesson-d2#12.0",
+    "en": "Which report should reach the coordinator when a subagent enriching 50 customer records through `lookup_address` gets 47 successes and 3 `isError: true` results with errorCategory \"permission\" because its credentials don't cover those customers' region?"
+   },
+   {
+    "sid": "lesson-d5#29.0",
+    "en": "A team has one labeled evaluation set covering three document types and has computed only an overall accuracy."
+   },
+   {
+    "sid": "lesson-d1#16.5",
+    "en": "State the objective, the boundaries (2025 supply chains only; another subagent covers the 2021 crisis) and the required output (findings as records with source URL and document name), and leave the search steps to the subagent"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:cover.0",
+    "en": "Consolidate the two tools into one unified search tool whose single description covers both general web pages and academic sources.",
+    "ko": "두 도구를 일반 웹 페이지와 학술 출처를 모두 다루는 설명 하나짜리 통합 검색 도구로 합친다"
+   }
+  ]
+ },
+ {
+  "lemma": "coverage",
+  "kind": "vocab-core",
+  "surfaces": [
+   "coverage"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "coverage",
+   "word": "coverage",
+   "pos": "명사",
+   "ipa": "ˈkʌvərɪdʒ",
+   "meaning": "다루는 범위, 포괄 정도"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#15.0",
+    "en": "Style-checker, security-scanner and test-coverage reviews are independent of each other, and each takes about ten minutes."
+   },
+   {
+    "sid": "lesson-d2#27.0",
+    "en": "An architect asks Claude Code to count how many files in the `src/components` directory tree currently have no matching test file at all, as a first step in planning test coverage work."
+   },
+   {
+    "sid": "lesson-d5#19.2",
+    "en": "The coordinator later synthesizes a report claiming full regulatory coverage."
+   },
+   {
+    "sid": "mock04#25.5",
+    "en": "Raise the temperature of the synthesis subagent so that it produces broader, more varied topical coverage"
+   },
+   {
+    "sid": "lesson-d3#32.0",
+    "en": "An engineering lead wants CI-invoked Claude Code reviews to consistently flag missing test coverage using the team's specific definition of a \"valuable test\" (asserts behavior, not implementation details) and to know which fixtures already exist in the test helpers directory."
+   },
+   {
+    "sid": "lesson-d5#24.0",
+    "en": "A main agent is coordinating exploration of a repository with over 50,000 files and needs a complete list of every test file before planning a coverage audit."
+   },
+   {
+    "sid": "mock04#33.4",
+    "en": "Expand and differentiate both tool descriptions with input formats, example queries, source coverage, and clear boundaries."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:coverage.0",
+    "en": "The synthesis agent lacks instructions for identifying coverage gaps in the findings it receives.",
+    "ko": "종합 에이전트에게 전달받은 결과에서 커버리지 공백을 찾아내라는 지침이 없다."
+   }
+  ]
+ },
+ {
+  "lemma": "crash",
+  "kind": "vocab-core",
+  "surfaces": [
+   "crashes"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "crash",
+   "word": "crash",
+   "pos": "동사·명사",
+   "ipa": "kræʃ",
+   "meaning": "(프로그램이) 갑자기 죽다, 멈추다 · 충돌(다운)"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#14.2",
+    "en": "In testing, 'app crashes on login' is classified as bug, feature_request, and question in different runs."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:crash.0",
+    "en": "In testing, 'app crashes on login' is classified as bug, feature_request, and question in different runs.",
+    "ko": "테스트에서 \"로그인 시 앱이 멈춤\"이 실행마다 bug, feature_request, question 으로 다르게 분류됩니다."
+   }
+  ]
+ },
+ {
+  "lemma": "create",
+  "kind": "new",
+  "surfaces": [
+   "create",
+   "creates"
+  ],
+  "freq": 7,
+  "sentences": [
+   {
+    "sid": "sample01#17.0",
+    "en": "A customer support agent has 14 tools: CRM lookup, order history, payment read, payment write, fraud check, compliance log, email send, SMS send, escalation, refund approve, refund reject, audit write, ticket create, ticket close."
+   },
+   {
+    "sid": "lesson-d1#36.4",
+    "en": "An orchestrator that starts by tracing the missing order IDs through the logs and creates each next subtask from what the last one found, stopping once two rounds turn up nothing new"
+   },
+   {
+    "sid": "lesson-d2#7.5",
+    "en": "Consolidation fits several actions on one resource that share a contract, like create, review and merge on a pull request. Extraction, summarization and claim verification take different inputs and return different outputs, so each needs its own tool and description."
+   },
+   {
+    "sid": "lesson-d1#41.6",
+    "en": "The fork needs fork_session=True on the original session first. Until then the standalone call creates nothing on disk"
+   },
+   {
+    "sid": "sample01#11.4",
+    "en": "Create a custom slash command `/lint` that the developer runs manually after edits"
+   },
+   {
+    "sid": "sample01#13.3",
+    "en": "Create a `CLAUDE.md` file documenting the commands for Claude to learn"
+   },
+   {
+    "sid": "sample01#13.4",
+    "en": "Create markdown files in `.claude/commands/` directory in the repo root and commit them"
+   }
+  ]
+ },
+ {
+  "lemma": "credential",
+  "kind": "vocab-core",
+  "surfaces": [
+   "credential",
+   "credentials"
+  ],
+  "freq": 9,
+  "vocab": {
+   "id": "credential",
+   "word": "credential",
+   "pos": "명사",
+   "ipa": "krəˈdenʃl",
+   "meaning": "자격 증명 — 비밀번호·토큰 같은 인증 정보"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#13.1",
+    "en": "For 47 the lookup succeeds; for 3 the tool returns `isError: true` with `errorCategory: \"permission\"` because the subagent's credentials lack access to those records' region."
+   },
+   {
+    "sid": "lesson-d5#15.0",
+    "en": "In a four-source research pipeline, the patent database sometimes rejects credentials while the other sources keep working."
+   },
+   {
+    "sid": "mock04#40.2",
+    "en": "The team wants the server config to stay shared and version-controlled, but each engineer (and CI) must supply their own credential without leaking it."
+   },
+   {
+    "sid": "lesson-d2#13.2",
+    "en": "The subagent cannot obtain broader credentials itself."
+   },
+   {
+    "sid": "lesson-d5#19.7",
+    "en": "The subagent kept the pipeline running past a credential error, so the other subagents produced results that should have been discarded"
+   },
+   {
+    "sid": "lesson-d2#13.7",
+    "en": "Return the batch after retrying the 3 failed lookups with exponential backoff and the same credentials, until the permission error clears"
+   },
+   {
+    "sid": "lesson-d2#24.5",
+    "en": "Do not attempt to configure Kerberos directly in Claude Code MCP authentication; use an intermediary service that authenticates via Kerberos and then uses Anthropic-supported credentials such as API keys or OAuth tokens."
+   },
+   {
+    "sid": "lesson-d2#9.5",
+    "en": "errorCategory \"permission\", isRetryable false, so the agent asks for a credential with broader access"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:credential.0",
+    "en": "You want consistent tooling across the team without committing credentials to version control.",
+    "ko": "자격 증명을 버전 관리에 커밋하지 않으면서 팀 전체에 일관된 도구를 제공하고 싶다."
+   }
+  ]
+ },
+ {
+  "lemma": "credible",
+  "kind": "vocab-core",
+  "surfaces": [
+   "credible"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "credible",
+   "word": "credible",
+   "pos": "형용사",
+   "ipa": "ˈkredəbl",
+   "meaning": "믿을 만한, 신뢰할 수 있는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#37.0",
+    "en": "Halfway through a batch of filings, a subagent finds that two credible documents give different headcounts for the same company."
+   },
+   {
+    "sid": "lesson-d5#38.1",
+    "en": "Both sources are credible."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:credible.0",
+    "en": "The document analysis agent discovers that two credible sources contain directly conflicting statistics.",
+    "ko": "문서 분석 에이전트가 신뢰할 만한 두 출처에서 정면으로 충돌하는 통계를 발견한다."
+   }
+  ]
+ },
+ {
+  "lemma": "credit",
+  "kind": "vocab-core",
+  "surfaces": [
+   "credits",
+   "credit"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "credit",
+   "word": "credit",
+   "pos": "명사",
+   "ipa": "ˈkredɪt",
+   "meaning": "① 크레딧, 적립금 (보상 금액) ② (회계) 대변"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#56.2",
+    "en": "A new vendor begins sending \"credit memo\" documents, which are not in the enum, and the model force-fits them to \"invoice\", corrupting downstream routing."
+   },
+   {
+    "sid": "mock04-kor#56.0",
+    "en": "추출 스키마는 `document_type` 에 알려진 값 6개로 된 enum을 씁니다. 새 공급업체가 enum에 없는 \"credit memo\"(대변 메모) 문서를 보내기 시작했고, 모델은 이를 억지로 `\"invoice\"` 에 끼워 맞춰 다운스트림 라우팅을 오염시킵니다. 가장 좋은 설계 변경은 무엇일까요?"
+   },
+   {
+    "sid": "mock04#6.1",
+    "en": "process_refund handles both full order refunds and small partial goodwill credits."
+   },
+   {
+    "sid": "mock04-kor#6.0",
+    "en": "`process_refund` 는 주문 전액 환불과 소액 부분 호의 크레딧(goodwill credit)을 모두 처리합니다. 로그를 보면 에이전트가 하나의 도구만으로는 자신이 어떤 동작을 호출하는지 구분하지 못해, 부분 크레딧이면 충분했던 경우의 17%에서 전액 환불을 처리합니다. 가장 좋은 해결책은 무엇일까요?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:credit.0",
+    "en": "process_refund handles both full order refunds and small partial goodwill credits.",
+    "ko": "`process_refund` 는 주문 전액 환불과 소액 부분 호의 크레딧(goodwill credit)을 모두 처리합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "crisis",
+  "kind": "new",
+  "surfaces": [
+   "crisis"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#16.5",
+    "en": "State the objective, the boundaries (2025 supply chains only; another subagent covers the 2021 crisis) and the required output (findings as records with source URL and document name), and leave the search steps to the subagent"
+   }
+  ]
+ },
+ {
+  "lemma": "crisp",
+  "kind": "new",
+  "surfaces": [
+   "crisp"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#13.1",
+    "en": "The extraction pipeline's examples all show crisp doses such as \"400 mg\", and the output keeps showing precise amounts the patient never gave."
+   }
+  ]
+ },
+ {
+  "lemma": "criteria",
+  "kind": "vocab-core",
+  "surfaces": [
+   "criteria",
+   "criterion"
+  ],
+  "freq": 13,
+  "vocab": {
+   "id": "criteria",
+   "word": "criteria",
+   "pos": "명사",
+   "ipa": "kraɪˈtɪriə",
+   "meaning": "(판단) 기준 — criterion 의 복수"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#25.1",
+    "en": "The team wants to know which prompt criterion to change."
+   },
+   {
+    "sid": "mock04#52.6",
+    "en": "Add more detailed quality criteria, such as an assertion-strength checklist, to the existing session's review prompt"
+   },
+   {
+    "sid": "lesson-d4#3.1",
+    "en": "Under an explicit-criteria rule that only flags comments contradicted by actual code behavior, should this finding be reported?"
+   },
+   {
+    "sid": "lesson-d4#4.2",
+    "en": "How should well-written review criteria treat that helper's name?"
+   },
+   {
+    "sid": "lesson-d4#5.0",
+    "en": "One review prompt holds security, correctness and style criteria, and each category has its own rules and severity examples."
+   },
+   {
+    "sid": "lesson-d4#6.0",
+    "en": "An architect is structuring a long review prompt that defines separate criteria for security, correctness, and style categories, each with its own inclusion rules and severity examples."
+   },
+   {
+    "sid": "lesson-d4#6.1",
+    "en": "Which structuring approach best helps Claude apply the right criteria to the right category without cross-contamination?"
+   },
+   {
+    "sid": "lesson-d4#7.1",
+    "en": "Security and correctness comments are now trusted again, and the team has rewritten the performance criteria in explicit terms."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:criteria.0",
+    "en": "Include explicit severity criteria in your prompt with concrete code examples for each severity level.",
+    "ko": "프롬프트에 심각도 수준별 명확한 기준과 구체적인 코드 예시를 넣는다."
+   }
+  ]
+ },
+ {
+  "lemma": "critical",
+  "kind": "vocab-core",
+  "surfaces": [
+   "critical",
+   "critically"
+  ],
+  "freq": 14,
+  "vocab": {
+   "id": "critical",
+   "word": "critical",
+   "pos": "형용사",
+   "ipa": "ˈkrɪtɪkl",
+   "meaning": "① 심각한, 치명적인 ② 비판적인 ③ 매우 중요한"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#46.1",
+    "en": "A CI pipeline calls Claude Code to review each pull request, and a shell gate script greps stdout for the word \"CRITICAL\" to fail the build."
+   },
+   {
+    "sid": "lesson-d3#27.4",
+    "en": "Withhold the filename extension failure and report only the currency-formatting mismatch as the primary defect found first, deferring the secondary extension issue to avoid distracting Claude from the more critical formatting fix."
+   },
+   {
+    "sid": "lesson-d4#25.5",
+    "en": "A `severity` tier, so dismissal rates can be compared across critical, high and low findings"
+   },
+   {
+    "sid": "mock04-kor#46.1",
+    "en": "CI 파이프라인이 Claude Code를 호출해 풀 리퀘스트마다 리뷰를 수행하고, 셸 게이트 스크립트가 stdout에서 \"CRITICAL\" 이라는 단어를 grep해 빌드를 실패시킵니다. 그런데 Claude가 심각한 발견 사항을 실행할 때마다 \"severe issue\", \"major bug\", \"critical defect\"처럼 다르게 표현하기 때문에 게이트 결과가 들쭉날쭉합니다. 가장 효과적인 해결책은 무엇일까요?"
+   },
+   {
+    "sid": "selfcheck-d2-kor#3.1",
+    "en": "\"CRITICAL\"을 붙여 조회 도구의 우선순위를 더 강하게 쓴다"
+   },
+   {
+    "sid": "mock04#46.2",
+    "en": "The gate is flaky because Claude phrases severe findings differently each run — \"severe issue,\" \"major bug,\" \"critical defect.\""
+   },
+   {
+    "sid": "lesson-d4#26.6",
+    "en": "Add a severity field that ranks the impact of each finding from low to critical, so dismissal rates can be compared per tier"
+   },
+   {
+    "sid": "mock04-kor#46.4",
+    "en": "프롬프트에 \"always use the exact word CRITICAL for severe issues\"(심각한 문제에는 항상 CRITICAL이라는 단어를 정확히 쓸 것)라고 지시하고, 그 표현에 의존해 빌드를 판정한다."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:critical.0",
+    "en": "...a shell gate script greps stdout for the word \"CRITICAL\" to fail the build.",
+    "ko": "셸 게이트 스크립트가 stdout에서 \"CRITICAL\" 이라는 단어를 grep해 빌드를 실패시킵니다."
+   },
+   {
+    "vid": "vocab:critical.1",
+    "en": "Instruct the generating session to \"review critically and assume the code contains bugs\"...",
+    "ko": "생성 세션에 \"비판적으로 리뷰하고 코드에 버그가 있다고 가정하라\"라고 지시한다..."
+   }
+  ]
+ },
+ {
+  "lemma": "critique",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "critique",
+   "word": "critique",
+   "pos": "명사·동사",
+   "ipa": "krɪˈtiːk",
+   "meaning": "비평(하다) — 검토해 문제점을 짚다"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:critique.0",
+    "en": "Add a self-critique step where the agent evaluates its draft response for completeness.",
+    "ko": "에이전트가 초안 응답에 빠진 내용이 없는지 스스로 평가하는 자기 비평 단계를 추가한다."
+   }
+  ]
+ },
+ {
+  "lemma": "crm",
+  "kind": "vocab-core",
+  "surfaces": [
+   "crm"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "crm",
+   "word": "CRM",
+   "pos": "약어",
+   "ipa": "ˌsiːɑːrˈem",
+   "meaning": "고객 관계 관리(Customer Relationship Management) 시스템"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#17.0",
+    "en": "A customer support agent has 14 tools: CRM lookup, order history, payment read, payment write, fraud check, compliance log, email send, SMS send, escalation, refund approve, refund reject, audit write, ticket create, ticket close."
+   },
+   {
+    "sid": "sample01-kor#17.0",
+    "en": "고객지원 에이전트가 14개의 도구를 갖고 있습니다: CRM 조회, 주문 이력, 결제 조회, 결제 쓰기, 사기 검사, 컴플라이언스 로그, 이메일 발송, SMS 발송, 에스컬레이션, 환불 승인, 환불 거절, 감사 기록, 티켓 생성, 티켓 종료. 운영 환경에서 엉뚱한 도구를 자주 선택하고, 사기 검사를 끝내지 않은 채 결제를 처리합니다. 올바른 아키텍처 수정은 무엇일까요?"
+   },
+   {
+    "sid": "selfcheck-d1-kor#26.0",
+    "en": "예약·CRM·포인트 MCP 서버가 각각 Unix 초, ISO 8601, 숫자 상태 코드로 응답한다. 에이전트가 환불 기한을 계산하다 자주 틀린다. 가장 알맞은 해결은?"
+   },
+   {
+    "sid": "selfcheck-d2-kor#13.0",
+    "en": "고객 상담 시스템에서 상담 기록을 요약해 CRM에 남기는 요약 에이전트가 모든 에이전트와 같은 도구 세트를 받았다. 어느 날 요약 도중 이 에이전트가 `cancel_order`를 실행했다. 다만 요약 중에 주문 상태를 확인할 일은 자주 있다. 가장 알맞은 설계 변경은?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:crm.0",
+    "en": "A customer support agent has 14 tools: CRM lookup, order history, payment read, payment write, fraud check...",
+    "ko": "고객지원 에이전트가 14개의 도구(CRM 조회, 주문 이력, 결제 조회, 결제 쓰기, 사기 검사...)를 갖고 있습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "cross",
+  "kind": "new",
+  "surfaces": [
+   "cross"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d4#6.1",
+    "en": "Which structuring approach best helps Claude apply the right criteria to the right category without cross-contamination?"
+   },
+   {
+    "sid": "lesson-d1#30.3",
+    "en": "`updatedMCPToolOutput`, because it is the field intended for cross‑tool output replacement."
+   },
+   {
+    "sid": "lesson-d4#19.5",
+    "en": "Add checks in their own code after extraction, such as line items summing to the total and cross-field consistency, and send any failures back to Claude"
+   }
+  ]
+ },
+ {
+  "lemma": "cross-file",
+  "kind": "vocab-core",
+  "surfaces": [
+   "cross-file"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "cross-file",
+   "word": "cross-file",
+   "pos": "형용사",
+   "ipa": "ˌkrɔːs ˈfaɪl",
+   "meaning": "여러 파일에 걸친, 파일 간의"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#35.1",
+    "en": "Reviewers have noticed that when a single pass tries to hold all 40 files in context at once, subtle cross-file issues are missed and comments become generic."
+   },
+   {
+    "sid": "mock04#42.1",
+    "en": "The team added a code-intelligence MCP server that does semantic, cross-file symbol search over an indexed monorepo."
+   },
+   {
+    "sid": "lesson-d4#38.2",
+    "en": "A separate cross-file integration pass that examines both files together and produces one recommendation based on the actual data flow"
+   },
+   {
+    "sid": "mock04#42.6",
+    "en": "Enrich the MCP tool description with example queries and a note that it does semantic cross-file search literal matching misses."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:cross-file.0",
+    "en": "The team added a code-intelligence MCP server that does semantic, cross-file symbol search over an indexed monorepo.",
+    "ko": "팀이 인덱싱된 모노레포에서 의미 기반의 파일 간 심볼 검색을 하는 코드 인텔리전스 MCP 서버를 추가했습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "csv-to-json",
+  "kind": "new",
+  "surfaces": [
+   "csv-to-json"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d3#28.0",
+    "en": "You are building a CSV-to-JSON converter with Claude."
+   },
+   {
+    "sid": "lesson-d3#25.0",
+    "en": "A team lead wants Claude Code to implement a CSV-to-JSON conversion utility whose column-to-field mapping rules are difficult to describe precisely in words, since the exact handling of empty cells, quoted commas, and duplicate headers matters."
+   }
+  ]
+ },
+ {
+  "lemma": "cumulative",
+  "kind": "vocab-core",
+  "surfaces": [
+   "cumulative"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "cumulative",
+   "word": "cumulative",
+   "pos": "형용사",
+   "ipa": "ˈkjuːmjələtɪv",
+   "meaning": "누적된, 쌓여 가는"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#6.4",
+    "en": "Context window saturation — the cumulative message history exceeds the effective attention range; implement a summarization/compaction strategy"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:cumulative.0",
+    "en": "Context window saturation — the cumulative message history exceeds the effective attention range...",
+    "ko": "컨텍스트 윈도 포화 — 누적 대화 기록이 실질적인 주의 범위를 넘었다..."
+   }
+  ]
+ },
+ {
+  "lemma": "cup",
+  "kind": "new",
+  "surfaces": [
+   "cup"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#13.0",
+    "en": "Clinical intake notes say things like \"a couple tablets\" or \"about half a cup\"."
+   }
+  ]
+ },
+ {
+  "lemma": "currency",
+  "kind": "vocab-core",
+  "surfaces": [
+   "currency"
+  ],
+  "freq": 8,
+  "vocab": {
+   "id": "currency",
+   "word": "currency",
+   "pos": "명사",
+   "ipa": "ˈkɜːrənsi",
+   "meaning": "통화, 화폐 (단위)"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#4.1",
+    "en": "get_customer and lookup_order call two different backend systems that return dates in different formats (ISO vs. US) and amounts with inconsistent currency notation."
+   },
+   {
+    "sid": "lesson-d3#27.2",
+    "en": "Report each failure sequentially in its own message: first address the currency-formatting mismatch, and once confirmed fixed, the filename extension issue, because the two problems are independent."
+   },
+   {
+    "sid": "lesson-d3#27.3",
+    "en": "Combine both failures into a single message that shows the full test run output, noting that the currency-formatting mismatch and the filename extension omission are unrelated defects, and ask Claude to fix both."
+   },
+   {
+    "sid": "mock04#4.4",
+    "en": "Instruct the model in the system prompt to normalize all dates and currency values before it reasons about them."
+   },
+   {
+    "sid": "lesson-d3#27.4",
+    "en": "Withhold the filename extension failure and report only the currency-formatting mismatch as the primary defect found first, deferring the secondary extension issue to avoid distracting Claude from the more critical formatting fix."
+   },
+   {
+    "sid": "mock04#4.5",
+    "en": "Increase the context window so the model has more room to keep the varied date and currency formats straight."
+   },
+   {
+    "sid": "lesson-d3#27.5",
+    "en": "Ask Claude to evaluate the test results and fix whichever failure appears more severe first, relying on its internal judgment of the impact on report correctness without stating the exact currency mismatch or missing extension details."
+   },
+   {
+    "sid": "lesson-d3#27.0",
+    "en": "A test run against a newly generated report-export module in Claude Code produces two failures: a currency-formatting mismatch in the summary totals and a completely unrelated failure where the export filename generator omits the file extension on Windows paths."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:currency.0",
+    "en": "...amounts with inconsistent currency notation.",
+    "ko": "금액의 통화 표기도 일관되지 않습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "currency-conversion",
+  "kind": "vocab-core",
+  "surfaces": [
+   "currency-conversion"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "currency-conversion",
+   "word": "currency-conversion",
+   "pos": "명사구",
+   "ipa": "ˈkɜːrənsi kənˈvɜːrʒn",
+   "meaning": "통화 변환, 환전"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#37.3",
+    "en": "Production runs show the final plan omits an entire 'dunning' subsystem and a currency-conversion layer that no subagent was ever assigned."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:currency-conversion.0",
+    "en": "Production runs show the final plan omits an entire 'dunning' subsystem and a currency-conversion layer that no subagent was ever assigned.",
+    "ko": "운영 실행 결과를 보면 최종 계획에서, 어떤 서브에이전트에도 배정되지 않았던 'dunning'(연체 독촉) 하위 시스템 전체와 통화 변환 계층이 빠져 있습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "currency-formatting",
+  "kind": "new",
+  "surfaces": [
+   "currency-formatting"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d3#27.2",
+    "en": "Report each failure sequentially in its own message: first address the currency-formatting mismatch, and once confirmed fixed, the filename extension issue, because the two problems are independent."
+   },
+   {
+    "sid": "lesson-d3#27.3",
+    "en": "Combine both failures into a single message that shows the full test run output, noting that the currency-formatting mismatch and the filename extension omission are unrelated defects, and ask Claude to fix both."
+   },
+   {
+    "sid": "lesson-d3#27.4",
+    "en": "Withhold the filename extension failure and report only the currency-formatting mismatch as the primary defect found first, deferring the secondary extension issue to avoid distracting Claude from the more critical formatting fix."
+   },
+   {
+    "sid": "lesson-d3#27.0",
+    "en": "A test run against a newly generated report-export module in Claude Code produces two failures: a currency-formatting mismatch in the summary totals and a completely unrelated failure where the export filename generator omits the file extension on Windows paths."
+   }
+  ]
+ },
+ {
+  "lemma": "current",
+  "kind": "vocab-core",
+  "surfaces": [
+   "current",
+   "currently"
+  ],
+  "freq": 16,
+  "vocab": {
+   "id": "current",
+   "word": "current",
+   "pos": "형용사",
+   "ipa": "ˈkɜːrənt",
+   "meaning": "현재의, 지금의"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#30.1",
+    "en": "Currently, a legacy MCP tool uses `updatedMCPToolOutput` and a newer built-in tool uses `updatedToolOutput`."
+   },
+   {
+    "sid": "lesson-d2#18.1",
+    "en": "Currently, every subagent is configured with the full union of all tools used anywhere in the pipeline, so each has around 15 tools available, and each agent's tool choice is left at {\"type\": \"auto\"} in every turn."
+   },
+   {
+    "sid": "lesson-d3#12.1",
+    "en": "Every session currently loads both."
+   },
+   {
+    "sid": "lesson-d4#17.0",
+    "en": "A team building a resume-parsing tool wants to guarantee that structured candidate data is extracted via a `parse_resume` tool on the current turn."
+   },
+   {
+    "sid": "mock04#20.2",
+    "en": "The history is full of superseded intermediate diffs, but the current task and goal are unchanged and the latest file states are still valid."
+   },
+   {
+    "sid": "lesson-d5#6.4",
+    "en": "Move the regulatory risk section to the end of the combined input, and keep the other four sections in their current order"
+   },
+   {
+    "sid": "lesson-d2#27.0",
+    "en": "An architect asks Claude Code to count how many files in the `src/components` directory tree currently have no matching test file at all, as a first step in planning test coverage work."
+   },
+   {
+    "sid": "mock04#28.2",
+    "en": "This week the report cites last week's prices as current, because the resumed session replays cached web-search tool results."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:current.0",
+    "en": "The history is full of superseded intermediate diffs, but the current task and goal are unchanged...",
+    "ko": "기록은 이미 폐기된 중간 diff로 가득하지만, 현재 작업과 목표는 그대로이고..."
+   }
+  ]
+ },
+ {
+  "lemma": "custom",
+  "kind": "vocab-core",
+  "surfaces": [
+   "custom"
+  ],
+  "freq": 10,
+  "vocab": {
+   "id": "custom",
+   "word": "custom",
+   "pos": "형용사",
+   "ipa": "ˈkʌstəm",
+   "meaning": "맞춤(형)의, 사용자가 직접 정의한"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#25.0",
+    "en": "An architect writes a PreToolUse hook with the regex matcher `/refund/` intending it to gate a single custom tool named `refund`."
+   },
+   {
+    "sid": "lesson-d5#27.1",
+    "en": "Early on, the agent correctly identified that OrderService extends a custom TransactionalBase class with a distinctive retry mechanism."
+   },
+   {
+    "sid": "mock04#1.1",
+    "en": "A customer support resolution agent built with the Claude Agent SDK reaches backend systems through custom MCP tools (get_customer, lookup_order, process_refund, escalate_to_human)."
+   },
+   {
+    "sid": "sample01#11.4",
+    "en": "Create a custom slash command `/lint` that the developer runs manually after edits"
+   },
+   {
+    "sid": "lesson-d2#10.1",
+    "en": "The current design returns `isError: true` with additional custom fields `errorCategory: \"validation\"` and `isRetryable: true` whenever the caller omits a required `customer_id` argument, on the reasoning that the agent might supply it correctly on a later attempt within the same conversation."
+   },
+   {
+    "sid": "lesson-d1#25.4",
+    "en": "Matchers can only target tool names that begin with the `mcp__` server prefix. A custom in-process tool like `refund` must be renamed to include this prefix before any matcher can reliably target it."
+   },
+   {
+    "sid": "lesson-d5#4.3",
+    "en": "Write a custom summary prompt that tells Claude to list every amount, date and promise under Context to Preserve"
+   },
+   {
+    "sid": "sample01#22.3",
+    "en": "`stop_sequence` — a custom stop string was matched"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:custom.0",
+    "en": "Create a custom slash command `/lint` that the developer runs manually after edits",
+    "ko": "개발자가 편집 후 수동으로 실행하는 `/lint` 커스텀 슬래시 커맨드를 만든다"
+   },
+   {
+    "vid": "vocab:custom.1",
+    "en": "`stop_sequence` — a custom stop string was matched",
+    "ko": "`stop_sequence` — 지정한 중단 문자열과 일치했다"
+   }
+  ]
+ },
+ {
+  "lemma": "customer",
+  "kind": "new",
+  "surfaces": [
+   "customer",
+   "customers"
+  ],
+  "freq": 68,
+  "sentences": [
+   {
+    "sid": "lesson-d1#19.1",
+    "en": "Audits show that a small share of refunds still go out without the customer's identity being verified first."
+   },
+   {
+    "sid": "lesson-d2#13.0",
+    "en": "A subagent responsible for enriching customer records calls an internal `lookup_address` tool for 50 customers."
+   },
+   {
+    "sid": "lesson-d3#24.0",
+    "en": "A data engineer is iterating with Claude Code on a migration script that transforms legacy customer records into a new schema."
+   },
+   {
+    "sid": "lesson-d4#10.1",
+    "en": "The prompt performs well on those twenty inputs but degrades noticeably whenever a customer submits a new input that is similar to, but not identical to, one of the twenty."
+   },
+   {
+    "sid": "lesson-d5#1.0",
+    "en": "A support bot built on the Messages API sends the system prompt, its tool definitions and the customer's newest message on each request."
+   },
+   {
+    "sid": "mock04#1.0",
+    "en": "[Scenario: Customer Support Resolution Agent]"
+   },
+   {
+    "sid": "sample01#1.0",
+    "en": "An engineer builds an agentic customer support bot with the loop logic shown below."
+   },
+   {
+    "sid": "lesson-d1#20.1",
+    "en": "The address subagent keeps asking which customer account it is working on."
+   }
+  ]
+ },
+ {
+  "lemma": "cut",
+  "kind": "new",
+  "surfaces": [
+   "cut"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d2#3.0",
+    "en": "A teammate wants to cut a nested-input tool's description down to one line and add three schema-valid `input_examples` instead, since \"examples show Claude more than prose does.\""
+   },
+   {
+    "sid": "lesson-d1#32.7",
+    "en": "One LLM call that writes and translates the description together, to cut latency"
+   },
+   {
+    "sid": "lesson-d2#25.6",
+    "en": "Cut the description to a single word so it is easier to match"
+   },
+   {
+    "sid": "lesson-d2#9.4",
+    "en": "errorCategory \"validation\", isRetryable true, because the agent can cut the list down and call again"
+   }
+  ]
+ },
+ {
+  "lemma": "cut-off",
+  "kind": "vocab-core",
+  "surfaces": [
+   "cut off",
+   "cut-off"
+  ],
+  "freq": 8,
+  "vocab": {
+   "id": "cut-off",
+   "word": "cut-off",
+   "pos": "동사구·명사",
+   "ipa": "ˌkʌt ˈɔːf",
+   "meaning": "① (cut off) 도중에 잘리다, 끊기다 ② (cut-off) 기준점, 마감 시점"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#32.1",
+    "en": "What has to happen before you can use 0.85 as the cut-off for automatic acceptance?"
+   },
+   {
+    "sid": "mock04#58.1",
+    "en": "For scanned documents where the tax ID is physically cut off at the page edge and simply absent from the source text, the validation-retry loop retries five times and still fails, burning tokens on every attempt."
+   },
+   {
+    "sid": "sample01#22.4",
+    "en": "`max_tokens` — the response was cut off at the token limit"
+   },
+   {
+    "sid": "lesson-d5#30.2",
+    "en": "Add worked examples of well-scored fields to the prompt so the model's numbers follow a consistent scale, then choose the cut-off from a quick read of a few sample outputs."
+   },
+   {
+    "sid": "mock04#58.3",
+    "en": "Raise the retry ceiling from five to ten, since with enough attempts the model will eventually recover the cut-off tax ID from the scanned page."
+   },
+   {
+    "sid": "lesson-d5#30.3",
+    "en": "Measure how often fields at each score level are actually right on a labeled validation set of past documents, then set the cut-off where observed accuracy meets the target."
+   },
+   {
+    "sid": "mock04#7.5",
+    "en": "Raise the get_customer connection timeout so slow database responses are no longer cut off in the middle of a request."
+   },
+   {
+    "sid": "lesson-d5#30.4",
+    "en": "Run the extraction several separate times per document and average each field's numbers, then set the cut-off on the averaged value to damp random variation between runs."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:cut-off.0",
+    "en": "`max_tokens` — the response was cut off at the token limit",
+    "ko": "`max_tokens` — 응답이 토큰 한도에서 잘렸다"
+   },
+   {
+    "vid": "vocab:cut-off.1",
+    "en": "...so slow database responses are no longer cut off in the middle of a request.",
+    "ko": "느린 데이터베이스 응답이 요청 도중에 끊기지 않게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "cycle",
+  "kind": "new",
+  "surfaces": [
+   "cycles"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#28.5",
+    "en": "Submit every 8 hours, because three cycles a day keeps any document from waiting long"
+   }
+  ]
+ },
+ {
+  "lemma": "damp",
+  "kind": "new",
+  "surfaces": [
+   "damp"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#30.4",
+    "en": "Run the extraction several separate times per document and average each field's numbers, then set the cut-off on the averaged value to damp random variation between runs."
+   }
+  ]
+ },
+ {
+  "lemma": "data",
+  "kind": "new",
+  "surfaces": [
+   "data"
+  ],
+  "freq": 42,
+  "sentences": [
+   {
+    "sid": "lesson-d1#1.0",
+    "en": "An architect is building a client-side agent loop against the Messages API for a data-cleanup task."
+   },
+   {
+    "sid": "lesson-d2#2.0",
+    "en": "A team names two tools `process_data` and `process_information`, and both share the description \"Processes data provided by the user.\""
+   },
+   {
+    "sid": "lesson-d3#2.0",
+    "en": "Your compliance team wants a data-handling instruction to reach every developer in every repository, and no developer should be able to remove it."
+   },
+   {
+    "sid": "lesson-d4#10.0",
+    "en": "A team built a classification prompt with twenty exact input-output pairs, one for every edge case they had personally encountered in their historical data."
+   },
+   {
+    "sid": "lesson-d5#19.0",
+    "en": "A regulatory-filings subagent cannot reach its data provider because the provider's API key expired."
+   },
+   {
+    "sid": "mock04#35.1",
+    "en": "Two sources report different market-size figures for the same market — $4.2B (2021 data) versus $6.8B (2023 data)."
+   },
+   {
+    "sid": "sample01#15.0",
+    "en": "A data pipeline needs to extract structured invoice data (vendor, line items, totals) from free-text invoice PDFs."
+   },
+   {
+    "sid": "mock04-kor#53.0",
+    "en": "Claude가 출력을 마크다운 코드 펜스로 감싸거나 \"Here is the extracted data:\"(추출한 데이터는 다음과 같습니다) 같은 문장을 앞에 붙이기 때문입니다. 프롬프트를 손봐서 실패를 줄이긴 했지만 없애지는 못했습니다. 가장 신뢰할 수 있는 해결책은 무엇일까요?"
+   }
+  ]
+ },
+ {
+  "lemma": "database",
+  "kind": "new",
+  "surfaces": [
+   "database"
+  ],
+  "freq": 16,
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.0",
+    "en": "An architect is defining a \"database-migration\" AgentDefinition with a long prompt field describing SQL best practices, rollback strategy, and data integrity checks."
+   },
+   {
+    "sid": "lesson-d2#30.0",
+    "en": "In a repository Claude has never seen, you need to trace a login request from its HTTP route handler down to the database query."
+   },
+   {
+    "sid": "lesson-d3#4.0",
+    "en": "To reduce the context used at launch, a team moves the frontend and database sections of its 300-line root CLAUDE.md into docs/frontend.md and docs/db.md."
+   },
+   {
+    "sid": "lesson-d4#33.0",
+    "en": "An insurer's claims agent calls the company's own policy-database lookup tool, reads what comes back, and then decides on its next step, often over several turns."
+   },
+   {
+    "sid": "lesson-d5#14.0",
+    "en": "A research coordinator sends a patents subagent to search a patent database."
+   },
+   {
+    "sid": "mock04#41.1",
+    "en": "The agent connects to a database MCP server to help engineers query a legacy schema."
+   },
+   {
+    "sid": "lesson-d2#31.0",
+    "en": "A newly onboarded architect asks Claude Code to trace how a login request flows from the HTTP route handler through to the database call, in a codebase Claude has not explored yet."
+   },
+   {
+    "sid": "lesson-d5#14.1",
+    "en": "The database refuses connections."
+   }
+  ]
+ },
+ {
+  "lemma": "dataset",
+  "kind": "new",
+  "surfaces": [
+   "dataset"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#29.4",
+    "en": "Collect a brand-new labeled dataset just for that type before looking at anything"
+   }
+  ]
+ },
+ {
+  "lemma": "date",
+  "kind": "new",
+  "surfaces": [
+   "date",
+   "dates"
+  ],
+  "freq": 22,
+  "sentences": [
+   {
+    "sid": "lesson-d4#23.2",
+    "en": "Three retries have each returned a different date that appears nowhere in the contract."
+   },
+   {
+    "sid": "lesson-d5#8.3",
+    "en": "The billing-date change they need takes one tool call."
+   },
+   {
+    "sid": "mock04#4.1",
+    "en": "get_customer and lookup_order call two different backend systems that return dates in different formats (ISO vs. US) and amounts with inconsistent currency notation."
+   },
+   {
+    "sid": "sample01#3.1",
+    "en": "In testing, the model frequently passes malformed date strings (`\"next Tuesday\"`, `\"ASAP\"`) and occasionally swaps the `from` and `to` parameters."
+   },
+   {
+    "sid": "mock04#9.2",
+    "en": "Testers find that after several turns it quotes the wrong refund amount and an incorrect order date, even though those values appeared earlier."
+   },
+   {
+    "sid": "lesson-d4#21.5",
+    "en": "A response that puts the patient's date of birth under `guardian` instead of `patient`"
+   },
+   {
+    "sid": "lesson-d5#13.4",
+    "en": "Open the record with the most recent departure date on the route, then continue the claim review"
+   },
+   {
+    "sid": "lesson-d4#23.4",
+    "en": "Retry again with the contract, the failed extraction and a more explicit validation error that says the date cannot be found"
+   }
+  ]
+ },
+ {
+  "lemma": "dated",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "dated",
+   "word": "dated",
+   "pos": "형용사",
+   "ipa": "ˈdeɪtɪd",
+   "meaning": "① (ID·버전에) 날짜가 붙은 — dateless: 날짜가 없는 ② 낡은, 시대에 뒤진"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "day",
+  "kind": "new",
+  "surfaces": [
+   "day",
+   "days"
+  ],
+  "freq": 8,
+  "sentences": [
+   {
+    "sid": "lesson-d1#39.0",
+    "en": "An architect ran a two-hour investigation into a flaky payment-retry bug yesterday afternoon and named the session 'payment-retry-bug' before stopping for the day."
+   },
+   {
+    "sid": "lesson-d5#10.1",
+    "en": "The store's documented policy only describes price adjustments when the store's own website lowers a price within 14 days of purchase; it does not mention competitor pricing at all."
+   },
+   {
+    "sid": "mock04#39.1",
+    "en": "An engineer runs `--resume` on a named exploration session from three days ago to continue a refactor."
+   },
+   {
+    "sid": "lesson-d4#28.4",
+    "en": "Submit every 12 hours, because half a day plus a typical batch run fits well inside 30 hours"
+   },
+   {
+    "sid": "sample01#7.0",
+    "en": "A company is building three Claude integrations: (1) a simple FAQ chatbot for a marketing website, (2) a complex multi-step contract analysis agent that must identify subtle legal risks, (3) a high-volume document classification pipeline processing 50,000 documents per day."
+   },
+   {
+    "sid": "lesson-d4#28.5",
+    "en": "Submit every 8 hours, because three cycles a day keeps any document from waiting long"
+   },
+   {
+    "sid": "mock04#39.6",
+    "en": "Run fork_session on the three-day-old session to branch the refactor onto a new line of history"
+   },
+   {
+    "sid": "lesson-d4#31.5",
+    "en": "An overnight report that groups the day's support tickets by theme for the product team"
+   }
+  ]
+ }
+]

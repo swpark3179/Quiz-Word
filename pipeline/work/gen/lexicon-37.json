@@ -1,0 +1,648 @@
+[
+ {
+  "lemma": "row", "skip": null, "word": "row", "pos": ["명사", "동사"], "ipa": "roʊ",
+  "meaning": "① (표·데이터의) 행 ② (나란히 늘어선) 줄 ③ 노를 젓다",
+  "short": "(표의) 행, 줄",
+  "senses": [
+   { "pos": "명사", "ko": "(표·데이터의) 행" },
+   { "pos": "명사", "ko": "(나란히 늘어선) 줄, 열" },
+   { "pos": "동사", "ko": "노를 젓다" }
+  ],
+  "forms": ["rows", "rowed", "rowing"], "synonyms": ["line"], "domain": "데이터·정보·문서", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#25.2", "surface": "rows", "pos": "명사", "sense": "(표·데이터의) 행" },
+   { "sid": "lesson-d3#28.6", "surface": "rows", "pos": "명사", "sense": "(표·데이터의) 행" }
+  ]
+ },
+ {
+  "lemma": "rpm", "skip": null, "word": "RPM", "pos": ["약어"], "ipa": "ˌɑːr.piːˈem",
+  "meaning": "분당 요청 수 한도 (Requests Per Minute)",
+  "short": "분당 요청 수 한도",
+  "senses": [
+   { "pos": "약어", "ko": "분당 요청 수 한도" },
+   { "pos": "약어", "ko": "분당 회전수" }
+  ],
+  "forms": [], "synonyms": [], "domain": "정도·양·크기", "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "rubric", "skip": null, "word": "rubric", "pos": ["명사"], "ipa": "ˈruːbrɪk",
+  "meaning": "평가 기준표, 채점 기준(루브릭)",
+  "short": "평가 기준표, 루브릭",
+  "senses": [
+   { "pos": "명사", "ko": "평가 기준표, 채점 기준(루브릭)" }
+  ],
+  "forms": ["rubrics"], "synonyms": ["criteria", "scoring guide"], "domain": "비교·평가·판단", "basic": false,
+  "contexts": [
+   { "sid": "mock04#49.1", "surface": "rubric", "pos": "명사", "sense": "평가 기준표, 채점 기준(루브릭)" },
+   { "sid": "lesson-d4#8.3", "surface": "rubric", "pos": "명사", "sense": "평가 기준표, 채점 기준(루브릭)" },
+   { "sid": "mock04#49.4", "surface": "rubric", "pos": "명사", "sense": "평가 기준표, 채점 기준(루브릭)" }
+  ]
+ },
+ {
+  "lemma": "rule", "skip": null, "word": "rule", "pos": ["명사", "동사"], "ipa": "ruːl",
+  "meaning": "① 규칙, 규정 ② 지배하다 ③ (가능성을) 배제하다 (rule out)",
+  "short": "규칙, 규정",
+  "senses": [
+   { "pos": "명사", "ko": "규칙, 규정" },
+   { "pos": "동사", "ko": "지배하다, 다스리다" },
+   { "pos": "동사", "ko": "(가능성을) 배제하다 (rule out)" }
+  ],
+  "forms": ["rules", "ruled", "ruling"], "synonyms": ["regulation", "policy", "guideline"], "domain": "제어·제한·관리", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#12.0", "surface": "rule", "pos": "명사", "sense": "규칙, 규정" },
+   { "sid": "lesson-d4#3.1", "surface": "rule", "pos": "명사", "sense": "규칙, 규정" },
+   { "sid": "lesson-d5#7.0", "surface": "rules", "pos": "명사", "sense": "규칙, 규정" },
+   { "sid": "sample01#12.3", "surface": "rules", "pos": "명사", "sense": "규칙, 규정" }
+  ]
+ },
+ {
+  "lemma": "runner", "skip": null, "word": "runner", "pos": ["명사"], "ipa": "ˈrʌnər",
+  "meaning": "러너, 실행기 — CI job·테스트를 실제로 돌리는 서버·프로그램",
+  "short": "러너, 실행기",
+  "senses": [
+   { "pos": "명사", "ko": "러너, 실행기(CI job을 돌리는 서버·프로그램)" },
+   { "pos": "명사", "ko": "달리는 사람, 주자" }
+  ],
+  "forms": ["runners"], "synonyms": [], "domain": "시스템·도구·기술", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#30.4", "surface": "runner", "pos": "명사", "sense": "러너, 실행기(CI job을 돌리는 서버·프로그램)" },
+   { "sid": "mock04#48.6", "surface": "runner", "pos": "명사", "sense": "러너, 실행기(CI job을 돌리는 서버·프로그램)" },
+   { "sid": "lesson-d3#30.7", "surface": "runner", "pos": "명사", "sense": "러너, 실행기(CI job을 돌리는 서버·프로그램)" }
+  ]
+ },
+ {
+  "lemma": "runtime", "skip": null, "word": "runtime", "pos": ["명사"], "ipa": "ˈrʌntaɪm",
+  "meaning": "① 런타임, 실행 환경 ② 실행 시점, 실행 중",
+  "short": "런타임, 실행 시점",
+  "senses": [
+   { "pos": "명사", "ko": "런타임, 실행 환경" },
+   { "pos": "명사", "ko": "실행 시점, 실행 중" }
+  ],
+  "forms": ["runtimes"], "synonyms": [], "domain": "시스템·도구·기술", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#17.4", "surface": "runtime", "pos": "명사", "sense": "실행 시점, 실행 중" },
+   { "sid": "lesson-d1#21.5", "surface": "runtime", "pos": "명사", "sense": "런타임, 실행 환경" }
+  ]
+ },
+ {
+  "lemma": "safe", "skip": null, "word": "safe", "pos": ["형용사"], "ipa": "seɪf",
+  "meaning": "① 안전한 ② (가정·방법이) 문제없는, 믿을 만한",
+  "short": "안전한, 문제없는",
+  "senses": [
+   { "pos": "형용사", "ko": "안전한" },
+   { "pos": "형용사", "ko": "(가정·방법이) 문제없는, 믿을 만한" }
+  ],
+  "forms": ["safer", "safest"], "synonyms": ["secure", "harmless"], "domain": "상태·성질", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#16.5", "surface": "safe", "pos": "형용사", "sense": "안전한" },
+   { "sid": "lesson-d1#21.2", "surface": "safe", "pos": "형용사", "sense": "(가정·방법이) 문제없는, 믿을 만한" },
+   { "sid": "lesson-d1#21.5", "surface": "safe", "pos": "형용사", "sense": "(가정·방법이) 문제없는, 믿을 만한" }
+  ]
+ },
+ {
+  "lemma": "safely", "skip": null, "word": "safely", "pos": ["부사"], "ipa": "ˈseɪfli",
+  "meaning": "① 안전하게 ② 문제없이, 무리 없이",
+  "short": "안전하게, 문제없이",
+  "senses": [
+   { "pos": "부사", "ko": "안전하게" },
+   { "pos": "부사", "ko": "문제없이, 무리 없이" }
+  ],
+  "forms": [], "synonyms": ["securely"], "domain": "상태·성질", "basic": true,
+  "contexts": [
+   { "sid": "mock04#10.6", "surface": "safely", "pos": "부사", "sense": "문제없이, 무리 없이" }
+  ]
+ },
+ {
+  "lemma": "safety", "skip": null, "word": "safety", "pos": ["명사"], "ipa": "ˈseɪfti",
+  "meaning": "① 안전, 안전성 ② 안전장치",
+  "short": "안전, 안전성",
+  "senses": [
+   { "pos": "명사", "ko": "안전, 안전성" },
+   { "pos": "명사", "ko": "안전장치" }
+  ],
+  "forms": [], "synonyms": ["security"], "domain": "상태·성질", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#2.4", "surface": "safety", "pos": "명사", "sense": "안전, 안전성" }
+  ]
+ },
+ {
+  "lemma": "salary", "skip": null, "word": "salary", "pos": ["명사"], "ipa": "ˈsæləri",
+  "meaning": "급여, 월급·연봉",
+  "short": "급여, 월급",
+  "senses": [
+   { "pos": "명사", "ko": "급여, 월급·연봉" }
+  ],
+  "forms": ["salaries"], "synonyms": ["pay", "wage"], "domain": "비즈니스·업무", "basic": false,
+  "contexts": [
+   { "sid": "sample01#4.2", "surface": "salaries", "pos": "명사", "sense": "급여, 월급·연봉" }
+  ]
+ },
+ {
+  "lemma": "same", "skip": null, "word": "same", "pos": ["형용사", "대명사"], "ipa": "seɪm",
+  "meaning": "① 같은, 동일한 ② (the same) 같은 것",
+  "short": "같은, 동일한",
+  "senses": [
+   { "pos": "형용사", "ko": "같은, 동일한" },
+   { "pos": "대명사", "ko": "같은 것, 마찬가지" }
+  ],
+  "forms": [], "synonyms": ["identical"], "domain": "상태·성질", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#28.1", "surface": "same", "pos": "형용사", "sense": "같은, 동일한" },
+   { "sid": "lesson-d2#11.3", "surface": "same", "pos": "형용사", "sense": "같은, 동일한" },
+   { "sid": "lesson-d3#1.0", "surface": "same", "pos": "형용사", "sense": "같은, 동일한" },
+   { "sid": "lesson-d1#32.0", "surface": "same", "pos": "형용사", "sense": "같은, 동일한" }
+  ]
+ },
+ {
+  "lemma": "sample", "skip": null, "word": "sample", "pos": ["명사", "동사"], "ipa": "ˈsæmpl",
+  "meaning": "① 샘플, 예시, 견본 ② 표본 ③ 표본을 추출하다",
+  "short": "샘플, 표본",
+  "senses": [
+   { "pos": "명사", "ko": "샘플, 예시, 견본" },
+   { "pos": "명사", "ko": "(통계의) 표본" },
+   { "pos": "동사", "ko": "표본을 추출하다, 일부를 골라 보다" }
+  ],
+  "forms": ["samples", "sampled", "sampling"], "synonyms": ["specimen", "example"], "domain": "데이터·정보·문서", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#24.3", "surface": "sample", "pos": "명사", "sense": "샘플, 예시, 견본" },
+   { "sid": "lesson-d5#31.5", "surface": "sample", "pos": "명사", "sense": "(통계의) 표본" },
+   { "sid": "lesson-d5#34.5", "surface": "Sample", "pos": "동사", "sense": "표본을 추출하다, 일부를 골라 보다" },
+   { "sid": "lesson-d4#8.4", "surface": "sample", "pos": "명사", "sense": "샘플, 예시, 견본" }
+  ]
+ },
+ {
+  "lemma": "sampling", "skip": null, "word": "sampling", "pos": ["명사"], "ipa": "ˈsæmplɪŋ",
+  "meaning": "샘플링 — 모델이 확률에 따라 다음 토큰을 고르는 과정 (temperature 같은 샘플링 설정) / 표본 추출",
+  "short": "샘플링, 표본 추출",
+  "senses": [
+   { "pos": "명사", "ko": "샘플링(모델이 확률에 따라 다음 토큰을 고르는 과정)" },
+   { "pos": "명사", "ko": "표본 추출" }
+  ],
+  "forms": [], "synonyms": [], "domain": "시스템·도구·기술", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#14.5", "surface": "sampling", "pos": "명사", "sense": "샘플링(모델이 확률에 따라 다음 토큰을 고르는 과정)" },
+   { "sid": "lesson-d4#22.7", "surface": "sampling", "pos": "명사", "sense": "샘플링(모델이 확률에 따라 다음 토큰을 고르는 과정)" },
+   { "sid": "lesson-d4#8.5", "surface": "sampling", "pos": "명사", "sense": "샘플링(모델이 확률에 따라 다음 토큰을 고르는 과정)" }
+  ]
+ },
+ {
+  "lemma": "sandbox", "skip": null, "word": "sandbox", "pos": ["명사", "동사"], "ipa": "ˈsændbɑːks",
+  "meaning": "샌드박스 — 바깥과 격리된 안전한 실행 환경 / 격리하다",
+  "short": "샌드박스, 격리하다",
+  "senses": [
+   { "pos": "명사", "ko": "샌드박스(격리된 안전한 실행 환경)" },
+   { "pos": "동사", "ko": "격리하다, 샌드박스 안에서 실행하다" }
+  ],
+  "forms": ["sandboxing", "sandboxed"], "synonyms": ["isolate"], "domain": "시스템·도구·기술", "basic": false,
+  "contexts": [
+   { "sid": "sample01#16.7", "surface": "sandboxing", "pos": "동사", "sense": "격리하다, 샌드박스 안에서 실행하다" }
+  ]
+ },
+ {
+  "lemma": "sanitize", "skip": null, "word": "sanitize", "pos": ["동사"], "ipa": "ˈsænɪtaɪz",
+  "meaning": "(입력을) 정제하다 — 위험하거나 불필요한 내용을 걸러 안전하게 만들다 (sanitization: 정제)",
+  "short": "(입력을) 정제하다",
+  "senses": [
+   { "pos": "동사", "ko": "(입력을) 정제하다, 무해하게 만들다" },
+   { "pos": "동사", "ko": "소독하다, 위생 처리하다" }
+  ],
+  "forms": ["sanitizes", "sanitized", "sanitizing", "sanitization"], "synonyms": ["clean", "filter"], "domain": "확인·검증", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#26.0", "surface": "sanitization", "pos": "명사", "sense": "(입력을) 정제하다, 무해하게 만들다" },
+   { "sid": "lesson-d4#25.6", "surface": "sanitization", "pos": "명사", "sense": "(입력을) 정제하다, 무해하게 만들다" }
+  ]
+ },
+ {
+  "lemma": "sat", "skip": null, "word": "sit", "pos": ["동사"], "ipa": "sɪt",
+  "meaning": "① 앉다 ② (어떤 상태로) 멈춘 채 있다, 계속 ~하고 있다",
+  "short": "앉다, ~한 채 있다",
+  "senses": [
+   { "pos": "동사", "ko": "앉다" },
+   { "pos": "동사", "ko": "(~한 채) 멈춰 있다, 계속 ~하고 있다" }
+  ],
+  "forms": ["sits", "sat", "sitting"], "synonyms": [], "domain": "상태·성질", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#30.6", "surface": "sat", "pos": "동사", "sense": "(~한 채) 멈춰 있다, 계속 ~하고 있다" }
+  ]
+ },
+ {
+  "lemma": "satisfy", "skip": null, "word": "satisfy", "pos": ["동사"], "ipa": "ˈsætɪsfaɪ",
+  "meaning": "(조건·규칙을) 충족하다, 만족시키다",
+  "short": "충족하다, 만족시키다",
+  "senses": [
+   { "pos": "동사", "ko": "(조건·규칙을) 충족하다, 만족시키다" },
+   { "pos": "동사", "ko": "(사람을) 납득시키다, 흡족하게 하다" }
+  ],
+  "forms": ["satisfies", "satisfied", "satisfying"], "synonyms": ["meet", "fulfill"], "domain": "확인·검증", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#39.2", "surface": "satisfies", "pos": "동사", "sense": "(조건·규칙을) 충족하다, 만족시키다" },
+   { "sid": "mock04#57.5", "surface": "satisfy", "pos": "동사", "sense": "(조건·규칙을) 충족하다, 만족시키다" },
+   { "sid": "lesson-d4#20.6", "surface": "satisfy", "pos": "동사", "sense": "(조건·규칙을) 충족하다, 만족시키다" },
+   { "sid": "lesson-d3#3.2", "surface": "satisfies", "pos": "동사", "sense": "(조건·규칙을) 충족하다, 만족시키다" }
+  ]
+ },
+ {
+  "lemma": "saturation", "skip": null, "word": "saturation", "pos": ["명사"], "ipa": "ˌsætʃəˈreɪʃn",
+  "meaning": "포화 — 더 담을 수 없을 만큼 가득 찬 상태",
+  "short": "포화, 가득 찬 상태",
+  "senses": [
+   { "pos": "명사", "ko": "포화, 가득 찬 상태" },
+   { "pos": "명사", "ko": "(색의) 채도" }
+  ],
+  "forms": [], "synonyms": [], "domain": "정도·양·크기", "basic": false,
+  "contexts": [
+   { "sid": "sample01#17.6", "surface": "saturation", "pos": "명사", "sense": "포화, 가득 찬 상태" },
+   { "sid": "sample01#6.4", "surface": "saturation", "pos": "명사", "sense": "포화, 가득 찬 상태" }
+  ]
+ },
+ {
+  "lemma": "save", "skip": null, "word": "save", "pos": ["동사"], "ipa": "seɪv",
+  "meaning": "① (공간·비용·시간을) 절약하다 ② 저장하다, 기록해 두다 ③ 구하다",
+  "short": "저장하다, 절약하다",
+  "senses": [
+   { "pos": "동사", "ko": "저장하다, 기록해 두다" },
+   { "pos": "동사", "ko": "(공간·비용·시간을) 절약하다" },
+   { "pos": "동사", "ko": "(위험에서) 구하다" }
+  ],
+  "forms": ["saves", "saved", "saving"], "synonyms": ["store", "conserve"], "domain": "저장·기록", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#2.3", "surface": "save", "pos": "동사", "sense": "(공간·비용·시간을) 절약하다" },
+   { "sid": "lesson-d3#8.3", "surface": "saved", "pos": "동사", "sense": "저장하다, 기록해 두다" },
+   { "sid": "lesson-d5#27.4", "surface": "save", "pos": "동사", "sense": "저장하다, 기록해 두다" },
+   { "sid": "lesson-d5#13.5", "surface": "saved", "pos": "동사", "sense": "저장하다, 기록해 두다" }
+  ]
+ },
+ {
+  "lemma": "say", "skip": null, "word": "say", "pos": ["동사"], "ipa": "seɪ",
+  "meaning": "① 말하다 ② (문서·규칙에) ~라고 되어 있다",
+  "short": "말하다, ~라고 되어 있다",
+  "senses": [
+   { "pos": "동사", "ko": "말하다, 이야기하다" },
+   { "pos": "동사", "ko": "(문서·규칙에) ~라고 되어 있다" }
+  ],
+  "forms": ["says", "said", "saying"], "synonyms": ["state", "claim"], "domain": "요청·소통", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#10.1", "surface": "say", "pos": "동사", "sense": "말하다, 이야기하다" },
+   { "sid": "lesson-d2#17.1", "surface": "says", "pos": "동사", "sense": "(문서·규칙에) ~라고 되어 있다" },
+   { "sid": "lesson-d5#2.0", "surface": "says", "pos": "동사", "sense": "말하다, 이야기하다" },
+   { "sid": "sample01#14.1", "surface": "says", "pos": "동사", "sense": "(문서·규칙에) ~라고 되어 있다" }
+  ]
+ },
+ {
+  "lemma": "scaffold", "skip": null, "word": "scaffold", "pos": ["동사", "명사"], "ipa": "ˈskæfoʊld",
+  "meaning": "(기본 뼈대를) 만들어 두다 / 뼈대",
+  "short": "뼈대를 만들다, 뼈대",
+  "senses": [
+   { "pos": "동사", "ko": "(기본 뼈대를) 만들어 두다" },
+   { "pos": "명사", "ko": "뼈대, 기본 골격" },
+   { "pos": "명사", "ko": "(공사장의) 비계, 발판" }
+  ],
+  "forms": ["scaffolds", "scaffolded", "scaffolding"], "synonyms": ["framework"], "domain": "생성·추가", "basic": false,
+  "contexts": [
+   { "sid": "mock04#15.1", "surface": "scaffolds", "pos": "명사", "sense": "뼈대, 기본 골격" },
+   { "vid": "vocab:scaffold.0", "surface": "scaffold", "pos": "동사", "sense": "(기본 뼈대를) 만들어 두다" }
+  ]
+ },
+ {
+  "lemma": "scale", "skip": null, "word": "scale", "pos": ["명사", "동사"], "ipa": "skeɪl",
+  "meaning": "① 척도, 눈금 — 점수가 따르는 기준 범위 ② 규모 ③ 규모를 늘리다 (scale up)",
+  "short": "척도, 규모",
+  "senses": [
+   { "pos": "명사", "ko": "척도, 눈금" },
+   { "pos": "명사", "ko": "규모" },
+   { "pos": "동사", "ko": "규모를 늘리다 (scale up)" }
+  ],
+  "forms": ["scales", "scaled", "scaling"], "synonyms": ["extent"], "domain": "정도·양·크기", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#30.2", "surface": "scale", "pos": "명사", "sense": "척도, 눈금" },
+   { "sid": "lesson-d5#33.2", "surface": "scale", "pos": "명사", "sense": "척도, 눈금" },
+   { "sid": "lesson-d5#33.3", "surface": "scale", "pos": "명사", "sense": "척도, 눈금" },
+   { "sid": "lesson-d5#33.4", "surface": "scale", "pos": "명사", "sense": "척도, 눈금" }
+  ]
+ },
+ {
+  "lemma": "scan", "skip": null, "word": "scan", "pos": ["동사", "명사"], "ipa": "skæn",
+  "meaning": "① (보안·오류를) 훑어 검사하다, 스캔 ② (종이 문서를) 스캔하다",
+  "short": "훑어 검사하다, 스캔",
+  "senses": [
+   { "pos": "동사", "ko": "(보안·오류를) 훑어 검사하다" },
+   { "pos": "명사", "ko": "스캔, 검사" },
+   { "pos": "동사", "ko": "(종이 문서를) 스캔하다" }
+  ],
+  "forms": ["scans", "scanned", "scanning", "scanner"], "synonyms": ["inspect", "examine"], "domain": "확인·검증", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#23.5", "surface": "Scan", "pos": "동사", "sense": "(보안·오류를) 훑어 검사하다" },
+   { "sid": "mock04#40.1", "surface": "scan", "pos": "명사", "sense": "스캔, 검사" },
+   { "sid": "lesson-d4#24.0", "surface": "scanned", "pos": "동사", "sense": "(종이 문서를) 스캔하다" },
+   { "sid": "lesson-d3#30.6", "surface": "scanning", "pos": "동사", "sense": "(보안·오류를) 훑어 검사하다" }
+  ]
+ },
+ {
+  "lemma": "scenario", "skip": null, "word": "scenario", "pos": ["명사"], "ipa": "səˈnerioʊ",
+  "meaning": "① 시나리오, 가상의 상황 ② (영화·극의) 각본",
+  "short": "시나리오, 가상 상황",
+  "senses": [
+   { "pos": "명사", "ko": "시나리오, 가상의 상황" },
+   { "pos": "명사", "ko": "(영화·극의) 각본" }
+  ],
+  "forms": ["scenarios"], "synonyms": ["situation", "case"], "domain": "계획·목표·전략", "basic": false,
+  "contexts": [
+   { "sid": "mock04#1.0", "surface": "Scenario", "pos": "명사", "sense": "시나리오, 가상의 상황" },
+   { "sid": "mock04#11.0", "surface": "Scenario", "pos": "명사", "sense": "시나리오, 가상의 상황" },
+   { "sid": "mock04#12.0", "surface": "Scenario", "pos": "명사", "sense": "시나리오, 가상의 상황" }
+  ]
+ },
+ {
+  "lemma": "schedule", "skip": null, "word": "schedule", "pos": ["명사", "동사"], "ipa": "ˈskedʒuːl",
+  "meaning": "① 일정(표), 스케줄 ② 일정을 잡다, 예약하다",
+  "short": "일정, 일정을 잡다",
+  "senses": [
+   { "pos": "명사", "ko": "일정(표), 스케줄" },
+   { "pos": "동사", "ko": "일정을 잡다, 예약하다" }
+  ],
+  "forms": ["schedules", "scheduled", "scheduling"], "synonyms": ["timetable", "plan"], "domain": "시간·순서·빈도", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#28.2", "surface": "schedule", "pos": "명사", "sense": "일정(표), 스케줄" },
+   { "sid": "lesson-d5#9.0", "surface": "scheduling", "pos": "동사", "sense": "일정을 잡다, 예약하다" }
+  ]
+ },
+ {
+  "lemma": "schema", "skip": null, "word": "schema", "pos": ["명사"], "ipa": "ˈskiːmə",
+  "meaning": "스키마 — 데이터의 구조·형식을 정한 정의",
+  "short": "스키마, 데이터 구조 정의",
+  "senses": [
+   { "pos": "명사", "ko": "스키마(데이터의 구조·형식 정의)" }
+  ],
+  "forms": ["schemas", "schemata"], "synonyms": [], "domain": "구조·구성·부분", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#18.0", "surface": "schema", "pos": "명사", "sense": "스키마(데이터의 구조·형식 정의)" },
+   { "sid": "lesson-d3#24.0", "surface": "schema", "pos": "명사", "sense": "스키마(데이터의 구조·형식 정의)" },
+   { "sid": "lesson-d5#15.1", "surface": "schema", "pos": "명사", "sense": "스키마(데이터의 구조·형식 정의)" },
+   { "sid": "mock04#31.1", "surface": "schema", "pos": "명사", "sense": "스키마(데이터의 구조·형식 정의)" }
+  ]
+ },
+ {
+  "lemma": "schema-valid", "skip": null, "word": "schema-valid", "pos": ["형용사"], "ipa": "ˈskiːmə ˈvælɪd",
+  "meaning": "스키마에 맞는, 스키마 검증을 통과하는",
+  "short": "스키마에 맞는",
+  "senses": [
+   { "pos": "형용사", "ko": "스키마에 맞는, 스키마 검증을 통과하는" }
+  ],
+  "forms": [], "synonyms": ["schema-compliant"], "domain": "확인·검증", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#3.0", "surface": "schema-valid", "pos": "형용사", "sense": "스키마에 맞는, 스키마 검증을 통과하는" },
+   { "sid": "lesson-d2#4.5", "surface": "schema-valid", "pos": "형용사", "sense": "스키마에 맞는, 스키마 검증을 통과하는" }
+  ]
+ },
+ {
+  "lemma": "scheme", "skip": null, "word": "scheme", "pos": ["명사"], "ipa": "skiːm",
+  "meaning": "① (인증 등의) 방식, 체계 ② 계획, 책략",
+  "short": "방식, 체계",
+  "senses": [
+   { "pos": "명사", "ko": "(인증 등의) 방식, 체계" },
+   { "pos": "명사", "ko": "계획, 책략" }
+  ],
+  "forms": ["schemes"], "synonyms": ["system", "plan"], "domain": "구조·구성·부분", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#24.1", "surface": "scheme", "pos": "명사", "sense": "(인증 등의) 방식, 체계" }
+  ]
+ },
+ {
+  "lemma": "scope", "skip": null, "word": "scope", "pos": ["명사"], "ipa": "skoʊp",
+  "meaning": "범위, (설정이) 적용되는 범위",
+  "short": "범위, 적용 범위",
+  "senses": [
+   { "pos": "명사", "ko": "범위, (설정이) 적용되는 범위" },
+   { "pos": "동사", "ko": "(적용 범위를) 한정하다" }
+  ],
+  "forms": ["scopes", "scoped", "scoping"], "synonyms": ["range", "extent"], "domain": "제어·제한·관리", "basic": false,
+  "contexts": [
+   { "vid": "vocab:scope.0", "surface": "scope", "pos": "명사", "sense": "범위, (설정이) 적용되는 범위" },
+   { "sid": "lesson-d3#14.1", "surface": "scopes", "pos": "동사", "sense": "(적용 범위를) 한정하다" },
+   { "sid": "lesson-d2#11.0", "surface": "scoped", "pos": "동사", "sense": "(적용 범위를) 한정하다" },
+   { "vid": "vocab:scope.1", "surface": "scope", "pos": "명사", "sense": "범위, (설정이) 적용되는 범위" }
+  ]
+ },
+ {
+  "lemma": "score", "skip": null, "word": "score", "pos": ["명사", "동사"], "ipa": "skɔːr",
+  "meaning": "① 점수, 수치 ② 점수를 매기다",
+  "short": "점수, 점수를 매기다",
+  "senses": [
+   { "pos": "명사", "ko": "점수, 수치" },
+   { "pos": "동사", "ko": "점수를 매기다" }
+  ],
+  "forms": ["scores", "scored", "scoring"], "synonyms": ["rating", "grade"], "domain": "비교·평가·판단", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#11.0", "surface": "score", "pos": "명사", "sense": "점수, 수치" },
+   { "sid": "lesson-d4#25.4", "surface": "score", "pos": "명사", "sense": "점수, 수치" },
+   { "sid": "mock04#10.7", "surface": "score", "pos": "명사", "sense": "점수, 수치" },
+   { "sid": "lesson-d5#30.1", "surface": "scores", "pos": "명사", "sense": "점수, 수치" }
+  ]
+ },
+ {
+  "lemma": "scrape", "skip": null, "word": "scrape", "pos": ["동사"], "ipa": "skreɪp",
+  "meaning": "(웹페이지 내용을) 긁어 오다, 스크레이핑하다",
+  "short": "긁어 오다, 스크레이핑하다",
+  "senses": [
+   { "pos": "동사", "ko": "(웹페이지 내용을) 긁어 오다, 스크레이핑하다" },
+   { "pos": "동사", "ko": "긁다, 긁어내다" }
+  ],
+  "forms": ["scrapes", "scraped", "scraping"], "synonyms": [], "domain": "검색·조회", "basic": false,
+  "contexts": [
+   { "sid": "mock04#36.1", "surface": "scraped", "pos": "동사", "sense": "(웹페이지 내용을) 긁어 오다, 스크레이핑하다" }
+  ]
+ },
+ {
+  "lemma": "scratchpad", "skip": null, "word": "scratchpad", "pos": ["명사"], "ipa": "ˈskrætʃpæd",
+  "meaning": "스크래치패드 — 작업 중 메모·진행 상황을 적어 두는 임시 기록",
+  "short": "스크래치패드, 임시 메모",
+  "senses": [
+   { "pos": "명사", "ko": "스크래치패드(작업 중 메모를 적어 두는 임시 기록)" }
+  ],
+  "forms": ["scratchpads"], "synonyms": [], "domain": "저장·기록", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#26.2", "surface": "scratchpad", "pos": "명사", "sense": "스크래치패드(작업 중 메모를 적어 두는 임시 기록)" },
+   { "sid": "mock04#18.4", "surface": "scratchpad", "pos": "명사", "sense": "스크래치패드(작업 중 메모를 적어 두는 임시 기록)" },
+   { "sid": "lesson-d5#26.3", "surface": "scratchpad", "pos": "명사", "sense": "스크래치패드(작업 중 메모를 적어 두는 임시 기록)" }
+  ]
+ },
+ {
+  "lemma": "screen", "skip": null, "word": "screen", "pos": ["명사", "동사"], "ipa": "skriːn",
+  "meaning": "① 화면 ② 선별 검사(하다) — 미리 걸러 내다 (screening, pre-screen)",
+  "short": "화면, 걸러 내다",
+  "senses": [
+   { "pos": "명사", "ko": "화면" },
+   { "pos": "동사", "ko": "(미리) 걸러 내다, 선별 검사하다" },
+   { "pos": "명사", "ko": "가리개, 칸막이" }
+  ],
+  "forms": ["screens", "screened", "screening"], "synonyms": ["filter"], "domain": "확인·검증", "basic": true,
+  "contexts": []
+ },
+ {
+  "lemma": "screenshot", "skip": null, "word": "screenshot", "pos": ["명사"], "ipa": "ˈskriːnʃɑːt",
+  "meaning": "스크린샷, 화면 캡처",
+  "short": "스크린샷, 화면 캡처",
+  "senses": [
+   { "pos": "명사", "ko": "스크린샷, 화면 캡처" }
+  ],
+  "forms": ["screenshots"], "synonyms": [], "domain": "데이터·정보·문서", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#10.6", "surface": "screenshot", "pos": "명사", "sense": "스크린샷, 화면 캡처" }
+  ]
+ },
+ {
+  "lemma": "script", "skip": null, "word": "script", "pos": ["명사", "동사"], "ipa": "skrɪpt",
+  "meaning": "① 스크립트 (자동 실행용 짧은 프로그램) ② 대본, 정해진 지시문 ③ 스크립트로 자동화하다",
+  "short": "스크립트, 대본",
+  "senses": [
+   { "pos": "명사", "ko": "스크립트(자동 실행용 짧은 프로그램)" },
+   { "pos": "명사", "ko": "대본, 정해진 지시문" },
+   { "pos": "동사", "ko": "스크립트로 자동화하다" }
+  ],
+  "forms": ["scripts", "scripted", "scripting"], "synonyms": [], "domain": "시스템·도구·기술", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#24.0", "surface": "script", "pos": "명사", "sense": "스크립트(자동 실행용 짧은 프로그램)" },
+   { "sid": "lesson-d1#16.0", "surface": "script", "pos": "명사", "sense": "대본, 정해진 지시문" },
+   { "sid": "lesson-d4#37.4", "surface": "Script", "pos": "동사", "sense": "스크립트로 자동화하다" },
+   { "sid": "mock04#46.1", "surface": "script", "pos": "명사", "sense": "스크립트(자동 실행용 짧은 프로그램)" }
+  ]
+ },
+ {
+  "lemma": "scrutiny", "skip": null, "word": "scrutiny", "pos": ["명사"], "ipa": "ˈskruːtəni",
+  "meaning": "면밀한 검토, 정밀 조사",
+  "short": "면밀한 검토",
+  "senses": [
+   { "pos": "명사", "ko": "면밀한 검토, 정밀 조사" }
+  ],
+  "forms": [], "synonyms": ["examination", "inspection"], "domain": "확인·검증", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#36.3", "surface": "scrutiny", "pos": "명사", "sense": "면밀한 검토, 정밀 조사" }
+  ]
+ },
+ {
+  "lemma": "sdk", "skip": null, "word": "SDK", "pos": ["약어"], "ipa": "ˌes.diːˈkeɪ",
+  "meaning": "소프트웨어 개발 키트 — 프로그램 개발용 라이브러리·도구 묶음",
+  "short": "소프트웨어 개발 키트",
+  "senses": [
+   { "pos": "약어", "ko": "소프트웨어 개발 키트(개발용 라이브러리·도구 묶음)" }
+  ],
+  "forms": ["SDKs"], "synonyms": [], "domain": "시스템·도구·기술", "basic": false,
+  "contexts": [
+   { "sid": "mock04#1.1", "surface": "SDK", "pos": "약어", "sense": "소프트웨어 개발 키트(개발용 라이브러리·도구 묶음)" },
+   { "sid": "lesson-d1#29.5", "surface": "SDK", "pos": "약어", "sense": "소프트웨어 개발 키트(개발용 라이브러리·도구 묶음)" },
+   { "sid": "lesson-d5#14.7", "surface": "SDK", "pos": "약어", "sense": "소프트웨어 개발 키트(개발용 라이브러리·도구 묶음)" },
+   { "vid": "vocab:sdk.0", "surface": "SDK", "pos": "약어", "sense": "소프트웨어 개발 키트(개발용 라이브러리·도구 묶음)" }
+  ]
+ },
+ {
+  "lemma": "search", "skip": null, "word": "search", "pos": ["동사", "명사"], "ipa": "sɜːrtʃ",
+  "meaning": "① 검색하다, 찾다 ② 검색",
+  "short": "검색하다, 검색",
+  "senses": [
+   { "pos": "동사", "ko": "검색하다, 찾아보다" },
+   { "pos": "명사", "ko": "검색, 탐색" }
+  ],
+  "forms": ["searches", "searched", "searching"], "synonyms": ["look for", "seek"], "domain": "검색·조회", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#13.0", "surface": "search", "pos": "동사", "sense": "검색하다, 찾아보다" },
+   { "sid": "lesson-d2#16.1", "surface": "searches", "pos": "명사", "sense": "검색, 탐색" },
+   { "sid": "lesson-d5#12.0", "surface": "searches", "pos": "동사", "sense": "검색하다, 찾아보다" },
+   { "sid": "sample01#3.0", "surface": "search", "pos": "명사", "sense": "검색, 탐색" }
+  ]
+ },
+ {
+  "lemma": "second", "skip": null, "word": "second", "pos": ["형용사", "명사"], "ipa": "ˈsekənd",
+  "meaning": "① 두 번째의 ② (시간 단위) 초",
+  "short": "두 번째의, 초",
+  "senses": [
+   { "pos": "형용사", "ko": "두 번째의" },
+   { "pos": "명사", "ko": "초(시간 단위)" }
+  ],
+  "forms": ["seconds"], "synonyms": [], "domain": "시간·순서·빈도", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#20.0", "surface": "second", "pos": "형용사", "sense": "두 번째의" },
+   { "sid": "lesson-d4#32.0", "surface": "seconds", "pos": "명사", "sense": "초(시간 단위)" },
+   { "sid": "lesson-d5#20.1", "surface": "second", "pos": "형용사", "sense": "두 번째의" },
+   { "sid": "mock04#41.2", "surface": "seconds", "pos": "명사", "sense": "초(시간 단위)" }
+  ]
+ },
+ {
+  "lemma": "secondary", "skip": null, "word": "secondary", "pos": ["형용사"], "ipa": "ˈsekənderi",
+  "meaning": "① 부차적인, 이차적인 ② (교육) 중등의",
+  "short": "부차적인, 이차적인",
+  "senses": [
+   { "pos": "형용사", "ko": "부차적인, 이차적인" },
+   { "pos": "형용사", "ko": "(교육) 중등의" }
+  ],
+  "forms": [], "synonyms": ["minor", "lesser"], "domain": "상태·성질", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#27.4", "surface": "secondary", "pos": "형용사", "sense": "부차적인, 이차적인" }
+  ]
+ },
+ {
+  "lemma": "secret", "skip": null, "word": "secret", "pos": ["명사", "형용사"], "ipa": "ˈsiːkrət",
+  "meaning": "① 비밀 값, 시크릿 (키·토큰 등 숨겨야 할 값) ② 비밀, 기밀 ③ 비밀의",
+  "short": "비밀 값, 비밀",
+  "senses": [
+   { "pos": "명사", "ko": "비밀 값, 시크릿(키·토큰 등)" },
+   { "pos": "명사", "ko": "비밀, 기밀" },
+   { "pos": "형용사", "ko": "비밀의, 은밀한" }
+  ],
+  "forms": ["secrets"], "synonyms": ["confidential"], "domain": "제어·제한·관리", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#21.1", "surface": "secret", "pos": "명사", "sense": "비밀 값, 시크릿(키·토큰 등)" },
+   { "sid": "lesson-d3#30.2", "surface": "secret", "pos": "명사", "sense": "비밀 값, 시크릿(키·토큰 등)" },
+   { "sid": "lesson-d3#30.5", "surface": "secret", "pos": "명사", "sense": "비밀 값, 시크릿(키·토큰 등)" }
+  ]
+ },
+ {
+  "lemma": "section", "skip": null, "word": "section", "pos": ["명사"], "ipa": "ˈsekʃn",
+  "meaning": "(문서·설정의) 부분, 섹션, 항목",
+  "short": "부분, 섹션, 항목",
+  "senses": [
+   { "pos": "명사", "ko": "(문서·설정의) 부분, 섹션, 항목" },
+   { "pos": "명사", "ko": "구획, 부문" },
+   { "pos": "동사", "ko": "(여러 부분으로) 나누다" }
+  ],
+  "forms": ["sections", "sectioning"], "synonyms": ["part", "segment"], "domain": "구조·구성·부분", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#4.0", "surface": "sections", "pos": "명사", "sense": "(문서·설정의) 부분, 섹션, 항목" },
+   { "sid": "lesson-d5#6.1", "surface": "sections", "pos": "명사", "sense": "(문서·설정의) 부분, 섹션, 항목" },
+   { "sid": "sample01#12.3", "surface": "section", "pos": "명사", "sense": "(문서·설정의) 부분, 섹션, 항목" },
+   { "sid": "mock04#25.6", "surface": "section", "pos": "명사", "sense": "(문서·설정의) 부분, 섹션, 항목" }
+  ]
+ },
+ {
+  "lemma": "sector", "skip": null, "word": "sector", "pos": ["명사"], "ipa": "ˈsektər",
+  "meaning": "분야, 부문",
+  "short": "분야, 부문",
+  "senses": [
+   { "pos": "명사", "ko": "분야, 부문" },
+   { "pos": "명사", "ko": "(디스크의) 섹터, 부채꼴" }
+  ],
+  "forms": ["sectors"], "synonyms": ["field", "domain"], "domain": "비즈니스·업무", "basic": false,
+  "contexts": [
+   { "vid": "vocab:sector.0", "surface": "sectors", "pos": "명사", "sense": "분야, 부문" }
+  ]
+ },
+ {
+  "lemma": "security", "skip": null, "word": "security", "pos": ["명사"], "ipa": "sɪˈkjʊrəti",
+  "meaning": "보안",
+  "short": "보안",
+  "senses": [
+   { "pos": "명사", "ko": "보안" },
+   { "pos": "명사", "ko": "안전 보장, 경비" }
+  ],
+  "forms": [], "synonyms": ["safety", "protection"], "domain": "제어·제한·관리", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#3.1", "surface": "security", "pos": "명사", "sense": "보안" },
+   { "sid": "mock04#40.1", "surface": "security", "pos": "명사", "sense": "보안" },
+   { "sid": "sample01#4.1", "surface": "security", "pos": "명사", "sense": "보안" },
+   { "sid": "lesson-d3#6.0", "surface": "security", "pos": "명사", "sense": "보안" }
+  ]
+ },
+ {
+  "lemma": "sed", "skip": "code"
+ }
+]

@@ -1,0 +1,958 @@
+[
+ {
+  "lemma": "group",
+  "skip": null,
+  "word": "group",
+  "pos": ["동사", "명사"],
+  "ipa": "ɡruːp",
+  "meaning": "① (같은 기준으로) 묶다, 분류하다 ② 그룹, 무리",
+  "short": "묶다, 분류하다",
+  "senses": [
+   { "pos": "동사", "ko": "(같은 기준으로) 묶다, 분류하다" },
+   { "pos": "명사", "ko": "그룹, 무리" }
+  ],
+  "forms": ["groups", "grouped", "grouping"],
+  "synonyms": ["cluster", "categorize", "sort"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#13.7", "surface": "group", "pos": "동사", "sense": "(같은 기준으로) 묶다, 분류하다" },
+   { "sid": "lesson-d4#31.5", "surface": "groups", "pos": "동사", "sense": "(같은 기준으로) 묶다, 분류하다" }
+  ]
+ },
+ {
+  "lemma": "growth",
+  "skip": null,
+  "word": "growth",
+  "pos": ["명사"],
+  "ipa": "ɡroʊθ",
+  "meaning": "증가, 커짐 / (grow) 커지다, 늘어나다",
+  "short": "증가, 커짐",
+  "senses": [
+   { "pos": "명사", "ko": "증가, 커짐" },
+   { "pos": "동사", "ko": "(grow) 커지다, 늘어나다" }
+  ],
+  "forms": ["grow", "grows", "grew", "grown", "growing"],
+  "synonyms": ["increase", "expansion"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#18.4", "surface": "growth", "pos": "명사", "sense": "증가, 커짐" },
+   { "sid": "lesson-d3#13.0", "surface": "grown", "pos": "동사", "sense": "(grow) 커지다, 늘어나다" },
+   { "sid": "lesson-d2#14.0", "surface": "grown", "pos": "동사", "sense": "(grow) 커지다, 늘어나다" },
+   { "sid": "mock04#18.1", "surface": "grows", "pos": "동사", "sense": "(grow) 커지다, 늘어나다" }
+  ]
+ },
+ {
+  "lemma": "guarantee",
+  "skip": null,
+  "word": "guarantee",
+  "pos": ["동사", "명사"],
+  "ipa": "ˌɡærənˈtiː",
+  "meaning": "보장하다, 반드시 ~이 되게 하다 / 보장",
+  "short": "보장하다",
+  "senses": [
+   { "pos": "동사", "ko": "보장하다, 반드시 ~이 되게 하다" },
+   { "pos": "명사", "ko": "보장" }
+  ],
+  "forms": ["guarantees", "guaranteed", "guaranteeing"],
+  "synonyms": ["ensure", "assure"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#3.3", "surface": "guarantee", "pos": "동사", "sense": "보장하다, 반드시 ~이 되게 하다" },
+   { "sid": "lesson-d3#19.3", "surface": "guarantee", "pos": "명사", "sense": "보장" },
+   { "sid": "lesson-d1#13.1", "surface": "guarantees", "pos": "동사", "sense": "보장하다, 반드시 ~이 되게 하다" },
+   { "sid": "lesson-d4#16.2", "surface": "guarantees", "pos": "동사", "sense": "보장하다, 반드시 ~이 되게 하다" }
+  ]
+ },
+ {
+  "lemma": "guard",
+  "skip": null,
+  "word": "guard",
+  "pos": ["명사", "동사"],
+  "ipa": "ɡɑːrd",
+  "meaning": "방지 장치, 안전장치 / 지키다, 막다",
+  "short": "방지 장치, 안전장치",
+  "senses": [
+   { "pos": "명사", "ko": "방지 장치, 안전장치" },
+   { "pos": "동사", "ko": "지키다, 막다" },
+   { "pos": "명사", "ko": "경비원, 보호자" }
+  ],
+  "forms": ["guards", "guarded", "guarding"],
+  "synonyms": ["safeguard", "protection"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#2.5", "surface": "guard", "pos": "명사", "sense": "방지 장치, 안전장치" }
+  ]
+ },
+ {
+  "lemma": "guardrail",
+  "skip": null,
+  "word": "guardrail",
+  "pos": ["명사"],
+  "ipa": "ˈɡɑːrdreɪl",
+  "meaning": "가드레일 — 모델·시스템이 벗어나지 않게 정해 둔 안전장치·규칙",
+  "short": "안전장치, 제한 규칙",
+  "senses": [
+   { "pos": "명사", "ko": "(시스템의) 안전장치, 제한 규칙" },
+   { "pos": "명사", "ko": "(도로의) 가드레일, 난간" }
+  ],
+  "forms": ["guardrails"],
+  "synonyms": ["safeguard", "constraint"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "guess",
+  "skip": null,
+  "word": "guess",
+  "pos": ["동사", "명사"],
+  "ipa": "ɡes",
+  "meaning": "① 추측하다, 짐작하다 ② 추측, 짐작",
+  "short": "추측하다, 짐작하다",
+  "senses": [
+   { "pos": "동사", "ko": "추측하다, 짐작하다" },
+   { "pos": "명사", "ko": "추측, 짐작" }
+  ],
+  "forms": ["guesses", "guessed", "guessing"],
+  "synonyms": ["infer", "estimate", "speculate"],
+  "domain": "비교·평가·판단",
+  "basic": true,
+  "contexts": [
+   { "sid": "mock04#34.6", "surface": "guesses", "pos": "동사", "sense": "추측하다, 짐작하다" },
+   { "sid": "lesson-d2#19.1", "surface": "guessed", "pos": "동사", "sense": "추측하다, 짐작하다" }
+  ]
+ },
+ {
+  "lemma": "guest",
+  "skip": null,
+  "word": "guest",
+  "pos": ["명사"],
+  "ipa": "ɡest",
+  "meaning": "① (호텔 등의) 투숙객, 이용객 ② (초대받은) 손님",
+  "short": "손님, 투숙객",
+  "senses": [
+   { "pos": "명사", "ko": "투숙객, 이용객" },
+   { "pos": "명사", "ko": "(초대받은) 손님" }
+  ],
+  "forms": ["guests"],
+  "synonyms": ["visitor", "customer"],
+  "domain": "사람·조직·역할",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#12.1", "surface": "guest", "pos": "명사", "sense": "투숙객, 이용객" },
+   { "sid": "lesson-d5#12.0", "surface": "guest", "pos": "명사", "sense": "투숙객, 이용객" }
+  ]
+ },
+ {
+  "lemma": "guidance",
+  "skip": null,
+  "word": "guidance",
+  "pos": ["명사"],
+  "ipa": "ˈɡaɪdns",
+  "meaning": "① 지침, 안내 — 어떻게 하라고 알려 주는 내용 ② 지도, 조언",
+  "short": "지침, 안내",
+  "senses": [
+   { "pos": "명사", "ko": "지침, 안내" },
+   { "pos": "명사", "ko": "지도, 조언" }
+  ],
+  "forms": [],
+  "synonyms": ["direction", "instructions", "advice"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#10.2", "surface": "guidance", "pos": "명사", "sense": "지침, 안내" },
+   { "sid": "lesson-d3#6.3", "surface": "guidance", "pos": "명사", "sense": "지침, 안내" },
+   { "sid": "lesson-d3#32.1", "surface": "guidance", "pos": "명사", "sense": "지침, 안내" },
+   { "sid": "lesson-d3#4.3", "surface": "guidance", "pos": "명사", "sense": "지침, 안내" }
+  ]
+ },
+ {
+  "lemma": "guide",
+  "skip": null,
+  "word": "guide",
+  "pos": ["명사", "동사"],
+  "ipa": "ɡaɪd",
+  "meaning": "① 안내서, 지침서 (style guide: 스타일 가이드) ② 이끌다, 방향을 잡아 주다 ③ 안내자",
+  "short": "안내서, 지침서",
+  "senses": [
+   { "pos": "명사", "ko": "안내서, 지침서" },
+   { "pos": "동사", "ko": "이끌다, 방향을 잡아 주다" },
+   { "pos": "명사", "ko": "안내자, 가이드" }
+  ],
+  "forms": ["guides", "guided", "guiding"],
+  "synonyms": ["manual", "handbook"],
+  "domain": "데이터·정보·문서",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#12.4", "surface": "guide", "pos": "명사", "sense": "안내서, 지침서" },
+   { "sid": "mock04#6.4", "surface": "guide", "pos": "동사", "sense": "이끌다, 방향을 잡아 주다" },
+   { "sid": "lesson-d3#12.6", "surface": "guide", "pos": "명사", "sense": "안내서, 지침서" },
+   { "sid": "lesson-d3#12.0", "surface": "guide", "pos": "명사", "sense": "안내서, 지침서" }
+  ]
+ },
+ {
+  "lemma": "guideline",
+  "skip": null,
+  "word": "guideline",
+  "pos": ["명사"],
+  "ipa": "ˈɡaɪdlaɪn",
+  "meaning": "지침, 가이드라인 (주로 복수 guidelines)",
+  "short": "지침, 가이드라인",
+  "senses": [
+   { "pos": "명사", "ko": "지침, 가이드라인" }
+  ],
+  "forms": ["guidelines"],
+  "synonyms": ["rule", "standard", "principle"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#33.5", "surface": "guidelines", "pos": "명사", "sense": "지침, 가이드라인" }
+  ]
+ },
+ {
+  "lemma": "half",
+  "skip": null,
+  "word": "half",
+  "pos": ["명사", "한정사", "부사"],
+  "ipa": "hæf",
+  "meaning": "① 절반, 반 ② (half a ~) ~의 절반 ③ 반쯤, 어느 정도",
+  "short": "절반, 반",
+  "senses": [
+   { "pos": "명사", "ko": "절반, 반" },
+   { "pos": "한정사", "ko": "(half a ~) ~의 절반" },
+   { "pos": "부사", "ko": "반쯤, 어느 정도" }
+  ],
+  "forms": ["halves"],
+  "synonyms": [],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#2.1", "surface": "half", "pos": "명사", "sense": "절반, 반" },
+   { "sid": "lesson-d4#13.0", "surface": "half", "pos": "한정사", "sense": "(half a ~) ~의 절반" },
+   { "sid": "lesson-d4#28.4", "surface": "half", "pos": "한정사", "sense": "(half a ~) ~의 절반" }
+  ]
+ },
+ {
+  "lemma": "halfway",
+  "skip": null,
+  "word": "halfway",
+  "pos": ["부사", "형용사"],
+  "ipa": "ˌhæfˈweɪ",
+  "meaning": "① 중간쯤에, 도중에 (halfway through: ~의 중간쯤에) ② 중간의",
+  "short": "중간쯤에, 도중에",
+  "senses": [
+   { "pos": "부사", "ko": "중간쯤에, 도중에" },
+   { "pos": "형용사", "ko": "중간 지점의" }
+  ],
+  "forms": [],
+  "synonyms": ["midway", "partway"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#37.0", "surface": "Halfway", "pos": "부사", "sense": "중간쯤에, 도중에" }
+  ]
+ },
+ {
+  "lemma": "hallucination",
+  "skip": null,
+  "word": "hallucination",
+  "pos": ["명사"],
+  "ipa": "həˌluːsɪˈneɪʃn",
+  "meaning": "환각 — 모델이 사실이 아닌 내용을 그럴듯하게 지어내는 것",
+  "short": "환각(사실 아닌 내용 지어내기)",
+  "senses": [
+   { "pos": "명사", "ko": "환각(사실이 아닌 내용을 지어냄)" },
+   { "pos": "동사", "ko": "(hallucinate) 사실이 아닌 내용을 지어내다" }
+  ],
+  "forms": ["hallucinations", "hallucinate", "hallucinated"],
+  "synonyms": ["fabrication", "confabulation"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#6.3", "surface": "hallucination", "pos": "명사", "sense": "환각(사실이 아닌 내용을 지어냄)" },
+   { "sid": "lesson-d5#2.6", "surface": "hallucinated", "pos": "동사", "sense": "(hallucinate) 사실이 아닌 내용을 지어내다" }
+  ]
+ },
+ {
+  "lemma": "halt",
+  "skip": null,
+  "word": "halt",
+  "pos": ["동사"],
+  "ipa": "hɔːlt",
+  "meaning": "(진행을) 멈추다, 중단하다",
+  "short": "멈추다, 중단하다",
+  "senses": [
+   { "pos": "동사", "ko": "(진행을) 멈추다, 중단하다" },
+   { "pos": "명사", "ko": "정지, 중단" }
+  ],
+  "forms": ["halts", "halted", "halting"],
+  "synonyms": ["stop", "pause", "suspend"],
+  "domain": "시작·종료",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#3.2", "surface": "halt", "pos": "동사", "sense": "(진행을) 멈추다, 중단하다" },
+   { "sid": "mock04#29.2", "surface": "halting", "pos": "동사", "sense": "(진행을) 멈추다, 중단하다" }
+  ]
+ },
+ {
+  "lemma": "hand",
+  "skip": null,
+  "word": "hand",
+  "pos": ["동사", "명사"],
+  "ipa": "hænd",
+  "meaning": "① 건네다, 넘겨주다 (hand off: 인계하다, hand back: 돌려주다) ② 손 ③ (at hand) 지금 다루는 (on hand) 바로 쓸 수 있게 갖춘",
+  "short": "건네다, 넘겨주다",
+  "senses": [
+   { "pos": "동사", "ko": "건네다, 넘겨주다" },
+   { "pos": "명사", "ko": "손" },
+   { "pos": "전치사구", "ko": "(at hand) 지금 다루는, 당면한" },
+   { "pos": "전치사구", "ko": "(on hand) 바로 쓸 수 있게 갖춘" }
+  ],
+  "forms": ["hands", "handed", "handing"],
+  "synonyms": ["pass", "give", "deliver"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#10.0", "surface": "hands", "pos": "동사", "sense": "건네다, 넘겨주다" },
+   { "sid": "lesson-d1#17.1", "surface": "at hand", "pos": "전치사구", "sense": "(at hand) 지금 다루는, 당면한" },
+   { "sid": "lesson-d3#18.3", "surface": "on hand", "pos": "전치사구", "sense": "(on hand) 바로 쓸 수 있게 갖춘" },
+   { "sid": "lesson-d5#5.2", "surface": "hand", "pos": "동사", "sense": "건네다, 넘겨주다" }
+  ]
+ },
+ {
+  "lemma": "hand-written",
+  "skip": null,
+  "word": "hand-written",
+  "pos": ["형용사"],
+  "ipa": "ˌhænd ˈrɪtn",
+  "meaning": "손으로 직접 작성한 — 라이브러리·자동 생성이 아닌",
+  "short": "직접 작성한",
+  "senses": [
+   { "pos": "형용사", "ko": "(코드를) 직접 작성한" },
+   { "pos": "형용사", "ko": "손글씨로 쓴" }
+  ],
+  "forms": [],
+  "synonyms": ["handwritten", "hand-coded", "custom"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#17.1", "surface": "hand-written", "pos": "형용사", "sense": "(코드를) 직접 작성한" }
+  ]
+ },
+ {
+  "lemma": "handful",
+  "skip": null,
+  "word": "handful",
+  "pos": ["명사"],
+  "ipa": "ˈhændfʊl",
+  "meaning": "소수, 몇 개 (a handful of)",
+  "short": "소수, 몇 개",
+  "senses": [
+   { "pos": "명사", "ko": "소수, 몇 개 (a handful of)" },
+   { "pos": "명사", "ko": "한 줌" }
+  ],
+  "forms": [],
+  "synonyms": ["few", "several"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#10.3", "surface": "handful", "pos": "명사", "sense": "소수, 몇 개 (a handful of)" }
+  ]
+ },
+ {
+  "lemma": "handle",
+  "skip": null,
+  "word": "handle",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈhændl",
+  "meaning": "① 처리하다, 다루다 — handler: 처리기(핸들러) ② (handle time) 처리 시간",
+  "short": "처리하다, 다루다",
+  "senses": [
+   { "pos": "동사", "ko": "처리하다, 다루다" },
+   { "pos": "명사", "ko": "(handler) 처리기, 핸들러" },
+   { "pos": "명사", "ko": "(handle time) 처리 시간" },
+   { "pos": "명사", "ko": "식별용 이름, 참조값" }
+  ],
+  "forms": ["handles", "handled", "handling", "handler", "handlers"],
+  "synonyms": ["deal with", "manage", "process"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#11.3", "surface": "handled", "pos": "동사", "sense": "처리하다, 다루다" },
+   { "sid": "lesson-d3#13.1", "surface": "handlers", "pos": "명사", "sense": "(handler) 처리기, 핸들러" },
+   { "sid": "mock04#2.1", "surface": "handle", "pos": "명사", "sense": "(handle time) 처리 시간" },
+   { "sid": "lesson-d1#38.4", "surface": "handle", "pos": "명사", "sense": "식별용 이름, 참조값" }
+  ]
+ },
+ {
+  "lemma": "handoff",
+  "skip": null,
+  "word": "handoff",
+  "pos": ["명사"],
+  "ipa": "ˈhændɔːf",
+  "meaning": "인계, 넘겨주기 — 작업·맥락을 다음 담당(사람·에이전트)에게 넘기는 것",
+  "short": "인계, 넘겨주기",
+  "senses": [
+   { "pos": "명사", "ko": "인계, 넘겨주기" },
+   { "pos": "동사구", "ko": "(hand off) 넘기다, 인계하다" }
+  ],
+  "forms": ["handoffs", "hand off"],
+  "synonyms": ["handover", "transfer"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#10.2", "surface": "handoff", "pos": "명사", "sense": "인계, 넘겨주기" },
+   { "sid": "lesson-d5#7.2", "surface": "Hand off", "pos": "동사구", "sense": "(hand off) 넘기다, 인계하다" },
+   { "sid": "mock04#2.4", "surface": "handoff", "pos": "명사", "sense": "인계, 넘겨주기" },
+   { "sid": "lesson-d5#7.4", "surface": "hand off", "pos": "동사구", "sense": "(hand off) 넘기다, 인계하다" }
+  ]
+ },
+ {
+  "lemma": "hang",
+  "skip": null,
+  "word": "hang",
+  "pos": ["동사"],
+  "ipa": "hæŋ",
+  "meaning": "(프로그램이) 응답 없이 멈춰 있다",
+  "short": "응답 없이 멈춰 있다",
+  "senses": [
+   { "pos": "동사", "ko": "(프로그램이) 응답 없이 멈춰 있다" },
+   { "pos": "명사", "ko": "(프로그램의) 멈춤, 먹통" },
+   { "pos": "동사", "ko": "걸다, 매달다" }
+  ],
+  "forms": ["hangs", "hung", "hanging"],
+  "synonyms": ["freeze", "stall"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#29.0", "surface": "hangs", "pos": "동사", "sense": "(프로그램이) 응답 없이 멈춰 있다" },
+   { "sid": "lesson-d3#30.3", "surface": "hang", "pos": "명사", "sense": "(프로그램의) 멈춤, 먹통" },
+   { "sid": "lesson-d3#30.1", "surface": "hangs", "pos": "동사", "sense": "(프로그램이) 응답 없이 멈춰 있다" }
+  ]
+ },
+ {
+  "lemma": "happen",
+  "skip": null,
+  "word": "happen",
+  "pos": ["동사"],
+  "ipa": "ˈhæpən",
+  "meaning": "① 일어나다, 발생하다 ② (happen to + 동사) 우연히 ~하다 ③ (happen to + 명사) ~이 어떻게 되다",
+  "short": "일어나다, 발생하다",
+  "senses": [
+   { "pos": "동사", "ko": "일어나다, 발생하다" },
+   { "pos": "동사", "ko": "(happen to ~) 우연히 ~하다" },
+   { "pos": "동사", "ko": "(happen to ~) ~이 어떻게 되다" }
+  ],
+  "forms": ["happens", "happened", "happening"],
+  "synonyms": ["occur", "take place"],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   { "sid": "sample01#18.2", "surface": "happens", "pos": "동사", "sense": "일어나다, 발생하다" },
+   { "sid": "lesson-d4#12.1", "surface": "happen", "pos": "동사", "sense": "(happen to ~) 우연히 ~하다" },
+   { "sid": "lesson-d3#18.2", "surface": "happen", "pos": "동사", "sense": "(happen to ~) ~이 어떻게 되다" },
+   { "sid": "lesson-d1#26.0", "surface": "happens", "pos": "동사", "sense": "일어나다, 발생하다" }
+  ]
+ },
+ {
+  "lemma": "hard",
+  "skip": null,
+  "word": "hard",
+  "pos": ["형용사", "부사"],
+  "ipa": "hɑːrd",
+  "meaning": "① 어려운 ② 열심히, 세게 ③ 단단한",
+  "short": "어려운",
+  "senses": [
+   { "pos": "형용사", "ko": "어려운" },
+   { "pos": "부사", "ko": "열심히, 세게" },
+   { "pos": "형용사", "ko": "단단한, 딱딱한" }
+  ],
+  "forms": ["harder", "hardest"],
+  "synonyms": ["difficult", "tough"],
+  "domain": "상태·성질",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#22.4", "surface": "hard", "pos": "형용사", "sense": "어려운" },
+   { "sid": "mock04#21.6", "surface": "harder", "pos": "부사", "sense": "열심히, 세게" },
+   { "sid": "lesson-d5#25.4", "surface": "harder", "pos": "형용사", "sense": "어려운" },
+   { "sid": "lesson-d5#33.4", "surface": "hard", "pos": "형용사", "sense": "어려운" }
+  ]
+ },
+ {
+  "lemma": "hardcode",
+  "skip": null,
+  "word": "hardcode",
+  "pos": ["동사"],
+  "ipa": "ˌhɑːrdˈkoʊd",
+  "meaning": "하드코딩하다 — 값을 설정·변수로 빼지 않고 코드에 직접 박아 넣다",
+  "short": "하드코딩하다, 코드에 박아 넣다",
+  "senses": [
+   { "pos": "동사", "ko": "하드코딩하다(값을 코드에 직접 박아 넣다)" },
+   { "pos": "형용사", "ko": "(hardcoded) 코드에 직접 박힌" }
+  ],
+  "forms": ["hardcodes", "hardcoded", "hardcoding", "hard-code", "hard-codes"],
+  "synonyms": ["hard-wire"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#37.2", "surface": "hard-codes", "pos": "동사", "sense": "하드코딩하다(값을 코드에 직접 박아 넣다)" },
+   { "sid": "mock04#40.1", "surface": "hardcoded", "pos": "형용사", "sense": "(hardcoded) 코드에 직접 박힌" },
+   { "sid": "lesson-d2#24.4", "surface": "hardcoded", "pos": "형용사", "sense": "(hardcoded) 코드에 직접 박힌" }
+  ]
+ },
+ {
+  "lemma": "harmful",
+  "skip": null,
+  "word": "harmful",
+  "pos": ["형용사"],
+  "ipa": "ˈhɑːrmfl",
+  "meaning": "해로운, 유해한 — harmlessness: 무해성(해롭지 않음)",
+  "short": "해로운, 유해한",
+  "senses": [
+   { "pos": "형용사", "ko": "해로운, 유해한" },
+   { "pos": "명사", "ko": "(harmlessness) 무해성" }
+  ],
+  "forms": ["harm", "harmless", "harmlessness"],
+  "synonyms": ["damaging", "dangerous"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "harness",
+  "skip": null,
+  "word": "harness",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈhɑːrnɪs",
+  "meaning": "① 하네스 — 모델을 감싸 도구 실행·권한·루프를 관리하는 실행 틀 ② (힘을) 활용하다",
+  "short": "하네스(모델 실행 틀)",
+  "senses": [
+   { "pos": "명사", "ko": "하네스(모델을 감싼 실행 틀)" },
+   { "pos": "동사", "ko": "(힘을) 활용하다" },
+   { "pos": "명사", "ko": "(말·안전용) 마구, 벨트" }
+  ],
+  "forms": ["harnesses", "harnessed"],
+  "synonyms": ["scaffolding", "runtime"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#14.5", "surface": "harness", "pos": "명사", "sense": "하네스(모델을 감싼 실행 틀)" }
+  ]
+ },
+ {
+  "lemma": "hash",
+  "skip": null,
+  "word": "hash",
+  "pos": ["명사", "동사"],
+  "ipa": "hæʃ",
+  "meaning": "해시(값) — 데이터를 고정 길이 값으로 바꾼 것 / 해시하다",
+  "short": "해시(값)",
+  "senses": [
+   { "pos": "명사", "ko": "해시(값)" },
+   { "pos": "동사", "ko": "해시하다(해시값으로 바꾸다)" }
+  ],
+  "forms": ["hashes", "hashed", "hashing"],
+  "synonyms": ["digest", "checksum"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#21.3", "surface": "hash", "pos": "명사", "sense": "해시(값)" }
+  ]
+ },
+ {
+  "lemma": "head",
+  "skip": null,
+  "word": "heading",
+  "pos": ["명사"],
+  "ipa": "ˈhedɪŋ",
+  "meaning": "① (글·섹션의) 제목, 소제목 ② 방향, 진행 방향",
+  "short": "제목, 소제목",
+  "senses": [
+   { "pos": "명사", "ko": "(섹션의) 제목, 소제목" },
+   { "pos": "명사", "ko": "방향, 진행 방향" }
+  ],
+  "forms": ["headings", "head"],
+  "synonyms": ["header", "title"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#6.3", "surface": "heading", "pos": "명사", "sense": "(섹션의) 제목, 소제목" }
+  ]
+ },
+ {
+  "lemma": "header",
+  "skip": null,
+  "word": "header",
+  "pos": ["명사"],
+  "ipa": "ˈhedər",
+  "meaning": "① (문서의) 머리글, 섹션 제목 ② (HTTP·파일의) 헤더 — 본문 앞에 붙는 정보",
+  "short": "머리글, 헤더",
+  "senses": [
+   { "pos": "명사", "ko": "(문서의) 머리글, 섹션 제목" },
+   { "pos": "명사", "ko": "(요청·파일의) 헤더" },
+   { "pos": "명사", "ko": "(표의) 머리 행, 열 이름" }
+  ],
+  "forms": ["headers"],
+  "synonyms": ["heading", "title"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#13.7", "surface": "headers", "pos": "명사", "sense": "(문서의) 머리글, 섹션 제목" },
+   { "sid": "lesson-d2#20.2", "surface": "header", "pos": "명사", "sense": "(요청·파일의) 헤더" },
+   { "sid": "lesson-d3#25.3", "surface": "headers", "pos": "명사", "sense": "(표의) 머리 행, 열 이름" },
+   { "sid": "mock04#36.7", "surface": "headers", "pos": "명사", "sense": "(문서의) 머리글, 섹션 제목" }
+  ]
+ },
+ {
+  "lemma": "headless",
+  "skip": null,
+  "word": "headless",
+  "pos": ["형용사"],
+  "ipa": "ˈhedləs",
+  "meaning": "화면(UI) 없이 실행하는",
+  "short": "화면 없이 실행하는",
+  "senses": [
+   { "pos": "형용사", "ko": "화면(UI) 없이 실행하는" },
+   { "pos": "형용사", "ko": "머리가 없는" }
+  ],
+  "forms": [],
+  "synonyms": ["non-interactive"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#31.4", "surface": "headless", "pos": "형용사", "sense": "화면(UI) 없이 실행하는" },
+   { "sid": "lesson-d4#37.4", "surface": "headless", "pos": "형용사", "sense": "화면(UI) 없이 실행하는" },
+   { "sid": "lesson-d3#21.5", "surface": "headless", "pos": "형용사", "sense": "화면(UI) 없이 실행하는" },
+   { "sid": "lesson-d3#22.6", "surface": "Headless", "pos": "형용사", "sense": "화면(UI) 없이 실행하는" }
+  ]
+ },
+ {
+  "lemma": "healthcare",
+  "skip": null,
+  "word": "healthcare",
+  "pos": ["명사"],
+  "ipa": "ˈhelθker",
+  "meaning": "의료, 보건 (의료 서비스)",
+  "short": "의료, 보건",
+  "senses": [
+   { "pos": "명사", "ko": "의료, 보건" }
+  ],
+  "forms": [],
+  "synonyms": ["health care", "medical care"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#9.0", "surface": "healthcare", "pos": "명사", "sense": "의료, 보건" }
+  ]
+ },
+ {
+  "lemma": "help",
+  "skip": null,
+  "word": "help",
+  "pos": ["동사", "명사"],
+  "ipa": "help",
+  "meaning": "① 돕다, 도움이 되다 ② 도움",
+  "short": "돕다, 도움이 되다",
+  "senses": [
+   { "pos": "동사", "ko": "돕다, 도움이 되다" },
+   { "pos": "명사", "ko": "도움" }
+  ],
+  "forms": ["helps", "helped", "helping", "helpful"],
+  "synonyms": ["assist", "aid"],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   { "sid": "mock04#41.1", "surface": "help", "pos": "동사", "sense": "돕다, 도움이 되다" },
+   { "sid": "lesson-d2#3.4", "surface": "help", "pos": "동사", "sense": "돕다, 도움이 되다" },
+   { "sid": "lesson-d4#6.1", "surface": "helps", "pos": "동사", "sense": "돕다, 도움이 되다" },
+   { "sid": "lesson-d4#10.2", "surface": "help", "pos": "동사", "sense": "돕다, 도움이 되다" }
+  ]
+ },
+ {
+  "lemma": "helper",
+  "skip": null,
+  "word": "helper",
+  "pos": ["명사"],
+  "ipa": "ˈhelpər",
+  "meaning": "① 헬퍼 — 공통 작업을 돕는 보조 함수·코드 ② 도우미, 조수",
+  "short": "보조 함수, 헬퍼",
+  "senses": [
+   { "pos": "명사", "ko": "보조 함수·코드, 헬퍼" },
+   { "pos": "명사", "ko": "도우미, 조수" }
+  ],
+  "forms": ["helpers"],
+  "synonyms": ["utility"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#4.1", "surface": "helper", "pos": "명사", "sense": "보조 함수·코드, 헬퍼" },
+   { "sid": "lesson-d3#32.0", "surface": "helpers", "pos": "명사", "sense": "보조 함수·코드, 헬퍼" },
+   { "sid": "lesson-d4#26.0", "surface": "helper", "pos": "명사", "sense": "보조 함수·코드, 헬퍼" },
+   { "sid": "lesson-d4#25.6", "surface": "helper", "pos": "명사", "sense": "보조 함수·코드, 헬퍼" }
+  ]
+ },
+ {
+  "lemma": "heterogeneous",
+  "skip": null,
+  "word": "heterogeneous",
+  "pos": ["형용사"],
+  "ipa": "ˌhetərəˈdʒiːniəs",
+  "meaning": "이질적인, 서로 다른 종류(형식)가 섞인",
+  "short": "이질적인, 여러 종류가 섞인",
+  "senses": [
+   { "pos": "형용사", "ko": "이질적인, 서로 다른 종류가 섞인" }
+  ],
+  "forms": ["heterogeneity"],
+  "synonyms": ["diverse", "mixed", "varied"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#4.2", "surface": "heterogeneous", "pos": "형용사", "sense": "이질적인, 서로 다른 종류가 섞인" }
+  ]
+ },
+ {
+  "lemma": "heuristic",
+  "skip": null,
+  "word": "heuristic",
+  "pos": ["명사"],
+  "ipa": "hjʊˈrɪstɪk",
+  "meaning": "경험적 규칙, 어림 규칙",
+  "short": "경험적 규칙, 어림 규칙",
+  "senses": [
+   { "pos": "명사", "ko": "경험적 규칙, 어림 규칙" },
+   { "pos": "형용사", "ko": "경험에 바탕을 둔, 발견적인" }
+  ],
+  "forms": ["heuristics"],
+  "synonyms": ["rule of thumb"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:heuristic.0", "surface": "heuristics", "pos": "명사", "sense": "경험적 규칙, 어림 규칙" }
+  ]
+ },
+ {
+  "lemma": "hide",
+  "skip": null,
+  "word": "hide",
+  "pos": ["동사"],
+  "ipa": "haɪd",
+  "meaning": "숨기다, 감추다 (hidden: 숨겨진, 보이지 않는)",
+  "short": "숨기다, 감추다",
+  "senses": [
+   { "pos": "동사", "ko": "숨기다, 감추다" },
+   { "pos": "형용사", "ko": "(hidden) 숨겨진, 보이지 않는" }
+  ],
+  "forms": ["hides", "hid", "hidden", "hiding"],
+  "synonyms": ["conceal"],
+  "domain": "제어·제한·관리",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#11.5", "surface": "hidden", "pos": "형용사", "sense": "(hidden) 숨겨진, 보이지 않는" }
+  ]
+ },
+ {
+  "lemma": "hierarchy",
+  "skip": null,
+  "word": "hierarchy",
+  "pos": ["명사"],
+  "ipa": "ˈhaɪərɑːrki",
+  "meaning": "계층 구조 (class hierarchy: 클래스 상속 구조)",
+  "short": "계층 구조",
+  "senses": [
+   { "pos": "명사", "ko": "계층 구조" },
+   { "pos": "명사", "ko": "(조직의) 위계, 서열" }
+  ],
+  "forms": ["hierarchies", "hierarchical"],
+  "synonyms": ["ranking"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#27.5", "surface": "hierarchy", "pos": "명사", "sense": "계층 구조" }
+  ]
+ },
+ {
+  "lemma": "high",
+  "skip": null,
+  "word": "high",
+  "pos": ["형용사", "부사"],
+  "ipa": "haɪ",
+  "meaning": "① (값·비용이) 높은, 많은 ② (수준·정도가) 높은 ③ 높이, 높게",
+  "short": "높은",
+  "senses": [
+   { "pos": "형용사", "ko": "(값·비용이) 높은, 많은" },
+   { "pos": "형용사", "ko": "(수준·정도가) 높은" },
+   { "pos": "부사", "ko": "높이, 높게" }
+  ],
+  "forms": ["higher", "highest", "highly"],
+  "synonyms": ["elevated", "great"],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#6.1", "surface": "high", "pos": "형용사", "sense": "(값·비용이) 높은, 많은" },
+   { "sid": "lesson-d2#1.4", "surface": "higher", "pos": "형용사", "sense": "(수준·정도가) 높은" },
+   { "sid": "mock04#10.7", "surface": "highest", "pos": "형용사", "sense": "(값·비용이) 높은, 많은" },
+   { "sid": "sample01#3.6", "surface": "higher", "pos": "형용사", "sense": "(수준·정도가) 높은" }
+  ]
+ },
+ {
+  "lemma": "high-confidence",
+  "skip": null,
+  "word": "high-confidence",
+  "pos": ["형용사"],
+  "ipa": "ˌhaɪ ˈkɑːnfɪdəns",
+  "meaning": "확신도가 높은, 확실한 (high-confidence findings: 확실한 지적 사항)",
+  "short": "확신도가 높은, 확실한",
+  "senses": [
+   { "pos": "형용사", "ko": "확신도가 높은, 확실한" }
+  ],
+  "forms": [],
+  "synonyms": ["certain", "confident"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#2.0", "surface": "high-confidence", "pos": "형용사", "sense": "확신도가 높은, 확실한" },
+   { "sid": "lesson-d4#7.3", "surface": "high-confidence", "pos": "형용사", "sense": "확신도가 높은, 확실한" },
+   { "sid": "lesson-d4#2.4", "surface": "High-confidence", "pos": "형용사", "sense": "확신도가 높은, 확실한" }
+  ]
+ },
+ {
+  "lemma": "high-level",
+  "skip": null,
+  "word": "high-level",
+  "pos": ["형용사"],
+  "ipa": "ˌhaɪ ˈlevl",
+  "meaning": "① 큰 그림의, 상위 수준의 (세부가 아닌 전체적인) ② 고위급의",
+  "short": "큰 그림의, 상위 수준의",
+  "senses": [
+   { "pos": "형용사", "ko": "큰 그림의, 상위 수준의" },
+   { "pos": "형용사", "ko": "고위급의" }
+  ],
+  "forms": [],
+  "synonyms": ["overall", "big-picture", "general"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#24.2", "surface": "high-level", "pos": "형용사", "sense": "큰 그림의, 상위 수준의" },
+   { "sid": "lesson-d2#31.2", "surface": "high-level", "pos": "형용사", "sense": "큰 그림의, 상위 수준의" }
+  ]
+ },
+ {
+  "lemma": "high-volume",
+  "skip": null,
+  "word": "high-volume",
+  "pos": ["형용사"],
+  "ipa": "ˌhaɪ ˈvɑːljuːm",
+  "meaning": "대량의, 처리량이 많은",
+  "short": "대량의, 처리량이 많은",
+  "senses": [
+   { "pos": "형용사", "ko": "대량의, 처리량이 많은" }
+  ],
+  "forms": [],
+  "synonyms": ["large-scale", "bulk"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#7.0", "surface": "high-volume", "pos": "형용사", "sense": "대량의, 처리량이 많은" }
+  ]
+ },
+ {
+  "lemma": "highest-impact",
+  "skip": null,
+  "word": "highest-impact",
+  "pos": ["형용사"],
+  "ipa": "ˌhaɪɪst ˈɪmpækt",
+  "meaning": "효과가 가장 큰, 가장 큰 영향을 주는",
+  "short": "효과가 가장 큰",
+  "senses": [
+   { "pos": "형용사", "ko": "효과가 가장 큰, 가장 큰 영향을 주는" }
+  ],
+  "forms": [],
+  "synonyms": ["most effective"],
+  "domain": "원인·결과·영향",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#3.2", "surface": "highest-impact", "pos": "형용사", "sense": "효과가 가장 큰, 가장 큰 영향을 주는" },
+   { "sid": "sample01#9.3", "surface": "highest-impact", "pos": "형용사", "sense": "효과가 가장 큰, 가장 큰 영향을 주는" }
+  ]
+ },
+ {
+  "lemma": "highly",
+  "skip": null,
+  "word": "highly",
+  "pos": ["부사"],
+  "ipa": "ˈhaɪli",
+  "meaning": "① 매우, 대단히 (highly confident: 매우 확신하는) ② 높이, 좋게 (평가하다)",
+  "short": "매우, 대단히",
+  "senses": [
+   { "pos": "부사", "ko": "매우, 대단히" },
+   { "pos": "부사", "ko": "높이, 좋게 (평가하여)" }
+  ],
+  "forms": [],
+  "synonyms": ["very", "extremely"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#1.3", "surface": "highly", "pos": "부사", "sense": "매우, 대단히" }
+  ]
+ },
+ {
+  "lemma": "hint",
+  "skip": null,
+  "word": "hint",
+  "pos": ["명사", "동사"],
+  "ipa": "hɪnt",
+  "meaning": "① 힌트, 단서, 조언 ② 넌지시 알리다, 암시하다",
+  "short": "힌트, 조언",
+  "senses": [
+   { "pos": "명사", "ko": "힌트, 단서, 조언" },
+   { "pos": "동사", "ko": "넌지시 알리다, 암시하다" }
+  ],
+  "forms": ["hints", "hinted", "hinting"],
+  "synonyms": ["clue", "tip", "suggestion"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "hipaa",
+  "skip": null,
+  "word": "HIPAA",
+  "pos": ["약어"],
+  "ipa": "ˈhɪpə",
+  "meaning": "미국 의료정보 보호법 — 환자 건강 정보의 취급 기준을 정한 법",
+  "short": "미국 의료정보 보호법",
+  "senses": [
+   { "pos": "약어", "ko": "미국 의료정보 보호법" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "historical",
+  "skip": null,
+  "word": "historical",
+  "pos": ["형용사"],
+  "ipa": "hɪˈstɔːrɪkl",
+  "meaning": "과거의, 이력의 (지난 기록에 바탕을 둔) / 역사의",
+  "short": "과거의, 이력의",
+  "senses": [
+   { "pos": "형용사", "ko": "과거의, 이력의" },
+   { "pos": "형용사", "ko": "역사의, 역사적인" }
+  ],
+  "forms": ["history", "historically"],
+  "synonyms": ["past", "previous"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#3.7", "surface": "historical", "pos": "형용사", "sense": "과거의, 이력의" },
+   { "sid": "lesson-d4#10.0", "surface": "historical", "pos": "형용사", "sense": "과거의, 이력의" }
+  ]
+ }
+]

@@ -1,0 +1,896 @@
+[
+ {
+  "lemma": "migrate",
+  "skip": null,
+  "word": "migrate",
+  "pos": ["동사"],
+  "ipa": "ˈmaɪɡreɪt",
+  "meaning": "(새 환경·형식으로) 옮기다, 마이그레이션하다",
+  "short": "옮기다, 마이그레이션하다",
+  "senses": [
+   { "pos": "동사", "ko": "(새 환경·형식으로) 옮기다, 마이그레이션하다" },
+   { "pos": "명사", "ko": "(migration) 이전, 마이그레이션" },
+   { "pos": "동사", "ko": "(사람·동물이) 이주하다" }
+  ],
+  "forms": ["migrates", "migrated", "migrating", "re-migrating", "migration", "migrations"],
+  "synonyms": ["move", "transfer", "port"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#18.1", "surface": "re-migrating", "pos": "동사", "sense": "(새 환경·형식으로) 옮기다, 마이그레이션하다" },
+   { "sid": "mock04#18.2", "surface": "migration", "pos": "명사", "sense": "(migration) 이전, 마이그레이션" },
+   { "sid": "lesson-d3#24.0", "surface": "migration", "pos": "명사", "sense": "(migration) 이전, 마이그레이션" },
+   { "sid": "lesson-d3#18.0", "surface": "migration", "pos": "명사", "sense": "(migration) 이전, 마이그레이션" }
+  ]
+ },
+ {
+  "lemma": "milligram",
+  "skip": null,
+  "word": "milligram",
+  "pos": ["명사"],
+  "ipa": "ˈmɪlɪɡræm",
+  "meaning": "밀리그램(mg) — 무게 단위 (1그램의 1000분의 1)",
+  "short": "밀리그램",
+  "senses": [
+   { "pos": "명사", "ko": "밀리그램(무게 단위)" }
+  ],
+  "forms": ["milligrams"],
+  "synonyms": [],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#13.5", "surface": "milligrams", "pos": "명사", "sense": "밀리그램(무게 단위)" }
+  ]
+ },
+ {
+  "lemma": "million",
+  "skip": null,
+  "word": "million",
+  "pos": ["명사"],
+  "ipa": "ˈmɪljən",
+  "meaning": "백만",
+  "short": "백만",
+  "senses": [
+   { "pos": "명사", "ko": "백만" }
+  ],
+  "forms": ["millions"],
+  "synonyms": [],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#38.3", "surface": "million", "pos": "명사", "sense": "백만" },
+   { "sid": "lesson-d5#38.6", "surface": "million", "pos": "명사", "sense": "백만" }
+  ]
+ },
+ {
+  "lemma": "minimum",
+  "skip": null,
+  "word": "minimum",
+  "pos": ["명사", "형용사"],
+  "ipa": "ˈmɪnɪməm",
+  "meaning": "최소(의), 최솟값 — minimum viable 최소한으로 필요한",
+  "short": "최소의, 최솟값",
+  "senses": [
+   { "pos": "형용사", "ko": "최소의, 최소한의" },
+   { "pos": "명사", "ko": "최소, 최솟값" }
+  ],
+  "forms": ["minimal", "minimize"],
+  "synonyms": ["least", "lowest", "floor"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#8.2", "surface": "minimum", "pos": "형용사", "sense": "최소의, 최소한의" },
+   { "sid": "mock04#29.6", "surface": "minimum", "pos": "형용사", "sense": "최소의, 최소한의" }
+  ]
+ },
+ {
+  "lemma": "minor",
+  "skip": null,
+  "word": "minor",
+  "pos": ["형용사"],
+  "ipa": "ˈmaɪnər",
+  "meaning": "사소한, 중요하지 않은 (minor version: 부 버전)",
+  "short": "사소한, 경미한",
+  "senses": [
+   { "pos": "형용사", "ko": "사소한, 중요하지 않은" },
+   { "pos": "형용사", "ko": "(버전) 부(副)의, 작은 단위의" },
+   { "pos": "명사", "ko": "미성년자" }
+  ],
+  "forms": ["minority"],
+  "synonyms": ["small", "trivial", "slight"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#1.5", "surface": "minor", "pos": "형용사", "sense": "사소한, 중요하지 않은" }
+  ]
+ },
+ {
+  "lemma": "mint",
+  "skip": null,
+  "word": "mint",
+  "pos": ["동사"],
+  "ipa": "mɪnt",
+  "meaning": "(토큰 등을) 새로 발급하다, 찍어 내다",
+  "short": "새로 발급하다, 찍어 내다",
+  "senses": [
+   { "pos": "동사", "ko": "(토큰 등을) 새로 발급하다, 찍어 내다" },
+   { "pos": "명사", "ko": "박하, 민트" }
+  ],
+  "forms": ["mints", "minted", "minting"],
+  "synonyms": ["issue", "generate", "create"],
+  "domain": "생성·추가",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#24.0", "surface": "minted", "pos": "동사", "sense": "(토큰 등을) 새로 발급하다, 찍어 내다" }
+  ]
+ },
+ {
+  "lemma": "minute",
+  "skip": null,
+  "word": "minute",
+  "pos": ["명사"],
+  "ipa": "ˈmɪnɪt",
+  "meaning": "① (시간) 분 ② 잠깐, 순간 ③ (형, maɪˈnuːt) 아주 작은, 미세한",
+  "short": "(시간) 분",
+  "senses": [
+   { "pos": "명사", "ko": "(시간) 분" },
+   { "pos": "명사", "ko": "잠깐, 순간" },
+   { "pos": "형용사", "ko": "아주 작은, 미세한" }
+  ],
+  "forms": ["minutes"],
+  "synonyms": [],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#15.0", "surface": "minutes", "pos": "명사", "sense": "(시간) 분" },
+   { "sid": "lesson-d1#15.1", "surface": "minutes", "pos": "명사", "sense": "(시간) 분" }
+  ]
+ },
+ {
+  "lemma": "mirror",
+  "skip": null,
+  "word": "mirror",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈmɪrər",
+  "meaning": "그대로 반영하다, 똑같이 따르다 / 거울, 미러",
+  "short": "그대로 반영하다",
+  "senses": [
+   { "pos": "동사", "ko": "그대로 반영하다, 똑같이 따르다" },
+   { "pos": "명사", "ko": "거울, 미러(복제본)" }
+  ],
+  "forms": ["mirrors", "mirrored", "mirroring"],
+  "synonyms": ["reflect", "replicate", "copy"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "misclassify",
+  "skip": null,
+  "word": "misclassify",
+  "pos": ["동사"],
+  "ipa": "ˌmɪsˈklæsɪfaɪ",
+  "meaning": "잘못 분류하다",
+  "short": "잘못 분류하다",
+  "senses": [
+   { "pos": "동사", "ko": "잘못 분류하다" }
+  ],
+  "forms": ["misclassifies", "misclassified", "misclassifying", "misclassification"],
+  "synonyms": ["mislabel", "miscategorize"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#14.0", "surface": "misclassifies", "pos": "동사", "sense": "잘못 분류하다" },
+   { "sid": "lesson-d4#10.4", "surface": "misclassified", "pos": "동사", "sense": "잘못 분류하다" },
+   { "sid": "mock04#56.7", "surface": "misclassified", "pos": "동사", "sense": "잘못 분류하다" }
+  ]
+ },
+ {
+  "lemma": "misconfigured",
+  "skip": null,
+  "word": "misconfigured",
+  "pos": ["형용사"],
+  "ipa": "ˌmɪskənˈfɪɡjərd",
+  "meaning": "설정이 잘못된",
+  "short": "설정이 잘못된",
+  "senses": [
+   { "pos": "형용사", "ko": "설정이 잘못된" }
+  ],
+  "forms": ["misconfigure", "misconfiguration"],
+  "synonyms": [],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#54.4", "surface": "misconfigured", "pos": "형용사", "sense": "설정이 잘못된" }
+  ]
+ },
+ {
+  "lemma": "misinterpret",
+  "skip": null,
+  "word": "misinterpret",
+  "pos": ["동사"],
+  "ipa": "ˌmɪsɪnˈtɜːrprɪt",
+  "meaning": "잘못 해석하다, 오해하다",
+  "short": "잘못 해석하다, 오해하다",
+  "senses": [
+   { "pos": "동사", "ko": "잘못 해석하다, 오해하다" }
+  ],
+  "forms": ["misinterprets", "misinterpreted", "misinterpretation"],
+  "synonyms": ["misread", "misunderstand", "misjudge"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:misinterpret.0", "surface": "misinterprets", "pos": "동사", "sense": "잘못 해석하다, 오해하다" }
+  ]
+ },
+ {
+  "lemma": "mislabel",
+  "skip": null,
+  "word": "mislabel",
+  "pos": ["동사"],
+  "ipa": "ˌmɪsˈleɪbl",
+  "meaning": "라벨을 잘못 붙이다, 잘못 분류하다",
+  "short": "라벨을 잘못 붙이다",
+  "senses": [
+   { "pos": "동사", "ko": "라벨을 잘못 붙이다, 잘못 분류하다" },
+   { "pos": "명사", "ko": "(mislabeling) 잘못된 라벨 지정" }
+  ],
+  "forms": ["mislabels", "mislabeled", "mislabeling"],
+  "synonyms": ["misclassify", "miscategorize"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#20.1", "surface": "mislabeled", "pos": "동사", "sense": "라벨을 잘못 붙이다, 잘못 분류하다" },
+   { "sid": "lesson-d4#20.5", "surface": "mislabeling", "pos": "명사", "sense": "(mislabeling) 잘못된 라벨 지정" },
+   { "sid": "lesson-d4#12.2", "surface": "mislabeling", "pos": "동사", "sense": "라벨을 잘못 붙이다, 잘못 분류하다" }
+  ]
+ },
+ {
+  "lemma": "misleading",
+  "skip": null,
+  "word": "misleading",
+  "pos": ["형용사"],
+  "ipa": "ˌmɪsˈliːdɪŋ",
+  "meaning": "오해를 부르는, 잘못 이끄는",
+  "short": "오해를 부르는",
+  "senses": [
+   { "pos": "형용사", "ko": "오해를 부르는, 잘못 이끄는" },
+   { "pos": "동사", "ko": "(mislead) 오해하게 하다, 잘못 이끌다" }
+  ],
+  "forms": ["mislead", "misleads", "misled"],
+  "synonyms": ["deceptive", "confusing", "inaccurate"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#1.4", "surface": "misleading", "pos": "형용사", "sense": "오해를 부르는, 잘못 이끄는" },
+   { "sid": "lesson-d2#10.4", "surface": "misleads", "pos": "동사", "sense": "(mislead) 오해하게 하다, 잘못 이끌다" }
+  ]
+ },
+ {
+  "lemma": "mismatch",
+  "skip": null,
+  "word": "mismatch",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈmɪsmætʃ",
+  "meaning": "불일치, 어긋남 / (서로) 맞지 않다",
+  "short": "불일치, 어긋남",
+  "senses": [
+   { "pos": "명사", "ko": "불일치, 어긋남" },
+   { "pos": "동사", "ko": "(서로) 맞지 않다" }
+  ],
+  "forms": ["mismatches", "mismatched"],
+  "synonyms": ["discrepancy", "inconsistency", "conflict"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#54.5", "surface": "mismatches", "pos": "명사", "sense": "불일치, 어긋남" },
+   { "sid": "lesson-d3#27.2", "surface": "mismatch", "pos": "명사", "sense": "불일치, 어긋남" },
+   { "sid": "lesson-d3#27.0", "surface": "mismatch", "pos": "명사", "sense": "불일치, 어긋남" }
+  ]
+ },
+ {
+  "lemma": "misnamed",
+  "skip": null,
+  "word": "misnamed",
+  "pos": ["형용사"],
+  "ipa": "ˌmɪsˈneɪmd",
+  "meaning": "이름이 잘못 붙은",
+  "short": "이름이 잘못 붙은",
+  "senses": [
+   { "pos": "형용사", "ko": "이름이 잘못 붙은" }
+  ],
+  "forms": ["misname"],
+  "synonyms": ["mislabeled"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#15.1", "surface": "misnamed", "pos": "형용사", "sense": "이름이 잘못 붙은" }
+  ]
+ },
+ {
+  "lemma": "misplace",
+  "skip": null,
+  "word": "misplace",
+  "pos": ["동사"],
+  "ipa": "ˌmɪsˈpleɪs",
+  "meaning": "① 엉뚱한 곳에 두다, 잘못 배치하다 ② (둔 곳을 잊어) 잃어버리다",
+  "short": "엉뚱한 곳에 두다",
+  "senses": [
+   { "pos": "동사", "ko": "엉뚱한 곳에 두다, 잘못 배치하다" },
+   { "pos": "동사", "ko": "(둔 곳을 잊어) 잃어버리다" }
+  ],
+  "forms": ["misplaces", "misplaced", "misplacing"],
+  "synonyms": ["mislay"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#19.4", "surface": "misplace", "pos": "동사", "sense": "엉뚱한 곳에 두다, 잘못 배치하다" }
+  ]
+ },
+ {
+  "lemma": "misread",
+  "skip": null,
+  "word": "misread",
+  "pos": ["동사"],
+  "ipa": "ˌmɪsˈriːd",
+  "meaning": "잘못 읽다, 잘못 해석하다",
+  "short": "잘못 읽다, 잘못 해석하다",
+  "senses": [
+   { "pos": "동사", "ko": "잘못 읽다, 잘못 해석하다" }
+  ],
+  "forms": ["misreads", "misreading"],
+  "synonyms": ["misinterpret", "misunderstand"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#4.2", "surface": "misreads", "pos": "동사", "sense": "잘못 읽다, 잘못 해석하다" }
+  ]
+ },
+ {
+  "lemma": "misuse",
+  "skip": null,
+  "word": "misuse",
+  "pos": ["명사", "동사"],
+  "ipa": "ˌmɪsˈjuːs",
+  "meaning": "오용(하다), 악용(하다)",
+  "short": "잘못 쓰다, 오용하다",
+  "senses": [
+   { "pos": "동사", "ko": "잘못 쓰다, 오용하다" },
+   { "pos": "명사", "ko": "오용, 악용" }
+  ],
+  "forms": ["misuses", "misused", "misusing"],
+  "synonyms": ["abuse", "misapply"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#37.1", "surface": "misused", "pos": "동사", "sense": "잘못 쓰다, 오용하다" }
+  ]
+ },
+ {
+  "lemma": "mitigation",
+  "skip": null,
+  "word": "mitigation",
+  "pos": ["명사"],
+  "ipa": "ˌmɪtɪˈɡeɪʃn",
+  "meaning": "완화(책) — 위험·피해를 줄이는 조치 (mitigate: 완화하다)",
+  "short": "완화(책)",
+  "senses": [
+   { "pos": "명사", "ko": "완화(책), 위험을 줄이는 조치" }
+  ],
+  "forms": ["mitigate", "mitigates", "mitigated", "mitigations"],
+  "synonyms": ["reduction", "alleviation", "remedy"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "mix",
+  "skip": null,
+  "word": "mix",
+  "pos": ["동사", "명사"],
+  "ipa": "mɪks",
+  "meaning": "① 섞다, 함께 쓰다 ② (mixed) 뒤섞인, 여러 종류가 섞인 ③ 혼합, 조합",
+  "short": "섞다, 뒤섞인",
+  "senses": [
+   { "pos": "동사", "ko": "섞다, 함께 쓰다" },
+   { "pos": "형용사", "ko": "(mixed) 뒤섞인, 여러 종류가 섞인" },
+   { "pos": "명사", "ko": "혼합, 조합" }
+  ],
+  "forms": ["mixes", "mixed", "mixing", "mixture"],
+  "synonyms": ["combine", "blend", "merge"],
+  "domain": "연결·통합",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#17.4", "surface": "mix", "pos": "동사", "sense": "섞다, 함께 쓰다" },
+   { "sid": "mock04#32.1", "surface": "mixed", "pos": "형용사", "sense": "(mixed) 뒤섞인, 여러 종류가 섞인" },
+   { "sid": "lesson-d4#4.0", "surface": "mixed", "pos": "형용사", "sense": "(mixed) 뒤섞인, 여러 종류가 섞인" }
+  ]
+ },
+ {
+  "lemma": "mode",
+  "skip": null,
+  "word": "mode",
+  "pos": ["명사"],
+  "ipa": "moʊd",
+  "meaning": "① 모드, (작동) 방식 (plan mode, strict mode) ② (failure mode) 형태, 유형",
+  "short": "모드, 작동 방식",
+  "senses": [
+   { "pos": "명사", "ko": "모드, (작동) 방식" },
+   { "pos": "명사", "ko": "(failure mode) 형태, 유형" }
+  ],
+  "forms": ["modes"],
+  "synonyms": ["setting", "manner", "state"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#19.0", "surface": "mode", "pos": "명사", "sense": "모드, (작동) 방식" },
+   { "sid": "lesson-d5#3.2", "surface": "mode", "pos": "명사", "sense": "(failure mode) 형태, 유형" },
+   { "sid": "lesson-d4#18.4", "surface": "mode", "pos": "명사", "sense": "모드, (작동) 방식" },
+   { "sid": "sample01#14.7", "surface": "mode", "pos": "명사", "sense": "모드, (작동) 방식" }
+  ]
+ },
+ {
+  "lemma": "model",
+  "skip": null,
+  "word": "model",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈmɑːdl",
+  "meaning": "① (AI) 모델 ② 모형, 구조 (data model: 데이터 모델) ③ (사업·가격) 방식 (pricing model) ④ 모델링하다, 본뜨다",
+  "short": "(인공지능) 모델",
+  "senses": [
+   { "pos": "명사", "ko": "(AI) 모델" },
+   { "pos": "명사", "ko": "모형, 구조(데이터 모델 등)" },
+   { "pos": "명사", "ko": "(사업·가격) 방식, 모델" },
+   { "pos": "동사", "ko": "모델링하다, 본뜨다" }
+  ],
+  "forms": ["models", "modeled", "modeling"],
+  "synonyms": ["pattern", "framework", "scheme"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#2.1", "surface": "model", "pos": "명사", "sense": "(AI) 모델" },
+   { "sid": "lesson-d3#21.0", "surface": "models", "pos": "명사", "sense": "모형, 구조(데이터 모델 등)" },
+   { "sid": "lesson-d1#9.1", "surface": "models", "pos": "명사", "sense": "(사업·가격) 방식, 모델" },
+   { "sid": "sample01#19.1", "surface": "model", "pos": "명사", "sense": "(AI) 모델" }
+  ]
+ },
+ {
+  "lemma": "moderation",
+  "skip": null,
+  "word": "moderation",
+  "pos": ["명사"],
+  "ipa": "ˌmɑːdəˈreɪʃn",
+  "meaning": "① (콘텐츠) 검수, 모더레이션 ② 절제, 적당함",
+  "short": "(콘텐츠) 검수",
+  "senses": [
+   { "pos": "명사", "ko": "(콘텐츠) 검수, 모더레이션" },
+   { "pos": "명사", "ko": "절제, 적당함" }
+  ],
+  "forms": ["moderate", "moderator"],
+  "synonyms": ["review", "screening"],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#50.6", "surface": "moderation", "pos": "명사", "sense": "(콘텐츠) 검수, 모더레이션" }
+  ]
+ },
+ {
+  "lemma": "modification",
+  "skip": null,
+  "word": "modification",
+  "pos": ["명사"],
+  "ipa": "ˌmɑːdɪfɪˈkeɪʃn",
+  "meaning": "수정, 변경 (modification time: 수정 시각)",
+  "short": "수정, 변경",
+  "senses": [
+   { "pos": "명사", "ko": "수정, 변경" }
+  ],
+  "forms": ["modifications"],
+  "synonyms": ["change", "alteration", "edit"],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#31.5", "surface": "modification", "pos": "명사", "sense": "수정, 변경" }
+  ]
+ },
+ {
+  "lemma": "modify",
+  "skip": null,
+  "word": "modify",
+  "pos": ["동사"],
+  "ipa": "ˈmɑːdɪfaɪ",
+  "meaning": "수정하다, 변경하다",
+  "short": "수정하다, 변경하다",
+  "senses": [
+   { "pos": "동사", "ko": "수정하다, 변경하다" }
+  ],
+  "forms": ["modifies", "modified", "modifying", "modification"],
+  "synonyms": ["change", "alter", "edit"],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#12.0", "surface": "modify", "pos": "동사", "sense": "수정하다, 변경하다" },
+   { "sid": "lesson-d2#28.6", "surface": "modified", "pos": "동사", "sense": "수정하다, 변경하다" },
+   { "sid": "lesson-d2#30.5", "surface": "modified", "pos": "동사", "sense": "수정하다, 변경하다" }
+  ]
+ },
+ {
+  "lemma": "module",
+  "skip": null,
+  "word": "module",
+  "pos": ["명사"],
+  "ipa": "ˈmɑːdʒuːl",
+  "meaning": "모듈 — 코드를 기능 단위로 나눈 묶음",
+  "short": "모듈(코드 기능 단위)",
+  "senses": [
+   { "pos": "명사", "ko": "모듈(기능 단위로 나눈 코드 묶음)" }
+  ],
+  "forms": ["modules", "modular"],
+  "synonyms": ["component", "unit", "package"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#26.0", "surface": "module", "pos": "명사", "sense": "모듈(기능 단위로 나눈 코드 묶음)" },
+   { "sid": "lesson-d4#37.0", "surface": "modules", "pos": "명사", "sense": "모듈(기능 단위로 나눈 코드 묶음)" },
+   { "sid": "mock04#38.1", "surface": "module", "pos": "명사", "sense": "모듈(기능 단위로 나눈 코드 묶음)" },
+   { "sid": "lesson-d5#21.1", "surface": "module", "pos": "명사", "sense": "모듈(기능 단위로 나눈 코드 묶음)" }
+  ]
+ },
+ {
+  "lemma": "moment",
+  "skip": null,
+  "word": "moment",
+  "pos": ["명사"],
+  "ipa": "ˈmoʊmənt",
+  "meaning": "① 순간, 시점 (at the moment ~: ~하는 순간에) ② 잠깐, 잠시",
+  "short": "순간, 시점",
+  "senses": [
+   { "pos": "명사", "ko": "순간, 시점" },
+   { "pos": "명사", "ko": "잠깐, 잠시" }
+  ],
+  "forms": ["moments", "momentary"],
+  "synonyms": ["instant", "point", "time"],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#5.3", "surface": "moment", "pos": "명사", "sense": "순간, 시점" },
+   { "sid": "mock04#2.2", "surface": "moment", "pos": "명사", "sense": "순간, 시점" }
+  ]
+ },
+ {
+  "lemma": "monday",
+  "skip": "proper"
+ },
+ {
+  "lemma": "monolithic",
+  "skip": null,
+  "word": "monolithic",
+  "pos": ["형용사"],
+  "ipa": "ˌmɑːnəˈlɪθɪk",
+  "meaning": "(나뉘지 않은) 한 덩어리의, 거대한 단일 구조의",
+  "short": "한 덩어리의, 단일 구조의",
+  "senses": [
+   { "pos": "형용사", "ko": "(나뉘지 않은) 한 덩어리의, 단일 구조의" },
+   { "pos": "명사", "ko": "(monolith) 모놀리스(하나로 묶인 거대한 단일 시스템)" }
+  ],
+  "forms": ["monolith", "monoliths"],
+  "synonyms": ["unified", "massive"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#21.0", "surface": "monolith", "pos": "명사", "sense": "(monolith) 모놀리스(하나로 묶인 거대한 단일 시스템)" },
+   { "sid": "vocab:monolithic.0", "surface": "monolithic", "pos": "형용사", "sense": "(나뉘지 않은) 한 덩어리의, 단일 구조의" },
+   { "sid": "mock04#37.1", "surface": "monolith", "pos": "명사", "sense": "(monolith) 모놀리스(하나로 묶인 거대한 단일 시스템)" }
+  ]
+ },
+ {
+  "lemma": "monorepo",
+  "skip": null,
+  "word": "monorepo",
+  "pos": ["명사"],
+  "ipa": "ˈmɑːnoʊriːpoʊ",
+  "meaning": "모노레포 — 여러 프로젝트를 한 저장소에 모아 관리하는 방식(저장소)",
+  "short": "모노레포(통합 단일 저장소)",
+  "senses": [
+   { "pos": "명사", "ko": "모노레포(여러 프로젝트를 담은 단일 저장소)" }
+  ],
+  "forms": ["monorepos"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#19.1", "surface": "monorepo", "pos": "명사", "sense": "모노레포(여러 프로젝트를 담은 단일 저장소)" },
+   { "sid": "lesson-d1#35.0", "surface": "monorepo", "pos": "명사", "sense": "모노레포(여러 프로젝트를 담은 단일 저장소)" },
+   { "sid": "lesson-d5#27.0", "surface": "monorepo", "pos": "명사", "sense": "모노레포(여러 프로젝트를 담은 단일 저장소)" },
+   { "sid": "mock04#42.1", "surface": "monorepo", "pos": "명사", "sense": "모노레포(여러 프로젝트를 담은 단일 저장소)" }
+  ]
+ },
+ {
+  "lemma": "month",
+  "skip": null,
+  "word": "month",
+  "pos": ["명사"],
+  "ipa": "mʌnθ",
+  "meaning": "(달력의) 달, 월, 개월",
+  "short": "달, 개월",
+  "senses": [
+   { "pos": "명사", "ko": "달, 개월" }
+  ],
+  "forms": ["months", "monthly"],
+  "synonyms": [],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#34.3", "surface": "month", "pos": "명사", "sense": "달, 개월" },
+   { "sid": "lesson-d4#25.0", "surface": "months", "pos": "명사", "sense": "달, 개월" },
+   { "sid": "lesson-d5#39.2", "surface": "months", "pos": "명사", "sense": "달, 개월" }
+  ]
+ },
+ {
+  "lemma": "morning",
+  "skip": null,
+  "word": "morning",
+  "pos": ["명사"],
+  "ipa": "ˈmɔːrnɪŋ",
+  "meaning": "아침, 오전",
+  "short": "아침, 오전",
+  "senses": [
+   { "pos": "명사", "ko": "아침, 오전" }
+  ],
+  "forms": ["mornings"],
+  "synonyms": [],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#31.3", "surface": "morning", "pos": "명사", "sense": "아침, 오전" },
+   { "sid": "lesson-d1#39.1", "surface": "morning", "pos": "명사", "sense": "아침, 오전" }
+  ]
+ },
+ {
+  "lemma": "move",
+  "skip": null,
+  "word": "move",
+  "pos": ["동사", "명사"],
+  "ipa": "muːv",
+  "meaning": "① 옮기다, 이동시키다 ② (다른 방식·환경으로) 전환하다 ③ 조치, 수",
+  "short": "옮기다, 전환하다",
+  "senses": [
+   { "pos": "동사", "ko": "옮기다, 이동시키다" },
+   { "pos": "동사", "ko": "(다른 방식·환경으로) 전환하다" },
+   { "pos": "명사", "ko": "조치, 수" }
+  ],
+  "forms": ["moves", "moved", "moving"],
+  "synonyms": ["transfer", "shift", "relocate"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#4.0", "surface": "moves", "pos": "동사", "sense": "옮기다, 이동시키다" },
+   { "sid": "lesson-d4#31.0", "surface": "move", "pos": "동사", "sense": "(다른 방식·환경으로) 전환하다" },
+   { "sid": "mock04#39.2", "surface": "moved", "pos": "동사", "sense": "옮기다, 이동시키다" },
+   { "sid": "lesson-d1#19.4", "surface": "Move", "pos": "동사", "sense": "(다른 방식·환경으로) 전환하다" }
+  ]
+ },
+ {
+  "lemma": "multi",
+  "skip": "fragment"
+ },
+ {
+  "lemma": "multi-agent",
+  "skip": null,
+  "word": "multi-agent",
+  "pos": ["형용사"],
+  "ipa": "ˌmʌlti ˈeɪdʒənt",
+  "meaning": "멀티 에이전트의 — 여러 에이전트가 역할을 나눠 협업하는",
+  "short": "멀티 에이전트의",
+  "senses": [
+   { "pos": "형용사", "ko": "멀티 에이전트의(여러 에이전트가 협업하는)" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#16.0", "surface": "multi-agent", "pos": "형용사", "sense": "멀티 에이전트의(여러 에이전트가 협업하는)" },
+   { "sid": "sample01#10.0", "surface": "multi-agent", "pos": "형용사", "sense": "멀티 에이전트의(여러 에이전트가 협업하는)" },
+   { "sid": "mock04#22.0", "surface": "Multi-Agent", "pos": "형용사", "sense": "멀티 에이전트의(여러 에이전트가 협업하는)" }
+  ]
+ },
+ {
+  "lemma": "multi-hour",
+  "skip": null,
+  "word": "multi-hour",
+  "pos": ["형용사"],
+  "ipa": "ˌmʌlti ˈaʊər",
+  "meaning": "몇 시간에 걸친",
+  "short": "몇 시간에 걸친",
+  "senses": [
+   { "pos": "형용사", "ko": "몇 시간에 걸친" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#25.0", "surface": "multi-hour", "pos": "형용사", "sense": "몇 시간에 걸친" },
+   { "sid": "mock04#20.1", "surface": "multi-hour", "pos": "형용사", "sense": "몇 시간에 걸친" }
+  ]
+ },
+ {
+  "lemma": "multi-step",
+  "skip": null,
+  "word": "multi-step",
+  "pos": ["형용사"],
+  "ipa": "ˌmʌlti ˈstep",
+  "meaning": "여러 단계로 된, 다단계의",
+  "short": "여러 단계로 된, 다단계의",
+  "senses": [
+   { "pos": "형용사", "ko": "여러 단계로 된, 다단계의" }
+  ],
+  "forms": [],
+  "synonyms": ["multistage"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#7.2", "surface": "multi-step", "pos": "형용사", "sense": "여러 단계로 된, 다단계의" },
+   { "sid": "sample01#7.0", "surface": "multi-step", "pos": "형용사", "sense": "여러 단계로 된, 다단계의" }
+  ]
+ },
+ {
+  "lemma": "multi-tenant",
+  "skip": null,
+  "word": "multi-tenant",
+  "pos": ["형용사"],
+  "ipa": "ˌmʌlti ˈtenənt",
+  "meaning": "멀티테넌트의 — 한 시스템을 여러 고객(조직)이 나눠 쓰는",
+  "short": "여러 고객이 함께 쓰는",
+  "senses": [
+   { "pos": "형용사", "ko": "멀티테넌트의(여러 고객이 한 시스템을 나눠 쓰는)" }
+  ],
+  "forms": [],
+  "synonyms": ["shared"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "multi-turn",
+  "skip": null,
+  "word": "multi-turn",
+  "pos": ["형용사"],
+  "ipa": "ˌmʌlti ˈtɜːrn",
+  "meaning": "여러 턴에 걸친 (대화)",
+  "short": "여러 턴에 걸친",
+  "senses": [
+   { "pos": "형용사", "ko": "여러 턴에 걸친" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#38.6", "surface": "multi-turn", "pos": "형용사", "sense": "여러 턴에 걸친" }
+  ]
+ },
+ {
+  "lemma": "multiline",
+  "skip": null,
+  "word": "multiline",
+  "pos": ["형용사"],
+  "ipa": "ˌmʌltiˈlaɪn",
+  "meaning": "여러 줄에 걸친 (multiline 옵션: 줄바꿈을 넘어 패턴을 찾는 검색 설정)",
+  "short": "여러 줄에 걸친",
+  "senses": [
+   { "pos": "형용사", "ko": "여러 줄에 걸친" }
+  ],
+  "forms": [],
+  "synonyms": ["multi-line"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#29.6", "surface": "multiline", "pos": "형용사", "sense": "여러 줄에 걸친" }
+  ]
+ },
+ {
+  "lemma": "multiplier",
+  "skip": null,
+  "word": "multiplier",
+  "pos": ["명사"],
+  "ipa": "ˈmʌltɪplaɪər",
+  "meaning": "배수, 승수 — 곱해지는 값 (multiply: 곱하다, 몇 배로 늘리다)",
+  "short": "배수, 승수",
+  "senses": [
+   { "pos": "명사", "ko": "배수, 승수(곱하는 값)" }
+  ],
+  "forms": ["multipliers", "multiply"],
+  "synonyms": ["factor", "coefficient"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "name",
+  "skip": null,
+  "word": "name",
+  "pos": ["명사", "동사"],
+  "ipa": "neɪm",
+  "meaning": "① 이름, 명칭 ② 이름을 붙이다, 명명하다 ③ (named) ~라는 이름의 ④ (naming) 이름 짓기, 명명 방식",
+  "short": "이름, 명칭",
+  "senses": [
+   { "pos": "명사", "ko": "이름, 명칭" },
+   { "pos": "동사", "ko": "이름을 붙이다, 명명하다" },
+   { "pos": "형용사", "ko": "(named) ~라는 이름의" },
+   { "pos": "명사", "ko": "(naming) 이름 짓기, 명명 방식" }
+  ],
+  "forms": ["names", "named", "naming"],
+  "synonyms": ["title", "label", "call"],
+  "domain": "데이터·정보·문서",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#10.1", "surface": "name", "pos": "명사", "sense": "이름, 명칭" },
+   { "sid": "lesson-d2#2.0", "surface": "names", "pos": "동사", "sense": "이름을 붙이다, 명명하다" },
+   { "sid": "lesson-d1#25.0", "surface": "named", "pos": "형용사", "sense": "(named) ~라는 이름의" },
+   { "sid": "lesson-d5#12.0", "surface": "name", "pos": "명사", "sense": "이름, 명칭" }
+  ]
+ },
+ {
+  "lemma": "narrative",
+  "skip": null,
+  "word": "narrative",
+  "pos": ["명사", "형용사"],
+  "ipa": "ˈnærətɪv",
+  "meaning": "서술(형) — 줄글로 풀어 쓴 설명",
+  "short": "서술, 줄글 설명",
+  "senses": [
+   { "pos": "명사", "ko": "서술, 줄글 설명" },
+   { "pos": "형용사", "ko": "서술형의, 줄글 형식의" }
+  ],
+  "forms": ["narratives", "narrate"],
+  "synonyms": ["account", "story", "description"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#34.1", "surface": "narrative", "pos": "명사", "sense": "서술, 줄글 설명" },
+   { "sid": "vocab:narrative.0", "surface": "narrative", "pos": "형용사", "sense": "서술형의, 줄글 형식의" },
+   { "sid": "lesson-d5#41.4", "surface": "narrative", "pos": "명사", "sense": "서술, 줄글 설명" }
+  ]
+ },
+ {
+  "lemma": "narrow",
+  "skip": null,
+  "word": "narrow",
+  "pos": ["형용사", "동사"],
+  "ipa": "ˈnæroʊ",
+  "meaning": "① 좁은, 범위가 한정된 ② (범위를) 좁히다, 줄이다",
+  "short": "좁은, 범위가 한정된",
+  "senses": [
+   { "pos": "형용사", "ko": "좁은, 범위가 한정된" },
+   { "pos": "동사", "ko": "(범위를) 좁히다, 줄이다" }
+  ],
+  "forms": ["narrows", "narrowed", "narrowing", "narrowly"],
+  "synonyms": ["limited", "restricted", "specific"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#9.0", "surface": "narrow", "pos": "형용사", "sense": "좁은, 범위가 한정된" },
+   { "sid": "lesson-d3#31.2", "surface": "narrow", "pos": "형용사", "sense": "좁은, 범위가 한정된" }
+  ]
+ },
+ {
+  "lemma": "natural",
+  "skip": null,
+  "word": "natural",
+  "pos": ["형용사"],
+  "ipa": "ˈnætʃrəl",
+  "meaning": "① 자연스러운, 당연한 ② 자연의, 천연의 (natural language: 자연어 — 사람이 쓰는 일반 언어)",
+  "short": "자연스러운, 자연의",
+  "senses": [
+   { "pos": "형용사", "ko": "자연스러운, 당연한" },
+   { "pos": "형용사", "ko": "자연의, 천연의" }
+  ],
+  "forms": ["naturally"],
+  "synonyms": ["normal", "native"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": []
+ }
+]

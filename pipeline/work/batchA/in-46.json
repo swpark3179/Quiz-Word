@@ -1,0 +1,1514 @@
+[
+ {
+  "lemma": "upper bound",
+  "kind": "vocab-core",
+  "surfaces": [
+   "upper bound"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "upper-bound",
+   "word": "upper bound",
+   "pos": "명사구",
+   "ipa": "ˈʌpər baʊnd",
+   "meaning": "상한 — 넘을 수 없는 최대 한도"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#7.4",
+    "en": "Retry get_customer automatically in a tight loop until the database answers, with no upper bound on attempts or backoff delay."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:upper-bound.0",
+    "en": "Retry get_customer automatically in a tight loop until the database answers, with no upper bound on attempts or backoff delay.",
+    "ko": "데이터베이스가 응답할 때까지 시도 횟수 상한이나 백오프 지연 없이 `get_customer` 를 촘촘한 루프로 자동 재시도한다."
+   }
+  ]
+ },
+ {
+  "lemma": "upstream",
+  "kind": "vocab-core",
+  "surfaces": [
+   "upstream"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "upstream",
+   "word": "upstream",
+   "pos": "형용사·부사",
+   "ipa": "ˌʌpˈstriːm",
+   "meaning": "(처리 흐름의) 앞 단계의, 상위의"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#5.7",
+    "en": "Add a rule to the subagent's system prompt telling it to defer to decisions the user made upstream"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:upstream.0",
+    "en": "Modify upstream agents to return structured data (key facts, citations, relevance scores) instead of verbose content and reasoning",
+    "ko": "상류(앞 단계) 에이전트가 장황한 콘텐츠·추론 대신 구조화된 데이터(핵심 사실·인용·관련성 점수)를 반환하도록 고친다."
+   }
+  ]
+ },
+ {
+  "lemma": "urgency",
+  "kind": "vocab-core",
+  "surfaces": [
+   "urgency"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "urgency",
+   "word": "urgency",
+   "pos": "명사",
+   "ipa": "ˈɜːrdʒənsi",
+   "meaning": "긴급함 (urgent: 긴급한)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#9.1",
+    "en": "A patient messages the assistant in a clearly irritated tone about needing to reschedule a routine appointment with no clinical urgency."
+   }
+  ]
+ },
+ {
+  "lemma": "uri",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "uri",
+   "word": "URI",
+   "pos": "약어",
+   "ipa": "ˌjuː.ɑːrˈaɪ",
+   "meaning": "URI — 자원을 가리키는 식별자·주소 (URL 을 포함하는 더 넓은 개념)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "usage",
+  "kind": "vocab-core",
+  "surfaces": [
+   "usage"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "usage",
+   "word": "usage",
+   "pos": "명사",
+   "ipa": "ˈjuːsɪdʒ",
+   "meaning": "① 사용법, 쓰는 방식 ② 사용량 (토큰 usage 등)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#31.1",
+    "en": "To build this understanding efficiently while keeping context usage low, what is the best incremental strategy?"
+   },
+   {
+    "sid": "lesson-d3#18.0",
+    "en": "Midway through planning a multi-phase migration, Claude has to find every usage pattern of the old library across hundreds of files before it can propose an approach."
+   },
+   {
+    "sid": "mock04#15.4",
+    "en": "Document the correct usage in the project CLAUDE.md so it is always loaded into the model's context at startup"
+   },
+   {
+    "sid": "lesson-d3#18.5",
+    "en": "Skip the sweep and start converting files directly, so the usage patterns show up as Claude works through the codebase"
+   },
+   {
+    "sid": "lesson-d3#20.2",
+    "en": "The team used the Explore subagent to catalog usage patterns across the codebase before starting the conversion work itself"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:usage.0",
+    "en": "Document the correct usage in the project CLAUDE.md so it is always loaded into the model's context at startup",
+    "ko": "프로젝트 CLAUDE.md에 올바른 사용법을 문서화해, 시작 시 항상 모델의 컨텍스트에 로드되게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "use",
+  "kind": "new",
+  "surfaces": [
+   "used",
+   "use",
+   "using",
+   "uses"
+  ],
+  "freq": 119,
+  "sentences": [
+   {
+    "sid": "lesson-d1#2.0",
+    "en": "After Claude returns stop_reason \"tool_use\", which history update lets it use the result on the next request?"
+   },
+   {
+    "sid": "lesson-d2#11.1",
+    "en": "An agent calls it using a token scoped only to `read`."
+   },
+   {
+    "sid": "lesson-d3#10.0",
+    "en": "A project's `.claude/skills/review/SKILL.md` is checked into the repo for team-wide use."
+   },
+   {
+    "sid": "lesson-d4#17.2",
+    "en": "Which `tool_choice` configuration should be used to guarantee the `parse_resume` call, and what does Anthropic documentation state about natural-language commentary before a forced tool call?"
+   },
+   {
+    "sid": "lesson-d5#30.1",
+    "en": "Before using these scores to decide which fields skip human review, what step should the architect take to make the scores trustworthy for routing decisions?"
+   },
+   {
+    "sid": "mock04#29.2",
+    "en": "Intermittently the synthesis subagent uses that phrase mid-analysis, halting the workflow."
+   },
+   {
+    "sid": "sample01#13.0",
+    "en": "A team wants project-specific commands available to all engineers using Claude Code on the repo, without adding entries to each engineer's user settings."
+   },
+   {
+    "sid": "mock04-kor#46.4",
+    "en": "프롬프트에 \"always use the exact word CRITICAL for severe issues\"(심각한 문제에는 항상 CRITICAL이라는 단어를 정확히 쓸 것)라고 지시하고, 그 표현에 의존해 빌드를 판정한다."
+   }
+  ]
+ },
+ {
+  "lemma": "useful",
+  "kind": "new",
+  "surfaces": [
+   "useful"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#30.1",
+    "en": "Which exploration strategy gives the most useful context for the lowest cost?"
+   }
+  ]
+ },
+ {
+  "lemma": "user",
+  "kind": "new",
+  "surfaces": [
+   "users",
+   "user"
+  ],
+  "freq": 61,
+  "sentences": [
+   {
+    "sid": "lesson-d1#40.0",
+    "en": "An application serves many concurrent users, each with their own long-running investigation conversation against the same repository directory."
+   },
+   {
+    "sid": "lesson-d2#2.0",
+    "en": "A team names two tools `process_data` and `process_information`, and both share the description \"Processes data provided by the user.\""
+   },
+   {
+    "sid": "lesson-d3#11.1",
+    "en": "The team wants that exploratory back-and-forth kept separate from the main conversation, with only the final recommendation surfacing back to the user."
+   },
+   {
+    "sid": "sample01#13.0",
+    "en": "A team wants project-specific commands available to all engineers using Claude Code on the repo, without adding entries to each engineer's user settings."
+   },
+   {
+    "sid": "lesson-d4#17.3",
+    "en": "`tool_choice: {\"type\": \"auto\"}`, combined with an explicit user-message instruction to use the `parse_resume` tool and share any relevant reasoning as text"
+   },
+   {
+    "sid": "lesson-d5#1.4",
+    "en": "Send the complete conversation history with every request: all user messages, assistant replies and tool results"
+   },
+   {
+    "sid": "mock04#11.7",
+    "en": "Convert the conventions into a skill under .claude/skills/ so they activate on demand for all users when relevant"
+   },
+   {
+    "sid": "selfcheck-d1-kor#4.0",
+    "en": "Claude가 한 응답에서 회의실 조회와 참석자 일정 조회를 동시에 요청했다. 개발자는 결과가 도착하는 대로 각각 별도 user 메시지로 보냈고, 이후 Claude가 병렬 호출을 거의 하지 않게 됐다. 올바른 반환 방식은?"
+   }
+  ]
+ },
+ {
+  "lemma": "usually",
+  "kind": "new",
+  "surfaces": [
+   "usually"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d2#30.3",
+    "en": "Sort the files by size and Read the largest first, since core logic usually lives there"
+   },
+   {
+    "sid": "lesson-d5#12.3",
+    "en": "When a lookup returns several matches, continue with the record that has the most recent activity or the most complete profile, because that is usually the active customer."
+   },
+   {
+    "sid": "lesson-d2#30.5",
+    "en": "Glob for the most recently modified files and Read those, since recent changes usually touch the active flow"
+   }
+  ]
+ },
+ {
+  "lemma": "utility",
+  "kind": "new",
+  "surfaces": [
+   "utility"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#25.0",
+    "en": "A team lead wants Claude Code to implement a CSV-to-JSON conversion utility whose column-to-field mapping rules are difficult to describe precisely in words, since the exact handling of empty cells, quoted commas, and duplicate headers matters."
+   }
+  ]
+ },
+ {
+  "lemma": "vague",
+  "kind": "vocab-core",
+  "surfaces": [
+   "vague",
+   "vaguer"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "vague",
+   "word": "vague",
+   "pos": "형용사",
+   "ipa": "veɪɡ",
+   "meaning": "모호한, 막연한"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#37.0",
+    "en": "An architect is asked to design an agent that investigates why a production incident occurred, given only a vague alert message and no prior knowledge of which service is at fault."
+   },
+   {
+    "sid": "lesson-d2#2.6",
+    "en": "The user's request phrasing was too vague to reliably distinguish between the tools, so the fix belongs in the user's prompt rather than the tool definitions."
+   },
+   {
+    "sid": "lesson-d4#13.4",
+    "en": "Add one example where a vague amount is extracted as written and one where the dose is absent and the output says it is not specified, and explicitly allow the model to admit uncertainty"
+   },
+   {
+    "sid": "lesson-d5#2.5",
+    "en": "Each summarization pass traded precision for brevity, so the exact amount and deadline were condensed into vague wording"
+   },
+   {
+    "sid": "lesson-d5#2.6",
+    "en": "The model hallucinated a vaguer version of the facts because the context window was nearly full"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:vague.0",
+    "en": "These details were stated 20+ turns ago and got condensed into vague summaries like \"discussed promotional pricing.\"",
+    "ko": "이 세부 내용은 20턴도 더 전에 나왔고, \"프로모션 가격 논의\" 같은 모호한 요약으로 압축되었다."
+   }
+  ]
+ },
+ {
+  "lemma": "valid",
+  "kind": "vocab-core",
+  "surfaces": [
+   "valid",
+   "invalid"
+  ],
+  "freq": 19,
+  "vocab": {
+   "id": "valid",
+   "word": "valid",
+   "pos": "형용사",
+   "ipa": "ˈvælɪd",
+   "meaning": "① 유효한, 형식에 맞는 (valid JSON) — invalid: 유효하지 않은 ② 타당한, 근거 있는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#3.0",
+    "en": "A teammate wants to cut a nested-input tool's description down to one line and add three schema-valid `input_examples` instead, since \"examples show Claude more than prose does.\""
+   },
+   {
+    "sid": "lesson-d3#30.2",
+    "en": "The team confirms the API key secret is valid and the prompt text is correct."
+   },
+   {
+    "sid": "lesson-d4#22.2",
+    "en": "Both values are individually valid against the schema."
+   },
+   {
+    "sid": "mock04#20.2",
+    "en": "The history is full of superseded intermediate diffs, but the current task and goal are unchanged and the latest file states are still valid."
+   },
+   {
+    "sid": "sample01#15.1",
+    "en": "The system prompt says 'Always respond with valid JSON'."
+   },
+   {
+    "sid": "lesson-d1#24.6",
+    "en": "Add a PostToolUse hook on `process_refund` that verifies the flag again after the refund has been initiated, so it can reverse the transaction if the flag is invalid."
+   },
+   {
+    "sid": "mock04-kor#53.2",
+    "en": "시스템 프롬프트에 엄격한 한 줄(\"Return only valid JSON, no markdown, no commentary\")을 추가하고, 결정적인 형식을 위해 temperature를 0으로 설정한다."
+   },
+   {
+    "sid": "lesson-d4#29.1",
+    "en": "Which identifier is valid for this purpose?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:valid.0",
+    "en": "The system prompt says 'Always respond with valid JSON'.",
+    "ko": "시스템 프롬프트에는 \"항상 유효한 JSON으로 응답하라\" 고 되어 있다."
+   },
+   {
+    "vid": "vocab:valid.1",
+    "en": "Both the `settings.json` deny rules and the `PreToolUse` hook are valid architectural approaches...",
+    "ko": "`settings.json` deny 규칙과 `PreToolUse` 훅 모두 유효한(타당한) 아키텍처적 접근이다..."
+   }
+  ]
+ },
+ {
+  "lemma": "validation",
+  "kind": "vocab-core",
+  "surfaces": [
+   "validation",
+   "validation-retry",
+   "validate",
+   "validated"
+  ],
+  "freq": 33,
+  "vocab": {
+   "id": "validation",
+   "word": "validation",
+   "pos": "명사",
+   "ipa": "ˌvælɪˈdeɪʃn",
+   "meaning": "검증 — 값·형식이 규칙에 맞는지 확인하는 것"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#33.0",
+    "en": "An agent's system prompt says: \"First extract the fields, then validate them, then format the report.\""
+   },
+   {
+    "sid": "lesson-d3#13.1",
+    "en": "Most of it is OpenAPI and validation conventions that only matter for the API handlers under src/api/."
+   },
+   {
+    "sid": "lesson-d4#19.1",
+    "en": "The extractor runs with strict: true and a forced tool_choice, and every record passed schema validation."
+   },
+   {
+    "sid": "lesson-d5#33.1",
+    "en": "During prompt design, which approach best supports later calibration of these scores against a labeled validation set?"
+   },
+   {
+    "sid": "mock04#17.1",
+    "en": "Asking Claude to \"make the input validation more robust and idiomatic\" yields inconsistent output across runs: sometimes it adds zod, sometimes hand-written checks, sometimes nothing meaningful."
+   },
+   {
+    "sid": "lesson-d2#3.2",
+    "en": "Nothing: examples are validated against the schema, so they carry more reliable information than a written description"
+   },
+   {
+    "sid": "sample01#5.4",
+    "en": "More detailed system prompt with payment validation instructions"
+   },
+   {
+    "sid": "mock04-kor#17.1",
+    "en": "Claude에게 \"make the input validation more robust and idiomatic\"(입력 검증을 더 견고하고 관용적으로 만들어 줘)이라고 요청하면 실행할 때마다 결과가 들쭉날쭉합니다. 어떤 때는 `zod` 를 추가하고, 어떤 때는 손으로 쓴 검사 코드를 넣고, 어떤 때는 의미 있는 변화가 거의 없습니다. 팀은 검증 스타일이 일관되게 나오기를 원합니다. 가장 효과적인 개선 방법은 무엇일까요?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:validation.0",
+    "en": "Asking Claude to \"make the input validation more robust and idiomatic\" yields inconsistent output across runs...",
+    "ko": "Claude에게 \"입력 검증을 더 견고하고 관용적으로 만들어 줘\"라고 요청하면 실행할 때마다 결과가 들쭉날쭉하다..."
+   }
+  ]
+ },
+ {
+  "lemma": "value",
+  "kind": "vocab-core",
+  "surfaces": [
+   "values",
+   "value",
+   "valuable"
+  ],
+  "freq": 33,
+  "vocab": {
+   "id": "value",
+   "word": "value",
+   "pos": "명사",
+   "ipa": "ˈvæljuː",
+   "meaning": "① 값, 수치 ② 가치"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#19.1",
+    "en": "The enrichment tools depend on fields that only extract_metadata produces, and in early tests the model sometimes calls an enrichment tool first with guessed values."
+   },
+   {
+    "sid": "lesson-d4#13.2",
+    "en": "What change to the prompt best stops these made-up values?"
+   },
+   {
+    "sid": "lesson-d5#4.2",
+    "en": "Which design keeps those values exact on every turn?"
+   },
+   {
+    "sid": "mock04#55.2",
+    "en": "Downstream systems then treat the fabricated values as real."
+   },
+   {
+    "sid": "lesson-d1#25.5",
+    "en": "The hook fires on every single tool call by default unless a timeout value is explicitly configured. Adding a timeout would stop it from matching `issue_refund_note`."
+   },
+   {
+    "sid": "lesson-d3#24.4",
+    "en": "Describe to Claude, in plain prose, that records with null values are being dropped, and ask it to handle nulls properly in the transformation function"
+   },
+   {
+    "sid": "lesson-d4#22.2",
+    "en": "Both values are individually valid against the schema."
+   },
+   {
+    "sid": "mock04#56.1",
+    "en": "The extraction schema uses an enum with six known values for document_type."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:value.0",
+    "en": "...it quotes the wrong refund amount and an incorrect order date, even though those values appeared earlier.",
+    "ko": "그 값들이 앞에서 분명히 나왔는데도, 에이전트가 환불 금액과 주문 날짜를 틀리게 말한다."
+   }
+  ]
+ },
+ {
+  "lemma": "vanish",
+  "kind": "vocab-core",
+  "surfaces": [
+   "vanish"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "vanish",
+   "word": "vanish",
+   "pos": "동사",
+   "ipa": "ˈvænɪʃ",
+   "meaning": "사라지다, 자취를 감추다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#36.0",
+    "en": "Customers report that some paid orders vanish without a trace, and nobody knows which part of the system drops them."
+   }
+  ]
+ },
+ {
+  "lemma": "variable",
+  "kind": "vocab-core",
+  "surfaces": [
+   "variables",
+   "variable"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "variable",
+   "word": "variable",
+   "pos": "명사·형용사",
+   "ipa": "ˈveriəbl",
+   "meaning": "① 변수 (environment variable: 환경 변수) ② 변하기 쉬운, 가변적인"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#22.1",
+    "en": "Hook A loads the verification record into a shared variable, and Hook B reads that variable and denies the call if it is empty."
+   },
+   {
+    "sid": "lesson-d2#20.4",
+    "en": "Add the server with --scope project and write the header as \"Bearer ${GITHUB_TOKEN:-YOUR_REAL_TOKEN}\", so the server still works for anyone who hasn't set the variable"
+   },
+   {
+    "sid": "mock04#5.5",
+    "en": "Store the confirmed customer record in a global variable that the SDK automatically injects into every spawned subagent's context at startup."
+   },
+   {
+    "sid": "sample01#13.5",
+    "en": "Configure commands via environment variables in the CI pipeline"
+   },
+   {
+    "sid": "lesson-d1#22.7",
+    "en": "Hook B fails closed, and it should allow the refund when the shared variable is empty"
+   },
+   {
+    "sid": "lesson-d2#21.3",
+    "en": "Add the server with project scope in .mcp.json, and set the header to `Authorization: Bearer ${GITHUB_TOKEN}`, with each teammate defining that variable in their shell environment"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:variable.0",
+    "en": "Configure commands via environment variables in the CI pipeline",
+    "ko": "CI 파이프라인의 환경 변수로 커맨드를 설정한다"
+   },
+   {
+    "vid": "vocab:variable.1",
+    "en": "Store the confirmed customer record in a global variable that the SDK automatically injects...",
+    "ko": "확인된 고객 레코드를 전역 변수에 저장해, SDK가 자동으로 주입하게 한다..."
+   }
+  ]
+ },
+ {
+  "lemma": "variant",
+  "kind": "vocab-core",
+  "surfaces": [
+   "variant",
+   "variants"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "variant",
+   "word": "variant",
+   "pos": "명사",
+   "ipa": "ˈveriənt",
+   "meaning": "변형, (조금씩 다른) 버전"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#26.1",
+    "en": "After the shared search and document-analysis phase completes, stakeholders want two report variants from the same evidence — a one-page executive brief and a technical deep-dive — without re-running the costly searches."
+   },
+   {
+    "sid": "lesson-d3#9.3",
+    "en": "Where should your variant go?"
+   },
+   {
+    "sid": "mock04#1.6",
+    "en": "Expand the regex allowlist of closing phrases so it also matches every polite sign-off variant the model might emit."
+   },
+   {
+    "sid": "mock04#26.4",
+    "en": "Fork the session at the end of the research phase into two branches, one per report variant, sharing the evidence"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:variant.0",
+    "en": "...stakeholders want two report variants from the same evidence — a one-page executive brief and a technical deep-dive...",
+    "ko": "이해관계자들이 같은 증거로 두 가지 버전의 보고서, 즉 한 페이지짜리 임원 요약본과 기술 심층 분석본을 원한다..."
+   },
+   {
+    "vid": "vocab:variant.1",
+    "en": "...so it also matches every polite sign-off variant the model might emit.",
+    "ko": "모델이 낼 수 있는 모든 정중한 맺음말 변형까지 매칭되게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "vary",
+  "kind": "vocab-core",
+  "surfaces": [
+   "variation",
+   "varied"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "vary",
+   "word": "vary",
+   "pos": "동사",
+   "ipa": "ˈveri",
+   "meaning": "(서로) 다르다, 달라지다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#30.4",
+    "en": "Run the extraction several separate times per document and average each field's numbers, then set the cut-off on the averaged value to damp random variation between runs."
+   },
+   {
+    "sid": "mock04#25.5",
+    "en": "Raise the temperature of the synthesis subagent so that it produces broader, more varied topical coverage"
+   },
+   {
+    "sid": "sample01#15.7",
+    "en": "Use `temperature=0` to eliminate variation"
+   },
+   {
+    "sid": "mock04#4.5",
+    "en": "Increase the context window so the model has more room to keep the varied date and currency formats straight."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:vary.0",
+    "en": "The gaps vary by case.",
+    "ko": "빠진 내용이 케이스마다 다르다."
+   }
+  ]
+ },
+ {
+  "lemma": "vcs",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "vcs",
+   "word": "VCS",
+   "pos": "약어",
+   "ipa": "ˌviː.siːˈes",
+   "meaning": "버전 관리 시스템(version control system) — git 등"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "vehicle",
+  "kind": "new",
+  "surfaces": [
+   "vehicle"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#9.0",
+    "en": "A coordinator for a market-research assistant splits the broad query 'analyze the competitive landscape for electric vehicle charging networks' into narrow subtasks like 'find charger connector types' and 'list charging speeds,' each assigned to a separate subagent."
+   }
+  ]
+ },
+ {
+  "lemma": "vendor",
+  "kind": "vocab-core",
+  "surfaces": [
+   "vendor"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "vendor",
+   "word": "vendor",
+   "pos": "명사",
+   "ipa": "ˈvendər",
+   "meaning": "공급업체, 판매업체 (거래처)"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#56.2",
+    "en": "A new vendor begins sending \"credit memo\" documents, which are not in the enum, and the model force-fits them to \"invoice\", corrupting downstream routing."
+   },
+   {
+    "sid": "sample01#15.0",
+    "en": "A data pipeline needs to extract structured invoice data (vendor, line items, totals) from free-text invoice PDFs."
+   },
+   {
+    "sid": "selfcheck-d5-kor#23.1",
+    "en": "대화 중 말로 준 \"vendor/ 폴더는 건드리지 마\" 지시"
+   },
+   {
+    "sid": "sample01#5.0",
+    "en": "An agentic pipeline automates vendor payments."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:vendor.0",
+    "en": "An agentic pipeline automates vendor payments.",
+    "ko": "에이전트 파이프라인이 공급업체 대금 지급을 자동화한다."
+   },
+   {
+    "vid": "vocab:vendor.1",
+    "en": "...extract structured invoice data (vendor, line items, totals) from free-text invoice PDFs.",
+    "ko": "자유 텍스트 형태의 송장 PDF에서 구조화된 송장 데이터(공급업체, 품목, 합계)를 추출한다."
+   }
+  ]
+ },
+ {
+  "lemma": "verb",
+  "kind": "new",
+  "surfaces": [
+   "verb"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#7.6",
+    "en": "Consolidation applies only to server tools that Anthropic runs. User-defined tools should always get one tool per verb."
+   }
+  ]
+ },
+ {
+  "lemma": "verbally",
+  "kind": "new",
+  "surfaces": [
+   "verbally"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#26.5",
+    "en": "Skip scratchpad files entirely and have each subagent only report findings verbally in its final response."
+   }
+  ]
+ },
+ {
+  "lemma": "verbatim",
+  "kind": "vocab-core",
+  "surfaces": [
+   "verbatim"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "verbatim",
+   "word": "verbatim",
+   "pos": "부사·형용사",
+   "ipa": "vɜːrˈbeɪtɪm",
+   "meaning": "글자 그대로, 원문 그대로"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#6.0",
+    "en": "A tool named `analyze_content`, originally built for summarizing pasted text, has its description copied almost verbatim onto a newer tool, `analyze_document`, meant for uploaded PDFs."
+   },
+   {
+    "sid": "mock04#36.1",
+    "en": "The coordinator passes each subagent's output forward verbatim: the web-search subagent's full scraped page bodies — roughly 38k tokens — flow straight into the synthesis subagent's prompt."
+   },
+   {
+    "sid": "lesson-d5#21.4",
+    "en": "Paste every phase-1 subagent's full report verbatim into each phase-2 prompt so that no detail is lost"
+   },
+   {
+    "sid": "mock04#22.5",
+    "en": "Have the coordinator embed the web-search and document-analysis findings verbatim in the synthesis Task prompt"
+   },
+   {
+    "sid": "mock04#9.4",
+    "en": "Keep a persistent case-facts block (order id, amount, dates) outside the summary and re-inject it verbatim each turn."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:verbatim.0",
+    "en": "...older turns are summarized while recent ones remain verbatim.",
+    "ko": "오래된 대화는 요약하고, 최근 대화는 원문 그대로 둔다."
+   }
+  ]
+ },
+ {
+  "lemma": "verbose",
+  "kind": "vocab-core",
+  "surfaces": [
+   "verbose"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "verbose",
+   "word": "verbose",
+   "pos": "형용사",
+   "ipa": "vɜːrˈboʊs",
+   "meaning": "장황한, (출력이) 지나치게 많은"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#12.1",
+    "en": "Your team's /investigate-flaky skill greps the entire test suite, reads dozens of files, and prints verbose exploration before it answers."
+   },
+   {
+    "sid": "lesson-d5#22.6",
+    "en": "Limit what verbose exploration output enters the main context, and keep key findings somewhere that does not rely on recall from the long transcript"
+   },
+   {
+    "sid": "sample01#8.3",
+    "en": "Enable verbose logging on the Anthropic API client"
+   },
+   {
+    "sid": "sample01-kor#8.1",
+    "en": "Anthropic API 클라이언트의 상세(verbose) 로깅을 활성화한다."
+   },
+   {
+    "sid": "mock04#44.3",
+    "en": "Done inline, this verbose discovery floods the main session's context and later steps degrade from lost-in-the-middle effects."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:verbose.0",
+    "en": "During Phase 1, Claude generates verbose output listing hundreds of call sites.",
+    "ko": "1단계에서 Claude가 수백 개의 호출 위치를 나열하는 장황한 출력을 만든다."
+   }
+  ]
+ },
+ {
+  "lemma": "verdict",
+  "kind": "vocab-core",
+  "surfaces": [
+   "verdict"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "verdict",
+   "word": "verdict",
+   "pos": "명사",
+   "ipa": "ˈvɜːrdɪkt",
+   "meaning": "판정, (최종) 판단 결과"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#32.0",
+    "en": "A platform team runs an automated code-review gate that blocks a pull request from merging until Claude returns a verdict on the diff, typically within a few seconds."
+   },
+   {
+    "sid": "mock04#51.4",
+    "en": "Write an exhaustive list in CLAUDE.md of every code pattern and the correct verdict for each one"
+   },
+   {
+    "sid": "lesson-d4#32.2",
+    "en": "Call the Messages API synchronously for each diff, and have the merge check read the verdict directly from the API response"
+   },
+   {
+    "sid": "mock04#51.6",
+    "en": "Add two to four few-shot examples of representative ambiguous cases, each with the reasoning behind its verdict"
+   },
+   {
+    "sid": "lesson-d4#32.3",
+    "en": "Submit each diff as a one-request batch to the Message Batches API, and have the merge check poll until the verdict is ready"
+   },
+   {
+    "sid": "mock04#52.5",
+    "en": "Have the same session review the tests three times and take a majority vote on each test's verdict"
+   },
+   {
+    "sid": "lesson-d4#32.5",
+    "en": "Send each diff to the Messages API from a background job queue, and have the merge check pass while the verdict posts as a comment"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:verdict.0",
+    "en": "Write an exhaustive list in CLAUDE.md of every code pattern and the correct verdict for each one",
+    "ko": "CLAUDE.md에 모든 코드 패턴과 각각의 올바른 판정을 망라한 목록을 작성한다"
+   }
+  ]
+ },
+ {
+  "lemma": "verification",
+  "kind": "vocab-core",
+  "surfaces": [
+   "verified",
+   "verifies",
+   "verification",
+   "verify"
+  ],
+  "freq": 17,
+  "vocab": {
+   "id": "verification",
+   "word": "verification",
+   "pos": "명사",
+   "ipa": "ˌverɪfɪˈkeɪʃn",
+   "meaning": "검증, (사실인지) 확인"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#19.1",
+    "en": "Audits show that a small share of refunds still go out without the customer's identity being verified first."
+   },
+   {
+    "sid": "lesson-d2#7.3",
+    "en": "The reviewer is right. Keep analyze_document and add an action parameter with the values extract, summarize and verify, the same pattern used for pull request tools."
+   },
+   {
+    "sid": "lesson-d4#20.3",
+    "en": "Schema validation confirms that required fields exist and have the correct types but it cannot verify that the values are semantically correct relative to the source document, so mislabeling errors like this can still occur."
+   },
+   {
+    "sid": "mock04#2.4",
+    "en": "Generate a structured handoff summary: issue, verified identifiers, tool results, actions attempted, and recommended next step."
+   },
+   {
+    "sid": "lesson-d1#19.2",
+    "en": "What fix makes verification before a refund guaranteed?"
+   },
+   {
+    "sid": "lesson-d4#20.4",
+    "en": "This indicates that the input_schema was likely malformed, since a correctly constructed JSON schema can apply constraints that verify the relationship between amount and transaction_type, preventing such semantic mislabeling."
+   },
+   {
+    "sid": "mock04#5.6",
+    "en": "Instruct each subagent to call get_customer itself at the start so that it independently establishes and verifies the account before it does any order work."
+   },
+   {
+    "sid": "lesson-d2#7.5",
+    "en": "Consolidation fits several actions on one resource that share a contract, like create, review and merge on a pull request. Extraction, summarization and claim verification take different inputs and return different outputs, so each needs its own tool and description."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:verification.0",
+    "en": "The synthesis agent frequently needs to verify specific claims.",
+    "ko": "합성 에이전트는 특정 주장을 자주 검증해야 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "version",
+  "kind": "new",
+  "surfaces": [
+   "version"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d3#9.1",
+    "en": "You want a stricter version for your own use."
+   },
+   {
+    "sid": "lesson-d5#2.6",
+    "en": "The model hallucinated a vaguer version of the facts because the context window was nearly full"
+   },
+   {
+    "sid": "lesson-d3#23.5",
+    "en": "Implement a first version using common industry practice, then refine it through rounds of feedback"
+   },
+   {
+    "sid": "lesson-d3#30.7",
+    "en": "The runner's Node.js version is older than the CLI supports, so the process stayed running while failing to parse its own command-line arguments"
+   }
+  ]
+ },
+ {
+  "lemma": "version-controlled",
+  "kind": "vocab-core",
+  "surfaces": [
+   "version control",
+   "version-controlled"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "version-controlled",
+   "word": "version-controlled",
+   "pos": "형용사",
+   "ipa": "ˈvɜːrʒn kənˈtroʊld",
+   "meaning": "버전 관리되는 — git 등에 커밋되어 변경 이력이 남는"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#40.2",
+    "en": "The team wants the server config to stay shared and version-controlled, but each engineer (and CI) must supply their own credential without leaking it."
+   },
+   {
+    "sid": "lesson-d3#8.6",
+    "en": "The skill was saved under ~/.claude/skills/lint-report/SKILL.md, which lives outside the repository and was never version-controlled."
+   },
+   {
+    "sid": "mock04#11.6",
+    "en": "Move the conventions into the project-scoped .claude/CLAUDE.md (or repo root) so they are committed to version control and load for every clone"
+   },
+   {
+    "sid": "mock04#45.4",
+    "en": "Move the conventions into the project's `.claude/CLAUDE.md` (or root CLAUDE.md) and commit it to version control"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:version-controlled.0",
+    "en": "The team wants the server config to stay shared and version-controlled, but each engineer (and CI) must supply their own credential without leaking it.",
+    "ko": "팀은 서버 설정을 계속 공유하고 버전 관리하기를 원하지만, 각 엔지니어(와 CI)는 유출 없이 각자의 자격 증명을 제공해야 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "versus",
+  "kind": "vocab-core",
+  "surfaces": [
+   "vs",
+   "versus"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "versus",
+   "word": "versus",
+   "pos": "전치사",
+   "ipa": "ˈvɜːrsəs",
+   "meaning": "~ 대(對), ~와 비교하여"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#18.3",
+    "en": "What combination of changes best addresses this while preserving each agent's ability to decide when to act versus respond?"
+   },
+   {
+    "sid": "mock04#35.1",
+    "en": "Two sources report different market-size figures for the same market — $4.2B (2021 data) versus $6.8B (2023 data)."
+   },
+   {
+    "sid": "selfcheck-d2-kor#2.1",
+    "en": "각 설명에 무엇을 반환하는지와 언제 쓰고 언제 쓰지 않는지를 구분해 적는다(특정 환불 건의 진행 상태 vs 회사 규정)"
+   },
+   {
+    "sid": "mock04#4.1",
+    "en": "get_customer and lookup_order call two different backend systems that return dates in different formats (ISO vs. US) and amounts with inconsistent currency notation."
+   },
+   {
+    "sid": "mock04#51.1",
+    "en": "The CI reviewer handles clear-cut defects well but is inconsistent on genuinely ambiguous cases — for example, whether a bare `except:` is acceptable in a one-off script versus a shared library."
+   },
+   {
+    "sid": "mock04#18.4",
+    "en": "Keep a scratchpad manifest of migrated vs pending files, updated after each file, so progress survives context growth."
+   },
+   {
+    "sid": "mock04#57.5",
+    "en": "Re-run the identical prompt up to five times and accept the first result that happens to satisfy the invoice_date versus due_date rule."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:versus.0",
+    "en": "...few-shot examples demonstrating when to escalate versus resolve autonomously.",
+    "ko": "언제 에스컬레이션할지, 아니면 자율적으로 해결할지 보여 주는 few-shot 예시."
+   }
+  ]
+ },
+ {
+  "lemma": "via",
+  "kind": "vocab-core",
+  "surfaces": [
+   "via"
+  ],
+  "freq": 9,
+  "vocab": {
+   "id": "via",
+   "word": "via",
+   "pos": "전치사",
+   "ipa": "ˈvaɪə",
+   "meaning": "~을 통해, ~을 거쳐"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#42.0",
+    "en": "While a session is resumed via --continue --fork-session to try a riskier approach, the architect notices that a permission the original session had approved with 'allow for this session' is being re-prompted in the new branch."
+   },
+   {
+    "sid": "lesson-d4#17.0",
+    "en": "A team building a resume-parsing tool wants to guarantee that structured candidate data is extracted via a `parse_resume` tool on the current turn."
+   },
+   {
+    "sid": "sample01#16.0",
+    "en": "A RAG-based assistant is instructed via system prompt: 'Never reveal internal pricing'."
+   },
+   {
+    "sid": "lesson-d2#24.5",
+    "en": "Do not attempt to configure Kerberos directly in Claude Code MCP authentication; use an intermediary service that authenticates via Kerberos and then uses Anthropic-supported credentials such as API keys or OAuth tokens."
+   },
+   {
+    "sid": "lesson-d3#3.5",
+    "en": "Populate each developer's personal `~/.claude/CLAUDE.md` via a one-time onboarding script, which developers can then edit as needed."
+   },
+   {
+    "sid": "mock04#53.4",
+    "en": "Define the target structure as a tool input_schema, force that tool via tool_choice, and read the JSON from the tool_use block."
+   },
+   {
+    "sid": "lesson-d4#20.2",
+    "en": "What does this best illustrate about JSON schema enforcement via tool use?"
+   },
+   {
+    "sid": "lesson-d3#32.5",
+    "en": "Pass the test-quality definition and fixture list via --append-system-prompt in the CI shell profile"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:via.0",
+    "en": "The skill accepts a migration name via `$ARGUMENTS`.",
+    "ko": "이 스킬은 마이그레이션 이름을 `$ARGUMENTS` 를 통해 받는다."
+   }
+  ]
+ },
+ {
+  "lemma": "viable",
+  "kind": "vocab-core",
+  "surfaces": [
+   "viable"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "viable",
+   "word": "viable",
+   "pos": "형용사",
+   "ipa": "ˈvaɪəbl",
+   "meaning": "실행 가능한, 제 역할을 할 만한 — minimum viable: 꼭 필요한 것만 갖춘"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#21.0",
+    "en": "A platform team is restructuring a monolith into three microservices, touching shared data models, service boundaries, and deployment topology, with several viable ways to split the code."
+   },
+   {
+    "sid": "sample01#8.2",
+    "en": "What is the minimum viable observability implementation?"
+   },
+   {
+    "sid": "sample01-kor#8.0",
+    "en": "운영 중인 에이전트 파이프라인이 가끔 잘못된 결과를 냅니다. 엔지니어링 팀은 어떤 도구가 어떤 순서로, 어떤 입력으로 호출됐는지, 모델의 중간 추론이 무엇이었는지 볼 수 없어서 버그를 재현하지 못합니다. 최소한으로 갖춰야 할(minimum viable) 관측성 구현은 무엇일까요?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:viable.0",
+    "en": "What is the minimum viable observability implementation?",
+    "ko": "최소한으로 필요한(minimum viable) 관측성 구현은?"
+   }
+  ]
+ },
+ {
+  "lemma": "vice versa",
+  "kind": "vocab-core",
+  "surfaces": [
+   "vice versa"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "vice-versa",
+   "word": "vice versa",
+   "pos": "부사구",
+   "ipa": "ˌvaɪs ˈvɜːrsə",
+   "meaning": "거꾸로도 마찬가지로, 그 반대도"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#19.1",
+    "en": "In testing, the model calls `get_user_info` when it should call `fetch_account_details` and vice versa."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:vice-versa.0",
+    "en": "In testing, the model calls `get_user_info` when it should call `fetch_account_details` and vice versa.",
+    "ko": "테스트에서 모델이 `fetch_account_details` 를 불러야 할 때 `get_user_info` 를 부르고, 그 반대도 일어난다."
+   }
+  ]
+ },
+ {
+  "lemma": "violate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "violate",
+   "violations"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "violate",
+   "word": "violate",
+   "pos": "동사",
+   "ipa": "ˈvaɪəleɪt",
+   "meaning": "(규칙·제약을) 어기다, 위반하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#57.1",
+    "en": "Extractions pass the JSON schema but sometimes violate a business rule (invoice_date later than due_date)."
+   },
+   {
+    "sid": "mock04#57.7",
+    "en": "Move all rule violations to the Message Batches API and reprocess them overnight at the discounted batch rate."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:violate.0",
+    "en": "Extractions pass the JSON schema but sometimes violate a business rule (invoice_date later than due_date).",
+    "ko": "추출 결과가 JSON 스키마는 통과하지만 가끔 비즈니스 규칙(`invoice_date` 가 `due_date` 보다 늦음)을 위반한다."
+   }
+  ]
+ },
+ {
+  "lemma": "visibility",
+  "kind": "vocab-core",
+  "surfaces": [
+   "visibility"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "visibility",
+   "word": "visibility",
+   "pos": "명사",
+   "ipa": "ˌvɪzəˈbɪləti",
+   "meaning": "가시성 — (내부 동작·상태를) 들여다볼 수 있는 정도"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#8.1",
+    "en": "The engineering team cannot reproduce bugs because they have no visibility into which tools were called, in what order, with what inputs, or what the model's intermediate reasoning was."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:visibility.0",
+    "en": "The engineering team cannot reproduce bugs because they have no visibility into which tools were called, in what order, with what inputs...",
+    "ko": "어떤 도구가 어떤 순서로, 어떤 입력으로 호출됐는지 볼 수 없어서 버그를 재현하지 못한다..."
+   }
+  ]
+ },
+ {
+  "lemma": "visible",
+  "kind": "vocab-core",
+  "surfaces": [
+   "visible",
+   "visibly"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "visible",
+   "word": "visible",
+   "pos": "형용사",
+   "ipa": "ˈvɪzəbl",
+   "meaning": "보이는, 드러나 있는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#14.4",
+    "en": "Leave it as it is until it reaches 30–50 tools, the point where accuracy visibly degrades"
+   },
+   {
+    "sid": "mock04#19.4",
+    "en": "Read every candidate file into the main session first so all call sites are visible before any edit begins, then plan the rename."
+   },
+   {
+    "sid": "mock04#35.7",
+    "en": "Annotate both figures with source and publication date so the time difference is visible, not read as a conflict."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:visible.0",
+    "en": "Annotate both figures with source and publication date so the time difference is visible, not read as a conflict.",
+    "ko": "두 수치 모두에 출처와 발행 날짜를 주석으로 달아, 시점 차이가 충돌로 읽히지 않고 그대로 보이게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "visually",
+  "kind": "new",
+  "surfaces": [
+   "visually"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "mock04#49.6",
+    "en": "Keep the rubric in CLAUDE.md but wrap it in comment markers so it is visually separated from other rules"
+   }
+  ]
+ },
+ {
+  "lemma": "voice",
+  "kind": "new",
+  "surfaces": [
+   "voice"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#41.4",
+    "en": "Tell the synthesis agent to rewrite every finding in one consistent, confident voice so the report reads as a single authoritative narrative"
+   }
+  ]
+ },
+ {
+  "lemma": "volunteer",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "volunteer",
+   "word": "volunteer",
+   "pos": "동사",
+   "ipa": "ˌvɑːlənˈtɪr",
+   "meaning": "(묻지 않았는데) 자진해서 말하다, 먼저 제공하다"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:volunteer.0",
+    "en": "...even when customers volunteer order details.",
+    "ko": "고객이 묻지도 않았는데 주문 정보를 먼저 알려 주는 경우에도."
+   }
+  ]
+ },
+ {
+  "lemma": "vote",
+  "kind": "vocab-core",
+  "surfaces": [
+   "vote"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "vote",
+   "word": "vote",
+   "pos": "명사·동사",
+   "ipa": "voʊt",
+   "meaning": "투표(하다) — majority vote: 다수결"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#52.5",
+    "en": "Have the same session review the tests three times and take a majority vote on each test's verdict"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:vote.0",
+    "en": "Have the same session review the tests three times and take a majority vote on each test's verdict",
+    "ko": "같은 세션이 테스트를 세 번 리뷰하게 하고, 테스트별 판정을 다수결로 정한다"
+   }
+  ]
+ },
+ {
+  "lemma": "wait",
+  "kind": "new",
+  "surfaces": [
+   "waiting",
+   "waits",
+   "waited",
+   "wait"
+  ],
+  "freq": 12,
+  "sentences": [
+   {
+    "sid": "lesson-d3#31.0",
+    "en": "You want a CI review job in which any tool call you have not pre-approved is refused, not left waiting."
+   },
+   {
+    "sid": "lesson-d1#28.3",
+    "en": "Return \"ask\" instead of \"deny\" so the agent waits for someone to approve the refund."
+   },
+   {
+    "sid": "lesson-d2#9.3",
+    "en": "errorCategory \"transient\", isRetryable true, so the agent waits and resends the same request with backoff"
+   },
+   {
+    "sid": "lesson-d4#28.5",
+    "en": "Submit every 8 hours, because three cycles a day keeps any document from waiting long"
+   },
+   {
+    "sid": "lesson-d5#34.2",
+    "en": "Wait for users to report errors downstream"
+   },
+   {
+    "sid": "mock04#2.5",
+    "en": "Escalate earlier in ambiguous cases so humans receive tickets before much conversation has accumulated, instead of waiting for the agent to try more tools."
+   },
+   {
+    "sid": "lesson-d3#30.4",
+    "en": "The step ran claude without the -p flag, so the CLI opened its interactive session and waited for keyboard input that the runner cannot provide"
+   },
+   {
+    "sid": "lesson-d4#28.6",
+    "en": "Submit every 4 hours, because a 4-hour wait plus the full 24-hour batch window still fits inside 30 hours with time to spare for overhead"
+   }
+  ]
+ },
+ {
+  "lemma": "wander",
+  "kind": "vocab-core",
+  "surfaces": [
+   "wander"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "wander",
+   "word": "wander",
+   "pos": "동사",
+   "ipa": "ˈwɑːndər",
+   "meaning": "(방향을 잃고) 헤매다, 본래 목표에서 벗어나다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#19.2",
+    "en": "Doing this discovery inline reads dozens of files and floods the main session with search output before any edits begin, and the later edits then start to wander."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:wander.0",
+    "en": "...floods the main session with search output before any edits begin, and the later edits then start to wander.",
+    "ko": "편집을 시작하기도 전에 메인 세션이 검색 출력으로 넘쳐나고, 이후의 편집도 점점 방향을 잃기 시작한다."
+   }
+  ]
+ },
+ {
+  "lemma": "want",
+  "kind": "new",
+  "surfaces": [
+   "wants",
+   "want"
+  ],
+  "freq": 48,
+  "sentences": [
+   {
+    "sid": "lesson-d1#11.0",
+    "en": "After an hour of codebase analysis, a coordinator wants to try two competing refactoring strategies."
+   },
+   {
+    "sid": "lesson-d2#22.3",
+    "en": "The developer wants the team's production definition."
+   },
+   {
+    "sid": "lesson-d3#11.1",
+    "en": "The team wants that exploratory back-and-forth kept separate from the main conversation, with only the final recommendation surfacing back to the user."
+   },
+   {
+    "sid": "lesson-d4#1.0",
+    "en": "A team's single-pass code reviewer flags too many non-issues, and they want it to filter its own findings."
+   },
+   {
+    "sid": "lesson-d5#2.2",
+    "en": "The summary says only \"customer wants a refund soon.\""
+   },
+   {
+    "sid": "mock04#13.2",
+    "en": "The team still wants engineers to be able to run `/dep-audit` explicitly."
+   },
+   {
+    "sid": "sample01#11.0",
+    "en": "A dev team wants Claude Code to automatically run `npm run lint:fix` every time it writes or edits a TypeScript file."
+   },
+   {
+    "sid": "lesson-d1#31.1",
+    "en": "An architect wants a single PreToolUse hook to run for every tool exposed by the \"billing\" server, without matching any tool from \"inventory\" or any built-in tool like Bash or Read."
+   }
+  ]
+ },
+ {
+  "lemma": "warehouse",
+  "kind": "new",
+  "surfaces": [
+   "warehouse"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#5.0",
+    "en": "A returns-processing agent calls an order-lookup tool that returns a JSON payload with 40+ fields (shipping carrier metadata, internal warehouse codes, marketing tags, etc.) for every order it checks, and after a dozen lookups the raw payloads dominate the context window even though only 5 fields (order status, purchase date, item, amount, return-window deadline) matter for return eligibility."
+   }
+  ]
+ },
+ {
+  "lemma": "warn",
+  "kind": "new",
+  "surfaces": [
+   "warning"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#22.2",
+    "en": "`/mcp` now shows a conflict warning."
+   }
+  ]
+ }
+]

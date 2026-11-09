@@ -1,0 +1,971 @@
+[
+ {
+  "lemma": "apart",
+  "skip": null,
+  "word": "apart",
+  "pos": ["부사"],
+  "ipa": "əˈpɑːrt",
+  "meaning": "(시간·공간이) 떨어져, 간격을 두고 (14 months apart: 14개월 차이로) — tell apart: 구별하다",
+  "short": "떨어져, 간격을 두고",
+  "senses": [
+   { "pos": "부사", "ko": "(시간·공간이) 떨어져, 간격을 두고" },
+   { "pos": "부사", "ko": "따로, 분리되어" },
+   { "pos": "동사구", "ko": "(tell apart) 구별하다" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#39.2", "surface": "apart", "pos": "부사", "sense": "(시간·공간이) 떨어져, 간격을 두고" },
+   { "sid": "lesson-d5#40.1", "surface": "apart", "pos": "부사", "sense": "(시간·공간이) 떨어져, 간격을 두고" }
+  ]
+ },
+ {
+  "lemma": "api",
+  "skip": null,
+  "word": "API",
+  "pos": ["약어"],
+  "ipa": "ˌeɪ.piːˈaɪ",
+  "meaning": "API — 프로그램이 다른 서비스의 기능을 호출하는 창구 (Application Programming Interface)",
+  "short": "응용 프로그래밍 인터페이스",
+  "senses": [
+   { "pos": "약어", "ko": "응용 프로그래밍 인터페이스, 기능 호출 창구" }
+  ],
+  "forms": ["APIs"],
+  "synonyms": ["interface"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#1.0", "surface": "API", "pos": "약어", "sense": "응용 프로그래밍 인터페이스, 기능 호출 창구" },
+   { "sid": "lesson-d2#11.0", "surface": "API", "pos": "약어", "sense": "응용 프로그래밍 인터페이스, 기능 호출 창구" },
+   { "sid": "mock04#19.1", "surface": "API", "pos": "약어", "sense": "응용 프로그래밍 인터페이스, 기능 호출 창구" },
+   { "sid": "sample01#3.0", "surface": "API", "pos": "약어", "sense": "응용 프로그래밍 인터페이스, 기능 호출 창구" }
+  ]
+ },
+ {
+  "lemma": "apologize",
+  "skip": null,
+  "word": "apologize",
+  "pos": ["동사"],
+  "ipa": "əˈpɑːlədʒaɪz",
+  "meaning": "사과하다",
+  "short": "사과하다",
+  "senses": [
+   { "pos": "동사", "ko": "사과하다" }
+  ],
+  "forms": ["apologizes", "apologized", "apologizing", "apology"],
+  "synonyms": ["say sorry"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#8.6", "surface": "apologize", "pos": "동사", "sense": "사과하다" }
+  ]
+ },
+ {
+  "lemma": "app",
+  "skip": null,
+  "word": "app",
+  "pos": ["명사"],
+  "ipa": "æp",
+  "meaning": "앱, 응용 프로그램 (application 의 줄임말)",
+  "short": "앱, 응용 프로그램",
+  "senses": [
+   { "pos": "명사", "ko": "앱, 응용 프로그램" }
+  ],
+  "forms": ["apps"],
+  "synonyms": ["application"],
+  "domain": "시스템·도구·기술",
+  "basic": true,
+  "contexts": [
+   { "sid": "sample01#14.2", "surface": "app", "pos": "명사", "sense": "앱, 응용 프로그램" }
+  ]
+ },
+ {
+  "lemma": "appear",
+  "skip": null,
+  "word": "appear",
+  "pos": ["동사"],
+  "ipa": "əˈpɪr",
+  "meaning": "① 나타나다, (기록·목록에) 나오다 ② ~인 것 같다",
+  "short": "나타나다, 나오다",
+  "senses": [
+   { "pos": "동사", "ko": "나타나다, (기록·목록에) 나오다" },
+   { "pos": "동사", "ko": "~인 것 같다" }
+  ],
+  "forms": ["appears", "appeared", "appearing", "appearance"],
+  "synonyms": ["show up", "emerge"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#41.1", "surface": "appears", "pos": "동사", "sense": "나타나다, (기록·목록에) 나오다" },
+   { "sid": "lesson-d4#23.2", "surface": "appears", "pos": "동사", "sense": "나타나다, (기록·목록에) 나오다" },
+   { "sid": "lesson-d2#28.1", "surface": "appears", "pos": "동사", "sense": "나타나다, (기록·목록에) 나오다" },
+   { "sid": "mock04#24.1", "surface": "appear", "pos": "동사", "sense": "나타나다, (기록·목록에) 나오다" }
+  ]
+ },
+ {
+  "lemma": "append",
+  "skip": null,
+  "word": "append",
+  "pos": ["동사"],
+  "ipa": "əˈpend",
+  "meaning": "(끝에) 덧붙이다, 추가하다",
+  "short": "(끝에) 덧붙이다, 추가하다",
+  "senses": [
+   { "pos": "동사", "ko": "(끝에) 덧붙이다, 추가하다" }
+  ],
+  "forms": ["appends", "appended", "appending"],
+  "synonyms": ["add", "attach"],
+  "domain": "생성·추가",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#2.1", "surface": "Append", "pos": "동사", "sense": "(끝에) 덧붙이다, 추가하다" },
+   { "sid": "lesson-d5#28.5", "surface": "append", "pos": "동사", "sense": "(끝에) 덧붙이다, 추가하다" },
+   { "sid": "mock04#1.5", "surface": "append", "pos": "동사", "sense": "(끝에) 덧붙이다, 추가하다" },
+   { "sid": "mock04#29.4", "surface": "appending", "pos": "동사", "sense": "(끝에) 덧붙이다, 추가하다" }
+  ]
+ },
+ {
+  "lemma": "application",
+  "skip": null,
+  "word": "application",
+  "pos": ["명사"],
+  "ipa": "ˌæplɪˈkeɪʃn",
+  "meaning": "① 애플리케이션, 응용 프로그램 ② 적용, 응용 ③ 신청(서), 지원(서)",
+  "short": "애플리케이션, 응용 프로그램",
+  "senses": [
+   { "pos": "명사", "ko": "애플리케이션, 응용 프로그램" },
+   { "pos": "명사", "ko": "적용, 응용" },
+   { "pos": "명사", "ko": "신청(서), 지원(서)" }
+  ],
+  "forms": ["applications"],
+  "synonyms": ["app", "program"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#40.0", "surface": "application", "pos": "명사", "sense": "애플리케이션, 응용 프로그램" }
+  ]
+ },
+ {
+  "lemma": "apply",
+  "skip": null,
+  "word": "apply",
+  "pos": ["동사"],
+  "ipa": "əˈplaɪ",
+  "meaning": "① (규칙·기준을) 적용하다 ② (변경이) 반영되다, 적용되다",
+  "short": "적용하다, 적용되다",
+  "senses": [
+   { "pos": "동사", "ko": "(규칙·기준을) 적용하다" },
+   { "pos": "동사", "ko": "(~에) 적용되다, 해당되다" },
+   { "pos": "동사", "ko": "(변경이) 반영되다" },
+   { "pos": "동사", "ko": "신청하다, 지원하다" }
+  ],
+  "forms": ["applies", "applied", "applying", "application"],
+  "synonyms": ["employ", "use"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#6.1", "surface": "apply", "pos": "동사", "sense": "(규칙·기준을) 적용하다" },
+   { "sid": "lesson-d2#7.6", "surface": "applies", "pos": "동사", "sense": "(~에) 적용되다, 해당되다" },
+   { "sid": "vocab:apply.1", "surface": "applies", "pos": "동사", "sense": "(변경이) 반영되다" },
+   { "sid": "lesson-d5#31.3", "surface": "applied", "pos": "동사", "sense": "(규칙·기준을) 적용하다" }
+  ]
+ },
+ {
+  "lemma": "appointment",
+  "skip": null,
+  "word": "appointment",
+  "pos": ["명사"],
+  "ipa": "əˈpɔɪntmənt",
+  "meaning": "(진료·상담) 예약, 약속",
+  "short": "(진료) 예약, 약속",
+  "senses": [
+   { "pos": "명사", "ko": "(진료·상담) 예약, 약속" },
+   { "pos": "명사", "ko": "임명, 지명" }
+  ],
+  "forms": ["appointments", "appoint"],
+  "synonyms": ["booking", "reservation"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#9.1", "surface": "appointment", "pos": "명사", "sense": "(진료·상담) 예약, 약속" },
+   { "sid": "lesson-d5#9.4", "surface": "appointment", "pos": "명사", "sense": "(진료·상담) 예약, 약속" }
+  ]
+ },
+ {
+  "lemma": "approach",
+  "skip": null,
+  "word": "approach",
+  "pos": ["명사", "동사"],
+  "ipa": "əˈproʊtʃ",
+  "meaning": "접근법, (문제를 푸는) 방법 / 다가가다",
+  "short": "접근법, 방법",
+  "senses": [
+   { "pos": "명사", "ko": "접근법, (문제를 푸는) 방법" },
+   { "pos": "동사", "ko": "다가가다, 가까워지다" }
+  ],
+  "forms": ["approaches", "approached", "approaching"],
+  "synonyms": ["method", "strategy"],
+  "domain": "계획·목표·전략",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#32.1", "surface": "approach", "pos": "명사", "sense": "접근법, (문제를 푸는) 방법" },
+   { "sid": "mock04#20.1", "surface": "approaches", "pos": "동사", "sense": "다가가다, 가까워지다" },
+   { "sid": "sample01#20.0", "surface": "approach", "pos": "명사", "sense": "접근법, (문제를 푸는) 방법" },
+   { "sid": "lesson-d1#39.2", "surface": "approach", "pos": "명사", "sense": "접근법, (문제를 푸는) 방법" }
+  ]
+ },
+ {
+  "lemma": "appropriate",
+  "skip": null,
+  "word": "appropriate",
+  "pos": ["형용사"],
+  "ipa": "əˈproʊpriət",
+  "meaning": "(상황에) 알맞은, 적절한",
+  "short": "적절한, 알맞은",
+  "senses": [
+   { "pos": "형용사", "ko": "(상황에) 알맞은, 적절한" }
+  ],
+  "forms": ["appropriately", "inappropriate"],
+  "synonyms": ["suitable", "proper", "fitting"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#37.2", "surface": "appropriate", "pos": "형용사", "sense": "(상황에) 알맞은, 적절한" },
+   { "sid": "sample01#14.1", "surface": "appropriate", "pos": "형용사", "sense": "(상황에) 알맞은, 적절한" }
+  ]
+ },
+ {
+  "lemma": "approval",
+  "skip": null,
+  "word": "approval",
+  "pos": ["명사"],
+  "ipa": "əˈpruːvl",
+  "meaning": "승인 (approve: 승인하다)",
+  "short": "승인, 승인하다",
+  "senses": [
+   { "pos": "명사", "ko": "승인" },
+   { "pos": "동사", "ko": "승인하다, 허가하다" }
+  ],
+  "forms": ["approvals", "approve", "approves", "approved", "approving"],
+  "synonyms": ["authorization", "consent", "permission"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#19.0", "surface": "approval", "pos": "명사", "sense": "승인" },
+   { "sid": "mock04#3.1", "surface": "approved", "pos": "동사", "sense": "승인하다, 허가하다" },
+   { "sid": "lesson-d1#24.1", "surface": "approves", "pos": "동사", "sense": "승인하다, 허가하다" },
+   { "sid": "lesson-d5#10.5", "surface": "Approve", "pos": "동사", "sense": "승인하다, 허가하다" }
+  ]
+ },
+ {
+  "lemma": "arbitrary",
+  "skip": null,
+  "word": "arbitrary",
+  "pos": ["형용사"],
+  "ipa": "ˈɑːrbɪtreri",
+  "meaning": "임의의, 아무거나의",
+  "short": "임의의, 아무거나의",
+  "senses": [
+   { "pos": "형용사", "ko": "임의의, 아무거나의" },
+   { "pos": "형용사", "ko": "제멋대로의, 자의적인" }
+  ],
+  "forms": ["arbitrarily"],
+  "synonyms": ["random", "any"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#17.1", "surface": "arbitrary", "pos": "형용사", "sense": "임의의, 아무거나의" }
+  ]
+ },
+ {
+  "lemma": "arbitrate",
+  "skip": null,
+  "word": "arbitrate",
+  "pos": ["동사"],
+  "ipa": "ˈɑːrbɪtreɪt",
+  "meaning": "중재하다, (의견이 갈릴 때) 판정하다",
+  "short": "중재하다, 판정하다",
+  "senses": [
+   { "pos": "동사", "ko": "중재하다, (의견이 갈릴 때) 판정하다" }
+  ],
+  "forms": ["arbitrates", "arbitrated", "arbitrating", "arbitration", "arbitrator"],
+  "synonyms": ["mediate", "adjudicate", "judge"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#38.5", "surface": "arbitrate", "pos": "동사", "sense": "중재하다, (의견이 갈릴 때) 판정하다" }
+  ]
+ },
+ {
+  "lemma": "architect",
+  "skip": null,
+  "word": "architect",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈɑːrkɪtekt",
+  "meaning": "① (시스템) 설계자, 아키텍트 ② 건축가 ③ 설계하다",
+  "short": "(시스템) 설계자, 아키텍트",
+  "senses": [
+   { "pos": "명사", "ko": "(시스템) 설계자, 아키텍트" },
+   { "pos": "명사", "ko": "건축가" },
+   { "pos": "동사", "ko": "설계하다, 구축하다" }
+  ],
+  "forms": ["architects", "architected", "architecture"],
+  "synonyms": ["designer"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#1.0", "surface": "architect", "pos": "명사", "sense": "(시스템) 설계자, 아키텍트" },
+   { "sid": "lesson-d2#21.0", "surface": "architect", "pos": "명사", "sense": "(시스템) 설계자, 아키텍트" },
+   { "sid": "lesson-d3#21.1", "surface": "architect", "pos": "명사", "sense": "(시스템) 설계자, 아키텍트" },
+   { "sid": "lesson-d4#6.0", "surface": "architect", "pos": "명사", "sense": "(시스템) 설계자, 아키텍트" }
+  ]
+ },
+ {
+  "lemma": "architecture",
+  "skip": null,
+  "word": "architecture",
+  "pos": ["명사"],
+  "ipa": "ˈɑːrkɪtektʃər",
+  "meaning": "아키텍처 — 시스템 전체의 구조·설계 (architectural: 구조 차원의)",
+  "short": "(시스템) 구조, 설계",
+  "senses": [
+   { "pos": "명사", "ko": "아키텍처, 시스템 구조·설계" },
+   { "pos": "형용사", "ko": "구조 차원의, 설계상의" },
+   { "pos": "명사", "ko": "건축 양식, 건축학" }
+  ],
+  "forms": ["architectures", "architectural", "architecturally"],
+  "synonyms": ["structure", "design"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#31.2", "surface": "architecture", "pos": "명사", "sense": "아키텍처, 시스템 구조·설계" },
+   { "sid": "sample01#10.2", "surface": "architectural", "pos": "형용사", "sense": "구조 차원의, 설계상의" },
+   { "sid": "lesson-d3#11.0", "surface": "architecture", "pos": "명사", "sense": "아키텍처, 시스템 구조·설계" },
+   { "sid": "lesson-d4#35.2", "surface": "architectural", "pos": "형용사", "sense": "구조 차원의, 설계상의" }
+  ]
+ },
+ {
+  "lemma": "archive",
+  "skip": null,
+  "word": "archive",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈɑːrkaɪv",
+  "meaning": "① 보관소, 기록 모음 ② 보관 처리하다 — archived: 보관(비활성) 상태가 된",
+  "short": "보관소, 보관 처리하다",
+  "senses": [
+   { "pos": "명사", "ko": "보관소, 기록 모음" },
+   { "pos": "동사", "ko": "보관 처리하다" },
+   { "pos": "명사", "ko": "압축 파일" }
+  ],
+  "forms": ["archives", "archived", "archiving"],
+  "synonyms": ["store", "preserve"],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "area",
+  "skip": null,
+  "word": "area",
+  "pos": ["명사"],
+  "ipa": "ˈeriə",
+  "meaning": "① 영역, 분야 ② 지역, 구역 ③ 면적",
+  "short": "영역, 분야",
+  "senses": [
+   { "pos": "명사", "ko": "영역, 분야" },
+   { "pos": "명사", "ko": "지역, 구역" },
+   { "pos": "명사", "ko": "면적" }
+  ],
+  "forms": ["areas"],
+  "synonyms": ["field", "domain", "region"],
+  "domain": "구조·구성·부분",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#9.3", "surface": "areas", "pos": "명사", "sense": "영역, 분야" },
+   { "sid": "lesson-d3#6.5", "surface": "area", "pos": "명사", "sense": "영역, 분야" },
+   { "sid": "lesson-d1#9.6", "surface": "areas", "pos": "명사", "sense": "영역, 분야" }
+  ]
+ },
+ {
+  "lemma": "argument",
+  "skip": null,
+  "word": "argument",
+  "pos": ["명사"],
+  "ipa": "ˈɑːrɡjumənt",
+  "meaning": "① (명령·함수에 넘기는) 인자 ② 논거, 주장",
+  "short": "(함수에 넘기는) 인자",
+  "senses": [
+   { "pos": "명사", "ko": "(명령·함수에 넘기는) 인자" },
+   { "pos": "명사", "ko": "논거, 주장" },
+   { "pos": "명사", "ko": "말다툼, 논쟁" }
+  ],
+  "forms": ["arguments"],
+  "synonyms": ["parameter"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#29.0", "surface": "arguments", "pos": "명사", "sense": "(명령·함수에 넘기는) 인자" },
+   { "sid": "mock04#15.1", "surface": "argument", "pos": "명사", "sense": "(명령·함수에 넘기는) 인자" },
+   { "sid": "lesson-d3#29.5", "surface": "argument", "pos": "명사", "sense": "(명령·함수에 넘기는) 인자" },
+   { "sid": "lesson-d2#10.1", "surface": "argument", "pos": "명사", "sense": "(명령·함수에 넘기는) 인자" }
+  ]
+ },
+ {
+  "lemma": "arithmetic",
+  "skip": null,
+  "word": "arithmetic",
+  "pos": ["명사", "형용사"],
+  "ipa": "əˈrɪθmətɪk",
+  "meaning": "산술, 계산 / 산술의 (합계 등 숫자 계산의)",
+  "short": "산술, 계산",
+  "senses": [
+   { "pos": "명사", "ko": "산술, 계산" },
+   { "pos": "형용사", "ko": "산술의, 숫자 계산의" }
+  ],
+  "forms": ["arithmetical"],
+  "synonyms": ["calculation", "math"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#54.6", "surface": "arithmetic", "pos": "명사", "sense": "산술, 계산" },
+   { "sid": "mock04#54.5", "surface": "arithmetic", "pos": "형용사", "sense": "산술의, 숫자 계산의" }
+  ]
+ },
+ {
+  "lemma": "around",
+  "skip": null,
+  "word": "around",
+  "pos": ["전치사", "부사"],
+  "ipa": "əˈraʊnd",
+  "meaning": "① 약, 대략 ② ~을 둘러싸고, ~ 주위에 ③ ~을 중심으로 (around the clock: 24시간 내내)",
+  "short": "약, ~을 둘러싸고",
+  "senses": [
+   { "pos": "부사", "ko": "약, 대략" },
+   { "pos": "전치사", "ko": "~을 둘러싸고, ~ 주위에" },
+   { "pos": "전치사", "ko": "~을 중심으로" },
+   { "pos": "부사구", "ko": "밤낮없이, 24시간 내내" }
+  ],
+  "forms": [],
+  "synonyms": ["about", "approximately"],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#18.1", "surface": "around", "pos": "부사", "sense": "약, 대략" },
+   { "sid": "mock04#53.7", "surface": "around", "pos": "전치사", "sense": "~을 둘러싸고, ~ 주위에" },
+   { "sid": "lesson-d4#9.3", "surface": "around", "pos": "전치사", "sense": "~을 중심으로" },
+   { "sid": "lesson-d4#28.0", "surface": "around", "pos": "부사구", "sense": "밤낮없이, 24시간 내내" }
+  ]
+ },
+ {
+  "lemma": "arrange-act-assert",
+  "skip": null,
+  "word": "arrange-act-assert",
+  "pos": ["명사구"],
+  "ipa": "əˈreɪndʒ ækt əˈsɜːrt",
+  "meaning": "AAA 패턴 — 테스트를 준비(Arrange)·실행(Act)·검증(Assert) 세 단계로 쓰는 구조",
+  "short": "준비·실행·검증 테스트 구조",
+  "senses": [
+   { "pos": "명사구", "ko": "준비·실행·검증 3단계 테스트 구조" }
+  ],
+  "forms": [],
+  "synonyms": ["AAA pattern"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#48.1", "surface": "arrange-act-assert", "pos": "명사구", "sense": "준비·실행·검증 3단계 테스트 구조" }
+  ]
+ },
+ {
+  "lemma": "arrangement",
+  "skip": null,
+  "word": "arrangement",
+  "pos": ["명사"],
+  "ipa": "əˈreɪndʒmənt",
+  "meaning": "① 약정, 합의 — 서로 맺은 조건 ② 배열, 배치",
+  "short": "약정, 합의",
+  "senses": [
+   { "pos": "명사", "ko": "약정, 합의" },
+   { "pos": "명사", "ko": "배열, 배치" },
+   { "pos": "명사", "ko": "준비, 채비" }
+  ],
+  "forms": ["arrangements", "arrange"],
+  "synonyms": ["agreement", "deal"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "array",
+  "skip": null,
+  "word": "array",
+  "pos": ["명사"],
+  "ipa": "əˈreɪ",
+  "meaning": "배열 — 값을 순서대로 담은 목록 (JSON 의 [ ])",
+  "short": "배열",
+  "senses": [
+   { "pos": "명사", "ko": "배열, 값을 순서대로 담은 목록" },
+   { "pos": "명사", "ko": "(다양한) 모음, 진열" }
+  ],
+  "forms": ["arrays"],
+  "synonyms": ["list"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#1.3", "surface": "array", "pos": "명사", "sense": "배열, 값을 순서대로 담은 목록" },
+   { "sid": "mock04#45.7", "surface": "array", "pos": "명사", "sense": "배열, 값을 순서대로 담은 목록" },
+   { "sid": "lesson-d2#4.3", "surface": "array", "pos": "명사", "sense": "배열, 값을 순서대로 담은 목록" }
+  ]
+ },
+ {
+  "lemma": "arrival",
+  "skip": null,
+  "word": "arrival",
+  "pos": ["명사"],
+  "ipa": "əˈraɪvl",
+  "meaning": "도착, 들어옴 (arrive: 도착하다)",
+  "short": "도착",
+  "senses": [
+   { "pos": "명사", "ko": "도착, 들어옴" },
+   { "pos": "명사", "ko": "새로 온 것, 신규 도착물" }
+  ],
+  "forms": ["arrivals"],
+  "synonyms": ["coming", "receipt"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#28.0", "surface": "arrival", "pos": "명사", "sense": "도착, 들어옴" }
+  ]
+ },
+ {
+  "lemma": "arrive",
+  "skip": null,
+  "word": "arrive",
+  "pos": ["동사"],
+  "ipa": "əˈraɪv",
+  "meaning": "① 도착하다, (데이터·결과가) 들어오다 ② (결론에) 이르다",
+  "short": "도착하다, 들어오다",
+  "senses": [
+   { "pos": "동사", "ko": "도착하다, 들어오다" },
+   { "pos": "동사", "ko": "(결론에) 이르다" }
+  ],
+  "forms": ["arrives", "arrived", "arriving", "arrival"],
+  "synonyms": ["come in", "reach"],
+  "domain": "이동·전달",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#14.1", "surface": "arrives", "pos": "동사", "sense": "도착하다, 들어오다" },
+   { "sid": "lesson-d1#37.3", "surface": "arrives", "pos": "동사", "sense": "도착하다, 들어오다" },
+   { "sid": "lesson-d5#28.5", "surface": "arrive", "pos": "동사", "sense": "도착하다, 들어오다" }
+  ]
+ },
+ {
+  "lemma": "article",
+  "skip": null,
+  "word": "article",
+  "pos": ["명사"],
+  "ipa": "ˈɑːrtɪkl",
+  "meaning": "① 기사, 글 ② (계약·법의) 조항 ③ 물품 ④ (문법) 관사",
+  "short": "기사, 글",
+  "senses": [
+   { "pos": "명사", "ko": "기사, 글" },
+   { "pos": "명사", "ko": "(계약·법의) 조항" },
+   { "pos": "명사", "ko": "물품, 품목" },
+   { "pos": "명사", "ko": "(문법) 관사" }
+  ],
+  "forms": ["articles"],
+  "synonyms": ["piece", "story"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#20.2", "surface": "articles", "pos": "명사", "sense": "기사, 글" },
+   { "sid": "lesson-d5#20.6", "surface": "articles", "pos": "명사", "sense": "기사, 글" }
+  ]
+ },
+ {
+  "lemma": "artifact",
+  "skip": null,
+  "word": "artifact",
+  "pos": ["명사"],
+  "ipa": "ˈɑːrtɪfækt",
+  "meaning": "① (처리 과정에서 생긴) 부산물, 이상 현상 ② 산출물, 결과물 파일 ③ 인공물, 유물",
+  "short": "부산물, 이상 현상",
+  "senses": [
+   { "pos": "명사", "ko": "(처리 과정의) 부산물, 이상 현상" },
+   { "pos": "명사", "ko": "산출물, 결과물 파일" },
+   { "pos": "명사", "ko": "인공물, 유물" }
+  ],
+  "forms": ["artifacts"],
+  "synonyms": ["byproduct"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#22.7", "surface": "artifact", "pos": "명사", "sense": "(처리 과정의) 부산물, 이상 현상" }
+  ]
+ },
+ {
+  "lemma": "as soon as",
+  "skip": null,
+  "word": "as soon as",
+  "pos": ["접속사"],
+  "ipa": "əz ˈsuːn əz",
+  "meaning": "~하자마자, ~하는 즉시",
+  "short": "~하자마자, ~하는 즉시",
+  "senses": [
+   { "pos": "접속사", "ko": "~하자마자, ~하는 즉시" }
+  ],
+  "forms": [],
+  "synonyms": ["once", "immediately after"],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#15.2", "surface": "as soon as", "pos": "접속사", "sense": "~하자마자, ~하는 즉시" }
+  ]
+ },
+ {
+  "lemma": "as-is",
+  "skip": null,
+  "word": "as-is",
+  "pos": ["부사", "형용사"],
+  "ipa": "ˌæz ˈɪz",
+  "meaning": "있는 그대로, 손대지 않은 채로",
+  "short": "있는 그대로",
+  "senses": [
+   { "pos": "부사", "ko": "있는 그대로, 손대지 않은 채로" },
+   { "pos": "형용사", "ko": "현재 상태 그대로의" }
+  ],
+  "forms": [],
+  "synonyms": ["unchanged", "untouched"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#20.6", "surface": "as-is", "pos": "부사", "sense": "있는 그대로, 손대지 않은 채로" },
+   { "sid": "lesson-d2#10.4", "surface": "as-is", "pos": "부사", "sense": "있는 그대로, 손대지 않은 채로" }
+  ]
+ },
+ {
+  "lemma": "ask",
+  "skip": null,
+  "word": "ask",
+  "pos": ["동사"],
+  "ipa": "æsk",
+  "meaning": "① 요청하다, 부탁하다 ② 묻다, 질문하다",
+  "short": "요청하다, 묻다",
+  "senses": [
+   { "pos": "동사", "ko": "요청하다, 부탁하다" },
+   { "pos": "동사", "ko": "묻다, 질문하다" }
+  ],
+  "forms": ["asks", "asked", "asking"],
+  "synonyms": ["request", "inquire"],
+  "domain": "요청·소통",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#10.0", "surface": "asks", "pos": "동사", "sense": "요청하다, 부탁하다" },
+   { "sid": "lesson-d1#20.1", "surface": "asking", "pos": "동사", "sense": "묻다, 질문하다" },
+   { "sid": "mock04#17.1", "surface": "Asking", "pos": "동사", "sense": "요청하다, 부탁하다" },
+   { "sid": "sample01#12.0", "surface": "asked", "pos": "동사", "sense": "요청하다, 부탁하다" }
+  ]
+ },
+ {
+  "lemma": "assemble",
+  "skip": null,
+  "word": "assemble",
+  "pos": ["동사"],
+  "ipa": "əˈsembl",
+  "meaning": "① (여러 부분을) 모아 구성하다, 엮다 ② 조립하다 ③ (사람이) 모이다",
+  "short": "모아 구성하다, 엮다",
+  "senses": [
+   { "pos": "동사", "ko": "(여러 부분을) 모아 구성하다, 엮다" },
+   { "pos": "동사", "ko": "조립하다" },
+   { "pos": "동사", "ko": "(사람이) 모이다" }
+  ],
+  "forms": ["assembles", "assembled", "assembling", "assembly"],
+  "synonyms": ["compile", "put together", "gather"],
+  "domain": "생성·추가",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#29.0", "surface": "assembling", "pos": "동사", "sense": "(여러 부분을) 모아 구성하다, 엮다" },
+   { "sid": "lesson-d5#36.1", "surface": "assembles", "pos": "동사", "sense": "(여러 부분을) 모아 구성하다, 엮다" }
+  ]
+ },
+ {
+  "lemma": "assertion",
+  "skip": null,
+  "word": "assertion",
+  "pos": ["명사"],
+  "ipa": "əˈsɜːrʃn",
+  "meaning": "① (테스트) 단언문 — 결과가 기대값과 맞는지 검사하는 코드 ② 주장",
+  "short": "(테스트) 단언문, 검증 코드",
+  "senses": [
+   { "pos": "명사", "ko": "(테스트) 단언문, 기대값 검사 코드" },
+   { "pos": "명사", "ko": "주장, 단언" },
+   { "pos": "동사", "ko": "(테스트가) 검증하다, 단언하다" }
+  ],
+  "forms": ["assertions", "assert", "asserts", "asserted"],
+  "synonyms": ["claim"],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#52.2", "surface": "assertions", "pos": "명사", "sense": "(테스트) 단언문, 기대값 검사 코드" },
+   { "sid": "lesson-d3#32.0", "surface": "asserts", "pos": "동사", "sense": "(테스트가) 검증하다, 단언하다" },
+   { "sid": "lesson-d2#27.4", "surface": "assertions", "pos": "명사", "sense": "(테스트) 단언문, 기대값 검사 코드" }
+  ]
+ },
+ {
+  "lemma": "assess",
+  "skip": null,
+  "word": "assess",
+  "pos": ["동사"],
+  "ipa": "əˈses",
+  "meaning": "평가하다, 따져서 판단하다",
+  "short": "평가하다, 판단하다",
+  "senses": [
+   { "pos": "동사", "ko": "평가하다, 따져서 판단하다" },
+   { "pos": "동사", "ko": "(세금·벌금을) 부과하다" }
+  ],
+  "forms": ["assesses", "assessed", "assessing", "assessment"],
+  "synonyms": ["evaluate", "judge", "gauge"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#25.1", "surface": "assess", "pos": "동사", "sense": "평가하다, 따져서 판단하다" },
+   { "sid": "lesson-d1#6.4", "surface": "assesses", "pos": "동사", "sense": "평가하다, 따져서 판단하다" }
+  ]
+ },
+ {
+  "lemma": "assign",
+  "skip": null,
+  "word": "assign",
+  "pos": ["동사"],
+  "ipa": "əˈsaɪn",
+  "meaning": "(일·역할·값을) 배정하다, 할당하다, 부여하다",
+  "short": "배정하다, 할당하다",
+  "senses": [
+   { "pos": "동사", "ko": "(일·역할을) 배정하다, 맡기다" },
+   { "pos": "동사", "ko": "(값·유형을) 부여하다, 할당하다" }
+  ],
+  "forms": ["assigns", "assigned", "assigning", "assignment"],
+  "synonyms": ["allocate", "allot", "designate"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#37.3", "surface": "assigned", "pos": "동사", "sense": "(일·역할을) 배정하다, 맡기다" },
+   { "sid": "lesson-d4#29.0", "surface": "assign", "pos": "동사", "sense": "(값·유형을) 부여하다, 할당하다" },
+   { "sid": "lesson-d1#9.3", "surface": "assigned", "pos": "동사", "sense": "(일·역할을) 배정하다, 맡기다" },
+   { "sid": "lesson-d5#31.7", "surface": "assigns", "pos": "동사", "sense": "(값·유형을) 부여하다, 할당하다" }
+  ]
+ },
+ {
+  "lemma": "assistant",
+  "skip": null,
+  "word": "assistant",
+  "pos": ["명사"],
+  "ipa": "əˈsɪstənt",
+  "meaning": "① (AI) 어시스턴트, 도우미 ② (대화 메시지의) assistant 역할 — 모델 쪽 발화 ③ 조수, 보조원",
+  "short": "어시스턴트, 도우미",
+  "senses": [
+   { "pos": "명사", "ko": "(AI) 어시스턴트, 도우미" },
+   { "pos": "명사", "ko": "(대화 메시지의) 어시스턴트 역할, 모델 쪽" },
+   { "pos": "명사", "ko": "조수, 보조원" }
+  ],
+  "forms": ["assistants", "assist", "assistance"],
+  "synonyms": ["helper", "aide"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#26.0", "surface": "assistant", "pos": "명사", "sense": "(AI) 어시스턴트, 도우미" },
+   { "sid": "lesson-d1#1.4", "surface": "assistant", "pos": "명사", "sense": "(대화 메시지의) 어시스턴트 역할, 모델 쪽" },
+   { "sid": "sample01#16.0", "surface": "assistant", "pos": "명사", "sense": "(AI) 어시스턴트, 도우미" },
+   { "sid": "lesson-d5#6.0", "surface": "assistant", "pos": "명사", "sense": "(AI) 어시스턴트, 도우미" }
+  ]
+ },
+ {
+  "lemma": "associate",
+  "skip": null,
+  "word": "associate",
+  "pos": ["형용사", "동사", "명사"],
+  "ipa": "əˈsoʊʃieɪt",
+  "meaning": "① 연관 짓다 (associated: 연관된, 관련된) ② 동료, 제휴자",
+  "short": "연관된, 관련된",
+  "senses": [
+   { "pos": "형용사", "ko": "(~와) 연관된, 관련된" },
+   { "pos": "동사", "ko": "연관 짓다, 결부시키다" },
+   { "pos": "명사", "ko": "동료, 제휴자" }
+  ],
+  "forms": ["associates", "associated", "associating", "association"],
+  "synonyms": ["link", "connect", "relate"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#27.5", "surface": "associated", "pos": "형용사", "sense": "(~와) 연관된, 관련된" }
+  ]
+ },
+ {
+  "lemma": "assume",
+  "skip": null,
+  "word": "assume",
+  "pos": ["동사"],
+  "ipa": "əˈsuːm",
+  "meaning": "가정하다, (확인 없이) ~라고 여기다",
+  "short": "가정하다, ~라고 여기다",
+  "senses": [
+   { "pos": "동사", "ko": "가정하다, (확인 없이) ~라고 여기다" },
+   { "pos": "명사", "ko": "가정, 전제" },
+   { "pos": "동사", "ko": "(책임·역할을) 맡다" }
+  ],
+  "forms": ["assumes", "assumed", "assuming", "assumption"],
+  "synonyms": ["presume", "suppose"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#21.1", "surface": "assumes", "pos": "동사", "sense": "가정하다, (확인 없이) ~라고 여기다" },
+   { "sid": "lesson-d1#21.2", "surface": "assumption", "pos": "명사", "sense": "가정, 전제" },
+   { "sid": "mock04#47.4", "surface": "assume", "pos": "동사", "sense": "가정하다, (확인 없이) ~라고 여기다" },
+   { "sid": "lesson-d2#31.4", "surface": "assumption", "pos": "명사", "sense": "가정, 전제" }
+  ]
+ },
+ {
+  "lemma": "asterisk",
+  "skip": null,
+  "word": "asterisk",
+  "pos": ["명사"],
+  "ipa": "ˈæstərɪsk",
+  "meaning": "별표 (*)",
+  "short": "별표",
+  "senses": [
+   { "pos": "명사", "ko": "별표 (*)" }
+  ],
+  "forms": ["asterisks"],
+  "synonyms": ["star"],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#23.5", "surface": "asterisk", "pos": "명사", "sense": "별표 (*)" },
+   { "sid": "lesson-d1#23.4", "surface": "asterisk", "pos": "명사", "sense": "별표 (*)" }
+  ]
+ },
+ {
+  "lemma": "asynchronous",
+  "skip": null,
+  "word": "asynchronous",
+  "pos": ["형용사"],
+  "ipa": "eɪˈsɪŋkrənəs",
+  "meaning": "비동기의 — 결과를 기다리지 않고 다음 일을 하는",
+  "short": "비동기의",
+  "senses": [
+   { "pos": "형용사", "ko": "비동기의, 결과를 기다리지 않는" }
+  ],
+  "forms": ["asynchronously", "async"],
+  "synonyms": ["async", "non-blocking"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:asynchronous.0", "surface": "asynchronous", "pos": "형용사", "sense": "비동기의, 결과를 기다리지 않는" }
+  ]
+ },
+ {
+  "lemma": "at once",
+  "skip": null,
+  "word": "at once",
+  "pos": ["부사구"],
+  "ipa": "ət ˈwʌns",
+  "meaning": "① 동시에, 한꺼번에 ② 즉시",
+  "short": "동시에, 한꺼번에",
+  "senses": [
+   { "pos": "부사구", "ko": "동시에, 한꺼번에" },
+   { "pos": "부사구", "ko": "즉시, 곧바로" }
+  ],
+  "forms": [],
+  "synonyms": ["simultaneously", "all together"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#35.1", "surface": "at once", "pos": "부사구", "sense": "동시에, 한꺼번에" },
+   { "sid": "lesson-d4#37.5", "surface": "at once", "pos": "부사구", "sense": "동시에, 한꺼번에" },
+   { "sid": "mock04#27.4", "surface": "at once", "pos": "부사구", "sense": "동시에, 한꺼번에" }
+  ]
+ },
+ {
+  "lemma": "atomic",
+  "skip": null,
+  "word": "atomic",
+  "pos": ["형용사"],
+  "ipa": "əˈtɑːmɪk",
+  "meaning": "원자적인 — 전부 성공하거나 전부 실패하는, 더 쪼갤 수 없는 한 단위의",
+  "short": "원자적인, 쪼갤 수 없는",
+  "senses": [
+   { "pos": "형용사", "ko": "원자적인, 전부 성공 또는 전부 실패하는" },
+   { "pos": "형용사", "ko": "더 쪼갤 수 없는 최소 단위의" },
+   { "pos": "형용사", "ko": "원자의, 원자력의" }
+  ],
+  "forms": ["atomically", "atomicity"],
+  "synonyms": ["indivisible"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#59.4", "surface": "atomic", "pos": "형용사", "sense": "원자적인, 전부 성공 또는 전부 실패하는" }
+  ]
+ },
+ {
+  "lemma": "attach",
+  "skip": null,
+  "word": "attach",
+  "pos": ["동사"],
+  "ipa": "əˈtætʃ",
+  "meaning": "붙이다, 첨부하다",
+  "short": "붙이다, 첨부하다",
+  "senses": [
+   { "pos": "동사", "ko": "붙이다, 첨부하다" },
+   { "pos": "동사", "ko": "(세션·장치에) 연결하다, 접속하다" }
+  ],
+  "forms": ["attaches", "attached", "attaching", "attachment", "reattach"],
+  "synonyms": ["affix", "append"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#2.3", "surface": "Attach", "pos": "동사", "sense": "붙이다, 첨부하다" },
+   { "sid": "mock04#34.2", "surface": "attach", "pos": "동사", "sense": "붙이다, 첨부하다" }
+  ]
+ },
+ {
+  "lemma": "attacker",
+  "skip": null,
+  "word": "attacker",
+  "pos": ["명사"],
+  "ipa": "əˈtækər",
+  "meaning": "공격자 (attack: 공격하다 / 공격)",
+  "short": "공격자",
+  "senses": [
+   { "pos": "명사", "ko": "공격자" }
+  ],
+  "forms": ["attackers", "attack"],
+  "synonyms": ["assailant", "intruder"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "attempt",
+  "skip": null,
+  "word": "attempt",
+  "pos": ["명사", "동사"],
+  "ipa": "əˈtempt",
+  "meaning": "시도(하다)",
+  "short": "시도, 시도하다",
+  "senses": [
+   { "pos": "명사", "ko": "시도" },
+   { "pos": "동사", "ko": "시도하다" }
+  ],
+  "forms": ["attempts", "attempted", "attempting"],
+  "synonyms": ["try", "effort"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#24.1", "surface": "attempts", "pos": "명사", "sense": "시도" },
+   { "sid": "lesson-d2#24.5", "surface": "attempt", "pos": "동사", "sense": "시도하다" },
+   { "sid": "lesson-d5#17.4", "surface": "attempt", "pos": "명사", "sense": "시도" },
+   { "sid": "mock04#27.1", "surface": "attempting", "pos": "동사", "sense": "시도하다" }
+  ]
+ }
+]

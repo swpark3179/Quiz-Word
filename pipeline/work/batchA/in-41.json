@@ -1,0 +1,1482 @@
+[
+ {
+  "lemma": "stick",
+  "kind": "vocab-core",
+  "surfaces": [
+   "stuck"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "stick",
+   "word": "stick",
+   "pos": "동사",
+   "ipa": "stɪk",
+   "meaning": "① (be stuck) 갇히다, 빠져서 꼼짝 못 하다 ② 붙다, (stick to) 고수하다"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#2.1",
+    "en": "After 3 hours in production, ops notices some claims are stuck in infinite loops consuming thousands of tokens."
+   },
+   {
+    "sid": "lesson-d1#3.3",
+    "en": "The Messages API rejects the sixth request with an error, leaving the conversation stuck at a stop_reason of \"tool_use\" it cannot resolve"
+   },
+   {
+    "sid": "lesson-d1#3.4",
+    "en": "Once the counter hits five, tool_result blocks stop being appended to the history, leaving Claude's stop_reason stuck at \"tool_use\""
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:stick.0",
+    "en": "After 3 hours in production, ops notices some claims are stuck in infinite loops consuming thousands of tokens.",
+    "ko": "운영 3시간 만에, 일부 청구 건이 무한 루프에 빠져 수천 토큰을 소모하는 것이 발견됐다."
+   }
+  ]
+ },
+ {
+  "lemma": "stop",
+  "kind": "new",
+  "surfaces": [
+   "stop",
+   "stops",
+   "stopped",
+   "stopping"
+  ],
+  "freq": 36,
+  "sentences": [
+   {
+    "sid": "lesson-d1#28.2",
+    "en": "Which change stops the retries and still keeps the limit guaranteed?"
+   },
+   {
+    "sid": "lesson-d3#13.2",
+    "en": "The team wants sessions spent on frontend work to stop paying the context cost of those conventions."
+   },
+   {
+    "sid": "lesson-d4#13.2",
+    "en": "What change to the prompt best stops these made-up values?"
+   },
+   {
+    "sid": "lesson-d5#29.1",
+    "en": "They want to stop human review for one of the three types."
+   },
+   {
+    "sid": "mock04#14.2",
+    "en": "Adding the reminder \"only write to docs/, never edit source\" to the skill body has not reliably stopped it."
+   },
+   {
+    "sid": "lesson-d2#22.8",
+    "en": "Remove `analytics` from .mcp.json so the local entry stops conflicting with it"
+   },
+   {
+    "sid": "sample01#22.3",
+    "en": "`stop_sequence` — a custom stop string was matched"
+   },
+   {
+    "sid": "selfcheck-d1-kor#29.3",
+    "en": "PreToolUse 대신 Stop 훅을 써야 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "store",
+  "kind": "vocab-core",
+  "surfaces": [
+   "store",
+   "stored"
+  ],
+  "freq": 9,
+  "vocab": {
+   "id": "store",
+   "word": "store",
+   "pos": "동사·명사",
+   "ipa": "stɔːr",
+   "meaning": "저장하다, 보관하다 / 저장소"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#10.1",
+    "en": "The store's documented policy only describes price adjustments when the store's own website lowers a price within 14 days of purchase; it does not mention competitor pricing at all."
+   },
+   {
+    "sid": "lesson-d1#40.3",
+    "en": "Pass the session ID stored for each user to resume when that user sends a follow-up request"
+   },
+   {
+    "sid": "lesson-d3#30.5",
+    "en": "The workflow stored ANTHROPIC_API_KEY as a secret but never exposed it to the step, so the CLI kept retrying authentication in a loop until the timeout"
+   },
+   {
+    "sid": "mock04#40.6",
+    "en": "Store the token in the project CLAUDE.md so it loads with memory and is easy to rotate across the whole team."
+   },
+   {
+    "sid": "lesson-d5#3.3",
+    "en": "Store the order number, refund amount, and deadline in a structured record that is passed along with each summary"
+   },
+   {
+    "sid": "mock04#5.5",
+    "en": "Store the confirmed customer record in a global variable that the SDK automatically injects into every spawned subagent's context at startup."
+   },
+   {
+    "sid": "lesson-d5#5.3",
+    "en": "Cache each full lookup response in a session store and reuse it on repeat checks instead of calling the tool again"
+   },
+   {
+    "sid": "mock04#9.6",
+    "en": "Call get_customer and lookup_order again on every turn to refetch the numbers, then overwrite the stored summary with the fresh results."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:store.0",
+    "en": "Store the confirmed customer record in a global variable that the SDK automatically injects into every spawned subagent's context at startup.",
+    "ko": "확인된 고객 레코드를 전역 변수에 저장해, SDK가 생성되는 모든 서브에이전트의 컨텍스트에 시작 시점에 자동으로 주입하게 한다"
+   },
+   {
+    "vid": "vocab:store.1",
+    "en": "...then overwrite the stored summary with the fresh results.",
+    "ko": "...저장된 요약을 새 결과로 덮어쓴다"
+   }
+  ]
+ },
+ {
+  "lemma": "straight",
+  "kind": "new",
+  "surfaces": [
+   "straight"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "mock04#36.1",
+    "en": "The coordinator passes each subagent's output forward verbatim: the web-search subagent's full scraped page bodies — roughly 38k tokens — flow straight into the synthesis subagent's prompt."
+   },
+   {
+    "sid": "lesson-d4#3.2",
+    "en": "Report it, since the docstring promises a cache lookup before the API call and the function body goes straight to the API on each invocation."
+   },
+   {
+    "sid": "lesson-d5#37.5",
+    "en": "Send both figures straight to the synthesis agent and let it pick whichever fits the report best"
+   },
+   {
+    "sid": "mock04#10.6",
+    "en": "Escalate every multiple-match case straight to a human agent, because the agent cannot safely resolve duplicate names."
+   },
+   {
+    "sid": "mock04#4.5",
+    "en": "Increase the context window so the model has more room to keep the varied date and currency formats straight."
+   }
+  ]
+ },
+ {
+  "lemma": "straightforward",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "straightforward",
+   "word": "straightforward",
+   "pos": "형용사",
+   "ipa": "ˌstreɪtˈfɔːrwərd",
+   "meaning": "간단한, 복잡하지 않은"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:straightforward.0",
+    "en": "Logs show it escalates straightforward cases (standard damage replacements with photo evidence).",
+    "ko": "로그를 보면 에이전트가 간단한 케이스(사진 증거가 있는 표준 파손 교체)를 에스컬레이션한다."
+   }
+  ]
+ },
+ {
+  "lemma": "strategy",
+  "kind": "vocab-core",
+  "surfaces": [
+   "strategy",
+   "strategies"
+  ],
+  "freq": 15,
+  "vocab": {
+   "id": "strategy",
+   "word": "strategy",
+   "pos": "명사",
+   "ipa": "ˈstrætədʒi",
+   "meaning": "전략, (문제를 푸는) 방식"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#11.0",
+    "en": "After an hour of codebase analysis, a coordinator wants to try two competing refactoring strategies."
+   },
+   {
+    "sid": "lesson-d2#30.1",
+    "en": "Which exploration strategy gives the most useful context for the lowest cost?"
+   },
+   {
+    "sid": "lesson-d3#3.0",
+    "en": "An architect is designing a configuration strategy for a company rolling out Claude Code to all engineering teams."
+   },
+   {
+    "sid": "mock04#37.4",
+    "en": "What is the most effective decomposition strategy?"
+   },
+   {
+    "sid": "sample01#6.4",
+    "en": "Context window saturation — the cumulative message history exceeds the effective attention range; implement a summarization/compaction strategy"
+   },
+   {
+    "sid": "lesson-d1#11.1",
+    "en": "Both strategies depend on everything that analysis found."
+   },
+   {
+    "sid": "lesson-d2#31.1",
+    "en": "To build this understanding efficiently while keeping context usage low, what is the best incremental strategy?"
+   },
+   {
+    "sid": "mock04#57.3",
+    "en": "What is the most effective retry strategy?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:strategy.0",
+    "en": "...implement a summarization/compaction strategy",
+    "ko": "요약/압축(compaction) 전략을 구현한다"
+   },
+   {
+    "vid": "vocab:strategy.1",
+    "en": "What is the most effective decomposition strategy?",
+    "ko": "가장 효과적인 분할 전략은 무엇일까요?"
+   }
+  ]
+ },
+ {
+  "lemma": "stream",
+  "kind": "vocab-core",
+  "surfaces": [
+   "streaming",
+   "stream"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "stream",
+   "word": "stream",
+   "pos": "동사·명사",
+   "ipa": "striːm",
+   "meaning": "스트리밍하다 — 응답을 다 만들기 전에 생성되는 대로 조금씩 보내다 / 흐름"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#29.4",
+    "en": "Add --output-format stream-json so output is flushed continuously"
+   },
+   {
+    "sid": "lesson-d4#33.6",
+    "en": "Batch the whole agent with stream: true, so the client can catch each tool_use block and send back a tool_result while the request is still running"
+   },
+   {
+    "sid": "sample01#2.6",
+    "en": "Switch to a streaming response to detect completion earlier"
+   },
+   {
+    "sid": "lesson-d3#33.6",
+    "en": "The job needs --output-format stream-json"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:stream.0",
+    "en": "Switch to a streaming response to detect completion earlier",
+    "ko": "스트리밍 응답으로 바꿔 완료를 더 빨리 감지한다"
+   }
+  ]
+ },
+ {
+  "lemma": "stream-json",
+  "kind": "new",
+  "surfaces": [
+   "stream-json"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d3#29.4",
+    "en": "Add --output-format stream-json so output is flushed continuously"
+   },
+   {
+    "sid": "lesson-d3#33.6",
+    "en": "The job needs --output-format stream-json"
+   }
+  ]
+ },
+ {
+  "lemma": "strength",
+  "kind": "new",
+  "surfaces": [
+   "strength"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#41.7",
+    "en": "Keep the blended narrative and add a bibliography of every source at the end, so readers can check the strength of the evidence themselves"
+   }
+  ]
+ },
+ {
+  "lemma": "strengthen",
+  "kind": "vocab-core",
+  "surfaces": [
+   "strengthen"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "strengthen",
+   "word": "strengthen",
+   "pos": "동사",
+   "ipa": "ˈstreŋθən",
+   "meaning": "강화하다, 더 강하게 만들다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#31.6",
+    "en": "Strengthen the system prompt with an emphatic \"ALWAYS classify before extracting\" rule plus two worked examples."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:strengthen.0",
+    "en": "Strengthen the system prompt with an emphatic \"ALWAYS classify before extracting\" rule plus two worked examples.",
+    "ko": "시스템 프롬프트를 강조형 \"ALWAYS classify before extracting\" 규칙과 풀이 예시 두 개로 강화한다"
+   }
+  ]
+ },
+ {
+  "lemma": "strict",
+  "kind": "vocab-core",
+  "surfaces": [
+   "stricter",
+   "strict"
+  ],
+  "freq": 16,
+  "vocab": {
+   "id": "strict",
+   "word": "strict",
+   "pos": "형용사",
+   "ipa": "strɪkt",
+   "meaning": "엄격한"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#9.1",
+    "en": "You want a stricter version for your own use."
+   },
+   {
+    "sid": "lesson-d4#14.0",
+    "en": "An invoice pipeline reads records from a non-strict extraction tool."
+   },
+   {
+    "sid": "mock04#54.1",
+    "en": "After migrating to tool_use with a strict JSON schema, JSON parse failures dropped to zero."
+   },
+   {
+    "sid": "selfcheck-d4-kor#15.0",
+    "en": "strict 도구로 송장을 추출한 뒤 파싱 오류는 사라졌다. 그런데 몇 퍼센트의 결과에서 `line_items` 금액의 합이 `total_amount`와 다르다. 원인과 대응으로 옳은 것은?"
+   },
+   {
+    "sid": "selfcheck-d2-kor#16.2",
+    "en": "이 모델은 any·tool을 지원하지 않으므로, auto와 strict tool use·명시적 지시를 쓰거나 고정 JSON 응답이 필요하면 structured outputs로 바꾼다"
+   },
+   {
+    "sid": "lesson-d4#18.0",
+    "en": "Lab reports are extracted with a strict tool whose schema lists `referring_physician` as a required string."
+   },
+   {
+    "sid": "mock04#29.5",
+    "en": "Use a stricter regex that also requires the word 'final' next to the phrase before the loop is allowed to stop"
+   },
+   {
+    "sid": "selfcheck-d4-kor#15.1",
+    "en": "strict가 제대로 적용되지 않았다 — 도구 정의를 다시 배포한다"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:strict.0",
+    "en": "Apply a uniform strictness reduction across all categories.",
+    "ko": "모든 카테고리에 똑같이 엄격도를 낮춘다."
+   }
+  ]
+ },
+ {
+  "lemma": "string",
+  "kind": "new",
+  "surfaces": [
+   "strings",
+   "string"
+  ],
+  "freq": 17,
+  "sentences": [
+   {
+    "sid": "lesson-d3#24.1",
+    "en": "After the first pass, records with a null middle-name field are being dropped instead of migrated with an empty string."
+   },
+   {
+    "sid": "lesson-d4#18.0",
+    "en": "Lab reports are extracted with a strict tool whose schema lists `referring_physician` as a required string."
+   },
+   {
+    "sid": "lesson-d5#17.0",
+    "en": "A document-search subagent hits an authentication error against a knowledge base and simply returns the string 'search unavailable' to the coordinator."
+   },
+   {
+    "sid": "mock04#43.2",
+    "en": "Its Edit call fails with a non-unique-match error because the target string appears on many lines that must all be updated consistently, and no single surrounding context makes one occurrence unique."
+   },
+   {
+    "sid": "sample01#3.1",
+    "en": "In testing, the model frequently passes malformed date strings (`\"next Tuesday\"`, `\"ASAP\"`) and occasionally swaps the `from` and `to` parameters."
+   },
+   {
+    "sid": "lesson-d1#29.5",
+    "en": "In the matcher string, by writing a regex such as `refund_customer.*category=restricted` so the SDK filters on the argument before invoking the callback"
+   },
+   {
+    "sid": "lesson-d4#21.0",
+    "en": "A medical-records extractor uses strict tool use with a schema that has `patient` and `guardian` objects, each with a required `date_of_birth` string."
+   },
+   {
+    "sid": "lesson-d3#24.3",
+    "en": "Show Claude a sample legacy record whose middle-name field is null, along with the migrated record it should become, with that field as an empty string"
+   }
+  ]
+ },
+ {
+  "lemma": "strip",
+  "kind": "vocab-core",
+  "surfaces": [
+   "strip",
+   "strips"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "strip",
+   "word": "strip",
+   "pos": "동사",
+   "ipa": "strɪp",
+   "meaning": "벗겨 내다, (불필요한 부분을) 걷어 내다·제거하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#32.6",
+    "en": "Keep \"any\" but add a preprocessing stage that strips plain-text inputs out of the batch before dispatch to the subagent."
+   },
+   {
+    "sid": "sample01#15.6",
+    "en": "Post-process responses with regex to strip markdown fences"
+   },
+   {
+    "sid": "mock04#38.6",
+    "en": "The Message Batches API strips prior turns, so the multi-turn context was silently dropped from the trace"
+   },
+   {
+    "sid": "mock04#53.6",
+    "en": "Post-process every response with a regex that strips markdown fences and leading prose before calling JSON.parse() on it."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:strip.0",
+    "en": "Post-process responses with regex to strip markdown fences",
+    "ko": "정규식 후처리로 마크다운 펜스를 제거한다"
+   },
+   {
+    "vid": "vocab:strip.1",
+    "en": "...add a preprocessing stage that strips plain-text inputs out of the batch before dispatch to the subagent.",
+    "ko": "서브에이전트로 보내기 전에 일반 텍스트 입력을 배치에서 걸러 내는 전처리 단계를 추가한다"
+   }
+  ]
+ },
+ {
+  "lemma": "strong",
+  "kind": "new",
+  "surfaces": [
+   "stronger"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d1#33.3",
+    "en": "Make the instruction stronger, for example \"You MUST complete each step in order before moving on\""
+   },
+   {
+    "sid": "lesson-d2#17.3",
+    "en": "Keep fetch_url and add stronger prompt instructions listing which URLs count as documents"
+   },
+   {
+    "sid": "lesson-d3#1.4",
+    "en": "Rewrite the convention with stronger wording such as IMPORTANT or MUST so Claude can't overlook it"
+   },
+   {
+    "sid": "mock04#14.4",
+    "en": "Add a stronger system-prompt instruction explicitly forbidding edits to any file that lives outside the `docs/` directory"
+   }
+  ]
+ },
+ {
+  "lemma": "structure",
+  "kind": "vocab-core",
+  "surfaces": [
+   "structural",
+   "structured",
+   "structure",
+   "structuring",
+   "unstructured"
+  ],
+  "freq": 41,
+  "vocab": {
+   "id": "structure",
+   "word": "structure",
+   "pos": "명사·동사",
+   "ipa": "ˈstrʌktʃər",
+   "meaning": "구조 / 구조화하다 — structured: 정해진 형식을 갖춘, 구조화된"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#34.0",
+    "en": "A team is building an automated pipeline that takes a raw customer support transcript, produces a structured summary, then translates that summary into three fixed target languages."
+   },
+   {
+    "sid": "lesson-d2#11.3",
+    "en": "Under a structured error design, how should this failure be categorized and handled differently from a network timeout on the same tool?"
+   },
+   {
+    "sid": "lesson-d4#17.0",
+    "en": "A team building a resume-parsing tool wants to guarantee that structured candidate data is extracted via a `parse_resume` tool on the current turn."
+   },
+   {
+    "sid": "lesson-d5#30.0",
+    "en": "An architect asks Claude to output a confidence score from 0 to 1 for each extracted field in a structured JSON response."
+   },
+   {
+    "sid": "mock04#16.3",
+    "en": "What is the best way to structure the request?"
+   },
+   {
+    "sid": "sample01#15.0",
+    "en": "A data pipeline needs to extract structured invoice data (vendor, line items, totals) from free-text invoice PDFs."
+   },
+   {
+    "sid": "selfcheck-d4-kor#18.0",
+    "en": "`output_config.format`으로 structured outputs를 켰다. 그래도 응답이 스키마와 맞지 않을 수 있는 경우는?"
+   },
+   {
+    "sid": "selfcheck-d2-kor#16.2",
+    "en": "이 모델은 any·tool을 지원하지 않으므로, auto와 strict tool use·명시적 지시를 쓰거나 고정 JSON 응답이 필요하면 structured outputs로 바꾼다"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:structure.0",
+    "en": "...instead of using the structural `stop_reason` and `tool_use` content blocks",
+    "ko": "구조화된 `stop_reason` 과 `tool_use` 콘텐츠 블록 대신"
+   },
+   {
+    "vid": "vocab:structure.1",
+    "en": "Implement structured trace logging at each step",
+    "ko": "각 단계마다 구조화된 트레이스 로그를 남긴다"
+   }
+  ]
+ },
+ {
+  "lemma": "study",
+  "kind": "new",
+  "surfaces": [
+   "studies",
+   "study"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.0",
+    "en": "In a research pipeline, the coordinator hands the synthesis subagent its findings as smooth prose such as \"studies show adoption doubled\"."
+   },
+   {
+    "sid": "lesson-d5#41.2",
+    "en": "A claim backed by a single study sits next to findings that five sources agree on."
+   }
+  ]
+ },
+ {
+  "lemma": "style",
+  "kind": "new",
+  "surfaces": [
+   "style",
+   "styles"
+  ],
+  "freq": 17,
+  "sentences": [
+   {
+    "sid": "lesson-d1#15.0",
+    "en": "Style-checker, security-scanner and test-coverage reviews are independent of each other, and each takes about ten minutes."
+   },
+   {
+    "sid": "lesson-d3#12.0",
+    "en": "Your project CLAUDE.md holds two things: the one-line rule \"Use pnpm, not npm\" and a 300-line API style guide that matters only when someone writes endpoints."
+   },
+   {
+    "sid": "lesson-d4#4.0",
+    "en": "In a legacy module, most functions use mixed old naming styles."
+   },
+   {
+    "sid": "mock04#17.2",
+    "en": "The team wants the validation style to come out consistent."
+   },
+   {
+    "sid": "lesson-d3#6.0",
+    "en": "A project's single CLAUDE.md has grown to over 500 lines covering code style, testing, security requirements, and deployment steps, and the team notices Claude adheres to instructions less reliably than before."
+   },
+   {
+    "sid": "lesson-d4#5.0",
+    "en": "One review prompt holds security, correctness and style criteria, and each category has its own rules and severity examples."
+   },
+   {
+    "sid": "mock04#50.1",
+    "en": "The CI reviewer posts naming-convention and style comments, but developers report that roughly 60% of these particular comments are wrong or trivial."
+   },
+   {
+    "sid": "lesson-d4#5.1",
+    "en": "Security findings are now being judged against the style threshold."
+   }
+  ]
+ },
+ {
+  "lemma": "subagent",
+  "kind": "vocab-core",
+  "surfaces": [
+   "subagents",
+   "subagent"
+  ],
+  "freq": 237,
+  "vocab": {
+   "id": "subagent",
+   "word": "subagent",
+   "pos": "명사",
+   "ipa": "ˈsʌbˌeɪdʒənt",
+   "meaning": "서브에이전트 — 상위(코디네이터) 에이전트가 일을 맡기려고 띄우는 하위 에이전트"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.0",
+    "en": "In a research pipeline, the coordinator hands the synthesis subagent its findings as smooth prose such as \"studies show adoption doubled\"."
+   },
+   {
+    "sid": "lesson-d2#13.0",
+    "en": "A subagent responsible for enriching customer records calls an internal `lookup_address` tool for 50 customers."
+   },
+   {
+    "sid": "lesson-d5#14.0",
+    "en": "A research coordinator sends a patents subagent to search a patent database."
+   },
+   {
+    "sid": "mock04#22.1",
+    "en": "The synthesis subagent's reports read as generic overviews: in 30% of runs they omit the specific figures and named sources the web-search subagent surfaced."
+   },
+   {
+    "sid": "sample01#10.0",
+    "en": "A multi-agent system has a hub agent that spawns specialist subagents."
+   },
+   {
+    "sid": "lesson-d3#11.3",
+    "en": "Set `context: fork` on the skill, so it runs in a subagent with its own context and hands back just its result to the caller."
+   },
+   {
+    "sid": "lesson-d4#34.3",
+    "en": "Resume the subagent session that wrote the code and ask it to review its own diff"
+   },
+   {
+    "sid": "selfcheck-d4-kor#35.1",
+    "en": "`.claude/agents/reviewer.md`에 `tools: Read, Grep, Glob`만 지정한 리뷰어 subagent를 만든다"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:subagent.0",
+    "en": "A multi-agent system has a hub agent that spawns specialist subagents.",
+    "ko": "허브 에이전트가 전문 서브에이전트들을 생성하는 멀티 에이전트 시스템이 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "subfolder",
+  "kind": "new",
+  "surfaces": [
+   "subfolder"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#16.0",
+    "en": "An infrastructure team wants Claude Code to load Terraform-specific formatting and tagging conventions only when Claude edits files under the terraform/ directory, at any subfolder depth."
+   }
+  ]
+ },
+ {
+  "lemma": "subfolders",
+  "kind": "new",
+  "surfaces": [
+   "subfolders"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#14.0",
+    "en": "An API team wants a rule requiring input validation and OpenAPI comments to apply only to TypeScript files inside src/api/, including deeply nested route handler subfolders, but not to TypeScript files elsewhere in the repo such as src/utils/ or src/components/."
+   }
+  ]
+ },
+ {
+  "lemma": "subject",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "subject",
+   "word": "subject",
+   "pos": "명사·형용사",
+   "ipa": "ˈsʌbdʒɪkt",
+   "meaning": "① (토큰의) 주체 — sub 클레임, 토큰이 누구를 나타내는지 ② 주제, 대상 ③ (be subject to) ~의 적용을 받다"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "subjective",
+  "kind": "vocab-core",
+  "surfaces": [
+   "subjective"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "subjective",
+   "word": "subjective",
+   "pos": "형용사",
+   "ipa": "səbˈdʒektɪv",
+   "meaning": "주관적인"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#11.4",
+    "en": "Keep the sentiment rule and drop the confidence rule, because anger reliably signals a case that needs a person, while self-ratings are subjective"
+   }
+  ]
+ },
+ {
+  "lemma": "submit",
+  "kind": "vocab-core",
+  "surfaces": [
+   "submit",
+   "submits",
+   "submission",
+   "submitter",
+   "submissions",
+   "submitting"
+  ],
+  "freq": 15,
+  "vocab": {
+   "id": "submit",
+   "word": "submit",
+   "pos": "동사",
+   "ipa": "səbˈmɪt",
+   "meaning": "제출하다, (요청·작업을) 넣다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#10.1",
+    "en": "The prompt performs well on those twenty inputs but degrades noticeably whenever a customer submits a new input that is similar to, but not identical to, one of the twenty."
+   },
+   {
+    "sid": "mock04#59.6",
+    "en": "Give each request a custom_id tied to its source, match results by it, and submit a new batch of only the 300 failures."
+   },
+   {
+    "sid": "lesson-d4#24.1",
+    "en": "On one submission, the employee left the project code blank on the physical form, so it does not appear anywhere in the scanned image."
+   },
+   {
+    "sid": "lesson-d4#27.0",
+    "en": "A nightly job submits 60,000 document-review requests in one batch."
+   },
+   {
+    "sid": "lesson-d4#28.2",
+    "en": "Which submission schedule keeps that promise in the worst case?"
+   },
+   {
+    "sid": "lesson-d4#36.0",
+    "en": "An engineer configures the generation session with a high extended thinking effort and instructs the model to reflect deeply on flaws before submitting its code."
+   },
+   {
+    "sid": "lesson-d4#24.4",
+    "en": "Stop the retry loop and send the record to a human reviewer, so the project code can be obtained from the submitter"
+   },
+   {
+    "sid": "lesson-d4#28.3",
+    "en": "Submit once a night, because most batches finish in under an hour, which leaves plenty of slack"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:submit.0",
+    "en": "...match results by it, and submit a new batch of only the 300 failures.",
+    "ko": "그것으로 결과를 매칭하고, 실패한 300건만 담은 새 배치를 제출한다"
+   }
+  ]
+ },
+ {
+  "lemma": "subsequent",
+  "kind": "vocab-core",
+  "surfaces": [
+   "subsequent"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "subsequent",
+   "word": "subsequent",
+   "pos": "형용사",
+   "ipa": "ˈsʌbsɪkwənt",
+   "meaning": "그다음의, 이후의"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#12.2",
+    "en": "Developers notice that after running it, the main session is cluttered with raw output and Claude's subsequent answers in that session degrade in quality."
+   },
+   {
+    "sid": "lesson-d2#19.3",
+    "en": "Set tool_choice to {\"type\": \"tool\", \"name\": \"extract_metadata\"} on the turn where metadata is needed, then let the model choose from the enrichment tools with auto or any on subsequent turns."
+   },
+   {
+    "sid": "sample01#21.2",
+    "en": "Add `cache_control: {type: ephemeral}` to the document block in the system prompt; the first call writes the cache, subsequent calls read it at ~10% cost"
+   },
+   {
+    "sid": "lesson-d2#19.4",
+    "en": "Remove the enrichment tools from the agent's tool list on the first turn and only provide extract_metadata, then after extract_metadata returns, re-add add_tags, link_related, and generate_summary for subsequent turns."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:subsequent.0",
+    "en": "...after running this skill, Claude's subsequent responses are influenced by the exploration discussion.",
+    "ko": "이 스킬을 실행한 뒤 Claude의 이후 응답이 탐색 논의의 영향을 받는다."
+   }
+  ]
+ },
+ {
+  "lemma": "subset",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "subset",
+   "word": "subset",
+   "pos": "명사",
+   "ipa": "ˈsʌbset",
+   "meaning": "일부, 부분집합"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:subset.0",
+    "en": "Implement a routing classifier that enables only the subset of tools appropriate for each request type.",
+    "ko": "요청 유형마다 알맞은 도구 일부만 활성화하는 라우팅 분류기를 구현한다."
+   }
+  ]
+ },
+ {
+  "lemma": "substantially",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "substantially",
+   "word": "substantially",
+   "pos": "부사",
+   "ipa": "səbˈstænʃəli",
+   "meaning": "상당히, 크게"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "substitution",
+  "kind": "vocab-core",
+  "surfaces": [
+   "substitution",
+   "substitute"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "substitution",
+   "word": "substitution",
+   "pos": "명사",
+   "ipa": "ˌsʌbstɪˈtuːʃn",
+   "meaning": "치환, 대체 — 찾은 문자열을 다른 문자열로 바꿔 넣기"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#36.2",
+    "en": "Why is extended thinking insufficient as a substitute for an independent review instance here?"
+   },
+   {
+    "sid": "mock04#43.4",
+    "en": "Switch to a Bash sed global substitution that rewrites every occurrence and bypasses the Edit tool entirely."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:substitution.0",
+    "en": "Switch to a Bash sed global substitution that rewrites every occurrence and bypasses the Edit tool entirely.",
+    "ko": "`Bash` 의 `sed` 전역 치환으로 바꿔 모든 위치를 다시 쓰고, `Edit` 도구는 완전히 우회한다"
+   }
+  ]
+ },
+ {
+  "lemma": "substring",
+  "kind": "new",
+  "surfaces": [
+   "substring"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d1#23.4",
+    "en": "process_refund and issue_refund_note, because the dot and asterisk make it an unanchored regular expression that matches the substring"
+   },
+   {
+    "sid": "lesson-d1#25.6",
+    "en": "The regex matcher `/refund/` is unanchored, so it matches any tool name containing the substring 'refund'. The fix is to anchor the regex with `^` and `$`: `/^refund$/`, ensuring it only matches the exact tool name `refund`."
+   }
+  ]
+ },
+ {
+  "lemma": "subsystem",
+  "kind": "vocab-core",
+  "surfaces": [
+   "subsystem",
+   "subsystems"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "subsystem",
+   "word": "subsystem",
+   "pos": "명사",
+   "ipa": "ˈsʌbsɪstəm",
+   "meaning": "하위 시스템 — 큰 시스템 안에서 한 기능을 맡은 부분"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#37.3",
+    "en": "Production runs show the final plan omits an entire 'dunning' subsystem and a currency-conversion layer that no subagent was ever assigned."
+   },
+   {
+    "sid": "mock04#37.6",
+    "en": "Raise the coordinator's maximum iteration count so it has more turns to notice the missing subsystems on its own while it works"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:subsystem.0",
+    "en": "Production runs show the final plan omits an entire 'dunning' subsystem and a currency-conversion layer that no subagent was ever assigned.",
+    "ko": "최종 계획에서, 어떤 서브에이전트에도 배정되지 않았던 'dunning'(연체 독촉) 하위 시스템 전체와 통화 변환 계층이 빠져 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "subtask",
+  "kind": "vocab-core",
+  "surfaces": [
+   "subtasks",
+   "subtask"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "subtask",
+   "word": "subtask",
+   "pos": "명사",
+   "ipa": "ˈsʌbtæsk",
+   "meaning": "하위 작업 — 큰 작업을 쪼갠 작은 작업 하나"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.4",
+    "en": "An orchestrator LLM that reads each spec and plans the writing, checking and translation subtasks for it"
+   },
+   {
+    "sid": "mock04#25.4",
+    "en": "Use dynamic decomposition: the coordinator spawns follow-up subtasks as earlier findings reveal them"
+   },
+   {
+    "sid": "lesson-d1#32.6",
+    "en": "An adaptive agent that inspects each spec first and then generates subtasks based on what it finds"
+   },
+   {
+    "sid": "lesson-d1#34.4",
+    "en": "An orchestrator agent that plans the summary and translation subtasks per transcript, then delegates them to workers"
+   },
+   {
+    "sid": "lesson-d1#34.6",
+    "en": "An adaptive agent that inspects the transcript first, then generates the subtasks needed to summarize and translate it"
+   },
+   {
+    "sid": "lesson-d1#36.4",
+    "en": "An orchestrator that starts by tracing the missing order IDs through the logs and creates each next subtask from what the last one found, stopping once two rounds turn up nothing new"
+   },
+   {
+    "sid": "lesson-d1#9.0",
+    "en": "A coordinator for a market-research assistant splits the broad query 'analyze the competitive landscape for electric vehicle charging networks' into narrow subtasks like 'find charger connector types' and 'list charging speeds,' each assigned to a separate subagent."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:subtask.0",
+    "en": "Use dynamic decomposition: the coordinator spawns follow-up subtasks as earlier findings reveal them",
+    "ko": "앞선 발견이 새로운 하위 작업을 드러내면 코디네이터가 그에 맞는 후속 하위 작업을 생성한다"
+   }
+  ]
+ },
+ {
+  "lemma": "subtle",
+  "kind": "vocab-core",
+  "surfaces": [
+   "subtle"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "subtle",
+   "word": "subtle",
+   "pos": "형용사",
+   "ipa": "ˈsʌtl",
+   "meaning": "미묘한, 알아차리기 어려운"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#35.1",
+    "en": "Reviewers have noticed that when a single pass tries to hold all 40 files in context at once, subtle cross-file issues are missed and comments become generic."
+   },
+   {
+    "sid": "lesson-d4#34.0",
+    "en": "A team wants a review step that catches the subtle bugs its code-generation agent keeps missing."
+   },
+   {
+    "sid": "sample01#7.0",
+    "en": "A company is building three Claude integrations: (1) a simple FAQ chatbot for a marketing website, (2) a complex multi-step contract analysis agent that must identify subtle legal risks, (3) a high-volume document classification pipeline processing 50,000 documents per day."
+   },
+   {
+    "sid": "lesson-d4#35.1",
+    "en": "QA later finds subtle issues the model missed during that self-review step."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:subtle.0",
+    "en": "...but subtle issues—performance optimizations that break edge cases, cleanups that change behavior—only surface when a different team member reviews the PR.",
+    "ko": "미묘한 이슈(엣지 케이스를 깨는 성능 최적화, 동작을 바꾸는 정리)는 다른 팀원이 PR을 리뷰할 때에야 드러난다."
+   }
+  ]
+ },
+ {
+  "lemma": "subtopic",
+  "kind": "vocab-core",
+  "surfaces": [
+   "subtopics"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "subtopic",
+   "word": "subtopic",
+   "pos": "명사",
+   "ipa": "ˈsʌbtɑːpɪk",
+   "meaning": "하위 주제, 세부 주제"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#25.2",
+    "en": "Reviewers note the reports consistently miss emerging subtopics that only surface mid-investigation."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:subtopic.0",
+    "en": "Reviewers note the reports consistently miss emerging subtopics that only surface mid-investigation.",
+    "ko": "검토자들은 조사 도중에야 드러나는 새로운 하위 주제를 보고서가 일관되게 놓친다고 지적한다."
+   }
+  ]
+ },
+ {
+  "lemma": "subtype",
+  "kind": "new",
+  "surfaces": [
+   "subtype"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "selfcheck-d1-kor#6.0",
+    "en": "Agent SDK로 돌린 작업이 `ResultMessage` subtype `\"error_max_turns\"`로 끝났다. 가장 알맞은 후속 처리는?"
+   },
+   {
+    "sid": "selfcheck-d4-kor#24.0",
+    "en": "Agent SDK에서 `output_format`으로 JSON 스키마를 지정했는데 결과 메시지의 subtype이 `error_max_structured_output_retries`였다. 가장 정확한 해석은?"
+   }
+  ]
+ },
+ {
+  "lemma": "succeed",
+  "kind": "vocab-core",
+  "surfaces": [
+   "succeed",
+   "succeeded",
+   "succeeds"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "succeed",
+   "word": "succeed",
+   "pos": "동사",
+   "ipa": "səkˈsiːd",
+   "meaning": "① 성공하다 ② (뒤를) 잇다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#13.1",
+    "en": "For 47 the lookup succeeds; for 3 the tool returns `isError: true` with `errorCategory: \"permission\"` because the subagent's credentials lack access to those records' region."
+   },
+   {
+    "sid": "lesson-d1#24.8",
+    "en": "Replace the model with a larger, more capable language model that can independently re-read the entire conversation and determine whether the human review actually succeeded, overriding the flag when necessary."
+   },
+   {
+    "sid": "lesson-d5#20.5",
+    "en": "Retry both failures with exponential backoff until they succeed, so the coordinator never has to deal with an error"
+   },
+   {
+    "sid": "mock04#8.4",
+    "en": "Have the agent retry with exponential backoff, since repeated attempts eventually succeed for most declined refunds in the logs."
+   },
+   {
+    "sid": "lesson-d2#8.3",
+    "en": "The agent can't tell that a policy blocked the request. It may keep resending a request that can never succeed, or tell the customer it was a temporary system problem."
+   },
+   {
+    "sid": "lesson-d2#10.4",
+    "en": "The flaw is that `isRetryable` should be `false`. A missing required argument is a validation error, which means the request is malformed. Retrying the same request will not succeed; the agent must correct the input before retrying. Setting `isRetryable` to `true` misleads the agent into thinking the same request can be retried as-is."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:succeed.0",
+    "en": "...since repeated attempts eventually succeed for most declined refunds in the logs.",
+    "ko": "로그상 거절된 환불 대부분이 반복 시도하면 결국 성공하므로"
+   }
+  ]
+ },
+ {
+  "lemma": "success",
+  "kind": "new",
+  "surfaces": [
+   "successes",
+   "success"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d5#19.1",
+    "en": "Instead of surfacing the failure, the subagent returns an empty findings list with status 'success' so the pipeline continues cleanly."
+   },
+   {
+    "sid": "lesson-d2#12.0",
+    "en": "Which report should reach the coordinator when a subagent enriching 50 customer records through `lookup_address` gets 47 successes and 3 `isError: true` results with errorCategory \"permission\" because its credentials don't cover those customers' region?"
+   }
+  ]
+ },
+ {
+  "lemma": "successful",
+  "kind": "new",
+  "surfaces": [
+   "successful"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#10.6",
+    "en": "The `isError` field should be set to `false` because the tool can still return a result when the `customer_id` is missing, making the invocation technically successful."
+   }
+  ]
+ },
+ {
+  "lemma": "successfully",
+  "kind": "new",
+  "surfaces": [
+   "successfully"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#8.5",
+    "en": "The skill was saved correctly, but skill availability only activates after the project's CI pipeline runs once successfully."
+   }
+  ]
+ },
+ {
+  "lemma": "successive",
+  "kind": "vocab-core",
+  "surfaces": [
+   "successive"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "successive",
+   "word": "successive",
+   "pos": "형용사",
+   "ipa": "səkˈsesɪv",
+   "meaning": "연이은, 잇따른"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#37.3",
+    "en": "Run the per-file passes as successive turns in one conversation, so later passes can draw on what earlier files showed"
+   }
+  ]
+ },
+ {
+  "lemma": "successor",
+  "kind": "vocab-core",
+  "surfaces": [
+   "successor"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "successor",
+   "word": "successor",
+   "pos": "명사",
+   "ipa": "səkˈsesər",
+   "meaning": "후속, 뒤를 잇는 것 (successor model: 후속 모델)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#5.0",
+    "en": "A tool named `analyze_content` was originally built to summarize any pasted content, including emails and internal notes, but its description was never updated after a web-specific successor tool was introduced."
+   }
+  ]
+ },
+ {
+  "lemma": "sufficient",
+  "kind": "vocab-core",
+  "surfaces": [
+   "insufficient"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "sufficient",
+   "word": "sufficient",
+   "pos": "형용사",
+   "ipa": "səˈfɪʃnt",
+   "meaning": "충분한 — insufficient: 불충분한"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#36.2",
+    "en": "Why is extended thinking insufficient as a substitute for an independent review instance here?"
+   }
+  ]
+ },
+ {
+  "lemma": "suggest",
+  "kind": "new",
+  "surfaces": [
+   "suggested",
+   "suggests"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d5#41.1",
+    "en": "One source called its result \"early survey data suggests\", but the report says \"data shows\"."
+   },
+   {
+    "sid": "lesson-d4#8.0",
+    "en": "A team's code-review assistant prompt already spells out an exhaustive, itemized rubric for flagging issues, but reviewers still receive inconsistently formatted findings across runs: some list severity before location, others omit the suggested fix entirely."
+   },
+   {
+    "sid": "lesson-d5#18.2",
+    "en": "Failure category, the attempted action, partial results gathered, and suggested alternative approaches"
+   }
+  ]
+ },
+ {
+  "lemma": "suite",
+  "kind": "vocab-core",
+  "surfaces": [
+   "suite"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "suite",
+   "word": "suite",
+   "pos": "명사",
+   "ipa": "swiːt",
+   "meaning": "(테스트 등의) 묶음, 모음"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#12.1",
+    "en": "Your team's /investigate-flaky skill greps the entire test suite, reads dozens of files, and prints verbose exploration before it answers."
+   },
+   {
+    "sid": "lesson-d2#26.5",
+    "en": "Run the test suite through Bash and treat any component missing from the output as untested"
+   },
+   {
+    "sid": "lesson-d3#23.3",
+    "en": "Write a full test suite for the editor first, then implement until every test passes"
+   },
+   {
+    "sid": "mock04#21.1",
+    "en": "In a long debugging session Claude repeatedly runs the full test suite; each run dumps roughly 2,000 lines of passing-test noise into the context."
+   },
+   {
+    "sid": "lesson-d2#27.4",
+    "en": "Use Bash to run the full test suite and count how many components report zero assertions executed against them"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:suite.0",
+    "en": "...developers indicate 6 duplicate scenarios already covered in the existing test suite.",
+    "ko": "개발자들은 그중 6개가 기존 테스트 스위트에 이미 있는 시나리오라고 말한다."
+   }
+  ]
+ },
+ {
+  "lemma": "sum",
+  "kind": "vocab-core",
+  "surfaces": [
+   "sum",
+   "summing"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "sum",
+   "word": "sum",
+   "pos": "명사·동사",
+   "ipa": "sʌm",
+   "meaning": "합계 / (sum to) 합이 ~이 되다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#22.1",
+    "en": "On one order, the extracted line-item amounts sum to $940 while the extracted \"order_total\" field reads $980."
+   },
+   {
+    "sid": "mock04#54.2",
+    "en": "However, reconciliation shows 6% of extracted invoices have line-item amounts that do not sum to the stated invoice total."
+   },
+   {
+    "sid": "lesson-d1#8.5",
+    "en": "Run all five subagents in parallel for every ticket so total latency matches the slowest subagent instead of the sum."
+   },
+   {
+    "sid": "lesson-d4#19.5",
+    "en": "Add checks in their own code after extraction, such as line items summing to the total and cross-field consistency, and send any failures back to Claude"
+   },
+   {
+    "sid": "lesson-d4#22.4",
+    "en": "Semantic error the schema cannot detect; add a post-extraction check that recomputes the line-item sum and compares it to order_total"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:sum.0",
+    "en": "...6% of extracted invoices have line-item amounts that do not sum to the stated invoice total.",
+    "ko": "추출된 인보이스의 6%에서 품목별 금액의 합이 명시된 인보이스 총액과 맞지 않는다."
+   }
+  ]
+ },
+ {
+  "lemma": "summarise",
+  "kind": "new",
+  "surfaces": [
+   "summarising",
+   "summarise"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d1#16.0",
+    "en": "A coordinator delegates market research with a script: \"Search 'chip shortage 2025', open the top five results, summarise each, then search 'chip prices'.\""
+   },
+   {
+    "sid": "lesson-d1#2.1",
+    "en": "Append only the assistant's text blocks, then a user message summarising the tool output in prose"
+   }
+  ]
+ },
+ {
+  "lemma": "summarize",
+  "kind": "vocab-core",
+  "surfaces": [
+   "summarization",
+   "summarizing",
+   "summarize",
+   "re-summarize",
+   "summarizer",
+   "summarizes",
+   "summarized"
+  ],
+  "freq": 31,
+  "vocab": {
+   "id": "summarize",
+   "word": "summarize",
+   "pos": "동사",
+   "ipa": "ˈsʌməraɪz",
+   "meaning": "요약하다 — summarization: 요약"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#6.0",
+    "en": "Your ticket-triage system sends every ticket through five subagents: classifier, sentiment analyzer, knowledge-base search, summarizer and escalation checker."
+   },
+   {
+    "sid": "lesson-d2#4.0",
+    "en": "After a web-extraction tool was added, `analyze_content` kept its old description: \"Summarizes any content: emails, notes, web pages.\""
+   },
+   {
+    "sid": "lesson-d3#30.0",
+    "en": "A platform team wraps `claude` inside a GitHub Actions job that fires on every pull request to summarize the diff."
+   },
+   {
+    "sid": "lesson-d4#16.0",
+    "en": "A pipeline first needs Claude to run extract_metadata on an uploaded document before any enrichment or summarization steps proceed."
+   },
+   {
+    "sid": "lesson-d5#3.0",
+    "en": "A billing support agent has been summarizing a lengthy chat every few turns to keep the prompt short."
+   },
+   {
+    "sid": "mock04#25.1",
+    "en": "For open-ended briefs like 'assess the competitive landscape for X', the coordinator runs a fixed three-step chain (search then summarize then format)."
+   },
+   {
+    "sid": "mock04-kor#9.0",
+    "en": "청구 분쟁처럼 대화가 길어지면, 에이전트는 기록을 간결하게 유지하려고 점진적 요약(progressive summarization)을 사용합니다. 테스터들은 몇 턴이 지나면 에이전트가 앞에서 분명히 나왔던 환불 금액과 주문 날짜를 틀리게 말한다는 것을 발견했습니다. 가장 좋은 해결책은 무엇일까요?"
+   },
+   {
+    "sid": "lesson-d2#5.0",
+    "en": "A tool named `analyze_content` was originally built to summarize any pasted content, including emails and internal notes, but its description was never updated after a web-specific successor tool was introduced."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:summarize.0",
+    "en": "...the agent uses progressive summarization to keep the history compact.",
+    "ko": "에이전트는 기록을 간결하게 유지하려고 점진적 요약(progressive summarization)을 사용한다."
+   }
+  ]
+ }
+]

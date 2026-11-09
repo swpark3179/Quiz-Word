@@ -1,0 +1,2096 @@
+[
+ {
+  "lemma": "see",
+  "skip": null,
+  "word": "see",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "siː",
+  "meaning": "① 보다, 눈으로 확인하다 ② (정보를) 접하다, 입력으로 받다 ③ 이해하다, 알다",
+  "short": "보다, 접하다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "보다, 눈으로 확인하다"
+   },
+   {
+    "pos": "동사",
+    "ko": "(정보를) 접하다, 입력으로 받다"
+   },
+   {
+    "pos": "동사",
+    "ko": "이해하다, 알다"
+   }
+  ],
+  "forms": [
+   "sees",
+   "saw",
+   "seeing",
+   "seen"
+  ],
+  "synonyms": [
+   "notice",
+   "observe"
+  ],
+  "domain": "확인·검증",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d2#30.0",
+    "surface": "seen",
+    "pos": "동사",
+    "sense": "보다, 눈으로 확인하다"
+   },
+   {
+    "sid": "mock04#35.3",
+    "surface": "seeing",
+    "pos": "동사",
+    "sense": "보다, 눈으로 확인하다"
+   },
+   {
+    "sid": "lesson-d1#17.5",
+    "surface": "sees",
+    "pos": "동사",
+    "sense": "(정보를) 접하다, 입력으로 받다"
+   },
+   {
+    "sid": "lesson-d5#14.5",
+    "surface": "sees",
+    "pos": "동사",
+    "sense": "(정보를) 접하다, 입력으로 받다"
+   }
+  ]
+ },
+ {
+  "lemma": "seem",
+  "skip": null,
+  "word": "seem",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "siːm",
+  "meaning": "~인 것 같다, ~처럼 보이다",
+  "short": "~인 것 같다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "~인 것 같다, ~처럼 보이다"
+   }
+  ],
+  "forms": [
+   "seems",
+   "seemed",
+   "seeming"
+  ],
+  "synonyms": [
+   "appear"
+  ],
+  "domain": "상태·성질",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d4#1.5",
+    "surface": "seems",
+    "pos": "동사",
+    "sense": "~인 것 같다, ~처럼 보이다"
+   }
+  ]
+ },
+ {
+  "lemma": "segment",
+  "skip": null,
+  "word": "segment",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈseɡmənt",
+  "meaning": "(전체를 나눈) 조각, 구간 / 나누다",
+  "short": "조각, 구간, 나누다",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "(전체를 나눈) 조각, 구간"
+   },
+   {
+    "pos": "동사",
+    "ko": "나누다, 분할하다"
+   },
+   {
+    "pos": "명사",
+    "ko": "(시장·고객의) 부문, 계층"
+   }
+  ],
+  "forms": [
+   "segments",
+   "segmented",
+   "segmenting"
+  ],
+  "synonyms": [
+   "part",
+   "piece",
+   "section"
+  ],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "sample01#6.5",
+    "surface": "segments",
+    "pos": "명사",
+    "sense": "(전체를 나눈) 조각, 구간"
+   },
+   {
+    "sid": "lesson-d4#29.4",
+    "surface": "segment",
+    "pos": "명사",
+    "sense": "(전체를 나눈) 조각, 구간"
+   },
+   {
+    "sid": "lesson-d4#29.5",
+    "surface": "segment",
+    "pos": "명사",
+    "sense": "(전체를 나눈) 조각, 구간"
+   }
+  ]
+ },
+ {
+  "lemma": "select",
+  "skip": null,
+  "word": "select",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "sɪˈlekt",
+  "meaning": "(여럿 중에서) 고르다, 선택하다",
+  "short": "고르다, 선택하다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(여럿 중에서) 고르다, 선택하다"
+   },
+   {
+    "pos": "형용사",
+    "ko": "엄선된, 선별된"
+   }
+  ],
+  "forms": [
+   "selects",
+   "selected",
+   "selecting"
+  ],
+  "synonyms": [
+   "choose",
+   "pick"
+  ],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "sample01#17.1",
+    "surface": "selects",
+    "pos": "동사",
+    "sense": "(여럿 중에서) 고르다, 선택하다"
+   },
+   {
+    "sid": "lesson-d2#15.5",
+    "surface": "selecting",
+    "pos": "동사",
+    "sense": "(여럿 중에서) 고르다, 선택하다"
+   },
+   {
+    "sid": "mock04#23.7",
+    "surface": "selects",
+    "pos": "동사",
+    "sense": "(여럿 중에서) 고르다, 선택하다"
+   },
+   {
+    "sid": "mock04#33.6",
+    "surface": "selects",
+    "pos": "동사",
+    "sense": "(여럿 중에서) 고르다, 선택하다"
+   }
+  ]
+ },
+ {
+  "lemma": "selection",
+  "skip": null,
+  "word": "selection",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "sɪˈlekʃn",
+  "meaning": "선택, 고르기",
+  "short": "선택, 고르기",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "선택, 고르기"
+   },
+   {
+    "pos": "명사",
+    "ko": "선별된 것들, 선택 대상 모음"
+   }
+  ],
+  "forms": [
+   "selections"
+  ],
+  "synonyms": [
+   "choice"
+  ],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#60.7",
+    "surface": "selection",
+    "pos": "명사",
+    "sense": "선택, 고르기"
+   },
+   {
+    "sid": "sample01#17.3",
+    "surface": "selection",
+    "pos": "명사",
+    "sense": "선택, 고르기"
+   },
+   {
+    "sid": "lesson-d2#15.2",
+    "surface": "selection",
+    "pos": "명사",
+    "sense": "선택, 고르기"
+   },
+   {
+    "sid": "lesson-d2#7.1",
+    "surface": "selection",
+    "pos": "명사",
+    "sense": "선택, 고르기"
+   }
+  ]
+ },
+ {
+  "lemma": "selective",
+  "skip": null,
+  "word": "selective",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "sɪˈlektɪv",
+  "meaning": "선택적인, (일부만) 골라서 하는",
+  "short": "선택적인, 골라서 하는",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "선택적인, (일부만) 골라서 하는"
+   },
+   {
+    "pos": "형용사",
+    "ko": "까다로운, 가리는"
+   }
+  ],
+  "forms": [
+   "selectively"
+  ],
+  "synonyms": [
+   "choosy"
+  ],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#59.4",
+    "surface": "selectively",
+    "pos": "부사",
+    "sense": "선택적인, (일부만) 골라서 하는"
+   }
+  ]
+ },
+ {
+  "lemma": "self",
+  "skip": "fragment"
+ },
+ {
+  "lemma": "self-correct",
+  "skip": null,
+  "word": "self-correct",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌself kəˈrekt",
+  "meaning": "(스스로 오류를 찾아) 바로잡다, 자기 교정하다",
+  "short": "스스로 바로잡다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(스스로 오류를 찾아) 바로잡다, 자기 교정하다"
+   }
+  ],
+  "forms": [
+   "self-corrects",
+   "self-corrected",
+   "self-correcting"
+  ],
+  "synonyms": [],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#54.6",
+    "surface": "self-correct",
+    "pos": "동사",
+    "sense": "(스스로 오류를 찾아) 바로잡다, 자기 교정하다"
+   }
+  ]
+ },
+ {
+  "lemma": "self-hosted",
+  "skip": null,
+  "word": "self-hosted",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌself ˈhoʊstɪd",
+  "meaning": "자체 호스팅의 — 남의 클라우드가 아닌 자기 서버·인프라에서 운영하는",
+  "short": "자체 호스팅의",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "자체 호스팅의, 자기 서버에서 운영하는"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "on-premises"
+  ],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "self-review",
+  "skip": null,
+  "word": "self-review",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌself rɪˈvjuː",
+  "meaning": "자기 검토 — 만든 쪽이 자기 결과물을 스스로 리뷰하는 것",
+  "short": "자기 검토",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "자기 검토(만든 쪽이 스스로 하는 리뷰)"
+   }
+  ],
+  "forms": [
+   "self-reviews"
+  ],
+  "synonyms": [],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#35.1",
+    "surface": "self-review",
+    "pos": "명사",
+    "sense": "자기 검토(만든 쪽이 스스로 하는 리뷰)"
+   },
+   {
+    "sid": "mock04#47.7",
+    "surface": "self-review",
+    "pos": "명사",
+    "sense": "자기 검토(만든 쪽이 스스로 하는 리뷰)"
+   },
+   {
+    "sid": "mock04#52.4",
+    "surface": "self-review",
+    "pos": "명사",
+    "sense": "자기 검토(만든 쪽이 스스로 하는 리뷰)"
+   }
+  ]
+ },
+ {
+  "lemma": "semantic",
+  "skip": null,
+  "word": "semantic",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "sɪˈmæntɪk",
+  "meaning": "의미의, 의미상의 — 글자 모양이 아니라 뜻을 기준으로 한",
+  "short": "의미상의, 의미 기반의",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "의미의, 의미상의"
+   },
+   {
+    "pos": "형용사",
+    "ko": "의미 기반의(글자가 아닌 뜻으로 찾는)"
+   }
+  ],
+  "forms": [
+   "semantically"
+  ],
+  "synonyms": [],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#42.1",
+    "surface": "semantic",
+    "pos": "형용사",
+    "sense": "의미 기반의(글자가 아닌 뜻으로 찾는)"
+   },
+   {
+    "sid": "sample01#9.1",
+    "surface": "semantically",
+    "pos": "부사",
+    "sense": "의미의, 의미상의"
+   },
+   {
+    "sid": "lesson-d4#20.3",
+    "surface": "semantically",
+    "pos": "부사",
+    "sense": "의미의, 의미상의"
+   },
+   {
+    "sid": "lesson-d4#22.4",
+    "surface": "Semantic",
+    "pos": "형용사",
+    "sense": "의미의, 의미상의"
+   }
+  ]
+ },
+ {
+  "lemma": "semiconductor",
+  "skip": null,
+  "word": "semiconductor",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌsemikənˈdʌktər",
+  "meaning": "반도체",
+  "short": "반도체",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "반도체"
+   }
+  ],
+  "forms": [
+   "semiconductors"
+  ],
+  "synonyms": [
+   "chip"
+  ],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#16.4",
+    "surface": "semiconductor",
+    "pos": "명사",
+    "sense": "반도체"
+   }
+  ]
+ },
+ {
+  "lemma": "send",
+  "skip": null,
+  "word": "send",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "send",
+  "meaning": "① 보내다, 전송하다 ② 파견하다, (어떤 곳으로) 투입하다",
+  "short": "보내다, 전송하다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "보내다, 전송하다"
+   },
+   {
+    "pos": "동사",
+    "ko": "파견하다, (어떤 곳으로) 투입하다"
+   }
+  ],
+  "forms": [
+   "sends",
+   "sent",
+   "sending"
+  ],
+  "synonyms": [
+   "transmit",
+   "dispatch",
+   "forward"
+  ],
+  "domain": "이동·전달",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d1#6.0",
+    "surface": "sends",
+    "pos": "동사",
+    "sense": "보내다, 전송하다"
+   },
+   {
+    "sid": "lesson-d2#13.3",
+    "surface": "send",
+    "pos": "동사",
+    "sense": "보내다, 전송하다"
+   },
+   {
+    "sid": "lesson-d4#23.1",
+    "surface": "sent",
+    "pos": "동사",
+    "sense": "보내다, 전송하다"
+   },
+   {
+    "sid": "lesson-d5#14.0",
+    "surface": "sends",
+    "pos": "동사",
+    "sense": "파견하다, (어떤 곳으로) 투입하다"
+   }
+  ]
+ },
+ {
+  "lemma": "senior",
+  "skip": null,
+  "word": "senior",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˈsiːnjər",
+  "meaning": "① 선임의, 경력이 많은 ② 연장자, 고령자",
+  "short": "선임의, 경력이 많은",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "선임의, 경력이 많은"
+   },
+   {
+    "pos": "명사",
+    "ko": "연장자, 고령자"
+   }
+  ],
+  "forms": [
+   "seniors"
+  ],
+  "synonyms": [
+   "experienced"
+  ],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d3#10.1",
+    "surface": "senior",
+    "pos": "형용사",
+    "sense": "선임의, 경력이 많은"
+   },
+   {
+    "sid": "mock04#45.1",
+    "surface": "senior",
+    "pos": "형용사",
+    "sense": "선임의, 경력이 많은"
+   }
+  ]
+ },
+ {
+  "lemma": "sensitive",
+  "skip": null,
+  "word": "sensitive",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈsensətɪv",
+  "meaning": "민감한, 기밀의 (sensitive data: 민감 정보)",
+  "short": "민감한, 기밀의",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "민감한, 기밀의"
+   },
+   {
+    "pos": "형용사",
+    "ko": "예민한, 쉽게 반응하는"
+   }
+  ],
+  "forms": [
+   "sensitivity"
+  ],
+  "synonyms": [
+   "confidential"
+  ],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "sentence",
+  "skip": null,
+  "word": "sentence",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈsentəns",
+  "meaning": "① 문장 ② 형량, 선고 ③ (형을) 선고하다",
+  "short": "문장",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "문장"
+   },
+   {
+    "pos": "명사",
+    "ko": "형량, 판결"
+   },
+   {
+    "pos": "동사",
+    "ko": "(형을) 선고하다"
+   }
+  ],
+  "forms": [
+   "sentences",
+   "sentenced",
+   "sentencing"
+  ],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "mock04#34.2",
+    "surface": "sentences",
+    "pos": "명사",
+    "sense": "문장"
+   },
+   {
+    "sid": "lesson-d1#10.5",
+    "surface": "sentences",
+    "pos": "명사",
+    "sense": "문장"
+   },
+   {
+    "sid": "lesson-d4#10.5",
+    "surface": "sentence",
+    "pos": "명사",
+    "sense": "문장"
+   },
+   {
+    "sid": "mock04#53.1",
+    "surface": "sentence",
+    "pos": "명사",
+    "sense": "문장"
+   }
+  ]
+ },
+ {
+  "lemma": "sentiment",
+  "skip": null,
+  "word": "sentiment",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsentɪmənt",
+  "meaning": "감정, (글에 담긴) 정서",
+  "short": "감정, 정서",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "감정, (글에 담긴) 정서"
+   },
+   {
+    "pos": "명사",
+    "ko": "(정서적인) 견해, 의견"
+   }
+  ],
+  "forms": [
+   "sentiments"
+  ],
+  "synonyms": [
+   "feeling",
+   "emotion"
+  ],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#6.0",
+    "surface": "sentiment",
+    "pos": "명사",
+    "sense": "감정, (글에 담긴) 정서"
+   },
+   {
+    "sid": "lesson-d5#11.0",
+    "surface": "sentiment",
+    "pos": "명사",
+    "sense": "감정, (글에 담긴) 정서"
+   },
+   {
+    "sid": "mock04#50.7",
+    "surface": "sentiment",
+    "pos": "명사",
+    "sense": "감정, (글에 담긴) 정서"
+   },
+   {
+    "sid": "lesson-d5#6.0",
+    "surface": "sentiment",
+    "pos": "명사",
+    "sense": "감정, (글에 담긴) 정서"
+   }
+  ]
+ },
+ {
+  "lemma": "separate",
+  "skip": null,
+  "word": "separate",
+  "pos": [
+   "형용사",
+   "동사"
+  ],
+  "ipa": "ˈsepərət",
+  "meaning": "① 별개의, 따로 떨어진 ② 분리하다, 떼어 놓다",
+  "short": "별개의, 분리하다",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "별개의, 따로 떨어진"
+   },
+   {
+    "pos": "동사",
+    "ko": "분리하다, 떼어 놓다"
+   }
+  ],
+  "forms": [
+   "separates",
+   "separated",
+   "separating",
+   "separately"
+  ],
+  "synonyms": [
+   "distinct",
+   "divide",
+   "isolate"
+  ],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#6.0",
+    "surface": "separate",
+    "pos": "형용사",
+    "sense": "별개의, 따로 떨어진"
+   },
+   {
+    "sid": "sample01#16.7",
+    "surface": "separate",
+    "pos": "동사",
+    "sense": "분리하다, 떼어 놓다"
+   },
+   {
+    "sid": "lesson-d1#17.1",
+    "surface": "Separately",
+    "pos": "부사",
+    "sense": "별개의, 따로 떨어진"
+   },
+   {
+    "sid": "lesson-d3#11.1",
+    "surface": "separate",
+    "pos": "형용사",
+    "sense": "별개의, 따로 떨어진"
+   }
+  ]
+ },
+ {
+  "lemma": "sequence",
+  "skip": null,
+  "word": "sequence",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsiːkwəns",
+  "meaning": "순서, 차례 / (순서대로 이어진) 연속",
+  "short": "순서, 연속",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "순서, 차례"
+   },
+   {
+    "pos": "명사",
+    "ko": "(순서대로 이어진) 연속"
+   },
+   {
+    "pos": "동사",
+    "ko": "순서대로 배열·실행하다"
+   }
+  ],
+  "forms": [
+   "sequences",
+   "sequenced",
+   "sequencing"
+  ],
+  "synonyms": [
+   "order",
+   "series"
+  ],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d3#10.5",
+    "surface": "sequence",
+    "pos": "명사",
+    "sense": "순서, 차례"
+   },
+   {
+    "sid": "mock04#16.5",
+    "surface": "sequence",
+    "pos": "명사",
+    "sense": "순서, 차례"
+   },
+   {
+    "sid": "lesson-d1#32.5",
+    "surface": "sequenced",
+    "pos": "동사",
+    "sense": "순서대로 배열·실행하다"
+   },
+   {
+    "sid": "lesson-d1#33.5",
+    "surface": "sequences",
+    "pos": "동사",
+    "sense": "순서대로 배열·실행하다"
+   }
+  ]
+ },
+ {
+  "lemma": "sequential",
+  "skip": null,
+  "word": "sequential",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "sɪˈkwenʃl",
+  "meaning": "순차적인 — 하나씩 차례로 하는",
+  "short": "순차적인",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "순차적인, 하나씩 차례로 하는"
+   }
+  ],
+  "forms": [
+   "sequentially"
+  ],
+  "synonyms": [
+   "serial",
+   "successive"
+  ],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#16.2",
+    "surface": "sequential",
+    "pos": "형용사",
+    "sense": "순차적인, 하나씩 차례로 하는"
+   },
+   {
+    "sid": "lesson-d1#8.4",
+    "surface": "sequentially",
+    "pos": "부사",
+    "sense": "순차적인, 하나씩 차례로 하는"
+   },
+   {
+    "sid": "lesson-d3#27.2",
+    "surface": "sequentially",
+    "pos": "부사",
+    "sense": "순차적인, 하나씩 차례로 하는"
+   },
+   {
+    "sid": "mock04#16.6",
+    "surface": "sequential",
+    "pos": "형용사",
+    "sense": "순차적인, 하나씩 차례로 하는"
+   }
+  ]
+ },
+ {
+  "lemma": "serialize",
+  "skip": null,
+  "word": "serialize",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈsɪriəlaɪz",
+  "meaning": "① 순서대로 하나씩 처리하다 (동시에 하지 않게) ② (데이터를) 직렬화하다 — 저장·전송용 형식으로 바꾸다",
+  "short": "순서대로 처리하다, 직렬화하다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "순서대로 하나씩 처리하다(동시에 하지 않게)"
+   },
+   {
+    "pos": "동사",
+    "ko": "(데이터를) 직렬화하다"
+   }
+  ],
+  "forms": [
+   "serializes",
+   "serialized",
+   "serializing",
+   "serialization"
+  ],
+  "synonyms": [],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "serve",
+  "skip": null,
+  "word": "serve",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "sɜːrv",
+  "meaning": "① (사용자에게) 서비스를 제공하다, 응대하다 ② (음식 등을) 내어 주다 ③ (역할을) 하다, 기능하다",
+  "short": "서비스를 제공하다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(사용자에게) 서비스를 제공하다, 응대하다"
+   },
+   {
+    "pos": "동사",
+    "ko": "(음식 등을) 내어 주다"
+   },
+   {
+    "pos": "동사",
+    "ko": "(역할을) 하다, 기능하다"
+   }
+  ],
+  "forms": [
+   "serves",
+   "served",
+   "serving"
+  ],
+  "synonyms": [
+   "provide"
+  ],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#40.0",
+    "surface": "serves",
+    "pos": "동사",
+    "sense": "(사용자에게) 서비스를 제공하다, 응대하다"
+   }
+  ]
+ },
+ {
+  "lemma": "server",
+  "skip": null,
+  "word": "server",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsɜːrvər",
+  "meaning": "① 서버 (요청에 응답하는 컴퓨터·프로그램) ② (식당의) 종업원",
+  "short": "서버",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "서버(요청에 응답하는 컴퓨터·프로그램)"
+   },
+   {
+    "pos": "명사",
+    "ko": "(식당의) 종업원"
+   }
+  ],
+  "forms": [
+   "servers"
+  ],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#31.0",
+    "surface": "servers",
+    "pos": "명사",
+    "sense": "서버(요청에 응답하는 컴퓨터·프로그램)"
+   },
+   {
+    "sid": "lesson-d2#11.2",
+    "surface": "server",
+    "pos": "명사",
+    "sense": "서버(요청에 응답하는 컴퓨터·프로그램)"
+   },
+   {
+    "sid": "mock04#40.1",
+    "surface": "server",
+    "pos": "명사",
+    "sense": "서버(요청에 응답하는 컴퓨터·프로그램)"
+   },
+   {
+    "sid": "sample01#4.0",
+    "surface": "server",
+    "pos": "명사",
+    "sense": "서버(요청에 응답하는 컴퓨터·프로그램)"
+   }
+  ]
+ },
+ {
+  "lemma": "server-sent events",
+  "skip": null,
+  "word": "server-sent events",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˌsɜːrvər sent ɪˈvents",
+  "meaning": "서버 전송 이벤트(SSE) — 서버가 HTTP 연결 하나로 이벤트를 차례로 흘려보내는 방식 (스트리밍)",
+  "short": "서버 전송 이벤트",
+  "senses": [
+   {
+    "pos": "명사구",
+    "ko": "서버 전송 이벤트(SSE, 스트리밍 방식)"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "SSE"
+  ],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "service",
+  "skip": null,
+  "word": "service",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsɜːrvɪs",
+  "meaning": "① 서비스 (독립적으로 실행되는 시스템 단위) ② (고객 대상) 서비스, 용역 ③ 점검, 정비",
+  "short": "서비스",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "서비스(독립적으로 실행되는 시스템 단위)"
+   },
+   {
+    "pos": "명사",
+    "ko": "(고객 대상) 서비스, 용역"
+   },
+   {
+    "pos": "명사",
+    "ko": "점검, 정비"
+   }
+  ],
+  "forms": [
+   "services",
+   "serviced",
+   "servicing"
+  ],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#37.0",
+    "surface": "service",
+    "pos": "명사",
+    "sense": "서비스(독립적으로 실행되는 시스템 단위)"
+   },
+   {
+    "sid": "mock04#44.1",
+    "surface": "services",
+    "pos": "명사",
+    "sense": "서비스(독립적으로 실행되는 시스템 단위)"
+   },
+   {
+    "sid": "lesson-d5#25.1",
+    "surface": "service",
+    "pos": "명사",
+    "sense": "서비스(독립적으로 실행되는 시스템 단위)"
+   },
+   {
+    "sid": "lesson-d4#20.0",
+    "surface": "services",
+    "pos": "명사",
+    "sense": "(고객 대상) 서비스, 용역"
+   }
+  ]
+ },
+ {
+  "lemma": "service account",
+  "skip": null,
+  "word": "service account",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈsɜːrvɪs əˌkaʊnt",
+  "meaning": "서비스 계정 — 사람이 아닌 프로그램·자동 작업이 쓰는 계정",
+  "short": "서비스 계정",
+  "senses": [
+   {
+    "pos": "명사구",
+    "ko": "서비스 계정(프로그램·자동 작업용 계정)"
+   }
+  ],
+  "forms": [
+   "service accounts"
+  ],
+  "synonyms": [],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "session",
+  "skip": null,
+  "word": "session",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈseʃn",
+  "meaning": "세션 — (대화·작업이) 시작부터 끝까지 이어지는 한 단위",
+  "short": "세션, 작업 단위",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "세션(대화·작업의 시작부터 끝까지 한 단위)"
+   },
+   {
+    "pos": "명사",
+    "ko": "(어떤 활동을 하는) 시간, 회기"
+   }
+  ],
+  "forms": [
+   "sessions"
+  ],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#38.0",
+    "surface": "session",
+    "pos": "명사",
+    "sense": "세션(대화·작업의 시작부터 끝까지 한 단위)"
+   },
+   {
+    "sid": "lesson-d3#1.0",
+    "surface": "session",
+    "pos": "명사",
+    "sense": "세션(대화·작업의 시작부터 끝까지 한 단위)"
+   },
+   {
+    "sid": "lesson-d4#36.0",
+    "surface": "session",
+    "pos": "명사",
+    "sense": "세션(대화·작업의 시작부터 끝까지 한 단위)"
+   },
+   {
+    "sid": "mock04#1.3",
+    "surface": "sessions",
+    "pos": "명사",
+    "sense": "세션(대화·작업의 시작부터 끝까지 한 단위)"
+   }
+  ]
+ },
+ {
+  "lemma": "session-level",
+  "skip": null,
+  "word": "session-level",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈseʃn ˈlevl",
+  "meaning": "세션 단위의, 세션 범위의",
+  "short": "세션 단위의",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "세션 단위의, 세션 범위의"
+   }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#42.2",
+    "surface": "session-level",
+    "pos": "형용사",
+    "sense": "세션 단위의, 세션 범위의"
+   },
+   {
+    "sid": "lesson-d1#42.5",
+    "surface": "Session-level",
+    "pos": "형용사",
+    "sense": "세션 단위의, 세션 범위의"
+   }
+  ]
+ },
+ {
+  "lemma": "setting",
+  "skip": null,
+  "word": "setting",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsetɪŋ",
+  "meaning": "① 설정, 설정값 ② 환경, 배경",
+  "short": "설정, 설정값",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "설정, 설정값"
+   },
+   {
+    "pos": "명사",
+    "ko": "환경, 배경"
+   }
+  ],
+  "forms": [
+   "settings"
+  ],
+  "synonyms": [
+   "configuration",
+   "option"
+  ],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d3#3.1",
+    "surface": "settings",
+    "pos": "명사",
+    "sense": "설정, 설정값"
+   },
+   {
+    "sid": "sample01#13.0",
+    "surface": "settings",
+    "pos": "명사",
+    "sense": "설정, 설정값"
+   },
+   {
+    "sid": "lesson-d3#19.5",
+    "surface": "settings",
+    "pos": "명사",
+    "sense": "설정, 설정값"
+   },
+   {
+    "sid": "lesson-d3#2.4",
+    "surface": "settings",
+    "pos": "명사",
+    "sense": "설정, 설정값"
+   }
+  ]
+ },
+ {
+  "lemma": "settle",
+  "skip": null,
+  "word": "settle",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈsetl",
+  "meaning": "① (settle on) ~로 정하다, 결정하다 ② (상태가) 안정되다, 진정되다",
+  "short": "~로 정하다, 안정되다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(settle on) ~로 정하다, 결정하다"
+   },
+   {
+    "pos": "동사",
+    "ko": "(상태가) 안정되다, 진정되다"
+   },
+   {
+    "pos": "동사",
+    "ko": "(분쟁·비용을) 해결하다, 정산하다"
+   }
+  ],
+  "forms": [
+   "settles",
+   "settled",
+   "settling"
+  ],
+  "synonyms": [
+   "decide",
+   "resolve"
+  ],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d3#11.0",
+    "surface": "settling",
+    "pos": "동사",
+    "sense": "(settle on) ~로 정하다, 결정하다"
+   },
+   {
+    "sid": "lesson-d3#20.5",
+    "surface": "settle",
+    "pos": "동사",
+    "sense": "(settle on) ~로 정하다, 결정하다"
+   },
+   {
+    "sid": "lesson-d3#22.4",
+    "surface": "settled",
+    "pos": "동사",
+    "sense": "(settle on) ~로 정하다, 결정하다"
+   }
+  ]
+ },
+ {
+  "lemma": "setup",
+  "skip": null,
+  "word": "setup",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsetʌp",
+  "meaning": "① 구성, 설정 방식 ② (설치·준비) 초기 설정 작업",
+  "short": "구성, 설정 방식",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "구성, 설정 방식"
+   },
+   {
+    "pos": "명사",
+    "ko": "(설치·준비) 초기 설정 작업"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "configuration",
+   "arrangement"
+  ],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d2#20.1",
+    "surface": "setup",
+    "pos": "명사",
+    "sense": "구성, 설정 방식"
+   },
+   {
+    "sid": "lesson-d4#34.1",
+    "surface": "setup",
+    "pos": "명사",
+    "sense": "구성, 설정 방식"
+   },
+   {
+    "sid": "lesson-d3#17.2",
+    "surface": "setup",
+    "pos": "명사",
+    "sense": "구성, 설정 방식"
+   },
+   {
+    "sid": "lesson-d3#31.1",
+    "surface": "setup",
+    "pos": "명사",
+    "sense": "구성, 설정 방식"
+   }
+  ]
+ },
+ {
+  "lemma": "several",
+  "skip": null,
+  "word": "several",
+  "pos": [
+   "한정사",
+   "대명사"
+  ],
+  "ipa": "ˈsevrəl",
+  "meaning": "① 몇몇의, 여러 ② 몇몇, 여러 개",
+  "short": "몇몇의, 여러",
+  "senses": [
+   {
+    "pos": "한정사",
+    "ko": "몇몇의, 여러"
+   },
+   {
+    "pos": "대명사",
+    "ko": "몇몇, 여러 개"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "a few",
+   "multiple"
+  ],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d3#11.0",
+    "surface": "several",
+    "pos": "한정사",
+    "sense": "몇몇의, 여러"
+   },
+   {
+    "sid": "lesson-d2#14.0",
+    "surface": "several",
+    "pos": "대명사",
+    "sense": "몇몇, 여러 개"
+   },
+   {
+    "sid": "lesson-d4#20.1",
+    "surface": "several",
+    "pos": "한정사",
+    "sense": "몇몇의, 여러"
+   },
+   {
+    "sid": "lesson-d1#26.2",
+    "surface": "several",
+    "pos": "한정사",
+    "sense": "몇몇의, 여러"
+   }
+  ]
+ },
+ {
+  "lemma": "severe",
+  "skip": null,
+  "word": "severe",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "sɪˈvɪr",
+  "meaning": "심각한, 극심한",
+  "short": "심각한, 극심한",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "심각한, 극심한"
+   },
+   {
+    "pos": "형용사",
+    "ko": "엄격한, 가혹한"
+   }
+  ],
+  "forms": [
+   "severely"
+  ],
+  "synonyms": [
+   "serious",
+   "critical",
+   "grave"
+  ],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#46.2",
+    "surface": "severe",
+    "pos": "형용사",
+    "sense": "심각한, 극심한"
+   },
+   {
+    "sid": "lesson-d3#27.5",
+    "surface": "severe",
+    "pos": "형용사",
+    "sense": "심각한, 극심한"
+   },
+   {
+    "sid": "mock04#46.6",
+    "surface": "severe",
+    "pos": "형용사",
+    "sense": "심각한, 극심한"
+   }
+  ]
+ },
+ {
+  "lemma": "severity",
+  "skip": null,
+  "word": "severity",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "sɪˈverəti",
+  "meaning": "심각도",
+  "short": "심각도",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "심각도"
+   },
+   {
+    "pos": "명사",
+    "ko": "엄중함, 가혹함"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "seriousness",
+   "gravity"
+  ],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d4#5.0",
+    "surface": "severity",
+    "pos": "명사",
+    "sense": "심각도"
+   },
+   {
+    "sid": "lesson-d5#16.4",
+    "surface": "severity",
+    "pos": "명사",
+    "sense": "심각도"
+   },
+   {
+    "sid": "mock04#46.4",
+    "surface": "severity",
+    "pos": "명사",
+    "sense": "심각도"
+   },
+   {
+    "sid": "lesson-d4#6.0",
+    "surface": "severity",
+    "pos": "명사",
+    "sense": "심각도"
+   }
+  ]
+ },
+ {
+  "lemma": "shallow",
+  "skip": null,
+  "word": "shallow",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈʃæloʊ",
+  "meaning": "얕은 (shallow clone/fetch: 최근 이력만 가져오는)",
+  "short": "얕은, 피상적인",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "얕은 (shallow clone/fetch: 최근 이력만 가져오는)"
+   },
+   {
+    "pos": "형용사",
+    "ko": "피상적인, 깊이 없는"
+   }
+  ],
+  "forms": [
+   "shallower"
+  ],
+  "synonyms": [
+   "superficial"
+  ],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d3#30.6",
+    "surface": "shallow",
+    "pos": "형용사",
+    "sense": "얕은 (shallow clone/fetch: 최근 이력만 가져오는)"
+   }
+  ]
+ },
+ {
+  "lemma": "shard",
+  "skip": null,
+  "word": "shard",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ʃɑːrd",
+  "meaning": "샤드 — 큰 데이터베이스를 나눈 조각 / (sharded) 여러 조각으로 나눠 저장한",
+  "short": "샤드, 데이터 조각",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "샤드(큰 데이터베이스를 나눈 조각)"
+   },
+   {
+    "pos": "동사",
+    "ko": "(데이터를) 여러 조각으로 나눠 저장하다"
+   }
+  ],
+  "forms": [
+   "shards",
+   "sharded",
+   "sharding"
+  ],
+  "synonyms": [
+   "partition"
+  ],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "share",
+  "skip": null,
+  "word": "share",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ʃer",
+  "meaning": "① 공유하다, 함께 쓰다 ② 몫, 비율",
+  "short": "공유하다, 몫",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "공유하다, 함께 쓰다"
+   },
+   {
+    "pos": "명사",
+    "ko": "몫, 비율"
+   }
+  ],
+  "forms": [
+   "shares",
+   "shared",
+   "sharing"
+  ],
+  "synonyms": [
+   "split"
+  ],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#19.1",
+    "surface": "share",
+    "pos": "명사",
+    "sense": "몫, 비율"
+   },
+   {
+    "sid": "lesson-d2#16.0",
+    "surface": "shares",
+    "pos": "동사",
+    "sense": "공유하다, 함께 쓰다"
+   },
+   {
+    "sid": "lesson-d3#10.2",
+    "surface": "shared",
+    "pos": "동사",
+    "sense": "공유하다, 함께 쓰다"
+   },
+   {
+    "sid": "lesson-d5#14.4",
+    "surface": "share",
+    "pos": "동사",
+    "sense": "공유하다, 함께 쓰다"
+   }
+  ]
+ },
+ {
+  "lemma": "shell",
+  "skip": null,
+  "word": "shell",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ʃel",
+  "meaning": "① 셸 (명령어를 입력해 실행하는 프로그램) ② 껍데기, 껍질",
+  "short": "셸(명령어 실행 환경)",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "셸(명령어를 입력해 실행하는 프로그램)"
+   },
+   {
+    "pos": "명사",
+    "ko": "껍데기, 껍질"
+   }
+  ],
+  "forms": [
+   "shells"
+  ],
+  "synonyms": [
+   "terminal"
+  ],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#14.1",
+    "surface": "shell",
+    "pos": "명사",
+    "sense": "셸(명령어를 입력해 실행하는 프로그램)"
+   },
+   {
+    "sid": "lesson-d2#20.2",
+    "surface": "shell",
+    "pos": "명사",
+    "sense": "셸(명령어를 입력해 실행하는 프로그램)"
+   },
+   {
+    "sid": "lesson-d3#32.5",
+    "surface": "shell",
+    "pos": "명사",
+    "sense": "셸(명령어를 입력해 실행하는 프로그램)"
+   },
+   {
+    "sid": "mock04#46.1",
+    "surface": "shell",
+    "pos": "명사",
+    "sense": "셸(명령어를 입력해 실행하는 프로그램)"
+   }
+  ]
+ },
+ {
+  "lemma": "shift",
+  "skip": null,
+  "word": "shift",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ʃɪft",
+  "meaning": "(서서히) 옮기다, 바꾸다 / 전환",
+  "short": "옮기다, 바꾸다, 전환",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(서서히) 옮기다, 바꾸다"
+   },
+   {
+    "pos": "명사",
+    "ko": "전환, 변화"
+   },
+   {
+    "pos": "명사",
+    "ko": "교대 근무(조)"
+   }
+  ],
+  "forms": [
+   "shifts",
+   "shifted",
+   "shifting"
+  ],
+  "synonyms": [
+   "move",
+   "change",
+   "switch"
+  ],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "ship",
+  "skip": null,
+  "word": "ship",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ʃɪp",
+  "meaning": "① (주문을) 발송하다, 배송하다 ② (제품·기능을) 출시하다",
+  "short": "발송하다, 출시하다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "(주문을) 발송하다, 배송하다"
+   },
+   {
+    "pos": "동사",
+    "ko": "(제품·기능을) 출시하다"
+   },
+   {
+    "pos": "명사",
+    "ko": "배, 선박"
+   }
+  ],
+  "forms": [
+   "ships",
+   "shipped",
+   "shipping"
+  ],
+  "synonyms": [
+   "deliver",
+   "dispatch"
+  ],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   {
+    "vid": "vocab:ship.0",
+    "surface": "shipped",
+    "pos": "동사",
+    "sense": "(주문을) 발송하다, 배송하다"
+   },
+   {
+    "sid": "mock04#34.2",
+    "surface": "ship",
+    "pos": "동사",
+    "sense": "(제품·기능을) 출시하다"
+   },
+   {
+    "sid": "lesson-d5#5.0",
+    "surface": "shipping",
+    "pos": "동사",
+    "sense": "(주문을) 발송하다, 배송하다"
+   }
+  ]
+ },
+ {
+  "lemma": "short",
+  "skip": null,
+  "word": "short",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ʃɔːrt",
+  "meaning": "① 짧은, 간결한 ② 부족한, 모자라는",
+  "short": "짧은, 간결한",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "짧은, 간결한"
+   },
+   {
+    "pos": "형용사",
+    "ko": "부족한, 모자라는"
+   }
+  ],
+  "forms": [
+   "shorter",
+   "shortest"
+  ],
+  "synonyms": [
+   "brief",
+   "concise"
+  ],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d4#12.2",
+    "surface": "short",
+    "pos": "형용사",
+    "sense": "짧은, 간결한"
+   },
+   {
+    "sid": "lesson-d5#3.0",
+    "surface": "short",
+    "pos": "형용사",
+    "sense": "짧은, 간결한"
+   },
+   {
+    "sid": "lesson-d1#17.6",
+    "surface": "shorter",
+    "pos": "형용사",
+    "sense": "짧은, 간결한"
+   },
+   {
+    "sid": "mock04#18.5",
+    "surface": "short",
+    "pos": "형용사",
+    "sense": "짧은, 간결한"
+   }
+  ]
+ },
+ {
+  "lemma": "short-lived",
+  "skip": null,
+  "word": "short-lived",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌʃɔːrt ˈlɪvd",
+  "meaning": "수명이 짧은, 잠깐만 유지되는",
+  "short": "수명이 짧은",
+  "senses": [
+   {
+    "pos": "형용사",
+    "ko": "수명이 짧은, 잠깐만 유지되는"
+   }
+  ],
+  "forms": [],
+  "synonyms": [
+   "temporary",
+   "brief"
+  ],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "mock04#41.8",
+    "surface": "short-lived",
+    "pos": "형용사",
+    "sense": "수명이 짧은, 잠깐만 유지되는"
+   }
+  ]
+ },
+ {
+  "lemma": "shortage",
+  "skip": null,
+  "word": "shortage",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈʃɔːrtɪdʒ",
+  "meaning": "부족, 품귀",
+  "short": "부족, 품귀",
+  "senses": [
+   {
+    "pos": "명사",
+    "ko": "부족, 품귀"
+   }
+  ],
+  "forms": [
+   "shortages"
+  ],
+  "synonyms": [
+   "lack",
+   "scarcity"
+  ],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#16.0",
+    "surface": "shortage",
+    "pos": "명사",
+    "sense": "부족, 품귀"
+   },
+   {
+    "sid": "lesson-d1#16.4",
+    "surface": "shortage",
+    "pos": "명사",
+    "sense": "부족, 품귀"
+   }
+  ]
+ },
+ {
+  "lemma": "shorten",
+  "skip": null,
+  "word": "shorten",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈʃɔːrtn",
+  "meaning": "짧게 줄이다, 단축하다",
+  "short": "짧게 줄이다, 단축하다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "짧게 줄이다, 단축하다"
+   }
+  ],
+  "forms": [
+   "shortens",
+   "shortened",
+   "shortening"
+  ],
+  "synonyms": [
+   "cut",
+   "reduce",
+   "abbreviate"
+  ],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   {
+    "sid": "lesson-d1#10.5",
+    "surface": "shorten",
+    "pos": "동사",
+    "sense": "짧게 줄이다, 단축하다"
+   },
+   {
+    "sid": "lesson-d5#3.4",
+    "surface": "Shorten",
+    "pos": "동사",
+    "sense": "짧게 줄이다, 단축하다"
+   },
+   {
+    "sid": "lesson-d1#16.4",
+    "surface": "Shorten",
+    "pos": "동사",
+    "sense": "짧게 줄이다, 단축하다"
+   },
+   {
+    "sid": "lesson-d1#20.3",
+    "surface": "shorten",
+    "pos": "동사",
+    "sense": "짧게 줄이다, 단축하다"
+   }
+  ]
+ },
+ {
+  "lemma": "show",
+  "skip": null,
+  "word": "show",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ʃoʊ",
+  "meaning": "① 보여 주다, 제시하다 ② (자료·로그가) 보여 주다, 나타내다 ③ 증명하다",
+  "short": "보여 주다, 나타내다",
+  "senses": [
+   {
+    "pos": "동사",
+    "ko": "보여 주다, 제시하다"
+   },
+   {
+    "pos": "동사",
+    "ko": "(자료·로그가) 나타내다, 보여 주다"
+   },
+   {
+    "pos": "동사",
+    "ko": "증명하다, 입증하다"
+   }
+  ],
+  "forms": [
+   "shows",
+   "showed",
+   "shown",
+   "showing"
+  ],
+  "synonyms": [
+   "display",
+   "demonstrate",
+   "indicate"
+  ],
+  "domain": "요청·소통",
+  "basic": true,
+  "contexts": [
+   {
+    "sid": "lesson-d3#24.3",
+    "surface": "Show",
+    "pos": "동사",
+    "sense": "보여 주다, 제시하다"
+   },
+   {
+    "sid": "sample01#1.0",
+    "surface": "shown",
+    "pos": "동사",
+    "sense": "보여 주다, 제시하다"
+   },
+   {
+    "sid": "lesson-d2#15.0",
+    "surface": "shows",
+    "pos": "동사",
+    "sense": "(자료·로그가) 나타내다, 보여 주다"
+   },
+   {
+    "sid": "lesson-d1#10.0",
+    "surface": "show",
+    "pos": "동사",
+    "sense": "증명하다, 입증하다"
+   }
+  ]
+ }
+]

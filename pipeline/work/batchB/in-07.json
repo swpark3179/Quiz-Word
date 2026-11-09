@@ -1,0 +1,509 @@
+[
+ {
+  "key": "lesson-d3#24",
+  "koRef": "데이터 엔지니어가 레거시 고객 레코드를 새 스키마로 바꾸는 마이그레이션 스크립트를 Claude Code와 함께 다듬고 있습니다. 첫 실행 후, middle-name 필드가 null인 레코드가 빈 문자열로 이전되지 않고 누락되고 있습니다. 이 엣지 케이스를 고치는 가장 효과적인 방법은?\n① middle-name이 null인 레거시 레코드 샘플과, 그 필드가 빈 문자열인 기대 이전 결과 레코드를 함께 보여 준다\n② null 값이 있는 레코드가 누락된다는 것을 평이한 문장으로 설명하고, 변환 함수에서 null을 제대로 처리해 달라고 한다\n③ 변환 함수를 try/except로 감싸 실패 레코드를 파일에 기록하고 계속 진행한 뒤, 로그에서 null middle-name 사례를 확인한다\n④ 새 세션에서 원래 스키마 설명을 바탕으로 마이그레이션 스크립트 전체를 다시 생성해 null 처리를 처음부터 새로 쓰게 한다",
+  "sentences": [
+   {
+    "sid": "lesson-d3#24.0",
+    "en": "A data engineer is iterating with Claude Code on a migration script that transforms legacy customer records into a new schema."
+   },
+   {
+    "sid": "lesson-d3#24.1",
+    "en": "After the first pass, records with a null middle-name field are being dropped instead of migrated with an empty string."
+   },
+   {
+    "sid": "lesson-d3#24.2",
+    "en": "What is the most effective way to fix this specific edge case handling?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d3#25",
+  "koRef": "팀장이 Claude Code로 CSV→JSON 변환 유틸리티를 구현하려 합니다. 빈 셀, 따옴표 안의 쉼표, 중복 헤더의 정확한 처리가 중요해서, 열-필드 매핑 규칙을 말로 정확히 설명하기 어렵습니다. 구현 전에 효과적인 반복 개선 루프를 만드는 가장 좋은 방법은?\n① 입력 행 몇 개와 각 행이 만들어야 할 정확한 JSON을 작성하고(빈 셀이 있는 행 하나, 따옴표 쉼표가 있는 행 하나 포함), 변환기를 쓰기 전에 Claude에게 준다\n② 빈 셀·따옴표 쉼표·중복 헤더가 JSON 필드로 어떻게 매핑되는지 자세한 산문 사양을 써서 함께 주고, 결과를 본 뒤 문구를 다듬는다\n③ 널리 쓰이는 CSV 파싱 라이브러리를 지정해 그 위에 변환기를 만들게 하고, 빈 셀·따옴표 쉼표는 라이브러리 기본 처리대로 둔 뒤 결과를 검토한다\n④ Claude에게 변환기와 자체 단위 테스트를 함께 쓰게 하고, 빈 셀·따옴표 쉼표·중복 헤더의 기대 출력은 프롬프트에서 도출하게 해 테스트가 통과할 때까지 반복한다",
+  "sentences": [
+   {
+    "sid": "lesson-d3#25.0",
+    "en": "A team lead wants Claude Code to implement a CSV-to-JSON conversion utility whose column-to-field mapping rules are difficult to describe precisely in words, since the exact handling of empty cells, quoted commas, and duplicate headers matters."
+   },
+   {
+    "sid": "lesson-d3#25.1",
+    "en": "Which approach best sets up an effective iterative refinement loop before implementation begins?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d3#26",
+  "koRef": "결제 모듈에서 `orderTotal()` 은 내부에서 `applyDiscount()` 와 `addTax()` 를 호출합니다. 최근 실행에서 `test_applyDiscount`, `test_addTax`, `test_orderTotal` 세 테스트가 모두 실패했습니다. 이 실패들을 Claude에게 어떻게 보고해야 합니까?\n① 사용자에게 보이는 함수인 `test_orderTotal` 실패를 먼저 보고하고, 그것이 통과하면 나머지 둘을 보고한다\n② 세 실패를 각각 별도 메시지로 하나씩 보내, 수정마다 따로 확인할 수 있게 한다\n③ 세 실패를 한 메시지에 자세히 담고, `orderTotal()` 이 나머지 둘을 호출하므로 그 실패가 하위 함수 실패의 결과일 수 있다고 적는다\n④ `applyDiscount` 와 `addTax` 실패만 붙여 넣고, `test_orderTotal` 은 진짜 버그에서 주의를 돌리지 않도록 뺀다",
+  "sentences": [
+   {
+    "sid": "lesson-d3#26.0",
+    "en": "In a checkout module, orderTotal() calls applyDiscount() and addTax() internally."
+   },
+   {
+    "sid": "lesson-d3#26.1",
+    "en": "The latest run fails all three tests: test_applyDiscount, test_addTax and test_orderTotal."
+   },
+   {
+    "sid": "lesson-d3#26.2",
+    "en": "How should you report these failures to Claude?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d3#27",
+  "koRef": "Claude Code로 새로 만든 리포트 내보내기 모듈의 테스트 실행에서 실패가 두 개 나왔습니다. 요약 합계의 통화 형식 불일치, 그리고 전혀 무관하게 Windows 경로에서 파일 이름 생성기가 확장자를 빠뜨리는 문제입니다. 다음 반복에서 두 실패를 Claude에게 어떻게 제시해야 합니까?\n① 두 문제가 독립적이므로 각각 별도 메시지로 순서대로 보고한다. 먼저 통화 형식 불일치를 다루고, 수정이 확인되면 파일 확장자 문제를 다룬다\n② 전체 테스트 출력을 보여 주는 한 메시지에 두 실패를 합치고, 서로 무관한 결함이라고 적은 뒤 둘 다 고쳐 달라고 한다\n③ 파일 확장자 실패는 보류하고 먼저 발견된 주요 결함인 통화 형식 불일치만 보고한다. 더 중요한 형식 수정에서 주의를 돌리지 않기 위해서다\n④ 정확한 통화 불일치나 누락된 확장자 내용을 적지 않고, 리포트 정확성에 미치는 영향을 Claude가 판단해 더 심각해 보이는 실패부터 고치게 한다",
+  "sentences": [
+   {
+    "sid": "lesson-d3#27.0",
+    "en": "A test run against a newly generated report-export module in Claude Code produces two failures: a currency-formatting mismatch in the summary totals and a completely unrelated failure where the export filename generator omits the file extension on Windows paths."
+   },
+   {
+    "sid": "lesson-d3#27.1",
+    "en": "How should these two failures be presented to Claude for the next iteration?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d3#28",
+  "koRef": "Claude와 CSV→JSON 변환기를 만들고 있습니다. 두 번이나 Claude가 빈 셀과 따옴표 안의 쉼표를 작성한 사양의 의도와 다르게 처리했습니다. 다음에 Claude에게 무엇을 줘야 합니까?\n① 빈 셀·따옴표 쉼표·중복 헤더 규칙을 하나하나 풀어 쓴, 더 길고 자세한 산문 사양\n② 잘 알려진 CSV 파싱 라이브러리를 기반으로 하고 이런 경우는 라이브러리 기본 처리를 따르라는 지시\n③ 변환기와 그 자체 단위 테스트를 쓰되, 기대 출력은 작성한 사양에서 도출하라는 요청\n④ 빈 셀이 있는 행 하나, 따옴표 쉼표가 있는 행 하나 등 샘플 행 몇 개와 각 행이 되어야 할 정확한 JSON",
+  "sentences": [
+   {
+    "sid": "lesson-d3#28.0",
+    "en": "You are building a CSV-to-JSON converter with Claude."
+   },
+   {
+    "sid": "lesson-d3#28.1",
+    "en": "Twice, Claude has handled empty cells and quoted commas differently from what your written spec meant."
+   },
+   {
+    "sid": "lesson-d3#28.2",
+    "en": "What should you give Claude next?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d3#29",
+  "koRef": "파이프라인 단계가 `claude \"explain the failing test\"` 를 실행하는데, 작업이 타임아웃될 때까지 멈춰 있습니다. 가장 직접적인 해결책은?\n① `-p` 를 붙여 Claude Code가 대화형 세션을 여는 대신 질의를 실행하고 종료하게 한다\n② `--continue` 를 붙여 이전 세션을 재사용하게 한다\n③ `--output-format stream-json` 을 붙여 출력이 계속 흘러나오게 한다\n④ 프롬프트를 인자로 넘기지 말고 `cat` 으로 파이프한다",
+  "sentences": [
+   {
+    "sid": "lesson-d3#29.0",
+    "en": "A pipeline step runs `claude \"explain the failing test\"` and the job hangs until it times out."
+   },
+   {
+    "sid": "lesson-d3#29.1",
+    "en": "What is the most direct fix?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d3#30",
+  "koRef": "플랫폼 팀이 모든 풀 리퀘스트마다 diff를 요약하는 GitHub Actions 작업 안에서 `claude` 를 실행합니다. 첫 실행이 로그에 아무것도 쓰지 않은 채 작업 타임아웃까지 멈춰 있었습니다. API 키 시크릿은 유효하고 프롬프트 텍스트도 맞다는 것을 확인했습니다. 가장 가능성 높은 원인은?\n① 단계가 `-p` 플래그 없이 claude를 실행해, CLI가 대화형 세션을 열고 러너가 줄 수 없는 키보드 입력을 기다렸다\n② 워크플로가 `ANTHROPIC_API_KEY` 를 시크릿으로 저장했지만 단계에 노출하지 않아, CLI가 타임아웃까지 인증을 반복 재시도했다\n③ checkout이 얕은 fetch-depth를 써서 CLI가 기준 브랜치와의 diff를 구하지 못하고, 빠진 커밋을 찾아 git 이력을 계속 스캔했다\n④ 러너의 Node.js 버전이 CLI 지원 버전보다 낮아, 프로세스가 자기 명령줄 인자를 파싱하지 못한 채 계속 실행 중이었다",
+  "sentences": [
+   {
+    "sid": "lesson-d3#30.0",
+    "en": "A platform team wraps `claude` inside a GitHub Actions job that fires on every pull request to summarize the diff."
+   },
+   {
+    "sid": "lesson-d3#30.1",
+    "en": "The first run hangs until the job times out, with no output ever written to the log."
+   },
+   {
+    "sid": "lesson-d3#30.2",
+    "en": "The team confirms the API key secret is valid and the prompt text is correct."
+   },
+   {
+    "sid": "lesson-d3#30.3",
+    "en": "What is the most likely cause of the hang?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d3#31",
+  "koRef": "미리 승인하지 않은 도구 호출은 대기하지 않고 거부되는 CI 리뷰 작업을 만들려 합니다. 알맞은 설정은?\n① 좁은 `--allowedTools` 목록과 함께 `--permission-mode dontAsk`\n② `--allowedTools` 없이 `--permission-mode acceptEdits`\n③ 헤드리스 모드는 프롬프트를 띄우지 않으므로 `-p` 만\n④ 이전 실행의 승인이 이어지도록 `--continue`",
+  "sentences": [
+   {
+    "sid": "lesson-d3#31.0",
+    "en": "You want a CI review job in which any tool call you have not pre-approved is refused, not left waiting."
+   },
+   {
+    "sid": "lesson-d3#31.1",
+    "en": "Which setup matches?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d3#32",
+  "koRef": "엔지니어링 리드는 CI에서 호출된 Claude Code 리뷰가 팀 고유의 \"가치 있는 테스트\" 정의(구현 세부가 아니라 동작을 검증)로 누락된 테스트 커버리지를 일관되게 지적하고, 테스트 헬퍼 디렉터리에 이미 있는 픽스처를 알기를 원합니다. 각 워크플로 프롬프트에 반복하지 않고 모든 CI 실행이 자동으로 이 지침을 받게 하려면 어디에 둬야 합니까?\n① 테스트 품질 정의와 픽스처 목록을 담은 CLAUDE.md를 저장소 루트에 커밋한다\n② 테스트 품질 정의와 픽스처 목록을 워크플로 YAML의 각 리뷰 작업 `prompt` 필드에 넣는다\n③ 작성자가 PR마다 채우는 풀 리퀘스트 템플릿에 테스트 품질 정의와 픽스처 목록을 추가한다\n④ CI 셸 프로필에서 `--append-system-prompt` 로 테스트 품질 정의와 픽스처 목록을 넘긴다",
+  "sentences": [
+   {
+    "sid": "lesson-d3#32.0",
+    "en": "An engineering lead wants CI-invoked Claude Code reviews to consistently flag missing test coverage using the team's specific definition of a \"valuable test\" (asserts behavior, not implementation details) and to know which fixtures already exist in the test helpers directory."
+   },
+   {
+    "sid": "lesson-d3#32.1",
+    "en": "Where should this project-specific guidance be encoded so every CI run picks it up automatically without being repeated in each workflow prompt?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d3#33",
+  "koRef": "PR 리뷰 워크플로가 code-review 플러그인을 `--comment` 와 함께 쓰는데, PR에 인라인 코멘트가 전혀 달리지 않습니다. 스킬의 frontmatter에는 인라인 코멘트 도구가 나열돼 있습니다. 무엇이 빠졌을 가능성이 가장 큽니까?\n① `claude_args` 가 `mcp__github_inline_comment__create_inline_comment` 를 지정한 `--allowedTools` 를 넘기지 않는다\n② 워크플로에 `trigger_phrase` 입력이 없다\n③ Claude가 `@claude` 를 기다리도록 `prompt` 입력을 제거해야 한다\n④ 작업에 `--output-format stream-json` 이 필요하다",
+  "sentences": [
+   {
+    "sid": "lesson-d3#33.0",
+    "en": "A PR-review workflow uses the code-review plugin with --comment, but no inline comments ever appear on the PR."
+   },
+   {
+    "sid": "lesson-d3#33.1",
+    "en": "The skill's frontmatter lists the inline-comment tool."
+   },
+   {
+    "sid": "lesson-d3#33.2",
+    "en": "What is most likely missing?"
+   }
+  ]
+ },
+ {
+  "key": "selfcheck-d3-kor#2",
+  "sentences": [
+   {
+    "sid": "selfcheck-d3-kor#2.1",
+    "en": "managed policy CLAUDE.md"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#1",
+  "koRef": "한 팀의 단일 패스 코드 리뷰어가 문제가 아닌 것을 너무 많이 지적합니다. 팀은 리뷰어가 자기 발견을 스스로 거르게 하고 싶습니다. 리뷰 프롬프트에 어떤 문장을 넣어야 할까요?\n① \"보수적으로 판단하고 트집 잡지 마라. 정말 중요한 문제만 제기하라.\"\n② \"실제 문제라고 높은 확신이 드는 발견만 보고하라.\"\n③ \"잘못된 동작, 테스트 실패, 오해를 부르는 결과를 일으킬 수 있는 버그는 모두 보고하라. 순수한 스타일이나 명명 취향 같은 사소한 지적만 생략하라.\"\n④ \"중요한 문제만 보고하고, 사소해 보이는 것은 건너뛰어라.\"",
+  "sentences": [
+   {
+    "sid": "lesson-d4#1.0",
+    "en": "A team's single-pass code reviewer flags too many non-issues, and they want it to filter its own findings."
+   },
+   {
+    "sid": "lesson-d4#1.1",
+    "en": "Which line should they add to the review prompt?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#2",
+  "koRef": "프롬프트 엔지니어가 오탐이 많은 보안 발견 범주를 고치려고 시스템 프롬프트에 \"only report high-confidence findings(확신이 높은 발견만 보고하라)\"를 추가했습니다. 일주일 테스트 후에도 오탐률은 거의 그대로입니다. 이 변경이 정밀도를 높이지 못한 가장 그럴듯한 이유는?\n① 시스템 프롬프트에 수식어를 넣으면 출력이 길어지고, 평가자가 검사할 토큰이 늘어나 발견이 높은 심각도로 잘못 분류될 가능성이 독립적으로 커진다.\n② \"높은 확신\" 표현이 위험을 과소 보고하지 않도록 설계된 모델의 안전 학습과 충돌해, 모델이 예방 차원에서 더 넓은 입력에 대해 과다 보고한다.\n③ 일반적인 확신 표현은 무엇을 보고할지에 대한 구체적 규칙을 주지 않으므로, 모델은 변경 전에 오탐을 만들던 같은 판단을 계속 적용한다.\n④ \"confidence\"라는 단어는 모델이 출력 제약으로 해석하도록 학습된 토큰 집합에 없어서, 지시가 장식 문구로 취급되어 무시된다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#2.0",
+    "en": "A prompt engineer tries to fix a noisy security-findings category by adding the line \"only report high-confidence findings\" to the system prompt."
+   },
+   {
+    "sid": "lesson-d4#2.1",
+    "en": "After a week of testing, the false positive rate is essentially unchanged."
+   },
+   {
+    "sid": "lesson-d4#2.2",
+    "en": "What is the most likely explanation for why this change failed to improve precision?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#3",
+  "koRef": "리뷰어가 \"캐시에 값이 있으면 그 값을 반환하고, 없으면 API에서 가져온다\"는 docstring을 지적했습니다. 그런데 리뷰 대상 함수는 캐시와 상관없이 항상 API를 호출합니다. \"실제 코드 동작과 모순되는 주석만 지적한다\"는 명시적 기준 아래에서 이 발견을 보고해야 할까요?\n① 보고한다. docstring은 API 호출 전에 캐시를 조회한다고 약속하는데, 함수 본문은 호출될 때마다 곧장 API로 간다.\n② 건너뛴다. 코드는 여전히 올바른 데이터를 반환하고, 캐시 없는 느린 경로는 별도의 성능 리뷰 대상이지 주석 결함이 아니다.\n③ 건너뛴다. 캐싱은 함수 계약이 아닌 내부 구현 세부이므로 docstring의 캐시 언급은 기준 밖이다.\n④ 호출자가 캐시 동작에 의존한다는 것을 확인한 뒤에만 보고한다. 아무도 의존하지 않는 낡은 docstring은 동작에 영향을 주지 않는다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#3.0",
+    "en": "A reviewer flags a docstring that says \"returns the cached value if present, otherwise fetches from the API,\" but the function under review always calls the API regardless of a cache."
+   },
+   {
+    "sid": "lesson-d4#3.1",
+    "en": "Under an explicit-criteria rule that only flags comments contradicted by actual code behavior, should this finding be reported?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#4",
+  "koRef": "레거시 모듈의 함수 대부분은 여러 가지 옛 명명 스타일이 섞여 있습니다. 한 PR이 CLAUDE.md에 문서화된 프로젝트 규칙대로 이름 붙인 헬퍼 하나를 추가했습니다. 잘 작성된 리뷰 기준이라면 이 헬퍼의 이름을 어떻게 다뤄야 할까요?\n① 지적한다. 새 코드는 주변 파일에서 가장 흔한 스타일에 맞춰야 한다.\n② 지적하지 않는다. 이름은 주변 코드가 아니라 문서화된 프로젝트 표준에 비추어 판단한다.\n③ 파일의 모든 레거시 함수를 Important 발견으로 지적한다. 그것들이 진짜 불일치다.\n④ 명명 검사를 아예 끈다. 명명은 언제나 오탐을 만든다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#4.0",
+    "en": "In a legacy module, most functions use mixed old naming styles."
+   },
+   {
+    "sid": "lesson-d4#4.1",
+    "en": "A PR adds one helper named according to the project's documented convention in CLAUDE.md."
+   },
+   {
+    "sid": "lesson-d4#4.2",
+    "en": "How should well-written review criteria treat that helper's name?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#5",
+  "koRef": "하나의 리뷰 프롬프트에 보안·정확성·스타일 기준이 들어 있고, 범주마다 고유한 규칙과 심각도 예시가 있습니다. 그런데 보안 발견이 스타일 문턱으로 판단되고 있습니다. 한 범주의 규칙이 다른 범주로 새지 않게 하려면 프롬프트를 어떻게 배치하는 것이 가장 좋을까요?\n① 범주마다 산문 단락 하나씩 쓰고, 각 단락을 범주 이름으로 시작한다.\n② 모든 규칙을 심각도순으로 정렬한 목록 하나로 합쳐 Important 항목이 모두 함께 있게 한다.\n③ 규칙을 먼저 쓰고, 모든 범주의 예시를 끝의 공용 예시 블록 하나에 모은다.\n④ 각 범주의 규칙과 예시를 `<security_criteria>`, `<style_criteria>` 처럼 설명적인 이름의 XML 태그 안에 넣는다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#5.0",
+    "en": "One review prompt holds security, correctness and style criteria, and each category has its own rules and severity examples."
+   },
+   {
+    "sid": "lesson-d4#5.1",
+    "en": "Security findings are now being judged against the style threshold."
+   },
+   {
+    "sid": "lesson-d4#5.2",
+    "en": "Which way of laying out the prompt best stops one category's rules from leaking into another?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#6",
+  "koRef": "아키텍트가 보안·정확성·스타일 범주별로 별도 기준(각각 포함 규칙과 심각도 예시)을 정의한 긴 리뷰 프롬프트를 구성하고 있습니다. Claude가 범주끼리 섞이지 않고 올바른 기준을 올바른 범주에 적용하도록 돕는 구성 방식은?\n① 각 범주의 기준을 보안·정확성·스타일 순서의 산문 단락으로 쓰고, 단락마다 해당 범주를 밝히는 문장으로 시작한다.\n② 기준을 심각도순 글머리표 목록 하나로 합치고, 각 항목 끝 괄호에 범주 이름을 달고 예시는 그 아래에 둔다.\n③ 심각도 예시를 프롬프트 끝의 공용 블록 하나에 모으고, 그 위에 범주별 포함 규칙을 두며 각 예시에 범주 이름을 표시한다.\n④ 리뷰 프롬프트 안에서 각 범주의 포함 규칙과 심각도 예시를 `<security_criteria>`, `<correctness_criteria>` 같은 이름 붙은 XML 태그로 감싼다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#6.0",
+    "en": "An architect is structuring a long review prompt that defines separate criteria for security, correctness, and style categories, each with its own inclusion rules and severity examples."
+   },
+   {
+    "sid": "lesson-d4#6.1",
+    "en": "Which structuring approach best helps Claude apply the right criteria to the right category without cross-contamination?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#7",
+  "koRef": "개발자들이 리뷰어의 모든 코멘트를 무시하기 시작하자, 팀은 오탐이 많은 \"성능 힌트\" 범주를 건너뛰기 목록에 넣었습니다. 이제 보안·정확성 코멘트는 다시 신뢰받고 있고, 팀은 성능 기준을 명시적인 문장으로 다시 썼습니다. 이 범주를 언제 다시 켤지는 무엇으로 정해야 할까요?\n① 바로 다시 켜되, 조용하도록 기준에 \"only report high-confidence findings\"를 추가한다.\n② 소음의 원인이었고 다른 범주는 이제 잘 동작하므로 영구히 꺼 둔다.\n③ 다시 쓴 기준을 정답이 알려진 실제 사례 세트로 돌려 보고, 재현율이나 F1이 잘 나오면 다시 켠다.\n④ 몇 개 PR에서 시험해 봤을 때 코멘트가 이전보다 눈에 띄게 줄면 다시 켠다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#7.0",
+    "en": "After developers began dismissing all of a reviewer's comments, a team added its noisy performance-hints category to the skip list."
+   },
+   {
+    "sid": "lesson-d4#7.1",
+    "en": "Security and correctness comments are now trusted again, and the team has rewritten the performance criteria in explicit terms."
+   },
+   {
+    "sid": "lesson-d4#7.2",
+    "en": "What should decide when the category goes back on?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#8",
+  "koRef": "한 팀의 코드 리뷰 어시스턴트 프롬프트에는 이미 이슈 지적용 루브릭이 항목별로 빠짐없이 적혀 있습니다. 그런데도 실행마다 지적 형식이 달라, 어떤 것은 위치보다 심각도를 먼저 쓰고 어떤 것은 수정 제안을 아예 빼먹습니다. 이 출력 일관성 문제를 가장 효과적으로 고치려면?\n① 루브릭을 더 긴 번호 체크리스트로 늘려, 각 출력 필드의 위치와 형식 규칙을 일일이 적는다.\n② 프롬프트에 샘플 리뷰 몇 개를 넣되, 각각 지적을 하나의 고정된 필드 순서와 레이아웃으로 보여 준다.\n③ API 호출의 temperature를 0으로 설정해 실행 간 토큰 샘플링을 더 재현 가능하게 만든다.\n④ 리뷰어가 보기 전에 지적을 필요한 스키마로 다시 포맷하는 두 번째 모델 호출을 추가한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#8.0",
+    "en": "A team's code-review assistant prompt already spells out an exhaustive, itemized rubric for flagging issues, but reviewers still receive inconsistently formatted findings across runs: some list severity before location, others omit the suggested fix entirely."
+   },
+   {
+    "sid": "lesson-d4#8.1",
+    "en": "The team wants the most effective fix for this output-consistency problem."
+   },
+   {
+    "sid": "lesson-d4#8.2",
+    "en": "What should they do?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#9",
+  "koRef": "에이전트에 `search_docs` 도구와 `search_code` 도구가 있습니다. \"재시도 타임아웃은 어디서 설정되나요?\" 같은 요청에서 세션마다 다른 도구를 고릅니다. 어떤 퓨샷 예시가 이 문제를 가장 잘 고칠까요?\n① 이번 같은 모호한 요청을 중심으로 만든 예시 2~4개. 각 예시는 선택한 도구와 다른 도구가 더 나쁜 선택인 이유를 함께 보여 준다.\n② \"API 문서 페이지를 열어 줘\" → `search_docs` 같은 명확한 예시 여러 개. 모델이 각 도구의 올바른 사용을 보게 한다.\n③ 지금까지 사용자가 물은 모든 모호한 질문마다 입력-도구 쌍 하나씩, 설명 없이. 알려진 사례를 모두 덮는다.\n④ 예시 없이 지시문에 \"항상 `search_code`를 우선하라\"는 한 줄. 선택이 항상 같아진다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#9.0",
+    "en": "An agent has a `search_docs` tool and a `search_code` tool."
+   },
+   {
+    "sid": "lesson-d4#9.1",
+    "en": "For requests like \"where is the retry timeout set?\" it picks a different tool from one session to the next."
+   },
+   {
+    "sid": "lesson-d4#9.2",
+    "en": "Which few-shot examples would fix this best?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#10",
+  "koRef": "한 팀이 과거 데이터에서 직접 겪은 모든 엣지 케이스마다 하나씩, 정확한 입력-출력 쌍 20개로 분류 프롬프트를 만들었습니다. 이 프롬프트는 그 20개 입력에서는 잘 동작하지만, 고객이 20개 중 하나와 비슷하지만 똑같지는 않은 새 입력을 보내면 눈에 띄게 성능이 떨어집니다. 이런 \"새롭지만 비슷한\" 입력으로 모델의 판단을 일반화시키려면 무엇을 바꿔야 할까요?\n① 20개 쌍을 라벨의 판단 근거를 보여 주도록 고른 소수의 예시로 교체한다.\n② 고객 입력이 잘못 분류될 때마다 새 입력-출력 쌍을 추가해 목록을 계속 늘린다.\n③ 예시를 없애고 원하는 분류 동작을 지시문 한 문장으로 설명한다.\n④ max_tokens 한도를 올려 모델이 라벨을 내기 전에 추론할 여유를 더 준다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#10.0",
+    "en": "A team built a classification prompt with twenty exact input-output pairs, one for every edge case they had personally encountered in their historical data."
+   },
+   {
+    "sid": "lesson-d4#10.1",
+    "en": "The prompt performs well on those twenty inputs but degrades noticeably whenever a customer submits a new input that is similar to, but not identical to, one of the twenty."
+   },
+   {
+    "sid": "lesson-d4#10.2",
+    "en": "What change would best help the model generalize its judgment to these novel-but-similar inputs?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#11",
+  "koRef": "TypeScript 서비스에서 리뷰 봇이 의도된 것까지 포함해 모든 광범위한 `catch` 블록을 지적하자 개발자들이 봇을 무시하기 시작했습니다. 오탐은 줄이면서, 봇이 본 적 없는 코드의 진짜 문제는 계속 잡고 싶습니다. 어떤 퓨샷 예시를 추가해야 할까요?\n① 광범위한 `catch`가 승인된 파일·함수 목록을 각각 \"허용\"으로 표시해, 봇이 그 위치들만 건너뛰게 한다.\n② 겉보기에 비슷한 두 예시. 로그를 남기고 다시 던지는 최상위 핸들러는 \"허용\", 결제 쓰기를 감싸 오류를 삼키는 `catch`는 \"문제\"로 표시하고 각각 한 줄 이유를 붙인다.\n③ 빈 `catch {}` 같은 명백히 나쁜 코드 예시 여러 개를 각각 높은 심각도로 표시해, 진짜 문제가 어떤 모습인지 배우게 한다.\n④ 예시 없이 \"광범위한 catch 블록은 지적하지 마라\"는 지시만 넣어 의도된 사용이 더 이상 나오지 않게 한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#11.0",
+    "en": "Developers have started ignoring a review bot because it flags every broad `catch` block in a TypeScript service, including deliberate ones."
+   },
+   {
+    "sid": "lesson-d4#11.1",
+    "en": "You want fewer false positives, and you still want real problems caught in code the bot has never seen."
+   },
+   {
+    "sid": "lesson-d4#11.2",
+    "en": "Which few-shot examples should you add?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#12",
+  "koRef": "한 팀이 일관되지 않은 라벨링을 고치려고 문서 분류 프롬프트에 퓨샷 예시 5개를 넣었습니다. 그런데 5개 모두 우연히 100단어 미만의 영어 이메일이었습니다. 배포 후 모델은 비슷한 짧은 영어 이메일은 잘 처리하지만, 예전 예시 없는 프롬프트가 올바르게 처리하던 긴 문서와 다른 언어 문서를 잘못 분류하기 시작했습니다. 가장 그럴듯한 원인과 조치는?\n① 예시가 길이·언어와 관련된 무관한 패턴을 의도치 않게 가르쳤다. 예시를 다양화한다.\n② 예시 5개가 너무 적다. 그대로 두되 각각 세 번씩 복제한다.\n③ 퓨샷 예시는 문서 분류 작업과 본래 맞지 않으므로 모두 제거한다.\n④ 회귀는 예시와 무관하며, 관련 없는 모델 드리프트 때문이다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#12.0",
+    "en": "A team adds five few-shot examples to a document-classification prompt to fix inconsistent labeling."
+   },
+   {
+    "sid": "lesson-d4#12.1",
+    "en": "All five examples happen to be English-language emails under 100 words."
+   },
+   {
+    "sid": "lesson-d4#12.2",
+    "en": "After deployment, the model performs well on similar short English emails but starts mislabeling longer documents and documents in other languages that it previously handled correctly under the old, example-free prompt."
+   },
+   {
+    "sid": "lesson-d4#12.3",
+    "en": "What is the most likely cause, and what should the team do?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#13",
+  "koRef": "임상 접수 기록에는 \"알약 두어 개\", \"반 컵쯤\" 같은 표현이 나옵니다. 추출 파이프라인의 예시는 모두 \"400 mg\"처럼 딱 떨어지는 용량뿐이고, 출력에는 환자가 말한 적 없는 정밀한 양이 계속 나옵니다. 이런 지어낸 값을 막으려면 프롬프트를 어떻게 바꿔야 할까요?\n① 정확한 숫자 용량 예시를 더 넣어, 올바른 추출이 어떤 모습인지 더 분명히 보여 준다.\n② 모호한 양을 적힌 그대로 추출하는 예시 하나와, 용량이 없어 \"명시되지 않음\"으로 출력하는 예시 하나를 넣고, 모델이 불확실함을 인정해도 된다고 명시적으로 허용한다.\n③ 모든 양을 밀리그램 같은 표준 단위로 변환하라는 지시를 넣어 용량 필드에 항상 숫자가 들어가게 한다.\n④ 예시를 없애고 용량 필드 설명을 더 자세히 써서 모델이 패턴을 베끼지 않게 한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#13.0",
+    "en": "Clinical intake notes say things like \"a couple tablets\" or \"about half a cup\"."
+   },
+   {
+    "sid": "lesson-d4#13.1",
+    "en": "The extraction pipeline's examples all show crisp doses such as \"400 mg\", and the output keeps showing precise amounts the patient never gave."
+   },
+   {
+    "sid": "lesson-d4#13.2",
+    "en": "What change to the prompt best stops these made-up values?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#14",
+  "koRef": "송장 파이프라인이 strict가 아닌 추출 도구에서 레코드를 읽습니다. 가끔 `quantity`가 2가 아니라 \"2\"로 오고, 일부 레코드에는 필수인 `invoice_id`가 빠져 있습니다. 이런 종류의 실패 전체를 없애는 변경은?\n① 시스템 프롬프트에 \"스키마와 정확히 일치하는 유효한 JSON만 반환하라\" 같은 문장을 추가한다.\n② 레코드가 검증에 실패할 때마다 요청을 다시 보내는 재시도 로직으로 호출을 감싼다.\n③ 추출 도구에 `strict: true`를 설정해 샘플링이 스키마상 유효한 입력으로만 제한되게 한다.\n④ 도구의 `description`에 필드 타입과 필수 키를 한 번 더 적어 Claude가 더 꼼꼼히 읽게 한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#14.0",
+    "en": "An invoice pipeline reads records from a non-strict extraction tool."
+   },
+   {
+    "sid": "lesson-d4#14.1",
+    "en": "Sometimes `quantity` arrives as \"2\" instead of 2, and some records are missing the required `invoice_id`."
+   },
+   {
+    "sid": "lesson-d4#14.2",
+    "en": "Which change removes this whole class of failure?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#15",
+  "koRef": "계약서 추출 요청이 tool_choice를 `{\"type\": \"tool\", \"name\": \"extract_clauses\"}`로 설정했습니다. 시스템 프롬프트에는 \"도구를 호출하기 전에 어떤 조항이 모호해 보이는지 간단히 설명하라\"는 지시도 있습니다. 응답에는 무엇이 들어 있을까요?\n① 설명이 담긴 text 블록, 그다음 `extract_clauses` tool_use 블록\n② 앞에 설명 없이 `extract_clauses` tool_use 블록만\n③ 설명하라는 지시가 강제 도구보다 우선하므로 평문 설명만\n④ Claude가 가장 알맞다고 판단한 등록된 도구의 tool_use 블록, 그 앞에 설명",
+  "sentences": [
+   {
+    "sid": "lesson-d4#15.0",
+    "en": "A contract-extraction request sets tool_choice to {\"type\": \"tool\", \"name\": \"extract_clauses\"}."
+   },
+   {
+    "sid": "lesson-d4#15.1",
+    "en": "The system prompt also says: \"Before calling the tool, briefly explain which clauses look ambiguous.\""
+   },
+   {
+    "sid": "lesson-d4#15.2",
+    "en": "What does the response contain?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#16",
+  "koRef": "파이프라인은 보강이나 요약 단계가 진행되기 전에, 업로드된 문서에 대해 Claude가 먼저 extract_metadata를 실행해야 합니다. 같은 요청에 translate_text와 summarize_document 같은 다른 도구도 등록돼 있고, 팀은 Claude가 그중 하나를 먼저 부를까 걱정합니다. 이번 턴에 extract_metadata 실행을 보장하는 tool_choice 설정은?\n① `tool_choice: {\"type\": \"tool\", \"name\": \"extract_metadata\"}`\n② `tool_choice: {\"type\": \"any\"}`\n③ `tool_choice: {\"type\": \"auto\"}`\n④ `tool_choice: {\"type\": \"none\"}`",
+  "sentences": [
+   {
+    "sid": "lesson-d4#16.0",
+    "en": "A pipeline first needs Claude to run extract_metadata on an uploaded document before any enrichment or summarization steps proceed."
+   },
+   {
+    "sid": "lesson-d4#16.1",
+    "en": "Other tools such as translate_text and summarize_document are also registered on the same request, and the team is worried Claude might call one of those first."
+   },
+   {
+    "sid": "lesson-d4#16.2",
+    "en": "Which tool_choice setting guarantees extract_metadata runs on this turn?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#17",
+  "koRef": "이력서 파싱 도구를 만드는 팀이 이번 턴에 `parse_resume` 도구로 구조화된 지원자 데이터가 반드시 추출되도록 보장하려고 합니다. 또 그 도구 호출 전에 Claude가 모호한 이력서 섹션에 대한 자연어 추론을 덧붙일 수 있는지도 알고 싶어 합니다. `parse_resume` 호출을 보장하려면 어떤 `tool_choice` 설정을 써야 하고, 강제 도구 호출 앞의 자연어 코멘트에 대해 Anthropic 문서는 뭐라고 말할까요?\n① `tool_choice: {\"type\": \"auto\"}`에 `parse_resume` 도구를 쓰고 관련 추론을 텍스트로 공유하라는 명시적인 user 메시지 지시를 결합한다.\n② `tool_choice: {\"type\": \"any\"}`. `any`는 같은 응답에서 자연어 코멘트와 강제 도구 호출을 자유롭게 섞을 수 있게 해 준다.\n③ `tool_choice: {\"type\": \"tool\", \"name\": \"parse_resume\"}`. 특정 도구를 강제하는 문서화된 방법이다. 대가로, 강제 도구 사용은 도구 호출 앞의 자연어 텍스트를 억제한다.\n④ `tool_choice: {\"type\": \"none\"}`. Claude가 텍스트로 자유롭게 판단한 뒤 `parse_resume` 호출을 이어서 낼지 정할 수 있다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#17.0",
+    "en": "A team building a resume-parsing tool wants to guarantee that structured candidate data is extracted via a `parse_resume` tool on the current turn."
+   },
+   {
+    "sid": "lesson-d4#17.1",
+    "en": "They also want to know whether Claude can include natural-language reasoning about ambiguous resume sections before that tool call."
+   },
+   {
+    "sid": "lesson-d4#17.2",
+    "en": "Which `tool_choice` configuration should be used to guarantee the `parse_resume` call, and what does Anthropic documentation state about natural-language commentary before a forced tool call?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#18",
+  "koRef": "검사 보고서를 strict 도구로 추출하는데, 스키마에 `referring_physician`(의뢰 의사)이 필수 string으로 정의돼 있습니다. 많은 보고서에 의뢰 의사 이름이 없는데도, 모든 레코드의 그 필드에 그럴듯한 이름이 들어 있습니다. 올바른 수정은?\n① 필드를 필수로 유지하고 시스템 프롬프트에 \"보고서에 없는 의사 이름을 절대 지어내지 마라\" 같은 문장을 추가한다.\n② 도구의 strict 모드를 꺼서, 보고서에 값이 없을 때 Claude가 필수 필드를 생략할 수 있게 한다.\n③ `referring_physician`을 optional로 바꾸고 null을 허용해, \"보고서에 없음\"이 다운스트림 코드가 볼 수 있는 유효한 답이 되게 한다.\n④ 필드를 필수로 유지하고 올바른 형식의 의사 이름을 보여 주는 `input_examples`를 추가한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#18.0",
+    "en": "Lab reports are extracted with a strict tool whose schema lists `referring_physician` as a required string."
+   },
+   {
+    "sid": "lesson-d4#18.1",
+    "en": "Many reports name no referring physician, but every record still has a plausible-looking name in that field."
+   },
+   {
+    "sid": "lesson-d4#18.2",
+    "en": "What is the right fix?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#19",
+  "koRef": "경비 보고서 추출기를 감사하다가, 세금 금액이 팁 필드에 들어가 있고 품목 합계가 총액과 맞지 않는 레코드가 발견됐습니다. 추출기는 `strict: true`와 강제 tool_choice로 동작하고, 모든 레코드가 스키마 검증을 통과했습니다. 팀은 무엇을 해야 할까요?\n① tool_choice를 강제 도구에서 `{\"type\": \"any\"}`로 바꿔 Claude가 보고서마다 더 맞는 스키마를 고르게 한다.\n② 더 많은 필드를 필수로 지정해 Claude가 값을 빠뜨리거나 엉뚱한 곳에 넣지 못하게 한다.\n③ 추출 후 자체 코드에서 품목 합계가 총액과 맞는지, 필드 간 일관성이 있는지 검사하고, 실패하면 Claude에게 다시 보낸다.\n④ 스키마에 `additionalProperties: false`를 추가해 값이 엉뚱한 필드에 들어가지 못하게 한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#19.0",
+    "en": "During an audit of an expense-report extractor, the team finds records with the tax amount in the tip field and line items that don't add up to the total."
+   },
+   {
+    "sid": "lesson-d4#19.1",
+    "en": "The extractor runs with strict: true and a forced tool_choice, and every record passed schema validation."
+   },
+   {
+    "sid": "lesson-d4#19.2",
+    "en": "What should the team do?"
+   }
+  ]
+ }
+]

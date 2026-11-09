@@ -1,0 +1,1522 @@
+[
+ {
+  "lemma": "attendee",
+  "kind": "vocab-core",
+  "surfaces": [
+   "attendees"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "attendee",
+   "word": "attendee",
+   "pos": "명사",
+   "ipa": "əˌtenˈdiː",
+   "meaning": "참석자"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#9.0",
+    "en": "Fifteen attendees are passed to `create_calendar_event`, and the calendar refuses with \"Too many attendees (max 10)\"."
+   }
+  ]
+ },
+ {
+  "lemma": "attention",
+  "kind": "vocab-core",
+  "surfaces": [
+   "attention"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "attention",
+   "word": "attention",
+   "pos": "명사",
+   "ipa": "əˈtenʃn",
+   "meaning": "① 주의, 집중 ② (LLM) 어텐션 — 입력의 어느 부분에 집중할지 정하는 메커니즘"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#35.2",
+    "en": "What restructuring addresses this attention dilution problem?"
+   },
+   {
+    "sid": "lesson-d4#37.6",
+    "en": "Script one fresh per-file pass for every file and skip integration passes, since each file has already had full attention"
+   },
+   {
+    "sid": "mock04#19.7",
+    "en": "Move to a larger-context model so the exploration output no longer competes with the edits for the model's attention."
+   },
+   {
+    "sid": "sample01#6.4",
+    "en": "Context window saturation — the cumulative message history exceeds the effective attention range; implement a summarization/compaction strategy"
+   },
+   {
+    "sid": "sample01-kor#6.2",
+    "en": "컨텍스트 윈도 포화 — 누적 대화 기록이 실질적인 주의(attention) 범위를 넘어섰다. 요약/압축(compaction) 전략을 구현한다."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:attention.0",
+    "en": "Context window saturation — the cumulative message history exceeds the effective attention range; implement a summarization/compaction strategy",
+    "ko": "컨텍스트 윈도 포화 — 누적 대화 기록이 실질적인 주의 범위를 넘었다. 요약/압축(compaction) 전략을 구현한다"
+   }
+  ]
+ },
+ {
+  "lemma": "attribute",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "attribute",
+   "word": "attribute",
+   "pos": "명사·동사",
+   "ipa": "ˈætrɪbjuːt",
+   "meaning": "① (객체의) 속성 ② (원인을) ~의 탓으로 보다"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "attribution",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "attribution",
+   "word": "attribution",
+   "pos": "명사",
+   "ipa": "ˌætrɪˈbjuːʃn",
+   "meaning": "(정보·주장의) 출처 표시"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:attribution.0",
+    "en": "...explicitly annotate the conflict with source attribution, and let the coordinator decide how to reconcile before synthesis.",
+    "ko": "출처를 밝혀 충돌을 명시적으로 표시하고, 합성 전에 어떻게 조정할지는 코디네이터가 정하게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "audience",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "audience",
+   "word": "audience",
+   "pos": "명사",
+   "ipa": "ˈɔːdiəns",
+   "meaning": "① (토큰의) 대상 — aud 클레임, 토큰을 받아들일 서비스 ② 청중, 독자"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "audit",
+  "kind": "vocab-core",
+  "surfaces": [
+   "audit",
+   "audited",
+   "audits"
+  ],
+  "freq": 15,
+  "vocab": {
+   "id": "audit",
+   "word": "audit",
+   "pos": "명사·동사",
+   "ipa": "ˈɔːdɪt",
+   "meaning": "(꼼꼼한) 점검, 감사(하다)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#19.1",
+    "en": "Audits show that a small share of refunds still go out without the customer's identity being verified first."
+   },
+   {
+    "sid": "lesson-d4#19.0",
+    "en": "During an audit of an expense-report extractor, the team finds records with the tax amount in the tip field and line items that don't add up to the total."
+   },
+   {
+    "sid": "lesson-d5#24.0",
+    "en": "A main agent is coordinating exploration of a repository with over 50,000 files and needs a complete list of every test file before planning a coverage audit."
+   },
+   {
+    "sid": "mock04#3.2",
+    "en": "The support agent, however, has autonomously called process_refund for amounts over $500 in several audited cases."
+   },
+   {
+    "sid": "sample01#17.0",
+    "en": "A customer support agent has 14 tools: CRM lookup, order history, payment read, payment write, fraud check, compliance log, email send, SMS send, escalation, refund approve, refund reject, audit write, ticket create, ticket close."
+   },
+   {
+    "sid": "lesson-d4#20.1",
+    "en": "An audit later finds several instances where deposits were mislabeled as withdrawals, even though every amount and transaction_type field is present and passes schema validation."
+   },
+   {
+    "sid": "mock04#52.2",
+    "en": "The review almost never finds problems, yet audits show 20% of the generated tests have weak or tautological assertions."
+   },
+   {
+    "sid": "lesson-d5#17.6",
+    "en": "The string lacks audit detail; write the full auth error and query to the subagent log and keep the coordinator message short"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:audit.0",
+    "en": "...comprehensive security audits run weekly, and (3) test case generation triggered nightly.",
+    "ko": "매주 실행하는 종합 보안 감사, 그리고 (3) 매일 밤 실행되는 테스트 케이스 생성."
+   }
+  ]
+ },
+ {
+  "lemma": "auth",
+  "kind": "vocab-core",
+  "surfaces": [
+   "auth"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "auth",
+   "word": "auth",
+   "pos": "약어",
+   "ipa": "ɔːθ",
+   "meaning": "인증·인가 (authentication / authorization 의 줄임말)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#38.0",
+    "en": "A developer named a session 'auth-refactor' on their laptop."
+   },
+   {
+    "sid": "mock04#37.2",
+    "en": "The engineer hard-codes an upfront decomposition into five subagent tasks (billing, invoicing, tax, reporting, auth)."
+   },
+   {
+    "sid": "lesson-d5#17.6",
+    "en": "The string lacks audit detail; write the full auth error and query to the subagent log and keep the coordinator message short"
+   },
+   {
+    "sid": "mock04-kor#37.1",
+    "en": "코디네이터 에이전트에게 40만 줄짜리 레거시 청구(billing) 모놀리스의 마이그레이션 계획을 만들라는 요청이 들어왔습니다. 엔지니어는 다섯 개 서브에이전트 작업(billing, invoicing, tax, reporting, auth)으로 나누는 분할을 처음부터 하드코딩했습니다. 운영 실행 결과를 보면 최종 계획에서, 어떤 서브에이전트에도 배정되지 않았던 'dunning'(연체 독촉) 하위 시스템 전체와 통화 변환 계층이 빠져 있습니다. 가장 효과적인 분할 전략은 무엇일까요?"
+   },
+   {
+    "sid": "lesson-d1#38.6",
+    "en": "It opens the session picker with 'auth-refactor' pre-filled as a search term, because the CI host has no exact match"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:auth.0",
+    "en": "The engineer hard-codes an upfront decomposition into five subagent tasks (billing, invoicing, tax, reporting, auth).",
+    "ko": "엔지니어는 다섯 개 서브에이전트 작업(billing, invoicing, tax, reporting, auth)으로 나누는 분할을 처음부터 하드코딩했습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "auth-refactor",
+  "kind": "new",
+  "surfaces": [
+   "auth-refactor"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d1#38.0",
+    "en": "A developer named a session 'auth-refactor' on their laptop."
+   },
+   {
+    "sid": "lesson-d1#38.6",
+    "en": "It opens the session picker with 'auth-refactor' pre-filled as a search term, because the CI host has no exact match"
+   }
+  ]
+ },
+ {
+  "lemma": "authenticate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "authentication",
+   "authenticates"
+  ],
+  "freq": 10,
+  "vocab": {
+   "id": "authenticate",
+   "word": "authenticate",
+   "pos": "동사",
+   "ipa": "ɔːˈθentɪkeɪt",
+   "meaning": "인증하다 — 누구인지 확인하다 (authentication: 인증)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#5.1",
+    "en": "Three turns earlier in the main conversation, the user chose a specific authentication provider."
+   },
+   {
+    "sid": "lesson-d2#20.0",
+    "en": "Your team is rolling out a shared GitHub MCP server, and each engineer authenticates with their own personal access token."
+   },
+   {
+    "sid": "lesson-d5#17.0",
+    "en": "A document-search subagent hits an authentication error against a knowledge base and simply returns the string 'search unavailable' to the coordinator."
+   },
+   {
+    "sid": "lesson-d3#30.5",
+    "en": "The workflow stored ANTHROPIC_API_KEY as a secret but never exposed it to the step, so the CLI kept retrying authentication in a loop until the timeout"
+   },
+   {
+    "sid": "lesson-d1#7.0",
+    "en": "An architect delegates a task to a subagent using the Agent tool, expecting it to reference a decision the user made three turns earlier in the main conversation about which authentication provider to use."
+   },
+   {
+    "sid": "lesson-d2#24.1",
+    "en": "According to Anthropic documentation, which approach is recommended for handling this authentication scheme in Claude Code?"
+   },
+   {
+    "sid": "lesson-d5#20.6",
+    "en": "Retry the overloaded error a limited number of times locally. Report the authentication failure to the coordinator right away, with the attempts made, the 12 articles and possible alternatives"
+   },
+   {
+    "sid": "lesson-d1#7.4",
+    "en": "The coordinator's tool permissions blocked the authentication context from being read, so the architect must widen the subagent's tool access"
+   }
+  ]
+ },
+ {
+  "lemma": "author",
+  "kind": "vocab-core",
+  "surfaces": [
+   "author",
+   "authors"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "author",
+   "word": "author",
+   "pos": "명사·동사",
+   "ipa": "ˈɔːθər",
+   "meaning": "작성자, 저자 / 작성하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#48.1",
+    "en": "Locally, the author's Claude generates tests that follow team conventions (naming, arrange-act-assert structure)."
+   },
+   {
+    "sid": "lesson-d3#32.4",
+    "en": "Add the test-quality definition and fixture list to the pull request template authors fill in per PR"
+   },
+   {
+    "sid": "mock04#48.3",
+    "en": "The conventions are documented only in the author's `~/.claude/CLAUDE.md`."
+   },
+   {
+    "sid": "mock04#48.7",
+    "en": "Reproduce the author's local machine environment, including home-directory config, inside the CI job container"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:author.0",
+    "en": "Locally, the author's Claude generates tests that follow team conventions (naming, arrange-act-assert structure).",
+    "ko": "로컬에서는 작성자의 Claude가 팀 컨벤션(이름 규칙, arrange-act-assert 구조)을 따르는 테스트를 생성합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "authoritative",
+  "kind": "vocab-core",
+  "surfaces": [
+   "authoritative"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "authoritative",
+   "word": "authoritative",
+   "pos": "형용사",
+   "ipa": "əˈθɔːrəteɪtɪv",
+   "meaning": "가장 믿을 만한, 공식적인 (기준이 되는)"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#35.2",
+    "en": "The synthesis subagent silently picks $6.8B and presents it as the single authoritative fact."
+   },
+   {
+    "sid": "lesson-d5#37.2",
+    "en": "Return only the figure from the source it judges more authoritative, so the coordinator gets one clean value"
+   },
+   {
+    "sid": "lesson-d5#41.4",
+    "en": "Tell the synthesis agent to rewrite every finding in one consistent, confident voice so the report reads as a single authoritative narrative"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:authoritative.0",
+    "en": "Halt analysis and escalate to the coordinator immediately, asking it to determine which source is authoritative.",
+    "ko": "분석을 멈추고 즉시 코디네이터에 넘겨, 어느 소스가 믿을 만한 기준인지 정해 달라고 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "authority",
+  "kind": "vocab-core",
+  "surfaces": [
+   "authority"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "authority",
+   "word": "authority",
+   "pos": "명사",
+   "ipa": "əˈθɔːrəti",
+   "meaning": "① (스스로 처리할 수 있는) 권한, 한도 ② 권위, 권위 있는 출처"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#8.1",
+    "en": "For refunds above the agent's $500 authority, process_refund correctly declines, but it returns a generic isError response."
+   },
+   {
+    "sid": "mock04#8.5",
+    "en": "Raise the agent's refund authority limit above $640 in the tool configuration so that the call no longer fails."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:authority.0",
+    "en": "For refunds above the agent's $500 authority, process_refund correctly declines, but it returns a generic isError response.",
+    "ko": "에이전트의 환불 권한($500)을 넘는 환불에 대해 `process_refund` 는 올바르게 거절하지만, 구분 없는 일반 `isError` 응답을 반환합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "authorization",
+  "kind": "vocab-core",
+  "surfaces": [
+   "unauthorized",
+   "authorization"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "authorization",
+   "word": "authorization",
+   "pos": "명사",
+   "ipa": "ˌɔːθərəˈzeɪʃn",
+   "meaning": "① 인가, 권한 부여 — 무엇을 해도 되는지 허락하는 것 (unauthorized: 허가받지 않은) ② Authorization 헤더 — 인증 정보를 담는 HTTP 헤더"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#24.3",
+    "en": "The PreToolUse hook consequently allowed `process_refund`, resulting in an unauthorized refund."
+   },
+   {
+    "sid": "lesson-d2#24.0",
+    "en": "An internal MCP server requires a Kerberos-derived token that must be freshly minted for every connection, and no OAuth authorization server is involved."
+   },
+   {
+    "sid": "lesson-d2#20.2",
+    "en": "Add the server with --scope project, set the header to \"Authorization: Bearer ${GITHUB_TOKEN}\" in .mcp.json, and have each engineer export GITHUB_TOKEN in their own shell"
+   }
+  ]
+ },
+ {
+  "lemma": "auto",
+  "kind": "vocab-core",
+  "surfaces": [
+   "auto"
+  ],
+  "freq": 18,
+  "vocab": {
+   "id": "auto",
+   "word": "auto",
+   "pos": "형용사",
+   "ipa": "ˈɔːtoʊ",
+   "meaning": "자동(의) — tool_choice 의 auto: 도구를 쓸지 말지 모델이 정함"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#18.1",
+    "en": "Currently, every subagent is configured with the full union of all tools used anywhere in the pipeline, so each has around 15 tools available, and each agent's tool choice is left at {\"type\": \"auto\"} in every turn."
+   },
+   {
+    "sid": "mock04#60.2",
+    "en": "Even when the type is already known from the intake folder that routed the document, the caller still sends all six tools with tool_choice \"auto\", and in 9% of cases the model invokes the wrong extractor."
+   },
+   {
+    "sid": "lesson-d5#28.6",
+    "en": "No manifest: rely on the coordinator's auto-compaction summary to carry the run's status into the next session"
+   },
+   {
+    "sid": "lesson-d4#16.5",
+    "en": "tool_choice: {\"type\": \"auto\"}"
+   },
+   {
+    "sid": "selfcheck-d2-kor#15.2",
+    "en": "첫 요청에만 `{\"type\": \"tool\", \"name\": \"detect_document_type\"}`을 주고, 결과를 돌려준 뒤 후속 요청은 auto로 되돌린다"
+   },
+   {
+    "sid": "lesson-d2#16.4",
+    "en": "Give each subagent a tools list containing only the tools its role needs, and leave tool_choice at \"auto\""
+   },
+   {
+    "sid": "lesson-d5#34.4",
+    "en": "Review a uniform random 1% of all auto-accepted extractions"
+   },
+   {
+    "sid": "mock04#32.8",
+    "en": "Set tool_choice to \"auto\" so the model can respond directly when no tool is required for the input."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:auto.0",
+    "en": "Set tool_choice to \"auto\" so the model can respond directly when no tool is required for the input.",
+    "ko": "`tool_choice` 를 `\"auto\"` 로 설정해, 입력에 도구가 필요 없을 때는 모델이 직접 응답할 수 있게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "auto-accepted",
+  "kind": "new",
+  "surfaces": [
+   "auto-accepted"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d5#34.4",
+    "en": "Review a uniform random 1% of all auto-accepted extractions"
+   },
+   {
+    "sid": "lesson-d5#34.5",
+    "en": "Sample auto-accepted extractions randomly within each document-type and field stratum, and have humans check them"
+   }
+  ]
+ },
+ {
+  "lemma": "auto-issued",
+  "kind": "vocab-core",
+  "surfaces": [
+   "auto-issued"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "auto-issued",
+   "word": "auto-issued",
+   "pos": "형용사",
+   "ipa": "ˌɔːtoʊ ˈɪʃuːd",
+   "meaning": "(사람 승인 없이) 자동으로 지급·발급된"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#3.1",
+    "en": "Company policy states that any refund above $500 must be approved by a manager rather than auto-issued."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:auto-issued.0",
+    "en": "Company policy states that any refund above $500 must be approved by a manager rather than auto-issued.",
+    "ko": "회사 정책에 따르면 $500 초과 환불은 자동으로 지급하지 않고 반드시 관리자 승인을 받아야 합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "automate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "automates",
+   "automatically",
+   "automated",
+   "automatic"
+  ],
+  "freq": 17,
+  "vocab": {
+   "id": "automate",
+   "word": "automate",
+   "pos": "동사",
+   "ipa": "ˈɔːtəmeɪt",
+   "meaning": "자동화하다 (automatically: 자동으로)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#34.0",
+    "en": "A team is building an automated pipeline that takes a raw customer support transcript, produces a structured summary, then translates that summary into three fixed target languages."
+   },
+   {
+    "sid": "lesson-d3#32.1",
+    "en": "Where should this project-specific guidance be encoded so every CI run picks it up automatically without being repeated in each workflow prompt?"
+   },
+   {
+    "sid": "lesson-d4#32.0",
+    "en": "A platform team runs an automated code-review gate that blocks a pull request from merging until Claude returns a verdict on the diff, typically within a few seconds."
+   },
+   {
+    "sid": "lesson-d5#32.1",
+    "en": "What has to happen before you can use 0.85 as the cut-off for automatic acceptance?"
+   },
+   {
+    "sid": "mock04#47.1",
+    "en": "In the pipeline, the same Claude Code session that generates an implementation also performs the automated review step."
+   },
+   {
+    "sid": "sample01#11.0",
+    "en": "A dev team wants Claude Code to automatically run `npm run lint:fix` every time it writes or edits a TypeScript file."
+   },
+   {
+    "sid": "lesson-d2#24.3",
+    "en": "Configure the `oauth` block with `authServerMetadataUrl` pointed at the internal Kerberos realm so Claude Code discovers the flow automatically."
+   },
+   {
+    "sid": "lesson-d5#34.0",
+    "en": "Fields above the calibrated threshold are now accepted automatically."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:automate.0",
+    "en": "An agentic pipeline automates vendor payments.",
+    "ko": "공급업체 대금 지급을 자동화한 에이전트 파이프라인"
+   },
+   {
+    "vid": "vocab:automate.1",
+    "en": "Subagents inherit the hub's full message history automatically",
+    "ko": "서브에이전트는 허브의 전체 메시지 기록을 자동으로 상속한다"
+   }
+  ]
+ },
+ {
+  "lemma": "autonomous",
+  "kind": "vocab-core",
+  "surfaces": [
+   "autonomously",
+   "autonomous"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "autonomous",
+   "word": "autonomous",
+   "pos": "형용사",
+   "ipa": "ɔːˈtɑːnəməs",
+   "meaning": "자율적인, 스스로 판단해 움직이는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#3.0",
+    "en": "A junior engineer proposes capping an autonomous research agent at exactly 5 tool-call iterations and treating that cap as the loop's primary stopping mechanism, regardless of stop_reason."
+   },
+   {
+    "sid": "mock04#3.2",
+    "en": "The support agent, however, has autonomously called process_refund for amounts over $500 in several audited cases."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:autonomous.0",
+    "en": "...few-shot examples demonstrating when to escalate versus resolve autonomously.",
+    "ko": "언제 에스컬레이션하고 언제 스스로 해결할지 보여 주는 few-shot 예시."
+   }
+  ]
+ },
+ {
+  "lemma": "available",
+  "kind": "vocab-core",
+  "surfaces": [
+   "available",
+   "availability",
+   "unavailable"
+  ],
+  "freq": 12,
+  "vocab": {
+   "id": "available",
+   "word": "available",
+   "pos": "형용사",
+   "ipa": "əˈveɪləbl",
+   "meaning": "이용할 수 있는, 쓸 수 있는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#12.1",
+    "en": "The coordinator itself has Read, Edit, Write, Grep, and Glob available."
+   },
+   {
+    "sid": "lesson-d2#18.1",
+    "en": "Currently, every subagent is configured with the full union of all tools used anywhere in the pipeline, so each has around 15 tools available, and each agent's tool choice is left at {\"type\": \"auto\"} in every turn."
+   },
+   {
+    "sid": "lesson-d3#7.2",
+    "en": "What makes `/lint-report` available to the whole team?"
+   },
+   {
+    "sid": "lesson-d5#17.0",
+    "en": "A document-search subagent hits an authentication error against a knowledge base and simply returns the string 'search unavailable' to the coordinator."
+   },
+   {
+    "sid": "sample01#13.0",
+    "en": "A team wants project-specific commands available to all engineers using Claude Code on the repo, without adding entries to each engineer's user settings."
+   },
+   {
+    "sid": "mock04#2.3",
+    "en": "Attach the full untrimmed transcript of the conversation so the human agent has every message available to read."
+   },
+   {
+    "sid": "lesson-d1#12.3",
+    "en": "Set tools to [\"Read\", \"Grep\"] on the doc-reviewer definition so it inherits only the listed read tools regardless of what the coordinator has available"
+   },
+   {
+    "sid": "lesson-d3#8.5",
+    "en": "The skill was saved correctly, but skill availability only activates after the project's CI pipeline runs once successfully."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:available.0",
+    "en": "A team wants project-specific commands available to all engineers using Claude Code on the repo...",
+    "ko": "팀은 저장소에서 Claude Code를 쓰는 모든 엔지니어가 프로젝트 전용 커맨드를 쓸 수 있길 원합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "average",
+  "kind": "vocab-core",
+  "surfaces": [
+   "average",
+   "averaged"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "average",
+   "word": "average",
+   "pos": "명사·형용사·동사",
+   "ipa": "ˈævərɪdʒ",
+   "meaning": "평균(의) / 평균을 내다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#2.1",
+    "en": "When the support agent invokes escalate_to_human, human agents report they must re-read the entire raw conversation to understand each case, and average handle time for escalated tickets has risen."
+   },
+   {
+    "sid": "lesson-d5#30.4",
+    "en": "Run the extraction several separate times per document and average each field's numbers, then set the cut-off on the averaged value to damp random variation between runs."
+   },
+   {
+    "sid": "lesson-d5#32.4",
+    "en": "Ask the model to double-check its own scores in a second pass and average the two"
+   },
+   {
+    "sid": "mock04#35.6",
+    "en": "Average the two figures into a single blended market-size number so the report reflects both sources about equally."
+   },
+   {
+    "sid": "lesson-d5#38.6",
+    "en": "Report $440 million (average of the two figures) for revenue, and cite both sources as its basis"
+   },
+   {
+    "sid": "lesson-d5#40.4",
+    "en": "Have each subagent replace each figure it extracts with a twelve-month average before passing it to the coordinator"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:average.0",
+    "en": "...and average handle time for escalated tickets has risen.",
+    "ko": "에스컬레이션된 티켓의 평균 처리 시간도 늘어났습니다."
+   },
+   {
+    "vid": "vocab:average.1",
+    "en": "Average the two figures into a single blended market-size number...",
+    "ko": "두 수치를 평균 내 하나의 혼합 시장 규모 수치로 만든다"
+   }
+  ]
+ },
+ {
+  "lemma": "avoid",
+  "kind": "vocab-core",
+  "surfaces": [
+   "avoid",
+   "avoids"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "avoid",
+   "word": "avoid",
+   "pos": "동사",
+   "ipa": "əˈvɔɪd",
+   "meaning": "피하다, (일이 생기지 않게) 막다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#27.4",
+    "en": "Withhold the filename extension failure and report only the currency-formatting mismatch as the primary defect found first, deferring the secondary extension issue to avoid distracting Claude from the more critical formatting fix."
+   },
+   {
+    "sid": "lesson-d4#2.4",
+    "en": "High-confidence phrasing conflicts with the model's safety training, which is designed to avoid under-reporting risks, causing it to over-report findings as a precautionary default across a wider range of inputs."
+   },
+   {
+    "sid": "mock04#18.6",
+    "en": "Do the entire migration in a single large message to avoid any state loss between separate conversation turns."
+   },
+   {
+    "sid": "lesson-d4#29.5",
+    "en": "doc#2026#report#final#v2, since separating each descriptive segment with a distinct punctuation mark avoids any ambiguity about where one part ends"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:avoid.0",
+    "en": "Do the entire migration in a single large message to avoid any state loss between separate conversation turns.",
+    "ko": "대화 턴 사이에 상태가 사라지지 않도록 전체 마이그레이션을 하나의 거대한 메시지로 처리한다"
+   }
+  ]
+ },
+ {
+  "lemma": "away",
+  "kind": "new",
+  "surfaces": [
+   "away"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d3#21.2",
+    "en": "Use accept-edits mode so Claude extracts the first service right away, with the remaining boundaries adjusted as problems appear in the code"
+   },
+   {
+    "sid": "lesson-d4#7.3",
+    "en": "Turn it back on right away, but add \"only report high-confidence findings\" to its criteria so it stays quiet"
+   },
+   {
+    "sid": "lesson-d5#20.6",
+    "en": "Retry the overloaded error a limited number of times locally. Report the authentication failure to the coordinator right away, with the attempts made, the 12 articles and possible alternatives"
+   }
+  ]
+ },
+ {
+  "lemma": "back",
+  "kind": "new",
+  "surfaces": [
+   "back",
+   "backed"
+  ],
+  "freq": 27,
+  "sentences": [
+   {
+    "sid": "lesson-d1#14.1",
+    "en": "The synthesis subagent's report comes back generic and cites none of the sources the researcher found."
+   },
+   {
+    "sid": "lesson-d2#13.3",
+    "en": "What should it send back to the coordinator?"
+   },
+   {
+    "sid": "lesson-d3#11.1",
+    "en": "The team wants that exploratory back-and-forth kept separate from the main conversation, with only the final recommendation surfacing back to the user."
+   },
+   {
+    "sid": "lesson-d4#33.0",
+    "en": "An insurer's claims agent calls the company's own policy-database lookup tool, reads what comes back, and then decides on its next step, often over several turns."
+   },
+   {
+    "sid": "lesson-d5#12.0",
+    "en": "In production, a hotel-booking support agent searches by guest name and check-in city and gets back two reservations with different booking references."
+   },
+   {
+    "sid": "mock04#59.2",
+    "en": "The team needs to reprocess only the failures and reliably match every result back to its source document."
+   },
+   {
+    "sid": "lesson-d1#15.1",
+    "en": "Which coordinator behaviour gets all three results back in roughly ten minutes instead of thirty?"
+   },
+   {
+    "sid": "lesson-d4#7.2",
+    "en": "What should decide when the category goes back on?"
+   }
+  ]
+ },
+ {
+  "lemma": "back off",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "back-off",
+   "word": "back off",
+   "pos": "동사구",
+   "ipa": "ˌbæk ˈɔːf",
+   "meaning": "(잠시) 물러서다 — 재시도 간격을 늘리며 요청을 줄이다"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "backend",
+  "kind": "vocab-core",
+  "surfaces": [
+   "backend"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "backend",
+   "word": "backend",
+   "pos": "명사",
+   "ipa": "ˈbækend",
+   "meaning": "백엔드 — 화면 뒤에서 데이터·업무 처리를 맡는 서버 시스템"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#40.1",
+    "en": "A backend service needs to resume a specific user's conversation on demand, potentially hours after the user's last message, while other users' sessions remain active in the same directory."
+   },
+   {
+    "sid": "mock04#1.1",
+    "en": "A customer support resolution agent built with the Claude Agent SDK reaches backend systems through custom MCP tools (get_customer, lookup_order, process_refund, escalate_to_human)."
+   },
+   {
+    "sid": "lesson-d2#1.4",
+    "en": "Give the intended tool a higher priority weight in your backend router"
+   },
+   {
+    "sid": "mock04#4.1",
+    "en": "get_customer and lookup_order call two different backend systems that return dates in different formats (ISO vs. US) and amounts with inconsistent currency notation."
+   },
+   {
+    "sid": "lesson-d2#5.5",
+    "en": "Increase the priority weight of the newer tool in the backend routing configuration without touching either tool's description."
+   },
+   {
+    "sid": "lesson-d2#6.4",
+    "en": "Give both tools identical descriptions but different internal function names so backend routing can disambiguate them."
+   },
+   {
+    "sid": "mock04#4.6",
+    "en": "Spin up a dedicated formatting subagent that the coordinator calls after every backend lookup to rewrite the raw fields."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:backend.0",
+    "en": "...reaches backend systems through custom MCP tools (get_customer, lookup_order, process_refund, escalate_to_human).",
+    "ko": "커스텀 MCP 도구(`get_customer`, `lookup_order`, `process_refund`, `escalate_to_human`)로 백엔드 시스템에 접근합니다."
+   },
+   {
+    "vid": "vocab:backend.1",
+    "en": "get_customer and lookup_order call two different backend systems that return dates in different formats...",
+    "ko": "`get_customer` 와 `lookup_order` 는 서로 다른 두 백엔드 시스템을 호출하는데, 두 시스템은 날짜를 서로 다른 형식으로 반환하고..."
+   }
+  ]
+ },
+ {
+  "lemma": "background",
+  "kind": "new",
+  "surfaces": [
+   "background"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d1#41.4",
+    "en": "The fork runs in the background. Resume the original session_id to see the OAuth2 exploration, since forks report back to their parent"
+   },
+   {
+    "sid": "lesson-d4#32.5",
+    "en": "Send each diff to the Messages API from a background job queue, and have the merge check pass while the verdict posts as a comment"
+   }
+  ]
+ },
+ {
+  "lemma": "bad",
+  "kind": "new",
+  "surfaces": [
+   "bad"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#11.5",
+    "en": "Several examples of obviously bad code, such as an empty `catch {}`, each marked high severity, so the bot learns what a real issue looks like"
+   }
+  ]
+ },
+ {
+  "lemma": "baggage",
+  "kind": "new",
+  "surfaces": [
+   "baggage"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d5#13.0",
+    "en": "An airline support agent searches for a passenger by name and flight route to check a baggage claim."
+   },
+   {
+    "sid": "lesson-d5#13.6",
+    "en": "Combine the baggage details from the three records into one summary, then continue the claim review"
+   }
+  ]
+ },
+ {
+  "lemma": "balancer",
+  "kind": "new",
+  "surfaces": [
+   "balancer"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#37.4",
+    "en": "A fixed set of parallel subagents for the database, cache and load balancer that report to a merging step for diagnosis"
+   }
+  ]
+ },
+ {
+  "lemma": "ban",
+  "kind": "vocab-core",
+  "surfaces": [
+   "banned"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "ban",
+   "word": "ban",
+   "pos": "동사·명사",
+   "ipa": "bæn",
+   "meaning": "금지하다 / 금지 (banned terms: 금지어)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.1",
+    "en": "It writes a product description, code checks the length and banned terms, and then the description is translated into German and French."
+   }
+  ]
+ },
+ {
+  "lemma": "band",
+  "kind": "new",
+  "surfaces": [
+   "band"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#26.5",
+    "en": "Add a confidence_score field that rates how certain the model is about each finding, so dismissal rates can be compared per score band"
+   }
+  ]
+ },
+ {
+  "lemma": "bar",
+  "kind": "vocab-core",
+  "surfaces": [
+   "bar"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "bar",
+   "word": "bar",
+   "pos": "명사",
+   "ipa": "bɑːr",
+   "meaning": "① (통과해야 할) 기준, 문턱 ② 막대, 바"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#29.5",
+    "en": "Split the existing labeled results by document type and by field, and check that this type meets the bar on its own"
+   },
+   {
+    "sid": "mock04#51.7",
+    "en": "Lower the bar so every borderline case is flagged and pushed to a human reviewer for a decision"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:bar.0",
+    "en": "Lower the bar so every borderline case is flagged and pushed to a human reviewer for a decision",
+    "ko": "기준을 낮춰 모든 경계 사례를 표시하고 사람 리뷰어에게 넘겨 결정하게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "bare",
+  "kind": "vocab-core",
+  "surfaces": [
+   "bare"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "bare",
+   "word": "bare",
+   "pos": "형용사",
+   "ipa": "ber",
+   "meaning": "아무것도 덧붙이지 않은, 맨 ~ (최소한만 있는)"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#51.1",
+    "en": "The CI reviewer handles clear-cut defects well but is inconsistent on genuinely ambiguous cases — for example, whether a bare `except:` is acceptable in a one-off script versus a shared library."
+   },
+   {
+    "sid": "lesson-d5#31.7",
+    "en": "Add a prompt rule that assigns the most common unit from past documents to a bare weight number, and release those values to the output without a reviewer."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:bare.0",
+    "en": "...whether a bare `except:` is acceptable in a one-off script versus a shared library.",
+    "ko": "맨 `except:` 가 일회성 스크립트에서와 공유 라이브러리에서 각각 허용 가능한지"
+   }
+  ]
+ },
+ {
+  "lemma": "base",
+  "kind": "vocab-core",
+  "surfaces": [
+   "bases",
+   "base",
+   "based"
+  ],
+  "freq": 9,
+  "vocab": {
+   "id": "base",
+   "word": "base",
+   "pos": "명사·동사",
+   "ipa": "beɪs",
+   "meaning": "① 기반, (지식) 베이스 ② ~에 기반을 두다 (based: ~ 기반의)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#6.0",
+    "en": "Your ticket-triage system sends every ticket through five subagents: classifier, sentiment analyzer, knowledge-base search, summarizer and escalation checker."
+   },
+   {
+    "sid": "lesson-d4#20.0",
+    "en": "A financial services firm uses a tool-based schema to extract transaction records from PDF statements, including a required amount field and a required transaction_type field."
+   },
+   {
+    "sid": "lesson-d5#17.0",
+    "en": "A document-search subagent hits an authentication error against a knowledge base and simply returns the string 'search unavailable' to the coordinator."
+   },
+   {
+    "sid": "sample01#4.0",
+    "en": "A company deploys an MCP server that gives Claude access to internal knowledge bases and HR systems."
+   },
+   {
+    "sid": "lesson-d3#30.6",
+    "en": "The checkout used a shallow fetch-depth, so the CLI could not resolve the diff against the base branch and sat scanning the git history for missing commits"
+   },
+   {
+    "sid": "lesson-d5#27.2",
+    "en": "Hours later, asked about OrderService again, the agent describes it as 'typically extending a standard base controller with default error handling,' ignoring its earlier finding."
+   },
+   {
+    "sid": "lesson-d1#34.3",
+    "en": "A fixed prompt chain that summarizes the transcript, runs a code-based check on the summary, then translates it"
+   },
+   {
+    "sid": "lesson-d5#27.4",
+    "en": "Have the agent save class names and base classes it discovers to a notes file, so it can read them before answering questions."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:base.0",
+    "en": "A company deploys an MCP server that gives Claude access to internal knowledge bases and HR systems.",
+    "ko": "한 회사가 Claude에게 사내 지식베이스와 HR 시스템 접근 권한을 주는 MCP 서버를 배포했습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "based on",
+  "kind": "vocab-core",
+  "surfaces": [
+   "based on"
+  ],
+  "freq": 9,
+  "vocab": {
+   "id": "based-on",
+   "word": "based on",
+   "pos": "전치사구",
+   "ipa": "beɪst ɑːn",
+   "meaning": "~을 바탕으로, ~에 근거해"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#18.2",
+    "en": "The coordinator's prompt to synthesis only said \"Write a report based on the research that was just completed.\""
+   },
+   {
+    "sid": "lesson-d2#15.2",
+    "en": "What is the main reliability benefit of this redesign, based on the relationship between tool count and selection accuracy?"
+   },
+   {
+    "sid": "lesson-d4#38.2",
+    "en": "A separate cross-file integration pass that examines both files together and produces one recommendation based on the actual data flow"
+   },
+   {
+    "sid": "mock04#34.6",
+    "en": "Add a citation post-processor that guesses the most likely source for each uncited sentence based on topical similarity."
+   },
+   {
+    "sid": "lesson-d1#29.0",
+    "en": "A PreToolUse hook needs to block refunds above $500 only when they target a specific merchant category, based on a field named category inside the refund tool's arguments."
+   },
+   {
+    "sid": "mock04#37.7",
+    "en": "Expand the fixed list from five to twelve subagent tasks based on the engineer's prior knowledge of the billing domain"
+   },
+   {
+    "sid": "lesson-d1#11.4",
+    "en": "Spawn two fresh subagents with the prompts \"Try strategy A based on the analysis so far\" and \"Try strategy B based on the analysis so far\""
+   },
+   {
+    "sid": "lesson-d1#32.6",
+    "en": "An adaptive agent that inspects each spec first and then generates subtasks based on what it finds"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:based-on.0",
+    "en": "Add a citation post-processor that guesses the most likely source for each uncited sentence based on topical similarity.",
+    "ko": "주제 유사도를 바탕으로 인용 없는 문장마다 가장 그럴듯한 출처를 추측해 붙이는 인용 후처리기를 추가한다"
+   }
+  ]
+ },
+ {
+  "lemma": "basis",
+  "kind": "vocab-core",
+  "surfaces": [
+   "basis"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "basis",
+   "word": "basis",
+   "pos": "명사",
+   "ipa": "ˈbeɪsɪs",
+   "meaning": "근거, 기반 (on a ~ basis: ~ 단위로, ~ 방식으로)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#2.4",
+    "en": "The near-duplicate descriptions give the model no differentiating signal, since descriptions are its main basis for choosing similar tools."
+   },
+   {
+    "sid": "lesson-d5#38.6",
+    "en": "Report $440 million (average of the two figures) for revenue, and cite both sources as its basis"
+   }
+  ]
+ },
+ {
+  "lemma": "batch",
+  "kind": "vocab-core",
+  "surfaces": [
+   "batch",
+   "batches"
+  ],
+  "freq": 56,
+  "vocab": {
+   "id": "batch",
+   "word": "batch",
+   "pos": "명사·동사",
+   "ipa": "bætʃ",
+   "meaning": "① 묶음, 일괄 처리 단위 ② (여러 개를) 한데 묶다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#27.0",
+    "en": "A nightly job submits 60,000 document-review requests in one batch."
+   },
+   {
+    "sid": "lesson-d5#37.0",
+    "en": "Halfway through a batch of filings, a subagent finds that two credible documents give different headcounts for the same company."
+   },
+   {
+    "sid": "mock04#59.1",
+    "en": "A 50,000-document extraction batch completes and 300 requests returned errors."
+   },
+   {
+    "sid": "lesson-d2#12.3",
+    "en": "A single `isError: true` result for the whole batch, because not every record could be enriched"
+   },
+   {
+    "sid": "selfcheck-d4-kor#28.0",
+    "en": "Message Batches API의 한 요청 안에서 할 수 없는 것은?"
+   },
+   {
+    "sid": "mock04-kor#38.1",
+    "en": "Message Batches API가 이전 턴을 제거해, 여러 턴에 걸친 컨텍스트가 추적 과정에서 조용히 빠졌다."
+   },
+   {
+    "sid": "lesson-d4#27.1",
+    "en": "Each one embeds scanned page images, and the batch payload comes to about 400 MB."
+   },
+   {
+    "sid": "lesson-d2#12.4",
+    "en": "Only the enriched records, leaving the failed customers out so the coordinator receives a clean batch"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:batch.0",
+    "en": "Batch the three interacting changes into a single message so Claude edits the enum and all dependent switch sites together",
+    "ko": "서로 얽힌 세 변경을 하나의 메시지로 묶어, Claude가 enum과 이에 의존하는 모든 switch 지점을 함께 수정하게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "bear",
+  "kind": "new",
+  "surfaces": [
+   "bearing"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#7.4",
+    "en": "Consolidation is a token-saving measure for large MCP tool libraries. It has no bearing on how Claude selects between tools."
+   }
+  ]
+ },
+ {
+  "lemma": "bearer",
+  "kind": "vocab-core",
+  "surfaces": [
+   "bearer"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "bearer",
+   "word": "bearer",
+   "pos": "명사",
+   "ipa": "ˈberər",
+   "meaning": "소지자 — Bearer 토큰: 가진 쪽이면 누구나 쓸 수 있는 접근 토큰 (Authorization: Bearer …)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#20.2",
+    "en": "Add the server with --scope project, set the header to \"Authorization: Bearer ${GITHUB_TOKEN}\" in .mcp.json, and have each engineer export GITHUB_TOKEN in their own shell"
+   },
+   {
+    "sid": "selfcheck-d2-kor#20.0",
+    "en": "팀이 사내 티켓 서버를 모든 팀원에게 배포하려 한다. 서버는 Bearer 토큰 인증을 요구하고, 토큰은 사람마다 다르다. 가장 알맞은 구성은?"
+   },
+   {
+    "sid": "lesson-d2#20.4",
+    "en": "Add the server with --scope project and write the header as \"Bearer ${GITHUB_TOKEN:-YOUR_REAL_TOKEN}\", so the server still works for anyone who hasn't set the variable"
+   }
+  ]
+ },
+ {
+  "lemma": "become",
+  "kind": "new",
+  "surfaces": [
+   "becomes",
+   "become"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d1#35.1",
+    "en": "Reviewers have noticed that when a single pass tries to hold all 40 files in context at once, subtle cross-file issues are missed and comments become generic."
+   },
+   {
+    "sid": "lesson-d3#24.3",
+    "en": "Show Claude a sample legacy record whose middle-name field is null, along with the migrated record it should become, with that field as an empty string"
+   },
+   {
+    "sid": "mock04#42.5",
+    "en": "Remove Grep from the agent's allowedTools so the MCP search tool becomes the only code search option it can use at all."
+   },
+   {
+    "sid": "lesson-d1#8.1",
+    "en": "Response times have become unacceptable."
+   },
+   {
+    "sid": "lesson-d3#28.6",
+    "en": "A few sample rows, one with an empty cell and one with a quoted comma, each paired with the exact JSON it must become"
+   }
+  ]
+ },
+ {
+  "lemma": "before",
+  "kind": "new",
+  "surfaces": [
+   "before"
+  ],
+  "freq": 124,
+  "sentences": [
+   {
+    "sid": "lesson-d1#19.0",
+    "en": "A refund agent's system prompt says \"always call get_customer before process_refund\"."
+   },
+   {
+    "sid": "lesson-d2#10.0",
+    "en": "A team is reviewing an MCP tool's error contract before launch."
+   },
+   {
+    "sid": "lesson-d3#11.0",
+    "en": "A team's `explore-alternatives` skill asks Claude to brainstorm several competing architecture approaches before settling on a recommendation."
+   },
+   {
+    "sid": "lesson-d4#15.1",
+    "en": "The system prompt also says: \"Before calling the tool, briefly explain which clauses look ambiguous.\""
+   },
+   {
+    "sid": "lesson-d5#21.2",
+    "en": "What should the coordinator change before spawning them?"
+   },
+   {
+    "sid": "mock04#12.1",
+    "en": "Your team's /investigate-flaky skill greps the entire test suite, reads dozens of files, and prints verbose exploration before it answers."
+   },
+   {
+    "sid": "sample01#5.2",
+    "en": "A bug causes the agent to approve $2.3M in duplicate payments before being caught."
+   },
+   {
+    "sid": "mock04-kor#31.0",
+    "en": "시스템 프롬프트를 강조형 \"ALWAYS classify before extracting\" 규칙과 풀이 예시 두 개로 강화한다."
+   }
+  ]
+ },
+ {
+  "lemma": "begin",
+  "kind": "new",
+  "surfaces": [
+   "begin",
+   "begins",
+   "began"
+  ],
+  "freq": 7,
+  "sentences": [
+   {
+    "sid": "lesson-d3#25.1",
+    "en": "Which approach best sets up an effective iterative refinement loop before implementation begins?"
+   },
+   {
+    "sid": "lesson-d4#7.0",
+    "en": "After developers began dismissing all of a reviewer's comments, a team added its noisy performance-hints category to the skip list."
+   },
+   {
+    "sid": "mock04#19.2",
+    "en": "Doing this discovery inline reads dozens of files and floods the main session with search output before any edits begin, and the later edits then start to wander."
+   },
+   {
+    "sid": "lesson-d1#25.4",
+    "en": "Matchers can only target tool names that begin with the `mcp__` server prefix. A custom in-process tool like `refund` must be renamed to include this prefix before any matcher can reliably target it."
+   },
+   {
+    "sid": "mock04#56.2",
+    "en": "A new vendor begins sending \"credit memo\" documents, which are not in the enum, and the model force-fits them to \"invoice\", corrupting downstream routing."
+   },
+   {
+    "sid": "lesson-d1#9.4",
+    "en": "The coordinator began synthesis before the last subagents had reported back, so the report was built from partial findings"
+   },
+   {
+    "sid": "mock04#19.4",
+    "en": "Read every candidate file into the main session first so all call sites are visible before any edit begins, then plan the rename."
+   }
+  ]
+ },
+ {
+  "lemma": "behalf",
+  "kind": "new",
+  "surfaces": [
+   "behalf"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#18.6",
+    "en": "Keep the shared 15-tool set for all subagents, but switch every subagent's tool_choice to {\"type\": \"none\"} so no subagent can call tools directly, requiring the coordinator to invoke tools on its behalf."
+   }
+  ]
+ },
+ {
+  "lemma": "behavior",
+  "kind": "vocab-core",
+  "surfaces": [
+   "behavior",
+   "behaviour"
+  ],
+  "freq": 14,
+  "vocab": {
+   "id": "behavior",
+   "word": "behavior",
+   "pos": "명사",
+   "ipa": "bɪˈheɪvjər",
+   "meaning": "동작, (시스템·모델이) 행동하는 방식"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#15.1",
+    "en": "Which coordinator behaviour gets all three results back in roughly ten minutes instead of thirty?"
+   },
+   {
+    "sid": "lesson-d3#19.1",
+    "en": "What most plausibly explains this behavior?"
+   },
+   {
+    "sid": "lesson-d4#3.1",
+    "en": "Under an explicit-criteria rule that only flags comments contradicted by actual code behavior, should this finding be reported?"
+   },
+   {
+    "sid": "mock04#6.2",
+    "en": "Logs show the agent issues full refunds when only a partial credit was warranted in 17% of cases because it cannot tell from the single tool which behavior it is invoking."
+   },
+   {
+    "sid": "lesson-d2#2.3",
+    "en": "The tools were declared in the wrong order in the tools array, and reordering them so that the intended tool is listed first will correct the routing behavior."
+   },
+   {
+    "sid": "lesson-d3#23.6",
+    "en": "Follow 2–3 concrete examples of edits, each paired with the exact document state it should produce, as the definition of correct behaviour"
+   },
+   {
+    "sid": "lesson-d4#1.4",
+    "en": "\"Report any bugs that could cause incorrect behavior, a test failure, or a misleading result; only omit nits like pure style or naming preferences.\""
+   },
+   {
+    "sid": "mock04#32.5",
+    "en": "Force tool_choice to the parse_pdf tool so parsing behavior is deterministic for every input the subagent receives."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:behavior.0",
+    "en": "...because it cannot tell from the single tool which behavior it is invoking.",
+    "ko": "하나의 도구만으로는 자신이 어떤 동작을 호출하는지 구분하지 못해..."
+   },
+   {
+    "vid": "vocab:behavior.1",
+    "en": "What is the correct behavior?",
+    "ko": "올바른 동작은 무엇일까요?"
+   }
+  ]
+ },
+ {
+  "lemma": "behind",
+  "kind": "new",
+  "surfaces": [
+   "behind"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d4#10.3",
+    "en": "Replace the twenty pairs with a handful of examples chosen to show the reasoning behind the labels"
+   },
+   {
+    "sid": "mock04#51.6",
+    "en": "Add two to four few-shot examples of representative ambiguous cases, each with the reasoning behind its verdict"
+   },
+   {
+    "sid": "lesson-d4#26.3",
+    "en": "Add a detected_pattern field that names the code construct behind each finding, so dismissal rates can be compared per construct"
+   },
+   {
+    "sid": "lesson-d4#36.4",
+    "en": "Reflection runs in the same context that wrote the code, so the model reuses the reasoning behind its earlier decisions when it checks them"
+   }
+  ]
+ }
+]

@@ -1,0 +1,750 @@
+<title>Quiz Word Motion</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* 레이아웃: 왼쪽 iPhone 프레임 안에서 실제로 조작하는 시안, 오른쪽에 그 화면의 모션 명세. 좁은 화면에서는 위아래로 쌓는다. */
+:root {
+  --page: #E9EBF3;
+  --screen: #F2F3F8;
+  --surface: #FFFFFF;
+  --surface2: #F6F7FB;
+  --line: #E3E6EF;
+  --text: #161A2B;
+  --text2: #4A5068;
+  --muted: #8A90A6;
+  --primary: #4F46E5;
+  --primary2: #7C3AED;
+  --primary-soft: #EEF0FF;
+  --primary-text: #3730A3;
+  --on-primary: #FFFFFF;
+  --success: #059669;
+  --success-soft: #E3F6EE;
+  --danger: #E11D48;
+  --danger-soft: #FDECF0;
+  --warning: #B45309;
+  --warning-soft: #FDF0DA;
+  --marker: #FFEB85;
+  --marker-text: #3D3000;
+  --frame: #12141C;
+  --shadow: 0 1px 2px rgb(16 24 40 / .05), 0 10px 28px rgb(16 24 40 / .10);
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Segoe UI", "Malgun Gothic", system-ui, sans-serif;
+  --mono: ui-monospace, "SF Mono", Consolas, monospace;
+  --slow: 1;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --spring: cubic-bezier(.34, 1.36, .64, 1);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page: #08090D; --screen: #000000; --surface: #1C1C1E; --surface2: #2C2C2E; --line: #2E2F36;
+    --text: #ECEEF6; --text2: #B4B9CC; --muted: #7D8399; --primary: #818CF8; --primary2: #A78BFA;
+    --primary-soft: #1F2245; --primary-text: #C7CEFF; --on-primary: #0E1018; --success: #34D399; --success-soft: #0F2A20;
+    --danger: #FB7185; --danger-soft: #34151E; --warning: #FBBF24; --warning-soft: #2E2410; --marker: #5A4A08;
+    --marker-text: #FFF3B0; --frame: #1F2129; --shadow: 0 0 0 1px rgb(255 255 255 / .06); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --page: #08090D; --screen: #000000; --surface: #1C1C1E; --surface2: #2C2C2E; --line: #2E2F36;
+  --text: #ECEEF6; --text2: #B4B9CC; --muted: #7D8399; --primary: #818CF8; --primary2: #A78BFA;
+  --primary-soft: #1F2245; --primary-text: #C7CEFF; --on-primary: #0E1018; --success: #34D399; --success-soft: #0F2A20;
+  --danger: #FB7185; --danger-soft: #34151E; --warning: #FBBF24; --warning-soft: #2E2410; --marker: #5A4A08;
+  --marker-text: #FFF3B0; --frame: #1F2129; --shadow: 0 0 0 1px rgb(255 255 255 / .06); color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--page); color: var(--text); font-family: var(--font); -webkit-font-smoothing: antialiased;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 40px; }
+button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; -webkit-tap-highlight-color: transparent; }
+button:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+.wrap { max-width: 1040px; margin: 0 auto; display: grid; gap: 28px; }
+.top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; }
+.top h1 { margin: 0; font-size: 26px; letter-spacing: -.02em; text-wrap: balance; }
+.top p { margin: 6px 0 0; color: var(--text2); font-size: 14px; max-width: 60ch; line-height: 1.55; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; }
+.seg { display: inline-flex; padding: 3px; border-radius: 12px; background: var(--surface); box-shadow: var(--shadow); }
+.seg button { padding: 7px 14px; border-radius: 9px; font-size: 13.5px; font-weight: 600; color: var(--text2); transition: background .15s, color .15s; }
+.seg button[aria-pressed="true"] { background: var(--primary); color: var(--on-primary); }
+.toggle { display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 12px; background: var(--surface); box-shadow: var(--shadow); font-size: 13px; font-weight: 600; color: var(--text2); }
+.toggle[aria-pressed="true"] { color: var(--primary-text); background: var(--primary-soft); }
+
+.main { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 36px; align-items: start; }
+@media (max-width: 880px) { .main { grid-template-columns: minmax(0, 1fr); justify-items: center; } }
+
+/* iPhone 프레임 */
+.device { width: 392px; height: 812px; padding: 11px; border-radius: 58px; background: var(--frame); box-shadow: 0 30px 60px rgb(10 12 30 / .25); position: relative; }
+.screen { position: relative; height: 100%; border-radius: 47px; overflow: hidden; background: var(--screen); display: flex; flex-direction: column; }
+.status { height: 50px; flex: none; display: flex; align-items: center; justify-content: space-between; padding: 6px 30px 0; font-size: 15px; font-weight: 600; }
+.island { position: absolute; top: 11px; left: 50%; width: 118px; height: 34px; border-radius: 20px; background: #000; transform: translateX(-50%); z-index: 5; }
+@media (max-width: 440px) {
+  .device { width: 100%; height: 760px; padding: 0; border-radius: 30px; background: transparent; box-shadow: none; }
+  .screen { border-radius: 30px; border: 1px solid var(--line); }
+  .island { display: none; }
+}
+.view { position: absolute; inset: 50px 0 0; display: flex; flex-direction: column; }
+.view[hidden] { display: none !important; }
+
+/* 공통 세션 상단 */
+.sbar { display: flex; align-items: center; gap: 12px; padding: 6px 20px 10px; }
+.x { width: 30px; height: 30px; border-radius: 50%; background: var(--surface2); display: grid; place-items: center; color: var(--text2); font-size: 15px; }
+.track { flex: 1; height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.fill { height: 100%; width: 0; border-radius: 3px; background: var(--primary); transition: width calc(420ms * var(--slow)) var(--spring); }
+.count { font-size: 13px; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; min-width: 40px; text-align: right; }
+
+/* 플래시카드 */
+.stage { position: relative; flex: 1; margin: 6px 22px 0; }
+.card { position: absolute; inset: 0 0 18px; perspective: 1200px; transition: transform calc(380ms * var(--slow)) var(--spring), opacity calc(300ms * var(--slow)) var(--ease); touch-action: none; user-select: none; -webkit-user-select: none; }
+.card.p1, .card.p2, .card.p3 { transform-origin: 50% 100%; }
+.card.p1 { transform: translateY(10px) scale(.94); opacity: .6; }
+.card.p2 { transform: translateY(20px) scale(.88); opacity: .3; }
+.card.p3 { transform: translateY(26px) scale(.84); opacity: 0; }
+.card.dragging { transition: none; }
+.card.flyout { transition: transform calc(280ms * var(--slow)) cubic-bezier(.4, 0, .9, .6), opacity calc(260ms * var(--slow)) ease-in; transform: translateY(-115%) rotate(-4deg); opacity: 0; }
+.inner { position: absolute; inset: 0; transform-style: preserve-3d; transition: transform calc(420ms * var(--slow)) var(--ease); }
+.card.flipped .inner { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; border-radius: 26px; background: var(--surface); box-shadow: var(--shadow); backface-visibility: hidden; -webkit-backface-visibility: hidden; overflow: hidden; }
+.front { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 24px; cursor: grab; }
+.back { transform: rotateY(180deg); display: flex; flex-direction: column; }
+.pos { display: flex; gap: 6px; margin-bottom: 16px; }
+.badge { padding: 3px 8px; border-radius: 7px; font-size: 11.5px; font-weight: 700; background: #E0F2FE; color: #075985; }
+.badge.v { background: #D1FAE5; color: #065F46; }
+.badge.a { background: #FEF3C7; color: #92400E; }
+:root[data-theme="dark"] .badge { background: #0C2A3D; color: #7DD3FC; } :root[data-theme="dark"] .badge.v { background: #082E22; color: #6EE7B7; } :root[data-theme="dark"] .badge.a { background: #33240A; color: #FCD34D; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .badge { background: #0C2A3D; color: #7DD3FC; } :root:not([data-theme="light"]) .badge.v { background: #082E22; color: #6EE7B7; } :root:not([data-theme="light"]) .badge.a { background: #33240A; color: #FCD34D; } }
+.word { font-size: 46px; font-weight: 800; letter-spacing: -.025em; line-height: 1.05; }
+.ipa { margin-top: 12px; font-size: 17px; color: var(--muted); }
+.again { position: absolute; top: 18px; left: 50%; transform: translateX(-50%); padding: 4px 10px; border-radius: 99px; background: var(--warning-soft); color: var(--warning); font-size: 11.5px; font-weight: 700; white-space: nowrap; }
+.card.p0 .again { animation: blink calc(900ms * var(--slow)) var(--ease) 1; }
+@keyframes blink { 0%, 100% { opacity: 1; } 35% { opacity: .25; } 70% { opacity: 1; } }
+.tint { position: absolute; inset: 0; border-radius: 26px; opacity: 0; pointer-events: none; }
+.stamp { position: absolute; top: 26px; padding: 6px 12px; border: 3px solid currentColor; border-radius: 12px; font-size: 20px; font-weight: 800; opacity: 0; transform: scale(.8) rotate(var(--r)); pointer-events: none; }
+.stamp.know { left: 22px; color: var(--success); --r: -12deg; }
+.stamp.dont { right: 22px; color: var(--danger); --r: 12deg; }
+.stamp.hit { animation: thump calc(240ms * var(--slow)) var(--spring); }
+@keyframes thump { 50% { transform: scale(1.18) rotate(var(--r)); } }
+.verdict { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 18px; font-size: 13px; font-weight: 700; }
+.verdict.ok { background: var(--success-soft); color: var(--success); }
+.verdict.ng { background: var(--danger-soft); color: var(--danger); }
+.verdict button { font-size: 12.5px; font-weight: 600; opacity: .8; }
+.backbody { flex: 1; overflow: auto; padding: 18px 20px 20px; display: grid; gap: 14px; align-content: start; }
+.bword { display: flex; align-items: baseline; gap: 8px; font-size: 15px; color: var(--muted); }
+.bword b { font-size: 22px; color: var(--text); letter-spacing: -.01em; }
+.short { font-size: 23px; font-weight: 800; color: var(--primary-text); line-height: 1.3; }
+.senses { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: 14.5px; }
+.senses li { display: flex; gap: 10px; }
+.senses span { width: 14px; text-align: right; color: var(--muted); font-weight: 700; font-size: 12px; padding-top: 2px; }
+.label { font-size: 11.5px; font-weight: 700; color: var(--muted); letter-spacing: .04em; }
+.ctx { padding: 12px 14px; border-radius: 14px; background: var(--surface2); display: grid; gap: 6px; }
+.ctx .sense { font-size: 12.5px; font-weight: 700; color: var(--primary-text); }
+.ctx .en { font-size: 15px; line-height: 1.5; }
+.ctx .ko { font-size: 13px; line-height: 1.5; color: var(--text2); }
+.ctx .src { font-size: 11px; color: var(--muted); }
+mark { color: var(--marker-text); font-weight: 700; background: linear-gradient(var(--marker), var(--marker)) no-repeat 0 85% / 0% 70%; padding: 0 2px; border-radius: 3px; }
+.card.flipped mark, .explain mark, .qcard mark { animation: sweep calc(420ms * var(--slow)) var(--ease) forwards; animation-delay: calc(var(--d, 380ms) * var(--slow)); }
+@keyframes sweep { to { background-size: 100% 70%; } }
+
+.actions { flex: none; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 8px 22px 30px; }
+.btn { height: 56px; border-radius: 16px; font-size: 17px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px; transition: transform calc(160ms * var(--slow)) var(--spring), background .2s, opacity .2s; }
+.btn:active { transform: scale(.97); }
+.btn.ng { background: var(--danger-soft); color: var(--danger); }
+.btn.ok { background: var(--success-soft); color: var(--success); }
+.btn.go { grid-column: 1 / -1; background: var(--primary); color: var(--on-primary); }
+.btn small { font-size: 12px; opacity: .7; font-weight: 600; }
+.hint { text-align: center; font-size: 12px; color: var(--muted); padding: 0 0 4px; }
+.chip { position: absolute; z-index: 20; padding: 6px 12px; border-radius: 99px; background: var(--warning); color: #fff; font-size: 12.5px; font-weight: 700; pointer-events: none; white-space: nowrap; }
+
+/* 요약 */
+.summary { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 24px; text-align: center; }
+.ring { position: relative; width: 150px; height: 150px; }
+.ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.ring .bgc { fill: none; stroke: var(--line); stroke-width: 12; }
+.ring .fgc { fill: none; stroke: var(--primary); stroke-width: 12; stroke-linecap: round; stroke-dasharray: 339.3; stroke-dashoffset: 339.3; }
+.ring .num { position: absolute; inset: 0; display: grid; place-items: center; font-size: 34px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.stats3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; width: 100%; }
+.stats3 div { padding: 12px 6px; border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
+.stats3 b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; }
+.stats3 span { font-size: 11.5px; color: var(--muted); }
+
+/* 객관식 */
+.qbody { flex: 1; overflow: auto; padding: 4px 20px 24px; display: grid; gap: 12px; align-content: start; }
+.qcard { padding: 22px 18px; border-radius: 22px; background: var(--surface); box-shadow: var(--shadow); animation: slideIn calc(260ms * var(--slow)) var(--ease) both; }
+.qcard.center { text-align: center; padding: 30px 18px; }
+.qlabel { font-size: 12.5px; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+.qsent { font-size: 17px; line-height: 1.55; }
+@keyframes slideIn { from { transform: translateX(26px); opacity: 0; } to { transform: none; opacity: 1; } }
+.opt { position: relative; display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 10px 14px; border-radius: 16px; background: var(--surface); box-shadow: var(--shadow); text-align: left; overflow: hidden; animation: up calc(280ms * var(--slow)) var(--ease) both; animation-delay: calc(var(--i) * 30ms * var(--slow) + 120ms * var(--slow)); transition: opacity .25s, transform calc(160ms * var(--slow)) var(--spring); }
+.opt:active { transform: scale(.98); }
+@keyframes up { from { transform: translateY(12px); opacity: 0; } to { transform: none; opacity: 1; } }
+.opt::before { content: ""; position: absolute; inset: 0; transform: scaleX(0); transform-origin: left; transition: transform calc(240ms * var(--slow)) var(--ease); }
+.opt.right::before { background: var(--success-soft); transform: scaleX(1); }
+.opt.wrong::before { background: var(--danger-soft); transform: scaleX(1); }
+.opt > * { position: relative; }
+.num2 { width: 28px; height: 28px; flex: none; border-radius: 9px; background: var(--surface2); display: grid; place-items: center; font-size: 13px; font-weight: 700; color: var(--muted); transition: background .2s, color .2s; }
+.opt.right .num2 { background: var(--success); color: #fff; animation: pop calc(320ms * var(--slow)) var(--spring); }
+.opt.wrong .num2 { background: var(--danger); color: #fff; }
+.opt .t { flex: 1; font-size: 15.5px; font-weight: 600; }
+.opt .owner { font-size: 12px; color: var(--muted); opacity: 0; transition: opacity .3s; }
+.answered .opt .owner { opacity: 1; }
+.answered .opt:not(.right):not(.wrong) { opacity: .5; }
+.opt.shake { animation: shake calc(300ms * var(--slow)) linear; }
+@keyframes pop { 0% { transform: scale(0); } 70% { transform: scale(1.15); } 100% { transform: scale(1); } }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 15% { transform: translateX(-8px); } 35% { transform: translateX(8px); } 55% { transform: translateX(-6px); } 75% { transform: translateX(5px); } }
+.explain { display: grid; gap: 10px; padding: 16px; border-radius: 20px; background: var(--surface); box-shadow: var(--shadow); animation: rise calc(420ms * var(--slow)) var(--spring) both; }
+@keyframes rise { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
+.result { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 12px; font-size: 14px; font-weight: 700; }
+.result.ok { background: var(--success-soft); color: var(--success); }
+.result.ng { background: var(--danger-soft); color: var(--danger); }
+
+/* 오늘 */
+.home { flex: 1; overflow: auto; padding: 0 18px 28px; display: grid; gap: 14px; align-content: start; }
+.lt { display: flex; align-items: flex-end; justify-content: space-between; padding: 6px 4px 0; }
+.lt h2 { margin: 0; font-size: 34px; letter-spacing: -.02em; }
+.lt p { margin: 2px 0 0; font-size: 14px; color: var(--muted); }
+.gear { width: 34px; height: 34px; border-radius: 50%; background: var(--surface); box-shadow: var(--shadow); display: grid; place-items: center; color: var(--text2); }
+.hero { padding: 20px; border-radius: 24px; color: #fff; background: linear-gradient(135deg, #4F46E5, #7C3AED); box-shadow: 0 14px 30px rgb(79 70 229 / .35); display: grid; gap: 14px; }
+.hero h3 { margin: 0; font-size: 15px; opacity: .9; }
+.hero .nums { display: flex; gap: 26px; }
+.hero .nums b { font-size: 40px; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.hero .nums span { display: block; font-size: 13px; opacity: .85; }
+.hero button { height: 48px; border-radius: 14px; background: rgb(255 255 255 / .18); color: #fff; font-weight: 700; font-size: 16px; transition: transform calc(160ms * var(--slow)) var(--spring), background .2s; }
+.hero button:active { transform: scale(.97); background: rgb(255 255 255 / .26); }
+.panel { padding: 16px; border-radius: 20px; background: var(--surface); box-shadow: var(--shadow); }
+.prog { display: flex; align-items: center; gap: 16px; }
+.mini { width: 74px; height: 74px; flex: none; position: relative; }
+.mini svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.mini .bgc { fill: none; stroke: var(--line); stroke-width: 9; }
+.mini .fgc { fill: none; stroke: var(--success); stroke-width: 9; stroke-linecap: round; stroke-dasharray: 201; stroke-dashoffset: 201; }
+.mini b { position: absolute; inset: 0; display: grid; place-items: center; font-size: 17px; font-variant-numeric: tabular-nums; }
+.legend { display: grid; gap: 4px; font-size: 13px; color: var(--text2); }
+.legend i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+.tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.tile { padding: 14px; border-radius: 18px; background: var(--surface); box-shadow: var(--shadow); text-align: left; display: grid; gap: 8px; animation: up calc(380ms * var(--slow)) var(--spring) both; animation-delay: calc(var(--i) * 40ms * var(--slow) + 200ms * var(--slow)); transition: transform calc(160ms * var(--slow)) var(--spring); }
+.tile:active { transform: scale(.97); }
+.tile .ic { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; font-size: 15px; background: var(--primary-soft); color: var(--primary); }
+.tile b { font-size: 15px; }
+.tile span { font-size: 12px; color: var(--muted); }
+.bars { display: flex; align-items: flex-end; gap: 10px; height: 100px; margin-top: 10px; }
+.bars div { flex: 1; display: grid; justify-items: center; gap: 6px; font-size: 11px; color: var(--muted); }
+.bars i { width: 100%; max-width: 26px; border-radius: 7px 7px 3px 3px; background: var(--primary); opacity: .45; transform-origin: bottom; transform: scaleY(0); transition: transform calc(520ms * var(--slow)) var(--spring); transition-delay: calc(var(--i) * 40ms * var(--slow)); }
+.bars div:last-child i { opacity: 1; }
+.home.go .bars i { transform: scaleY(1); }
+
+/* 명세 패널 */
+.spec { display: grid; gap: 14px; min-width: 0; }
+.spec h2 { margin: 0; font-size: 18px; }
+.spec .lead { margin: 0; color: var(--text2); font-size: 14px; line-height: 1.6; max-width: 62ch; }
+.rows { display: grid; gap: 1px; border-radius: 16px; overflow: hidden; background: var(--line); box-shadow: var(--shadow); }
+.rows div { display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 14px; padding: 12px 16px; background: var(--surface); font-size: 13.5px; line-height: 1.55; }
+.rows div b { font-weight: 700; }
+.rows code { font-family: var(--mono); font-size: 12px; background: var(--surface2); padding: 1px 5px; border-radius: 5px; }
+@media (max-width: 520px) { .rows div { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
+.tip { font-size: 13px; color: var(--muted); }
+
+/* 동작 줄이기 미리보기 */
+.reduced .card, .reduced .inner, .reduced .fill, .reduced .bars i { transition-duration: 1ms !important; }
+.reduced .card.flipped .inner { transform: none; }
+.reduced .back { transform: none; opacity: 0; transition: opacity 200ms; }
+.reduced .card.flipped .back { opacity: 1; }
+.reduced .card.flipped .front { opacity: 0; transition: opacity 200ms; }
+.reduced .card.flyout { transform: none; opacity: 0; transition: opacity 180ms !important; }
+.reduced .opt.shake, .reduced .stamp.hit, .reduced .again { animation: none !important; }
+.reduced .opt, .reduced .tile, .reduced .qcard, .reduced .explain { animation-duration: 1ms !important; animation-delay: 0ms !important; }
+.reduced mark { animation-duration: 1ms !important; animation-delay: 0ms !important; }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Quiz Word iOS 모션 시안</h1>
+      <p>iPhone 앱에 들어갈 핵심 모션을 미리 만져 보는 시안입니다. 카드는 좌우로 쓸거나 버튼을 누르고, 뒷면은 위로 쓸거나 [다음]을 누르세요. 실제 앱은 이 동작을 Reanimated 로 똑같이 옮깁니다.</p>
+    </div>
+    <div class="controls">
+      <div class="seg" role="group" aria-label="화면">
+        <button id="tab-flash" aria-pressed="true" data-tab="flash">플래시카드</button>
+        <button id="tab-quiz" aria-pressed="false" data-tab="quiz">객관식</button>
+        <button id="tab-home" aria-pressed="false" data-tab="home">오늘</button>
+      </div>
+      <button class="toggle" id="slow" aria-pressed="false">느리게 보기</button>
+      <button class="toggle" id="reduce" aria-pressed="false">동작 줄이기</button>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="device">
+      <div class="island"></div>
+      <div class="screen" id="screen">
+        <div class="status"><span>9:41</span><span>●●● ◔</span></div>
+
+        <section class="view" id="v-flash">
+          <div class="sbar"><span class="x" aria-hidden="true">✕</span><div class="track"><div class="fill" id="f-fill"></div></div><span class="count" id="f-count">0/6</span></div>
+          <div class="stage" id="stage"></div>
+          <div class="hint" id="f-hint">← 모른다 · 안다 →</div>
+          <div class="actions" id="f-actions"></div>
+        </section>
+
+        <section class="view" id="v-quiz" hidden>
+          <div class="sbar"><span class="x" aria-hidden="true">✕</span><div class="track"><div class="fill" id="q-fill"></div></div><span class="count" id="q-count">1/4</span></div>
+          <div class="qbody" id="qbody"></div>
+        </section>
+
+        <section class="view" id="v-home" hidden>
+          <div class="home" id="home"></div>
+        </section>
+      </div>
+    </div>
+
+    <aside class="spec" id="spec"></aside>
+  </div>
+</div>
+
+<script>
+(() => {
+  const WORDS = [
+    { id: 'escalate', word: 'escalate', ipa: 'ˈeskəleɪt', pos: ['동사'], short: '(상위 담당자에게) 넘기다', senses: ['(상위 담당자에게) 넘기다', '(명사형) 상위 이관, 단계 상향', '(상황이) 악화되다, 확대되다'],
+      ctx: [{ en: 'In testing, a furious customer with a routine 30-day size exchange gets escalated.', surface: 'escalated', sense: '(상위 담당자에게) 넘기다', ko: '테스트에서 일반적인 30일 사이즈 교환을 요청한 몹시 화난 고객은 이관됐습니다.', src: 'D5-컨텍스트·신뢰성 · 문제 11' }] },
+    { id: 'address', word: 'address', ipa: 'əˈdres', pos: ['동사', '명사'], short: '다루다, 해결하다', senses: ['(문제를) 다루다, 해결하다', '주소', '(사람에게) 말을 걸다, 연설하다'],
+      ctx: [{ en: 'Which practice best addresses this failure mode going forward?', surface: 'addresses', sense: '(문제를) 다루다, 해결하다', ko: '앞으로 이 실패 유형을 가장 잘 막는 방법은 무엇입니까?', src: 'D5-컨텍스트·신뢰성 · 문제 3' }] },
+    { id: 'surface', word: 'surface', ipa: 'ˈsɜːrfɪs', pos: ['동사', '명사'], short: '드러내다, 드러나다', senses: ['(숨은 것을) 드러내다', '드러나다, 표면화되다', '표면'],
+      ctx: [{ en: 'Which ongoing practice best measures their error rate and surfaces new failure modes?', surface: 'surfaces', sense: '(숨은 것을) 드러내다', ko: '이 필드들의 오류율을 측정하고 새로운 실패 유형을 드러내기에 가장 좋은 지속적 관행은 무엇입니까?', src: 'D5-컨텍스트·신뢰성 · 문제 34' }] },
+    { id: 'robust', word: 'robust', ipa: 'roʊˈbʌst', pos: ['형용사'], short: '견고한, 튼튼한', senses: ['견고한, 쉽게 깨지지 않는', '튼튼한, 강건한'],
+      ctx: [{ en: 'What is the most robust remedy?', surface: 'robust', sense: '견고한, 쉽게 깨지지 않는', ko: '가장 견고한 해결책은 무엇입니까?', src: '샘플문제2 · 문제 4' }] },
+    { id: 'latency', word: 'latency', ipa: 'ˈleɪtənsi', pos: ['명사'], short: '지연 시간', senses: ['지연 시간(응답까지 걸리는 시간)'],
+      ctx: [{ en: 'What change most reduces latency?', surface: 'latency', sense: '지연 시간(응답까지 걸리는 시간)', ko: '지연 시간을 가장 크게 줄이는 변경은 무엇입니까?', src: '샘플문제2 · 문제 23' }] },
+    { id: 'issue', word: 'issue', ipa: 'ˈɪʃuː', pos: ['명사', '동사'], short: '문제, 내주다, 발행하다', senses: ['문제, 이슈', '(환불·토큰 등을) 내주다, 발행하다', '(호출·명령을) 보내다, 내리다'],
+      ctx: [{ en: 'Claude issues an Edit call with old_string set to exactly that log statement and the call fails.', surface: 'issues', sense: '(호출·명령을) 보내다, 내리다', ko: 'Claude가 old_string을 정확히 그 로그 문으로 지정해 Edit를 호출했더니 실패했습니다.', src: 'D2-도구 설계·MCP · 문제 29' }] },
+  ];
+
+  const QUIZ = [
+    { mode: 'meaning', word: 'escalate', ipa: 'ˈeskəleɪt', pos: ['동사'],
+      options: [['배포하다, 나눠 주다', 'distribute'], ['(상위 담당자에게) 넘기다', '', true], ['지니다, 옮기다', 'carry'], ['내보내다, 생성해 내다', 'emit']] },
+    { mode: 'context', word: 'address', en: 'The address subagent keeps asking which customer account it is working on.', surface: 'address', ko: '주소 담당 서브에이전트가 자기가 어느 고객 계정을 다루는지 계속 묻습니다.',
+      options: [['(문제를) 다루다, 해결하다', 'address'], ['주소', '', true], ['(사람에게) 말을 걸다, 연설하다', 'address'], ['재시도', 'retry']] },
+    { mode: 'meaning', word: 'latency', ipa: 'ˈleɪtənsi', pos: ['명사'],
+      options: [['단계, 조치', 'step'], ['반복, 한 회차', 'iteration'], ['지연 시간', '', true], ['추세, 경향', 'trend']] },
+    { mode: 'context', word: 'surface', en: 'Reviewers note the reports consistently miss emerging subtopics that only surface mid-investigation.', surface: 'surface', ko: '검토자들은 조사 도중에야 드러나는 새로운 하위 주제를 보고서가 일관되게 놓친다고 지적합니다.',
+      options: [['(숨은 것을) 드러내다', 'surface'], ['표면', 'surface'], ['배포하다, 나눠 주다', 'distribute'], ['드러나다, 표면화되다', '', true]] },
+  ];
+
+  const SPEC = {
+    flash: {
+      title: '플래시카드',
+      lead: '단어를 보고 좌우로 판정하면 카드가 뒤집혀 뜻과 문제 속 예문이 나옵니다. 모른다 카드는 몇 장 뒤에 다시 들어갑니다.',
+      rows: [
+        ['대기 카드', '뒤 2장이 아래 가장자리 기준으로 <code>scale .94 / .88</code>, <code>y +10 / +20</code>, 투명도 0.6 / 0.3 — 앞 카드 아래로 살짝 보임'],
+        ['드래그', 'x 가 손가락을 따라가고 회전은 <code>x/폭 × 12°</code>. 방향에 따라 초록/빨강 덧칠(최대 0.25), 위 모서리에 "안다"/"모른다" 도장'],
+        ['임계점', '폭의 35% 를 넘는 순간 도장이 한 번 튐 + <code>impactLight</code> 진동. 그보다 덜 끌면 spring 으로 제자리'],
+        ['판정 확정', '중앙으로 돌아오며 <code>rotateY 0→180°</code> 뒤집기(420ms). 안다는 <code>success</code>, 모른다는 <code>warning</code> 진동'],
+        ['뒷면', '판정 띠 + "사실 몰랐어요/알았어요" 전환. 예문 형광펜이 뒤집힌 직후 왼쪽부터 칠해짐'],
+        ['다음 카드', '위로 쓸거나 [다음] → 위로 날아감(y −115%, −4°, 280ms). 뒤 카드가 한 칸씩 앞으로 오는 딜 모션'],
+        ['재삽입', '"+3장 뒤 다시" 칩이 카드에서 카운터로 날아가 사라짐. 다시 나온 카드에 호박색 배지가 한 번 깜빡임'],
+        ['요약', '점수 링 0→% (900ms) + 숫자 count-up, <code>impactMedium</code>'],
+      ],
+    },
+    quiz: {
+      title: '객관식 · 문맥 뜻',
+      lead: '같은 품사·비슷한 뜻 분류에서 고른 오답 보기와 함께 냅니다. 문맥 뜻 문제는 같은 단어의 다른 뜻이 오답 보기로 나옵니다.',
+      rows: [
+        ['문제 진입', '문제 카드가 오른쪽에서 들어오고(x 26→0), 보기가 30ms 간격으로 아래에서 올라옴'],
+        ['정답', '고른 보기가 왼쪽부터 초록으로 채워짐(scaleX 0→1) + ✓ 팝(0→1.15→1). 나머지는 50% 로 흐려짐. <code>success</code> 진동'],
+        ['오답', '고른 보기가 흔들리며(±8px, 300ms) 빨강. 120ms 뒤 정답 보기를 초록으로. <code>error</code> 진동'],
+        ['오답 보기 출처', '답을 고른 뒤 각 오답 옆에 그 뜻의 원래 단어(distribute, retry…)가 나타남'],
+        ['해설', '아래에서 spring 으로 올라옴(y 40→0). 화면 안에 보이도록 자동 스크롤'],
+        ['진행 막대', '폭 변화를 spring 으로'],
+      ],
+    },
+    home: {
+      title: '오늘',
+      lead: '앱을 열면 오늘 할 복습과 진척이 한 화면에 보입니다. 진입할 때 숫자와 그래프가 짧게 채워집니다.',
+      rows: [
+        ['히어로 숫자', '0 → N count-up (600ms, ease-out)'],
+        ['진척 링', 'stroke 0 → % (800ms)'],
+        ['타일', 'FadeInDown spring, 40ms 간격'],
+        ['7일 막대', '아래에서 자람(spring), 40ms 간격. 오늘 막대만 진한 색'],
+        ['누름', '모든 탭 가능한 요소는 누르는 동안 <code>scale .97</code>'],
+      ],
+    },
+  };
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const html = (s) => { const t = document.createElement('template'); t.innerHTML = s.trim(); return t.content.firstElementChild; };
+  const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  const root = document.documentElement;
+  let S = 1; // 느리게 보기 배수
+  const reducedMedia = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const isReduced = () => root.classList.contains('reduced');
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms * S));
+  const posClass = (p) => ({ 명사: '', 동사: 'v', 형용사: 'a' })[p] ?? '';
+  const markup = (text, surface) => {
+    const i = text.toLowerCase().indexOf(surface.toLowerCase());
+    if (i < 0) return esc(text);
+    return esc(text.slice(0, i)) + '<mark>' + esc(text.slice(i, i + surface.length)) + '</mark>' + esc(text.slice(i + surface.length));
+  };
+
+  function renderSpec(tab) {
+    const s = SPEC[tab];
+    $('#spec').innerHTML = `<h2>${s.title} 모션</h2><p class="lead">${s.lead}</p>
+      <div class="rows">${s.rows.map(([k, v]) => `<div><b>${k}</b><span>${v}</span></div>`).join('')}</div>
+      <p class="tip">"느리게 보기"는 모든 모션을 2배로 늘려 확인용으로 보여 줍니다. "동작 줄이기"는 iPhone 의 동작 줄이기 설정을 켰을 때의 대체 모션(크로스페이드, 흔들림 없음)입니다.</p>`;
+  }
+
+  /* ───────── 플래시카드 ───────── */
+  let queue, seen, first, uid, judged, busy;
+  const stage = $('#stage');
+  const actions = $('#f-actions');
+
+  function resetFlash() {
+    uid = 0;
+    queue = WORDS.map((w) => ({ key: uid++, w, repeat: false }));
+    seen = new Set();
+    first = {};
+    judged = null;
+    busy = false;
+    stage.innerHTML = '';
+    renderStack();
+    renderActions();
+    updateFlashBar();
+  }
+
+  function cardEl(item) {
+    const w = item.w;
+    const el = html(`<div class="card p3" data-key="${item.key}">
+      <div class="inner">
+        <div class="face front">
+          ${item.repeat ? '<span class="again">다시 나온 카드</span>' : ''}
+          <div class="pos">${w.pos.map((p) => `<span class="badge ${posClass(p)}">${p}</span>`).join('')}</div>
+          <div class="word">${esc(w.word)}</div>
+          <div class="ipa">/${esc(w.ipa)}/ 🔊</div>
+          <div class="tint"></div>
+          <span class="stamp know">안다</span><span class="stamp dont">모른다</span>
+        </div>
+        <div class="face back"></div>
+      </div>
+    </div>`);
+    return el;
+  }
+
+  function renderStack() {
+    const top = queue.slice(0, 3);
+    // 없어진 카드 제거
+    [...stage.children].forEach((c) => { if (!top.some((t) => String(t.key) === c.dataset.key)) c.remove(); });
+    top.forEach((item, i) => {
+      let el = stage.querySelector(`[data-key="${item.key}"]`);
+      if (!el) { el = cardEl(item); stage.prepend(el); el.getBoundingClientRect(); }
+      el.style.zIndex = String(10 - i);
+      el.classList.remove('p0', 'p1', 'p2', 'p3');
+      el.classList.add('p' + i);
+      el.style.transform = '';
+    });
+    if (queue.length) bindDrag(stage.querySelector(`[data-key="${queue[0].key}"]`));
+  }
+
+  function renderActions() {
+    if (!queue.length) { actions.innerHTML = ''; $('#f-hint').textContent = ''; return; }
+    if (judged === null) {
+      $('#f-hint').textContent = '← 모른다 · 안다 →';
+      actions.innerHTML = '<button class="btn ng" id="b-ng">✕ 모른다</button><button class="btn ok" id="b-ok">✓ 안다</button>';
+      $('#b-ng').onclick = () => commit(false, true);
+      $('#b-ok').onclick = () => commit(true, true);
+    } else {
+      $('#f-hint').textContent = '↑ 위로 쓸어도 다음';
+      actions.innerHTML = '<button class="btn go" id="b-next">다음 <small>↑</small></button>';
+      $('#b-next').onclick = next;
+    }
+  }
+
+  function updateFlashBar() {
+    const total = WORDS.length;
+    $('#f-fill').style.width = (seen.size && Object.keys(first).length ? (Object.keys(first).length - pendingUnknown()) / total * 100 : 0) + '%';
+    $('#f-count').textContent = `${Object.keys(first).length - pendingUnknown()}/${total}`;
+  }
+  const pendingUnknown = () => queue.filter((q) => q.repeat).length;
+
+  function bindDrag(el) {
+    if (!el || el.dataset.bound) return;
+    el.dataset.bound = '1';
+    const front = $('.front', el);
+    const back = $('.back', el);
+    const tint = $('.tint', el);
+    const know = $('.know', el), dont = $('.dont', el);
+    let sx = 0, sy = 0, dx = 0, dy = 0, t0 = 0, dragging = false, crossed = false, mode = '';
+
+    el.addEventListener('pointerdown', (e) => {
+      if (busy) return;
+      mode = judged === null ? 'judge' : 'next';
+      if (mode === 'next' && e.target.closest('.backbody') && $('.backbody', el).scrollTop > 0) return;
+      dragging = true; crossed = false; sx = e.clientX; sy = e.clientY; dx = dy = 0; t0 = performance.now();
+      el.setPointerCapture(e.pointerId);
+      el.classList.add('dragging');
+    });
+    el.addEventListener('pointermove', (e) => {
+      if (!dragging) return;
+      dx = e.clientX - sx; dy = e.clientY - sy;
+      const W = el.offsetWidth;
+      if (mode === 'judge') {
+        const rot = isReduced() ? 0 : (dx / W) * 12;
+        el.style.transform = `translate(${dx}px, ${dy * 0.15}px) rotate(${rot}deg)`;
+        const k = Math.min(1, Math.abs(dx) / (W * 0.35));
+        tint.style.background = dx > 0 ? 'var(--success)' : 'var(--danger)';
+        tint.style.opacity = String(k * 0.25);
+        know.style.opacity = dx > 0 ? String(k) : '0';
+        dont.style.opacity = dx < 0 ? String(k) : '0';
+        const over = Math.abs(dx) > W * 0.35;
+        if (over && !crossed) { (dx > 0 ? know : dont).classList.remove('hit'); void know.offsetWidth; (dx > 0 ? know : dont).classList.add('hit'); navigator.vibrate?.(8); }
+        crossed = over;
+      } else {
+        const up = Math.min(0, dy);
+        el.style.transform = `translateY(${up}px)`;
+      }
+    });
+    const end = () => {
+      if (!dragging) return;
+      dragging = false;
+      el.classList.remove('dragging');
+      const W = el.offsetWidth;
+      const v = Math.abs(dx) / Math.max(1, performance.now() - t0);
+      tint.style.opacity = '0'; know.style.opacity = dont.style.opacity = '0';
+      if (mode === 'judge') {
+        if (Math.abs(dx) > W * 0.35 || (v > 0.9 && Math.abs(dx) > 40)) commit(dx > 0, false);
+        else el.style.transform = '';
+      } else {
+        if (dy < -70) next(); else el.style.transform = '';
+      }
+    };
+    el.addEventListener('pointerup', end);
+    el.addEventListener('pointercancel', end);
+  }
+
+  function fillBack(el, known) {
+    const w = queue[0].w;
+    $('.back', el).innerHTML = `
+      <div class="verdict ${known ? 'ok' : 'ng'}"><span>${known ? '✓ 안다고 했어요' : '✕ 모른다 — 3장 뒤 다시'}</span><button type="button" class="swap">${known ? '사실 몰랐어요' : '사실 알았어요'}</button></div>
+      <div class="backbody">
+        <div class="bword"><b>${esc(w.word)}</b>/${esc(w.ipa)}/</div>
+        <div class="short">${esc(w.short)}</div>
+        ${w.senses.length > 1 ? `<ol class="senses">${w.senses.map((s, i) => `<li><span>${i + 1}</span>${esc(s)}</li>`).join('')}</ol>` : ''}
+        <div class="label">문제 속 쓰임</div>
+        ${w.ctx.map((c) => `<div class="ctx"><div class="sense">${esc(c.sense)}</div><div class="en">${markup(c.en, c.surface)}</div><div class="ko">${esc(c.ko)}</div><div class="src">${esc(c.src)}</div></div>`).join('')}
+      </div>`;
+    $('.swap', el).onclick = (e) => { e.stopPropagation(); judged = !judged; fillBack(el, judged); };
+  }
+
+  async function commit(known, viaButton) {
+    if (busy || !queue.length || judged !== null) return;
+    busy = true;
+    const el = stage.querySelector(`[data-key="${queue[0].key}"]`);
+    judged = known;
+    navigator.vibrate?.(known ? 12 : [10, 40, 10]);
+    if (viaButton && !isReduced()) {
+      el.style.transform = `translateX(${known ? 26 : -26}px) rotate(${known ? 2.5 : -2.5}deg)`;
+      await wait(120);
+    }
+    fillBack(el, known);
+    el.style.transform = '';
+    el.classList.add('flipped');
+    renderActions();
+    await wait(380);
+    busy = false;
+  }
+
+  async function next() {
+    if (busy || judged === null) return;
+    busy = true;
+    const item = queue[0];
+    const el = stage.querySelector(`[data-key="${item.key}"]`);
+    if (!(item.w.id in first)) first[item.w.id] = judged;
+    seen.add(item.w.id);
+    queue.shift();
+    if (!judged) {
+      const pos = Math.min(3, queue.length);
+      queue.splice(pos, 0, { key: uid++, w: item.w, repeat: true });
+      flyChip(el);
+    }
+    el.style.transform = '';
+    el.classList.add('flyout');
+    judged = null;
+    await wait(200);
+    if (queue.length) {
+      renderStack();
+      renderActions();
+      updateFlashBar();
+    } else {
+      showFlashSummary();
+    }
+    await wait(120);
+    el.remove();
+    busy = false;
+  }
+
+  function flyChip(fromEl) {
+    const scr = $('#screen').getBoundingClientRect();
+    const a = fromEl.getBoundingClientRect();
+    const b = $('#f-count').getBoundingClientRect();
+    const chip = html('<span class="chip">+3장 뒤 다시</span>');
+    $('#screen').append(chip);
+    const x0 = a.left - scr.left + a.width / 2 - 50, y0 = a.top - scr.top + a.height / 2;
+    const x1 = b.left - scr.left - 40, y1 = b.top - scr.top;
+    chip.animate(
+      [{ transform: `translate(${x0}px, ${y0}px) scale(1)`, opacity: 1 }, { transform: `translate(${x0}px, ${y0 - 30}px) scale(1.05)`, opacity: 1, offset: 0.3 }, { transform: `translate(${x1}px, ${y1}px) scale(.5)`, opacity: 0 }],
+      { duration: (isReduced() ? 1 : 560) * S, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'forwards' },
+    ).onfinish = () => chip.remove();
+    chip.style.left = '0'; chip.style.top = '0';
+  }
+
+  function countUp(el, to, ms) {
+    if (isReduced()) { el.textContent = String(to); return; }
+    const t0 = performance.now(), dur = ms * S;
+    const step = (t) => { const k = Math.min(1, (t - t0) / dur); el.textContent = String(Math.round(to * (1 - Math.pow(1 - k, 3)))); if (k < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  }
+  function ring(circle, pct, ms, C) {
+    circle.style.transition = 'none';
+    circle.style.strokeDashoffset = String(C);
+    circle.getBoundingClientRect();
+    circle.style.transition = `stroke-dashoffset ${(isReduced() ? 1 : ms) * S}ms cubic-bezier(.2,.8,.2,1)`;
+    circle.style.strokeDashoffset = String(C * (1 - pct));
+  }
+
+  function showFlashSummary() {
+    const total = Object.keys(first).length;
+    const knownN = Object.values(first).filter(Boolean).length;
+    $('#f-fill').style.width = '100%';
+    $('#f-count').textContent = `${total}/${total}`;
+    stage.innerHTML = `<div class="summary">
+      <div class="ring"><svg viewBox="0 0 120 120"><circle class="bgc" cx="60" cy="60" r="54"/><circle class="fgc" cx="60" cy="60" r="54"/></svg><div class="num"><span id="sum-n">0</span>%</div></div>
+      <div><b style="font-size:22px">끝까지 봤어요</b><div style="color:var(--muted);font-size:14px;margin-top:4px">바로 안 단어 비율</div></div>
+      <div class="stats3"><div><b>${total}</b><span>전체</span></div><div><b style="color:var(--success)">${knownN}</b><span>바로 앎</span></div><div><b style="color:var(--danger)">${total - knownN}</b><span>모름</span></div></div>
+    </div>`;
+    stage.firstElementChild.style.position = 'absolute';
+    stage.firstElementChild.style.inset = '0';
+    actions.innerHTML = '<button class="btn go" id="b-again">처음부터 다시</button>';
+    $('#b-again').onclick = resetFlash;
+    $('#f-hint').textContent = '';
+    navigator.vibrate?.(20);
+    const pct = total ? knownN / total : 0;
+    requestAnimationFrame(() => { ring($('.fgc', stage), pct, 900, 339.3); countUp($('#sum-n'), Math.round(pct * 100), 900); });
+  }
+
+  /* ───────── 객관식 ───────── */
+  let qi = 0, qOk = 0;
+  const qbody = $('#qbody');
+  function renderQuiz() {
+    $('#q-count').textContent = `${Math.min(qi + 1, QUIZ.length)}/${QUIZ.length}`;
+    $('#q-fill').style.width = (qi / QUIZ.length) * 100 + '%';
+    if (qi >= QUIZ.length) return quizSummary();
+    const q = QUIZ[qi];
+    const prompt = q.mode === 'context'
+      ? `<div class="qcard"><div class="qlabel">이 문장에서 <b style="color:var(--text)">${esc(q.surface)}</b> 의 뜻은?</div><div class="qsent">${markup(q.en, q.surface)}</div></div>`
+      : `<div class="qcard center"><div class="pos" style="justify-content:center">${q.pos.map((p) => `<span class="badge ${posClass(p)}">${p}</span>`).join('')}</div><div class="word">${esc(q.word)}</div><div class="ipa">/${esc(q.ipa)}/ 🔊</div></div>`;
+    qbody.innerHTML = prompt + `<div id="opts" style="display:grid;gap:10px">${q.options.map(([t, owner], i) => `<button class="opt" style="--i:${i}" data-i="${i}"><span class="num2">${i + 1}</span><span class="t">${esc(t)}</span><span class="owner">${owner && owner !== q.word ? esc(owner) : ''}</span></button>`).join('')}</div>`;
+    $('.qcard mark', qbody)?.style.setProperty('--d', '200ms');
+    qbody.querySelectorAll('.opt').forEach((b) => (b.onclick = () => choose(Number(b.dataset.i))));
+    qbody.scrollTop = 0;
+  }
+  async function choose(i) {
+    const q = QUIZ[qi];
+    const opts = $('#opts');
+    if (opts.classList.contains('answered')) return;
+    opts.classList.add('answered');
+    const btns = [...opts.children];
+    const correct = q.options.findIndex((o) => o[2]);
+    const ok = i === correct;
+    if (ok) {
+      qOk++;
+      btns[i].classList.add('right');
+      $('.num2', btns[i]).textContent = '✓';
+      navigator.vibrate?.(12);
+    } else {
+      btns[i].classList.add('wrong', 'shake');
+      $('.num2', btns[i]).textContent = '✕';
+      navigator.vibrate?.([10, 40, 10, 40, 10]);
+      await wait(120);
+      btns[correct].classList.add('right');
+      $('.num2', btns[correct]).textContent = '✓';
+    }
+    $('#q-fill').style.width = ((qi + 1) / QUIZ.length) * 100 + '%';
+    await wait(160);
+    const exp = html(`<div class="explain">
+      <div class="result ${ok ? 'ok' : 'ng'}">${ok ? '✓ 정답이에요' : '✕ 틀렸어요 — 오답노트에 담았어요'}</div>
+      <div class="short">${esc(q.options[correct][0])}</div>
+      ${q.mode === 'context' ? `<div class="ctx"><div class="en">${markup(q.en, q.surface)}</div><div class="ko">${esc(q.ko)}</div></div>` : ''}
+      <button class="btn go" id="q-next">${qi + 1 < QUIZ.length ? '다음 문제' : '결과 보기'}</button>
+    </div>`);
+    qbody.append(exp);
+    $('.explain mark', qbody)?.style.setProperty('--d', '250ms');
+    $('#q-next').onclick = () => { qi++; renderQuiz(); };
+    setTimeout(() => qbody.scrollTo({ top: qbody.scrollHeight, behavior: isReduced() ? 'auto' : 'smooth' }), 60 * S);
+  }
+  function quizSummary() {
+    $('#q-count').textContent = `${QUIZ.length}/${QUIZ.length}`;
+    $('#q-fill').style.width = '100%';
+    const pct = qOk / QUIZ.length;
+    qbody.innerHTML = `<div class="summary" style="min-height:560px">
+      <div class="ring"><svg viewBox="0 0 120 120"><circle class="bgc" cx="60" cy="60" r="54"/><circle class="fgc" cx="60" cy="60" r="54"/></svg><div class="num"><span id="qs-n">0</span>점</div></div>
+      <div><b style="font-size:22px">${QUIZ.length}문제 중 ${qOk}개 맞힘</b><div style="color:var(--muted);font-size:14px;margin-top:4px">틀린 단어는 오답노트에 담겼어요</div></div>
+      <button class="btn go" id="q-again" style="width:100%">다시 풀기</button>
+    </div>`;
+    $('#q-again').onclick = () => { qi = 0; qOk = 0; renderQuiz(); };
+    requestAnimationFrame(() => { ring($('.fgc', qbody), pct, 900, 339.3); countUp($('#qs-n'), Math.round(pct * 100), 900); });
+  }
+
+  /* ───────── 오늘 ───────── */
+  function renderHome() {
+    const home = $('#home');
+    home.classList.remove('go');
+    const week = [['화', 32], ['수', 18], ['목', 45], ['금', 26], ['토', 52], ['일', 40], ['오늘', 61]];
+    const max = 61;
+    home.innerHTML = `
+      <div class="lt"><div><h2>오늘</h2><p>11월 9일 월요일 · 시험 D-12</p></div><button class="gear" aria-label="설정">⚙</button></div>
+      <div class="hero"><h3>오늘의 복습</h3>
+        <div class="nums"><div><b id="h-due">0</b><span>복습할 단어</span></div><div><b id="h-new">0</b><span>새 단어</span></div></div>
+        <button type="button" id="h-start">복습 시작 ▶</button></div>
+      <div class="panel prog"><div class="mini"><svg viewBox="0 0 74 74"><circle class="bgc" cx="37" cy="37" r="32"/><circle class="fgc" cx="37" cy="37" r="32"/></svg><b><span id="h-pct">0</span>%</b></div>
+        <div class="legend"><b style="font-size:15px;color:var(--text)">핵심 단어 1,898개</b><span><i style="background:var(--success)"></i>익힘 612</span><span><i style="background:var(--warning)"></i>학습 중 210</span><span><i style="background:var(--line)"></i>새 단어 1,076</span></div></div>
+      <div class="tiles">
+        <button class="tile" style="--i:0"><span class="ic">▤</span><b>플래시카드</b><span>못 익힌 단어 20개</span></button>
+        <button class="tile" style="--i:1"><span class="ic">≡</span><b>객관식</b><span>단어 → 뜻</span></button>
+        <button class="tile" style="--i:2"><span class="ic">“</span><b>문맥 뜻</b><span>다의어 연습</span></button>
+        <button class="tile" style="--i:3"><span class="ic" style="background:var(--danger-soft);color:var(--danger)">!</span><b>오답 복습</b><span>5개</span></button>
+      </div>
+      <div class="panel"><div class="label">최근 7일</div><div class="bars">${week.map(([d, n], i) => `<div><span>${n}</span><i style="--i:${i};height:${(n / max) * 70}px"></i><span>${d}</span></div>`).join('')}</div></div>`;
+    $('#h-start').onclick = () => setTab('flash');
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      home.classList.add('go');
+      countUp($('#h-due'), 23, 600);
+      countUp($('#h-new'), 30, 600);
+      countUp($('#h-pct'), 32, 800);
+      ring($('.mini .fgc', home), 0.32, 800, 201);
+    }));
+  }
+
+  /* ───────── 탭·토글 ───────── */
+  function setTab(tab) {
+    document.querySelectorAll('.seg button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.tab === tab)));
+    ['flash', 'quiz', 'home'].forEach((t) => ($('#v-' + t).hidden = t !== tab));
+    renderSpec(tab);
+    if (tab === 'flash') resetFlash();
+    if (tab === 'quiz') { qi = 0; qOk = 0; renderQuiz(); }
+    if (tab === 'home') renderHome();
+    try { localStorage.setItem('qw-proto-tab', tab); } catch {}
+  }
+  document.querySelectorAll('.seg button').forEach((b) => (b.onclick = () => setTab(b.dataset.tab)));
+  $('#slow').onclick = (e) => {
+    const on = e.currentTarget.getAttribute('aria-pressed') !== 'true';
+    e.currentTarget.setAttribute('aria-pressed', String(on));
+    S = on ? 2 : 1;
+    root.style.setProperty('--slow', String(S));
+  };
+  const setReduced = (on) => { root.classList.toggle('reduced', on); $('#reduce').setAttribute('aria-pressed', String(on)); };
+  $('#reduce').onclick = (e) => setReduced(e.currentTarget.getAttribute('aria-pressed') !== 'true');
+  setReduced(reducedMedia.matches);
+
+  document.addEventListener('keydown', (e) => {
+    if ($('#v-flash').hidden) return;
+    if (e.key === 'ArrowLeft') commit(false, true);
+    else if (e.key === 'ArrowRight') commit(true, true);
+    else if (e.key === ' ' || e.key === 'ArrowUp') { e.preventDefault(); next(); }
+  });
+
+  let start = 'flash';
+  try { start = localStorage.getItem('qw-proto-tab') || 'flash'; } catch {}
+  setTab(['flash', 'quiz', 'home'].includes(start) ? start : 'flash');
+})();
+</script>

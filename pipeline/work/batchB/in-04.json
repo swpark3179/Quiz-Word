@@ -1,0 +1,554 @@
+[
+ {
+  "key": "lesson-d1#9",
+  "koRef": "시장 조사 어시스턴트의 코디네이터가 '전기차 충전 네트워크의 경쟁 구도를 분석하라'는 넓은 질의를 '충전 커넥터 유형 찾기', '충전 속도 나열하기' 같은 좁은 하위 과제로 나누고, 각각을 별도 서브에이전트에 배정했습니다. 종합 보고서에는 요금 모델, 규제 인센티브, 주요 경쟁사가 통째로 빠졌습니다. 무엇이 잘못됐습니까?\n① 서브에이전트의 외부 검색 도구 접근이 제한돼, 배정된 영역에 대한 결과가 빈약하게 돌아왔다\n② 코디네이터가 마지막 서브에이전트들이 보고하기 전에 종합을 시작해, 보고서가 일부 결과로만 만들어졌다\n③ 여러 서브에이전트가 커넥터 유형을 병렬로 조사하는 바람에, 다른 영역을 다루기 전에 코디네이터의 예산이 바닥났다\n④ 코디네이터가 주제를 몇 개의 세부 기술 영역으로만 나눠, 경쟁 구도의 나머지 부분에는 배정된 서브에이전트가 없었다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#9.0",
+    "en": "A coordinator for a market-research assistant splits the broad query 'analyze the competitive landscape for electric vehicle charging networks' into narrow subtasks like 'find charger connector types' and 'list charging speeds,' each assigned to a separate subagent."
+   },
+   {
+    "sid": "lesson-d1#9.1",
+    "en": "The synthesized report ends up missing pricing models, regulatory incentives, and major competitors entirely."
+   },
+   {
+    "sid": "lesson-d1#9.2",
+    "en": "What went wrong?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#10",
+  "koRef": "리서치 파이프라인에서 코디네이터가 종합 서브에이전트에 \"연구에 따르면 도입률이 두 배가 됐다\" 같은 매끄러운 산문으로 조사 결과를 넘깁니다. 최종 보고서는 주장 자체는 맞지만, 어느 주장이 어떤 URL·문서·쪽에서 왔는지 말하지 못합니다. 어떤 전달 형식이 이를 해결합니까?\n① 산문 전달은 유지하고, 종합 서브에이전트의 `AgentDefinition` 시스템 프롬프트에 \"항상 출처를 밝혀라\"를 추가한다\n② 각 결과를 구조화된 레코드로 넘긴다. 주장 내용은 한 필드에, 출처 URL·문서명·쪽 번호는 별도 필드에 담는다\n③ 종합 서브에이전트가 핵심 주장에 집중하도록, 코디네이터가 결과를 몇 개의 핵심 문장으로 줄인다\n④ 종합 서브에이전트의 Task 프롬프트에서 연구자가 쓴 출처는 모두 신뢰할 수 있고 검증됐다고 알려 준다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.0",
+    "en": "In a research pipeline, the coordinator hands the synthesis subagent its findings as smooth prose such as \"studies show adoption doubled\"."
+   },
+   {
+    "sid": "lesson-d1#10.1",
+    "en": "The final report makes the right claims but can't say which URL, document or page any claim came from."
+   },
+   {
+    "sid": "lesson-d1#10.2",
+    "en": "Which handoff format fixes this?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#11",
+  "koRef": "코드베이스를 한 시간 동안 분석한 뒤, 코디네이터가 서로 경쟁하는 두 리팩터링 전략을 시도하려고 합니다. 두 전략 모두 그 분석이 찾아낸 모든 것에 의존합니다. 가장 좋은 구성 방법은 무엇입니까?\n① 전략마다 세션을 한 번씩 포크해, 각 갈래가 전체 분석을 가진 채 시작하고 원래 세션은 그대로 두게 한다\n② \"지금까지의 분석을 바탕으로 전략 A를 시도하라\", \"지금까지의 분석을 바탕으로 전략 B를 시도하라\"는 프롬프트로 새 서브에이전트 두 개를 띄운다\n③ 코디네이터의 한 응답에서 Task 호출 두 개를 내, 병렬로 도는 두 서브에이전트가 코디네이터의 분석을 공유하게 한다\n④ 원래 세션에서 전략 A를 시도한 뒤, 같은 세션에서 전략 B를 시도한다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#11.0",
+    "en": "After an hour of codebase analysis, a coordinator wants to try two competing refactoring strategies."
+   },
+   {
+    "sid": "lesson-d1#11.1",
+    "en": "Both strategies depend on everything that analysis found."
+   },
+   {
+    "sid": "lesson-d1#11.2",
+    "en": "What is the best way to set this up?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#12",
+  "koRef": "팀이 문서를 읽고 의견을 달 수는 있지만 실수로라도 파일을 수정해서는 절대 안 되는 \"doc-reviewer\" 서브에이전트를 만들고 있습니다. 코디네이터 자신은 Read, Edit, Write, Grep, Glob을 쓸 수 있습니다. 이 제약을 보장하려면 doc-reviewer의 `AgentDefinition` 을 어떻게 구성해야 합니까?\n① doc-reviewer 정의에 `tools` 를 `[\"Read\", \"Grep\"]` 으로 지정해, 코디네이터가 무엇을 가졌든 나열된 읽기 도구만 갖게 한다\n② doc-reviewer 정의의 `tools` 는 비워 두고, 대신 `prompt` 필드에서 검토 중 Edit이나 Write를 절대 호출하지 말라고 지시한다\n③ 검토하는 동안 코디네이터 자신의 `allowedTools` 를 `[\"Read\", \"Grep\"]` 으로만 설정해 두 에이전트 모두 Edit·Write에 접근하지 못하게 한다\n④ doc-reviewer에 코디네이터와 같은 도구를 주고, `description` 필드로 실제로는 읽기 전용이라는 신호를 준다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#12.0",
+    "en": "A team is building a \"doc-reviewer\" subagent that should be able to read and comment on documentation but must never be able to modify files, even accidentally."
+   },
+   {
+    "sid": "lesson-d1#12.1",
+    "en": "The coordinator itself has Read, Edit, Write, Grep, and Glob available."
+   },
+   {
+    "sid": "lesson-d1#12.2",
+    "en": "How should the doc-reviewer's AgentDefinition be configured to guarantee this constraint?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#13",
+  "koRef": "팀에 문서를 읽고 검색할 수는 있어야 하지만 절대 수정해서는 안 되는 doc-reviewer 서브에이전트를 추가합니다. 어떤 구성이 이를 실제로 보장합니까?\n① doc-reviewer 자신의 `AgentDefinition` 에 `tools: [\"Read\", \"Grep\"]` 을 지정한다\n② `tools` 는 비워 두고 doc-reviewer의 `prompt` 에 \"파일을 절대 편집하거나 쓰지 마라\"를 추가한다\n③ doc-reviewer가 읽기 전용 에이전트라고 말하는 `description` 을 쓴다\n④ 코디네이터의 `allowedTools` 에서 Edit과 Write를 뺀다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#13.0",
+    "en": "Your team adds a doc-reviewer subagent that must be able to read and search documentation but must never change it."
+   },
+   {
+    "sid": "lesson-d1#13.1",
+    "en": "Which configuration actually guarantees that?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#14",
+  "koRef": "web-researcher 서브에이전트가 끝난 뒤 코디네이터가 종합 서브에이전트를 띄웁니다. 종합 서브에이전트의 보고서는 일반론만 담겨 있고 연구자가 찾은 출처를 하나도 인용하지 않습니다. 실제로 이를 고치는 변경은 무엇입니까?\n① 종합 서브에이전트의 `maxTurns` 를 늘려 앞선 조사를 찾을 턴을 더 준다\n② 종합 서브에이전트에 웹 검색 도구를 줘 필요한 자료를 스스로 모으게 한다\n③ 연구자의 전체 조사 결과와 출처 정보를 종합 서브에이전트를 띄우는 Task 호출의 프롬프트에 붙여 넣는다\n④ `model` 필드로 종합 서브에이전트를 더 큰 모델로 바꾼다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#14.0",
+    "en": "After a web-researcher subagent finishes, a coordinator spawns a synthesis subagent."
+   },
+   {
+    "sid": "lesson-d1#14.1",
+    "en": "The synthesis subagent's report comes back generic and cites none of the sources the researcher found."
+   },
+   {
+    "sid": "lesson-d1#14.2",
+    "en": "What change actually fixes this?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#15",
+  "koRef": "스타일 검사, 보안 스캔, 테스트 커버리지 검토는 서로 독립적이고 각각 10분쯤 걸립니다. 어떤 코디네이터 동작이 세 결과를 30분이 아니라 약 10분 만에 받게 해 줍니까?\n① 턴마다 검토자 하나씩 띄우고, 앞 검토자의 결과가 돌아오는 즉시 다음 스폰을 요청한다\n② 세 검토를 범용 서브에이전트 하나의 프롬프트에 모두 넣어 한 번의 스폰으로 처리한다\n③ 한 응답에서 검토자 서브에이전트마다 하나씩, Task `tool_use` 블록 세 개를 반환한다\n④ 검토자들을 서로 다른 턴에 띄우되, 함께 끝나도록 모두 같은 `maxTurns` 를 준다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#15.0",
+    "en": "Style-checker, security-scanner and test-coverage reviews are independent of each other, and each takes about ten minutes."
+   },
+   {
+    "sid": "lesson-d1#15.1",
+    "en": "Which coordinator behaviour gets all three results back in roughly ten minutes instead of thirty?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#16",
+  "koRef": "코디네이터가 시장 조사를 스크립트로 위임합니다. \"'chip shortage 2025'를 검색하고, 상위 다섯 개 결과를 열어 각각 요약한 다음, 'chip prices'를 검색하라.\" 검색 결과가 스크립트가 예상한 모습과 다를 때마다 서브에이전트가 쓸 수 없는 메모를 돌려줍니다. 위임 프롬프트를 어떻게 다시 써야 합니까?\n① 서브에이전트가 마주칠 수 있는 검색 결과 종류마다 분기를 추가해 스크립트를 더 길게 만든다\n② \"반도체 부족 사태를 조사하라\" 같은 열린 목표로 줄이고, 나머지는 서브에이전트가 모두 정하게 한다\n③ 목표, 경계(2025년 공급망만, 2021년 위기는 다른 서브에이전트 담당), 요구 출력(출처 URL과 문서명을 담은 레코드 형태의 결과)을 명시하고, 검색 단계는 서브에이전트에 맡긴다\n④ 스크립트는 유지하고, 단계가 실패할 때 회복할 여유가 있도록 서브에이전트의 `maxTurns` 를 늘린다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#16.0",
+    "en": "A coordinator delegates market research with a script: \"Search 'chip shortage 2025', open the top five results, summarise each, then search 'chip prices'.\""
+   },
+   {
+    "sid": "lesson-d1#16.1",
+    "en": "Subagents keep returning unusable notes whenever the search results don't look the way the script expected."
+   },
+   {
+    "sid": "lesson-d1#16.2",
+    "en": "How should the delegation prompt be rewritten?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#17",
+  "koRef": "아키텍트가 SQL 모범 사례, 롤백 전략, 데이터 무결성 검사를 설명하는 긴 `prompt` 필드를 가진 \"database-migration\" `AgentDefinition` 을 정의하고 있습니다. 이와 별도로, 코디네이터는 이 서브에이전트를 호출할 때마다 해당 테이블과 마이그레이션을 설명하는 서로 다른 호출별 프롬프트를 제공합니다. 두 프롬프트 출처의 올바른 관계는 무엇입니까?\n① `AgentDefinition.prompt` 는 서브에이전트의 지속적인 시스템 프롬프트와 전문성을 정하고, 호출 시 넘기는 호출별 프롬프트는 그 실행의 구체적 작업 내용을 제공한다\n② 호출별 프롬프트가 주어지면 런타임에 `AgentDefinition.prompt` 는 무시되므로, 호출 시점의 프롬프트만 서브에이전트의 모델에 도달한다\n③ 호출별 프롬프트는 서브에이전트가 아니라 코디네이터 자신의 시스템 프롬프트에 합쳐지므로, 서브에이전트는 `AgentDefinition.prompt` 만 본다\n④ 두 프롬프트는 이어 붙인 뒤 더 짧은 쪽 길이로 잘리므로, 더 간결한 프롬프트만 온전히 도달한다고 보장된다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.0",
+    "en": "An architect is defining a \"database-migration\" AgentDefinition with a long prompt field describing SQL best practices, rollback strategy, and data integrity checks."
+   },
+   {
+    "sid": "lesson-d1#17.1",
+    "en": "Separately, each time the coordinator invokes this subagent it supplies a different per-call prompt describing the specific table and migration at hand."
+   },
+   {
+    "sid": "lesson-d1#17.2",
+    "en": "What is the correct relationship between these two prompt sources?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#18",
+  "koRef": "코디네이터가 주제에 대한 출처 열 개를 모으는 \"web-researcher\" 서브에이전트를 실행한 뒤, 최종 보고서를 쓸 \"synthesis\" 서브에이전트를 띄웁니다. 종합 서브에이전트의 출력은 연구자의 결과를 거의 모두 무시하고 일반론을 처음부터 다시 도출합니다. 코디네이터가 종합 서브에이전트에 보낸 프롬프트는 \"방금 완료된 조사를 바탕으로 보고서를 써라\"뿐이었습니다. 무엇을 바꿔야 합니까?\n① web-researcher의 전체 노트와 출처 정보를 종합 서브에이전트의 프롬프트 텍스트에 붙여 넣어, 그 자료로 보고서를 쓰게 한다\n② 종합 서브에이전트의 `maxTurns` 한도를 늘려, 주제를 충분히 다루고 찾은 내용으로 보고서를 만들 턴을 더 준다\n③ 종합 서브에이전트를 더 큰 모델로 바꿔, 짧은 프롬프트만으로도 코디네이터가 말하는 조사가 무엇인지 알아내게 한다\n④ 종합 서브에이전트에 web-researcher와 같은 검색 도구를 줘, 보고서를 쓰기 전에 직접 검색하게 한다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#18.0",
+    "en": "A coordinator runs a \"web-researcher\" subagent that gathers ten sources on a topic, then spawns a \"synthesis\" subagent to write the final report."
+   },
+   {
+    "sid": "lesson-d1#18.1",
+    "en": "The synthesis subagent's output ignores nearly all of the researcher's findings and instead re-derives generic conclusions from scratch."
+   },
+   {
+    "sid": "lesson-d1#18.2",
+    "en": "The coordinator's prompt to synthesis only said \"Write a report based on the research that was just completed.\""
+   },
+   {
+    "sid": "lesson-d1#18.3",
+    "en": "What change fixes this?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#19",
+  "koRef": "환불 에이전트의 시스템 프롬프트에 \"`process_refund` 전에 항상 `get_customer` 를 호출하라\"고 적혀 있습니다. 감사 결과, 적은 비율이지만 여전히 고객 본인 확인 없이 환불이 나가고 있습니다. 환불 전 본인 확인을 보장 하는 수정은 무엇입니까?\n① 지시를 더 강하게 쓰고, `process_refund` 전에 `get_customer` 를 호출하는 퓨샷 예시를 추가한다\n② 지시를 더 잘 따르는 더 크고 유능한 모델로 바꾼다\n③ 지시는 유지하고, `get_customer` 에서 확인된 고객 ID가 기록돼 있지 않으면 호출을 거부하는 PreToolUse 훅을 `process_refund` 에 추가한다\n④ 환불이 실행된 뒤 본인 확인이 있었는지 검사하는 PostToolUse 훅을 `process_refund` 에 추가한다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#19.0",
+    "en": "A refund agent's system prompt says \"always call get_customer before process_refund\"."
+   },
+   {
+    "sid": "lesson-d1#19.1",
+    "en": "Audits show that a small share of refunds still go out without the customer's identity being verified first."
+   },
+   {
+    "sid": "lesson-d1#19.2",
+    "en": "What fix makes verification before a refund guaranteed?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#20",
+  "koRef": "코디네이터가 세 가지 내용이 섞인 불만을 나누고 문제마다 서브에이전트를 하나씩 띄웁니다. 주소 담당 서브에이전트가 자기가 어느 고객 계정을 다루는지 계속 묻습니다. 원인과 해결책은 무엇입니까?\n① 서브에이전트는 크기 한도까지만 코디네이터의 이력을 물려받으므로, 대화를 줄이면 된다\n② 서브에이전트는 코디네이터의 턴을 보지 못하므로, 띄울 때 주는 프롬프트에 확인된 고객 ID와 주문 번호를 넣으면 된다\n③ 부모의 상태를 공유해 주는 SubagentStop 훅을 서브에이전트에 주면 된다\n④ 병렬로 도는 서브에이전트는 계정 데이터를 읽을 수 없으므로, 조사를 하나씩 차례로 돌려야 한다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#20.0",
+    "en": "A coordinator splits a three-part complaint and spawns one subagent per concern."
+   },
+   {
+    "sid": "lesson-d1#20.1",
+    "en": "The address subagent keeps asking which customer account it is working on."
+   },
+   {
+    "sid": "lesson-d1#20.2",
+    "en": "What explains this, and what is the fix?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#21",
+  "koRef": "팀이 `get_customer` 가 반드시 `process_refund` 보다 먼저 실행되도록 강제하려고 두 개의 PreToolUse 훅을 등록합니다. 하나는 `get_customer` 에 매칭돼 세션 파일에 \"verified\" 표시를 쓰고, 다른 하나는 `process_refund` 에 매칭돼 같은 파일을 읽습니다. 리뷰어는 이 설계가 두 훅이 서로에 대해 정해진 순서로 실행된다고 가정한다고 우려합니다. 이 가정은 안전합니까? 그 이유는?\n① 안전하지 않다. 등록된 모든 PreToolUse 훅은 matcher와 상관없이 세션의 모든 도구 호출마다 항상 병렬로 실행되므로, 파일이 쓰이기 전에 읽힐 수 있다\n② 안전하지 않다. 서로 다른 도구에 매칭된 훅은 세션 상태를 전혀 공유하지 않으므로, `process_refund` 훅은 `get_customer` 훅이 쓴 파일을 절대 볼 수 없다\n③ 안전하다. 런타임이 실행 전에 도구 이름의 알파벳 순서로 훅을 정렬하므로 `get_customer` 의 훅이 항상 먼저 실행된다\n④ 안전하지 않다. 각 훅은 매칭된 도구가 호출될 때만 실행되는데, `get_customer` 가 `process_refund` 보다 먼저 호출된다는 보장이 없다. 모델이 선행 도구를 아예 건너뛸 수 있으므로, `process_refund` 훅은 존재하지 않거나 유효하지 않은 파일을 읽게 될 수 있다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#21.0",
+    "en": "A team wants to enforce that get_customer must run before process_refund, and registers two separate PreToolUse hooks: one matched to get_customer that writes a \"verified\" marker to a session file, and one matched to process_refund that reads that same file."
+   },
+   {
+    "sid": "lesson-d1#21.1",
+    "en": "A reviewer worries this design assumes the hooks run in a guaranteed order relative to each other."
+   },
+   {
+    "sid": "lesson-d1#21.2",
+    "en": "Is that assumption safe, and why?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#22",
+  "koRef": "엔지니어가 `process_refund` 에 PreToolUse 훅 두 개를 등록합니다. 훅 A는 확인 기록을 공유 변수에 불러오고, 훅 B는 그 변수를 읽어 비어 있으면 호출을 거부합니다. 테스트에서 일부 환불이 잘못 거부되며, 실패가 무작위처럼 보입니다. 설계상의 결함은 무엇입니까?\n① 훅 A가 끝난 뒤 실행되도록 훅 B를 PostToolUse로 등록해야 한다\n② 같은 이벤트에 매칭된 훅은 순서 보장 없이 병렬로 실행되므로, 훅 B는 훅 A가 이미 실행됐다고 기대할 수 없다. 각 게이트는 필요한 상태를 스스로 읽어야 한다\n③ 훅은 등록 순서대로 실행되므로 훅 B가 훅 A보다 먼저 등록된 것이다. 둘을 바꾸면 된다\n④ 훅 B가 fail-closed로 동작하니, 공유 변수가 비어 있으면 환불을 허용해야 한다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#22.0",
+    "en": "An engineer registers two PreToolUse hooks on process_refund."
+   },
+   {
+    "sid": "lesson-d1#22.1",
+    "en": "Hook A loads the verification record into a shared variable, and Hook B reads that variable and denies the call if it is empty."
+   },
+   {
+    "sid": "lesson-d1#22.2",
+    "en": "In testing, some refunds are wrongly denied and the failures look random."
+   },
+   {
+    "sid": "lesson-d1#22.3",
+    "en": "What is the design flaw?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#23",
+  "koRef": "게이트가 matcher `.*refund` 로 등록돼 있습니다. 에이전트에는 `process_refund`, `issue_refund_note`, `get_customer` 세 도구가 있습니다. 게이트는 어느 도구에서 발생합니까?\n① 패턴이 refund라는 단어로 끝나므로 `process_refund` 에서만\n② 점과 별표 때문에 고정(anchor)되지 않은 정규식이 되어 부분 문자열에 매칭되므로, `process_refund` 와 `issue_refund_note`\n③ 별표가 든 패턴은 모든 도구에 매칭되므로 세 도구 모두\n④ matcher는 정확한 도구 이름만 받으므로 아무 도구에서도 발생하지 않는다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#23.0",
+    "en": "A gate is registered with the matcher `.*refund`."
+   },
+   {
+    "sid": "lesson-d1#23.1",
+    "en": "The agent has three tools: process_refund, issue_refund_note and get_customer."
+   },
+   {
+    "sid": "lesson-d1#23.2",
+    "en": "Which of them does the gate fire on?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#24",
+  "koRef": "개발자가 불리언 플래그 `is_verified` 를 검사해 `process_refund` 도구를 막는 PreToolUse 훅을 구현합니다. 이 플래그는 사람 검토자가 사진 신분증을 승인한 뒤 별도의 `mark_verified` 도구가 `true` 로 설정하도록 돼 있습니다. 한 사고에서 `mark_verified` 도구가 실행됐고 검토자는 신분증을 명시적으로 거부 했지만, 소프트웨어 버그로 `is_verified` 가 잘못 `true` 로 설정됐습니다. 그 결과 PreToolUse 훅이 `process_refund` 를 허용해 무단 환불이 발생했습니다. 이런 유형의 실패를 가장 잘 막는 PreToolUse 훅 변경은 무엇입니까?\n① PreToolUse 훅의 timeout을 늘려 플래그를 주기적으로 재확인하게 한다. 훅이 결국 검토가 잘못됐음을 알아차리고 환불을 막을 것이다\n② `process_refund` 에 PostToolUse 훅을 추가해 환불이 시작된 뒤 플래그를 다시 확인하고, 플래그가 잘못됐으면 거래를 되돌린다\n③ 잘못 설정될 수 있는 별도 불리언 플래그에 의존하는 대신, `process_refund` 도구 호출 파라미터에 포함된 명시적 확인 결과를 PreToolUse 훅이 검사해 사람 검토가 분명히 통과했는지 확인하도록 바꾼다\n④ 대화 전체를 독립적으로 다시 읽고 사람 검토가 실제로 성공했는지 판단해, 필요하면 플래그를 무시할 수 있는 더 크고 유능한 언어 모델로 교체한다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#24.0",
+    "en": "A developer implements a PreToolUse hook that gates the `process_refund` tool by checking a boolean flag `is_verified`."
+   },
+   {
+    "sid": "lesson-d1#24.1",
+    "en": "The flag is expected to be set to `true` by a separate `mark_verified` tool after a human reviewer approves a photo ID."
+   },
+   {
+    "sid": "lesson-d1#24.2",
+    "en": "In an incident, the `mark_verified` tool executed and the human reviewer explicitly rejected the ID, but due to a software bug the `is_verified` flag was incorrectly set to `true`."
+   },
+   {
+    "sid": "lesson-d1#24.3",
+    "en": "The PreToolUse hook consequently allowed `process_refund`, resulting in an unauthorized refund."
+   },
+   {
+    "sid": "lesson-d1#24.4",
+    "en": "What change to the PreToolUse hook would best prevent this category of failure?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#25",
+  "koRef": "아키텍트가 `refund` 라는 커스텀 도구 하나만 막으려고 정규식 matcher `/refund/` 로 PreToolUse 훅을 작성합니다. 리뷰 중 동료가, 이 matcher가 내부 코멘트만 쓰고 절대 막아서는 안 되는 `issue_refund_note` 도구에서도 발생한다는 것을 발견합니다. 원인과 올바른 수정은 무엇입니까?\n① matcher `/refund/` 는 정규식이지만 훅의 정규식 matcher는 자동으로 정확히 일치하도록 고정되므로, 이름이 정확히 `refund` 인 도구에서만 발생한다. 동료의 우려는 근거가 없고 수정할 필요가 없다\n② matcher는 `mcp__` 서버 접두사로 시작하는 도구 이름만 대상으로 할 수 있다. `refund` 같은 인프로세스 커스텀 도구는 matcher가 안정적으로 겨눌 수 있도록 이 접두사를 포함하게 이름을 바꿔야 한다\n③ timeout 값을 명시하지 않으면 훅은 기본적으로 모든 도구 호출에서 발생한다. timeout을 추가하면 `issue_refund_note` 에 매칭되지 않는다\n④ 정규식 matcher `/refund/` 는 고정되지 않아 'refund'라는 부분 문자열을 포함한 모든 도구 이름에 매칭된다. `^` 와 `$` 로 고정한 `/^refund$/` 로 바꿔 정확히 `refund` 라는 이름에만 매칭되게 한다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#25.0",
+    "en": "An architect writes a PreToolUse hook with the regex matcher `/refund/` intending it to gate a single custom tool named `refund`."
+   },
+   {
+    "sid": "lesson-d1#25.1",
+    "en": "During a review, a colleague notices the matcher would also fire on a tool named `issue_refund_note` that only writes an internal comment and should never be gated."
+   },
+   {
+    "sid": "lesson-d1#25.2",
+    "en": "What is the cause and the correct fix?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#26",
+  "koRef": "재무팀은 수천 건의 대화 중 단 한 건이라도 500달러를 넘는 환불은 용납할 수 없다고 말합니다. 어떤 설계가 이 한도를 실제로 보장합니까?\n① 모델이 큰 환불을 확실히 거절하도록 시스템 프롬프트에 규칙과 여러 개의 풀이 예시를 넣는다\n② 환불 도구에 PostToolUse 훅을 등록해 500달러를 넘는 환불을 검토 대상으로 표시한다\n③ 환불 도구에 PreToolUse 훅을 등록하고, 콜백이 금액을 검사해 500달러를 넘으면 deny 결정을 돌려주게 한다\n④ 규칙은 시스템 프롬프트에 두고, 각 대화를 다시 읽어 첫 번째 에이전트에게 정책을 상기시키는 두 번째 에이전트를 추가한다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#26.0",
+    "en": "A finance team says a single refund above $500 is unacceptable, even if it happens in only one conversation out of thousands."
+   },
+   {
+    "sid": "lesson-d1#26.1",
+    "en": "Which design actually guarantees the limit holds?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#27",
+  "koRef": "정책은 category가 \"restricted\"일 때 500달러를 넘는 `refund_customer` 호출을 막는 것입니다. 팀원이 PreToolUse 아래에 `HookMatcher(matcher=\"refund_customer.*category=restricted\", hooks=[check_refund])` 를 등록했습니다. 에이전트가 amount 900, category \"restricted\"로 `refund_customer` 를 호출하면 어떻게 됩니까?\n① 정규식이 도구 이름과 인자를 함께 매칭하므로 훅이 발생하고, restricted 카테고리 환불만 콜백에 도달한다\n② 훅이 전혀 발생하지 않아 환불이 검사 없이 나간다. 패턴은 도구 이름하고만 비교되는데, \"refund_customer\"에는 \"category=restricted\"가 들어 있지 않다\n③ matcher에 정규식 문자가 하나라도 있으면 모든 도구에 매칭되므로 훅이 모든 도구 호출에서 발생한다\n④ `.*` 앞부분만 도구 이름과 비교되므로 훅이 모든 `refund_customer` 호출에서 발생한다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#27.0",
+    "en": "Your policy is to block refund_customer calls over $500 when the category is \"restricted\"."
+   },
+   {
+    "sid": "lesson-d1#27.1",
+    "en": "A teammate registers the hook matcher below under PreToolUse."
+   },
+   {
+    "sid": "lesson-d1#27.2",
+    "en": "What happens when the agent calls refund_customer with amount 900 and category \"restricted\"?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#28",
+  "koRef": "권한 프롬프트가 절대 나타나서는 안 되는 무인 지원 에이전트에, 500달러를 넘는 환불을 \"Refund denied\"라는 이유로 거부하는 PreToolUse 훅이 있습니다. 로그를 보면 에이전트가 같은 금액으로 `refund_customer` 를 계속 다시 호출합니다. 재시도를 멈추면서도 한도 보장은 유지하는 변경은 무엇입니까?\n① \"deny\" 대신 \"ask\"를 돌려줘 누군가 환불을 승인할 때까지 에이전트가 기다리게 한다\n② 에이전트가 더 분명한 설명을 보도록 메시지를 최상위 `systemMessage` 필드로 옮긴다\n③ \"deny\"는 계속 돌려주되, `permissionDecisionReason` 을 '500달러를 넘는 환불은 사람 승인이 필요하니 주문 ID와 금액을 담아 `escalate_refund` 를 호출하라'는 내용으로 바꾼다\n④ 에이전트가 훅을 무시하는 게 분명하니 훅을 없애고 시스템 프롬프트에 에스컬레이션 지시를 추가한다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#28.0",
+    "en": "An unattended support agent, where no permission prompt may ever appear, has a PreToolUse hook that denies refunds over $500 with the reason \"Refund denied\"."
+   },
+   {
+    "sid": "lesson-d1#28.1",
+    "en": "In the logs, the agent keeps calling refund_customer again with the same amount."
+   },
+   {
+    "sid": "lesson-d1#28.2",
+    "en": "Which change stops the retries and still keeps the limit guaranteed?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#29",
+  "koRef": "PreToolUse 훅이 환불 도구 인자 안의 `category` 필드를 기준으로, 특정 가맹점 카테고리를 대상으로 할 때만 500달러를 넘는 환불을 막아야 합니다. 훅은 `matcher=\"refund_customer\"` 로 등록돼 있습니다. 카테고리 검사는 어디에 구현해야 합니까?\n① 도구 자체의 MCP 서버 정의에. PreToolUse 훅은 어떤 경우에도 개별 도구 인자를 검사할 수 없기 때문이다\n② HookMatcher가 도구 이름 matcher와 함께 받는 `argument_matcher` 라는 별도 matcher 필드에\n③ matcher 문자열에. `refund_customer.*category=restricted` 같은 정규식을 써서 SDK가 콜백을 부르기 전에 인자로 걸러 내게 한다\n④ 콜백 함수 안에. `input_data[\"tool_input\"][\"category\"]` 를 읽고 거기서 조건 로직을 적용한다. matcher는 도구 이름으로만 거르기 때문이다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#29.0",
+    "en": "A PreToolUse hook needs to block refunds above $500 only when they target a specific merchant category, based on a field named category inside the refund tool's arguments."
+   },
+   {
+    "sid": "lesson-d1#29.1",
+    "en": "The hook is registered with matcher=\"refund_customer\"."
+   },
+   {
+    "sid": "lesson-d1#29.2",
+    "en": "Where should the category check be implemented?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#30",
+  "koRef": "아키텍트가 도구 출력 정규화를 MCP 도구와 내장 도구 모두에 동작해야 하는 하나의 PostToolUse 훅으로 통합하고 있습니다. 현재 레거시 MCP 도구는 `updatedMCPToolOutput` 을, 새 내장 도구는 `updatedToolOutput` 을 씁니다. 공용 훅이 두 종류 도구의 출력을 모두 바꾸려면 어떤 필드를 써야 합니까?\n① `updatedMCPToolOutput`. 도구 종류를 가리지 않는 출력 교체용 필드이기 때문이다\n② `systemMessage`. 모든 도구에 대해 정규화된 출력을 사용자에게 보여 줄 수 있기 때문이다\n③ `updatedToolOutput`. `PostToolUse` 훅에서 모든 도구(내장·MCP)의 출력을 바꾸는 반면, `updatedMCPToolOutput` 은 MCP 도구에만 동작하기 때문이다\n④ `additionalContext`. 원래 도구 출력을 덮어쓰는 추가 정보를 넣는 방법이기 때문이다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#30.0",
+    "en": "An architect is consolidating tool-output normalization into a single PostToolUse hook that must work for both MCP tools and built-in tools."
+   },
+   {
+    "sid": "lesson-d1#30.1",
+    "en": "Currently, a legacy MCP tool uses `updatedMCPToolOutput` and a newer built-in tool uses `updatedToolOutput`."
+   },
+   {
+    "sid": "lesson-d1#30.2",
+    "en": "Which field should the shared hook use to replace the output for both tool types?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#31",
+  "koRef": "에이전트가 \"billing\"과 \"inventory\"라는 두 MCP 서버에 연결돼 있습니다. 아키텍트는 \"billing\" 서버가 노출하는 모든 도구에 대해 실행되고, \"inventory\"의 도구나 Bash·Read 같은 내장 도구에는 매칭되지 않는 PreToolUse 훅 하나를 원합니다. 어떤 matcher가 이를 달성합니까?\n① `billing`\n② `^mcp__`\n③ `mcp__billing__.*`\n④ `^mcp__billing__$`",
+  "sentences": [
+   {
+    "sid": "lesson-d1#31.0",
+    "en": "An agent connects to two MCP servers named \"billing\" and \"inventory\"."
+   },
+   {
+    "sid": "lesson-d1#31.1",
+    "en": "An architect wants a single PreToolUse hook to run for every tool exposed by the \"billing\" server, without matching any tool from \"inventory\" or any built-in tool like Bash or Read."
+   },
+   {
+    "sid": "lesson-d1#31.2",
+    "en": "Which matcher achieves this?"
+   },
+   {
+    "sid": "lesson-d1#31.3",
+    "en": "billing"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#32",
+  "koRef": "매일 밤 작업 하나가 새 제품 사양서를 하나씩 받아 같은 단계를 같은 순서로 실행합니다. 제품 설명을 쓰고, 코드가 길이와 금지어를 검사한 뒤, 설명을 독일어와 프랑스어로 번역합니다. 사양서의 내용이 어떤 단계를 실행할지 바꾸는 일은 없습니다. 가장 알맞은 분해 방식은 무엇입니까?\n① 사양서마다 오케스트레이터 LLM이 읽고 작성·검사·번역 하위 작업을 계획한다\n② 코드로 순서를 정한 고정 프롬프트 체인(작성 → 프로그램 게이트 → 번역)을 쓰고, 단계마다 별도 LLM 호출을 둔다\n③ 적응형 에이전트가 사양서를 먼저 살펴본 뒤 발견한 내용에 따라 하위 작업을 만든다\n④ 지연을 줄이려고 하나의 LLM 호출이 설명 작성과 번역을 함께 한다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.0",
+    "en": "Every night a job takes each new product spec and runs the same steps in the same order."
+   },
+   {
+    "sid": "lesson-d1#32.1",
+    "en": "It writes a product description, code checks the length and banned terms, and then the description is translated into German and French."
+   },
+   {
+    "sid": "lesson-d1#32.2",
+    "en": "The content of a spec never changes which steps run."
+   },
+   {
+    "sid": "lesson-d1#32.3",
+    "en": "Which decomposition fits best?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#33",
+  "koRef": "에이전트의 시스템 프롬프트에 \"먼저 필드를 추출하고, 그다음 검증하고, 그다음 보고서 형식으로 정리하라\"고 적혀 있습니다. 팀은 검증된 필드를 로그로 남기고, 검증이 실패하면 형식 정리 전에 실행을 멈춰야 합니다. 어떤 변경이 이를 가능하게 합니까?\n① \"다음으로 넘어가기 전에 각 단계를 반드시 순서대로 완료해야 한다\" 처럼 지시를 더 강하게 쓴다\n② 하나의 응답 안에서 각 단계의 출력을 별도 XML 태그로 감싸게 한다\n③ 추출, 검증, 형식 정리를 오케스트레이션 코드가 순서를 정하는 별도 API 호출로 나누고, 검증과 형식 정리 사이에 검사를 둔다\n④ 세 단계를 모두 확실히 따르도록 컨텍스트 창이 더 큰 모델로 바꾼다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#33.0",
+    "en": "An agent's system prompt says: \"First extract the fields, then validate them, then format the report.\""
+   },
+   {
+    "sid": "lesson-d1#33.1",
+    "en": "The team needs to log the validated fields and stop the run before formatting if validation fails."
+   },
+   {
+    "sid": "lesson-d1#33.2",
+    "en": "What change gives them that?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#34",
+  "koRef": "팀이 고객 지원 대화 원문을 받아 구조화된 요약을 만들고, 그 요약을 고정된 세 언어로 번역하는 자동 파이프라인을 만들고 있습니다. 단계와 그 순서는 실행마다 바뀌지 않습니다. 이 워크플로에 가장 알맞은 분해 전략은 무엇입니까?\n① 대화를 요약하고, 요약을 코드 기반으로 검사한 뒤, 번역하는 고정 프롬프트 체인\n② 대화마다 요약·번역 하위 작업을 계획한 뒤 워커에 위임하는 오케스트레이터 에이전트\n③ 대화를 읽고 요약을 함께 녹여 세 번역을 한 번에 쓰는 단일 에이전트\n④ 대화를 먼저 살펴본 뒤 요약·번역에 필요한 하위 작업을 생성하는 적응형 에이전트",
+  "sentences": [
+   {
+    "sid": "lesson-d1#34.0",
+    "en": "A team is building an automated pipeline that takes a raw customer support transcript, produces a structured summary, then translates that summary into three fixed target languages."
+   },
+   {
+    "sid": "lesson-d1#34.1",
+    "en": "The steps and their order never change between runs."
+   },
+   {
+    "sid": "lesson-d1#34.2",
+    "en": "Which decomposition strategy best fits this workflow?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#35",
+  "koRef": "리뷰어가 모노레포 전반의 파일 40개를 건드리는 풀 리퀘스트에 대한 에이전트형 코드 리뷰를 설계하고 있습니다. 한 번의 패스가 40개 파일을 모두 컨텍스트에 담으려 하면 미묘한 파일 간 문제를 놓치고 코멘트가 일반론으로 흐른다는 사실을 리뷰어들이 알아챘습니다. 이 주의 희석(attention dilution) 문제를 해결하는 재구성은 무엇입니까?\n① 파일마다 별도 패스로 로컬 문제를 검토한 뒤, 그 발견들을 대상으로 두 번째 패스를 돌려 파일 간 상호작용을 확인한다\n② 전체 diff를 잘림 없이 한 번에 읽도록 컨텍스트 창이 더 큰 모델로 리뷰를 옮긴다\n③ 한 패스는 유지하되, 모델이 먼저 위험도로 파일 순위를 매기고 가장 위험한 파일에 리뷰 노력을 쏟게 한다\n④ 매번 파일 순서를 섞어 diff 전체를 한 패스로 여러 번 돌리고, 여러 실행에서 반복된 코멘트만 남긴다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#35.0",
+    "en": "A reviewer is designing an agentic code review for a pull request that touches 40 files across a monorepo."
+   },
+   {
+    "sid": "lesson-d1#35.1",
+    "en": "Reviewers have noticed that when a single pass tries to hold all 40 files in context at once, subtle cross-file issues are missed and comments become generic."
+   },
+   {
+    "sid": "lesson-d1#35.2",
+    "en": "What restructuring addresses this attention dilution problem?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#36",
+  "koRef": "고객들이 결제된 주문 일부가 흔적 없이 사라진다고 신고합니다. 시스템의 어느 부분이 주문을 떨어뜨리는지 아무도 모릅니다. 이 조사에서 적응형 분해에 해당하는 설계는 무엇입니까?\n① 오케스트레이터가 처음부터 API, 큐, 데이터베이스, 결제 서비스에 하나씩 네 서브에이전트를 병렬로 띄운 뒤 보고를 합친다\n② 코드로 순서를 정한 프롬프트 체인이 로그 수집 → 오류 상관 분석 → 관련 코드 검사를 각각 별도 LLM 호출로, 단계 사이 게이트를 두고 진행한다\n③ 오케스트레이터가 사라진 주문 ID를 로그에서 추적하는 것으로 시작해, 각 다음 하위 작업을 직전 작업이 찾은 내용으로 만들고, 두 라운드 연속 새로운 것이 없으면 멈춘다\n④ 주요 서비스의 로그를 담은 긴 컨텍스트 호출 하나에 주문이 어디서 사라지는지 찾게 한다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#36.0",
+    "en": "Customers report that some paid orders vanish without a trace, and nobody knows which part of the system drops them."
+   },
+   {
+    "sid": "lesson-d1#36.1",
+    "en": "Which design is adaptive decomposition for this investigation?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#37",
+  "koRef": "아키텍트가 모호한 알림 메시지 하나만 주어지고 어느 서비스가 문제인지 사전 지식이 없는 상태에서, 운영 장애가 왜 발생했는지 조사하는 에이전트를 설계해야 합니다. 살펴볼 로그, 서비스, 코드 경로의 수는 미리 알 수 없습니다. 가장 알맞은 분해 방식은 무엇입니까?\n① 직전 작업이 찾은 내용으로 각 다음 작업을 계획하고, 증거가 들어올 때마다 계획을 수정하는 오케스트레이터 에이전트\n② 데이터베이스, 캐시, 로드 밸런서를 맡은 고정된 병렬 서브에이전트들이 진단을 위한 병합 단계에 보고하는 구조\n③ 알림과 주요 서비스의 최근 로그를 담아 모델에게 근본 원인을 말하게 하는 단일 프롬프트\n④ 로그 수집, 오류 상관 분석, 코드 검사 단계를 미리 정해 두고 마지막에 보고서를 쓰는 프롬프트 체인",
+  "sentences": [
+   {
+    "sid": "lesson-d1#37.0",
+    "en": "An architect is asked to design an agent that investigates why a production incident occurred, given only a vague alert message and no prior knowledge of which service is at fault."
+   },
+   {
+    "sid": "lesson-d1#37.1",
+    "en": "The number of logs, services, and code paths to inspect cannot be known ahead of time."
+   },
+   {
+    "sid": "lesson-d1#37.2",
+    "en": "Which decomposition approach is most appropriate?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d1#38",
+  "koRef": "개발자가 노트북에서 세션에 'auth-refactor'라는 이름을 붙였습니다. 이후 새로 뜬 일회용 빌드 호스트의 CI 작업이 `claude -r \"auth-refactor\" \"Finish this PR\"` 을 실행합니다. 호스트에는 그 밖에 아무것도 설정하지 않았습니다. 어떻게 됩니까?\n① 직접 붙인 세션 이름은 로그인한 곳이라면 어디서든 유효한 핸들이므로 곧바로 재개된다\n② 세션을 찾지 못한다. 트랜스크립트가 노트북의 로컬 디스크에 있기 때문이며, 먼저 트랜스크립트 파일을 CI 호스트로 복사해야 한다\n③ CI 호스트에 정확히 일치하는 것이 없으므로 'auth-refactor'를 검색어로 미리 채운 세션 선택기가 열린다\n④ `--continue` 처럼 CI 작업 디렉터리의 가장 최근 세션으로 대신 이어진다",
+  "sentences": [
+   {
+    "sid": "lesson-d1#38.0",
+    "en": "A developer named a session 'auth-refactor' on their laptop."
+   },
+   {
+    "sid": "lesson-d1#38.1",
+    "en": "A CI job on a fresh ephemeral build host then runs `claude -r \"auth-refactor\" \"Finish this PR\"`."
+   },
+   {
+    "sid": "lesson-d1#38.2",
+    "en": "Nothing else was set up on the host."
+   },
+   {
+    "sid": "lesson-d1#38.3",
+    "en": "What happens?"
+   }
+  ]
+ }
+]

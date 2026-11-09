@@ -1,0 +1,950 @@
+[
+ {
+  "lemma": "belong",
+  "skip": null,
+  "word": "belong",
+  "pos": ["동사"],
+  "ipa": "bɪˈlɔːŋ",
+  "meaning": "① (~에) 속하다, 있어야 맞다 ② (belong to) ~의 것이다, ~에 소속되다",
+  "short": "(~에) 속하다, 있어야 맞다",
+  "senses": [
+   { "pos": "동사", "ko": "(~에) 속하다, 있어야 맞다" },
+   { "pos": "동사", "ko": "(~ to) ~의 것이다, 소속되다" }
+  ],
+  "forms": ["belongs", "belonged", "belonging", "belongings"],
+  "synonyms": ["fit"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#2.6", "surface": "belongs", "pos": "동사", "sense": "(~에) 속하다, 있어야 맞다" }
+  ]
+ },
+ {
+  "lemma": "below",
+  "skip": null,
+  "word": "below",
+  "pos": ["부사", "전치사"],
+  "ipa": "bɪˈloʊ",
+  "meaning": "① 아래에, 다음에 (나오는) ② (수치가) ~ 미만으로, ~보다 낮게 ③ (위치가) ~ 아래에",
+  "short": "아래에, ~ 미만으로",
+  "senses": [
+   { "pos": "부사", "ko": "아래에 (나오는), 다음에" },
+   { "pos": "전치사", "ko": "(수치가) ~ 미만으로, ~보다 낮게" },
+   { "pos": "전치사", "ko": "(위치가) ~ 아래에" }
+  ],
+  "forms": [],
+  "synonyms": ["under", "beneath"],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "sample01#2.2", "surface": "below", "pos": "부사", "sense": "아래에 (나오는), 다음에" },
+   { "sid": "lesson-d5#11.0", "surface": "below", "pos": "전치사", "sense": "(수치가) ~ 미만으로, ~보다 낮게" },
+   { "sid": "mock04#55.4", "surface": "below", "pos": "전치사", "sense": "(수치가) ~ 미만으로, ~보다 낮게" },
+   { "sid": "lesson-d1#27.1", "surface": "below", "pos": "부사", "sense": "아래에 (나오는), 다음에" }
+  ]
+ },
+ {
+  "lemma": "benchmark",
+  "skip": null,
+  "word": "benchmark",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈbentʃmɑːrk",
+  "meaning": "벤치마크 — 성능을 비교·측정하는 기준 테스트(세트)",
+  "short": "성능 비교 기준 테스트",
+  "senses": [
+   { "pos": "명사", "ko": "(성능 비교용) 기준 테스트, 벤치마크" },
+   { "pos": "동사", "ko": "기준에 대어 성능을 비교·측정하다" },
+   { "pos": "명사", "ko": "기준점, 척도" }
+  ],
+  "forms": ["benchmarks", "benchmarked", "benchmarking"],
+  "synonyms": ["standard", "yardstick"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "beneath",
+  "skip": null,
+  "word": "beneath",
+  "pos": ["전치사", "부사"],
+  "ipa": "bɪˈniːθ",
+  "meaning": "① ~ 아래에, 밑에 ② (수준이) ~보다 못한, ~에 어울리지 않는",
+  "short": "~ 아래에, 밑에",
+  "senses": [
+   { "pos": "전치사", "ko": "~ 아래에, 밑에" },
+   { "pos": "전치사", "ko": "(수준이) ~보다 못한, ~에 어울리지 않는" }
+  ],
+  "forms": [],
+  "synonyms": ["under", "below", "underneath"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#6.3", "surface": "beneath", "pos": "전치사", "sense": "~ 아래에, 밑에" }
+  ]
+ },
+ {
+  "lemma": "benefit",
+  "skip": null,
+  "word": "benefit",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈbenɪfɪt",
+  "meaning": "① 이점, 혜택 ② 이득을 보다, ~에 도움이 되다 ③ (복지) 수당, 급여",
+  "short": "이점, 혜택",
+  "senses": [
+   { "pos": "명사", "ko": "이점, 혜택" },
+   { "pos": "동사", "ko": "이득을 보다, 도움이 되다" },
+   { "pos": "명사", "ko": "(복지) 수당, 급여" }
+  ],
+  "forms": ["benefits", "benefited", "benefiting", "beneficial"],
+  "synonyms": ["advantage", "gain"],
+  "domain": "원인·결과·영향",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#15.2", "surface": "benefit", "pos": "명사", "sense": "이점, 혜택" }
+  ]
+ },
+ {
+  "lemma": "best-of-n",
+  "skip": null,
+  "word": "best-of-N",
+  "pos": ["명사"],
+  "ipa": "ˌbest əv ˈen",
+  "meaning": "best-of-N — 같은 요청을 N번 돌려 결과를 비교해 고르거나 검증하는 기법",
+  "short": "여러 번 생성해 골라내는 기법",
+  "senses": [
+   { "pos": "명사", "ko": "같은 요청을 여러 번 돌려 결과를 비교·선택하는 기법" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "beta",
+  "skip": null,
+  "word": "beta",
+  "pos": ["명사", "형용사"],
+  "ipa": "ˈbeɪtə",
+  "meaning": "베타 — 정식 출시 전 시험 단계(의 기능) (beta header: 베타 기능을 켜는 요청 헤더)",
+  "short": "베타(정식 출시 전 시험 단계)",
+  "senses": [
+   { "pos": "명사", "ko": "베타, 정식 출시 전 시험 단계" },
+   { "pos": "형용사", "ko": "베타 단계의, 시험판의" },
+   { "pos": "명사", "ko": "(그리스 문자) 베타, 두 번째" }
+  ],
+  "forms": [],
+  "synonyms": ["preview"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "between",
+  "skip": null,
+  "word": "between",
+  "pos": ["전치사", "부사"],
+  "ipa": "bɪˈtwiːn",
+  "meaning": "① (둘 이상) 사이의, ~ 간의 ② (시간상) ~ 사이에 ③ (in between) 그 사이에, 중간에",
+  "short": "~ 사이의, ~ 간의",
+  "senses": [
+   { "pos": "전치사", "ko": "(둘 이상) 사이의, ~ 간의" },
+   { "pos": "전치사", "ko": "(시간상) ~ 사이에" },
+   { "pos": "부사", "ko": "(in ~) 그 사이에, 중간에" }
+  ],
+  "forms": [],
+  "synonyms": ["among"],
+  "domain": "논리·관계·연결어",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#39.0", "surface": "between", "pos": "전치사", "sense": "(둘 이상) 사이의, ~ 간의" },
+   { "sid": "lesson-d1#34.1", "surface": "between", "pos": "전치사", "sense": "(시간상) ~ 사이에" },
+   { "sid": "lesson-d3#1.1", "surface": "between", "pos": "부사", "sense": "(in ~) 그 사이에, 중간에" },
+   { "sid": "lesson-d2#2.6", "surface": "between", "pos": "전치사", "sense": "(둘 이상) 사이의, ~ 간의" }
+  ]
+ },
+ {
+  "lemma": "bias",
+  "skip": null,
+  "word": "bias",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈbaɪəs",
+  "meaning": "편향, 치우침 / 한쪽으로 치우치게 하다 (biased: 편향된)",
+  "short": "편향, 편향된",
+  "senses": [
+   { "pos": "명사", "ko": "편향, 치우침" },
+   { "pos": "동사", "ko": "한쪽으로 치우치게 하다" },
+   { "pos": "형용사", "ko": "(-ed형) 편향된, 치우친" }
+  ],
+  "forms": ["biases", "biased", "biasing"],
+  "synonyms": ["prejudice", "skew"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#52.7", "surface": "biased", "pos": "형용사", "sense": "(-ed형) 편향된, 치우친" }
+  ]
+ },
+ {
+  "lemma": "bibliography",
+  "skip": null,
+  "word": "bibliography",
+  "pos": ["명사"],
+  "ipa": "ˌbɪbliˈɑːɡrəfi",
+  "meaning": "참고 문헌 목록",
+  "short": "참고 문헌 목록",
+  "senses": [
+   { "pos": "명사", "ko": "참고 문헌 목록" }
+  ],
+  "forms": ["bibliographies"],
+  "synonyms": ["references", "works cited"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#41.7", "surface": "bibliography", "pos": "명사", "sense": "참고 문헌 목록" }
+  ]
+ },
+ {
+  "lemma": "bidirectional",
+  "skip": null,
+  "word": "bidirectional",
+  "pos": ["형용사"],
+  "ipa": "ˌbaɪdəˈrekʃənl",
+  "meaning": "양방향의",
+  "short": "양방향의",
+  "senses": [
+   { "pos": "형용사", "ko": "양방향의" }
+  ],
+  "forms": ["bidirectionally"],
+  "synonyms": ["two-way"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:bidirectional.0", "surface": "bidirectional", "pos": "형용사", "sense": "양방향의" }
+  ]
+ },
+ {
+  "lemma": "bill",
+  "skip": null,
+  "word": "bill",
+  "pos": ["명사", "동사"],
+  "ipa": "bɪl",
+  "meaning": "청구서, 계산서 / (요금을) 청구하다",
+  "short": "청구서, (운송) 증서",
+  "senses": [
+   { "pos": "명사", "ko": "청구서, 계산서" },
+   { "pos": "동사", "ko": "(요금을) 청구하다" },
+   { "pos": "명사", "ko": "(bill of lading) 선하증권, 운송 증서" },
+   { "pos": "명사", "ko": "법안" }
+  ],
+  "forms": ["bills", "billed", "billing"],
+  "synonyms": ["invoice", "charge"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#31.6", "surface": "bills", "pos": "명사", "sense": "(bill of lading) 선하증권, 운송 증서" }
+  ]
+ },
+ {
+  "lemma": "billing",
+  "skip": null,
+  "word": "billing",
+  "pos": ["명사"],
+  "ipa": "ˈbɪlɪŋ",
+  "meaning": "요금 청구, 결제",
+  "short": "요금 청구, 결제",
+  "senses": [
+   { "pos": "명사", "ko": "요금 청구, 결제" }
+  ],
+  "forms": [],
+  "synonyms": ["invoicing", "charging"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#3.0", "surface": "billing", "pos": "명사", "sense": "요금 청구, 결제" },
+   { "sid": "mock04#37.1", "surface": "billing", "pos": "명사", "sense": "요금 청구, 결제" },
+   { "sid": "lesson-d5#2.0", "surface": "billing", "pos": "명사", "sense": "요금 청구, 결제" }
+  ]
+ },
+ {
+  "lemma": "billing-date",
+  "skip": null,
+  "word": "billing date",
+  "pos": ["명사구"],
+  "ipa": "ˈbɪlɪŋ deɪt",
+  "meaning": "(요금) 청구일, 결제일",
+  "short": "청구일, 결제일",
+  "senses": [
+   { "pos": "명사구", "ko": "(요금) 청구일, 결제일" }
+  ],
+  "forms": ["billing-date", "billing dates"],
+  "synonyms": [],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#8.3", "surface": "billing-date", "pos": "명사구", "sense": "(요금) 청구일, 결제일" },
+   { "sid": "lesson-d5#8.5", "surface": "billing-date", "pos": "명사구", "sense": "(요금) 청구일, 결제일" }
+  ]
+ },
+ {
+  "lemma": "bind",
+  "skip": null,
+  "word": "bind",
+  "pos": ["동사"],
+  "ipa": "baɪnd",
+  "meaning": "① 묶다, 결합하다 ② (값·주소를) 바인딩하다, 연결하다 ③ (bound) (~에) 묶인, 매인",
+  "short": "(~에) 묶인, 묶다",
+  "senses": [
+   { "pos": "동사", "ko": "묶다, 결합하다" },
+   { "pos": "동사", "ko": "(값·주소를) 바인딩하다, 연결하다" },
+   { "pos": "형용사", "ko": "(-ed형 bound) (~에) 묶인, 매인" }
+  ],
+  "forms": ["binds", "bound", "binding"],
+  "synonyms": ["tie", "attach", "link"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#42.2", "surface": "bound", "pos": "형용사", "sense": "(-ed형 bound) (~에) 묶인, 매인" }
+  ]
+ },
+ {
+  "lemma": "birth",
+  "skip": null,
+  "word": "birth",
+  "pos": ["명사"],
+  "ipa": "bɜːrθ",
+  "meaning": "① 출생, 탄생 (date of birth: 생년월일) ② (새로운 것의) 시작, 기원",
+  "short": "출생, 탄생",
+  "senses": [
+   { "pos": "명사", "ko": "출생, 탄생" },
+   { "pos": "명사", "ko": "(새로운 것의) 시작, 기원" }
+  ],
+  "forms": ["births"],
+  "synonyms": ["origin"],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#21.5", "surface": "birth", "pos": "명사", "sense": "출생, 탄생" }
+  ]
+ },
+ {
+  "lemma": "blank",
+  "skip": null,
+  "word": "blank",
+  "pos": ["형용사", "명사"],
+  "ipa": "blæŋk",
+  "meaning": "비어 있는 / 빈칸",
+  "short": "비어 있는, 빈칸",
+  "senses": [
+   { "pos": "형용사", "ko": "비어 있는, 빈" },
+   { "pos": "명사", "ko": "빈칸, 공란" },
+   { "pos": "형용사", "ko": "(표정이) 멍한, 무표정한" }
+  ],
+  "forms": ["blanks", "blankly"],
+  "synonyms": ["empty", "unfilled"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#24.1", "surface": "blank", "pos": "형용사", "sense": "비어 있는, 빈" }
+  ]
+ },
+ {
+  "lemma": "blend",
+  "skip": null,
+  "word": "blend",
+  "pos": ["동사"],
+  "ipa": "blend",
+  "meaning": "(여러 개를) 섞다, 혼합하다",
+  "short": "섞다, 혼합된",
+  "senses": [
+   { "pos": "동사", "ko": "(여러 개를) 섞다, 혼합하다" },
+   { "pos": "형용사", "ko": "(-ed형) 섞인, 혼합된" },
+   { "pos": "명사", "ko": "혼합(물)" }
+  ],
+  "forms": ["blends", "blended", "blending"],
+  "synonyms": ["mix", "merge", "combine"],
+  "domain": "연결·통합",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#23.2", "surface": "blended", "pos": "동사", "sense": "(여러 개를) 섞다, 혼합하다" },
+   { "sid": "lesson-d5#41.7", "surface": "blended", "pos": "형용사", "sense": "(-ed형) 섞인, 혼합된" },
+   { "sid": "mock04#35.6", "surface": "blended", "pos": "형용사", "sense": "(-ed형) 섞인, 혼합된" }
+  ]
+ },
+ {
+  "lemma": "blind spot",
+  "skip": null,
+  "word": "blind spot",
+  "pos": ["명사구"],
+  "ipa": "ˈblaɪnd spɑːt",
+  "meaning": "사각지대, 맹점",
+  "short": "사각지대, 맹점",
+  "senses": [
+   { "pos": "명사구", "ko": "사각지대, 맹점" }
+  ],
+  "forms": ["blind spots"],
+  "synonyms": ["weak point", "gap"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#11.6", "surface": "blind spots", "pos": "명사구", "sense": "사각지대, 맹점" }
+  ]
+ },
+ {
+  "lemma": "blob",
+  "skip": null,
+  "word": "blob",
+  "pos": ["명사"],
+  "ipa": "blɑːb",
+  "meaning": "블롭 — 내용을 따지지 않고 한 덩어리로 다루는 (바이너리) 데이터",
+  "short": "(데이터) 덩어리, 블롭",
+  "senses": [
+   { "pos": "명사", "ko": "(데이터) 덩어리, 블롭" },
+   { "pos": "명사", "ko": "(형체 없는) 작은 덩어리, 방울" }
+  ],
+  "forms": ["blobs"],
+  "synonyms": ["chunk", "lump"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#40.4", "surface": "blob", "pos": "명사", "sense": "(데이터) 덩어리, 블롭" }
+  ]
+ },
+ {
+  "lemma": "block",
+  "skip": null,
+  "word": "block",
+  "pos": ["명사", "동사"],
+  "ipa": "blɑːk",
+  "meaning": "① (콘텐츠) 블록, 덩어리 ② 막다, 차단하다",
+  "short": "블록, 차단하다",
+  "senses": [
+   { "pos": "명사", "ko": "(콘텐츠) 블록, 덩어리" },
+   { "pos": "동사", "ko": "막다, 차단하다" },
+   { "pos": "명사", "ko": "(코드) 블록, 구문 단위" },
+   { "pos": "명사", "ko": "(도시의) 구역, 블록" }
+  ],
+  "forms": ["blocks", "blocked", "blocking"],
+  "synonyms": ["chunk", "prevent", "stop"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#1.4", "surface": "blocks", "pos": "명사", "sense": "(콘텐츠) 블록, 덩어리" },
+   { "sid": "lesson-d1#27.0", "surface": "block", "pos": "동사", "sense": "막다, 차단하다" },
+   { "sid": "lesson-d4#11.0", "surface": "block", "pos": "명사", "sense": "(코드) 블록, 구문 단위" },
+   { "sid": "lesson-d2#28.0", "surface": "block", "pos": "명사", "sense": "(코드) 블록, 구문 단위" }
+  ]
+ },
+ {
+  "lemma": "blocklist",
+  "skip": null,
+  "word": "blocklist",
+  "pos": ["명사"],
+  "ipa": "ˈblɑːklɪst",
+  "meaning": "차단 목록 — 막을 단어·대상을 적어 둔 목록 (denylist 와 같은 말)",
+  "short": "차단 목록",
+  "senses": [
+   { "pos": "명사", "ko": "차단 목록" }
+  ],
+  "forms": ["blocklists"],
+  "synonyms": ["denylist", "blacklist"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "body",
+  "skip": null,
+  "word": "body",
+  "pos": ["명사"],
+  "ipa": "ˈbɑːdi",
+  "meaning": "본문 — 머리말·설정 부분을 뺀 본 내용",
+  "short": "본문",
+  "senses": [
+   { "pos": "명사", "ko": "본문, 본 내용" },
+   { "pos": "명사", "ko": "(함수의) 본체, 구현부" },
+   { "pos": "명사", "ko": "(코드·자료의) 전체 분량, 덩어리" },
+   { "pos": "명사", "ko": "몸, 신체" }
+  ],
+  "forms": ["bodies"],
+  "synonyms": ["content", "main text"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#14.2", "surface": "body", "pos": "명사", "sense": "본문, 본 내용" },
+   { "sid": "lesson-d4#3.2", "surface": "body", "pos": "명사", "sense": "(함수의) 본체, 구현부" },
+   { "sid": "lesson-d4#36.5", "surface": "body", "pos": "명사", "sense": "(코드·자료의) 전체 분량, 덩어리" },
+   { "sid": "mock04#36.1", "surface": "bodies", "pos": "명사", "sense": "본문, 본 내용" }
+  ]
+ },
+ {
+  "lemma": "boilerplate",
+  "skip": null,
+  "word": "boilerplate",
+  "pos": ["명사"],
+  "ipa": "ˈbɔɪlərpleɪt",
+  "meaning": "상용구 — 어디에나 반복되는 판에 박힌 내용",
+  "short": "상용구, 판에 박힌 내용",
+  "senses": [
+   { "pos": "명사", "ko": "상용구, 판에 박힌 내용" },
+   { "pos": "명사", "ko": "(코드) 매번 반복되는 기본 틀" }
+  ],
+  "forms": [],
+  "synonyms": ["template", "standard text"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#36.5", "surface": "boilerplate", "pos": "명사", "sense": "상용구, 판에 박힌 내용" }
+  ]
+ },
+ {
+  "lemma": "book",
+  "skip": null,
+  "word": "booking",
+  "pos": ["명사"],
+  "ipa": "ˈbʊkɪŋ",
+  "meaning": "예약 (booking reference: 예약 번호)",
+  "short": "예약",
+  "senses": [
+   { "pos": "명사", "ko": "예약" }
+  ],
+  "forms": ["bookings", "book"],
+  "synonyms": ["reservation"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#13.1", "surface": "booking", "pos": "명사", "sense": "예약" },
+   { "sid": "lesson-d5#12.5", "surface": "booking", "pos": "명사", "sense": "예약" }
+  ]
+ },
+ {
+  "lemma": "boolean",
+  "skip": null,
+  "word": "boolean",
+  "pos": ["형용사", "명사"],
+  "ipa": "ˈbuːliən",
+  "meaning": "① 참·거짓 두 값만 갖는, 불리언(논리형)의 ② 불리언 값, 참·거짓 값",
+  "short": "참·거짓 값의, 불리언",
+  "senses": [
+   { "pos": "형용사", "ko": "참·거짓 두 값만 갖는, 불리언의" },
+   { "pos": "명사", "ko": "불리언 값, 참·거짓 값" }
+  ],
+  "forms": ["booleans"],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#24.0", "surface": "boolean", "pos": "형용사", "sense": "참·거짓 두 값만 갖는, 불리언의" }
+  ]
+ },
+ {
+  "lemma": "borderline",
+  "skip": null,
+  "word": "borderline",
+  "pos": ["형용사"],
+  "ipa": "ˈbɔːrdərlaɪn",
+  "meaning": "경계선상의, (어느 쪽인지) 애매한",
+  "short": "경계선상의, 애매한",
+  "senses": [
+   { "pos": "형용사", "ko": "경계선상의, (어느 쪽인지) 애매한" },
+   { "pos": "명사", "ko": "경계선" }
+  ],
+  "forms": [],
+  "synonyms": ["marginal", "ambiguous"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#51.7", "surface": "borderline", "pos": "형용사", "sense": "경계선상의, (어느 쪽인지) 애매한" },
+   { "sid": "mock04#47.7", "surface": "borderline", "pos": "형용사", "sense": "경계선상의, (어느 쪽인지) 애매한" }
+  ]
+ },
+ {
+  "lemma": "bot",
+  "skip": null,
+  "word": "bot",
+  "pos": ["명사"],
+  "ipa": "bɑːt",
+  "meaning": "봇 — 정해진 일을 자동으로 하는 프로그램 (지원 봇·리뷰 봇 등)",
+  "short": "봇(자동화 프로그램)",
+  "senses": [
+   { "pos": "명사", "ko": "봇, 자동화 프로그램" }
+  ],
+  "forms": ["bots", "chatbot"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#1.0", "surface": "bot", "pos": "명사", "sense": "봇, 자동화 프로그램" },
+   { "sid": "mock04#50.2", "surface": "bot", "pos": "명사", "sense": "봇, 자동화 프로그램" },
+   { "sid": "lesson-d5#1.0", "surface": "bot", "pos": "명사", "sense": "봇, 자동화 프로그램" },
+   { "sid": "lesson-d4#11.1", "surface": "bot", "pos": "명사", "sense": "봇, 자동화 프로그램" }
+  ]
+ },
+ {
+  "lemma": "bottleneck",
+  "skip": null,
+  "word": "bottleneck",
+  "pos": ["명사"],
+  "ipa": "ˈbɑːtlnek",
+  "meaning": "병목 — 전체 흐름을 느리게 만드는 지점",
+  "short": "병목(지점)",
+  "senses": [
+   { "pos": "명사", "ko": "병목, 흐름을 늦추는 지점" }
+  ],
+  "forms": ["bottlenecks"],
+  "synonyms": ["choke point", "constraint"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:bottleneck.0", "surface": "bottleneck", "pos": "명사", "sense": "병목, 흐름을 늦추는 지점" }
+  ]
+ },
+ {
+  "lemma": "boundary",
+  "skip": null,
+  "word": "boundary",
+  "pos": ["명사"],
+  "ipa": "ˈbaʊndri",
+  "meaning": "경계, (책임·범위의) 한계선",
+  "short": "경계, 한계선",
+  "senses": [
+   { "pos": "명사", "ko": "경계, 경계선" },
+   { "pos": "명사", "ko": "(책임·범위의) 한계, 범위" }
+  ],
+  "forms": ["boundaries"],
+  "synonyms": ["border", "limit", "scope"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#37.1", "surface": "boundary", "pos": "명사", "sense": "경계, 경계선" },
+   { "sid": "lesson-d1#16.5", "surface": "boundaries", "pos": "명사", "sense": "(책임·범위의) 한계, 범위" },
+   { "sid": "mock04#33.4", "surface": "boundaries", "pos": "명사", "sense": "(책임·범위의) 한계, 범위" },
+   { "sid": "lesson-d3#21.0", "surface": "boundaries", "pos": "명사", "sense": "경계, 경계선" }
+  ]
+ },
+ {
+  "lemma": "brace",
+  "skip": null,
+  "word": "brace",
+  "pos": ["명사"],
+  "ipa": "breɪs",
+  "meaning": "중괄호 { } (curly brace)",
+  "short": "중괄호",
+  "senses": [
+   { "pos": "명사", "ko": "중괄호" },
+   { "pos": "동사", "ko": "(충격·어려움에) 대비하다" },
+   { "pos": "명사", "ko": "버팀대, 교정기" }
+  ],
+  "forms": ["braces"],
+  "synonyms": ["curly bracket"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "brainstorm",
+  "skip": null,
+  "word": "brainstorm",
+  "pos": ["동사"],
+  "ipa": "ˈbreɪnstɔːrm",
+  "meaning": "(아이디어를) 떠오르는 대로 끌어내다, 브레인스토밍하다",
+  "short": "아이디어를 떠올리다",
+  "senses": [
+   { "pos": "동사", "ko": "(아이디어를) 떠오르는 대로 끌어내다" },
+   { "pos": "명사", "ko": "브레인스토밍, 아이디어 짜내기" }
+  ],
+  "forms": ["brainstorms", "brainstormed", "brainstorming"],
+  "synonyms": ["ideate"],
+  "domain": "계획·목표·전략",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#11.0", "surface": "brainstorm", "pos": "동사", "sense": "(아이디어를) 떠오르는 대로 끌어내다" },
+   { "sid": "lesson-d3#11.4", "surface": "brainstorm", "pos": "명사", "sense": "브레인스토밍, 아이디어 짜내기" },
+   { "sid": "mock04#56.6", "surface": "Brainstorm", "pos": "동사", "sense": "(아이디어를) 떠오르는 대로 끌어내다" }
+  ]
+ },
+ {
+  "lemma": "branch",
+  "skip": null,
+  "word": "branch",
+  "pos": ["명사", "동사"],
+  "ipa": "bræntʃ",
+  "meaning": "① (git) 브랜치 ② 갈라지다, 분기하다",
+  "short": "브랜치, 분기하다",
+  "senses": [
+   { "pos": "명사", "ko": "(git·작업의) 브랜치, 갈래" },
+   { "pos": "동사", "ko": "(조건에 따라) 분기하다, 갈라지다" },
+   { "pos": "명사", "ko": "지점, 지사" },
+   { "pos": "명사", "ko": "나뭇가지" }
+  ],
+  "forms": ["branches", "branched", "branching"],
+  "synonyms": ["fork", "diverge"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#18.0", "surface": "branch", "pos": "명사", "sense": "(git·작업의) 브랜치, 갈래" },
+   { "sid": "lesson-d5#16.3", "surface": "branch", "pos": "동사", "sense": "(조건에 따라) 분기하다, 갈라지다" },
+   { "sid": "mock04#26.4", "surface": "branches", "pos": "명사", "sense": "(git·작업의) 브랜치, 갈래" },
+   { "sid": "lesson-d1#41.0", "surface": "branch", "pos": "명사", "sense": "(git·작업의) 브랜치, 갈래" }
+  ]
+ },
+ {
+  "lemma": "branch off",
+  "skip": null,
+  "word": "branch off",
+  "pos": ["동사구"],
+  "ipa": "ˌbræntʃ ˈɔːf",
+  "meaning": "(본줄기에서) 갈라져 나가다, 분기하다",
+  "short": "갈라져 나가다, 분기하다",
+  "senses": [
+   { "pos": "동사구", "ko": "(본줄기에서) 갈라져 나가다, 분기하다" }
+  ],
+  "forms": ["branches off", "branched off", "branching off"],
+  "synonyms": ["fork", "diverge", "split off"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#40.5", "surface": "branch off", "pos": "동사구", "sense": "(본줄기에서) 갈라져 나가다, 분기하다" },
+   { "sid": "mock04#20.5", "surface": "branch off", "pos": "동사구", "sense": "(본줄기에서) 갈라져 나가다, 분기하다" }
+  ]
+ },
+ {
+  "lemma": "brand-new",
+  "skip": null,
+  "word": "brand-new",
+  "pos": ["형용사"],
+  "ipa": "ˌbrænd ˈnuː",
+  "meaning": "완전히 새로운",
+  "short": "완전히 새로운",
+  "senses": [
+   { "pos": "형용사", "ko": "완전히 새로운" }
+  ],
+  "forms": [],
+  "synonyms": ["new", "fresh"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#29.4", "surface": "brand-new", "pos": "형용사", "sense": "완전히 새로운" },
+   { "sid": "mock04#20.4", "surface": "brand-new", "pos": "형용사", "sense": "완전히 새로운" }
+  ]
+ },
+ {
+  "lemma": "breadth",
+  "skip": null,
+  "word": "breadth",
+  "pos": ["명사"],
+  "ipa": "bredθ",
+  "meaning": "(다루는) 폭, 범위",
+  "short": "폭, 범위",
+  "senses": [
+   { "pos": "명사", "ko": "(다루는) 폭, 범위" },
+   { "pos": "명사", "ko": "(물리적) 너비, 폭" }
+  ],
+  "forms": [],
+  "synonyms": ["scope", "range", "extent"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:breadth.0", "surface": "breadth", "pos": "명사", "sense": "(다루는) 폭, 범위" }
+  ]
+ },
+ {
+  "lemma": "break",
+  "skip": null,
+  "word": "break",
+  "pos": ["동사", "명사"],
+  "ipa": "breɪk",
+  "meaning": "① (break into/down) 작은 부분으로 나누다 ② 깨다, 망가뜨리다 ③ (규칙·약속을) 어기다 ④ 휴식, 중단",
+  "short": "(작게) 나누다, 깨다",
+  "senses": [
+   { "pos": "동사", "ko": "(~ into/down) 작은 부분으로 나누다" },
+   { "pos": "동사", "ko": "깨다, 망가뜨리다" },
+   { "pos": "동사", "ko": "(규칙·약속을) 어기다" },
+   { "pos": "명사", "ko": "휴식, 중단" }
+  ],
+  "forms": ["breaks", "broke", "broken", "breaking"],
+  "synonyms": ["split", "divide", "decompose"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#9.6", "surface": "broke", "pos": "동사", "sense": "(~ into/down) 작은 부분으로 나누다" }
+  ]
+ },
+ {
+  "lemma": "breakpoint",
+  "skip": null,
+  "word": "breakpoint",
+  "pos": ["명사"],
+  "ipa": "ˈbreɪkpɔɪnt",
+  "meaning": "(캐시) 중단점 — 프롬프트에서 '여기까지 캐시하라'고 표시하는 지점 (cache_control) / (디버거) 중단점",
+  "short": "(캐시) 중단점",
+  "senses": [
+   { "pos": "명사", "ko": "(캐시) 중단점, 캐시 구분 지점" },
+   { "pos": "명사", "ko": "(디버거) 중단점" }
+  ],
+  "forms": ["breakpoints"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "brevity",
+  "skip": null,
+  "word": "brevity",
+  "pos": ["명사"],
+  "ipa": "ˈbrevəti",
+  "meaning": "간결함",
+  "short": "간결함",
+  "senses": [
+   { "pos": "명사", "ko": "간결함" },
+   { "pos": "명사", "ko": "(시간의) 짧음" }
+  ],
+  "forms": [],
+  "synonyms": ["conciseness", "succinctness"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#2.5", "surface": "brevity", "pos": "명사", "sense": "간결함" }
+  ]
+ },
+ {
+  "lemma": "brief",
+  "skip": null,
+  "word": "brief",
+  "pos": ["명사", "형용사"],
+  "ipa": "briːf",
+  "meaning": "① (작업) 의뢰, 과제 설명 ② 요약 보고서 ③ 짧은, 간단한",
+  "short": "간단한, 요약 보고서",
+  "senses": [
+   { "pos": "명사", "ko": "(작업) 의뢰, 과제 설명" },
+   { "pos": "명사", "ko": "요약 보고서" },
+   { "pos": "형용사", "ko": "짧은, 간단한" },
+   { "pos": "부사", "ko": "(-ly형) 잠깐, 간단히" }
+  ],
+  "forms": ["briefs", "briefly", "briefed", "briefing"],
+  "synonyms": ["short", "concise", "summary"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#25.1", "surface": "briefs", "pos": "명사", "sense": "(작업) 의뢰, 과제 설명" },
+   { "sid": "mock04#26.1", "surface": "brief", "pos": "명사", "sense": "요약 보고서" },
+   { "sid": "lesson-d5#5.4", "surface": "brief", "pos": "형용사", "sense": "짧은, 간단한" },
+   { "sid": "lesson-d4#15.1", "surface": "briefly", "pos": "부사", "sense": "(-ly형) 잠깐, 간단히" }
+  ]
+ },
+ {
+  "lemma": "broad",
+  "skip": null,
+  "word": "broad",
+  "pos": ["형용사"],
+  "ipa": "brɔːd",
+  "meaning": "넓은, 폭넓은",
+  "short": "넓은, 폭넓은",
+  "senses": [
+   { "pos": "형용사", "ko": "넓은, 폭넓은" },
+   { "pos": "형용사", "ko": "(가리지 않고) 포괄적인, 광범위한" },
+   { "pos": "형용사", "ko": "대략적인, 개괄적인" }
+  ],
+  "forms": ["broader", "broadest", "broadly", "breadth"],
+  "synonyms": ["wide", "general", "extensive"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#13.2", "surface": "broader", "pos": "형용사", "sense": "넓은, 폭넓은" },
+   { "sid": "lesson-d4#11.0", "surface": "broad", "pos": "형용사", "sense": "(가리지 않고) 포괄적인, 광범위한" },
+   { "sid": "mock04#25.5", "surface": "broader", "pos": "형용사", "sense": "넓은, 폭넓은" },
+   { "sid": "lesson-d1#5.5", "surface": "broader", "pos": "형용사", "sense": "넓은, 폭넓은" }
+  ]
+ },
+ {
+  "lemma": "bucket",
+  "skip": null,
+  "word": "bucket",
+  "pos": ["명사"],
+  "ipa": "ˈbʌkɪt",
+  "meaning": "버킷 — token bucket: 허용량이 일정한 속도로 다시 차오르는 한도 방식 / 양동이, 묶음",
+  "short": "버킷, 묶음",
+  "senses": [
+   { "pos": "명사", "ko": "(토큰 버킷) 다시 차오르는 허용량" },
+   { "pos": "명사", "ko": "(분류한) 묶음, 그룹" },
+   { "pos": "명사", "ko": "양동이" }
+  ],
+  "forms": ["buckets"],
+  "synonyms": ["group", "bin"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "budget",
+  "skip": null,
+  "word": "budget",
+  "pos": ["명사"],
+  "ipa": "ˈbʌdʒɪt",
+  "meaning": "예산 — (토큰·비용 등) 쓸 수 있게 정해 둔 한도",
+  "short": "(쓸 수 있는) 한도, 예산",
+  "senses": [
+   { "pos": "명사", "ko": "(토큰·시간의) 사용 한도, 예산" },
+   { "pos": "명사", "ko": "(돈의) 예산" },
+   { "pos": "동사", "ko": "예산을 세우다, 배분하다" }
+  ],
+  "forms": ["budgets", "budgeted", "budgeting"],
+  "synonyms": ["allowance", "limit", "allocation"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#9.5", "surface": "budget", "pos": "명사", "sense": "(토큰·시간의) 사용 한도, 예산" },
+   { "sid": "lesson-d4#35.3", "surface": "budget", "pos": "명사", "sense": "(토큰·시간의) 사용 한도, 예산" },
+   { "sid": "mock04#9.7", "surface": "budget", "pos": "명사", "sense": "(토큰·시간의) 사용 한도, 예산" }
+  ]
+ },
+ {
+  "lemma": "bug",
+  "skip": null,
+  "word": "bug",
+  "pos": ["명사"],
+  "ipa": "bʌɡ",
+  "meaning": "① (프로그램의) 버그, 결함 ② 벌레, 곤충 ③ 귀찮게 하다",
+  "short": "버그, 결함",
+  "senses": [
+   { "pos": "명사", "ko": "(프로그램의) 버그, 결함" },
+   { "pos": "명사", "ko": "벌레, 곤충" },
+   { "pos": "동사", "ko": "귀찮게 하다" }
+  ],
+  "forms": ["bugs", "buggy"],
+  "synonyms": ["defect", "error", "flaw"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#34.0", "surface": "bugs", "pos": "명사", "sense": "(프로그램의) 버그, 결함" },
+   { "sid": "lesson-d1#24.2", "surface": "bug", "pos": "명사", "sense": "(프로그램의) 버그, 결함" },
+   { "sid": "lesson-d3#26.6", "surface": "bugs", "pos": "명사", "sense": "(프로그램의) 버그, 결함" },
+   { "sid": "mock04#46.2", "surface": "bug", "pos": "명사", "sense": "(프로그램의) 버그, 결함" }
+  ]
+ },
+ {
+  "lemma": "build",
+  "skip": null,
+  "word": "build",
+  "pos": ["동사", "명사"],
+  "ipa": "bɪld",
+  "meaning": "① 만들다, 구축하다 ② (build on) ~을 바탕으로 만들다 ③ (이해·신뢰를) 쌓다 ④ (소프트웨어) 빌드",
+  "short": "만들다, 구축하다",
+  "senses": [
+   { "pos": "동사", "ko": "만들다, 구축하다" },
+   { "pos": "동사", "ko": "(~ on) ~을 바탕으로 만들다" },
+   { "pos": "동사", "ko": "(이해·신뢰를) 쌓다, 키우다" },
+   { "pos": "명사", "ko": "(소프트웨어) 빌드, 빌드 결과물" }
+  ],
+  "forms": ["builds", "built", "building", "builder"],
+  "synonyms": ["create", "construct", "develop"],
+  "domain": "생성·추가",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#1.0", "surface": "building", "pos": "동사", "sense": "만들다, 구축하다" },
+   { "sid": "lesson-d5#1.0", "surface": "built", "pos": "동사", "sense": "(~ on) ~을 바탕으로 만들다" },
+   { "sid": "lesson-d2#31.1", "surface": "build", "pos": "동사", "sense": "(이해·신뢰를) 쌓다, 키우다" },
+   { "sid": "sample01#1.0", "surface": "builds", "pos": "동사", "sense": "만들다, 구축하다" }
+  ]
+ }
+]

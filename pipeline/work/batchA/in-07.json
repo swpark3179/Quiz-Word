@@ -1,0 +1,1495 @@
+[
+ {
+  "lemma": "chatbot",
+  "kind": "new",
+  "surfaces": [
+   "chatbot"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "sample01#7.0",
+    "en": "A company is building three Claude integrations: (1) a simple FAQ chatbot for a marketing website, (2) a complex multi-step contract analysis agent that must identify subtle legal risks, (3) a high-volume document classification pipeline processing 50,000 documents per day."
+   }
+  ]
+ },
+ {
+  "lemma": "cheap",
+  "kind": "new",
+  "surfaces": [
+   "cheap",
+   "cheaper"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d1#6.4",
+    "en": "Add a cheap planning step where the coordinator assesses each ticket and invokes only the subagents it needs"
+   },
+   {
+    "sid": "lesson-d3#12.6",
+    "en": "Keep the style guide in CLAUDE.md and move the pnpm rule into a skill, since a one-line rule is cheap to load on demand"
+   },
+   {
+    "sid": "lesson-d5#2.7",
+    "en": "The summaries were written by a cheaper model; with the main model writing them, the facts would have survived"
+   }
+  ]
+ },
+ {
+  "lemma": "cheaply",
+  "kind": "new",
+  "surfaces": [
+   "cheaply"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#26.1",
+    "en": "You want an agent to list the components that have no test file, and to do it reliably and cheaply."
+   }
+  ]
+ },
+ {
+  "lemma": "check",
+  "kind": "new",
+  "surfaces": [
+   "checks",
+   "check",
+   "checking",
+   "checked"
+  ],
+  "freq": 45,
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.0",
+    "en": "An architect is defining a \"database-migration\" AgentDefinition with a long prompt field describing SQL best practices, rollback strategy, and data integrity checks."
+   },
+   {
+    "sid": "lesson-d2#21.1",
+    "en": "Every teammate has their own GitHub personal access token, and the config must be checked into the repo without ever committing a real secret."
+   },
+   {
+    "sid": "lesson-d3#10.0",
+    "en": "A project's `.claude/skills/review/SKILL.md` is checked into the repo for team-wide use."
+   },
+   {
+    "sid": "lesson-d4#21.1",
+    "en": "Which error can still reach your code and needs a check you write yourself?"
+   },
+   {
+    "sid": "lesson-d5#12.0",
+    "en": "In production, a hotel-booking support agent searches by guest name and check-in city and gets back two reservations with different booking references."
+   },
+   {
+    "sid": "mock04#17.1",
+    "en": "Asking Claude to \"make the input validation more robust and idiomatic\" yields inconsistent output across runs: sometimes it adds zod, sometimes hand-written checks, sometimes nothing meaningful."
+   },
+   {
+    "sid": "sample01#17.0",
+    "en": "A customer support agent has 14 tools: CRM lookup, order history, payment read, payment write, fraud check, compliance log, email send, SMS send, escalation, refund approve, refund reject, audit write, ticket create, ticket close."
+   },
+   {
+    "sid": "lesson-d1#24.0",
+    "en": "A developer implements a PreToolUse hook that gates the `process_refund` tool by checking a boolean flag `is_verified`."
+   }
+  ]
+ },
+ {
+  "lemma": "checkable",
+  "kind": "new",
+  "surfaces": [
+   "checkable"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#11.7",
+    "en": "Stop using either signal as a trigger: route on checkable conditions (customer asked for a human, no policy covers the request, no way forward), and track sentiment as an outcome from the start to the end of the conversation"
+   }
+  ]
+ },
+ {
+  "lemma": "checker",
+  "kind": "new",
+  "surfaces": [
+   "checker"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d1#15.0",
+    "en": "Style-checker, security-scanner and test-coverage reviews are independent of each other, and each takes about ten minutes."
+   },
+   {
+    "sid": "lesson-d1#6.0",
+    "en": "Your ticket-triage system sends every ticket through five subagents: classifier, sentiment analyzer, knowledge-base search, summarizer and escalation checker."
+   },
+   {
+    "sid": "lesson-d1#8.0",
+    "en": "A support-ticket triage system always invokes a full pipeline of five subagents (classifier, sentiment analyzer, knowledge-base search, summarizer, and escalation checker) for every incoming ticket, including simple one-line requests that only need classification."
+   }
+  ]
+ },
+ {
+  "lemma": "checklist",
+  "kind": "vocab-core",
+  "surfaces": [
+   "checklist"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "checklist",
+   "word": "checklist",
+   "pos": "명사",
+   "ipa": "ˈtʃeklɪst",
+   "meaning": "체크리스트, 점검 목록"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#8.3",
+    "en": "Expand the rubric into a longer numbered checklist, naming each output field with its position and formatting rule"
+   },
+   {
+    "sid": "lesson-d5#28.3",
+    "en": "A Markdown checklist that every agent edits freely, ticking items and rewriting notes as it goes"
+   },
+   {
+    "sid": "mock04#52.6",
+    "en": "Add more detailed quality criteria, such as an assertion-strength checklist, to the existing session's review prompt"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:checklist.0",
+    "en": "Add more detailed quality criteria, such as an assertion-strength checklist, to the existing session's review prompt",
+    "ko": "기존 세션의 리뷰 프롬프트에 assertion 강도 체크리스트 같은 더 상세한 품질 기준을 추가한다"
+   }
+  ]
+ },
+ {
+  "lemma": "checkout",
+  "kind": "vocab-core",
+  "surfaces": [
+   "checkout"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "checkout",
+   "word": "checkout",
+   "pos": "명사",
+   "ipa": "ˈtʃekaʊt",
+   "meaning": "① (git) 체크아웃 — 저장소에서 꺼내 놓은 작업 사본 ② (쇼핑) 결제 단계"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#26.0",
+    "en": "In a checkout module, orderTotal() calls applyDiscount() and addTax() internally."
+   },
+   {
+    "sid": "mock04#11.2",
+    "en": "Everything works for the lead, but three newly onboarded engineers who cloned the repo report that Claude Code ignores the conventions entirely, even though `git status` shows a clean checkout."
+   },
+   {
+    "sid": "selfcheck-d3-kor#3.1",
+    "en": "checkout의 파일만 — 가장 가까운 하나가 나머지를 대체한다"
+   },
+   {
+    "sid": "mock04#48.2",
+    "en": "In CI on a clean checkout, the generated tests ignore those conventions."
+   },
+   {
+    "sid": "lesson-d3#30.6",
+    "en": "The checkout used a shallow fetch-depth, so the CLI could not resolve the diff against the base branch and sat scanning the git history for missing commits"
+   },
+   {
+    "sid": "selfcheck-d3-kor#3.2",
+    "en": "`~/shop/CLAUDE.md`와 checkout의 CLAUDE.md"
+   },
+   {
+    "sid": "mock04#48.8",
+    "en": "Move the conventions into the project's committed .claude/CLAUDE.md so each checkout, local or CI, loads them"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:checkout.0",
+    "en": "In CI on a clean checkout, the generated tests ignore those conventions.",
+    "ko": "그런데 깨끗한 체크아웃 상태의 CI에서는 생성된 테스트가 이 컨벤션을 무시합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "checkpoint",
+  "kind": "new",
+  "surfaces": [
+   "checkpoint"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "selfcheck-d5-kor#22.1",
+    "en": "매니페스트를 읽어 완료 작업은 결과 요약만 주입하고, 진행 중 작업은 checkpoint와 부분 결과를 프롬프트에 넣어 이어 가게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "chip",
+  "kind": "new",
+  "surfaces": [
+   "chip"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d1#16.0",
+    "en": "A coordinator delegates market research with a script: \"Search 'chip shortage 2025', open the top five results, summarise each, then search 'chip prices'.\""
+   }
+  ]
+ },
+ {
+  "lemma": "choice",
+  "kind": "new",
+  "surfaces": [
+   "choice"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d2#18.1",
+    "en": "Currently, every subagent is configured with the full union of all tools used anywhere in the pipeline, so each has around 15 tools available, and each agent's tool choice is left at {\"type\": \"auto\"} in every turn."
+   },
+   {
+    "sid": "lesson-d3#22.4",
+    "en": "Plan mode first, because the hard part is choosing between valid approaches, and that choice should be settled before any edits"
+   },
+   {
+    "sid": "lesson-d4#9.3",
+    "en": "Two to four examples built around ambiguous requests like this one, each giving the chosen tool and the reason the other tool was the worse choice"
+   },
+   {
+    "sid": "lesson-d4#9.6",
+    "en": "One line in the instructions saying \"always prefer `search_code`\", with no examples, so the choice is always the same"
+   }
+  ]
+ },
+ {
+  "lemma": "choose",
+  "kind": "new",
+  "surfaces": [
+   "choosing",
+   "chosen",
+   "chose",
+   "chooses",
+   "choose"
+  ],
+  "freq": 18,
+  "sentences": [
+   {
+    "sid": "lesson-d1#5.1",
+    "en": "Three turns earlier in the main conversation, the user chose a specific authentication provider."
+   },
+   {
+    "sid": "lesson-d2#1.2",
+    "en": "Which change can actually affect which tool Claude chooses?"
+   },
+   {
+    "sid": "lesson-d5#16.2",
+    "en": "Which payload best lets the coordinator choose how to recover?"
+   },
+   {
+    "sid": "lesson-d3#10.5",
+    "en": "Both skills execute in sequence, first the personal skill and then the project skill, since Claude Code merges same-named skills rather than choosing one."
+   },
+   {
+    "sid": "lesson-d4#10.3",
+    "en": "Replace the twenty pairs with a handful of examples chosen to show the reasoning behind the labels"
+   },
+   {
+    "sid": "mock04#24.6",
+    "en": "tool_choice is forced to a specific tool, which prevents the coordinator from ever choosing to delegate work"
+   },
+   {
+    "sid": "lesson-d1#5.6",
+    "en": "Have the coordinator write the user's chosen provider into the prompt it sends when delegating the task"
+   },
+   {
+    "sid": "lesson-d2#14.3",
+    "en": "Split it into specialised agents, each choosing from about 4–5 tools for its stage"
+   }
+  ]
+ },
+ {
+  "lemma": "chunk",
+  "kind": "vocab-core",
+  "surfaces": [
+   "chunked",
+   "chunks",
+   "chunk"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "chunk",
+   "word": "chunk",
+   "pos": "명사·동사",
+   "ipa": "tʃʌŋk",
+   "meaning": "청크, 조각 — 큰 데이터를 나눈 한 덩어리 / 조각으로 나누다"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#21.4",
+    "en": "Split the document into 10k chunks and cache each chunk separately"
+   },
+   {
+    "sid": "sample01#6.5",
+    "en": "The PDFs should be chunked into 1,000-token segments before ingestion"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:chunk.0",
+    "en": "Split the document into 10k chunks and cache each chunk separately",
+    "ko": "문서를 1만 토큰 청크로 나눠 각각 따로 캐시한다"
+   },
+   {
+    "vid": "vocab:chunk.1",
+    "en": "The PDFs should be chunked into 1,000-token segments before ingestion",
+    "ko": "PDF를 수집 전에 1,000토큰 단위로 쪼개야 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "ci",
+  "kind": "vocab-core",
+  "surfaces": [
+   "ci",
+   "continuous integration"
+  ],
+  "freq": 51,
+  "vocab": {
+   "id": "ci",
+   "word": "CI",
+   "pos": "약어",
+   "ipa": "ˌsiːˈaɪ",
+   "meaning": "CI(지속적 통합) — 커밋마다 빌드·테스트를 자동으로 돌리는 파이프라인"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#38.1",
+    "en": "A CI job on a fresh ephemeral build host then runs `claude -r \"auth-refactor\" \"Finish this PR\"`."
+   },
+   {
+    "sid": "lesson-d3#31.0",
+    "en": "You want a CI review job in which any tool call you have not pre-approved is refused, not left waiting."
+   },
+   {
+    "sid": "mock04#40.2",
+    "en": "The team wants the server config to stay shared and version-controlled, but each engineer (and CI) must supply their own credential without leaking it."
+   },
+   {
+    "sid": "sample01#13.5",
+    "en": "Configure commands via environment variables in the CI pipeline"
+   },
+   {
+    "sid": "mock04-kor#40.1",
+    "en": "보안 스캔 결과, 팀이 커밋한 `.mcp.json` 에 MCP 서버가 쓰는 GitHub 개인 액세스 토큰이 하드코딩되어 있다는 경고가 나왔습니다. 팀은 서버 설정을 계속 공유하고 버전 관리하기를 원하지만, 각 엔지니어(와 CI)는 유출 없이 각자의 자격 증명을 제공해야 합니다. 팀이 해야 할 일은 무엇일까요?"
+   },
+   {
+    "sid": "selfcheck-d3-kor#33.0",
+    "en": "CI 작업이 테스트 실행(`npm test`)과 파일 편집만 하도록, 그 밖에 승인이 필요한 행동은 기다리지도 실행하지도 않게 하려 한다. 가장 알맞은 조합은?"
+   },
+   {
+    "sid": "selfcheck-d4-kor#6.0",
+    "en": "관리형 Code Review가 lockfile, `src/gen/`의 생성 코드, 이미 CI 린터가 잡는 포맷 문제까지 지적해 소음이 크다. 가장 알맞은 조치는?"
+   },
+   {
+    "sid": "sample01-kor#13.2",
+    "en": "CI 파이프라인의 환경 변수로 커맨드를 설정한다."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:ci.0",
+    "en": "The team wants the server config to stay shared and version-controlled, but each engineer (and CI) must supply their own credential without leaking it.",
+    "ko": "팀은 서버 설정을 계속 공유하고 버전 관리하기를 원하지만, 각 엔지니어(와 CI)는 유출 없이 각자의 자격 증명을 제공해야 합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "circumstance",
+  "kind": "vocab-core",
+  "surfaces": [
+   "circumstances"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "circumstance",
+   "word": "circumstance",
+   "pos": "명사",
+   "ipa": "ˈsɜːrkəmstæns",
+   "meaning": "상황, 사정"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#12.0",
+    "en": "An engineer wants to prevent Claude Code from running `rm -rf` or `git push --force` commands under any circumstances, even if asked."
+   },
+   {
+    "sid": "lesson-d1#29.3",
+    "en": "In the tool's own MCP server definition, since PreToolUse hooks cannot inspect individual tool arguments under any circumstances"
+   },
+   {
+    "sid": "mock04#30.6",
+    "en": "Add a system-prompt line instructing the synthesis subagent never to call web_search or parse_pdf under any circumstances."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:circumstance.0",
+    "en": "An engineer wants to prevent Claude Code from running `rm -rf` or `git push --force` commands under any circumstances, even if asked.",
+    "ko": "엔지니어가 Claude Code가 어떤 상황에서도, 요청을 받더라도 `rm -rf` 나 `git push --force` 를 실행하지 못하게 하려고 합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "cite",
+  "kind": "vocab-core",
+  "surfaces": [
+   "cites",
+   "citations",
+   "uncited",
+   "citation",
+   "cite",
+   "citing"
+  ],
+  "freq": 16,
+  "vocab": {
+   "id": "cite",
+   "word": "cite",
+   "pos": "동사",
+   "ipa": "saɪt",
+   "meaning": "인용하다, (근거로) 들다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#14.1",
+    "en": "The synthesis subagent's report comes back generic and cites none of the sources the researcher found."
+   },
+   {
+    "sid": "lesson-d5#38.0",
+    "en": "During a competitive-intelligence synthesis, two subagents report different figures for a competitor's annual revenue: one cites a press release stating $420 million, the other cites an analyst report stating $460 million."
+   },
+   {
+    "sid": "mock04#28.2",
+    "en": "This week the report cites last week's prices as current, because the resumed session replays cached web-search tool results."
+   },
+   {
+    "sid": "selfcheck-d5-kor#34.0",
+    "en": "Claude API의 Citations 기능에 대한 설명으로 옳은 것은?"
+   },
+   {
+    "sid": "mock04#34.2",
+    "en": "The report-generation subagent can then no longer attach citations, and 40% of the report's sentences ship uncited."
+   },
+   {
+    "sid": "lesson-d1#10.3",
+    "en": "Keep the prose handoff, and add \"always cite your sources\" to the synthesis subagent's system prompt in its AgentDefinition"
+   },
+   {
+    "sid": "lesson-d5#38.6",
+    "en": "Report $440 million (average of the two figures) for revenue, and cite both sources as its basis"
+   },
+   {
+    "sid": "selfcheck-d5-kor#34.2",
+    "en": "문서에 citations를 켠 요청에 `output_config.format`을 함께 보내면 400 오류가 난다"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:cite.0",
+    "en": "...the synthesis agent reliably cites the first 15K tokens and the final 10K tokens, but frequently omits critical findings in the middle 50K tokens.",
+    "ko": "합성 에이전트는 처음 15K와 마지막 10K 토큰은 꾸준히 인용하지만, 중간 50K 토큰의 중요한 발견은 자주 빠뜨린다."
+   }
+  ]
+ },
+ {
+  "lemma": "city",
+  "kind": "new",
+  "surfaces": [
+   "city"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#12.0",
+    "en": "In production, a hotel-booking support agent searches by guest name and check-in city and gets back two reservations with different booking references."
+   }
+  ]
+ },
+ {
+  "lemma": "claim",
+  "kind": "vocab-core",
+  "surfaces": [
+   "claims",
+   "claim",
+   "claiming"
+  ],
+  "freq": 29,
+  "vocab": {
+   "id": "claim",
+   "word": "claim",
+   "pos": "명사·동사",
+   "ipa": "kleɪm",
+   "meaning": "① 주장(하다) — 사실이라고 내세우다 ② (보험금) 청구(건) — claims agent: 청구 처리 에이전트"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.1",
+    "en": "The final report makes the right claims but can't say which URL, document or page any claim came from."
+   },
+   {
+    "sid": "lesson-d4#33.0",
+    "en": "An insurer's claims agent calls the company's own policy-database lookup tool, reads what comes back, and then decides on its next step, often over several turns."
+   },
+   {
+    "sid": "lesson-d5#13.0",
+    "en": "An airline support agent searches for a passenger by name and flight route to check a baggage claim."
+   },
+   {
+    "sid": "mock04#34.1",
+    "en": "The synthesis subagent merges findings from the web-search and document-analysis subagents into a unified narrative but drops the record of which source each claim came from."
+   },
+   {
+    "sid": "sample01#10.1",
+    "en": "In production, subagents consistently fail because they claim they 'have no context' about the task."
+   },
+   {
+    "sid": "lesson-d2#7.5",
+    "en": "Consolidation fits several actions on one resource that share a contract, like create, review and merge on a pull request. Extraction, summarization and claim verification take different inputs and return different outputs, so each needs its own tool and description."
+   },
+   {
+    "sid": "lesson-d5#19.2",
+    "en": "The coordinator later synthesizes a report claiming full regulatory coverage."
+   },
+   {
+    "sid": "sample01#2.0",
+    "en": "An agentic pipeline processes insurance claims."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:claim.0",
+    "en": "The final report makes the right claims but can't say which URL, document or page any claim came from.",
+    "ko": "최종 보고서는 주장 자체는 맞지만, 어느 주장이 어떤 URL·문서·쪽에서 왔는지 말하지 못한다."
+   },
+   {
+    "vid": "vocab:claim.1",
+    "en": "An insurance company's intake service sends each new claim email to Claude...",
+    "ko": "한 보험사의 접수 서비스는 새 청구 이메일을 Claude에 보낸다."
+   }
+  ]
+ },
+ {
+  "lemma": "claim-to-source",
+  "kind": "vocab-core",
+  "surfaces": [
+   "claim-to-source"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "claim-to-source",
+   "word": "claim-to-source",
+   "pos": "형용사",
+   "ipa": "ˌkleɪm tə ˈsɔːrs",
+   "meaning": "주장-출처 (대응)의 — 각 주장과 그 근거 출처를 짝지은"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#34.5",
+    "en": "Preserve claim-to-source mappings through synthesis so each claim carries its originating sources into report generation."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:claim-to-source.0",
+    "en": "Preserve claim-to-source mappings through synthesis so each claim carries its originating sources into report generation.",
+    "ko": "종합 단계를 거치는 동안 주장과 출처의 매핑을 보존해, 각 주장이 원래 출처를 달고 보고서 생성 단계까지 가게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "clarify",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "clarify",
+   "word": "clarify",
+   "pos": "동사",
+   "ipa": "ˈklærəfaɪ",
+   "meaning": "명확히 하다, (모호한 점을) 분명히 묻다"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:clarify.0",
+    "en": "Add instructions to the agent's prompt clarifying it should only use `fetch_url` for loading document URLs, not searching.",
+    "ko": "에이전트 프롬프트에 `fetch_url` 은 문서 URL 로딩에만 쓰고 검색에는 쓰지 말라고 분명히 밝히는 지침을 추가한다."
+   },
+   {
+    "vid": "vocab:clarify.1",
+    "en": "...infer the correct customer without clarification.",
+    "ko": "되묻지 않고 올바른 고객을 추론한다."
+   }
+  ]
+ },
+ {
+  "lemma": "class",
+  "kind": "new",
+  "surfaces": [
+   "class",
+   "classes"
+  ],
+  "freq": 11,
+  "sentences": [
+   {
+    "sid": "lesson-d4#14.2",
+    "en": "Which change removes this whole class of failure?"
+   },
+   {
+    "sid": "lesson-d5#22.1",
+    "en": "When asked about a class it examined in detail early on, it now describes what such a class typically looks like, and its two latest answers about that component disagree."
+   },
+   {
+    "sid": "lesson-d5#25.1",
+    "en": "Hours later, asked about OrderService, it describes a generic service class and does not mention TransactionalBase."
+   },
+   {
+    "sid": "lesson-d5#27.1",
+    "en": "Early on, the agent correctly identified that OrderService extends a custom TransactionalBase class with a distinctive retry mechanism."
+   },
+   {
+    "sid": "lesson-d5#22.5",
+    "en": "Have the agent re-read the whole repository so the class details are fresh in its context again"
+   },
+   {
+    "sid": "lesson-d5#25.6",
+    "en": "Run /compact focused on OrderService so the summary keeps the class details in the main context"
+   },
+   {
+    "sid": "lesson-d5#27.4",
+    "en": "Have the agent save class names and base classes it discovers to a notes file, so it can read them before answering questions."
+   },
+   {
+    "sid": "lesson-d5#27.5",
+    "en": "Raise the session's maximum output token limit, so the agent can lay out each class hierarchy in full before answering questions."
+   }
+  ]
+ },
+ {
+  "lemma": "classifier",
+  "kind": "vocab-core",
+  "surfaces": [
+   "classifier"
+  ],
+  "freq": 9,
+  "vocab": {
+   "id": "classifier",
+   "word": "classifier",
+   "pos": "명사",
+   "ipa": "ˈklæsɪfaɪər",
+   "meaning": "분류기 — 입력을 정해진 범주로 나누는 모델·규칙"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#6.0",
+    "en": "Your ticket-triage system sends every ticket through five subagents: classifier, sentiment analyzer, knowledge-base search, summarizer and escalation checker."
+   },
+   {
+    "sid": "sample01#14.0",
+    "en": "A support ticket classifier consistently misclassifies tickets."
+   },
+   {
+    "sid": "mock04#1.8",
+    "en": "Run a lightweight intent classifier over each assistant message to decide whether the turn is a genuine completion."
+   },
+   {
+    "sid": "lesson-d1#6.5",
+    "en": "Remove the coordinator and let the classifier call the other subagents directly when it thinks they are needed"
+   },
+   {
+    "sid": "mock04#29.7",
+    "en": "Have a separate classifier judge after every assistant message whether the report is truly finished"
+   },
+   {
+    "sid": "lesson-d1#8.6",
+    "en": "Remove the coordinator entirely and let the classifier subagent directly invoke the remaining subagents it deems necessary."
+   },
+   {
+    "sid": "mock04#50.7",
+    "en": "Train a sentiment classifier on developer reactions and suppress whichever categories draw negative responses overall"
+   },
+   {
+    "sid": "mock04#56.5",
+    "en": "Fine-tune a dedicated document-type classifier and run it before extraction to assign the type to every document."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:classifier.0",
+    "en": "Add a pre-routing classifier that determines whether the user references uploaded files or web content.",
+    "ko": "사용자가 업로드한 파일을 말하는지 웹 콘텐츠를 말하는지 판별하는 사전 라우팅 분류기를 추가한다."
+   }
+  ]
+ },
+ {
+  "lemma": "classify",
+  "kind": "vocab-core",
+  "surfaces": [
+   "classification",
+   "classify",
+   "classified",
+   "classifies",
+   "classifying"
+  ],
+  "freq": 22,
+  "vocab": {
+   "id": "classify",
+   "word": "classify",
+   "pos": "동사",
+   "ipa": "ˈklæsɪfaɪ",
+   "meaning": "분류하다 — 기준에 따라 정해진 갈래로 나누다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#6.1",
+    "en": "Token costs are too high, and most one-line tickets only need classifying."
+   },
+   {
+    "sid": "lesson-d4#10.0",
+    "en": "A team built a classification prompt with twenty exact input-output pairs, one for every edge case they had personally encountered in their historical data."
+   },
+   {
+    "sid": "mock04#31.2",
+    "en": "Relying on a prompt instruction, it skips classification in 9% of runs and extracts against the wrong schema."
+   },
+   {
+    "sid": "sample01#14.1",
+    "en": "The system prompt says: 'Classify each support ticket as the appropriate category.'"
+   },
+   {
+    "sid": "mock04-kor#31.0",
+    "en": "시스템 프롬프트를 강조형 \"ALWAYS classify before extracting\" 규칙과 풀이 예시 두 개로 강화한다."
+   },
+   {
+    "sid": "lesson-d4#12.0",
+    "en": "A team adds five few-shot examples to a document-classification prompt to fix inconsistent labeling."
+   },
+   {
+    "sid": "sample01#14.2",
+    "en": "In testing, 'app crashes on login' is classified as bug, feature_request, and question in different runs."
+   },
+   {
+    "sid": "mock04#31.6",
+    "en": "Strengthen the system prompt with an emphatic \"ALWAYS classify before extracting\" rule plus two worked examples."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:classify.0",
+    "en": "...(3) a high-volume document classification pipeline processing 50,000 documents per day.",
+    "ko": "...(3) 하루 5만 건을 처리하는 대량 문서 분류 파이프라인."
+   }
+  ]
+ },
+ {
+  "lemma": "clause",
+  "kind": "new",
+  "surfaces": [
+   "clauses"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#15.1",
+    "en": "The system prompt also says: \"Before calling the tool, briefly explain which clauses look ambiguous.\""
+   }
+  ]
+ },
+ {
+  "lemma": "clean",
+  "kind": "new",
+  "surfaces": [
+   "clean"
+  ],
+  "freq": 9,
+  "sentences": [
+   {
+    "sid": "mock04#11.2",
+    "en": "Everything works for the lead, but three newly onboarded engineers who cloned the repo report that Claude Code ignores the conventions entirely, even though `git status` shows a clean checkout."
+   },
+   {
+    "sid": "lesson-d2#12.4",
+    "en": "Only the enriched records, leaving the failed customers out so the coordinator receives a clean batch"
+   },
+   {
+    "sid": "lesson-d5#15.5",
+    "en": "Keep the schema to findings only, and write source failures to a separate operator log so the report stays clean"
+   },
+   {
+    "sid": "sample01#10.6",
+    "en": "Each spawned agent starts with a clean empty message history — context must be passed explicitly"
+   },
+   {
+    "sid": "mock04#47.2",
+    "en": "It consistently rates its own output clean, yet human reviewers keep finding real bugs it missed."
+   },
+   {
+    "sid": "lesson-d5#37.2",
+    "en": "Return only the figure from the source it judges more authoritative, so the coordinator gets one clean value"
+   },
+   {
+    "sid": "mock04#48.2",
+    "en": "In CI on a clean checkout, the generated tests ignore those conventions."
+   },
+   {
+    "sid": "mock04#26.5",
+    "en": "Start two fresh sessions and re-run the search subagents in each so that both start from clean state"
+   }
+  ]
+ },
+ {
+  "lemma": "cleanly",
+  "kind": "vocab-core",
+  "surfaces": [
+   "cleanly"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "cleanly",
+   "word": "cleanly",
+   "pos": "부사",
+   "ipa": "ˈkliːnli",
+   "meaning": "깔끔하게, (섞이거나 꼬이지 않고) 깨끗이"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#19.1",
+    "en": "Instead of surfacing the failure, the subagent returns an empty findings list with status 'success' so the pipeline continues cleanly."
+   },
+   {
+    "sid": "mock04#16.4",
+    "en": "Run each of the three changes in its own fresh session so every edit stays cleanly isolated from the others"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:cleanly.0",
+    "en": "Run each of the three changes in its own fresh session so every edit stays cleanly isolated from the others",
+    "ko": "세 변경을 각각 새 세션에서 실행해, 모든 수정이 서로 깔끔하게 격리되도록 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "cleanup",
+  "kind": "new",
+  "surfaces": [
+   "cleanup"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#1.0",
+    "en": "An architect is building a client-side agent loop against the Messages API for a data-cleanup task."
+   }
+  ]
+ },
+ {
+  "lemma": "clear",
+  "kind": "new",
+  "surfaces": [
+   "clear",
+   "clearer",
+   "clears",
+   "clearing"
+  ],
+  "freq": 8,
+  "sentences": [
+   {
+    "sid": "lesson-d1#28.4",
+    "en": "Move the message into the top-level systemMessage field so the agent sees a clearer explanation."
+   },
+   {
+    "sid": "lesson-d2#12.2",
+    "en": "Nothing yet: the subagent first retries the permission failures with backoff, then reports once they clear"
+   },
+   {
+    "sid": "lesson-d3#13.7",
+    "en": "Keep the conventions in CLAUDE.md but group them under clear markdown headers so Claude can skip them"
+   },
+   {
+    "sid": "lesson-d5#31.4",
+    "en": "Send weight values to a human reviewer when the document gives no clear unit, and let weights with a clearly stated unit continue to the output without review."
+   },
+   {
+    "sid": "mock04#33.4",
+    "en": "Expand and differentiate both tool descriptions with input formats, example queries, source coverage, and clear boundaries."
+   },
+   {
+    "sid": "selfcheck-d5-kor#6.0",
+    "en": "context editing의 tool result clearing(`clear_tool_uses_20250919`)에 대한 설명으로 옳은 것은?"
+   },
+   {
+    "sid": "lesson-d2#13.7",
+    "en": "Return the batch after retrying the 3 failed lookups with exponential backoff and the same credentials, until the permission error clears"
+   },
+   {
+    "sid": "lesson-d5#6.3",
+    "en": "Open the combined input with a short summary of each subagent's key findings, and give each detailed section its own clear heading"
+   }
+  ]
+ },
+ {
+  "lemma": "clear-cut",
+  "kind": "vocab-core",
+  "surfaces": [
+   "clear-cut"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "clear-cut",
+   "word": "clear-cut",
+   "pos": "형용사",
+   "ipa": "ˌklɪr ˈkʌt",
+   "meaning": "명백한, 판단이 분명한"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#51.1",
+    "en": "The CI reviewer handles clear-cut defects well but is inconsistent on genuinely ambiguous cases — for example, whether a bare `except:` is acceptable in a one-off script versus a shared library."
+   },
+   {
+    "sid": "lesson-d4#9.4",
+    "en": "Several clear-cut examples, such as \"open the API docs page\" → `search_docs`, so the model sees each tool used correctly"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:clear-cut.0",
+    "en": "The CI reviewer handles clear-cut defects well but is inconsistent on genuinely ambiguous cases...",
+    "ko": "CI 리뷰어는 명백한 결함은 잘 처리하지만, 진짜로 모호한 사례에서는 판정이 일관되지 않습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "clearly",
+  "kind": "new",
+  "surfaces": [
+   "clearly"
+  ],
+  "freq": 6,
+  "sentences": [
+   {
+    "sid": "lesson-d2#18.2",
+    "en": "The team reports agents occasionally reaching for tools clearly outside their remit, like the QA agent invoking a deploy tool."
+   },
+   {
+    "sid": "lesson-d5#9.1",
+    "en": "A patient messages the assistant in a clearly irritated tone about needing to reschedule a routine appointment with no clinical urgency."
+   },
+   {
+    "sid": "lesson-d1#28.6",
+    "en": "Remove the hook and add the escalation instruction to the system prompt, because the agent clearly ignores the hook."
+   },
+   {
+    "sid": "lesson-d4#13.3",
+    "en": "Add more examples with exact numeric doses so the model sees even more clearly what a correct extraction looks like"
+   },
+   {
+    "sid": "lesson-d4#24.6",
+    "en": "Re-render the scan at higher resolution and rerun extraction, so the model can read the project_code field more clearly"
+   },
+   {
+    "sid": "lesson-d5#31.4",
+    "en": "Send weight values to a human reviewer when the document gives no clear unit, and let weights with a clearly stated unit continue to the output without review."
+   }
+  ]
+ },
+ {
+  "lemma": "cli",
+  "kind": "vocab-core",
+  "surfaces": [
+   "cli"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "cli",
+   "word": "CLI",
+   "pos": "약어",
+   "ipa": "ˌsiː.elˈaɪ",
+   "meaning": "CLI(명령줄 인터페이스) — 터미널에 명령어를 입력해 쓰는 방식"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#30.4",
+    "en": "The step ran claude without the -p flag, so the CLI opened its interactive session and waited for keyboard input that the runner cannot provide"
+   },
+   {
+    "sid": "lesson-d3#30.5",
+    "en": "The workflow stored ANTHROPIC_API_KEY as a secret but never exposed it to the step, so the CLI kept retrying authentication in a loop until the timeout"
+   },
+   {
+    "sid": "lesson-d3#30.6",
+    "en": "The checkout used a shallow fetch-depth, so the CLI could not resolve the diff against the base branch and sat scanning the git history for missing commits"
+   },
+   {
+    "sid": "lesson-d3#30.7",
+    "en": "The runner's Node.js version is older than the CLI supports, so the process stayed running while failing to parse its own command-line arguments"
+   }
+  ]
+ },
+ {
+  "lemma": "client",
+  "kind": "new",
+  "surfaces": [
+   "client",
+   "clients"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d1#1.0",
+    "en": "An architect is building a client-side agent loop against the Messages API for a data-cleanup task."
+   },
+   {
+    "sid": "lesson-d3#23.1",
+    "en": "They don't yet know how cache invalidation, conflicting edits or clients dropping mid-edit should be handled."
+   },
+   {
+    "sid": "mock04#43.1",
+    "en": "The agent is asked to rename a shared constant throughout a generated client file."
+   },
+   {
+    "sid": "lesson-d4#33.6",
+    "en": "Batch the whole agent with stream: true, so the client can catch each tool_use block and send back a tool_result while the request is still running"
+   },
+   {
+    "sid": "sample01#8.3",
+    "en": "Enable verbose logging on the Anthropic API client"
+   }
+  ]
+ },
+ {
+  "lemma": "clinical",
+  "kind": "vocab-core",
+  "surfaces": [
+   "clinical"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "clinical",
+   "word": "clinical",
+   "pos": "형용사",
+   "ipa": "ˈklɪnɪkl",
+   "meaning": "임상의, 진료의 (clinical judgment: 의료적 판단)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#13.0",
+    "en": "Clinical intake notes say things like \"a couple tablets\" or \"about half a cup\"."
+   },
+   {
+    "sid": "lesson-d5#9.1",
+    "en": "A patient messages the assistant in a clearly irritated tone about needing to reschedule a routine appointment with no clinical urgency."
+   },
+   {
+    "sid": "lesson-d5#9.0",
+    "en": "A healthcare scheduling assistant follows a configured escalation policy: when a request is within the assistant's capability and the patient has not asked for a staff member, the assistant should acknowledge any expressed frustration, complete the request directly, and offer escalation to a staff member as an option rather than a requirement -- reserving mandatory escalation for requests it cannot complete, cases needing clinical judgment, or an explicit request for a human."
+   }
+  ]
+ },
+ {
+  "lemma": "clock",
+  "kind": "new",
+  "surfaces": [
+   "clock"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#28.0",
+    "en": "Contracts arrive around the clock, and stakeholders have been promised every extraction result within 30 hours of a contract's arrival."
+   }
+  ]
+ },
+ {
+  "lemma": "clone",
+  "kind": "vocab-core",
+  "surfaces": [
+   "cloned",
+   "clone",
+   "cloning",
+   "clones"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "clone",
+   "word": "clone",
+   "pos": "동사·명사",
+   "ipa": "kloʊn",
+   "meaning": "(저장소를) 복제하다, 클론하다 / 복제본"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#11.2",
+    "en": "Everything works for the lead, but three newly onboarded engineers who cloned the repo report that Claude Code ignores the conventions entirely, even though `git status` shows a clean checkout."
+   },
+   {
+    "sid": "mock04#45.2",
+    "en": "A newly onboarded teammate clones the same repository, but the tool ignores those conventions for him."
+   },
+   {
+    "sid": "mock04#11.4",
+    "en": "Add an `@import` to the repo-root CLAUDE.md pointing at `~/.claude/CLAUDE.md` so each clone pulls in the personal file"
+   },
+   {
+    "sid": "mock04#11.5",
+    "en": "Have each engineer run /memory after cloning so the user-scoped memory files are force-reloaded from the lead's profile"
+   },
+   {
+    "sid": "mock04#11.6",
+    "en": "Move the conventions into the project-scoped .claude/CLAUDE.md (or repo root) so they are committed to version control and load for every clone"
+   },
+   {
+    "sid": "mock04#45.7",
+    "en": "Register the conventions in a `.claude/config.json` commands array so that they sync with the repository on clone"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:clone.0",
+    "en": "A newly onboarded teammate clones the same repository, but the tool ignores those conventions for him.",
+    "ko": "새로 합류한 팀원이 같은 저장소를 클론했지만, 그의 환경에서는 도구가 그 규칙을 무시합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "close",
+  "kind": "new",
+  "surfaces": [
+   "close",
+   "closing",
+   "closes",
+   "closed",
+   "closer"
+  ],
+  "freq": 7,
+  "sentences": [
+   {
+    "sid": "lesson-d5#40.1",
+    "en": "The coordinator initially treats this as a contradiction requiring reconciliation, but on closer inspection the two figures come from reports published fourteen months apart."
+   },
+   {
+    "sid": "mock04#1.2",
+    "en": "The engineering team wrote a wrapper loop that ends the conversation whenever the assistant's text matches a closing phrase like \"let me know if there's anything else.\""
+   },
+   {
+    "sid": "sample01#17.0",
+    "en": "A customer support agent has 14 tools: CRM lookup, order history, payment read, payment write, fraud check, compliance log, email send, SMS send, escalation, refund approve, refund reject, audit write, ticket create, ticket close."
+   },
+   {
+    "sid": "lesson-d1#22.7",
+    "en": "Hook B fails closed, and it should allow the refund when the shared variable is empty"
+   },
+   {
+    "sid": "mock04#7.1",
+    "en": "When the customer database is briefly unreachable, get_customer returns a plain empty result, and the agent tells the customer \"I can't find any account with that information\" and closes the case."
+   },
+   {
+    "sid": "lesson-d5#36.4",
+    "en": "Have each subagent return its findings as a list of claims, then a closing list of the documents it consulted"
+   },
+   {
+    "sid": "mock04#1.6",
+    "en": "Expand the regex allowlist of closing phrases so it also matches every polite sign-off variant the model might emit."
+   }
+  ]
+ },
+ {
+  "lemma": "closely",
+  "kind": "new",
+  "surfaces": [
+   "closely"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#14.6",
+    "en": "Repeat the field types and required keys in the tool's `description` so Claude reads them more closely"
+   }
+  ]
+ },
+ {
+  "lemma": "clue",
+  "kind": "vocab-core",
+  "surfaces": [
+   "clues"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "clue",
+   "word": "clue",
+   "pos": "명사",
+   "ipa": "kluː",
+   "meaning": "단서, 실마리"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#58.5",
+    "en": "Enable extended thinking so the model reasons more deeply and reconstructs the missing tax ID from surrounding context clues on the page."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:clue.0",
+    "en": "...so the model reasons more deeply and reconstructs the missing tax ID from surrounding context clues on the page.",
+    "ko": "...모델이 더 깊이 추론해 페이지의 주변 단서로부터 누락된 세금 ID를 재구성하게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "clutter",
+  "kind": "vocab-core",
+  "surfaces": [
+   "cluttered"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "clutter",
+   "word": "clutter",
+   "pos": "동사·명사",
+   "ipa": "ˈklʌtər",
+   "meaning": "(불필요한 것으로) 어수선하게 만들다 / 잡동사니"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#12.2",
+    "en": "Developers notice that after running it, the main session is cluttered with raw output and Claude's subsequent answers in that session degrade in quality."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:clutter.0",
+    "en": "Developers notice that after running it, the main session is cluttered with raw output and Claude's subsequent answers in that session degrade in quality.",
+    "ko": "개발자들은 이 스킬을 실행한 뒤 메인 세션이 원본 출력으로 어수선해지고, 그 세션에서 Claude가 이후에 내놓는 답변의 품질이 떨어진다는 것을 알아챘습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "cod",
+  "kind": "new",
+  "surfaces": [
+   "coding"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#18.0",
+    "en": "A coordinator agent delegates tasks to a research agent, a coding agent, and a QA agent."
+   }
+  ]
+ },
+ {
+  "lemma": "code",
+  "kind": "new",
+  "surfaces": [
+   "code",
+   "codes"
+  ],
+  "freq": 167,
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.1",
+    "en": "It writes a product description, code checks the length and banned terms, and then the description is translated into German and French."
+   },
+   {
+    "sid": "lesson-d2#23.1",
+    "en": "When that developer runs Claude Code in the project, which server definition is used?"
+   },
+   {
+    "sid": "lesson-d3#16.0",
+    "en": "An infrastructure team wants Claude Code to load Terraform-specific formatting and tagging conventions only when Claude edits files under the terraform/ directory, at any subfolder depth."
+   },
+   {
+    "sid": "lesson-d4#1.0",
+    "en": "A team's single-pass code reviewer flags too many non-issues, and they want it to filter its own findings."
+   },
+   {
+    "sid": "lesson-d5#27.0",
+    "en": "An architect has been running a single Claude Code session for several hours exploring a large monorepo."
+   },
+   {
+    "sid": "mock04#11.0",
+    "en": "[Scenario: Code Generation with Claude Code]"
+   },
+   {
+    "sid": "sample01#11.0",
+    "en": "A dev team wants Claude Code to automatically run `npm run lint:fix` every time it writes or edits a TypeScript file."
+   },
+   {
+    "sid": "mock04-kor#11.0",
+    "en": "[시나리오: Claude Code를 활용한 코드 생성]"
+   }
+  ]
+ },
+ {
+  "lemma": "code-intelligence",
+  "kind": "vocab-core",
+  "surfaces": [
+   "code-intelligence"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "code-intelligence",
+   "word": "code-intelligence",
+   "pos": "명사구",
+   "ipa": "ˈkoʊd ɪnˌtelɪdʒəns",
+   "meaning": "코드 인텔리전스 — 심볼·참조 관계를 이해해 코드를 찾고 분석하는 기능"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#42.1",
+    "en": "The team added a code-intelligence MCP server that does semantic, cross-file symbol search over an indexed monorepo."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:code-intelligence.0",
+    "en": "The team added a code-intelligence MCP server that does semantic, cross-file symbol search over an indexed monorepo.",
+    "ko": "팀이 인덱싱된 모노레포에서 의미 기반의 파일 간 심볼 검색을 하는 코드 인텔리전스 MCP 서버를 추가했습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "code-review",
+  "kind": "vocab-core",
+  "surfaces": [
+   "code-review",
+   "code review",
+   "code reviews"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "code-review",
+   "word": "code-review",
+   "pos": "명사구",
+   "ipa": "ˈkoʊd rɪˌvjuː",
+   "meaning": "코드 리뷰 — 변경된 코드를 읽고 결함을 검토하는 일"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#35.0",
+    "en": "A reviewer is designing an agentic code review for a pull request that touches 40 files across a monorepo."
+   },
+   {
+    "sid": "lesson-d3#33.0",
+    "en": "A PR-review workflow uses the code-review plugin with --comment, but no inline comments ever appear on the PR."
+   },
+   {
+    "sid": "lesson-d4#32.0",
+    "en": "A platform team runs an automated code-review gate that blocks a pull request from merging until Claude returns a verdict on the diff, typically within a few seconds."
+   },
+   {
+    "sid": "mock04#49.1",
+    "en": "The project's always-loaded CLAUDE.md has grown to embed a long, detailed code-review rubric."
+   },
+   {
+    "sid": "selfcheck-d4-kor#6.0",
+    "en": "관리형 Code Review가 lockfile, `src/gen/`의 생성 코드, 이미 CI 린터가 잡는 포맷 문제까지 지적해 소음이 크다. 가장 알맞은 조치는?"
+   },
+   {
+    "sid": "lesson-d3#32.0",
+    "en": "An engineering lead wants CI-invoked Claude Code reviews to consistently flag missing test coverage using the team's specific definition of a \"valuable test\" (asserts behavior, not implementation details) and to know which fixtures already exist in the test helpers directory."
+   },
+   {
+    "sid": "lesson-d4#8.0",
+    "en": "A team's code-review assistant prompt already spells out an exhaustive, itemized rubric for flagging issues, but reviewers still receive inconsistently formatted findings across runs: some list severity before location, others omit the suggested fix entirely."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:code-review.0",
+    "en": "The project's always-loaded CLAUDE.md has grown to embed a long, detailed code-review rubric.",
+    "ko": "프로젝트의 항상 로드되는 CLAUDE.md에 길고 상세한 코드 리뷰 루브릭이 들어가 비대해졌습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "codebase",
+  "kind": "new",
+  "surfaces": [
+   "codebase"
+  ],
+  "freq": 9,
+  "sentences": [
+   {
+    "sid": "lesson-d1#11.0",
+    "en": "After an hour of codebase analysis, a coordinator wants to try two competing refactoring strategies."
+   },
+   {
+    "sid": "lesson-d2#31.0",
+    "en": "A newly onboarded architect asks Claude Code to trace how a login request flows from the HTTP route handler through to the database call, in a codebase Claude has not explored yet."
+   },
+   {
+    "sid": "lesson-d5#26.0",
+    "en": "Several subagents are running concurrently, each investigating a different module of a large codebase and recording findings as they go."
+   },
+   {
+    "sid": "lesson-d3#18.5",
+    "en": "Skip the sweep and start converting files directly, so the usage patterns show up as Claude works through the codebase"
+   },
+   {
+    "sid": "lesson-d1#41.0",
+    "en": "After an expensive codebase analysis that ended with a JWT proposal, an engineer wants to try OAuth2 on a separate branch."
+   },
+   {
+    "sid": "lesson-d2#1.6",
+    "en": "Rename the internal function that each tool is mapped to in your codebase"
+   },
+   {
+    "sid": "lesson-d3#20.2",
+    "en": "The team used the Explore subagent to catalog usage patterns across the codebase before starting the conversion work itself"
+   },
+   {
+    "sid": "lesson-d2#31.3",
+    "en": "Use Read to open every file under the src directory up front, building a complete mental model of the whole codebase before looking for the login flow specifically."
+   }
+  ]
+ },
+ {
+  "lemma": "coexist",
+  "kind": "vocab-core",
+  "surfaces": [
+   "coexist"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "coexist",
+   "word": "coexist",
+   "pos": "동사",
+   "ipa": "ˌkoʊɪɡˈzɪst",
+   "meaning": "공존하다, 한곳에 함께 있다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#28.6",
+    "en": "Increase the context window so that both the old and the new search results can coexist in one session"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:coexist.0",
+    "en": "Increase the context window so that both the old and the new search results can coexist in one session",
+    "ko": "이전 검색 결과와 새 검색 결과가 한 세션 안에 함께 있을 수 있도록 컨텍스트 창을 늘린다"
+   }
+  ]
+ }
+]

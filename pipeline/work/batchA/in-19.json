@@ -1,0 +1,1295 @@
+[
+ {
+  "lemma": "group",
+  "kind": "new",
+  "surfaces": [
+   "group",
+   "groups"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d3#13.7",
+    "en": "Keep the conventions in CLAUDE.md but group them under clear markdown headers so Claude can skip them"
+   },
+   {
+    "sid": "lesson-d4#31.5",
+    "en": "An overnight report that groups the day's support tickets by theme for the product team"
+   }
+  ]
+ },
+ {
+  "lemma": "growth",
+  "kind": "vocab-core",
+  "surfaces": [
+   "grows",
+   "growth",
+   "grown"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "growth",
+   "word": "growth",
+   "pos": "명사",
+   "ipa": "ɡroʊθ",
+   "meaning": "증가, 커짐 / (grow) 커지다, 늘어나다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#14.0",
+    "en": "A research agent has grown from 5 tools to 18, and several of them now partly overlap."
+   },
+   {
+    "sid": "lesson-d3#13.0",
+    "en": "A project's CLAUDE.md has grown to about 400 lines."
+   },
+   {
+    "sid": "mock04#18.1",
+    "en": "During a 200-file framework migration carried out in one long session, logs show Claude re-migrating files it already converted and skipping others as the conversation grows."
+   },
+   {
+    "sid": "lesson-d3#6.0",
+    "en": "A project's single CLAUDE.md has grown to over 500 lines covering code style, testing, security requirements, and deployment steps, and the team notices Claude adheres to instructions less reliably than before."
+   },
+   {
+    "sid": "mock04#49.1",
+    "en": "The project's always-loaded CLAUDE.md has grown to embed a long, detailed code-review rubric."
+   },
+   {
+    "sid": "mock04#18.4",
+    "en": "Keep a scratchpad manifest of migrated vs pending files, updated after each file, so progress survives context growth."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:growth.0",
+    "en": "Keep a scratchpad manifest of migrated vs pending files, updated after each file, so progress survives context growth.",
+    "ko": "마이그레이션 완료 파일과 대기 파일을 기록한 scratchpad 매니페스트를 두고 파일마다 갱신해, 컨텍스트가 커져도 진행 상황이 유지되게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "guarantee",
+  "kind": "vocab-core",
+  "surfaces": [
+   "guarantee",
+   "guarantees",
+   "guaranteed"
+  ],
+  "freq": 18,
+  "vocab": {
+   "id": "guarantee",
+   "word": "guarantee",
+   "pos": "동사·명사",
+   "ipa": "ˌɡærənˈtiː",
+   "meaning": "보장하다, 반드시 ~이 되게 하다 / 보장"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#12.2",
+    "en": "How should the doc-reviewer's AgentDefinition be configured to guarantee this constraint?"
+   },
+   {
+    "sid": "lesson-d2#19.2",
+    "en": "What is the recommended way to guarantee correct ordering for this first step?"
+   },
+   {
+    "sid": "lesson-d4#16.2",
+    "en": "Which tool_choice setting guarantees extract_metadata runs on this turn?"
+   },
+   {
+    "sid": "mock04#14.3",
+    "en": "What is the best way to guarantee the skill cannot touch source?"
+   },
+   {
+    "sid": "lesson-d3#19.3",
+    "en": "Plan mode inherently blocks all edits and does not require approval for read operations, as the mode's read-only guarantee makes approval prompts unnecessary."
+   },
+   {
+    "sid": "lesson-d1#13.1",
+    "en": "Which configuration actually guarantees that?"
+   },
+   {
+    "sid": "lesson-d4#17.0",
+    "en": "A team building a resume-parsing tool wants to guarantee that structured candidate data is extracted via a `parse_resume` tool on the current turn."
+   },
+   {
+    "sid": "mock04#3.3",
+    "en": "What is the best way to guarantee the policy holds?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:guarantee.0",
+    "en": "What is the best way to guarantee the policy holds?",
+    "ko": "이 정책이 반드시 지켜지도록 보장하는 가장 좋은 방법은 무엇일까요?"
+   }
+  ]
+ },
+ {
+  "lemma": "guard",
+  "kind": "vocab-core",
+  "surfaces": [
+   "guard"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "guard",
+   "word": "guard",
+   "pos": "명사·동사",
+   "ipa": "ɡɑːrd",
+   "meaning": "방지 장치, 안전장치 / 지키다, 막다"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#2.5",
+    "en": "The loop has no maximum iteration guard; a tool returning ambiguous results can cause the model to keep requesting the same tool indefinitely"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:guard.0",
+    "en": "The loop has no maximum iteration guard; a tool returning ambiguous results can cause the model to keep requesting the same tool indefinitely",
+    "ko": "루프에 최대 반복 횟수 가드가 없다. 도구가 모호한 결과를 반환하면 모델이 같은 도구를 끝없이 재요청할 수 있다"
+   }
+  ]
+ },
+ {
+  "lemma": "guardrail",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "guardrail",
+   "word": "guardrail",
+   "pos": "명사",
+   "ipa": "ˈɡɑːrdreɪl",
+   "meaning": "가드레일 — 모델·시스템이 벗어나지 않게 정해 둔 안전장치·규칙"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "guess",
+  "kind": "new",
+  "surfaces": [
+   "guesses",
+   "guessed"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d2#19.1",
+    "en": "The enrichment tools depend on fields that only extract_metadata produces, and in early tests the model sometimes calls an enrichment tool first with guessed values."
+   },
+   {
+    "sid": "mock04#34.6",
+    "en": "Add a citation post-processor that guesses the most likely source for each uncited sentence based on topical similarity."
+   }
+  ]
+ },
+ {
+  "lemma": "guest",
+  "kind": "new",
+  "surfaces": [
+   "guest"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d5#12.0",
+    "en": "In production, a hotel-booking support agent searches by guest name and check-in city and gets back two reservations with different booking references."
+   },
+   {
+    "sid": "lesson-d5#12.1",
+    "en": "Logs show it picked the one with the most recent activity and discussed it with the wrong guest."
+   }
+  ]
+ },
+ {
+  "lemma": "guidance",
+  "kind": "new",
+  "surfaces": [
+   "guidance"
+  ],
+  "freq": 8,
+  "sentences": [
+   {
+    "sid": "lesson-d2#10.2",
+    "en": "What is the primary flaw in this retry guidance?"
+   },
+   {
+    "sid": "lesson-d3#32.1",
+    "en": "Where should this project-specific guidance be encoded so every CI run picks it up automatically without being repeated in each workflow prompt?"
+   },
+   {
+    "sid": "lesson-d3#4.3",
+    "en": "Context use stays the same, because imported files load at launch with the root file. To load less, the guidance would need to go into subdirectory CLAUDE.md files or path-scoped rules"
+   },
+   {
+    "sid": "lesson-d2#10.3",
+    "en": "The error contract includes fields that are not part of the MCP specification. MCP tool responses only define `isError` to indicate an error; there is no standard `errorCategory` or `isRetryable` field, so consumers may ignore these custom fields and miss the intended recovery guidance."
+   },
+   {
+    "sid": "lesson-d3#6.3",
+    "en": "Split the guidance into code-style.md, testing.md, security.md and deployment.md in .claude/rules/ with no paths frontmatter, and slim CLAUDE.md down"
+   },
+   {
+    "sid": "lesson-d3#6.4",
+    "en": "Split the guidance into CLAUDE.md files in the src/, tests/, security/ and deploy/ directories next to the code, and slim the root CLAUDE.md down"
+   },
+   {
+    "sid": "lesson-d3#6.5",
+    "en": "Split the guidance into code-style.md, testing.md, security.md and deployment.md in .claude/rules/ with paths globs for each area, and slim CLAUDE.md down"
+   },
+   {
+    "sid": "lesson-d3#6.6",
+    "en": "Split the guidance into four skills under .claude/skills/, one each for style, testing, security and deployment, and slim CLAUDE.md down"
+   }
+  ]
+ },
+ {
+  "lemma": "guide",
+  "kind": "new",
+  "surfaces": [
+   "guide"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d3#12.0",
+    "en": "Your project CLAUDE.md holds two things: the one-line rule \"Use pnpm, not npm\" and a 300-line API style guide that matters only when someone writes endpoints."
+   },
+   {
+    "sid": "mock04#6.4",
+    "en": "Enlarge the context window so the full refund policy document can sit next to the conversation and guide each call."
+   },
+   {
+    "sid": "lesson-d3#12.4",
+    "en": "Keep the pnpm rule in CLAUDE.md, move the style guide into a skill, and have CLAUDE.md say \"follow our API conventions\""
+   },
+   {
+    "sid": "lesson-d3#12.6",
+    "en": "Keep the style guide in CLAUDE.md and move the pnpm rule into a skill, since a one-line rule is cheap to load on demand"
+   }
+  ]
+ },
+ {
+  "lemma": "guideline",
+  "kind": "new",
+  "surfaces": [
+   "guidelines"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#33.5",
+    "en": "Have the model give a short written rationale next to each extracted value, with fixed wording guidelines in the prompt, and skip numeric scores."
+   }
+  ]
+ },
+ {
+  "lemma": "half",
+  "kind": "new",
+  "surfaces": [
+   "half"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d2#2.1",
+    "en": "The model routes roughly half of matching tasks to the wrong tool."
+   },
+   {
+    "sid": "lesson-d4#13.0",
+    "en": "Clinical intake notes say things like \"a couple tablets\" or \"about half a cup\"."
+   },
+   {
+    "sid": "lesson-d4#28.4",
+    "en": "Submit every 12 hours, because half a day plus a typical batch run fits well inside 30 hours"
+   }
+  ]
+ },
+ {
+  "lemma": "halfway",
+  "kind": "new",
+  "surfaces": [
+   "halfway"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#37.0",
+    "en": "Halfway through a batch of filings, a subagent finds that two credible documents give different headcounts for the same company."
+   }
+  ]
+ },
+ {
+  "lemma": "hallucination",
+  "kind": "vocab-core",
+  "surfaces": [
+   "hallucination",
+   "hallucinated"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "hallucination",
+   "word": "hallucination",
+   "pos": "명사",
+   "ipa": "həˌluːsɪˈneɪʃn",
+   "meaning": "환각 — 모델이 사실이 아닌 내용을 그럴듯하게 지어내는 것"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#2.6",
+    "en": "The model hallucinated a vaguer version of the facts because the context window was nearly full"
+   },
+   {
+    "sid": "sample01#6.3",
+    "en": "The model's temperature is too high; lower it to reduce hallucination"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:hallucination.0",
+    "en": "The model's temperature is too high; lower it to reduce hallucination",
+    "ko": "temperature가 너무 높다 — 낮춰서 환각을 줄인다"
+   }
+  ]
+ },
+ {
+  "lemma": "halt",
+  "kind": "vocab-core",
+  "surfaces": [
+   "halting",
+   "halt"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "halt",
+   "word": "halt",
+   "pos": "동사",
+   "ipa": "hɔːlt",
+   "meaning": "(진행을) 멈추다, 중단하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#29.2",
+    "en": "Intermittently the synthesis subagent uses that phrase mid-analysis, halting the workflow."
+   },
+   {
+    "sid": "lesson-d1#3.2",
+    "en": "The loop can halt while stop_reason is still \"tool_use\", leaving a task Claude was partway through unfinished and its answer incomplete"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:halt.0",
+    "en": "Halt analysis and escalate to the coordinator immediately, asking it to determine which source is authoritative.",
+    "ko": "분석을 중단하고 즉시 코디네이터에 에스컬레이션해, 어느 소스가 권위 있는지 결정해 달라고 요청한다."
+   }
+  ]
+ },
+ {
+  "lemma": "hand",
+  "kind": "new",
+  "surfaces": [
+   "handing",
+   "hands",
+   "hand"
+  ],
+  "freq": 6,
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.0",
+    "en": "In a research pipeline, the coordinator hands the synthesis subagent its findings as smooth prose such as \"studies show adoption doubled\"."
+   },
+   {
+    "sid": "lesson-d3#11.3",
+    "en": "Set `context: fork` on the skill, so it runs in a subagent with its own context and hands back just its result to the caller."
+   },
+   {
+    "sid": "lesson-d5#5.2",
+    "en": "Parse each lookup response in code and hand the model only status, purchase date, item, amount and return deadline"
+   },
+   {
+    "sid": "mock04#2.6",
+    "en": "Enable extended thinking on the escalation turn so the model reasons longer about the case before handing it off."
+   },
+   {
+    "sid": "lesson-d1#17.1",
+    "en": "Separately, each time the coordinator invokes this subagent it supplies a different per-call prompt describing the specific table and migration at hand."
+   },
+   {
+    "sid": "lesson-d3#18.3",
+    "en": "Set `CLAUDE_CODE_DISABLE_EXPLORE_PLAN_AGENTS=1` so Claude reads every file itself and has the full contents on hand when it plans"
+   }
+  ]
+ },
+ {
+  "lemma": "hand-written",
+  "kind": "vocab-core",
+  "surfaces": [
+   "hand-written"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "hand-written",
+   "word": "hand-written",
+   "pos": "형용사",
+   "ipa": "ˌhænd ˈrɪtn",
+   "meaning": "손으로 직접 작성한 — 라이브러리·자동 생성이 아닌"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#17.1",
+    "en": "Asking Claude to \"make the input validation more robust and idiomatic\" yields inconsistent output across runs: sometimes it adds zod, sometimes hand-written checks, sometimes nothing meaningful."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:hand-written.0",
+    "en": "...sometimes it adds zod, sometimes hand-written checks, sometimes nothing meaningful.",
+    "ko": "어떤 때는 `zod` 를 추가하고, 어떤 때는 손으로 쓴 검사 코드를 넣고, 어떤 때는 의미 있는 변화가 거의 없다."
+   }
+  ]
+ },
+ {
+  "lemma": "handful",
+  "kind": "vocab-core",
+  "surfaces": [
+   "handful"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "handful",
+   "word": "handful",
+   "pos": "명사",
+   "ipa": "ˈhændfʊl",
+   "meaning": "소수, 몇 개 (a handful of)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#10.3",
+    "en": "Replace the twenty pairs with a handful of examples chosen to show the reasoning behind the labels"
+   }
+  ]
+ },
+ {
+  "lemma": "handle",
+  "kind": "vocab-core",
+  "surfaces": [
+   "handle",
+   "handled",
+   "handles",
+   "handler",
+   "handling",
+   "handlers"
+  ],
+  "freq": 40,
+  "vocab": {
+   "id": "handle",
+   "word": "handle",
+   "pos": "동사·명사",
+   "ipa": "ˈhændl",
+   "meaning": "① 처리하다, 다루다 — handler: 처리기(핸들러) ② (handle time) 처리 시간"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#11.3",
+    "en": "Under a structured error design, how should this failure be categorized and handled differently from a network timeout on the same tool?"
+   },
+   {
+    "sid": "lesson-d3#13.1",
+    "en": "Most of it is OpenAPI and validation conventions that only matter for the API handlers under src/api/."
+   },
+   {
+    "sid": "lesson-d4#12.2",
+    "en": "After deployment, the model performs well on similar short English emails but starts mislabeling longer documents and documents in other languages that it previously handled correctly under the old, example-free prompt."
+   },
+   {
+    "sid": "lesson-d5#15.1",
+    "en": "How should the coordinator's synthesis output schema handle each topic so the final report stays trustworthy?"
+   },
+   {
+    "sid": "mock04#2.1",
+    "en": "When the support agent invokes escalate_to_human, human agents report they must re-read the entire raw conversation to understand each case, and average handle time for escalated tickets has risen."
+   },
+   {
+    "sid": "lesson-d1#38.4",
+    "en": "It resumes directly, because a session name you set yourself is a valid handle wherever you are signed in"
+   },
+   {
+    "sid": "lesson-d2#15.0",
+    "en": "A single generalist agent handling an entire content pipeline (research, outline, draft, edit, publish) has 20 tools and shows declining tool-selection accuracy as more tools were added over time."
+   },
+   {
+    "sid": "lesson-d3#2.0",
+    "en": "Your compliance team wants a data-handling instruction to reach every developer in every repository, and no developer should be able to remove it."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:handle.0",
+    "en": "...human agents report they must re-read the entire raw conversation to understand each case, and average handle time for escalated tickets has risen.",
+    "ko": "사람 상담원들은 각 건을 파악하려고 원본 대화 전체를 다시 읽어야 한다고 말하고, 에스컬레이션된 티켓의 평균 처리 시간도 늘어났다."
+   }
+  ]
+ },
+ {
+  "lemma": "handoff",
+  "kind": "vocab-core",
+  "surfaces": [
+   "handoff",
+   "hand off"
+  ],
+  "freq": 9,
+  "vocab": {
+   "id": "handoff",
+   "word": "handoff",
+   "pos": "명사",
+   "ipa": "ˈhændɔːf",
+   "meaning": "인계, 넘겨주기 — 작업·맥락을 다음 담당(사람·에이전트)에게 넘기는 것"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.2",
+    "en": "Which handoff format fixes this?"
+   },
+   {
+    "sid": "lesson-d5#7.0",
+    "en": "A team is writing the handoff rules for a new customer support agent."
+   },
+   {
+    "sid": "mock04#2.4",
+    "en": "Generate a structured handoff summary: issue, verified identifiers, tool results, actions attempted, and recommended next step."
+   },
+   {
+    "sid": "lesson-d1#10.3",
+    "en": "Keep the prose handoff, and add \"always cite your sources\" to the synthesis subagent's system prompt in its AgentDefinition"
+   },
+   {
+    "sid": "lesson-d5#7.2",
+    "en": "Hand off any case the agent judges to be complicated, so a human reviews every multi-step case."
+   },
+   {
+    "sid": "mock04#36.7",
+    "en": "Trim each subagent's output to relevant extracted findings before handoff, and open the synthesis prompt with a key-facts summary under headers."
+   },
+   {
+    "sid": "lesson-d5#7.3",
+    "en": "Hand off only on specific conditions you can see in the conversation: the customer asks for a person, written policy doesn't cover the request, or the agent can't make meaningful progress."
+   },
+   {
+    "sid": "lesson-d5#7.4",
+    "en": "Never hand off, because every escalation lowers the deflection rate and adds cost."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:handoff.0",
+    "en": "Trim each subagent's output to relevant extracted findings before handoff, and open the synthesis prompt with a key-facts summary under headers.",
+    "ko": "핸드오프 전에 각 서브에이전트의 출력을 관련 추출 결과로 줄이고, 종합 프롬프트는 헤더 아래 핵심 사실 요약으로 시작한다"
+   }
+  ]
+ },
+ {
+  "lemma": "hang",
+  "kind": "vocab-core",
+  "surfaces": [
+   "hangs",
+   "hang"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "hang",
+   "word": "hang",
+   "pos": "동사",
+   "ipa": "hæŋ",
+   "meaning": "(프로그램이) 응답 없이 멈춰 있다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#29.0",
+    "en": "A pipeline step runs `claude \"explain the failing test\"` and the job hangs until it times out."
+   },
+   {
+    "sid": "lesson-d3#30.1",
+    "en": "The first run hangs until the job times out, with no output ever written to the log."
+   },
+   {
+    "sid": "lesson-d3#30.3",
+    "en": "What is the most likely cause of the hang?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:hang.0",
+    "en": "...but the job hangs indefinitely.",
+    "ko": "그런데 작업이 무한정 멈춰 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "happen",
+  "kind": "new",
+  "surfaces": [
+   "happens",
+   "happened",
+   "happen"
+  ],
+  "freq": 12,
+  "sentences": [
+   {
+    "sid": "lesson-d1#26.0",
+    "en": "A finance team says a single refund above $500 is unacceptable, even if it happens in only one conversation out of thousands."
+   },
+   {
+    "sid": "lesson-d3#18.2",
+    "en": "What should happen to this discovery sweep?"
+   },
+   {
+    "sid": "lesson-d4#12.1",
+    "en": "All five examples happen to be English-language emails under 100 words."
+   },
+   {
+    "sid": "lesson-d5#32.1",
+    "en": "What has to happen before you can use 0.85 as the cut-off for automatic acceptance?"
+   },
+   {
+    "sid": "mock04#57.5",
+    "en": "Re-run the identical prompt up to five times and accept the first result that happens to satisfy the invoice_date versus due_date rule."
+   },
+   {
+    "sid": "sample01#18.2",
+    "en": "What happens?"
+   },
+   {
+    "sid": "lesson-d1#27.2",
+    "en": "What happens when the agent calls refund_customer with amount 900 and category \"restricted\"?"
+   },
+   {
+    "sid": "lesson-d4#27.2",
+    "en": "What happens, and what should the team change?"
+   }
+  ]
+ },
+ {
+  "lemma": "hard",
+  "kind": "new",
+  "surfaces": [
+   "harder",
+   "hard"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d3#22.4",
+    "en": "Plan mode first, because the hard part is choosing between valid approaches, and that choice should be settled before any edits"
+   },
+   {
+    "sid": "lesson-d5#25.4",
+    "en": "Have the agent record more detail in NOTES.md, such as the full source of OrderService, so the finding is harder to lose"
+   },
+   {
+    "sid": "mock04#21.6",
+    "en": "Enable extended thinking so Claude reasons harder over the full accumulated output, including every passing-test line."
+   },
+   {
+    "sid": "lesson-d5#33.4",
+    "en": "Have the model give a 0–100 certainty score only next to values it flags as hard to extract, with a fixed scale definition in the prompt, and skip routine ones."
+   }
+  ]
+ },
+ {
+  "lemma": "hardcode",
+  "kind": "vocab-core",
+  "surfaces": [
+   "hard-codes",
+   "hardcoded"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "hardcode",
+   "word": "hardcode",
+   "pos": "동사",
+   "ipa": "ˌhɑːrdˈkoʊd",
+   "meaning": "하드코딩하다 — 값을 설정·변수로 빼지 않고 코드에 직접 박아 넣다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#37.2",
+    "en": "The engineer hard-codes an upfront decomposition into five subagent tasks (billing, invoicing, tax, reporting, auth)."
+   },
+   {
+    "sid": "lesson-d2#24.4",
+    "en": "Configure a static `headers` entry with the token value hardcoded, then rotate the config file manually whenever the token expires."
+   },
+   {
+    "sid": "mock04#40.1",
+    "en": "A security scan flags that the team's committed .mcp.json contains a hardcoded GitHub personal-access token used by an MCP server."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:hardcode.0",
+    "en": "A security scan flags that the team's committed .mcp.json contains a hardcoded GitHub personal-access token used by an MCP server.",
+    "ko": "보안 스캔 결과, 팀이 커밋한 `.mcp.json` 에 MCP 서버가 쓰는 GitHub 개인 액세스 토큰이 하드코딩되어 있다는 경고가 나왔다."
+   }
+  ]
+ },
+ {
+  "lemma": "harmful",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "harmful",
+   "word": "harmful",
+   "pos": "형용사",
+   "ipa": "ˈhɑːrmfl",
+   "meaning": "해로운, 유해한 — harmlessness: 무해성(해롭지 않음)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "harness",
+  "kind": "vocab-core",
+  "surfaces": [
+   "harness"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "harness",
+   "word": "harness",
+   "pos": "명사·동사",
+   "ipa": "ˈhɑːrnɪs",
+   "meaning": "① 하네스 — 모델을 감싸 도구 실행·권한·루프를 관리하는 실행 틀 ② (힘을) 활용하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#14.5",
+    "en": "Declare `allowed-tools` in the skill's SKILL.md frontmatter limited to Read/Glob/Write so the harness blocks Edit and Bash"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:harness.0",
+    "en": "Declare `allowed-tools` in the skill's SKILL.md frontmatter limited to Read/Glob/Write so the harness blocks Edit and Bash",
+    "ko": "스킬의 SKILL.md frontmatter에 `allowed-tools` 를 `Read`, `Glob`, `Write` 로 제한해 선언하고, 하네스가 `Edit` 과 `Bash` 를 차단하게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "hash",
+  "kind": "vocab-core",
+  "surfaces": [
+   "hash"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "hash",
+   "word": "hash",
+   "pos": "명사·동사",
+   "ipa": "hæʃ",
+   "meaning": "해시(값) — 데이터를 고정 길이 값으로 바꾼 것 / 해시하다"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#21.3",
+    "en": "Use Redis to cache Claude's responses keyed by question hash"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:hash.0",
+    "en": "Use Redis to cache Claude's responses keyed by question hash",
+    "ko": "Redis로 Claude 응답을 질문 해시 키로 캐시한다"
+   }
+  ]
+ },
+ {
+  "lemma": "head",
+  "kind": "new",
+  "surfaces": [
+   "heading"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#6.3",
+    "en": "Open the combined input with a short summary of each subagent's key findings, and give each detailed section its own clear heading"
+   }
+  ]
+ },
+ {
+  "lemma": "header",
+  "kind": "vocab-core",
+  "surfaces": [
+   "headers",
+   "header"
+  ],
+  "freq": 15,
+  "vocab": {
+   "id": "header",
+   "word": "header",
+   "pos": "명사",
+   "ipa": "ˈhedər",
+   "meaning": "① (문서의) 머리글, 섹션 제목 ② (HTTP·파일의) 헤더 — 본문 앞에 붙는 정보"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#20.2",
+    "en": "Add the server with --scope project, set the header to \"Authorization: Bearer ${GITHUB_TOKEN}\" in .mcp.json, and have each engineer export GITHUB_TOKEN in their own shell"
+   },
+   {
+    "sid": "lesson-d3#13.7",
+    "en": "Keep the conventions in CLAUDE.md but group them under clear markdown headers so Claude can skip them"
+   },
+   {
+    "sid": "mock04#36.7",
+    "en": "Trim each subagent's output to relevant extracted findings before handoff, and open the synthesis prompt with a key-facts summary under headers."
+   },
+   {
+    "sid": "lesson-d2#20.3",
+    "en": "Add the server with --scope user and paste your token into the header, since ~/.claude.json is never committed to git"
+   },
+   {
+    "sid": "lesson-d3#25.3",
+    "en": "Write a detailed prose specification of how empty cells, quoted commas and duplicate headers map to JSON fields, give it to Claude with the converter request, and refine the wording after reviewing the output."
+   },
+   {
+    "sid": "lesson-d2#20.4",
+    "en": "Add the server with --scope project and write the header as \"Bearer ${GITHUB_TOKEN:-YOUR_REAL_TOKEN}\", so the server still works for anyone who hasn't set the variable"
+   },
+   {
+    "sid": "lesson-d3#25.5",
+    "en": "Ask Claude to write the converter together with its own unit tests, deriving the expected output for empty cells, quoted commas and duplicate headers from the prompt, and iterate until the tests pass."
+   },
+   {
+    "sid": "lesson-d2#20.5",
+    "en": "Add the server with --scope project with the token written into the header, then add .mcp.json to .gitignore so the token stays out of the repository"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:header.0",
+    "en": "...open the synthesis prompt with a key-facts summary under headers.",
+    "ko": "종합 프롬프트는 헤더 아래 핵심 사실 요약으로 시작한다"
+   }
+  ]
+ },
+ {
+  "lemma": "headless",
+  "kind": "vocab-core",
+  "surfaces": [
+   "headless"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "headless",
+   "word": "headless",
+   "pos": "형용사",
+   "ipa": "ˈhedləs",
+   "meaning": "화면(UI) 없이 실행하는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#21.5",
+    "en": "Run Claude headless in CI with bypassPermissions so it extracts the services on a branch, with the resulting pull request reviewed afterward"
+   },
+   {
+    "sid": "lesson-d4#37.4",
+    "en": "Script one headless `claude -p` review per file, each in a fresh context, then run integration passes that read the files sharing data together"
+   },
+   {
+    "sid": "lesson-d3#22.6",
+    "en": "Headless with bypassPermissions, then review the resulting pull request to judge which approach Claude picked"
+   },
+   {
+    "sid": "lesson-d3#31.4",
+    "en": "-p alone, because headless mode never prompts"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:headless.0",
+    "en": "Switch to headless mode with --continue, passing explicit context summaries between batch invocations.",
+    "ko": "`--continue` 로 헤드리스 모드로 전환하고, 배치 호출 사이에 명시적인 맥락 요약을 넘긴다."
+   }
+  ]
+ },
+ {
+  "lemma": "healthcare",
+  "kind": "new",
+  "surfaces": [
+   "healthcare"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#9.0",
+    "en": "A healthcare scheduling assistant follows a configured escalation policy: when a request is within the assistant's capability and the patient has not asked for a staff member, the assistant should acknowledge any expressed frustration, complete the request directly, and offer escalation to a staff member as an option rather than a requirement -- reserving mandatory escalation for requests it cannot complete, cases needing clinical judgment, or an explicit request for a human."
+   }
+  ]
+ },
+ {
+  "lemma": "help",
+  "kind": "new",
+  "surfaces": [
+   "help",
+   "helps"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d4#10.2",
+    "en": "What change would best help the model generalize its judgment to these novel-but-similar inputs?"
+   },
+   {
+    "sid": "mock04#41.1",
+    "en": "The agent connects to a database MCP server to help engineers query a legacy schema."
+   },
+   {
+    "sid": "lesson-d2#3.4",
+    "en": "input_examples are only read when tool_choice forces that specific tool, so they won't help with selection"
+   },
+   {
+    "sid": "lesson-d4#6.1",
+    "en": "Which structuring approach best helps Claude apply the right criteria to the right category without cross-contamination?"
+   },
+   {
+    "sid": "mock04#60.4",
+    "en": "Keep tool_choice \"auto\" but add sentiment analysis of the document text to help the model decide which of the six extractors fits best."
+   }
+  ]
+ },
+ {
+  "lemma": "helper",
+  "kind": "new",
+  "surfaces": [
+   "helpers",
+   "helper"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d4#26.0",
+    "en": "A security review assistant extracts structured findings from source code and developers frequently dismiss a large share of the findings tied to one particular helper function used for input sanitization."
+   },
+   {
+    "sid": "lesson-d3#32.0",
+    "en": "An engineering lead wants CI-invoked Claude Code reviews to consistently flag missing test coverage using the team's specific definition of a \"valuable test\" (asserts behavior, not implementation details) and to know which fixtures already exist in the test helpers directory."
+   },
+   {
+    "sid": "lesson-d4#4.1",
+    "en": "A PR adds one helper named according to the project's documented convention in CLAUDE.md."
+   },
+   {
+    "sid": "lesson-d4#4.2",
+    "en": "How should well-written review criteria treat that helper's name?"
+   },
+   {
+    "sid": "lesson-d4#25.6",
+    "en": "A `detected_pattern` field naming the code construct that triggered the finding, such as a call to the team's sanitization helper"
+   }
+  ]
+ },
+ {
+  "lemma": "heterogeneous",
+  "kind": "vocab-core",
+  "surfaces": [
+   "heterogeneous"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "heterogeneous",
+   "word": "heterogeneous",
+   "pos": "형용사",
+   "ipa": "ˌhetərəˈdʒiːniəs",
+   "meaning": "이질적인, 서로 다른 종류(형식)가 섞인"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#4.2",
+    "en": "Logs show the model occasionally misreads these heterogeneous fields, e.g., treating a refund amount in the wrong units."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:heterogeneous.0",
+    "en": "Logs show the model occasionally misreads these heterogeneous fields, e.g., treating a refund amount in the wrong units.",
+    "ko": "로그를 보면 모델이 이런 이질적인 필드를 가끔 잘못 읽어, 예를 들어 환불 금액을 잘못된 단위로 해석한다."
+   }
+  ]
+ },
+ {
+  "lemma": "heuristic",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "heuristic",
+   "word": "heuristic",
+   "pos": "명사",
+   "ipa": "hjʊˈrɪstɪk",
+   "meaning": "경험적 규칙, 어림 규칙"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:heuristic.0",
+    "en": "Apply source credibility heuristics to select the most likely accurate figure.",
+    "ko": "출처 신뢰도 휴리스틱을 적용해 가장 정확할 가능성이 높은 수치를 고른다."
+   }
+  ]
+ },
+ {
+  "lemma": "hide",
+  "kind": "new",
+  "surfaces": [
+   "hidden"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#11.5",
+    "en": "Set `user-invocable: false` on the skill, so it is hidden from the slash menu and Claude loads it when the topic comes up."
+   }
+  ]
+ },
+ {
+  "lemma": "hierarchy",
+  "kind": "vocab-core",
+  "surfaces": [
+   "hierarchy"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "hierarchy",
+   "word": "hierarchy",
+   "pos": "명사",
+   "ipa": "ˈhaɪərɑːrki",
+   "meaning": "계층 구조 (class hierarchy: 클래스 상속 구조)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#27.5",
+    "en": "Raise the session's maximum output token limit, so the agent can lay out each class hierarchy in full before answering questions."
+   }
+  ]
+ },
+ {
+  "lemma": "high",
+  "kind": "new",
+  "surfaces": [
+   "higher",
+   "high",
+   "highest"
+  ],
+  "freq": 22,
+  "sentences": [
+   {
+    "sid": "lesson-d1#6.1",
+    "en": "Token costs are too high, and most one-line tickets only need classifying."
+   },
+   {
+    "sid": "lesson-d4#2.0",
+    "en": "A prompt engineer tries to fix a noisy security-findings category by adding the line \"only report high-confidence findings\" to the system prompt."
+   },
+   {
+    "sid": "lesson-d5#24.2",
+    "en": "What best keeps the main agent's context focused on high-level coordination while still producing the list?"
+   },
+   {
+    "sid": "lesson-d2#1.4",
+    "en": "Give the intended tool a higher priority weight in your backend router"
+   },
+   {
+    "sid": "mock04#10.7",
+    "en": "Pick the match with the highest fuzzy name-similarity score and proceed, logging the confidence value for audit."
+   },
+   {
+    "sid": "sample01#3.6",
+    "en": "Switch to a model with higher tool-use accuracy"
+   },
+   {
+    "sid": "selfcheck-d4-kor#2.0",
+    "en": "오탐을 줄이려고 리뷰 프롬프트에 \"be conservative, only report high-confidence findings\"를 넣었다. 오탐은 조금 줄었지만, 나중에 장애로 이어진 off-by-one 버그를 리뷰가 놓쳤다. 현재 문서 기준으로 가장 그럴듯한 설명과 대응은?"
+   },
+   {
+    "sid": "lesson-d4#36.0",
+    "en": "An engineer configures the generation session with a high extended thinking effort and instructs the model to reflect deeply on flaws before submitting its code."
+   }
+  ]
+ },
+ {
+  "lemma": "high-confidence",
+  "kind": "new",
+  "surfaces": [
+   "high-confidence"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d4#2.0",
+    "en": "A prompt engineer tries to fix a noisy security-findings category by adding the line \"only report high-confidence findings\" to the system prompt."
+   },
+   {
+    "sid": "selfcheck-d4-kor#2.0",
+    "en": "오탐을 줄이려고 리뷰 프롬프트에 \"be conservative, only report high-confidence findings\"를 넣었다. 오탐은 조금 줄었지만, 나중에 장애로 이어진 off-by-one 버그를 리뷰가 놓쳤다. 현재 문서 기준으로 가장 그럴듯한 설명과 대응은?"
+   },
+   {
+    "sid": "lesson-d4#2.4",
+    "en": "High-confidence phrasing conflicts with the model's safety training, which is designed to avoid under-reporting risks, causing it to over-report findings as a precautionary default across a wider range of inputs."
+   },
+   {
+    "sid": "lesson-d4#7.3",
+    "en": "Turn it back on right away, but add \"only report high-confidence findings\" to its criteria so it stays quiet"
+   }
+  ]
+ },
+ {
+  "lemma": "high-level",
+  "kind": "new",
+  "surfaces": [
+   "high-level"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d5#24.2",
+    "en": "What best keeps the main agent's context focused on high-level coordination while still producing the list?"
+   },
+   {
+    "sid": "lesson-d2#31.2",
+    "en": "Start by reading CLAUDE.md or AGENTS.md if they exist to gain high-level architecture context, then use Grep to locate the route handler and its imports, and read files incrementally along the call chain."
+   }
+  ]
+ },
+ {
+  "lemma": "high-volume",
+  "kind": "vocab-core",
+  "surfaces": [
+   "high-volume"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "high-volume",
+   "word": "high-volume",
+   "pos": "형용사",
+   "ipa": "ˌhaɪ ˈvɑːljuːm",
+   "meaning": "대량의, 처리량이 많은"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#7.0",
+    "en": "A company is building three Claude integrations: (1) a simple FAQ chatbot for a marketing website, (2) a complex multi-step contract analysis agent that must identify subtle legal risks, (3) a high-volume document classification pipeline processing 50,000 documents per day."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:high-volume.0",
+    "en": "...(3) a high-volume document classification pipeline processing 50,000 documents per day.",
+    "ko": "(3) 하루 5만 건을 처리하는 대량 문서 분류 파이프라인"
+   }
+  ]
+ },
+ {
+  "lemma": "highest-impact",
+  "kind": "vocab-core",
+  "surfaces": [
+   "highest-impact"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "highest-impact",
+   "word": "highest-impact",
+   "pos": "형용사",
+   "ipa": "ˌhaɪɪst ˈɪmpækt",
+   "meaning": "효과가 가장 큰, 가장 큰 영향을 주는"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#3.2",
+    "en": "What is the highest-impact fix?"
+   },
+   {
+    "sid": "sample01#9.3",
+    "en": "What is the highest-impact cost reduction architecture?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:highest-impact.0",
+    "en": "What is the highest-impact fix?",
+    "ko": "효과가 가장 큰 수정은?"
+   }
+  ]
+ },
+ {
+  "lemma": "highly",
+  "kind": "new",
+  "surfaces": [
+   "highly"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#1.3",
+    "en": "\"Only report findings you are highly confident are real problems.\""
+   }
+  ]
+ },
+ {
+  "lemma": "hint",
+  "kind": "new",
+  "surfaces": [
+   "hints"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#7.0",
+    "en": "After developers began dismissing all of a reviewer's comments, a team added its noisy performance-hints category to the skip list."
+   }
+  ]
+ },
+ {
+  "lemma": "hipaa",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "hipaa",
+   "word": "HIPAA",
+   "pos": "약어",
+   "ipa": "ˈhɪpə",
+   "meaning": "미국 의료정보 보호법 — 환자 건강 정보의 취급 기준을 정한 법"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "historical",
+  "kind": "vocab-core",
+  "surfaces": [
+   "historical"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "historical",
+   "word": "historical",
+   "pos": "형용사",
+   "ipa": "hɪˈstɔːrɪkl",
+   "meaning": "과거의, 이력의 (지난 기록에 바탕을 둔) / 역사의"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#10.0",
+    "en": "A team built a classification prompt with twenty exact input-output pairs, one for every edge case they had personally encountered in their historical data."
+   },
+   {
+    "sid": "mock04#3.7",
+    "en": "Fine-tune the model on historical tickets so it learns the $500 threshold from past manager approvals and applies it."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:historical.0",
+    "en": "Fine-tune the model on historical tickets so it learns the $500 threshold from past manager approvals and applies it.",
+    "ko": "과거 티켓으로 모델을 파인튜닝해, 과거 관리자 승인 사례에서 $500 기준을 학습해 적용하게 한다"
+   }
+  ]
+ }
+]

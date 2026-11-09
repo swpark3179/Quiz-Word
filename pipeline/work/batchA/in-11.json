@@ -1,0 +1,1580 @@
+[
+ {
+  "lemma": "deactivate",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "deactivate",
+   "word": "deactivate",
+   "pos": "동사",
+   "ipa": "diˈæktɪveɪt",
+   "meaning": "비활성화하다 — 기능·키를 꺼서 쓰지 못하게 하다"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "deadline",
+  "kind": "vocab-core",
+  "surfaces": [
+   "deadline",
+   "deadlines"
+  ],
+  "freq": 8,
+  "vocab": {
+   "id": "deadline",
+   "word": "deadline",
+   "pos": "명사",
+   "ipa": "ˈdedlaɪn",
+   "meaning": "마감 기한"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#4.0",
+    "en": "You are redesigning a billing agent whose running summary keeps paraphrasing refund amounts, invoice numbers and promised deadlines."
+   },
+   {
+    "sid": "lesson-d5#2.5",
+    "en": "Each summarization pass traded precision for brevity, so the exact amount and deadline were condensed into vague wording"
+   },
+   {
+    "sid": "lesson-d5#3.3",
+    "en": "Store the order number, refund amount, and deadline in a structured record that is passed along with each summary"
+   },
+   {
+    "sid": "lesson-d5#3.5",
+    "en": "Prompt the customer to re-send the order number, refund amount, and deadline each time the summary is refreshed"
+   },
+   {
+    "sid": "lesson-d5#4.6",
+    "en": "After each summarization pass, ask the customer to confirm their order number, amount and deadline again"
+   },
+   {
+    "sid": "lesson-d5#5.2",
+    "en": "Parse each lookup response in code and hand the model only status, purchase date, item, amount and return deadline"
+   },
+   {
+    "sid": "lesson-d5#3.1",
+    "en": "After the third summarization pass, the running summary reads \"the customer wants a refund soon and mentioned an order from last month,\" even though the original messages contained an exact order number, a refund amount of $214.88, and a customer-stated deadline of the 15th."
+   },
+   {
+    "sid": "lesson-d5#5.0",
+    "en": "A returns-processing agent calls an order-lookup tool that returns a JSON payload with 40+ fields (shipping carrier metadata, internal warehouse codes, marketing tags, etc.) for every order it checks, and after a dozen lookups the raw payloads dominate the context window even though only 5 fields (order status, purchase date, item, amount, return-window deadline) matter for return eligibility."
+   }
+  ]
+ },
+ {
+  "lemma": "deal",
+  "kind": "new",
+  "surfaces": [
+   "deal",
+   "deals"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d5#22.2",
+    "en": "Which response deals with the cause?"
+   },
+   {
+    "sid": "lesson-d5#20.5",
+    "en": "Retry both failures with exponential backoff until they succeed, so the coordinator never has to deal with an error"
+   }
+  ]
+ },
+ {
+  "lemma": "debug",
+  "kind": "vocab-core",
+  "surfaces": [
+   "debugging"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "debug",
+   "word": "debug",
+   "pos": "동사",
+   "ipa": "diːˈbʌɡ",
+   "meaning": "디버그하다 — 버그의 원인을 찾아 고치다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#21.1",
+    "en": "In a long debugging session Claude repeatedly runs the full test suite; each run dumps roughly 2,000 lines of passing-test noise into the context."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:debug.0",
+    "en": "In a long debugging session Claude repeatedly runs the full test suite; each run dumps roughly 2,000 lines of passing-test noise into the context.",
+    "ko": "긴 디버깅 세션에서 Claude가 전체 테스트 스위트를 반복해서 실행하는데, 실행할 때마다 통과한 테스트에 관한 소음이 약 2,000줄씩 컨텍스트에 쌓입니다."
+   }
+  ]
+ },
+ {
+  "lemma": "decide",
+  "kind": "new",
+  "surfaces": [
+   "decide",
+   "decides",
+   "decided",
+   "deciding"
+  ],
+  "freq": 19,
+  "sentences": [
+   {
+    "sid": "lesson-d2#18.3",
+    "en": "What combination of changes best addresses this while preserving each agent's ability to decide when to act versus respond?"
+   },
+   {
+    "sid": "lesson-d3#22.0",
+    "en": "Your team must decide whether a new payments integration should use a webhook receiver or a polling worker."
+   },
+   {
+    "sid": "lesson-d4#33.0",
+    "en": "An insurer's claims agent calls the company's own policy-database lookup tool, reads what comes back, and then decides on its next step, often over several turns."
+   },
+   {
+    "sid": "lesson-d5#14.3",
+    "en": "What does the coordinator have to decide its recovery from?"
+   },
+   {
+    "sid": "lesson-d1#16.4",
+    "en": "Shorten it to an open goal such as \"Research the semiconductor shortage\" and let the subagent decide everything else"
+   },
+   {
+    "sid": "mock04#1.8",
+    "en": "Run a lightweight intent classifier over each assistant message to decide whether the turn is a genuine completion."
+   },
+   {
+    "sid": "lesson-d4#7.2",
+    "en": "What should decide when the category goes back on?"
+   },
+   {
+    "sid": "lesson-d5#30.1",
+    "en": "Before using these scores to decide which fields skip human review, what step should the architect take to make the scores trustworthy for routing decisions?"
+   }
+  ]
+ },
+ {
+  "lemma": "decision",
+  "kind": "vocab-core",
+  "surfaces": [
+   "decisions",
+   "decision"
+  ],
+  "freq": 15,
+  "vocab": {
+   "id": "decision",
+   "word": "decision",
+   "pos": "명사",
+   "ipa": "dɪˈsɪʒn",
+   "meaning": "결정, 판단"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#7.0",
+    "en": "An architect delegates a task to a subagent using the Agent tool, expecting it to reference a decision the user made three turns earlier in the main conversation about which authentication provider to use."
+   },
+   {
+    "sid": "lesson-d3#20.1",
+    "en": "Which earlier decision most likely caused this outcome?"
+   },
+   {
+    "sid": "lesson-d5#18.1",
+    "en": "Which set of fields best supports intelligent coordinator recovery decisions?"
+   },
+   {
+    "sid": "lesson-d2#15.3",
+    "en": "Each subagent now discriminates among a much smaller candidate set, which directly reduces the decision complexity that was degrading tool selection at 20 tools"
+   },
+   {
+    "sid": "lesson-d4#34.2",
+    "en": "Add \"challenge every design decision you made earlier\" to the generating session's final prompt before it submits"
+   },
+   {
+    "sid": "mock04#51.5",
+    "en": "Fine-tune a dedicated model on the team's full history of past review decisions and deploy it"
+   },
+   {
+    "sid": "lesson-d1#7.1",
+    "en": "The subagent's response ignores that decision entirely and proposes a different provider."
+   },
+   {
+    "sid": "lesson-d5#30.1",
+    "en": "Before using these scores to decide which fields skip human review, what step should the architect take to make the scores trustworthy for routing decisions?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:decision.0",
+    "en": "Fine-tune a dedicated model on the team's full history of past review decisions and deploy it",
+    "ko": "팀의 과거 리뷰 결정 이력 전체로 전용 모델을 파인튜닝해 배포한다"
+   }
+  ]
+ },
+ {
+  "lemma": "declare",
+  "kind": "vocab-core",
+  "surfaces": [
+   "declare",
+   "declared"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "declare",
+   "word": "declare",
+   "pos": "동사",
+   "ipa": "dɪˈkler",
+   "meaning": "(설정·코드에) 선언하다, 명시하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#2.3",
+    "en": "The tools were declared in the wrong order in the tools array, and reordering them so that the intended tool is listed first will correct the routing behavior."
+   },
+   {
+    "sid": "mock04#14.5",
+    "en": "Declare `allowed-tools` in the skill's SKILL.md frontmatter limited to Read/Glob/Write so the harness blocks Edit and Bash"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:declare.0",
+    "en": "Declare `allowed-tools` in the skill's SKILL.md frontmatter limited to Read/Glob/Write so the harness blocks Edit and Bash",
+    "ko": "스킬의 SKILL.md frontmatter에 `allowed-tools` 를 `Read`, `Glob`, `Write` 로 제한해 선언하고, 하네스가 `Edit` 과 `Bash` 를 차단하게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "decline",
+  "kind": "vocab-core",
+  "surfaces": [
+   "declines",
+   "declined",
+   "decline",
+   "declining"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "decline",
+   "word": "decline",
+   "pos": "동사",
+   "ipa": "dɪˈklaɪn",
+   "meaning": "① 줄어들다, 떨어지다 ② 거절하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#15.0",
+    "en": "A single generalist agent handling an entire content pipeline (research, outline, draft, edit, publish) has 20 tools and shows declining tool-selection accuracy as more tools were added over time."
+   },
+   {
+    "sid": "mock04#8.1",
+    "en": "For refunds above the agent's $500 authority, process_refund correctly declines, but it returns a generic isError response."
+   },
+   {
+    "sid": "lesson-d5#10.4",
+    "en": "Decline the request, treating the own-site adjustment terms as the full list of permitted adjustments"
+   },
+   {
+    "sid": "mock04#55.5",
+    "en": "Switch tool_choice to \"auto\" so the model can decline to call the extraction tool altogether when the PO number is missing."
+   },
+   {
+    "sid": "mock04#8.4",
+    "en": "Have the agent retry with exponential backoff, since repeated attempts eventually succeed for most declined refunds in the logs."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:decline.0",
+    "en": "Developer trust is declining.",
+    "ko": "개발자들의 신뢰가 떨어지고 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "decompose",
+  "kind": "vocab-core",
+  "surfaces": [
+   "decompose",
+   "decomposition"
+  ],
+  "freq": 8,
+  "vocab": {
+   "id": "decompose",
+   "word": "decompose",
+   "pos": "동사",
+   "ipa": "ˌdiːkəmˈpoʊz",
+   "meaning": "(큰 작업을) 작은 단위로 쪼개다, 분해하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.3",
+    "en": "Which decomposition fits best?"
+   },
+   {
+    "sid": "mock04#37.2",
+    "en": "The engineer hard-codes an upfront decomposition into five subagent tasks (billing, invoicing, tax, reporting, auth)."
+   },
+   {
+    "sid": "sample01#17.5",
+    "en": "Decompose into hub-and-spoke with specialized subagents; add PreToolCall hook enforcing fraud-check prerequisite before payment writes"
+   },
+   {
+    "sid": "lesson-d1#34.2",
+    "en": "Which decomposition strategy best fits this workflow?"
+   },
+   {
+    "sid": "mock04#37.4",
+    "en": "What is the most effective decomposition strategy?"
+   },
+   {
+    "sid": "lesson-d1#36.1",
+    "en": "Which design is adaptive decomposition for this investigation?"
+   },
+   {
+    "sid": "mock04#25.4",
+    "en": "Use dynamic decomposition: the coordinator spawns follow-up subtasks as earlier findings reveal them"
+   },
+   {
+    "sid": "lesson-d1#37.2",
+    "en": "Which decomposition approach is most appropriate?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:decompose.0",
+    "en": "Decompose the request into distinct concerns, then investigate each in parallel using shared customer context.",
+    "ko": "요청을 별개의 사안으로 분해한 뒤, 공유 고객 컨텍스트로 각각을 병렬 조사한다."
+   }
+  ]
+ },
+ {
+  "lemma": "decorative",
+  "kind": "new",
+  "surfaces": [
+   "decorative"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#2.6",
+    "en": "The word \"confidence\" is not in the set of tokens the model is trained to parse for output constraints, so the instruction is treated as decorative text and ignored, leaving the original behavior unchanged."
+   }
+  ]
+ },
+ {
+  "lemma": "dedicated",
+  "kind": "vocab-core",
+  "surfaces": [
+   "dedicated"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "dedicated",
+   "word": "dedicated",
+   "pos": "형용사",
+   "ipa": "ˈdedɪkeɪtɪd",
+   "meaning": "전용의, 한 가지 일만 맡는"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#4.6",
+    "en": "Spin up a dedicated formatting subagent that the coordinator calls after every backend lookup to rewrite the raw fields."
+   },
+   {
+    "sid": "lesson-d1#8.3",
+    "en": "Have the coordinator assess each ticket's complexity by running a dedicated lightweight classification prompt that returns a structured JSON object with fields like `complexity` (e.g., `low`, `medium`, `high`) and `required_subagents`, then dynamically invoke only the subagents listed in that output."
+   },
+   {
+    "sid": "mock04#51.5",
+    "en": "Fine-tune a dedicated model on the team's full history of past review decisions and deploy it"
+   },
+   {
+    "sid": "mock04#56.5",
+    "en": "Fine-tune a dedicated document-type classifier and run it before extraction to assign the type to every document."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:dedicated.0",
+    "en": "Create a dedicated error-handling agent that monitors all subagent failures via a shared queue.",
+    "ko": "공유 큐로 모든 서브에이전트 실패를 감시하는 전용 에러 처리 에이전트를 만든다."
+   }
+  ]
+ },
+ {
+  "lemma": "deduplicate",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "deduplicate",
+   "word": "deduplicate",
+   "pos": "동사",
+   "ipa": "diːˈduːplɪkeɪt",
+   "meaning": "중복을 없애다"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:deduplicate.0",
+    "en": "...then have the coordinator deduplicate overlapping findings before synthesis.",
+    "ko": "그런 다음 코디네이터가 겹치는 결과의 중복을 제거하고 종합하게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "deem",
+  "kind": "new",
+  "surfaces": [
+   "deems"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#8.6",
+    "en": "Remove the coordinator entirely and let the classifier subagent directly invoke the remaining subagents it deems necessary."
+   }
+  ]
+ },
+ {
+  "lemma": "deep-dive",
+  "kind": "vocab-core",
+  "surfaces": [
+   "deep-dive"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "deep-dive",
+   "word": "deep-dive",
+   "pos": "명사",
+   "ipa": "ˈdiːp daɪv",
+   "meaning": "심층 분석 (자료), 깊이 파고들기"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#26.1",
+    "en": "After the shared search and document-analysis phase completes, stakeholders want two report variants from the same evidence — a one-page executive brief and a technical deep-dive — without re-running the costly searches."
+   },
+   {
+    "sid": "mock04#26.3",
+    "en": "Continue the same session, generate the brief first, then ask for the deep-dive in the following turn"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:deep-dive.0",
+    "en": "...two report variants from the same evidence — a one-page executive brief and a technical deep-dive — without re-running the costly searches.",
+    "ko": "같은 증거로 두 가지 보고서, 즉 한 페이지짜리 임원 요약본과 기술 심층 분석본을 원합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "deeply",
+  "kind": "new",
+  "surfaces": [
+   "deeply"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d4#36.0",
+    "en": "An engineer configures the generation session with a high extended thinking effort and instructs the model to reflect deeply on flaws before submitting its code."
+   },
+   {
+    "sid": "mock04#58.5",
+    "en": "Enable extended thinking so the model reasons more deeply and reconstructs the missing tax ID from surrounding context clues on the page."
+   },
+   {
+    "sid": "lesson-d3#14.0",
+    "en": "An API team wants a rule requiring input validation and OpenAPI comments to apply only to TypeScript files inside src/api/, including deeply nested route handler subfolders, but not to TypeScript files elsewhere in the repo such as src/utils/ or src/components/."
+   }
+  ]
+ },
+ {
+  "lemma": "default",
+  "kind": "new",
+  "surfaces": [
+   "default"
+  ],
+  "freq": 9,
+  "sentences": [
+   {
+    "sid": "lesson-d5#27.2",
+    "en": "Hours later, asked about OrderService again, the agent describes it as 'typically extending a standard base controller with default error handling,' ignoring its earlier finding."
+   },
+   {
+    "sid": "lesson-d1#25.5",
+    "en": "The hook fires on every single tool call by default unless a timeout value is explicitly configured. Adding a timeout would stop it from matching `issue_refund_note`."
+   },
+   {
+    "sid": "lesson-d2#16.5",
+    "en": "Leave out the tools field on each subagent so it falls back to a safe default set"
+   },
+   {
+    "sid": "lesson-d3#18.6",
+    "en": "Switch from plan mode to default mode so each file read needs approval and fewer files get pulled into context"
+   },
+   {
+    "sid": "lesson-d4#2.4",
+    "en": "High-confidence phrasing conflicts with the model's safety training, which is designed to avoid under-reporting risks, causing it to over-report findings as a precautionary default across a wider range of inputs."
+   },
+   {
+    "sid": "lesson-d3#21.4",
+    "en": "Describe the intended service layout in CLAUDE.md so Claude follows it while extracting code, with each edit approved in default permission mode"
+   },
+   {
+    "sid": "lesson-d3#22.5",
+    "en": "Direct execution in default mode, approving each edit, because approving every step one by one does the same job as a plan"
+   },
+   {
+    "sid": "lesson-d3#25.4",
+    "en": "Name a widely used CSV parsing library in the prompt and tell Claude to build the converter on it, keeping the library's default handling of empty cells and quoted commas, then review the output."
+   }
+  ]
+ },
+ {
+  "lemma": "defect",
+  "kind": "vocab-core",
+  "surfaces": [
+   "defect",
+   "defects"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "defect",
+   "word": "defect",
+   "pos": "명사",
+   "ipa": "ˈdiːfekt",
+   "meaning": "결함, 버그"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#46.2",
+    "en": "The gate is flaky because Claude phrases severe findings differently each run — \"severe issue,\" \"major bug,\" \"critical defect.\""
+   },
+   {
+    "sid": "lesson-d3#27.3",
+    "en": "Combine both failures into a single message that shows the full test run output, noting that the currency-formatting mismatch and the filename extension omission are unrelated defects, and ask Claude to fix both."
+   },
+   {
+    "sid": "mock04-kor#46.1",
+    "en": "CI 파이프라인이 Claude Code를 호출해 풀 리퀘스트마다 리뷰를 수행하고, 셸 게이트 스크립트가 stdout에서 \"CRITICAL\" 이라는 단어를 grep해 빌드를 실패시킵니다. 그런데 Claude가 심각한 발견 사항을 실행할 때마다 \"severe issue\", \"major bug\", \"critical defect\"처럼 다르게 표현하기 때문에 게이트 결과가 들쭉날쭉합니다. 가장 효과적인 해결책은 무엇일까요?"
+   },
+   {
+    "sid": "mock04#51.1",
+    "en": "The CI reviewer handles clear-cut defects well but is inconsistent on genuinely ambiguous cases — for example, whether a bare `except:` is acceptable in a one-off script versus a shared library."
+   },
+   {
+    "sid": "lesson-d3#27.4",
+    "en": "Withhold the filename extension failure and report only the currency-formatting mismatch as the primary defect found first, deferring the secondary extension issue to avoid distracting Claude from the more critical formatting fix."
+   },
+   {
+    "sid": "mock04#47.5",
+    "en": "Enable extended thinking on the generating session before it reviews its own code for defects"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:defect.0",
+    "en": "...Claude phrases severe findings differently each run — \"severe issue,\" \"major bug,\" \"critical defect.\"",
+    "ko": "Claude가 심각한 발견 사항을 실행할 때마다 \"severe issue\", \"major bug\", \"critical defect(치명적 결함)\"처럼 다르게 표현합니다."
+   },
+   {
+    "vid": "vocab:defect.1",
+    "en": "Enable extended thinking on the generating session before it reviews its own code for defects",
+    "ko": "생성 세션이 자기 코드의 결함을 리뷰하기 전에 확장 사고(extended thinking)를 켠다"
+   }
+  ]
+ },
+ {
+  "lemma": "defense",
+  "kind": "vocab-core",
+  "surfaces": [
+   "defense"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "defense",
+   "word": "defense",
+   "pos": "명사",
+   "ipa": "dɪˈfens",
+   "meaning": "방어(책), 방어 수단"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#4.3",
+    "en": "What is the correct defense?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:defense.0",
+    "en": "...What is the correct defense?",
+    "ko": "...올바른 방어책은?"
+   }
+  ]
+ },
+ {
+  "lemma": "defer",
+  "kind": "vocab-core",
+  "surfaces": [
+   "defer",
+   "deferring"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "defer",
+   "word": "defer",
+   "pos": "동사",
+   "ipa": "dɪˈfɜːr",
+   "meaning": "① 미루다 ② (판단을) 남에게 맡기다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#5.7",
+    "en": "Add a rule to the subagent's system prompt telling it to defer to decisions the user made upstream"
+   },
+   {
+    "sid": "lesson-d3#27.4",
+    "en": "Withhold the filename extension failure and report only the currency-formatting mismatch as the primary defect found first, deferring the secondary extension issue to avoid distracting Claude from the more critical formatting fix."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:defer.0",
+    "en": "Start direct execution to scaffold the Slack channel class, deferring the integration method decision until later.",
+    "ko": "직접 실행으로 Slack 채널 클래스 뼈대부터 만들고, 통합 방식 결정은 나중으로 미룬다."
+   }
+  ]
+ },
+ {
+  "lemma": "define",
+  "kind": "vocab-core",
+  "surfaces": [
+   "define",
+   "defined",
+   "defining",
+   "predefined",
+   "user-defined",
+   "defines"
+  ],
+  "freq": 15,
+  "vocab": {
+   "id": "define",
+   "word": "define",
+   "pos": "동사",
+   "ipa": "dɪˈfaɪn",
+   "meaning": "정의하다, (명확히) 정하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.0",
+    "en": "An architect is defining a \"database-migration\" AgentDefinition with a long prompt field describing SQL best practices, rollback strategy, and data integrity checks."
+   },
+   {
+    "sid": "lesson-d2#1.0",
+    "en": "Your agent has two user-defined tools, and Claude keeps calling the wrong one."
+   },
+   {
+    "sid": "lesson-d4#6.0",
+    "en": "An architect is structuring a long review prompt that defines separate criteria for security, correctness, and style categories, each with its own inclusion rules and severity examples."
+   },
+   {
+    "sid": "sample01#19.0",
+    "en": "Two tools are defined: `get_user_info(user_id)` and `fetch_account_details(account_id)`."
+   },
+   {
+    "sid": "lesson-d5#30.5",
+    "en": "Replace the 0-to-1 values with high, medium and low labels defined in the prompt, then let the fields labeled high skip review and send the rest to human reviewers."
+   },
+   {
+    "sid": "mock04#17.5",
+    "en": "Expand the request into a longer prose description defining what \"robust\" and \"idiomatic\" mean for validation"
+   },
+   {
+    "sid": "selfcheck-d2-kor#1.0",
+    "en": "Define tools 문서가 도구 성능에 \"단연 가장 중요한 요소\"로 꼽는 것은?"
+   },
+   {
+    "sid": "lesson-d2#22.1",
+    "en": "The repository's committed .mcp.json also defines `analytics`, pointing at the team's production endpoint."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:define.0",
+    "en": "Define explicit named categories with concrete examples of each in the system prompt",
+    "ko": "시스템 프롬프트에 이름이 붙은 명시적 카테고리와 각각의 구체적 예시를 정의한다"
+   },
+   {
+    "vid": "vocab:define.1",
+    "en": "Two tools are defined: `get_user_info(user_id)` and `fetch_account_details(account_id)`.",
+    "ko": "`get_user_info(user_id)` 와 `fetch_account_details(account_id)` 두 도구가 정의돼 있습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "definition",
+  "kind": "vocab-core",
+  "surfaces": [
+   "definitions",
+   "definition"
+  ],
+  "freq": 30,
+  "vocab": {
+   "id": "definition",
+   "word": "definition",
+   "pos": "명사",
+   "ipa": "ˌdefɪˈnɪʃn",
+   "meaning": "정의 — (도구·함수의) 이름·설명·입력 형식을 적은 명세"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#22.3",
+    "en": "The developer wants the team's production definition."
+   },
+   {
+    "sid": "lesson-d5#1.0",
+    "en": "A support bot built on the Messages API sends the system prompt, its tool definitions and the customer's newest message on each request."
+   },
+   {
+    "sid": "mock04#24.2",
+    "en": "The subagent definitions exist and work when tested standalone."
+   },
+   {
+    "sid": "sample01#3.0",
+    "en": "A tool definition for a flight search API is shown below."
+   },
+   {
+    "sid": "lesson-d1#12.3",
+    "en": "Set tools to [\"Read\", \"Grep\"] on the doc-reviewer definition so it inherits only the listed read tools regardless of what the coordinator has available"
+   },
+   {
+    "sid": "lesson-d3#23.6",
+    "en": "Follow 2–3 concrete examples of edits, each paired with the exact document state it should produce, as the definition of correct behaviour"
+   },
+   {
+    "sid": "lesson-d4#22.5",
+    "en": "Schema definition gap; tighten the schema with a numeric range or pattern on order_total so that inconsistent totals are rejected"
+   },
+   {
+    "sid": "lesson-d2#23.1",
+    "en": "When that developer runs Claude Code in the project, which server definition is used?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:definition.0",
+    "en": "Tool definitions are missing `required` fields in the JSON schema",
+    "ko": "도구 정의의 JSON 스키마에 `required` 필드가 없다"
+   }
+  ]
+ },
+ {
+  "lemma": "deflection",
+  "kind": "vocab-core",
+  "surfaces": [
+   "deflection"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "deflection",
+   "word": "deflection",
+   "pos": "명사",
+   "ipa": "dɪˈflekʃn",
+   "meaning": "① (고객 지원) 자체 해결 — 사람 상담원까지 가지 않고 처리됨 (deflection rate) ② 빗나감, 회피"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#7.4",
+    "en": "Never hand off, because every escalation lowers the deflection rate and adds cost."
+   }
+  ]
+ },
+ {
+  "lemma": "degrade",
+  "kind": "vocab-core",
+  "surfaces": [
+   "degrades",
+   "degrade",
+   "degradation",
+   "degrading"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "degrade",
+   "word": "degrade",
+   "pos": "동사",
+   "ipa": "dɪˈɡreɪd",
+   "meaning": "(품질·성능이) 떨어지다, 저하되다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#10.1",
+    "en": "The prompt performs well on those twenty inputs but degrades noticeably whenever a customer submits a new input that is similar to, but not identical to, one of the twenty."
+   },
+   {
+    "sid": "mock04#12.2",
+    "en": "Developers notice that after running it, the main session is cluttered with raw output and Claude's subsequent answers in that session degrade in quality."
+   },
+   {
+    "sid": "sample01#6.1",
+    "en": "After turn 25, response quality degrades — the model starts forgetting earlier findings and repeating tool calls it already made."
+   },
+   {
+    "sid": "lesson-d2#14.4",
+    "en": "Leave it as it is until it reaches 30–50 tools, the point where accuracy visibly degrades"
+   },
+   {
+    "sid": "mock04#44.3",
+    "en": "Done inline, this verbose discovery floods the main session's context and later steps degrade from lost-in-the-middle effects."
+   },
+   {
+    "sid": "lesson-d2#15.3",
+    "en": "Each subagent now discriminates among a much smaller candidate set, which directly reduces the decision complexity that was degrading tool selection at 20 tools"
+   },
+   {
+    "sid": "mock04#12.6",
+    "en": "Increase the context window size so the accumulated exploration output no longer causes any degradation in later answers"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:degrade.0",
+    "en": "After turn 25, response quality degrades — the model starts forgetting earlier findings and repeating tool calls it already made.",
+    "ko": "25턴 이후 응답 품질이 떨어져, 모델이 앞서 찾은 내용을 잊고 이미 했던 도구 호출을 반복합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "delay",
+  "kind": "vocab-core",
+  "surfaces": [
+   "delay"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "delay",
+   "word": "delay",
+   "pos": "명사·동사",
+   "ipa": "dɪˈleɪ",
+   "meaning": "지연, 대기 시간 · 늦추다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#7.4",
+    "en": "Retry get_customer automatically in a tight loop until the database answers, with no upper bound on attempts or backoff delay."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:delay.0",
+    "en": "Retry get_customer automatically in a tight loop until the database answers, with no upper bound on attempts or backoff delay.",
+    "ko": "데이터베이스가 응답할 때까지 시도 횟수 상한이나 백오프 지연 없이 `get_customer` 를 촘촘한 루프로 자동 재시도한다."
+   }
+  ]
+ },
+ {
+  "lemma": "delegate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "delegate",
+   "delegations",
+   "delegating",
+   "delegation",
+   "delegates"
+  ],
+  "freq": 14,
+  "vocab": {
+   "id": "delegate",
+   "word": "delegate",
+   "pos": "동사",
+   "ipa": "ˈdelɪɡeɪt",
+   "meaning": "(일·권한을) 맡기다, 위임하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#16.0",
+    "en": "A coordinator delegates market research with a script: \"Search 'chip shortage 2025', open the top five results, summarise each, then search 'chip prices'.\""
+   },
+   {
+    "sid": "lesson-d2#18.0",
+    "en": "A coordinator agent delegates tasks to a research agent, a coding agent, and a QA agent."
+   },
+   {
+    "sid": "mock04#24.1",
+    "en": "A newly configured coordinator answers research questions directly from its own knowledge instead of delegating; its attempts to invoke subagents never appear in the trace."
+   },
+   {
+    "sid": "lesson-d1#16.2",
+    "en": "How should the delegation prompt be rewritten?"
+   },
+   {
+    "sid": "mock04#19.6",
+    "en": "Delegate discovery to an Explore subagent that returns only a summary of call sites, keeping the main context for edits."
+   },
+   {
+    "sid": "lesson-d1#5.0",
+    "en": "A coordinator agent delegates an integration task to a subagent."
+   },
+   {
+    "sid": "mock04#22.4",
+    "en": "Increase the coordinator's context window so that more of the earlier findings stay resident across delegations"
+   },
+   {
+    "sid": "lesson-d1#7.0",
+    "en": "An architect delegates a task to a subagent using the Agent tool, expecting it to reference a decision the user made three turns earlier in the main conversation about which authentication provider to use."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:delegate.0",
+    "en": "Have the coordinator explicitly partition the research space before delegation.",
+    "ko": "코디네이터가 위임하기 전에 조사 범위를 명시적으로 나누게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "delete",
+  "kind": "new",
+  "surfaces": [
+   "delete"
+  ],
+  "freq": 6,
+  "sentences": [
+   {
+    "sid": "lesson-d2#22.6",
+    "en": "Delete the url field from the local entry so the merged configuration takes its url from .mcp.json"
+   },
+   {
+    "sid": "mock04#13.6",
+    "en": "Delete the skill's `description` frontmatter so Claude can no longer match it to conversation topics or dependency files"
+   },
+   {
+    "sid": "lesson-d2#5.6",
+    "en": "Delete the description text from both tools so the model relies entirely on tool names for disambiguation."
+   },
+   {
+    "sid": "mock04#43.7",
+    "en": "Delete the file and have the agent regenerate it from scratch using the new constant name throughout."
+   },
+   {
+    "sid": "lesson-d2#6.2",
+    "en": "Delete `analyze_document` and require users to always paste document contents in as plain text from now on."
+   },
+   {
+    "sid": "mock04#49.7",
+    "en": "Delete the rubric from CLAUDE.md and inline its full text into each review command invocation by hand"
+   }
+  ]
+ },
+ {
+  "lemma": "deliberation",
+  "kind": "vocab-core",
+  "surfaces": [
+   "deliberation",
+   "deliberate"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "deliberation",
+   "word": "deliberation",
+   "pos": "명사",
+   "ipa": "dɪˌlɪbəˈreɪʃn",
+   "meaning": "숙고, 신중한 검토"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#11.0",
+    "en": "Developers have started ignoring a review bot because it flags every broad `catch` block in a TypeScript service, including deliberate ones."
+   },
+   {
+    "sid": "mock04#23.7",
+    "en": "Set tool_choice to 'any' so the coordinator selects its tools faster and skips deliberation between calls"
+   },
+   {
+    "sid": "lesson-d4#11.6",
+    "en": "No examples, just an instruction saying \"do not flag broad catch blocks\", so the deliberate uses stop showing up"
+   },
+   {
+    "sid": "mock04#30.7",
+    "en": "Force tool_choice to \"any\" so the model commits to exactly one deliberate tool call on every turn it takes."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:deliberation.0",
+    "en": "Enable extended thinking mode for the generation pass for more thorough deliberation.",
+    "ko": "더 철저히 숙고하도록 생성 패스에 extended thinking 모드를 켠다."
+   }
+  ]
+ },
+ {
+  "lemma": "delimiter",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "delimiter",
+   "word": "delimiter",
+   "pos": "명사",
+   "ipa": "dɪˈlɪmɪtər",
+   "meaning": "구분자 — 내용의 시작과 끝을 나누는 기호·태그"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "delta",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "delta",
+   "word": "delta",
+   "pos": "명사",
+   "ipa": "ˈdeltə",
+   "meaning": "델타, 변화분 — 스트리밍에서 조금씩 덧붙여 오는 출력 조각 (content_block_delta)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "demarcate",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "demarcate",
+   "word": "demarcate",
+   "pos": "동사",
+   "ipa": "ˈdiːmɑːrkeɪt",
+   "meaning": "경계를 정하다, 구분 짓다"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:demarcate.0",
+    "en": "Split the skill into two separate skills ... to demarcate when exploration context should be discarded.",
+    "ko": "탐색 맥락을 언제 버려야 하는지 구분하기 위해 스킬을 둘로 나눈다."
+   }
+  ]
+ },
+ {
+  "lemma": "demonstrate",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "demonstrate",
+   "word": "demonstrate",
+   "pos": "동사",
+   "ipa": "ˈdemənstreɪt",
+   "meaning": "(예시로) 보여 주다, 입증하다"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:demonstrate.0",
+    "en": "Add few-shot examples to the system prompt demonstrating correct tool selection (5-8 examples).",
+    "ko": "올바른 도구 선택을 보여 주는 few-shot 예시 5~8개를 시스템 프롬프트에 추가한다."
+   }
+  ]
+ },
+ {
+  "lemma": "deny",
+  "kind": "vocab-core",
+  "surfaces": [
+   "deny",
+   "denials",
+   "denies",
+   "denied"
+  ],
+  "freq": 14,
+  "vocab": {
+   "id": "deny",
+   "word": "deny",
+   "pos": "동사",
+   "ipa": "dɪˈnaɪ",
+   "meaning": "① (권한·요청을) 거부하다, 막다 ② 부인하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#22.1",
+    "en": "Hook A loads the verification record into a shared variable, and Hook B reads that variable and denies the call if it is empty."
+   },
+   {
+    "sid": "sample01#12.3",
+    "en": "Add deny rules in the `permissions` section of `settings.json`"
+   },
+   {
+    "sid": "sample01-kor#12.2",
+    "en": "`settings.json` 의 `permissions` 섹션에 deny 규칙을 추가한다."
+   },
+   {
+    "sid": "lesson-d1#22.2",
+    "en": "In testing, some refunds are wrongly denied and the failures look random."
+   },
+   {
+    "sid": "sample01#12.5",
+    "en": "Both the `settings.json` deny rules and the `PreToolUse` hook are valid architectural approaches; the hook provides more flexibility"
+   },
+   {
+    "sid": "sample01-kor#12.3",
+    "en": "`settings.json` 의 deny 규칙과 `PreToolUse` 훅 모두 유효한 아키텍처적 접근이며, 훅이 더 유연하다."
+   },
+   {
+    "sid": "lesson-d1#28.0",
+    "en": "An unattended support agent, where no permission prompt may ever appear, has a PreToolUse hook that denies refunds over $500 with the reason \"Refund denied\"."
+   },
+   {
+    "sid": "sample01#18.4",
+    "en": "Claude Code refuses — `CLAUDE.md` rules are enforced like permission denials"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:deny.0",
+    "en": "Add deny rules in the `permissions` section of `settings.json`",
+    "ko": "`settings.json` 의 `permissions` 섹션에 deny(거부) 규칙을 추가한다"
+   },
+   {
+    "vid": "vocab:deny.1",
+    "en": "Claude Code refuses — `CLAUDE.md` rules are enforced like permission denials",
+    "ko": "Claude Code는 거부한다 — `CLAUDE.md` 규칙은 권한 거부처럼 강제된다"
+   }
+  ]
+ },
+ {
+  "lemma": "denylist",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "denylist",
+   "word": "denylist",
+   "pos": "명사",
+   "ipa": "ˈdaɪnaɪlɪst",
+   "meaning": "거부 목록 — 막을 대상을 적어 둔 목록 (↔ allowlist)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "departure",
+  "kind": "new",
+  "surfaces": [
+   "departure"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#13.4",
+    "en": "Open the record with the most recent departure date on the route, then continue the claim review"
+   }
+  ]
+ },
+ {
+  "lemma": "depend",
+  "kind": "vocab-core",
+  "surfaces": [
+   "depends",
+   "depend",
+   "dependable"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "depend",
+   "word": "depend",
+   "pos": "동사",
+   "ipa": "dɪˈpend",
+   "meaning": "(~에) 달려 있다, 의존하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#11.1",
+    "en": "Both strategies depend on everything that analysis found."
+   },
+   {
+    "sid": "lesson-d2#16.2",
+    "en": "What is the most dependable fix?"
+   },
+   {
+    "sid": "mock04#31.1",
+    "en": "The document-analysis subagent must call classify_document before running any field extraction, because the extraction schema depends on the detected type."
+   },
+   {
+    "sid": "lesson-d4#3.5",
+    "en": "Report it only after confirming a caller depends on the cached behavior, since a stale docstring that nobody relies on does not affect behavior."
+   },
+   {
+    "sid": "lesson-d5#25.5",
+    "en": "Have the agent read NOTES.md before it answers any question that depends on an earlier finding"
+   },
+   {
+    "sid": "lesson-d2#17.2",
+    "en": "What is the most dependable fix?"
+   },
+   {
+    "sid": "lesson-d2#19.1",
+    "en": "The enrichment tools depend on fields that only extract_metadata produces, and in early tests the model sometimes calls an enrichment tool first with guessed values."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:depend.0",
+    "en": "...must call classify_document before running any field extraction, because the extraction schema depends on the detected type.",
+    "ko": "추출 스키마가 감지된 문서 유형에 따라 달라지므로, 필드 추출을 하기 전에 반드시 `classify_document` 를 호출해야 합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "dependency",
+  "kind": "vocab-core",
+  "surfaces": [
+   "dependency",
+   "dependencies"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "dependency",
+   "word": "dependency",
+   "pos": "명사",
+   "ipa": "dɪˈpendənsi",
+   "meaning": "의존 관계, (패키지) 의존성"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#23.3",
+    "en": "Trace the refund flow's dependencies across modules and report the call chain"
+   },
+   {
+    "sid": "mock04#13.6",
+    "en": "Delete the skill's `description` frontmatter so Claude can no longer match it to conversation topics or dependency files"
+   },
+   {
+    "sid": "mock04#13.1",
+    "en": "A team's `.claude/skills/dep-audit/` skill is meant to be run manually before releases, but Claude keeps auto-invoking it mid-session whenever dependency files come up, dumping roughly 4,000 lines of resolution output into unrelated refactoring sessions."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:dependency.0",
+    "en": "This will involve changes across dozens of files and requires decisions about service boundaries and module dependencies.",
+    "ko": "수십 개 파일에 걸친 변경이 필요하고, 서비스 경계와 모듈 의존성에 대한 결정이 요구된다."
+   },
+   {
+    "vid": "vocab:dependency.1",
+    "en": "...comprehensive code analysis—dependency scanning, test coverage calculation, and code quality metrics.",
+    "ko": "의존성 스캔, 테스트 커버리지 계산, 코드 품질 지표 같은 종합 코드 분석."
+   }
+  ]
+ },
+ {
+  "lemma": "dependent",
+  "kind": "vocab-core",
+  "surfaces": [
+   "dependent"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "dependent",
+   "word": "dependent",
+   "pos": "형용사",
+   "ipa": "dɪˈpendənt",
+   "meaning": "(~에) 의존하는, 영향을 받는"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#16.7",
+    "en": "Batch the three interacting changes into a single message so Claude edits the enum and all dependent switch sites together"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:dependent.0",
+    "en": "Batch the three interacting changes into a single message so Claude edits the enum and all dependent switch sites together",
+    "ko": "서로 얽힌 세 변경을 하나의 메시지로 묶어, Claude가 enum과 이에 의존하는 모든 switch 지점을 함께 수정하게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "deploy",
+  "kind": "vocab-core",
+  "surfaces": [
+   "deploys",
+   "deploy",
+   "deployment"
+  ],
+  "freq": 12,
+  "vocab": {
+   "id": "deploy",
+   "word": "deploy",
+   "pos": "동사",
+   "ipa": "dɪˈplɔɪ",
+   "meaning": "배포하다, (운영 환경에) 투입하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#16.1",
+    "en": "The synthesis agent keeps running its own web searches, and the QA agent once called the deploy tool."
+   },
+   {
+    "sid": "lesson-d3#21.0",
+    "en": "A platform team is restructuring a monolith into three microservices, touching shared data models, service boundaries, and deployment topology, with several viable ways to split the code."
+   },
+   {
+    "sid": "lesson-d4#12.2",
+    "en": "After deployment, the model performs well on similar short English emails but starts mislabeling longer documents and documents in other languages that it previously handled correctly under the old, example-free prompt."
+   },
+   {
+    "sid": "sample01#4.0",
+    "en": "A company deploys an MCP server that gives Claude access to internal knowledge bases and HR systems."
+   },
+   {
+    "sid": "mock04#51.5",
+    "en": "Fine-tune a dedicated model on the team's full history of past review decisions and deploy it"
+   },
+   {
+    "sid": "lesson-d2#18.2",
+    "en": "The team reports agents occasionally reaching for tools clearly outside their remit, like the QA agent invoking a deploy tool."
+   },
+   {
+    "sid": "lesson-d3#6.0",
+    "en": "A project's single CLAUDE.md has grown to over 500 lines covering code style, testing, security requirements, and deployment steps, and the team notices Claude adheres to instructions less reliably than before."
+   },
+   {
+    "sid": "lesson-d2#11.5",
+    "en": "Use `errorCategory: \"transient\"` with `isRetryable: true`; the deploy service refused the call as it does during an outage, so retrying with backoff should get through"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:deploy.0",
+    "en": "A company deploys an MCP server that gives Claude access to internal knowledge bases and HR systems.",
+    "ko": "한 회사가 Claude에게 사내 지식베이스와 HR 시스템 접근 권한을 주는 MCP 서버를 배포했습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "deposit",
+  "kind": "new",
+  "surfaces": [
+   "deposits"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#20.1",
+    "en": "An audit later finds several instances where deposits were mislabeled as withdrawals, even though every amount and transaction_type field is present and passes schema validation."
+   }
+  ]
+ },
+ {
+  "lemma": "deprecate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "deprecated"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "deprecate",
+   "word": "deprecate",
+   "pos": "동사",
+   "ipa": "ˈdeprəkeɪt",
+   "meaning": "(기능·모델을) 지원 중단 예정으로 지정하다 — deprecated: 곧 없어질 예정인, 사용 중단이 권고된"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#29.0",
+    "en": "A developer wants Claude Code to update a deprecated log statement `logger.warn(\"legacy-path\")` that appears twice in the same file, in two different functions, where only one of the two occurrences should change."
+   },
+   {
+    "sid": "lesson-d5#23.5",
+    "en": "Scan every module for calls to a deprecated logging API and report the affected files"
+   }
+  ]
+ },
+ {
+  "lemma": "depth",
+  "kind": "new",
+  "surfaces": [
+   "depth"
+  ],
+  "freq": 6,
+  "sentences": [
+   {
+    "sid": "lesson-d3#16.0",
+    "en": "An infrastructure team wants Claude Code to load Terraform-specific formatting and tagging conventions only when Claude edits files under the terraform/ directory, at any subfolder depth."
+   },
+   {
+    "sid": "lesson-d4#36.3",
+    "en": "Reflection raises the reasoning budget but applies the same depth of checking to each issue, so extra effort adds little scrutiny"
+   },
+   {
+    "sid": "lesson-d5#11.5",
+    "en": "Keep the confidence rule and drop the sentiment rule, because the model is the best judge of when it is out of its depth"
+   },
+   {
+    "sid": "lesson-d3#30.6",
+    "en": "The checkout used a shallow fetch-depth, so the CLI could not resolve the diff against the base branch and sat scanning the git history for missing commits"
+   },
+   {
+    "sid": "lesson-d3#15.0",
+    "en": "In a Claude Code rules file, the same conventions must apply to `.ts` and `.tsx` files at any depth under `src/`, plus `.ts` files at any depth under `lib/` (including nested subdirectories), using as few `paths` glob pattern entries as possible."
+   }
+  ]
+ },
+ {
+  "lemma": "derive",
+  "kind": "new",
+  "surfaces": [
+   "derives",
+   "derived",
+   "deriving"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d1#18.1",
+    "en": "The synthesis subagent's output ignores nearly all of the researcher's findings and instead re-derives generic conclusions from scratch."
+   },
+   {
+    "sid": "lesson-d2#24.0",
+    "en": "An internal MCP server requires a Kerberos-derived token that must be freshly minted for every connection, and no OAuth authorization server is involved."
+   },
+   {
+    "sid": "lesson-d3#25.5",
+    "en": "Ask Claude to write the converter together with its own unit tests, deriving the expected output for empty cells, quoted commas and duplicate headers from the prompt, and iterate until the tests pass."
+   },
+   {
+    "sid": "lesson-d3#28.5",
+    "en": "A request to write the converter plus its own unit tests, with expected outputs derived from your written spec"
+   }
+  ]
+ },
+ {
+  "lemma": "describe",
+  "kind": "new",
+  "surfaces": [
+   "describing",
+   "described",
+   "describe",
+   "describes"
+  ],
+  "freq": 12,
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.0",
+    "en": "An architect is defining a \"database-migration\" AgentDefinition with a long prompt field describing SQL best practices, rollback strategy, and data integrity checks."
+   },
+   {
+    "sid": "lesson-d2#25.0",
+    "en": "A team's MCP server exposes `find_code`, described only as \"Searches code.\""
+   },
+   {
+    "sid": "lesson-d5#10.1",
+    "en": "The store's documented policy only describes price adjustments when the store's own website lowers a price within 14 days of purchase; it does not mention competitor pricing at all."
+   },
+   {
+    "sid": "lesson-d3#21.4",
+    "en": "Describe the intended service layout in CLAUDE.md so Claude follows it while extracting code, with each edit approved in default permission mode"
+   },
+   {
+    "sid": "lesson-d4#10.5",
+    "en": "Remove the examples and describe the desired classification behavior in a single instruction sentence"
+   },
+   {
+    "sid": "lesson-d1#17.1",
+    "en": "Separately, each time the coordinator invokes this subagent it supplies a different per-call prompt describing the specific table and migration at hand."
+   },
+   {
+    "sid": "lesson-d5#22.1",
+    "en": "When asked about a class it examined in detail early on, it now describes what such a class typically looks like, and its two latest answers about that component disagree."
+   },
+   {
+    "sid": "lesson-d2#27.5",
+    "en": "Use Read to open every file under src/components and manually inspect each one for an associated describe block before counting"
+   }
+  ]
+ },
+ {
+  "lemma": "description",
+  "kind": "vocab-core",
+  "surfaces": [
+   "descriptions",
+   "description"
+  ],
+  "freq": 45,
+  "vocab": {
+   "id": "description",
+   "word": "description",
+   "pos": "명사",
+   "ipa": "dɪˈskrɪpʃn",
+   "meaning": "설명 — (도구 정의의) 설명 문구"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#32.1",
+    "en": "It writes a product description, code checks the length and banned terms, and then the description is translated into German and French."
+   },
+   {
+    "sid": "lesson-d2#2.0",
+    "en": "A team names two tools `process_data` and `process_information`, and both share the description \"Processes data provided by the user.\""
+   },
+   {
+    "sid": "mock04#33.1",
+    "en": "The web-search subagent is equipped with two tools, search_web and search_academic, each carrying a one-line description (\"search the web\" / \"search academic sources\")."
+   },
+   {
+    "sid": "sample01#19.2",
+    "en": "The tool descriptions are: 'Gets user information' and 'Fetches account details'."
+   },
+   {
+    "sid": "lesson-d3#24.6",
+    "en": "Ask Claude to regenerate the whole migration script from the original schema description in a fresh session, so the null handling is written again from scratch"
+   },
+   {
+    "sid": "lesson-d4#13.6",
+    "en": "Remove the examples and write a more detailed description of the dose field, so the model stops copying a pattern"
+   },
+   {
+    "sid": "mock04-kor#6.1",
+    "en": "`process_refund` 를 `process_full_refund` 와 `process_partial_credit` 로 나누고, 각 도구의 description에 언제 써야 하는지 정확히 적는다."
+   },
+   {
+    "sid": "sample01-kor#3.1",
+    "en": "`\"required\": [\"from\", \"to\", \"date\"]` 를 추가하고, 설명(description)에 형식 예시와 제약 조건을 풍부하게 넣는다."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:description.0",
+    "en": "The tool descriptions are: 'Gets user information' and 'Fetches account details'.",
+    "ko": "도구 설명은 각각 \"Gets user information\", \"Fetches account details\" 입니다."
+   }
+  ]
+ },
+ {
+  "lemma": "descriptive",
+  "kind": "vocab-core",
+  "surfaces": [
+   "descriptively",
+   "descriptive"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "descriptive",
+   "word": "descriptive",
+   "pos": "형용사",
+   "ipa": "dɪˈskrɪptɪv",
+   "meaning": "설명적인, 서술형의 — 내용을 그대로 풀어 쓰는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#29.4",
+    "en": "doc 2026 report final v2, since spaces between each descriptive segment keep the identifier readable when scanning a long results file by eye"
+   },
+   {
+    "sid": "lesson-d4#29.5",
+    "en": "doc#2026#report#final#v2, since separating each descriptive segment with a distinct punctuation mark avoids any ambiguity about where one part ends"
+   },
+   {
+    "sid": "lesson-d4#5.6",
+    "en": "Put each category's rules and examples inside its own descriptively named XML tag, such as <security_criteria> and <style_criteria>"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:descriptive.0",
+    "en": "Filter out TODO, FIXME, and descriptive comment patterns before analysis to reduce noise.",
+    "ko": "노이즈를 줄이려고 분석 전에 TODO·FIXME·설명형 주석 패턴을 걸러 낸다."
+   }
+  ]
+ }
+]

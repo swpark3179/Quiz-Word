@@ -1,0 +1,217 @@
+# iOS 앱(mobile/) 빌드 → TestFlight 업로드
+#
+# Quiz-Bank 의 native-build-testflight.yml (build-ios · submit-testflight 잡)과 같은 방식:
+#   Expo prebuild → CocoaPods → xcodebuild archive/export(수동 서명) → altool 로 TestFlight 업로드
+# EAS Build 는 쓰지 않는다. 화면·단어 수정은 OTA(eas update)로 하고, 이 워크플로는 네이티브가 바뀔 때만 실행한다.
+#
+# 실행: Actions → "iOS TestFlight" → Run workflow
+#   gh workflow run ios-testflight.yml -f upload_testflight=true
+#
+# 필요한 시크릿 (Settings → Secrets and variables → Actions)
+#   Quiz-Bank 와 같은 값을 다시 입력:
+#     IOS_P12_BASE64                  - 배포(Distribution) .p12 인증서 base64
+#     IOS_P12_PASSWORD                - p12 비밀번호
+#     IOS_KEYCHAIN_PASSWORD           - 빌드용 임시 키체인 비밀번호 (아무 문자열)
+#     IOS_TEAM_ID                     - Apple Developer Team ID
+#     IOS_CODE_SIGN_IDENTITY          - 예: "Apple Distribution"
+#     ASC_KEY_ID / ASC_ISSUER_ID      - App Store Connect API 키
+#     ASC_PRIVATE_KEY                 - AuthKey_XXXX.p8 내용 (원문 또는 base64)
+#   이 앱용으로 새로 만들기:
+#     IOS_PROVISIONING_PROFILE_BASE64 - com.swpark3179.quizword 의 App Store 프로비저닝 프로파일 base64
+#     IOS_PROVISIONING_PROFILE_NAME   - 그 프로파일의 Name (UUID 아님)
+
+name: iOS TestFlight
+
+on:
+  workflow_dispatch:
+    inputs:
+      upload_testflight:
+        description: 'Upload the build to TestFlight'
+        type: boolean
+        default: true
+
+env:
+  BUNDLE_ID: com.swpark3179.quizword
+  NODE_VERSION: 22
+
+jobs:
+  check:
+    name: Check (tests · types · iOS bundle)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Shared logic tests & data validation
+        run: |
+          npm ci
+          npx vitest run
+          npm run data:validate
+      - name: Mobile typecheck & iOS bundle
+        working-directory: mobile
+        run: |
+          npm ci
+          npx tsc --noEmit
+          npx expo lint
+          npx expo export --platform ios --output-dir dist
+
+  build-ios:
+    name: Build iOS IPA
+    needs: check
+    # App Store Connect 는 iOS 26 SDK(Xcode 26+)로 만든 빌드만 받는다
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Select Xcode
+        run: |
+          XCODE_PATH=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -n1)
+          if [ -z "$XCODE_PATH" ]; then XCODE_PATH=$(ls -d /Applications/Xcode_*.app 2>/dev/null | sort -V | tail -n1); fi
+          if [ -z "$XCODE_PATH" ]; then XCODE_PATH=/Applications/Xcode.app; fi
+          echo "Using $XCODE_PATH"
+          sudo xcode-select -s "$XCODE_PATH"
+          xcodebuild -version
+          xcrun --sdk iphoneos --show-sdk-version || true
+
+      - name: Install dependencies (shared code & data are synced by postinstall)
+        working-directory: mobile
+        run: npm ci
+
+      - name: Expo prebuild (ios)
+        working-directory: mobile
+        env:
+          BUILD_NUMBER: ${{ github.run_number }}
+        run: npx expo prebuild --platform ios --no-install --clean
+
+      - name: Install CocoaPods
+        working-directory: mobile/ios
+        run: pod install --repo-update
+
+      - name: Setup signing keychain
+        env:
+          IOS_P12_BASE64: ${{ secrets.IOS_P12_BASE64 }}
+          IOS_P12_PASSWORD: ${{ secrets.IOS_P12_PASSWORD }}
+          IOS_KEYCHAIN_PASSWORD: ${{ secrets.IOS_KEYCHAIN_PASSWORD }}
+          IOS_PROVISIONING_PROFILE_BASE64: ${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}
+        run: |
+          for v in IOS_P12_BASE64 IOS_P12_PASSWORD IOS_KEYCHAIN_PASSWORD IOS_PROVISIONING_PROFILE_BASE64; do
+            if [ -z "${!v}" ]; then echo "::error::Missing secret $v"; exit 1; fi
+          done
+          KEYCHAIN=build.keychain
+          security create-keychain -p "$IOS_KEYCHAIN_PASSWORD" $KEYCHAIN
+          security default-keychain -s $KEYCHAIN
+          security unlock-keychain -p "$IOS_KEYCHAIN_PASSWORD" $KEYCHAIN
+          security set-keychain-settings -lut 21600 $KEYCHAIN
+          echo "$IOS_P12_BASE64" | base64 -d > cert.p12
+          # OpenSSL 3 은 옛 p12 알고리즘을 거부하므로 -legacy 로 확인만 한다 (실제 등록은 security import)
+          if openssl pkcs12 -legacy -in cert.p12 -nokeys -passin "pass:$IOS_P12_PASSWORD" -info -noout 2>&1; then
+            echo "p12 verification OK"
+          else
+            echo "::warning::openssl could not parse the p12 even with -legacy; relying on 'security import'."
+          fi
+          security import cert.p12 -k "$KEYCHAIN" -P "$IOS_P12_PASSWORD" -T /usr/bin/codesign -T /usr/bin/security
+          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$IOS_KEYCHAIN_PASSWORD" $KEYCHAIN
+          PROFILE_DIR="$HOME/Library/MobileDevice/Provisioning Profiles"
+          mkdir -p "$PROFILE_DIR"
+          echo "$IOS_PROVISIONING_PROFILE_BASE64" | base64 -d > "$PROFILE_DIR/profile.mobileprovision"
+
+      - name: Build & archive
+        working-directory: mobile/ios
+        env:
+          IOS_TEAM_ID: ${{ secrets.IOS_TEAM_ID }}
+          IOS_CODE_SIGN_IDENTITY: ${{ secrets.IOS_CODE_SIGN_IDENTITY }}
+          IOS_PROVISIONING_PROFILE_NAME: ${{ secrets.IOS_PROVISIONING_PROFILE_NAME }}
+        run: |
+          WORKSPACE=$(ls -d *.xcworkspace | head -n1)
+          SCHEME=$(basename "$WORKSPACE" .xcworkspace)
+          xcodebuild \
+            -workspace "$WORKSPACE" \
+            -scheme "$SCHEME" \
+            -configuration Release \
+            -sdk iphoneos \
+            -archivePath "$PWD/build/App.xcarchive" \
+            archive \
+            DEVELOPMENT_TEAM="$IOS_TEAM_ID" \
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="$IOS_CODE_SIGN_IDENTITY" \
+            PROVISIONING_PROFILE_SPECIFIER="$IOS_PROVISIONING_PROFILE_NAME"
+
+      - name: Export IPA (app-store)
+        working-directory: mobile/ios
+        env:
+          IOS_TEAM_ID: ${{ secrets.IOS_TEAM_ID }}
+          IOS_PROVISIONING_PROFILE_NAME: ${{ secrets.IOS_PROVISIONING_PROFILE_NAME }}
+        run: |
+          cat > ExportOptions.plist <<EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key><string>app-store</string>
+            <key>teamID</key><string>${IOS_TEAM_ID}</string>
+            <key>signingStyle</key><string>manual</string>
+            <key>uploadBitcode</key><false/>
+            <key>uploadSymbols</key><true/>
+            <key>provisioningProfiles</key>
+            <dict>
+              <key>${BUNDLE_ID}</key><string>${IOS_PROVISIONING_PROFILE_NAME}</string>
+            </dict>
+          </dict>
+          </plist>
+          EOF
+          xcodebuild -exportArchive -archivePath "$PWD/build/App.xcarchive" -exportOptionsPlist ExportOptions.plist -exportPath "$PWD/build/ipa"
+          IPA=$(find "$PWD/build/ipa" -name "*.ipa" | head -n1)
+          cp "$IPA" "$GITHUB_WORKSPACE/app-release.ipa"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: app-release-ipa
+          path: app-release.ipa
+
+  submit-testflight:
+    name: Upload to TestFlight (altool)
+    needs: build-ios
+    if: ${{ github.event.inputs.upload_testflight == 'true' }}
+    runs-on: macos-26
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: app-release-ipa
+
+      - name: Verify TestFlight secrets
+        run: |
+          MISSING=""
+          [ -z "${{ secrets.ASC_KEY_ID }}" ]      && MISSING="$MISSING ASC_KEY_ID"
+          [ -z "${{ secrets.ASC_ISSUER_ID }}" ]   && MISSING="$MISSING ASC_ISSUER_ID"
+          [ -z "${{ secrets.ASC_PRIVATE_KEY }}" ] && MISSING="$MISSING ASC_PRIVATE_KEY"
+          if [ -n "$MISSING" ]; then echo "::error::Missing secrets:$MISSING"; exit 1; fi
+
+      - name: Setup App Store Connect API key
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+        run: |
+          # altool 은 ~/private_keys/AuthKey_<KEY_ID>.p8 를 찾는다. PEM 이 깨지지 않게 printf 로 쓰고 CRLF 를 지운다.
+          mkdir -p ~/private_keys
+          KEY_PATH="$HOME/private_keys/AuthKey_${ASC_KEY_ID}.p8"
+          printf '%s\n' "$ASC_PRIVATE_KEY" > "$KEY_PATH"
+          tr -d '\r' < "$KEY_PATH" > "$KEY_PATH.tmp" && mv "$KEY_PATH.tmp" "$KEY_PATH"
+          if ! head -n1 "$KEY_PATH" | grep -q "BEGIN PRIVATE KEY"; then
+            tr -d ' \t\r\n' < "$KEY_PATH" | base64 -d > "$KEY_PATH.decoded" 2>/dev/null || { echo "::error::ASC_PRIVATE_KEY is neither a PEM nor valid base64."; exit 1; }
+            mv "$KEY_PATH.decoded" "$KEY_PATH"
+          fi
+          chmod 600 "$KEY_PATH"
+          head -n1 "$KEY_PATH" | grep -q "BEGIN PRIVATE KEY" || { echo "::error::AuthKey file is not a valid PEM private key."; exit 1; }
+
+      - name: Upload to TestFlight
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+        run: |
+          xcrun altool --validate-app -f app-release.ipa -t ios --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID"
+          xcrun altool --upload-app -f app-release.ipa -t ios --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID"

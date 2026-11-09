@@ -1,0 +1,811 @@
+[
+ {
+  "lemma": "abandon",
+  "skip": null,
+  "word": "abandon",
+  "pos": ["동사"],
+  "ipa": "əˈbændən",
+  "meaning": "(계획·방식을) 버리다, 포기하다",
+  "short": "버리다, 포기하다",
+  "senses": [
+   { "pos": "동사", "ko": "(계획·방식을) 버리다, 포기하다" },
+   { "pos": "동사", "ko": "(장소·사람을) 버리고 떠나다" }
+  ],
+  "forms": ["abandons", "abandoned", "abandoning"],
+  "synonyms": ["give up", "discard", "drop"],
+  "domain": "시작·종료",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:abandon.0", "surface": "abandoned", "pos": "동사", "sense": "(계획·방식을) 버리다, 포기하다" }
+  ]
+ },
+ {
+  "lemma": "address",
+  "skip": null,
+  "word": "address",
+  "pos": ["동사", "명사"],
+  "ipa": "əˈdres",
+  "meaning": "① (문제를) 다루다, 해결하다 ② 주소",
+  "short": "다루다, 해결하다",
+  "senses": [
+   { "pos": "동사", "ko": "(문제를) 다루다, 해결하다" },
+   { "pos": "명사", "ko": "주소" },
+   { "pos": "동사", "ko": "(사람에게) 말을 걸다, 연설하다" }
+  ],
+  "forms": ["addresses", "addressed", "addressing"],
+  "synonyms": ["handle", "tackle", "deal with"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#3.2", "surface": "addresses", "pos": "동사", "sense": "(문제를) 다루다, 해결하다" },
+   { "sid": "lesson-d1#20.1", "surface": "address", "pos": "명사", "sense": "주소" },
+   { "sid": "lesson-d3#27.2", "surface": "address", "pos": "동사", "sense": "(문제를) 다루다, 해결하다" },
+   { "sid": "lesson-d2#18.3", "surface": "addresses", "pos": "동사", "sense": "(문제를) 다루다, 해결하다" }
+  ]
+ },
+ {
+  "lemma": "agent",
+  "skip": null,
+  "word": "agent",
+  "pos": ["명사"],
+  "ipa": "ˈeɪdʒənt",
+  "meaning": "① (인공지능) 에이전트 (도구를 써서 스스로 작업하는 프로그램) ② 상담원, 직원 ③ 대리인, 중개인",
+  "short": "에이전트(자율 작업 프로그램)",
+  "senses": [
+   { "pos": "명사", "ko": "(인공지능) 에이전트" },
+   { "pos": "명사", "ko": "상담원, 직원" },
+   { "pos": "명사", "ko": "대리인, 중개인" }
+  ],
+  "forms": ["agents", "agentic"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#1.0", "surface": "agent", "pos": "명사", "sense": "(인공지능) 에이전트" },
+   { "sid": "sample01#1.1", "surface": "agent", "pos": "명사", "sense": "(인공지능) 에이전트" },
+   { "sid": "lesson-d1#1.0", "surface": "agent", "pos": "명사", "sense": "(인공지능) 에이전트" },
+   { "sid": "lesson-d4#33.0", "surface": "agent", "pos": "명사", "sense": "(인공지능) 에이전트" }
+  ]
+ },
+ {
+  "lemma": "agreement",
+  "skip": null,
+  "word": "agreement",
+  "pos": ["명사"],
+  "ipa": "əˈɡriːmənt",
+  "meaning": "① 계약(서), 협정 ② 동의, 합의 ③ 일치",
+  "short": "계약(서), 합의",
+  "senses": [
+   { "pos": "명사", "ko": "계약(서), 협정" },
+   { "pos": "명사", "ko": "동의, 합의" },
+   { "pos": "명사", "ko": "일치" }
+  ],
+  "forms": ["agreements"],
+  "synonyms": ["contract", "accord"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#23.1", "surface": "Agreement", "pos": "명사", "sense": "계약(서), 협정" }
+  ]
+ },
+ {
+  "lemma": "call",
+  "skip": null,
+  "word": "call",
+  "pos": ["동사", "명사"],
+  "ipa": "kɔːl",
+  "meaning": "① (함수·도구를) 호출하다 / 호출 ② 부르다, 전화하다 ③ (~라고) 이름 붙이다",
+  "short": "호출하다, 호출",
+  "senses": [
+   { "pos": "동사", "ko": "(함수·도구를) 호출하다" },
+   { "pos": "명사", "ko": "(함수·도구) 호출" },
+   { "pos": "동사", "ko": "부르다, 전화하다" },
+   { "pos": "동사", "ko": "(~라고) 이름 붙이다" }
+  ],
+  "forms": ["calls", "called", "calling"],
+  "synonyms": ["invoke"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#1.0", "surface": "calling", "pos": "동사", "sense": "(함수·도구를) 호출하다" },
+   { "sid": "lesson-d5#18.0", "surface": "call", "pos": "명사", "sense": "(함수·도구) 호출" },
+   { "sid": "lesson-d3#26.0", "surface": "calls", "pos": "동사", "sense": "(함수·도구를) 호출하다" },
+   { "sid": "lesson-d1#19.0", "surface": "call", "pos": "동사", "sense": "(함수·도구를) 호출하다" }
+  ]
+ },
+ {
+  "lemma": "cause",
+  "skip": null,
+  "word": "cause",
+  "pos": ["명사", "동사"],
+  "ipa": "kɔːz",
+  "meaning": "① 원인 ② 일으키다, 초래하다",
+  "short": "원인, 일으키다",
+  "senses": [
+   { "pos": "명사", "ko": "원인" },
+   { "pos": "동사", "ko": "일으키다, 초래하다" }
+  ],
+  "forms": ["causes", "caused", "causing"],
+  "synonyms": ["reason", "source", "trigger"],
+  "domain": "원인·결과·영향",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#2.3", "surface": "cause", "pos": "명사", "sense": "원인" },
+   { "sid": "lesson-d3#20.1", "surface": "caused", "pos": "동사", "sense": "일으키다, 초래하다" },
+   { "sid": "lesson-d2#4.2", "surface": "cause", "pos": "명사", "sense": "원인" },
+   { "sid": "mock04#12.6", "surface": "causes", "pos": "동사", "sense": "일으키다, 초래하다" }
+  ]
+ },
+ {
+  "lemma": "crosse",
+  "skip": null,
+  "word": "cross",
+  "pos": ["동사", "형용사", "명사"],
+  "ipa": "krɔːs",
+  "meaning": "① (경계·선을) 넘다, 건너다 ② (여러 ~에) 걸친, 교차하는 ③ 십자, 가위표",
+  "short": "넘다, 건너다",
+  "senses": [
+   { "pos": "동사", "ko": "(경계를) 넘다, 건너다" },
+   { "pos": "형용사", "ko": "(여러 개에) 걸친, 교차하는" },
+   { "pos": "명사", "ko": "십자, 가위표" }
+  ],
+  "forms": ["crosses", "crossed", "crossing"],
+  "synonyms": ["pass", "traverse"],
+  "domain": "이동·전달",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#37.1", "surface": "crosses", "pos": "동사", "sense": "(경계를) 넘다, 건너다" }
+  ]
+ },
+ {
+  "lemma": "deep",
+  "skip": "code"
+ },
+ {
+  "lemma": "doc-reviewer",
+  "skip": "code"
+ },
+ {
+  "lemma": "drop",
+  "skip": null,
+  "word": "drop",
+  "pos": ["동사", "명사"],
+  "ipa": "drɑːp",
+  "meaning": "① (정보를) 빠뜨리다, 버리다 ② 떨어지다, 줄다",
+  "short": "빠뜨리다, 버리다",
+  "senses": [
+   { "pos": "동사", "ko": "(정보를) 빠뜨리다, 버리다" },
+   { "pos": "동사", "ko": "떨어지다, 줄다" },
+   { "pos": "동사", "ko": "(연결이) 끊기다" },
+   { "pos": "명사", "ko": "하락, 감소" }
+  ],
+  "forms": ["drops", "dropped", "dropping"],
+  "synonyms": ["omit", "discard", "lose"],
+  "domain": "삭제·제거",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#36.0", "surface": "drops", "pos": "동사", "sense": "(정보를) 빠뜨리다, 버리다" },
+   { "sid": "mock04#36.2", "surface": "dropped", "pos": "동사", "sense": "떨어지다, 줄다" },
+   { "sid": "lesson-d3#23.1", "surface": "dropping", "pos": "동사", "sense": "(연결이) 끊기다" },
+   { "sid": "lesson-d5#11.4", "surface": "drop", "pos": "동사", "sense": "(정보를) 빠뜨리다, 버리다" }
+  ]
+ },
+ {
+  "lemma": "early",
+  "skip": null,
+  "word": "early",
+  "pos": ["형용사", "부사"],
+  "ipa": "ˈɜːrli",
+  "meaning": "① 초기의, 이른 ② 일찍, 초기에 ③ (earlier) 이전의, 앞서",
+  "short": "초기의, (더) 이전의",
+  "senses": [
+   { "pos": "형용사", "ko": "초기의, 이른" },
+   { "pos": "부사", "ko": "일찍, 초기에" },
+   { "pos": "형용사", "ko": "(비교급) 이전의, 앞선" },
+   { "pos": "부사", "ko": "(비교급) 앞서, 전에" }
+  ],
+  "forms": ["earlier", "earliest"],
+  "synonyms": ["initial", "previous", "prior"],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#19.1", "surface": "early", "pos": "형용사", "sense": "초기의, 이른" },
+   { "sid": "lesson-d5#22.1", "surface": "early", "pos": "부사", "sense": "일찍, 초기에" },
+   { "sid": "sample01#6.1", "surface": "earlier", "pos": "형용사", "sense": "(비교급) 이전의, 앞선" },
+   { "sid": "lesson-d1#5.1", "surface": "earlier", "pos": "부사", "sense": "(비교급) 앞서, 전에" }
+  ]
+ },
+ {
+  "lemma": "escalate",
+  "skip": null,
+  "word": "escalate",
+  "pos": ["동사"],
+  "ipa": "ˈeskəleɪt",
+  "meaning": "(상위 담당자에게) 넘기다, 단계를 올려 처리하다",
+  "short": "(상위 담당자에게) 넘기다",
+  "senses": [
+   { "pos": "동사", "ko": "(상위 담당자에게) 넘기다" },
+   { "pos": "명사", "ko": "(명사형) 상위 이관, 단계 상향" },
+   { "pos": "동사", "ko": "(상황이) 악화되다, 확대되다" }
+  ],
+  "forms": ["escalates", "escalated", "escalating", "escalation"],
+  "synonyms": ["refer", "hand off", "elevate"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#11.1", "surface": "escalated", "pos": "동사", "sense": "(상위 담당자에게) 넘기다" },
+   { "sid": "mock04#2.2", "surface": "escalation", "pos": "명사", "sense": "(명사형) 상위 이관, 단계 상향" },
+   { "sid": "lesson-d2#11.7", "surface": "escalate", "pos": "동사", "sense": "(상위 담당자에게) 넘기다" },
+   { "sid": "lesson-d1#28.6", "surface": "escalation", "pos": "명사", "sense": "(명사형) 상위 이관, 단계 상향" }
+  ]
+ },
+ {
+  "lemma": "figure",
+  "skip": null,
+  "word": "figure",
+  "pos": ["명사"],
+  "ipa": "ˈfɪɡjər",
+  "meaning": "① 수치, 숫자 (금액·통계) ② 그림, 도표 ③ (figure out) 알아내다",
+  "short": "수치, 숫자",
+  "senses": [
+   { "pos": "명사", "ko": "수치, 숫자" },
+   { "pos": "명사", "ko": "그림, 도표" },
+   { "pos": "명사", "ko": "인물" },
+   { "pos": "동사", "ko": "(figure out) 알아내다" }
+  ],
+  "forms": ["figures"],
+  "synonyms": ["number", "value", "statistic"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#35.1", "surface": "figures", "pos": "명사", "sense": "수치, 숫자" },
+   { "sid": "lesson-d5#40.1", "surface": "figures", "pos": "명사", "sense": "수치, 숫자" },
+   { "sid": "mock04#35.3", "surface": "figure", "pos": "명사", "sense": "수치, 숫자" },
+   { "sid": "lesson-d5#37.2", "surface": "figure", "pos": "명사", "sense": "수치, 숫자" }
+  ]
+ },
+ {
+  "lemma": "file",
+  "skip": null,
+  "word": "file",
+  "pos": ["명사", "동사"],
+  "ipa": "faɪl",
+  "meaning": "① (컴퓨터) 파일 ② 서류철, 기록 ③ (서류를) 제출하다, 접수하다",
+  "short": "파일",
+  "senses": [
+   { "pos": "명사", "ko": "(컴퓨터) 파일" },
+   { "pos": "명사", "ko": "서류철, 기록" },
+   { "pos": "동사", "ko": "(서류를) 제출하다, 접수하다" }
+  ],
+  "forms": ["files", "filed", "filing"],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#1.1", "surface": "file", "pos": "명사", "sense": "(컴퓨터) 파일" },
+   { "sid": "lesson-d4#37.0", "surface": "files", "pos": "명사", "sense": "(컴퓨터) 파일" },
+   { "sid": "sample01#11.0", "surface": "file", "pos": "명사", "sense": "(컴퓨터) 파일" },
+   { "sid": "lesson-d2#26.0", "surface": "file", "pos": "명사", "sense": "(컴퓨터) 파일" }
+  ]
+ },
+ {
+  "lemma": "flag",
+  "skip": null,
+  "word": "flag",
+  "pos": ["동사", "명사"],
+  "ipa": "flæɡ",
+  "meaning": "① (문제가 있다고) 표시하다 / 표시된 지적 항목 ② (명령줄) 옵션",
+  "short": "(문제가 있다고) 표시하다",
+  "senses": [
+   { "pos": "동사", "ko": "(문제가 있다고) 표시하다" },
+   { "pos": "명사", "ko": "표시된 지적 항목" },
+   { "pos": "명사", "ko": "(명령줄) 옵션" },
+   { "pos": "명사", "ko": "(참·거짓) 상태 표시 값" }
+  ],
+  "forms": ["flags", "flagged", "flagging"],
+  "synonyms": ["mark", "highlight"],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#39.0", "surface": "flagging", "pos": "동사", "sense": "(문제가 있다고) 표시하다" },
+   { "sid": "lesson-d3#30.4", "surface": "flag", "pos": "명사", "sense": "(명령줄) 옵션" },
+   { "sid": "lesson-d1#24.0", "surface": "flag", "pos": "명사", "sense": "(참·거짓) 상태 표시 값" },
+   { "sid": "vocab:flag.1", "surface": "flags", "pos": "명사", "sense": "표시된 지적 항목" }
+  ]
+ },
+ {
+  "lemma": "headcount",
+  "skip": null,
+  "word": "headcount",
+  "pos": ["명사"],
+  "ipa": "ˈhedkaʊnt",
+  "meaning": "① (조직의) 직원 수, 인원수 ② 인원 파악, 머릿수 세기",
+  "short": "직원 수, 인원수",
+  "senses": [
+   { "pos": "명사", "ko": "(조직의) 직원 수, 인원수" },
+   { "pos": "명사", "ko": "인원 파악, 머릿수 세기" }
+  ],
+  "forms": ["headcounts"],
+  "synonyms": ["staff count", "staff size"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#37.0", "surface": "headcounts", "pos": "명사", "sense": "(조직의) 직원 수, 인원수" }
+  ]
+ },
+ {
+  "lemma": "issue",
+  "skip": null,
+  "word": "issue",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈɪʃuː",
+  "meaning": "① 문제, 이슈 ② (환불·토큰 등을) 내주다, 발행하다 — issuer: 발급자",
+  "short": "문제, 내주다, 발행하다",
+  "senses": [
+   { "pos": "명사", "ko": "문제, 이슈" },
+   { "pos": "동사", "ko": "(환불·토큰 등을) 내주다, 발행하다" },
+   { "pos": "동사", "ko": "(호출·명령을) 보내다, 내리다" }
+  ],
+  "forms": ["issues", "issued", "issuing", "issuer"],
+  "synonyms": ["problem", "concern"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#35.1", "surface": "issues", "pos": "명사", "sense": "문제, 이슈" },
+   { "sid": "lesson-d2#29.1", "surface": "issues", "pos": "동사", "sense": "(호출·명령을) 보내다, 내리다" },
+   { "sid": "vocab:issue.1", "surface": "issues", "pos": "동사", "sense": "(환불·토큰 등을) 내주다, 발행하다" },
+   { "sid": "lesson-d5#8.7", "surface": "issue", "pos": "명사", "sense": "문제, 이슈" }
+  ]
+ },
+ {
+  "lemma": "keep",
+  "skip": null,
+  "word": "keep",
+  "pos": ["동사"],
+  "ipa": "kiːp",
+  "meaning": "① 계속 ~하다 ② (상태를) 유지하다 ③ 보관하다, 가지고 있다",
+  "short": "계속 ~하다, 유지하다",
+  "senses": [
+   { "pos": "동사", "ko": "계속 ~하다" },
+   { "pos": "동사", "ko": "(상태를) 유지하다" },
+   { "pos": "동사", "ko": "보관하다, 가지고 있다" }
+  ],
+  "forms": ["keeps", "kept", "keeping"],
+  "synonyms": ["continue", "maintain", "retain"],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#1.0", "surface": "keeps", "pos": "동사", "sense": "계속 ~하다" },
+   { "sid": "mock04#18.2", "surface": "keeps", "pos": "동사", "sense": "(상태를) 유지하다" },
+   { "sid": "lesson-d3#10.1", "surface": "keeps", "pos": "동사", "sense": "보관하다, 가지고 있다" },
+   { "sid": "lesson-d5#15.0", "surface": "keep", "pos": "동사", "sense": "계속 ~하다" }
+  ]
+ },
+ {
+  "lemma": "late",
+  "skip": null,
+  "word": "later",
+  "pos": ["부사", "형용사"],
+  "ipa": "ˈleɪtər",
+  "meaning": "① 나중에, 이후에 ② 나중의, 이후의 ③ (latest) 최신의, 가장 최근의",
+  "short": "나중에, 이후의",
+  "senses": [
+   { "pos": "부사", "ko": "나중에, 이후에" },
+   { "pos": "형용사", "ko": "나중의, 이후의" },
+   { "pos": "형용사", "ko": "(최상급) 최신의, 가장 최근의" }
+  ],
+  "forms": ["late", "latest"],
+  "synonyms": ["afterward", "subsequently"],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#19.2", "surface": "later", "pos": "부사", "sense": "나중에, 이후에" },
+   { "sid": "lesson-d3#20.0", "surface": "later", "pos": "형용사", "sense": "나중의, 이후의" },
+   { "sid": "lesson-d1#39.4", "surface": "latest", "pos": "형용사", "sense": "(최상급) 최신의, 가장 최근의" },
+   { "sid": "lesson-d4#20.1", "surface": "later", "pos": "부사", "sense": "나중에, 이후에" }
+  ]
+ },
+ {
+  "lemma": "leave",
+  "skip": null,
+  "word": "leave",
+  "pos": ["동사"],
+  "ipa": "liːv",
+  "meaning": "① (~한 상태로) 두다, 남겨 두다 ② (leave out) 빼다, 제외하다 ③ (일을) 맡기다 ④ 떠나다",
+  "short": "(~한 상태로) 두다, 남기다",
+  "senses": [
+   { "pos": "동사", "ko": "(~한 상태로) 두다, 남겨 두다" },
+   { "pos": "동사", "ko": "(~ out) 빼다, 제외하다" },
+   { "pos": "동사", "ko": "(일을) 맡기다" },
+   { "pos": "동사", "ko": "떠나다" }
+  ],
+  "forms": ["leaves", "left", "leaving"],
+  "synonyms": [],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#24.1", "surface": "left", "pos": "동사", "sense": "(~한 상태로) 두다, 남겨 두다" },
+   { "sid": "lesson-d2#12.4", "surface": "leaving", "pos": "동사", "sense": "(~ out) 빼다, 제외하다" },
+   { "sid": "lesson-d5#15.2", "surface": "left", "pos": "동사", "sense": "(~한 상태로) 두다, 남겨 두다" },
+   { "sid": "lesson-d1#13.3", "surface": "Leave", "pos": "동사", "sense": "(~한 상태로) 두다, 남겨 두다" }
+  ]
+ },
+ {
+  "lemma": "master",
+  "skip": null,
+  "word": "master",
+  "pos": ["형용사", "명사", "동사"],
+  "ipa": "ˈmæstər",
+  "meaning": "① 기본(이 되는), 원본의 ② 주인, 달인 ③ 숙달하다, 익히다",
+  "short": "기본의, 원본의",
+  "senses": [
+   { "pos": "형용사", "ko": "기본(이 되는), 원본의" },
+   { "pos": "명사", "ko": "주인, 달인" },
+   { "pos": "동사", "ko": "숙달하다, 익히다" }
+  ],
+  "forms": ["masters", "mastered", "mastering"],
+  "synonyms": ["main", "primary", "original"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#23.1", "surface": "Master", "pos": "형용사", "sense": "기본(이 되는), 원본의" }
+  ]
+ },
+ {
+  "lemma": "mg",
+  "skip": "fragment"
+ },
+ {
+  "lemma": "miss",
+  "skip": null,
+  "word": "miss",
+  "pos": ["동사"],
+  "ipa": "mɪs",
+  "meaning": "① 놓치다, 빠뜨리다 ② (missing) 빠진, 누락된 ③ 그리워하다",
+  "short": "놓치다, 빠져 있다",
+  "senses": [
+   { "pos": "동사", "ko": "놓치다, 빠뜨리다" },
+   { "pos": "형용사", "ko": "(-ing형) 빠진, 누락된" },
+   { "pos": "동사", "ko": "그리워하다" }
+  ],
+  "forms": ["misses", "missed", "missing"],
+  "synonyms": ["overlook", "omit", "skip"],
+  "domain": "오류·실패·위험",
+  "basic": true,
+  "contexts": [
+   { "sid": "mock04#25.2", "surface": "miss", "pos": "동사", "sense": "놓치다, 빠뜨리다" },
+   { "sid": "lesson-d2#10.6", "surface": "missing", "pos": "형용사", "sense": "(-ing형) 빠진, 누락된" },
+   { "sid": "lesson-d1#35.1", "surface": "missed", "pos": "동사", "sense": "놓치다, 빠뜨리다" },
+   { "sid": "sample01#1.1", "surface": "misses", "pos": "동사", "sense": "놓치다, 빠뜨리다" }
+  ]
+ },
+ {
+  "lemma": "order",
+  "skip": null,
+  "word": "order",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈɔːrdər",
+  "meaning": "① 순서 ② 주문(건) ③ 정렬하다, 순서를 정하다 ④ 주문하다, 명령하다",
+  "short": "순서, 주문",
+  "senses": [
+   { "pos": "명사", "ko": "순서" },
+   { "pos": "명사", "ko": "주문(건)" },
+   { "pos": "동사", "ko": "정렬하다, 순서를 정하다" },
+   { "pos": "동사", "ko": "주문하다, 명령하다" }
+  ],
+  "forms": ["orders", "ordered", "ordering"],
+  "synonyms": ["sequence"],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#32.0", "surface": "order", "pos": "명사", "sense": "순서" },
+   { "sid": "lesson-d5#1.1", "surface": "order", "pos": "명사", "sense": "주문(건)" },
+   { "sid": "lesson-d2#19.2", "surface": "ordering", "pos": "명사", "sense": "순서" },
+   { "sid": "mock04#10.2", "surface": "order", "pos": "명사", "sense": "주문(건)" }
+  ]
+ },
+ {
+  "lemma": "read-only",
+  "skip": null,
+  "word": "read-only",
+  "pos": ["형용사"],
+  "ipa": "ˌriːd ˈoʊnli",
+  "meaning": "읽기 전용의 (읽기만 되고 수정은 안 되는)",
+  "short": "읽기 전용의",
+  "senses": [
+   { "pos": "형용사", "ko": "읽기 전용의" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#13.4", "surface": "read-only", "pos": "형용사", "sense": "읽기 전용의" },
+   { "sid": "lesson-d3#19.4", "surface": "Read-only", "pos": "형용사", "sense": "읽기 전용의" },
+   { "sid": "lesson-d3#19.0", "surface": "read-only", "pos": "형용사", "sense": "읽기 전용의" }
+  ]
+ },
+ {
+  "lemma": "report",
+  "skip": null,
+  "word": "report",
+  "pos": ["명사", "동사"],
+  "ipa": "rɪˈpɔːrt",
+  "meaning": "① 보고서 ② 보고하다, 알리다 ③ (검사) 결과지",
+  "short": "보고서, 보고하다",
+  "senses": [
+   { "pos": "명사", "ko": "보고서" },
+   { "pos": "동사", "ko": "보고하다, 알리다" },
+   { "pos": "명사", "ko": "(검사) 결과지" }
+  ],
+  "forms": ["reports", "reported", "reporting"],
+  "synonyms": ["notify", "inform"],
+  "domain": "데이터·정보·문서",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#10.1", "surface": "report", "pos": "명사", "sense": "보고서" },
+   { "sid": "lesson-d3#26.2", "surface": "report", "pos": "동사", "sense": "보고하다, 알리다" },
+   { "sid": "lesson-d4#18.0", "surface": "reports", "pos": "명사", "sense": "(검사) 결과지" },
+   { "sid": "lesson-d2#18.2", "surface": "reports", "pos": "동사", "sense": "보고하다, 알리다" }
+  ]
+ },
+ {
+  "lemma": "run",
+  "skip": null,
+  "word": "run",
+  "pos": ["동사", "명사"],
+  "ipa": "rʌn",
+  "meaning": "① (프로그램·명령을) 실행하다 ② 실행(회차) ③ (running) 계속 이어지는, 누적되는 ④ 달리다, 운영하다",
+  "short": "실행하다, 실행",
+  "senses": [
+   { "pos": "동사", "ko": "(프로그램·명령을) 실행하다" },
+   { "pos": "명사", "ko": "실행(회차)" },
+   { "pos": "형용사", "ko": "(-ing형) 계속 이어지는, 누적되는" },
+   { "pos": "동사", "ko": "달리다, 운영하다" }
+  ],
+  "forms": ["runs", "ran", "running", "runner"],
+  "synonyms": ["execute", "launch"],
+  "domain": "실행·처리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#10.2", "surface": "runs", "pos": "동사", "sense": "(프로그램·명령을) 실행하다" },
+   { "sid": "lesson-d5#2.1", "surface": "running", "pos": "형용사", "sense": "(-ing형) 계속 이어지는, 누적되는" },
+   { "sid": "lesson-d4#16.0", "surface": "run", "pos": "동사", "sense": "(프로그램·명령을) 실행하다" },
+   { "sid": "mock04#12.2", "surface": "running", "pos": "동사", "sense": "(프로그램·명령을) 실행하다" }
+  ]
+ },
+ {
+  "lemma": "saw",
+  "skip": null,
+  "word": "see",
+  "pos": ["동사"],
+  "ipa": "siː",
+  "meaning": "① 보다 ② 알다, 이해하다 ③ (~을) 접하다, 경험하다",
+  "short": "보다, 접하다",
+  "senses": [
+   { "pos": "동사", "ko": "보다" },
+   { "pos": "동사", "ko": "알다, 이해하다" },
+   { "pos": "동사", "ko": "(~을) 접하다, 경험하다" }
+  ],
+  "forms": ["sees", "saw", "seen", "seeing"],
+  "synonyms": ["view", "notice"],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#35.5", "surface": "saw", "pos": "동사", "sense": "(~을) 접하다, 경험하다" }
+  ]
+ },
+ {
+  "lemma": "set",
+  "skip": null,
+  "word": "set",
+  "pos": ["동사", "명사"],
+  "ipa": "set",
+  "meaning": "① (값을) 설정하다, 지정하다 ② 집합, 묶음, 세트 ③ (setting) 설정(값) ④ (set up) 구성하다, 준비하다",
+  "short": "설정하다, 집합",
+  "senses": [
+   { "pos": "동사", "ko": "(값을) 설정하다, 지정하다" },
+   { "pos": "명사", "ko": "집합, 묶음" },
+   { "pos": "명사", "ko": "(-ing형) 설정, 설정값" },
+   { "pos": "동사", "ko": "(~ up) 구성하다, 준비하다" }
+  ],
+  "forms": ["sets", "setting", "settings"],
+  "synonyms": ["configure", "assign", "collection"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#15.0", "surface": "sets", "pos": "동사", "sense": "(값을) 설정하다, 지정하다" },
+   { "sid": "lesson-d2#16.0", "surface": "set", "pos": "명사", "sense": "집합, 묶음" },
+   { "sid": "sample01#5.7", "surface": "setting", "pos": "명사", "sense": "(-ing형) 설정, 설정값" },
+   { "sid": "lesson-d1#11.2", "surface": "set", "pos": "동사", "sense": "(~ up) 구성하다, 준비하다" }
+  ]
+ },
+ {
+  "lemma": "since",
+  "skip": null,
+  "word": "since",
+  "pos": ["접속사", "전치사", "부사"],
+  "ipa": "sɪns",
+  "meaning": "① ~이므로, ~ 때문에 ② ~ 이후로, ~부터",
+  "short": "~이므로, ~ 이후로",
+  "senses": [
+   { "pos": "접속사", "ko": "~이므로, ~ 때문에" },
+   { "pos": "전치사", "ko": "~ 이후로, ~부터" },
+   { "pos": "부사", "ko": "그 이후로" }
+  ],
+  "forms": [],
+  "synonyms": ["because", "as"],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#8.5", "surface": "since", "pos": "접속사", "sense": "~이므로, ~ 때문에" },
+   { "sid": "mock04#39.2", "surface": "Since", "pos": "전치사", "sense": "~ 이후로, ~부터" },
+   { "sid": "lesson-d2#2.4", "surface": "since", "pos": "접속사", "sense": "~이므로, ~ 때문에" },
+   { "sid": "lesson-d3#10.5", "surface": "since", "pos": "접속사", "sense": "~이므로, ~ 때문에" }
+  ]
+ },
+ {
+  "lemma": "state",
+  "skip": null,
+  "word": "state",
+  "pos": ["동사", "명사"],
+  "ipa": "steɪt",
+  "meaning": "① (분명히) 밝히다, 명시하다 ② 상태",
+  "short": "밝히다, 명시하다",
+  "senses": [
+   { "pos": "동사", "ko": "(분명히) 밝히다, 명시하다" },
+   { "pos": "명사", "ko": "상태" },
+   { "pos": "명사", "ko": "국가, (미국의) 주" }
+  ],
+  "forms": ["states", "stated", "stating", "statement"],
+  "synonyms": ["specify", "declare", "condition"],
+  "domain": "요청·소통",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#19.7", "surface": "state", "pos": "동사", "sense": "(분명히) 밝히다, 명시하다" },
+   { "sid": "lesson-d3#23.6", "surface": "state", "pos": "명사", "sense": "상태" },
+   { "sid": "lesson-d4#17.2", "surface": "state", "pos": "동사", "sense": "(분명히) 밝히다, 명시하다" },
+   { "sid": "mock04#21.2", "surface": "stated", "pos": "동사", "sense": "(분명히) 밝히다, 명시하다" }
+  ]
+ },
+ {
+  "lemma": "still",
+  "skip": null,
+  "word": "still",
+  "pos": ["부사", "형용사"],
+  "ipa": "stɪl",
+  "meaning": "① 여전히, 아직도 ② 그럼에도, 그래도 ③ 가만히 있는, 정지한",
+  "short": "여전히, 그럼에도",
+  "senses": [
+   { "pos": "부사", "ko": "여전히, 아직도" },
+   { "pos": "부사", "ko": "그럼에도, 그래도" },
+   { "pos": "형용사", "ko": "가만히 있는, 정지한" }
+  ],
+  "forms": [],
+  "synonyms": ["nevertheless", "even so"],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#22.0", "surface": "still", "pos": "부사", "sense": "여전히, 아직도" },
+   { "sid": "lesson-d1#28.2", "surface": "still", "pos": "부사", "sense": "그럼에도, 그래도" },
+   { "sid": "mock04#1.3", "surface": "still", "pos": "부사", "sense": "여전히, 아직도" },
+   { "sid": "lesson-d3#9.2", "surface": "still", "pos": "부사", "sense": "그럼에도, 그래도" }
+  ]
+ },
+ {
+  "lemma": "stratum",
+  "skip": null,
+  "word": "stratum",
+  "pos": ["명사"],
+  "ipa": "ˈstreɪtəm",
+  "meaning": "① (통계) 층, 하위 집단 (표본을 나누는 단위) ② (사회) 계층 ③ 지층",
+  "short": "(표본의) 층, 하위 집단",
+  "senses": [
+   { "pos": "명사", "ko": "(표본을 나눈) 층, 하위 집단" },
+   { "pos": "명사", "ko": "(사회) 계층" },
+   { "pos": "명사", "ko": "지층" }
+  ],
+  "forms": ["strata", "stratify", "stratified"],
+  "synonyms": ["layer", "tier", "subgroup"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#34.5", "surface": "stratum", "pos": "명사", "sense": "(표본을 나눈) 층, 하위 집단" }
+  ]
+ },
+ {
+  "lemma": "support",
+  "skip": null,
+  "word": "support",
+  "pos": ["명사", "동사"],
+  "ipa": "səˈpɔːrt",
+  "meaning": "① (고객) 지원, 상담 ② 뒷받침하다, 가능하게 하다 ③ (기능·형식을) 지원하다",
+  "short": "지원, 뒷받침하다",
+  "senses": [
+   { "pos": "명사", "ko": "(고객) 지원, 상담" },
+   { "pos": "동사", "ko": "뒷받침하다, 가능하게 하다" },
+   { "pos": "동사", "ko": "(기능·형식을) 지원하다" }
+  ],
+  "forms": ["supports", "supported", "supporting"],
+  "synonyms": ["assist", "help", "enable"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#1.0", "surface": "support", "pos": "명사", "sense": "(고객) 지원, 상담" },
+   { "sid": "lesson-d4#26.2", "surface": "support", "pos": "동사", "sense": "뒷받침하다, 가능하게 하다" },
+   { "sid": "lesson-d3#30.7", "surface": "supports", "pos": "동사", "sense": "(기능·형식을) 지원하다" },
+   { "sid": "sample01#1.0", "surface": "support", "pos": "명사", "sense": "(고객) 지원, 상담" }
+  ]
+ },
+ {
+  "lemma": "surface",
+  "skip": null,
+  "word": "surface",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈsɜːrfɪs",
+  "meaning": "(숨은 것을) 드러내다 / 드러나다, 표면화되다 / 표면",
+  "short": "드러내다, 드러나다",
+  "senses": [
+   { "pos": "동사", "ko": "(숨은 것을) 드러내다" },
+   { "pos": "동사", "ko": "드러나다, 표면화되다" },
+   { "pos": "명사", "ko": "표면" }
+  ],
+  "forms": ["surfaces", "surfaced", "surfacing"],
+  "synonyms": ["reveal", "expose", "emerge"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#34.1", "surface": "surfaces", "pos": "동사", "sense": "(숨은 것을) 드러내다" },
+   { "sid": "mock04#25.2", "surface": "surface", "pos": "동사", "sense": "드러나다, 표면화되다" },
+   { "sid": "lesson-d3#11.1", "surface": "surfacing", "pos": "동사", "sense": "드러나다, 표면화되다" },
+   { "sid": "mock04#22.1", "surface": "surfaced", "pos": "동사", "sense": "(숨은 것을) 드러내다" }
+  ]
+ },
+ {
+  "lemma": "tool",
+  "skip": null,
+  "word": "tool",
+  "pos": ["명사"],
+  "ipa": "tuːl",
+  "meaning": "① (에이전트가 호출하는) 도구, 툴 ② (일반) 도구, 연장",
+  "short": "도구",
+  "senses": [
+   { "pos": "명사", "ko": "(에이전트가 호출하는) 도구" },
+   { "pos": "명사", "ko": "(일반) 도구, 연장" }
+  ],
+  "forms": ["tools", "tooling"],
+  "synonyms": ["function", "utility"],
+  "domain": "시스템·도구·기술",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#1.0", "surface": "tools", "pos": "명사", "sense": "(에이전트가 호출하는) 도구" },
+   { "sid": "sample01#1.1", "surface": "tool", "pos": "명사", "sense": "(에이전트가 호출하는) 도구" },
+   { "sid": "lesson-d4#14.0", "surface": "tool", "pos": "명사", "sense": "(에이전트가 호출하는) 도구" },
+   { "sid": "lesson-d3#31.0", "surface": "tool", "pos": "명사", "sense": "(에이전트가 호출하는) 도구" }
+  ]
+ },
+ {
+  "lemma": "yet",
+  "skip": null,
+  "word": "yet",
+  "pos": ["부사", "접속사"],
+  "ipa": "jet",
+  "meaning": "① (부정문) 아직 ② 그러나, 그런데도 ③ (의문문) 벌써, 이미",
+  "short": "아직, 그런데도",
+  "senses": [
+   { "pos": "부사", "ko": "(부정문) 아직" },
+   { "pos": "접속사", "ko": "그러나, 그런데도" },
+   { "pos": "부사", "ko": "(의문문) 벌써, 이미" }
+  ],
+  "forms": [],
+  "synonyms": ["however", "but"],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#5.2", "surface": "yet", "pos": "부사", "sense": "(부정문) 아직" },
+   { "sid": "mock04#47.2", "surface": "yet", "pos": "접속사", "sense": "그러나, 그런데도" },
+   { "sid": "lesson-d2#12.2", "surface": "yet", "pos": "부사", "sense": "(부정문) 아직" },
+   { "sid": "lesson-d3#23.1", "surface": "yet", "pos": "부사", "sense": "(부정문) 아직" }
+  ]
+ }
+]

@@ -1,0 +1,1549 @@
+[
+ {
+  "lemma": "relative",
+  "kind": "new",
+  "surfaces": [
+   "relative"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d1#21.1",
+    "en": "A reviewer worries this design assumes the hooks run in a guaranteed order relative to each other."
+   },
+   {
+    "sid": "lesson-d4#20.3",
+    "en": "Schema validation confirms that required fields exist and have the correct types but it cannot verify that the values are semantically correct relative to the source document, so mislabeling errors like this can still occur."
+   }
+  ]
+ },
+ {
+  "lemma": "release",
+  "kind": "vocab-core",
+  "surfaces": [
+   "releases",
+   "release"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "release",
+   "word": "release",
+   "pos": "명사·동사",
+   "ipa": "rɪˈliːs",
+   "meaning": "① 릴리스, 출시(판) ② 내보내다, 공개하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#38.0",
+    "en": "During a competitive-intelligence synthesis, two subagents report different figures for a competitor's annual revenue: one cites a press release stating $420 million, the other cites an analyst report stating $460 million."
+   },
+   {
+    "sid": "mock04#13.1",
+    "en": "A team's `.claude/skills/dep-audit/` skill is meant to be run manually before releases, but Claude keeps auto-invoking it mid-session whenever dependency files come up, dumping roughly 4,000 lines of resolution output into unrelated refactoring sessions."
+   },
+   {
+    "sid": "lesson-d5#31.7",
+    "en": "Add a prompt rule that assigns the most common unit from past documents to a bare weight number, and release those values to the output without a reviewer."
+   },
+   {
+    "sid": "lesson-d5#38.3",
+    "en": "Report $420 million (press release) and $460 million (analyst report) for revenue, flagged as conflicting"
+   },
+   {
+    "sid": "lesson-d5#38.4",
+    "en": "Report $460 million (analyst report) for revenue, and leave the press release figure out of the final report"
+   },
+   {
+    "sid": "lesson-d5#38.5",
+    "en": "Report $420 million (press release) for revenue, and leave the analyst figure out of the final report"
+   },
+   {
+    "sid": "lesson-d5#40.3",
+    "en": "Have each subagent record the report's release date with each figure it extracts before passing it to the coordinator"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:release.0",
+    "en": "A team's `.claude/skills/dep-audit/` skill is meant to be run manually before releases...",
+    "ko": "팀의 `.claude/skills/dep-audit/` 스킬은 릴리스 전에 수동으로 실행하려고 만든 것이다."
+   }
+  ]
+ },
+ {
+  "lemma": "relevant",
+  "kind": "vocab-core",
+  "surfaces": [
+   "relevant"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "relevant",
+   "word": "relevant",
+   "pos": "형용사",
+   "ipa": "ˈreləvənt",
+   "meaning": "관련 있는, (지금 상황에) 해당하는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#4.5",
+    "en": "Context use drops, because Claude opens an imported file only if it decides the file is relevant to the task"
+   },
+   {
+    "sid": "lesson-d4#17.3",
+    "en": "`tool_choice: {\"type\": \"auto\"}`, combined with an explicit user-message instruction to use the `parse_resume` tool and share any relevant reasoning as text"
+   },
+   {
+    "sid": "mock04#11.7",
+    "en": "Convert the conventions into a skill under .claude/skills/ so they activate on demand for all users when relevant"
+   },
+   {
+    "sid": "mock04#36.7",
+    "en": "Trim each subagent's output to relevant extracted findings before handoff, and open the synthesis prompt with a key-facts summary under headers."
+   },
+   {
+    "sid": "mock04#45.6",
+    "en": "Convert the conventions into a Skill so they load on demand whenever the tool judges them relevant to the task"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:relevant.0",
+    "en": "Developers find it difficult to locate and update relevant sections.",
+    "ko": "개발자들이 관련 섹션을 찾고 수정하기 어려워한다."
+   }
+  ]
+ },
+ {
+  "lemma": "reliability",
+  "kind": "vocab-core",
+  "surfaces": [
+   "reliable",
+   "reliably",
+   "unreliable",
+   "reliability"
+  ],
+  "freq": 22,
+  "vocab": {
+   "id": "reliability",
+   "word": "reliability",
+   "pos": "명사",
+   "ipa": "rɪˌlaɪəˈbɪləti",
+   "meaning": "신뢰성 — 언제나 제대로 동작하는 정도"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#15.2",
+    "en": "What is the main reliability benefit of this redesign, based on the relationship between tool count and selection accuracy?"
+   },
+   {
+    "sid": "lesson-d3#6.0",
+    "en": "A project's single CLAUDE.md has grown to over 500 lines covering code style, testing, security requirements, and deployment steps, and the team notices Claude adheres to instructions less reliably than before."
+   },
+   {
+    "sid": "lesson-d5#26.1",
+    "en": "The architect must prevent one subagent's findings from being overwritten by another before the coordinator can reliably aggregate the results."
+   },
+   {
+    "sid": "mock04#14.2",
+    "en": "Adding the reminder \"only write to docs/, never edit source\" to the skill body has not reliably stopped it."
+   },
+   {
+    "sid": "sample01#20.0",
+    "en": "Which approach produces the most reliable structured output from Claude?"
+   },
+   {
+    "sid": "lesson-d1#19.4",
+    "en": "Move the agent to a larger, more capable model that follows instructions more reliably"
+   },
+   {
+    "sid": "lesson-d2#26.1",
+    "en": "You want an agent to list the components that have no test file, and to do it reliably and cheaply."
+   },
+   {
+    "sid": "mock04#35.3",
+    "en": "Reviewers, seeing the discarded figure elsewhere, flag the report as unreliable."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:reliability.0",
+    "en": "What change would most effectively address this reliability issue?",
+    "ko": "이 신뢰성 문제를 가장 효과적으로 해결하는 변경은?"
+   }
+  ]
+ },
+ {
+  "lemma": "rely",
+  "kind": "vocab-core",
+  "surfaces": [
+   "relying",
+   "rely",
+   "relies"
+  ],
+  "freq": 14,
+  "vocab": {
+   "id": "rely",
+   "word": "rely",
+   "pos": "동사",
+   "ipa": "rɪˈlaɪ",
+   "meaning": "(~에) 의존하다, 기대다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#3.1",
+    "en": "What is the main architectural problem with relying on a fixed iteration cap this way?"
+   },
+   {
+    "sid": "mock04#31.2",
+    "en": "Relying on a prompt instruction, it skips classification in 9% of runs and extracts against the wrong schema."
+   },
+   {
+    "sid": "lesson-d2#19.6",
+    "en": "Set tool_choice to {\"type\": \"any\"} for the entire conversation, so the model must select a tool on every turn, relying on its training to choose extract_metadata first when metadata is absent."
+   },
+   {
+    "sid": "lesson-d3#27.5",
+    "en": "Ask Claude to evaluate the test results and fix whichever failure appears more severe first, relying on its internal judgment of the impact on report correctness without stating the exact currency mismatch or missing extension details."
+   },
+   {
+    "sid": "lesson-d4#3.5",
+    "en": "Report it only after confirming a caller depends on the cached behavior, since a stale docstring that nobody relies on does not affect behavior."
+   },
+   {
+    "sid": "lesson-d5#22.6",
+    "en": "Limit what verbose exploration output enters the main context, and keep key findings somewhere that does not rely on recall from the long transcript"
+   },
+   {
+    "sid": "lesson-d1#12.6",
+    "en": "Give doc-reviewer the same tools as the coordinator, then rely on the description field to signal that the subagent is read-only in practice"
+   },
+   {
+    "sid": "lesson-d2#5.6",
+    "en": "Delete the description text from both tools so the model relies entirely on tool names for disambiguation."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:rely.0",
+    "en": "Consolidate all conventions in the root CLAUDE.md file under headers for each area, relying on Claude to infer which section applies",
+    "ko": "루트 CLAUDE.md에 영역별 헤더로 모든 컨벤션을 모으고, 어느 섹션이 해당하는지는 Claude의 추론에 맡긴다."
+   }
+  ]
+ },
+ {
+  "lemma": "remain",
+  "kind": "new",
+  "surfaces": [
+   "remaining",
+   "remain"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d1#40.1",
+    "en": "A backend service needs to resume a specific user's conversation on demand, potentially hours after the user's last message, while other users' sessions remain active in the same directory."
+   },
+   {
+    "sid": "lesson-d2#5.4",
+    "en": "Rename the general tool to reflect its remaining scope, and update its description to exclude the case the newer tool now handles."
+   },
+   {
+    "sid": "lesson-d3#21.2",
+    "en": "Use accept-edits mode so Claude extracts the first service right away, with the remaining boundaries adjusted as problems appear in the code"
+   },
+   {
+    "sid": "lesson-d1#8.6",
+    "en": "Remove the coordinator entirely and let the classifier subagent directly invoke the remaining subagents it deems necessary."
+   },
+   {
+    "sid": "lesson-d1#9.6",
+    "en": "The coordinator broke the topic into a few detailed technical areas, so the remaining parts of the landscape had no subagent assigned"
+   }
+  ]
+ },
+ {
+  "lemma": "remainder",
+  "kind": "vocab-core",
+  "surfaces": [
+   "remainder"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "remainder",
+   "word": "remainder",
+   "pos": "명사",
+   "ipa": "rɪˈmeɪndər",
+   "meaning": "나머지"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#19.5",
+    "en": "The architect's local settings have disabled every single permission check for the remainder of this particular session entirely"
+   }
+  ]
+ },
+ {
+  "lemma": "remediation",
+  "kind": "vocab-core",
+  "surfaces": [
+   "remediation"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "remediation",
+   "word": "remediation",
+   "pos": "명사",
+   "ipa": "rɪˌmiːdiˈeɪʃn",
+   "meaning": "개선 조치, 바로잡기"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#5.2",
+    "en": "What is the recommended remediation?"
+   }
+  ]
+ },
+ {
+  "lemma": "remedy",
+  "kind": "vocab-core",
+  "surfaces": [
+   "remedy"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "remedy",
+   "word": "remedy",
+   "pos": "명사",
+   "ipa": "ˈremədi",
+   "meaning": "해결책, 바로잡는 방법"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#4.3",
+    "en": "What is the most robust remedy?"
+   },
+   {
+    "sid": "mock04#9.3",
+    "en": "What is the best remedy?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:remedy.0",
+    "en": "What is the most robust remedy?",
+    "ko": "가장 견고한 해결책은 무엇일까요?"
+   }
+  ]
+ },
+ {
+  "lemma": "remember",
+  "kind": "new",
+  "surfaces": [
+   "remember"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#1.6",
+    "en": "Raise max_tokens so the model has room to remember more of the conversation"
+   }
+  ]
+ },
+ {
+  "lemma": "reminder",
+  "kind": "vocab-core",
+  "surfaces": [
+   "reminder",
+   "reminds"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "reminder",
+   "word": "reminder",
+   "pos": "명사",
+   "ipa": "rɪˈmaɪndər",
+   "meaning": "(잊지 않게) 다시 일러 주는 말, 알림"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#14.2",
+    "en": "Adding the reminder \"only write to docs/, never edit source\" to the skill body has not reliably stopped it."
+   },
+   {
+    "sid": "lesson-d1#26.5",
+    "en": "Keep the rule in the system prompt and add a second agent that rereads each conversation and reminds the first agent of the policy."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:reminder.0",
+    "en": "Adding the reminder \"only write to docs/, never edit source\" to the skill body has not reliably stopped it.",
+    "ko": "스킬 본문에 \"docs/에만 쓰고 소스는 절대 수정하지 말 것\"이라는 당부 문구를 추가했지만 확실히 막지 못했다."
+   }
+  ]
+ },
+ {
+  "lemma": "remit",
+  "kind": "vocab-core",
+  "surfaces": [
+   "remit"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "remit",
+   "word": "remit",
+   "pos": "명사",
+   "ipa": "ˈriːmɪt",
+   "meaning": "(맡은) 업무 범위, 소관"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#18.2",
+    "en": "The team reports agents occasionally reaching for tools clearly outside their remit, like the QA agent invoking a deploy tool."
+   }
+  ]
+ },
+ {
+  "lemma": "remove",
+  "kind": "vocab-core",
+  "surfaces": [
+   "remove",
+   "removing",
+   "removes",
+   "removed"
+  ],
+  "freq": 21,
+  "vocab": {
+   "id": "remove",
+   "word": "remove",
+   "pos": "동사",
+   "ipa": "rɪˈmuːv",
+   "meaning": "없애다, 제거하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#2.0",
+    "en": "Your compliance team wants a data-handling instruction to reach every developer in every repository, and no developer should be able to remove it."
+   },
+   {
+    "sid": "lesson-d4#14.2",
+    "en": "Which change removes this whole class of failure?"
+   },
+   {
+    "sid": "lesson-d1#13.5",
+    "en": "Remove Edit and Write from the coordinator's allowedTools"
+   },
+   {
+    "sid": "lesson-d2#17.6",
+    "en": "Remove fetch_url and send every document load through the coordinator to the research agent"
+   },
+   {
+    "sid": "mock04#3.5",
+    "en": "Remove process_refund from the agent's toolset entirely so that every refund, large or small, is handled by a human."
+   },
+   {
+    "sid": "sample01#17.6",
+    "en": "Remove the least-used tools to reduce context saturation"
+   },
+   {
+    "sid": "lesson-d1#28.6",
+    "en": "Remove the hook and add the escalation instruction to the system prompt, because the agent clearly ignores the hook."
+   },
+   {
+    "sid": "lesson-d2#19.4",
+    "en": "Remove the enrichment tools from the agent's tool list on the first turn and only provide extract_metadata, then after extract_metadata returns, re-add add_tags, link_related, and generate_summary for subsequent turns."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:remove.0",
+    "en": "Remove process_refund from the agent's toolset entirely so that every refund, large or small, is handled by a human.",
+    "ko": "에이전트의 도구 목록에서 `process_refund` 를 완전히 제거해, 금액과 관계없이 모든 환불을 사람이 처리하게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "rename",
+  "kind": "vocab-core",
+  "surfaces": [
+   "rename",
+   "renamed",
+   "renaming"
+  ],
+  "freq": 16,
+  "vocab": {
+   "id": "rename",
+   "word": "rename",
+   "pos": "동사",
+   "ipa": "ˌriːˈneɪm",
+   "meaning": "이름을 바꾸다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#6.1",
+    "en": "Following the pattern of renaming a tool to eliminate overlap, what should the team do?"
+   },
+   {
+    "sid": "mock04#19.1",
+    "en": "To rename a widely-used internal API, Claude must first locate every call site across a large monorepo."
+   },
+   {
+    "sid": "lesson-d1#25.4",
+    "en": "Matchers can only target tool names that begin with the `mcp__` server prefix. A custom in-process tool like `refund` must be renamed to include this prefix before any matcher can reliably target it."
+   },
+   {
+    "sid": "lesson-d3#10.6",
+    "en": "Neither skill executes, and Claude Code reports a naming conflict error until one of the two files is renamed."
+   },
+   {
+    "sid": "sample01#19.4",
+    "en": "Rename the tools to be more distinct"
+   },
+   {
+    "sid": "mock04#39.2",
+    "en": "Since then a teammate moved several files and renamed a package."
+   },
+   {
+    "sid": "lesson-d2#1.6",
+    "en": "Rename the internal function that each tool is mapped to in your codebase"
+   },
+   {
+    "sid": "mock04#43.1",
+    "en": "The agent is asked to rename a shared constant throughout a generated client file."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:rename.0",
+    "en": "Rename the tools to be more distinct",
+    "ko": "도구 이름을 더 구별되게 바꾼다."
+   }
+  ]
+ },
+ {
+  "lemma": "render",
+  "kind": "new",
+  "surfaces": [
+   "render"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#24.6",
+    "en": "Re-render the scan at higher resolution and rerun extraction, so the model can read the project_code field more clearly"
+   }
+  ]
+ },
+ {
+  "lemma": "renewal",
+  "kind": "new",
+  "surfaces": [
+   "renewal"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#23.1",
+    "en": "The contract says only that renewal terms are set out in the Master Agreement, and that document was never sent to the pipeline."
+   }
+  ]
+ },
+ {
+  "lemma": "reopen",
+  "kind": "new",
+  "surfaces": [
+   "reopen"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#36.6",
+    "en": "Reflection runs with tool use switched off, so the model cannot reopen the files it wrote to verify them against the requirements"
+   }
+  ]
+ },
+ {
+  "lemma": "reorder",
+  "kind": "vocab-core",
+  "surfaces": [
+   "reordered",
+   "reordering"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "reorder",
+   "word": "reorder",
+   "pos": "동사",
+   "ipa": "riˈɔːrdər",
+   "meaning": "순서를 바꾸다, 재배치하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#2.3",
+    "en": "The tools were declared in the wrong order in the tools array, and reordering them so that the intended tool is listed first will correct the routing behavior."
+   },
+   {
+    "sid": "mock04#36.4",
+    "en": "Move synthesis to a larger-context model so all 38k tokens fit comfortably in the prompt and nothing has to be trimmed or reordered."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:reorder.0",
+    "en": "Move synthesis to a larger-context model so all 38k tokens fit comfortably in the prompt and nothing has to be trimmed or reordered.",
+    "ko": "종합 단계를 더 큰 컨텍스트의 모델로 옮겨, 38k 토큰 전체가 여유 있게 들어가고 아무것도 잘라 내거나 재배치하지 않아도 되게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "reorganize",
+  "kind": "vocab-core",
+  "surfaces": [
+   "reorganizes",
+   "reorganize"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "reorganize",
+   "word": "reorganize",
+   "pos": "동사",
+   "ipa": "riˈɔːrɡənaɪz",
+   "meaning": "다시 정리하다, 재구성하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#6.1",
+    "en": "The architect wants to reorganize this into focused, maintainable files while keeping everything loaded for every session."
+   },
+   {
+    "sid": "mock04#25.6",
+    "en": "Keep the fixed chain but add a second formatting pass that reorganizes and tightens each report section"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:reorganize.0",
+    "en": "Keep the fixed chain but add a second formatting pass that reorganizes and tightens each report section",
+    "ko": "고정 체인은 유지하되, 보고서의 각 섹션을 재구성하고 다듬는 두 번째 서식 지정 단계를 추가한다."
+   }
+  ]
+ },
+ {
+  "lemma": "repeat",
+  "kind": "vocab-core",
+  "surfaces": [
+   "repeating",
+   "repeated",
+   "repeatedly",
+   "repeat",
+   "repeatable"
+  ],
+  "freq": 12,
+  "vocab": {
+   "id": "repeat",
+   "word": "repeat",
+   "pos": "동사",
+   "ipa": "rɪˈpiːt",
+   "meaning": "반복하다 — repeatedly (부) 반복해서, 거듭"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#32.1",
+    "en": "Where should this project-specific guidance be encoded so every CI run picks it up automatically without being repeated in each workflow prompt?"
+   },
+   {
+    "sid": "mock04#21.1",
+    "en": "In a long debugging session Claude repeatedly runs the full test suite; each run dumps roughly 2,000 lines of passing-test noise into the context."
+   },
+   {
+    "sid": "sample01#6.1",
+    "en": "After turn 25, response quality degrades — the model starts forgetting earlier findings and repeating tool calls it already made."
+   },
+   {
+    "sid": "lesson-d2#28.5",
+    "en": "Grep for the block first, then repeat the same Edit so it can use the search results to pick the right match"
+   },
+   {
+    "sid": "lesson-d4#14.6",
+    "en": "Repeat the field types and required keys in the tool's `description` so Claude reads them more closely"
+   },
+   {
+    "sid": "lesson-d5#5.3",
+    "en": "Cache each full lookup response in a session store and reuse it on repeat checks instead of calling the tool again"
+   },
+   {
+    "sid": "lesson-d4#8.5",
+    "en": "Set the temperature to zero in the API call, making token sampling more repeatable from one run to the next"
+   },
+   {
+    "sid": "mock04#19.5",
+    "en": "Run `/compact` after each search so the accumulated search output is repeatedly condensed before the edits start."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:repeat.0",
+    "en": "In a long debugging session Claude repeatedly runs the full test suite; each run dumps roughly 2,000 lines of passing-test noise into the context.",
+    "ko": "긴 디버깅 세션에서 Claude가 전체 테스트 스위트를 반복해서 실행하는데, 실행할 때마다 통과한 테스트에 관한 소음이 약 2,000줄씩 컨텍스트에 쌓인다."
+   }
+  ]
+ },
+ {
+  "lemma": "replace",
+  "kind": "new",
+  "surfaces": [
+   "replace",
+   "replaces",
+   "replacing",
+   "replaced"
+  ],
+  "freq": 13,
+  "sentences": [
+   {
+    "sid": "lesson-d1#30.2",
+    "en": "Which field should the shared hook use to replace the output for both tool types?"
+   },
+   {
+    "sid": "lesson-d5#17.2",
+    "en": "What is the primary problem with this design, and what should replace it?"
+   },
+   {
+    "sid": "lesson-d2#17.4",
+    "en": "Replace fetch_url with a load_document tool that checks the URL points to a document before fetching it"
+   },
+   {
+    "sid": "lesson-d4#10.3",
+    "en": "Replace the twenty pairs with a handful of examples chosen to show the reasoning behind the labels"
+   },
+   {
+    "sid": "lesson-d1#2.3",
+    "en": "Replace the history with a single user message containing the tool output, to save context"
+   },
+   {
+    "sid": "lesson-d2#21.5",
+    "en": "Add the server with local scope, and set the header to `Authorization: Bearer <token>` in .mcp.json, with each teammate replacing the placeholder with their own token"
+   },
+   {
+    "sid": "lesson-d5#30.5",
+    "en": "Replace the 0-to-1 values with high, medium and low labels defined in the prompt, then let the fields labeled high skip review and send the rest to human reviewers."
+   },
+   {
+    "sid": "lesson-d1#24.8",
+    "en": "Replace the model with a larger, more capable language model that can independently re-read the entire conversation and determine whether the human review actually succeeded, overriding the flag when necessary."
+   }
+  ]
+ },
+ {
+  "lemma": "replacement",
+  "kind": "new",
+  "surfaces": [
+   "replacement"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d1#30.3",
+    "en": "`updatedMCPToolOutput`, because it is the field intended for cross‑tool output replacement."
+   },
+   {
+    "sid": "lesson-d2#29.5",
+    "en": "Set replace_all to true on the Edit call, which applies the replacement to the first match in the file and leaves the later one alone"
+   }
+  ]
+ },
+ {
+  "lemma": "replay",
+  "kind": "vocab-core",
+  "surfaces": [
+   "replays"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "replay",
+   "word": "replay",
+   "pos": "동사",
+   "ipa": "ˌriːˈpleɪ",
+   "meaning": "(기록된 것을) 그대로 다시 재생하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#28.2",
+    "en": "This week the report cites last week's prices as current, because the resumed session replays cached web-search tool results."
+   },
+   {
+    "sid": "mock04#39.3",
+    "en": "The resumed agent replays cached Read and Grep results from the old history and proposes edits against paths that no longer exist."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:replay.0",
+    "en": "This week the report cites last week's prices as current, because the resumed session replays cached web-search tool results.",
+    "ko": "이번 주 보고서는 지난주 가격을 현재 가격처럼 인용했는데, 재개된 세션이 캐시된 웹 검색 도구 결과를 그대로 되살렸기 때문이다."
+   }
+  ]
+ },
+ {
+  "lemma": "replica",
+  "kind": "new",
+  "surfaces": [
+   "replica"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#16.5",
+    "en": "Failure type \"timeout (transient)\", the exact query and the database it went to, the 40 of 200 filings already retrieved, and a read replica that could fill the gap"
+   }
+  ]
+ },
+ {
+  "lemma": "reply",
+  "kind": "new",
+  "surfaces": [
+   "reply",
+   "replies"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d5#8.2",
+    "en": "The customer now replies: \"No, just put me through to a person.\""
+   },
+   {
+    "sid": "mock04#8.2",
+    "en": "Logs show the agent then retries the same $640 refund three times before eventually giving a confusing reply."
+   },
+   {
+    "sid": "lesson-d4#31.4",
+    "en": "An in-app support assistant that drafts a reply while the customer waits in the chat window"
+   },
+   {
+    "sid": "lesson-d5#1.4",
+    "en": "Send the complete conversation history with every request: all user messages, assistant replies and tool results"
+   }
+  ]
+ },
+ {
+  "lemma": "repo",
+  "kind": "vocab-core",
+  "surfaces": [
+   "repo",
+   "repository"
+  ],
+  "freq": 39,
+  "vocab": {
+   "id": "repo",
+   "word": "repo",
+   "pos": "명사",
+   "ipa": "ˈriːpoʊ",
+   "meaning": "저장소, 리포지토리 (repository 의 줄임말)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#40.0",
+    "en": "An application serves many concurrent users, each with their own long-running investigation conversation against the same repository directory."
+   },
+   {
+    "sid": "lesson-d2#21.1",
+    "en": "Every teammate has their own GitHub personal access token, and the config must be checked into the repo without ever committing a real secret."
+   },
+   {
+    "sid": "lesson-d3#1.0",
+    "en": "A developer notices that in Monday's session Claude followed the package's error-handling convention, but in Tuesday's session on the same repo it ignored it."
+   },
+   {
+    "sid": "lesson-d5#22.0",
+    "en": "An agent has spent hours exploring a large repository."
+   },
+   {
+    "sid": "mock04#11.2",
+    "en": "Everything works for the lead, but three newly onboarded engineers who cloned the repo report that Claude Code ignores the conventions entirely, even though `git status` shows a clean checkout."
+   },
+   {
+    "sid": "sample01#13.0",
+    "en": "A team wants project-specific commands available to all engineers using Claude Code on the repo, without adding entries to each engineer's user settings."
+   },
+   {
+    "sid": "lesson-d2#22.1",
+    "en": "The repository's committed .mcp.json also defines `analytics`, pointing at the team's production endpoint."
+   },
+   {
+    "sid": "lesson-d3#10.0",
+    "en": "A project's `.claude/skills/review/SKILL.md` is checked into the repo for team-wide use."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:repo.0",
+    "en": "...three newly onboarded engineers who cloned the repo report that Claude Code ignores the conventions entirely...",
+    "ko": "저장소를 클론한 신규 엔지니어 세 명은 Claude Code가 컨벤션을 완전히 무시한다고 보고한다."
+   }
+  ]
+ },
+ {
+  "lemma": "report-generation",
+  "kind": "new",
+  "surfaces": [
+   "report-generation"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "mock04#34.2",
+    "en": "The report-generation subagent can then no longer attach citations, and 40% of the report's sentences ship uncited."
+   },
+   {
+    "sid": "mock04#34.4",
+    "en": "Have the report-generation subagent re-run web_search for every claim to find a supporting source for each uncited sentence."
+   }
+  ]
+ },
+ {
+  "lemma": "representative",
+  "kind": "vocab-core",
+  "surfaces": [
+   "representative"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "representative",
+   "word": "representative",
+   "pos": "형용사",
+   "ipa": "ˌreprɪˈzentətɪv",
+   "meaning": "대표적인 — 전체를 잘 보여 주는"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#51.6",
+    "en": "Add two to four few-shot examples of representative ambiguous cases, each with the reasoning behind its verdict"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:representative.0",
+    "en": "Provide 2-3 concrete input-output examples showing the expected transformation for representative API responses.",
+    "ko": "대표적인 API 응답에 대해 기대하는 변환을 보여 주는 구체적인 입력-출력 예시 2~3개를 제공한다."
+   }
+  ]
+ },
+ {
+  "lemma": "reprocess",
+  "kind": "vocab-core",
+  "surfaces": [
+   "reprocess",
+   "reprocessed"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "reprocess",
+   "word": "reprocess",
+   "pos": "동사",
+   "ipa": "ˌriːˈprɑːses",
+   "meaning": "다시 처리하다, 재처리하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#59.2",
+    "en": "The team needs to reprocess only the failures and reliably match every result back to its source document."
+   },
+   {
+    "sid": "mock04#57.7",
+    "en": "Move all rule violations to the Message Batches API and reprocess them overnight at the discounted batch rate."
+   },
+   {
+    "sid": "mock04#59.4",
+    "en": "Resubmit the entire 50,000-document batch, since Batch API jobs are atomic and cannot be reprocessed partially or selectively."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:reprocess.0",
+    "en": "The team needs to reprocess only the failures and reliably match every result back to its source document.",
+    "ko": "팀은 실패한 건만 다시 처리하면서 모든 결과를 원본 문서와 확실하게 매칭해야 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "reproduce",
+  "kind": "vocab-core",
+  "surfaces": [
+   "reproduce",
+   "reproducible"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "reproduce",
+   "word": "reproduce",
+   "pos": "동사",
+   "ipa": "ˌriːprəˈduːs",
+   "meaning": "(버그·현상을) 재현하다 — reproducible (형) 재현 가능한"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#8.1",
+    "en": "The engineering team cannot reproduce bugs because they have no visibility into which tools were called, in what order, with what inputs, or what the model's intermediate reasoning was."
+   },
+   {
+    "sid": "mock04#48.7",
+    "en": "Reproduce the author's local machine environment, including home-directory config, inside the CI job container"
+   },
+   {
+    "sid": "sample01#8.6",
+    "en": "Use `temperature=0` to make runs deterministic and reproducible"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:reproduce.0",
+    "en": "The engineering team cannot reproduce bugs because they have no visibility into which tools were called, in what order, with what inputs...",
+    "ko": "어떤 도구가 어떤 순서로, 어떤 입력으로 호출됐는지 볼 수 없어서 버그를 재현하지 못한다."
+   }
+  ]
+ },
+ {
+  "lemma": "reputable",
+  "kind": "vocab-core",
+  "surfaces": [
+   "reputable"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "reputable",
+   "word": "reputable",
+   "pos": "형용사",
+   "ipa": "ˈrepjətəbl",
+   "meaning": "평판 좋은, 믿을 만한"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.6",
+    "en": "Tell the synthesis subagent in its Task prompt that every source the researcher used was reputable and verified"
+   }
+  ]
+ },
+ {
+  "lemma": "request",
+  "kind": "vocab-core",
+  "surfaces": [
+   "requesting",
+   "request",
+   "requests",
+   "requested"
+  ],
+  "freq": 73,
+  "vocab": {
+   "id": "request",
+   "word": "request",
+   "pos": "명사·동사",
+   "ipa": "rɪˈkwest",
+   "meaning": "요청(하다)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#1.1",
+    "en": "The first response has stop_reason set to \"tool_use\" and contains a tool_use block requesting a file-listing tool."
+   },
+   {
+    "sid": "lesson-d2#14.1",
+    "en": "It increasingly calls the wrong tool for a request."
+   },
+   {
+    "sid": "lesson-d4#15.0",
+    "en": "A contract-extraction request sets tool_choice to {\"type\": \"tool\", \"name\": \"extract_clauses\"}."
+   },
+   {
+    "sid": "lesson-d5#1.0",
+    "en": "A support bot built on the Messages API sends the system prompt, its tool definitions and the customer's newest message on each request."
+   },
+   {
+    "sid": "mock04#16.3",
+    "en": "What is the best way to structure the request?"
+   },
+   {
+    "sid": "sample01#9.1",
+    "en": "Analysis shows 70% of requests are semantically identical queries from different users hitting the same 10 core documents."
+   },
+   {
+    "sid": "lesson-d3#25.3",
+    "en": "Write a detailed prose specification of how empty cells, quoted commas and duplicate headers map to JSON fields, give it to Claude with the converter request, and refine the wording after reviewing the output."
+   },
+   {
+    "sid": "lesson-d1#2.0",
+    "en": "After Claude returns stop_reason \"tool_use\", which history update lets it use the result on the next request?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:request.0",
+    "en": "...a tool returning ambiguous results can cause the model to keep requesting the same tool indefinitely",
+    "ko": "도구가 모호한 결과를 반환하면 모델이 같은 도구를 끝없이 재요청할 수 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "require",
+  "kind": "vocab-core",
+  "surfaces": [
+   "requiring",
+   "require",
+   "required",
+   "requires",
+   "requirements",
+   "requirement"
+  ],
+  "freq": 51,
+  "vocab": {
+   "id": "require",
+   "word": "require",
+   "pos": "동사",
+   "ipa": "rɪˈkwaɪər",
+   "meaning": "① 요구하다, 반드시 ~하게 하다 ② 필요로 하다 — required (형) 필수의"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#11.0",
+    "en": "A `deploy_service` MCP tool requires an API token scoped to the `deploy` role."
+   },
+   {
+    "sid": "lesson-d3#14.1",
+    "en": "Which paths frontmatter correctly scopes the rule to this requirement?"
+   },
+   {
+    "sid": "lesson-d4#14.1",
+    "en": "Sometimes `quantity` arrives as \"2\" instead of 2, and some records are missing the required `invoice_id`."
+   },
+   {
+    "sid": "lesson-d5#40.1",
+    "en": "The coordinator initially treats this as a contradiction requiring reconciliation, but on closer inspection the two figures come from reports published fourteen months apart."
+   },
+   {
+    "sid": "mock04#31.3",
+    "en": "The coordinator invokes it once per document, and the required first step is always the same."
+   },
+   {
+    "sid": "lesson-d1#16.5",
+    "en": "State the objective, the boundaries (2025 supply chains only; another subagent covers the 2021 crisis) and the required output (findings as records with source URL and document name), and leave the search steps to the subagent"
+   },
+   {
+    "sid": "sample01#5.5",
+    "en": "A human-in-the-loop gate at the `payment_approve` tool call, requiring explicit human confirmation for payments above a threshold"
+   },
+   {
+    "sid": "selfcheck-d4-kor#16.0",
+    "en": "계약서 추출 스키마에 `renewal_notice_days`(integer, required)를 넣었다. 갱신 통지 조항이 없는 계약서에서도 30이나 60 같은 값이 채워져 나온다. 가장 좋은 수정은?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:require.0",
+    "en": "A human-in-the-loop gate at the `payment_approve` tool call, requiring explicit human confirmation for payments above a threshold",
+    "ko": "`payment_approve` 도구 호출 지점에, 임계값을 넘는 지급은 사람의 명시적 확인을 요구하는 human-in-the-loop 게이트"
+   }
+  ]
+ },
+ {
+  "lemma": "reschedule",
+  "kind": "new",
+  "surfaces": [
+   "reschedule",
+   "rescheduling"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d5#9.1",
+    "en": "A patient messages the assistant in a clearly irritated tone about needing to reschedule a routine appointment with no clinical urgency."
+   },
+   {
+    "sid": "lesson-d5#9.2",
+    "en": "The assistant can complete the rescheduling directly, and the patient has not asked to speak with a staff member."
+   },
+   {
+    "sid": "lesson-d5#9.4",
+    "en": "Acknowledge the frustration, go ahead and reschedule the appointment now, and offer to escalate to a staff member."
+   },
+   {
+    "sid": "lesson-d5#9.6",
+    "en": "Reschedule the appointment without acknowledging the tone, treating the frustration as unrelated to completing the request."
+   },
+   {
+    "sid": "lesson-d5#9.7",
+    "en": "Ask the patient to confirm they do not want a staff member before proceeding with the reschedule."
+   }
+  ]
+ },
+ {
+  "lemma": "research",
+  "kind": "new",
+  "surfaces": [
+   "research",
+   "researched"
+  ],
+  "freq": 45,
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.0",
+    "en": "In a research pipeline, the coordinator hands the synthesis subagent its findings as smooth prose such as \"studies show adoption doubled\"."
+   },
+   {
+    "sid": "lesson-d2#14.0",
+    "en": "A research agent has grown from 5 tools to 18, and several of them now partly overlap."
+   },
+   {
+    "sid": "lesson-d5#14.0",
+    "en": "A research coordinator sends a patents subagent to search a patent database."
+   },
+   {
+    "sid": "mock04#22.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "sample01#6.0",
+    "en": "A long-running research agent processes 40-page technical PDFs and maintains conversation history across 30+ turns."
+   },
+   {
+    "sid": "mock04-kor#29.0",
+    "en": "코디네이터의 에이전트 루프가 보고서 서브에이전트가 실행되기도 전에 멈추는 일이 있습니다. 최신 어시스턴트 텍스트에 'research complete'라는 문구가 들어 있으면 루프를 끝내도록 되어 있기 때문입니다. 간헐적으로 합성 서브에이전트가 분석 도중에 이 문구를 쓰면서 워크플로가 중단됩니다. 루프 종료를 판단하는 올바른 기준은 무엇일까요?"
+   },
+   {
+    "sid": "lesson-d1#16.0",
+    "en": "A coordinator delegates market research with a script: \"Search 'chip shortage 2025', open the top five results, summarise each, then search 'chip prices'.\""
+   },
+   {
+    "sid": "lesson-d2#15.0",
+    "en": "A single generalist agent handling an entire content pipeline (research, outline, draft, edit, publish) has 20 tools and shows declining tool-selection accuracy as more tools were added over time."
+   }
+  ]
+ },
+ {
+  "lemma": "researcher",
+  "kind": "new",
+  "surfaces": [
+   "researcher"
+  ],
+  "freq": 8,
+  "sentences": [
+   {
+    "sid": "lesson-d1#14.0",
+    "en": "After a web-researcher subagent finishes, a coordinator spawns a synthesis subagent."
+   },
+   {
+    "sid": "lesson-d1#14.1",
+    "en": "The synthesis subagent's report comes back generic and cites none of the sources the researcher found."
+   },
+   {
+    "sid": "lesson-d1#18.0",
+    "en": "A coordinator runs a \"web-researcher\" subagent that gathers ten sources on a topic, then spawns a \"synthesis\" subagent to write the final report."
+   },
+   {
+    "sid": "lesson-d1#18.1",
+    "en": "The synthesis subagent's output ignores nearly all of the researcher's findings and instead re-derives generic conclusions from scratch."
+   },
+   {
+    "sid": "lesson-d1#10.6",
+    "en": "Tell the synthesis subagent in its Task prompt that every source the researcher used was reputable and verified"
+   },
+   {
+    "sid": "lesson-d1#14.5",
+    "en": "Paste the researcher's complete findings and source details into the prompt of the Task call that spawns the synthesis subagent"
+   },
+   {
+    "sid": "lesson-d1#18.4",
+    "en": "Paste the web-researcher's full notes and source details into the synthesis subagent's prompt text, so it can write the report from that material"
+   },
+   {
+    "sid": "lesson-d1#18.7",
+    "en": "Give the synthesis subagent the same search tools as web-researcher, so it can run its own searches on the topic before writing the report"
+   }
+  ]
+ },
+ {
+  "lemma": "resend",
+  "kind": "vocab-core",
+  "surfaces": [
+   "resend",
+   "resending",
+   "resends",
+   "re-sends",
+   "re-send"
+  ],
+  "freq": 9,
+  "vocab": {
+   "id": "resend",
+   "word": "resend",
+   "pos": "동사",
+   "ipa": "ˌriːˈsend",
+   "meaning": "다시 보내다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#1.3",
+    "en": "Run the tool, add its output as a tool_result block with the matching tool_use_id in a user message, and resend the history with the tool_use turn"
+   },
+   {
+    "sid": "lesson-d2#8.3",
+    "en": "The agent can't tell that a policy blocked the request. It may keep resending a request that can never succeed, or tell the customer it was a temporary system problem."
+   },
+   {
+    "sid": "lesson-d4#14.4",
+    "en": "Wrap the call in retry logic that re-sends the request whenever a record fails validation"
+   },
+   {
+    "sid": "lesson-d5#3.5",
+    "en": "Prompt the customer to re-send the order number, refund amount, and deadline each time the summary is refreshed"
+   },
+   {
+    "sid": "lesson-d1#1.4",
+    "en": "Run the tool, add its output as a tool_result block with the matching tool_use_id in an assistant message, and resend the history without the tool_use turn"
+   },
+   {
+    "sid": "lesson-d2#9.3",
+    "en": "errorCategory \"transient\", isRetryable true, so the agent waits and resends the same request with backoff"
+   },
+   {
+    "sid": "lesson-d4#24.7",
+    "en": "Switch to a larger model and resend the scan with the error history, so it can better locate the project_code on the form"
+   },
+   {
+    "sid": "lesson-d1#1.5",
+    "en": "Run the tool, add its output as a plain text block naming the tool_use_id in a user message, and resend the history without the tool_use turn"
+   }
+  ]
+ },
+ {
+  "lemma": "reservation",
+  "kind": "new",
+  "surfaces": [
+   "reservations"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#12.0",
+    "en": "In production, a hotel-booking support agent searches by guest name and check-in city and gets back two reservations with different booking references."
+   }
+  ]
+ },
+ {
+  "lemma": "reserve",
+  "kind": "new",
+  "surfaces": [
+   "reserving"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#9.0",
+    "en": "A healthcare scheduling assistant follows a configured escalation policy: when a request is within the assistant's capability and the patient has not asked for a staff member, the assistant should acknowledge any expressed frustration, complete the request directly, and offer escalation to a staff member as an option rather than a requirement -- reserving mandatory escalation for requests it cannot complete, cases needing clinical judgment, or an explicit request for a human."
+   }
+  ]
+ },
+ {
+  "lemma": "residency",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "residency",
+   "word": "residency",
+   "pos": "명사",
+   "ipa": "ˈrezɪdənsi",
+   "meaning": "(데이터) 상주 위치 — data residency: 데이터가 저장·처리되는 지역 / 거주"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "resident",
+  "kind": "vocab-core",
+  "surfaces": [
+   "resident"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "resident",
+   "word": "resident",
+   "pos": "형용사",
+   "ipa": "ˈrezɪdənt",
+   "meaning": "(메모리·컨텍스트에) 계속 남아 있는, 상주하는"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#22.4",
+    "en": "Increase the coordinator's context window so that more of the earlier findings stay resident across delegations"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:resident.0",
+    "en": "Increase the coordinator's context window so that more of the earlier findings stay resident across delegations",
+    "ko": "위임이 거듭되어도 앞선 발견 사항이 더 많이 남아 있도록 코디네이터의 컨텍스트 창을 늘린다."
+   }
+  ]
+ },
+ {
+  "lemma": "resolution",
+  "kind": "vocab-core",
+  "surfaces": [
+   "resolution",
+   "resolve",
+   "resolved",
+   "unresolved"
+  ],
+  "freq": 21,
+  "vocab": {
+   "id": "resolution",
+   "word": "resolution",
+   "pos": "명사",
+   "ipa": "ˌrezəˈluːʃn",
+   "meaning": "해결, (문제를) 처리함"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#38.1",
+    "en": "What architectural step should resolve this rather than picking one per-file recommendation at random?"
+   },
+   {
+    "sid": "mock04#1.0",
+    "en": "[Scenario: Customer Support Resolution Agent]"
+   },
+   {
+    "sid": "lesson-d1#3.3",
+    "en": "The Messages API rejects the sixth request with an error, leaving the conversation stuck at a stop_reason of \"tool_use\" it cannot resolve"
+   },
+   {
+    "sid": "lesson-d2#10.5",
+    "en": "The `errorCategory` should be set to `'transient'` instead of `'validation'` because the error can be resolved later by the agent, implying a temporary condition."
+   },
+   {
+    "sid": "lesson-d3#30.6",
+    "en": "The checkout used a shallow fetch-depth, so the CLI could not resolve the diff against the base branch and sat scanning the git history for missing commits"
+   },
+   {
+    "sid": "lesson-d5#37.3",
+    "en": "Stop the analysis and return nothing until the coordinator has resolved the discrepancy"
+   },
+   {
+    "sid": "mock04#1.1",
+    "en": "A customer support resolution agent built with the Claude Agent SDK reaches backend systems through custom MCP tools (get_customer, lookup_order, process_refund, escalate_to_human)."
+   },
+   {
+    "sid": "lesson-d2#12.1",
+    "en": "The enriched records, plus the unresolved customers each with their permission error and description, plus a record of which lookups were attempted"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:resolution.0",
+    "en": "For simple requests like \"refund order #1234\", your agent succeeds in 3-4 tool calls with 91% resolution.",
+    "ko": "\"order #1234 환불\" 같은 단순 요청은 도구 호출 3~4번으로 91%가 해결된다."
+   }
+  ]
+ },
+ {
+  "lemma": "resolver",
+  "kind": "new",
+  "surfaces": [
+   "resolver"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "selfcheck-d3-kor#13.0",
+    "en": "GraphQL resolver 작성 규칙이 저장소 곳곳의 `*.resolver.ts` 파일 150여 개에 적용된다. 파일은 30개가 넘는 디렉터리에 흩어져 있다. 가장 알맞은 구성은?"
+   },
+   {
+    "sid": "selfcheck-d3-kor#13.1",
+    "en": "resolver 파일이 있는 디렉터리마다 CLAUDE.md를 만들어 규칙을 복사한다"
+   }
+  ]
+ },
+ {
+  "lemma": "resource",
+  "kind": "vocab-core",
+  "surfaces": [
+   "resource"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "resource",
+   "word": "resource",
+   "pos": "명사",
+   "ipa": "ˈriːsɔːrs",
+   "meaning": "① 자원 ② (MCP) 리소스 — 에이전트가 읽어 가도록 노출한 데이터"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#41.5",
+    "en": "Expose the schema catalog as an MCP resource that the agent reads once upfront, instead of probing with repeated exploratory tool calls."
+   },
+   {
+    "sid": "lesson-d2#7.5",
+    "en": "Consolidation fits several actions on one resource that share a contract, like create, review and merge on a pull request. Extraction, summarization and claim verification take different inputs and return different outputs, so each needs its own tool and description."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:resource.0",
+    "en": "Expose the schema catalog as an MCP resource that the agent reads once upfront, instead of probing with repeated exploratory tool calls.",
+    "ko": "스키마 카탈로그를 MCP 리소스로 노출해 에이전트가 처음에 한 번 읽게 하고, 반복적인 탐색용 도구 호출로 더듬어 찾지 않게 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "respond",
+  "kind": "vocab-core",
+  "surfaces": [
+   "respond",
+   "responds"
+  ],
+  "freq": 8,
+  "vocab": {
+   "id": "respond",
+   "word": "respond",
+   "pos": "동사",
+   "ipa": "rɪˈspɑːnd",
+   "meaning": "응답하다, (~에) 반응하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#18.3",
+    "en": "What combination of changes best addresses this while preserving each agent's ability to decide when to act versus respond?"
+   },
+   {
+    "sid": "sample01#15.1",
+    "en": "The system prompt says 'Always respond with valid JSON'."
+   },
+   {
+    "sid": "mock04#32.8",
+    "en": "Set tool_choice to \"auto\" so the model can respond directly when no tool is required for the input."
+   },
+   {
+    "sid": "lesson-d2#9.1",
+    "en": "Which error metadata from the handler lets the agent respond best?"
+   },
+   {
+    "sid": "mock04#60.6",
+    "en": "Set tool_choice to \"any\" so the model is at least required to call some extraction tool before it responds."
+   },
+   {
+    "sid": "sample01#20.1",
+    "en": "System prompt: 'You must always respond with valid JSON'"
+   },
+   {
+    "sid": "lesson-d2#18.5",
+    "en": "Keep the shared 15-tool set for all subagents, but switch every subagent's tool_choice to {\"type\": \"any\"} so a tool call is always forced, ensuring subagents cannot respond without selecting a tool."
+   },
+   {
+    "sid": "sample01#20.4",
+    "en": "User message ending with: 'Respond only with JSON, no other text'"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:respond.0",
+    "en": "The system prompt says 'Always respond with valid JSON'.",
+    "ko": "시스템 프롬프트에는 \"항상 유효한 JSON으로 응답하라\"고 되어 있다."
+   }
+  ]
+ }
+]

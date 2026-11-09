@@ -1,0 +1,1517 @@
+[
+ {
+  "lemma": "design",
+  "kind": "vocab-core",
+  "surfaces": [
+   "design",
+   "redesigned",
+   "designing",
+   "redesign",
+   "designed",
+   "redesigning"
+  ],
+  "freq": 27,
+  "vocab": {
+   "id": "design",
+   "word": "design",
+   "pos": "명사·동사",
+   "ipa": "dɪˈzaɪn",
+   "meaning": "설계(하다)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#21.1",
+    "en": "A reviewer worries this design assumes the hooks run in a guaranteed order relative to each other."
+   },
+   {
+    "sid": "lesson-d2#11.3",
+    "en": "Under a structured error design, how should this failure be categorized and handled differently from a network timeout on the same tool?"
+   },
+   {
+    "sid": "lesson-d3#3.0",
+    "en": "An architect is designing a configuration strategy for a company rolling out Claude Code to all engineering teams."
+   },
+   {
+    "sid": "lesson-d5#16.1",
+    "en": "You are designing the final message it returns."
+   },
+   {
+    "sid": "mock04#56.3",
+    "en": "What is the best design change?"
+   },
+   {
+    "sid": "lesson-d4#2.4",
+    "en": "High-confidence phrasing conflicts with the model's safety training, which is designed to avoid under-reporting risks, causing it to over-report findings as a precautionary default across a wider range of inputs."
+   },
+   {
+    "sid": "lesson-d1#26.1",
+    "en": "Which design actually guarantees the limit holds?"
+   },
+   {
+    "sid": "lesson-d2#15.2",
+    "en": "What is the main reliability benefit of this redesign, based on the relationship between tool count and selection accuracy?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:design.0",
+    "en": "What is the best design change?",
+    "ko": "가장 좋은 설계 변경은 무엇일까요?"
+   }
+  ]
+ },
+ {
+  "lemma": "designate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "designated"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "designate",
+   "word": "designate",
+   "pos": "동사",
+   "ipa": "ˈdezɪɡneɪt",
+   "meaning": "지정하다, (특정 용도로) 정해 두다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#33.7",
+    "en": "Set a forced tool_choice so the subagent always uses one designated search tool regardless of the query's topic or type."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:designate.0",
+    "en": "Set a forced tool_choice so the subagent always uses one designated search tool regardless of the query's topic or type.",
+    "ko": "쿼리의 주제나 유형과 관계없이 서브에이전트가 지정된 검색 도구 하나만 항상 쓰도록 강제 `tool_choice` 를 설정한다."
+   }
+  ]
+ },
+ {
+  "lemma": "desire",
+  "kind": "new",
+  "surfaces": [
+   "desired"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#10.5",
+    "en": "Remove the examples and describe the desired classification behavior in a single instruction sentence"
+   }
+  ]
+ },
+ {
+  "lemma": "despite",
+  "kind": "vocab-core",
+  "surfaces": [
+   "despite"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "despite",
+   "word": "despite",
+   "pos": "전치사",
+   "ipa": "dɪˈspaɪt",
+   "meaning": "~에도 불구하고"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#43.5",
+    "en": "Retry the identical Edit call with tool_choice forced so it applies despite the ambiguity in the match."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:despite.0",
+    "en": "Retry the identical Edit call with tool_choice forced so it applies despite the ambiguity in the match.",
+    "ko": "일치가 모호해도 적용되도록 `tool_choice` 를 강제한 채 똑같은 `Edit` 호출을 다시 시도한다."
+   }
+  ]
+ },
+ {
+  "lemma": "destructive",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "destructive",
+   "word": "destructive",
+   "pos": "형용사",
+   "ipa": "dɪˈstrʌktɪv",
+   "meaning": "파괴적인 — 되돌릴 수 없게 지우거나 바꾸는"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:destructive.0",
+    "en": "...a developer accidentally triggered destructive test cleanup when the skill had broad tool access.",
+    "ko": "스킬에 광범위한 도구 접근 권한이 있어 한 개발자가 파괴적인 테스트 정리 작업을 실수로 실행했다."
+   }
+  ]
+ },
+ {
+  "lemma": "detail",
+  "kind": "vocab-core",
+  "surfaces": [
+   "detailed",
+   "details",
+   "detail"
+  ],
+  "freq": 31,
+  "vocab": {
+   "id": "detail",
+   "word": "detail",
+   "pos": "명사",
+   "ipa": "ˈdiːteɪl",
+   "meaning": "세부 (사항), 자세한 내용"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#4.1",
+    "en": "Both tools now have detailed descriptions of what they do, but some web tasks still go to `analyze_content`."
+   },
+   {
+    "sid": "lesson-d5#22.1",
+    "en": "When asked about a class it examined in detail early on, it now describes what such a class typically looks like, and its two latest answers about that component disagree."
+   },
+   {
+    "sid": "mock04#21.2",
+    "en": "Over time Claude starts overlooking the failing-test details and the constraints stated at the start of the session."
+   },
+   {
+    "sid": "sample01#19.2",
+    "en": "The tool descriptions are: 'Gets user information' and 'Fetches account details'."
+   },
+   {
+    "sid": "lesson-d1#14.5",
+    "en": "Paste the researcher's complete findings and source details into the prompt of the Task call that spawns the synthesis subagent"
+   },
+   {
+    "sid": "lesson-d3#25.3",
+    "en": "Write a detailed prose specification of how empty cells, quoted commas and duplicate headers map to JSON fields, give it to Claude with the converter request, and refine the wording after reviewing the output."
+   },
+   {
+    "sid": "lesson-d4#13.6",
+    "en": "Remove the examples and write a more detailed description of the dose field, so the model stops copying a pattern"
+   },
+   {
+    "sid": "sample01-kor#19.0",
+    "en": "`get_user_info(user_id)` 와 `fetch_account_details(account_id)` 두 도구가 정의되어 있습니다. 테스트에서 모델이 `fetch_account_details` 를 호출해야 할 때 `get_user_info` 를 호출하고, 그 반대의 경우도 발생합니다. 도구 설명은 각각 'Gets user information'과 'Fetches account details'입니다. 해결책은 무엇일까요?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:detail.0",
+    "en": "More detailed system prompt with payment validation instructions",
+    "ko": "지급 검증 지침을 담은 더 상세한 시스템 프롬프트"
+   },
+   {
+    "vid": "vocab:detail.1",
+    "en": "The tool descriptions are: 'Gets user information' and 'Fetches account details'.",
+    "ko": "도구 설명은 각각 \"Gets user information\"(사용자 정보 조회), \"Fetches account details\"(계정 세부 정보 조회)입니다."
+   }
+  ]
+ },
+ {
+  "lemma": "detect",
+  "kind": "vocab-core",
+  "surfaces": [
+   "detect",
+   "detected"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "detect",
+   "word": "detect",
+   "pos": "동사",
+   "ipa": "dɪˈtekt",
+   "meaning": "감지하다, 알아내다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#31.1",
+    "en": "The document-analysis subagent must call classify_document before running any field extraction, because the extraction schema depends on the detected type."
+   },
+   {
+    "sid": "lesson-d3#8.3",
+    "en": "The skill was saved under .claude/skills/lint-report/SKILL.md, but the teammate needs to restart their machine before new skills are detected."
+   },
+   {
+    "sid": "lesson-d4#22.4",
+    "en": "Semantic error the schema cannot detect; add a post-extraction check that recomputes the line-item sum and compares it to order_total"
+   },
+   {
+    "sid": "sample01#1.4",
+    "en": "The engineer is parsing Claude's conversational text output to detect tool calls instead of using the structural `stop_reason` and `tool_use` content blocks"
+   },
+   {
+    "sid": "mock04#58.4",
+    "en": "Retries fix format errors but cannot recover absent source data, so detect the absence, return null, and route the document to human review."
+   },
+   {
+    "sid": "sample01#2.6",
+    "en": "Switch to a streaming response to detect completion earlier"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:detect.0",
+    "en": "The engineer is parsing Claude's conversational text output to detect tool calls...",
+    "ko": "...Claude의 대화형 텍스트 출력을 파싱해 도구 호출을 감지하고 있다"
+   }
+  ]
+ },
+ {
+  "lemma": "determine",
+  "kind": "vocab-core",
+  "surfaces": [
+   "determine"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "determine",
+   "word": "determine",
+   "pos": "동사",
+   "ipa": "dɪˈtɜːrmɪn",
+   "meaning": "① 알아내다, 밝혀내다 ② 결정하다, 좌우하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#44.1",
+    "en": "An engineer asks the tool to determine which of 30 services emits a particular Kafka event."
+   },
+   {
+    "sid": "lesson-d1#24.8",
+    "en": "Replace the model with a larger, more capable language model that can independently re-read the entire conversation and determine whether the human review actually succeeded, overriding the flag when necessary."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:determine.0",
+    "en": "An engineer asks the tool to determine which of 30 services emits a particular Kafka event.",
+    "ko": "한 엔지니어가 도구에게 30개 서비스 중 어느 서비스가 특정 Kafka 이벤트를 발행하는지 알아내 달라고 요청합니다."
+   }
+  ]
+ },
+ {
+  "lemma": "deterministic",
+  "kind": "vocab-core",
+  "surfaces": [
+   "deterministic",
+   "deterministically"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "deterministic",
+   "word": "deterministic",
+   "pos": "형용사",
+   "ipa": "dɪˌtɜːrmɪˈnɪstɪk",
+   "meaning": "결정적인 — 같은 입력이면 항상 같은 결과가 나오는"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#32.5",
+    "en": "Force tool_choice to the parse_pdf tool so parsing behavior is deterministic for every input the subagent receives."
+   },
+   {
+    "sid": "sample01#14.5",
+    "en": "Lower temperature to 0 for deterministic output"
+   },
+   {
+    "sid": "mock04#46.5",
+    "en": "Invoke Claude with --output-format json plus a --json-schema so findings are emitted as typed fields the gate reads deterministically"
+   },
+   {
+    "sid": "sample01#8.6",
+    "en": "Use `temperature=0` to make runs deterministic and reproducible"
+   },
+   {
+    "sid": "mock04#53.5",
+    "en": "Add a stern system-prompt line (\"Return only valid JSON, no markdown, no commentary\") and set temperature to 0 for deterministic formatting."
+   },
+   {
+    "sid": "mock04#57.6",
+    "en": "Lower temperature to 0 and re-run the original prompt exactly once, expecting deterministic output that satisfies the rule."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:deterministic.0",
+    "en": "Use `temperature=0` to make runs deterministic and reproducible",
+    "ko": "`temperature=0` 으로 실행을 결정적·재현 가능하게 만든다"
+   }
+  ]
+ },
+ {
+  "lemma": "dev",
+  "kind": "new",
+  "surfaces": [
+   "dev"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "sample01#11.0",
+    "en": "A dev team wants Claude Code to automatically run `npm run lint:fix` every time it writes or edits a TypeScript file."
+   }
+  ]
+ },
+ {
+  "lemma": "developer",
+  "kind": "new",
+  "surfaces": [
+   "developer",
+   "developers"
+  ],
+  "freq": 47,
+  "sentences": [
+   {
+    "sid": "lesson-d1#24.0",
+    "en": "A developer implements a PreToolUse hook that gates the `process_refund` tool by checking a boolean flag `is_verified`."
+   },
+   {
+    "sid": "lesson-d2#22.0",
+    "en": "A developer has a local-scoped `analytics` server that still points at an old staging endpoint."
+   },
+   {
+    "sid": "lesson-d3#1.0",
+    "en": "A developer notices that in Monday's session Claude followed the package's error-handling convention, but in Tuesday's session on the same repo it ignored it."
+   },
+   {
+    "sid": "lesson-d4#11.0",
+    "en": "Developers have started ignoring a review bot because it flags every broad `catch` block in a TypeScript service, including deliberate ones."
+   },
+   {
+    "sid": "mock04#12.2",
+    "en": "Developers notice that after running it, the main session is cluttered with raw output and Claude's subsequent answers in that session degrade in quality."
+   },
+   {
+    "sid": "sample01#18.1",
+    "en": "A developer asks Claude Code to commit their changes directly to main."
+   },
+   {
+    "sid": "lesson-d1#38.0",
+    "en": "A developer named a session 'auth-refactor' on their laptop."
+   },
+   {
+    "sid": "lesson-d2#22.3",
+    "en": "The developer wants the team's production definition."
+   }
+  ]
+ },
+ {
+  "lemma": "diagnosis",
+  "kind": "vocab-core",
+  "surfaces": [
+   "diagnosis"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "diagnosis",
+   "word": "diagnosis",
+   "pos": "명사",
+   "ipa": "ˌdaɪəɡˈnoʊsɪs",
+   "meaning": "진단 — 문제의 원인을 밝혀냄 (diagnose: 진단하다)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#37.4",
+    "en": "A fixed set of parallel subagents for the database, cache and load balancer that report to a merging step for diagnosis"
+   }
+  ]
+ },
+ {
+  "lemma": "dictionary",
+  "kind": "vocab-core",
+  "surfaces": [
+   "dictionary"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "dictionary",
+   "word": "dictionary",
+   "pos": "명사",
+   "ipa": "ˈdɪkʃəneri",
+   "meaning": "사전 — 단어·값을 짝지어 모은 목록 (프로그래밍에선 키-값 자료형)"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#46.4",
+    "en": "Add a post-processing library with a synonym dictionary that normalizes severity wording before the grep step runs"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:dictionary.0",
+    "en": "Add a post-processing library with a synonym dictionary that normalizes severity wording before the grep step runs",
+    "ko": "grep 단계가 실행되기 전에 동의어 사전을 가진 후처리 라이브러리를 추가해 심각도 표현을 정규화한다"
+   }
+  ]
+ },
+ {
+  "lemma": "diff",
+  "kind": "vocab-core",
+  "surfaces": [
+   "diffs",
+   "diff"
+  ],
+  "freq": 21,
+  "vocab": {
+   "id": "diff",
+   "word": "diff",
+   "pos": "명사·동사",
+   "ipa": "dɪf",
+   "meaning": "변경분 비교 결과 — 파일에서 바뀐 줄을 보여 주는 것 / 비교하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#30.0",
+    "en": "A platform team wraps `claude` inside a GitHub Actions job that fires on every pull request to summarize the diff."
+   },
+   {
+    "sid": "lesson-d4#32.0",
+    "en": "A platform team runs an automated code-review gate that blocks a pull request from merging until Claude returns a verdict on the diff, typically within a few seconds."
+   },
+   {
+    "sid": "mock04#20.2",
+    "en": "The history is full of superseded intermediate diffs, but the current task and goal are unchanged and the latest file states are still valid."
+   },
+   {
+    "sid": "lesson-d1#35.4",
+    "en": "Move the review to a model with a larger context window, so the full diff is read in one sitting without being truncated"
+   },
+   {
+    "sid": "mock04-kor#20.1",
+    "en": "일관된 흐름으로 몇 시간째 진행 중인 리팩터링 도중 세션이 컨텍스트 한도에 가까워졌습니다. 기록은 이미 폐기된 중간 diff로 가득하지만, 현재 작업과 목표는 그대로이고 최신 파일 상태도 여전히 유효합니다. 맥락을 잃지 않고 작업을 이어 가기 위해 개발자가 해야 할 일은 무엇일까요?"
+   },
+   {
+    "sid": "selfcheck-d3-kor#34.1",
+    "en": "생성 세션과 분리된 새 `claude -p` 실행에 diff와 리뷰 기준만 주고 리뷰시킨다"
+   },
+   {
+    "sid": "selfcheck-d4-kor#33.0",
+    "en": "리뷰 대상 diff"
+   },
+   {
+    "sid": "lesson-d1#35.5",
+    "en": "Keep one pass over the diff, but have the model rank the files by risk first, then spend its review effort on the highest-risk ones"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:diff.0",
+    "en": "The history is full of superseded intermediate diffs, but the current task and goal are unchanged...",
+    "ko": "기록은 이미 폐기된 중간 diff로 가득하지만, 현재 작업과 목표는 그대로이다."
+   },
+   {
+    "vid": "vocab:diff.1",
+    "en": "Instruct the generating session to \"review critically and assume the code contains bugs\" before it approves the diff",
+    "ko": "생성 세션이 diff를 승인하기 전에 \"비판적으로 리뷰하고 코드에 버그가 있다고 가정하라\"고 지시한다"
+   }
+  ]
+ },
+ {
+  "lemma": "differ",
+  "kind": "vocab-core",
+  "surfaces": [
+   "differs",
+   "differ"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "differ",
+   "word": "differ",
+   "pos": "동사",
+   "ipa": "ˈdɪfər",
+   "meaning": "(~와) 다르다, 구별되다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#21.1",
+    "en": "Their module maps also differ slightly from one another."
+   },
+   {
+    "sid": "mock04#7.6",
+    "en": "A structured error with errorCategory (e.g. transient) and isRetryable, so an access failure differs from an empty result."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:differ.0",
+    "en": "A structured error with errorCategory (e.g. transient) and isRetryable, so an access failure differs from an empty result.",
+    "ko": "`errorCategory`(예: `transient`)와 `isRetryable` 을 담은 구조화된 오류를 반환해, 접근 실패가 빈 결과와 구분되게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "difference",
+  "kind": "new",
+  "surfaces": [
+   "difference"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "mock04#35.7",
+    "en": "Annotate both figures with source and publication date so the time difference is visible, not read as a conflict."
+   }
+  ]
+ },
+ {
+  "lemma": "different",
+  "kind": "new",
+  "surfaces": [
+   "different"
+  ],
+  "freq": 28,
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.1",
+    "en": "Separately, each time the coordinator invokes this subagent it supplies a different per-call prompt describing the specific table and migration at hand."
+   },
+   {
+    "sid": "lesson-d2#23.0",
+    "en": "A repository's .mcp.json defines a server named `analytics`, and a developer also has a server named `analytics` added with local scope on their machine pointing at a different endpoint entirely."
+   },
+   {
+    "sid": "lesson-d3#20.0",
+    "en": "A team lead reviewing a completed library migration finds that early file conversions used one pattern, while later files in the same migration used a different, incompatible pattern, forcing a second pass to reconcile them."
+   },
+   {
+    "sid": "lesson-d4#23.2",
+    "en": "Three retries have each returned a different date that appears nowhere in the contract."
+   },
+   {
+    "sid": "lesson-d5#12.0",
+    "en": "In production, a hotel-booking support agent searches by guest name and check-in city and gets back two reservations with different booking references."
+   },
+   {
+    "sid": "mock04#35.1",
+    "en": "Two sources report different market-size figures for the same market — $4.2B (2021 data) versus $6.8B (2023 data)."
+   },
+   {
+    "sid": "sample01#14.2",
+    "en": "In testing, 'app crashes on login' is classified as bug, feature_request, and question in different runs."
+   },
+   {
+    "sid": "lesson-d1#5.2",
+    "en": "The subagent picks a different provider."
+   }
+  ]
+ },
+ {
+  "lemma": "differentiate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "differentiate",
+   "differentiating"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "differentiate",
+   "word": "differentiate",
+   "pos": "동사",
+   "ipa": "ˌdɪfəˈrenʃieɪt",
+   "meaning": "구별하다, 서로 다르게 만들다(차별화하다)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#2.4",
+    "en": "The near-duplicate descriptions give the model no differentiating signal, since descriptions are its main basis for choosing similar tools."
+   },
+   {
+    "sid": "mock04#33.4",
+    "en": "Expand and differentiate both tool descriptions with input formats, example queries, source coverage, and clear boundaries."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:differentiate.0",
+    "en": "Expand and differentiate both tool descriptions with input formats, example queries, source coverage, and clear boundaries.",
+    "ko": "두 도구 설명을 입력 형식, 예시 쿼리, 다루는 출처 범위, 명확한 사용 경계를 담아 확장하고 서로 구별되게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "differently",
+  "kind": "new",
+  "surfaces": [
+   "differently"
+  ],
+  "freq": 3,
+  "sentences": [
+   {
+    "sid": "lesson-d2#11.3",
+    "en": "Under a structured error design, how should this failure be categorized and handled differently from a network timeout on the same tool?"
+   },
+   {
+    "sid": "lesson-d3#28.1",
+    "en": "Twice, Claude has handled empty cells and quoted commas differently from what your written spec meant."
+   },
+   {
+    "sid": "mock04#46.2",
+    "en": "The gate is flaky because Claude phrases severe findings differently each run — \"severe issue,\" \"major bug,\" \"critical defect.\""
+   }
+  ]
+ },
+ {
+  "lemma": "difficult",
+  "kind": "new",
+  "surfaces": [
+   "difficult"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#25.0",
+    "en": "A team lead wants Claude Code to implement a CSV-to-JSON conversion utility whose column-to-field mapping rules are difficult to describe precisely in words, since the exact handling of empty cells, quoted commas, and duplicate headers matters."
+   }
+  ]
+ },
+ {
+  "lemma": "digit",
+  "kind": "new",
+  "surfaces": [
+   "digits"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#29.2",
+    "en": "doc-2026-report_final, since it uses only letters, digits, hyphens, and underscores, staying under the 64-character limit"
+   }
+  ]
+ },
+ {
+  "lemma": "dilute",
+  "kind": "vocab-core",
+  "surfaces": [
+   "diluting",
+   "dilution"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "dilute",
+   "word": "dilute",
+   "pos": "동사",
+   "ipa": "daɪˈluːt",
+   "meaning": "희석하다, (집중·효과를) 흐리다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#35.2",
+    "en": "What restructuring addresses this attention dilution problem?"
+   },
+   {
+    "sid": "mock04#49.2",
+    "en": "That rubric is needed only by the review job, but it is now injected into every CI job — test generation, doc updates — inflating token cost and diluting the model's focus on those tasks."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:dilute.0",
+    "en": "...it is now injected into every CI job — test generation, doc updates — inflating token cost and diluting the model's focus on those tasks.",
+    "ko": "지금은 테스트 생성이나 문서 업데이트 같은 모든 CI job에 주입되어 토큰 비용을 부풀리고 해당 작업에 대한 모델의 집중을 흐리고 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "direct",
+  "kind": "vocab-core",
+  "surfaces": [
+   "direct",
+   "directly"
+  ],
+  "freq": 33,
+  "vocab": {
+   "id": "direct",
+   "word": "direct",
+   "pos": "형용사·동사",
+   "ipa": "dəˈrekt",
+   "meaning": "① 직접적인, 바로 — directly: 직접, 곧바로 / indirect: 간접적인 ② 지시하다, 향하게 하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#39.2",
+    "en": "Which approach satisfies this most directly?"
+   },
+   {
+    "sid": "lesson-d2#14.2",
+    "en": "Which change most directly fixes this?"
+   },
+   {
+    "sid": "lesson-d3#21.1",
+    "en": "Before any files are changed, which approach should the architect direct Claude Code to take?"
+   },
+   {
+    "sid": "lesson-d5#24.1",
+    "en": "Running the search directly would flood the main conversation with thousands of matched paths it will not need again."
+   },
+   {
+    "sid": "mock04#24.1",
+    "en": "A newly configured coordinator answers research questions directly from its own knowledge instead of delegating; its attempts to invoke subagents never appear in the trace."
+   },
+   {
+    "sid": "sample01#18.0",
+    "en": "A team commits a `CLAUDE.md` file with: 'Never commit directly to main branch'."
+   },
+   {
+    "sid": "lesson-d4#32.2",
+    "en": "Call the Messages API synchronously for each diff, and have the merge check read the verdict directly from the API response"
+   },
+   {
+    "sid": "lesson-d2#25.2",
+    "en": "Which change most directly fixes this?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:direct.0",
+    "en": "...flag and reject tool calls made in direct response to retrieved document content without user confirmation",
+    "ko": "검색·업로드된 문서 내용에 직접 반응해 이뤄진 도구 호출을 사용자 확인 없이는 표시·거부한다"
+   },
+   {
+    "vid": "vocab:direct.1",
+    "en": "A team commits a `CLAUDE.md` file with: 'Never commit directly to main branch'.",
+    "ko": "팀이 \"main 브랜치에 직접 커밋하지 마라\"는 내용의 `CLAUDE.md` 를 커밋했다."
+   }
+  ]
+ },
+ {
+  "lemma": "direction",
+  "kind": "new",
+  "surfaces": [
+   "directions"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#7.1",
+    "en": "Which design gets escalation right in both directions?"
+   }
+  ]
+ },
+ {
+  "lemma": "directory",
+  "kind": "vocab-core",
+  "surfaces": [
+   "directory",
+   "subdirectory",
+   "directories",
+   "subdirectories"
+  ],
+  "freq": 28,
+  "vocab": {
+   "id": "directory",
+   "word": "directory",
+   "pos": "명사",
+   "ipa": "dəˈrektəri",
+   "meaning": "디렉터리, 폴더 — 파일을 묶어 두는 경로"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#40.0",
+    "en": "An application serves many concurrent users, each with their own long-running investigation conversation against the same repository directory."
+   },
+   {
+    "sid": "lesson-d2#27.0",
+    "en": "An architect asks Claude Code to count how many files in the `src/components` directory tree currently have no matching test file at all, as a first step in planning test coverage work."
+   },
+   {
+    "sid": "lesson-d3#16.0",
+    "en": "An infrastructure team wants Claude Code to load Terraform-specific formatting and tagging conventions only when Claude edits files under the terraform/ directory, at any subfolder depth."
+   },
+   {
+    "sid": "lesson-d5#24.5",
+    "en": "Run the search in the main agent one top-level directory at a time, and note each batch of matched paths before starting the next."
+   },
+   {
+    "sid": "mock04#14.4",
+    "en": "Add a stronger system-prompt instruction explicitly forbidding edits to any file that lives outside the `docs/` directory"
+   },
+   {
+    "sid": "sample01#13.4",
+    "en": "Create markdown files in `.claude/commands/` directory in the repo root and commit them"
+   },
+   {
+    "sid": "lesson-d1#40.1",
+    "en": "A backend service needs to resume a specific user's conversation on demand, potentially hours after the user's last message, while other users' sessions remain active in the same directory."
+   },
+   {
+    "sid": "lesson-d3#5.0",
+    "en": "An engineer launches Claude Code from the `services/billing/` directory inside a larger repository."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:directory.0",
+    "en": "Create markdown files in `.claude/commands/` directory in the repo root and commit them",
+    "ko": "저장소 루트의 `.claude/commands/` 디렉터리에 마크다운 파일을 만들고 커밋한다"
+   }
+  ]
+ },
+ {
+  "lemma": "disable",
+  "kind": "vocab-core",
+  "surfaces": [
+   "disable",
+   "disabled"
+  ],
+  "freq": 7,
+  "vocab": {
+   "id": "disable",
+   "word": "disable",
+   "pos": "동사",
+   "ipa": "dɪsˈeɪbl",
+   "meaning": "(기능을) 끄다, 비활성화하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#3.1",
+    "en": "They need security and compliance instructions that every developer receives on every machine, in every repository, and that individual developers or teams cannot disable through their own settings."
+   },
+   {
+    "sid": "lesson-d1#7.6",
+    "en": "The subagent's system prompt overrides user decisions by design, so the architect must disable its custom system prompt"
+   },
+   {
+    "sid": "mock04#44.6",
+    "en": "Disable Grep and instead Read each candidate file directly in the main session, one service after another"
+   },
+   {
+    "sid": "sample01#4.6",
+    "en": "Disable PDF upload functionality"
+   },
+   {
+    "sid": "lesson-d4#20.6",
+    "en": "This is expected only when strict mode is disabled, because strict mode enforces that field values must satisfy the schema's semantic rules, such as ensuring transaction_type accurately reflects the amount sign, thereby preventing mislabeling."
+   },
+   {
+    "sid": "lesson-d3#19.5",
+    "en": "The architect's local settings have disabled every single permission check for the remainder of this particular session entirely"
+   },
+   {
+    "sid": "mock04#50.5",
+    "en": "Temporarily disable the naming-convention category and rewrite its prompt with explicit rules before re-enabling"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:disable.0",
+    "en": "Disable Grep and instead Read each candidate file directly in the main session, one service after another",
+    "ko": "`Grep` 을 끄고, 대신 메인 세션에서 후보 파일을 서비스별로 하나씩 직접 `Read` 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "disagree",
+  "kind": "new",
+  "surfaces": [
+   "disagree"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#22.1",
+    "en": "When asked about a class it examined in detail early on, it now describes what such a class typically looks like, and its two latest answers about that component disagree."
+   }
+  ]
+ },
+ {
+  "lemma": "disambiguate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "disambiguate",
+   "disambiguation"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "disambiguate",
+   "word": "disambiguate",
+   "pos": "동사",
+   "ipa": "ˌdɪsæmˈbɪɡjueɪt",
+   "meaning": "모호함을 없애다, (여러 후보 중) 어느 쪽인지 확정하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#5.6",
+    "en": "Delete the description text from both tools so the model relies entirely on tool names for disambiguation."
+   },
+   {
+    "sid": "mock04#10.5",
+    "en": "Ask for an extra identifier (order number, email, or ZIP) to disambiguate before taking any account action."
+   },
+   {
+    "sid": "lesson-d2#6.4",
+    "en": "Give both tools identical descriptions but different internal function names so backend routing can disambiguate them."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:disambiguate.0",
+    "en": "Ask for an extra identifier (order number, email, or ZIP) to disambiguate before taking any account action.",
+    "ko": "계정 관련 조치를 하기 전에 추가 식별자(주문 번호, 이메일, ZIP 코드)를 요청해 대상을 확정한다"
+   }
+  ]
+ },
+ {
+  "lemma": "discard",
+  "kind": "vocab-core",
+  "surfaces": [
+   "discarded",
+   "discarding",
+   "discard",
+   "discards"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "discard",
+   "word": "discard",
+   "pos": "동사",
+   "ipa": "dɪˈskɑːrd",
+   "meaning": "버리다, 폐기하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#35.3",
+    "en": "Reviewers, seeing the discarded figure elsewhere, flag the report as unreliable."
+   },
+   {
+    "sid": "lesson-d5#19.7",
+    "en": "The subagent kept the pipeline running past a credential error, so the other subagents produced results that should have been discarded"
+   },
+   {
+    "sid": "mock04#57.2",
+    "en": "The current recovery discards the result and re-runs the identical prompt from scratch; 40% of retries still fail the rule."
+   },
+   {
+    "sid": "lesson-d5#39.6",
+    "en": "Instruct subagents to keep only the most recent figure for each statistic and discard older ones"
+   },
+   {
+    "sid": "mock04#39.7",
+    "en": "Start a fresh session and inject a short summary of prior conclusions, discarding stale tool results"
+   },
+   {
+    "sid": "mock04#55.4",
+    "en": "Add a required confidence float to every field so downstream code can discard PO numbers below a chosen threshold."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:discard.0",
+    "en": "Split the skill into two separate skills—`/explore-start` and `/explore-end`—to demarcate when exploration context should be discarded.",
+    "ko": "스킬을 `/explore-start`·`/explore-end` 두 개로 나눠, 탐색 맥락을 언제 버려야 하는지 구분한다."
+   }
+  ]
+ },
+ {
+  "lemma": "disclaimer",
+  "kind": "vocab-core",
+  "surfaces": [
+   "disclaimer"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "disclaimer",
+   "word": "disclaimer",
+   "pos": "명사",
+   "ipa": "dɪsˈkleɪmər",
+   "meaning": "면책 문구, 주의 문구"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#6.5",
+    "en": "Add a disclaimer inside each tool's error message stating the wrong tool may have been called, shown after execution fails."
+   }
+  ]
+ },
+ {
+  "lemma": "discount",
+  "kind": "vocab-core",
+  "surfaces": [
+   "discounted",
+   "discount"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "discount",
+   "word": "discount",
+   "pos": "명사·동사",
+   "ipa": "ˈdɪskaʊnt",
+   "meaning": "① 할인(하다) — discounted: 할인된 ② 가볍게 여기다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#31.0",
+    "en": "Four teams want to move their Claude workloads to the Message Batches API to get the 50% discount."
+   },
+   {
+    "sid": "lesson-d5#23.4",
+    "en": "Find the single function that computes the discount rate in a small module, just before making one edit to it"
+   },
+   {
+    "sid": "mock04#57.7",
+    "en": "Move all rule violations to the Message Batches API and reprocess them overnight at the discounted batch rate."
+   },
+   {
+    "sid": "lesson-d4#33.1",
+    "en": "To get the 50% discount, the team wants to move the pipeline to the Message Batches API."
+   },
+   {
+    "sid": "lesson-d4#32.4",
+    "en": "Send each diff to the Message Batches API at the 50% discount, and have the merge check poll the batch until it has ended"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:discount.0",
+    "en": "Move all rule violations to the Message Batches API and reprocess them overnight at the discounted batch rate.",
+    "ko": "규칙 위반 건을 모두 Message Batches API로 옮겨, 할인된 배치 요금으로 밤사이 재처리한다"
+   }
+  ]
+ },
+ {
+  "lemma": "discover",
+  "kind": "vocab-core",
+  "surfaces": [
+   "discovered",
+   "discovers",
+   "discover"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "discover",
+   "word": "discover",
+   "pos": "동사",
+   "ipa": "dɪˈskʌvər",
+   "meaning": "발견하다, (탐색해서) 알아내다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#31.1",
+    "en": "A new architect discovers that the 'weight' field is correct only 70% of the time specifically when the source document's units are ambiguous (for example, a number with no unit label present)."
+   },
+   {
+    "sid": "lesson-d2#24.3",
+    "en": "Configure the `oauth` block with `authServerMetadataUrl` pointed at the internal Kerberos realm so Claude Code discovers the flow automatically."
+   },
+   {
+    "sid": "mock04#37.5",
+    "en": "Run a mapping pass enumerating the repository's real modules, then dynamically spawn one subagent per discovered component"
+   },
+   {
+    "sid": "lesson-d5#26.4",
+    "en": "Have all subagents write their findings to one single shared scratchpad file at the same time as they each discover them."
+   },
+   {
+    "sid": "lesson-d5#26.6",
+    "en": "Have every subagent overwrite the same fixed scratchpad filename each time it records a newly discovered finding."
+   },
+   {
+    "sid": "lesson-d5#27.4",
+    "en": "Have the agent save class names and base classes it discovers to a notes file, so it can read them before answering questions."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:discover.0",
+    "en": "Run a mapping pass enumerating the repository's real modules, then dynamically spawn one subagent per discovered component",
+    "ko": "저장소의 실제 모듈을 열거하는 매핑 단계를 먼저 실행한 뒤, 발견된 구성 요소마다 서브에이전트를 하나씩 동적으로 생성한다"
+   }
+  ]
+ },
+ {
+  "lemma": "discovery",
+  "kind": "vocab-core",
+  "surfaces": [
+   "discovery",
+   "discoveries"
+  ],
+  "freq": 6,
+  "vocab": {
+   "id": "discovery",
+   "word": "discovery",
+   "pos": "명사",
+   "ipa": "dɪˈskʌvəri",
+   "meaning": "발견, 탐색 (단계) — 필요한 파일·위치를 찾아내는 과정"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d3#18.2",
+    "en": "What should happen to this discovery sweep?"
+   },
+   {
+    "sid": "mock04#19.2",
+    "en": "Doing this discovery inline reads dozens of files and floods the main session with search output before any edits begin, and the later edits then start to wander."
+   },
+   {
+    "sid": "lesson-d5#27.6",
+    "en": "Switch to a larger model mid-session, so it recalls the discoveries made earlier in the transcript more reliably when questioned."
+   },
+   {
+    "sid": "mock04#44.3",
+    "en": "Done inline, this verbose discovery floods the main session's context and later steps degrade from lost-in-the-middle effects."
+   },
+   {
+    "sid": "mock04#19.6",
+    "en": "Delegate discovery to an Explore subagent that returns only a summary of call sites, keeping the main context for edits."
+   },
+   {
+    "sid": "mock04#44.8",
+    "en": "Delegate the discovery to an Explore subagent that returns only the concise finding to the main context"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:discovery.0",
+    "en": "Doing this discovery inline reads dozens of files and floods the main session with search output before any edits begin...",
+    "ko": "이 탐색을 메인 세션에서 직접 하면 편집을 시작하기도 전에 수십 개 파일을 읽어 메인 세션이 검색 출력으로 넘쳐난다."
+   }
+  ]
+ },
+ {
+  "lemma": "discrepancy",
+  "kind": "vocab-core",
+  "surfaces": [
+   "discrepancy"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "discrepancy",
+   "word": "discrepancy",
+   "pos": "명사",
+   "ipa": "dɪˈskrepənsi",
+   "meaning": "(값·내용 사이의) 불일치, 차이"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#22.3",
+    "en": "How should this discrepancy be classified and handled?"
+   },
+   {
+    "sid": "lesson-d5#38.2",
+    "en": "How should the synthesis agent handle this discrepancy in the final report?"
+   },
+   {
+    "sid": "lesson-d5#37.3",
+    "en": "Stop the analysis and return nothing until the coordinator has resolved the discrepancy"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:discrepancy.0",
+    "en": "Both appear legitimate and the discrepancy could significantly affect conclusions.",
+    "ko": "둘 다 타당해 보이고, 그 불일치가 결론에 크게 영향을 줄 수 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "discriminate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "discriminates"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "discriminate",
+   "word": "discriminate",
+   "pos": "동사",
+   "ipa": "dɪˈskrɪmɪneɪt",
+   "meaning": "구별하다, 가려내다 / 차별하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#15.3",
+    "en": "Each subagent now discriminates among a much smaller candidate set, which directly reduces the decision complexity that was degrading tool selection at 20 tools"
+   }
+  ]
+ },
+ {
+  "lemma": "discuss",
+  "kind": "new",
+  "surfaces": [
+   "discussed"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#12.1",
+    "en": "Logs show it picked the one with the most recent activity and discussed it with the wrong guest."
+   }
+  ]
+ },
+ {
+  "lemma": "disguise",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "disguise",
+   "word": "disguise",
+   "pos": "명사·동사",
+   "ipa": "dɪsˈɡaɪz",
+   "meaning": "위장 (in disguise: 겉모습만 다른, 위장한) / 위장하다"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "disk",
+  "kind": "new",
+  "surfaces": [
+   "disk"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d5#25.2",
+    "en": "The notes file is still on disk and correct."
+   },
+   {
+    "sid": "lesson-d1#38.5",
+    "en": "It does not find the session, because the transcript is on the laptop's local disk; the transcript file would have to be copied to the CI host first"
+   },
+   {
+    "sid": "lesson-d3#1.6",
+    "en": "Paste the convention into every prompt, because Claude re-reads CLAUDE.md from disk only once a week"
+   },
+   {
+    "sid": "lesson-d1#41.6",
+    "en": "The fork needs fork_session=True on the original session first. Until then the standalone call creates nothing on disk"
+   }
+  ]
+ },
+ {
+  "lemma": "dismiss",
+  "kind": "vocab-core",
+  "surfaces": [
+   "dismissing",
+   "dismissed",
+   "dismissal",
+   "dismiss"
+  ],
+  "freq": 10,
+  "vocab": {
+   "id": "dismiss",
+   "word": "dismiss",
+   "pos": "동사",
+   "ipa": "dɪsˈmɪs",
+   "meaning": "(가볍게) 무시하다, 일축하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#25.0",
+    "en": "Over two months, developers have dismissed 40% of a security-review bot's findings."
+   },
+   {
+    "sid": "lesson-d4#25.2",
+    "en": "Which field, added to each structured finding and logged with every dismissal, makes that possible?"
+   },
+   {
+    "sid": "lesson-d4#26.0",
+    "en": "A security review assistant extracts structured findings from source code and developers frequently dismiss a large share of the findings tied to one particular helper function used for input sanitization."
+   },
+   {
+    "sid": "lesson-d4#26.1",
+    "en": "The team wants to analyze this dismissal trend systematically over time."
+   },
+   {
+    "sid": "lesson-d4#7.0",
+    "en": "After developers began dismissing all of a reviewer's comments, a team added its noisy performance-hints category to the skip list."
+   },
+   {
+    "sid": "lesson-d4#25.5",
+    "en": "A `severity` tier, so dismissal rates can be compared across critical, high and low findings"
+   },
+   {
+    "sid": "lesson-d4#26.3",
+    "en": "Add a detected_pattern field that names the code construct behind each finding, so dismissal rates can be compared per construct"
+   },
+   {
+    "sid": "lesson-d4#26.4",
+    "en": "Add a dismissal_reason field with preset categories like false_positive or wont_fix, so dismissal rates can be compared per reason"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:dismiss.0",
+    "en": "Developers are dismissing findings without review because \"half are wrong.\"",
+    "ko": "개발자들이 \"절반은 틀렸다\"며 검토도 하지 않고 지적 사항을 기각하고 있다."
+   }
+  ]
+ },
+ {
+  "lemma": "dispatch",
+  "kind": "vocab-core",
+  "surfaces": [
+   "dispatches",
+   "dispatch"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "dispatch",
+   "word": "dispatch",
+   "pos": "동사",
+   "ipa": "dɪˈspætʃ",
+   "meaning": "(작업·요청을) 보내다, 배정하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#36.0",
+    "en": "A market-research pipeline dispatches five research subagents, each of which reads several documents and returns a free-form paragraph summary to a coordinator agent."
+   },
+   {
+    "sid": "mock04#23.1",
+    "en": "The coordinator dispatches three independent regional web-search subagents (EU, US, APAC), but issues each Task call only after the previous subagent returns."
+   },
+   {
+    "sid": "mock04#27.5",
+    "en": "Route requests through the coordinator: subagents return gaps to it, and it dispatches follow-up searches"
+   },
+   {
+    "sid": "mock04#32.6",
+    "en": "Keep \"any\" but add a preprocessing stage that strips plain-text inputs out of the batch before dispatch to the subagent."
+   },
+   {
+    "sid": "mock04#33.6",
+    "en": "Add a separate router model that classifies each query and then selects the matching search tool programmatically before dispatch."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:dispatch.0",
+    "en": "Have the coordinator validate all documents before dispatching, rejecting documents likely to fail.",
+    "ko": "코디네이터가 문서를 넘기기 전에 모두 검증해, 실패할 것 같은 문서는 거부한다."
+   }
+  ]
+ },
+ {
+  "lemma": "display",
+  "kind": "new",
+  "surfaces": [
+   "display"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#30.4",
+    "en": "`systemMessage`, because it can be used to display the normalized output to the user for all tools."
+   }
+  ]
+ },
+ {
+  "lemma": "dispute",
+  "kind": "vocab-core",
+  "surfaces": [
+   "disputed"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "dispute",
+   "word": "dispute",
+   "pos": "명사·동사",
+   "ipa": "dɪˈspjuːt",
+   "meaning": "이의 제기, 분쟁 / 이의를 제기하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#41.5",
+    "en": "Drop every finding that rests on a single source or a disputed figure, so the report holds only what all sources agree on"
+   },
+   {
+    "sid": "lesson-d5#41.6",
+    "en": "Put findings that sources consistently support in an established section, and single-source or disputed ones in a contested section. Have the agent extract word-for-word quotes first, so each source's own wording and caveats carry through."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:dispute.0",
+    "en": "When your agent resolves complex cases (billing disputes, multi-order returns), customer satisfaction is 15% lower than for simple cases.",
+    "ko": "에이전트가 복잡한 케이스(청구 분쟁, 여러 주문 반품)를 해결할 때 고객 만족도가 단순 케이스보다 15% 낮다."
+   }
+  ]
+ },
+ {
+  "lemma": "distill",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "distill",
+   "word": "distill",
+   "pos": "동사",
+   "ipa": "dɪˈstɪl",
+   "meaning": "① 핵심만 추리다 ② (모델) 증류하다 — distilled model: 큰 모델의 능력을 작은 모델에 옮겨 담은 모델"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "distinct",
+  "kind": "vocab-core",
+  "surfaces": [
+   "distinct",
+   "distinctive"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "distinct",
+   "word": "distinct",
+   "pos": "형용사",
+   "ipa": "dɪˈstɪŋkt",
+   "meaning": "뚜렷이 구별되는, 서로 겹치지 않는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#25.0",
+    "en": "During a multi-hour exploration, the agent wrote to NOTES.md that OrderService extends TransactionalBase and has a distinctive retry mechanism."
+   },
+   {
+    "sid": "mock04#10.1",
+    "en": "A customer gives only the name \"Maria Garcia.\" get_customer returns three distinct matching accounts."
+   },
+   {
+    "sid": "lesson-d4#29.5",
+    "en": "doc#2026#report#final#v2, since separating each descriptive segment with a distinct punctuation mark avoids any ambiguity about where one part ends"
+   },
+   {
+    "sid": "sample01#19.4",
+    "en": "Rename the tools to be more distinct"
+   },
+   {
+    "sid": "lesson-d5#27.1",
+    "en": "Early on, the agent correctly identified that OrderService extends a custom TransactionalBase class with a distinctive retry mechanism."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:distinct.0",
+    "en": "...assigning distinct subtopics or source types to each agent.",
+    "ko": "각 에이전트에 서로 겹치지 않는 하위 주제나 출처 유형을 배정한다."
+   }
+  ]
+ },
+ {
+  "lemma": "distinguish",
+  "kind": "vocab-core",
+  "surfaces": [
+   "distinguish"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "distinguish",
+   "word": "distinguish",
+   "pos": "동사",
+   "ipa": "dɪˈstɪŋɡwɪʃ",
+   "meaning": "구별하다, 차이를 알아보다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#2.6",
+    "en": "The user's request phrasing was too vague to reliably distinguish between the tools, so the fix belongs in the user's prompt rather than the tool definitions."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:distinguish.0",
+    "en": "Distinguish access failures (timeout) needing retry decisions from valid empty results (\"0 results\").",
+    "ko": "재시도 판단이 필요한 접근 실패(timeout)와 유효한 빈 결과(\"0 results\")를 구분한다."
+   }
+  ]
+ }
+]

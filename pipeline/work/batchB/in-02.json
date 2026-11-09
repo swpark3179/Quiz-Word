@@ -1,0 +1,662 @@
+[
+ {
+  "key": "mock04#9",
+  "koRef": "청구 분쟁처럼 대화가 길어지면, 에이전트는 기록을 간결하게 유지하려고 점진적 요약(progressive summarization)을 사용합니다. 테스터들은 몇 턴이 지나면 에이전트가 앞에서 분명히 나왔던 환불 금액과 주문 날짜를 틀리게 말한다는 것을 발견했습니다. 가장 좋은 해결책은 무엇일까요?\n① 주문 id, 금액, 날짜를 담은 영구적인 케이스 사실(case-facts) 블록을 요약 밖에 따로 두고, 매 턴 원문 그대로 다시 주입한다\n② 더 큰 컨텍스트 창을 가진 모델로 바꿔 대화를 요약할 필요가 없게 하고, 이전 턴을 모두 그대로 유지한다\n③ 매 턴 `get_customer` 와 `lookup_order` 를 다시 호출해 숫자를 새로 가져온 뒤, 저장된 요약을 새 결과로 덮어쓴다\n④ 더 큰 thinking 예산으로 확장 사고(extended thinking)를 켜서, 모델이 환불 금액을 인용하기 전에 더 신중하게 추론하게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#9.0",
+    "en": "[Scenario: Customer Support Resolution Agent]"
+   },
+   {
+    "sid": "mock04#9.1",
+    "en": "In longer billing-dispute conversations, the agent uses progressive summarization to keep the history compact."
+   },
+   {
+    "sid": "mock04#9.2",
+    "en": "Testers find that after several turns it quotes the wrong refund amount and an incorrect order date, even though those values appeared earlier."
+   },
+   {
+    "sid": "mock04#9.3",
+    "en": "What is the best remedy?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#10",
+  "koRef": "고객이 \"Maria Garcia\"라는 이름만 알려 줍니다. `get_customer` 는 일치하는 서로 다른 계정 세 개를 반환합니다. 로그를 보면 에이전트는 가장 최근에 활동한 계정으로 진행하고, 여러 건에서 엉뚱한 고객의 주문에 환불을 처리했습니다. 올바른 동작은 무엇일까요?\n① 최근 활동이 있으면 현재 고객일 가능성이 가장 높으므로, 세 계정 중 가장 최근에 활동한 계정으로 계속 진행한다\n② 계정 관련 조치를 하기 전에 추가 식별자(주문 번호, 이메일, ZIP 코드)를 요청해 대상을 확정한다\n③ 에이전트는 동명이인을 안전하게 구분할 수 없으므로, 여러 계정이 일치하는 경우는 모두 바로 사람 상담원에게 에스컬레이션한다\n④ 이름 퍼지 유사도 점수가 가장 높은 계정을 골라 진행하고, 감사를 위해 신뢰도 값을 기록한다",
+  "sentences": [
+   {
+    "sid": "mock04#10.0",
+    "en": "[Scenario: Customer Support Resolution Agent]"
+   },
+   {
+    "sid": "mock04#10.1",
+    "en": "A customer gives only the name \"Maria Garcia.\" get_customer returns three distinct matching accounts."
+   },
+   {
+    "sid": "mock04#10.2",
+    "en": "Logs show the agent proceeds with the most recently active match, and in several cases it has processed refunds against the wrong customer's order."
+   },
+   {
+    "sid": "mock04#10.3",
+    "en": "What is the correct behavior?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#11",
+  "koRef": "팀은 이름 짓기와 오류 처리 컨벤션을 테크 리드 머신의 `~/.claude/CLAUDE.md` 에 추가해 표준화했습니다. 리드에게는 모든 것이 잘 동작하지만, 저장소를 클론한 신규 엔지니어 세 명은 `git status` 가 깨끗한 체크아웃 상태를 보여 주는데도 Claude Code가 컨벤션을 완전히 무시한다고 보고합니다. 가장 효과적인 해결책은 무엇일까요?\n① 저장소 루트 CLAUDE.md에 `~/.claude/CLAUDE.md` 를 가리키는 `@import` 를 추가해, 각 클론이 개인 파일을 가져오게 한다\n② 각 엔지니어가 클론 후 `/memory` 를 실행해, 사용자 범위 메모리 파일을 리드의 프로필에서 강제로 다시 불러오게 한다\n③ 컨벤션을 프로젝트 범위의 `.claude/CLAUDE.md`(또는 저장소 루트)로 옮겨, 버전 관리에 커밋되고 모든 클론에서 로드되게 한다\n④ 컨벤션을 `.claude/skills/` 아래의 스킬로 바꿔, 관련 있을 때 모든 사용자에게 필요 시 활성화되게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#11.0",
+    "en": "[Scenario: Code Generation with Claude Code]"
+   },
+   {
+    "sid": "mock04#11.1",
+    "en": "Your team standardized naming and error-handling conventions by adding them to `~/.claude/CLAUDE.md` on the tech lead's machine."
+   },
+   {
+    "sid": "mock04#11.2",
+    "en": "Everything works for the lead, but three newly onboarded engineers who cloned the repo report that Claude Code ignores the conventions entirely, even though `git status` shows a clean checkout."
+   },
+   {
+    "sid": "mock04#11.3",
+    "en": "What is the most effective fix?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#12",
+  "koRef": "팀의 `/investigate-flaky` 스킬은 테스트 스위트 전체를 grep으로 검색하고, 수십 개 파일을 읽고, 답하기 전에 장황한 탐색 과정을 출력합니다. 개발자들은 이 스킬을 실행한 뒤 메인 세션이 원본 출력으로 어수선해지고, 그 세션에서 Claude가 이후에 내놓는 답변의 품질이 떨어진다는 것을 알아챘습니다. 가장 좋은 해결책은 무엇일까요?\n① 세션의 이후 요청을 이어 가기 전에 스킬 출력을 요약하라는 단계를 CLAUDE.md에 추가한다\n② 스킬 frontmatter에 `allowed-tools` 목록을 두어, 몇 가지 도구만 실행하고 파일을 덜 읽도록 스킬을 제한한다\n③ 컨텍스트 창 크기를 늘려, 누적된 탐색 출력이 이후 답변의 품질을 더 이상 떨어뜨리지 않게 한다\n④ 스킬의 SKILL.md frontmatter에 `context: fork` 를 설정해, 탐색은 격리된 컨텍스트에서 실행되고 결과만 돌아오게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#12.0",
+    "en": "[Scenario: Code Generation with Claude Code]"
+   },
+   {
+    "sid": "mock04#12.1",
+    "en": "Your team's /investigate-flaky skill greps the entire test suite, reads dozens of files, and prints verbose exploration before it answers."
+   },
+   {
+    "sid": "mock04#12.2",
+    "en": "Developers notice that after running it, the main session is cluttered with raw output and Claude's subsequent answers in that session degrade in quality."
+   },
+   {
+    "sid": "mock04#12.3",
+    "en": "What is the best fix?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#13",
+  "koRef": "팀의 `.claude/skills/dep-audit/` 스킬은 릴리스 전에 수동으로 실행하려고 만든 것인데, Claude가 세션 도중 의존성 파일 이야기가 나올 때마다 이 스킬을 자동으로 호출해, 관계없는 리팩터링 세션에 약 4,000줄의 의존성 해석 출력을 쏟아 냅니다. 팀은 엔지니어가 `/dep-audit` 을 명시적으로 실행할 수 있는 것은 그대로 유지하고 싶어 합니다. 가장 효과적인 해결책은 무엇일까요?\n① 스킬의 SKILL.md frontmatter에 `disable-model-invocation: true` 를 설정해, 명시적인 `/dep-audit` 호출로만 실행되게 한다\n② 스킬 끝에서 `/compact` 를 자동으로 호출해, 세션 작업이 이어지기 전에 감사 출력을 압축한다\n③ 스킬의 `description` frontmatter를 삭제해, Claude가 더 이상 이 스킬을 대화 주제나 의존성 파일과 연결하지 못하게 한다\n④ 감사 지침을 CLAUDE.md로 옮겨, 세션 도중 파일 이름 때문에 트리거되지 않고 시작 시 한 번만 로드되게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#13.0",
+    "en": "[Scenario: Code Generation with Claude Code]"
+   },
+   {
+    "sid": "mock04#13.1",
+    "en": "A team's `.claude/skills/dep-audit/` skill is meant to be run manually before releases, but Claude keeps auto-invoking it mid-session whenever dependency files come up, dumping roughly 4,000 lines of resolution output into unrelated refactoring sessions."
+   },
+   {
+    "sid": "mock04#13.2",
+    "en": "The team still wants engineers to be able to run `/dep-audit` explicitly."
+   },
+   {
+    "sid": "mock04#13.3",
+    "en": "What is the most effective fix?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#14",
+  "koRef": "공유 `generate-docs` 스킬은 소스를 읽고 `docs/` 에 Markdown을 써야 하는데, 두 번이나 `Edit` 과 셸 `rm` 을 실행해 소스 파일을 덮어썼습니다. 스킬 본문에 \"only write to docs/, never edit source\"(docs/에만 쓰고 소스는 절대 수정하지 말 것)라는 문구를 추가했지만 확실히 막지 못했습니다. 스킬이 소스를 건드릴 수 없도록 보장하는 가장 좋은 방법은 무엇일까요?\n① `docs/` 디렉터리 밖에 있는 파일의 수정을 명시적으로 금지하는 더 강한 시스템 프롬프트 지시를 추가한다\n② 스킬의 SKILL.md frontmatter에 `allowed-tools` 를 `Read`, `Glob`, `Write` 로 제한해 선언하고, 하네스가 `Edit` 과 `Bash` 를 차단하게 한다\n③ 스킬이 매번 plan 모드로 실행되게 해, 제안된 각 동작이 실행되기 전에 사람이 검토하고 승인하게 한다\n④ 모든 세션의 모든 `Edit` 을 검사해 `docs/` 폴더 밖 쓰기를 거부하는 전역 PreToolUse 훅을 추가한다",
+  "sentences": [
+   {
+    "sid": "mock04#14.0",
+    "en": "[Scenario: Code Generation with Claude Code]"
+   },
+   {
+    "sid": "mock04#14.1",
+    "en": "A shared `generate-docs` skill is supposed to read source and write Markdown into `docs/`, but twice it has run `Edit` and shell `rm` and overwritten source files."
+   },
+   {
+    "sid": "mock04#14.2",
+    "en": "Adding the reminder \"only write to docs/, never edit source\" to the skill body has not reliably stopped it."
+   },
+   {
+    "sid": "mock04#14.3",
+    "en": "What is the best way to guarantee the skill cannot touch source?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#15",
+  "koRef": "공유 `/scaffold-component` 스킬은 컴포넌트 이름 인자를 받도록 되어 있지만, 텔레메트리를 보면 팀원들이 약 3분의 1의 경우 인자 없이 또는 잘못된 형식의 인자로 호출해, 비어 있거나 이름이 잘못된 스캐폴드가 만들어집니다. 이런 잘못된 호출을 줄이는 가장 효과적인 방법은 무엇일까요?\n① 스킬 이름을 `/scaffold-component-with-name` 으로 바꿔, 필요한 입력이 명령 이름 자체에서 드러나게 한다\n② 프로젝트 CLAUDE.md에 올바른 사용법을 문서화해, 시작 시 항상 모델의 컨텍스트에 로드되게 한다\n③ 스킬의 SKILL.md frontmatter에 `argument-hint` 필드를 추가해, 호출할 때 기대되는 인자 형식이 표시되게 한다\n④ 인자가 없거나 비어 있을 때마다 사용자에게 컴포넌트 이름을 물어보라고 스킬 본문에서 Claude에게 지시한다",
+  "sentences": [
+   {
+    "sid": "mock04#15.0",
+    "en": "[Scenario: Code Generation with Claude Code]"
+   },
+   {
+    "sid": "mock04#15.1",
+    "en": "A shared `/scaffold-component` skill expects a component-name argument, but telemetry shows teammates invoke it with no argument or a malformed one about a third of the time, producing empty or misnamed scaffolds."
+   },
+   {
+    "sid": "mock04#15.2",
+    "en": "What is the most effective way to reduce these malformed invocations?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#16",
+  "koRef": "개발자에게 필요한 세 가지 변경이 모두 공유 `PaymentStatus` enum과 이 enum을 기준으로 분기(switch)하는 여러 함수를 건드립니다. 개발자는 각 변경을 별도의 메시지로 차례차례 보냈는데, 세 번째 메시지 이후 프로젝트가 더 이상 컴파일되지 않습니다. 앞선 수정이 뒤에 올 변경을 예상하지 못했기 때문입니다. 요청을 구성하는 가장 좋은 방법은 무엇일까요?\n① 세 변경을 각각 새 세션에서 실행해, 모든 수정이 서로 깔끔하게 격리되도록 한다\n② plan mode를 켜고 세 변경을 하나씩 순서대로 승인하며, 다음 변경으로 넘어가기 전에 각 계획을 검토한다\n③ 순차 방식은 유지하되, 메시지마다 Claude에게 enum 정의를 다시 읽게 해 기억을 새로 고친다\n④ 서로 얽힌 세 변경을 하나의 메시지로 묶어, Claude가 enum과 이에 의존하는 모든 switch 지점을 함께 수정하게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#16.0",
+    "en": "[Scenario: Code Generation with Claude Code]"
+   },
+   {
+    "sid": "mock04#16.1",
+    "en": "A developer needs three changes that all touch the shared `PaymentStatus` enum and the several functions that switch on it."
+   },
+   {
+    "sid": "mock04#16.2",
+    "en": "They sent each change as a separate sequential message; after the third message the project no longer compiles because the earlier edits did not anticipate the later ones."
+   },
+   {
+    "sid": "mock04#16.3",
+    "en": "What is the best way to structure the request?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#17",
+  "koRef": "Claude에게 \"make the input validation more robust and idiomatic\"(입력 검증을 더 견고하고 관용적으로 만들어 줘)이라고 요청하면 실행할 때마다 결과가 들쭉날쭉합니다. 어떤 때는 `zod` 를 추가하고, 어떤 때는 손으로 쓴 검사 코드를 넣고, 어떤 때는 의미 있는 변화가 거의 없습니다. 팀은 검증 스타일이 일관되게 나오기를 원합니다. 가장 효과적인 개선 방법은 무엇일까요?\n① 원하는 검증 스타일과 라이브러리를 정확히 보여 주는 구체적인 입력-출력 예시를 2-3개 제공한다\n② 요청을 더 긴 산문 설명으로 늘려, 검증에서 \"robust\"와 \"idiomatic\"이 무엇을 뜻하는지 정의한다\n③ 팀의 기존 검증 코드로 모델을 파인튜닝해, 팀 고유의 검증 스타일을 내재화하게 한다\n④ 모든 검증 코드는 항상 견고하고 관용적이어야 한다는 상시 규칙을 CLAUDE.md에 추가한다",
+  "sentences": [
+   {
+    "sid": "mock04#17.0",
+    "en": "[Scenario: Code Generation with Claude Code]"
+   },
+   {
+    "sid": "mock04#17.1",
+    "en": "Asking Claude to \"make the input validation more robust and idiomatic\" yields inconsistent output across runs: sometimes it adds zod, sometimes hand-written checks, sometimes nothing meaningful."
+   },
+   {
+    "sid": "mock04#17.2",
+    "en": "The team wants the validation style to come out consistent."
+   },
+   {
+    "sid": "mock04#17.3",
+    "en": "What is the most effective refinement?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#18",
+  "koRef": "하나의 긴 세션에서 파일 200개 규모의 프레임워크 마이그레이션을 진행하는 동안, 대화가 길어질수록 Claude가 이미 변환한 파일을 다시 마이그레이션하고 다른 파일은 건너뛰는 모습이 로그에 나타납니다. 마이그레이션이 제 궤도를 유지하게 하는 가장 좋은 기법은 무엇일까요?\n① 컨텍스트 창이 더 큰 모델로 바꿔, 세션 내내 200개 파일 목록 전체가 창 안에 머물게 한다\n② 마이그레이션 완료 파일과 대기 파일을 기록한 scratchpad 매니페스트를 두고 파일마다 갱신해, 컨텍스트가 커져도 진행 상황이 유지되게 한다\n③ `/compact` 를 자주 실행해 기록을 짧게 유지하고, 실행할 때마다 모델이 파일 목록을 다시 요약하게 한다\n④ 대화 턴 사이에 상태가 사라지지 않도록 전체 마이그레이션을 하나의 거대한 메시지로 처리한다",
+  "sentences": [
+   {
+    "sid": "mock04#18.0",
+    "en": "[Scenario: Code Generation with Claude Code]"
+   },
+   {
+    "sid": "mock04#18.1",
+    "en": "During a 200-file framework migration carried out in one long session, logs show Claude re-migrating files it already converted and skipping others as the conversation grows."
+   },
+   {
+    "sid": "mock04#18.2",
+    "en": "What technique best keeps the migration on track?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#19",
+  "koRef": "널리 쓰이는 내부 API의 이름을 바꾸려면 Claude가 먼저 대형 모노레포 전체에서 모든 호출 지점을 찾아야 합니다. 이 탐색을 메인 세션에서 직접 하면 편집을 시작하기도 전에 수십 개 파일을 읽어 메인 세션이 검색 출력으로 넘쳐나고, 이후의 편집도 점점 방향을 잃기 시작합니다. 가장 좋은 접근 방식은 무엇일까요?\n① 편집을 시작하기 전에 모든 호출 지점이 보이도록 후보 파일을 전부 메인 세션에 먼저 읽어 들인 뒤, 이름 변경을 계획한다\n② 검색이 끝날 때마다 `/compact` 를 실행해, 편집을 시작하기 전까지 쌓인 검색 출력을 반복해서 압축한다\n③ 탐색을 Explore 서브에이전트에 위임해 호출 지점 요약만 돌려받고, 메인 컨텍스트는 편집에 쓴다\n④ 컨텍스트 창이 더 큰 모델로 옮겨, 탐색 출력이 모델의 주의를 두고 편집 작업과 경쟁하지 않게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#19.0",
+    "en": "[Scenario: Code Generation with Claude Code]"
+   },
+   {
+    "sid": "mock04#19.1",
+    "en": "To rename a widely-used internal API, Claude must first locate every call site across a large monorepo."
+   },
+   {
+    "sid": "mock04#19.2",
+    "en": "Doing this discovery inline reads dozens of files and floods the main session with search output before any edits begin, and the later edits then start to wander."
+   },
+   {
+    "sid": "mock04#19.3",
+    "en": "What is the best approach?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#20",
+  "koRef": "일관된 흐름으로 몇 시간째 진행 중인 리팩터링 도중 세션이 컨텍스트 한도에 가까워졌습니다. 기록은 이미 폐기된 중간 diff로 가득하지만, 현재 작업과 목표는 그대로이고 최신 파일 상태도 여전히 유효합니다. 맥락을 잃지 않고 작업을 이어 가기 위해 개발자가 해야 할 일은 무엇일까요?\n① 이전 컨텍스트가 전혀 없는 완전히 새로운 세션을 시작해 작업 전체를 다시 설명하고, 현재 파일 상태에 대한 맥락을 잃는 것을 감수한다\n② 세션을 포크해 갈라지는 작업 갈래로 분기하고, 포크된 기록 사본에서 리팩터링을 이어 간다\n③ 더 큰 컨텍스트 창을 요청해, 폐기된 중간 diff를 기록에 그대로 둔 채 지금처럼 계속한다\n④ `/compact` 를 실행해 쌓인 기록을 요약으로 압축하면서 같은 작업을 계속한다",
+  "sentences": [
+   {
+    "sid": "mock04#20.0",
+    "en": "[Scenario: Code Generation with Claude Code]"
+   },
+   {
+    "sid": "mock04#20.1",
+    "en": "Midway through a coherent multi-hour refactor, the session approaches its context limit."
+   },
+   {
+    "sid": "mock04#20.2",
+    "en": "The history is full of superseded intermediate diffs, but the current task and goal are unchanged and the latest file states are still valid."
+   },
+   {
+    "sid": "mock04#20.3",
+    "en": "What should the developer do to keep going without losing the thread?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#21",
+  "koRef": "긴 디버깅 세션에서 Claude가 전체 테스트 스위트를 반복해서 실행하는데, 실행할 때마다 통과한 테스트에 관한 소음이 약 2,000줄씩 컨텍스트에 쌓입니다. 시간이 지나자 Claude가 실패한 테스트의 세부 정보와 세션 초반에 밝힌 제약 조건을 놓치기 시작합니다. 가장 좋은 해결책은 무엇일까요?\n① 각 실행의 출력이 쌓이기 전에 실패한 테스트 관련 줄만 남도록 잘라 내고, 핵심 제약 조건은 컨텍스트 맨 앞의 요약에 유지한다\n② 실행이 아무리 쌓여도 모든 테스트 출력이 창에 넉넉히 들어가도록 컨텍스트가 더 큰 모델로 바꾼다\n③ extended thinking을 켜서, 통과한 테스트 줄까지 포함한 누적 출력 전체를 Claude가 더 깊이 추론하게 한다\n④ 초반 제약 조건이 계속 생생하게 유지되도록, 매 턴 시작마다 세션 기록 전체를 다시 읽으라고 Claude에게 지시한다",
+  "sentences": [
+   {
+    "sid": "mock04#21.0",
+    "en": "[Scenario: Code Generation with Claude Code]"
+   },
+   {
+    "sid": "mock04#21.1",
+    "en": "In a long debugging session Claude repeatedly runs the full test suite; each run dumps roughly 2,000 lines of passing-test noise into the context."
+   },
+   {
+    "sid": "mock04#21.2",
+    "en": "Over time Claude starts overlooking the failing-test details and the constraints stated at the start of the session."
+   },
+   {
+    "sid": "mock04#21.3",
+    "en": "What is the best fix?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#22",
+  "koRef": "합성(synthesis) 서브에이전트가 만드는 보고서가 일반적인 개요처럼 읽힙니다. 실행의 30%에서 웹 검색 서브에이전트가 찾아낸 구체적인 수치와 출처 이름이 빠져 있습니다. 추적해 보니 합성 서브에이전트에 보내는 Task 프롬프트에는 보고서 주제와 형식 지시만 들어 있습니다. 가장 좋은 해결책은 무엇일까요?\n① 위임이 거듭되어도 앞선 발견 사항이 더 많이 남아 있도록 코디네이터의 컨텍스트 창을 늘린다\n② 코디네이터가 웹 검색과 문서 분석의 발견 사항을 합성 Task 프롬프트에 원문 그대로 넣게 한다\n③ 합성 서브에이전트의 시스템 프롬프트에 'recall the earlier research'(앞선 조사를 떠올려라)라는 지시를 추가해 이전 발견 사항을 가져오게 한다\n④ 합성 서브에이전트에 자체 웹 검색 도구를 주어, 빠진 수치와 출처를 직접 다시 수집하게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#22.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#22.1",
+    "en": "The synthesis subagent's reports read as generic overviews: in 30% of runs they omit the specific figures and named sources the web-search subagent surfaced."
+   },
+   {
+    "sid": "mock04#22.2",
+    "en": "Tracing shows the Task prompt sent to the synthesis subagent contains only the report topic and formatting instructions."
+   },
+   {
+    "sid": "mock04#22.3",
+    "en": "What is the best fix?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#23",
+  "koRef": "코디네이터가 서로 독립적인 지역별 웹 검색 서브에이전트 세 개(EU, US, APAC)에 작업을 배분하는데, 앞선 서브에이전트가 결과를 돌려준 뒤에야 다음 Task 호출을 보냅니다. 전체 조사 지연 시간은 가장 느린 단일 검색의 약 3배입니다. 지연 시간을 가장 크게 줄이는 변경은 무엇일까요?\n① 고정 반복 상한을 두어, 정해진 라운드 수가 지나면 코디네이터가 기다리기를 멈추고 그때까지의 결과로 보고하게 한다\n② 세 지역 검색을 서브에이전트 하나로 합쳐, 그 안에서 지역을 하나씩 차례로 순회하게 한다\n③ 세 Task 호출을 하나의 어시스턴트 응답에 함께 내보내, 지역별 서브에이전트가 동시에 실행되게 한다\n④ `tool_choice` 를 `any` 로 설정해, 코디네이터가 도구를 더 빨리 고르고 호출 사이의 숙고를 건너뛰게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#23.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#23.1",
+    "en": "The coordinator dispatches three independent regional web-search subagents (EU, US, APAC), but issues each Task call only after the previous subagent returns."
+   },
+   {
+    "sid": "mock04#23.2",
+    "en": "End-to-end research latency is about 3x the slowest single search."
+   },
+   {
+    "sid": "mock04#23.3",
+    "en": "What change most reduces latency?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#24",
+  "koRef": "새로 구성한 코디네이터가 위임하지 않고 자기 지식만으로 조사 질문에 바로 답합니다. 서브에이전트를 호출하려는 시도는 추적 기록에 전혀 나타나지 않습니다. 서브에이전트 정의는 존재하고, 단독으로 테스트하면 정상 동작합니다. 근본 원인은 무엇일까요?\n① 서브에이전트는 user 스코프에 등록되었는데 코디네이터는 project 스코프에서 실행되어, 코디네이터가 서브에이전트를 볼 수 없다\n② 코디네이터의 모델이 너무 작아 멀티 에이전트 위임을 계획하지 못하고, 그래서 직접 답하는 쪽으로 되돌아간다\n③ `tool_choice` 가 특정 도구로 강제되어 있어, 코디네이터가 작업을 위임하는 선택을 아예 할 수 없다\n④ 코디네이터의 `allowedTools` 목록에 `Task` 가 빠져 있어, 서브에이전트를 생성할 수단이 아예 없다",
+  "sentences": [
+   {
+    "sid": "mock04#24.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#24.1",
+    "en": "A newly configured coordinator answers research questions directly from its own knowledge instead of delegating; its attempts to invoke subagents never appear in the trace."
+   },
+   {
+    "sid": "mock04#24.2",
+    "en": "The subagent definitions exist and work when tested standalone."
+   },
+   {
+    "sid": "mock04#24.3",
+    "en": "What is the root cause?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#25",
+  "koRef": "'assess the competitive landscape for X'(X의 경쟁 구도를 평가하라) 같은 개방형 요청에 대해 코디네이터는 고정된 3단계 체인(검색 → 요약 → 서식 지정)을 실행합니다. 검토자들은 조사 도중에야 드러나는 새로운 하위 주제를 보고서가 일관되게 놓친다고 지적합니다. 이 작업에 가장 잘 맞는 오케스트레이션 변경은 무엇일까요?\n① 동적 분해를 쓴다. 앞선 발견이 새로운 하위 작업을 드러내면 코디네이터가 그에 맞는 후속 하위 작업을 생성한다\n② 합성 서브에이전트의 `temperature` 를 높여, 더 넓고 다양한 주제를 다루는 결과를 내게 한다\n③ 고정 체인은 유지하되, 보고서의 각 섹션을 재구성하고 다듬는 두 번째 서식 지정 단계를 추가한다\n④ 잘 구조화되고 충실한 경쟁 구도 보고서의 few-shot 예시를 체인의 서식 지정 단계에 추가한다",
+  "sentences": [
+   {
+    "sid": "mock04#25.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#25.1",
+    "en": "For open-ended briefs like 'assess the competitive landscape for X', the coordinator runs a fixed three-step chain (search then summarize then format)."
+   },
+   {
+    "sid": "mock04#25.2",
+    "en": "Reviewers note the reports consistently miss emerging subtopics that only surface mid-investigation."
+   },
+   {
+    "sid": "mock04#25.3",
+    "en": "What orchestration change best fits this workload?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#26",
+  "koRef": "공유 검색·문서 분석 단계가 끝난 뒤, 이해관계자들이 같은 증거로 두 가지 보고서, 즉 한 페이지짜리 임원 요약본과 기술 심층 분석본을 원합니다. 비용이 큰 검색을 다시 실행하지 않고 둘 다 만드는 가장 좋은 방법은 무엇일까요?\n① 같은 세션을 이어 가며 먼저 요약본을 만들고, 다음 턴에서 심층 분석본을 요청한다\n② 조사 단계가 끝난 시점에서 세션을 보고서 종류별로 하나씩 두 갈래로 포크해, 두 갈래가 증거를 공유하게 한다\n③ 새 세션 두 개를 시작하고 각각에서 검색 서브에이전트를 다시 실행해, 둘 다 깨끗한 상태에서 시작하게 한다\n④ 두 보고서가 증거 전체를 한 번 훑는 긴 생성 패스 하나에 함께 들어가도록 컨텍스트 창을 늘린다",
+  "sentences": [
+   {
+    "sid": "mock04#26.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#26.1",
+    "en": "After the shared search and document-analysis phase completes, stakeholders want two report variants from the same evidence — a one-page executive brief and a technical deep-dive — without re-running the costly searches."
+   },
+   {
+    "sid": "mock04#26.2",
+    "en": "What is the best way to produce both?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#27",
+  "koRef": "로그를 보면 문서 분석 서브에이전트가 빈 정보를 채우려고 웹 검색 서브에이전트를 직접 호출하려 하고, 그 결과 라우팅 오류와 중복 검색이 발생합니다. 토폴로지를 바로잡는 올바른 방법은 무엇일까요?\n① 문서 분석 서브에이전트와 웹 검색 서브에이전트를 두 종류의 작업을 모두 처리하는 범용 서브에이전트 하나로 합친다\n② 서브에이전트끼리 서로 호출하게 두되, 두 서브에이전트가 같은 검색을 동시에 실행하지 못하도록 락을 추가한다\n③ 요청이 코디네이터를 거치게 한다. 서브에이전트는 빈 정보를 코디네이터에 돌려보내고, 코디네이터가 후속 검색을 배분한다\n④ 모든 서브에이전트에 검색·문서 도구를 포함한 전체 도구 세트를 주어, 어느 서브에이전트도 다른 서브에이전트를 호출할 필요가 없게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#27.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#27.1",
+    "en": "Logs show the document-analysis subagent attempting to invoke the web-search subagent directly to fill gaps, producing routing errors and duplicated searches."
+   },
+   {
+    "sid": "mock04#27.2",
+    "en": "How should the topology be corrected?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#28",
+  "koRef": "주간 시장 보고서는 이름을 붙여 둔 코디네이터 세션을 `--resume` 으로 재개해 만듭니다. 이번 주 보고서는 지난주 가격을 현재 가격처럼 인용했는데, 재개된 세션이 캐시된 웹 검색 도구 결과를 그대로 되살렸기 때문입니다. 가장 좋은 해결책은 무엇일까요?\n① 이전 세션을 포크해, 낡은 결과가 복사된 새 분기에서 보고서 작성을 이어 간다\n② `--resume` 은 계속 쓰되, 보고서를 쓸 때 오래된 도구 출력은 무시하라고 코디네이터에 지시한다\n③ 이전 검색 결과와 새 검색 결과가 한 세션 안에 함께 있을 수 있도록 컨텍스트 창을 늘린다\n④ 새 세션을 시작해 이전 결론의 요약을 주입하고, 검색을 다시 실행한다",
+  "sentences": [
+   {
+    "sid": "mock04#28.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#28.1",
+    "en": "A weekly market report is produced by --resume of a named coordinator session."
+   },
+   {
+    "sid": "mock04#28.2",
+    "en": "This week the report cites last week's prices as current, because the resumed session replays cached web-search tool results."
+   },
+   {
+    "sid": "mock04#28.3",
+    "en": "What is the best fix?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#29",
+  "koRef": "코디네이터의 에이전트 루프가 보고서 서브에이전트가 실행되기도 전에 멈추는 일이 있습니다. 최신 어시스턴트 텍스트에 'research complete'라는 문구가 들어 있으면 루프를 끝내도록 되어 있기 때문입니다. 간헐적으로 합성 서브에이전트가 분석 도중에 이 문구를 쓰면서 워크플로가 중단됩니다. 루프 종료를 판단하는 올바른 기준은 무엇일까요?\n① `stop_reason` 이 `tool_use` 인 동안 각 도구 결과를 추가하며 루프를 계속하고, `end_turn` 일 때만 멈춘다\n② 루프가 멈추기 전에 문구 옆에 'final'이라는 단어까지 있어야 하는 더 엄격한 정규식을 쓴다\n③ 코디네이터가 루프를 멈출 수 있기 전에 반드시 채워야 하는 최소 반복 횟수를 추가한다\n④ 별도의 분류기가 어시스턴트 메시지마다 보고서가 정말 끝났는지 판단하게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#29.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#29.1",
+    "en": "The coordinator's agentic loop sometimes stops before the report subagent has run: it ends whenever the latest assistant text contains the phrase 'research complete'."
+   },
+   {
+    "sid": "mock04#29.2",
+    "en": "Intermittently the synthesis subagent uses that phrase mid-analysis, halting the workflow."
+   },
+   {
+    "sid": "mock04#29.3",
+    "en": "How should loop termination be driven?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#30",
+  "koRef": "합성 서브에이전트가 시스템 전체에서 공유하는 18개 도구 레지스트리(`web_search`, `fetch_url`, `parse_pdf`, `extract_tables`, `generate_chart`, `render_report` 등) 전부를 가진 채 초기화됩니다. 추적 기록을 보면 실행의 22%에서 이 서브에이전트가 코디네이터가 프롬프트로 이미 넘겨준 발견 사항을 종합하는 대신 `web_search` 나 `parse_pdf` 를 새로 호출해, 실행마다 6-9초의 지연을 더합니다. 가장 효과적인 해결책은 무엇일까요?\n① 앞선 발견 사항이 모두 들어가 웹에서 다시 가져오지 않도록 합성 서브에이전트의 컨텍스트 창을 늘린다\n② 합성 서브에이전트의 도구 구성을 역할에 필요한 소수의 도구로 제한하고, 검색·파싱 도구를 제거한다\n③ 어떤 경우에도 `web_search` 나 `parse_pdf` 를 호출하지 말라는 문장을 합성 서브에이전트의 시스템 프롬프트에 추가한다\n④ `tool_choice` 를 `\"any\"` 로 강제해, 모델이 매 턴 신중하게 고른 도구 호출 하나에 전념하게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#30.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#30.1",
+    "en": "The synthesis subagent is initialized with the full registry of 18 tools shared across the system (web_search, fetch_url, parse_pdf, extract_tables, generate_chart, render_report, and others)."
+   },
+   {
+    "sid": "mock04#30.2",
+    "en": "Traces show that in 22% of runs it issues a fresh web_search or parse_pdf call instead of combining the findings the coordinator already passed in its prompt, adding 6-9 s of latency per run."
+   },
+   {
+    "sid": "mock04#30.3",
+    "en": "What is the most effective fix?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#31",
+  "koRef": "문서 분석 서브에이전트는 추출 스키마가 감지된 문서 유형에 따라 달라지므로, 필드 추출을 하기 전에 반드시 `classify_document` 를 호출해야 합니다. 프롬프트 지시에만 의존하다 보니 실행의 9%에서 분류를 건너뛰고 잘못된 스키마로 추출합니다. 코디네이터는 문서마다 이 서브에이전트를 한 번 호출하며, 필수 첫 단계는 항상 같습니다. 가장 좋은 해결책은 무엇일까요?\n① `tool_choice` 를 `\"any\"` 로 설정해, 서브에이전트가 첫 턴에 어떤 도구든 원하는 것 하나를 반드시 사용하게 한다\n② 시스템 프롬프트를 강조형 \"ALWAYS classify before extracting\" 규칙과 풀이 예시 두 개로 강화한다\n③ 첫 턴에 `tool_choice` 를 `{\"type\":\"tool\",\"name\":\"classify_document\"}` 로 설정해, 분류가 항상 추출보다 먼저 실행되게 한다\n④ 모든 추출 호출을 검사해 아직 분류가 실행되지 않았으면 차단하는 가로채기 훅을 추가한다",
+  "sentences": [
+   {
+    "sid": "mock04#31.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#31.1",
+    "en": "The document-analysis subagent must call classify_document before running any field extraction, because the extraction schema depends on the detected type."
+   },
+   {
+    "sid": "mock04#31.2",
+    "en": "Relying on a prompt instruction, it skips classification in 9% of runs and extracts against the wrong schema."
+   },
+   {
+    "sid": "mock04#31.3",
+    "en": "The coordinator invokes it once per document, and the required first step is always the same."
+   },
+   {
+    "sid": "mock04#31.4",
+    "en": "What is the best fix?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#32",
+  "koRef": "문서 분석 서브에이전트는 섞인 입력을 처리합니다. 일부는 `parse_pdf` 가 필요한 PDF이고, 일부는 이미 일반 텍스트라 도구가 전혀 필요 없는 조각입니다. 현재 `tool_choice` 는 `\"any\"` 로 설정되어 있습니다. 로그를 보면 18%의 경우에 일반 텍스트 입력에도 `parse_pdf` 를 호출해 엉터리 결과를 돌려줍니다. 가장 좋은 해결책은 무엇일까요?\n① `tool_choice` 를 `parse_pdf` 도구로 강제해, 서브에이전트가 받는 모든 입력에서 파싱 동작이 결정적이 되게 한다\n② `\"any\"` 는 유지하되, 서브에이전트로 보내기 전에 일반 텍스트 입력을 배치에서 걸러 내는 전처리 단계를 추가한다\n③ 모델이 파싱 없이 바로 답하는 일반 텍스트 입력의 few-shot 예시를 서브에이전트 프롬프트에 더 추가한다\n④ `tool_choice` 를 `\"auto\"` 로 설정해, 입력에 도구가 필요 없을 때는 모델이 직접 응답할 수 있게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#32.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#32.1",
+    "en": "The document-analysis subagent handles mixed inputs: some are PDFs requiring parse_pdf, and some are already plain-text snippets that need no tool at all."
+   },
+   {
+    "sid": "mock04#32.2",
+    "en": "It is currently configured with tool_choice \"any\"."
+   },
+   {
+    "sid": "mock04#32.3",
+    "en": "Logs show it calling parse_pdf on plain-text inputs — returning garbage — in 18% of cases."
+   },
+   {
+    "sid": "mock04#32.4",
+    "en": "What is the best fix?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#33",
+  "koRef": "웹 검색 서브에이전트에는 `search_web` 과 `search_academic` 두 도구가 있고, 각각 한 줄짜리 설명(\"search the web\" / \"search academic sources\")만 붙어 있습니다. 이 서브에이전트는 31%의 경우 쿼리를 잘못된 도구로 보냅니다. 예를 들어 동료 심사 문헌을 찾는 쿼리를 `search_web` 으로 보냅니다. 가장 좋은 첫 단계는 무엇일까요?\n① 두 도구 설명을 입력 형식, 예시 쿼리, 다루는 출처 범위, 명확한 사용 경계를 담아 확장하고 서로 구별되게 한다\n② 두 도구를 일반 웹 페이지와 학술 출처를 모두 다루는 설명 하나짜리 통합 검색 도구로 합친다\n③ 각 쿼리를 분류해 디스패치 전에 맞는 검색 도구를 프로그램으로 선택하는 별도 라우터 모델을 추가한다\n④ 쿼리의 주제나 유형과 관계없이 서브에이전트가 지정된 검색 도구 하나만 항상 쓰도록 강제 `tool_choice` 를 설정한다",
+  "sentences": [
+   {
+    "sid": "mock04#33.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#33.1",
+    "en": "The web-search subagent is equipped with two tools, search_web and search_academic, each carrying a one-line description (\"search the web\" / \"search academic sources\")."
+   },
+   {
+    "sid": "mock04#33.2",
+    "en": "It routes queries to the wrong tool in 31% of cases — for example, sending peer-reviewed-literature queries to search_web."
+   },
+   {
+    "sid": "mock04#33.3",
+    "en": "What is the best first step?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#34",
+  "koRef": "종합(synthesis) 서브에이전트는 웹 검색 서브에이전트와 문서 분석 서브에이전트의 결과를 하나의 서술로 합치지만, 각 주장이 어느 출처에서 왔는지에 대한 기록을 잃어버립니다. 그 결과 보고서 생성 서브에이전트가 더는 인용을 붙일 수 없고, 보고서 문장의 40%가 인용 없이 나갑니다. 가장 좋은 해결책은 무엇일까요?\n① 보고서 생성 서브에이전트가 모든 주장에 대해 `web_search` 를 다시 실행해, 인용 없는 문장마다 뒷받침할 출처를 찾게 한다\n② 종합 단계를 거치는 동안 주장과 출처의 매핑을 보존해, 각 주장이 원래 출처를 달고 보고서 생성 단계까지 가게 한다\n③ 주제 유사도를 바탕으로 인용 없는 문장마다 가장 그럴듯한 출처를 추측해 붙이는 인용 후처리기를 추가한다\n④ 종합 단계가 서술 안에 (source) 자리 표시자를 넣게 하고, 보고서가 생성된 뒤 사람이 채우게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#34.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#34.1",
+    "en": "The synthesis subagent merges findings from the web-search and document-analysis subagents into a unified narrative but drops the record of which source each claim came from."
+   },
+   {
+    "sid": "mock04#34.2",
+    "en": "The report-generation subagent can then no longer attach citations, and 40% of the report's sentences ship uncited."
+   },
+   {
+    "sid": "mock04#34.3",
+    "en": "What is the best fix?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#35",
+  "koRef": "두 출처가 같은 시장에 대해 서로 다른 시장 규모 수치를 보고합니다. 하나는 $4.2B(2021년 데이터), 다른 하나는 $6.8B(2023년 데이터)입니다. 종합 서브에이전트는 아무 표시 없이 $6.8B를 골라 유일한 권위 있는 사실처럼 제시합니다. 검토자들은 버려진 수치를 다른 곳에서 발견하고 이 보고서를 신뢰할 수 없다고 표시합니다. 가장 좋은 해결책은 무엇일까요?\n① 보고서가 깔끔한 수치 하나만 말하도록, 종합 전에 항상 더 크거나 더 최신인 수치를 남기고 다른 하나는 버린다\n② 보고서가 두 출처를 거의 같은 비중으로 반영하도록, 두 수치를 평균 내 하나의 혼합 시장 규모 수치로 만든다\n③ 두 수치 모두에 출처와 발행 날짜를 주석으로 달아, 시점 차이가 충돌로 읽히지 않고 그대로 보이게 한다\n④ 충돌하는 모든 통계를 사람 검토자에게 보내고, 검토자가 각각의 수치를 고를 때까지 종합을 막는다",
+  "sentences": [
+   {
+    "sid": "mock04#35.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#35.1",
+    "en": "Two sources report different market-size figures for the same market — $4.2B (2021 data) versus $6.8B (2023 data)."
+   },
+   {
+    "sid": "mock04#35.2",
+    "en": "The synthesis subagent silently picks $6.8B and presents it as the single authoritative fact."
+   },
+   {
+    "sid": "mock04#35.3",
+    "en": "Reviewers, seeing the discarded figure elsewhere, flag the report as unreliable."
+   },
+   {
+    "sid": "mock04#35.4",
+    "en": "What is the best fix?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#36",
+  "koRef": "코디네이터는 각 서브에이전트의 출력을 원문 그대로 다음 단계로 넘깁니다. 웹 검색 서브에이전트가 긁어 온 페이지 본문 전체, 약 38k 토큰이 그대로 종합 서브에이전트의 프롬프트로 들어갑니다. 종합 품질이 떨어졌고, 이제 전달된 내용의 중간에 묻힌 발견 사항을 놓칩니다(lost-in-the-middle). 가장 좋은 해결책은 무엇일까요?\n① 종합 단계를 더 큰 컨텍스트의 모델로 옮겨, 38k 토큰 전체가 여유 있게 들어가고 아무것도 잘라 내거나 재배치하지 않아도 되게 한다\n② 원본 페이지는 계속 넘기되, 종합 단계에 중요한 부분에 집중하고 상용구는 무시하라는 프롬프트 지시를 추가한다\n③ 종합 단계가 결합 전에 각 페이지를 직접 다시 가져와 다시 요약하게 해, 매번 새 원문으로 작업하게 한다\n④ 핸드오프 전에 각 서브에이전트의 출력을 관련 추출 결과로 줄이고, 종합 프롬프트는 헤더 아래 핵심 사실 요약으로 시작한다",
+  "sentences": [
+   {
+    "sid": "mock04#36.0",
+    "en": "[Scenario: Multi-Agent Research System]"
+   },
+   {
+    "sid": "mock04#36.1",
+    "en": "The coordinator passes each subagent's output forward verbatim: the web-search subagent's full scraped page bodies — roughly 38k tokens — flow straight into the synthesis subagent's prompt."
+   },
+   {
+    "sid": "mock04#36.2",
+    "en": "Synthesis quality has dropped and it now misses findings buried in the middle of the passed-in content (lost-in-the-middle)."
+   },
+   {
+    "sid": "mock04#36.3",
+    "en": "What is the best fix?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#37",
+  "koRef": "코디네이터 에이전트에게 40만 줄짜리 레거시 청구(billing) 모놀리스의 마이그레이션 계획을 만들라는 요청이 들어왔습니다. 엔지니어는 다섯 개 서브에이전트 작업(billing, invoicing, tax, reporting, auth)으로 나누는 분할을 처음부터 하드코딩했습니다. 운영 실행 결과를 보면 최종 계획에서, 어떤 서브에이전트에도 배정되지 않았던 'dunning'(연체 독촉) 하위 시스템 전체와 통화 변환 계층이 빠져 있습니다. 가장 효과적인 분할 전략은 무엇일까요?\n① 저장소의 실제 모듈을 열거하는 매핑 단계를 먼저 실행한 뒤, 발견된 구성 요소마다 서브에이전트를 하나씩 동적으로 생성한다\n② 코디네이터의 최대 반복 횟수를 늘려, 작업하면서 빠진 하위 시스템을 스스로 알아챌 턴을 더 많이 준다\n③ 엔지니어가 알고 있는 청구 도메인 지식을 바탕으로 고정 목록을 다섯 개에서 열두 개 서브에이전트 작업으로 늘린다\n④ 코디네이터에게 더 큰 컨텍스트 창을 줘서 모놀리스 전체가 분석용 프롬프트 하나에 들어가게 한다",
+  "sentences": [
+   {
+    "sid": "mock04#37.0",
+    "en": "[Scenario: Developer Productivity with Claude]"
+   },
+   {
+    "sid": "mock04#37.1",
+    "en": "A coordinator agent is asked to produce a migration plan for a 400,000-line legacy billing monolith."
+   },
+   {
+    "sid": "mock04#37.2",
+    "en": "The engineer hard-codes an upfront decomposition into five subagent tasks (billing, invoicing, tax, reporting, auth)."
+   },
+   {
+    "sid": "mock04#37.3",
+    "en": "Production runs show the final plan omits an entire 'dunning' subsystem and a currency-conversion layer that no subagent was ever assigned."
+   },
+   {
+    "sid": "mock04#37.4",
+    "en": "What is the most effective decomposition strategy?"
+   }
+  ]
+ },
+ {
+  "key": "mock04#38",
+  "koRef": "코디네이터가 결제 웹훅이 `orders` 모듈을 통해 어떻게 전파되는지 추적하라며 `Task` 호출 한 번으로 서브에이전트를 생성합니다. 로그를 보면 서브에이전트가 코디네이터가 두 턴 전에 이미 찾아 둔 진입점을 다시 찾으려고 `Grep` 을 재실행하고, 코디네이터가 확정한 결과와 모순되는 결론에 도달합니다. 근본 원인은 무엇일까요?\n① 서브에이전트의 `allowedTools` 목록에 `Task` 도구가 없어서, 추적을 더 아래로 위임할 수 없다\n② 서브에이전트는 코디네이터의 대화를 상속받지 않으므로, 이전 발견 사항은 `Task` 프롬프트에 담아 넘겨야 한다\n③ Message Batches API가 이전 턴을 제거해, 여러 턴에 걸친 컨텍스트가 추적 과정에서 조용히 빠졌다\n④ `tool_choice` 가 `Grep` 도구 강제가 아니라 `auto` 로 설정되어 있어, 진입점이 끝내 확정되지 않았다",
+  "sentences": [
+   {
+    "sid": "mock04#38.0",
+    "en": "[Scenario: Developer Productivity with Claude]"
+   },
+   {
+    "sid": "mock04#38.1",
+    "en": "The coordinator spawns a subagent with a single Task call to trace how a payment webhook propagates through the `orders` module."
+   },
+   {
+    "sid": "mock04#38.2",
+    "en": "Logs show the subagent re-runs Grep to rediscover the entrypoint the coordinator had already located two turns earlier, and reaches a conclusion that contradicts the coordinator's established finding."
+   },
+   {
+    "sid": "mock04#38.3",
+    "en": "What is the root cause?"
+   }
+  ]
+ }
+]

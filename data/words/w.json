@@ -1,0 +1,2900 @@
+[
+  {
+    "id": "wait",
+    "word": "wait",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "ipa": "weɪt",
+    "meaning": "① 기다리다 ② 기다림, 대기",
+    "short": "기다리다, 대기",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "기다리다"
+      },
+      {
+        "pos": "명사",
+        "ko": "기다림, 대기"
+      }
+    ],
+    "forms": [
+      "waits",
+      "waited",
+      "waiting"
+    ],
+    "synonyms": [
+      "hold",
+      "pause"
+    ],
+    "domain": "시간·순서·빈도",
+    "freq": 12,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 28,
+        "en": "Return \"ask\" instead of \"deny\" so the agent waits for someone to approve the refund.",
+        "surface": "waits",
+        "pos": "동사",
+        "sense": "기다리다",
+        "ko": "\"deny\" 대신 \"ask\"를 돌려줘 누군가 환불을 승인할 때까지 에이전트가 기다리게 한다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 28,
+        "en": "Submit every 4 hours, because a 4-hour wait plus the full 24-hour batch window still fits inside 30 hours with time to spare for overhead",
+        "surface": "wait",
+        "pos": "명사",
+        "sense": "기다림, 대기",
+        "ko": "4시간마다 제출한다. 4시간 대기에 24시간 배치 창 전체를 더해도 30시간 안에 들어오고, 오버헤드를 위한 여유까지 남는다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 30,
+        "en": "The step ran claude without the -p flag, so the CLI opened its interactive session and waited for keyboard input that the runner cannot provide",
+        "surface": "waited",
+        "pos": "동사",
+        "sense": "기다리다",
+        "ko": "단계가 `-p` 플래그 없이 claude를 실행해, CLI가 대화형 세션을 열고 러너가 줄 수 없는 키보드 입력을 기다렸다"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 31,
+        "en": "You want a CI review job in which any tool call you have not pre-approved is refused, not left waiting.",
+        "surface": "waiting",
+        "pos": "동사",
+        "sense": "기다리다",
+        "ko": "미리 승인하지 않은 도구 호출은 대기하지 않고 거부되는 CI 리뷰 작업을 만들려 합니다."
+      }
+    ]
+  },
+  {
+    "id": "wander",
+    "word": "wander",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "ˈwɑːndər",
+    "meaning": "(방향을 잃고) 헤매다, 본래 목표에서 벗어나다",
+    "short": "헤매다, 벗어나다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(방향을 잃고) 헤매다, 본래 목표에서 벗어나다"
+      },
+      {
+        "pos": "동사",
+        "ko": "거닐다, 돌아다니다"
+      }
+    ],
+    "forms": [
+      "wandered",
+      "wandering",
+      "wanders"
+    ],
+    "synonyms": [
+      "stray",
+      "drift",
+      "roam"
+    ],
+    "domain": "상태·성질",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 19,
+        "en": "Doing this discovery inline reads dozens of files and floods the main session with search output before any edits begin, and the later edits then start to wander.",
+        "surface": "wander",
+        "pos": "동사",
+        "sense": "(방향을 잃고) 헤매다, 본래 목표에서 벗어나다",
+        "ko": "이 탐색을 메인 세션에서 직접 하면 편집을 시작하기도 전에 수십 개 파일을 읽어 메인 세션이 검색 출력으로 넘쳐나고, 이후의 편집도 점점 방향을 잃기 시작합니다."
+      }
+    ],
+    "note": "목적지 없이 **이리저리 헤매는** 것입니다. 작업 맥락에서는 처음 목표에서 **점점 벗어나 산만해지는** 것을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> ...floods the main session with search output before any edits begin, and the later edits then start to **wander**.\r\n> 편집을 시작하기도 전에 메인 세션이 검색 출력으로 넘쳐나고, 이후의 편집도 점점 **방향을 잃기** 시작한다.\r\n\r\n## 함께 쓰는 표현\r\n- **wander off (topic)** : (주제에서) 벗어나다\r\n- **drift** (동·명) 서서히 벗어나다 — 비슷한 말\r\n\r\n## 시험 포인트\r\n장황한 탐색 출력이 메인 세션을 채워 작업이 흐트러지면, 탐색을 **Explore 서브에이전트에 맡기고 요약만 받는** 보기가 정답입니다."
+  },
+  {
+    "id": "want",
+    "word": "want",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "동사"
+    ],
+    "ipa": "wɑːnt",
+    "meaning": "① 원하다, ~하고 싶어 하다 ② 필요로 하다",
+    "short": "원하다, 바라다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "원하다, ~하고 싶어 하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "필요로 하다"
+      }
+    ],
+    "forms": [
+      "wants",
+      "wanted",
+      "wanting"
+    ],
+    "synonyms": [
+      "desire",
+      "wish"
+    ],
+    "domain": "요청·소통",
+    "freq": 48,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 11,
+        "en": "After an hour of codebase analysis, a coordinator wants to try two competing refactoring strategies.",
+        "surface": "wants",
+        "pos": "동사",
+        "sense": "원하다, ~하고 싶어 하다",
+        "ko": "코드베이스를 한 시간 동안 분석한 뒤, 코디네이터가 서로 경쟁하는 두 리팩터링 전략을 시도하려고 합니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 22,
+        "en": "The developer wants the team's production definition.",
+        "surface": "wants",
+        "pos": "동사",
+        "sense": "원하다, ~하고 싶어 하다",
+        "ko": "개발자는 팀의 프로덕션 정의를 쓰고 싶습니다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 11,
+        "en": "The team wants that exploratory back-and-forth kept separate from the main conversation, with only the final recommendation surfacing back to the user.",
+        "surface": "wants",
+        "pos": "동사",
+        "sense": "원하다, ~하고 싶어 하다",
+        "ko": "팀은 이 탐색 과정을 메인 대화와 분리하고, 최종 권장안만 사용자에게 돌아오게 하려 합니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 1,
+        "en": "A team's single-pass code reviewer flags too many non-issues, and they want it to filter its own findings.",
+        "surface": "want",
+        "pos": "동사",
+        "sense": "원하다, ~하고 싶어 하다",
+        "ko": "한 팀의 단일 패스 코드 리뷰어가 문제가 아닌 것을 너무 많이 지적해서, 팀은 리뷰어가 자기 발견을 스스로 거르게 하고 싶습니다."
+      }
+    ]
+  },
+  {
+    "id": "warehouse",
+    "word": "warehouse",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈwerhaʊs",
+    "meaning": "① 창고, 물류 창고 ② (데이터) 웨어하우스",
+    "short": "창고, 물류 창고",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "창고, 물류 창고"
+      },
+      {
+        "pos": "명사",
+        "ko": "(데이터) 웨어하우스"
+      }
+    ],
+    "forms": [
+      "warehouses"
+    ],
+    "synonyms": [
+      "depot",
+      "storehouse"
+    ],
+    "domain": "비즈니스·업무",
+    "freq": 1,
+    "sources": [
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 5,
+        "en": "A returns-processing agent calls an order-lookup tool that returns a JSON payload with 40+ fields (shipping carrier metadata, internal warehouse codes, marketing tags, etc.) for every order it checks, and after a dozen lookups the raw payloads dominate the context window even though only 5 fields (order status, purchase date, item, amount, return-window deadline) matter for return eligibility.",
+        "surface": "warehouse",
+        "pos": "명사",
+        "sense": "창고, 물류 창고",
+        "ko": "반품 처리 에이전트가 주문 조회 도구를 호출하면 확인하는 주문마다 40개가 넘는 필드(배송사 메타데이터, 내부 창고 코드, 마케팅 태그 등)가 담긴 JSON이 돌아오는데, 조회가 열두 번쯤 쌓이자 반품 자격 판단에 필요한 것은 5개 필드(주문 상태, 구매일, 품목, 금액, 반품 기한)뿐인데도 원본 페이로드가 컨텍스트 창을 지배합니다."
+      }
+    ]
+  },
+  {
+    "id": "warning",
+    "word": "warning",
+    "tier": "core",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "ˈwɔːrnɪŋ",
+    "meaning": "① 경고, 경고 메시지 ② (warn) 경고하다, 주의를 주다",
+    "short": "경고, 경고 메시지",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "경고, 경고 메시지"
+      },
+      {
+        "pos": "동사",
+        "ko": "경고하다, 주의를 주다"
+      }
+    ],
+    "forms": [
+      "warn",
+      "warns",
+      "warned",
+      "warnings"
+    ],
+    "synonyms": [
+      "alert",
+      "caution",
+      "notice"
+    ],
+    "domain": "오류·실패·위험",
+    "freq": 1,
+    "sources": [
+      "lesson-d2"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 22,
+        "en": "`/mcp` now shows a conflict warning.",
+        "surface": "warning",
+        "pos": "명사",
+        "sense": "경고, 경고 메시지",
+        "ko": "이제 `/mcp`에 충돌 경고가 보입니다."
+      }
+    ]
+  },
+  {
+    "id": "warrant",
+    "word": "warrant",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "ˈwɔːrənt",
+    "meaning": "(조치를) 정당화하다 — warranted: 그럴 만한, 필요하고 타당한",
+    "short": "정당화하다, 타당한",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(조치를) 정당화하다"
+      },
+      {
+        "pos": "형용사",
+        "ko": "(조치가) 타당한, 필요한"
+      },
+      {
+        "pos": "명사",
+        "ko": "영장, 보증서"
+      }
+    ],
+    "forms": [
+      "warranted",
+      "warrants",
+      "warranting"
+    ],
+    "synonyms": [
+      "justify",
+      "merit"
+    ],
+    "domain": "비교·평가·판단",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 6,
+        "en": "Logs show the agent issues full refunds when only a partial credit was warranted in 17% of cases because it cannot tell from the single tool which behavior it is invoking.",
+        "surface": "warranted",
+        "pos": "형용사",
+        "sense": "(조치가) 타당한, 필요한",
+        "ko": "로그를 보면 에이전트가 하나의 도구만으로는 자신이 어떤 동작을 호출하는지 구분하지 못해, 부분 크레딧이면 충분했던 경우의 17%에서 전액 환불을 처리합니다."
+      }
+    ],
+    "note": "어떤 조치가 **그럴 만한 이유가 있다, 정당하다**는 뜻입니다. 주로 *warranted*(필요하고 타당한) 형태로, \"그 정도 대응이 맞다\"를 말할 때 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Logs show the agent issues full refunds when only a partial credit was **warranted** in 17% of cases...\r\n> 로그를 보면 에이전트가 부분 크레딧이면 **충분했던** 경우의 17%에서 전액 환불을 처리한다...\r\n\r\n## 함께 쓰는 표현\r\n- **be warranted** : 정당하다, (그런 조치가) 필요하다\r\n- **unwarranted** (형) 부당한, 불필요한\r\n- **warranty** (명) 품질 보증 — 뜻이 다른 단어\r\n\r\n## 시험 포인트\r\n한 도구가 전액 환불과 부분 크레딧을 함께 처리해 오용이 생기면, **도구를 둘로 나누고 각 설명에 언제 쓰는지 적는** 보기가 정답입니다."
+  },
+  {
+    "id": "way",
+    "word": "way",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "명사"
+    ],
+    "ipa": "weɪ",
+    "meaning": "① 방법, 방식 ② 길, 경로 ③ (~하는) 대로, 식으로",
+    "short": "방법, 방식",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "방법, 방식"
+      },
+      {
+        "pos": "명사",
+        "ko": "길, 경로"
+      },
+      {
+        "pos": "명사",
+        "ko": "(~하는) 대로, 식으로"
+      }
+    ],
+    "forms": [
+      "ways"
+    ],
+    "synonyms": [
+      "method",
+      "approach",
+      "manner"
+    ],
+    "domain": "일반",
+    "freq": 25,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 11,
+        "en": "What is the best way to set this up?",
+        "surface": "way",
+        "pos": "명사",
+        "sense": "방법, 방식",
+        "ko": "가장 좋은 구성 방법은 무엇입니까?"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 21,
+        "en": "A platform team is restructuring a monolith into three microservices, touching shared data models, service boundaries, and deployment topology, with several viable ways to split the code.",
+        "surface": "ways",
+        "pos": "명사",
+        "sense": "방법, 방식",
+        "ko": "플랫폼 팀이 모놀리스를 마이크로서비스 세 개로 재구성하려 하는데, 공유 데이터 모델, 서비스 경계, 배포 토폴로지가 모두 바뀌고 코드를 나누는 방법도 여러 가지가 가능합니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 16,
+        "en": "Subagents keep returning unusable notes whenever the search results don't look the way the script expected.",
+        "surface": "way",
+        "pos": "명사",
+        "sense": "(~하는) 대로, 식으로",
+        "ko": "검색 결과가 스크립트가 예상한 모습과 다를 때마다 서브에이전트가 쓸 수 없는 메모를 돌려줍니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 5,
+        "en": "Which way of laying out the prompt best stops one category's rules from leaking into another?",
+        "surface": "way",
+        "pos": "명사",
+        "sense": "방법, 방식",
+        "ko": "한 범주의 규칙이 다른 범주로 새지 않게 하려면 프롬프트를 어떻게 배치하는 것이 가장 좋을까요?"
+      }
+    ]
+  },
+  {
+    "id": "weak",
+    "word": "weak",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "wiːk",
+    "meaning": "① 약한 ② 부실한, 빈약한",
+    "short": "약한, 부실한",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "약한, 힘이 없는"
+      },
+      {
+        "pos": "형용사",
+        "ko": "부실한, 빈약한"
+      }
+    ],
+    "forms": [
+      "weaker",
+      "weakest",
+      "weakly"
+    ],
+    "synonyms": [
+      "feeble",
+      "poor"
+    ],
+    "domain": "정확·품질·신뢰",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 52,
+        "en": "The review almost never finds problems, yet audits show 20% of the generated tests have weak or tautological assertions.",
+        "surface": "weak",
+        "pos": "형용사",
+        "sense": "부실한, 빈약한",
+        "ko": "리뷰는 거의 문제를 찾지 못하지만, 감사 결과 생성된 테스트의 20%에 약하거나 동어반복적인 assertion이 있었습니다."
+      }
+    ]
+  },
+  {
+    "id": "web",
+    "word": "web",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "명사"
+    ],
+    "ipa": "web",
+    "meaning": "① 웹 (인터넷의 월드 와이드 웹) ② 거미줄, 망",
+    "short": "웹",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "웹 (인터넷)"
+      },
+      {
+        "pos": "명사",
+        "ko": "거미줄, 망"
+      }
+    ],
+    "forms": [
+      "webs"
+    ],
+    "domain": "시스템·도구·기술",
+    "freq": 31,
+    "sources": [
+      "mock04",
+      "mock04-kor",
+      "lesson-d1",
+      "lesson-d2",
+      "selfcheck-d2-kor",
+      "selfcheck-d4-kor"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 16,
+        "en": "The synthesis agent keeps running its own web searches, and the QA agent once called the deploy tool.",
+        "surface": "web",
+        "pos": "명사",
+        "sense": "웹 (인터넷)",
+        "ko": "종합(synthesis) 에이전트는 자꾸 직접 웹 검색을 하고, QA 에이전트는 한 번 배포 도구를 호출했습니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 17,
+        "en": "It has started pulling arbitrary web pages that are not documents, even though its prompt says to load only documents.",
+        "surface": "web",
+        "pos": "명사",
+        "sense": "웹 (인터넷)",
+        "ko": "프롬프트에 문서만 불러오라고 했는데도, 문서가 아닌 임의의 웹 페이지를 가져오기 시작했습니다."
+      }
+    ]
+  },
+  {
+    "id": "webhook",
+    "word": "webhook",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈwebhʊk",
+    "meaning": "웹훅 — 이벤트가 생기면 지정한 URL로 HTTP 요청을 보내 알려 주는 방식",
+    "short": "웹훅(이벤트 알림 방식)",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "웹훅 (이벤트 발생 시 URL로 알림)"
+      }
+    ],
+    "forms": [
+      "webhooks"
+    ],
+    "domain": "연결·통합",
+    "freq": 2,
+    "sources": [
+      "mock04",
+      "lesson-d3"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d3",
+        "q": 22,
+        "en": "Your team must decide whether a new payments integration should use a webhook receiver or a polling worker.",
+        "surface": "webhook",
+        "pos": "명사",
+        "sense": "웹훅 (이벤트 발생 시 URL로 알림)",
+        "ko": "새 결제 연동을 웹훅 수신기로 할지 폴링 워커로 할지 팀이 정해야 합니다."
+      },
+      {
+        "src": "mock04",
+        "q": 38,
+        "en": "The coordinator spawns a subagent with a single Task call to trace how a payment webhook propagates through the `orders` module.",
+        "surface": "webhook",
+        "pos": "명사",
+        "sense": "웹훅 (이벤트 발생 시 URL로 알림)",
+        "ko": "코디네이터가 결제 웹훅이 `orders` 모듈을 통해 어떻게 전파되는지 추적하라며 Task 호출 한 번으로 서브에이전트를 생성합니다."
+      }
+    ],
+    "note": "어떤 **이벤트가 생기면 미리 등록한 URL 로 HTTP 요청을 보내** 다른 시스템에 알려 주는 방식입니다. 결제 완료 같은 일이 생겼을 때 받는 쪽이 계속 물어보지 않아도 됩니다.\r\n\r\n## 문제 속 쓰임\r\n> The coordinator spawns a subagent with a single Task call to trace how a payment **webhook** propagates through the `orders` module.\r\n> 코디네이터가 결제 **웹훅**이 `orders` 모듈을 통해 어떻게 전파되는지 추적하라며 `Task` 호출 한 번으로 서브에이전트를 생성한다.\r\n\r\n## 함께 쓰는 표현\r\n- **payment webhook** : 결제 웹훅 — 결제 결과를 알려 오는 요청\r\n- **webhook handler / endpoint** : 웹훅을 받아 처리하는 코드·주소\r\n\r\n## 비교\r\n- **polling** — 받는 쪽이 주기적으로 \"바뀐 것 있나?\" 물어보는 방식"
+  },
+  {
+    "id": "website",
+    "word": "website",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈwebsaɪt",
+    "meaning": "웹사이트",
+    "short": "웹사이트",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "웹사이트"
+      }
+    ],
+    "forms": [
+      "websites"
+    ],
+    "synonyms": [
+      "site"
+    ],
+    "domain": "시스템·도구·기술",
+    "freq": 3,
+    "sources": [
+      "sample01",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 10,
+        "en": "A retail customer asks a support agent to match a lower price they found on a competitor's website.",
+        "surface": "website",
+        "pos": "명사",
+        "sense": "웹사이트",
+        "ko": "소매 고객이 지원 에이전트에게 경쟁사 웹사이트에서 찾은 더 낮은 가격에 맞춰 달라고 요청합니다."
+      },
+      {
+        "src": "sample01",
+        "q": 7,
+        "en": "A company is building three Claude integrations: (1) a simple FAQ chatbot for a marketing website, (2) a complex multi-step contract analysis agent that must identify subtle legal risks, (3) a high-volume document classification pipeline processing 50,000 documents per day.",
+        "surface": "website",
+        "pos": "명사",
+        "sense": "웹사이트",
+        "ko": "한 회사가 세 가지 Claude 연동을 구축합니다: (1) 마케팅 웹사이트용 단순 FAQ 챗봇, (2) 미묘한 법적 리스크를 찾아야 하는 복잡한 다단계 계약 분석 에이전트, (3) 하루 5만 건의 문서를 처리하는 대량 문서 분류 파이프라인."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 10,
+        "en": "The store's documented policy only describes price adjustments when the store's own website lowers a price within 14 days of purchase; it does not mention competitor pricing at all.",
+        "surface": "website",
+        "pos": "명사",
+        "sense": "웹사이트",
+        "ko": "매장의 문서화된 정책은 구매 후 14일 이내에 매장 자체 웹사이트 가격이 내려갔을 때의 가격 조정만 설명하고, 경쟁사 가격은 전혀 언급하지 않습니다."
+      }
+    ]
+  },
+  {
+    "id": "week",
+    "word": "week",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "명사"
+    ],
+    "ipa": "wiːk",
+    "meaning": "주, 일주일",
+    "short": "주, 일주일",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "주, 일주일"
+      }
+    ],
+    "forms": [
+      "weeks"
+    ],
+    "domain": "시간·순서·빈도",
+    "freq": 5,
+    "sources": [
+      "mock04",
+      "lesson-d3",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 2,
+        "en": "After a week of testing, the false positive rate is essentially unchanged.",
+        "surface": "week",
+        "pos": "명사",
+        "sense": "주, 일주일",
+        "ko": "일주일 테스트 후에도 오탐률은 거의 그대로입니다."
+      },
+      {
+        "src": "mock04",
+        "q": 28,
+        "en": "This week the report cites last week's prices as current, because the resumed session replays cached web-search tool results.",
+        "surface": "week",
+        "pos": "명사",
+        "sense": "주, 일주일",
+        "ko": "이번 주 보고서는 지난주 가격을 현재 가격처럼 인용했는데, 재개된 세션이 캐시된 웹 검색 도구 결과를 그대로 되살렸기 때문입니다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 1,
+        "en": "Paste the convention into every prompt, because Claude re-reads CLAUDE.md from disk only once a week",
+        "surface": "week",
+        "pos": "명사",
+        "sense": "주, 일주일",
+        "ko": "Claude는 CLAUDE.md를 일주일에 한 번만 디스크에서 다시 읽으므로, 매 프롬프트에 규칙을 붙여 넣는다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 31,
+        "en": "A weekly compliance audit that summarizes the past week's access logs for a Monday review meeting",
+        "surface": "week's",
+        "pos": "명사",
+        "sense": "주, 일주일",
+        "ko": "월요일 리뷰 회의용으로 지난주 접근 로그를 요약하는 주간 컴플라이언스 감사"
+      }
+    ]
+  },
+  {
+    "id": "weekly",
+    "word": "weekly",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "형용사",
+      "부사"
+    ],
+    "ipa": "ˈwiːkli",
+    "meaning": "① 주간의, 매주의 ② 매주",
+    "short": "주간의, 매주의",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "주간의, 매주의"
+      },
+      {
+        "pos": "부사",
+        "ko": "매주, 주 1회"
+      }
+    ],
+    "domain": "시간·순서·빈도",
+    "freq": 2,
+    "sources": [
+      "mock04",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 28,
+        "en": "A weekly market report is produced by --resume of a named coordinator session.",
+        "surface": "weekly",
+        "pos": "형용사",
+        "sense": "주간의, 매주의",
+        "ko": "주간 시장 보고서는 이름을 붙여 둔 코디네이터 세션을 --resume으로 재개해 만듭니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 31,
+        "en": "A weekly compliance audit that summarizes the past week's access logs for a Monday review meeting",
+        "surface": "weekly",
+        "pos": "형용사",
+        "sense": "주간의, 매주의",
+        "ko": "월요일 리뷰 회의용으로 지난주 접근 로그를 요약하는 주간 컴플라이언스 감사"
+      }
+    ]
+  },
+  {
+    "id": "weigh",
+    "word": "weigh",
+    "tier": "extra",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "weɪ",
+    "meaning": "(따져 보며) 저울질하다, 비교 검토하다",
+    "short": "저울질하다, 따져 보다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(따져 보며) 저울질하다, 비교 검토하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "무게가 ~이다, 무게를 재다"
+      }
+    ],
+    "forms": [
+      "weighed",
+      "weighing",
+      "weighs"
+    ],
+    "synonyms": [
+      "consider",
+      "evaluate"
+    ],
+    "domain": "비교·평가·판단",
+    "freq": 0,
+    "sources": [],
+    "contexts": []
+  },
+  {
+    "id": "weight",
+    "word": "weight",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "weɪt",
+    "meaning": "① 무게, 중량 ② 가중치 — 얼마나 중시할지 정하는 값",
+    "short": "무게, 가중치",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "무게, 중량"
+      },
+      {
+        "pos": "명사",
+        "ko": "가중치 (중시 정도를 정하는 값)"
+      }
+    ],
+    "forms": [
+      "weighted",
+      "weights"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 10,
+    "sources": [
+      "lesson-d2",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d5",
+        "q": 31,
+        "en": "A new architect discovers that the 'weight' field is correct only 70% of the time specifically when the source document's units are ambiguous (for example, a number with no unit label present).",
+        "surface": "weight",
+        "pos": "명사",
+        "sense": "무게, 중량",
+        "ko": "새로 온 아키텍트가 보니 'weight' 필드는 원문 단위가 모호할 때(예: 단위 표시 없이 숫자만 있을 때) 정확도가 70%뿐입니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 1,
+        "en": "Give the intended tool a higher priority weight in your backend router",
+        "surface": "weight",
+        "pos": "명사",
+        "sense": "가중치 (중시 정도를 정하는 값)",
+        "ko": "백엔드 라우터에서 의도한 도구에 더 높은 우선순위 가중치를 준다"
+      },
+      {
+        "src": "lesson-d5",
+        "q": 31,
+        "en": "Send weight values to a human reviewer when the document gives no clear unit, and let weights with a clearly stated unit continue to the output without review.",
+        "surface": "weight",
+        "pos": "명사",
+        "sense": "무게, 중량",
+        "ko": "문서에 명확한 단위가 없을 때는 weight 값을 사람 검토로 보내고, 단위가 명확한 weight는 검토 없이 출력으로 보낸다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 5,
+        "en": "Increase the priority weight of the newer tool in the backend routing configuration without touching either tool's description.",
+        "surface": "weight",
+        "pos": "명사",
+        "sense": "가중치 (중시 정도를 정하는 값)",
+        "ko": "두 도구의 설명은 건드리지 않고, 백엔드 라우팅 설정에서 새 도구의 우선순위 가중치를 높인다"
+      }
+    ]
+  },
+  {
+    "id": "well",
+    "word": "well",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "부사",
+      "형용사"
+    ],
+    "ipa": "wel",
+    "meaning": "① 잘, 훌륭하게 ② 충분히, 넉넉히 ③ 건강한",
+    "short": "잘, 충분히",
+    "senses": [
+      {
+        "pos": "부사",
+        "ko": "잘, 훌륭하게"
+      },
+      {
+        "pos": "부사",
+        "ko": "충분히, 넉넉히"
+      },
+      {
+        "pos": "형용사",
+        "ko": "건강한, 괜찮은"
+      }
+    ],
+    "synonyms": [
+      "properly",
+      "skillfully"
+    ],
+    "domain": "정확·품질·신뢰",
+    "freq": 9,
+    "sources": [
+      "mock04",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 10,
+        "en": "The prompt performs well on those twenty inputs but degrades noticeably whenever a customer submits a new input that is similar to, but not identical to, one of the twenty.",
+        "surface": "well",
+        "pos": "부사",
+        "sense": "잘, 훌륭하게",
+        "ko": "이 프롬프트는 그 20개 입력에서는 잘 동작하지만, 고객이 20개 중 하나와 비슷하지만 똑같지는 않은 새 입력을 보내면 눈에 띄게 성능이 떨어집니다."
+      },
+      {
+        "src": "mock04",
+        "q": 51,
+        "en": "The CI reviewer handles clear-cut defects well but is inconsistent on genuinely ambiguous cases — for example, whether a bare `except:` is acceptable in a one-off script versus a shared library.",
+        "surface": "well",
+        "pos": "부사",
+        "sense": "잘, 훌륭하게",
+        "ko": "CI 리뷰어는 명백한 결함은 잘 처리하지만, 진짜로 모호한 사례(예: 맨 `except:` 가 일회성 스크립트에서와 공유 라이브러리에서 각각 허용 가능한지)에서는 판정이 일관되지 않습니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 28,
+        "en": "Submit every 12 hours, because half a day plus a typical batch run fits well inside 30 hours",
+        "surface": "well",
+        "pos": "부사",
+        "sense": "충분히, 넉넉히",
+        "ko": "12시간마다 제출한다. 반나절에 일반적인 배치 실행 시간을 더해도 30시간 안에 넉넉히 들어온다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 12,
+        "en": "After deployment, the model performs well on similar short English emails but starts mislabeling longer documents and documents in other languages that it previously handled correctly under the old, example-free prompt.",
+        "surface": "well",
+        "pos": "부사",
+        "sense": "잘, 훌륭하게",
+        "ko": "배포 후 모델은 비슷한 짧은 영어 이메일은 잘 처리하지만, 예전 예시 없는 프롬프트가 올바르게 처리하던 긴 문서와 다른 언어 문서를 잘못 분류하기 시작했습니다."
+      }
+    ]
+  },
+  {
+    "id": "well-formed",
+    "word": "well-formed",
+    "tier": "core",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˌwel ˈfɔːrmd",
+    "meaning": "형식이 올바른, 문법에 맞게 짜인 (well-formed JSON)",
+    "short": "형식이 올바른",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "형식이 올바른, 문법에 맞는"
+      }
+    ],
+    "forms": [
+      "well formed"
+    ],
+    "synonyms": [
+      "valid",
+      "properly formatted"
+    ],
+    "domain": "정확·품질·신뢰",
+    "freq": 2,
+    "sources": [
+      "lesson-d2",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 3,
+        "en": "Examples show what a well-formed call looks like, but not when to use the tool or where its scope ends. The description comes first, and examples only add to it.",
+        "surface": "well-formed",
+        "pos": "형용사",
+        "sense": "형식이 올바른, 문법에 맞는",
+        "ko": "예시는 올바른 형태의 호출이 어떤 모습인지 보여 주지만, 도구를 언제 쓰는지나 범위가 어디서 끝나는지는 알려 주지 않는다. 설명이 먼저이고 예시는 보탤 뿐이다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 23,
+        "en": "Add a date `format` to the field so the model has to return a well-formed date",
+        "surface": "well-formed",
+        "pos": "형용사",
+        "sense": "형식이 올바른, 문법에 맞는",
+        "ko": "필드에 날짜 `format`을 지정해 모델이 형식이 올바른 날짜를 반환하게 한다."
+      }
+    ]
+  },
+  {
+    "id": "well-structured",
+    "word": "well-structured",
+    "tier": "core",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˌwel ˈstrʌktʃərd",
+    "meaning": "구조가 잘 잡힌, 짜임새 있는",
+    "short": "짜임새 있는",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "구조가 잘 잡힌, 짜임새 있는"
+      }
+    ],
+    "forms": [
+      "well structured"
+    ],
+    "synonyms": [
+      "organized",
+      "well-organized"
+    ],
+    "domain": "구조·구성·부분",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 25,
+        "en": "Add few-shot examples of well-structured, thorough landscape reports to the formatting step of the chain",
+        "surface": "well-structured",
+        "pos": "형용사",
+        "sense": "구조가 잘 잡힌, 짜임새 있는",
+        "ko": "잘 구조화되고 충실한 경쟁 구도 보고서의 few-shot 예시를 체인의 서식 지정 단계에 추가한다"
+      }
+    ],
+    "note": "내용이 **짜임새 있게 잘 정리된** 상태입니다. 순서·구획·형식이 분명해 읽거나 처리하기 쉽다는 뜻입니다.\r\n\r\n## 문제 속 쓰임\r\n> Add few-shot examples of **well-structured**, thorough landscape reports to the formatting step of the chain\r\n> **잘 구조화되고** 충실한 경쟁 구도 보고서의 few-shot 예시를 체인의 서식 지정 단계에 추가한다\r\n\r\n## 함께 쓰는 표현\r\n- **well-structured output / report** : 구조가 잘 잡힌 출력·보고서\r\n- **well-defined** : 명확히 정의된 · **well-documented** 문서화가 잘된\r\n\r\n## 시험 포인트\r\n보고서가 조사 중 드러난 하위 주제를 놓치는 것은 **서식이 아니라 조사 범위** 문제입니다. 출력 예시를 다듬는 보기는 오답이고, 발견에 따라 하위 작업을 늘리는 **동적 분해**가 정답입니다."
+  },
+  {
+    "id": "whatever",
+    "word": "whatever",
+    "tier": "core",
+    "pos": [
+      "대명사",
+      "형용사"
+    ],
+    "ipa": "wʌtˈevər",
+    "meaning": "무엇이든, 어떤 ~이든 (상관없이)",
+    "short": "무엇이든, 어떤 ~이든",
+    "senses": [
+      {
+        "pos": "대명사",
+        "ko": "무엇이든, ~하는 것은 무엇이든"
+      },
+      {
+        "pos": "형용사",
+        "ko": "어떤 ~이든 (상관없이)"
+      }
+    ],
+    "synonyms": [
+      "no matter what"
+    ],
+    "domain": "논리·관계·연결어",
+    "freq": 2,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 42,
+        "en": "Add a CLAUDE.md rule instructing the agent to never use Grep for any code search anywhere in the monorepo, whatever the task is.",
+        "surface": "whatever",
+        "pos": "대명사",
+        "sense": "무엇이든, ~하는 것은 무엇이든",
+        "ko": "작업이 무엇이든 모노레포 어디에서도 코드 검색에 절대 `Grep` 을 쓰지 말라는 규칙을 CLAUDE.md에 추가한다"
+      },
+      {
+        "src": "mock04",
+        "q": 7,
+        "en": "Treat every unsuccessful get_customer response, whatever its cause, as an escalation trigger and route all of them to escalate_to_human.",
+        "surface": "whatever",
+        "pos": "형용사",
+        "sense": "어떤 ~이든 (상관없이)",
+        "ko": "원인과 관계없이 실패한 `get_customer` 응답을 모두 에스컬레이션 트리거로 보고, 전부 `escalate_to_human` 으로 보낸다"
+      }
+    ],
+    "note": "\"**무엇이든 상관없이**\"라는 뜻입니다. 명사 뒤의 *whatever its cause* 는 \"원인이 무엇이든\"으로, 조건을 가리지 않고 **전부에 적용**한다는 강한 표현입니다.\r\n\r\n## 문제 속 쓰임\r\n> Treat every unsuccessful get_customer response, **whatever its cause**, as an escalation trigger...\r\n> **원인과 관계없이** 실패한 `get_customer` 응답을 모두 에스컬레이션 트리거로 본다...\r\n\r\n## 함께 쓰는 표현\r\n- **whatever the task is** : 작업이 무엇이든\r\n- **whatever happens** : 무슨 일이 있어도\r\n\r\n## 시험 포인트\r\n*whatever*, *always*, *never* 처럼 **예외 없이 일괄 적용**하는 보기는 상황 구분을 무시해 오답인 경우가 많습니다."
+  },
+  {
+    "id": "whenever",
+    "word": "whenever",
+    "tier": "core",
+    "pos": [
+      "접속사"
+    ],
+    "ipa": "wenˈevər",
+    "meaning": "① ~할 때마다 ② ~하면 언제든",
+    "short": "~할 때마다",
+    "senses": [
+      {
+        "pos": "접속사",
+        "ko": "~할 때마다"
+      },
+      {
+        "pos": "접속사",
+        "ko": "~하면 언제든"
+      }
+    ],
+    "synonyms": [
+      "every time",
+      "each time"
+    ],
+    "domain": "시간·순서·빈도",
+    "freq": 13,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 16,
+        "en": "Subagents keep returning unusable notes whenever the search results don't look the way the script expected.",
+        "surface": "whenever",
+        "pos": "접속사",
+        "sense": "~할 때마다",
+        "ko": "검색 결과가 스크립트가 예상한 모습과 다를 때마다 서브에이전트가 쓸 수 없는 메모를 돌려줍니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 11,
+        "en": "A support team's prototype routes a conversation to a human whenever its sentiment score turns negative or the model rates its own confidence below 0.6.",
+        "surface": "whenever",
+        "pos": "접속사",
+        "sense": "~할 때마다",
+        "ko": "지원팀의 프로토타입은 감정 점수가 부정적으로 바뀌거나 모델이 스스로 매긴 확신도가 0.6 아래로 떨어지면 대화를 사람에게 넘깁니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 10,
+        "en": "Add a new input-output pair whenever a customer input is misclassified, extending the list over time",
+        "surface": "whenever",
+        "pos": "접속사",
+        "sense": "~하면 언제든",
+        "ko": "고객 입력이 잘못 분류될 때마다 새 입력-출력 쌍을 추가해 목록을 계속 늘린다."
+      },
+      {
+        "src": "mock04",
+        "q": 29,
+        "en": "The coordinator's agentic loop sometimes stops before the report subagent has run: it ends whenever the latest assistant text contains the phrase 'research complete'.",
+        "surface": "whenever",
+        "pos": "접속사",
+        "sense": "~할 때마다",
+        "ko": "코디네이터의 에이전트 루프가 보고서 서브에이전트가 실행되기도 전에 멈추는 일이 있습니다: 최신 어시스턴트 텍스트에 'research complete'라는 문구가 들어 있으면 루프를 끝내도록 되어 있기 때문입니다."
+      }
+    ]
+  },
+  {
+    "id": "wherever",
+    "word": "wherever",
+    "tier": "core",
+    "pos": [
+      "접속사"
+    ],
+    "ipa": "werˈevər",
+    "meaning": "~하는 곳이면 어디서나",
+    "short": "어디서든, ~하는 곳마다",
+    "senses": [
+      {
+        "pos": "접속사",
+        "ko": "~하는 곳이면 어디서나"
+      },
+      {
+        "pos": "부사",
+        "ko": "도대체 어디에"
+      }
+    ],
+    "synonyms": [
+      "anywhere"
+    ],
+    "domain": "논리·관계·연결어",
+    "freq": 1,
+    "sources": [
+      "lesson-d1"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 38,
+        "en": "It resumes directly, because a session name you set yourself is a valid handle wherever you are signed in",
+        "surface": "wherever",
+        "pos": "접속사",
+        "sense": "~하는 곳이면 어디서나",
+        "ko": "직접 붙인 세션 이름은 로그인한 곳이라면 어디서든 유효한 핸들이므로 곧바로 재개된다"
+      }
+    ]
+  },
+  {
+    "id": "whether",
+    "word": "whether",
+    "tier": "core",
+    "pos": [
+      "접속사"
+    ],
+    "ipa": "ˈweðər",
+    "meaning": "~인지 (아닌지), ~이든 아니든",
+    "short": "~인지 (아닌지)",
+    "senses": [
+      {
+        "pos": "접속사",
+        "ko": "~인지 (아닌지)"
+      },
+      {
+        "pos": "접속사",
+        "ko": "~이든 아니든"
+      }
+    ],
+    "synonyms": [
+      "if"
+    ],
+    "domain": "논리·관계·연결어",
+    "freq": 11,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d3",
+        "q": 22,
+        "en": "Your team must decide whether a new payments integration should use a webhook receiver or a polling worker.",
+        "surface": "whether",
+        "pos": "접속사",
+        "sense": "~인지 (아닌지)",
+        "ko": "새 결제 연동을 웹훅 수신기로 할지 폴링 워커로 할지 팀이 정해야 합니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 31,
+        "en": "Move weight extraction to manual entry by staff for the full set of bills of lading, and stop using the model for that field whether or not a unit is given.",
+        "surface": "whether",
+        "pos": "접속사",
+        "sense": "~이든 아니든",
+        "ko": "모든 선하증권의 weight 추출을 직원 수기 입력으로 바꾸고, 단위 유무와 관계없이 이 필드에는 모델을 쓰지 않는다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 19,
+        "en": "Add a PostToolUse hook on process_refund that checks whether verification happened once the refund has run",
+        "surface": "whether",
+        "pos": "접속사",
+        "sense": "~인지 (아닌지)",
+        "ko": "환불이 실행된 뒤 본인 확인이 있었는지 검사하는 PostToolUse 훅을 `process_refund` 에 추가한다"
+      },
+      {
+        "src": "mock04",
+        "q": 51,
+        "en": "The CI reviewer handles clear-cut defects well but is inconsistent on genuinely ambiguous cases — for example, whether a bare `except:` is acceptable in a one-off script versus a shared library.",
+        "surface": "whether",
+        "pos": "접속사",
+        "sense": "~인지 (아닌지)",
+        "ko": "CI 리뷰어는 명백한 결함은 잘 처리하지만, 진짜로 모호한 사례(예: 맨 `except:` 가 일회성 스크립트에서와 공유 라이브러리에서 각각 허용 가능한지)에서는 판정이 일관되지 않습니다."
+      }
+    ],
+    "note": "\"**~인지 (아닌지)**\"를 판단하거나 물을 때 씁니다. *whether A or B* 는 \"A이든 B이든\"입니다.\r\n\r\n## 문제 속 쓰임\r\n> ...to decide **whether** the turn is a genuine completion.\r\n> 그 턴이 진짜 완료**인지** 판단한다.\r\n\r\n## 함께 쓰는 표현\r\n- **decide / check whether** ~ : ~인지 판단·확인하다\r\n- **whether or not** : ~이든 아니든\r\n\r\n## 비교\r\n- **if** — 구어에서 같은 뜻으로 쓰지만, *or not* 바로 앞이나 전치사 뒤에는 *whether* 를 씀"
+  },
+  {
+    "id": "whichever",
+    "word": "whichever",
+    "tier": "core",
+    "pos": [
+      "대명사",
+      "형용사"
+    ],
+    "ipa": "wɪtʃˈevər",
+    "meaning": "어느 것이든, 어느 ~이든",
+    "short": "어느 것이든",
+    "senses": [
+      {
+        "pos": "대명사",
+        "ko": "어느 것이든, ~하는 쪽"
+      },
+      {
+        "pos": "형용사",
+        "ko": "어느 ~이든"
+      }
+    ],
+    "synonyms": [
+      "any that"
+    ],
+    "domain": "논리·관계·연결어",
+    "freq": 8,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 30,
+        "en": "Split the 150,000 invoices across at least 2 batch submissions, because a single Message Batch is capped at 100,000 requests or 256 MB total payload, whichever comes first. (More batches may be needed if the total payload exceeds 256 MB.)",
+        "surface": "whichever",
+        "pos": "대명사",
+        "sense": "어느 것이든, ~하는 쪽",
+        "ko": "150,000건을 최소 2개 배치로 나눠 제출한다. Message Batch 하나는 요청 100,000건 또는 총 페이로드 256 MB 중 먼저 닿는 쪽까지이기 때문이다. (총 페이로드가 256 MB를 넘으면 배치가 더 필요할 수 있다.)"
+      },
+      {
+        "src": "lesson-d1",
+        "q": 17,
+        "en": "Both prompt sources are concatenated and then truncated to the shorter of the two, so only whichever prompt is more concise is guaranteed to reach the subagent intact",
+        "surface": "whichever",
+        "pos": "형용사",
+        "sense": "어느 ~이든",
+        "ko": "두 프롬프트는 이어 붙인 뒤 더 짧은 쪽 길이로 잘리므로, 더 간결한 프롬프트만 온전히 도달한다고 보장된다"
+      },
+      {
+        "src": "lesson-d5",
+        "q": 37,
+        "en": "Send both figures straight to the synthesis agent and let it pick whichever fits the report best",
+        "surface": "whichever",
+        "pos": "대명사",
+        "sense": "어느 것이든, ~하는 쪽",
+        "ko": "두 수치를 종합 에이전트에 바로 보내, 보고서에 가장 잘 맞는 쪽을 고르게 한다"
+      },
+      {
+        "src": "mock04",
+        "q": 31,
+        "en": "Set tool_choice to \"any\" so the subagent must use some tool on the opening turn, whichever one it prefers.",
+        "surface": "whichever",
+        "pos": "대명사",
+        "sense": "어느 것이든, ~하는 쪽",
+        "ko": "`tool_choice` 를 `\"any\"` 로 설정해, 서브에이전트가 첫 턴에 어떤 도구든 원하는 것 하나를 반드시 사용하게 한다"
+      }
+    ],
+    "note": "여러 개 중 \"**어느 것이든**\"이라는 뜻입니다. 고르는 기준을 정하지 않고 **아무거나 하나**라는 뉘앙스입니다.\r\n\r\n## 문제 속 쓰임\r\n> Set tool_choice to \"any\" so the subagent must use some tool on the opening turn, **whichever one it prefers**.\r\n> `tool_choice` 를 `\"any\"` 로 설정해, 서브에이전트가 첫 턴에 **어떤 도구든 원하는 것 하나**를 반드시 사용하게 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **whichever comes first** : 어느 쪽이든 먼저 오는 것\r\n- **whichever one you prefer** : 원하는 어느 것이든\r\n\r\n## 시험 포인트\r\n`tool_choice: \"any\"` 는 **도구를 쓰게만** 할 뿐 어느 도구인지는 고정하지 못합니다. 첫 단계가 항상 특정 도구라면 `{\"type\":\"tool\",\"name\":...}` 로 **이름을 지정해 강제**해야 합니다."
+  },
+  {
+    "id": "while",
+    "word": "while",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "접속사",
+      "명사"
+    ],
+    "ipa": "waɪl",
+    "meaning": "① ~하는 동안, ~하면서 ② ~인 반면 ③ 잠시, 한동안",
+    "short": "~하는 동안, ~인 반면",
+    "senses": [
+      {
+        "pos": "접속사",
+        "ko": "~하는 동안, ~하면서"
+      },
+      {
+        "pos": "접속사",
+        "ko": "~인 반면"
+      },
+      {
+        "pos": "명사",
+        "ko": "잠시, 한동안"
+      }
+    ],
+    "synonyms": [
+      "whereas",
+      "during"
+    ],
+    "domain": "시간·순서·빈도",
+    "freq": 28,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d3",
+        "q": 19,
+        "en": "While in plan mode, an architect notices that Claude keeps reading files and running read-only search commands without prompting for approval on each one, even though no edits have occurred.",
+        "surface": "While",
+        "pos": "접속사",
+        "sense": "~하는 동안, ~하면서",
+        "ko": "플랜 모드에서, 편집은 한 번도 없었는데 Claude가 파일을 읽고 읽기 전용 검색 명령을 실행할 때마다 승인을 묻지 않는 것을 아키텍트가 발견했습니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 22,
+        "en": "On one order, the extracted line-item amounts sum to $940 while the extracted \"order_total\" field reads $980.",
+        "surface": "while",
+        "pos": "접속사",
+        "sense": "~인 반면",
+        "ko": "한 주문에서 추출된 품목 금액의 합은 $940인데, 추출된 \"order_total\" 필드는 $980입니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 15,
+        "en": "In a four-source research pipeline, the patent database sometimes rejects credentials while the other sources keep working.",
+        "surface": "while",
+        "pos": "접속사",
+        "sense": "~인 반면",
+        "ko": "소스 네 개를 쓰는 리서치 파이프라인에서 특허 데이터베이스가 가끔 자격 증명을 거부하고, 나머지 소스는 정상 동작합니다."
+      },
+      {
+        "src": "sample01",
+        "q": 9,
+        "en": "Implement prompt caching for the static system prompt and core documents; route simple classification queries to Haiku while keeping Opus for complex analysis",
+        "surface": "while",
+        "pos": "접속사",
+        "sense": "~하는 동안, ~하면서",
+        "ko": "정적인 시스템 프롬프트와 핵심 문서에 프롬프트 캐싱을 적용하고, 단순 질의는 Haiku로 라우팅하되 복잡한 분석은 Opus를 유지한다"
+      }
+    ]
+  },
+  {
+    "id": "whole",
+    "word": "whole",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "형용사",
+      "명사"
+    ],
+    "ipa": "hoʊl",
+    "meaning": "① 전체의, 전부의 ② 통째로 된, 온전한 ③ 전체",
+    "short": "전체의, 전부의",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "전체의, 전부의"
+      },
+      {
+        "pos": "형용사",
+        "ko": "통째로 된, 온전한"
+      },
+      {
+        "pos": "명사",
+        "ko": "전체, 전부"
+      }
+    ],
+    "synonyms": [
+      "entire",
+      "complete",
+      "full"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 19,
+    "sources": [
+      "mock04",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 21,
+        "en": "An architect is rolling out a GitHub MCP server for the whole engineering team.",
+        "surface": "whole",
+        "pos": "형용사",
+        "sense": "전체의, 전부의",
+        "ko": "설계자가 엔지니어링 팀 전체에 GitHub MCP 서버를 배포합니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 14,
+        "en": "Which change removes this whole class of failure?",
+        "surface": "whole",
+        "pos": "형용사",
+        "sense": "전체의, 전부의",
+        "ko": "이런 종류의 실패 전체를 없애는 변경은 무엇입니까?"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 24,
+        "en": "Ask Claude to regenerate the whole migration script from the original schema description in a fresh session, so the null handling is written again from scratch",
+        "surface": "whole",
+        "pos": "형용사",
+        "sense": "통째로 된, 온전한",
+        "ko": "새 세션에서 원래 스키마 설명을 바탕으로 마이그레이션 스크립트 전체를 다시 생성해 null 처리를 처음부터 새로 쓰게 한다"
+      },
+      {
+        "src": "lesson-d5",
+        "q": 22,
+        "en": "Have the agent re-read the whole repository so the class details are fresh in its context again",
+        "surface": "whole",
+        "pos": "형용사",
+        "sense": "통째로 된, 온전한",
+        "ko": "저장소 전체를 다시 읽게 해, 클래스 세부가 컨텍스트에 다시 새로 들어오게 한다"
+      }
+    ]
+  },
+  {
+    "id": "whose",
+    "word": "whose",
+    "tier": "core",
+    "pos": [
+      "대명사"
+    ],
+    "ipa": "huːz",
+    "meaning": "① (관계사) 그것의 ~가 ② (의문) 누구의",
+    "short": "그것의 ~가, 누구의",
+    "senses": [
+      {
+        "pos": "대명사",
+        "ko": "(관계사) 그것의 ~가"
+      },
+      {
+        "pos": "대명사",
+        "ko": "(의문) 누구의"
+      }
+    ],
+    "domain": "논리·관계·연결어",
+    "freq": 12,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 18,
+        "en": "Lab reports are extracted with a strict tool whose schema lists `referring_physician` as a required string.",
+        "surface": "whose",
+        "pos": "대명사",
+        "sense": "(관계사) 그것의 ~가",
+        "ko": "검사 보고서를 strict 도구로 추출하는데, 스키마에 `referring_physician`(의뢰 의사)이 필수 string으로 정의돼 있습니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 11,
+        "en": "A polite customer whose request no written policy covers stays with the agent.",
+        "surface": "whose",
+        "pos": "대명사",
+        "sense": "(관계사) 그것의 ~가",
+        "ko": "서면 정책이 다루지 않는 요청을 한 정중한 고객은 에이전트에 남았습니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 13,
+        "en": "Return the 47 enriched records as the batch result and leave out the 3 customers whose lookups failed with the permission error",
+        "surface": "whose",
+        "pos": "대명사",
+        "sense": "(관계사) 그것의 ~가",
+        "ko": "보강된 47건을 배치 결과로 돌려주고, 권한 오류로 조회에 실패한 고객 3명은 뺀다"
+      },
+      {
+        "src": "mock04",
+        "q": 33,
+        "en": "Consolidate the two tools into one unified search tool whose single description covers both general web pages and academic sources.",
+        "surface": "whose",
+        "pos": "대명사",
+        "sense": "(관계사) 그것의 ~가",
+        "ko": "두 도구를 일반 웹 페이지와 학술 출처를 모두 다루는 설명 하나짜리 통합 검색 도구로 합친다"
+      }
+    ],
+    "note": "앞에 나온 명사를 받아 \"**그것의 ~가**\"라고 소유 관계로 이어 주는 말입니다(사람·사물 모두). 의문문에서는 \"누구의\"입니다.\r\n\r\n## 문제 속 쓰임\r\n> Consolidate the two tools into one unified search tool **whose** single description covers both general web pages and academic sources.\r\n> 두 도구를, **설명 하나가** 일반 웹 페이지와 학술 출처를 모두 다루는 통합 검색 도구로 합친다.\r\n\r\n## 함께 쓰는 표현\r\n- **a tool whose output** ~ : 출력이 ~인 도구\r\n- **whose** vs **who's** : *who's* 는 *who is* 의 줄임말 (발음 같음)"
+  },
+  {
+    "id": "wide",
+    "word": "wide",
+    "tier": "core",
+    "pos": [
+      "형용사",
+      "부사"
+    ],
+    "ipa": "waɪd",
+    "meaning": "① (범위가) 넓은, 광범위한 ② 폭이 ~인",
+    "short": "넓은, 광범위한",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "(범위가) 넓은, 광범위한"
+      },
+      {
+        "pos": "형용사",
+        "ko": "폭이 ~인"
+      }
+    ],
+    "forms": [
+      "wider",
+      "widest",
+      "widely"
+    ],
+    "synonyms": [
+      "broad",
+      "extensive"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 3,
+    "sources": [
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 11,
+        "en": "Use `errorCategory: \"permission\"` with `isRetryable: false`; the same token keeps failing on resubmission, so the caller needs one with a wider role first",
+        "surface": "wider",
+        "pos": "형용사",
+        "sense": "(범위가) 넓은, 광범위한",
+        "ko": "`errorCategory: \"permission\"`, `isRetryable: false`. 같은 토큰은 다시 보내도 계속 실패하므로 호출자는 먼저 더 넓은 역할의 토큰을 구해야 한다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 2,
+        "en": "High-confidence phrasing conflicts with the model's safety training, which is designed to avoid under-reporting risks, causing it to over-report findings as a precautionary default across a wider range of inputs.",
+        "surface": "wider",
+        "pos": "형용사",
+        "sense": "(범위가) 넓은, 광범위한",
+        "ko": "\"높은 확신\" 표현이 위험을 과소 보고하지 않도록 설계된 모델의 안전 학습과 충돌해, 모델이 예방 차원에서 더 넓은 입력에 대해 과다 보고한다."
+      }
+    ]
+  },
+  {
+    "id": "widely-used",
+    "word": "widely-used",
+    "tier": "core",
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "ˈwaɪdli juːzd",
+    "meaning": "널리 쓰이는",
+    "short": "널리 쓰이는",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "널리 쓰이는"
+      }
+    ],
+    "forms": [
+      "widely used"
+    ],
+    "synonyms": [
+      "popular",
+      "common"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 2,
+    "sources": [
+      "mock04",
+      "lesson-d3"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 19,
+        "en": "To rename a widely-used internal API, Claude must first locate every call site across a large monorepo.",
+        "surface": "widely-used",
+        "pos": "형용사",
+        "sense": "널리 쓰이는",
+        "ko": "널리 쓰이는 내부 API의 이름을 바꾸려면 Claude가 먼저 대형 모노레포 전체에서 모든 호출 지점을 찾아야 합니다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 25,
+        "en": "Name a widely used CSV parsing library in the prompt and tell Claude to build the converter on it, keeping the library's default handling of empty cells and quoted commas, then review the output.",
+        "surface": "widely used",
+        "pos": "형용사",
+        "sense": "널리 쓰이는",
+        "ko": "널리 쓰이는 CSV 파싱 라이브러리를 지정해 그 위에 변환기를 만들게 하고, 빈 셀·따옴표 쉼표는 라이브러리 기본 처리대로 둔 뒤 결과를 검토한다"
+      }
+    ],
+    "note": "**널리 쓰이는**, 여러 곳에서 의존하는 것입니다. 코드에서는 호출하는 곳이 많아 **바꾸면 영향 범위가 넓다**는 뉘앙스가 있습니다.\r\n\r\n## 문제 속 쓰임\r\n> To rename a **widely-used** internal API, Claude must first locate every call site across a large monorepo.\r\n> **널리 쓰이는** 내부 API의 이름을 바꾸려면 Claude가 먼저 대형 모노레포 전체에서 모든 호출 지점을 찾아야 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **widely adopted** : 널리 채택된\r\n- **commonly used** : 흔히 쓰이는\r\n\r\n## 시험 포인트\r\n호출 지점이 많아 탐색이 길어지면 **Explore 서브에이전트로 탐색을 격리하고 요약만 받아** 메인 컨텍스트를 편집용으로 남기는 것이 정답입니다."
+  },
+  {
+    "id": "widen",
+    "word": "widen",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "ˈwaɪdn",
+    "meaning": "넓히다, 확대하다",
+    "short": "넓히다, 확대하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "넓히다, 확대하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "넓어지다"
+      }
+    ],
+    "forms": [
+      "widens",
+      "widened",
+      "widening"
+    ],
+    "synonyms": [
+      "broaden",
+      "expand"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 1,
+    "sources": [
+      "lesson-d1"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 7,
+        "en": "The coordinator's tool permissions blocked the authentication context from being read, so the architect must widen the subagent's tool access",
+        "surface": "widen",
+        "pos": "동사",
+        "sense": "넓히다, 확대하다",
+        "ko": "코디네이터의 도구 권한이 인증 관련 컨텍스트를 읽지 못하게 막았으므로, 서브에이전트의 도구 접근을 넓혀야 한다"
+      }
+    ]
+  },
+  {
+    "id": "window",
+    "word": "window",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈwɪndoʊ",
+    "meaning": "① (컨텍스트) 창 — context window: 모델이 한 번에 담을 수 있는 토큰 범위 ② (시간의) 구간",
+    "short": "(컨텍스트) 창, 구간",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "(컨텍스트) 창, 토큰 범위"
+      },
+      {
+        "pos": "명사",
+        "ko": "(시간의) 구간"
+      },
+      {
+        "pos": "명사",
+        "ko": "창문, 창"
+      }
+    ],
+    "forms": [
+      "windows"
+    ],
+    "domain": "시스템·도구·기술",
+    "freq": 33,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 33,
+        "en": "Switch to a model with a larger context window so that it follows all three steps reliably",
+        "surface": "window",
+        "pos": "명사",
+        "sense": "(컨텍스트) 창, 토큰 범위",
+        "ko": "세 단계를 모두 확실히 따르도록 컨텍스트 창이 더 큰 모델로 바꾼다"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 28,
+        "en": "Submit every 4 hours, because a 4-hour wait plus the full 24-hour batch window still fits inside 30 hours with time to spare for overhead",
+        "surface": "window",
+        "pos": "명사",
+        "sense": "(시간의) 구간",
+        "ko": "4시간마다 제출한다. 4시간 대기에 24시간 배치 창 전체를 더해도 30시간 안에 들어오고, 오버헤드를 위한 여유까지 남는다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 18,
+        "en": "Have Claude send the sweep to the Explore subagent, which reads the files in its own context window and returns only a summary",
+        "surface": "window",
+        "pos": "명사",
+        "sense": "(컨텍스트) 창, 토큰 범위",
+        "ko": "Claude가 탐색을 Explore 서브에이전트에 맡기게 한다. Explore는 자기 컨텍스트 창에서 파일을 읽고 요약만 돌려준다"
+      },
+      {
+        "src": "sample01",
+        "q": 6,
+        "en": "Context window saturation — the cumulative message history exceeds the effective attention range; implement a summarization/compaction strategy",
+        "surface": "window",
+        "pos": "명사",
+        "sense": "(컨텍스트) 창, 토큰 범위",
+        "ko": "컨텍스트 윈도 포화 — 누적 대화 기록이 실질적인 주의 범위를 넘었다. 요약/압축(compaction) 전략을 구현한다"
+      }
+    ],
+    "note": "1. **(컨텍스트) 창** — *context window*: 모델이 한 번에 읽고 기억할 수 있는 토큰의 범위\r\n2. **(시간의) 구간** — *time window* 정해진 시간 범위\r\n3. **(화면의) 창** — 앱·브라우저 창\r\n\r\n## 문제 속 쓰임\r\n> Context **window** saturation — the cumulative message history exceeds the effective attention range...\r\n> 컨텍스트 **윈도** 포화 — 누적 대화 기록이 실질적인 주의 범위를 넘었다...\r\n\r\n## 함께 쓰는 표현\r\n- **context window size** : 컨텍스트 창 크기\r\n- **sliding window** : 최근 일정 범위만 남기며 밀어 가는 방식\r\n\r\n## 시험 포인트\r\n\"컨텍스트 창을 늘린다\"는 보기는 대부분 오답입니다. 요약 손실·탐색 출력 오염·형식 혼란 같은 **원인이 그대로** 남기 때문이고, 압축·외부 파일·서브에이전트 격리 같은 구조적 해법이 정답 쪽입니다."
+  },
+  {
+    "id": "withdrawal",
+    "word": "withdrawal",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "wɪðˈdrɔːəl",
+    "meaning": "① 출금, 인출 ② 철수, 철회",
+    "short": "출금, 인출",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "출금, 인출"
+      },
+      {
+        "pos": "명사",
+        "ko": "철수, 철회"
+      }
+    ],
+    "forms": [
+      "withdrawals",
+      "withdraw"
+    ],
+    "synonyms": [
+      "removal"
+    ],
+    "domain": "비즈니스·업무",
+    "freq": 1,
+    "sources": [
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 20,
+        "en": "An audit later finds several instances where deposits were mislabeled as withdrawals, even though every amount and transaction_type field is present and passes schema validation.",
+        "surface": "withdrawals",
+        "pos": "명사",
+        "sense": "출금, 인출",
+        "ko": "나중에 감사에서 입금이 출금으로 잘못 라벨링된 사례가 여럿 발견됐지만, 모든 amount와 transaction_type 필드는 존재하고 스키마 검증도 통과했습니다."
+      }
+    ]
+  },
+  {
+    "id": "withhold",
+    "word": "withhold",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "wɪðˈhoʊld",
+    "meaning": "주지 않다, 보류하다",
+    "short": "주지 않다, 보류하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "주지 않다, 보류하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(정보를) 알리지 않다, 숨기다"
+      }
+    ],
+    "forms": [
+      "withheld",
+      "withholding",
+      "withholds"
+    ],
+    "synonyms": [
+      "hold back",
+      "keep back"
+    ],
+    "domain": "제어·제한·관리",
+    "freq": 1,
+    "sources": [
+      "lesson-d3"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d3",
+        "q": 27,
+        "en": "Withhold the filename extension failure and report only the currency-formatting mismatch as the primary defect found first, deferring the secondary extension issue to avoid distracting Claude from the more critical formatting fix.",
+        "surface": "Withhold",
+        "pos": "동사",
+        "sense": "(정보를) 알리지 않다, 숨기다",
+        "ko": "파일 확장자 실패는 보류하고 먼저 발견된 주요 결함인 통화 형식 불일치만 보고한다. 더 중요한 형식 수정에서 주의를 돌리지 않기 위해서다"
+      }
+    ]
+  },
+  {
+    "id": "within",
+    "word": "within",
+    "tier": "core",
+    "pos": [
+      "전치사"
+    ],
+    "ipa": "wɪˈðɪn",
+    "meaning": "~ 안에서, ~ 이내에",
+    "short": "~ 이내에, ~ 안에서",
+    "senses": [
+      {
+        "pos": "전치사",
+        "ko": "~ 이내에"
+      },
+      {
+        "pos": "전치사",
+        "ko": "~ 안에서"
+      }
+    ],
+    "synonyms": [
+      "inside"
+    ],
+    "domain": "시간·순서·빈도",
+    "freq": 9,
+    "sources": [
+      "mock04",
+      "lesson-d2",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 28,
+        "en": "Contracts arrive around the clock, and stakeholders have been promised every extraction result within 30 hours of a contract's arrival.",
+        "surface": "within",
+        "pos": "전치사",
+        "sense": "~ 이내에",
+        "ko": "계약서가 24시간 내내 들어오고, 이해관계자에게는 계약서가 도착한 뒤 30시간 안에 모든 추출 결과를 주겠다고 약속했습니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 10,
+        "en": "The store's documented policy only describes price adjustments when the store's own website lowers a price within 14 days of purchase; it does not mention competitor pricing at all.",
+        "surface": "within",
+        "pos": "전치사",
+        "sense": "~ 이내에",
+        "ko": "매장의 문서화된 정책은 구매 후 14일 이내에 매장 자체 웹사이트 가격이 내려갔을 때의 가격 조정만 설명하고, 경쟁사 가격은 전혀 언급하지 않습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 52,
+        "en": "In the pipeline, Claude Code generates test cases and then, within the same session, reviews those tests for quality.",
+        "surface": "within",
+        "pos": "전치사",
+        "sense": "~ 안에서",
+        "ko": "파이프라인에서 Claude Code가 테스트 케이스를 생성한 뒤, 같은 세션 안에서 그 테스트의 품질을 리뷰합니다."
+      },
+      {
+        "src": "mock04",
+        "q": 26,
+        "en": "Increase the context window so that both reports fit within one single long generation pass over the evidence",
+        "surface": "within",
+        "pos": "전치사",
+        "sense": "~ 안에서",
+        "ko": "두 보고서가 증거 전체를 한 번 훑는 긴 생성 패스 하나에 함께 들어가도록 컨텍스트 창을 늘린다"
+      }
+    ],
+    "note": "\"**~ 안에서, ~ 범위 이내에서**\"라는 뜻입니다. 공간·시간·범위의 경계를 넘지 않는다는 뉘앙스입니다.\r\n\r\n## 문제 속 쓰임\r\n> ...Claude Code generates test cases and then, **within** the same session, reviews those tests for quality.\r\n> Claude Code가 테스트 케이스를 생성한 뒤, 같은 세션 **안에서** 그 테스트의 품질을 리뷰한다.\r\n\r\n## 함께 쓰는 표현\r\n- **within the same session / context** : 같은 세션·컨텍스트 안에서\r\n- **within a limit** : 한도 안에서 · **within 5 minutes** 5분 이내에\r\n\r\n## 시험 포인트\r\n같은 세션 **안에서** 자기 결과를 리뷰하면 편향 때문에 문제를 잘 찾지 못합니다. **독립된 별도 인스턴스**로 리뷰하는 보기가 정답입니다."
+  },
+  {
+    "id": "without",
+    "word": "without",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "전치사"
+    ],
+    "ipa": "wɪˈðaʊt",
+    "meaning": "① ~ 없이 ② ~하지 않고",
+    "short": "~ 없이, ~하지 않고",
+    "senses": [
+      {
+        "pos": "전치사",
+        "ko": "~ 없이"
+      },
+      {
+        "pos": "전치사",
+        "ko": "~하지 않고"
+      }
+    ],
+    "domain": "논리·관계·연결어",
+    "freq": 39,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 19,
+        "en": "Audits show that a small share of refunds still go out without the customer's identity being verified first.",
+        "surface": "without",
+        "pos": "전치사",
+        "sense": "~ 없이",
+        "ko": "감사 결과, 적은 비율이지만 여전히 고객 본인 확인 없이 환불이 나가고 있습니다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 19,
+        "en": "While in plan mode, an architect notices that Claude keeps reading files and running read-only search commands without prompting for approval on each one, even though no edits have occurred.",
+        "surface": "without",
+        "pos": "전치사",
+        "sense": "~하지 않고",
+        "ko": "플랜 모드에서, 편집은 한 번도 없었는데 Claude가 파일을 읽고 읽기 전용 검색 명령을 실행할 때마다 승인을 묻지 않는 것을 아키텍트가 발견했습니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 20,
+        "en": "Which setup gives every contributor the server without committing anyone's token?",
+        "surface": "without",
+        "pos": "전치사",
+        "sense": "~하지 않고",
+        "ko": "누구의 토큰도 커밋하지 않고 모든 기여자가 서버를 받게 하는 설정은 무엇입니까?"
+      },
+      {
+        "src": "lesson-d5",
+        "q": 19,
+        "en": "The coordinator accepted the subagent's output without a validation pass, so the empty findings list was never checked against the provider",
+        "surface": "without",
+        "pos": "전치사",
+        "sense": "~ 없이",
+        "ko": "코디네이터가 검증 단계 없이 서브에이전트 출력을 받아들여, 빈 발견 목록을 공급사와 대조하지 않았다"
+      }
+    ]
+  },
+  {
+    "id": "word",
+    "word": "word",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "ipa": "wɜːrd",
+    "meaning": "① 단어, 낱말 ② 표현, 말씨 (wording) ③ (~라고) 표현하다",
+    "short": "단어, 표현",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "단어, 낱말"
+      },
+      {
+        "pos": "명사",
+        "ko": "표현, 말씨"
+      },
+      {
+        "pos": "동사",
+        "ko": "(~라고) 표현하다"
+      }
+    ],
+    "forms": [
+      "words",
+      "wording",
+      "worded"
+    ],
+    "synonyms": [
+      "term",
+      "phrasing"
+    ],
+    "domain": "데이터·정보·문서",
+    "freq": 26,
+    "sources": [
+      "mock04",
+      "mock04-kor",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 12,
+        "en": "All five examples happen to be English-language emails under 100 words.",
+        "surface": "words",
+        "pos": "명사",
+        "sense": "단어, 낱말",
+        "ko": "그런데 5개 모두 우연히 100단어 미만의 영어 이메일이었습니다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 1,
+        "en": "Rewrite the convention with stronger wording such as IMPORTANT or MUST so Claude can't overlook it",
+        "surface": "wording",
+        "pos": "명사",
+        "sense": "표현, 말씨",
+        "ko": "IMPORTANT·MUST 같은 더 강한 표현으로 규칙을 다시 써서 Claude가 놓치지 못하게 한다"
+      },
+      {
+        "src": "mock04",
+        "q": 46,
+        "en": "A CI pipeline calls Claude Code to review each pull request, and a shell gate script greps stdout for the word \"CRITICAL\" to fail the build.",
+        "surface": "word",
+        "pos": "명사",
+        "sense": "단어, 낱말",
+        "ko": "CI 파이프라인이 Claude Code를 호출해 풀 리퀘스트마다 리뷰를 수행하고, 셸 게이트 스크립트가 stdout에서 \"CRITICAL\"이라는 단어를 grep해 빌드를 실패시킵니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 2,
+        "en": "Each summarization pass traded precision for brevity, so the exact amount and deadline were condensed into vague wording",
+        "surface": "wording",
+        "pos": "명사",
+        "sense": "표현, 말씨",
+        "ko": "요약 단계마다 간결함을 위해 정밀도를 희생해, 정확한 금액과 기한이 모호한 표현으로 압축됐다"
+      }
+    ]
+  },
+  {
+    "id": "work",
+    "word": "work",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "ipa": "wɜːrk",
+    "meaning": "① 작동하다, 동작하다 ② 일하다, 작업하다 ③ 일, 작업(물)",
+    "short": "작동하다, 작업(하다)",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "작동하다, 동작하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "일하다, 작업하다"
+      },
+      {
+        "pos": "명사",
+        "ko": "일, 작업, 작업물"
+      }
+    ],
+    "forms": [
+      "works",
+      "worked",
+      "working"
+    ],
+    "synonyms": [
+      "function",
+      "operate"
+    ],
+    "domain": "실행·처리",
+    "freq": 40,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d3",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 20,
+        "en": "The address subagent keeps asking which customer account it is working on.",
+        "surface": "working",
+        "pos": "동사",
+        "sense": "일하다, 작업하다",
+        "ko": "주소 담당 서브에이전트가 자기가 어느 고객 계정을 다루는지 계속 묻습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 11,
+        "en": "Everything works for the lead, but three newly onboarded engineers who cloned the repo report that Claude Code ignores the conventions entirely, even though `git status` shows a clean checkout.",
+        "surface": "works",
+        "pos": "동사",
+        "sense": "작동하다, 동작하다",
+        "ko": "리드에게는 모든 것이 잘 동작하지만, 저장소를 클론한 신규 엔지니어 세 명은 `git status` 가 깨끗한 체크아웃 상태를 보여 주는데도 Claude Code가 컨벤션을 완전히 무시한다고 보고합니다."
+      },
+      {
+        "src": "lesson-d2",
+        "q": 27,
+        "en": "An architect asks Claude Code to count how many files in the `src/components` directory tree currently have no matching test file at all, as a first step in planning test coverage work.",
+        "surface": "work",
+        "pos": "명사",
+        "sense": "일, 작업, 작업물",
+        "ko": "설계자가 테스트 커버리지 작업 계획의 첫 단계로, `src/components` 디렉터리 트리에서 대응하는 테스트 파일이 전혀 없는 파일이 몇 개인지 Claude Code에게 세어 달라고 합니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 30,
+        "en": "An architect is consolidating tool-output normalization into a single PostToolUse hook that must work for both MCP tools and built-in tools.",
+        "surface": "work",
+        "pos": "동사",
+        "sense": "작동하다, 동작하다",
+        "ko": "아키텍트가 도구 출력 정규화를 MCP 도구와 내장 도구 모두에 동작해야 하는 하나의 PostToolUse 훅으로 통합하고 있습니다."
+      }
+    ]
+  },
+  {
+    "id": "worker",
+    "word": "worker",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈwɜːrkər",
+    "meaning": "① 워커 (작업을 대신 처리하는 프로세스) ② 노동자, 직원",
+    "short": "워커, 작업자",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "워커 (작업을 처리하는 프로세스)"
+      },
+      {
+        "pos": "명사",
+        "ko": "노동자, 직원"
+      }
+    ],
+    "forms": [
+      "workers"
+    ],
+    "domain": "사람·조직·역할",
+    "freq": 3,
+    "sources": [
+      "lesson-d1",
+      "lesson-d3",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d3",
+        "q": 22,
+        "en": "Your team must decide whether a new payments integration should use a webhook receiver or a polling worker.",
+        "surface": "worker",
+        "pos": "명사",
+        "sense": "워커 (작업을 처리하는 프로세스)",
+        "ko": "새 결제 연동을 웹훅 수신기로 할지 폴링 워커로 할지 팀이 정해야 합니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 34,
+        "en": "An orchestrator agent that plans the summary and translation subtasks per transcript, then delegates them to workers",
+        "surface": "workers",
+        "pos": "명사",
+        "sense": "워커 (작업을 처리하는 프로세스)",
+        "ko": "대화마다 요약·번역 하위 작업을 계획한 뒤 워커에 위임하는 오케스트레이터 에이전트"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 33,
+        "en": "Batch the whole agent. Include the lookup tool's definition in each request, and the batch worker will run the tool between turns until the agent reaches end_turn",
+        "surface": "worker",
+        "pos": "명사",
+        "sense": "워커 (작업을 처리하는 프로세스)",
+        "ko": "에이전트 전체를 배치한다. 요청마다 조회 도구 정의를 넣으면 배치 워커가 턴 사이에 도구를 실행하며 end_turn까지 진행한다."
+      }
+    ]
+  },
+  {
+    "id": "workflow",
+    "word": "workflow",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈwɜːrkfloʊ",
+    "meaning": "워크플로 — 작업이 정해진 단계·순서로 이어지는 흐름",
+    "short": "워크플로(작업 흐름)",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "워크플로, 작업 흐름"
+      }
+    ],
+    "forms": [
+      "workflows"
+    ],
+    "synonyms": [
+      "process",
+      "pipeline"
+    ],
+    "domain": "실행·처리",
+    "freq": 9,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d3",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 34,
+        "en": "Which decomposition strategy best fits this workflow?",
+        "surface": "workflow",
+        "pos": "명사",
+        "sense": "워크플로, 작업 흐름",
+        "ko": "이 워크플로에 가장 알맞은 분해 전략은 무엇입니까?"
+      },
+      {
+        "src": "lesson-d3",
+        "q": 33,
+        "en": "A PR-review workflow uses the code-review plugin with --comment, but no inline comments ever appear on the PR.",
+        "surface": "workflow",
+        "pos": "명사",
+        "sense": "워크플로, 작업 흐름",
+        "ko": "PR 리뷰 워크플로가 code-review 플러그인을 --comment와 함께 쓰는데, PR에 인라인 코멘트가 전혀 달리지 않습니다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 30,
+        "en": "The workflow stored ANTHROPIC_API_KEY as a secret but never exposed it to the step, so the CLI kept retrying authentication in a loop until the timeout",
+        "surface": "workflow",
+        "pos": "명사",
+        "sense": "워크플로, 작업 흐름",
+        "ko": "워크플로가 `ANTHROPIC_API_KEY` 를 시크릿으로 저장했지만 단계에 노출하지 않아, CLI가 타임아웃까지 인증을 반복 재시도했다"
+      },
+      {
+        "src": "mock04",
+        "q": 29,
+        "en": "Intermittently the synthesis subagent uses that phrase mid-analysis, halting the workflow.",
+        "surface": "workflow",
+        "pos": "명사",
+        "sense": "워크플로, 작업 흐름",
+        "ko": "간헐적으로 합성 서브에이전트가 분석 도중에 이 문구를 쓰면서 워크플로가 중단됩니다."
+      }
+    ],
+    "note": "일이 **정해진 단계와 순서를 따라 흘러가는 과정**입니다. 여러 도구·사람·에이전트가 차례로 이어 맡는 전체 흐름을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> Intermittently the synthesis subagent uses that phrase mid-analysis, halting the **workflow**.\r\n> 간헐적으로 합성 서브에이전트가 분석 도중에 이 문구를 쓰면서 **워크플로**가 중단된다.\r\n\r\n## 함께 쓰는 표현\r\n- **agentic workflow** : 에이전트 워크플로\r\n- **CI workflow** : CI 작업 흐름 (예: GitHub Actions)\r\n- **halt / break the workflow** : 흐름을 멈추다·끊다\r\n\r\n## 시험 포인트\r\n특정 문구가 나오면 루프를 끝내는 설계는 흐름을 엉뚱한 곳에서 끊습니다. 루프는 **`stop_reason` 이 `tool_use` 인 동안 계속**하고 `end_turn` 에서만 멈추는 것이 정답입니다."
+  },
+  {
+    "id": "workload",
+    "word": "workload",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈwɜːrkloʊd",
+    "meaning": "작업량, (처리해야 할) 작업의 성격·부하",
+    "short": "작업량, 작업 부하",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "작업량, 작업 부하"
+      }
+    ],
+    "forms": [
+      "workloads"
+    ],
+    "domain": "정도·양·크기",
+    "freq": 3,
+    "sources": [
+      "mock04",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 31,
+        "en": "Four teams want to move their Claude workloads to the Message Batches API to get the 50% discount.",
+        "surface": "workloads",
+        "pos": "명사",
+        "sense": "작업량, 작업 부하",
+        "ko": "네 팀이 50% 할인을 받으려고 Claude 작업을 Message Batches API로 옮기려 합니다."
+      },
+      {
+        "src": "mock04",
+        "q": 25,
+        "en": "What orchestration change best fits this workload?",
+        "surface": "workload",
+        "pos": "명사",
+        "sense": "작업량, 작업 부하",
+        "ko": "이 작업에 가장 잘 맞는 오케스트레이션 변경은 무엇입니까?"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 31,
+        "en": "Which workload should stay on the synchronous Messages API?",
+        "surface": "workload",
+        "pos": "명사",
+        "sense": "작업량, 작업 부하",
+        "ko": "다음 중 동기 Messages API에 남아야 하는 작업은 무엇입니까?"
+      }
+    ],
+    "note": "처리해야 할 **작업의 양과 성격**입니다. \"이 작업에 어떤 방식이 맞는가\"처럼 시스템이 감당할 일을 통틀어 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> What orchestration change best fits this **workload**?\r\n> 이 **작업**에 가장 잘 맞는 오케스트레이션 변경은 무엇일까?\r\n\r\n## 함께 쓰는 표현\r\n- **heavy workload** : 많은 작업량\r\n- **batch workload** : 일괄 처리 작업 — Message Batches API 같은 비실시간 처리에 맞음\r\n\r\n## 시험 포인트\r\n작업 성격을 먼저 봅니다. 단계가 예측 가능하면 고정 체인, 중간 발견에 따라 계획이 바뀌는 개방형 조사라면 **동적 분해**가 정답입니다."
+  },
+  {
+    "id": "worktree",
+    "word": "worktree",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈwɜːrktriː",
+    "meaning": "워크트리 — 하나의 저장소에서 브랜치별로 따로 작업 디렉터리를 두는 Git 기능",
+    "short": "워크트리, 별도 작업 폴더",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "워크트리 (Git의 별도 작업 디렉터리)"
+      }
+    ],
+    "forms": [
+      "worktrees"
+    ],
+    "domain": "시스템·도구·기술",
+    "freq": 1,
+    "sources": [
+      "selfcheck-d1-kor"
+    ],
+    "contexts": [
+      {
+        "src": "selfcheck-d1-kor",
+        "q": 39,
+        "en": "기준 세션을 두 번 포크하고, 갈래마다 별도 git worktree에서 작업하게 한다",
+        "surface": "worktree",
+        "pos": "명사",
+        "sense": "워크트리 (Git의 별도 작업 디렉터리)"
+      }
+    ]
+  },
+  {
+    "id": "worry",
+    "word": "worry",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "ipa": "ˈwɜːri",
+    "meaning": "① 걱정하다, 우려하다 ② 걱정, 근심",
+    "short": "걱정하다, 우려하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "걱정하다, 우려하다"
+      },
+      {
+        "pos": "형용사",
+        "ko": "걱정하는, 불안한"
+      },
+      {
+        "pos": "명사",
+        "ko": "걱정, 근심"
+      }
+    ],
+    "forms": [
+      "worries",
+      "worried",
+      "worrying"
+    ],
+    "synonyms": [
+      "concern",
+      "fret"
+    ],
+    "domain": "오류·실패·위험",
+    "freq": 2,
+    "sources": [
+      "lesson-d1",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 21,
+        "en": "A reviewer worries this design assumes the hooks run in a guaranteed order relative to each other.",
+        "surface": "worries",
+        "pos": "동사",
+        "sense": "걱정하다, 우려하다",
+        "ko": "리뷰어는 이 설계가 두 훅이 서로에 대해 정해진 순서로 실행된다고 가정한다고 우려합니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 16,
+        "en": "Other tools such as translate_text and summarize_document are also registered on the same request, and the team is worried Claude might call one of those first.",
+        "surface": "worried",
+        "pos": "형용사",
+        "sense": "걱정하는, 불안한",
+        "ko": "같은 요청에 translate_text와 summarize_document 같은 다른 도구도 등록돼 있고, 팀은 Claude가 그중 하나를 먼저 부를까 걱정합니다."
+      }
+    ]
+  },
+  {
+    "id": "worse",
+    "word": "worse",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "wɜːrs",
+    "meaning": "더 나쁜, 악화된",
+    "short": "더 나쁜, 악화된",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "더 나쁜, 악화된"
+      },
+      {
+        "pos": "부사",
+        "ko": "더 나쁘게"
+      }
+    ],
+    "synonyms": [
+      "poorer",
+      "inferior"
+    ],
+    "domain": "정확·품질·신뢰",
+    "freq": 2,
+    "sources": [
+      "lesson-d2",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 7,
+        "en": "A reviewer objects: \"Anthropic says to consolidate related operations into fewer tools, so splitting makes selection worse.\"",
+        "surface": "worse",
+        "pos": "형용사",
+        "sense": "더 나쁜, 악화된",
+        "ko": "리뷰어가 반대합니다: \"Anthropic은 관련 작업을 더 적은 도구로 합치라고 하니, 나누면 선택이 더 나빠진다.\""
+      },
+      {
+        "src": "lesson-d4",
+        "q": 9,
+        "en": "Two to four examples built around ambiguous requests like this one, each giving the chosen tool and the reason the other tool was the worse choice",
+        "surface": "worse",
+        "pos": "형용사",
+        "sense": "더 나쁜, 악화된",
+        "ko": "이번 같은 모호한 요청을 중심으로 만든 예시 2~4개. 각 예시는 선택한 도구와 다른 도구가 더 나쁜 선택인 이유를 함께 보여 준다."
+      }
+    ]
+  },
+  {
+    "id": "worst",
+    "word": "worst",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "형용사"
+    ],
+    "ipa": "wɜːrst",
+    "meaning": "최악의, 가장 나쁜",
+    "short": "최악의, 가장 나쁜",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "최악의, 가장 나쁜"
+      },
+      {
+        "pos": "명사",
+        "ko": "최악(의 상황)"
+      }
+    ],
+    "domain": "정확·품질·신뢰",
+    "freq": 1,
+    "sources": [
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d4",
+        "q": 28,
+        "en": "Which submission schedule keeps that promise in the worst case?",
+        "surface": "worst",
+        "pos": "형용사",
+        "sense": "최악의, 가장 나쁜",
+        "ko": "최악의 경우에도 이 약속을 지키는 제출 일정은 무엇입니까?"
+      }
+    ]
+  },
+  {
+    "id": "wrap",
+    "word": "wrap",
+    "tier": "core",
+    "pos": [
+      "동사"
+    ],
+    "ipa": "ræp",
+    "meaning": "감싸다, (앞뒤로) 둘러싸다",
+    "short": "감싸다, 둘러싸다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "감싸다, 둘러싸다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(다른 코드로) 감싸 처리하다"
+      }
+    ],
+    "forms": [
+      "wrapped",
+      "wrapping",
+      "wraps"
+    ],
+    "synonyms": [
+      "enclose",
+      "envelop"
+    ],
+    "domain": "구조·구성·부분",
+    "freq": 7,
+    "sources": [
+      "mock04",
+      "lesson-d1",
+      "lesson-d3",
+      "lesson-d4"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 53,
+        "en": "Production logs show that 8% of extraction responses fail the downstream JSON.parse() step because Claude wraps its output in markdown code fences or prepends a sentence like \"Here is the extracted data:\".",
+        "surface": "wraps",
+        "pos": "동사",
+        "sense": "감싸다, 둘러싸다",
+        "ko": "운영 로그를 보면 Claude가 출력을 마크다운 코드 펜스로 감싸거나 \"Here is the extracted data:\"(추출한 데이터는 다음과 같습니다) 같은 문장을 앞에 붙이기 때문에, 추출 응답의 8%가 다운스트림 JSON.parse() 단계에서 실패합니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 6,
+        "en": "Wrap each category's inclusion rules and severity examples in its own named XML tag, such as <security_criteria> and <correctness_criteria>, inside the review prompt.",
+        "surface": "Wrap",
+        "pos": "동사",
+        "sense": "감싸다, 둘러싸다",
+        "ko": "리뷰 프롬프트 안에서 각 범주의 포함 규칙과 심각도 예시를 `<security_criteria>`, `<correctness_criteria>` 같은 이름 붙은 XML 태그로 감싼다."
+      },
+      {
+        "src": "lesson-d3",
+        "q": 30,
+        "en": "A platform team wraps `claude` inside a GitHub Actions job that fires on every pull request to summarize the diff.",
+        "surface": "wraps",
+        "pos": "동사",
+        "sense": "(다른 코드로) 감싸 처리하다",
+        "ko": "플랫폼 팀이 모든 풀 리퀘스트마다 diff를 요약하는 GitHub Actions 작업 안에서 `claude` 를 실행합니다."
+      },
+      {
+        "src": "lesson-d4",
+        "q": 14,
+        "en": "Wrap the call in retry logic that re-sends the request whenever a record fails validation",
+        "surface": "Wrap",
+        "pos": "동사",
+        "sense": "(다른 코드로) 감싸 처리하다",
+        "ko": "레코드가 검증에 실패할 때마다 요청을 다시 보내는 재시도 로직으로 호출을 감싼다."
+      }
+    ],
+    "note": "무언가를 **바깥에서 감싸는** 것입니다. 텍스트에서는 앞뒤에 표시를 덧붙여 둘러싸는 것, 코드에서는 기존 기능을 다른 함수로 감싸는 것을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> ...because Claude **wraps** its output in markdown code fences or prepends a sentence like \"Here is the extracted data:\".\r\n> Claude가 출력을 마크다운 코드 펜스로 **감싸거나** \"Here is the extracted data:\" 같은 문장을 앞에 붙이기 때문이다.\r\n\r\n## 함께 쓰는 표현\r\n- **wrap A in B** : A를 B로 감싸다 (*wrap it in XML tags*)\r\n- **wrapper** (명) 감싸는 층, 래퍼\r\n- **wrap up** : 마무리하다\r\n\r\n## 시험 포인트\r\n출력이 코드 펜스로 감싸여 파싱이 깨지면 프롬프트를 다듬지 말고, 도구 **`input_schema` + `tool_choice` 강제**로 `tool_use` 블록에서 JSON 을 받는 것이 정답입니다."
+  },
+  {
+    "id": "wrapper",
+    "word": "wrapper",
+    "tier": "core",
+    "pos": [
+      "명사"
+    ],
+    "ipa": "ˈræpər",
+    "meaning": "래퍼 — 기존 기능을 감싸 동작을 덧붙이거나 제어하는 코드 층",
+    "short": "래퍼(감싸는 코드 층)",
+    "senses": [
+      {
+        "pos": "명사",
+        "ko": "래퍼 (기능을 감싸는 코드 층)"
+      },
+      {
+        "pos": "명사",
+        "ko": "포장지, 겉싸개"
+      }
+    ],
+    "forms": [
+      "wrappers"
+    ],
+    "domain": "시스템·도구·기술",
+    "freq": 1,
+    "sources": [
+      "mock04"
+    ],
+    "contexts": [
+      {
+        "src": "mock04",
+        "q": 1,
+        "en": "The engineering team wrote a wrapper loop that ends the conversation whenever the assistant's text matches a closing phrase like \"let me know if there's anything else.\"",
+        "surface": "wrapper",
+        "pos": "명사",
+        "sense": "래퍼 (기능을 감싸는 코드 층)",
+        "ko": "엔지니어링 팀은 어시스턴트의 텍스트가 \"let me know if there's anything else.\" 같은 마무리 문구와 일치하면 대화를 끝내는 래퍼 루프를 작성했습니다."
+      }
+    ],
+    "note": "기존 기능을 **바깥에서 감싸 동작을 덧붙이거나 제어하는 코드 층**입니다. 안쪽 기능은 그대로 두고 앞뒤 처리만 더할 때 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> The engineering team wrote a **wrapper** loop that ends the conversation whenever the assistant's text matches a closing phrase...\r\n> 엔지니어링 팀은 어시스턴트의 텍스트가 마무리 문구와 일치하면 대화를 끝내는 **래퍼** 루프를 작성했다...\r\n\r\n## 함께 쓰는 표현\r\n- **wrapper function / loop** : 래퍼 함수·루프\r\n- **API wrapper** : API 호출을 감싼 편의용 코드\r\n\r\n## 시험 포인트\r\n래퍼가 텍스트를 보고 루프를 끊으면 대기 중인 `tool_use` 가 실행되지 않습니다. 계속·종료는 **`stop_reason`** 으로만 판단하는 것이 정답입니다."
+  },
+  {
+    "id": "write",
+    "word": "write",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "동사"
+    ],
+    "ipa": "raɪt",
+    "meaning": "① (글·코드를) 쓰다, 작성하다 ② (파일에) 쓰다, 기록하다",
+    "short": "쓰다, 작성하다",
+    "senses": [
+      {
+        "pos": "동사",
+        "ko": "(글·코드를) 쓰다, 작성하다"
+      },
+      {
+        "pos": "동사",
+        "ko": "(파일에) 쓰다, 기록하다"
+      },
+      {
+        "pos": "형용사",
+        "ko": "문서로 된, 서면의"
+      }
+    ],
+    "forms": [
+      "writes",
+      "writing",
+      "wrote",
+      "written"
+    ],
+    "synonyms": [
+      "compose",
+      "author"
+    ],
+    "domain": "생성·추가",
+    "freq": 89,
+    "sources": [
+      "sample01",
+      "mock04",
+      "mock04-kor",
+      "lesson-d1",
+      "lesson-d2",
+      "selfcheck-d2-kor",
+      "lesson-d3",
+      "selfcheck-d3-kor",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d3",
+        "q": 12,
+        "en": "Your project CLAUDE.md holds two things: the one-line rule \"Use pnpm, not npm\" and a 300-line API style guide that matters only when someone writes endpoints.",
+        "surface": "writes",
+        "pos": "동사",
+        "sense": "(글·코드를) 쓰다, 작성하다",
+        "ko": "프로젝트 CLAUDE.md에 두 가지가 있습니다: 한 줄짜리 규칙 \"npm 말고 pnpm을 쓴다\"와, 엔드포인트를 작성할 때만 필요한 300줄짜리 API 스타일 가이드입니다."
+      },
+      {
+        "src": "sample01",
+        "q": 11,
+        "en": "A dev team wants Claude Code to automatically run `npm run lint:fix` every time it writes or edits a TypeScript file.",
+        "surface": "writes",
+        "pos": "동사",
+        "sense": "(파일에) 쓰다, 기록하다",
+        "ko": "개발팀은 Claude Code가 TypeScript 파일을 쓰거나 편집할 때마다 자동으로 `npm run lint:fix` 를 실행하길 원합니다."
+      },
+      {
+        "src": "lesson-d5",
+        "q": 11,
+        "en": "A polite customer whose request no written policy covers stays with the agent.",
+        "surface": "written",
+        "pos": "형용사",
+        "sense": "문서로 된, 서면의",
+        "ko": "서면 정책이 다루지 않는 요청을 한 정중한 고객은 에이전트에 남았습니다."
+      },
+      {
+        "src": "mock04",
+        "q": 1,
+        "en": "The engineering team wrote a wrapper loop that ends the conversation whenever the assistant's text matches a closing phrase like \"let me know if there's anything else.\"",
+        "surface": "wrote",
+        "pos": "동사",
+        "sense": "(글·코드를) 쓰다, 작성하다",
+        "ko": "엔지니어링 팀은 어시스턴트의 텍스트가 \"let me know if there's anything else.\" 같은 마무리 문구와 일치하면 대화를 끝내는 래퍼 루프를 작성했습니다."
+      }
+    ]
+  },
+  {
+    "id": "wrong",
+    "word": "wrong",
+    "tier": "core",
+    "basic": true,
+    "pos": [
+      "형용사",
+      "부사",
+      "명사"
+    ],
+    "ipa": "rɔːŋ",
+    "meaning": "① 틀린, 잘못된 ② 잘못되어 ③ 잘못, 부당한 행위",
+    "short": "틀린, 잘못된",
+    "senses": [
+      {
+        "pos": "형용사",
+        "ko": "틀린, 잘못된"
+      },
+      {
+        "pos": "부사",
+        "ko": "잘못되어, 틀리게"
+      },
+      {
+        "pos": "명사",
+        "ko": "잘못, 부당한 행위"
+      }
+    ],
+    "synonyms": [
+      "incorrect",
+      "mistaken"
+    ],
+    "domain": "오류·실패·위험",
+    "freq": 20,
+    "sources": [
+      "sample01",
+      "mock04",
+      "lesson-d1",
+      "lesson-d2",
+      "lesson-d4",
+      "lesson-d5"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d2",
+        "q": 1,
+        "en": "Your agent has two user-defined tools, and Claude keeps calling the wrong one.",
+        "surface": "wrong",
+        "pos": "형용사",
+        "sense": "틀린, 잘못된",
+        "ko": "에이전트에 사용자 정의 도구가 두 개 있는데, Claude가 계속 엉뚱한 쪽을 호출합니다."
+      },
+      {
+        "src": "lesson-d1",
+        "q": 9,
+        "en": "What went wrong?",
+        "surface": "wrong",
+        "pos": "부사",
+        "sense": "잘못되어, 틀리게",
+        "ko": "무엇이 잘못됐습니까?"
+      },
+      {
+        "src": "lesson-d4",
+        "q": 19,
+        "en": "Add additionalProperties: false to the schema so values can't end up in the wrong field",
+        "surface": "wrong",
+        "pos": "형용사",
+        "sense": "틀린, 잘못된",
+        "ko": "스키마에 `additionalProperties: false`를 추가해 값이 엉뚱한 필드에 들어가지 못하게 한다."
+      },
+      {
+        "src": "mock04",
+        "q": 10,
+        "en": "Logs show the agent proceeds with the most recently active match, and in several cases it has processed refunds against the wrong customer's order.",
+        "surface": "wrong",
+        "pos": "형용사",
+        "sense": "틀린, 잘못된",
+        "ko": "로그를 보면 에이전트는 가장 최근에 활동한 계정으로 진행하고, 여러 건에서 엉뚱한 고객의 주문에 환불을 처리했습니다."
+      }
+    ]
+  },
+  {
+    "id": "wrongly",
+    "word": "wrongly",
+    "tier": "core",
+    "pos": [
+      "부사"
+    ],
+    "ipa": "ˈrɔːŋli",
+    "meaning": "잘못하여, 부당하게",
+    "short": "잘못, 부당하게",
+    "senses": [
+      {
+        "pos": "부사",
+        "ko": "잘못하여, 부당하게"
+      }
+    ],
+    "synonyms": [
+      "incorrectly",
+      "unjustly"
+    ],
+    "domain": "오류·실패·위험",
+    "freq": 1,
+    "sources": [
+      "lesson-d1"
+    ],
+    "contexts": [
+      {
+        "src": "lesson-d1",
+        "q": 22,
+        "en": "In testing, some refunds are wrongly denied and the failures look random.",
+        "surface": "wrongly",
+        "pos": "부사",
+        "sense": "잘못하여, 부당하게",
+        "ko": "테스트에서 일부 환불이 잘못 거부되며, 실패가 무작위처럼 보입니다."
+      }
+    ]
+  }
+]

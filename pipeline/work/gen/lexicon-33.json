@@ -1,0 +1,465 @@
+[
+ {
+  "lemma": "publication", "skip": null, "word": "publication", "pos": ["명사"], "ipa": "ˌpʌblɪˈkeɪʃn",
+  "meaning": "① 발행, 게시 ② 출판물, 간행물", "short": "발행, 게시",
+  "senses": [ { "pos": "명사", "ko": "발행, 게시" }, { "pos": "명사", "ko": "출판물, 간행물" } ],
+  "forms": ["publications"], "synonyms": ["release"], "domain": "데이터·정보·문서", "basic": false,
+  "contexts": [
+   { "sid": "mock04#35.7", "surface": "publication", "pos": "명사", "sense": "발행, 게시" },
+   { "sid": "lesson-d5#39.5", "surface": "publication", "pos": "명사", "sense": "발행, 게시" }
+  ]
+ },
+ {
+  "lemma": "publish", "skip": null, "word": "publish", "pos": ["동사"], "ipa": "ˈpʌblɪʃ",
+  "meaning": "① (글·보고서를) 발행하다, 출판하다 ② (웹 등에) 게시·공개하다", "short": "발행하다, 게시하다",
+  "senses": [ { "pos": "동사", "ko": "(글·보고서를) 발행하다, 출판하다" }, { "pos": "동사", "ko": "(웹 등에) 게시하다, 공개하다" } ],
+  "forms": ["publishes", "published", "publishing"], "synonyms": ["release", "issue"], "domain": "데이터·정보·문서", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#39.2", "surface": "published", "pos": "동사", "sense": "(글·보고서를) 발행하다, 출판하다" },
+   { "sid": "lesson-d2#15.0", "surface": "publish", "pos": "동사", "sense": "(웹 등에) 게시하다, 공개하다" },
+   { "sid": "lesson-d5#40.1", "surface": "published", "pos": "동사", "sense": "(글·보고서를) 발행하다, 출판하다" }
+  ]
+ },
+ {
+  "lemma": "pull", "skip": null, "word": "pull", "pos": ["동사"], "ipa": "pʊl",
+  "meaning": "① (원격 저장소에서) 변경 사항을 내려받다 ② 끌어오다, 불러오다 ③ 당기다", "short": "끌어오다, 내려받다",
+  "senses": [ { "pos": "동사", "ko": "(저장소에서) 변경 사항을 내려받다" }, { "pos": "동사", "ko": "끌어오다, 불러오다" }, { "pos": "동사", "ko": "당기다" } ],
+  "forms": ["pulls", "pulled", "pulling"], "synonyms": ["fetch", "draw", "import"], "domain": "이동·전달", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#7.1", "surface": "pulling", "pos": "동사", "sense": "(저장소에서) 변경 사항을 내려받다" },
+   { "sid": "lesson-d2#17.1", "surface": "pulling", "pos": "동사", "sense": "끌어오다, 불러오다" },
+   { "sid": "lesson-d3#13.4", "surface": "pull", "pos": "동사", "sense": "끌어오다, 불러오다" },
+   { "sid": "lesson-d3#8.0", "surface": "pulled", "pos": "동사", "sense": "(저장소에서) 변경 사항을 내려받다" }
+  ]
+ },
+ {
+  "lemma": "punctuation", "skip": null, "word": "punctuation", "pos": ["명사"], "ipa": "ˌpʌŋktʃuˈeɪʃn",
+  "meaning": "구두점, 문장 부호", "short": "구두점, 문장 부호",
+  "senses": [ { "pos": "명사", "ko": "구두점, 문장 부호" } ],
+  "forms": [], "synonyms": [], "domain": "데이터·정보·문서", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#29.5", "surface": "punctuation", "pos": "명사", "sense": "구두점, 문장 부호" }
+  ]
+ },
+ {
+  "lemma": "purchase", "skip": null, "word": "purchase", "pos": ["명사", "동사"], "ipa": "ˈpɜːrtʃəs",
+  "meaning": "구매(하다)", "short": "구매, 구입하다",
+  "senses": [ { "pos": "명사", "ko": "구매, 구입" }, { "pos": "동사", "ko": "구매하다, 사다" } ],
+  "forms": ["purchases", "purchased", "purchasing"], "synonyms": ["buy", "acquire"], "domain": "비즈니스·업무", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#10.1", "surface": "purchase", "pos": "명사", "sense": "구매, 구입" },
+   { "sid": "lesson-d5#5.2", "surface": "purchase", "pos": "명사", "sense": "구매, 구입" },
+   { "sid": "vocab:purchase.0", "surface": "purchase", "pos": "명사", "sense": "구매, 구입" }
+  ]
+ },
+ {
+  "lemma": "purchase order", "skip": null, "word": "purchase order", "pos": ["명사구"], "ipa": "ˈpɜːrtʃəs ˈɔːrdər",
+  "meaning": "구매 주문서(PO) — 사는 쪽이 보내는 공식 주문 문서", "short": "구매 주문서",
+  "senses": [ { "pos": "명사구", "ko": "구매 주문서(PO)" } ],
+  "forms": ["purchase orders"], "synonyms": ["PO"], "domain": "비즈니스·업무", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#22.0", "surface": "purchase-order", "pos": "명사구", "sense": "구매 주문서(PO)" },
+   { "sid": "mock04#55.1", "surface": "purchase-order", "pos": "명사구", "sense": "구매 주문서(PO)" }
+  ]
+ },
+ {
+  "lemma": "pure", "skip": null, "word": "pure", "pos": ["형용사"], "ipa": "pjʊr",
+  "meaning": "① 순수한, 단순한 ② 깨끗한, 불순물 없는", "short": "순수한, 단순한",
+  "senses": [ { "pos": "형용사", "ko": "순수한, 단순한" }, { "pos": "형용사", "ko": "깨끗한, 불순물 없는" } ],
+  "forms": ["purely"], "synonyms": ["sheer", "mere"], "domain": "상태·성질", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#1.4", "surface": "pure", "pos": "형용사", "sense": "순수한, 단순한" }
+  ]
+ },
+ {
+  "lemma": "purpose", "skip": null, "word": "purpose", "pos": ["명사"], "ipa": "ˈpɜːrpəs",
+  "meaning": "① 목적, 용도 ② 의도, 의지", "short": "목적, 용도",
+  "senses": [ { "pos": "명사", "ko": "목적, 용도" }, { "pos": "명사", "ko": "의도, 의지" } ],
+  "forms": ["purposes"], "synonyms": ["aim", "goal", "intent"], "domain": "계획·목표·전략", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#29.1", "surface": "purpose", "pos": "명사", "sense": "목적, 용도" },
+   { "sid": "lesson-d2#25.4", "surface": "purpose", "pos": "명사", "sense": "목적, 용도" }
+  ]
+ },
+ {
+  "lemma": "push", "skip": null, "word": "push", "pos": ["동사"], "ipa": "pʊʃ",
+  "meaning": "① (저장소로) 푸시하다, 올리다 ② 밀어 보내다, 떠넘기다 ③ 밀다", "short": "푸시하다, 밀어 보내다",
+  "senses": [ { "pos": "동사", "ko": "(저장소로) 푸시하다, 올리다" }, { "pos": "동사", "ko": "밀어 보내다, 떠넘기다" }, { "pos": "동사", "ko": "밀다" } ],
+  "forms": ["pushes", "pushed", "pushing"], "synonyms": ["send", "upload"], "domain": "이동·전달", "basic": false,
+  "contexts": [
+   { "sid": "sample01#12.2", "surface": "push", "pos": "동사", "sense": "(저장소로) 푸시하다, 올리다" },
+   { "sid": "mock04#51.7", "surface": "pushed", "pos": "동사", "sense": "밀어 보내다, 떠넘기다" }
+  ]
+ },
+ {
+  "lemma": "put", "skip": null, "word": "put", "pos": ["동사"], "ipa": "pʊt",
+  "meaning": "① 넣다, 두다 ② (put through) (전화를) 연결해 주다 ③ (말·글로) 표현하다", "short": "넣다, 두다",
+  "senses": [ { "pos": "동사", "ko": "넣다, 두다" }, { "pos": "동사", "ko": "(전화를) 연결해 주다" }, { "pos": "동사", "ko": "(말·글로) 표현하다" } ],
+  "forms": ["puts", "putting"], "synonyms": ["place", "set"], "domain": "일반", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#15.3", "surface": "Put", "pos": "동사", "sense": "넣다, 두다" },
+   { "sid": "lesson-d3#17.3", "surface": "Put", "pos": "동사", "sense": "넣다, 두다" },
+   { "sid": "lesson-d4#21.5", "surface": "puts", "pos": "동사", "sense": "넣다, 두다" },
+   { "sid": "lesson-d5#8.2", "surface": "put", "pos": "동사", "sense": "(전화를) 연결해 주다" }
+  ]
+ },
+ {
+  "lemma": "qualifier", "skip": null, "word": "qualifier", "pos": ["명사"], "ipa": "ˈkwɑːlɪfaɪər",
+  "meaning": "한정어, 단서 — 범위·조건을 좁히는 말", "short": "한정어, 단서",
+  "senses": [ { "pos": "명사", "ko": "한정어, 단서" }, { "pos": "명사", "ko": "예선 통과자, 예선" } ],
+  "forms": ["qualifiers"], "synonyms": ["modifier", "caveat"], "domain": "논리·관계·연결어", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#2.3", "surface": "qualifier", "pos": "명사", "sense": "한정어, 단서" }
+  ]
+ },
+ {
+  "lemma": "quality", "skip": null, "word": "quality", "pos": ["명사"], "ipa": "ˈkwɑːləti",
+  "meaning": "품질, 질", "short": "품질, 질",
+  "senses": [ { "pos": "명사", "ko": "품질, 질" }, { "pos": "명사", "ko": "특성, 자질" } ],
+  "forms": ["qualities"], "synonyms": [], "domain": "정확·품질·신뢰", "basic": false,
+  "contexts": [
+   { "sid": "mock04#12.2", "surface": "quality", "pos": "명사", "sense": "품질, 질" },
+   { "sid": "sample01#6.1", "surface": "quality", "pos": "명사", "sense": "품질, 질" },
+   { "sid": "mock04#36.2", "surface": "quality", "pos": "명사", "sense": "품질, 질" },
+   { "sid": "mock04#52.1", "surface": "quality", "pos": "명사", "sense": "품질, 질" }
+  ]
+ },
+ {
+  "lemma": "quarterly", "skip": null, "word": "quarterly", "pos": ["형용사"], "ipa": "ˈkwɔːrtərli",
+  "meaning": "분기별의 (3개월마다)", "short": "분기별의",
+  "senses": [ { "pos": "형용사", "ko": "분기별의, 3개월마다의" }, { "pos": "부사", "ko": "분기마다" } ],
+  "forms": [], "synonyms": [], "domain": "시간·순서·빈도", "basic": false,
+  "contexts": [
+   { "sid": "vocab:quarterly.0", "surface": "quarterly", "pos": "형용사", "sense": "분기별의, 3개월마다의" }
+  ]
+ },
+ {
+  "lemma": "query", "skip": null, "word": "query", "pos": ["명사", "동사"], "ipa": "ˈkwɪri",
+  "meaning": "① 질의, 검색어(쿼리) ② (데이터를) 조회하다", "short": "질의, 조회하다",
+  "senses": [ { "pos": "명사", "ko": "질의, 검색어(쿼리)" }, { "pos": "동사", "ko": "(데이터를) 조회하다" } ],
+  "forms": ["queries", "queried", "querying"], "synonyms": ["request", "lookup"], "domain": "검색·조회", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#30.0", "surface": "query", "pos": "명사", "sense": "질의, 검색어(쿼리)" },
+   { "sid": "mock04#41.1", "surface": "query", "pos": "동사", "sense": "(데이터를) 조회하다" },
+   { "sid": "mock04#33.2", "surface": "queries", "pos": "명사", "sense": "질의, 검색어(쿼리)" },
+   { "sid": "lesson-d3#29.2", "surface": "query", "pos": "명사", "sense": "질의, 검색어(쿼리)" }
+  ]
+ },
+ {
+  "lemma": "question", "skip": null, "word": "question", "pos": ["명사", "동사"], "ipa": "ˈkwestʃən",
+  "meaning": "① 질문 ② 문제, 의문점 ③ 의문을 제기하다", "short": "질문, 의문",
+  "senses": [ { "pos": "명사", "ko": "질문" }, { "pos": "명사", "ko": "문제, 의문점" }, { "pos": "동사", "ko": "의문을 제기하다, 심문하다" } ],
+  "forms": ["questions", "questioned", "questioning"], "synonyms": ["inquiry", "doubt"], "domain": "요청·소통", "basic": true,
+  "contexts": [
+   { "sid": "mock04#24.1", "surface": "questions", "pos": "명사", "sense": "질문" },
+   { "sid": "sample01#14.2", "surface": "question", "pos": "명사", "sense": "질문" },
+   { "sid": "lesson-d3#23.4", "surface": "questions", "pos": "명사", "sense": "질문" },
+   { "sid": "lesson-d5#25.5", "surface": "question", "pos": "명사", "sense": "질문" }
+  ]
+ },
+ {
+  "lemma": "queue", "skip": null, "word": "queue", "pos": ["명사"], "ipa": "kjuː",
+  "meaning": "대기열, 큐 — 처리 차례를 기다리는 줄", "short": "대기열, 큐",
+  "senses": [ { "pos": "명사", "ko": "대기열, 큐" }, { "pos": "동사", "ko": "줄을 서다, 대기시키다" } ],
+  "forms": ["queues", "queued", "queuing"], "synonyms": [], "domain": "시스템·도구·기술", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#36.2", "surface": "queue", "pos": "명사", "sense": "대기열, 큐" },
+   { "sid": "lesson-d4#32.5", "surface": "queue", "pos": "명사", "sense": "대기열, 큐" },
+   { "sid": "mock04#50.6", "surface": "queue", "pos": "명사", "sense": "대기열, 큐" }
+  ]
+ },
+ {
+  "lemma": "quick", "skip": null, "word": "quick", "pos": ["형용사"], "ipa": "kwɪk",
+  "meaning": "① 빠른, 신속한 ② 잠깐의, 간단한", "short": "빠른, 간단한",
+  "senses": [ { "pos": "형용사", "ko": "빠른, 신속한" }, { "pos": "형용사", "ko": "잠깐의, 간단한" } ],
+  "forms": ["quickly"], "synonyms": ["fast", "rapid", "brief"], "domain": "시간·순서·빈도", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#30.2", "surface": "quick", "pos": "형용사", "sense": "잠깐의, 간단한" }
+  ]
+ },
+ {
+  "lemma": "quiet", "skip": null, "word": "quiet", "pos": ["형용사"], "ipa": "ˈkwaɪət",
+  "meaning": "① 조용한 ② 잠잠한, 알림이 없는", "short": "조용한, 잠잠한",
+  "senses": [ { "pos": "형용사", "ko": "조용한, 잠잠한" }, { "pos": "형용사", "ko": "한적한, 평온한" } ],
+  "forms": ["quietly"], "synonyms": ["silent", "calm"], "domain": "상태·성질", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#7.3", "surface": "quiet", "pos": "형용사", "sense": "조용한, 잠잠한" }
+  ]
+ },
+ {
+  "lemma": "quietly", "skip": null, "word": "quietly", "pos": ["부사"], "ipa": "ˈkwaɪətli",
+  "meaning": "조용히, 알리지 않고 (silently 와 비슷)", "short": "조용히, 알리지 않고",
+  "senses": [ { "pos": "부사", "ko": "조용히" }, { "pos": "부사", "ko": "알리지 않고, 몰래" } ],
+  "forms": [], "synonyms": ["silently"], "domain": "상태·성질", "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "quote", "skip": null, "word": "quote", "pos": ["동사"], "ipa": "kwoʊt",
+  "meaning": "① (금액·수치를) 말해 주다, 제시하다 ② 인용하다", "short": "인용하다, 제시하다",
+  "senses": [ { "pos": "동사", "ko": "(금액·수치를) 말해 주다, 제시하다" }, { "pos": "동사", "ko": "인용하다" }, { "pos": "명사", "ko": "인용문, 인용구" }, { "pos": "동사", "ko": "(문자열을) 따옴표로 묶다" } ],
+  "forms": ["quotes", "quoted", "quoting", "quotation", "quotations"], "synonyms": ["cite", "state"], "domain": "요청·소통", "basic": false,
+  "contexts": [
+   { "sid": "mock04#9.2", "surface": "quotes", "pos": "동사", "sense": "(금액·수치를) 말해 주다, 제시하다" },
+   { "sid": "lesson-d5#35.5", "surface": "quotations", "pos": "명사", "sense": "인용문, 인용구" },
+   { "sid": "lesson-d3#28.1", "surface": "quoted", "pos": "동사", "sense": "(문자열을) 따옴표로 묶다" },
+   { "sid": "mock04#9.7", "surface": "quoting", "pos": "동사", "sense": "(금액·수치를) 말해 주다, 제시하다" }
+  ]
+ },
+ {
+  "lemma": "rag", "skip": null, "word": "RAG", "pos": ["약어"], "ipa": "ræɡ",
+  "meaning": "검색 증강 생성 — 관련 문서를 검색해 프롬프트에 넣고 답하게 하는 방식", "short": "검색 증강 생성",
+  "senses": [ { "pos": "약어", "ko": "검색 증강 생성(RAG)" } ],
+  "forms": [], "synonyms": [], "domain": "시스템·도구·기술", "basic": false,
+  "contexts": [
+   { "sid": "sample01#16.0", "surface": "RAG", "pos": "약어", "sense": "검색 증강 생성(RAG)" }
+  ]
+ },
+ {
+  "lemma": "raise", "skip": null, "word": "raise", "pos": ["동사"], "ipa": "reɪz",
+  "meaning": "① (수치·한도를) 올리다 ② (문제를) 제기하다, (예외를) 발생시키다", "short": "올리다, 제기하다",
+  "senses": [ { "pos": "동사", "ko": "(수치·한도를) 올리다" }, { "pos": "동사", "ko": "(문제를) 제기하다, (예외를) 발생시키다" }, { "pos": "동사", "ko": "(아이를) 기르다, (자금을) 모으다" } ],
+  "forms": ["raises", "raised", "raising"], "synonyms": ["increase", "boost"], "domain": "변경·수정", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#14.3", "surface": "Raise", "pos": "동사", "sense": "(수치·한도를) 올리다" },
+   { "sid": "lesson-d4#1.2", "surface": "raise", "pos": "동사", "sense": "(문제를) 제기하다, (예외를) 발생시키다" },
+   { "sid": "mock04#25.5", "surface": "Raise", "pos": "동사", "sense": "(수치·한도를) 올리다" },
+   { "sid": "lesson-d5#22.4", "surface": "Raise", "pos": "동사", "sense": "(수치·한도를) 올리다" }
+  ]
+ },
+ {
+  "lemma": "ramp", "skip": null, "word": "ramp", "pos": ["동사", "명사"], "ipa": "ræmp",
+  "meaning": "(ramp up) 점차 늘리다 / 점진적 증가", "short": "점차 늘리다",
+  "senses": [ { "pos": "동사", "ko": "(ramp up) 점차 늘리다" }, { "pos": "명사", "ko": "경사로, 점진적 증가" } ],
+  "forms": ["ramps", "ramped", "ramping"], "synonyms": [], "domain": "정도·양·크기", "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "ran", "skip": null, "word": "run", "pos": ["동사"], "ipa": "rʌn",
+  "meaning": "① (프로그램·작업을) 실행하다 ② (조사·시험을) 수행하다 ③ (run out of) 바닥나다 ④ 달리다", "short": "실행하다, 수행하다",
+  "senses": [ { "pos": "동사", "ko": "(프로그램·작업을) 실행하다" }, { "pos": "동사", "ko": "(조사·시험을) 수행하다" }, { "pos": "동사", "ko": "(run out of) 바닥나다" }, { "pos": "동사", "ko": "달리다" } ],
+  "forms": ["runs", "ran", "running"], "synonyms": ["execute", "carry out"], "domain": "실행·처리", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#30.4", "surface": "ran", "pos": "동사", "sense": "(프로그램·작업을) 실행하다" },
+   { "sid": "lesson-d1#39.0", "surface": "ran", "pos": "동사", "sense": "(조사·시험을) 수행하다" },
+   { "sid": "lesson-d5#18.4", "surface": "ran", "pos": "동사", "sense": "(프로그램·작업을) 실행하다" },
+   { "sid": "lesson-d1#9.5", "surface": "ran", "pos": "동사", "sense": "(run out of) 바닥나다" }
+  ]
+ },
+ {
+  "lemma": "random", "skip": null, "word": "random", "pos": ["형용사"], "ipa": "ˈrændəm",
+  "meaning": "① 무작위의, 임의의 ② 불규칙한, 제멋대로인 ③ (at random) 아무렇게나", "short": "무작위의, 임의의",
+  "senses": [ { "pos": "형용사", "ko": "무작위의, 임의의" }, { "pos": "형용사", "ko": "불규칙한, 제멋대로인" }, { "pos": "명사", "ko": "(at random) 아무렇게나, 임의로" } ],
+  "forms": ["randomly", "randomness"], "synonyms": ["arbitrary", "haphazard"], "domain": "상태·성질", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#34.4", "surface": "random", "pos": "형용사", "sense": "무작위의, 임의의" },
+   { "sid": "lesson-d1#22.2", "surface": "random", "pos": "형용사", "sense": "불규칙한, 제멋대로인" },
+   { "sid": "lesson-d4#38.1", "surface": "random", "pos": "명사", "sense": "(at random) 아무렇게나, 임의로" },
+   { "sid": "lesson-d5#30.4", "surface": "random", "pos": "형용사", "sense": "불규칙한, 제멋대로인" }
+  ]
+ },
+ {
+  "lemma": "randomly", "skip": null, "word": "randomly", "pos": ["부사"], "ipa": "ˈrændəmli",
+  "meaning": "무작위로, 임의로", "short": "무작위로, 임의로",
+  "senses": [ { "pos": "부사", "ko": "무작위로, 임의로" } ],
+  "forms": [], "synonyms": ["arbitrarily"], "domain": "상태·성질", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#34.5", "surface": "randomly", "pos": "부사", "sense": "무작위로, 임의로" }
+  ]
+ },
+ {
+  "lemma": "range", "skip": null, "word": "range", "pos": ["명사"], "ipa": "reɪndʒ",
+  "meaning": "범위, 폭", "short": "범위, 폭",
+  "senses": [ { "pos": "명사", "ko": "범위, 폭" }, { "pos": "동사", "ko": "(범위가) ~에 걸치다" } ],
+  "forms": ["ranges", "ranged", "ranging"], "synonyms": ["scope", "span"], "domain": "정도·양·크기", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#2.4", "surface": "range", "pos": "명사", "sense": "범위, 폭" },
+   { "sid": "lesson-d5#39.7", "surface": "range", "pos": "명사", "sense": "범위, 폭" },
+   { "sid": "sample01#6.4", "surface": "range", "pos": "명사", "sense": "범위, 폭" },
+   { "sid": "lesson-d4#22.5", "surface": "range", "pos": "명사", "sense": "범위, 폭" }
+  ]
+ },
+ {
+  "lemma": "rank", "skip": null, "word": "rank", "pos": ["동사", "명사"], "ipa": "ræŋk",
+  "meaning": "순위를 매기다 / 순위", "short": "순위를 매기다",
+  "senses": [ { "pos": "동사", "ko": "순위를 매기다" }, { "pos": "명사", "ko": "순위, 등급" } ],
+  "forms": ["ranks", "ranked", "ranking"], "synonyms": ["order", "prioritize"], "domain": "비교·평가·판단", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#35.5", "surface": "rank", "pos": "동사", "sense": "순위를 매기다" },
+   { "sid": "lesson-d4#26.6", "surface": "ranks", "pos": "동사", "sense": "순위를 매기다" }
+  ]
+ },
+ {
+  "lemma": "rarely", "skip": null, "word": "rarely", "pos": ["부사"], "ipa": "ˈrerli",
+  "meaning": "거의 ~하지 않는, 드물게", "short": "거의 ~않는, 드물게",
+  "senses": [ { "pos": "부사", "ko": "드물게, 좀처럼 ~하지 않게" } ],
+  "forms": [], "synonyms": ["seldom", "hardly ever"], "domain": "시간·순서·빈도", "basic": false,
+  "contexts": [
+   { "sid": "mock04#41.3", "surface": "rarely", "pos": "부사", "sense": "드물게, 좀처럼 ~하지 않게" }
+  ]
+ },
+ {
+  "lemma": "rate", "skip": null, "word": "rate", "pos": ["동사", "명사"], "ipa": "reɪt",
+  "meaning": "① 평가하다, 점수를 매기다 ② 비율, 요금", "short": "비율, 평가하다",
+  "senses": [ { "pos": "동사", "ko": "평가하다, 점수를 매기다" }, { "pos": "명사", "ko": "비율, 요금" }, { "pos": "명사", "ko": "평가 점수, 등급 (rating)" } ],
+  "forms": ["rates", "rated", "rating", "ratings"], "synonyms": ["assess", "evaluate"], "domain": "비교·평가·판단", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#2.1", "surface": "rate", "pos": "명사", "sense": "비율, 요금" },
+   { "sid": "lesson-d5#11.0", "surface": "rates", "pos": "동사", "sense": "평가하다, 점수를 매기다" },
+   { "sid": "lesson-d5#34.1", "surface": "rate", "pos": "명사", "sense": "비율, 요금" },
+   { "sid": "mock04#50.4", "surface": "rates", "pos": "동사", "sense": "평가하다, 점수를 매기다" }
+  ]
+ },
+ {
+  "lemma": "rate limit", "skip": null, "word": "rate limit", "pos": ["명사구"], "ipa": "ˈreɪt ˌlɪmɪt",
+  "meaning": "요청 한도, 속도 제한 — 일정 시간 동안 보낼 수 있는 요청·토큰 수의 상한 (429 rate_limit_error)", "short": "요청 한도, 속도 제한",
+  "senses": [ { "pos": "명사구", "ko": "요청 한도, 속도 제한" } ],
+  "forms": ["rate limits"], "synonyms": ["throttle"], "domain": "제어·제한·관리", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#27.6", "surface": "rate limits", "pos": "명사구", "sense": "요청 한도, 속도 제한" }
+  ]
+ },
+ {
+  "lemma": "rather", "skip": null, "word": "rather", "pos": ["부사"], "ipa": "ˈræðər",
+  "meaning": "① (rather than) ~ 대신에, ~가 아니라 ② 꽤, 다소", "short": "~ 대신에, ~가 아니라",
+  "senses": [ { "pos": "부사", "ko": "(rather than) ~ 대신에, ~가 아니라" }, { "pos": "부사", "ko": "꽤, 다소" } ],
+  "forms": [], "synonyms": ["instead of", "quite"], "domain": "논리·관계·연결어", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#38.1", "surface": "rather than", "pos": "부사", "sense": "(rather than) ~ 대신에, ~가 아니라" },
+   { "sid": "mock04#3.1", "surface": "rather than", "pos": "부사", "sense": "(rather than) ~ 대신에, ~가 아니라" },
+   { "sid": "lesson-d2#1.5", "surface": "rather than", "pos": "부사", "sense": "(rather than) ~ 대신에, ~가 아니라" },
+   { "sid": "mock04#38.7", "surface": "rather than", "pos": "부사", "sense": "(rather than) ~ 대신에, ~가 아니라" }
+  ]
+ },
+ {
+  "lemma": "rationale", "skip": null, "word": "rationale", "pos": ["명사"], "ipa": "ˌræʃəˈnæl",
+  "meaning": "근거, 이유(에 대한 설명)", "short": "근거, 이유",
+  "senses": [ { "pos": "명사", "ko": "근거, 이유(에 대한 설명)" }, { "pos": "명사", "ko": "이론적 설명, 논리" } ],
+  "forms": ["rationales"], "synonyms": ["reasoning", "justification"], "domain": "원인·결과·영향", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#33.5", "surface": "rationale", "pos": "명사", "sense": "근거, 이유(에 대한 설명)" }
+  ]
+ },
+ {
+  "lemma": "raw", "skip": null, "word": "raw", "pos": ["형용사"], "ipa": "rɔː",
+  "meaning": "가공하지 않은, 원본 그대로의", "short": "가공 안 한, 원본 그대로의",
+  "senses": [ { "pos": "형용사", "ko": "가공하지 않은, 원본 그대로의" }, { "pos": "형용사", "ko": "날것의, 익히지 않은" } ],
+  "forms": [], "synonyms": ["unprocessed", "unrefined"], "domain": "데이터·정보·문서", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#34.0", "surface": "raw", "pos": "형용사", "sense": "가공하지 않은, 원본 그대로의" },
+   { "sid": "mock04#12.2", "surface": "raw", "pos": "형용사", "sense": "가공하지 않은, 원본 그대로의" },
+   { "sid": "lesson-d5#14.5", "surface": "raw", "pos": "형용사", "sense": "가공하지 않은, 원본 그대로의" },
+   { "sid": "sample01#15.4", "surface": "raw", "pos": "형용사", "sense": "가공하지 않은, 원본 그대로의" }
+  ]
+ },
+ {
+  "lemma": "re-describe", "skip": null, "word": "re-describe", "pos": ["동사"], "ipa": "ˌriːdɪˈskraɪb",
+  "meaning": "(처음부터) 다시 설명하다", "short": "다시 설명하다",
+  "senses": [ { "pos": "동사", "ko": "(처음부터) 다시 설명하다" } ],
+  "forms": ["re-describes", "re-described", "re-describing"], "synonyms": ["restate"], "domain": "요청·소통", "basic": false,
+  "contexts": [
+   { "sid": "mock04#20.4", "surface": "re-describe", "pos": "동사", "sense": "(처음부터) 다시 설명하다" }
+  ]
+ },
+ {
+  "lemma": "re-enable", "skip": null, "word": "re-enable", "pos": ["동사"], "ipa": "ˌriːɪˈneɪbl",
+  "meaning": "(꺼 두었던 것을) 다시 켜다, 재활성화하다", "short": "다시 켜다, 재활성화하다",
+  "senses": [ { "pos": "동사", "ko": "(꺼 두었던 것을) 다시 켜다, 재활성화하다" } ],
+  "forms": ["re-enables", "re-enabled", "re-enabling"], "synonyms": ["reactivate", "turn back on"], "domain": "제어·제한·관리", "basic": false,
+  "contexts": [
+   { "sid": "mock04#50.5", "surface": "re-enabling", "pos": "동사", "sense": "(꺼 두었던 것을) 다시 켜다, 재활성화하다" }
+  ]
+ },
+ {
+  "lemma": "re-gather", "skip": null, "word": "re-gather", "pos": ["동사"], "ipa": "ˌriːˈɡæðər",
+  "meaning": "다시 모으다, 다시 수집하다", "short": "다시 모으다, 다시 수집하다",
+  "senses": [ { "pos": "동사", "ko": "다시 모으다, 다시 수집하다" } ],
+  "forms": ["re-gathers", "re-gathered", "re-gathering"], "synonyms": ["recollect"], "domain": "검색·조회", "basic": false,
+  "contexts": [
+   { "sid": "mock04#22.7", "surface": "re-gather", "pos": "동사", "sense": "다시 모으다, 다시 수집하다" }
+  ]
+ },
+ {
+  "lemma": "re-read", "skip": null, "word": "re-read", "pos": ["동사"], "ipa": "ˌriːˈriːd",
+  "meaning": "다시 읽다", "short": "다시 읽다",
+  "senses": [ { "pos": "동사", "ko": "다시 읽다" } ],
+  "forms": ["rereads", "re-reads", "re-reading"], "synonyms": ["reread"], "domain": "확인·검증", "basic": false,
+  "contexts": [
+   { "sid": "mock04#2.1", "surface": "re-read", "pos": "동사", "sense": "다시 읽다" },
+   { "sid": "lesson-d1#26.5", "surface": "rereads", "pos": "동사", "sense": "다시 읽다" },
+   { "sid": "lesson-d3#1.6", "surface": "re-reads", "pos": "동사", "sense": "다시 읽다" },
+   { "sid": "lesson-d5#22.5", "surface": "re-read", "pos": "동사", "sense": "다시 읽다" }
+  ]
+ },
+ {
+  "lemma": "re-run", "skip": null, "word": "re-run", "pos": ["동사", "명사"], "ipa": "ˌriːˈrʌn",
+  "meaning": "다시 실행하다, 재실행", "short": "다시 실행하다",
+  "senses": [ { "pos": "동사", "ko": "다시 실행하다" }, { "pos": "명사", "ko": "재실행" } ],
+  "forms": ["re-runs", "re-running", "rerun"], "synonyms": ["repeat", "redo"], "domain": "실행·처리", "basic": false,
+  "contexts": [
+   { "sid": "mock04#26.1", "surface": "re-running", "pos": "동사", "sense": "다시 실행하다" },
+   { "sid": "lesson-d4#24.6", "surface": "rerun", "pos": "동사", "sense": "다시 실행하다" },
+   { "sid": "lesson-d5#34.3", "surface": "Re-run", "pos": "동사", "sense": "다시 실행하다" },
+   { "sid": "mock04#38.2", "surface": "re-runs", "pos": "동사", "sense": "다시 실행하다" }
+  ]
+ },
+ {
+  "lemma": "reach", "skip": null, "word": "reach", "pos": ["동사"], "ipa": "riːtʃ",
+  "meaning": "① (시스템·대상에) 닿다, 접근하다 ② (목표·결론에) 이르다 ③ (reach for) 손을 뻗다, 찾아 쓰다", "short": "닿다, 이르다",
+  "senses": [ { "pos": "동사", "ko": "(시스템·대상에) 닿다, 접근하다" }, { "pos": "동사", "ko": "(목표·결론에) 이르다" }, { "pos": "동사", "ko": "(reach for) 집어 들다, 찾아 쓰다" } ],
+  "forms": ["reaches", "reached", "reaching"], "synonyms": ["access", "arrive at"], "domain": "이동·전달", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#2.0", "surface": "reach", "pos": "동사", "sense": "(시스템·대상에) 닿다, 접근하다" },
+   { "sid": "mock04#1.1", "surface": "reaches", "pos": "동사", "sense": "(시스템·대상에) 닿다, 접근하다" },
+   { "sid": "mock04#38.2", "surface": "reaches", "pos": "동사", "sense": "(목표·결론에) 이르다" },
+   { "sid": "lesson-d2#18.2", "surface": "reaching", "pos": "동사", "sense": "(reach for) 집어 들다, 찾아 쓰다" }
+  ]
+ },
+ {
+  "lemma": "reaction", "skip": null, "word": "reaction", "pos": ["명사"], "ipa": "riˈækʃn",
+  "meaning": "① 반응 ② (화학) 반응", "short": "반응",
+  "senses": [ { "pos": "명사", "ko": "반응" }, { "pos": "명사", "ko": "(화학적) 반응" } ],
+  "forms": ["reactions"], "synonyms": ["response"], "domain": "원인·결과·영향", "basic": false,
+  "contexts": [
+   { "sid": "mock04#50.7", "surface": "reactions", "pos": "명사", "sense": "반응" }
+  ]
+ },
+ {
+  "lemma": "read", "skip": null, "word": "read", "pos": ["동사"], "ipa": "riːd",
+  "meaning": "① 읽다 ② (파일·데이터를) 읽어 들이다 ③ (~라고) 쓰여 있다, 해석되다", "short": "읽다, 읽어 들이다",
+  "senses": [ { "pos": "동사", "ko": "읽다" }, { "pos": "동사", "ko": "(파일·데이터를) 읽어 들이다" }, { "pos": "동사", "ko": "(~라고) 쓰여 있다, 해석되다" } ],
+  "forms": ["reads", "reading"], "synonyms": [], "domain": "검색·조회", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#12.0", "surface": "read", "pos": "동사", "sense": "읽다" },
+   { "sid": "lesson-d5#28.0", "surface": "reads", "pos": "동사", "sense": "읽다" },
+   { "sid": "lesson-d4#14.0", "surface": "reads", "pos": "동사", "sense": "(파일·데이터를) 읽어 들이다" },
+   { "sid": "lesson-d3#19.0", "surface": "reading", "pos": "동사", "sense": "(파일·데이터를) 읽어 들이다" }
+  ]
+ },
+ {
+  "lemma": "readable", "skip": null, "word": "readable", "pos": ["형용사"], "ipa": "ˈriːdəbl",
+  "meaning": "① 읽기 쉬운, 알아보기 쉬운 ② (기계가) 읽을 수 있는", "short": "읽기 쉬운",
+  "senses": [ { "pos": "형용사", "ko": "읽기 쉬운, 알아보기 쉬운" }, { "pos": "형용사", "ko": "(기계가) 읽을 수 있는" } ],
+  "forms": ["readability"], "synonyms": ["legible"], "domain": "정확·품질·신뢰", "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#29.4", "surface": "readable", "pos": "형용사", "sense": "읽기 쉬운, 알아보기 쉬운" }
+  ]
+ },
+ {
+  "lemma": "reader", "skip": null, "word": "reader", "pos": ["명사"], "ipa": "ˈriːdər",
+  "meaning": "① 독자 ② 판독기, 리더", "short": "독자",
+  "senses": [ { "pos": "명사", "ko": "독자" }, { "pos": "명사", "ko": "판독기, 리더" } ],
+  "forms": ["readers"], "synonyms": [], "domain": "사람·조직·역할", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#41.7", "surface": "readers", "pos": "명사", "sense": "독자" }
+  ]
+ },
+ {
+  "lemma": "ready", "skip": null, "word": "ready", "pos": ["형용사"], "ipa": "ˈredi",
+  "meaning": "① 준비된, 완료된 ② ~할 준비가 된", "short": "준비된, 완료된",
+  "senses": [ { "pos": "형용사", "ko": "준비된, 완료된" }, { "pos": "형용사", "ko": "~할 준비가 된, 기꺼이 하는" } ],
+  "forms": ["readily", "readiness"], "synonyms": ["prepared", "available"], "domain": "상태·성질", "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#32.3", "surface": "ready", "pos": "형용사", "sense": "준비된, 완료된" }
+  ]
+ }
+]

@@ -1,0 +1,1434 @@
+[
+ {
+  "lemma": "extended thinking",
+  "kind": "vocab-core",
+  "surfaces": [
+   "extended thinking"
+  ],
+  "freq": 16,
+  "vocab": {
+   "id": "extended-thinking",
+   "word": "extended thinking",
+   "pos": "명사구",
+   "ipa": "ɪkˌstendɪd ˈθɪŋkɪŋ",
+   "meaning": "확장 사고 — 모델이 답하기 전에 단계별 추론(thinking 블록)을 먼저 만들게 하는 기능 (budget_tokens 로 한도 지정)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#36.0",
+    "en": "An engineer configures the generation session with a high extended thinking effort and instructs the model to reflect deeply on flaws before submitting its code."
+   },
+   {
+    "sid": "mock04#2.6",
+    "en": "Enable extended thinking on the escalation turn so the model reasons longer about the case before handing it off."
+   },
+   {
+    "sid": "mock04-kor#2.0",
+    "en": "에스컬레이션 턴에 확장 사고(extended thinking)를 켜서, 모델이 건을 넘기기 전에 더 오래 추론하게 한다."
+   },
+   {
+    "sid": "selfcheck-d4-kor#14.1",
+    "en": "수동 extended thinking(`thinking: {type: \"enabled\"}`)을 켜서 다시 보낸다"
+   },
+   {
+    "sid": "lesson-d4#36.2",
+    "en": "Why is extended thinking insufficient as a substitute for an independent review instance here?"
+   },
+   {
+    "sid": "mock04#21.6",
+    "en": "Enable extended thinking so Claude reasons harder over the full accumulated output, including every passing-test line."
+   },
+   {
+    "sid": "mock04-kor#21.2",
+    "en": "extended thinking을 켜서, 통과한 테스트 줄까지 포함한 누적 출력 전체를 Claude가 더 깊이 추론하게 한다."
+   },
+   {
+    "sid": "lesson-d4#35.3",
+    "en": "Raise the extended thinking budget for the review step, so the model reasons longer over the code it just wrote"
+   }
+  ]
+ },
+ {
+  "lemma": "external",
+  "kind": "new",
+  "surfaces": [
+   "external"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#9.3",
+    "en": "The subagents had restricted access to external search tools, so their findings on the areas they were assigned came back thin"
+   }
+  ]
+ },
+ {
+  "lemma": "extra",
+  "kind": "new",
+  "surfaces": [
+   "extra"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d5#39.1",
+    "en": "For example, one reports regional unemployment at 5.1% and another at 6.3%, and it spends extra research rounds trying to reconcile them."
+   },
+   {
+    "sid": "lesson-d1#16.3",
+    "en": "Make the script longer, with an extra branch for each kind of search result the subagent might hit"
+   },
+   {
+    "sid": "lesson-d4#36.3",
+    "en": "Reflection raises the reasoning budget but applies the same depth of checking to each issue, so extra effort adds little scrutiny"
+   },
+   {
+    "sid": "mock04#10.5",
+    "en": "Ask for an extra identifier (order number, email, or ZIP) to disambiguate before taking any account action."
+   },
+   {
+    "sid": "lesson-d1#30.6",
+    "en": "`additionalContext`, because it provides a way to add extra information that overrides the original tool output."
+   }
+  ]
+ },
+ {
+  "lemma": "extract",
+  "kind": "vocab-core",
+  "surfaces": [
+   "extract",
+   "extraction",
+   "extracts",
+   "extracting",
+   "extracted",
+   "extractions",
+   "extractor",
+   "extractors"
+  ],
+  "freq": 84,
+  "vocab": {
+   "id": "extract",
+   "word": "extract",
+   "pos": "동사",
+   "ipa": "ɪkˈstrækt",
+   "meaning": "(필요한 부분을) 뽑아내다, 추출하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#33.0",
+    "en": "An agent's system prompt says: \"First extract the fields, then validate them, then format the report.\""
+   },
+   {
+    "sid": "lesson-d2#4.0",
+    "en": "After a web-extraction tool was added, `analyze_content` kept its old description: \"Summarizes any content: emails, notes, web pages.\""
+   },
+   {
+    "sid": "lesson-d4#13.1",
+    "en": "The extraction pipeline's examples all show crisp doses such as \"400 mg\", and the output keeps showing precise amounts the patient never gave."
+   },
+   {
+    "sid": "lesson-d5#30.0",
+    "en": "An architect asks Claude to output a confidence score from 0 to 1 for each extracted field in a structured JSON response."
+   },
+   {
+    "sid": "mock04#31.1",
+    "en": "The document-analysis subagent must call classify_document before running any field extraction, because the extraction schema depends on the detected type."
+   },
+   {
+    "sid": "sample01#15.0",
+    "en": "A data pipeline needs to extract structured invoice data (vendor, line items, totals) from free-text invoice PDFs."
+   },
+   {
+    "sid": "lesson-d3#21.2",
+    "en": "Use accept-edits mode so Claude extracts the first service right away, with the remaining boundaries adjusted as problems appear in the code"
+   },
+   {
+    "sid": "mock04-kor#53.0",
+    "en": "Claude가 출력을 마크다운 코드 펜스로 감싸거나 \"Here is the extracted data:\"(추출한 데이터는 다음과 같습니다) 같은 문장을 앞에 붙이기 때문입니다. 프롬프트를 손봐서 실패를 줄이긴 했지만 없애지는 못했습니다. 가장 신뢰할 수 있는 해결책은 무엇일까요?"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:extract.0",
+    "en": "Extract transactional facts (amounts, dates, order numbers) into a persistent \"case facts\" block included in each prompt.",
+    "ko": "거래 사실(금액·날짜·주문 번호)을 뽑아내 매 프롬프트에 들어가는 영속 \"case facts\" 블록에 담는다."
+   }
+  ]
+ },
+ {
+  "lemma": "extremely",
+  "kind": "new",
+  "surfaces": [
+   "extremely"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "selfcheck-d4-kor#2.1",
+    "en": "지시가 너무 약했다 → \"extremely conservative\"로 강화한다"
+   }
+  ]
+ },
+ {
+  "lemma": "eye",
+  "kind": "new",
+  "surfaces": [
+   "eye"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#29.4",
+    "en": "doc 2026 report final v2, since spaces between each descriptive segment keep the identifier readable when scanning a long results file by eye"
+   }
+  ]
+ },
+ {
+  "lemma": "fabricate",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fabricated"
+  ],
+  "freq": 1,
+  "vocab": {
+   "id": "fabricate",
+   "word": "fabricate",
+   "pos": "동사",
+   "ipa": "ˈfæbrɪkeɪt",
+   "meaning": "(없는 것을) 지어내다, 날조하다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#55.2",
+    "en": "Downstream systems then treat the fabricated values as real."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fabricate.0",
+    "en": "Downstream systems then treat the fabricated values as real.",
+    "ko": "다운스트림 시스템은 이렇게 꾸며 낸 값을 실제 값으로 취급한다."
+   }
+  ]
+ },
+ {
+  "lemma": "face",
+  "kind": "new",
+  "surfaces": [
+   "facing"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d3#26.3",
+    "en": "Report the test_orderTotal failure first because it is the user-facing function, then report the other two once it passes"
+   }
+  ]
+ },
+ {
+  "lemma": "fact",
+  "kind": "new",
+  "surfaces": [
+   "fact",
+   "facts"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "mock04#35.2",
+    "en": "The synthesis subagent silently picks $6.8B and presents it as the single authoritative fact."
+   },
+   {
+    "sid": "lesson-d5#2.6",
+    "en": "The model hallucinated a vaguer version of the facts because the context window was nearly full"
+   },
+   {
+    "sid": "lesson-d5#2.7",
+    "en": "The summaries were written by a cheaper model; with the main model writing them, the facts would have survived"
+   },
+   {
+    "sid": "lesson-d5#4.4",
+    "en": "Pull the transactional facts into a structured case-facts block that is sent with every prompt and kept out of the history being summarized"
+   }
+  ]
+ },
+ {
+  "lemma": "factor",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "factor",
+   "word": "factor",
+   "pos": "명사",
+   "ipa": "ˈfæktər",
+   "meaning": "요인, 요소"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:factor.0",
+    "en": "Provide extremely detailed descriptions. This is by far the most important factor in tool performance.",
+    "ko": "도구 설명을 매우 자세히 써라. 이것이 도구 성능에서 단연 가장 중요한 요인이다."
+   }
+  ]
+ },
+ {
+  "lemma": "fail",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fail",
+   "fails",
+   "failing",
+   "failed"
+  ],
+  "freq": 37,
+  "vocab": {
+   "id": "fail",
+   "word": "fail",
+   "pos": "동사",
+   "ipa": "feɪl",
+   "meaning": "실패하다, (검사를) 통과하지 못하다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#33.1",
+    "en": "The team needs to log the validated fields and stop the run before formatting if validation fails."
+   },
+   {
+    "sid": "lesson-d2#11.2",
+    "en": "The server returns `isError: true` with generic text \"Operation failed.\""
+   },
+   {
+    "sid": "lesson-d3#26.1",
+    "en": "The latest run fails all three tests: test_applyDiscount, test_addTax and test_orderTotal."
+   },
+   {
+    "sid": "lesson-d4#2.2",
+    "en": "What is the most likely explanation for why this change failed to improve precision?"
+   },
+   {
+    "sid": "lesson-d5#18.0",
+    "en": "A team is designing the error payload that subagents return to a coordinator when a tool call fails."
+   },
+   {
+    "sid": "mock04#21.2",
+    "en": "Over time Claude starts overlooking the failing-test details and the constraints stated at the start of the session."
+   },
+   {
+    "sid": "sample01#10.1",
+    "en": "In production, subagents consistently fail because they claim they 'have no context' about the task."
+   },
+   {
+    "sid": "lesson-d2#29.1",
+    "en": "Claude issues an Edit call with old_string set to exactly that log statement and the call fails."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fail.0",
+    "en": "In production, subagents consistently fail because they claim they 'have no context' about the task.",
+    "ko": "운영에서 서브에이전트들이 작업에 대해 \"맥락이 없다\"고 하며 계속 실패한다."
+   },
+   {
+    "vid": "vocab:fail.1",
+    "en": "Raise the agent's refund authority limit above $640 in the tool configuration so that the call no longer fails.",
+    "ko": "도구 설정에서 에이전트의 환불 권한 한도를 $640보다 높게 올려, 호출이 더 이상 실패하지 않게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "fail-closed",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "fail-closed",
+   "word": "fail-closed",
+   "pos": "형용사",
+   "ipa": "ˌfeɪl ˈkloʊzd",
+   "meaning": "실패 시 차단(하는) — 오류·불확실할 때 기본으로 막는 방식"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "failing-test",
+  "kind": "new",
+  "surfaces": [
+   "failing-test"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "mock04#21.2",
+    "en": "Over time Claude starts overlooking the failing-test details and the constraints stated at the start of the session."
+   },
+   {
+    "sid": "mock04#21.4",
+    "en": "Trim each run's output to the failing-test lines before it accumulates, and keep the key constraints in a summary at the top of the context."
+   }
+  ]
+ },
+ {
+  "lemma": "failure",
+  "kind": "vocab-core",
+  "surfaces": [
+   "failure",
+   "failures"
+  ],
+  "freq": 38,
+  "vocab": {
+   "id": "failure",
+   "word": "failure",
+   "pos": "명사",
+   "ipa": "ˈfeɪljər",
+   "meaning": "실패, 장애 — 작업·호출이 제대로 되지 않은 것"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#22.2",
+    "en": "In testing, some refunds are wrongly denied and the failures look random."
+   },
+   {
+    "sid": "lesson-d2#11.3",
+    "en": "Under a structured error design, how should this failure be categorized and handled differently from a network timeout on the same tool?"
+   },
+   {
+    "sid": "lesson-d3#26.2",
+    "en": "How should you report these failures to Claude?"
+   },
+   {
+    "sid": "lesson-d4#14.2",
+    "en": "Which change removes this whole class of failure?"
+   },
+   {
+    "sid": "lesson-d5#19.1",
+    "en": "Instead of surfacing the failure, the subagent returns an empty findings list with status 'success' so the pipeline continues cleanly."
+   },
+   {
+    "sid": "mock04#53.2",
+    "en": "Prompt tweaks reduced but did not eliminate the failures."
+   },
+   {
+    "sid": "lesson-d1#24.4",
+    "en": "What change to the PreToolUse hook would best prevent this category of failure?"
+   },
+   {
+    "sid": "lesson-d2#8.0",
+    "en": "Your refund tool's handler catches every failure and returns `isError: true` with the text \"Operation failed\"."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:failure.0",
+    "en": "A structured error with errorCategory (e.g. transient) and isRetryable, so an access failure differs from an empty result.",
+    "ko": "`errorCategory`(예: `transient`)와 `isRetryable` 을 담은 구조화된 오류를 반환해, 접근 실패가 빈 결과와 구분되게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "fall",
+  "kind": "new",
+  "surfaces": [
+   "falls"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d4#3.4",
+    "en": "Skip it, since caching is an internal detail rather than part of the function's contract, so the docstring's mention of it falls outside the criterion."
+   },
+   {
+    "sid": "mock04#56.6",
+    "en": "Brainstorm and add every conceivable document type to the enum so that no future document falls outside it."
+   }
+  ]
+ },
+ {
+  "lemma": "fall below",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "fall-below",
+   "word": "fall below",
+   "pos": "동사구",
+   "ipa": "fɔːl bɪˈloʊ",
+   "meaning": "(기준) 아래로 떨어지다"
+  },
+  "sentences": [],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fall-below.0",
+    "en": "Have the agent self-report a confidence score (1-10) and route to humans when confidence falls below a threshold.",
+    "ko": "에이전트가 신뢰도 점수(1~10)를 스스로 보고하게 하고, 점수가 임계값 아래로 떨어지면 사람에게 넘긴다."
+   }
+  ]
+ },
+ {
+  "lemma": "fallback",
+  "kind": "vocab-core",
+  "surfaces": [
+   "falls back",
+   "fall back"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "fallback",
+   "word": "fallback",
+   "pos": "명사",
+   "ipa": "ˈfɔːlbæk",
+   "meaning": "대비책 — 원래 방법이 실패했을 때 쓰는 대체 수단"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#38.7",
+    "en": "It falls back to the most recent session in the CI working directory, the way --continue does"
+   },
+   {
+    "sid": "lesson-d2#16.5",
+    "en": "Leave out the tools field on each subagent so it falls back to a safe default set"
+   },
+   {
+    "sid": "mock04#24.5",
+    "en": "The coordinator's model is too small to plan multi-agent delegation, so it falls back to answering directly"
+   },
+   {
+    "sid": "mock04#42.8",
+    "en": "Force tool_choice to the MCP search tool on every turn so the agent can no longer fall back on other built-in tools."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fallback.0",
+    "en": "Switch both to batch processing with a timeout fallback to real-time if batches take too long.",
+    "ko": "둘 다 배치로 바꾸되, 너무 오래 걸리면 실시간 호출로 넘어가는 타임아웃 폴백을 둔다."
+   }
+  ]
+ },
+ {
+  "lemma": "false",
+  "kind": "new",
+  "surfaces": [
+   "false"
+  ],
+  "freq": 10,
+  "sentences": [
+   {
+    "sid": "lesson-d5#40.2",
+    "en": "What structural change to subagent output would prevent this kind of false contradiction going forward?"
+   },
+   {
+    "sid": "lesson-d2#9.2",
+    "en": "errorCategory \"business\", isRetryable false, plus a customer-friendly explanation of the 10-attendee limit that the agent can pass on to the user"
+   },
+   {
+    "sid": "lesson-d4#19.6",
+    "en": "Add additionalProperties: false to the schema so values can't end up in the wrong field"
+   },
+   {
+    "sid": "mock04#54.4",
+    "en": "The schema is misconfigured; adding \"additionalProperties\": false will force the line-item amounts to reconcile with the stated invoice total."
+   },
+   {
+    "sid": "selfcheck-d2-kor#10.2",
+    "en": "0건을 정상 결과(isError false, 빈 목록과 사용한 조건)로 돌려주고, 접속 실패만 오류로 보고한다"
+   },
+   {
+    "sid": "selfcheck-d5-kor#30.1",
+    "en": "null은 false와 같은 뜻으로 처리한다"
+   },
+   {
+    "sid": "lesson-d2#9.5",
+    "en": "errorCategory \"permission\", isRetryable false, so the agent asks for a credential with broader access"
+   },
+   {
+    "sid": "mock04#8.7",
+    "en": "Return errorCategory \"business\" with isRetryable false so the agent stops retrying and escalates through escalate_to_human."
+   }
+  ]
+ },
+ {
+  "lemma": "false positive",
+  "kind": "vocab-core",
+  "surfaces": [
+   "false positive",
+   "false positives"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "false-positive",
+   "word": "false positive",
+   "pos": "명사구",
+   "ipa": "ˌfɔːls ˈpɑːzətɪv",
+   "meaning": "오탐 — 문제가 아닌데 문제라고 잘못 판단한 것"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#11.1",
+    "en": "You want fewer false positives, and you still want real problems caught in code the bot has never seen."
+   },
+   {
+    "sid": "lesson-d4#2.1",
+    "en": "After a week of testing, the false positive rate is essentially unchanged."
+   },
+   {
+    "sid": "lesson-d4#2.5",
+    "en": "General confidence language gives the model no concrete rule for what to report, so it still applies the same underlying judgment that produced the false positives before the change."
+   },
+   {
+    "sid": "lesson-d4#4.6",
+    "en": "Turn off naming checks completely, because naming always generates false positives"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:false-positive.0",
+    "en": "Your automated code review averages 15 findings per PR, with a 40% false positive rate.",
+    "ko": "자동 코드 리뷰가 PR당 평균 15개의 지적을 내고, 오탐률은 40%다."
+   }
+  ]
+ },
+ {
+  "lemma": "faq",
+  "kind": "vocab-core",
+  "surfaces": [
+   "faq"
+  ],
+  "freq": 8,
+  "vocab": {
+   "id": "faq",
+   "word": "FAQ",
+   "pos": "약어",
+   "ipa": "ˌef.eɪˈkjuː",
+   "meaning": "자주 묻는 질문 (Frequently Asked Questions)"
+  },
+  "sentences": [
+   {
+    "sid": "sample01#7.3",
+    "en": "FAQ → Haiku, Contract analysis → Opus, Classification pipeline → Haiku"
+   },
+   {
+    "sid": "sample01-kor#7.0",
+    "en": "한 회사가 세 가지 Claude 연동을 구축하고 있습니다: (1) 마케팅 웹사이트용 단순 FAQ 챗봇, (2) 미묘한 법적 리스크를 찾아내야 하는 복잡한 다단계 계약 분석 에이전트, (3) 하루 5만 건의 문서를 처리하는 대량 문서 분류 파이프라인. 올바른 모델 등급 매핑은 무엇일까요?"
+   },
+   {
+    "sid": "sample01#7.4",
+    "en": "FAQ → Sonnet, Contract analysis → Sonnet, Classification pipeline → Sonnet"
+   },
+   {
+    "sid": "sample01-kor#7.1",
+    "en": "FAQ → Haiku, 계약 분석 → Opus, 분류 파이프라인 → Haiku"
+   },
+   {
+    "sid": "sample01#7.5",
+    "en": "FAQ → Haiku, Contract analysis → Sonnet, Classification pipeline → Opus"
+   },
+   {
+    "sid": "sample01-kor#7.2",
+    "en": "FAQ → Sonnet, 계약 분석 → Sonnet, 분류 파이프라인 → Sonnet"
+   },
+   {
+    "sid": "sample01#7.0",
+    "en": "A company is building three Claude integrations: (1) a simple FAQ chatbot for a marketing website, (2) a complex multi-step contract analysis agent that must identify subtle legal risks, (3) a high-volume document classification pipeline processing 50,000 documents per day."
+   },
+   {
+    "sid": "sample01-kor#7.3",
+    "en": "FAQ → Haiku, 계약 분석 → Sonnet, 분류 파이프라인 → Opus"
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:faq.0",
+    "en": "...(1) a simple FAQ chatbot for a marketing website...",
+    "ko": "(1) 마케팅 웹사이트용 단순 FAQ 챗봇"
+   }
+  ]
+ },
+ {
+  "lemma": "fast",
+  "kind": "new",
+  "surfaces": [
+   "faster"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "mock04#23.7",
+    "en": "Set tool_choice to 'any' so the coordinator selects its tools faster and skips deliberation between calls"
+   },
+   {
+    "sid": "mock04#41.8",
+    "en": "Add a short-lived cache in front of the query tool so that repeated schema probes return faster on later calls."
+   }
+  ]
+ },
+ {
+  "lemma": "fault",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fault"
+  ],
+  "freq": 2,
+  "vocab": {
+   "id": "fault",
+   "word": "fault",
+   "pos": "명사",
+   "ipa": "fɔːlt",
+   "meaning": "잘못, 결함 — at fault: 원인이 되는, 책임이 있는"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#37.0",
+    "en": "An architect is asked to design an agent that investigates why a production incident occurred, given only a vague alert message and no prior knowledge of which service is at fault."
+   },
+   {
+    "sid": "lesson-d4#3.3",
+    "en": "Skip it, since the code still returns correct data and the slower, uncached path is a performance matter for a separate review, not a comment fault."
+   }
+  ]
+ },
+ {
+  "lemma": "federation",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "federation",
+   "word": "federation",
+   "pos": "명사",
+   "ipa": "ˌfedəˈreɪʃn",
+   "meaning": "페더레이션(연동) — 외부 ID 공급자가 확인한 신원을 믿고 받아들이도록 연결하는 방식 (Workload Identity Federation)"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "feed",
+  "kind": "vocab-extra",
+  "vocab": {
+   "id": "feed",
+   "word": "feed",
+   "pos": "동사·명사",
+   "ipa": "fiːd",
+   "meaning": "(데이터를) 넣어 주다, 공급하다 / (뉴스) 피드"
+  },
+  "sentences": []
+ },
+ {
+  "lemma": "feedback",
+  "kind": "new",
+  "surfaces": [
+   "feedback"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "lesson-d4#24.2",
+    "en": "After three retries with error feedback, the field is still empty."
+   },
+   {
+    "sid": "lesson-d3#23.5",
+    "en": "Implement a first version using common industry practice, then refine it through rounds of feedback"
+   }
+  ]
+ },
+ {
+  "lemma": "fence",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fences"
+  ],
+  "freq": 5,
+  "vocab": {
+   "id": "fence",
+   "word": "fence",
+   "pos": "명사",
+   "ipa": "fens",
+   "meaning": "① (마크다운) 코드 펜스 — 코드 블록 앞뒤를 감싸는 백틱 세 개 줄 ② 울타리"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#53.1",
+    "en": "Production logs show that 8% of extraction responses fail the downstream JSON.parse() step because Claude wraps its output in markdown code fences or prepends a sentence like \"Here is the extracted data:\"."
+   },
+   {
+    "sid": "sample01#15.2",
+    "en": "In production, 30% of responses include markdown code fences or introductory prose."
+   },
+   {
+    "sid": "mock04#53.6",
+    "en": "Post-process every response with a regex that strips markdown fences and leading prose before calling JSON.parse() on it."
+   },
+   {
+    "sid": "sample01#15.6",
+    "en": "Post-process responses with regex to strip markdown fences"
+   },
+   {
+    "sid": "mock04#53.7",
+    "en": "Lower max_tokens to a tight cap so the model has no room to add explanatory prose or code fences around the JSON."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fence.0",
+    "en": "...Claude wraps its output in markdown code fences or prepends a sentence like \"Here is the extracted data:\".",
+    "ko": "Claude가 출력을 마크다운 코드 펜스로 감싸거나 \"Here is the extracted data:\" 같은 문장을 앞에 붙인다"
+   }
+  ]
+ },
+ {
+  "lemma": "fetch",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fetches",
+   "refetch",
+   "re-fetching",
+   "re-fetch",
+   "fetching",
+   "fetch",
+   "fetched"
+  ],
+  "freq": 9,
+  "vocab": {
+   "id": "fetch",
+   "word": "fetch",
+   "pos": "동사",
+   "ipa": "fetʃ",
+   "meaning": "(데이터를) 가져오다, 조회해 오다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#3.0",
+    "en": "A reviewer flags a docstring that says \"returns the cached value if present, otherwise fetches from the API,\" but the function under review always calls the API regardless of a cache."
+   },
+   {
+    "sid": "sample01#19.2",
+    "en": "The tool descriptions are: 'Gets user information' and 'Fetches account details'."
+   },
+   {
+    "sid": "lesson-d2#17.4",
+    "en": "Replace fetch_url with a load_document tool that checks the URL points to a document before fetching it"
+   },
+   {
+    "sid": "lesson-d3#30.6",
+    "en": "The checkout used a shallow fetch-depth, so the CLI could not resolve the diff against the base branch and sat scanning the git history for missing commits"
+   },
+   {
+    "sid": "lesson-d5#19.5",
+    "en": "The subagent stopped retrying the provider too early, so the coordinator never received data a longer retry window would have fetched"
+   },
+   {
+    "sid": "mock04#30.4",
+    "en": "Increase the synthesis subagent's context window so all prior findings fit and it stops re-fetching them from the web."
+   },
+   {
+    "sid": "sample01-kor#19.0",
+    "en": "`get_user_info(user_id)` 와 `fetch_account_details(account_id)` 두 도구가 정의되어 있습니다. 테스트에서 모델이 `fetch_account_details` 를 호출해야 할 때 `get_user_info` 를 호출하고, 그 반대의 경우도 발생합니다. 도구 설명은 각각 'Gets user information'과 'Fetches account details'입니다. 해결책은 무엇일까요?"
+   },
+   {
+    "sid": "mock04#36.6",
+    "en": "Have synthesis re-fetch and re-summarize each page itself before combining them, so it works from fresh source text each time."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fetch.0",
+    "en": "Call get_customer and lookup_order again on every turn to refetch the numbers, then overwrite the stored summary with the fresh results.",
+    "ko": "매 턴 `get_customer` 와 `lookup_order` 를 다시 호출해 숫자를 새로 가져온 뒤, 저장된 요약을 새 결과로 덮어쓴다"
+   }
+  ]
+ },
+ {
+  "lemma": "few",
+  "kind": "new",
+  "surfaces": [
+   "few",
+   "fewer"
+  ],
+  "freq": 21,
+  "sentences": [
+   {
+    "sid": "lesson-d2#7.1",
+    "en": "A reviewer objects: \"Anthropic says to consolidate related operations into fewer tools, so splitting makes selection worse.\""
+   },
+   {
+    "sid": "lesson-d3#22.1",
+    "en": "The two need different infrastructure, but either way the code change will be fewer than 30 lines."
+   },
+   {
+    "sid": "lesson-d4#11.1",
+    "en": "You want fewer false positives, and you still want real problems caught in code the bot has never seen."
+   },
+   {
+    "sid": "lesson-d5#3.0",
+    "en": "A billing support agent has been summarizing a lengthy chat every few turns to keep the prompt short."
+   },
+   {
+    "sid": "lesson-d1#10.5",
+    "en": "Have the coordinator shorten the findings to a few key sentences so the synthesis subagent can focus on the most important claims"
+   },
+   {
+    "sid": "mock04#12.5",
+    "en": "Restrict the skill with an allowed-tools list in its frontmatter so it can only run a few tools and reads fewer files"
+   },
+   {
+    "sid": "lesson-d4#32.0",
+    "en": "A platform team runs an automated code-review gate that blocks a pull request from merging until Claude returns a verdict on the diff, typically within a few seconds."
+   },
+   {
+    "sid": "lesson-d1#9.6",
+    "en": "The coordinator broke the topic into a few detailed technical areas, so the remaining parts of the landscape had no subagent assigned"
+   }
+  ]
+ },
+ {
+  "lemma": "few-shot",
+  "kind": "vocab-core",
+  "surfaces": [
+   "few-shot"
+  ],
+  "freq": 20,
+  "vocab": {
+   "id": "few-shot",
+   "word": "few-shot",
+   "pos": "형용사",
+   "ipa": "ˈfjuː ʃɑːt",
+   "meaning": "퓨샷 — 프롬프트에 예시 몇 개를 넣어 보여 주는 방식"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d4#11.2",
+    "en": "Which few-shot examples should you add?"
+   },
+   {
+    "sid": "lesson-d1#19.3",
+    "en": "Make the instruction more emphatic and add few-shot examples that show get_customer being called before process_refund"
+   },
+   {
+    "sid": "mock04#25.7",
+    "en": "Add few-shot examples of well-structured, thorough landscape reports to the formatting step of the chain"
+   },
+   {
+    "sid": "sample01#14.6",
+    "en": "Use few-shot examples only, no category definitions"
+   },
+   {
+    "sid": "mock04-kor#25.1",
+    "en": "잘 구조화되고 충실한 경쟁 구도 보고서의 few-shot 예시를 체인의 서식 지정 단계에 추가한다."
+   },
+   {
+    "sid": "sample01-kor#19.1",
+    "en": "시스템 프롬프트에 어떤 도구를 호출해야 하는지 보여주는 few-shot 예시를 추가한다."
+   },
+   {
+    "sid": "selfcheck-d1-kor#25.2",
+    "en": "한도 예시를 담은 few-shot 대화를 추가한다"
+   },
+   {
+    "sid": "lesson-d4#12.0",
+    "en": "A team adds five few-shot examples to a document-classification prompt to fix inconsistent labeling."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:few-shot.0",
+    "en": "Add few-shot examples to the coordinator's prompt showing correct routing.",
+    "ko": "코디네이터 프롬프트에 올바른 라우팅을 보여 주는 퓨샷 예시를 추가한다."
+   }
+  ]
+ },
+ {
+  "lemma": "field",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fields",
+   "field"
+  ],
+  "freq": 93,
+  "vocab": {
+   "id": "field",
+   "word": "field",
+   "pos": "명사",
+   "ipa": "fiːld",
+   "meaning": "① (데이터 구조의) 필드, 항목 — 이름이 붙은 값 하나 ② 분야"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#17.0",
+    "en": "An architect is defining a \"database-migration\" AgentDefinition with a long prompt field describing SQL best practices, rollback strategy, and data integrity checks."
+   },
+   {
+    "sid": "lesson-d2#19.1",
+    "en": "The enrichment tools depend on fields that only extract_metadata produces, and in early tests the model sometimes calls an enrichment tool first with guessed values."
+   },
+   {
+    "sid": "lesson-d3#24.1",
+    "en": "After the first pass, records with a null middle-name field are being dropped instead of migrated with an empty string."
+   },
+   {
+    "sid": "lesson-d4#18.1",
+    "en": "Many reports name no referring physician, but every record still has a plausible-looking name in that field."
+   },
+   {
+    "sid": "lesson-d5#18.1",
+    "en": "Which set of fields best supports intelligent coordinator recovery decisions?"
+   },
+   {
+    "sid": "mock04#31.1",
+    "en": "The document-analysis subagent must call classify_document before running any field extraction, because the extraction schema depends on the detected type."
+   },
+   {
+    "sid": "sample01#1.6",
+    "en": "Tool definitions are missing `required` fields in the JSON schema"
+   },
+   {
+    "sid": "lesson-d1#29.0",
+    "en": "A PreToolUse hook needs to block refunds above $500 only when they target a specific merchant category, based on a field named category inside the refund tool's arguments."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:field.0",
+    "en": "Tool definitions are missing `required` fields in the JSON schema",
+    "ko": "도구 정의의 JSON 스키마에 `required` 필드가 없다"
+   }
+  ]
+ },
+ {
+  "lemma": "fifteen",
+  "kind": "new",
+  "surfaces": [
+   "fifteen"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d2#9.0",
+    "en": "Fifteen attendees are passed to `create_calendar_event`, and the calendar refuses with \"Too many attendees (max 10)\"."
+   }
+  ]
+ },
+ {
+  "lemma": "fifth",
+  "kind": "new",
+  "surfaces": [
+   "fifth"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#3.5",
+    "en": "The tools parameter must be dropped from requests after the fifth call, leaving Claude unable to request tool_use for the rest of the session"
+   }
+  ]
+ },
+ {
+  "lemma": "filename",
+  "kind": "new",
+  "surfaces": [
+   "filename"
+  ],
+  "freq": 5,
+  "sentences": [
+   {
+    "sid": "lesson-d3#27.2",
+    "en": "Report each failure sequentially in its own message: first address the currency-formatting mismatch, and once confirmed fixed, the filename extension issue, because the two problems are independent."
+   },
+   {
+    "sid": "lesson-d5#26.6",
+    "en": "Have every subagent overwrite the same fixed scratchpad filename each time it records a newly discovered finding."
+   },
+   {
+    "sid": "lesson-d3#27.3",
+    "en": "Combine both failures into a single message that shows the full test run output, noting that the currency-formatting mismatch and the filename extension omission are unrelated defects, and ask Claude to fix both."
+   },
+   {
+    "sid": "lesson-d3#27.4",
+    "en": "Withhold the filename extension failure and report only the currency-formatting mismatch as the primary defect found first, deferring the secondary extension issue to avoid distracting Claude from the more critical formatting fix."
+   },
+   {
+    "sid": "lesson-d3#27.0",
+    "en": "A test run against a newly generated report-export module in Claude Code produces two failures: a currency-formatting mismatch in the summary totals and a completely unrelated failure where the export filename generator omits the file extension on Windows paths."
+   }
+  ]
+ },
+ {
+  "lemma": "filing",
+  "kind": "vocab-core",
+  "surfaces": [
+   "filings"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "filing",
+   "word": "filing",
+   "pos": "명사",
+   "ipa": "ˈfaɪlɪŋ",
+   "meaning": "(기관에 내는) 제출 서류, 신고서 (regulatory filings: 규제 공시 서류)"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d5#16.0",
+    "en": "A filings subagent's database times out partway through its work."
+   },
+   {
+    "sid": "lesson-d5#19.0",
+    "en": "A regulatory-filings subagent cannot reach its data provider because the provider's API key expired."
+   },
+   {
+    "sid": "lesson-d5#37.0",
+    "en": "Halfway through a batch of filings, a subagent finds that two credible documents give different headcounts for the same company."
+   },
+   {
+    "sid": "lesson-d5#16.5",
+    "en": "Failure type \"timeout (transient)\", the exact query and the database it went to, the 40 of 200 filings already retrieved, and a read replica that could fill the gap"
+   }
+  ]
+ },
+ {
+  "lemma": "fill",
+  "kind": "new",
+  "surfaces": [
+   "fill"
+  ],
+  "freq": 2,
+  "sentences": [
+   {
+    "sid": "mock04#27.1",
+    "en": "Logs show the document-analysis subagent attempting to invoke the web-search subagent directly to fill gaps, producing routing errors and duplicated searches."
+   },
+   {
+    "sid": "lesson-d5#16.5",
+    "en": "Failure type \"timeout (transient)\", the exact query and the database it went to, the 40 of 200 filings already retrieved, and a read replica that could fill the gap"
+   }
+  ]
+ },
+ {
+  "lemma": "fill in",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fills in",
+   "filling in",
+   "fill in"
+  ],
+  "freq": 3,
+  "vocab": {
+   "id": "fill-in",
+   "word": "fill in",
+   "pos": "동사구",
+   "ipa": "fɪl ɪn",
+   "meaning": "(빈칸·자리를) 채우다, 채워 넣다"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d2#21.4",
+    "en": "Add the server with user scope in ~/.claude.json, and set the header to `Authorization: Bearer <token>`, with each teammate filling in their own token on their machine"
+   },
+   {
+    "sid": "lesson-d3#32.4",
+    "en": "Add the test-quality definition and fixture list to the pull request template authors fill in per PR"
+   },
+   {
+    "sid": "mock04#34.7",
+    "en": "Instruct synthesis to insert (source) placeholders in the narrative that a human fills in after the report is generated."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fill-in.0",
+    "en": "Instruct synthesis to insert (source) placeholders in the narrative that a human fills in after the report is generated.",
+    "ko": "종합 단계가 서술 안에 (source) 자리 표시자를 넣게 하고, 보고서가 생성된 뒤 사람이 채우게 한다"
+   }
+  ]
+ },
+ {
+  "lemma": "filter",
+  "kind": "new",
+  "surfaces": [
+   "filters",
+   "filter",
+   "filtered"
+  ],
+  "freq": 4,
+  "sentences": [
+   {
+    "sid": "lesson-d4#1.0",
+    "en": "A team's single-pass code reviewer flags too many non-issues, and they want it to filter its own findings."
+   },
+   {
+    "sid": "lesson-d1#29.5",
+    "en": "In the matcher string, by writing a regex such as `refund_customer.*category=restricted` so the SDK filters on the argument before invoking the callback"
+   },
+   {
+    "sid": "lesson-d1#29.6",
+    "en": "Inside the callback function itself, by reading input_data[\"tool_input\"][\"category\"] and applying the conditional logic there, since matchers only filter by tool name"
+   },
+   {
+    "sid": "lesson-d4#25.4",
+    "en": "A model-reported `confidence` score, so low-confidence findings can be filtered out"
+   }
+  ]
+ },
+ {
+  "lemma": "final",
+  "kind": "new",
+  "surfaces": [
+   "final"
+  ],
+  "freq": 27,
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.1",
+    "en": "The final report makes the right claims but can't say which URL, document or page any claim came from."
+   },
+   {
+    "sid": "lesson-d3#11.1",
+    "en": "The team wants that exploratory back-and-forth kept separate from the main conversation, with only the final recommendation surfacing back to the user."
+   },
+   {
+    "sid": "lesson-d5#15.1",
+    "en": "How should the coordinator's synthesis output schema handle each topic so the final report stays trustworthy?"
+   },
+   {
+    "sid": "mock04#37.3",
+    "en": "Production runs show the final plan omits an entire 'dunning' subsystem and a currency-conversion layer that no subagent was ever assigned."
+   },
+   {
+    "sid": "lesson-d4#29.3",
+    "en": "doc/2026/report:final, since embedding the ingestion date and a colon-separated section label makes the request easier to trace during a later audit"
+   },
+   {
+    "sid": "sample01#8.4",
+    "en": "Implement structured trace logging at each step: request payload, `stop_reason`, tool calls with inputs/outputs, and final response — with a session correlation ID"
+   },
+   {
+    "sid": "mock04-kor#29.1",
+    "en": "루프가 멈추기 전에 문구 옆에 'final'이라는 단어까지 있어야 하는 더 엄격한 정규식을 쓴다."
+   },
+   {
+    "sid": "lesson-d1#18.0",
+    "en": "A coordinator runs a \"web-researcher\" subagent that gathers ten sources on a topic, then spawns a \"synthesis\" subagent to write the final report."
+   }
+  ]
+ },
+ {
+  "lemma": "finalize",
+  "kind": "new",
+  "surfaces": [
+   "finalizing"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d5#6.5",
+    "en": "Instruct the synthesis step to re-read the combined input and check each section against its draft memo before finalizing it"
+   }
+  ]
+ },
+ {
+  "lemma": "finance",
+  "kind": "new",
+  "surfaces": [
+   "finance"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d1#26.0",
+    "en": "A finance team says a single refund above $500 is unacceptable, even if it happens in only one conversation out of thousands."
+   }
+  ]
+ },
+ {
+  "lemma": "financial",
+  "kind": "new",
+  "surfaces": [
+   "financial"
+  ],
+  "freq": 1,
+  "sentences": [
+   {
+    "sid": "lesson-d4#20.0",
+    "en": "A financial services firm uses a tool-based schema to extract transaction records from PDF statements, including a required amount field and a required transaction_type field."
+   }
+  ]
+ },
+ {
+  "lemma": "find",
+  "kind": "new",
+  "surfaces": [
+   "finds",
+   "find",
+   "found"
+  ],
+  "freq": 35,
+  "sentences": [
+   {
+    "sid": "lesson-d1#11.1",
+    "en": "Both strategies depend on everything that analysis found."
+   },
+   {
+    "sid": "lesson-d3#18.0",
+    "en": "Midway through planning a multi-phase migration, Claude has to find every usage pattern of the old library across hundreds of files before it can propose an approach."
+   },
+   {
+    "sid": "lesson-d4#19.0",
+    "en": "During an audit of an expense-report extractor, the team finds records with the tax amount in the tip field and line items that don't add up to the total."
+   },
+   {
+    "sid": "lesson-d5#10.0",
+    "en": "A retail customer asks a support agent to match a lower price they found on a competitor's website."
+   },
+   {
+    "sid": "mock04#52.2",
+    "en": "The review almost never finds problems, yet audits show 20% of the generated tests have weak or tautological assertions."
+   },
+   {
+    "sid": "sample01#4.1",
+    "en": "During a security review, the team finds that Claude can retrieve HR data when users embed instructions in uploaded PDF documents like: \"Ignore previous instructions."
+   },
+   {
+    "sid": "lesson-d2#29.4",
+    "en": "Extend old_string with the neighbouring lines from the target function, then retry Edit, which finds a single match in the file"
+   },
+   {
+    "sid": "mock04-kor#7.0",
+    "en": "고객 데이터베이스에 잠시 접속할 수 없을 때 `get_customer` 가 그냥 빈 결과를 반환하면, 에이전트는 고객에게 \"I can't find any account with that information\"(해당 정보로는 계정을 찾을 수 없습니다)이라고 말하고 케이스를 종료합니다. 일시적인 장애 동안 실제 계정이 있는 고객들이 돌려보내지고 있습니다."
+   }
+  ]
+ },
+ {
+  "lemma": "finding",
+  "kind": "vocab-core",
+  "surfaces": [
+   "findings",
+   "finding"
+  ],
+  "freq": 86,
+  "vocab": {
+   "id": "finding",
+   "word": "finding",
+   "pos": "명사",
+   "ipa": "ˈfaɪndɪŋ",
+   "meaning": "(조사·분석으로) 알아낸 것, 발견 사항 — 주로 findings"
+  },
+  "sentences": [
+   {
+    "sid": "lesson-d1#10.0",
+    "en": "In a research pipeline, the coordinator hands the synthesis subagent its findings as smooth prose such as \"studies show adoption doubled\"."
+   },
+   {
+    "sid": "lesson-d4#1.0",
+    "en": "A team's single-pass code reviewer flags too many non-issues, and they want it to filter its own findings."
+   },
+   {
+    "sid": "lesson-d5#19.1",
+    "en": "Instead of surfacing the failure, the subagent returns an empty findings list with status 'success' so the pipeline continues cleanly."
+   },
+   {
+    "sid": "mock04#30.2",
+    "en": "Traces show that in 22% of runs it issues a fresh web_search or parse_pdf call instead of combining the findings the coordinator already passed in its prompt, adding 6-9 s of latency per run."
+   },
+   {
+    "sid": "sample01#6.1",
+    "en": "After turn 25, response quality degrades — the model starts forgetting earlier findings and repeating tool calls it already made."
+   },
+   {
+    "sid": "selfcheck-d4-kor#2.0",
+    "en": "오탐을 줄이려고 리뷰 프롬프트에 \"be conservative, only report high-confidence findings\"를 넣었다. 오탐은 조금 줄었지만, 나중에 장애로 이어진 off-by-one 버그를 리뷰가 놓쳤다. 현재 문서 기준으로 가장 그럴듯한 설명과 대응은?"
+   },
+   {
+    "sid": "lesson-d1#18.1",
+    "en": "The synthesis subagent's output ignores nearly all of the researcher's findings and instead re-derives generic conclusions from scratch."
+   },
+   {
+    "sid": "lesson-d4#2.0",
+    "en": "A prompt engineer tries to fix a noisy security-findings category by adding the line \"only report high-confidence findings\" to the system prompt."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:finding.0",
+    "en": "After turn 25, response quality degrades — the model starts forgetting earlier findings and repeating tool calls it already made.",
+    "ko": "25턴 이후 응답 품질이 떨어져, 모델이 앞서 찾은 내용을 잊고 이미 했던 도구 호출을 반복한다."
+   }
+  ]
+ },
+ {
+  "lemma": "fine-tune",
+  "kind": "vocab-core",
+  "surfaces": [
+   "fine-tune"
+  ],
+  "freq": 4,
+  "vocab": {
+   "id": "fine-tune",
+   "word": "fine-tune",
+   "pos": "동사",
+   "ipa": "ˌfaɪn ˈtuːn",
+   "meaning": "미세 조정하다 — 모델을 추가 데이터로 더 학습시키다"
+  },
+  "sentences": [
+   {
+    "sid": "mock04#17.6",
+    "en": "Fine-tune a model on the team's existing validation code so it internalizes the house validation style"
+   },
+   {
+    "sid": "mock04#3.7",
+    "en": "Fine-tune the model on historical tickets so it learns the $500 threshold from past manager approvals and applies it."
+   },
+   {
+    "sid": "mock04#51.5",
+    "en": "Fine-tune a dedicated model on the team's full history of past review decisions and deploy it"
+   },
+   {
+    "sid": "mock04#56.5",
+    "en": "Fine-tune a dedicated document-type classifier and run it before extraction to assign the type to every document."
+   }
+  ],
+  "vocabExamples": [
+   {
+    "vid": "vocab:fine-tune.0",
+    "en": "The model requires more training data on multi-concept messages and should be fine-tuned.",
+    "ko": "모델에 다중 개념 메시지에 대한 학습 데이터가 더 필요하므로 파인튜닝해야 한다."
+   }
+  ]
+ },
+ {
+  "lemma": "finish",
+  "kind": "new",
+  "surfaces": [
+   "finished",
+   "finishes",
+   "finish",
+   "finishing"
+  ],
+  "freq": 13,
+  "sentences": [
+   {
+    "sid": "lesson-d1#14.0",
+    "en": "After a web-researcher subagent finishes, a coordinator spawns a synthesis subagent."
+   },
+   {
+    "sid": "lesson-d4#35.0",
+    "en": "A team built a pipeline where the same Claude instance that generates code is then asked, within the same conversation, to 'review your own work for bugs before finishing.'"
+   },
+   {
+    "sid": "lesson-d5#28.1",
+    "en": "It must show which exploration subagents have finished and where each one's findings are, and agents will update their own entries as they complete."
+   },
+   {
+    "sid": "mock04#29.7",
+    "en": "Have a separate classifier judge after every assistant message whether the report is truly finished"
+   },
+   {
+    "sid": "sample01#22.1",
+    "en": "`end_turn` — the model finished its response"
+   },
+   {
+    "sid": "lesson-d1#15.5",
+    "en": "Spawn the reviewers across separate turns, but give each the same maxTurns so they finish together"
+   },
+   {
+    "sid": "lesson-d4#28.3",
+    "en": "Submit once a night, because most batches finish in under an hour, which leaves plenty of slack"
+   },
+   {
+    "sid": "lesson-d5#26.3",
+    "en": "Give each subagent its own uniquely named scratchpad file, e.g., one per module, and have the coordinator aggregate all files only after all subagents have finished their investigations."
+   }
+  ]
+ }
+]

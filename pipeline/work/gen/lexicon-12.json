@@ -1,0 +1,974 @@
+[
+ {
+  "lemma": "design",
+  "skip": null,
+  "word": "design",
+  "pos": ["명사", "동사"],
+  "ipa": "dɪˈzaɪn",
+  "meaning": "설계(하다)",
+  "short": "설계(하다)",
+  "senses": [
+   { "pos": "명사", "ko": "설계, 설계 방식" },
+   { "pos": "동사", "ko": "설계하다, 고안하다" },
+   { "pos": "명사", "ko": "디자인, 도안" }
+  ],
+  "forms": ["designs", "designed", "designing", "redesign", "redesigned", "redesigning", "designer"],
+  "synonyms": ["plan", "architecture", "devise"],
+  "domain": "계획·목표·전략",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#26.1", "surface": "design", "pos": "명사", "sense": "설계, 설계 방식" },
+   { "sid": "lesson-d3#3.0", "surface": "designing", "pos": "동사", "sense": "설계하다, 고안하다" },
+   { "sid": "mock04#56.3", "surface": "design", "pos": "명사", "sense": "설계, 설계 방식" },
+   { "sid": "lesson-d5#16.1", "surface": "designing", "pos": "동사", "sense": "설계하다, 고안하다" }
+  ]
+ },
+ {
+  "lemma": "designate",
+  "skip": null,
+  "word": "designate",
+  "pos": ["동사"],
+  "ipa": "ˈdezɪɡneɪt",
+  "meaning": "지정하다, (특정 용도로) 정해 두다",
+  "short": "지정하다",
+  "senses": [
+   { "pos": "동사", "ko": "지정하다, (특정 용도로) 정해 두다" },
+   { "pos": "형용사", "ko": "(designated) 지정된" },
+   { "pos": "동사", "ko": "(직책에) 임명하다" }
+  ],
+  "forms": ["designates", "designated", "designating", "designation"],
+  "synonyms": ["assign", "specify", "appoint"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#33.7", "surface": "designated", "pos": "형용사", "sense": "(designated) 지정된" }
+  ]
+ },
+ {
+  "lemma": "desire",
+  "skip": null,
+  "word": "desire",
+  "pos": ["동사", "명사"],
+  "ipa": "dɪˈzaɪər",
+  "meaning": "① 바라다, 원하다 (desired: 원하는, 목표로 하는) ② 욕구, 바람",
+  "short": "바라다, 원하다",
+  "senses": [
+   { "pos": "형용사", "ko": "(desired) 원하는, 목표로 하는" },
+   { "pos": "동사", "ko": "바라다, 원하다" },
+   { "pos": "명사", "ko": "욕구, 바람" }
+  ],
+  "forms": ["desires", "desired", "desiring", "desirable"],
+  "synonyms": ["want", "wish"],
+  "domain": "계획·목표·전략",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#10.5", "surface": "desired", "pos": "형용사", "sense": "(desired) 원하는, 목표로 하는" }
+  ]
+ },
+ {
+  "lemma": "despite",
+  "skip": null,
+  "word": "despite",
+  "pos": ["전치사"],
+  "ipa": "dɪˈspaɪt",
+  "meaning": "~에도 불구하고",
+  "short": "~에도 불구하고",
+  "senses": [
+   { "pos": "전치사", "ko": "~에도 불구하고" }
+  ],
+  "forms": [],
+  "synonyms": ["in spite of", "notwithstanding"],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#43.5", "surface": "despite", "pos": "전치사", "sense": "~에도 불구하고" }
+  ]
+ },
+ {
+  "lemma": "destructive",
+  "skip": null,
+  "word": "destructive",
+  "pos": ["형용사"],
+  "ipa": "dɪˈstrʌktɪv",
+  "meaning": "파괴적인 — 되돌릴 수 없게 지우거나 바꾸는",
+  "short": "파괴적인, 되돌릴 수 없는",
+  "senses": [
+   { "pos": "형용사", "ko": "(데이터를) 되돌릴 수 없게 지우거나 바꾸는" },
+   { "pos": "형용사", "ko": "파괴적인, 해로운" }
+  ],
+  "forms": ["destroy", "destruction", "destructively"],
+  "synonyms": ["damaging", "harmful"],
+  "domain": "오류·실패·위험",
+  "basic": false,
+  "contexts": [
+   { "sid": "vocab:destructive.0", "surface": "destructive", "pos": "형용사", "sense": "(데이터를) 되돌릴 수 없게 지우거나 바꾸는" }
+  ]
+ },
+ {
+  "lemma": "detail",
+  "skip": null,
+  "word": "detail",
+  "pos": ["명사"],
+  "ipa": "ˈdiːteɪl",
+  "meaning": "세부 (사항), 자세한 내용",
+  "short": "세부 사항, 자세한 내용",
+  "senses": [
+   { "pos": "명사", "ko": "세부 (사항), 자세한 내용" },
+   { "pos": "형용사", "ko": "(detailed) 자세한, 상세한" },
+   { "pos": "동사", "ko": "상세히 열거하다" }
+  ],
+  "forms": ["details", "detailed", "detailing"],
+  "synonyms": ["specifics", "particulars"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#4.1", "surface": "detailed", "pos": "형용사", "sense": "(detailed) 자세한, 상세한" },
+   { "sid": "mock04#21.2", "surface": "details", "pos": "명사", "sense": "세부 (사항), 자세한 내용" },
+   { "sid": "lesson-d5#22.1", "surface": "detail", "pos": "명사", "sense": "세부 (사항), 자세한 내용" },
+   { "sid": "lesson-d1#14.5", "surface": "details", "pos": "명사", "sense": "세부 (사항), 자세한 내용" }
+  ]
+ },
+ {
+  "lemma": "detect",
+  "skip": null,
+  "word": "detect",
+  "pos": ["동사"],
+  "ipa": "dɪˈtekt",
+  "meaning": "감지하다, 알아내다",
+  "short": "감지하다, 알아내다",
+  "senses": [
+   { "pos": "동사", "ko": "감지하다, 알아내다" },
+   { "pos": "동사", "ko": "(범죄·질병 등을) 탐지하다, 발견하다" }
+  ],
+  "forms": ["detects", "detected", "detecting", "detection"],
+  "synonyms": ["notice", "identify", "spot"],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#2.6", "surface": "detect", "pos": "동사", "sense": "감지하다, 알아내다" },
+   { "sid": "lesson-d4#22.4", "surface": "detect", "pos": "동사", "sense": "감지하다, 알아내다" },
+   { "sid": "mock04#31.1", "surface": "detected", "pos": "동사", "sense": "감지하다, 알아내다" },
+   { "sid": "lesson-d3#8.3", "surface": "detected", "pos": "동사", "sense": "감지하다, 알아내다" }
+  ]
+ },
+ {
+  "lemma": "determine",
+  "skip": null,
+  "word": "determine",
+  "pos": ["동사"],
+  "ipa": "dɪˈtɜːrmɪn",
+  "meaning": "① 알아내다, 밝혀내다 ② 결정하다, 좌우하다",
+  "short": "알아내다, 결정하다",
+  "senses": [
+   { "pos": "동사", "ko": "알아내다, 밝혀내다" },
+   { "pos": "동사", "ko": "결정하다, 좌우하다" }
+  ],
+  "forms": ["determines", "determined", "determining", "determination"],
+  "synonyms": ["figure out", "establish", "decide"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#44.1", "surface": "determine", "pos": "동사", "sense": "알아내다, 밝혀내다" },
+   { "sid": "lesson-d1#24.8", "surface": "determine", "pos": "동사", "sense": "알아내다, 밝혀내다" }
+  ]
+ },
+ {
+  "lemma": "deterministic",
+  "skip": null,
+  "word": "deterministic",
+  "pos": ["형용사"],
+  "ipa": "dɪˌtɜːrmɪˈnɪstɪk",
+  "meaning": "결정적인 — 같은 입력이면 항상 같은 결과가 나오는",
+  "short": "결정적인(항상 같은 결과)",
+  "senses": [
+   { "pos": "형용사", "ko": "결정적인 (같은 입력이면 항상 같은 결과)" },
+   { "pos": "부사", "ko": "(deterministically) 항상 같은 방식으로" }
+  ],
+  "forms": ["deterministically", "nondeterministic"],
+  "synonyms": ["predictable", "reproducible"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#14.5", "surface": "deterministic", "pos": "형용사", "sense": "결정적인 (같은 입력이면 항상 같은 결과)" },
+   { "sid": "mock04#46.5", "surface": "deterministically", "pos": "부사", "sense": "(deterministically) 항상 같은 방식으로" },
+   { "sid": "sample01#8.6", "surface": "deterministic", "pos": "형용사", "sense": "결정적인 (같은 입력이면 항상 같은 결과)" },
+   { "sid": "mock04#32.5", "surface": "deterministic", "pos": "형용사", "sense": "결정적인 (같은 입력이면 항상 같은 결과)" }
+  ]
+ },
+ {
+  "lemma": "dev",
+  "skip": null,
+  "word": "dev",
+  "pos": ["약어"],
+  "ipa": "dev",
+  "meaning": "(development·developer의 줄임말) ① 개발 ② 개발자",
+  "short": "개발, 개발자",
+  "senses": [
+   { "pos": "약어", "ko": "(development) 개발" },
+   { "pos": "약어", "ko": "(developer) 개발자" }
+  ],
+  "forms": ["devs"],
+  "synonyms": [],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#11.0", "surface": "dev", "pos": "약어", "sense": "(development) 개발" }
+  ]
+ },
+ {
+  "lemma": "developer",
+  "skip": null,
+  "word": "developer",
+  "pos": ["명사"],
+  "ipa": "dɪˈveləpər",
+  "meaning": "① (소프트웨어) 개발자 ② (부동산) 개발업자",
+  "short": "개발자",
+  "senses": [
+   { "pos": "명사", "ko": "(소프트웨어) 개발자" },
+   { "pos": "명사", "ko": "(부동산) 개발업자" }
+  ],
+  "forms": ["developers", "develop", "development"],
+  "synonyms": ["programmer", "engineer", "coder"],
+  "domain": "사람·조직·역할",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#18.1", "surface": "developer", "pos": "명사", "sense": "(소프트웨어) 개발자" },
+   { "sid": "lesson-d4#11.0", "surface": "Developers", "pos": "명사", "sense": "(소프트웨어) 개발자" },
+   { "sid": "lesson-d2#22.3", "surface": "developer", "pos": "명사", "sense": "(소프트웨어) 개발자" },
+   { "sid": "lesson-d1#38.0", "surface": "developer", "pos": "명사", "sense": "(소프트웨어) 개발자" }
+  ]
+ },
+ {
+  "lemma": "diagnosis",
+  "skip": null,
+  "word": "diagnosis",
+  "pos": ["명사"],
+  "ipa": "ˌdaɪəɡˈnoʊsɪs",
+  "meaning": "진단 — 문제의 원인을 밝혀냄 (diagnose: 진단하다)",
+  "short": "진단, 원인 규명",
+  "senses": [
+   { "pos": "명사", "ko": "(문제의) 진단, 원인 규명" },
+   { "pos": "명사", "ko": "(병의) 진단" }
+  ],
+  "forms": ["diagnoses", "diagnose", "diagnostic"],
+  "synonyms": ["analysis", "assessment"],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#37.4", "surface": "diagnosis", "pos": "명사", "sense": "(문제의) 진단, 원인 규명" }
+  ]
+ },
+ {
+  "lemma": "dictionary",
+  "skip": null,
+  "word": "dictionary",
+  "pos": ["명사"],
+  "ipa": "ˈdɪkʃəneri",
+  "meaning": "사전 — 단어·값을 짝지어 모은 목록 (프로그래밍에선 키-값 자료형)",
+  "short": "사전, (단어) 목록",
+  "senses": [
+   { "pos": "명사", "ko": "사전, 단어를 모은 목록" },
+   { "pos": "명사", "ko": "(프로그래밍) 딕셔너리, 키-값 자료형" }
+  ],
+  "forms": ["dictionaries"],
+  "synonyms": ["lexicon", "glossary"],
+  "domain": "데이터·정보·문서",
+  "basic": true,
+  "contexts": [
+   { "sid": "mock04#46.4", "surface": "dictionary", "pos": "명사", "sense": "사전, 단어를 모은 목록" }
+  ]
+ },
+ {
+  "lemma": "diff",
+  "skip": null,
+  "word": "diff",
+  "pos": ["명사", "동사"],
+  "ipa": "dɪf",
+  "meaning": "변경분 비교 결과 — 파일에서 바뀐 줄을 보여 주는 것 / 비교하다",
+  "short": "변경분(비교 결과)",
+  "senses": [
+   { "pos": "명사", "ko": "변경분 (바뀐 줄을 보여 주는 비교 결과)" },
+   { "pos": "동사", "ko": "(두 파일을) 비교하다" }
+  ],
+  "forms": ["diffs", "diffed", "diffing"],
+  "synonyms": ["changeset", "patch"],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#30.0", "surface": "diff", "pos": "명사", "sense": "변경분 (바뀐 줄을 보여 주는 비교 결과)" },
+   { "sid": "mock04#20.2", "surface": "diffs", "pos": "명사", "sense": "변경분 (바뀐 줄을 보여 주는 비교 결과)" },
+   { "sid": "lesson-d1#35.4", "surface": "diff", "pos": "명사", "sense": "변경분 (바뀐 줄을 보여 주는 비교 결과)" },
+   { "sid": "lesson-d4#32.0", "surface": "diff", "pos": "명사", "sense": "변경분 (바뀐 줄을 보여 주는 비교 결과)" }
+  ]
+ },
+ {
+  "lemma": "differ",
+  "skip": null,
+  "word": "differ",
+  "pos": ["동사"],
+  "ipa": "ˈdɪfər",
+  "meaning": "(~와) 다르다, 구별되다",
+  "short": "다르다, 구별되다",
+  "senses": [
+   { "pos": "동사", "ko": "(~와) 다르다, 구별되다" },
+   { "pos": "동사", "ko": "(의견이) 엇갈리다" }
+  ],
+  "forms": ["differs", "differed", "differing", "different", "difference"],
+  "synonyms": ["vary", "diverge"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#21.1", "surface": "differ", "pos": "동사", "sense": "(~와) 다르다, 구별되다" },
+   { "sid": "mock04#7.6", "surface": "differs", "pos": "동사", "sense": "(~와) 다르다, 구별되다" }
+  ]
+ },
+ {
+  "lemma": "difference",
+  "skip": null,
+  "word": "difference",
+  "pos": ["명사"],
+  "ipa": "ˈdɪfrəns",
+  "meaning": "① 차이, 다른 점 ② (수·양의) 차, 차액 ③ (make a difference) 효과, 영향",
+  "short": "차이",
+  "senses": [
+   { "pos": "명사", "ko": "차이, 다른 점" },
+   { "pos": "명사", "ko": "(수·양의) 차, 차액" },
+   { "pos": "명사", "ko": "(make a difference) 효과, 영향" }
+  ],
+  "forms": ["differences", "differ", "different"],
+  "synonyms": ["gap", "distinction", "discrepancy"],
+  "domain": "비교·평가·판단",
+  "basic": true,
+  "contexts": [
+   { "sid": "mock04#35.7", "surface": "difference", "pos": "명사", "sense": "차이, 다른 점" }
+  ]
+ },
+ {
+  "lemma": "different",
+  "skip": null,
+  "word": "different",
+  "pos": ["형용사"],
+  "ipa": "ˈdɪfrənt",
+  "meaning": "① 다른, 별개의 ② 여러 가지의, 각기 다른",
+  "short": "다른",
+  "senses": [
+   { "pos": "형용사", "ko": "다른, 별개의" },
+   { "pos": "형용사", "ko": "여러 가지의, 각기 다른" }
+  ],
+  "forms": ["differently", "difference", "differ"],
+  "synonyms": ["distinct", "dissimilar", "various"],
+  "domain": "비교·평가·판단",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#5.2", "surface": "different", "pos": "형용사", "sense": "다른, 별개의" },
+   { "sid": "sample01#14.2", "surface": "different", "pos": "형용사", "sense": "여러 가지의, 각기 다른" },
+   { "sid": "lesson-d4#23.2", "surface": "different", "pos": "형용사", "sense": "다른, 별개의" },
+   { "sid": "lesson-d5#12.0", "surface": "different", "pos": "형용사", "sense": "여러 가지의, 각기 다른" }
+  ]
+ },
+ {
+  "lemma": "differentiate",
+  "skip": null,
+  "word": "differentiate",
+  "pos": ["동사"],
+  "ipa": "ˌdɪfəˈrenʃieɪt",
+  "meaning": "구별하다, 서로 다르게 만들다(차별화하다)",
+  "short": "구별하다, 차별화하다",
+  "senses": [
+   { "pos": "동사", "ko": "서로 다르게 만들다, 차별화하다" },
+   { "pos": "동사", "ko": "구별하다" }
+  ],
+  "forms": ["differentiates", "differentiated", "differentiating", "differentiation"],
+  "synonyms": ["distinguish", "discriminate", "tell apart"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#33.4", "surface": "differentiate", "pos": "동사", "sense": "서로 다르게 만들다, 차별화하다" },
+   { "sid": "lesson-d2#2.4", "surface": "differentiating", "pos": "동사", "sense": "구별하다" }
+  ]
+ },
+ {
+  "lemma": "differently",
+  "skip": null,
+  "word": "differently",
+  "pos": ["부사"],
+  "ipa": "ˈdɪfrəntli",
+  "meaning": "다르게, 다른 방식으로",
+  "short": "다르게",
+  "senses": [
+   { "pos": "부사", "ko": "다르게, 다른 방식으로" }
+  ],
+  "forms": ["different", "difference"],
+  "synonyms": ["otherwise"],
+  "domain": "비교·평가·판단",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#28.1", "surface": "differently", "pos": "부사", "sense": "다르게, 다른 방식으로" },
+   { "sid": "lesson-d2#11.3", "surface": "differently", "pos": "부사", "sense": "다르게, 다른 방식으로" },
+   { "sid": "mock04#46.2", "surface": "differently", "pos": "부사", "sense": "다르게, 다른 방식으로" }
+  ]
+ },
+ {
+  "lemma": "difficult",
+  "skip": null,
+  "word": "difficult",
+  "pos": ["형용사"],
+  "ipa": "ˈdɪfɪkəlt",
+  "meaning": "① 어려운, 힘든 ② (사람이) 까다로운",
+  "short": "어려운",
+  "senses": [
+   { "pos": "형용사", "ko": "어려운, 힘든" },
+   { "pos": "형용사", "ko": "(사람이) 까다로운" }
+  ],
+  "forms": ["difficulty", "difficulties"],
+  "synonyms": ["hard", "tough", "challenging"],
+  "domain": "상태·성질",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#25.0", "surface": "difficult", "pos": "형용사", "sense": "어려운, 힘든" }
+  ]
+ },
+ {
+  "lemma": "digit",
+  "skip": null,
+  "word": "digit",
+  "pos": ["명사"],
+  "ipa": "ˈdɪdʒɪt",
+  "meaning": "① (0~9의) 숫자 ② 자릿수 ③ 손가락, 발가락",
+  "short": "숫자, 자릿수",
+  "senses": [
+   { "pos": "명사", "ko": "(0~9의) 숫자" },
+   { "pos": "명사", "ko": "자릿수" },
+   { "pos": "명사", "ko": "손가락, 발가락" }
+  ],
+  "forms": ["digits", "digital"],
+  "synonyms": ["numeral", "number"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#29.2", "surface": "digits", "pos": "명사", "sense": "(0~9의) 숫자" }
+  ]
+ },
+ {
+  "lemma": "dilute",
+  "skip": null,
+  "word": "dilute",
+  "pos": ["동사"],
+  "ipa": "daɪˈluːt",
+  "meaning": "희석하다, (집중·효과를) 흐리다",
+  "short": "흐리다, 희석하다",
+  "senses": [
+   { "pos": "동사", "ko": "(집중·효과를) 흐리다, 약하게 하다" },
+   { "pos": "명사", "ko": "(dilution) 희석, 약화" },
+   { "pos": "동사", "ko": "(액체를) 희석하다" }
+  ],
+  "forms": ["dilutes", "diluted", "diluting", "dilution"],
+  "synonyms": ["weaken", "water down"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#49.2", "surface": "diluting", "pos": "동사", "sense": "(집중·효과를) 흐리다, 약하게 하다" },
+   { "sid": "lesson-d1#35.2", "surface": "dilution", "pos": "명사", "sense": "(dilution) 희석, 약화" }
+  ]
+ },
+ {
+  "lemma": "direct",
+  "skip": null,
+  "word": "direct",
+  "pos": ["형용사", "동사"],
+  "ipa": "dəˈrekt",
+  "meaning": "① 직접적인, 바로 — directly: 직접, 곧바로 / indirect: 간접적인 ② 지시하다, 향하게 하다",
+  "short": "직접적인, 직접",
+  "senses": [
+   { "pos": "부사", "ko": "(directly) 직접, 곧바로" },
+   { "pos": "동사", "ko": "지시하다, (~하도록) 시키다" },
+   { "pos": "형용사", "ko": "직접적인, 바로 이어지는" },
+   { "pos": "동사", "ko": "(~로) 향하게 하다" }
+  ],
+  "forms": ["directs", "directed", "directing", "directly", "indirect"],
+  "synonyms": ["immediate", "straight", "instruct"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#18.0", "surface": "directly", "pos": "부사", "sense": "(directly) 직접, 곧바로" },
+   { "sid": "lesson-d3#21.1", "surface": "direct", "pos": "동사", "sense": "지시하다, (~하도록) 시키다" },
+   { "sid": "vocab:direct.0", "surface": "direct", "pos": "형용사", "sense": "직접적인, 바로 이어지는" },
+   { "sid": "lesson-d2#14.2", "surface": "directly", "pos": "부사", "sense": "(directly) 직접, 곧바로" }
+  ]
+ },
+ {
+  "lemma": "direction",
+  "skip": null,
+  "word": "direction",
+  "pos": ["명사"],
+  "ipa": "dəˈrekʃn",
+  "meaning": "① 방향 ② 지시, 지침 ③ (영화·연극의) 연출",
+  "short": "방향",
+  "senses": [
+   { "pos": "명사", "ko": "방향" },
+   { "pos": "명사", "ko": "지시, 지침" },
+   { "pos": "명사", "ko": "(영화·연극의) 연출" }
+  ],
+  "forms": ["directions", "direct"],
+  "synonyms": ["way", "course"],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#7.1", "surface": "directions", "pos": "명사", "sense": "방향" }
+  ]
+ },
+ {
+  "lemma": "directory",
+  "skip": null,
+  "word": "directory",
+  "pos": ["명사"],
+  "ipa": "dəˈrektəri",
+  "meaning": "디렉터리, 폴더 — 파일을 묶어 두는 경로",
+  "short": "디렉터리, 폴더",
+  "senses": [
+   { "pos": "명사", "ko": "디렉터리, 폴더" },
+   { "pos": "명사", "ko": "(이름·주소를 모은) 안내 목록, 명부" }
+  ],
+  "forms": ["directories", "subdirectory", "subdirectories"],
+  "synonyms": ["folder"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#5.0", "surface": "directory", "pos": "명사", "sense": "디렉터리, 폴더" },
+   { "sid": "sample01#13.4", "surface": "directory", "pos": "명사", "sense": "디렉터리, 폴더" },
+   { "sid": "mock04#14.4", "surface": "directory", "pos": "명사", "sense": "디렉터리, 폴더" },
+   { "sid": "lesson-d1#40.0", "surface": "directory", "pos": "명사", "sense": "디렉터리, 폴더" }
+  ]
+ },
+ {
+  "lemma": "disable",
+  "skip": null,
+  "word": "disable",
+  "pos": ["동사"],
+  "ipa": "dɪsˈeɪbl",
+  "meaning": "(기능을) 끄다, 비활성화하다",
+  "short": "끄다, 비활성화하다",
+  "senses": [
+   { "pos": "동사", "ko": "(기능을) 끄다, 비활성화하다" },
+   { "pos": "동사", "ko": "(몸을) 쓰지 못하게 하다, 무력하게 하다" }
+  ],
+  "forms": ["disables", "disabled", "disabling"],
+  "synonyms": ["deactivate", "turn off", "switch off"],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#4.6", "surface": "Disable", "pos": "동사", "sense": "(기능을) 끄다, 비활성화하다" },
+   { "sid": "mock04#50.5", "surface": "disable", "pos": "동사", "sense": "(기능을) 끄다, 비활성화하다" },
+   { "sid": "lesson-d4#20.6", "surface": "disabled", "pos": "동사", "sense": "(기능을) 끄다, 비활성화하다" },
+   { "sid": "lesson-d3#3.1", "surface": "disable", "pos": "동사", "sense": "(기능을) 끄다, 비활성화하다" }
+  ]
+ },
+ {
+  "lemma": "disagree",
+  "skip": null,
+  "word": "disagree",
+  "pos": ["동사"],
+  "ipa": "ˌdɪsəˈɡriː",
+  "meaning": "① (내용이) 서로 맞지 않다, 어긋나다 ② 의견이 다르다, 동의하지 않다",
+  "short": "어긋나다, 의견이 다르다",
+  "senses": [
+   { "pos": "동사", "ko": "(내용이) 서로 맞지 않다, 어긋나다" },
+   { "pos": "동사", "ko": "의견이 다르다, 동의하지 않다" }
+  ],
+  "forms": ["disagrees", "disagreed", "disagreeing", "disagreement"],
+  "synonyms": ["conflict", "differ", "contradict"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#22.1", "surface": "disagree", "pos": "동사", "sense": "(내용이) 서로 맞지 않다, 어긋나다" }
+  ]
+ },
+ {
+  "lemma": "disambiguate",
+  "skip": null,
+  "word": "disambiguate",
+  "pos": ["동사"],
+  "ipa": "ˌdɪsæmˈbɪɡjueɪt",
+  "meaning": "모호함을 없애다, (여러 후보 중) 어느 쪽인지 확정하다",
+  "short": "모호함을 없애다, 확정하다",
+  "senses": [
+   { "pos": "동사", "ko": "모호함을 없애다, (어느 쪽인지) 확정하다" },
+   { "pos": "명사", "ko": "(disambiguation) 모호성 해소, 구별" }
+  ],
+  "forms": ["disambiguates", "disambiguated", "disambiguating", "disambiguation"],
+  "synonyms": ["clarify", "resolve"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#10.5", "surface": "disambiguate", "pos": "동사", "sense": "모호함을 없애다, (어느 쪽인지) 확정하다" },
+   { "sid": "lesson-d2#5.6", "surface": "disambiguation", "pos": "명사", "sense": "(disambiguation) 모호성 해소, 구별" },
+   { "sid": "lesson-d2#6.4", "surface": "disambiguate", "pos": "동사", "sense": "모호함을 없애다, (어느 쪽인지) 확정하다" }
+  ]
+ },
+ {
+  "lemma": "discard",
+  "skip": null,
+  "word": "discard",
+  "pos": ["동사"],
+  "ipa": "dɪˈskɑːrd",
+  "meaning": "버리다, 폐기하다",
+  "short": "버리다, 폐기하다",
+  "senses": [
+   { "pos": "동사", "ko": "버리다, 폐기하다" }
+  ],
+  "forms": ["discards", "discarded", "discarding"],
+  "synonyms": ["throw away", "drop", "dispose of"],
+  "domain": "삭제·제거",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#57.2", "surface": "discards", "pos": "동사", "sense": "버리다, 폐기하다" },
+   { "sid": "lesson-d5#39.6", "surface": "discard", "pos": "동사", "sense": "버리다, 폐기하다" },
+   { "sid": "mock04#35.3", "surface": "discarded", "pos": "동사", "sense": "버리다, 폐기하다" },
+   { "sid": "lesson-d5#19.7", "surface": "discarded", "pos": "동사", "sense": "버리다, 폐기하다" }
+  ]
+ },
+ {
+  "lemma": "disclaimer",
+  "skip": null,
+  "word": "disclaimer",
+  "pos": ["명사"],
+  "ipa": "dɪsˈkleɪmər",
+  "meaning": "면책 문구, 주의 문구",
+  "short": "면책 문구, 주의 문구",
+  "senses": [
+   { "pos": "명사", "ko": "면책 문구, 주의 문구" }
+  ],
+  "forms": ["disclaimers", "disclaim"],
+  "synonyms": ["caveat", "warning"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#6.5", "surface": "disclaimer", "pos": "명사", "sense": "면책 문구, 주의 문구" }
+  ]
+ },
+ {
+  "lemma": "discount",
+  "skip": null,
+  "word": "discount",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈdɪskaʊnt",
+  "meaning": "① 할인(하다) — discounted: 할인된 ② 가볍게 여기다",
+  "short": "할인",
+  "senses": [
+   { "pos": "명사", "ko": "할인" },
+   { "pos": "형용사", "ko": "(discounted) 할인된" },
+   { "pos": "동사", "ko": "할인하다" },
+   { "pos": "동사", "ko": "(중요하지 않다고) 가볍게 여기다" }
+  ],
+  "forms": ["discounts", "discounted", "discounting"],
+  "synonyms": ["reduction", "markdown"],
+  "domain": "비즈니스·업무",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#31.0", "surface": "discount", "pos": "명사", "sense": "할인" },
+   { "sid": "mock04#57.7", "surface": "discounted", "pos": "형용사", "sense": "(discounted) 할인된" },
+   { "sid": "lesson-d5#23.4", "surface": "discount", "pos": "명사", "sense": "할인" },
+   { "sid": "lesson-d4#33.1", "surface": "discount", "pos": "명사", "sense": "할인" }
+  ]
+ },
+ {
+  "lemma": "discover",
+  "skip": null,
+  "word": "discover",
+  "pos": ["동사"],
+  "ipa": "dɪˈskʌvər",
+  "meaning": "발견하다, (탐색해서) 알아내다",
+  "short": "발견하다, 알아내다",
+  "senses": [
+   { "pos": "동사", "ko": "발견하다, (탐색해서) 알아내다" }
+  ],
+  "forms": ["discovers", "discovered", "discovering", "discovery"],
+  "synonyms": ["find", "detect", "uncover"],
+  "domain": "검색·조회",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#31.1", "surface": "discovers", "pos": "동사", "sense": "발견하다, (탐색해서) 알아내다" },
+   { "sid": "mock04#37.5", "surface": "discovered", "pos": "동사", "sense": "발견하다, (탐색해서) 알아내다" },
+   { "sid": "lesson-d2#24.3", "surface": "discovers", "pos": "동사", "sense": "발견하다, (탐색해서) 알아내다" },
+   { "sid": "lesson-d5#27.4", "surface": "discovers", "pos": "동사", "sense": "발견하다, (탐색해서) 알아내다" }
+  ]
+ },
+ {
+  "lemma": "discovery",
+  "skip": null,
+  "word": "discovery",
+  "pos": ["명사"],
+  "ipa": "dɪˈskʌvəri",
+  "meaning": "발견, 탐색 (단계) — 필요한 파일·위치를 찾아내는 과정",
+  "short": "탐색(단계), 발견",
+  "senses": [
+   { "pos": "명사", "ko": "탐색 (단계), 필요한 것을 찾아내는 과정" },
+   { "pos": "명사", "ko": "발견, 발견한 것" }
+  ],
+  "forms": ["discoveries", "discover"],
+  "synonyms": ["exploration", "finding"],
+  "domain": "검색·조회",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#18.2", "surface": "discovery", "pos": "명사", "sense": "탐색 (단계), 필요한 것을 찾아내는 과정" },
+   { "sid": "lesson-d5#27.6", "surface": "discoveries", "pos": "명사", "sense": "발견, 발견한 것" },
+   { "sid": "mock04#19.6", "surface": "discovery", "pos": "명사", "sense": "탐색 (단계), 필요한 것을 찾아내는 과정" },
+   { "sid": "mock04#44.3", "surface": "discovery", "pos": "명사", "sense": "탐색 (단계), 필요한 것을 찾아내는 과정" }
+  ]
+ },
+ {
+  "lemma": "discrepancy",
+  "skip": null,
+  "word": "discrepancy",
+  "pos": ["명사"],
+  "ipa": "dɪˈskrepənsi",
+  "meaning": "(값·내용 사이의) 불일치, 차이",
+  "short": "불일치, 차이",
+  "senses": [
+   { "pos": "명사", "ko": "(값·내용 사이의) 불일치, 차이" }
+  ],
+  "forms": ["discrepancies"],
+  "synonyms": ["inconsistency", "mismatch", "conflict"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#22.3", "surface": "discrepancy", "pos": "명사", "sense": "(값·내용 사이의) 불일치, 차이" },
+   { "sid": "lesson-d5#38.2", "surface": "discrepancy", "pos": "명사", "sense": "(값·내용 사이의) 불일치, 차이" },
+   { "sid": "lesson-d5#37.3", "surface": "discrepancy", "pos": "명사", "sense": "(값·내용 사이의) 불일치, 차이" }
+  ]
+ },
+ {
+  "lemma": "discriminate",
+  "skip": null,
+  "word": "discriminate",
+  "pos": ["동사"],
+  "ipa": "dɪˈskrɪmɪneɪt",
+  "meaning": "구별하다, 가려내다 / 차별하다",
+  "short": "구별하다, 가려내다",
+  "senses": [
+   { "pos": "동사", "ko": "구별하다, 가려내다" },
+   { "pos": "동사", "ko": "차별하다" }
+  ],
+  "forms": ["discriminates", "discriminated", "discriminating", "discrimination"],
+  "synonyms": ["distinguish", "differentiate", "tell apart"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#15.3", "surface": "discriminates", "pos": "동사", "sense": "구별하다, 가려내다" }
+  ]
+ },
+ {
+  "lemma": "discuss",
+  "skip": null,
+  "word": "discuss",
+  "pos": ["동사"],
+  "ipa": "dɪˈskʌs",
+  "meaning": "논의하다, (~에 대해) 이야기하다",
+  "short": "논의하다, 이야기하다",
+  "senses": [
+   { "pos": "동사", "ko": "논의하다, (~에 대해) 이야기하다" }
+  ],
+  "forms": ["discusses", "discussed", "discussing", "discussion"],
+  "synonyms": ["talk about", "go over"],
+  "domain": "요청·소통",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#12.1", "surface": "discussed", "pos": "동사", "sense": "논의하다, (~에 대해) 이야기하다" }
+  ]
+ },
+ {
+  "lemma": "disguise",
+  "skip": null,
+  "word": "disguise",
+  "pos": ["명사", "동사"],
+  "ipa": "dɪsˈɡaɪz",
+  "meaning": "위장 (in disguise: 겉모습만 다른, 위장한) / 위장하다",
+  "short": "위장, 위장하다",
+  "senses": [
+   { "pos": "명사", "ko": "위장, 변장 (in disguise: 겉모습만 다른)" },
+   { "pos": "동사", "ko": "위장하다, 숨기다" }
+  ],
+  "forms": ["disguises", "disguised", "disguising"],
+  "synonyms": ["camouflage", "mask", "conceal"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "disk",
+  "skip": null,
+  "word": "disk",
+  "pos": ["명사"],
+  "ipa": "dɪsk",
+  "meaning": "① (컴퓨터 저장 장치) 디스크 (on disk: 디스크에 저장된) ② 원반, 원판",
+  "short": "디스크(저장 장치)",
+  "senses": [
+   { "pos": "명사", "ko": "(컴퓨터 저장 장치) 디스크" },
+   { "pos": "명사", "ko": "원반, 원판" }
+  ],
+  "forms": ["disks", "disc"],
+  "synonyms": ["drive", "storage"],
+  "domain": "저장·기록",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#25.2", "surface": "disk", "pos": "명사", "sense": "(컴퓨터 저장 장치) 디스크" },
+   { "sid": "lesson-d3#1.6", "surface": "disk", "pos": "명사", "sense": "(컴퓨터 저장 장치) 디스크" },
+   { "sid": "lesson-d1#38.5", "surface": "disk", "pos": "명사", "sense": "(컴퓨터 저장 장치) 디스크" },
+   { "sid": "lesson-d1#41.6", "surface": "disk", "pos": "명사", "sense": "(컴퓨터 저장 장치) 디스크" }
+  ]
+ },
+ {
+  "lemma": "dismiss",
+  "skip": null,
+  "word": "dismiss",
+  "pos": ["동사"],
+  "ipa": "dɪsˈmɪs",
+  "meaning": "(가볍게) 무시하다, 일축하다",
+  "short": "무시하다, 일축하다",
+  "senses": [
+   { "pos": "동사", "ko": "(가볍게) 무시하다, 일축하다" },
+   { "pos": "명사", "ko": "(dismissal) 기각, 무시" },
+   { "pos": "동사", "ko": "해고하다, 해산시키다" }
+  ],
+  "forms": ["dismisses", "dismissed", "dismissing", "dismissal"],
+  "synonyms": ["reject", "ignore", "disregard"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#25.0", "surface": "dismissed", "pos": "동사", "sense": "(가볍게) 무시하다, 일축하다" },
+   { "sid": "lesson-d4#26.1", "surface": "dismissal", "pos": "명사", "sense": "(dismissal) 기각, 무시" },
+   { "sid": "lesson-d4#7.0", "surface": "dismissing", "pos": "동사", "sense": "(가볍게) 무시하다, 일축하다" },
+   { "sid": "lesson-d4#26.0", "surface": "dismiss", "pos": "동사", "sense": "(가볍게) 무시하다, 일축하다" }
+  ]
+ },
+ {
+  "lemma": "dispatch",
+  "skip": null,
+  "word": "dispatch",
+  "pos": ["동사"],
+  "ipa": "dɪˈspætʃ",
+  "meaning": "(작업·요청을) 보내다, 배정하다",
+  "short": "보내다, 배정하다",
+  "senses": [
+   { "pos": "동사", "ko": "(작업·요청을) 보내다, 배정하다" },
+   { "pos": "명사", "ko": "발송, 전달" }
+  ],
+  "forms": ["dispatches", "dispatched", "dispatching"],
+  "synonyms": ["send", "assign", "route"],
+  "domain": "이동·전달",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#23.1", "surface": "dispatches", "pos": "동사", "sense": "(작업·요청을) 보내다, 배정하다" },
+   { "sid": "mock04#32.6", "surface": "dispatch", "pos": "명사", "sense": "발송, 전달" },
+   { "sid": "lesson-d5#36.0", "surface": "dispatches", "pos": "동사", "sense": "(작업·요청을) 보내다, 배정하다" },
+   { "sid": "mock04#27.5", "surface": "dispatches", "pos": "동사", "sense": "(작업·요청을) 보내다, 배정하다" }
+  ]
+ },
+ {
+  "lemma": "display",
+  "skip": null,
+  "word": "display",
+  "pos": ["동사", "명사"],
+  "ipa": "dɪˈspleɪ",
+  "meaning": "① 보여 주다, 표시하다 ② 화면, 디스플레이 ③ 전시, 진열",
+  "short": "보여 주다, 표시하다",
+  "senses": [
+   { "pos": "동사", "ko": "보여 주다, 표시하다" },
+   { "pos": "명사", "ko": "화면, 디스플레이" },
+   { "pos": "명사", "ko": "전시, 진열" }
+  ],
+  "forms": ["displays", "displayed", "displaying"],
+  "synonyms": ["show", "present"],
+  "domain": "요청·소통",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#30.4", "surface": "display", "pos": "동사", "sense": "보여 주다, 표시하다" }
+  ]
+ },
+ {
+  "lemma": "dispute",
+  "skip": null,
+  "word": "dispute",
+  "pos": ["명사", "동사"],
+  "ipa": "dɪˈspjuːt",
+  "meaning": "이의 제기, 분쟁 / 이의를 제기하다",
+  "short": "논란이 있는, 분쟁",
+  "senses": [
+   { "pos": "형용사", "ko": "(disputed) 논란이 있는, 이견이 있는" },
+   { "pos": "명사", "ko": "이의 제기, 분쟁" },
+   { "pos": "동사", "ko": "이의를 제기하다, 반박하다" }
+  ],
+  "forms": ["disputes", "disputed", "disputing"],
+  "synonyms": ["contest", "challenge", "disagreement"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#41.5", "surface": "disputed", "pos": "형용사", "sense": "(disputed) 논란이 있는, 이견이 있는" },
+   { "sid": "vocab:dispute.0", "surface": "disputes", "pos": "명사", "sense": "이의 제기, 분쟁" },
+   { "sid": "lesson-d5#41.6", "surface": "disputed", "pos": "형용사", "sense": "(disputed) 논란이 있는, 이견이 있는" }
+  ]
+ },
+ {
+  "lemma": "distill",
+  "skip": null,
+  "word": "distill",
+  "pos": ["동사"],
+  "ipa": "dɪˈstɪl",
+  "meaning": "① 핵심만 추리다 ② (모델) 증류하다 — distilled model: 큰 모델의 능력을 작은 모델에 옮겨 담은 모델",
+  "short": "핵심만 추리다, 증류하다",
+  "senses": [
+   { "pos": "동사", "ko": "핵심만 추리다, 압축하다" },
+   { "pos": "동사", "ko": "(모델을) 증류하다" },
+   { "pos": "동사", "ko": "(액체를) 증류하다" }
+  ],
+  "forms": ["distills", "distilled", "distilling", "distillation"],
+  "synonyms": ["condense", "boil down", "extract"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "distinct",
+  "skip": null,
+  "word": "distinct",
+  "pos": ["형용사"],
+  "ipa": "dɪˈstɪŋkt",
+  "meaning": "뚜렷이 구별되는, 서로 겹치지 않는",
+  "short": "구별되는, 서로 다른",
+  "senses": [
+   { "pos": "형용사", "ko": "뚜렷이 구별되는, 서로 겹치지 않는" },
+   { "pos": "형용사", "ko": "(distinctive) 독특한, 특유의" },
+   { "pos": "형용사", "ko": "분명한, 뚜렷한" }
+  ],
+  "forms": ["distinctive", "distinctly", "distinction"],
+  "synonyms": ["separate", "different", "clear"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#19.4", "surface": "distinct", "pos": "형용사", "sense": "뚜렷이 구별되는, 서로 겹치지 않는" },
+   { "sid": "lesson-d5#25.0", "surface": "distinctive", "pos": "형용사", "sense": "(distinctive) 독특한, 특유의" },
+   { "sid": "mock04#10.1", "surface": "distinct", "pos": "형용사", "sense": "뚜렷이 구별되는, 서로 겹치지 않는" },
+   { "sid": "lesson-d4#29.5", "surface": "distinct", "pos": "형용사", "sense": "뚜렷이 구별되는, 서로 겹치지 않는" }
+  ]
+ },
+ {
+  "lemma": "distinguish",
+  "skip": null,
+  "word": "distinguish",
+  "pos": ["동사"],
+  "ipa": "dɪˈstɪŋɡwɪʃ",
+  "meaning": "구별하다, 차이를 알아보다",
+  "short": "구별하다",
+  "senses": [
+   { "pos": "동사", "ko": "구별하다, 차이를 알아보다" },
+   { "pos": "동사", "ko": "(oneself) 두각을 나타내다" }
+  ],
+  "forms": ["distinguishes", "distinguished", "distinguishing", "distinguishable"],
+  "synonyms": ["differentiate", "discriminate", "tell apart"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#2.6", "surface": "distinguish", "pos": "동사", "sense": "구별하다, 차이를 알아보다" }
+  ]
+ }
+]

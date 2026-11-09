@@ -1,0 +1,961 @@
+[
+ {
+  "lemma": "natural-language",
+  "skip": null,
+  "word": "natural-language",
+  "pos": ["형용사"],
+  "ipa": "ˌnætʃrəl ˈlæŋɡwɪdʒ",
+  "meaning": "자연어로 된, 자연어의 — (코드·구조화 데이터가 아닌) 사람이 쓰는 말로 된",
+  "short": "자연어로 된",
+  "senses": [
+   { "pos": "형용사", "ko": "자연어로 된, 자연어의" }
+  ],
+  "forms": ["natural language"],
+  "synonyms": ["plain-language"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#17.1", "surface": "natural-language", "pos": "형용사", "sense": "자연어로 된, 자연어의" },
+   { "sid": "lesson-d4#17.2", "surface": "natural-language", "pos": "형용사", "sense": "자연어로 된, 자연어의" },
+   { "sid": "lesson-d4#17.5", "surface": "natural-language", "pos": "형용사", "sense": "자연어로 된, 자연어의" },
+   { "sid": "lesson-d4#17.4", "surface": "natural-language", "pos": "형용사", "sense": "자연어로 된, 자연어의" }
+  ]
+ },
+ {
+  "lemma": "near",
+  "skip": null,
+  "word": "near",
+  "pos": ["형용사", "전치사", "부사"],
+  "ipa": "nɪr",
+  "meaning": "① (near-) 거의 ~인, ~에 가까운 ② 가까운 ③ ~ 근처에",
+  "short": "거의 ~인, 가까운",
+  "senses": [
+   { "pos": "형용사", "ko": "(near-) 거의 ~인, ~에 가까운" },
+   { "pos": "형용사", "ko": "(거리·시간이) 가까운" },
+   { "pos": "전치사", "ko": "~ 근처에, ~ 가까이에" }
+  ],
+  "forms": ["nearer", "nearest", "nearly", "nearby"],
+  "synonyms": ["close", "almost"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "nearby",
+  "skip": null,
+  "word": "nearby",
+  "pos": ["형용사", "부사"],
+  "ipa": "ˌnɪrˈbaɪ",
+  "meaning": "① 근처의, 가까운 ② 근처에",
+  "short": "근처의, 가까운",
+  "senses": [
+   { "pos": "형용사", "ko": "근처의, 가까운" },
+   { "pos": "부사", "ko": "근처에, 가까이에" }
+  ],
+  "forms": [],
+  "synonyms": ["adjacent", "neighboring", "surrounding"],
+  "domain": "구조·구성·부분",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#4.4", "surface": "nearby", "pos": "형용사", "sense": "근처의, 가까운" }
+  ]
+ },
+ {
+  "lemma": "nearly",
+  "skip": null,
+  "word": "nearly",
+  "pos": ["부사"],
+  "ipa": "ˈnɪrli",
+  "meaning": "거의 (not nearly: ~에 훨씬 못 미치는)",
+  "short": "거의",
+  "senses": [
+   { "pos": "부사", "ko": "거의" },
+   { "pos": "부사", "ko": "(not nearly) ~에 훨씬 못 미치는" }
+  ],
+  "forms": [],
+  "synonyms": ["almost", "virtually", "practically"],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#18.1", "surface": "nearly", "pos": "부사", "sense": "거의" },
+   { "sid": "lesson-d5#2.6", "surface": "nearly", "pos": "부사", "sense": "거의" }
+  ]
+ },
+ {
+  "lemma": "necessary",
+  "skip": null,
+  "word": "necessary",
+  "pos": ["형용사"],
+  "ipa": "ˈnesəseri",
+  "meaning": "① 필요한, 필수적인 ② 필연적인, 불가피한",
+  "short": "필요한, 필수적인",
+  "senses": [
+   { "pos": "형용사", "ko": "필요한, 필수적인" },
+   { "pos": "형용사", "ko": "필연적인, 불가피한" }
+  ],
+  "forms": ["necessarily", "necessity", "unnecessary"],
+  "synonyms": ["required", "needed", "essential"],
+  "domain": "상태·성질",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#8.6", "surface": "necessary", "pos": "형용사", "sense": "필요한, 필수적인" },
+   { "sid": "lesson-d1#24.8", "surface": "necessary", "pos": "형용사", "sense": "필요한, 필수적인" }
+  ]
+ },
+ {
+  "lemma": "need",
+  "skip": null,
+  "word": "need",
+  "pos": ["동사", "명사"],
+  "ipa": "niːd",
+  "meaning": "① 필요로 하다 ② (need to) ~해야 하다 ③ 필요, 요구",
+  "short": "필요로 하다, ~해야 하다",
+  "senses": [
+   { "pos": "동사", "ko": "필요로 하다" },
+   { "pos": "동사", "ko": "(need to) ~해야 하다" },
+   { "pos": "명사", "ko": "필요, 요구(사항)" }
+  ],
+  "forms": ["needs", "needed", "needing"],
+  "synonyms": ["require"],
+  "domain": "일반",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#22.1", "surface": "need", "pos": "동사", "sense": "필요로 하다" },
+   { "sid": "lesson-d2#30.0", "surface": "need", "pos": "동사", "sense": "(need to) ~해야 하다" },
+   { "sid": "mock04#16.1", "surface": "needs", "pos": "동사", "sense": "필요로 하다" },
+   { "sid": "sample01#15.0", "surface": "needs", "pos": "동사", "sense": "(need to) ~해야 하다" }
+  ]
+ },
+ {
+  "lemma": "negative",
+  "skip": null,
+  "word": "negative",
+  "pos": ["형용사"],
+  "ipa": "ˈneɡətɪv",
+  "meaning": "① 부정적인 ② 음수의, (검사가) 음성의",
+  "short": "부정적인",
+  "senses": [
+   { "pos": "형용사", "ko": "부정적인" },
+   { "pos": "형용사", "ko": "음수의, (검사가) 음성의" }
+  ],
+  "forms": ["negatively"],
+  "synonyms": ["adverse", "unfavorable"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#11.0", "surface": "negative", "pos": "형용사", "sense": "부정적인" },
+   { "sid": "mock04#50.7", "surface": "negative", "pos": "형용사", "sense": "부정적인" },
+   { "sid": "lesson-d5#11.6", "surface": "negative", "pos": "형용사", "sense": "부정적인" }
+  ]
+ },
+ {
+  "lemma": "neighbour",
+  "skip": null,
+  "word": "neighbouring",
+  "pos": ["형용사"],
+  "ipa": "ˈneɪbərɪŋ",
+  "meaning": "인접한, 바로 옆의 (미국식 철자 neighboring)",
+  "short": "인접한, 바로 옆의",
+  "senses": [
+   { "pos": "형용사", "ko": "인접한, 바로 옆의" }
+  ],
+  "forms": ["neighboring", "neighbour", "neighbor"],
+  "synonyms": ["adjacent", "nearby", "surrounding"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#28.1", "surface": "neighbouring", "pos": "형용사", "sense": "인접한, 바로 옆의" },
+   { "sid": "lesson-d2#29.4", "surface": "neighbouring", "pos": "형용사", "sense": "인접한, 바로 옆의" }
+  ]
+ },
+ {
+  "lemma": "neither",
+  "skip": null,
+  "word": "neither",
+  "pos": ["한정사", "대명사", "접속사"],
+  "ipa": "ˈniːðər",
+  "meaning": "① (둘 중) 어느 ~도 아닌 ② (둘 중) 어느 쪽도 ~ 아님 ③ (neither A nor B) A도 B도 아니다",
+  "short": "(둘 중) 어느 쪽도 아닌",
+  "senses": [
+   { "pos": "한정사", "ko": "(둘 중) 어느 ~도 아닌" },
+   { "pos": "대명사", "ko": "(둘 중) 어느 쪽도 ~ 아님" },
+   { "pos": "접속사", "ko": "(neither A nor B) A도 B도 아니다" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#12.5", "surface": "neither", "pos": "한정사", "sense": "(둘 중) 어느 ~도 아닌" },
+   { "sid": "lesson-d2#23.5", "surface": "Neither", "pos": "한정사", "sense": "(둘 중) 어느 ~도 아닌" },
+   { "sid": "lesson-d3#10.6", "surface": "Neither", "pos": "한정사", "sense": "(둘 중) 어느 ~도 아닌" }
+  ]
+ },
+ {
+  "lemma": "nested",
+  "skip": null,
+  "word": "nested",
+  "pos": ["형용사"],
+  "ipa": "ˈnestɪd",
+  "meaning": "중첩된 — 안에 또 들어 있는",
+  "short": "중첩된, 안에 들어 있는",
+  "senses": [
+   { "pos": "형용사", "ko": "중첩된, 안에 또 들어 있는" },
+   { "pos": "동사", "ko": "(nest) 안에 넣다, 중첩시키다" }
+  ],
+  "forms": ["nest", "nesting"],
+  "synonyms": ["embedded"],
+  "domain": "구조·구성·부분",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d3#17.6", "surface": "nested", "pos": "형용사", "sense": "중첩된, 안에 또 들어 있는" },
+   { "sid": "lesson-d4#6.3", "surface": "nested", "pos": "형용사", "sense": "중첩된, 안에 또 들어 있는" },
+   { "sid": "lesson-d3#14.0", "surface": "nested", "pos": "형용사", "sense": "중첩된, 안에 또 들어 있는" },
+   { "sid": "lesson-d3#15.0", "surface": "nested", "pos": "형용사", "sense": "중첩된, 안에 또 들어 있는" }
+  ]
+ },
+ {
+  "lemma": "network",
+  "skip": null,
+  "word": "network",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈnetwɜːrk",
+  "meaning": "① (컴퓨터) 네트워크, 통신망 ② (시설·조직의) 망, 연결망 ③ 인맥을 쌓다",
+  "short": "네트워크, 통신망",
+  "senses": [
+   { "pos": "명사", "ko": "(컴퓨터) 네트워크, 통신망" },
+   { "pos": "명사", "ko": "(시설·조직의) 망, 연결망" },
+   { "pos": "동사", "ko": "인맥을 쌓다" }
+  ],
+  "forms": ["networks", "networked", "networking"],
+  "synonyms": ["grid", "web"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#11.3", "surface": "network", "pos": "명사", "sense": "(컴퓨터) 네트워크, 통신망" },
+   { "sid": "lesson-d1#9.0", "surface": "networks", "pos": "명사", "sense": "(시설·조직의) 망, 연결망" }
+  ]
+ },
+ {
+  "lemma": "never",
+  "skip": null,
+  "word": "never",
+  "pos": ["부사"],
+  "ipa": "ˈnevər",
+  "meaning": "① 결코(절대) ~ 않다 ② 한 번도 ~ 않다",
+  "short": "결코 ~ 않다, 한 번도 ~ 않다",
+  "senses": [
+   { "pos": "부사", "ko": "결코 ~ 않다, 절대 ~ 않다" },
+   { "pos": "부사", "ko": "한 번도 ~ 않다" }
+  ],
+  "forms": [],
+  "synonyms": ["not ever"],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "sample01#16.0", "surface": "Never", "pos": "부사", "sense": "결코 ~ 않다, 절대 ~ 않다" },
+   { "sid": "lesson-d3#8.1", "surface": "never", "pos": "부사", "sense": "한 번도 ~ 않다" },
+   { "sid": "lesson-d5#8.0", "surface": "never", "pos": "부사", "sense": "한 번도 ~ 않다" },
+   { "sid": "mock04#1.3", "surface": "never", "pos": "부사", "sense": "결코 ~ 않다, 절대 ~ 않다" }
+  ]
+ },
+ {
+  "lemma": "new",
+  "skip": null,
+  "word": "new",
+  "pos": ["형용사"],
+  "ipa": "nuː",
+  "meaning": "① 새로운, 새로 생긴 ② (newer·newest) 더 최근의, 최신의 ③ 처음 보는, 낯선",
+  "short": "새로운",
+  "senses": [
+   { "pos": "형용사", "ko": "새로운, 새로 생긴" },
+   { "pos": "형용사", "ko": "(newer·newest) 더 최근의, 최신의" },
+   { "pos": "형용사", "ko": "처음 보는, 낯선" }
+  ],
+  "forms": ["newer", "newest", "newly"],
+  "synonyms": ["fresh", "recent"],
+  "domain": "상태·성질",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#16.1", "surface": "new", "pos": "형용사", "sense": "새로운, 새로 생긴" },
+   { "sid": "lesson-d1#30.1", "surface": "newer", "pos": "형용사", "sense": "(newer·newest) 더 최근의, 최신의" },
+   { "sid": "lesson-d4#10.1", "surface": "new", "pos": "형용사", "sense": "처음 보는, 낯선" },
+   { "sid": "lesson-d5#1.0", "surface": "newest", "pos": "형용사", "sense": "(newer·newest) 더 최근의, 최신의" }
+  ]
+ },
+ {
+  "lemma": "newly",
+  "skip": null,
+  "word": "newly",
+  "pos": ["부사"],
+  "ipa": "ˈnuːli",
+  "meaning": "새로, 최근에 (newly + 과거분사: 새로 ~된)",
+  "short": "새로, 최근에",
+  "senses": [
+   { "pos": "부사", "ko": "새로, 최근에 (막 ~된)" }
+  ],
+  "forms": [],
+  "synonyms": ["recently", "freshly"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#45.2", "surface": "newly", "pos": "부사", "sense": "새로, 최근에 (막 ~된)" },
+   { "sid": "lesson-d5#26.6", "surface": "newly", "pos": "부사", "sense": "새로, 최근에 (막 ~된)" },
+   { "sid": "lesson-d2#31.0", "surface": "newly", "pos": "부사", "sense": "새로, 최근에 (막 ~된)" },
+   { "sid": "lesson-d3#27.0", "surface": "newly", "pos": "부사", "sense": "새로, 최근에 (막 ~된)" }
+  ]
+ },
+ {
+  "lemma": "news",
+  "skip": null,
+  "word": "news",
+  "pos": ["명사"],
+  "ipa": "nuːz",
+  "meaning": "① 뉴스, 보도 ② 소식, 새로운 정보",
+  "short": "뉴스, 소식",
+  "senses": [
+   { "pos": "명사", "ko": "뉴스, 보도" },
+   { "pos": "명사", "ko": "소식, 새로운 정보" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d5#20.0", "surface": "news", "pos": "명사", "sense": "뉴스, 보도" }
+  ]
+ },
+ {
+  "lemma": "next",
+  "skip": null,
+  "word": "next",
+  "pos": ["형용사", "부사", "전치사구"],
+  "ipa": "nekst",
+  "meaning": "① 다음의 ② 다음에, 그다음으로 ③ (next to) ~ 옆에",
+  "short": "다음의, 다음에",
+  "senses": [
+   { "pos": "형용사", "ko": "다음의" },
+   { "pos": "부사", "ko": "다음에, 그다음으로" },
+   { "pos": "전치사구", "ko": "(next to) ~ 옆에" }
+  ],
+  "forms": [],
+  "synonyms": ["following", "subsequent"],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d2#29.2", "surface": "next", "pos": "형용사", "sense": "다음의" },
+   { "sid": "lesson-d1#1.2", "surface": "next", "pos": "부사", "sense": "다음에, 그다음으로" },
+   { "sid": "lesson-d3#17.0", "surface": "next", "pos": "전치사구", "sense": "(next to) ~ 옆에" },
+   { "sid": "lesson-d5#20.1", "surface": "next", "pos": "형용사", "sense": "다음의" }
+  ]
+ },
+ {
+  "lemma": "night",
+  "skip": null,
+  "word": "night",
+  "pos": ["명사"],
+  "ipa": "naɪt",
+  "meaning": "① 밤 ② (once a night 등) 하룻밤, 하룻밤 단위",
+  "short": "밤",
+  "senses": [
+   { "pos": "명사", "ko": "밤" },
+   { "pos": "명사", "ko": "(once a night 등) 하룻밤, 하룻밤 단위" }
+  ],
+  "forms": ["nights", "nightly"],
+  "synonyms": [],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#32.0", "surface": "night", "pos": "명사", "sense": "밤" },
+   { "sid": "lesson-d4#28.3", "surface": "night", "pos": "명사", "sense": "(once a night 등) 하룻밤, 하룻밤 단위" },
+   { "sid": "lesson-d4#27.5", "surface": "nights", "pos": "명사", "sense": "밤" }
+  ]
+ },
+ {
+  "lemma": "nightly",
+  "skip": null,
+  "word": "nightly",
+  "pos": ["형용사", "부사"],
+  "ipa": "ˈnaɪtli",
+  "meaning": "① 매일 밤의, 밤마다 하는 ② 매일 밤, 밤마다",
+  "short": "매일 밤의, 야간의",
+  "senses": [
+   { "pos": "형용사", "ko": "매일 밤의, 밤마다 하는" },
+   { "pos": "부사", "ko": "매일 밤, 밤마다" }
+  ],
+  "forms": [],
+  "synonyms": ["overnight"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#27.0", "surface": "nightly", "pos": "형용사", "sense": "매일 밤의, 밤마다 하는" },
+   { "sid": "lesson-d4#30.0", "surface": "nightly", "pos": "형용사", "sense": "매일 밤의, 밤마다 하는" },
+   { "sid": "lesson-d4#31.3", "surface": "Nightly", "pos": "형용사", "sense": "매일 밤의, 밤마다 하는" }
+  ]
+ },
+ {
+  "lemma": "nitpick",
+  "skip": null,
+  "word": "nitpick",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈnɪtpɪk",
+  "meaning": "사소한 트집을 잡다 / 사소한 지적 (nit)",
+  "short": "사소한 트집을 잡다",
+  "senses": [
+   { "pos": "동사", "ko": "사소한 트집을 잡다" },
+   { "pos": "명사", "ko": "(nit) 사소한 지적, 사소한 흠" }
+  ],
+  "forms": ["nitpicks", "nitpicking", "nitpicky", "nit", "nits"],
+  "synonyms": ["quibble"],
+  "domain": "비교·평가·판단",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#1.2", "surface": "nitpick", "pos": "동사", "sense": "사소한 트집을 잡다" },
+   { "sid": "lesson-d4#1.4", "surface": "nits", "pos": "명사", "sense": "(nit) 사소한 지적, 사소한 흠" }
+  ]
+ },
+ {
+  "lemma": "no longer",
+  "skip": null,
+  "word": "no longer",
+  "pos": ["부사구"],
+  "ipa": "noʊ ˈlɔːŋɡər",
+  "meaning": "더 이상 ~ 않다",
+  "short": "더 이상 ~ 않다",
+  "senses": [
+   { "pos": "부사구", "ko": "더 이상 ~ 않다" }
+  ],
+  "forms": [],
+  "synonyms": ["not anymore", "no more"],
+  "domain": "시간·순서·빈도",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#1.1", "surface": "no longer", "pos": "부사구", "sense": "더 이상 ~ 않다" },
+   { "sid": "mock04#39.3", "surface": "no longer", "pos": "부사구", "sense": "더 이상 ~ 않다" },
+   { "sid": "lesson-d5#36.1", "surface": "no longer", "pos": "부사구", "sense": "더 이상 ~ 않다" },
+   { "sid": "mock04#16.2", "surface": "no longer", "pos": "부사구", "sense": "더 이상 ~ 않다" }
+  ]
+ },
+ {
+  "lemma": "nobody",
+  "skip": null,
+  "word": "nobody",
+  "pos": ["대명사"],
+  "ipa": "ˈnoʊbɑːdi",
+  "meaning": "① 아무도 ~ 않다 ② (명사) 보잘것없는 사람",
+  "short": "아무도 ~ 않다",
+  "senses": [
+   { "pos": "대명사", "ko": "아무도 ~ 않다" },
+   { "pos": "명사", "ko": "보잘것없는 사람" }
+  ],
+  "forms": [],
+  "synonyms": ["no one"],
+  "domain": "사람·조직·역할",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#1.1", "surface": "Nobody", "pos": "대명사", "sense": "아무도 ~ 않다" },
+   { "sid": "lesson-d1#36.0", "surface": "nobody", "pos": "대명사", "sense": "아무도 ~ 않다" },
+   { "sid": "lesson-d4#3.5", "surface": "nobody", "pos": "대명사", "sense": "아무도 ~ 않다" }
+  ]
+ },
+ {
+  "lemma": "noise",
+  "skip": null,
+  "word": "noise",
+  "pos": ["명사"],
+  "ipa": "nɔɪz",
+  "meaning": "노이즈 — 핵심을 가리는 쓸모없는 정보·출력",
+  "short": "노이즈(쓸모없는 정보)",
+  "senses": [
+   { "pos": "명사", "ko": "노이즈, 핵심을 가리는 쓸모없는 정보" },
+   { "pos": "형용사", "ko": "(noisy) 쓸데없는 결과가 많은, 잡음이 많은" },
+   { "pos": "명사", "ko": "소음, 시끄러운 소리" }
+  ],
+  "forms": ["noisy", "noises"],
+  "synonyms": ["clutter"],
+  "domain": "정확·품질·신뢰",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#21.1", "surface": "noise", "pos": "명사", "sense": "노이즈, 핵심을 가리는 쓸모없는 정보" },
+   { "sid": "lesson-d4#2.0", "surface": "noisy", "pos": "형용사", "sense": "(noisy) 쓸데없는 결과가 많은, 잡음이 많은" },
+   { "sid": "lesson-d4#7.4", "surface": "noise", "pos": "명사", "sense": "노이즈, 핵심을 가리는 쓸모없는 정보" },
+   { "sid": "lesson-d4#7.0", "surface": "noisy", "pos": "형용사", "sense": "(noisy) 쓸데없는 결과가 많은, 잡음이 많은" }
+  ]
+ },
+ {
+  "lemma": "non",
+  "skip": "fragment"
+ },
+ {
+  "lemma": "non-blocking",
+  "skip": null,
+  "word": "non-blocking",
+  "pos": ["형용사"],
+  "ipa": "ˌnɑːn ˈblɑːkɪŋ",
+  "meaning": "막지 않는, 비차단의 — (오류가 나도) 진행을 멈추지 않는",
+  "short": "막지 않는, 비차단의",
+  "senses": [
+   { "pos": "형용사", "ko": "막지 않는, 비차단의 (오류가 나도 진행을 멈추지 않는)" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "제어·제한·관리",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "non-unique",
+  "skip": null,
+  "word": "non-unique",
+  "pos": ["형용사"],
+  "ipa": "ˌnɑːn juˈniːk",
+  "meaning": "고유하지 않은 — 일치하는 대상이 여러 개인",
+  "short": "고유하지 않은",
+  "senses": [
+   { "pos": "형용사", "ko": "고유하지 않은, 하나로 특정되지 않는" },
+   { "pos": "형용사", "ko": "(multiple-match) 일치하는 대상이 여러 개인" }
+  ],
+  "forms": [],
+  "synonyms": ["ambiguous"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#43.2", "surface": "non-unique-match", "pos": "형용사", "sense": "고유하지 않은, 하나로 특정되지 않는" },
+   { "sid": "mock04#10.6", "surface": "multiple-match", "pos": "형용사", "sense": "(multiple-match) 일치하는 대상이 여러 개인" }
+  ]
+ },
+ {
+  "lemma": "none",
+  "skip": null,
+  "word": "none",
+  "pos": ["대명사", "명사"],
+  "ipa": "nʌn",
+  "meaning": "① 아무것도(아무도) ~ 않다, 하나도 ~ 않다 ② (tool_choice) 도구를 쓰지 않게 하는 설정값",
+  "short": "아무것도(아무도) ~ 않다",
+  "senses": [
+   { "pos": "대명사", "ko": "아무것도(아무도) ~ 않다, 하나도 ~ 않다" },
+   { "pos": "명사", "ko": "(tool_choice) 도구를 쓰지 않게 하는 설정값" }
+  ],
+  "forms": [],
+  "synonyms": ["no one", "nothing"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#14.1", "surface": "none", "pos": "대명사", "sense": "아무것도(아무도) ~ 않다, 하나도 ~ 않다" },
+   { "sid": "lesson-d2#18.6", "surface": "none", "pos": "명사", "sense": "(tool_choice) 도구를 쓰지 않게 하는 설정값" },
+   { "sid": "lesson-d1#23.6", "surface": "None", "pos": "대명사", "sense": "아무것도(아무도) ~ 않다, 하나도 ~ 않다" },
+   { "sid": "mock04#27.6", "surface": "none", "pos": "대명사", "sense": "아무것도(아무도) ~ 않다, 하나도 ~ 않다" }
+  ]
+ },
+ {
+  "lemma": "nor",
+  "skip": null,
+  "word": "nor",
+  "pos": ["접속사"],
+  "ipa": "nɔːr",
+  "meaning": "(neither A nor B) A도 B도 아니다",
+  "short": "~도 또한 아니다",
+  "senses": [
+   { "pos": "접속사", "ko": "(neither A nor B) A도 B도 아니다" },
+   { "pos": "접속사", "ko": "(부정문 뒤) ~도 또한 아니다" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "논리·관계·연결어",
+  "basic": false,
+  "contexts": []
+ },
+ {
+  "lemma": "normalize",
+  "skip": null,
+  "word": "normalize",
+  "pos": ["동사"],
+  "ipa": "ˈnɔːrməlaɪz",
+  "meaning": "(형식을) 표준 형태로 맞추다, 정규화하다",
+  "short": "표준 형태로 맞추다, 정규화하다",
+  "senses": [
+   { "pos": "동사", "ko": "(형식을) 표준 형태로 맞추다, 정규화하다" },
+   { "pos": "명사", "ko": "(normalization) 정규화, 형식 통일" }
+  ],
+  "forms": ["normalizes", "normalized", "normalizing", "normalization"],
+  "synonyms": ["standardize", "unify"],
+  "domain": "변경·수정",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#4.4", "surface": "normalize", "pos": "동사", "sense": "(형식을) 표준 형태로 맞추다, 정규화하다" },
+   { "sid": "lesson-d1#30.0", "surface": "normalization", "pos": "명사", "sense": "(normalization) 정규화, 형식 통일" },
+   { "sid": "mock04#4.7", "surface": "normalizes", "pos": "동사", "sense": "(형식을) 표준 형태로 맞추다, 정규화하다" },
+   { "sid": "lesson-d1#30.4", "surface": "normalized", "pos": "동사", "sense": "(형식을) 표준 형태로 맞추다, 정규화하다" }
+  ]
+ },
+ {
+  "lemma": "notation",
+  "skip": null,
+  "word": "notation",
+  "pos": ["명사"],
+  "ipa": "noʊˈteɪʃn",
+  "meaning": "표기(법)",
+  "short": "표기(법)",
+  "senses": [
+   { "pos": "명사", "ko": "표기(법), 표시 방식" }
+  ],
+  "forms": [],
+  "synonyms": ["representation"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#4.1", "surface": "notation", "pos": "명사", "sense": "표기(법), 표시 방식" }
+  ]
+ },
+ {
+  "lemma": "note",
+  "skip": null,
+  "word": "note",
+  "pos": ["동사", "명사"],
+  "ipa": "noʊt",
+  "meaning": "① 언급하다, 주목하다 ② 메모, 참고 사항",
+  "short": "언급하다, 메모",
+  "senses": [
+   { "pos": "동사", "ko": "언급하다, 지적하다" },
+   { "pos": "명사", "ko": "메모, 기록" },
+   { "pos": "명사", "ko": "참고 사항, 짧은 설명" }
+  ],
+  "forms": ["notes", "noted", "noting"],
+  "synonyms": ["mention", "remark", "memo"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#25.2", "surface": "note", "pos": "동사", "sense": "언급하다, 지적하다" },
+   { "sid": "lesson-d4#13.0", "surface": "notes", "pos": "명사", "sense": "메모, 기록" },
+   { "sid": "vocab:note.1", "surface": "note", "pos": "명사", "sense": "참고 사항, 짧은 설명" },
+   { "sid": "lesson-d5#25.2", "surface": "notes", "pos": "명사", "sense": "메모, 기록" }
+  ]
+ },
+ {
+  "lemma": "nothing",
+  "skip": null,
+  "word": "nothing",
+  "pos": ["대명사"],
+  "ipa": "ˈnʌθɪŋ",
+  "meaning": "① 아무것도 ~ 않다, 아무것도 없음 ② (할 일로서) 아무것도 하지 않음, 조치 불필요",
+  "short": "아무것도 ~ 않다",
+  "senses": [
+   { "pos": "대명사", "ko": "아무것도 ~ 않다, 아무것도 없음" },
+   { "pos": "대명사", "ko": "(할 일로서) 아무것도 하지 않음, 조치 불필요" },
+   { "pos": "명사", "ko": "하찮은 것" }
+  ],
+  "forms": [],
+  "synonyms": ["none"],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#38.2", "surface": "Nothing", "pos": "대명사", "sense": "아무것도 ~ 않다, 아무것도 없음" },
+   { "sid": "lesson-d2#22.5", "surface": "Nothing", "pos": "대명사", "sense": "(할 일로서) 아무것도 하지 않음, 조치 불필요" },
+   { "sid": "mock04#36.4", "surface": "nothing", "pos": "대명사", "sense": "아무것도 ~ 않다, 아무것도 없음" },
+   { "sid": "lesson-d5#32.2", "surface": "Nothing", "pos": "대명사", "sense": "(할 일로서) 아무것도 하지 않음, 조치 불필요" }
+  ]
+ },
+ {
+  "lemma": "notice",
+  "skip": null,
+  "word": "notice",
+  "pos": ["동사", "명사"],
+  "ipa": "ˈnoʊtɪs",
+  "meaning": "① 알아차리다 ② 공지, 통지",
+  "short": "알아차리다",
+  "senses": [
+   { "pos": "동사", "ko": "알아차리다, 눈치채다" },
+   { "pos": "명사", "ko": "공지, 통지" },
+   { "pos": "명사", "ko": "주의, 주목" }
+  ],
+  "forms": ["notices", "noticed", "noticing", "noticeable", "noticeably"],
+  "synonyms": ["spot", "observe", "detect"],
+  "domain": "확인·검증",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d3#1.0", "surface": "notices", "pos": "동사", "sense": "알아차리다, 눈치채다" },
+   { "sid": "sample01#2.1", "surface": "notices", "pos": "동사", "sense": "알아차리다, 눈치채다" },
+   { "sid": "lesson-d1#35.1", "surface": "noticed", "pos": "동사", "sense": "알아차리다, 눈치채다" },
+   { "sid": "mock04#12.2", "surface": "notice", "pos": "동사", "sense": "알아차리다, 눈치채다" }
+  ]
+ },
+ {
+  "lemma": "noticeably",
+  "skip": null,
+  "word": "noticeably",
+  "pos": ["부사"],
+  "ipa": "ˈnoʊtɪsəbli",
+  "meaning": "눈에 띄게, 현저히",
+  "short": "눈에 띄게, 현저히",
+  "senses": [
+   { "pos": "부사", "ko": "눈에 띄게, 현저히" }
+  ],
+  "forms": ["noticeable"],
+  "synonyms": ["markedly", "significantly", "visibly"],
+  "domain": "정도·양·크기",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#7.6", "surface": "noticeably", "pos": "부사", "sense": "눈에 띄게, 현저히" },
+   { "sid": "lesson-d4#10.1", "surface": "noticeably", "pos": "부사", "sense": "눈에 띄게, 현저히" }
+  ]
+ },
+ {
+  "lemma": "novel",
+  "skip": null,
+  "word": "novel",
+  "pos": ["형용사"],
+  "ipa": "ˈnɑːvl",
+  "meaning": "새로운, 처음 보는 (명사로는 '소설')",
+  "short": "새로운, 처음 보는",
+  "senses": [
+   { "pos": "형용사", "ko": "새로운, 처음 보는" },
+   { "pos": "명사", "ko": "소설" }
+  ],
+  "forms": ["novelty"],
+  "synonyms": ["new", "unfamiliar", "unprecedented"],
+  "domain": "상태·성질",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#56.7", "surface": "novel", "pos": "형용사", "sense": "새로운, 처음 보는" }
+  ]
+ },
+ {
+  "lemma": "now",
+  "skip": null,
+  "word": "now",
+  "pos": ["부사"],
+  "ipa": "naʊ",
+  "meaning": "① 지금, 현재 ② (변화 후) 이제는",
+  "short": "지금, 이제는",
+  "senses": [
+   { "pos": "부사", "ko": "지금, 현재" },
+   { "pos": "부사", "ko": "(변화 후) 이제는" }
+  ],
+  "forms": [],
+  "synonyms": ["currently"],
+  "domain": "시간·순서·빈도",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d4#5.1", "surface": "now", "pos": "부사", "sense": "지금, 현재" },
+   { "sid": "lesson-d3#4.1", "surface": "now", "pos": "부사", "sense": "(변화 후) 이제는" },
+   { "sid": "lesson-d2#22.2", "surface": "now", "pos": "부사", "sense": "(변화 후) 이제는" },
+   { "sid": "lesson-d5#32.0", "surface": "now", "pos": "부사", "sense": "지금, 현재" }
+  ]
+ },
+ {
+  "lemma": "nowhere",
+  "skip": null,
+  "word": "nowhere",
+  "pos": ["부사"],
+  "ipa": "ˈnoʊwer",
+  "meaning": "어디에도 ~ 없다(않다)",
+  "short": "어디에도 없다",
+  "senses": [
+   { "pos": "부사", "ko": "어디에도 ~ 없다(않다)" }
+  ],
+  "forms": [],
+  "synonyms": [],
+  "domain": "일반",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#23.2", "surface": "nowhere", "pos": "부사", "sense": "어디에도 ~ 없다(않다)" }
+  ]
+ },
+ {
+  "lemma": "null",
+  "skip": null,
+  "word": "null",
+  "pos": ["명사", "형용사"],
+  "ipa": "nʌl",
+  "meaning": "널(null) — 값이 없음을 나타내는 값 (nullable: null 허용)",
+  "short": "널(값 없음)",
+  "senses": [
+   { "pos": "명사", "ko": "널, 값이 없음을 나타내는 값" },
+   { "pos": "형용사", "ko": "값이 비어 있는, 널인" },
+   { "pos": "형용사", "ko": "(nullable) 널을 허용하는" }
+  ],
+  "forms": ["nullable", "nulls"],
+  "synonyms": [],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "mock04#58.4", "surface": "null", "pos": "명사", "sense": "널, 값이 없음을 나타내는 값" },
+   { "sid": "lesson-d3#24.1", "surface": "null", "pos": "형용사", "sense": "값이 비어 있는, 널인" },
+   { "sid": "mock04#55.6", "surface": "nullable", "pos": "형용사", "sense": "(nullable) 널을 허용하는" },
+   { "sid": "lesson-d4#18.5", "surface": "null", "pos": "명사", "sense": "널, 값이 없음을 나타내는 값" }
+  ]
+ },
+ {
+  "lemma": "number",
+  "skip": null,
+  "word": "number",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈnʌmbər",
+  "meaning": "① (the number of) ~의 수, 개수 ② (주문·페이지 등의) 번호 ③ 숫자 ④ 번호를 매기다",
+  "short": "수, 번호",
+  "senses": [
+   { "pos": "명사", "ko": "(the number of) ~의 수, 개수" },
+   { "pos": "명사", "ko": "(주문·페이지 등의) 번호" },
+   { "pos": "명사", "ko": "숫자, 수(값)" },
+   { "pos": "동사", "ko": "번호를 매기다" }
+  ],
+  "forms": ["numbers", "numbered", "numbering"],
+  "synonyms": ["count", "figure"],
+  "domain": "정도·양·크기",
+  "basic": true,
+  "contexts": [
+   { "sid": "lesson-d1#37.1", "surface": "number", "pos": "명사", "sense": "(the number of) ~의 수, 개수" },
+   { "sid": "lesson-d5#1.1", "surface": "number", "pos": "명사", "sense": "(주문·페이지 등의) 번호" },
+   { "sid": "lesson-d5#31.1", "surface": "number", "pos": "명사", "sense": "숫자, 수(값)" },
+   { "sid": "lesson-d2#14.6", "surface": "number", "pos": "명사", "sense": "(the number of) ~의 수, 개수" }
+  ]
+ },
+ {
+  "lemma": "numeric",
+  "skip": null,
+  "word": "numeric",
+  "pos": ["형용사"],
+  "ipa": "nuːˈmerɪk",
+  "meaning": "숫자의, 수치로 된",
+  "short": "숫자의, 수치로 된",
+  "senses": [
+   { "pos": "형용사", "ko": "숫자의, 수치로 된" }
+  ],
+  "forms": ["numerical", "numerically"],
+  "synonyms": ["numerical"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#13.3", "surface": "numeric", "pos": "형용사", "sense": "숫자의, 수치로 된" },
+   { "sid": "lesson-d5#18.3", "surface": "Numeric", "pos": "형용사", "sense": "숫자의, 수치로 된" },
+   { "sid": "lesson-d4#22.5", "surface": "numeric", "pos": "형용사", "sense": "숫자의, 수치로 된" },
+   { "sid": "lesson-d5#33.5", "surface": "numeric", "pos": "형용사", "sense": "숫자의, 수치로 된" }
+  ]
+ },
+ {
+  "lemma": "oauth",
+  "skip": null,
+  "word": "OAuth",
+  "pos": ["명사"],
+  "ipa": "ˈoʊ.ɔːθ",
+  "meaning": "OAuth — 비밀번호를 넘기지 않고 토큰으로 접근 권한을 위임하는 표준",
+  "short": "토큰 기반 권한 위임 표준",
+  "senses": [
+   { "pos": "명사", "ko": "토큰으로 접근 권한을 위임하는 인증 표준" }
+  ],
+  "forms": ["OAuth2"],
+  "synonyms": [],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#24.0", "surface": "OAuth", "pos": "명사", "sense": "토큰으로 접근 권한을 위임하는 인증 표준" },
+   { "sid": "lesson-d1#41.0", "surface": "OAuth2", "pos": "명사", "sense": "토큰으로 접근 권한을 위임하는 인증 표준" },
+   { "sid": "lesson-d2#24.5", "surface": "OAuth", "pos": "명사", "sense": "토큰으로 접근 권한을 위임하는 인증 표준" },
+   { "sid": "lesson-d1#41.5", "surface": "OAuth2", "pos": "명사", "sense": "토큰으로 접근 권한을 위임하는 인증 표준" }
+  ]
+ },
+ {
+  "lemma": "object",
+  "skip": null,
+  "word": "object",
+  "pos": ["명사", "동사"],
+  "ipa": "ˈɑːbdʒekt",
+  "meaning": "① (JSON·프로그래밍의) 객체 ② 물체, 대상 ③ (동사, əbˈdʒekt) 반대하다, 이의를 제기하다",
+  "short": "객체, 반대하다",
+  "senses": [
+   { "pos": "명사", "ko": "(JSON·프로그래밍의) 객체" },
+   { "pos": "명사", "ko": "물체, 대상" },
+   { "pos": "동사", "ko": "반대하다, 이의를 제기하다" }
+  ],
+  "forms": ["objects", "objected", "objecting", "objection"],
+  "synonyms": ["oppose", "protest"],
+  "domain": "데이터·정보·문서",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d4#21.0", "surface": "objects", "pos": "명사", "sense": "(JSON·프로그래밍의) 객체" },
+   { "sid": "lesson-d2#7.1", "surface": "objects", "pos": "동사", "sense": "반대하다, 이의를 제기하다" },
+   { "sid": "lesson-d1#8.3", "surface": "object", "pos": "명사", "sense": "(JSON·프로그래밍의) 객체" }
+  ]
+ },
+ {
+  "lemma": "objective",
+  "skip": null,
+  "word": "objective",
+  "pos": ["명사", "형용사"],
+  "ipa": "əbˈdʒektɪv",
+  "meaning": "① 목표 ② 객관적인",
+  "short": "목표",
+  "senses": [
+   { "pos": "명사", "ko": "목표" },
+   { "pos": "형용사", "ko": "객관적인" }
+  ],
+  "forms": ["objectives", "objectively", "objectivity"],
+  "synonyms": ["goal", "aim", "target"],
+  "domain": "계획·목표·전략",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d1#16.5", "surface": "objective", "pos": "명사", "sense": "목표" }
+  ]
+ },
+ {
+  "lemma": "observability",
+  "skip": null,
+  "word": "observability",
+  "pos": ["명사"],
+  "ipa": "əbˌzɜːrvəˈbɪləti",
+  "meaning": "관측성 — 로그·트레이스로 시스템 내부 동작을 들여다볼 수 있는 정도",
+  "short": "관측성(내부 동작 파악)",
+  "senses": [
+   { "pos": "명사", "ko": "관측성, 로그·트레이스로 내부 동작을 파악할 수 있는 정도" }
+  ],
+  "forms": ["observable"],
+  "synonyms": ["visibility"],
+  "domain": "시스템·도구·기술",
+  "basic": false,
+  "contexts": [
+   { "sid": "sample01#8.2", "surface": "observability", "pos": "명사", "sense": "관측성, 로그·트레이스로 내부 동작을 파악할 수 있는 정도" }
+  ]
+ },
+ {
+  "lemma": "observe",
+  "skip": null,
+  "word": "observe",
+  "pos": ["동사"],
+  "ipa": "əbˈzɜːrv",
+  "meaning": "관찰하다, 알아차리다",
+  "short": "관찰하다, 알아차리다",
+  "senses": [
+   { "pos": "동사", "ko": "관찰하다, 관측하다" },
+   { "pos": "동사", "ko": "(관찰해서) 알아차리다" },
+   { "pos": "동사", "ko": "(규칙을) 지키다, 준수하다" }
+  ],
+  "forms": ["observes", "observed", "observing", "observation"],
+  "synonyms": ["watch", "notice", "monitor"],
+  "domain": "확인·검증",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d5#30.3", "surface": "observed", "pos": "동사", "sense": "관찰하다, 관측하다" },
+   { "sid": "vocab:observe.0", "surface": "observe", "pos": "동사", "sense": "(관찰해서) 알아차리다" }
+  ]
+ },
+ {
+  "lemma": "obtain",
+  "skip": null,
+  "word": "obtain",
+  "pos": ["동사"],
+  "ipa": "əbˈteɪn",
+  "meaning": "얻다, 확보하다",
+  "short": "얻다, 확보하다",
+  "senses": [
+   { "pos": "동사", "ko": "얻다, 확보하다" }
+  ],
+  "forms": ["obtains", "obtained", "obtaining"],
+  "synonyms": ["get", "acquire", "gain"],
+  "domain": "검색·조회",
+  "basic": false,
+  "contexts": [
+   { "sid": "lesson-d2#13.2", "surface": "obtain", "pos": "동사", "sense": "얻다, 확보하다" },
+   { "sid": "lesson-d4#24.4", "surface": "obtained", "pos": "동사", "sense": "얻다, 확보하다" }
+  ]
+ }
+]

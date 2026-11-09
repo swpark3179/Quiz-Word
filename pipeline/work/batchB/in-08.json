@@ -1,0 +1,538 @@
+[
+ {
+  "key": "lesson-d4#20",
+  "koRef": "한 금융 회사가 도구 기반 스키마로 PDF 거래 내역서에서 거래 레코드를 추출합니다. 스키마에는 필수 amount 필드와 필수 transaction_type 필드가 있습니다. 감사에서 입금이 출금으로 잘못 라벨링된 사례가 여럿 발견됐지만, 모든 amount와 transaction_type 필드는 존재하고 스키마 검증도 통과했습니다. 이것은 도구 사용을 통한 JSON 스키마 강제에 대해 무엇을 보여 줄까요?\n① 스키마 검증은 필수 필드가 존재하고 타입이 맞는지 확인하지만, 값이 원문 문서에 비추어 의미상 옳은지는 확인할 수 없으므로 이런 라벨링 오류는 여전히 생길 수 있다.\n② input_schema가 잘못 작성됐을 가능성이 높다. 올바르게 구성된 JSON 스키마는 amount와 transaction_type의 관계를 검증하는 제약을 걸어 이런 의미 오류를 막을 수 있다.\n③ 특정 도구 호출을 강제하는 tool_choice가 없으면 모델이 원문 내용과 다른 transaction_type 라벨을 낼 수 있다는 것을 보여 준다.\n④ strict 모드를 껐을 때만 생기는 일이다. strict 모드는 transaction_type이 금액의 부호를 정확히 반영하는지 같은 스키마의 의미 규칙까지 강제한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#20.0",
+    "en": "A financial services firm uses a tool-based schema to extract transaction records from PDF statements, including a required amount field and a required transaction_type field."
+   },
+   {
+    "sid": "lesson-d4#20.1",
+    "en": "An audit later finds several instances where deposits were mislabeled as withdrawals, even though every amount and transaction_type field is present and passes schema validation."
+   },
+   {
+    "sid": "lesson-d4#20.2",
+    "en": "What does this best illustrate about JSON schema enforcement via tool use?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#21",
+  "koRef": "의료 기록 추출기가 strict 도구 사용으로 동작하며, 스키마에는 `patient`와 `guardian` 객체가 있고 각각 필수 `date_of_birth` 문자열을 가집니다. 다음 중 여전히 코드까지 도달할 수 있어 직접 작성한 검사가 필요한 오류는?\n① 유효한 JSON이 아니어서 파싱에 실패하는 응답\n② 필수 `date_of_birth` 키가 빠진 응답\n③ 스키마가 문자열을 요구하는데 `date_of_birth`를 숫자로 반환한 응답\n④ 환자의 생년월일을 `patient`가 아니라 `guardian` 아래에 넣은 응답",
+  "sentences": [
+   {
+    "sid": "lesson-d4#21.0",
+    "en": "A medical-records extractor uses strict tool use with a schema that has `patient` and `guardian` objects, each with a required `date_of_birth` string."
+   },
+   {
+    "sid": "lesson-d4#21.1",
+    "en": "Which error can still reach your code and needs a check you write yourself?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#22",
+  "koRef": "구매 주문서 추출기가 strict JSON 스키마를 쓰므로 모든 응답은 필드 타입이 맞고 키 누락이 없습니다. 한 주문에서 추출된 품목 금액의 합은 $940인데, 추출된 \"order_total\" 필드는 $980입니다. 두 값 모두 스키마상 개별적으로 유효합니다. 이 불일치를 어떻게 분류하고 처리해야 할까요?\n① 스키마가 감지할 수 없는 의미 오류다. 추출 후 품목 합을 다시 계산해 order_total과 비교하는 검사를 추가한다.\n② 스키마 정의의 공백이다. order_total에 수치 범위나 패턴을 걸어 일관되지 않은 총액이 거부되게 스키마를 조인다.\n③ 프롬프트 문구의 결함이다. 추출 프롬프트에 총액이 맞는 예시를 넣어 모델이 order_total을 일관되게 유지하게 한다.\n④ 일시적인 샘플링 결함이다. temperature 0으로 재시도하고 스키마 검증을 통과한 첫 응답을 받아들인다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#22.0",
+    "en": "A purchase-order extractor uses a strict JSON schema, so every response has correctly typed fields and no missing keys."
+   },
+   {
+    "sid": "lesson-d4#22.1",
+    "en": "On one order, the extracted line-item amounts sum to $940 while the extracted \"order_total\" field reads $980."
+   },
+   {
+    "sid": "lesson-d4#22.2",
+    "en": "Both values are individually valid against the schema."
+   },
+   {
+    "sid": "lesson-d4#22.3",
+    "en": "How should this discrepancy be classified and handled?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#23",
+  "koRef": "계약서 추출기 스키마에 필수 `renewal_date` 문자열이 있습니다. 계약서에는 갱신 조건이 Master Agreement(기본 계약서)에 정해져 있다고만 적혀 있고, 그 문서는 파이프라인에 들어오지 않았습니다. 세 번의 재시도가 매번 계약서 어디에도 없는 서로 다른 날짜를 반환했습니다. 올바른 다음 단계는?\n① 계약서, 실패한 추출 결과, 날짜를 찾을 수 없다는 더 명시적인 검증 오류를 함께 보내 다시 재시도한다.\n② 계약서를 더 꼼꼼히 읽어 날짜를 찾아낼 더 큰 모델로 바꾼다.\n③ 재시도를 멈추고, 모델이 값이 없다고 보고할 수 있도록 `renewal_date`를 optional로 바꾸고, 레코드를 사람에게 보내거나 Master Agreement를 확보해 넣는다.\n④ 필드에 날짜 `format`을 지정해 모델이 형식이 올바른 날짜를 반환하게 한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#23.0",
+    "en": "A contract extractor's schema has a required `renewal_date` string."
+   },
+   {
+    "sid": "lesson-d4#23.1",
+    "en": "The contract says only that renewal terms are set out in the Master Agreement, and that document was never sent to the pipeline."
+   },
+   {
+    "sid": "lesson-d4#23.2",
+    "en": "Three retries have each returned a different date that appears nowhere in the contract."
+   },
+   {
+    "sid": "lesson-d4#23.3",
+    "en": "What is the right next step?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#24",
+  "koRef": "경비 정산 파이프라인이 스캔된 경비 보고서에서 필수 \"project_code\" 필드를 추출합니다. 한 제출 건에서 직원이 종이 양식의 프로젝트 코드 칸을 비워 두어, 스캔 이미지 어디에도 코드가 없습니다. 오류 피드백을 붙인 재시도를 세 번 했지만 필드는 여전히 비어 있습니다. 파이프라인은 다음에 무엇을 해야 할까요?\n① 재시도 루프를 멈추고 레코드를 사람 검토자에게 보내, 제출자에게서 프로젝트 코드를 받게 한다.\n② 더 엄격한 스키마와 project_code 형식 예시를 붙여 계속 재시도해, 모델이 올바른 형식의 값을 반환하게 한다.\n③ 스캔을 더 높은 해상도로 다시 렌더링하고 추출을 다시 돌려, 모델이 project_code 필드를 더 선명하게 읽게 한다.\n④ 더 큰 모델로 바꾸고 오류 이력과 함께 스캔을 다시 보내, 양식에서 project_code를 더 잘 찾게 한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#24.0",
+    "en": "A reimbursement pipeline extracts a required \"project_code\" field from scanned expense reports."
+   },
+   {
+    "sid": "lesson-d4#24.1",
+    "en": "On one submission, the employee left the project code blank on the physical form, so it does not appear anywhere in the scanned image."
+   },
+   {
+    "sid": "lesson-d4#24.2",
+    "en": "After three retries with error feedback, the field is still empty."
+   },
+   {
+    "sid": "lesson-d4#24.3",
+    "en": "What should the pipeline do next?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#25",
+  "koRef": "두 달 동안 개발자들이 보안 리뷰 봇의 지적 중 40%를 기각했습니다. 팀은 어떤 프롬프트 기준을 바꿔야 할지 알고 싶습니다. 구조화된 지적마다 추가하고 기각될 때마다 함께 기록하면 그 분석을 가능하게 하는 필드는?\n① 개발자가 지적을 거부할 때 기록하는 false_positive, wont_fix 같은 `dismissal_reason` enum\n② 낮은 확신의 지적을 걸러 낼 수 있게 모델이 보고하는 `confidence` 점수\n③ critical·high·low 지적 간 기각률을 비교할 수 있게 하는 `severity` 등급\n④ 지적을 촉발한 코드 구조(예: 팀의 sanitization 헬퍼 호출)를 이름으로 기록하는 `detected_pattern` 필드",
+  "sentences": [
+   {
+    "sid": "lesson-d4#25.0",
+    "en": "Over two months, developers have dismissed 40% of a security-review bot's findings."
+   },
+   {
+    "sid": "lesson-d4#25.1",
+    "en": "The team wants to know which prompt criterion to change."
+   },
+   {
+    "sid": "lesson-d4#25.2",
+    "en": "Which field, added to each structured finding and logged with every dismissal, makes that possible?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#26",
+  "koRef": "보안 리뷰 어시스턴트가 소스 코드에서 구조화된 지적을 추출하는데, 개발자들은 입력 sanitization에 쓰는 특정 헬퍼 함수와 관련된 지적의 상당수를 자주 기각합니다. 팀은 이 기각 추세를 시간에 따라 체계적으로 분석하고 싶습니다. 이를 지원하려면 구조화된 지적 스키마에 무엇을 추가해야 할까요?\n① 각 지적 뒤의 코드 구조를 이름으로 기록하는 detected_pattern 필드를 추가해, 구조별 기각률을 비교할 수 있게 한다.\n② false_positive나 wont_fix 같은 미리 정한 범주의 dismissal_reason 필드를 추가해, 사유별 기각률을 비교할 수 있게 한다.\n③ 모델이 지적마다 얼마나 확신하는지 매기는 confidence_score 필드를 추가해, 점수 구간별 기각률을 비교할 수 있게 한다.\n④ 각 지적의 영향을 low부터 critical까지 매기는 severity 필드를 추가해, 등급별 기각률을 비교할 수 있게 한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#26.0",
+    "en": "A security review assistant extracts structured findings from source code and developers frequently dismiss a large share of the findings tied to one particular helper function used for input sanitization."
+   },
+   {
+    "sid": "lesson-d4#26.1",
+    "en": "The team wants to analyze this dismissal trend systematically over time."
+   },
+   {
+    "sid": "lesson-d4#26.2",
+    "en": "What should be added to the structured finding schema to support this analysis?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#27",
+  "koRef": "야간 작업이 문서 검토 요청 60,000건을 배치 하나로 제출합니다. 요청마다 스캔한 페이지 이미지가 들어 있어 배치 페이로드가 약 400 MB입니다. 어떻게 되고, 팀은 무엇을 바꿔야 할까요?\n① 받아들여진다. 60,000건은 100,000건 상한보다 적고, 배치당 의미 있는 한도는 그것뿐이다.\n② 256 MB를 넘으므로 413 request_too_large 오류로 거부된다. 문서를 최소 두 배치로 나눠야 한다.\n③ 받아들여지지만 시간당 1,000건으로 제한되므로, 작업을 여러 밤에 나눠야 한다.\n④ 받아들여지지만 요청이 Messages API 레이트 리밋을 소모하므로, 실행되는 동안 동기 트래픽을 멈춰야 한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#27.0",
+    "en": "A nightly job submits 60,000 document-review requests in one batch."
+   },
+   {
+    "sid": "lesson-d4#27.1",
+    "en": "Each one embeds scanned page images, and the batch payload comes to about 400 MB."
+   },
+   {
+    "sid": "lesson-d4#27.2",
+    "en": "What happens, and what should the team change?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#28",
+  "koRef": "계약서가 24시간 내내 들어오고, 이해관계자에게는 계약서가 도착한 뒤 30시간 안에 모든 추출 결과를 주겠다고 약속했습니다. 파이프라인은 Message Batches API를 씁니다. 최악의 경우에도 이 약속을 지키는 제출 일정은?\n① 하루 한 번 밤에 제출한다. 대부분의 배치가 1시간 안에 끝나므로 여유가 충분하다.\n② 12시간마다 제출한다. 반나절에 일반적인 배치 실행 시간을 더해도 30시간 안에 넉넉히 들어온다.\n③ 8시간마다 제출한다. 하루 세 번이면 어떤 문서도 오래 기다리지 않는다.\n④ 4시간마다 제출한다. 4시간 대기에 24시간 배치 창 전체를 더해도 30시간 안에 들어오고, 오버헤드를 위한 여유까지 남는다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#28.0",
+    "en": "Contracts arrive around the clock, and stakeholders have been promised every extraction result within 30 hours of a contract's arrival."
+   },
+   {
+    "sid": "lesson-d4#28.1",
+    "en": "The pipeline uses the Message Batches API."
+   },
+   {
+    "sid": "lesson-d4#28.2",
+    "en": "Which submission schedule keeps that promise in the worst case?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#29",
+  "koRef": "개발자가 번역 요청 배치를 구성하면서 각 요청에 식별자를 붙여야 합니다. Message Batches API가 받아들이고, 나중에 결과를 원래 요청과 연결하는 데 쓸 식별자입니다. 이 용도로 유효한 식별자는?\n① `doc-2026-report_final`. 영문자·숫자·하이픈·밑줄만 쓰고 64자 한도 안이다.\n② `doc/2026/report:final`. 수집 날짜와 콜론으로 구분한 섹션 라벨을 넣어 나중 감사 때 추적하기 쉽다.\n③ `doc 2026 report final v2`. 각 설명 구간 사이의 공백 덕분에 긴 결과 파일을 눈으로 훑을 때 읽기 쉽다.\n④ `doc#2026#report#final#v2`. 구간마다 뚜렷한 구두점으로 구분해 어디서 끝나는지 모호함이 없다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#29.0",
+    "en": "A developer is assembling a batch of translation requests and needs to assign each one an identifier that the Message Batches API will accept and later use to correlate a result with its original request."
+   },
+   {
+    "sid": "lesson-d4#29.1",
+    "en": "Which identifier is valid for this purpose?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#30",
+  "koRef": "데이터 수집 작업이 Message Batches API로 스캔한 송장 150,000건을 한 번의 야간 실행에서 분류해야 합니다. 플랫폼의 배치당 한도를 고려할 때 팀이 감안해야 할 것은?\n① 150,000건을 최소 2개 배치로 나눠 제출한다. Message Batch 하나는 요청 100,000건 또는 총 페이로드 256 MB 중 먼저 닿는 쪽까지이기 때문이다. (총 페이로드가 256 MB를 넘으면 배치가 더 필요할 수 있다.)\n② 150,000건을 배치 하나로 제출한다. Batches API에는 요청 수 한도가 없고 각 응답의 출력 크기만 제한한다.\n③ 송장을 정확히 1,000건씩 배치로 나눈다. 데이터 유형과 무관하게 API가 허용하는 최대 배치 크기다.\n④ Batches API 대신 동기 Messages API를 쓴다. 배치는 시간당 500건으로 제한되어 150,000건을 밤새 처리할 수 없다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#30.0",
+    "en": "A data-ingestion job needs to classify 150,000 scanned invoices in one nightly run using the Message Batches API."
+   },
+   {
+    "sid": "lesson-d4#30.1",
+    "en": "What must the team account for given the platform's per-batch limits?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#31",
+  "koRef": "네 팀이 50% 할인을 받으려고 Claude 작업을 Message Batches API로 옮기려 합니다. 다음 중 동기 Messages API에 남아야 하는 작업은?\n① 월요일 리뷰 회의용으로 지난주 접근 로그를 요약하는 주간 컴플라이언스 감사\n② 엔지니어가 다음 날 아침 검토하는, 40,000개 모듈의 야간 회귀 테스트 생성\n③ 고객이 채팅 창에서 기다리는 동안 답장 초안을 쓰는 앱 내 지원 어시스턴트\n④ 그날의 지원 티켓을 주제별로 묶어 제품팀에 주는 야간 리포트",
+  "sentences": [
+   {
+    "sid": "lesson-d4#31.0",
+    "en": "Four teams want to move their Claude workloads to the Message Batches API to get the 50% discount."
+   },
+   {
+    "sid": "lesson-d4#31.1",
+    "en": "Which workload should stay on the synchronous Messages API?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#32",
+  "koRef": "플랫폼 팀이 Claude가 diff에 대한 판정을 돌려줄 때까지 PR 머지를 막는 자동 코드 리뷰 게이트를 운영합니다. 판정은 보통 몇 초 안에 나옵니다. 이 워크플로에는 어떤 방식을 써야 할까요?\n① diff마다 Messages API를 동기 호출하고, 머지 체크가 API 응답에서 판정을 바로 읽는다.\n② diff마다 요청 하나짜리 배치로 Message Batches API에 제출하고, 머지 체크가 판정이 준비될 때까지 폴링한다.\n③ 50% 할인으로 diff를 Message Batches API에 보내고, 머지 체크가 배치가 끝날 때까지 폴링한다.\n④ 백그라운드 작업 큐에서 diff를 Messages API로 보내고, 판정이 코멘트로 올라오는 동안 머지 체크는 통과시킨다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#32.0",
+    "en": "A platform team runs an automated code-review gate that blocks a pull request from merging until Claude returns a verdict on the diff, typically within a few seconds."
+   },
+   {
+    "sid": "lesson-d4#32.1",
+    "en": "Which approach should they use for this workflow?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#33",
+  "koRef": "보험사의 청구 에이전트가 회사 자체 보험 DB 조회 도구를 호출하고, 결과를 읽은 뒤 다음 단계를 정하는 일을 여러 턴에 걸쳐 반복합니다. 팀은 50% 할인을 위해 파이프라인을 Message Batches API로 옮기려 합니다. 올바른 설계는?\n① 에이전트 전체를 배치한다. 요청마다 조회 도구 정의를 넣으면 배치 워커가 턴 사이에 도구를 실행하며 end_turn까지 진행한다.\n② 에이전트 전체를 배치하되 도구 정의를 먼저 지운다. 배치 요청은 도구가 포함된 요청을 모두 거부하기 때문이다.\n③ 도구를 호출하는 에이전트는 동기 Messages API에 두고, 어떤 청구에 에이전트가 필요한지 정하는 단일 패스 분류 단계만 배치한다.\n④ `stream: true`로 에이전트 전체를 배치해, 요청이 실행되는 동안 클라이언트가 tool_use 블록을 잡아 tool_result를 돌려보낸다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#33.0",
+    "en": "An insurer's claims agent calls the company's own policy-database lookup tool, reads what comes back, and then decides on its next step, often over several turns."
+   },
+   {
+    "sid": "lesson-d4#33.1",
+    "en": "To get the 50% discount, the team wants to move the pipeline to the Message Batches API."
+   },
+   {
+    "sid": "lesson-d4#33.2",
+    "en": "What is the right design?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#34",
+  "koRef": "한 팀이 코드 생성 에이전트가 계속 놓치는 미묘한 버그를 잡을 리뷰 단계를 원합니다. 실제로 독립적인 리뷰가 되는 구성은?\n① 생성 세션이 제출하기 전 마지막 프롬프트에 \"앞서 내린 모든 설계 결정에 이의를 제기하라\"를 추가한다.\n② 코드를 작성한 subagent 세션을 재개해 자기 diff를 리뷰하게 한다.\n③ 같은 모델과 도구로 새 인스턴스를 시작하고, 코드와 요구사항만 준다.\n④ 같은 대화를 유지하되 두 번째 리뷰 라운드에서 더 큰 모델로 바꾼다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#34.0",
+    "en": "A team wants a review step that catches the subtle bugs its code-generation agent keeps missing."
+   },
+   {
+    "sid": "lesson-d4#34.1",
+    "en": "Which setup gives them a review that is actually independent?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#35",
+  "koRef": "같은 Claude 인스턴스가 코드를 생성한 뒤, 같은 대화 안에서 \"끝내기 전에 자기 작업에 버그가 있는지 리뷰하라\"는 요청을 받는 파이프라인이 있습니다. 나중에 QA가 그 자기 리뷰 단계에서 모델이 놓친 미묘한 문제들을 찾아냈습니다. 앞으로 이런 문제를 잡는 데 가장 효과적인 아키텍처 변경은?\n① 리뷰 단계의 extended thinking 예산을 올려, 모델이 방금 쓴 코드에 대해 더 오래 추론하게 한다.\n② 리뷰 단계의 시스템 프롬프트를 강화해, 앞서 내린 설계 결정에 이의를 제기하라고 지시한다.\n③ 완성된 코드를 생성 세션을 본 적 없는 별도의 Claude 인스턴스에 보내 리뷰한다.\n④ 같은 세션에서 리뷰 단계를 한 번 더 돌려, 첫 리뷰의 결론을 다시 확인하게 한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#35.0",
+    "en": "A team built a pipeline where the same Claude instance that generates code is then asked, within the same conversation, to 'review your own work for bugs before finishing.'"
+   },
+   {
+    "sid": "lesson-d4#35.1",
+    "en": "QA later finds subtle issues the model missed during that self-review step."
+   },
+   {
+    "sid": "lesson-d4#35.2",
+    "en": "Which architectural change is most effective at catching those issues going forward?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#36",
+  "koRef": "엔지니어가 생성 세션에 높은 extended thinking effort를 설정하고, 코드를 제출하기 전에 결함을 깊이 성찰하라고 지시했습니다. 그런데도 버그가 리뷰를 빠져나갑니다. 여기서 extended thinking이 독립 리뷰 인스턴스를 대신하기에 부족한 이유는?\n① 성찰은 추론 예산을 늘리지만 이슈마다 같은 깊이의 검사를 적용하므로, 노력을 더해도 검토가 크게 늘지 않는다.\n② 성찰은 코드를 쓴 바로 그 컨텍스트에서 이뤄지므로, 모델이 이전 결정을 점검할 때 그 결정의 근거였던 추론을 다시 사용한다.\n③ 성찰은 사고 토큰 예산의 제약을 받는데, 모델이 생성된 코드 전체를 다시 살펴보기 전에 예산이 바닥난다.\n④ 성찰 중에는 도구 사용이 꺼지므로, 모델이 자기가 쓴 파일을 다시 열어 요구사항과 대조할 수 없다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#36.0",
+    "en": "An engineer configures the generation session with a high extended thinking effort and instructs the model to reflect deeply on flaws before submitting its code."
+   },
+   {
+    "sid": "lesson-d4#36.1",
+    "en": "Bugs still slip through review."
+   },
+   {
+    "sid": "lesson-d4#36.2",
+    "en": "Why is extended thinking insufficient as a substitute for an independent review instance here?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#37",
+  "koRef": "리팩터링이 300개 파일을 건드렸고, 여러 모듈이 서로 데이터를 주고받습니다. 파일 내부의 버그와, 값이 파일 경계를 넘은 뒤 잘못 쓰이는 버그를 모두 잡는 리뷰가 필요합니다. 어떤 계획이 맞을까요?\n① 파일별 패스를 한 대화의 연속된 턴으로 돌려, 뒤의 패스가 앞 파일에서 알게 된 것을 활용하게 한다.\n② 파일마다 새 컨텍스트에서 headless `claude -p` 리뷰를 하나씩 스크립트로 돌린 뒤, 데이터를 공유하는 파일들을 함께 읽는 통합 패스를 실행한다.\n③ 더 큰 모델로 전체 diff를 한 번에 리뷰해, 모든 파일과 데이터 흐름을 동시에 보게 한다.\n④ 모든 파일에 대해 새 파일별 패스를 스크립트로 돌리고, 각 파일이 이미 충분한 주의를 받았으니 통합 패스는 생략한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#37.0",
+    "en": "A refactor touches 300 files, and several modules pass data to one another."
+   },
+   {
+    "sid": "lesson-d4#37.1",
+    "en": "You need a review that catches local bugs and also bugs where a value is misused after it crosses a file boundary."
+   },
+   {
+    "sid": "lesson-d4#37.2",
+    "en": "Which plan fits?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d4#38",
+  "koRef": "서로 의존하는 두 파일에 대한 파일별 패스가 각각 다른 수정안을 냈는데, 알고 보니 같은 데이터 흐름 문제였고 두 수정안은 서로 충돌합니다. 파일별 수정안 중 하나를 임의로 고르는 대신 이를 해결할 아키텍처 단계는?\n① 두 파일을 함께 살펴보고 실제 데이터 흐름에 근거해 하나의 수정안을 내는 별도의 파일 간 통합 패스\n② 각 파일별 패스를 한 번 더 돌리고, 더 확신에 찬 표현으로 쓰인 수정안을 채택한다.\n③ 리뷰 전에 두 파일을 하나로 합쳐, 통합 단계 없이 파일별 패스 하나가 둘을 다 보게 한다.\n④ 코드를 왜 그렇게 썼는지 전체 맥락을 아는 원래 생성자에게 두 수정안 사이를 중재하게 한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d4#38.0",
+    "en": "Per-file passes on two interdependent files each recommend a different fix for what turns out to be the same underlying data-flow issue, and the two recommendations conflict."
+   },
+   {
+    "sid": "lesson-d4#38.1",
+    "en": "What architectural step should resolve this rather than picking one per-file recommendation at random?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d5#1",
+  "koRef": "Messages API로 만든 지원 봇이 요청마다 system 프롬프트, 도구 정의, 고객의 최신 메시지만 보냅니다. 12번째 턴이 되자 봇은 고객이 3번째 턴에 알려 준 주문번호를 모릅니다. 어떤 변경이 이를 해결합니까?\n① 1M 토큰 컨텍스트 창을 가진 모델로 바꿔, 이전 턴이 모델의 기억에 남게 한다\n② 모든 요청에 전체 대화 이력(모든 user 메시지, assistant 응답, 도구 결과)을 보낸다\n③ 요청마다 고정된 대화 ID를 보내 API가 세션의 이전 턴을 찾게 한다\n④ `max_tokens` 를 올려 모델이 대화를 더 많이 기억할 여유를 준다",
+  "sentences": [
+   {
+    "sid": "lesson-d5#1.0",
+    "en": "A support bot built on the Messages API sends the system prompt, its tool definitions and the customer's newest message on each request."
+   },
+   {
+    "sid": "lesson-d5#1.1",
+    "en": "By turn 12 it no longer knows the order number the customer gave in turn 3."
+   },
+   {
+    "sid": "lesson-d5#1.2",
+    "en": "Which change fixes this?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d5#2",
+  "koRef": "청구 상담 30번째 턴에 고객이 \"15일까지 $214.88 환불해 주기로 하셨잖아요\"라고 말합니다. 에이전트의 컨텍스트에는 전체 system 프롬프트와, 여러 번 다시 압축된 누적 요약이 있습니다. 요약에는 \"고객이 곧 환불을 원함\"만 남아 있습니다. 가장 가능성 높은 원인은?\n① Messages API가 stateless라서, 대화가 일정 길이를 넘자 오래된 턴을 버렸다\n② 요약 단계마다 간결함을 위해 정밀도를 희생해, 정확한 금액과 기한이 모호한 표현으로 압축됐다\n③ 컨텍스트 창이 거의 차서 모델이 사실을 더 모호하게 환각했다\n④ 요약을 더 저렴한 모델이 썼다. 메인 모델이 썼다면 사실이 살아남았을 것이다",
+  "sentences": [
+   {
+    "sid": "lesson-d5#2.0",
+    "en": "Turn 30 of a billing chat: the customer says, \"You promised my $214.88 refund by the 15th.\""
+   },
+   {
+    "sid": "lesson-d5#2.1",
+    "en": "The agent's context contains the full system prompt and a running summary that has been condensed several times."
+   },
+   {
+    "sid": "lesson-d5#2.2",
+    "en": "The summary says only \"customer wants a refund soon.\""
+   },
+   {
+    "sid": "lesson-d5#2.3",
+    "en": "What is the most likely cause?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d5#3",
+  "koRef": "청구 지원 에이전트가 프롬프트를 짧게 유지하려고 긴 상담을 몇 턴마다 요약해 왔습니다. 세 번째 요약 뒤 누적 요약은 \"고객이 곧 환불을 원하며 지난달 주문을 언급함\"이 되었습니다. 원래 메시지에는 정확한 주문번호, $214.88 환불 금액, 고객이 말한 15일 기한이 있었습니다. 앞으로 이 실패 유형을 가장 잘 막는 방법은?\n① 주문번호·환불 금액·기한을 구조화된 기록에 저장해 매 요약과 함께 넘긴다\n② 요약 간격을 줄여 한 번에 누적 요약으로 압축하는 새 메시지 수를 줄인다\n③ 요약을 갱신할 때마다 고객에게 주문번호·환불 금액·기한을 다시 보내 달라고 한다\n④ 더 큰 컨텍스트 창 모델로 옮기고 요약 임계값을 높여 압축을 훨씬 늦게 시작한다",
+  "sentences": [
+   {
+    "sid": "lesson-d5#3.0",
+    "en": "A billing support agent has been summarizing a lengthy chat every few turns to keep the prompt short."
+   },
+   {
+    "sid": "lesson-d5#3.1",
+    "en": "After the third summarization pass, the running summary reads \"the customer wants a refund soon and mentioned an order from last month,\" even though the original messages contained an exact order number, a refund amount of $214.88, and a customer-stated deadline of the 15th."
+   },
+   {
+    "sid": "lesson-d5#3.2",
+    "en": "Which practice best addresses this failure mode going forward?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d5#4",
+  "koRef": "누적 요약이 환불 금액, 청구서 번호, 약속한 기한을 계속 바꿔 말하는 청구 에이전트를 다시 설계하고 있습니다. 대화가 길어서 요약은 유지해야 합니다. 어떤 설계가 이 값들을 매 턴 정확하게 유지합니까?\n① 맞춤 요약 프롬프트로 Claude에게 모든 금액·날짜·약속을 Context to Preserve 아래에 나열하게 한다\n② 거래성 사실을 구조화된 case-facts 블록으로 뽑아 매 프롬프트에 함께 보내고, 요약되는 이력에서는 제외한다\n③ 요약을 끄고 1M 토큰 컨텍스트 창에 기대, 원래 턴이 압축되지 않게 한다\n④ 요약할 때마다 고객에게 주문번호·금액·기한을 다시 확인받는다",
+  "sentences": [
+   {
+    "sid": "lesson-d5#4.0",
+    "en": "You are redesigning a billing agent whose running summary keeps paraphrasing refund amounts, invoice numbers and promised deadlines."
+   },
+   {
+    "sid": "lesson-d5#4.1",
+    "en": "Summarization has to stay, because the chats run long."
+   },
+   {
+    "sid": "lesson-d5#4.2",
+    "en": "Which design keeps those values exact on every turn?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d5#5",
+  "koRef": "반품 처리 에이전트가 주문 조회 도구를 호출하면, 확인하는 주문마다 40개가 넘는 필드(배송사 메타데이터, 내부 창고 코드, 마케팅 태그 등)가 담긴 JSON이 돌아옵니다. 조회가 열두 번쯤 쌓이자 원본 페이로드가 컨텍스트 창을 지배하지만, 반품 자격 판단에 필요한 것은 5개 필드(주문 상태, 구매일, 품목, 금액, 반품 기한)뿐입니다. 조회 결과를 컨텍스트에 넣기 전에 에이전트는 무엇을 해야 합니까?\n① 각 조회 응답을 코드로 파싱해 상태·구매일·품목·금액·반품 기한만 모델에 넘긴다\n② 전체 조회 응답을 세션 저장소에 캐시해, 같은 주문을 다시 확인할 때 도구를 다시 부르지 않고 재사용한다\n③ 각 조회 응답을 두 번째 모델 호출로 보내 짧은 요약을 쓰게 하고, 이력에는 그 요약만 남긴다\n④ 각 조회 응답을 코드로 앞 1,000자까지 잘라 그 앞부분만 이력에 남긴다",
+  "sentences": [
+   {
+    "sid": "lesson-d5#5.0",
+    "en": "A returns-processing agent calls an order-lookup tool that returns a JSON payload with 40+ fields (shipping carrier metadata, internal warehouse codes, marketing tags, etc.) for every order it checks, and after a dozen lookups the raw payloads dominate the context window even though only 5 fields (order status, purchase date, item, amount, return-window deadline) matter for return eligibility."
+   },
+   {
+    "sid": "lesson-d5#5.1",
+    "en": "What should the agent do before adding each lookup result to context?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d5#6",
+  "koRef": "리서치 어시스턴트가 서브에이전트 5개(시장 규모, 경쟁사 가격, 규제 리스크, 고객 정서, 유통 채널)의 출력을 하나의 긴 문서로 합쳐 종합 단계에 넘깁니다. 최종 메모에서 규제 리스크 발견이 빠졌는데, 이 내용은 문서 중간인 다섯 섹션 중 세 번째에 있었습니다. 다음 실행에서 이를 막으려면 집계 입력을 어떻게 구성하는 것이 가장 좋습니까?\n① 합친 입력 맨 앞에 서브에이전트별 핵심 발견의 짧은 요약을 두고, 각 상세 섹션에 명확한 제목을 붙인다\n② 규제 리스크 섹션을 입력 맨 끝으로 옮기고, 나머지 네 섹션은 현재 순서를 유지한다\n③ 종합 단계에 최종 확정 전에 입력을 다시 읽고 각 섹션을 초안 메모와 대조하라고 지시한다\n④ 합친 입력을 짧은 두 부분으로 나눠, 별도 입력으로 순서대로 종합 단계에 넘긴다",
+  "sentences": [
+   {
+    "sid": "lesson-d5#6.0",
+    "en": "A research assistant aggregates outputs from five subagents (market sizing, competitor pricing, regulatory risk, customer sentiment, distribution channels) into one long combined document that is then passed to a synthesis step."
+   },
+   {
+    "sid": "lesson-d5#6.1",
+    "en": "The synthesis step's final memo omits the regulatory risk finding, which appeared in the third of five sections in the middle of the document."
+   },
+   {
+    "sid": "lesson-d5#6.2",
+    "en": "What is the best way to structure the aggregated input to prevent this in future runs?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d5#7",
+  "koRef": "팀이 새 고객지원 에이전트의 이관(handoff) 규칙을 쓰고 있습니다. 어떤 설계가 양방향 모두에서 에스컬레이션을 올바르게 합니까?\n① 에이전트가 복잡하다고 판단한 케이스는 모두 넘겨, 여러 단계짜리 케이스를 모두 사람이 검토하게 한다.\n② 대화에서 확인할 수 있는 특정 조건에서만 넘긴다: 고객이 사람을 요청할 때, 서면 정책이 요청을 다루지 않을 때, 에이전트가 의미 있는 진전을 낼 수 없을 때.\n③ 에스컬레이션은 자동 처리율(deflection rate)을 낮추고 비용을 늘리므로 절대 넘기지 않는다.\n④ 에이전트가 행동하기 전에 모든 대화를 사람의 승인으로 보내, 에이전트가 혼자 결정하는 일이 없게 한다.",
+  "sentences": [
+   {
+    "sid": "lesson-d5#7.0",
+    "en": "A team is writing the handoff rules for a new customer support agent."
+   },
+   {
+    "sid": "lesson-d5#7.1",
+    "en": "Which design gets escalation right in both directions?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d5#8",
+  "koRef": "앞서 고객이 짜증 난 듯했지만 사람을 요청하지는 않아서, 에이전트는 불편을 인정하고 상담원 연결을 선택지로 제안했습니다. 이제 고객이 \"아니요, 그냥 사람한테 연결해 주세요\"라고 답합니다. 고객에게 필요한 청구일 변경은 도구 호출 한 번이면 됩니다. 에이전트가 다음에 할 일은?\n① 한 단계면 되니 청구일 변경을 먼저 하고, 그다음 고객을 연결한다\n② 변경이나 추가 조사 없이 지금 바로 사람에게 넘긴다\n③ 불만만으로는 이관 트리거가 아니라고 이미 판단했으므로 계속 문제를 처리한다\n④ 이관 여부를 정하기 전에 왜 사람을 원하는지 묻는다",
+  "sentences": [
+   {
+    "sid": "lesson-d5#8.0",
+    "en": "Earlier in a chat, a customer sounded irritated but never asked for a person."
+   },
+   {
+    "sid": "lesson-d5#8.1",
+    "en": "So the agent acknowledged the frustration and offered a human as an option."
+   },
+   {
+    "sid": "lesson-d5#8.2",
+    "en": "The customer now replies: \"No, just put me through to a person.\""
+   },
+   {
+    "sid": "lesson-d5#8.3",
+    "en": "The billing-date change they need takes one tool call."
+   },
+   {
+    "sid": "lesson-d5#8.4",
+    "en": "What should the agent do next?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d5#9",
+  "koRef": "의료 예약 어시스턴트는 다음 에스컬레이션 정책을 따릅니다. 요청이 어시스턴트의 처리 범위 안이고 환자가 직원을 요청하지 않았다면, 표현된 불만을 인정하고, 요청을 직접 완료하며, 직원 연결은 필수가 아닌 선택지로 제안합니다. 필수 에스컬레이션은 완료할 수 없는 요청, 임상적 판단이 필요한 경우, 사람에 대한 명시적 요청에만 둡니다. 한 환자가 임상적 긴급성이 없는 정기 진료 일정 변경에 대해 확연히 짜증 섞인 어조로 메시지를 보냈습니다. 어시스턴트는 일정을 직접 바꿀 수 있고, 환자는 직원과 이야기하겠다고 하지 않았습니다. 정책에 따르면 어시스턴트는 무엇을 해야 합니까?\n① 불만을 인정하고, 지금 바로 일정을 변경하며, 직원 연결을 제안한다.\n② 짜증 섞인 어조는 사람이 다뤄야 할 상황이라는 신호이므로 즉시 직원에게 넘긴다.\n③ 어조를 인정하지 않고 일정을 변경한다. 불만은 요청 완료와 무관한 것으로 본다.\n④ 일정 변경 전에, 직원 연결을 원하지 않는다는 것을 환자에게 확인받는다.",
+  "sentences": [
+   {
+    "sid": "lesson-d5#9.0",
+    "en": "A healthcare scheduling assistant follows a configured escalation policy: when a request is within the assistant's capability and the patient has not asked for a staff member, the assistant should acknowledge any expressed frustration, complete the request directly, and offer escalation to a staff member as an option rather than a requirement -- reserving mandatory escalation for requests it cannot complete, cases needing clinical judgment, or an explicit request for a human."
+   },
+   {
+    "sid": "lesson-d5#9.1",
+    "en": "A patient messages the assistant in a clearly irritated tone about needing to reschedule a routine appointment with no clinical urgency."
+   },
+   {
+    "sid": "lesson-d5#9.2",
+    "en": "The assistant can complete the rescheduling directly, and the patient has not asked to speak with a staff member."
+   },
+   {
+    "sid": "lesson-d5#9.3",
+    "en": "Following its configured policy, what should the assistant do?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d5#10",
+  "koRef": "소매 고객이 경쟁사 웹사이트에서 찾은 더 낮은 가격에 맞춰 달라고 요청합니다. 매장의 문서화된 정책은 구매 후 14일 이내에 매장 자체 웹사이트 가격이 내려갔을 때의 가격 조정만 설명하고, 경쟁사 가격은 전혀 언급하지 않습니다. 에이전트는 어떻게 해야 합니까?\n① 서면 정책이 다루지 않는 사안을 결정할 수 있는 상급자에게 요청을 넘긴다\n② 자사 사이트 조정 조항을 허용된 조정의 전체 목록으로 보고 요청을 거절한다\n③ 자사 사이트 조정 조항을 경쟁사의 낮은 가격에도 확장해 가격 맞춤을 승인한다\n④ 경쟁사 판매 페이지 스크린샷을 요청하고, 낮은 가격이 확인되면 가격 맞춤을 승인한다",
+  "sentences": [
+   {
+    "sid": "lesson-d5#10.0",
+    "en": "A retail customer asks a support agent to match a lower price they found on a competitor's website."
+   },
+   {
+    "sid": "lesson-d5#10.1",
+    "en": "The store's documented policy only describes price adjustments when the store's own website lowers a price within 14 days of purchase; it does not mention competitor pricing at all."
+   },
+   {
+    "sid": "lesson-d5#10.2",
+    "en": "How should the agent proceed?"
+   }
+  ]
+ },
+ {
+  "key": "lesson-d5#11",
+  "koRef": "지원팀의 프로토타입은 감정 점수가 부정적으로 바뀌거나 모델이 스스로 매긴 확신도가 0.6 아래로 떨어지면 대화를 사람에게 넘깁니다. 테스트에서 일반적인 30일 사이즈 교환을 요청한 몹시 화난 고객은 이관됐고, 서면 정책이 다루지 않는 요청을 한 정중한 고객은 에이전트에 남았습니다. 팀은 무엇을 바꿔야 합니까?\n① 감정 규칙은 남기고 확신도 규칙은 뺀다. 분노는 사람이 필요한 케이스를 확실히 알려 주지만 자기 평가는 주관적이기 때문이다\n② 확신도 규칙은 남기고 감정 규칙은 뺀다. 자기 능력 밖인지는 모델이 가장 잘 판단하기 때문이다\n③ 두 신호가 동시에 나올 때만 이관해, 부정 감정과 낮은 확신도가 서로의 사각지대를 메우게 한다\n④ 두 신호 모두 트리거로 쓰지 않는다. 확인 가능한 조건(고객이 사람을 요청, 요청을 다루는 정책 없음, 진전 방법 없음)으로 라우팅하고, 감정은 대화 시작부터 끝까지의 결과 지표로 추적한다",
+  "sentences": [
+   {
+    "sid": "lesson-d5#11.0",
+    "en": "A support team's prototype routes a conversation to a human whenever its sentiment score turns negative or the model rates its own confidence below 0.6."
+   },
+   {
+    "sid": "lesson-d5#11.1",
+    "en": "In testing, a furious customer with a routine 30-day size exchange gets escalated."
+   },
+   {
+    "sid": "lesson-d5#11.2",
+    "en": "A polite customer whose request no written policy covers stays with the agent."
+   },
+   {
+    "sid": "lesson-d5#11.3",
+    "en": "What should the team change?"
+   }
+  ]
+ }
+]
