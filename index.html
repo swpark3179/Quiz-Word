@@ -2,9 +2,20 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f46e5'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>W</text></svg>" />
     <title>Quiz Word</title>
+    <script>
+      // 첫 화면이 그려지기 전에 테마를 맞춘다 (어두운 테마에서 흰 화면이 번쩍이지 않게)
+      try {
+        var saved = JSON.parse(localStorage.getItem('quiz-word:v1') || '{}');
+        var theme = (saved.state && saved.state.settings && saved.state.settings.theme) || 'system';
+        if (theme === 'dark' || (theme === 'system' && matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

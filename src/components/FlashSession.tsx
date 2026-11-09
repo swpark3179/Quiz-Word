@@ -9,7 +9,9 @@ import { WORD_BY_ID } from '../data/words';
 import { answer, createQueue, currentId, isFinished, isRepeat, summary, type FlashQueue } from '../lib/flashQueue';
 import { speak } from '../lib/tts';
 import { useProgress } from '../store/progress';
-import { Button, Card, Kbd, PosBadge, ProgressBar, SpeakButton } from './ui';
+import { isModalOpen, isTyping } from './Dialog';
+import { SessionHeader, StickyActions, useExitGuard } from './SessionParts';
+import { Button, Card, Kbd, PosBadge, SpeakButton } from './ui';
 import { WordBrief } from './WordInfo';
 
 export interface FlashSessionProps {
@@ -29,6 +31,8 @@ export function FlashSession({ ids, title, onAnswer, onExit }: FlashSessionProps
   const w = id ? WORD_BY_ID.get(id) : undefined;
   const total = useMemo(() => new Set(queue.order.concat(queue.done)).size, [queue]);
   const spokenFor = useRef<string>('');
+  const finished = isFinished(queue);
+  const { requestExit, dialog: exitDialog } = useExitGuard(onExit, !finished && queue.shown > 0);
 
   // 새 카드가 나오면 자동 발음
   useEffect(() => {
@@ -61,8 +65,22 @@ export function FlashSession({ ids, title, onAnswer, onExit }: FlashSessionProps
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if (e.ctrlKey || e.metaKey || e.altKey || isTyping(e) || isModalOpen()) return;
       const k = e.key;
+      if (k === 'Escape') {
+        e.preventDefault();
+        requestExit();
+        return;
+      }
+      if (finished) {
+        // 끝 화면: Enter 로 모른 단어만 다시 (없으면 나가기)
+        if (k !== 'Enter') return;
+        e.preventDefault();
+        const { unknown } = summary(queue);
+        if (unknown.length) restartWith(unknown);
+        else onExit();
+        return;
+      }
       if (k.toLowerCase() === 'p' && w) {
         speak(w.word, { voiceURI: settings.ttsVoice, rate: settings.ttsRate });
         return;
@@ -81,9 +99,9 @@ export function FlashSession({ ids, title, onAnswer, onExit }: FlashSessionProps
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [judged, judge, next, w, settings]);
+  }, [judged, judge, next, w, settings, finished, queue, requestExit, onExit]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  if (isFinished(queue)) {
+  if (finished) {
     const s = summary(queue);
     return (
       <div className="anim-card-in mx-auto max-w-xl">
@@ -122,12 +140,12 @@ export function FlashSession({ ids, title, onAnswer, onExit }: FlashSessionProps
           <div className="mt-8 flex flex-wrap justify-center gap-2">
             {s.unknown.length > 0 && (
               <Button variant="primary" onClick={() => restartWith(s.unknown)}>
-                <RotateCcw size={16} /> 모른 단어만 다시
+                <RotateCcw size={16} /> 모른 단어만 다시 <Kbd>Enter</Kbd>
               </Button>
             )}
             <Button onClick={() => restartWith(Object.keys(queue.first))}>전체 다시</Button>
-            <Button variant="ghost" onClick={onExit}>
-              나가기
+            <Button variant={s.unknown.length ? 'ghost' : 'primary'} onClick={onExit}>
+              나가기 <Kbd>{s.unknown.length ? 'Esc' : 'Enter'}</Kbd>
             </Button>
           </div>
         </Card>
@@ -140,17 +158,10 @@ export function FlashSession({ ids, title, onAnswer, onExit }: FlashSessionProps
 
   return (
     <div className="mx-auto max-w-2xl">
-      <div className="mb-4 flex items-center gap-3">
-        <button onClick={onExit} className="rounded-lg p-1.5 text-muted hover:bg-surface-2 hover:text-ink" title="나가기">
-          <X size={18} />
-        </button>
-        <ProgressBar value={queue.done.length} max={total} className="flex-1" />
-        <span className="text-[13px] tabular-nums text-muted">
-          {queue.done.length} / {total}
-        </span>
-      </div>
+      <SessionHeader onExit={requestExit} value={queue.done.length} max={total} label={`${queue.done.length} / ${total}`} />
 
-      <Card key={`${id}-${queue.shown}-${round}`} className="anim-card-in overflow-hidden">
+      {/* overflow-hidden 을 쓰지 않는다 — 아래 "다음" 줄이 화면 아래에 붙어야 한다 */}
+      <Card key={`${id}-${queue.shown}-${round}`} className="anim-card-in">
         {/* 앞면 */}
         <div className={`flex flex-col items-center px-6 text-center ${judged === null ? 'py-16 sm:py-20' : 'pb-6 pt-8'}`}>
           <div className="mb-4 flex h-5 items-center gap-2">
@@ -170,7 +181,7 @@ export function FlashSession({ ids, title, onAnswer, onExit }: FlashSessionProps
           <div className="grid grid-cols-2 border-t border-line">
             <button
               onClick={() => judge(false)}
-              className="group flex flex-col items-center gap-1.5 py-5 text-danger transition hover:bg-danger-soft"
+              className="focus-inset group flex flex-col items-center gap-1.5 rounded-bl-2xl py-5 text-danger transition hover:bg-danger-soft"
             >
               <span className="flex items-center gap-2 text-[17px] font-bold">
                 <X size={20} /> 모른다
@@ -182,7 +193,7 @@ export function FlashSession({ ids, title, onAnswer, onExit }: FlashSessionProps
             </button>
             <button
               onClick={() => judge(true)}
-              className="group flex flex-col items-center gap-1.5 border-l border-line py-5 text-success transition hover:bg-success-soft"
+              className="focus-inset group flex flex-col items-center gap-1.5 rounded-br-2xl border-l border-line py-5 text-success transition hover:bg-success-soft"
             >
               <span className="flex items-center gap-2 text-[17px] font-bold">
                 <Check size={20} /> 안다
@@ -195,33 +206,41 @@ export function FlashSession({ ids, title, onAnswer, onExit }: FlashSessionProps
           </div>
         ) : (
           <div className="anim-fade border-t border-line">
-            <div className={`flex items-center justify-between px-6 py-2.5 text-[13px] font-semibold ${judged ? 'bg-success-soft text-success' : 'bg-danger-soft text-danger'}`}>
+            <div
+              className={`flex items-center justify-between gap-3 px-6 py-2.5 text-[13px] font-semibold ${judged ? 'bg-success-soft text-success' : 'bg-danger-soft text-danger'}`}
+              role="status"
+            >
               <span className="flex items-center gap-1.5">
-                {judged ? <Check size={15} /> : <X size={15} />}
-                {judged ? '안다고 했어요' : '모른다고 했어요 — 몇 장 뒤에 다시 나옵니다'}
+                {judged ? <Check size={15} className="shrink-0" /> : <X size={15} className="shrink-0" />}
+                {judged ? '안다고 했어요' : '모른다고 했어요'}
+                {!judged && <span className="hidden font-medium opacity-80 sm:inline">— 몇 장 뒤에 다시 나옵니다</span>}
               </span>
-              <button onClick={() => setJudged(!judged)} className="flex items-center gap-1 text-[12.5px] font-medium opacity-80 hover:opacity-100">
+              <button
+                onClick={() => setJudged(!judged)}
+                className="flex shrink-0 items-center gap-1 whitespace-nowrap rounded-md text-[12.5px] font-medium opacity-80 hover:opacity-100"
+              >
                 <Undo2 size={13} /> {judged ? '사실 몰랐어요' : '사실 알았어요'} <Kbd>{judged ? '↓' : '↑'}</Kbd>
               </button>
             </div>
             <div className="px-6 py-6 sm:px-8">
               <WordBrief w={w} contextLimit={2} />
             </div>
-            <div className="flex items-center justify-between border-t border-line px-6 py-4 sm:px-8">
+            <StickyActions className="px-6 sm:px-8">
               <Link to={`/word/${w.id}`} target="_blank" className="text-[13px] font-medium text-muted hover:text-primary">
                 상세 보기 ↗
               </Link>
-              <Button variant="primary" onClick={next}>
+              <Button variant="primary" className="min-w-28" onClick={next}>
                 다음 <Kbd>Space</Kbd>
               </Button>
-            </div>
+            </StickyActions>
           </div>
         )}
       </Card>
 
-      <div className="mt-4 text-center text-[12px] text-muted">
-        <Kbd>P</Kbd> 발음 듣기
+      <div className="keys-hint mt-4 text-center text-[12px] text-muted">
+        <Kbd>P</Kbd> 발음 듣기 · <Kbd>Esc</Kbd> 그만하기
       </div>
+      {exitDialog}
     </div>
   );
 }

@@ -6,6 +6,7 @@ import { Button, Card, Empty, PageHeader, PosBadge } from '../components/ui';
 import { WORD_BY_ID } from '../data/words';
 import { DEFAULT_SCOPE, scopeToParams } from '../lib/scope';
 import { useProgress } from '../store/progress';
+import { setWordNav } from './wordNav';
 
 const WRONG_SCOPE = scopeToParams({ ...DEFAULT_SCOPE, set: 'wrong', status: 'any', count: 0, order: 'random', includeBasic: true });
 
@@ -41,7 +42,7 @@ export function WrongPage() {
         desc={`객관식에서 틀리거나 플래시카드에서 모른다고 한 단어가 모입니다. 이후 ${graduate}번 연속으로 맞히면 자동으로 빠져요.`}
         right={
           rows.length > 0 && (
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               <Button variant="primary" onClick={() => navigate(`/flash/play?${WRONG_SCOPE}`)}>
                 <Layers size={16} /> 오답만 플래시카드
               </Button>
@@ -79,10 +80,22 @@ export function WrongPage() {
           <div className="divide-y divide-line">
             {rows.map(({ id, e, w }) => (
               <div key={id} className="flex items-center gap-4 px-5 py-3.5 hover:bg-surface-2/60">
-                <Link to={`/word/${id}`} className="flex min-w-0 flex-1 items-center gap-3">
-                  <span className="w-36 shrink-0 truncate text-[15.5px] font-semibold sm:w-44">{w!.word}</span>
+                <Link
+                  to={`/word/${id}`}
+                  onClick={() =>
+                    setWordNav(
+                      rows.map((r) => r.id),
+                      '오답노트로',
+                    )
+                  }
+                  className="min-w-0 flex-1 sm:flex sm:items-center sm:gap-3"
+                >
+                  <span className="flex items-center gap-2 sm:w-44 sm:shrink-0">
+                    <span className="truncate text-[15.5px] font-semibold">{w!.word}</span>
+                    <span className="shrink-0 rounded-full bg-danger-soft px-1.5 py-px text-[10.5px] font-bold text-danger sm:hidden">{e.count}회</span>
+                  </span>
                   <span className="hidden sm:block">{w!.pos[0] && <PosBadge pos={w!.pos[0]} size="xs" />}</span>
-                  <span className="min-w-0 flex-1 truncate text-[14px] text-ink-2">{w!.short}</span>
+                  <span className="block min-w-0 truncate text-[13px] text-ink-2 sm:flex-1 sm:text-[14px]">{w!.short}</span>
                 </Link>
                 <div className="hidden shrink-0 text-right text-[12px] text-muted sm:block">
                   <div>
@@ -94,7 +107,7 @@ export function WrongPage() {
                     ))}
                   </div>
                 </div>
-                <button onClick={() => removeWrong(id)} title="오답노트에서 빼기" className="rounded-lg p-2 text-muted hover:bg-danger-soft hover:text-danger">
+                <button onClick={() => removeWrong(id)} title="오답노트에서 빼기" aria-label={`${w!.word} 오답노트에서 빼기`} className="rounded-lg p-2 text-muted hover:bg-danger-soft hover:text-danger">
                   <Trash2 size={16} />
                 </button>
               </div>

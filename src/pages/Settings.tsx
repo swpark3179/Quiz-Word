@@ -1,6 +1,7 @@
 /** 설정 */
 import { Download, Monitor, Moon, RotateCcw, Sun, Upload, Volume2 } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
+import { ConfirmDialog } from '../components/Dialog';
 import { Button, Card, PageHeader, SectionTitle } from '../components/ui';
 import { WORDS } from '../data/words';
 import { defaultVoice, getVoices, onVoicesChanged, speak, ttsSupported } from '../lib/tts';
@@ -19,11 +20,12 @@ function Field({ label, desc, children }: { label: string; desc?: string; childr
   );
 }
 
-function Toggle({ checked, onChange }: { checked: boolean; onChange: (v: boolean) => void }) {
+function Toggle({ checked, onChange, label }: { checked: boolean; onChange: (v: boolean) => void; label: string }) {
   return (
     <button
       role="switch"
       aria-checked={checked}
+      aria-label={label}
       onClick={() => onChange(!checked)}
       className={`relative h-6 w-11 rounded-full transition ${checked ? 'bg-primary' : 'bg-surface-3'}`}
     >
@@ -43,6 +45,8 @@ export function SettingsPage() {
   const [voices, setVoices] = useState(getVoices());
   const [message, setMessage] = useState('');
   const fileRef = useRef<HTMLInputElement>(null);
+  /** 확인을 기다리는 동작 — 기록을 덮어쓰거나 지우기 전에 한 번 묻는다 */
+  const [pending, setPending] = useState<{ kind: 'reset' } | { kind: 'import'; data: unknown; cards: number; name: string } | null>(null);
 
   useEffect(() => onVoicesChanged(() => setVoices(getVoices())), []);
 
@@ -56,12 +60,29 @@ export function SettingsPage() {
     setMessage('진행 기록을 파일로 저장했어요.');
   };
 
-  const doImport = async (file: File) => {
+  const applyImport = (data: unknown) => {
     try {
-      importData(JSON.parse(await file.text()));
+      importData(data);
       setMessage('진행 기록을 불러왔어요.');
     } catch (e) {
       setMessage(`불러오지 못했어요: ${(e as Error).message}`);
+    }
+  };
+
+  const doImport = async (file: File) => {
+    let data: unknown;
+    try {
+      data = JSON.parse(await file.text());
+    } catch {
+      setMessage('불러오지 못했어요: JSON 파일이 아닙니다.');
+      return;
+    }
+    // 지금 기록이 있으면 덮어쓰기 전에 묻는다
+    if (cardsN > 0) {
+      const cards = Object.keys((data as { cards?: object } | null)?.cards ?? {}).length;
+      setPending({ kind: 'import', data, cards, name: file.name });
+    } else {
+      applyImport(data);
     }
   };
 
@@ -93,7 +114,7 @@ export function SettingsPage() {
           </select>
         </Field>
         <Field label="틀린 단어 자동으로 오답노트에 담기" desc="객관식 오답, 플래시카드 '모른다'">
-          <Toggle checked={settings.wrongAutoAdd} onChange={(v) => update({ wrongAutoAdd: v })} />
+          <Toggle label="틀린 단어 자동으로 오답노트에 담기" checked={settings.wrongAutoAdd} onChange={(v) => update({ wrongAutoAdd: v })} />
         </Field>
         <Field label="오답노트에서 빠지는 기준" desc="연속으로 맞힌 횟수">
           <select value={settings.wrongGraduate} onChange={(e) => update({ wrongGraduate: Number(e.target.value) })} className={inputCls}>
@@ -142,7 +163,7 @@ export function SettingsPage() {
           />
         </Field>
         <Field label="카드가 나올 때 자동 발음">
-          <Toggle checked={settings.autoSpeak} onChange={(v) => update({ autoSpeak: v })} />
+          <Toggle label="카드가 나올 때 자동 발음" checked={settings.autoSpeak} onChange={(v) => update({ autoSpeak: v })} />
         </Field>
       </Card>
 
@@ -176,7 +197,7 @@ export function SettingsPage() {
       <Card className="px-6 py-6 sm:px-8">
         <SectionTitle>진행 기록</SectionTitle>
         <p className="mb-4 text-[13px] leading-relaxed text-muted">
-          진행 기록은 이 브라우저(localhost:5179)에 저장됩니다. 다른 브라우저로 옮기거나 백업하려면 파일로 내보내세요. 지금까지 학습한 단어{' '}
+          진행 기록은 이 브라우저({window.location.host})에 저장됩니다. 다른 브라우저로 옮기거나 백업하려면 파일로 내보내세요. 지금까지 학습한 단어{' '}
           <b className="text-ink">{cardsN}</b>개 / 전체 {WORDS.length.toLocaleString()}개.
         </p>
         <div className="flex flex-wrap gap-2">
@@ -200,18 +221,56 @@ export function SettingsPage() {
           <Button
             variant="ghost"
             className="text-danger"
-            onClick={() => {
-              if (confirm('학습 기록(복습 일정·오답노트·통계)을 모두 지울까요? 설정은 유지됩니다.')) {
-                resetProgress();
-                setMessage('학습 기록을 초기화했어요.');
-              }
-            }}
+            disabled={cardsN === 0}
+            onClick={() => setPending({ kind: 'reset' })}
           >
             <RotateCcw size={16} /> 기록 초기화
           </Button>
         </div>
-        {message && <p className="anim-fade mt-3 text-[13px] font-medium text-primary">{message}</p>}
+        {message && (
+          <p className="anim-fade mt-3 text-[13px] font-medium text-primary" role="status">
+            {message}
+          </p>
+        )}
       </Card>
+
+      <ConfirmDialog
+        open={pending?.kind === 'reset'}
+        tone="danger"
+        title="학습 기록을 모두 지울까요?"
+        desc={
+          <>
+            학습한 단어 <b className="text-ink">{cardsN}</b>개의 복습 일정과 오답노트·통계가 지워지고 되돌릴 수 없습니다. 설정은 그대로 남습니다. 지우기 전에
+            내보내기로 백업해 두는 것을 권합니다.
+          </>
+        }
+        confirmLabel="모두 지우기"
+        onCancel={() => setPending(null)}
+        onConfirm={() => {
+          resetProgress();
+          setPending(null);
+          setMessage('학습 기록을 초기화했어요.');
+        }}
+      />
+      <ConfirmDialog
+        open={pending?.kind === 'import'}
+        tone="danger"
+        title="지금 기록을 파일 내용으로 바꿀까요?"
+        desc={
+          pending?.kind === 'import' && (
+            <>
+              <b className="text-ink">{pending.name}</b> (학습한 단어 {pending.cards}개)을 불러오면 지금 기록(학습한 단어 {cardsN}개)과 설정이 파일
+              내용으로 바뀝니다. 두 기록을 합치지는 않습니다.
+            </>
+          )
+        }
+        confirmLabel="바꾸기"
+        onCancel={() => setPending(null)}
+        onConfirm={() => {
+          if (pending?.kind === 'import') applyImport(pending.data);
+          setPending(null);
+        }}
+      />
     </div>
   );
 }

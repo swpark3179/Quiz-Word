@@ -1,8 +1,11 @@
 /** 학습 범위 고르기 — 플래시카드·객관식 시작 화면 */
-import { useMemo, useState } from 'react';
+import { Play } from 'lucide-react';
+import { useEffect, useMemo, useState } from 'react';
 import { QUIZ_SOURCES, WORDS } from '../data/words';
 import { DEFAULT_SCOPE, filterScope, type Scope } from '../lib/scope';
 import { useProgress } from '../store/progress';
+import { isModalOpen, isTyping } from './Dialog';
+import { Button, Kbd } from './ui';
 
 function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
@@ -50,10 +53,16 @@ export function useStoredScope(key: string): [Scope, (s: Scope) => void] {
   return [scope, update];
 }
 
-export function ScopePicker({ scope, onChange }: { scope: Scope; onChange: (s: Scope) => void }) {
+/** 범위 조건에 맞는 단어 수와 실제로 학습할 수 (개수 제한 반영) */
+export function useScopeCount(scope: Scope) {
   const cards = useProgress((s) => s.cards);
   const wrong = useProgress((s) => s.wrong);
   const matched = useMemo(() => filterScope(WORDS, scope, { cards, wrong }).length, [scope, cards, wrong]);
+  return { matched, selected: scope.count > 0 ? Math.min(matched, scope.count) : matched };
+}
+
+export function ScopePicker({ scope, onChange }: { scope: Scope; onChange: (s: Scope) => void }) {
+  const { matched } = useScopeCount(scope);
   const set = (patch: Partial<Scope>) => onChange({ ...scope, ...patch });
 
   return (
@@ -128,10 +137,38 @@ export function ScopePicker({ scope, onChange }: { scope: Scope; onChange: (s: S
           쉬운 기초 단어도 포함
         </label>
       </Row>
-      <div className="rounded-xl bg-surface-2 px-4 py-2.5 text-[13px] text-ink-2">
-        조건에 맞는 단어 <b className="text-ink">{matched.toLocaleString()}</b>개
-        {scope.count > 0 && matched > scope.count && <> 중 {scope.count}개를 학습합니다</>}
+      <div className={`rounded-xl px-4 py-2.5 text-[13px] ${matched ? 'bg-surface-2 text-ink-2' : 'bg-warning-soft text-warning'}`} role="status">
+        {matched ? (
+          <>
+            조건에 맞는 단어 <b className="text-ink">{matched.toLocaleString()}</b>개
+            {scope.count > 0 && matched > scope.count && <> 중 {scope.count}개를 학습합니다</>}
+          </>
+        ) : scope.set === 'wrong' ? (
+          '오답노트가 비어 있어요. 다른 범위를 골라 주세요.'
+        ) : (
+          '조건에 맞는 단어가 없어요. 범위나 상태를 바꿔 주세요.'
+        )}
       </div>
     </div>
+  );
+}
+
+/** 시작 버튼 — 학습할 단어 수를 보여 주고, 단어가 없으면 누를 수 없다. Enter 로도 시작한다. */
+export function StartButton({ scope, unit, onStart }: { scope: Scope; unit: '장' | '문제'; onStart: () => void }) {
+  const { selected } = useScopeCount(scope);
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Enter' || e.ctrlKey || e.metaKey || e.altKey || isTyping(e) || isModalOpen()) return;
+      // 버튼·링크에 포커스가 있으면 Enter 는 그 버튼을 누르는 것이다
+      if ((e.target as HTMLElement).closest('button, a')) return;
+      if (selected > 0) onStart();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [selected, onStart]);
+  return (
+    <Button variant="primary" className="px-6" disabled={selected === 0} onClick={onStart}>
+      <Play size={16} /> {selected > 0 ? `${selected.toLocaleString()}${unit} 시작하기` : '시작하기'} <Kbd>Enter</Kbd>
+    </Button>
   );
 }

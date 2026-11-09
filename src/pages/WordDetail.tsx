@@ -1,9 +1,10 @@
 /** 단어 상세 */
-import { ArrowLeft, BookmarkMinus, BookmarkPlus, ChevronDown, ChevronUp, Layers } from 'lucide-react';
+import { ArrowLeft, BookmarkMinus, BookmarkPlus, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Layers } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import Markdown from 'react-markdown';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { ContextSentence } from '../components/ContextSentence';
+import { isModalOpen, isTyping } from '../components/Dialog';
 import { Button, Card, PosBadge, SectionTitle, StatusBadge } from '../components/ui';
 import { SenseList, WordHead } from '../components/WordInfo';
 import { contextsOf, corpusExamples, sourceName, WORD_BY_ID, WORD_BY_SURFACE } from '../data/words';
@@ -13,6 +14,7 @@ import { speak } from '../lib/tts';
 import { useProgress } from '../store/progress';
 import { scopeToParams, DEFAULT_SCOPE } from '../lib/scope';
 import type { Context } from '../lib/schema';
+import { wordNeighbors } from './wordNav';
 
 function groupBySense(contexts: Context[]) {
   const groups: { sense: string; pos: string; items: Context[] }[] = [];
@@ -35,6 +37,10 @@ export function WordDetail() {
   const addWrong = useProgress((s) => s.addWrong);
   const removeWrong = useProgress((s) => s.removeWrong);
   const [moreOpen, setMoreOpen] = useState(false);
+  /** 들어온 목록(단어장 검색 결과·오답노트)에서의 이전·다음 단어 */
+  const near = wordNeighbors(id);
+  // 이전·다음은 기록을 쌓지 않고 바꿔 끼운다 — "뒤로" 한 번이면 목록으로 돌아간다
+  const go = (to?: string) => to && navigate(`/word/${to}`, { replace: true });
 
   useEffect(() => {
     setMoreOpen(false);
@@ -42,14 +48,21 @@ export function WordDetail() {
   }, [id]);
 
   useEffect(() => {
+    if (w) document.title = `${w.word} · Quiz Word`;
+  }, [w]);
+
+  useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if ((e.target as HTMLElement).tagName === 'INPUT') return;
+      if (isTyping(e) || isModalOpen() || e.ctrlKey || e.metaKey) return;
+      if (e.key === 'Backspace' || (e.key === 'ArrowLeft' && e.altKey)) return navigate(-1);
+      if (e.altKey) return;
       if (e.key.toLowerCase() === 'p' && w) speak(w.word, { voiceURI: settings.ttsVoice, rate: settings.ttsRate });
-      if (e.key === 'Backspace' || (e.key === 'ArrowLeft' && e.altKey)) navigate(-1);
+      else if (e.key === 'ArrowLeft') go(near?.prev);
+      else if (e.key === 'ArrowRight') go(near?.next);
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [w, settings, navigate]);
+  }, [w, settings, navigate, near?.prev, near?.next]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!w) {
     return (
@@ -69,9 +82,36 @@ export function WordDetail() {
 
   return (
     <div className="anim-fade space-y-5">
-      <button onClick={() => navigate(-1)} className="flex items-center gap-1.5 text-[13px] font-medium text-muted hover:text-ink">
-        <ArrowLeft size={16} /> 뒤로
-      </button>
+      <div className="flex items-center justify-between gap-3">
+        <button onClick={() => navigate(-1)} className="flex items-center gap-1.5 rounded-lg py-1 pr-2 text-[13px] font-medium text-muted hover:text-ink">
+          <ArrowLeft size={16} /> {near?.back ?? '뒤로'}
+        </button>
+        {near && near.total > 1 && (
+          <div className="flex items-center gap-1 text-[13px] text-muted">
+            <button
+              onClick={() => go(near.prev)}
+              disabled={!near.prev}
+              title="이전 단어 (←)"
+              aria-label="이전 단어"
+              className="rounded-lg p-1.5 hover:bg-surface-2 hover:text-ink disabled:pointer-events-none disabled:opacity-30"
+            >
+              <ChevronLeft size={18} />
+            </button>
+            <span className="tabular-nums">
+              {(near.index + 1).toLocaleString()} / {near.total.toLocaleString()}
+            </span>
+            <button
+              onClick={() => go(near.next)}
+              disabled={!near.next}
+              title="다음 단어 (→)"
+              aria-label="다음 단어"
+              className="rounded-lg p-1.5 hover:bg-surface-2 hover:text-ink disabled:pointer-events-none disabled:opacity-30"
+            >
+              <ChevronRight size={18} />
+            </button>
+          </div>
+        )}
+      </div>
 
       <Card className="p-6 sm:p-8">
         <div className="flex flex-wrap items-start justify-between gap-4">

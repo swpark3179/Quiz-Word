@@ -1,9 +1,9 @@
 /** 플래시카드 — 범위 고르기 + 진행 */
-import { Layers, Play } from 'lucide-react';
+import { Layers } from 'lucide-react';
 import { useState } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { FlashSession } from '../components/FlashSession';
-import { ScopePicker, useStoredScope } from '../components/ScopePicker';
+import { ScopePicker, StartButton, useStoredScope } from '../components/ScopePicker';
 import { Button, Card, Empty, PageHeader } from '../components/ui';
 import { WORD_BY_ID, WORDS } from '../data/words';
 import { scopeFromParams, scopeToParams, selectWords } from '../lib/scope';
@@ -18,9 +18,7 @@ export function FlashPage() {
       <Card className="p-6 sm:p-8">
         <ScopePicker scope={scope} onChange={setScope} />
         <div className="mt-6 flex justify-end">
-          <Button variant="primary" className="px-6" onClick={() => navigate(`/flash/play?${scopeToParams(scope)}`)}>
-            <Play size={16} /> 시작하기
-          </Button>
+          <StartButton scope={scope} unit="장" onStart={() => navigate(`/flash/play?${scopeToParams(scope)}`)} />
         </div>
       </Card>
     </div>
@@ -30,6 +28,9 @@ export function FlashPage() {
 export function FlashPlay() {
   const [params] = useSearchParams();
   const navigate = useNavigate();
+  const location = useLocation();
+  // 주소를 직접 열어 들어온 경우에는 돌아갈 이전 화면이 없으므로 범위 고르기로 보낸다
+  const exit = () => (location.key === 'default' ? navigate('/flash', { replace: true }) : navigate(-1));
   const record = useProgress((s) => s.record);
   const [ids] = useState<string[]>(() => {
     const explicit = params.get('ids');
@@ -53,7 +54,7 @@ export function FlashPlay() {
     <FlashSession
       ids={ids}
       title="플래시카드"
-      onExit={() => navigate(-1)}
+      onExit={exit}
       onAnswer={(id, known, first) => {
         // SRS·통계에는 이 세션의 첫 판정만 반영한다
         if (first) record(id, known, { source: 'flash' });

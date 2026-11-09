@@ -1,9 +1,9 @@
 /** 객관식 — 범위·방식 고르기 + 진행 */
-import { ListChecks, Play } from 'lucide-react';
+import { ListChecks } from 'lucide-react';
 import { useState } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { QuizSession, type QuizMode } from '../components/QuizSession';
-import { ScopePicker, useStoredScope } from '../components/ScopePicker';
+import { ScopePicker, StartButton, useStoredScope } from '../components/ScopePicker';
 import { Button, Card, Empty, PageHeader } from '../components/ui';
 import { WORD_BY_ID, WORDS } from '../data/words';
 import { scopeFromParams, scopeToParams, selectWords } from '../lib/scope';
@@ -16,9 +16,32 @@ const MODES: { id: QuizMode; title: string; desc: string }[] = [
   { id: 'mixed', title: '섞어서', desc: '두 방식을 번갈아' },
 ];
 
+const MODE_KEY = 'quiz-word:quiz-mode';
+
+/** 마지막으로 고른 문제 방식을 기억한다 (이 브라우저에만) */
+function useStoredMode(): [QuizMode, (m: QuizMode) => void] {
+  const [mode, setMode] = useState<QuizMode>(() => {
+    try {
+      const saved = localStorage.getItem(MODE_KEY);
+      return MODES.some((m) => m.id === saved) ? (saved as QuizMode) : 'meaning';
+    } catch {
+      return 'meaning';
+    }
+  });
+  const update = (m: QuizMode) => {
+    setMode(m);
+    try {
+      localStorage.setItem(MODE_KEY, m);
+    } catch {
+      /* 저장 못 해도 동작에는 문제 없음 */
+    }
+  };
+  return [mode, update];
+}
+
 export function QuizPage() {
   const [scope, setScope] = useStoredScope('quiz');
-  const [mode, setMode] = useState<QuizMode>('meaning');
+  const [mode, setMode] = useStoredMode();
   const choices = useProgress((s) => s.settings.quizChoices);
   const updateSettings = useProgress((s) => s.updateSettings);
   const navigate = useNavigate();
@@ -31,6 +54,7 @@ export function QuizPage() {
             <button
               key={m.id}
               onClick={() => setMode(m.id)}
+              aria-pressed={mode === m.id}
               className={`rounded-xl border-2 p-4 text-left transition ${
                 mode === m.id ? 'border-primary bg-primary-soft' : 'border-line hover:border-primary/40'
               }`}
@@ -48,15 +72,14 @@ export function QuizPage() {
               <button
                 key={n}
                 onClick={() => updateSettings({ quizChoices: n as 4 | 5 })}
+                aria-pressed={choices === n}
                 className={`rounded-lg border px-2.5 py-1 font-semibold ${choices === n ? 'border-primary bg-primary-soft text-primary-text' : 'border-line'}`}
               >
                 {n}개
               </button>
             ))}
           </div>
-          <Button variant="primary" className="px-6" onClick={() => navigate(`/quiz/play?${scopeToParams(scope)}&mode=${mode}`)}>
-            <Play size={16} /> 시작하기
-          </Button>
+          <StartButton scope={scope} unit="문제" onStart={() => navigate(`/quiz/play?${scopeToParams(scope)}&mode=${mode}`)} />
         </div>
       </Card>
     </div>
@@ -66,6 +89,9 @@ export function QuizPage() {
 export function QuizPlay() {
   const [params] = useSearchParams();
   const navigate = useNavigate();
+  const location = useLocation();
+  // 주소를 직접 열어 들어온 경우에는 돌아갈 이전 화면이 없으므로 범위 고르기로 보낸다
+  const exit = () => (location.key === 'default' ? navigate('/quiz', { replace: true }) : navigate(-1));
   const record = useProgress((s) => s.record);
   const mode = (params.get('mode') as QuizMode) || 'meaning';
   const [ids] = useState<string[]>(() => {
@@ -92,7 +118,7 @@ export function QuizPlay() {
       ids={ids}
       mode={mode}
       title="객관식 퀴즈"
-      onExit={() => navigate(-1)}
+      onExit={exit}
       onResult={(id, correct) => record(id, correct, { source: 'quiz' })}
     />
   );
