@@ -8,7 +8,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import type { VocabEntry } from '../src/lib/matcher';
-import type { Context, Sense, Word } from '../src/lib/schema';
+import type { Context, Memory, Sense, Word } from '../src/lib/schema';
 import { QUIZ_DATA_DIR_PATH, loadVocabExamples, readJson, vocabMdPath, WORK } from './lib/common';
 
 interface LemmaRec {
@@ -226,11 +226,24 @@ for (const w of all) {
   if (!w.forms.length) delete w.forms;
 }
 
-// 파일로 저장 — 첫 글자별
+// 직접 넣은 외우기(어원·연상)는 생성 결과에 없으니, 지우기 전에 읽어 두었다가 같은 id 에 다시 붙인다
 fs.mkdirSync(path.join(DATA, 'words'), { recursive: true });
+const keptMemory = new Map<string, Memory>();
+for (const f of fs.readdirSync(path.join(DATA, 'words')).filter((x) => x.endsWith('.json'))) {
+  for (const r of readJson<Word[]>(path.join(DATA, 'words', f))) if (r?.id && r.memory) keptMemory.set(r.id, r.memory);
+}
+const withMemory = (w: Word): Word => {
+  const memory = keptMemory.get(w.id);
+  if (!memory) return w;
+  const { note, ...rest } = w;
+  return { ...rest, memory, ...(note ? { note } : {}) };
+};
+
+// 파일로 저장 — 첫 글자별
 for (const f of fs.readdirSync(path.join(DATA, 'words'))) fs.unlinkSync(path.join(DATA, 'words', f));
 const byLetter = new Map<string, Word[]>();
-for (const w of all) {
+for (const w0 of all) {
+  const w = withMemory(w0);
   const letter = /^[a-z]/.test(w.id) ? w.id[0] : '0';
   const list = byLetter.get(letter) ?? [];
   list.push(w);

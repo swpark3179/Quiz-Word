@@ -4,7 +4,7 @@
  *   pos: "명사·동사" 처럼 문자열로 적어도 된다
  *   short 없으면 meaning 에서 만든다, senses 없으면 meaning 하나로, domain 없으면 "일반", tier 없으면 "extra"
  */
-import type { Context, Sense, Word } from './schema';
+import type { Context, Memory, Sense, Word } from './schema';
 
 export type RawWord = Partial<Omit<Word, 'pos'>> & { pos?: string | string[] };
 
@@ -24,11 +24,31 @@ export function shortFromMeaning(meaning: string): string {
   );
 }
 
+/** 빈 조각·빈 문자열을 걷어 낸다. 장면(story)도 발음 연상(hook)도 없으면 보여 줄 게 없으니 버린다 */
+export function normalizeMemory(m: Memory | undefined): Memory | undefined {
+  if (!m) return undefined;
+  const text = (s: string | undefined) => s?.trim() || undefined;
+  const story = text(m.story);
+  const hook = text(m.hook);
+  if (!story && !hook) return undefined;
+  const roots = (m.roots ?? []).filter((x) => x?.part?.trim() && x.ko?.trim()).map((x) => ({ part: x.part.trim(), ko: x.ko.trim() }));
+  const family = (m.family ?? []).map((x) => x?.trim()).filter((x): x is string => !!x);
+  const origin = text(m.origin);
+  return {
+    ...(roots.length ? { roots } : {}),
+    ...(origin ? { origin } : {}),
+    ...(story ? { story } : {}),
+    ...(hook ? { hook } : {}),
+    ...(family.length ? { family } : {}),
+  };
+}
+
 export function normalizeWord(r: RawWord): Word {
   const pos = splitPos(r.pos);
   const meaning = r.meaning ?? '';
   const senses: Sense[] = r.senses?.length ? r.senses : [{ pos: pos[0] ?? '명사', ko: shortFromMeaning(meaning) }];
   const contexts: Context[] = (r.contexts ?? []).map((c) => ({ ...c, q: c.q ?? 0 }));
+  const memory = normalizeMemory(r.memory);
   return {
     id: r.id ?? '',
     word: r.word ?? '',
@@ -45,6 +65,7 @@ export function normalizeWord(r: RawWord): Word {
     freq: r.freq ?? 0,
     sources: r.sources ?? [],
     contexts,
+    ...(memory ? { memory } : {}),
     ...(r.note ? { note: r.note } : {}),
   };
 }

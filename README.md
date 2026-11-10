@@ -38,8 +38,8 @@ CCAR-F 문제 파일(`Quiz-Bank/assets/quiz-data/ccar-f`)에 나온 영어 단�
 |------|------|
 | 홈 | 오늘 복습할 단어·새 단어·오답 수, 문제 파일별 진척, 최근 7일 학습량 |
 | 단어장 | 영어·한글 뜻 검색(`/` 키), 문제 파일·품사·학습 상태·핵심/확장 필터 |
-| 단어 상세 | 품사·발음기호·🔊 발음, 사전 뜻, **문제 속 뜻별 예문**(원문 + 해석 + 출처 문제), 기존 단어장 노트 |
-| 플래시카드 | 단어 → 안다/모른다 → 상세 → 다음. 모른 카드는 4~6장 뒤에 다시 나옴 |
+| 단어 상세 | 품사·발음기호·🔊 발음, 사전 뜻, **외우기**(어원·연상), **문제 속 뜻별 예문**(원문 + 해석 + 출처 문제), 기존 단어장 노트 |
+| 플래시카드 | 단어 → 안다/모른다 → 상세 → 다음. 뒷면 뜻 바로 아래에 **외우기**(어원 조각·어원 장면·발음 연상·같은 어근 단어). 모른 카드는 4~6장 뒤에 다시 나옴 |
 | 객관식 | 단어 → 뜻 / **문맥 뜻**(예문 속 다의어) — 오답 보기는 같은 품사·비슷한 뜻 분류에서 고름 |
 | 복습 | FSRS 간격 반복. 시험일을 정하면 간격이 시험일을 넘지 않음 |
 | 오답노트 | 틀린 단어 모음. 연속 2번 맞히면 자동으로 빠짐 (설정 가능) |
@@ -104,7 +104,20 @@ CCAR-F 문제 파일(`Quiz-Bank/assets/quiz-data/ccar-f`)에 나온 영어 단�
 | `tier` | | `core`(CCAR-F 등장) / `extra`(확장). 없으면 `extra` |
 | `basic` | | 쉬운 기초 단어면 `true` — 기본 학습 범위에서 빠짐 |
 | `freq`, `sources` | | 문제 등장 횟수·파일 (생성 스크립트가 채움) |
+| `memory` | | 외우기 — 플래시카드 뒷면·단어 상세에 나옴. 아래 예시 참고 |
 | `note` | | 마크다운 노트 |
+
+**외우기(`memory`)** — `story`(어원으로 그린 장면)나 `hook`(발음 연상) 중 하나는 있어야 하고 나머지는 빼도 됩니다. 어원이 확실하지 않으면 `roots`·`origin` 은 적지 않습니다. `data:merge` 로 다시 만들어도 같은 id 의 `memory` 는 그대로 남습니다.
+
+```json
+"memory": {
+  "roots": [{ "part": "de-", "ko": "떨어져, 멀리" }, { "part": "fer", "ko": "나르다" }],
+  "origin": "라틴어 differre (따로 나르다)",
+  "story": "일을 저만치(de) 날라(fer) 둔다 → 미루다",
+  "hook": "디퍼 → '뒤로 퍼~ 넘긴다' → 미루다",
+  "family": ["transfer", "refer", "prefer", "infer"]
+}
+```
 
 ## 데이터를 다시 만들 때 (파이프라인)
 
@@ -113,7 +126,7 @@ CCAR-F 문제 파일(`Quiz-Bank/assets/quiz-data/ccar-f`)에 나온 영어 단�
 1. `npm run data:extract` — 문제 파일에서 문장과 단어 원형을 뽑음 → `pipeline/work/`
 2. `npx tsx scripts/build-batches.ts` / `npx tsx scripts/build-batches-b.ts` — LLM 생성용 배치 입력
 3. 배치마다 `pipeline/prompts/passA.md`(단어 정보·문맥 뜻), `passB.md`(문장 해석) 지시대로 생성 → `pipeline/work/gen/`
-4. `npm run data:merge` — vocab + 생성 결과를 합쳐 `data/` 를 새로 씀 (**직접 고친 내용은 덮어써지니 주의**)
+4. `npm run data:merge` — vocab + 생성 결과를 합쳐 `data/` 를 새로 씀 (**직접 고친 내용은 덮어써지니 주의** — `memory` 만 이어 붙임)
 5. `npm run data:validate`
 6. 앱에 반영: `cd mobile && npm run ota -- "데이터 갱신"`
 

@@ -10,7 +10,7 @@ import { statusOf } from '@shared/srs';
 import { relativeDue } from '@shared/text';
 import { useToast } from '@/components/motion';
 import { Button, Card, Empty, Icon, PosBadge, SectionLabel, StatusBadge, T } from '@/components/ui';
-import { ContextCard, SenseList, SpeakButton } from '@/components/word';
+import { ContextCard, MemoryAid, SenseList, SpeakButton } from '@/components/word';
 import { contextsOf, corpusExamples, sourceName, WORD_BY_ID, WORD_BY_SURFACE } from '@/data/words';
 import { useProgress } from '@/store/progress';
 import { sessionHref } from '@/store/session';
@@ -93,6 +93,13 @@ export default function WordDetail() {
           <Card style={{ padding: 16 }}>
             <SectionLabel>여러 뜻</SectionLabel>
             <SenseList w={w} />
+          </Card>
+        )}
+
+        {!!w.memory && (
+          <Card style={{ padding: 16 }}>
+            <SectionLabel>외우기 · 어원과 연상</SectionLabel>
+            <MemoryAid w={w} linkFamily />
           </Card>
         )}
 

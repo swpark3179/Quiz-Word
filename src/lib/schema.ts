@@ -22,6 +22,26 @@ export interface Context {
   ko?: string;
 }
 
+/** 어원 조각 — 접두사 "de-", 어근 "fer", 접미사 "-able", 합성어는 구성 단어 */
+export interface Root {
+  part: string;
+  ko: string;
+}
+
+/** 외우기 — 어원·연상. story 나 hook 중 하나는 있다 */
+export interface Memory {
+  /** 어원 조각 (순서대로) */
+  roots?: Root[];
+  /** 어원 출처 — 예: "라틴어 differre (따로 나르다)" */
+  origin?: string;
+  /** 어원으로 그린 장면 → 뜻 */
+  story?: string;
+  /** 발음 연상 — "디퍼 → 뒤로 퍼~ 넘긴다" */
+  hook?: string;
+  /** 같은 어근 단어 */
+  family?: string[];
+}
+
 export interface Word {
   id: string;
   word: string;
@@ -38,6 +58,7 @@ export interface Word {
   freq: number;
   sources: string[];
   contexts: Context[];
+  memory?: Memory;
   note?: string;
 }
 

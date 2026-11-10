@@ -1,9 +1,10 @@
-/** 단어 표시 조각 — 발음 버튼, 형광펜 예문, 예문 카드, 뜻 요약 */
-import { useEffect } from 'react';
-import { StyleSheet, Text, View, type StyleProp, type TextStyle } from 'react-native';
+/** 단어 표시 조각 — 발음 버튼, 형광펜 예문, 예문 카드, 외우기(어원·연상), 뜻 요약 */
+import { router } from 'expo-router';
+import { Fragment, useEffect } from 'react';
+import { Pressable, StyleSheet, Text, View, type StyleProp, type TextStyle } from 'react-native';
 import Animated, { FadeIn, useAnimatedStyle, useReducedMotion, useSharedValue, withDelay, withRepeat, withSequence, withTiming } from 'react-native-reanimated';
 import type { Context, Word } from '@shared/schema';
-import { contextsOf, sourceLabel } from '@/data/words';
+import { contextsOf, sourceLabel, WORD_BY_SURFACE } from '@/data/words';
 import { speak, useSpeaking } from '@/lib/tts';
 import { useProgress } from '@/store/progress';
 import { type, useTheme } from '@/theme';
@@ -127,8 +128,80 @@ export function SenseList({ w, highlight }: { w: Word; highlight?: string }) {
   );
 }
 
-/** 뜻 요약 + 문제 속 쓰임 — 플래시카드 뒷면, 퀴즈 해설 */
-export function WordBrief({ w, contextLimit = 2, highlightSense }: { w: Word; contextLimit?: number; highlightSense?: string }) {
+/**
+ * 외우기 — 어원 조각(de- + fer) → 어원으로 그린 장면, 어원 출처, 발음 연상, 같은 어근 단어.
+ * linkFamily: 같은 어근 단어가 단어장에 있으면 상세로 잇는다 (플래시카드 안에서는 끈다)
+ */
+export function MemoryAid({ w, linkFamily = false }: { w: Word; linkFamily?: boolean }) {
+  const { c } = useTheme();
+  const m = w.memory;
+  if (!m) return null;
+  const hasEtym = !!(m.roots?.length || m.story || m.origin);
+  return (
+    <View style={[styles.memory, { backgroundColor: c.surface2 }]}>
+      {hasEtym && (
+        <View style={{ gap: 8 }}>
+          {!!m.roots?.length && (
+            <View style={styles.wrap} accessibilityLabel="어원 조각">
+              {m.roots.map((r, i) => (
+                <Fragment key={i}>
+                  {i > 0 && <Text style={[type.footnote, { color: c.muted }]}>+</Text>}
+                  <View style={[styles.root, { backgroundColor: c.surface, borderColor: c.separator }]}>
+                    <Text style={[type.subhead, { color: c.primaryText, fontWeight: '700' }]}>{r.part}</Text>
+                    <Text style={[type.footnote, { color: c.text2 }]}>{r.ko}</Text>
+                  </View>
+                </Fragment>
+              ))}
+            </View>
+          )}
+          {!!m.story && <Text style={[type.callout, { color: c.text, lineHeight: 23 }]}>{m.story}</Text>}
+          {!!m.origin && <Text style={[type.caption, { color: c.muted }]}>{m.origin}</Text>}
+        </View>
+      )}
+      {!!m.hook && (
+        <View style={[styles.hook, hasEtym && { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: c.separator, paddingTop: 10 }]} accessibilityLabel={`발음 연상: ${m.hook}`}>
+          <View style={{ marginTop: 2 }}>
+            <Icon name="lightbulb.fill" size={15} color={c.warning} />
+          </View>
+          <Text style={[type.subhead, { color: c.text, lineHeight: 21, flex: 1 }]}>{m.hook}</Text>
+        </View>
+      )}
+      {!!m.family?.length && (
+        <View style={styles.wrap}>
+          <Text style={[type.caption, { color: c.muted, fontWeight: '700', marginRight: 2 }]}>같은 어근</Text>
+          {m.family.map((f) => {
+            const t = linkFamily ? WORD_BY_SURFACE.get(f.toLowerCase()) : undefined;
+            const link = !!t && t.id !== w.id;
+            return (
+              <Pressable
+                key={f}
+                disabled={!link}
+                onPress={() => t && link && router.push({ pathname: '/word/[id]', params: { id: t.id } })}
+                style={[styles.family, link ? { backgroundColor: c.primarySoft } : { backgroundColor: c.surface, borderColor: c.separator, borderWidth: StyleSheet.hairlineWidth }]}
+              >
+                <Text style={[type.footnote, { color: link ? c.primaryText : c.text2, fontWeight: link ? '600' : '400' }]}>{f}</Text>
+              </Pressable>
+            );
+          })}
+        </View>
+      )}
+    </View>
+  );
+}
+
+/** 뜻 요약 (+ 외우기) + 문제 속 쓰임 — 플래시카드 뒷면, 퀴즈 해설 */
+export function WordBrief({
+  w,
+  contextLimit = 2,
+  highlightSense,
+  memory = false,
+}: {
+  w: Word;
+  contextLimit?: number;
+  highlightSense?: string;
+  /** 어원·연상을 뜻 바로 아래에 보여 준다 (플래시카드) */
+  memory?: boolean;
+}) {
   const contexts = contextsOf(w, contextLimit);
   return (
     <View style={{ gap: 16 }}>
@@ -143,6 +216,12 @@ export function WordBrief({ w, contextLimit = 2, highlightSense }: { w: Word; co
         )}
       </View>
       {w.senses.length > 1 && <SenseList w={w} highlight={highlightSense} />}
+      {memory && !!w.memory && (
+        <View>
+          <SectionLabel>외우기</SectionLabel>
+          <MemoryAid w={w} />
+        </View>
+      )}
       {contexts.length > 0 && (
         <View>
           <SectionLabel>문제 속 쓰임</SectionLabel>
@@ -161,4 +240,9 @@ const styles = StyleSheet.create({
   speak: { alignItems: 'center', justifyContent: 'center', borderRadius: 99 },
   ctx: { borderRadius: 16, borderCurve: 'continuous', paddingHorizontal: 14, paddingVertical: 12 },
   senseRow: { flexDirection: 'row', alignItems: 'center', gap: 4, marginBottom: 6, flexWrap: 'wrap' },
+  memory: { borderRadius: 16, borderCurve: 'continuous', paddingHorizontal: 14, paddingVertical: 12, gap: 10 },
+  wrap: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 6 },
+  root: { flexDirection: 'row', alignItems: 'baseline', gap: 5, borderRadius: 10, borderWidth: StyleSheet.hairlineWidth, paddingHorizontal: 8, paddingVertical: 4 },
+  hook: { flexDirection: 'row', alignItems: 'flex-start', gap: 8 },
+  family: { borderRadius: 8, paddingHorizontal: 8, paddingVertical: 3 },
 });

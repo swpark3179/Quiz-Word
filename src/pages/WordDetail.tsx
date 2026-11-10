@@ -6,7 +6,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import { ContextSentence } from '../components/ContextSentence';
 import { isModalOpen, isTyping } from '../components/Dialog';
 import { Button, Card, PosBadge, SectionTitle, StatusBadge } from '../components/ui';
-import { SenseList, WordHead } from '../components/WordInfo';
+import { MemoryAid, SenseList, WordHead } from '../components/WordInfo';
 import { contextsOf, corpusExamples, sourceName, WORD_BY_ID, WORD_BY_SURFACE } from '../data/words';
 import { statusOf } from '../lib/srs';
 import { relativeDue } from '../lib/text';
@@ -153,6 +153,13 @@ export function WordDetail() {
           </Button>
         </div>
       </Card>
+
+      {w.memory && (
+        <Card className="p-6 sm:p-8">
+          <SectionTitle>외우기 · 어원과 연상</SectionTitle>
+          <MemoryAid w={w} linkFamily />
+        </Card>
+      )}
 
       <Card className="p-6 sm:p-8">
         <SectionTitle right={<span className="text-[12px] text-muted">{w.freq > 0 ? `CCAR-F 문제에 ${w.freq}회` : ''}</span>}>

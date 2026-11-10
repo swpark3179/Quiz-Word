@@ -229,6 +229,30 @@ describe('normalize', () => {
     expect(w.tier).toBe('extra');
     expect(w.domain).toBe('일반');
   });
+  it('외우기(memory): 빈 조각을 걷어 내고 그대로 넘긴다', () => {
+    const w = normalizeWord({
+      id: 'defer',
+      word: 'defer',
+      pos: '동사',
+      meaning: '미루다',
+      memory: {
+        roots: [{ part: 'de-', ko: '떨어져' }, { part: ' ', ko: '' }, { part: 'fer', ko: '나르다' }],
+        origin: ' ',
+        story: ' 저만치 날라 둔다 → 미루다 ',
+        family: ['transfer', ''],
+      },
+    });
+    expect(w.memory).toEqual({
+      roots: [{ part: 'de-', ko: '떨어져' }, { part: 'fer', ko: '나르다' }],
+      story: '저만치 날라 둔다 → 미루다',
+      family: ['transfer'],
+    });
+  });
+  it('외우기(memory): 장면도 발음 연상도 없으면 버린다', () => {
+    const w = normalizeWord({ id: 'x', word: 'x', pos: '명사', meaning: '엑스', memory: { roots: [{ part: 'x', ko: '엑스' }], story: '  ' } });
+    expect(w.memory).toBeUndefined();
+    expect('memory' in w).toBe(false);
+  });
   it('shortFromMeaning: ①② 와 영어 괄호를 뺀다', () => {
     expect(shortFromMeaning('① 받아들이다, 감수하다 ② 허용하다 (acceptable: 허용할 수 있는)')).toBe('받아들이다, 감수하다');
   });
