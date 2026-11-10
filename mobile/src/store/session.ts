@@ -5,6 +5,7 @@ import { createJSONStorage, persist } from 'zustand/middleware';
 import { DEFAULT_SCOPE, scopeFromParams, type Scope } from '@shared/scope';
 import { QUIZ_SOURCES } from '@/data/words';
 import { syncStorage } from '@/lib/kv';
+import { useProgress } from '@/store/progress';
 
 export type StudyMode = 'flash' | 'quiz-meaning' | 'quiz-context' | 'quiz-mixed';
 
@@ -38,7 +39,15 @@ export const scopeOf = (mode: StudyMode, scopes: Partial<Record<StudyMode, Scope
 /** "CCAR-F · 못 익힌 단어 · 20개" */
 export function scopeSummary(s: Scope): string {
   const set =
-    s.set === 'core' ? 'CCAR-F 전체' : s.set === 'all' ? '확장 포함' : s.set === 'wrong' ? '오답노트' : (QUIZ_SOURCES.find((x) => x.id === s.file)?.name ?? '파일');
+    s.set === 'core'
+      ? 'CCAR-F 전체'
+      : s.set === 'all'
+        ? '확장 포함'
+        : s.set === 'wrong'
+          ? '오답노트'
+          : s.set === 'notebook'
+            ? (useProgress.getState().notebooks.find((n) => n.id === s.notebook)?.name ?? '학습장')
+            : (QUIZ_SOURCES.find((x) => x.id === s.file)?.name ?? '파일');
   const status = { unmastered: '못 익힌 단어', new: '새 단어', learning: '학습 중', any: '전체', due: '복습할 단어' }[s.status];
   return `${set} · ${status} · ${s.count ? `${s.count}개` : '전부'}`;
 }
@@ -53,6 +62,7 @@ export function scopeQuery(s: Scope): string {
     ['order', s.order],
   ];
   if (s.file) parts.push(['file', s.file]);
+  if (s.notebook) parts.push(['notebook', s.notebook]);
   return parts.map(([k, v]) => `${k}=${encodeURIComponent(v)}`).join('&');
 }
 

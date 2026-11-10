@@ -3,6 +3,7 @@ import { buildContextQuestion, buildMeaningQuestion, pickDistractors } from '../
 import { answer, createQueue, currentId, isFinished, summary } from '../flashQueue';
 import { normalizeWord, shortFromMeaning } from '../normalize';
 import type { Word } from '../schema';
+import { filterScope, notebookScope, scopeFromParams, scopeToParams, selectWords } from '../scope';
 import { searchWords } from '../search';
 import { maxIntervalFor, review, statusOf } from '../srs';
 import { dice, sharesGloss } from '../text';
@@ -190,6 +191,32 @@ describe('search', () => {
   });
   it('한글로 뜻 검색', () => {
     expect(searchWords(words, '넘기').map((w) => w.id)).toEqual(['escalate']);
+  });
+});
+
+describe('scope · 학습장', () => {
+  const words = [
+    W({ id: 'escalate', short: '넘기다', freq: 10 }),
+    W({ id: 'make', short: '만들다', basic: true }),
+    W({ id: 'latency', short: '지연 시간', tier: 'extra' }),
+    W({ id: 'robust', short: '견고한' }),
+  ];
+  const notebooks = [
+    { id: 'nb-1', ids: ['make', 'latency', 'gone'] },
+    { id: 'nb-2', ids: ['robust'] },
+  ];
+  it('그 학습장 단어만 고른다 (기초·확장 단어도 포함, 없는 단어 id 는 무시)', () => {
+    const got = filterScope(words, notebookScope('nb-1'), { cards: {}, wrong: {}, notebooks }).map((w) => w.id);
+    expect(got.sort()).toEqual(['latency', 'make']);
+    expect(selectWords(words, notebookScope('nb-2'), { cards: {}, wrong: {}, notebooks }).map((w) => w.id)).toEqual(['robust']);
+  });
+  it('없는 학습장이면 빈 목록', () => {
+    expect(filterScope(words, notebookScope('nb-x'), { cards: {}, wrong: {}, notebooks })).toEqual([]);
+    expect(filterScope(words, notebookScope('nb-1'), { cards: {}, wrong: {} })).toEqual([]);
+  });
+  it('주소 쿼리로 바꿨다 되돌려도 학습장 id 가 남는다', () => {
+    const back = scopeFromParams(new URLSearchParams(scopeToParams(notebookScope('nb-1'))));
+    expect(back).toEqual(notebookScope('nb-1'));
   });
 });
 

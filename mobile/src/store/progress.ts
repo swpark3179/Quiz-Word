@@ -7,7 +7,7 @@ import { createProgressStore, exportProgress as exportFrom } from '@shared/progr
 import { syncStorage } from '@/lib/kv';
 
 export { DEFAULT_SETTINGS, PROGRESS_KEY } from '@shared/progressStore';
-export type { DayLog, ProgressState, ProgressStore, Settings, Source, WordHistory, WrongEntry } from '@shared/progressStore';
+export type { DayLog, Notebook, ProgressState, ProgressStore, Settings, Source, WordHistory, WrongEntry } from '@shared/progressStore';
 
 export const useProgress = createProgressStore(() => syncStorage);
 

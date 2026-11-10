@@ -16,8 +16,8 @@ export default function FlashScreen() {
   const [ids] = useState<string[]>(() => {
     const explicit = typeof params.ids === 'string' ? params.ids : '';
     if (explicit) return explicit.split(',').filter((id) => WORD_BY_ID.has(id));
-    const { cards, wrong } = useProgress.getState();
-    return selectWords(WORDS, scopeFromRoute(params), { cards, wrong }).map((w) => w.id);
+    const { cards, wrong, notebooks } = useProgress.getState();
+    return selectWords(WORDS, scopeFromRoute(params), { cards, wrong, notebooks }).map((w) => w.id);
   });
 
   // SRS·통계에는 이 세션의 첫 판정만 반영한다

@@ -1,4 +1,4 @@
-import { BookOpenText, Brain, Home, Keyboard, Layers, ListChecks, Monitor, Moon, NotebookPen, Settings as SettingsIcon, Sun } from 'lucide-react';
+import { BookMarked, BookOpenText, Brain, Home, Keyboard, Layers, ListChecks, Monitor, Moon, NotebookPen, Settings as SettingsIcon, Sun } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { NavLink, Outlet, useLocation, useNavigate, useNavigationType } from 'react-router-dom';
 import { WORDS } from '../data/words';
@@ -14,6 +14,7 @@ const NAV = [
   { to: '/flash', label: '플래시카드', short: '카드', hotkey: 'f', icon: Layers },
   { to: '/quiz', label: '객관식', short: '객관식', hotkey: 'q', icon: ListChecks },
   { to: '/review', label: '복습', short: '복습', hotkey: 'r', icon: Brain, badge: 'due' as const },
+  { to: '/notebooks', label: '학습장', short: '학습장', hotkey: 'n', icon: BookMarked },
   { to: '/wrong', label: '오답노트', short: '오답', hotkey: 'o', icon: NotebookPen, badge: 'wrong' as const },
   { to: '/settings', label: '설정', short: '설정', hotkey: 's', icon: SettingsIcon },
 ];
@@ -50,9 +51,10 @@ export function useBadges() {
   }, [cards, wrong]);
 }
 
-/** 브라우저 탭 제목 — 단어 상세는 그 화면이 직접 정한다 */
+/** 브라우저 탭 제목 */
 function pageTitle(pathname: string): string | undefined {
-  if (pathname.startsWith('/word/')) return undefined;
+  // 단어 상세·학습장 하나는 그 화면이 직접 정한다
+  if (pathname.startsWith('/word/') || pathname.startsWith('/notebooks/')) return undefined;
   if (pathname.startsWith('/review/session')) return '복습 중 · Quiz Word';
   if (pathname.startsWith('/flash/play')) return '플래시카드 진행 중 · Quiz Word';
   if (pathname.startsWith('/quiz/play')) return '객관식 진행 중 · Quiz Word';
@@ -85,7 +87,10 @@ export function Layout() {
       if (inSession) return;
       if (e.key === '/') {
         e.preventDefault();
-        navigate('/words?focus=1');
+        // 화면에 자기 검색창이 있으면(학습장의 담을 단어 검색) 그곳으로, 아니면 단어장 검색으로
+        const local = document.querySelector<HTMLInputElement>('[data-search-focus]');
+        if (local) local.focus();
+        else navigate('/words?focus=1');
         return;
       }
       const key = e.key.toLowerCase();

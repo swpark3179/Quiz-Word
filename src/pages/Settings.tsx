@@ -42,11 +42,12 @@ export function SettingsPage() {
   const importData = useProgress((s) => s.importData);
   const resetProgress = useProgress((s) => s.resetProgress);
   const cardsN = useProgress((s) => Object.keys(s.cards).length);
+  const notebooksN = useProgress((s) => s.notebooks.length);
   const [voices, setVoices] = useState(getVoices());
   const [message, setMessage] = useState('');
   const fileRef = useRef<HTMLInputElement>(null);
   /** 확인을 기다리는 동작 — 기록을 덮어쓰거나 지우기 전에 한 번 묻는다 */
-  const [pending, setPending] = useState<{ kind: 'reset' } | { kind: 'import'; data: unknown; cards: number; name: string } | null>(null);
+  const [pending, setPending] = useState<{ kind: 'reset' } | { kind: 'import'; data: unknown; cards: number; notebooks: number; name: string } | null>(null);
 
   useEffect(() => onVoicesChanged(() => setVoices(getVoices())), []);
 
@@ -77,10 +78,12 @@ export function SettingsPage() {
       setMessage('불러오지 못했어요: JSON 파일이 아닙니다.');
       return;
     }
-    // 지금 기록이 있으면 덮어쓰기 전에 묻는다
-    if (cardsN > 0) {
-      const cards = Object.keys((data as { cards?: object } | null)?.cards ?? {}).length;
-      setPending({ kind: 'import', data, cards, name: file.name });
+    // 지금 기록이나 학습장이 있으면 덮어쓰기 전에 묻는다
+    if (cardsN > 0 || notebooksN > 0) {
+      const d = data as { cards?: object; notebooks?: unknown } | null;
+      const cards = Object.keys(d?.cards ?? {}).length;
+      const notebooks = Array.isArray(d?.notebooks) ? d.notebooks.length : 0;
+      setPending({ kind: 'import', data, cards, notebooks, name: file.name });
     } else {
       applyImport(data);
     }
@@ -197,8 +200,9 @@ export function SettingsPage() {
       <Card className="px-6 py-6 sm:px-8">
         <SectionTitle>진행 기록</SectionTitle>
         <p className="mb-4 text-[13px] leading-relaxed text-muted">
-          진행 기록은 이 브라우저({window.location.host})에 저장됩니다. 다른 브라우저로 옮기거나 백업하려면 파일로 내보내세요. 지금까지 학습한 단어{' '}
-          <b className="text-ink">{cardsN}</b>개 / 전체 {WORDS.length.toLocaleString()}개.
+          진행 기록과 학습장은 이 브라우저({window.location.host})에 저장됩니다. 다른 브라우저로 옮기거나 백업하려면 파일로 내보내세요(학습장 전체 목록도 함께
+          들어갑니다). 지금까지 학습한 단어 <b className="text-ink">{cardsN}</b>개 / 전체 {WORDS.length.toLocaleString()}개 · 학습장{' '}
+          <b className="text-ink">{notebooksN}</b>개.
         </p>
         <div className="flex flex-wrap gap-2">
           <Button onClick={doExport}>
@@ -240,8 +244,8 @@ export function SettingsPage() {
         title="학습 기록을 모두 지울까요?"
         desc={
           <>
-            학습한 단어 <b className="text-ink">{cardsN}</b>개의 복습 일정과 오답노트·통계가 지워지고 되돌릴 수 없습니다. 설정은 그대로 남습니다. 지우기 전에
-            내보내기로 백업해 두는 것을 권합니다.
+            학습한 단어 <b className="text-ink">{cardsN}</b>개의 복습 일정과 오답노트·통계가 지워지고 되돌릴 수 없습니다. 학습장과 설정은 그대로 남습니다. 지우기
+            전에 내보내기로 백업해 두는 것을 권합니다.
           </>
         }
         confirmLabel="모두 지우기"
@@ -259,8 +263,8 @@ export function SettingsPage() {
         desc={
           pending?.kind === 'import' && (
             <>
-              <b className="text-ink">{pending.name}</b> (학습한 단어 {pending.cards}개)을 불러오면 지금 기록(학습한 단어 {cardsN}개)과 설정이 파일
-              내용으로 바뀝니다. 두 기록을 합치지는 않습니다.
+              <b className="text-ink">{pending.name}</b> (학습한 단어 {pending.cards}개 · 학습장 {pending.notebooks}개)을 불러오면 지금 기록(학습한 단어{' '}
+              {cardsN}개 · 학습장 {notebooksN}개)과 설정이 파일 내용으로 바뀝니다. 두 기록을 합치지는 않습니다.
             </>
           )
         }

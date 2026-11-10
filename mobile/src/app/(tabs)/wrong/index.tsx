@@ -5,6 +5,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import ReanimatedSwipeable from 'react-native-gesture-handler/ReanimatedSwipeable';
 import Animated, { FadeOut, LinearTransition, useReducedMotion } from 'react-native-reanimated';
 import { DEFAULT_SCOPE } from '@shared/scope';
+import { timeAgo as ago } from '@shared/text';
 import { Button, Empty, Icon, PosBadge, Segmented, T } from '@/components/ui';
 import { WORD_BY_ID } from '@/data/words';
 import { useProgress } from '@/store/progress';
@@ -13,15 +14,6 @@ import { type, useTheme } from '@/theme';
 import { haptic } from '@/theme/haptics';
 
 const WRONG_SCOPE = { ...DEFAULT_SCOPE, set: 'wrong' as const, status: 'any' as const, count: 0, order: 'random' as const, includeBasic: true };
-
-function ago(ts: number) {
-  const m = Math.round((Date.now() - ts) / 60000);
-  if (m < 1) return '방금';
-  if (m < 60) return `${m}분 전`;
-  const h = Math.round(m / 60);
-  if (h < 24) return `${h}시간 전`;
-  return `${Math.round(h / 24)}일 전`;
-}
 
 export default function Wrong() {
   const { c } = useTheme();

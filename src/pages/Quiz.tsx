@@ -97,9 +97,9 @@ export function QuizPlay() {
   const [ids] = useState<string[]>(() => {
     const explicit = params.get('ids');
     if (explicit) return explicit.split(',').filter((id) => WORD_BY_ID.has(id));
-    const { cards, wrong } = useProgress.getState();
+    const { cards, wrong, notebooks } = useProgress.getState();
     // 범위에서 고른 단어를 섞어서 낸다
-    return shuffle(selectWords(WORDS, scopeFromParams(params), { cards, wrong }).map((w) => w.id));
+    return shuffle(selectWords(WORDS, scopeFromParams(params), { cards, wrong, notebooks }).map((w) => w.id));
   });
 
   if (!ids.length) {

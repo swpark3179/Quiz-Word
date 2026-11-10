@@ -80,3 +80,13 @@ export function relativeDue(due: Date, now: Date = new Date()): string {
   const d = Math.round(h / 24);
   return `${d}일 후`;
 }
+
+/** "방금", "5분 전", "3시간 전", "2일 전" */
+export function timeAgo(ts: number, now: number = Date.now()): string {
+  const m = Math.round((now - ts) / 60000);
+  if (m < 1) return '방금';
+  if (m < 60) return `${m}분 전`;
+  const h = Math.round(m / 60);
+  if (h < 24) return `${h}시간 전`;
+  return `${Math.round(h / 24)}일 전`;
+}

@@ -2,7 +2,7 @@
 import { createProgressStore, exportProgress as exportFrom } from '../lib/progressStore';
 
 export { DEFAULT_SETTINGS, PROGRESS_KEY } from '../lib/progressStore';
-export type { DayLog, ProgressState, ProgressStore, Settings, Source, WordHistory, WrongEntry } from '../lib/progressStore';
+export type { DayLog, Notebook, ProgressState, ProgressStore, Settings, Source, WordHistory, WrongEntry } from '../lib/progressStore';
 
 export const useProgress = createProgressStore(() => localStorage);
 

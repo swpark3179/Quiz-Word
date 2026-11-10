@@ -20,9 +20,9 @@ export default function QuizScreen() {
   const [ids] = useState<string[]>(() => {
     const explicit = typeof params.ids === 'string' ? params.ids : '';
     if (explicit) return explicit.split(',').filter((id) => WORD_BY_ID.has(id));
-    const { cards, wrong } = useProgress.getState();
+    const { cards, wrong, notebooks } = useProgress.getState();
     // 범위에서 고른 단어를 섞어서 낸다
-    return shuffle(selectWords(WORDS, scopeFromRoute(params), { cards, wrong }).map((w) => w.id));
+    return shuffle(selectWords(WORDS, scopeFromRoute(params), { cards, wrong, notebooks }).map((w) => w.id));
   });
 
   const onResult = useCallback((id: string, correct: boolean) => record(id, correct, { source: 'quiz' }), [record]);

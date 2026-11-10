@@ -6,9 +6,11 @@ import { isDue, statusOf, type StoredCard } from './srs';
 import { shuffle } from './text';
 
 export interface Scope {
-  /** core: ccar-f 단어 / all: 확장 포함 / wrong: 오답노트 / file: 특정 문제 파일 */
-  set: 'core' | 'all' | 'wrong' | 'file';
+  /** core: ccar-f 단어 / all: 확장 포함 / wrong: 오답노트 / file: 특정 문제 파일 / notebook: 학습장 */
+  set: 'core' | 'all' | 'wrong' | 'file' | 'notebook';
   file?: string;
+  /** set 이 notebook 일 때 학습장 id */
+  notebook?: string;
   includeBasic: boolean;
   status: 'any' | 'new' | 'learning' | 'unmastered' | 'due';
   count: number; // 0 = 전부
@@ -26,11 +28,16 @@ export const DEFAULT_SCOPE: Scope = {
 export interface ProgressView {
   cards: Record<string, StoredCard>;
   wrong: Record<string, unknown>;
+  notebooks?: { id: string; ids: string[] }[];
 }
 
 export function filterScope(words: Word[], scope: Scope, p: ProgressView, now: Date = new Date()): Word[] {
+  const inNotebook = scope.set === 'notebook' ? new Set(p.notebooks?.find((n) => n.id === scope.notebook)?.ids ?? []) : undefined;
   return words.filter((w) => {
-    if (scope.set === 'wrong') {
+    if (inNotebook) {
+      // 학습장·오답노트는 직접 고른 단어라 핵심/기초 조건을 보지 않는다
+      if (!inNotebook.has(w.id)) return false;
+    } else if (scope.set === 'wrong') {
       if (!p.wrong[w.id]) return false;
     } else {
       if (scope.set === 'core' && w.tier !== 'core') return false;
@@ -76,8 +83,9 @@ export function selectWords(words: Word[], scope: Scope, p: ProgressView, rng: (
 export function scopeFromParams(params: URLSearchParams, base: Scope = DEFAULT_SCOPE): Scope {
   const s: Scope = { ...base };
   const set = params.get('set');
-  if (set === 'core' || set === 'all' || set === 'wrong' || set === 'file') s.set = set;
+  if (set === 'core' || set === 'all' || set === 'wrong' || set === 'file' || set === 'notebook') s.set = set;
   if (params.get('file')) s.file = params.get('file')!;
+  if (params.get('notebook')) s.notebook = params.get('notebook')!;
   if (params.get('basic')) s.includeBasic = params.get('basic') === '1';
   const status = params.get('status');
   if (status && ['any', 'new', 'learning', 'unmastered', 'due'].includes(status)) s.status = status as Scope['status'];
@@ -91,9 +99,15 @@ export function scopeToParams(s: Scope): string {
   const p = new URLSearchParams();
   p.set('set', s.set);
   if (s.file) p.set('file', s.file);
+  if (s.notebook) p.set('notebook', s.notebook);
   p.set('basic', s.includeBasic ? '1' : '0');
   p.set('status', s.status);
   p.set('count', String(s.count));
   p.set('order', s.order);
   return p.toString();
+}
+
+/** 학습장 하나를 통째로 무작위 순서로 — 학습장 화면의 학습 버튼 */
+export function notebookScope(id: string): Scope {
+  return { ...DEFAULT_SCOPE, set: 'notebook', notebook: id, status: 'any', count: 0, order: 'random', includeBasic: true };
 }
