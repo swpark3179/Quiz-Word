@@ -147,7 +147,36 @@
         "sense": "지켜보는 사람 없는, 무인의",
         "ko": "권한 프롬프트가 절대 나타나서는 안 되는 무인 지원 에이전트에, 500달러를 넘는 환불을 \"Refund denied\"라는 이유로 거부하는 PreToolUse 훅이 있습니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "un-",
+          "ko": "아니"
+        },
+        {
+          "part": "at-",
+          "ko": "~ 쪽으로"
+        },
+        {
+          "part": "tend",
+          "ko": "뻗다"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "origin": "라틴어 attendere (~로 마음을 뻗다)",
+      "story": "아무도 마음을 뻗어(tend) 지켜보지 않는(un) → 지켜보는 사람 없는, 무인의",
+      "hook": "언어텐디드 → '어텐션' 주는 사람 없음 → 무인의",
+      "family": [
+        "attend",
+        "attention",
+        "extend",
+        "intend"
+      ]
+    }
   },
   {
     "id": "unaware",
@@ -184,7 +213,25 @@
         "sense": "알지 못하는, 눈치채지 못한",
         "ko": "한 시니어 엔지니어는 개인 프로젝트용으로 노트북에 `~/.claude/skills/review/SKILL.md` 를 두고 있는데, 이름이 같다는 사실을 모릅니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "un-",
+          "ko": "아니"
+        },
+        {
+          "part": "aware",
+          "ko": "알아챈"
+        }
+      ],
+      "origin": "고대 영어 gewær (경계하는, 알아채는)",
+      "story": "주위를 살피는(aware) 눈이 꺼져(un) 있다 → 알지 못하는, 눈치채지 못한",
+      "family": [
+        "beware",
+        "wary"
+      ]
+    }
   },
   {
     "id": "uncertainty",
@@ -238,6 +285,29 @@
         "ko": "`get_customer` 와 `lookup_order` 를 호출한 뒤 에이전트는 시스템 데이터를 모두 가졌지만 불확실성에 부딪힌다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "un-",
+          "ko": "아니"
+        },
+        {
+          "part": "certain",
+          "ko": "확실한"
+        },
+        {
+          "part": "-ty",
+          "ko": "상태"
+        }
+      ],
+      "origin": "라틴어 certus (확실한, 가려낸)",
+      "story": "확실하게(certain) 가려지지 않은(un) 상태(-ty) → 불확실성",
+      "family": [
+        "certify",
+        "ascertain",
+        "concern"
+      ]
+    },
     "note": "결과나 판단을 **확신할 수 없는 상태** 입니다. 에이전트 문제에서는 \"정보는 다 모았지만 어떻게 처리해야 할지 확실하지 않은\" 상황에 자주 나옵니다.\r\n\r\n## 문제 속 쓰임\r\n> After calling `get_customer` and `lookup_order`, the agent has all available system data but faces **uncertainty**.\r\n> `get_customer` 와 `lookup_order` 를 호출한 뒤 에이전트는 시스템 데이터를 모두 가졌지만 **불확실성**에 부딪힌다.\r\n\r\n## 함께 쓰는 표현\r\n- **face / reduce uncertainty** : 불확실성에 부딪히다 / 불확실성을 줄이다\r\n- **under uncertainty** : 불확실한 상황에서\r\n- **uncertain** (형) 불확실한 — *uncertain flags* 확신이 낮은 지적\r\n\r\n## 반대말\r\n- **certainty**, **confidence** — 확실성, 확신\r\n\r\n## 시험 포인트\r\n불확실성은 숨기지 말고 **드러내어 전달**하는 쪽이 정답 방향입니다. 일부 소스가 빠졌다면 어떤 결론이 잘 뒷받침되고 어디에 공백이 있는지 표시해 넘깁니다."
   },
   {
@@ -402,7 +472,25 @@
         "sense": "근본적인, 밑바탕에 깔린",
         "ko": "일반적인 확신 표현은 무엇을 보고할지에 대한 구체적 규칙을 주지 않으므로, 모델은 변경 전에 오탐을 만들던 같은 판단을 계속 적용한다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "under",
+          "ko": "아래"
+        },
+        {
+          "part": "lie",
+          "ko": "놓여 있다"
+        },
+        {
+          "part": "-ing",
+          "ko": "~하는"
+        }
+      ],
+      "story": "겉 아래(under)에 깔려 놓여(lie) 있는 → 근본적인, 밑바탕에 깔린",
+      "hook": "언더라잉 → '언더(밑)'에 '라잉(누운)' → 깔린 원인"
+    }
   },
   {
     "id": "undermine",
@@ -493,7 +581,21 @@
         "sense": "밑줄 문자(_)",
         "ko": "`doc-2026-report_final`. 영문자·숫자·하이픈·밑줄만 쓰고 64자 한도 안이다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "under",
+          "ko": "아래"
+        },
+        {
+          "part": "score",
+          "ko": "새긴 금, 긋다"
+        }
+      ],
+      "story": "글자 아래(under)에 금(score)을 쭉 긋는다 → 밑줄 문자(_)",
+      "hook": "언더스코어 → '언더(밑)'에 긋는 선 → _"
+    }
   },
   {
     "id": "understand",
@@ -605,7 +707,30 @@
         "sense": "실업, 실업률",
         "ko": "종합 에이전트가 어떤 지역의 실업률이 '5.1%'라는 서브에이전트 발견과, '6.3%'라는 다른 서브에이전트의 발견을 합칩니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "un-",
+          "ko": "아니"
+        },
+        {
+          "part": "employ",
+          "ko": "고용하다"
+        },
+        {
+          "part": "-ment",
+          "ko": "상태"
+        }
+      ],
+      "origin": "고대 프랑스어 emploier (쓰다, 고용하다)",
+      "story": "아무도 고용해(employ) 주지 않는(un) 상태(-ment) → 실업, 실업률",
+      "family": [
+        "employee",
+        "deploy",
+        "imply"
+      ]
+    }
   },
   {
     "id": "unfinished",
@@ -679,7 +804,32 @@
         "sense": "근거 없는",
         "ko": "matcher `/refund/` 는 정규식이지만 훅의 정규식 matcher는 자동으로 정확히 일치하도록 고정되므로, 이름이 정확히 `refund` 인 도구에서만 발생한다. 동료의 우려는 근거가 없고 수정할 필요가 없다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "un-",
+          "ko": "아니"
+        },
+        {
+          "part": "found",
+          "ko": "기초를 놓다"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "origin": "라틴어 fundare (바닥을 놓다)",
+      "story": "밑바닥에 주춧돌을 놓지(found) 않은(un) 주장 → 근거 없는",
+      "hook": "언파운디드 → '파운데이션(기초)'이 없는 → 근거 없는",
+      "family": [
+        "foundation",
+        "fund",
+        "fundamental",
+        "profound"
+      ]
+    }
   },
   {
     "id": "unified",
@@ -744,6 +894,31 @@
         "ko": "코디네이터가 두 결과 묶음을 합성 에이전트에 넘겨 하나로 통합하게 한다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "uni",
+          "ko": "하나"
+        },
+        {
+          "part": "fi",
+          "ko": "만들다"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "origin": "후기 라틴어 unificare (하나로 만들다)",
+      "story": "흩어진 것을 하나(uni)로 만든(fi) → 하나로 통합된",
+      "hook": "유니파이드 → '유니(uni)', 하나로 묶은 → 통합된",
+      "family": [
+        "unit",
+        "union",
+        "unique",
+        "unite"
+      ]
+    },
     "note": "따로 있던 것들을 **하나로 합쳐 일관된 전체로 만든** 상태입니다. 단순히 이어 붙이는 것이 아니라 하나로 정리된 결과를 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> The coordinator passes both sets of findings to the synthesis agent for **unified** integration\r\n> 코디네이터가 두 결과 묶음을 합성 에이전트에 넘겨 **하나로** 통합하게 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **unified view / interface** : 통합된 화면 / 인터페이스\r\n- **unify** (동) 통합하다, 하나로 만들다\r\n\r\n## 비교\r\n- **unified** — 여러 결과를 *하나의 일관된 결과물*로 정리한 (통합)\r\n- **concatenated** — 그냥 *이어 붙인* (나열)\r\n\r\n## 시험 포인트\r\n여러 에이전트의 결과를 합칠 때 **원시 출력을 이어 붙이기만** 하는 선택지는 통합이 아니라 나열이라 오답입니다. 결과를 모아 통합을 맡은 합성 에이전트로 넘기는 쪽이 정답 방향입니다."
   },
   {
@@ -804,6 +979,27 @@
         "ko": "전체 오탐률을 낮추려고 모든 카테고리에 똑같이 엄격도를 완화한다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "uni",
+          "ko": "하나"
+        },
+        {
+          "part": "form",
+          "ko": "모양"
+        }
+      ],
+      "origin": "라틴어 uniformis (한 가지 모양의)",
+      "story": "모두 하나(uni)의 모양(form)으로 맞춘 → 균일한, 같은 형식의",
+      "hook": "유니폼 → 다 같은 '유니폼' 입은 듯 똑같음 → 균일한",
+      "family": [
+        "format",
+        "reform",
+        "transform",
+        "inform"
+      ]
+    },
     "note": "모든 대상에 **똑같은 기준·형식을 적용한** 것입니다. 일관성은 장점이지만, 대상마다 사정이 다를 때는 \"차이를 무시한다\"는 단점이 됩니다. 명사로는 '제복'입니다.\r\n\r\n## 문제 속 쓰임\r\n> Apply a **uniform** strictness reduction across all categories to bring the overall false positive rate down.\r\n> 전체 오탐률을 낮추려고 모든 카테고리에 **똑같이** 엄격도를 완화한다.\r\n\r\n## 함께 쓰는 표현\r\n- **uniform format / interface** : 통일된 형식 / 인터페이스\r\n- **uniformly** (부) 균일하게 · **uniformity** (명) 균일성\r\n\r\n## 시험 포인트\r\n문제가 **특정 카테고리에만** 있는데 모든 곳에 똑같이 조치하는 선택지는 멀쩡한 부분까지 망가뜨려 오답이 되기 쉽습니다. 반면 형식 변환처럼 *모든 출력이 같은 규칙을 따라야* 하는 일은 한곳에서 균일하게 처리하는 것이 장점입니다."
   },
   {
@@ -878,7 +1074,36 @@
         "sense": "의도치 않게, 무심코",
         "ko": "예시가 길이·언어와 관련된 무관한 패턴을 의도치 않게 가르쳤다. 예시를 다양화한다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "un-",
+          "ko": "아니"
+        },
+        {
+          "part": "intention",
+          "ko": "의도"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 intendere (~로 뻗다, 겨누다)",
+      "story": "마음을 그쪽으로 뻗어(intend) 겨눈 게 아닌데(un) → 의도치 않게, 무심코",
+      "hook": "언인텐셔널리 → '인텐션(의도)' 없이 → 무심코",
+      "family": [
+        "intend",
+        "attention",
+        "extend",
+        "tension"
+      ]
+    }
   },
   {
     "id": "union",
@@ -1108,7 +1333,12 @@
         "sense": "~하지 않는 한, ~가 아니면",
         "ko": "timeout 값을 명시하지 않으면 훅은 기본적으로 모든 도구 호출에서 발생한다. timeout을 추가하면 `issue_refund_note` 에 매칭되지 않는다"
       }
-    ]
+    ],
+    "memory": {
+      "origin": "중세 영어 on lesse (~보다 못한 조건으로)",
+      "story": "'그보다 못한(less) 조건이면 안 한다' → ~하지 않는 한, ~가 아니면",
+      "hook": "언레스 → '안' 하면 끝 → ~하지 않는 한"
+    }
   },
   {
     "id": "unnecessary",
@@ -1596,6 +1826,24 @@
         "ko": "사람 상담원이 모든 메시지를 읽을 수 있도록, 잘라 내지 않은 대화 전체 기록을 첨부한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "un-",
+          "ko": "아니"
+        },
+        {
+          "part": "trim",
+          "ko": "다듬다, 잘라내다"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "story": "가장자리를 다듬어 잘라내지(trim) 않은(un) → 원본 그대로의",
+      "hook": "언트림드 → 머리 '트리밍' 안 한 그대로 → 원본 그대로"
+    },
     "note": "**잘라 내거나 줄이지 않은 원본 그대로**의 상태입니다. *trim*(다듬다, 잘라 내다)에 부정 접두사 *un-* 이 붙은 형태입니다.\r\n\r\n## 문제 속 쓰임\r\n> Attach the full **untrimmed** transcript of the conversation so the human agent has every message available to read.\r\n> 사람 상담원이 모든 메시지를 읽을 수 있도록, **잘라 내지 않은** 대화 전체 기록을 첨부한다.\r\n\r\n## 함께 쓰는 표현\r\n- **untrimmed transcript / log** : 손대지 않은 전체 기록·로그\r\n- **raw** (형) 가공하지 않은 — 비슷한 뜻으로 자주 씀\r\n\r\n## 시험 포인트\r\n사람에게 넘길 때 원본 대화 전체를 붙이는 보기는 오답입니다. 문제·확인된 식별자·도구 결과·시도한 조치·권장 다음 단계를 담은 **구조화된 핸드오프 요약**이 정답입니다."
   },
   {
@@ -1824,7 +2072,21 @@
         "sense": "미리, 처음부터",
         "ko": "스키마 카탈로그를 MCP 리소스로 노출해 에이전트가 처음에 한 번 읽게 하고, 반복적인 탐색용 도구 호출로 더듬어 찾지 않게 한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "up",
+          "ko": "위로, 앞으로"
+        },
+        {
+          "part": "front",
+          "ko": "앞"
+        }
+      ],
+      "story": "할 일을 맨 앞(front)으로 끌어올려(up) 먼저 해 둔다 → 미리, 처음부터",
+      "hook": "업프런트 → '맨 앞(front)'에 먼저 → 미리"
+    }
   },
   {
     "id": "upgrade",
@@ -2041,6 +2303,25 @@
         "ko": "상류(앞 단계) 에이전트가 장황한 콘텐츠·추론 대신 구조화된 데이터(핵심 사실·인용·관련성 점수)를 반환하도록 고친다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "up",
+          "ko": "위쪽"
+        },
+        {
+          "part": "stream",
+          "ko": "흐름, 물줄기"
+        }
+      ],
+      "story": "강물이 먼저 지나는 위쪽(up) 물줄기(stream) → 처리 흐름의 앞 단계, 상위",
+      "hook": "업스트림 → 물은 위에서 아래로, 윗물이 앞 단계",
+      "family": [
+        "downstream",
+        "mainstream",
+        "streamline"
+      ]
+    },
     "note": "강의 상류처럼, 처리 흐름에서 **앞쪽(먼저 실행되는) 단계** 를 가리킵니다. 결과를 받아 쓰는 뒤 단계는 *downstream* 입니다.\r\n\r\n## 문제 속 쓰임\r\n> Modify **upstream** agents to return structured data (key facts, citations, relevance scores) instead of verbose content and reasoning\r\n> **상류(앞 단계)** 에이전트가 장황한 콘텐츠·추론 대신 구조화된 데이터(핵심 사실·인용·관련성 점수)를 반환하도록 고친다.\r\n\r\n## 함께 쓰는 표현\r\n- **upstream data / service** : 앞 단계에서 넘어온 데이터 / 의존하는 상위 서비스\r\n- **upstream repository** : (Git) 포크의 원본 저장소\r\n- **fix it upstream** : 문제가 생기는 앞 단계에서 고치다\r\n\r\n## 반대말\r\n- **downstream** — 하류의, 뒤 단계의 (결과를 받아 쓰는 쪽)\r\n\r\n## 시험 포인트\r\n뒤 단계로 넘어오는 데이터가 너무 많거나 장황하면, 중간에 요약 단계를 끼우기보다 **데이터를 만드는 앞 단계에서** 필요한 것만 구조화해 내보내게 고치는 것이 근본 해결입니다."
   },
   {

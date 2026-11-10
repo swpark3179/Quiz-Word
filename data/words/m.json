@@ -258,6 +258,31 @@
         "ko": "Claude가 올바른 컨벤션을 자동으로 적용하게 하는 가장 유지보수하기 좋은 방법은?"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "main",
+          "ko": "손 (manus)"
+        },
+        {
+          "part": "tain",
+          "ko": "붙잡다"
+        },
+        {
+          "part": "-able",
+          "ko": "~할 수 있는"
+        }
+      ],
+      "origin": "라틴어 manu tenere (손으로 붙잡다)",
+      "story": "손(main)으로 계속 붙잡고(tain) 관리할 수 있는(able) → 유지보수하기 쉬운",
+      "hook": "메인테이너블 → 메인테이너가 손보기 쉬운 코드",
+      "family": [
+        "manual",
+        "contain",
+        "obtain",
+        "retain"
+      ]
+    },
     "note": "나중에 **고치고 늘리고 관리하기 쉬운** 상태를 말합니다. 지금 당장 동작하는지보다 *규칙이 바뀌거나 대상이 늘어날 때 손볼 곳이 적은지*가 기준입니다.\r\n\r\n## 문제 속 쓰임\r\n> What's the most **maintainable** way to ensure Claude automatically applies the correct conventions?\r\n> Claude가 올바른 컨벤션을 자동으로 적용하게 하는 가장 **유지보수하기 좋은** 방법은?\r\n\r\n## 함께 쓰는 표현\r\n- **maintainable code** : 유지보수하기 쉬운 코드\r\n- **maintainability** (명) 유지보수성\r\n\r\n## 시험 포인트\r\n\"가장 **maintainable** 한 방법\"을 물으면 **한곳에서 관리되고 중복이 없는** 선택지를 고릅니다. 같은 규칙을 여러 위치에 복사하거나 여러 곳을 따로 손봐야 하는 방식은 오답이 되기 쉽습니다."
   },
   {
@@ -351,6 +376,27 @@
         "ko": "같은 세션이 테스트를 세 번 리뷰하게 하고, 테스트별 판정을 다수결로 정한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "major",
+          "ko": "더 큰"
+        },
+        {
+          "part": "-ity",
+          "ko": "~것, 상태"
+        }
+      ],
+      "origin": "라틴어 major (더 큰)",
+      "story": "더 큰(major) 쪽에 선 사람들 → 대다수, 과반",
+      "hook": "머조리티 → 메이저(major) 쪽이 다수",
+      "family": [
+        "major",
+        "magnitude",
+        "maximum",
+        "magnify"
+      ]
+    },
     "note": "전체 중 **절반이 넘는 쪽, 대다수**입니다. *majority vote* 는 여러 결과 중 가장 많이 나온 쪽으로 정하는 **다수결**입니다.\r\n\r\n## 문제 속 쓰임\r\n> Have the same session review the tests three times and take a **majority** vote on each test's verdict\r\n> 같은 세션이 테스트를 세 번 리뷰하게 하고, 테스트별 판정을 **다수결로** 정한다\r\n\r\n## 함께 쓰는 표현\r\n- **majority vote** : 다수결\r\n- **the majority of** ~ : ~의 대부분\r\n- **vast majority** : 압도적 다수\r\n\r\n## 반대말\r\n- **minority** — 소수\r\n\r\n## 시험 포인트\r\n같은 세션으로 여러 번 돌려 다수결을 내도 **자기 결과물 쪽으로 기우는 편향**은 그대로입니다. 자기 리뷰가 문제를 못 찾는다면 **독립된 별도 인스턴스**가 리뷰하게 하는 보기가 정답입니다."
   },
   {
@@ -506,6 +552,31 @@
         "ko": "input_schema가 잘못 작성됐을 가능성이 높다. 올바르게 구성된 JSON 스키마는 amount와 transaction_type의 관계를 검증하는 제약을 걸어 이런 의미 오류를 막을 수 있다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "mal-",
+          "ko": "나쁘게"
+        },
+        {
+          "part": "form",
+          "ko": "형태"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "origin": "라틴어 male (나쁘게) + forma (형태)",
+      "story": "형태(form)가 잘못(mal) 잡힌 데이터 → 형식이 잘못된",
+      "hook": "말폼드 → 말도 안 되는 폼(형식)",
+      "family": [
+        "malware",
+        "malfunction",
+        "format",
+        "reform"
+      ]
+    },
     "note": "정해진 **형식·문법에 맞지 않게 잘못 만들어진** 값을 말합니다. 아예 없는 것(*missing*)이 아니라 **있긴 한데 모양이 틀린** 것입니다.\r\n\r\n## 문제 속 쓰임\r\n> In testing, the model frequently passes **malformed** date strings (`\"next Tuesday\"`, `\"ASAP\"`) ...\r\n> 테스트에서 모델이 날짜에 `\"next Tuesday\"`, `\"ASAP\"` 같은 **잘못된** 문자열을 자주 넣습니다.\r\n\r\n## 함께 쓰는 표현\r\n- **malformed input / JSON** : 형식이 잘못된 입력 / JSON\r\n- **malformed request** : 형식 오류가 있는 요청\r\n\r\n## 비슷한 말 · 반대말\r\n- **invalid** — 유효하지 않은 (더 넓은 말)\r\n- **well-formed** — (반대말) 형식이 올바른\r\n\r\n## 시험 포인트\r\n도구 인자가 잘못된 형식으로 들어오면 시스템 프롬프트 지시보다 **도구 정의 자체**를 고칩니다. `required` 지정과 description 의 형식 예시·제약 보강이 가장 효과가 큰 수정입니다."
   },
   {
@@ -687,6 +758,26 @@
         "ko": "의료 예약 어시스턴트는 다음 에스컬레이션 정책을 따릅니다. 요청이 어시스턴트의 처리 범위 안이고 환자가 직원을 요청하지 않았다면, 표현된 불만을 인정하고, 요청을 직접 완료하며, 직원 연결은 필수가 아닌 선택지로 제안하고, 필수 에스컬레이션은 완료할 수 없는 요청, 임상적 판단이 필요한 경우, 사람에 대한 명시적 요청에만 둡니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "mand",
+          "ko": "명령하다"
+        },
+        {
+          "part": "-atory",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 mandare (명령하다, 맡기다)",
+      "story": "위에서 명령(mand)으로 내려온 일 → 필수의, 의무적인",
+      "family": [
+        "mandate",
+        "command",
+        "demand",
+        "recommend"
+      ]
+    },
     "note": "선택이 아니라 **반드시 해야 하는** 것입니다. 규정이나 절차에서 *빠뜨리면 안 되는 단계*를 말할 때 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Enhance the system prompt to state that customer verification via `get_customer` is **mandatory** before any order operations.\r\n> 주문 작업 전에는 `get_customer` 로 고객을 확인하는 것이 **필수**라고 시스템 프롬프트에 명시한다.\r\n\r\n## 함께 쓰는 표현\r\n- **mandatory step / field** : 필수 단계 / 필수 입력 항목\r\n- **make ~ mandatory** : ~을 의무화하다\r\n\r\n## 비슷한 말 · 반대말\r\n- **required**, **compulsory** — 필수의, 의무적인\r\n- **optional** — 선택적인\r\n\r\n## 시험 포인트\r\n프롬프트에 \"**필수**\"라고 적는 것만으로는 모델이 가끔 어길 수 있습니다. 순서가 반드시 지켜져야 한다면, 앞 단계가 끝나기 전에는 다음 도구 호출을 **프로그램으로 막는** 선택지가 정답 쪽입니다."
   },
   {
@@ -2630,7 +2721,27 @@
         "sense": "가맹점, 판매자",
         "ko": "PreToolUse 훅이 환불 도구 인자 안의 category 필드를 기준으로, 특정 가맹점 카테고리를 대상으로 할 때만 500달러를 넘는 환불을 막아야 합니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "merc",
+          "ko": "상품, 거래"
+        },
+        {
+          "part": "-ant",
+          "ko": "~하는 사람"
+        }
+      ],
+      "origin": "라틴어 mercari (장사하다)",
+      "story": "물건(merc)을 사고파는 사람(-ant) → 가맹점, 판매자",
+      "hook": "머천트 → '베니스의 상인(Merchant)'",
+      "family": [
+        "market",
+        "commerce",
+        "merchandise"
+      ]
+    }
   },
   {
     "id": "merely",
@@ -3018,6 +3129,30 @@
         "ko": "간헐적으로 합성 서브에이전트가 분석 도중에 이 문구를 쓰면서 워크플로가 중단됩니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "mid-",
+          "ko": "한가운데"
+        },
+        {
+          "part": "ana-",
+          "ko": "완전히, 위로"
+        },
+        {
+          "part": "lysis",
+          "ko": "풀기"
+        }
+      ],
+      "origin": "그리스어 analysis (풀어 헤침)",
+      "story": "얽힌 실타래를 풀어(lysis) 헤치는 한가운데(mid) → 분석 도중에",
+      "hook": "미드 어낼리시스 → 분석의 미드(중간)",
+      "family": [
+        "middle",
+        "midnight",
+        "midway"
+      ]
+    },
     "note": "*mid-* 는 \"~의 한가운데, ~ 도중\"이라는 접두사로, *mid-analysis* 는 **분석이 끝나기 전, 하는 도중에**라는 뜻입니다.\r\n\r\n## 문제 속 쓰임\r\n> Intermittently the synthesis subagent uses that phrase **mid-analysis**, halting the workflow.\r\n> 간헐적으로 합성 서브에이전트가 **분석 도중에** 이 문구를 쓰면서 워크플로가 중단됩니다.\r\n\r\n## 함께 쓰는 표현\r\n- **mid-session / mid-task** : 세션 / 작업 도중에\r\n- **mid-investigation** : 조사 도중에\r\n\r\n## 시험 포인트\r\n'research complete' 같은 **문구가 나왔다고 루프를 끝내면**, 분석 도중에 그 말을 쓸 때 잘못 멈춥니다. `stop_reason` 이 `end_turn` 일 때만 멈추는 보기가 정답입니다."
   },
   {
@@ -3559,7 +3694,16 @@
         "sense": "(토큰 등을) 새로 발급하다, 찍어 내다",
         "ko": "사내 MCP 서버가 연결마다 새로 발급해야 하는 Kerberos 기반 토큰을 요구하고, OAuth 인가 서버는 관여하지 않습니다."
       }
-    ]
+    ],
+    "memory": {
+      "origin": "라틴어 moneta (화폐, 조폐소)",
+      "story": "조폐소(moneta)에서 동전을 새로 찍어 내듯 → 토큰을 새로 발급하다",
+      "hook": "민트 → '민트급' 갓 찍어 낸 새것",
+      "family": [
+        "money",
+        "monetary"
+      ]
+    }
   },
   {
     "id": "minute",
@@ -3713,6 +3857,30 @@
         "ko": "enum에 `\"other\"` 값과 선택적 `document_type_detail` 문자열을 추가해, 새로운 유형이 잘못 분류되지 않고 포착되게 한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "mis-",
+          "ko": "잘못"
+        },
+        {
+          "part": "class",
+          "ko": "부류, 등급"
+        },
+        {
+          "part": "-ify",
+          "ko": "~로 만들다"
+        }
+      ],
+      "origin": "라틴어 classis (계층, 구분)",
+      "story": "엉뚱한 부류(class)에 잘못(mis) 넣어 버린다 → 잘못 분류하다",
+      "hook": "미스클래시파이 → 분류(classify) 미스",
+      "family": [
+        "mistake",
+        "misuse",
+        "classic"
+      ]
+    },
     "note": "*mis-*(잘못) + *classify*(분류하다)로, 항목을 **엉뚱한 범주로 잘못 분류하는** 것입니다.\r\n\r\n## 문제 속 쓰임\r\n> A support ticket classifier consistently **misclassifies** tickets.\r\n> 지원 티켓 분류기가 계속 티켓을 **잘못 분류합니다**.\r\n\r\n## 함께 쓰는 표현\r\n- **misclassification** (명) 오분류\r\n- **misclassified as** ~ : ~로 잘못 분류된\r\n\r\n## 시험 포인트\r\n\"적절한 카테고리로 분류하라\" 같은 모호한 지시 때문에 **실행마다 분류가 달라지면**, 이름이 붙은 명시적 카테고리와 각각의 구체적 예시를 정의하는 보기가 정답입니다. temperature 0 은 원인을 고치지 못합니다."
   },
   {
@@ -3751,6 +3919,34 @@
         "ko": "스키마 설정이 잘못된 것이며, `\"additionalProperties\": false` 를 추가하면 품목 금액이 명시된 인보이스 총액과 맞도록 강제된다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "mis-",
+          "ko": "잘못"
+        },
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "figur",
+          "ko": "모양"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "origin": "라틴어 configurare (모양을 맞추다)",
+      "story": "모양(figur)을 맞춰(con) 짜는 걸 잘못(mis) 했다 → 설정이 잘못된",
+      "hook": "미스컨피그드 → config(설정) 파일 미스",
+      "family": [
+        "figure",
+        "configure",
+        "disfigure"
+      ]
+    },
     "note": "설정(configuration)이 **잘못되어 있는** 상태입니다. 코드 자체보다 **설정값·옵션을 틀리게 준 것**이 원인이라는 뜻입니다.\r\n\r\n## 문제 속 쓰임\r\n> The schema is **misconfigured**; adding \"additionalProperties\": false will force the line-item amounts to reconcile with the stated invoice total.\r\n> 스키마 **설정이 잘못된** 것이며, `\"additionalProperties\": false` 를 추가하면 품목 금액이 명시된 인보이스 총액과 맞도록 강제된다\r\n\r\n## 함께 쓰는 표현\r\n- **misconfiguration** (명) 잘못된 설정, 설정 오류\r\n- **misconfigured server / permission** : 설정이 잘못된 서버 / 권한\r\n\r\n## 시험 포인트\r\n이 보기는 오답입니다. 스키마는 **구문·타입**만 보장하고 값끼리 맞는지(의미)는 보장하지 못하므로, 합계 불일치에는 별도의 **산술 검사 단계**가 필요합니다."
   },
   {
@@ -3917,6 +4113,30 @@
         "ko": "결함은 `isRetryable`이 `false`여야 한다는 점이다. 필수 인자 누락은 요청이 잘못된 형식이라는 뜻의 검증 오류다. 같은 요청을 재시도해도 성공하지 않으며 에이전트가 먼저 입력을 고쳐야 한다. `true`로 두면 같은 요청을 그대로 다시 보내도 된다고 오해하게 만든다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "mis-",
+          "ko": "잘못"
+        },
+        {
+          "part": "lead",
+          "ko": "이끌다"
+        },
+        {
+          "part": "-ing",
+          "ko": "~하는"
+        }
+      ],
+      "origin": "고대 영어 mislǣdan (잘못 이끌다)",
+      "story": "길을 잘못(mis) 이끄는(lead) 표지판 → 오해를 부르는, 잘못 이끄는",
+      "hook": "미스리딩 → 리딩(이끌기) 미스, 엉뚱한 길로",
+      "family": [
+        "leader",
+        "mistake",
+        "misunderstand"
+      ]
+    },
     "note": "사실과 다른 쪽으로 **오해하게 만드는** 것입니다. 거짓이 아니더라도 읽는 사람을 틀린 결론으로 이끈다면 *misleading* 입니다.\r\n\r\n## 문제 속 쓰임\r\n> Add few-shot examples of **misleading** comments to help the model recognize similar patterns\r\n> 모델이 비슷한 패턴을 알아보도록, **오해를 부르는** 주석의 퓨샷 예시를 추가한다.\r\n\r\n## 함께 쓰는 표현\r\n- **misleading comment / documentation** : 실제 동작과 달라 오해를 부르는 주석·문서\r\n- **mislead** (동) 잘못 이끌다, 오해하게 하다 (과거형 *misled*)\r\n\r\n## 비교\r\n- **false** — 내용 자체가 틀린\r\n- **misleading** — 틀리지 않았더라도 잘못된 인상을 주는\r\n\r\n## 시험 포인트\r\n어떤 주석이 **misleading** 한지 가려내게 하려면 예시보다 먼저 **판단 기준**을 분명히 해야 합니다. 예: \"주석이 설명하는 동작이 실제 코드 동작과 모순될 때만 표시한다.\""
   },
   {
@@ -4069,7 +4289,26 @@
         "sense": "엉뚱한 곳에 두다, 잘못 배치하다",
         "ko": "더 많은 필드를 필수로 지정해 Claude가 값을 빠뜨리거나 엉뚱한 곳에 넣지 못하게 한다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "mis-",
+          "ko": "잘못"
+        },
+        {
+          "part": "place",
+          "ko": "두다, 자리"
+        }
+      ],
+      "story": "엉뚱한(mis) 자리(place)에 둬 버린다 → 잘못 배치하다",
+      "hook": "미스플레이스 → 플레이스(자리) 미스",
+      "family": [
+        "replace",
+        "displace",
+        "placement"
+      ]
+    }
   },
   {
     "id": "misread",
@@ -4562,6 +4801,27 @@
         "ko": "모든 코멘트를 게시 전에 사람 검수 대기열로 보내, 리뷰어가 하나씩 먼저 승인하게 한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "moder",
+          "ko": "정도를 지키다"
+        },
+        {
+          "part": "-ation",
+          "ko": "~함"
+        }
+      ],
+      "origin": "라틴어 moderari (알맞게 다스리다)",
+      "story": "정해진 정도(mod)를 넘는 글을 걸러 낸다 → 콘텐츠 검수",
+      "hook": "모더레이션 → 커뮤니티 '모더(운영자)'의 글 검수",
+      "family": [
+        "modest",
+        "mode",
+        "model",
+        "modify"
+      ]
+    },
     "note": "1. **(콘텐츠) 검수, 모더레이션** — 게시 전·후에 부적절하거나 잘못된 내용을 걸러 내는 일\r\n2. **절제, 적당함** — 지나치지 않게 함 (*in moderation* 적당히)\r\n\r\n## 문제 속 쓰임\r\n> Route every comment through a human **moderation** queue before it is posted, so a reviewer approves each one first\r\n> 모든 코멘트를 게시 전에 사람 **검수** 대기열로 보내, 리뷰어가 하나씩 먼저 승인하게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **moderation queue** : 검수 대기열\r\n- **content moderation** : 콘텐츠 검수\r\n- **moderator** (명) 검수자, (토론) 진행자\r\n\r\n## 시험 포인트\r\n특정 범주의 오탐 때문에 신뢰가 떨어졌을 때 **모든 코멘트를 사람이 검수**하게 하는 보기는 과잉 대응이라 오답입니다. 그 범주만 잠시 끄고 명시적 기준으로 프롬프트를 고치는 것이 정답입니다."
   },
   {
@@ -4860,6 +5120,30 @@
         "ko": "코디네이터 에이전트에게 40만 줄짜리 레거시 청구(billing) 모놀리스의 마이그레이션 계획을 만들라는 요청이 들어왔습니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "mono-",
+          "ko": "하나"
+        },
+        {
+          "part": "lith",
+          "ko": "돌"
+        },
+        {
+          "part": "-ic",
+          "ko": "~의"
+        }
+      ],
+      "origin": "그리스어 monolithos (돌 하나로 된)",
+      "story": "거대한 돌(lith) 하나(mono)를 통째로 깎은 기둥 → 한 덩어리의, 단일 구조의",
+      "hook": "모놀리식 → 모노(하나) 덩어리 통짜 시스템",
+      "family": [
+        "monotone",
+        "monopoly",
+        "lithium"
+      ]
+    },
     "note": "기능이 나뉘지 않고 **하나의 큰 덩어리로 묶여 있는** 구조를 말합니다. 소프트웨어에서는 *마이크로서비스*와 대비되는 말로, 일부만 바꾸려 해도 전체를 함께 다뤄야 한다는 느낌이 있습니다.\r\n\r\n## 문제 속 쓰임\r\n> You've been assigned to restructure the team's **monolithic** application into microservices.\r\n> 팀의 **모놀리식** 애플리케이션을 마이크로서비스로 재구성하는 일을 맡았다.\r\n\r\n## 함께 쓰는 표현\r\n- **monolithic application / architecture** : 모놀리식 애플리케이션·아키텍처\r\n- **monolith** (명) 모놀리스, 하나로 된 큰 시스템\r\n- **break up a monolith** : 모놀리스를 여러 서비스로 쪼개다\r\n\r\n## 반대말\r\n- **microservices** — 작고 독립적인 서비스들로 나눈 구조\r\n- **modular** — 모듈 단위로 나뉜\r\n\r\n## 시험 포인트\r\n모놀리스를 쪼개는 일처럼 **여러 파일에 걸친 구조 결정**이 필요하면, 바로 실행하지 말고 plan mode로 의존성을 파악하고 설계부터 하는 선택지가 정답입니다."
   },
   {

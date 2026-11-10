@@ -763,7 +763,30 @@
         "sense": "(시간이) 지난, 경과한",
         "ko": "재시도 횟수, 호출 시각, 경과 시간, 실패한 작업을 실행한 서브에이전트 ID"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "e-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "lapse",
+          "ko": "미끄러지다"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "origin": "라틴어 elabi (미끄러져 빠져나가다)",
+      "story": "시간이 손 밖으로(e) 미끄러져(lapse) 빠져나간 → 경과한",
+      "family": [
+        "lapse",
+        "collapse",
+        "relapse"
+      ]
+    }
   },
   {
     "id": "electric",
@@ -860,6 +883,34 @@
         "ko": "반품 처리 에이전트가 주문 조회 도구를 호출하면 확인하는 주문마다 40개가 넘는 필드(배송사 메타데이터, 내부 창고 코드, 마케팅 태그 등)가 담긴 JSON이 돌아오는데, 조회가 열두 번쯤 쌓이자 반품 자격 판단에 필요한 것은 5개 필드(주문 상태, 구매일, 품목, 금액, 반품 기한)뿐인데도 원본 페이로드가 컨텍스트 창을 지배합니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "e-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "lig",
+          "ko": "고르다"
+        },
+        {
+          "part": "-ible",
+          "ko": "~할 수 있는"
+        },
+        {
+          "part": "-ity",
+          "ko": "성질"
+        }
+      ],
+      "origin": "라틴어 eligere (골라내다)",
+      "story": "여럿 중 골라(lig) 뽑힐(e) 수 있는(ible) 조건 → 자격, 대상 여부",
+      "family": [
+        "elect",
+        "select",
+        "elite",
+        "collect"
+      ]
+    },
     "note": "어떤 혜택·처리를 받을 **자격이 되는지(조건 충족 여부)** 입니다. 고객 지원 문제에서는 주로 **환불·교환 대상인지**를 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> The coordinator has already run get_customer and confirmed the account, then spawns subagents to check order history and refund **eligibility** in parallel.\r\n> 코디네이터가 이미 `get_customer` 를 실행해 계정을 확인한 뒤, 주문 이력과 환불 **자격**을 병렬로 확인하는 서브에이전트들을 생성한다.\r\n\r\n## 함께 쓰는 표현\r\n- **refund eligibility** : 환불 가능 여부\r\n- **eligible for** ~ : ~할 자격이 있는 · **ineligible** : 자격이 없는\r\n- **check eligibility** : 자격을 확인하다"
   },
   {
@@ -1191,6 +1242,26 @@
         "ko": "검토자들은 조사 도중에야 드러나는 새로운 하위 주제를 보고서가 일관되게 놓친다고 지적합니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "e-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "merge",
+          "ko": "잠기다"
+        }
+      ],
+      "origin": "라틴어 emergere (물 밖으로 떠오르다)",
+      "story": "물속에 잠겨(merge) 있다 밖으로(e) 떠오른다 → 새로 떠오르는",
+      "hook": "이머지 → '이머전시'처럼 불쑥 튀어나오다",
+      "family": [
+        "merge",
+        "submerge",
+        "emergency"
+      ]
+    },
     "note": "숨어 있거나 없던 것이 **새로 나타나다, 드러나다** 라는 뜻입니다. *emerging* 은 \"새로 떠오르는, 진행 중에 생겨나는\".\r\n\r\n## 문제 속 쓰임\r\n> Reviewers note the reports consistently miss **emerging** subtopics that only surface mid-investigation.\r\n> 검토자들은 조사 도중에야 드러나는 **새로운** 하위 주제를 보고서가 일관되게 놓친다고 지적한다.\r\n\r\n## 함께 쓰는 표현\r\n- **emerging trend / topic** : 새로 떠오르는 경향·주제\r\n- **emerge from** ~ : ~에서 드러나다, 생겨나다\r\n\r\n## 비슷한 말\r\n- **surface** — (숨은 것이) 드러나다\r\n- **arise** — (문제·상황이) 생기다\r\n\r\n## 시험 포인트\r\n조사 중에 **새로 드러나는** 주제를 놓친다면 고정된 단계 체인 대신, 발견에 따라 후속 작업을 만드는 **동적 분해**가 정답입니다."
   },
   {
@@ -1267,6 +1338,26 @@
         "ko": "마무리 문구 정규식 허용 목록을 넓혀, 모델이 낼 수 있는 모든 정중한 맺음말 변형까지 매칭되게 한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "e-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "mit",
+          "ko": "보내다"
+        }
+      ],
+      "origin": "라틴어 emittere (밖으로 내보내다)",
+      "story": "안에서 밖으로(e) 내보낸다(mit) → 출력·이벤트를 내보내다",
+      "family": [
+        "transmit",
+        "submit",
+        "permit",
+        "mission"
+      ]
+    },
     "note": "기계·프로그램이 출력·신호·이벤트를 **내보내다, 생성해 내다** 라는 뜻입니다. LLM 문맥에서는 모델이 텍스트·도구 호출을 **응답으로 내놓는 것**을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> **Emit** all three Task calls together in a single assistant response so the regional subagents run concurrently\r\n> 세 Task 호출을 하나의 어시스턴트 응답에 함께 **내보내**, 지역별 서브에이전트가 동시에 실행되게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **emit an event / a log** : 이벤트·로그를 내보내다\r\n- **emit a tool call** : (모델이) 도구 호출을 내놓다\r\n\r\n## 비슷한 말\r\n- **output**, **produce**, **generate** — 만들어 내다\r\n\r\n## 시험 포인트\r\n서로 독립적인 서브에이전트들은 Task 호출을 **한 응답에 함께 내보내면** 병렬로 실행됩니다. 하나씩 결과를 기다렸다가 보내면 지연 시간이 그대로 합산됩니다."
   },
   {
@@ -1334,6 +1425,29 @@
         "ko": "시스템 프롬프트 지시가 충분히 강하지 않았다 — \"ABSOLUTELY NEVER\"를 추가한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "em-",
+          "ko": "안에"
+        },
+        {
+          "part": "phat",
+          "ko": "보여 주다"
+        },
+        {
+          "part": "-ic",
+          "ko": "~한"
+        }
+      ],
+      "origin": "그리스어 emphasis (드러내 보임)",
+      "story": "속뜻을 안(em)에서 힘껏 드러내 보이는(phat) → 강조하는, 단호한",
+      "family": [
+        "phenomenon",
+        "phase",
+        "fantasy"
+      ]
+    },
     "note": "어조를 세게 해서 **힘주어 강조하는** 것입니다. 프롬프트에서는 *ALWAYS*, *ABSOLUTELY NEVER* 처럼 대문자·강한 단어로 지시를 세게 쓰는 것을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> The system prompt instruction was not **emphatic** enough — add 'ABSOLUTELY NEVER'\r\n> 시스템 프롬프트 지시가 충분히 **강하지** 않았다 — \"ABSOLUTELY NEVER\"를 추가한다\r\n\r\n## 함께 쓰는 표현\r\n- **emphatic instruction / rule** : 강조형 지시·규칙\r\n- **emphatically** (부) 단호하게, 힘주어\r\n- **emphasis** (명) 강조\r\n\r\n## 시험 포인트\r\n지시가 안 지켜질 때 **더 세게 쓰는** 보기는 거의 항상 오답입니다. 반드시 지켜야 할 규칙은 hook·도구 권한·스키마 같은 **결정적(deterministic) 수단**으로 강제하는 보기가 정답입니다."
   },
   {
@@ -1633,6 +1747,25 @@
         "ko": "한 팀이 과거 데이터에서 직접 겪은 모든 엣지 케이스마다 하나씩, 정확한 입력-출력 쌍 20개로 분류 프롬프트를 만들었습니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "en-",
+          "ko": "~에, 안으로"
+        },
+        {
+          "part": "counter",
+          "ko": "맞은편"
+        }
+      ],
+      "origin": "고대 프랑스어 encontrer (마주치다)",
+      "story": "맞은편(counter)에서 오는 문제와 딱 마주친다(en) → 부딪히다",
+      "family": [
+        "counter",
+        "contrary",
+        "contrast"
+      ]
+    },
     "note": "계획하지 않았는데 **도중에 (문제·상황과) 맞닥뜨리는** 것입니다. 오류·장애물처럼 반갑지 않은 대상과 함께 자주 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> The document analysis subagent **encounters** a corrupted PDF file it cannot parse.\r\n> 문서 분석 서브에이전트가 파싱할 수 없는 손상된 PDF 파일을 **만났다**.\r\n\r\n## 함께 쓰는 표현\r\n- **encounter an error / a problem** : 오류·문제에 부딪히다\r\n- **encounter unexpected complexity** : 예상치 못한 복잡성을 만나다\r\n\r\n## 비슷한 말\r\n- **run into**, **come across** — 더 일상적인 표현\r\n- **face** — (어려움에) 직면하다\r\n\r\n## 시험 포인트\r\n\"일단 직접 실행하고 복잡성을 **만나면** 그때 plan mode 로 바꾼다\"는 보기는, 이미 큰 변경을 한 뒤에야 문제를 발견하게 되어 오답입니다."
   },
   {
@@ -1976,6 +2109,25 @@
         "ko": "조직의 구성 관리 시스템으로 `managed-settings.json` 을 시스템 디렉터리(예: Linux의 `/etc/claude-code/`)에 배포한다. 개발자·프로젝트 설정보다 우선하는 정책을 강제하기 때문이다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "en-",
+          "ko": "~하게 하다"
+        },
+        {
+          "part": "force",
+          "ko": "힘"
+        }
+      ],
+      "origin": "고대 프랑스어 enforcier (힘을 가하다)",
+      "story": "힘(force)을 실어(en) 규칙을 반드시 지키게 한다 → 강제하다",
+      "family": [
+        "force",
+        "reinforce",
+        "fortify"
+      ]
+    },
     "note": "규칙·형식을 **부탁이 아니라 강제로 지키게 만드는** 것입니다. 시험에서는 프롬프트 지시처럼 *어길 수도 있는* 방법과 대비해, *구성·코드 수준에서 확실히 보장하는* 방법을 가리킬 때 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Use CLI flags `--output-format json` and `--json-schema` to **enforce** structured findings.\r\n> CLI 플래그 `--output-format json` 과 `--json-schema` 로 구조화된 결과 출력을 **강제한다**.\r\n\r\n## 함께 쓰는 표현\r\n- **enforce a rule / policy** : 규칙·정책을 강제하다\r\n- **strictly enforced** : 엄격히 적용되는\r\n- **enforcement** (명) 강제, 시행\r\n\r\n## 시험 포인트\r\n정답은 자주 **강제(enforce)냐 유도(instruct)냐**에서 갈립니다. 반드시 지켜야 하는 형식·순서·권한이라면 프롬프트·CLAUDE.md 지시보다 **CLI 플래그·프로그램적 전제조건·도구 권한 제한**처럼 강제하는 보기를 고르세요."
   },
   {
@@ -2174,6 +2326,20 @@
         "ko": "`--resume` 을 쓰되 컨텍스트 창을 수동으로 늘려, 낡은 기록을 어쨌든 더 많이 유지한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "en-",
+          "ko": "~하게 만들다"
+        },
+        {
+          "part": "large",
+          "ko": "큰"
+        }
+      ],
+      "story": "크게(large) 만든다(en) → 크게 하다, 늘리다",
+      "hook": "인라지 → 사이즈를 '라지(L)'로 키우다"
+    },
     "note": "크기·양을 **더 크게 늘리다, 확대하다** 라는 뜻입니다.\r\n\r\n## 문제 속 쓰임\r\n> **Enlarge** the context window so the full refund policy document can sit next to the conversation and guide each call.\r\n> 컨텍스트 창을 **키워** 전체 환불 정책 문서를 대화 옆에 두고, 매 호출을 안내하게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **enlarge the context window** : 컨텍스트 창을 키우다\r\n- **enlarged** (형) 커진, 확대된\r\n\r\n## 비슷한 말\r\n- **expand**, **increase** — 늘리다, 키우다\r\n\r\n## 시험 포인트\r\n\"컨텍스트 창을 키운다\"는 보기는 대개 오답입니다. 서브에이전트는 창 크기와 상관없이 코디네이터의 대화를 **공유하지 않고**, 큰 문서를 통째로 넣으면 오히려 중간 정보를 놓치기 쉽습니다."
   },
   {
@@ -2332,6 +2498,20 @@
         "ko": "`\"required\": [\"from\", \"to\", \"date\"]` 를 추가하고, 설명(description)에 형식 예시와 제약을 풍부하게 넣는다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "en-",
+          "ko": "~하게 만들다"
+        },
+        {
+          "part": "rich",
+          "ko": "풍부한"
+        }
+      ],
+      "story": "데이터에 정보를 보태 풍부하게(rich) 만든다(en) → 보강하다",
+      "hook": "인리치 → 데이터를 '리치(rich)'하게 꽉 채움"
+    },
     "note": "기존 것에 정보·내용을 **더해 풍부하게, 쓸모 있게 만드는** 것입니다. 문제에서는 도구 설명에 **예시·형식·제약을 보강한다**는 뜻으로 나옵니다.\r\n\r\n## 문제 속 쓰임\r\n> Add `\"required\": [\"from\", \"to\", \"date\"]` and **enrich** descriptions with format examples and constraints\r\n> `\"required\": [\"from\", \"to\", \"date\"]` 를 추가하고, 설명(description)에 형식 예시와 제약을 **풍부하게 넣는다**\r\n\r\n## 함께 쓰는 표현\r\n- **enrich A with B** : A에 B를 더해 보강하다\r\n- **data enrichment** : 기존 데이터에 정보를 덧붙이는 데이터 보강\r\n\r\n## 시험 포인트\r\n모델이 도구를 잘못 고르거나 인자를 틀린다면, 도구 **description 을 예시·형식·사용 경계까지 보강하는** 보기가 가장 먼저 고를 정답입니다."
   },
   {
@@ -2397,6 +2577,24 @@
         "ko": "정규식 matcher `/refund/` 는 고정되지 않아 'refund'라는 부분 문자열을 포함한 모든 도구 이름에 매칭된다. `^` 와 `$` 로 고정한 `/^refund$/` 로 바꿔 정확히 `refund` 라는 이름에만 매칭되게 한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "en-",
+          "ko": "~하게 만들다"
+        },
+        {
+          "part": "sure",
+          "ko": "확실한"
+        }
+      ],
+      "story": "확실하게(sure) 만든다(en) → 반드시 ~하게 하다, 보장하다",
+      "family": [
+        "assure",
+        "insure",
+        "secure"
+      ]
+    },
     "note": "어떤 결과가 **반드시 일어나도록 확실히 해 두는** 것입니다. *ensure (that)* + 문장 형태로 \"~하도록 보장하다, ~인지 확실히 하다\"라는 뜻으로 많이 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> What's the most maintainable way to **ensure** Claude automatically applies the correct conventions?\r\n> Claude가 올바른 컨벤션을 자동으로 적용하도록 **보장하는** 가장 유지보수하기 좋은 방법은?\r\n\r\n## 함께 쓰는 표현\r\n- **ensure (that)** ~ : 반드시 ~하게 하다\r\n- **ensure consistency** : 일관성을 보장하다\r\n\r\n## 비교\r\n- **ensure** — (결과를) 확실히 하다\r\n- **assure** — (사람을) 안심시키다, 장담하다 · *assure you that* ~\r\n- **insure** — 보험에 들다\r\n\r\n## 시험 포인트\r\n\"**자동으로·반드시** ~하게 하라\"는 요구에는 모델의 추론이나 수동 호출에 맡기는 보기보다, 경로 기반 rules 처럼 **결정적으로 적용되는 구성**이 정답입니다."
   },
   {
@@ -2706,6 +2904,25 @@
         "ko": "에이전트당 항목 하나에 상태와 자기 export 파일 경로를 담은 구조화된 JSON 매니페스트"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "entr",
+          "ko": "들어가다"
+        },
+        {
+          "part": "-y",
+          "ko": "명사"
+        }
+      ],
+      "origin": "고대 프랑스어 entree (들어감)",
+      "story": "목록 안으로 들어간(entr) 한 줄 → 항목, 기재 사항, 입력",
+      "hook": "엔트리 → 대회 '엔트리' 명단에 오른 한 줄",
+      "family": [
+        "enter",
+        "entrance"
+      ]
+    },
     "note": "목록·설정·로그에 들어 있는 **항목 하나, 기재 사항**입니다. 복수형은 *entries* 입니다.\r\n\r\n## 문제 속 쓰임\r\n> A team wants project-specific commands available to all engineers using Claude Code on the repo, without adding **entries** to each engineer's user settings.\r\n> 팀은 모든 엔지니어가 프로젝트 전용 커맨드를 쓸 수 있길 원한다. 단, 각 엔지니어의 사용자 설정에 **항목**을 추가하지 않고서.\r\n\r\n## 함께 쓰는 표현\r\n- **add an entry** : 항목을 추가하다\r\n- **log entry** : 로그 한 줄(기록 하나)\r\n- **entry point** : 진입점 — 실행이 시작되는 곳\r\n\r\n## 시험 포인트\r\n팀 전체가 써야 하는 설정은 개인 사용자 설정에 **항목을 추가**하기보다 저장소에 커밋되는 **프로젝트 수준 설정**(`.claude/` 등)에 둡니다."
   },
   {
@@ -2984,7 +3201,25 @@
         "sense": "일회성의, 잠깐만 존재하는",
         "ko": "이후 새로 뜬 일회용 빌드 호스트의 CI 작업이 `claude -r \"auth-refactor\" \"Finish this PR\"` 을 실행합니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "epi-",
+          "ko": "~ 동안"
+        },
+        {
+          "part": "hemera",
+          "ko": "하루"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "그리스어 ephemeros (하루 동안의)",
+      "story": "하루(hemera)만 사는 하루살이처럼 → 금방 사라지는, 일회성의"
+    }
   },
   {
     "id": "equally",
@@ -3468,6 +3703,29 @@
         "ko": "출처들이 일관되게 뒷받침하는 발견은 확립된(established) 섹션에, 단일 출처이거나 논쟁 중인 발견은 논쟁(contested) 섹션에 둔다. 에이전트가 먼저 원문 그대로의 인용을 뽑게 해, 각 출처의 표현과 단서가 그대로 이어지게 한다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "e",
+          "ko": "덧붙은 소리"
+        },
+        {
+          "part": "stabl",
+          "ko": "단단히 선"
+        },
+        {
+          "part": "-ish",
+          "ko": "~하게 하다"
+        }
+      ],
+      "origin": "라틴어 stabilire (단단히 세우다)",
+      "story": "흔들림 없이 단단히(stable) 세워 둔다 → 확립하다, 확정하다",
+      "family": [
+        "stable",
+        "stability",
+        "state"
+      ]
+    },
     "note": "1. **(사실을) 확정하다, 확인해 밝히다** — 조사·검증을 거쳐 \"이것이 맞다\"고 정하는 것. *established finding* 은 \"확정된 결과\"\r\n2. **세우다, 수립하다** — 규칙·기준·연결을 새로 만들다 (*establish a connection*)\r\n\r\n## 문제 속 쓰임\r\n> ...reaches a conclusion that contradicts the coordinator's **established** finding.\r\n> 코디네이터가 **확정한** 결과와 모순되는 결론에 도달한다.\r\n> ...so that it independently **establishes** and verifies the account before it does any order work.\r\n> 주문 작업을 하기 전에 스스로 계정을 **확인하고** 검증하게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **establish a baseline** : 기준선을 정하다\r\n- **establish a connection** : 연결을 맺다\r\n- **well-established** : 확고히 자리 잡은\r\n\r\n## 시험 포인트\r\n코디네이터가 이미 **확정한** 사실(확인된 계정 등)은 서브에이전트에게 프롬프트로 넘겨줘야 합니다. 서브에이전트마다 **스스로 다시 확인하게** 하는 보기는 중복 호출과 엇갈린 결과를 낳아 오답입니다."
   },
   {
@@ -4171,6 +4429,11 @@
         "ko": "두 파일을 함께 살펴보고 실제 데이터 흐름에 근거해 하나의 수정안을 내는 별도의 파일 간 통합 패스"
       }
     ],
+    "memory": {
+      "origin": "라틴어 examinare (저울로 달아 보다)",
+      "story": "저울 바늘을 들여다보며 무게를 꼼꼼히 잰다 → 자세히 살펴보다",
+      "hook": "이그재민 → '이거 재 보자' 하며 꼼꼼히 살핌"
+    },
     "note": "원인이나 상태를 알아내려고 **하나하나 자세히 들여다보는** 것입니다. *look at* 보다 꼼꼼하고 격식 있는 말입니다.\r\n\r\n## 문제 속 쓰임\r\n> What should you **examine** first to address this issue?\r\n> 이 문제를 해결하려면 무엇을 가장 먼저 **살펴봐야** 하는가?\r\n\r\n## 함께 쓰는 표현\r\n- **examine closely** : 자세히 살펴보다\r\n- **examination** (명) 검사, 시험\r\n\r\n## 비슷한 말\r\n- **inspect** — 결함이 없는지 점검하다\r\n- **investigate** — 원인을 조사하다\r\n\r\n## 시험 포인트\r\n\"무엇을 **먼저** 살펴보나\"는 *가장 근본적이면서 비용이 적은* 진단을 묻습니다. 도구를 잘못 고를 때는 분류기·도구 통합보다 **도구 설명부터** 점검하는 보기가 정답입니다."
   },
   {
@@ -4397,7 +4660,21 @@
         "sense": "발췌(문), 인용 부분",
         "ko": "각 조회 응답을 코드로 앞 1,000자까지 잘라 그 앞부분만 이력에 남긴다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "cerpt",
+          "ko": "뜯다, 따다"
+        }
+      ],
+      "origin": "라틴어 excerpere (뜯어내다, 뽑다)",
+      "story": "긴 글에서 일부를 밖으로(ex) 뜯어낸(cerpt) 조각 → 발췌문"
+    }
   },
   {
     "id": "excessive",
@@ -4727,6 +5004,30 @@
         "ko": "공유 검색·문서 분석 단계가 끝난 뒤, 이해관계자들은 비용이 큰 검색을 다시 실행하지 않고 같은 증거로 두 가지 보고서, 즉 한 페이지짜리 임원 요약본과 기술 심층 분석본을 원합니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "끝까지"
+        },
+        {
+          "part": "ecut",
+          "ko": "따르다(sequ)"
+        },
+        {
+          "part": "-ive",
+          "ko": "~하는"
+        }
+      ],
+      "origin": "라틴어 exsequi (끝까지 따라가 해내다)",
+      "story": "결정을 끝까지(ex) 따라가(secut) 실행하는 사람들 → 임원, 경영진용",
+      "family": [
+        "execute",
+        "sequence",
+        "consecutive",
+        "consequence"
+      ]
+    },
     "note": "1. **임원, 경영진** — 회사의 의사 결정을 맡은 사람\r\n2. **(형) 임원용의, 경영진을 위한** — *executive brief / summary* 는 바쁜 의사 결정자를 위한 짧은 요약\r\n\r\n## 문제 속 쓰임\r\n> ...stakeholders want two report variants from the same evidence — a one-page **executive** brief and a technical deep-dive...\r\n> 이해관계자들이 같은 증거로 두 가지 보고서, 즉 한 페이지짜리 **임원** 요약본과 기술 심층 분석본을 원한다.\r\n\r\n## 함께 쓰는 표현\r\n- **executive summary** : 핵심만 앞에 모은 요약\r\n- **executive brief** : 임원 보고용 요약 자료\r\n\r\n## 비교\r\n- **execute** (동) 실행하다 — 철자는 비슷하지만 *executive* 는 주로 \"임원(용)\"의 뜻"
   },
   {
@@ -4815,7 +5116,26 @@
         "sense": "(규칙·검사에서) 면제된",
         "ko": "읽기 전용 명령은 현재 어떤 모드든 상관없이 모든 권한 모드에서 영구히 면제된다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "empt",
+          "ko": "꺼내다, 취하다"
+        }
+      ],
+      "origin": "라틴어 eximere (빼내다)",
+      "story": "규칙의 그물에서 밖으로(ex) 꺼내 준(empt) → 면제된",
+      "family": [
+        "example",
+        "prompt",
+        "redemption"
+      ]
+    }
   },
   {
     "id": "exfiltration",
@@ -4922,6 +5242,20 @@
         "ko": "한 팀의 코드 리뷰 어시스턴트 프롬프트에는 이미 이슈 지적용 루브릭이 항목별로 빠짐없이 적혀 있는데도, 실행마다 지적 형식이 달라 어떤 것은 위치보다 심각도를 먼저 쓰고 어떤 것은 수정 제안을 아예 빼먹습니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "haust",
+          "ko": "퍼내다"
+        }
+      ],
+      "origin": "라틴어 exhaurire (다 퍼내다)",
+      "story": "우물물을 밖으로(ex) 바닥까지 퍼낸다(haust) → 소진하다, 빠짐없는"
+    },
     "note": "한도가 있는 것을 **남김없이 다 써 버리는** 것입니다. 재시도 횟수·메모리·예산 같은 *자원*에 쓰며, 사람에게 쓰면 \"지치게 하다\"가 됩니다.\r\n\r\n## 문제 속 쓰임\r\n> ...returning a generic \"search unavailable\" status only after all retries are **exhausted**.\r\n> 재시도를 모두 **소진한** 뒤에야 일반적인 \"search unavailable\" 상태만 반환한다.\r\n\r\n## 함께 쓰는 표현\r\n- **retries are exhausted** : 재시도 횟수를 다 썼다\r\n- **exhaust the budget / resources** : 예산·자원을 다 쓰다\r\n- **exhaustive** (형) 빠짐없는 · **exhaustive list** 전체 목록\r\n\r\n## 시험 포인트\r\n재시도를 다 쓴 뒤 **\"unavailable\" 같은 뭉뚱그린 상태만** 돌려주는 보기는 오답이 되기 쉽습니다. 상위에서 복구를 판단하려면 실패 유형·시도한 쿼리·부분 결과 같은 **구조화된 맥락**이 필요합니다."
   },
   {
@@ -5286,7 +5620,27 @@
         "sense": "비용, 경비",
         "ko": "경비 정산 파이프라인이 스캔된 경비 보고서에서 필수 \"project_code\" 필드를 추출합니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "pens",
+          "ko": "무게 달다"
+        }
+      ],
+      "origin": "라틴어 expensa (지출된 돈)",
+      "story": "저울에 달아(pens) 밖으로(ex) 내준 돈 → 비용, 경비",
+      "family": [
+        "spend",
+        "pension",
+        "compensate",
+        "dispense"
+      ]
+    }
   },
   {
     "id": "expensive",
@@ -5372,7 +5726,30 @@
         "sense": "전문 지식, 전문성",
         "ko": "`AgentDefinition.prompt` 는 서브에이전트의 지속적인 시스템 프롬프트와 전문성을 정하고, 호출 시 넘기는 호출별 프롬프트는 그 실행의 구체적 작업 내용을 제공한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "철저히"
+        },
+        {
+          "part": "pert",
+          "ko": "시도해 보다"
+        },
+        {
+          "part": "-ise",
+          "ko": "명사"
+        }
+      ],
+      "origin": "라틴어 expertus (경험으로 시험해 본)",
+      "story": "숱하게 시험해(pert) 보며 쌓은 실력 → 전문 지식, 전문성",
+      "family": [
+        "experience",
+        "experiment",
+        "peril"
+      ]
+    }
   },
   {
     "id": "expire",
@@ -5620,6 +5997,28 @@
         "ko": "`max_tokens` 를 빠듯하게 낮춰, 모델이 JSON 주위에 설명 문장이나 코드 펜스를 붙일 여유가 없게 한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "plan",
+          "ko": "평평한"
+        },
+        {
+          "part": "-atory",
+          "ko": "~하는"
+        }
+      ],
+      "origin": "라틴어 explanare (평평하게 펴다)",
+      "story": "구겨진 내용을 밖으로(ex) 쫙 펴서(plan) 보여 주는 → 설명하는",
+      "family": [
+        "plain",
+        "plane"
+      ]
+    },
     "note": "무언가를 **설명하기 위한, 설명하는** 이라는 뜻입니다. 문제에서는 JSON 같은 결과물 주위에 붙는 **군더더기 설명 문장**을 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> Lower max_tokens to a tight cap so the model has no room to add **explanatory** prose or code fences around the JSON.\r\n> `max_tokens` 를 빠듯하게 낮춰, 모델이 JSON 주위에 **설명** 문장이나 코드 펜스를 붙일 여유가 없게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **explanatory text / note** : 설명 문구·주석\r\n- **self-explanatory** : 따로 설명할 필요 없이 뻔한\r\n\r\n## 시험 포인트\r\n출력 앞뒤의 설명 문장을 없애려고 `max_tokens` 를 줄이는 보기는 오답입니다. 응답이 중간에 잘릴 뿐이며, **도구 사용·스키마로 형식을 강제**하는 것이 정답입니다."
   },
   {
@@ -5775,6 +6174,11 @@
         "ko": "팀의 /investigate-flaky 스킬은 테스트 스위트 전체를 grep으로 검색하고, 수십 개 파일을 읽고, 답하기 전에 장황한 탐색 과정을 출력합니다."
       }
     ],
+    "memory": {
+      "origin": "라틴어 explorare (찾아 살피다)",
+      "story": "지도 없는 땅을 이리저리 두루 살피며 길을 찾는다 → 탐색",
+      "hook": "익스플로레이션 → 탐색기 '익스플로러'로 여기저기 살펴봄"
+    },
     "note": "결정하기 전에 **여러 가능성을 두루 살펴보는** 단계입니다. 확정되지 않은 *시험 삼아 보는* 성격이라, 끝나면 버려야 할 내용도 많이 남습니다.\r\n\r\n## 문제 속 쓰임\r\n> ...after running this skill, Claude's subsequent responses are influenced by the **exploration** discussion.\r\n> 이 스킬을 실행한 뒤 Claude의 이후 응답이 **탐색** 논의의 영향을 받는다.\r\n\r\n## 함께 쓰는 표현\r\n- **exploration phase** : 탐색 단계\r\n- **exploratory** (형) 탐색용의 · **exploratory context** 탐색 중에 쌓인 맥락\r\n- **explore** (동) 탐색하다\r\n\r\n## 시험 포인트\r\n탐색 과정의 장황한 출력이나 버린 아이디어가 메인 대화에 남는 것이 문제라면, 탐색을 **격리된 컨텍스트**(`context: fork`, Explore 서브에이전트)에서 돌리고 결과 요약만 받는 보기가 정답입니다."
   },
   {
@@ -5919,6 +6323,24 @@
         "ko": "문자열에 재시도 이력이 없다. 백오프를 두고 재시도하고 최종 시도 횟수를 코디네이터에 반환한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "exponential",
+          "ko": "지수의"
+        },
+        {
+          "part": "back",
+          "ko": "뒤로"
+        },
+        {
+          "part": "off",
+          "ko": "떨어져"
+        }
+      ],
+      "story": "실패할 때마다 뒤로(back) 물러나(off) 대기를 두 배씩 → 지수 백오프",
+      "hook": "백오프 → '백(back)' 물러나 잠깐 '오프', 점점 길게 쉬기"
+    },
     "note": "요청이 실패할 때마다 다음 재시도까지 기다리는 시간을 1초 → 2초 → 4초 …처럼 **두 배씩 늘리는** 재시도 방식입니다.\r\n\r\n## 문제 속 쓰임\r\n> Implement automatic retry with **exponential backoff** within the subagent.\r\n> 서브에이전트 안에서 **지수 백오프**로 자동 재시도를 구현한다.\r\n\r\n## 왜 쓰나\r\n- 일시적인 장애(**transient** failure)가 풀릴 시간을 벌어 준다\r\n- 모든 클라이언트가 동시에 재시도해 서버를 다시 무너뜨리는 것을 막는다\r\n\r\n## 시험 포인트\r\n재시도로 **해결될 수 있는 오류**에만 의미가 있습니다. 권한 오류·잘못된 입력처럼 다시 해도 같은 오류는 재시도하지 말고 바로 보고해야 합니다."
   },
   {
@@ -6061,6 +6483,25 @@
         "ko": "워크플로가 `ANTHROPIC_API_KEY` 를 시크릿으로 저장했지만 단계에 노출하지 않아, CLI가 타임아웃까지 인증을 반복 재시도했다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "pose",
+          "ko": "놓다"
+        }
+      ],
+      "origin": "고대 프랑스어 exposer (밖에 내놓다)",
+      "story": "안에 있던 기능을 밖에(ex) 내놓아(pose) 쓰게 한다 → 노출하다, 제공하다",
+      "family": [
+        "compose",
+        "propose",
+        "impose"
+      ]
+    },
     "note": "안에 있던 기능·데이터를 **밖에서 쓸 수 있게 열어 두다, 노출하다** 라는 뜻입니다. API·MCP 서버가 어떤 도구·리소스를 **제공한다**고 할 때 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> **Expose** the schema catalog as an MCP resource that the agent reads once upfront, instead of probing with repeated exploratory tool calls.\r\n> 스키마 카탈로그를 MCP 리소스로 **노출해** 에이전트가 처음에 한 번 읽게 하고, 반복적인 탐색용 도구 호출로 더듬어 찾지 않게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **expose A as B** : A를 B 형태로 제공하다\r\n- **expose an endpoint / tool** : 엔드포인트·도구를 공개하다\r\n- **exposure** (명) 노출 — *data exposure* 데이터 유출 위험\r\n\r\n## 시험 포인트\r\n에이전트가 목록·카탈로그 같은 **읽기용 정보**를 찾으려고 도구를 여러 번 호출한다면, 그 정보를 **MCP 리소스로 노출해** 미리 읽게 하는 것이 정답 쪽입니다. 도구는 동작을, 리소스는 읽을 거리를 제공합니다."
   },
   {
@@ -6114,7 +6555,27 @@
         "sense": "(감정·생각을) 표현하다, 나타내다",
         "ko": "의료 예약 어시스턴트는 다음 에스컬레이션 정책을 따릅니다. 요청이 어시스턴트의 처리 범위 안이고 환자가 직원을 요청하지 않았다면, 표현된 불만을 인정하고, 요청을 직접 완료하며, 직원 연결은 필수가 아닌 선택지로 제안하고, 필수 에스컬레이션은 완료할 수 없는 요청, 임상적 판단이 필요한 경우, 사람에 대한 명시적 요청에만 둡니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "press",
+          "ko": "누르다"
+        }
+      ],
+      "origin": "라틴어 expressus (짜낸, 분명한)",
+      "story": "속마음을 밖으로(ex) 꾹 눌러(press) 짜낸다 → 표현하다, 나타내다",
+      "family": [
+        "press",
+        "impress",
+        "compress",
+        "depress"
+      ]
+    }
   },
   {
     "id": "expressly",
@@ -6156,7 +6617,30 @@
         "sense": "명시적으로, 분명히",
         "ko": "잘못 설정될 수 있는 별도 불리언 플래그에 의존하는 대신, `process_refund` 도구 호출 파라미터에 포함된 명시적 확인 결과를 PreToolUse 훅이 검사해 사람 검토가 분명히 통과했는지 확인하도록 바꾼다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "press",
+          "ko": "누르다"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 expressus (짜낸, 분명한)",
+      "story": "꾹 눌러(press) 밖으로(ex) 또렷이 찍어 낸 듯 → 명시적으로, 분명히",
+      "family": [
+        "impress",
+        "compress",
+        "pressure"
+      ]
+    }
   },
   {
     "id": "extend",

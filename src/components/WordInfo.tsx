@@ -84,12 +84,12 @@ export function MemoryAid({ w, linkFamily = false }: { w: Word; linkFamily?: boo
               ))}
             </div>
           )}
-          {m.story && <p className="text-[15px] leading-relaxed text-ink">{m.story}</p>}
+          {m.story && <p className="break-keep text-[15px] leading-relaxed text-ink">{m.story}</p>}
           {m.origin && <p className="text-[12.5px] text-muted">{m.origin}</p>}
         </div>
       )}
       {m.hook && (
-        <p className={`flex items-start gap-2 text-[14.5px] leading-relaxed text-ink ${hasEtym ? 'border-t border-line pt-3' : ''}`}>
+        <p className={`flex items-start gap-2 break-keep text-[14.5px] leading-relaxed text-ink ${hasEtym ? 'border-t border-line pt-3' : ''}`}>
           <Lightbulb size={16} className="mt-[3px] shrink-0 text-warning" aria-hidden />
           <span>
             <span className="sr-only">발음 연상: </span>

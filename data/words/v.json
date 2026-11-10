@@ -70,6 +70,16 @@
         "ko": "컨텍스트 창이 거의 차서 모델이 사실을 더 모호하게 환각했다"
       }
     ],
+    "memory": {
+      "origin": "라틴어 vagus (떠도는, 정처 없는)",
+      "story": "뜻이 정처 없이 떠돌아(vag) 딱 잡히지 않는 → 모호한, 막연한",
+      "hook": "베이그 → '베일'에 가린 듯 흐릿 → 모호한",
+      "family": [
+        "vagabond",
+        "vagrant",
+        "extravagant"
+      ]
+    },
     "note": "내용이 **흐릿하고 구체성이 없어** 정확한 정보를 알 수 없는 상태입니다.\r\n\r\n## 문제 속 쓰임\r\n> These details were stated 20+ turns ago and got condensed into **vague** summaries like \"discussed promotional pricing.\"\r\n> 이 세부 내용은 20턴도 더 전에 나왔고, \"프로모션 가격 논의\" 같은 **모호한** 요약으로 압축되었다.\r\n\r\n## 함께 쓰는 표현\r\n- **vague instructions / requirements** : 막연한 지시 / 요구사항\r\n- **vaguely** (부) 어렴풋이, 막연하게\r\n\r\n## 비교\r\n- **vague** — 구체적이지 않아 *흐릿한* (예: \"가격을 논의함\")\r\n- **ambiguous** — 해석이 *둘 이상으로 갈리는*\r\n\r\n## 시험 포인트\r\n\"정확하고 최신인지 확인하라\" 같은 **막연한 지시**가 들쭉날쭉한 결과의 원인이라면, 무엇을 문제로 볼지 구체적인 기준을 명시하는 선택지가 정답 방향입니다."
   },
   {
@@ -351,7 +361,26 @@
         "sense": "사라지다, 자취를 감추다",
         "ko": "고객들이 결제된 주문 일부가 흔적 없이 사라진다고 신고하는데, 시스템의 어느 부분이 주문을 떨어뜨리는지 아무도 모릅니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "van",
+          "ko": "텅 빈"
+        },
+        {
+          "part": "-ish",
+          "ko": "동사 어미"
+        }
+      ],
+      "origin": "라틴어 evanescere (사라지다)",
+      "story": "있던 자리가 텅 비어(van) 버린다 → 사라지다, 자취를 감추다",
+      "family": [
+        "vain",
+        "vanity",
+        "evanescent"
+      ]
+    }
   },
   {
     "id": "variable",
@@ -796,7 +825,30 @@
         "sense": "말로, 구두로",
         "ko": "스크래치패드 파일을 쓰지 않고, 각 서브에이전트가 최종 응답에서 말로만 발견을 보고한다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "verb",
+          "ko": "말"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 verbum (말, 단어)",
+      "story": "글이 아니라 말(verb)로(-ally) 직접 → 말로, 구두로",
+      "family": [
+        "verb",
+        "verbatim",
+        "proverb"
+      ]
+    }
   },
   {
     "id": "verbatim",
@@ -869,6 +921,25 @@
         "ko": "주문 id, 금액, 날짜를 담은 영구적인 케이스 사실(case-facts) 블록을 요약 밖에 따로 두고, 매 턴 원문 그대로 다시 주입한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "verb",
+          "ko": "말, 단어"
+        },
+        {
+          "part": "-atim",
+          "ko": "~씩, ~대로"
+        }
+      ],
+      "origin": "중세 라틴어 verbatim (단어 하나하나대로)",
+      "story": "단어(verb) 하나하나 그대로 옮긴다 → 글자 그대로, 원문 그대로",
+      "family": [
+        "verb",
+        "verbal",
+        "proverb"
+      ]
+    },
     "note": "바꾸거나 요약하지 않고 **원문 그대로** 옮기는 것입니다.\r\n\r\n## 문제 속 쓰임\r\n> ...older turns are summarized while recent ones remain **verbatim**.\r\n> 오래된 대화는 요약하고, 최근 대화는 **원문 그대로** 둔다.\r\n\r\n## 시험 포인트\r\n요약 과정에서 숫자·날짜·고객이 말한 조건처럼 **틀리면 안 되는 정보는 verbatim 으로 보존**하라는 선택지가 자주 나옵니다.\r\n\r\n## 비슷한 말\r\n- **word for word**, **exactly as written**"
   },
   {
@@ -945,6 +1016,26 @@
         "ko": "1단계에서 Claude가 수백 개의 호출 위치를 나열하는 장황한 출력을 만든다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "verb",
+          "ko": "말"
+        },
+        {
+          "part": "-ose",
+          "ko": "가득한"
+        }
+      ],
+      "origin": "라틴어 verbosus (말이 많은)",
+      "story": "말(verb)이 넘치도록 가득한(-ose) → 장황한, 출력이 지나치게 많은",
+      "hook": "버보스 → 혼자 말 많은 '보스' → 장황한",
+      "family": [
+        "verb",
+        "verbal",
+        "proverb"
+      ]
+    },
     "note": "필요 이상으로 **길고 자세한** 글·출력·로그를 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> During Phase 1, Claude generates **verbose** output listing hundreds of call sites.\r\n> 1단계에서 Claude가 수백 개의 호출 위치를 나열하는 **장황한** 출력을 만든다.\r\n\r\n## 시험 포인트\r\n*verbose output* 이 메인 대화의 컨텍스트를 채우는 상황이면, **서브에이전트로 격리하고 요약만 돌려받는** 선택지가 자주 정답입니다.\r\n\r\n## 함께 쓰는 표현\r\n- **verbose mode / logging** : 자세한 로그를 출력하는 모드\r\n- **verbosity** (명) 장황함, 출력의 상세도"
   },
   {
@@ -1019,6 +1110,26 @@
         "ko": "같은 세션이 테스트를 세 번 리뷰하게 하고, 테스트별 판정을 다수결로 정한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "ver",
+          "ko": "참된"
+        },
+        {
+          "part": "dict",
+          "ko": "말하다"
+        }
+      ],
+      "origin": "중세 라틴어 veredictum (참되게 말한 것)",
+      "story": "이것이 참(ver)이라고 딱 말해(dict) 내리는 결론 → 판정, 판단 결과",
+      "family": [
+        "verify",
+        "dictate",
+        "predict",
+        "very"
+      ]
+    },
     "note": "검토 끝에 내린 **최종 판정·결론**입니다. 원래는 재판의 \"평결\"이고, 코드 리뷰·평가에서는 \"통과 / 지적\" 같은 판정 결과를 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> Write an exhaustive list in CLAUDE.md of every code pattern and the correct **verdict** for each one\r\n> CLAUDE.md에 모든 코드 패턴과 각각의 올바른 **판정**을 망라한 목록을 작성한다\r\n\r\n## 함께 쓰는 표현\r\n- **reach a verdict** : 판정을 내리다\r\n- **take a majority vote on the verdict** : 판정을 다수결로 정하다\r\n\r\n## 시험 포인트\r\n모호한 사례에서 판정이 들쭉날쭉할 때 모든 경우를 나열하는 목록은 오답입니다. **판정 이유를 담은 대표 few-shot 예시 2~4개**가 정답입니다."
   },
   {
@@ -1308,6 +1419,17 @@
         "ko": "마이그레이션 완료 파일과 대기 파일을 기록한 scratchpad 매니페스트를 두고 파일마다 갱신해, 컨텍스트가 커져도 진행 상황이 유지되게 한다"
       }
     ],
+    "memory": {
+      "origin": "라틴어 versus (~쪽으로 향하여)",
+      "story": "몸을 상대 쪽으로 돌려(vers) 마주 선다 → ~ 대(對), ~와 비교하여",
+      "hook": "버서스 → 'A vs B' 대결 포스터 → ~ 대(對)",
+      "family": [
+        "reverse",
+        "convert",
+        "version",
+        "adverse"
+      ]
+    },
     "note": "두 가지를 **맞세워 비교하거나 어느 쪽인지 가르는** 맥락에서 씁니다. 줄여서 *vs* 또는 *vs.* 로 많이 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> ...few-shot examples demonstrating when to escalate **versus** resolve autonomously.\r\n> 언제 에스컬레이션할지, **아니면** 자율적으로 해결할지 보여 주는 few-shot 예시.\r\n\r\n## 함께 쓰는 표현\r\n- **when to A versus B** : 언제 A를 하고 언제 B를 할지\r\n- **A versus B** : A 대 B (비교·대결)\r\n\r\n## 시험 포인트\r\n정답 선택지에 \"when to use it **versus** similar tools\", \"when to escalate **versus** resolve\"처럼 **두 선택 사이의 경계**를 보여 주는 표현이 자주 나옵니다. 모델이 헷갈리는 지점은 대개 그 경계이기 때문입니다."
   },
   {
@@ -1440,6 +1562,27 @@
         "ko": "최소한으로 필요한(minimum viable) 관측성 구현은?"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "vi",
+          "ko": "삶, 살다"
+        },
+        {
+          "part": "-able",
+          "ko": "~할 수 있는"
+        }
+      ],
+      "origin": "프랑스어 viable (살아갈 수 있는)",
+      "story": "혼자 살아(vi) 버틸 수 있는(-able) 최소한 → 실행 가능한, 꼭 필요한 것만 갖춘",
+      "hook": "바이어블 → '바이어(buyer)'가 살 만한 → 쓸 만한",
+      "family": [
+        "vital",
+        "vitamin",
+        "revive",
+        "survive"
+      ]
+    },
     "note": "**실제로 될 만한, 제 역할을 할 수 있는** 것입니다. *minimum viable* 은 \"꼭 필요한 것만 갖춘 최소한의\"라는 뜻으로 자주 쓰입니다.\r\n\r\n## 문제 속 쓰임\r\n> What is the minimum **viable** observability implementation?\r\n> **최소한으로 필요한(minimum viable)** 관측성 구현은?\r\n\r\n## 함께 쓰는 표현\r\n- **minimum viable product (MVP)** : 최소 기능 제품\r\n- **viable option / alternative** : 현실성 있는 선택지·대안\r\n- **viability** (명) 실행 가능성\r\n\r\n## 시험 포인트\r\n관측성의 \"최소한\"은 로그 몇 줄이 아니라, 단계마다 **요청 내용·`stop_reason`·도구 호출 입출력·최종 응답**을 세션 상관 ID 와 함께 남기는 **구조화된 추적 로그**입니다."
   },
   {
@@ -1480,6 +1623,25 @@
         "ko": "테스트에서 모델이 `fetch_account_details` 를 불러야 할 때 `get_user_info` 를 부르고, 그 반대도 일어납니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "vice",
+          "ko": "자리, 차례"
+        },
+        {
+          "part": "versa",
+          "ko": "돌려진"
+        }
+      ],
+      "origin": "라틴어 vice versa (자리가 뒤바뀌어)",
+      "story": "서로 자리(vice)를 돌려(versa) 바꿔도 똑같다 → 반대도 마찬가지로",
+      "family": [
+        "reverse",
+        "version",
+        "vice-president"
+      ]
+    },
     "note": "앞에서 말한 관계를 **뒤집어도 마찬가지**라는 뜻입니다. \"A가 B를, 그리고 B가 A를\"을 짧게 줄여 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> In testing, the model calls `get_user_info` when it should call `fetch_account_details` and **vice versa**.\r\n> 테스트에서 모델이 `fetch_account_details` 를 불러야 할 때 `get_user_info` 를 부르고, **그 반대도** 일어난다.\r\n\r\n## 함께 쓰는 표현\r\n- **and vice versa** : 그리고 그 반대도 마찬가지\r\n\r\n## 시험 포인트\r\n두 도구를 서로 바꿔 부르면, 각 설명에 **언제 부르는지와 무엇을 돌려주는지(대상 엔터티·용도)** 를 분명히 적어 구분하는 보기가 정답입니다."
   },
   {

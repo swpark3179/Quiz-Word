@@ -154,7 +154,11 @@ export function MemoryAid({ w, linkFamily = false }: { w: Word; linkFamily?: boo
               ))}
             </View>
           )}
-          {!!m.story && <Text style={[type.callout, { color: c.text, lineHeight: 23 }]}>{m.story}</Text>}
+          {!!m.story && (
+            <Text lineBreakStrategyIOS="hangul-word" style={[type.callout, { color: c.text, lineHeight: 23 }]}>
+              {m.story}
+            </Text>
+          )}
           {!!m.origin && <Text style={[type.caption, { color: c.muted }]}>{m.origin}</Text>}
         </View>
       )}
@@ -163,7 +167,9 @@ export function MemoryAid({ w, linkFamily = false }: { w: Word; linkFamily?: boo
           <View style={{ marginTop: 2 }}>
             <Icon name="lightbulb.fill" size={15} color={c.warning} />
           </View>
-          <Text style={[type.subhead, { color: c.text, lineHeight: 21, flex: 1 }]}>{m.hook}</Text>
+          <Text lineBreakStrategyIOS="hangul-word" style={[type.subhead, { color: c.text, lineHeight: 21, flex: 1 }]}>
+            {m.hook}
+          </Text>
         </View>
       )}
       {!!m.family?.length && (
