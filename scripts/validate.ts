@@ -3,7 +3,8 @@
  * 직접 단어를 추가·수정한 뒤 실행한다. 오류가 있으면 종료 코드 1.
  *
  * 검사: 필수 필드, 품사·분류 허용값, id 형식·중복, 파일 위치, 같은 표현이 두 단어에 등록됐는지,
- *       예문 속 강조 표기, 문맥 뜻이 senses 에 있는지, (파이프라인 작업 폴더가 있으면) ccar-f 원형 누락
+ *       예문 속 강조 표기, 문맥 뜻이 senses 에 있는지, 외우기(memory) 형식,
+ *       (파이프라인 작업 폴더가 있으면) ccar-f 원형 누락
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -58,6 +59,25 @@ for (const file of fs.readdirSync(DIR).filter((f) => f.endsWith('.json')).sort()
       if (!c.en.toLowerCase().includes(c.surface.toLowerCase())) errors.push(`${where}: 예문에 "${c.surface}" 없음`);
       if (!w.senses.some((s) => s.ko === c.sense)) errors.push(`${where}: 문맥 뜻 "${c.sense}" 가 senses 에 없음`);
       if (!sources.has(c.src)) errors.push(`${where}: 알 수 없는 출처 "${c.src}"`);
+    }
+
+    if (r.memory !== undefined) {
+      const m = r.memory;
+      if (!m || typeof m !== 'object' || Array.isArray(m)) errors.push(`${where}: memory 는 객체`);
+      else {
+        if (!w.memory) errors.push(`${where}: memory 에 story(어원 장면)나 hook(발음 연상) 중 하나는 있어야 함`);
+        for (const k of ['origin', 'story', 'hook'] as const) {
+          if (m[k] !== undefined && typeof m[k] !== 'string') errors.push(`${where}: memory.${k} 는 문자열`);
+        }
+        if (m.roots !== undefined && !Array.isArray(m.roots)) errors.push(`${where}: memory.roots 는 배열`);
+        else for (const x of m.roots ?? []) if (!x?.part?.trim() || !x.ko?.trim()) errors.push(`${where}: memory.roots 항목에 part·ko 가 다 있어야 함`);
+        if (m.family !== undefined && !Array.isArray(m.family)) errors.push(`${where}: memory.family 는 배열`);
+        else if (m.family?.some((f) => f.toLowerCase() === w.word.toLowerCase())) warns.push(`${where}: memory.family 에 자기 자신이 있음`);
+        for (const [k, max] of [['story', 80], ['hook', 60], ['origin', 50]] as const) {
+          const v = w.memory?.[k];
+          if (v && v.length > max) warns.push(`${where}: memory.${k} 가 김 (${v.length}자)`);
+        }
+      }
     }
 
     for (const s of [w.word, ...(w.forms ?? [])].map((x) => x.toLowerCase())) {

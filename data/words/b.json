@@ -127,7 +127,21 @@
         "sense": "(대화·의견을) 주고받기",
         "ko": "팀은 이 탐색 과정을 메인 대화와 분리하고, 최종 권장안만 사용자에게 돌아오게 하려 합니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "back",
+          "ko": "뒤로"
+        },
+        {
+          "part": "forth",
+          "ko": "앞으로"
+        }
+      ],
+      "story": "공이 뒤로(back) 앞으로(forth) 오가듯 말이 오간다 → 주고받기",
+      "hook": "백 앤 포스 → 탁구처럼 '백' 갔다 '포' 왔다 주고받기"
+    }
   },
   {
     "id": "back-off",
@@ -801,7 +815,27 @@
         "sense": "근거, 기반",
         "ko": "매출을 $440 million(두 수치의 평균)으로 쓰고, 두 출처를 그 근거로 인용한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "bas",
+          "ko": "밟는 곳, 받침"
+        },
+        {
+          "part": "-is",
+          "ko": "명사"
+        }
+      ],
+      "origin": "그리스어 basis (발 딛는 곳)",
+      "story": "주장이 발을 딛고 서는 받침(basis) → 근거, 기반",
+      "hook": "베이시스 → 베이스(base), 바닥에 깔린 근거",
+      "family": [
+        "base",
+        "basic",
+        "basement"
+      ]
+    }
   },
   {
     "id": "batch",
@@ -986,7 +1020,27 @@
         "sense": "관련, 영향",
         "ko": "합치기는 큰 MCP 도구 라이브러리에서 토큰을 아끼기 위한 조치일 뿐, Claude가 도구를 고르는 방식과는 상관이 없다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "bear",
+          "ko": "지니다, 나르다"
+        },
+        {
+          "part": "-ing",
+          "ko": "명사"
+        }
+      ],
+      "origin": "고대 영어 beran (나르다, 지니다)",
+      "story": "그 사실이 결론에 무게를 싣는다(bear) → 관련, 영향 (no bearing: 무관)",
+      "hook": "베어링 → 기계 베어링처럼 맞물려 돌아가는 → 관련, 영향",
+      "family": [
+        "bear",
+        "burden",
+        "unbearable"
+      ]
+    }
   },
   {
     "id": "become",
@@ -1263,7 +1317,21 @@
         "sense": "(on ~'s behalf) ~을 대신하여",
         "ko": "모든 서브에이전트에 공유 15개 도구 세트를 유지하되, `tool_choice`를 `{\"type\": \"none\"}`으로 바꿔 서브에이전트가 직접 도구를 부르지 못하게 하고 코디네이터가 대신 호출하게 한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "be-",
+          "ko": "~에 (by)"
+        },
+        {
+          "part": "half",
+          "ko": "쪽, 편"
+        }
+      ],
+      "origin": "중세 영어 be halve (~의 편에서)",
+      "story": "남의 쪽(half=편)에 서서 대신 나선다 → ~을 대신하여"
+    }
   },
   {
     "id": "behavior",
@@ -1460,7 +1528,21 @@
         "sense": "(~에) 속하다, 있어야 맞다",
         "ko": "사용자 요청의 표현이 너무 모호해서 두 도구를 구분할 수 없으므로, 고칠 곳은 도구 정의가 아니라 사용자 프롬프트다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "be-",
+          "ko": "(강조)"
+        },
+        {
+          "part": "long",
+          "ko": "딸리다, 속하다"
+        }
+      ],
+      "origin": "중세 영어 belongen (~에 딸리다)",
+      "story": "원래 그 자리에 딸려(long) 있는 물건 → 속하다, 있어야 맞다"
+    }
   },
   {
     "id": "below",
@@ -1619,7 +1701,26 @@
         "sense": "~ 아래에, 밑에",
         "ko": "기준을 심각도순 글머리표 목록 하나로 합치고, 각 항목 끝 괄호에 범주 이름을 달고 예시는 그 아래에 둔다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "be-",
+          "ko": "~에"
+        },
+        {
+          "part": "neath",
+          "ko": "아래"
+        }
+      ],
+      "origin": "고대 영어 beneoþan (아래쪽에)",
+      "story": "바닥 아래(neath)에 깔려 있는 → ~ 아래에, 밑에",
+      "hook": "비니스 → 비니(모자) 밑에 숨겨 → 아래에",
+      "family": [
+        "underneath",
+        "nether"
+      ]
+    }
   },
   {
     "id": "benefit",
@@ -1859,6 +1960,11 @@
         "ko": "세션은 자기 결과물 쪽으로 편향되므로, 별도의 독립 Claude 인스턴스가 테스트를 리뷰하게 한다"
       }
     ],
+    "memory": {
+      "origin": "프랑스어 biais (비스듬한)",
+      "story": "무게가 한쪽에 쏠린 공이 비스듬히(biais) 휘어 간다 → 편향, 치우친",
+      "hook": "바이어스 → 바이어(구매자) 편만 드는 → 편향된"
+    },
     "note": "판단이 **한쪽으로 치우치는 경향**입니다. *biased toward* ~ 는 \"~ 쪽으로 편향된\"입니다.\r\n\r\n## 문제 속 쓰임\r\n> Have a separate, independent Claude instance review the tests, since a session is **biased** toward its own output\r\n> 세션은 자기 결과물 쪽으로 **편향되므로**, 별도의 독립 Claude 인스턴스가 테스트를 리뷰하게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **biased toward** ~ : ~ 쪽으로 치우친\r\n- **self-preference bias** : 자기가 만든 결과물을 더 좋게 평가하는 편향\r\n- **unbiased** (형) 치우치지 않은\r\n\r\n## 시험 포인트\r\n같은 세션이 **만들고 리뷰까지** 하면 자기 결과물에 관대해집니다. 컨텍스트를 공유하지 않는 **독립 인스턴스**의 리뷰가 정답입니다."
   },
   {
@@ -1899,7 +2005,30 @@
         "sense": "참고 문헌 목록",
         "ko": "섞인 서술은 그대로 두고 끝에 모든 출처의 참고문헌을 붙여, 독자가 근거의 강도를 직접 확인하게 한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "biblio",
+          "ko": "책"
+        },
+        {
+          "part": "graph",
+          "ko": "쓰다"
+        },
+        {
+          "part": "-y",
+          "ko": "명사"
+        }
+      ],
+      "origin": "그리스어 bibliographia (책 쓰기)",
+      "story": "참고한 책(biblio)들을 죽 적어(graph) 둔 목록 → 참고 문헌 목록",
+      "family": [
+        "bible",
+        "biography",
+        "paragraph"
+      ]
+    }
   },
   {
     "id": "bidirectional",
@@ -2039,7 +2168,25 @@
         "sense": "선하증권(화물 운송 증서)",
         "ko": "모든 선하증권의 weight 추출을 직원 수기 입력으로 바꾸고, 단위 유무와 관계없이 이 필드에는 모델을 쓰지 않는다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "bill",
+          "ko": "증서, 문서"
+        },
+        {
+          "part": "of",
+          "ko": "~의"
+        },
+        {
+          "part": "lading",
+          "ko": "짐 싣기"
+        }
+      ],
+      "origin": "lading ← 고대 영어 hladan (짐을 싣다)",
+      "story": "배에 짐을 실었다(lading)고 써 준 증서(bill) → 선하증권"
+    }
   },
   {
     "id": "billing",
@@ -2364,6 +2511,11 @@
         "ko": "보고서가 두 출처를 거의 같은 비중으로 반영하도록, 두 수치를 평균 내 하나의 혼합 시장 규모 수치로 만든다"
       }
     ],
+    "memory": {
+      "origin": "고대 노르드어 blanda (섞다)",
+      "story": "원두 여러 종을 섞은 블렌드 커피처럼 → 섞다, 혼합된",
+      "hook": "블렌드 → 블렌더(믹서)로 윙 갈아 섞다"
+    },
     "note": "여러 가지를 **섞어 하나로 만드는** 것입니다. *blended* 는 \"섞인, 혼합된\" — 문제에서는 서로 다른 두 출처의 수치를 평균 내 만든 **혼합 수치**를 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> Average the two figures into a single **blended** market-size number so the report reflects both sources about equally.\r\n> 보고서가 두 출처를 거의 같은 비중으로 반영하도록, 두 수치를 평균 내 하나의 **혼합** 시장 규모 수치로 만든다.\r\n\r\n## 함께 쓰는 표현\r\n- **blend A with B** : A와 B를 섞다\r\n- **a blend of** ~ : ~이 섞인 것\r\n\r\n## 시험 포인트\r\n출처마다 수치가 다를 때 평균 내 **섞어 버리는** 보기는 오답입니다. 먼저 시점·출처 차이인지 보고, 두 값을 **출처·발행 날짜 주석과 함께 둘 다 보존**하는 보기가 정답입니다."
   },
   {
@@ -2404,7 +2556,21 @@
         "sense": "사각지대, 맹점",
         "ko": "두 신호가 동시에 나올 때만 이관해, 부정 감정과 낮은 확신도가 서로의 사각지대를 메우게 한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "blind",
+          "ko": "눈먼, 안 보이는"
+        },
+        {
+          "part": "spot",
+          "ko": "지점"
+        }
+      ],
+      "story": "사이드미러에 안 보이는(blind) 지점(spot) → 사각지대, 맹점",
+      "hook": "블라인드 스팟 → 블라인드 친 듯 안 보이는 곳"
+    }
   },
   {
     "id": "blob",
@@ -2691,6 +2857,20 @@
         "ko": "원본 페이지는 계속 넘기되, 종합 단계에 중요한 부분에 집중하고 상용구는 무시하라는 프롬프트 지시를 추가한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "boiler",
+          "ko": "보일러"
+        },
+        {
+          "part": "plate",
+          "ko": "철판, 인쇄판"
+        }
+      ],
+      "story": "보일러 철판(plate)처럼 찍어 돌린 똑같은 인쇄판 → 상용구, 판에 박힌 내용",
+      "hook": "보일러플레이트 → 보일러 철판처럼 어디나 똑같은 틀"
+    },
     "note": "어느 문서에나 똑같이 들어가는 **판에 박힌 내용**입니다. 웹 페이지의 메뉴·머리글·바닥글·저작권 문구처럼 정보 가치가 거의 없는 부분, 코드에서는 매번 되풀이해 쓰는 틀 코드를 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> Keep passing the raw pages but add a prompt instruction telling synthesis to focus on the important parts and ignore **boilerplate**.\r\n> 원본 페이지는 계속 넘기되, 종합 단계에 중요한 부분에 집중하고 **상용구**는 무시하라는 프롬프트 지시를 추가한다.\r\n\r\n## 함께 쓰는 표현\r\n- **boilerplate code** : 반복되는 틀 코드\r\n- **strip boilerplate** : 상용구를 걷어 내다\r\n\r\n## 시험 포인트\r\n원본을 그대로 넘기면서 \"상용구는 무시하라\"고 **지시만 하는** 보기는 오답입니다. 넘기기 **전에** 관련 발견 사항만 추려 전달하고, 핵심 요약을 앞에 두는 보기가 정답입니다."
   },
   {
@@ -3254,6 +3434,20 @@
         "ko": "세션을 포크해 갈라지는 작업 갈래로 분기하고, 포크된 기록 사본에서 리팩터링을 이어 간다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "branch",
+          "ko": "나뭇가지, 갈래"
+        },
+        {
+          "part": "off",
+          "ko": "떨어져 나가"
+        }
+      ],
+      "story": "큰 줄기에서 가지(branch)가 떨어져(off) 뻗어 나간다 → 갈라져 나가다",
+      "hook": "브랜치 오프 → git 브랜치를 따서 따로 갈라지다"
+    },
     "note": "본줄기에서 **갈라져 나와 다른 갈래로 진행하는** 것입니다. 세션에서는 포크(fork)로 지금까지의 기록을 복사한 뒤 다른 방향을 따로 시험할 때 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Fork the session to **branch off** a divergent line of work and continue the refactor in the forked copy of the history.\r\n> 세션을 포크해 갈라지는 작업 갈래로 **분기하고**, 포크된 기록 사본에서 리팩터링을 이어 간다.\r\n\r\n## 함께 쓰는 표현\r\n- **branch off from** ~ : ~에서 갈라져 나오다\r\n- **fork a session** : 세션을 갈래로 복제하다\r\n\r\n## 시험 포인트\r\n포크는 **기록 전체를 복사**하므로 부풀어 오른 컨텍스트를 줄이지 못합니다. 같은 작업을 계속하는데 기록만 길어졌다면 `/compact`, 같은 기반에서 **다른 방향**을 따로 시험할 때 포크가 정답입니다."
   },
   {
@@ -3472,7 +3666,27 @@
         "sense": "간결함",
         "ko": "요약 단계마다 간결함을 위해 정밀도를 희생해, 정확한 금액과 기한이 모호한 표현으로 압축됐다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "brev",
+          "ko": "짧은"
+        },
+        {
+          "part": "-ity",
+          "ko": "~함 (명사)"
+        }
+      ],
+      "origin": "라틴어 brevitas (짧음)",
+      "story": "말을 짧게(brevis) 깎아 낸 상태 → 간결함",
+      "hook": "브레버티 → 브리프(brief)하게 짧게 → 간결함",
+      "family": [
+        "brief",
+        "abbreviate",
+        "abridge"
+      ]
+    }
   },
   {
     "id": "brief",
@@ -3559,6 +3773,16 @@
         "ko": "시스템 프롬프트에는 \"도구를 호출하기 전에 어떤 조항이 모호해 보이는지 간단히 설명하라\"는 지시도 있습니다."
       }
     ],
+    "memory": {
+      "origin": "라틴어 brevis (짧은)",
+      "story": "짧게(brevis) 요점만 적어 건네는 문서 → 요약 보고서, 과제 설명",
+      "hook": "브리프 → 브리핑: 짧게 요점만 전달",
+      "family": [
+        "brevity",
+        "abbreviate",
+        "debrief"
+      ]
+    },
     "note": "1. **(작업) 의뢰, 과제 설명** — 무엇을 조사·작성할지 적은 요청 (*research brief*)\r\n2. **요약 보고서** — 핵심만 짧게 정리한 문서 (*executive brief*)\r\n3. **(형) 짧은, 간단한** — *a brief description* 짧은 설명\r\n\r\n## 문제 속 쓰임\r\n> For open-ended **briefs** like 'assess the competitive landscape for X', the coordinator runs a fixed three-step chain...\r\n> 'X의 경쟁 구도를 평가하라' 같은 개방형 **요청**에 대해 코디네이터는 고정된 3단계 체인을 실행합니다.\r\n> ...two report variants from the same evidence — a one-page executive **brief** and a technical deep-dive...\r\n> ...같은 증거로 두 가지 보고서, 즉 한 페이지짜리 임원 **요약본**과 기술 심층 분석본을...\r\n\r\n## 함께 쓰는 표현\r\n- **executive brief** : 임원용 요약 보고서\r\n- **briefly** (부) 간단히, 잠깐 · **briefing** (명) 상황 설명, 브리핑"
   },
   {
@@ -3750,6 +3974,20 @@
         "ko": "더 큰 thinking 예산으로 확장 사고(extended thinking)를 켜서, 모델이 환불 금액을 인용하기 전에 더 신중하게 추론하게 한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "budg",
+          "ko": "가죽 주머니"
+        },
+        {
+          "part": "-et",
+          "ko": "작은"
+        }
+      ],
+      "origin": "고대 프랑스어 bougette (작은 가죽 주머니)",
+      "story": "쓸 돈만 넣어 둔 작은 가죽 주머니(bougette) → 예산, 사용 한도"
+    },
     "note": "쓸 수 있도록 **미리 정해 둔 한도(예산)** 입니다. 돈뿐 아니라 토큰·시간·호출 횟수에도 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Enable extended thinking with a larger thinking **budget** so the model reasons more carefully before quoting any refund figure.\r\n> 더 큰 thinking **예산**으로 확장 사고(extended thinking)를 켜서, 모델이 환불 금액을 인용하기 전에 더 신중하게 추론하게 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **thinking budget** : 확장 사고에 쓸 수 있는 토큰 한도 (`budget_tokens`)\r\n- **token budget** : 토큰 예산\r\n- **within / over budget** : 예산 안 / 예산 초과\r\n\r\n## 시험 포인트\r\n요약 과정에서 금액·날짜가 **이미 틀어진** 문제는 thinking 예산을 늘려도 풀리지 않습니다. 핵심 사실을 요약 밖 블록에 두고 그대로 다시 주입하는 것이 정답입니다."
   },
   {
@@ -4068,7 +4306,22 @@
         "sense": "글머리 기호, 글머리표 항목",
         "ko": "기준을 심각도순 글머리표 목록 하나로 합치고, 각 항목 끝 괄호에 범주 이름을 달고 예시는 그 아래에 둔다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "bull",
+          "ko": "공, 둥근 것"
+        },
+        {
+          "part": "-et",
+          "ko": "작은"
+        }
+      ],
+      "origin": "프랑스어 boulette (작은 공)",
+      "story": "줄 앞에 박힌 작은 공(boulette) 같은 점 • → 글머리 기호",
+      "hook": "불릿 → 총알 자국처럼 콕 찍힌 점 •"
+    }
   },
   {
     "id": "bulleted",
@@ -4104,7 +4357,21 @@
         "sense": "글머리 기호를 붙인",
         "ko": "기준을 심각도순 글머리표 목록 하나로 합치고, 각 항목 끝 괄호에 범주 이름을 달고 예시는 그 아래에 둔다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "bullet",
+          "ko": "글머리 점"
+        },
+        {
+          "part": "-ed",
+          "ko": "~을 붙인"
+        }
+      ],
+      "story": "항목마다 총알(bullet) 같은 점을 콕콕 박아 둔 → 글머리 기호를 붙인",
+      "hook": "불리티드 → 불릿(•) 달린 목록"
+    }
   },
   {
     "id": "burn",
@@ -4204,6 +4471,11 @@
         "ko": "종합 품질이 떨어졌고, 이제 전달된 내용의 중간에 묻힌 발견 사항을 놓칩니다(lost-in-the-middle)."
       }
     ],
+    "memory": {
+      "origin": "고대 영어 byrgan (묻다)",
+      "story": "중요한 한 줄을 긴 글 더미 속에 묻어 버린다 → 파묻히게 하다",
+      "hook": "베리 → '베리 딥(very deep)' 아주 깊이 파묻다"
+    },
     "note": "정보가 다른 많은 내용 사이에 **묻혀 잘 보이지 않게 된** 상태입니다. 수동형 *buried in* ~ 꼴로 자주 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Synthesis quality has dropped and it now misses findings **buried** in the middle of the passed-in content (lost-in-the-middle).\r\n> 종합 품질이 떨어졌고, 이제 전달된 내용의 중간에 **묻힌** 발견 사항을 놓칩니다(lost-in-the-middle).\r\n\r\n## 함께 쓰는 표현\r\n- **buried in** ~ : ~ 속에 묻힌 (*buried in the logs*)\r\n- **lost-in-the-middle** : 긴 입력의 중간 정보를 놓치는 현상\r\n\r\n## 시험 포인트\r\nlost-in-the-middle 은 용량이 아니라 **구성**의 문제입니다. 넘기기 전에 관련 내용만 다듬고 핵심 요약을 맨 앞에 두는 보기가 정답이며, 더 큰 컨텍스트 창은 오답입니다."
   },
   {
@@ -4353,6 +4625,20 @@
         "ko": "`Bash` 의 `sed` 전역 치환으로 바꿔 모든 위치를 다시 쓰고, `Edit` 도구는 완전히 우회한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "by-",
+          "ko": "옆으로, 곁으로"
+        },
+        {
+          "part": "pass",
+          "ko": "지나가다"
+        }
+      ],
+      "story": "막힌 길 옆(by)으로 돌아 지나간다(pass) → 우회하다, 건너뛰다",
+      "hook": "바이패스 → '바이(bye)~' 하고 패스! 건너뛰다"
+    },
     "note": "정해진 경로·절차를 **거치지 않고 옆으로 돌아가는** 것입니다. 설계 문제에서는 대개 **통제·검증 지점을 건너뛴다**는 부정적인 뉘앙스로 나옵니다.\r\n\r\n## 문제 속 쓰임\r\n> Each agent directly sends its findings to the report generation agent, **bypassing** the coordinator.\r\n> 각 에이전트가 코디네이터를 **거치지 않고** 보고서 생성 에이전트로 결과를 직접 보낸다.\r\n\r\n## 함께 쓰는 표현\r\n- **bypass the coordinator / a check** : 코디네이터·검사를 건너뛰다\r\n- **bypass a restriction** : 제한을 우회하다\r\n- **bypass** (명) 우회로\r\n\r\n## 시험 포인트\r\n허브 역할을 하는 코디네이터를 **bypass 하는 직접 통신** 선택지는 대개 오답입니다. 코디네이터를 거쳐야 모든 상호작용을 관찰하고, 오류를 일관되게 처리하고, 각 에이전트가 받을 정보를 통제할 수 있기 때문입니다."
   }
 ]

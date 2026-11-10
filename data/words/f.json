@@ -46,6 +46,21 @@
         "ko": "다운스트림 시스템은 이렇게 꾸며 낸 값을 실제 값으로 취급합니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "fabric",
+          "ko": "만든 것"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 fabricari (만들어 내다)",
+      "story": "장인(faber)이 없던 것을 뚝딱 만들어 낸다 → 지어내다, 날조하다",
+      "hook": "패브리케이트 → '패브릭(천)' 짜듯 이야기를 지어냄"
+    },
     "note": "사실이 아닌 것을 **그럴듯하게 지어내다, 꾸며 내다** 라는 뜻입니다. LLM 문맥에서는 원문에 없는 값을 **만들어 넣는 환각**을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> Downstream systems then treat the **fabricated** values as real.\r\n> 다운스트림 시스템은 이렇게 **꾸며 낸** 값을 실제 값으로 취급한다.\r\n\r\n## 함께 쓰는 표현\r\n- **fabricated value / citation** : 지어낸 값·인용\r\n- **fabrication** (명) 날조, 지어낸 것\r\n\r\n## 비슷한 말\r\n- **hallucinate** — (모델이) 없는 내용을 사실처럼 만들어 내다\r\n- **make up**, **invent** — 지어내다\r\n\r\n## 시험 포인트\r\n원문에 없는 필드를 모델이 **지어낸다면**, 스키마에서 그 필드를 **선택(optional)·null 허용**으로 바꿔 \"없음\"을 정상 답으로 낼 수 있게 하는 것이 정답입니다. 필수(required) 필드는 값을 억지로 채우게 만듭니다."
   },
   {
@@ -1720,7 +1735,26 @@
         "sense": "(기관에 내는) 제출 서류, 신고서",
         "ko": "공시 배치를 절반쯤 처리했을 때, 서브에이전트가 신뢰할 만한 두 문서가 같은 회사의 직원 수를 다르게 제시한다는 것을 발견합니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "file",
+          "ko": "서류철"
+        },
+        {
+          "part": "-ing",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 filum (실, 서류를 꿰던 줄)",
+      "story": "서류를 줄(fil)에 꿰어 철하듯 기관에 내는 문서 → 제출 서류",
+      "hook": "파일링 → 서류 '파일'을 기관에 내는 일",
+      "family": [
+        "profile",
+        "filament"
+      ]
+    }
   },
   {
     "id": "fill",
@@ -2293,6 +2327,20 @@
         "ko": "서브에이전트는 실패를 드러내는 대신, 파이프라인이 매끄럽게 이어지도록 빈 발견 목록과 'success' 상태를 반환합니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "find",
+          "ko": "찾다"
+        },
+        {
+          "part": "-ing",
+          "ko": "~한 것"
+        }
+      ],
+      "story": "조사하며 찾아낸(find) 것들 → 발견 사항, 지적 사항",
+      "hook": "파인딩 → 리뷰에서 '찾아낸(find)' 문제점 목록"
+    },
     "note": "조사·검토·분석을 해서 **알아낸 결과**입니다. 보통 복수형 *findings* 로 쓰며, 리서치에서는 **발견 사항**, 코드 리뷰에서는 리뷰가 찾아낸 **지적 사항**을 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> After turn 25, response quality degrades — the model starts forgetting earlier **findings** and repeating tool calls it already made.\r\n> 25턴 이후 응답 품질이 떨어져, 모델이 **앞서 찾은 내용**을 잊고 이미 했던 도구 호출을 반복한다.\r\n\r\n## 함께 쓰는 표현\r\n- **key findings** : 핵심 발견 사항\r\n- **security findings** : 보안 지적 사항\r\n- **pass findings to** ~ : 발견 사항을 ~에게 넘기다\r\n\r\n## 시험 포인트\r\n서브에이전트는 부모 대화를 물려받지 않으므로, 이전 **findings** 가 필요하면 **Task 프롬프트에 명시적으로** 넣어야 합니다. 컨텍스트 창을 키워 \"더 많이 남게\" 하는 보기는 오답입니다."
   },
   {
@@ -2575,7 +2623,17 @@
         "sense": "회사",
         "ko": "한 금융 회사가 도구 기반 스키마로 PDF 거래 내역서에서 거래 레코드를 추출하는데, 스키마에는 필수 amount 필드와 필수 transaction_type 필드가 있습니다."
       }
-    ]
+    ],
+    "memory": {
+      "origin": "스페인·이탈리아어 firma (서명)",
+      "story": "계약서에 단단히(firm) 서명(firma)하는 상호 → 회사",
+      "hook": "펌 → '로펌(law firm)' = 법률 회사",
+      "family": [
+        "confirm",
+        "affirm",
+        "infirmary"
+      ]
+    }
   },
   {
     "id": "first",
@@ -3072,6 +3130,20 @@
         "ko": "아키텍트가 어제 오후 간헐적으로 실패하는 결제 재시도 버그를 두 시간 동안 조사했고, 하루를 마치기 전에 세션 이름을 'payment-retry-bug'로 붙였습니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "flake",
+          "ko": "얇은 조각"
+        },
+        {
+          "part": "-y",
+          "ko": "~한 성질의"
+        }
+      ],
+      "story": "페인트가 얇은 조각(flake)으로 툭툭 떨어지듯 → 들쭉날쭉한, 불안정한",
+      "hook": "플레이키 → 콘'플레이크'처럼 바스러지는 테스트"
+    },
     "note": "코드가 바뀌지 않았는데도 **실행할 때마다 통과했다 실패했다 하는** 불안정한 상태입니다. *flaky test*(가끔 실패하는 테스트)처럼 CI 에서 자주 쓰는 말입니다.\r\n\r\n## 문제 속 쓰임\r\n> The gate is **flaky** because Claude phrases severe findings differently each run — \"severe issue,\" \"major bug,\" \"critical defect.\"\r\n> Claude가 심각한 발견 사항을 실행할 때마다 \"severe issue\", \"major bug\", \"critical defect\"처럼 다르게 표현하기 때문에 게이트 결과가 **들쭉날쭉하다**.\r\n\r\n## 함께 쓰는 표현\r\n- **flaky test** : 가끔씩 실패하는 불안정한 테스트\r\n- **flakiness** (명) 불안정성\r\n\r\n## 시험 포인트\r\n모델의 **자연어 출력을 grep 해서** 판정하면 결과가 흔들립니다. `--output-format json` + `--json-schema` 로 **구조화된 필드**를 출력해 게이트가 결정적으로 읽게 하는 보기가 정답이고, 프롬프트 강조·temperature 0·동의어 사전은 오답입니다."
   },
   {
@@ -3182,7 +3254,11 @@
         "sense": "결함, 흠, 약점",
         "ko": "프롬프트 문구의 결함이다. 추출 프롬프트에 총액이 맞는 예시를 넣어 모델이 order_total을 일관되게 유지하게 한다."
       }
-    ]
+    ],
+    "memory": {
+      "story": "보석 속 가느다란 금 하나가 전체의 약점이 된다 → 결함, 흠",
+      "hook": "플로 → 광고 속 '플로리스(flawless)' = 흠 없는"
+    }
   },
   {
     "id": "fleet",
@@ -3260,6 +3336,29 @@
         "ko": "`settings.json` deny 규칙과 `PreToolUse` 훅 모두 유효한 아키텍처적 접근이며, 훅이 더 유연하다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "flex",
+          "ko": "구부리다"
+        },
+        {
+          "part": "-ible",
+          "ko": "~할 수 있는"
+        },
+        {
+          "part": "-ity",
+          "ko": "성질"
+        }
+      ],
+      "origin": "라틴어 flexibilis (구부릴 수 있는)",
+      "story": "상황 따라 이리저리 구부릴(flex) 수 있는(ible) 성질 → 유연성",
+      "family": [
+        "reflex",
+        "reflect",
+        "deflect"
+      ]
+    },
     "note": "정해진 틀에 묶이지 않고 **조건에 따라 다르게 처리하거나 세밀하게 조정할 수 있는 여지**입니다. 형용사는 *flexible*(유연한)입니다.\r\n\r\n## 문제 속 쓰임\r\n> Both the `settings.json` deny rules and the `PreToolUse` hook are valid architectural approaches; the hook provides more **flexibility**\r\n> `settings.json` deny 규칙과 `PreToolUse` 훅 모두 유효한 아키텍처적 접근이며, 훅이 더 **유연하다**\r\n\r\n## 함께 쓰는 표현\r\n- **provide / offer flexibility** : 유연성을 주다\r\n- **flexible** (형) 유연한 · **inflexible** (형) 융통성 없는\r\n\r\n## 비교\r\n- **deny 규칙** — 알려진 패턴을 선언으로 막아 단순하고 명확함\r\n- **PreToolUse 훅** — 명령을 코드로 검사하므로 변형·조건까지 다룰 수 있어 더 유연함\r\n\r\n## 시험 포인트\r\n\"어떤 상황에서도 막아야 한다\"면 `CLAUDE.md` 지시가 아니라 Claude Code 가 강제하는 **deny 규칙과 PreToolUse 훅**이 정답입니다. 둘 다 결정적이고, 함께 쓰면 가장 견고합니다."
   },
   {
@@ -3439,6 +3538,11 @@
         "ko": "이 장황한 탐색을 메인 세션 안에서 바로 하면 메인 세션의 컨텍스트가 넘쳐나고, 이후 단계는 lost-in-the-middle 효과로 품질이 떨어집니다."
       }
     ],
+    "memory": {
+      "origin": "고대 영어 flōd (흐름, 홍수)",
+      "story": "둑이 터진 듯 로그가 화면을 덮쳐 가득 찬다 → 넘쳐나게 하다",
+      "hook": "플러드 → 물이 '풀(full)'로 차올라 넘친다"
+    },
     "note": "물이 넘치듯 **감당하기 힘들 만큼 많은 양**이 한꺼번에 밀려드는 것입니다. 문제에서는 장황한 검색·도구 출력이 **메인 세션의 컨텍스트를 가득 채우는** 상황에 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Done inline, this verbose discovery **floods** the main session's context and later steps degrade from lost-in-the-middle effects.\r\n> 이 장황한 탐색을 메인 세션 안에서 바로 하면 메인 세션의 컨텍스트가 **넘쳐나고**, 이후 단계는 lost-in-the-middle 효과로 품질이 떨어진다.\r\n\r\n## 함께 쓰는 표현\r\n- **flood A with B** : A 를 B 로 가득 채우다 (*floods the main session with search output*)\r\n- **a flood of** ~ : 엄청나게 많은 ~\r\n\r\n## 비슷한 말\r\n- **clutter** — 어수선하게 어지럽히다\r\n- **pollute** — (컨텍스트를) 오염시키다\r\n\r\n## 시험 포인트\r\n탐색 출력이 메인 컨텍스트를 넘치게 한다면, 탐색을 **Explore 서브에이전트**(또는 스킬의 `context: fork`)로 격리하고 요약만 돌려받는 보기가 정답입니다."
   },
   {
@@ -3600,7 +3704,11 @@
         "sense": "(버퍼에 쌓인 출력을) 내보내다, 비우다",
         "ko": "`--output-format stream-json` 을 붙여 출력이 계속 흘러나오게 한다"
       }
-    ]
+    ],
+    "memory": {
+      "story": "변기 물을 내려 쌓인 것을 한 번에 쓸어 보낸다 → 버퍼를 비우다",
+      "hook": "플러시 → 변기 '플러시' 버튼, 쏴~ 비워 내기"
+    }
   },
   {
     "id": "focus",
@@ -3733,7 +3841,16 @@
         "sense": "(fold into) ~에 합쳐 넣다, 포함시키다",
         "ko": "대화를 읽고 요약을 함께 녹여 세 번역을 한 번에 쓰는 단일 에이전트"
       }
-    ]
+    ],
+    "memory": {
+      "origin": "고대 영어 fealdan (접다)",
+      "story": "반죽에 재료를 접어(fold) 넣어 하나로 섞는다 → 합쳐 넣다",
+      "hook": "폴드 → 갤럭시 '폴드'처럼 접어서 한 몸에 넣기",
+      "family": [
+        "manifold",
+        "twofold"
+      ]
+    }
   },
   {
     "id": "folder",
@@ -4058,6 +4175,24 @@
         "ko": "Claude가 피해야 할 금지 작업 목록을 넣는다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "for-",
+          "ko": "막아, 반대로"
+        },
+        {
+          "part": "bid",
+          "ko": "명하다"
+        },
+        {
+          "part": "-en",
+          "ko": "~된"
+        }
+      ],
+      "origin": "고대 영어 forbēodan (금하다)",
+      "story": "하지 말라고(for) 명령(bid)해 막아 둔 → 금지된"
+    },
     "note": "규칙이나 권한상 **해서는 안 된다고 정해 둔** 것을 말합니다. 동사 *forbid* (금지하다)의 과거분사로, *forbid – forbade – forbidden* 으로 변합니다.\r\n\r\n## 문제 속 쓰임\r\n> ...list **forbidden** operations Claude should avoid.\r\n> Claude가 피해야 할 **금지** 작업 목록을 넣는다.\r\n\r\n## 함께 쓰는 표현\r\n- **forbidden operations / actions** : 금지된 작업·동작\r\n- **be forbidden to do / from doing** : ~하는 것이 금지되다\r\n\r\n## 비슷한 말 · 반대말\r\n- **prohibited**, **banned**, **disallowed** — 금지된\r\n- **allowed**, **permitted** — 허용된\r\n\r\n## 시험 포인트\r\n금지 작업을 **프롬프트에 나열**하는 것은 모델이 무시할 수 있는 약한 방어책입니다. 위험한 작업은 `allowed-tools` 처럼 설정 수준에서 도구 권한을 좁혀 아예 못 하게 하는 선택지가 더 확실합니다."
   },
   {
@@ -4751,6 +4886,11 @@
         "ko": "고객지원 에이전트가 14개의 도구를 갖고 있습니다: CRM 조회, 주문 이력, 결제 조회, 결제 쓰기, 사기 검사, 컴플라이언스 로그, 이메일 발송, SMS 발송, 에스컬레이션, 환불 승인, 환불 거절, 감사 기록, 티켓 생성, 티켓 종료."
       }
     ],
+    "memory": {
+      "origin": "라틴어 fraus (속임수)",
+      "story": "속임수(fraus)로 남의 돈을 빼낸다 → 사기, 부정 거래",
+      "hook": "프로드 → '프로'인 척 가장한 사기꾼"
+    },
     "note": "남을 속여 돈이나 이익을 얻는 **사기·부정 행위**입니다. 결제·환불 시스템에서 **부정 거래**를 걸러 내는 확인 단계를 *fraud check* 라고 합니다.\r\n\r\n## 문제 속 쓰임\r\n> A customer support agent has 14 tools: CRM lookup, order history, payment read, payment write, **fraud** check, compliance log, ...\r\n> 고객지원 에이전트가 14개의 도구(CRM 조회, 주문 이력, 결제 조회, 결제 쓰기, **사기** 검사, 컴플라이언스 로그, …)를 갖고 있다.\r\n\r\n## 함께 쓰는 표현\r\n- **fraud check / detection** : 사기 검사 / 탐지\r\n- **fraudulent** (형) 사기의, 부정한 — *fraudulent transaction* 부정 거래\r\n\r\n## 시험 포인트\r\n\"사기 검사를 마친 뒤에만 결제\"처럼 **순서가 반드시 지켜져야 하는** 조건은 프롬프트가 아니라 **훅으로 선행 조건을 강제**하는 보기가 정답입니다."
   },
   {
@@ -4791,6 +4931,25 @@
         "ko": "전문 서브에이전트로 구성된 허브 앤 스포크로 분해하고, 결제 쓰기 전에 사기 검사 선행을 강제하는 PreToolCall 훅을 추가한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "fraud",
+          "ko": "사기, 속임수"
+        },
+        {
+          "part": "check",
+          "ko": "검사, 확인"
+        }
+      ],
+      "origin": "라틴어 fraus (속임, 기만)",
+      "story": "결제 직전에 속임수(fraud)인지 확인(check)한다 → 사기 검사",
+      "hook": "프로드 체크 → '프로 도둑(사기꾼)' 거르는 결제 전 검사",
+      "family": [
+        "fraudulent",
+        "defraud"
+      ]
+    },
     "note": "결제·환불을 처리하기 전에 **부정 거래인지 확인하는** 단계입니다. 하이픈으로 묶어 *fraud-check prerequisite*(사기 검사 선행 조건)처럼 다른 명사 앞에서 꾸미는 말로 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> ...add PreToolCall hook enforcing **fraud-check** prerequisite before payment writes\r\n> 결제 쓰기 전에 **사기 검사** 선행을 강제하는 PreToolCall 훅을 추가한다\r\n\r\n## 함께 쓰는 표현\r\n- **fraud-check prerequisite** : 사기 검사 선행 조건\r\n- **run a fraud check** : 사기 검사를 실행하다\r\n\r\n## 시험 포인트\r\n도구가 너무 많아 엉뚱한 도구를 고르고 **필수 확인 단계를 건너뛴다면**, 전문 서브에이전트로 나누고(허브 앤 스포크) **훅으로 선행 조건(사기 검사 → 결제)을 강제**하는 보기가 정답입니다. Claude Code·Agent SDK 의 실제 훅 이름은 `PreToolUse` 입니다."
   },
   {
@@ -5229,6 +5388,20 @@
         "ko": "파일을 삭제하고 에이전트가 새 상수 이름을 사용해 처음부터 다시 생성하게 한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "from",
+          "ko": "~부터"
+        },
+        {
+          "part": "scratch",
+          "ko": "긁어 그은 선"
+        }
+      ],
+      "story": "경주 때 땅에 긁어(scratch) 그은 출발선부터 다시 달린다 → 처음부터",
+      "hook": "프롬 스크래치 → 긁어 그은 출발선에서 맨바닥부터"
+    },
     "note": "이미 있는 결과나 기반을 쓰지 않고 **아무것도 없는 상태에서 처음부터** 다시 하는 것입니다. 명사 앞에서는 *a from-scratch rewrite*(처음부터 다시 쓰기)처럼 하이픈을 붙입니다.\r\n\r\n## 문제 속 쓰임\r\n> The current recovery discards the result and re-runs the identical prompt **from scratch**; 40% of retries still fail the rule.\r\n> 현재 복구 방식은 결과를 버리고 똑같은 프롬프트를 **처음부터** 다시 실행하는데, 재시도의 40%가 여전히 규칙을 통과하지 못한다.\r\n\r\n## 함께 쓰는 표현\r\n- **start from scratch** : 처음부터 시작하다\r\n- **rebuild / regenerate from scratch** : 처음부터 다시 만들다\r\n\r\n## 시험 포인트\r\n같은 프롬프트를 **처음부터 그대로 다시 돌리는** 재시도는 모델에게 새 정보를 주지 않아 오답입니다. **실패한 출력과 검증 오류를 피드백**해 문제 된 필드만 고치게 하는 것이 정답입니다."
   },
   {
@@ -5500,6 +5673,21 @@
         "ko": "어조를 인정하지 않고 일정을 변경한다. 불만은 요청 완료와 무관한 것으로 본다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "frustr",
+          "ko": "헛되이"
+        },
+        {
+          "part": "-ation",
+          "ko": "~함, 상태"
+        }
+      ],
+      "origin": "라틴어 frustrari (헛되게 하다)",
+      "story": "애써도 매번 헛수고(frustra)로 끝나니 → 불만, 짜증",
+      "hook": "프러스트레이션 → 풀리지 않는 스트레스 → 짜증"
+    },
     "note": "원하는 대로 되지 않아 쌓이는 **답답함·짜증**입니다. 고객 지원 맥락에서는 고객의 **불만이 커진 상태**를 가리킬 때 많이 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Implement sentiment analysis to detect customer **frustration** and escalate when negative sentiment exceeds a threshold.\r\n> 감정 분석으로 고객의 **불만**을 감지해, 부정적인 감정이 임계값을 넘으면 에스컬레이션한다.\r\n\r\n## 함께 쓰는 표현\r\n- **customer frustration** : 고객 불만, 고객의 짜증\r\n- **express frustration** : 불만을 드러내다\r\n- **frustrated** (형) 답답해하는, 짜증 난 · **frustrating** (형) 답답하게 만드는\r\n\r\n## 시험 포인트\r\n고객이 얼마나 **불만스러운지(감정)** 는 에스컬레이션 기준이 아닙니다. 넘길지는 케이스의 복잡성이나 정책 예외 필요 여부로 판단해야 하므로, 감정 분석으로 에스컬레이션하는 선택지는 오답이 되기 쉽습니다."
   },
   {
@@ -5796,7 +5984,26 @@
         "sense": "몹시 화가 난, 격분한",
         "ko": "테스트에서 일반적인 30일 사이즈 교환을 요청한 몹시 화난 고객은 이관됐습니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "fur",
+          "ko": "격노"
+        },
+        {
+          "part": "-ious",
+          "ko": "~가 가득한"
+        }
+      ],
+      "origin": "라틴어 furiosus (분노에 찬)",
+      "story": "분노(fur)가 가득(-ious) 차올라 폭발 직전 → 몹시 화가 난",
+      "hook": "퓨리어스 → 영화 '분노의 질주(Furious)'",
+      "family": [
+        "fury",
+        "infuriate"
+      ]
+    }
   },
   {
     "id": "further",
@@ -5877,6 +6084,26 @@
         "ko": "추가 수정을 하기 전에 같은 세션을 다시 열어 `/compact` 로 낡은 도구 출력을 줄인다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "fur",
+          "ko": "앞으로"
+        },
+        {
+          "part": "-ther",
+          "ko": "더 (비교)"
+        }
+      ],
+      "origin": "고대 영어 furðor (더 앞으로)",
+      "story": "앞으로(forth) 한 걸음 더(-ther) 나아가 → 더, 추가의",
+      "hook": "퍼더 → 한 국자 '더 퍼 더' → 더, 추가로",
+      "family": [
+        "forth",
+        "forward",
+        "before"
+      ]
+    },
     "note": "**정도를 더 나아가는** 것(더, 더 아래로) 또는 **추가로 더 있는** 것(추가의)을 나타냅니다.\r\n\r\n## 문제 속 쓰임\r\n> Re-run the same session with /compact to shrink the stale tool outputs before making any **further** edits\r\n> **추가** 수정을 하기 전에 같은 세션을 다시 열어 `/compact` 로 낡은 도구 출력을 줄인다\r\n\r\n## 함께 쓰는 표현\r\n- **any further** ~ : 더 이상의 ~ (*before making any further edits*)\r\n- **delegate ~ any further** : ~을 더 아래로 위임하다\r\n- **further investigation** : 추가 조사\r\n\r\n## 비교\r\n- **further** — 정도·추가 (더, 추가의)\r\n- **farther** — 물리적 거리 (더 멀리)"
   },
   {
@@ -5980,6 +6207,20 @@
         "ko": "이름 퍼지 유사도 점수가 가장 높은 계정을 골라 진행하고, 감사를 위해 신뢰도 값을 기록한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "fuzz",
+          "ko": "보풀, 솜털"
+        },
+        {
+          "part": "-y",
+          "ko": "~같은"
+        }
+      ],
+      "story": "솜털(fuzz)처럼 경계가 보송보송 흐릿해 → 대략 일치하는, 근사의",
+      "hook": "퍼지 → 경계가 퍼져 번진다 → 대충 비슷하면 일치"
+    },
     "note": "경계가 또렷하지 않고 **흐릿한** 것입니다. 검색·매칭에서는 철자가 조금 달라도 **비슷하면 일치로 보는 방식**(*fuzzy matching*)을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> Pick the match with the highest **fuzzy** name-similarity score and proceed, logging the confidence value for audit.\r\n> 이름 **퍼지** 유사도 점수가 가장 높은 계정을 골라 진행하고, 감사를 위해 신뢰도 값을 기록한다\r\n\r\n## 함께 쓰는 표현\r\n- **fuzzy matching / search** : 근사 일치 / 근사 검색\r\n- **exact match** : 정확히 일치 (반대 개념)\r\n\r\n## 시험 포인트\r\n고객 조회 결과가 여러 건이면 **유사도·최근성으로 추측해 고르는** 보기는 오답입니다. 주문 번호·이메일 같은 **추가 식별자를 물어 확정**한 뒤 진행하는 것이 정답입니다."
   }
 ]

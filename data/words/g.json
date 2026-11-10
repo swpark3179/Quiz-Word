@@ -801,6 +801,16 @@
         "ko": "어시스턴트 메시지마다 경량 의도 분류기를 돌려, 그 턴이 진짜 완료인지 판단한다"
       }
     ],
+    "memory": {
+      "origin": "라틴어 genuinus (타고난, 본래의)",
+      "story": "태어날(gen) 때부터 지닌 본래 그대로의 → 진짜의, 진정한",
+      "hook": "제뉴인 → 가방 라벨 '제뉴인 레더' = 진짜 가죽",
+      "family": [
+        "gene",
+        "generate",
+        "genetic"
+      ]
+    },
     "note": "겉모양만 그런 것이 아니라 **실제로 그러한, 진짜인** 것입니다. 오탐·거짓 경보와 대비해 *genuine issue*(진짜 문제)처럼 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> They have started ignoring the bot entirely — including its **genuine** security findings.\r\n> 개발자들은 이제 **진짜** 보안 발견 사항까지 포함해 봇을 통째로 무시하기 시작했다.\r\n\r\n## 함께 쓰는 표현\r\n- **genuine issue / bug** : 진짜 문제 / 버그\r\n- **genuinely** (부) 진정으로, 정말로\r\n\r\n## 비슷한 말 · 반대말\r\n- **real**, **legitimate** — 진짜의, 정당한\r\n- **false positive** — 오탐 (진짜 문제가 아닌데 문제로 본 것)\r\n\r\n## 시험 포인트\r\n특정 범주의 **오탐** 때문에 진짜 지적까지 무시당한다면, 그 범주만 **일시적으로 끄고** 명시적 기준으로 프롬프트를 다시 써서 신뢰를 회복하는 보기가 정답입니다."
   },
   {
@@ -1470,6 +1480,24 @@
         "ko": "process_refund는 주문 전액 환불과 소액 부분 호의 크레딧(goodwill credit)을 모두 처리합니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "good",
+          "ko": "좋은"
+        },
+        {
+          "part": "will",
+          "ko": "뜻, 마음"
+        }
+      ],
+      "story": "좋은(good) 마음(will)으로 건네는 보상 크레딧 → 호의, 선의",
+      "hook": "굿윌 → 굿(좋은) 윌(마음) 담은 보상",
+      "family": [
+        "willing",
+        "willpower"
+      ]
+    },
     "note": "상대에게 베푸는 **호의·선의**입니다. 고객지원에서 *goodwill credit* 은 의무는 아니지만 불편을 겪은 고객에게 **사과·보상 차원으로 주는 소액 크레딧**을 말합니다. 회계에서는 \"영업권\"이라는 뜻도 있습니다.\r\n\r\n## 문제 속 쓰임\r\n> process_refund handles both full order refunds and small partial **goodwill** credits.\r\n> `process_refund` 는 주문 전액 환불과 소액 부분 **호의** 크레딧(goodwill credit)을 모두 처리한다.\r\n\r\n## 함께 쓰는 표현\r\n- **goodwill credit** : 보상 차원의 크레딧\r\n- **goodwill gesture** : 호의의 표시 (선의로 해 주는 조치)\r\n\r\n## 시험 포인트\r\n한 도구가 **전액 환불과 소액 크레딧**처럼 성격이 다른 동작을 함께 맡아 오용된다면, 도구를 둘로 나누고 각 description 에 **언제 쓰는지**를 적는 보기가 정답입니다."
   },
   {
@@ -1714,7 +1742,21 @@
         "sense": "실측 정답(사람이 확인한 실제 정답)",
         "ko": "라벨된 검증 세트에서 점수를 정답과 비교하고, 측정된 정확도를 보고 (필요하면 필드별로) 임계값을 고른다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "ground",
+          "ko": "땅, 현장"
+        },
+        {
+          "part": "truth",
+          "ko": "진실"
+        }
+      ],
+      "story": "위성 사진 대신 땅(ground)에 직접 가서 확인한 진실(truth) → 실측 정답",
+      "hook": "그라운드 트루스 → 그라운드(현장)에서 확인한 진짜 답"
+    }
   },
   {
     "id": "grounding",

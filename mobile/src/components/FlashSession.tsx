@@ -352,7 +352,7 @@ function DeckCard({
         </GestureDetector>
         {judged !== null && (
           <ScrollView contentContainerStyle={{ padding: 20, paddingTop: 4 }} showsVerticalScrollIndicator={false}>
-            <WordBrief w={w} contextLimit={2} />
+            <WordBrief w={w} contextLimit={2} memory />
           </ScrollView>
         )}
       </Animated.View>

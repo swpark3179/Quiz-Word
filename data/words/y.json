@@ -175,6 +175,11 @@
         "ko": "Claude에게 \"make the input validation more robust and idiomatic\"(입력 검증을 더 견고하고 관용적으로 만들어 줘)이라고 요청하면 실행할 때마다 결과가 들쭉날쭉합니다: 어떤 때는 zod를 추가하고, 어떤 때는 손으로 쓴 검사 코드를 넣고, 어떤 때는 의미 있는 변화가 거의 없습니다."
       }
     ],
+    "memory": {
+      "origin": "고대 영어 gieldan (갚다, 내주다)",
+      "story": "땅이 땀의 대가를 갚아 내주듯(yield) 수확을 낸다 → 결과를 낳다, 내놓다",
+      "hook": "일드 → 파이썬 yield가 값을 하나씩 내놓듯"
+    },
     "note": "1. **(결과를) 낳다, 내놓다** — 어떤 행동·입력이 결과로 ~을 만들어 낸다\r\n2. **양보하다, 넘겨주다** — 제어권·우선권을 내어 줌 (*yield control*)\r\n\r\n## 문제 속 쓰임\r\n> Asking Claude to \"make the input validation more robust and idiomatic\" **yields** inconsistent output across runs...\r\n> Claude에게 \"입력 검증을 더 견고하고 관용적으로 만들어 줘\"라고 요청하면 실행할 때마다 **들쭉날쭉한 결과가 나온다**...\r\n\r\n## 함께 쓰는 표현\r\n- **yield results / output** : 결과를 내다\r\n- **yield control** : 제어권을 넘기다 (프로그래밍의 `yield` 키워드)\r\n\r\n## 시험 포인트\r\n모호한 요청이 실행마다 다른 결과를 낸다면, 원하는 스타일과 라이브러리를 그대로 보여 주는 **구체적인 입력-출력 예시 2~3개**를 주는 것이 정답입니다."
   }
 ]

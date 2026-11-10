@@ -278,7 +278,27 @@
         "sense": "단락, 문단",
         "ko": "각 범주의 기준을 보안·정확성·스타일 순서의 산문 단락으로 쓰고, 단락마다 해당 범주를 밝히는 문장으로 시작한다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "para-",
+          "ko": "옆에"
+        },
+        {
+          "part": "graph",
+          "ko": "쓰다"
+        }
+      ],
+      "origin": "그리스어 paragraphos (옆에 그은 표시)",
+      "story": "글 옆(para)에 줄을 그어(graph) 끊어 둔 덩어리 → 단락, 문단",
+      "family": [
+        "graph",
+        "photograph",
+        "autograph",
+        "biography"
+      ]
+    }
   },
   {
     "id": "parallel",
@@ -479,7 +499,26 @@
         "sense": "바꿔 말하다, 의역하다",
         "ko": "누적 요약이 환불 금액, 청구서 번호, 약속한 기한을 계속 바꿔 말하는 청구 에이전트를 다시 설계하고 있습니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "para-",
+          "ko": "옆에, 나란히"
+        },
+        {
+          "part": "phrase",
+          "ko": "말하다, 표현"
+        }
+      ],
+      "origin": "그리스어 paraphrasis (곁에서 달리 말함)",
+      "story": "같은 뜻 옆(para)에 다른 표현(phrase)을 나란히 놓다 → 바꿔 말하다",
+      "family": [
+        "phrase",
+        "paragraph",
+        "parallel"
+      ]
+    }
   },
   {
     "id": "parcel",
@@ -616,7 +655,31 @@
         "sense": "괄호",
         "ko": "기준을 심각도순 글머리표 목록 하나로 합치고, 각 항목 끝 괄호에 범주 이름을 달고 예시는 그 아래에 둔다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "par-",
+          "ko": "옆에"
+        },
+        {
+          "part": "en-",
+          "ko": "안에"
+        },
+        {
+          "part": "thesis",
+          "ko": "놓기"
+        }
+      ],
+      "origin": "그리스어 parenthesis (옆에 끼워 넣기)",
+      "story": "문장 옆(par) 안쪽(en)에 끼워 놓은(thesis) 말을 감싸는 것 → 괄호",
+      "family": [
+        "thesis",
+        "hypothesis",
+        "synthesis",
+        "antithesis"
+      ]
+    }
   },
   {
     "id": "parse",
@@ -911,6 +974,19 @@
         "ko": "부분 크레딧 대화 세 개를 few-shot 예시로 시스템 프롬프트에 넣고, 단일 `process_refund` 도구는 그대로 둔다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "partial",
+          "ko": "부분적인"
+        },
+        {
+          "part": "credit",
+          "ko": "적립 금액"
+        }
+      ],
+      "story": "전액 말고 일부(partial)만 계정에 적립(credit)해 준다 → 부분 크레딧(일부 보상)"
+    },
     "note": "고객이 주문은 그대로 두되 배송 지연 같은 작은 불편이 있었을 때, **전액 환불 대신 일부 금액만 보상으로 주는 크레딧**입니다. 문제에서는 *goodwill credit*(호의 차원의 보상)의 한 형태로 나옵니다.\r\n\r\n## 문제 속 쓰임\r\n> Add three few-shot **partial-credit** conversations to the system prompt and keep the single process_refund tool unchanged.\r\n> **부분 크레딧** 대화 세 개를 few-shot 예시로 시스템 프롬프트에 넣고, 단일 `process_refund` 도구는 그대로 둔다.\r\n\r\n## 함께 쓰는 표현\r\n- **issue a partial credit** : 부분 크레딧을 지급하다\r\n- **goodwill credit** : 호의 차원의 보상 크레딧\r\n- **full refund** : 전액 환불\r\n\r\n## 시험 포인트\r\n한 도구가 전액 환불과 부분 크레딧을 뭉뚱그려 오용되면, few-shot 예시보다 **도구를 동작별로 나누고(또는 동작을 명시하는 파라미터를 두고) description 에 사용 경계를 적는** 보기가 정답입니다."
   },
   {
@@ -990,6 +1066,29 @@
         "ko": "아키텍트의 로컬 설정이 이번 세션이 끝날 때까지 모든 권한 검사를 완전히 꺼 버렸다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "part",
+          "ko": "부분"
+        },
+        {
+          "part": "-icul",
+          "ko": "작은"
+        },
+        {
+          "part": "-ar",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 particula (작은 조각)",
+      "story": "전체 중 콕 집은 작은 조각(particula) 하나 → 특정한, 바로 그",
+      "family": [
+        "particle",
+        "partial",
+        "partition"
+      ]
+    },
     "note": "여럿 가운데 **바로 그것 하나를 콕 집어** 가리킬 때 씁니다. *these particular comments* 처럼 \"바로 이 (종류의)\"라는 한정의 뜻을 줍니다.\r\n\r\n## 문제 속 쓰임\r\n> An engineer asks the tool to determine which of 30 services emits a **particular** Kafka event.\r\n> 한 엔지니어가 도구에게 30개 서비스 중 어느 서비스가 **특정** Kafka 이벤트를 발행하는지 알아내 달라고 요청한다.\r\n\r\n## 함께 쓰는 표현\r\n- **a particular case / file** : 특정 경우 / 파일\r\n- **in particular** : 특히\r\n- **particularly** (부) 특히\r\n\r\n## 비슷한 말\r\n- **specific** — 특정한, 구체적인"
   },
   {
@@ -1171,7 +1270,20 @@
         "sense": "도중에, 중간쯤에서",
         "ko": "세션 도중 플랜 모드가 조용히 acceptEdits 모드로 바뀌어서 작업이 프롬프트 없이 진행된다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "part",
+          "ko": "일부"
+        },
+        {
+          "part": "way",
+          "ko": "길"
+        }
+      ],
+      "story": "길(way)의 일부(part)까지만 간 지점 → 도중에, 중간쯤에서"
+    }
   },
   {
     "id": "pass",
@@ -1330,6 +1442,20 @@
         "ko": "종합 품질이 떨어졌고, 이제 전달된 내용의 중간에 묻힌 발견 사항을 놓칩니다(lost-in-the-middle)."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "passed",
+          "ko": "건네진"
+        },
+        {
+          "part": "in",
+          "ko": "안으로"
+        }
+      ],
+      "story": "밖에서 함수 안으로(in) 건네준(passed) 값 → 전달받은, 넘겨받은",
+      "hook": "패스트 인 → 축구 '패스'로 안(in)에 들어온 공"
+    },
     "note": "*pass in*(인자로 넘기다)에서 온 말로, **입력으로 넘겨받은** 것을 꾸밉니다. *passed-in content* 는 앞 단계가 프롬프트에 넣어 넘겨준 내용입니다.\r\n\r\n## 문제 속 쓰임\r\n> ...it now misses findings buried in the middle of the **passed-in** content (lost-in-the-middle).\r\n> 이제 **전달된** 내용의 중간에 묻힌 발견 사항을 놓친다(lost-in-the-middle).\r\n\r\n## 함께 쓰는 표현\r\n- **passed-in argument / value** : 넘겨받은 인자 / 값\r\n- **pass in** ~ : (인자로) ~을 넘기다\r\n\r\n## 시험 포인트\r\nlost-in-the-middle 은 용량이 아니라 **구성 문제**입니다. 넘기기 전에 출력을 관련 발견 사항으로 다듬고, 핵심 요약을 앞에 두고, 섹션 헤더로 구조화하는 보기가 정답입니다."
   },
   {
@@ -1637,6 +1763,21 @@
         "ko": "서브에이전트는 두 번 재시도한 뒤 \"Patent search could not be completed.\"만 반환합니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pat",
+          "ko": "열려 있다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 patens (열려 있는, 공개된)",
+      "story": "발명을 공개(pat) 문서로 펼쳐 보이고 독점권을 받는다 → 특허",
+      "hook": "패튼트 → 내 '패턴'은 나만 쓴다 → 특허"
+    },
     "note": "발명에 대해 국가가 인정하는 **독점 권리**, 또는 그 권리를 담은 문서를 말합니다. 시험에서는 조사할 *소스 종류*의 하나로 나옵니다.\r\n\r\n## 문제 속 쓰임\r\n> ...and **patent** databases returned \"Connection timeout.\"\r\n> **특허** 데이터베이스는 \"연결 시간 초과\"를 반환했다.\r\n\r\n## 함께 쓰는 표현\r\n- **patent database** : 특허 데이터베이스\r\n- **file / apply for a patent** : 특허를 출원하다\r\n- **patent infringement** : 특허 침해\r\n- **patented** (형) 특허를 받은\r\n\r\n## 비교\r\n- **patent** — 특허 (발명·기술)\r\n- **copyright** — 저작권 (글·음악 같은 창작물)\r\n- **trademark** — 상표권 (이름·로고)"
   },
   {
@@ -2870,6 +3011,34 @@
         "ko": "PreToolUse 훅의 timeout을 늘려 플래그를 주기적으로 재확인하게 한다. 훅이 결국 검토가 잘못됐음을 알아차리고 환불을 막을 것이다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "peri-",
+          "ko": "둘레"
+        },
+        {
+          "part": "od",
+          "ko": "길"
+        },
+        {
+          "part": "-ic",
+          "ko": "~의"
+        },
+        {
+          "part": "-ally",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "그리스어 periodos (한 바퀴 도는 길)",
+      "story": "둘레(peri) 길(od)을 한 바퀴 돌 때마다 → 주기적으로, 정기적으로",
+      "family": [
+        "period",
+        "perimeter",
+        "method",
+        "episode"
+      ]
+    },
     "note": "일정한 간격을 두고 **되풀이해서** 한다는 뜻입니다. 주기가 딱 정해진 경우도 있고, \"때때로\" 정도의 느슨한 뜻일 때도 있습니다.\r\n\r\n## 문제 속 쓰임\r\n> Continue all phases in the main conversation, using /compact **periodically** to reduce context usage.\r\n> 모든 단계를 메인 대화에서 진행하면서, 컨텍스트 사용량을 줄이려고 **주기적으로** `/compact` 를 쓴다.\r\n\r\n## 함께 쓰는 표현\r\n- **run periodically** : 주기적으로 실행하다\r\n- **periodic** (형) 주기적인 · **periodic check / cleanup** 정기 점검 / 정리\r\n- **period** (명) 기간, 주기\r\n\r\n## 비슷한 말\r\n- **regularly** — 규칙적으로\r\n- **from time to time**, **occasionally** — 가끔 (주기가 일정하지 않음)"
   },
   {
@@ -2924,7 +3093,31 @@
         "sense": "(permanently) 영구적으로, 항상",
         "ko": "읽기 전용 명령은 현재 어떤 모드든 상관없이 모든 권한 모드에서 영구히 면제된다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "per-",
+          "ko": "끝까지, 내내"
+        },
+        {
+          "part": "man",
+          "ko": "머무르다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 permanere (끝까지 머무르다)",
+      "story": "끝까지(per) 머물러(man) 떠나지 않는다 → 영구적인, 되돌릴 수 없는",
+      "hook": "퍼머넌트 → 미용실 '파마(perm)'는 오래 유지",
+      "family": [
+        "remain",
+        "mansion",
+        "manor"
+      ]
+    }
   },
   {
     "id": "permission",
@@ -3052,7 +3245,27 @@
         "sense": "(permitted) 허용된",
         "ko": "자사 사이트 조정 조항을 허용된 조정의 전체 목록으로 보고 요청을 거절한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "per-",
+          "ko": "통과하여"
+        },
+        {
+          "part": "mit",
+          "ko": "보내다"
+        }
+      ],
+      "origin": "라틴어 permittere (통과시켜 보내다)",
+      "story": "문을 통과해(per) 보내(mit) 준다 → 허용하다 (permitted 허용된)",
+      "family": [
+        "submit",
+        "admit",
+        "transmit",
+        "commit"
+      ]
+    }
   },
   {
     "id": "persistent",
@@ -3120,6 +3333,30 @@
         "ko": "주문 id, 금액, 날짜를 담은 영구적인 케이스 사실(case-facts) 블록을 요약 밖에 따로 두고, 매 턴 원문 그대로 다시 주입한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "per-",
+          "ko": "끝까지"
+        },
+        {
+          "part": "sist",
+          "ko": "서 있다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 persistere (끝까지 버티고 서다)",
+      "story": "끝까지(per) 버티고 서(sist) 사라지지 않는다 → 계속되는, 유지되는",
+      "family": [
+        "insist",
+        "resist",
+        "consist",
+        "assist"
+      ]
+    },
     "note": "1. **계속되는, 사라지지 않는** — 재시도해도 같은 오류가 반복되는 상황 (↔ *transient*)\r\n2. **영속적인, 유지되는** — 대화가 요약되거나 초기화돼도 지워지지 않고 남아 있는 것\r\n\r\n## 문제 속 쓰임\r\n> Have the subagent retry transient failures internally and only report **persistent** errors.\r\n> 서브에이전트가 일시적인 오류는 내부에서 재시도하고, **계속되는** 오류만 보고한다.\r\n> Extract transactional facts (amounts, dates, order numbers) into a **persistent** \"case facts\" block.\r\n> 거래 사실(금액·날짜·주문번호)을 **영속적인** \"case facts\" 블록으로 뽑아 둔다.\r\n\r\n## 함께 쓰는 표현\r\n- **persistent error / issue** : 계속되는 오류 / 문제\r\n- **persistent storage / memory** : 영구 저장소 / 지속 메모리\r\n- **persist** (동) 계속되다, 유지되다 · **persistence** (명) 지속(성)\r\n\r\n## 반대말\r\n- **transient**, **temporary** — 일시적인\r\n\r\n## 시험 포인트\r\n긴 대화에서 금액·날짜 같은 핵심 사실이 사라지는 문제는, 요약 방식을 손보기보다 **요약 대상 밖의 persistent 블록**에 따로 보관하는 보기가 정답인 경우가 많습니다."
   },
   {
@@ -3403,7 +3640,30 @@
         "sense": "직접, 몸소",
         "ko": "한 팀이 과거 데이터에서 직접 겪은 모든 엣지 케이스마다 하나씩, 정확한 입력-출력 쌍 20개로 분류 프롬프트를 만들었습니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "person",
+          "ko": "사람, 본인"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 persona (가면, 배역)",
+      "story": "대리인 말고 그 사람(person) 본인이 → 직접, 몸소",
+      "family": [
+        "persona",
+        "personality",
+        "impersonate"
+      ]
+    }
   },
   {
     "id": "pharmaceutical",
@@ -3817,7 +4077,27 @@
         "sense": "의사(내과의)",
         "ko": "필드를 필수로 유지하고 올바른 형식의 의사 이름을 보여 주는 `input_examples`를 추가한다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "physic",
+          "ko": "의술, 자연학"
+        },
+        {
+          "part": "-ian",
+          "ko": "~하는 사람"
+        }
+      ],
+      "origin": "그리스어 physikē (자연에 관한 학문)",
+      "story": "몸이라는 자연(physis)을 다루는 의술(physic)의 사람(-ian) → 의사",
+      "hook": "피지션 → '피지컬(몸)'을 봐 주는 사람 → 의사",
+      "family": [
+        "physics",
+        "physical",
+        "physique"
+      ]
+    }
   },
   {
     "id": "pick",
@@ -3951,7 +4231,21 @@
         "sense": "(변경·설정을) 알아채 반영하다",
         "ko": "서브에이전트가 오래된 캐시 사본의 대화를 물려받았으므로, 세션을 재개해 최근 턴을 불러와야 한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pick",
+          "ko": "집다"
+        },
+        {
+          "part": "up",
+          "ko": "위로"
+        }
+      ],
+      "story": "바뀐 설정을 집어(pick) 올려(up) 바로 쓴다 → 알아채 반영하다",
+      "hook": "픽업 → 새 설정을 '픽업' 차에 태워 감"
+    }
   },
   {
     "id": "picker",
@@ -4137,6 +4431,20 @@
         "ko": "`tool_choice` 가 `Grep` 도구 강제가 아니라 `auto` 로 설정되어 있어, 진입점이 끝내 확정되지 않았다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pin",
+          "ko": "핀으로 꽂다"
+        },
+        {
+          "part": "down",
+          "ko": "꾹, 아래로"
+        }
+      ],
+      "story": "나비 표본을 핀(pin)으로 꾹(down) 고정하듯 → 정확히 밝혀내다, 확정하다",
+      "hook": "핀다운 → 지도 앱에 '핀' 꽂아 위치 확정"
+    },
     "note": "흐릿하던 것을 핀으로 꽂듯 **정확히 밝혀 확정하는** 것입니다. 원인·위치·값을 \"딱 짚어 낸다\"는 느낌입니다.\r\n\r\n## 문제 속 쓰임\r\n> tool_choice was set to auto rather than forcing the Grep tool, so the entrypoint was never **pinned down**\r\n> `tool_choice` 가 `Grep` 도구 강제가 아니라 `auto` 로 설정되어 있어, 진입점이 끝내 **확정되지** 않았다.\r\n\r\n## 함께 쓰는 표현\r\n- **pin down the cause** : 원인을 정확히 짚어 내다\r\n- **hard to pin down** : 딱 꼬집어 말하기 어려운\r\n\r\n## 비슷한 말\r\n- **identify**, **determine** — 알아내다, 밝히다\r\n\r\n## 시험 포인트\r\n원인을 `tool_choice` 로 돌리는 이 보기는 오답입니다. 서브에이전트가 이미 찾은 진입점을 다시 찾는 이유는 **부모 대화를 상속하지 않기 때문**이며, 이전 발견 사항을 Task 프롬프트에 넣어 넘겨야 합니다."
   },
   {
@@ -4184,7 +4492,11 @@
         "sense": "(출력·입력을) 파이프로 넘기다",
         "ko": "프롬프트를 인자로 넘기지 말고 `cat` 으로 파이프한다"
       }
-    ]
+    ],
+    "memory": {
+      "origin": "고대 영어 pipe (피리, 관)",
+      "story": "수도관(pipe)으로 물 흘리듯 출력을 다음 명령으로 → 파이프로 넘기다"
+    }
   },
   {
     "id": "pipeline",
@@ -4713,6 +5025,25 @@
         "ko": "구매 주문(PO) 번호가 없는 문서에 대해, 감사 로그를 보면 Claude가 약 11%의 경우 값이 없다고 알리는 대신 그럴듯해 보이는 PO 번호를 지어냅니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "plaus",
+          "ko": "박수치다"
+        },
+        {
+          "part": "-ible",
+          "ko": "~할 만한"
+        }
+      ],
+      "origin": "라틴어 plausibilis (박수받을 만한)",
+      "story": "일단 박수(plaus)는 받을 만한(ible) 말 → 그럴듯한 (확실하진 않음)",
+      "family": [
+        "applause",
+        "applaud",
+        "explode"
+      ]
+    },
     "note": "**맞을 수도 있어 보이는, 그럴듯한** 것입니다. \"확실히 옳다\"가 아니라 *진지하게 고려할 만하다* 정도의 뉘앙스입니다.\r\n\r\n## 문제 속 쓰임\r\n> ...each showing reasoning for why one tool was chosen over **plausible** alternatives.\r\n> 각 예시는 **그럴듯한** 다른 선택지 대신 왜 그 도구를 골랐는지 추론을 보여 준다.\r\n\r\n## 함께 쓰는 표현\r\n- **plausible alternative / explanation** : 그럴듯한 대안 / 설명\r\n- **plausible but wrong** : 그럴듯하지만 틀린\r\n- **plausibly** (부) 그럴듯하게 · **plausibility** (명) 그럴듯함\r\n\r\n## 비슷한 말 · 반대말\r\n- **reasonable**, **credible** — 납득할 만한, 믿을 만한\r\n- **implausible**, **far-fetched** — 믿기 어려운, 억지스러운\r\n\r\n## 시험 포인트\r\n모호한 요청에서 도구를 잘못 고를 때는, 명확한 예시를 많이 넣기보다 **헷갈리는 사례를 골라 \"왜 다른 그럴듯한 도구가 아닌지\"까지 보여 주는** few-shot 예시가 효과적입니다."
   },
   {
@@ -5273,6 +5604,11 @@
         "ko": "50% 할인으로 diff를 Message Batches API에 보내고, 머지 체크가 배치가 끝날 때까지 폴링한다."
       }
     ],
+    "memory": {
+      "origin": "중세 영어 polle (머리)",
+      "story": "머릿수(poll)를 세듯 하나씩 돌며 상태를 묻는다 → 폴링, 주기적 확인",
+      "hook": "폴링 → 여론조사(poll)하듯 '다 됐어?' 계속 물음"
+    },
     "note": "1. **(상태를) 주기적으로 확인하다, 폴링하다** — 작업이 끝났는지 일정 간격으로 계속 물어보는 것\r\n2. **여론 조사(하다), 투표** — 일상 영어에서 흔한 뜻\r\n\r\n## 문제 속 쓰임\r\n> You want to reduce costs using the Message Batches API (50% savings, requires **polling**, up to 24 hours).\r\n> Message Batches API(50% 절감, **폴링** 필요, 최대 24시간)를 써서 비용을 줄이고 싶다.\r\n\r\n## 함께 쓰는 표현\r\n- **poll for completion** : 끝났는지 계속 확인하다\r\n- **status polling** : 상태 폴링\r\n- **polling interval** : 확인 간격\r\n\r\n## 비교\r\n- **polling** — 내가 주기적으로 물어본다\r\n- **webhook / callback** — 끝나면 상대가 알려 준다\r\n\r\n## 시험 포인트\r\n폴링이 필요하다는 건 **결과를 바로 받지 못한다**는 뜻입니다. 이미 야간에 돌며 완료를 폴링하는 작업은 배치 처리와 잘 맞지만, 머지를 막고 기다리는 검사에는 맞지 않습니다."
   },
   {
@@ -5319,7 +5655,26 @@
         "sense": "(빈 곳에 데이터를) 채워 넣다",
         "ko": "일회성 온보딩 스크립트로 각 개발자의 개인 `~/.claude/CLAUDE.md` 를 채우고, 이후에는 개발자가 필요에 따라 편집하게 한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "popul",
+          "ko": "사람들"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하게 하다"
+        }
+      ],
+      "origin": "라틴어 populus (백성, 사람들)",
+      "story": "빈 마을에 사람(popul)을 채워 넣듯 → (빈칸에 데이터를) 채워 넣다",
+      "family": [
+        "people",
+        "popular",
+        "population"
+      ]
+    }
   },
   {
     "id": "position",
@@ -5587,6 +5942,26 @@
         "ko": "더 나은 로깅과 사후 감사 추적"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "post",
+          "ko": "뒤에"
+        },
+        {
+          "part": "hoc",
+          "ko": "이것"
+        }
+      ],
+      "origin": "라틴어 post hoc (이것 뒤에)",
+      "story": "일(hoc)이 다 끝난 뒤(post)에 갖다 붙이는 → 사후의",
+      "hook": "포스트혹 → 일 끝난 뒤 붙이는 '포스트잇'",
+      "family": [
+        "postpone",
+        "postscript",
+        "postwar"
+      ]
+    },
     "note": "라틴어 *post hoc*(이것 뒤에)에서 온 말로, 일이 **다 일어난 뒤에 하는** 것입니다. 예방이 아니라 **사후 확인·분석**이라는 뉘앙스가 있습니다.\r\n\r\n## 문제 속 쓰임\r\n> Better logging and **post-hoc** audit trail\r\n> 더 나은 로깅과 **사후** 감사 추적\r\n\r\n## 함께 쓰는 표현\r\n- **post-hoc analysis** : 사후 분석\r\n- **post-hoc explanation** : 결과를 보고 나중에 붙인 설명\r\n\r\n## 반대말\r\n- **upfront**, **proactive** — 미리, 사전에 대비하는\r\n\r\n## 시험 포인트\r\n\"무엇이 이를 **예방**했을까\"를 묻는 문제에서 사후 로깅·감사는 오답입니다. 돌이킬 수 없는 동작 앞의 **사람 승인 게이트**처럼 실행 전에 막는 장치가 정답입니다."
   },
   {
@@ -6025,7 +6400,26 @@
         "sense": "미리 승인하다, 사전 허용하다",
         "ko": "미리 승인하지 않은 도구 호출은 대기하지 않고 거부되는 CI 리뷰 작업을 만들려 합니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "미리"
+        },
+        {
+          "part": "approve",
+          "ko": "승인하다"
+        }
+      ],
+      "story": "일이 생기기 전에(pre) 미리 도장 찍어 승인(approve) → 사전 허용하다",
+      "hook": "프리어프루브 → '프리패스' 도장을 미리 받아 둠",
+      "family": [
+        "prove",
+        "probe",
+        "probable"
+      ]
+    }
   },
   {
     "id": "precautionary",
@@ -6066,7 +6460,34 @@
         "sense": "예방적인, 만일을 위한",
         "ko": "\"높은 확신\" 표현이 위험을 과소 보고하지 않도록 설계된 모델의 안전 학습과 충돌해, 모델이 예방 차원에서 더 넓은 입력에 대해 과다 보고한다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "미리"
+        },
+        {
+          "part": "caut",
+          "ko": "조심하다"
+        },
+        {
+          "part": "-ion",
+          "ko": "명사형"
+        },
+        {
+          "part": "-ary",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 praecavere (미리 조심하다)",
+      "story": "일이 터지기 전에(pre) 미리 조심(caut)해 두는 → 예방적인, 만일을 위한",
+      "family": [
+        "caution",
+        "cautious",
+        "caveat"
+      ]
+    }
   },
   {
     "id": "precedence",
@@ -6191,6 +6612,30 @@
         "ko": "팀장이 Claude Code로 CSV→JSON 변환 유틸리티를 구현하려 하는데, 빈 셀, 따옴표 안의 쉼표, 중복 헤더의 정확한 처리가 중요해서 열-필드 매핑 규칙을 말로 정확히 설명하기 어렵습니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "앞을"
+        },
+        {
+          "part": "cis",
+          "ko": "자르다"
+        },
+        {
+          "part": "-ion",
+          "ko": "명사형"
+        }
+      ],
+      "origin": "라틴어 praecidere (앞을 잘라 내다)",
+      "story": "군더더기를 앞에서(pre) 싹 잘라(cis) 딱 맞춘다 → 정밀함, 정확성",
+      "family": [
+        "decision",
+        "concise",
+        "incision",
+        "scissors"
+      ]
+    },
     "note": "1. **정밀함, 정확성** — 표현·수치가 애매하지 않고 딱 떨어지는 정도\r\n2. **정밀도** — (평가 지표) 찾아낸 것 중 실제로 맞은 비율, 오탐이 적을수록 높음\r\n\r\n## 문제 속 쓰임\r\n> Rewrite your requirements with greater technical **precision**.\r\n> 요구사항을 기술적으로 더 **정밀하게** 다시 쓴다.\r\n> ...run only **high-precision** categories while improving prompts.\r\n> 프롬프트를 개선하는 동안 **정밀도가 높은** 카테고리만 돌린다.\r\n\r\n## 함께 쓰는 표현\r\n- **precision and recall** : 정밀도와 재현율\r\n- **with precision** : 정확하게\r\n- **precise** (형) 정확한 · **precisely** (부) 정확히\r\n\r\n## 비교\r\n- **precision** — 내놓은 것 중 맞은 비율 (오탐이 적음)\r\n- **recall** — 찾아야 할 것 중 실제로 찾은 비율 (누락이 적음)\r\n\r\n## 시험 포인트\r\n산문을 **더 정밀하게** 고쳐 쓰는 것보다 **구체적인 입력·출력 예시**를 보여 주는 쪽이 해석 차이를 더 확실히 없앱니다."
   },
   {
@@ -6363,7 +6808,21 @@
         "pos": "동사",
         "sense": "(응답 앞부분을) 미리 넣다, 프리필하다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "미리"
+        },
+        {
+          "part": "fill",
+          "ko": "채우다"
+        }
+      ],
+      "story": "답이 시작되기 전에(pre) 앞부분을 채워(fill) 둔다 → 미리 넣다, 프리필",
+      "hook": "프리필 → 양식 칸이 미리 '필(fill)'된 상태"
+    }
   },
   {
     "id": "prefix",
@@ -6484,6 +6943,25 @@
         "ko": "운영 로그를 보면 Claude가 출력을 마크다운 코드 펜스로 감싸거나 \"Here is the extracted data:\"(추출한 데이터는 다음과 같습니다) 같은 문장을 앞에 붙이기 때문에, 추출 응답의 8%가 다운스트림 JSON.parse() 단계에서 실패합니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "앞에"
+        },
+        {
+          "part": "pend",
+          "ko": "매달다"
+        }
+      ],
+      "story": "append가 뒤에 매단다면 이건 맨 앞(pre)에 매단다(pend) → 앞에 덧붙이다",
+      "family": [
+        "append",
+        "pendant",
+        "depend",
+        "suspend"
+      ]
+    },
     "note": "기존 내용의 **앞에 무언가를 덧붙이는** 것입니다. 뒤에 붙이는 *append* 의 반대말입니다.\r\n\r\n## 문제 속 쓰임\r\n> ...because Claude wraps its output in markdown code fences or **prepends** a sentence like \"Here is the extracted data:\".\r\n> Claude가 출력을 마크다운 코드 펜스로 감싸거나 \"Here is the extracted data:\" 같은 문장을 **앞에 붙이기** 때문이다.\r\n\r\n## 함께 쓰는 표현\r\n- **prepend A to B** : B 앞에 A를 붙이다\r\n- **prepend a header** : 머리말을 앞에 붙이다\r\n\r\n## 반대말\r\n- **append** — 뒤에 덧붙이다\r\n\r\n## 시험 포인트\r\nJSON 앞에 문장이 붙거나 펜스로 감싸져 파싱이 실패하면, 프롬프트 강조·정규식 후처리가 아니라 **도구 `input_schema` + `tool_choice` 강제**(또는 structured outputs)로 형식을 보장하는 보기가 정답입니다."
   },
   {
@@ -6524,6 +7002,28 @@
         "ko": "`\"any\"` 는 유지하되, 서브에이전트로 보내기 전에 일반 텍스트 입력을 배치에서 걸러 내는 전처리 단계를 추가한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "미리, 앞서"
+        },
+        {
+          "part": "process",
+          "ko": "처리"
+        },
+        {
+          "part": "-ing",
+          "ko": "~하기"
+        }
+      ],
+      "story": "본 처리(process) 전에(pre) 재료를 씻고 다듬는 일 → 전처리",
+      "family": [
+        "process",
+        "procedure",
+        "proceed"
+      ]
+    },
     "note": "본 처리에 들어가기 **전에 입력을 미리 걸러 내거나 다듬는 단계**입니다.\r\n\r\n## 문제 속 쓰임\r\n> Keep \"any\" but add a **preprocessing** stage that strips plain-text inputs out of the batch before dispatch to the subagent.\r\n> `\"any\"` 는 유지하되, 서브에이전트로 보내기 전에 일반 텍스트 입력을 배치에서 걸러 내는 **전처리** 단계를 추가한다.\r\n\r\n## 함께 쓰는 표현\r\n- **preprocessing step / stage** : 전처리 단계\r\n- **preprocess** (동) 전처리하다\r\n\r\n## 반대말\r\n- **post-processing** — 후처리\r\n\r\n## 시험 포인트\r\n이 보기는 원인(`\"any\"` 설정)을 그대로 두고 구성 요소만 늘려 오답입니다. 도구가 필요 없는 입력이 섞여 있다면 `tool_choice` 를 **`auto`** 로 바꾸는 한 줄 수정이 정답입니다."
   },
   {
@@ -6579,6 +7079,34 @@
         "ko": "안전하지 않다. 각 훅은 매칭된 도구가 호출될 때만 실행되는데, `get_customer` 가 `process_refund` 보다 먼저 호출된다는 보장이 없다. 모델이 선행 도구를 아예 건너뛸 수 있으므로, `process_refund` 훅은 존재하지 않거나 유효하지 않은 파일을 읽게 될 수 있다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "미리, 먼저"
+        },
+        {
+          "part": "re-",
+          "ko": "다시, 강하게"
+        },
+        {
+          "part": "quis",
+          "ko": "구하다"
+        },
+        {
+          "part": "-ite",
+          "ko": "~된 것"
+        }
+      ],
+      "origin": "라틴어 requisitus (요구된) + pre-",
+      "story": "시작 전(pre)에 꼭 갖추라고 요구된(requisite) 것 → 전제 조건, 선행하는",
+      "family": [
+        "require",
+        "request",
+        "inquire",
+        "question"
+      ]
+    },
     "note": "어떤 일을 하기 **전에 반드시 갖춰져 있어야 하는 조건**입니다. \"이게 먼저 끝나야 다음으로 갈 수 있다\"처럼 순서가 중요할 때 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Add a programmatic **prerequisite** that blocks `lookup_order` and `process_refund` calls until `get_customer` has returned a verified customer ID.\r\n> `get_customer` 가 검증된 고객 ID를 돌려줄 때까지 `lookup_order`·`process_refund` 호출을 막는 프로그램 방식의 **전제 조건**을 추가한다.\r\n\r\n## 함께 쓰는 표현\r\n- **prerequisite for** ~ : ~의 전제 조건\r\n- **prerequisite check** : 선행 조건 확인\r\n- **prerequisites** : (강의·설치의) 선수 조건, 사전 요구 사항\r\n\r\n## 비슷한 말\r\n- **precondition** — 전제 조건 (거의 같은 뜻)\r\n- **requirement** — 요구 사항 (순서보다 \"필요한 것\" 자체)\r\n\r\n## 시험 포인트\r\n\"반드시 이 순서로\"가 지켜져야 하는 상황에서는 프롬프트·few-shot 같은 안내보다 **코드로 강제하는 전제 조건**이 정답입니다. LLM은 지시를 가끔 어길 수 있기 때문입니다."
   },
   {
@@ -6735,6 +7263,25 @@
         "ko": "맞춤 요약 프롬프트로 Claude에게 모든 금액·날짜·약속을 Context to Preserve 아래에 나열하게 한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "미리"
+        },
+        {
+          "part": "serve",
+          "ko": "지키다"
+        }
+      ],
+      "origin": "라틴어 praeservare (미리 지켜 두다)",
+      "story": "상하기 전에(pre) 미리 지켜(serv) 둔다 → 보존하다, 유지하다",
+      "family": [
+        "conserve",
+        "reserve",
+        "observe"
+      ]
+    },
     "note": "바뀌거나 사라지지 않도록 **원래 상태 그대로 지킨다**는 뜻입니다. 기능·정보·맥락을 \"잃지 않고 유지한다\"는 의미로 자주 쓰입니다.\r\n\r\n## 문제 속 쓰임\r\n> What's the most effective way to address this while **preserving** full analysis capability?\r\n> 전체 분석 능력은 **유지하면서** 이 문제를 해결하는 가장 효과적인 방법은?\r\n\r\n## 함께 쓰는 표현\r\n- **while preserving** ~ : ~을 유지하면서 (조건을 거는 표현)\r\n- **preserve context / formatting** : 맥락 / 서식을 보존하다\r\n- **preservation** (명) 보존\r\n\r\n## 비슷한 말\r\n- **maintain**, **retain**, **keep** — 유지하다\r\n- **preserve** — \"손상·손실로부터 지킨다\"는 느낌이 더 강함\r\n\r\n## 시험 포인트\r\n문제 끝의 *while preserving* ~ / *while maintaining* ~ 은 **반드시 지켜야 할 조건**입니다. 문제를 해결하더라도 그 조건을 깨는 보기(예: 분석 결과를 짧게 요약해 버리는 것)는 오답입니다."
   },
   {
@@ -6780,7 +7327,21 @@
         "sense": "미리 정해 둔",
         "ko": "false_positive나 wont_fix 같은 미리 정한 범주의 dismissal_reason 필드를 추가해, 사유별 기각률을 비교할 수 있게 한다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "미리"
+        },
+        {
+          "part": "set",
+          "ko": "정해 두다"
+        }
+      ],
+      "story": "쓰기 전에 미리(pre) 맞춰 놓은(set) 값 → 미리 정해 둔",
+      "hook": "프리셋 → 사진 앱 '프리셋' 필터처럼 미리 정해 둠"
+    }
   },
   {
     "id": "press",
@@ -6840,7 +7401,24 @@
         "sense": "(press release) 보도 자료",
         "ko": "경쟁 정보 종합 중에 두 서브에이전트가 경쟁사의 연 매출을 다르게 보고합니다. 하나는 보도자료를 인용해 $420 million, 다른 하나는 애널리스트 보고서를 인용해 $460 million이라고 합니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "press",
+          "ko": "누르다"
+        }
+      ],
+      "origin": "라틴어 pressare (누르다) → 인쇄기",
+      "story": "종이를 꾹 눌러(press) 찍던 인쇄기 → 신문·언론 (press release 보도 자료)",
+      "hook": "프레스 → 기자 조끼에 적힌 PRESS",
+      "family": [
+        "pressure",
+        "express",
+        "impress",
+        "compress"
+      ]
+    }
   },
   {
     "id": "pretooluse",
@@ -7364,6 +7942,25 @@
         "ko": "서브에이전트는 코디네이터의 대화를 상속받지 않으므로, 이전 발견 사항은 `Task` 프롬프트에 담아 넘겨야 한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pri",
+          "ko": "앞"
+        },
+        {
+          "part": "-or",
+          "ko": "더 ~한"
+        }
+      ],
+      "origin": "라틴어 prior (더 앞의, 먼저의)",
+      "story": "순서상 더(-or) 앞(pri)에 있던 → 이전의, 사전의 (prior knowledge)",
+      "family": [
+        "priority",
+        "prime",
+        "primary"
+      ]
+    },
     "note": "시간·순서상 **지금보다 앞선** 것을 가리킵니다. *previous* 보다 조금 격식 있는 말입니다.\r\n\r\n## 문제 속 쓰임\r\n> Include **prior** review findings in context, instructing Claude to only report new or still-unaddressed issues.\r\n> **이전** 리뷰 결과를 컨텍스트에 넣고, 새 이슈나 아직 해결되지 않은 이슈만 보고하라고 지시한다.\r\n\r\n## 함께 쓰는 표현\r\n- **prior to** ~ : ~ 전에 (= before)\r\n- **prior conversation / context** : 이전 대화 / 맥락\r\n- **prior knowledge / experience** : 사전 지식 / 경험\r\n\r\n## 비슷한 말 · 반대말\r\n- **previous**, **earlier**, **preceding** — 이전의\r\n- **subsequent**, **later** — 이후의\r\n\r\n## 시험 포인트\r\n다시 돌린 리뷰가 이미 고친 이슈를 또 지적하면 **이전 결과를 컨텍스트에 넣어** 새 이슈만 보고하게 하는 쪽이 정답입니다. 반대로 \"이전 대화를 무시하라\"는 프롬프트 지시는 강제력이 없어 오답이 되기 쉽습니다."
   },
   {
@@ -7421,6 +8018,29 @@
         "ko": "요청하는 제안 수를 10개에서 5개로 줄이며, Claude가 가장 가치 있는 경우를 우선할 것이라고 가정한다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "prior",
+          "ko": "더 앞의"
+        },
+        {
+          "part": "-ity",
+          "ko": "명사형"
+        },
+        {
+          "part": "-ize",
+          "ko": "~하게 하다"
+        }
+      ],
+      "origin": "라틴어 prior (더 앞의, 먼저의)",
+      "story": "더 앞(prior)에 설 것부터 줄 세운다(-ize) → 우선순위를 매기다",
+      "family": [
+        "primary",
+        "prime",
+        "premier"
+      ]
+    },
     "note": "여러 일 가운데 **중요한 것을 먼저** 하도록 순서를 정한다는 뜻입니다. 무엇을 *뒤로 미루거나 뺄지* 판단하는 것도 함께 들어 있습니다.\r\n\r\n## 문제 속 쓰임\r\n> Reduce requested suggestions from 10 to 5, assuming Claude will **prioritize** the most valuable cases.\r\n> 요청하는 제안 수를 10개에서 5개로 줄이며, Claude가 가장 가치 있는 경우를 **우선할** 것이라고 가정한다.\r\n\r\n## 함께 쓰는 표현\r\n- **prioritize A over B** : B보다 A를 우선하다\r\n- **prioritization** (명) 우선순위 결정\r\n- **priority** (명) 우선순위 · **high-priority** 우선순위가 높은\r\n\r\n## 시험 포인트\r\n개수만 줄이고 Claude가 \"알아서 중요한 것을 고르겠지\"라고 **가정하는** 보기는 오답이 되기 쉽습니다. 무엇이 이미 있는지 모르면 우선순위를 매길 근거도 없으므로, 필요한 정보(예: 기존 테스트 파일)를 컨텍스트에 넣어 주는 쪽이 근본 해결입니다."
   },
   {
@@ -7617,6 +8237,22 @@
         "ko": "쿼리 도구 앞에 수명이 짧은 캐시를 두어, 반복되는 스키마 탐색이 이후 호출에서 더 빨리 반환되게 한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "prob",
+          "ko": "시험하다"
+        }
+      ],
+      "origin": "라틴어 probare (시험하다, 검사하다)",
+      "story": "의사가 탐침(probe)으로 상처 속을 이리저리 찔러 본다 → 탐색하다",
+      "hook": "프로브 → 우주 탐사선 '프로브'가 행성을 더듬어 봄",
+      "family": [
+        "prove",
+        "probable",
+        "approve"
+      ]
+    },
     "note": "도구·질문으로 **이것저것 찔러 보며 알아내는** 것입니다. 문제에서는 무엇이 있는지 몰라 **탐색용 호출을 반복하는** 비효율을 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> Expose the schema catalog as an MCP resource that the agent reads once upfront, instead of **probing** with repeated exploratory tool calls.\r\n> 스키마 카탈로그를 MCP 리소스로 노출해 에이전트가 처음에 한 번 읽게 하고, 반복적인 탐색용 도구 호출로 **더듬어 찾지** 않게 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **probe for** ~ : ~을 찾으려고 살피다\r\n- **health probe** : (서비스) 상태 확인 요청\r\n\r\n## 시험 포인트\r\n\"무엇이 있는지 알아내려는 탐색용 호출이 반복된다\"면 카탈로그(스키마·인덱스·파일 목록)를 **MCP 리소스**로 노출하는 보기가 정답입니다. 도구는 동작, 리소스는 읽을 데이터입니다."
   },
   {
@@ -8436,6 +9072,30 @@
         "ko": "청구 분쟁처럼 긴 대화에서, 에이전트는 기록을 간결하게 유지하려고 점진적 요약(progressive summarization)을 사용합니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "gress",
+          "ko": "걷다"
+        },
+        {
+          "part": "-ive",
+          "ko": "~하는"
+        }
+      ],
+      "origin": "라틴어 progredi (앞으로 걸어가다)",
+      "story": "한 걸음(gress)씩 앞으로(pro) 나아가는 → 점진적인, 단계적인",
+      "family": [
+        "congress",
+        "aggressive",
+        "digress",
+        "grade"
+      ]
+    },
     "note": "한꺼번에가 아니라 **단계적으로 조금씩 진행되는** 것입니다. 시간이 지날수록 점점 더해지거나 바뀌는 느낌이 있습니다.\r\n\r\n## 문제 속 쓰임\r\n> Your support agent uses **progressive** summarization—when context reaches 70% capacity, older turns are summarized while recent ones remain verbatim.\r\n> 지원 에이전트는 **점진적** 요약을 쓴다. 컨텍스트가 70% 차면 오래된 턴은 요약하고 최근 턴은 원문 그대로 둔다.\r\n\r\n## 함께 쓰는 표현\r\n- **progressive summarization** : 오래된 대화부터 차례로 요약해 나가는 방식\r\n- **progressive disclosure** : 필요한 정보를 단계적으로 보여 주기\r\n- **progressively** (부) 점점, 차츰\r\n\r\n## 비슷한 말\r\n- **incremental**, **gradual** — 조금씩 늘어나는\r\n- 정치 문맥에서는 **\"진보적인\"** 이라는 뜻으로도 씀"
   },
   {
@@ -8988,6 +9648,24 @@
         "ko": "코디네이터로 오류를 전달하는 방식을 설계할 때, 가장 잘 복구할 수 있는 방법은?"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "pag",
+          "ko": "꽂다, 고정"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 propagare (꺾꽂이로 퍼뜨리다)",
+      "story": "가지를 꺾어 앞으로(pro) 꽂아(pag) 계속 퍼뜨리듯 → 전파, 위로 전달"
+    },
     "note": "1. **(오류·정보를) 전달하다** — 아래 단계에서 생긴 것을 호출한 쪽(위)으로 넘기다\r\n2. **퍼뜨리다, 번식시키다**\r\n\r\n## 문제 속 쓰임\r\n> When designing error **propagation** to the coordinator, what approach enables the best recovery?\r\n> 코디네이터로 오류를 **전달하는** 방식을 설계할 때, 가장 잘 복구할 수 있는 방법은?\r\n\r\n## 함께 쓰는 표현\r\n- **error propagation** : 오류를 상위로 전달하는 방식\r\n- **propagate errors it cannot resolve** : 스스로 해결하지 못한 오류만 위로 넘기다\r\n\r\n## 시험 포인트\r\n좋은 오류 전달은 *무엇이 실패했고, 무엇을 시도했고, 어떤 부분 결과가 있는지* 를 함께 넘겨 **위에서 판단할 수 있게** 하는 것입니다."
   },
   {
@@ -9029,7 +9707,26 @@
         "sense": "제대로, 올바르게",
         "ko": "null 값이 있는 레코드가 누락된다는 것을 평이한 문장으로 설명하고, 변환 함수에서 null을 제대로 처리해 달라고 한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "proper",
+          "ko": "제 것의, 알맞은"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 proprius (자기 고유의)",
+      "story": "제 고유의(proper) 자리·방식대로 → 제대로, 올바르게",
+      "family": [
+        "property",
+        "proprietary",
+        "appropriate"
+      ]
+    }
   },
   {
     "id": "proportion",
@@ -9277,6 +9974,10 @@
         "ko": "범주마다 산문 단락 하나씩 쓰고, 각 단락을 범주 이름으로 시작한다."
       }
     ],
+    "memory": {
+      "origin": "라틴어 prosa oratio (곧게 뻗은 말)",
+      "story": "운율 없이 곧게 쭉 뻗어(prosa) 쓴 글 → 산문, (목록·코드가 아닌) 줄글"
+    },
     "note": "목록·표·코드·예시가 아니라 **문장으로 풀어 쓴 글**입니다. 문학의 \"산문\"보다, 시험에서는 *말로만 설명한 요구사항*을 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> You've been describing the requirements in **prose**, but Claude interprets them differently each time.\r\n> 요구사항을 **글(산문)로** 설명해 왔는데, Claude가 매번 다르게 해석한다.\r\n\r\n## 함께 쓰는 표현\r\n- **in prose** : 줄글로\r\n- **prose description** : 문장으로 된 설명\r\n\r\n## 비교\r\n- **prose** — 문장으로 풀어 쓴 설명\r\n- **structured format** — 표·JSON·목록처럼 형식이 정해진 것\r\n- **example** — 실제 입력·출력을 그대로 보여 주는 것\r\n\r\n## 시험 포인트\r\n산문 설명을 Claude가 매번 다르게 해석한다면, 산문을 더 다듬기보다 **구체적인 입력·출력 예시 2~3개**를 보여 주는 보기가 정답입니다."
   },
   {
@@ -9417,7 +10118,22 @@
         "sense": "증명하다, 입증하다",
         "ko": "특정 도구 호출을 강제하는 tool_choice가 없으면 모델이 원문 내용과 다른 transaction_type 라벨을 낼 수 있다는 것을 보여 준다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "prove",
+          "ko": "시험하다"
+        }
+      ],
+      "origin": "라틴어 probare (시험하다, 인정하다)",
+      "story": "직접 시험해(prob) 보고 옳다고 보여 준다 → 증명하다, 입증하다",
+      "family": [
+        "probe",
+        "approve",
+        "probable"
+      ]
+    }
   },
   {
     "id": "provenance",
@@ -9455,6 +10171,31 @@
         "ko": "이런 출처 손실을 막기 위한 서브에이전트 출력 계약 변경으로 가장 좋은 것은 무엇입니까?"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "ven",
+          "ko": "오다"
+        },
+        {
+          "part": "-ance",
+          "ko": "명사형"
+        }
+      ],
+      "origin": "라틴어 provenire (나오다, 생겨나다)",
+      "story": "어디서부터 앞으로(pro) 걸어 나왔나(ven) → 출처, 내력",
+      "hook": "프로버넌스 → '프로방스산' 와인 라벨처럼 출처 표시",
+      "family": [
+        "event",
+        "prevent",
+        "avenue",
+        "convention"
+      ]
+    },
     "note": "데이터나 주장이 **어디에서 왔고 어떤 경로를 거쳤는지**에 대한 정보입니다. 원래 미술품·골동품의 \"출처 내력\"을 뜻하는 말로, 데이터 분야에서는 *data provenance*(데이터 출처·계보)처럼 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> 출처 정보(**provenance**)는 나중에 복원하는 것이 아니라 파이프라인 전 구간에서 보존해야 합니다.\r\n\r\n## 함께 쓰는 표현\r\n- **data provenance** : 데이터 출처·계보\r\n- **preserve provenance** : 출처 정보를 보존하다\r\n- **claim-to-source mapping** : 주장-출처 매핑 (provenance 를 구조화해 넘기는 방법)\r\n\r\n## 비슷한 말\r\n- **source** — 출처 (가장 일반적인 말)\r\n- **lineage** — (데이터가 거쳐 온) 계보\r\n- **attribution** — 출처 표시\r\n\r\n## 시험 포인트\r\n멀티 에이전트 파이프라인에서 인용이 사라지는 문제는 **주장마다 출처를 구조화해 단계 사이에 그대로 넘기는** 보기가 정답입니다. 재검색·유사도 추측처럼 나중에 출처를 되찾으려는 보기는 오답입니다."
   },
   {
@@ -9878,7 +10619,27 @@
         "sense": "구두점, 문장 부호",
         "ko": "`doc#2026#report#final#v2`. 구간마다 뚜렷한 구두점으로 구분해 어디서 끝나는지 모호함이 없다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "punctu",
+          "ko": "점 찍다"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 punctuare (점을 찍다)",
+      "story": "문장 사이사이에 콕콕 점(punct)을 찍는 것 → 구두점, 문장 부호",
+      "family": [
+        "point",
+        "punctual",
+        "puncture",
+        "pungent"
+      ]
+    }
   },
   {
     "id": "purchase",

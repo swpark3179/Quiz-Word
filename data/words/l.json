@@ -277,6 +277,26 @@
         "ko": "시장 조사 어시스턴트의 코디네이터가 '전기차 충전 네트워크의 경쟁 구도를 분석하라'는 넓은 질의를 '충전 커넥터 유형 찾기', '충전 속도 나열하기' 같은 좁은 하위 과제로 나누고, 각각을 별도 서브에이전트에 배정했습니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "land",
+          "ko": "땅"
+        },
+        {
+          "part": "-scape",
+          "ko": "모습, 상태"
+        }
+      ],
+      "origin": "네덜란드어 landschap (땅의 모습, 지역)",
+      "story": "높은 데서 내려다본 땅(land) 전체의 모습(scape) → 판도, 구도",
+      "hook": "랜드스케이프 → 가로 모드처럼 넓게 본 전체 그림",
+      "family": [
+        "seascape",
+        "cityscape",
+        "landmark"
+      ]
+    },
     "note": "원래 \"풍경\"이라는 뜻으로, 비즈니스에서는 한 분야의 **전체적인 판도·구도**를 말합니다. 누가 있고 어떤 흐름이 있는지 한눈에 보는 그림입니다.\r\n\r\n## 문제 속 쓰임\r\n> For open-ended briefs like 'assess the competitive **landscape** for X', the coordinator runs a fixed three-step chain...\r\n> 'X의 경쟁 **구도**를 평가하라' 같은 개방형 요청에 대해 코디네이터는 고정된 3단계 체인을 실행한다.\r\n\r\n## 함께 쓰는 표현\r\n- **competitive landscape** : 경쟁 구도\r\n- **landscape report / analysis** : 판도 보고서 / 분석\r\n\r\n## 시험 포인트\r\n경쟁 구도 조사처럼 **개방형** 작업은 조사해 봐야 무엇을 더 파야 할지 드러납니다. 고정 체인이 아니라 앞선 발견에 따라 후속 작업을 만드는 **동적 분해**가 정답입니다."
   },
   {
@@ -395,7 +415,23 @@
         "sense": "(기간이 지나) 효력을 잃다, 만료되다",
         "ko": "세션 단위 허용은 정해진 턴 수가 지나면 만료되는데, 재개된 이력이 이미 그 지점을 지났다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "laps",
+          "ko": "미끄러지다"
+        }
+      ],
+      "origin": "라틴어 lapsus (미끄러짐)",
+      "story": "기한이 슬그머니 미끄러져(laps) 지나가 버린다 → 효력을 잃다, 만료되다",
+      "hook": "랩스 → 타임랩스처럼 시간이 흘러 지나감",
+      "family": [
+        "collapse",
+        "elapse",
+        "relapse"
+      ]
+    }
   },
   {
     "id": "laptop",
@@ -1112,7 +1148,21 @@
         "sense": "(필요할 때 비로소) 지연 방식으로",
         "ko": "중첩 CLAUDE.md만 지연 로드되는 유일한 지침 파일이므로, 규칙을 `src/CLAUDE.md` 하나에 넣는다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "lazy",
+          "ko": "게으른"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "게으름뱅이처럼 미리 안 하고 꼭 필요할 때만 움직인다 → 지연 방식으로",
+      "hook": "레이질리 → '레이지 로딩'처럼 필요할 때만 불러옴"
+    }
   },
   {
     "id": "lead",
@@ -1291,6 +1341,10 @@
         "ko": "한 범주의 규칙이 다른 범주로 새지 않게 하려면 프롬프트를 어떻게 배치하는 것이 가장 좋을까요?"
       }
     ],
+    "memory": {
+      "story": "물통 틈으로 물이 똑똑 새듯 정보가 밖으로 빠져나간다 → 유출하다, 번지다",
+      "hook": "리크 → '이크!' 틈새로 줄줄 샌다"
+    },
     "note": "액체가 틈으로 **새는** 것에서 나온 말로, 비밀·정보가 **허락 없이 밖으로 새어 나가는** 것을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> ...each engineer (and CI) must supply their own credential without **leaking** it.\r\n> 각 엔지니어(와 CI)는 **유출** 없이 각자의 자격 증명을 제공해야 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **leak a secret / credential** : 비밀 / 자격 증명을 유출하다\r\n- **data leak** : 데이터 유출\r\n- **memory leak** : 메모리 누수 — 해제되지 않은 메모리가 계속 쌓이는 버그\r\n\r\n## 시험 포인트\r\n공유·커밋되는 `.mcp.json` 에는 토큰 대신 **`${GITHUB_TOKEN}` 같은 환경 변수 참조**만 두고, 실제 값은 각 머신·CI 가 주입하게 하는 것이 정답입니다."
   },
   {
@@ -1817,7 +1871,26 @@
         "sense": "(시간·분량이) 긴, 장황한",
         "ko": "청구 지원 에이전트가 프롬프트를 짧게 유지하려고 긴 상담을 몇 턴마다 요약해 왔습니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "length",
+          "ko": "길이"
+        },
+        {
+          "part": "-y",
+          "ko": "~가 많은"
+        }
+      ],
+      "story": "길이(length)가 쭉쭉 늘어난 → 긴, 장황한",
+      "hook": "렝시 → 렝스(length)가 넘쳐 길~다",
+      "family": [
+        "long",
+        "length",
+        "lengthen"
+      ]
+    }
   },
   {
     "id": "less",
@@ -2557,6 +2630,26 @@
         "ko": "가장 가능성 높은 결과는 무엇입니까?"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "like",
+          "ko": "~와 같은"
+        },
+        {
+          "part": "-ly",
+          "ko": "~한"
+        }
+      ],
+      "origin": "고대 노르드어 likligr (그럴듯한)",
+      "story": "결과와 같아(like) 보이는 쪽 → ~할 것 같은, 가능성 높은",
+      "hook": "라이클리 → 라이크(like) '~같은' = ~일 것 같은",
+      "family": [
+        "alike",
+        "likewise",
+        "likeness"
+      ]
+    },
     "note": "어떤 일이 **일어날 가능성이 높은** 것입니다. *be likely to* + 동사 는 \"~할 것 같다\", 비교급 *more / less likely* 는 \"가능성이 더 높은 / 낮은\"입니다.\r\n\r\n## 문제 속 쓰임\r\n> What is the **most likely** cause and correct architectural fix?\r\n> **가장 가능성 높은** 원인과 올바른 아키텍처 수정은?\r\n> Use a less capable model that is **less likely** to follow embedded instructions\r\n> 삽입된 지시를 **덜 따를 것 같은**, 성능이 낮은 모델을 쓴다\r\n\r\n## 함께 쓰는 표현\r\n- **be likely to** + 동사 : ~할 것 같다\r\n- **most likely** : 가장 가능성 높은, 십중팔구\r\n- **likelihood** (명) 가능성 · **unlikely** (형) ~할 것 같지 않은"
   },
   {
@@ -2979,6 +3072,26 @@
         "ko": "MCP 도구 설명에 예시 쿼리를 넣고, 문자열 매칭이 놓치는 것을 찾는 의미 기반 파일 간 검색이라는 점을 명시한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "liter",
+          "ko": "글자"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 littera (글자)",
+      "story": "뜻 해석 없이 글자(liter) 하나하나 그대로 → 글자 그대로의",
+      "hook": "리터럴 → 코드의 '문자열 리터럴', 적힌 그대로의 값",
+      "family": [
+        "letter",
+        "literature",
+        "literacy"
+      ]
+    },
     "note": "**글자 그대로**인 것입니다. 검색에서는 뜻이 아니라 **문자열이 정확히 같은지**로 찾는 것을, 프로그래밍에서는 코드에 값을 그대로 적은 것(*string literal*)을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> ...so it misses semantically related call sites that don't share **literal** text.\r\n> 같은 **문자열**을 공유하지 않는 의미상 관련된 호출 지점을 놓친다.\r\n\r\n## 함께 쓰는 표현\r\n- **literal match / matching** : 문자열 그대로의 일치\r\n- **string literal** : 문자열 리터럴 (코드에 직접 쓴 값)\r\n- **literally** (부) 문자 그대로, 정말로\r\n\r\n## 비교\r\n- **literal** search — 글자가 같아야 찾음 (`Grep`)\r\n- **semantic** search — 뜻이 비슷하면 찾음"
   },
   {
@@ -3877,7 +3990,16 @@
         "sense": "물류",
         "ko": "물류 회사의 선하증권(bill of lading) 추출 파이프라인은 전체 필드 정확도가 94%입니다."
       }
-    ]
+    ],
+    "memory": {
+      "origin": "프랑스어 logistique (군대 숙영술)",
+      "story": "군대가 묵을(loger) 곳과 보급을 챙기던 기술 → 물류",
+      "hook": "로지스틱스 → 택배 회사 이름 끝 '로지스' = 물류",
+      "family": [
+        "lodge",
+        "lodging"
+      ]
+    }
   },
   {
     "id": "long",

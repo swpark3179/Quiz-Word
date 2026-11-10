@@ -495,7 +495,28 @@
         "sense": "(입력을) 정제하다, 무해하게 만들다",
         "ko": "지적을 촉발한 코드 구조(예: 팀의 sanitization 헬퍼 호출)를 이름으로 기록하는 `detected_pattern` 필드"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "sanit",
+          "ko": "건강, 위생"
+        },
+        {
+          "part": "-ize",
+          "ko": "~하게 하다"
+        }
+      ],
+      "origin": "라틴어 sanitas (건강)",
+      "story": "병균을 없애 건강하게(sanit) 하듯 위험한 입력을 걸러 낸다 → 정제하다",
+      "hook": "새니타이즈 → 손 세정제 '새니타이저'로 입력을 소독",
+      "family": [
+        "sane",
+        "sanity",
+        "sanitary",
+        "insane"
+      ]
+    }
   },
   {
     "id": "satisfy",
@@ -624,6 +645,24 @@
         "ko": "컨텍스트 윈도 포화 — 누적 대화 기록이 실질적인 주의 범위를 넘었다. 요약/압축(compaction) 전략을 구현한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "satur",
+          "ko": "배부른, 가득"
+        },
+        {
+          "part": "-ation",
+          "ko": "명사형"
+        }
+      ],
+      "origin": "라틴어 saturare (배불리 채우다)",
+      "story": "더는 못 먹을 만큼 배부르게(satur) 채운 상태 → 포화",
+      "family": [
+        "satisfy",
+        "satiate"
+      ]
+    },
     "note": "더 담을 수 없을 만큼 **가득 찬 상태**입니다. AI 문맥의 *context saturation* 은 대화·도구 출력이 너무 쌓여 모델이 앞부분이나 중간 내용을 제대로 활용하지 못하는 상황을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> Context window **saturation** — the cumulative message history exceeds the effective attention range; implement a summarization/compaction strategy\r\n> 컨텍스트 윈도 **포화** — 누적 대화 기록이 실질적인 주의 범위를 넘었다. 요약/압축(compaction) 전략을 구현한다\r\n\r\n## 함께 쓰는 표현\r\n- **context saturation** : 컨텍스트 포화\r\n- **saturated** (형) 포화된, 꽉 찬\r\n\r\n## 시험 포인트\r\n긴 대화에서 초반 내용을 잊는 문제는 더 큰 컨텍스트 모델로 바꾸기보다 **요약·압축으로 컨텍스트를 재구성**하는 보기가 정답입니다. 반면 도구 선택 오류 문제에서 \"포화를 줄이려고 덜 쓰는 도구를 뺀다\"는 보기는 원인을 잘못 짚은 오답입니다."
   },
   {
@@ -844,6 +883,9 @@
         "ko": "바로 실행에 들어가 Slack 채널 클래스의 뼈대를 먼저 만들고, 통합 방식 결정은 나중으로 미룬다."
       }
     ],
+    "memory": {
+      "story": "건물 올리기 전 철골 발판(비계)부터 세우듯 → 기본 뼈대를 만들어 두다"
+    },
     "note": "공사장의 비계(발판)에서 온 말로, 코드에서는 세부 구현 전에 **파일·클래스 같은 기본 뼈대를 먼저 만들어 두는** 것을 뜻합니다.\r\n\r\n## 문제 속 쓰임\r\n> Start direct execution to **scaffold** the Slack channel class, deferring the integration method decision until later.\r\n> 바로 실행에 들어가 Slack 채널 클래스의 **뼈대를 먼저 만들고**, 통합 방식 결정은 나중으로 미룬다.\r\n\r\n## 함께 쓰는 표현\r\n- **scaffold a project / component** : 프로젝트·컴포넌트의 기본 구조를 만들다\r\n- **scaffolding** (명) 뼈대 코드; (공사장의) 비계\r\n\r\n## 비슷한 말\r\n- **boilerplate** — 매번 거의 그대로 반복해 쓰는 상용구 코드\r\n- **skeleton** — 내용 없이 구조만 갖춘 코드\r\n\r\n## 시험 포인트\r\n핵심 설계 결정이 정해지지 않았는데 **뼈대부터 만드는** 선택지는 잘못된 추상화 위에 작업할 위험이 있어 오답이 되기 쉽습니다. 요구사항이 모호하면 먼저 plan mode 로 선택지를 살피는 쪽이 낫습니다."
   },
   {
@@ -1286,7 +1328,15 @@
         "sense": "(인증 등의) 방식, 체계",
         "ko": "Anthropic 문서에 따르면 Claude Code에서 이 인증 방식을 다루는 권장 방법은 무엇입니까?"
       }
-    ]
+    ],
+    "memory": {
+      "origin": "그리스어 skhēma (형태, 짜임새)",
+      "story": "정해진 짜임새(skhēma)대로 돌아가는 틀 → 방식, 체계 (예: 인증 scheme)",
+      "family": [
+        "schema",
+        "schematic"
+      ]
+    }
   },
   {
     "id": "scope",
@@ -1487,6 +1537,11 @@
         "ko": "코디네이터는 각 서브에이전트의 출력을 원문 그대로 다음 단계로 넘깁니다: 웹 검색 서브에이전트가 긁어 온 페이지 본문 전체, 약 38k 토큰이 그대로 종합 서브에이전트의 프롬프트로 들어갑니다."
       }
     ],
+    "memory": {
+      "origin": "고대 노르드어 skrapa (긁다)",
+      "story": "바닥을 박박 긁어내듯 웹페이지 글을 긁어 온다 → 스크레이핑하다",
+      "hook": "스크레이프 → 신문 '스크랩'하듯 페이지를 긁어 모음"
+    },
     "note": "웹페이지에서 **내용을 자동으로 긁어 오는** 것입니다. 원래 \"긁다, 긁어내다\"라는 뜻에서 왔습니다.\r\n\r\n## 문제 속 쓰임\r\n> ...the web-search subagent's full **scraped** page bodies — roughly 38k tokens — flow straight into the synthesis subagent's prompt.\r\n> 웹 검색 서브에이전트가 **긁어 온** 페이지 본문 전체, 약 38k 토큰이 그대로 종합 서브에이전트의 프롬프트로 들어갑니다.\r\n\r\n## 함께 쓰는 표현\r\n- **web scraping** : 웹 스크레이핑\r\n- **scraper** (명) 스크레이퍼, 긁어 오는 프로그램\r\n\r\n## 시험 포인트\r\n긁어 온 원문을 통째로 넘기면 중간에 묻힌 정보를 놓칩니다(lost-in-the-middle). 넘기기 전에 **관련 발견 사항만 추리고**, 받는 쪽 프롬프트 맨 앞에 핵심 요약을 두는 보기가 정답입니다."
   },
   {
@@ -1737,7 +1792,26 @@
         "sense": "면밀한 검토, 정밀 조사",
         "ko": "성찰은 추론 예산을 늘리지만 이슈마다 같은 깊이의 검사를 적용하므로, 노력을 더해도 검토가 크게 늘지 않는다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "scrutin",
+          "ko": "샅샅이 뒤짐"
+        },
+        {
+          "part": "-y",
+          "ko": "명사형"
+        }
+      ],
+      "origin": "라틴어 scrutinium (샅샅이 뒤짐)",
+      "story": "구석구석 샅샅이 뒤지며(scrut) 살핀다 → 면밀한 검토, 정밀 조사",
+      "hook": "스크루티니 → 나사(스크루)까지 풀어 보는 정밀 검사",
+      "family": [
+        "scrutinize",
+        "inscrutable"
+      ]
+    }
   },
   {
     "id": "sdk",
@@ -2714,6 +2788,25 @@
         "ko": "`tool_choice` 를 강제 대신 `\"any\"` 로 두어, 모델이 최종 `tool_use` 결과를 반환하기 전에 산술을 스스로 교정할 수 있게 해야 한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "self",
+          "ko": "스스로"
+        },
+        {
+          "part": "correct",
+          "ko": "바로잡다"
+        }
+      ],
+      "story": "남이 지적하기 전에 스스로(self) 틀린 곳을 바로잡는다(correct) → 자기 교정",
+      "hook": "셀프 코렉트 → 셀프 주유처럼 오류도 셀프로 고침",
+      "family": [
+        "direct",
+        "erect",
+        "rectangle"
+      ]
+    },
     "note": "남이 고쳐 주기 전에 **스스로 실수를 알아차리고 바로잡는** 것입니다. 명사형 *self-correction* 은 \"자기 교정\"입니다.\r\n\r\n## 문제 속 쓰임\r\n> tool_choice should be \"any\" rather than forced, so the model can **self-correct** the arithmetic before it returns the final tool_use result.\r\n> `tool_choice` 를 강제 대신 `\"any\"` 로 두어, 모델이 최종 `tool_use` 결과를 반환하기 전에 산술을 **스스로 교정할** 수 있게 해야 한다\r\n\r\n## 함께 쓰는 표현\r\n- **self-correction loop** : 오류를 되먹여 스스로 고치게 하는 반복\r\n- **self-correcting** (형) 스스로 바로잡는\r\n\r\n## 시험 포인트\r\n`tool_choice` 설정을 바꾼다고 모델이 계산을 스스로 고치지는 않습니다. 합계 불일치 같은 의미 오류는 **코드로 다시 계산해 검사**하고, 어긋나면 표시하거나 **오류 내용을 붙여 재시도**하게 하는 보기가 정답입니다."
   },
   {
@@ -2903,7 +2996,36 @@
         "sense": "반도체",
         "ko": "\"반도체 부족 사태를 조사하라\" 같은 열린 목표로 줄이고, 나머지는 서브에이전트가 모두 정하게 한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "semi-",
+          "ko": "반, 절반"
+        },
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "duct",
+          "ko": "이끌다"
+        },
+        {
+          "part": "-or",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 conducere (함께 이끌다)",
+      "story": "전기를 반(semi)쯤만 이끌어(duct) 흘려보내는 물질 → 반도체",
+      "hook": "세미컨덕터 → '세미(반)'만 통하는 컨덕터(도체)",
+      "family": [
+        "conduct",
+        "produce",
+        "introduce",
+        "deduct"
+      ]
+    }
   },
   {
     "id": "send",
@@ -3220,6 +3342,27 @@
         "ko": "리서치 어시스턴트가 서브에이전트 5개(시장 규모, 경쟁사 가격, 규제 리스크, 고객 정서, 유통 채널)의 출력을 하나의 긴 문서로 합쳐 종합 단계에 넘깁니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "senti",
+          "ko": "느끼다"
+        },
+        {
+          "part": "-ment",
+          "ko": "~것(명사)"
+        }
+      ],
+      "origin": "라틴어 sentire (느끼다)",
+      "story": "마음으로 느낀(senti) 것(-ment) → 감정, 글에 담긴 정서",
+      "hook": "센티멘트 → '센치'해진 마음 → 감정, 정서",
+      "family": [
+        "sense",
+        "sensitive",
+        "consent",
+        "resent"
+      ]
+    },
     "note": "글이나 말에 담긴 **감정의 방향(긍정·부정)** 을 말합니다. 자연어 처리에서는 *sentiment analysis*(감성 분석)로 텍스트가 긍정적인지 부정적인지 판별합니다.\r\n\r\n## 문제 속 쓰임\r\n> ...escalate when negative **sentiment** exceeds a threshold.\r\n> 부정적인 **감정**이 임계값을 넘으면 에스컬레이션한다.\r\n\r\n## 함께 쓰는 표현\r\n- **sentiment analysis** : 감성 분석\r\n- **negative / positive sentiment** : 부정적 / 긍정적 정서\r\n- **customer sentiment** : 고객 정서·반응\r\n\r\n## 시험 포인트\r\n고객의 **감정(불만 정도)** 은 케이스가 복잡한지, 정책 예외가 필요한지와는 다른 문제입니다. 감정 분석을 에스컬레이션 기준으로 쓰는 선택지는 차분하지만 복잡한 케이스를 놓치기 때문에 오답이 되기 쉽습니다."
   },
   {
@@ -4077,7 +4220,17 @@
         "sense": "(settle on) ~로 정하다, 결정하다",
         "ko": "어려운 부분은 유효한 접근 중 하나를 고르는 일이고 그 선택은 편집 전에 정해야 하므로, 먼저 플랜 모드로 진행한다"
       }
-    ]
+    ],
+    "memory": {
+      "origin": "고대 영어 setlan (자리에 앉히다)",
+      "story": "이리저리 떠돌던 선택지가 한 자리(seat)에 내려앉는다 → ~로 정하다",
+      "hook": "세틀 → 고민 끝 '세팅' 확정 → ~로 정하다",
+      "family": [
+        "seat",
+        "set",
+        "settlement"
+      ]
+    }
   },
   {
     "id": "setup",
@@ -4288,6 +4441,14 @@
         "ko": "프롬프트에 \"always use the exact word CRITICAL for severe issues\"(심각한 문제에는 항상 CRITICAL이라는 단어를 정확히 쓸 것)라고 지시하고, 그 표현에 의존해 빌드를 판정한다"
       }
     ],
+    "memory": {
+      "origin": "라틴어 severus (엄격한, 진지한)",
+      "story": "웃음기 없는 엄격한(severus) 얼굴만큼 상황이 무겁다 → 심각한, 극심한",
+      "family": [
+        "severity",
+        "persevere"
+      ]
+    },
     "note": "정도가 **아주 심한, 심각한** 상태를 나타냅니다. 명사 *severity* 는 \"심각도\"입니다.\r\n\r\n## 문제 속 쓰임\r\n> The gate is flaky because Claude phrases **severe** findings differently each run — \"severe issue,\" \"major bug,\" \"critical defect.\"\r\n> Claude가 **심각한** 발견 사항을 실행할 때마다 \"severe issue\", \"major bug\", \"critical defect\"처럼 다르게 표현하기 때문에 게이트 결과가 들쭉날쭉합니다.\r\n\r\n## 함께 쓰는 표현\r\n- **severe issue / bug** : 심각한 문제 / 버그\r\n- **severely** (부) 심하게\r\n\r\n## 시험 포인트\r\n자유 문장을 grep 해서 심각도를 판정하면 표현이 바뀔 때마다 깨집니다. `--output-format json` 과 `--json-schema` 로 **심각도를 정해진 필드 값으로** 받게 하는 보기가 정답이고, temperature 0 이나 동의어 사전은 오답입니다."
   },
   {
@@ -4363,6 +4524,24 @@
         "ko": "아키텍트가 보안·정확성·스타일 범주별로 별도 기준(각각 포함 규칙과 심각도 예시)을 정의한 긴 리뷰 프롬프트를 구성하고 있습니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "severe",
+          "ko": "심한, 엄한"
+        },
+        {
+          "part": "-ity",
+          "ko": "성질, 정도"
+        }
+      ],
+      "origin": "라틴어 severitas (엄격함)",
+      "story": "얼마나 심한(severe)지 그 정도(-ity)를 매긴 등급 → 심각도",
+      "family": [
+        "severe",
+        "persevere"
+      ]
+    },
     "note": "문제·버그가 **얼마나 심각한가** 의 정도입니다. 코드 리뷰나 장애 관리에서 critical·high·medium·low 같은 등급으로 매깁니다.\r\n\r\n## 문제 속 쓰임\r\n> What's the most effective way to improve **severity** consistency?\r\n> **심각도** 판정의 일관성을 높이는 가장 효과적인 방법은?\r\n\r\n## 함께 쓰는 표현\r\n- **severity level / rating** : 심각도 등급\r\n- **high-severity issue** : 심각도가 높은 이슈\r\n- **severe** (형) 심각한, 극심한\r\n\r\n## 비교\r\n- **severity** — 문제가 *얼마나 나쁜가* (영향의 크기)\r\n- **priority** — *얼마나 먼저* 처리할 것인가 (작업 순서)\r\n\r\n## 시험 포인트\r\n심각도 판정이 들쭉날쭉하면 **등급별 기준과 구체적인 코드 예시**를 프롬프트에 주는 것이 정석입니다. 같은 PR 안에서 상대적으로 매기게 하면 PR마다 기준이 달라져 오히려 일관성이 떨어집니다."
   },
   {
@@ -4406,7 +4585,11 @@
         "sense": "얕은 (shallow clone/fetch: 최근 이력만 가져오는)",
         "ko": "checkout이 얕은 fetch-depth를 써서 CLI가 기준 브랜치와의 diff를 구하지 못하고, 빠진 커밋을 찾아 git 이력을 계속 스캔했다"
       }
-    ]
+    ],
+    "memory": {
+      "story": "발목만 찰랑 잠기는 물가처럼 최근 이력만 살짝 → 얕은",
+      "hook": "섈로우 → '살짝 low', 깊이가 낮은 → 얕은"
+    }
   },
   {
     "id": "shard",
@@ -4700,6 +4883,11 @@
         "ko": "반품 처리 에이전트가 주문 조회 도구를 호출하면 확인하는 주문마다 40개가 넘는 필드(배송사 메타데이터, 내부 창고 코드, 마케팅 태그 등)가 담긴 JSON이 돌아오는데, 조회가 열두 번쯤 쌓이자 반품 자격 판단에 필요한 것은 5개 필드(주문 상태, 구매일, 품목, 금액, 반품 기한)뿐인데도 원본 페이로드가 컨텍스트 창을 지배합니다."
       }
     ],
+    "memory": {
+      "origin": "고대 영어 scip (배)",
+      "story": "완성된 물건을 배(ship)에 실어 세상에 내보낸다 → 출시하다, 발송하다",
+      "hook": "쉽 → 배에 실어 '쉽게' 내보낸다 → 출시하다"
+    },
     "note": "1. **(물건을) 발송하다, 발송되다** — 주문 상태의 *shipped* 는 \"발송됨(출고됨)\"\r\n2. **(제품·기능을) 출시하다, 배포하다** — 개발 문화에서 \"ship it\" 처럼 완성해 내보낸다는 뜻\r\n\r\n## 문제 속 쓰임\r\n> The customer wants to cancel an order that **shipped** yesterday, delivery tomorrow.\r\n> 고객이 어제 **발송되어** 내일 도착 예정인 주문을 취소하려 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **shipping address** : 배송지 주소\r\n- **shipping status** : 배송 상태\r\n- **ship a feature** : 기능을 출시하다\r\n- **shipment** (명) 발송, 배송 물품\r\n\r\n## 비교\r\n- **ship** — 판매자가 물건을 *보내는* 것 (발송)\r\n- **deliver** — 물건이 받는 사람에게 *도착하는* 것 (배달)"
   },
   {
@@ -4863,7 +5051,27 @@
         "sense": "부족, 품귀",
         "ko": "\"반도체 부족 사태를 조사하라\" 같은 열린 목표로 줄이고, 나머지는 서브에이전트가 모두 정하게 한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "short",
+          "ko": "짧은, 모자란"
+        },
+        {
+          "part": "-age",
+          "ko": "상태"
+        }
+      ],
+      "origin": "고대 영어 sceort (짧은)",
+      "story": "필요한 양에 짧게(short) 못 미치는 상태(-age) → 부족, 품귀",
+      "hook": "쇼티지 → 재고가 '쇼트(short)' 나서 모자람",
+      "family": [
+        "shorten",
+        "shortly",
+        "shortcut"
+      ]
+    }
   },
   {
     "id": "shorten",
@@ -5120,6 +5328,11 @@
         "ko": "추가 수정을 하기 전에 같은 세션을 다시 열어 `/compact` 로 낡은 도구 출력을 줄인다"
       }
     ],
+    "memory": {
+      "origin": "고대 영어 scrincan (오그라들다)",
+      "story": "뜨거운 물에 빤 스웨터가 쪼그라든다 → 줄어들다, 줄이다",
+      "hook": "슈링크 → 랩을 꽉 조이는 '슈링크 포장' → 줄어들다"
+    },
     "note": "크기·양을 **줄이거나 줄어드는** 것입니다. 활용은 *shrink – shrank – shrunk* 입니다.\r\n\r\n## 문제 속 쓰임\r\n> Re-run the same session with /compact to **shrink** the stale tool outputs before making any further edits\r\n> 추가 수정을 하기 전에 같은 세션을 다시 열어 `/compact` 로 낡은 도구 출력을 **줄인다**\r\n\r\n## 함께 쓰는 표현\r\n- **shrink the context** : 컨텍스트를 줄이다\r\n- **shrink to** ~ : ~로 줄어들다\r\n\r\n## 시험 포인트\r\n`/compact` 로 **줄여도 낡은 정보는 낡은 그대로** 요약될 뿐입니다. 파일이 바뀐 뒤라면 새 세션에서 요약만 넣고 현재 상태를 다시 읽는 쪽이 정답입니다."
   },
   {
@@ -5318,6 +5531,20 @@
         "ko": "마무리 문구 정규식 허용 목록을 넓혀, 모델이 낼 수 있는 모든 정중한 맺음말 변형까지 매칭되게 한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "sign",
+          "ko": "서명하다"
+        },
+        {
+          "part": "off",
+          "ko": "끝내고 떠나"
+        }
+      ],
+      "story": "편지 끝에 이름을 쓰고(sign) 자리를 뜬다(off) → 맺음말, 끝인사",
+      "hook": "사인 오프 → '사인'하고 '오프'(퇴장) → 끝인사"
+    },
     "note": "1. **(대화·메일 끝의) 맺음말, 끝인사** — *Best regards*, *Let me know if you need anything else* 같은 마무리 문구\r\n2. **(최종) 승인** — *get sign-off from* ~ 은 \"~의 승인을 받다\". 동사로는 *sign off (on)*\r\n\r\n## 문제 속 쓰임\r\n> Expand the regex allowlist of closing phrases so it also matches every polite **sign-off** variant the model might emit.\r\n> 마무리 문구 정규식 허용 목록을 넓혀, 모델이 낼 수 있는 모든 정중한 **맺음말** 변형까지 매칭되게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **sign off on** ~ : ~을 최종 승인하다\r\n- **closing phrase** : 마무리 문구\r\n\r\n## 시험 포인트\r\n모델의 **문장(맺음말)을 보고 루프 종료를 판단하는** 보기는 모두 오답입니다. `stop_reason` 이 `end_turn` 일 때만 끝내고, `tool_use` 면 도구를 실행해 `tool_result` 를 붙여 계속 돌려야 합니다."
   },
   {
@@ -6580,7 +6807,21 @@
         "sense": "약간, 조금",
         "ko": "서로 만든 모듈 지도도 조금씩 다릅니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "slight",
+          "ko": "가벼운, 약간의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "가볍게(slight) 살짝 건드린 만큼만 → 약간, 조금",
+      "hook": "슬라이틀리 → 햄을 '슬라이스'처럼 얇게 조금"
+    }
   },
   {
     "id": "slim",
@@ -6704,7 +6945,15 @@
         "sense": "(실수·버그가) 빠져나가다, 새어 나가다",
         "ko": "그런데도 버그가 리뷰를 빠져나갑니다."
       }
-    ]
+    ],
+    "memory": {
+      "story": "젖은 손에서 비누가 미끄러지듯 버그가 검사를 쓱 통과 → 빠져나가다",
+      "hook": "슬립 → '슬리퍼' 신고 미끄러지듯 쓱 빠져나감",
+      "family": [
+        "slippery",
+        "slipper"
+      ]
+    }
   },
   {
     "id": "slow",
@@ -7026,7 +7275,20 @@
         "sense": "지금까지",
         "ko": "지금까지 사용자가 물은 모든 모호한 질문마다 입력-도구 쌍 하나씩, 설명 없이. 알려진 사례를 모두 덮는다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "so",
+          "ko": "이만큼"
+        },
+        {
+          "part": "far",
+          "ko": "멀리"
+        }
+      ],
+      "story": "출발점에서 이만큼(so) 멀리(far) 오기까지 → 지금까지"
+    }
   },
   {
     "id": "so-that",
@@ -7369,7 +7631,21 @@
         "sense": "더 일찍, 더 빨리",
         "ko": "`tool_choice` 를 `\"any\"` 로 강제해, 모델이 매 턴 먼저 탐색하는 대신 생산적인 도구 호출에 더 빨리 나서게 한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "soon",
+          "ko": "곧"
+        },
+        {
+          "part": "-er",
+          "ko": "더 (비교급)"
+        }
+      ],
+      "origin": "고대 영어 sona (즉시, 곧)",
+      "story": "곧(soon)보다 더(-er) 앞당겨 → 더 일찍, 더 빨리"
+    }
   },
   {
     "id": "sort",
@@ -8326,7 +8602,12 @@
         "sense": "(spell out) 상세히 풀어 설명하다",
         "ko": "한 팀의 코드 리뷰 어시스턴트 프롬프트에는 이미 이슈 지적용 루브릭이 항목별로 빠짐없이 적혀 있는데도, 실행마다 지적 형식이 달라 어떤 것은 위치보다 심각도를 먼저 쓰고 어떤 것은 수정 제안을 아예 빼먹습니다."
       }
-    ]
+    ],
+    "memory": {
+      "origin": "고대 프랑스어 espeller (한 자씩 읽다)",
+      "story": "철자 하나하나 불러 주듯(spell) 밖으로(out) 다 꺼내 말한다 → 상세히 풀어 설명하다",
+      "hook": "스펠 아웃 → 스펠링 하나하나 불러 주듯 → 자세히 설명"
+    }
   },
   {
     "id": "spend",
@@ -8486,6 +8767,20 @@
         "ko": "백엔드 조회가 끝날 때마다 코디네이터가 호출해 원본 필드를 다시 쓰게 하는 전용 포맷팅 서브에이전트를 띄운다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "spin",
+          "ko": "빙빙 돌리다"
+        },
+        {
+          "part": "up",
+          "ko": "위로, 가동"
+        }
+      ],
+      "story": "멈춰 있던 디스크를 빙빙 돌려(spin) 끌어올린다(up) → 서버를 새로 띄우다",
+      "hook": "스핀 업 → 팽이에 '스핀' 걸어 벌떡 세운다 → 가동하다"
+    },
     "note": "서버·컨테이너·에이전트 같은 것을 **새로 띄워 돌아가게 하는** 것입니다. 하이픈을 붙인 *spin-up* 은 명사(가동, 기동)로 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> **Spin up** a dedicated formatting subagent that the coordinator calls after every backend lookup to rewrite the raw fields.\r\n> 백엔드 조회가 끝날 때마다 코디네이터가 호출해 원본 필드를 다시 쓰게 하는 전용 포맷팅 서브에이전트를 **띄운다**\r\n\r\n## 함께 쓰는 표현\r\n- **spin up an instance / a container** : 인스턴스 / 컨테이너를 띄우다\r\n- **spin down** : (돌던 것을) 내리다, 정지하다\r\n\r\n## 시험 포인트\r\n형식 정규화처럼 규칙이 정해진 일에 **서브에이전트를 새로 띄우는** 보기는 비용·지연만 늘리는 과잉 설계입니다. 도구 출력을 `PostToolUse` 훅에서 **코드로 정규화**하는 쪽이 정답입니다."
   },
   {
@@ -8922,6 +9217,24 @@
         "ko": "공유 검색·문서 분석 단계가 끝난 뒤, 이해관계자들은 비용이 큰 검색을 다시 실행하지 않고 같은 증거로 두 가지 보고서, 즉 한 페이지짜리 임원 요약본과 기술 심층 분석본을 원합니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "stake",
+          "ko": "판돈, 걸린 몫"
+        },
+        {
+          "part": "hold",
+          "ko": "쥐다"
+        },
+        {
+          "part": "-er",
+          "ko": "사람"
+        }
+      ],
+      "story": "일에 자기 몫(stake)을 걸어 쥐고(hold) 있는 사람(-er) → 이해관계자",
+      "hook": "스테이크홀더 → 스테이크 한 조각씩 몫이 있는 사람"
+    },
     "note": "어떤 프로젝트나 결정에 **이해관계가 걸려 있어 의견을 낼 자격이 있는 사람·집단** 입니다. 경영진, 고객, 다른 팀 등을 두루 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> ...**stakeholders** have rejected any approach that filters findings before developer review.\r\n> **이해관계자들**은 개발자 리뷰 전에 발견 사항을 걸러 내는 방식은 모두 거부했다.\r\n\r\n## 함께 쓰는 표현\r\n- **key stakeholders** : 주요 이해관계자\r\n- **stakeholder buy-in** : 이해관계자의 동의·지지\r\n- **stakeholder requirements** : 이해관계자 요구사항\r\n\r\n## 시험 포인트\r\n문제에 \"stakeholders have rejected ~\" 같은 **제약 조건**이 나오면, 그 조건을 어기는 선택지는 아무리 효과적으로 보여도 정답이 될 수 없습니다. 먼저 제약을 어기는 보기부터 지우세요."
   },
   {
@@ -8996,6 +9309,10 @@
         "ko": "추가 수정을 하기 전에 같은 세션을 다시 열어 `/compact` 로 낡은 도구 출력을 줄인다"
       }
     ],
+    "memory": {
+      "story": "며칠 지나 딱딱하게 굳은 빵처럼 신선함을 잃은 → 낡은, 최신이 아닌",
+      "hook": "스테일 → 너무 오래 '스테이(stay)'해 김빠진 → 낡은"
+    },
     "note": "시간이 지나 **더 이상 최신이 아닌, 낡은** 정보를 가리킵니다. 원래 빵 같은 음식이 \"오래되어 굳은\"이라는 뜻입니다.\r\n\r\n## 문제 속 쓰임\r\n> Fork the prior session so the **stale** results are copied into a new branch that continues the report\r\n> 이전 세션을 포크해, **낡은** 결과가 복사된 새 분기에서 보고서 작성을 이어 간다\r\n\r\n## 함께 쓰는 표현\r\n- **stale data / cache** : 오래된 데이터 / 캐시\r\n- **stale tool results** : 낡은 도구 결과\r\n- **go stale** : 낡아지다, 최신성을 잃다\r\n\r\n## 반대말\r\n- **fresh**, **up-to-date** — 새로운, 최신의\r\n\r\n## 시험 포인트\r\n낡은 도구 결과가 문제일 때 `--resume`, fork, `/compact` 는 그 결과를 **그대로 끌고 갑니다**. **새 세션 + 이전 결론 요약 + 다시 조회**가 정답 패턴입니다."
   },
   {
@@ -9262,7 +9579,27 @@
         "sense": "상시 적용되는, 고정된",
         "ko": "모든 검증 코드는 항상 견고하고 관용적이어야 한다는 상시 규칙을 CLAUDE.md에 추가한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "stand",
+          "ko": "서 있다"
+        },
+        {
+          "part": "-ing",
+          "ko": "~하는"
+        }
+      ],
+      "origin": "고대 영어 standan (서다)",
+      "story": "치우지 않고 늘 그 자리에 서 있는(stand) 표지판처럼 → 상시 적용되는",
+      "hook": "스탠딩 → 늘 '서 있는' 고정 규칙 → 상시 적용되는",
+      "family": [
+        "understand",
+        "outstanding",
+        "withstand"
+      ]
+    }
   },
   {
     "id": "start",
@@ -10138,6 +10475,11 @@
         "ko": "시스템 프롬프트에 엄격한 한 줄(\"Return only valid JSON, no markdown, no commentary\")을 추가하고, 결정적인 형식을 위해 temperature를 0으로 설정한다"
       }
     ],
+    "memory": {
+      "origin": "고대 영어 styrne (엄격한, 가혹한)",
+      "story": "웃음기 없이 굳은 얼굴로 딱 잘라 말한다 → 엄격한, 단호한",
+      "hook": "스턴 → '스톤(돌)'처럼 굳은 얼굴 → 엄격한"
+    },
     "note": "목소리를 높여 **엄하게 못 박는** 말투입니다. 문제에서는 프롬프트에 \"~만 해라\" 식으로 **강하게 적은 지시 한 줄**을 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> Add a **stern** system-prompt line (\"Return only valid JSON, no markdown, no commentary\") and set temperature to 0 for deterministic formatting.\r\n> 시스템 프롬프트에 **엄격한** 한 줄(\"Return only valid JSON, no markdown, no commentary\")을 추가하고, 결정적인 형식을 위해 temperature를 0으로 설정한다\r\n\r\n## 비슷한 말\r\n- **strict** — 엄격한 (규칙을 엄하게 적용)\r\n- **emphatic** — 강조하는, 힘주어 말하는\r\n\r\n## 시험 포인트\r\n\"stern\", \"emphatic\", \"ALWAYS/NEVER\" 같은 **강한 어조의 프롬프트 지시**는 여전히 확률적이라 형식을 보장하지 못합니다. JSON 형식이 꼭 맞아야 하면 도구 `input_schema` + `tool_choice` 강제 같은 구조적 방법이 정답입니다."
   },
   {
@@ -10204,6 +10546,10 @@
         "ko": "카운터가 5에 도달하면 `tool_result` 블록이 더 이상 이력에 붙지 않아, Claude의 `stop_reason` 이 `\"tool_use\"` 에 고정된다"
       }
     ],
+    "memory": {
+      "story": "진흙에 막대기(stick)가 푹 박혀 빠지지 않는다 → 갇혀 꼼짝 못 하다",
+      "hook": "스틱 → 끈끈한 '스티커'처럼 붙어 꼼짝 못 함"
+    },
     "note": "1. **(be stuck / get stuck) 갇히다, 꼼짝 못 하다** — 루프·상태에서 빠져나오지 못한다\r\n2. **붙다, 달라붙다 / (stick to) 고수하다** — *stick to the plan* 계획을 지키다\r\n\r\n## 문제 속 쓰임\r\n> After 3 hours in production, ops notices some claims are **stuck** in infinite loops consuming thousands of tokens.\r\n> 운영 3시간 만에, 일부 청구 건이 **무한 루프에 빠져** 수천 토큰을 소모하는 것이 발견됐다.\r\n\r\n## 함께 쓰는 표현\r\n- **get stuck in a loop** : 루프에 빠지다\r\n- **stick to** ~ : ~을 고수하다, 벗어나지 않다\r\n- 활용: stick – **stuck** – **stuck**\r\n\r\n## 시험 포인트\r\n에이전트가 같은 도구를 끝없이 다시 부르며 **루프에 갇힌다면**, 최대 반복 횟수 가드가 없는 것이 원인입니다. 스트리밍·모델 교체로는 풀리지 않습니다."
   },
   {
@@ -10282,7 +10628,12 @@
         "sense": "그럼에도, 그래도",
         "ko": "`/review` 를 입력하면 모든 저장소에서 여전히 팀 공용 워크플로가 실행돼야 합니다."
       }
-    ]
+    ],
+    "memory": {
+      "origin": "고대 영어 stille (가만히 있는)",
+      "story": "주변이 바뀌어도 가만히(still) 그대로다 → 여전히, 그럼에도",
+      "hook": "스틸 → '스틸 사진'처럼 멈춘 그대로 → 여전히"
+    }
   },
   {
     "id": "stop",
@@ -10699,7 +11050,26 @@
         "sense": "(표본을 나눈) 층, 하위 집단",
         "ko": "자동 승인된 추출을 문서 유형·필드 층마다 무작위로 표본 추출해 사람이 확인한다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "strat",
+          "ko": "펼쳐 깔다"
+        },
+        {
+          "part": "-um",
+          "ko": "~것(명사)"
+        }
+      ],
+      "origin": "라틴어 stratum (펼쳐 깐 것)",
+      "story": "케이크 시트처럼 한 겹씩 깔린(strat) 층으로 표본을 나눈다 → 층, 하위 집단",
+      "family": [
+        "street",
+        "stratosphere",
+        "prostrate"
+      ]
+    }
   },
   {
     "id": "stream",
@@ -10850,6 +11220,25 @@
         "ko": "시스템 프롬프트를 강조형 \"ALWAYS classify before extracting\" 규칙과 풀이 예시 두 개로 강화한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "strength",
+          "ko": "힘"
+        },
+        {
+          "part": "-en",
+          "ko": "~하게 하다"
+        }
+      ],
+      "origin": "고대 영어 strengþu (힘)",
+      "story": "힘(strength)을 더 불어넣는다(-en) → 강화하다",
+      "hook": "스트렝쓴 → '스트롱(strong)'하게 만든다 → 강화하다",
+      "family": [
+        "strong",
+        "strength"
+      ]
+    },
     "note": "이미 있는 것을 **더 세게·튼튼하게** 만드는 것입니다. 문제에서는 프롬프트 지시를 더 강한 말로 고쳐 쓰는 것을 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> **Strengthen** the system prompt with an emphatic \"ALWAYS classify before extracting\" rule plus two worked examples.\r\n> 시스템 프롬프트를 강조형 \"ALWAYS classify before extracting\" 규칙과 풀이 예시 두 개로 **강화한다**\r\n\r\n## 함께 쓰는 표현\r\n- **strengthen the prompt / instructions** : 프롬프트·지시를 강화하다\r\n- **strengthen validation** : 검증을 강화하다\r\n\r\n## 반대말\r\n- **weaken** — 약하게 하다\r\n\r\n## 시험 포인트\r\n첫 단계가 **항상 같은 도구**여야 한다면, 프롬프트 강화가 아니라 이름을 지정한 `tool_choice`(`{\"type\":\"tool\",\"name\":\"classify_document\"}`)로 강제하는 것이 정답입니다."
   },
   {
@@ -11590,7 +11979,32 @@
         "sense": "주관적인",
         "ko": "감정 규칙은 남기고 확신도 규칙은 뺀다. 분노는 사람이 필요한 케이스를 확실히 알려 주지만 자기 평가는 주관적이기 때문이다"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "아래"
+        },
+        {
+          "part": "ject",
+          "ko": "던지다"
+        },
+        {
+          "part": "-ive",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 subicere (밑에 던져 놓다)",
+      "story": "판단의 밑바닥(sub)에 던져 놓인(ject) '나' 자신이 기준 → 주관적인",
+      "hook": "서브젝티브 → 내가 '서브젝트(주어)'인 시선 → 주관적인",
+      "family": [
+        "object",
+        "reject",
+        "project",
+        "inject"
+      ]
+    }
   },
   {
     "id": "submit",
@@ -11744,6 +12158,30 @@
         "ko": "첫 턴에는 도구 목록에서 보강 도구를 빼고 `extract_metadata`만 제공한 뒤, 결과가 돌아오면 이후 턴을 위해 `add_tags`, `link_related`, `generate_summary`를 다시 추가한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "바로 뒤"
+        },
+        {
+          "part": "sequ",
+          "ko": "따르다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~하는"
+        }
+      ],
+      "origin": "라틴어 subsequi (바로 뒤따르다)",
+      "story": "바로 뒤(sub)에 따라붙는(sequ) → 그다음의, 이후의",
+      "hook": "섭시퀀트 → '시퀀스(순서)'상 다음 차례 → 이후의",
+      "family": [
+        "sequence",
+        "consequence",
+        "sequel"
+      ]
+    },
     "note": "시간·순서상 **뒤에 오는** 것을 가리킵니다. 격식 있는 글에서 *next*, *later* 대신 자주 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> ...after running this skill, Claude's **subsequent** responses are influenced by the exploration discussion.\r\n> 이 스킬을 실행한 뒤 Claude의 **이후** 응답이 탐색 논의의 영향을 받는다.\r\n\r\n## 함께 쓰는 표현\r\n- **subsequent to** ~ : ~ 이후에 (= after)\r\n- **subsequently** (부) 그 후에, 이어서\r\n\r\n## 반대말\r\n- **previous**, **prior**, **preceding** — 이전의"
   },
   {
@@ -11870,6 +12308,30 @@
         "ko": "여기서 extended thinking이 독립 리뷰 인스턴스를 대신하기에 부족한 이유는 무엇입니까?"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "아래, 대신"
+        },
+        {
+          "part": "stitut",
+          "ko": "세우다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하기(명사)"
+        }
+      ],
+      "origin": "라틴어 substituere (대신 세우다)",
+      "story": "원래 것 자리에 다른 것을 대신(sub) 세워(stitut) 넣는다 → 대체, 치환",
+      "hook": "섭스티튜션 → 축구 '서브(sub)' 선수 교체 → 대체",
+      "family": [
+        "institute",
+        "constitution",
+        "restitution"
+      ]
+    },
     "note": "1. **치환** — 찾은 문자열을 다른 문자열로 바꿔 넣기 (`sed 's/old/new/g'` 의 `s` 가 substitute)\r\n2. **대체** — 어떤 것 대신 다른 것을 쓰기\r\n\r\n## 문제 속 쓰임\r\n> Switch to a Bash sed global **substitution** that rewrites every occurrence and bypasses the Edit tool entirely.\r\n> `Bash` 의 `sed` 전역 **치환**으로 바꿔 모든 위치를 다시 쓰고, `Edit` 도구는 완전히 우회한다\r\n\r\n## 함께 쓰는 표현\r\n- **global substitution** : 전역 치환 — 일치하는 곳을 모두 바꿈\r\n- **substitute A for B** : B 대신 A를 쓰다\r\n- **substitute** (동) 대신 넣다, 바꿔 넣다\r\n\r\n## 시험 포인트\r\n`Edit` 이 고유 일치를 못 찾을 때 `sed` 치환으로 우회하는 보기는 오답입니다. 정답은 `Read` 로 파일 전체를 읽고 바꾼 내용을 `Write` 로 다시 쓰는 폴백입니다."
   },
   {
@@ -12105,6 +12567,11 @@
         "ko": "나중에 QA가 그 자기 리뷰 단계에서 모델이 놓친 미묘한 문제들을 찾아냈습니다."
       }
     ],
+    "memory": {
+      "origin": "라틴어 subtilis (가늘게 짠, 섬세한)",
+      "story": "올이 아주 가늘게 짜여 눈에 잘 안 띈다 → 미묘한, 알아차리기 어려운",
+      "hook": "서틀 → 'b'가 소리 없이 숨어 있음 → 알아차리기 어려운"
+    },
     "note": "차이나 문제가 **눈에 잘 띄지 않아 주의 깊게 봐야 알아챌 수 있는** 것입니다.\r\n\r\n## 문제 속 쓰임\r\n> ...but **subtle** issues—performance optimizations that break edge cases, cleanups that change behavior—only surface when a different team member reviews the PR.\r\n> **미묘한** 이슈(엣지 케이스를 깨는 성능 최적화, 동작을 바꾸는 정리)는 다른 팀원이 PR을 리뷰할 때에야 드러난다.\r\n\r\n## 함께 쓰는 표현\r\n- **subtle bug / difference** : 찾기 어려운 버그 / 미묘한 차이\r\n- **subtly** (부) 미묘하게 · **subtlety** (명) 미묘함\r\n\r\n## 반대말\r\n- **obvious**, **blatant** — 뻔한, 노골적인\r\n\r\n## 시험 포인트\r\n생성한 쪽이 이미 \"괜찮다\"고 결론 낸 **미묘한** 문제는 같은 맥락에서 자기 리뷰를 시켜도 잘 잡히지 않습니다. 생성 과정의 추론을 보지 않는 **독립된 리뷰어**를 두는 선택지가 정답 방향입니다."
   },
   {
@@ -12433,7 +12900,32 @@
         "sense": "연이은, 잇따른",
         "ko": "파일별 패스를 한 대화의 연속된 턴으로 돌려, 뒤의 패스가 앞 파일에서 알게 된 것을 활용하게 한다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "suc-",
+          "ko": "아래, 뒤"
+        },
+        {
+          "part": "cess",
+          "ko": "가다"
+        },
+        {
+          "part": "-ive",
+          "ko": "~하는"
+        }
+      ],
+      "origin": "라틴어 succedere (뒤따라 오다)",
+      "story": "앞의 것 바로 뒤(suc)를 이어 가는(cess) → 연이은, 잇따른",
+      "hook": "석세시브 → '석세스(성공)'가 연달아 터짐 → 연이은",
+      "family": [
+        "succeed",
+        "process",
+        "proceed",
+        "access"
+      ]
+    }
   },
   {
     "id": "successor",
@@ -12476,7 +12968,32 @@
         "sense": "후속, 뒤를 잇는 것",
         "ko": "`analyze_content`라는 도구는 원래 이메일이나 내부 메모를 포함해 붙여 넣은 모든 콘텐츠를 요약하려고 만들었는데, 웹 전용 후속 도구가 도입된 뒤에도 설명이 갱신되지 않았습니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "suc-",
+          "ko": "아래, 뒤"
+        },
+        {
+          "part": "cess",
+          "ko": "가다"
+        },
+        {
+          "part": "-or",
+          "ko": "사람, 것"
+        }
+      ],
+      "origin": "라틴어 successor (뒤이어 오는 자)",
+      "story": "앞 모델 뒤(suc)를 이어 오는(cess) 것(-or) → 후속, 뒤를 잇는 것",
+      "hook": "석세서 → 앞 모델의 '석세스'를 이어받는 것 → 후속",
+      "family": [
+        "succeed",
+        "predecessor",
+        "process",
+        "access"
+      ]
+    }
   },
   {
     "id": "sufficient",
@@ -12521,7 +13038,31 @@
         "sense": "(insufficient) 불충분한, 모자란",
         "ko": "여기서 extended thinking이 독립 리뷰 인스턴스를 대신하기에 부족한 이유는 무엇입니까?"
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "suf-",
+          "ko": "아래"
+        },
+        {
+          "part": "fic",
+          "ko": "만들다, 하다"
+        },
+        {
+          "part": "-ient",
+          "ko": "~하는"
+        }
+      ],
+      "origin": "라틴어 sufficere (밑을 채우다, 충분하다)",
+      "story": "밑(suf)까지 꽉 채워 만든(fic) 충분함에 in-이 붙으면 → 불충분한, 모자란",
+      "family": [
+        "efficient",
+        "deficient",
+        "proficient",
+        "suffice"
+      ]
+    }
   },
   {
     "id": "suggest",
@@ -13042,6 +13583,31 @@
         "ko": "더 큰 컨텍스트 창을 요청해, 폐기된 중간 diff를 기록에 그대로 둔 채 지금처럼 계속한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "super-",
+          "ko": "위에"
+        },
+        {
+          "part": "sed",
+          "ko": "앉다"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "origin": "라틴어 supersedere (위에 앉다)",
+      "story": "새 버전이 옛 버전 위(super)에 올라앉는다(sed) → 대체된, 이제는 낡은",
+      "hook": "수퍼시디드 → '슈퍼' 신형이 자리를 차지 → 대체된",
+      "family": [
+        "sediment",
+        "session",
+        "preside",
+        "reside"
+      ]
+    },
     "note": "더 새롭거나 올바른 것이 나와서 **이제는 효력이 없어진** 상태입니다. 동사 *supersede* 는 \"(새것이 옛것을) 대신하다\"라는 뜻입니다.\r\n\r\n## 문제 속 쓰임\r\n> The history is full of **superseded** intermediate diffs, but the current task and goal are unchanged and the latest file states are still valid.\r\n> 기록은 이미 **폐기된** 중간 diff로 가득하지만, 현재 작업과 목표는 그대로이고 최신 파일 상태도 여전히 유효하다.\r\n\r\n## 함께 쓰는 표현\r\n- **be superseded by** ~ : ~로 대체되다\r\n- **supersede** (동) 대신하다, 대체하다\r\n\r\n## 비슷한 말\r\n- **outdated**, **obsolete** — 시대에 뒤떨어진, 더는 쓰지 않는\r\n- **stale** — (데이터가) 낡은, 최신이 아닌\r\n\r\n## 시험 포인트\r\n작업·목표는 그대로인데 기록만 낡은 중간 결과로 부풀었다면 `/compact` 가 정답입니다. 결과 자체가 낡았거나 작업이 바뀌었다면 새 세션을 엽니다."
   },
   {
@@ -13288,6 +13854,30 @@
         "ko": "공유 `generate-docs` 스킬은 소스를 읽고 `docs/` 에 Markdown을 써야 하는데, 두 번이나 `Edit` 과 셸 `rm` 을 실행해 소스 파일을 덮어썼습니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "sup-",
+          "ko": "아래"
+        },
+        {
+          "part": "pos",
+          "ko": "놓다"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "origin": "고대 프랑스어 supposer (가정하다)",
+      "story": "미리 밑(sup)에 전제로 깔아 놓은(pos) 약속 → ~하기로 되어 있다",
+      "family": [
+        "propose",
+        "impose",
+        "expose",
+        "compose"
+      ]
+    },
     "note": "*be supposed to* 형태로 써서 **원래 ~하기로 되어 있다(그런데 실제로는 그렇지 않다)** 는 뉘앙스를 줍니다. 기대와 현실이 어긋날 때 자주 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> A shared `generate-docs` skill is **supposed to** read source and write Markdown into `docs/`, but twice it has run `Edit` and shell `rm` and overwritten source files.\r\n> 공유 `generate-docs` 스킬은 소스를 읽고 `docs/` 에 Markdown을 **써야 하는데**, 두 번이나 `Edit` 과 셸 `rm` 을 실행해 소스 파일을 덮어썼다.\r\n\r\n## 함께 쓰는 표현\r\n- **be supposed to** ~ : ~하기로 되어 있다, ~해야 한다\r\n- **be not supposed to** ~ : ~하면 안 된다\r\n\r\n## 시험 포인트\r\n\"원래 이것만 해야 하는데 지켜지지 않는다\"면 프롬프트 문구 추가가 아니라 하네스가 막는 결정적 장치를 고릅니다. 이 문제에서는 스킬 frontmatter 의 `allowed-tools` 선언이 정답입니다."
   },
   {
@@ -13356,6 +13946,27 @@
         "ko": "과거 오탐 시그니처와 일치하는 발견 사항을 숨겨 버리는 후처리기를 추가한다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "sup-",
+          "ko": "아래로"
+        },
+        {
+          "part": "press",
+          "ko": "누르다"
+        }
+      ],
+      "origin": "라틴어 supprimere (밑으로 누르다)",
+      "story": "경고가 고개를 못 들게 아래로(sup) 꾹 누른다(press) → 억누르다, 숨기다",
+      "hook": "서프레스 → 아래로 '프레스'처럼 꾹 눌러 버림",
+      "family": [
+        "press",
+        "express",
+        "depress",
+        "compress"
+      ]
+    },
     "note": "드러나려는 것을 **억눌러 보이지 않게 하는** 것입니다. 개발에서는 경고·오류·출력 등을 표시하지 않도록 막는 것을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> Add a post-processor that **suppresses** findings matching historical false positive signatures.\r\n> 과거 오탐 시그니처와 일치하는 발견 사항을 **숨겨 버리는** 후처리기를 추가한다.\r\n\r\n## 함께 쓰는 표현\r\n- **suppress warnings / errors** : 경고 / 오류 표시를 끄다\r\n- **suppress output** : 출력을 숨기다\r\n- **suppression** (명) 억제\r\n\r\n## 비슷한 말\r\n- **hide**, **mute** — 숨기다, (소리·알림을) 끄다\r\n- **filter out** — 걸러 내다\r\n\r\n## 시험 포인트\r\n결과를 **억제하는**(보여 주지 않는) 후처리는 결국 걸러 내기(filtering)입니다. 문제에 \"리뷰 전에 걸러 내지 말 것\" 같은 제약이 있으면 오답입니다."
   },
   {
@@ -13710,7 +14321,12 @@
         "sense": "(오류를) 삼키다, 조용히 묻어 버리다",
         "ko": "겉보기에 비슷한 두 예시. 로그를 남기고 다시 던지는 최상위 핸들러는 \"허용\", 결제 쓰기를 감싸 오류를 삼키는 `catch`는 \"문제\"로 표시하고 각각 한 줄 이유를 붙인다."
       }
-    ]
+    ],
+    "memory": {
+      "origin": "고대 영어 swelgan (삼키다)",
+      "story": "오류를 꿀꺽 삼켜(swallow) 아무 흔적도 안 남긴다 → 조용히 묻어 버리다",
+      "hook": "스왈로우 → 제비가 벌레를 꿀꺽, 흔적 없이 삼킴"
+    }
   },
   {
     "id": "swap",
@@ -13829,7 +14445,11 @@
         "sense": "훑기 (전체를 한 번 쭉 훑어보는 작업)",
         "ko": "탐색을 건너뛰고 바로 파일 변환을 시작해, Claude가 작업하면서 사용 패턴을 발견하게 한다"
       }
-    ]
+    ],
+    "memory": {
+      "story": "빗자루로 방 끝에서 끝까지 쓱 쓸어 간다 → 전체를 한 번 훑기",
+      "hook": "스윕 → '쓱' 쓸어 한 번에 훑기"
+    }
   },
   {
     "id": "switch",
@@ -14165,6 +14785,26 @@
         "ko": "grep 단계가 실행되기 전에 동의어 사전을 가진 후처리 라이브러리를 추가해 심각도 표현을 정규화한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "syn-",
+          "ko": "같은, 함께"
+        },
+        {
+          "part": "onym",
+          "ko": "이름"
+        }
+      ],
+      "origin": "그리스어 synonymon (같은 이름의)",
+      "story": "같은(syn) 뜻을 가진 또 다른 이름(onym) → 동의어",
+      "family": [
+        "antonym",
+        "anonymous",
+        "pseudonym",
+        "acronym"
+      ]
+    },
     "note": "뜻이 같거나 아주 비슷한 **다른 말**입니다.\r\n\r\n## 문제 속 쓰임\r\n> Add a post-processing library with a **synonym** dictionary that normalizes severity wording before the grep step runs\r\n> grep 단계가 실행되기 전에 **동의어** 사전을 가진 후처리 라이브러리를 추가해 심각도 표현을 정규화한다\r\n\r\n## 함께 쓰는 표현\r\n- **synonym dictionary / list** : 동의어 사전 / 목록\r\n- **synonymous with** ~ : ~와 같은 뜻인\r\n\r\n## 반대말\r\n- **antonym** — 반의어\r\n\r\n## 시험 포인트\r\n\"severe issue\", \"critical defect\" 처럼 흔들리는 표현을 동의어 사전으로 맞추는 것은 자연어 파싱을 그대로 둔 오답입니다. `--output-format json` + `--json-schema` 로 **구조를 강제**하는 것이 정답입니다."
   },
   {
@@ -14285,6 +14925,27 @@
         "ko": "종합(synthesis) 에이전트는 자꾸 직접 웹 검색을 하고, QA 에이전트는 한 번 배포 도구를 호출했습니다."
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "syn-",
+          "ko": "함께"
+        },
+        {
+          "part": "thesis",
+          "ko": "놓기"
+        }
+      ],
+      "origin": "그리스어 synthesis (함께 놓음)",
+      "story": "여러 결과를 한데(syn) 모아 놓는다(thesis) → 종합, 합성",
+      "hook": "신서시스 → '신시사이저'가 소리를 합쳐 만들듯 → 합성",
+      "family": [
+        "thesis",
+        "hypothesis",
+        "parenthesis",
+        "antithesis"
+      ]
+    },
     "note": "1. **종합** — 여러 출처의 결과를 모아 하나의 결론·보고서로 정리하는 것\r\n2. **(화학) 합성**\r\n\r\n## 문제 속 쓰임\r\n> ...have the coordinator deduplicate overlapping findings before **synthesis**.\r\n> 코디네이터가 겹치는 결과를 걸러 낸 뒤 **종합**하게 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **synthesis agent** : 하위 에이전트들의 결과를 모아 최종 답을 쓰는 에이전트\r\n- **synthesize** (동) 종합하다 · **synthesized** 종합된\r\n\r\n## 비교\r\n- **summary** — 하나의 내용을 *줄이는* 것\r\n- **synthesis** — 여러 내용을 *합쳐* 새 결론을 만드는 것"
   },
   {
@@ -14502,6 +15163,29 @@
         "sense": "체계적으로",
         "ko": "팀은 이 기각 추세를 시간에 따라 체계적으로 분석하고 싶습니다."
       }
-    ]
+    ],
+    "memory": {
+      "roots": [
+        {
+          "part": "system",
+          "ko": "체계"
+        },
+        {
+          "part": "-atic",
+          "ko": "~적인"
+        },
+        {
+          "part": "-ally",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "그리스어 systema (함께 세운 전체)",
+      "story": "여럿을 함께(syn) 세워(sta) 짠 체계(system)를 따라 → 체계적으로",
+      "hook": "시스테매티컬리 → '시스템'대로 착착 → 체계적으로",
+      "family": [
+        "system",
+        "ecosystem"
+      ]
+    }
   }
 ]

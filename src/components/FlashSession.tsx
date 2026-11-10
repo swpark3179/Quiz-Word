@@ -223,7 +223,7 @@ export function FlashSession({ ids, title, onAnswer, onExit }: FlashSessionProps
               </button>
             </div>
             <div className="px-6 py-6 sm:px-8">
-              <WordBrief w={w} contextLimit={2} />
+              <WordBrief w={w} contextLimit={2} memory />
             </div>
             <StickyActions className="px-6 sm:px-8">
               <Link to={`/word/${w.id}`} target="_blank" className="text-[13px] font-medium text-muted hover:text-primary">

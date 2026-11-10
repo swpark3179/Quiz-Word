@@ -245,6 +245,21 @@
         "ko": "핸드오프 전에 각 서브에이전트의 출력을 관련 추출 결과로 줄이고, 종합 프롬프트는 헤더 아래 핵심 사실 요약으로 시작한다"
       }
     ],
+    "memory": {
+      "roots": [
+        {
+          "part": "key",
+          "ko": "열쇠, 핵심"
+        },
+        {
+          "part": "facts",
+          "ko": "사실들"
+        }
+      ],
+      "origin": "라틴어 factum (행해진 일)",
+      "story": "판단의 문을 여는 열쇠(key) 같은 사실(facts)들 → 핵심 사실",
+      "hook": "키 팩트 → 문을 여는 '키'가 되는 팩트"
+    },
     "note": "결론·판단에 꼭 필요한 **핵심 사실**만 추린 것입니다. *key-facts summary* 처럼 명사 앞에서 하이픈으로 묶어 \"핵심 사실 (요약)\"을 뜻합니다.\r\n\r\n## 문제 속 쓰임\r\n> ...and open the synthesis prompt with a **key-facts** summary under headers.\r\n> 종합 프롬프트는 헤더 아래 **핵심 사실** 요약으로 시작한다\r\n\r\n## 함께 쓰는 표현\r\n- **key-facts summary / block** : 핵심 사실 요약 / 블록\r\n- **case facts** : (상담 건의) 핵심 사실 — 주문 id·금액·날짜 등\r\n\r\n## 시험 포인트\r\n긴 입력에서는 중간 정보가 묻히기 쉬우므로(lost in the middle), 넘기는 출력을 관련 내용으로 다듬고 **핵심 사실 요약을 프롬프트 맨 앞에** 두는 보기가 정답입니다."
   },
   {
