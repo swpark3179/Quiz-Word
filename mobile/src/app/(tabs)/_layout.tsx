@@ -20,6 +20,10 @@ export default function TabsLayout() {
         <Icon sf={{ default: 'rectangle.stack', selected: 'rectangle.stack.fill' }} />
         <Label>학습</Label>
       </NativeTabs.Trigger>
+      <NativeTabs.Trigger name="notebooks">
+        <Icon sf={{ default: 'books.vertical', selected: 'books.vertical.fill' }} />
+        <Label>학습장</Label>
+      </NativeTabs.Trigger>
       <NativeTabs.Trigger name="wrong">
         <Icon sf={{ default: 'bookmark', selected: 'bookmark.fill' }} />
         <Label>오답노트</Label>

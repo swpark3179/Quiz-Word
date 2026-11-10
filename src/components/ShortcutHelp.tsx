@@ -20,6 +20,7 @@ const GROUPS: { title: string; rows: Row[] }[] = [
       go('F', '플래시카드'),
       go('Q', '객관식'),
       go('R', '복습'),
+      go('N', '학습장'),
       go('O', '오답노트'),
       go('S', '설정'),
     ],
@@ -33,6 +34,15 @@ const GROUPS: { title: string; rows: Row[] }[] = [
       { keys: ['←', '→'], label: '이전 · 다음 단어 (상세 화면)' },
       { keys: ['Backspace'], label: '목록으로 돌아가기' },
       { keys: ['P'], label: '발음 듣기' },
+    ],
+  },
+  {
+    title: '학습장',
+    rows: [
+      { keys: ['/'], label: '담을 단어 검색' },
+      { keys: ['↑', '↓'], label: '검색 결과에서 단어 고르기' },
+      { keys: ['Enter'], label: '고른 단어 담기' },
+      { keys: ['Esc'], label: '검색어 지우기' },
     ],
   },
   {

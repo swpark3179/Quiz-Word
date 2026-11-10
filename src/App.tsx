@@ -3,6 +3,7 @@ import { HashRouter, Navigate, Route, Routes, useLocation } from 'react-router-d
 import { Layout } from './components/Layout';
 import { FlashPage, FlashPlay } from './pages/Flash';
 import { Home } from './pages/Home';
+import { NotebookDetail, NotebooksPage } from './pages/Notebooks';
 import { QuizPage, QuizPlay } from './pages/Quiz';
 import { ReviewPage, ReviewPlay } from './pages/Review';
 import { SettingsPage } from './pages/Settings';
@@ -31,6 +32,8 @@ export function App() {
           <Route path="quiz/play" element={<Fresh><QuizPlay /></Fresh>} />
           <Route path="review" element={<ReviewPage />} />
           <Route path="review/session" element={<Fresh><ReviewPlay /></Fresh>} />
+          <Route path="notebooks" element={<NotebooksPage />} />
+          <Route path="notebooks/:id" element={<NotebookDetail />} />
           <Route path="wrong" element={<WrongPage />} />
           <Route path="settings" element={<SettingsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />

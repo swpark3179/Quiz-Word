@@ -184,6 +184,44 @@ async function main() {
   ok('문맥 뜻 문제');
   await shot(page, '10-quiz-context');
 
+  // 학습장 — 오답노트로 만들기, 새 학습장에 검색해 담기·바로 빼기, 학습 시작·종료
+  await page.goto(`${BASE}/notebooks`);
+  await page.waitForSelector('button:has-text("새 학습장")');
+  const fromWrong = page.locator('button:has-text("오답노트로 만들기")').first();
+  if (await fromWrong.isEnabled()) {
+    await fromWrong.click();
+    await page.waitForSelector('input[aria-label="학습장에 담을 단어 검색"]');
+    (await page.locator('button[aria-label$="학습장에서 빼기"]').count()) > 0 ? ok('오답노트로 학습장 만들기') : fail('오답노트로 만든 학습장이 비어 있음');
+    await page.click('text=학습장 목록');
+  }
+  await page.click('button:has-text("새 학습장")');
+  await page.waitForSelector('dialog[open] input[aria-label="학습장 이름"]');
+  await page.keyboard.press('Enter');
+  await page.waitForSelector('input[aria-label="학습장에 담을 단어 검색"]');
+  /#\/notebooks\/nb-/.test(page.url()) ? ok('새 학습장 만들기') : fail(`새 학습장 주소가 이상함: ${page.url()}`);
+  const nbSearch = 'input[aria-label="학습장에 담을 단어 검색"]';
+  for (const q of ['address', 'escalate']) {
+    await page.fill(nbSearch, q);
+    await page.waitForTimeout(80);
+    await page.keyboard.press('Enter');
+  }
+  const inBook = () => page.locator('button[aria-label$="학습장에서 빼기"]').count();
+  (await inBook()) === 2 && (await page.inputValue(nbSearch)) === '' ? ok('검색 → Enter 로 학습장에 담기') : fail(`학습장 단어 수 ${await inBook()}`);
+  await shot(page, '11a-notebook');
+  await page.click('button[aria-label="address 학습장에서 빼기"]');
+  (await inBook()) === 1 && !(await page.locator('dialog[open]').count()) ? ok('묻지 않고 바로 빼기') : fail('단어 빼기 실패');
+  await page.click('main button:has-text("플래시카드")');
+  await page.waitForSelector('button:has-text("모른다")');
+  /set=notebook/.test(page.url()) ? ok('학습장 플래시카드 시작') : fail(`학습장 범위가 아님: ${page.url()}`);
+  await page.keyboard.press('Escape');
+  await page.waitForSelector(nbSearch);
+  ok('학습 종료 → 학습장으로 돌아옴');
+  await page.click('main button:has-text("객관식")');
+  await page.waitForSelector('text=보기 선택');
+  ok('학습장 객관식 시작');
+  await page.keyboard.press('Escape');
+  await page.waitForSelector(nbSearch);
+
   // 오답노트·복습·설정
   await page.goto(`${BASE}/wrong`);
   await page.waitForTimeout(150);
@@ -221,6 +259,12 @@ async function main() {
   tabs && listBox && listBox.y + listBox.height <= tabs.y + 1 ? ok('좁은 화면: 하단 탭이 목록을 가리지 않음') : fail('하단 탭이 목록을 가림');
   (await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)) ? ok('좁은 화면: 가로 넘침 없음') : fail('좁은 화면에서 가로로 넘침');
   await shot(page, '16-mobile-words');
+  await page.goto(`${BASE}/notebooks`);
+  await page.waitForSelector('button:has-text("새 학습장")');
+  await page.locator('main a[href^="#/notebooks/"]').first().click();
+  await page.waitForSelector('input[aria-label="학습장에 담을 단어 검색"]');
+  (await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)) ? ok('좁은 화면: 학습장 가로 넘침 없음') : fail('좁은 화면 학습장이 가로로 넘침');
+  await shot(page, '17-mobile-notebook');
 
   await browser.close();
   console.log(results.join('\n'));

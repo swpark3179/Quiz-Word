@@ -5,19 +5,11 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Button, Card, Empty, PageHeader, PosBadge } from '../components/ui';
 import { WORD_BY_ID } from '../data/words';
 import { DEFAULT_SCOPE, scopeToParams } from '../lib/scope';
+import { timeAgo as ago } from '../lib/text';
 import { useProgress } from '../store/progress';
 import { setWordNav } from './wordNav';
 
 const WRONG_SCOPE = scopeToParams({ ...DEFAULT_SCOPE, set: 'wrong', status: 'any', count: 0, order: 'random', includeBasic: true });
-
-function ago(ts: number) {
-  const m = Math.round((Date.now() - ts) / 60000);
-  if (m < 1) return '방금';
-  if (m < 60) return `${m}분 전`;
-  const h = Math.round(m / 60);
-  if (h < 24) return `${h}시간 전`;
-  return `${Math.round(h / 24)}일 전`;
-}
 
 export function WrongPage() {
   const wrong = useProgress((s) => s.wrong);

@@ -56,6 +56,7 @@ export default function Settings() {
   const importData = useProgress((s) => s.importData);
   const resetProgress = useProgress((s) => s.resetProgress);
   const cardsN = useProgress((s) => Object.keys(s.cards).length);
+  const notebooksN = useProgress((s) => s.notebooks.length);
   const toast = useToast((s) => s.show);
   const [voices, setVoices] = useState<VoiceInfo[]>([]);
   const [checking, setChecking] = useState(false);
@@ -98,7 +99,8 @@ export default function Settings() {
     if (res.canceled || !res.assets?.[0]) return;
     try {
       const data = JSON.parse(await new File(res.assets[0].uri).text());
-      Alert.alert('진행 기록을 가져올까요?', '지금 기기에 있는 기록은 가져온 파일의 기록으로 바뀝니다.', [
+      const fileNotebooks = Array.isArray(data?.notebooks) ? data.notebooks.length : 0;
+      Alert.alert('진행 기록을 가져올까요?', `지금 기기에 있는 기록과 학습장(${notebooksN}개)은 가져온 파일의 기록과 학습장(${fileNotebooks}개)으로 바뀝니다.`, [
         { text: '취소', style: 'cancel' },
         {
           text: '가져오기',
@@ -205,7 +207,7 @@ export default function Settings() {
         </View>
       </Group>
 
-      <Group title="진행 기록" footer={`학습한 단어 ${cardsN}개 / 전체 ${WORDS.length.toLocaleString()}개. 웹 버전에서 내보낸 파일도 그대로 가져올 수 있어요.`}>
+      <Group title="진행 기록" footer={`학습한 단어 ${cardsN}개 / 전체 ${WORDS.length.toLocaleString()}개 · 학습장 ${notebooksN}개. 내보내기 파일에 학습장 전체 목록도 들어가고, 웹 버전에서 내보낸 파일도 그대로 가져올 수 있어요.`}>
         <Row label="내보내기" detail="JSON 파일로 저장·공유" onPress={doExport} />
         <Row label="가져오기" detail="웹 또는 다른 기기에서 내보낸 파일" onPress={doImport} />
         <Row
@@ -213,7 +215,7 @@ export default function Settings() {
           danger
           last
           onPress={() =>
-            Alert.alert('학습 기록을 모두 지울까요?', '복습 일정·오답노트·통계가 지워집니다. 설정은 유지됩니다.', [
+            Alert.alert('학습 기록을 모두 지울까요?', '복습 일정·오답노트·통계가 지워집니다. 학습장과 설정은 유지됩니다.', [
               { text: '취소', style: 'cancel' },
               {
                 text: '지우기',
