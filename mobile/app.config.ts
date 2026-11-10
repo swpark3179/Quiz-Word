@@ -1,15 +1,16 @@
 import type { ExpoConfig } from 'expo/config';
 
 /**
- * EAS Update(OTA) 프로젝트 id — `npx eas-cli init` 이 알려 주는 값을 넣는다.
- * 비워 두면 OTA 없이 앱에 들어 있는 번들만 쓴다.
+ * EAS Update(OTA) 프로젝트 id — 지금은 OTA 를 쓰지 않아 비워 둔다(앱에 들어 있는 번들만 씀).
+ * 단어는 단어 세트 파일로 갱신한다(설정 → 단어 세트). 나중에 OTA 를 쓰려면 `npx eas-cli init` 이 알려 주는 값을 넣는다.
+ * expo-updates 패키지는 단어 세트를 바꾼 뒤 앱을 다시 시작하는 데(reloadAsync) 쓰므로 남겨 둔다.
  */
 const EAS_PROJECT_ID = '';
 
 /** TestFlight 빌드 번호 — GitHub Actions 가 run_number 로 넣는다 */
 const BUILD_NUMBER = process.env.BUILD_NUMBER ?? '1';
 
-/** 네이티브 패키지를 바꾸면 올린다 (runtimeVersion 이 바뀌어 이전 앱에는 OTA 가 가지 않는다) */
+/** 앱 버전 — 네이티브 패키지를 바꾸면 올린다 */
 const VERSION = '1.0.0';
 
 const config: ExpoConfig = {

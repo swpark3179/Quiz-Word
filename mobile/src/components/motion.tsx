@@ -1,5 +1,5 @@
 /** 모션 조각 — 진척 링, count-up 숫자, 막대그래프, 토스트 */
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { StyleSheet, Text, View, type StyleProp, type TextStyle } from 'react-native';
 import Animated, {
   Easing,
@@ -67,12 +67,15 @@ export function ProgressRing({
   );
 }
 
-/** 0 → N 으로 올라가는 숫자 (ease-out cubic) */
+/** 0 → N 으로 올라가는 숫자 (ease-out cubic). 값이 바뀌면 0 이 아니라 지금 보이는 값에서 이어서 센다 */
 export function CountUp({ to, duration = 600, style, suffix = '' }: { to: number; duration?: number; style?: StyleProp<TextStyle>; suffix?: string }) {
   const reduced = useReducedMotion();
   const [n, setN] = useState(reduced ? to : 0);
+  const shown = useRef(n);
   useEffect(() => {
-    if (reduced) {
+    const from = shown.current;
+    if (reduced || from === to) {
+      shown.current = to;
       setN(to);
       return;
     }
@@ -80,7 +83,9 @@ export function CountUp({ to, duration = 600, style, suffix = '' }: { to: number
     const t0 = Date.now();
     const step = () => {
       const k = Math.min(1, (Date.now() - t0) / duration);
-      setN(Math.round(to * (1 - Math.pow(1 - k, 3))));
+      const v = Math.round(from + (to - from) * (1 - Math.pow(1 - k, 3)));
+      shown.current = v;
+      setN(v);
       if (k < 1) raf = requestAnimationFrame(step);
     };
     raf = requestAnimationFrame(step);

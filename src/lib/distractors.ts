@@ -28,15 +28,21 @@ function tooClose(a: string, b: string): boolean {
   return a === b || dice(a, b) >= SIMILAR_LIMIT || sharesGloss(a, b);
 }
 
+/** 단어별 소문자 표제어·유의어·변화형 — 보기 하나를 만들 때 풀 전체(2천 개)와 비교하므로 한 번만 만든다 */
+const lowerCache = new WeakMap<Word, { word: string; related: Set<string> }>();
+function lowered(w: Word) {
+  let v = lowerCache.get(w);
+  if (!v) {
+    v = { word: w.word.toLowerCase(), related: new Set([...(w.synonyms ?? []), ...(w.forms ?? [])].map((s) => s.toLowerCase())) };
+    lowerCache.set(w, v);
+  }
+  return v;
+}
+
 function isSynonym(target: Word, other: Word): boolean {
-  const t = target.word.toLowerCase();
-  const o = other.word.toLowerCase();
-  return (
-    (target.synonyms ?? []).some((s) => s.toLowerCase() === o) ||
-    (other.synonyms ?? []).some((s) => s.toLowerCase() === t) ||
-    (target.forms ?? []).some((f) => f.toLowerCase() === o) ||
-    (other.forms ?? []).some((f) => f.toLowerCase() === t)
-  );
+  const t = lowered(target);
+  const o = lowered(other);
+  return t.related.has(o.word) || o.related.has(t.word);
 }
 
 /** 오답 후보 점수 — 클수록 헷갈리는 보기 */

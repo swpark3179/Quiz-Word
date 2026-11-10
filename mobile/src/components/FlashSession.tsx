@@ -3,7 +3,7 @@
  * 모른다 카드는 몇 장 뒤에 다시 나온다 (공용 flashQueue).
  */
 import { router } from 'expo-router';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, Text, View, type LayoutRectangle } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, {
@@ -24,6 +24,7 @@ import { CountUp, ProgressRing } from '@/components/motion';
 import { Button, Icon, PosBadge, PressableScale, ProgressBar, ScreenSafeArea, T } from '@/components/ui';
 import { SpeakButton, WordBrief } from '@/components/word';
 import { WORD_BY_ID } from '@/data/words';
+import { afterFrame } from '@/lib/afterFrame';
 import { speak } from '@/lib/tts';
 import { useProgress } from '@/store/progress';
 import { elevation, motion, type, useTheme } from '@/theme';
@@ -65,31 +66,38 @@ export function FlashSession({ ids, title, onAnswer }: FlashSessionProps) {
     speak(w.word, { voice: settings.ttsVoice, rate: settings.ttsRate }, w.word);
   }, [w, judged, settings, keyOf]);
 
-  const commit = useCallback(
-    (known: boolean) => {
-      if (judged !== null || leaving || !id) return;
-      void (known ? haptic.success() : haptic.warning());
-      setJudged(known);
-    },
-    [judged, leaving, id],
-  );
+  // 카드 더미의 콜백은 항상 같은 함수로 넘긴다(DeckCard 가 memo 라서) — 최신 상태는 ref 로 읽는다
+  const latest = useRef({ judged, leaving, id, queue, onAnswer, reduced });
+  latest.current = { judged, leaving, id, queue, onAnswer, reduced };
+
+  const commit = useCallback((known: boolean) => {
+    const { judged: j, leaving: l, id: cur } = latest.current;
+    if (j !== null || l || !cur) return;
+    latest.current.judged = known; // 다시 그려지기 전에 두 번 판정되지 않게
+    void (known ? haptic.success() : haptic.warning());
+    setJudged(known);
+  }, []);
 
   const next = useCallback(() => {
-    if (judged === null || leaving || !id) return;
+    const { judged: known, leaving: l, id: cur, queue: q, onAnswer: report, reduced: r } = latest.current;
+    if (known === null || l || !cur) return;
+    latest.current.leaving = true; // 빠르게 두 번 눌러도 한 번만 넘어가게
     setLeaving(true);
-    if (!judged) setChipKey((k) => k + 1);
-    const known = judged;
-    const first = !(id in queue.first);
+    if (!known) setChipKey((k) => k + 1);
+    const first = !(cur in q.first);
     setTimeout(
       () => {
-        onAnswer(id, known, first);
-        setQueue((q) => answer(q, known));
+        setQueue((qq) => answer(qq, known));
         setJudged(null);
         setLeaving(false);
+        // 기록(SRS·통계·오답노트)은 다음 카드가 앞으로 오는 프레임 뒤에
+        afterFrame(() => report(cur, known, first));
       },
-      reduced ? 120 : 240,
+      r ? 120 : 240,
     );
-  }, [judged, leaving, id, queue.first, onAnswer, reduced]);
+  }, []);
+
+  const toggle = useCallback(() => setJudged((j) => (j === null ? j : !j)), []);
 
   const exit = () => {
     if (!queue.done.length && judged === null) return router.back();
@@ -146,7 +154,7 @@ export function FlashSession({ ids, title, onAnswer }: FlashSessionProps) {
                 repeat={depth === 0 && repeat}
                 onCommit={commit}
                 onNext={next}
-                onToggle={() => setJudged((j) => (j === null ? j : !j))}
+                onToggle={toggle}
               />
             );
           })}
@@ -174,7 +182,7 @@ export function FlashSession({ ids, title, onAnswer }: FlashSessionProps) {
 }
 
 /* ───────────────── 카드 한 장 ───────────────── */
-function DeckCard({
+const DeckCard = memo(function DeckCard({
   w,
   depth,
   width,
@@ -229,38 +237,47 @@ function DeckCard({
     out.value = withTiming(1, { duration: reduced ? 150 : 260 });
   }, [leaving, out, reduced]);
 
-  const pan = Gesture.Pan()
-    .enabled(depth === 0 && judged === null)
-    .onUpdate((e) => {
-      tx.value = e.translationX;
-      ty.value = e.translationY * 0.15;
-      const over = Math.abs(e.translationX) > width * THRESHOLD ? 1 : 0;
-      if (over !== crossed.value) {
-        crossed.value = over;
-        if (over) runOnJS(haptic.threshold)();
-      }
-    })
-    .onEnd((e) => {
-      const far = Math.abs(e.translationX) > width * THRESHOLD;
-      const fast = Math.abs(e.velocityX) > 900 && Math.abs(e.translationX) > 40;
-      if (far || fast) runOnJS(onCommit)(e.translationX > 0);
-      else {
-        tx.value = withSpring(0, motion.gentle);
-        ty.value = withSpring(0, motion.gentle);
-        crossed.value = 0;
-      }
-    });
+  // 제스처는 판정·위치가 바뀔 때만 새로 만든다 (매 렌더마다 만들면 네이티브 쪽에 다시 붙인다)
+  const pan = useMemo(
+    () =>
+      Gesture.Pan()
+        .enabled(depth === 0 && judged === null)
+        .onUpdate((e) => {
+          tx.value = e.translationX;
+          ty.value = e.translationY * 0.15;
+          const over = Math.abs(e.translationX) > width * THRESHOLD ? 1 : 0;
+          if (over !== crossed.value) {
+            crossed.value = over;
+            if (over) runOnJS(haptic.threshold)();
+          }
+        })
+        .onEnd((e) => {
+          const far = Math.abs(e.translationX) > width * THRESHOLD;
+          const fast = Math.abs(e.velocityX) > 900 && Math.abs(e.translationX) > 40;
+          if (far || fast) runOnJS(onCommit)(e.translationX > 0);
+          else {
+            tx.value = withSpring(0, motion.gentle);
+            ty.value = withSpring(0, motion.gentle);
+            crossed.value = 0;
+          }
+        }),
+    [depth, judged, width, onCommit, tx, ty, crossed],
+  );
 
-  const swipeUp = Gesture.Pan()
-    .enabled(depth === 0 && judged !== null)
-    .activeOffsetY(-12)
-    .onUpdate((e) => {
-      ty.value = Math.min(0, e.translationY);
-    })
-    .onEnd((e) => {
-      if (e.translationY < -80 || e.velocityY < -800) runOnJS(onNext)();
-      else ty.value = withSpring(0, motion.gentle);
-    });
+  const swipeUp = useMemo(
+    () =>
+      Gesture.Pan()
+        .enabled(depth === 0 && judged !== null)
+        .activeOffsetY(-12)
+        .onUpdate((e) => {
+          ty.value = Math.min(0, e.translationY);
+        })
+        .onEnd((e) => {
+          if (e.translationY < -80 || e.velocityY < -800) runOnJS(onNext)();
+          else ty.value = withSpring(0, motion.gentle);
+        }),
+    [depth, judged, onNext, ty],
+  );
 
   const cardStyle = useAnimatedStyle(() => {
     const k = d.value;
@@ -358,7 +375,7 @@ function DeckCard({
       </Animated.View>
     </Animated.View>
   );
-}
+});
 
 function RepeatBadge() {
   const { c } = useTheme();

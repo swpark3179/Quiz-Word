@@ -5,7 +5,7 @@
  * 학습장(직접 고른 단어 목록)도 여기에 함께 저장해 내보내기/가져오기에 들어간다.
  */
 import { create } from 'zustand';
-import { createJSONStorage, persist, type StateStorage } from 'zustand/middleware';
+import { persist, type PersistStorage, type StateStorage, type StorageValue } from 'zustand/middleware';
 import { newNotebookId, sanitizeNotebooks, uniqueIds, type Notebook } from './notebook';
 import { review, type Grade3, type StoredCard } from './srs';
 import { dayKey } from './text';
@@ -87,8 +87,62 @@ const emptyDay = (): DayLog => ({ reviews: 0, newWords: 0, correct: 0, wrong: 0 
 
 export const PROGRESS_KEY = 'quiz-word:v1';
 
-export function createProgressStore(getStorage: () => StateStorage) {
-  return create<ProgressState>()(
+type Persisted = Pick<ProgressState, 'cards' | 'wrong' | 'days' | 'history' | 'settings' | 'notebooks'>;
+
+/**
+ * JSON 저장소 — delayMs 동안 들어온 변경을 모아 한 번만 직렬화·저장한다.
+ * 판정할 때마다 진행 기록 전체(수백 KB)를 JSON 으로 만들어 동기 저장하면 카드가 넘어가는 순간 화면이 끊긴다.
+ * delayMs 가 0 이면 바로 쓴다. 앱이 내려가거나 탭이 숨겨질 때는 flush() 로 남은 것을 바로 쓴다.
+ */
+export function deferredJSONStorage<S>(getStorage: () => StateStorage, delayMs: number): PersistStorage<S> & { flush: () => void } {
+  let storage: StateStorage | undefined;
+  try {
+    storage = getStorage();
+  } catch {
+    storage = undefined;
+  }
+  let pending: { name: string; value: StorageValue<S> } | null = null;
+  let timer: ReturnType<typeof setTimeout> | null = null;
+
+  const flush = () => {
+    if (timer) clearTimeout(timer);
+    timer = null;
+    if (!pending || !storage) return;
+    const { name, value } = pending;
+    pending = null;
+    void storage.setItem(name, JSON.stringify(value));
+  };
+
+  return {
+    getItem(name) {
+      if (pending?.name === name) return pending.value;
+      const raw = storage?.getItem(name) ?? null;
+      if (raw && typeof raw === 'object' && 'then' in raw) {
+        return Promise.resolve(raw).then((str) => (str ? (JSON.parse(str) as StorageValue<S>) : null));
+      }
+      return typeof raw === 'string' ? (JSON.parse(raw) as StorageValue<S>) : null;
+    },
+    setItem(name, value) {
+      pending = { name, value };
+      if (delayMs <= 0) flush();
+      else if (!timer) timer = setTimeout(flush, delayMs);
+    },
+    removeItem(name) {
+      if (pending?.name === name) pending = null;
+      void storage?.removeItem(name);
+    },
+    flush,
+  };
+}
+
+export interface ProgressStoreOptions {
+  /** 저장을 모아서 쓰는 시간(ms). 0 이면 바뀔 때마다 바로 쓴다 */
+  writeDelayMs?: number;
+}
+
+export function createProgressStore(getStorage: () => StateStorage, opts: ProgressStoreOptions = {}) {
+  const storage = deferredJSONStorage<Persisted>(getStorage, opts.writeDelayMs ?? 0);
+  const store = create<ProgressState>()(
   persist(
     (set, get) => ({
       cards: {},
@@ -209,8 +263,8 @@ export function createProgressStore(getStorage: () => StateStorage) {
     {
       name: PROGRESS_KEY,
       version: 1,
-      storage: createJSONStorage(getStorage),
-      partialize: (s) => ({ cards: s.cards, wrong: s.wrong, days: s.days, history: s.history, settings: s.settings, notebooks: s.notebooks }),
+      storage,
+      partialize: (s): Persisted => ({ cards: s.cards, wrong: s.wrong, days: s.days, history: s.history, settings: s.settings, notebooks: s.notebooks }),
       merge: (persisted, current) => {
         const p = (persisted ?? {}) as Partial<ProgressState>;
         return { ...current, ...p, settings: { ...DEFAULT_SETTINGS, ...(p.settings ?? {}) }, notebooks: p.notebooks ? sanitizeNotebooks(p.notebooks) : current.notebooks };
@@ -218,6 +272,8 @@ export function createProgressStore(getStorage: () => StateStorage) {
     },
   ),
   );
+  /** 모아 둔 저장을 지금 바로 쓴다 (앱이 내려갈 때·탭을 숨길 때) */
+  return Object.assign(store, { flush: storage.flush });
 }
 
 export type ProgressStore = ReturnType<typeof createProgressStore>;

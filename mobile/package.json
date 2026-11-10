@@ -10,7 +10,6 @@
     "start:tunnel": "expo start --tunnel",
     "typecheck": "tsc --noEmit",
     "export:ios": "node scripts/sync-shared.mjs && expo export --platform ios --output-dir dist",
-    "ota": "node scripts/sync-shared.mjs && npx eas-cli@latest update --channel production --platform ios --message",
     "icons": "node scripts/make-icons.mjs",
     "lint": "expo lint"
   },

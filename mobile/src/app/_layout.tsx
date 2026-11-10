@@ -4,10 +4,14 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import { Appearance } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { enableFreeze } from 'react-native-screens';
 import { ToastHost } from '@/components/motion';
 import { prepareAudio } from '@/lib/tts';
 import { useProgress } from '@/store/progress';
 import { useTheme } from '@/theme';
+
+// 보이지 않는 탭·화면은 다시 그리지 않는다 — 학습 중 판정마다 뒤에 있는 단어장·오답노트 등이 재렌더되던 것을 막는다
+enableFreeze(true);
 
 export default function RootLayout() {
   const theme = useProgress((s) => s.settings.theme);

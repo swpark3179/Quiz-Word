@@ -1,18 +1,37 @@
 /** 한글 뜻 비교·날짜 등 작은 도우미 */
 
+/**
+ * 오답 보기를 고를 때 같은 뜻 문자열을 수천 번 비교하므로 정리 결과를 문자열별로 기억해 둔다.
+ * 뜻 문자열의 종류는 단어 수 × 뜻 수 정도(수천 개)라 지우지 않아도 된다.
+ */
+const coreCache = new Map<string, string>();
+const bigramCache = new Map<string, string[]>();
+const glossCache = new Map<string, string[]>();
+
 /** 비교용으로 괄호 보충·기호·공백을 걷어낸다 */
 export function koCore(s: string): string {
-  return s
-    .replace(/\([^)]*\)/g, '')
-    .replace(/[^가-힣a-zA-Z0-9]/g, '')
-    .toLowerCase();
+  let t = coreCache.get(s);
+  if (t === undefined) {
+    t = s
+      .replace(/\([^)]*\)/g, '')
+      .replace(/[^가-힣a-zA-Z0-9]/g, '')
+      .toLowerCase();
+    coreCache.set(s, t);
+  }
+  return t;
 }
 
 function bigrams(s: string): string[] {
-  const t = koCore(s);
-  if (t.length < 2) return t ? [t] : [];
-  const out: string[] = [];
-  for (let i = 0; i < t.length - 1; i++) out.push(t.slice(i, i + 2));
+  let out = bigramCache.get(s);
+  if (!out) {
+    const t = koCore(s);
+    if (t.length < 2) out = t ? [t] : [];
+    else {
+      out = [];
+      for (let i = 0; i < t.length - 1; i++) out.push(t.slice(i, i + 2));
+    }
+    bigramCache.set(s, out);
+  }
   return out;
 }
 
@@ -21,24 +40,56 @@ export function dice(a: string, b: string): number {
   const A = bigrams(a);
   const B = bigrams(b);
   if (!A.length || !B.length) return 0;
-  const counts = new Map<string, number>();
-  for (const x of A) counts.set(x, (counts.get(x) ?? 0) + 1);
+  // 뜻 문자열은 짧아(bigram 20개 안팎) Map 보다 배열 두 겹 비교가 빠르다 — 같은 bigram 은 한 번씩만 센다
+  const used = new Uint8Array(A.length);
   let inter = 0;
   for (const x of B) {
-    const c = counts.get(x);
-    if (c) {
-      inter++;
-      counts.set(x, c - 1);
+    for (let i = 0; i < A.length; i++) {
+      if (!used[i] && A[i] === x) {
+        used[i] = 1;
+        inter++;
+        break;
+      }
     }
   }
   return (2 * inter) / (A.length + B.length);
 }
 
+/** 쉼표 등으로 나눈 뜻 조각 (비교용으로 정리, 2글자 이상) */
+function glosses(s: string): string[] {
+  let out = glossCache.get(s);
+  if (!out) {
+    out = s.split(/[,，;·]/).map(koCore).filter((x) => x.length >= 2);
+    glossCache.set(s, out);
+  }
+  return out;
+}
+
 /** 쉼표로 나뉜 뜻 조각 중 하나라도 같으면 사실상 같은 뜻 */
 export function sharesGloss(a: string, b: string): boolean {
-  const pa = a.split(/[,，;·]/).map(koCore).filter((x) => x.length >= 2);
-  const pb = new Set(b.split(/[,，;·]/).map(koCore).filter((x) => x.length >= 2));
-  return pa.some((x) => pb.has(x));
+  const pa = glosses(a);
+  if (!pa.length) return false;
+  const pb = glosses(b);
+  return pa.some((x) => pb.includes(x));
+}
+
+/**
+ * 표제어 정렬 — 대소문자를 무시하고 비교, 같으면 원문으로.
+ * localeCompare 는 iPhone(Hermes)에서 호출마다 비용이 커서 2천 개 정렬이 눈에 띄게 느려진다.
+ */
+export function compareWord(a: string, b: string): number {
+  const x = a.toLowerCase();
+  const y = b.toLowerCase();
+  if (x !== y) return x < y ? -1 : 1;
+  return a < b ? -1 : a > b ? 1 : 0;
+}
+
+/** 목록을 표제어 순으로 (비교 키를 한 번만 만든다) */
+export function sortByWord<T extends { word: string }>(list: readonly T[]): T[] {
+  return list
+    .map((item) => ({ item, key: item.word.toLowerCase() }))
+    .sort((a, b) => (a.key !== b.key ? (a.key < b.key ? -1 : 1) : a.item.word < b.item.word ? -1 : a.item.word > b.item.word ? 1 : 0))
+    .map((x) => x.item);
 }
 
 export function shuffle<T>(arr: T[], rng: () => number = Math.random): T[] {
