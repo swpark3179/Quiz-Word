@@ -3,7 +3,7 @@
  */
 import type { Word } from './schema';
 import { isDue, statusOf, type StoredCard } from './srs';
-import { shuffle } from './text';
+import { shuffle, sortByWord } from './text';
 
 export interface Scope {
   /** core: ccar-f 단어 / all: 확장 포함 / wrong: 오답노트 / file: 특정 문제 파일 / notebook: 학습장 */
@@ -68,7 +68,7 @@ export function selectWords(words: Word[], scope: Scope, p: ProgressView, rng: (
       list = shuffle(list, rng);
       break;
     case 'alpha':
-      list = [...list].sort((a, b) => a.word.localeCompare(b.word));
+      list = sortByWord(list);
       break;
     case 'new-first':
       list = [...list].sort((a, b) => Number(!!p.cards[a.id]) - Number(!!p.cards[b.id]) || b.freq - a.freq);

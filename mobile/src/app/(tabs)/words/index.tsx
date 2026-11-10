@@ -1,7 +1,10 @@
-/** 단어장 — 네이티브 검색창, 필터 칩, 정렬, A–Z 스크러버 */
-import { FlashList, type FlashListRef } from '@shopify/flash-list';
+/**
+ * 단어장 — 네이티브 검색창, 필터 칩, 정렬, A–Z 스크러버
+ * 행은 자기 단어의 학습 상태만 구독한다(WordRow) — 학습 중 판정 하나에 바뀐 행 하나만 다시 그려진다.
+ */
+import { FlashList, type FlashListRef, type ListRenderItem } from '@shopify/flash-list';
 import { router, Stack, useLocalSearchParams } from 'expo-router';
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { memo, useCallback, useDeferredValue, useMemo, useRef, useState } from 'react';
 import { ActionSheetIOS, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { FadeIn, FadeOut, runOnJS } from 'react-native-reanimated';
@@ -10,7 +13,7 @@ import { searchWords } from '@shared/search';
 import { statusOf, type WordStatus } from '@shared/srs';
 import { useToast } from '@/components/motion';
 import { Icon, PosBadge, Segmented, StatusDot, T } from '@/components/ui';
-import { QUIZ_SOURCES, sourceName, WORDS } from '@/data/words';
+import { QUIZ_SOURCES, sourceName, WORDS, WORDS_BY_FREQ } from '@/data/words';
 import { speak } from '@/lib/tts';
 import { useProgress } from '@/store/progress';
 import { type, useTheme } from '@/theme';
@@ -46,23 +49,23 @@ export default function WordsScreen() {
   const [tier, setTier] = useState<TierFilter>('');
   const [sort, setSort] = useState<Sort>('freq');
   const [bubble, setBubble] = useState<string | null>(null);
-  const cards = useProgress((s) => s.cards);
-  const wrong = useProgress((s) => s.wrong);
-  const addWrong = useProgress((s) => s.addWrong);
-  const removeWrong = useProgress((s) => s.removeWrong);
   const toast = useToast((s) => s.show);
   const listRef = useRef<FlashListRef<Word>>(null);
+  // 검색어는 한 박자 늦게 반영 — 빠르게 칠 때 글자 입력이 밀리지 않게
+  const dq = useDeferredValue(q);
+  // 학습 상태로 거를 때만 진행 기록에 따라 목록이 바뀐다 (그 밖에는 판정해도 목록을 다시 만들지 않는다)
+  const statusCards = useProgress((s) => (status && status !== 'wrong' ? s.cards : null));
+  const statusWrong = useProgress((s) => (status === 'wrong' ? s.wrong : null));
 
   const list = useMemo(() => {
-    let base = WORDS;
+    let base = sort === 'alpha' ? WORDS : WORDS_BY_FREQ;
     if (src) base = base.filter((w) => w.sources.includes(src));
     if (pos) base = base.filter((w) => (pos === '구' ? w.pos.some((p) => p.endsWith('구')) : w.pos.includes(pos)));
     if (tier) base = base.filter((w) => (tier === 'basic' ? w.basic : w.tier === tier && !w.basic));
-    if (status === 'wrong') base = base.filter((w) => wrong[w.id]);
-    else if (status) base = base.filter((w) => statusOf(cards[w.id]) === status);
-    if (q.trim()) return searchWords(base, q);
-    return sort === 'alpha' ? base : [...base].sort((a, b) => b.freq - a.freq || a.word.localeCompare(b.word));
-  }, [q, src, pos, tier, status, sort, cards, wrong]);
+    if (statusWrong) base = base.filter((w) => statusWrong[w.id]);
+    else if (statusCards) base = base.filter((w) => statusOf(statusCards[w.id]) === status);
+    return dq.trim() ? searchWords(base, dq) : base;
+  }, [dq, src, pos, tier, status, sort, statusCards, statusWrong]);
 
   const letterIndex = useMemo(() => {
     const m = new Map<string, number>();
@@ -97,7 +100,8 @@ export default function WordsScreen() {
     .onUpdate((e) => runOnJS(jump)(e.y))
     .onFinalize(() => runOnJS(jump)(0, true));
 
-  const onLongPress = (w: Word) => {
+  const onLongPress = useCallback((w: Word) => {
+    const { wrong, addWrong, removeWrong } = useProgress.getState();
     const inWrong = !!wrong[w.id];
     ActionSheetIOS.showActionSheetWithOptions(
       { title: w.word, message: w.short, options: [inWrong ? '오답노트에서 빼기' : '오답노트에 담기', '발음 듣기', '취소'], cancelButtonIndex: 2, destructiveButtonIndex: inWrong ? 0 : undefined },
@@ -110,12 +114,14 @@ export default function WordsScreen() {
         } else if (i === 1) speak(w.word);
       },
     );
-  };
+  }, [toast]);
 
   const filtersOn = !!(src || pos || status || tier);
-  const showScrubber = sort === 'alpha' && !q.trim();
+  const showScrubber = sort === 'alpha' && !dq.trim();
 
-  const header = (
+  const renderItem = useCallback<ListRenderItem<Word>>(({ item }) => <WordRow w={item} scrubber={showScrubber} onLongPress={onLongPress} />, [showScrubber, onLongPress]);
+
+  const header = useMemo(() => (
     <View style={{ gap: 10, paddingBottom: 8 }}>
       <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8, paddingHorizontal: 16 }}>
         <FilterChip
@@ -181,7 +187,7 @@ export default function WordsScreen() {
         </T>
       </View>
     </View>
-  );
+  ), [src, pos, status, tier, sort, filtersOn, list.length]);
 
   return (
     <View style={{ flex: 1, backgroundColor: c.bg }}>
@@ -205,41 +211,8 @@ export default function WordsScreen() {
         ListHeaderComponent={header}
         ListEmptyComponent={<T v="subhead" color="muted" style={{ textAlign: 'center', marginTop: 50 }}>찾는 단어가 없어요</T>}
         contentContainerStyle={{ paddingBottom: 120 }}
-        renderItem={({ item: w }) => (
-          <Pressable
-            onPress={() => router.push({ pathname: '/word/[id]', params: { id: w.id } })}
-            onLongPress={() => onLongPress(w)}
-            style={({ pressed }) => [styles.row, { backgroundColor: pressed ? c.surface2 : c.bg, paddingRight: showScrubber ? 30 : 16 }]}
-          >
-            <StatusDot status={statusOf(cards[w.id])} />
-            <View style={{ flex: 1, minWidth: 0 }}>
-              <View style={{ flexDirection: 'row', alignItems: 'baseline', gap: 8 }}>
-                <Text numberOfLines={1} style={[type.headline, { color: c.text, flexShrink: 1 }]}>
-                  {w.word}
-                </Text>
-                {!!w.ipa && (
-                  <Text numberOfLines={1} style={[type.footnote, { color: c.muted, flexShrink: 1 }]}>
-                    /{w.ipa}/
-                  </Text>
-                )}
-              </View>
-              <Text numberOfLines={1} style={[type.subhead, { color: c.text2, marginTop: 2 }]}>
-                {w.short}
-              </Text>
-            </View>
-            <View style={{ alignItems: 'flex-end', gap: 4 }}>
-              <View style={{ flexDirection: 'row', gap: 4 }}>
-                {wrong[w.id] && <Icon name="bookmark.fill" size={12} color={c.danger} />}
-                {!!w.pos[0] && <PosBadge pos={w.pos[0]} small />}
-              </View>
-              {w.freq > 0 && (
-                <T v="caption" color="muted" style={{ fontVariant: ['tabular-nums'] }}>
-                  {w.freq}회
-                </T>
-              )}
-            </View>
-          </Pressable>
-        )}
+        extraData={showScrubber}
+        renderItem={renderItem}
       />
 
       {showScrubber && (
@@ -261,6 +234,48 @@ export default function WordsScreen() {
     </View>
   );
 }
+
+/** 단어장 한 줄 — 자기 단어의 학습 상태·오답 여부만 구독한다 */
+const WordRow = memo(function WordRow({ w, scrubber, onLongPress }: { w: Word; scrubber: boolean; onLongPress: (w: Word) => void }) {
+  const { c } = useTheme();
+  const status = useProgress((s) => statusOf(s.cards[w.id]));
+  const inWrong = useProgress((s) => !!s.wrong[w.id]);
+  return (
+    <Pressable
+      onPress={() => router.push({ pathname: '/word/[id]', params: { id: w.id } })}
+      onLongPress={() => onLongPress(w)}
+      style={({ pressed }) => [styles.row, { backgroundColor: pressed ? c.surface2 : c.bg, paddingRight: scrubber ? 30 : 16 }]}
+    >
+      <StatusDot status={status} />
+      <View style={{ flex: 1, minWidth: 0 }}>
+        <View style={{ flexDirection: 'row', alignItems: 'baseline', gap: 8 }}>
+          <Text numberOfLines={1} style={[type.headline, { color: c.text, flexShrink: 1 }]}>
+            {w.word}
+          </Text>
+          {!!w.ipa && (
+            <Text numberOfLines={1} style={[type.footnote, { color: c.muted, flexShrink: 1 }]}>
+              /{w.ipa}/
+            </Text>
+          )}
+        </View>
+        <Text numberOfLines={1} style={[type.subhead, { color: c.text2, marginTop: 2 }]}>
+          {w.short}
+        </Text>
+      </View>
+      <View style={{ alignItems: 'flex-end', gap: 4 }}>
+        <View style={{ flexDirection: 'row', gap: 4 }}>
+          {inWrong && <Icon name="bookmark.fill" size={12} color={c.danger} />}
+          {!!w.pos[0] && <PosBadge pos={w.pos[0]} small />}
+        </View>
+        {w.freq > 0 && (
+          <T v="caption" color="muted" style={{ fontVariant: ['tabular-nums'] }}>
+            {w.freq}회
+          </T>
+        )}
+      </View>
+    </Pressable>
+  );
+});
 
 function FilterChip({ label, active, onPress }: { label: string; active: boolean; onPress: () => void }) {
   const { c } = useTheme();

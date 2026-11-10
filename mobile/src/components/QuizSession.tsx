@@ -23,6 +23,7 @@ import { CountUp, ProgressRing } from '@/components/motion';
 import { Button, Icon, PosBadge, ProgressBar, ScreenSafeArea, T } from '@/components/ui';
 import { Highlighted, SpeakButton, WordBrief } from '@/components/word';
 import { contextsOf, WORD_BY_ID, WORDS } from '@/data/words';
+import { afterFrame } from '@/lib/afterFrame';
 import { speak } from '@/lib/tts';
 import { useProgress } from '@/store/progress';
 import { elevation, motion, type, useTheme } from '@/theme';
@@ -75,11 +76,20 @@ export function QuizSession({ ids: initialIds, mode, title, onResult }: { ids: s
       const correct = !!q.options[i]?.correct;
       setPicked(i);
       setResults((r) => ({ ...r, [w.id]: correct }));
-      onResult(w.id, correct);
       void (correct ? haptic.success() : haptic.error());
+      // 기록은 정답 표시 애니메이션이 시작된 뒤에
+      afterFrame(() => onResult(w.id, correct));
       setTimeout(() => scroll.current?.scrollToEnd({ animated: !reduced }), 260);
+      // 해설을 보는 동안 다음 문제(오답 보기 고르기)를 미리 만들어 둔다 — "다음"을 누를 때 멈칫하지 않게
+      const nextWord = WORD_BY_ID.get(ids[index + 1] ?? '');
+      if (nextWord) {
+        const k = `${round}:${index + 1}`;
+        setTimeout(() => {
+          questions.current[k] ??= makeQuestion(nextWord, mode, settings.quizChoices);
+        }, 600);
+      }
     },
-    [q, w, picked, onResult, reduced],
+    [q, w, picked, onResult, reduced, ids, index, round, mode, settings.quizChoices],
   );
 
   const next = () => {

@@ -112,3 +112,9 @@ export const DOMAINS = [
 ] as const;
 
 export const SOURCE_VOCAB = 'vocab';
+
+/** 문제 파일 (data/sources.json) */
+export interface SourceInfo {
+  id: string;
+  name: string;
+}

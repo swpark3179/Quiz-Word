@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { ConfirmDialog, Dialog } from '../components/Dialog';
 import { Button, Card, Empty, Kbd, PageHeader, PosBadge, StatusDot } from '../components/ui';
+import { WindowList } from '../components/WindowList';
 import { WORD_BY_ID, WORDS } from '../data/words';
 import { cleanNotebookName, defaultNotebookName, wrongIdsByCount, wrongNotebookName } from '../lib/notebook';
 import type { Word } from '../lib/schema';
@@ -375,9 +376,13 @@ export function NotebookDetail() {
             <span>{words.length}개 단어</span>
             <span>최근에 담은 순</span>
           </div>
-          <div className="divide-y divide-line">
-            {words.map((w) => (
-              <div key={w.id} className="flex items-center gap-4 px-5 py-3 hover:bg-surface-2/60">
+          {/* 수백 단어 학습장도 보이는 줄만 그린다 */}
+          <WindowList
+            items={words}
+            getKey={(w) => w.id}
+            estimateSize={58}
+            renderRow={(w) => (
+              <div className="flex items-center gap-4 px-5 py-3 hover:bg-surface-2/60">
                 <button onClick={() => openWord(w.id)} className="flex min-w-0 flex-1 items-center gap-3.5 text-left">
                   <StatusDot status={statusOf(cards[w.id])} />
                   <span className="min-w-0 flex-1 sm:flex sm:items-center sm:gap-3">
@@ -400,8 +405,8 @@ export function NotebookDetail() {
                   <Trash2 size={16} />
                 </button>
               </div>
-            ))}
-          </div>
+            )}
+          />
         </Card>
       )}
 

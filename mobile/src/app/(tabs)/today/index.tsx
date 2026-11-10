@@ -10,19 +10,22 @@ import { dayKey, daysUntil } from '@shared/text';
 import { CountUp, GrowBar, ProgressRing } from '@/components/motion';
 import { Card, Icon, PressableScale, SectionLabel, T } from '@/components/ui';
 import { QUIZ_SOURCES, WORDS } from '@/data/words';
+import { useFocusSnapshot } from '@/lib/useFocusSnapshot';
 import { MODE_INFO, scopeOf, sessionHref, useScopes } from '@/store/session';
 import { useProgress } from '@/store/progress';
 import { DEFAULT_SCOPE } from '@shared/scope';
 import { elevation, type, useTheme } from '@/theme';
 
 const WEEKDAY = ['일', '월', '화', '수', '목', '금', '토'];
+const CORE = WORDS.filter((w) => w.tier === 'core' && !w.basic);
 
 export default function Today() {
   const { c, dark } = useTheme();
   const reduced = useReducedMotion();
-  const cards = useProgress((s) => s.cards);
-  const wrong = useProgress((s) => s.wrong);
-  const days = useProgress((s) => s.days);
+  // 세션을 띄운 동안(이 탭이 가려진 동안)은 판정마다 다시 계산하지 않는다
+  const cards = useFocusSnapshot(useProgress((s) => s.cards));
+  const wrongN = useFocusSnapshot(useProgress((s) => Object.keys(s.wrong).length));
+  const days = useFocusSnapshot(useProgress((s) => s.days));
   const settings = useProgress((s) => s.settings);
   const scopes = useScopes((s) => s.scopes);
   const [filesOpen, setFilesOpen] = useState(false);
@@ -31,22 +34,24 @@ export default function Today() {
   const todayLog = days[dayKey(today)];
   const plan = useMemo(() => reviewPlan(WORDS, cards, settings.newPerDay, todayLog?.newWords ?? 0), [cards, settings.newPerDay, todayLog?.newWords]);
   const examLeft = settings.examDate ? daysUntil(settings.examDate) : undefined;
-  const wrongN = Object.keys(wrong).length;
 
   const progress = useMemo(() => {
-    const core = WORDS.filter((w) => w.tier === 'core' && !w.basic);
     const count = { new: 0, learning: 0, mastered: 0 };
-    for (const w of core) count[statusOf(cards[w.id])]++;
-    const bySource = QUIZ_SOURCES.map((s) => {
-      const ws = core.filter((w) => w.sources.includes(s.id));
-      return {
-        ...s,
-        total: ws.length,
-        done: ws.filter((w) => statusOf(cards[w.id]) !== 'new').length,
-        mastered: ws.filter((w) => statusOf(cards[w.id]) === 'mastered').length,
-      };
-    }).filter((s) => s.total >= 10);
-    return { total: core.length, ...count, bySource };
+    const per = new Map(QUIZ_SOURCES.map((s) => [s.id, { total: 0, done: 0, mastered: 0 }]));
+    // 핵심 단어를 한 번만 훑으며 전체·파일별 진척을 함께 센다
+    for (const w of CORE) {
+      const st = statusOf(cards[w.id]);
+      count[st]++;
+      for (const src of w.sources) {
+        const p = per.get(src);
+        if (!p) continue;
+        p.total++;
+        if (st !== 'new') p.done++;
+        if (st === 'mastered') p.mastered++;
+      }
+    }
+    const bySource = QUIZ_SOURCES.map((s) => ({ ...s, ...per.get(s.id)! })).filter((s) => s.total >= 10);
+    return { total: CORE.length, ...count, bySource };
   }, [cards]);
 
   const week = useMemo(() => {

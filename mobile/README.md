@@ -4,6 +4,7 @@
 
 - Expo SDK 54 (React Native 0.81) — App Store 의 Expo Go 가 지원하는 마지막 SDK라서, 개발 중에 iPhone 의 Expo Go 로 바로 확인할 수 있습니다.
 - 단어 데이터는 앱에 들어 있어 오프라인으로 동작하고, 진행 기록은 기기 안(SQLite)에 저장됩니다.
+- 단어를 고치면 웹에서 **단어 세트 파일**을 내려받아 앱 설정에서 불러옵니다 (OTA·재빌드 없이). 아래 '단어를 고쳤을 때' 참고.
 - 웹에서 내보낸 진행 기록 JSON 을 그대로 가져올 수 있고, 그 반대도 됩니다 (설정 → 진행 기록). 학습장 전체 목록도 함께 옮겨집니다.
 
 ## 구조
@@ -18,6 +19,7 @@ mobile/
     session/          플래시카드 · 객관식 · 복습 (전체 화면)
     settings.tsx
   src/components/     FlashSession(스와이프·뒤집기) · QuizSession · 공용 UI · 모션 조각
+  src/lib/wordSet.ts  단어 세트 — 앱 기본(내장) 또는 불러온 파일(문서 폴더 wordset.json)을 켤 때 읽음
   src/theme/          디자인 토큰 · 모션 곡선 · 진동
   src/generated/      ← 자동 생성 (git 제외): 웹과 공용 로직(../src/lib) + 단어 데이터(../data)
   scripts/sync-shared.mjs   공용 로직·데이터 복사 (npm install / npm start 때 자동 실행)
@@ -38,21 +40,30 @@ npm start          # QR 코드가 나오면 iPhone 카메라로 찍어 Expo Go �
 - 웹 브라우저로 대충 볼 때: `npx expo start --web` (탭·아이콘·시트 모양은 iPhone 과 다릅니다)
 - 검사: `npm run typecheck` · `npm run lint` · `npm run export:ios` (iOS 번들이 만들어지는지)
 
-## 단어를 고쳤을 때 → OTA 업데이트 (TestFlight 재빌드 없이)
+## 단어를 고쳤을 때 → 단어 세트 파일 (빌드 없이)
 
-```bash
-# 저장소 루트에서
-npm run data:validate
-# mobile 에서
-cd mobile
-npm run ota -- "단어 추가: idempotent"
-```
+1. 저장소 루트에서 `data/words/*.json` 을 고치고 `npm run data:validate`
+2. 단어 세트 파일 만들기 — 둘 중 편한 것
+   - 웹(`npm start`) → **설정 → 단어 세트 · iPhone 앱으로 보내기 → 단어 세트 파일 내려받기**
+   - 터미널: `npm run data:pack` → `wordset/quiz-word-words-YYYYMMDD.json` (검사를 통과해야 만들어짐)
+3. 파일을 AirDrop·iCloud Drive·메신저 등으로 iPhone 의 **파일** 앱에 옮긴다
+4. 앱 → **설정 → 단어 세트 → 파일에서 불러오기** → 바뀌는 단어 수를 확인하고 **바꾸고 다시 시작**
 
-앱을 한 번 껐다 켜면 새 데이터를 받아 두고, 다음 실행 때 적용됩니다. 바로 적용하려면 설정 → **업데이트 확인**.
+- 단어 세트 파일(약 4.6MB)에는 단어 전체와 문제 문장(corpus)·문제 파일 목록이 들어 있고, 불러오면 앱의 단어 **전체**가 이 파일로 바뀝니다.
+- 진행 기록·학습장은 단어 id 기준이라 그대로 이어집니다. 새 세트에서 빠진 단어의 기록은 지워지지 않고 숨겨져 있다가, 그 단어가 다시 들어오면 이어집니다.
+- 설정 → 단어 세트에서 지금 쓰는 세트(앱 기본 / 불러온 파일, 만든 시각, 단어 수)를 볼 수 있고, **앱 기본 단어 세트로 되돌리기**도 됩니다. 새 TestFlight 빌드에 든 앱 기본 단어가 불러온 파일보다 최근이면 거기서 알려 줍니다.
+- 불러온 파일은 기기 안 문서 폴더(`wordset.json`)에 저장되고, 앱이 켜질 때 읽습니다. 파일이 손상돼 읽지 못하면 앱 기본 단어로 열고 설정에 이유를 보여 줍니다.
 
-- 화면 코드나 공용 로직을 고친 경우도 같은 방법으로 반영됩니다.
-- **네이티브 패키지를 추가·변경한 경우**에는 `app.config.ts` 의 `VERSION` 을 올리고 TestFlight 를 다시 빌드해야 합니다 (runtimeVersion 이 바뀌어 이전 앱에는 OTA 가 가지 않습니다).
-- OTA 는 Expo 서버(expo.dev)에 접속해야 합니다. 회사망에서 막히면 다른 네트워크에서 실행하세요.
+## 화면·로직을 고쳤을 때 → TestFlight 빌드
+
+OTA 는 쓰지 않으므로, 화면 코드나 공용 로직(`src/lib`)을 고치면 아래 **TestFlight 빌드**로 반영합니다. 빌드에는 그 시점의 `data/words` 가 앱 기본 단어로 함께 들어갑니다.
+
+## 성능 메모
+
+- 긴 목록(단어장·오답노트·학습장)은 FlashList 로 보이는 줄만 그리고, 줄은 자기 단어의 학습 상태만 구독합니다(판정 하나에 바뀐 줄 하나만 다시 그림).
+- 보이지 않는 탭은 얼려 두고(`enableFreeze`), 세션을 띄운 오늘·학습 탭은 가려진 동안 계산을 멈춥니다(`useFocusSnapshot`).
+- 진행 기록은 0.8초 동안 모아 한 번에 저장하고, 앱이 백그라운드로 가면 바로 씁니다.
+- 판정 기록은 카드가 넘어가는 프레임 뒤에, 객관식 다음 문제는 해설을 보는 동안 미리 만듭니다.
 
 ## TestFlight 빌드
 
@@ -76,12 +87,7 @@ Quiz-Bank 와 같은 방식(Expo prebuild → xcodebuild → altool)이며 macOS
    - `IOS_CODE_SIGN_IDENTITY`: p12 에 든 배포 인증서 이름. 보통 `Apple Distribution` 만 넣으면 됩니다 (따옴표·공백 없이, 전체 이름 `Apple Distribution: 이름 (TEAMID)` 도 가능).
      정확한 이름은 `certutil -dump cert.p12` (Windows, Subject 의 CN) 또는 `security find-identity -v -p codesigning` (Mac) 으로 확인합니다.
      `Apple Development`(개발용)는 안 되고, 1번 프로파일을 만들 때 고른 인증서와 같아야 합니다.
-4. **Expo (OTA)**
-   - `cd mobile && npx eas-cli@latest login` (계정 swpark3179)
-   - `npx eas-cli@latest init` → 알려 주는 project id 를 `app.config.ts` 의 `EAS_PROJECT_ID` 에 붙여 넣기
-   - 그다음 TestFlight 빌드를 한 번 해야 OTA 를 받을 수 있는 앱이 됩니다
-
-private 저장소는 GitHub Actions macOS 무료 사용량이 월 약 200분(빌드 8~10회)이라, 평소 수정은 OTA 로 하고 네이티브가 바뀔 때만 빌드하세요.
+private 저장소는 GitHub Actions macOS 무료 사용량이 월 약 200분(빌드 8~10회)입니다. 단어만 바뀌었으면 빌드하지 말고 단어 세트 파일로 옮기세요.
 
 ## 디자인 메모
 

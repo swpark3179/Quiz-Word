@@ -7,6 +7,7 @@ import { reviewPlan } from '@shared/reviewPlan';
 import { dayKey } from '@shared/text';
 import { Icon, PressableScale, SectionLabel, T } from '@/components/ui';
 import { WORDS } from '@/data/words';
+import { useFocusSnapshot } from '@/lib/useFocusSnapshot';
 import { useProgress } from '@/store/progress';
 import { MODE_INFO, scopeOf, scopeSummary, useScopes, type StudyMode } from '@/store/session';
 import { elevation, useTheme } from '@/theme';
@@ -17,9 +18,10 @@ export default function Study() {
   const { c, dark } = useTheme();
   const reduced = useReducedMotion();
   const scopes = useScopes((s) => s.scopes);
-  const cards = useProgress((s) => s.cards);
+  // 세션을 띄운 동안(이 탭이 가려진 동안)은 판정마다 복습 계획을 다시 계산하지 않는다
+  const cards = useFocusSnapshot(useProgress((s) => s.cards));
   const settings = useProgress((s) => s.settings);
-  const todayNew = useProgress((s) => s.days[dayKey()]?.newWords ?? 0);
+  const todayNew = useFocusSnapshot(useProgress((s) => s.days[dayKey()]?.newWords ?? 0));
   const plan = useMemo(() => reviewPlan(WORDS, cards, settings.newPerDay, todayNew), [cards, settings.newPerDay, todayNew]);
   const reviewTotal = plan.due.length + plan.fresh.length;
 

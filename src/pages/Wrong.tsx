@@ -3,6 +3,7 @@ import { Layers, ListChecks, NotebookPen, Trash2 } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button, Card, Empty, PageHeader, PosBadge } from '../components/ui';
+import { WindowList } from '../components/WindowList';
 import { WORD_BY_ID } from '../data/words';
 import { DEFAULT_SCOPE, scopeToParams } from '../lib/scope';
 import { timeAgo as ago } from '../lib/text';
@@ -69,9 +70,12 @@ export function WrongPage() {
               ))}
             </div>
           </div>
-          <div className="divide-y divide-line">
-            {rows.map(({ id, e, w }) => (
-              <div key={id} className="flex items-center gap-4 px-5 py-3.5 hover:bg-surface-2/60">
+          {/* 수백 개가 쌓여도 보이는 줄만 그린다 */}
+          <WindowList
+            items={rows}
+            getKey={(r) => r.id}
+            renderRow={({ id, e, w }) => (
+              <div className="flex items-center gap-4 px-5 py-3.5 hover:bg-surface-2/60">
                 <Link
                   to={`/word/${id}`}
                   onClick={() =>
@@ -103,8 +107,8 @@ export function WrongPage() {
                   <Trash2 size={16} />
                 </button>
               </div>
-            ))}
-          </div>
+            )}
+          />
         </Card>
       )}
     </div>

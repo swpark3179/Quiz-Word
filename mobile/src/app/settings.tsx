@@ -4,14 +4,15 @@ import Constants from 'expo-constants';
 import * as DocumentPicker from 'expo-document-picker';
 import { File, Paths } from 'expo-file-system';
 import * as Sharing from 'expo-sharing';
-import * as Updates from 'expo-updates';
 import { useEffect, useState, type ReactNode } from 'react';
 import { ActionSheetIOS, Alert, Pressable, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
 import { dayKey } from '@shared/text';
+import { diffWordSets, type WordSetFile } from '@shared/wordset';
 import { useToast } from '@/components/motion';
 import { Icon, Segmented, T } from '@/components/ui';
-import { DATA_BUILT_AT, WORDS } from '@/data/words';
+import { WORD_SET_INFO, WORDS } from '@/data/words';
 import { englishVoices, speak, type VoiceInfo } from '@/lib/tts';
+import { canImportWordSet, installWordSet, readWordSetFile, removeImportedWordSet, restartApp } from '@/lib/wordSet';
 import { exportProgress, useProgress } from '@/store/progress';
 import { type, useTheme } from '@/theme';
 import { haptic } from '@/theme/haptics';
@@ -59,7 +60,6 @@ export default function Settings() {
   const notebooksN = useProgress((s) => s.notebooks.length);
   const toast = useToast((s) => s.show);
   const [voices, setVoices] = useState<VoiceInfo[]>([]);
-  const [checking, setChecking] = useState(false);
 
   useEffect(() => {
     void englishVoices().then(setVoices);
@@ -121,25 +121,82 @@ export default function Settings() {
     }
   };
 
-  const checkUpdate = async () => {
-    setChecking(true);
-    try {
-      const r = await Updates.checkForUpdateAsync();
-      if (!r.isAvailable) {
-        toast('최신 버전이에요');
-        return;
-      }
-      await Updates.fetchUpdateAsync();
-      Alert.alert('업데이트를 받았어요', '지금 다시 시작해 적용할까요?', [
-        { text: '나중에', style: 'cancel' },
-        { text: '다시 시작', onPress: () => void Updates.reloadAsync() },
-      ]);
-    } catch {
-      Alert.alert('업데이트를 확인할 수 없어요', '개발 모드(Expo Go)에서는 확인할 수 없고, TestFlight 로 설치한 앱에서만 동작해요.');
-    } finally {
-      setChecking(false);
-    }
+  /* ───── 단어 세트: 파일에서 불러오기 · 앱 기본으로 되돌리기 ───── */
+  const restartOrTell = async (savedMessage: string) => {
+    if (!(await restartApp())) Alert.alert(savedMessage, '앱을 완전히 닫았다가 다시 열면 적용돼요.');
   };
+
+  const applyWordSet = async (set: WordSetFile) => {
+    try {
+      installWordSet(set);
+    } catch (e) {
+      Alert.alert('단어 세트를 저장하지 못했어요', (e as Error).message);
+      return;
+    }
+    void haptic.success();
+    await restartOrTell('단어 세트를 저장했어요');
+  };
+
+  const doImportWordSet = async () => {
+    const res = await DocumentPicker.getDocumentAsync({ type: ['application/json', 'public.json', '*/*'], copyToCacheDirectory: true });
+    if (res.canceled || !res.assets?.[0]) return;
+    let set: WordSetFile;
+    try {
+      set = await readWordSetFile(res.assets[0].uri);
+    } catch (e) {
+      Alert.alert('불러오지 못했어요', (e as Error).message);
+      return;
+    }
+    const { added, removed } = diffWordSets(
+      WORDS.map((w) => w.id),
+      set.words.map((w) => w.id ?? ''),
+    );
+    const cards = useProgress.getState().cards;
+    const studiedGone = removed.filter((id) => cards[id]).length;
+    Alert.alert(
+      '단어 세트를 바꿀까요?',
+      [
+        `${WORDS.length.toLocaleString()}개 → ${set.count.toLocaleString()}개 (추가 ${added.length} · 빠짐 ${removed.length})`,
+        `${formatDate(set.builtAt)} 에 만든 파일`,
+        studiedGone ? `빠지는 단어 중 ${studiedGone}개는 학습 기록이 있어요. 기록은 지워지지 않고, 그 단어가 다시 들어오면 이어져요.` : '',
+        '진행 기록·학습장은 그대로예요. 바꾸면 앱이 다시 시작돼요.',
+      ]
+        .filter(Boolean)
+        .join('\n\n'),
+      [
+        { text: '취소', style: 'cancel' },
+        { text: '바꾸고 다시 시작', onPress: () => void applyWordSet(set) },
+      ],
+    );
+  };
+
+  const revertWordSet = () =>
+    Alert.alert('앱 기본 단어 세트로 되돌릴까요?', `앱에 들어 있는 단어(${formatDate(WORD_SET_INFO.bundledBuiltAt)})로 바뀌어요. 진행 기록·학습장은 그대로예요.`, [
+      { text: '취소', style: 'cancel' },
+      {
+        text: '되돌리고 다시 시작',
+        style: 'destructive',
+        onPress: () => {
+          try {
+            removeImportedWordSet();
+          } catch (e) {
+            Alert.alert('되돌리지 못했어요', (e as Error).message);
+            return;
+          }
+          void restartOrTell('앱 기본 단어 세트로 되돌렸어요');
+        },
+      },
+    ]);
+
+  const imported = WORD_SET_INFO.origin === 'imported';
+  const bundledNewer = imported && WORD_SET_INFO.bundledBuiltAt > WORD_SET_INFO.builtAt;
+  const wordSetFooter = [
+    WORD_SET_INFO.error ? `불러온 단어 세트를 읽지 못해 앱 기본 단어로 열었어요 (${WORD_SET_INFO.error}). 파일을 다시 불러오세요.` : '',
+    bundledNewer ? `앱 기본 단어(${formatDate(WORD_SET_INFO.bundledBuiltAt)})가 불러온 파일보다 최근이에요. 되돌리면 앱 기본 단어를 써요.` : '',
+    '웹 설정의 "단어 세트 파일 내려받기"로 만든 파일을 AirDrop·iCloud Drive 등으로 iPhone 에 옮긴 뒤 불러오세요. 진행 기록은 단어 id 기준이라 그대로 이어집니다.',
+  ]
+    .filter(Boolean)
+    .join('\n');
 
   return (
     <ScrollView contentInsetAdjustmentBehavior="automatic" contentContainerStyle={styles.content} style={{ backgroundColor: c.bg }}>
@@ -207,6 +264,17 @@ export default function Settings() {
         </View>
       </Group>
 
+      <Group title="단어 세트" footer={wordSetFooter}>
+        <Row label="지금 쓰는 단어" detail={`${imported ? '불러온 파일' : '앱 기본'} · ${formatDate(WORD_SET_INFO.builtAt)} · ${WORD_SET_INFO.count.toLocaleString()}개`} />
+        <Row
+          label="파일에서 불러오기"
+          detail={canImportWordSet ? '웹에서 내려받은 단어 세트 파일 (.json)' : 'iPhone 앱에서만 할 수 있어요'}
+          onPress={canImportWordSet ? doImportWordSet : undefined}
+          last={!imported}
+        />
+        {imported && <Row label="앱 기본 단어 세트로 되돌리기" danger onPress={revertWordSet} last />}
+      </Group>
+
       <Group title="진행 기록" footer={`학습한 단어 ${cardsN}개 / 전체 ${WORDS.length.toLocaleString()}개 · 학습장 ${notebooksN}개. 내보내기 파일에 학습장 전체 목록도 들어가고, 웹 버전에서 내보낸 파일도 그대로 가져올 수 있어요.`}>
         <Row label="내보내기" detail="JSON 파일로 저장·공유" onPress={doExport} />
         <Row label="가져오기" detail="웹 또는 다른 기기에서 내보낸 파일" onPress={doImport} />
@@ -231,12 +299,18 @@ export default function Settings() {
       </Group>
 
       <Group title="정보">
-        <Row label="단어 데이터" detail={`${WORDS.length.toLocaleString()}개 · ${DATA_BUILT_AT.slice(0, 10)} 기준`} />
-        <Row label="앱 버전" detail={`${Constants.expoConfig?.version ?? ''} (${Updates.updateId ? `업데이트 ${Updates.updateId.slice(0, 8)}` : '내장 번들'})`} />
-        <Row label={checking ? '확인하는 중…' : '업데이트 확인'} onPress={checking ? undefined : checkUpdate} last />
+        <Row label="앱 버전" detail={`${Constants.expoConfig?.version ?? ''}${Constants.expoConfig?.ios?.buildNumber ? ` (빌드 ${Constants.expoConfig.ios.buildNumber})` : ''}`} last />
       </Group>
     </ScrollView>
   );
+}
+
+/** "2026. 11. 10. 21:30" */
+function formatDate(iso: string): string {
+  const d = new Date(iso);
+  if (!iso || Number.isNaN(d.getTime())) return '날짜 모름';
+  const p = (n: number) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}. ${d.getMonth() + 1}. ${d.getDate()}. ${p(d.getHours())}:${p(d.getMinutes())}`;
 }
 
 function Stepper({ value, options, onChange, suffix = '개' }: { value: number; options: number[]; onChange: (v: number) => void; suffix?: string }) {

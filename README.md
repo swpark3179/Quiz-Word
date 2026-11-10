@@ -63,7 +63,8 @@ CCAR-F 문제 파일(`Quiz-Bank/assets/quiz-data/ccar-f`)에 나온 영어 단�
 
 ## iPhone 앱
 
-`mobile/` 에 같은 단어·학습 로직을 쓰는 iOS 앱(Expo)이 있습니다. TestFlight 로 설치하고, 단어를 고치면 OTA 로 반영합니다.
+`mobile/` 에 같은 단어·학습 로직을 쓰는 iOS 앱(Expo)이 있습니다. TestFlight 로 설치하고, 단어를 고치면 **단어 세트 파일**로 옮깁니다(빌드 없이):
+웹 **설정 → 단어 세트 파일 내려받기**(또는 `npm run data:pack`) → 파일을 iPhone 의 파일 앱으로 → 앱 **설정 → 단어 세트 → 파일에서 불러오기**.
 자세한 내용은 [mobile/README.md](mobile/README.md) 를 보세요. 웹과 앱의 진행 기록(학습장 포함)은 설정의 내보내기/가져오기로 옮길 수 있습니다.
 
 ## 단어 직접 추가·수정
@@ -85,6 +86,7 @@ CCAR-F 문제 파일(`Quiz-Bank/assets/quiz-data/ccar-f`)에 나온 영어 단�
 
 - `contexts` 를 적지 않으면 CCAR-F 문제 문장(`data/corpus.json`)에서 이 단어가 나온 문장을 **자동으로 예문으로 붙입니다**.
 - 고친 뒤 검사: `npm run data:validate`
+- iPhone 앱에 반영: `npm run data:pack` → `wordset/` 에 생긴 파일을 앱 설정 → 단어 세트 → 파일에서 불러오기 (웹 설정의 '단어 세트 파일 내려받기'도 같은 파일)
 
 **전체 필드**
 
@@ -128,12 +130,12 @@ CCAR-F 문제 파일(`Quiz-Bank/assets/quiz-data/ccar-f`)에 나온 영어 단�
 3. 배치마다 `pipeline/prompts/passA.md`(단어 정보·문맥 뜻), `passB.md`(문장 해석) 지시대로 생성 → `pipeline/work/gen/`
 4. `npm run data:merge` — vocab + 생성 결과를 합쳐 `data/` 를 새로 씀 (**직접 고친 내용은 덮어써지니 주의** — `memory` 만 이어 붙임)
 5. `npm run data:validate`
-6. 앱에 반영: `cd mobile && npm run ota -- "데이터 갱신"`
+6. 앱에 반영: `npm run data:pack`(또는 웹 설정 → 단어 세트 파일 내려받기) → iPhone 앱 설정 → 단어 세트 → 파일에서 불러오기
 
 ## 개발
 
 - `npm run dev` — 개발 서버 (`npm start -- --dev` 와 같음) · `npm run build` — 타입 검사 + 빌드
-- `npm test` — 단위 테스트 (오답 보기 생성, 플래시카드 대기열, SRS, 검색, 학습 범위·학습장, 진행 기록 스토어, 문장 분리, 실행 스크립트)
+- `npm test` — 단위 테스트 (오답 보기 생성, 플래시카드 대기열, SRS, 검색, 학습 범위·학습장, 진행 기록 스토어(모아 쓰기 포함), 단어 세트 파일, 문장 분리, 실행 스크립트)
 - `npm run smoke` — 앱을 띄운 상태에서 설치된 Edge 로 주요 화면을 눌러 보고 스크린샷 저장 (`BROWSER=chrome` 또는 `BROWSER_PATH=실행 파일` 로 브라우저 지정)
 - 실행 스크립트는 `scripts/launch.mjs` 이고 `start.cmd`·`start.sh`·`npm start` 가 모두 이것을 부릅니다
 - 스택: Vite + React 19 + TypeScript, Tailwind CSS v4, zustand(localStorage), ts-fsrs, Pretendard

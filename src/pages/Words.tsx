@@ -4,7 +4,7 @@ import { Search, SearchX, X } from 'lucide-react';
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate, useNavigationType, useSearchParams } from 'react-router-dom';
 import { Button, Kbd, PosBadge, StatusDot } from '../components/ui';
-import { QUIZ_SOURCES, WORDS } from '../data/words';
+import { QUIZ_SOURCES, WORDS_BY_FREQ } from '../data/words';
 import { searchWords } from '../lib/search';
 import { statusOf, type WordStatus } from '../lib/srs';
 import { useProgress } from '../store/progress';
@@ -106,16 +106,17 @@ export function WordsPage() {
     if (params.get('focus') || window.matchMedia('(pointer: fine)').matches) inputRef.current?.focus();
   }, [params.get('focus')]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  // 학습 상태로 거를 때만 진행 기록이 목록에 영향을 준다 (그 밖에는 기록이 바뀌어도 목록을 다시 만들지 않는다)
+  const statusData = status === 'wrong' ? wrong : status ? cards : null;
   const list = useMemo(() => {
-    let base = WORDS;
+    let base = WORDS_BY_FREQ;
     if (src) base = base.filter((w) => w.sources.includes(src));
     if (pos) base = base.filter((w) => (pos === '구' ? w.pos.some((p) => p.endsWith('구')) : w.pos.includes(pos)));
     if (tier) base = base.filter((w) => (tier === 'basic' ? w.basic : w.tier === tier && !w.basic));
     if (status === 'wrong') base = base.filter((w) => wrong[w.id]);
     else if (status) base = base.filter((w) => statusOf(cards[w.id]) === status);
-    const found = searchWords(base, q);
-    return q ? found : [...found].sort((a, b) => b.freq - a.freq || a.word.localeCompare(b.word));
-  }, [q, src, pos, tier, status, cards, wrong]);
+    return q.trim() ? searchWords(base, q) : base;
+  }, [q, src, pos, tier, status, statusData]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const parentRef = useRef<HTMLDivElement>(null);
   // 단어 상세에서 뒤로 돌아왔으면 보던 위치에서 이어서 본다

@@ -12,6 +12,7 @@
     "data:extract": "tsx scripts/extract.ts",
     "data:merge": "tsx scripts/merge.ts",
     "data:validate": "tsx scripts/validate.ts",
+    "data:pack": "tsx scripts/validate.ts && tsx scripts/pack-wordset.ts",
     "smoke": "tsx scripts/smoke.ts"
   },
   "dependencies": {

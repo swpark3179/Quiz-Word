@@ -2,7 +2,7 @@
 #
 # Quiz-Bank 의 native-build-testflight.yml (build-ios · submit-testflight 잡)과 같은 방식:
 #   Expo prebuild → CocoaPods → xcodebuild archive/export(수동 서명) → altool 로 TestFlight 업로드
-# EAS Build 는 쓰지 않는다. 화면·단어 수정은 OTA(eas update)로 하고, 이 워크플로는 네이티브가 바뀔 때만 실행한다.
+# EAS Build·OTA 는 쓰지 않는다. 화면·로직을 고치면 이 워크플로로 빌드하고, 단어만 바뀌면 빌드 없이 단어 세트 파일로 옮긴다(mobile/README.md).
 #
 # 실행: Actions → "iOS TestFlight" → Run workflow
 #   gh workflow run ios-testflight.yml -f upload_testflight=true

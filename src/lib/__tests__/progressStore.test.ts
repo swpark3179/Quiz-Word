@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { defaultNotebookName, sanitizeNotebooks } from '../notebook';
 import { createProgressStore, exportProgress } from '../progressStore';
 
@@ -47,6 +47,45 @@ describe('progressStore (웹·앱 공용)', () => {
     expect(app.getState().cards.surface).toEqual(web.getState().cards.surface);
     expect(app.getState().wrong.surface.count).toBe(1);
     expect(app.getState().settings).toMatchObject({ examDate: '2026-11-21', newPerDay: 50, ttsRate: 0.9 });
+  });
+
+  describe('저장 모아 쓰기 (writeDelayMs)', () => {
+    afterEach(() => vi.useRealTimers());
+
+    function countingStorage() {
+      const base = memoryStorage();
+      let writes = 0;
+      return { ...base, setItem: (k: string, v: string) => (writes++, base.setItem(k, v)), writes: () => writes };
+    }
+
+    it('여러 번 기록해도 시간이 지난 뒤 한 번만 쓴다', () => {
+      vi.useFakeTimers();
+      const storage = countingStorage();
+      const store = createProgressStore(() => storage, { writeDelayMs: 500 });
+      store.getState().record('escalate', false);
+      store.getState().record('address', true);
+      store.getState().addWrong('robust');
+      expect(storage.writes()).toBe(0);
+      vi.advanceTimersByTime(499);
+      expect(storage.writes()).toBe(0);
+      vi.advanceTimersByTime(1);
+      expect(storage.writes()).toBe(1);
+      const saved = JSON.parse(storage.raw.get('quiz-word:v1')!);
+      expect(Object.keys(saved.state.cards).sort()).toEqual(['address', 'escalate']);
+      expect(saved.state.wrong.robust).toBeDefined();
+    });
+
+    it('flush() 하면 기다리지 않고 바로 쓰고, 다시 열면 그대로 읽는다', () => {
+      vi.useFakeTimers();
+      const storage = countingStorage();
+      const store = createProgressStore(() => storage, { writeDelayMs: 10_000 });
+      store.getState().record('latency', true);
+      store.flush();
+      expect(storage.writes()).toBe(1);
+      store.flush(); // 쓸 것이 없으면 다시 쓰지 않는다
+      expect(storage.writes()).toBe(1);
+      expect(createProgressStore(() => storage).getState().cards.latency).toBeDefined();
+    });
   });
 
   it('저장된 기록이 있으면 새로 만든 스토어가 바로 이어서 읽는다', () => {

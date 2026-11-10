@@ -1,11 +1,12 @@
 /** 설정 */
-import { Download, Monitor, Moon, RotateCcw, Sun, Upload, Volume2 } from 'lucide-react';
+import { Download, FileDown, Monitor, Moon, RotateCcw, Smartphone, Sun, Upload, Volume2 } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { ConfirmDialog } from '../components/Dialog';
 import { Button, Card, PageHeader, SectionTitle } from '../components/ui';
-import { WORDS } from '../data/words';
+import { CORPUS, RAW_WORDS, SOURCES, WORDS } from '../data/words';
 import { defaultVoice, getVoices, onVoicesChanged, speak, ttsSupported } from '../lib/tts';
 import { dayKey } from '../lib/text';
+import { packWordSet, wordSetFileName } from '../lib/wordset';
 import { exportProgress, useProgress } from '../store/progress';
 
 function Field({ label, desc, children }: { label: string; desc?: string; children: React.ReactNode }) {
@@ -34,6 +35,17 @@ function Toggle({ checked, onChange, label }: { checked: boolean; onChange: (v: 
   );
 }
 
+/** 문자열을 JSON 파일로 내려받는다 */
+function download(text: string, name: string) {
+  const blob = new Blob([text], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name;
+  a.click();
+  // 큰 파일(단어 세트 수 MB)은 click 직후 바로 해제하면 내려받기가 끊길 수 있어 조금 뒤에 해제한다
+  setTimeout(() => URL.revokeObjectURL(a.href), 10_000);
+}
+
 const inputCls = 'rounded-lg border border-line bg-surface px-3 py-2 text-[14px] outline-none focus:border-primary';
 
 export function SettingsPage() {
@@ -45,6 +57,7 @@ export function SettingsPage() {
   const notebooksN = useProgress((s) => s.notebooks.length);
   const [voices, setVoices] = useState(getVoices());
   const [message, setMessage] = useState('');
+  const [wordSetMessage, setWordSetMessage] = useState('');
   const fileRef = useRef<HTMLInputElement>(null);
   /** 확인을 기다리는 동작 — 기록을 덮어쓰거나 지우기 전에 한 번 묻는다 */
   const [pending, setPending] = useState<{ kind: 'reset' } | { kind: 'import'; data: unknown; cards: number; notebooks: number; name: string } | null>(null);
@@ -52,13 +65,15 @@ export function SettingsPage() {
   useEffect(() => onVoicesChanged(() => setVoices(getVoices())), []);
 
   const doExport = () => {
-    const blob = new Blob([exportProgress()], { type: 'application/json' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = `quiz-word-progress-${dayKey()}.json`;
-    a.click();
-    URL.revokeObjectURL(a.href);
+    download(exportProgress(), `quiz-word-progress-${dayKey()}.json`);
     setMessage('진행 기록을 파일로 저장했어요.');
+  };
+
+  /** 단어 전체를 한 파일로 — iPhone 앱 설정의 "단어 세트 → 파일에서 불러오기"로 읽는다 */
+  const doExportWordSet = () => {
+    const set = packWordSet({ words: RAW_WORDS, corpus: CORPUS, sources: SOURCES });
+    download(JSON.stringify(set), wordSetFileName(set.builtAt));
+    setWordSetMessage(`단어 ${set.count.toLocaleString()}개를 파일로 저장했어요. iPhone 으로 옮긴 뒤 앱 → 설정 → 단어 세트 → 파일에서 불러오기.`);
   };
 
   const applyImport = (data: unknown) => {
@@ -195,6 +210,29 @@ export function SettingsPage() {
             ))}
           </div>
         </Field>
+      </Card>
+
+      <Card className="px-6 py-6 sm:px-8">
+        <SectionTitle>단어 세트 · iPhone 앱으로 보내기</SectionTitle>
+        <p className="mb-4 text-[13px] leading-relaxed text-muted">
+          지금 단어 <b className="text-ink">{WORDS.length.toLocaleString()}</b>개(<code className="text-[12px]">data/words</code>)를 문제 문장과 함께 파일 하나로
+          내려받습니다. AirDrop·iCloud Drive·메신저 등으로 iPhone 의 <b className="text-ink">파일</b> 앱에 옮긴 뒤, 앱의{' '}
+          <b className="text-ink">설정 → 단어 세트 → 파일에서 불러오기</b>로 열면 앱의 단어 전체가 이 파일로 바뀝니다. 진행 기록은 단어 id 기준이라 그대로
+          이어집니다.
+        </p>
+        <div className="flex flex-wrap items-center gap-2">
+          <Button onClick={doExportWordSet}>
+            <FileDown size={16} /> 단어 세트 파일 내려받기
+          </Button>
+          <span className="inline-flex items-center gap-1.5 text-[12.5px] text-muted">
+            <Smartphone size={14} /> 단어 파일을 고쳤다면 다시 실행(빌드)한 뒤 내려받으세요
+          </span>
+        </div>
+        {wordSetMessage && (
+          <p className="anim-fade mt-3 text-[13px] font-medium text-primary" role="status">
+            {wordSetMessage}
+          </p>
+        )}
       </Card>
 
       <Card className="px-6 py-6 sm:px-8">
