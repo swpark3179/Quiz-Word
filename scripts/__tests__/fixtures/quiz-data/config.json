@@ -1,0 +1,10 @@
+[
+  {
+    "id": "demo",
+    "files": [
+      { "id": "part1", "name": "1부", "order": 1 },
+      { "id": "part1-kor", "name": "1부-한글", "order": 2 },
+      { "id": "part2", "name": "2부", "order": 3 }
+    ]
+  }
+]

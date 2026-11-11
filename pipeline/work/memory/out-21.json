@@ -1,0 +1,285 @@
+{
+  "residency": {
+    "roots": [{ "part": "re-", "ko": "뒤에, 그대로" }, { "part": "sid", "ko": "앉다" }, { "part": "-ency", "ko": "~인 상태" }],
+    "origin": "라틴어 residere (뒤에 남아 앉다)",
+    "story": "데이터가 한 지역에 그대로(re) 눌러앉아(sid) 머무는 상태(ency) → 상주 위치, 거주",
+    "family": ["resident", "president", "subside"]
+  },
+  "resolver": {
+    "roots": [{ "part": "re-", "ko": "도로, 완전히" }, { "part": "solv", "ko": "풀다" }, { "part": "-er", "ko": "~하는 것" }],
+    "origin": "라틴어 resolvere (풀어 헤치다)",
+    "story": "이름·필드를 풀어(solv) 실제 값으로 밝혀 주는 것(er) → 리졸버, 해석하는 프로그램",
+    "family": ["solve", "solution", "dissolve"]
+  },
+  "resource": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "source", "ko": "솟아나다, 샘" }],
+    "origin": "고대 프랑스어 resourdre (다시 솟아오르다)",
+    "story": "퍼 써도 다시(re) 솟아나는(source) 샘 같은 밑천 → 자원, 리소스",
+    "hook": "리소스 → '리소스가 부족하다'의 리소스 → 자원",
+    "family": ["source", "surge", "resurgence"]
+  },
+  "respond": {
+    "roots": [{ "part": "re-", "ko": "되, 도로" }, { "part": "spond", "ko": "약속하다" }],
+    "origin": "라틴어 respondere (되받아 약속하다, 답하다)",
+    "story": "상대의 말에 되(re) 받아 약속하듯(spond) 답을 돌려준다 → 응답하다, 반응하다",
+    "family": ["sponsor", "correspond", "spouse"]
+  },
+  "response": {
+    "roots": [{ "part": "re-", "ko": "되, 도로" }, { "part": "sponse", "ko": "약속한 말" }],
+    "origin": "라틴어 responsum (답변)",
+    "story": "물음에 되(re) 돌려준 약속의 말(sponse) → 응답, 대답",
+    "family": ["respond", "sponsor", "correspond"]
+  },
+  "responsible": {
+    "roots": [{ "part": "respons", "ko": "응답하다" }, { "part": "-ible", "ko": "할 수 있는" }],
+    "origin": "라틴어 respondere (답하다)",
+    "story": "결과를 물으면 나서서 답할(respons) 수 있어야 하는(ible) → 책임이 있는, 담당하는",
+    "family": ["response", "responsibility", "sponsor"]
+  },
+  "restart": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "start", "ko": "시작하다" }],
+    "story": "멈춘 것을 다시(re) 처음부터 시작한다(start) → 다시 시작하다, 재시작",
+    "family": ["starter", "startup"]
+  },
+  "restore": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "store", "ko": "세우다" }],
+    "origin": "라틴어 restaurare (다시 세우다, 고쳐 짓다)",
+    "story": "무너진 것을 다시(re) 세워(store) 원래 모습으로 → 복원하다, 되살리다",
+    "family": ["restaurant", "restoration", "store"]
+  },
+  "restructure": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "struct", "ko": "쌓다, 짓다" }, { "part": "-ure", "ko": "~한 것" }],
+    "origin": "라틴어 struere (쌓다, 짓다)",
+    "story": "쌓아 올린 짜임(structure)을 다시(re) 짠다 → 구조를 바꾸다, 재구성하다",
+    "family": ["construct", "instruct", "infrastructure"]
+  },
+  "resubmit": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "sub-", "ko": "아래로" }, { "part": "mit", "ko": "보내다" }],
+    "origin": "라틴어 submittere (아래에 내려놓다)",
+    "story": "심사대 아래로(sub) 보냈던(mit) 것을 다시(re) 낸다 → 다시 제출하다, 재제출하다",
+    "family": ["submission", "transmit", "permit", "admit"]
+  },
+  "resume": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "sume", "ko": "집어 들다" }],
+    "origin": "라틴어 resumere (다시 집어 들다)",
+    "story": "내려놓았던 일을 다시(re) 집어 든다(sume) → 재개하다, 이어서 하다",
+    "family": ["assume", "consume", "presume"]
+  },
+  "resume-parsing": {
+    "roots": [{ "part": "resume", "ko": "이력서" }, { "part": "parsing", "ko": "구문 분석" }],
+    "story": "이력서(resume)를 구문 분석(parsing)해 항목별 정보를 뽑아내는 → 이력서를 구문 분석하는"
+  },
+  "retire": {
+    "roots": [{ "part": "re-", "ko": "뒤로" }, { "part": "tire", "ko": "끌다" }],
+    "origin": "프랑스어 retirer (뒤로 끌어내다)",
+    "story": "일선에 있던 것을 뒤로(re) 끌어(tire) 물러나게 한다 → 퇴역시키다, 서비스를 종료하다",
+    "family": ["retirement", "retiree"]
+  },
+  "retract": {
+    "roots": [{ "part": "re-", "ko": "뒤로" }, { "part": "tract", "ko": "끌다" }],
+    "origin": "라틴어 retrahere (뒤로 끌어당기다)",
+    "story": "내뱉은 말을 뒤로(re) 끌어(tract) 도로 거둔다 → 철회하다, 취소하다",
+    "family": ["attract", "extract", "contract", "tractor"]
+  },
+  "retry": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "try", "ko": "시도하다" }],
+    "story": "실패한 것을 다시(re) 해 본다(try) → 재시도하다, 재시도",
+    "family": ["trial", "tryout"]
+  },
+  "retry-after": {
+    "roots": [{ "part": "retry", "ko": "재시도하다" }, { "part": "after", "ko": "~ 뒤에" }],
+    "story": "'이만큼 지난 뒤(after)에 재시도(retry)하라'고 서버가 알려 준다 → 재시도 시점을 알리는 응답 헤더"
+  },
+  "reuse": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "use", "ko": "쓰다" }],
+    "story": "한 번 쓴(use) 것을 버리지 않고 다시(re) 쓴다 → 재사용하다, 재사용",
+    "family": ["useful", "usage", "misuse"]
+  },
+  "reveal": {
+    "roots": [{ "part": "re-", "ko": "도로 벗기다" }, { "part": "veal", "ko": "베일, 가리개" }],
+    "origin": "라틴어 revelare (베일을 벗기다) ← velum (베일)",
+    "story": "덮여 있던 베일(veal)을 걷어(re) 속을 보여 준다 → 드러내다, 밝혀 보여 주다",
+    "family": ["veil", "unveil", "revelation"]
+  },
+  "reverse": {
+    "roots": [{ "part": "re-", "ko": "뒤로" }, { "part": "verse", "ko": "돌리다" }],
+    "origin": "라틴어 revertere (뒤로 돌리다)",
+    "story": "가던 쪽을 뒤로(re) 돌려(verse) 원래대로 → 되돌리다, 취소하다, 반대의",
+    "hook": "리버스 → 자동차 R 기어가 '리버스'(후진) → 되돌리다",
+    "family": ["convert", "version", "diverse"]
+  },
+  "reversible": {
+    "roots": [{ "part": "re-", "ko": "뒤로" }, { "part": "vers", "ko": "돌리다" }, { "part": "-ible", "ko": "할 수 있는" }],
+    "story": "뒤로(re) 돌려(vers) 놓을 수 있는(ible) → 되돌릴 수 있는",
+    "hook": "리버서블 → 뒤집어 입는 '리버서블' 점퍼 → 되돌릴 수 있는",
+    "family": ["reverse", "irreversible", "convert"]
+  },
+  "review": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "view", "ko": "보다" }],
+    "origin": "프랑스어 revoir (다시 보다)",
+    "story": "한 번 본 것을 다시(re) 꼼꼼히 들여다본다(view) → 검토하다, 검토",
+    "hook": "리뷰 → 상품 '리뷰'의 그 리뷰 → 검토",
+    "family": ["preview", "interview", "overview"]
+  },
+  "revoke": {
+    "roots": [{ "part": "re-", "ko": "되, 도로" }, { "part": "voke", "ko": "부르다" }],
+    "origin": "라틴어 revocare (되불러들이다)",
+    "story": "내주었던 키·권한을 되(re) 불러들인다(voke) → 취소하다, 폐기하다",
+    "family": ["invoke", "provoke", "vocal", "advocate"]
+  },
+  "rewrite": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "write", "ko": "쓰다" }],
+    "story": "써 둔(write) 글을 다시(re) 고쳐 쓴다 → 다시 쓰다, 고쳐 쓰다",
+    "family": ["writer", "overwrite", "handwriting"]
+  },
+  "risk": {
+    "origin": "프랑스어 risque ← 이탈리아어 risco (위험)",
+    "story": "잘못될 수도 있음을 알면서 걸어 보는 것 → 위험, 리스크",
+    "hook": "리스크 → '리스크 관리'의 리스크 → 위험"
+  },
+  "role": {
+    "origin": "프랑스어 rôle (배우의 대사를 적은 두루마리)",
+    "story": "배우가 자기 대사가 적힌 두루마리(roll)를 받아 맡는 몫 → 역할, 맡은 일",
+    "hook": "롤 → '롤 모델'의 롤 → 역할",
+    "family": ["roll", "enroll", "rotate"]
+  },
+  "roll": {
+    "origin": "고대 프랑스어 roller ← 라틴어 rotula (작은 바퀴)",
+    "story": "작은 바퀴(rotula)가 구르듯 차례차례 굴려 내보낸다 → 단계적으로 배포하다, 구르다",
+    "hook": "롤 → '롤케이크'처럼 둘둘 굴려 만다 → 구르다, 굴리다",
+    "family": ["rotate", "enroll", "control"]
+  },
+  "rollback": {
+    "roots": [{ "part": "roll", "ko": "굴리다" }, { "part": "back", "ko": "뒤로" }],
+    "story": "굴려(roll) 내보낸 변경을 뒤로(back) 도로 굴려 온다 → 롤백, 이전 상태로 되돌리기"
+  },
+  "root": {
+    "origin": "고대 노르드어 rót (뿌리)",
+    "story": "가지가 모두 뻗어 나오는 나무의 뿌리(root)처럼 맨 처음 자리 → 루트, 최상위, 뿌리, 근원",
+    "family": ["uproot", "grassroots"]
+  },
+  "root-cause": {
+    "roots": [{ "part": "root", "ko": "뿌리" }, { "part": "cause", "ko": "원인" }],
+    "story": "겉으로 보이는 증상 밑, 뿌리(root)에 있는 진짜 원인(cause) → 근본 원인"
+  },
+  "rotation": {
+    "roots": [{ "part": "rot", "ko": "바퀴, 돌다" }, { "part": "-ation", "ko": "~하는 일" }],
+    "origin": "라틴어 rotare (바퀴처럼 돌다) ← rota (바퀴)",
+    "story": "바퀴(rot)가 돌듯 차례가 돌아가며 바뀌는 일(ation) → 순환",
+    "hook": "로테이션 → 야구 '선발 로테이션'처럼 돌아가며 맡는다 → 순환",
+    "family": ["rotate", "rotary", "round"]
+  },
+  "roughly": {
+    "roots": [{ "part": "rough", "ko": "거친" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "고대 영어 rūh (거친, 털이 숭숭한)",
+    "story": "곱게 다듬지 않고 거칠게(rough) 어림잡아(ly) → 대략, 약",
+    "hook": "러프리 → '러프 스케치'하듯 대충 잡아서 → 대략",
+    "family": ["roughen", "roughness"]
+  },
+  "round": {
+    "origin": "고대 프랑스어 rond ← 라틴어 rotundus (바퀴처럼 둥근)",
+    "story": "둥글게(round) 한 바퀴 돌아 끝나는 한 판 → 한 차례, 회, 라운드",
+    "hook": "라운드 → 권투 '1라운드'의 라운드 → 한 차례",
+    "family": ["around", "rotate", "rotund"]
+  },
+  "round-trip": {
+    "roots": [{ "part": "round", "ko": "한 바퀴" }, { "part": "trip", "ko": "여정" }],
+    "story": "갔다가 한 바퀴(round) 돌아 제자리로 오는 여정(trip) → 왕복, 요청 보내고 응답 받는 한 번"
+  },
+  "route": {
+    "origin": "고대 프랑스어 rute (길) ← 라틴어 rupta (뚫어 낸 길)",
+    "story": "숲을 뚫어(rupta) 낸 길을 따라 알맞은 곳으로 보낸다 → 보내다, 라우팅하다, 경로",
+    "hook": "루트 → '등산 루트'의 루트 → 경로",
+    "family": ["routine", "rupture", "interrupt"]
+  },
+  "routine": {
+    "roots": [{ "part": "rout", "ko": "길 (route)" }, { "part": "-ine", "ko": "작은 것, ~같은" }],
+    "origin": "프랑스어 routine (늘 다니는 길) ← route (길)",
+    "story": "날마다 다녀 익숙해진 길(route)처럼 늘 하는 → 일상적인, 정해진 일과",
+    "hook": "루틴 → '모닝 루틴'의 루틴 → 정해진 일과",
+    "family": ["route", "router", "rupture"]
+  },
+  "row": {
+    "origin": "고대 영어 rāw (줄, 열)",
+    "story": "옆으로 나란히 늘어선 한 줄(rāw), 표에서는 가로 한 줄 → 행, 줄",
+    "hook": "로 → 공연장 표의 'ROW 3'은 셋째 줄 → 줄, 행"
+  },
+  "rpm": {
+    "origin": "Requests Per Minute",
+    "story": "1분(Minute)당(Per) 보낼 수 있는 요청(Requests) 수 → 분당 요청 수 한도"
+  },
+  "run": {
+    "origin": "고대 영어 rinnan (달리다, 흐르다)",
+    "story": "프로그램이 멈추지 않고 달리게(run) 한다 → 실행하다, 실행, 달리다",
+    "family": ["runner", "runtime", "runway"]
+  },
+  "runner": {
+    "roots": [{ "part": "run", "ko": "달리다, 실행하다" }, { "part": "-er", "ko": "~하는 것" }],
+    "story": "맡은 job·테스트를 실제로 돌리는(run) 것(er) → 러너, 실행기",
+    "hook": "러너 → 달리는 사람 '러너'처럼 작업을 달리게 하는 것 → 실행기",
+    "family": ["runtime", "runway", "rerun"]
+  },
+  "runtime": {
+    "roots": [{ "part": "run", "ko": "실행하다" }, { "part": "time", "ko": "때, 시간" }],
+    "story": "프로그램이 도는(run) 바로 그때(time), 또 돌게 받쳐 주는 환경 → 실행 시점, 런타임(실행 환경)"
+  },
+  "safely": {
+    "roots": [{ "part": "safe", "ko": "안전한" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 salvus (다치지 않은, 온전한)",
+    "story": "다친 데 없이 온전하게(safe), 탈 없이(ly) → 안전하게, 문제없이",
+    "family": ["save", "salvage", "safeguard"]
+  },
+  "safety": {
+    "roots": [{ "part": "safe", "ko": "안전한" }, { "part": "-ty", "ko": "~인 상태" }],
+    "origin": "라틴어 salvus (다치지 않은, 온전한)",
+    "story": "다치지 않고 온전한(safe) 상태(ty), 그렇게 지켜 주는 것 → 안전, 안전장치",
+    "hook": "세이프티 → '세이프티 존'의 세이프티 → 안전",
+    "family": ["save", "salvage", "safeguard"]
+  },
+  "salary": {
+    "roots": [{ "part": "sal", "ko": "소금" }, { "part": "-ary", "ko": "~에 딸린 것" }],
+    "origin": "라틴어 salarium (소금 살 돈, 병사 급료)",
+    "story": "로마 병사가 소금(sal) 살 돈으로 받던 급료 → 급여, 월급",
+    "hook": "샐러리 → '샐러리맨'은 월급 받는 사람 → 급여",
+    "family": ["salt", "salad", "sauce"]
+  },
+  "sample": {
+    "origin": "고대 프랑스어 essample ← 라틴어 exemplum (본보기)",
+    "story": "전체에서 본보기(example)로 하나 꺼내 놓은 것 → 샘플, 견본, 표본",
+    "hook": "샘플 → 화장품 '샘플'의 그 샘플 → 견본",
+    "family": ["example", "exemplary", "exemplify"]
+  },
+  "sampling": {
+    "roots": [{ "part": "sampl", "ko": "견본 (sample)" }, { "part": "-ing", "ko": "~하기" }],
+    "story": "여럿 가운데 견본(sample)을 하나씩 뽑아내는 일(ing) → 샘플링, 표본 추출",
+    "family": ["sampler", "example", "exemplify"]
+  },
+  "sandbox": {
+    "roots": [{ "part": "sand", "ko": "모래" }, { "part": "box", "ko": "상자" }],
+    "story": "아이가 밖을 어지르지 않고 노는 모래(sand) 상자(box) 놀이터 → 바깥과 격리된 안전한 실행 환경"
+  },
+  "satisfy": {
+    "roots": [{ "part": "satis", "ko": "충분히" }, { "part": "-fy", "ko": "~하게 만들다" }],
+    "origin": "라틴어 satisfacere (충분하게 하다)",
+    "story": "조건이 바라는 만큼 충분히(satis) 채워 준다(fy) → 충족하다, 만족시키다",
+    "family": ["saturate", "satiate", "asset"]
+  },
+  "scale": {
+    "origin": "라틴어 scala (사다리, 계단)",
+    "story": "사다리(scala) 칸처럼 층층이 매긴 눈금, 그 칸을 타고 키운다 → 척도, 눈금, 규모",
+    "hook": "스케일 → '스케일이 크다'의 스케일 → 규모",
+    "family": ["escalate", "escalator", "ascend"]
+  },
+  "scan": {
+    "origin": "라틴어 scandere (오르다, 운율을 짚어 가다)",
+    "story": "시의 운율을 한 음절씩 짚어 가듯(scandere) 차례로 훑는다 → 훑어 검사하다, 스캔하다",
+    "hook": "스캔 → 바코드 '스캔'하듯 쭉 훑는다 → 훑어 검사하다",
+    "family": ["ascend", "descend", "scale"]
+  },
+  "scenario": {
+    "roots": [{ "part": "scen", "ko": "무대, 장면" }, { "part": "-ario", "ko": "~에 딸린 것" }],
+    "origin": "이탈리아어 scenario ← 라틴어 scaena (무대)",
+    "story": "무대(scen)에 올릴 장면을 차례로 적어 둔 것 → 각본, 가상의 상황(시나리오)",
+    "family": ["scene", "scenery", "scenic"]
+  }
+}

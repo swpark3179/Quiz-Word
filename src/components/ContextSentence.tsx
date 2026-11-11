@@ -1,7 +1,8 @@
 /** 예문 — 단어를 형광펜으로 강조하고 `코드` 를 표시한다 */
 import { Fragment, type ReactNode } from 'react';
 import type { Context } from '../lib/schema';
-import { sourceName } from '../data/words';
+import { sourceLabel } from '../data/words';
+import { useExamPref } from './ExamPref';
 import { SpeakButton } from './ui';
 
 function renderCode(text: string, keyPrefix: string): ReactNode[] {
@@ -29,10 +30,6 @@ export function Highlighted({ text, surface }: { text: string; surface: string }
   );
 }
 
-export function sourceLabel(c: Pick<Context, 'src' | 'q'>) {
-  return c.src === 'vocab' ? '기존 단어장 예문' : `${sourceName(c.src)} · 문제 ${c.q}`;
-}
-
 export function ContextSentence({
   c,
   showSense = true,
@@ -45,6 +42,7 @@ export function ContextSentence({
   compact?: boolean;
 }) {
   const isKoSentence = /[가-힣]/.test(c.en);
+  const pref = useExamPref();
   return (
     <div className={`group rounded-xl border border-line bg-surface-2/60 ${compact ? 'px-3.5 py-3' : 'px-4 py-3.5'}`}>
       {showSense && c.sense && (
@@ -60,7 +58,7 @@ export function ContextSentence({
         {!isKoSentence && <SpeakButton text={c.en} size={15} className="-mr-1.5 -mt-1 opacity-60 group-hover:opacity-100" />}
       </div>
       {showKo && c.ko && <p className="mt-1.5 text-[13.5px] leading-relaxed text-ink-2">{renderCode(c.ko, 'k')}</p>}
-      <div className="mt-2 text-[11.5px] text-muted">{sourceLabel(c)}</div>
+      <div className="mt-2 text-[11.5px] text-muted">{sourceLabel(c, pref)}</div>
     </div>
   );
 }

@@ -1,0 +1,511 @@
+[
+ {
+  "id": "abandon",
+  "word": "abandon",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əˈbændən",
+  "meaning": "(계획·방식을) 버리다, 포기하다",
+  "level": 4
+ },
+ {
+  "id": "ability",
+  "word": "ability",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈbɪləti",
+  "meaning": "① 능력, ~할 수 있는 힘 ② 재능, 역량",
+  "level": 2
+ },
+ {
+  "id": "abort",
+  "word": "abort",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əˈbɔːrt",
+  "meaning": "(진행 중인 작업을) 중단하다, 도중에 그만두다",
+  "level": 6
+ },
+ {
+  "id": "absolutely",
+  "word": "absolutely",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˌæbsəˈluːtli",
+  "meaning": "완전히, 절대적으로 (never 와 함께: 절대 ~ 않다)",
+  "level": 3
+ },
+ {
+  "id": "abstraction",
+  "word": "abstraction",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "æbˈstrækʃn",
+  "meaning": "추상화 — 세부 동작을 감추고 단순한 인터페이스로 묶은 것",
+  "level": 6
+ },
+ {
+  "id": "abusive",
+  "word": "abusive",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "əˈbjuːsɪv",
+  "meaning": "악의적인, 폭언·괴롭힘이 담긴 — abuse: 악용, 남용",
+  "level": 5
+ },
+ {
+  "id": "academic",
+  "word": "academic",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌækəˈdemɪk",
+  "meaning": "학술의, 학계의 (논문·연구 자료의)",
+  "level": 4
+ },
+ {
+  "id": "accept",
+  "word": "accept",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əkˈsept",
+  "meaning": "① 받아들이다, 감수하다 ② 허용하다 (acceptable: 허용할 수 있는)",
+  "level": 2
+ },
+ {
+  "id": "access",
+  "word": "access",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈækses",
+  "meaning": "접근 (권한) / 접근하다, 조회하다",
+  "level": 3
+ },
+ {
+  "id": "according-to",
+  "word": "according to",
+  "pos": [
+   "전치사구"
+  ],
+  "ipa": "əˈkɔːrdɪŋ tə",
+  "meaning": "~에 따르면, ~에 따라",
+  "level": 2
+ },
+ {
+  "id": "account",
+  "word": "account",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈkaʊnt",
+  "meaning": "① (고객·사용자) 계정 ② 설명 (account for: ~을 설명하다, 감안하다)",
+  "level": 3
+ },
+ {
+  "id": "across",
+  "word": "across",
+  "pos": [
+   "전치사"
+  ],
+  "ipa": "əˈkrɔːs",
+  "meaning": "~ 전체에 걸쳐, (여러 개) 사이에서 두루",
+  "level": 2
+ },
+ {
+  "id": "action",
+  "word": "action",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈækʃn",
+  "meaning": "① 행동, 조치 ② (도구가 수행하는) 작업, 동작 ③ 소송, 법적 조치",
+  "level": 2
+ },
+ {
+  "id": "actionable",
+  "word": "actionable",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈækʃənəbl",
+  "meaning": "바로 조치할 수 있는, 실행에 옮길 수 있는",
+  "level": 6
+ },
+ {
+  "id": "activate",
+  "word": "activate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈæktɪveɪt",
+  "meaning": "활성화하다, (기능이) 켜져 작동하다",
+  "level": 4
+ },
+ {
+  "id": "active",
+  "word": "active",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈæktɪv",
+  "meaning": "① (현재) 사용 중인, 활성 상태의 ② (최근에) 활동한, 이용 중인 ③ 활동적인, 적극적인",
+  "level": 2
+ },
+ {
+  "id": "actual",
+  "word": "actual",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈæktʃuəl",
+  "meaning": "실제의, 진짜의",
+  "level": 3
+ },
+ {
+  "id": "actually",
+  "word": "actually",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈæktʃuəli",
+  "meaning": "① 실제로, 정말로 ② 사실은, 실은",
+  "level": 2
+ },
+ {
+  "id": "ad-hoc",
+  "word": "ad hoc",
+  "pos": [
+   "형용사",
+   "부사"
+  ],
+  "ipa": "ˌæd ˈhɑːk",
+  "meaning": "그때그때 임시로 하는, 즉석의",
+  "level": 6
+ },
+ {
+  "id": "adaptive",
+  "word": "adaptive",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "əˈdæptɪv",
+  "meaning": "적응형의 — 상황(요청의 난이도 등)에 맞춰 스스로 조절하는",
+  "level": 5
+ },
+ {
+  "id": "adaptive-thinking",
+  "word": "adaptive thinking",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "əˌdæptɪv ˈθɪŋkɪŋ",
+  "meaning": "적응형 사고 — 고정 예산 대신 모델이 요청마다 사고할지, 얼마나 할지 스스로 정하는 방식 (effort 로 조절)",
+  "level": 6
+ },
+ {
+  "id": "additional",
+  "word": "additional",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "əˈdɪʃənl",
+  "meaning": "추가의, 부가적인",
+  "level": 3
+ },
+ {
+  "id": "address",
+  "word": "address",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "əˈdres",
+  "meaning": "① (문제를) 다루다, 해결하다 ② 주소",
+  "level": 3
+ },
+ {
+  "id": "adequate",
+  "word": "adequate",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈædɪkwət",
+  "meaning": "(필요한 만큼) 충분한, 적절한",
+  "level": 5
+ },
+ {
+  "id": "adjuster",
+  "word": "adjuster",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈdʒʌstər",
+  "meaning": "(보험) 손해 사정인 — 청구 건을 조사해 보상액을 정하는 사람 (claims adjuster)",
+  "level": 6
+ },
+ {
+  "id": "advertise",
+  "word": "advertise",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈædvərtaɪz",
+  "meaning": "(기능·정보를) 알리다, 공개해 내보이다 / 광고하다",
+  "level": 3
+ },
+ {
+  "id": "against",
+  "word": "against",
+  "pos": [
+   "전치사"
+  ],
+  "ipa": "əˈɡenst",
+  "meaning": "① (기준에) 비추어, ~와 대조하여 ② (대상에) 대해, ~을 상대로 ③ ~에 반대하여, ~에 맞서",
+  "level": 2
+ },
+ {
+  "id": "agent",
+  "word": "agent",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈeɪdʒənt",
+  "meaning": "① (인공지능) 에이전트 (도구를 써서 스스로 작업하는 프로그램) ② 상담원, 직원 ③ 대리인, 중개인",
+  "level": 3
+ },
+ {
+  "id": "agentic",
+  "word": "agentic",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "eɪˈdʒentɪk",
+  "meaning": "에이전트형의 — 모델이 스스로 도구를 골라 여러 단계를 진행하는",
+  "level": 6
+ },
+ {
+  "id": "agreement",
+  "word": "agreement",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈɡriːmənt",
+  "meaning": "① 계약(서), 협정 ② 동의, 합의 ③ 일치",
+  "level": 3
+ },
+ {
+  "id": "ahead",
+  "word": "ahead",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "əˈhed",
+  "meaning": "① (go ahead) 그대로 진행하여, 바로 ② 앞에, 앞으로 ③ 미리, 앞서",
+  "level": 2
+ },
+ {
+  "id": "airline",
+  "word": "airline",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈerlaɪn",
+  "meaning": "항공사",
+  "level": 2
+ },
+ {
+  "id": "alert",
+  "word": "alert",
+  "pos": [
+   "명사",
+   "동사",
+   "형용사"
+  ],
+  "ipa": "əˈlɜːrt",
+  "meaning": "① 경보, 알림 ② (위험을) 알리다, 경고하다 ③ 경계하는, 기민한",
+  "level": 4
+ },
+ {
+  "id": "alias",
+  "word": "alias",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈeɪliəs",
+  "meaning": "별칭 — 실제 대상(예: 최신 스냅숏)을 가리키는 다른 이름",
+  "level": 6
+ },
+ {
+  "id": "align",
+  "word": "align",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əˈlaɪn",
+  "meaning": "(서로) 맞추다, 짝지어 대응시키다, 정렬하다",
+  "level": 5
+ },
+ {
+  "id": "allow",
+  "word": "allow",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əˈlaʊ",
+  "meaning": "허용하다, ~하게 해 주다",
+  "level": 2
+ },
+ {
+  "id": "allowedtools",
+  "word": "allowedTools",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈlaʊd tuːlz",
+  "meaning": "허용 도구 목록 — 승인 없이 쓸 수 있게 미리 허용한 도구를 적는 설정",
+  "level": 6
+ },
+ {
+  "id": "allowlist",
+  "word": "allowlist",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈælaʊlɪst",
+  "meaning": "허용 목록 — 목록에 있는 것만 통과시키는 방식",
+  "level": 6
+ },
+ {
+  "id": "alone",
+  "word": "alone",
+  "pos": [
+   "부사",
+   "형용사"
+  ],
+  "ipa": "əˈloʊn",
+  "meaning": "① (명사 뒤) ~만으로, ~ 하나만 ② 혼자, 단독으로 ③ (leave ~ alone) 건드리지 않은, 그대로 둔",
+  "level": 2
+ },
+ {
+  "id": "along",
+  "word": "along",
+  "pos": [
+   "전치사",
+   "부사"
+  ],
+  "ipa": "əˈlɔːŋ",
+  "meaning": "① (along with) ~와 함께 ② (길·흐름을) 따라 ③ 앞으로, 계속",
+  "level": 2
+ },
+ {
+  "id": "alphabetically",
+  "word": "alphabetically",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˌælfəˈbetɪkli",
+  "meaning": "알파벳순으로",
+  "level": 4
+ },
+ {
+  "id": "alternate",
+  "word": "alternate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈɔːltərneɪt",
+  "meaning": "번갈아 하다, 교대로 바뀌다",
+  "level": 5
+ },
+ {
+  "id": "alternative",
+  "word": "alternative",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ɔːlˈtɜːrnətɪv",
+  "meaning": "대안(의), 다른 선택지",
+  "level": 4
+ },
+ {
+  "id": "always-loaded",
+  "word": "always-loaded",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈɔːlweɪz ˈloʊdɪd",
+  "meaning": "항상 로드되는 — 매 세션 자동으로 컨텍스트에 들어가는",
+  "level": 6
+ },
+ {
+  "id": "ambiguous",
+  "word": "ambiguous",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "æmˈbɪɡjuəs",
+  "meaning": "모호한, 두 가지 이상으로 해석될 수 있는",
+  "level": 5
+ },
+ {
+  "id": "among",
+  "word": "among",
+  "pos": [
+   "전치사"
+  ],
+  "ipa": "əˈmʌŋ",
+  "meaning": "① (셋 이상) ~ 사이에서, ~ 중에서 ② ~에 둘러싸여, ~ 가운데",
+  "level": 2
+ },
+ {
+  "id": "amount",
+  "word": "amount",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈmaʊnt",
+  "meaning": "① 금액 ② 양, 분량",
+  "level": 2
+ },
+ {
+  "id": "analysis",
+  "word": "analysis",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈnæləsɪs",
+  "meaning": "분석 (analyze: 분석하다)",
+  "level": 4
+ },
+ {
+  "id": "analyst",
+  "word": "analyst",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈænəlɪst",
+  "meaning": "분석가, 애널리스트",
+  "level": 4
+ },
+ {
+  "id": "anchor",
+  "word": "anchor",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈæŋkər",
+  "meaning": "(기준점에) 고정하다, 붙잡아 두다 / 기준점",
+  "level": 5
+ }
+]

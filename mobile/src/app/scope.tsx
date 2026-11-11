@@ -1,13 +1,14 @@
 /** 범위 고르기 시트 (formSheet) — 웹 ScopePicker 와 같은 항목 */
 import { useLocalSearchParams } from 'expo-router';
 import { useMemo, useState } from 'react';
-import { ActionSheetIOS, ScrollView, StyleSheet, Switch, View } from 'react-native';
+import { ActionSheetIOS, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { LEVELS } from '@shared/schema';
 import { filterScope, type Scope } from '@shared/scope';
 import { Button, Chip, T } from '@/components/ui';
-import { QUIZ_SOURCES, WORDS } from '@/data/words';
+import { EXAMS, examName, quizSources, sourceName, WORDS } from '@/data/words';
 import { useProgress } from '@/store/progress';
-import { MODE_INFO, scopeOf, sessionHref, startFromSheet, useScopes, type StudyMode } from '@/store/session';
+import { levelLabel, MODE_INFO, scopeOf, sessionHref, startFromSheet, useScopes, type StudyMode } from '@/store/session';
 import { useTheme } from '@/theme';
 import { haptic } from '@/theme/haptics';
 
@@ -36,14 +37,28 @@ export default function ScopeSheet() {
   const willStudy = scope.count > 0 ? Math.min(scope.count, matched) : matched;
 
   const set = (patch: Partial<Scope>) => setScope((s) => ({ ...s, ...patch }));
+  const files = scope.set === 'exam' ? quizSources(scope.cat) : [];
+  /** 문제 파일은 고른 시험 안에서 고른다 */
   const pickFile = () =>
     ActionSheetIOS.showActionSheetWithOptions(
-      { title: '문제 파일', options: [...QUIZ_SOURCES.map((s) => s.name), '취소'], cancelButtonIndex: QUIZ_SOURCES.length },
+      { title: `${examName(scope.cat)} 문제 파일`, options: [`${examName(scope.cat)} 전체`, ...files.map((s) => s.name), '취소'], cancelButtonIndex: files.length + 1 },
       (i) => {
-        if (i < QUIZ_SOURCES.length) {
-          void haptic.select();
-          set({ set: 'file', file: QUIZ_SOURCES[i].id });
-        }
+        if (i > files.length) return;
+        void haptic.select();
+        set({ file: i === 0 ? undefined : files[i - 1].id });
+      },
+    );
+  const pickLevel = () =>
+    ActionSheetIOS.showActionSheetWithOptions(
+      {
+        title: '단계',
+        options: [...LEVELS.map((l) => (l.level === 1 ? '모든 단계 (쉬운 단어 포함)' : `${levelLabel(l.level)} (${l.name}${l.level < LEVELS.length ? '~' : ''})`)), '취소'],
+        cancelButtonIndex: LEVELS.length,
+      },
+      (i) => {
+        if (i >= LEVELS.length) return;
+        void haptic.select();
+        set({ minLevel: LEVELS[i].level });
       },
     );
 
@@ -61,16 +76,23 @@ export default function ScopeSheet() {
             {MODE_INFO[mode].desc}
           </T>
         </View>
-        <Row label="범위">
-          <Chip label="CCAR-F 전체" active={scope.set === 'core'} onPress={() => set({ set: 'core', file: undefined })} />
-          <Chip label="확장 단어 포함" active={scope.set === 'all'} onPress={() => set({ set: 'all', file: undefined })} />
-          <Chip label="오답노트" active={scope.set === 'wrong'} onPress={() => set({ set: 'wrong', file: undefined })} />
-          <Chip
-            label={scope.set === 'file' ? (QUIZ_SOURCES.find((s) => s.id === scope.file)?.name ?? '문제 파일별') : '문제 파일별…'}
-            active={scope.set === 'file'}
-            onPress={pickFile}
-          />
+        <Row label="시험">
+          {EXAMS.map((e) => (
+            <Chip key={e.id} label={e.name} active={scope.set === 'exam' && scope.cat === e.id} onPress={() => set({ set: 'exam', cat: e.id, file: undefined })} />
+          ))}
+          <Chip label="모든 단어 (확장 포함)" active={scope.set === 'all'} onPress={() => set({ set: 'all', cat: undefined, file: undefined })} />
+          <Chip label="오답노트" active={scope.set === 'wrong'} onPress={() => set({ set: 'wrong', cat: undefined, file: undefined })} />
         </Row>
+        {scope.set === 'exam' && files.length > 0 && (
+          <Row label="문제 파일">
+            <Chip label={scope.cat && scope.file ? sourceName(scope.cat, scope.file) : `${examName(scope.cat)} 전체 ▾`} active={!!scope.file} onPress={pickFile} />
+          </Row>
+        )}
+        {scope.set !== 'wrong' && (
+          <Row label="단계">
+            <Chip label={`${levelLabel(scope.minLevel)} ▾`} active={scope.minLevel > 1} onPress={pickLevel} />
+          </Row>
+        )}
         <Row label="학습 상태">
           {(
             [
@@ -99,15 +121,6 @@ export default function ScopeSheet() {
             <Chip key={v} label={l} active={scope.order === v} onPress={() => set({ order: v })} />
           ))}
         </Row>
-        <View style={[styles.switchRow, { backgroundColor: c.surface }]}>
-          <View style={{ flex: 1 }}>
-            <T v="body">쉬운 기초 단어도 포함</T>
-            <T v="footnote" color="muted">
-              make, file, time 같은 단어
-            </T>
-          </View>
-          <Switch value={scope.includeBasic} onValueChange={(v) => set({ includeBasic: v })} trackColor={{ true: c.primary }} />
-        </View>
       </ScrollView>
 
       <View style={[styles.footer, { paddingBottom: Math.max(16, insets.bottom), backgroundColor: c.bg, borderTopColor: c.separator }]}>
@@ -123,6 +136,5 @@ export default function ScopeSheet() {
 
 const styles = StyleSheet.create({
   content: { padding: 20, paddingTop: 26, gap: 22 },
-  switchRow: { flexDirection: 'row', alignItems: 'center', gap: 12, padding: 14, borderRadius: 14 },
   footer: { position: 'absolute', left: 0, right: 0, bottom: 0, paddingHorizontal: 20, paddingTop: 12, gap: 10, borderTopWidth: StyleSheet.hairlineWidth },
 });

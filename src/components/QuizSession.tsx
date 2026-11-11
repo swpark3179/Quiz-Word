@@ -9,7 +9,9 @@ import { buildContextQuestion, buildMeaningQuestion, type Question } from '../li
 import type { Word } from '../lib/schema';
 import { speak } from '../lib/tts';
 import { useProgress } from '../store/progress';
+import type { ExamplePref } from '../lib/corpus';
 import { Highlighted } from './ContextSentence';
+import { useExamPref } from './ExamPref';
 import { isModalOpen, isTyping } from './Dialog';
 import { SessionHeader, StickyActions, useExitGuard } from './SessionParts';
 import { Button, Card, Kbd, PosBadge, SpeakButton } from './ui';
@@ -26,13 +28,14 @@ export interface QuizSessionProps {
 }
 
 const POOL_ALL = WORDS;
-const POOL_NO_BASIC = WORDS.filter((w) => !w.basic);
+/** 1단계(아주 쉬운 단어)의 뜻은 오답 보기로 너무 쉬워서, 1단계 단어를 낼 때만 쓴다 */
+const POOL_NO_EASY = WORDS.filter((w) => w.level > 1);
 
-function makeQuestion(w: Word, mode: QuizMode, choices: number): Question {
-  const pool = w.basic ? POOL_ALL : POOL_NO_BASIC;
+function makeQuestion(w: Word, mode: QuizMode, choices: number, pref: ExamplePref): Question {
+  const pool = w.level === 1 ? POOL_ALL : POOL_NO_EASY;
   const useContext = mode === 'context' || (mode === 'mixed' && w.contexts.length > 0 && Math.random() < 0.5);
   if (useContext) {
-    const ctx = contextsOf(w, 4).filter((c) => !/[가-힣]/.test(c.en));
+    const ctx = contextsOf(w, 4, pref).filter((c) => !/[가-힣]/.test(c.en));
     if (ctx.length) return buildContextQuestion(w, pool, ctx, choices);
   }
   return buildMeaningQuestion(w, pool, choices);
@@ -40,6 +43,7 @@ function makeQuestion(w: Word, mode: QuizMode, choices: number): Question {
 
 export function QuizSession({ ids: initialIds, mode, title, onResult, onExit }: QuizSessionProps) {
   const choices = useProgress((s) => s.settings.quizChoices);
+  const pref = useExamPref();
   const settings = useProgress((s) => s.settings);
   const [ids, setIds] = useState(initialIds);
   const [index, setIndex] = useState(0);
@@ -54,8 +58,8 @@ export function QuizSession({ ids: initialIds, mode, title, onResult, onExit }: 
   const { requestExit, dialog: exitDialog } = useExitGuard(onExit, !finished && Object.keys(results).length > 0);
   const q = useMemo(() => {
     if (!w) return undefined;
-    return questions[index] ?? makeQuestion(w, mode, choices);
-  }, [w, index, questions, mode, choices]);
+    return questions[index] ?? makeQuestion(w, mode, choices, pref);
+  }, [w, index, questions, mode, choices, pref]);
 
   // 한 번 만든 문제는 고정 (다시 그려도 보기가 바뀌지 않게)
   useEffect(() => {

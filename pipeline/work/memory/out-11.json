@@ -1,0 +1,271 @@
+{
+  "general": {
+    "roots": [{ "part": "gener", "ko": "종류, 무리" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 generalis (종류 전체에 속하는)",
+    "story": "한 종류(gener) 전체에 두루 해당하는(al) → 일반적인, 범용의",
+    "hook": "제너럴 → 군 전체를 거느리는 '제너럴(장군)' → 전체에 걸친, 일반적인",
+    "family": ["generic", "genre", "gender"]
+  },
+  "generalist": {
+    "roots": [{ "part": "general", "ko": "일반적인, 두루" }, { "part": "-ist", "ko": "~하는 사람" }],
+    "story": "한 우물만 파지 않고 두루(general) 다 하는 사람(ist) → 범용형(의)",
+    "family": ["general", "generalize", "generic"]
+  },
+  "generalize": {
+    "roots": [{ "part": "general", "ko": "일반적인" }, { "part": "-ize", "ko": "~하게 만들다" }],
+    "story": "몇 가지 사례를 어디에나 통하는 일반(general) 규칙으로 만든다(ize) → 일반화하다",
+    "family": ["general", "generalist", "generic"]
+  },
+  "generate": {
+    "roots": [{ "part": "gener", "ko": "낳다" }, { "part": "-ate", "ko": "~하다" }],
+    "origin": "라틴어 generare (낳다)",
+    "story": "없던 것을 새로 낳아(gener) 내놓는다(ate) → 생성하다, 만들어 내다",
+    "hook": "제너레이트 → 전기를 만들어 내는 '제너레이터(발전기)' → 생성하다",
+    "family": ["generator", "gene", "genesis", "regenerate"]
+  },
+  "generation": {
+    "roots": [{ "part": "gener", "ko": "낳다" }, { "part": "-ation", "ko": "~하는 일" }],
+    "origin": "라틴어 generatio (낳음)",
+    "story": "낳아(gener) 내놓는 일(ation), 또 같은 때 태어난 무리 → 생성, 세대",
+    "hook": "제너레이션 → 세대 차이 '제너레이션 갭' → 세대, 생성",
+    "family": ["generate", "generator", "regenerate"]
+  },
+  "generic": {
+    "roots": [{ "part": "gener", "ko": "종류" }, { "part": "-ic", "ko": "~의" }],
+    "origin": "프랑스어 générique ← 라틴어 genus (종류)",
+    "story": "어느 한 상표가 아니라 그 종류(gener) 전체에 해당하는(ic) → 일반적인, 특정하지 않은",
+    "hook": "제네릭 → 상표 없는 복제약 '제네릭 의약품' → 특정하지 않은",
+    "family": ["general", "genre", "genus"]
+  },
+  "glitch": {
+    "story": "화면이 잠깐 지직거리다 금세 멀쩡해지는 순간 → (일시적인) 작은 오류, 결함",
+    "hook": "글리치 → 영상이 지직 깨지는 '글리치 효과' → 작은 오류"
+  },
+  "glob": {
+    "origin": "초기 유닉스 프로그램 glob (global 의 줄임)",
+    "story": "별표(*) 패턴을 맞는 파일 이름 전체(global)로 펼쳐 주던 프로그램 → 글롭, 패턴으로 파일 찾기"
+  },
+  "global": {
+    "roots": [{ "part": "glob", "ko": "공, 지구" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 globus (공, 둥근 덩어리)",
+    "story": "둥근 지구(globe) 전체를 덮는(al) → 전역의, 세계적인",
+    "hook": "글로벌 → '글로벌 기업'처럼 온 세계에 걸친 → 세계적인, 전역의",
+    "family": ["globe", "globalize", "globular"]
+  },
+  "golden": {
+    "roots": [{ "part": "gold", "ko": "금" }, { "part": "-en", "ko": "~로 된" }],
+    "story": "금(gold)으로 된(en) 듯 가장 값지고 변하지 않는 표준 → 기준 정답의",
+    "hook": "골든 → 퀴즈 '골든벨'의 정해진 정답 → 기준 정답의",
+    "family": ["gold", "gild", "goldsmith"]
+  },
+  "grace-period": {
+    "roots": [{ "part": "grace", "ko": "호의, 봐줌" }, { "part": "period", "ko": "기간" }],
+    "story": "기한이 지나도 호의(grace)로 봐주는 기간(period) → 유예 기간",
+    "family": ["graceful", "gratitude", "periodic"]
+  },
+  "gradually": {
+    "roots": [{ "part": "grad", "ko": "걸음, 단계" }, { "part": "-ual", "ko": "~의" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 gradus (걸음, 단계)",
+    "story": "한 걸음(grad)씩 단계를 밟아 가듯(ly) → 점차, 서서히",
+    "hook": "그래주얼리 → 색이 조금씩 변하는 '그러데이션'과 한 뿌리 → 점차",
+    "family": ["grade", "graduate", "gradient", "gradation"]
+  },
+  "grant": {
+    "origin": "고대 프랑스어 graanter (승낙하다) ← 라틴어 credere (믿다)",
+    "story": "상대를 믿고(credere) 청을 승낙해 내어 준다 → (권한을) 부여하다",
+    "family": ["credit", "credential", "creed"]
+  },
+  "grep": {
+    "origin": "ed 편집기 명령 g/re/p",
+    "story": "전체에서(global) 정규식(regular expression)에 맞는 줄을 찍는다(print) → grep 검색(하다)"
+  },
+  "grounding": {
+    "roots": [{ "part": "ground", "ko": "땅, 근거" }, { "part": "-ing", "ko": "~하기" }],
+    "story": "답이 허공에 뜨지 않게 원문이라는 땅(ground)에 발을 붙이기(ing) → 근거 대기",
+    "family": ["background", "groundwork", "underground"]
+  },
+  "growth": {
+    "roots": [{ "part": "grow", "ko": "자라다" }, { "part": "-th", "ko": "~함(명사)" }],
+    "origin": "고대 영어 grōwan (자라다)",
+    "story": "풀이 자라듯(grow) 불어나는 것(th) → 증가, 커짐",
+    "family": ["grow", "outgrow", "grass"]
+  },
+  "guarantee": {
+    "origin": "고대 프랑스어 garant (보증인) — warrant 와 같은 뿌리",
+    "story": "탈이 나면 책임지겠다고 보증서(warranty)를 써 준다 → 보장하다, 보장",
+    "hook": "개런티 → 출연료 '개런티'는 받기로 보장된 돈 → 보장",
+    "family": ["guarantor", "warranty", "warrant"]
+  },
+  "guard": {
+    "origin": "고대 프랑스어 garder (지키다) — ward 와 같은 뿌리",
+    "story": "문 앞에 지켜 서서 나쁜 것이 못 들어오게 막는다 → 방지 장치, 지키다",
+    "hook": "가드 → 권투에서 팔을 올려 막는 '가드' → 막다, 지키다",
+    "family": ["guardian", "safeguard", "ward", "warden"]
+  },
+  "guardrail": {
+    "roots": [{ "part": "guard", "ko": "지키다" }, { "part": "rail", "ko": "난간" }],
+    "story": "차가 길 밖으로 못 나가게 지키는(guard) 난간(rail) → 벗어나지 않게 하는 안전장치",
+    "hook": "가드레일 → 도로 가의 '가드레일'처럼 이탈을 막는다 → 안전장치",
+    "family": ["guardian", "safeguard", "railway"]
+  },
+  "guidance": {
+    "roots": [{ "part": "guid", "ko": "이끌다" }, { "part": "-ance", "ko": "~하는 것" }],
+    "story": "어디로 갈지 이끌어(guide) 주는 것(ance) → 지침, 안내",
+    "family": ["guide", "guideline", "misguided"]
+  },
+  "guide": {
+    "origin": "고대 프랑스어 guider (길을 보여 주다)",
+    "story": "앞장서 길을 보여 주는 사람, 또는 그런 책 → 안내서, 이끌다",
+    "hook": "가이드 → 여행 '가이드'가 앞에서 길을 잡는다 → 이끌다, 안내자",
+    "family": ["guidance", "guideline", "misguide"]
+  },
+  "guideline": {
+    "roots": [{ "part": "guide", "ko": "이끌다" }, { "part": "line", "ko": "선" }],
+    "story": "벗어나지 않게 이끌어(guide) 주는 선(line) → 지침, 가이드라인",
+    "family": ["guidance", "outline", "deadline"]
+  },
+  "hallucination": {
+    "roots": [{ "part": "hallucinat", "ko": "정신이 헤매다" }, { "part": "-ion", "ko": "~하는 것" }],
+    "origin": "라틴어 alucinari (정신이 헤매다, 헛것을 보다)",
+    "story": "정신이 헤매며(hallucinat) 없는 것을 있다고 보는 것(ion) → 환각",
+    "family": ["hallucinate", "hallucinogen", "hallucinatory"]
+  },
+  "hand": {
+    "origin": "고대 영어 hand (손)",
+    "story": "내 손(hand)에서 상대 손으로 물건을 옮긴다 → 건네다, 넘겨주다",
+    "family": ["handle", "handy", "handoff"]
+  },
+  "hand-written": {
+    "roots": [{ "part": "hand", "ko": "손" }, { "part": "written", "ko": "쓴" }],
+    "story": "기계가 찍어 낸 것이 아니라 손(hand)으로 한 줄씩 쓴(written) → 손으로 직접 작성한",
+    "family": ["handwriting", "handmade", "typewritten"]
+  },
+  "handle": {
+    "roots": [{ "part": "hand", "ko": "손" }, { "part": "-le", "ko": "도구·반복" }],
+    "origin": "고대 영어 handlian (손으로 만지다)",
+    "story": "손(hand)으로 이리저리 만져(le) 다룬다 → 처리하다, 다루다",
+    "hook": "핸들 → 운전대 '핸들'을 잡고 차를 다룬다 → 다루다, 처리하다",
+    "family": ["hand", "handler", "mishandle"]
+  },
+  "handoff": {
+    "roots": [{ "part": "hand", "ko": "건네다" }, { "part": "off", "ko": "떼어, 넘겨" }],
+    "story": "쥐고 있던 것을 건네고(hand) 손을 뗀다(off), 미식축구에서 공을 넘기듯 → 인계, 넘겨주기",
+    "family": ["handover", "handout", "kickoff"]
+  },
+  "hang": {
+    "origin": "고대 영어 hangian (매달리다)",
+    "story": "프로그램이 허공에 매달린 듯 오도 가도 못 한다 → 응답 없이 멈춰 있다",
+    "family": ["hanger", "overhang", "hangover"]
+  },
+  "hardcode": {
+    "roots": [{ "part": "hard", "ko": "단단히, 고정된" }, { "part": "code", "ko": "코드" }],
+    "story": "값을 코드(code)에 단단히(hard) 박아 넣어 쉽게 못 바꾼다 → 하드코딩하다",
+    "family": ["hardware", "hardwired", "encode"]
+  },
+  "harmful": {
+    "roots": [{ "part": "harm", "ko": "해, 피해" }, { "part": "-ful", "ko": "가득한" }],
+    "story": "해(harm)가 가득한(ful) → 해로운, 유해한",
+    "family": ["harm", "harmless", "unharmed"]
+  },
+  "harness": {
+    "origin": "고대 프랑스어 harneis (군 장비, 마구)",
+    "story": "말에 마구를 채워 힘을 원하는 쪽으로 부리듯 모델을 감싸 부린다 → 하네스, 활용하다",
+    "hook": "하네스 → 강아지 산책용 '하네스(가슴줄)'로 감싸 이끈다 → 실행 틀"
+  },
+  "hash": {
+    "origin": "프랑스어 hacher (잘게 썰다) ← hache (도끼)",
+    "story": "고기를 잘게 썰어 뒤섞는 요리(hash)처럼 데이터를 썰고 섞어 짧은 값으로 → 해시(값)",
+    "hook": "해시 → 잘게 썬 감자 '해시 브라운' → 잘게 섞어 만든 값, 해시",
+    "family": ["hatchet", "hashtag", "rehash"]
+  },
+  "header": {
+    "roots": [{ "part": "head", "ko": "머리" }, { "part": "-er", "ko": "~하는 것" }],
+    "story": "본문 맨 위 머리(head) 자리에 붙는 것(er) → 머리글, 헤더",
+    "family": ["heading", "headline", "ahead"]
+  },
+  "headless": {
+    "roots": [{ "part": "head", "ko": "머리" }, { "part": "-less", "ko": "~없는" }],
+    "story": "얼굴 노릇을 하는 화면, 곧 머리(head) 없이(less) 몸통만 돈다 → 화면(UI) 없이 실행하는",
+    "family": ["header", "heading", "headline"]
+  },
+  "healthcare": {
+    "roots": [{ "part": "health", "ko": "건강" }, { "part": "care", "ko": "돌봄" }],
+    "story": "건강(health)을 돌보는(care) 일 → 의료, 보건",
+    "family": ["healthy", "heal", "caregiver"]
+  },
+  "helper": {
+    "roots": [{ "part": "help", "ko": "돕다" }, { "part": "-er", "ko": "~하는 것" }],
+    "story": "옆에서 잔일을 돕는(help) 것(er) → 헬퍼, 도우미",
+    "family": ["helpful", "helpless", "helpdesk"]
+  },
+  "heuristic": {
+    "roots": [{ "part": "heur", "ko": "찾아내다" }, { "part": "-istic", "ko": "~의" }],
+    "origin": "그리스어 heuriskein (찾아내다)",
+    "story": "'유레카(찾았다)!'와 한 뿌리(heur), 엄밀한 증명 대신 해 보며 찾아낸 요령 → 경험적 규칙"
+  },
+  "hierarchy": {
+    "roots": [{ "part": "hier", "ko": "신성한" }, { "part": "arch", "ko": "다스리다" }, { "part": "-y", "ko": "~함(명사)" }],
+    "origin": "그리스어 hierarkhia (성직자의 다스림)",
+    "story": "성직자(hier)가 다스리던(arch) 위아래 서열 → 계층 구조",
+    "family": ["monarchy", "anarchy", "hieroglyph"]
+  },
+  "high-level": {
+    "roots": [{ "part": "high", "ko": "높은" }, { "part": "level", "ko": "높이, 수준" }],
+    "story": "높은(high) 데(level)서 내려다보면 세부는 안 보이고 큰 윤곽만 보인다 → 큰 그림의, 상위 수준의",
+    "family": ["highlight", "highly", "low-level"]
+  },
+  "highest-impact": {
+    "roots": [{ "part": "highest", "ko": "가장 높은" }, { "part": "impact", "ko": "영향" }],
+    "story": "미치는 영향(impact)이 가장 높은(highest) → 효과가 가장 큰",
+    "family": ["high-level", "highlight", "impactful"]
+  },
+  "highly": {
+    "roots": [{ "part": "high", "ko": "높은" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "정도가 높게(high+ly) → 매우, 대단히",
+    "family": ["height", "highlight", "highway"]
+  },
+  "hint": {
+    "story": "정답을 다 말하지 않고 살짝만 흘려 준다 → 힌트, 넌지시 알리다",
+    "hook": "힌트 → 퀴즈에서 '힌트 주세요' 할 때의 그 힌트 → 단서, 암시하다"
+  },
+  "hipaa": {
+    "origin": "Health Insurance Portability & Accountability Act",
+    "story": "건강보험(Health Insurance) 이동(Portability)·책임(Accountability) 법(Act) → 미국 의료정보 보호법"
+  },
+  "historical": {
+    "roots": [{ "part": "histor", "ko": "역사, 기록" }, { "part": "-ical", "ko": "~의" }],
+    "story": "지난 기록(history)에 관한(ical) → 과거의, 이력의",
+    "family": ["history", "historian", "prehistoric"]
+  },
+  "history": {
+    "origin": "그리스어 historia (물어서 알아낸 것, 이야기)",
+    "story": "물어 알아낸 일을 차례로 적어 둔 이야기(story 와 한 뿌리) → 기록, 이력, 역사",
+    "hook": "히스토리 → 브라우저의 방문 기록 '히스토리' → 기록, 이력",
+    "family": ["story", "historian", "historic"]
+  },
+  "hit": {
+    "origin": "고대 노르드어 hitta (마주치다)",
+    "story": "날아간 요청이 대상과 딱 마주쳐 닿는다 → 닿다, (한도에) 걸리다, 적중",
+    "hook": "히트 → 야구 '히트(안타)'처럼 딱 맞았다 → 닿다, 적중"
+  },
+  "hold": {
+    "origin": "고대 영어 healdan (붙잡다, 지키다)",
+    "story": "손에 꽉 쥐고 놓지 않으니 그대로 지켜진다 → 지켜지다, 담다, 유지하다",
+    "family": ["holder", "uphold", "withhold"]
+  },
+  "honor": {
+    "origin": "라틴어 honor (명예, 존경)",
+    "story": "상대의 요청을 존중해(honor) 그대로 따라 준다 → 받아들여 지키다, 존중하다",
+    "family": ["honest", "honorable", "dishonor"]
+  },
+  "hook": {
+    "origin": "고대 영어 hōc (갈고리)",
+    "story": "정해진 지점에 갈고리(hook)를 걸어 두면 지나갈 때마다 걸려 실행된다 → 훅"
+  },
+  "host": {
+    "origin": "라틴어 hospes (손님을 맞는 주인)",
+    "story": "손님을 집에 들여 대접하는 주인처럼 프로그램을 품어 돌린다 → 호스트, 호스팅하다",
+    "hook": "호스트 → 파티를 여는 주인 '호스트' → 주인, 주최하다",
+    "family": ["hospital", "hotel", "hostel", "hospitality"]
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "library": {
+    "roots": [{ "part": "libr", "ko": "책" }, { "part": "-ary", "ko": "~이 있는 곳" }],
+    "origin": "라틴어 librarium (책 상자) ← liber (책)",
+    "story": "책(libr)을 모아 둔 곳(ary)에서 빌려 쓰듯 가져다 쓰는 코드 모음 → 라이브러리, 도서관",
+    "family": ["librarian", "libretto"]
+  },
+  "license": {
+    "roots": [{ "part": "lic", "ko": "허락되다" }, { "part": "-ense", "ko": "~함(명사)" }],
+    "origin": "라틴어 licentia ← licere (허락되다)",
+    "story": "해도 된다(lic)는 허락을 문서로 받은 것 → 라이선스, 사용 허가, 면허",
+    "hook": "라이선스 → 운전 '라이선스(면허)' → 허가, 면허",
+    "family": ["licensee", "illicit", "leisure"]
+  },
+  "lifecycle": {
+    "roots": [{ "part": "life", "ko": "삶, 수명" }, { "part": "cycle", "ko": "주기, 순환" }],
+    "story": "만들어져 쓰이다 사라지기까지 삶(life)이 한 바퀴(cycle) 돈다 → 수명 주기",
+    "family": ["lifetime", "lifelong", "recycle", "bicycle"]
+  },
+  "lifetime": {
+    "roots": [{ "part": "life", "ko": "삶" }, { "part": "time", "ko": "시간" }],
+    "story": "살아(life) 있는 동안의 시간(time) → 수명, 유효 시간",
+    "family": ["lifecycle", "lifelong", "timeline", "overtime"]
+  },
+  "lightweight": {
+    "roots": [{ "part": "light", "ko": "가벼운" }, { "part": "weight", "ko": "무게" }],
+    "story": "무게(weight)가 가벼운(light), 권투의 라이트급처럼 → 가벼운, 경량의",
+    "family": ["lighten", "heavyweight", "weigh"]
+  },
+  "limit": {
+    "origin": "라틴어 limes (밭 사이의 경계)",
+    "story": "여기까지라고 그어 놓은 경계선, 그 선을 넘지 못하게 한다 → 한도, 제한하다",
+    "hook": "리미트 → 한정판 '리미티드 에디션' → 한도, 제한",
+    "family": ["limitation", "unlimited", "delimit"]
+  },
+  "line-item": {
+    "roots": [{ "part": "line", "ko": "줄" }, { "part": "item", "ko": "항목" }],
+    "story": "청구서에서 한 줄(line)에 하나씩 적힌 항목(item) → 품목 행",
+    "family": ["outline", "deadline", "itemize"]
+  },
+  "lint": {
+    "origin": "옷의 보풀 lint 에서 딴 유닉스 검사 도구 이름",
+    "story": "옷에 붙은 보풀(lint)을 떼어 내듯 코드의 자잘한 흠을 골라낸다 → 린트(하다)"
+  },
+  "live": {
+    "origin": "고대 영어 libban (살다)",
+    "story": "사람이 집에 살듯 코드도 어느 파일에 '산다', 살아 움직이는 채로 → ~에 있다, 살다, 실시간의",
+    "hook": "라이브 → 살아 있는 실시간 '라이브 방송' → 실시간의, 운영 중인",
+    "family": ["life", "alive", "lively", "livelihood"]
+  },
+  "llm": {
+    "origin": "Large Language Model",
+    "story": "엄청나게 큰(Large) 글 뭉치로 말(Language)을 익힌 모델(Model) → 대규모 언어 모델"
+  },
+  "load": {
+    "origin": "고대 영어 lād (나름, 운반)",
+    "story": "수레에 짐을 싣듯 메모리에 올려 싣는다, 실린 짐의 무게 → 불러오다, 부하",
+    "hook": "로드 → 화면의 '로딩 중…' → 불러오다",
+    "family": ["unload", "download", "upload", "overload"]
+  },
+  "load-balancer": {
+    "roots": [{ "part": "load", "ko": "짐, 부하" }, { "part": "balancer", "ko": "균형 잡는 것" }],
+    "story": "몰려드는 짐(load)을 저울질해 고르게 나눠(balance) 주는 것(er) → 로드 밸런서",
+    "family": ["overload", "download", "imbalance"]
+  },
+  "local": {
+    "roots": [{ "part": "loc", "ko": "장소" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 localis ← locus (장소)",
+    "story": "먼 서버가 아니라 바로 이 장소(loc)의(al) → 로컬의, 내 컴퓨터·환경의",
+    "hook": "로컬 → 그 동네의 '로컬 맛집' → 내 자리의, 로컬의",
+    "family": ["locate", "location", "allocate", "locomotive"]
+  },
+  "locate": {
+    "roots": [{ "part": "loc", "ko": "장소" }, { "part": "-ate", "ko": "~하다" }],
+    "origin": "라틴어 locare (자리에 두다)",
+    "story": "어느 장소(loc)에 있는지 짚어 낸다(ate) → (위치를) 찾아내다",
+    "family": ["local", "allocate", "relocate", "dislocate"]
+  },
+  "location": {
+    "roots": [{ "part": "loc", "ko": "장소" }, { "part": "-ation", "ko": "~한 것" }],
+    "origin": "라틴어 locatio (자리에 둠)",
+    "story": "무엇이 놓여(locate) 있는 그 자리(ion) → 위치, 장소",
+    "hook": "로케이션 → 영화 '로케(로케이션) 촬영'지 → 위치, 장소",
+    "family": ["local", "allocate", "relocate"]
+  },
+  "lock": {
+    "origin": "고대 영어 loc (빗장, 잠금장치)",
+    "story": "내가 쓰는 동안 남이 못 들어오게 빗장을 건다 → 락, 잠금(을 걸다)",
+    "hook": "락 → 잠가 두는 사물함 '라커(locker)' → 잠금",
+    "family": ["locker", "unlock", "deadlock", "lockfile"]
+  },
+  "lockfile": {
+    "roots": [{ "part": "lock", "ko": "잠금" }, { "part": "file", "ko": "파일" }],
+    "story": "패키지 버전이 움직이지 않게 잠가(lock) 적어 둔 파일(file) → 락파일",
+    "family": ["unlock", "deadlock", "filename"]
+  },
+  "log": {
+    "origin": "항해 일지 logbook 의 줄임 — log (통나무)",
+    "story": "통나무(log)를 바다에 던져 배 속도를 재고 날마다 적던 일지 → 로그, 기록하다",
+    "family": ["logbook", "login", "blog", "backlog"]
+  },
+  "logic": {
+    "roots": [{ "part": "log", "ko": "말, 이치" }, { "part": "-ic", "ko": "~의 기술" }],
+    "origin": "그리스어 logikē ← logos (말, 이성)",
+    "story": "말(log)의 앞뒤가 맞는지 이치를 따지는 것(ic) → 로직, 논리",
+    "family": ["logical", "dialogue", "apology", "catalog"]
+  },
+  "long-lived": {
+    "roots": [{ "part": "long", "ko": "긴" }, { "part": "lived", "ko": "수명을 가진" }],
+    "story": "긴(long) 수명(life)을 가진(d) → 수명이 긴, 오래 유효한",
+    "family": ["short-lived", "lifelong", "longevity"]
+  },
+  "long-running": {
+    "roots": [{ "part": "long", "ko": "오래" }, { "part": "running", "ko": "실행되는" }],
+    "story": "오래(long) 달리고(running) 있는 → 장시간 실행되는, 오래 이어지는",
+    "family": ["long-lived", "runtime", "runner"]
+  },
+  "lookup": {
+    "roots": [{ "part": "look", "ko": "보다" }, { "part": "up", "ko": "찾아, 위로" }],
+    "story": "사전을 펼쳐 낱말을 찾아(up) 본다(look) → 조회",
+    "family": ["outlook", "overlook", "lookout"]
+  },
+  "loop": {
+    "story": "끈을 둥글게 돌려 만든 고리, 끝이 처음으로 돌아와 계속 돈다 → 루프, 반복하다",
+    "hook": "루프 → 빙글 한 바퀴 도는 '루프 코스터' → 반복, 순환"
+  },
+  "loss": {
+    "origin": "고대 영어 los (잃음, 파멸) — lose 와 같은 뿌리",
+    "story": "잃어(lose) 손에서 빠져나간 몫 → 손실, 잃음",
+    "family": ["lose", "lost", "lossless"]
+  },
+  "lost-in-the-middle": {
+    "roots": [{ "part": "lost", "ko": "잃은, 묻힌" }, { "part": "in", "ko": "~에서" }, { "part": "middle", "ko": "한가운데" }],
+    "story": "긴 입력의 한가운데(middle)에서(in) 길을 잃고(lost) 묻힌다 → 중간 정보를 놓치는 현상"
+  },
+  "lower": {
+    "roots": [{ "part": "low", "ko": "낮은" }, { "part": "-er", "ko": "더 ~한" }],
+    "story": "더(er) 낮은(low) 쪽으로 끌어내린다 → 낮추다, 더 낮은",
+    "family": ["low", "below", "lowercase"]
+  },
+  "maintain": {
+    "roots": [{ "part": "main", "ko": "손" }, { "part": "tain", "ko": "쥐다" }],
+    "origin": "라틴어 manu tenere (손으로 쥐다)",
+    "story": "손(main)에 꼭 쥐고(tain) 놓지 않는다 → 유지하다, 유지보수하다",
+    "family": ["maintenance", "manual", "contain", "obtain"]
+  },
+  "major": {
+    "origin": "라틴어 major (더 큰) — magnus (큰)의 비교급",
+    "story": "둘 중 더 큰(major) 쪽, 그만큼 비중이 큰 → 중대한, 주요한",
+    "hook": "메이저 → '메이저 리그', '메이저 업데이트' → 주요한, 큰",
+    "family": ["majority", "mayor", "magnify", "maximum"]
+  },
+  "malicious": {
+    "roots": [{ "part": "mal", "ko": "나쁜" }, { "part": "-icious", "ko": "~로 가득한" }],
+    "origin": "라틴어 malitia (나쁜 마음) ← malus (나쁜)",
+    "story": "나쁜(mal) 마음으로 가득한(icious) → 악의적인, 악성의",
+    "family": ["malice", "malware", "malfunction"]
+  },
+  "management": {
+    "roots": [{ "part": "manage", "ko": "다루다" }, { "part": "-ment", "ko": "~하는 일" }],
+    "origin": "이탈리아어 maneggiare (말을 손으로 다루다)",
+    "story": "고삐를 손(man)에 쥐고 말을 다루듯(manage) 챙기는 일(ment) → 관리",
+    "family": ["manager", "manual", "manipulate", "maintain"]
+  },
+  "manifest": {
+    "roots": [{ "part": "mani", "ko": "손" }, { "part": "fest", "ko": "잡힌" }],
+    "origin": "라틴어 manifestus (손에 잡힐 듯 뚜렷한)",
+    "story": "손(mani)에 잡힐(fest) 만큼 뚜렷이 적어 내놓은 목록 → 매니페스트, 드러나다",
+    "family": ["manifesto", "manual", "manuscript"]
+  },
+  "manually": {
+    "roots": [{ "part": "manu", "ko": "손" }, { "part": "-al", "ko": "~의" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 manualis ← manus (손)",
+    "story": "기계에 맡기지 않고 손(manu)으로(al) 직접(ly) → 수동으로",
+    "hook": "매뉴얼리 → 수동 변속 '매뉴얼(스틱)' 차 → 수동으로",
+    "family": ["manual", "manage", "manuscript", "manufacture"]
+  },
+  "map": {
+    "origin": "라틴어 mappa (천, 냅킨) → mappa mundi (세계 지도)",
+    "story": "천(mappa)에 땅을 옮겨 그리듯 이쪽 값을 저쪽에 하나씩 옮겨 잇는다 → 대응시키다, 지도",
+    "family": ["napkin", "apron"]
+  },
+  "mark": {
+    "origin": "고대 영어 mearc (경계, 표지)",
+    "story": "땅의 경계에 박아 둔 표지처럼 눈에 띄게 찍어 둔다 → 표시하다, 부호",
+    "family": ["marker", "remark", "landmark", "bookmark"]
+  },
+  "marker": {
+    "roots": [{ "part": "mark", "ko": "표시하다" }, { "part": "-er", "ko": "~하는 것" }],
+    "story": "여기라고 표시해(mark) 주는 것(er) → 표시, 표식",
+    "hook": "마커 → 칠판에 쓰는 '마커 펜' → 표시",
+    "family": ["remark", "landmark", "bookmark"]
+  },
+  "market-research": {
+    "roots": [{ "part": "market", "ko": "시장" }, { "part": "research", "ko": "조사" }],
+    "story": "시장(market)을 거듭(re) 샅샅이 찾아본다(search) → 시장 조사",
+    "family": ["marketing", "merchant", "researcher"]
+  },
+  "market-size": {
+    "roots": [{ "part": "market", "ko": "시장" }, { "part": "size", "ko": "크기" }],
+    "story": "시장(market)의 크기(size) → 시장 규모",
+    "family": ["marketing", "merchant", "oversized"]
+  },
+  "markup": {
+    "roots": [{ "part": "mark", "ko": "표시하다" }, { "part": "up", "ko": "위에, 덧붙여" }],
+    "story": "교정자가 원고 위에(up) 조판 지시를 표시해(mark) 넣던 데서 → 마크업, 서식 기호",
+    "family": ["markdown", "marker", "bookmark"]
+  },
+  "master": {
+    "origin": "라틴어 magister (우두머리, 스승) ← magis (더 크게)",
+    "story": "더 큰(magis) 사람인 스승, 사본들의 으뜸인 원본 → 기본이 되는, 주인, 숙달하다",
+    "hook": "마스터 → '마스터 키', 기술을 '마스터하다' → 으뜸의, 숙달하다",
+    "family": ["masterpiece", "magistrate", "maestro", "mister"]
+  },
+  "match": {
+    "origin": "고대 영어 mæcca (짝, 맞수)",
+    "story": "서로 맞는 짝인지 나란히 대 본다 → 일치하다, 일치하는 것",
+    "hook": "매치 → 옷 색을 '매치'한다, '미스매치'의 반대 → 맞다, 일치",
+    "family": ["mismatch", "matcher", "matchmaker"]
+  },
+  "matcher": {
+    "roots": [{ "part": "match", "ko": "일치하다" }, { "part": "-er", "ko": "~하는 것" }],
+    "story": "어느 도구가 조건에 맞는지(match) 가려 주는 것(er) → 매처",
+    "family": ["mismatch", "matchmaker", "unmatched"]
+  },
+  "material": {
+    "roots": [{ "part": "mater", "ko": "재료, 물질" }, { "part": "-ial", "ko": "~의" }],
+    "origin": "라틴어 materia (목재, 재료)",
+    "story": "글이나 물건을 짓는 바탕 재료(mater)가 되는(ial) → 자료, 재료",
+    "family": ["matter", "materialize", "immaterial"]
+  },
+  "matter": {
+    "origin": "라틴어 materia (재료, 물질)",
+    "story": "실체가 있는 물질(matter)은 무게가 나간다, 무게가 있으니 → 중요하다, 문제",
+    "family": ["material", "materialize", "immaterial"]
+  },
+  "max": {
+    "origin": "maximum",
+    "story": "가장 큰 값(maximum)을 세 글자로 줄인 말 → 최대",
+    "hook": "맥스 → '볼륨을 맥스로 올려' → 최대"
+  },
+  "maximum": {
+    "roots": [{ "part": "maxim", "ko": "가장 큰" }, { "part": "-um", "ko": "~한 것" }],
+    "origin": "라틴어 maximum — magnus (큰)의 최상급",
+    "story": "큰(magnus) 것들 가운데 가장 큰(maxim) 것(um) → 최대, 최댓값",
+    "family": ["maximize", "major", "magnitude", "magnify"]
+  },
+  "mcp": {
+    "origin": "Model Context Protocol",
+    "story": "모델(Model)에 맥락(Context)을 대 주는 통신 규약(Protocol) → 도구·데이터 연결 표준 프로토콜"
+  },
+  "meaningful": {
+    "roots": [{ "part": "meaning", "ko": "뜻, 의미" }, { "part": "-ful", "ko": "가득한" }],
+    "story": "뜻(meaning)이 가득한(ful) → 의미 있는, 유의미한",
+    "family": ["mean", "meaningless", "well-meaning"]
+  },
+  "measure": {
+    "roots": [{ "part": "meas", "ko": "재다" }, { "part": "-ure", "ko": "~하는 일" }],
+    "origin": "라틴어 mensura (재기) ← metiri (재다)",
+    "story": "자를 대어 재는(meas) 일(ure), 재 보고 거기에 맞춰 쓰는 수 → 측정하다, 조치, 척도",
+    "family": ["measurement", "dimension", "immense"]
+  },
+  "mechanism": {
+    "roots": [{ "part": "mechan", "ko": "기계, 장치" }, { "part": "-ism", "ko": "짜임새" }],
+    "origin": "그리스어 mēkhanē (장치, 수단)",
+    "story": "기계(mechan) 부품이 맞물려 일을 해내는 짜임새(ism) → 수단, 장치, 메커니즘",
+    "family": ["machine", "mechanic", "mechanical"]
+  },
+  "medical": {
+    "roots": [{ "part": "medic", "ko": "의사, 치료" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 medicus (의사) ← mederi (고치다)",
+    "story": "병을 고치는 의사(medic)에 관한(al) → 의료의, 의학의",
+    "hook": "메디컬 → 병원 이야기 '메디컬 드라마' → 의료의",
+    "family": ["medicine", "medication", "remedy"]
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "defense": {
+    "roots": [{ "part": "de-", "ko": "떼어, 멀리" }, { "part": "fense", "ko": "치다" }],
+    "origin": "라틴어 defendere (쳐서 물리치다)",
+    "story": "달려드는 것을 쳐서(fense) 멀리(de) 떼어 놓는다 → 방어, 방어 수단",
+    "hook": "디펜스 → 농구장 응원 '디펜스! 디펜스!' → 방어",
+    "family": ["defend", "offense", "fence", "fend"]
+  },
+  "define": {
+    "roots": [{ "part": "de-", "ko": "완전히" }, { "part": "fine", "ko": "끝, 경계" }],
+    "origin": "라틴어 definire (경계를 긋다)",
+    "story": "어디까지인지 경계(fine)를 완전히(de) 그어 준다 → 정의하다, 정하다",
+    "family": ["finish", "final", "finite", "confine"]
+  },
+  "definition": {
+    "roots": [{ "part": "de-", "ko": "완전히" }, { "part": "fin", "ko": "끝, 경계" }, { "part": "-ition", "ko": "~한 것" }],
+    "origin": "라틴어 definitio (경계 긋기)",
+    "story": "뜻과 쓰임의 경계(fin)를 딱(de) 그어 적어 둔 것(ition) → 정의, 명세",
+    "family": ["define", "finite", "infinite", "confine"]
+  },
+  "delay": {
+    "roots": [{ "part": "de-", "ko": "떨어져, 뒤로" }, { "part": "lay", "ko": "놔두다(프랑스어 laier)" }],
+    "origin": "고대 프랑스어 delaier (뒤로 놔두다)",
+    "story": "할 일을 저만치(de) 놔둬(lay) 버린다 → 늦추다, 지연, 대기 시간",
+    "hook": "딜레이 → '배송 딜레이'처럼 그대로 쓰는 말 → 지연"
+  },
+  "delete": {
+    "origin": "라틴어 delere (지워 없애다)",
+    "story": "키보드 Delete 키를 누르면 글자가 지워져 사라진다 → 삭제하다, 지우다",
+    "hook": "딜리트 → 키보드 '딜리트(Del)' 키 → 지우다"
+  },
+  "delimiter": {
+    "roots": [{ "part": "de-", "ko": "완전히" }, { "part": "limit", "ko": "경계" }, { "part": "-er", "ko": "~하는 것" }],
+    "origin": "라틴어 delimitare (경계를 긋다)",
+    "story": "여기부터 저기까지 경계(limit)를 딱(de) 그어 주는 것(er) → 구분자",
+    "family": ["limit", "delimit", "unlimited"]
+  },
+  "delta": {
+    "origin": "그리스 문자 Δ (수학에서 변화량 기호)",
+    "story": "수학에서 Δ가 '변화량'이듯 직전보다 달라진 만큼만 → 델타, 변화분"
+  },
+  "demarcate": {
+    "roots": [{ "part": "de-", "ko": "떼어, 갈라" }, { "part": "marc", "ko": "표시(mark)" }, { "part": "-ate", "ko": "~하다" }],
+    "origin": "스페인어 demarcar (경계를 표시하다)",
+    "story": "표시(marc)를 해서 이쪽과 저쪽을 갈라(de) 놓는다 → 경계를 정하다, 구분 짓다",
+    "family": ["mark", "remark", "landmark"]
+  },
+  "demonstrate": {
+    "roots": [{ "part": "de-", "ko": "완전히" }, { "part": "monstr", "ko": "보여 주다" }, { "part": "-ate", "ko": "~하다" }],
+    "origin": "라틴어 demonstrare (똑똑히 가리켜 보이다)",
+    "story": "눈앞에 완전히(de) 내보여(monstr) 준다 → 보여 주다, 입증하다",
+    "hook": "데먼스트레이트 → 시연 '데모(demo)'가 이 말의 줄임 → 보여 주다",
+    "family": ["demo", "monster", "remonstrate"]
+  },
+  "deny": {
+    "origin": "라틴어 denegare (딱 잘라 아니라고 하다)",
+    "story": "'아니(negare)'라고 딱 잘라(de) 말한다, 요청에도 '안 돼' → 거부하다, 부인하다",
+    "family": ["negative", "negate", "denial"]
+  },
+  "denylist": {
+    "roots": [{ "part": "deny", "ko": "거부하다" }, { "part": "list", "ko": "목록" }],
+    "story": "거부할(deny) 대상을 적어 둔 목록(list) → 거부 목록",
+    "family": ["allowlist", "blocklist", "checklist"]
+  },
+  "depend": {
+    "roots": [{ "part": "de-", "ko": "아래로" }, { "part": "pend", "ko": "매달리다" }],
+    "origin": "라틴어 dependere (아래로 매달려 있다)",
+    "story": "위의 것에 아래로(de) 매달려(pend) 있어 그것이 흔들리면 같이 흔들린다 → 달려 있다, 의존하다",
+    "family": ["pendant", "suspend", "pending", "pendulum"]
+  },
+  "dependency": {
+    "roots": [{ "part": "de-", "ko": "아래로" }, { "part": "pend", "ko": "매달리다" }, { "part": "-ency", "ko": "~인 상태, 것" }],
+    "story": "다른 패키지에 매달려(pend) 있는 상태(ency), 그 매달린 대상 → 의존 관계, 의존성",
+    "family": ["depend", "independent", "pendant", "suspend"]
+  },
+  "dependent": {
+    "roots": [{ "part": "de-", "ko": "아래로" }, { "part": "pend", "ko": "매달리다" }, { "part": "-ent", "ko": "~하는" }],
+    "story": "다른 것에 매달려(pend) 있는(ent) → 의존하는, 영향을 받는",
+    "family": ["depend", "independent", "pendulum", "pending"]
+  },
+  "deploy": {
+    "roots": [{ "part": "de-", "ko": "풀어, 펼쳐" }, { "part": "ploy", "ko": "접다(라틴어 plicare)" }],
+    "origin": "라틴어 displicare (펼치다) → 프랑스어 déployer",
+    "story": "접어(ploy) 둔 부대를 펼쳐(de) 전선에 내보내듯 → 배포하다, 투입하다",
+    "family": ["display", "employ", "apply", "complicate"]
+  },
+  "deprecate": {
+    "roots": [{ "part": "de-", "ko": "떨쳐, 멀리" }, { "part": "prec", "ko": "빌다" }, { "part": "-ate", "ko": "~하다" }],
+    "origin": "라틴어 deprecari (빌어서 물리치다)",
+    "story": "제발 쓰지 말라고 빌어(prec) 멀리한다(de), 곧 없앨 예정 → 지원 중단 예정으로 지정하다",
+    "family": ["pray", "prayer", "precarious"]
+  },
+  "depth": {
+    "roots": [{ "part": "dep", "ko": "깊은(deep)" }, { "part": "-th", "ko": "~한 정도" }],
+    "story": "long → length처럼 깊은(deep) 정도(th) → 깊이, 중첩 단계, 철저함",
+    "family": ["deep", "deepen", "deeply"]
+  },
+  "describe": {
+    "roots": [{ "part": "de-", "ko": "아래로" }, { "part": "scribe", "ko": "쓰다" }],
+    "origin": "라틴어 describere (베껴 적다, 그려 내다)",
+    "story": "본 것을 종이에 아래로(de) 죽 적어(scribe) 내려간다 → 설명하다, 묘사하다",
+    "family": ["script", "subscribe", "prescribe", "inscribe"]
+  },
+  "description": {
+    "roots": [{ "part": "de-", "ko": "아래로" }, { "part": "script", "ko": "쓰다" }, { "part": "-ion", "ko": "~한 것" }],
+    "origin": "라틴어 descriptio (적어 내려감)",
+    "story": "무엇인지 죽 적어(script) 내려간(de) 글(ion) → 설명, 설명 문구",
+    "family": ["describe", "script", "manuscript", "subscription"]
+  },
+  "design": {
+    "roots": [{ "part": "de-", "ko": "밖으로" }, { "part": "sign", "ko": "표시" }],
+    "origin": "라틴어 designare (표시해 나타내다)",
+    "story": "만들 것을 표시(sign)로 그려 내(de) 보인다 → 설계(하다)",
+    "hook": "디자인 → 우리말 '디자인', 겉모양만이 아니라 구조를 짠다 → 설계",
+    "family": ["sign", "signal", "signature", "designate"]
+  },
+  "destructive": {
+    "roots": [{ "part": "de-", "ko": "거꾸로" }, { "part": "struct", "ko": "쌓다" }, { "part": "-ive", "ko": "~하는" }],
+    "origin": "라틴어 destruere (쌓은 것을 허물다)",
+    "story": "쌓은(struct) 것을 거꾸로(de) 허물어 버리는(ive) → 파괴적인",
+    "family": ["destroy", "structure", "construct", "instruct"]
+  },
+  "detail": {
+    "roots": [{ "part": "de-", "ko": "완전히, 잘게" }, { "part": "tail", "ko": "자르다" }],
+    "origin": "프랑스어 détailler (잘게 자르다)",
+    "story": "전체를 잘게(de) 잘라(tail) 낸 조각 하나하나 → 세부 (사항), 자세한 내용",
+    "hook": "디테일 → '디테일이 살아 있다'의 그 디테일 → 세부",
+    "family": ["tailor", "retail", "entail"]
+  },
+  "detect": {
+    "roots": [{ "part": "de-", "ko": "벗기다" }, { "part": "tect", "ko": "덮다" }],
+    "origin": "라틴어 detegere (덮개를 벗기다)",
+    "story": "덮개(tect)를 벗겨(de) 숨어 있던 것을 찾아낸다 → 감지하다, 알아내다",
+    "hook": "디텍트 → 탐정 '디텍티브'가 단서를 찾아낸다 → 알아내다",
+    "family": ["detective", "detector", "protect"]
+  },
+  "determine": {
+    "roots": [{ "part": "de-", "ko": "완전히" }, { "part": "termin", "ko": "끝, 경계" }],
+    "origin": "라틴어 determinare (경계를 정하다)",
+    "story": "어디가 끝(termin)인지 완전히(de) 못 박아 답을 확정한다 → 알아내다, 결정하다",
+    "family": ["terminal", "terminate", "term", "exterminate"]
+  },
+  "deterministic": {
+    "roots": [{ "part": "de-", "ko": "완전히" }, { "part": "termin", "ko": "끝, 경계" }, { "part": "-istic", "ko": "~적인" }],
+    "story": "결과가 이미 정해져(determine) 있는(istic), 같은 입력엔 늘 같은 답 → 결정적인",
+    "family": ["determine", "terminal", "terminate"]
+  },
+  "dev": {
+    "origin": "development / developer",
+    "story": "디벨롭먼트(development)·디벨로퍼(developer)의 앞 세 글자만 딴 말 → 개발, 개발자"
+  },
+  "developer": {
+    "roots": [{ "part": "de-", "ko": "풀다" }, { "part": "velop", "ko": "싸다" }, { "part": "-er", "ko": "~하는 사람" }],
+    "origin": "프랑스어 développer (싼 것을 풀어 펼치다)",
+    "story": "싸여(velop) 있던 것을 풀어(de) 펼쳐 내는 사람(er) → 개발자, 개발업자",
+    "family": ["develop", "envelope", "envelop"]
+  },
+  "diff": {
+    "origin": "difference (차이)의 줄임, 유닉스 diff 명령",
+    "story": "두 파일의 차이(difference)만 뽑아 보여 주는 명령에서 → 변경분 비교 결과, 비교하다"
+  },
+  "differ": {
+    "roots": [{ "part": "dif-", "ko": "따로" }, { "part": "fer", "ko": "나르다" }],
+    "origin": "라틴어 differre (따로 나르다)",
+    "story": "서로 따로(dif) 날라(fer) 가서 가는 길이 갈린다 → 다르다, 구별되다",
+    "family": ["different", "transfer", "prefer", "defer"]
+  },
+  "differentiate": {
+    "roots": [{ "part": "dif-", "ko": "따로" }, { "part": "fer", "ko": "나르다" }, { "part": "-ent", "ko": "~한" }, { "part": "-iate", "ko": "~하게 만들다" }],
+    "story": "다른(different) 점이 드러나게 만든다(iate) → 구별하다, 차별화하다",
+    "family": ["differ", "difference", "transfer", "offer"]
+  },
+  "differently": {
+    "roots": [{ "part": "different", "ko": "다른" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "따로(dif) 날라(fer) 간 듯 다른(different) 식으로(ly) → 다르게, 다른 방식으로",
+    "family": ["differ", "difference", "indifferent"]
+  },
+  "digit": {
+    "origin": "라틴어 digitus (손가락)",
+    "story": "손가락(digitus)을 꼽아 세던 0부터 9까지 → 숫자, 자릿수, 손가락",
+    "hook": "디짓 → '디지털(digital)'은 숫자로 다루는 방식 → 숫자",
+    "family": ["digital", "digitize"]
+  },
+  "direct": {
+    "roots": [{ "part": "di-", "ko": "따로, 떨어져" }, { "part": "rect", "ko": "곧게 하다" }],
+    "origin": "라틴어 dirigere (곧게 이끌다) → directus",
+    "story": "돌아가지 않고 곧게(rect) 뻗은 → 직접적인 · 곧게 가리켜 이끈다 → 지시하다",
+    "family": ["correct", "erect", "rectangle", "director"]
+  },
+  "directory": {
+    "roots": [{ "part": "direct", "ko": "가리키다, 이끌다" }, { "part": "-ory", "ko": "~하는 것, 곳" }],
+    "origin": "중세 라틴어 directorium (길잡이)",
+    "story": "파일이 어디 있는지 가리켜(direct) 주는 곳(ory) → 디렉터리, 폴더",
+    "family": ["direction", "director", "correct"]
+  },
+  "disable": {
+    "roots": [{ "part": "dis-", "ko": "반대로" }, { "part": "able", "ko": "할 수 있는" }],
+    "story": "할 수 있는(able) 상태를 반대로(dis) 뒤집는다 → 끄다, 비활성화하다",
+    "family": ["enable", "ability", "unable", "disability"]
+  },
+  "discard": {
+    "roots": [{ "part": "dis-", "ko": "떼어" }, { "part": "card", "ko": "카드" }],
+    "story": "카드 게임에서 필요 없는 패(card)를 손에서 떼어(dis) 내버린다 → 버리다, 폐기하다",
+    "family": ["card", "chart", "carton"]
+  },
+  "discount": {
+    "roots": [{ "part": "dis-", "ko": "덜어, 떼어" }, { "part": "count", "ko": "셈하다" }],
+    "origin": "중세 라틴어 discomputare (셈에서 덜다)",
+    "story": "셈한(count) 값에서 얼마를 덜어(dis) 낸다 → 할인하다 · 값을 낮춰 본다 → 가볍게 여기다",
+    "hook": "디스카운트 → '디씨(DC)해 주세요'의 그 DC → 할인",
+    "family": ["count", "account", "compute", "recount"]
+  },
+  "discover": {
+    "roots": [{ "part": "dis-", "ko": "벗기다" }, { "part": "cover", "ko": "덮개" }],
+    "origin": "후기 라틴어 discooperire (덮개를 벗기다)",
+    "story": "덮개(cover)를 벗겨(dis) 속에 있던 것을 드러낸다 → 발견하다, 알아내다",
+    "family": ["cover", "uncover", "covert"]
+  },
+  "discovery": {
+    "roots": [{ "part": "dis-", "ko": "벗기다" }, { "part": "cover", "ko": "덮개" }, { "part": "-y", "ko": "~하는 일" }],
+    "story": "덮개(cover)를 벗겨(dis) 찾아내는 일(y) → 발견, 탐색",
+    "hook": "디스커버리 → 탐험 다큐 채널 '디스커버리' → 발견, 탐색",
+    "family": ["discover", "uncover", "coverage"]
+  },
+  "discuss": {
+    "roots": [{ "part": "dis-", "ko": "낱낱이, 흩어" }, { "part": "cuss", "ko": "흔들다, 치다" }],
+    "origin": "라틴어 discutere (쳐서 흩다 → 따져 살피다)",
+    "story": "문제를 흔들어(cuss) 낱낱이(dis) 털어 놓고 본다 → 논의하다, 이야기하다",
+    "family": ["percussion", "concussion"]
+  },
+  "disguise": {
+    "roots": [{ "part": "dis-", "ko": "벗어나, 바꾸어" }, { "part": "guise", "ko": "차림, 겉모습" }],
+    "origin": "고대 프랑스어 desguiser (차림을 바꾸다)",
+    "story": "평소 차림(guise)에서 벗어나(dis) 딴 모습을 한다 → 위장하다, 위장"
+  },
+  "disk": {
+    "origin": "그리스어 diskos (던지는 원반) → 라틴어 discus",
+    "story": "원반던지기의 원반(diskos)처럼 둥글고 납작한 판에 저장한다 → 디스크, 원반",
+    "hook": "디스크 → 하드'디스크', 허리 '디스크'(둥근 연골판) → 원반, 디스크",
+    "family": ["disc", "discus", "dish", "desk"]
+  },
+  "dismiss": {
+    "roots": [{ "part": "dis-", "ko": "멀리" }, { "part": "miss", "ko": "보내다" }],
+    "origin": "라틴어 dimittere (떠나보내다)",
+    "story": "볼 것 없다며 멀리(dis) 보내(miss) 버린다 → 무시하다, 일축하다",
+    "family": ["mission", "missile", "admit", "transmit"]
+  },
+  "display": {
+    "roots": [{ "part": "dis-", "ko": "펼쳐" }, { "part": "play", "ko": "접다(라틴어 plicare)" }],
+    "origin": "라틴어 displicare (펼치다) → 고대 프랑스어 despleier",
+    "story": "접어(play) 둔 것을 펼쳐(dis) 눈앞에 내놓는다 → 보여 주다, 표시하다, 화면, 진열",
+    "hook": "디스플레이 → 모니터 '디스플레이', 매장 '디스플레이' → 화면, 진열",
+    "family": ["deploy", "apply", "reply", "complicate"]
+  },
+  "distill": {
+    "roots": [{ "part": "di-", "ko": "아래로(de-)" }, { "part": "still", "ko": "방울지다" }],
+    "origin": "라틴어 destillare (방울져 떨어지다)",
+    "story": "끓여서 방울방울(still) 떨어지는(di) 진액만 받아 낸다 → 핵심만 추리다, 증류하다",
+    "family": ["instill", "distillery", "still"]
+  },
+  "distinct": {
+    "roots": [{ "part": "di-", "ko": "따로(dis-)" }, { "part": "stinct", "ko": "찔러 표시한" }],
+    "origin": "라틴어 distinguere (찔러 표시해 가르다)",
+    "story": "점을 찍어(stinct) 따로(di) 갈라 놓은 → 뚜렷이 구별되는, 서로 겹치지 않는",
+    "family": ["distinguish", "instinct", "extinct"]
+  },
+  "distinguish": {
+    "roots": [{ "part": "di-", "ko": "따로(dis-)" }, { "part": "stingu", "ko": "찔러 표시하다" }, { "part": "-ish", "ko": "~하다" }],
+    "origin": "라틴어 distinguere (찔러 표시해 가르다)",
+    "story": "점을 찍어(stingu) 이것과 저것을 따로(di) 가른다 → 구별하다, 차이를 알아보다",
+    "family": ["distinct", "extinguish", "instinct"]
+  },
+  "distribution": {
+    "roots": [{ "part": "dis-", "ko": "따로따로" }, { "part": "tribut", "ko": "나눠 주다" }, { "part": "-ion", "ko": "~하는 일" }],
+    "origin": "라틴어 distribuere (나눠 주다)",
+    "story": "여기저기 따로(dis) 나눠 준(tribut) 일, 나뉘어 퍼진 모양 → 분배, 유통, 분포",
+    "family": ["tribute", "contribute", "attribute"]
+  },
+  "diverse": {
+    "roots": [{ "part": "di-", "ko": "따로" }, { "part": "verse", "ko": "돌다, 향하다" }],
+    "origin": "라틴어 diversus (서로 다른 쪽으로 돌아선)",
+    "story": "저마다 다른 쪽으로(di) 돌아(verse) 선 → 다양한, 서로 다른",
+    "family": ["divert", "version", "reverse", "universe"]
+  },
+  "divide": {
+    "roots": [{ "part": "di-", "ko": "따로" }, { "part": "vide", "ko": "가르다" }],
+    "origin": "라틴어 dividere (갈라 떼다)",
+    "story": "따로(di) 갈라(vide) 여러 몫으로 만든다 → 나누다, 분할하다 · 갈라진 틈 → 격차",
+    "family": ["division", "individual", "dividend"]
+  }
+}

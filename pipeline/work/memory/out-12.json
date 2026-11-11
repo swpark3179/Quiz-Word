@@ -1,0 +1,281 @@
+{
+  "however": {
+    "roots": [{ "part": "how", "ko": "어떻게, 얼마나" }, { "part": "ever", "ko": "~든지" }],
+    "story": "앞의 사정이 어떻든(how+ever) 상관없이 뒤집어 말한다 → 그러나, 아무리 ~해도",
+    "family": ["whatever", "whenever", "somehow"]
+  },
+  "hr": {
+    "origin": "Human Resources",
+    "story": "회사의 사람(Human)이라는 자원(Resources)을 맡는 일 → 인사, 인사 부서"
+  },
+  "hub": {
+    "story": "바퀴살이 모두 모여드는 바퀴 한가운데 축 → 허브, 중심",
+    "hook": "허브 → 노선이 모여드는 '허브 공항' → 중심"
+  },
+  "human-in-the-loop": {
+    "roots": [{ "part": "human", "ko": "사람" }, { "part": "in", "ko": "~안에" }, { "part": "loop", "ko": "순환 고리" }],
+    "story": "자동으로 도는 고리(loop) 안에(in) 사람(human)이 끼어 확인한다 → 사람 개입형의"
+  },
+  "hunt": {
+    "origin": "고대 영어 huntian (사냥감을 쫓다)",
+    "story": "사냥꾼이 숲을 뒤지며 사냥감을 쫓듯 → 찾아 헤매다, 사냥하다",
+    "hook": "헌트 → 인재를 찾아다니는 '헤드헌터' → 찾아 헤매다",
+    "family": ["hunter", "headhunt", "manhunt"]
+  },
+  "hyphen": {
+    "roots": [{ "part": "hyp-", "ko": "아래" }, { "part": "hen", "ko": "하나" }],
+    "origin": "그리스어 hyphen (하나로, 함께)",
+    "story": "두 낱말을 밑(hyp)에서 하나(hen)로 묶어 읽으라는 표시 → 하이픈(-)",
+    "family": ["hypothesis", "hypothermia"]
+  },
+  "hypothesis": {
+    "roots": [{ "part": "hypo-", "ko": "아래" }, { "part": "thesis", "ko": "놓기, 주장" }],
+    "origin": "그리스어 hypothesis (밑에 놓은 것, 토대)",
+    "story": "논의의 밑(hypo)에 일단 깔아 놓고(thesis) 따져 보는 주장 → 가설",
+    "family": ["thesis", "synthesis", "hypothetical", "theme"]
+  },
+  "iam": {
+    "origin": "Identity and Access Management",
+    "story": "누구인지(Identity)와 무엇에 접근하는지(Access)를 관리(Management) → ID·접근 관리"
+  },
+  "identifier": {
+    "roots": [{ "part": "identifi", "ko": "식별하다" }, { "part": "-er", "ko": "~하는 것" }],
+    "story": "이것이 바로 그것임을 알아보게(identify) 해 주는 것(er) → 식별자",
+    "family": ["identity", "identical", "identification"]
+  },
+  "identify": {
+    "roots": [{ "part": "ident", "ko": "같은" }, { "part": "-ify", "ko": "~로 만들다" }],
+    "origin": "중세 라틴어 identificare (같은 것으로 만들다)",
+    "story": "눈앞의 것이 찾던 것과 같다(ident)고 짚어 낸다(ify) → 찾아내다, 식별하다",
+    "family": ["identity", "identical", "identifier"]
+  },
+  "identity": {
+    "roots": [{ "part": "ident", "ko": "같은" }, { "part": "-ity", "ko": "~임(명사)" }],
+    "origin": "라틴어 identitas ← idem (같은 것)",
+    "story": "어제도 오늘도 같은(ident) 그 사람임(ity) → 신원, 본인",
+    "hook": "아이덴티티 → 줄이면 'ID(아이디)' → 신원, 식별 정보",
+    "family": ["identical", "identify", "identifier"]
+  },
+  "ignore": {
+    "roots": [{ "part": "i-", "ko": "아닌(in-)" }, { "part": "gnor", "ko": "알다" }],
+    "origin": "라틴어 ignorare (알지 못하다)",
+    "story": "알면서도 모르는(i+gnor) 척 지나친다 → 무시하다, 따르지 않다",
+    "family": ["ignorant", "recognize", "diagnose"]
+  },
+  "immediately": {
+    "roots": [{ "part": "im-", "ko": "아닌" }, { "part": "medi", "ko": "중간" }, { "part": "-ate", "ko": "~한" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 immediatus (사이에 낀 것이 없는)",
+    "story": "중간(medi)에 끼는 것이 하나도 없이(im) 곧장(ly) → 즉시, 바로 옆에",
+    "family": ["medium", "mediate", "intermediate", "media"]
+  },
+  "impact": {
+    "roots": [{ "part": "im-", "ko": "안으로" }, { "part": "pact", "ko": "쳐서 박다" }],
+    "origin": "라틴어 impactus (세게 들이받은)",
+    "story": "안으로(im) 쾅 박히며(pact) 흔들어 놓는다 → 영향, 충격",
+    "hook": "임팩트 → '임팩트 있다'고 할 때의 그 임팩트 → 강한 영향",
+    "family": ["compact", "impinge"]
+  },
+  "implement": {
+    "roots": [{ "part": "im-", "ko": "안에" }, { "part": "ple", "ko": "채우다" }, { "part": "-ment", "ko": "~하는 것" }],
+    "origin": "라틴어 implere (가득 채우다)",
+    "story": "빈 설계도 안(im)을 실물로 채워(ple) 넣는다 → 구현하다, 실제로 적용하다",
+    "family": ["complete", "supplement", "plenty", "complement"]
+  },
+  "implication": {
+    "roots": [{ "part": "im-", "ko": "안으로" }, { "part": "plic", "ko": "접다" }, { "part": "-ation", "ko": "~한 것" }],
+    "origin": "라틴어 implicare (안으로 접어 넣다)",
+    "story": "결정 안(im)에 접혀(plic) 들어 있다가 나중에 펼쳐지는 뒷일 → 영향, 함의",
+    "family": ["imply", "complicate", "explicit", "duplicate"]
+  },
+  "import": {
+    "roots": [{ "part": "im-", "ko": "안으로" }, { "part": "port", "ko": "나르다" }],
+    "origin": "라틴어 importare (안으로 들여오다)",
+    "story": "밖에 있는 것을 안으로(im) 날라(port) 온다 → 불러오다, 가져오다, 수입하다",
+    "family": ["export", "transport", "portable", "support"]
+  },
+  "improve": {
+    "origin": "앵글로프랑스어 emprouwer (이익이 되게 하다)",
+    "story": "더 이익(prou)이 나도록 손봐 낫게 만든다 → 개선하다, 나아지다"
+  },
+  "in-advance": {
+    "roots": [{ "part": "in", "ko": "~에" }, { "part": "advance", "ko": "앞서 나아감" }],
+    "story": "때가 오기 전 앞선(advance) 시점에(in) 해 둔다 → 미리, 사전에",
+    "family": ["advanced", "advantage"]
+  },
+  "in-process": {
+    "roots": [{ "part": "in", "ko": "~안에" }, { "part": "process", "ko": "프로세스" }],
+    "story": "따로 띄우지 않고 같은 프로세스(process) 안에서(in) 돈다 → 인프로세스의",
+    "family": ["processor", "proceed", "procedure"]
+  },
+  "inactive": {
+    "roots": [{ "part": "in-", "ko": "아닌" }, { "part": "act", "ko": "움직이다, 하다" }, { "part": "-ive", "ko": "~한" }],
+    "story": "움직이지(act) 않는(in) 상태인(ive) → 비활성의",
+    "family": ["active", "activate", "action", "react"]
+  },
+  "inbound": {
+    "roots": [{ "part": "in", "ko": "안으로" }, { "part": "bound", "ko": "~로 향하는" }],
+    "story": "안쪽(in)을 향해(bound) 오는 → 안으로 들어오는, 수신의",
+    "family": ["outbound", "homebound", "northbound"]
+  },
+  "incentive": {
+    "roots": [{ "part": "in-", "ko": "안에" }, { "part": "cent", "ko": "노래하다" }, { "part": "-ive", "ko": "~하는 것" }],
+    "origin": "라틴어 incentivus (가락을 잡아 주는, 부추기는)",
+    "story": "마음 안(in)에 흥겨운 가락(cent)을 넣어 움직이게 한다 → 장려책, 인센티브",
+    "hook": "인센티브 → 성과가 좋으면 받는 '인센티브(성과급)' → 장려책",
+    "family": ["chant", "accent", "enchant"]
+  },
+  "incident": {
+    "roots": [{ "part": "in-", "ko": "위에" }, { "part": "cid", "ko": "떨어지다" }, { "part": "-ent", "ko": "~하는 것" }],
+    "origin": "라틴어 incidere (위에 떨어지다, 일어나다)",
+    "story": "느닷없이 머리 위로(in) 뚝 떨어진(cid) 일 → 사고, 장애",
+    "family": ["accident", "coincide", "occasion"]
+  },
+  "include": {
+    "roots": [{ "part": "in-", "ko": "안에" }, { "part": "clude", "ko": "닫다" }],
+    "origin": "라틴어 includere (안에 넣고 닫다)",
+    "story": "안에(in) 넣고 문을 닫는다(clude) → 포함하다, 넣다",
+    "family": ["exclude", "conclude", "close", "closet"]
+  },
+  "incoming": {
+    "roots": [{ "part": "in", "ko": "안으로" }, { "part": "coming", "ko": "오는" }],
+    "story": "지금 안으로(in) 오고(coming) 있는 → 들어오는, 새로 도착하는",
+    "family": ["income", "upcoming", "newcomer"]
+  },
+  "incorporate": {
+    "roots": [{ "part": "in-", "ko": "안으로" }, { "part": "corpor", "ko": "몸" }, { "part": "-ate", "ko": "~하다" }],
+    "origin": "라틴어 incorporare (한 몸 안에 넣다)",
+    "story": "한 몸(corpor) 안으로(in) 받아들여 일부로 삼는다(ate) → 포함시키다, 반영하다",
+    "family": ["corporation", "corporal", "corpse", "corps"]
+  },
+  "incorrect": {
+    "roots": [{ "part": "in-", "ko": "아닌" }, { "part": "correct", "ko": "올바른" }],
+    "story": "올바르지(correct) 않은(in) → 틀린, 잘못된",
+    "family": ["correct", "correction", "direct", "rectify"]
+  },
+  "incorrectly": {
+    "roots": [{ "part": "in-", "ko": "아닌" }, { "part": "correct", "ko": "올바른" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "올바르지(correct) 않게(in+ly) → 잘못, 틀리게",
+    "family": ["correct", "correction", "rectify"]
+  },
+  "increase": {
+    "roots": [{ "part": "in-", "ko": "안에서, 위로" }, { "part": "crease", "ko": "자라다" }],
+    "origin": "라틴어 increscere (안에서 자라나다)",
+    "story": "속(in)에서부터 자라(crease) 불어난다 → 늘리다, 증가",
+    "family": ["decrease", "crescent", "concrete", "recruit"]
+  },
+  "indentation": {
+    "roots": [{ "part": "in-", "ko": "안으로" }, { "part": "dent", "ko": "이빨" }, { "part": "-ation", "ko": "~한 것" }],
+    "origin": "중세 라틴어 indentare (이빨 자국을 내다)",
+    "story": "줄 머리를 이빨(dent)로 베어 문 듯 안으로(in) 쏙 들인 것 → 들여쓰기",
+    "family": ["indent", "dentist", "dental"]
+  },
+  "independent": {
+    "roots": [{ "part": "in-", "ko": "아닌" }, { "part": "de-", "ko": "아래로" }, { "part": "pend", "ko": "매달리다" }, { "part": "-ent", "ko": "~한" }],
+    "story": "남에게 매달려(de+pend) 있지 않은(in) → 독립적인, 서로 의존하지 않는",
+    "hook": "인디펜던트 → 줄이면 '인디', 기획사에 기대지 않는 인디 밴드 → 독립적인",
+    "family": ["depend", "pendant", "suspend", "pending"]
+  },
+  "index": {
+    "roots": [{ "part": "in-", "ko": "~쪽으로" }, { "part": "dex", "ko": "가리키다" }],
+    "origin": "라틴어 index (가리키는 것, 집게손가락)",
+    "story": "집게손가락으로 '여기!' 하고(in) 가리켜(dex) 주는 목록 → 색인, 인덱스",
+    "family": ["indicate", "indicator", "dictate"]
+  },
+  "individual": {
+    "roots": [{ "part": "in-", "ko": "아닌" }, { "part": "divid", "ko": "나누다" }, { "part": "-ual", "ko": "~의" }],
+    "origin": "라틴어 individuus (나눌 수 없는)",
+    "story": "더는 나눌(divid) 수 없는(in) 낱낱의 하나 → 개별의, 개인",
+    "family": ["divide", "division", "dividend"]
+  },
+  "industry": {
+    "roots": [{ "part": "indu-", "ko": "안에" }, { "part": "str", "ko": "쌓다, 짓다" }],
+    "origin": "라틴어 industria (부지런함)",
+    "story": "안에서(indu) 부지런히 쌓아(str) 올리는 일, 그런 일이 모인 판 → 근면, 산업, 업계",
+    "family": ["structure", "construct", "instrument", "destroy"]
+  },
+  "infer": {
+    "roots": [{ "part": "in-", "ko": "안으로" }, { "part": "fer", "ko": "나르다" }],
+    "origin": "라틴어 inferre (안으로 가져오다)",
+    "story": "흩어진 단서를 머릿속으로(in) 날라(fer) 와 결론을 낸다 → 추론하다",
+    "family": ["transfer", "refer", "differ", "offer"]
+  },
+  "infinite": {
+    "roots": [{ "part": "in-", "ko": "아닌" }, { "part": "fin", "ko": "끝" }, { "part": "-ite", "ko": "~한" }],
+    "origin": "라틴어 infinitus (끝이 없는)",
+    "story": "끝(fin)이 없는(in) → 무한한, 끝이 없는",
+    "hook": "인피니트 → 무한대 기호(∞) '인피니티' → 무한한",
+    "family": ["finish", "final", "finite", "define"]
+  },
+  "infrastructure": {
+    "roots": [{ "part": "infra-", "ko": "아래" }, { "part": "struct", "ko": "쌓다, 짓다" }, { "part": "-ure", "ko": "~한 것" }],
+    "story": "서비스 밑(infra)에 깔려 받쳐 주는 구조물(structure) → 인프라, 기반 시설",
+    "hook": "인프라스트럭처 → 줄여서 '인프라' → 기반 시설",
+    "family": ["structure", "construct", "instruct", "infrared"]
+  },
+  "initialize": {
+    "roots": [{ "part": "init", "ko": "시작" }, { "part": "-ial", "ko": "~의" }, { "part": "-ize", "ko": "~하게 만들다" }],
+    "origin": "라틴어 initium (시작)",
+    "story": "쓰기 전에 맨 처음(initial) 상태로 갖춰 놓는다(ize) → 초기화하다",
+    "family": ["initial", "initiate", "initiative"]
+  },
+  "initially": {
+    "roots": [{ "part": "init", "ko": "시작" }, { "part": "-ial", "ko": "~의" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 initium (시작)",
+    "story": "맨 처음(initial)에(ly) → 처음에, 초기에",
+    "hook": "이니셜리 → 이름 첫 글자 '이니셜'처럼 맨 앞에 → 처음에",
+    "family": ["initial", "initiate", "initiative"]
+  },
+  "inject": {
+    "roots": [{ "part": "in-", "ko": "안으로" }, { "part": "ject", "ko": "던지다" }],
+    "origin": "라틴어 injectus (안으로 던져 넣은)",
+    "story": "주사기로 약을 넣듯 안으로(in) 던져(ject) 넣는다 → 주입하다, 끼워 넣다",
+    "family": ["project", "reject", "eject", "object"]
+  },
+  "inline": {
+    "roots": [{ "part": "in", "ko": "~안에" }, { "part": "line", "ko": "줄" }],
+    "story": "따로 빼지 않고 지금 흐르는 줄(line) 안에서(in) 바로 → 그 자리에서 바로",
+    "family": ["online", "outline", "underline"]
+  },
+  "input": {
+    "roots": [{ "part": "in", "ko": "안으로" }, { "part": "put", "ko": "놓다" }],
+    "story": "안으로(in) 넣는(put) 것 → 입력, 입력값",
+    "family": ["output", "throughput"]
+  },
+  "input-output": {
+    "roots": [{ "part": "input", "ko": "입력" }, { "part": "output", "ko": "출력" }],
+    "story": "넣은 것(input)과 나온 것(output)을 한 쌍으로 묶은 → 입력-출력의, 입출력"
+  },
+  "input-to-output": {
+    "roots": [{ "part": "input", "ko": "입력" }, { "part": "to", "ko": "~로" }, { "part": "output", "ko": "출력" }],
+    "story": "입력(input)에서 출력(output)으로(to) 가는 짝을 보여 주는 → 입력→출력의"
+  },
+  "insert": {
+    "roots": [{ "part": "in-", "ko": "안에" }, { "part": "sert", "ko": "잇다, 꽂다" }],
+    "origin": "라틴어 inserere (안에 끼워 잇다)",
+    "story": "줄지은 것들 사이(in)에 꽂아(sert) 잇는다 → 끼워 넣다, 삽입하다",
+    "hook": "인서트 → 키보드의 'Insert' 키 → 끼워 넣다",
+    "family": ["series", "assert", "desert", "exert"]
+  },
+  "insightful": {
+    "roots": [{ "part": "in", "ko": "안" }, { "part": "sight", "ko": "봄, 시야" }, { "part": "-ful", "ko": "가득한" }],
+    "story": "속(in)까지 꿰뚫어 보는(sight) 눈이 가득한(ful) → 통찰력 있는, 핵심을 짚는",
+    "family": ["insight", "foresight", "oversight", "eyesight"]
+  },
+  "instance": {
+    "roots": [{ "part": "in-", "ko": "곁에, 위에" }, { "part": "stan", "ko": "서다" }, { "part": "-ce", "ko": "~함(명사)" }],
+    "origin": "라틴어 instantia (바로 앞에 서 있음)",
+    "story": "지금 눈앞에(in) 서 있는(stan) 실제 하나 → 인스턴스, 사례",
+    "family": ["instant", "stand", "distance", "constant"]
+  },
+  "instead": {
+    "roots": [{ "part": "in", "ko": "~에" }, { "part": "stead", "ko": "자리" }],
+    "origin": "중세 영어 in stede (그 자리에)",
+    "story": "원래 것의 자리(stead)에(in) 다른 것을 놓는다 → 대신에",
+    "family": ["steady", "homestead", "steadfast"]
+  },
+  "instruction-following": {
+    "roots": [{ "part": "instruction", "ko": "지시" }, { "part": "following", "ko": "따르기" }],
+    "story": "받은 지시(instruction)를 그대로 따르는(following) 능력 → 지시 이행(능력)",
+    "family": ["instruct", "instructor", "follower"]
+  }
+}

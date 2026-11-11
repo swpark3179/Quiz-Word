@@ -3,7 +3,8 @@ import { Download, FileDown, Monitor, Moon, RotateCcw, Smartphone, Sun, Upload, 
 import { useEffect, useRef, useState } from 'react';
 import { ConfirmDialog } from '../components/Dialog';
 import { Button, Card, PageHeader, SectionTitle } from '../components/ui';
-import { CORPUS, RAW_WORDS, SOURCES, WORDS } from '../data/words';
+import { EXAMS, mainExam, RAW_EXAMS, RAW_WORDS, WORDS } from '../data/words';
+import { LEVELS } from '../lib/schema';
 import { defaultVoice, getVoices, onVoicesChanged, speak, ttsSupported } from '../lib/tts';
 import { dayKey } from '../lib/text';
 import { packWordSet, wordSetFileName } from '../lib/wordset';
@@ -71,7 +72,7 @@ export function SettingsPage() {
 
   /** 단어 전체를 한 파일로 — iPhone 앱 설정의 "단어 세트 → 파일에서 불러오기"로 읽는다 */
   const doExportWordSet = () => {
-    const set = packWordSet({ words: RAW_WORDS, corpus: CORPUS, sources: SOURCES });
+    const set = packWordSet({ words: RAW_WORDS, exams: RAW_EXAMS });
     download(JSON.stringify(set), wordSetFileName(set.builtAt));
     setWordSetMessage(`단어 ${set.count.toLocaleString()}개를 파일로 저장했어요. iPhone 으로 옮긴 뒤 앱 → 설정 → 단어 세트 → 파일에서 불러오기.`);
   };
@@ -121,6 +122,26 @@ export function SettingsPage() {
               </button>
             )}
           </div>
+        </Field>
+        {EXAMS.length > 0 && (
+          <Field label="주 시험" desc="홈의 진척과 오늘의 새 단어를 이 시험에 나온 단어로 셉니다">
+            <select aria-label="주 시험" value={mainExam(settings.exam) ?? ''} onChange={(e) => update({ exam: e.target.value })} className={inputCls}>
+              {EXAMS.map((e) => (
+                <option key={e.id} value={e.id}>
+                  {e.name}
+                </option>
+              ))}
+            </select>
+          </Field>
+        )}
+        <Field label="학습 단계" desc="이 단계보다 쉬운 단어는 홈의 진척과 오늘의 새 단어에서 뺍니다 (플래시카드·객관식은 시작할 때 따로 고릅니다)">
+          <select aria-label="학습 단계" value={settings.minLevel} onChange={(e) => update({ minLevel: Number(e.target.value) })} className={inputCls}>
+            {LEVELS.map((l) => (
+              <option key={l.level} value={l.level}>
+                {l.level === 1 ? '모든 단계' : `${l.level}단계 이상 (${l.name}~)`}
+              </option>
+            ))}
+          </select>
         </Field>
         <Field label="하루 새 단어 수" desc="복습 화면에서 매일 새로 소개할 단어 수">
           <select value={settings.newPerDay} onChange={(e) => update({ newPerDay: Number(e.target.value) })} className={inputCls}>

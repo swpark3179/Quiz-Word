@@ -1,0 +1,518 @@
+[
+ {
+  "id": "medium",
+  "word": "medium",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˈmiːdiəm",
+  "meaning": "① 중간의, 보통의 ② (명) 매체, 수단 (복수 media)",
+  "level": 2
+ },
+ {
+  "id": "meet",
+  "word": "meet",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "miːt",
+  "meaning": "① (요건·기준을) 충족하다, 맞추다 ② 만나다 ③ (meeting) 회의",
+  "level": 2
+ },
+ {
+  "id": "memo",
+  "word": "memo",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈmemoʊ",
+  "meaning": "메모, 전표 — credit memo 대변 메모(대금을 깎아 주는 전표)",
+  "level": 2
+ },
+ {
+  "id": "memory",
+  "word": "memory",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈmeməri",
+  "meaning": "① 기억, 기억력 ② (Claude Code) 메모리 — CLAUDE.md 처럼 세션마다 불러오는 지침 ③ (컴퓨터) 메모리, 기억 장치",
+  "level": 2
+ },
+ {
+  "id": "mental",
+  "word": "mental",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈmentl",
+  "meaning": "정신의, 마음속의 (mental model: 머릿속에 그린 이해 구조)",
+  "level": 3
+ },
+ {
+  "id": "mention",
+  "word": "mention",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈmenʃn",
+  "meaning": "① 언급하다, 말하다 ② 언급",
+  "level": 3
+ },
+ {
+  "id": "merely",
+  "word": "merely",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈmɪrli",
+  "meaning": "단지, 그저",
+  "level": 4
+ },
+ {
+  "id": "merge",
+  "word": "merge",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "mɜːrdʒ",
+  "meaning": "합치다, 병합(하다)",
+  "level": 5
+ },
+ {
+  "id": "metadata",
+  "word": "metadata",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈmetədeɪtə",
+  "meaning": "메타데이터 — 데이터를 설명하는 부가 정보 (형식·출처·코드 등)",
+  "level": 6
+ },
+ {
+  "id": "methodology",
+  "word": "methodology",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌmeθəˈdɑːlədʒi",
+  "meaning": "방법론, (연구) 방법",
+  "level": 5
+ },
+ {
+  "id": "microservice",
+  "word": "microservice",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈmaɪkroʊsɜːrvɪs",
+  "meaning": "마이크로서비스 — 기능별로 잘게 나눠 따로 배포·운영하는 작은 서비스 (그런 구조)",
+  "level": 6
+ },
+ {
+  "id": "mid",
+  "word": "mid",
+  "pos": [
+   "형용사",
+   "전치사"
+  ],
+  "ipa": "mɪd",
+  "meaning": "중간의, ~ 도중에 (주로 결합어: mid-edit 편집 도중, mid-way 중간쯤에)",
+  "level": 4
+ },
+ {
+  "id": "mid-session",
+  "word": "mid-session",
+  "pos": [
+   "부사",
+   "형용사"
+  ],
+  "ipa": "ˌmɪd ˈseʃn",
+  "meaning": "세션 도중에(의)",
+  "level": 5
+ },
+ {
+  "id": "middle-name",
+  "word": "middle-name",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˌmɪdl ˈneɪm",
+  "meaning": "중간 이름, 미들 네임 (이름과 성 사이에 오는 이름)",
+  "level": 2
+ },
+ {
+  "id": "midway",
+  "word": "midway",
+  "pos": [
+   "부사",
+   "형용사"
+  ],
+  "ipa": "ˌmɪdˈweɪ",
+  "meaning": "(진행) 도중에, 중간쯤에",
+  "level": 4
+ },
+ {
+  "id": "migrate",
+  "word": "migrate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈmaɪɡreɪt",
+  "meaning": "(새 환경·형식으로) 옮기다, 마이그레이션하다",
+  "level": 5
+ },
+ {
+  "id": "milligram",
+  "word": "milligram",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈmɪlɪɡræm",
+  "meaning": "밀리그램(mg) — 무게 단위 (1그램의 1000분의 1)",
+  "level": 4
+ },
+ {
+  "id": "minimum",
+  "word": "minimum",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ˈmɪnɪməm",
+  "meaning": "최소(의), 최솟값 — minimum viable 최소한으로 필요한",
+  "level": 3
+ },
+ {
+  "id": "minor",
+  "word": "minor",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈmaɪnər",
+  "meaning": "사소한, 중요하지 않은 (minor version: 부 버전)",
+  "level": 4
+ },
+ {
+  "id": "mirror",
+  "word": "mirror",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈmɪrər",
+  "meaning": "그대로 반영하다, 똑같이 따르다 / 거울, 미러",
+  "level": 3
+ },
+ {
+  "id": "misinterpret",
+  "word": "misinterpret",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌmɪsɪnˈtɜːrprɪt",
+  "meaning": "잘못 해석하다, 오해하다",
+  "level": 5
+ },
+ {
+  "id": "mislabel",
+  "word": "mislabel",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌmɪsˈleɪbl",
+  "meaning": "라벨을 잘못 붙이다, 잘못 분류하다",
+  "level": 5
+ },
+ {
+  "id": "mismatch",
+  "word": "mismatch",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈmɪsmætʃ",
+  "meaning": "불일치, 어긋남 / (서로) 맞지 않다",
+  "level": 5
+ },
+ {
+  "id": "misnamed",
+  "word": "misnamed",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌmɪsˈneɪmd",
+  "meaning": "이름이 잘못 붙은",
+  "level": 5
+ },
+ {
+  "id": "misread",
+  "word": "misread",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌmɪsˈriːd",
+  "meaning": "잘못 읽다, 잘못 해석하다",
+  "level": 4
+ },
+ {
+  "id": "misuse",
+  "word": "misuse",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˌmɪsˈjuːs",
+  "meaning": "오용(하다), 악용(하다)",
+  "level": 4
+ },
+ {
+  "id": "mitigation",
+  "word": "mitigation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌmɪtɪˈɡeɪʃn",
+  "meaning": "완화(책) — 위험·피해를 줄이는 조치 (mitigate: 완화하다)",
+  "level": 6
+ },
+ {
+  "id": "mode",
+  "word": "mode",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "moʊd",
+  "meaning": "① 모드, (작동) 방식 (plan mode, strict mode) ② (failure mode) 형태, 유형",
+  "level": 3
+ },
+ {
+  "id": "model",
+  "word": "model",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈmɑːdl",
+  "meaning": "① (AI) 모델 ② 모형, 구조 (data model: 데이터 모델) ③ (사업·가격) 방식 (pricing model) ④ 모델링하다, 본뜨다",
+  "level": 2
+ },
+ {
+  "id": "modification",
+  "word": "modification",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌmɑːdɪfɪˈkeɪʃn",
+  "meaning": "수정, 변경 (modification time: 수정 시각)",
+  "level": 4
+ },
+ {
+  "id": "modify",
+  "word": "modify",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈmɑːdɪfaɪ",
+  "meaning": "수정하다, 변경하다",
+  "level": 4
+ },
+ {
+  "id": "module",
+  "word": "module",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈmɑːdʒuːl",
+  "meaning": "모듈 — 코드를 기능 단위로 나눈 묶음",
+  "level": 5
+ },
+ {
+  "id": "monorepo",
+  "word": "monorepo",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈmɑːnoʊriːpoʊ",
+  "meaning": "모노레포 — 여러 프로젝트를 한 저장소에 모아 관리하는 방식(저장소)",
+  "level": 6
+ },
+ {
+  "id": "multi-agent",
+  "word": "multi-agent",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌmʌlti ˈeɪdʒənt",
+  "meaning": "멀티 에이전트의 — 여러 에이전트가 역할을 나눠 협업하는",
+  "level": 6
+ },
+ {
+  "id": "multi-hour",
+  "word": "multi-hour",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌmʌlti ˈaʊər",
+  "meaning": "몇 시간에 걸친",
+  "level": 4
+ },
+ {
+  "id": "multi-step",
+  "word": "multi-step",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌmʌlti ˈstep",
+  "meaning": "여러 단계로 된, 다단계의",
+  "level": 4
+ },
+ {
+  "id": "multi-tenant",
+  "word": "multi-tenant",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌmʌlti ˈtenənt",
+  "meaning": "멀티테넌트의 — 한 시스템을 여러 고객(조직)이 나눠 쓰는",
+  "level": 6
+ },
+ {
+  "id": "multi-turn",
+  "word": "multi-turn",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌmʌlti ˈtɜːrn",
+  "meaning": "여러 턴에 걸친 (대화)",
+  "level": 6
+ },
+ {
+  "id": "multiline",
+  "word": "multiline",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌmʌltiˈlaɪn",
+  "meaning": "여러 줄에 걸친 (multiline 옵션: 줄바꿈을 넘어 패턴을 찾는 검색 설정)",
+  "level": 5
+ },
+ {
+  "id": "multiplier",
+  "word": "multiplier",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈmʌltɪplaɪər",
+  "meaning": "배수, 승수 — 곱해지는 값 (multiply: 곱하다, 몇 배로 늘리다)",
+  "level": 5
+ },
+ {
+  "id": "natural",
+  "word": "natural",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈnætʃrəl",
+  "meaning": "① 자연스러운, 당연한 ② 자연의, 천연의 (natural language: 자연어 — 사람이 쓰는 일반 언어)",
+  "level": 2
+ },
+ {
+  "id": "natural-language",
+  "word": "natural-language",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌnætʃrəl ˈlæŋɡwɪdʒ",
+  "meaning": "자연어로 된, 자연어의 — (코드·구조화 데이터가 아닌) 사람이 쓰는 말로 된",
+  "level": 4
+ },
+ {
+  "id": "nearly",
+  "word": "nearly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈnɪrli",
+  "meaning": "거의 (not nearly: ~에 훨씬 못 미치는)",
+  "level": 2
+ },
+ {
+  "id": "necessary",
+  "word": "necessary",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈnesəseri",
+  "meaning": "① 필요한, 필수적인 ② 필연적인, 불가피한",
+  "level": 2
+ },
+ {
+  "id": "negative",
+  "word": "negative",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈneɡətɪv",
+  "meaning": "① 부정적인 ② 음수의, (검사가) 음성의",
+  "level": 3
+ },
+ {
+  "id": "neither",
+  "word": "neither",
+  "pos": [
+   "한정사",
+   "대명사",
+   "접속사"
+  ],
+  "ipa": "ˈniːðər",
+  "meaning": "① (둘 중) 어느 ~도 아닌 ② (둘 중) 어느 쪽도 ~ 아님 ③ (neither A nor B) A도 B도 아니다",
+  "level": 2
+ },
+ {
+  "id": "nested",
+  "word": "nested",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈnestɪd",
+  "meaning": "중첩된 — 안에 또 들어 있는",
+  "level": 6
+ },
+ {
+  "id": "network",
+  "word": "network",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈnetwɜːrk",
+  "meaning": "① (컴퓨터) 네트워크, 통신망 ② (시설·조직의) 망, 연결망 ③ 인맥을 쌓다",
+  "level": 2
+ },
+ {
+  "id": "newly",
+  "word": "newly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈnuːli",
+  "meaning": "새로, 최근에 (newly + 과거분사: 새로 ~된)",
+  "level": 2
+ },
+ {
+  "id": "nightly",
+  "word": "nightly",
+  "pos": [
+   "형용사",
+   "부사"
+  ],
+  "ipa": "ˈnaɪtli",
+  "meaning": "① 매일 밤의, 밤마다 하는 ② 매일 밤, 밤마다",
+  "level": 4
+ }
+]

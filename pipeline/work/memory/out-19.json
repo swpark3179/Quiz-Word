@@ -1,0 +1,284 @@
+{
+  "proportionally": {
+    "roots": [{ "part": "pro-", "ko": "~에 맞춰" }, { "part": "portion", "ko": "몫" }, { "part": "-al", "ko": "~의" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 pro portione (각자의 몫에 따라)",
+    "story": "각자의 몫(portion)에 맞춰(pro) 함께 늘고 준다 → 비례하여",
+    "family": ["portion", "apportion", "disproportionate"]
+  },
+  "propose": {
+    "roots": [{ "part": "pro-", "ko": "앞으로" }, { "part": "pose", "ko": "놓다" }],
+    "origin": "라틴어 proponere (앞에 내놓다)",
+    "story": "내 생각을 사람들 앞에(pro) 내놓는다(pose) → 제안하다",
+    "hook": "프러포즈 → 결혼하자고 내미는 '프러포즈' → 제안하다",
+    "family": ["compose", "expose", "suppose", "purpose"]
+  },
+  "proprietary": {
+    "roots": [{ "part": "propri", "ko": "자기 것의" }, { "part": "-ary", "ko": "~에 속한" }],
+    "origin": "라틴어 proprius (자기 자신의)",
+    "story": "한 회사가 자기 것(propri)으로 쥐고 밖에 열지 않는 → 독자적인, 사내 전용의",
+    "family": ["property", "proper", "appropriate"]
+  },
+  "protocol": {
+    "roots": [{ "part": "proto-", "ko": "맨 처음" }, { "part": "col", "ko": "풀로 붙이다" }],
+    "origin": "그리스어 prōtokollon (문서 맨 앞에 붙인 장)",
+    "story": "문서 맨 앞(proto)에 붙여(col) 둔 공식 기록이 지킬 규범이 됨 → 약속된 규약, 프로토콜",
+    "family": ["prototype", "protagonist", "collagen"]
+  },
+  "prototype": {
+    "roots": [{ "part": "proto-", "ko": "맨 처음" }, { "part": "type", "ko": "틀, 본" }],
+    "origin": "그리스어 prōtotypon (최초의 본)",
+    "story": "맨 처음(proto) 찍어 보는 본(type) → 시제품, 프로토타입",
+    "family": ["protocol", "typical", "archetype"]
+  },
+  "provide": {
+    "roots": [{ "part": "pro-", "ko": "미리" }, { "part": "vide", "ko": "보다" }],
+    "origin": "라틴어 providere (미리 내다보다)",
+    "story": "필요할 것을 미리(pro) 내다보고(vide) 챙겨 준다 → 제공하다, 주다",
+    "family": ["provision", "vision", "evidence"]
+  },
+  "provider": {
+    "roots": [{ "part": "provid", "ko": "제공하다" }, { "part": "-er", "ko": "~하는 쪽" }],
+    "story": "미리 내다보고 챙겨 주는(provide) 쪽(er) → 제공자, 공급자",
+    "family": ["provision", "supervisor", "vision"]
+  },
+  "proxy": {
+    "origin": "중세 영어 procuracy (대리 행위) 의 축약",
+    "story": "남의 일을 대신 맡아 처리하는 대리인(procuracy)이 줄어든 말 → 대신 전달하다, 대리 서버",
+    "hook": "프록시 → '프록시 서버'가 내 요청을 대신 전해 준다 → 대신 전달하다",
+    "family": ["procure", "procurement", "curator"]
+  },
+  "publication": {
+    "roots": [{ "part": "public", "ko": "대중" }, { "part": "-ation", "ko": "~하는 일" }],
+    "origin": "라틴어 publicare (대중에게 내놓다)",
+    "story": "글을 대중(public) 앞에 내놓는 일(ation) → 발행, 게시, 출판물",
+    "family": ["public", "publicity", "republic"]
+  },
+  "publish": {
+    "roots": [{ "part": "publ", "ko": "대중" }, { "part": "-ish", "ko": "~하게 하다" }],
+    "origin": "라틴어 publicare (대중에게 내놓다)",
+    "story": "글을 대중(public)이 다 보게 내놓는다 → 발행하다, 게시·공개하다",
+    "family": ["public", "publicity", "republic"]
+  },
+  "purchase": {
+    "roots": [{ "part": "pur-", "ko": "끝까지, 앞으로" }, { "part": "chase", "ko": "쫓다" }],
+    "origin": "고대 프랑스어 porchacier (애써 쫓아 얻다)",
+    "story": "갖고 싶은 것을 끝까지(pur) 쫓아(chase) 손에 넣는다 → 구매하다, 구매",
+    "family": ["chase", "catch"]
+  },
+  "purchase-order": {
+    "roots": [{ "part": "purchase", "ko": "구매" }, { "part": "order", "ko": "주문" }],
+    "story": "이만큼 구매(purchase)하겠다고 사는 쪽이 보내는 공식 주문(order) 문서 → 구매 주문서"
+  },
+  "pure": {
+    "origin": "라틴어 purus (깨끗한, 섞이지 않은)",
+    "story": "다른 것이 하나도 섞이지 않고 깨끗한(purus) → 순수한, 깨끗한",
+    "family": ["purify", "purity", "impure"]
+  },
+  "purpose": {
+    "roots": [{ "part": "pur-", "ko": "앞에" }, { "part": "pose", "ko": "놓다" }],
+    "origin": "고대 프랑스어 porposer (앞에 내놓다)",
+    "story": "이루려고 내 앞에(pur) 놓아 둔(pose) 것 → 목적, 의도",
+    "family": ["propose", "suppose", "compose"]
+  },
+  "qualifier": {
+    "roots": [{ "part": "qual", "ko": "어떤 (성질)" }, { "part": "fi", "ko": "만들다" }, { "part": "-er", "ko": "~하는 것" }],
+    "origin": "라틴어 qualificare (어떤 성질을 부여하다)",
+    "story": "'어떤(qual) 것인지' 조건을 달아(fi) 범위를 좁히는 말(er) → 한정어, 단서",
+    "family": ["quality", "qualify", "qualitative"]
+  },
+  "quality": {
+    "roots": [{ "part": "qual", "ko": "어떤 (종류)" }, { "part": "-ity", "ko": "성질" }],
+    "origin": "라틴어 qualitas (어떠함) ← qualis (어떤)",
+    "story": "'어떤(qual) 물건이냐'를 말해 주는 성질(ity) → 품질, 질",
+    "hook": "퀄리티 → '퀄리티가 좋다'의 그 퀄리티 → 품질",
+    "family": ["qualify", "qualitative", "qualification"]
+  },
+  "quarterly": {
+    "roots": [{ "part": "quarter", "ko": "4분의 1" }, { "part": "-ly", "ko": "~마다" }],
+    "origin": "라틴어 quartus (넷째)",
+    "story": "1년을 넷으로 나눈 한 쿼터(quarter)마다(ly) → 분기별의",
+    "family": ["quart", "quartet", "headquarters"]
+  },
+  "query": {
+    "origin": "라틴어 quaere (물어라) ← quaerere (묻다, 찾다)",
+    "story": "'물어라(quaere)' — 데이터베이스에 묻고 찾아 달라는 말 → 질의, 조회하다",
+    "hook": "쿼리 → DB에 날리는 '쿼리' → 질의, 조회하다",
+    "family": ["question", "inquiry", "request", "require"]
+  },
+  "queue": {
+    "origin": "프랑스어 queue (꼬리) ← 라틴어 cauda",
+    "story": "꼬리(queue)처럼 길게 늘어서 차례를 기다리는 줄 → 대기열, 큐",
+    "hook": "큐 → Q 뒤에 u·e·u·e 가 줄 서서 기다린다 → 대기열",
+    "family": ["cue", "coda"]
+  },
+  "quietly": {
+    "roots": [{ "part": "quiet", "ko": "조용한" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 quietus (쉬는, 고요한)",
+    "story": "쉬는 듯 고요하게(quiet), 티 내지 않고(ly) → 조용히, 알리지 않고",
+    "family": ["quit", "quite", "requiem"]
+  },
+  "rag": {
+    "origin": "Retrieval-Augmented Generation",
+    "story": "문서를 검색해(Retrieval) 보강한(Augmented) 뒤 답을 생성(Generation) → 검색 증강 생성"
+  },
+  "raise": {
+    "origin": "고대 노르드어 reisa (일으켜 세우다)",
+    "story": "낮게 있던 것을 위로 일으켜 세운다(reisa) → 올리다, 제기하다",
+    "family": ["rise", "arise", "rear"]
+  },
+  "ramp": {
+    "origin": "프랑스어 rampe (경사로) ← ramper (기어오르다)",
+    "story": "경사로(ramp)를 타고 오르듯 조금씩 끌어올린다 → 점차 늘리다, 점진적 증가",
+    "hook": "램프 → 고속도로 진입 '램프'로 서서히 올라탄다 → 점차 늘리다",
+    "family": ["rampant", "rampage"]
+  },
+  "random": {
+    "origin": "고대 프랑스어 randon (마구 내달림)",
+    "story": "방향 없이 마구 내달리듯(randon) 정해진 것 없이 → 무작위의, 임의의",
+    "hook": "랜덤 → '랜덤 뽑기'의 랜덤 → 무작위의",
+    "family": ["randomize", "randomness"]
+  },
+  "randomly": {
+    "roots": [{ "part": "random", "ko": "무작위의" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "방향 없이 마구 내달리듯(random) 아무거나 고르게(ly) → 무작위로, 임의로",
+    "hook": "랜덤리 → '랜덤으로' 뽑는다 → 무작위로",
+    "family": ["randomize", "randomness"]
+  },
+  "range": {
+    "origin": "고대 프랑스어 range (줄, 열)",
+    "story": "한 줄(range)로 늘어선 이 끝에서 저 끝까지 → 범위, 폭",
+    "family": ["arrange", "rank", "ranger"]
+  },
+  "rank": {
+    "origin": "고대 프랑스어 ranc (줄, 열)",
+    "story": "한 줄(ranc)로 세우면 앞뒤 차례가 생긴다 → 순위를 매기다, 순위",
+    "hook": "랭크 → '랭킹 1위'의 랭크 → 순위",
+    "family": ["range", "arrange"]
+  },
+  "rarely": {
+    "roots": [{ "part": "rare", "ko": "드문" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 rarus (성긴, 드문드문한)",
+    "story": "듬성듬성(rare) 어쩌다 한 번씩만(ly) → 드물게, 거의 ~하지 않는",
+    "hook": "레얼리 → '레어템'처럼 좀처럼 안 나온다 → 드물게",
+    "family": ["rarity", "rarefy"]
+  },
+  "rate": {
+    "origin": "중세 라틴어 rata (셈해 정한 몫) ← reri (셈하다)",
+    "story": "셈해서(rata) 정한 몫, 그 값어치를 따져 매긴다 → 평가하다, 비율, 요금",
+    "family": ["ratio", "ration", "rational"]
+  },
+  "rate-limit": {
+    "roots": [{ "part": "rate", "ko": "속도, 비율" }, { "part": "limit", "ko": "한도" }],
+    "story": "일정 시간에 보내는 요청 속도(rate)에 걸어 둔 한도(limit) → 요청 한도, 속도 제한"
+  },
+  "raw": {
+    "origin": "고대 영어 hrēaw (익히지 않은)",
+    "story": "불에 익히지 않은 날것(raw) 그대로 → 가공하지 않은, 원본 그대로의",
+    "hook": "로 → 카메라 'RAW 파일'은 보정 전 원본 → 가공하지 않은"
+  },
+  "re-enable": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "en-", "ko": "~하게 만들다" }, { "part": "able", "ko": "할 수 있는" }],
+    "story": "꺼 둔 것을 다시(re) 쓸 수 있게(able) 만든다(en) → 다시 켜다, 재활성화하다",
+    "family": ["disable", "ability", "unable"]
+  },
+  "re-gather": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "gather", "ko": "모으다" }],
+    "story": "흩어진 것을 다시(re) 한데 모은다(gather) → 다시 모으다, 다시 수집하다",
+    "family": ["together", "gathering"]
+  },
+  "re-read": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "read", "ko": "읽다" }],
+    "story": "읽은 글을 다시(re) 한 번 읽는다(read) → 다시 읽다",
+    "family": ["reader", "readable", "misread"]
+  },
+  "re-run": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "run", "ko": "실행하다" }],
+    "story": "한 번 돌린 것을 다시(re) 돌린다(run) → 다시 실행하다, 재실행",
+    "family": ["runner", "runtime", "outrun"]
+  },
+  "reach": {
+    "origin": "고대 영어 rǣcan (손을 뻗다)",
+    "story": "손을 쭉 뻗어(rǣcan) 그곳에 가 닿는다 → 닿다, 접근하다, 이르다",
+    "hook": "리치 → 권투의 '리치'는 팔이 닿는 거리 → 닿다",
+    "family": ["outreach", "overreach"]
+  },
+  "reaction": {
+    "roots": [{ "part": "re-", "ko": "되받아" }, { "part": "act", "ko": "움직이다, 하다" }, { "part": "-ion", "ko": "~하는 것" }],
+    "origin": "라틴어 re- (되받아) + actio (행함)",
+    "story": "자극을 되받아(re) 움직이는(act) 것(ion) → 반응",
+    "hook": "리액션 → 예능의 '리액션'이 그 리액션 → 반응",
+    "family": ["action", "active", "interact", "agent"]
+  },
+  "read-only": {
+    "roots": [{ "part": "read", "ko": "읽다" }, { "part": "only", "ko": "오직 ~만" }],
+    "story": "오직(only) 읽기(read)만 되고 고칠 수는 없는 → 읽기 전용의"
+  },
+  "readable": {
+    "roots": [{ "part": "read", "ko": "읽다" }, { "part": "-able", "ko": "할 수 있는" }],
+    "story": "막힘 없이 읽을(read) 수 있는(able) → 읽기 쉬운, 읽을 수 있는",
+    "family": ["reader", "misread", "proofread"]
+  },
+  "recall": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "call", "ko": "부르다" }],
+    "story": "묻어 둔 기억을 다시(re) 불러낸다(call), 찾을 것 중 불러낸 비율 → 떠올리다, 재현율",
+    "hook": "리콜 → 판 물건을 도로 불러들이는 '리콜'처럼 기억을 불러낸다 → 떠올리다",
+    "family": ["callback", "caller"]
+  },
+  "receiver": {
+    "roots": [{ "part": "re-", "ko": "되, 도로" }, { "part": "ceiv", "ko": "잡다, 받다" }, { "part": "-er", "ko": "~하는 쪽" }],
+    "origin": "라틴어 recipere (도로 받아 쥐다)",
+    "story": "건너온 것을 받아(re) 쥐는(ceiv) 쪽(er) → 받는 사람, 수신기",
+    "hook": "리시버 → 배구에서 서브를 받아 내는 '리시버' → 받는 사람",
+    "family": ["receipt", "reception", "perceive"]
+  },
+  "recent": {
+    "origin": "라틴어 recens (갓 생긴, 신선한)",
+    "story": "갓(recens) 생겨 아직 얼마 지나지 않은 → 최근의, 근래의"
+  },
+  "recently": {
+    "roots": [{ "part": "recent", "ko": "최근의" }, { "part": "-ly", "ko": "~하게, ~에" }],
+    "origin": "라틴어 recens (갓 생긴, 신선한)",
+    "story": "갓 생긴(recent) 일처럼 얼마 지나지 않은 때에(ly) → 최근에, 얼마 전에"
+  },
+  "recheck": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "check", "ko": "확인하다" }],
+    "story": "확인한 것을 다시(re) 한 번 확인한다(check) → 다시 확인하다, 재점검하다",
+    "family": ["checklist", "checkpoint", "checkout"]
+  },
+  "recommend": {
+    "roots": [{ "part": "re-", "ko": "거듭 (강조)" }, { "part": "commend", "ko": "맡기다, 칭찬하다" }],
+    "origin": "중세 라틴어 recommendare ← commendare (맡기다)",
+    "story": "믿고 맡길(commend) 만하다고 거듭(re) 말해 준다 → 권하다, 추천하다",
+    "family": ["commend", "command", "mandate", "demand"]
+  },
+  "recompute": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "com-", "ko": "함께" }, { "part": "pute", "ko": "셈하다" }],
+    "origin": "라틴어 computare (한데 모아 셈하다)",
+    "story": "한데(com) 모아 셈한(pute) 값을 다시(re) 셈한다 → 다시 계산하다, 재계산하다",
+    "family": ["computer", "computation", "dispute"]
+  },
+  "record": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "cord", "ko": "마음" }],
+    "origin": "라틴어 recordari (마음에 다시 떠올리다)",
+    "story": "나중에 마음(cord)에 다시(re) 떠올릴 수 있게 적어 둔다 → 기록, 기록하다",
+    "hook": "레코드 → 음반 '레코드'는 소리를 기록한 판 → 기록",
+    "family": ["accord", "cordial", "courage"]
+  },
+  "recovery": {
+    "roots": [{ "part": "recover", "ko": "되찾다" }, { "part": "-y", "ko": "~하는 일" }],
+    "origin": "라틴어 recuperare (되찾다)",
+    "story": "잃었던 상태를 도로 찾아오는(recover) 일(y) → 복구, 회복",
+    "family": ["recuperate", "recoverable"]
+  },
+  "red-team": {
+    "roots": [{ "part": "red", "ko": "빨강 (적군 색)" }, { "part": "team", "ko": "팀" }],
+    "story": "모의전에서 적군 역을 맡아 쳐들어오는 빨간(red) 팀(team) → 일부러 공격해 약점을 찾는 팀, 레드팀"
+  },
+  "redirect": {
+    "roots": [{ "part": "re-", "ko": "다시" }, { "part": "direct", "ko": "방향을 잡다" }],
+    "origin": "라틴어 dirigere (곧게 이끌다)",
+    "story": "가던 방향(direct)을 다시(re) 잡아 딴 데로 보낸다 → 다른 곳으로 돌리다",
+    "hook": "리다이렉트 → 웹 주소 '리다이렉트'로 딴 페이지에 간다 → 다른 곳으로 돌리다",
+    "family": ["direction", "director", "indirect"]
+  }
+}

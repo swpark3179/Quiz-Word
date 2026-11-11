@@ -1,0 +1,511 @@
+[
+ {
+  "id": "equip",
+  "word": "equip",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪˈkwɪp",
+  "meaning": "(도구·기능을) 갖추게 하다 — be equipped with: ~을 갖추다",
+  "level": 4
+ },
+ {
+  "id": "error",
+  "word": "error",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈerər",
+  "meaning": "① 오류, 에러 ② (사람의) 실수, 잘못",
+  "level": 2
+ },
+ {
+  "id": "error-handling",
+  "word": "error-handling",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈerər ˌhændlɪŋ",
+  "meaning": "오류 처리 (방식)",
+  "level": 5
+ },
+ {
+  "id": "escalate",
+  "word": "escalate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈeskəleɪt",
+  "meaning": "(상위 담당자에게) 넘기다, 단계를 올려 처리하다",
+  "level": 6
+ },
+ {
+  "id": "escape",
+  "word": "escape",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ɪˈskeɪp",
+  "meaning": "① (특수 문자를) 이스케이프하다 — 문법 기호로 해석되지 않게 바꿔 적다 ② 벗어나다, 빠져나가다",
+  "level": 3
+ },
+ {
+  "id": "essentially",
+  "word": "essentially",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ɪˈsenʃəli",
+  "meaning": "① 사실상, 거의 ② 본질적으로, 근본적으로",
+  "level": 4
+ },
+ {
+  "id": "estimate",
+  "word": "estimate",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈestɪmət",
+  "meaning": "추정(하다), 어림(잡다)",
+  "level": 4
+ },
+ {
+  "id": "evaluate",
+  "word": "evaluate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪˈvæljueɪt",
+  "meaning": "평가하다 — evaluation(eval): 평가, 평가 세트 / evaluator: 평가자, 평가기",
+  "level": 4
+ },
+ {
+  "id": "evaluator-optimizer",
+  "word": "evaluator-optimizer",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ɪˌvæljueɪtər ˈɑːptɪmaɪzər",
+  "meaning": "평가자-최적화자 패턴 — 한 LLM 이 만들고 다른 LLM 이 평가·피드백하며 반복해 다듬는 워크플로",
+  "level": 6
+ },
+ {
+  "id": "event",
+  "word": "event",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ɪˈvent",
+  "meaning": "① (시스템) 이벤트 — 프로그램에서 발생해 처리 대상이 되는 일 ② 사건, 행사",
+  "level": 2
+ },
+ {
+  "id": "eventually",
+  "word": "eventually",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ɪˈventʃuəli",
+  "meaning": "결국, 마침내",
+  "level": 3
+ },
+ {
+  "id": "evidence",
+  "word": "evidence",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈevɪdəns",
+  "meaning": "근거, 증거",
+  "level": 3
+ },
+ {
+  "id": "exact",
+  "word": "exact",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ɪɡˈzækt",
+  "meaning": "정확한, 바로 그 — exactly: 정확히",
+  "level": 3
+ },
+ {
+  "id": "exceed",
+  "word": "exceed",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪkˈsiːd",
+  "meaning": "(한도를) 넘다, 초과하다",
+  "level": 4
+ },
+ {
+  "id": "excessive",
+  "word": "excessive",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ɪkˈsesɪv",
+  "meaning": "지나친, 과도한",
+  "level": 5
+ },
+ {
+  "id": "exchange",
+  "word": "exchange",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ɪksˈtʃeɪndʒ",
+  "meaning": "① (말을) 주고받기, 한 차례 대화 ② (상품) 교환 ③ 주고받다, 교환하다",
+  "level": 2
+ },
+ {
+  "id": "exclude",
+  "word": "exclude",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪkˈskluːd",
+  "meaning": "제외하다, 빼다",
+  "level": 4
+ },
+ {
+  "id": "exclusively",
+  "word": "exclusively",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ɪkˈskluːsɪvli",
+  "meaning": "오로지, ~만",
+  "level": 5
+ },
+ {
+  "id": "execute",
+  "word": "execute",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈeksɪkjuːt",
+  "meaning": "실행하다",
+  "level": 5
+ },
+ {
+  "id": "exemplar",
+  "word": "exemplar",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ɪɡˈzemplɑːr",
+  "meaning": "본보기, 모범 예시",
+  "level": 6
+ },
+ {
+  "id": "exfiltration",
+  "word": "exfiltration",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌeksfɪlˈtreɪʃn",
+  "meaning": "(데이터) 유출 — 내부 데이터를 몰래 외부로 빼돌리는 것",
+  "level": 6
+ },
+ {
+  "id": "exist",
+  "word": "exist",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪɡˈzɪst",
+  "meaning": "① 존재하다, 있다 ② (existing) 기존의, 현재 있는",
+  "level": 2
+ },
+ {
+  "id": "exit",
+  "word": "exit",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈeɡzɪt",
+  "meaning": "(프로그램이) 종료하다 / 종료 — exit code: 종료 코드",
+  "level": 2
+ },
+ {
+  "id": "expand",
+  "word": "expand",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪkˈspænd",
+  "meaning": "넓히다, 확장하다, (풀어서) 늘리다",
+  "level": 3
+ },
+ {
+  "id": "expect",
+  "word": "expect",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪkˈspekt",
+  "meaning": "① (입력을) 받도록 되어 있다 ② 예상하다, 기대하다",
+  "level": 2
+ },
+ {
+  "id": "expire",
+  "word": "expire",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪkˈspaɪər",
+  "meaning": "만료되다 — 유효 기간이 끝나다 (expiration: 만료)",
+  "level": 4
+ },
+ {
+  "id": "explain",
+  "word": "explain",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪkˈspleɪn",
+  "meaning": "① 설명하다 ② (현상의) 원인이 되다, 이유를 밝혀 주다",
+  "level": 2
+ },
+ {
+  "id": "explanation",
+  "word": "explanation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌekspləˈneɪʃn",
+  "meaning": "① 설명 ② (원인에 대한) 해명, 이유",
+  "level": 2
+ },
+ {
+  "id": "explicit",
+  "word": "explicit",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ɪkˈsplɪsɪt",
+  "meaning": "명시적인 — 분명하게 말로 드러낸",
+  "level": 5
+ },
+ {
+  "id": "explore",
+  "word": "explore",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪkˈsplɔːr",
+  "meaning": "탐색하다, 두루 살펴보다",
+  "level": 3
+ },
+ {
+  "id": "export",
+  "word": "export",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ɪkˈspɔːrt",
+  "meaning": "① (데이터·환경 변수를) 내보내다 ② 내보내기(한 파일) ③ 수출(하다)",
+  "level": 3
+ },
+ {
+  "id": "extend",
+  "word": "extend",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪkˈstend",
+  "meaning": "확장하다, 늘리다 — extension: 확장 (기능)",
+  "level": 3
+ },
+ {
+  "id": "extended-thinking",
+  "word": "extended thinking",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ɪkˌstendɪd ˈθɪŋkɪŋ",
+  "meaning": "확장 사고 — 모델이 답하기 전에 단계별 추론(thinking 블록)을 먼저 만들게 하는 기능 (budget_tokens 로 한도 지정)",
+  "level": 6
+ },
+ {
+  "id": "external",
+  "word": "external",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ɪkˈstɜːrnl",
+  "meaning": "외부의, 바깥의",
+  "level": 4
+ },
+ {
+  "id": "extra",
+  "word": "extra",
+  "pos": [
+   "형용사",
+   "부사",
+   "명사"
+  ],
+  "ipa": "ˈekstrə",
+  "meaning": "① 추가의, 여분의 ② 특별히, 더 ③ 추가분, 추가 요금",
+  "level": 2
+ },
+ {
+  "id": "extract",
+  "word": "extract",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪkˈstrækt",
+  "meaning": "(필요한 부분을) 뽑아내다, 추출하다",
+  "level": 4
+ },
+ {
+  "id": "extremely",
+  "word": "extremely",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ɪkˈstriːmli",
+  "meaning": "극도로, 매우",
+  "level": 3
+ },
+ {
+  "id": "factor",
+  "word": "factor",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈfæktər",
+  "meaning": "요인, 요소",
+  "level": 3
+ },
+ {
+  "id": "fail-closed",
+  "word": "fail-closed",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌfeɪl ˈkloʊzd",
+  "meaning": "실패 시 차단(하는) — 오류·불확실할 때 기본으로 막는 방식",
+  "level": 6
+ },
+ {
+  "id": "failing-test",
+  "word": "failing-test",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌfeɪlɪŋ ˈtest",
+  "meaning": "실패한 테스트의 — 통과하지 못한 테스트에 관한",
+  "level": 5
+ },
+ {
+  "id": "failure",
+  "word": "failure",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈfeɪljər",
+  "meaning": "실패, 장애 — 작업·호출이 제대로 되지 않은 것",
+  "level": 2
+ },
+ {
+  "id": "fall",
+  "word": "fall",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "fɔːl",
+  "meaning": "① 떨어지다, 내려가다 ② (범위·분류에) 속하다, 해당하다 (fall outside: 벗어나다) ③ 하락 ④ 가을",
+  "level": 2
+ },
+ {
+  "id": "fall-below",
+  "word": "fall below",
+  "pos": [
+   "동사구"
+  ],
+  "ipa": "fɔːl bɪˈloʊ",
+  "meaning": "(기준) 아래로 떨어지다",
+  "level": 3
+ },
+ {
+  "id": "fallback",
+  "word": "fallback",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈfɔːlbæk",
+  "meaning": "대비책 — 원래 방법이 실패했을 때 쓰는 대체 수단",
+  "level": 6
+ },
+ {
+  "id": "false-positive",
+  "word": "false positive",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˌfɔːls ˈpɑːzətɪv",
+  "meaning": "오탐 — 문제가 아닌데 문제라고 잘못 판단한 것",
+  "level": 6
+ },
+ {
+  "id": "faq",
+  "word": "FAQ",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌef.eɪˈkjuː",
+  "meaning": "자주 묻는 질문 (Frequently Asked Questions)",
+  "level": 4
+ },
+ {
+  "id": "fault",
+  "word": "fault",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "fɔːlt",
+  "meaning": "잘못, 결함 — at fault: 원인이 되는, 책임이 있는",
+  "level": 3
+ },
+ {
+  "id": "federation",
+  "word": "federation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌfedəˈreɪʃn",
+  "meaning": "페더레이션(연동) — 외부 ID 공급자가 확인한 신원을 믿고 받아들이도록 연결하는 방식 (Workload Identity Federation)",
+  "level": 6
+ },
+ {
+  "id": "feed",
+  "word": "feed",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "fiːd",
+  "meaning": "(데이터를) 넣어 주다, 공급하다 / (뉴스) 피드",
+  "level": 2
+ },
+ {
+  "id": "feedback",
+  "word": "feedback",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈfiːdbæk",
+  "meaning": "① 피드백, 의견 ② (오류 등의) 결과 정보, 되먹임",
+  "level": 3
+ }
+]

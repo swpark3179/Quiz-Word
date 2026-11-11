@@ -1,0 +1,290 @@
+{
+  "equip": {
+    "origin": "고대 노르드어 skipa (배를 채비하다) → 프랑스어 équiper",
+    "story": "항해에 나서기 전 배(ship)에 필요한 장비를 싣는다 → (도구·기능을) 갖추게 하다",
+    "hook": "이큅 → 게임에서 장비를 '이큅(장착)'한다 → 갖추게 하다",
+    "family": ["equipment", "ship", "skipper"]
+  },
+  "error": {
+    "roots": [{ "part": "err", "ko": "헤매다, 길을 잃다" }, { "part": "-or", "ko": "~함" }],
+    "origin": "라틴어 error (헤맴) ← errare (헤매다)",
+    "story": "바른 길에서 벗어나 헤맨(err) 것 → 오류, 실수",
+    "hook": "에러 → 화면에 뜨는 '에러' 그대로 → 오류",
+    "family": ["err", "erratic", "erroneous"]
+  },
+  "error-handling": {
+    "roots": [{ "part": "error", "ko": "오류" }, { "part": "handling", "ko": "다루기, 처리" }],
+    "story": "오류(error)가 났을 때 손(hand)으로 받아 내듯 다루는 방식(handling) → 오류 처리",
+    "family": ["handle", "handler", "erroneous"]
+  },
+  "escalate": {
+    "roots": [{ "part": "escal", "ko": "사다리, 계단(라틴어 scala)" }, { "part": "-ate", "ko": "~하다" }],
+    "origin": "escalator (에스컬레이터)에서 거꾸로 만든 동사",
+    "story": "에스컬레이터를 태우듯 한 단계 위 담당자에게 올려 보낸다 → (상위로) 넘기다",
+    "hook": "에스컬레이트 → 에스컬레이터 타고 윗선으로 → 넘기다, 단계를 올리다",
+    "family": ["escalator", "scale", "escalation"]
+  },
+  "escape": {
+    "roots": [{ "part": "es-", "ko": "밖으로(ex-)" }, { "part": "cape", "ko": "망토" }],
+    "origin": "후기 라틴어 excappare (망토를 벗고 빠져나가다)",
+    "story": "붙잡힌 망토(cape)만 남기고 밖으로(es) 빠져나간다 → 벗어나다, 이스케이프하다",
+    "hook": "이스케이프 → 키보드 Esc(이스케이프) 키로 빠져나간다 → 벗어나다",
+    "family": ["cape", "cap", "escapade"]
+  },
+  "essentially": {
+    "roots": [{ "part": "essent", "ko": "본질(essence ← esse 있다)" }, { "part": "-ial", "ko": "~의" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "겉을 걷어 내고 본질(essence)만 놓고 보면(ly) → 본질적으로, 사실상",
+    "family": ["essence", "entity", "quintessential"]
+  },
+  "estimate": {
+    "roots": [{ "part": "estim", "ko": "값을 매기다" }, { "part": "-ate", "ko": "~하다" }],
+    "origin": "라틴어 aestimare (값을 매기다)",
+    "story": "재 보지 않고 대략 이쯤이라고 값을 매겨(estim) 본다 → 추정(하다), 어림(잡다)",
+    "family": ["esteem", "underestimate", "overestimate"]
+  },
+  "evaluate": {
+    "roots": [{ "part": "e-", "ko": "밖으로" }, { "part": "valu", "ko": "가치" }, { "part": "-ate", "ko": "~하다" }],
+    "origin": "프랑스어 évaluer (가치를 매기다)",
+    "story": "얼마나 좋은지 가치(valu)를 밖으로(e) 끌어내 매긴다 → 평가하다",
+    "family": ["value", "valid", "valuable"]
+  },
+  "evaluator-optimizer": {
+    "roots": [{ "part": "evaluator", "ko": "평가자" }, { "part": "optimizer", "ko": "최적화자" }],
+    "story": "한쪽이 만들고 평가자(evaluator)가 짚으면 다시 다듬기(optimizer)를 반복 → 평가자-최적화자 패턴",
+    "family": ["evaluate", "optimal", "optimum"]
+  },
+  "event": {
+    "roots": [{ "part": "e-", "ko": "밖으로" }, { "part": "vent", "ko": "오다" }],
+    "origin": "라틴어 eventus (일어난 일)",
+    "story": "밖으로(e) 나와(vent) 눈앞에 벌어진 일 → 사건, 행사, (시스템) 이벤트",
+    "hook": "이벤트 → '클릭 이벤트', 매장 '이벤트' → 일어난 일, 행사",
+    "family": ["invent", "prevent", "venue", "adventure"]
+  },
+  "eventually": {
+    "roots": [{ "part": "e-", "ko": "밖으로" }, { "part": "vent", "ko": "오다" }, { "part": "-ual", "ko": "~의" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "돌고 돌아 끝내 결과가 밖으로(e) 나오게(vent) 되어 → 결국, 마침내",
+    "family": ["event", "advent", "convention", "prevent"]
+  },
+  "evidence": {
+    "roots": [{ "part": "e-", "ko": "밖으로" }, { "part": "vid", "ko": "보다" }, { "part": "-ence", "ko": "~인 것" }],
+    "origin": "라틴어 evidentia (뻔히 보임)",
+    "story": "밖으로(e) 훤히 보이는(vid) 것(ence) → 근거, 증거",
+    "family": ["evident", "video", "vision", "provide"]
+  },
+  "exact": {
+    "roots": [{ "part": "ex-", "ko": "끝까지" }, { "part": "act", "ko": "몰다, 하다" }],
+    "origin": "라틴어 exigere (끝까지 몰다, 정밀히 재다) → exactus",
+    "story": "끝까지(ex) 몰아(act) 한 치 어긋남 없이 맞춘 → 정확한, 바로 그",
+    "family": ["act", "exam", "agent"]
+  },
+  "exceed": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "ceed", "ko": "가다" }],
+    "origin": "라틴어 excedere (넘어가다)",
+    "story": "정해진 선 밖으로(ex) 넘어간다(ceed) → 넘다, 초과하다",
+    "family": ["proceed", "succeed", "excess", "recede"]
+  },
+  "excessive": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "cess", "ko": "가다" }, { "part": "-ive", "ko": "~한" }],
+    "story": "적당한 선 밖으로(ex) 넘어가(cess) 버린(ive) → 지나친, 과도한",
+    "family": ["exceed", "excess", "access", "process"]
+  },
+  "exchange": {
+    "roots": [{ "part": "ex-", "ko": "밖으로, 내주고" }, { "part": "change", "ko": "바꾸다" }],
+    "origin": "고대 프랑스어 eschangier (맞바꾸다)",
+    "story": "내 것을 내주고(ex) 네 것과 바꾼다(change), 말도 한 번씩 오간다 → 교환, 주고받기",
+    "hook": "익스체인지 → 공항 '머니 익스체인지'(환전소) → 교환",
+    "family": ["change", "interchange", "changeover"]
+  },
+  "exclude": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "clude", "ko": "닫다" }],
+    "origin": "라틴어 excludere (밖에 두고 닫다)",
+    "story": "밖에(ex) 세워 두고 문을 닫는다(clude) → 제외하다, 빼다",
+    "family": ["include", "conclude", "close", "exclusive"]
+  },
+  "exclusively": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "clus", "ko": "닫다" }, { "part": "-ive", "ko": "~하는" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "나머지는 밖에(ex) 두고 문을 닫아(clus) 이것 하나만으로(ly) → 오로지, ~만",
+    "family": ["exclude", "include", "close", "seclusion"]
+  },
+  "execute": {
+    "roots": [{ "part": "ex-", "ko": "끝까지" }, { "part": "ecute", "ko": "따라가다(sequi)" }],
+    "origin": "라틴어 exsequi (끝까지 따라가다)",
+    "story": "지시를 끝까지(ex) 따라가(ecute) 그대로 해낸다 → 실행하다",
+    "family": ["sequence", "consecutive", "executive", "prosecute"]
+  },
+  "exemplar": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "empl", "ko": "집다, 꺼내다" }, { "part": "-ar", "ko": "~인 것" }],
+    "origin": "라틴어 exemplar (본보기) ← eximere (꺼내다)",
+    "story": "여럿 가운데 밖으로(ex) 집어낸(empl) 견본 → 본보기, 모범 예시",
+    "family": ["example", "sample", "exemplify", "exempt"]
+  },
+  "exfiltration": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "filtr", "ko": "스며 지나가다(filter)" }, { "part": "-ation", "ko": "~하는 일" }],
+    "story": "침투(infiltration)의 반대, 밖으로(ex) 몰래 스며 나가게(filtr) 빼낸다 → (데이터) 유출",
+    "family": ["infiltration", "infiltrate", "filter"]
+  },
+  "exist": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "ist", "ko": "서다(sistere)" }],
+    "origin": "라틴어 exsistere (밖으로 나와 서다)",
+    "story": "밖으로(ex) 나와 서(ist) 있어 눈에 보인다 → 존재하다, 있다",
+    "family": ["insist", "resist", "consist", "assist"]
+  },
+  "exit": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "it", "ko": "가다" }],
+    "origin": "라틴어 exire (밖으로 나가다)",
+    "story": "밖으로(ex) 나간다(it), 프로그램이 할 일을 마치고 나간다 → 종료하다, 종료",
+    "hook": "엑시트 → 비상구 초록 표지판 'EXIT' → 나가다, 종료",
+    "family": ["transit", "initial", "circuit"]
+  },
+  "expand": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "pand", "ko": "펼치다" }],
+    "origin": "라틴어 expandere (펼쳐 넓히다)",
+    "story": "접힌 것을 밖으로(ex) 활짝 펼친다(pand) → 넓히다, 확장하다, 늘리다",
+    "family": ["expanse", "expansive", "spawn"]
+  },
+  "expect": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "pect", "ko": "보다(spectare)" }],
+    "origin": "라틴어 exspectare (밖을 내다보며 기다리다)",
+    "story": "올 것을 밖을(ex) 내다보며(pect) 기다린다 → 예상하다, (입력을) 받도록 되어 있다",
+    "family": ["inspect", "respect", "spectator", "prospect"]
+  },
+  "expire": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "pire", "ko": "숨 쉬다(spirare)" }],
+    "origin": "라틴어 exspirare (숨을 내쉬다, 숨이 다하다)",
+    "story": "마지막 숨(pire)을 밖으로(ex) 내쉬고 수명이 끝난다 → 만료되다",
+    "family": ["inspire", "spirit", "respiration", "conspire"]
+  },
+  "explain": {
+    "roots": [{ "part": "ex-", "ko": "쫙, 완전히" }, { "part": "plain", "ko": "평평한" }],
+    "origin": "라틴어 explanare (평평하게 펴다)",
+    "story": "울퉁불퉁 꼬인 것을 평평하게(plain) 쫙(ex) 펴 보인다 → 설명하다, 이유를 밝혀 주다",
+    "family": ["plain", "plane", "plan"]
+  },
+  "explanation": {
+    "roots": [{ "part": "ex-", "ko": "쫙, 완전히" }, { "part": "plan", "ko": "평평한" }, { "part": "-ation", "ko": "~한 것" }],
+    "story": "알기 쉽게 평평히(plan) 펴(ex) 놓은 말(ation) → 설명, 해명",
+    "family": ["explain", "plain", "plane"]
+  },
+  "explicit": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "plic", "ko": "접다" }, { "part": "-it", "ko": "~된" }],
+    "origin": "라틴어 explicitus (펼쳐진)",
+    "story": "접힌(plic) 것을 밖으로(ex) 펼쳐 숨김없이 드러낸 → 명시적인",
+    "family": ["implicit", "complicate", "duplicate", "explicate"]
+  },
+  "explore": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "plore", "ko": "외치다" }],
+    "origin": "라틴어 explorare (정찰하다, 살피다)",
+    "story": "사냥꾼이 외치며(plore) 밖으로(ex) 나가 숲을 뒤진다 → 탐색하다, 두루 살펴보다",
+    "hook": "익스플로어 → 웹을 돌아다니던 '익스플로러' → 탐색하다",
+    "family": ["deplore", "implore"]
+  },
+  "export": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "port", "ko": "나르다" }],
+    "origin": "라틴어 exportare (밖으로 실어 나르다)",
+    "story": "안에 있던 것을 밖으로(ex) 실어 나른다(port) → 내보내다, 수출하다",
+    "family": ["import", "transport", "portable", "support"]
+  },
+  "extend": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "tend", "ko": "뻗다" }],
+    "origin": "라틴어 extendere (밖으로 뻗다)",
+    "story": "밖으로(ex) 쭉 뻗어(tend) 더 길고 넓게 한다 → 확장하다, 늘리다",
+    "family": ["tend", "attend", "intend", "tension"]
+  },
+  "extended-thinking": {
+    "roots": [{ "part": "extended", "ko": "늘린, 확장된" }, { "part": "thinking", "ko": "사고" }],
+    "story": "답하기 전 생각(thinking)하는 과정을 길게 늘려(extended) 단계별로 추론한다 → 확장 사고",
+    "family": ["extend", "extension", "rethink"]
+  },
+  "external": {
+    "roots": [{ "part": "extern", "ko": "바깥(라틴어 externus)" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 externus (바깥의)",
+    "story": "울타리 바깥(extern) 쪽의(al) → 외부의, 바깥의",
+    "family": ["exterior", "extreme", "extra"]
+  },
+  "extra": {
+    "origin": "라틴어 extra (바깥에, ~을 넘어서)",
+    "story": "정해진 몫 바깥(extra)에 더 얹은 것 → 추가의, 여분의, 추가분",
+    "hook": "엑스트라 → 주연 밖의 영화 '엑스트라', 치즈 '엑스트라' → 추가의",
+    "family": ["extraordinary", "external", "extreme", "exterior"]
+  },
+  "extract": {
+    "roots": [{ "part": "ex-", "ko": "밖으로" }, { "part": "tract", "ko": "끌다" }],
+    "origin": "라틴어 extrahere (끌어내다)",
+    "story": "필요한 것만 밖으로(ex) 끌어(tract) 낸다 → 뽑아내다, 추출하다",
+    "family": ["attract", "contract", "tractor", "subtract"]
+  },
+  "extremely": {
+    "roots": [{ "part": "extreme", "ko": "가장 바깥의, 극단의" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 extremus (가장 바깥의)",
+    "story": "가장 바깥(extreme) 끝까지 간 정도로(ly) → 극도로, 매우",
+    "hook": "익스트림리 → '익스트림 스포츠'처럼 극한까지 → 극도로",
+    "family": ["extremity", "exterior", "external", "extra"]
+  },
+  "factor": {
+    "roots": [{ "part": "fact", "ko": "만들다, 하다" }, { "part": "-or", "ko": "~하는 것" }],
+    "origin": "라틴어 factor (만드는 자)",
+    "story": "결과를 만들어(fact) 내는 것(or) → 요인, 요소",
+    "family": ["factory", "fact", "manufacture", "effect"]
+  },
+  "fail-closed": {
+    "roots": [{ "part": "fail", "ko": "실패하다" }, { "part": "closed", "ko": "닫힌" }],
+    "story": "실패하면(fail) 문을 닫은(closed) 채로 둔다, 모르겠으면 일단 막는다 → 실패 시 차단(하는)",
+    "family": ["fail-safe", "failover", "failure"]
+  },
+  "failing-test": {
+    "roots": [{ "part": "failing", "ko": "실패하는" }, { "part": "test", "ko": "테스트" }],
+    "story": "통과하지 못하고 실패하는(failing) 테스트(test)에 관한 → 실패한 테스트의"
+  },
+  "failure": {
+    "roots": [{ "part": "fail", "ko": "어긋나다, 실패하다" }, { "part": "-ure", "ko": "~한 것, 상태" }],
+    "origin": "라틴어 fallere (어긋나다, 속이다) → 프랑스어 faillir",
+    "story": "기대에 못 미치고 어긋난(fail) 것(ure) → 실패, 장애",
+    "family": ["false", "fault", "fallacy", "default"]
+  },
+  "fall": {
+    "origin": "고대 영어 feallan (떨어지다)",
+    "story": "위에서 아래로 떨어져 어느 칸 안에 놓인다, 잎이 지는 철도 fall → 떨어지다, 속하다, 가을",
+    "hook": "폴 → 눈이 폴폴 떨어져 내린다 → 떨어지다",
+    "family": ["waterfall", "downfall", "pitfall"]
+  },
+  "fall-below": {
+    "roots": [{ "part": "fall", "ko": "떨어지다" }, { "part": "below", "ko": "~ 아래로" }],
+    "story": "기준선을 지나 그 아래로(below) 뚝 떨어진다(fall) → (기준) 아래로 떨어지다"
+  },
+  "fallback": {
+    "roots": [{ "part": "fall", "ko": "물러나다, 떨어지다" }, { "part": "back", "ko": "뒤로" }],
+    "story": "앞이 막히면 뒤로(back) 물러나(fall) 기댈 자리 → 대비책, 대체 수단",
+    "family": ["pitfall", "backup", "rollback"]
+  },
+  "false-positive": {
+    "roots": [{ "part": "false", "ko": "틀린, 거짓의" }, { "part": "positive", "ko": "양성, '있다'는 판정" }],
+    "story": "문제가 '있다(positive)'고 했는데 그 판정이 틀린(false) 것 → 오탐"
+  },
+  "faq": {
+    "origin": "Frequently Asked Questions",
+    "story": "자주(Frequently) 묻는(Asked) 질문(Questions)을 모아 둔 것 → 자주 묻는 질문"
+  },
+  "fault": {
+    "origin": "라틴어 fallere (어긋나다, 속이다) → 고대 프랑스어 faute",
+    "story": "있어야 할 것이 빠지고 어긋난(fallere) 데 → 잘못, 결함",
+    "hook": "폴트 → 테니스에서 서브가 빗나가면 '폴트!' → 잘못, 결함",
+    "family": ["fail", "false", "default", "fallacy"]
+  },
+  "federation": {
+    "roots": [{ "part": "feder", "ko": "맹약, 동맹(라틴어 foedus)" }, { "part": "-ation", "ko": "~하는 일" }],
+    "origin": "라틴어 foederare (맹약으로 잇다) ← foedus",
+    "story": "서로 믿기로 맹약(feder)을 맺어 하나로 잇는 일(ation) → 페더레이션(연동)",
+    "family": ["federal", "confederate", "confederation"]
+  },
+  "feed": {
+    "origin": "고대 영어 fēdan (먹이다), food와 한 뿌리",
+    "story": "먹이(food)를 입에 넣어 주듯 데이터를 넣어 준다 → 넣어 주다, 공급하다, 피드",
+    "hook": "피드 → SNS '피드'는 새 글을 계속 떠먹여 주는 화면 → 공급하다, 피드",
+    "family": ["food", "fodder", "foster"]
+  },
+  "feedback": {
+    "roots": [{ "part": "feed", "ko": "넣어 주다, 먹이다" }, { "part": "back", "ko": "되돌려" }],
+    "story": "나온 결과를 되돌려(back) 다시 넣어 준다(feed) → 피드백, 되먹임",
+    "family": ["feed", "food", "callback"]
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "integer": {
+    "roots": [{ "part": "in-", "ko": "아닌" }, { "part": "teg", "ko": "손대다" }],
+    "origin": "라틴어 integer (손대지 않은, 온전한)",
+    "story": "쪼개려고 손대지(teg) 않은(in) 온전한 수 → 정수",
+    "family": ["integrate", "integrity", "entire", "intact"]
+  },
+  "integration": {
+    "roots": [{ "part": "integr", "ko": "온전한" }, { "part": "-ation", "ko": "~하는 일" }],
+    "origin": "라틴어 integrare (온전하게 하다)",
+    "story": "따로 놀던 것들을 온전한(integr) 하나로 잇는 일(ation) → 연동, 통합",
+    "family": ["integer", "integrity", "integral", "entire"]
+  },
+  "intelligence": {
+    "roots": [{ "part": "intel-", "ko": "사이에서" }, { "part": "lig", "ko": "고르다, 읽다" }, { "part": "-ence", "ko": "~함(명사)" }],
+    "origin": "라틴어 intelligere (사이에서 골라 이해하다)",
+    "story": "여럿 사이에서(intel) 알맞은 것을 골라내는(lig) 힘 → 지능, (분석된) 정보",
+    "hook": "인텔리전스 → 'AI'의 I 가 바로 인텔리전스 → 지능",
+    "family": ["intellect", "select", "collect", "elect"]
+  },
+  "interact": {
+    "roots": [{ "part": "inter-", "ko": "서로" }, { "part": "act", "ko": "하다, 움직이다" }],
+    "story": "서로(inter) 주고받으며 움직인다(act) → 상호 작용하다",
+    "family": ["action", "react", "transact", "active"]
+  },
+  "intercept": {
+    "roots": [{ "part": "inter-", "ko": "사이에서" }, { "part": "cept", "ko": "잡다" }],
+    "origin": "라틴어 intercipere (중간에서 붙잡다)",
+    "story": "가는 길 사이(inter)에서 낚아챈다(cept) → 가로채다",
+    "hook": "인터셉트 → 미식축구에서 패스를 끊는 '인터셉트' → 가로채다",
+    "family": ["accept", "except", "concept", "receive"]
+  },
+  "interleaved-thinking": {
+    "roots": [{ "part": "inter-", "ko": "사이에" }, { "part": "leaved", "ko": "낱장을 끼운" }, { "part": "thinking", "ko": "사고" }],
+    "story": "책장 사이(inter)에 낱장(leaf)을 끼우듯 도구 호출 사이에 사고를 끼운다 → 인터리브드 사고",
+    "family": ["leaf", "leaflet", "interlace"]
+  },
+  "intermediate": {
+    "roots": [{ "part": "inter-", "ko": "사이에" }, { "part": "medi", "ko": "중간" }, { "part": "-ate", "ko": "~한" }],
+    "origin": "라틴어 intermedius (사이 한가운데의)",
+    "story": "처음과 끝 사이(inter) 한가운데(medi)에 있는 → 중간(단계)의",
+    "family": ["medium", "immediate", "mediate", "median"]
+  },
+  "internal": {
+    "roots": [{ "part": "intern", "ko": "안쪽의" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 internus (안쪽의)",
+    "story": "안쪽(intern)에 속한(al) → 내부의, 사내의",
+    "hook": "인터널 → 회사 안에 들어와 배우는 '인턴'과 한 뿌리 → 내부의",
+    "family": ["intern", "interior", "internalize"]
+  },
+  "interpret": {
+    "origin": "라틴어 interpres (중개인, 통역자)",
+    "story": "두 사람 사이(inter)에서 말을 옮겨 주는 통역자처럼 뜻을 풀어낸다 → 해석하다",
+    "hook": "인터프리트 → 코드를 한 줄씩 풀어 실행하는 '인터프리터' → 해석하다",
+    "family": ["interpreter", "interpretation", "misinterpret"]
+  },
+  "interval": {
+    "roots": [{ "part": "inter-", "ko": "사이" }, { "part": "val", "ko": "성벽, 울타리" }],
+    "origin": "라틴어 intervallum (성벽 말뚝 사이의 틈)",
+    "story": "성벽(val)과 성벽 사이(inter)에 벌어진 틈 → 간격, 주기",
+    "hook": "인터벌 → 뛰다 쉬다를 되풀이하는 '인터벌 트레이닝' → 간격"
+  },
+  "intervention": {
+    "roots": [{ "part": "inter-", "ko": "사이에" }, { "part": "vent", "ko": "오다" }, { "part": "-ion", "ko": "~하는 일" }],
+    "origin": "라틴어 intervenire (사이에 끼어들다)",
+    "story": "돌아가는 일 사이(inter)로 걸어 들어와(vent) 손을 쓴다 → 개입",
+    "family": ["intervene", "event", "prevent", "convention"]
+  },
+  "interview": {
+    "roots": [{ "part": "inter-", "ko": "서로" }, { "part": "view", "ko": "보다" }],
+    "origin": "프랑스어 entrevue (서로 봄)",
+    "story": "서로(inter) 마주 보고(view) 묻고 답한다 → 의견을 묻다, 면접, 인터뷰",
+    "family": ["review", "preview", "viewpoint", "vision"]
+  },
+  "inventory": {
+    "roots": [{ "part": "in-", "ko": "~에" }, { "part": "vent", "ko": "오다" }, { "part": "-ory", "ko": "~한 것, 곳" }],
+    "origin": "중세 라틴어 inventorium (찾아낸 것의 목록)",
+    "story": "창고에서 찾아낸(invent, 마주친) 물건을 죄다 적은 것(ory) → 목록, 재고",
+    "hook": "인벤토리 → 게임 가방 화면 '인벤토리(인벤)' → 가진 것 목록, 재고",
+    "family": ["invent", "invention", "event", "venue"]
+  },
+  "invoke": {
+    "roots": [{ "part": "in-", "ko": "~을 향해" }, { "part": "voke", "ko": "부르다" }],
+    "origin": "라틴어 invocare (불러내다)",
+    "story": "이름을 대고(in) 불러(voke) 일을 시킨다 → 호출하다, 실행하다",
+    "family": ["revoke", "provoke", "evoke", "vocal"]
+  },
+  "involve": {
+    "roots": [{ "part": "in-", "ko": "안으로" }, { "part": "volve", "ko": "말다, 굴리다" }],
+    "origin": "라틴어 involvere (안으로 말아 넣다)",
+    "story": "안으로(in) 돌돌 말아(volve) 함께 끌어들인다 → 수반하다, 관여시키다",
+    "family": ["evolve", "revolve", "volume", "revolution"]
+  },
+  "isolate": {
+    "roots": [{ "part": "isol", "ko": "섬" }, { "part": "-ate", "ko": "~하다" }],
+    "origin": "이탈리아어 isolato ← 라틴어 insula (섬)",
+    "story": "섬(isol)처럼 뚝 떨어뜨려 놓는다(ate) → 격리하다, 따로 떼어 놓다",
+    "family": ["isle", "insulate", "peninsula", "insular"]
+  },
+  "issue": {
+    "origin": "고대 프랑스어 issue (나감) ← 라틴어 exire (나가다)",
+    "story": "밖으로 나온 것 — 불거져 나온 문제, 내보낸 발행물 → 문제, 이슈, 내주다",
+    "hook": "이슈 → 뉴스의 '이슈'는 불거져 나온 문제 → 문제",
+    "family": ["exit", "transit", "itinerary"]
+  },
+  "item": {
+    "origin": "라틴어 item (마찬가지로, 또한)",
+    "story": "목록을 적을 때 줄마다 '또한(item) …' 하고 시작하던 데서 → 항목, 품목",
+    "hook": "아이템 → 게임에서 줍는 '아이템' 하나하나 → 항목, 물품"
+  },
+  "iteration": {
+    "roots": [{ "part": "iter", "ko": "다시" }, { "part": "-ation", "ko": "~하는 일" }],
+    "origin": "라틴어 iterare (다시 하다) ← iterum (다시)",
+    "story": "고쳐서 다시(iter) 해 보는 일(ation) → 반복, 한 회차",
+    "family": ["iterate", "reiterate", "iterative"]
+  },
+  "itinerary": {
+    "roots": [{ "part": "itiner", "ko": "여정, 길" }, { "part": "-ary", "ko": "~에 관한 것" }],
+    "origin": "라틴어 itinerarium (여정 기록) ← iter (길, 여행)",
+    "story": "갈 길(itiner)을 차례대로 적은 것(ary) → 여행 일정(표)",
+    "family": ["itinerant", "exit", "transit"]
+  },
+  "itpm": {
+    "origin": "Input Tokens Per Minute",
+    "story": "1분(Minute)마다(Per) 넣을 수 있는 입력(Input) 토큰(Tokens) 수 → 분당 입력 토큰 한도"
+  },
+  "jailbreak": {
+    "roots": [{ "part": "jail", "ko": "감옥" }, { "part": "break", "ko": "부수다" }],
+    "story": "감옥(jail)을 부수고(break) 나오듯 걸어 둔 안전 규칙을 뚫는다 → 탈옥",
+    "family": ["breakout", "breakthrough", "jailer"]
+  },
+  "jitter": {
+    "story": "긴장해 손이 달달 떨리듯 재시도 간격을 일부러 조금씩 흔든다 → 지터, 무작위 지연"
+  },
+  "json-rpc": {
+    "origin": "JavaScript Object Notation + Remote Procedure Call",
+    "story": "JSON 형식으로 멀리(Remote) 있는 함수(Procedure)를 부른다(Call) → JSON 원격 호출 프로토콜"
+  },
+  "judge": {
+    "origin": "라틴어 judex (법을 말하는 사람) ← jus (법) + dicere (말하다)",
+    "story": "법(jus)을 말해(dicere) 옳고 그름을 가려 준다 → 판단하다, 판정자",
+    "family": ["justice", "judicial", "jury", "prejudice"]
+  },
+  "junior": {
+    "origin": "라틴어 junior (더 젊은) ← juvenis (젊은)",
+    "story": "둘 중 더 젊은(junior) 쪽, 그만큼 경험이 적은 → (경력이) 낮은, 후배",
+    "hook": "주니어 → '주니어 개발자' → 신입의, 경력이 낮은",
+    "family": ["juvenile", "rejuvenate", "young"]
+  },
+  "jwt": {
+    "origin": "JSON Web Token",
+    "story": "웹(Web)에서 주고받는 JSON 모양의 증표(Token) → 서명된 JSON 인증 토큰"
+  },
+  "kafka": {
+    "origin": "소설가 프란츠 카프카(Franz Kafka)의 이름",
+    "story": "만든 이가 '쓰기에 최적화된 시스템'이라며 작가 이름을 붙였다 → 메시지 스트리밍 플랫폼 카프카"
+  },
+  "key": {
+    "origin": "고대 영어 cǣg (열쇠)",
+    "story": "잠긴 문을 여는 열쇠, 문제를 푸는 열쇠는 가장 중요한 것 → 키, 핵심적인",
+    "family": ["keyboard", "keyword", "keynote"]
+  },
+  "knowledge": {
+    "roots": [{ "part": "know", "ko": "알다" }, { "part": "-ledge", "ko": "~함(명사)" }],
+    "story": "알고(know) 있는 것(ledge) → 지식",
+    "family": ["know", "acknowledge", "unknown"]
+  },
+  "knowledge-base": {
+    "roots": [{ "part": "knowledge", "ko": "지식" }, { "part": "base", "ko": "기반, 저장소" }],
+    "story": "지식(knowledge)을 쌓아 둔 기반(base), 데이터베이스의 지식판 → 지식베이스",
+    "family": ["database", "acknowledge", "basis"]
+  },
+  "lab": {
+    "origin": "laboratory 의 줄임 ← 라틴어 laborare (일하다)",
+    "story": "일하고(labor) 실험하는 곳(laboratory)을 줄인 말 → 실험실, 검사실",
+    "hook": "랩 → 대학원 '랩실' → 실험실, 연구소",
+    "family": ["labor", "elaborate", "collaborate"]
+  },
+  "label": {
+    "origin": "고대 프랑스어 label (리본, 천 조각)",
+    "story": "옷에 달린 천 조각 꼬리표처럼 무엇인지 적어 붙인다 → 라벨, 라벨을 붙이다",
+    "hook": "라벨 → 병에 붙은 '라벨' 스티커 → 분류 표시"
+  },
+  "lack": {
+    "story": "있어야 할 자리가 텅 비어 모자란다 → ~이 없다, 부족하다"
+  },
+  "larger-context": {
+    "roots": [{ "part": "larger", "ko": "더 큰" }, { "part": "context", "ko": "컨텍스트" }],
+    "story": "한 번에 담는 컨텍스트(context) 창이 더 큰(larger) → (컨텍스트 창이) 더 큰",
+    "family": ["enlarge", "largely", "contextual"]
+  },
+  "latency": {
+    "roots": [{ "part": "lat", "ko": "숨다" }, { "part": "-ency", "ko": "~인 상태" }],
+    "origin": "라틴어 latere (숨어 있다)",
+    "story": "응답이 아직 숨어(lat) 드러나지 않은 채 기다리는 동안(ency) → 지연 시간",
+    "hook": "레이턴시 → '레이트(late, 늦은)'가 들린다 → 지연 시간"
+  },
+  "launch": {
+    "origin": "고대 프랑스어 lancier (창을 던지다) ← 라틴어 lancea (창)",
+    "story": "창(lance)을 힘껏 던지듯 세상에 쏘아 내보낸다 → 출시, 시작하다",
+    "hook": "론치 → 신제품 '론칭' 행사 → 출시",
+    "family": ["lance", "lancer", "freelance"]
+  },
+  "lay-out": {
+    "roots": [{ "part": "lay", "ko": "놓다" }, { "part": "out", "ko": "밖으로, 펼쳐" }],
+    "story": "물건을 밖으로(out) 펼쳐 놓아(lay) 한눈에 보이게 한다 → 배치하다, 펼쳐 설명하다",
+    "family": ["layout", "layer", "outline"]
+  },
+  "layer": {
+    "roots": [{ "part": "lay", "ko": "놓다" }, { "part": "-er", "ko": "~한 것" }],
+    "story": "한 겹씩 깔아 놓은(lay) 것(er) → 계층, 층",
+    "hook": "레이어 → 포토샵 '레이어', 겹쳐 입는 '레이어드 룩' → 층, 계층",
+    "family": ["layout", "overlay", "layoff"]
+  },
+  "layout": {
+    "roots": [{ "part": "lay", "ko": "놓다" }, { "part": "out", "ko": "펼쳐" }],
+    "story": "펼쳐(out) 놓은(lay) 모양새 → 배치, 구성, 레이아웃",
+    "family": ["layer", "overlay", "outline"]
+  },
+  "lead": {
+    "origin": "고대 영어 lǣdan (이끌다, 데려가다)",
+    "story": "맨 앞에서 길을 잡고 데려간다, 그렇게 앞장서는 사람 → 이끌다, (팀의) 리드",
+    "hook": "리드 → '리더'가 팀을 리드한다 → 이끌다, 책임자",
+    "family": ["leader", "mislead", "leadership"]
+  },
+  "leaderboard": {
+    "roots": [{ "part": "leader", "ko": "선두" }, { "part": "board", "ko": "판" }],
+    "story": "선두(leader)부터 차례로 이름을 적어 건 판(board) → 리더보드, 순위표",
+    "family": ["leadership", "scoreboard", "dashboard"]
+  },
+  "least": {
+    "origin": "고대 영어 lǣst (가장 작은) — less 의 최상급",
+    "story": "적은(little)·더 적은(less)·가장 적은(least), 아무리 적게 잡아도 → 적어도, 가장 적게",
+    "family": ["less", "lesser", "lessen"]
+  },
+  "leave": {
+    "origin": "고대 영어 lǣfan (남겨 두다)",
+    "story": "내가 떠나면 물건은 그 자리에 그대로 남는다 → 두다, 남겨 두다, 떠나다"
+  },
+  "legacy": {
+    "roots": [{ "part": "leg", "ko": "법으로 맡기다, 물려주다" }, { "part": "-acy", "ko": "~한 것" }],
+    "origin": "라틴어 legare (유언으로 물려주다)",
+    "story": "앞사람이 물려주어(leg) 좋든 싫든 떠안은 유산(acy) → 레거시, 오래된 기존 시스템",
+    "family": ["delegate", "legate", "relegate", "legal"]
+  },
+  "legal": {
+    "roots": [{ "part": "leg", "ko": "법" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 legalis ← lex (법)",
+    "story": "법(leg)에 관한(al) → 법률의, 법적인",
+    "family": ["legislate", "legitimate", "illegal", "loyal"]
+  },
+  "legitimate": {
+    "roots": [{ "part": "legitim", "ko": "법에 맞는" }, { "part": "-ate", "ko": "~한" }],
+    "origin": "라틴어 legitimus (법에 맞는) ← lex (법)",
+    "story": "법(leg)에 비춰 봐도 떳떳해 근거가 서는 → 정당한, 타당한",
+    "family": ["legal", "legislate", "privilege"]
+  },
+  "length": {
+    "roots": [{ "part": "leng", "ko": "긴(long)" }, { "part": "-th", "ko": "~함(명사)" }],
+    "origin": "고대 영어 lengðu ← lang (긴)",
+    "story": "얼마나 긴지(long), 긴 정도(th) → 길이, 분량",
+    "family": ["long", "lengthen", "linger"]
+  },
+  "level": {
+    "origin": "라틴어 libella (수평 재는 작은 저울) ← libra (저울)",
+    "story": "저울(libra)로 수평을 맞춰 잰 높이 → 레벨, 수준",
+    "hook": "레벨 → 게임의 '레벨 업' → 수준, 단계",
+    "family": ["equilibrium", "deliberate"]
+  },
+  "lever": {
+    "roots": [{ "part": "lev", "ko": "들어 올리다" }, { "part": "-er", "ko": "~하는 것" }],
+    "origin": "고대 프랑스어 levier ← 라틴어 levare (들어 올리다)",
+    "story": "작은 힘으로 큰 것을 들어 올리는(lev) 막대(er) → 지렛대, (조절) 수단",
+    "hook": "레버 → 당기면 기계가 움직이는 '레버' → 조절 수단",
+    "family": ["leverage", "elevate", "relieve", "alleviate"]
+  }
+}

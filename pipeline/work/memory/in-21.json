@@ -1,0 +1,517 @@
+[
+ {
+  "id": "residency",
+  "word": "residency",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈrezɪdənsi",
+  "meaning": "(데이터) 상주 위치 — data residency: 데이터가 저장·처리되는 지역 / 거주",
+  "level": 6
+ },
+ {
+  "id": "resolver",
+  "word": "resolver",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "rɪˈzɑːlvər",
+  "meaning": "리졸버 — (GraphQL) 필드 값을 가져오는 함수 / (이름·주소를) 해석하는 프로그램",
+  "level": 6
+ },
+ {
+  "id": "resource",
+  "word": "resource",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈriːsɔːrs",
+  "meaning": "① 자원 ② (MCP) 리소스 — 에이전트가 읽어 가도록 노출한 데이터",
+  "level": 3
+ },
+ {
+  "id": "respond",
+  "word": "respond",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈspɑːnd",
+  "meaning": "응답하다, (~에) 반응하다",
+  "level": 2
+ },
+ {
+  "id": "response",
+  "word": "response",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "rɪˈspɑːns",
+  "meaning": "응답, 대답",
+  "level": 2
+ },
+ {
+  "id": "responsible",
+  "word": "responsible",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "rɪˈspɑːnsəbl",
+  "meaning": "(~에 대해) 책임이 있는, 담당하는",
+  "level": 2
+ },
+ {
+  "id": "restart",
+  "word": "restart",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˌriːˈstɑːrt",
+  "meaning": "다시 시작하다 / 재시작",
+  "level": 3
+ },
+ {
+  "id": "restore",
+  "word": "restore",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈstɔːr",
+  "meaning": "복원하다, 되살리다",
+  "level": 4
+ },
+ {
+  "id": "restructure",
+  "word": "restructure",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːˈstrʌktʃər",
+  "meaning": "구조를 바꾸다, 재구성하다",
+  "level": 5
+ },
+ {
+  "id": "resubmit",
+  "word": "resubmit",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːsəbˈmɪt",
+  "meaning": "(요청·작업을) 다시 제출하다, 재제출하다",
+  "level": 5
+ },
+ {
+  "id": "resume",
+  "word": "resume",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈzuːm",
+  "meaning": "(중단한 작업·세션을) 재개하다, 이어서 하다",
+  "level": 4
+ },
+ {
+  "id": "resume-parsing",
+  "word": "resume-parsing",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈrezəmeɪ ˈpɑːrsɪŋ",
+  "meaning": "이력서를 구문 분석해 정보를 뽑아내는",
+  "level": 6
+ },
+ {
+  "id": "retire",
+  "word": "retire",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈtaɪər",
+  "meaning": "(모델·기능을) 퇴역시키다, 서비스를 완전히 종료하다 — retirement: 퇴역(서비스 종료)",
+  "level": 3
+ },
+ {
+  "id": "retract",
+  "word": "retract",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈtrækt",
+  "meaning": "(진술을) 철회하다, 취소하다",
+  "level": 6
+ },
+ {
+  "id": "retry",
+  "word": "retry",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˌriːˈtraɪ",
+  "meaning": "재시도하다 / 재시도",
+  "level": 4
+ },
+ {
+  "id": "retry-after",
+  "word": "retry-after",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈriːtraɪ ˈæftər",
+  "meaning": "Retry-After 헤더 — 몇 초 뒤에 다시 시도하라고 서버가 알려 주는 응답 헤더",
+  "level": 6
+ },
+ {
+  "id": "reuse",
+  "word": "reuse",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˌriːˈjuːz",
+  "meaning": "재사용(하다) — reusable: 재사용할 수 있는",
+  "level": 3
+ },
+ {
+  "id": "reveal",
+  "word": "reveal",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈviːl",
+  "meaning": "드러내다, 밝혀 보여 주다",
+  "level": 4
+ },
+ {
+  "id": "reverse",
+  "word": "reverse",
+  "pos": [
+   "동사",
+   "형용사",
+   "명사"
+  ],
+  "ipa": "rɪˈvɜːrs",
+  "meaning": "① (결과·조치를) 되돌리다, 취소하다 ② 반대의 ③ 반대",
+  "level": 4
+ },
+ {
+  "id": "reversible",
+  "word": "reversible",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "rɪˈvɜːrsəbl",
+  "meaning": "되돌릴 수 있는 (irreversible: 되돌릴 수 없는)",
+  "level": 5
+ },
+ {
+  "id": "review",
+  "word": "review",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "rɪˈvjuː",
+  "meaning": "검토, 리뷰 / 검토하다 — reviewer 검토자",
+  "level": 2
+ },
+ {
+  "id": "revoke",
+  "word": "revoke",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈvoʊk",
+  "meaning": "(키·권한을) 취소하다, 폐기하다",
+  "level": 6
+ },
+ {
+  "id": "rewrite",
+  "word": "rewrite",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːˈraɪt",
+  "meaning": "다시 쓰다, 고쳐 쓰다",
+  "level": 3
+ },
+ {
+  "id": "risk",
+  "word": "risk",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "rɪsk",
+  "meaning": "위험(성), 리스크 / ~할 위험이 있다",
+  "level": 2
+ },
+ {
+  "id": "role",
+  "word": "role",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "roʊl",
+  "meaning": "역할, 맡은 일",
+  "level": 2
+ },
+ {
+  "id": "roll",
+  "word": "roll",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "roʊl",
+  "meaning": "① (roll out) (서비스·기능을) 단계적으로 배포하다 ② 구르다, 굴리다 ③ (roll back) 되돌리다",
+  "level": 3
+ },
+ {
+  "id": "rollback",
+  "word": "rollback",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈroʊlbæk",
+  "meaning": "롤백 — 변경을 이전 상태로 되돌리기 (roll back: 되돌리다)",
+  "level": 6
+ },
+ {
+  "id": "root",
+  "word": "root",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ruːt",
+  "meaning": "① 루트, 최상위 (디렉터리·폴더) ② 뿌리 ③ 근원, 근본",
+  "level": 3
+ },
+ {
+  "id": "root-cause",
+  "word": "root cause",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˌruːt ˈkɔːz",
+  "meaning": "근본 원인",
+  "level": 5
+ },
+ {
+  "id": "rotation",
+  "word": "rotation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "roʊˈteɪʃn",
+  "meaning": "순환 — 돌아가며 순서를 바꿈",
+  "level": 4
+ },
+ {
+  "id": "roughly",
+  "word": "roughly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈrʌfli",
+  "meaning": "대략, 약",
+  "level": 4
+ },
+ {
+  "id": "round",
+  "word": "round",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "raʊnd",
+  "meaning": "(되풀이되는 과정의) 한 차례, 회, 라운드",
+  "level": 2
+ },
+ {
+  "id": "round-trip",
+  "word": "round trip",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌraʊnd ˈtrɪp",
+  "meaning": "왕복 — 요청을 보내고 응답을 받기까지의 한 번",
+  "level": 3
+ },
+ {
+  "id": "route",
+  "word": "route",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ruːt",
+  "meaning": "(알맞은 곳으로) 보내다, 라우팅하다 / 경로 — router 라우터",
+  "level": 3
+ },
+ {
+  "id": "routine",
+  "word": "routine",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ruːˈtiːn",
+  "meaning": "일상적인, 평범한 / 정해진 일과",
+  "level": 3
+ },
+ {
+  "id": "row",
+  "word": "row",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "roʊ",
+  "meaning": "① (표·데이터의) 행 ② (나란히 늘어선) 줄 ③ 노를 젓다",
+  "level": 3
+ },
+ {
+  "id": "rpm",
+  "word": "RPM",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌɑːr.piːˈem",
+  "meaning": "분당 요청 수 한도 (Requests Per Minute)",
+  "level": 6
+ },
+ {
+  "id": "run",
+  "word": "run",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "rʌn",
+  "meaning": "① (프로그램·명령을) 실행하다 ② 실행(회차) ③ (running) 계속 이어지는, 누적되는 ④ 달리다, 운영하다",
+  "level": 2
+ },
+ {
+  "id": "runner",
+  "word": "runner",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈrʌnər",
+  "meaning": "러너, 실행기 — CI job·테스트를 실제로 돌리는 서버·프로그램",
+  "level": 4
+ },
+ {
+  "id": "runtime",
+  "word": "runtime",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈrʌntaɪm",
+  "meaning": "① 런타임, 실행 환경 ② 실행 시점, 실행 중",
+  "level": 6
+ },
+ {
+  "id": "safely",
+  "word": "safely",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈseɪfli",
+  "meaning": "① 안전하게 ② 문제없이, 무리 없이",
+  "level": 2
+ },
+ {
+  "id": "safety",
+  "word": "safety",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈseɪfti",
+  "meaning": "① 안전, 안전성 ② 안전장치",
+  "level": 2
+ },
+ {
+  "id": "salary",
+  "word": "salary",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsæləri",
+  "meaning": "급여, 월급·연봉",
+  "level": 3
+ },
+ {
+  "id": "sample",
+  "word": "sample",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈsæmpl",
+  "meaning": "① 샘플, 예시, 견본 ② 표본 ③ 표본을 추출하다",
+  "level": 2
+ },
+ {
+  "id": "sampling",
+  "word": "sampling",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsæmplɪŋ",
+  "meaning": "샘플링 — 모델이 확률에 따라 다음 토큰을 고르는 과정 (temperature 같은 샘플링 설정) / 표본 추출",
+  "level": 5
+ },
+ {
+  "id": "sandbox",
+  "word": "sandbox",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈsændbɑːks",
+  "meaning": "샌드박스 — 바깥과 격리된 안전한 실행 환경 / 격리하다",
+  "level": 6
+ },
+ {
+  "id": "satisfy",
+  "word": "satisfy",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈsætɪsfaɪ",
+  "meaning": "(조건·규칙을) 충족하다, 만족시키다",
+  "level": 3
+ },
+ {
+  "id": "scale",
+  "word": "scale",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "skeɪl",
+  "meaning": "① 척도, 눈금 — 점수가 따르는 기준 범위 ② 규모 ③ 규모를 늘리다 (scale up)",
+  "level": 3
+ },
+ {
+  "id": "scan",
+  "word": "scan",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "skæn",
+  "meaning": "① (보안·오류를) 훑어 검사하다, 스캔 ② (종이 문서를) 스캔하다",
+  "level": 3
+ },
+ {
+  "id": "scenario",
+  "word": "scenario",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "səˈnerioʊ",
+  "meaning": "① 시나리오, 가상의 상황 ② (영화·극의) 각본",
+  "level": 4
+ }
+]

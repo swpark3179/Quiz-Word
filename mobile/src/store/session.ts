@@ -2,8 +2,9 @@
 import { router } from 'expo-router';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
-import { DEFAULT_SCOPE, scopeFromParams, type Scope } from '@shared/scope';
-import { QUIZ_SOURCES } from '@/data/words';
+import { LEVELS } from '@shared/schema';
+import { DEFAULT_SCOPE, normalizeScope, scopeFromParams, type Scope } from '@shared/scope';
+import { EXAMS, examName, sourceName } from '@/data/words';
 import { syncStorage } from '@/lib/kv';
 import { useProgress } from '@/store/progress';
 
@@ -34,35 +35,45 @@ export const useScopes = create<ScopeState>()(
   ),
 );
 
-export const scopeOf = (mode: StudyMode, scopes: Partial<Record<StudyMode, Scope>>): Scope => ({ ...DEFAULT_SCOPE, ...(scopes[mode] ?? {}) });
+/** 저장해 둔 범위 — 예전 형식(CCAR-F 전체·문제 파일별·기초 포함)이나 없어진 시험·문제 파일은 읽을 때 지금 형식으로 고친다 */
+export const scopeOf = (mode: StudyMode, scopes: Partial<Record<StudyMode, Scope>>): Scope => normalizeScope(scopes[mode], EXAMS);
 
-/** "CCAR-F · 못 익힌 단어 · 20개" */
+/** "2단계 이상" — 단계 고르기에 쓰는 말 */
+export const levelLabel = (minLevel: number) =>
+  minLevel <= 1 ? '모든 단계' : minLevel >= LEVELS.length ? `${minLevel}단계만` : `${minLevel}단계 이상`;
+
+/** "CCAR-F 전체 · 2단계 이상 · 못 익힌 단어 · 20개" */
 export function scopeSummary(s: Scope): string {
   const set =
-    s.set === 'core'
-      ? 'CCAR-F 전체'
-      : s.set === 'all'
-        ? '확장 포함'
-        : s.set === 'wrong'
-          ? '오답노트'
-          : s.set === 'notebook'
-            ? (useProgress.getState().notebooks.find((n) => n.id === s.notebook)?.name ?? '학습장')
-            : (QUIZ_SOURCES.find((x) => x.id === s.file)?.name ?? '파일');
+    s.set === 'all'
+      ? '모든 단어'
+      : s.set === 'wrong'
+        ? '오답노트'
+        : s.set === 'notebook'
+          ? (useProgress.getState().notebooks.find((n) => n.id === s.notebook)?.name ?? '학습장')
+          : s.cat && s.file
+            ? sourceName(s.cat, s.file)
+            : s.cat
+              ? `${examName(s.cat)} 전체`
+              : '모든 단어';
   const status = { unmastered: '못 익힌 단어', new: '새 단어', learning: '학습 중', any: '전체', due: '복습할 단어' }[s.status];
-  return `${set} · ${status} · ${s.count ? `${s.count}개` : '전부'}`;
+  // 오답노트·학습장은 직접 고른 단어라 단계를 따지지 않는다
+  const level = (s.set === 'exam' || s.set === 'all') && s.minLevel > 1 ? ` · ${levelLabel(s.minLevel)}` : '';
+  return `${set}${level} · ${status} · ${s.count ? `${s.count}개` : '전부'}`;
 }
 
 /** 범위 → 쿼리 문자열 (RN 의 URLSearchParams 는 일부 메서드가 없어 직접 만든다) */
 export function scopeQuery(s: Scope): string {
   const parts: [string, string][] = [
     ['set', s.set],
-    ['basic', s.includeBasic ? '1' : '0'],
+    ['lv', String(s.minLevel)],
     ['status', s.status],
     ['count', String(s.count)],
     ['order', s.order],
   ];
-  if (s.file) parts.push(['file', s.file]);
-  if (s.notebook) parts.push(['notebook', s.notebook]);
+  if (s.set === 'exam' && s.cat) parts.push(['cat', s.cat]);
+  if (s.set === 'exam' && s.file) parts.push(['file', s.file]);
+  if (s.set === 'notebook' && s.notebook) parts.push(['notebook', s.notebook]);
   return parts.map(([k, v]) => `${k}=${encodeURIComponent(v)}`).join('&');
 }
 
@@ -72,7 +83,7 @@ export function scopeFromRoute(params: Record<string, string | string[] | undefi
     const v = params[k];
     return (Array.isArray(v) ? v[0] : v) ?? null;
   };
-  return scopeFromParams({ get } as unknown as URLSearchParams);
+  return scopeFromParams({ get } as unknown as URLSearchParams, DEFAULT_SCOPE, EXAMS);
 }
 
 export function sessionHref(mode: StudyMode, scope: Scope) {

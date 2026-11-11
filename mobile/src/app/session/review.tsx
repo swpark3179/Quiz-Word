@@ -7,7 +7,7 @@ import { dayKey } from '@shared/text';
 import { FlashSession } from '@/components/FlashSession';
 import { QuizSession } from '@/components/QuizSession';
 import { Button, Empty } from '@/components/ui';
-import { WORDS } from '@/data/words';
+import { mainExam, WORDS } from '@/data/words';
 import { useProgress } from '@/store/progress';
 import { useTheme } from '@/theme';
 
@@ -17,7 +17,8 @@ export default function ReviewScreen() {
   const record = useProgress((s) => s.record);
   const [ids] = useState<string[]>(() => {
     const { cards, settings, days } = useProgress.getState();
-    const plan = reviewPlan(WORDS, cards, settings.newPerDay, days[dayKey()]?.newWords ?? 0);
+    // 새 단어는 주 시험에 나온 단어에서, 학습 단계 이상만
+    const plan = reviewPlan(WORDS, cards, settings.newPerDay, days[dayKey()]?.newWords ?? 0, new Date(), { cat: mainExam(settings.exam), minLevel: settings.minLevel });
     return [...plan.due, ...plan.fresh];
   });
 

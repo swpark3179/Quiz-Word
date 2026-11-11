@@ -3,10 +3,12 @@
  * - 보기 문장: "📝 문제 번역" 의 ①②③④ 줄과 1:1 로 맞춰 바로 해석을 붙인다 → gen/ko-choices.json
  * - 문제 본문 문장(과 보기 개수가 안 맞는 문제의 보기): 문제 번역 문단을 참고본으로 LLM 이 문장별로 옮긴다
  *   → batchB/in-NN.json
+ *
+ * 실행: npx tsx scripts/build-batches-b.ts --exam <시험 id> [배치크기=30]
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { readJson, WORK } from './lib/common';
+import { examFromArgs, readJson, workDirOf } from './lib/common';
 
 interface SentenceRec {
   sid: string;
@@ -16,7 +18,10 @@ interface SentenceRec {
   lang: 'en' | 'ko';
 }
 
-const size = Number(process.argv[2] ?? 30);
+const args = process.argv.slice(2);
+const exam = examFromArgs(args);
+const WORK = workDirOf(exam);
+const size = Number(args.find((a, i) => /^\d+$/.test(a) && args[i - 1] !== '--exam') ?? 30);
 const questions = readJson<{ key: string; koRef?: string }[]>(path.join(WORK, 'questions.json'));
 const sentences = readJson<SentenceRec[]>(path.join(WORK, 'sentences.json'));
 

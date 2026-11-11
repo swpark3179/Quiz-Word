@@ -1,0 +1,510 @@
+[
+ {
+  "id": "translate",
+  "word": "translate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "trænsˈleɪt",
+  "meaning": "① 번역하다, 옮기다 ② (~로) 이어지다, 반영되다",
+  "level": 2
+ },
+ {
+  "id": "translation",
+  "word": "translation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "trænsˈleɪʃn",
+  "meaning": "번역, 번역문",
+  "level": 2
+ },
+ {
+  "id": "transport",
+  "word": "transport",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈtrænspɔːrt",
+  "meaning": "(통신) 전송 방식 — 클라이언트와 서버가 메시지를 주고받는 통로 (stdio, Streamable HTTP) / 운송하다",
+  "level": 3
+ },
+ {
+  "id": "treat",
+  "word": "treat",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "triːt",
+  "meaning": "(~로) 여기다, 다루다, 취급하다",
+  "level": 3
+ },
+ {
+  "id": "tree",
+  "word": "tree",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "triː",
+  "meaning": "① (디렉터리) 트리, 계층 구조 ② 나무",
+  "level": 2
+ },
+ {
+  "id": "trend",
+  "word": "trend",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "trend",
+  "meaning": "추세, 경향",
+  "level": 3
+ },
+ {
+  "id": "trial",
+  "word": "trial",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtraɪəl",
+  "meaning": "시험(판), 시범 — trial run: 시험 실행",
+  "level": 3
+ },
+ {
+  "id": "trigger",
+  "word": "trigger",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈtrɪɡər",
+  "meaning": "(어떤 동작을) 일으키다, 실행시키다 / 계기, 발동 조건",
+  "level": 4
+ },
+ {
+  "id": "trim",
+  "word": "trim",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "trɪm",
+  "meaning": "(불필요한 부분을) 잘라 내다, 다듬다",
+  "level": 4
+ },
+ {
+  "id": "truly",
+  "word": "truly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈtruːli",
+  "meaning": "정말로, 진정으로",
+  "level": 2
+ },
+ {
+  "id": "truncate",
+  "word": "truncate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈtrʌŋkeɪt",
+  "meaning": "(뒷부분을) 잘라 내다, 잘리다 — truncation: 잘림",
+  "level": 6
+ },
+ {
+  "id": "trust",
+  "word": "trust",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "trʌst",
+  "meaning": "신뢰(하다) — trusted: 믿을 수 있는, 검증된",
+  "level": 2
+ },
+ {
+  "id": "ttl",
+  "word": "TTL",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌtiː.tiːˈel",
+  "meaning": "TTL(time to live) — 캐시·데이터가 만료되기 전까지 유지되는 시간",
+  "level": 6
+ },
+ {
+  "id": "turn",
+  "word": "turn",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "tɜːrn",
+  "meaning": "① (대화의) 턴 — 사용자와 모델이 한 번 주고받는 차례 ② 돌다, 바뀌다",
+  "level": 2
+ },
+ {
+  "id": "tutoring",
+  "word": "tutoring",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtuːtərɪŋ",
+  "meaning": "개인 지도, 학습 도우미 (tutoring app: 학습 도우미 앱)",
+  "level": 3
+ },
+ {
+  "id": "typical",
+  "word": "typical",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈtɪpɪkl",
+  "meaning": "전형적인, 일반적인",
+  "level": 3
+ },
+ {
+  "id": "typically",
+  "word": "typically",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈtɪpɪkli",
+  "meaning": "보통, 일반적으로",
+  "level": 3
+ },
+ {
+  "id": "ultimately",
+  "word": "ultimately",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈʌltɪmətli",
+  "meaning": "결국, 궁극적으로",
+  "level": 4
+ },
+ {
+  "id": "unable",
+  "word": "unable",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ʌnˈeɪbl",
+  "meaning": "~할 수 없는",
+  "level": 3
+ },
+ {
+  "id": "unambiguous",
+  "word": "unambiguous",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌʌnæmˈbɪɡjuəs",
+  "meaning": "모호하지 않은, 뜻이 하나로 분명한",
+  "level": 6
+ },
+ {
+  "id": "unchanged",
+  "word": "unchanged",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ʌnˈtʃeɪndʒd",
+  "meaning": "바뀌지 않은, 그대로인",
+  "level": 3
+ },
+ {
+  "id": "unchecked",
+  "word": "unchecked",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ʌnˈtʃekt",
+  "meaning": "① 확인(검증)되지 않은 ② 제어되지 않은, 억제되지 않은",
+  "level": 4
+ },
+ {
+  "id": "undermine",
+  "word": "undermine",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌʌndərˈmaɪn",
+  "meaning": "(서서히) 약화시키다, 해치다",
+  "level": 5
+ },
+ {
+  "id": "unfinished",
+  "word": "unfinished",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ʌnˈfɪnɪʃt",
+  "meaning": "끝나지 않은, 미완성의",
+  "level": 3
+ },
+ {
+  "id": "unintended",
+  "word": "unintended",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌʌnɪnˈtendɪd",
+  "meaning": "의도하지 않은",
+  "level": 4
+ },
+ {
+  "id": "union",
+  "word": "union",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈjuːnjən",
+  "meaning": "① 합집합, (전부를 합친) 전체 ② 연합, 조합",
+  "level": 4
+ },
+ {
+  "id": "unique",
+  "word": "unique",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "juˈniːk",
+  "meaning": "고유한, 하나뿐인 — 딱 한 곳만 특정되는",
+  "level": 3
+ },
+ {
+  "id": "unit",
+  "word": "unit",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈjuːnɪt",
+  "meaning": "① (측정·금액의) 단위 ② (작업·기능의) 단위, 한 묶음",
+  "level": 2
+ },
+ {
+  "id": "unnecessary",
+  "word": "unnecessary",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ʌnˈnesəseri",
+  "meaning": "불필요한, 쓸데없는",
+  "level": 3
+ },
+ {
+  "id": "unpredictability",
+  "word": "unpredictability",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌʌnprɪˌdɪktəˈbɪləti",
+  "meaning": "예측 불가능성 (unpredictable: 예측할 수 없는)",
+  "level": 5
+ },
+ {
+  "id": "unreachable",
+  "word": "unreachable",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ʌnˈriːtʃəbl",
+  "meaning": "접속할 수 없는, 연결이 닿지 않는",
+  "level": 5
+ },
+ {
+  "id": "unrelated",
+  "word": "unrelated",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌʌnrɪˈleɪtɪd",
+  "meaning": "관계없는, 무관한",
+  "level": 4
+ },
+ {
+  "id": "unsafe",
+  "word": "unsafe",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ʌnˈseɪf",
+  "meaning": "안전하지 않은, 위험한",
+  "level": 2
+ },
+ {
+  "id": "unset",
+  "word": "unset",
+  "pos": [
+   "형용사",
+   "동사"
+  ],
+  "ipa": "ʌnˈset",
+  "meaning": "① 설정되지 않은, 비어 있는 ② (설정·변수를) 해제하다",
+  "level": 5
+ },
+ {
+  "id": "unsuccessful",
+  "word": "unsuccessful",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌʌnsəkˈsesfl",
+  "meaning": "실패한, 성공하지 못한",
+  "level": 3
+ },
+ {
+  "id": "untested",
+  "word": "untested",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ʌnˈtestɪd",
+  "meaning": "테스트되지 않은, 검증되지 않은",
+  "level": 4
+ },
+ {
+  "id": "untrusted",
+  "word": "untrusted",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ʌnˈtrʌstɪd",
+  "meaning": "신뢰할 수 없는, 검증되지 않은 (외부 입력 등)",
+  "level": 4
+ },
+ {
+  "id": "unusable",
+  "word": "unusable",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ʌnˈjuːzəbl",
+  "meaning": "쓸 수 없는, 사용 불가능한",
+  "level": 4
+ },
+ {
+  "id": "update",
+  "word": "update",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ʌpˈdeɪt",
+  "meaning": "① 갱신하다, 업데이트하다 ② 업데이트, 갱신(본)",
+  "level": 2
+ },
+ {
+  "id": "upgrade",
+  "word": "upgrade",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈʌpɡreɪd",
+  "meaning": "① 업그레이드, 상위 버전으로 올리기 ② 업그레이드하다",
+  "level": 3
+ },
+ {
+  "id": "upload",
+  "word": "upload",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈʌploʊd",
+  "meaning": "① 업로드하다, 올리다 ② 업로드",
+  "level": 2
+ },
+ {
+  "id": "upper-bound",
+  "word": "upper bound",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈʌpər baʊnd",
+  "meaning": "상한 — 넘을 수 없는 최대 한도",
+  "level": 5
+ },
+ {
+  "id": "urgency",
+  "word": "urgency",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɜːrdʒənsi",
+  "meaning": "긴급함 (urgent: 긴급한)",
+  "level": 5
+ },
+ {
+  "id": "uri",
+  "word": "URI",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌjuː.ɑːrˈaɪ",
+  "meaning": "URI — 자원을 가리키는 식별자·주소 (URL 을 포함하는 더 넓은 개념)",
+  "level": 6
+ },
+ {
+  "id": "usage",
+  "word": "usage",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈjuːsɪdʒ",
+  "meaning": "① 사용법, 쓰는 방식 ② 사용량 (토큰 usage 등)",
+  "level": 3
+ },
+ {
+  "id": "user-facing",
+  "word": "user-facing",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈjuːzər ˌfeɪsɪŋ",
+  "meaning": "사용자에게 직접 보이는, 사용자 대상의",
+  "level": 6
+ },
+ {
+  "id": "utility",
+  "word": "utility",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "juˈtɪləti",
+  "meaning": "① 유틸리티, 작은 도구 프로그램 ② 유용성, 효용",
+  "level": 5
+ },
+ {
+  "id": "valid",
+  "word": "valid",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈvælɪd",
+  "meaning": "① 유효한, 형식에 맞는 (valid JSON) — invalid: 유효하지 않은 ② 타당한, 근거 있는",
+  "level": 4
+ },
+ {
+  "id": "validation",
+  "word": "validation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌvælɪˈdeɪʃn",
+  "meaning": "검증 — 값·형식이 규칙에 맞는지 확인하는 것",
+  "level": 5
+ },
+ {
+  "id": "value",
+  "word": "value",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈvæljuː",
+  "meaning": "① 값, 수치 ② 가치",
+  "level": 2
+ }
+]

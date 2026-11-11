@@ -1,0 +1,521 @@
+[
+ {
+  "id": "fence",
+  "word": "fence",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "fens",
+  "meaning": "① (마크다운) 코드 펜스 — 코드 블록 앞뒤를 감싸는 백틱 세 개 줄 ② 울타리",
+  "level": 3
+ },
+ {
+  "id": "fetch",
+  "word": "fetch",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "fetʃ",
+  "meaning": "(데이터를) 가져오다, 조회해 오다",
+  "level": 5
+ },
+ {
+  "id": "few-shot",
+  "word": "few-shot",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈfjuː ʃɑːt",
+  "meaning": "퓨샷 — 프롬프트에 예시 몇 개를 넣어 보여 주는 방식",
+  "level": 6
+ },
+ {
+  "id": "field",
+  "word": "field",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "fiːld",
+  "meaning": "① (데이터 구조의) 필드, 항목 — 이름이 붙은 값 하나 ② 분야",
+  "level": 2
+ },
+ {
+  "id": "figure",
+  "word": "figure",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈfɪɡjər",
+  "meaning": "① 수치, 숫자 (금액·통계) ② 그림, 도표 ③ (figure out) 알아내다",
+  "level": 3
+ },
+ {
+  "id": "filename",
+  "word": "filename",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈfaɪlneɪm",
+  "meaning": "파일 이름",
+  "level": 2
+ },
+ {
+  "id": "fill-in",
+  "word": "fill in",
+  "pos": [
+   "동사구"
+  ],
+  "ipa": "fɪl ɪn",
+  "meaning": "(빈칸·자리를) 채우다, 채워 넣다",
+  "level": 2
+ },
+ {
+  "id": "filter",
+  "word": "filter",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈfɪltər",
+  "meaning": "① 거르다, 걸러 내다 ② 필터, 거르는 조건",
+  "level": 4
+ },
+ {
+  "id": "final",
+  "word": "final",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˈfaɪnl",
+  "meaning": "① 최종의, 마지막의 ② (결정이) 확정된, 번복 불가의 ③ 결승전, 기말시험",
+  "level": 2
+ },
+ {
+  "id": "finalize",
+  "word": "finalize",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈfaɪnəlaɪz",
+  "meaning": "마무리하다, 확정하다",
+  "level": 5
+ },
+ {
+  "id": "finance",
+  "word": "finance",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈfaɪnæns",
+  "meaning": "① 재무, 금융 ② 자금을 대다",
+  "level": 4
+ },
+ {
+  "id": "financial",
+  "word": "financial",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "faɪˈnænʃl",
+  "meaning": "재정의, 금융의",
+  "level": 4
+ },
+ {
+  "id": "fine-tune",
+  "word": "fine-tune",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌfaɪn ˈtuːn",
+  "meaning": "미세 조정하다 — 모델을 추가 데이터로 더 학습시키다",
+  "level": 6
+ },
+ {
+  "id": "fire",
+  "word": "fire",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈfaɪər",
+  "meaning": "(요청·호출을) 보내다, 실행하다 / (이벤트·훅이) 발동하다",
+  "level": 3
+ },
+ {
+  "id": "first-contact-resolution",
+  "word": "first-contact resolution",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˌfɜːrst ˈkɑːntækt ˌrezəˈluːʃn",
+  "meaning": "첫 응대 해결률 — 넘기지 않고 처음 응대에서 끝낸 비율",
+  "level": 6
+ },
+ {
+  "id": "fit",
+  "word": "fit",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "fɪt",
+  "meaning": "① (공간·한도 안에) 들어가다 ② (~에) 맞다, 적합하다 / 잘 맞는 것",
+  "level": 2
+ },
+ {
+  "id": "fix",
+  "word": "fix",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "fɪks",
+  "meaning": "① 고치다 / 수정(안), 해결책 ② (fixed) 고정된, 정해진",
+  "level": 2
+ },
+ {
+  "id": "fixture",
+  "word": "fixture",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈfɪkstʃər",
+  "meaning": "(테스트) 픽스처 — 테스트에 쓰려고 미리 준비해 두는 데이터·환경",
+  "level": 6
+ },
+ {
+  "id": "flag",
+  "word": "flag",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "flæɡ",
+  "meaning": "① (문제가 있다고) 표시하다 / 표시된 지적 항목 ② (명령줄) 옵션",
+  "level": 4
+ },
+ {
+  "id": "flatten",
+  "word": "flatten",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈflætn",
+  "meaning": "평평하게 하다 — (중첩 구조를) 단순하게 펼치다",
+  "level": 5
+ },
+ {
+  "id": "fleet",
+  "word": "fleet",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "fliːt",
+  "meaning": "(서버·기기의) 무리 — fleet of VMs: 여러 대의 가상 머신 집합",
+  "level": 5
+ },
+ {
+  "id": "float",
+  "word": "float",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "floʊt",
+  "meaning": "① (프로그래밍) 부동소수점 수, 실수형 — 소수점이 있는 숫자 ② (물에) 뜨다",
+  "level": 6
+ },
+ {
+  "id": "flow",
+  "word": "flow",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "floʊ",
+  "meaning": "① (처리·대화의) 흐름 ② (데이터가) 흘러 들어가다",
+  "level": 3
+ },
+ {
+  "id": "fluent",
+  "word": "fluent",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈfluːənt",
+  "meaning": "유창한, 술술 읽히는",
+  "level": 4
+ },
+ {
+  "id": "focus",
+  "word": "focus",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈfoʊkəs",
+  "meaning": "집중(하다), 초점(을 맞추다)",
+  "level": 2
+ },
+ {
+  "id": "follow-up",
+  "word": "follow-up",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ˈfɑːloʊ ʌp",
+  "meaning": "후속(의) — 앞선 결과를 이어받아 하는 질문·작업·조치",
+  "level": 4
+ },
+ {
+  "id": "footprint",
+  "word": "footprint",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈfʊtprɪnt",
+  "meaning": "차지하는 양 — (컨텍스트·메모리에서) 차지하는 크기",
+  "level": 5
+ },
+ {
+  "id": "force",
+  "word": "force",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "fɔːrs",
+  "meaning": "(억지로) ~하게 만들다, 강제하다 / 힘",
+  "level": 2
+ },
+ {
+  "id": "force-fit",
+  "word": "force-fit",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈfɔːrs fɪt",
+  "meaning": "(맞지 않는 것을) 억지로 끼워 맞추다",
+  "level": 5
+ },
+ {
+  "id": "fork",
+  "word": "fork",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "fɔːrk",
+  "meaning": "(세션·저장소를) 갈라 복제하다, 분기하다 / 분기본",
+  "level": 6
+ },
+ {
+  "id": "form",
+  "word": "form",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "fɔːrm",
+  "meaning": "① (작성하는) 양식, 서식 ② 형태, 형식 ③ 형성하다, 이루다",
+  "level": 2
+ },
+ {
+  "id": "format",
+  "word": "format",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈfɔːrmæt",
+  "meaning": "형식, 서식 / (형식에 맞게) 정리하다",
+  "level": 3
+ },
+ {
+  "id": "forward",
+  "word": "forward",
+  "pos": [
+   "부사",
+   "동사"
+  ],
+  "ipa": "ˈfɔːrwərd",
+  "meaning": "앞으로, 다음 단계로 / (받은 것을) 전달하다",
+  "level": 2
+ },
+ {
+  "id": "fragment",
+  "word": "fragment",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈfræɡmənt",
+  "meaning": "조각, 일부분",
+  "level": 5
+ },
+ {
+  "id": "framework",
+  "word": "framework",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈfreɪmwɜːrk",
+  "meaning": "① (소프트웨어) 프레임워크 — 앱의 뼈대와 규칙을 제공하는 기반 ② (생각·평가의) 틀",
+  "level": 5
+ },
+ {
+  "id": "free-text",
+  "word": "free-text",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˌfriː ˈtekst",
+  "meaning": "자유 형식 텍스트(의) — 정해진 구조·선택지 없이 쓴 글",
+  "level": 5
+ },
+ {
+  "id": "freely",
+  "word": "freely",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈfriːli",
+  "meaning": "자유롭게, 제한 없이",
+  "level": 2
+ },
+ {
+  "id": "freeze",
+  "word": "freeze",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "friːz",
+  "meaning": "동결하다, 고정해 더 바꾸지 않다 — frozen: 고정된",
+  "level": 3
+ },
+ {
+  "id": "frequently",
+  "word": "frequently",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈfriːkwəntli",
+  "meaning": "자주, 빈번히",
+  "level": 3
+ },
+ {
+  "id": "fresh",
+  "word": "fresh",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "freʃ",
+  "meaning": "① (이전 기록 없이) 새로운, 깨끗한 ② 방금 얻은, 최신의",
+  "level": 2
+ },
+ {
+  "id": "frontend",
+  "word": "frontend",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˈfrʌntend",
+  "meaning": "프런트엔드(의) — 사용자가 직접 보는 화면 쪽 부분·코드",
+  "level": 6
+ },
+ {
+  "id": "frontmatter",
+  "word": "frontmatter",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈfrʌntmætər",
+  "meaning": "프론트매터 — 파일 맨 위 --- 사이에 적는 설정",
+  "level": 6
+ },
+ {
+  "id": "function",
+  "word": "function",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈfʌŋkʃn",
+  "meaning": "① (프로그래밍) 함수 ② 기능, 역할 / 작동하다",
+  "level": 3
+ },
+ {
+  "id": "functionality",
+  "word": "functionality",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌfʌŋkʃəˈnæləti",
+  "meaning": "기능 (소프트웨어가 제공하는 기능 전체)",
+  "level": 5
+ },
+ {
+  "id": "fundamentally",
+  "word": "fundamentally",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˌfʌndəˈmentəli",
+  "meaning": "근본적으로",
+  "level": 4
+ },
+ {
+  "id": "gain",
+  "word": "gain",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ɡeɪn",
+  "meaning": "① 얻다, 확보하다 ② 이득, 향상(분) ③ (무게·속도를) 늘리다",
+  "level": 3
+ },
+ {
+  "id": "gap",
+  "word": "gap",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ɡæp",
+  "meaning": "(정보·범위의) 빈틈, 공백 — 빠져 있는 부분",
+  "level": 3
+ },
+ {
+  "id": "garbage",
+  "word": "garbage",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɡɑːrbɪdʒ",
+  "meaning": "쓰레기 — (프로그램에서) 쓸모없는 엉터리 출력·데이터",
+  "level": 3
+ },
+ {
+  "id": "gate",
+  "word": "gate",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ɡeɪt",
+  "meaning": "관문 — 조건을 통과해야 다음으로 넘어가게 막는 지점",
+  "level": 3
+ },
+ {
+  "id": "gather",
+  "word": "gather",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈɡæðər",
+  "meaning": "모으다, 수집하다",
+  "level": 2
+ }
+]

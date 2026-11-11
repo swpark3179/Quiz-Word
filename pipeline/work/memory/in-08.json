@@ -1,0 +1,516 @@
+[
+ {
+  "id": "doc",
+  "word": "doc",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "dɑːk",
+  "meaning": "문서 (document의 줄임말) — docs: 문서 자료, 설명서",
+  "level": 3
+ },
+ {
+  "id": "docstring",
+  "word": "docstring",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈdɑːkstrɪŋ",
+  "meaning": "독스트링 — 함수·클래스 안에 쓰는 설명 문자열",
+  "level": 6
+ },
+ {
+  "id": "document",
+  "word": "document",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈdɑːkjumənt",
+  "meaning": "① 문서, 서류 ② (문서로) 기록하다, 문서화하다",
+  "level": 2
+ },
+ {
+  "id": "document-analysis",
+  "word": "document-analysis",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈdɑːkjumənt əˈnæləsɪs",
+  "meaning": "문서 분석(의) — 수집한 문서를 읽고 분석하는 단계·서브에이전트",
+  "level": 5
+ },
+ {
+  "id": "document-processing",
+  "word": "document-processing",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈdɑːkjumənt ˌprɑːsesɪŋ",
+  "meaning": "문서 처리(의) — 문서를 읽고 추출·가공하는 작업",
+  "level": 5
+ },
+ {
+  "id": "document-type",
+  "word": "document-type",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈdɑːkjumənt taɪp",
+  "meaning": "문서 유형 — 송장·영수증처럼 문서를 나눈 종류",
+  "level": 4
+ },
+ {
+  "id": "documentation",
+  "word": "documentation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌdɑːkjumenˈteɪʃn",
+  "meaning": "① (공식) 문서, 설명서 ② 문서화, 기록 작업",
+  "level": 5
+ },
+ {
+  "id": "domain",
+  "word": "domain",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "doʊˈmeɪn",
+  "meaning": "① (지식의) 분야, 영역 ② (웹) 도메인 — 사이트 주소",
+  "level": 4
+ },
+ {
+  "id": "domestic",
+  "word": "domestic",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "dəˈmestɪk",
+  "meaning": "국내의",
+  "level": 4
+ },
+ {
+  "id": "downgrade",
+  "word": "downgrade",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈdaʊnɡreɪd",
+  "meaning": "(등급·설정을) 낮추다 / 하향",
+  "level": 5
+ },
+ {
+  "id": "dozen",
+  "word": "dozen",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈdʌzn",
+  "meaning": "12개 — dozens of: 수십 개의",
+  "level": 2
+ },
+ {
+  "id": "draft",
+  "word": "draft",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "dræft",
+  "meaning": "초안(을 쓰다)",
+  "level": 4
+ },
+ {
+  "id": "drive",
+  "word": "drive",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "draɪv",
+  "meaning": "(루프·과정을) 구동하다, 이끌다 — ~-driven: ~에 따라 움직이는",
+  "level": 2
+ },
+ {
+  "id": "driver",
+  "word": "driver",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈdraɪvər",
+  "meaning": "① (소프트웨어) 드라이버 — 장치·DB 연결을 맡는 프로그램 ② 운전자 ③ 원동력, 주요 요인",
+  "level": 3
+ },
+ {
+  "id": "drop",
+  "word": "drop",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "drɑːp",
+  "meaning": "① (정보를) 빠뜨리다, 버리다 ② 떨어지다, 줄다",
+  "level": 2
+ },
+ {
+  "id": "due-diligence",
+  "word": "due diligence",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˌduː ˈdɪlɪdʒəns",
+  "meaning": "실사 — 거래·투자 전에 상대 회사를 꼼꼼히 조사하는 일",
+  "level": 6
+ },
+ {
+  "id": "dummy",
+  "word": "dummy",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ˈdʌmi",
+  "meaning": "더미, 가짜의 — 형식을 맞추려고 넣는 의미 없는 값",
+  "level": 5
+ },
+ {
+  "id": "dump",
+  "word": "dump",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "dʌmp",
+  "meaning": "(대량 출력을) 한꺼번에 쏟아 내다 / 덤프(통째로 뽑아낸 출력)",
+  "level": 5
+ },
+ {
+  "id": "duplicate",
+  "word": "duplicate",
+  "pos": [
+   "형용사",
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈduːplɪkət",
+  "meaning": "중복된 (것) / (이미 있는 것과) 중복되다, 되풀이하다",
+  "level": 5
+ },
+ {
+  "id": "duration",
+  "word": "duration",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "duˈreɪʃn",
+  "meaning": "(지속) 기간, 지속 시간 — for the duration of: ~하는 동안 내내",
+  "level": 4
+ },
+ {
+  "id": "dynamic",
+  "word": "dynamic",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "daɪˈnæmɪk",
+  "meaning": "동적인 — 미리 고정하지 않고 실행 중 상황에 맞춰 정하는",
+  "level": 4
+ },
+ {
+  "id": "edge",
+  "word": "edge",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "edʒ",
+  "meaning": "가장자리, 끝",
+  "level": 3
+ },
+ {
+  "id": "edge-case",
+  "word": "edge case",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈedʒ keɪs",
+  "meaning": "엣지 케이스 — 드물게 생기는 경계·예외 상황",
+  "level": 6
+ },
+ {
+  "id": "edit",
+  "word": "edit",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈedɪt",
+  "meaning": "① (파일·글을) 편집하다, 수정하다 ② 편집, 수정 (사항)",
+  "level": 3
+ },
+ {
+  "id": "editor",
+  "word": "editor",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈedɪtər",
+  "meaning": "① (소프트웨어) 편집기, 에디터 ② 편집자",
+  "level": 3
+ },
+ {
+  "id": "effect",
+  "word": "effect",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ɪˈfekt",
+  "meaning": "효과, 영향, (어떤 원인이 낳는) 현상",
+  "level": 2
+ },
+ {
+  "id": "effective",
+  "word": "effective",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ɪˈfektɪv",
+  "meaning": "① 효과적인 ② 실질적인, 실제로 작동하는",
+  "level": 3
+ },
+ {
+  "id": "efficiently",
+  "word": "efficiently",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ɪˈfɪʃntli",
+  "meaning": "효율적으로 — 시간·자원을 낭비하지 않고",
+  "level": 4
+ },
+ {
+  "id": "effort",
+  "word": "effort",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈefərt",
+  "meaning": "① 노력, 수고 ② (API) effort — 모델이 답에 들이는 사고·토큰 사용량 수준을 정하는 설정 (low·medium·high 등)",
+  "level": 2
+ },
+ {
+  "id": "either",
+  "word": "either",
+  "pos": [
+   "한정사",
+   "대명사",
+   "접속사",
+   "부사"
+  ],
+  "ipa": "ˈiːðər",
+  "meaning": "① (둘 중) 어느 쪽이든, 어느 한쪽의 ② (부정문에서) 어느 쪽도 (~않다) ③ (either A or B) A나 B 중 하나 ④ (부정문 끝) ~도 역시",
+  "level": 2
+ },
+ {
+  "id": "electric",
+  "word": "electric",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ɪˈlektrɪk",
+  "meaning": "① 전기의, 전기로 움직이는 ② 짜릿한, 열광적인",
+  "level": 2
+ },
+ {
+  "id": "eliminate",
+  "word": "eliminate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪˈlɪmɪneɪt",
+  "meaning": "없애다, 제거하다",
+  "level": 4
+ },
+ {
+  "id": "elsewhere",
+  "word": "elsewhere",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈelswer",
+  "meaning": "다른 곳에(서)",
+  "level": 3
+ },
+ {
+  "id": "embed",
+  "word": "embed",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪmˈbed",
+  "meaning": "(안에) 끼워 넣다, 심어 두다",
+  "level": 5
+ },
+ {
+  "id": "employee",
+  "word": "employee",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ɪmˈplɔɪiː",
+  "meaning": "직원, 종업원",
+  "level": 3
+ },
+ {
+  "id": "enable",
+  "word": "enable",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪˈneɪbl",
+  "meaning": "① (기능을) 켜다, 활성화하다 ② ~할 수 있게 하다",
+  "level": 4
+ },
+ {
+  "id": "encode",
+  "word": "encode",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪnˈkoʊd",
+  "meaning": "① (규칙·지식을 정해진 곳에) 담아 두다, 명시하다 ② 부호화하다, 인코딩하다",
+  "level": 6
+ },
+ {
+  "id": "encrypt",
+  "word": "encrypt",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪnˈkrɪpt",
+  "meaning": "암호화하다 (↔ decrypt: 복호화하다)",
+  "level": 6
+ },
+ {
+  "id": "end-to-end",
+  "word": "end-to-end",
+  "pos": [
+   "형용사",
+   "부사"
+  ],
+  "ipa": "ˌend tə ˈend",
+  "meaning": "처음부터 끝까지의, 전 과정의",
+  "level": 5
+ },
+ {
+  "id": "endpoint",
+  "word": "endpoint",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈendpɔɪnt",
+  "meaning": "① (API) 엔드포인트 — 요청을 받는 서버 주소(URL) ② 끝점, 종점",
+  "level": 6
+ },
+ {
+  "id": "engineer",
+  "word": "engineer",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˌendʒɪˈnɪr",
+  "meaning": "① 엔지니어, 기술자 ② (engineering) 공학, 엔지니어링 (부서) ③ (교묘하게) 설계하다, 꾸미다",
+  "level": 2
+ },
+ {
+  "id": "enhance",
+  "word": "enhance",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪnˈhæns",
+  "meaning": "높이다, 강화하다",
+  "level": 4
+ },
+ {
+  "id": "enterprise",
+  "word": "enterprise",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈentərpraɪz",
+  "meaning": "① 기업, 회사 (enterprise ~: 기업용) ② (대규모) 사업, 진취성",
+  "level": 4
+ },
+ {
+  "id": "entire",
+  "word": "entire",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ɪnˈtaɪər",
+  "meaning": "전체의, 온 — entirely: 완전히, 아예",
+  "level": 3
+ },
+ {
+  "id": "entity",
+  "word": "entity",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈentəti",
+  "meaning": "엔티티, 개체 — 고객·주문처럼 데이터로 다루는 대상 하나",
+  "level": 5
+ },
+ {
+  "id": "entrypoint",
+  "word": "entrypoint",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈentri pɔɪnt",
+  "meaning": "진입점 — 실행·처리 흐름이 시작되는 곳",
+  "level": 6
+ },
+ {
+  "id": "enum",
+  "word": "enum",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈiːnəm",
+  "meaning": "열거형 — 허용 값을 미리 정해 둔 목록 타입",
+  "level": 6
+ },
+ {
+  "id": "enumerate",
+  "word": "enumerate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪˈnuːməreɪt",
+  "meaning": "(하나하나) 열거하다, 나열하다",
+  "level": 6
+ },
+ {
+  "id": "environment",
+  "word": "environment",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ɪnˈvaɪrənmənt",
+  "meaning": "(실행) 환경 — 프로그램이 돌아가는 머신·설정 조건",
+  "level": 2
+ },
+ {
+  "id": "equally",
+  "word": "equally",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈiːkwəli",
+  "meaning": "① 똑같이, 동등하게 ② (문장 앞) 마찬가지로, 동시에",
+  "level": 3
+ }
+]

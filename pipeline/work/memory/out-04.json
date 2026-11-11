@@ -1,0 +1,271 @@
+{
+  "built-in": {
+    "roots": [{ "part": "built", "ko": "지어진, 만들어진" }, { "part": "in", "ko": "안에" }],
+    "story": "따로 달 필요 없이 처음부터 안(in)에 지어(built) 넣은 → 내장된, 기본 제공되는",
+    "hook": "빌트인 → '빌트인 가전(붙박이)'의 빌트인 → 내장된"
+  },
+  "bulk": {
+    "origin": "고대 노르드어 bulki (배에 쌓은 짐)",
+    "story": "낱개로 세지 않고 배에 통째로 쌓아 실은 짐더미(bulki) → 대량, 대부분",
+    "hook": "벌크 → '벌크 구매(대량 구매)'의 벌크 → 대량"
+  },
+  "burn": {
+    "origin": "고대 영어 bærnan (불태우다)",
+    "story": "장작을 태워(burn) 재만 남기듯 토큰과 시간을 날린다 → 헛되이 써 버리다, 태우다",
+    "hook": "번 → '번아웃(다 타 버림)'의 번 → 태우다, 써 버리다",
+    "family": ["burnout", "brand", "brandy"]
+  },
+  "by-hand": {
+    "roots": [{ "part": "by", "ko": "~으로" }, { "part": "hand", "ko": "손" }],
+    "story": "도구에 맡기지 않고 사람 손(hand)으로(by) 직접 → 손으로, 수작업으로"
+  },
+  "cache": {
+    "origin": "프랑스어 cache (은닉처) ← cacher (숨기다)",
+    "story": "다시 쓸 것을 가까운 곳에 숨겨(cacher) 두었다가 꺼내 쓴다 → 캐시(하다)",
+    "hook": "캐시 → 현금(cash)처럼 곁에 두고 바로 꺼내 쓴다 → 캐시, 저장해 두고 재사용하다"
+  },
+  "call": {
+    "origin": "고대 노르드어 kalla (큰 소리로 부르다)",
+    "story": "이름을 크게 불러(kalla) 와서 일하게 한다 → 호출하다, 부르다, 이름 붙이다",
+    "hook": "콜 → '콜택시'·'콜센터'의 콜 → 부르다, 호출",
+    "family": ["recall", "caller", "callback"]
+  },
+  "callback": {
+    "roots": [{ "part": "call", "ko": "부르다, 호출" }, { "part": "back", "ko": "되돌려" }],
+    "story": "때가 되면 이쪽으로 되돌려(back) 불러(call) 주도록 맡겨 둔 것 → 콜백, 회신 전화",
+    "family": ["call", "feedback", "rollback", "fallback"]
+  },
+  "caller": {
+    "roots": [{ "part": "call", "ko": "부르다, 호출하다" }, { "part": "-er", "ko": "~하는 쪽" }],
+    "story": "함수나 도구를 부르는(call) 쪽(er) → 호출자",
+    "family": ["call", "callee", "recall"]
+  },
+  "candidate": {
+    "roots": [{ "part": "candid", "ko": "흰, 빛나는" }, { "part": "-ate", "ko": "~한 사람" }],
+    "origin": "라틴어 candidatus (흰 옷을 입은 사람)",
+    "story": "로마에서 관직에 나선 사람이 흰(candid) 토가를 입던 데서 → 후보",
+    "family": ["candid", "candle", "incandescent"]
+  },
+  "cap": {
+    "origin": "후기 라틴어 cappa (머리에 쓰는 덮개)",
+    "story": "머리 위에 모자(cap)를 씌워 그 위로는 못 올라가게 한다 → 상한(을 두다)",
+    "hook": "캡 → 꼭대기에 씌우는 '캡 모자' → 상한",
+    "family": ["cape", "escape", "chapel"]
+  },
+  "capacity": {
+    "roots": [{ "part": "cap", "ko": "잡다, 담다" }, { "part": "-acity", "ko": "~하는 능력" }],
+    "origin": "라틴어 capax (많이 담을 수 있는) ← capere",
+    "story": "얼마나 담아(cap) 낼 수 있는가(acity) → 용량, 처리 능력",
+    "hook": "커패시티 → 줄여서 '캐파가 모자라다'의 캐파 → 용량, 처리 능력",
+    "family": ["capable", "capture", "captive", "accept"]
+  },
+  "capture": {
+    "roots": [{ "part": "capt", "ko": "잡다" }, { "part": "-ure", "ko": "~하는 일" }],
+    "origin": "라틴어 captura ← capere (잡다)",
+    "story": "흘러가 버리기 전에 붙잡아(capt) 둔다(ure) → 담아 두다, 포착하다",
+    "hook": "캡처 → '화면 캡처'로 담아 두기 → 담아 두다, 포착하다",
+    "family": ["captive", "capable", "accept", "capacity"]
+  },
+  "carefully": {
+    "roots": [{ "part": "care", "ko": "주의, 마음 씀" }, { "part": "-ful", "ko": "가득한" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "마음 씀(care)이 가득(ful)하게(ly) → 주의 깊게, 신중하게",
+    "family": ["care", "careless", "caregiver"]
+  },
+  "carrier": {
+    "roots": [{ "part": "carri", "ko": "나르다(carry)" }, { "part": "-er", "ko": "~하는 사람·업체" }],
+    "story": "맡은 짐을 실어 나르는(carry) 업체(er) → 운송업체, 배송사",
+    "hook": "캐리어 → 짐을 나르는 여행 가방 '캐리어' → 실어 나르는 쪽, 운송업체",
+    "family": ["carry", "carriage", "cargo", "car"]
+  },
+  "carry": {
+    "origin": "라틴어 carrus (수레) → 수레로 나르다",
+    "story": "수레(carrus)에 싣고 가듯 정보를 몸에 달고 간다 → 지니다, 달고 가다, 옮기다",
+    "hook": "캐리 → 짐 나르는 '캐리어'의 캐리 → 옮기다, 지니다",
+    "family": ["car", "cargo", "carriage", "charge"]
+  },
+  "case": {
+    "origin": "라틴어 casus (떨어짐, 일어난 일)",
+    "story": "눈앞에 뚝 떨어진(casus) 일 하나하나 → 경우, 사례, (처리할) 건",
+    "hook": "케이스 → '케이스 바이 케이스(경우에 따라)' → 경우, 사례",
+    "family": ["casual", "occasion", "accident"]
+  },
+  "case-facts": {
+    "roots": [{ "part": "case", "ko": "건, 사안" }, { "part": "facts", "ko": "사실들" }],
+    "story": "그 건(case)에서 한 글자도 틀리면 안 되는 사실(facts)들 → 케이스 사실, 핵심 사실"
+  },
+  "catalog": {
+    "roots": [{ "part": "cata-", "ko": "아래로, 죽" }, { "part": "log", "ko": "말하다, 세다" }],
+    "origin": "그리스어 katalogos (죽 세어 적은 명부)",
+    "story": "있는 것을 위에서 아래로(cata) 죽 세어(log) 적은 것 → 카탈로그, 목록",
+    "family": ["dialogue", "prologue", "monologue"]
+  },
+  "catch": {
+    "origin": "라틴어 captare (잡으려고 쫓다)",
+    "story": "빠져나가려는 문제를 쫓아가 붙잡는다 → 잡아내다, 발견하다",
+    "hook": "캐치 → 야구에서 공을 '캐치'하듯 → 잡아내다",
+    "family": ["chase", "capture", "captive"]
+  },
+  "category": {
+    "roots": [{ "part": "cat-", "ko": "~에 대해(kata)" }, { "part": "egor", "ko": "광장에서 말하다" }],
+    "origin": "그리스어 katēgoria (~라고 단정해 말함)",
+    "story": "사물에 대해(cat) '이건 무엇'이라 말해(egor) 가른 갈래 → 범주, 카테고리",
+    "family": ["allegory", "agora"]
+  },
+  "cause": {
+    "origin": "라틴어 causa (이유, 까닭)",
+    "story": "왜 그렇게 됐는지의 까닭(causa) → 원인, 일으키다",
+    "hook": "코즈 → 비'코즈'(because, 왜냐하면)의 그 cause → 원인",
+    "family": ["because", "excuse", "accuse"]
+  },
+  "cell": {
+    "origin": "라틴어 cella (작은 방)",
+    "story": "벌집의 작은 방(cella) 하나하나처럼 나뉜 한 칸 → (표의) 칸, 셀, 세포",
+    "hook": "셀 → 엑셀 시트의 '셀' 한 칸 → 표의 칸",
+    "family": ["cellar", "cellular", "conceal"]
+  },
+  "certain": {
+    "roots": [{ "part": "cert", "ko": "가려낸, 확실한" }, { "part": "-ain", "ko": "~한" }],
+    "origin": "라틴어 certus (가려져 정해진) ← cernere",
+    "story": "체로 쳐서 가려낸(cert) 듯 틀림없는(ain) → 확실한, 확신하는, 특정한",
+    "family": ["certify", "certificate", "ascertain", "concern"]
+  },
+  "chain": {
+    "origin": "라틴어 catena (사슬)",
+    "story": "고리가 줄줄이 물린 사슬(catena)처럼 단계를 순서대로 잇는다 → 체인, 연쇄, 잇다",
+    "hook": "체인 → 자전거 '체인'·'체인점'처럼 줄줄이 이어진 → 연쇄",
+    "family": ["concatenate", "catenary"]
+  },
+  "challenge": {
+    "origin": "고대 프랑스어 chalenge (비난, 이의 제기)",
+    "story": "상대의 말에 '정말 그런가' 하고 따지고 든다 → 이의를 제기하다, 도전하다",
+    "hook": "챌린지 → SNS '○○ 챌린지'의 도전 → 어려운 과제, 도전"
+  },
+  "chance": {
+    "origin": "라틴어 cadentia (떨어짐, 주사위가 나온 결과)",
+    "story": "던진 주사위가 어떻게 떨어질지(cadere) 모르는 일 → 가능성, 확률, 우연",
+    "hook": "찬스 → '찬스가 왔다'의 찬스 → 기회, 가능성",
+    "family": ["case", "accident", "cadence"]
+  },
+  "channel": {
+    "origin": "라틴어 canalis (물길, 도랑)",
+    "story": "물이 흐르는 길(canalis)처럼 말과 물건이 오가는 길 → 경로, 채널, (한쪽으로) 돌리다",
+    "hook": "채널 → TV '채널'도 전파가 흐르는 길 → 경로, 채널",
+    "family": ["canal", "cane", "canyon"]
+  },
+  "character": {
+    "origin": "그리스어 kharaktēr (새긴 표시)",
+    "story": "돌에 새긴 표시(kharaktēr) 하나, 사람에게 새겨진 됨됨이 → 문자, 성격, 등장인물",
+    "hook": "캐릭터 → 만화 '캐릭터'마다 뚜렷한 성격 → 성격, 등장인물",
+    "family": ["characteristic", "characterize"]
+  },
+  "charge": {
+    "origin": "후기 라틴어 carricare (수레에 짐을 싣다)",
+    "story": "수레에 짐을 싣듯(carricare) 전기를 싣고 값을 지운다 → 충전하다, 청구하다, 요금",
+    "family": ["car", "carry", "cargo", "discharge"]
+  },
+  "charger": {
+    "roots": [{ "part": "charg", "ko": "싣다, 채우다(charge)" }, { "part": "-er", "ko": "~하는 것" }],
+    "story": "배터리에 전기를 채워(charge) 넣는 기기(er) → 충전기",
+    "family": ["charge", "recharge", "discharge", "cargo"]
+  },
+  "chatbot": {
+    "roots": [{ "part": "chat", "ko": "잡담, 대화" }, { "part": "bot", "ko": "로봇(robot)" }],
+    "story": "사람과 수다(chat) 떨듯 대화하며 답하는 로봇(bot) → 챗봇",
+    "family": ["chat", "chatter", "robot"]
+  },
+  "checkable": {
+    "roots": [{ "part": "check", "ko": "확인하다" }, { "part": "-able", "ko": "~할 수 있는" }],
+    "story": "맞는지 틀리는지 확인(check)할 수 있는(able) → 확인할 수 있는, 검증 가능한",
+    "family": ["check", "checkup", "recheck"]
+  },
+  "checker": {
+    "roots": [{ "part": "check", "ko": "확인하다" }, { "part": "-er", "ko": "~하는 것·사람" }],
+    "story": "조건이 맞는지 확인(check)하는 것·사람(er) → 검사기, 검사원",
+    "family": ["check", "checklist", "checkpoint"]
+  },
+  "checklist": {
+    "roots": [{ "part": "check", "ko": "확인(표시)" }, { "part": "list", "ko": "목록" }],
+    "story": "하나씩 확인(check) 표시를 해 나가는 목록(list) → 체크리스트, 점검 목록",
+    "family": ["checkbox", "checkpoint", "wishlist"]
+  },
+  "checkout": {
+    "roots": [{ "part": "check", "ko": "확인하다" }, { "part": "out", "ko": "밖으로" }],
+    "story": "확인(check)을 거쳐 밖(out)으로 꺼내 온다, 저장소에서도 가게에서도 → 체크아웃, 결제 단계",
+    "hook": "체크아웃 → 호텔 '체크아웃'처럼 정산하고 나온다 → 결제 단계"
+  },
+  "checkpoint": {
+    "roots": [{ "part": "check", "ko": "확인하다" }, { "part": "point", "ko": "지점" }],
+    "story": "멈춰서 확인(check)하고 가는 지점(point), 여기까지는 저장 → 체크포인트, 검문소",
+    "family": ["check", "breakpoint", "endpoint", "viewpoint"]
+  },
+  "chip": {
+    "origin": "고대 영어 cipp (나무토막, 깎인 조각)",
+    "story": "깎아 낸 얇은 조각(chip), 실리콘 조각 위에 회로를 새겼다 → (반도체) 칩, 조각",
+    "hook": "칩 → 감자'칩'도 얇게 썬 조각 → 조각, 칩"
+  },
+  "chunk": {
+    "story": "큰 덩어리를 한입 크기로 뚝뚝 썰어 낸 토막 하나 → 청크, 조각, 조각으로 나누다"
+  },
+  "ci": {
+    "origin": "Continuous Integration",
+    "story": "커밋할 때마다 끊임없이(Continuous) 코드를 합쳐(Integration) 빌드·테스트한다 → 지속적 통합"
+  },
+  "cite": {
+    "origin": "라틴어 citare (불러내다)",
+    "story": "증인을 불러내듯(citare) 근거가 되는 글을 불러온다 → 인용하다, 근거로 들다",
+    "family": ["recite", "excite", "incite"]
+  },
+  "claim": {
+    "origin": "라틴어 clamare (크게 외치다)",
+    "story": "'이건 사실이다, 내 몫이다' 하고 크게 외친다(clamare) → 주장(하다), 청구",
+    "hook": "클레임 → '고객 클레임'처럼 내 권리를 내세운다 → 주장, 청구",
+    "family": ["exclaim", "proclaim", "acclaim", "clamor"]
+  },
+  "claim-to-source": {
+    "roots": [{ "part": "claim", "ko": "주장" }, { "part": "to", "ko": "~에" }, { "part": "source", "ko": "출처" }],
+    "story": "주장(claim) 하나하나를 그 근거 출처(source)에(to) 짝지어 놓은 → 주장-출처 (대응)의"
+  },
+  "clarify": {
+    "roots": [{ "part": "clar", "ko": "맑은, 분명한" }, { "part": "-ify", "ko": "~하게 만들다" }],
+    "origin": "라틴어 clarificare (맑게 만들다)",
+    "story": "흐릿한 것을 맑게(clar) 만든다(ify) → 명확히 하다, 분명히 묻다",
+    "family": ["clear", "clarity", "declare"]
+  },
+  "class": {
+    "origin": "라틴어 classis (로마 시민을 나눈 등급)",
+    "story": "시민을 등급(classis)으로 나누듯 같은 것끼리 묶은 갈래 → 클래스, 종류, 부류, 학급",
+    "hook": "클래스 → '클래스가 다르다(급이 다르다)'의 클래스 → 부류, 종류",
+    "family": ["classic", "classify", "classical"]
+  },
+  "classifier": {
+    "roots": [{ "part": "class", "ko": "부류" }, { "part": "-ifi", "ko": "~로 만들다(-ify)" }, { "part": "-er", "ko": "~하는 것" }],
+    "story": "입력을 정해진 부류(class)로 나눠 주는(ify) 것(er) → 분류기",
+    "family": ["classify", "class", "classic"]
+  },
+  "classify": {
+    "roots": [{ "part": "class", "ko": "부류" }, { "part": "-ify", "ko": "~로 만들다" }],
+    "story": "뒤섞인 것을 기준에 따라 부류(class)별로 만든다(ify) → 분류하다",
+    "family": ["class", "classic", "declassify"]
+  },
+  "cleanly": {
+    "roots": [{ "part": "clean", "ko": "깨끗한" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "섞이거나 꼬인 데 없이 깨끗(clean)하게(ly) 딱 떨어지게 → 깔끔하게, 깨끗이",
+    "family": ["clean", "cleanse", "cleaner"]
+  },
+  "cleanup": {
+    "roots": [{ "part": "clean", "ko": "깨끗이 하다" }, { "part": "up", "ko": "완전히, 싹" }],
+    "story": "어질러진 것을 깨끗이(clean) 싹(up) 치우는 일 → 정리, 정제, 청소",
+    "family": ["clean", "cleanse", "cleaner"]
+  },
+  "clear": {
+    "origin": "라틴어 clarus (맑은, 밝은)",
+    "story": "안개 없이 맑아(clarus) 훤히 보인다, 걸려 있던 것이 걷힌다 → 분명한, 해소되다, 지우다",
+    "hook": "클리어 → 게임 스테이지 '클리어' → 해소되다, 깨끗이 지우다",
+    "family": ["clarify", "clarity", "declare"]
+  },
+  "clearly": {
+    "roots": [{ "part": "clear", "ko": "맑은, 분명한" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "흐린 데 없이 맑게(clear) 훤히 보이도록(ly) → 분명히, 또렷하게",
+    "family": ["clear", "clarify", "clarity", "unclear"]
+  }
+}

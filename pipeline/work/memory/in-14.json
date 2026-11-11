@@ -1,0 +1,521 @@
+[
+ {
+  "id": "library",
+  "word": "library",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈlaɪbreri",
+  "meaning": "① (코드) 라이브러리 — 재사용할 수 있게 묶은 코드 모음 ② (도구 등의) 모음 ③ 도서관",
+  "level": 2
+ },
+ {
+  "id": "license",
+  "word": "license",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈlaɪsns",
+  "meaning": "① 라이선스, 사용 허가(권) ② 면허(증) ③ 허가하다",
+  "level": 3
+ },
+ {
+  "id": "lifecycle",
+  "word": "lifecycle",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈlaɪfsaɪkl",
+  "meaning": "수명 주기 — 만들어져 쓰이다 없어지기까지 거치는 단계",
+  "level": 5
+ },
+ {
+  "id": "lifetime",
+  "word": "lifetime",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈlaɪftaɪm",
+  "meaning": "수명, 유효 시간 — (캐시 등이) 유지되는 기간",
+  "level": 3
+ },
+ {
+  "id": "lightweight",
+  "word": "lightweight",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈlaɪtweɪt",
+  "meaning": "가벼운, 경량의 — 비용·자원이 적게 드는",
+  "level": 4
+ },
+ {
+  "id": "limit",
+  "word": "limit",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈlɪmɪt",
+  "meaning": "한도, 제한(하다)",
+  "level": 2
+ },
+ {
+  "id": "line-item",
+  "word": "line-item",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈlaɪn ˌaɪtəm",
+  "meaning": "(송장·청구서의) 품목 행 — 한 줄에 하나씩 적힌 개별 품목·금액",
+  "level": 6
+ },
+ {
+  "id": "lint",
+  "word": "lint",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "lɪnt",
+  "meaning": "린트(하다) — 코드의 스타일·잠재 오류를 정적으로 검사하다",
+  "level": 6
+ },
+ {
+  "id": "live",
+  "word": "live",
+  "pos": [
+   "동사",
+   "형용사"
+  ],
+  "ipa": "lɪv",
+  "meaning": "① (파일·코드가) ~에 있다, 위치하다 ② 살다 ③ (형용사, laɪv) 실시간의, 실제 운영 중인",
+  "level": 2
+ },
+ {
+  "id": "llm",
+  "word": "LLM",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌel el ˈem",
+  "meaning": "대규모 언어 모델(Large Language Model)",
+  "level": 6
+ },
+ {
+  "id": "load",
+  "word": "load",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "loʊd",
+  "meaning": "① (설정·파일이) 로드되다, 불러오다 ② 부하, 처리량",
+  "level": 3
+ },
+ {
+  "id": "load-balancer",
+  "word": "load balancer",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈloʊd ˌbælənsər",
+  "meaning": "로드 밸런서 — 들어오는 요청을 여러 서버에 고르게 나눠 주는 장치",
+  "level": 6
+ },
+ {
+  "id": "local",
+  "word": "local",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈloʊkl",
+  "meaning": "로컬의 — (서버·CI가 아닌) 내 컴퓨터·환경의",
+  "level": 2
+ },
+ {
+  "id": "locate",
+  "word": "locate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈloʊkeɪt",
+  "meaning": "(위치를) 찾아내다 / (be located) ~에 있다",
+  "level": 4
+ },
+ {
+  "id": "location",
+  "word": "location",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "loʊˈkeɪʃn",
+  "meaning": "위치, 장소",
+  "level": 2
+ },
+ {
+  "id": "lock",
+  "word": "lock",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "lɑːk",
+  "meaning": "락, 잠금(을 걸다) — 동시에 같은 자원을 쓰지 못하게 막는 장치",
+  "level": 2
+ },
+ {
+  "id": "lockfile",
+  "word": "lockfile",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈlɑːkfaɪl",
+  "meaning": "락파일 — 설치된 패키지의 정확한 버전을 고정해 기록한 파일 (예: package-lock.json)",
+  "level": 6
+ },
+ {
+  "id": "log",
+  "word": "log",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "lɔːɡ",
+  "meaning": "① 로그, (실행) 기록 ② (로그에) 기록하다, 남기다",
+  "level": 4
+ },
+ {
+  "id": "logic",
+  "word": "logic",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈlɑːdʒɪk",
+  "meaning": "(코드의) 처리 로직, 논리",
+  "level": 3
+ },
+ {
+  "id": "long-lived",
+  "word": "long-lived",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌlɔːŋ ˈlɪvd",
+  "meaning": "수명이 긴, 오래 유효한 (long-lived credentials: 장기 자격 증명)",
+  "level": 4
+ },
+ {
+  "id": "long-running",
+  "word": "long-running",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌlɔːŋ ˈrʌnɪŋ",
+  "meaning": "장시간 실행되는, 오래 이어지는",
+  "level": 5
+ },
+ {
+  "id": "lookup",
+  "word": "lookup",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈlʊkʌp",
+  "meaning": "조회 — 키·ID로 데이터를 찾아오는 것 (look up: 조회하다)",
+  "level": 5
+ },
+ {
+  "id": "loop",
+  "word": "loop",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "luːp",
+  "meaning": "① 루프, 반복 실행 구조 (agent loop 에이전트 루프) ② (개선을 되풀이하는) 순환 과정 ③ (infinite loop) 무한 반복 ④ 반복하다, 맴돌다",
+  "level": 4
+ },
+ {
+  "id": "loss",
+  "word": "loss",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "lɔːs",
+  "meaning": "손실, (데이터·상태·맥락을) 잃음",
+  "level": 2
+ },
+ {
+  "id": "lost-in-the-middle",
+  "word": "lost-in-the-middle",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˌlɔːst ɪn ðə ˈmɪdl",
+  "meaning": "로스트 인 더 미들 — 긴 입력의 중간에 묻힌 정보를 모델이 놓치기 쉬운 현상",
+  "level": 6
+ },
+ {
+  "id": "lower",
+  "word": "lower",
+  "pos": [
+   "동사",
+   "형용사"
+  ],
+  "ipa": "ˈloʊər",
+  "meaning": "① 낮추다, 내리다 ② 더 낮은, 아래쪽의",
+  "level": 2
+ },
+ {
+  "id": "maintain",
+  "word": "maintain",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "meɪnˈteɪn",
+  "meaning": "① 유지하다, 계속 지니다 ② (코드·시스템을) 유지보수하다",
+  "level": 3
+ },
+ {
+  "id": "major",
+  "word": "major",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈmeɪdʒər",
+  "meaning": "중대한, 주요한 — major bug 심각한 버그",
+  "level": 2
+ },
+ {
+  "id": "malicious",
+  "word": "malicious",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "məˈlɪʃəs",
+  "meaning": "악의적인, 악성의",
+  "level": 5
+ },
+ {
+  "id": "management",
+  "word": "management",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈmænɪdʒmənt",
+  "meaning": "관리 — context management 컨텍스트 관리",
+  "level": 3
+ },
+ {
+  "id": "manifest",
+  "word": "manifest",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈmænɪfest",
+  "meaning": "① 매니페스트 — 대상 항목과 진행 상태를 적어 둔 목록(파일) ② 드러나다, 나타나다",
+  "level": 6
+ },
+ {
+  "id": "manually",
+  "word": "manually",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈmænjuəli",
+  "meaning": "수동으로, 사람이 직접 (manual: 수동의)",
+  "level": 4
+ },
+ {
+  "id": "map",
+  "word": "map",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "mæp",
+  "meaning": "① 대응시키다, 매핑하다 (mapping: 대응 관계) ② 지도 / (구조를) 파악하다",
+  "level": 2
+ },
+ {
+  "id": "mark",
+  "word": "mark",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "mɑːrk",
+  "meaning": "① (~로) 표시하다, 지정하다 ② 부호, 기호 (punctuation mark: 문장 부호) ③ 표시, 자국",
+  "level": 2
+ },
+ {
+  "id": "marker",
+  "word": "marker",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈmɑːrkər",
+  "meaning": "표시, 표식 — 구간·위치를 알아보게 넣는 기호",
+  "level": 3
+ },
+ {
+  "id": "market-research",
+  "word": "market-research",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈmɑːrkɪt rɪˈsɜːrtʃ",
+  "meaning": "시장 조사 (market-research ~: 시장 조사용 ~)",
+  "level": 4
+ },
+ {
+  "id": "market-size",
+  "word": "market-size",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈmɑːrkɪt saɪz",
+  "meaning": "시장 규모",
+  "level": 4
+ },
+ {
+  "id": "markup",
+  "word": "markup",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈmɑːrkʌp",
+  "meaning": "마크업 — 서식을 나타내는 기호 (Markdown 기호, HTML 태그 등)",
+  "level": 6
+ },
+ {
+  "id": "master",
+  "word": "master",
+  "pos": [
+   "형용사",
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈmæstər",
+  "meaning": "① 기본(이 되는), 원본의 ② 주인, 달인 ③ 숙달하다, 익히다",
+  "level": 3
+ },
+ {
+  "id": "match",
+  "word": "match",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "mætʃ",
+  "meaning": "① (조건·패턴과) 일치하다, 맞다 ② 일치하는 것, 일치 결과",
+  "level": 2
+ },
+ {
+  "id": "matcher",
+  "word": "matcher",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈmætʃər",
+  "meaning": "매처 — 훅이 어떤 도구에 반응할지 정하는 패턴",
+  "level": 6
+ },
+ {
+  "id": "material",
+  "word": "material",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "məˈtɪriəl",
+  "meaning": "① 자료, (글의) 내용 ② 재료, 소재 ③ (형) 중요한, 실질적인",
+  "level": 3
+ },
+ {
+  "id": "matter",
+  "word": "matter",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈmætər",
+  "meaning": "① 중요하다 ② 문제, 사안 ③ (no matter ~) ~와 상관없이",
+  "level": 2
+ },
+ {
+  "id": "max",
+  "word": "max",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "mæks",
+  "meaning": "최대 (maximum 의 줄임말)",
+  "level": 3
+ },
+ {
+  "id": "maximum",
+  "word": "maximum",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ˈmæksɪməm",
+  "meaning": "최대(의), 최댓값",
+  "level": 3
+ },
+ {
+  "id": "mcp",
+  "word": "MCP",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌem.siːˈpiː",
+  "meaning": "Model Context Protocol — 모델에 외부 도구·데이터를 연결하는 표준 프로토콜",
+  "level": 6
+ },
+ {
+  "id": "meaningful",
+  "word": "meaningful",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈmiːnɪŋfl",
+  "meaning": "의미 있는, 유의미한",
+  "level": 3
+ },
+ {
+  "id": "measure",
+  "word": "measure",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈmeʒər",
+  "meaning": "① 측정하다, 재다 ② 조치, 대책 ③ 척도, 기준",
+  "level": 3
+ },
+ {
+  "id": "mechanism",
+  "word": "mechanism",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈmekənɪzəm",
+  "meaning": "(무언가를 하는) 수단, 장치, 메커니즘",
+  "level": 4
+ },
+ {
+  "id": "medical",
+  "word": "medical",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈmedɪkl",
+  "meaning": "의료의, 의학의 (medical records: 의료 기록)",
+  "level": 3
+ }
+]

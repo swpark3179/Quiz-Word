@@ -1,0 +1,264 @@
+{
+  "auto-issued": {
+    "roots": [{ "part": "auto", "ko": "자동으로" }, { "part": "issu", "ko": "내보내다, 발급하다(issue)" }, { "part": "-ed", "ko": "~된" }],
+    "story": "사람 승인 없이 자동으로(auto) 내보내진(issued) → 자동으로 지급·발급된"
+  },
+  "automate": {
+    "roots": [{ "part": "auto-", "ko": "스스로" }, { "part": "mat", "ko": "움직이려 하다" }],
+    "origin": "그리스어 automatos (스스로 움직이는)",
+    "story": "사람 손 없이 스스로(auto) 움직이게(mat) 만든다 → 자동화하다",
+    "family": ["automatic", "automation", "autonomy", "automobile"]
+  },
+  "autonomous": {
+    "roots": [{ "part": "auto-", "ko": "스스로" }, { "part": "nom", "ko": "법, 규칙" }, { "part": "-ous", "ko": "~한" }],
+    "origin": "그리스어 autonomos (자기 법으로 사는)",
+    "story": "남이 아니라 스스로(auto) 세운 규칙(nom)대로 움직이는(ous) → 자율적인",
+    "family": ["autonomy", "economy", "astronomy", "automatic"]
+  },
+  "available": {
+    "roots": [{ "part": "a-", "ko": "~에" }, { "part": "vail", "ko": "쓸모·가치 있다" }, { "part": "-able", "ko": "~할 수 있는" }],
+    "origin": "라틴어 valere (가치 있다, 힘 있다)",
+    "story": "지금 가져다 쓸모(vail) 있게 쓸 수 있는(able) → 이용할 수 있는, 쓸 수 있는",
+    "family": ["avail", "value", "valid", "prevail"]
+  },
+  "average": {
+    "origin": "프랑스어 avarie (해상 화물 손해, 그 분담금)",
+    "story": "배의 화물 손해를 화주들이 고르게 나눠 내던 데서 → 평균, 평균을 내다",
+    "hook": "애버리지 → 볼링 '애버리지(평균 점수)' → 평균"
+  },
+  "avoid": {
+    "roots": [{ "part": "a-", "ko": "밖으로" }, { "part": "void", "ko": "빈, 비우다" }],
+    "origin": "앵글로프랑스어 avoider (비우고 나가다)",
+    "story": "자리를 비우고(void) 밖으로(a) 빠져 마주치지 않는다 → 피하다, 막다",
+    "family": ["void", "devoid", "vacant"]
+  },
+  "back-off": {
+    "roots": [{ "part": "back", "ko": "뒤로" }, { "part": "off", "ko": "떨어져" }],
+    "story": "뒤로(back) 물러나 떨어져(off) 서듯 재시도 간격을 벌린다 → 물러서다"
+  },
+  "backend": {
+    "roots": [{ "part": "back", "ko": "뒤" }, { "part": "end", "ko": "끝, 쪽" }],
+    "story": "화면 뒤(back)쪽 끝(end)에서 데이터와 업무를 처리하는 서버 → 백엔드",
+    "family": ["frontend", "backbone", "backup"]
+  },
+  "background": {
+    "roots": [{ "part": "back", "ko": "뒤" }, { "part": "ground", "ko": "바탕, 땅" }],
+    "story": "앞에 나서지 않고 뒤(back)쪽 바탕(ground)에 깔려 있는 → 백그라운드, 배경",
+    "family": ["foreground", "backdrop", "underground"]
+  },
+  "baggage": {
+    "roots": [{ "part": "bag", "ko": "자루, 꾸러미" }, { "part": "-age", "ko": "~의 모음" }],
+    "origin": "고대 프랑스어 bagage ← bague (꾸러미)",
+    "story": "가방(bag)과 꾸러미를 한데 모은 것(age) → 짐, 수하물, (지고 가는) 부담",
+    "hook": "배기지 → 공항 '배기지 클레임(수하물 찾는 곳)' → 수하물"
+  },
+  "ban": {
+    "origin": "고대 영어 bannan (포고하다, 소집하다)",
+    "story": "왕이 포고령(ban)을 내려 하지 못하게 못 박는다 → 금지하다, 금지",
+    "hook": "밴 → 게임에서 '밴 당했다(계정 정지)' → 금지하다",
+    "family": ["banish", "abandon", "contraband"]
+  },
+  "band": {
+    "origin": "고대 프랑스어 bande (띠, 끈)",
+    "story": "띠(band) 하나가 일정한 폭을 덮듯 값의 한 폭 → 구간, 범위, 띠",
+    "hook": "밴드 → 머리'밴드'·고무'밴드'의 띠, 띠만 한 폭 → 구간",
+    "family": ["bind", "bond", "bandage", "bundle"]
+  },
+  "bar": {
+    "origin": "고대 프랑스어 barre (막대, 가로대)",
+    "story": "높이뛰기 가로대(bar)를 넘어야 통과한다 → 기준, 문턱, 막대",
+    "hook": "바 → 초콜릿 '바', 철봉 '바'의 그 막대 → 막대, 넘어야 할 기준",
+    "family": ["barrier", "barricade", "embargo"]
+  },
+  "bare": {
+    "origin": "고대 영어 bær (벌거벗은, 가리지 않은)",
+    "story": "걸친 것 하나 없이 맨몸(bær) 그대로 → 아무것도 덧붙이지 않은, 맨 ~",
+    "hook": "베어 → 맨발은 '베어풋(barefoot)' → 맨 ~",
+    "family": ["barefoot", "barely"]
+  },
+  "base": {
+    "origin": "그리스어 basis (디딤, 받침대)",
+    "story": "발을 디디는 받침대(basis) 위에 올려 세운다 → 기반, ~에 기반을 두다",
+    "hook": "베이스 → 야구 '베이스'·'베이스캠프'의 발판 → 기반",
+    "family": ["basis", "basic", "basement", "database"]
+  },
+  "based-on": {
+    "roots": [{ "part": "base", "ko": "받침, 기반" }, { "part": "on", "ko": "~위에" }],
+    "story": "그것을 받침(base)으로 깔고 그 위에(on) 세운 → ~을 바탕으로, ~에 근거해"
+  },
+  "batch": {
+    "origin": "고대 영어 bæcce (한 번에 구운 것) ← bacan (굽다)",
+    "story": "한 번에 구워(bake) 낸 빵 한 판처럼 한꺼번에 처리하는 양 → 묶음, 일괄 처리 단위",
+    "family": ["bake", "bakery", "baker"]
+  },
+  "bearer": {
+    "roots": [{ "part": "bear", "ko": "지니다, 나르다" }, { "part": "-er", "ko": "~하는 사람" }],
+    "story": "토큰을 지니고(bear) 있는 사람(er)이면 누구든 쓴다 → 소지자",
+    "family": ["bear", "burden", "birth"]
+  },
+  "behavior": {
+    "roots": [{ "part": "be-", "ko": "완전히(강조)" }, { "part": "hav", "ko": "지니다, 가지다(have)" }, { "part": "-ior", "ko": "~하는 방식" }],
+    "story": "제 몸을 어떻게 가지고(have) 움직이는가 하는 방식(ior) → 동작, 행동하는 방식",
+    "family": ["behave", "have", "misbehave"]
+  },
+  "behind": {
+    "roots": [{ "part": "be-", "ko": "~곁에, ~에" }, { "part": "hind", "ko": "뒤" }],
+    "origin": "고대 영어 behindan (뒤쪽에)",
+    "story": "겉으로 드러난 것의 뒤(hind)쪽에(be) 받치고 선 → ~의 이면에 있는, ~ 뒤에, 뒤처져",
+    "family": ["hind", "hinder", "hindsight"]
+  },
+  "benchmark": {
+    "roots": [{ "part": "bench", "ko": "받침대" }, { "part": "mark", "ko": "표시" }],
+    "story": "측량사가 받침대(bench)를 걸려고 새긴 높이 기준 표시(mark) → 벤치마크, 성능 비교 기준",
+    "hook": "벤치마크 → '벤치마킹하다'의 그 벤치마크 → 비교 기준",
+    "family": ["bench", "landmark", "bookmark", "trademark"]
+  },
+  "benefit": {
+    "roots": [{ "part": "bene-", "ko": "좋게" }, { "part": "fit", "ko": "하다, 만들다" }],
+    "origin": "라틴어 benefactum (좋게 해 준 일)",
+    "story": "나에게 좋게(bene) 해 준(fit) 것 → 이점, 혜택, 이득을 보다",
+    "family": ["beneficial", "benevolent", "profit"]
+  },
+  "best-of-n": {
+    "roots": [{ "part": "best", "ko": "가장 좋은" }, { "part": "of", "ko": "~중의" }, { "part": "N", "ko": "N번, N개" }],
+    "story": "같은 요청을 N번 돌려 그중(of) 가장 좋은(best) 것을 고른다 → best-of-N 기법"
+  },
+  "beta": {
+    "origin": "그리스어 bēta (둘째 글자 β)",
+    "story": "첫째 알파 다음 둘째(β) 단계, 아직 정식이 아닌 시험판 → 베타, 출시 전 시험 단계"
+  },
+  "bidirectional": {
+    "roots": [{ "part": "bi-", "ko": "둘" }, { "part": "direction", "ko": "방향" }, { "part": "-al", "ko": "~의" }],
+    "story": "가는 쪽과 오는 쪽, 두(bi) 방향(direction)의(al) → 양방향의",
+    "family": ["bicycle", "bilingual", "direct", "unidirectional"]
+  },
+  "bill": {
+    "origin": "중세 라틴어 bulla (도장 찍은 문서)",
+    "story": "도장(bulla) 찍어 내미는 문서 한 장, 낼 돈을 적었다 → 청구서, 청구하다",
+    "hook": "빌 → 식당 '빌지(계산서)'의 그 빌 → 청구서, 계산서",
+    "family": ["bulletin", "billboard"]
+  },
+  "billing": {
+    "roots": [{ "part": "bill", "ko": "청구서, 청구하다" }, { "part": "-ing", "ko": "~하는 일" }],
+    "story": "청구서(bill)를 끊어 요금을 물리는 일(ing) → 요금 청구, 결제",
+    "family": ["bill", "billable"]
+  },
+  "billing-date": {
+    "roots": [{ "part": "billing", "ko": "요금 청구" }, { "part": "date", "ko": "날짜" }],
+    "story": "요금을 청구하는(billing) 날짜(date) → 청구일, 결제일"
+  },
+  "bind": {
+    "origin": "고대 영어 bindan (묶다)",
+    "story": "끈으로 둘을 한데 동여매 떨어지지 않게 한다 → 묶다, 결합하다, 바인딩하다",
+    "hook": "바인드 → 서류 묶는 '바인더'가 하는 일 → 묶다",
+    "family": ["bond", "band", "bundle", "bandage"]
+  },
+  "birth": {
+    "origin": "고대 노르드어 byrðr (낳음, 태어남)",
+    "story": "아이를 배어 낳는(bear) 일, 새것이 세상에 나오는 때 → 출생, 탄생, 시작",
+    "hook": "버스 → '버스데이(birthday)'는 태어난 날 → 출생",
+    "family": ["bear", "born", "burden"]
+  },
+  "blank": {
+    "origin": "고대 프랑스어 blanc (흰)",
+    "story": "아무것도 적히지 않아 하얀(blanc) 종이 그대로 → 비어 있는, 빈칸",
+    "family": ["blanket", "blanch"]
+  },
+  "blob": {
+    "origin": "영어 의태어 blob (방울, 물컹한 덩어리)",
+    "story": "뚝 떨어진 물감 방울(blob)처럼 속을 따지지 않는 한 덩어리 → 블롭, 덩어리 데이터"
+  },
+  "block": {
+    "origin": "고대 프랑스어 bloc (통나무, 덩어리)",
+    "story": "통나무 덩어리(bloc) 하나, 길에 놓으면 막힌다 → 블록, 덩어리, 막다",
+    "hook": "블록 → 장난감 '블록' 한 덩어리, 배구 '블로킹' → 덩어리, 막다",
+    "family": ["blockade", "blockage", "roadblock"]
+  },
+  "blocklist": {
+    "roots": [{ "part": "block", "ko": "막다" }, { "part": "list", "ko": "목록" }],
+    "story": "막을(block) 단어와 대상을 적어 둔 목록(list) → 차단 목록",
+    "family": ["allowlist", "denylist", "blacklist"]
+  },
+  "body": {
+    "origin": "고대 영어 bodig (몸통)",
+    "story": "머리(header)를 뺀 몸통(body)이 진짜 내용 → 본문",
+    "hook": "바디 → 머리 아래 '바디(몸통)' → 본문",
+    "family": ["embody", "bodily", "bodyguard"]
+  },
+  "booking": {
+    "roots": [{ "part": "book", "ko": "장부, 장부에 적다" }, { "part": "-ing", "ko": "~하는 일" }],
+    "story": "손님 이름을 장부(book)에 적어 자리를 잡아 두는 일(ing) → 예약",
+    "hook": "부킹 → 골프장 '부킹' → 예약",
+    "family": ["book", "overbook", "bookkeeping"]
+  },
+  "boolean": {
+    "roots": [{ "part": "Boole", "ko": "수학자 불" }, { "part": "-an", "ko": "~의" }],
+    "origin": "영국 수학자 George Boole (논리 대수의 창시자)",
+    "story": "참·거짓 논리를 수식으로 세운 불(Boole)의(an) 대수에서 → 참·거짓 두 값만 갖는, 불리언"
+  },
+  "borderline": {
+    "roots": [{ "part": "border", "ko": "경계" }, { "part": "line", "ko": "선" }],
+    "story": "이쪽도 저쪽도 아닌 경계(border) 선(line) 바로 위에 걸친 → 경계선상의, 애매한",
+    "family": ["border", "baseline", "deadline"]
+  },
+  "bot": {
+    "origin": "robot 의 줄임 ← 체코어 robota (강제 노동)",
+    "story": "시킨 일을 쉬지 않고 해내는 로봇(robot)을 줄여서 → 봇, 자동으로 일하는 프로그램",
+    "hook": "봇 → 로'봇'의 봇 → 정해진 일을 자동으로 하는 프로그램",
+    "family": ["robot", "robotic", "chatbot"]
+  },
+  "bottleneck": {
+    "roots": [{ "part": "bottle", "ko": "병" }, { "part": "neck", "ko": "목" }],
+    "story": "병(bottle)의 좁은 목(neck)에서 흐름이 막혀 느려진다 → 병목",
+    "family": ["bottle", "neck"]
+  },
+  "boundary": {
+    "roots": [{ "part": "bound", "ko": "한계, 경계" }, { "part": "-ary", "ko": "~에 관한 것" }],
+    "story": "여기까지라고 한계(bound)를 그어 놓은 선(ary) → 경계, 한계선",
+    "family": ["bound", "boundless"]
+  },
+  "brace": {
+    "origin": "라틴어 bracchia (두 팔)",
+    "story": "두 팔(bracchia)로 끌어안듯 내용을 양쪽에서 감싸는 기호 { } → 중괄호",
+    "family": ["embrace", "bracelet"]
+  },
+  "brainstorm": {
+    "roots": [{ "part": "brain", "ko": "뇌, 머리" }, { "part": "storm", "ko": "폭풍" }],
+    "story": "머릿속(brain)에 폭풍(storm)이 치듯 생각을 마구 쏟아 낸다 → 아이디어를 끌어내다",
+    "family": ["brainchild", "snowstorm"]
+  },
+  "branch": {
+    "origin": "후기 라틴어 branca (짐승의 발)",
+    "story": "짐승 발(branca)의 발가락처럼 줄기에서 갈라져 뻗은 가지 → 브랜치, 갈라지다, 분기하다"
+  },
+  "brand-new": {
+    "roots": [{ "part": "brand", "ko": "불, 달군 쇠" }, { "part": "new", "ko": "새로운" }],
+    "story": "대장간 불(brand)에서 막 꺼낸 듯 새(new)것인 → 완전히 새로운",
+    "family": ["brand", "burn", "firebrand"]
+  },
+  "breadth": {
+    "roots": [{ "part": "bread", "ko": "넓은(broad)" }, { "part": "-th", "ko": "~함(명사)" }],
+    "origin": "고대 영어 brǣdu (넓음) ← brād (넓은)",
+    "story": "넓은(broad) 정도, length·width 처럼 -th 를 붙인 말 → 폭, 범위",
+    "family": ["broad", "broaden", "abroad"]
+  },
+  "breakpoint": {
+    "roots": [{ "part": "break", "ko": "끊다, 멈추다" }, { "part": "point", "ko": "지점" }],
+    "story": "'여기까지' 하고 딱 끊는(break) 지점(point) → 중단점",
+    "family": ["breakdown", "checkpoint", "endpoint", "breakthrough"]
+  },
+  "broad": {
+    "origin": "고대 영어 brād (넓은)",
+    "hook": "브로드 → '브로드웨이(넓은 길)'의 브로드 → 넓은, 폭넓은",
+    "family": ["breadth", "abroad", "broadcast", "broaden"]
+  },
+  "bucket": {
+    "origin": "앵글로프랑스어 buquet (들통)",
+    "story": "쓴 만큼 줄고 일정한 속도로 다시 차오르는 양동이(bucket) → 버킷, 양동이, 묶음",
+    "hook": "버킷 → 치킨 '버킷'·'버킷 리스트'의 그 통 → 양동이"
+  },
+  "bug": {
+    "story": "기계 속에 끼어든 벌레(bug) 한 마리가 고장을 내듯 → 버그, 결함, 벌레",
+    "hook": "버그 → '버그 났다'의 그 버그 → 프로그램 결함"
+  }
+}

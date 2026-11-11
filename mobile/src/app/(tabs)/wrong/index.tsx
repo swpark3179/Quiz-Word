@@ -19,7 +19,7 @@ import { sessionHref } from '@/store/session';
 import { type, useTheme } from '@/theme';
 import { haptic } from '@/theme/haptics';
 
-const WRONG_SCOPE = { ...DEFAULT_SCOPE, set: 'wrong' as const, status: 'any' as const, count: 0, order: 'random' as const, includeBasic: true };
+const WRONG_SCOPE = { ...DEFAULT_SCOPE, set: 'wrong' as const, status: 'any' as const, count: 0, order: 'random' as const, minLevel: 1 };
 
 interface WrongRowData {
   id: string;

@@ -3,7 +3,8 @@ import { ArrowRight, Brain, CalendarClock, Layers, ListChecks, NotebookPen } fro
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Card, SectionTitle } from '../components/ui';
-import { QUIZ_SOURCES, WORDS } from '../data/words';
+import { EXAMS, examName, mainExam, quizSources, WORDS } from '../data/words';
+import { inExam } from '../lib/exams';
 import { statusOf } from '../lib/srs';
 import { dayKey, daysUntil } from '../lib/text';
 import { useProgress } from '../store/progress';
@@ -31,18 +32,26 @@ export function Home() {
   const plan = useMemo(() => reviewPlan(cards, settings, todayNew), [cards, settings, todayNew]);
   const examLeft = settings.examDate ? daysUntil(settings.examDate) : undefined;
 
+  const updateSettings = useProgress((s) => s.updateSettings);
+  /** 주 시험 — 진척과 오늘의 새 단어가 이 시험 기준이다 */
+  const exam = mainExam(settings.exam);
+  const minLevel = settings.minLevel;
+
   const progress = useMemo(() => {
-    const core = WORDS.filter((w) => w.tier === 'core' && !w.basic);
+    // 주 시험에 나온 단어 중 학습 단계 이상
+    const core = WORDS.filter((w) => inExam(w, exam) && w.level >= minLevel);
     const count = { new: 0, learning: 0, mastered: 0 };
     for (const w of core) count[statusOf(cards[w.id])]++;
-    const bySource = QUIZ_SOURCES.map((s) => {
-      const ws = core.filter((w) => w.sources.includes(s.id));
-      const done = ws.filter((w) => statusOf(cards[w.id]) !== 'new').length;
-      const mastered = ws.filter((w) => statusOf(cards[w.id]) === 'mastered').length;
-      return { ...s, total: ws.length, done, mastered };
-    }).filter((s) => s.total >= 10); // 한글판 파일처럼 영어 단어가 거의 없는 파일은 뺀다
+    const bySource = quizSources(exam)
+      .map((s) => {
+        const ws = core.filter((w) => inExam(w, exam, s.id));
+        const done = ws.filter((w) => statusOf(cards[w.id]) !== 'new').length;
+        const mastered = ws.filter((w) => statusOf(cards[w.id]) === 'mastered').length;
+        return { ...s, total: ws.length, done, mastered };
+      })
+      .filter((s) => s.total > 0);
     return { total: core.length, ...count, bySource };
-  }, [cards]);
+  }, [cards, exam, minLevel]);
 
   const week = useMemo(() => {
     const out: { key: string; label: string; n: number }[] = [];
@@ -62,7 +71,22 @@ export function Home() {
     <div className="anim-fade space-y-6">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
-          <div className="text-[13px] font-semibold text-primary">CCAR-F 영어 단어</div>
+          {EXAMS.length > 1 ? (
+            <select
+              aria-label="주 시험"
+              value={exam ?? ''}
+              onChange={(e) => updateSettings({ exam: e.target.value })}
+              className="-ml-1 rounded-lg border border-transparent bg-transparent px-1 py-0.5 text-[13px] font-semibold text-primary outline-none hover:border-line focus:border-primary"
+            >
+              {EXAMS.map((e) => (
+                <option key={e.id} value={e.id}>
+                  {e.name} 영어 단어
+                </option>
+              ))}
+            </select>
+          ) : (
+            <div className="text-[13px] font-semibold text-primary">{exam ? `${examName(exam)} 영어 단어` : '영어 단어'}</div>
+          )}
           <h1 className="mt-1 text-[28px] font-bold tracking-tight">오늘도 조금씩 쌓아 봐요</h1>
         </div>
         {examLeft !== undefined && examLeft >= 0 && (
@@ -104,7 +128,16 @@ export function Home() {
 
       <div className="grid gap-6 lg:grid-cols-5">
         <Card className="p-6 lg:col-span-3">
-          <SectionTitle right={<span className="text-[12px] text-muted">기초 단어 제외 {progress.total.toLocaleString()}개</span>}>핵심 단어 진척</SectionTitle>
+          <SectionTitle
+            right={
+              <span className="text-[12px] text-muted">
+                {minLevel > 1 ? `${minLevel}단계 이상 ` : ''}
+                {progress.total.toLocaleString()}개
+              </span>
+            }
+          >
+            {exam ? `${examName(exam)} 단어 진척` : '단어 진척'}
+          </SectionTitle>
           <div className="flex h-3 overflow-hidden rounded-full bg-surface-3">
             <div className="bg-success transition-all" style={{ width: pct(progress.mastered) }} />
             <div className="bg-warning transition-all" style={{ width: pct(progress.learning) }} />
@@ -125,7 +158,7 @@ export function Home() {
 
           <div className="mt-6 space-y-2.5">
             {progress.bySource.map((s) => (
-              <Link key={s.id} to={`/words?src=${s.id}`} className="group block">
+              <Link key={s.id} to={`/words?cat=${exam}&src=${s.id}`} className="group block">
                 <div className="mb-1 flex justify-between text-[12.5px]">
                   <span className="font-medium text-ink-2 group-hover:text-primary">{s.name}</span>
                   <span className="tabular-nums text-muted">

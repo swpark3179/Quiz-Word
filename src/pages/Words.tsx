@@ -4,7 +4,9 @@ import { Search, SearchX, X } from 'lucide-react';
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate, useNavigationType, useSearchParams } from 'react-router-dom';
 import { Button, Kbd, PosBadge, StatusDot } from '../components/ui';
-import { QUIZ_SOURCES, WORDS_BY_FREQ } from '../data/words';
+import { EXAMS, quizSources, WORDS_BY_FREQ } from '../data/words';
+import { freqIn, inExam, isExtra, isQuizSource, NO_EXAM } from '../lib/exams';
+import { LEVELS } from '../lib/schema';
 import { searchWords } from '../lib/search';
 import { statusOf, type WordStatus } from '../lib/srs';
 import { useProgress } from '../store/progress';
@@ -42,10 +44,16 @@ export function WordsPage() {
   const [params, setParams] = useSearchParams();
   const navigate = useNavigate();
   const urlQ = params.get('q') ?? '';
-  const src = params.get('src') ?? '';
+  const rawSrc = params.get('src') ?? '';
+  // 시험: 주소에 없으면 모든 시험. 예전 주소(?src=mock04 만 있는)는 그 문제 파일이 있는 시험으로 읽는다
+  const rawCat = params.get('cat') ?? '';
+  const cat = rawCat === NO_EXAM || EXAMS.some((e) => e.id === rawCat) ? rawCat : (EXAMS.find((e) => rawSrc && e.sources.some((x) => x.id === rawSrc && isQuizSource(x)))?.id ?? '');
+  const sources = cat && cat !== NO_EXAM ? quizSources(cat) : [];
+  const src = sources.some((x) => x.id === rawSrc) ? rawSrc : '';
   const pos = params.get('pos') ?? '';
   const status = (params.get('status') ?? '') as WordStatus | 'wrong' | '';
-  const tier = params.get('tier') ?? '';
+  const minLevel = Math.min(LEVELS.length, Math.max(1, Number(params.get('lv')) || 1));
+  const lv = minLevel > 1 ? String(minLevel) : '';
   const inputRef = useRef<HTMLInputElement>(null);
   const cards = useProgress((s) => s.cards);
   const wrong = useProgress((s) => s.wrong);
@@ -90,7 +98,20 @@ export function WordsPage() {
     writeTimer.current = setTimeout(() => writeLatest.current(undefined, value), 250);
   };
   const setParam = (k: string, v: string) => writeParams((p) => (v ? p.set(k, v) : p.delete(k)));
-  const resetFilters = () => writeParams((p) => ['src', 'pos', 'status', 'tier'].forEach((k) => p.delete(k)));
+  /** 시험을 바꾸면 문제 파일 선택은 푼다 (문제 파일은 시험 안에서 고른다) */
+  const setCat = (v: string) =>
+    writeParams((p) => {
+      if (v) p.set('cat', v);
+      else p.delete('cat');
+      p.delete('src');
+    });
+  const setSrc = (v: string) =>
+    writeParams((p) => {
+      if (cat) p.set('cat', cat);
+      if (v) p.set('src', v);
+      else p.delete('src');
+    });
+  const resetFilters = () => writeParams((p) => ['cat', 'src', 'pos', 'status', 'lv', 'tier'].forEach((k) => p.delete(k)));
   const clearQuery = () => {
     setQ('');
     writeParams(undefined, '');
@@ -98,7 +119,7 @@ export function WordsPage() {
   };
 
   /** 검색·필터 조건 — 보던 위치를 되살릴 때 조건이 같은지 확인하는 데 쓴다 */
-  const viewKey = [q, src, pos, status, tier].join('|');
+  const viewKey = [q, cat, src, pos, status, lv].join('|');
 
   // 들어오면 바로 입력할 수 있게 검색창에 포커스를 둔다.
   // 터치 기기에서는 화면 키보드가 목록을 가리므로 검색을 누르고 들어왔을 때(focus=1)만 한다.
@@ -110,13 +131,21 @@ export function WordsPage() {
   const statusData = status === 'wrong' ? wrong : status ? cards : null;
   const list = useMemo(() => {
     let base = WORDS_BY_FREQ;
-    if (src) base = base.filter((w) => w.sources.includes(src));
+    if (cat === NO_EXAM) base = base.filter(isExtra);
+    else if (cat) {
+      // 고른 시험(·문제 파일)에 나온 단어만, 그 안에서 자주 나온 순으로
+      base = base.filter((w) => inExam(w, cat, src || undefined));
+      base = base
+        .map((w, i) => ({ w, i, f: freqIn(w, cat, src || undefined) }))
+        .sort((a, b) => b.f - a.f || a.i - b.i)
+        .map((x) => x.w);
+    }
+    if (minLevel > 1) base = base.filter((w) => w.level >= minLevel);
     if (pos) base = base.filter((w) => (pos === '구' ? w.pos.some((p) => p.endsWith('구')) : w.pos.includes(pos)));
-    if (tier) base = base.filter((w) => (tier === 'basic' ? w.basic : w.tier === tier && !w.basic));
     if (status === 'wrong') base = base.filter((w) => wrong[w.id]);
     else if (status) base = base.filter((w) => statusOf(cards[w.id]) === status);
     return q.trim() ? searchWords(base, q) : base;
-  }, [q, src, pos, tier, status, statusData]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [q, cat, src, pos, minLevel, status, statusData]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const parentRef = useRef<HTMLDivElement>(null);
   // 단어 상세에서 뒤로 돌아왔으면 보던 위치에서 이어서 본다
@@ -159,6 +188,7 @@ export function WordsPage() {
     setWordNav(
       list.map((x) => x.id),
       '단어장으로',
+      cat && cat !== NO_EXAM ? { cat, ...(src ? { file: src } : {}) } : undefined,
     );
     navigate(`/word/${w.id}`);
   };
@@ -183,7 +213,7 @@ export function WordsPage() {
     e.preventDefault();
   };
 
-  const filtersOn = !!(src || pos || status || tier);
+  const filtersOn = !!(cat || src || pos || status || lv);
   const showActive = moved || q !== '';
 
   return (
@@ -226,14 +256,26 @@ export function WordsPage() {
       </div>
 
       <div className="mb-3 flex flex-wrap items-center gap-2">
-        <FilterSelect label="문제 파일" value={src} onChange={(v) => setParam('src', v)}>
-          <option value="">모든 문제 파일</option>
-          {QUIZ_SOURCES.map((s) => (
-            <option key={s.id} value={s.id}>
-              {s.name}
+        <FilterSelect label="시험" value={cat} onChange={setCat}>
+          <option value="">모든 시험</option>
+          {EXAMS.map((e) => (
+            <option key={e.id} value={e.id}>
+              {e.name}
             </option>
           ))}
+          <option value={NO_EXAM}>확장 (문제 밖 단어)</option>
         </FilterSelect>
+        {/* 문제 파일은 시험을 고른 뒤에 그 시험 안에서 고른다 */}
+        {sources.length > 0 && (
+          <FilterSelect label="문제 파일" value={src} onChange={setSrc}>
+            <option value="">모든 문제 파일</option>
+            {sources.map((x) => (
+              <option key={x.id} value={x.id}>
+                {x.name}
+              </option>
+            ))}
+          </FilterSelect>
+        )}
         <FilterSelect label="품사" value={pos} onChange={(v) => setParam('pos', v)}>
           <option value="">모든 품사</option>
           {POS_FILTERS.map((p) => (
@@ -249,11 +291,13 @@ export function WordsPage() {
           <option value="mastered">익힘</option>
           <option value="wrong">오답노트</option>
         </FilterSelect>
-        <FilterSelect label="단어 범위" value={tier} onChange={(v) => setParam('tier', v)}>
-          <option value="">핵심 + 확장</option>
-          <option value="core">핵심 (CCAR-F)</option>
-          <option value="extra">확장 (다른 회차)</option>
-          <option value="basic">기초 단어</option>
+        <FilterSelect label="단계" value={lv} onChange={(v) => setParam('lv', v)}>
+          <option value="">모든 단계</option>
+          {LEVELS.slice(1).map((l) => (
+            <option key={l.level} value={l.level}>
+              {l.level === LEVELS.length ? `${l.level}단계 (${l.name})` : `${l.level}단계 이상 (${l.name}~)`}
+            </option>
+          ))}
         </FilterSelect>
         {filtersOn && (
           <button onClick={resetFilters} className="text-[13px] font-medium text-muted underline-offset-2 hover:text-ink hover:underline">
@@ -299,6 +343,7 @@ export function WordsPage() {
               const w = list[row.index];
               const st = statusOf(cards[w.id]);
               const isActive = showActive && row.index === active;
+              const freq = cat && cat !== NO_EXAM ? freqIn(w, cat, src || undefined) : w.freq;
               return (
                 <button
                   key={w.id}
@@ -320,8 +365,11 @@ export function WordsPage() {
                   </div>
                   <div className="flex shrink-0 items-center gap-1.5">
                     {wrong[w.id] && <span className="rounded-full bg-danger-soft px-1.5 py-px text-[10.5px] font-bold text-danger">오답</span>}
-                    {w.tier === 'extra' && <span className="rounded-full bg-surface-3 px-1.5 py-px text-[10.5px] font-semibold text-muted">확장</span>}
-                    {w.freq > 0 && <span className="w-10 text-right text-[11.5px] tabular-nums text-muted">{w.freq}회</span>}
+                    {isExtra(w) && <span className="rounded-full bg-surface-3 px-1.5 py-px text-[10.5px] font-semibold text-muted">확장</span>}
+                    <span className="hidden w-11 text-right text-[11.5px] tabular-nums text-muted sm:inline" title={`${w.level}단계 · ${LEVELS[w.level - 1].name}`}>
+                      {w.level}단계
+                    </span>
+                    {freq > 0 && <span className="w-10 text-right text-[11.5px] tabular-nums text-muted">{freq}회</span>}
                     {isActive && (
                       <span className="hidden md:inline">
                         <Kbd>Enter</Kbd>

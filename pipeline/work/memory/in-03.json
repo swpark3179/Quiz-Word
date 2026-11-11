@@ -1,0 +1,516 @@
+[
+ {
+  "id": "auto-issued",
+  "word": "auto-issued",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌɔːtoʊ ˈɪʃuːd",
+  "meaning": "(사람 승인 없이) 자동으로 지급·발급된",
+  "level": 6
+ },
+ {
+  "id": "automate",
+  "word": "automate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈɔːtəmeɪt",
+  "meaning": "자동화하다 (automatically: 자동으로)",
+  "level": 5
+ },
+ {
+  "id": "autonomous",
+  "word": "autonomous",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ɔːˈtɑːnəməs",
+  "meaning": "자율적인, 스스로 판단해 움직이는",
+  "level": 5
+ },
+ {
+  "id": "available",
+  "word": "available",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "əˈveɪləbl",
+  "meaning": "이용할 수 있는, 쓸 수 있는",
+  "level": 3
+ },
+ {
+  "id": "average",
+  "word": "average",
+  "pos": [
+   "명사",
+   "형용사",
+   "동사"
+  ],
+  "ipa": "ˈævərɪdʒ",
+  "meaning": "평균(의) / 평균을 내다",
+  "level": 2
+ },
+ {
+  "id": "avoid",
+  "word": "avoid",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əˈvɔɪd",
+  "meaning": "피하다, (일이 생기지 않게) 막다",
+  "level": 2
+ },
+ {
+  "id": "back-off",
+  "word": "back off",
+  "pos": [
+   "동사구"
+  ],
+  "ipa": "ˌbæk ˈɔːf",
+  "meaning": "(잠시) 물러서다 — 재시도 간격을 늘리며 요청을 줄이다",
+  "level": 5
+ },
+ {
+  "id": "backend",
+  "word": "backend",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈbækend",
+  "meaning": "백엔드 — 화면 뒤에서 데이터·업무 처리를 맡는 서버 시스템",
+  "level": 6
+ },
+ {
+  "id": "background",
+  "word": "background",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈbækɡraʊnd",
+  "meaning": "① 백그라운드 — 사용자를 기다리게 하지 않고 뒤에서 따로 실행되는 상태 (in the background: 뒤에서) ② 배경, 배경 지식",
+  "level": 2
+ },
+ {
+  "id": "baggage",
+  "word": "baggage",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈbæɡɪdʒ",
+  "meaning": "① (여행) 짐, 수하물 ② (과거에서 이어진) 부담, 짐",
+  "level": 2
+ },
+ {
+  "id": "ban",
+  "word": "ban",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "bæn",
+  "meaning": "금지하다 / 금지 (banned terms: 금지어)",
+  "level": 3
+ },
+ {
+  "id": "band",
+  "word": "band",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "bænd",
+  "meaning": "① (점수·값의) 구간, 범위 ② 띠, 끈 ③ 악단, 밴드",
+  "level": 4
+ },
+ {
+  "id": "bar",
+  "word": "bar",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "bɑːr",
+  "meaning": "① (통과해야 할) 기준, 문턱 ② 막대, 바",
+  "level": 3
+ },
+ {
+  "id": "bare",
+  "word": "bare",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ber",
+  "meaning": "아무것도 덧붙이지 않은, 맨 ~ (최소한만 있는)",
+  "level": 4
+ },
+ {
+  "id": "base",
+  "word": "base",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "beɪs",
+  "meaning": "① 기반, (지식) 베이스 ② ~에 기반을 두다 (based: ~ 기반의)",
+  "level": 2
+ },
+ {
+  "id": "based-on",
+  "word": "based on",
+  "pos": [
+   "전치사구"
+  ],
+  "ipa": "beɪst ɑːn",
+  "meaning": "~을 바탕으로, ~에 근거해",
+  "level": 2
+ },
+ {
+  "id": "batch",
+  "word": "batch",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "bætʃ",
+  "meaning": "① 묶음, 일괄 처리 단위 ② (여러 개를) 한데 묶다",
+  "level": 6
+ },
+ {
+  "id": "bearer",
+  "word": "bearer",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈberər",
+  "meaning": "소지자 — Bearer 토큰: 가진 쪽이면 누구나 쓸 수 있는 접근 토큰 (Authorization: Bearer …)",
+  "level": 6
+ },
+ {
+  "id": "behavior",
+  "word": "behavior",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "bɪˈheɪvjər",
+  "meaning": "동작, (시스템·모델이) 행동하는 방식",
+  "level": 2
+ },
+ {
+  "id": "behind",
+  "word": "behind",
+  "pos": [
+   "전치사",
+   "부사"
+  ],
+  "ipa": "bɪˈhaɪnd",
+  "meaning": "① (이유·근거로서) ~의 이면에 있는, ~을 뒷받침하는 ② ~ 뒤에 ③ 뒤처져",
+  "level": 2
+ },
+ {
+  "id": "benchmark",
+  "word": "benchmark",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈbentʃmɑːrk",
+  "meaning": "벤치마크 — 성능을 비교·측정하는 기준 테스트(세트)",
+  "level": 6
+ },
+ {
+  "id": "benefit",
+  "word": "benefit",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈbenɪfɪt",
+  "meaning": "① 이점, 혜택 ② 이득을 보다, ~에 도움이 되다 ③ (복지) 수당, 급여",
+  "level": 3
+ },
+ {
+  "id": "best-of-n",
+  "word": "best-of-N",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌbest əv ˈen",
+  "meaning": "best-of-N — 같은 요청을 N번 돌려 결과를 비교해 고르거나 검증하는 기법",
+  "level": 6
+ },
+ {
+  "id": "beta",
+  "word": "beta",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ˈbeɪtə",
+  "meaning": "베타 — 정식 출시 전 시험 단계(의 기능) (beta header: 베타 기능을 켜는 요청 헤더)",
+  "level": 5
+ },
+ {
+  "id": "bidirectional",
+  "word": "bidirectional",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌbaɪdəˈrekʃənl",
+  "meaning": "양방향의",
+  "level": 6
+ },
+ {
+  "id": "bill",
+  "word": "bill",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "bɪl",
+  "meaning": "청구서, 계산서 / (요금을) 청구하다",
+  "level": 2
+ },
+ {
+  "id": "billing",
+  "word": "billing",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈbɪlɪŋ",
+  "meaning": "요금 청구, 결제",
+  "level": 5
+ },
+ {
+  "id": "billing-date",
+  "word": "billing date",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈbɪlɪŋ deɪt",
+  "meaning": "(요금) 청구일, 결제일",
+  "level": 5
+ },
+ {
+  "id": "bind",
+  "word": "bind",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "baɪnd",
+  "meaning": "① 묶다, 결합하다 ② (값·주소를) 바인딩하다, 연결하다 ③ (bound) (~에) 묶인, 매인",
+  "level": 5
+ },
+ {
+  "id": "birth",
+  "word": "birth",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "bɜːrθ",
+  "meaning": "① 출생, 탄생 (date of birth: 생년월일) ② (새로운 것의) 시작, 기원",
+  "level": 2
+ },
+ {
+  "id": "blank",
+  "word": "blank",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "blæŋk",
+  "meaning": "비어 있는 / 빈칸",
+  "level": 3
+ },
+ {
+  "id": "blob",
+  "word": "blob",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "blɑːb",
+  "meaning": "블롭 — 내용을 따지지 않고 한 덩어리로 다루는 (바이너리) 데이터",
+  "level": 6
+ },
+ {
+  "id": "block",
+  "word": "block",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "blɑːk",
+  "meaning": "① (콘텐츠) 블록, 덩어리 ② 막다, 차단하다",
+  "level": 3
+ },
+ {
+  "id": "blocklist",
+  "word": "blocklist",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈblɑːklɪst",
+  "meaning": "차단 목록 — 막을 단어·대상을 적어 둔 목록 (denylist 와 같은 말)",
+  "level": 6
+ },
+ {
+  "id": "body",
+  "word": "body",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈbɑːdi",
+  "meaning": "본문 — 머리말·설정 부분을 뺀 본 내용",
+  "level": 2
+ },
+ {
+  "id": "booking",
+  "word": "booking",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈbʊkɪŋ",
+  "meaning": "예약 (booking reference: 예약 번호)",
+  "level": 3
+ },
+ {
+  "id": "boolean",
+  "word": "boolean",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˈbuːliən",
+  "meaning": "① 참·거짓 두 값만 갖는, 불리언(논리형)의 ② 불리언 값, 참·거짓 값",
+  "level": 6
+ },
+ {
+  "id": "borderline",
+  "word": "borderline",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈbɔːrdərlaɪn",
+  "meaning": "경계선상의, (어느 쪽인지) 애매한",
+  "level": 5
+ },
+ {
+  "id": "bot",
+  "word": "bot",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "bɑːt",
+  "meaning": "봇 — 정해진 일을 자동으로 하는 프로그램 (지원 봇·리뷰 봇 등)",
+  "level": 5
+ },
+ {
+  "id": "bottleneck",
+  "word": "bottleneck",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈbɑːtlnek",
+  "meaning": "병목 — 전체 흐름을 느리게 만드는 지점",
+  "level": 6
+ },
+ {
+  "id": "boundary",
+  "word": "boundary",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈbaʊndri",
+  "meaning": "경계, (책임·범위의) 한계선",
+  "level": 4
+ },
+ {
+  "id": "brace",
+  "word": "brace",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "breɪs",
+  "meaning": "중괄호 { } (curly brace)",
+  "level": 6
+ },
+ {
+  "id": "brainstorm",
+  "word": "brainstorm",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈbreɪnstɔːrm",
+  "meaning": "(아이디어를) 떠오르는 대로 끌어내다, 브레인스토밍하다",
+  "level": 4
+ },
+ {
+  "id": "branch",
+  "word": "branch",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "bræntʃ",
+  "meaning": "① (git) 브랜치 ② 갈라지다, 분기하다",
+  "level": 4
+ },
+ {
+  "id": "brand-new",
+  "word": "brand-new",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌbrænd ˈnuː",
+  "meaning": "완전히 새로운",
+  "level": 3
+ },
+ {
+  "id": "breadth",
+  "word": "breadth",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "bredθ",
+  "meaning": "(다루는) 폭, 범위",
+  "level": 5
+ },
+ {
+  "id": "breakpoint",
+  "word": "breakpoint",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈbreɪkpɔɪnt",
+  "meaning": "(캐시) 중단점 — 프롬프트에서 '여기까지 캐시하라'고 표시하는 지점 (cache_control) / (디버거) 중단점",
+  "level": 6
+ },
+ {
+  "id": "broad",
+  "word": "broad",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "brɔːd",
+  "meaning": "넓은, 폭넓은",
+  "level": 3
+ },
+ {
+  "id": "bucket",
+  "word": "bucket",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈbʌkɪt",
+  "meaning": "버킷 — token bucket: 허용량이 일정한 속도로 다시 차오르는 한도 방식 / 양동이, 묶음",
+  "level": 4
+ },
+ {
+  "id": "bug",
+  "word": "bug",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "bʌɡ",
+  "meaning": "① (프로그램의) 버그, 결함 ② 벌레, 곤충 ③ 귀찮게 하다",
+  "level": 3
+ }
+]

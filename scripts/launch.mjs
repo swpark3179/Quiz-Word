@@ -146,7 +146,7 @@ async function main() {
   if (has('--help') || has('-h')) return printHelp();
   if (has('--shortcut')) return makeShortcut();
 
-  console.log('\n  Quiz Word — CCAR-F 영어 단어장\n');
+  console.log('\n  Quiz Word — 시험 영어 단어장\n');
   if (!nodeOk()) {
     fail(`Node.js ${process.versions.node} 은 너무 오래됐습니다. https://nodejs.org 에서 LTS 버전(22 이상)을 설치해 주세요.`);
   }

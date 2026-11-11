@@ -1,0 +1,514 @@
+[
+ {
+  "id": "built-in",
+  "word": "built-in",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌbɪlt ˈɪn",
+  "meaning": "내장된, 기본 제공되는",
+  "level": 4
+ },
+ {
+  "id": "bulk",
+  "word": "bulk",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "bʌlk",
+  "meaning": "대량(의), 대부분 (the bulk of: ~의 대부분)",
+  "level": 5
+ },
+ {
+  "id": "burn",
+  "word": "burn",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "bɜːrn",
+  "meaning": "(자원을) 헛되이 써 버리다, 태우다",
+  "level": 2
+ },
+ {
+  "id": "by-hand",
+  "word": "by hand",
+  "pos": [
+   "부사구"
+  ],
+  "ipa": "baɪ ˈhænd",
+  "meaning": "(자동화 없이) 손으로, 수작업으로",
+  "level": 2
+ },
+ {
+  "id": "cache",
+  "word": "cache",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "kæʃ",
+  "meaning": "캐시(하다) — 다시 쓸 결과를 저장해 두고 재사용하다",
+  "level": 6
+ },
+ {
+  "id": "call",
+  "word": "call",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "kɔːl",
+  "meaning": "① (함수·도구를) 호출하다 / 호출 ② 부르다, 전화하다 ③ (~라고) 이름 붙이다",
+  "level": 2
+ },
+ {
+  "id": "callback",
+  "word": "callback",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkɔːlbæk",
+  "meaning": "① 콜백 (함수) — 특정 시점에 대신 호출되도록 등록해 둔 함수 ② 회신 전화",
+  "level": 6
+ },
+ {
+  "id": "caller",
+  "word": "caller",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkɔːlər",
+  "meaning": "호출자 — 함수·API·도구를 부르는 쪽",
+  "level": 5
+ },
+ {
+  "id": "candidate",
+  "word": "candidate",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkændɪdət",
+  "meaning": "후보 — 해당될 수도 있어 살펴볼 대상",
+  "level": 4
+ },
+ {
+  "id": "cap",
+  "word": "cap",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "kæp",
+  "meaning": "상한(을 두다) — 넘지 못하게 정한 최대치",
+  "level": 4
+ },
+ {
+  "id": "capacity",
+  "word": "capacity",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "kəˈpæsəti",
+  "meaning": "용량, (감당할 수 있는) 처리 능력",
+  "level": 4
+ },
+ {
+  "id": "capture",
+  "word": "capture",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈkæptʃər",
+  "meaning": "(정보를) 담아 두다, 포착하다",
+  "level": 4
+ },
+ {
+  "id": "carefully",
+  "word": "carefully",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈkerfəli",
+  "meaning": "주의 깊게, 신중하게",
+  "level": 2
+ },
+ {
+  "id": "carrier",
+  "word": "carrier",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkæriər",
+  "meaning": "운송업체, 배송사 (shipping carrier)",
+  "level": 4
+ },
+ {
+  "id": "carry",
+  "word": "carry",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈkæri",
+  "meaning": "(정보를) 지니다, 달고 가다, 옮기다",
+  "level": 2
+ },
+ {
+  "id": "case",
+  "word": "case",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "keɪs",
+  "meaning": "① 경우, 사례 ② (처리할) 건, 사안 (상담·지원 건) ③ (글자의) 대소문자 ④ 상자, 케이스",
+  "level": 2
+ },
+ {
+  "id": "case-facts",
+  "word": "case-facts",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈkeɪs ˌfækts",
+  "meaning": "케이스 사실 — 주문 번호·금액·날짜처럼 그 건에서 정확히 지켜야 할 핵심 사실",
+  "level": 5
+ },
+ {
+  "id": "catalog",
+  "word": "catalog",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkætəlɔːɡ",
+  "meaning": "카탈로그, 목록 — 무엇이 있는지 정리해 둔 목록",
+  "level": 4
+ },
+ {
+  "id": "catch",
+  "word": "catch",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "kætʃ",
+  "meaning": "(문제를) 잡아내다, 발견하다",
+  "level": 2
+ },
+ {
+  "id": "category",
+  "word": "category",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkætəɡɔːri",
+  "meaning": "범주, 카테고리 — 분류의 한 갈래",
+  "level": 3
+ },
+ {
+  "id": "cause",
+  "word": "cause",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "kɔːz",
+  "meaning": "① 원인 ② 일으키다, 초래하다",
+  "level": 2
+ },
+ {
+  "id": "cell",
+  "word": "cell",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "sel",
+  "meaning": "① (표의) 칸, 셀 ② 세포 ③ 휴대전화 (cell phone)",
+  "level": 3
+ },
+ {
+  "id": "certain",
+  "word": "certain",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈsɜːrtn",
+  "meaning": "① 확신하는, 확실한 ② 어떤, 특정한",
+  "level": 2
+ },
+ {
+  "id": "chain",
+  "word": "chain",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "tʃeɪn",
+  "meaning": "체인, 연쇄 — 단계를 정해진 순서로 이은 흐름 / 잇다",
+  "level": 3
+ },
+ {
+  "id": "challenge",
+  "word": "challenge",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈtʃælɪndʒ",
+  "meaning": "① 이의를 제기하다, 따져 보다 ② 어려운 과제, 난제 ③ 도전(하다)",
+  "level": 3
+ },
+ {
+  "id": "chance",
+  "word": "chance",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "tʃæns",
+  "meaning": "① 가능성, 확률 ② 기회 ③ 우연, 운",
+  "level": 2
+ },
+ {
+  "id": "channel",
+  "word": "channel",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈtʃænl",
+  "meaning": "① (유통·소통의) 경로, 채널 ② (방송·메신저의) 채널 ③ (특정 방향으로) 돌리다, 보내다",
+  "level": 3
+ },
+ {
+  "id": "character",
+  "word": "character",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkærəktər",
+  "meaning": "① 문자, 글자 ② 성격, 특성 ③ (작품의) 등장인물",
+  "level": 2
+ },
+ {
+  "id": "charge",
+  "word": "charge",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "tʃɑːrdʒ",
+  "meaning": "① 충전하다 (charging: 충전) ② (요금을) 청구하다, 부과하다 ③ 요금, 수수료 ④ (in charge) 책임, 담당",
+  "level": 3
+ },
+ {
+  "id": "charger",
+  "word": "charger",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtʃɑːrdʒər",
+  "meaning": "충전기",
+  "level": 3
+ },
+ {
+  "id": "chatbot",
+  "word": "chatbot",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtʃætbɑːt",
+  "meaning": "챗봇 (사용자와 대화하며 자동으로 답하는 프로그램)",
+  "level": 4
+ },
+ {
+  "id": "checkable",
+  "word": "checkable",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈtʃekəbl",
+  "meaning": "확인할 수 있는, 검증 가능한",
+  "level": 4
+ },
+ {
+  "id": "checker",
+  "word": "checker",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtʃekər",
+  "meaning": "① 검사기, 점검 도구 (조건을 확인하는 프로그램) ② 검사원, 확인하는 사람",
+  "level": 4
+ },
+ {
+  "id": "checklist",
+  "word": "checklist",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtʃeklɪst",
+  "meaning": "체크리스트, 점검 목록",
+  "level": 3
+ },
+ {
+  "id": "checkout",
+  "word": "checkout",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtʃekaʊt",
+  "meaning": "① (git) 체크아웃 — 저장소에서 꺼내 놓은 작업 사본 ② (쇼핑) 결제 단계",
+  "level": 6
+ },
+ {
+  "id": "checkpoint",
+  "word": "checkpoint",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtʃekpɔɪnt",
+  "meaning": "① 체크포인트 (작업 상태를 저장해 둔 중간 지점) ② 검문소",
+  "level": 5
+ },
+ {
+  "id": "chip",
+  "word": "chip",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "tʃɪp",
+  "meaning": "① (반도체) 칩 ② 조각, 부스러기",
+  "level": 3
+ },
+ {
+  "id": "chunk",
+  "word": "chunk",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "tʃʌŋk",
+  "meaning": "청크, 조각 — 큰 데이터를 나눈 한 덩어리 / 조각으로 나누다",
+  "level": 6
+ },
+ {
+  "id": "ci",
+  "word": "CI",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌsiːˈaɪ",
+  "meaning": "CI(지속적 통합) — 커밋마다 빌드·테스트를 자동으로 돌리는 파이프라인",
+  "level": 6
+ },
+ {
+  "id": "cite",
+  "word": "cite",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "saɪt",
+  "meaning": "인용하다, (근거로) 들다",
+  "level": 5
+ },
+ {
+  "id": "claim",
+  "word": "claim",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "kleɪm",
+  "meaning": "① 주장(하다) — 사실이라고 내세우다 ② (보험금) 청구(건) — claims agent: 청구 처리 에이전트",
+  "level": 4
+ },
+ {
+  "id": "claim-to-source",
+  "word": "claim-to-source",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌkleɪm tə ˈsɔːrs",
+  "meaning": "주장-출처 (대응)의 — 각 주장과 그 근거 출처를 짝지은",
+  "level": 6
+ },
+ {
+  "id": "clarify",
+  "word": "clarify",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈklærəfaɪ",
+  "meaning": "명확히 하다, (모호한 점을) 분명히 묻다",
+  "level": 4
+ },
+ {
+  "id": "class",
+  "word": "class",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "klæs",
+  "meaning": "① (프로그래밍) 클래스 ② 종류, 부류 ③ 수업, 학급",
+  "level": 2
+ },
+ {
+  "id": "classifier",
+  "word": "classifier",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈklæsɪfaɪər",
+  "meaning": "분류기 — 입력을 정해진 범주로 나누는 모델·규칙",
+  "level": 6
+ },
+ {
+  "id": "classify",
+  "word": "classify",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈklæsɪfaɪ",
+  "meaning": "분류하다 — 기준에 따라 정해진 갈래로 나누다",
+  "level": 4
+ },
+ {
+  "id": "cleanly",
+  "word": "cleanly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈkliːnli",
+  "meaning": "깔끔하게, (섞이거나 꼬이지 않고) 깨끗이",
+  "level": 3
+ },
+ {
+  "id": "cleanup",
+  "word": "cleanup",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkliːnʌp",
+  "meaning": "① (데이터 등의) 정리, 정제 ② 청소, 뒷정리",
+  "level": 4
+ },
+ {
+  "id": "clear",
+  "word": "clear",
+  "pos": [
+   "형용사",
+   "동사"
+  ],
+  "ipa": "klɪr",
+  "meaning": "① 분명한, 명확한 ② (문제·오류가) 해소되다, 풀리다 ③ 지우다, 비우다",
+  "level": 2
+ },
+ {
+  "id": "clearly",
+  "word": "clearly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈklɪrli",
+  "meaning": "① 분명히, 명백히 ② 또렷하게, 명확하게",
+  "level": 2
+ }
+]

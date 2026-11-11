@@ -1,0 +1,246 @@
+{
+  "simply": {
+    "roots": [{ "part": "simpl", "ko": "단순한 (simple)" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 simplex (한 겹의, 단순한)",
+    "story": "한 겹(simple)뿐이라 덧붙일 것 없이(-ly) → 단지, 그냥, 간단히",
+    "family": ["simplify", "simplicity", "simplistic"]
+  },
+  "since": {
+    "origin": "고대 영어 siththan (그 뒤에)",
+    "story": "그 일 뒤로(since) 쭉 이어지니 그것이 곧 까닭이 된다 → ~ 이후로, ~이므로"
+  },
+  "single": {
+    "origin": "라틴어 singulus (하나씩의, 낱개의)",
+    "story": "하나씩 따로 떼어 놓은 낱개(singulus) → 하나의, 단일의",
+    "hook": "싱글 → '싱글 침대', '싱글 앨범' → 하나의, 독신의",
+    "family": ["singular", "singleton"]
+  },
+  "single-pass": {
+    "roots": [{ "part": "single", "ko": "하나의" }, { "part": "pass", "ko": "지나감, 훑기" }],
+    "story": "데이터를 한(single) 번만 훑고 지나가(pass) 끝낸다 → 한 번의 처리로 끝나는"
+  },
+  "site": {
+    "origin": "라틴어 situs (놓인 자리, 위치)",
+    "story": "무언가가 놓여 있는 자리(situs) → 위치, 지점, 현장",
+    "hook": "사이트 → 웹사이트는 인터넷 위의 '자리' → 위치, 웹사이트",
+    "family": ["situate", "situation"]
+  },
+  "situation": {
+    "roots": [{ "part": "situ", "ko": "자리, 위치" }, { "part": "-ation", "ko": "~한 상태" }],
+    "origin": "라틴어 situare (자리에 놓다) ← situs (위치)",
+    "story": "지금 내가 놓인(situ) 자리의 형편(-ation) → 상황, 처지",
+    "family": ["site", "situate"]
+  },
+  "skill": {
+    "origin": "고대 노르드어 skil (분별, 구별)",
+    "story": "가려 낼 줄 아는 분별(skil)이 곧 솜씨 → 기술, 숙련 / 불러 쓰는 작업 지침 스킬",
+    "hook": "스킬 → 게임 캐릭터가 필요할 때 꺼내 쓰는 '스킬' → 스킬, 기술"
+  },
+  "skip": {
+    "story": "줄넘기하듯 폴짝 뛰어 한 칸을 넘어간다 → 건너뛰다, 빠뜨리다",
+    "hook": "스킵 → 광고 '스킵' 버튼 → 건너뛰다"
+  },
+  "sla": {
+    "origin": "Service Level Agreement",
+    "story": "서비스(Service)를 어느 수준(Level)까지 지키겠다는 약속(Agreement) → 서비스 수준 협약"
+  },
+  "slash": {
+    "story": "칼로 비스듬히 휙 베어(slash) 그은 자국 모양의 기호 → 슬래시(/)",
+    "hook": "슬래시 → 키보드의 '/' 키 → 슬래시"
+  },
+  "slim": {
+    "story": "군살을 빼 날씬하게 만들듯 군더더기를 덜어 낸다 → 분량을 줄여 가볍게 하다, 날씬한",
+    "hook": "슬림 → '슬림핏'처럼 날씬하게 → 줄여 가볍게 하다, 날씬한"
+  },
+  "smooth": {
+    "origin": "고대 영어 smōth (매끄러운)",
+    "story": "손으로 쓸어도 걸리는 데 없이 술술 넘어가는 → 매끄러운, 순조로운",
+    "hook": "스무드 → 음료 '스무디'처럼 부드럽게 넘어가는 → 매끄러운"
+  },
+  "snapshot": {
+    "roots": [{ "part": "snap", "ko": "찰칵, 재빨리" }, { "part": "shot", "ko": "쏘기, 촬영" }],
+    "story": "찰칵(snap) 찍은(shot) 사진 한 장처럼 그 순간을 그대로 고정 → 스냅숏, 그 시점의 사본"
+  },
+  "snippet": {
+    "roots": [{ "part": "snip", "ko": "싹둑 자르다" }, { "part": "-et", "ko": "작은 것" }],
+    "story": "가위로 싹둑(snip) 잘라 낸 작은(-et) 조각 → 짧은 조각, 발췌"
+  },
+  "so-that": {
+    "story": "그렇게(so) 해서 그 결과 저 일(that)이 이루어지게 → ~하도록, ~하기 위해"
+  },
+  "software": {
+    "roots": [{ "part": "soft", "ko": "부드러운, 무형의" }, { "part": "ware", "ko": "물건, 제품" }],
+    "story": "손에 잡히는 하드웨어와 달리 형체 없이 부드러운(soft) 제품(ware) → 소프트웨어",
+    "family": ["hardware", "firmware", "middleware"]
+  },
+  "sort": {
+    "origin": "라틴어 sors (제비, 몫) → 고대 프랑스어 sorte (종류)",
+    "story": "제비(sors)를 뽑아 몫대로 무리를 가른다 → 분류하다, 정렬하다 / 종류",
+    "family": ["assort", "consort", "assortment"]
+  },
+  "source": {
+    "origin": "고대 프랑스어 sourse (샘) ← 라틴어 surgere (솟다)",
+    "story": "물이 솟아나는(surgere) 샘처럼 정보가 처음 나오는 곳 → 출처, 원본",
+    "hook": "소스 → '뉴스 소스', '소스 코드' → 출처, 원본",
+    "family": ["surge", "resource", "insurgent"]
+  },
+  "source-of-truth": {
+    "roots": [{ "part": "source", "ko": "샘, 출처" }, { "part": "truth", "ko": "진실, 정답" }],
+    "story": "정답(truth)이 솟는 단 하나의 샘(source), 사본은 모두 여기서 길어 온다 → 기준 원본"
+  },
+  "span": {
+    "origin": "고대 영어 spann (한 뼘)",
+    "story": "손을 쫙 펴 한 뼘(spann)으로 이 끝에서 저 끝까지 잰다 → 걸치다, 아우르다 / 구간"
+  },
+  "spare": {
+    "origin": "고대 영어 sparian (아끼다, 남겨 두다)",
+    "story": "쓰지 않고 아껴 둔 것이 남는다 → 여분의, 남는 / 아끼다, 내주다",
+    "hook": "스페어 → '스페어 타이어'는 여분으로 둔 타이어 → 여분의"
+  },
+  "spawn": {
+    "origin": "고대 프랑스어 espandre ← 라틴어 expandere (펼치다)",
+    "story": "물고기가 알을 쏟아 퍼뜨리듯(expandere) 새 프로세스를 낳는다 → 새로 띄우다, 생성하다",
+    "hook": "스폰 → 게임에서 몬스터가 '스폰'된다 → 새로 생성하다",
+    "family": ["expand", "expansion", "expanse"]
+  },
+  "specialist": {
+    "roots": [{ "part": "special", "ko": "특별한, 특정 종류의" }, { "part": "-ist", "ko": "~하는 사람" }],
+    "story": "특정한(special) 한 분야만 깊이 파는 사람(-ist) → 전문가, 전문 담당",
+    "hook": "스페셜리스트 → 두루 하는 '제너럴리스트'의 반대 → 전문가",
+    "family": ["special", "specialty", "species"]
+  },
+  "specialize": {
+    "roots": [{ "part": "special", "ko": "특별한, 특정 종류의" }, { "part": "-ize", "ko": "~하게 만들다" }],
+    "story": "특정한(special) 일 하나에만 맞게 만든다(-ize) → 특화하다, 전문화하다",
+    "family": ["special", "specialty", "especially"]
+  },
+  "specific": {
+    "roots": [{ "part": "speci", "ko": "종류, 모양" }, { "part": "-fic", "ko": "만드는" }],
+    "origin": "라틴어 specificus (종류를 이루는)",
+    "story": "어느 종류(speci)인지 딱 집어 만들어(fic) 놓은 → 구체적인, 특정한",
+    "family": ["species", "specify", "special"]
+  },
+  "specification": {
+    "roots": [{ "part": "speci", "ko": "종류, 모양" }, { "part": "-fic", "ko": "만들다" }, { "part": "-ation", "ko": "~한 것" }],
+    "story": "어떤 종류(speci)로 만들지(fic) 낱낱이 적어 둔 것(-ation) → 명세(서), 사양",
+    "hook": "스펙 → 제품 '스펙'을 적어 둔 문서 → 사양, 명세",
+    "family": ["specify", "specific", "species"]
+  },
+  "specify": {
+    "roots": [{ "part": "speci", "ko": "종류, 모양" }, { "part": "-fy", "ko": "만들다" }],
+    "origin": "라틴어 specificare (종류를 정하다)",
+    "story": "어느 종류(speci)인지 분명하게 만든다(-fy) → 명시하다, 지정하다",
+    "family": ["specific", "species", "special"]
+  },
+  "speculative": {
+    "roots": [{ "part": "specul", "ko": "살펴보다, 망보다" }, { "part": "-ative", "ko": "~하는 성질의" }],
+    "origin": "라틴어 speculari (망보다, 살피다)",
+    "story": "망루에서 멀리 내다보며(specul) 짐작만 하는(-ative) → 추측에 근거한, 확실하지 않은",
+    "family": ["speculate", "spectator", "inspect"]
+  },
+  "spike": {
+    "story": "그래프가 대못(spike)처럼 뾰족하게 솟는다 → 급증, 급등 / 급증하다"
+  },
+  "split": {
+    "origin": "중세 네덜란드어 splitten (쪼개다)",
+    "story": "통나무를 도끼로 쩍 갈라 둘로 만든다 → 나누다, 쪼개다 / 분할"
+  },
+  "spread": {
+    "origin": "고대 영어 sprǣdan (펼치다, 늘이다)",
+    "story": "한곳에 뭉친 것을 넓게 펴서 고루 나눈다 → 퍼지다, 펼치다, 분산하다",
+    "hook": "스프레드 → 빵에 펴 바르는 '스프레드' → 펼치다"
+  },
+  "stabilize": {
+    "roots": [{ "part": "stabil", "ko": "굳게 선, 안정된" }, { "part": "-ize", "ko": "~하게 만들다" }],
+    "origin": "라틴어 stabilis (굳게 서 있는)",
+    "story": "흔들리지 않고 굳게 서(stabil) 있게 만든다(-ize) → 안정시키다, 안정되다",
+    "family": ["stable", "stability", "establish"]
+  },
+  "stable": {
+    "roots": [{ "part": "sta", "ko": "서다" }, { "part": "-ble", "ko": "~할 수 있는" }],
+    "origin": "라틴어 stabilis (굳게 서 있는)",
+    "story": "넘어지지 않고 서(sta) 있을 수 있는(-ble) → 안정된, 일정한",
+    "hook": "스테이블 → '스테이블 코인'은 값이 안정된 코인 → 안정된",
+    "family": ["stability", "establish", "status"]
+  },
+  "staff": {
+    "origin": "고대 영어 stæf (지팡이, 막대)",
+    "story": "지휘관이 짚는 지팡이(stæf)처럼 조직을 받치는 사람들 → 직원, 담당자 / 배치하다",
+    "hook": "스태프 → 방송·영화 '스태프' → 직원, 담당자"
+  },
+  "stage": {
+    "origin": "고대 프랑스어 estage (층, 서는 곳) ← 라틴어 stare",
+    "story": "한 층(estage)씩 올라서며 나아간다 → 단계 / 커밋 전에 무대에 올려 둔다 → 스테이징하다",
+    "hook": "스테이지 → 게임 '스테이지 1, 2…' → 단계",
+    "family": ["station", "status", "stance"]
+  },
+  "stall": {
+    "origin": "고대 영어 steall (서 있는 자리, 외양간)",
+    "story": "외양간 칸(stall)에 들어가 꼼짝 않고 서 있는 말처럼 → 멈춤, 지연 / 멎다",
+    "family": ["install", "forestall"]
+  },
+  "standalone": {
+    "roots": [{ "part": "stand", "ko": "서다" }, { "part": "alone", "ko": "홀로" }],
+    "story": "남에게 기대지 않고 홀로(alone) 선다(stand) → 단독의, 단독으로"
+  },
+  "standard": {
+    "origin": "고대 프랑스어 estandart (집결용 군기)",
+    "story": "군대가 모이는 기준점이 되던 깃발(estandart) → 기준, 표준 / 표준의",
+    "hook": "스탠다드 → '스탠다드 사이즈'는 기본 규격 → 표준의"
+  },
+  "standardize": {
+    "roots": [{ "part": "standard", "ko": "표준, 기준" }, { "part": "-ize", "ko": "~하게 만들다" }],
+    "story": "제각각이던 것을 한 기준(standard)에 맞게 만든다(-ize) → 표준화하다, 하나로 통일하다"
+  },
+  "startup": {
+    "roots": [{ "part": "start", "ko": "시작하다" }, { "part": "up", "ko": "위로, 일으켜" }],
+    "story": "시작해(start) 일으켜 세우는(up) 순간, 또는 막 일어선 회사 → 시작 시점, 스타트업"
+  },
+  "state": {
+    "origin": "라틴어 status (서 있는 모양, 상태)",
+    "story": "일이 어떻게 서 있는지(status) 그 모양을 분명히 말한다 → 밝히다, 명시하다 / 상태",
+    "family": ["status", "statement", "station", "estate"]
+  },
+  "stateless": {
+    "roots": [{ "part": "state", "ko": "상태" }, { "part": "-less", "ko": "~이 없는" }],
+    "story": "앞 요청의 상태(state)를 들고 있지 않은(-less) → 무상태의",
+    "family": ["stateful", "statement", "status"]
+  },
+  "statement": {
+    "roots": [{ "part": "state", "ko": "밝히다, 말하다" }, { "part": "-ment", "ko": "~한 것" }],
+    "story": "할 일을 분명히 밝혀(state) 적은 한 줄(-ment) → (코드의) 문, 진술",
+    "family": ["restate", "understatement", "status"]
+  },
+  "static": {
+    "roots": [{ "part": "stat", "ko": "서다, 멈추다" }, { "part": "-ic", "ko": "~한" }],
+    "origin": "그리스어 statikos (멈춰 서게 하는)",
+    "story": "제자리에 서서(stat) 움직이지 않는(-ic) → 정적인, 고정된",
+    "family": ["thermostat", "ecstatic", "electrostatic"]
+  },
+  "statistic": {
+    "origin": "독일어 Statistik ← 라틴어 status (국가, 상태)",
+    "story": "나라(state)의 형편을 숫자로 헤아리던 데서 → 통계 수치, 통계 자료",
+    "family": ["state", "status", "statistician"]
+  },
+  "status": {
+    "origin": "라틴어 status (서 있는 모양) ← stare (서다)",
+    "story": "지금 어떤 모양으로 서 있는가(status) → 상태, 현황 / 사회에서 선 자리 → 지위",
+    "family": ["state", "statue", "stature"]
+  },
+  "stderr": {
+    "origin": "standard error",
+    "story": "오류(error) 메시지를 따로 내보내는 표준(standard) 통로 → 표준 오류"
+  },
+  "stdin": {
+    "origin": "standard input",
+    "story": "프로그램이 입력(input)을 받아들이는 표준(standard) 통로 → 표준 입력"
+  },
+  "stdio": {
+    "origin": "standard input/output",
+    "story": "표준(standard) 입력(input)과 출력(output)을 한데 묶어 부르는 말 → 표준 입출력"
+  },
+  "stdout": {
+    "origin": "standard output",
+    "story": "프로그램이 결과를 내보내는(output) 표준(standard) 통로 → 표준 출력"
+  }
+}

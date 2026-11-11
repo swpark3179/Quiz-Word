@@ -1,0 +1,511 @@
+[
+ {
+  "id": "overwrite",
+  "word": "overwrite",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌoʊvərˈraɪt",
+  "meaning": "덮어쓰다 — 기존 내용을 지우고 새 내용으로 바꿔 쓰다",
+  "level": 5
+ },
+ {
+  "id": "own-site",
+  "word": "own-site",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌoʊn ˈsaɪt",
+  "meaning": "자사 사이트의 — 그 상점 자체 웹사이트에 관한",
+  "level": 4
+ },
+ {
+  "id": "package",
+  "word": "package",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈpækɪdʒ",
+  "meaning": "① (코드) 패키지, 모듈 묶음 ② 소포, 꾸러미 ③ 포장하다, 하나로 묶다",
+  "level": 3
+ },
+ {
+  "id": "parallel",
+  "word": "parallel",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈpærəlel",
+  "meaning": "병렬의, 동시에 진행하는 (in parallel: 병렬로, parallelization: 병렬화)",
+  "level": 4
+ },
+ {
+  "id": "parameter",
+  "word": "parameter",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "pəˈræmɪtər",
+  "meaning": "매개변수, 파라미터 — 함수·도구에 넘기는 입력 항목",
+  "level": 5
+ },
+ {
+  "id": "parcel",
+  "word": "parcel",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈpɑːrsl",
+  "meaning": "소포, 택배",
+  "level": 4
+ },
+ {
+  "id": "parent",
+  "word": "parent",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ˈperənt",
+  "meaning": "① (하위를 띄운) 상위 에이전트·프로세스, 부모 ② 부모, 어버이 ③ 상위의, 모(母)-",
+  "level": 2
+ },
+ {
+  "id": "parse",
+  "word": "parse",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "pɑːrs",
+  "meaning": "파싱하다 — 텍스트를 구조에 맞게 분석해 읽어 내다",
+  "level": 6
+ },
+ {
+  "id": "partial",
+  "word": "partial",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈpɑːrʃl",
+  "meaning": "부분적인, 일부만의",
+  "level": 4
+ },
+ {
+  "id": "particularly",
+  "word": "particularly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "pərˈtɪkjələrli",
+  "meaning": "특히",
+  "level": 3
+ },
+ {
+  "id": "partition",
+  "word": "partition",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "pɑːrˈtɪʃn",
+  "meaning": "(겹치지 않게) 나누다, 분할(하다)",
+  "level": 6
+ },
+ {
+  "id": "partly",
+  "word": "partly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈpɑːrtli",
+  "meaning": "부분적으로, 어느 정도는",
+  "level": 3
+ },
+ {
+  "id": "passage",
+  "word": "passage",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈpæsɪdʒ",
+  "meaning": "(글의) 구절, 단락",
+  "level": 3
+ },
+ {
+  "id": "passenger",
+  "word": "passenger",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈpæsɪndʒər",
+  "meaning": "승객, 탑승객",
+  "level": 2
+ },
+ {
+  "id": "passing-test",
+  "word": "passing-test",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌpæsɪŋ ˈtest",
+  "meaning": "통과한 테스트의 — 이미 성공한 테스트에 관한",
+  "level": 5
+ },
+ {
+  "id": "paste",
+  "word": "paste",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "peɪst",
+  "meaning": "① (복사한 내용을) 붙여 넣다 ② 풀, 반죽",
+  "level": 3
+ },
+ {
+  "id": "path",
+  "word": "path",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "pæθ",
+  "meaning": "① (파일) 경로 ② (일이 흘러가는) 길, 경로",
+  "level": 2
+ },
+ {
+  "id": "patient",
+  "word": "patient",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ˈpeɪʃnt",
+  "meaning": "① 환자 ② 참을성 있는, 인내심 있는",
+  "level": 2
+ },
+ {
+  "id": "pattern",
+  "word": "pattern",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈpætərn",
+  "meaning": "패턴, 반복되는 형식·유형",
+  "level": 3
+ },
+ {
+  "id": "pause",
+  "word": "pause",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "pɔːz",
+  "meaning": "① 일시 중지하다, 잠시 멈추다 ② 멈춤, 일시 정지",
+  "level": 2
+ },
+ {
+  "id": "payload",
+  "word": "payload",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈpeɪloʊd",
+  "meaning": "페이로드 — 요청·메시지에 실린 실제 데이터 본문",
+  "level": 6
+ },
+ {
+  "id": "payment",
+  "word": "payment",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈpeɪmənt",
+  "meaning": "지급, 결제 (대금)",
+  "level": 2
+ },
+ {
+  "id": "pdf",
+  "word": "PDF",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌpiː.diːˈef",
+  "meaning": "PDF — 인쇄 모양 그대로 담는 문서 파일 형식 (Portable Document Format)",
+  "level": 4
+ },
+ {
+  "id": "peak",
+  "word": "peak",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "piːk",
+  "meaning": "절정, 최고조 (peak hours: 사용량이 가장 많은 시간대)",
+  "level": 3
+ },
+ {
+  "id": "peer-reviewed",
+  "word": "peer-reviewed",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌpɪr rɪˈvjuːd",
+  "meaning": "동료 심사를 거친 — 같은 분야 전문가의 검토를 통과한 (학술 문헌)",
+  "level": 6
+ },
+ {
+  "id": "peer-to-peer",
+  "word": "peer-to-peer",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌpɪr tə ˈpɪr",
+  "meaning": "P2P, 대등 간 직접 연결의 — 중앙을 거치지 않고 서로 직접 주고받는",
+  "level": 6
+ },
+ {
+  "id": "penalty",
+  "word": "penalty",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈpenəlti",
+  "meaning": "위약금, 벌칙 / 불이익",
+  "level": 4
+ },
+ {
+  "id": "pending",
+  "word": "pending",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈpendɪŋ",
+  "meaning": "아직 처리되지 않은, 대기 중인",
+  "level": 5
+ },
+ {
+  "id": "per",
+  "word": "per",
+  "pos": [
+   "전치사"
+  ],
+  "ipa": "pɜːr",
+  "meaning": "~당, ~마다",
+  "level": 3
+ },
+ {
+  "id": "per-batch",
+  "word": "per-batch",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌpɜːr ˈbætʃ",
+  "meaning": "배치당, 배치 하나마다의",
+  "level": 5
+ },
+ {
+  "id": "per-call",
+  "word": "per-call",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌpɜːr ˈkɔːl",
+  "meaning": "호출당, 호출할 때마다의 — 호출 한 번마다 따로 주는",
+  "level": 5
+ },
+ {
+  "id": "per-file",
+  "word": "per-file",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌpɜːr ˈfaɪl",
+  "meaning": "파일별의 — 파일 하나씩 따로 하는",
+  "level": 5
+ },
+ {
+  "id": "per-request",
+  "word": "per-request",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "pɜːr rɪˈkwest",
+  "meaning": "요청당, 요청 한 건마다의",
+  "level": 5
+ },
+ {
+  "id": "perfectly",
+  "word": "perfectly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈpɜːrfɪktli",
+  "meaning": "① 완벽하게, 빈틈없이 ② 아주, 전적으로 (perfectly fine: 전혀 문제없는)",
+  "level": 2
+ },
+ {
+  "id": "perform",
+  "word": "perform",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "pərˈfɔːrm",
+  "meaning": "수행하다, (작업을) 해내다",
+  "level": 3
+ },
+ {
+  "id": "performance",
+  "word": "performance",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "pərˈfɔːrməns",
+  "meaning": "① 성능 ② (업무) 성과, 수행",
+  "level": 3
+ },
+ {
+  "id": "permission",
+  "word": "permission",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "pərˈmɪʃn",
+  "meaning": "권한, 허가 — 어떤 동작을 해도 되는지 정한 것",
+  "level": 3
+ },
+ {
+  "id": "persona",
+  "word": "persona",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "pərˈsoʊnə",
+  "meaning": "페르소나 — (챗봇이 연기하는) 캐릭터·인물 설정",
+  "level": 6
+ },
+ {
+  "id": "personal",
+  "word": "personal",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈpɜːrsənl",
+  "meaning": "① 개인의, 개인용의 (personal level: 사용자 개인 범위) ② 사적인, 개인적인",
+  "level": 2
+ },
+ {
+  "id": "personal-access-token",
+  "word": "personal access token",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˌpɜːrsənl ˈækses ˌtoʊkən",
+  "meaning": "개인 액세스 토큰(PAT) — 비밀번호 대신 API·CLI 인증에 쓰는 개인 비밀값",
+  "level": 6
+ },
+ {
+  "id": "pharmaceutical",
+  "word": "pharmaceutical",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌfɑːrməˈsuːtɪkl",
+  "meaning": "제약의",
+  "level": 6
+ },
+ {
+  "id": "phase",
+  "word": "phase",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "feɪz",
+  "meaning": "(작업의) 단계",
+  "level": 4
+ },
+ {
+  "id": "phi",
+  "word": "PHI",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌpiː.eɪtʃˈaɪ",
+  "meaning": "보호 대상 건강 정보(Protected Health Information) — HIPAA 가 보호하는 환자 정보",
+  "level": 6
+ },
+ {
+  "id": "phrase",
+  "word": "phrase",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "freɪz",
+  "meaning": "① 문구, 구절 ② (말로) 표현하다",
+  "level": 3
+ },
+ {
+  "id": "physically",
+  "word": "physically",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈfɪzɪkli",
+  "meaning": "물리적으로, 실제로",
+  "level": 3
+ },
+ {
+  "id": "picker",
+  "word": "picker",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈpɪkər",
+  "meaning": "선택 화면, 선택기 — 목록에서 항목을 골라 여는 UI",
+  "level": 5
+ },
+ {
+  "id": "pilot",
+  "word": "pilot",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈpaɪlət",
+  "meaning": "시범 운영, 파일럿 (프로젝트)",
+  "level": 4
+ },
+ {
+  "id": "pin",
+  "word": "pin",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "pɪn",
+  "meaning": "(버전을) 고정하다 — 자동으로 바뀌지 않게 특정 버전에 묶어 두다 / 핀",
+  "level": 4
+ },
+ {
+  "id": "pipeline",
+  "word": "pipeline",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈpaɪplaɪn",
+  "meaning": "파이프라인 — 여러 처리 단계를 차례로 이은 흐름",
+  "level": 6
+ },
+ {
+  "id": "placeholder",
+  "word": "placeholder",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈpleɪshoʊldər",
+  "meaning": "자리 표시자 — 나중에 채울 임시 값",
+  "level": 6
+ }
+]

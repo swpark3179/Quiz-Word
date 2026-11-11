@@ -1,0 +1,513 @@
+[
+ {
+  "id": "anger",
+  "word": "anger",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈæŋɡər",
+  "meaning": "① 분노, 화 ② 화나게 하다",
+  "level": 2
+ },
+ {
+  "id": "annotate",
+  "word": "annotate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈænəteɪt",
+  "meaning": "주석·설명을 달다, 표시해 두다",
+  "level": 6
+ },
+ {
+  "id": "anyway",
+  "word": "anyway",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈeniweɪ",
+  "meaning": "① 어쨌든, 그래도 ② (화제 전환) 그건 그렇고",
+  "level": 2
+ },
+ {
+  "id": "apac",
+  "word": "APAC",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˈeɪpæk",
+  "meaning": "아시아·태평양 지역 (Asia-Pacific)",
+  "level": 6
+ },
+ {
+  "id": "api",
+  "word": "API",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌeɪ.piːˈaɪ",
+  "meaning": "API — 프로그램이 다른 서비스의 기능을 호출하는 창구 (Application Programming Interface)",
+  "level": 6
+ },
+ {
+  "id": "apologize",
+  "word": "apologize",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əˈpɑːlədʒaɪz",
+  "meaning": "사과하다",
+  "level": 2
+ },
+ {
+  "id": "appear",
+  "word": "appear",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əˈpɪr",
+  "meaning": "① 나타나다, (기록·목록에) 나오다 ② ~인 것 같다",
+  "level": 2
+ },
+ {
+  "id": "append",
+  "word": "append",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əˈpend",
+  "meaning": "(끝에) 덧붙이다, 추가하다",
+  "level": 6
+ },
+ {
+  "id": "application",
+  "word": "application",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌæplɪˈkeɪʃn",
+  "meaning": "① 애플리케이션, 응용 프로그램 ② 적용, 응용 ③ 신청(서), 지원(서)",
+  "level": 3
+ },
+ {
+  "id": "apply",
+  "word": "apply",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əˈplaɪ",
+  "meaning": "① (규칙·기준을) 적용하다 ② (변경이) 반영되다, 적용되다",
+  "level": 3
+ },
+ {
+  "id": "appointment",
+  "word": "appointment",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈpɔɪntmənt",
+  "meaning": "(진료·상담) 예약, 약속",
+  "level": 3
+ },
+ {
+  "id": "approach",
+  "word": "approach",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "əˈproʊtʃ",
+  "meaning": "접근법, (문제를 푸는) 방법 / 다가가다",
+  "level": 3
+ },
+ {
+  "id": "approval",
+  "word": "approval",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈpruːvl",
+  "meaning": "승인 (approve: 승인하다)",
+  "level": 4
+ },
+ {
+  "id": "architect",
+  "word": "architect",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈɑːrkɪtekt",
+  "meaning": "① (시스템) 설계자, 아키텍트 ② 건축가 ③ 설계하다",
+  "level": 4
+ },
+ {
+  "id": "architecture",
+  "word": "architecture",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɑːrkɪtektʃər",
+  "meaning": "아키텍처 — 시스템 전체의 구조·설계 (architectural: 구조 차원의)",
+  "level": 4
+ },
+ {
+  "id": "archive",
+  "word": "archive",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈɑːrkaɪv",
+  "meaning": "① 보관소, 기록 모음 ② 보관 처리하다 — archived: 보관(비활성) 상태가 된",
+  "level": 5
+ },
+ {
+  "id": "area",
+  "word": "area",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈeriə",
+  "meaning": "① 영역, 분야 ② 지역, 구역 ③ 면적",
+  "level": 2
+ },
+ {
+  "id": "argument",
+  "word": "argument",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɑːrɡjumənt",
+  "meaning": "① (명령·함수에 넘기는) 인자 ② 논거, 주장",
+  "level": 5
+ },
+ {
+  "id": "arithmetic",
+  "word": "arithmetic",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "əˈrɪθmətɪk",
+  "meaning": "산술, 계산 / 산술의 (합계 등 숫자 계산의)",
+  "level": 5
+ },
+ {
+  "id": "arrangement",
+  "word": "arrangement",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈreɪndʒmənt",
+  "meaning": "① 약정, 합의 — 서로 맺은 조건 ② 배열, 배치",
+  "level": 4
+ },
+ {
+  "id": "array",
+  "word": "array",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈreɪ",
+  "meaning": "배열 — 값을 순서대로 담은 목록 (JSON 의 [ ])",
+  "level": 6
+ },
+ {
+  "id": "arrival",
+  "word": "arrival",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈraɪvl",
+  "meaning": "도착, 들어옴 (arrive: 도착하다)",
+  "level": 3
+ },
+ {
+  "id": "article",
+  "word": "article",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɑːrtɪkl",
+  "meaning": "① 기사, 글 ② (계약·법의) 조항 ③ 물품 ④ (문법) 관사",
+  "level": 2
+ },
+ {
+  "id": "artifact",
+  "word": "artifact",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɑːrtɪfækt",
+  "meaning": "① (처리 과정에서 생긴) 부산물, 이상 현상 ② 산출물, 결과물 파일 ③ 인공물, 유물",
+  "level": 6
+ },
+ {
+  "id": "as-is",
+  "word": "as-is",
+  "pos": [
+   "부사",
+   "형용사"
+  ],
+  "ipa": "ˌæz ˈɪz",
+  "meaning": "있는 그대로, 손대지 않은 채로",
+  "level": 4
+ },
+ {
+  "id": "as-soon-as",
+  "word": "as soon as",
+  "pos": [
+   "접속사"
+  ],
+  "ipa": "əz ˈsuːn əz",
+  "meaning": "~하자마자, ~하는 즉시",
+  "level": 2
+ },
+ {
+  "id": "assemble",
+  "word": "assemble",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əˈsembl",
+  "meaning": "① (여러 부분을) 모아 구성하다, 엮다 ② 조립하다 ③ (사람이) 모이다",
+  "level": 4
+ },
+ {
+  "id": "assertion",
+  "word": "assertion",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈsɜːrʃn",
+  "meaning": "① (테스트) 단언문 — 결과가 기대값과 맞는지 검사하는 코드 ② 주장",
+  "level": 6
+ },
+ {
+  "id": "assign",
+  "word": "assign",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əˈsaɪn",
+  "meaning": "(일·역할·값을) 배정하다, 할당하다, 부여하다",
+  "level": 4
+ },
+ {
+  "id": "assistant",
+  "word": "assistant",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈsɪstənt",
+  "meaning": "① (AI) 어시스턴트, 도우미 ② (대화 메시지의) assistant 역할 — 모델 쪽 발화 ③ 조수, 보조원",
+  "level": 3
+ },
+ {
+  "id": "associate",
+  "word": "associate",
+  "pos": [
+   "형용사",
+   "동사",
+   "명사"
+  ],
+  "ipa": "əˈsoʊʃieɪt",
+  "meaning": "① 연관 짓다 (associated: 연관된, 관련된) ② 동료, 제휴자",
+  "level": 4
+ },
+ {
+  "id": "assume",
+  "word": "assume",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əˈsuːm",
+  "meaning": "가정하다, (확인 없이) ~라고 여기다",
+  "level": 4
+ },
+ {
+  "id": "asynchronous",
+  "word": "asynchronous",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "eɪˈsɪŋkrənəs",
+  "meaning": "비동기의 — 결과를 기다리지 않고 다음 일을 하는",
+  "level": 6
+ },
+ {
+  "id": "at-once",
+  "word": "at once",
+  "pos": [
+   "부사구"
+  ],
+  "ipa": "ət ˈwʌns",
+  "meaning": "① 동시에, 한꺼번에 ② 즉시",
+  "level": 2
+ },
+ {
+  "id": "atomic",
+  "word": "atomic",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "əˈtɑːmɪk",
+  "meaning": "원자적인 — 전부 성공하거나 전부 실패하는, 더 쪼갤 수 없는 한 단위의",
+  "level": 6
+ },
+ {
+  "id": "attach",
+  "word": "attach",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əˈtætʃ",
+  "meaning": "붙이다, 첨부하다",
+  "level": 3
+ },
+ {
+  "id": "attacker",
+  "word": "attacker",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈtækər",
+  "meaning": "공격자 (attack: 공격하다 / 공격)",
+  "level": 3
+ },
+ {
+  "id": "attendee",
+  "word": "attendee",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˌtenˈdiː",
+  "meaning": "참석자",
+  "level": 5
+ },
+ {
+  "id": "attention",
+  "word": "attention",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈtenʃn",
+  "meaning": "① 주의, 집중 ② (LLM) 어텐션 — 입력의 어느 부분에 집중할지 정하는 메커니즘",
+  "level": 2
+ },
+ {
+  "id": "attribute",
+  "word": "attribute",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈætrɪbjuːt",
+  "meaning": "① (객체의) 속성 ② (원인을) ~의 탓으로 보다",
+  "level": 5
+ },
+ {
+  "id": "attribution",
+  "word": "attribution",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌætrɪˈbjuːʃn",
+  "meaning": "(정보·주장의) 출처 표시",
+  "level": 6
+ },
+ {
+  "id": "audience",
+  "word": "audience",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɔːdiəns",
+  "meaning": "① (토큰의) 대상 — aud 클레임, 토큰을 받아들일 서비스 ② 청중, 독자",
+  "level": 3
+ },
+ {
+  "id": "audit",
+  "word": "audit",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈɔːdɪt",
+  "meaning": "(꼼꼼한) 점검, 감사(하다)",
+  "level": 6
+ },
+ {
+  "id": "auth",
+  "word": "auth",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ɔːθ",
+  "meaning": "인증·인가 (authentication / authorization 의 줄임말)",
+  "level": 6
+ },
+ {
+  "id": "authenticate",
+  "word": "authenticate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɔːˈθentɪkeɪt",
+  "meaning": "인증하다 — 누구인지 확인하다 (authentication: 인증)",
+  "level": 6
+ },
+ {
+  "id": "author",
+  "word": "author",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈɔːθər",
+  "meaning": "작성자, 저자 / 작성하다",
+  "level": 2
+ },
+ {
+  "id": "authority",
+  "word": "authority",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈθɔːrəti",
+  "meaning": "① (스스로 처리할 수 있는) 권한, 한도 ② 권위, 권위 있는 출처",
+  "level": 4
+ },
+ {
+  "id": "authorization",
+  "word": "authorization",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌɔːθərəˈzeɪʃn",
+  "meaning": "① 인가, 권한 부여 — 무엇을 해도 되는지 허락하는 것 (unauthorized: 허가받지 않은) ② Authorization 헤더 — 인증 정보를 담는 HTTP 헤더",
+  "level": 6
+ },
+ {
+  "id": "auto",
+  "word": "auto",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈɔːtoʊ",
+  "meaning": "자동(의) — tool_choice 의 auto: 도구를 쓸지 말지 모델이 정함",
+  "level": 3
+ },
+ {
+  "id": "auto-accepted",
+  "word": "auto-accepted",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌɔːtoʊ əkˈseptɪd",
+  "meaning": "(사람 검토 없이) 자동으로 승인·수락된",
+  "level": 6
+ }
+]

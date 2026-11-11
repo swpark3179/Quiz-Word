@@ -1,0 +1,296 @@
+{
+  "placement": {
+    "roots": [{ "part": "place", "ko": "두다, 자리" }, { "part": "-ment", "ko": "~하는 것" }],
+    "origin": "place ← 라틴어 platea (넓은 길, 터)",
+    "story": "무엇을 어느 자리(place)에 둘지 정하는 일(-ment) → 배치, 두는 위치",
+    "family": ["place", "replace", "displace", "misplace"]
+  },
+  "plain": {
+    "origin": "라틴어 planus (평평한)",
+    "story": "솟은 장식 하나 없이 평평한(planus) 맨바닥 → 아무것도 덧붙이지 않은, 일반의",
+    "hook": "플레인 → '플레인 요거트'는 아무것도 안 넣은 맛 → 그냥의",
+    "family": ["plane", "plan", "explain"]
+  },
+  "platform": {
+    "roots": [{ "part": "plat", "ko": "평평한" }, { "part": "form", "ko": "모양" }],
+    "origin": "프랑스어 plateforme (평평한 모양)",
+    "story": "그 위에 올라설 수 있게 평평한(plat) 모양(form)으로 다진 바닥 → 플랫폼, 기반 / 승강장",
+    "hook": "플랫폼 → 기차역 '플랫폼'처럼 딛고 서는 바닥 → 기반 시스템",
+    "family": ["plate", "plateau", "format"]
+  },
+  "plenty": {
+    "roots": [{ "part": "plen", "ko": "가득 찬" }, { "part": "-ty", "ko": "~함 (명사)" }],
+    "origin": "라틴어 plenitas (가득함) ← plenus (가득 찬)",
+    "story": "그릇이 가득(plen) 찰 만큼 있는 상태(-ty) → 충분함, 넉넉한 양",
+    "family": ["complete", "replenish", "plenary"]
+  },
+  "plugin": {
+    "roots": [{ "part": "plug", "ko": "플러그, 꽂다" }, { "part": "in", "ko": "안에" }],
+    "story": "콘센트에 플러그(plug)를 꽂아 넣듯(in) 본체에 끼워 기능을 더한다 → 플러그인"
+  },
+  "po": {
+    "origin": "Purchase Order",
+    "story": "무엇을 얼마에 사겠다(Purchase)고 써 보내는 주문서(Order) → 구매 주문(서)"
+  },
+  "pointer": {
+    "roots": [{ "part": "point", "ko": "가리키다, 점" }, { "part": "-er", "ko": "~하는 것" }],
+    "origin": "point ← 라틴어 punctum (찍힌 점)",
+    "story": "'저기' 하고 위치를 가리켜(point) 주는 것(-er) → 참조, 포인터 / 방향을 짚어 주는 말 → 조언",
+    "hook": "포인터 → 발표용 '레이저 포인터' → 가리키는 것",
+    "family": ["point", "appoint", "punctual", "pinpoint"]
+  },
+  "policy": {
+    "roots": [{ "part": "poli", "ko": "도시, 국가 (polis)" }, { "part": "-cy", "ko": "~함 (명사)" }],
+    "origin": "그리스어 politeia (나라 다스림) ← polis (도시)",
+    "story": "도시(polis)를 다스리려고 세워 둔 방침 → 정책, 규정",
+    "family": ["politics", "police", "metropolis"]
+  },
+  "polite": {
+    "origin": "라틴어 politus (닦아 윤을 낸) ← polire (닦다)",
+    "story": "거친 말과 태도를 반들반들 닦아(polire) 다듬은 → 정중한, 예의 바른",
+    "family": ["polish", "impolite"]
+  },
+  "position": {
+    "roots": [{ "part": "posit", "ko": "놓다" }, { "part": "-ion", "ko": "~한 것" }],
+    "origin": "라틴어 positio (놓음) ← ponere (놓다)",
+    "story": "무엇이 놓인(posit) 곳, 내가 서 있는 자리 → 위치, 자리 / 입장, 직책",
+    "hook": "포지션 → 축구 선수의 '포지션' → 위치, 자리",
+    "family": ["deposit", "opposite", "positive", "postpone"]
+  },
+  "post": {
+    "origin": "라틴어 postis (기둥)",
+    "story": "알릴 글을 기둥(post)에 붙여 모두가 보게 한다 → 올리다, 게시하다",
+    "hook": "포스트 → 블로그 '포스팅', 벽보 '포스터' → 게시하다",
+    "family": ["poster", "signpost", "goalpost"]
+  },
+  "post-process": {
+    "roots": [{ "part": "post-", "ko": "뒤에, 후" }, { "part": "process", "ko": "처리하다" }],
+    "origin": "라틴어 post (뒤에)",
+    "story": "출력이 나온 뒤에(post) 한 번 더 처리한다(process) → 후처리하다",
+    "family": ["postpone", "postscript", "preprocess"]
+  },
+  "posttooluse": {
+    "roots": [{ "part": "Post", "ko": "뒤, 후" }, { "part": "Tool", "ko": "도구" }, { "part": "Use", "ko": "사용" }],
+    "story": "도구(Tool)를 쓴(Use) 바로 뒤(Post)에 도는 훅 → PostToolUse 훅, 도구 실행 직후의 훅"
+  },
+  "potential": {
+    "roots": [{ "part": "pot", "ko": "할 수 있는" }, { "part": "-ent", "ko": "~한" }, { "part": "-ial", "ko": "~의" }],
+    "origin": "라틴어 potentia (힘, 능력) ← posse (할 수 있다)",
+    "story": "아직 드러나진 않았지만 그럴 힘(potent)을 품은 → 잠재적인, ~일 가능성이 있는",
+    "hook": "포텐셜 → '포텐 터졌다'의 포텐 → 잠재적인",
+    "family": ["potent", "possible", "power", "omnipotent"]
+  },
+  "power": {
+    "origin": "통속 라틴어 potere (할 수 있다) → 고대 프랑스어 poeir",
+    "story": "무엇을 할 수 있게(potere) 하는 힘, 그 힘을 넣어 돌린다 → 구동하다 / 힘, 전력",
+    "hook": "파워 → '파워 버튼'을 눌러 돌린다 → 구동하다, 전원",
+    "family": ["potential", "possible", "empower", "potent"]
+  },
+  "pr": {
+    "origin": "Pull Request",
+    "story": "내 변경을 당겨(Pull) 가서 합쳐 달라는 요청(Request) → 풀 리퀘스트"
+  },
+  "practice": {
+    "roots": [{ "part": "pract", "ko": "하다, 실행" }, { "part": "-ice", "ko": "~함 (명사)" }],
+    "origin": "그리스어 praktikos (실행의) ← prassein (하다)",
+    "story": "이론 말고 손으로 실제 해(pract) 보는 것, 늘 그렇게 해 온 방식 → 실제, 관행",
+    "family": ["practical", "pragmatic", "praxis"]
+  },
+  "precedence": {
+    "roots": [{ "part": "pre-", "ko": "앞에" }, { "part": "ced", "ko": "가다" }, { "part": "-ence", "ko": "~함 (명사)" }],
+    "origin": "라틴어 praecedere (앞서 가다)",
+    "story": "다른 것보다 앞에(pre) 가서(ced) 먼저 적용되는 순서 → 우선순위",
+    "family": ["precede", "precedent", "proceed", "exceed"]
+  },
+  "predate": {
+    "roots": [{ "part": "pre-", "ko": "앞에, 먼저" }, { "part": "date", "ko": "날짜" }],
+    "story": "날짜(date)가 그것보다 앞에(pre) 찍혀 있다 → (시기상) ~보다 앞서다",
+    "family": ["postdate", "update", "outdated"]
+  },
+  "prefer": {
+    "roots": [{ "part": "pre-", "ko": "앞에" }, { "part": "fer", "ko": "나르다, 놓다" }],
+    "origin": "라틴어 praeferre (앞에 놓다)",
+    "story": "여럿 중 하나를 집어 맨 앞에(pre) 가져다(fer) 놓는다 → 선호하다",
+    "family": ["offer", "transfer", "refer", "differ"]
+  },
+  "prefix": {
+    "roots": [{ "part": "pre-", "ko": "앞에" }, { "part": "fix", "ko": "붙이다, 고정하다" }],
+    "origin": "라틴어 praefixus (앞에 붙인)",
+    "story": "맨 앞(pre)에 붙여 고정한(fix) 부분 → 접두사, 앞부분",
+    "family": ["suffix", "affix", "fixture"]
+  },
+  "premium": {
+    "roots": [{ "part": "pre-", "ko": "먼저" }, { "part": "em", "ko": "취하다, 사다" }, { "part": "-ium", "ko": "명사 어미" }],
+    "origin": "라틴어 praemium (보상, 전리품의 몫)",
+    "story": "남보다 먼저(pre) 취하는(em) 몫, 그만큼 더 얹어 내는 값 → 할증, 고급의",
+    "hook": "프리미엄 → '프리미엄이 붙었다'(웃돈) → 할증, 고급의",
+    "family": ["exempt", "redeem", "prompt"]
+  },
+  "present": {
+    "roots": [{ "part": "pre-", "ko": "앞에" }, { "part": "sent", "ko": "있는 (esse)" }],
+    "origin": "라틴어 praesens (앞에 있는)",
+    "story": "눈앞(pre)에 있게(sent) 내놓는다 → 제시하다, 보여 주다 / 눈앞에 있는 → 존재하는",
+    "hook": "프리젠트 → '프레젠테이션'으로 눈앞에 보여 준다 → 제시하다",
+    "family": ["absent", "presence", "represent", "essence"]
+  },
+  "pretooluse": {
+    "roots": [{ "part": "Pre", "ko": "앞, 전" }, { "part": "Tool", "ko": "도구" }, { "part": "Use", "ko": "사용" }],
+    "story": "도구(Tool)를 쓰기(Use) 바로 전(Pre)에 끼어드는 훅 → PreToolUse 훅, 도구 실행 직전의 훅"
+  },
+  "prevent": {
+    "roots": [{ "part": "pre-", "ko": "앞서, 미리" }, { "part": "vent", "ko": "오다" }],
+    "origin": "라틴어 praevenire (앞서 오다)",
+    "story": "일이 터지기 전에 미리(pre) 와서(vent) 길목을 지킨다 → 막다, 방지하다",
+    "family": ["event", "invent", "convention", "venue"]
+  },
+  "previous": {
+    "roots": [{ "part": "pre-", "ko": "앞에" }, { "part": "vi", "ko": "길 (via)" }, { "part": "-ous", "ko": "~한" }],
+    "origin": "라틴어 praevius (앞서 길을 가는)",
+    "story": "같은 길(vi)을 나보다 앞서(pre) 지나간 → 이전의, 앞선",
+    "family": ["via", "obvious", "trivial", "deviate"]
+  },
+  "primary": {
+    "roots": [{ "part": "prim", "ko": "첫째의" }, { "part": "-ary", "ko": "~의" }],
+    "origin": "라틴어 primarius ← primus (첫째)",
+    "story": "줄 맨 앞, 첫째(prim) 자리에 서는 → 주된, 주요한 / 1차의, 기본의",
+    "family": ["prime", "primitive", "principal"]
+  },
+  "principal": {
+    "roots": [{ "part": "prin", "ko": "첫째 (primus)" }, { "part": "cip", "ko": "잡다 (capere)" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 princeps (첫 자리를 잡은 자)",
+    "story": "첫째(prin) 자리를 잡은(cip) 당사자 → (권한을 받아 행동하는) 주체 / 주된, 주요한",
+    "family": ["prince", "principle", "primary", "participate"]
+  },
+  "priority": {
+    "roots": [{ "part": "prior", "ko": "더 앞의" }, { "part": "-ity", "ko": "~함 (명사)" }],
+    "origin": "라틴어 prior (더 앞선)",
+    "story": "다른 것보다 더 앞(prior)에 세워 먼저 다루는 순서 → 우선순위, 우선권",
+    "family": ["prior", "primary", "prime"]
+  },
+  "privilege": {
+    "roots": [{ "part": "priv", "ko": "개인, 따로" }, { "part": "leg", "ko": "법" }],
+    "origin": "라틴어 privilegium (한 개인을 위한 법)",
+    "story": "한 사람(priv)에게만 따로 정해 준 법(leg), 특별히 허락된 것 → (시스템) 권한",
+    "family": ["private", "legal", "deprive", "legislate"]
+  },
+  "proactively": {
+    "roots": [{ "part": "pro-", "ko": "앞서, 미리" }, { "part": "act", "ko": "행동하다" }, { "part": "-ive", "ko": "~하는" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "일이 닥친 뒤에 반응하지 않고 미리(pro) 움직여서(act) → 먼저 나서서, 선제적으로",
+    "family": ["reactive", "active", "interact"]
+  },
+  "procedure": {
+    "roots": [{ "part": "pro-", "ko": "앞으로" }, { "part": "ced", "ko": "가다" }, { "part": "-ure", "ko": "~하는 것" }],
+    "origin": "라틴어 procedere (앞으로 나아가다)",
+    "story": "한 걸음씩 앞으로(pro) 나아가는(ced) 정해진 순서 → 절차",
+    "family": ["proceed", "process", "precede", "exceed"]
+  },
+  "proceed": {
+    "roots": [{ "part": "pro-", "ko": "앞으로" }, { "part": "ceed", "ko": "가다" }],
+    "origin": "라틴어 procedere (앞으로 나아가다)",
+    "story": "멈춰 있다가 앞으로(pro) 걸음을 옮긴다(ceed) → (다음 단계로) 진행하다, 계속하다",
+    "family": ["procedure", "process", "exceed", "succeed"]
+  },
+  "process": {
+    "roots": [{ "part": "pro-", "ko": "앞으로" }, { "part": "cess", "ko": "가다, 나아감" }],
+    "origin": "라틴어 processus (나아감) ← procedere",
+    "story": "일감이 단계를 밟아 앞으로(pro) 나아가게(cess) 한다 → 처리하다 / 과정, 절차",
+    "hook": "프로세스 → '업무 프로세스'의 프로세스 → 과정, 절차",
+    "family": ["proceed", "access", "success", "excess"]
+  },
+  "procurement": {
+    "roots": [{ "part": "pro-", "ko": "~을 위해" }, { "part": "cure", "ko": "돌보다, 챙기다" }, { "part": "-ment", "ko": "~하는 것" }],
+    "origin": "라틴어 procurare (대신 돌보다, 챙겨 주다)",
+    "story": "회사를 위해(pro) 필요한 것을 챙겨(cure) 구해 오는 일(-ment) → 조달, 구매",
+    "family": ["procure", "cure", "secure", "curator"]
+  },
+  "produce": {
+    "roots": [{ "part": "pro-", "ko": "앞으로" }, { "part": "duce", "ko": "이끌다" }],
+    "origin": "라틴어 producere (앞으로 이끌어 내다)",
+    "story": "안에 있던 것을 앞으로(pro) 끌어내(duce) 내놓는다 → 만들어 내다, (결과를) 내다",
+    "family": ["reduce", "introduce", "conduct", "product"]
+  },
+  "production": {
+    "roots": [{ "part": "pro-", "ko": "앞으로" }, { "part": "duct", "ko": "이끌다" }, { "part": "-ion", "ko": "~하는 것" }],
+    "origin": "라틴어 productio ← producere (앞으로 이끌어 내다)",
+    "story": "만든 것을 실제 사용자 앞으로(pro) 끌어내(duct) 내놓은 곳 → 운영 환경, 프로덕션",
+    "hook": "프로덕션 → 줄여서 '프로드(prod)에 배포' → 운영 환경",
+    "family": ["produce", "product", "reduction", "conduct"]
+  },
+  "productivity": {
+    "roots": [{ "part": "product", "ko": "만들어 낸 것" }, { "part": "-ivity", "ko": "~하는 정도" }],
+    "origin": "라틴어 producere (앞으로 이끌어 내다)",
+    "story": "같은 시간에 얼마나 많이 만들어 내는가(product)의 정도(-ivity) → 생산성",
+    "family": ["produce", "product", "productive", "reduce"]
+  },
+  "profile": {
+    "roots": [{ "part": "pro-", "ko": "앞으로" }, { "part": "file", "ko": "실, 선 (filum)" }],
+    "origin": "이탈리아어 profilare (윤곽선을 그리다)",
+    "story": "실(fil) 같은 선으로 옆얼굴 윤곽을 그려 내(pro) 누구인지 보여 준다 → 프로필",
+    "hook": "프로파일 → 외래어 '프로필' 그대로 → 프로필",
+    "family": ["file", "filament"]
+  },
+  "programmatic": {
+    "roots": [{ "part": "pro-", "ko": "앞에, 미리" }, { "part": "gram", "ko": "쓰다, 쓴 것" }, { "part": "-atic", "ko": "~의" }],
+    "origin": "그리스어 programma (미리 써 붙인 글)",
+    "story": "사람 손이 아니라 미리(pro) 써 둔(gram) 프로그램 코드로 하는 → 프로그램으로 처리하는",
+    "family": ["program", "grammar", "diagram", "telegram"]
+  },
+  "progress": {
+    "roots": [{ "part": "pro-", "ko": "앞으로" }, { "part": "gress", "ko": "걷다" }],
+    "origin": "라틴어 progressus (앞으로 걸어감)",
+    "story": "한 걸음씩 앞으로(pro) 걸어간(gress) 만큼 → 진행 상황, 진척",
+    "hook": "프로그레스 → '프로그레스 바'(진행 표시줄) → 진행 상황",
+    "family": ["congress", "aggressive", "regress", "grade"]
+  },
+  "prohibit": {
+    "roots": [{ "part": "pro-", "ko": "앞에" }, { "part": "hibit", "ko": "붙잡다 (habere)" }],
+    "origin": "라틴어 prohibere (앞에서 붙잡아 막다)",
+    "story": "가려는 사람 앞(pro)을 가로막고 붙잡는다(hibit) → 금지하다",
+    "family": ["inhibit", "exhibit", "habit"]
+  },
+  "project": {
+    "roots": [{ "part": "pro-", "ko": "앞으로" }, { "part": "ject", "ko": "던지다" }],
+    "origin": "라틴어 proicere (앞으로 던지다)",
+    "story": "앞으로(pro) 던져(ject) 놓은 계획 → 프로젝트, 과제 / 앞날로 던져 본다 → 예상하다",
+    "family": ["object", "reject", "inject", "projector"]
+  },
+  "project-level": {
+    "roots": [{ "part": "project", "ko": "프로젝트" }, { "part": "level", "ko": "수준, 층" }],
+    "story": "파일 하나가 아니라 프로젝트(project) 전체 층(level)에 적용되는 → 프로젝트 수준의"
+  },
+  "project-specific": {
+    "roots": [{ "part": "project", "ko": "프로젝트" }, { "part": "specific", "ko": "특정한, ~에만 해당하는" }],
+    "story": "다른 데는 말고 그 프로젝트(project)에만 딱 해당하는(specific) → 프로젝트 전용의"
+  },
+  "promotional": {
+    "roots": [{ "part": "pro-", "ko": "앞으로" }, { "part": "mot", "ko": "움직이다" }, { "part": "-ion", "ko": "~하는 것" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 promovere (앞으로 움직이다)",
+    "story": "상품을 사람들 앞으로(pro) 밀어 움직여(mot) 알리는 → 홍보용의, 판촉의",
+    "hook": "프로모셔널 → 할인 '프로모션' 행사용 → 판촉의, 홍보용의",
+    "family": ["promote", "motion", "motor", "emotion"]
+  },
+  "prompt": {
+    "roots": [{ "part": "pro-", "ko": "앞으로" }, { "part": "mpt", "ko": "꺼내다, 취하다 (emptus)" }],
+    "origin": "라틴어 promptus (앞에 꺼내 놓은, 준비된)",
+    "story": "답이 바로 나오게 앞으로(pro) 꺼내(mpt) 놓는 말 → 프롬프트 / 요청하다, 촉발하다",
+    "hook": "프롬프트 → 방송 '프롬프터'가 대사를 띄워 준다 → 입력을 이끄는 문장",
+    "family": ["exempt", "redeem", "premium", "impromptu"]
+  },
+  "prompt-caching": {
+    "roots": [{ "part": "prompt", "ko": "프롬프트" }, { "part": "caching", "ko": "캐시에 넣어 두기" }],
+    "origin": "cache ← 프랑스어 cacher (숨기다, 감춰 두다)",
+    "story": "되풀이되는 프롬프트(prompt) 앞부분을 창고(cache)에 넣어 두고 다시 쓴다 → 프롬프트 캐싱"
+  },
+  "prompt-injection": {
+    "roots": [{ "part": "prompt", "ko": "프롬프트" }, { "part": "injection", "ko": "주입" }],
+    "origin": "injection ← 라틴어 inicere (안으로 던져 넣다)",
+    "story": "입력 속에 몰래 지시를 던져 넣어(inject) 원래 프롬프트(prompt)를 가로챈다 → 프롬프트 인젝션",
+    "family": ["inject", "reject", "project"]
+  },
+  "proportion": {
+    "roots": [{ "part": "pro-", "ko": "~에 대하여" }, { "part": "portion", "ko": "몫, 부분" }],
+    "origin": "라틴어 pro portione (각자의 몫에 따라)",
+    "story": "전체에 대하여(pro) 각 몫(portion)이 차지하는 크기 → 비율",
+    "family": ["portion", "part", "apportion"]
+  }
+}

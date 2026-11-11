@@ -13,6 +13,9 @@
     "data:merge": "tsx scripts/merge.ts",
     "data:validate": "tsx scripts/validate.ts",
     "data:pack": "tsx scripts/validate.ts && tsx scripts/pack-wordset.ts",
+    "data:levels": "tsx scripts/apply-levels.ts",
+    "data:memory": "tsx scripts/apply-memory.ts",
+    "data:migrate-check": "tsx scripts/migrations/v2.ts --check",
     "smoke": "tsx scripts/smoke.ts"
   },
   "dependencies": {

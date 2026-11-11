@@ -5,6 +5,7 @@ import { Pressable, StyleSheet, Text, View, type StyleProp, type TextStyle } fro
 import Animated, { FadeIn, useAnimatedStyle, useReducedMotion, useSharedValue, withDelay, withRepeat, withSequence, withTiming } from 'react-native-reanimated';
 import type { Context, Word } from '@shared/schema';
 import { contextsOf, sourceLabel, WORD_BY_SURFACE } from '@/data/words';
+import { useExamPref } from './ExamPref';
 import { speak, useSpeaking } from '@/lib/tts';
 import { useProgress } from '@/store/progress';
 import { type, useTheme } from '@/theme';
@@ -79,6 +80,7 @@ export function ContextCard({ c: ctx, showSense = true, index = 0 }: { c: Contex
   const { c } = useTheme();
   const reduced = useReducedMotion();
   const isKo = /[가-힣]/.test(ctx.en);
+  const pref = useExamPref();
   return (
     <Animated.View entering={reduced ? undefined : FadeIn.delay(index * 80).duration(320)} style={[styles.ctx, { backgroundColor: c.surface2 }]}>
       {showSense && !!ctx.sense && (
@@ -92,7 +94,7 @@ export function ContextCard({ c: ctx, showSense = true, index = 0 }: { c: Contex
         {!isKo && <SpeakButton text={ctx.en} size={15} speakKey={`ctx:${ctx.en}`} tint={c.muted} />}
       </View>
       {!!ctx.ko && <Text style={[type.subhead, { color: c.text2, lineHeight: 21, marginTop: 6 }]}>{ctx.ko.replace(/`/g, '')}</Text>}
-      <Text style={[type.caption, { color: c.muted, marginTop: 8 }]}>{sourceLabel(ctx)}</Text>
+      <Text style={[type.caption, { color: c.muted, marginTop: 8 }]}>{sourceLabel(ctx, pref)}</Text>
     </Animated.View>
   );
 }
@@ -208,7 +210,9 @@ export function WordBrief({
   /** 어원·연상을 뜻 바로 아래에 보여 준다 (플래시카드) */
   memory?: boolean;
 }) {
-  const contexts = contextsOf(w, contextLimit);
+  // 고른 시험·문제 파일의 예문을 먼저 보여 준다
+  const pref = useExamPref();
+  const contexts = contextsOf(w, contextLimit, pref);
   return (
     <View style={{ gap: 16 }}>
       <View>
@@ -233,7 +237,7 @@ export function WordBrief({
           <SectionLabel>문제 속 쓰임</SectionLabel>
           <View style={{ gap: 10 }}>
             {contexts.map((ctx, i) => (
-              <ContextCard key={i} c={ctx} index={i} showSense={w.contexts.length > 0} />
+              <ContextCard key={i} c={ctx} index={i} showSense={!ctx.auto} />
             ))}
           </View>
         </View>

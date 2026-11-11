@@ -1,0 +1,289 @@
+{
+  "consider": {
+    "roots": [{ "part": "con-", "ko": "함께, 꼼꼼히" }, { "part": "sider", "ko": "별" }],
+    "origin": "라틴어 considerare (별을 꼼꼼히 살피다)",
+    "story": "별(sider)을 꼼꼼히(con) 살피며 점치듯 이모저모 따져 본다 → 고려하다, 검토하다",
+    "family": ["considerate", "desire", "sidereal"]
+  },
+  "constant": {
+    "roots": [{ "part": "con-", "ko": "함께, 굳게" }, { "part": "stant", "ko": "서 있는" }],
+    "origin": "라틴어 constare (굳게 서 있다)",
+    "story": "늘 그 자리에 굳게(con) 서(stant) 있어 변하지 않는 → 일정한, 끊임없는, 상수",
+    "family": ["instant", "distant", "stand", "circumstance"]
+  },
+  "construct": {
+    "roots": [{ "part": "con-", "ko": "함께" }, { "part": "struct", "ko": "쌓다" }],
+    "origin": "라틴어 construere (함께 쌓아 올리다)",
+    "story": "부품을 함께(con) 쌓아(struct) 올린다, 코드를 쌓는 벽돌 하나 → 구성하다, 구문 요소",
+    "family": ["structure", "instruct", "destruction"]
+  },
+  "consume": {
+    "roots": [{ "part": "con-", "ko": "완전히" }, { "part": "sume", "ko": "취하다" }],
+    "origin": "라틴어 consumere (다 써 없애다)",
+    "story": "완전히(con) 가져가(sume) 남김없이 쓴다 → 소모하다, 써 버리다",
+    "hook": "컨슘 → 컨슈머(소비자)가 사서 써 버린다 → 소모하다",
+    "family": ["assume", "resume", "presume"]
+  },
+  "contact": {
+    "roots": [{ "part": "con-", "ko": "서로" }, { "part": "tact", "ko": "닿다" }],
+    "origin": "라틴어 contactus (서로 닿음)",
+    "story": "서로(con) 닿는다(tact), 닿을 수 있는 번호·주소 → 접촉, 연락(처), 연락하다",
+    "hook": "콘택트 → 눈에 닿는 콘택트렌즈 → 접촉",
+    "family": ["tactile", "intact", "tangible", "contagious"]
+  },
+  "contain": {
+    "roots": [{ "part": "con-", "ko": "함께" }, { "part": "tain", "ko": "붙잡다" }],
+    "origin": "라틴어 continere (한데 붙잡아 두다)",
+    "story": "한데(con) 붙잡아(tain) 안에 둔다 → 담고 있다, 포함하다",
+    "family": ["obtain", "maintain", "retain", "sustain"]
+  },
+  "container": {
+    "roots": [{ "part": "contain", "ko": "담다" }, { "part": "-er", "ko": "~하는 것" }],
+    "story": "담는(contain) 것(er), 앱과 실행 환경을 통째로 담아 격리한 상자 → 컨테이너, 그릇",
+    "hook": "컨테이너 → 항구의 화물 컨테이너처럼 통째로 담는 상자 → 컨테이너",
+    "family": ["contain", "content", "retain"]
+  },
+  "content": {
+    "roots": [{ "part": "con-", "ko": "함께" }, { "part": "tent", "ko": "붙잡힌, 담긴" }],
+    "origin": "라틴어 contentum (안에 담긴 것)",
+    "story": "그릇 안에 함께(con) 담겨(tent) 있는 것 → 내용(물), 콘텐츠",
+    "family": ["contain", "container", "retention", "continent"]
+  },
+  "context": {
+    "roots": [{ "part": "con-", "ko": "함께" }, { "part": "text", "ko": "짜다" }],
+    "origin": "라틴어 contextus (함께 짜인 것)",
+    "story": "앞뒤 글이 함께(con) 짜여(text) 이룬 전체 → 맥락, 컨텍스트",
+    "family": ["text", "texture", "textile", "pretext"]
+  },
+  "continuous": {
+    "roots": [{ "part": "con-", "ko": "서로" }, { "part": "tin", "ko": "붙잡다" }, { "part": "-ous", "ko": "~한" }],
+    "origin": "라틴어 continuus (끊김 없이 이어진)",
+    "story": "서로(con) 꽉 붙잡고(tin) 있어 틈이 없는(ous) → 지속적인, 끊김 없이 이어지는",
+    "family": ["continue", "continent", "contain"]
+  },
+  "contributor": {
+    "roots": [{ "part": "con-", "ko": "함께" }, { "part": "tribut", "ko": "내주다" }, { "part": "-or", "ko": "~하는 사람" }],
+    "origin": "라틴어 contribuere (함께 내놓다)",
+    "story": "함께(con) 제 몫을 내놓는(tribut) 사람(or) → 기여하는 사람, 기여 요인",
+    "family": ["tribute", "distribute", "attribute"]
+  },
+  "control": {
+    "roots": [{ "part": "contr", "ko": "맞대어(contra)" }, { "part": "rol", "ko": "두루마리(roll)" }],
+    "origin": "중세 라틴어 contrarotulus (대조용 두루마리 장부)",
+    "story": "장부 사본(rol)을 맞대어(contr) 대조하며 단속한다 → 통제하다, 제어, 관리",
+    "hook": "컨트롤 → 리모컨(리모트 컨트롤)으로 조종한다 → 제어",
+    "family": ["roll", "role", "contrast", "rotate"]
+  },
+  "controller": {
+    "roots": [{ "part": "control", "ko": "제어하다" }, { "part": "-er", "ko": "~하는 것" }],
+    "story": "들어온 요청을 받아 흐름을 제어하는(control) 것(er) → 컨트롤러, 제어 장치",
+    "hook": "컨트롤러 → 게임기 컨트롤러로 조종한다 → 제어 장치",
+    "family": ["control", "roll", "contrast"]
+  },
+  "convert": {
+    "roots": [{ "part": "con-", "ko": "완전히" }, { "part": "vert", "ko": "돌리다" }],
+    "origin": "라틴어 convertere (완전히 돌려 바꾸다)",
+    "story": "완전히(con) 돌려(vert) 다른 모양으로 만든다 → 변환하다, 바꾸다",
+    "hook": "컨버트 → 지붕 모양이 바뀌는 컨버터블 자동차 → 바꾸다",
+    "family": ["reverse", "version", "invert", "divert"]
+  },
+  "coordinator": {
+    "roots": [{ "part": "co-", "ko": "함께" }, { "part": "ordin", "ko": "순서, 질서" }, { "part": "-ator", "ko": "~하는 사람" }],
+    "origin": "중세 라틴어 coordinare (함께 질서를 잡다)",
+    "story": "여럿이 함께(co) 순서(ordin) 있게 움직이도록 맞추는 사람(ator) → 코디네이터, 조정 역할",
+    "hook": "코디네이터 → 옷을 맞춰 주는 '코디'처럼 일을 맞춰 준다 → 조정 역할",
+    "family": ["order", "ordinary", "subordinate", "ordinal"]
+  },
+  "core": {
+    "story": "사과 한가운데 씨가 든 단단한 속심(core) → 핵심, 중심이 되는",
+    "hook": "코어 → 몸의 중심 '코어 근육' → 핵심, 중심"
+  },
+  "correctness": {
+    "roots": [{ "part": "correct", "ko": "올바른" }, { "part": "-ness", "ko": "~함, 정도" }],
+    "story": "올바른(correct) 정도(ness), 코드가 맞게 도는지 → 정확성, 올바름",
+    "family": ["correction", "incorrect", "direct", "rectify"]
+  },
+  "correlation": {
+    "roots": [{ "part": "cor-", "ko": "서로" }, { "part": "relation", "ko": "관계" }],
+    "origin": "중세 라틴어 correlatio (서로의 관계)",
+    "story": "서로(cor) 맺은 관계(relation), 하나가 변하면 다른 것도 따라 변한다 → 상관관계, 대응",
+    "family": ["relate", "relative", "translate"]
+  },
+  "costly": {
+    "roots": [{ "part": "cost", "ko": "비용" }, { "part": "-ly", "ko": "~한" }],
+    "story": "비용(cost)이 잔뜩 붙는(ly) → 비용이 많이 드는, 대가가 큰"
+  },
+  "count": {
+    "origin": "라틴어 computare (셈하다) → 고대 프랑스어 conter",
+    "story": "컴퓨터(compute)와 한 뿌리, 하나씩 셈에 넣는다 → 세다, 개수, (셈에 들어가) 인정되다",
+    "hook": "카운트 → 카운트다운 '셋, 둘, 하나' → 세다, 횟수",
+    "family": ["compute", "account", "discount", "recount"]
+  },
+  "counter": {
+    "roots": [{ "part": "count", "ko": "세다" }, { "part": "-er", "ko": "~하는 것, 곳" }],
+    "story": "횟수를 세는(count) 것(er), 돈을 세어 주고받는 탁자 → 카운터, 계수기, 계산대",
+    "hook": "카운터 → 가게 카운터에서 돈을 센다 → 계산대, 계수기",
+    "family": ["count", "account", "compute"]
+  },
+  "cover": {
+    "origin": "라틴어 cooperire (완전히 덮다)",
+    "story": "이불로 덮듯 범위를 빠짐없이 덮는다 → 다루다, 포함하다, 아우르다",
+    "hook": "커버 → 책 '커버'가 책 전체를 덮는다 → 아우르다",
+    "family": ["discover", "uncover", "covert"]
+  },
+  "coverage": {
+    "roots": [{ "part": "cover", "ko": "덮다" }, { "part": "-age", "ko": "~하는 범위, 양" }],
+    "story": "덮는(cover) 범위(age), 어디까지 덮였나 → 다루는 범위, 포괄 정도",
+    "hook": "커버리지 → 통신사 '커버리지'(전파가 닿는 범위) → 다루는 범위",
+    "family": ["cover", "discover", "uncover"]
+  },
+  "crash": {
+    "origin": "중세 영어 crasschen (부서지는 소리를 흉내 낸 말)",
+    "story": "'와장창' 부서지는 소리에서, 프로그램이 쾅 하고 쓰러진다 → 갑자기 죽다, 충돌"
+  },
+  "credential": {
+    "roots": [{ "part": "cred", "ko": "믿다" }, { "part": "-ent", "ko": "~하는 것" }, { "part": "-ial", "ko": "~의" }],
+    "origin": "중세 라틴어 credentialis ← credere (믿다)",
+    "story": "이 사람을 믿어도(cred) 된다고 보여 주는 증표 → 자격 증명",
+    "family": ["credit", "credible", "incredible", "creed"]
+  },
+  "credit": {
+    "roots": [{ "part": "cred", "ko": "믿다" }, { "part": "-it", "ko": "~된 것" }],
+    "origin": "라틴어 creditum (믿고 맡긴 것)",
+    "story": "믿고(cred) 맡겨 둔 돈, 내 몫으로 쌓여 있는 금액 → 크레딧, 적립금",
+    "hook": "크레딧 → 신용(크레딧)카드, 게임 속 '크레딧' → 적립금",
+    "family": ["credential", "credible", "creditor", "incredible"]
+  },
+  "crisis": {
+    "roots": [{ "part": "cri", "ko": "가르다, 판가름하다" }, { "part": "-sis", "ko": "~하는 일" }],
+    "origin": "그리스어 krisis (판가름, 병의 고비)",
+    "story": "병이 나을지 나빠질지 판가름(cri) 나는 고비 → 위기, 중대 국면",
+    "family": ["critic", "critical", "criterion"]
+  },
+  "critical": {
+    "roots": [{ "part": "crit", "ko": "가르다, 판단하다" }, { "part": "-ic", "ko": "~의" }, { "part": "-al", "ko": "~한" }],
+    "origin": "그리스어 kritikos (판단할 줄 아는)",
+    "story": "생사가 갈리는(crit) 고비처럼 → 심각한, 치명적인 · 잘잘못을 가려 따지는 → 비판적인",
+    "family": ["crisis", "critic", "criterion", "criticize"]
+  },
+  "critique": {
+    "roots": [{ "part": "crit", "ko": "가르다, 판단하다" }, { "part": "-ique", "ko": "~의 기술(프랑스어식 -ic)" }],
+    "origin": "그리스어 kritike (판단하는 기술) → 프랑스어 critique",
+    "story": "잘된 곳과 문제인 곳을 가려(crit) 판단해 짚어 준다 → 비평(하다)",
+    "family": ["critic", "criticize", "crisis", "criterion"]
+  },
+  "crm": {
+    "origin": "Customer Relationship Management",
+    "story": "고객(Customer)과의 관계(Relationship)를 관리(Management)하는 시스템 → 고객 관계 관리"
+  },
+  "cross": {
+    "origin": "라틴어 crux (십자가) → 고대 노르드어 kross",
+    "story": "두 선이 십자(+)로 엇갈리며 서로를 가로지른다 → 넘다, 건너다, 교차하는, 십자",
+    "hook": "크로스 → 축구에서 공을 반대편으로 넘기는 '크로스' → 가로질러 넘다",
+    "family": ["across", "crucial", "crusade", "crucify"]
+  },
+  "cross-file": {
+    "roots": [{ "part": "cross", "ko": "가로질러, 걸친" }, { "part": "file", "ko": "파일" }],
+    "story": "파일(file) 하나에 머물지 않고 여러 파일을 가로지르는(cross) → 여러 파일에 걸친, 파일 간의",
+    "family": ["cross-check", "cross-platform", "crossover"]
+  },
+  "currency-conversion": {
+    "roots": [{ "part": "currency", "ko": "통화" }, { "part": "conversion", "ko": "변환" }],
+    "story": "시중에 흐르는(curr) 돈인 통화(currency)를 다른 통화로 바꾼다(conversion) → 통화 변환, 환전",
+    "family": ["current", "convert", "converter"]
+  },
+  "currency-formatting": {
+    "roots": [{ "part": "currency", "ko": "통화" }, { "part": "formatting", "ko": "형식 맞추기" }],
+    "story": "통화(currency) 금액을 ₩1,000·$10.00처럼 형식(format)에 맞춰 적는다 → 통화 표기 형식",
+    "family": ["current", "format", "formal"]
+  },
+  "current": {
+    "roots": [{ "part": "curr", "ko": "달리다, 흐르다" }, { "part": "-ent", "ko": "~하고 있는" }],
+    "origin": "라틴어 currens (달리고 있는)",
+    "story": "지금 눈앞에서 흐르고(curr) 있는(ent) → 현재의, 지금의",
+    "family": ["currency", "occur", "course", "curriculum"]
+  },
+  "custom": {
+    "origin": "라틴어 consuetudo (습관) → 고대 프랑스어 custume",
+    "story": "단골(customer)의 습관·취향에 맞춰 따로 만들어 준다 → 맞춤(형)의, 직접 정의한",
+    "hook": "커스텀 → '커스텀 키보드'처럼 내 입맛대로 만든 → 맞춤의",
+    "family": ["customer", "customize", "costume", "accustomed"]
+  },
+  "customer-friendly": {
+    "roots": [{ "part": "customer", "ko": "고객" }, { "part": "friendly", "ko": "친근한, 친화적인" }],
+    "story": "고객(customer)에게 친구처럼(friendly) 다가가 알기 쉽고 받아들이기 편한 → 고객 친화적인",
+    "family": ["user-friendly", "eco-friendly"]
+  },
+  "cut-off": {
+    "roots": [{ "part": "cut", "ko": "자르다" }, { "part": "off", "ko": "떨어져" }],
+    "story": "싹둑 잘라(cut) 떼어 낸다(off), 그렇게 잘리는 선 → 도중에 잘리다 · 기준점, 마감 시점",
+    "hook": "컷오프 → 예선 '컷오프'(탈락 기준선) → 기준점",
+    "family": ["shortcut", "cutback", "cutout"]
+  },
+  "cycle": {
+    "origin": "그리스어 kyklos (원, 바퀴)",
+    "story": "바퀴(kyklos)가 한 바퀴 돌아 제자리로 오고 또 돈다 → 주기, 순환, 반복되다",
+    "hook": "사이클 → 자전거(사이클) 바퀴가 돌고 돈다 → 순환, 주기",
+    "family": ["bicycle", "recycle", "cyclone", "encyclopedia"]
+  },
+  "database": {
+    "roots": [{ "part": "data", "ko": "자료" }, { "part": "base", "ko": "기지, 바탕" }],
+    "story": "데이터(data)를 모아 두고 꺼내 쓰는 기지(base) → 데이터베이스",
+    "family": ["dataset", "datum", "basis"]
+  },
+  "dataset": {
+    "roots": [{ "part": "data", "ko": "자료" }, { "part": "set", "ko": "한 벌, 묶음" }],
+    "story": "데이터(data)를 한 벌(set)로 묶어 둔 것 → 데이터 세트",
+    "family": ["database", "datum", "subset"]
+  },
+  "dated": {
+    "roots": [{ "part": "date", "ko": "날짜" }, { "part": "-ed", "ko": "~이 붙은" }],
+    "story": "날짜(date)가 찍힌(ed), 찍힌 날짜가 한참 지나 버린 → 날짜가 붙은 · 낡은, 시대에 뒤진",
+    "family": ["update", "outdated", "dateless"]
+  },
+  "deactivate": {
+    "roots": [{ "part": "de-", "ko": "되돌려, 반대로" }, { "part": "activ", "ko": "활동하는(active)" }, { "part": "-ate", "ko": "~하게 하다" }],
+    "story": "활동하게(activ) 해 둔(ate) 것을 되돌려(de) 끈다 → 비활성화하다",
+    "family": ["activate", "active", "action", "react"]
+  },
+  "deadline": {
+    "roots": [{ "part": "dead", "ko": "죽은" }, { "part": "line", "ko": "선" }],
+    "story": "넘으면 끝장인(dead) 선(line), 이때까지 못 내면 끝 → 마감 기한",
+    "hook": "데드라인 → '데드라인이 코앞'이라 할 때 그 마감선 → 마감 기한",
+    "family": ["deadlock", "guideline", "baseline", "outline"]
+  },
+  "debug": {
+    "roots": [{ "part": "de-", "ko": "없애다" }, { "part": "bug", "ko": "벌레, 오류" }],
+    "story": "프로그램 속 벌레(bug)를 찾아 잡아 없앤다(de) → 디버그하다",
+    "family": ["bug", "debugger", "buggy"]
+  },
+  "decision": {
+    "roots": [{ "part": "de-", "ko": "떼어" }, { "part": "cis", "ko": "자르다" }, { "part": "-ion", "ko": "~하는 일" }],
+    "origin": "라틴어 decidere (잘라 내다) → decisio",
+    "story": "나머지 선택지를 잘라(cis) 떼어(de) 내고 하나만 남긴다 → 결정, 판단",
+    "family": ["decide", "precise", "concise", "incision"]
+  },
+  "declare": {
+    "roots": [{ "part": "de-", "ko": "완전히" }, { "part": "clare", "ko": "분명한" }],
+    "origin": "라틴어 declarare (아주 분명히 하다)",
+    "story": "누가 봐도 완전히(de) 분명하게(clare) 밝혀 적는다 → 선언하다, 명시하다",
+    "family": ["clear", "clarify", "clarity"]
+  },
+  "deduplicate": {
+    "roots": [{ "part": "de-", "ko": "없애다" }, { "part": "du", "ko": "둘" }, { "part": "plic", "ko": "겹, 접다" }, { "part": "-ate", "ko": "~하다" }],
+    "story": "두(du) 겹(plic)으로 겹친 것을 걷어 낸다(de) → 중복을 없애다",
+    "family": ["duplicate", "duplex", "double", "complicate"]
+  },
+  "deep-dive": {
+    "roots": [{ "part": "deep", "ko": "깊은, 깊이" }, { "part": "dive", "ko": "잠수, 뛰어들기" }],
+    "story": "물속 깊이(deep) 잠수하듯(dive) 주제 속으로 파고든다 → 심층 분석, 깊이 파고들기",
+    "family": ["depth", "deepen", "diver"]
+  },
+  "default": {
+    "roots": [{ "part": "de-", "ko": "떨어져" }, { "part": "fault", "ko": "빠짐, 모자람" }],
+    "origin": "고대 프랑스어 defaute (빠짐, 결핍)",
+    "story": "선택이 빠졌을(fault) 때 대신 들어가는 값 → 기본값 · 갚을 돈이 빠짐 → 불이행",
+    "hook": "디폴트 → '디폴트 값', 나라의 '디폴트 선언' → 기본값, 불이행",
+    "family": ["fault", "fail", "false", "failure"]
+  }
+}

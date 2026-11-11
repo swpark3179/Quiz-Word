@@ -1,0 +1,264 @@
+{
+  "translate": {
+    "roots": [{ "part": "trans-", "ko": "건너" }, { "part": "late", "ko": "나르다, 옮겨진" }],
+    "origin": "라틴어 translatus (건너 옮겨진)",
+    "story": "뜻을 이 언어에서 저 언어로 건너(trans) 날라(lat) 옮긴다 → 번역하다, 옮기다",
+    "family": ["relate", "collate", "transfer"]
+  },
+  "translation": {
+    "roots": [{ "part": "trans-", "ko": "건너" }, { "part": "lat", "ko": "나르다, 옮기다" }, { "part": "-ion", "ko": "~한 것" }],
+    "story": "말을 다른 언어로 건너(trans) 옮겨(lat) 놓은 것(-ion) → 번역, 번역문",
+    "family": ["translator", "relation", "transfer"]
+  },
+  "transport": {
+    "roots": [{ "part": "trans-", "ko": "건너" }, { "part": "port", "ko": "나르다" }],
+    "origin": "라틴어 transportare (건너 나르다)",
+    "story": "메시지를 이쪽에서 저쪽으로 건너(trans) 나르는(port) 통로 → 전송 방식 / 운송하다",
+    "family": ["import", "export", "portable", "support"]
+  },
+  "treat": {
+    "origin": "고대 프랑스어 traitier ← 라틴어 tractare (다루다)",
+    "story": "손으로 끌어(tractare) 다루는 방식이 곧 그것을 보는 방식 → 다루다, 취급하다, 여기다",
+    "hook": "트리트 → 머릿결을 다루는 '트리트먼트' → 다루다, 취급하다",
+    "family": ["treaty", "tractor", "retreat"]
+  },
+  "tree": {
+    "origin": "고대 영어 trēow (나무)",
+    "story": "줄기에서 가지가 갈라지듯 폴더 아래 폴더가 뻗는다 → (디렉터리) 트리, 계층 구조 / 나무",
+    "hook": "트리 → '크리스마스 트리' → 나무, 가지 친 계층 구조"
+  },
+  "trend": {
+    "origin": "고대 영어 trendan (돌다, 구르다)",
+    "story": "강줄기가 굽어 도는(trendan) 쪽, 곧 흐름이 향하는 쪽 → 추세, 경향",
+    "hook": "트렌드 → '요즘 트렌드' → 추세, 경향"
+  },
+  "trial": {
+    "roots": [{ "part": "tri", "ko": "해 보다 (try)" }, { "part": "-al", "ko": "~하는 일" }],
+    "origin": "앵글로프랑스어 trial ← trier (가려내다, 시험하다)",
+    "story": "되는지 한번 해 보고(try) 가려내는 일(-al) → 시험(판), 시범",
+    "hook": "트라이얼 → '무료 트라이얼(체험판)' → 시험(판)",
+    "family": ["try", "triage"]
+  },
+  "trigger": {
+    "origin": "네덜란드어 trekker (당기는 것) ← trekken (당기다)",
+    "story": "방아쇠(trigger)를 당기면 총알이 나가듯 → (동작을) 일으키다, 실행시키다 / 계기",
+    "hook": "트리거 → 총의 '방아쇠', 당기는 순간 발동 → 일으키다, 계기"
+  },
+  "trim": {
+    "story": "삐져나온 가지를 가위로 가지런히 쳐낸다 → 잘라 내다, 다듬다",
+    "hook": "트림 → 미용실에서 '끝만 트리밍' → 다듬다, 잘라 내다"
+  },
+  "truly": {
+    "roots": [{ "part": "tru", "ko": "참된 (true)" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "거짓 없이 참되(true)게(-ly) → 정말로, 진정으로",
+    "family": ["truth", "trust"]
+  },
+  "truncate": {
+    "roots": [{ "part": "trunc", "ko": "줄기, 잘라 내다" }, { "part": "-ate", "ko": "~하게 하다" }],
+    "origin": "라틴어 truncare (잘라 내다) ← truncus (줄기)",
+    "story": "끝을 쳐서 줄기(trunc)만 남긴다(-ate) → (뒷부분을) 잘라 내다, 잘리다",
+    "family": ["trunk", "truncheon"]
+  },
+  "trust": {
+    "origin": "고대 노르드어 traust (굳건함, 믿음)",
+    "story": "기대도 쓰러지지 않을 만큼 굳건하다(traust)고 믿는다 → 신뢰(하다)",
+    "family": ["true", "truth", "entrust"]
+  },
+  "ttl": {
+    "origin": "Time To Live",
+    "story": "데이터가 살아(Live) 있을 수 있는 시간(Time), 다 되면 만료된다 → 만료 전까지 유지되는 시간"
+  },
+  "turn": {
+    "origin": "라틴어 tornare (선반으로 돌리다)",
+    "story": "돌림판이 돌아(tornare) 내 차례가 온다 → (대화의) 턴, 차례 / 돌다, 바뀌다",
+    "hook": "턴 → '이제 네 턴이야' → 차례, 턴",
+    "family": ["return", "tour", "tournament"]
+  },
+  "tutoring": {
+    "roots": [{ "part": "tutor", "ko": "지켜보는 사람, 가르치는 사람" }, { "part": "-ing", "ko": "~하기" }],
+    "origin": "라틴어 tutor (지켜보는 사람, 보호자)",
+    "story": "곁에서 지켜보며(tutor) 한 사람씩 봐주는 일(-ing) → 개인 지도, 학습 도우미",
+    "hook": "튜터링 → 대학 '튜터링' 프로그램 → 개인 지도",
+    "family": ["tutorial", "tuition", "intuition"]
+  },
+  "typical": {
+    "roots": [{ "part": "typ", "ko": "찍힌 자국, 유형" }, { "part": "-ical", "ko": "~의" }],
+    "origin": "그리스어 typikos ← typos (찍힌 자국, 본)",
+    "story": "그 유형의 본(typ)을 그대로 찍어 낸 듯한(-ical) → 전형적인, 일반적인",
+    "family": ["type", "prototype", "stereotype"]
+  },
+  "typically": {
+    "roots": [{ "part": "typ", "ko": "찍힌 자국, 유형" }, { "part": "-ical", "ko": "~의" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "그 유형(typ)의 본대로(-ical) 흔히 그러하게(-ly) → 보통, 일반적으로",
+    "family": ["type", "prototype", "archetype"]
+  },
+  "ultimately": {
+    "roots": [{ "part": "ultim", "ko": "맨 끝의" }, { "part": "-ate", "ko": "~한" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 ultimus (가장 먼, 마지막의)",
+    "story": "맨 끝(ultim)까지 가서 보면(-ly) → 결국, 궁극적으로",
+    "family": ["ultimate", "ultimatum", "ultra"]
+  },
+  "unable": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "able", "ko": "할 수 있는" }],
+    "story": "할 수 있는(able) 상태가 아닌(un) → ~할 수 없는",
+    "family": ["ability", "enable", "disable"]
+  },
+  "unambiguous": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "amb", "ko": "양쪽" }, { "part": "ig", "ko": "몰다, 가다" }, { "part": "-uous", "ko": "~한" }],
+    "origin": "라틴어 ambiguus (양쪽으로 오가는) 에 un- 을 붙임",
+    "story": "이쪽저쪽 양쪽(amb)으로 끌려(ig) 다니지 않는(un) → 모호하지 않은, 뜻이 하나로 분명한",
+    "family": ["ambiguity", "ambivalent", "ambition"]
+  },
+  "unchanged": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "change", "ko": "바꾸다" }, { "part": "-d", "ko": "~된" }],
+    "story": "바뀐(changed) 데가 없는(un) → 바뀌지 않은, 그대로인",
+    "family": ["exchange", "interchange", "changeable"]
+  },
+  "unchecked": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "check", "ko": "확인하다, 저지하다" }, { "part": "-ed", "ko": "~된" }],
+    "story": "확인(check)도 저지(check)도 받지 않은(un) → 확인되지 않은, 제어되지 않은"
+  },
+  "undermine": {
+    "roots": [{ "part": "under", "ko": "아래" }, { "part": "mine", "ko": "굴을 파다" }],
+    "story": "성벽 아래(under)로 굴을 파(mine) 서서히 무너뜨린다 → 약화시키다, 해치다"
+  },
+  "unfinished": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "finish", "ko": "끝내다" }, { "part": "-ed", "ko": "~된" }],
+    "story": "끝낸(finished) 상태가 아닌(un) → 끝나지 않은, 미완성의",
+    "family": ["final", "finite", "define"]
+  },
+  "unintended": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "intend", "ko": "의도하다" }, { "part": "-ed", "ko": "~된" }],
+    "story": "그러려고 뜻한(intended) 바가 아닌(un) → 의도하지 않은",
+    "family": ["intention", "intent", "extend"]
+  },
+  "union": {
+    "roots": [{ "part": "un", "ko": "하나" }, { "part": "-ion", "ko": "~한 것" }],
+    "origin": "라틴어 unio (하나 됨) ← unus (하나)",
+    "story": "여럿을 하나(un)로 합친 것(-ion) → 합집합, 전체 / 연합, 조합",
+    "hook": "유니언 → 영국 국기 '유니언 잭'은 여러 깃발을 합친 것 → 연합, 합친 전체",
+    "family": ["unit", "unite", "unique", "uniform"]
+  },
+  "unique": {
+    "roots": [{ "part": "un", "ko": "하나" }, { "part": "-ique", "ko": "~인 (라틴어 -icus)" }],
+    "origin": "프랑스어 unique ← 라틴어 unicus (단 하나의)",
+    "story": "세상에 딱 하나(un)뿐인(-ique) → 고유한, 하나뿐인",
+    "hook": "유니크 → '스타일이 유니크하다' → 하나뿐인, 고유한",
+    "family": ["unit", "union", "unify"]
+  },
+  "unit": {
+    "origin": "라틴어 unus (하나) → unity 에서 만든 말",
+    "story": "더 쪼개지 않고 하나(unus)로 세는 기준 덩어리 → 단위, 한 묶음",
+    "hook": "유닛 → 게임에서 병력 한 '유닛' → 단위, 한 묶음",
+    "family": ["unity", "unite", "union"]
+  },
+  "unnecessary": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "necessary", "ko": "필요한" }],
+    "story": "꼭 있어야 하는(necessary) 것이 아닌(un) → 불필요한, 쓸데없는",
+    "family": ["necessity", "necessitate"]
+  },
+  "unpredictability": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "pre-", "ko": "미리" }, { "part": "dict", "ko": "말하다" }, { "part": "-ability", "ko": "~할 수 있음" }],
+    "story": "어찌 될지 미리(pre) 말할(dict) 수 없는(un) 성질(-ability) → 예측 불가능성",
+    "family": ["predict", "dictionary", "contradict"]
+  },
+  "unreachable": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "reach", "ko": "닿다" }, { "part": "-able", "ko": "~할 수 있는" }],
+    "story": "손을 뻗어도 닿을(reach) 수(-able) 없는(un) → 접속할 수 없는, 연결이 닿지 않는"
+  },
+  "unrelated": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "relat", "ko": "관계 짓다 (relate)" }, { "part": "-ed", "ko": "~된" }],
+    "story": "서로 관계 지어진(related) 데가 없는(un) → 관계없는, 무관한",
+    "family": ["relation", "relative", "relationship"]
+  },
+  "unsafe": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "safe", "ko": "안전한" }],
+    "story": "안전하다(safe)고 할 수 없는(un) → 안전하지 않은, 위험한",
+    "family": ["safety", "save", "safeguard"]
+  },
+  "unset": {
+    "roots": [{ "part": "un-", "ko": "아닌, 되돌려" }, { "part": "set", "ko": "놓다, 설정하다" }],
+    "story": "값을 놓아(set) 둔 적이 없거나(un) 놓은 값을 도로 푼다 → 설정되지 않은 / 해제하다",
+    "family": ["reset", "preset", "setting"]
+  },
+  "unsuccessful": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "success", "ko": "성공" }, { "part": "-ful", "ko": "~이 가득한" }],
+    "story": "성공(success)으로 채워지지(-ful) 못한(un) → 실패한, 성공하지 못한",
+    "family": ["succeed", "successor", "succession"]
+  },
+  "untested": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "test", "ko": "시험하다" }, { "part": "-ed", "ko": "~된" }],
+    "story": "시험(test)을 한 번도 거치지 않은(un) → 테스트되지 않은, 검증되지 않은"
+  },
+  "untrusted": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "trust", "ko": "믿다" }, { "part": "-ed", "ko": "~된" }],
+    "story": "믿어도(trust) 된다고 확인받지 못한(un) → 신뢰할 수 없는, 검증되지 않은",
+    "family": ["true", "truth", "entrust"]
+  },
+  "unusable": {
+    "roots": [{ "part": "un-", "ko": "아닌" }, { "part": "us", "ko": "쓰다 (use)" }, { "part": "-able", "ko": "~할 수 있는" }],
+    "story": "쓸(use) 수(-able) 없는(un) → 쓸 수 없는, 사용 불가능한",
+    "family": ["usage", "useful", "misuse"]
+  },
+  "update": {
+    "roots": [{ "part": "up", "ko": "위로, 최신으로" }, { "part": "date", "ko": "날짜" }],
+    "story": "날짜(date)를 최신으로 끌어올린다(up) → 갱신하다, 업데이트(하다)"
+  },
+  "upgrade": {
+    "roots": [{ "part": "up", "ko": "위로" }, { "part": "grade", "ko": "등급, 단계" }],
+    "story": "등급(grade)을 한 단계 위로(up) 올린다 → 업그레이드(하다)",
+    "family": ["downgrade", "gradual", "graduate"]
+  },
+  "upload": {
+    "roots": [{ "part": "up", "ko": "위로" }, { "part": "load", "ko": "싣다" }],
+    "story": "내 파일을 실어(load) 서버 위로(up) 올려 보낸다 → 업로드하다, 올리다",
+    "family": ["download", "overload", "payload"]
+  },
+  "upper-bound": {
+    "roots": [{ "part": "upper", "ko": "위쪽의" }, { "part": "bound", "ko": "경계, 한계" }],
+    "story": "값이 넘어갈 수 없는 위쪽(upper) 경계선(bound) → 상한"
+  },
+  "urgency": {
+    "roots": [{ "part": "urg", "ko": "밀어붙이다, 재촉하다" }, { "part": "-ency", "ko": "~한 상태" }],
+    "origin": "라틴어 urgere (밀어붙이다, 재촉하다)",
+    "story": "어서 하라고 뒤에서 밀어붙이는(urg) 상태(-ency) → 긴급함",
+    "family": ["urgent", "urge"]
+  },
+  "uri": {
+    "origin": "Uniform Resource Identifier",
+    "story": "자원(Resource)을 통일된(Uniform) 형식으로 가리키는 식별자(Identifier) → 자원 식별자·주소"
+  },
+  "usage": {
+    "roots": [{ "part": "us", "ko": "쓰다 (use)" }, { "part": "-age", "ko": "~하는 방식·양" }],
+    "story": "어떻게 쓰는지(use)와 얼마나 썼는지(-age) → 사용법, 사용량",
+    "family": ["useful", "abuse", "utility"]
+  },
+  "user-facing": {
+    "roots": [{ "part": "user", "ko": "사용자" }, { "part": "facing", "ko": "마주 보는" }],
+    "story": "사용자(user)와 얼굴을 마주하는(facing) 쪽에 있는 → 사용자에게 직접 보이는"
+  },
+  "utility": {
+    "roots": [{ "part": "util", "ko": "쓸모 있는" }, { "part": "-ity", "ko": "~한 성질" }],
+    "origin": "라틴어 utilitas ← uti (쓰다)",
+    "story": "쓸모 있는(util) 성질(-ity), 또는 쓸모 있는 작은 프로그램 → 유용성, 유틸리티",
+    "hook": "유틸리티 → PC '유틸리티 프로그램' → 작은 도구 프로그램",
+    "family": ["utilize", "use", "utensil"]
+  },
+  "valid": {
+    "roots": [{ "part": "val", "ko": "힘, 가치" }, { "part": "-id", "ko": "~한" }],
+    "origin": "라틴어 validus (힘 있는) ← valere (가치 있다)",
+    "story": "규칙에 맞아 효력(val)이 있는(-id) → 유효한, 타당한",
+    "family": ["value", "validate", "prevail"]
+  },
+  "validation": {
+    "roots": [{ "part": "valid", "ko": "유효한" }, { "part": "-ation", "ko": "~하게 하는 일" }],
+    "story": "유효한지(valid) 따져 확인하는 일(-ation) → 검증",
+    "family": ["validate", "value", "evaluate"]
+  },
+  "value": {
+    "origin": "고대 프랑스어 value ← 라틴어 valere (가치 있다)",
+    "story": "얼마만큼의 값어치(valere)가 있는지 나타낸 것 → 값, 수치 / 가치",
+    "hook": "밸류 → '기업 밸류(가치)' → 가치, 값",
+    "family": ["valid", "evaluate", "valuable", "equivalent"]
+  }
+}
