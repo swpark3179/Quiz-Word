@@ -5,7 +5,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { FlashSession } from '../components/FlashSession';
 import { QuizSession } from '../components/QuizSession';
 import { Button, Card, Empty, PageHeader, SectionTitle } from '../components/ui';
-import { WORDS } from '../data/words';
+import { mainExam, WORDS } from '../data/words';
 import { maxIntervalFor, type StoredCard } from '../lib/srs';
 import { dueForecast, reviewPlan as sharedReviewPlan } from '../lib/reviewPlan';
 import { dayKey, daysUntil } from '../lib/text';
@@ -13,7 +13,8 @@ import { useProgress, type Settings } from '../store/progress';
 
 /** 오늘 할 복습 — 계산은 공용 src/lib/reviewPlan.ts */
 export function reviewPlan(cards: Record<string, StoredCard>, settings: Settings, todayNew: number, now = new Date()) {
-  return sharedReviewPlan(WORDS, cards, settings.newPerDay, todayNew, now);
+  // 새 단어는 주 시험에 나온 단어에서, 학습 단계 이상만
+  return sharedReviewPlan(WORDS, cards, settings.newPerDay, todayNew, now, { cat: mainExam(settings.exam), minLevel: settings.minLevel });
 }
 
 function forecast(cards: Record<string, StoredCard>, days = 7) {

@@ -2,12 +2,14 @@
 import { Layers } from 'lucide-react';
 import { useState } from 'react';
 import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
+import { ExamPrefProvider, prefOfScope } from '../components/ExamPref';
 import { FlashSession } from '../components/FlashSession';
 import { ScopePicker, StartButton, useStoredScope } from '../components/ScopePicker';
 import { Button, Card, Empty, PageHeader } from '../components/ui';
-import { WORD_BY_ID, WORDS } from '../data/words';
+import { EXAMS, WORD_BY_ID, WORDS } from '../data/words';
 import { flashSourceName } from '../lib/notebook';
-import { scopeFromParams, scopeToParams, selectWords } from '../lib/scope';
+import type { ExamplePref } from '../lib/corpus';
+import { DEFAULT_SCOPE, scopeFromParams, scopeToParams, selectWords } from '../lib/scope';
 import { useProgress } from '../store/progress';
 
 export function FlashPage() {
@@ -34,12 +36,13 @@ export function FlashPlay() {
   const exit = () => (location.key === 'default' ? navigate('/flash', { replace: true }) : navigate(-1));
   const record = useProgress((s) => s.record);
   // source: 그만할 때 만드는 학습장 이름 앞부분 (어디서 시작했는지)
-  const [{ ids, source }] = useState<{ ids: string[]; source?: string }>(() => {
+  // pref: 고른 시험·문제 파일 — 카드 뒷면에 그쪽 예문을 먼저 보여 준다
+  const [{ ids, source, pref }] = useState<{ ids: string[]; source?: string; pref?: ExamplePref }>(() => {
     const explicit = params.get('ids');
     if (explicit) return { ids: explicit.split(',').filter((id) => WORD_BY_ID.has(id)) };
     const { cards, wrong, notebooks } = useProgress.getState();
-    const scope = scopeFromParams(params);
-    return { ids: selectWords(WORDS, scope, { cards, wrong, notebooks }).map((w) => w.id), source: flashSourceName(scope, notebooks) };
+    const scope = scopeFromParams(params, DEFAULT_SCOPE, EXAMS);
+    return { ids: selectWords(WORDS, scope, { cards, wrong, notebooks }).map((w) => w.id), source: flashSourceName(scope, notebooks), pref: prefOfScope(scope) };
   });
 
   if (!ids.length) {
@@ -54,15 +57,17 @@ export function FlashPlay() {
   }
 
   return (
-    <FlashSession
-      ids={ids}
-      title="플래시카드"
-      source={source}
-      onExit={exit}
-      onAnswer={(id, known, first) => {
-        // SRS·통계에는 이 세션의 첫 판정만 반영한다
-        if (first) record(id, known, { source: 'flash' });
-      }}
-    />
+    <ExamPrefProvider pref={pref}>
+      <FlashSession
+        ids={ids}
+        title="플래시카드"
+        source={source}
+        onExit={exit}
+        onAnswer={(id, known, first) => {
+          // SRS·통계에는 이 세션의 첫 판정만 반영한다
+          if (first) record(id, known, { source: 'flash' });
+        }}
+      />
+    </ExamPrefProvider>
   );
 }

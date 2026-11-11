@@ -2,8 +2,7 @@
   {
     "id": "yesterday",
     "word": "yesterday",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "부사",
       "명사"
@@ -24,36 +23,12 @@
     "forms": [
       "yesterday's"
     ],
-    "domain": "시간·순서·빈도",
-    "freq": 2,
-    "sources": [
-      "lesson-d1"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 39,
-        "en": "An architect ran a two-hour investigation into a flaky payment-retry bug yesterday afternoon and named the session 'payment-retry-bug' before stopping for the day.",
-        "surface": "yesterday",
-        "pos": "부사",
-        "sense": "어제",
-        "ko": "아키텍트가 어제 오후 간헐적으로 실패하는 결제 재시도 버그를 두 시간 동안 조사했고, 하루를 마치기 전에 세션 이름을 'payment-retry-bug'로 붙였습니다."
-      },
-      {
-        "src": "lesson-d1",
-        "q": 39,
-        "en": "Run claude in the project directory and paste a summary of yesterday's findings first",
-        "surface": "yesterday's",
-        "pos": "명사",
-        "sense": "어제, 지난날",
-        "ko": "프로젝트 디렉터리에서 `claude` 를 실행하고 먼저 어제 조사 결과 요약을 붙여 넣는다"
-      }
-    ]
+    "domain": "시간·순서·빈도"
   },
   {
     "id": "yet",
     "word": "yet",
-    "tier": "core",
+    "level": 2,
     "pos": [
       "부사",
       "접속사"
@@ -79,56 +54,12 @@
       "however",
       "but"
     ],
-    "domain": "논리·관계·연결어",
-    "freq": 7,
-    "sources": [
-      "mock04",
-      "lesson-d2",
-      "lesson-d3"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 5,
-        "en": "The engineer has not yet read or edited any files in the `services/billing/reports/` subdirectory.",
-        "surface": "yet",
-        "pos": "부사",
-        "sense": "(부정문) 아직",
-        "ko": "엔지니어는 아직 `services/billing/reports/` 하위 디렉터리의 파일을 읽거나 고친 적이 없습니다."
-      },
-      {
-        "src": "mock04",
-        "q": 47,
-        "en": "It consistently rates its own output clean, yet human reviewers keep finding real bugs it missed.",
-        "surface": "yet",
-        "pos": "접속사",
-        "sense": "그러나, 그런데도",
-        "ko": "이 세션은 자기 결과물을 늘 문제없다고 평가하지만, 사람 리뷰어는 세션이 놓친 실제 버그를 계속 찾아냅니다."
-      },
-      {
-        "src": "lesson-d2",
-        "q": 12,
-        "en": "Nothing yet: the subagent first retries the permission failures with backoff, then reports once they clear",
-        "surface": "yet",
-        "pos": "부사",
-        "sense": "(부정문) 아직",
-        "ko": "아직 아무것도 보내지 않는다. 서브에이전트가 먼저 권한 실패를 백오프로 재시도하고, 풀리면 그때 보고한다"
-      },
-      {
-        "src": "lesson-d3",
-        "q": 23,
-        "en": "They don't yet know how cache invalidation, conflicting edits or clients dropping mid-edit should be handled.",
-        "surface": "yet",
-        "pos": "부사",
-        "sense": "(부정문) 아직",
-        "ko": "캐시 무효화, 충돌하는 편집, 편집 도중 클라이언트가 끊기는 상황을 어떻게 처리해야 할지 아직 모릅니다."
-      }
-    ]
+    "domain": "논리·관계·연결어"
   },
   {
     "id": "yield",
     "word": "yield",
-    "tier": "core",
+    "level": 5,
     "pos": [
       "동사"
     ],
@@ -160,26 +91,10 @@
       "give"
     ],
     "domain": "원인·결과·영향",
-    "freq": 1,
-    "sources": [
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 17,
-        "en": "Asking Claude to \"make the input validation more robust and idiomatic\" yields inconsistent output across runs: sometimes it adds zod, sometimes hand-written checks, sometimes nothing meaningful.",
-        "surface": "yields",
-        "pos": "동사",
-        "sense": "(결과를) 낳다, 내놓다",
-        "ko": "Claude에게 \"make the input validation more robust and idiomatic\"(입력 검증을 더 견고하고 관용적으로 만들어 줘)이라고 요청하면 실행할 때마다 결과가 들쭉날쭉합니다: 어떤 때는 zod를 추가하고, 어떤 때는 손으로 쓴 검사 코드를 넣고, 어떤 때는 의미 있는 변화가 거의 없습니다."
-      }
-    ],
     "memory": {
       "origin": "고대 영어 gieldan (갚다, 내주다)",
       "story": "땅이 땀의 대가를 갚아 내주듯(yield) 수확을 낸다 → 결과를 낳다, 내놓다",
       "hook": "일드 → 파이썬 yield가 값을 하나씩 내놓듯"
-    },
-    "note": "1. **(결과를) 낳다, 내놓다** — 어떤 행동·입력이 결과로 ~을 만들어 낸다\r\n2. **양보하다, 넘겨주다** — 제어권·우선권을 내어 줌 (*yield control*)\r\n\r\n## 문제 속 쓰임\r\n> Asking Claude to \"make the input validation more robust and idiomatic\" **yields** inconsistent output across runs...\r\n> Claude에게 \"입력 검증을 더 견고하고 관용적으로 만들어 줘\"라고 요청하면 실행할 때마다 **들쭉날쭉한 결과가 나온다**...\r\n\r\n## 함께 쓰는 표현\r\n- **yield results / output** : 결과를 내다\r\n- **yield control** : 제어권을 넘기다 (프로그래밍의 `yield` 키워드)\r\n\r\n## 시험 포인트\r\n모호한 요청이 실행마다 다른 결과를 낸다면, 원하는 스타일과 라이브러리를 그대로 보여 주는 **구체적인 입력-출력 예시 2~3개**를 주는 것이 정답입니다."
+    }
   }
 ]

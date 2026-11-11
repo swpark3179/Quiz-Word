@@ -1,18 +1,24 @@
 /**
  * 2단계 준비 — 생성 A(단어 단위) 배치 입력을 만든다.
- *   pipeline/work/batchA/in-NN.json
- * 각 항목: 원형, vocab 정보(있으면), 등장 문장(최대 8개), vocab 상세 예문(있으면)
+ *   pipeline/work/<시험 id>/batchA/in-NN.json
+ * 각 항목: 원형, 사전에 이미 있는 단어면 그 뜻(known), 단어장 정보(있으면), 등장 문장(최대 8개), 단어장 예문(있으면)
+ *   kind: known       사전에 이미 있는 단어 — 뜻은 그대로 두고 이 시험의 예문·문맥 뜻만 고른다
+ *         new         새 단어 — 뜻·등급·외우기까지 만든다
+ *         vocab-core  새 단어인데 그 시험의 기존 단어장에 있음
+ *         vocab-extra 문제에는 안 나오고 기존 단어장에만 있음
  *
- * 실행: npx tsx scripts/build-batches.ts [배치크기=45] [--only=lemma1,lemma2] [--name=pilot]
+ * 실행: npx tsx scripts/build-batches.ts --exam <시험 id> [배치크기=45] [--only=lemma1,lemma2] [--name=pilot]
  */
 import fs from 'node:fs';
 import path from 'node:path';
 import type { VocabEntry } from '../src/lib/matcher';
-import { QUIZ_DATA_DIR_PATH, loadVocabExamples, readJson, WORK } from './lib/common';
+import { examFromArgs, loadVocabExamples, loadWordbook, QUIZ_DATA_DIR_PATH, readJson, workDirOf } from './lib/common';
+import { readDict } from './lib/data';
 
 interface LemmaRec {
   lemma: string;
   vocabId?: string;
+  known?: string;
   surfaces: Record<string, number>;
   freq: number;
   sources: string[];
@@ -28,15 +34,19 @@ interface SentenceRec {
 }
 
 const args = process.argv.slice(2);
-const size = Number(args.find((a) => /^\d+$/.test(a)) ?? 45);
+const exam = examFromArgs(args);
+const WORK = workDirOf(exam);
+const size = Number(args.find((a, i) => /^\d+$/.test(a) && args[i - 1] !== '--exam') ?? 45);
 const only = args.find((a) => a.startsWith('--only='))?.slice(7).split(',');
 const name = args.find((a) => a.startsWith('--name='))?.slice(7);
 
 const lemmas = readJson<LemmaRec[]>(path.join(WORK, 'lemmas.json'));
 const sentences = new Map(readJson<SentenceRec[]>(path.join(WORK, 'sentences.json')).map((s) => [s.sid, s]));
-const vocab = readJson<VocabEntry[]>(path.join(QUIZ_DATA_DIR_PATH, 'vocab/index.json'));
+const vocab: VocabEntry[] = loadWordbook(QUIZ_DATA_DIR_PATH, exam);
 const vocabById = new Map(vocab.map((v) => [v.id, v]));
-const examples = loadVocabExamples(vocab);
+const examples = loadVocabExamples(QUIZ_DATA_DIR_PATH, exam, vocab);
+const dict = new Map(readDict(path.resolve('data')).map((w) => [w.id!, w]));
+const dictByWord = new Map([...dict.values()].map((w) => [w.word!.toLowerCase(), w]));
 
 /** 문장 고르기: 영어 우선, 출처를 고르게, 너무 짧거나 긴 문장은 뒤로 */
 function pickSentences(sids: string[], max = 8) {
@@ -61,7 +71,9 @@ function pickSentences(sids: string[], max = 8) {
 
 interface Item {
   lemma: string;
-  kind: 'vocab-core' | 'new' | 'vocab-extra';
+  kind: 'known' | 'vocab-core' | 'new' | 'vocab-extra';
+  /** 사전에 이미 있는 단어 — 뜻(senses)은 이 가운데에서 고른다 */
+  known?: { id: string; word: string; pos?: string | string[]; meaning?: string; senses?: { pos: string; ko: string }[] };
   surfaces?: string[];
   freq?: number;
   maybeProper?: boolean;
@@ -75,9 +87,11 @@ const seenVocab = new Set<string>();
 for (const l of lemmas) {
   const v = l.vocabId ? vocabById.get(l.vocabId) : undefined;
   if (v) seenVocab.add(v.id);
+  const k = l.known ? dict.get(l.known) : undefined;
   items.push({
     lemma: l.lemma,
-    kind: v ? 'vocab-core' : 'new',
+    kind: k ? 'known' : v ? 'vocab-core' : 'new',
+    ...(k ? { known: { id: k.id!, word: k.word!, pos: k.pos, meaning: k.meaning, senses: k.senses } } : {}),
     surfaces: Object.keys(l.surfaces),
     freq: l.freq,
     ...(l.maybeProper ? { maybeProper: true } : {}),
@@ -88,9 +102,11 @@ for (const l of lemmas) {
 }
 for (const v of vocab) {
   if (seenVocab.has(v.id)) continue;
+  const k = dictByWord.get(v.word.toLowerCase());
   items.push({
     lemma: v.word.toLowerCase(),
-    kind: 'vocab-extra',
+    kind: k ? 'known' : 'vocab-extra',
+    ...(k ? { known: { id: k.id!, word: k.word!, pos: k.pos, meaning: k.meaning, senses: k.senses } } : {}),
     vocab: { id: v.id, word: v.word, pos: v.pos, ipa: v.ipa, meaning: v.meaning },
     sentences: [],
     ...(examples.get(v.id)?.length ? { vocabExamples: examples.get(v.id) } : {}),
@@ -125,5 +141,5 @@ if (name) {
     );
   }
   const k = (kind: Item['kind']) => selected.filter((i) => i.kind === kind).length;
-  console.log(`항목 ${selected.length}개 (vocab-core ${k('vocab-core')}, new ${k('new')}, vocab-extra ${k('vocab-extra')}) → 배치 ${n}개`);
+  console.log(`${exam.name}: 항목 ${selected.length}개 (known ${k('known')}, new ${k('new')}, vocab-core ${k('vocab-core')}, vocab-extra ${k('vocab-extra')}) → 배치 ${n}개`);
 }

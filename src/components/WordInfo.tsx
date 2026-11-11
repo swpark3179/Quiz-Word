@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import type { Word } from '../lib/schema';
 import { contextsOf, WORD_BY_SURFACE } from '../data/words';
+import { useExamPref } from './ExamPref';
 import { ContextSentence } from './ContextSentence';
 import { PosBadge, SectionTitle, SpeakButton } from './ui';
 
@@ -42,12 +43,13 @@ export function SenseList({ w, highlight }: { w: Word; highlight?: string }) {
 
 /** 문제 속 뜻 — 뜻별로 예문을 묶는다 */
 export function ContextsBySense({ w, limit = 4, compact = false }: { w: Word; limit?: number; compact?: boolean }) {
-  const contexts = contextsOf(w, limit);
+  const pref = useExamPref();
+  const contexts = contextsOf(w, limit, pref);
   if (!contexts.length) return <p className="text-sm text-muted">문제에 나온 예문이 없습니다.</p>;
   return (
     <div className="space-y-2.5">
       {contexts.map((c, i) => (
-        <ContextSentence key={i} c={c} compact={compact} showSense={w.contexts.length > 0} />
+        <ContextSentence key={i} c={c} compact={compact} showSense={!c.auto} />
       ))}
     </div>
   );

@@ -43,6 +43,10 @@ export interface Settings {
   wrongGraduate: number;
   theme: 'system' | 'light' | 'dark';
   quizChoices: 4 | 5;
+  /** 주 시험 — 홈의 진척과 오늘의 새 단어가 이 시험 기준이다 (없으면 첫 시험) */
+  exam?: string;
+  /** 학습 단계 — 홈의 진척과 오늘의 새 단어에 이 단계 이상만 넣는다 */
+  minLevel: number;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -53,6 +57,7 @@ export const DEFAULT_SETTINGS: Settings = {
   wrongGraduate: 2,
   theme: 'system',
   quizChoices: 4,
+  minLevel: 2,
 };
 
 export type Source = 'flash' | 'quiz' | 'review';

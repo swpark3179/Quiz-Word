@@ -2,11 +2,13 @@
 import { ListChecks } from 'lucide-react';
 import { useState } from 'react';
 import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
+import { ExamPrefProvider, prefOfScope } from '../components/ExamPref';
 import { QuizSession, type QuizMode } from '../components/QuizSession';
 import { ScopePicker, StartButton, useStoredScope } from '../components/ScopePicker';
 import { Button, Card, Empty, PageHeader } from '../components/ui';
-import { WORD_BY_ID, WORDS } from '../data/words';
-import { scopeFromParams, scopeToParams, selectWords } from '../lib/scope';
+import { EXAMS, WORD_BY_ID, WORDS } from '../data/words';
+import type { ExamplePref } from '../lib/corpus';
+import { DEFAULT_SCOPE, scopeFromParams, scopeToParams, selectWords } from '../lib/scope';
 import { shuffle } from '../lib/text';
 import { useProgress } from '../store/progress';
 
@@ -94,12 +96,14 @@ export function QuizPlay() {
   const exit = () => (location.key === 'default' ? navigate('/quiz', { replace: true }) : navigate(-1));
   const record = useProgress((s) => s.record);
   const mode = (params.get('mode') as QuizMode) || 'meaning';
-  const [ids] = useState<string[]>(() => {
+  // pref: 고른 시험·문제 파일 — 문맥 문제와 해설에 그쪽 예문을 먼저 쓴다
+  const [{ ids, pref }] = useState<{ ids: string[]; pref?: ExamplePref }>(() => {
     const explicit = params.get('ids');
-    if (explicit) return explicit.split(',').filter((id) => WORD_BY_ID.has(id));
+    if (explicit) return { ids: explicit.split(',').filter((id) => WORD_BY_ID.has(id)) };
     const { cards, wrong, notebooks } = useProgress.getState();
+    const scope = scopeFromParams(params, DEFAULT_SCOPE, EXAMS);
     // 범위에서 고른 단어를 섞어서 낸다
-    return shuffle(selectWords(WORDS, scopeFromParams(params), { cards, wrong, notebooks }).map((w) => w.id));
+    return { ids: shuffle(selectWords(WORDS, scope, { cards, wrong, notebooks }).map((w) => w.id)), pref: prefOfScope(scope) };
   });
 
   if (!ids.length) {
@@ -114,12 +118,8 @@ export function QuizPlay() {
   }
 
   return (
-    <QuizSession
-      ids={ids}
-      mode={mode}
-      title="객관식 퀴즈"
-      onExit={exit}
-      onResult={(id, correct) => record(id, correct, { source: 'quiz' })}
-    />
+    <ExamPrefProvider pref={pref}>
+      <QuizSession ids={ids} mode={mode} title="객관식 퀴즈" onExit={exit} onResult={(id, correct) => record(id, correct, { source: 'quiz' })} />
+    </ExamPrefProvider>
   );
 }

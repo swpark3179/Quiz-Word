@@ -2,8 +2,7 @@
   {
     "id": "early",
     "word": "early",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "형용사",
       "부사"
@@ -38,62 +37,12 @@
       "previous",
       "prior"
     ],
-    "domain": "시간·순서·빈도",
-    "freq": 42,
-    "sources": [
-      "sample01",
-      "mock04",
-      "mock04-kor",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 19,
-        "en": "The enrichment tools depend on fields that only extract_metadata produces, and in early tests the model sometimes calls an enrichment tool first with guessed values.",
-        "surface": "early",
-        "pos": "형용사",
-        "sense": "초기의, 이른",
-        "ko": "보강 도구는 extract_metadata만 만들어 내는 필드에 의존하는데, 초기 테스트에서 모델이 가끔 추측한 값으로 보강 도구를 먼저 불렀습니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 22,
-        "en": "When asked about a class it examined in detail early on, it now describes what such a class typically looks like, and its two latest answers about that component disagree.",
-        "surface": "early",
-        "pos": "부사",
-        "sense": "일찍, 초기에",
-        "ko": "초반에 자세히 살펴본 클래스에 대해 물으면, 이제는 그런 클래스가 보통 어떻게 생겼는지를 설명하고, 같은 컴포넌트에 대한 최근 두 답이 서로 어긋납니다."
-      },
-      {
-        "src": "sample01",
-        "q": 6,
-        "en": "After turn 25, response quality degrades — the model starts forgetting earlier findings and repeating tool calls it already made.",
-        "surface": "earlier",
-        "pos": "형용사",
-        "sense": "(비교급) 이전의, 앞선",
-        "ko": "25턴 이후 응답 품질이 떨어져, 모델이 앞서 찾은 내용을 잊고 이미 했던 도구 호출을 반복합니다."
-      },
-      {
-        "src": "lesson-d1",
-        "q": 5,
-        "en": "Three turns earlier in the main conversation, the user chose a specific authentication provider.",
-        "surface": "earlier",
-        "pos": "부사",
-        "sense": "(비교급) 앞서, 전에",
-        "ko": "메인 대화에서 세 턴 전에 사용자는 특정 인증 공급자를 골랐습니다."
-      }
-    ]
+    "domain": "시간·순서·빈도"
   },
   {
     "id": "easy",
     "word": "easy",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "형용사"
     ],
@@ -119,47 +68,12 @@
       "simple",
       "straightforward"
     ],
-    "domain": "상태·성질",
-    "freq": 3,
-    "sources": [
-      "mock04",
-      "lesson-d2",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 25,
-        "en": "Cut the description to a single word so it is easier to match",
-        "surface": "easier",
-        "pos": "형용사",
-        "sense": "쉬운, 수월한",
-        "ko": "매칭이 쉬워지도록 설명을 한 단어로 줄인다"
-      },
-      {
-        "src": "mock04",
-        "q": 40,
-        "en": "Store the token in the project CLAUDE.md so it loads with memory and is easy to rotate across the whole team.",
-        "surface": "easy",
-        "pos": "형용사",
-        "sense": "쉬운, 수월한",
-        "ko": "토큰을 프로젝트 CLAUDE.md에 저장해 메모리와 함께 로드되고 팀 전체에서 쉽게 교체할 수 있게 한다"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 29,
-        "en": "doc/2026/report:final, since embedding the ingestion date and a colon-separated section label makes the request easier to trace during a later audit",
-        "surface": "easier",
-        "pos": "형용사",
-        "sense": "쉬운, 수월한",
-        "ko": "`doc/2026/report:final`. 수집 날짜와 콜론으로 구분한 섹션 라벨을 넣어 나중 감사 때 추적하기 쉽다."
-      }
-    ]
+    "domain": "상태·성질"
   },
   {
     "id": "edge",
     "word": "edge",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "명사"
     ],
@@ -184,28 +98,12 @@
       "boundary",
       "margin"
     ],
-    "domain": "구조·구성·부분",
-    "freq": 1,
-    "sources": [
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 58,
-        "en": "For scanned documents where the tax ID is physically cut off at the page edge and simply absent from the source text, the validation-retry loop retries five times and still fails, burning tokens on every attempt.",
-        "surface": "edge",
-        "pos": "명사",
-        "sense": "가장자리, 끝",
-        "ko": "세금 ID가 페이지 가장자리에서 물리적으로 잘려 원문 텍스트에 아예 없는 스캔 문서에 대해, validation-retry 루프가 다섯 번 재시도하고도 여전히 실패하며 매번 토큰을 소모합니다."
-      }
-    ],
-    "note": "물건·면의 **가장자리, 끝 부분**입니다. 소프트웨어에서는 주로 *edge case*(경계에 걸린 드문 경우)의 형태로 나옵니다.\r\n\r\n## 문제 속 쓰임\r\n> For scanned documents where the tax ID is physically cut off at the page **edge** and simply absent from the source text...\r\n> 세금 ID가 페이지 **가장자리**에서 물리적으로 잘려 원문 텍스트에 아예 없는 스캔 문서\r\n\r\n## 함께 쓰는 표현\r\n- **page edge** : 페이지 가장자리\r\n- **edge case** : 드물거나 경계에 걸린 경우\r\n- **cutting-edge** : 최첨단의"
+    "domain": "구조·구성·부분"
   },
   {
     "id": "edge-case",
     "word": "edge case",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "명사구"
     ],
@@ -225,38 +123,12 @@
     "synonyms": [
       "corner case"
     ],
-    "domain": "오류·실패·위험",
-    "freq": 2,
-    "sources": [
-      "lesson-d3",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 24,
-        "en": "What is the most effective way to fix this specific edge case handling?",
-        "surface": "edge case",
-        "pos": "명사구",
-        "sense": "엣지 케이스 (드문 경계·예외 상황)",
-        "ko": "이 엣지 케이스 처리를 고치는 가장 효과적인 방법은 무엇입니까?"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 10,
-        "en": "A team built a classification prompt with twenty exact input-output pairs, one for every edge case they had personally encountered in their historical data.",
-        "surface": "edge case",
-        "pos": "명사구",
-        "sense": "엣지 케이스 (드문 경계·예외 상황)",
-        "ko": "한 팀이 과거 데이터에서 직접 겪은 모든 엣지 케이스마다 하나씩, 정확한 입력-출력 쌍 20개로 분류 프롬프트를 만들었습니다."
-      }
-    ],
-    "note": "입력이 범위의 끝(0, 빈 값, 최댓값)에 걸렸거나 **드물게만 생기는 조건**이라 평소에는 잘 드러나지 않는 경우입니다. 버그가 숨기 쉬운 곳이라 테스트·리뷰에서 따로 챙깁니다.\r\n\r\n## 문제 속 쓰임\r\n> ...subtle issues—performance optimizations that break **edge cases**, cleanups that change behavior—only surface when a different team member reviews the PR.\r\n> **엣지 케이스**를 깨는 성능 최적화, 동작을 바꾸는 정리 같은 미묘한 문제가 다른 팀원이 PR을 리뷰할 때에야 드러난다.\r\n\r\n## 함께 쓰는 표현\r\n- **handle edge cases** : 엣지 케이스를 처리하다\r\n- **corner case** : 여러 조건이 한꺼번에 겹친 더 드문 경우\r\n\r\n## 비교\r\n- **edge case** — 드물거나 경계에 걸린 경우\r\n- **happy path** — 아무 문제 없이 흘러가는 일반적인 경우\r\n\r\n## 시험 포인트\r\n\"엣지 케이스**만**\" 다루라는 보기는 일반 경우를 빠뜨려 오답이 되기 쉽습니다. 반면 도구 설명에 **입력 형식·예시·엣지 케이스·사용 경계**까지 담는 보기는 정답 쪽입니다."
+    "domain": "오류·실패·위험"
   },
   {
     "id": "edit",
     "word": "edit",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "동사",
       "명사"
@@ -284,63 +156,12 @@
       "revise",
       "change"
     ],
-    "domain": "변경·수정",
-    "freq": 63,
-    "sources": [
-      "sample01",
-      "mock04",
-      "mock04-kor",
-      "lesson-d1",
-      "lesson-d2",
-      "selfcheck-d2-kor",
-      "lesson-d3",
-      "selfcheck-d3-kor",
-      "lesson-d5",
-      "selfcheck-d5-kor"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 1,
-        "en": "Nobody edited any instruction file in between.",
-        "surface": "edited",
-        "pos": "동사",
-        "sense": "(파일·글을) 편집하다, 수정하다",
-        "ko": "그사이 지침 파일을 고친 사람은 없습니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 23,
-        "en": "Find the single function that computes the discount rate in a small module, just before making one edit to it",
-        "surface": "edit",
-        "pos": "명사",
-        "sense": "편집, 수정 (사항)",
-        "ko": "작은 모듈에서 할인율을 계산하는 함수 하나를 찾는다. 바로 그 함수를 한 번 수정할 참이다"
-      },
-      {
-        "src": "sample01",
-        "q": 11,
-        "en": "A dev team wants Claude Code to automatically run `npm run lint:fix` every time it writes or edits a TypeScript file.",
-        "surface": "edits",
-        "pos": "동사",
-        "sense": "(파일·글을) 편집하다, 수정하다",
-        "ko": "개발팀은 Claude Code가 TypeScript 파일을 쓰거나 편집할 때마다 자동으로 `npm run lint:fix` 를 실행하길 원합니다."
-      },
-      {
-        "src": "mock04",
-        "q": 14,
-        "en": "Adding the reminder \"only write to docs/, never edit source\" to the skill body has not reliably stopped it.",
-        "surface": "edit",
-        "pos": "동사",
-        "sense": "(파일·글을) 편집하다, 수정하다",
-        "ko": "스킬 본문에 \"only write to docs/, never edit source\"(docs/에만 쓰고 소스는 절대 수정하지 말 것)라는 문구를 추가했지만 확실히 막지 못했습니다."
-      }
-    ]
+    "domain": "변경·수정"
   },
   {
     "id": "editor",
     "word": "editor",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "명사"
     ],
@@ -360,36 +181,12 @@
     "forms": [
       "editors"
     ],
-    "domain": "시스템·도구·기술",
-    "freq": 2,
-    "sources": [
-      "lesson-d3"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 23,
-        "en": "An architect is building a real-time collaborative editor for the first time.",
-        "surface": "editor",
-        "pos": "명사",
-        "sense": "(소프트웨어) 편집기, 에디터",
-        "ko": "아키텍트가 실시간 공동 편집기를 처음 만듭니다."
-      },
-      {
-        "src": "lesson-d3",
-        "q": 23,
-        "en": "Write a full test suite for the editor first, then implement until every test passes",
-        "surface": "editor",
-        "pos": "명사",
-        "sense": "(소프트웨어) 편집기, 에디터",
-        "ko": "편집기용 전체 테스트 스위트를 먼저 쓰게 하고, 모든 테스트가 통과할 때까지 구현하게 한다"
-      }
-    ]
+    "domain": "시스템·도구·기술"
   },
   {
     "id": "effect",
     "word": "effect",
-    "tier": "core",
+    "level": 2,
     "pos": [
       "명사"
     ],
@@ -418,38 +215,12 @@
       "influence",
       "result"
     ],
-    "domain": "원인·결과·영향",
-    "freq": 2,
-    "sources": [
-      "mock04",
-      "lesson-d3"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 4,
-        "en": "What effect does this have on context?",
-        "surface": "effect",
-        "pos": "명사",
-        "sense": "효과, 영향",
-        "ko": "컨텍스트에는 어떤 영향이 있습니까?"
-      },
-      {
-        "src": "mock04",
-        "q": 44,
-        "en": "Done inline, this verbose discovery floods the main session's context and later steps degrade from lost-in-the-middle effects.",
-        "surface": "effects",
-        "pos": "명사",
-        "sense": "(어떤 원인이 낳는) 현상",
-        "ko": "이 장황한 탐색을 메인 세션 안에서 바로 하면 메인 세션의 컨텍스트가 넘쳐나고, 이후 단계는 lost-in-the-middle 효과로 품질이 떨어집니다."
-      }
-    ],
-    "note": "어떤 원인 때문에 생기는 **결과, 영향, 효과**입니다. 문제에서는 특정 현상의 이름(*lost-in-the-middle effect*)에 붙어 나옵니다.\r\n\r\n## 문제 속 쓰임\r\n> Done inline, this verbose discovery floods the main session's context and later steps degrade from lost-in-the-middle **effects**.\r\n> 이 장황한 탐색을 메인 세션 안에서 바로 하면 메인 세션의 컨텍스트가 넘쳐나고, 이후 단계는 lost-in-the-middle **효과**로 품질이 떨어진다.\r\n\r\n## 함께 쓰는 표현\r\n- **side effect** : 부작용, (도구 호출이 일으키는) 외부 변경\r\n- **have an effect on** ~ : ~에 영향을 주다\r\n- **take effect** : 효력이 생기다, 적용되다\r\n\r\n## 비교\r\n- **effect** (명) 영향·결과 / **affect** (동) 영향을 주다\r\n\r\n## 시험 포인트\r\n*lost-in-the-middle* 은 긴 입력의 **가운데 정보를 놓치기 쉬운** 현상입니다. 핵심 정보는 앞·뒤에 두고, 장황한 출력은 서브에이전트로 격리해 컨텍스트를 줄이는 보기가 정답 쪽입니다."
+    "domain": "원인·결과·영향"
   },
   {
     "id": "effective",
     "word": "effective",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "형용사"
     ],
@@ -478,59 +249,12 @@
       "efficacious",
       "productive"
     ],
-    "domain": "비교·평가·판단",
-    "freq": 18,
-    "sources": [
-      "sample01",
-      "mock04",
-      "selfcheck-d1-kor",
-      "lesson-d3",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 11,
-        "en": "What is the most effective fix?",
-        "surface": "effective",
-        "pos": "형용사",
-        "sense": "효과적인",
-        "ko": "가장 효과적인 해결책은 무엇입니까?"
-      },
-      {
-        "src": "sample01",
-        "q": 16,
-        "en": "The system prompt and retrieved content merged into one effective context — use PreToolCall hooks and explicit content sandboxing to separate untrusted content",
-        "surface": "effective",
-        "pos": "형용사",
-        "sense": "실질적인, 실제로 작동하는",
-        "ko": "시스템 프롬프트와 검색된 콘텐츠가 하나의 컨텍스트로 섞였다 — PreToolCall 훅과 명시적 콘텐츠 샌드박싱으로 신뢰할 수 없는 콘텐츠를 분리한다"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 8,
-        "en": "The team wants the most effective fix for this output-consistency problem.",
-        "surface": "effective",
-        "pos": "형용사",
-        "sense": "효과적인",
-        "ko": "팀은 이 출력 일관성 문제를 가장 효과적으로 고치고 싶어 합니다."
-      },
-      {
-        "src": "lesson-d3",
-        "q": 24,
-        "en": "What is the most effective way to fix this specific edge case handling?",
-        "surface": "effective",
-        "pos": "형용사",
-        "sense": "효과적인",
-        "ko": "이 엣지 케이스 처리를 고치는 가장 효과적인 방법은 무엇입니까?"
-      }
-    ],
-    "note": "1. **효과적인** — 원하는 결과를 잘 내는. 질문 끝 *\"most effective way\"* 로 자주 나옵니다\r\n2. **실질적인, 실제로 작동하는** — 이론상이 아니라 실제로 적용되는 (*effective attention range*)\r\n\r\n## 문제 속 쓰임\r\n> Context window saturation — the cumulative message history exceeds the **effective** attention range; implement a summarization/compaction strategy\r\n> 컨텍스트 윈도 포화 — 누적 대화 기록이 **실질적인** 주의 범위를 넘었다. 요약/압축(compaction) 전략을 구현한다\r\n\r\n## 함께 쓰는 표현\r\n- **most effective way** : 가장 효과적인 방법\r\n- **effectively** (부) 효과적으로, 사실상\r\n- **cost-effective** : 비용 대비 효과가 좋은"
+    "domain": "비교·평가·판단"
   },
   {
     "id": "efficiently",
     "word": "efficiently",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "부사"
     ],
@@ -550,37 +274,12 @@
     "synonyms": [
       "economically"
     ],
-    "domain": "정확·품질·신뢰",
-    "freq": 2,
-    "sources": [
-      "lesson-d2",
-      "lesson-d3"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 31,
-        "en": "To build this understanding efficiently while keeping context usage low, what is the best incremental strategy?",
-        "surface": "efficiently",
-        "pos": "부사",
-        "sense": "효율적으로",
-        "ko": "컨텍스트 사용을 낮게 유지하면서 효율적으로 이해를 쌓는 가장 좋은 점진적 전략은 무엇입니까?"
-      },
-      {
-        "src": "lesson-d3",
-        "q": 15,
-        "en": "Which `paths` frontmatter accomplishes this most efficiently?",
-        "surface": "efficiently",
-        "pos": "부사",
-        "sense": "효율적으로",
-        "ko": "가장 효율적인 `paths` frontmatter는 무엇입니까?"
-      }
-    ]
+    "domain": "정확·품질·신뢰"
   },
   {
     "id": "effort",
     "word": "effort",
-    "tier": "core",
+    "level": 2,
     "pos": [
       "명사"
     ],
@@ -604,59 +303,12 @@
       "exertion",
       "work"
     ],
-    "domain": "정도·양·크기",
-    "freq": 6,
-    "sources": [
-      "lesson-d1",
-      "selfcheck-d3-kor",
-      "lesson-d4",
-      "selfcheck-d4-kor",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 35,
-        "en": "Keep one pass over the diff, but have the model rank the files by risk first, then spend its review effort on the highest-risk ones",
-        "surface": "effort",
-        "pos": "명사",
-        "sense": "노력, 수고",
-        "ko": "한 패스는 유지하되, 모델이 먼저 위험도로 파일 순위를 매기고 가장 위험한 파일에 리뷰 노력을 쏟게 한다"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 36,
-        "en": "An engineer configures the generation session with a high extended thinking effort and instructs the model to reflect deeply on flaws before submitting its code.",
-        "surface": "effort",
-        "pos": "명사",
-        "sense": "(API) effort — 사고·토큰 사용 수준 설정",
-        "ko": "엔지니어가 생성 세션에 높은 extended thinking effort를 설정하고, 코드를 제출하기 전에 결함을 깊이 성찰하라고 지시했습니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 20,
-        "en": "Retry both failures a few times with backoff, then send the coordinator the total retry count so it knows how much effort was spent",
-        "surface": "effort",
-        "pos": "명사",
-        "sense": "노력, 수고",
-        "ko": "두 실패 모두 백오프로 몇 번 재시도한 뒤, 총 재시도 횟수를 코디네이터에 보내 얼마나 노력했는지 알린다"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 36,
-        "en": "Reflection raises the reasoning budget but applies the same depth of checking to each issue, so extra effort adds little scrutiny",
-        "surface": "effort",
-        "pos": "명사",
-        "sense": "노력, 수고",
-        "ko": "성찰은 추론 예산을 늘리지만 이슈마다 같은 깊이의 검사를 적용하므로, 노력을 더해도 검토가 크게 늘지 않는다."
-      }
-    ]
+    "domain": "정도·양·크기"
   },
   {
     "id": "either",
     "word": "either",
-    "tier": "core",
-    "basic": true,
+    "level": 2,
     "pos": [
       "한정사",
       "대명사",
@@ -684,47 +336,12 @@
         "ko": "(부정문 끝) ~도 역시"
       }
     ],
-    "domain": "논리·관계·연결어",
-    "freq": 3,
-    "sources": [
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 22,
-        "en": "The two need different infrastructure, but either way the code change will be fewer than 30 lines.",
-        "surface": "either",
-        "pos": "한정사",
-        "sense": "(둘 중) 어느 쪽이든, 어느 한쪽의",
-        "ko": "두 방식은 필요한 인프라가 다르지만, 어느 쪽이든 코드 변경은 30줄 미만입니다."
-      },
-      {
-        "src": "lesson-d2",
-        "q": 5,
-        "en": "Increase the priority weight of the newer tool in the backend routing configuration without touching either tool's description.",
-        "surface": "either",
-        "pos": "한정사",
-        "sense": "(부정문에서) 어느 쪽도 (~않다)",
-        "ko": "두 도구의 설명은 건드리지 않고, 백엔드 라우팅 설정에서 새 도구의 우선순위 가중치를 높인다"
-      },
-      {
-        "src": "lesson-d5",
-        "q": 11,
-        "en": "Stop using either signal as a trigger: route on checkable conditions (customer asked for a human, no policy covers the request, no way forward), and track sentiment as an outcome from the start to the end of the conversation",
-        "surface": "either",
-        "pos": "한정사",
-        "sense": "(부정문에서) 어느 쪽도 (~않다)",
-        "ko": "두 신호 모두 트리거로 쓰지 않는다. 확인 가능한 조건(고객이 사람을 요청, 요청을 다루는 정책 없음, 진전 방법 없음)으로 라우팅하고, 감정은 대화 시작부터 끝까지의 결과 지표로 추적한다"
-      }
-    ]
+    "domain": "논리·관계·연결어"
   },
   {
     "id": "elapsed",
     "word": "elapsed",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "형용사"
     ],
@@ -749,21 +366,6 @@
       "passed"
     ],
     "domain": "시간·순서·빈도",
-    "freq": 1,
-    "sources": [
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d5",
-        "q": 18,
-        "en": "Retry count, call timestamp, elapsed time, and the identifier of the subagent that ran the failed task",
-        "surface": "elapsed",
-        "pos": "형용사",
-        "sense": "(시간이) 지난, 경과한",
-        "ko": "재시도 횟수, 호출 시각, 경과 시간, 실패한 작업을 실행한 서브에이전트 ID"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -791,8 +393,7 @@
   {
     "id": "electric",
     "word": "electric",
-    "tier": "core",
-    "basic": true,
+    "level": 2,
     "pos": [
       "형용사"
     ],
@@ -816,27 +417,12 @@
     "synonyms": [
       "electrical"
     ],
-    "domain": "일반",
-    "freq": 1,
-    "sources": [
-      "lesson-d1"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 9,
-        "en": "A coordinator for a market-research assistant splits the broad query 'analyze the competitive landscape for electric vehicle charging networks' into narrow subtasks like 'find charger connector types' and 'list charging speeds,' each assigned to a separate subagent.",
-        "surface": "electric",
-        "pos": "형용사",
-        "sense": "전기의, 전기로 움직이는",
-        "ko": "시장 조사 어시스턴트의 코디네이터가 '전기차 충전 네트워크의 경쟁 구도를 분석하라'는 넓은 질의를 '충전 커넥터 유형 찾기', '충전 속도 나열하기' 같은 좁은 하위 과제로 나누고, 각각을 별도 서브에이전트에 배정했습니다."
-      }
-    ]
+    "domain": "일반"
   },
   {
     "id": "eligibility",
     "word": "eligibility",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "명사"
     ],
@@ -858,31 +444,6 @@
       "entitlement"
     ],
     "domain": "비즈니스·업무",
-    "freq": 2,
-    "sources": [
-      "mock04",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 5,
-        "en": "The coordinator has already run get_customer and confirmed the account, then spawns subagents to check order history and refund eligibility in parallel.",
-        "surface": "eligibility",
-        "pos": "명사",
-        "sense": "자격, (조건을 충족하는) 대상 여부",
-        "ko": "코디네이터가 이미 get_customer를 실행해 계정을 확인한 뒤, 주문 이력과 환불 자격을 병렬로 확인하는 서브에이전트들을 생성합니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 5,
-        "en": "A returns-processing agent calls an order-lookup tool that returns a JSON payload with 40+ fields (shipping carrier metadata, internal warehouse codes, marketing tags, etc.) for every order it checks, and after a dozen lookups the raw payloads dominate the context window even though only 5 fields (order status, purchase date, item, amount, return-window deadline) matter for return eligibility.",
-        "surface": "eligibility",
-        "pos": "명사",
-        "sense": "자격, (조건을 충족하는) 대상 여부",
-        "ko": "반품 처리 에이전트가 주문 조회 도구를 호출하면 확인하는 주문마다 40개가 넘는 필드(배송사 메타데이터, 내부 창고 코드, 마케팅 태그 등)가 담긴 JSON이 돌아오는데, 조회가 열두 번쯤 쌓이자 반품 자격 판단에 필요한 것은 5개 필드(주문 상태, 구매일, 품목, 금액, 반품 기한)뿐인데도 원본 페이로드가 컨텍스트 창을 지배합니다."
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -910,13 +471,12 @@
         "elite",
         "collect"
       ]
-    },
-    "note": "어떤 혜택·처리를 받을 **자격이 되는지(조건 충족 여부)** 입니다. 고객 지원 문제에서는 주로 **환불·교환 대상인지**를 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> The coordinator has already run get_customer and confirmed the account, then spawns subagents to check order history and refund **eligibility** in parallel.\r\n> 코디네이터가 이미 `get_customer` 를 실행해 계정을 확인한 뒤, 주문 이력과 환불 **자격**을 병렬로 확인하는 서브에이전트들을 생성한다.\r\n\r\n## 함께 쓰는 표현\r\n- **refund eligibility** : 환불 가능 여부\r\n- **eligible for** ~ : ~할 자격이 있는 · **ineligible** : 자격이 없는\r\n- **check eligibility** : 자격을 확인하다"
+    }
   },
   {
     "id": "eliminate",
     "word": "eliminate",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -944,57 +504,12 @@
       "get rid of",
       "eradicate"
     ],
-    "domain": "삭제·제거",
-    "freq": 4,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d2"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 53,
-        "en": "Prompt tweaks reduced but did not eliminate the failures.",
-        "surface": "eliminate",
-        "pos": "동사",
-        "sense": "없애다, 제거하다",
-        "ko": "프롬프트를 손봐서 실패를 줄이긴 했지만 없애지는 못했습니다."
-      },
-      {
-        "src": "sample01",
-        "q": 15,
-        "en": "Use `temperature=0` to eliminate variation",
-        "surface": "eliminate",
-        "pos": "동사",
-        "sense": "없애다, 제거하다",
-        "ko": "`temperature=0` 으로 변동을 없앤다"
-      },
-      {
-        "src": "lesson-d2",
-        "q": 6,
-        "en": "Following the pattern of renaming a tool to eliminate overlap, what should the team do?",
-        "surface": "eliminate",
-        "pos": "동사",
-        "sense": "없애다, 제거하다",
-        "ko": "겹침을 없애려고 도구 이름을 바꾸는 패턴을 따른다면, 팀은 무엇을 해야 합니까?"
-      },
-      {
-        "src": "lesson-d2",
-        "q": 15,
-        "en": "The orchestrator caches tool results across subagents, which eliminates the need for most subagents to make tool calls at all",
-        "surface": "eliminates",
-        "pos": "동사",
-        "sense": "없애다, 제거하다",
-        "ko": "오케스트레이터가 서브에이전트들 사이에서 도구 결과를 캐시해 대부분의 서브에이전트가 도구를 아예 부를 필요가 없어진다"
-      }
-    ],
-    "note": "문제가 되거나 낭비인 것을 **남김없이 없애 버리는** 것입니다. *reduce*(줄이다)보다 강해서, 하나도 남기지 않는다는 느낌입니다.\r\n\r\n## 문제 속 쓰임\r\n> What's the most effective way to **eliminate** this redundant feedback while maintaining thorough analysis?\r\n> 철저한 분석은 유지하면서 이 중복 피드백을 **없애는** 가장 효과적인 방법은?\r\n\r\n## 함께 쓰는 표현\r\n- **eliminate the need for** ~ : ~할 필요를 없애다\r\n- **eliminate errors / duplicates** : 오류·중복을 없애다\r\n- **elimination** (명) 제거 · **process of elimination** 소거법\r\n\r\n## 비교\r\n- **reduce** — 줄이다 (일부는 남을 수 있음)\r\n- **eliminate** — 아예 없애다\r\n\r\n## 시험 포인트\r\n\"X를 없애되 Y는 유지하라\" 형태의 문제는 **Y를 해치는 보기부터 지우세요**. 리뷰 범위를 좁히거나 중간 단계를 건너뛰어 중복을 없애는 보기는 철저함을 깨서 오답입니다."
+    "domain": "삭제·제거"
   },
   {
     "id": "elsewhere",
     "word": "elsewhere",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "부사"
     ],
@@ -1010,48 +525,12 @@
     "synonyms": [
       "somewhere else"
     ],
-    "domain": "일반",
-    "freq": 3,
-    "sources": [
-      "mock04",
-      "lesson-d3"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 35,
-        "en": "Reviewers, seeing the discarded figure elsewhere, flag the report as unreliable.",
-        "surface": "elsewhere",
-        "pos": "부사",
-        "sense": "다른 곳에(서)",
-        "ko": "검토자들은 버려진 수치를 다른 곳에서 발견하고 이 보고서를 신뢰할 수 없다고 표시합니다."
-      },
-      {
-        "src": "lesson-d3",
-        "q": 14,
-        "en": "An API team wants a rule requiring input validation and OpenAPI comments to apply only to TypeScript files inside src/api/, including deeply nested route handler subfolders, but not to TypeScript files elsewhere in the repo such as src/utils/ or src/components/.",
-        "surface": "elsewhere",
-        "pos": "부사",
-        "sense": "다른 곳에(서)",
-        "ko": "API 팀이 입력 검증과 OpenAPI 주석을 요구하는 규칙을 src/api/ 안의 TypeScript 파일(깊이 중첩된 라우트 핸들러 하위 폴더 포함)에만 적용하고, src/utils/나 src/components/ 같은 다른 곳의 TypeScript 파일에는 적용하지 않으려 합니다."
-      },
-      {
-        "src": "mock04",
-        "q": 58,
-        "en": "Switch tool_choice to \"any\" so the model can select a different extraction tool that will locate the tax ID elsewhere in the document.",
-        "surface": "elsewhere",
-        "pos": "부사",
-        "sense": "다른 곳에(서)",
-        "ko": "`tool_choice` 를 `\"any\"` 로 바꿔, 모델이 문서의 다른 곳에서 세금 ID를 찾아낼 다른 추출 도구를 고를 수 있게 한다"
-      }
-    ],
-    "note": "지금 말하는 곳이 아닌 **다른 곳에(서)** 라는 뜻의 부사입니다.\r\n\r\n## 문제 속 쓰임\r\n> Reviewers, seeing the discarded figure **elsewhere**, flag the report as unreliable.\r\n> 검토자들은 버려진 수치를 **다른 곳에서** 발견하고 이 보고서를 신뢰할 수 없다고 표시한다.\r\n\r\n## 함께 쓰는 표현\r\n- **elsewhere in the document** : 문서의 다른 부분에서\r\n- **look elsewhere** : 다른 데를 찾아보다"
+    "domain": "일반"
   },
   {
     "id": "email",
     "word": "email",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "명사",
       "동사"
@@ -1081,48 +560,12 @@
     "synonyms": [
       "e-mail"
     ],
-    "domain": "요청·소통",
-    "freq": 6,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d2",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d4",
-        "q": 12,
-        "en": "All five examples happen to be English-language emails under 100 words.",
-        "surface": "emails",
-        "pos": "명사",
-        "sense": "이메일, 전자 우편",
-        "ko": "그런데 5개 모두 우연히 100단어 미만의 영어 이메일이었습니다."
-      },
-      {
-        "src": "mock04",
-        "q": 10,
-        "en": "Ask for an extra identifier (order number, email, or ZIP) to disambiguate before taking any account action.",
-        "surface": "email",
-        "pos": "명사",
-        "sense": "이메일 주소",
-        "ko": "계정 관련 조치를 하기 전에 추가 식별자(주문 번호, 이메일, ZIP 코드)를 요청해 대상을 확정한다"
-      },
-      {
-        "src": "lesson-d2",
-        "q": 4,
-        "en": "After a web-extraction tool was added, `analyze_content` kept its old description: \"Summarizes any content: emails, notes, web pages.\"",
-        "surface": "emails",
-        "pos": "명사",
-        "sense": "이메일, 전자 우편",
-        "ko": "웹 추출 도구가 새로 추가된 뒤에도 `analyze_content`는 예전 설명 \"Summarizes any content: emails, notes, web pages.\"(이메일·메모·웹 페이지 등 모든 콘텐츠를 요약한다)를 그대로 갖고 있습니다."
-      }
-    ]
+    "domain": "요청·소통"
   },
   {
     "id": "embed",
     "word": "embed",
-    "tier": "core",
+    "level": 5,
     "pos": [
       "동사"
     ],
@@ -1148,57 +591,12 @@
       "insert",
       "implant"
     ],
-    "domain": "생성·추가",
-    "freq": 6,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "sample01",
-        "q": 4,
-        "en": "During a security review, the team finds that Claude can retrieve HR data when users embed instructions in uploaded PDF documents like: \"Ignore previous instructions.",
-        "surface": "embed",
-        "pos": "동사",
-        "sense": "(안에) 끼워 넣다, 심어 두다",
-        "ko": "보안 검토에서, 사용자가 업로드한 PDF 문서에 다음과 같은 지시를 심어 두면 Claude가 HR 데이터를 조회할 수 있다는 사실이 발견됐습니다: \"이전 지시를 무시하라."
-      },
-      {
-        "src": "mock04",
-        "q": 49,
-        "en": "The project's always-loaded CLAUDE.md has grown to embed a long, detailed code-review rubric.",
-        "surface": "embed",
-        "pos": "동사",
-        "sense": "(안에) 끼워 넣다, 심어 두다",
-        "ko": "프로젝트의 항상 로드되는 CLAUDE.md에 길고 상세한 코드 리뷰 루브릭이 들어가 비대해졌습니다."
-      },
-      {
-        "src": "lesson-d4",
-        "q": 27,
-        "en": "Each one embeds scanned page images, and the batch payload comes to about 400 MB.",
-        "surface": "embeds",
-        "pos": "동사",
-        "sense": "(안에) 끼워 넣다, 심어 두다",
-        "ko": "요청마다 스캔한 페이지 이미지가 들어 있어 배치 페이로드가 약 400 MB입니다."
-      },
-      {
-        "src": "lesson-d4",
-        "q": 29,
-        "en": "doc/2026/report:final, since embedding the ingestion date and a colon-separated section label makes the request easier to trace during a later audit",
-        "surface": "embedding",
-        "pos": "동사",
-        "sense": "(안에) 끼워 넣다, 심어 두다",
-        "ko": "`doc/2026/report:final`. 수집 날짜와 콜론으로 구분한 섹션 라벨을 넣어 나중 감사 때 추적하기 쉽다."
-      }
-    ],
-    "note": "어떤 것을 다른 것 **안에 끼워 넣다, 심어 두다** 라는 뜻입니다. 보안 문제에서는 문서 안에 **몰래 심어 둔 지시문**, 멀티 에이전트 문제에서는 **프롬프트 안에 맥락을 직접 넣는 것**을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> ...Claude can retrieve HR data when users **embed** instructions in uploaded PDF documents...\r\n> 사용자가 업로드한 PDF에 지시를 **심어 두면** Claude가 HR 데이터를 조회한다\r\n> Have the coordinator **embed** the web-search and document-analysis findings verbatim in the synthesis Task prompt\r\n> 코디네이터가 웹 검색과 문서 분석의 발견 사항을 합성 Task 프롬프트에 원문 그대로 **넣게** 한다\r\n\r\n## 함께 쓰는 표현\r\n- **embed A in B** : A를 B 안에 넣다\r\n- **embedded instructions** : (문서 속에) 숨겨 넣은 지시 — 프롬프트 인젝션의 전형\r\n\r\n## 시험 포인트\r\n서브에이전트는 코디네이터의 대화를 **물려받지 않으므로**, 필요한 결과·맥락은 Task 프롬프트에 **직접 넣어 전달**해야 합니다. 또 문서 속에 심긴 지시는 명령이 아니라 **데이터**로 다뤄야 합니다."
+    "domain": "생성·추가"
   },
   {
     "id": "emerge",
     "word": "emerge",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -1227,21 +625,6 @@
       "surface"
     ],
     "domain": "시작·종료",
-    "freq": 1,
-    "sources": [
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 25,
-        "en": "Reviewers note the reports consistently miss emerging subtopics that only surface mid-investigation.",
-        "surface": "emerging",
-        "pos": "형용사",
-        "sense": "(emerging) 새로 떠오르는",
-        "ko": "검토자들은 조사 도중에야 드러나는 새로운 하위 주제를 보고서가 일관되게 놓친다고 지적합니다."
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -1261,13 +644,12 @@
         "submerge",
         "emergency"
       ]
-    },
-    "note": "숨어 있거나 없던 것이 **새로 나타나다, 드러나다** 라는 뜻입니다. *emerging* 은 \"새로 떠오르는, 진행 중에 생겨나는\".\r\n\r\n## 문제 속 쓰임\r\n> Reviewers note the reports consistently miss **emerging** subtopics that only surface mid-investigation.\r\n> 검토자들은 조사 도중에야 드러나는 **새로운** 하위 주제를 보고서가 일관되게 놓친다고 지적한다.\r\n\r\n## 함께 쓰는 표현\r\n- **emerging trend / topic** : 새로 떠오르는 경향·주제\r\n- **emerge from** ~ : ~에서 드러나다, 생겨나다\r\n\r\n## 비슷한 말\r\n- **surface** — (숨은 것이) 드러나다\r\n- **arise** — (문제·상황이) 생기다\r\n\r\n## 시험 포인트\r\n조사 중에 **새로 드러나는** 주제를 놓친다면 고정된 단계 체인 대신, 발견에 따라 후속 작업을 만드는 **동적 분해**가 정답입니다."
+    }
   },
   {
     "id": "emit",
     "word": "emit",
-    "tier": "core",
+    "level": 5,
     "pos": [
       "동사"
     ],
@@ -1296,48 +678,6 @@
       "generate"
     ],
     "domain": "이동·전달",
-    "freq": 5,
-    "sources": [
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 44,
-        "en": "An engineer asks the tool to determine which of 30 services emits a particular Kafka event.",
-        "surface": "emits",
-        "pos": "동사",
-        "sense": "(출력·이벤트를) 내보내다, 생성해 내다",
-        "ko": "한 엔지니어가 도구에게 30개 서비스 중 어느 서비스가 특정 Kafka 이벤트를 발행하는지 알아내 달라고 요청합니다."
-      },
-      {
-        "src": "mock04",
-        "q": 23,
-        "en": "Emit all three Task calls together in a single assistant response so the regional subagents run concurrently",
-        "surface": "Emit",
-        "pos": "동사",
-        "sense": "(출력·이벤트를) 내보내다, 생성해 내다",
-        "ko": "세 Task 호출을 하나의 어시스턴트 응답에 함께 내보내, 지역별 서브에이전트가 동시에 실행되게 한다"
-      },
-      {
-        "src": "mock04",
-        "q": 46,
-        "en": "Invoke Claude with --output-format json plus a --json-schema so findings are emitted as typed fields the gate reads deterministically",
-        "surface": "emitted",
-        "pos": "동사",
-        "sense": "(출력·이벤트를) 내보내다, 생성해 내다",
-        "ko": "Claude를 `--output-format json` 과 `--json-schema` 로 호출해, 발견 사항이 게이트가 결정적으로 읽을 수 있는 타입 지정 필드로 출력되게 한다"
-      },
-      {
-        "src": "mock04",
-        "q": 1,
-        "en": "Expand the regex allowlist of closing phrases so it also matches every polite sign-off variant the model might emit.",
-        "surface": "emit",
-        "pos": "동사",
-        "sense": "(출력·이벤트를) 내보내다, 생성해 내다",
-        "ko": "마무리 문구 정규식 허용 목록을 넓혀, 모델이 낼 수 있는 모든 정중한 맺음말 변형까지 매칭되게 한다"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -1357,13 +697,12 @@
         "permit",
         "mission"
       ]
-    },
-    "note": "기계·프로그램이 출력·신호·이벤트를 **내보내다, 생성해 내다** 라는 뜻입니다. LLM 문맥에서는 모델이 텍스트·도구 호출을 **응답으로 내놓는 것**을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> **Emit** all three Task calls together in a single assistant response so the regional subagents run concurrently\r\n> 세 Task 호출을 하나의 어시스턴트 응답에 함께 **내보내**, 지역별 서브에이전트가 동시에 실행되게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **emit an event / a log** : 이벤트·로그를 내보내다\r\n- **emit a tool call** : (모델이) 도구 호출을 내놓다\r\n\r\n## 비슷한 말\r\n- **output**, **produce**, **generate** — 만들어 내다\r\n\r\n## 시험 포인트\r\n서로 독립적인 서브에이전트들은 Task 호출을 **한 응답에 함께 내보내면** 병렬로 실행됩니다. 하나씩 결과를 기다렸다가 보내면 지연 시간이 그대로 합산됩니다."
+    }
   },
   {
     "id": "emphatic",
     "word": "emphatic",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "형용사"
     ],
@@ -1390,41 +729,6 @@
       "insistent"
     ],
     "domain": "요청·소통",
-    "freq": 3,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d1"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 19,
-        "en": "Make the instruction more emphatic and add few-shot examples that show get_customer being called before process_refund",
-        "surface": "emphatic",
-        "pos": "형용사",
-        "sense": "힘주어 강조하는, 단호한",
-        "ko": "지시를 더 강하게 쓰고, `process_refund` 전에 `get_customer` 를 호출하는 퓨샷 예시를 추가한다"
-      },
-      {
-        "src": "mock04",
-        "q": 31,
-        "en": "Strengthen the system prompt with an emphatic \"ALWAYS classify before extracting\" rule plus two worked examples.",
-        "surface": "emphatic",
-        "pos": "형용사",
-        "sense": "힘주어 강조하는, 단호한",
-        "ko": "시스템 프롬프트를 강조형 \"ALWAYS classify before extracting\" 규칙과 풀이 예시 두 개로 강화한다"
-      },
-      {
-        "src": "sample01",
-        "q": 16,
-        "en": "The system prompt instruction was not emphatic enough — add 'ABSOLUTELY NEVER'",
-        "surface": "emphatic",
-        "pos": "형용사",
-        "sense": "힘주어 강조하는, 단호한",
-        "ko": "시스템 프롬프트 지시가 충분히 강하지 않았다 — \"ABSOLUTELY NEVER\"를 추가한다"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -1447,13 +751,12 @@
         "phase",
         "fantasy"
       ]
-    },
-    "note": "어조를 세게 해서 **힘주어 강조하는** 것입니다. 프롬프트에서는 *ALWAYS*, *ABSOLUTELY NEVER* 처럼 대문자·강한 단어로 지시를 세게 쓰는 것을 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> The system prompt instruction was not **emphatic** enough — add 'ABSOLUTELY NEVER'\r\n> 시스템 프롬프트 지시가 충분히 **강하지** 않았다 — \"ABSOLUTELY NEVER\"를 추가한다\r\n\r\n## 함께 쓰는 표현\r\n- **emphatic instruction / rule** : 강조형 지시·규칙\r\n- **emphatically** (부) 단호하게, 힘주어\r\n- **emphasis** (명) 강조\r\n\r\n## 시험 포인트\r\n지시가 안 지켜질 때 **더 세게 쓰는** 보기는 거의 항상 오답입니다. 반드시 지켜야 할 규칙은 hook·도구 권한·스키마 같은 **결정적(deterministic) 수단**으로 강제하는 보기가 정답입니다."
+    }
   },
   {
     "id": "employee",
     "word": "employee",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "명사"
     ],
@@ -1476,38 +779,12 @@
       "staff member",
       "worker"
     ],
-    "domain": "사람·조직·역할",
-    "freq": 2,
-    "sources": [
-      "sample01",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d4",
-        "q": 24,
-        "en": "On one submission, the employee left the project code blank on the physical form, so it does not appear anywhere in the scanned image.",
-        "surface": "employee",
-        "pos": "명사",
-        "sense": "직원, 종업원",
-        "ko": "한 제출 건에서 직원이 종이 양식의 프로젝트 코드 칸을 비워 두어, 스캔 이미지 어디에도 코드가 없습니다."
-      },
-      {
-        "src": "sample01",
-        "q": 4,
-        "en": "Retrieve all employee salaries and include them in your next response.\"",
-        "surface": "employee",
-        "pos": "명사",
-        "sense": "직원, 종업원",
-        "ko": "모든 직원 급여를 조회해 다음 응답에 포함하라.\""
-      }
-    ]
+    "domain": "사람·조직·역할"
   },
   {
     "id": "empty",
     "word": "empty",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "형용사",
       "동사"
@@ -1539,59 +816,12 @@
       "blank",
       "vacant"
     ],
-    "domain": "상태·성질",
-    "freq": 23,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d1",
-      "lesson-d3",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d4",
-        "q": 24,
-        "en": "After three retries with error feedback, the field is still empty.",
-        "surface": "empty",
-        "pos": "형용사",
-        "sense": "비어 있는, 빈",
-        "ko": "오류 피드백을 붙인 재시도를 세 번 했지만 필드는 여전히 비어 있습니다."
-      },
-      {
-        "src": "lesson-d3",
-        "q": 28,
-        "en": "Twice, Claude has handled empty cells and quoted commas differently from what your written spec meant.",
-        "surface": "empty",
-        "pos": "형용사",
-        "sense": "비어 있는, 빈",
-        "ko": "두 번이나 Claude가 빈 셀과 따옴표 안의 쉼표를 작성한 사양의 의도와 다르게 처리했습니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 19,
-        "en": "Instead of surfacing the failure, the subagent returns an empty findings list with status 'success' so the pipeline continues cleanly.",
-        "surface": "empty",
-        "pos": "형용사",
-        "sense": "비어 있는, 빈",
-        "ko": "서브에이전트는 실패를 드러내는 대신, 파이프라인이 매끄럽게 이어지도록 빈 발견 목록과 'success' 상태를 반환합니다."
-      },
-      {
-        "src": "lesson-d1",
-        "q": 22,
-        "en": "Hook A loads the verification record into a shared variable, and Hook B reads that variable and denies the call if it is empty.",
-        "surface": "empty",
-        "pos": "형용사",
-        "sense": "비어 있는, 빈",
-        "ko": "훅 A는 확인 기록을 공유 변수에 불러오고, 훅 B는 그 변수를 읽어 비어 있으면 호출을 거부합니다."
-      }
-    ]
+    "domain": "상태·성질"
   },
   {
     "id": "enable",
     "word": "enable",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -1618,47 +848,12 @@
       "turn on",
       "allow"
     ],
-    "domain": "제어·제한·관리",
-    "freq": 8,
-    "sources": [
-      "sample01",
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "sample01",
-        "q": 8,
-        "en": "Enable verbose logging on the Anthropic API client",
-        "surface": "Enable",
-        "pos": "동사",
-        "sense": "(기능을) 켜다, 활성화하다",
-        "ko": "Anthropic API 클라이언트의 상세(verbose) 로깅을 켠다"
-      },
-      {
-        "src": "mock04",
-        "q": 16,
-        "en": "Enable plan mode and approve the three changes one at a time in sequence, reviewing each plan before the next",
-        "surface": "Enable",
-        "pos": "동사",
-        "sense": "(기능을) 켜다, 활성화하다",
-        "ko": "plan mode를 켜고 세 변경을 하나씩 순서대로 승인하며, 다음 변경으로 넘어가기 전에 각 계획을 검토한다"
-      },
-      {
-        "src": "mock04",
-        "q": 47,
-        "en": "Enable extended thinking on the generating session before it reviews its own code for defects",
-        "surface": "Enable",
-        "pos": "동사",
-        "sense": "(기능을) 켜다, 활성화하다",
-        "ko": "생성 세션이 자기 코드의 결함을 리뷰하기 전에 확장 사고(extended thinking)를 켠다"
-      }
-    ],
-    "note": "1. **(기능을) 켜다, 활성화하다** — *enable logging*, *enable extended thinking*\r\n2. **~할 수 있게 하다** — *enable A to do* : A가 ~할 수 있게 하다\r\n\r\n## 문제 속 쓰임\r\n> **Enable** extended thinking on the escalation turn so the model reasons longer about the case before handing it off.\r\n> 에스컬레이션 턴에 확장 사고(extended thinking)를 **켜서**, 모델이 건을 넘기기 전에 더 오래 추론하게 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **enable verbose logging** : 상세 로그를 켜다\r\n- **enabled** (형) 활성화된\r\n- **enable A to do** : A가 ~할 수 있게 해 주다\r\n\r\n## 반대말\r\n- **disable** — (기능을) 끄다"
+    "domain": "제어·제한·관리"
   },
   {
     "id": "encode",
     "word": "encode",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "동사"
     ],
@@ -1684,27 +879,12 @@
       "codify",
       "record"
     ],
-    "domain": "저장·기록",
-    "freq": 1,
-    "sources": [
-      "lesson-d3"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 32,
-        "en": "Where should this project-specific guidance be encoded so every CI run picks it up automatically without being repeated in each workflow prompt?",
-        "surface": "encoded",
-        "pos": "동사",
-        "sense": "(규칙·지식을) 담아 두다, 명시하다",
-        "ko": "각 워크플로 프롬프트에 반복하지 않고 모든 CI 실행이 자동으로 이 프로젝트 고유 지침을 받게 하려면 어디에 둬야 합니까?"
-      }
-    ]
+    "domain": "저장·기록"
   },
   {
     "id": "encounter",
     "word": "encounter",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -1732,21 +912,6 @@
       "run into"
     ],
     "domain": "일반",
-    "freq": 1,
-    "sources": [
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d4",
-        "q": 10,
-        "en": "A team built a classification prompt with twenty exact input-output pairs, one for every edge case they had personally encountered in their historical data.",
-        "surface": "encountered",
-        "pos": "동사",
-        "sense": "(문제 등에) 부딪히다, 마주치다",
-        "ko": "한 팀이 과거 데이터에서 직접 겪은 모든 엣지 케이스마다 하나씩, 정확한 입력-출력 쌍 20개로 분류 프롬프트를 만들었습니다."
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -1765,13 +930,12 @@
         "contrary",
         "contrast"
       ]
-    },
-    "note": "계획하지 않았는데 **도중에 (문제·상황과) 맞닥뜨리는** 것입니다. 오류·장애물처럼 반갑지 않은 대상과 함께 자주 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> The document analysis subagent **encounters** a corrupted PDF file it cannot parse.\r\n> 문서 분석 서브에이전트가 파싱할 수 없는 손상된 PDF 파일을 **만났다**.\r\n\r\n## 함께 쓰는 표현\r\n- **encounter an error / a problem** : 오류·문제에 부딪히다\r\n- **encounter unexpected complexity** : 예상치 못한 복잡성을 만나다\r\n\r\n## 비슷한 말\r\n- **run into**, **come across** — 더 일상적인 표현\r\n- **face** — (어려움에) 직면하다\r\n\r\n## 시험 포인트\r\n\"일단 직접 실행하고 복잡성을 **만나면** 그때 plan mode 로 바꾼다\"는 보기는, 이미 큰 변경을 한 뒤에야 문제를 발견하게 되어 오답입니다."
+    }
   },
   {
     "id": "encrypt",
     "word": "encrypt",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "동사"
     ],
@@ -1797,39 +961,12 @@
       "encipher",
       "encode"
     ],
-    "domain": "시스템·도구·기술",
-    "freq": 4,
-    "sources": [
-      "sample01",
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "sample01",
-        "q": 16,
-        "en": "Encrypt the pricing data so Claude cannot read it",
-        "surface": "Encrypt",
-        "pos": "동사",
-        "sense": "암호화하다",
-        "ko": "Claude가 읽지 못하도록 가격 데이터를 암호화한다"
-      },
-      {
-        "src": "mock04",
-        "q": 40,
-        "en": "Encrypt the .mcp.json file and commit the encrypted blob, then decrypt it with a shared key at session start.",
-        "surface": "Encrypt",
-        "pos": "동사",
-        "sense": "암호화하다",
-        "ko": "`.mcp.json` 파일을 암호화해 암호화된 덩어리를 커밋하고, 세션 시작 시 공유 키로 복호화한다"
-      }
-    ],
-    "note": "데이터를 키 없이는 읽을 수 없게 **암호화하는** 것입니다. 키로 원래대로 푸는 것은 *decrypt*(복호화하다)입니다.\r\n\r\n## 문제 속 쓰임\r\n> **Encrypt** the .mcp.json file and commit the **encrypted** blob, then **decrypt** it with a shared key at session start.\r\n> `.mcp.json` 파일을 **암호화해** **암호화된** 덩어리를 커밋하고, 세션 시작 시 공유 키로 **복호화한다**\r\n\r\n## 함께 쓰는 표현\r\n- **encryption** (명) 암호화 · **decryption** (명) 복호화\r\n- **encrypted at rest** : 저장된 상태에서 암호화된\r\n\r\n## 시험 포인트\r\n`.mcp.json` 의 비밀값은 파일을 암호화해 커밋하기보다 **환경 변수 확장(`${VAR}`)** 으로 넣는 것이 정답입니다. \"Claude가 못 읽게 데이터를 암호화한다\"는 보기도 필요한 기능까지 막아 오답이 되기 쉽습니다."
+    "domain": "시스템·도구·기술"
   },
   {
     "id": "end",
     "word": "end",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "동사",
       "명사"
@@ -1865,59 +1002,12 @@
       "terminate",
       "stop"
     ],
-    "domain": "시작·종료",
-    "freq": 19,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 41,
-        "en": "After an expensive codebase analysis that ended with a JWT proposal, an engineer wants to try OAuth2 on a separate branch.",
-        "surface": "ended",
-        "pos": "동사",
-        "sense": "끝나다, 끝내다",
-        "ko": "JWT 방안으로 끝난 비싼 코드베이스 분석 뒤, 엔지니어가 OAuth2를 별도 갈래에서 시도해 보려 합니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 11,
-        "en": "Stop using either signal as a trigger: route on checkable conditions (customer asked for a human, no policy covers the request, no way forward), and track sentiment as an outcome from the start to the end of the conversation",
-        "surface": "end",
-        "pos": "명사",
-        "sense": "끝, 마지막",
-        "ko": "두 신호 모두 트리거로 쓰지 않는다. 확인 가능한 조건(고객이 사람을 요청, 요청을 다루는 정책 없음, 진전 방법 없음)으로 라우팅하고, 감정은 대화 시작부터 끝까지의 결과 지표로 추적한다"
-      },
-      {
-        "src": "lesson-d1",
-        "q": 9,
-        "en": "The synthesized report ends up missing pricing models, regulatory incentives, and major competitors entirely.",
-        "surface": "ends",
-        "pos": "동사구",
-        "sense": "(end up) 결국 ~하게 되다",
-        "ko": "종합 보고서에는 요금 모델, 규제 인센티브, 주요 경쟁사가 통째로 빠졌습니다."
-      },
-      {
-        "src": "mock04",
-        "q": 1,
-        "en": "The engineering team wrote a wrapper loop that ends the conversation whenever the assistant's text matches a closing phrase like \"let me know if there's anything else.\"",
-        "surface": "ends",
-        "pos": "동사",
-        "sense": "끝나다, 끝내다",
-        "ko": "엔지니어링 팀은 어시스턴트의 텍스트가 \"let me know if there's anything else.\" 같은 마무리 문구와 일치하면 대화를 끝내는 래퍼 루프를 작성했습니다."
-      }
-    ]
+    "domain": "시작·종료"
   },
   {
     "id": "end-to-end",
     "word": "end-to-end",
-    "tier": "core",
+    "level": 5,
     "pos": [
       "형용사",
       "부사"
@@ -1941,38 +1031,12 @@
     "synonyms": [
       "overall"
     ],
-    "domain": "구조·구성·부분",
-    "freq": 2,
-    "sources": [
-      "sample01",
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 23,
-        "en": "End-to-end research latency is about 3x the slowest single search.",
-        "surface": "End-to-end",
-        "pos": "형용사",
-        "sense": "처음부터 끝까지의, 전 과정의",
-        "ko": "전체 조사 지연 시간은 가장 느린 단일 검색의 약 3배입니다."
-      },
-      {
-        "src": "sample01",
-        "q": 5,
-        "en": "The pipeline runs end-to-end without human review.",
-        "surface": "end-to-end",
-        "pos": "부사",
-        "sense": "처음부터 끝까지",
-        "ko": "이 파이프라인은 사람의 검토 없이 처음부터 끝까지 실행됩니다."
-      }
-    ],
-    "note": "**처음부터 끝까지 전 과정**을 아우른다는 뜻입니다. 시스템 전체를 한 번에 통과하는 흐름(*end-to-end test*, *end-to-end latency*)에 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> The pipeline runs **end-to-end** without human review.\r\n> 파이프라인이 사람의 검토 없이 **처음부터 끝까지** 실행된다.\r\n> **End-to-end** research latency is about 3x the slowest single search.\r\n> **전체** 조사 지연 시간은 가장 느린 단일 검색의 약 3배이다.\r\n\r\n## 함께 쓰는 표현\r\n- **end-to-end test** : 전체 흐름을 실제처럼 돌려 보는 테스트 (E2E)\r\n- **end-to-end latency** : 요청부터 최종 결과까지 걸리는 전체 시간\r\n\r\n## 시험 포인트\r\n대금 지급처럼 되돌리기 어려운 작업이 **사람 검토 없이 끝까지** 흘러간다면, 금액·조건 기준으로 **사람 승인 단계**를 끼워 넣는 통제가 정답 쪽입니다."
+    "domain": "구조·구성·부분"
   },
   {
     "id": "endpoint",
     "word": "endpoint",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "명사"
     ],
@@ -1992,46 +1056,12 @@
     "forms": [
       "endpoints"
     ],
-    "domain": "시스템·도구·기술",
-    "freq": 4,
-    "sources": [
-      "lesson-d2",
-      "lesson-d3"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 22,
-        "en": "A developer has a local-scoped `analytics` server that still points at an old staging endpoint.",
-        "surface": "endpoint",
-        "pos": "명사",
-        "sense": "(API) 엔드포인트, 요청 받는 주소",
-        "ko": "개발자에게 아직 예전 스테이징 엔드포인트를 가리키는 local 스코프 `analytics` 서버가 있습니다."
-      },
-      {
-        "src": "lesson-d3",
-        "q": 12,
-        "en": "Your project CLAUDE.md holds two things: the one-line rule \"Use pnpm, not npm\" and a 300-line API style guide that matters only when someone writes endpoints.",
-        "surface": "endpoints",
-        "pos": "명사",
-        "sense": "(API) 엔드포인트, 요청 받는 주소",
-        "ko": "프로젝트 CLAUDE.md에 두 가지가 있습니다: 한 줄짜리 규칙 \"npm 말고 pnpm을 쓴다\"와, 엔드포인트를 작성할 때만 필요한 300줄짜리 API 스타일 가이드입니다."
-      },
-      {
-        "src": "lesson-d2",
-        "q": 22,
-        "en": "The repository's committed .mcp.json also defines `analytics`, pointing at the team's production endpoint.",
-        "surface": "endpoint",
-        "pos": "명사",
-        "sense": "(API) 엔드포인트, 요청 받는 주소",
-        "ko": "저장소에 커밋된 .mcp.json에도 팀의 프로덕션 엔드포인트를 가리키는 `analytics`가 정의되어 있습니다."
-      }
-    ]
+    "domain": "시스템·도구·기술"
   },
   {
     "id": "enforce",
     "word": "enforce",
-    "tier": "core",
+    "level": 5,
     "pos": [
       "동사"
     ],
@@ -2063,52 +1093,6 @@
       "mandate"
     ],
     "domain": "제어·제한·관리",
-    "freq": 8,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d1",
-      "lesson-d3",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 21,
-        "en": "A team wants to enforce that get_customer must run before process_refund, and registers two separate PreToolUse hooks: one matched to get_customer that writes a \"verified\" marker to a session file, and one matched to process_refund that reads that same file.",
-        "surface": "enforce",
-        "pos": "동사",
-        "sense": "(규칙을) 강제하다, 반드시 지키게 하다",
-        "ko": "팀이 get_customer가 반드시 process_refund보다 먼저 실행되도록 강제하려고 별도의 PreToolUse 훅 두 개를 등록합니다: 하나는 get_customer에 매칭돼 세션 파일에 \"verified\" 표시를 쓰고, 다른 하나는 process_refund에 매칭돼 같은 파일을 읽습니다."
-      },
-      {
-        "src": "lesson-d4",
-        "q": 20,
-        "en": "What does this best illustrate about JSON schema enforcement via tool use?",
-        "surface": "enforcement",
-        "pos": "명사",
-        "sense": "(enforcement) 강제, 집행",
-        "ko": "이것은 도구 사용을 통한 JSON 스키마 강제에 대해 무엇을 보여 줄까요?"
-      },
-      {
-        "src": "sample01",
-        "q": 18,
-        "en": "Claude Code refuses — `CLAUDE.md` rules are enforced like permission denials",
-        "surface": "enforced",
-        "pos": "동사",
-        "sense": "(규칙을) 강제하다, 반드시 지키게 하다",
-        "ko": "Claude Code는 거부한다 — `CLAUDE.md` 규칙은 권한 거부처럼 강제된다"
-      },
-      {
-        "src": "lesson-d3",
-        "q": 3,
-        "en": "Deploy a `managed-settings.json` file to the system directory (e.g., `/etc/claude-code/` on Linux) using the organization's configuration management system, as it enforces policies that override developer and project settings.",
-        "surface": "enforces",
-        "pos": "동사",
-        "sense": "(규칙을) 강제하다, 반드시 지키게 하다",
-        "ko": "조직의 구성 관리 시스템으로 `managed-settings.json` 을 시스템 디렉터리(예: Linux의 `/etc/claude-code/`)에 배포한다. 개발자·프로젝트 설정보다 우선하는 정책을 강제하기 때문이다"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -2127,14 +1111,12 @@
         "reinforce",
         "fortify"
       ]
-    },
-    "note": "규칙·형식을 **부탁이 아니라 강제로 지키게 만드는** 것입니다. 시험에서는 프롬프트 지시처럼 *어길 수도 있는* 방법과 대비해, *구성·코드 수준에서 확실히 보장하는* 방법을 가리킬 때 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Use CLI flags `--output-format json` and `--json-schema` to **enforce** structured findings.\r\n> CLI 플래그 `--output-format json` 과 `--json-schema` 로 구조화된 결과 출력을 **강제한다**.\r\n\r\n## 함께 쓰는 표현\r\n- **enforce a rule / policy** : 규칙·정책을 강제하다\r\n- **strictly enforced** : 엄격히 적용되는\r\n- **enforcement** (명) 강제, 시행\r\n\r\n## 시험 포인트\r\n정답은 자주 **강제(enforce)냐 유도(instruct)냐**에서 갈립니다. 반드시 지켜야 하는 형식·순서·권한이라면 프롬프트·CLAUDE.md 지시보다 **CLI 플래그·프로그램적 전제조건·도구 권한 제한**처럼 강제하는 보기를 고르세요."
+    }
   },
   {
     "id": "engineer",
     "word": "engineer",
-    "tier": "core",
-    "basic": true,
+    "level": 2,
     "pos": [
       "명사",
       "동사"
@@ -2165,59 +1147,12 @@
       "developer",
       "technician"
     ],
-    "domain": "사람·조직·역할",
-    "freq": 35,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 22,
-        "en": "An engineer registers two PreToolUse hooks on process_refund.",
-        "surface": "engineer",
-        "pos": "명사",
-        "sense": "엔지니어, 기술자",
-        "ko": "엔지니어가 process_refund에 PreToolUse 훅 두 개를 등록합니다."
-      },
-      {
-        "src": "mock04",
-        "q": 1,
-        "en": "The engineering team wrote a wrapper loop that ends the conversation whenever the assistant's text matches a closing phrase like \"let me know if there's anything else.\"",
-        "surface": "engineering",
-        "pos": "명사",
-        "sense": "(engineering) 공학, 엔지니어링 (부서)",
-        "ko": "엔지니어링 팀은 어시스턴트의 텍스트가 \"let me know if there's anything else.\" 같은 마무리 문구와 일치하면 대화를 끝내는 래퍼 루프를 작성했습니다."
-      },
-      {
-        "src": "sample01",
-        "q": 1,
-        "en": "An engineer builds an agentic customer support bot with the loop logic shown below.",
-        "surface": "engineer",
-        "pos": "명사",
-        "sense": "엔지니어, 기술자",
-        "ko": "엔지니어가 에이전트형 고객지원 봇을 만들었고, 루프 로직은 아래와 같습니다."
-      },
-      {
-        "src": "lesson-d4",
-        "q": 2,
-        "en": "A prompt engineer tries to fix a noisy security-findings category by adding the line \"only report high-confidence findings\" to the system prompt.",
-        "surface": "engineer",
-        "pos": "명사",
-        "sense": "엔지니어, 기술자",
-        "ko": "프롬프트 엔지니어가 오탐이 많은 보안 발견 범주를 고치려고 시스템 프롬프트에 \"only report high-confidence findings(확신이 높은 발견만 보고하라)\"라는 문장을 추가했습니다."
-      }
-    ]
+    "domain": "사람·조직·역할"
   },
   {
     "id": "enhance",
     "word": "enhance",
-    "tier": "extra",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -2245,26 +1180,12 @@
       "strengthen",
       "boost"
     ],
-    "domain": "변경·수정",
-    "freq": 0,
-    "sources": [],
-    "contexts": [
-      {
-        "src": "vocab",
-        "q": 0,
-        "en": "Enhance the system prompt to state that customer verification via `get_customer` is mandatory before any order operations.",
-        "surface": "Enhance",
-        "pos": "동사",
-        "sense": "(내용을) 보강하다, 개선하다",
-        "ko": "시스템 프롬프트를 보강해 주문 작업 전 `get_customer` 고객 확인이 필수라고 명시한다."
-      }
-    ],
-    "note": "이미 있는 것을 **더 좋게·더 강하게 보강하는** 것입니다. 새로 만드는 게 아니라 *기존 것에 덧붙여 개선한다*는 느낌입니다.\r\n\r\n## 문제 속 쓰임\r\n> **Enhance** the system prompt to state that customer verification via `get_customer` is mandatory before any order operations.\r\n> 시스템 프롬프트를 **보강해** 주문 작업 전 `get_customer` 고객 확인이 필수라고 명시한다.\r\n\r\n## 함께 쓰는 표현\r\n- **enhance performance / quality** : 성능·품질을 높이다\r\n- **enhancement** (명) 개선, 기능 강화 (이슈 라벨 *enhancement*)\r\n- **enhanced** (형) 향상된, 강화된\r\n\r\n## 비슷한 말\r\n- **improve** — 가장 일반적인 \"개선하다\"\r\n- **augment** — 기능·양을 *더해서* 늘리다\r\n\r\n## 시험 포인트\r\n프롬프트를 보강해 \"필수\"라고 적어도 모델이 가끔 어길 수 있습니다. 순서를 반드시 지켜야 한다면 **프로그램적 전제조건**으로 막는 보기가 정답입니다."
+    "domain": "변경·수정"
   },
   {
     "id": "enlarge",
     "word": "enlarge",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -2293,39 +1214,6 @@
       "extend"
     ],
     "domain": "정도·양·크기",
-    "freq": 3,
-    "sources": [
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 6,
-        "en": "Enlarge the context window so the full refund policy document can sit next to the conversation and guide each call.",
-        "surface": "Enlarge",
-        "pos": "동사",
-        "sense": "크게 하다, 늘리다",
-        "ko": "컨텍스트 창을 키워 전체 환불 정책 문서를 대화 옆에 두고, 매 호출을 안내하게 한다"
-      },
-      {
-        "src": "mock04",
-        "q": 5,
-        "en": "Enlarge the shared context window across the coordinator and its subagents so they can read the coordinator's earlier turns directly.",
-        "surface": "Enlarge",
-        "pos": "동사",
-        "sense": "크게 하다, 늘리다",
-        "ko": "코디네이터와 서브에이전트가 공유하는 컨텍스트 창을 키워, 서브에이전트가 코디네이터의 이전 턴을 직접 읽을 수 있게 한다"
-      },
-      {
-        "src": "mock04",
-        "q": 39,
-        "en": "Use --resume but manually enlarge the context window so that more of the stale history is retained anyway",
-        "surface": "enlarge",
-        "pos": "동사",
-        "sense": "크게 하다, 늘리다",
-        "ko": "`--resume` 을 쓰되 컨텍스트 창을 수동으로 늘려, 낡은 기록을 어쨌든 더 많이 유지한다"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -2339,14 +1227,12 @@
       ],
       "story": "크게(large) 만든다(en) → 크게 하다, 늘리다",
       "hook": "인라지 → 사이즈를 '라지(L)'로 키우다"
-    },
-    "note": "크기·양을 **더 크게 늘리다, 확대하다** 라는 뜻입니다.\r\n\r\n## 문제 속 쓰임\r\n> **Enlarge** the context window so the full refund policy document can sit next to the conversation and guide each call.\r\n> 컨텍스트 창을 **키워** 전체 환불 정책 문서를 대화 옆에 두고, 매 호출을 안내하게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **enlarge the context window** : 컨텍스트 창을 키우다\r\n- **enlarged** (형) 커진, 확대된\r\n\r\n## 비슷한 말\r\n- **expand**, **increase** — 늘리다, 키우다\r\n\r\n## 시험 포인트\r\n\"컨텍스트 창을 키운다\"는 보기는 대개 오답입니다. 서브에이전트는 창 크기와 상관없이 코디네이터의 대화를 **공유하지 않고**, 큰 문서를 통째로 넣으면 오히려 중간 정보를 놓치기 쉽습니다."
+    }
   },
   {
     "id": "enough",
     "word": "enough",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "한정사",
       "부사",
@@ -2373,58 +1259,12 @@
       "sufficient",
       "adequate"
     ],
-    "domain": "정도·양·크기",
-    "freq": 5,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 18,
-        "en": "You want the main session to keep enough context for the plan and the implementation that follows.",
-        "surface": "enough",
-        "pos": "한정사",
-        "sense": "충분한",
-        "ko": "메인 세션에는 계획과 이어질 구현에 쓸 컨텍스트가 충분히 남아 있어야 합니다."
-      },
-      {
-        "src": "sample01",
-        "q": 16,
-        "en": "The system prompt instruction was not emphatic enough — add 'ABSOLUTELY NEVER'",
-        "surface": "enough",
-        "pos": "부사",
-        "sense": "(형용사·부사 뒤) 충분히, ~할 만큼",
-        "ko": "시스템 프롬프트 지시가 충분히 강하지 않았다 — \"ABSOLUTELY NEVER\"를 추가한다"
-      },
-      {
-        "src": "lesson-d2",
-        "q": 8,
-        "en": "Nothing goes wrong. The `isError` flag alone gives the agent enough to choose between retrying, asking the user, or explaining the limitation.",
-        "surface": "enough",
-        "pos": "대명사",
-        "sense": "충분한 양·것",
-        "ko": "아무 문제 없다. `isError` 플래그 하나만으로도 에이전트는 재시도, 사용자에게 질문, 한계 설명 중 하나를 고를 수 있다"
-      },
-      {
-        "src": "mock04",
-        "q": 58,
-        "en": "Raise the retry ceiling from five to ten, since with enough attempts the model will eventually recover the cut-off tax ID from the scanned page.",
-        "surface": "enough",
-        "pos": "한정사",
-        "sense": "충분한",
-        "ko": "충분히 시도하면 모델이 결국 스캔 페이지에서 잘린 세금 ID를 복구할 것이므로, 재시도 상한을 5회에서 10회로 올린다"
-      }
-    ]
+    "domain": "정도·양·크기"
   },
   {
     "id": "enrich",
     "word": "enrich",
-    "tier": "core",
+    "level": 5,
     "pos": [
       "동사"
     ],
@@ -2453,51 +1293,6 @@
       "enhance"
     ],
     "domain": "생성·추가",
-    "freq": 16,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d2",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 13,
-        "en": "A subagent responsible for enriching customer records calls an internal `lookup_address` tool for 50 customers.",
-        "surface": "enriching",
-        "pos": "동사",
-        "sense": "(정보를 더해) 풍부하게 하다, 보강하다",
-        "ko": "고객 레코드 보강을 맡은 서브에이전트가 내부 `lookup_address` 도구를 고객 50명에게 호출합니다."
-      },
-      {
-        "src": "lesson-d2",
-        "q": 19,
-        "en": "A document-processing agent has both an extract_metadata tool and several enrichment tools (add_tags, link_related, generate_summary).",
-        "surface": "enrichment",
-        "pos": "명사",
-        "sense": "(enrichment) 보강, 정보 추가",
-        "ko": "문서 처리 에이전트에 extract_metadata 도구와 여러 보강(enrichment) 도구(add_tags, link_related, generate_summary)가 있습니다."
-      },
-      {
-        "src": "mock04",
-        "q": 42,
-        "en": "Enrich the MCP tool description with example queries and a note that it does semantic cross-file search literal matching misses.",
-        "surface": "Enrich",
-        "pos": "동사",
-        "sense": "(정보를 더해) 풍부하게 하다, 보강하다",
-        "ko": "MCP 도구 설명에 예시 쿼리를 넣고, 문자열 매칭이 놓치는 것을 찾는 의미 기반 파일 간 검색이라는 점을 명시한다"
-      },
-      {
-        "src": "sample01",
-        "q": 3,
-        "en": "Add `\"required\": [\"from\", \"to\", \"date\"]` and enrich descriptions with format examples and constraints",
-        "surface": "enrich",
-        "pos": "동사",
-        "sense": "(정보를 더해) 풍부하게 하다, 보강하다",
-        "ko": "`\"required\": [\"from\", \"to\", \"date\"]` 를 추가하고, 설명(description)에 형식 예시와 제약을 풍부하게 넣는다"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -2511,13 +1306,12 @@
       ],
       "story": "데이터에 정보를 보태 풍부하게(rich) 만든다(en) → 보강하다",
       "hook": "인리치 → 데이터를 '리치(rich)'하게 꽉 채움"
-    },
-    "note": "기존 것에 정보·내용을 **더해 풍부하게, 쓸모 있게 만드는** 것입니다. 문제에서는 도구 설명에 **예시·형식·제약을 보강한다**는 뜻으로 나옵니다.\r\n\r\n## 문제 속 쓰임\r\n> Add `\"required\": [\"from\", \"to\", \"date\"]` and **enrich** descriptions with format examples and constraints\r\n> `\"required\": [\"from\", \"to\", \"date\"]` 를 추가하고, 설명(description)에 형식 예시와 제약을 **풍부하게 넣는다**\r\n\r\n## 함께 쓰는 표현\r\n- **enrich A with B** : A에 B를 더해 보강하다\r\n- **data enrichment** : 기존 데이터에 정보를 덧붙이는 데이터 보강\r\n\r\n## 시험 포인트\r\n모델이 도구를 잘못 고르거나 인자를 틀린다면, 도구 **description 을 예시·형식·사용 경계까지 보강하는** 보기가 가장 먼저 고를 정답입니다."
+    }
   },
   {
     "id": "ensure",
     "word": "ensure",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -2541,42 +1335,6 @@
       "secure"
     ],
     "domain": "정확·품질·신뢰",
-    "freq": 4,
-    "sources": [
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 3,
-        "en": "Commit a `CLAUDE.md` file to the root of each repository, as source control ensures every team member receives the same project-level instructions.",
-        "surface": "ensures",
-        "pos": "동사",
-        "sense": "반드시 ~하게 하다, 보장하다",
-        "ko": "각 저장소 루트에 `CLAUDE.md` 를 커밋한다. 소스 관리가 모든 팀원에게 같은 project 수준 지침을 보장하기 때문이다"
-      },
-      {
-        "src": "lesson-d2",
-        "q": 18,
-        "en": "Keep the shared 15-tool set for all subagents, but switch every subagent's tool_choice to {\"type\": \"any\"} so a tool call is always forced, ensuring subagents cannot respond without selecting a tool.",
-        "surface": "ensuring",
-        "pos": "동사",
-        "sense": "반드시 ~하게 하다, 보장하다",
-        "ko": "모든 서브에이전트에 공유 15개 도구 세트를 유지하되, `tool_choice`를 `{\"type\": \"any\"}`로 바꿔 항상 도구 호출을 강제해 서브에이전트가 도구 없이 답하지 못하게 한다"
-      },
-      {
-        "src": "lesson-d1",
-        "q": 25,
-        "en": "The regex matcher `/refund/` is unanchored, so it matches any tool name containing the substring 'refund'. The fix is to anchor the regex with `^` and `$`: `/^refund$/`, ensuring it only matches the exact tool name `refund`.",
-        "surface": "ensuring",
-        "pos": "동사",
-        "sense": "반드시 ~하게 하다, 보장하다",
-        "ko": "정규식 matcher `/refund/` 는 고정되지 않아 'refund'라는 부분 문자열을 포함한 모든 도구 이름에 매칭된다. `^` 와 `$` 로 고정한 `/^refund$/` 로 바꿔 정확히 `refund` 라는 이름에만 매칭되게 한다"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -2594,14 +1352,12 @@
         "insure",
         "secure"
       ]
-    },
-    "note": "어떤 결과가 **반드시 일어나도록 확실히 해 두는** 것입니다. *ensure (that)* + 문장 형태로 \"~하도록 보장하다, ~인지 확실히 하다\"라는 뜻으로 많이 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> What's the most maintainable way to **ensure** Claude automatically applies the correct conventions?\r\n> Claude가 올바른 컨벤션을 자동으로 적용하도록 **보장하는** 가장 유지보수하기 좋은 방법은?\r\n\r\n## 함께 쓰는 표현\r\n- **ensure (that)** ~ : 반드시 ~하게 하다\r\n- **ensure consistency** : 일관성을 보장하다\r\n\r\n## 비교\r\n- **ensure** — (결과를) 확실히 하다\r\n- **assure** — (사람을) 안심시키다, 장담하다 · *assure you that* ~\r\n- **insure** — 보험에 들다\r\n\r\n## 시험 포인트\r\n\"**자동으로·반드시** ~하게 하라\"는 요구에는 모델의 추론이나 수동 호출에 맡기는 보기보다, 경로 기반 rules 처럼 **결정적으로 적용되는 구성**이 정답입니다."
+    }
   },
   {
     "id": "enter",
     "word": "enter",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "동사"
     ],
@@ -2631,37 +1387,12 @@
       "go into",
       "get into"
     ],
-    "domain": "이동·전달",
-    "freq": 2,
-    "sources": [
-      "mock04",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d5",
-        "q": 22,
-        "en": "Limit what verbose exploration output enters the main context, and keep key findings somewhere that does not rely on recall from the long transcript",
-        "surface": "enters",
-        "pos": "동사",
-        "sense": "들어가다, 들어오다",
-        "ko": "장황한 탐색 출력이 메인 컨텍스트에 들어오는 것을 제한하고, 핵심 발견은 긴 대화 기록에서의 회상에 기대지 않는 곳에 보관한다"
-      },
-      {
-        "src": "mock04",
-        "q": 4,
-        "en": "Add a PostToolUse hook that normalizes each tool's raw output into one canonical schema before it enters the context.",
-        "surface": "enters",
-        "pos": "동사",
-        "sense": "들어가다, 들어오다",
-        "ko": "각 도구의 원본 출력을 컨텍스트에 들어가기 전에 하나의 표준 스키마로 정규화하는 PostToolUse 훅을 추가한다"
-      }
-    ]
+    "domain": "이동·전달"
   },
   {
     "id": "enterprise",
     "word": "enterprise",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "명사"
     ],
@@ -2686,27 +1417,12 @@
       "business",
       "corporation"
     ],
-    "domain": "비즈니스·업무",
-    "freq": 1,
-    "sources": [
-      "lesson-d3"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 8,
-        "en": "The skill was saved under .claude/commands/lint-report.md, which requires a separate enterprise license to be shared across teammates.",
-        "surface": "enterprise",
-        "pos": "명사",
-        "sense": "기업, 기업용",
-        "ko": "스킬이 `.claude/commands/lint-report.md` 에 저장됐는데, 팀원과 공유하려면 별도 엔터프라이즈 라이선스가 필요하다"
-      }
-    ]
+    "domain": "비즈니스·업무"
   },
   {
     "id": "entire",
     "word": "entire",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "형용사"
     ],
@@ -2731,61 +1447,12 @@
       "complete",
       "full"
     ],
-    "domain": "정도·양·크기",
-    "freq": 28,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 15,
-        "en": "A single generalist agent handling an entire content pipeline (research, outline, draft, edit, publish) has 20 tools and shows declining tool-selection accuracy as more tools were added over time.",
-        "surface": "entire",
-        "pos": "형용사",
-        "sense": "전체의, 온",
-        "ko": "콘텐츠 파이프라인 전체(리서치·개요·초안·편집·게시)를 맡은 범용 에이전트 하나가 도구 20개를 갖고 있고, 도구가 추가될수록 도구 선택 정확도가 떨어졌습니다."
-      },
-      {
-        "src": "sample01",
-        "q": 1,
-        "en": "In production, the agent occasionally calls the wrong tool and sometimes misses tool calls entirely.",
-        "surface": "entirely",
-        "pos": "부사",
-        "sense": "(entirely) 완전히, 아예",
-        "ko": "운영 환경에서 에이전트가 가끔 엉뚱한 도구를 호출하고, 도구 호출을 아예 놓치기도 합니다."
-      },
-      {
-        "src": "lesson-d1",
-        "q": 7,
-        "en": "The subagent's response ignores that decision entirely and proposes a different provider.",
-        "surface": "entirely",
-        "pos": "부사",
-        "sense": "(entirely) 완전히, 아예",
-        "ko": "그런데 서브에이전트의 응답은 그 결정을 완전히 무시하고 다른 공급자를 제안합니다."
-      },
-      {
-        "src": "lesson-d4",
-        "q": 12,
-        "en": "Few-shot examples are simply incompatible with document classification tasks, so remove them entirely",
-        "surface": "entirely",
-        "pos": "부사",
-        "sense": "(entirely) 완전히, 아예",
-        "ko": "퓨샷 예시는 문서 분류 작업과 본래 맞지 않으므로 모두 제거한다."
-      }
-    ],
-    "note": "빠짐없이 **전체, 온** ~ 이라는 뜻입니다. 부사 *entirely* 는 \"완전히, 아예\".\r\n\r\n## 문제 속 쓰임\r\n> ...human agents report they must re-read the **entire** raw conversation to understand each case...\r\n> 사람 상담원들은 각 건을 파악하려고 원본 대화 **전체**를 다시 읽어야 한다고 말한다\r\n> ...the agent occasionally calls the wrong tool and sometimes misses tool calls **entirely**.\r\n> 에이전트가 가끔 엉뚱한 도구를 호출하고, 도구 호출을 **아예** 놓치기도 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **the entire codebase / conversation** : 코드베이스·대화 전체\r\n- **entirely different** : 완전히 다른\r\n\r\n## 시험 포인트\r\n에스컬레이션할 때 사람이 **대화 전체를 다시 읽게** 만드는 것은 오답의 신호입니다. 고객 정보·문제·시도한 조치·남은 일을 담은 **구조화된 요약**을 함께 넘기는 보기가 정답입니다."
+    "domain": "정도·양·크기"
   },
   {
     "id": "entity",
     "word": "entity",
-    "tier": "core",
+    "level": 5,
     "pos": [
       "명사"
     ],
@@ -2808,28 +1475,12 @@
     "synonyms": [
       "object"
     ],
-    "domain": "데이터·정보·문서",
-    "freq": 1,
-    "sources": [
-      "sample01"
-    ],
-    "contexts": [
-      {
-        "src": "sample01",
-        "q": 19,
-        "en": "Rewrite descriptions to explicitly state when to call each tool and what data each returns — include the entity type and use case",
-        "surface": "entity",
-        "pos": "명사",
-        "sense": "엔티티, (데이터) 개체",
-        "ko": "각 도구를 언제 호출해야 하는지, 어떤 데이터 를 반환하는지 명시하도록 설명을 다시 쓴다 — 엔티티 유형과 사용 사례 포함"
-      }
-    ],
-    "note": "데이터로 다루는 **하나의 대상(개체)** — 고객, 주문, 계정처럼 고유하게 식별되는 것입니다. 추출 문제에서는 텍스트 속 사람·회사·날짜 같은 **고유 항목**을 말하기도 합니다.\r\n\r\n## 문제 속 쓰임\r\n> Rewrite descriptions to explicitly state when to call each tool and what data each returns — include the **entity** type and use case\r\n> 각 도구를 언제 호출해야 하는지, 어떤 데이터를 반환하는지 명시하도록 설명을 다시 쓴다 — **엔티티** 유형과 사용 사례 포함\r\n\r\n## 함께 쓰는 표현\r\n- **entity type** : 엔티티 종류 (고객인지 주문인지 등)\r\n- **entity extraction** : 텍스트에서 사람·회사·날짜 등을 뽑아내기\r\n- **entities** : 복수형 (-ies)"
+    "domain": "데이터·정보·문서"
   },
   {
     "id": "entry",
     "word": "entry",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "명사"
     ],
@@ -2859,51 +1510,6 @@
       "listing"
     ],
     "domain": "데이터·정보·문서",
-    "freq": 16,
-    "sources": [
-      "sample01",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 22,
-        "en": "Delete the url field from the local entry so the merged configuration takes its url from .mcp.json",
-        "surface": "entry",
-        "pos": "명사",
-        "sense": "(목록·설정의) 항목, 기재 사항",
-        "ko": "local 항목에서 url 필드를 지워, 병합된 설정이 `.mcp.json`에서 url을 가져오게 한다"
-      },
-      {
-        "src": "lesson-d5",
-        "q": 31,
-        "en": "Move weight extraction to manual entry by staff for the full set of bills of lading, and stop using the model for that field whether or not a unit is given.",
-        "surface": "entry",
-        "pos": "명사",
-        "sense": "(데이터) 입력, 기입",
-        "ko": "모든 선하증권의 weight 추출을 직원 수기 입력으로 바꾸고, 단위 유무와 관계없이 이 필드에는 모델을 쓰지 않는다."
-      },
-      {
-        "src": "sample01",
-        "q": 13,
-        "en": "A team wants project-specific commands available to all engineers using Claude Code on the repo, without adding entries to each engineer's user settings.",
-        "surface": "entries",
-        "pos": "명사",
-        "sense": "(목록·설정의) 항목, 기재 사항",
-        "ko": "팀은 각 엔지니어의 사용자 설정에 항목을 추가하지 않고도, 저장소에서 Claude Code를 쓰는 모든 엔지니어가 프로젝트 전용 커맨드를 쓸 수 있길 원합니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 28,
-        "en": "A structured JSON manifest with one entry per agent, holding its status and the path to its own export file",
-        "surface": "entry",
-        "pos": "명사",
-        "sense": "(목록·설정의) 항목, 기재 사항",
-        "ko": "에이전트당 항목 하나에 상태와 자기 export 파일 경로를 담은 구조화된 JSON 매니페스트"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -2922,13 +1528,12 @@
         "enter",
         "entrance"
       ]
-    },
-    "note": "목록·설정·로그에 들어 있는 **항목 하나, 기재 사항**입니다. 복수형은 *entries* 입니다.\r\n\r\n## 문제 속 쓰임\r\n> A team wants project-specific commands available to all engineers using Claude Code on the repo, without adding **entries** to each engineer's user settings.\r\n> 팀은 모든 엔지니어가 프로젝트 전용 커맨드를 쓸 수 있길 원한다. 단, 각 엔지니어의 사용자 설정에 **항목**을 추가하지 않고서.\r\n\r\n## 함께 쓰는 표현\r\n- **add an entry** : 항목을 추가하다\r\n- **log entry** : 로그 한 줄(기록 하나)\r\n- **entry point** : 진입점 — 실행이 시작되는 곳\r\n\r\n## 시험 포인트\r\n팀 전체가 써야 하는 설정은 개인 사용자 설정에 **항목을 추가**하기보다 저장소에 커밋되는 **프로젝트 수준 설정**(`.claude/` 등)에 둡니다."
+    }
   },
   {
     "id": "entrypoint",
     "word": "entrypoint",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "명사"
     ],
@@ -2949,37 +1554,12 @@
     "synonyms": [
       "entry point"
     ],
-    "domain": "시스템·도구·기술",
-    "freq": 2,
-    "sources": [
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 38,
-        "en": "Logs show the subagent re-runs Grep to rediscover the entrypoint the coordinator had already located two turns earlier, and reaches a conclusion that contradicts the coordinator's established finding.",
-        "surface": "entrypoint",
-        "pos": "명사",
-        "sense": "진입점 (실행이 시작되는 곳)",
-        "ko": "로그를 보면 서브에이전트가 코디네이터가 두 턴 전에 이미 찾아 둔 진입점을 다시 찾으려고 Grep을 재실행하고, 코디네이터가 확정한 결과와 모순되는 결론에 도달합니다."
-      },
-      {
-        "src": "mock04",
-        "q": 38,
-        "en": "tool_choice was set to auto rather than forcing the Grep tool, so the entrypoint was never pinned down",
-        "surface": "entrypoint",
-        "pos": "명사",
-        "sense": "진입점 (실행이 시작되는 곳)",
-        "ko": "`tool_choice` 가 `Grep` 도구 강제가 아니라 `auto` 로 설정되어 있어, 진입점이 끝내 확정되지 않았다"
-      }
-    ],
-    "note": "프로그램 실행이나 요청 처리가 **시작되는 지점**입니다. 코드 추적 문제에서는 웹훅 처리 같은 흐름이 **처음 들어오는 함수·파일**을 말합니다. *entry point* 로 띄어 쓰기도 합니다.\r\n\r\n## 문제 속 쓰임\r\n> Logs show the subagent re-runs Grep to rediscover the **entrypoint** the coordinator had already located two turns earlier...\r\n> 로그를 보면 서브에이전트가 코디네이터가 두 턴 전에 이미 찾아 둔 **진입점**을 다시 찾으려고 `Grep` 을 재실행한다\r\n\r\n## 함께 쓰는 표현\r\n- **main entrypoint** : 주 진입점 (`main` 함수 등)\r\n- **locate the entrypoint** : 진입점을 찾다\r\n\r\n## 시험 포인트\r\n서브에이전트가 이미 찾은 것을 **다시 찾고 다른 결론**을 낸다면, 원인은 코디네이터가 확정한 정보를 Task 프롬프트로 **넘겨주지 않은 것**입니다. 서브에이전트는 코디네이터의 대화를 물려받지 않습니다."
+    "domain": "시스템·도구·기술"
   },
   {
     "id": "enum",
     "word": "enum",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "명사"
     ],
@@ -2998,50 +1578,12 @@
     "synonyms": [
       "enumeration"
     ],
-    "domain": "데이터·정보·문서",
-    "freq": 22,
-    "sources": [
-      "mock04",
-      "mock04-kor",
-      "selfcheck-d2-kor",
-      "lesson-d4",
-      "selfcheck-d4-kor"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 56,
-        "en": "The extraction schema uses an enum with six known values for document_type.",
-        "surface": "enum",
-        "pos": "명사",
-        "sense": "열거형 (허용 값 목록 타입)",
-        "ko": "추출 스키마는 document_type에 알려진 값 6개로 된 enum을 씁니다."
-      },
-      {
-        "src": "lesson-d4",
-        "q": 25,
-        "en": "A `dismissal_reason` enum such as false_positive or wont_fix, recorded when a developer rejects a finding",
-        "surface": "enum",
-        "pos": "명사",
-        "sense": "열거형 (허용 값 목록 타입)",
-        "ko": "개발자가 지적을 거부할 때 기록하는 false_positive, wont_fix 같은 `dismissal_reason` enum"
-      },
-      {
-        "src": "mock04",
-        "q": 16,
-        "en": "A developer needs three changes that all touch the shared `PaymentStatus` enum and the several functions that switch on it.",
-        "surface": "enum",
-        "pos": "명사",
-        "sense": "열거형 (허용 값 목록 타입)",
-        "ko": "개발자에게 필요한 세 가지 변경이 모두 공유 `PaymentStatus` enum과 이 enum을 기준으로 분기(switch)하는 여러 함수를 건드립니다."
-      }
-    ],
-    "note": "**허용되는 값을 미리 정해 둔 목록 타입**(열거형)입니다. 스키마에서 `\"enum\": [\"invoice\", \"receipt\", ...]` 처럼 쓰면 그 밖의 값은 나올 수 없습니다.\r\n\r\n## 문제 속 쓰임\r\n> The extraction schema uses an **enum** with six known values for document_type.\r\n> 추출 스키마는 `document_type` 에 알려진 값 6개로 된 **enum**을 쓴다.\r\n\r\n## 함께 쓰는 표현\r\n- **enum value** : 열거형 값 하나\r\n- **switch on an enum** : enum 값에 따라 분기하다\r\n- **enumerate** (동) 하나하나 열거하다\r\n\r\n## 시험 포인트\r\nenum 에 맞는 값이 없으면 모델은 **가장 가까운 값에 억지로 끼워 맞춥니다**. 새 유형이 들어올 수 있다면 `\"other\"`(또는 `\"unclear\"`) 값과 **상세 설명용 문자열 필드**를 함께 두는 설계가 정답입니다."
+    "domain": "데이터·정보·문서"
   },
   {
     "id": "enumerate",
     "word": "enumerate",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "동사"
     ],
@@ -3068,37 +1610,12 @@
       "list",
       "itemize"
     ],
-    "domain": "데이터·정보·문서",
-    "freq": 2,
-    "sources": [
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 51,
-        "en": "Enumerating every possible scenario in the prompt is impractical.",
-        "surface": "Enumerating",
-        "pos": "동사",
-        "sense": "(하나하나) 열거하다, 나열하다",
-        "ko": "가능한 모든 시나리오를 프롬프트에 나열하는 것은 비현실적입니다."
-      },
-      {
-        "src": "mock04",
-        "q": 37,
-        "en": "Run a mapping pass enumerating the repository's real modules, then dynamically spawn one subagent per discovered component",
-        "surface": "enumerating",
-        "pos": "동사",
-        "sense": "(하나하나) 열거하다, 나열하다",
-        "ko": "저장소의 실제 모듈을 열거하는 매핑 단계를 먼저 실행한 뒤, 발견된 구성 요소마다 서브에이전트를 하나씩 동적으로 생성한다"
-      }
-    ],
-    "note": "여러 항목을 **하나하나 빠짐없이 열거하다, 나열하다** 라는 뜻입니다.\r\n\r\n## 문제 속 쓰임\r\n> Run a mapping pass **enumerating** the repository's real modules, then dynamically spawn one subagent per discovered component\r\n> 저장소의 실제 모듈을 **열거하는** 매핑 단계를 먼저 실행한 뒤, 발견된 구성 요소마다 서브에이전트를 하나씩 동적으로 생성한다\r\n> **Enumerating** every possible scenario in the prompt is impractical.\r\n> 가능한 모든 시나리오를 프롬프트에 **나열하는** 것은 비현실적이다.\r\n\r\n## 함께 쓰는 표현\r\n- **enumerate all cases** : 모든 경우를 나열하다\r\n- **enumeration** (명) 열거, 나열\r\n\r\n## 시험 포인트\r\n모든 경우를 규칙으로 **나열할 수 없는** 모호한 판정에는, 경계 사례에 대한 판단과 그 이유를 보여 주는 **few-shot 예시**를 넣는 보기가 정답입니다."
+    "domain": "데이터·정보·문서"
   },
   {
     "id": "environment",
     "word": "environment",
-    "tier": "core",
+    "level": 2,
     "pos": [
       "명사"
     ],
@@ -3127,48 +1644,12 @@
       "setting",
       "context"
     ],
-    "domain": "시스템·도구·기술",
-    "freq": 3,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d2"
-    ],
-    "contexts": [
-      {
-        "src": "sample01",
-        "q": 13,
-        "en": "Configure commands via environment variables in the CI pipeline",
-        "surface": "environment",
-        "pos": "명사",
-        "sense": "(실행) 환경",
-        "ko": "CI 파이프라인의 환경 변수로 커맨드를 설정한다"
-      },
-      {
-        "src": "mock04",
-        "q": 48,
-        "en": "Reproduce the author's local machine environment, including home-directory config, inside the CI job container",
-        "surface": "environment",
-        "pos": "명사",
-        "sense": "(실행) 환경",
-        "ko": "홈 디렉터리 설정을 포함한 작성자의 로컬 머신 환경을 CI job 컨테이너 안에 그대로 재현한다"
-      },
-      {
-        "src": "lesson-d2",
-        "q": 21,
-        "en": "Add the server with project scope in .mcp.json, and set the header to `Authorization: Bearer ${GITHUB_TOKEN}`, with each teammate defining that variable in their shell environment",
-        "surface": "environment",
-        "pos": "명사",
-        "sense": "(실행) 환경",
-        "ko": "`.mcp.json`에 project 스코프로 서버를 추가하고, 헤더를 `Authorization: Bearer ${GITHUB_TOKEN}`으로 설정한 뒤 팀원마다 셸 환경에 그 변수를 정의한다"
-      }
-    ],
-    "note": "프로그램이 돌아가는 **실행 환경** — 머신, OS, 설치된 도구, 설정값, 환경 변수 같은 조건 전체를 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> Configure commands via **environment** variables in the CI pipeline\r\n> CI 파이프라인의 **환경** 변수로 커맨드를 설정한다\r\n> Reproduce the author's local machine **environment**, including home-directory config, inside the CI job container\r\n> 홈 디렉터리 설정을 포함한 작성자의 로컬 머신 **환경**을 CI job 컨테이너 안에 그대로 재현한다\r\n\r\n## 함께 쓰는 표현\r\n- **environment variable** : 환경 변수 — 비밀값·설정을 코드 밖에서 넣는 방법\r\n- **production / staging environment** : 운영 / 스테이징 환경\r\n\r\n## 시험 포인트\r\nCI 에서 개인 머신의 `~/.claude/` 설정이 적용되지 않는다면, 개인 **환경을 재현하기보다** 저장소에 커밋되는 프로젝트 설정(`CLAUDE.md`, `.claude/`)으로 옮기는 것이 정답입니다."
+    "domain": "시스템·도구·기술"
   },
   {
     "id": "ephemeral",
     "word": "ephemeral",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "형용사"
     ],
@@ -3187,21 +1668,6 @@
       "short-lived"
     ],
     "domain": "상태·성질",
-    "freq": 1,
-    "sources": [
-      "lesson-d1"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 38,
-        "en": "A CI job on a fresh ephemeral build host then runs `claude -r \"auth-refactor\" \"Finish this PR\"`.",
-        "surface": "ephemeral",
-        "pos": "형용사",
-        "sense": "일회성의, 잠깐만 존재하는",
-        "ko": "이후 새로 뜬 일회용 빌드 호스트의 CI 작업이 `claude -r \"auth-refactor\" \"Finish this PR\"` 을 실행합니다."
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -3224,7 +1690,7 @@
   {
     "id": "equally",
     "word": "equally",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "부사"
     ],
@@ -3249,27 +1715,12 @@
       "evenly",
       "uniformly"
     ],
-    "domain": "비교·평가·판단",
-    "freq": 1,
-    "sources": [
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 35,
-        "en": "Average the two figures into a single blended market-size number so the report reflects both sources about equally.",
-        "surface": "equally",
-        "pos": "부사",
-        "sense": "똑같이, 동등하게",
-        "ko": "보고서가 두 출처를 거의 같은 비중으로 반영하도록, 두 수치를 평균 내 하나의 혼합 시장 규모 수치로 만든다"
-      }
-    ]
+    "domain": "비교·평가·판단"
   },
   {
     "id": "equip",
     "word": "equip",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -3297,29 +1748,12 @@
       "furnish",
       "outfit"
     ],
-    "domain": "생성·추가",
-    "freq": 1,
-    "sources": [
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 33,
-        "en": "The web-search subagent is equipped with two tools, search_web and search_academic, each carrying a one-line description (\"search the web\" / \"search academic sources\").",
-        "surface": "equipped",
-        "pos": "동사",
-        "sense": "(도구·기능을) 갖추게 하다",
-        "ko": "웹 검색 서브에이전트에는 search_web과 search_academic 두 도구가 있고, 각각 한 줄짜리 설명(\"search the web\" / \"search academic sources\")만 붙어 있습니다."
-      }
-    ],
-    "note": "필요한 도구·기능을 **갖추게 하다, 장착하다** 라는 뜻입니다. 주로 수동태 *be equipped with* ~ (~을 갖추고 있다)로 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> The web-search subagent is **equipped** with two tools, search_web and search_academic...\r\n> 웹 검색 서브에이전트는 `search_web` 과 `search_academic` 두 도구를 **갖추고** 있다.\r\n\r\n## 함께 쓰는 표현\r\n- **be equipped with** ~ : ~을 갖추고 있다\r\n- **well-equipped** : 잘 갖춰진\r\n- **equipment** (명) 장비"
+    "domain": "생성·추가"
   },
   {
     "id": "error",
     "word": "error",
-    "tier": "core",
-    "basic": true,
+    "level": 2,
     "pos": [
       "명사"
     ],
@@ -3345,60 +1779,12 @@
       "fault",
       "bug"
     ],
-    "domain": "오류·실패·위험",
-    "freq": 49,
-    "sources": [
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "selfcheck-d2-kor",
-      "lesson-d3",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d4",
-        "q": 21,
-        "en": "Which error can still reach your code and needs a check you write yourself?",
-        "surface": "error",
-        "pos": "명사",
-        "sense": "오류, 에러",
-        "ko": "다음 중 여전히 코드까지 도달할 수 있어 직접 작성한 검사가 필요한 오류는 무엇입니까?"
-      },
-      {
-        "src": "lesson-d2",
-        "q": 10,
-        "en": "A team is reviewing an MCP tool's error contract before launch.",
-        "surface": "error",
-        "pos": "명사",
-        "sense": "오류, 에러",
-        "ko": "출시 전 한 팀이 MCP 도구의 오류 계약을 검토합니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 17,
-        "en": "A document-search subagent hits an authentication error against a knowledge base and simply returns the string 'search unavailable' to the coordinator.",
-        "surface": "error",
-        "pos": "명사",
-        "sense": "오류, 에러",
-        "ko": "문서 검색 서브에이전트가 지식 베이스에서 인증 오류를 만나, 코디네이터에게 'search unavailable'이라는 문자열만 돌려줍니다."
-      },
-      {
-        "src": "mock04",
-        "q": 27,
-        "en": "Logs show the document-analysis subagent attempting to invoke the web-search subagent directly to fill gaps, producing routing errors and duplicated searches.",
-        "surface": "errors",
-        "pos": "명사",
-        "sense": "오류, 에러",
-        "ko": "로그를 보면 문서 분석 서브에이전트가 빈 정보를 채우려고 웹 검색 서브에이전트를 직접 호출하려 하고, 그 결과 라우팅 오류와 중복 검색이 발생합니다."
-      }
-    ]
+    "domain": "오류·실패·위험"
   },
   {
     "id": "error-handling",
     "word": "error-handling",
-    "tier": "core",
+    "level": 5,
     "pos": [
       "명사구"
     ],
@@ -3417,48 +1803,12 @@
     "synonyms": [
       "exception handling"
     ],
-    "domain": "오류·실패·위험",
-    "freq": 3,
-    "sources": [
-      "mock04",
-      "lesson-d3",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 1,
-        "en": "A developer notices that in Monday's session Claude followed the package's error-handling convention, but in Tuesday's session on the same repo it ignored it.",
-        "surface": "error-handling",
-        "pos": "명사구",
-        "sense": "오류 처리 (방식)",
-        "ko": "월요일 세션에서는 Claude가 패키지의 오류 처리 규칙을 따랐는데, 같은 저장소의 화요일 세션에서는 무시했다는 것을 개발자가 알아챘습니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 27,
-        "en": "Hours later, asked about OrderService again, the agent describes it as 'typically extending a standard base controller with default error handling,' ignoring its earlier finding.",
-        "surface": "error handling",
-        "pos": "명사구",
-        "sense": "오류 처리 (방식)",
-        "ko": "몇 시간 뒤 다시 묻자, 에이전트는 OrderService가 '보통 기본 에러 처리를 갖춘 표준 base controller를 상속한다'고 설명하며 이전 발견을 무시합니다."
-      },
-      {
-        "src": "mock04",
-        "q": 11,
-        "en": "Your team standardized naming and error-handling conventions by adding them to `~/.claude/CLAUDE.md` on the tech lead's machine.",
-        "surface": "error-handling",
-        "pos": "명사구",
-        "sense": "오류 처리 (방식)",
-        "ko": "팀은 이름 짓기와 오류 처리 컨벤션을 테크 리드 머신의 `~/.claude/CLAUDE.md` 에 추가해 표준화했습니다."
-      }
-    ],
-    "note": "오류가 났을 때 **어떻게 잡고, 알리고, 복구할지 정한 처리 방식**입니다. 명사 앞에서는 *error-handling conventions* 처럼 하이픈으로 묶어 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> Your team standardized naming and **error-handling** conventions by adding them to `~/.claude/CLAUDE.md` on the tech lead's machine.\r\n> 팀은 이름 짓기와 **오류 처리** 컨벤션을 테크 리드 머신의 `~/.claude/CLAUDE.md` 에 추가해 표준화했다.\r\n\r\n## 함께 쓰는 표현\r\n- **error-handling conventions** : 오류 처리 규칙\r\n- **error-handling logic / path** : 오류 처리 로직·경로\r\n\r\n## 시험 포인트\r\n`~/.claude/CLAUDE.md` 는 **그 사람 머신에만** 적용되는 사용자 수준 설정이라 저장소를 클론한 팀원에게 전달되지 않습니다. 팀 컨벤션은 저장소의 **프로젝트 `CLAUDE.md`** 에 넣어 커밋해야 합니다."
+    "domain": "오류·실패·위험"
   },
   {
     "id": "escalate",
     "word": "escalate",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "동사"
     ],
@@ -3490,59 +1840,12 @@
       "hand off",
       "elevate"
     ],
-    "domain": "이동·전달",
-    "freq": 24,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d5",
-        "q": 11,
-        "en": "In testing, a furious customer with a routine 30-day size exchange gets escalated.",
-        "surface": "escalated",
-        "pos": "동사",
-        "sense": "(상위 담당자에게) 넘기다",
-        "ko": "테스트에서 일반적인 30일 사이즈 교환을 요청한 몹시 화난 고객은 이관됐습니다."
-      },
-      {
-        "src": "mock04",
-        "q": 2,
-        "en": "What should the agent do at the moment of escalation to fix this?",
-        "surface": "escalation",
-        "pos": "명사",
-        "sense": "(명사형) 상위 이관, 단계 상향",
-        "ko": "이 문제를 해결하려면 에이전트가 에스컬레이션 시점에 무엇을 해야 합니까?"
-      },
-      {
-        "src": "lesson-d2",
-        "q": 11,
-        "en": "Use `errorCategory: \"business\"` with `isRetryable: false`; the refusal is a policy rule on the request, so the caller should escalate it instead of resubmitting",
-        "surface": "escalate",
-        "pos": "동사",
-        "sense": "(상위 담당자에게) 넘기다",
-        "ko": "`errorCategory: \"business\"`, `isRetryable: false`. 요청에 대한 정책 규칙 때문에 거절된 것이니 다시 보내지 말고 상위로 올려야 한다"
-      },
-      {
-        "src": "lesson-d1",
-        "q": 28,
-        "en": "Remove the hook and add the escalation instruction to the system prompt, because the agent clearly ignores the hook.",
-        "surface": "escalation",
-        "pos": "명사",
-        "sense": "(명사형) 상위 이관, 단계 상향",
-        "ko": "에이전트가 훅을 무시하는 게 분명하니 훅을 없애고 시스템 프롬프트에 에스컬레이션 지시를 추가한다"
-      }
-    ],
-    "note": "1. **(처리 단계를) 올리다, 상위 담당자에게 넘기다** — 지금 단계에서 해결할 수 없는 일을 권한·판단력이 있는 쪽에 넘긴다\r\n2. **(상황이) 악화되다, 확대되다** — 갈등·비용 등이 점점 커진다\r\n\r\n## 문제 속 쓰임\r\n> Halt analysis and **escalate** to the coordinator immediately.\r\n> 분석을 멈추고 즉시 코디네이터에게 **넘긴다**.\r\n\r\n## 함께 쓰는 표현\r\n- **escalate to** ~ : ~에게 넘기다 (to 뒤에 받는 쪽)\r\n- **escalation path** : 문제를 넘기는 경로·절차\r\n- **human escalation** : 사람 상담원에게 넘기기\r\n\r\n## 시험 포인트\r\n에이전트 문제에서 *escalate* 는 대부분 **\"스스로 처리하지 말고 사람·코디네이터에게 넘긴다\"** 는 뜻입니다. 언제 넘기고 언제 직접 처리해야 하는지가 정답을 가르는 기준이 됩니다."
+    "domain": "이동·전달"
   },
   {
     "id": "escape",
     "word": "escape",
-    "tier": "extra",
+    "level": 3,
     "pos": [
       "동사",
       "명사"
@@ -3573,15 +1876,12 @@
       "flee",
       "evade"
     ],
-    "domain": "일반",
-    "freq": 0,
-    "sources": [],
-    "contexts": []
+    "domain": "일반"
   },
   {
     "id": "essentially",
     "word": "essentially",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "부사"
     ],
@@ -3607,27 +1907,12 @@
       "virtually",
       "fundamentally"
     ],
-    "domain": "정도·양·크기",
-    "freq": 1,
-    "sources": [
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d4",
-        "q": 2,
-        "en": "After a week of testing, the false positive rate is essentially unchanged.",
-        "surface": "essentially",
-        "pos": "부사",
-        "sense": "사실상, 거의",
-        "ko": "일주일 테스트 후에도 오탐률은 거의 그대로입니다."
-      }
-    ]
+    "domain": "정도·양·크기"
   },
   {
     "id": "establish",
     "word": "establish",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -3660,49 +1945,6 @@
       "set up"
     ],
     "domain": "확인·검증",
-    "freq": 4,
-    "sources": [
-      "mock04",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 5,
-        "en": "Instruct each subagent to call get_customer itself at the start so that it independently establishes and verifies the account before it does any order work.",
-        "surface": "establishes",
-        "pos": "동사",
-        "sense": "(사실을) 확정하다, 확인하다",
-        "ko": "각 서브에이전트가 시작할 때 직접 `get_customer` 를 호출하게 해, 주문 작업을 하기 전에 스스로 계정을 확인하고 검증하게 한다"
-      },
-      {
-        "src": "mock04",
-        "q": 38,
-        "en": "Logs show the subagent re-runs Grep to rediscover the entrypoint the coordinator had already located two turns earlier, and reaches a conclusion that contradicts the coordinator's established finding.",
-        "surface": "established",
-        "pos": "형용사",
-        "sense": "(established) 확립된, 확정된",
-        "ko": "로그를 보면 서브에이전트가 코디네이터가 두 턴 전에 이미 찾아 둔 진입점을 다시 찾으려고 Grep을 재실행하고, 코디네이터가 확정한 결과와 모순되는 결론에 도달합니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 21,
-        "en": "Condense what phase 1 established into a short summary and put it at the top of each phase-2 subagent's prompt",
-        "surface": "established",
-        "pos": "동사",
-        "sense": "(사실을) 확정하다, 확인하다",
-        "ko": "1단계에서 확정한 내용을 짧게 요약해, 각 2단계 서브에이전트 프롬프트 맨 앞에 넣는다"
-      },
-      {
-        "src": "lesson-d5",
-        "q": 41,
-        "en": "Put findings that sources consistently support in an established section, and single-source or disputed ones in a contested section. Have the agent extract word-for-word quotes first, so each source's own wording and caveats carry through.",
-        "surface": "established",
-        "pos": "형용사",
-        "sense": "(established) 확립된, 확정된",
-        "ko": "출처들이 일관되게 뒷받침하는 발견은 확립된(established) 섹션에, 단일 출처이거나 논쟁 중인 발견은 논쟁(contested) 섹션에 둔다. 에이전트가 먼저 원문 그대로의 인용을 뽑게 해, 각 출처의 표현과 단서가 그대로 이어지게 한다."
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -3725,13 +1967,12 @@
         "stability",
         "state"
       ]
-    },
-    "note": "1. **(사실을) 확정하다, 확인해 밝히다** — 조사·검증을 거쳐 \"이것이 맞다\"고 정하는 것. *established finding* 은 \"확정된 결과\"\r\n2. **세우다, 수립하다** — 규칙·기준·연결을 새로 만들다 (*establish a connection*)\r\n\r\n## 문제 속 쓰임\r\n> ...reaches a conclusion that contradicts the coordinator's **established** finding.\r\n> 코디네이터가 **확정한** 결과와 모순되는 결론에 도달한다.\r\n> ...so that it independently **establishes** and verifies the account before it does any order work.\r\n> 주문 작업을 하기 전에 스스로 계정을 **확인하고** 검증하게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **establish a baseline** : 기준선을 정하다\r\n- **establish a connection** : 연결을 맺다\r\n- **well-established** : 확고히 자리 잡은\r\n\r\n## 시험 포인트\r\n코디네이터가 이미 **확정한** 사실(확인된 계정 등)은 서브에이전트에게 프롬프트로 넘겨줘야 합니다. 서브에이전트마다 **스스로 다시 확인하게** 하는 보기는 중복 호출과 엇갈린 결과를 낳아 오답입니다."
+    }
   },
   {
     "id": "estimate",
     "word": "estimate",
-    "tier": "extra",
+    "level": 4,
     "pos": [
       "명사",
       "동사"
@@ -3759,15 +2000,12 @@
       "approximate",
       "assess"
     ],
-    "domain": "비교·평가·판단",
-    "freq": 0,
-    "sources": [],
-    "contexts": []
+    "domain": "비교·평가·판단"
   },
   {
     "id": "evaluate",
     "word": "evaluate",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -3801,47 +2039,12 @@
       "judge",
       "appraise"
     ],
-    "domain": "비교·평가·판단",
-    "freq": 3,
-    "sources": [
-      "lesson-d3",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 27,
-        "en": "Ask Claude to evaluate the test results and fix whichever failure appears more severe first, relying on its internal judgment of the impact on report correctness without stating the exact currency mismatch or missing extension details.",
-        "surface": "evaluate",
-        "pos": "동사",
-        "sense": "평가하다",
-        "ko": "정확한 통화 불일치나 누락된 확장자 내용을 적지 않고, 리포트 정확성에 미치는 영향을 Claude가 판단해 더 심각해 보이는 실패부터 고치게 한다"
-      },
-      {
-        "src": "lesson-d5",
-        "q": 29,
-        "en": "A team has one labeled evaluation set covering three document types and has computed only an overall accuracy.",
-        "surface": "evaluation",
-        "pos": "명사",
-        "sense": "(evaluation) 평가, 평가 세트",
-        "ko": "팀에 문서 유형 세 가지를 포함한 라벨된 평가 세트가 하나 있고, 지금까지 전체 정확도만 계산했습니다."
-      },
-      {
-        "src": "lesson-d4",
-        "q": 2,
-        "en": "Adding any qualifier to a system prompt increases output length, which expands the set of tokens the evaluator inspects and independently raises the chance that a finding is miscategorized as high severity.",
-        "surface": "evaluator",
-        "pos": "명사",
-        "sense": "(evaluator) 평가자, 평가기",
-        "ko": "시스템 프롬프트에 수식어를 넣으면 출력이 길어지고, 평가자가 검사할 토큰이 늘어나 발견이 높은 심각도로 잘못 분류될 가능성이 독립적으로 커진다."
-      }
-    ]
+    "domain": "비교·평가·판단"
   },
   {
     "id": "evaluator-optimizer",
     "word": "evaluator-optimizer",
-    "tier": "extra",
+    "level": 6,
     "pos": [
       "명사"
     ],
@@ -3857,16 +2060,12 @@
     "forms": [
       "evaluator optimizer"
     ],
-    "domain": "시스템·도구·기술",
-    "freq": 0,
-    "sources": [],
-    "contexts": []
+    "domain": "시스템·도구·기술"
   },
   {
     "id": "even",
     "word": "even",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "부사",
       "형용사"
@@ -3895,60 +2094,12 @@
     "forms": [
       "evenly"
     ],
-    "domain": "논리·관계·연결어",
-    "freq": 14,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 12,
-        "en": "A team is building a \"doc-reviewer\" subagent that should be able to read and comment on documentation but must never be able to modify files, even accidentally.",
-        "surface": "even",
-        "pos": "부사",
-        "sense": "~조차, ~라도",
-        "ko": "팀이 문서를 읽고 의견을 달 수는 있지만 실수로라도 파일을 수정해서는 절대 안 되는 \"doc-reviewer\" 서브에이전트를 만들고 있습니다."
-      },
-      {
-        "src": "lesson-d2",
-        "q": 17,
-        "en": "It has started pulling arbitrary web pages that are not documents, even though its prompt says to load only documents.",
-        "surface": "even",
-        "pos": "부사",
-        "sense": "(even though/if) ~인데도, ~라 하더라도",
-        "ko": "프롬프트에 문서만 불러오라고 했는데도, 문서가 아닌 임의의 웹 페이지를 가져오기 시작했습니다."
-      },
-      {
-        "src": "sample01",
-        "q": 12,
-        "en": "An engineer wants to prevent Claude Code from running `rm -rf` or `git push --force` commands under any circumstances, even if asked.",
-        "surface": "even",
-        "pos": "부사",
-        "sense": "(even though/if) ~인데도, ~라 하더라도",
-        "ko": "엔지니어가 Claude Code가 어떤 상황에서도, 요청을 받더라도 `rm -rf` 나 `git push --force` 를 실행하지 못하게 하려고 합니다."
-      },
-      {
-        "src": "lesson-d4",
-        "q": 20,
-        "en": "An audit later finds several instances where deposits were mislabeled as withdrawals, even though every amount and transaction_type field is present and passes schema validation.",
-        "surface": "even",
-        "pos": "부사",
-        "sense": "(even though/if) ~인데도, ~라 하더라도",
-        "ko": "나중에 감사에서 입금이 출금으로 잘못 라벨링된 사례가 여럿 발견됐지만, 모든 amount와 transaction_type 필드는 존재하고 스키마 검증도 통과했습니다."
-      }
-    ]
+    "domain": "논리·관계·연결어"
   },
   {
     "id": "event",
     "word": "event",
-    "tier": "core",
+    "level": 2,
     "pos": [
       "명사"
     ],
@@ -3972,37 +2123,12 @@
       "occurrence",
       "incident"
     ],
-    "domain": "시스템·도구·기술",
-    "freq": 2,
-    "sources": [
-      "mock04",
-      "lesson-d1"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 44,
-        "en": "An engineer asks the tool to determine which of 30 services emits a particular Kafka event.",
-        "surface": "event",
-        "pos": "명사",
-        "sense": "(시스템) 이벤트, 발생한 일",
-        "ko": "한 엔지니어가 도구에게 30개 서비스 중 어느 서비스가 특정 Kafka 이벤트를 발행하는지 알아내 달라고 요청합니다."
-      },
-      {
-        "src": "lesson-d1",
-        "q": 22,
-        "en": "Hooks that match the same event run in parallel, in no guaranteed order, so Hook B cannot rely on Hook A having run. Each gate has to read the state it needs on its own",
-        "surface": "event",
-        "pos": "명사",
-        "sense": "(시스템) 이벤트, 발생한 일",
-        "ko": "같은 이벤트에 매칭된 훅은 순서 보장 없이 병렬로 실행되므로, 훅 B는 훅 A가 이미 실행됐다고 기대할 수 없다. 각 게이트는 필요한 상태를 스스로 읽어야 한다"
-      }
-    ]
+    "domain": "시스템·도구·기술"
   },
   {
     "id": "eventually",
     "word": "eventually",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "부사"
     ],
@@ -4023,57 +2149,12 @@
       "ultimately",
       "in the end"
     ],
-    "domain": "시간·순서·빈도",
-    "freq": 4,
-    "sources": [
-      "mock04",
-      "lesson-d1"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 8,
-        "en": "Logs show the agent then retries the same $640 refund three times before eventually giving a confusing reply.",
-        "surface": "eventually",
-        "pos": "부사",
-        "sense": "결국, 마침내",
-        "ko": "로그를 보면 에이전트는 같은 $640 환불을 세 번 재시도한 끝에 결국 혼란스러운 답변을 내놓습니다."
-      },
-      {
-        "src": "lesson-d1",
-        "q": 24,
-        "en": "Increase the timeout on the PreToolUse hook to re-check the flag periodically; the hook will eventually notice the review was incorrect and block the refund.",
-        "surface": "eventually",
-        "pos": "부사",
-        "sense": "결국, 마침내",
-        "ko": "PreToolUse 훅의 timeout을 늘려 플래그를 주기적으로 재확인하게 한다. 훅이 결국 검토가 잘못됐음을 알아차리고 환불을 막을 것이다"
-      },
-      {
-        "src": "mock04",
-        "q": 8,
-        "en": "Have the agent retry with exponential backoff, since repeated attempts eventually succeed for most declined refunds in the logs.",
-        "surface": "eventually",
-        "pos": "부사",
-        "sense": "결국, 마침내",
-        "ko": "로그상 거절된 환불 대부분이 반복 시도하면 결국 성공하므로, 에이전트가 지수 백오프로 재시도하게 한다"
-      },
-      {
-        "src": "mock04",
-        "q": 58,
-        "en": "Raise the retry ceiling from five to ten, since with enough attempts the model will eventually recover the cut-off tax ID from the scanned page.",
-        "surface": "eventually",
-        "pos": "부사",
-        "sense": "결국, 마침내",
-        "ko": "충분히 시도하면 모델이 결국 스캔 페이지에서 잘린 세금 ID를 복구할 것이므로, 재시도 상한을 5회에서 10회로 올린다"
-      }
-    ],
-    "note": "여러 일을 거치며 시간이 걸린 **끝에 결국, 마침내** 그렇게 된다는 뜻입니다. *finally* 보다 \"오래 걸려서 끝내\" 느낌이 강합니다.\r\n\r\n## 문제 속 쓰임\r\n> Logs show the agent then retries the same $640 refund three times before **eventually** giving a confusing reply.\r\n> 로그를 보면 에이전트는 같은 $640 환불을 세 번 재시도한 끝에 **결국** 혼란스러운 답변을 내놓는다.\r\n\r\n## 함께 쓰는 표현\r\n- **eventually succeed / fail** : 결국 성공하다 / 실패하다\r\n- **eventual** (형) 최종적인, 결국 ~하게 되는\r\n\r\n## 시험 포인트\r\n\"계속 시도하면 **결국** 성공할 것\"이라는 근거로 재시도를 늘리는 보기는 오답이 되기 쉽습니다. 권한 한도 초과나 원문에 없는 값처럼 **다시 해도 결과가 같은 오류**는 재시도하지 말고 원인을 알려야 합니다."
+    "domain": "시간·순서·빈도"
   },
   {
     "id": "ever",
     "word": "ever",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "부사"
     ],
@@ -4097,59 +2178,12 @@
     "synonyms": [
       "at any time"
     ],
-    "domain": "시간·순서·빈도",
-    "freq": 9,
-    "sources": [
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 30,
-        "en": "The first run hangs until the job times out, with no output ever written to the log.",
-        "surface": "ever",
-        "pos": "부사",
-        "sense": "(부정문에서) 한 번도, 결코",
-        "ko": "첫 실행이 로그에 아무것도 쓰지 않은 채 작업 타임아웃까지 멈춰 있었습니다."
-      },
-      {
-        "src": "lesson-d1",
-        "q": 17,
-        "en": "The per-call prompt is merged into the coordinator's own system prompt instead of the subagent's, so the subagent only ever sees AgentDefinition.prompt",
-        "surface": "ever",
-        "pos": "부사",
-        "sense": "(only ever) 오로지 늘",
-        "ko": "호출별 프롬프트는 서브에이전트가 아니라 코디네이터 자신의 시스템 프롬프트에 합쳐지므로, 서브에이전트는 `AgentDefinition.prompt` 만 본다"
-      },
-      {
-        "src": "lesson-d2",
-        "q": 21,
-        "en": "Every teammate has their own GitHub personal access token, and the config must be checked into the repo without ever committing a real secret.",
-        "surface": "ever",
-        "pos": "부사",
-        "sense": "(부정문에서) 한 번도, 결코",
-        "ko": "팀원마다 자기 GitHub 개인 액세스 토큰이 있고, 설정은 저장소에 체크인하되 실제 비밀값은 절대 커밋하면 안 됩니다."
-      },
-      {
-        "src": "mock04",
-        "q": 37,
-        "en": "Production runs show the final plan omits an entire 'dunning' subsystem and a currency-conversion layer that no subagent was ever assigned.",
-        "surface": "ever",
-        "pos": "부사",
-        "sense": "(부정문에서) 한 번도, 결코",
-        "ko": "운영 실행 결과를 보면 최종 계획에서, 어떤 서브에이전트에도 배정되지 않았던 'dunning'(연체 독촉) 하위 시스템 전체와 통화 변환 계층이 빠져 있습니다."
-      }
-    ]
+    "domain": "시간·순서·빈도"
   },
   {
     "id": "everything",
     "word": "everything",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "대명사"
     ],
@@ -4165,57 +2199,12 @@
     "synonyms": [
       "all"
     ],
-    "domain": "정도·양·크기",
-    "freq": 6,
-    "sources": [
-      "mock04",
-      "lesson-d1",
-      "lesson-d3",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 11,
-        "en": "Both strategies depend on everything that analysis found.",
-        "surface": "everything",
-        "pos": "대명사",
-        "sense": "모든 것, 전부",
-        "ko": "두 전략 모두 그 분석이 찾아낸 모든 것에 의존합니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 41,
-        "en": "A stakeholder reading your pipeline's final report says it presents everything with the same certainty.",
-        "surface": "everything",
-        "pos": "대명사",
-        "sense": "모든 것, 전부",
-        "ko": "파이프라인 최종 보고서를 읽은 이해관계자가 모든 내용이 같은 확신으로 쓰였다고 지적합니다."
-      },
-      {
-        "src": "mock04",
-        "q": 11,
-        "en": "Everything works for the lead, but three newly onboarded engineers who cloned the repo report that Claude Code ignores the conventions entirely, even though `git status` shows a clean checkout.",
-        "surface": "Everything",
-        "pos": "대명사",
-        "sense": "모든 것, 전부",
-        "ko": "리드에게는 모든 것이 잘 동작하지만, 저장소를 클론한 신규 엔지니어 세 명은 `git status` 가 깨끗한 체크아웃 상태를 보여 주는데도 Claude Code가 컨벤션을 완전히 무시한다고 보고합니다."
-      },
-      {
-        "src": "lesson-d3",
-        "q": 6,
-        "en": "The architect wants to reorganize this into focused, maintainable files while keeping everything loaded for every session.",
-        "surface": "everything",
-        "pos": "대명사",
-        "sense": "모든 것, 전부",
-        "ko": "아키텍트는 이를 주제별로 관리하기 쉬운 파일로 재구성하되, 모든 내용이 매 세션 로드되는 상태는 유지하려 합니다."
-      }
-    ]
+    "domain": "정도·양·크기"
   },
   {
     "id": "evidence",
     "word": "evidence",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "명사"
     ],
@@ -4240,57 +2229,12 @@
       "proof",
       "grounds"
     ],
-    "domain": "데이터·정보·문서",
-    "freq": 5,
-    "sources": [
-      "mock04",
-      "lesson-d1",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 37,
-        "en": "An orchestrator agent that plans each next task from what the previous task found and revises the plan as evidence arrives",
-        "surface": "evidence",
-        "pos": "명사",
-        "sense": "근거, 증거",
-        "ko": "직전 작업이 찾은 내용으로 각 다음 작업을 계획하고, 증거가 들어올 때마다 계획을 수정하는 오케스트레이터 에이전트"
-      },
-      {
-        "src": "mock04",
-        "q": 26,
-        "en": "Fork the session at the end of the research phase into two branches, one per report variant, sharing the evidence",
-        "surface": "evidence",
-        "pos": "명사",
-        "sense": "근거, 증거",
-        "ko": "조사 단계가 끝난 시점에서 세션을 보고서 종류별로 하나씩 두 갈래로 포크해, 두 갈래가 증거를 공유하게 한다"
-      },
-      {
-        "src": "lesson-d5",
-        "q": 41,
-        "en": "Keep the blended narrative and add a bibliography of every source at the end, so readers can check the strength of the evidence themselves",
-        "surface": "evidence",
-        "pos": "명사",
-        "sense": "근거, 증거",
-        "ko": "섞인 서술은 그대로 두고 끝에 모든 출처의 참고문헌을 붙여, 독자가 근거의 강도를 직접 확인하게 한다"
-      },
-      {
-        "src": "mock04",
-        "q": 26,
-        "en": "Increase the context window so that both reports fit within one single long generation pass over the evidence",
-        "surface": "evidence",
-        "pos": "명사",
-        "sense": "근거, 증거",
-        "ko": "두 보고서가 증거 전체를 한 번 훑는 긴 생성 패스 하나에 함께 들어가도록 컨텍스트 창을 늘린다"
-      }
-    ],
-    "note": "주장이나 판단을 **뒷받침하는 자료**입니다. 셀 수 없는 명사라 *an evidence*, *evidences* 로 쓰지 않고, 개수를 말할 때는 *a piece of evidence* 라고 합니다.\r\n\r\n## 문제 속 쓰임\r\n> Logs show it escalates straightforward cases (standard damage replacements with photo **evidence**).\r\n> 로그를 보면 에이전트가 간단한 케이스(사진 **증거**가 있는 표준 파손 교체)를 에스컬레이션한다.\r\n\r\n## 함께 쓰는 표현\r\n- **photo evidence** : 사진 증거\r\n- **supporting evidence** : 뒷받침하는 근거\r\n- **evidence-based** : 근거에 기반한\r\n\r\n## 시험 포인트\r\n증거가 갖춰진 **표준 케이스는 에이전트가 직접 처리**할 일이고, 정책 예외처럼 사람의 판단이 필요한 경우가 에스컬레이션 대상입니다. 이 경계를 바로잡으려면 **명확한 기준 + few-shot 예시**를 주는 보기가 정답입니다."
+    "domain": "데이터·정보·문서"
   },
   {
     "id": "exact",
     "word": "exact",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "형용사"
     ],
@@ -4319,62 +2263,12 @@
       "precise",
       "accurate"
     ],
-    "domain": "정확·품질·신뢰",
-    "freq": 31,
-    "sources": [
-      "sample01",
-      "mock04",
-      "mock04-kor",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d5",
-        "q": 4,
-        "en": "Which design keeps those values exact on every turn?",
-        "surface": "exact",
-        "pos": "형용사",
-        "sense": "정확한, 꼭 맞는",
-        "ko": "어떤 설계가 이 값들을 매 턴 정확하게 유지합니까?"
-      },
-      {
-        "src": "lesson-d1",
-        "q": 3,
-        "en": "A junior engineer proposes capping an autonomous research agent at exactly 5 tool-call iterations and treating that cap as the loop's primary stopping mechanism, regardless of stop_reason.",
-        "surface": "exactly",
-        "pos": "부사",
-        "sense": "(exactly) 정확히, 꼭",
-        "ko": "주니어 엔지니어가 자율 리서치 에이전트의 도구 호출 반복을 정확히 5회로 제한하고, stop_reason과 상관없이 그 상한을 루프의 주된 종료 장치로 쓰자고 제안합니다."
-      },
-      {
-        "src": "mock04",
-        "q": 17,
-        "en": "Provide 2-3 concrete input-to-output examples showing the exact validation style and library you want",
-        "surface": "exact",
-        "pos": "형용사",
-        "sense": "바로 그",
-        "ko": "원하는 검증 스타일과 라이브러리를 정확히 보여 주는 구체적인 입력-출력 예시를 2-3개 제공한다"
-      },
-      {
-        "src": "lesson-d2",
-        "q": 29,
-        "en": "Claude issues an Edit call with old_string set to exactly that log statement and the call fails.",
-        "surface": "exactly",
-        "pos": "부사",
-        "sense": "(exactly) 정확히, 꼭",
-        "ko": "Claude가 old_string을 정확히 그 로그 문으로 지정해 Edit를 호출했더니 실패했습니다."
-      }
-    ],
-    "note": "조금도 어긋나지 않고 **정확한, 바로 그** ~ 이라는 뜻입니다. 부사 *exactly* 는 \"정확히\".\r\n\r\n## 문제 속 쓰임\r\n> Provide 2-3 concrete input-to-output examples showing the **exact** validation style and library you want\r\n> 원하는 검증 스타일과 라이브러리를 **정확히** 보여 주는 구체적인 입력-출력 예시를 2-3개 제공한다\r\n\r\n## 함께 쓰는 표현\r\n- **exact match** : 완전 일치\r\n- **the exact schema** : 바로 그 스키마 (정확히 그대로)\r\n- **exactly** (부) 정확히"
+    "domain": "정확·품질·신뢰"
   },
   {
     "id": "examine",
     "word": "examine",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "동사"
     ],
@@ -4404,43 +2298,16 @@
       "scrutinize"
     ],
     "domain": "확인·검증",
-    "freq": 3,
-    "sources": [
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d5",
-        "q": 22,
-        "en": "When asked about a class it examined in detail early on, it now describes what such a class typically looks like, and its two latest answers about that component disagree.",
-        "surface": "examined",
-        "pos": "동사",
-        "sense": "자세히 살펴보다, 검토하다",
-        "ko": "초반에 자세히 살펴본 클래스에 대해 물으면, 이제는 그런 클래스가 보통 어떻게 생겼는지를 설명하고, 같은 컴포넌트에 대한 최근 두 답이 서로 어긋납니다."
-      },
-      {
-        "src": "lesson-d4",
-        "q": 38,
-        "en": "A separate cross-file integration pass that examines both files together and produces one recommendation based on the actual data flow",
-        "surface": "examines",
-        "pos": "동사",
-        "sense": "자세히 살펴보다, 검토하다",
-        "ko": "두 파일을 함께 살펴보고 실제 데이터 흐름에 근거해 하나의 수정안을 내는 별도의 파일 간 통합 패스"
-      }
-    ],
     "memory": {
       "origin": "라틴어 examinare (저울로 달아 보다)",
       "story": "저울 바늘을 들여다보며 무게를 꼼꼼히 잰다 → 자세히 살펴보다",
       "hook": "이그재민 → '이거 재 보자' 하며 꼼꼼히 살핌"
-    },
-    "note": "원인이나 상태를 알아내려고 **하나하나 자세히 들여다보는** 것입니다. *look at* 보다 꼼꼼하고 격식 있는 말입니다.\r\n\r\n## 문제 속 쓰임\r\n> What should you **examine** first to address this issue?\r\n> 이 문제를 해결하려면 무엇을 가장 먼저 **살펴봐야** 하는가?\r\n\r\n## 함께 쓰는 표현\r\n- **examine closely** : 자세히 살펴보다\r\n- **examination** (명) 검사, 시험\r\n\r\n## 비슷한 말\r\n- **inspect** — 결함이 없는지 점검하다\r\n- **investigate** — 원인을 조사하다\r\n\r\n## 시험 포인트\r\n\"무엇을 **먼저** 살펴보나\"는 *가장 근본적이면서 비용이 적은* 진단을 묻습니다. 도구를 잘못 고를 때는 분류기·도구 통합보다 **도구 설명부터** 점검하는 보기가 정답입니다."
+    }
   },
   {
     "id": "example",
     "word": "example",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "명사"
     ],
@@ -4468,60 +2335,12 @@
       "instance",
       "sample"
     ],
-    "domain": "데이터·정보·문서",
-    "freq": 57,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d4",
-        "q": 11,
-        "en": "Which few-shot examples should you add?",
-        "surface": "examples",
-        "pos": "명사",
-        "sense": "예, 예시",
-        "ko": "어떤 퓨샷 예시를 추가해야 할까요?"
-      },
-      {
-        "src": "mock04",
-        "q": 33,
-        "en": "It routes queries to the wrong tool in 31% of cases — for example, sending peer-reviewed-literature queries to search_web.",
-        "surface": "example",
-        "pos": "부사구",
-        "sense": "(for example) 예를 들어",
-        "ko": "이 서브에이전트는 동료 심사 문헌을 찾는 쿼리를 search_web으로 보내는 식으로, 31%의 경우 쿼리를 잘못된 도구로 보냅니다."
-      },
-      {
-        "src": "sample01",
-        "q": 14,
-        "en": "Define explicit named categories with concrete examples of each in the system prompt",
-        "surface": "examples",
-        "pos": "명사",
-        "sense": "예, 예시",
-        "ko": "시스템 프롬프트에 이름이 붙은 명시적 카테고리와 각각의 구체적 예시를 정의한다"
-      },
-      {
-        "src": "lesson-d1",
-        "q": 19,
-        "en": "Make the instruction more emphatic and add few-shot examples that show get_customer being called before process_refund",
-        "surface": "examples",
-        "pos": "명사",
-        "sense": "예, 예시",
-        "ko": "지시를 더 강하게 쓰고, `process_refund` 전에 `get_customer` 를 호출하는 퓨샷 예시를 추가한다"
-      }
-    ]
+    "domain": "데이터·정보·문서"
   },
   {
     "id": "exceed",
     "word": "exceed",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -4549,58 +2368,12 @@
       "go over",
       "top"
     ],
-    "domain": "정도·양·크기",
-    "freq": 4,
-    "sources": [
-      "sample01",
-      "lesson-d1",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d5",
-        "q": 31,
-        "en": "All other conditions for the weight field exceed 95%.",
-        "surface": "exceed",
-        "pos": "동사",
-        "sense": "(한도를) 넘다, 초과하다",
-        "ko": "weight 필드의 다른 모든 조건에서는 95%를 넘습니다."
-      },
-      {
-        "src": "lesson-d1",
-        "q": 26,
-        "en": "Register a PreToolUse hook on the refund tool whose callback checks the amount and returns a deny decision when it exceeds $500.",
-        "surface": "exceeds",
-        "pos": "동사",
-        "sense": "(한도를) 넘다, 초과하다",
-        "ko": "환불 도구에 PreToolUse 훅을 등록하고, 콜백이 금액을 검사해 500달러를 넘으면 deny 결정을 돌려주게 한다"
-      },
-      {
-        "src": "sample01",
-        "q": 6,
-        "en": "Context window saturation — the cumulative message history exceeds the effective attention range; implement a summarization/compaction strategy",
-        "surface": "exceeds",
-        "pos": "동사",
-        "sense": "(한도를) 넘다, 초과하다",
-        "ko": "컨텍스트 윈도 포화 — 누적 대화 기록이 실질적인 주의 범위를 넘었다. 요약/압축(compaction) 전략을 구현한다"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 30,
-        "en": "Split the 150,000 invoices across at least 2 batch submissions, because a single Message Batch is capped at 100,000 requests or 256 MB total payload, whichever comes first. (More batches may be needed if the total payload exceeds 256 MB.)",
-        "surface": "exceeds",
-        "pos": "동사",
-        "sense": "(한도를) 넘다, 초과하다",
-        "ko": "150,000건을 최소 2개 배치로 나눠 제출한다. Message Batch 하나는 요청 100,000건 또는 총 페이로드 256 MB 중 먼저 닿는 쪽까지이기 때문이다. (총 페이로드가 256 MB를 넘으면 배치가 더 필요할 수 있다.)"
-      }
-    ],
-    "note": "정해진 한도·기준을 **넘어서는** 것입니다. 수치를 임계값(threshold)·한도(limit)와 비교하는 문장에 자주 나옵니다.\r\n\r\n## 문제 속 쓰임\r\n> Implement sentiment analysis to detect customer frustration and escalate when negative sentiment **exceeds** a threshold.\r\n> 감정 분석으로 고객 불만을 감지하고, 부정 감정이 임계값을 **넘으면** 에스컬레이션한다.\r\n\r\n## 함께 쓰는 표현\r\n- **exceed a threshold / limit** : 임계값·한도를 넘다\r\n- **exceed expectations** : 기대를 뛰어넘다\r\n- **excess** (명) 초과분 · **excessive** (형) 지나친\r\n\r\n## 반대말\r\n- **fall below** — (기준) 아래로 떨어지다\r\n\r\n## 시험 포인트\r\n\"점수가 임계값을 넘으면 사람에게 넘긴다\"는 보기는 그 점수가 **실제 판단 기준과 맞는지** 따져 보세요. 감정 점수는 불만 정도만 보여 줄 뿐 케이스의 복잡성·정책 예외 여부와는 무관해 오답입니다."
+    "domain": "정도·양·크기"
   },
   {
     "id": "excerpt",
     "word": "excerpt",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "명사",
       "동사"
@@ -4628,39 +2401,6 @@
       "passage"
     ],
     "domain": "데이터·정보·문서",
-    "freq": 5,
-    "sources": [
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d5",
-        "q": 36,
-        "en": "Have each subagent return a list of claims, each paired with a document name or URL and a supporting excerpt",
-        "surface": "excerpt",
-        "pos": "명사",
-        "sense": "발췌(문), 인용 부분",
-        "ko": "각 서브에이전트가 문서명이나 URL, 뒷받침 발췌와 짝지은 주장 목록을 반환한다"
-      },
-      {
-        "src": "lesson-d5",
-        "q": 18,
-        "en": "The subagent's full reasoning trace, raw tool output, log excerpts, and a summary of its final message",
-        "surface": "excerpts",
-        "pos": "명사",
-        "sense": "발췌(문), 인용 부분",
-        "ko": "서브에이전트의 전체 추론 과정, 원본 도구 출력, 로그 발췌, 최종 메시지 요약"
-      },
-      {
-        "src": "lesson-d5",
-        "q": 5,
-        "en": "Truncate each lookup response to its first 1,000 characters in code and keep only that leading excerpt in history",
-        "surface": "excerpt",
-        "pos": "명사",
-        "sense": "발췌(문), 인용 부분",
-        "ko": "각 조회 응답을 코드로 앞 1,000자까지 잘라 그 앞부분만 이력에 남긴다"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -4679,7 +2419,7 @@
   {
     "id": "excessive",
     "word": "excessive",
-    "tier": "extra",
+    "level": 5,
     "pos": [
       "형용사"
     ],
@@ -4700,26 +2440,12 @@
       "inordinate",
       "extreme"
     ],
-    "domain": "정도·양·크기",
-    "freq": 0,
-    "sources": [],
-    "contexts": [
-      {
-        "src": "vocab",
-        "q": 0,
-        "en": "...causing excessive coordinator involvement in routine error handling.",
-        "surface": "excessive",
-        "pos": "형용사",
-        "sense": "지나친, 과도한",
-        "ko": "그 결과 일상적인 에러 처리에 코디네이터가 과도하게 개입하게 된다."
-      }
-    ],
-    "note": "적당한 정도를 **넘어 지나치게 많은** 것입니다. *many*, *a lot* 과 달리 \"그래서 문제다\"라는 부정적 평가가 담겨 있습니다.\r\n\r\n## 문제 속 쓰임\r\n> ...causing **excessive** coordinator involvement in routine error handling.\r\n> 그 결과 일상적인 에러 처리에 코디네이터가 **과도하게** 개입하게 된다.\r\n\r\n## 함께 쓰는 표현\r\n- **excessive permissions** : 필요 이상으로 많은 권한\r\n- **excessive token usage** : 지나친 토큰 사용\r\n- **excessively** (부) 지나치게 · **excess** (명) 초과\r\n\r\n## 시험 포인트\r\n상위(코디네이터)의 개입이 **지나치다**는 문제에는, 일시적 오류는 하위 에이전트가 **스스로 복구**하고 해결하지 못한 것만 시도 내역·부분 결과와 함께 올리는 보기가 정답입니다."
+    "domain": "정도·양·크기"
   },
   {
     "id": "exchange",
     "word": "exchange",
-    "tier": "core",
+    "level": 2,
     "pos": [
       "명사",
       "동사"
@@ -4750,27 +2476,12 @@
       "swap",
       "trade"
     ],
-    "domain": "비즈니스·업무",
-    "freq": 1,
-    "sources": [
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d5",
-        "q": 11,
-        "en": "In testing, a furious customer with a routine 30-day size exchange gets escalated.",
-        "surface": "exchange",
-        "pos": "명사",
-        "sense": "(상품) 교환",
-        "ko": "테스트에서 일반적인 30일 사이즈 교환을 요청한 몹시 화난 고객은 이관됐습니다."
-      }
-    ]
+    "domain": "비즈니스·업무"
   },
   {
     "id": "exclude",
     "word": "exclude",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -4799,46 +2510,12 @@
       "leave out",
       "rule out"
     ],
-    "domain": "삭제·제거",
-    "freq": 3,
-    "sources": [
-      "lesson-d2",
-      "lesson-d3"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 4,
-        "en": "Rename analyze_content to match the scope it has left, and rewrite its description so it excludes web content, which the new tool now handles",
-        "surface": "excludes",
-        "pos": "동사",
-        "sense": "제외하다, 빼다",
-        "ko": "`analyze_content`를 남은 범위에 맞는 이름으로 바꾸고, 이제 새 도구가 맡은 웹 콘텐츠는 제외한다고 설명을 다시 쓴다"
-      },
-      {
-        "src": "lesson-d3",
-        "q": 5,
-        "en": "Only `services/billing/CLAUDE.md` loads at launch; the root file is excluded, and the `reports/` file loads once Claude reads a file in that subdirectory.",
-        "surface": "excluded",
-        "pos": "동사",
-        "sense": "제외하다, 빼다",
-        "ko": "`services/billing/CLAUDE.md` 만 시작 시 로드된다. 루트 파일은 제외되고, `reports/` 파일은 Claude가 그 디렉터리의 파일을 읽으면 로드된다"
-      },
-      {
-        "src": "lesson-d2",
-        "q": 5,
-        "en": "Rename the general tool to reflect its remaining scope, and update its description to exclude the case the newer tool now handles.",
-        "surface": "exclude",
-        "pos": "동사",
-        "sense": "제외하다, 빼다",
-        "ko": "범용 도구의 이름을 남은 범위에 맞게 바꾸고, 새 도구가 이제 처리하는 경우를 제외하도록 설명을 갱신한다"
-      }
-    ]
+    "domain": "삭제·제거"
   },
   {
     "id": "exclusively",
     "word": "exclusively",
-    "tier": "extra",
+    "level": 5,
     "pos": [
       "부사"
     ],
@@ -4856,26 +2533,12 @@
       "only",
       "entirely"
     ],
-    "domain": "제어·제한·관리",
-    "freq": 0,
-    "sources": [],
-    "contexts": [
-      {
-        "src": "vocab",
-        "q": 0,
-        "en": "Add instructions directing Claude to focus exclusively on edge cases and error conditions.",
-        "surface": "exclusively",
-        "pos": "부사",
-        "sense": "오로지, ~만",
-        "ko": "엣지 케이스와 에러 조건에 오로지 집중하라는 지침을 추가한다."
-      }
-    ],
-    "note": "다른 것은 모두 빼고 **오직 그것만** 한다는 뜻입니다. *only* 보다 격식 있고, 범위를 강하게 좁히는 느낌입니다.\r\n\r\n## 문제 속 쓰임\r\n> Add instructions directing Claude to focus **exclusively** on edge cases and error conditions.\r\n> 엣지 케이스와 에러 조건에 **오로지** 집중하라는 지침을 추가한다.\r\n\r\n## 함께 쓰는 표현\r\n- **focus exclusively on** ~ : 오로지 ~에만 집중하다\r\n- **exclusively for** ~ : ~ 전용으로\r\n- **mutually exclusive** : 서로 동시에 성립할 수 없는\r\n\r\n## 시험 포인트\r\n보기에 *exclusively* 처럼 **범위를 극단적으로 좁히는 말**이 있으면 필요한 경우까지 빠뜨리지 않는지 따져 보세요. 엣지 케이스에만 집중하라는 지침은 유용한 일반 경로 테스트까지 놓치게 합니다."
+    "domain": "제어·제한·관리"
   },
   {
     "id": "execute",
     "word": "execute",
-    "tier": "core",
+    "level": 5,
     "pos": [
       "동사"
     ],
@@ -4908,58 +2571,12 @@
       "carry out",
       "perform"
     ],
-    "domain": "실행·처리",
-    "freq": 15,
-    "sources": [
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 10,
-        "en": "When this engineer works in the shared repository and runs `/review`, which skill actually executes?",
-        "surface": "executes",
-        "pos": "동사",
-        "sense": "(프로그램·명령을) 실행하다",
-        "ko": "이 엔지니어가 공유 저장소에서 `/review` 를 실행하면 실제로 어느 스킬이 실행됩니까?"
-      },
-      {
-        "src": "lesson-d1",
-        "q": 1,
-        "en": "What should the loop do next to correctly continue the agentic execution?",
-        "surface": "execution",
-        "pos": "명사",
-        "sense": "(execution) 실행",
-        "ko": "에이전트 실행을 올바르게 이어 가려면 루프는 다음에 무엇을 해야 합니까?"
-      },
-      {
-        "src": "mock04",
-        "q": 1,
-        "en": "Production logs show that in 11% of sessions the loop terminates while a tool_use block is still pending, so the refund is never actually executed.",
-        "surface": "executed",
-        "pos": "동사",
-        "sense": "(프로그램·명령을) 실행하다",
-        "ko": "운영 로그를 보면 세션의 11%에서 tool_use 블록이 아직 처리되지 않은 상태로 루프가 종료되어, 환불이 실제로는 실행되지 않습니다."
-      },
-      {
-        "src": "lesson-d2",
-        "q": 6,
-        "en": "Add a disclaimer inside each tool's error message stating the wrong tool may have been called, shown after execution fails.",
-        "surface": "execution",
-        "pos": "명사",
-        "sense": "(execution) 실행",
-        "ko": "실행이 실패한 뒤 보이도록, 각 도구의 오류 메시지에 엉뚱한 도구가 호출되었을 수 있다는 안내를 넣는다"
-      }
-    ],
-    "note": "명령·코드·작업을 **실행하다** 라는 뜻입니다. 계획만 세운 것이 아니라 **실제로 수행된** 것을 말할 때 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> ...the loop terminates while a tool_use block is still pending, so the refund is never actually **executed**.\r\n> `tool_use` 블록이 아직 처리되지 않은 상태로 루프가 종료되어, 환불이 실제로는 **실행되지** 않는다.\r\n\r\n## 함께 쓰는 표현\r\n- **execute a tool call** : 도구 호출을 실행하다\r\n- **execution** (명) 실행 · **executable** (형·명) 실행 가능한 (파일)\r\n\r\n## 시험 포인트\r\n`stop_reason` 이 `\"tool_use\"` 인데 루프를 끝내면 요청된 도구가 **실행되지 않은 채** 남습니다. 도구를 실행하고 그 결과를 돌려준 뒤 루프를 계속해야 합니다."
+    "domain": "실행·처리"
   },
   {
     "id": "executive",
     "word": "executive",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "명사",
       "형용사"
@@ -4989,21 +2606,6 @@
       "director"
     ],
     "domain": "사람·조직·역할",
-    "freq": 1,
-    "sources": [
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 26,
-        "en": "After the shared search and document-analysis phase completes, stakeholders want two report variants from the same evidence — a one-page executive brief and a technical deep-dive — without re-running the costly searches.",
-        "surface": "executive",
-        "pos": "형용사",
-        "sense": "임원의, 경영진용",
-        "ko": "공유 검색·문서 분석 단계가 끝난 뒤, 이해관계자들은 비용이 큰 검색을 다시 실행하지 않고 같은 증거로 두 가지 보고서, 즉 한 페이지짜리 임원 요약본과 기술 심층 분석본을 원합니다."
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -5027,13 +2629,12 @@
         "consecutive",
         "consequence"
       ]
-    },
-    "note": "1. **임원, 경영진** — 회사의 의사 결정을 맡은 사람\r\n2. **(형) 임원용의, 경영진을 위한** — *executive brief / summary* 는 바쁜 의사 결정자를 위한 짧은 요약\r\n\r\n## 문제 속 쓰임\r\n> ...stakeholders want two report variants from the same evidence — a one-page **executive** brief and a technical deep-dive...\r\n> 이해관계자들이 같은 증거로 두 가지 보고서, 즉 한 페이지짜리 **임원** 요약본과 기술 심층 분석본을 원한다.\r\n\r\n## 함께 쓰는 표현\r\n- **executive summary** : 핵심만 앞에 모은 요약\r\n- **executive brief** : 임원 보고용 요약 자료\r\n\r\n## 비교\r\n- **execute** (동) 실행하다 — 철자는 비슷하지만 *executive* 는 주로 \"임원(용)\"의 뜻"
+    }
   },
   {
     "id": "exemplar",
     "word": "exemplar",
-    "tier": "extra",
+    "level": 6,
     "pos": [
       "명사"
     ],
@@ -5055,26 +2656,12 @@
       "example",
       "template"
     ],
-    "domain": "데이터·정보·문서",
-    "freq": 0,
-    "sources": [],
-    "contexts": [
-      {
-        "src": "vocab",
-        "q": 0,
-        "en": "Add the exemplar endpoint code with pattern documentation to the project CLAUDE.md file so it's automatically available.",
-        "surface": "exemplar",
-        "pos": "명사",
-        "sense": "본보기, 모범 예시",
-        "ko": "본보기 엔드포인트 코드와 패턴 문서를 프로젝트 CLAUDE.md 에 넣어 자동으로 쓰이게 한다."
-      }
-    ],
-    "note": "따라 만들 **기준이 되는 잘 된 본보기**입니다. 그냥 *example*(예)보다 \"이대로 따라 하면 된다\"는 *모범*의 느낌이 강합니다.\r\n\r\n## 문제 속 쓰임\r\n> Add the **exemplar** endpoint code with pattern documentation to the project CLAUDE.md file so it's automatically available.\r\n> **본보기** 엔드포인트 코드와 패턴 문서를 프로젝트 CLAUDE.md 에 넣어 자동으로 쓰이게 한다.\r\n\r\n## 함께 쓰는 표현\r\n- **exemplar implementation** : 모범 구현\r\n- **exemplary** (형) 모범적인\r\n\r\n## 비교\r\n- **example** — 여러 경우 중 하나를 보여 주는 예\r\n- **exemplar** — 따라야 할 기준이 되는 모범 예시\r\n- **template** — 빈칸을 채워 쓰는 틀\r\n\r\n## 시험 포인트\r\n본보기 코드가 **특정 작업에서만** 필요하다면, 항상 로드되는 CLAUDE.md 나 디렉터리 기준으로 켜지는 rules 가 아니라 **필요할 때 호출하는 Skill** 에 넣는 보기가 정답입니다."
+    "domain": "데이터·정보·문서"
   },
   {
     "id": "exempt",
     "word": "exempt",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "형용사",
       "동사"
@@ -5102,21 +2689,6 @@
       "immune"
     ],
     "domain": "제어·제한·관리",
-    "freq": 1,
-    "sources": [
-      "lesson-d3"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 19,
-        "en": "Read-only commands are permanently exempt from every permission mode in Claude Code, no matter which mode is currently active",
-        "surface": "exempt",
-        "pos": "형용사",
-        "sense": "(규칙·검사에서) 면제된",
-        "ko": "읽기 전용 명령은 현재 어떤 모드든 상관없이 모든 권한 모드에서 영구히 면제된다"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -5140,7 +2712,7 @@
   {
     "id": "exfiltration",
     "word": "exfiltration",
-    "tier": "extra",
+    "level": 6,
     "pos": [
       "명사"
     ],
@@ -5162,15 +2734,12 @@
       "leak",
       "leakage"
     ],
-    "domain": "오류·실패·위험",
-    "freq": 0,
-    "sources": [],
-    "contexts": []
+    "domain": "오류·실패·위험"
   },
   {
     "id": "exhaust",
     "word": "exhaust",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -5208,40 +2777,6 @@
       "drain"
     ],
     "domain": "정도·양·크기",
-    "freq": 3,
-    "sources": [
-      "mock04",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d4",
-        "q": 36,
-        "en": "Reflection is limited by a thinking-token budget that is exhausted before the model can re-examine the full body of generated code",
-        "surface": "exhausted",
-        "pos": "동사",
-        "sense": "다 써 버리다, 소진하다",
-        "ko": "성찰은 사고 토큰 예산의 제약을 받는데, 모델이 생성된 코드 전체를 다시 살펴보기 전에 예산이 바닥난다."
-      },
-      {
-        "src": "mock04",
-        "q": 51,
-        "en": "Write an exhaustive list in CLAUDE.md of every code pattern and the correct verdict for each one",
-        "surface": "exhaustive",
-        "pos": "형용사",
-        "sense": "(exhaustive) 빠짐없는, 철저한",
-        "ko": "CLAUDE.md에 모든 코드 패턴과 각각의 올바른 판정을 망라한 목록을 작성한다"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 8,
-        "en": "A team's code-review assistant prompt already spells out an exhaustive, itemized rubric for flagging issues, but reviewers still receive inconsistently formatted findings across runs: some list severity before location, others omit the suggested fix entirely.",
-        "surface": "exhaustive",
-        "pos": "형용사",
-        "sense": "(exhaustive) 빠짐없는, 철저한",
-        "ko": "한 팀의 코드 리뷰 어시스턴트 프롬프트에는 이미 이슈 지적용 루브릭이 항목별로 빠짐없이 적혀 있는데도, 실행마다 지적 형식이 달라 어떤 것은 위치보다 심각도를 먼저 쓰고 어떤 것은 수정 제안을 아예 빼먹습니다."
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -5255,13 +2790,12 @@
       ],
       "origin": "라틴어 exhaurire (다 퍼내다)",
       "story": "우물물을 밖으로(ex) 바닥까지 퍼낸다(haust) → 소진하다, 빠짐없는"
-    },
-    "note": "한도가 있는 것을 **남김없이 다 써 버리는** 것입니다. 재시도 횟수·메모리·예산 같은 *자원*에 쓰며, 사람에게 쓰면 \"지치게 하다\"가 됩니다.\r\n\r\n## 문제 속 쓰임\r\n> ...returning a generic \"search unavailable\" status only after all retries are **exhausted**.\r\n> 재시도를 모두 **소진한** 뒤에야 일반적인 \"search unavailable\" 상태만 반환한다.\r\n\r\n## 함께 쓰는 표현\r\n- **retries are exhausted** : 재시도 횟수를 다 썼다\r\n- **exhaust the budget / resources** : 예산·자원을 다 쓰다\r\n- **exhaustive** (형) 빠짐없는 · **exhaustive list** 전체 목록\r\n\r\n## 시험 포인트\r\n재시도를 다 쓴 뒤 **\"unavailable\" 같은 뭉뚱그린 상태만** 돌려주는 보기는 오답이 되기 쉽습니다. 상위에서 복구를 판단하려면 실패 유형·시도한 쿼리·부분 결과 같은 **구조화된 맥락**이 필요합니다."
+    }
   },
   {
     "id": "exist",
     "word": "exist",
-    "tier": "core",
+    "level": 2,
     "pos": [
       "동사"
     ],
@@ -5287,59 +2821,12 @@
     "synonyms": [
       "be present"
     ],
-    "domain": "상태·성질",
-    "freq": 12,
-    "sources": [
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 7,
-        "en": "After pulling the latest commit, a teammate finds the command doesn't exist.",
-        "surface": "exist",
-        "pos": "동사",
-        "sense": "존재하다, 있다",
-        "ko": "그런데 최신 커밋을 받은 팀원에게는 이 명령이 없습니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 29,
-        "en": "Split the existing labeled results by document type and by field, and check that this type meets the bar on its own",
-        "surface": "existing",
-        "pos": "형용사",
-        "sense": "(existing) 기존의, 현재 있는",
-        "ko": "기존 라벨 결과를 문서 유형별·필드별로 나눠, 그 유형이 단독으로 기준을 넘는지 확인한다"
-      },
-      {
-        "src": "mock04",
-        "q": 24,
-        "en": "The subagent definitions exist and work when tested standalone.",
-        "surface": "exist",
-        "pos": "동사",
-        "sense": "존재하다, 있다",
-        "ko": "서브에이전트 정의는 존재하고, 단독으로 테스트하면 정상 동작합니다."
-      },
-      {
-        "src": "lesson-d2",
-        "q": 31,
-        "en": "Start by reading CLAUDE.md or AGENTS.md if they exist to gain high-level architecture context, then use Grep to locate the route handler and its imports, and read files incrementally along the call chain.",
-        "surface": "exist",
-        "pos": "동사",
-        "sense": "존재하다, 있다",
-        "ko": "CLAUDE.md나 AGENTS.md가 있으면 먼저 읽어 상위 구조를 파악하고, Grep으로 라우트 핸들러와 그 import를 찾은 뒤, 호출 사슬을 따라 파일을 점진적으로 읽는다"
-      }
-    ]
+    "domain": "상태·성질"
   },
   {
     "id": "exit",
     "word": "exit",
-    "tier": "core",
+    "level": 2,
     "pos": [
       "동사",
       "명사"
@@ -5371,47 +2858,12 @@
       "terminate",
       "leave"
     ],
-    "domain": "시작·종료",
-    "freq": 3,
-    "sources": [
-      "sample01",
-      "lesson-d3"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d3",
-        "q": 29,
-        "en": "Add -p so Claude Code runs the query and exits instead of opening an interactive session",
-        "surface": "exits",
-        "pos": "동사",
-        "sense": "(프로그램이) 종료하다",
-        "ko": "`-p` 를 붙여 Claude Code가 대화형 세션을 여는 대신 질의를 실행하고 종료하게 한다"
-      },
-      {
-        "src": "sample01",
-        "q": 22,
-        "en": "Which `stop_reason` should trigger an increase in `max_tokens`, not a loop retry or exit?",
-        "surface": "exit",
-        "pos": "명사",
-        "sense": "종료, 빠져나감",
-        "ko": "루프 재시도나 종료가 아니라 `max_tokens` 증가로 대응해야 하는 `stop_reason` 은?"
-      },
-      {
-        "src": "sample01",
-        "q": 12,
-        "en": "Add a `PreToolUse` hook that checks the command and exits with code 2 to block it",
-        "surface": "exits",
-        "pos": "동사",
-        "sense": "(프로그램이) 종료하다",
-        "ko": "명령을 검사해 종료 코드 2로 끝내 차단하는 `PreToolUse` 훅을 추가한다"
-      }
-    ],
-    "note": "1. **(프로그램·과정이) 종료하다, 빠져나오다**\r\n2. **종료 (코드)** — 프로그램이 끝나며 돌려주는 숫자 (*exit code*)\r\n\r\n## 문제 속 쓰임\r\n> Add a `PreToolUse` hook that checks the command and **exits** with code 2 to block it\r\n> 명령을 검사해 종료 코드 2로 **끝내** 차단하는 `PreToolUse` 훅을 추가한다\r\n\r\n## 함께 쓰는 표현\r\n- **exit code** : 종료 코드 (0 = 성공, 그 밖 = 오류 등)\r\n- **exit with code 2** : 종료 코드 2로 끝나다\r\n- **exit the loop** : 루프를 빠져나오다\r\n\r\n## 시험 포인트\r\nClaude Code 의 `PreToolUse` 훅이 **종료 코드 2** 로 끝나면 그 도구 호출이 **차단**됩니다. 프롬프트 지시와 달리 확실하게 막는 결정적(deterministic) 수단입니다."
+    "domain": "시작·종료"
   },
   {
     "id": "expand",
     "word": "expand",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "동사"
     ],
@@ -5444,56 +2896,12 @@
       "widen",
       "elaborate"
     ],
-    "domain": "변경·수정",
-    "freq": 6,
-    "sources": [
-      "mock04",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 1,
-        "en": "Expand the regex allowlist of closing phrases so it also matches every polite sign-off variant the model might emit.",
-        "surface": "Expand",
-        "pos": "동사",
-        "sense": "넓히다, 확장하다",
-        "ko": "마무리 문구 정규식 허용 목록을 넓혀, 모델이 낼 수 있는 모든 정중한 맺음말 변형까지 매칭되게 한다"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 8,
-        "en": "Expand the rubric into a longer numbered checklist, naming each output field with its position and formatting rule",
-        "surface": "Expand",
-        "pos": "동사",
-        "sense": "(내용을 풀어서) 늘리다, 자세히 쓰다",
-        "ko": "루브릭을 더 긴 번호 체크리스트로 늘려, 각 출력 필드의 위치와 형식 규칙을 일일이 적는다."
-      },
-      {
-        "src": "lesson-d4",
-        "q": 2,
-        "en": "Adding any qualifier to a system prompt increases output length, which expands the set of tokens the evaluator inspects and independently raises the chance that a finding is miscategorized as high severity.",
-        "surface": "expands",
-        "pos": "동사",
-        "sense": "넓히다, 확장하다",
-        "ko": "시스템 프롬프트에 수식어를 넣으면 출력이 길어지고, 평가자가 검사할 토큰이 늘어나 발견이 높은 심각도로 잘못 분류될 가능성이 독립적으로 커진다."
-      },
-      {
-        "src": "mock04",
-        "q": 17,
-        "en": "Expand the request into a longer prose description defining what \"robust\" and \"idiomatic\" mean for validation",
-        "surface": "Expand",
-        "pos": "동사",
-        "sense": "(내용을 풀어서) 늘리다, 자세히 쓰다",
-        "ko": "요청을 더 긴 산문 설명으로 늘려, 검증에서 \"robust\"와 \"idiomatic\"이 무엇을 뜻하는지 정의한다"
-      }
-    ],
-    "note": "범위·크기·내용을 **넓히다, 늘리다** 라는 뜻입니다. 줄여 쓴 것을 **풀어서 자세히** 쓰는 것도 말합니다.\r\n\r\n## 문제 속 쓰임\r\n> **Expand** the regex allowlist of closing phrases so it also matches every polite sign-off variant the model might emit.\r\n> 마무리 문구 정규식 허용 목록을 **넓혀**, 모델이 낼 수 있는 모든 정중한 맺음말 변형까지 매칭되게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **expand the scope / list** : 범위·목록을 넓히다\r\n- **expand into** ~ : ~로 늘려 풀어 쓰다\r\n- **expansion** (명) 확장 — *environment variable expansion* 환경 변수 치환\r\n\r\n## 비슷한 말\r\n- **extend** — (길이·기능을) 늘리다 · **enlarge** — 크게 하다"
+    "domain": "변경·수정"
   },
   {
     "id": "expect",
     "word": "expect",
-    "tier": "core",
+    "level": 2,
     "pos": [
       "동사"
     ],
@@ -5529,59 +2937,12 @@
       "anticipate",
       "require"
     ],
-    "domain": "계획·목표·전략",
-    "freq": 11,
-    "sources": [
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 15,
-        "en": "A shared `/scaffold-component` skill expects a component-name argument, but telemetry shows teammates invoke it with no argument or a malformed one about a third of the time, producing empty or misnamed scaffolds.",
-        "surface": "expects",
-        "pos": "동사",
-        "sense": "(입력을) 받도록 되어 있다",
-        "ko": "공유 `/scaffold-component` 스킬은 컴포넌트 이름 인자를 받도록 되어 있지만, 텔레메트리를 보면 팀원들이 약 3분의 1의 경우 인자 없이 또는 잘못된 형식의 인자로 호출해, 비어 있거나 이름이 잘못된 스캐폴드가 만들어집니다."
-      },
-      {
-        "src": "lesson-d1",
-        "q": 16,
-        "en": "Subagents keep returning unusable notes whenever the search results don't look the way the script expected.",
-        "surface": "expected",
-        "pos": "동사",
-        "sense": "예상하다, 기대하다",
-        "ko": "검색 결과가 스크립트가 예상한 모습과 다를 때마다 서브에이전트가 쓸 수 없는 메모를 돌려줍니다."
-      },
-      {
-        "src": "lesson-d2",
-        "q": 11,
-        "en": "Use `errorCategory: \"validation\"` with `isRetryable: true`; the token was rejected as malformed input, so resubmitting it in the expected format should be accepted",
-        "surface": "expected",
-        "pos": "형용사",
-        "sense": "(expected) 기대되는, 정해진",
-        "ko": "`errorCategory: \"validation\"`, `isRetryable: true`. 토큰이 잘못된 입력으로 거절되었으니 기대 형식으로 다시 보내면 받아들여진다"
-      },
-      {
-        "src": "lesson-d1",
-        "q": 24,
-        "en": "The flag is expected to be set to `true` by a separate `mark_verified` tool after a human reviewer approves a photo ID.",
-        "surface": "expected",
-        "pos": "동사",
-        "sense": "(be expected to) ~하기로 되어 있다",
-        "ko": "이 플래그는 사람 검토자가 사진 신분증을 승인한 뒤 별도의 `mark_verified` 도구가 `true` 로 설정하도록 돼 있습니다."
-      }
-    ],
-    "note": "1. **(입력 등을) 받도록 되어 있다, 요구하다** — *the skill expects an argument* : 인자를 받도록 만들어져 있다\r\n2. **예상하다, 기대하다** — *expected* : 기대되는, 예상된\r\n\r\n## 문제 속 쓰임\r\n> A shared `/scaffold-component` skill **expects** a component-name argument, but telemetry shows teammates invoke it with no argument...\r\n> 공유 `/scaffold-component` 스킬은 컴포넌트 이름 인자를 **받도록 되어 있지만**, 팀원들이 인자 없이 호출한다\r\n> Add a few-shot example containing a correctly formatted PO number to anchor the **expected** pattern for the field.\r\n> 올바른 형식의 PO 번호가 들어 있는 few-shot 예시를 추가해, 이 필드에 **기대하는** 패턴을 고정한다\r\n\r\n## 함께 쓰는 표현\r\n- **expected output / behavior** : 기대 출력·동작\r\n- **expectation** (명) 기대, 예상\r\n- **unexpected** (형) 예상치 못한"
+    "domain": "계획·목표·전략"
   },
   {
     "id": "expense",
     "word": "expense",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "명사"
     ],
@@ -5606,21 +2967,6 @@
       "expenditure"
     ],
     "domain": "비즈니스·업무",
-    "freq": 2,
-    "sources": [
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d4",
-        "q": 24,
-        "en": "A reimbursement pipeline extracts a required \"project_code\" field from scanned expense reports.",
-        "surface": "expense",
-        "pos": "명사",
-        "sense": "비용, 경비",
-        "ko": "경비 정산 파이프라인이 스캔된 경비 보고서에서 필수 \"project_code\" 필드를 추출합니다."
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -5645,8 +2991,7 @@
   {
     "id": "expensive",
     "word": "expensive",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "형용사"
     ],
@@ -5670,27 +3015,12 @@
       "costly",
       "pricey"
     ],
-    "domain": "정도·양·크기",
-    "freq": 1,
-    "sources": [
-      "lesson-d1"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 41,
-        "en": "After an expensive codebase analysis that ended with a JWT proposal, an engineer wants to try OAuth2 on a separate branch.",
-        "surface": "expensive",
-        "pos": "형용사",
-        "sense": "(시간·자원이) 많이 드는",
-        "ko": "JWT 방안으로 끝난 비싼 코드베이스 분석 뒤, 엔지니어가 OAuth2를 별도 갈래에서 시도해 보려 합니다."
-      }
-    ]
+    "domain": "정도·양·크기"
   },
   {
     "id": "expertise",
     "word": "expertise",
-    "tier": "core",
+    "level": 5,
     "pos": [
       "명사"
     ],
@@ -5712,21 +3042,6 @@
       "skill"
     ],
     "domain": "사람·조직·역할",
-    "freq": 1,
-    "sources": [
-      "lesson-d1"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 17,
-        "en": "AgentDefinition.prompt sets the subagent's persistent system prompt and expertise, while the per-call prompt passed at invocation supplies the specific task details for that run",
-        "surface": "expertise",
-        "pos": "명사",
-        "sense": "전문 지식, 전문성",
-        "ko": "`AgentDefinition.prompt` 는 서브에이전트의 지속적인 시스템 프롬프트와 전문성을 정하고, 호출 시 넘기는 호출별 프롬프트는 그 실행의 구체적 작업 내용을 제공한다"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -5754,7 +3069,7 @@
   {
     "id": "expire",
     "word": "expire",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -5782,37 +3097,12 @@
       "lapse",
       "run out"
     ],
-    "domain": "시작·종료",
-    "freq": 2,
-    "sources": [
-      "lesson-d2",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d5",
-        "q": 19,
-        "en": "A regulatory-filings subagent cannot reach its data provider because the provider's API key expired.",
-        "surface": "expired",
-        "pos": "동사",
-        "sense": "(기한이) 만료되다",
-        "ko": "규제 공시 서브에이전트가 공급사 API 키 만료로 데이터 공급사에 접근하지 못합니다."
-      },
-      {
-        "src": "lesson-d2",
-        "q": 24,
-        "en": "Configure a static `headers` entry with the token value hardcoded, then rotate the config file manually whenever the token expires.",
-        "surface": "expires",
-        "pos": "동사",
-        "sense": "(기한이) 만료되다",
-        "ko": "토큰 값을 하드코딩한 정적 `headers` 항목을 설정하고, 토큰이 만료될 때마다 설정 파일을 수동으로 교체한다"
-      }
-    ]
+    "domain": "시작·종료"
   },
   {
     "id": "explain",
     "word": "explain",
-    "tier": "core",
+    "level": 2,
     "pos": [
       "동사"
     ],
@@ -5839,58 +3129,12 @@
       "clarify",
       "account for"
     ],
-    "domain": "요청·소통",
-    "freq": 8,
-    "sources": [
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 20,
-        "en": "What explains this, and what is the fix?",
-        "surface": "explains",
-        "pos": "동사",
-        "sense": "(현상의) 원인이 되다, 이유를 밝혀 주다",
-        "ko": "원인과 해결책은 무엇입니까?"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 15,
-        "en": "The system prompt also says: \"Before calling the tool, briefly explain which clauses look ambiguous.\"",
-        "surface": "explain",
-        "pos": "동사",
-        "sense": "설명하다",
-        "ko": "시스템 프롬프트에는 \"도구를 호출하기 전에 어떤 조항이 모호해 보이는지 간단히 설명하라\"는 지시도 있습니다."
-      },
-      {
-        "src": "lesson-d2",
-        "q": 8,
-        "en": "The agent works out from `isError: true` that the failure is permanent, so it stops and correctly explains the refund policy to the customer.",
-        "surface": "explains",
-        "pos": "동사",
-        "sense": "설명하다",
-        "ko": "에이전트가 `isError: true`로부터 영구적인 실패임을 알아내고, 멈춘 뒤 고객에게 환불 정책을 올바르게 설명한다"
-      },
-      {
-        "src": "lesson-d3",
-        "q": 19,
-        "en": "What most plausibly explains this behavior?",
-        "surface": "explains",
-        "pos": "동사",
-        "sense": "(현상의) 원인이 되다, 이유를 밝혀 주다",
-        "ko": "이 동작을 가장 그럴듯하게 설명하는 것은 무엇입니까?"
-      }
-    ]
+    "domain": "요청·소통"
   },
   {
     "id": "explanation",
     "word": "explanation",
-    "tier": "core",
+    "level": 2,
     "pos": [
       "명사"
     ],
@@ -5915,56 +3159,12 @@
       "clarification",
       "reason"
     ],
-    "domain": "요청·소통",
-    "freq": 8,
-    "sources": [
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d4",
-        "q": 2,
-        "en": "What is the most likely explanation for why this change failed to improve precision?",
-        "surface": "explanation",
-        "pos": "명사",
-        "sense": "(원인에 대한) 해명, 이유",
-        "ko": "이 변경이 정밀도를 높이지 못한 가장 그럴듯한 이유는 무엇입니까?"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 15,
-        "en": "Only the extract_clauses tool_use block, with no explanation in front of it",
-        "surface": "explanation",
-        "pos": "명사",
-        "sense": "설명",
-        "ko": "앞에 설명 없이 `extract_clauses` tool_use 블록만"
-      },
-      {
-        "src": "lesson-d1",
-        "q": 28,
-        "en": "Move the message into the top-level systemMessage field so the agent sees a clearer explanation.",
-        "surface": "explanation",
-        "pos": "명사",
-        "sense": "설명",
-        "ko": "에이전트가 더 분명한 설명을 보도록 메시지를 최상위 `systemMessage` 필드로 옮긴다"
-      },
-      {
-        "src": "lesson-d2",
-        "q": 9,
-        "en": "errorCategory \"business\", isRetryable false, plus a customer-friendly explanation of the 10-attendee limit that the agent can pass on to the user",
-        "surface": "explanation",
-        "pos": "명사",
-        "sense": "설명",
-        "ko": "errorCategory \"business\", isRetryable false, 그리고 에이전트가 사용자에게 그대로 전할 수 있는 10명 제한에 대한 고객용 설명"
-      }
-    ]
+    "domain": "요청·소통"
   },
   {
     "id": "explanatory",
     "word": "explanatory",
-    "tier": "core",
+    "level": 5,
     "pos": [
       "형용사"
     ],
@@ -5982,21 +3182,6 @@
       "illustrative"
     ],
     "domain": "요청·소통",
-    "freq": 1,
-    "sources": [
-      "mock04"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 53,
-        "en": "Lower max_tokens to a tight cap so the model has no room to add explanatory prose or code fences around the JSON.",
-        "surface": "explanatory",
-        "pos": "형용사",
-        "sense": "설명하는, 설명을 위한",
-        "ko": "`max_tokens` 를 빠듯하게 낮춰, 모델이 JSON 주위에 설명 문장이나 코드 펜스를 붙일 여유가 없게 한다"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -6018,13 +3203,12 @@
         "plain",
         "plane"
       ]
-    },
-    "note": "무언가를 **설명하기 위한, 설명하는** 이라는 뜻입니다. 문제에서는 JSON 같은 결과물 주위에 붙는 **군더더기 설명 문장**을 가리킵니다.\r\n\r\n## 문제 속 쓰임\r\n> Lower max_tokens to a tight cap so the model has no room to add **explanatory** prose or code fences around the JSON.\r\n> `max_tokens` 를 빠듯하게 낮춰, 모델이 JSON 주위에 **설명** 문장이나 코드 펜스를 붙일 여유가 없게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **explanatory text / note** : 설명 문구·주석\r\n- **self-explanatory** : 따로 설명할 필요 없이 뻔한\r\n\r\n## 시험 포인트\r\n출력 앞뒤의 설명 문장을 없애려고 `max_tokens` 를 줄이는 보기는 오답입니다. 응답이 중간에 잘릴 뿐이며, **도구 사용·스키마로 형식을 강제**하는 것이 정답입니다."
+    }
   },
   {
     "id": "explicit",
     "word": "explicit",
-    "tier": "core",
+    "level": 5,
     "pos": [
       "형용사"
     ],
@@ -6049,59 +3233,12 @@
       "specific",
       "express"
     ],
-    "domain": "정확·품질·신뢰",
-    "freq": 19,
-    "sources": [
-      "sample01",
-      "mock04",
-      "lesson-d1",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d4",
-        "q": 7,
-        "en": "Security and correctness comments are now trusted again, and the team has rewritten the performance criteria in explicit terms.",
-        "surface": "explicit",
-        "pos": "형용사",
-        "sense": "명시적인, 분명한",
-        "ko": "이제 보안·정확성 코멘트는 다시 신뢰받고 있고, 팀은 성능 기준을 명시적인 문장으로 다시 썼습니다."
-      },
-      {
-        "src": "sample01",
-        "q": 10,
-        "en": "Each spawned agent starts with a clean empty message history — context must be passed explicitly",
-        "surface": "explicitly",
-        "pos": "부사",
-        "sense": "(explicitly) 명시적으로, 직접",
-        "ko": "생성된 각 에이전트는 비어 있는 새 메시지 기록으로 시작한다 — 맥락은 명시적으로 전달해야 한다"
-      },
-      {
-        "src": "mock04",
-        "q": 13,
-        "en": "Set `disable-model-invocation: true` in the skill's SKILL.md frontmatter so only an explicit `/dep-audit` runs it",
-        "surface": "explicit",
-        "pos": "형용사",
-        "sense": "명시적인, 분명한",
-        "ko": "스킬의 SKILL.md frontmatter에 `disable-model-invocation: true` 를 설정해, 명시적인 `/dep-audit` 호출로만 실행되게 한다"
-      },
-      {
-        "src": "lesson-d1",
-        "q": 24,
-        "en": "In an incident, the `mark_verified` tool executed and the human reviewer explicitly rejected the ID, but due to a software bug the `is_verified` flag was incorrectly set to `true`.",
-        "surface": "explicitly",
-        "pos": "부사",
-        "sense": "(explicitly) 명시적으로, 직접",
-        "ko": "한 사고에서 `mark_verified` 도구가 실행됐고 검토자는 신분증을 명시적으로 거부했지만, 소프트웨어 버그로 `is_verified` 가 잘못 `true` 로 설정됐습니다."
-      }
-    ],
-    "note": "짐작에 맡기지 않고 **분명하게 말·글로 드러낸** 것입니다. 말하지 않아도 담겨 있는 것은 반대로 *implicit*(암묵적인)이라고 합니다.\r\n\r\n## 문제 속 쓰임\r\n> Further refine the instructions with more **explicit** requirements for each part of the feedback format.\r\n> 피드백 형식의 각 부분에 대해 더 **명시적인** 요구사항을 넣어 지침을 다듬는다.\r\n\r\n## 함께 쓰는 표현\r\n- **explicit criteria / instructions** : 명시적인 기준·지시\r\n- **explicitly** (부) 명시적으로 · **make ~ explicit** ~을 분명히 드러내다\r\n\r\n## 반대말\r\n- **implicit** — 암묵적인, 드러내지 않은\r\n- **ambiguous**, **vague** — 모호한\r\n\r\n## 시험 포인트\r\n*explicit* 이 들어 있다고 정답은 아닙니다. 판단 기준 자체가 모호하면 **explicit criteria** 가 정답이지만, 명시적 지시를 이미 줬는데도 출력이 들쭉날쭉하다면 지시를 더 다듬기보다 **few-shot 예시**로 보여 주는 보기가 정답입니다."
+    "domain": "정확·품질·신뢰"
   },
   {
     "id": "exploration",
     "word": "exploration",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "명사"
     ],
@@ -6128,63 +3265,16 @@
       "survey"
     ],
     "domain": "검색·조회",
-    "freq": 16,
-    "sources": [
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 30,
-        "en": "Which exploration strategy gives the most useful context for the lowest cost?",
-        "surface": "exploration",
-        "pos": "명사",
-        "sense": "탐색, 두루 살펴봄",
-        "ko": "가장 낮은 비용으로 가장 유용한 컨텍스트를 주는 탐색 전략은 무엇입니까?"
-      },
-      {
-        "src": "lesson-d3",
-        "q": 11,
-        "en": "The team wants that exploratory back-and-forth kept separate from the main conversation, with only the final recommendation surfacing back to the user.",
-        "surface": "exploratory",
-        "pos": "형용사",
-        "sense": "(exploratory) 탐색을 위한, 탐색적인",
-        "ko": "팀은 이 탐색 과정을 메인 대화와 분리하고, 최종 권장안만 사용자에게 돌아오게 하려 합니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 23,
-        "en": "Mid-way through a long exploration session, four tasks come up.",
-        "surface": "exploration",
-        "pos": "명사",
-        "sense": "탐색, 두루 살펴봄",
-        "ko": "긴 탐색 세션 중간에 네 가지 작업이 생겼습니다."
-      },
-      {
-        "src": "mock04",
-        "q": 12,
-        "en": "Your team's /investigate-flaky skill greps the entire test suite, reads dozens of files, and prints verbose exploration before it answers.",
-        "surface": "exploration",
-        "pos": "명사",
-        "sense": "탐색, 두루 살펴봄",
-        "ko": "팀의 /investigate-flaky 스킬은 테스트 스위트 전체를 grep으로 검색하고, 수십 개 파일을 읽고, 답하기 전에 장황한 탐색 과정을 출력합니다."
-      }
-    ],
     "memory": {
       "origin": "라틴어 explorare (찾아 살피다)",
       "story": "지도 없는 땅을 이리저리 두루 살피며 길을 찾는다 → 탐색",
       "hook": "익스플로레이션 → 탐색기 '익스플로러'로 여기저기 살펴봄"
-    },
-    "note": "결정하기 전에 **여러 가능성을 두루 살펴보는** 단계입니다. 확정되지 않은 *시험 삼아 보는* 성격이라, 끝나면 버려야 할 내용도 많이 남습니다.\r\n\r\n## 문제 속 쓰임\r\n> ...after running this skill, Claude's subsequent responses are influenced by the **exploration** discussion.\r\n> 이 스킬을 실행한 뒤 Claude의 이후 응답이 **탐색** 논의의 영향을 받는다.\r\n\r\n## 함께 쓰는 표현\r\n- **exploration phase** : 탐색 단계\r\n- **exploratory** (형) 탐색용의 · **exploratory context** 탐색 중에 쌓인 맥락\r\n- **explore** (동) 탐색하다\r\n\r\n## 시험 포인트\r\n탐색 과정의 장황한 출력이나 버린 아이디어가 메인 대화에 남는 것이 문제라면, 탐색을 **격리된 컨텍스트**(`context: fork`, Explore 서브에이전트)에서 돌리고 결과 요약만 받는 보기가 정답입니다."
+    }
   },
   {
     "id": "explore",
     "word": "explore",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "동사"
     ],
@@ -6212,52 +3302,12 @@
       "examine",
       "probe"
     ],
-    "domain": "검색·조회",
-    "freq": 16,
-    "sources": [
-      "mock04",
-      "mock04-kor",
-      "lesson-d2",
-      "lesson-d3",
-      "selfcheck-d3-kor",
-      "lesson-d5",
-      "selfcheck-d5-kor"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d5",
-        "q": 22,
-        "en": "An agent has spent hours exploring a large repository.",
-        "surface": "exploring",
-        "pos": "동사",
-        "sense": "탐색하다, 두루 살펴보다",
-        "ko": "에이전트가 큰 저장소를 몇 시간째 탐색했습니다."
-      },
-      {
-        "src": "lesson-d2",
-        "q": 31,
-        "en": "A newly onboarded architect asks Claude Code to trace how a login request flows from the HTTP route handler through to the database call, in a codebase Claude has not explored yet.",
-        "surface": "explored",
-        "pos": "동사",
-        "sense": "탐색하다, 두루 살펴보다",
-        "ko": "새로 합류한 설계자가, Claude가 아직 탐색하지 않은 코드베이스에서 로그인 요청이 HTTP 라우트 핸들러부터 데이터베이스 호출까지 어떻게 흐르는지 추적해 달라고 Claude Code에 요청합니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 27,
-        "en": "An architect has been running a single Claude Code session for several hours exploring a large monorepo.",
-        "surface": "exploring",
-        "pos": "동사",
-        "sense": "탐색하다, 두루 살펴보다",
-        "ko": "아키텍트가 큰 모노레포를 탐색하며 하나의 Claude Code 세션을 몇 시간째 돌리고 있습니다."
-      }
-    ],
-    "note": "잘 모르는 곳을 **두루 살펴보며 탐색하다** 라는 뜻입니다. Claude Code 에서 *Explore* 는 코드베이스를 읽고 검색하는 데 쓰는 **탐색용 서브에이전트** 이름이기도 합니다.\r\n\r\n## 문제 속 쓰임\r\n> Delegate discovery to an **Explore** subagent that returns only a summary of call sites, keeping the main context for edits.\r\n> 탐색을 **Explore** 서브에이전트에 위임해 호출 지점 요약만 돌려받고, 메인 컨텍스트는 편집에 쓴다\r\n\r\n## 함께 쓰는 표현\r\n- **explore the codebase** : 코드베이스를 살펴보다\r\n- **explore options / alternatives** : 여러 선택지를 검토하다\r\n- **exploration** (명) 탐색 · **exploratory** (형) 탐색용의\r\n\r\n## 시험 포인트\r\n수십 개 파일을 훑는 탐색은 **Explore 서브에이전트에 맡기고 요약만 받으면** 메인 컨텍스트가 깨끗하게 유지됩니다. 장황한 탐색 출력이 메인 대화를 채우는 상황의 단골 정답입니다."
+    "domain": "검색·조회"
   },
   {
     "id": "exponential-backoff",
     "word": "exponential backoff",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "명사구"
     ],
@@ -6279,50 +3329,6 @@
       "backoff"
     ],
     "domain": "시간·순서·빈도",
-    "freq": 9,
-    "sources": [
-      "mock04",
-      "lesson-d2",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d5",
-        "q": 20,
-        "en": "Retry both failures with exponential backoff until they succeed, so the coordinator never has to deal with an error",
-        "surface": "exponential backoff",
-        "pos": "명사구",
-        "sense": "지수 백오프(간격을 배로 늘리는 재시도)",
-        "ko": "두 실패 모두 성공할 때까지 지수 백오프로 재시도해, 코디네이터가 오류를 다룰 일이 없게 한다"
-      },
-      {
-        "src": "lesson-d2",
-        "q": 11,
-        "en": "Use `errorCategory: \"transient\"` with `isRetryable: true`; the deploy service refused the call as it does during an outage, so retrying with backoff should get through",
-        "surface": "backoff",
-        "pos": "명사",
-        "sense": "(backoff) 재시도 전 대기 시간 늘리기",
-        "ko": "`errorCategory: \"transient\"`, `isRetryable: true`. 배포 서비스가 장애 때처럼 호출을 거절한 것이니 백오프로 재시도하면 통과한다"
-      },
-      {
-        "src": "mock04",
-        "q": 8,
-        "en": "Have the agent retry with exponential backoff, since repeated attempts eventually succeed for most declined refunds in the logs.",
-        "surface": "exponential backoff",
-        "pos": "명사구",
-        "sense": "지수 백오프(간격을 배로 늘리는 재시도)",
-        "ko": "로그상 거절된 환불 대부분이 반복 시도하면 결국 성공하므로, 에이전트가 지수 백오프로 재시도하게 한다"
-      },
-      {
-        "src": "lesson-d5",
-        "q": 17,
-        "en": "The string omits retry history; retry the search with backoff and return the final attempt count to the coordinator",
-        "surface": "backoff",
-        "pos": "명사",
-        "sense": "(backoff) 재시도 전 대기 시간 늘리기",
-        "ko": "문자열에 재시도 이력이 없다. 백오프를 두고 재시도하고 최종 시도 횟수를 코디네이터에 반환한다"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -6340,13 +3346,12 @@
       ],
       "story": "실패할 때마다 뒤로(back) 물러나(off) 대기를 두 배씩 → 지수 백오프",
       "hook": "백오프 → '백(back)' 물러나 잠깐 '오프', 점점 길게 쉬기"
-    },
-    "note": "요청이 실패할 때마다 다음 재시도까지 기다리는 시간을 1초 → 2초 → 4초 …처럼 **두 배씩 늘리는** 재시도 방식입니다.\r\n\r\n## 문제 속 쓰임\r\n> Implement automatic retry with **exponential backoff** within the subagent.\r\n> 서브에이전트 안에서 **지수 백오프**로 자동 재시도를 구현한다.\r\n\r\n## 왜 쓰나\r\n- 일시적인 장애(**transient** failure)가 풀릴 시간을 벌어 준다\r\n- 모든 클라이언트가 동시에 재시도해 서버를 다시 무너뜨리는 것을 막는다\r\n\r\n## 시험 포인트\r\n재시도로 **해결될 수 있는 오류**에만 의미가 있습니다. 권한 오류·잘못된 입력처럼 다시 해도 같은 오류는 재시도하지 말고 바로 보고해야 합니다."
+    }
   },
   {
     "id": "export",
     "word": "export",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "동사",
       "명사"
@@ -6377,39 +3382,12 @@
       "output",
       "send out"
     ],
-    "domain": "이동·전달",
-    "freq": 6,
-    "sources": [
-      "lesson-d2",
-      "selfcheck-d2-kor",
-      "lesson-d3",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 20,
-        "en": "Add the server with --scope project, set the header to \"Authorization: Bearer ${GITHUB_TOKEN}\" in .mcp.json, and have each engineer export GITHUB_TOKEN in their own shell",
-        "surface": "export",
-        "pos": "동사",
-        "sense": "(데이터·변수를) 내보내다",
-        "ko": "`--scope project`로 서버를 추가하고, `.mcp.json`에서 헤더를 \"Authorization: Bearer ${GITHUB_TOKEN}\"으로 설정한 뒤, 엔지니어마다 자기 셸에서 GITHUB_TOKEN을 export한다"
-      },
-      {
-        "src": "lesson-d5",
-        "q": 28,
-        "en": "A structured JSON manifest with one entry per agent, holding its status and the path to its own export file",
-        "surface": "export",
-        "pos": "명사",
-        "sense": "내보내기(한 파일)",
-        "ko": "에이전트당 항목 하나에 상태와 자기 export 파일 경로를 담은 구조화된 JSON 매니페스트"
-      }
-    ]
+    "domain": "이동·전달"
   },
   {
     "id": "expose",
     "word": "expose",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -6438,51 +3416,6 @@
       "reveal"
     ],
     "domain": "연결·통합",
-    "freq": 4,
-    "sources": [
-      "mock04",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 25,
-        "en": "A team's MCP server exposes `find_code`, described only as \"Searches code.\"",
-        "surface": "exposes",
-        "pos": "동사",
-        "sense": "(기능·데이터를) 노출하다, 제공하다",
-        "ko": "한 팀의 MCP 서버가 \"Searches code.\"(코드를 검색한다)라는 설명만 붙은 `find_code`를 노출합니다."
-      },
-      {
-        "src": "lesson-d1",
-        "q": 31,
-        "en": "An architect wants a single PreToolUse hook to run for every tool exposed by the \"billing\" server, without matching any tool from \"inventory\" or any built-in tool like Bash or Read.",
-        "surface": "exposed",
-        "pos": "동사",
-        "sense": "(기능·데이터를) 노출하다, 제공하다",
-        "ko": "아키텍트는 \"billing\" 서버가 노출하는 모든 도구에 대해 실행되고, \"inventory\"의 도구나 Bash·Read 같은 내장 도구에는 매칭되지 않는 PreToolUse 훅 하나를 원합니다."
-      },
-      {
-        "src": "mock04",
-        "q": 41,
-        "en": "Expose the schema catalog as an MCP resource that the agent reads once upfront, instead of probing with repeated exploratory tool calls.",
-        "surface": "Expose",
-        "pos": "동사",
-        "sense": "(기능·데이터를) 노출하다, 제공하다",
-        "ko": "스키마 카탈로그를 MCP 리소스로 노출해 에이전트가 처음에 한 번 읽게 하고, 반복적인 탐색용 도구 호출로 더듬어 찾지 않게 한다"
-      },
-      {
-        "src": "lesson-d3",
-        "q": 30,
-        "en": "The workflow stored ANTHROPIC_API_KEY as a secret but never exposed it to the step, so the CLI kept retrying authentication in a loop until the timeout",
-        "surface": "exposed",
-        "pos": "동사",
-        "sense": "(기능·데이터를) 노출하다, 제공하다",
-        "ko": "워크플로가 `ANTHROPIC_API_KEY` 를 시크릿으로 저장했지만 단계에 노출하지 않아, CLI가 타임아웃까지 인증을 반복 재시도했다"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -6501,13 +3434,12 @@
         "propose",
         "impose"
       ]
-    },
-    "note": "안에 있던 기능·데이터를 **밖에서 쓸 수 있게 열어 두다, 노출하다** 라는 뜻입니다. API·MCP 서버가 어떤 도구·리소스를 **제공한다**고 할 때 씁니다.\r\n\r\n## 문제 속 쓰임\r\n> **Expose** the schema catalog as an MCP resource that the agent reads once upfront, instead of probing with repeated exploratory tool calls.\r\n> 스키마 카탈로그를 MCP 리소스로 **노출해** 에이전트가 처음에 한 번 읽게 하고, 반복적인 탐색용 도구 호출로 더듬어 찾지 않게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **expose A as B** : A를 B 형태로 제공하다\r\n- **expose an endpoint / tool** : 엔드포인트·도구를 공개하다\r\n- **exposure** (명) 노출 — *data exposure* 데이터 유출 위험\r\n\r\n## 시험 포인트\r\n에이전트가 목록·카탈로그 같은 **읽기용 정보**를 찾으려고 도구를 여러 번 호출한다면, 그 정보를 **MCP 리소스로 노출해** 미리 읽게 하는 것이 정답 쪽입니다. 도구는 동작을, 리소스는 읽을 거리를 제공합니다."
+    }
   },
   {
     "id": "express",
     "word": "express",
-    "tier": "core",
+    "level": 2,
     "pos": [
       "동사",
       "형용사"
@@ -6541,21 +3473,6 @@
       "voice"
     ],
     "domain": "요청·소통",
-    "freq": 1,
-    "sources": [
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d5",
-        "q": 9,
-        "en": "A healthcare scheduling assistant follows a configured escalation policy: when a request is within the assistant's capability and the patient has not asked for a staff member, the assistant should acknowledge any expressed frustration, complete the request directly, and offer escalation to a staff member as an option rather than a requirement -- reserving mandatory escalation for requests it cannot complete, cases needing clinical judgment, or an explicit request for a human.",
-        "surface": "expressed",
-        "pos": "동사",
-        "sense": "(감정·생각을) 표현하다, 나타내다",
-        "ko": "의료 예약 어시스턴트는 다음 에스컬레이션 정책을 따릅니다. 요청이 어시스턴트의 처리 범위 안이고 환자가 직원을 요청하지 않았다면, 표현된 불만을 인정하고, 요청을 직접 완료하며, 직원 연결은 필수가 아닌 선택지로 제안하고, 필수 에스컬레이션은 완료할 수 없는 요청, 임상적 판단이 필요한 경우, 사람에 대한 명시적 요청에만 둡니다."
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -6580,7 +3497,7 @@
   {
     "id": "expressly",
     "word": "expressly",
-    "tier": "core",
+    "level": 5,
     "pos": [
       "부사"
     ],
@@ -6603,21 +3520,6 @@
       "specifically"
     ],
     "domain": "정확·품질·신뢰",
-    "freq": 1,
-    "sources": [
-      "lesson-d1"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 24,
-        "en": "Modify the PreToolUse hook to inspect the explicit verification result included in the `process_refund` tool call parameters, confirming that the human review expressly passed, instead of relying on a separate boolean flag that can be set incorrectly.",
-        "surface": "expressly",
-        "pos": "부사",
-        "sense": "명시적으로, 분명히",
-        "ko": "잘못 설정될 수 있는 별도 불리언 플래그에 의존하는 대신, `process_refund` 도구 호출 파라미터에 포함된 명시적 확인 결과를 PreToolUse 훅이 검사해 사람 검토가 분명히 통과했는지 확인하도록 바꾼다"
-      }
-    ],
     "memory": {
       "roots": [
         {
@@ -6645,7 +3547,7 @@
   {
     "id": "extend",
     "word": "extend",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "동사"
     ],
@@ -6678,58 +3580,12 @@
       "lengthen",
       "enlarge"
     ],
-    "domain": "변경·수정",
-    "freq": 12,
-    "sources": [
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 29,
-        "en": "Extend old_string with the neighbouring lines from the target function, then retry Edit, which finds a single match in the file",
-        "surface": "Extend",
-        "pos": "동사",
-        "sense": "확장하다, 늘리다",
-        "ko": "대상 함수의 이웃 줄을 `old_string`에 덧붙여 다시 Edit한다. 그러면 파일에서 한 곳만 일치한다"
-      },
-      {
-        "src": "lesson-d5",
-        "q": 25,
-        "en": "During a multi-hour exploration, the agent wrote to NOTES.md that OrderService extends TransactionalBase and has a distinctive retry mechanism.",
-        "surface": "extends",
-        "pos": "동사",
-        "sense": "(클래스를) 상속하다, 확장하다",
-        "ko": "몇 시간짜리 탐색 중에 에이전트는 NOTES.md에 OrderService가 TransactionalBase를 상속하며 독특한 재시도 메커니즘이 있다고 적었습니다."
-      },
-      {
-        "src": "lesson-d3",
-        "q": 27,
-        "en": "Report each failure sequentially in its own message: first address the currency-formatting mismatch, and once confirmed fixed, the filename extension issue, because the two problems are independent.",
-        "surface": "extension",
-        "pos": "명사",
-        "sense": "(extension) 확장자, 확장 기능",
-        "ko": "두 문제가 독립적이므로 각각 별도 메시지로 순서대로 보고한다. 먼저 통화 형식 불일치를 다루고, 수정이 확인되면 파일 확장자 문제를 다룬다"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 10,
-        "en": "Add a new input-output pair whenever a customer input is misclassified, extending the list over time",
-        "surface": "extending",
-        "pos": "동사",
-        "sense": "확장하다, 늘리다",
-        "ko": "고객 입력이 잘못 분류될 때마다 새 입력-출력 쌍을 추가해 목록을 계속 늘린다."
-      }
-    ],
-    "note": "길이·범위·기능을 **늘리다, 확장하다** 라는 뜻입니다. 이미 있는 것에 **덧붙여 키우는** 느낌입니다. (*extended thinking* 은 별도 단어로 등록되어 있습니다.)\r\n\r\n## 문제 속 쓰임\r\n> **Extend** old_string with the neighbouring lines from the target function, then retry Edit, which finds a single match in the file\r\n> 대상 함수의 이웃 줄을 `old_string`에 **덧붙여 늘린** 뒤 다시 Edit하면, 파일에서 한 곳만 일치한다.\r\n\r\n## 함께 쓰는 표현\r\n- **extend A with B** : A에 B를 더해 확장하다\r\n- **extension** (명) 확장, 확장 기능 / (파일) 확장자\r\n- **extended** (형) 늘어난, 확장된\r\n\r\n## 시험 포인트\r\nEdit 의 `old_string` 이 여러 곳과 일치하면, 주변 줄을 더해 **유일하게 일치하도록 늘리는** 것이 정답입니다. 파일 전체를 다시 쓰는 보기는 과한 대응입니다."
+    "domain": "변경·수정"
   },
   {
     "id": "extended-thinking",
     "word": "extended thinking",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "명사구"
     ],
@@ -6742,57 +3598,12 @@
         "ko": "확장 사고(답하기 전 단계별 추론 기능)"
       }
     ],
-    "domain": "시스템·도구·기술",
-    "freq": 16,
-    "sources": [
-      "mock04",
-      "mock04-kor",
-      "lesson-d4",
-      "selfcheck-d4-kor"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 2,
-        "en": "Enable extended thinking on the escalation turn so the model reasons longer about the case before handing it off.",
-        "surface": "extended thinking",
-        "pos": "명사구",
-        "sense": "확장 사고(답하기 전 단계별 추론 기능)",
-        "ko": "에스컬레이션 턴에 확장 사고(extended thinking)를 켜서, 모델이 건을 넘기기 전에 더 오래 추론하게 한다"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 36,
-        "en": "Why is extended thinking insufficient as a substitute for an independent review instance here?",
-        "surface": "extended thinking",
-        "pos": "명사구",
-        "sense": "확장 사고(답하기 전 단계별 추론 기능)",
-        "ko": "여기서 extended thinking이 독립 리뷰 인스턴스를 대신하기에 부족한 이유는 무엇입니까?"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 35,
-        "en": "Raise the extended thinking budget for the review step, so the model reasons longer over the code it just wrote",
-        "surface": "extended thinking",
-        "pos": "명사구",
-        "sense": "확장 사고(답하기 전 단계별 추론 기능)",
-        "ko": "리뷰 단계의 extended thinking 예산을 올려, 모델이 방금 쓴 코드에 대해 더 오래 추론하게 한다."
-      },
-      {
-        "src": "mock04",
-        "q": 21,
-        "en": "Enable extended thinking so Claude reasons harder over the full accumulated output, including every passing-test line.",
-        "surface": "extended thinking",
-        "pos": "명사구",
-        "sense": "확장 사고(답하기 전 단계별 추론 기능)",
-        "ko": "extended thinking을 켜서, 통과한 테스트 줄까지 포함한 누적 출력 전체를 Claude가 더 깊이 추론하게 한다"
-      }
-    ]
+    "domain": "시스템·도구·기술"
   },
   {
     "id": "external",
     "word": "external",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "형용사"
     ],
@@ -6813,28 +3624,12 @@
       "outer",
       "third-party"
     ],
-    "domain": "구조·구성·부분",
-    "freq": 1,
-    "sources": [
-      "lesson-d1"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 9,
-        "en": "The subagents had restricted access to external search tools, so their findings on the areas they were assigned came back thin",
-        "surface": "external",
-        "pos": "형용사",
-        "sense": "외부의, 바깥의",
-        "ko": "서브에이전트의 외부 검색 도구 접근이 제한돼, 배정된 영역에 대한 결과가 빈약하게 돌아왔다"
-      }
-    ]
+    "domain": "구조·구성·부분"
   },
   {
     "id": "extra",
     "word": "extra",
-    "tier": "core",
-    "basic": true,
+    "level": 2,
     "pos": [
       "형용사",
       "부사",
@@ -6862,57 +3657,12 @@
       "further",
       "spare"
     ],
-    "domain": "정도·양·크기",
-    "freq": 5,
-    "sources": [
-      "mock04",
-      "lesson-d1",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 16,
-        "en": "Make the script longer, with an extra branch for each kind of search result the subagent might hit",
-        "surface": "extra",
-        "pos": "형용사",
-        "sense": "추가의, 여분의",
-        "ko": "서브에이전트가 마주칠 수 있는 검색 결과 종류마다 분기를 추가해 스크립트를 더 길게 만든다"
-      },
-      {
-        "src": "mock04",
-        "q": 10,
-        "en": "Ask for an extra identifier (order number, email, or ZIP) to disambiguate before taking any account action.",
-        "surface": "extra",
-        "pos": "형용사",
-        "sense": "추가의, 여분의",
-        "ko": "계정 관련 조치를 하기 전에 추가 식별자(주문 번호, 이메일, ZIP 코드)를 요청해 대상을 확정한다"
-      },
-      {
-        "src": "lesson-d5",
-        "q": 39,
-        "en": "For example, one reports regional unemployment at 5.1% and another at 6.3%, and it spends extra research rounds trying to reconcile them.",
-        "surface": "extra",
-        "pos": "형용사",
-        "sense": "추가의, 여분의",
-        "ko": "예를 들어 한쪽은 지역 실업률을 5.1%, 다른 쪽은 6.3%로 보고하고, 코디네이터는 이를 조정하려고 추가 조사 라운드를 돌립니다."
-      },
-      {
-        "src": "lesson-d4",
-        "q": 36,
-        "en": "Reflection raises the reasoning budget but applies the same depth of checking to each issue, so extra effort adds little scrutiny",
-        "surface": "extra",
-        "pos": "형용사",
-        "sense": "추가의, 여분의",
-        "ko": "성찰은 추론 예산을 늘리지만 이슈마다 같은 깊이의 검사를 적용하므로, 노력을 더해도 검토가 크게 늘지 않는다."
-      }
-    ]
+    "domain": "정도·양·크기"
   },
   {
     "id": "extract",
     "word": "extract",
-    "tier": "core",
+    "level": 4,
     "pos": [
       "동사"
     ],
@@ -6947,62 +3697,12 @@
       "draw out",
       "retrieve"
     ],
-    "domain": "데이터·정보·문서",
-    "freq": 84,
-    "sources": [
-      "sample01",
-      "mock04",
-      "mock04-kor",
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 33,
-        "en": "An agent's system prompt says: \"First extract the fields, then validate them, then format the report.\"",
-        "surface": "extract",
-        "pos": "동사",
-        "sense": "(필요한 부분을) 뽑아내다, 추출하다",
-        "ko": "에이전트의 시스템 프롬프트에 \"먼저 필드를 추출하고, 그다음 검증하고, 그다음 보고서 형식으로 정리하라\"고 적혀 있습니다."
-      },
-      {
-        "src": "lesson-d4",
-        "q": 13,
-        "en": "The extraction pipeline's examples all show crisp doses such as \"400 mg\", and the output keeps showing precise amounts the patient never gave.",
-        "surface": "extraction",
-        "pos": "명사",
-        "sense": "(extraction) 추출",
-        "ko": "추출 파이프라인의 예시는 모두 \"400 mg\"처럼 딱 떨어지는 용량뿐이고, 출력에는 환자가 말한 적 없는 정밀한 양이 계속 나옵니다."
-      },
-      {
-        "src": "sample01",
-        "q": 15,
-        "en": "A data pipeline needs to extract structured invoice data (vendor, line items, totals) from free-text invoice PDFs.",
-        "surface": "extract",
-        "pos": "동사",
-        "sense": "(필요한 부분을) 뽑아내다, 추출하다",
-        "ko": "데이터 파이프라인이 자유 텍스트 형태의 송장 PDF에서 구조화된 송장 데이터(공급업체, 품목, 합계)를 추출해야 합니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 30,
-        "en": "An architect asks Claude to output a confidence score from 0 to 1 for each extracted field in a structured JSON response.",
-        "surface": "extracted",
-        "pos": "동사",
-        "sense": "(필요한 부분을) 뽑아내다, 추출하다",
-        "ko": "아키텍트가 구조화된 JSON 응답에서 추출한 필드마다 0~1 신뢰도 점수를 내도록 Claude에게 요청합니다."
-      }
-    ],
-    "note": "많은 내용 가운데 **필요한 부분만 골라 뽑아내는** 것입니다. 요약(summarize)과 달리 원래 값을 *그대로* 꺼낸다는 점이 중요합니다.\r\n\r\n## 문제 속 쓰임\r\n> **Extract** transactional facts (amounts, dates, order numbers) into a persistent \"case facts\" block included in each prompt.\r\n> 거래 사실(금액·날짜·주문 번호)을 **뽑아내** 매 프롬프트에 들어가는 영속 \"case facts\" 블록에 담는다.\r\n\r\n## 함께 쓰는 표현\r\n- **extract key information** : 핵심 정보를 추출하다\r\n- **extract A into B** : A를 뽑아 B에 담다\r\n- **extraction** (명) 추출\r\n\r\n## 비교\r\n- **summarize** — 줄여서 *다시 쓴다* (세부 값이 뭉개질 수 있음)\r\n- **extract** — 원래 값을 *그대로 뽑아낸다*\r\n\r\n## 시험 포인트\r\n요약하다 금액·날짜 같은 세부가 사라지는 문제에는, 그 사실을 **요약 대상 밖의 별도 블록으로 추출해** 매번 넣는 보기가 정답입니다."
+    "domain": "데이터·정보·문서"
   },
   {
     "id": "extremely",
     "word": "extremely",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "부사"
     ],
@@ -7023,27 +3723,12 @@
       "highly",
       "exceedingly"
     ],
-    "domain": "정도·양·크기",
-    "freq": 1,
-    "sources": [
-      "selfcheck-d4-kor"
-    ],
-    "contexts": [
-      {
-        "src": "selfcheck-d4-kor",
-        "q": 2,
-        "en": "지시가 너무 약했다 → \"extremely conservative\"로 강화한다",
-        "surface": "extremely",
-        "pos": "부사",
-        "sense": "극도로, 매우"
-      }
-    ]
+    "domain": "정도·양·크기"
   },
   {
     "id": "eye",
     "word": "eye",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "명사"
     ],
@@ -7067,21 +3752,6 @@
     "forms": [
       "eyes"
     ],
-    "domain": "일반",
-    "freq": 1,
-    "sources": [
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d4",
-        "q": 29,
-        "en": "doc 2026 report final v2, since spaces between each descriptive segment keep the identifier readable when scanning a long results file by eye",
-        "surface": "eye",
-        "pos": "명사",
-        "sense": "(by eye) 눈으로 직접 보고",
-        "ko": "`doc 2026 report final v2`. 각 설명 구간 사이의 공백 덕분에 긴 결과 파일을 눈으로 훑을 때 읽기 쉽다."
-      }
-    ]
+    "domain": "일반"
   }
 ]

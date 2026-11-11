@@ -2,7 +2,7 @@
   {
     "id": "jailbreak",
     "word": "jailbreak",
-    "tier": "extra",
+    "level": 6,
     "pos": [
       "명사",
       "동사"
@@ -25,15 +25,12 @@
       "jailbroken",
       "jailbreaking"
     ],
-    "domain": "오류·실패·위험",
-    "freq": 0,
-    "sources": [],
-    "contexts": []
+    "domain": "오류·실패·위험"
   },
   {
     "id": "jitter",
     "word": "jitter",
-    "tier": "extra",
+    "level": 6,
     "pos": [
       "명사"
     ],
@@ -53,15 +50,12 @@
     "forms": [
       "jittered"
     ],
-    "domain": "시간·순서·빈도",
-    "freq": 0,
-    "sources": [],
-    "contexts": []
+    "domain": "시간·순서·빈도"
   },
   {
     "id": "job",
     "word": "job",
-    "tier": "core",
+    "level": 1,
     "pos": [
       "명사"
     ],
@@ -90,58 +84,12 @@
       "run",
       "process"
     ],
-    "domain": "실행·처리",
-    "freq": 28,
-    "sources": [
-      "mock04",
-      "mock04-kor",
-      "lesson-d1",
-      "lesson-d3",
-      "lesson-d4"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 32,
-        "en": "Every night a job takes each new product spec and runs the same steps in the same order.",
-        "surface": "job",
-        "pos": "명사",
-        "sense": "(자동 실행되는) 작업, 잡",
-        "ko": "매일 밤 작업 하나가 새 제품 사양서를 하나씩 받아 같은 단계를 같은 순서로 실행합니다."
-      },
-      {
-        "src": "lesson-d4",
-        "q": 27,
-        "en": "A nightly job submits 60,000 document-review requests in one batch.",
-        "surface": "job",
-        "pos": "명사",
-        "sense": "(자동 실행되는) 작업, 잡",
-        "ko": "야간 작업이 문서 검토 요청 60,000건을 배치 하나로 제출합니다."
-      },
-      {
-        "src": "mock04",
-        "q": 49,
-        "en": "That rubric is needed only by the review job, but it is now injected into every CI job — test generation, doc updates — inflating token cost and diluting the model's focus on those tasks.",
-        "surface": "job",
-        "pos": "명사",
-        "sense": "(자동 실행되는) 작업, 잡",
-        "ko": "이 루브릭은 리뷰 job에서만 필요한데, 지금은 테스트 생성이나 문서 업데이트 같은 모든 CI job에 주입되어 토큰 비용을 부풀리고 해당 작업에 대한 모델의 집중을 흐리고 있습니다."
-      },
-      {
-        "src": "lesson-d3",
-        "q": 29,
-        "en": "A pipeline step runs `claude \"explain the failing test\"` and the job hangs until it times out.",
-        "surface": "job",
-        "pos": "명사",
-        "sense": "(자동 실행되는) 작업, 잡",
-        "ko": "파이프라인 단계가 `claude \"explain the failing test\"` 를 실행하는데, 작업이 타임아웃될 때까지 멈춰 있습니다."
-      }
-    ]
+    "domain": "실행·처리"
   },
   {
     "id": "json-rpc",
     "word": "JSON-RPC",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "명사"
     ],
@@ -154,28 +102,12 @@
         "ko": "JSON-RPC(원격 함수 호출 프로토콜)"
       }
     ],
-    "domain": "시스템·도구·기술",
-    "freq": 3,
-    "sources": [
-      "lesson-d2",
-      "selfcheck-d2-kor"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 8,
-        "en": "The MCP server turns the generic message into a JSON-RPC protocol error, so the model never sees that the call failed.",
-        "surface": "JSON-RPC",
-        "pos": "명사",
-        "sense": "JSON-RPC(원격 함수 호출 프로토콜)",
-        "ko": "MCP 서버가 일반 메시지를 JSON-RPC 프로토콜 오류로 바꾸므로 모델은 호출이 실패했다는 것조차 보지 못한다"
-      }
-    ]
+    "domain": "시스템·도구·기술"
   },
   {
     "id": "judge",
     "word": "judge",
-    "tier": "core",
+    "level": 2,
     "pos": [
       "동사",
       "명사"
@@ -210,58 +142,12 @@
       "determine",
       "decide"
     ],
-    "domain": "비교·평가·판단",
-    "freq": 12,
-    "sources": [
-      "mock04",
-      "lesson-d3",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "mock04",
-        "q": 29,
-        "en": "Have a separate classifier judge after every assistant message whether the report is truly finished",
-        "surface": "judge",
-        "pos": "동사",
-        "sense": "판단하다, 판정하다",
-        "ko": "별도의 분류기가 어시스턴트 메시지마다 보고서가 정말 끝났는지 판단하게 한다"
-      },
-      {
-        "src": "lesson-d5",
-        "q": 11,
-        "en": "Keep the confidence rule and drop the sentiment rule, because the model is the best judge of when it is out of its depth",
-        "surface": "judge",
-        "pos": "명사",
-        "sense": "판정자, 심판",
-        "ko": "확신도 규칙은 남기고 감정 규칙은 뺀다. 자기 능력 밖인지는 모델이 가장 잘 판단하기 때문이다"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 10,
-        "en": "What change would best help the model generalize its judgment to these novel-but-similar inputs?",
-        "surface": "judgment",
-        "pos": "명사",
-        "sense": "(judgment) 판단, 판단력",
-        "ko": "이런 \"새롭지만 비슷한\" 입력으로 모델의 판단을 일반화시키려면 무엇을 바꿔야 할까요?"
-      },
-      {
-        "src": "lesson-d4",
-        "q": 5,
-        "en": "Security findings are now being judged against the style threshold.",
-        "surface": "judged",
-        "pos": "동사",
-        "sense": "판단하다, 판정하다",
-        "ko": "그런데 보안 발견이 스타일 문턱으로 판단되고 있습니다."
-      }
-    ],
-    "note": "1. **판단하다, 판정하다** — 기준에 비추어 옳고 그름·해당 여부를 가리다\r\n2. **판정자** — 결과물을 평가하는 쪽 (*LLM-as-a-judge* 모델이 다른 모델의 출력을 채점하는 방식)\r\n\r\n## 문제 속 쓰임\r\n> Have a separate classifier **judge** after every assistant message whether the report is truly finished\r\n> 별도의 분류기가 어시스턴트 메시지마다 보고서가 정말 끝났는지 **판단하게** 한다\r\n> ...so they load on demand whenever the tool **judges** them relevant to the task\r\n> 도구가 작업과 관련 있다고 **판단할** 때마다 필요 시 로드되게 한다\r\n\r\n## 함께 쓰는 표현\r\n- **judge whether** ~ : ~인지 판단하다\r\n- **judgment** (명) 판단 (*model judgment* 모델의 판단)\r\n\r\n## 시험 포인트\r\n\"모델·분류기가 **판단하게** 한다\"는 보기는 확률적입니다. `stop_reason` 같은 결정적 신호가 이미 있거나 규칙이 **항상** 적용되어야 하는 경우(CLAUDE.md)라면, 판단에 맡기는 보기는 오답입니다."
+    "domain": "비교·평가·판단"
   },
   {
     "id": "junior",
     "word": "junior",
-    "tier": "core",
+    "level": 3,
     "pos": [
       "형용사",
       "명사"
@@ -284,28 +170,12 @@
       "inexperienced",
       "subordinate"
     ],
-    "domain": "사람·조직·역할",
-    "freq": 1,
-    "sources": [
-      "lesson-d1"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 3,
-        "en": "A junior engineer proposes capping an autonomous research agent at exactly 5 tool-call iterations and treating that cap as the loop's primary stopping mechanism, regardless of stop_reason.",
-        "surface": "junior",
-        "pos": "형용사",
-        "sense": "(경력·지위가) 낮은, 신입의",
-        "ko": "주니어 엔지니어가 자율 리서치 에이전트의 도구 호출 반복을 정확히 5회로 제한하고, stop_reason과 상관없이 그 상한을 루프의 주된 종료 장치로 쓰자고 제안합니다."
-      }
-    ]
+    "domain": "사람·조직·역할"
   },
   {
     "id": "just",
     "word": "just",
-    "tier": "core",
-    "basic": true,
+    "level": 1,
     "pos": [
       "부사",
       "형용사"
@@ -336,58 +206,12 @@
       "merely",
       "simply"
     ],
-    "domain": "정도·양·크기",
-    "freq": 10,
-    "sources": [
-      "lesson-d1",
-      "lesson-d2",
-      "lesson-d3",
-      "lesson-d4",
-      "lesson-d5"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d2",
-        "q": 28,
-        "en": "Call Write with just the corrected block so that only that part of the file is replaced",
-        "surface": "just",
-        "pos": "부사",
-        "sense": "단지, ~만",
-        "ko": "그 부분만 교체되도록 고친 블록만 담아 Write를 호출한다"
-      },
-      {
-        "src": "lesson-d1",
-        "q": 18,
-        "en": "The coordinator's prompt to synthesis only said \"Write a report based on the research that was just completed.\"",
-        "surface": "just",
-        "pos": "부사",
-        "sense": "방금, 막",
-        "ko": "코디네이터가 종합 서브에이전트에 보낸 프롬프트는 \"방금 완료된 조사를 바탕으로 보고서를 써라\"뿐이었습니다."
-      },
-      {
-        "src": "lesson-d5",
-        "q": 8,
-        "en": "The customer now replies: \"No, just put me through to a person.\"",
-        "surface": "just",
-        "pos": "부사",
-        "sense": "그냥, 좀",
-        "ko": "이제 고객이 \"아니요, 그냥 사람한테 연결해 주세요\"라고 답합니다."
-      },
-      {
-        "src": "lesson-d3",
-        "q": 11,
-        "en": "Set `context: fork` on the skill, so it runs in a subagent with its own context and hands back just its result to the caller.",
-        "surface": "just",
-        "pos": "부사",
-        "sense": "단지, ~만",
-        "ko": "스킬에 `context: fork` 를 설정해, 자체 컨텍스트를 가진 서브에이전트에서 실행하고 결과만 호출자에게 넘기게 한다"
-      }
-    ]
+    "domain": "정도·양·크기"
   },
   {
     "id": "jwt",
     "word": "JWT",
-    "tier": "core",
+    "level": 6,
     "pos": [
       "약어"
     ],
@@ -403,21 +227,6 @@
     "forms": [
       "json web token"
     ],
-    "domain": "시스템·도구·기술",
-    "freq": 1,
-    "sources": [
-      "lesson-d1"
-    ],
-    "contexts": [
-      {
-        "src": "lesson-d1",
-        "q": 41,
-        "en": "After an expensive codebase analysis that ended with a JWT proposal, an engineer wants to try OAuth2 on a separate branch.",
-        "surface": "JWT",
-        "pos": "약어",
-        "sense": "JSON 웹 토큰(서명된 인증 토큰)",
-        "ko": "JWT 방안으로 끝난 비싼 코드베이스 분석 뒤, 엔지니어가 OAuth2를 별도 갈래에서 시도해 보려 합니다."
-      }
-    ]
+    "domain": "시스템·도구·기술"
   }
 ]

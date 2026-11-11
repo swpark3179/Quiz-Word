@@ -1,8 +1,9 @@
 /** 학습 범위 고르기 — 플래시카드·객관식 시작 화면 */
 import { Play } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
-import { QUIZ_SOURCES, WORDS } from '../data/words';
-import { DEFAULT_SCOPE, filterScope, type Scope } from '../lib/scope';
+import { EXAMS, examName, quizSources, WORDS } from '../data/words';
+import { LEVELS } from '../lib/schema';
+import { filterScope, normalizeScope, type Scope } from '../lib/scope';
 import { useProgress } from '../store/progress';
 import { isModalOpen, isTyping } from './Dialog';
 import { Button, Kbd } from './ui';
@@ -32,14 +33,14 @@ function Row({ label, children }: { label: string; children: React.ReactNode }) 
 
 const storageKey = (k: string) => `quiz-word:scope:${k}`;
 
-/** 마지막으로 고른 범위를 기억한다 (이 브라우저에만) */
+/** 마지막으로 고른 범위를 기억한다 (이 브라우저에만). 예전 형식으로 저장된 값은 읽을 때 새 형식으로 고친다 */
 export function useStoredScope(key: string): [Scope, (s: Scope) => void] {
   const [scope, setScope] = useState<Scope>(() => {
     try {
       const raw = localStorage.getItem(storageKey(key));
-      return raw ? { ...DEFAULT_SCOPE, ...JSON.parse(raw) } : DEFAULT_SCOPE;
+      return normalizeScope(raw ? JSON.parse(raw) : undefined, EXAMS);
     } catch {
-      return DEFAULT_SCOPE;
+      return normalizeScope(undefined, EXAMS);
     }
   });
   const update = (s: Scope) => {
@@ -64,34 +65,58 @@ export function useScopeCount(scope: Scope) {
 export function ScopePicker({ scope, onChange }: { scope: Scope; onChange: (s: Scope) => void }) {
   const { matched } = useScopeCount(scope);
   const set = (patch: Partial<Scope>) => onChange({ ...scope, ...patch });
+  const files = scope.set === 'exam' ? quizSources(scope.cat) : [];
+  const selectCls = 'max-w-full rounded-full border px-3.5 py-1.5 text-[13px] font-medium outline-none';
 
   return (
     <div className="space-y-4">
-      <Row label="범위">
-        <Chip active={scope.set === 'core'} onClick={() => set({ set: 'core', file: undefined })}>
-          CCAR-F 전체
+      <Row label="시험">
+        {EXAMS.map((e) => (
+          <Chip key={e.id} active={scope.set === 'exam' && scope.cat === e.id} onClick={() => set({ set: 'exam', cat: e.id, file: undefined })}>
+            {e.name}
+          </Chip>
+        ))}
+        <Chip active={scope.set === 'all'} onClick={() => set({ set: 'all', cat: undefined, file: undefined })}>
+          모든 단어 (확장 포함)
         </Chip>
-        <Chip active={scope.set === 'all'} onClick={() => set({ set: 'all', file: undefined })}>
-          확장 단어 포함
-        </Chip>
-        <Chip active={scope.set === 'wrong'} onClick={() => set({ set: 'wrong', file: undefined })}>
+        <Chip active={scope.set === 'wrong'} onClick={() => set({ set: 'wrong', cat: undefined, file: undefined })}>
           오답노트
         </Chip>
-        <select
-          value={scope.set === 'file' ? scope.file : ''}
-          onChange={(e) => (e.target.value ? set({ set: 'file', file: e.target.value }) : set({ set: 'core', file: undefined }))}
-          className={`rounded-full border px-3.5 py-1.5 text-[13px] font-medium outline-none ${
-            scope.set === 'file' ? 'border-primary bg-primary-soft text-primary-text' : 'border-line bg-surface text-ink-2'
-          }`}
-        >
-          <option value="">문제 파일별…</option>
-          {QUIZ_SOURCES.map((s) => (
-            <option key={s.id} value={s.id}>
-              {s.name}
-            </option>
-          ))}
-        </select>
       </Row>
+      {/* 문제 파일은 시험을 고른 뒤에 그 시험 안에서 고른다 */}
+      {scope.set === 'exam' && files.length > 0 && (
+        <Row label="문제">
+          <select
+            aria-label="문제 파일"
+            value={scope.file ?? ''}
+            onChange={(e) => set({ file: e.target.value || undefined })}
+            className={`${selectCls} ${scope.file ? 'border-primary bg-primary-soft text-primary-text' : 'border-line bg-surface text-ink-2'}`}
+          >
+            <option value="">{examName(scope.cat)} 전체</option>
+            {files.map((s) => (
+              <option key={s.id} value={s.id}>
+                {s.name}
+              </option>
+            ))}
+          </select>
+        </Row>
+      )}
+      {scope.set !== 'wrong' && (
+        <Row label="단계">
+          <select
+            aria-label="단계"
+            value={scope.minLevel}
+            onChange={(e) => set({ minLevel: Number(e.target.value) })}
+            className={`${selectCls} ${scope.minLevel > 1 ? 'border-primary bg-primary-soft text-primary-text' : 'border-line bg-surface text-ink-2'}`}
+          >
+            {LEVELS.map((l) => (
+              <option key={l.level} value={l.level}>
+                {l.level === 1 ? '모든 단계 (쉬운 단어 포함)' : l.level === LEVELS.length ? `${l.level}단계만 (${l.name})` : `${l.level}단계 이상 (${l.name}~)`}
+              </option>
+            ))}
+          </select>
+        </Row>
+      )}
       <Row label="상태">
         {(
           [
@@ -125,17 +150,6 @@ export function ScopePicker({ scope, onChange }: { scope: Scope; onChange: (s: S
             {l}
           </Chip>
         ))}
-      </Row>
-      <Row label="옵션">
-        <label className="flex cursor-pointer items-center gap-2 pt-1 text-[13px] text-ink-2">
-          <input
-            type="checkbox"
-            checked={scope.includeBasic}
-            onChange={(e) => set({ includeBasic: e.target.checked })}
-            className="h-4 w-4 accent-[var(--primary)]"
-          />
-          쉬운 기초 단어도 포함
-        </label>
       </Row>
       <div className={`rounded-xl px-4 py-2.5 text-[13px] ${matched ? 'bg-surface-2 text-ink-2' : 'bg-warning-soft text-warning'}`} role="status">
         {matched ? (

@@ -1,12 +1,32 @@
 /**
- * data/words/*.json 의 항목을 앱이 쓰는 Word 로 맞춘다.
+ * data/words/*.json 의 항목(공통 사전)을 앱이 쓰는 Word 로 맞춘다.
  * 직접 추가한 단어는 최소 필드(id, word, pos, meaning)만 있어도 되도록 나머지를 기본값으로 채운다.
  *   pos: "명사·동사" 처럼 문자열로 적어도 된다
- *   short 없으면 meaning 에서 만든다, senses 없으면 meaning 하나로, domain 없으면 "일반", tier 없으면 "extra"
+ *   short 없으면 meaning 에서 만든다, senses 없으면 meaning 하나로, domain 없으면 "일반", level 없으면 4
+ * 시험에 딸린 값(freq·occ·contexts·notes)은 비워 두고, buildWordData(exams.ts)가 시험 데이터를 읽어 채운다.
  */
-import type { Context, Memory, Sense, Word } from './schema';
+import { DEFAULT_LEVEL, MAX_LEVEL, type Level, type Memory, type Sense, type Word } from './schema';
 
-export type RawWord = Partial<Omit<Word, 'pos'>> & { pos?: string | string[] };
+/** 공통 사전의 단어 한 항목 (data/words/*.json 에 적는 모양) */
+export interface RawWord {
+  id?: string;
+  word?: string;
+  level?: number;
+  pos?: string | string[];
+  ipa?: string;
+  meaning?: string;
+  short?: string;
+  senses?: Sense[];
+  forms?: string[];
+  synonyms?: string[];
+  domain?: string;
+  memory?: Memory;
+}
+
+/** 1~6 의 정수가 아니면 기본 단계 */
+export function normalizeLevel(v: unknown): Level {
+  return typeof v === 'number' && Number.isInteger(v) && v >= 1 && v <= MAX_LEVEL ? (v as Level) : DEFAULT_LEVEL;
+}
 
 const splitPos = (p: string | string[] | undefined): string[] =>
   (Array.isArray(p) ? p : (p ?? '').split(/[·,/]/)).map((x) => x.trim()).filter(Boolean);
@@ -47,13 +67,11 @@ export function normalizeWord(r: RawWord): Word {
   const pos = splitPos(r.pos);
   const meaning = r.meaning ?? '';
   const senses: Sense[] = r.senses?.length ? r.senses : [{ pos: pos[0] ?? '명사', ko: shortFromMeaning(meaning) }];
-  const contexts: Context[] = (r.contexts ?? []).map((c) => ({ ...c, q: c.q ?? 0 }));
   const memory = normalizeMemory(r.memory);
   return {
     id: r.id ?? '',
     word: r.word ?? '',
-    tier: r.tier === 'core' ? 'core' : 'extra',
-    ...(r.basic ? { basic: true } : {}),
+    level: normalizeLevel(r.level),
     pos,
     ...(r.ipa ? { ipa: r.ipa.replace(/^\/|\/$/g, '') } : {}),
     meaning,
@@ -62,10 +80,9 @@ export function normalizeWord(r: RawWord): Word {
     ...(r.forms?.length ? { forms: r.forms } : {}),
     ...(r.synonyms?.length ? { synonyms: r.synonyms } : {}),
     domain: r.domain ?? '일반',
-    freq: r.freq ?? 0,
-    sources: r.sources ?? [],
-    contexts,
     ...(memory ? { memory } : {}),
-    ...(r.note ? { note: r.note } : {}),
+    freq: 0,
+    occ: {},
+    contexts: [],
   };
 }

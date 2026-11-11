@@ -1,0 +1,10 @@
+[
+  {
+    "id": "ccar-f",
+    "name": "CCAR-F",
+    "order": 1,
+    "set": "ccar-f",
+    "exclude": ["-kor$"],
+    "wordbook": { "id": "vocab", "name": "기존 단어장 예문", "dir": "vocab" }
+  }
+]

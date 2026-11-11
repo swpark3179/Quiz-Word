@@ -130,7 +130,7 @@ export function Layout() {
           </div>
           <div>
             <div className="text-[15px] font-bold leading-tight">Quiz Word</div>
-            <div className="text-[11.5px] text-muted">CCAR-F 영어 단어장</div>
+            <div className="text-[11.5px] text-muted">시험 영어 단어장</div>
           </div>
         </div>
         <nav aria-label="주 메뉴" className="flex-1 space-y-0.5 overflow-y-auto px-3">

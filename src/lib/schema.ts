@@ -6,13 +6,15 @@ export interface Sense {
 }
 
 export interface Context {
-  /** 출처 파일 id (예: mock04). vocab 상세 예문이면 "vocab" */
+  /** 시험(카테고리) id (예: ccar-f) */
+  cat: string;
+  /** 문제 파일 id (예: mock04). 예문 전용 파일이면 그 id (예: vocab) */
   src: string;
-  /** 문제 번호 (vocab 예문이면 0) */
+  /** 문제 번호 (문제가 아닌 예문이면 0) */
   q: number;
   /** 원문 문장 */
   en: string;
-  /** 문장 속 실제 표기 (강조 표시용) */
+  /** 문장 속 실제 표기 (강조용) */
   surface: string;
   /** 이 문장에서의 품사 */
   pos: string;
@@ -20,33 +22,60 @@ export interface Context {
   sense: string;
   /** 문장 한글 해석 */
   ko?: string;
+  /** 문장 색인에서 자동으로 찾은 예문 — 뜻(sense)은 대표 뜻일 뿐이라 뜻 표시·문맥 문제에 쓰지 않는다 */
+  auto?: boolean;
 }
 
-/** 어원 조각 — 접두사 "de-", 어근 "fer", 접미사 "-able", 합성어는 구성 단어 */
+/** 어원 조각 하나 — 접두사·어근·접미사 */
 export interface Root {
   part: string;
   ko: string;
 }
 
-/** 외우기 — 어원·연상. story 나 hook 중 하나는 있다 */
+/** 외우기 — 어원으로 그린 장면(story)이나 발음 연상(hook) 중 하나는 있다 */
 export interface Memory {
-  /** 어원 조각 (순서대로) */
   roots?: Root[];
-  /** 어원 출처 — 예: "라틴어 differre (따로 나르다)" */
+  /** "라틴어 differre (따로 나르다)" */
   origin?: string;
   /** 어원으로 그린 장면 → 뜻 */
   story?: string;
-  /** 발음 연상 — "디퍼 → 뒤로 퍼~ 넘긴다" */
+  /** 발음 연상 */
   hook?: string;
   /** 같은 어근 단어 */
   family?: string[];
 }
 
+/** 난이도 등급 — 1(가장 쉬움) ~ 6. 교육과정 이름은 대략의 눈금이다 */
+export type Level = 1 | 2 | 3 | 4 | 5 | 6;
+
+export const LEVELS: readonly { level: Level; name: string }[] = [
+  { level: 1, name: '초등' },
+  { level: 2, name: '중학' },
+  { level: 3, name: '고등 기본' },
+  { level: 4, name: '수능' },
+  { level: 5, name: '대학·공인영어' },
+  { level: 6, name: '전문·기술' },
+];
+export const MAX_LEVEL = LEVELS.length;
+/** level 을 적지 않은 단어(직접 추가한 단어)에 쓰는 값 */
+export const DEFAULT_LEVEL: Level = 4;
+export const levelName = (level: number) => LEVELS.find((l) => l.level === level)?.name ?? '';
+
+/** 시험별 노트 */
+export interface ExamNote {
+  cat: string;
+  md: string;
+}
+
+/**
+ * 단어 하나.
+ * 위쪽은 공통 사전(data/words) 에 적힌 값이고, 아래 freq·occ·contexts·notes 는
+ * 시험 데이터(data/exams)를 읽어 붙인 값이다 (src/lib/exams.ts 의 buildWordData).
+ */
 export interface Word {
   id: string;
   word: string;
-  tier: 'core' | 'extra';
-  basic?: boolean;
+  level: Level;
   pos: string[];
   ipa?: string;
   meaning: string;
@@ -55,11 +84,14 @@ export interface Word {
   forms?: string[];
   synonyms?: string[];
   domain: string;
-  freq: number;
-  sources: string[];
-  contexts: Context[];
   memory?: Memory;
-  note?: string;
+  /** 모든 시험에서 나온 횟수의 합 */
+  freq: number;
+  /** 시험 id → 문제 파일 id → 나온 횟수. 그 시험 문제에 나온 단어만 키가 있다 */
+  occ: Record<string, Record<string, number>>;
+  /** 모든 시험의 예문 (시험 순서, 시험 안에서는 정해 둔 순서) */
+  contexts: Context[];
+  notes?: ExamNote[];
 }
 
 export const POS_LIST = [
@@ -111,10 +143,16 @@ export const DOMAINS = [
   '일반',
 ] as const;
 
-export const SOURCE_VOCAB = 'vocab';
-
-/** 문제 파일 (data/sources.json) */
+/** 문제 파일. kind 가 wordbook 이면 예문만 있는 파일(기존 단어장 등)이라 문제 파일 목록에는 나오지 않는다 */
 export interface SourceInfo {
   id: string;
   name: string;
+  kind?: 'quiz' | 'wordbook';
+}
+
+/** 시험(카테고리) */
+export interface ExamInfo {
+  id: string;
+  name: string;
+  sources: SourceInfo[];
 }

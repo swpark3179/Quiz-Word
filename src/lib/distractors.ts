@@ -53,9 +53,11 @@ export function distractorScore(target: Word, other: Word, answerText: string, o
   if (other.domain === target.domain && target.domain !== '일반') s += 2;
   const sim = dice(answerText, otherText);
   if (sim >= 0.15 && sim < SIMILAR_LIMIT) s += sim * 2;
-  if (other.tier === target.tier) s += 0.5;
+  // 난이도가 비슷한 단어의 뜻이 더 헷갈린다
+  const gap = Math.abs(other.level - target.level);
+  if (gap === 0) s += 0.5;
+  else if (gap === 1) s += 0.25;
   if (Math.abs(otherText.length - answerText.length) <= 3) s += 0.5;
-  if (!!other.basic === !!target.basic) s += 0.25;
   return s;
 }
 

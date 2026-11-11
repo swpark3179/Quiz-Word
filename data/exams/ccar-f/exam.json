@@ -1,0 +1,40 @@
+{
+  "id": "ccar-f",
+  "name": "CCAR-F",
+  "order": 1,
+  "sources": [
+    {
+      "id": "sample01",
+      "name": "샘플문제1"
+    },
+    {
+      "id": "mock04",
+      "name": "샘플문제2"
+    },
+    {
+      "id": "lesson-d1",
+      "name": "D1-에이전트 아키텍처"
+    },
+    {
+      "id": "lesson-d2",
+      "name": "D2-도구 설계·MCP"
+    },
+    {
+      "id": "lesson-d3",
+      "name": "D3-Claude Code 설정"
+    },
+    {
+      "id": "lesson-d4",
+      "name": "D4-프롬프트·구조화 출력"
+    },
+    {
+      "id": "lesson-d5",
+      "name": "D5-컨텍스트·신뢰성"
+    },
+    {
+      "id": "vocab",
+      "name": "기존 단어장 예문",
+      "kind": "wordbook"
+    }
+  ]
+}
