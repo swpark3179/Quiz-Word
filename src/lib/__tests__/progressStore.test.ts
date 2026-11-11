@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { defaultNotebookName, flashSourceName, flashSplitNotebookName, NOTEBOOK_NAME_MAX, sanitizeNotebooks } from '../notebook';
+import { defaultNotebookName, flashSourceName, flashSplitNotebookName, mergedNotebookName, NOTEBOOK_NAME_MAX, sanitizeNotebooks } from '../notebook';
 import { createProgressStore, exportProgress } from '../progressStore';
 
 /** 웹 localStorage / 앱 kv-store 대신 쓰는 메모리 저장소 (동기) */
@@ -115,6 +115,50 @@ describe('progressStore (웹·앱 공용)', () => {
     expect(store.getState().notebooks.map((n) => n.id)).toEqual([second, id]); // 새로 만든 것이 앞
     store.getState().deleteNotebook(id);
     expect(store.getState().notebooks.map((n) => n.id)).toEqual([second]);
+  });
+
+  it('학습장 합치기: 겹치는 단어는 한 번만, 새 학습장이 맨 앞, 기존 학습장은 남겨 둔다', () => {
+    const store = createProgressStore(() => memoryStorage());
+    const a = store.getState().createNotebook('A', ['robust', 'latency', 'issue']);
+    const b = store.getState().createNotebook('B', ['issue', 'surface', 'robust']);
+    const c = store.getState().createNotebook('C', ['address']);
+    // 고른 순서와 상관없이 학습장 목록 순서(B → A)대로, 각 학습장 안의 순서는 그대로
+    const id = store.getState().mergeNotebooks([a, b], '  합본  ')!;
+    const s = store.getState();
+    expect(s.notebooks.map((n) => n.id)).toEqual([id, c, b, a]);
+    expect(s.notebooks[0]).toMatchObject({ name: '합본', ids: ['issue', 'surface', 'robust', 'latency'] });
+    expect(s.notebooks.find((n) => n.id === a)!.ids).toEqual(['robust', 'latency', 'issue']);
+  });
+
+  it('학습장 합치기: 기존 학습장 삭제를 고르면 합친 학습장만 지운다', () => {
+    const store = createProgressStore(() => memoryStorage());
+    const a = store.getState().createNotebook('시험 직전', ['robust']);
+    const b = store.getState().createNotebook('자주 틀림', ['latency', 'robust']);
+    const c = store.getState().createNotebook('남는 학습장', ['address']);
+    const id = store.getState().mergeNotebooks([a, b], '', { deleteSources: true })!;
+    const s = store.getState();
+    expect(s.notebooks.map((n) => n.id)).toEqual([id, c]);
+    // 이름을 비우면 기본 이름
+    expect(s.notebooks[0]).toMatchObject({ name: '자주 틀림 + 시험 직전', ids: ['latency', 'robust'] });
+  });
+
+  it('학습장 합치기: 있는 학습장이 2개 미만이면 아무것도 하지 않는다', () => {
+    const store = createProgressStore(() => memoryStorage());
+    const a = store.getState().createNotebook('A', ['robust']);
+    const before = store.getState().notebooks;
+    expect(store.getState().mergeNotebooks([a], '하나', { deleteSources: true })).toBeNull();
+    expect(store.getState().mergeNotebooks([a, 'nb-없음'], '없는 것', { deleteSources: true })).toBeNull();
+    expect(store.getState().notebooks).toBe(before);
+  });
+
+  it('합친 학습장 기본 이름 — 짧으면 이어 붙이고 길면 "… 외 N개"', () => {
+    expect(mergedNotebookName([{ name: '시험 직전' }, { name: '자주 틀림' }])).toBe('시험 직전 + 자주 틀림');
+    const long = [{ name: '오답노트 11/11 · 진행한 단어' }, { name: '오답노트 11/11 · 남은 단어' }, { name: 'C' }];
+    expect(mergedNotebookName(long)).toBe('오답노트 11/11 · 진행한 단어 외 2개');
+    const huge = mergedNotebookName([{ name: '가'.repeat(NOTEBOOK_NAME_MAX) }, { name: 'B' }]);
+    expect(huge.length).toBeLessThanOrEqual(NOTEBOOK_NAME_MAX);
+    expect(huge.endsWith(' 외 1개')).toBe(true);
+    expect(mergedNotebookName([])).toBe('합친 학습장');
   });
 
   it('오답노트를 통째로 학습장으로 — 이후 오답노트가 바뀌어도 학습장은 그대로', () => {

@@ -1,12 +1,21 @@
 /** 학습장 — 직접 고른 단어만 모아 두고 반복해서 학습한다 */
-import { ArrowLeft, BookMarked, Check, CopyPlus, Layers, ListChecks, Pencil, Plus, Search, SearchX, Trash2, X } from 'lucide-react';
+import { ArrowLeft, BookMarked, Check, CopyPlus, Layers, ListChecks, Merge, Pencil, Plus, Search, SearchX, Trash2, X } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { ConfirmDialog, Dialog } from '../components/Dialog';
 import { Button, Card, Empty, Kbd, PageHeader, PosBadge, StatusDot } from '../components/ui';
 import { WindowList } from '../components/WindowList';
 import { WORD_BY_ID, WORDS } from '../data/words';
-import { cleanNotebookName, defaultNotebookName, wrongIdsByCount, wrongNotebookName } from '../lib/notebook';
+import {
+  cleanNotebookName,
+  defaultNotebookName,
+  mergedNotebookName,
+  mergeNotebookIds,
+  NOTEBOOK_NAME_MAX,
+  wrongIdsByCount,
+  wrongNotebookName,
+  type Notebook,
+} from '../lib/notebook';
 import type { Word } from '../lib/schema';
 import { notebookScope, scopeToParams } from '../lib/scope';
 import { searchWords } from '../lib/search';
@@ -61,7 +70,7 @@ function NameForm({ initial, confirmLabel, onCancel, onSubmit }: { initial: stri
         value={name}
         onChange={(e) => setName(e.target.value)}
         onFocus={(e) => e.currentTarget.select()}
-        maxLength={40}
+        maxLength={NOTEBOOK_NAME_MAX}
         aria-label="학습장 이름"
         autoComplete="off"
         className="w-full rounded-xl border border-line bg-surface px-3.5 py-2.5 text-[15px] outline-none focus:border-primary focus:ring-4 focus:ring-primary/10"
@@ -76,6 +85,133 @@ function NameForm({ initial, confirmLabel, onCancel, onSubmit }: { initial: stri
   );
 }
 
+/* ───── 학습장 합치기 ───── */
+
+/** 둘 이상의 학습장을 골라 단어 합집합으로 새 학습장을 만든다 — 열 때마다 새로 시작한다 */
+function MergeDialog({ open, notebooks, onCancel, onMerged }: { open: boolean; notebooks: Notebook[]; onCancel: () => void; onMerged: (id: string) => void }) {
+  return (
+    <Dialog open={open} onClose={onCancel} title="학습장 합치기" width="32rem">
+      <MergeForm notebooks={notebooks} onCancel={onCancel} onMerged={onMerged} />
+    </Dialog>
+  );
+}
+
+function MergeForm({ notebooks, onCancel, onMerged }: { notebooks: Notebook[]; onCancel: () => void; onMerged: (id: string) => void }) {
+  const mergeNotebooks = useProgress((s) => s.mergeNotebooks);
+  const [picked, setPicked] = useState<ReadonlySet<string>>(() => new Set());
+  /** 직접 고친 이름 — 고치기 전까지는 고른 학습장에 맞춘 기본 이름을 따라간다 */
+  const [typed, setTyped] = useState<string | null>(null);
+  const [removeSources, setRemoveSources] = useState(false);
+
+  // 학습장 목록 순서대로 — 스토어가 합치는 순서와 같다
+  const sources = useMemo(() => notebooks.filter((n) => picked.has(n.id)), [notebooks, picked]);
+  const suggested = mergedNotebookName(sources);
+  const { total, overlap } = useMemo(() => {
+    const total = knownIds(mergeNotebookIds(sources)).length;
+    return { total, overlap: sources.reduce((sum, n) => sum + knownIds(n.ids).length, 0) - total };
+  }, [sources]);
+  const ready = sources.length >= 2;
+
+  const toggle = (id: string) =>
+    setPicked((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+
+  return (
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        if (!ready) return;
+        const id = mergeNotebooks(
+          sources.map((n) => n.id),
+          cleanNotebookName(typed ?? suggested, suggested),
+          { deleteSources: removeSources },
+        );
+        if (id) onMerged(id);
+      }}
+    >
+      <p className="text-[14px] leading-relaxed text-ink-2">고른 학습장의 단어를 겹치지 않게 모아 새 학습장을 만들어요.</p>
+
+      <fieldset className="mt-4">
+        <legend className="mb-2 text-[13px] font-bold text-ink">
+          합칠 학습장 <span className="font-medium text-muted">· 2개 이상</span>
+        </legend>
+        <div className="max-h-60 divide-y divide-line overflow-y-auto rounded-xl border border-line">
+          {notebooks.map((nb) => {
+            const on = picked.has(nb.id);
+            return (
+              <label key={nb.id} className={`flex cursor-pointer items-center gap-3 px-3.5 py-2.5 ${on ? 'bg-primary-soft/50' : 'hover:bg-surface-2/60'}`}>
+                <input type="checkbox" checked={on} onChange={() => toggle(nb.id)} className="h-4 w-4 shrink-0 accent-[var(--primary)]" />
+                <span className="min-w-0 flex-1 truncate text-[14.5px] font-semibold">{nb.name}</span>
+                <span className="shrink-0 text-[12.5px] tabular-nums text-muted">{knownIds(nb.ids).length}개</span>
+              </label>
+            );
+          })}
+        </div>
+        <p className="mt-2 min-h-5 text-[12.5px] text-muted" role="status">
+          {ready ? (
+            <>
+              합치면 단어 <b className="font-semibold text-ink">{total}</b>개{overlap > 0 && ` · 겹치는 단어 ${overlap}개는 한 번만 담아요`}
+            </>
+          ) : (
+            `${2 - sources.length}개 더 고르세요`
+          )}
+        </p>
+      </fieldset>
+
+      <label className="mt-3 block">
+        <span className="mb-2 block text-[13px] font-bold text-ink">새 학습장 이름</span>
+        <input
+          value={typed ?? (sources.length ? suggested : '')}
+          onChange={(e) => setTyped(e.target.value)}
+          placeholder={suggested}
+          maxLength={NOTEBOOK_NAME_MAX}
+          autoComplete="off"
+          className="w-full rounded-xl border border-line bg-surface px-3.5 py-2.5 text-[15px] outline-none placeholder:text-muted focus:border-primary focus:ring-4 focus:ring-primary/10"
+        />
+      </label>
+
+      <fieldset className="mt-5">
+        <legend className="mb-2 text-[13px] font-bold text-ink">기존 학습장</legend>
+        <div className="grid gap-2 sm:grid-cols-2">
+          {([false, true] as const).map((del) => {
+            const on = removeSources === del;
+            return (
+              <label
+                key={String(del)}
+                className={`flex cursor-pointer items-start gap-2.5 rounded-xl border px-3.5 py-3 ${
+                  on ? (del ? 'border-danger bg-danger-soft/60' : 'border-primary bg-primary-soft/50') : 'border-line hover:bg-surface-2/60'
+                }`}
+              >
+                <input type="radio" name="merge-sources" checked={on} onChange={() => setRemoveSources(del)} className={`mt-1 shrink-0 ${del ? 'accent-[var(--danger)]' : 'accent-[var(--primary)]'}`} />
+                <span>
+                  <span className="block text-[14px] font-semibold">{del ? '삭제하기' : '남겨두기'}</span>
+                  <span className="block text-[12.5px] leading-snug text-muted">{del ? '합친 뒤 고른 학습장은 지워요' : '고른 학습장은 그대로 둬요'}</span>
+                </span>
+              </label>
+            );
+          })}
+        </div>
+        {removeSources && (
+          <p className="mt-2 text-[12.5px] leading-snug text-danger">
+            {sources.length ? `고른 ${sources.length}개 학습장이 지워집니다.` : '고른 학습장이 지워집니다.'} 단어는 모두 새 학습장에 담기고, 학습 기록(복습 일정·오답노트)은 그대로 남아요.
+          </p>
+        )}
+      </fieldset>
+
+      <div className="mt-6 flex justify-end gap-2">
+        <Button onClick={onCancel}>취소</Button>
+        <Button type="submit" variant={removeSources ? 'danger' : 'primary'} disabled={!ready}>
+          <Merge size={16} /> {removeSources && ready ? `합치고 기존 ${sources.length}개 삭제` : '합치기'}
+        </Button>
+      </div>
+    </form>
+  );
+}
+
 /* ───── 학습장 목록 ───── */
 
 export function NotebooksPage() {
@@ -84,6 +220,7 @@ export function NotebooksPage() {
   const createNotebook = useProgress((s) => s.createNotebook);
   const navigate = useNavigate();
   const [naming, setNaming] = useState(false);
+  const [merging, setMerging] = useState(false);
 
   // 오답노트 화면의 기본 순서(많이 틀린 순)대로 담는다
   const wrongIds = useMemo(() => wrongIdsByCount(wrong, (id) => WORD_BY_ID.has(id)), [wrong]);
@@ -96,6 +233,11 @@ export function NotebooksPage() {
 
   const actions = (
     <div className="flex flex-wrap gap-2">
+      {notebooks.length >= 2 && (
+        <Button onClick={() => setMerging(true)} title="둘 이상의 학습장을 겹치는 단어 없이 하나로">
+          <Merge size={16} /> 학습장 합치기
+        </Button>
+      )}
       <Button onClick={fromWrong} disabled={!wrongIds.length} title={wrongIds.length ? undefined : '오답노트가 비어 있어요'}>
         <CopyPlus size={16} /> 오답노트로 만들기{wrongIds.length > 0 && ` (${wrongIds.length})`}
       </Button>
@@ -109,7 +251,7 @@ export function NotebooksPage() {
     <div className="anim-fade">
       <PageHeader
         title="학습장"
-        desc="직접 고른 단어만 모아 두고 반복해서 학습해요. 빈 학습장에 단어장을 검색해 담거나, 지금 오답노트를 통째로 옮겨 시작할 수 있어요."
+        desc="직접 고른 단어만 모아 두고 반복해서 학습해요. 빈 학습장에 단어장을 검색해 담거나, 지금 오답노트를 통째로 옮겨 시작할 수 있어요. 여러 학습장은 하나로 합칠 수 있어요."
         right={notebooks.length > 0 && actions}
       />
 
@@ -159,6 +301,15 @@ export function NotebooksPage() {
         confirmLabel="만들기"
         onCancel={() => setNaming(false)}
         onSubmit={create}
+      />
+      <MergeDialog
+        open={merging}
+        notebooks={notebooks}
+        onCancel={() => setMerging(false)}
+        onMerged={(id) => {
+          setMerging(false);
+          navigate(`/notebooks/${id}`);
+        }}
       />
     </div>
   );

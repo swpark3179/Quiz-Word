@@ -58,6 +58,19 @@ export function flashSplitNotebookName(part: 'done' | 'left', source: string): s
 /** 중복 없이 (처음 나온 순서 유지) */
 export const uniqueIds = (ids: string[]) => [...new Set(ids)];
 
+/** 학습장 합치기 — 넘겨준 학습장 순서대로, 각 학습장 안의 순서는 그대로 두고 겹치는 단어는 처음 나온 자리만 남긴다 */
+export const mergeNotebookIds = (books: { ids: string[] }[]) => uniqueIds(books.flatMap((b) => b.ids));
+
+/** 합친 학습장의 기본 이름 — "시험 직전 + 자주 틀림". 길면 "시험 직전 외 2개" (앞 이름을 줄여 뒷말이 남게) */
+export function mergedNotebookName(books: { name: string }[]): string {
+  const names = books.map((b) => b.name.trim()).filter(Boolean);
+  if (!names.length) return '합친 학습장';
+  const joined = names.join(' + ');
+  if (joined.length <= NOTEBOOK_NAME_MAX) return joined;
+  const suffix = ` 외 ${names.length - 1}개`;
+  return names[0].slice(0, NOTEBOOK_NAME_MAX - suffix.length).trimEnd() + suffix;
+}
+
 /** 가져온 파일의 학습장 목록을 검사한다 — 형식이 맞지 않는 항목은 버린다 */
 export function sanitizeNotebooks(raw: unknown): Notebook[] {
   if (!Array.isArray(raw)) return [];

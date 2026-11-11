@@ -222,6 +222,38 @@ async function main() {
   await page.keyboard.press('Escape');
   await page.waitForSelector(nbSearch);
 
+  // 학습장 합치기 — 겹치는 단어는 한 번만, 기존 학습장은 남겨 둔다
+  await page.click('text=학습장 목록');
+  await page.click('button:has-text("새 학습장")');
+  await page.waitForSelector('dialog[open] input[aria-label="학습장 이름"]');
+  await page.fill('dialog[open] input[aria-label="학습장 이름"]', '합치기 점검');
+  await page.keyboard.press('Enter');
+  await page.waitForSelector(nbSearch);
+  for (const q of ['escalate', 'robust']) {
+    await page.fill(nbSearch, q);
+    await page.waitForTimeout(80);
+    await page.keyboard.press('Enter');
+  }
+  await page.click('text=학습장 목록');
+  const nbLinks = 'main a[href^="#/notebooks/"]';
+  await page.waitForSelector(nbLinks);
+  const booksBefore = await page.locator(nbLinks).count();
+  await page.click('button:has-text("학습장 합치기")');
+  await page.waitForSelector('dialog[open] input[type="checkbox"]');
+  // 맨 위 두 학습장 = 방금 만든 '합치기 점검'(escalate, robust) 과 앞의 학습장(escalate)
+  const boxes = page.locator('dialog[open] input[type="checkbox"]');
+  await boxes.nth(0).check();
+  await boxes.nth(1).check();
+  const preview = await page.locator('dialog[open] [role="status"]').innerText();
+  preview.includes('겹치는 단어 1개') ? ok('합치기 미리보기 (겹치는 단어 수)') : fail(`합치기 미리보기가 이상함: ${preview}`);
+  await shot(page, '11b-notebook-merge');
+  await page.click('dialog[open] button[type="submit"]');
+  await page.waitForSelector(nbSearch);
+  (await inBook()) === 2 ? ok('학습장 합치기 (겹치는 단어는 한 번만)') : fail(`합친 학습장 단어 수 ${await inBook()}`);
+  await page.click('text=학습장 목록');
+  await page.waitForSelector(nbLinks);
+  (await page.locator(nbLinks).count()) === booksBefore + 1 ? ok('합친 뒤 기존 학습장은 남아 있음') : fail('합친 뒤 학습장 수가 이상함');
+
   // 오답노트·복습·설정
   await page.goto(`${BASE}/wrong`);
   await page.waitForTimeout(150);
