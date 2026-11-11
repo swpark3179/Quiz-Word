@@ -1,0 +1,516 @@
+[
+ {
+  "id": "general",
+  "word": "general",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈdʒenrəl",
+  "meaning": "① 일반적인, 범용의 ② 대략적인, 막연한 ③ (명사) 장군",
+  "level": 2
+ },
+ {
+  "id": "generalist",
+  "word": "generalist",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˈdʒenrəlɪst",
+  "meaning": "범용형(의) — 한 가지에 특화되지 않고 여러 일을 두루 맡는 사람·것 (↔ specialist)",
+  "level": 6
+ },
+ {
+  "id": "generalize",
+  "word": "generalize",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈdʒenrəlaɪz",
+  "meaning": "일반화하다 — 본 적 없는 경우에도 같은 판단을 적용하다",
+  "level": 5
+ },
+ {
+  "id": "generate",
+  "word": "generate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈdʒenəreɪt",
+  "meaning": "생성하다, 만들어 내다",
+  "level": 4
+ },
+ {
+  "id": "generation",
+  "word": "generation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌdʒenəˈreɪʃn",
+  "meaning": "① 생성 — (모델이) 텍스트·코드를 만들어 내는 것 ② 세대",
+  "level": 3
+ },
+ {
+  "id": "generic",
+  "word": "generic",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "dʒəˈnerɪk",
+  "meaning": "일반적인, 특정하지 않은",
+  "level": 5
+ },
+ {
+  "id": "glitch",
+  "word": "glitch",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ɡlɪtʃ",
+  "meaning": "(일시적인) 작은 오류, 결함",
+  "level": 6
+ },
+ {
+  "id": "glob",
+  "word": "glob",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ɡlɑːb",
+  "meaning": "글롭 — *.ts 같은 와일드카드 패턴으로 파일 경로를 찾는 방식 (Claude Code 의 Glob 도구)",
+  "level": 6
+ },
+ {
+  "id": "global",
+  "word": "global",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈɡloʊbl",
+  "meaning": "전역의, 전체에 적용되는 / 세계적인",
+  "level": 3
+ },
+ {
+  "id": "golden",
+  "word": "golden",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈɡoʊldən",
+  "meaning": "기준 정답의 — golden answer/dataset: 미리 정해 둔 모범 정답(세트)",
+  "level": 3
+ },
+ {
+  "id": "grace-period",
+  "word": "grace period",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈɡreɪs ˌpɪriəd",
+  "meaning": "유예 기간",
+  "level": 6
+ },
+ {
+  "id": "gradually",
+  "word": "gradually",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈɡrædʒuəli",
+  "meaning": "점차, 서서히",
+  "level": 3
+ },
+ {
+  "id": "grant",
+  "word": "grant",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ɡrænt",
+  "meaning": "(권한을) 부여하다 / 부여된 권한",
+  "level": 4
+ },
+ {
+  "id": "grep",
+  "word": "grep",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ɡrep",
+  "meaning": "grep 검색(하다) — 파일 내용에서 문자열·정규식 패턴을 찾다",
+  "level": 6
+ },
+ {
+  "id": "grounding",
+  "word": "grounding",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɡraʊndɪŋ",
+  "meaning": "근거 대기 — 답을 원문·자료에 근거하게 하는 것 (direct-quote grounding: 직접 인용으로 근거 잡기)",
+  "level": 6
+ },
+ {
+  "id": "growth",
+  "word": "growth",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ɡroʊθ",
+  "meaning": "증가, 커짐 / (grow) 커지다, 늘어나다",
+  "level": 2
+ },
+ {
+  "id": "guarantee",
+  "word": "guarantee",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˌɡærənˈtiː",
+  "meaning": "보장하다, 반드시 ~이 되게 하다 / 보장",
+  "level": 4
+ },
+ {
+  "id": "guard",
+  "word": "guard",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ɡɑːrd",
+  "meaning": "방지 장치, 안전장치 / 지키다, 막다",
+  "level": 3
+ },
+ {
+  "id": "guardrail",
+  "word": "guardrail",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɡɑːrdreɪl",
+  "meaning": "가드레일 — 모델·시스템이 벗어나지 않게 정해 둔 안전장치·규칙",
+  "level": 6
+ },
+ {
+  "id": "guidance",
+  "word": "guidance",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɡaɪdns",
+  "meaning": "① 지침, 안내 — 어떻게 하라고 알려 주는 내용 ② 지도, 조언",
+  "level": 4
+ },
+ {
+  "id": "guide",
+  "word": "guide",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ɡaɪd",
+  "meaning": "① 안내서, 지침서 (style guide: 스타일 가이드) ② 이끌다, 방향을 잡아 주다 ③ 안내자",
+  "level": 2
+ },
+ {
+  "id": "guideline",
+  "word": "guideline",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɡaɪdlaɪn",
+  "meaning": "지침, 가이드라인 (주로 복수 guidelines)",
+  "level": 4
+ },
+ {
+  "id": "hallucination",
+  "word": "hallucination",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "həˌluːsɪˈneɪʃn",
+  "meaning": "환각 — 모델이 사실이 아닌 내용을 그럴듯하게 지어내는 것",
+  "level": 6
+ },
+ {
+  "id": "hand",
+  "word": "hand",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "hænd",
+  "meaning": "① 건네다, 넘겨주다 (hand off: 인계하다, hand back: 돌려주다) ② 손 ③ (at hand) 지금 다루는 (on hand) 바로 쓸 수 있게 갖춘",
+  "level": 2
+ },
+ {
+  "id": "hand-written",
+  "word": "hand-written",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌhænd ˈrɪtn",
+  "meaning": "손으로 직접 작성한 — 라이브러리·자동 생성이 아닌",
+  "level": 3
+ },
+ {
+  "id": "handle",
+  "word": "handle",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈhændl",
+  "meaning": "① 처리하다, 다루다 — handler: 처리기(핸들러) ② (handle time) 처리 시간",
+  "level": 3
+ },
+ {
+  "id": "handoff",
+  "word": "handoff",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈhændɔːf",
+  "meaning": "인계, 넘겨주기 — 작업·맥락을 다음 담당(사람·에이전트)에게 넘기는 것",
+  "level": 6
+ },
+ {
+  "id": "hang",
+  "word": "hang",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "hæŋ",
+  "meaning": "(프로그램이) 응답 없이 멈춰 있다",
+  "level": 3
+ },
+ {
+  "id": "hardcode",
+  "word": "hardcode",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌhɑːrdˈkoʊd",
+  "meaning": "하드코딩하다 — 값을 설정·변수로 빼지 않고 코드에 직접 박아 넣다",
+  "level": 6
+ },
+ {
+  "id": "harmful",
+  "word": "harmful",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈhɑːrmfl",
+  "meaning": "해로운, 유해한 — harmlessness: 무해성(해롭지 않음)",
+  "level": 3
+ },
+ {
+  "id": "harness",
+  "word": "harness",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈhɑːrnɪs",
+  "meaning": "① 하네스 — 모델을 감싸 도구 실행·권한·루프를 관리하는 실행 틀 ② (힘을) 활용하다",
+  "level": 6
+ },
+ {
+  "id": "hash",
+  "word": "hash",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "hæʃ",
+  "meaning": "해시(값) — 데이터를 고정 길이 값으로 바꾼 것 / 해시하다",
+  "level": 6
+ },
+ {
+  "id": "header",
+  "word": "header",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈhedər",
+  "meaning": "① (문서의) 머리글, 섹션 제목 ② (HTTP·파일의) 헤더 — 본문 앞에 붙는 정보",
+  "level": 4
+ },
+ {
+  "id": "headless",
+  "word": "headless",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈhedləs",
+  "meaning": "화면(UI) 없이 실행하는",
+  "level": 6
+ },
+ {
+  "id": "healthcare",
+  "word": "healthcare",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈhelθker",
+  "meaning": "의료, 보건 (의료 서비스)",
+  "level": 4
+ },
+ {
+  "id": "helper",
+  "word": "helper",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈhelpər",
+  "meaning": "① 헬퍼 — 공통 작업을 돕는 보조 함수·코드 ② 도우미, 조수",
+  "level": 3
+ },
+ {
+  "id": "heuristic",
+  "word": "heuristic",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "hjʊˈrɪstɪk",
+  "meaning": "경험적 규칙, 어림 규칙",
+  "level": 6
+ },
+ {
+  "id": "hierarchy",
+  "word": "hierarchy",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈhaɪərɑːrki",
+  "meaning": "계층 구조 (class hierarchy: 클래스 상속 구조)",
+  "level": 5
+ },
+ {
+  "id": "high-level",
+  "word": "high-level",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌhaɪ ˈlevl",
+  "meaning": "① 큰 그림의, 상위 수준의 (세부가 아닌 전체적인) ② 고위급의",
+  "level": 4
+ },
+ {
+  "id": "highest-impact",
+  "word": "highest-impact",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌhaɪɪst ˈɪmpækt",
+  "meaning": "효과가 가장 큰, 가장 큰 영향을 주는",
+  "level": 4
+ },
+ {
+  "id": "highly",
+  "word": "highly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈhaɪli",
+  "meaning": "① 매우, 대단히 (highly confident: 매우 확신하는) ② 높이, 좋게 (평가하다)",
+  "level": 2
+ },
+ {
+  "id": "hint",
+  "word": "hint",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "hɪnt",
+  "meaning": "① 힌트, 단서, 조언 ② 넌지시 알리다, 암시하다",
+  "level": 2
+ },
+ {
+  "id": "hipaa",
+  "word": "HIPAA",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˈhɪpə",
+  "meaning": "미국 의료정보 보호법 — 환자 건강 정보의 취급 기준을 정한 법",
+  "level": 6
+ },
+ {
+  "id": "historical",
+  "word": "historical",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "hɪˈstɔːrɪkl",
+  "meaning": "과거의, 이력의 (지난 기록에 바탕을 둔) / 역사의",
+  "level": 3
+ },
+ {
+  "id": "history",
+  "word": "history",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈhɪstri",
+  "meaning": "① (대화·작업의) 기록, 이력 (conversation history: 대화 기록) ② (주문·거래) 내역 ③ 역사",
+  "level": 2
+ },
+ {
+  "id": "hit",
+  "word": "hit",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "hɪt",
+  "meaning": "① (요청이 대상에) 닿다, 보내지다 ② (한도에) 걸리다 / (캐시) 적중",
+  "level": 2
+ },
+ {
+  "id": "hold",
+  "word": "hold",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "hoʊld",
+  "meaning": "① (규칙·정책이) 지켜지다, 유효하다 ② 담다, 보유하다, 유지하다",
+  "level": 2
+ },
+ {
+  "id": "honor",
+  "word": "honor",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈɑːnər",
+  "meaning": "(요청·설정을) 받아들여 지키다, 반영하다 / 존중하다",
+  "level": 4
+ },
+ {
+  "id": "hook",
+  "word": "hook",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "hʊk",
+  "meaning": "훅 — 특정 이벤트(도구 호출 전후 등)에 자동으로 실행되는 코드·명령",
+  "level": 4
+ },
+ {
+  "id": "host",
+  "word": "host",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "hoʊst",
+  "meaning": "① 호스트 — 프로그램이 실행되는 컴퓨터·서버 ② (서비스를) 호스팅하다, (행사를) 주최하다 ③ 주인, 진행자",
+  "level": 3
+ }
+]

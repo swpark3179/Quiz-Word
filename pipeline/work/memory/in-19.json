@@ -1,0 +1,512 @@
+[
+ {
+  "id": "proportionally",
+  "word": "proportionally",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "prəˈpɔːrʃənəli",
+  "meaning": "비례하여",
+  "level": 5
+ },
+ {
+  "id": "propose",
+  "word": "propose",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "prəˈpoʊz",
+  "meaning": "제안하다",
+  "level": 4
+ },
+ {
+  "id": "proprietary",
+  "word": "proprietary",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "prəˈpraɪəteri",
+  "meaning": "독자적인, 사내 전용의 — 특정 회사가 소유·개발한",
+  "level": 6
+ },
+ {
+  "id": "protocol",
+  "word": "protocol",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈproʊtəkɔːl",
+  "meaning": "프로토콜 — 통신·처리에서 지켜야 할 약속된 규약",
+  "level": 5
+ },
+ {
+  "id": "prototype",
+  "word": "prototype",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈproʊtətaɪp",
+  "meaning": "① 시제품, 시험판, 프로토타입 ② 시제품을 만들다",
+  "level": 5
+ },
+ {
+  "id": "provide",
+  "word": "provide",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "prəˈvaɪd",
+  "meaning": "제공하다, 주다",
+  "level": 2
+ },
+ {
+  "id": "provider",
+  "word": "provider",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "prəˈvaɪdər",
+  "meaning": "제공자, 공급자 — 서비스·데이터·ID 를 제공하는 쪽 (identity provider: ID 공급자)",
+  "level": 4
+ },
+ {
+  "id": "proxy",
+  "word": "proxy",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈprɑːksi",
+  "meaning": "(요청을) 대신 전달하다 / 대리 서버",
+  "level": 6
+ },
+ {
+  "id": "publication",
+  "word": "publication",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌpʌblɪˈkeɪʃn",
+  "meaning": "① 발행, 게시 ② 출판물, 간행물",
+  "level": 4
+ },
+ {
+  "id": "publish",
+  "word": "publish",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈpʌblɪʃ",
+  "meaning": "① (글·보고서를) 발행하다, 출판하다 ② (웹 등에) 게시·공개하다",
+  "level": 3
+ },
+ {
+  "id": "purchase",
+  "word": "purchase",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈpɜːrtʃəs",
+  "meaning": "구매(하다)",
+  "level": 3
+ },
+ {
+  "id": "purchase-order",
+  "word": "purchase order",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈpɜːrtʃəs ˈɔːrdər",
+  "meaning": "구매 주문서(PO) — 사는 쪽이 보내는 공식 주문 문서",
+  "level": 5
+ },
+ {
+  "id": "pure",
+  "word": "pure",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "pjʊr",
+  "meaning": "① 순수한, 단순한 ② 깨끗한, 불순물 없는",
+  "level": 2
+ },
+ {
+  "id": "purpose",
+  "word": "purpose",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈpɜːrpəs",
+  "meaning": "① 목적, 용도 ② 의도, 의지",
+  "level": 2
+ },
+ {
+  "id": "qualifier",
+  "word": "qualifier",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkwɑːlɪfaɪər",
+  "meaning": "한정어, 단서 — 범위·조건을 좁히는 말",
+  "level": 6
+ },
+ {
+  "id": "quality",
+  "word": "quality",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkwɑːləti",
+  "meaning": "품질, 질",
+  "level": 2
+ },
+ {
+  "id": "quarterly",
+  "word": "quarterly",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈkwɔːrtərli",
+  "meaning": "분기별의 (3개월마다)",
+  "level": 5
+ },
+ {
+  "id": "query",
+  "word": "query",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈkwɪri",
+  "meaning": "① 질의, 검색어(쿼리) ② (데이터를) 조회하다",
+  "level": 6
+ },
+ {
+  "id": "queue",
+  "word": "queue",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "kjuː",
+  "meaning": "대기열, 큐 — 처리 차례를 기다리는 줄",
+  "level": 5
+ },
+ {
+  "id": "quietly",
+  "word": "quietly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈkwaɪətli",
+  "meaning": "조용히, 알리지 않고 (silently 와 비슷)",
+  "level": 2
+ },
+ {
+  "id": "rag",
+  "word": "RAG",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ræɡ",
+  "meaning": "검색 증강 생성 — 관련 문서를 검색해 프롬프트에 넣고 답하게 하는 방식",
+  "level": 6
+ },
+ {
+  "id": "raise",
+  "word": "raise",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "reɪz",
+  "meaning": "① (수치·한도를) 올리다 ② (문제를) 제기하다, (예외를) 발생시키다",
+  "level": 2
+ },
+ {
+  "id": "ramp",
+  "word": "ramp",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ræmp",
+  "meaning": "(ramp up) 점차 늘리다 / 점진적 증가",
+  "level": 5
+ },
+ {
+  "id": "random",
+  "word": "random",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈrændəm",
+  "meaning": "① 무작위의, 임의의 ② 불규칙한, 제멋대로인 ③ (at random) 아무렇게나",
+  "level": 3
+ },
+ {
+  "id": "randomly",
+  "word": "randomly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈrændəmli",
+  "meaning": "무작위로, 임의로",
+  "level": 3
+ },
+ {
+  "id": "range",
+  "word": "range",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "reɪndʒ",
+  "meaning": "범위, 폭",
+  "level": 3
+ },
+ {
+  "id": "rank",
+  "word": "rank",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ræŋk",
+  "meaning": "순위를 매기다 / 순위",
+  "level": 3
+ },
+ {
+  "id": "rarely",
+  "word": "rarely",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈrerli",
+  "meaning": "거의 ~하지 않는, 드물게",
+  "level": 3
+ },
+ {
+  "id": "rate",
+  "word": "rate",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "reɪt",
+  "meaning": "① 평가하다, 점수를 매기다 ② 비율, 요금",
+  "level": 2
+ },
+ {
+  "id": "rate-limit",
+  "word": "rate limit",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈreɪt ˌlɪmɪt",
+  "meaning": "요청 한도, 속도 제한 — 일정 시간 동안 보낼 수 있는 요청·토큰 수의 상한 (429 rate_limit_error)",
+  "level": 6
+ },
+ {
+  "id": "raw",
+  "word": "raw",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "rɔː",
+  "meaning": "가공하지 않은, 원본 그대로의",
+  "level": 4
+ },
+ {
+  "id": "re-enable",
+  "word": "re-enable",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːɪˈneɪbl",
+  "meaning": "(꺼 두었던 것을) 다시 켜다, 재활성화하다",
+  "level": 5
+ },
+ {
+  "id": "re-gather",
+  "word": "re-gather",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːˈɡæðər",
+  "meaning": "다시 모으다, 다시 수집하다",
+  "level": 4
+ },
+ {
+  "id": "re-read",
+  "word": "re-read",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːˈriːd",
+  "meaning": "다시 읽다",
+  "level": 2
+ },
+ {
+  "id": "re-run",
+  "word": "re-run",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˌriːˈrʌn",
+  "meaning": "다시 실행하다, 재실행",
+  "level": 4
+ },
+ {
+  "id": "reach",
+  "word": "reach",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "riːtʃ",
+  "meaning": "① (시스템·대상에) 닿다, 접근하다 ② (목표·결론에) 이르다",
+  "level": 2
+ },
+ {
+  "id": "reaction",
+  "word": "reaction",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "riˈækʃn",
+  "meaning": "① 반응 ② (화학) 반응",
+  "level": 2
+ },
+ {
+  "id": "read-only",
+  "word": "read-only",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌriːd ˈoʊnli",
+  "meaning": "읽기 전용의 (읽기만 되고 수정은 안 되는)",
+  "level": 4
+ },
+ {
+  "id": "readable",
+  "word": "readable",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈriːdəbl",
+  "meaning": "① 읽기 쉬운, 알아보기 쉬운 ② (기계가) 읽을 수 있는",
+  "level": 3
+ },
+ {
+  "id": "recall",
+  "word": "recall",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "rɪˈkɔːl",
+  "meaning": "① 떠올리다, 기억해 내다 ② 재현율 — 찾아야 할 것 중 실제로 찾아낸 비율",
+  "level": 4
+ },
+ {
+  "id": "receiver",
+  "word": "receiver",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "rɪˈsiːvər",
+  "meaning": "① 받는 사람, 수신자 ② 수신기, 수신부",
+  "level": 3
+ },
+ {
+  "id": "recent",
+  "word": "recent",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈriːsnt",
+  "meaning": "최근의, 근래의",
+  "level": 2
+ },
+ {
+  "id": "recently",
+  "word": "recently",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈriːsntli",
+  "meaning": "최근에, 얼마 전에",
+  "level": 2
+ },
+ {
+  "id": "recheck",
+  "word": "recheck",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːˈtʃek",
+  "meaning": "다시 확인하다, 재점검하다",
+  "level": 3
+ },
+ {
+  "id": "recommend",
+  "word": "recommend",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌrekəˈmend",
+  "meaning": "권하다, 추천하다 — recommended (형) 권장되는",
+  "level": 3
+ },
+ {
+  "id": "recompute",
+  "word": "recompute",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːkəmˈpjuːt",
+  "meaning": "다시 계산하다, 재계산하다",
+  "level": 5
+ },
+ {
+  "id": "record",
+  "word": "record",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈrekərd",
+  "meaning": "① 기록 ② (데이터) 레코드 — 데이터 한 건 ③ 기록하다",
+  "level": 2
+ },
+ {
+  "id": "recovery",
+  "word": "recovery",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "rɪˈkʌvəri",
+  "meaning": "복구, 회복 — recover (동) 되찾다, 복구하다",
+  "level": 4
+ },
+ {
+  "id": "red-team",
+  "word": "red team",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈred tiːm",
+  "meaning": "레드팀 — 일부러 공격해 약점을 찾는 팀 (red-teaming: 모의 공격 시험)",
+  "level": 6
+ },
+ {
+  "id": "redirect",
+  "word": "redirect",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːdəˈrekt",
+  "meaning": "(흐름·요청을) 다른 곳으로 돌리다",
+  "level": 5
+ }
+]

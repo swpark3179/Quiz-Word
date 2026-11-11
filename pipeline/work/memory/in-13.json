@@ -1,0 +1,515 @@
+[
+ {
+  "id": "integer",
+  "word": "integer",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɪntɪdʒər",
+  "meaning": "정수",
+  "level": 5
+ },
+ {
+  "id": "integration",
+  "word": "integration",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌɪntɪˈɡreɪʃən",
+  "meaning": "① 연동, 통합 — 다른 시스템·서비스에 붙여 쓰는 것 ② (CI의) 지속적 통합",
+  "level": 5
+ },
+ {
+  "id": "intelligence",
+  "word": "intelligence",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ɪnˈtelɪdʒəns",
+  "meaning": "① 지능 ② (수집·분석된) 정보, 첩보",
+  "level": 3
+ },
+ {
+  "id": "interact",
+  "word": "interact",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌɪntərˈækt",
+  "meaning": "상호 작용하다, 서로 영향을 주고받다 — interactive: 대화형의, 사람이 응답하며 쓰는",
+  "level": 4
+ },
+ {
+  "id": "intercept",
+  "word": "intercept",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌɪntərˈsept",
+  "meaning": "(중간에서) 가로채다",
+  "level": 5
+ },
+ {
+  "id": "interleaved-thinking",
+  "word": "interleaved thinking",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˌɪntərˈliːvd ˈθɪŋkɪŋ",
+  "meaning": "인터리브드 사고 — 도구 호출 사이사이에도 사고 블록을 끼워 넣어, 도구 결과를 보고 다시 추론하는 방식",
+  "level": 6
+ },
+ {
+  "id": "intermediate",
+  "word": "intermediate",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌɪntərˈmiːdiət",
+  "meaning": "중간(단계)의",
+  "level": 4
+ },
+ {
+  "id": "internal",
+  "word": "internal",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ɪnˈtɜːrnl",
+  "meaning": "내부의, 사내의 — internally 내부적으로",
+  "level": 4
+ },
+ {
+  "id": "interpret",
+  "word": "interpret",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪnˈtɜːrprɪt",
+  "meaning": "해석하다, (의미를) 이해하다",
+  "level": 4
+ },
+ {
+  "id": "interval",
+  "word": "interval",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɪntərvl",
+  "meaning": "간격, 주기",
+  "level": 4
+ },
+ {
+  "id": "intervention",
+  "word": "intervention",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌɪntərˈvenʃn",
+  "meaning": "개입 — (다른 주체가) 끼어들어 처리함",
+  "level": 5
+ },
+ {
+  "id": "interview",
+  "word": "interview",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈɪntərvjuː",
+  "meaning": "① (질문하며) 의견을 묻다, 인터뷰하다 ② 면접, 인터뷰",
+  "level": 2
+ },
+ {
+  "id": "inventory",
+  "word": "inventory",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɪnvəntɔːri",
+  "meaning": "① (빠짐없는) 목록, 명세 ② 재고",
+  "level": 5
+ },
+ {
+  "id": "invoke",
+  "word": "invoke",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪnˈvoʊk",
+  "meaning": "(함수·도구·스킬을) 호출하다, 실행하다",
+  "level": 6
+ },
+ {
+  "id": "involve",
+  "word": "involve",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪnˈvɑːlv",
+  "meaning": "① (일·변경을) 수반하다, 포함하다 ② (사람을) 관여시키다",
+  "level": 3
+ },
+ {
+  "id": "isolate",
+  "word": "isolate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈaɪsəleɪt",
+  "meaning": "격리하다, 따로 떼어 놓다",
+  "level": 4
+ },
+ {
+  "id": "issue",
+  "word": "issue",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈɪʃuː",
+  "meaning": "① 문제, 이슈 ② (환불·토큰 등을) 내주다, 발행하다 — issuer: 발급자",
+  "level": 3
+ },
+ {
+  "id": "item",
+  "word": "item",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈaɪtəm",
+  "meaning": "① 항목, (목록의) 한 건 ② 물품, 품목",
+  "level": 2
+ },
+ {
+  "id": "iteration",
+  "word": "iteration",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌɪtəˈreɪʃn",
+  "meaning": "반복, (고치고 다시 해 보는) 한 회차",
+  "level": 6
+ },
+ {
+  "id": "itinerary",
+  "word": "itinerary",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "aɪˈtɪnəreri",
+  "meaning": "여행 일정(표)",
+  "level": 5
+ },
+ {
+  "id": "itpm",
+  "word": "ITPM",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌaɪ.tiː.piːˈem",
+  "meaning": "분당 입력 토큰 한도 (Input Tokens Per Minute)",
+  "level": 6
+ },
+ {
+  "id": "jailbreak",
+  "word": "jailbreak",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈdʒeɪlbreɪk",
+  "meaning": "탈옥 — 모델의 안전 규칙을 우회하도록 꾀는 공격(프롬프트)",
+  "level": 6
+ },
+ {
+  "id": "jitter",
+  "word": "jitter",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈdʒɪtər",
+  "meaning": "지터 — 재시도 간격에 섞는 무작위 지연 (여러 클라이언트가 같은 순간에 몰리지 않게)",
+  "level": 6
+ },
+ {
+  "id": "json-rpc",
+  "word": "JSON-RPC",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈdʒeɪsən ˌɑːr.piːˈsiː",
+  "meaning": "JSON-RPC — JSON 으로 원격 함수 호출을 주고받는 프로토콜 (MCP 의 메시지 형식)",
+  "level": 6
+ },
+ {
+  "id": "judge",
+  "word": "judge",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "dʒʌdʒ",
+  "meaning": "① 판단하다, 판정하다 ② 판정자 (LLM-as-a-judge)",
+  "level": 2
+ },
+ {
+  "id": "junior",
+  "word": "junior",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˈdʒuːniər",
+  "meaning": "① (경력·지위가) 낮은, 신입의 ② 후배, 하급자",
+  "level": 3
+ },
+ {
+  "id": "jwt",
+  "word": "JWT",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌdʒeɪ.dʌbljuːˈtiː",
+  "meaning": "JSON Web Token — 서명된 JSON 형식의 인증 토큰",
+  "level": 6
+ },
+ {
+  "id": "kafka",
+  "word": "Kafka",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkɑːfkə",
+  "meaning": "카프카(Apache Kafka) — 서비스 간 이벤트·메시지를 주고받는 분산 스트리밍 플랫폼",
+  "level": 6
+ },
+ {
+  "id": "key",
+  "word": "key",
+  "pos": [
+   "명사",
+   "형용사",
+   "동사"
+  ],
+  "ipa": "kiː",
+  "meaning": "① (API 등의) 키, 인증 키 ② (JSON 객체의) 키, 필드 이름 ③ 핵심적인, 주요한 ④ (keyed by) ~을 키로 삼다",
+  "level": 2
+ },
+ {
+  "id": "knowledge",
+  "word": "knowledge",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈnɑːlɪdʒ",
+  "meaning": "지식 — knowledge base 지식베이스",
+  "level": 2
+ },
+ {
+  "id": "knowledge-base",
+  "word": "knowledge base",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈnɑːlɪdʒ beɪs",
+  "meaning": "지식베이스 — 검색해 답을 찾을 수 있게 모아 둔 문서·정보 저장소",
+  "level": 5
+ },
+ {
+  "id": "lab",
+  "word": "lab",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "læb",
+  "meaning": "① 실험실, 연구소 (laboratory 의 줄임) ② (병원의) 임상 검사(실) — lab report 검사 결과지",
+  "level": 2
+ },
+ {
+  "id": "label",
+  "word": "label",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈleɪbl",
+  "meaning": "① (분류) 라벨, 레이블 — 데이터에 붙인 분류·정답 값 ② 라벨을 붙이다, 분류하다 ③ (labeled) 정답 라벨이 달린 ④ (단위 등의) 표시, 표기",
+  "level": 3
+ },
+ {
+  "id": "lack",
+  "word": "lack",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "læk",
+  "meaning": "~이 없다, 부족하다 / 부족",
+  "level": 3
+ },
+ {
+  "id": "larger-context",
+  "word": "larger-context",
+  "pos": [
+   "형용사구"
+  ],
+  "ipa": "ˈlɑːrdʒər ˈkɑːntekst",
+  "meaning": "(컨텍스트 창이) 더 큰 — 한 번에 더 많은 토큰을 담는 (모델)",
+  "level": 5
+ },
+ {
+  "id": "latency",
+  "word": "latency",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈleɪtənsi",
+  "meaning": "지연 시간 — 요청에서 응답까지 걸리는 시간",
+  "level": 6
+ },
+ {
+  "id": "launch",
+  "word": "launch",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "lɔːntʃ",
+  "meaning": "① 출시, 정식 공개 ② (프로그램을) 시작하다, 실행하다 (at launch: 시작할 때)",
+  "level": 3
+ },
+ {
+  "id": "lay-out",
+  "word": "lay out",
+  "pos": [
+   "동사구"
+  ],
+  "ipa": "ˌleɪ ˈaʊt",
+  "meaning": "① (내용을) 배치하다, 구성하다 ② (자세히) 펼쳐 설명하다, 정리해 보여 주다",
+  "level": 4
+ },
+ {
+  "id": "layer",
+  "word": "layer",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈleɪər",
+  "meaning": "계층, 층 — 시스템을 이루는 한 단계·부분",
+  "level": 4
+ },
+ {
+  "id": "layout",
+  "word": "layout",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈleɪaʊt",
+  "meaning": "배치, 구성, 레이아웃",
+  "level": 4
+ },
+ {
+  "id": "lead",
+  "word": "lead",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "liːd",
+  "meaning": "① (팀의) 리드, 책임자 ② 이끌다, (결과로) 이어지다 ③ leading 맨 앞의",
+  "level": 2
+ },
+ {
+  "id": "leaderboard",
+  "word": "leaderboard",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈliːdərbɔːrd",
+  "meaning": "리더보드, 순위표 — 모델 점수를 매겨 늘어놓은 공개 순위",
+  "level": 4
+ },
+ {
+  "id": "least",
+  "word": "least",
+  "pos": [
+   "부사구",
+   "부사"
+  ],
+  "ipa": "liːst",
+  "meaning": "① (at least) 적어도, 최소한 ② 가장 적게, 가장 덜",
+  "level": 2
+ },
+ {
+  "id": "leave",
+  "word": "leave",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "liːv",
+  "meaning": "① (~한 상태로) 두다, 남겨 두다 ② (leave out) 빼다, 제외하다 ③ (일을) 맡기다 ④ 떠나다",
+  "level": 2
+ },
+ {
+  "id": "legacy",
+  "word": "legacy",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˈleɡəsi",
+  "meaning": "레거시(의) — 오래되어 바꾸기 어려운 기존 시스템·코드",
+  "level": 6
+ },
+ {
+  "id": "legal",
+  "word": "legal",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈliːɡl",
+  "meaning": "법률의, 법적인",
+  "level": 3
+ },
+ {
+  "id": "legitimate",
+  "word": "legitimate",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "lɪˈdʒɪtɪmət",
+  "meaning": "정당한, 타당한 (근거가 있는)",
+  "level": 5
+ },
+ {
+  "id": "length",
+  "word": "length",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "leŋθ",
+  "meaning": "① (글·출력의) 길이, 분량 ② (시간의) 길이, 기간",
+  "level": 2
+ },
+ {
+  "id": "level",
+  "word": "level",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈlevl",
+  "meaning": "① (설정이 적용되는) 레벨, 범위 — user level 사용자 레벨 ② 수준, 정도",
+  "level": 2
+ },
+ {
+  "id": "lever",
+  "word": "lever",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈlevər",
+  "meaning": "지렛대, (조절) 수단 — 결과를 바꾸려고 손댈 수 있는 선택지",
+  "level": 5
+ }
+]

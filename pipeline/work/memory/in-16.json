@@ -1,0 +1,515 @@
+[
+ {
+  "id": "no-longer",
+  "word": "no longer",
+  "pos": [
+   "부사구"
+  ],
+  "ipa": "noʊ ˈlɔːŋɡər",
+  "meaning": "더 이상 ~ 않다",
+  "level": 2
+ },
+ {
+  "id": "noise",
+  "word": "noise",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "nɔɪz",
+  "meaning": "노이즈 — 핵심을 가리는 쓸모없는 정보·출력",
+  "level": 2
+ },
+ {
+  "id": "non-blocking",
+  "word": "non-blocking",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌnɑːn ˈblɑːkɪŋ",
+  "meaning": "막지 않는, 비차단의 — (오류가 나도) 진행을 멈추지 않는",
+  "level": 6
+ },
+ {
+  "id": "non-unique",
+  "word": "non-unique",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌnɑːn juˈniːk",
+  "meaning": "고유하지 않은 — 일치하는 대상이 여러 개인",
+  "level": 5
+ },
+ {
+  "id": "none",
+  "word": "none",
+  "pos": [
+   "대명사",
+   "명사"
+  ],
+  "ipa": "nʌn",
+  "meaning": "① 아무것도(아무도) ~ 않다, 하나도 ~ 않다 ② (tool_choice) 도구를 쓰지 않게 하는 설정값",
+  "level": 2
+ },
+ {
+  "id": "nor",
+  "word": "nor",
+  "pos": [
+   "접속사"
+  ],
+  "ipa": "nɔːr",
+  "meaning": "(neither A nor B) A도 B도 아니다",
+  "level": 3
+ },
+ {
+  "id": "normalize",
+  "word": "normalize",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈnɔːrməlaɪz",
+  "meaning": "(형식을) 표준 형태로 맞추다, 정규화하다",
+  "level": 6
+ },
+ {
+  "id": "note",
+  "word": "note",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "noʊt",
+  "meaning": "① 언급하다, 주목하다 ② 메모, 참고 사항",
+  "level": 2
+ },
+ {
+  "id": "notice",
+  "word": "notice",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈnoʊtɪs",
+  "meaning": "① 알아차리다 ② 공지, 통지",
+  "level": 2
+ },
+ {
+  "id": "nowhere",
+  "word": "nowhere",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈnoʊwer",
+  "meaning": "어디에도 ~ 없다(않다)",
+  "level": 2
+ },
+ {
+  "id": "null",
+  "word": "null",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "nʌl",
+  "meaning": "널(null) — 값이 없음을 나타내는 값 (nullable: null 허용)",
+  "level": 6
+ },
+ {
+  "id": "numeric",
+  "word": "numeric",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "nuːˈmerɪk",
+  "meaning": "숫자의, 수치로 된",
+  "level": 5
+ },
+ {
+  "id": "oauth",
+  "word": "OAuth",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈoʊ.ɔːθ",
+  "meaning": "OAuth — 비밀번호를 넘기지 않고 토큰으로 접근 권한을 위임하는 표준",
+  "level": 6
+ },
+ {
+  "id": "object",
+  "word": "object",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈɑːbdʒekt",
+  "meaning": "① (JSON·프로그래밍의) 객체 ② 물체, 대상 ③ (동사, əbˈdʒekt) 반대하다, 이의를 제기하다",
+  "level": 3
+ },
+ {
+  "id": "observe",
+  "word": "observe",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "əbˈzɜːrv",
+  "meaning": "관찰하다, 알아차리다",
+  "level": 3
+ },
+ {
+  "id": "occupy",
+  "word": "occupy",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈɑːkjupaɪ",
+  "meaning": "(공간을) 차지하다",
+  "level": 4
+ },
+ {
+  "id": "offender",
+  "word": "offender",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "əˈfendər",
+  "meaning": "위반자 — repeat offender: 같은 위반을 되풀이하는 사용자",
+  "level": 5
+ },
+ {
+  "id": "offer",
+  "word": "offer",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈɔːfər",
+  "meaning": "① (선택지로) 제안하다, 제공하다 ② (offer to do) ~하겠다고 제안하다 ③ 제안, 제의",
+  "level": 2
+ },
+ {
+  "id": "oidc",
+  "word": "OIDC",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌoʊ.aɪ.diːˈsiː",
+  "meaning": "OpenID Connect — OAuth 위에서 ID 토큰으로 신원을 확인하는 표준",
+  "level": 6
+ },
+ {
+  "id": "on-call",
+  "word": "on-call",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˈɑːn kɔːl",
+  "meaning": "온콜(대기 근무)의 — 장애가 나면 바로 대응하도록 대기하는",
+  "level": 6
+ },
+ {
+  "id": "on-its-own",
+  "word": "on its own",
+  "pos": [
+   "부사구"
+  ],
+  "ipa": "ɑːn ɪts ˈoʊn",
+  "meaning": "① 스스로, 혼자 힘으로 ② 그것만으로",
+  "level": 2
+ },
+ {
+  "id": "onboard",
+  "word": "onboard",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈɑːnbɔːrd",
+  "meaning": "(새 구성원을) 합류시키다, 적응시키다 — newly onboarded 새로 합류한",
+  "level": 6
+ },
+ {
+  "id": "once",
+  "word": "once",
+  "pos": [
+   "부사",
+   "접속사"
+  ],
+  "ipa": "wʌns",
+  "meaning": "① 한 번 ② (과거에) 한때, 한번은 ③ (접속사) 일단 ~하면, ~하자마자",
+  "level": 2
+ },
+ {
+  "id": "one-at-a-time",
+  "word": "one at a time",
+  "pos": [
+   "부사구"
+  ],
+  "ipa": "ˌwʌn ət ə ˈtaɪm",
+  "meaning": "한 번에 하나씩",
+  "level": 2
+ },
+ {
+  "id": "one-line",
+  "word": "one-line",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌwʌn ˈlaɪn",
+  "meaning": "한 줄짜리의, 아주 짧은",
+  "level": 3
+ },
+ {
+  "id": "onto",
+  "word": "onto",
+  "pos": [
+   "전치사"
+  ],
+  "ipa": "ˈɑːntuː",
+  "meaning": "~ 위로, ~ 쪽으로 (옮겨서)",
+  "level": 2
+ },
+ {
+  "id": "operation",
+  "word": "operation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌɑːpəˈreɪʃn",
+  "meaning": "① 작업, 연산 ② 운영, 가동",
+  "level": 3
+ },
+ {
+  "id": "operator",
+  "word": "operator",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɑːpəreɪtər",
+  "meaning": "① (시스템) 운영자, 운영 담당자 ② (프로그래밍) 연산자",
+  "level": 4
+ },
+ {
+  "id": "opposing-counsel",
+  "word": "opposing counsel",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "əˌpoʊzɪŋ ˈkaʊnsl",
+  "meaning": "상대측 변호인",
+  "level": 6
+ },
+ {
+  "id": "ops",
+  "word": "ops",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ɑːps",
+  "meaning": "운영팀, 운영 담당 (operations의 줄임말)",
+  "level": 6
+ },
+ {
+  "id": "optimal",
+  "word": "optimal",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈɑːptɪməl",
+  "meaning": "최적의",
+  "level": 5
+ },
+ {
+  "id": "option",
+  "word": "option",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɑːpʃn",
+  "meaning": "① 선택지, 선택 사항 ② (프로그램·명령의) 옵션, 설정 항목",
+  "level": 2
+ },
+ {
+  "id": "optional",
+  "word": "optional",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈɑːpʃənl",
+  "meaning": "선택적인, 필수가 아닌",
+  "level": 4
+ },
+ {
+  "id": "orchestration",
+  "word": "orchestration",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌɔːrkɪˈstreɪʃn",
+  "meaning": "오케스트레이션 — 여러 에이전트·작업을 나누고 배분해 전체 흐름을 조율하는 것",
+  "level": 6
+ },
+ {
+  "id": "organization",
+  "word": "organization",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌɔːrɡənəˈzeɪʃn",
+  "meaning": "① 조직, 단체 ② 구성, 정리(체계화)",
+  "level": 3
+ },
+ {
+  "id": "original",
+  "word": "original",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "əˈrɪdʒənl",
+  "meaning": "원래의, 처음 그대로의",
+  "level": 2
+ },
+ {
+  "id": "otherwise",
+  "word": "otherwise",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈʌðərwaɪz",
+  "meaning": "① 그렇지 않으면 ② 다르게, 다른 방식으로 ③ 그 외에는",
+  "level": 3
+ },
+ {
+  "id": "otpm",
+  "word": "OTPM",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌoʊ.tiː.piːˈem",
+  "meaning": "분당 출력 토큰 한도 (Output Tokens Per Minute)",
+  "level": 6
+ },
+ {
+  "id": "outbound",
+  "word": "outbound",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈaʊtbaʊnd",
+  "meaning": "밖으로 나가는, 송신의 (outbound request: 외부로 나가는 요청)",
+  "level": 6
+ },
+ {
+  "id": "outline",
+  "word": "outline",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈaʊtlaɪn",
+  "meaning": "① 개요, 윤곽 ② 개요를 잡다, 대략 설명하다",
+  "level": 4
+ },
+ {
+  "id": "output",
+  "word": "output",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈaʊtpʊt",
+  "meaning": "① 출력, 출력물, 결과물 ② 출력하다, 내보내다 ③ 생산량",
+  "level": 3
+ },
+ {
+  "id": "outweigh",
+  "word": "outweigh",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌaʊtˈweɪ",
+  "meaning": "~보다 더 크다, ~보다 우선하다",
+  "level": 5
+ },
+ {
+  "id": "overall",
+  "word": "overall",
+  "pos": [
+   "형용사",
+   "부사"
+  ],
+  "ipa": "ˌoʊvərˈɔːl",
+  "meaning": "전반적인, 전체적으로",
+  "level": 4
+ },
+ {
+  "id": "overhead",
+  "word": "overhead",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈoʊvərhed",
+  "meaning": "추가 부담 — 본 작업 외에 더 드는 시간·비용",
+  "level": 6
+ },
+ {
+  "id": "overlap",
+  "word": "overlap",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˌoʊvərˈlæp",
+  "meaning": "(일부가) 겹치다 / 겹침",
+  "level": 4
+ },
+ {
+  "id": "overly",
+  "word": "overly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈoʊvərli",
+  "meaning": "지나치게, 너무",
+  "level": 4
+ },
+ {
+  "id": "overnight",
+  "word": "overnight",
+  "pos": [
+   "부사",
+   "형용사"
+  ],
+  "ipa": "ˌoʊvərˈnaɪt",
+  "meaning": "밤사이에, 밤새 (처리되는)",
+  "level": 3
+ },
+ {
+  "id": "override",
+  "word": "override",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌoʊvərˈraɪd",
+  "meaning": "(기존 설정을) 덮어쓰다, 우선하다",
+  "level": 6
+ },
+ {
+  "id": "oversized",
+  "word": "oversized",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌoʊvərˈsaɪzd",
+  "meaning": "너무 큰, 크기 한도를 넘은",
+  "level": 5
+ },
+ {
+  "id": "overview",
+  "word": "overview",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈoʊvərvjuː",
+  "meaning": "개요, 큰 그림만 훑은 요약",
+  "level": 4
+ }
+]

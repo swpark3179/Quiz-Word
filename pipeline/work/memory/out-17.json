@@ -1,0 +1,285 @@
+{
+  "overwrite": {
+    "roots": [{ "part": "over", "ko": "위에" }, { "part": "write", "ko": "쓰다" }],
+    "story": "있던 글 위에(over) 새 글을 써서(write) 덮어 버린다 → 덮어쓰다",
+    "family": ["override", "rewrite", "overlay"]
+  },
+  "own-site": {
+    "roots": [{ "part": "own", "ko": "자기 자신의" }, { "part": "site", "ko": "사이트" }],
+    "story": "남의 장터가 아니라 그 가게 자신(own)의 사이트(site)에 관한 → 자사 사이트의"
+  },
+  "package": {
+    "roots": [{ "part": "pack", "ko": "꾸리다, 꾸러미" }, { "part": "-age", "ko": "~한 것" }],
+    "origin": "pack (중세 네덜란드어 pak: 꾸러미) + -age",
+    "story": "한데 꾸려(pack) 묶어 놓은 것(-age) → 패키지, 꾸러미 / 한데 묶다 → 포장하다",
+    "hook": "패키지 → '패키지 여행'처럼 한데 묶은 것 → 패키지, 묶음",
+    "family": ["pack", "packet", "unpack"]
+  },
+  "parallel": {
+    "roots": [{ "part": "par", "ko": "곁에, 나란히 (para)" }, { "part": "allel", "ko": "서로" }],
+    "origin": "그리스어 parallēlos (서로 곁에 나란한)",
+    "story": "서로(allel) 곁에(par) 나란히 달리는 두 선처럼 → 병렬의, 동시에 진행하는",
+    "hook": "패럴렐 → '패럴렐 유니버스'(평행 우주)처럼 나란히 → 병렬의",
+    "family": ["paragraph", "parameter", "paradox"]
+  },
+  "parameter": {
+    "roots": [{ "part": "para-", "ko": "곁에" }, { "part": "meter", "ko": "재다, 척도" }],
+    "origin": "그리스어 para (곁에) + metron (척도)",
+    "story": "함수 곁에(para) 두고 동작을 정해 주는 척도(meter) → 매개변수, 파라미터",
+    "hook": "퍼래미터 → 외래어 '파라미터' 그대로 → 매개변수",
+    "family": ["parallel", "meter", "diameter", "thermometer"]
+  },
+  "parcel": {
+    "roots": [{ "part": "par", "ko": "부분, 몫 (part)" }, { "part": "-cel", "ko": "작은" }],
+    "origin": "고대 프랑스어 parcelle (작은 조각)",
+    "story": "큰 짐에서 떼어 낸 작은(-cel) 몫(par)을 따로 싼 꾸러미 → 소포, 택배",
+    "family": ["part", "particle", "partial", "portion"]
+  },
+  "parent": {
+    "roots": [{ "part": "par", "ko": "낳다" }, { "part": "-ent", "ko": "~하는 사람" }],
+    "origin": "라틴어 parens (낳는 사람) ← parere (낳다)",
+    "story": "하위를 낳아(par) 띄운 쪽(-ent) → 부모, 상위 에이전트·프로세스",
+    "family": ["parental", "grandparent", "postpartum"]
+  },
+  "parse": {
+    "origin": "라틴어 pars (orationis) — (문장의) 부분, 품사",
+    "story": "문장을 부분(pars)별로 쪼개 무슨 성분인지 따진다 → 파싱하다, 분석해 읽어 내다",
+    "hook": "파스 → '파싱', '파서(parser)'의 그 말 → 파싱하다",
+    "family": ["part", "partial", "particle", "parcel"]
+  },
+  "partial": {
+    "roots": [{ "part": "part", "ko": "부분" }, { "part": "-ial", "ko": "~의" }],
+    "origin": "라틴어 partialis ← pars (부분)",
+    "story": "전체가 아니라 한 부분(part)만의 → 부분적인, 일부만의",
+    "family": ["part", "particle", "partition", "impartial"]
+  },
+  "particularly": {
+    "roots": [{ "part": "part", "ko": "부분" }, { "part": "-icul-", "ko": "작은" }, { "part": "-ar", "ko": "~의" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 particula (작은 부분)",
+    "story": "전체 가운데 작은 부분(particul) 하나만 콕 집어서 → 특히",
+    "family": ["particle", "particular", "part", "partial"]
+  },
+  "partition": {
+    "roots": [{ "part": "part", "ko": "나누다, 부분" }, { "part": "-ition", "ko": "~하는 것" }],
+    "origin": "라틴어 partitio (나눔)",
+    "story": "전체를 부분(part)들로 갈라 겹치지 않게 칸을 친다 → 나누다, 분할",
+    "hook": "파티션 → 사무실 책상 사이 '파티션' 칸막이 → 나누다, 분할",
+    "family": ["part", "partial", "apartment", "department"]
+  },
+  "partly": {
+    "roots": [{ "part": "part", "ko": "부분" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "전부는 아니고 한 부분(part)만큼만 → 부분적으로, 어느 정도는",
+    "family": ["partial", "apart", "particle"]
+  },
+  "passage": {
+    "roots": [{ "part": "pass", "ko": "지나가다" }, { "part": "-age", "ko": "~하는 것·곳" }],
+    "origin": "고대 프랑스어 passage (지나가는 길)",
+    "story": "글을 읽으며 지나가는(pass) 한 구간(-age) → (글의) 구절, 단락",
+    "family": ["pass", "passenger", "passport"]
+  },
+  "passenger": {
+    "roots": [{ "part": "pass", "ko": "지나가다, 건너가다" }, { "part": "-er", "ko": "~하는 사람" }],
+    "origin": "고대 프랑스어 passagier (길 가는 사람)",
+    "story": "탈것에 몸을 싣고 지나가는(pass) 사람(-er) → 승객, 탑승객",
+    "family": ["passage", "pass", "passport"]
+  },
+  "passing-test": {
+    "roots": [{ "part": "passing", "ko": "통과하는" }, { "part": "test", "ko": "테스트" }],
+    "story": "이미 통과하고(passing) 있는 테스트(test)에 관한 → 통과한 테스트의"
+  },
+  "paste": {
+    "origin": "후기 라틴어 pasta (반죽)",
+    "story": "끈적한 반죽·풀(pasta)로 종이를 붙이듯 복사한 것을 → 붙여 넣다 / 풀, 반죽",
+    "hook": "페이스트 → '카피 앤 페이스트'(복붙)의 붙 → 붙여 넣다",
+    "family": ["pasta", "pastry", "pastel"]
+  },
+  "path": {
+    "origin": "고대 영어 pæth (밟아 다져진 길)",
+    "story": "폴더를 하나씩 밟고 들어가 파일에 닿는 길 → (파일) 경로, 길",
+    "hook": "패스 → 길 찾는 '패스파인더'의 패스 → 길, 경로",
+    "family": ["pathway", "footpath", "pathfinder"]
+  },
+  "patient": {
+    "roots": [{ "part": "pati", "ko": "겪다, 견디다" }, { "part": "-ent", "ko": "~하는 (사람)" }],
+    "origin": "라틴어 patiens (견디는) ← pati (겪다)",
+    "story": "아픔을 겪으며(pati) 견디는 사람(-ent) → 환자 / 견디는 → 참을성 있는",
+    "family": ["passion", "passive", "patience", "compatible"]
+  },
+  "pattern": {
+    "origin": "고대 프랑스어 patron (본보기, 본)",
+    "story": "따라 찍어 낼 본(patron)이 있어 같은 모양이 되풀이된다 → 패턴, 반복되는 형식",
+    "hook": "패턴 → 옷감에 반복되는 '패턴' 무늬 → 반복되는 형식",
+    "family": ["patron", "paternal", "patriot"]
+  },
+  "pause": {
+    "origin": "그리스어 pausis (멈춤) → 라틴어 pausa",
+    "story": "하던 것을 잠깐 세워 두고 숨을 고른다 → 일시 중지하다, 잠시 멈추다",
+    "hook": "포즈 → 영상 '일시 정지(Pause)' 버튼 → 잠시 멈추다",
+    "family": ["repose", "menopause", "pose"]
+  },
+  "payload": {
+    "roots": [{ "part": "pay", "ko": "돈을 내다" }, { "part": "load", "ko": "짐" }],
+    "story": "운임(pay)을 받는 진짜 짐(load), 포장이 아닌 알맹이 → 페이로드, 실제 데이터 본문",
+    "family": ["workload", "download", "payment"]
+  },
+  "payment": {
+    "roots": [{ "part": "pay", "ko": "치르다, 지불하다" }, { "part": "-ment", "ko": "~하는 것" }],
+    "origin": "pay ← 라틴어 pacare (달래다, 만족시키다)",
+    "story": "돈을 치러(pay) 받을 사람을 만족시키는 일(-ment) → 지급, 결제",
+    "hook": "페이먼트 → '○○페이'로 결제한다 → 지급, 결제",
+    "family": ["repay", "payroll", "payable"]
+  },
+  "pdf": {
+    "origin": "Portable Document Format",
+    "story": "어디로 옮겨도(Portable) 인쇄 모양 그대로인 문서(Document) 형식(Format) → PDF"
+  },
+  "peak": {
+    "story": "산봉우리처럼 그래프가 가장 높이 솟은 꼭대기 → 절정, 최고조",
+    "hook": "피크 → '피크 타임'의 피크 → 절정, 최고조"
+  },
+  "peer-reviewed": {
+    "roots": [{ "part": "peer", "ko": "동료, 대등한 사람" }, { "part": "review", "ko": "검토하다" }, { "part": "-ed", "ko": "~된" }],
+    "origin": "peer ← 라틴어 par (대등한)",
+    "story": "같은 분야 동료(peer)가 다시 살펴본(review) 뒤 통과된(-ed) → 동료 심사를 거친",
+    "family": ["peer", "reviewer", "preview"]
+  },
+  "peer-to-peer": {
+    "roots": [{ "part": "peer", "ko": "대등한 상대" }, { "part": "to", "ko": "~에게" }],
+    "origin": "peer ← 라틴어 par (대등한)",
+    "story": "중앙을 거치지 않고 대등한 상대(peer)에서 상대(peer)에게(to) 곧장 → 대등 간 직접 연결의",
+    "family": ["pair", "par", "compare"]
+  },
+  "penalty": {
+    "roots": [{ "part": "pen", "ko": "벌 (poena)" }, { "part": "-al", "ko": "~의" }, { "part": "-ty", "ko": "~함 (명사)" }],
+    "origin": "라틴어 poena (벌) → poenalis (벌의)",
+    "story": "약속을 어긴 벌(pen)로 물리는 것 → 위약금, 벌칙, 불이익",
+    "hook": "페널티 → 축구 '페널티 킥'은 반칙의 벌 → 벌칙",
+    "family": ["penal", "punish", "pain"]
+  },
+  "pending": {
+    "roots": [{ "part": "pend", "ko": "매달리다" }, { "part": "-ing", "ko": "~하고 있는" }],
+    "origin": "라틴어 pendere (매달리다)",
+    "story": "결정이 안 나 허공에 매달려(pend) 있는 → 아직 처리되지 않은, 대기 중인",
+    "hook": "펜딩 → '그 건은 펜딩'(보류) → 대기 중인",
+    "family": ["depend", "suspend", "pendant", "pendulum"]
+  },
+  "per": {
+    "origin": "라틴어 per (~을 통하여, ~마다)",
+    "story": "하나하나를 거쳐 가며(per) 값을 매긴다 → ~당, ~마다",
+    "hook": "퍼 → '퍼센트(per cent)'는 100당 얼마 → ~당",
+    "family": ["percent", "percentage"]
+  },
+  "per-batch": {
+    "roots": [{ "part": "per", "ko": "~당, ~마다" }, { "part": "batch", "ko": "한 묶음, 배치" }],
+    "story": "배치(batch) 한 묶음마다(per) 따로 따지는 → 배치당, 배치 하나마다의"
+  },
+  "per-call": {
+    "roots": [{ "part": "per", "ko": "~당, ~마다" }, { "part": "call", "ko": "호출" }],
+    "story": "호출(call) 한 번마다(per) 따로 주는 → 호출당, 호출할 때마다의"
+  },
+  "per-file": {
+    "roots": [{ "part": "per", "ko": "~당, ~마다" }, { "part": "file", "ko": "파일" }],
+    "story": "파일(file) 하나마다(per) 따로 하는 → 파일별의"
+  },
+  "per-request": {
+    "roots": [{ "part": "per", "ko": "~당, ~마다" }, { "part": "request", "ko": "요청" }],
+    "story": "요청(request) 한 건마다(per) 따로 매기는 → 요청당, 요청 한 건마다의"
+  },
+  "perfectly": {
+    "roots": [{ "part": "per-", "ko": "끝까지" }, { "part": "fect", "ko": "하다, 만들다" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 perficere (끝까지 해내다)",
+    "story": "끝까지(per) 다 만들어(fect) 더 손댈 데가 없게 → 완벽하게, 아주",
+    "hook": "퍼펙틀리 → '퍼펙트!'(완벽)하게 → 완벽하게",
+    "family": ["perfect", "effect", "affect", "defect"]
+  },
+  "perform": {
+    "roots": [{ "part": "per-", "ko": "끝까지" }, { "part": "form", "ko": "갖추다, 해내다 (고대 프랑스어 fornir)" }],
+    "origin": "고대 프랑스어 parfornir (끝까지 해내다)",
+    "story": "맡은 일을 끝까지(per) 다 갖춰 해낸다 → 수행하다, 해내다",
+    "family": ["performance", "performer", "furnish"]
+  },
+  "performance": {
+    "roots": [{ "part": "perform", "ko": "수행하다" }, { "part": "-ance", "ko": "~함 (명사)" }],
+    "story": "일을 얼마나 잘 해내는가(perform)의 정도(-ance) → 성능, 성과, 수행",
+    "hook": "퍼포먼스 → 무대 '퍼포먼스'도 해내 보이는 것 → 수행, 성능",
+    "family": ["perform", "performer", "furnish"]
+  },
+  "permission": {
+    "roots": [{ "part": "per-", "ko": "통과해" }, { "part": "miss", "ko": "보내다" }, { "part": "-ion", "ko": "~하는 것" }],
+    "origin": "라틴어 permittere (통과시켜 보내다)",
+    "story": "문을 지나(per) 가도록 보내(miss) 주는 것 → 허가, 권한",
+    "hook": "퍼미션 → 앱 '퍼미션(권한) 허용' 창 → 권한, 허가",
+    "family": ["permit", "mission", "admit", "submit"]
+  },
+  "persona": {
+    "origin": "라틴어 persona (배우의 가면, 배역)",
+    "story": "배우가 가면(persona)을 쓰고 맡은 배역을 연기하듯 → 페르소나, 캐릭터·인물 설정",
+    "family": ["person", "personal", "personality", "impersonate"]
+  },
+  "personal": {
+    "roots": [{ "part": "person", "ko": "사람, 개인" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 personalis ← persona (사람)",
+    "story": "여럿이 아니라 한 사람(person)에게 딸린 → 개인의, 사적인",
+    "hook": "퍼스널 → '퍼스널 컬러', '퍼스널 트레이닝' → 개인의",
+    "family": ["person", "persona", "personality", "personnel"]
+  },
+  "personal-access-token": {
+    "roots": [{ "part": "personal", "ko": "개인의" }, { "part": "access", "ko": "접근" }, { "part": "token", "ko": "증표" }],
+    "story": "개인(personal)에게 발급되어 접근(access)을 열어 주는 증표(token) → 개인 액세스 토큰"
+  },
+  "pharmaceutical": {
+    "roots": [{ "part": "pharmac", "ko": "약" }, { "part": "-eutic", "ko": "~하는 기술의" }, { "part": "-al", "ko": "~의" }],
+    "origin": "그리스어 pharmakon (약) → pharmakeutikos",
+    "story": "약(pharmac)을 짓고 만드는 일에 관한 → 제약의",
+    "hook": "파머수티컬 → 제약사 이름에 붙는 '○○파마' → 제약의",
+    "family": ["pharmacy", "pharmacist", "pharmacology"]
+  },
+  "phase": {
+    "origin": "그리스어 phasis (나타남, 달의 위상)",
+    "story": "달이 초승달·반달·보름달로 차례차례 모습(phasis)을 바꾸듯 → (작업의) 단계",
+    "hook": "페이즈 → 게임 보스전 '2페이즈' → 단계",
+    "family": ["emphasis", "phenomenon", "phantom"]
+  },
+  "phi": {
+    "origin": "Protected Health Information",
+    "story": "법으로 보호받는(Protected) 건강(Health) 정보(Information) → 보호 대상 건강 정보"
+  },
+  "phrase": {
+    "origin": "그리스어 phrasis (말하는 방식) ← phrazein (말하다)",
+    "story": "생각을 어떤 말투로 말할지(phrazein) 골라 엮은 말 묶음 → 문구, 구절 / 표현하다",
+    "family": ["paraphrase", "rephrase", "phraseology"]
+  },
+  "physically": {
+    "roots": [{ "part": "physic", "ko": "자연, 물질" }, { "part": "-al", "ko": "~의" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "그리스어 physis (자연) → physikos (자연의)",
+    "story": "머릿속 말고 자연(physic)의 물질 세계에 실제로 → 물리적으로, 실제로",
+    "hook": "피지컬리 → '피지컬이 좋다'의 피지컬(몸) → 물리적으로",
+    "family": ["physics", "physical", "physician", "physiology"]
+  },
+  "picker": {
+    "roots": [{ "part": "pick", "ko": "고르다" }, { "part": "-er", "ko": "~하는 것" }],
+    "story": "목록에서 하나를 고르게(pick) 해 주는 화면(-er) → 선택 화면, 선택기",
+    "hook": "피커 → '컬러 피커', '날짜 피커' → 선택기"
+  },
+  "pilot": {
+    "origin": "프랑스어 pilote (키잡이, 뱃길 안내인)",
+    "story": "큰 배가 들어오기 전에 뱃길 안내인(pilot)이 앞서 길을 살핀다 → 시범 운영",
+    "hook": "파일럿 → TV '파일럿 프로그램'(시험 방송) → 시범 운영"
+  },
+  "pin": {
+    "origin": "고대 영어 pinn (못, 말뚝)",
+    "story": "게시판 종이에 핀(pin)을 꽂아 움직이지 못하게 한다 → (버전을) 고정하다, 핀",
+    "hook": "핀 → 채팅방 '핀 고정', 압정 핀 → 고정하다",
+    "family": ["pinpoint", "underpin"]
+  },
+  "pipeline": {
+    "roots": [{ "part": "pipe", "ko": "관" }, { "part": "line", "ko": "줄" }],
+    "story": "관(pipe)을 줄줄이(line) 이어 물이 단계마다 흘러가게 한다 → 파이프라인, 처리 흐름",
+    "family": ["pipe", "deadline", "guideline"]
+  },
+  "placeholder": {
+    "roots": [{ "part": "place", "ko": "자리" }, { "part": "holder", "ko": "맡아 두는 것" }],
+    "story": "진짜 값이 올 때까지 자리(place)를 맡아 두는 것(holder) → 자리 표시자",
+    "family": ["placement", "stakeholder", "replace"]
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "steer": {
+    "origin": "고대 영어 stīeran (배의 키를 잡다)",
+    "story": "배의 키를 잡고 가려는 쪽으로 뱃머리를 돌린다 → 이끌다, 조종하다",
+    "hook": "스티어 → 자동차 핸들 '스티어링 휠' → 조종하다",
+    "family": ["starboard", "stern"]
+  },
+  "store": {
+    "origin": "고대 프랑스어 estorer ← 라틴어 instaurare (갖추다)",
+    "story": "나중에 쓰려고 창고에 갖추어(instaurare) 쌓아 둔다 → 저장하다, 보관하다 / 저장소",
+    "hook": "스토어 → 물건을 쌓아 두고 파는 '스토어' → 보관하다, 저장소",
+    "family": ["storage", "restore", "restaurant"]
+  },
+  "straight": {
+    "origin": "중세 영어 streght (stretch 의 과거분사, 팽팽히 편)",
+    "story": "줄을 팽팽히 당겨 편(stretch) 모양 그대로 → 곧은, 똑바른 / 곧바로",
+    "hook": "스트레이트 → 권투 '스트레이트'는 곧게 뻗는 주먹 → 곧은, 곧바로",
+    "family": ["stretch", "straighten"]
+  },
+  "straightforward": {
+    "roots": [{ "part": "straight", "ko": "곧은, 곧장" }, { "part": "forward", "ko": "앞으로" }],
+    "story": "돌아가지 않고 곧장(straight) 앞으로(forward) 가면 되는 → 간단한, 복잡하지 않은"
+  },
+  "strategy": {
+    "roots": [{ "part": "strat", "ko": "군대" }, { "part": "eg", "ko": "이끌다" }],
+    "origin": "그리스어 stratēgia (장군의 지휘)",
+    "story": "군대(strat)를 이끄는(eg) 장군이 그리는 큰 그림 → 전략, 방식",
+    "family": ["strategic", "strategist", "stratagem"]
+  },
+  "stream": {
+    "origin": "고대 영어 strēam (흐름, 물줄기)",
+    "story": "시냇물이 끊기지 않고 흘러오듯 만들어지는 대로 조금씩 보낸다 → 스트리밍하다 / 흐름",
+    "hook": "스트림 → 영상 '스트리밍'은 받는 대로 바로 흘려 보내기 → 스트리밍하다"
+  },
+  "strength": {
+    "roots": [{ "part": "streng", "ko": "강한 (strong)" }, { "part": "-th", "ko": "~한 정도" }],
+    "story": "얼마나 강한지(strong) 그 정도(-th) → 강도, 세기, 힘 / 강한 점 → 강점",
+    "family": ["strong", "strengthen"]
+  },
+  "strict": {
+    "origin": "라틴어 strictus (팽팽히 조인) ← stringere (조이다)",
+    "story": "끈을 꽉 조여(strictus) 조금도 느슨한 데가 없는 → 엄격한",
+    "family": ["restrict", "district", "constrict", "stringent"]
+  },
+  "string": {
+    "origin": "고대 영어 streng (줄, 끈)",
+    "story": "구슬을 끈(string)에 꿰듯 글자를 한 줄로 이은 것 → 문자열 / 끈, 줄",
+    "hook": "스트링 → 기타 줄 '스트링'처럼 글자를 줄줄이 → 문자열, 줄"
+  },
+  "strip": {
+    "origin": "고대 영어 strīepan (벗기다, 빼앗다)",
+    "story": "껍질을 벗기듯 필요 없는 겉을 걷어 낸다 → 벗겨 내다, 제거하다"
+  },
+  "structure": {
+    "roots": [{ "part": "struct", "ko": "쌓다, 짓다" }, { "part": "-ure", "ko": "~한 것" }],
+    "origin": "라틴어 structura ← struere (쌓다, 짓다)",
+    "story": "벽돌을 차곡차곡 쌓아(struct) 올린 짜임(-ure) → 구조 / 구조화하다",
+    "family": ["construct", "instruct", "infrastructure"]
+  },
+  "subagent": {
+    "roots": [{ "part": "sub-", "ko": "아래" }, { "part": "agent", "ko": "대신 일하는 자" }],
+    "story": "상위 에이전트 아래(sub)에서 일을 받아 하는 에이전트(agent) → 서브에이전트"
+  },
+  "subfolder": {
+    "roots": [{ "part": "sub-", "ko": "아래" }, { "part": "folder", "ko": "폴더" }],
+    "story": "폴더(folder) 아래(sub)에 들어 있는 폴더 → 하위 폴더"
+  },
+  "subject": {
+    "roots": [{ "part": "sub-", "ko": "아래" }, { "part": "ject", "ko": "던지다" }],
+    "origin": "라틴어 subjectus (아래에 놓인)",
+    "story": "이야기 밑(sub)에 던져(ject) 깔아 둔 바탕, 곧 다뤄지는 그것 → 주제, 대상, (토큰의) 주체",
+    "family": ["object", "project", "reject", "inject"]
+  },
+  "submit": {
+    "roots": [{ "part": "sub-", "ko": "아래" }, { "part": "mit", "ko": "보내다" }],
+    "origin": "라틴어 submittere (아래로 보내다)",
+    "story": "받아 줄 쪽의 손 아래(sub)로 보낸다(mit) → 제출하다, 넣다",
+    "family": ["transmit", "permit", "admit", "mission"]
+  },
+  "subset": {
+    "roots": [{ "part": "sub-", "ko": "아래" }, { "part": "set", "ko": "집합" }],
+    "story": "큰 집합(set) 아래(sub)에 들어가는 작은 집합 → 부분집합, 일부"
+  },
+  "substantially": {
+    "roots": [{ "part": "sub-", "ko": "아래" }, { "part": "stant", "ko": "서다" }, { "part": "-ial", "ko": "~의" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 substantia (아래에 서 있는 것, 실체)",
+    "story": "겉 아래(sub)에 버티고 선(stant) 실체가 있을 만큼 두둑하게(-ly) → 상당히, 크게",
+    "family": ["substance", "constant", "instant"]
+  },
+  "substring": {
+    "roots": [{ "part": "sub-", "ko": "아래, 일부" }, { "part": "string", "ko": "문자열" }],
+    "story": "문자열(string) 안에 들어 있는 그 일부(sub) → 부분 문자열"
+  },
+  "subsystem": {
+    "roots": [{ "part": "sub-", "ko": "아래" }, { "part": "system", "ko": "시스템" }],
+    "story": "큰 시스템(system) 아래(sub)에서 한 기능을 맡은 작은 시스템 → 하위 시스템"
+  },
+  "subtask": {
+    "roots": [{ "part": "sub-", "ko": "아래" }, { "part": "task", "ko": "작업" }],
+    "story": "큰 작업(task) 아래(sub)로 쪼개 놓은 작은 작업 → 하위 작업"
+  },
+  "subtopic": {
+    "roots": [{ "part": "sub-", "ko": "아래" }, { "part": "topic", "ko": "주제" }],
+    "story": "큰 주제(topic) 아래(sub)에 딸린 작은 주제 → 하위 주제, 세부 주제"
+  },
+  "subtype": {
+    "roots": [{ "part": "sub-", "ko": "아래" }, { "part": "type", "ko": "유형" }],
+    "story": "한 유형(type) 아래(sub)로 다시 나눈 유형 → 하위 유형, 하위 타입"
+  },
+  "succeed": {
+    "roots": [{ "part": "suc-", "ko": "아래, 바로 뒤" }, { "part": "ceed", "ko": "가다" }],
+    "origin": "라틴어 succedere (뒤따라 가다, 잘되어 가다)",
+    "story": "앞사람 바로 뒤(suc)를 따라가(ceed) 자리를 잇고 뜻을 이룬다 → 성공하다, (뒤를) 잇다",
+    "family": ["proceed", "exceed", "success", "successor"]
+  },
+  "successful": {
+    "roots": [{ "part": "success", "ko": "성공" }, { "part": "-ful", "ko": "~이 가득한" }],
+    "story": "뜻한 데까지 잘 가 닿은 성공(success)으로 가득한(-ful) → 성공적인",
+    "family": ["succeed", "succession", "successor"]
+  },
+  "successfully": {
+    "roots": [{ "part": "success", "ko": "성공" }, { "part": "-ful", "ko": "~이 가득한" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "성공(success)이 가득한(-ful) 모양으로(-ly) 끝까지 → 성공적으로, 문제없이",
+    "family": ["succeed", "succession", "successor"]
+  },
+  "suggest": {
+    "roots": [{ "part": "sug-", "ko": "아래" }, { "part": "gest", "ko": "나르다" }],
+    "origin": "라틴어 suggerere (아래로 날라다 주다)",
+    "story": "생각을 슬쩍 밑(sug)으로 날라(gest) 내민다 → 제안하다, 시사하다",
+    "family": ["gesture", "digest", "congestion"]
+  },
+  "suite": {
+    "origin": "프랑스어 suite (뒤따르는 무리) ← 라틴어 sequi (따르다)",
+    "story": "줄줄이 뒤따르는(suite) 것들을 한 벌로 묶은 것 → 묶음, 모음",
+    "hook": "스위트 → 호텔 '스위트룸'은 방 여러 개를 한 벌로 묶은 객실 → 묶음",
+    "family": ["suit", "sequence", "pursue"]
+  },
+  "sum": {
+    "origin": "라틴어 summa (맨 위, 총계)",
+    "story": "로마인은 더한 값을 맨 위(summa) 줄에 적었다 → 합계 / 합이 ~이 되다",
+    "family": ["summit", "summary", "consummate"]
+  },
+  "summarise": {
+    "roots": [{ "part": "summar", "ko": "요약 (summary)" }, { "part": "-ise", "ko": "~하게 만들다" }],
+    "story": "핵심만 추린 요약(summary)으로 만든다(-ise, 영국식 철자) → 요약하다",
+    "family": ["summary", "sum", "summit"]
+  },
+  "summarize": {
+    "roots": [{ "part": "summar", "ko": "요약 (summary)" }, { "part": "-ize", "ko": "~하게 만들다" }],
+    "story": "긴 내용을 핵심만 추린 요약(summary)으로 만든다(-ize) → 요약하다",
+    "family": ["summary", "sum", "summit"]
+  },
+  "summary": {
+    "roots": [{ "part": "summ", "ko": "총계, 핵심" }, { "part": "-ary", "ko": "~에 관한 것" }],
+    "origin": "라틴어 summarium ← summa (총계, 요점)",
+    "story": "전체를 더한 총계(summ)처럼 핵심만 추린 것(-ary) → 요약(본)",
+    "hook": "서머리 → '회의 서머리 보내 주세요' → 요약(본)",
+    "family": ["sum", "summit", "summarize"]
+  },
+  "superficial": {
+    "roots": [{ "part": "super-", "ko": "위" }, { "part": "fici", "ko": "얼굴, 면" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 superficies (윗면, 겉)",
+    "story": "맨 위(super) 겉면(fici)만 스치고 속은 보지 않는(-al) → 피상적인, 겉핥기의",
+    "family": ["surface", "face", "facade"]
+  },
+  "supervisor": {
+    "roots": [{ "part": "super-", "ko": "위" }, { "part": "vis", "ko": "보다" }, { "part": "-or", "ko": "~하는 사람" }],
+    "story": "위(super)에서 내려다보며(vis) 살피는 사람(-or) → 관리자, 상급자",
+    "hook": "슈퍼바이저 → 매장 관리 담당 '슈퍼바이저' → 관리자",
+    "family": ["supervise", "vision", "visible", "revise"]
+  },
+  "supply": {
+    "roots": [{ "part": "sup-", "ko": "아래에서" }, { "part": "ply", "ko": "채우다" }],
+    "origin": "라틴어 supplere (밑에서부터 채우다)",
+    "story": "모자란 곳을 밑(sup)에서부터 채워(ply) 준다 → 제공하다, 대다, 공급하다",
+    "family": ["supplement", "complete", "plenty"]
+  },
+  "support": {
+    "roots": [{ "part": "sup-", "ko": "아래" }, { "part": "port", "ko": "나르다, 들다" }],
+    "origin": "라틴어 supportare (밑에서 받쳐 나르다)",
+    "story": "밑(sup)에서 받쳐 들어(port) 준다 → 뒷받침하다, 지원하다 / (고객) 지원",
+    "hook": "서포트 → 게임의 '서포터'는 뒤에서 받쳐 주는 역할 → 지원하다",
+    "family": ["transport", "import", "portable"]
+  },
+  "surcharge": {
+    "roots": [{ "part": "sur-", "ko": "위에, 더" }, { "part": "charge", "ko": "요금" }],
+    "story": "기본 요금(charge) 위에(sur) 더 얹는 돈 → 추가 요금, 할증료",
+    "family": ["discharge", "recharge", "surplus"]
+  },
+  "surface": {
+    "roots": [{ "part": "sur-", "ko": "위" }, { "part": "face", "ko": "얼굴, 면" }],
+    "story": "잠겨 있던 것이 맨 위(sur) 면(face)으로 떠오른다 → 드러나다, 드러내다 / 표면",
+    "family": ["superficial", "facade", "interface"]
+  },
+  "surround": {
+    "origin": "후기 라틴어 superundare (물이 넘쳐 덮다)",
+    "story": "물결(unda)이 넘쳐(super) 사방을 덮던 말이 둥글게(round)와 겹쳐 → 둘러싸다",
+    "hook": "서라운드 → '서라운드 스피커'는 소리가 사방을 둘러싼다 → 둘러싸다",
+    "family": ["abundant", "inundate", "undulate"]
+  },
+  "survey": {
+    "roots": [{ "part": "sur-", "ko": "위" }, { "part": "vey", "ko": "보다" }],
+    "origin": "고대 프랑스어 surveeir (위에서 보다)",
+    "story": "위(sur)에서 전체를 내려다본다(vey) → 살펴보다, 조사하다 / 설문 조사",
+    "hook": "서베이 → '고객 만족도 서베이' → 설문 조사",
+    "family": ["view", "review", "surveillance"]
+  },
+  "survive": {
+    "roots": [{ "part": "sur-", "ko": "넘어" }, { "part": "vive", "ko": "살다" }],
+    "origin": "라틴어 supervivere (넘어서 살다)",
+    "story": "고비를 넘어(sur) 계속 살아(vive) 있다 → 살아남다, 사라지지 않고 유지되다",
+    "hook": "서바이브 → '서바이벌 게임'은 끝까지 살아남기 → 살아남다",
+    "family": ["revive", "vivid", "vital"]
+  },
+  "sustained": {
+    "roots": [{ "part": "sus-", "ko": "아래에서" }, { "part": "tain", "ko": "붙들다" }, { "part": "-ed", "ko": "~된" }],
+    "origin": "라틴어 sustinere (밑에서 떠받치다)",
+    "story": "밑(sus)에서 계속 붙들어(tain) 끊기지 않게 한(-ed) → 지속적인, 계속 이어진",
+    "family": ["maintain", "contain", "retain", "sustainable"]
+  },
+  "swap": {
+    "origin": "중세 영어 swappen (탁 치다)",
+    "story": "흥정이 끝나 서로 손바닥을 탁 치고(swappen) 물건을 바꾼다 → 맞바꾸다",
+    "hook": "스왑 → '통화 스와프'는 서로 돈을 맞바꾸는 거래 → 맞바꾸다"
+  },
+  "switch": {
+    "story": "선로 전환기를 젖혀 열차를 다른 선로로 보내듯 → 바꾸다, 전환하다 / 전환",
+    "hook": "스위치 → 전등 '스위치'를 딸깍 → 바꾸다, 전환하다"
+  },
+  "symbol": {
+    "roots": [{ "part": "sym-", "ko": "함께" }, { "part": "bol", "ko": "던지다" }],
+    "origin": "그리스어 symbolon (맞춰 보는 증표)",
+    "story": "쪼갠 조각을 함께(sym) 던져(bol) 맞춰 보던 증표, 무언가를 대신 나타내는 표 → 기호, 심볼",
+    "hook": "심볼 → '평화의 심볼' → 기호, 상징",
+    "family": ["parabola", "hyperbole", "problem"]
+  },
+  "symlink": {
+    "roots": [{ "part": "sym", "ko": "기호의 (symbolic)" }, { "part": "link", "ko": "연결" }],
+    "origin": "symbolic link",
+    "story": "파일 자체가 아니라 그 이름을 가리키는 기호(symbolic) 연결(link) → 심볼릭 링크(를 걸다)"
+  },
+  "sync": {
+    "origin": "synchronize 의 줄임 (그리스어 syn 함께 + chronos 시간)",
+    "story": "두 곳의 시계를 함께(syn) 같은 시간(chron)에 맞추듯 내용을 맞춘다 → 동기화(하다)",
+    "hook": "싱크 → '입 모양 싱크가 안 맞는다'의 싱크 → 같게 맞추다, 동기화",
+    "family": ["synchronous", "chronic", "chronicle"]
+  },
+  "synchronous": {
+    "roots": [{ "part": "syn-", "ko": "함께, 같은" }, { "part": "chron", "ko": "시간" }, { "part": "-ous", "ko": "~한" }],
+    "origin": "그리스어 synchronos (같은 때의)",
+    "story": "상대와 같은(syn) 시간(chron)에 묶여 답이 올 때까지 기다리는(-ous) → 동기의",
+    "family": ["asynchronous", "chronicle", "chronology"]
+  },
+  "syntax": {
+    "roots": [{ "part": "syn-", "ko": "함께" }, { "part": "tax", "ko": "배열하다" }],
+    "origin": "그리스어 syntaxis (함께 늘어놓음)",
+    "story": "낱말을 함께(syn) 줄 세워 배열하는(tax) 규칙 → 구문, 문법",
+    "family": ["tactic", "taxonomy"]
+  },
+  "synthetic": {
+    "roots": [{ "part": "syn-", "ko": "함께" }, { "part": "thet", "ko": "놓다" }, { "part": "-ic", "ko": "~한" }],
+    "origin": "그리스어 synthetikos (함께 놓아 만든)",
+    "story": "여러 재료를 함께(syn) 놓아(thet) 사람이 만들어 낸(-ic) → 합성의, 인공적으로 만든",
+    "family": ["synthesis", "thesis", "hypothesis"]
+  },
+  "system-prompt": {
+    "roots": [{ "part": "system", "ko": "시스템" }, { "part": "prompt", "ko": "지시문" }],
+    "story": "대화가 시작되기 전 시스템(system) 차원에서 깔아 두는 지시문(prompt) → 시스템 프롬프트"
+  }
+}

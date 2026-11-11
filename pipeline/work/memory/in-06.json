@@ -1,0 +1,516 @@
+[
+ {
+  "id": "consider",
+  "word": "consider",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "kənˈsɪdər",
+  "meaning": "① 고려하다, 검토하다 ② (~라고) 여기다, 간주하다",
+  "level": 3
+ },
+ {
+  "id": "constant",
+  "word": "constant",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ˈkɑːnstənt",
+  "meaning": "① (코드의) 상수 ② 끊임없는, 일정한",
+  "level": 4
+ },
+ {
+  "id": "construct",
+  "word": "construct",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈkɑːnstrʌkt",
+  "meaning": "① (코드의) 구문 요소 — 함수·반복문·try 블록 같은 구성 단위 ② 구성하다, 만들다",
+  "level": 4
+ },
+ {
+  "id": "consume",
+  "word": "consume",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "kənˈsuːm",
+  "meaning": "(자원·토큰을) 소모하다, 써 버리다",
+  "level": 4
+ },
+ {
+  "id": "contact",
+  "word": "contact",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈkɑːntækt",
+  "meaning": "① 연락(처) ② 연락하다 ③ 접촉",
+  "level": 2
+ },
+ {
+  "id": "contain",
+  "word": "contain",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "kənˈteɪn",
+  "meaning": "(안에) 담고 있다, 포함하다",
+  "level": 3
+ },
+ {
+  "id": "container",
+  "word": "container",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "kənˈteɪnər",
+  "meaning": "① (Docker 등의) 컨테이너 — 격리된 실행 환경 ② 그릇, 담는 것",
+  "level": 5
+ },
+ {
+  "id": "content",
+  "word": "content",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkɑːntent",
+  "meaning": "내용(물), 콘텐츠",
+  "level": 2
+ },
+ {
+  "id": "context",
+  "word": "context",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkɑːntekst",
+  "meaning": "① 컨텍스트 — 모델이 한 번에 보는 입력 전체 ② 맥락, 배경 정보",
+  "level": 4
+ },
+ {
+  "id": "continuous",
+  "word": "continuous",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "kənˈtɪnjuəs",
+  "meaning": "지속적인, 끊김 없이 이어지는",
+  "level": 4
+ },
+ {
+  "id": "contributor",
+  "word": "contributor",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "kənˈtrɪbjətər",
+  "meaning": "① (프로젝트에) 기여하는 사람, 참여자 ② (결과의) 기여 요인",
+  "level": 4
+ },
+ {
+  "id": "control",
+  "word": "control",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "kənˈtroʊl",
+  "meaning": "① 통제, 제어 (장치) ② 통제하다, 제어하다 ③ (소스·버전) 관리",
+  "level": 2
+ },
+ {
+  "id": "controller",
+  "word": "controller",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "kənˈtroʊlər",
+  "meaning": "① (웹 프레임워크의) 컨트롤러 — 요청을 받아 처리하는 코드 부분 ② 제어 장치 ③ (회계) 관리자, 감사관",
+  "level": 5
+ },
+ {
+  "id": "convert",
+  "word": "convert",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "kənˈvɜːrt",
+  "meaning": "변환하다, (다른 형태로) 바꾸다 — converter: 변환기",
+  "level": 4
+ },
+ {
+  "id": "coordinator",
+  "word": "coordinator",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "koʊˈɔːrdɪneɪtər",
+  "meaning": "코디네이터 — 일을 나눠 맡기고 결과를 모으는 조정 역할(에이전트)",
+  "level": 5
+ },
+ {
+  "id": "core",
+  "word": "core",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "kɔːr",
+  "meaning": "핵심(의), 중심이 되는",
+  "level": 3
+ },
+ {
+  "id": "correctness",
+  "word": "correctness",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "kəˈrektnəs",
+  "meaning": "① 정확성, 올바름 — (코드·결과가) 맞게 동작하는 정도 ② (언행의) 적절함",
+  "level": 3
+ },
+ {
+  "id": "correlation",
+  "word": "correlation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌkɔːrəˈleɪʃn",
+  "meaning": "상관관계, (서로) 대응·연결",
+  "level": 5
+ },
+ {
+  "id": "costly",
+  "word": "costly",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈkɔːstli",
+  "meaning": "비용이 많이 드는, 대가가 큰",
+  "level": 3
+ },
+ {
+  "id": "count",
+  "word": "count",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "kaʊnt",
+  "meaning": "① 개수, 횟수 ② (수를) 세다 ③ (~으로) 간주되다, 인정되다",
+  "level": 2
+ },
+ {
+  "id": "counter",
+  "word": "counter",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈkaʊntər",
+  "meaning": "① 카운터, 계수기 (횟수를 세는 변수) ② 계산대, 판매대 ③ 반박하다, 대응하다",
+  "level": 3
+ },
+ {
+  "id": "cover",
+  "word": "cover",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈkʌvər",
+  "meaning": "(범위를) 다루다, 포함하다, 아우르다",
+  "level": 2
+ },
+ {
+  "id": "coverage",
+  "word": "coverage",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkʌvərɪdʒ",
+  "meaning": "다루는 범위, 포괄 정도",
+  "level": 5
+ },
+ {
+  "id": "crash",
+  "word": "crash",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "kræʃ",
+  "meaning": "(프로그램이) 갑자기 죽다, 멈추다 · 충돌(다운)",
+  "level": 3
+ },
+ {
+  "id": "credential",
+  "word": "credential",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "krəˈdenʃl",
+  "meaning": "자격 증명 — 비밀번호·토큰 같은 인증 정보",
+  "level": 6
+ },
+ {
+  "id": "credit",
+  "word": "credit",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkredɪt",
+  "meaning": "① 크레딧, 적립금 (보상 금액) ② (회계) 대변",
+  "level": 3
+ },
+ {
+  "id": "crisis",
+  "word": "crisis",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈkraɪsɪs",
+  "meaning": "위기, 중대 국면",
+  "level": 3
+ },
+ {
+  "id": "critical",
+  "word": "critical",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈkrɪtɪkl",
+  "meaning": "① 심각한, 치명적인 ② 비판적인 ③ 매우 중요한",
+  "level": 4
+ },
+ {
+  "id": "critique",
+  "word": "critique",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "krɪˈtiːk",
+  "meaning": "비평(하다) — 검토해 문제점을 짚다",
+  "level": 6
+ },
+ {
+  "id": "crm",
+  "word": "CRM",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌsiːɑːrˈem",
+  "meaning": "고객 관계 관리(Customer Relationship Management) 시스템",
+  "level": 6
+ },
+ {
+  "id": "cross",
+  "word": "cross",
+  "pos": [
+   "동사",
+   "형용사",
+   "명사"
+  ],
+  "ipa": "krɔːs",
+  "meaning": "① (경계·선을) 넘다, 건너다 ② (여러 ~에) 걸친, 교차하는 ③ 십자, 가위표",
+  "level": 2
+ },
+ {
+  "id": "cross-file",
+  "word": "cross-file",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌkrɔːs ˈfaɪl",
+  "meaning": "여러 파일에 걸친, 파일 간의",
+  "level": 6
+ },
+ {
+  "id": "currency-conversion",
+  "word": "currency-conversion",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈkɜːrənsi kənˈvɜːrʒn",
+  "meaning": "통화 변환, 환전",
+  "level": 5
+ },
+ {
+  "id": "currency-formatting",
+  "word": "currency-formatting",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈkɜːrənsi ˈfɔːrmætɪŋ",
+  "meaning": "통화(금액) 표기 형식 (지정)",
+  "level": 6
+ },
+ {
+  "id": "current",
+  "word": "current",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈkɜːrənt",
+  "meaning": "현재의, 지금의",
+  "level": 2
+ },
+ {
+  "id": "custom",
+  "word": "custom",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈkʌstəm",
+  "meaning": "맞춤(형)의, 사용자가 직접 정의한",
+  "level": 4
+ },
+ {
+  "id": "customer-friendly",
+  "word": "customer-friendly",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌkʌstəmər ˈfrendli",
+  "meaning": "고객 친화적인 — 고객이 이해하고 받아들이기 쉬운",
+  "level": 4
+ },
+ {
+  "id": "cut-off",
+  "word": "cut-off",
+  "pos": [
+   "동사구",
+   "명사"
+  ],
+  "ipa": "ˌkʌt ˈɔːf",
+  "meaning": "① (cut off) 도중에 잘리다, 끊기다 ② (cut-off) 기준점, 마감 시점",
+  "level": 4
+ },
+ {
+  "id": "cycle",
+  "word": "cycle",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈsaɪkl",
+  "meaning": "① 주기, (한 차례의) 사이클 ② 순환, 반복 ③ 순환하다, 반복되다",
+  "level": 3
+ },
+ {
+  "id": "database",
+  "word": "database",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈdeɪtəbeɪs",
+  "meaning": "데이터베이스",
+  "level": 3
+ },
+ {
+  "id": "dataset",
+  "word": "dataset",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈdeɪtəset",
+  "meaning": "데이터 세트 — (분석·평가용으로) 모아 둔 데이터 묶음",
+  "level": 4
+ },
+ {
+  "id": "dated",
+  "word": "dated",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈdeɪtɪd",
+  "meaning": "① (ID·버전에) 날짜가 붙은 — dateless: 날짜가 없는 ② 낡은, 시대에 뒤진",
+  "level": 4
+ },
+ {
+  "id": "deactivate",
+  "word": "deactivate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "diˈæktɪveɪt",
+  "meaning": "비활성화하다 — 기능·키를 꺼서 쓰지 못하게 하다",
+  "level": 5
+ },
+ {
+  "id": "deadline",
+  "word": "deadline",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈdedlaɪn",
+  "meaning": "마감 기한",
+  "level": 3
+ },
+ {
+  "id": "debug",
+  "word": "debug",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "diːˈbʌɡ",
+  "meaning": "디버그하다 — 버그의 원인을 찾아 고치다",
+  "level": 6
+ },
+ {
+  "id": "decision",
+  "word": "decision",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "dɪˈsɪʒn",
+  "meaning": "결정, 판단",
+  "level": 2
+ },
+ {
+  "id": "declare",
+  "word": "declare",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈkler",
+  "meaning": "(설정·코드에) 선언하다, 명시하다",
+  "level": 4
+ },
+ {
+  "id": "deduplicate",
+  "word": "deduplicate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "diːˈduːplɪkeɪt",
+  "meaning": "중복을 없애다",
+  "level": 6
+ },
+ {
+  "id": "deep-dive",
+  "word": "deep-dive",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈdiːp daɪv",
+  "meaning": "심층 분석 (자료), 깊이 파고들기",
+  "level": 5
+ },
+ {
+  "id": "default",
+  "word": "default",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "dɪˈfɔːlt",
+  "meaning": "① 기본값, 기본 설정 (by default: 따로 정하지 않으면) ② 기본(값)의 ③ (채무) 불이행",
+  "level": 5
+ }
+]

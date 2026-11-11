@@ -1,0 +1,512 @@
+[
+ {
+  "id": "however",
+  "word": "however",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "haʊˈevər",
+  "meaning": "① 그러나, 그런데 ② (however + 형용사·부사) 아무리 ~해도",
+  "level": 2
+ },
+ {
+  "id": "hr",
+  "word": "HR",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌeɪtʃˈɑːr",
+  "meaning": "인사(Human Resources) — 인사 부서, 직원·급여 같은 인사 정보",
+  "level": 5
+ },
+ {
+  "id": "hub",
+  "word": "hub",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "hʌb",
+  "meaning": "허브, 중심 — 여러 갈래를 잇고 조율하는 중앙 지점",
+  "level": 4
+ },
+ {
+  "id": "human-in-the-loop",
+  "word": "human-in-the-loop",
+  "pos": [
+   "형용사구"
+  ],
+  "ipa": "ˈhjuːmən ɪn ðə ˈluːp",
+  "meaning": "사람 개입형의 — 자동 처리 중간에 사람이 확인·승인하는 (HITL)",
+  "level": 6
+ },
+ {
+  "id": "hunt",
+  "word": "hunt",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "hʌnt",
+  "meaning": "① (hunt through/for) 찾아 헤매다, 뒤지다 ② 사냥하다 ③ 찾기, 추적 (bug hunt)",
+  "level": 2
+ },
+ {
+  "id": "hyphen",
+  "word": "hyphen",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈhaɪfn",
+  "meaning": "하이픈(-) — 단어를 잇는 짧은 가로줄 기호",
+  "level": 5
+ },
+ {
+  "id": "hypothesis",
+  "word": "hypothesis",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "haɪˈpɑːθəsɪs",
+  "meaning": "가설",
+  "level": 5
+ },
+ {
+  "id": "iam",
+  "word": "IAM",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌaɪ.eɪˈem",
+  "meaning": "ID·접근 관리(Identity and Access Management) — 누가 무엇에 접근할지 정하는 권한 체계",
+  "level": 6
+ },
+ {
+  "id": "identifier",
+  "word": "identifier",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "aɪˈdentɪfaɪər",
+  "meaning": "식별자 — 대상을 하나로 특정하는 값(고객 ID·주문 번호 등)",
+  "level": 6
+ },
+ {
+  "id": "identify",
+  "word": "identify",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "aɪˈdentɪfaɪ",
+  "meaning": "찾아내다, 식별하다 — 무엇인지 알아보고 짚어 내다",
+  "level": 4
+ },
+ {
+  "id": "identity",
+  "word": "identity",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "aɪˈdentəti",
+  "meaning": "① 신원, 본인 (확인 대상) ② (시스템의) ID — 계정·서비스를 식별하는 신원 정보 (identity provider: ID 공급자)",
+  "level": 3
+ },
+ {
+  "id": "ignore",
+  "word": "ignore",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪɡˈnɔːr",
+  "meaning": "무시하다, (지시·규칙을) 따르지 않다",
+  "level": 2
+ },
+ {
+  "id": "immediately",
+  "word": "immediately",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ɪˈmiːdiətli",
+  "meaning": "① 즉시, 곧바로 ② 바로 옆에, 직접적으로",
+  "level": 2
+ },
+ {
+  "id": "impact",
+  "word": "impact",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈɪmpækt",
+  "meaning": "① 영향, 효과 ② 영향을 주다 ③ 충격, 충돌",
+  "level": 3
+ },
+ {
+  "id": "implement",
+  "word": "implement",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈɪmplɪment",
+  "meaning": "구현하다, (방안을) 실제로 적용하다",
+  "level": 4
+ },
+ {
+  "id": "implication",
+  "word": "implication",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌɪmplɪˈkeɪʃn",
+  "meaning": "(결정이 가져올) 영향, 함의",
+  "level": 5
+ },
+ {
+  "id": "import",
+  "word": "import",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ɪmˈpɔːrt",
+  "meaning": "① (파일·모듈을) 불러오다, 가져오다 ② 불러오기 구문, 가져온 파일 ③ 수입(하다)",
+  "level": 3
+ },
+ {
+  "id": "improve",
+  "word": "improve",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪmˈpruːv",
+  "meaning": "① 개선하다, 향상시키다 ② 나아지다, 좋아지다",
+  "level": 2
+ },
+ {
+  "id": "in-advance",
+  "word": "in advance",
+  "pos": [
+   "부사구"
+  ],
+  "ipa": "ɪn ədˈvæns",
+  "meaning": "미리, 사전에",
+  "level": 3
+ },
+ {
+  "id": "in-process",
+  "word": "in-process",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌɪn ˈprɑːses",
+  "meaning": "인프로세스의 — 별도 프로세스가 아니라 같은 프로그램(프로세스) 안에서 실행되는",
+  "level": 6
+ },
+ {
+  "id": "inactive",
+  "word": "inactive",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ɪnˈæktɪv",
+  "meaning": "비활성의 — 꺼져 있어 쓰이지 않는 상태의",
+  "level": 4
+ },
+ {
+  "id": "inbound",
+  "word": "inbound",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈɪnbaʊnd",
+  "meaning": "안으로 들어오는, 수신의 (inbound email: 들어오는 이메일)",
+  "level": 6
+ },
+ {
+  "id": "incentive",
+  "word": "incentive",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ɪnˈsentɪv",
+  "meaning": "장려책, 인센티브",
+  "level": 4
+ },
+ {
+  "id": "incident",
+  "word": "incident",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɪnsɪdənt",
+  "meaning": "(보안·운영) 사고, 장애 — 서비스에 문제가 생긴 사건",
+  "level": 4
+ },
+ {
+  "id": "include",
+  "word": "include",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪnˈkluːd",
+  "meaning": "포함하다, (안에) 넣다",
+  "level": 2
+ },
+ {
+  "id": "incoming",
+  "word": "incoming",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈɪnkʌmɪŋ",
+  "meaning": "① 들어오는, 새로 도착하는 ② (직책에) 새로 취임하는",
+  "level": 4
+ },
+ {
+  "id": "incorporate",
+  "word": "incorporate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪnˈkɔːrpəreɪt",
+  "meaning": "(일부로) 포함시키다, 반영하다",
+  "level": 5
+ },
+ {
+  "id": "incorrect",
+  "word": "incorrect",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌɪnkəˈrekt",
+  "meaning": "틀린, 잘못된, 부정확한",
+  "level": 2
+ },
+ {
+  "id": "incorrectly",
+  "word": "incorrectly",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˌɪnkəˈrektli",
+  "meaning": "잘못, 틀리게",
+  "level": 3
+ },
+ {
+  "id": "increase",
+  "word": "increase",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ɪnˈkriːs",
+  "meaning": "늘리다, 증가(시키다)",
+  "level": 2
+ },
+ {
+  "id": "indentation",
+  "word": "indentation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌɪndenˈteɪʃn",
+  "meaning": "들여쓰기",
+  "level": 6
+ },
+ {
+  "id": "independent",
+  "word": "independent",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌɪndɪˈpendənt",
+  "meaning": "독립적인, 서로 의존하지 않는 — independently 따로, 스스로",
+  "level": 3
+ },
+ {
+  "id": "index",
+  "word": "index",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈɪndeks",
+  "meaning": "① 색인, 인덱스 ② 인덱싱하다 — 빨리 찾도록 미리 정리해 두다",
+  "level": 4
+ },
+ {
+  "id": "individual",
+  "word": "individual",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˌɪndɪˈvɪdʒuəl",
+  "meaning": "① 개별의, 각각의 ② 개인",
+  "level": 3
+ },
+ {
+  "id": "industry",
+  "word": "industry",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɪndəstri",
+  "meaning": "① 업계, 산업 ② 근면",
+  "level": 3
+ },
+ {
+  "id": "infer",
+  "word": "infer",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪnˈfɜːr",
+  "meaning": "추론하다, (단서로) 짐작해 알아내다",
+  "level": 5
+ },
+ {
+  "id": "infinite",
+  "word": "infinite",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈɪnfɪnət",
+  "meaning": "무한한, 끝이 없는",
+  "level": 4
+ },
+ {
+  "id": "infrastructure",
+  "word": "infrastructure",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɪnfrəstrʌktʃər",
+  "meaning": "인프라, 기반 시설 — 시스템을 돌리는 서버·네트워크 등",
+  "level": 5
+ },
+ {
+  "id": "initialize",
+  "word": "initialize",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪˈnɪʃəlaɪz",
+  "meaning": "초기화하다 — 시작할 때 설정·상태를 갖춰 놓다",
+  "level": 6
+ },
+ {
+  "id": "initially",
+  "word": "initially",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ɪˈnɪʃəli",
+  "meaning": "처음에, 초기에",
+  "level": 4
+ },
+ {
+  "id": "inject",
+  "word": "inject",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪnˈdʒekt",
+  "meaning": "(내용·값을) 주입하다, 끼워 넣다",
+  "level": 5
+ },
+ {
+  "id": "inline",
+  "word": "inline",
+  "pos": [
+   "부사",
+   "형용사"
+  ],
+  "ipa": "ˈɪnlaɪn",
+  "meaning": "(따로 떼어 내지 않고) 그 자리에서 바로, 메인 흐름 안에서 (하는)",
+  "level": 6
+ },
+ {
+  "id": "input",
+  "word": "input",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈɪnpʊt",
+  "meaning": "① 입력, 입력값 ② 의견, 조언 ③ 입력하다",
+  "level": 3
+ },
+ {
+  "id": "input-output",
+  "word": "input-output",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˈɪnpʊt ˈaʊtpʊt",
+  "meaning": "① 입력-출력의 — 입력과 그에 맞는 출력을 짝지은 ② 입출력",
+  "level": 4
+ },
+ {
+  "id": "input-to-output",
+  "word": "input-to-output",
+  "pos": [
+   "형용사구"
+  ],
+  "ipa": "ˈɪnpʊt tə ˈaʊtpʊt",
+  "meaning": "입력→출력의 — 어떤 입력에 어떤 출력이 나와야 하는지 짝지어 보여 주는",
+  "level": 5
+ },
+ {
+  "id": "insert",
+  "word": "insert",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ɪnˈsɜːrt",
+  "meaning": "끼워 넣다, 삽입하다",
+  "level": 3
+ },
+ {
+  "id": "insightful",
+  "word": "insightful",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈɪnsaɪtfl",
+  "meaning": "통찰력 있는, 핵심을 짚는",
+  "level": 5
+ },
+ {
+  "id": "instance",
+  "word": "instance",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈɪnstəns",
+  "meaning": "① (따로 실행되는 하나의) 인스턴스 ② 사례, 경우 (for instance 예를 들어)",
+  "level": 4
+ },
+ {
+  "id": "instead",
+  "word": "instead",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ɪnˈsted",
+  "meaning": "대신에 — instead of ~ : ~ 대신, ~하지 않고",
+  "level": 2
+ },
+ {
+  "id": "instruction-following",
+  "word": "instruction-following",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ɪnˈstrʌkʃən ˈfɑːloʊɪŋ",
+  "meaning": "지시 이행(능력) — 주어진 지시를 얼마나 잘 따르는지",
+  "level": 5
+ }
+]

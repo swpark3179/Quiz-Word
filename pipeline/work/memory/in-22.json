@@ -1,0 +1,514 @@
+[
+ {
+  "id": "schedule",
+  "word": "schedule",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈskedʒuːl",
+  "meaning": "① 일정(표), 스케줄 ② 일정을 잡다, 예약하다",
+  "level": 2
+ },
+ {
+  "id": "schema",
+  "word": "schema",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈskiːmə",
+  "meaning": "스키마 — 데이터의 구조·형식을 정한 정의",
+  "level": 6
+ },
+ {
+  "id": "schema-valid",
+  "word": "schema-valid",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈskiːmə ˈvælɪd",
+  "meaning": "스키마에 맞는, 스키마 검증을 통과하는",
+  "level": 6
+ },
+ {
+  "id": "scope",
+  "word": "scope",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "skoʊp",
+  "meaning": "범위, (설정이) 적용되는 범위",
+  "level": 5
+ },
+ {
+  "id": "score",
+  "word": "score",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "skɔːr",
+  "meaning": "① 점수, 수치 ② 점수를 매기다",
+  "level": 2
+ },
+ {
+  "id": "scratchpad",
+  "word": "scratchpad",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈskrætʃpæd",
+  "meaning": "스크래치패드 — 작업 중 메모·진행 상황을 적어 두는 임시 기록",
+  "level": 6
+ },
+ {
+  "id": "screen",
+  "word": "screen",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "skriːn",
+  "meaning": "① 화면 ② 선별 검사(하다) — 미리 걸러 내다 (screening, pre-screen)",
+  "level": 2
+ },
+ {
+  "id": "screenshot",
+  "word": "screenshot",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈskriːnʃɑːt",
+  "meaning": "스크린샷, 화면 캡처",
+  "level": 3
+ },
+ {
+  "id": "script",
+  "word": "script",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "skrɪpt",
+  "meaning": "① 스크립트 (자동 실행용 짧은 프로그램) ② 대본, 정해진 지시문 ③ 스크립트로 자동화하다",
+  "level": 4
+ },
+ {
+  "id": "sdk",
+  "word": "SDK",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "ˌes.diːˈkeɪ",
+  "meaning": "소프트웨어 개발 키트 — 프로그램 개발용 라이브러리·도구 묶음",
+  "level": 6
+ },
+ {
+  "id": "secondary",
+  "word": "secondary",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈsekənderi",
+  "meaning": "① 부차적인, 이차적인 ② (교육) 중등의",
+  "level": 4
+ },
+ {
+  "id": "secret",
+  "word": "secret",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ˈsiːkrət",
+  "meaning": "① 비밀 값, 시크릿 (키·토큰 등 숨겨야 할 값) ② 비밀, 기밀 ③ 비밀의",
+  "level": 2
+ },
+ {
+  "id": "section",
+  "word": "section",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsekʃn",
+  "meaning": "(문서·설정의) 부분, 섹션, 항목",
+  "level": 2
+ },
+ {
+  "id": "sector",
+  "word": "sector",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsektər",
+  "meaning": "분야, 부문",
+  "level": 4
+ },
+ {
+  "id": "security",
+  "word": "security",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "sɪˈkjʊrəti",
+  "meaning": "보안",
+  "level": 2
+ },
+ {
+  "id": "segment",
+  "word": "segment",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈseɡmənt",
+  "meaning": "(전체를 나눈) 조각, 구간 / 나누다",
+  "level": 5
+ },
+ {
+  "id": "select",
+  "word": "select",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "sɪˈlekt",
+  "meaning": "(여럿 중에서) 고르다, 선택하다",
+  "level": 2
+ },
+ {
+  "id": "selection",
+  "word": "selection",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "sɪˈlekʃn",
+  "meaning": "선택, 고르기",
+  "level": 3
+ },
+ {
+  "id": "selective",
+  "word": "selective",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "sɪˈlektɪv",
+  "meaning": "선택적인, (일부만) 골라서 하는",
+  "level": 4
+ },
+ {
+  "id": "self-hosted",
+  "word": "self-hosted",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌself ˈhoʊstɪd",
+  "meaning": "자체 호스팅의 — 남의 클라우드가 아닌 자기 서버·인프라에서 운영하는",
+  "level": 6
+ },
+ {
+  "id": "self-review",
+  "word": "self-review",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌself rɪˈvjuː",
+  "meaning": "자기 검토 — 만든 쪽이 자기 결과물을 스스로 리뷰하는 것",
+  "level": 4
+ },
+ {
+  "id": "semantic",
+  "word": "semantic",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "sɪˈmæntɪk",
+  "meaning": "의미의, 의미상의 — 글자 모양이 아니라 뜻을 기준으로 한",
+  "level": 6
+ },
+ {
+  "id": "senior",
+  "word": "senior",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˈsiːnjər",
+  "meaning": "① 선임의, 경력이 많은 ② 연장자, 고령자",
+  "level": 3
+ },
+ {
+  "id": "sensitive",
+  "word": "sensitive",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈsensətɪv",
+  "meaning": "민감한, 기밀의 (sensitive data: 민감 정보)",
+  "level": 4
+ },
+ {
+  "id": "separate",
+  "word": "separate",
+  "pos": [
+   "형용사",
+   "동사"
+  ],
+  "ipa": "ˈsepərət",
+  "meaning": "① 별개의, 따로 떨어진 ② 분리하다, 떼어 놓다",
+  "level": 3
+ },
+ {
+  "id": "sequence",
+  "word": "sequence",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsiːkwəns",
+  "meaning": "순서, 차례 / (순서대로 이어진) 연속",
+  "level": 4
+ },
+ {
+  "id": "sequential",
+  "word": "sequential",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "sɪˈkwenʃl",
+  "meaning": "순차적인 — 하나씩 차례로 하는",
+  "level": 5
+ },
+ {
+  "id": "serialize",
+  "word": "serialize",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈsɪriəlaɪz",
+  "meaning": "① 순서대로 하나씩 처리하다 (동시에 하지 않게) ② (데이터를) 직렬화하다 — 저장·전송용 형식으로 바꾸다",
+  "level": 6
+ },
+ {
+  "id": "serve",
+  "word": "serve",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "sɜːrv",
+  "meaning": "① (사용자에게) 서비스를 제공하다, 응대하다 ② (음식 등을) 내어 주다 ③ (역할을) 하다, 기능하다",
+  "level": 2
+ },
+ {
+  "id": "server",
+  "word": "server",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsɜːrvər",
+  "meaning": "① 서버 (요청에 응답하는 컴퓨터·프로그램) ② (식당의) 종업원",
+  "level": 3
+ },
+ {
+  "id": "server-sent-events",
+  "word": "server-sent events",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˌsɜːrvər sent ɪˈvents",
+  "meaning": "서버 전송 이벤트(SSE) — 서버가 HTTP 연결 하나로 이벤트를 차례로 흘려보내는 방식 (스트리밍)",
+  "level": 6
+ },
+ {
+  "id": "service-account",
+  "word": "service account",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈsɜːrvɪs əˌkaʊnt",
+  "meaning": "서비스 계정 — 사람이 아닌 프로그램·자동 작업이 쓰는 계정",
+  "level": 6
+ },
+ {
+  "id": "session",
+  "word": "session",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈseʃn",
+  "meaning": "세션 — (대화·작업이) 시작부터 끝까지 이어지는 한 단위",
+  "level": 4
+ },
+ {
+  "id": "session-level",
+  "word": "session-level",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈseʃn ˈlevl",
+  "meaning": "세션 단위의, 세션 범위의",
+  "level": 5
+ },
+ {
+  "id": "setting",
+  "word": "setting",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsetɪŋ",
+  "meaning": "① 설정, 설정값 ② 환경, 배경",
+  "level": 2
+ },
+ {
+  "id": "setup",
+  "word": "setup",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsetʌp",
+  "meaning": "① 구성, 설정 방식 ② (설치·준비) 초기 설정 작업",
+  "level": 4
+ },
+ {
+  "id": "shard",
+  "word": "shard",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ʃɑːrd",
+  "meaning": "샤드 — 큰 데이터베이스를 나눈 조각 / (sharded) 여러 조각으로 나눠 저장한",
+  "level": 6
+ },
+ {
+  "id": "shell",
+  "word": "shell",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ʃel",
+  "meaning": "① 셸 (명령어를 입력해 실행하는 프로그램) ② 껍데기, 껍질",
+  "level": 5
+ },
+ {
+  "id": "shift",
+  "word": "shift",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ʃɪft",
+  "meaning": "(서서히) 옮기다, 바꾸다 / 전환",
+  "level": 3
+ },
+ {
+  "id": "short-lived",
+  "word": "short-lived",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌʃɔːrt ˈlɪvd",
+  "meaning": "수명이 짧은, 잠깐만 유지되는",
+  "level": 4
+ },
+ {
+  "id": "shorten",
+  "word": "shorten",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈʃɔːrtn",
+  "meaning": "짧게 줄이다, 단축하다",
+  "level": 3
+ },
+ {
+  "id": "show-up",
+  "word": "show up",
+  "pos": [
+   "동사구"
+  ],
+  "ipa": "ˌʃoʊ ˈʌp",
+  "meaning": "나타나다, (결과·목록에) 보이다",
+  "level": 2
+ },
+ {
+  "id": "shuffle",
+  "word": "shuffle",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈʃʌfl",
+  "meaning": "① (순서를) 섞다 ② 발을 끌며 걷다",
+  "level": 4
+ },
+ {
+  "id": "sign",
+  "word": "sign",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "saɪn",
+  "meaning": "① 서명하다 ② (sign in) 로그인하다 ③ 부호 ④ 징후, 표지",
+  "level": 2
+ },
+ {
+  "id": "signal",
+  "word": "signal",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈsɪɡnəl",
+  "meaning": "(상태·의도를) 알리다, 신호를 보내다 / 신호",
+  "level": 3
+ },
+ {
+  "id": "signature",
+  "word": "signature",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsɪɡnətʃər",
+  "meaning": "① 서명 — (암호) 위·변조를 확인하는 값 ② (함수) 시그니처 — 이름·인자·반환형",
+  "level": 4
+ },
+ {
+  "id": "significant",
+  "word": "significant",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "sɪɡˈnɪfɪkənt",
+  "meaning": "상당한, 중요한",
+  "level": 4
+ },
+ {
+  "id": "silently",
+  "word": "silently",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈsaɪləntli",
+  "meaning": "① 아무 알림 없이, 조용히 ② (be silent on ~) ~에 대해 언급이 없는",
+  "level": 3
+ },
+ {
+  "id": "similar",
+  "word": "similar",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈsɪmələr",
+  "meaning": "비슷한, 유사한",
+  "level": 2
+ },
+ {
+  "id": "similarity",
+  "word": "similarity",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌsɪməˈlerəti",
+  "meaning": "유사성, 유사도",
+  "level": 4
+ }
+]

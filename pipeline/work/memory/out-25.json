@@ -1,0 +1,262 @@
+{
+  "tag": {
+    "story": "옷에 달린 가격표처럼 무엇인지 알려 주는 쪽지를 붙인다 → 태그, 꼬리표 / 태그를 달다",
+    "hook": "태그 → SNS '해시태그'처럼 붙이는 꼬리표 → 태그, 꼬리표"
+  },
+  "target": {
+    "roots": [{ "part": "targ", "ko": "방패" }, { "part": "-et", "ko": "작은 것" }],
+    "origin": "고대 프랑스어 targette (작은 방패)",
+    "story": "활쏘기 과녁으로 세워 둔 작은(-et) 방패(targ) → 목표, 대상 / 겨냥하다",
+    "hook": "타깃 → '타깃 고객'은 겨냥한 대상 → 대상, 목표"
+  },
+  "task": {
+    "origin": "중세 라틴어 tasca (부과된 일, 세금)",
+    "story": "세금(tax)처럼 내 몫으로 매겨진 일 → 작업, 과제, 일",
+    "hook": "태스크 → '태스크 포스(TF)'는 특정 과제를 맡은 팀 → 과제, 작업",
+    "family": ["tax", "multitask"]
+  },
+  "tax": {
+    "origin": "라틴어 taxare (값을 매기다, 평가하다)",
+    "story": "재산이 얼마인지 평가해(taxare) 매긴 돈 → 세금",
+    "hook": "택스 → '택스 프리'는 세금 면제 → 세금",
+    "family": ["task", "taxation", "taxi"]
+  },
+  "teammate": {
+    "roots": [{ "part": "team", "ko": "팀" }, { "part": "mate", "ko": "짝, 동료" }],
+    "story": "같은 팀(team)에서 함께 일하는 짝(mate) → 팀원, 동료",
+    "family": ["classmate", "roommate"]
+  },
+  "tech": {
+    "origin": "technology 의 줄임말 (그리스어 tekhnē 솜씨)",
+    "story": "솜씨(tekhnē)를 다루는 말 '테크놀로지'를 짧게 줄여 부른다 → 기술",
+    "hook": "테크 → '핀테크', '빅테크'의 테크 → 기술"
+  },
+  "technical": {
+    "roots": [{ "part": "techn", "ko": "기술, 솜씨" }, { "part": "-ical", "ko": "~에 관한" }],
+    "origin": "그리스어 tekhnikos (기술의) ← tekhnē (솜씨)",
+    "story": "솜씨와 기술(techn)에 관한(-ical) → 기술적인, 전문적인",
+    "family": ["technique", "technology", "architect"]
+  },
+  "technical-debt": {
+    "roots": [{ "part": "technical", "ko": "기술적인" }, { "part": "debt", "ko": "빚" }],
+    "story": "빨리 가려고 기술(technical) 면에서 진 빚(debt), 나중에 이자까지 붙여 갚는다 → 기술 부채"
+  },
+  "technique": {
+    "roots": [{ "part": "techn", "ko": "기술, 솜씨" }, { "part": "-ique", "ko": "~의 (프랑스어식 어미)" }],
+    "origin": "프랑스어 technique ← 그리스어 tekhnikos (기술의)",
+    "story": "일을 해내는 솜씨(techn) 하나하나 → 기법, 방법",
+    "hook": "테크닉 → '테크닉이 좋다'의 테크닉 → 기법",
+    "family": ["technical", "technology", "technician"]
+  },
+  "telemetry": {
+    "roots": [{ "part": "tele-", "ko": "멀리" }, { "part": "metr", "ko": "재다" }, { "part": "-y", "ko": "~하는 일" }],
+    "story": "멀리(tele) 떨어진 곳의 동작을 재어(metr) 보내오는 일(-y) → 텔레메트리",
+    "family": ["telephone", "television", "meter", "geometry"]
+  },
+  "temperature": {
+    "roots": [{ "part": "temperat", "ko": "알맞게 섞인" }, { "part": "-ure", "ko": "~한 정도" }],
+    "origin": "라틴어 temperatura ← temperare (섞다, 조절하다)",
+    "story": "더움과 참이 섞인(temperat) 정도(-ure)가 온도, 올릴수록 출력이 들뜬다 → 무작위성을 정하는 값",
+    "family": ["temper", "temperate", "temperament"]
+  },
+  "template": {
+    "story": "모양을 떠 둔 본에 대고 내용만 채워 찍어 낸다 → 템플릿, 서식 틀",
+    "hook": "템플릿 → 발표 자료 '템플릿'을 받아 내용만 채운다 → 서식 틀"
+  },
+  "temporarily": {
+    "roots": [{ "part": "tempor", "ko": "시간, 때" }, { "part": "-ari-", "ko": "~의 (-ary)" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 temporarius (한때의) ← tempus (시간)",
+    "story": "한때(tempor)만 그렇게(-ly) 해 두고 곧 되돌린다 → 일시적으로, 잠시",
+    "family": ["temporary", "contemporary", "tempo"]
+  },
+  "terminate": {
+    "roots": [{ "part": "termin", "ko": "끝, 경계" }, { "part": "-ate", "ko": "~하게 하다" }],
+    "origin": "라틴어 terminare ← terminus (끝, 경계)",
+    "story": "여기까지라고 끝(termin) 선을 긋는다(-ate) → 끝내다, 종료시키다",
+    "hook": "터미네이트 → 영화 '터미네이터'는 끝장내는 자 → 끝내다",
+    "family": ["terminal", "term", "determine", "exterminate"]
+  },
+  "terminology": {
+    "roots": [{ "part": "termin", "ko": "경계, 용어 (term)" }, { "part": "-ology", "ko": "말·학문의 체계" }],
+    "origin": "중세 라틴어 terminus (용어, 한계) + -logy",
+    "story": "뜻의 경계(termin)를 정해 둔 말들을 모은 체계(-ology) → 용어, 어휘",
+    "family": ["term", "terminal", "determine"]
+  },
+  "terse": {
+    "origin": "라틴어 tersus (깨끗이 닦아 낸)",
+    "story": "세제(detergent)로 닦듯 군말을 싹 닦아 내(tersus) 알맹이만 남긴 → 간결한, 짤막한"
+  },
+  "tester": {
+    "roots": [{ "part": "test", "ko": "시험하다" }, { "part": "-er", "ko": "~하는 사람" }],
+    "story": "제대로 되는지 시험해(test) 보는 사람(-er) → 테스터, 검사하는 사람"
+  },
+  "text-only": {
+    "roots": [{ "part": "text", "ko": "글, 텍스트" }, { "part": "only", "ko": "~만" }],
+    "story": "글(text)만(only) 있고 도구 호출 같은 다른 블록은 없는 → 텍스트만 있는"
+  },
+  "theme": {
+    "origin": "그리스어 thema (놓아 둔 것, 논제)",
+    "story": "이야기 한가운데에 놓아 둔(thema) 것 → 주제, 테마",
+    "hook": "띰 → '테마 파크'의 테마와 같은 말 → 주제, 테마",
+    "family": ["thesis", "synthesis", "hypothesis"]
+  },
+  "thin": {
+    "origin": "고대 영어 thynne (얇은)",
+    "story": "종이 한 장처럼 얇아 속에 든 것이 없다 → (내용이) 빈약한, 부실한 / 얇은",
+    "hook": "씬 → '씬 피자'는 도우가 얇은 피자 → 얇은, 빈약한"
+  },
+  "thinking": {
+    "roots": [{ "part": "think", "ko": "생각하다" }, { "part": "-ing", "ko": "~하기" }],
+    "story": "답을 내놓기 전에 속으로 생각하는(think) 과정(-ing) → (모델의) 사고, 생각"
+  },
+  "though": {
+    "origin": "고대 노르드어 thó, 고대 영어 thēah (그렇지만)",
+    "story": "앞말을 인정하면서도 '그래도' 하고 뒤집는다 → 비록 ~이지만, 하지만, 그래도"
+  },
+  "thread": {
+    "origin": "고대 영어 thrǣd (꼰 실)",
+    "story": "실(thread) 한 가닥에 꿰이듯 이야기와 작업이 죽 이어진다 → 흐름, 맥락, 스레드",
+    "hook": "스레드 → 메신저의 '스레드(댓글 타래)' → 대화 묶음, 흐름"
+  },
+  "threat": {
+    "origin": "고대 영어 thrēat (압박, 으름장)",
+    "story": "해를 끼치겠다고 밀어붙이는 압박 → 위협"
+  },
+  "through": {
+    "origin": "고대 영어 thurh (꿰뚫어)",
+    "story": "터널 한쪽으로 들어가 반대쪽으로 꿰뚫고 나온다 → ~을 통해, ~을 거쳐, 통과하여",
+    "hook": "스루 → '드라이브 스루'는 차로 통과하며 주문 → ~을 통해, 통과하여",
+    "family": ["thorough", "throughout"]
+  },
+  "ticket": {
+    "origin": "프랑스어 étiquette (붙여 둔 쪽지)",
+    "story": "건마다 붙여 둔 쪽지(étiquette, '에티켓'과 한 뿌리) 한 장 → 티켓, 요청 건 / 표",
+    "hook": "티켓 → 고객 센터의 '문의 티켓' → 요청 건, 표"
+  },
+  "tier": {
+    "origin": "고대 프랑스어 tire (줄, 열)",
+    "story": "관람석처럼 한 줄(tire) 한 줄 층층이 쌓인 것 → 등급, 단계",
+    "hook": "티어 → 게임 '티어'(브론즈·실버·골드) → 등급"
+  },
+  "tight": {
+    "origin": "고대 노르드어 théttr (촘촘한, 물샐틈없는)",
+    "story": "물 한 방울 샐 틈 없이 꽉 조인 → 촘촘한, 빈틈없는",
+    "hook": "타이트 → '일정이 타이트하다'처럼 틈이 없는 → 빈틈없는, 촘촘한"
+  },
+  "timeout": {
+    "roots": [{ "part": "time", "ko": "시간" }, { "part": "out", "ko": "다 떨어진, 끝난" }],
+    "story": "기다려 주기로 한 시간(time)이 다 떨어져(out) 끊긴다 → 타임아웃, 제한 시간"
+  },
+  "timestamp": {
+    "roots": [{ "part": "time", "ko": "시각" }, { "part": "stamp", "ko": "도장" }],
+    "story": "우편 소인처럼 일이 일어난 시각(time)을 도장(stamp)으로 찍어 둔 값 → 타임스탬프"
+  },
+  "token": {
+    "origin": "고대 영어 tācen (표시, 징표)",
+    "story": "무언가를 대신 나타내는 작은 징표(tācen) → 토큰(텍스트 처리 단위·인증 토큰), 표시",
+    "hook": "토큰 → 예전 버스 '토큰'은 요금을 대신하던 징표 → 토큰, 표시",
+    "family": ["betoken", "teach"]
+  },
+  "tokenizer": {
+    "roots": [{ "part": "token", "ko": "토큰" }, { "part": "-iz-", "ko": "~로 만들다 (-ize)" }, { "part": "-er", "ko": "~하는 것" }],
+    "story": "글을 토큰(token) 단위로 쪼개 만드는(-ize) 장치(-er) → 토크나이저"
+  },
+  "tone": {
+    "origin": "그리스어 tonos (줄의 팽팽함, 음높이)",
+    "story": "현을 당긴 팽팽함(tonos)에 따라 소리가 달라지듯 말에 실린 가락 → 어조, 말투",
+    "hook": "톤 → '목소리 톤을 낮춰' → 어조, 말투",
+    "family": ["tune", "tonic", "monotone", "intonation"]
+  },
+  "toolset": {
+    "roots": [{ "part": "tool", "ko": "도구" }, { "part": "set", "ko": "한 벌, 묶음" }],
+    "story": "쓸 수 있는 도구(tool)를 한 벌(set)로 묶은 것 → 도구 모음"
+  },
+  "top-level": {
+    "roots": [{ "part": "top", "ko": "꼭대기" }, { "part": "level", "ko": "층, 수준" }],
+    "story": "계층의 맨 꼭대기(top) 층(level)에 있는 → 최상위의"
+  },
+  "topic": {
+    "roots": [{ "part": "top", "ko": "장소" }, { "part": "-ic", "ko": "~에 관한" }],
+    "origin": "그리스어 topika ← topos (장소, 논점)",
+    "story": "논의가 자리 잡는 곳(top), 아리스토텔레스의 책 '토피카'에서 → 주제, 화제",
+    "hook": "토픽 → '해외 토픽' → 화제, 주제",
+    "family": ["topical", "utopia", "topography"]
+  },
+  "topical": {
+    "roots": [{ "part": "topic", "ko": "주제" }, { "part": "-al", "ko": "~의" }],
+    "story": "주제(topic)에 관한(-al), 주제별로 나눈 → 주제(상)의, 주제에 관한",
+    "family": ["topic", "utopia", "topology"]
+  },
+  "total": {
+    "roots": [{ "part": "tot", "ko": "전부" }, { "part": "-al", "ko": "~의" }],
+    "origin": "중세 라틴어 totalis ← 라틴어 totus (전부의)",
+    "story": "하나도 빠짐없이 전부(tot)를 더한(-al) 것 → 합계, 총액 / 전체의",
+    "hook": "토털 → '토털 얼마예요?' → 합계",
+    "family": ["totality", "totalitarian"]
+  },
+  "toward": {
+    "roots": [{ "part": "to", "ko": "~로" }, { "part": "-ward", "ko": "~ 방향으로" }],
+    "story": "그쪽으로(to) 방향(-ward)을 잡고 → ~쪽으로, ~을 향해",
+    "family": ["forward", "backward", "upward"]
+  },
+  "trace": {
+    "origin": "고대 프랑스어 tracier ← 라틴어 tractus (끌린 자국)",
+    "story": "끌고(tractus) 지나간 자국을 하나하나 따라간다 → 추적하다 / 추적 기록",
+    "hook": "트레이스 → 밑그림을 따라 그리는 '트레이싱' → 따라가다, 추적하다",
+    "family": ["tract", "attract", "extract"]
+  },
+  "track": {
+    "origin": "고대 프랑스어 trac (발자국, 자취)",
+    "story": "남은 발자국(trac)을 따라가면 제 길 → 제 궤도 / 추적하다, 기록해 관리하다",
+    "hook": "트랙 → 육상 '트랙'을 벗어나지 않고 달린다 → 제 궤도"
+  },
+  "trade": {
+    "origin": "중세 저지 독일어 trade (길, 다니는 항로)",
+    "story": "상인들이 늘 오가던 길(trade)에서 물건을 주고받는다 → 맞바꾸다, 거래하다 / 무역",
+    "hook": "트레이드 → 프로야구 '트레이드'는 선수를 맞바꾸는 것 → 맞바꾸다"
+  },
+  "trade-off": {
+    "roots": [{ "part": "trade", "ko": "맞바꾸다" }, { "part": "off", "ko": "떼어 내어" }],
+    "story": "하나를 떼어(off) 내주고 다른 하나와 맞바꾼다(trade) → 상충 관계, 맞바꿈"
+  },
+  "traffic": {
+    "origin": "이탈리아어 traffico (교역, 왕래)",
+    "story": "상인과 물건이 오가던 왕래(traffico), 그 오가는 양 → 트래픽, 통신량 / 교통, 통행량",
+    "hook": "트래픽 → '트래픽이 몰려 접속 지연' → 통신량, 통행량"
+  },
+  "trail": {
+    "origin": "고대 프랑스어 trailler (끌다) ← 라틴어 trahere",
+    "story": "무언가를 끌고(trahere) 지나간 뒤 길게 남은 자국 → 자취, 흔적",
+    "hook": "트레일 → '트레일 러닝'은 산길 자취를 따라 달리기 → 자취, 흔적",
+    "family": ["trailer", "tractor", "attract"]
+  },
+  "trailing": {
+    "roots": [{ "part": "trail", "ko": "뒤에 끌리다" }, { "part": "-ing", "ko": "~하는" }],
+    "story": "옷자락처럼 뒤에 끌려(trail) 붙어 있는(-ing) → 뒤에 붙은, 끝에 남은",
+    "family": ["trail", "trailer"]
+  },
+  "train": {
+    "origin": "고대 프랑스어 traïner (끌다) ← 라틴어 trahere",
+    "story": "원하는 쪽으로 끌고(trahere) 가며 길들인다 → 학습시키다, 훈련시키다 / 줄줄이 끌려가는 차 → 기차",
+    "hook": "트레인 → '트레이닝', '트레이너' → 훈련시키다, 학습시키다",
+    "family": ["tractor", "attract", "trait"]
+  },
+  "transactional": {
+    "roots": [{ "part": "trans-", "ko": "건너, 끝까지" }, { "part": "act", "ko": "행하다, 몰다" }, { "part": "-ion", "ko": "~하는 일" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 transigere (끝까지 몰아 처리하다)",
+    "story": "일을 끝까지(trans) 몰아 처리하는(act) 것(-ion), 곧 거래에 관한(-al) → 거래(처리)에 관한",
+    "family": ["transaction", "action", "react"]
+  },
+  "transform": {
+    "roots": [{ "part": "trans-", "ko": "건너, 바꾸어" }, { "part": "form", "ko": "모양" }],
+    "origin": "라틴어 transformare (모양을 바꾸다)",
+    "story": "모양(form)을 이쪽에서 저쪽으로 건너가게(trans) 바꾼다 → 변환하다, 바꾸다 / 변환",
+    "hook": "트랜스폼 → 영화 '트랜스포머'의 변신 로봇 → 변환하다",
+    "family": ["format", "reform", "uniform", "conform"]
+  },
+  "transformation": {
+    "roots": [{ "part": "trans-", "ko": "건너, 바꾸어" }, { "part": "form", "ko": "모양" }, { "part": "-ation", "ko": "~하는 일" }],
+    "story": "모양(form)을 건너(trans) 바꾸는 일(-ation) → 변환, 변형",
+    "family": ["reform", "formation", "information"]
+  }
+}

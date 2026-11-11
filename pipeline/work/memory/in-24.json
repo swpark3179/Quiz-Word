@@ -1,0 +1,514 @@
+[
+ {
+  "id": "steer",
+  "word": "steer",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "stɪr",
+  "meaning": "(원하는 방향으로) 이끌다, 조종하다",
+  "level": 5
+ },
+ {
+  "id": "store",
+  "word": "store",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "stɔːr",
+  "meaning": "저장하다, 보관하다 / 저장소",
+  "level": 2
+ },
+ {
+  "id": "straight",
+  "word": "straight",
+  "pos": [
+   "부사",
+   "형용사"
+  ],
+  "ipa": "streɪt",
+  "meaning": "① 곧바로, 중간 단계 없이 ② 곧은, 똑바른 ③ (keep ~ straight) 혼동하지 않고 구분하다",
+  "level": 2
+ },
+ {
+  "id": "straightforward",
+  "word": "straightforward",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌstreɪtˈfɔːrwərd",
+  "meaning": "간단한, 복잡하지 않은",
+  "level": 4
+ },
+ {
+  "id": "strategy",
+  "word": "strategy",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈstrætədʒi",
+  "meaning": "전략, (문제를 푸는) 방식",
+  "level": 3
+ },
+ {
+  "id": "stream",
+  "word": "stream",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "striːm",
+  "meaning": "스트리밍하다 — 응답을 다 만들기 전에 생성되는 대로 조금씩 보내다 / 흐름",
+  "level": 4
+ },
+ {
+  "id": "strength",
+  "word": "strength",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "streŋθ",
+  "meaning": "① 강도, 세기, 힘 ② 강점, 장점 ③ (근거 등의) 확실성, 설득력",
+  "level": 2
+ },
+ {
+  "id": "strict",
+  "word": "strict",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "strɪkt",
+  "meaning": "엄격한",
+  "level": 4
+ },
+ {
+  "id": "string",
+  "word": "string",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "strɪŋ",
+  "meaning": "① 문자열 ② 끈, 줄",
+  "level": 5
+ },
+ {
+  "id": "strip",
+  "word": "strip",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "strɪp",
+  "meaning": "벗겨 내다, (불필요한 부분을) 걷어 내다·제거하다",
+  "level": 4
+ },
+ {
+  "id": "structure",
+  "word": "structure",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈstrʌktʃər",
+  "meaning": "구조 / 구조화하다 — structured: 정해진 형식을 갖춘, 구조화된",
+  "level": 3
+ },
+ {
+  "id": "subagent",
+  "word": "subagent",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsʌbˌeɪdʒənt",
+  "meaning": "서브에이전트 — 상위(코디네이터) 에이전트가 일을 맡기려고 띄우는 하위 에이전트",
+  "level": 6
+ },
+ {
+  "id": "subfolder",
+  "word": "subfolder",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsʌbfoʊldər",
+  "meaning": "하위 폴더",
+  "level": 4
+ },
+ {
+  "id": "subject",
+  "word": "subject",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ˈsʌbdʒɪkt",
+  "meaning": "① (토큰의) 주체 — sub 클레임, 토큰이 누구를 나타내는지 ② 주제, 대상 ③ (be subject to) ~의 적용을 받다",
+  "level": 2
+ },
+ {
+  "id": "submit",
+  "word": "submit",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "səbˈmɪt",
+  "meaning": "제출하다, (요청·작업을) 넣다",
+  "level": 4
+ },
+ {
+  "id": "subset",
+  "word": "subset",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsʌbset",
+  "meaning": "일부, 부분집합",
+  "level": 5
+ },
+ {
+  "id": "substantially",
+  "word": "substantially",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "səbˈstænʃəli",
+  "meaning": "상당히, 크게",
+  "level": 5
+ },
+ {
+  "id": "substring",
+  "word": "substring",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsʌbstrɪŋ",
+  "meaning": "부분 문자열",
+  "level": 6
+ },
+ {
+  "id": "subsystem",
+  "word": "subsystem",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsʌbsɪstəm",
+  "meaning": "하위 시스템 — 큰 시스템 안에서 한 기능을 맡은 부분",
+  "level": 5
+ },
+ {
+  "id": "subtask",
+  "word": "subtask",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsʌbtæsk",
+  "meaning": "하위 작업 — 큰 작업을 쪼갠 작은 작업 하나",
+  "level": 5
+ },
+ {
+  "id": "subtopic",
+  "word": "subtopic",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsʌbtɑːpɪk",
+  "meaning": "하위 주제, 세부 주제",
+  "level": 5
+ },
+ {
+  "id": "subtype",
+  "word": "subtype",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsʌbtaɪp",
+  "meaning": "하위 유형, 하위 타입",
+  "level": 5
+ },
+ {
+  "id": "succeed",
+  "word": "succeed",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "səkˈsiːd",
+  "meaning": "① 성공하다 ② (뒤를) 잇다",
+  "level": 2
+ },
+ {
+  "id": "successful",
+  "word": "successful",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "səkˈsesfl",
+  "meaning": "성공적인",
+  "level": 2
+ },
+ {
+  "id": "successfully",
+  "word": "successfully",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "səkˈsesfəli",
+  "meaning": "성공적으로, 문제없이",
+  "level": 2
+ },
+ {
+  "id": "suggest",
+  "word": "suggest",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "səˈdʒest",
+  "meaning": "① 제안하다, 권하다 ② (증거 등이) 시사하다, 암시하다",
+  "level": 2
+ },
+ {
+  "id": "suite",
+  "word": "suite",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "swiːt",
+  "meaning": "(테스트 등의) 묶음, 모음",
+  "level": 6
+ },
+ {
+  "id": "sum",
+  "word": "sum",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "sʌm",
+  "meaning": "합계 / (sum to) 합이 ~이 되다",
+  "level": 2
+ },
+ {
+  "id": "summarise",
+  "word": "summarise",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈsʌməraɪz",
+  "meaning": "요약하다 (summarize의 영국식 철자)",
+  "level": 4
+ },
+ {
+  "id": "summarize",
+  "word": "summarize",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈsʌməraɪz",
+  "meaning": "요약하다 — summarization: 요약",
+  "level": 4
+ },
+ {
+  "id": "summary",
+  "word": "summary",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsʌməri",
+  "meaning": "요약(본)",
+  "level": 3
+ },
+ {
+  "id": "superficial",
+  "word": "superficial",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌsuːpərˈfɪʃl",
+  "meaning": "피상적인, 겉핥기의",
+  "level": 5
+ },
+ {
+  "id": "supervisor",
+  "word": "supervisor",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsuːpərvaɪzər",
+  "meaning": "관리자, 상급자",
+  "level": 4
+ },
+ {
+  "id": "supply",
+  "word": "supply",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "səˈplaɪ",
+  "meaning": "(필요한 것을) 제공하다, 대다, 공급하다 — supply chain: 공급망",
+  "level": 3
+ },
+ {
+  "id": "support",
+  "word": "support",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "səˈpɔːrt",
+  "meaning": "① (고객) 지원, 상담 ② 뒷받침하다, 가능하게 하다 ③ (기능·형식을) 지원하다",
+  "level": 2
+ },
+ {
+  "id": "surcharge",
+  "word": "surcharge",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsɜːrtʃɑːrdʒ",
+  "meaning": "추가 요금, 할증료",
+  "level": 6
+ },
+ {
+  "id": "surface",
+  "word": "surface",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈsɜːrfɪs",
+  "meaning": "(숨은 것을) 드러내다 / 드러나다, 표면화되다 / 표면",
+  "level": 4
+ },
+ {
+  "id": "surround",
+  "word": "surround",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "səˈraʊnd",
+  "meaning": "둘러싸다 — surrounding: 주변의, 앞뒤의",
+  "level": 3
+ },
+ {
+  "id": "survey",
+  "word": "survey",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈsɜːrveɪ",
+  "meaning": "① 설문 조사 ② (전체를) 살펴보다, 조사하다",
+  "level": 3
+ },
+ {
+  "id": "survive",
+  "word": "survive",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "sərˈvaɪv",
+  "meaning": "(변화를 겪고도) 살아남다, 사라지지 않고 유지되다",
+  "level": 3
+ },
+ {
+  "id": "sustained",
+  "word": "sustained",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "səˈsteɪnd",
+  "meaning": "지속적인, 계속 이어진",
+  "level": 5
+ },
+ {
+  "id": "swap",
+  "word": "swap",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "swɑːp",
+  "meaning": "(두 개를) 맞바꾸다, 서로 뒤바꾸다",
+  "level": 5
+ },
+ {
+  "id": "switch",
+  "word": "switch",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "swɪtʃ",
+  "meaning": "(다른 것으로) 바꾸다, 전환하다 / 전환",
+  "level": 2
+ },
+ {
+  "id": "symbol",
+  "word": "symbol",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsɪmbl",
+  "meaning": "① 심볼 — 코드 속 함수·클래스·변수 같은 이름 ② 기호",
+  "level": 3
+ },
+ {
+  "id": "symlink",
+  "word": "symlink",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈsɪmlɪŋk",
+  "meaning": "심볼릭 링크(를 걸다) — 다른 파일을 가리키는 바로 가기 파일",
+  "level": 6
+ },
+ {
+  "id": "sync",
+  "word": "sync",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "sɪŋk",
+  "meaning": "동기화(하다) — 두 곳의 내용을 같게 맞추다",
+  "level": 5
+ },
+ {
+  "id": "synchronous",
+  "word": "synchronous",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈsɪŋkrənəs",
+  "meaning": "동기의 — 결과가 올 때까지 기다렸다 다음으로 넘어가는",
+  "level": 6
+ },
+ {
+  "id": "syntax",
+  "word": "syntax",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈsɪntæks",
+  "meaning": "구문, 문법 — 형식이 맞는지에 관한 규칙",
+  "level": 6
+ },
+ {
+  "id": "synthetic",
+  "word": "synthetic",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "sɪnˈθetɪk",
+  "meaning": "합성의, 인공적으로 만든 (synthetic data: 실제가 아니라 만들어 낸 데이터)",
+  "level": 5
+ },
+ {
+  "id": "system-prompt",
+  "word": "system prompt",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˈsɪstəm ˈprɑːmpt",
+  "meaning": "시스템 프롬프트 — 모델의 역할·규칙을 미리 정해 주는 기본 지시문",
+  "level": 6
+ }
+]

@@ -1,0 +1,280 @@
+{
+  "medium": {
+    "roots": [{ "part": "medi", "ko": "가운데" }, { "part": "-um", "ko": "~한 것 (명사 어미)" }],
+    "origin": "라틴어 medium (가운데 있는 것)",
+    "story": "양쪽 사이 한가운데(medi)에 놓인 것 → 중간의, (사이를 잇는) 매체",
+    "hook": "미디엄 → 스테이크 굽기 '미디엄'은 중간 익힘 → 중간의",
+    "family": ["media", "mediate", "intermediate", "medieval"]
+  },
+  "meet": {
+    "origin": "고대 영어 mētan (마주치다, 만나다)",
+    "story": "요구 기준과 딱 마주쳐(meet) 맞아떨어진다 → 충족하다, 맞추다 / 만나다",
+    "hook": "미트 → '미팅'에서 만나 조건을 맞춘다 → 충족하다, 만나다"
+  },
+  "memo": {
+    "origin": "memorandum 의 줄임 ← 라틴어 (기억해 둘 것)",
+    "story": "잊지 않게 기억해(memor) 두려고 적어 둔 쪽지 → 메모, 전표",
+    "hook": "메모 → 외래어 '메모' 그대로 → 메모, 전표",
+    "family": ["memory", "memorize", "remember", "memorial"]
+  },
+  "memory": {
+    "roots": [{ "part": "memor", "ko": "기억하는" }, { "part": "-y", "ko": "~함 (명사)" }],
+    "origin": "라틴어 memoria (기억) ← memor (기억하는)",
+    "story": "마음에 새겨 기억하는(memor) 힘, 또 그것을 담아 두는 곳 → 기억, 메모리",
+    "hook": "메모리 → 컴퓨터 '메모리'는 기억 장치 → 기억",
+    "family": ["memorize", "remember", "memorial", "commemorate"]
+  },
+  "mental": {
+    "roots": [{ "part": "ment", "ko": "마음, 정신" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 mentalis ← mens (마음, 정신)",
+    "story": "몸 밖이 아니라 마음(ment) 속에서 일어나는 → 정신의, 마음속의",
+    "hook": "멘탈 → '멘탈이 강하다'의 그 멘탈 → 정신의",
+    "family": ["mention", "dementia", "mentality"]
+  },
+  "mention": {
+    "roots": [{ "part": "ment", "ko": "마음" }, { "part": "-ion", "ko": "~하는 것" }],
+    "origin": "라틴어 mentio (마음에 떠올리게 함)",
+    "story": "상대의 마음(ment)에 떠오르도록 슬쩍 말을 꺼낸다 → 언급하다, 말하다",
+    "hook": "멘션 → SNS에서 @로 '멘션'하다 → 언급하다",
+    "family": ["mental", "comment", "reminisce"]
+  },
+  "merely": {
+    "roots": [{ "part": "mere", "ko": "순전한, ~에 불과한" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 merus (섞이지 않은, 순수한)",
+    "story": "다른 것은 섞이지 않고(mere) 오직 그것뿐으로 → 단지, 그저"
+  },
+  "merge": {
+    "origin": "라틴어 mergere (물에 담그다, 잠기게 하다)",
+    "story": "한 물에 담가(mergere) 서로 섞여 하나가 되게 한다 → 합치다, 병합하다",
+    "hook": "머지 → git '머지'로 브랜치를 합친다 → 병합하다",
+    "family": ["emerge", "submerge", "immerse"]
+  },
+  "metadata": {
+    "roots": [{ "part": "meta", "ko": "~에 대한, 한 단계 위의" }, { "part": "data", "ko": "데이터, 자료" }],
+    "origin": "그리스어 meta (너머) + 라틴어 data (주어진 것)",
+    "story": "데이터(data)보다 한 단계 위(meta)에서 그 데이터를 설명하는 데이터 → 메타데이터",
+    "family": ["metaphor", "database", "datum"]
+  },
+  "methodology": {
+    "roots": [{ "part": "method", "ko": "방법" }, { "part": "-ology", "ko": "학문, ~론" }],
+    "origin": "그리스어 methodos (길을 따라감) + logia (학문)",
+    "story": "방법(method)을 체계 있게 따지는 학문(-ology) → 방법론, (연구) 방법",
+    "family": ["method", "methodical", "biology", "technology"]
+  },
+  "microservice": {
+    "roots": [{ "part": "micro", "ko": "아주 작은" }, { "part": "service", "ko": "서비스" }],
+    "story": "큰 서비스(service)를 기능별로 아주 작게(micro) 쪼개 따로 돌린다 → 마이크로서비스",
+    "family": ["microscope", "microphone", "microchip"]
+  },
+  "mid": {
+    "origin": "고대 영어 midd (가운데의)",
+    "story": "처음과 끝 사이 한가운데(mid)에 있는 → 중간의, ~ 도중에",
+    "hook": "미드 → '미들(middle)'의 앞머리 → 중간의",
+    "family": ["middle", "midnight", "amid"]
+  },
+  "mid-session": {
+    "roots": [{ "part": "mid", "ko": "중간, 도중" }, { "part": "session", "ko": "세션, 작업 시간" }],
+    "story": "세션(session)이 한창 진행되는 한가운데(mid)에서 → 세션 도중에"
+  },
+  "middle-name": {
+    "roots": [{ "part": "middle", "ko": "가운데" }, { "part": "name", "ko": "이름" }],
+    "story": "이름과 성 사이 가운데(middle)에 끼어 있는 이름(name) → 중간 이름, 미들 네임"
+  },
+  "midway": {
+    "roots": [{ "part": "mid", "ko": "가운데" }, { "part": "way", "ko": "길" }],
+    "story": "가야 할 길(way)의 한가운데(mid)쯤 와 있다 → 도중에, 중간쯤에",
+    "family": ["midnight", "halfway", "amid"]
+  },
+  "migrate": {
+    "roots": [{ "part": "migr", "ko": "옮겨 가다" }, { "part": "-ate", "ko": "~하다" }],
+    "origin": "라틴어 migrare (살 곳을 옮기다)",
+    "story": "철새가 살 곳을 옮겨 가듯(migr) 데이터·코드를 새 환경으로 → 옮기다, 마이그레이션하다",
+    "hook": "마이그레이트 → DB '마이그레이션'을 하다 → 옮기다",
+    "family": ["immigrate", "emigrate", "migrant"]
+  },
+  "milligram": {
+    "roots": [{ "part": "milli-", "ko": "1000분의 1" }, { "part": "gram", "ko": "그램" }],
+    "origin": "라틴어 mille (천) + 그리스어 gramma (작은 무게)",
+    "story": "1그램(gram)을 천(milli) 조각으로 나눈 것 중 하나 → 밀리그램",
+    "family": ["millimeter", "milliliter", "kilogram"]
+  },
+  "minimum": {
+    "roots": [{ "part": "min", "ko": "작은" }, { "part": "-imum", "ko": "가장 ~한 것" }],
+    "origin": "라틴어 minimum (가장 작은 것)",
+    "story": "작은(min) 것 가운데서도 가장(-imum) 작은 값 → 최소, 최솟값",
+    "hook": "미니멈 → '미니(mini)'를 끝까지 줄인 값 → 최소",
+    "family": ["minor", "minus", "diminish", "minimal"]
+  },
+  "minor": {
+    "origin": "라틴어 minor (더 작은)",
+    "story": "나란히 놓고 보니 더 작은(minor) 쪽이라 → 사소한, 중요하지 않은",
+    "hook": "마이너 → '마이너 리그', 비주류 '마이너' → 사소한",
+    "family": ["minimum", "minus", "minority", "diminish"]
+  },
+  "mirror": {
+    "origin": "고대 프랑스어 mireor ← 라틴어 mirari (바라보다)",
+    "story": "들여다보는(mirari) 거울이 모습을 그대로 비추듯 → 그대로 반영하다, 거울",
+    "hook": "미러 → 자동차 '사이드 미러'가 그대로 비춘다 → 그대로 반영하다",
+    "family": ["miracle", "admire", "mirage"]
+  },
+  "misinterpret": {
+    "roots": [{ "part": "mis-", "ko": "잘못" }, { "part": "interpret", "ko": "해석하다" }],
+    "story": "말의 뜻을 잘못(mis) 풀이한다(interpret) → 잘못 해석하다, 오해하다",
+    "family": ["interpretation", "interpreter", "misunderstand"]
+  },
+  "mislabel": {
+    "roots": [{ "part": "mis-", "ko": "잘못" }, { "part": "label", "ko": "라벨, 이름표" }],
+    "story": "상자에 엉뚱한(mis) 이름표(label)를 붙인다 → 라벨을 잘못 붙이다, 잘못 분류하다"
+  },
+  "mismatch": {
+    "roots": [{ "part": "mis-", "ko": "잘못" }, { "part": "match", "ko": "짝이 맞다" }],
+    "story": "짝이 잘못(mis) 지어져 서로 맞지(match) 않는다 → 불일치, 어긋남",
+    "hook": "미스매치 → 외래어 '미스매치' 그대로 → 불일치"
+  },
+  "misnamed": {
+    "roots": [{ "part": "mis-", "ko": "잘못" }, { "part": "name", "ko": "이름 붙이다" }, { "part": "-ed", "ko": "~된" }],
+    "story": "내용과 안 맞게 이름(name)이 잘못(mis) 붙여진(-ed) → 이름이 잘못 붙은"
+  },
+  "misread": {
+    "roots": [{ "part": "mis-", "ko": "잘못" }, { "part": "read", "ko": "읽다" }],
+    "story": "글자나 상대의 의도를 잘못(mis) 읽는다(read) → 잘못 읽다, 잘못 해석하다"
+  },
+  "misuse": {
+    "roots": [{ "part": "mis-", "ko": "잘못" }, { "part": "use", "ko": "쓰다" }],
+    "story": "원래 용도와 다르게 잘못(mis) 쓴다(use) → 오용하다, 악용하다",
+    "family": ["abuse", "usage", "useful"]
+  },
+  "mitigation": {
+    "roots": [{ "part": "mitig", "ko": "순하게 하다" }, { "part": "-ation", "ko": "~하는 것" }],
+    "origin": "라틴어 mitigare (순하게 하다) ← mitis (순한)",
+    "story": "거센 위험·피해를 순하게(mitis) 누그러뜨리는 조치 → 완화(책)",
+    "family": ["mitigate", "unmitigated"]
+  },
+  "mode": {
+    "origin": "라틴어 modus (방식, 척도)",
+    "story": "일을 어떤 식으로 할지 맞춰 둔 방식(modus) → 모드, (작동) 방식",
+    "hook": "모드 → '다크 모드', '비행기 모드'의 모드 → 작동 방식",
+    "family": ["model", "modify", "moderate", "modern"]
+  },
+  "model": {
+    "roots": [{ "part": "mod", "ko": "척도, 본" }, { "part": "-el", "ko": "작은" }],
+    "origin": "라틴어 modulus (작은 척도, 본)",
+    "story": "실물을 재어 작게(-el) 만든 본(mod) → 모형, 모델 / 본을 떠서 만든다 → 본뜨다",
+    "hook": "모델 → 외래어 '모델' 그대로 → 모델, 모형",
+    "family": ["mode", "module", "modify", "mold"]
+  },
+  "modification": {
+    "roots": [{ "part": "mod", "ko": "척도, 방식" }, { "part": "-ific", "ko": "만들다" }, { "part": "-ation", "ko": "~하는 것" }],
+    "origin": "라틴어 modificare (척도에 맞추다)",
+    "story": "척도(mod)에 맞도록 손봐 만드는(ific) 일 → 수정, 변경",
+    "family": ["modify", "mode", "moderate", "model"]
+  },
+  "modify": {
+    "roots": [{ "part": "mod", "ko": "척도, 방식" }, { "part": "-ify", "ko": "~하게 만들다" }],
+    "origin": "라틴어 modificare (척도에 맞추다)",
+    "story": "척도(mod)에 맞도록 조금 손봐 만든다(-ify) → 수정하다, 변경하다",
+    "family": ["mode", "moderate", "modest", "model"]
+  },
+  "module": {
+    "roots": [{ "part": "mod", "ko": "척도, 단위" }, { "part": "-ule", "ko": "작은" }],
+    "origin": "라틴어 modulus (작은 척도)",
+    "story": "큰 전체를 작은(-ule) 단위(mod)로 끊어 낸 조각 → 모듈",
+    "hook": "모듈 → '모듈형 가구'처럼 단위로 끼워 맞추는 조각 → 모듈",
+    "family": ["model", "mode", "modular"]
+  },
+  "monorepo": {
+    "roots": [{ "part": "mono", "ko": "하나" }, { "part": "repo", "ko": "저장소 (repository)" }],
+    "origin": "그리스어 monos (하나) + repository (저장소)",
+    "story": "여러 프로젝트를 하나(mono)의 저장소(repo)에 몰아 넣는다 → 모노레포",
+    "family": ["monopoly", "monotone", "repository"]
+  },
+  "multi-agent": {
+    "roots": [{ "part": "multi-", "ko": "여럿" }, { "part": "agent", "ko": "에이전트" }],
+    "story": "여러(multi) 에이전트(agent)가 일을 나눠 맡는 → 멀티 에이전트의",
+    "family": ["multiple", "multitask", "agency"]
+  },
+  "multi-hour": {
+    "roots": [{ "part": "multi-", "ko": "여럿" }, { "part": "hour", "ko": "시간" }],
+    "story": "한 시간(hour)으로 안 끝나고 여러(multi) 시간 이어지는 → 몇 시간에 걸친"
+  },
+  "multi-step": {
+    "roots": [{ "part": "multi-", "ko": "여럿" }, { "part": "step", "ko": "단계, 걸음" }],
+    "story": "한 번에 안 끝나고 여러(multi) 단계(step)를 밟아야 하는 → 여러 단계로 된, 다단계의"
+  },
+  "multi-tenant": {
+    "roots": [{ "part": "multi-", "ko": "여럿" }, { "part": "tenant", "ko": "세입자, 입주자" }],
+    "origin": "tenant ← 라틴어 tenere (쥐다, 차지하다)",
+    "story": "한 건물을 여러(multi) 세입자(tenant)가 나눠 쓰듯 한 시스템을 나눠 쓰는 → 멀티테넌트의",
+    "family": ["tenant", "tenure", "multiple"]
+  },
+  "multi-turn": {
+    "roots": [{ "part": "multi-", "ko": "여럿" }, { "part": "turn", "ko": "차례, 턴" }],
+    "story": "말하는 차례(turn)가 여러(multi) 번 오가는 → 여러 턴에 걸친"
+  },
+  "multiline": {
+    "roots": [{ "part": "multi", "ko": "여럿" }, { "part": "line", "ko": "줄" }],
+    "story": "한 줄(line)을 넘어 여러(multi) 줄에 걸치는 → 여러 줄에 걸친"
+  },
+  "multiplier": {
+    "roots": [{ "part": "multi", "ko": "여럿" }, { "part": "pli", "ko": "접다, 겹치다" }, { "part": "-er", "ko": "~하는 것" }],
+    "origin": "라틴어 multiplicare (여러 겹으로 접다)",
+    "story": "여러(multi) 겹으로 접어(pli) 몇 배로 불리는 값(-er) → 배수, 승수",
+    "family": ["multiply", "multiple", "duplicate"]
+  },
+  "natural": {
+    "roots": [{ "part": "natur", "ko": "타고난 것, 자연" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 natura (타고난 것) ← nasci (태어나다)",
+    "story": "태어난(nat) 그대로라 꾸밈도 억지도 없는 → 자연스러운, 자연의",
+    "hook": "내추럴 → '내추럴 메이크업'처럼 꾸밈없는 → 자연스러운",
+    "family": ["nature", "native", "nation", "innate"]
+  },
+  "natural-language": {
+    "roots": [{ "part": "natural", "ko": "자연의" }, { "part": "language", "ko": "언어" }],
+    "story": "코드가 아니라 사람이 자연스레(natural) 쓰는 말(language)로 된 → 자연어로 된"
+  },
+  "nearly": {
+    "roots": [{ "part": "near", "ko": "가까이" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "목표에 가까이(near) 다가갔지만 살짝 못 미친 → 거의",
+    "family": ["near", "nearby"]
+  },
+  "necessary": {
+    "roots": [{ "part": "ne-", "ko": "아니" }, { "part": "cess", "ko": "물러나다" }, { "part": "-ary", "ko": "~한" }],
+    "origin": "라틴어 necessarius ← ne (아니) + cedere (물러나다)",
+    "story": "물러설(cess) 수 없어(ne) 빼놓지 못하는 → 필요한, 필수적인",
+    "family": ["necessity", "process", "access", "recess"]
+  },
+  "negative": {
+    "roots": [{ "part": "neg", "ko": "아니라고 하다" }, { "part": "-ative", "ko": "~하는 성질의" }],
+    "origin": "라틴어 negativus ← negare (아니라고 하다)",
+    "story": "'아니'라고 하는(neg) 쪽으로 기운 → 부정적인, 음수의",
+    "hook": "네거티브 → 선거의 '네거티브' 공세 → 부정적인",
+    "family": ["negate", "deny", "renegade"]
+  },
+  "neither": {
+    "roots": [{ "part": "n-", "ko": "아니 (not)" }, { "part": "either", "ko": "둘 중 하나" }],
+    "origin": "고대 영어 nāhwæther (nā 아니 + 둘 중 어느)",
+    "story": "둘 중 하나(either) 앞에 부정의 n을 붙였다 → (둘 중) 어느 쪽도 아닌",
+    "family": ["either", "nor", "never", "none"]
+  },
+  "nested": {
+    "roots": [{ "part": "nest", "ko": "둥지" }, { "part": "-ed", "ko": "~된" }],
+    "story": "둥지(nest) 안에 또 작은 둥지가 들어앉은 모양 → 중첩된",
+    "family": ["nest", "nestle"]
+  },
+  "network": {
+    "roots": [{ "part": "net", "ko": "그물" }, { "part": "work", "ko": "짜인 것" }],
+    "story": "그물(net)처럼 얼기설기 짜여(work) 서로 이어진 것 → 네트워크, 통신망, 연결망",
+    "hook": "네트워크 → 외래어 '네트워크' 그대로 → 통신망, 연결망",
+    "family": ["internet", "framework"]
+  },
+  "newly": {
+    "roots": [{ "part": "new", "ko": "새로운" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "방금 새(new) 것이 된 상태로 → 새로, 최근에",
+    "family": ["renew", "news", "newcomer"]
+  },
+  "nightly": {
+    "roots": [{ "part": "night", "ko": "밤" }, { "part": "-ly", "ko": "~마다" }],
+    "story": "밤(night)마다(-ly) 한 번씩 도는 빌드처럼 → 매일 밤의, 밤마다",
+    "family": ["overnight", "midnight", "tonight"]
+  }
+}

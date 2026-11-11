@@ -1,0 +1,270 @@
+{
+  "schedule": {
+    "origin": "후기 라틴어 schedula (작은 종이쪽지)",
+    "story": "언제 무엇을 할지 적어 둔 종이쪽지(schedula) → 일정표, 일정을 잡다",
+    "hook": "스케줄 → '스케줄 있어?'의 스케줄 → 일정"
+  },
+  "schema": {
+    "origin": "그리스어 skhēma (모양, 형태)",
+    "story": "데이터가 갖춰야 할 모양(schema)을 미리 그려 둔 틀 → 스키마, 구조·형식 정의",
+    "family": ["scheme", "schematic"]
+  },
+  "schema-valid": {
+    "roots": [{ "part": "schema", "ko": "스키마" }, { "part": "valid", "ko": "유효한" }],
+    "story": "스키마(schema)에 비춰 보아 유효한(valid) → 스키마에 맞는, 스키마 검증을 통과하는"
+  },
+  "scope": {
+    "origin": "이탈리아어 scopo (과녁) ← 그리스어 skopos (겨냥하는 곳)",
+    "story": "겨냥해(skopos) 눈길이 미치는 데까지 → 범위, 적용되는 범위",
+    "hook": "스코프 → 조준경 '스코프' 안에 들어오는 데까지 → 범위",
+    "family": ["telescope", "microscope", "horoscope"]
+  },
+  "score": {
+    "origin": "고대 노르드어 skor (새긴 금, 눈금)",
+    "story": "막대에 금(skor)을 하나씩 새겨 수를 세던 데서 → 점수, 점수를 매기다",
+    "hook": "스코어 → 경기 '스코어'의 그 스코어 → 점수",
+    "family": ["scoreboard", "underscore"]
+  },
+  "scratchpad": {
+    "roots": [{ "part": "scratch", "ko": "끄적이다, 긁다" }, { "part": "pad", "ko": "메모장" }],
+    "story": "생각나는 대로 끄적이는(scratch) 메모장(pad) → 작업 중 적어 두는 임시 기록, 스크래치패드"
+  },
+  "screen": {
+    "origin": "고대 프랑스어 escren (가림막, 칸막이)",
+    "story": "가림막(screen)에 그림을 비추고, 또 막아 세워 걸러 낸다 → 화면, 선별 검사하다",
+    "hook": "스크린 → 영화관 '스크린'의 스크린 → 화면",
+    "family": ["screenshot", "touchscreen", "sunscreen"]
+  },
+  "screenshot": {
+    "roots": [{ "part": "screen", "ko": "화면" }, { "part": "shot", "ko": "찍은 것" }],
+    "story": "지금 화면(screen)을 그대로 한 장 찍은(shot) 것 → 스크린샷, 화면 캡처"
+  },
+  "script": {
+    "origin": "라틴어 scriptum (쓴 것) ← scribere (쓰다)",
+    "story": "할 일과 할 말을 차례로 써(script) 둔 글 → 스크립트, 대본",
+    "family": ["describe", "subscribe", "manuscript", "prescription"]
+  },
+  "sdk": {
+    "origin": "Software Development Kit",
+    "story": "소프트웨어(Software) 개발(Development)에 쓰는 도구 묶음(Kit) → 소프트웨어 개발 키트"
+  },
+  "secondary": {
+    "roots": [{ "part": "second", "ko": "둘째, 뒤따르는" }, { "part": "-ary", "ko": "~의" }],
+    "origin": "라틴어 secundus (뒤따르는, 둘째의) ← sequi (따르다)",
+    "story": "첫째 뒤를 따르는(second) 둘째 자리의(ary) → 부차적인, 이차적인",
+    "family": ["sequence", "sequel", "consequence"]
+  },
+  "secret": {
+    "roots": [{ "part": "se-", "ko": "따로" }, { "part": "cret", "ko": "가르다" }],
+    "origin": "라틴어 secretus (따로 갈라 둔)",
+    "story": "남의 눈에서 따로(se) 갈라(cret) 숨겨 둔 값 → 비밀 값, 비밀",
+    "hook": "시크릿 → 브라우저 '시크릿 모드'의 시크릿 → 비밀",
+    "family": ["secretary", "discreet", "secrete"]
+  },
+  "section": {
+    "roots": [{ "part": "sect", "ko": "자르다" }, { "part": "-ion", "ko": "~한 것" }],
+    "origin": "라틴어 sectio (자르기) ← secare (자르다)",
+    "story": "긴 문서를 잘라(sect) 나눈 한 토막(ion) → 부분, 섹션, 항목",
+    "family": ["sector", "segment", "insect", "intersection"]
+  },
+  "sector": {
+    "roots": [{ "part": "sect", "ko": "자르다" }, { "part": "-or", "ko": "~하는 것" }],
+    "origin": "라틴어 sector (자르는 것, 부채꼴)",
+    "story": "원을 부채꼴로 잘라(sect) 나눈 한 구역(or) → 분야, 부문",
+    "family": ["section", "segment", "bisect"]
+  },
+  "security": {
+    "roots": [{ "part": "se-", "ko": "~없이" }, { "part": "cur", "ko": "걱정, 돌봄" }, { "part": "-ity", "ko": "~인 상태" }],
+    "origin": "라틴어 securus (걱정 없는)",
+    "story": "걱정(cur) 없이(se) 지낼 수 있게 지켜진 상태(ity) → 보안",
+    "hook": "시큐리티 → 건물 지키는 '시큐리티' → 보안",
+    "family": ["secure", "cure", "accurate"]
+  },
+  "segment": {
+    "roots": [{ "part": "seg", "ko": "자르다" }, { "part": "-ment", "ko": "~한 것" }],
+    "origin": "라틴어 segmentum (잘라 낸 조각) ← secare (자르다)",
+    "story": "전체에서 잘라(seg) 낸 한 조각(ment) → 조각, 구간, 나누다",
+    "family": ["section", "sector", "dissect"]
+  },
+  "select": {
+    "roots": [{ "part": "se-", "ko": "따로" }, { "part": "lect", "ko": "고르다, 모으다" }],
+    "origin": "라틴어 seligere (따로 골라내다)",
+    "story": "여럿 가운데 따로(se) 골라(lect) 뽑는다 → 고르다, 선택하다",
+    "family": ["collect", "elect", "neglect"]
+  },
+  "selection": {
+    "roots": [{ "part": "se-", "ko": "따로" }, { "part": "lect", "ko": "고르다" }, { "part": "-ion", "ko": "~하는 일" }],
+    "story": "여럿 가운데 따로(se) 골라(lect) 뽑는 일(ion) → 선택, 고르기",
+    "family": ["select", "election", "collection"]
+  },
+  "selective": {
+    "roots": [{ "part": "se-", "ko": "따로" }, { "part": "lect", "ko": "고르다" }, { "part": "-ive", "ko": "~하는 성질의" }],
+    "story": "다 하지 않고 따로(se) 골라(lect) 일부만 하는(ive) → 선택적인, 골라서 하는",
+    "family": ["select", "elective", "collective"]
+  },
+  "self-hosted": {
+    "roots": [{ "part": "self", "ko": "스스로" }, { "part": "hosted", "ko": "호스팅되는" }],
+    "story": "남의 클라우드에 맡기지 않고 스스로(self) 호스팅하는(hosted) → 자체 호스팅의"
+  },
+  "self-review": {
+    "roots": [{ "part": "self", "ko": "스스로" }, { "part": "review", "ko": "검토" }],
+    "story": "만든 쪽이 자기 결과물을 스스로(self) 다시 본다(review) → 자기 검토"
+  },
+  "semantic": {
+    "roots": [{ "part": "sema", "ko": "표시, 기호" }, { "part": "-tic", "ko": "~의" }],
+    "origin": "그리스어 sēmantikos (뜻을 나타내는) ← sēma (표시)",
+    "story": "글자 겉모양이 아니라 그 표시(sema)가 가리키는 뜻에 관한(tic) → 의미의, 의미상의",
+    "family": ["semantics", "semaphore", "semiotics"]
+  },
+  "senior": {
+    "roots": [{ "part": "sen", "ko": "나이 든" }, { "part": "-ior", "ko": "더 ~한" }],
+    "origin": "라틴어 senior (더 나이 든) ← senex (늙은)",
+    "story": "더(ior) 나이 들어(sen) 그만큼 경험이 쌓인 → 선임의, 경력이 많은, 연장자",
+    "hook": "시니어 → '시니어 개발자'의 시니어 → 선임의",
+    "family": ["senate", "seniority", "sir"]
+  },
+  "sensitive": {
+    "roots": [{ "part": "sens", "ko": "느끼다" }, { "part": "-itive", "ko": "~하는 성질의" }],
+    "origin": "중세 라틴어 sensitivus ← sentire (느끼다)",
+    "story": "살짝만 건드려도 크게 느끼는(sens) 성질의(itive), 그래서 조심히 다룰 → 민감한, 기밀의",
+    "family": ["sense", "sensor", "sentiment", "consent"]
+  },
+  "separate": {
+    "roots": [{ "part": "se-", "ko": "따로" }, { "part": "par", "ko": "마련하다" }, { "part": "-ate", "ko": "~하다, ~한" }],
+    "origin": "라틴어 separare (따로 마련해 두다)",
+    "story": "한데 두지 않고 따로(se) 떼어 마련해(par) 둔 → 별개의, 분리하다",
+    "family": ["prepare", "several", "sever"]
+  },
+  "sequence": {
+    "roots": [{ "part": "sequ", "ko": "뒤따르다" }, { "part": "-ence", "ko": "~하는 것" }],
+    "origin": "라틴어 sequentia ← sequi (뒤따르다)",
+    "story": "하나가 다른 하나를 뒤따르며(sequ) 줄줄이 이어지는 것(ence) → 순서, 차례, 연속",
+    "family": ["sequel", "consequence", "subsequent", "second"]
+  },
+  "sequential": {
+    "roots": [{ "part": "sequ", "ko": "뒤따르다" }, { "part": "-ent", "ko": "~하는" }, { "part": "-ial", "ko": "~의" }],
+    "origin": "라틴어 sequi (뒤따르다)",
+    "story": "앞의 것을 뒤따라(sequ) 하나씩 차례로 나아가는(ial) → 순차적인",
+    "family": ["sequence", "sequel", "consecutive"]
+  },
+  "serialize": {
+    "roots": [{ "part": "serial", "ko": "한 줄로 이어진" }, { "part": "-ize", "ko": "~하게 만들다" }],
+    "origin": "라틴어 series (줄, 이어진 것) ← serere (잇다)",
+    "story": "흩어진 것을 한 줄(serial)로 이어지게 만든다(ize) → 순서대로 하나씩 처리하다, 직렬화하다",
+    "family": ["series", "serial", "insert"]
+  },
+  "serve": {
+    "origin": "라틴어 servire (섬기다, 시중들다) ← servus (종)",
+    "story": "시중들듯(servire) 상대가 바라는 것을 내어 준다 → 서비스를 제공하다, 내어 주다",
+    "hook": "서브 → 테니스 '서브'도 공을 먼저 내어 주는 것 → 내어 주다",
+    "family": ["service", "servant", "deserve"]
+  },
+  "server": {
+    "roots": [{ "part": "serv", "ko": "섬기다, 내어 주다" }, { "part": "-er", "ko": "~하는 것·사람" }],
+    "story": "요청이 오면 그때그때 내어 주는(serve) 쪽(er) → 서버, 종업원",
+    "family": ["service", "servant", "serverless"]
+  },
+  "server-sent-events": {
+    "roots": [{ "part": "server", "ko": "서버" }, { "part": "sent", "ko": "보낸" }, { "part": "events", "ko": "이벤트들" }],
+    "story": "서버(server)가 연결 하나로 차례로 흘려보낸(sent) 이벤트(events) → 서버 전송 이벤트"
+  },
+  "service-account": {
+    "roots": [{ "part": "service", "ko": "서비스" }, { "part": "account", "ko": "계정" }],
+    "story": "사람이 아니라 서비스(service)·자동 작업이 쓰라고 만든 계정(account) → 서비스 계정"
+  },
+  "session": {
+    "roots": [{ "part": "sess", "ko": "앉다" }, { "part": "-ion", "ko": "~하는 것" }],
+    "origin": "라틴어 sessio (앉아 있기) ← sedere (앉다)",
+    "story": "자리에 앉아(sess) 일어설 때까지 이어지는 한 회기(ion) → 세션, 시작부터 끝까지 한 단위",
+    "family": ["resident", "preside", "sedentary"]
+  },
+  "session-level": {
+    "roots": [{ "part": "session", "ko": "세션" }, { "part": "level", "ko": "층, 단위" }],
+    "story": "세션(session) 하나를 층(level)으로 삼아 그 안에서만 적용되는 → 세션 단위의, 세션 범위의"
+  },
+  "setting": {
+    "roots": [{ "part": "set", "ko": "놓다, 맞추다" }, { "part": "-ing", "ko": "~한 것" }],
+    "story": "값을 원하는 자리에 맞춰 놓은(set) 것(ing) → 설정, 설정값",
+    "hook": "세팅 → '세팅 끝났어'의 세팅 → 설정",
+    "family": ["setup", "reset", "preset", "offset"]
+  },
+  "setup": {
+    "roots": [{ "part": "set", "ko": "놓다, 맞추다" }, { "part": "up", "ko": "다 갖춰, 세워" }],
+    "story": "바로 쓸 수 있게 다 갖춰(up) 놓는(set) 일, 그렇게 놓인 모양 → 초기 설정 작업, 구성",
+    "family": ["reset", "preset", "setback"]
+  },
+  "shard": {
+    "origin": "고대 영어 sceard (깨진 조각)",
+    "story": "깨진 그릇의 조각(shard)처럼 큰 데이터베이스를 쪼갠 조각 → 샤드, 나눈 조각",
+    "family": ["shear", "share"]
+  },
+  "shell": {
+    "origin": "고대 영어 sciell (껍데기)",
+    "story": "운영체제의 알맹이(kernel)를 감싸고 명령을 받아 주는 껍데기(shell) → 셸, 껍데기",
+    "family": ["eggshell", "seashell", "shellfish"]
+  },
+  "shift": {
+    "origin": "고대 영어 sciftan (나누다, 배치하다)",
+    "story": "놓여 있던 자리를 조금씩 옆으로 옮겨 간다 → 옮기다, 바꾸다, 전환",
+    "hook": "시프트 → 키보드 'Shift' 키를 누르면 글자가 바뀐다 → 바꾸다"
+  },
+  "short-lived": {
+    "roots": [{ "part": "short", "ko": "짧은" }, { "part": "lived", "ko": "수명을 가진" }],
+    "story": "살아 있는(lived) 동안이 짧은(short) → 수명이 짧은, 잠깐만 유지되는"
+  },
+  "shorten": {
+    "roots": [{ "part": "short", "ko": "짧은" }, { "part": "-en", "ko": "~하게 만들다" }],
+    "story": "길던 것을 짧게(short) 만든다(en) → 짧게 줄이다, 단축하다",
+    "family": ["shortage", "shortcut", "shortly"]
+  },
+  "show-up": {
+    "roots": [{ "part": "show", "ko": "보이다" }, { "part": "up", "ko": "위로, 드러나게" }],
+    "story": "안 보이던 것이 위로(up) 올라와 모습을 보인다(show) → 나타나다, 보이다"
+  },
+  "shuffle": {
+    "story": "카드를 이리저리 밀어 넣어 차례를 뒤섞는다 → (순서를) 섞다",
+    "hook": "셔플 → 음악 앱 '셔플 재생'은 곡 순서를 섞는다 → 섞다"
+  },
+  "sign": {
+    "origin": "라틴어 signum (표시, 표지)",
+    "story": "내 것임을 알리는 표시(signum)를 남긴다 → 서명하다, 부호, 징후",
+    "hook": "사인 → 연예인 '사인'의 그 사인 → 서명하다",
+    "family": ["signal", "signature", "design", "assign"]
+  },
+  "signal": {
+    "roots": [{ "part": "sign", "ko": "표시" }, { "part": "-al", "ko": "~의, ~한 것" }],
+    "origin": "라틴어 signalis (표시의) ← signum (표시)",
+    "story": "약속된 표시(sign)를 보내 상태를 알게 한다 → 알리다, 신호를 보내다, 신호",
+    "hook": "시그널 → '시그널을 보낸다'의 시그널 → 신호",
+    "family": ["signature", "signify", "design"]
+  },
+  "signature": {
+    "roots": [{ "part": "sign", "ko": "표시" }, { "part": "-ature", "ko": "~한 결과물" }],
+    "origin": "라틴어 signare (표시하다, 도장을 찍다)",
+    "story": "틀림없이 내 것이라고 표시해(sign) 남긴 것(ature) → 서명, 시그니처",
+    "family": ["signal", "design", "assign", "resign"]
+  },
+  "significant": {
+    "roots": [{ "part": "sign", "ko": "표시" }, { "part": "ific", "ko": "만들다" }, { "part": "-ant", "ko": "~한" }],
+    "origin": "라틴어 significare (표시를 만들다, 뜻하다)",
+    "story": "눈에 띄는 표시(sign)를 만들(ific) 만큼 뜻이 큰(ant) → 상당한, 중요한",
+    "family": ["signify", "signal", "signature"]
+  },
+  "silently": {
+    "roots": [{ "part": "silent", "ko": "소리 없는" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 silere (잠잠하다)",
+    "story": "아무 소리도 내지 않고 잠잠하게(silent) 넘어간다(ly) → 아무 알림 없이, 조용히",
+    "family": ["silence", "silencer"]
+  },
+  "similar": {
+    "roots": [{ "part": "simil", "ko": "닮은" }, { "part": "-ar", "ko": "~한" }],
+    "origin": "라틴어 similis (닮은, 같은)",
+    "story": "서로 닮은(simil) 데가 있는(ar) → 비슷한, 유사한",
+    "family": ["simulate", "assimilate", "resemble"]
+  },
+  "similarity": {
+    "roots": [{ "part": "similar", "ko": "비슷한" }, { "part": "-ity", "ko": "성질, 정도" }],
+    "story": "서로 닮은(similar) 정도(ity) → 유사성, 유사도",
+    "family": ["simulate", "assimilate", "simile"]
+  }
+}

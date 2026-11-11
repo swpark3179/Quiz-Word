@@ -1,0 +1,271 @@
+{
+  "fence": {
+    "origin": "중세 영어 fens ← defence (방어)의 줄임",
+    "story": "막으려고(defence) 빙 둘러친 것, 코드 블록 앞뒤에 둘러친 백틱 줄 → 울타리, 코드 펜스",
+    "hook": "펜스 → 야구장 외야 '펜스' → 울타리",
+    "family": ["defense", "defend", "fend", "offend"]
+  },
+  "fetch": {
+    "origin": "고대 영어 feccan (가서 가져오다)",
+    "story": "개가 던진 공을 달려가 물어 오듯 데이터를 가서 가져온다 → 가져오다, 조회해 오다"
+  },
+  "few-shot": {
+    "roots": [{ "part": "few", "ko": "몇 안 되는" }, { "part": "shot", "ko": "한 번의 시도, 예시 한 번" }],
+    "story": "예시를 몇(few) 번(shot)만 보여 주고 따라 하게 한다 → 퓨샷",
+    "family": ["zero-shot", "one-shot"]
+  },
+  "field": {
+    "origin": "고대 영어 feld (들판, 탁 트인 땅)",
+    "story": "들판(feld)을 구획 지은 밭 한 칸처럼 값이 들어가는 칸, 일하는 밭 → 필드, 항목, 분야",
+    "hook": "필드 → 선을 그어 구획한 운동장 '필드' → 필드, 분야",
+    "family": ["battlefield", "fieldwork", "airfield"]
+  },
+  "figure": {
+    "roots": [{ "part": "fig", "ko": "빚다, 모양 짓다" }, { "part": "-ure", "ko": "~한 것" }],
+    "origin": "라틴어 figura (모양, 형태) ← fingere (빚다)",
+    "story": "빚어(fig) 낸 모양(ure), 숫자 글자의 모양에서 숫자 자체로 → 수치, 숫자, 그림",
+    "hook": "피규어 → 장난감 '피규어'는 빚어 만든 모양 → 형태, 그림, 수치",
+    "family": ["configure", "fiction", "feign", "effigy"]
+  },
+  "filename": {
+    "roots": [{ "part": "file", "ko": "파일" }, { "part": "name", "ko": "이름" }],
+    "story": "파일(file)에 붙인 이름(name) → 파일 이름",
+    "family": ["username", "rename", "filesystem"]
+  },
+  "fill-in": {
+    "roots": [{ "part": "fill", "ko": "채우다" }, { "part": "in", "ko": "안에" }],
+    "story": "비어 있는 칸 안에(in) 내용을 채워 넣는다(fill) → (빈칸·자리를) 채우다, 채워 넣다"
+  },
+  "filter": {
+    "origin": "중세 라틴어 filtrum (거름천으로 쓴 펠트)",
+    "story": "펠트(felt) 천에 부어 찌꺼기는 남기고 맑은 것만 통과시킨다 → 거르다, 필터",
+    "hook": "필터 → 커피 '필터', 정수기 '필터' → 거르다, 걸러 내다",
+    "family": ["felt", "infiltrate", "filtration"]
+  },
+  "final": {
+    "roots": [{ "part": "fin", "ko": "끝" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 finalis (끝의)",
+    "story": "끝(fin)에 해당하는(al), 더는 뒤가 없는 → 최종의, 마지막의, 확정된",
+    "hook": "파이널 → 대회 마지막 경기 '파이널' → 마지막의, 결승전",
+    "family": ["finish", "finite", "define", "infinite"]
+  },
+  "finalize": {
+    "roots": [{ "part": "fin", "ko": "끝" }, { "part": "-al", "ko": "~의" }, { "part": "-ize", "ko": "~하게 만들다" }],
+    "story": "더 손댈 것 없는 마지막(final) 상태로 만든다(ize) → 마무리하다, 확정하다",
+    "family": ["final", "finish", "finale", "define"]
+  },
+  "finance": {
+    "roots": [{ "part": "fin", "ko": "끝, 셈을 끝내다" }, { "part": "-ance", "ko": "~하는 일" }],
+    "origin": "고대 프랑스어 finance (빚 청산, 지불) ← fin (끝)",
+    "story": "빚을 치러 셈을 끝내는(fin) 일(ance)에서 돈을 다루는 일로 → 재무, 금융, 자금을 대다",
+    "family": ["fine", "final", "finish"]
+  },
+  "financial": {
+    "roots": [{ "part": "financ", "ko": "재무(finance)" }, { "part": "-ial", "ko": "~의" }],
+    "story": "셈을 치러 끝내는(fin) 일, 곧 돈 살림(finance)에 관한(ial) → 재정의, 금융의",
+    "family": ["finance", "fine", "final"]
+  },
+  "fine-tune": {
+    "roots": [{ "part": "fine", "ko": "미세한, 고운" }, { "part": "tune", "ko": "조율하다" }],
+    "story": "악기 줄을 아주 조금씩(fine) 조율하듯(tune) 모델을 더 다듬는다 → 미세 조정하다",
+    "family": ["tuner", "attune", "refine"]
+  },
+  "fire": {
+    "origin": "고대 영어 fȳr (불)",
+    "story": "화약에 불(fire)을 붙여 탕 쏘듯 요청을 쏘아 보낸다 → 보내다, 실행하다, 발동하다",
+    "hook": "파이어 → '파이어!' 구령에 발사하듯 쏜다 → (요청을) 보내다, 발동하다",
+    "family": ["misfire", "backfire", "firework"]
+  },
+  "first-contact-resolution": {
+    "roots": [{ "part": "first", "ko": "첫" }, { "part": "contact", "ko": "연락, 응대" }, { "part": "resolution", "ko": "해결" }],
+    "story": "고객의 첫(first) 연락(contact)에서 넘기지 않고 바로 해결(resolution)한 비율 → 첫 응대 해결률",
+    "family": ["resolve", "solution", "tactile"]
+  },
+  "fit": {
+    "story": "열쇠가 열쇠 구멍에 쏙 들어가 딱 맞는다 → (안에) 들어가다, 맞다, 적합하다",
+    "hook": "핏 → 옷 '핏이 좋다'(몸에 딱 맞다) → 맞다, 들어가다"
+  },
+  "fix": {
+    "origin": "라틴어 figere (박아 고정하다) → fixus",
+    "story": "흔들리는 것을 못 박아 고정하듯(fixus) 제자리로 바로잡는다 → 고치다, 수정 · 고정된",
+    "family": ["prefix", "suffix", "fixture", "affix"]
+  },
+  "fixture": {
+    "roots": [{ "part": "fix", "ko": "고정하다" }, { "part": "-ture", "ko": "~된 것" }],
+    "story": "테스트 때마다 쓰도록 미리 고정해(fix) 둔 것(ture) → (테스트) 픽스처",
+    "family": ["fix", "prefix", "suffix", "fixate"]
+  },
+  "flag": {
+    "story": "문제가 있는 자리에 깃발(flag)을 꽂아 눈에 띄게 한다 → 표시하다, 지적 항목, 옵션",
+    "hook": "플래그 → 깃발 '플래그'를 꽂아 '여기!' 하고 알린다 → 표시하다"
+  },
+  "flatten": {
+    "roots": [{ "part": "flat", "ko": "평평한" }, { "part": "-en", "ko": "~하게 만들다" }],
+    "story": "평평하게(flat) 만든다(en), 겹겹이 중첩된 구조를 한 겹으로 편다 → 평평하게 하다, 펼치다",
+    "family": ["flat", "flatline", "flatbed"]
+  },
+  "fleet": {
+    "origin": "고대 영어 flēot (배, 떠 있는 것)",
+    "story": "함께 떠다니는(float) 배들의 함대처럼 한 무리로 움직이는 서버들 → (서버·기기의) 무리",
+    "family": ["float", "flotilla", "afloat"]
+  },
+  "float": {
+    "origin": "고대 영어 flotian (뜨다)",
+    "story": "소수점이 한 자리에 고정되지 않고 둥둥 떠서(float) 옮겨 다닌다 → 부동소수점 수, 뜨다",
+    "family": ["afloat", "fleet", "flotation"]
+  },
+  "flow": {
+    "origin": "고대 영어 flōwan (흐르다)",
+    "story": "물이 위에서 아래로 흘러가듯 단계와 데이터가 이어져 간다 → 흐름, 흘러 들어가다",
+    "hook": "플로 → 순서도 '플로차트'의 그 플로 → 흐름",
+    "family": ["flood", "overflow", "workflow"]
+  },
+  "fluent": {
+    "roots": [{ "part": "flu", "ko": "흐르다" }, { "part": "-ent", "ko": "~하는" }],
+    "origin": "라틴어 fluens (흐르는)",
+    "story": "막힘 없이 물 흐르듯(flu) 하는(ent) → 유창한, 술술 읽히는",
+    "family": ["fluid", "influence", "affluent", "flux"]
+  },
+  "focus": {
+    "origin": "라틴어 focus (화덕, 난로)",
+    "story": "집 한가운데 화덕(focus)에 식구가 모이듯 빛과 관심이 한 점에 모인다 → 초점, 집중",
+    "hook": "포커스 → 카메라 '포커스'를 맞춘다 → 초점, 집중",
+    "family": ["focal", "fuel", "foyer"]
+  },
+  "follow-up": {
+    "roots": [{ "part": "follow", "ko": "뒤따르다" }, { "part": "up", "ko": "바짝, 끝까지" }],
+    "story": "앞선 결과를 바짝(up) 뒤따라(follow) 이어서 하는 것 → 후속(의)",
+    "family": ["follower", "follow-through"]
+  },
+  "footprint": {
+    "roots": [{ "part": "foot", "ko": "발" }, { "part": "print", "ko": "찍힌 자국" }],
+    "story": "발(foot)이 찍고(print) 간 자국만큼 차지한 자리 → 차지하는 양",
+    "family": ["fingerprint", "footstep", "blueprint", "imprint"]
+  },
+  "force": {
+    "origin": "라틴어 fortis (강한) → 고대 프랑스어 force",
+    "story": "강한(fortis) 힘으로 밀어붙여 하게 만든다 → 강제하다, 힘",
+    "hook": "포스 → '포스가 느껴진다'의 그 포스(힘) → 힘, 강제하다",
+    "family": ["fort", "effort", "enforce", "comfort"]
+  },
+  "force-fit": {
+    "roots": [{ "part": "force", "ko": "힘으로, 억지로" }, { "part": "fit", "ko": "끼워 맞추다" }],
+    "story": "맞지 않는 조각을 힘으로(force) 눌러 끼워 맞춘다(fit) → 억지로 끼워 맞추다"
+  },
+  "fork": {
+    "origin": "라틴어 furca (갈퀴, 두 갈래 막대)",
+    "story": "포크 끝처럼 한 줄기가 두 갈래로 갈라져 따로 간다 → 분기하다, 갈라 복제하다, 분기본",
+    "hook": "포크 → 식탁 '포크'의 갈라진 끝 → 갈라지다, 분기",
+    "family": ["bifurcate", "pitchfork", "forklift"]
+  },
+  "form": {
+    "origin": "라틴어 forma (모양, 틀)",
+    "story": "틀(forma)에 부어 모양을 잡는다, 빈칸이 틀로 짜인 종이 → 형태, 양식, 형성하다",
+    "hook": "폼 → '폼 잡다'의 폼(자세), 설문 '폼' → 형태, 양식",
+    "family": ["format", "formal", "reform", "uniform"]
+  },
+  "format": {
+    "roots": [{ "part": "form", "ko": "모양, 틀" }, { "part": "-at", "ko": "~된" }],
+    "origin": "라틴어 formatus (모양이 잡힌) ← formare",
+    "story": "정해진 모양(form)으로 짜인(at) 꼴, 그 꼴에 맞춘다 → 형식, 서식, 정리하다",
+    "hook": "포맷 → '파일 포맷', 방송 '포맷' → 형식",
+    "family": ["form", "formal", "formula", "information"]
+  },
+  "forward": {
+    "roots": [{ "part": "for", "ko": "앞(fore)" }, { "part": "-ward", "ko": "~쪽으로" }],
+    "origin": "고대 영어 foreweard (앞쪽으로)",
+    "story": "앞(for) 쪽으로(ward) 나아가게, 받은 것을 그 앞사람에게 넘긴다 → 앞으로, 전달하다",
+    "hook": "포워드 → 농구 '포워드'는 앞쪽 공격수, 메일 '포워딩' → 앞으로, 전달하다",
+    "family": ["before", "foremost", "toward", "backward"]
+  },
+  "fragment": {
+    "roots": [{ "part": "frag", "ko": "깨다" }, { "part": "-ment", "ko": "~된 것" }],
+    "origin": "라틴어 fragmentum (깨진 조각)",
+    "story": "깨져(frag) 떨어져 나온 것(ment) → 조각, 일부분",
+    "family": ["fragile", "fraction", "fracture"]
+  },
+  "framework": {
+    "roots": [{ "part": "frame", "ko": "뼈대, 틀" }, { "part": "work", "ko": "구조물" }],
+    "story": "집의 뼈대(frame)를 짜 놓은 구조물(work), 그 위에 살을 붙여 간다 → 프레임워크, 틀",
+    "family": ["frame", "timeframe", "network", "groundwork"]
+  },
+  "free-text": {
+    "roots": [{ "part": "free", "ko": "자유로운" }, { "part": "text", "ko": "글" }],
+    "story": "칸이나 선택지에 매이지 않고 자유롭게(free) 쓴 글(text) → 자유 형식 텍스트(의)"
+  },
+  "freely": {
+    "roots": [{ "part": "free", "ko": "자유로운" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "묶인 데 없이 자유로운(free) 상태로(ly) → 자유롭게, 제한 없이",
+    "family": ["freedom", "carefree", "freeway"]
+  },
+  "freeze": {
+    "origin": "고대 영어 frēosan (얼다)",
+    "story": "물이 얼어 꼼짝 않듯 지금 상태로 얼려 둔다 → 동결하다, 고정해 더 바꾸지 않다",
+    "hook": "프리즈 → 출시 전 '코드 프리즈'(변경 금지) → 동결하다",
+    "family": ["frost", "freezer", "antifreeze"]
+  },
+  "frequently": {
+    "roots": [{ "part": "frequent", "ko": "잦은" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 frequens (붐비는, 잦은)",
+    "story": "FAQ의 F가 이 말, 붐빌 만큼 잦은(frequent) 정도로(ly) → 자주, 빈번히",
+    "family": ["frequency", "infrequent"]
+  },
+  "fresh": {
+    "origin": "고대 영어 fersc (짠맛 없는, 갓 난)",
+    "story": "갓 따서 손때 묻지 않은 채소처럼 이전 흔적이 없는 → 새로운, 깨끗한, 최신의",
+    "hook": "프레시 → 마트 신선 코너 '프레시'처럼 갓 들어온 → 새로운, 최신의",
+    "family": ["refresh", "freshman", "freshwater"]
+  },
+  "frontend": {
+    "roots": [{ "part": "front", "ko": "앞" }, { "part": "end", "ko": "끝, 쪽" }],
+    "story": "사용자와 마주한 앞(front)쪽 끝(end) → 프런트엔드",
+    "family": ["backend", "frontier", "confront"]
+  },
+  "frontmatter": {
+    "roots": [{ "part": "front", "ko": "앞" }, { "part": "matter", "ko": "내용물" }],
+    "origin": "출판 용어 front matter (본문 앞의 속표지·목차)",
+    "story": "본문 앞(front)에 붙는 내용(matter), 파일 맨 위 --- 사이의 설정 → 프론트매터"
+  },
+  "function": {
+    "roots": [{ "part": "funct", "ko": "수행하다" }, { "part": "-ion", "ko": "~하는 것" }],
+    "origin": "라틴어 functio (수행, 직무)",
+    "story": "맡은 일을 수행하는(funct) 것(ion), 입력을 받아 제 할 일을 한다 → 기능, 함수, 작동하다",
+    "family": ["functional", "malfunction", "defunct", "perfunctory"]
+  },
+  "functionality": {
+    "roots": [{ "part": "funct", "ko": "수행하다" }, { "part": "-ion", "ko": "~하는 것" }, { "part": "-al", "ko": "~의" }, { "part": "-ity", "ko": "~인 성질" }],
+    "story": "제 구실(function)을 해내는(al) 능력 전체(ity) → 기능",
+    "family": ["function", "malfunction", "defunct"]
+  },
+  "fundamentally": {
+    "roots": [{ "part": "fund", "ko": "바닥, 기초" }, { "part": "-ment", "ko": "~하는 것" }, { "part": "-al", "ko": "~의" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 fundamentum (기초) ← fundus (바닥)",
+    "story": "건물 맨 밑바닥(fund) 기초에서부터(ly) 따져 보면 → 근본적으로",
+    "family": ["foundation", "found", "fund", "profound"]
+  },
+  "gain": {
+    "origin": "고대 프랑스어 gaaignier (벌다, 수확하다)",
+    "story": "밭을 갈아 수확을 거두듯 애써서 내 것으로 만든다 → 얻다, 확보하다, 이득",
+    "family": ["regain", "gainful"]
+  },
+  "gap": {
+    "origin": "고대 노르드어 gap (벌어진 틈) ← gapa (입을 벌리다)",
+    "story": "입을 쩍 벌린(gape) 듯 사이가 벌어져 비어 있는 곳 → 빈틈, 공백",
+    "hook": "갭 → '세대 갭', '갭이 크다'의 그 갭 → 틈, 공백",
+    "family": ["gape", "agape"]
+  },
+  "garbage": {
+    "story": "'garbage in, garbage out', 부엌 찌꺼기처럼 쓸모없는 출력·데이터 → 쓰레기",
+    "hook": "가비지 → '가비지 컬렉션'은 안 쓰는 메모리 쓰레기 수거 → 쓰레기"
+  },
+  "gate": {
+    "origin": "고대 영어 geat (문, 통로)",
+    "story": "성문(gate)에서 검문을 통과해야만 안으로 들어간다 → 관문",
+    "hook": "게이트 → 공항 탑승 '게이트'를 통과해야 탄다 → 관문"
+  },
+  "gather": {
+    "origin": "고대 영어 gaderian (모으다), together와 한 뿌리",
+    "story": "흩어진 것을 한데(together) 끌어 모은다 → 모으다, 수집하다",
+    "family": ["together", "altogether"]
+  }
+}

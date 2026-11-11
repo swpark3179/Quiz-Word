@@ -1,0 +1,510 @@
+[
+ {
+  "id": "defense",
+  "word": "defense",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "dɪˈfens",
+  "meaning": "방어(책), 방어 수단",
+  "level": 3
+ },
+ {
+  "id": "define",
+  "word": "define",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈfaɪn",
+  "meaning": "정의하다, (명확히) 정하다",
+  "level": 3
+ },
+ {
+  "id": "definition",
+  "word": "definition",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌdefɪˈnɪʃn",
+  "meaning": "정의 — (도구·함수의) 이름·설명·입력 형식을 적은 명세",
+  "level": 3
+ },
+ {
+  "id": "delay",
+  "word": "delay",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "dɪˈleɪ",
+  "meaning": "지연, 대기 시간 · 늦추다",
+  "level": 3
+ },
+ {
+  "id": "delete",
+  "word": "delete",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈliːt",
+  "meaning": "삭제하다, 지우다",
+  "level": 2
+ },
+ {
+  "id": "delimiter",
+  "word": "delimiter",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "dɪˈlɪmɪtər",
+  "meaning": "구분자 — 내용의 시작과 끝을 나누는 기호·태그",
+  "level": 6
+ },
+ {
+  "id": "delta",
+  "word": "delta",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈdeltə",
+  "meaning": "델타, 변화분 — 스트리밍에서 조금씩 덧붙여 오는 출력 조각 (content_block_delta)",
+  "level": 6
+ },
+ {
+  "id": "demarcate",
+  "word": "demarcate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈdiːmɑːrkeɪt",
+  "meaning": "경계를 정하다, 구분 짓다",
+  "level": 6
+ },
+ {
+  "id": "demonstrate",
+  "word": "demonstrate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈdemənstreɪt",
+  "meaning": "(예시로) 보여 주다, 입증하다",
+  "level": 4
+ },
+ {
+  "id": "deny",
+  "word": "deny",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈnaɪ",
+  "meaning": "① (권한·요청을) 거부하다, 막다 ② 부인하다",
+  "level": 4
+ },
+ {
+  "id": "denylist",
+  "word": "denylist",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈdaɪnaɪlɪst",
+  "meaning": "거부 목록 — 막을 대상을 적어 둔 목록 (↔ allowlist)",
+  "level": 6
+ },
+ {
+  "id": "depend",
+  "word": "depend",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈpend",
+  "meaning": "(~에) 달려 있다, 의존하다",
+  "level": 2
+ },
+ {
+  "id": "dependency",
+  "word": "dependency",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "dɪˈpendənsi",
+  "meaning": "의존 관계, (패키지) 의존성",
+  "level": 5
+ },
+ {
+  "id": "dependent",
+  "word": "dependent",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "dɪˈpendənt",
+  "meaning": "(~에) 의존하는, 영향을 받는",
+  "level": 4
+ },
+ {
+  "id": "deploy",
+  "word": "deploy",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈplɔɪ",
+  "meaning": "배포하다, (운영 환경에) 투입하다",
+  "level": 6
+ },
+ {
+  "id": "deprecate",
+  "word": "deprecate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈdeprəkeɪt",
+  "meaning": "(기능·모델을) 지원 중단 예정으로 지정하다 — deprecated: 곧 없어질 예정인, 사용 중단이 권고된",
+  "level": 6
+ },
+ {
+  "id": "depth",
+  "word": "depth",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "depθ",
+  "meaning": "① 깊이, (폴더 등의) 중첩 단계 ② (검토·분석의) 깊이, 철저함 ③ (out of one's depth) 감당하기 어려운",
+  "level": 3
+ },
+ {
+  "id": "describe",
+  "word": "describe",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈskraɪb",
+  "meaning": "① 설명하다, 묘사하다 ② (~라고) 평하다, 일컫다",
+  "level": 2
+ },
+ {
+  "id": "description",
+  "word": "description",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "dɪˈskrɪpʃn",
+  "meaning": "설명 — (도구 정의의) 설명 문구",
+  "level": 2
+ },
+ {
+  "id": "design",
+  "word": "design",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "dɪˈzaɪn",
+  "meaning": "설계(하다)",
+  "level": 2
+ },
+ {
+  "id": "destructive",
+  "word": "destructive",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "dɪˈstrʌktɪv",
+  "meaning": "파괴적인 — 되돌릴 수 없게 지우거나 바꾸는",
+  "level": 4
+ },
+ {
+  "id": "detail",
+  "word": "detail",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈdiːteɪl",
+  "meaning": "세부 (사항), 자세한 내용",
+  "level": 2
+ },
+ {
+  "id": "detect",
+  "word": "detect",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈtekt",
+  "meaning": "감지하다, 알아내다",
+  "level": 4
+ },
+ {
+  "id": "determine",
+  "word": "determine",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈtɜːrmɪn",
+  "meaning": "① 알아내다, 밝혀내다 ② 결정하다, 좌우하다",
+  "level": 4
+ },
+ {
+  "id": "deterministic",
+  "word": "deterministic",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "dɪˌtɜːrmɪˈnɪstɪk",
+  "meaning": "결정적인 — 같은 입력이면 항상 같은 결과가 나오는",
+  "level": 6
+ },
+ {
+  "id": "dev",
+  "word": "dev",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "dev",
+  "meaning": "(development·developer의 줄임말) ① 개발 ② 개발자",
+  "level": 5
+ },
+ {
+  "id": "developer",
+  "word": "developer",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "dɪˈveləpər",
+  "meaning": "① (소프트웨어) 개발자 ② (부동산) 개발업자",
+  "level": 3
+ },
+ {
+  "id": "diff",
+  "word": "diff",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "dɪf",
+  "meaning": "변경분 비교 결과 — 파일에서 바뀐 줄을 보여 주는 것 / 비교하다",
+  "level": 6
+ },
+ {
+  "id": "differ",
+  "word": "differ",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈdɪfər",
+  "meaning": "(~와) 다르다, 구별되다",
+  "level": 3
+ },
+ {
+  "id": "differentiate",
+  "word": "differentiate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌdɪfəˈrenʃieɪt",
+  "meaning": "구별하다, 서로 다르게 만들다(차별화하다)",
+  "level": 5
+ },
+ {
+  "id": "differently",
+  "word": "differently",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˈdɪfrəntli",
+  "meaning": "다르게, 다른 방식으로",
+  "level": 2
+ },
+ {
+  "id": "digit",
+  "word": "digit",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈdɪdʒɪt",
+  "meaning": "① (0~9의) 숫자 ② 자릿수 ③ 손가락, 발가락",
+  "level": 3
+ },
+ {
+  "id": "direct",
+  "word": "direct",
+  "pos": [
+   "형용사",
+   "동사"
+  ],
+  "ipa": "dəˈrekt",
+  "meaning": "① 직접적인, 바로 — directly: 직접, 곧바로 / indirect: 간접적인 ② 지시하다, 향하게 하다",
+  "level": 2
+ },
+ {
+  "id": "directory",
+  "word": "directory",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "dəˈrektəri",
+  "meaning": "디렉터리, 폴더 — 파일을 묶어 두는 경로",
+  "level": 5
+ },
+ {
+  "id": "disable",
+  "word": "disable",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪsˈeɪbl",
+  "meaning": "(기능을) 끄다, 비활성화하다",
+  "level": 4
+ },
+ {
+  "id": "discard",
+  "word": "discard",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈskɑːrd",
+  "meaning": "버리다, 폐기하다",
+  "level": 4
+ },
+ {
+  "id": "discount",
+  "word": "discount",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈdɪskaʊnt",
+  "meaning": "① 할인(하다) — discounted: 할인된 ② 가볍게 여기다",
+  "level": 2
+ },
+ {
+  "id": "discover",
+  "word": "discover",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈskʌvər",
+  "meaning": "발견하다, (탐색해서) 알아내다",
+  "level": 2
+ },
+ {
+  "id": "discovery",
+  "word": "discovery",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "dɪˈskʌvəri",
+  "meaning": "발견, 탐색 (단계) — 필요한 파일·위치를 찾아내는 과정",
+  "level": 3
+ },
+ {
+  "id": "discuss",
+  "word": "discuss",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈskʌs",
+  "meaning": "논의하다, (~에 대해) 이야기하다",
+  "level": 2
+ },
+ {
+  "id": "disguise",
+  "word": "disguise",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "dɪsˈɡaɪz",
+  "meaning": "위장 (in disguise: 겉모습만 다른, 위장한) / 위장하다",
+  "level": 4
+ },
+ {
+  "id": "disk",
+  "word": "disk",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "dɪsk",
+  "meaning": "① (컴퓨터 저장 장치) 디스크 (on disk: 디스크에 저장된) ② 원반, 원판",
+  "level": 3
+ },
+ {
+  "id": "dismiss",
+  "word": "dismiss",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪsˈmɪs",
+  "meaning": "(가볍게) 무시하다, 일축하다",
+  "level": 4
+ },
+ {
+  "id": "display",
+  "word": "display",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "dɪˈspleɪ",
+  "meaning": "① 보여 주다, 표시하다 ② 화면, 디스플레이 ③ 전시, 진열",
+  "level": 2
+ },
+ {
+  "id": "distill",
+  "word": "distill",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈstɪl",
+  "meaning": "① 핵심만 추리다 ② (모델) 증류하다 — distilled model: 큰 모델의 능력을 작은 모델에 옮겨 담은 모델",
+  "level": 6
+ },
+ {
+  "id": "distinct",
+  "word": "distinct",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "dɪˈstɪŋkt",
+  "meaning": "뚜렷이 구별되는, 서로 겹치지 않는",
+  "level": 4
+ },
+ {
+  "id": "distinguish",
+  "word": "distinguish",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "dɪˈstɪŋɡwɪʃ",
+  "meaning": "구별하다, 차이를 알아보다",
+  "level": 4
+ },
+ {
+  "id": "distribution",
+  "word": "distribution",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌdɪstrɪˈbjuːʃn",
+  "meaning": "① 유통, 배급 ② (데이터의) 분포 ③ 배포, 분배",
+  "level": 4
+ },
+ {
+  "id": "diverse",
+  "word": "diverse",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "daɪˈvɜːrs",
+  "meaning": "다양한, 서로 다른 (diversity: 다양성)",
+  "level": 4
+ },
+ {
+  "id": "divide",
+  "word": "divide",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "dɪˈvaɪd",
+  "meaning": "① 나누다, 분할하다 ② (수를) 나누다 ③ 차이, 격차",
+  "level": 2
+ }
+]

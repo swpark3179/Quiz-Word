@@ -1,0 +1,288 @@
+{
+  "abandon": {
+    "roots": [{ "part": "a-", "ko": "~에" }, { "part": "bandon", "ko": "남의 권한, 처분" }],
+    "origin": "고대 프랑스어 a bandon (남의 처분에 맡겨)",
+    "story": "남의 처분(bandon)에(a) 맡기고 손을 뗀다 → 버리다, 포기하다",
+    "family": ["ban", "banish"]
+  },
+  "ability": {
+    "roots": [{ "part": "abil", "ko": "할 수 있는(able)" }, { "part": "-ity", "ko": "~함, 성질" }],
+    "origin": "라틴어 habilitas (다루기 쉬움, 적성)",
+    "story": "할 수 있는(able) 성질(ity) → 능력, 역량",
+    "family": ["able", "enable", "disable"]
+  },
+  "abort": {
+    "roots": [{ "part": "ab-", "ko": "떨어져, 벗어나" }, { "part": "ort", "ko": "생겨나다" }],
+    "origin": "라틴어 aboriri (태어나지 못하고 스러지다)",
+    "story": "생겨나던(ort) 것이 도중에 떨어져(ab) 나간다 → 중단하다, 도중에 그만두다",
+    "family": ["origin", "orient"]
+  },
+  "absolutely": {
+    "roots": [{ "part": "ab-", "ko": "떨어져" }, { "part": "solut", "ko": "풀다" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "라틴어 absolutus (풀려난, 제약 없는)",
+    "story": "모든 조건에서 풀려(solut) 떨어져(ab) 걸리는 것이 없게(ly) → 완전히, 절대적으로",
+    "family": ["solve", "resolve", "dissolve", "solution"]
+  },
+  "abstraction": {
+    "roots": [{ "part": "abs-", "ko": "떨어져" }, { "part": "tract", "ko": "끌다" }, { "part": "-ion", "ko": "~하는 것" }],
+    "origin": "라틴어 abstrahere (끌어 떼어 내다)",
+    "story": "세부에서 핵심만 끌어(tract) 떼어(abs) 낸 것(ion) → 추상화",
+    "family": ["attract", "extract", "contract", "tractor"]
+  },
+  "abusive": {
+    "roots": [{ "part": "ab-", "ko": "벗어나" }, { "part": "us", "ko": "쓰다(use)" }, { "part": "-ive", "ko": "~하는 성질의" }],
+    "origin": "라틴어 abuti (잘못 쓰다, 써서 없애다)",
+    "story": "바른 쓰임(us)에서 벗어나(ab) 말과 힘을 함부로 쓰는(ive) → 악의적인, 폭언이 담긴",
+    "family": ["use", "misuse", "usage", "utility"]
+  },
+  "academic": {
+    "roots": [{ "part": "academ", "ko": "학원(academy)" }, { "part": "-ic", "ko": "~의" }],
+    "origin": "그리스어 Akadēmeia (플라톤이 가르친 학원)",
+    "story": "플라톤이 가르치던 학원 아카데메이아(academ)의(ic) → 학술의, 학계의",
+    "hook": "아카데믹 → '아카데미(학원)'의 것 → 학술의",
+    "family": ["academy", "academia", "academician"]
+  },
+  "accept": {
+    "roots": [{ "part": "ac-", "ko": "~쪽으로" }, { "part": "cept", "ko": "잡다, 받다" }],
+    "origin": "라틴어 accipere (받아 쥐다)",
+    "story": "내 쪽으로(ac) 오는 것을 받아 쥔다(cept) → 받아들이다, 허용하다",
+    "family": ["except", "concept", "receive", "capture"]
+  },
+  "access": {
+    "roots": [{ "part": "ac-", "ko": "~쪽으로" }, { "part": "cess", "ko": "가다" }],
+    "origin": "라틴어 accedere (다가가다)",
+    "story": "대상 쪽으로(ac) 걸어가(cess) 닿는다 → 접근, 접근하다",
+    "hook": "액세스 → '액세스 권한'의 그 액세스 → 접근 (권한)",
+    "family": ["process", "success", "exceed", "recess"]
+  },
+  "according-to": {
+    "roots": [{ "part": "ac-", "ko": "~에" }, { "part": "cord", "ko": "마음" }, { "part": "to", "ko": "~에" }],
+    "origin": "라틴어 accordare (마음을 맞추다)",
+    "story": "그 말에(to) 마음(cord)을 맞춰(ac) 그대로 따른다 → ~에 따르면, ~에 따라",
+    "family": ["accord", "record", "cordial", "concord"]
+  },
+  "account": {
+    "roots": [{ "part": "ac-", "ko": "~에" }, { "part": "count", "ko": "세다" }],
+    "origin": "고대 프랑스어 acont (셈, 계산)",
+    "story": "누구 몫인지 하나하나 세어(count) 장부에(ac) 적고 밝힌다 → 계정, 설명",
+    "family": ["count", "discount", "recount"]
+  },
+  "across": {
+    "roots": [{ "part": "a-", "ko": "~로, ~에" }, { "part": "cross", "ko": "십자, 가로지름" }],
+    "origin": "앵글로프랑스어 an cros (십자 모양으로)",
+    "story": "십자(cross)로(a) 이 끝에서 저 끝까지 가로지르니 → ~ 전체에 걸쳐, 두루",
+    "family": ["cross", "crossroad", "crossing"]
+  },
+  "action": {
+    "roots": [{ "part": "act", "ko": "하다" }, { "part": "-ion", "ko": "~하는 것" }],
+    "origin": "라틴어 actio ← agere (하다, 몰다)",
+    "story": "생각에 그치지 않고 실제로 하는(act) 것(ion) → 행동, 조치, 동작",
+    "hook": "액션 → '액션 영화'의 액션 → 행동, 동작",
+    "family": ["act", "react", "agent", "active"]
+  },
+  "actionable": {
+    "roots": [{ "part": "act", "ko": "하다" }, { "part": "-ion", "ko": "~하는 것" }, { "part": "-able", "ko": "~할 수 있는" }],
+    "story": "읽고 곧장 조치(action)를 취할 수 있는(able) → 바로 조치할 수 있는",
+    "family": ["act", "react", "transaction", "agenda"]
+  },
+  "activate": {
+    "roots": [{ "part": "activ", "ko": "움직이는(active)" }, { "part": "-ate", "ko": "~하게 만들다" }],
+    "story": "꺼져 있던 것을 움직이는(active) 상태로 만든다(ate) → 활성화하다",
+    "family": ["action", "actor", "react"]
+  },
+  "active": {
+    "roots": [{ "part": "act", "ko": "하다" }, { "part": "-ive", "ko": "~하는 성질의" }],
+    "origin": "라틴어 activus ← agere (하다)",
+    "story": "지금 움직이고(act) 있는(ive) → 사용 중인, 활성 상태의, 활동적인",
+    "hook": "액티브 → '액티브 유저(활동 사용자)'의 액티브 → 활성 상태의",
+    "family": ["act", "action", "actor", "react"]
+  },
+  "actual": {
+    "roots": [{ "part": "act", "ko": "행하다" }, { "part": "-ual", "ko": "~의" }],
+    "origin": "후기 라틴어 actualis (실제로 행해진)",
+    "story": "말뿐이 아니라 실제로 행해진(act) 것의(ual) → 실제의, 진짜의",
+    "family": ["act", "action", "exact", "agent"]
+  },
+  "actually": {
+    "roots": [{ "part": "act", "ko": "행하다" }, { "part": "-ual", "ko": "~의" }, { "part": "-ly", "ko": "~하게" }],
+    "story": "실제로 행해진(actual) 그대로(ly) 말하자면 → 실제로, 사실은",
+    "family": ["action", "enact", "react"]
+  },
+  "ad-hoc": {
+    "roots": [{ "part": "ad", "ko": "~을 위해" }, { "part": "hoc", "ko": "이것" }],
+    "origin": "라틴어 ad hoc (이것을 위해)",
+    "story": "딱 이것(hoc)만을 위해(ad) 그 자리에서 마련한 → 그때그때 임시로 하는, 즉석의",
+    "hook": "애드혹 → '애드리브'처럼 그 자리에서 → 즉석의"
+  },
+  "adaptive": {
+    "roots": [{ "part": "ad-", "ko": "~에" }, { "part": "apt", "ko": "꼭 맞는" }, { "part": "-ive", "ko": "~하는 성질의" }],
+    "origin": "라틴어 adaptare (~에 맞추다)",
+    "story": "상황에(ad) 꼭 맞게(apt) 스스로 조절하는(ive) → 적응형의",
+    "hook": "어댑티브 → '어댑터'처럼 상대에 맞춰 끼우는 → 적응형의",
+    "family": ["adapt", "adapter", "apt", "aptitude"]
+  },
+  "adaptive-thinking": {
+    "roots": [{ "part": "adaptive", "ko": "적응하는" }, { "part": "thinking", "ko": "사고, 생각하기" }],
+    "story": "요청마다 맞춰(adaptive) 생각(thinking)할지, 얼마나 할지 스스로 정한다 → 적응형 사고"
+  },
+  "additional": {
+    "roots": [{ "part": "add", "ko": "더하다" }, { "part": "-ition", "ko": "~한 것" }, { "part": "-al", "ko": "~의" }],
+    "origin": "라틴어 addere (~에 보태다)",
+    "story": "원래 있던 데에 더해(add) 놓은 것(ition)의(al) → 추가의, 부가적인",
+    "family": ["add", "additive", "addendum"]
+  },
+  "address": {
+    "roots": [{ "part": "ad-", "ko": "~쪽으로" }, { "part": "dress", "ko": "곧게 향하다" }],
+    "origin": "고대 프랑스어 adrecier (곧장 향하다)",
+    "story": "문제 쪽으로(ad) 똑바로 향해(dress) 손을 댄다, 편지가 향할 곳 → 다루다, 해결하다, 주소",
+    "family": ["direct", "dress", "redress"]
+  },
+  "adequate": {
+    "roots": [{ "part": "ad-", "ko": "~에" }, { "part": "equ", "ko": "같은" }, { "part": "-ate", "ko": "~한" }],
+    "origin": "라틴어 adaequare (같게 맞추다)",
+    "story": "필요한 만큼에(ad) 딱 같게(equ) 맞춘 → 충분한, 적절한",
+    "family": ["equal", "equation", "equivalent", "equity"]
+  },
+  "adjuster": {
+    "roots": [{ "part": "adjust", "ko": "맞추다, 조정하다" }, { "part": "-er", "ko": "~하는 사람" }],
+    "story": "청구 건을 조사해 보상액을 알맞게 맞추는(adjust) 사람(er) → 손해 사정인",
+    "family": ["adjust", "adjustment", "adjustable"]
+  },
+  "advertise": {
+    "roots": [{ "part": "ad-", "ko": "~쪽으로" }, { "part": "vert", "ko": "돌리다" }, { "part": "-ise", "ko": "~하게 하다" }],
+    "origin": "라틴어 advertere (~쪽으로 돌리다)",
+    "story": "사람들 눈길을 이쪽으로(ad) 돌리게(vert) 한다 → 알리다, 광고하다",
+    "family": ["convert", "reverse", "divert", "version"]
+  },
+  "against": {
+    "origin": "고대 영어 ongean (맞은편에, 마주하여)",
+    "story": "기준을 맞은편(again)에 세워 놓고 마주 대어 본다 → ~에 비추어, ~을 상대로, ~에 맞서"
+  },
+  "agent": {
+    "roots": [{ "part": "ag", "ko": "하다, 몰다" }, { "part": "-ent", "ko": "~하는 사람·것" }],
+    "origin": "라틴어 agens ← agere (하다)",
+    "story": "맡은 일을 대신 해(ag) 주는 자(ent) → 에이전트, 상담원, 대리인",
+    "family": ["act", "agency", "agenda", "agile"]
+  },
+  "agentic": {
+    "roots": [{ "part": "agent", "ko": "행위자, 에이전트" }, { "part": "-ic", "ko": "~의, ~적인" }],
+    "story": "스스로 도구를 골라 일하는 에이전트(agent) 같은(ic) → 에이전트형의",
+    "family": ["agency", "act", "action"]
+  },
+  "agreement": {
+    "roots": [{ "part": "a-", "ko": "~에" }, { "part": "gree", "ko": "마음에 듦" }, { "part": "-ment", "ko": "~한 것" }],
+    "origin": "고대 프랑스어 a gré (마음에 들게)",
+    "story": "서로 마음에 들도록(a+gree) 맞춰 정한 것(ment) → 계약, 합의, 일치",
+    "family": ["agree", "grateful", "grace", "gratitude"]
+  },
+  "ahead": {
+    "roots": [{ "part": "a-", "ko": "~쪽에" }, { "part": "head", "ko": "머리, 앞" }],
+    "story": "머리(head)가 향한 쪽으로(a) 쭉 나아간다 → 그대로 진행하여, 앞으로, 미리",
+    "family": ["head", "heading", "headline"]
+  },
+  "airline": {
+    "roots": [{ "part": "air", "ko": "하늘, 공중" }, { "part": "line", "ko": "노선" }],
+    "story": "하늘(air)에 정기 노선(line)을 두고 비행기를 띄우는 회사 → 항공사",
+    "hook": "에어라인 → '○○에어라인' 하는 회사 이름 → 항공사",
+    "family": ["airport", "aircraft", "pipeline"]
+  },
+  "alert": {
+    "origin": "이탈리아어 all'erta (망대로! 경계하라)",
+    "story": "'망대(erta)로!' 하고 외쳐 위험을 알리던 데서 → 경보, 알리다, 경계하는"
+  },
+  "alias": {
+    "origin": "라틴어 alias (다른 때에, 달리)",
+    "story": "같은 대상을 달리(alias) 부르는 또 하나의 이름 → 별칭",
+    "family": ["alien", "alibi", "alter"]
+  },
+  "align": {
+    "roots": [{ "part": "a-", "ko": "~에" }, { "part": "lign", "ko": "줄, 선(line)" }],
+    "origin": "프랑스어 aligner (줄에 맞추다)",
+    "story": "한 줄(lign)에(a) 나란히 맞춰 세운다 → 맞추다, 정렬하다",
+    "hook": "얼라인 → 속에 '라인(line)'이 있다, 줄 맞추기 → 정렬하다",
+    "family": ["line", "linear", "lineage"]
+  },
+  "allow": {
+    "origin": "고대 프랑스어 alouer (인정하다, 몫을 주다)",
+    "story": "그래도 좋다고 인정해 몫을 내준다 → 허용하다, ~하게 해 주다"
+  },
+  "allowedtools": {
+    "roots": [{ "part": "allowed", "ko": "허용된" }, { "part": "Tools", "ko": "도구들" }],
+    "story": "승인 없이 쓰도록 허용된(allowed) 도구들(Tools)을 적는 설정 → 허용 도구 목록"
+  },
+  "allowlist": {
+    "roots": [{ "part": "allow", "ko": "허용하다" }, { "part": "list", "ko": "목록" }],
+    "story": "허용할(allow) 것만 적어 둔 목록(list), 여기 있어야 통과 → 허용 목록",
+    "family": ["blocklist", "denylist", "whitelist"]
+  },
+  "alone": {
+    "roots": [{ "part": "al-", "ko": "온전히(all)" }, { "part": "one", "ko": "하나" }],
+    "origin": "중세 영어 al one (온전히 하나)",
+    "story": "온전히(all) 하나(one)뿐, 다른 것 없이 → ~만으로, 혼자",
+    "family": ["lonely", "only", "atone"]
+  },
+  "along": {
+    "roots": [{ "part": "a-", "ko": "맞대어" }, { "part": "long", "ko": "긴" }],
+    "origin": "고대 영어 andlang (길이를 따라 쭉)",
+    "story": "긴(long) 길에 몸을 맞대고(a) 나란히 간다 → ~와 함께, ~을 따라, 앞으로",
+    "family": ["long", "length", "linger"]
+  },
+  "alphabetically": {
+    "roots": [{ "part": "alpha", "ko": "첫 글자 α" }, { "part": "bet", "ko": "둘째 글자 β" }, { "part": "-ical", "ko": "~의" }, { "part": "-ly", "ko": "~하게" }],
+    "origin": "그리스어 alpha + bēta (첫 두 글자)",
+    "story": "알파(alpha)·베타(bet)로 시작하는 글자 차례(ical)대로(ly) → 알파벳순으로",
+    "family": ["alphabet", "alphanumeric", "beta"]
+  },
+  "alternate": {
+    "roots": [{ "part": "altern", "ko": "번갈아(alter: 다른 쪽)" }, { "part": "-ate", "ko": "~하다" }],
+    "origin": "라틴어 alternare (하나씩 번갈아 하다)",
+    "story": "이쪽 한 번, 다른 쪽(alter) 한 번, 차례를 바꿔 가며 한다(ate) → 번갈아 하다",
+    "family": ["alter", "alternative", "altruism"]
+  },
+  "alternative": {
+    "roots": [{ "part": "altern", "ko": "번갈아(alter: 다른 쪽)" }, { "part": "-ative", "ko": "~하는 성질의" }],
+    "origin": "라틴어 alter (둘 중 다른 하나)",
+    "story": "이것이 안 되면 고를 수 있는 다른 쪽(alter)의 것 → 대안, 다른 선택지",
+    "family": ["alter", "alternate", "altruism"]
+  },
+  "always-loaded": {
+    "roots": [{ "part": "always", "ko": "항상" }, { "part": "loaded", "ko": "실린, 로드된" }],
+    "story": "세션마다 항상(always) 컨텍스트에 실려(loaded) 있는 → 항상 로드되는"
+  },
+  "ambiguous": {
+    "roots": [{ "part": "ambi-", "ko": "양쪽으로" }, { "part": "ig", "ko": "몰다, 가다" }, { "part": "-uous", "ko": "~한" }],
+    "origin": "라틴어 ambigere (이리저리 헤매다)",
+    "story": "뜻이 양쪽(ambi)으로 왔다 갔다(ig) 해서 하나로 정해지지 않는 → 모호한",
+    "family": ["ambivalent", "ambidextrous", "agent"]
+  },
+  "among": {
+    "roots": [{ "part": "a-", "ko": "~속에(on)" }, { "part": "mong", "ko": "섞인 무리" }],
+    "origin": "고대 영어 on gemang (무리 속에)",
+    "story": "여럿이 섞인 무리(mong) 속에(a) 있다 → ~ 사이에서, ~ 중에서",
+    "family": ["mingle", "mongrel"]
+  },
+  "amount": {
+    "roots": [{ "part": "a-", "ko": "~로" }, { "part": "mount", "ko": "산, 오르다" }],
+    "origin": "고대 프랑스어 amonter (위로 오르다)",
+    "story": "하나씩 더해 산(mount) 위로(a) 쌓아 올린 끝에 이른 값 → 금액, 양",
+    "family": ["mount", "mountain", "paramount", "surmount"]
+  },
+  "analysis": {
+    "roots": [{ "part": "ana-", "ko": "낱낱이, 위로" }, { "part": "lysis", "ko": "풀기" }],
+    "origin": "그리스어 analysis (풀어 헤침)",
+    "story": "엉킨 덩어리를 낱낱이(ana) 풀어(lysis) 헤쳐 본다 → 분석",
+    "family": ["paralysis", "catalyst", "dialysis"]
+  },
+  "analyst": {
+    "roots": [{ "part": "analy", "ko": "분석하다(analyze)" }, { "part": "-st", "ko": "~하는 사람(-ist)" }],
+    "story": "낱낱이 풀어 헤쳐 보는 분석(analyze)을 하는 사람(-ist) → 분석가",
+    "hook": "애널리스트 → 증권사 '애널리스트' → 분석가",
+    "family": ["analysis", "analyze", "catalyst"]
+  },
+  "anchor": {
+    "origin": "그리스어 ankyra (갈고리, 닻)",
+    "story": "갈고리 같은 닻을 내려 배를 한자리에 붙든다 → 고정하다, 기준점",
+    "hook": "앵커 → 뉴스의 중심을 잡는 '앵커' → 붙잡아 두다, 기준점",
+    "family": ["angle", "ankle"]
+  }
+}

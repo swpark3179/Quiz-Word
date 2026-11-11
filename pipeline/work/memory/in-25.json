@@ -1,0 +1,512 @@
+[
+ {
+  "id": "tag",
+  "word": "tag",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "tæɡ",
+  "meaning": "① 태그, 꼬리표 ② 태그를 달다, 표시하다",
+  "level": 3
+ },
+ {
+  "id": "target",
+  "word": "target",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈtɑːrɡɪt",
+  "meaning": "① 대상, 목표 ② 겨냥하다, 대상으로 삼다",
+  "level": 3
+ },
+ {
+  "id": "task",
+  "word": "task",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "tæsk",
+  "meaning": "작업, 과제, 일",
+  "level": 2
+ },
+ {
+  "id": "tax",
+  "word": "tax",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "tæks",
+  "meaning": "세금",
+  "level": 2
+ },
+ {
+  "id": "teammate",
+  "word": "teammate",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtiːmmeɪt",
+  "meaning": "팀원, 동료",
+  "level": 2
+ },
+ {
+  "id": "tech",
+  "word": "tech",
+  "pos": [
+   "약어"
+  ],
+  "ipa": "tek",
+  "meaning": "기술 (technology의 줄임말) — tech lead: 기술 책임자",
+  "level": 2
+ },
+ {
+  "id": "technical",
+  "word": "technical",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈteknɪkl",
+  "meaning": "① 기술적인, 기술 관련의 ② 전문적인, 세부 기술의",
+  "level": 3
+ },
+ {
+  "id": "technical-debt",
+  "word": "technical debt",
+  "pos": [
+   "명사구"
+  ],
+  "ipa": "ˌteknɪkl ˈdet",
+  "meaning": "기술 부채 — 빨리 하려고 미뤄 둔, 나중에 고쳐야 할 코드 문제",
+  "level": 6
+ },
+ {
+  "id": "technique",
+  "word": "technique",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "tekˈniːk",
+  "meaning": "기법, (일을 처리하는) 방법",
+  "level": 3
+ },
+ {
+  "id": "telemetry",
+  "word": "telemetry",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "təˈlemətri",
+  "meaning": "텔레메트리 — 사용·동작 데이터를 자동으로 모아 보내는 것(그 데이터)",
+  "level": 6
+ },
+ {
+  "id": "temperature",
+  "word": "temperature",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtemprətʃər",
+  "meaning": "temperature — 출력의 무작위성(다양성)을 정하는 샘플링 값",
+  "level": 4
+ },
+ {
+  "id": "template",
+  "word": "template",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtempleɪt",
+  "meaning": "템플릿, 서식 틀 (미리 만들어 둔 양식)",
+  "level": 5
+ },
+ {
+  "id": "temporarily",
+  "word": "temporarily",
+  "pos": [
+   "부사"
+  ],
+  "ipa": "ˌtempəˈrerəli",
+  "meaning": "일시적으로, 잠시",
+  "level": 4
+ },
+ {
+  "id": "terminate",
+  "word": "terminate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈtɜːrmɪneɪt",
+  "meaning": "(작업을) 끝내다, 종료시키다",
+  "level": 5
+ },
+ {
+  "id": "terminology",
+  "word": "terminology",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌtɜːrmɪˈnɑːlədʒi",
+  "meaning": "용어, (특정 분야·맥락에서 쓰는) 어휘",
+  "level": 5
+ },
+ {
+  "id": "terse",
+  "word": "terse",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "tɜːrs",
+  "meaning": "간결한, 짤막한",
+  "level": 6
+ },
+ {
+  "id": "tester",
+  "word": "tester",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtestər",
+  "meaning": "테스터, 시험(검사)하는 사람",
+  "level": 3
+ },
+ {
+  "id": "text-only",
+  "word": "text-only",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌtekst ˈoʊnli",
+  "meaning": "텍스트만 있는 (도구 호출 같은 다른 블록 없이)",
+  "level": 3
+ },
+ {
+  "id": "theme",
+  "word": "theme",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "θiːm",
+  "meaning": "주제, 테마",
+  "level": 3
+ },
+ {
+  "id": "thin",
+  "word": "thin",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "θɪn",
+  "meaning": "(내용이) 빈약한, 부실한 / 얇은, 가벼운",
+  "level": 2
+ },
+ {
+  "id": "thinking",
+  "word": "thinking",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈθɪŋkɪŋ",
+  "meaning": "① (모델의) 사고 — 답하기 전에 거치는 내부 추론 (thinking 블록) ② 생각, 판단",
+  "level": 2
+ },
+ {
+  "id": "though",
+  "word": "though",
+  "pos": [
+   "접속사",
+   "부사"
+  ],
+  "ipa": "ðoʊ",
+  "meaning": "① 비록 ~이지만 (even though) ② 하지만, 그래도",
+  "level": 2
+ },
+ {
+  "id": "thread",
+  "word": "thread",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "θred",
+  "meaning": "① (이야기·작업의) 흐름, 맥락 ② 스레드 — 대화 묶음 또는 실행 단위",
+  "level": 4
+ },
+ {
+  "id": "threat",
+  "word": "threat",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "θret",
+  "meaning": "위협 — threat model: 어떤 공격을 막을지 정리한 위협 모델",
+  "level": 3
+ },
+ {
+  "id": "through",
+  "word": "through",
+  "pos": [
+   "전치사",
+   "부사"
+  ],
+  "ipa": "θruː",
+  "meaning": "① ~을 통해, ~을 거쳐 ② ~ 도중에, ~ 내내 ③ 통과하여",
+  "level": 2
+ },
+ {
+  "id": "ticket",
+  "word": "ticket",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtɪkɪt",
+  "meaning": "① (고객 지원 등의) 티켓, 요청 건 ② 표, 입장권",
+  "level": 3
+ },
+ {
+  "id": "tier",
+  "word": "tier",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "tɪr",
+  "meaning": "등급, 단계",
+  "level": 5
+ },
+ {
+  "id": "tight",
+  "word": "tight",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "taɪt",
+  "meaning": "① 촘촘한, 빈틈없는 (tight loop: 쉬지 않고 도는 루프) ② (tighten) 조이다, 군더더기 없이 다듬다",
+  "level": 3
+ },
+ {
+  "id": "timeout",
+  "word": "timeout",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtaɪmaʊt",
+  "meaning": "타임아웃 — 응답을 기다리는 제한 시간(이 지나 끊기는 것)",
+  "level": 5
+ },
+ {
+  "id": "timestamp",
+  "word": "timestamp",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtaɪmstæmp",
+  "meaning": "타임스탬프 — 일이 일어난 시각을 적은 값",
+  "level": 6
+ },
+ {
+  "id": "token",
+  "word": "token",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtoʊkən",
+  "meaning": "① 토큰 (모델이 텍스트를 처리하는 단위) ② (인증) 토큰 ③ 상징, 표시",
+  "level": 5
+ },
+ {
+  "id": "tokenizer",
+  "word": "tokenizer",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtoʊkənaɪzər",
+  "meaning": "토크나이저 — 텍스트를 토큰 단위로 쪼개는 장치",
+  "level": 6
+ },
+ {
+  "id": "tone",
+  "word": "tone",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "toʊn",
+  "meaning": "어조, 말투",
+  "level": 3
+ },
+ {
+  "id": "toolset",
+  "word": "toolset",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtuːlset",
+  "meaning": "도구 모음 — (에이전트가) 쓸 수 있는 도구 목록",
+  "level": 5
+ },
+ {
+  "id": "top-level",
+  "word": "top-level",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˌtɑːp ˈlevl",
+  "meaning": "최상위의, 최상위 수준의",
+  "level": 4
+ },
+ {
+  "id": "topic",
+  "word": "topic",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtɑːpɪk",
+  "meaning": "① 주제, 소재 ② 화제, 이야깃거리",
+  "level": 2
+ },
+ {
+  "id": "topical",
+  "word": "topical",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈtɑːpɪkl",
+  "meaning": "주제(상)의, 주제에 관한",
+  "level": 5
+ },
+ {
+  "id": "total",
+  "word": "total",
+  "pos": [
+   "명사",
+   "형용사"
+  ],
+  "ipa": "ˈtoʊtl",
+  "meaning": "① 합계, 총액 ② 전체의, 총~ ③ 합계가 ~이 되다",
+  "level": 2
+ },
+ {
+  "id": "toward",
+  "word": "toward",
+  "pos": [
+   "전치사"
+  ],
+  "ipa": "tɔːrd",
+  "meaning": "① ~쪽으로, ~을 향해 ② ~에 대해, ~ 쪽으로 치우친",
+  "level": 2
+ },
+ {
+  "id": "trace",
+  "word": "trace",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "treɪs",
+  "meaning": "① 추적 기록, 트레이스 ② 추적하다, (흐름을) 따라가 보다",
+  "level": 4
+ },
+ {
+  "id": "track",
+  "word": "track",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "træk",
+  "meaning": "① (on track) 제 궤도, 정상 진행 ② 추적하다, 기록해 관리하다",
+  "level": 3
+ },
+ {
+  "id": "trade",
+  "word": "trade",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "treɪd",
+  "meaning": "① (~을 ~과) 맞바꾸다, 희생하다 ② 거래하다 ③ 무역, 거래",
+  "level": 2
+ },
+ {
+  "id": "trade-off",
+  "word": "trade-off",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtreɪd ɔːf",
+  "meaning": "상충 관계, 맞바꿈 — 하나를 얻으면 다른 하나를 잃는 관계",
+  "level": 5
+ },
+ {
+  "id": "traffic",
+  "word": "traffic",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈtræfɪk",
+  "meaning": "① 트래픽, 통신량 ② 교통, 통행량",
+  "level": 3
+ },
+ {
+  "id": "trail",
+  "word": "trail",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "treɪl",
+  "meaning": "자취, 흔적 — audit trail: (나중에 확인할 수 있는) 감사 추적 기록",
+  "level": 4
+ },
+ {
+  "id": "trailing",
+  "word": "trailing",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "ˈtreɪlɪŋ",
+  "meaning": "뒤에 붙은, 끝에 남은 (trailing noise: 뒤에 붙은 잡음)",
+  "level": 5
+ },
+ {
+  "id": "train",
+  "word": "train",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "treɪn",
+  "meaning": "① (모델을) 학습시키다, 훈련시키다 ② 훈련, 학습 ③ 기차, 열차",
+  "level": 2
+ },
+ {
+  "id": "transactional",
+  "word": "transactional",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "trænˈzækʃənl",
+  "meaning": "거래(처리)에 관한",
+  "level": 6
+ },
+ {
+  "id": "transform",
+  "word": "transform",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "trænsˈfɔːrm",
+  "meaning": "① 변환하다, 바꾸다 ② 변환",
+  "level": 4
+ },
+ {
+  "id": "transformation",
+  "word": "transformation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌtrænsfərˈmeɪʃn",
+  "meaning": "변환, 변형",
+  "level": 4
+ }
+]

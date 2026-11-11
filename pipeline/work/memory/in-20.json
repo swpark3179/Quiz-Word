@@ -1,0 +1,510 @@
+[
+ {
+  "id": "redis",
+  "word": "Redis",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈredɪs",
+  "meaning": "Redis — 메모리 기반 키-값 저장소 (캐시로 많이 씀)",
+  "level": 6
+ },
+ {
+  "id": "rediscover",
+  "word": "rediscover",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːdɪˈskʌvər",
+  "meaning": "(이미 찾은 것을) 다시 찾아내다",
+  "level": 4
+ },
+ {
+  "id": "reduce",
+  "word": "reduce",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈduːs",
+  "meaning": "줄이다, 낮추다 — reduction (명) 감소, 절감",
+  "level": 3
+ },
+ {
+  "id": "redundant",
+  "word": "redundant",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "rɪˈdʌndənt",
+  "meaning": "불필요하게 중복된, 쓸데없는",
+  "level": 5
+ },
+ {
+  "id": "refactor",
+  "word": "refactor",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˌriːˈfæktər",
+  "meaning": "리팩터링(하다) — 동작은 그대로 두고 코드 구조를 고치다",
+  "level": 6
+ },
+ {
+  "id": "reference",
+  "word": "reference",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "ˈrefrəns",
+  "meaning": "① 참조하다, 가리키다 ② 참조, 참고 자료",
+  "level": 4
+ },
+ {
+  "id": "reflect",
+  "word": "reflect",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈflekt",
+  "meaning": "반영하다, 나타내다",
+  "level": 3
+ },
+ {
+  "id": "reformat",
+  "word": "reformat",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːˈfɔːrmæt",
+  "meaning": "형식을 다시 맞추다, 재포맷하다",
+  "level": 5
+ },
+ {
+  "id": "refresh",
+  "word": "refresh",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈfreʃ",
+  "meaning": "새로 고치다, 최신 상태로 갱신하다",
+  "level": 4
+ },
+ {
+  "id": "refund",
+  "word": "refund",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈriːfʌnd",
+  "meaning": "환불(하다)",
+  "level": 4
+ },
+ {
+  "id": "refuse",
+  "word": "refuse",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈfjuːz",
+  "meaning": "거부하다, 거절하다",
+  "level": 3
+ },
+ {
+  "id": "regenerate",
+  "word": "regenerate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈdʒenəreɪt",
+  "meaning": "다시 생성하다, 새로 만들어 내다",
+  "level": 5
+ },
+ {
+  "id": "regex",
+  "word": "regex",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈredʒeks",
+  "meaning": "정규 표현식 — 문자열 패턴을 기호로 적어 찾는 규칙",
+  "level": 6
+ },
+ {
+  "id": "region",
+  "word": "region",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈriːdʒən",
+  "meaning": "지역, 영역 — regional (형) 지역별의, 지역의",
+  "level": 3
+ },
+ {
+  "id": "register",
+  "word": "register",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈredʒɪstər",
+  "meaning": "등록하다",
+  "level": 3
+ },
+ {
+  "id": "registry",
+  "word": "registry",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈredʒɪstri",
+  "meaning": "레지스트리 — 등록된 항목을 모아 둔 목록",
+  "level": 6
+ },
+ {
+  "id": "regression",
+  "word": "regression",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "rɪˈɡreʃn",
+  "meaning": "회귀 — 변경 뒤 예전엔 되던 것이 다시 나빠지는 것 (regression test: 회귀 테스트)",
+  "level": 6
+ },
+ {
+  "id": "reject",
+  "word": "reject",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈdʒekt",
+  "meaning": "거부하다, 받아들이지 않다",
+  "level": 3
+ },
+ {
+  "id": "relate",
+  "word": "relate",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈleɪt",
+  "meaning": "① (~와) 관련되다, 관련짓다 ② (relate to) 공감하다",
+  "level": 3
+ },
+ {
+  "id": "related",
+  "word": "related",
+  "pos": [
+   "형용사"
+  ],
+  "ipa": "rɪˈleɪtɪd",
+  "meaning": "관련된, 연관된",
+  "level": 3
+ },
+ {
+  "id": "relationship",
+  "word": "relationship",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "rɪˈleɪʃnʃɪp",
+  "meaning": "① 관계, 관련성 ② (사람 사이의) 관계",
+  "level": 2
+ },
+ {
+  "id": "relative",
+  "word": "relative",
+  "pos": [
+   "형용사",
+   "명사"
+  ],
+  "ipa": "ˈrelətɪv",
+  "meaning": "① ~에 비해, ~에 상대적인 (relative to) ② 상대적인, 비교상의 ③ 친척",
+  "level": 3
+ },
+ {
+  "id": "release",
+  "word": "release",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "rɪˈliːs",
+  "meaning": "① 릴리스, 출시(판) ② 내보내다, 공개하다",
+  "level": 3
+ },
+ {
+  "id": "reliability",
+  "word": "reliability",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "rɪˌlaɪəˈbɪləti",
+  "meaning": "신뢰성 — 언제나 제대로 동작하는 정도",
+  "level": 4
+ },
+ {
+  "id": "remain",
+  "word": "remain",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈmeɪn",
+  "meaning": "① (계속) ~한 상태로 있다, 남아 있다 ② remaining (형) 남은, 나머지의",
+  "level": 3
+ },
+ {
+  "id": "remainder",
+  "word": "remainder",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "rɪˈmeɪndər",
+  "meaning": "나머지",
+  "level": 5
+ },
+ {
+  "id": "remediation",
+  "word": "remediation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "rɪˌmiːdiˈeɪʃn",
+  "meaning": "개선 조치, 바로잡기",
+  "level": 6
+ },
+ {
+  "id": "reminder",
+  "word": "reminder",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "rɪˈmaɪndər",
+  "meaning": "(잊지 않게) 다시 일러 주는 말, 알림",
+  "level": 3
+ },
+ {
+  "id": "remove",
+  "word": "remove",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈmuːv",
+  "meaning": "없애다, 제거하다",
+  "level": 2
+ },
+ {
+  "id": "rename",
+  "word": "rename",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːˈneɪm",
+  "meaning": "이름을 바꾸다",
+  "level": 3
+ },
+ {
+  "id": "render",
+  "word": "render",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˈrendər",
+  "meaning": "① (화면·이미지로) 그려 내다, 렌더링하다 ② (어떤 상태로) 만들다 ③ 제공하다",
+  "level": 6
+ },
+ {
+  "id": "renewal",
+  "word": "renewal",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "rɪˈnuːəl",
+  "meaning": "갱신, 연장",
+  "level": 4
+ },
+ {
+  "id": "reopen",
+  "word": "reopen",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːˈoʊpən",
+  "meaning": "다시 열다",
+  "level": 3
+ },
+ {
+  "id": "reorder",
+  "word": "reorder",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "riˈɔːrdər",
+  "meaning": "순서를 바꾸다, 재배치하다",
+  "level": 4
+ },
+ {
+  "id": "reorganize",
+  "word": "reorganize",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "riˈɔːrɡənaɪz",
+  "meaning": "다시 정리하다, 재구성하다",
+  "level": 4
+ },
+ {
+  "id": "replace",
+  "word": "replace",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈpleɪs",
+  "meaning": "① 교체하다, 바꿔 넣다 ② ~의 자리를 대신하다",
+  "level": 2
+ },
+ {
+  "id": "replacement",
+  "word": "replacement",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "rɪˈpleɪsmənt",
+  "meaning": "① 교체, 대체 ② 대체물, 후임",
+  "level": 3
+ },
+ {
+  "id": "replay",
+  "word": "replay",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːˈpleɪ",
+  "meaning": "(기록된 것을) 그대로 다시 재생하다",
+  "level": 3
+ },
+ {
+  "id": "replica",
+  "word": "replica",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈreplɪkə",
+  "meaning": "① 복제본, 사본 ② (데이터베이스의) 복제 서버, 레플리카",
+  "level": 5
+ },
+ {
+  "id": "repo",
+  "word": "repo",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˈriːpoʊ",
+  "meaning": "저장소, 리포지토리 (repository 의 줄임말)",
+  "level": 6
+ },
+ {
+  "id": "reprocess",
+  "word": "reprocess",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːˈprɑːses",
+  "meaning": "다시 처리하다, 재처리하다",
+  "level": 5
+ },
+ {
+  "id": "reproduce",
+  "word": "reproduce",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːprəˈduːs",
+  "meaning": "(버그·현상을) 재현하다 — reproducible (형) 재현 가능한",
+  "level": 4
+ },
+ {
+  "id": "request",
+  "word": "request",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "rɪˈkwest",
+  "meaning": "요청(하다)",
+  "level": 2
+ },
+ {
+  "id": "require",
+  "word": "require",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "rɪˈkwaɪər",
+  "meaning": "① 요구하다, 반드시 ~하게 하다 ② 필요로 하다 — required (형) 필수의",
+  "level": 3
+ },
+ {
+  "id": "reschedule",
+  "word": "reschedule",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːˈskedʒuːl",
+  "meaning": "일정을 다시 잡다, 일정을 변경하다",
+  "level": 4
+ },
+ {
+  "id": "research",
+  "word": "research",
+  "pos": [
+   "명사",
+   "동사"
+  ],
+  "ipa": "ˈriːsɜːrtʃ",
+  "meaning": "① 연구, 조사 ② 조사하다, 연구하다",
+  "level": 2
+ },
+ {
+  "id": "researcher",
+  "word": "researcher",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "rɪˈsɜːrtʃər",
+  "meaning": "연구원, 조사하는 사람",
+  "level": 3
+ },
+ {
+  "id": "resend",
+  "word": "resend",
+  "pos": [
+   "동사"
+  ],
+  "ipa": "ˌriːˈsend",
+  "meaning": "다시 보내다",
+  "level": 3
+ },
+ {
+  "id": "reservation",
+  "word": "reservation",
+  "pos": [
+   "명사"
+  ],
+  "ipa": "ˌrezərˈveɪʃn",
+  "meaning": "① 예약 ② (~에 대한) 망설임, 유보",
+  "level": 2
+ },
+ {
+  "id": "reserve",
+  "word": "reserve",
+  "pos": [
+   "동사",
+   "명사"
+  ],
+  "ipa": "rɪˈzɜːrv",
+  "meaning": "① (특정 용도로) 따로 남겨 두다 ② 예약하다 ③ 비축(량)",
+  "level": 3
+ }
+]
