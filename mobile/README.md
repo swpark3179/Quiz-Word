@@ -16,6 +16,7 @@ mobile/
       notebooks/      학습장 목록 · [id] 학습장 하나 (검색창으로 담기, 쓸어서 빼기, 플래시카드·객관식·문맥 뜻)
     word/[id].tsx     단어 상세
     scope.tsx         범위 고르기 시트
+    notebook-merge.tsx  학습장 합치기 시트 (둘 이상 골라 겹치는 단어 없이 새 학습장, 기존 학습장 남겨두기/삭제)
     session/          플래시카드 · 객관식 · 복습 (전체 화면)
     settings.tsx
   src/components/     FlashSession(스와이프·뒤집기) · QuizSession · 공용 UI · 모션 조각

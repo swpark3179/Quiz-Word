@@ -47,6 +47,11 @@ export default function RootLayout() {
             name="scope"
             options={{ presentation: 'formSheet', headerShown: false, sheetAllowedDetents: [0.78, 1], sheetGrabberVisible: true, sheetCornerRadius: 28, contentStyle: { backgroundColor: c.bg } }}
           />
+          {/* 이름 입력칸이 있어 키보드가 올라오므로 처음부터 크게 띄운다 */}
+          <Stack.Screen
+            name="notebook-merge"
+            options={{ presentation: 'formSheet', headerShown: false, sheetAllowedDetents: [1], sheetGrabberVisible: true, sheetCornerRadius: 28, contentStyle: { backgroundColor: c.bg } }}
+          />
           <Stack.Screen name="session/flash" options={{ presentation: 'fullScreenModal', headerShown: false, gestureEnabled: false }} />
           <Stack.Screen name="session/quiz" options={{ presentation: 'fullScreenModal', headerShown: false, gestureEnabled: false }} />
           <Stack.Screen name="session/review" options={{ presentation: 'fullScreenModal', headerShown: false, gestureEnabled: false }} />

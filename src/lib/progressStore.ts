@@ -6,7 +6,7 @@
  */
 import { create } from 'zustand';
 import { persist, type PersistStorage, type StateStorage, type StorageValue } from 'zustand/middleware';
-import { newNotebookId, sanitizeNotebooks, uniqueIds, type Notebook } from './notebook';
+import { mergedNotebookName, mergeNotebookIds, newNotebookId, sanitizeNotebooks, uniqueIds, type Notebook } from './notebook';
 import { review, type Grade3, type StoredCard } from './srs';
 import { dayKey } from './text';
 
@@ -78,6 +78,11 @@ export interface ProgressState {
   /** 학습장 맨 앞에 단어를 넣는다 (이미 있으면 그대로) */
   addToNotebook: (notebookId: string, wordId: string) => void;
   removeFromNotebook: (notebookId: string, wordId: string) => void;
+  /**
+   * 둘 이상의 학습장을 단어 합집합(겹치는 단어는 한 번만)으로 새 학습장에 합치고 새 id 를 돌려준다.
+   * deleteSources 면 합친 학습장들을 지운다. 있는 학습장이 2개 미만이면 아무것도 하지 않고 null
+   */
+  mergeNotebooks: (ids: string[], name: string, opts?: { deleteSources?: boolean }) => string | null;
   importData: (data: unknown) => void;
   /** 학습 기록(복습 일정·오답노트·통계)만 지운다 — 설정과 학습장은 남는다 */
   resetProgress: () => void;
@@ -240,6 +245,25 @@ export function createProgressStore(getStorage: () => StateStorage, opts: Progre
             n.id === notebookId && n.ids.includes(wordId) ? { ...n, ids: n.ids.filter((x) => x !== wordId), updatedAt: Date.now() } : n,
           ),
         });
+      },
+
+      mergeNotebooks(ids, name, opts = {}) {
+        const { notebooks } = get();
+        const pick = new Set(ids);
+        // 학습장 목록 순서대로 (새로 만든 것이 앞)
+        const sources = notebooks.filter((n) => pick.has(n.id));
+        if (sources.length < 2) return null;
+        const now = Date.now();
+        const nb: Notebook = {
+          id: newNotebookId(now),
+          name: name.trim() || mergedNotebookName(sources),
+          ids: mergeNotebookIds(sources),
+          createdAt: now,
+          updatedAt: now,
+        };
+        const rest = opts.deleteSources ? notebooks.filter((n) => !pick.has(n.id)) : notebooks;
+        set({ notebooks: [nb, ...rest] });
+        return nb.id;
       },
 
       importData(data) {
