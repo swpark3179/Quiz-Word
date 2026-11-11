@@ -35,7 +35,24 @@ const wordFiles = fs
   .filter((f) => f.endsWith('.json'))
   .sort();
 for (const f of wordFiles) fs.copyFileSync(path.join(repo, 'data', 'words', f), path.join(out, 'data', 'words', f));
-for (const f of ['corpus.json', 'sources.json']) fs.copyFileSync(path.join(repo, 'data', f), path.join(out, 'data', f));
+
+// 시험 데이터 (data/exams/<시험>/…) — 폴더째 복사하고, 파일 목록을 정적 require 로 만든다
+const examFiles = [];
+function copyExams(rel) {
+  const from = path.join(repo, 'data', 'exams', rel);
+  if (!fs.existsSync(from)) return;
+  for (const e of fs.readdirSync(from, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
+    const next = rel ? `${rel}/${e.name}` : e.name;
+    if (e.isDirectory()) copyExams(next);
+    else if (e.name.endsWith('.json')) {
+      const to = path.join(out, 'data', 'exams', next);
+      fs.mkdirSync(path.dirname(to), { recursive: true });
+      fs.copyFileSync(path.join(from, e.name), to);
+      examFiles.push(next);
+    }
+  }
+}
+copyExams('');
 
 /** 앱 기본 단어 세트의 날짜 — 단어 데이터를 마지막으로 커밋한 시각 (git 이 없으면 지금) */
 function dataDate() {
@@ -51,10 +68,9 @@ function dataDate() {
 // Metro 는 동적 require 를 못 하므로 단어 파일 목록을 정적 require 로 만든다.
 // 함수 안에서 require 하므로 부를 때에만 평가된다 — 불러온 단어 세트가 있으면 내장 데이터(수 MB)는 아예 읽지 않는다.
 const index = [
-  `${header}data/words (scripts/sync-shared.mjs)`,
-  "import type { CorpusSentence } from './lib/corpus';",
+  `${header}data/words · data/exams (scripts/sync-shared.mjs)`,
+  "import { assembleExams, type ExamData } from './lib/exams';",
   "import type { RawWord } from './lib/normalize';",
-  "import type { SourceInfo } from './lib/schema';",
   '',
   'export function loadBundledWords(): RawWord[] {',
   '  const files: RawWord[][] = [',
@@ -63,8 +79,12 @@ const index = [
   '  return files.flat();',
   '}',
   '',
-  "export const loadBundledCorpus = (): CorpusSentence[] => require('./data/corpus.json');",
-  "export const loadBundledSources = (): SourceInfo[] => require('./data/sources.json');",
+  'export function loadBundledExams(): ExamData[] {',
+  '  const files: [string, unknown][] = [',
+  ...examFiles.map((f) => `    ['${f}', require('./data/exams/${f}')],`),
+  '  ];',
+  '  return assembleExams(files);',
+  '}',
   '',
   `export const BUNDLED_BUILT_AT = '${dataDate()}';`,
   '',
@@ -72,4 +92,4 @@ const index = [
 fs.writeFileSync(path.join(out, 'wordFiles.ts'), index);
 
 const words = wordFiles.reduce((n, f) => n + JSON.parse(fs.readFileSync(path.join(repo, 'data', 'words', f), 'utf8')).length, 0);
-console.log(`[sync-shared] 공용 로직 ${libCount}개, 단어 파일 ${wordFiles.length}개(${words}단어) → src/generated`);
+console.log(`[sync-shared] 공용 로직 ${libCount}개, 단어 파일 ${wordFiles.length}개(${words}단어), 시험 파일 ${examFiles.length}개 → src/generated`);

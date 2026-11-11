@@ -1,8 +1,10 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { useCallback, useState } from 'react';
 import { View } from 'react-native';
+import type { ExamplePref } from '@shared/corpus';
 import { flashSourceName } from '@shared/notebook';
 import { selectWords } from '@shared/scope';
+import { ExamPrefProvider, prefOfScope } from '@/components/ExamPref';
 import { FlashSession } from '@/components/FlashSession';
 import { Button, Empty } from '@/components/ui';
 import { WORD_BY_ID, WORDS } from '@/data/words';
@@ -15,12 +17,13 @@ export default function FlashScreen() {
   const params = useLocalSearchParams();
   const record = useProgress((s) => s.record);
   // source: 그만할 때 만드는 학습장 이름 앞부분 (어디서 시작했는지)
-  const [{ ids, source }] = useState<{ ids: string[]; source?: string }>(() => {
+  // pref: 고른 시험·문제 파일 — 카드 뒷면에 그쪽 예문을 먼저 보여 준다
+  const [{ ids, source, pref }] = useState<{ ids: string[]; source?: string; pref?: ExamplePref }>(() => {
     const explicit = typeof params.ids === 'string' ? params.ids : '';
     if (explicit) return { ids: explicit.split(',').filter((id) => WORD_BY_ID.has(id)) };
     const { cards, wrong, notebooks } = useProgress.getState();
     const scope = scopeFromRoute(params);
-    return { ids: selectWords(WORDS, scope, { cards, wrong, notebooks }).map((w) => w.id), source: flashSourceName(scope, notebooks) };
+    return { ids: selectWords(WORDS, scope, { cards, wrong, notebooks }).map((w) => w.id), source: flashSourceName(scope, notebooks), pref: prefOfScope(scope) };
   });
 
   // SRS·통계에는 이 세션의 첫 판정만 반영한다
@@ -35,5 +38,9 @@ export default function FlashScreen() {
       </View>
     );
   }
-  return <FlashSession ids={ids} title="플래시카드" source={source} onAnswer={onAnswer} />;
+  return (
+    <ExamPrefProvider pref={pref}>
+      <FlashSession ids={ids} title="플래시카드" source={source} onAnswer={onAnswer} />
+    </ExamPrefProvider>
+  );
 }

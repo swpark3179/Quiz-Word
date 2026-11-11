@@ -8,12 +8,13 @@ import { memo, useCallback, useDeferredValue, useMemo, useRef, useState } from '
 import { ActionSheetIOS, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { FadeIn, FadeOut, runOnJS } from 'react-native-reanimated';
-import type { Word } from '@shared/schema';
+import { freqIn, inExam, isExtra, isQuizSource, NO_EXAM } from '@shared/exams';
+import { LEVELS, type Word } from '@shared/schema';
 import { searchWords } from '@shared/search';
 import { statusOf, type WordStatus } from '@shared/srs';
 import { useToast } from '@/components/motion';
 import { Icon, PosBadge, Segmented, StatusDot, T } from '@/components/ui';
-import { QUIZ_SOURCES, sourceName, WORDS, WORDS_BY_FREQ } from '@/data/words';
+import { EXAMS, examName, quizSources, sourceName, WORDS, WORDS_BY_FREQ } from '@/data/words';
 import { speak } from '@/lib/tts';
 import { useProgress } from '@/store/progress';
 import { type, useTheme } from '@/theme';
@@ -21,7 +22,6 @@ import { haptic } from '@/theme/haptics';
 
 type Sort = 'freq' | 'alpha';
 type StatusFilter = '' | WordStatus | 'wrong';
-type TierFilter = '' | 'core' | 'extra' | 'basic';
 
 const POS_FILTERS = ['명사', '동사', '형용사', '부사', '구'];
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
@@ -41,12 +41,23 @@ function pick<T extends string>(title: string, options: { value: T; label: strin
 
 export default function WordsScreen() {
   const { c } = useTheme();
-  const params = useLocalSearchParams<{ src?: string }>();
+  const params = useLocalSearchParams<{ cat?: string; src?: string }>();
   const [q, setQ] = useState('');
+  // 시험: '' = 모든 시험, NO_EXAM = 어느 시험 문제에도 안 나온 단어(확장). 문제 파일만 넘어오면 그 파일이 있는 시험으로 맞춘다
+  const [cat, setCatOnly] = useState(
+    () => (params.cat === NO_EXAM || EXAMS.some((e) => e.id === params.cat) ? params.cat! : (EXAMS.find((e) => params.src && e.sources.some((x) => x.id === params.src && isQuizSource(x)))?.id ?? '')),
+  );
   const [src, setSrc] = useState(params.src ?? '');
+  const [minLevel, setMinLevel] = useState(1);
+  /** 시험을 바꾸면 문제 파일 선택은 푼다 (문제 파일은 시험 안에서 고른다) */
+  const setCat = useCallback((v: string) => {
+    setCatOnly(v);
+    setSrc('');
+  }, []);
+  const files = useMemo(() => (cat && cat !== NO_EXAM ? quizSources(cat) : []), [cat]);
+  const file = files.some((x) => x.id === src) ? src : '';
   const [pos, setPos] = useState('');
   const [status, setStatus] = useState<StatusFilter>('');
-  const [tier, setTier] = useState<TierFilter>('');
   const [sort, setSort] = useState<Sort>('freq');
   const [bubble, setBubble] = useState<string | null>(null);
   const toast = useToast((s) => s.show);
@@ -59,13 +70,23 @@ export default function WordsScreen() {
 
   const list = useMemo(() => {
     let base = sort === 'alpha' ? WORDS : WORDS_BY_FREQ;
-    if (src) base = base.filter((w) => w.sources.includes(src));
+    if (cat === NO_EXAM) base = base.filter(isExtra);
+    else if (cat) {
+      base = base.filter((w) => inExam(w, cat, file || undefined));
+      // 자주 나온 순은 고른 시험·문제 파일에서 나온 횟수로
+      if (sort === 'freq') {
+        base = base
+          .map((w, i) => ({ w, i, f: freqIn(w, cat, file || undefined) }))
+          .sort((a, b) => b.f - a.f || a.i - b.i)
+          .map((x) => x.w);
+      }
+    }
+    if (minLevel > 1) base = base.filter((w) => w.level >= minLevel);
     if (pos) base = base.filter((w) => (pos === '구' ? w.pos.some((p) => p.endsWith('구')) : w.pos.includes(pos)));
-    if (tier) base = base.filter((w) => (tier === 'basic' ? w.basic : w.tier === tier && !w.basic));
     if (statusWrong) base = base.filter((w) => statusWrong[w.id]);
     else if (statusCards) base = base.filter((w) => statusOf(statusCards[w.id]) === status);
     return dq.trim() ? searchWords(base, dq) : base;
-  }, [dq, src, pos, tier, status, sort, statusCards, statusWrong]);
+  }, [dq, cat, file, minLevel, pos, status, sort, statusCards, statusWrong]);
 
   const letterIndex = useMemo(() => {
     const m = new Map<string, number>();
@@ -116,19 +137,31 @@ export default function WordsScreen() {
     );
   }, [toast]);
 
-  const filtersOn = !!(src || pos || status || tier);
+  const filtersOn = !!(cat || pos || status || minLevel > 1);
   const showScrubber = sort === 'alpha' && !dq.trim();
 
-  const renderItem = useCallback<ListRenderItem<Word>>(({ item }) => <WordRow w={item} scrubber={showScrubber} onLongPress={onLongPress} />, [showScrubber, onLongPress]);
+  const examCat = cat && cat !== NO_EXAM ? cat : '';
+  const renderItem = useCallback<ListRenderItem<Word>>(
+    ({ item }) => <WordRow w={item} scrubber={showScrubber} onLongPress={onLongPress} cat={examCat} file={file} />,
+    [showScrubber, onLongPress, examCat, file],
+  );
 
   const header = useMemo(() => (
     <View style={{ gap: 10, paddingBottom: 8 }}>
       <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8, paddingHorizontal: 16 }}>
         <FilterChip
-          label={src ? sourceName(src) : '문제 파일'}
-          active={!!src}
-          onPress={() => pick('문제 파일', [{ value: '', label: '모든 문제 파일' }, ...QUIZ_SOURCES.map((s) => ({ value: s.id, label: s.name }))], setSrc)}
+          label={cat === NO_EXAM ? '확장' : cat ? examName(cat) : '시험'}
+          active={!!cat}
+          onPress={() => pick('시험', [{ value: '', label: '모든 시험' }, ...EXAMS.map((e) => ({ value: e.id, label: e.name })), { value: NO_EXAM, label: '확장 (문제 밖 단어)' }], setCat)}
         />
+        {/* 문제 파일은 시험을 고른 뒤에 그 시험 안에서 고른다 */}
+        {files.length > 0 && (
+          <FilterChip
+            label={file ? sourceName(cat, file) : '문제 파일'}
+            active={!!file}
+            onPress={() => pick('문제 파일', [{ value: '', label: '모든 문제 파일' }, ...files.map((s) => ({ value: s.id, label: s.name }))], setSrc)}
+          />
+        )}
         <FilterChip label={pos ? (pos === '구' ? '구(여러 단어)' : pos) : '품사'} active={!!pos} onPress={() => pick('품사', [{ value: '', label: '모든 품사' }, ...POS_FILTERS.map((p) => ({ value: p, label: p === '구' ? '구(여러 단어)' : p }))], setPos)} />
         <FilterChip
           label={status ? { new: '새 단어', learning: '학습 중', mastered: '익힘', wrong: '오답노트' }[status] : '학습 상태'}
@@ -144,24 +177,26 @@ export default function WordsScreen() {
           }
         />
         <FilterChip
-          label={tier ? { core: '핵심', extra: '확장', basic: '기초' }[tier] : '핵심 + 확장'}
-          active={!!tier}
+          label={minLevel > 1 ? (minLevel === LEVELS.length ? `${minLevel}단계` : `${minLevel}단계 이상`) : '단계'}
+          active={minLevel > 1}
           onPress={() =>
-            pick<TierFilter>('단어 범위', [
-              { value: '', label: '핵심 + 확장' },
-              { value: 'core', label: '핵심 (CCAR-F)' },
-              { value: 'extra', label: '확장 (다른 회차)' },
-              { value: 'basic', label: '기초 단어' },
-            ], setTier)
+            pick(
+              '단계',
+              LEVELS.map((l) => ({
+                value: String(l.level),
+                label: l.level === 1 ? '모든 단계' : l.level === LEVELS.length ? `${l.level}단계 (${l.name})` : `${l.level}단계 이상 (${l.name}~)`,
+              })),
+              (v) => setMinLevel(Number(v)),
+            )
           }
         />
         {filtersOn && (
           <Pressable
             onPress={() => {
-              setSrc('');
+              setCat('');
               setPos('');
               setStatus('');
-              setTier('');
+              setMinLevel(1);
             }}
             style={{ justifyContent: 'center', paddingHorizontal: 6 }}
           >
@@ -187,7 +222,7 @@ export default function WordsScreen() {
         </T>
       </View>
     </View>
-  ), [src, pos, status, tier, sort, filtersOn, list.length]);
+  ), [cat, file, files, minLevel, setCat, pos, status, sort, filtersOn, list.length]);
 
   return (
     <View style={{ flex: 1, backgroundColor: c.bg }}>
@@ -236,13 +271,15 @@ export default function WordsScreen() {
 }
 
 /** 단어장 한 줄 — 자기 단어의 학습 상태·오답 여부만 구독한다 */
-const WordRow = memo(function WordRow({ w, scrubber, onLongPress }: { w: Word; scrubber: boolean; onLongPress: (w: Word) => void }) {
+const WordRow = memo(function WordRow({ w, scrubber, onLongPress, cat, file }: { w: Word; scrubber: boolean; onLongPress: (w: Word) => void; cat: string; file: string }) {
   const { c } = useTheme();
   const status = useProgress((s) => statusOf(s.cards[w.id]));
   const inWrong = useProgress((s) => !!s.wrong[w.id]);
+  const freq = cat ? freqIn(w, cat, file || undefined) : w.freq;
   return (
     <Pressable
-      onPress={() => router.push({ pathname: '/word/[id]', params: { id: w.id } })}
+      // 고른 시험·문제 파일을 함께 넘겨 상세에서 그쪽 예문을 먼저 보여 준다
+      onPress={() => router.push({ pathname: '/word/[id]', params: { id: w.id, ...(cat ? { cat } : {}), ...(cat && file ? { src: file } : {}) } })}
       onLongPress={() => onLongPress(w)}
       style={({ pressed }) => [styles.row, { backgroundColor: pressed ? c.surface2 : c.bg, paddingRight: scrubber ? 30 : 16 }]}
     >
@@ -267,11 +304,9 @@ const WordRow = memo(function WordRow({ w, scrubber, onLongPress }: { w: Word; s
           {inWrong && <Icon name="bookmark.fill" size={12} color={c.danger} />}
           {!!w.pos[0] && <PosBadge pos={w.pos[0]} small />}
         </View>
-        {w.freq > 0 && (
-          <T v="caption" color="muted" style={{ fontVariant: ['tabular-nums'] }}>
-            {w.freq}회
-          </T>
-        )}
+        <T v="caption" color="muted" style={{ fontVariant: ['tabular-nums'] }}>
+          {w.level}단계{freq > 0 ? ` · ${freq}회` : ''}
+        </T>
       </View>
     </Pressable>
   );

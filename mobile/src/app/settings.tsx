@@ -10,7 +10,7 @@ import { dayKey } from '@shared/text';
 import { diffWordSets, type WordSetFile } from '@shared/wordset';
 import { useToast } from '@/components/motion';
 import { Icon, Segmented, T } from '@/components/ui';
-import { WORD_SET_INFO, WORDS } from '@/data/words';
+import { EXAMS, examName, mainExam, WORD_SET_INFO, WORDS } from '@/data/words';
 import { englishVoices, speak, type VoiceInfo } from '@/lib/tts';
 import { canImportWordSet, installWordSet, readWordSetFile, removeImportedWordSet, restartApp } from '@/lib/wordSet';
 import { exportProgress, useProgress } from '@/store/progress';
@@ -200,7 +200,29 @@ export default function Settings() {
 
   return (
     <ScrollView contentInsetAdjustmentBehavior="automatic" contentContainerStyle={styles.content} style={{ backgroundColor: c.bg }}>
-      <Group title="학습" footer="시험일을 정하면 복습 간격이 시험일을 넘지 않게 맞춰져, 시험 전에 모든 단어를 한 번 더 봅니다.">
+      <Group title="학습" footer="시험일을 정하면 복습 간격이 시험일을 넘지 않게 맞춰져, 시험 전에 모든 단어를 한 번 더 봅니다. 오늘 탭의 진척과 오늘의 새 단어는 주 시험에 나온 단어 가운데 학습 단계 이상만 셉니다 (플래시카드·객관식은 시작할 때 따로 골라요).">
+        {EXAMS.length > 0 && (
+          <Row
+            label="주 시험"
+            detail={EXAMS.length > 1 ? undefined : examName(mainExam(settings.exam))}
+            right={
+              EXAMS.length > 1 ? (
+                <Pressable
+                  onPress={() =>
+                    ActionSheetIOS.showActionSheetWithOptions({ title: '주 시험', options: [...EXAMS.map((e) => e.name), '취소'], cancelButtonIndex: EXAMS.length }, (i) => {
+                      if (i < EXAMS.length) update({ exam: EXAMS[i].id });
+                    })
+                  }
+                >
+                  <T v="body" color="primary">
+                    {examName(mainExam(settings.exam))}
+                  </T>
+                </Pressable>
+              ) : undefined
+            }
+          />
+        )}
+        <Row label="학습 단계" detail="이보다 쉬운 단어는 뺀다" right={<Stepper value={settings.minLevel} options={[1, 2, 3, 4, 5, 6]} suffix="단계 이상" onChange={(v) => update({ minLevel: v })} />} />
         <Row
           label="시험일"
           right={

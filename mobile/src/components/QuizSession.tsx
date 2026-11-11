@@ -25,6 +25,8 @@ import { Highlighted, SpeakButton, WordBrief } from '@/components/word';
 import { contextsOf, WORD_BY_ID, WORDS } from '@/data/words';
 import { afterFrame } from '@/lib/afterFrame';
 import { speak } from '@/lib/tts';
+import type { ExamplePref } from '@shared/corpus';
+import { useExamPref } from '@/components/ExamPref';
 import { useProgress } from '@/store/progress';
 import { elevation, motion, type, useTheme } from '@/theme';
 import { haptic } from '@/theme/haptics';
@@ -32,13 +34,14 @@ import { haptic } from '@/theme/haptics';
 export type QuizMode = 'meaning' | 'context' | 'mixed';
 
 const POOL_ALL = WORDS;
-const POOL_NO_BASIC = WORDS.filter((w) => !w.basic);
+/** 1단계(아주 쉬운 단어)의 뜻은 오답 보기로 너무 쉬워서, 1단계 단어를 낼 때만 쓴다 */
+const POOL_NO_EASY = WORDS.filter((w) => w.level > 1);
 
-function makeQuestion(w: Word, mode: QuizMode, choices: number): Question {
-  const pool = w.basic ? POOL_ALL : POOL_NO_BASIC;
+function makeQuestion(w: Word, mode: QuizMode, choices: number, pref: ExamplePref): Question {
+  const pool = w.level === 1 ? POOL_ALL : POOL_NO_EASY;
   const useContext = mode === 'context' || (mode === 'mixed' && w.contexts.length > 0 && Math.random() < 0.5);
   if (useContext) {
-    const ctx = contextsOf(w, 4).filter((x) => !/[가-힣]/.test(x.en));
+    const ctx = contextsOf(w, 4, pref).filter((x) => !/[가-힣]/.test(x.en));
     if (ctx.length) return buildContextQuestion(w, pool, ctx, choices);
   }
   return buildMeaningQuestion(w, pool, choices);
@@ -48,6 +51,7 @@ export function QuizSession({ ids: initialIds, mode, title, onResult }: { ids: s
   const { c, dark } = useTheme();
   const reduced = useReducedMotion();
   const settings = useProgress((s) => s.settings);
+  const pref = useExamPref();
   const [ids, setIds] = useState(initialIds);
   const [index, setIndex] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
@@ -61,9 +65,9 @@ export function QuizSession({ ids: initialIds, mode, title, onResult }: { ids: s
   const q = useMemo(() => {
     if (!w) return undefined;
     const k = `${round}:${index}`;
-    questions.current[k] ??= makeQuestion(w, mode, settings.quizChoices);
+    questions.current[k] ??= makeQuestion(w, mode, settings.quizChoices, pref);
     return questions.current[k];
-  }, [w, index, round, mode, settings.quizChoices]);
+  }, [w, index, round, mode, settings.quizChoices, pref]);
 
   useEffect(() => {
     scroll.current?.scrollTo({ y: 0, animated: false });
@@ -85,11 +89,11 @@ export function QuizSession({ ids: initialIds, mode, title, onResult }: { ids: s
       if (nextWord) {
         const k = `${round}:${index + 1}`;
         setTimeout(() => {
-          questions.current[k] ??= makeQuestion(nextWord, mode, settings.quizChoices);
+          questions.current[k] ??= makeQuestion(nextWord, mode, settings.quizChoices, pref);
         }, 600);
       }
     },
-    [q, w, picked, onResult, reduced, ids, index, round, mode, settings.quizChoices],
+    [q, w, picked, onResult, reduced, ids, index, round, mode, settings.quizChoices, pref],
   );
 
   const next = () => {

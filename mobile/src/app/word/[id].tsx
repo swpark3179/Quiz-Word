@@ -4,14 +4,16 @@ import { router, Stack, useLocalSearchParams } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import type { Context } from '@shared/schema';
+import { freqIn, isExtra } from '@shared/exams';
+import { levelName, type Context } from '@shared/schema';
 import { DEFAULT_SCOPE } from '@shared/scope';
 import { statusOf } from '@shared/srs';
 import { relativeDue } from '@shared/text';
+import { ExamPrefProvider, useExamPref } from '@/components/ExamPref';
 import { useToast } from '@/components/motion';
 import { Button, Card, Empty, Icon, PosBadge, SectionLabel, StatusBadge, T } from '@/components/ui';
 import { ContextCard, MemoryAid, SenseList, SpeakButton } from '@/components/word';
-import { contextsOf, corpusExamples, sourceName, WORD_BY_ID, WORD_BY_SURFACE } from '@/data/words';
+import { contextsOf, corpusExamples, EXAMS, examName, quizSources, WORD_BY_ID, WORD_BY_SURFACE } from '@/data/words';
 import { useProgress } from '@/store/progress';
 import { sessionHref } from '@/store/session';
 import { type, useTheme } from '@/theme';
@@ -30,7 +32,10 @@ function groupBySense(contexts: Context[]) {
 export default function WordDetail() {
   const { c, dark } = useTheme();
   const insets = useSafeAreaInsets();
-  const { id = '' } = useLocalSearchParams<{ id: string }>();
+  // cat·src: 단어장에서 시험·문제 파일을 골라 들어왔으면 그쪽 예문을 먼저 보여 준다 (없으면 주 시험)
+  const { id = '', cat, src } = useLocalSearchParams<{ id: string; cat?: string; src?: string }>();
+  const mainPref = useExamPref();
+  const pref = useMemo(() => (cat ? { cat, ...(src ? { file: src } : {}) } : mainPref), [cat, src, mainPref]);
   const w = WORD_BY_ID.get(id);
   const card = useProgress((s) => s.cards[id]);
   const inWrong = useProgress((s) => !!s.wrong[id]);
@@ -40,8 +45,8 @@ export default function WordDetail() {
   const toast = useToast((s) => s.show);
   const [moreOpen, setMoreOpen] = useState(false);
 
-  const contexts = useMemo(() => (w ? contextsOf(w, 4) : []), [w]);
-  const more = useMemo(() => (w && moreOpen ? corpusExamples(w, 12).filter((x) => !contexts.some((y) => y.en === x.en)) : []), [w, moreOpen, contexts]);
+  const contexts = useMemo(() => (w ? contextsOf(w, 4, pref) : []), [w, pref]);
+  const more = useMemo(() => (w && moreOpen ? corpusExamples(w, 12, pref).filter((x) => !contexts.some((y) => y.en === x.en)) : []), [w, moreOpen, contexts, pref]);
 
   if (!w) {
     return (
@@ -53,7 +58,14 @@ export default function WordDetail() {
   }
 
   const status = statusOf(card);
-  const groups = w.contexts.length ? groupBySense(contexts) : [{ sense: '', pos: '', items: contexts }];
+  // 문장 색인에서 자동으로 찾은 예문은 뜻이 정해져 있지 않으므로 뜻별로 묶지 않는다
+  const groups = contexts.some((x) => !x.auto) ? groupBySense(contexts) : [{ sense: '', pos: '', items: contexts }];
+  const examFreq = freqIn(w, pref.cat);
+  const freqLabel = examFreq > 0 ? `${examName(pref.cat)} 문제에 ${examFreq}회` : w.freq > 0 ? `다른 시험 문제에 ${w.freq}회` : '';
+  /** 나온 문제 파일 — 시험별로 */
+  const appears = EXAMS.map((e) => ({ exam: e, files: quizSources(e.id).filter((s) => w.occ[e.id]?.[s.id]) })).filter((x) => x.files.length);
+  /** 시험별 노트 — 보고 있는 시험 것을 먼저 */
+  const notes = [...(w.notes ?? [])].sort((a, b) => Number(b.cat === pref.cat) - Number(a.cat === pref.cat));
   const md = {
     body: { color: c.text2, fontSize: 15, lineHeight: 23 },
     heading2: { color: c.muted, fontSize: 13, fontWeight: '700' as const, marginTop: 14, marginBottom: 4 },
@@ -65,6 +77,7 @@ export default function WordDetail() {
   };
 
   return (
+    <ExamPrefProvider pref={pref}>
     <View style={{ flex: 1, backgroundColor: c.bg }}>
       <Stack.Screen options={{ title: w.word, headerRight: () => <SpeakButton text={w.word} size={20} /> }} />
       <ScrollView contentInsetAdjustmentBehavior="automatic" contentContainerStyle={[styles.content, { paddingBottom: 110 + insets.bottom }]}>
@@ -76,8 +89,8 @@ export default function WordDetail() {
               <PosBadge key={p} pos={p} />
             ))}
             <StatusBadge status={status} />
-            {w.tier === 'extra' && <MiniTag label="확장" />}
-            {w.basic && <MiniTag label="기초" />}
+            <MiniTag label={`${w.level}단계 · ${levelName(w.level)}`} />
+            {isExtra(w) && <MiniTag label="확장" />}
           </View>
           <T v="title2" color="primaryText" style={{ lineHeight: 29 }}>
             {w.short}
@@ -105,7 +118,7 @@ export default function WordDetail() {
 
         {/* 문제 속 뜻과 예문 */}
         <View>
-          <SectionLabel right={w.freq > 0 ? <T v="caption" color="muted">CCAR-F 문제에 {w.freq}회</T> : undefined}>문제 속 뜻과 예문</SectionLabel>
+          <SectionLabel right={freqLabel ? <T v="caption" color="muted">{freqLabel}</T> : undefined}>문제 속 뜻과 예문</SectionLabel>
           {contexts.length === 0 && (
             <T v="subhead" color="muted" style={{ paddingHorizontal: 4 }}>
               문제에 나온 예문이 없어요.
@@ -147,7 +160,7 @@ export default function WordDetail() {
         </View>
 
         {/* 변화형·유의어·출처 */}
-        {(!!w.forms?.length || !!w.synonyms?.length || w.sources.length > 0) && (
+        {(!!w.forms?.length || !!w.synonyms?.length || appears.length > 0) && (
           <Card style={{ padding: 16, gap: 16 }}>
             {!!w.forms?.length && (
               <View>
@@ -171,21 +184,21 @@ export default function WordDetail() {
                 </View>
               </View>
             )}
-            {w.sources.length > 0 && (
-              <View>
-                <SectionLabel>나온 문제 파일</SectionLabel>
-                <Wrap items={w.sources.map(sourceName)} />
+            {appears.map(({ exam, files }) => (
+              <View key={exam.id}>
+                <SectionLabel>{EXAMS.length > 1 ? `나온 문제 파일 · ${exam.name}` : '나온 문제 파일'}</SectionLabel>
+                <Wrap items={files.map((s) => s.name)} />
               </View>
-            )}
+            ))}
           </Card>
         )}
 
-        {!!w.note && (
-          <Card style={{ padding: 16 }}>
-            <SectionLabel>단어 노트</SectionLabel>
-            <Markdown style={md}>{w.note}</Markdown>
+        {notes.map((n) => (
+          <Card key={n.cat} style={{ padding: 16 }}>
+            <SectionLabel>{examName(n.cat)} 노트</SectionLabel>
+            <Markdown style={md}>{n.md}</Markdown>
           </Card>
-        )}
+        ))}
 
         {/* 학습 기록 */}
         <Card style={[styles.stats, dark && { borderColor: c.separator }]}>
@@ -218,6 +231,7 @@ export default function WordDetail() {
         />
       </View>
     </View>
+    </ExamPrefProvider>
   );
 }
 

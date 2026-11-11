@@ -1,8 +1,10 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { useCallback, useState } from 'react';
 import { View } from 'react-native';
+import type { ExamplePref } from '@shared/corpus';
 import { selectWords } from '@shared/scope';
 import { shuffle } from '@shared/text';
+import { ExamPrefProvider, prefOfScope } from '@/components/ExamPref';
 import { QuizSession, type QuizMode } from '@/components/QuizSession';
 import { Button, Empty } from '@/components/ui';
 import { WORD_BY_ID, WORDS } from '@/data/words';
@@ -17,12 +19,14 @@ export default function QuizScreen() {
   const params = useLocalSearchParams();
   const record = useProgress((s) => s.record);
   const mode: QuizMode = params.mode === 'context' || params.mode === 'mixed' ? params.mode : 'meaning';
-  const [ids] = useState<string[]>(() => {
+  // pref: 고른 시험·문제 파일 — 문맥 문제와 해설에 그쪽 예문을 먼저 쓴다
+  const [{ ids, pref }] = useState<{ ids: string[]; pref?: ExamplePref }>(() => {
     const explicit = typeof params.ids === 'string' ? params.ids : '';
-    if (explicit) return explicit.split(',').filter((id) => WORD_BY_ID.has(id));
+    if (explicit) return { ids: explicit.split(',').filter((id) => WORD_BY_ID.has(id)) };
     const { cards, wrong, notebooks } = useProgress.getState();
+    const scope = scopeFromRoute(params);
     // 범위에서 고른 단어를 섞어서 낸다
-    return shuffle(selectWords(WORDS, scopeFromRoute(params), { cards, wrong, notebooks }).map((w) => w.id));
+    return { ids: shuffle(selectWords(WORDS, scope, { cards, wrong, notebooks }).map((w) => w.id)), pref: prefOfScope(scope) };
   });
 
   const onResult = useCallback((id: string, correct: boolean) => record(id, correct, { source: 'quiz' }), [record]);
@@ -34,5 +38,9 @@ export default function QuizScreen() {
       </View>
     );
   }
-  return <QuizSession ids={ids} mode={mode} title={TITLES[mode]} onResult={onResult} />;
+  return (
+    <ExamPrefProvider pref={pref}>
+      <QuizSession ids={ids} mode={mode} title={TITLES[mode]} onResult={onResult} />
+    </ExamPrefProvider>
+  );
 }

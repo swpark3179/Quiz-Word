@@ -6,7 +6,7 @@ import Animated, { FadeInDown, useReducedMotion } from 'react-native-reanimated'
 import { reviewPlan } from '@shared/reviewPlan';
 import { dayKey } from '@shared/text';
 import { Icon, PressableScale, SectionLabel, T } from '@/components/ui';
-import { WORDS } from '@/data/words';
+import { mainExam, WORDS } from '@/data/words';
 import { useFocusSnapshot } from '@/lib/useFocusSnapshot';
 import { useProgress } from '@/store/progress';
 import { MODE_INFO, scopeOf, scopeSummary, useScopes, type StudyMode } from '@/store/session';
@@ -22,7 +22,10 @@ export default function Study() {
   const cards = useFocusSnapshot(useProgress((s) => s.cards));
   const settings = useProgress((s) => s.settings);
   const todayNew = useFocusSnapshot(useProgress((s) => s.days[dayKey()]?.newWords ?? 0));
-  const plan = useMemo(() => reviewPlan(WORDS, cards, settings.newPerDay, todayNew), [cards, settings.newPerDay, todayNew]);
+  const plan = useMemo(
+    () => reviewPlan(WORDS, cards, settings.newPerDay, todayNew, new Date(), { cat: mainExam(settings.exam), minLevel: settings.minLevel }),
+    [cards, settings.newPerDay, settings.exam, settings.minLevel, todayNew],
+  );
   const reviewTotal = plan.due.length + plan.fresh.length;
 
   const startReview = () =>

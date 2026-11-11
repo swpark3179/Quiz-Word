@@ -9,7 +9,8 @@ import { statusOf } from '@shared/srs';
 import { dayKey, daysUntil } from '@shared/text';
 import { CountUp, GrowBar, ProgressRing } from '@/components/motion';
 import { Card, Icon, PressableScale, SectionLabel, T } from '@/components/ui';
-import { QUIZ_SOURCES, WORDS } from '@/data/words';
+import { inExam } from '@shared/exams';
+import { examName, mainExam, quizSources, WORDS } from '@/data/words';
 import { useFocusSnapshot } from '@/lib/useFocusSnapshot';
 import { MODE_INFO, scopeOf, sessionHref, useScopes } from '@/store/session';
 import { useProgress } from '@/store/progress';
@@ -17,7 +18,6 @@ import { DEFAULT_SCOPE } from '@shared/scope';
 import { elevation, type, useTheme } from '@/theme';
 
 const WEEKDAY = ['일', '월', '화', '수', '목', '금', '토'];
-const CORE = WORDS.filter((w) => w.tier === 'core' && !w.basic);
 
 export default function Today() {
   const { c, dark } = useTheme();
@@ -32,17 +32,26 @@ export default function Today() {
 
   const today = new Date();
   const todayLog = days[dayKey(today)];
-  const plan = useMemo(() => reviewPlan(WORDS, cards, settings.newPerDay, todayLog?.newWords ?? 0), [cards, settings.newPerDay, todayLog?.newWords]);
+  /** 주 시험과 학습 단계 — 진척과 오늘의 새 단어가 이 기준이다 */
+  const exam = mainExam(settings.exam);
+  const minLevel = settings.minLevel;
+  const plan = useMemo(
+    () => reviewPlan(WORDS, cards, settings.newPerDay, todayLog?.newWords ?? 0, new Date(), { cat: exam, minLevel }),
+    [cards, settings.newPerDay, todayLog?.newWords, exam, minLevel],
+  );
+  // 주 시험에 나온 단어 중 학습 단계 이상 (설정을 바꿀 때만 다시 만든다)
+  const core = useMemo(() => WORDS.filter((w) => inExam(w, exam) && w.level >= minLevel), [exam, minLevel]);
   const examLeft = settings.examDate ? daysUntil(settings.examDate) : undefined;
 
   const progress = useMemo(() => {
     const count = { new: 0, learning: 0, mastered: 0 };
-    const per = new Map(QUIZ_SOURCES.map((s) => [s.id, { total: 0, done: 0, mastered: 0 }]));
-    // 핵심 단어를 한 번만 훑으며 전체·파일별 진척을 함께 센다
-    for (const w of CORE) {
+    const sources = quizSources(exam);
+    const per = new Map(sources.map((s) => [s.id, { total: 0, done: 0, mastered: 0 }]));
+    // 단어를 한 번만 훑으며 전체·파일별 진척을 함께 센다
+    for (const w of core) {
       const st = statusOf(cards[w.id]);
       count[st]++;
-      for (const src of w.sources) {
+      for (const src of Object.keys((exam && w.occ[exam]) || {})) {
         const p = per.get(src);
         if (!p) continue;
         p.total++;
@@ -50,9 +59,9 @@ export default function Today() {
         if (st === 'mastered') p.mastered++;
       }
     }
-    const bySource = QUIZ_SOURCES.map((s) => ({ ...s, ...per.get(s.id)! })).filter((s) => s.total >= 10);
-    return { total: CORE.length, ...count, bySource };
-  }, [cards]);
+    const bySource = sources.map((s) => ({ ...s, ...per.get(s.id)! })).filter((s) => s.total > 0);
+    return { total: core.length, ...count, bySource };
+  }, [cards, core, exam]);
 
   const week = useMemo(() => {
     const out: { key: string; label: string; n: number }[] = [];
@@ -79,7 +88,7 @@ export default function Today() {
       danger: true,
       onPress: () =>
         wrongN
-          ? router.push(sessionHref('flash', { ...DEFAULT_SCOPE, set: 'wrong', status: 'any', count: 0, order: 'random', includeBasic: true }) as never)
+          ? router.push(sessionHref('flash', { ...DEFAULT_SCOPE, set: 'wrong', status: 'any', count: 0, order: 'random', minLevel: 1 }) as never)
           : router.push('/wrong'),
     },
   ];
@@ -115,13 +124,20 @@ export default function Today() {
         </PressableScale>
       </LinearGradient>
 
-      {/* 핵심 단어 진척 */}
+      {/* 주 시험 단어 진척 */}
       <Card style={styles.progress}>
         <ProgressRing pct={progress.total ? studied / progress.total : 0} color={c.success}>
           <CountUp to={progress.total ? Math.round((studied / progress.total) * 100) : 0} duration={800} suffix="%" style={[type.headline, { color: c.text }]} />
         </ProgressRing>
         <View style={{ gap: 4, flex: 1 }}>
-          <T v="headline">핵심 단어 {progress.total.toLocaleString()}개</T>
+          <T v="headline">
+            {exam ? `${examName(exam)} ` : ''}단어 {progress.total.toLocaleString()}개
+          </T>
+          {minLevel > 1 && (
+            <T v="caption" color="muted">
+              {minLevel}단계 이상
+            </T>
+          )}
           <Legend color={c.success} label={`익힘 ${progress.mastered}`} />
           <Legend color={c.warning} label={`학습 중 ${progress.learning}`} />
           <Legend color={c.separator} label={`새 단어 ${progress.new.toLocaleString()}`} />
@@ -176,7 +192,7 @@ export default function Today() {
         {filesOpen && (
           <View style={{ gap: 12, marginTop: 14 }}>
             {progress.bySource.map((s) => (
-              <Pressable key={s.id} onPress={() => router.push({ pathname: '/words', params: { src: s.id } })}>
+              <Pressable key={s.id} onPress={() => router.push({ pathname: '/words', params: { cat: exam ?? '', src: s.id } })}>
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 5 }}>
                   <T v="footnote" color="text2">
                     {s.name}

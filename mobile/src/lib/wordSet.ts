@@ -7,10 +7,9 @@
 import { File, Paths } from 'expo-file-system';
 import * as Updates from 'expo-updates';
 import { DevSettings, Platform } from 'react-native';
-import { BUNDLED_BUILT_AT, loadBundledCorpus, loadBundledSources, loadBundledWords } from '@/generated/wordFiles';
-import type { CorpusSentence } from '@shared/corpus';
+import { BUNDLED_BUILT_AT, loadBundledExams, loadBundledWords } from '@/generated/wordFiles';
+import type { ExamData } from '@shared/exams';
 import type { RawWord } from '@shared/normalize';
-import type { SourceInfo } from '@shared/schema';
 import { parseWordSet, type WordSetFile } from '@shared/wordset';
 import { useProgress } from '@/store/progress';
 
@@ -26,9 +25,10 @@ export interface WordSetInfo {
 }
 
 export interface ActiveWordSet {
+  /** 공통 사전 */
   words: RawWord[];
-  corpus: CorpusSentence[];
-  sources: SourceInfo[];
+  /** 시험별 데이터 (문제 파일·횟수·예문·문장·노트) */
+  exams: ExamData[];
   info: WordSetInfo;
 }
 
@@ -48,8 +48,7 @@ export function loadActiveWordSet(): ActiveWordSet {
         const set = parseWordSet(JSON.parse(file.textSync()));
         return {
           words: set.words,
-          corpus: set.corpus,
-          sources: set.sources,
+          exams: set.exams,
           info: { origin: 'imported', builtAt: set.builtAt, bundledBuiltAt: BUNDLED_BUILT_AT },
         };
       }
@@ -59,8 +58,7 @@ export function loadActiveWordSet(): ActiveWordSet {
   }
   return {
     words: loadBundledWords(),
-    corpus: loadBundledCorpus(),
-    sources: loadBundledSources(),
+    exams: loadBundledExams(),
     info: { origin: 'bundled', builtAt: BUNDLED_BUILT_AT, bundledBuiltAt: BUNDLED_BUILT_AT, ...(error ? { error } : {}) },
   };
 }
