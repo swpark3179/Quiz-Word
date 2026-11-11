@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { buildContextQuestion, buildMeaningQuestion, pickDistractors } from '../distractors';
-import { answer, createQueue, currentId, isFinished, summary } from '../flashQueue';
+import { answer, createQueue, currentId, isFinished, split, summary } from '../flashQueue';
 import { normalizeWord, shortFromMeaning } from '../normalize';
 import type { Word } from '../schema';
 import { filterScope, notebookScope, scopeFromParams, scopeToParams, selectWords } from '../scope';
@@ -141,6 +141,22 @@ describe('flashQueue', () => {
     q = answer(q, true);
     expect(isFinished(q)).toBe(true);
     expect(q.first.a).toBe(false);
+  });
+
+  it('하다 만 지점에서 나누기 — 진행 막대 숫자와 같고, 모른 카드는 남은 쪽', () => {
+    const ids = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+    let q = createQueue(ids);
+    q = answer(q, true); // a 앎
+    q = answer(q, false, () => 0); // b 모름 → 다시 나올 차례
+    q = answer(q, true); // c 앎
+    q = answer(q, true); // d 앎
+    const { done, left } = split(q);
+    expect(done).toEqual(['a', 'c', 'd']);
+    expect(done.length).toBe(q.done.length); // 막대의 "3 / 10"
+    expect(left).toContain('b');
+    expect(left[0]).toBe(currentId(q)); // 나올 순서 그대로
+    expect(new Set(left).size).toBe(left.length);
+    expect([...done, ...left].sort()).toEqual(ids);
   });
 });
 

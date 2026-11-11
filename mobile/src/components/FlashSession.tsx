@@ -4,7 +4,7 @@
  */
 import { router } from 'expo-router';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Alert, Pressable, ScrollView, StyleSheet, Text, View, type LayoutRectangle } from 'react-native';
+import { Alert, Pressable, ScrollView, StyleSheet, Text, View, type AlertButton, type LayoutRectangle } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, {
   FadeIn,
@@ -18,7 +18,8 @@ import Animated, {
   withSpring,
   withTiming,
 } from 'react-native-reanimated';
-import { answer, createQueue, currentId, isFinished, summary, type FlashQueue } from '@shared/flashQueue';
+import { answer, createQueue, currentId, isFinished, split, summary, type FlashQueue, type SplitPart } from '@shared/flashQueue';
+import { flashSourceName, flashSplitNotebookName } from '@shared/notebook';
 import type { Word } from '@shared/schema';
 import { CountUp, ProgressRing } from '@/components/motion';
 import { Button, Icon, PosBadge, PressableScale, ProgressBar, ScreenSafeArea, T } from '@/components/ui';
@@ -33,13 +34,17 @@ import { haptic } from '@/theme/haptics';
 export interface FlashSessionProps {
   ids: string[];
   title: string;
+  /** 어디서 시작했는지 (학습장 이름 등) — 그만할 때 만드는 학습장 이름 앞부분. 없으면 "플래시카드 11/11" */
+  source?: string;
   /** 판정을 확정할 때마다 (first = 이 세션에서 처음 본 카드인지) */
   onAnswer: (id: string, known: boolean, first: boolean) => void;
 }
 
 const THRESHOLD = 0.35;
 
-export function FlashSession({ ids, title, onAnswer }: FlashSessionProps) {
+const SPLIT_LABEL: Record<SplitPart, string> = { done: '진행한 단어', left: '남은 단어' };
+
+export function FlashSession({ ids, title, source, onAnswer }: FlashSessionProps) {
   const { c } = useTheme();
   const reduced = useReducedMotion();
   const settings = useProgress((s) => s.settings);
@@ -99,12 +104,33 @@ export function FlashSession({ ids, title, onAnswer }: FlashSessionProps) {
 
   const toggle = useCallback(() => setJudged((j) => (j === null ? j : !j)), []);
 
-  const exit = () => {
-    if (!queue.done.length && judged === null) return router.back();
-    Alert.alert('학습을 그만할까요?', '지금까지의 결과는 저장돼요.', [
-      { text: '계속하기', style: 'cancel' },
-      { text: '그만하기', style: 'destructive', onPress: () => router.back() },
-    ]);
+  /**
+   * 그만하기 — 진행한 단어 / 남은 단어를 각각 학습장으로 남길 수 있다.
+   * 하나를 만들면 확인창을 다시 띄워(만든 쪽 버튼은 빼고) 나머지도 만들거나 그만둘 수 있게 한다.
+   * (토스트는 이 전체 화면 모달 뒤에 가려져 보이지 않으므로 확인창 문구로 알린다)
+   */
+  const exit = (made: { part: SplitPart; name: string }[] = []) => {
+    if (!made.length && !queue.done.length && judged === null) return router.back();
+    const parts = split(queue);
+    const save = (part: SplitPart) => {
+      const name = flashSplitNotebookName(part, source ?? flashSourceName({ set: '' }, []));
+      useProgress.getState().createNotebook(name, parts[part]);
+      void haptic.success();
+      // 닫히는 확인창 위에 바로 띄우면 뜨지 않을 수 있어 잠깐 기다린다
+      setTimeout(() => exit([...made, { part, name }]), 350);
+    };
+    const buttons: AlertButton[] = (['done', 'left'] as const)
+      .filter((part) => parts[part].length > 0 && !made.some((m) => m.part === part))
+      .map((part) => ({ text: `${SPLIT_LABEL[part]} ${parts[part].length}개로 학습장 만들기`, onPress: () => save(part) }));
+    buttons.push({ text: '그만하기', style: 'destructive', onPress: () => router.back() }, { text: '계속하기', style: 'cancel' });
+    const last = made[made.length - 1];
+    Alert.alert(
+      last ? '학습장을 만들었어요' : '학습을 그만할까요?',
+      last
+        ? `'${last.name}' 학습장에 ${SPLIT_LABEL[last.part]}를 담았어요.`
+        : '지금까지의 결과는 저장돼요.\n진행한 단어·남은 단어를 학습장으로 남겨 두면 나중에 이어서 볼 수 있어요.',
+      buttons,
+    );
   };
 
   const restartWith = (list: string[]) => {
@@ -124,7 +150,7 @@ export function FlashSession({ ids, title, onAnswer }: FlashSessionProps) {
     <ScreenSafeArea style={{ backgroundColor: c.bg }}>
       {/* 상단 막대 */}
       <View style={styles.bar}>
-        <Pressable onPress={exit} hitSlop={10} style={[styles.close, { backgroundColor: c.surface2 }]} accessibilityLabel="닫기">
+        <Pressable onPress={() => exit()} hitSlop={10} style={[styles.close, { backgroundColor: c.surface2 }]} accessibilityLabel="닫기">
           <Icon name="xmark" size={14} color={c.text2} />
         </Pressable>
         <ProgressBar value={queue.done.length} max={total} style={{ flex: 1 }} />

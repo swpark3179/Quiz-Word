@@ -1,6 +1,7 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { useCallback, useState } from 'react';
 import { View } from 'react-native';
+import { flashSourceName } from '@shared/notebook';
 import { selectWords } from '@shared/scope';
 import { FlashSession } from '@/components/FlashSession';
 import { Button, Empty } from '@/components/ui';
@@ -13,11 +14,13 @@ export default function FlashScreen() {
   const { c } = useTheme();
   const params = useLocalSearchParams();
   const record = useProgress((s) => s.record);
-  const [ids] = useState<string[]>(() => {
+  // source: 그만할 때 만드는 학습장 이름 앞부분 (어디서 시작했는지)
+  const [{ ids, source }] = useState<{ ids: string[]; source?: string }>(() => {
     const explicit = typeof params.ids === 'string' ? params.ids : '';
-    if (explicit) return explicit.split(',').filter((id) => WORD_BY_ID.has(id));
+    if (explicit) return { ids: explicit.split(',').filter((id) => WORD_BY_ID.has(id)) };
     const { cards, wrong, notebooks } = useProgress.getState();
-    return selectWords(WORDS, scopeFromRoute(params), { cards, wrong, notebooks }).map((w) => w.id);
+    const scope = scopeFromRoute(params);
+    return { ids: selectWords(WORDS, scope, { cards, wrong, notebooks }).map((w) => w.id), source: flashSourceName(scope, notebooks) };
   });
 
   // SRS·통계에는 이 세션의 첫 판정만 반영한다
@@ -32,5 +35,5 @@ export default function FlashScreen() {
       </View>
     );
   }
-  return <FlashSession ids={ids} title="플래시카드" onAnswer={onAnswer} />;
+  return <FlashSession ids={ids} title="플래시카드" source={source} onAnswer={onAnswer} />;
 }

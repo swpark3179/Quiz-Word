@@ -42,6 +42,16 @@ export function answer(q: FlashQueue, known: boolean, rng: () => number = Math.r
   return { ...q, order, first, misses: { ...q.misses, [id]: misses }, shown: q.shown + 1 };
 }
 
+export type SplitPart = 'done' | 'left';
+
+/**
+ * 하다 만 지점에서 나누기 — 진행 막대의 "40 / 453" 과 같은 기준.
+ * done: "안다" 로 통과한 카드 (막대의 숫자), left: 남은 카드 — 아직 안 본 카드와 "모른다" 로 다시 나올 카드. 둘 다 순서 유지
+ */
+export function split(q: FlashQueue): Record<SplitPart, string[]> {
+  return { done: [...q.done], left: [...new Set(q.order)] };
+}
+
 export function summary(q: FlashQueue) {
   const ids = Object.keys(q.first);
   const unknown = ids.filter((id) => !q.first[id]);

@@ -7,8 +7,9 @@ import { ProgressBar } from './ui';
 /**
  * 그만하기 — 한 장이라도 답했으면 실수로 나가지 않게 한 번 묻는다.
  * (답한 결과는 그때그때 저장되므로 잃는 것은 남은 카드 순서뿐이다)
+ * extra: 확인창 설명 아래에 붙일 내용 (플래시카드의 "학습장으로 남기기")
  */
-export function useExitGuard(onExit: () => void, hasProgress: boolean) {
+export function useExitGuard(onExit: () => void, hasProgress: boolean, extra?: ReactNode) {
   const [asking, setAsking] = useState(false);
   const requestExit = useCallback(() => {
     if (hasProgress) setAsking(true);
@@ -18,7 +19,12 @@ export function useExitGuard(onExit: () => void, hasProgress: boolean) {
     <ConfirmDialog
       open={asking}
       title="학습을 그만할까요?"
-      desc="지금까지 답한 결과는 저장돼 있어요. 남은 단어는 다음에 다시 나옵니다."
+      desc={
+        <>
+          지금까지 답한 결과는 저장돼 있어요. 남은 단어는 다음에 다시 나옵니다.
+          {extra}
+        </>
+      }
       confirmLabel="그만하기"
       cancelLabel="계속하기"
       onConfirm={() => {

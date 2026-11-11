@@ -29,6 +29,32 @@ export function wrongNotebookName(date: Date = new Date()): string {
   return `오답노트 ${date.getMonth() + 1}/${date.getDate()}`;
 }
 
+/** 학습장 이름 최대 길이 */
+export const NOTEBOOK_NAME_MAX = 40;
+
+/**
+ * 플래시카드를 어디서 시작했는지 — 하다 만 단어로 만드는 학습장 이름의 앞부분.
+ * 학습장에서 시작했으면 그 이름, 오답노트면 "오답노트 11/11", 그 밖에는 "플래시카드 11/11"
+ */
+export function flashSourceName(
+  scope: { set: string; notebook?: string },
+  notebooks: { id: string; name: string }[],
+  date: Date = new Date(),
+): string {
+  if (scope.set === 'notebook') {
+    const nb = notebooks.find((n) => n.id === scope.notebook);
+    if (nb) return nb.name;
+  }
+  if (scope.set === 'wrong') return wrongNotebookName(date);
+  return `플래시카드 ${date.getMonth() + 1}/${date.getDate()}`;
+}
+
+/** 하다 만 플래시카드를 나눠 만드는 학습장 이름 — "오답노트 11/11 · 남은 단어". 길면 앞부분을 줄여 뒷말이 남게 한다 */
+export function flashSplitNotebookName(part: 'done' | 'left', source: string): string {
+  const suffix = part === 'done' ? ' · 진행한 단어' : ' · 남은 단어';
+  return (source.trim() || '플래시카드').slice(0, NOTEBOOK_NAME_MAX - suffix.length).trimEnd() + suffix;
+}
+
 /** 중복 없이 (처음 나온 순서 유지) */
 export const uniqueIds = (ids: string[]) => [...new Set(ids)];
 
@@ -58,7 +84,7 @@ export function sanitizeNotebooks(raw: unknown): Notebook[] {
 
 /** 이름 입력값 정리 — 비우면 기본 이름 */
 export function cleanNotebookName(name: string, fallback: string): string {
-  return name.trim().slice(0, 40) || fallback;
+  return name.trim().slice(0, NOTEBOOK_NAME_MAX) || fallback;
 }
 
 /** 오답노트 단어 id — 많이 틀린 순(같으면 최근 순), 오답노트 화면의 기본 순서. known 으로 지금 데이터에 있는 단어만 남긴다 */
