@@ -124,7 +124,7 @@ async function main() {
   await page.goto(`${BASE}/flash`);
   await page.waitForSelector('button:has-text("시작하기")');
   /\d+장 시작하기/.test((await page.locator('button:has-text("시작하기")').textContent()) ?? '') ? ok('시작 버튼에 카드 수 표시') : fail('시작 버튼에 카드 수가 없음');
-  await page.goto(`${BASE}/flash/play?set=all&basic=1&status=any&count=6&order=freq`);
+  await page.goto(`${BASE}/flash/play?set=all&lv=1&status=any&count=6&order=freq`);
   await page.waitForSelector('button:has-text("모른다")');
   await shot(page, '04-flash-front');
   const first = (await page.locator('.text-5xl, .text-6xl').first().textContent())?.trim();
@@ -159,7 +159,7 @@ async function main() {
   await shot(page, '06-flash-summary');
 
   // 객관식
-  await page.goto(`${BASE}/quiz/play?set=core&basic=0&status=any&count=5&order=freq&mode=meaning`);
+  await page.goto(`${BASE}/quiz/play?set=exam&cat=ccar-f&lv=2&status=any&count=5&order=freq&mode=meaning`);
   await page.waitForSelector('text=보기 선택');
   await shot(page, '07-quiz');
   for (let i = 0; i < 5; i++) {
@@ -179,7 +179,7 @@ async function main() {
   await shot(page, '09-quiz-result');
 
   // 문맥 뜻 모드
-  await page.goto(`${BASE}/quiz/play?set=core&basic=0&status=any&count=3&order=freq&mode=context`);
+  await page.goto(`${BASE}/quiz/play?set=exam&cat=ccar-f&file=mock04&lv=2&status=any&count=3&order=freq&mode=context`);
   await page.waitForSelector('text=의 뜻은?');
   ok('문맥 뜻 문제');
   await shot(page, '10-quiz-context');
