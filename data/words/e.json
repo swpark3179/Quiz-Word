@@ -98,7 +98,12 @@
       "boundary",
       "margin"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "고대 영어 ecg (칼날, 모서리)",
+      "story": "칼날(ecg)의 날 선 끝처럼 물건이 끝나는 맨 끝 선 → 가장자리, 끝",
+      "hook": "엣지 → '엣지 있다'(날이 서 있다), 화면 '엣지' → 가장자리"
+    }
   },
   {
     "id": "edge-case",
@@ -123,7 +128,20 @@
     "synonyms": [
       "corner case"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "edge",
+          "ko": "가장자리, 경계"
+        },
+        {
+          "part": "case",
+          "ko": "경우"
+        }
+      ],
+      "story": "정상 범위의 맨 가장자리(edge)에서나 생기는 드문 경우(case) → 엣지 케이스"
+    }
   },
   {
     "id": "edit",
@@ -156,7 +174,27 @@
       "revise",
       "change"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "e-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "dit",
+          "ko": "내놓다, 주다"
+        }
+      ],
+      "origin": "라틴어 edere (밖으로 내놓다, 펴내다)",
+      "story": "글을 세상 밖으로(e) 내놓기(dit) 전에 손본다 → 편집하다, 수정하다, 수정 (사항)",
+      "family": [
+        "edition",
+        "editor",
+        "tradition",
+        "add"
+      ]
+    }
   },
   {
     "id": "editor",
@@ -181,7 +219,31 @@
     "forms": [
       "editors"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "e-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "dit",
+          "ko": "내놓다, 주다"
+        },
+        {
+          "part": "-or",
+          "ko": "~하는 사람, 것"
+        }
+      ],
+      "origin": "라틴어 editor (펴내는 사람)",
+      "story": "글을 다듬어 밖으로(e) 내놓는(dit) 사람·도구(or) → 편집자, 편집기",
+      "hook": "에디터 → 잡지 '에디터', 코드 '에디터' → 편집자, 편집기",
+      "family": [
+        "edit",
+        "edition",
+        "editorial"
+      ]
+    }
   },
   {
     "id": "effect",
@@ -215,7 +277,28 @@
       "influence",
       "result"
     ],
-    "domain": "원인·결과·영향"
+    "domain": "원인·결과·영향",
+    "memory": {
+      "roots": [
+        {
+          "part": "ef-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "fect",
+          "ko": "만들다"
+        }
+      ],
+      "origin": "라틴어 effectus (이루어 낸 것)",
+      "story": "원인이 밖으로(ef) 만들어(fect) 낸 결과 → 효과, 영향, 현상",
+      "hook": "이펙트 → 영상 '이펙트'(특수 효과) → 효과",
+      "family": [
+        "affect",
+        "perfect",
+        "infect",
+        "factory"
+      ]
+    }
   },
   {
     "id": "effective",
@@ -249,7 +332,30 @@
       "efficacious",
       "productive"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "ef-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "fect",
+          "ko": "만들다"
+        },
+        {
+          "part": "-ive",
+          "ko": "~하는"
+        }
+      ],
+      "story": "실제로 결과를 밖으로(ef) 만들어(fect) 내는(ive) → 효과적인, 실제로 작동하는",
+      "family": [
+        "effect",
+        "efficient",
+        "defect",
+        "perfect"
+      ]
+    }
   },
   {
     "id": "efficiently",
@@ -274,7 +380,34 @@
     "synonyms": [
       "economically"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "ef-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "fic",
+          "ko": "만들다"
+        },
+        {
+          "part": "-ient",
+          "ko": "~하는"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "헛힘 없이 결과를 척척 만들어(fic) 내는(efficient) 식으로(ly) → 효율적으로",
+      "family": [
+        "efficiency",
+        "effect",
+        "sufficient",
+        "proficient"
+      ]
+    }
   },
   {
     "id": "effort",
@@ -303,7 +436,27 @@
       "exertion",
       "work"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "ef-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "fort",
+          "ko": "힘"
+        }
+      ],
+      "origin": "고대 프랑스어 esforz ← 라틴어 ex- + fortis (강한)",
+      "story": "힘(fort)을 밖으로(ef) 짜낸다, 모델이 답에 힘을 얼마나 쓸지 → 노력, 수고, effort 설정",
+      "family": [
+        "force",
+        "fort",
+        "comfort",
+        "fortify"
+      ]
+    }
   },
   {
     "id": "either",
@@ -336,7 +489,15 @@
         "ko": "(부정문 끝) ~도 역시"
       }
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "origin": "고대 영어 ǣgther (둘 가운데 각각)",
+      "story": "두 갈래 길 앞에서 이쪽이든 저쪽이든, either A or B → (둘 중) 어느 쪽이든",
+      "family": [
+        "neither",
+        "whether"
+      ]
+    }
   },
   {
     "id": "elapsed",
@@ -417,7 +578,27 @@
     "synonyms": [
       "electrical"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "electr",
+          "ko": "호박(보석) → 전기"
+        },
+        {
+          "part": "-ic",
+          "ko": "~의"
+        }
+      ],
+      "origin": "그리스어 ēlektron (호박) → 근대 라틴어 electricus",
+      "story": "호박(electr)을 문지르면 정전기가 이는 데서 → 전기의 · 전기 오른 듯 → 짜릿한",
+      "family": [
+        "electron",
+        "electricity",
+        "electronic",
+        "electrode"
+      ]
+    }
   },
   {
     "id": "eligibility",
@@ -504,7 +685,29 @@
       "get rid of",
       "eradicate"
     ],
-    "domain": "삭제·제거"
+    "domain": "삭제·제거",
+    "memory": {
+      "roots": [
+        {
+          "part": "e-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "limin",
+          "ko": "문지방"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 eliminare (문지방 밖으로 내쫓다)",
+      "story": "문지방(limin) 밖으로(e) 내쫓아 버린다 → 없애다, 제거하다",
+      "family": [
+        "preliminary",
+        "subliminal"
+      ]
+    }
   },
   {
     "id": "elsewhere",
@@ -525,7 +728,25 @@
     "synonyms": [
       "somewhere else"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "else",
+          "ko": "그 밖의"
+        },
+        {
+          "part": "where",
+          "ko": "곳"
+        }
+      ],
+      "story": "여기 말고 그 밖의(else) 어딘가(where) → 다른 곳에(서)",
+      "family": [
+        "somewhere",
+        "nowhere",
+        "anywhere"
+      ]
+    }
   },
   {
     "id": "email",
@@ -591,7 +812,25 @@
       "insert",
       "implant"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "roots": [
+        {
+          "part": "em-",
+          "ko": "안에"
+        },
+        {
+          "part": "bed",
+          "ko": "바닥, 자리"
+        }
+      ],
+      "story": "바위 바닥(bed) 속에(em) 박힌 화석처럼 단단히 박아 넣는다 → 끼워 넣다, 심어 두다",
+      "family": [
+        "bed",
+        "bedrock",
+        "seabed"
+      ]
+    }
   },
   {
     "id": "emerge",
@@ -779,7 +1018,31 @@
       "staff member",
       "worker"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "em-",
+          "ko": "안으로"
+        },
+        {
+          "part": "ploy",
+          "ko": "접다, 끌어들이다(plicare)"
+        },
+        {
+          "part": "-ee",
+          "ko": "~받는 사람"
+        }
+      ],
+      "origin": "라틴어 implicare (안으로 접어 넣다) → 프랑스어 employer",
+      "story": "일 안으로(em) 끌어들여져(ploy) 쓰이는 사람(ee) → 직원, 종업원",
+      "family": [
+        "employ",
+        "employer",
+        "imply",
+        "deploy"
+      ]
+    }
   },
   {
     "id": "empty",
@@ -848,7 +1111,25 @@
       "turn on",
       "allow"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "en-",
+          "ko": "~하게 만들다"
+        },
+        {
+          "part": "able",
+          "ko": "할 수 있는"
+        }
+      ],
+      "story": "할 수 있게(able) 만들어(en) 준다 → 켜다, 활성화하다, ~할 수 있게 하다",
+      "family": [
+        "disable",
+        "ability",
+        "unable"
+      ]
+    }
   },
   {
     "id": "encode",
@@ -879,7 +1160,27 @@
       "codify",
       "record"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "en-",
+          "ko": "안에 넣다"
+        },
+        {
+          "part": "code",
+          "ko": "부호, 규약"
+        }
+      ],
+      "story": "규칙·내용을 코드(code) 안에(en) 넣어 둔다 → 담아 두다, 부호화하다",
+      "hook": "인코드 → 영상 '인코딩'할 때의 그 인코드 → 부호화하다",
+      "family": [
+        "decode",
+        "code",
+        "codec",
+        "codify"
+      ]
+    }
   },
   {
     "id": "encounter",
@@ -961,7 +1262,26 @@
       "encipher",
       "encode"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "en-",
+          "ko": "안에 넣다"
+        },
+        {
+          "part": "crypt",
+          "ko": "숨겨진(그리스어 kryptos)"
+        }
+      ],
+      "story": "내용을 숨겨진(crypt) 상태 안에(en) 넣어 남이 못 읽게 한다 → 암호화하다",
+      "family": [
+        "decrypt",
+        "cryptic",
+        "crypto",
+        "cryptography"
+      ]
+    }
   },
   {
     "id": "end",
@@ -1031,7 +1351,20 @@
     "synonyms": [
       "overall"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "end",
+          "ko": "끝"
+        },
+        {
+          "part": "to",
+          "ko": "~까지"
+        }
+      ],
+      "story": "이쪽 끝(end)에서 저쪽 끝(end)까지(to) 빠짐없이 → 처음부터 끝까지의, 전 과정의"
+    }
   },
   {
     "id": "endpoint",
@@ -1056,7 +1389,25 @@
     "forms": [
       "endpoints"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "end",
+          "ko": "끝"
+        },
+        {
+          "part": "point",
+          "ko": "지점"
+        }
+      ],
+      "story": "요청이 마지막에(end) 가 닿는 지점(point) → 엔드포인트, 끝점",
+      "family": [
+        "checkpoint",
+        "viewpoint",
+        "endless"
+      ]
+    }
   },
   {
     "id": "enforce",
@@ -1147,7 +1498,27 @@
       "developer",
       "technician"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "engin",
+          "ko": "재주, 고안한 장치"
+        },
+        {
+          "part": "-eer",
+          "ko": "~을 다루는 사람"
+        }
+      ],
+      "origin": "라틴어 ingenium (타고난 재주, 고안물)",
+      "story": "재주(engin)로 장치를 고안해 다루는 사람(eer) → 엔지니어, 기술자, (교묘하게) 설계하다",
+      "family": [
+        "engine",
+        "ingenious",
+        "genius",
+        "ingenuity"
+      ]
+    }
   },
   {
     "id": "enhance",
@@ -1180,7 +1551,26 @@
       "strengthen",
       "boost"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "en-",
+          "ko": "~하게 만들다"
+        },
+        {
+          "part": "hance",
+          "ko": "높은(프랑스어 haut)"
+        }
+      ],
+      "origin": "고대 프랑스어 enhaucier (높이 올리다)",
+      "story": "더 높게(hance) 만든다(en) → 높이다, 강화하다",
+      "family": [
+        "haughty",
+        "altitude",
+        "exalt"
+      ]
+    }
   },
   {
     "id": "enlarge",
@@ -1417,7 +1807,28 @@
       "business",
       "corporation"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "enter",
+          "ko": "사이에(프랑스어 entre)"
+        },
+        {
+          "part": "prise",
+          "ko": "잡다"
+        }
+      ],
+      "origin": "고대 프랑스어 entreprendre (떠맡다)",
+      "story": "큰일을 두 손 사이에(enter) 움켜쥐고(prise) 떠맡는다 → 사업, 기업",
+      "hook": "엔터프라이즈 → '엔터프라이즈 요금제'는 기업용 → 기업",
+      "family": [
+        "entrepreneur",
+        "surprise",
+        "comprise",
+        "prison"
+      ]
+    }
   },
   {
     "id": "entire",
@@ -1447,7 +1858,17 @@
       "complete",
       "full"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "라틴어 integer (손대지 않은, 온전한)",
+      "story": "아무도 손대지 않아 한 조각도 빠지지 않은 → 전체의, 온",
+      "family": [
+        "integer",
+        "integrate",
+        "integrity",
+        "intact"
+      ]
+    }
   },
   {
     "id": "entity",
@@ -1475,7 +1896,26 @@
     "synonyms": [
       "object"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "ent",
+          "ko": "있는 것(라틴어 ens)"
+        },
+        {
+          "part": "-ity",
+          "ko": "~인 것"
+        }
+      ],
+      "origin": "중세 라틴어 entitas ← esse (있다)",
+      "story": "실제로 있는(ent) 것(ity), 데이터로 다루는 대상 하나 → 엔티티, 개체",
+      "family": [
+        "essence",
+        "absent",
+        "present"
+      ]
+    }
   },
   {
     "id": "entry",
@@ -1554,7 +1994,25 @@
     "synonyms": [
       "entry point"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "entry",
+          "ko": "들어감, 입구"
+        },
+        {
+          "part": "point",
+          "ko": "지점"
+        }
+      ],
+      "story": "실행 흐름이 처음 들어서는(entry) 지점(point) → 진입점",
+      "family": [
+        "endpoint",
+        "checkpoint",
+        "entrance"
+      ]
+    }
   },
   {
     "id": "enum",
@@ -1578,7 +2036,11 @@
     "synonyms": [
       "enumeration"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "enumeration (열거)의 줄임말",
+      "story": "허용되는 값을 하나하나 열거(enumeration)해 둔 타입 → 열거형"
+    }
   },
   {
     "id": "enumerate",
@@ -1610,7 +2072,30 @@
       "list",
       "itemize"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "e-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "numer",
+          "ko": "수"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 enumerare (하나하나 세다)",
+      "story": "하나씩 번호(numer)를 매겨 밖으로(e) 꺼내 놓는다 → 열거하다, 나열하다",
+      "family": [
+        "number",
+        "numeral",
+        "numerous"
+      ]
+    }
   },
   {
     "id": "environment",
@@ -1644,7 +2129,29 @@
       "setting",
       "context"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "en-",
+          "ko": "안에"
+        },
+        {
+          "part": "viron",
+          "ko": "둘레, 원"
+        },
+        {
+          "part": "-ment",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "고대 프랑스어 environ (둘레에)",
+      "story": "둘레(viron) 안에(en) 빙 둘러싼 것(ment), 프로그램을 둘러싼 조건 → (실행) 환경",
+      "family": [
+        "environs",
+        "veer"
+      ]
+    }
   },
   {
     "id": "ephemeral",
@@ -1715,7 +2222,31 @@
       "evenly",
       "uniformly"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "equ",
+          "ko": "같은"
+        },
+        {
+          "part": "-al",
+          "ko": "~한"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "저울 양쪽이 같은(equal) 높이가 되게(ly) → 똑같이, 동등하게, 마찬가지로",
+      "hook": "이퀄리 → 등호 '이퀄(=)'처럼 양쪽을 같게 → 똑같이",
+      "family": [
+        "equation",
+        "equator",
+        "adequate",
+        "equivalent"
+      ]
+    }
   },
   {
     "id": "equip",
@@ -1748,7 +2279,17 @@
       "furnish",
       "outfit"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "origin": "고대 노르드어 skipa (배를 채비하다) → 프랑스어 équiper",
+      "story": "항해에 나서기 전 배(ship)에 필요한 장비를 싣는다 → (도구·기능을) 갖추게 하다",
+      "hook": "이큅 → 게임에서 장비를 '이큅(장착)'한다 → 갖추게 하다",
+      "family": [
+        "equipment",
+        "ship",
+        "skipper"
+      ]
+    }
   },
   {
     "id": "error",
@@ -1779,7 +2320,27 @@
       "fault",
       "bug"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "err",
+          "ko": "헤매다, 길을 잃다"
+        },
+        {
+          "part": "-or",
+          "ko": "~함"
+        }
+      ],
+      "origin": "라틴어 error (헤맴) ← errare (헤매다)",
+      "story": "바른 길에서 벗어나 헤맨(err) 것 → 오류, 실수",
+      "hook": "에러 → 화면에 뜨는 '에러' 그대로 → 오류",
+      "family": [
+        "err",
+        "erratic",
+        "erroneous"
+      ]
+    }
   },
   {
     "id": "error-handling",
@@ -1803,7 +2364,25 @@
     "synonyms": [
       "exception handling"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "error",
+          "ko": "오류"
+        },
+        {
+          "part": "handling",
+          "ko": "다루기, 처리"
+        }
+      ],
+      "story": "오류(error)가 났을 때 손(hand)으로 받아 내듯 다루는 방식(handling) → 오류 처리",
+      "family": [
+        "handle",
+        "handler",
+        "erroneous"
+      ]
+    }
   },
   {
     "id": "escalate",
@@ -1840,7 +2419,27 @@
       "hand off",
       "elevate"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "escal",
+          "ko": "사다리, 계단(라틴어 scala)"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "escalator (에스컬레이터)에서 거꾸로 만든 동사",
+      "story": "에스컬레이터를 태우듯 한 단계 위 담당자에게 올려 보낸다 → (상위로) 넘기다",
+      "hook": "에스컬레이트 → 에스컬레이터 타고 윗선으로 → 넘기다, 단계를 올리다",
+      "family": [
+        "escalator",
+        "scale",
+        "escalation"
+      ]
+    }
   },
   {
     "id": "escape",
@@ -1876,7 +2475,27 @@
       "flee",
       "evade"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "es-",
+          "ko": "밖으로(ex-)"
+        },
+        {
+          "part": "cape",
+          "ko": "망토"
+        }
+      ],
+      "origin": "후기 라틴어 excappare (망토를 벗고 빠져나가다)",
+      "story": "붙잡힌 망토(cape)만 남기고 밖으로(es) 빠져나간다 → 벗어나다, 이스케이프하다",
+      "hook": "이스케이프 → 키보드 Esc(이스케이프) 키로 빠져나간다 → 벗어나다",
+      "family": [
+        "cape",
+        "cap",
+        "escapade"
+      ]
+    }
   },
   {
     "id": "essentially",
@@ -1907,7 +2526,29 @@
       "virtually",
       "fundamentally"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "essent",
+          "ko": "본질(essence ← esse 있다)"
+        },
+        {
+          "part": "-ial",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "겉을 걷어 내고 본질(essence)만 놓고 보면(ly) → 본질적으로, 사실상",
+      "family": [
+        "essence",
+        "entity",
+        "quintessential"
+      ]
+    }
   },
   {
     "id": "establish",
@@ -2000,7 +2641,26 @@
       "approximate",
       "assess"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "estim",
+          "ko": "값을 매기다"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 aestimare (값을 매기다)",
+      "story": "재 보지 않고 대략 이쯤이라고 값을 매겨(estim) 본다 → 추정(하다), 어림(잡다)",
+      "family": [
+        "esteem",
+        "underestimate",
+        "overestimate"
+      ]
+    }
   },
   {
     "id": "evaluate",
@@ -2039,7 +2699,30 @@
       "judge",
       "appraise"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "e-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "valu",
+          "ko": "가치"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "프랑스어 évaluer (가치를 매기다)",
+      "story": "얼마나 좋은지 가치(valu)를 밖으로(e) 끌어내 매긴다 → 평가하다",
+      "family": [
+        "value",
+        "valid",
+        "valuable"
+      ]
+    }
   },
   {
     "id": "evaluator-optimizer",
@@ -2060,7 +2743,25 @@
     "forms": [
       "evaluator optimizer"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "evaluator",
+          "ko": "평가자"
+        },
+        {
+          "part": "optimizer",
+          "ko": "최적화자"
+        }
+      ],
+      "story": "한쪽이 만들고 평가자(evaluator)가 짚으면 다시 다듬기(optimizer)를 반복 → 평가자-최적화자 패턴",
+      "family": [
+        "evaluate",
+        "optimal",
+        "optimum"
+      ]
+    }
   },
   {
     "id": "even",
@@ -2123,7 +2824,28 @@
       "occurrence",
       "incident"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "e-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "vent",
+          "ko": "오다"
+        }
+      ],
+      "origin": "라틴어 eventus (일어난 일)",
+      "story": "밖으로(e) 나와(vent) 눈앞에 벌어진 일 → 사건, 행사, (시스템) 이벤트",
+      "hook": "이벤트 → '클릭 이벤트', 매장 '이벤트' → 일어난 일, 행사",
+      "family": [
+        "invent",
+        "prevent",
+        "venue",
+        "adventure"
+      ]
+    }
   },
   {
     "id": "eventually",
@@ -2149,7 +2871,34 @@
       "ultimately",
       "in the end"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "e-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "vent",
+          "ko": "오다"
+        },
+        {
+          "part": "-ual",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "돌고 돌아 끝내 결과가 밖으로(e) 나오게(vent) 되어 → 결국, 마침내",
+      "family": [
+        "event",
+        "advent",
+        "convention",
+        "prevent"
+      ]
+    }
   },
   {
     "id": "ever",
@@ -2229,7 +2978,31 @@
       "proof",
       "grounds"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "e-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "vid",
+          "ko": "보다"
+        },
+        {
+          "part": "-ence",
+          "ko": "~인 것"
+        }
+      ],
+      "origin": "라틴어 evidentia (뻔히 보임)",
+      "story": "밖으로(e) 훤히 보이는(vid) 것(ence) → 근거, 증거",
+      "family": [
+        "evident",
+        "video",
+        "vision",
+        "provide"
+      ]
+    }
   },
   {
     "id": "exact",
@@ -2263,7 +3036,26 @@
       "precise",
       "accurate"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "끝까지"
+        },
+        {
+          "part": "act",
+          "ko": "몰다, 하다"
+        }
+      ],
+      "origin": "라틴어 exigere (끝까지 몰다, 정밀히 재다) → exactus",
+      "story": "끝까지(ex) 몰아(act) 한 치 어긋남 없이 맞춘 → 정확한, 바로 그",
+      "family": [
+        "act",
+        "exam",
+        "agent"
+      ]
+    }
   },
   {
     "id": "examine",
@@ -2368,7 +3160,27 @@
       "go over",
       "top"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "ceed",
+          "ko": "가다"
+        }
+      ],
+      "origin": "라틴어 excedere (넘어가다)",
+      "story": "정해진 선 밖으로(ex) 넘어간다(ceed) → 넘다, 초과하다",
+      "family": [
+        "proceed",
+        "succeed",
+        "excess",
+        "recede"
+      ]
+    }
   },
   {
     "id": "excerpt",
@@ -2440,7 +3252,30 @@
       "inordinate",
       "extreme"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "cess",
+          "ko": "가다"
+        },
+        {
+          "part": "-ive",
+          "ko": "~한"
+        }
+      ],
+      "story": "적당한 선 밖으로(ex) 넘어가(cess) 버린(ive) → 지나친, 과도한",
+      "family": [
+        "exceed",
+        "excess",
+        "access",
+        "process"
+      ]
+    }
   },
   {
     "id": "exchange",
@@ -2476,7 +3311,27 @@
       "swap",
       "trade"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로, 내주고"
+        },
+        {
+          "part": "change",
+          "ko": "바꾸다"
+        }
+      ],
+      "origin": "고대 프랑스어 eschangier (맞바꾸다)",
+      "story": "내 것을 내주고(ex) 네 것과 바꾼다(change), 말도 한 번씩 오간다 → 교환, 주고받기",
+      "hook": "익스체인지 → 공항 '머니 익스체인지'(환전소) → 교환",
+      "family": [
+        "change",
+        "interchange",
+        "changeover"
+      ]
+    }
   },
   {
     "id": "exclude",
@@ -2510,7 +3365,27 @@
       "leave out",
       "rule out"
     ],
-    "domain": "삭제·제거"
+    "domain": "삭제·제거",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "clude",
+          "ko": "닫다"
+        }
+      ],
+      "origin": "라틴어 excludere (밖에 두고 닫다)",
+      "story": "밖에(ex) 세워 두고 문을 닫는다(clude) → 제외하다, 빼다",
+      "family": [
+        "include",
+        "conclude",
+        "close",
+        "exclusive"
+      ]
+    }
   },
   {
     "id": "exclusively",
@@ -2533,7 +3408,34 @@
       "only",
       "entirely"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "clus",
+          "ko": "닫다"
+        },
+        {
+          "part": "-ive",
+          "ko": "~하는"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "나머지는 밖에(ex) 두고 문을 닫아(clus) 이것 하나만으로(ly) → 오로지, ~만",
+      "family": [
+        "exclude",
+        "include",
+        "close",
+        "seclusion"
+      ]
+    }
   },
   {
     "id": "execute",
@@ -2571,7 +3473,27 @@
       "carry out",
       "perform"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "끝까지"
+        },
+        {
+          "part": "ecute",
+          "ko": "따라가다(sequi)"
+        }
+      ],
+      "origin": "라틴어 exsequi (끝까지 따라가다)",
+      "story": "지시를 끝까지(ex) 따라가(ecute) 그대로 해낸다 → 실행하다",
+      "family": [
+        "sequence",
+        "consecutive",
+        "executive",
+        "prosecute"
+      ]
+    }
   },
   {
     "id": "executive",
@@ -2656,7 +3578,31 @@
       "example",
       "template"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "empl",
+          "ko": "집다, 꺼내다"
+        },
+        {
+          "part": "-ar",
+          "ko": "~인 것"
+        }
+      ],
+      "origin": "라틴어 exemplar (본보기) ← eximere (꺼내다)",
+      "story": "여럿 가운데 밖으로(ex) 집어낸(empl) 견본 → 본보기, 모범 예시",
+      "family": [
+        "example",
+        "sample",
+        "exemplify",
+        "exempt"
+      ]
+    }
   },
   {
     "id": "exempt",
@@ -2734,7 +3680,29 @@
       "leak",
       "leakage"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "filtr",
+          "ko": "스며 지나가다(filter)"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하는 일"
+        }
+      ],
+      "story": "침투(infiltration)의 반대, 밖으로(ex) 몰래 스며 나가게(filtr) 빼낸다 → (데이터) 유출",
+      "family": [
+        "infiltration",
+        "infiltrate",
+        "filter"
+      ]
+    }
   },
   {
     "id": "exhaust",
@@ -2821,7 +3789,27 @@
     "synonyms": [
       "be present"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "ist",
+          "ko": "서다(sistere)"
+        }
+      ],
+      "origin": "라틴어 exsistere (밖으로 나와 서다)",
+      "story": "밖으로(ex) 나와 서(ist) 있어 눈에 보인다 → 존재하다, 있다",
+      "family": [
+        "insist",
+        "resist",
+        "consist",
+        "assist"
+      ]
+    }
   },
   {
     "id": "exit",
@@ -2858,7 +3846,27 @@
       "terminate",
       "leave"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "it",
+          "ko": "가다"
+        }
+      ],
+      "origin": "라틴어 exire (밖으로 나가다)",
+      "story": "밖으로(ex) 나간다(it), 프로그램이 할 일을 마치고 나간다 → 종료하다, 종료",
+      "hook": "엑시트 → 비상구 초록 표지판 'EXIT' → 나가다, 종료",
+      "family": [
+        "transit",
+        "initial",
+        "circuit"
+      ]
+    }
   },
   {
     "id": "expand",
@@ -2896,7 +3904,26 @@
       "widen",
       "elaborate"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "pand",
+          "ko": "펼치다"
+        }
+      ],
+      "origin": "라틴어 expandere (펼쳐 넓히다)",
+      "story": "접힌 것을 밖으로(ex) 활짝 펼친다(pand) → 넓히다, 확장하다, 늘리다",
+      "family": [
+        "expanse",
+        "expansive",
+        "spawn"
+      ]
+    }
   },
   {
     "id": "expect",
@@ -2937,7 +3964,27 @@
       "anticipate",
       "require"
     ],
-    "domain": "계획·목표·전략"
+    "domain": "계획·목표·전략",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "pect",
+          "ko": "보다(spectare)"
+        }
+      ],
+      "origin": "라틴어 exspectare (밖을 내다보며 기다리다)",
+      "story": "올 것을 밖을(ex) 내다보며(pect) 기다린다 → 예상하다, (입력을) 받도록 되어 있다",
+      "family": [
+        "inspect",
+        "respect",
+        "spectator",
+        "prospect"
+      ]
+    }
   },
   {
     "id": "expense",
@@ -3097,7 +4144,27 @@
       "lapse",
       "run out"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "pire",
+          "ko": "숨 쉬다(spirare)"
+        }
+      ],
+      "origin": "라틴어 exspirare (숨을 내쉬다, 숨이 다하다)",
+      "story": "마지막 숨(pire)을 밖으로(ex) 내쉬고 수명이 끝난다 → 만료되다",
+      "family": [
+        "inspire",
+        "spirit",
+        "respiration",
+        "conspire"
+      ]
+    }
   },
   {
     "id": "explain",
@@ -3129,7 +4196,26 @@
       "clarify",
       "account for"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "쫙, 완전히"
+        },
+        {
+          "part": "plain",
+          "ko": "평평한"
+        }
+      ],
+      "origin": "라틴어 explanare (평평하게 펴다)",
+      "story": "울퉁불퉁 꼬인 것을 평평하게(plain) 쫙(ex) 펴 보인다 → 설명하다, 이유를 밝혀 주다",
+      "family": [
+        "plain",
+        "plane",
+        "plan"
+      ]
+    }
   },
   {
     "id": "explanation",
@@ -3159,7 +4245,29 @@
       "clarification",
       "reason"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "쫙, 완전히"
+        },
+        {
+          "part": "plan",
+          "ko": "평평한"
+        },
+        {
+          "part": "-ation",
+          "ko": "~한 것"
+        }
+      ],
+      "story": "알기 쉽게 평평히(plan) 펴(ex) 놓은 말(ation) → 설명, 해명",
+      "family": [
+        "explain",
+        "plain",
+        "plane"
+      ]
+    }
   },
   {
     "id": "explanatory",
@@ -3233,7 +4341,31 @@
       "specific",
       "express"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "plic",
+          "ko": "접다"
+        },
+        {
+          "part": "-it",
+          "ko": "~된"
+        }
+      ],
+      "origin": "라틴어 explicitus (펼쳐진)",
+      "story": "접힌(plic) 것을 밖으로(ex) 펼쳐 숨김없이 드러낸 → 명시적인",
+      "family": [
+        "implicit",
+        "complicate",
+        "duplicate",
+        "explicate"
+      ]
+    }
   },
   {
     "id": "exploration",
@@ -3302,7 +4434,26 @@
       "examine",
       "probe"
     ],
-    "domain": "검색·조회"
+    "domain": "검색·조회",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "plore",
+          "ko": "외치다"
+        }
+      ],
+      "origin": "라틴어 explorare (정찰하다, 살피다)",
+      "story": "사냥꾼이 외치며(plore) 밖으로(ex) 나가 숲을 뒤진다 → 탐색하다, 두루 살펴보다",
+      "hook": "익스플로어 → 웹을 돌아다니던 '익스플로러' → 탐색하다",
+      "family": [
+        "deplore",
+        "implore"
+      ]
+    }
   },
   {
     "id": "exponential-backoff",
@@ -3382,7 +4533,27 @@
       "output",
       "send out"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "port",
+          "ko": "나르다"
+        }
+      ],
+      "origin": "라틴어 exportare (밖으로 실어 나르다)",
+      "story": "안에 있던 것을 밖으로(ex) 실어 나른다(port) → 내보내다, 수출하다",
+      "family": [
+        "import",
+        "transport",
+        "portable",
+        "support"
+      ]
+    }
   },
   {
     "id": "expose",
@@ -3580,7 +4751,27 @@
       "lengthen",
       "enlarge"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "tend",
+          "ko": "뻗다"
+        }
+      ],
+      "origin": "라틴어 extendere (밖으로 뻗다)",
+      "story": "밖으로(ex) 쭉 뻗어(tend) 더 길고 넓게 한다 → 확장하다, 늘리다",
+      "family": [
+        "tend",
+        "attend",
+        "intend",
+        "tension"
+      ]
+    }
   },
   {
     "id": "extended-thinking",
@@ -3598,7 +4789,25 @@
         "ko": "확장 사고(답하기 전 단계별 추론 기능)"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "extended",
+          "ko": "늘린, 확장된"
+        },
+        {
+          "part": "thinking",
+          "ko": "사고"
+        }
+      ],
+      "story": "답하기 전 생각(thinking)하는 과정을 길게 늘려(extended) 단계별로 추론한다 → 확장 사고",
+      "family": [
+        "extend",
+        "extension",
+        "rethink"
+      ]
+    }
   },
   {
     "id": "external",
@@ -3624,7 +4833,26 @@
       "outer",
       "third-party"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "extern",
+          "ko": "바깥(라틴어 externus)"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 externus (바깥의)",
+      "story": "울타리 바깥(extern) 쪽의(al) → 외부의, 바깥의",
+      "family": [
+        "exterior",
+        "extreme",
+        "extra"
+      ]
+    }
   },
   {
     "id": "extra",
@@ -3657,7 +4885,18 @@
       "further",
       "spare"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "라틴어 extra (바깥에, ~을 넘어서)",
+      "story": "정해진 몫 바깥(extra)에 더 얹은 것 → 추가의, 여분의, 추가분",
+      "hook": "엑스트라 → 주연 밖의 영화 '엑스트라', 치즈 '엑스트라' → 추가의",
+      "family": [
+        "extraordinary",
+        "external",
+        "extreme",
+        "exterior"
+      ]
+    }
   },
   {
     "id": "extract",
@@ -3697,7 +4936,27 @@
       "draw out",
       "retrieve"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "ex-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "tract",
+          "ko": "끌다"
+        }
+      ],
+      "origin": "라틴어 extrahere (끌어내다)",
+      "story": "필요한 것만 밖으로(ex) 끌어(tract) 낸다 → 뽑아내다, 추출하다",
+      "family": [
+        "attract",
+        "contract",
+        "tractor",
+        "subtract"
+      ]
+    }
   },
   {
     "id": "extremely",
@@ -3723,7 +4982,28 @@
       "highly",
       "exceedingly"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "extreme",
+          "ko": "가장 바깥의, 극단의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 extremus (가장 바깥의)",
+      "story": "가장 바깥(extreme) 끝까지 간 정도로(ly) → 극도로, 매우",
+      "hook": "익스트림리 → '익스트림 스포츠'처럼 극한까지 → 극도로",
+      "family": [
+        "extremity",
+        "exterior",
+        "external",
+        "extra"
+      ]
+    }
   },
   {
     "id": "eye",

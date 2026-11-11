@@ -179,7 +179,22 @@
       "caution",
       "notice"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "warn",
+          "ko": "조심시키다"
+        },
+        {
+          "part": "-ing",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "고대 영어 warnian (조심시키다)",
+      "story": "위험하니 조심하라고(warn) 미리 알리는 것(-ing) → 경고, 경고 메시지",
+      "hook": "워닝 → 화면에 뜨는 노란 '워닝' 메시지 → 경고"
+    }
   },
   {
     "id": "warrant",
@@ -334,7 +349,20 @@
     "forms": [
       "webhooks"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "web",
+          "ko": "웹"
+        },
+        {
+          "part": "hook",
+          "ko": "갈고리"
+        }
+      ],
+      "story": "웹(web) 주소에 걸어 둔 갈고리(hook), 이벤트가 걸리면 당겨서 알린다 → 웹훅"
+    }
   },
   {
     "id": "website",
@@ -433,7 +461,15 @@
       "consider",
       "evaluate"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "origin": "고대 영어 wegan (들어 올리다, 무게를 달다)",
+      "story": "양쪽을 저울에 올려(wegan) 어느 쪽이 무거운지 달아 본다 → 저울질하다, 비교 검토하다",
+      "family": [
+        "weight",
+        "outweigh"
+      ]
+    }
   },
   {
     "id": "weight",
@@ -459,7 +495,27 @@
       "weighted",
       "weights"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "weigh",
+          "ko": "무게를 달다"
+        },
+        {
+          "part": "-t",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "고대 영어 gewiht (무게) ← wegan (달다)",
+      "story": "저울에 달아(weigh) 나온 값(-t) → 무게 / 얼마나 무겁게 칠지 정한 값 → 가중치",
+      "hook": "웨이트 → '웨이트 트레이닝'은 무게를 드는 운동 → 무게, 가중치",
+      "family": [
+        "weigh",
+        "outweigh",
+        "lightweight"
+      ]
+    }
   },
   {
     "id": "well",
@@ -515,7 +571,20 @@
       "valid",
       "properly formatted"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "well",
+          "ko": "잘, 제대로"
+        },
+        {
+          "part": "formed",
+          "ko": "모양이 잡힌"
+        }
+      ],
+      "story": "규칙에 맞게 제대로(well) 모양이 잡힌(formed) → 형식이 올바른, 문법에 맞게 짜인"
+    }
   },
   {
     "id": "well-structured",
@@ -540,7 +609,20 @@
       "organized",
       "well-organized"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "well",
+          "ko": "잘, 제대로"
+        },
+        {
+          "part": "structured",
+          "ko": "짜인, 구조화된"
+        }
+      ],
+      "story": "뼈대가 제대로(well) 짜인(structured) → 구조가 잘 잡힌, 짜임새 있는"
+    }
   },
   {
     "id": "whatever",
@@ -566,7 +648,25 @@
     "synonyms": [
       "no matter what"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "what",
+          "ko": "무엇"
+        },
+        {
+          "part": "ever",
+          "ko": "언제든, ~든지"
+        }
+      ],
+      "story": "그것이 무엇(what)이든지(ever) 가리지 않고 → 무엇이든, 어떤 ~이든",
+      "family": [
+        "whenever",
+        "wherever",
+        "whichever"
+      ]
+    }
   },
   {
     "id": "whenever",
@@ -592,7 +692,25 @@
       "every time",
       "each time"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "when",
+          "ko": "~할 때"
+        },
+        {
+          "part": "ever",
+          "ko": "언제든, ~든지"
+        }
+      ],
+      "story": "그런 때(when)가 언제든(ever) 올 때마다 → ~할 때마다, ~하면 언제든",
+      "family": [
+        "whatever",
+        "wherever",
+        "whichever"
+      ]
+    }
   },
   {
     "id": "wherever",
@@ -617,7 +735,25 @@
     "synonyms": [
       "anywhere"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "where",
+          "ko": "~하는 곳"
+        },
+        {
+          "part": "ever",
+          "ko": "언제든, ~든지"
+        }
+      ],
+      "story": "그런 곳(where)이면 어디든지(ever) → ~하는 곳이면 어디서나",
+      "family": [
+        "whatever",
+        "whenever",
+        "whichever"
+      ]
+    }
   },
   {
     "id": "whether",
@@ -642,7 +778,15 @@
     "synonyms": [
       "if"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "origin": "고대 영어 hwæther (둘 중 어느 쪽)",
+      "story": "이쪽인가 저쪽인가, 둘 중 어느 쪽(hwæther)인가 → ~인지 (아닌지), ~이든 아니든",
+      "family": [
+        "either",
+        "neither"
+      ]
+    }
   },
   {
     "id": "whichever",
@@ -668,7 +812,25 @@
     "synonyms": [
       "any that"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "which",
+          "ko": "어느 것"
+        },
+        {
+          "part": "ever",
+          "ko": "언제든, ~든지"
+        }
+      ],
+      "story": "여럿 중 어느 것(which)을 고르든지(ever) → 어느 것이든, 어느 ~이든",
+      "family": [
+        "whatever",
+        "whenever",
+        "wherever"
+      ]
+    }
   },
   {
     "id": "while",
@@ -753,7 +915,11 @@
         "ko": "(의문) 누구의"
       }
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "origin": "고대 영어 hwæs (who 의 소유격)",
+      "story": "누구(who)의 것인지 묻거나, 앞에 나온 대상의 것임을 잇는 꼴 → 누구의, 그것의 ~가"
+    }
   },
   {
     "id": "wide",
@@ -810,7 +976,20 @@
       "popular",
       "common"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "widely",
+          "ko": "널리"
+        },
+        {
+          "part": "used",
+          "ko": "쓰이는"
+        }
+      ],
+      "story": "넓은(wide) 범위에서 두루 쓰이는(used) → 널리 쓰이는"
+    }
   },
   {
     "id": "widen",
@@ -1018,7 +1197,25 @@
     "synonyms": [
       "inside"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "with",
+          "ko": "~에 붙어, 곁에"
+        },
+        {
+          "part": "in",
+          "ko": "안"
+        }
+      ],
+      "origin": "고대 영어 withinnan (안쪽에)",
+      "story": "경계선에 붙어(with) 그 안쪽(in)에 머문다 → ~ 안에서, ~ 이내에",
+      "family": [
+        "without",
+        "withdraw"
+      ]
+    }
   },
   {
     "id": "without",
@@ -1137,7 +1334,20 @@
     "forms": [
       "workers"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "work",
+          "ko": "일하다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 자"
+        }
+      ],
+      "story": "맡겨진 일(work)을 대신 해내는 자(-er) → 워커, 노동자"
+    }
   },
   {
     "id": "workflow",
@@ -1162,7 +1372,20 @@
       "process",
       "pipeline"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "work",
+          "ko": "일, 작업"
+        },
+        {
+          "part": "flow",
+          "ko": "흐름"
+        }
+      ],
+      "story": "일(work)이 단계에서 단계로 흘러가는(flow) 길 → 워크플로, 작업 흐름"
+    }
   },
   {
     "id": "workload",
@@ -1183,7 +1406,20 @@
     "forms": [
       "workloads"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "work",
+          "ko": "일, 작업"
+        },
+        {
+          "part": "load",
+          "ko": "짐, 부하"
+        }
+      ],
+      "story": "짊어져야 할 일(work)의 짐(load) → 작업량, 부하"
+    }
   },
   {
     "id": "worktree",
@@ -1204,7 +1440,20 @@
     "forms": [
       "worktrees"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "work",
+          "ko": "작업"
+        },
+        {
+          "part": "tree",
+          "ko": "디렉터리 트리"
+        }
+      ],
+      "story": "브랜치마다 따로 두는, 작업(work)하는 파일들의 디렉터리 트리(tree) → 워크트리"
+    }
   },
   {
     "id": "worry",
@@ -1319,7 +1568,11 @@
       "enclose",
       "envelop"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "story": "선물을 포장지로 싸듯 앞뒤를 둘러 감는다 → 감싸다, 둘러싸다",
+      "hook": "랩 → 음식을 싸는 주방 '랩' → 감싸다"
+    }
   },
   {
     "id": "wrapper",
@@ -1344,7 +1597,20 @@
     "forms": [
       "wrappers"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "wrap",
+          "ko": "감싸다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "story": "기존 기능을 겉에서 감싸(wrap) 동작을 덧붙이는 것(-er) → 래퍼"
+    }
   },
   {
     "id": "write",
@@ -1434,6 +1700,20 @@
       "incorrectly",
       "unjustly"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "wrong",
+          "ko": "틀린, 그릇된"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "고대 노르드어 rangr (비뚤어진) → wrong",
+      "story": "비뚤어져 틀린(wrong) 쪽으로(-ly) → 잘못하여, 부당하게"
+    }
   }
 ]

@@ -98,7 +98,27 @@
       "preserve",
       "retain"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "main",
+          "ko": "손"
+        },
+        {
+          "part": "tain",
+          "ko": "쥐다"
+        }
+      ],
+      "origin": "라틴어 manu tenere (손으로 쥐다)",
+      "story": "손(main)에 꼭 쥐고(tain) 놓지 않는다 → 유지하다, 유지보수하다",
+      "family": [
+        "maintenance",
+        "manual",
+        "contain",
+        "obtain"
+      ]
+    }
   },
   {
     "id": "maintainable",
@@ -175,7 +195,18 @@
       "main",
       "serious"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "라틴어 major (더 큰) — magnus (큰)의 비교급",
+      "story": "둘 중 더 큰(major) 쪽, 그만큼 비중이 큰 → 중대한, 주요한",
+      "hook": "메이저 → '메이저 리그', '메이저 업데이트' → 주요한, 큰",
+      "family": [
+        "majority",
+        "mayor",
+        "magnify",
+        "maximum"
+      ]
+    }
   },
   {
     "id": "majority",
@@ -327,7 +358,26 @@
       "harmful",
       "hostile"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "mal",
+          "ko": "나쁜"
+        },
+        {
+          "part": "-icious",
+          "ko": "~로 가득한"
+        }
+      ],
+      "origin": "라틴어 malitia (나쁜 마음) ← malus (나쁜)",
+      "story": "나쁜(mal) 마음으로 가득한(icious) → 악의적인, 악성의",
+      "family": [
+        "malice",
+        "malware",
+        "malfunction"
+      ]
+    }
   },
   {
     "id": "management",
@@ -362,7 +412,27 @@
       "administration",
       "control"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "manage",
+          "ko": "다루다"
+        },
+        {
+          "part": "-ment",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "이탈리아어 maneggiare (말을 손으로 다루다)",
+      "story": "고삐를 손(man)에 쥐고 말을 다루듯(manage) 챙기는 일(ment) → 관리",
+      "family": [
+        "manager",
+        "manual",
+        "manipulate",
+        "maintain"
+      ]
+    }
   },
   {
     "id": "manager",
@@ -465,7 +535,26 @@
       "inventory",
       "record"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "mani",
+          "ko": "손"
+        },
+        {
+          "part": "fest",
+          "ko": "잡힌"
+        }
+      ],
+      "origin": "라틴어 manifestus (손에 잡힐 듯 뚜렷한)",
+      "story": "손(mani)에 잡힐(fest) 만큼 뚜렷이 적어 내놓은 목록 → 매니페스트, 드러나다",
+      "family": [
+        "manifesto",
+        "manual",
+        "manuscript"
+      ]
+    }
   },
   {
     "id": "manually",
@@ -497,7 +586,32 @@
     "synonyms": [
       "by hand"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "manu",
+          "ko": "손"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 manualis ← manus (손)",
+      "story": "기계에 맡기지 않고 손(manu)으로(al) 직접(ly) → 수동으로",
+      "hook": "매뉴얼리 → 수동 변속 '매뉴얼(스틱)' 차 → 수동으로",
+      "family": [
+        "manual",
+        "manage",
+        "manuscript",
+        "manufacture"
+      ]
+    }
   },
   {
     "id": "map",
@@ -539,7 +653,15 @@
       "correspond",
       "link"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "origin": "라틴어 mappa (천, 냅킨) → mappa mundi (세계 지도)",
+      "story": "천(mappa)에 땅을 옮겨 그리듯 이쪽 값을 저쪽에 하나씩 옮겨 잇는다 → 대응시키다, 지도",
+      "family": [
+        "napkin",
+        "apron"
+      ]
+    }
   },
   {
     "id": "mark",
@@ -576,7 +698,17 @@
       "flag",
       "tag"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "origin": "고대 영어 mearc (경계, 표지)",
+      "story": "땅의 경계에 박아 둔 표지처럼 눈에 띄게 찍어 둔다 → 표시하다, 부호",
+      "family": [
+        "marker",
+        "remark",
+        "landmark",
+        "bookmark"
+      ]
+    }
   },
   {
     "id": "marker",
@@ -602,7 +734,26 @@
       "tag",
       "flag"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "mark",
+          "ko": "표시하다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "story": "여기라고 표시해(mark) 주는 것(er) → 표시, 표식",
+      "hook": "마커 → 칠판에 쓰는 '마커 펜' → 표시",
+      "family": [
+        "remark",
+        "landmark",
+        "bookmark"
+      ]
+    }
   },
   {
     "id": "market",
@@ -657,7 +808,25 @@
     "synonyms": [
       "market analysis"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "market",
+          "ko": "시장"
+        },
+        {
+          "part": "research",
+          "ko": "조사"
+        }
+      ],
+      "story": "시장(market)을 거듭(re) 샅샅이 찾아본다(search) → 시장 조사",
+      "family": [
+        "marketing",
+        "merchant",
+        "researcher"
+      ]
+    }
   },
   {
     "id": "market-size",
@@ -675,7 +844,25 @@
         "ko": "시장 규모"
       }
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "market",
+          "ko": "시장"
+        },
+        {
+          "part": "size",
+          "ko": "크기"
+        }
+      ],
+      "story": "시장(market)의 크기(size) → 시장 규모",
+      "family": [
+        "marketing",
+        "merchant",
+        "oversized"
+      ]
+    }
   },
   {
     "id": "markup",
@@ -704,7 +891,25 @@
       "formatting",
       "tags"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "mark",
+          "ko": "표시하다"
+        },
+        {
+          "part": "up",
+          "ko": "위에, 덧붙여"
+        }
+      ],
+      "story": "교정자가 원고 위에(up) 조판 지시를 표시해(mark) 넣던 데서 → 마크업, 서식 기호",
+      "family": [
+        "markdown",
+        "marker",
+        "bookmark"
+      ]
+    }
   },
   {
     "id": "master",
@@ -742,7 +947,18 @@
       "primary",
       "original"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "origin": "라틴어 magister (우두머리, 스승) ← magis (더 크게)",
+      "story": "더 큰(magis) 사람인 스승, 사본들의 으뜸인 원본 → 기본이 되는, 주인, 숙달하다",
+      "hook": "마스터 → '마스터 키', 기술을 '마스터하다' → 으뜸의, 숙달하다",
+      "family": [
+        "masterpiece",
+        "magistrate",
+        "maestro",
+        "mister"
+      ]
+    }
   },
   {
     "id": "match",
@@ -783,7 +999,17 @@
       "fit",
       "agree"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "origin": "고대 영어 mæcca (짝, 맞수)",
+      "story": "서로 맞는 짝인지 나란히 대 본다 → 일치하다, 일치하는 것",
+      "hook": "매치 → 옷 색을 '매치'한다, '미스매치'의 반대 → 맞다, 일치",
+      "family": [
+        "mismatch",
+        "matcher",
+        "matchmaker"
+      ]
+    }
   },
   {
     "id": "matcher",
@@ -808,7 +1034,25 @@
       "pattern",
       "filter"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "match",
+          "ko": "일치하다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "story": "어느 도구가 조건에 맞는지(match) 가려 주는 것(er) → 매처",
+      "family": [
+        "mismatch",
+        "matchmaker",
+        "unmatched"
+      ]
+    }
   },
   {
     "id": "material",
@@ -843,7 +1087,26 @@
       "information",
       "data"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "mater",
+          "ko": "재료, 물질"
+        },
+        {
+          "part": "-ial",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 materia (목재, 재료)",
+      "story": "글이나 물건을 짓는 바탕 재료(mater)가 되는(ial) → 자료, 재료",
+      "family": [
+        "matter",
+        "materialize",
+        "immaterial"
+      ]
+    }
   },
   {
     "id": "matter",
@@ -879,7 +1142,16 @@
       "issue",
       "concern"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "origin": "라틴어 materia (재료, 물질)",
+      "story": "실체가 있는 물질(matter)은 무게가 나간다, 무게가 있으니 → 중요하다, 문제",
+      "family": [
+        "material",
+        "materialize",
+        "immaterial"
+      ]
+    }
   },
   {
     "id": "max",
@@ -900,7 +1172,12 @@
     "synonyms": [
       "maximum"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "maximum",
+      "story": "가장 큰 값(maximum)을 세 글자로 줄인 말 → 최대",
+      "hook": "맥스 → '볼륨을 맥스로 올려' → 최대"
+    }
   },
   {
     "id": "maximum",
@@ -932,7 +1209,27 @@
       "peak",
       "ceiling"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "maxim",
+          "ko": "가장 큰"
+        },
+        {
+          "part": "-um",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 maximum — magnus (큰)의 최상급",
+      "story": "큰(magnus) 것들 가운데 가장 큰(maxim) 것(um) → 최대, 최댓값",
+      "family": [
+        "maximize",
+        "major",
+        "magnitude",
+        "magnify"
+      ]
+    }
   },
   {
     "id": "mcp",
@@ -953,7 +1250,11 @@
     "forms": [
       "model context protocol"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "Model Context Protocol",
+      "story": "모델(Model)에 맥락(Context)을 대 주는 통신 규약(Protocol) → 도구·데이터 연결 표준 프로토콜"
+    }
   },
   {
     "id": "mean",
@@ -1021,7 +1322,25 @@
       "substantial",
       "worthwhile"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "meaning",
+          "ko": "뜻, 의미"
+        },
+        {
+          "part": "-ful",
+          "ko": "가득한"
+        }
+      ],
+      "story": "뜻(meaning)이 가득한(ful) → 의미 있는, 유의미한",
+      "family": [
+        "mean",
+        "meaningless",
+        "well-meaning"
+      ]
+    }
   },
   {
     "id": "measure",
@@ -1059,7 +1378,26 @@
       "assess",
       "quantify"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "meas",
+          "ko": "재다"
+        },
+        {
+          "part": "-ure",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 mensura (재기) ← metiri (재다)",
+      "story": "자를 대어 재는(meas) 일(ure), 재 보고 거기에 맞춰 쓰는 수 → 측정하다, 조치, 척도",
+      "family": [
+        "measurement",
+        "dimension",
+        "immense"
+      ]
+    }
   },
   {
     "id": "mechanism",
@@ -1085,7 +1423,26 @@
       "method",
       "system"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "mechan",
+          "ko": "기계, 장치"
+        },
+        {
+          "part": "-ism",
+          "ko": "짜임새"
+        }
+      ],
+      "origin": "그리스어 mēkhanē (장치, 수단)",
+      "story": "기계(mechan) 부품이 맞물려 일을 해내는 짜임새(ism) → 수단, 장치, 메커니즘",
+      "family": [
+        "machine",
+        "mechanic",
+        "mechanical"
+      ]
+    }
   },
   {
     "id": "medical",
@@ -1110,7 +1467,27 @@
       "clinical",
       "healthcare"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "medic",
+          "ko": "의사, 치료"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 medicus (의사) ← mederi (고치다)",
+      "story": "병을 고치는 의사(medic)에 관한(al) → 의료의, 의학의",
+      "hook": "메디컬 → 병원 이야기 '메디컬 드라마' → 의료의",
+      "family": [
+        "medicine",
+        "medication",
+        "remedy"
+      ]
+    }
   },
   {
     "id": "medium",
@@ -1142,7 +1519,28 @@
       "middle",
       "average"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "medi",
+          "ko": "가운데"
+        },
+        {
+          "part": "-um",
+          "ko": "~한 것 (명사 어미)"
+        }
+      ],
+      "origin": "라틴어 medium (가운데 있는 것)",
+      "story": "양쪽 사이 한가운데(medi)에 놓인 것 → 중간의, (사이를 잇는) 매체",
+      "hook": "미디엄 → 스테이크 굽기 '미디엄'은 중간 익힘 → 중간의",
+      "family": [
+        "media",
+        "mediate",
+        "intermediate",
+        "medieval"
+      ]
+    }
   },
   {
     "id": "meet",
@@ -1180,7 +1578,12 @@
       "fulfill",
       "fit"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "origin": "고대 영어 mētan (마주치다, 만나다)",
+      "story": "요구 기준과 딱 마주쳐(meet) 맞아떨어진다 → 충족하다, 맞추다 / 만나다",
+      "hook": "미트 → '미팅'에서 만나 조건을 맞춘다 → 충족하다, 만나다"
+    }
   },
   {
     "id": "member",
@@ -1239,7 +1642,18 @@
       "note",
       "memorandum"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "memorandum 의 줄임 ← 라틴어 (기억해 둘 것)",
+      "story": "잊지 않게 기억해(memor) 두려고 적어 둔 쪽지 → 메모, 전표",
+      "hook": "메모 → 외래어 '메모' 그대로 → 메모, 전표",
+      "family": [
+        "memory",
+        "memorize",
+        "remember",
+        "memorial"
+      ]
+    }
   },
   {
     "id": "memory",
@@ -1273,7 +1687,28 @@
       "recall",
       "recollection"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "memor",
+          "ko": "기억하는"
+        },
+        {
+          "part": "-y",
+          "ko": "~함 (명사)"
+        }
+      ],
+      "origin": "라틴어 memoria (기억) ← memor (기억하는)",
+      "story": "마음에 새겨 기억하는(memor) 힘, 또 그것을 담아 두는 곳 → 기억, 메모리",
+      "hook": "메모리 → 컴퓨터 '메모리'는 기억 장치 → 기억",
+      "family": [
+        "memorize",
+        "remember",
+        "memorial",
+        "commemorate"
+      ]
+    }
   },
   {
     "id": "mental",
@@ -1298,7 +1733,27 @@
       "cognitive",
       "internal"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "ment",
+          "ko": "마음, 정신"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 mentalis ← mens (마음, 정신)",
+      "story": "몸 밖이 아니라 마음(ment) 속에서 일어나는 → 정신의, 마음속의",
+      "hook": "멘탈 → '멘탈이 강하다'의 그 멘탈 → 정신의",
+      "family": [
+        "mention",
+        "dementia",
+        "mentality"
+      ]
+    }
   },
   {
     "id": "mention",
@@ -1331,7 +1786,27 @@
       "cite",
       "note"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "ment",
+          "ko": "마음"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 mentio (마음에 떠올리게 함)",
+      "story": "상대의 마음(ment)에 떠오르도록 슬쩍 말을 꺼낸다 → 언급하다, 말하다",
+      "hook": "멘션 → SNS에서 @로 '멘션'하다 → 언급하다",
+      "family": [
+        "mental",
+        "comment",
+        "reminisce"
+      ]
+    }
   },
   {
     "id": "menu",
@@ -1424,7 +1899,21 @@
       "just",
       "simply"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "mere",
+          "ko": "순전한, ~에 불과한"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 merus (섞이지 않은, 순수한)",
+      "story": "다른 것은 섞이지 않고(mere) 오직 그것뿐으로 → 단지, 그저"
+    }
   },
   {
     "id": "merge",
@@ -1462,7 +1951,17 @@
       "consolidate",
       "unify"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "origin": "라틴어 mergere (물에 담그다, 잠기게 하다)",
+      "story": "한 물에 담가(mergere) 서로 섞여 하나가 되게 한다 → 합치다, 병합하다",
+      "hook": "머지 → git '머지'로 브랜치를 합친다 → 병합하다",
+      "family": [
+        "emerge",
+        "submerge",
+        "immerse"
+      ]
+    }
   },
   {
     "id": "message",
@@ -1515,7 +2014,26 @@
         "ko": "메타데이터(데이터에 대한 부가 정보)"
       }
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "meta",
+          "ko": "~에 대한, 한 단계 위의"
+        },
+        {
+          "part": "data",
+          "ko": "데이터, 자료"
+        }
+      ],
+      "origin": "그리스어 meta (너머) + 라틴어 data (주어진 것)",
+      "story": "데이터(data)보다 한 단계 위(meta)에서 그 데이터를 설명하는 데이터 → 메타데이터",
+      "family": [
+        "metaphor",
+        "database",
+        "datum"
+      ]
+    }
   },
   {
     "id": "methodology",
@@ -1541,7 +2059,27 @@
       "approach",
       "procedure"
     ],
-    "domain": "계획·목표·전략"
+    "domain": "계획·목표·전략",
+    "memory": {
+      "roots": [
+        {
+          "part": "method",
+          "ko": "방법"
+        },
+        {
+          "part": "-ology",
+          "ko": "학문, ~론"
+        }
+      ],
+      "origin": "그리스어 methodos (길을 따라감) + logia (학문)",
+      "story": "방법(method)을 체계 있게 따지는 학문(-ology) → 방법론, (연구) 방법",
+      "family": [
+        "method",
+        "methodical",
+        "biology",
+        "technology"
+      ]
+    }
   },
   {
     "id": "microservice",
@@ -1562,7 +2100,25 @@
     "forms": [
       "microservices"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "micro",
+          "ko": "아주 작은"
+        },
+        {
+          "part": "service",
+          "ko": "서비스"
+        }
+      ],
+      "story": "큰 서비스(service)를 기능별로 아주 작게(micro) 쪼개 따로 돌린다 → 마이크로서비스",
+      "family": [
+        "microscope",
+        "microphone",
+        "microchip"
+      ]
+    }
   },
   {
     "id": "mid",
@@ -1589,7 +2145,17 @@
       "middle",
       "midway"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "origin": "고대 영어 midd (가운데의)",
+      "story": "처음과 끝 사이 한가운데(mid)에 있는 → 중간의, ~ 도중에",
+      "hook": "미드 → '미들(middle)'의 앞머리 → 중간의",
+      "family": [
+        "middle",
+        "midnight",
+        "amid"
+      ]
+    }
   },
   {
     "id": "mid-analysis",
@@ -1654,7 +2220,20 @@
         "ko": "세션 도중의"
       }
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "mid",
+          "ko": "중간, 도중"
+        },
+        {
+          "part": "session",
+          "ko": "세션, 작업 시간"
+        }
+      ],
+      "story": "세션(session)이 한창 진행되는 한가운데(mid)에서 → 세션 도중에"
+    }
   },
   {
     "id": "middle",
@@ -1699,7 +2278,20 @@
         "ko": "중간 이름, 미들 네임"
       }
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "middle",
+          "ko": "가운데"
+        },
+        {
+          "part": "name",
+          "ko": "이름"
+        }
+      ],
+      "story": "이름과 성 사이 가운데(middle)에 끼어 있는 이름(name) → 중간 이름, 미들 네임"
+    }
   },
   {
     "id": "midway",
@@ -1726,7 +2318,25 @@
       "halfway",
       "midstream"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "mid",
+          "ko": "가운데"
+        },
+        {
+          "part": "way",
+          "ko": "길"
+        }
+      ],
+      "story": "가야 할 길(way)의 한가운데(mid)쯤 와 있다 → 도중에, 중간쯤에",
+      "family": [
+        "midnight",
+        "halfway",
+        "amid"
+      ]
+    }
   },
   {
     "id": "migrate",
@@ -1767,7 +2377,27 @@
       "transfer",
       "port"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "migr",
+          "ko": "옮겨 가다"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 migrare (살 곳을 옮기다)",
+      "story": "철새가 살 곳을 옮겨 가듯(migr) 데이터·코드를 새 환경으로 → 옮기다, 마이그레이션하다",
+      "hook": "마이그레이트 → DB '마이그레이션'을 하다 → 옮기다",
+      "family": [
+        "immigrate",
+        "emigrate",
+        "migrant"
+      ]
+    }
   },
   {
     "id": "milligram",
@@ -1788,7 +2418,26 @@
     "forms": [
       "milligrams"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "milli-",
+          "ko": "1000분의 1"
+        },
+        {
+          "part": "gram",
+          "ko": "그램"
+        }
+      ],
+      "origin": "라틴어 mille (천) + 그리스어 gramma (작은 무게)",
+      "story": "1그램(gram)을 천(milli) 조각으로 나눈 것 중 하나 → 밀리그램",
+      "family": [
+        "millimeter",
+        "milliliter",
+        "kilogram"
+      ]
+    }
   },
   {
     "id": "million",
@@ -1841,7 +2490,28 @@
       "lowest",
       "floor"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "min",
+          "ko": "작은"
+        },
+        {
+          "part": "-imum",
+          "ko": "가장 ~한 것"
+        }
+      ],
+      "origin": "라틴어 minimum (가장 작은 것)",
+      "story": "작은(min) 것 가운데서도 가장(-imum) 작은 값 → 최소, 최솟값",
+      "hook": "미니멈 → '미니(mini)'를 끝까지 줄인 값 → 최소",
+      "family": [
+        "minor",
+        "minus",
+        "diminish",
+        "minimal"
+      ]
+    }
   },
   {
     "id": "minor",
@@ -1875,7 +2545,18 @@
       "trivial",
       "slight"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "라틴어 minor (더 작은)",
+      "story": "나란히 놓고 보니 더 작은(minor) 쪽이라 → 사소한, 중요하지 않은",
+      "hook": "마이너 → '마이너 리그', 비주류 '마이너' → 사소한",
+      "family": [
+        "minimum",
+        "minus",
+        "minority",
+        "diminish"
+      ]
+    }
   },
   {
     "id": "mint",
@@ -1978,7 +2659,17 @@
       "replicate",
       "copy"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "origin": "고대 프랑스어 mireor ← 라틴어 mirari (바라보다)",
+      "story": "들여다보는(mirari) 거울이 모습을 그대로 비추듯 → 그대로 반영하다, 거울",
+      "hook": "미러 → 자동차 '사이드 미러'가 그대로 비춘다 → 그대로 반영하다",
+      "family": [
+        "miracle",
+        "admire",
+        "mirage"
+      ]
+    }
   },
   {
     "id": "misclassify",
@@ -2109,7 +2800,25 @@
       "misunderstand",
       "misjudge"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "mis-",
+          "ko": "잘못"
+        },
+        {
+          "part": "interpret",
+          "ko": "해석하다"
+        }
+      ],
+      "story": "말의 뜻을 잘못(mis) 풀이한다(interpret) → 잘못 해석하다, 오해하다",
+      "family": [
+        "interpretation",
+        "interpreter",
+        "misunderstand"
+      ]
+    }
   },
   {
     "id": "mislabel",
@@ -2141,7 +2850,20 @@
       "misclassify",
       "miscategorize"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "mis-",
+          "ko": "잘못"
+        },
+        {
+          "part": "label",
+          "ko": "라벨, 이름표"
+        }
+      ],
+      "story": "상자에 엉뚱한(mis) 이름표(label)를 붙인다 → 라벨을 잘못 붙이다, 잘못 분류하다"
+    }
   },
   {
     "id": "misleading",
@@ -2229,7 +2951,21 @@
       "inconsistency",
       "conflict"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "mis-",
+          "ko": "잘못"
+        },
+        {
+          "part": "match",
+          "ko": "짝이 맞다"
+        }
+      ],
+      "story": "짝이 잘못(mis) 지어져 서로 맞지(match) 않는다 → 불일치, 어긋남",
+      "hook": "미스매치 → 외래어 '미스매치' 그대로 → 불일치"
+    }
   },
   {
     "id": "misnamed",
@@ -2253,7 +2989,24 @@
     "synonyms": [
       "mislabeled"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "mis-",
+          "ko": "잘못"
+        },
+        {
+          "part": "name",
+          "ko": "이름 붙이다"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "story": "내용과 안 맞게 이름(name)이 잘못(mis) 붙여진(-ed) → 이름이 잘못 붙은"
+    }
   },
   {
     "id": "misplace",
@@ -2328,7 +3081,20 @@
       "misinterpret",
       "misunderstand"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "mis-",
+          "ko": "잘못"
+        },
+        {
+          "part": "read",
+          "ko": "읽다"
+        }
+      ],
+      "story": "글자나 상대의 의도를 잘못(mis) 읽는다(read) → 잘못 읽다, 잘못 해석하다"
+    }
   },
   {
     "id": "miss",
@@ -2396,7 +3162,25 @@
       "abuse",
       "misapply"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "mis-",
+          "ko": "잘못"
+        },
+        {
+          "part": "use",
+          "ko": "쓰다"
+        }
+      ],
+      "story": "원래 용도와 다르게 잘못(mis) 쓴다(use) → 오용하다, 악용하다",
+      "family": [
+        "abuse",
+        "usage",
+        "useful"
+      ]
+    }
   },
   {
     "id": "mitigation",
@@ -2426,7 +3210,25 @@
       "alleviation",
       "remedy"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "mitig",
+          "ko": "순하게 하다"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 mitigare (순하게 하다) ← mitis (순한)",
+      "story": "거센 위험·피해를 순하게(mitis) 누그러뜨리는 조치 → 완화(책)",
+      "family": [
+        "mitigate",
+        "unmitigated"
+      ]
+    }
   },
   {
     "id": "mix",
@@ -2494,7 +3296,18 @@
       "manner",
       "state"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "라틴어 modus (방식, 척도)",
+      "story": "일을 어떤 식으로 할지 맞춰 둔 방식(modus) → 모드, (작동) 방식",
+      "hook": "모드 → '다크 모드', '비행기 모드'의 모드 → 작동 방식",
+      "family": [
+        "model",
+        "modify",
+        "moderate",
+        "modern"
+      ]
+    }
   },
   {
     "id": "model",
@@ -2535,7 +3348,28 @@
       "framework",
       "scheme"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "mod",
+          "ko": "척도, 본"
+        },
+        {
+          "part": "-el",
+          "ko": "작은"
+        }
+      ],
+      "origin": "라틴어 modulus (작은 척도, 본)",
+      "story": "실물을 재어 작게(-el) 만든 본(mod) → 모형, 모델 / 본을 떠서 만든다 → 본뜨다",
+      "hook": "모델 → 외래어 '모델' 그대로 → 모델, 모형",
+      "family": [
+        "mode",
+        "module",
+        "modify",
+        "mold"
+      ]
+    }
   },
   {
     "id": "moderation",
@@ -2612,7 +3446,31 @@
       "alteration",
       "edit"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "mod",
+          "ko": "척도, 방식"
+        },
+        {
+          "part": "-ific",
+          "ko": "만들다"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 modificare (척도에 맞추다)",
+      "story": "척도(mod)에 맞도록 손봐 만드는(ific) 일 → 수정, 변경",
+      "family": [
+        "modify",
+        "mode",
+        "moderate",
+        "model"
+      ]
+    }
   },
   {
     "id": "modify",
@@ -2640,7 +3498,27 @@
       "alter",
       "edit"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "mod",
+          "ko": "척도, 방식"
+        },
+        {
+          "part": "-ify",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "origin": "라틴어 modificare (척도에 맞추다)",
+      "story": "척도(mod)에 맞도록 조금 손봐 만든다(-ify) → 수정하다, 변경하다",
+      "family": [
+        "mode",
+        "moderate",
+        "modest",
+        "model"
+      ]
+    }
   },
   {
     "id": "module",
@@ -2667,7 +3545,27 @@
       "unit",
       "package"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "mod",
+          "ko": "척도, 단위"
+        },
+        {
+          "part": "-ule",
+          "ko": "작은"
+        }
+      ],
+      "origin": "라틴어 modulus (작은 척도)",
+      "story": "큰 전체를 작은(-ule) 단위(mod)로 끊어 낸 조각 → 모듈",
+      "hook": "모듈 → '모듈형 가구'처럼 단위로 끼워 맞추는 조각 → 모듈",
+      "family": [
+        "model",
+        "mode",
+        "modular"
+      ]
+    }
   },
   {
     "id": "moment",
@@ -2773,7 +3671,26 @@
     "forms": [
       "monorepos"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "mono",
+          "ko": "하나"
+        },
+        {
+          "part": "repo",
+          "ko": "저장소 (repository)"
+        }
+      ],
+      "origin": "그리스어 monos (하나) + repository (저장소)",
+      "story": "여러 프로젝트를 하나(mono)의 저장소(repo)에 몰아 넣는다 → 모노레포",
+      "family": [
+        "monopoly",
+        "monotone",
+        "repository"
+      ]
+    }
   },
   {
     "id": "month",
@@ -2875,7 +3792,25 @@
       "multi agent",
       "multiagent"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "multi-",
+          "ko": "여럿"
+        },
+        {
+          "part": "agent",
+          "ko": "에이전트"
+        }
+      ],
+      "story": "여러(multi) 에이전트(agent)가 일을 나눠 맡는 → 멀티 에이전트의",
+      "family": [
+        "multiple",
+        "multitask",
+        "agency"
+      ]
+    }
   },
   {
     "id": "multi-hour",
@@ -2893,7 +3828,20 @@
         "ko": "몇 시간에 걸친"
       }
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "multi-",
+          "ko": "여럿"
+        },
+        {
+          "part": "hour",
+          "ko": "시간"
+        }
+      ],
+      "story": "한 시간(hour)으로 안 끝나고 여러(multi) 시간 이어지는 → 몇 시간에 걸친"
+    }
   },
   {
     "id": "multi-step",
@@ -2917,7 +3865,20 @@
     "synonyms": [
       "multistage"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "multi-",
+          "ko": "여럿"
+        },
+        {
+          "part": "step",
+          "ko": "단계, 걸음"
+        }
+      ],
+      "story": "한 번에 안 끝나고 여러(multi) 단계(step)를 밟아야 하는 → 여러 단계로 된, 다단계의"
+    }
   },
   {
     "id": "multi-tenant",
@@ -2938,7 +3899,26 @@
     "synonyms": [
       "shared"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "multi-",
+          "ko": "여럿"
+        },
+        {
+          "part": "tenant",
+          "ko": "세입자, 입주자"
+        }
+      ],
+      "origin": "tenant ← 라틴어 tenere (쥐다, 차지하다)",
+      "story": "한 건물을 여러(multi) 세입자(tenant)가 나눠 쓰듯 한 시스템을 나눠 쓰는 → 멀티테넌트의",
+      "family": [
+        "tenant",
+        "tenure",
+        "multiple"
+      ]
+    }
   },
   {
     "id": "multi-turn",
@@ -2956,7 +3936,20 @@
         "ko": "여러 턴에 걸친"
       }
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "multi-",
+          "ko": "여럿"
+        },
+        {
+          "part": "turn",
+          "ko": "차례, 턴"
+        }
+      ],
+      "story": "말하는 차례(turn)가 여러(multi) 번 오가는 → 여러 턴에 걸친"
+    }
   },
   {
     "id": "multiline",
@@ -2977,7 +3970,20 @@
     "synonyms": [
       "multi-line"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "multi",
+          "ko": "여럿"
+        },
+        {
+          "part": "line",
+          "ko": "줄"
+        }
+      ],
+      "story": "한 줄(line)을 넘어 여러(multi) 줄에 걸치는 → 여러 줄에 걸친"
+    }
   },
   {
     "id": "multiplier",
@@ -3006,6 +4012,29 @@
       "factor",
       "coefficient"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "multi",
+          "ko": "여럿"
+        },
+        {
+          "part": "pli",
+          "ko": "접다, 겹치다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 multiplicare (여러 겹으로 접다)",
+      "story": "여러(multi) 겹으로 접어(pli) 몇 배로 불리는 값(-er) → 배수, 승수",
+      "family": [
+        "multiply",
+        "multiple",
+        "duplicate"
+      ]
+    }
   }
 ]

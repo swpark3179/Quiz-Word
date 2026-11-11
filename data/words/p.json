@@ -33,7 +33,27 @@
       "module",
       "bundle"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "pack",
+          "ko": "꾸리다, 꾸러미"
+        },
+        {
+          "part": "-age",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "pack (중세 네덜란드어 pak: 꾸러미) + -age",
+      "story": "한데 꾸려(pack) 묶어 놓은 것(-age) → 패키지, 꾸러미 / 한데 묶다 → 포장하다",
+      "hook": "패키지 → '패키지 여행'처럼 한데 묶은 것 → 패키지, 묶음",
+      "family": [
+        "pack",
+        "packet",
+        "unpack"
+      ]
+    }
   },
   {
     "id": "page",
@@ -183,7 +203,27 @@
       "concurrent",
       "simultaneous"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "par",
+          "ko": "곁에, 나란히 (para)"
+        },
+        {
+          "part": "allel",
+          "ko": "서로"
+        }
+      ],
+      "origin": "그리스어 parallēlos (서로 곁에 나란한)",
+      "story": "서로(allel) 곁에(par) 나란히 달리는 두 선처럼 → 병렬의, 동시에 진행하는",
+      "hook": "패럴렐 → '패럴렐 유니버스'(평행 우주)처럼 나란히 → 병렬의",
+      "family": [
+        "paragraph",
+        "parameter",
+        "paradox"
+      ]
+    }
   },
   {
     "id": "parameter",
@@ -212,7 +252,28 @@
       "argument",
       "input"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "para-",
+          "ko": "곁에"
+        },
+        {
+          "part": "meter",
+          "ko": "재다, 척도"
+        }
+      ],
+      "origin": "그리스어 para (곁에) + metron (척도)",
+      "story": "함수 곁에(para) 두고 동작을 정해 주는 척도(meter) → 매개변수, 파라미터",
+      "hook": "퍼래미터 → 외래어 '파라미터' 그대로 → 매개변수",
+      "family": [
+        "parallel",
+        "meter",
+        "diameter",
+        "thermometer"
+      ]
+    }
   },
   {
     "id": "paraphrase",
@@ -287,7 +348,27 @@
       "package",
       "packet"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "par",
+          "ko": "부분, 몫 (part)"
+        },
+        {
+          "part": "-cel",
+          "ko": "작은"
+        }
+      ],
+      "origin": "고대 프랑스어 parcelle (작은 조각)",
+      "story": "큰 짐에서 떼어 낸 작은(-cel) 몫(par)을 따로 싼 꾸러미 → 소포, 택배",
+      "family": [
+        "part",
+        "particle",
+        "partial",
+        "portion"
+      ]
+    }
   },
   {
     "id": "parent",
@@ -318,7 +399,26 @@
       "parents",
       "parental"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "par",
+          "ko": "낳다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~하는 사람"
+        }
+      ],
+      "origin": "라틴어 parens (낳는 사람) ← parere (낳다)",
+      "story": "하위를 낳아(par) 띄운 쪽(-ent) → 부모, 상위 에이전트·프로세스",
+      "family": [
+        "parental",
+        "grandparent",
+        "postpartum"
+      ]
+    }
   },
   {
     "id": "parenthesis",
@@ -405,7 +505,18 @@
       "analyze",
       "interpret"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "origin": "라틴어 pars (orationis) — (문장의) 부분, 품사",
+      "story": "문장을 부분(pars)별로 쪼개 무슨 성분인지 따진다 → 파싱하다, 분석해 읽어 내다",
+      "hook": "파스 → '파싱', '파서(parser)'의 그 말 → 파싱하다",
+      "family": [
+        "part",
+        "partial",
+        "particle",
+        "parcel"
+      ]
+    }
   },
   {
     "id": "part",
@@ -479,7 +590,27 @@
       "incomplete",
       "fractional"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "part",
+          "ko": "부분"
+        },
+        {
+          "part": "-ial",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 partialis ← pars (부분)",
+      "story": "전체가 아니라 한 부분(part)만의 → 부분적인, 일부만의",
+      "family": [
+        "part",
+        "particle",
+        "partition",
+        "impartial"
+      ]
+    }
   },
   {
     "id": "partial-credit",
@@ -592,7 +723,35 @@
       "notably",
       "specifically"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "part",
+          "ko": "부분"
+        },
+        {
+          "part": "-icul-",
+          "ko": "작은"
+        },
+        {
+          "part": "-ar",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 particula (작은 부분)",
+      "story": "전체 가운데 작은 부분(particul) 하나만 콕 집어서 → 특히",
+      "family": [
+        "particle",
+        "particular",
+        "part",
+        "partial"
+      ]
+    }
   },
   {
     "id": "partition",
@@ -625,7 +784,28 @@
       "split",
       "segment"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "part",
+          "ko": "나누다, 부분"
+        },
+        {
+          "part": "-ition",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 partitio (나눔)",
+      "story": "전체를 부분(part)들로 갈라 겹치지 않게 칸을 친다 → 나누다, 분할",
+      "hook": "파티션 → 사무실 책상 사이 '파티션' 칸막이 → 나누다, 분할",
+      "family": [
+        "part",
+        "partial",
+        "apartment",
+        "department"
+      ]
+    }
   },
   {
     "id": "partly",
@@ -647,7 +827,25 @@
       "partially",
       "somewhat"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "part",
+          "ko": "부분"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "전부는 아니고 한 부분(part)만큼만 → 부분적으로, 어느 정도는",
+      "family": [
+        "partial",
+        "apart",
+        "particle"
+      ]
+    }
   },
   {
     "id": "partway",
@@ -754,7 +952,26 @@
       "excerpt",
       "section"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "pass",
+          "ko": "지나가다"
+        },
+        {
+          "part": "-age",
+          "ko": "~하는 것·곳"
+        }
+      ],
+      "origin": "고대 프랑스어 passage (지나가는 길)",
+      "story": "글을 읽으며 지나가는(pass) 한 구간(-age) → (글의) 구절, 단락",
+      "family": [
+        "pass",
+        "passenger",
+        "passport"
+      ]
+    }
   },
   {
     "id": "passed-in",
@@ -815,7 +1032,26 @@
       "traveler",
       "rider"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "pass",
+          "ko": "지나가다, 건너가다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 사람"
+        }
+      ],
+      "origin": "고대 프랑스어 passagier (길 가는 사람)",
+      "story": "탈것에 몸을 싣고 지나가는(pass) 사람(-er) → 승객, 탑승객",
+      "family": [
+        "passage",
+        "pass",
+        "passport"
+      ]
+    }
   },
   {
     "id": "passing-test",
@@ -833,7 +1069,20 @@
         "ko": "(성공한) 통과 테스트의"
       }
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "passing",
+          "ko": "통과하는"
+        },
+        {
+          "part": "test",
+          "ko": "테스트"
+        }
+      ],
+      "story": "이미 통과하고(passing) 있는 테스트(test)에 관한 → 통과한 테스트의"
+    }
   },
   {
     "id": "past",
@@ -898,7 +1147,17 @@
     "synonyms": [
       "insert"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "origin": "후기 라틴어 pasta (반죽)",
+      "story": "끈적한 반죽·풀(pasta)로 종이를 붙이듯 복사한 것을 → 붙여 넣다 / 풀, 반죽",
+      "hook": "페이스트 → '카피 앤 페이스트'(복붙)의 붙 → 붙여 넣다",
+      "family": [
+        "pasta",
+        "pastry",
+        "pastel"
+      ]
+    }
   },
   {
     "id": "patent",
@@ -968,7 +1227,17 @@
       "route",
       "filepath"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "고대 영어 pæth (밟아 다져진 길)",
+      "story": "폴더를 하나씩 밟고 들어가 파일에 닿는 길 → (파일) 경로, 길",
+      "hook": "패스 → 길 찾는 '패스파인더'의 패스 → 길, 경로",
+      "family": [
+        "pathway",
+        "footpath",
+        "pathfinder"
+      ]
+    }
   },
   {
     "id": "patient",
@@ -996,7 +1265,27 @@
       "patience",
       "patiently"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "pati",
+          "ko": "겪다, 견디다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~하는 (사람)"
+        }
+      ],
+      "origin": "라틴어 patiens (견디는) ← pati (겪다)",
+      "story": "아픔을 겪으며(pati) 견디는 사람(-ent) → 환자 / 견디는 → 참을성 있는",
+      "family": [
+        "passion",
+        "passive",
+        "patience",
+        "compatible"
+      ]
+    }
   },
   {
     "id": "pattern",
@@ -1029,7 +1318,17 @@
       "template",
       "format"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "고대 프랑스어 patron (본보기, 본)",
+      "story": "따라 찍어 낼 본(patron)이 있어 같은 모양이 되풀이된다 → 패턴, 반복되는 형식",
+      "hook": "패턴 → 옷감에 반복되는 '패턴' 무늬 → 반복되는 형식",
+      "family": [
+        "patron",
+        "paternal",
+        "patriot"
+      ]
+    }
   },
   {
     "id": "pause",
@@ -1062,7 +1361,17 @@
       "suspend",
       "stop"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "origin": "그리스어 pausis (멈춤) → 라틴어 pausa",
+      "story": "하던 것을 잠깐 세워 두고 숨을 고른다 → 일시 중지하다, 잠시 멈추다",
+      "hook": "포즈 → 영상 '일시 정지(Pause)' 버튼 → 잠시 멈추다",
+      "family": [
+        "repose",
+        "menopause",
+        "pose"
+      ]
+    }
   },
   {
     "id": "pay",
@@ -1127,7 +1436,25 @@
       "body",
       "content"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "pay",
+          "ko": "돈을 내다"
+        },
+        {
+          "part": "load",
+          "ko": "짐"
+        }
+      ],
+      "story": "운임(pay)을 받는 진짜 짐(load), 포장이 아닌 알맹이 → 페이로드, 실제 데이터 본문",
+      "family": [
+        "workload",
+        "download",
+        "payment"
+      ]
+    }
   },
   {
     "id": "payment",
@@ -1156,7 +1483,27 @@
       "remittance",
       "settlement"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "pay",
+          "ko": "치르다, 지불하다"
+        },
+        {
+          "part": "-ment",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "pay ← 라틴어 pacare (달래다, 만족시키다)",
+      "story": "돈을 치러(pay) 받을 사람을 만족시키는 일(-ment) → 지급, 결제",
+      "hook": "페이먼트 → '○○페이'로 결제한다 → 지급, 결제",
+      "family": [
+        "repay",
+        "payroll",
+        "payable"
+      ]
+    }
   },
   {
     "id": "pdf",
@@ -1177,7 +1524,11 @@
     "forms": [
       "pdfs"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "Portable Document Format",
+      "story": "어디로 옮겨도(Portable) 인쇄 모양 그대로인 문서(Document) 형식(Format) → PDF"
+    }
   },
   {
     "id": "peak",
@@ -1213,7 +1564,11 @@
       "maximum",
       "height"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "story": "산봉우리처럼 그래프가 가장 높이 솟은 꼭대기 → 절정, 최고조",
+      "hook": "피크 → '피크 타임'의 피크 → 절정, 최고조"
+    }
   },
   {
     "id": "peer-reviewed",
@@ -1238,7 +1593,30 @@
     "synonyms": [
       "refereed"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "peer",
+          "ko": "동료, 대등한 사람"
+        },
+        {
+          "part": "review",
+          "ko": "검토하다"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "origin": "peer ← 라틴어 par (대등한)",
+      "story": "같은 분야 동료(peer)가 다시 살펴본(review) 뒤 통과된(-ed) → 동료 심사를 거친",
+      "family": [
+        "peer",
+        "reviewer",
+        "preview"
+      ]
+    }
   },
   {
     "id": "peer-to-peer",
@@ -1263,7 +1641,26 @@
       "P2P",
       "decentralized"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "peer",
+          "ko": "대등한 상대"
+        },
+        {
+          "part": "to",
+          "ko": "~에게"
+        }
+      ],
+      "origin": "peer ← 라틴어 par (대등한)",
+      "story": "중앙을 거치지 않고 대등한 상대(peer)에서 상대(peer)에게(to) 곧장 → 대등 간 직접 연결의",
+      "family": [
+        "pair",
+        "par",
+        "compare"
+      ]
+    }
   },
   {
     "id": "penalty",
@@ -1294,7 +1691,31 @@
       "punishment",
       "sanction"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "pen",
+          "ko": "벌 (poena)"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        },
+        {
+          "part": "-ty",
+          "ko": "~함 (명사)"
+        }
+      ],
+      "origin": "라틴어 poena (벌) → poenalis (벌의)",
+      "story": "약속을 어긴 벌(pen)로 물리는 것 → 위약금, 벌칙, 불이익",
+      "hook": "페널티 → 축구 '페널티 킥'은 반칙의 벌 → 벌칙",
+      "family": [
+        "penal",
+        "punish",
+        "pain"
+      ]
+    }
   },
   {
     "id": "pending",
@@ -1321,7 +1742,28 @@
       "unresolved",
       "waiting"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "pend",
+          "ko": "매달리다"
+        },
+        {
+          "part": "-ing",
+          "ko": "~하고 있는"
+        }
+      ],
+      "origin": "라틴어 pendere (매달리다)",
+      "story": "결정이 안 나 허공에 매달려(pend) 있는 → 아직 처리되지 않은, 대기 중인",
+      "hook": "펜딩 → '그 건은 펜딩'(보류) → 대기 중인",
+      "family": [
+        "depend",
+        "suspend",
+        "pendant",
+        "pendulum"
+      ]
+    }
   },
   {
     "id": "per",
@@ -1347,7 +1789,16 @@
       "each",
       "every"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "라틴어 per (~을 통하여, ~마다)",
+      "story": "하나하나를 거쳐 가며(per) 값을 매긴다 → ~당, ~마다",
+      "hook": "퍼 → '퍼센트(per cent)'는 100당 얼마 → ~당",
+      "family": [
+        "percent",
+        "percentage"
+      ]
+    }
   },
   {
     "id": "per-batch",
@@ -1365,7 +1816,20 @@
         "ko": "배치당, 배치 하나마다의"
       }
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "per",
+          "ko": "~당, ~마다"
+        },
+        {
+          "part": "batch",
+          "ko": "한 묶음, 배치"
+        }
+      ],
+      "story": "배치(batch) 한 묶음마다(per) 따로 따지는 → 배치당, 배치 하나마다의"
+    }
   },
   {
     "id": "per-call",
@@ -1383,7 +1847,20 @@
         "ko": "호출마다의, 호출당"
       }
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "per",
+          "ko": "~당, ~마다"
+        },
+        {
+          "part": "call",
+          "ko": "호출"
+        }
+      ],
+      "story": "호출(call) 한 번마다(per) 따로 주는 → 호출당, 호출할 때마다의"
+    }
   },
   {
     "id": "per-file",
@@ -1401,7 +1878,20 @@
         "ko": "파일별의, 파일 하나씩 따로 하는"
       }
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "per",
+          "ko": "~당, ~마다"
+        },
+        {
+          "part": "file",
+          "ko": "파일"
+        }
+      ],
+      "story": "파일(file) 하나마다(per) 따로 하는 → 파일별의"
+    }
   },
   {
     "id": "per-request",
@@ -1422,7 +1912,20 @@
     "forms": [
       "per request"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "per",
+          "ko": "~당, ~마다"
+        },
+        {
+          "part": "request",
+          "ko": "요청"
+        }
+      ],
+      "story": "요청(request) 한 건마다(per) 따로 매기는 → 요청당, 요청 한 건마다의"
+    }
   },
   {
     "id": "perfectly",
@@ -1448,7 +1951,32 @@
       "flawlessly",
       "completely"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "per-",
+          "ko": "끝까지"
+        },
+        {
+          "part": "fect",
+          "ko": "하다, 만들다"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 perficere (끝까지 해내다)",
+      "story": "끝까지(per) 다 만들어(fect) 더 손댈 데가 없게 → 완벽하게, 아주",
+      "hook": "퍼펙틀리 → '퍼펙트!'(완벽)하게 → 완벽하게",
+      "family": [
+        "perfect",
+        "effect",
+        "affect",
+        "defect"
+      ]
+    }
   },
   {
     "id": "perform",
@@ -1484,7 +2012,26 @@
       "conduct",
       "carry out"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "per-",
+          "ko": "끝까지"
+        },
+        {
+          "part": "form",
+          "ko": "갖추다, 해내다 (고대 프랑스어 fornir)"
+        }
+      ],
+      "origin": "고대 프랑스어 parfornir (끝까지 해내다)",
+      "story": "맡은 일을 끝까지(per) 다 갖춰 해낸다 → 수행하다, 해내다",
+      "family": [
+        "performance",
+        "performer",
+        "furnish"
+      ]
+    }
   },
   {
     "id": "performance",
@@ -1513,7 +2060,26 @@
     "synonyms": [
       "efficiency"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "perform",
+          "ko": "수행하다"
+        },
+        {
+          "part": "-ance",
+          "ko": "~함 (명사)"
+        }
+      ],
+      "story": "일을 얼마나 잘 해내는가(perform)의 정도(-ance) → 성능, 성과, 수행",
+      "hook": "퍼포먼스 → 무대 '퍼포먼스'도 해내 보이는 것 → 수행, 성능",
+      "family": [
+        "perform",
+        "performer",
+        "furnish"
+      ]
+    }
   },
   {
     "id": "periodically",
@@ -1649,7 +2215,32 @@
       "access",
       "consent"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "per-",
+          "ko": "통과해"
+        },
+        {
+          "part": "miss",
+          "ko": "보내다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 permittere (통과시켜 보내다)",
+      "story": "문을 지나(per) 가도록 보내(miss) 주는 것 → 허가, 권한",
+      "hook": "퍼미션 → 앱 '퍼미션(권한) 허용' 창 → 권한, 허가",
+      "family": [
+        "permit",
+        "mission",
+        "admit",
+        "submit"
+      ]
+    }
   },
   {
     "id": "permit",
@@ -1825,7 +2416,17 @@
       "character",
       "role"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "origin": "라틴어 persona (배우의 가면, 배역)",
+      "story": "배우가 가면(persona)을 쓰고 맡은 배역을 연기하듯 → 페르소나, 캐릭터·인물 설정",
+      "family": [
+        "person",
+        "personal",
+        "personality",
+        "impersonate"
+      ]
+    }
   },
   {
     "id": "personal",
@@ -1852,7 +2453,28 @@
       "private",
       "own"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "person",
+          "ko": "사람, 개인"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 personalis ← persona (사람)",
+      "story": "여럿이 아니라 한 사람(person)에게 딸린 → 개인의, 사적인",
+      "hook": "퍼스널 → '퍼스널 컬러', '퍼스널 트레이닝' → 개인의",
+      "family": [
+        "person",
+        "persona",
+        "personality",
+        "personnel"
+      ]
+    }
   },
   {
     "id": "personal-access-token",
@@ -1878,7 +2500,24 @@
     "synonyms": [
       "PAT"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "personal",
+          "ko": "개인의"
+        },
+        {
+          "part": "access",
+          "ko": "접근"
+        },
+        {
+          "part": "token",
+          "ko": "증표"
+        }
+      ],
+      "story": "개인(personal)에게 발급되어 접근(access)을 열어 주는 증표(token) → 개인 액세스 토큰"
+    }
   },
   {
     "id": "personally",
@@ -1955,7 +2594,31 @@
     "synonyms": [
       "medicinal"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "pharmac",
+          "ko": "약"
+        },
+        {
+          "part": "-eutic",
+          "ko": "~하는 기술의"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "그리스어 pharmakon (약) → pharmakeutikos",
+      "story": "약(pharmac)을 짓고 만드는 일에 관한 → 제약의",
+      "hook": "파머수티컬 → 제약사 이름에 붙는 '○○파마' → 제약의",
+      "family": [
+        "pharmacy",
+        "pharmacist",
+        "pharmacology"
+      ]
+    }
   },
   {
     "id": "phase",
@@ -1985,7 +2648,17 @@
       "stage",
       "step"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "origin": "그리스어 phasis (나타남, 달의 위상)",
+      "story": "달이 초승달·반달·보름달로 차례차례 모습(phasis)을 바꾸듯 → (작업의) 단계",
+      "hook": "페이즈 → 게임 보스전 '2페이즈' → 단계",
+      "family": [
+        "emphasis",
+        "phenomenon",
+        "phantom"
+      ]
+    }
   },
   {
     "id": "phi",
@@ -2003,7 +2676,11 @@
         "ko": "보호 대상 건강 정보(환자 정보)"
       }
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "Protected Health Information",
+      "story": "법으로 보호받는(Protected) 건강(Health) 정보(Information) → 보호 대상 건강 정보"
+    }
   },
   {
     "id": "phone",
@@ -2099,7 +2776,16 @@
       "expression",
       "wording"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "origin": "그리스어 phrasis (말하는 방식) ← phrazein (말하다)",
+      "story": "생각을 어떤 말투로 말할지(phrazein) 골라 엮은 말 묶음 → 문구, 구절 / 표현하다",
+      "family": [
+        "paraphrase",
+        "rephrase",
+        "phraseology"
+      ]
+    }
   },
   {
     "id": "physically",
@@ -2128,7 +2814,32 @@
       "materially",
       "actually"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "physic",
+          "ko": "자연, 물질"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "그리스어 physis (자연) → physikos (자연의)",
+      "story": "머릿속 말고 자연(physic)의 물질 세계에 실제로 → 물리적으로, 실제로",
+      "hook": "피지컬리 → '피지컬이 좋다'의 피지컬(몸) → 물리적으로",
+      "family": [
+        "physics",
+        "physical",
+        "physician",
+        "physiology"
+      ]
+    }
   },
   {
     "id": "physician",
@@ -2286,7 +2997,21 @@
       "selector",
       "chooser"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "pick",
+          "ko": "고르다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "story": "목록에서 하나를 고르게(pick) 해 주는 화면(-er) → 선택 화면, 선택기",
+      "hook": "피커 → '컬러 피커', '날짜 피커' → 선택기"
+    }
   },
   {
     "id": "pilot",
@@ -2320,7 +3045,12 @@
       "trial",
       "test run"
     ],
-    "domain": "계획·목표·전략"
+    "domain": "계획·목표·전략",
+    "memory": {
+      "origin": "프랑스어 pilote (키잡이, 뱃길 안내인)",
+      "story": "큰 배가 들어오기 전에 뱃길 안내인(pilot)이 앞서 길을 살핀다 → 시범 운영",
+      "hook": "파일럿 → TV '파일럿 프로그램'(시험 방송) → 시범 운영"
+    }
   },
   {
     "id": "pin",
@@ -2356,7 +3086,16 @@
       "fix",
       "lock"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "고대 영어 pinn (못, 말뚝)",
+      "story": "게시판 종이에 핀(pin)을 꽂아 움직이지 못하게 한다 → (버전을) 고정하다, 핀",
+      "hook": "핀 → 채팅방 '핀 고정', 압정 핀 → 고정하다",
+      "family": [
+        "pinpoint",
+        "underpin"
+      ]
+    }
   },
   {
     "id": "pin-down",
@@ -2466,7 +3205,25 @@
     "synonyms": [
       "workflow"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "pipe",
+          "ko": "관"
+        },
+        {
+          "part": "line",
+          "ko": "줄"
+        }
+      ],
+      "story": "관(pipe)을 줄줄이(line) 이어 물이 단계마다 흘러가게 한다 → 파이프라인, 처리 흐름",
+      "family": [
+        "pipe",
+        "deadline",
+        "guideline"
+      ]
+    }
   },
   {
     "id": "place",
@@ -2528,7 +3285,25 @@
       "stand-in",
       "dummy"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "place",
+          "ko": "자리"
+        },
+        {
+          "part": "holder",
+          "ko": "맡아 두는 것"
+        }
+      ],
+      "story": "진짜 값이 올 때까지 자리(place)를 맡아 두는 것(holder) → 자리 표시자",
+      "family": [
+        "placement",
+        "stakeholder",
+        "replace"
+      ]
+    }
   },
   {
     "id": "placement",
@@ -2558,7 +3333,27 @@
       "arrangement",
       "location"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "place",
+          "ko": "두다, 자리"
+        },
+        {
+          "part": "-ment",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "place ← 라틴어 platea (넓은 길, 터)",
+      "story": "무엇을 어느 자리(place)에 둘지 정하는 일(-ment) → 배치, 두는 위치",
+      "family": [
+        "place",
+        "replace",
+        "displace",
+        "misplace"
+      ]
+    }
   },
   {
     "id": "plain",
@@ -2598,7 +3393,17 @@
       "bare",
       "unformatted"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "origin": "라틴어 planus (평평한)",
+      "story": "솟은 장식 하나 없이 평평한(planus) 맨바닥 → 아무것도 덧붙이지 않은, 일반의",
+      "hook": "플레인 → '플레인 요거트'는 아무것도 안 넣은 맛 → 그냥의",
+      "family": [
+        "plane",
+        "plan",
+        "explain"
+      ]
+    }
   },
   {
     "id": "plan",
@@ -2665,7 +3470,27 @@
       "infrastructure",
       "framework"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "plat",
+          "ko": "평평한"
+        },
+        {
+          "part": "form",
+          "ko": "모양"
+        }
+      ],
+      "origin": "프랑스어 plateforme (평평한 모양)",
+      "story": "그 위에 올라설 수 있게 평평한(plat) 모양(form)으로 다진 바닥 → 플랫폼, 기반 / 승강장",
+      "hook": "플랫폼 → 기차역 '플랫폼'처럼 딛고 서는 바닥 → 기반 시스템",
+      "family": [
+        "plate",
+        "plateau",
+        "format"
+      ]
+    }
   },
   {
     "id": "plausible",
@@ -2747,7 +3572,26 @@
       "abundance",
       "lots"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "plen",
+          "ko": "가득 찬"
+        },
+        {
+          "part": "-ty",
+          "ko": "~함 (명사)"
+        }
+      ],
+      "origin": "라틴어 plenitas (가득함) ← plenus (가득 찬)",
+      "story": "그릇이 가득(plen) 찰 만큼 있는 상태(-ty) → 충분함, 넉넉한 양",
+      "family": [
+        "complete",
+        "replenish",
+        "plenary"
+      ]
+    }
   },
   {
     "id": "plugin",
@@ -2773,7 +3617,20 @@
       "extension",
       "add-on"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "plug",
+          "ko": "플러그, 꽂다"
+        },
+        {
+          "part": "in",
+          "ko": "안에"
+        }
+      ],
+      "story": "콘센트에 플러그(plug)를 꽂아 넣듯(in) 본체에 끼워 기능을 더한다 → 플러그인"
+    }
   },
   {
     "id": "plus",
@@ -2833,7 +3690,11 @@
     "synonyms": [
       "purchase order"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "origin": "Purchase Order",
+      "story": "무엇을 얼마에 사겠다(Purchase)고 써 보내는 주문서(Order) → 구매 주문(서)"
+    }
   },
   {
     "id": "point",
@@ -2907,7 +3768,28 @@
       "reference",
       "link"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "point",
+          "ko": "가리키다, 점"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "point ← 라틴어 punctum (찍힌 점)",
+      "story": "'저기' 하고 위치를 가리켜(point) 주는 것(-er) → 참조, 포인터 / 방향을 짚어 주는 말 → 조언",
+      "hook": "포인터 → 발표용 '레이저 포인터' → 가리키는 것",
+      "family": [
+        "point",
+        "appoint",
+        "punctual",
+        "pinpoint"
+      ]
+    }
   },
   {
     "id": "policy",
@@ -2941,7 +3823,26 @@
       "guideline",
       "regulation"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "poli",
+          "ko": "도시, 국가 (polis)"
+        },
+        {
+          "part": "-cy",
+          "ko": "~함 (명사)"
+        }
+      ],
+      "origin": "그리스어 politeia (나라 다스림) ← polis (도시)",
+      "story": "도시(polis)를 다스리려고 세워 둔 방침 → 정책, 규정",
+      "family": [
+        "politics",
+        "police",
+        "metropolis"
+      ]
+    }
   },
   {
     "id": "polite",
@@ -2968,7 +3869,15 @@
       "courteous",
       "respectful"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "origin": "라틴어 politus (닦아 윤을 낸) ← polire (닦다)",
+      "story": "거친 말과 태도를 반들반들 닦아(polire) 다듬은 → 정중한, 예의 바른",
+      "family": [
+        "polish",
+        "impolite"
+      ]
+    }
   },
   {
     "id": "poll",
@@ -3100,7 +4009,28 @@
       "location",
       "spot"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "posit",
+          "ko": "놓다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 positio (놓음) ← ponere (놓다)",
+      "story": "무엇이 놓인(posit) 곳, 내가 서 있는 자리 → 위치, 자리 / 입장, 직책",
+      "hook": "포지션 → 축구 선수의 '포지션' → 위치, 자리",
+      "family": [
+        "deposit",
+        "opposite",
+        "positive",
+        "postpone"
+      ]
+    }
   },
   {
     "id": "possible",
@@ -3170,7 +4100,17 @@
       "publish",
       "submit"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "origin": "라틴어 postis (기둥)",
+      "story": "알릴 글을 기둥(post)에 붙여 모두가 보게 한다 → 올리다, 게시하다",
+      "hook": "포스트 → 블로그 '포스팅', 벽보 '포스터' → 게시하다",
+      "family": [
+        "poster",
+        "signpost",
+        "goalpost"
+      ]
+    }
   },
   {
     "id": "post-hoc",
@@ -3247,7 +4187,26 @@
       "post-processed",
       "post-processes"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "post-",
+          "ko": "뒤에, 후"
+        },
+        {
+          "part": "process",
+          "ko": "처리하다"
+        }
+      ],
+      "origin": "라틴어 post (뒤에)",
+      "story": "출력이 나온 뒤에(post) 한 번 더 처리한다(process) → 후처리하다",
+      "family": [
+        "postpone",
+        "postscript",
+        "preprocess"
+      ]
+    }
   },
   {
     "id": "posttooluse",
@@ -3265,7 +4224,24 @@
         "ko": "도구 실행 직후에 실행되는 훅"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "Post",
+          "ko": "뒤, 후"
+        },
+        {
+          "part": "Tool",
+          "ko": "도구"
+        },
+        {
+          "part": "Use",
+          "ko": "사용"
+        }
+      ],
+      "story": "도구(Tool)를 쓴(Use) 바로 뒤(Post)에 도는 훅 → PostToolUse 훅, 도구 실행 직후의 훅"
+    }
   },
   {
     "id": "potential",
@@ -3298,7 +4274,32 @@
       "possible",
       "prospective"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "pot",
+          "ko": "할 수 있는"
+        },
+        {
+          "part": "-ent",
+          "ko": "~한"
+        },
+        {
+          "part": "-ial",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 potentia (힘, 능력) ← posse (할 수 있다)",
+      "story": "아직 드러나진 않았지만 그럴 힘(potent)을 품은 → 잠재적인, ~일 가능성이 있는",
+      "hook": "포텐셜 → '포텐 터졌다'의 포텐 → 잠재적인",
+      "family": [
+        "potent",
+        "possible",
+        "power",
+        "omnipotent"
+      ]
+    }
   },
   {
     "id": "power",
@@ -3339,7 +4340,18 @@
       "drive",
       "run"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "통속 라틴어 potere (할 수 있다) → 고대 프랑스어 poeir",
+      "story": "무엇을 할 수 있게(potere) 하는 힘, 그 힘을 넣어 돌린다 → 구동하다 / 힘, 전력",
+      "hook": "파워 → '파워 버튼'을 눌러 돌린다 → 구동하다, 전원",
+      "family": [
+        "potential",
+        "possible",
+        "empower",
+        "potent"
+      ]
+    }
   },
   {
     "id": "pr",
@@ -3370,7 +4382,11 @@
       "pull request",
       "merge request"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "Pull Request",
+      "story": "내 변경을 당겨(Pull) 가서 합쳐 달라는 요청(Request) → 풀 리퀘스트"
+    }
   },
   {
     "id": "practice",
@@ -3411,7 +4427,26 @@
       "convention",
       "method"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "pract",
+          "ko": "하다, 실행"
+        },
+        {
+          "part": "-ice",
+          "ko": "~함 (명사)"
+        }
+      ],
+      "origin": "그리스어 praktikos (실행의) ← prassein (하다)",
+      "story": "이론 말고 손으로 실제 해(pract) 보는 것, 늘 그렇게 해 온 방식 → 실제, 관행",
+      "family": [
+        "practical",
+        "pragmatic",
+        "praxis"
+      ]
+    }
   },
   {
     "id": "pre-approve",
@@ -3537,7 +4572,31 @@
     "synonyms": [
       "priority"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "앞에"
+        },
+        {
+          "part": "ced",
+          "ko": "가다"
+        },
+        {
+          "part": "-ence",
+          "ko": "~함 (명사)"
+        }
+      ],
+      "origin": "라틴어 praecedere (앞서 가다)",
+      "story": "다른 것보다 앞에(pre) 가서(ced) 먼저 적용되는 순서 → 우선순위",
+      "family": [
+        "precede",
+        "precedent",
+        "proceed",
+        "exceed"
+      ]
+    }
   },
   {
     "id": "precision",
@@ -3628,7 +4687,25 @@
       "precede",
       "antedate"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "앞에, 먼저"
+        },
+        {
+          "part": "date",
+          "ko": "날짜"
+        }
+      ],
+      "story": "날짜(date)가 그것보다 앞에(pre) 찍혀 있다 → (시기상) ~보다 앞서다",
+      "family": [
+        "postdate",
+        "update",
+        "outdated"
+      ]
+    }
   },
   {
     "id": "prefer",
@@ -3661,7 +4738,27 @@
       "favor",
       "choose"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "앞에"
+        },
+        {
+          "part": "fer",
+          "ko": "나르다, 놓다"
+        }
+      ],
+      "origin": "라틴어 praeferre (앞에 놓다)",
+      "story": "여럿 중 하나를 집어 맨 앞에(pre) 가져다(fer) 놓는다 → 선호하다",
+      "family": [
+        "offer",
+        "transfer",
+        "refer",
+        "differ"
+      ]
+    }
   },
   {
     "id": "prefill",
@@ -3738,7 +4835,26 @@
       "prefixed",
       "prefixes"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "앞에"
+        },
+        {
+          "part": "fix",
+          "ko": "붙이다, 고정하다"
+        }
+      ],
+      "origin": "라틴어 praefixus (앞에 붙인)",
+      "story": "맨 앞(pre)에 붙여 고정한(fix) 부분 → 접두사, 앞부분",
+      "family": [
+        "suffix",
+        "affix",
+        "fixture"
+      ]
+    }
   },
   {
     "id": "premium",
@@ -3772,7 +4888,31 @@
       "surcharge",
       "high-end"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "먼저"
+        },
+        {
+          "part": "em",
+          "ko": "취하다, 사다"
+        },
+        {
+          "part": "-ium",
+          "ko": "명사 어미"
+        }
+      ],
+      "origin": "라틴어 praemium (보상, 전리품의 몫)",
+      "story": "남보다 먼저(pre) 취하는(em) 몫, 그만큼 더 얹어 내는 값 → 할증, 고급의",
+      "hook": "프리미엄 → '프리미엄이 붙었다'(웃돈) → 할증, 고급의",
+      "family": [
+        "exempt",
+        "redeem",
+        "prompt"
+      ]
+    }
   },
   {
     "id": "prepend",
@@ -3961,7 +5101,28 @@
       "show",
       "display"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "앞에"
+        },
+        {
+          "part": "sent",
+          "ko": "있는 (esse)"
+        }
+      ],
+      "origin": "라틴어 praesens (앞에 있는)",
+      "story": "눈앞(pre)에 있게(sent) 내놓는다 → 제시하다, 보여 주다 / 눈앞에 있는 → 존재하는",
+      "hook": "프리젠트 → '프레젠테이션'으로 눈앞에 보여 준다 → 제시하다",
+      "family": [
+        "absent",
+        "presence",
+        "represent",
+        "essence"
+      ]
+    }
   },
   {
     "id": "preserve",
@@ -4128,7 +5289,24 @@
         "ko": "도구 실행 직전에 호출을 검사·차단하는 훅"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "Pre",
+          "ko": "앞, 전"
+        },
+        {
+          "part": "Tool",
+          "ko": "도구"
+        },
+        {
+          "part": "Use",
+          "ko": "사용"
+        }
+      ],
+      "story": "도구(Tool)를 쓰기(Use) 바로 전(Pre)에 끼어드는 훅 → PreToolUse 훅, 도구 실행 직전의 훅"
+    }
   },
   {
     "id": "prevent",
@@ -4162,7 +5340,27 @@
       "avoid",
       "block"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "앞서, 미리"
+        },
+        {
+          "part": "vent",
+          "ko": "오다"
+        }
+      ],
+      "origin": "라틴어 praevenire (앞서 오다)",
+      "story": "일이 터지기 전에 미리(pre) 와서(vent) 길목을 지킨다 → 막다, 방지하다",
+      "family": [
+        "event",
+        "invent",
+        "convention",
+        "venue"
+      ]
+    }
   },
   {
     "id": "previous",
@@ -4192,7 +5390,31 @@
       "earlier",
       "preceding"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "pre-",
+          "ko": "앞에"
+        },
+        {
+          "part": "vi",
+          "ko": "길 (via)"
+        },
+        {
+          "part": "-ous",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 praevius (앞서 길을 가는)",
+      "story": "같은 길(vi)을 나보다 앞서(pre) 지나간 → 이전의, 앞선",
+      "family": [
+        "via",
+        "obvious",
+        "trivial",
+        "deviate"
+      ]
+    }
   },
   {
     "id": "price",
@@ -4259,7 +5481,26 @@
       "chief",
       "principal"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "prim",
+          "ko": "첫째의"
+        },
+        {
+          "part": "-ary",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 primarius ← primus (첫째)",
+      "story": "줄 맨 앞, 첫째(prim) 자리에 서는 → 주된, 주요한 / 1차의, 기본의",
+      "family": [
+        "prime",
+        "primitive",
+        "principal"
+      ]
+    }
   },
   {
     "id": "principal",
@@ -4295,7 +5536,31 @@
       "chief",
       "primary"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "prin",
+          "ko": "첫째 (primus)"
+        },
+        {
+          "part": "cip",
+          "ko": "잡다 (capere)"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 princeps (첫 자리를 잡은 자)",
+      "story": "첫째(prin) 자리를 잡은(cip) 당사자 → (권한을 받아 행동하는) 주체 / 주된, 주요한",
+      "family": [
+        "prince",
+        "principle",
+        "primary",
+        "participate"
+      ]
+    }
   },
   {
     "id": "print",
@@ -4474,7 +5739,26 @@
       "precedence",
       "preference"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "prior",
+          "ko": "더 앞의"
+        },
+        {
+          "part": "-ity",
+          "ko": "~함 (명사)"
+        }
+      ],
+      "origin": "라틴어 prior (더 앞선)",
+      "story": "다른 것보다 더 앞(prior)에 세워 먼저 다루는 순서 → 우선순위, 우선권",
+      "family": [
+        "prior",
+        "primary",
+        "prime"
+      ]
+    }
   },
   {
     "id": "privilege",
@@ -4504,7 +5788,27 @@
       "permission",
       "right"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "priv",
+          "ko": "개인, 따로"
+        },
+        {
+          "part": "leg",
+          "ko": "법"
+        }
+      ],
+      "origin": "라틴어 privilegium (한 개인을 위한 법)",
+      "story": "한 사람(priv)에게만 따로 정해 준 법(leg), 특별히 허락된 것 → (시스템) 권한",
+      "family": [
+        "private",
+        "legal",
+        "deprive",
+        "legislate"
+      ]
+    }
   },
   {
     "id": "proactively",
@@ -4529,7 +5833,33 @@
       "preemptively",
       "in advance"
     ],
-    "domain": "계획·목표·전략"
+    "domain": "계획·목표·전략",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞서, 미리"
+        },
+        {
+          "part": "act",
+          "ko": "행동하다"
+        },
+        {
+          "part": "-ive",
+          "ko": "~하는"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "일이 닥친 뒤에 반응하지 않고 미리(pro) 움직여서(act) → 먼저 나서서, 선제적으로",
+      "family": [
+        "reactive",
+        "active",
+        "interact"
+      ]
+    }
   },
   {
     "id": "probe",
@@ -4639,7 +5969,31 @@
       "protocol",
       "steps"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "ced",
+          "ko": "가다"
+        },
+        {
+          "part": "-ure",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 procedere (앞으로 나아가다)",
+      "story": "한 걸음씩 앞으로(pro) 나아가는(ced) 정해진 순서 → 절차",
+      "family": [
+        "proceed",
+        "process",
+        "precede",
+        "exceed"
+      ]
+    }
   },
   {
     "id": "proceed",
@@ -4667,7 +6021,27 @@
       "go ahead",
       "advance"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "ceed",
+          "ko": "가다"
+        }
+      ],
+      "origin": "라틴어 procedere (앞으로 나아가다)",
+      "story": "멈춰 있다가 앞으로(pro) 걸음을 옮긴다(ceed) → (다음 단계로) 진행하다, 계속하다",
+      "family": [
+        "procedure",
+        "process",
+        "exceed",
+        "succeed"
+      ]
+    }
   },
   {
     "id": "process",
@@ -4705,7 +6079,28 @@
       "handle",
       "treat"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "cess",
+          "ko": "가다, 나아감"
+        }
+      ],
+      "origin": "라틴어 processus (나아감) ← procedere",
+      "story": "일감이 단계를 밟아 앞으로(pro) 나아가게(cess) 한다 → 처리하다 / 과정, 절차",
+      "hook": "프로세스 → '업무 프로세스'의 프로세스 → 과정, 절차",
+      "family": [
+        "proceed",
+        "access",
+        "success",
+        "excess"
+      ]
+    }
   },
   {
     "id": "procurement",
@@ -4730,7 +6125,31 @@
       "purchasing",
       "acquisition"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "~을 위해"
+        },
+        {
+          "part": "cure",
+          "ko": "돌보다, 챙기다"
+        },
+        {
+          "part": "-ment",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 procurare (대신 돌보다, 챙겨 주다)",
+      "story": "회사를 위해(pro) 필요한 것을 챙겨(cure) 구해 오는 일(-ment) → 조달, 구매",
+      "family": [
+        "procure",
+        "cure",
+        "secure",
+        "curator"
+      ]
+    }
   },
   {
     "id": "produce",
@@ -4762,7 +6181,27 @@
       "create",
       "yield"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "duce",
+          "ko": "이끌다"
+        }
+      ],
+      "origin": "라틴어 producere (앞으로 이끌어 내다)",
+      "story": "안에 있던 것을 앞으로(pro) 끌어내(duce) 내놓는다 → 만들어 내다, (결과를) 내다",
+      "family": [
+        "reduce",
+        "introduce",
+        "conduct",
+        "product"
+      ]
+    }
   },
   {
     "id": "product",
@@ -4826,7 +6265,32 @@
       "live environment",
       "prod"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "duct",
+          "ko": "이끌다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 productio ← producere (앞으로 이끌어 내다)",
+      "story": "만든 것을 실제 사용자 앞으로(pro) 끌어내(duct) 내놓은 곳 → 운영 환경, 프로덕션",
+      "hook": "프로덕션 → 줄여서 '프로드(prod)에 배포' → 운영 환경",
+      "family": [
+        "produce",
+        "product",
+        "reduction",
+        "conduct"
+      ]
+    }
   },
   {
     "id": "productivity",
@@ -4856,7 +6320,27 @@
       "efficiency",
       "output"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "product",
+          "ko": "만들어 낸 것"
+        },
+        {
+          "part": "-ivity",
+          "ko": "~하는 정도"
+        }
+      ],
+      "origin": "라틴어 producere (앞으로 이끌어 내다)",
+      "story": "같은 시간에 얼마나 많이 만들어 내는가(product)의 정도(-ivity) → 생산성",
+      "family": [
+        "produce",
+        "product",
+        "productive",
+        "reduce"
+      ]
+    }
   },
   {
     "id": "profile",
@@ -4893,7 +6377,26 @@
     "synonyms": [
       "record"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "file",
+          "ko": "실, 선 (filum)"
+        }
+      ],
+      "origin": "이탈리아어 profilare (윤곽선을 그리다)",
+      "story": "실(fil) 같은 선으로 옆얼굴 윤곽을 그려 내(pro) 누구인지 보여 준다 → 프로필",
+      "hook": "프로파일 → 외래어 '프로필' 그대로 → 프로필",
+      "family": [
+        "file",
+        "filament"
+      ]
+    }
   },
   {
     "id": "programmatic",
@@ -4922,7 +6425,31 @@
       "automated",
       "code-based"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞에, 미리"
+        },
+        {
+          "part": "gram",
+          "ko": "쓰다, 쓴 것"
+        },
+        {
+          "part": "-atic",
+          "ko": "~의"
+        }
+      ],
+      "origin": "그리스어 programma (미리 써 붙인 글)",
+      "story": "사람 손이 아니라 미리(pro) 써 둔(gram) 프로그램 코드로 하는 → 프로그램으로 처리하는",
+      "family": [
+        "program",
+        "grammar",
+        "diagram",
+        "telegram"
+      ]
+    }
   },
   {
     "id": "progress",
@@ -4954,7 +6481,28 @@
       "advancement",
       "headway"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "gress",
+          "ko": "걷다"
+        }
+      ],
+      "origin": "라틴어 progressus (앞으로 걸어감)",
+      "story": "한 걸음씩 앞으로(pro) 걸어간(gress) 만큼 → 진행 상황, 진척",
+      "hook": "프로그레스 → '프로그레스 바'(진행 표시줄) → 진행 상황",
+      "family": [
+        "congress",
+        "aggressive",
+        "regress",
+        "grade"
+      ]
+    }
   },
   {
     "id": "progressive",
@@ -5036,7 +6584,26 @@
       "ban",
       "bar"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞에"
+        },
+        {
+          "part": "hibit",
+          "ko": "붙잡다 (habere)"
+        }
+      ],
+      "origin": "라틴어 prohibere (앞에서 붙잡아 막다)",
+      "story": "가려는 사람 앞(pro)을 가로막고 붙잡는다(hibit) → 금지하다",
+      "family": [
+        "inhibit",
+        "exhibit",
+        "habit"
+      ]
+    }
   },
   {
     "id": "project",
@@ -5076,7 +6643,27 @@
       "repository",
       "codebase"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "ject",
+          "ko": "던지다"
+        }
+      ],
+      "origin": "라틴어 proicere (앞으로 던지다)",
+      "story": "앞으로(pro) 던져(ject) 놓은 계획 → 프로젝트, 과제 / 앞날로 던져 본다 → 예상하다",
+      "family": [
+        "object",
+        "reject",
+        "inject",
+        "projector"
+      ]
+    }
   },
   {
     "id": "project-level",
@@ -5098,7 +6685,20 @@
       "project-wide",
       "project-scoped"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "project",
+          "ko": "프로젝트"
+        },
+        {
+          "part": "level",
+          "ko": "수준, 층"
+        }
+      ],
+      "story": "파일 하나가 아니라 프로젝트(project) 전체 층(level)에 적용되는 → 프로젝트 수준의"
+    }
   },
   {
     "id": "project-specific",
@@ -5116,7 +6716,20 @@
         "ko": "프로젝트 전용의, 그 프로젝트에만 해당하는"
       }
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "project",
+          "ko": "프로젝트"
+        },
+        {
+          "part": "specific",
+          "ko": "특정한, ~에만 해당하는"
+        }
+      ],
+      "story": "다른 데는 말고 그 프로젝트(project)에만 딱 해당하는(specific) → 프로젝트 전용의"
+    }
   },
   {
     "id": "promise",
@@ -5179,7 +6792,36 @@
       "marketing",
       "advertising"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "mot",
+          "ko": "움직이다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 것"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 promovere (앞으로 움직이다)",
+      "story": "상품을 사람들 앞으로(pro) 밀어 움직여(mot) 알리는 → 홍보용의, 판촉의",
+      "hook": "프로모셔널 → 할인 '프로모션' 행사용 → 판촉의, 홍보용의",
+      "family": [
+        "promote",
+        "motion",
+        "motor",
+        "emotion"
+      ]
+    }
   },
   {
     "id": "prompt",
@@ -5221,7 +6863,28 @@
       "instruction",
       "query"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "mpt",
+          "ko": "꺼내다, 취하다 (emptus)"
+        }
+      ],
+      "origin": "라틴어 promptus (앞에 꺼내 놓은, 준비된)",
+      "story": "답이 바로 나오게 앞으로(pro) 꺼내(mpt) 놓는 말 → 프롬프트 / 요청하다, 촉발하다",
+      "hook": "프롬프트 → 방송 '프롬프터'가 대사를 띄워 준다 → 입력을 이끄는 문장",
+      "family": [
+        "exempt",
+        "redeem",
+        "premium",
+        "impromptu"
+      ]
+    }
   },
   {
     "id": "prompt-caching",
@@ -5239,7 +6902,21 @@
         "ko": "프롬프트 캐싱 (반복 앞부분을 캐시해 비용·지연 절감)"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "prompt",
+          "ko": "프롬프트"
+        },
+        {
+          "part": "caching",
+          "ko": "캐시에 넣어 두기"
+        }
+      ],
+      "origin": "cache ← 프랑스어 cacher (숨기다, 감춰 두다)",
+      "story": "되풀이되는 프롬프트(prompt) 앞부분을 창고(cache)에 넣어 두고 다시 쓴다 → 프롬프트 캐싱"
+    }
   },
   {
     "id": "prompt-injection",
@@ -5260,7 +6937,26 @@
     "forms": [
       "prompt injections"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "prompt",
+          "ko": "프롬프트"
+        },
+        {
+          "part": "injection",
+          "ko": "주입"
+        }
+      ],
+      "origin": "injection ← 라틴어 inicere (안으로 던져 넣다)",
+      "story": "입력 속에 몰래 지시를 던져 넣어(inject) 원래 프롬프트(prompt)를 가로챈다 → 프롬프트 인젝션",
+      "family": [
+        "inject",
+        "reject",
+        "project"
+      ]
+    }
   },
   {
     "id": "propagate",
@@ -5391,7 +7087,26 @@
       "share",
       "fraction"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "~에 대하여"
+        },
+        {
+          "part": "portion",
+          "ko": "몫, 부분"
+        }
+      ],
+      "origin": "라틴어 pro portione (각자의 몫에 따라)",
+      "story": "전체에 대하여(pro) 각 몫(portion)이 차지하는 크기 → 비율",
+      "family": [
+        "portion",
+        "part",
+        "apportion"
+      ]
+    }
   },
   {
     "id": "proportionally",
@@ -5413,7 +7128,34 @@
       "correspondingly",
       "accordingly"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "~에 맞춰"
+        },
+        {
+          "part": "portion",
+          "ko": "몫"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 pro portione (각자의 몫에 따라)",
+      "story": "각자의 몫(portion)에 맞춰(pro) 함께 늘고 준다 → 비례하여",
+      "family": [
+        "portion",
+        "apportion",
+        "disproportionate"
+      ]
+    }
   },
   {
     "id": "propose",
@@ -5450,7 +7192,28 @@
       "recommend",
       "put forward"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "pose",
+          "ko": "놓다"
+        }
+      ],
+      "origin": "라틴어 proponere (앞에 내놓다)",
+      "story": "내 생각을 사람들 앞에(pro) 내놓는다(pose) → 제안하다",
+      "hook": "프러포즈 → 결혼하자고 내미는 '프러포즈' → 제안하다",
+      "family": [
+        "compose",
+        "expose",
+        "suppose",
+        "purpose"
+      ]
+    }
   },
   {
     "id": "proprietary",
@@ -5472,7 +7235,26 @@
       "in-house",
       "closed-source"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "propri",
+          "ko": "자기 것의"
+        },
+        {
+          "part": "-ary",
+          "ko": "~에 속한"
+        }
+      ],
+      "origin": "라틴어 proprius (자기 자신의)",
+      "story": "한 회사가 자기 것(propri)으로 쥐고 밖에 열지 않는 → 독자적인, 사내 전용의",
+      "family": [
+        "property",
+        "proper",
+        "appropriate"
+      ]
+    }
   },
   {
     "id": "prose",
@@ -5527,7 +7309,26 @@
       "standard",
       "convention"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "proto-",
+          "ko": "맨 처음"
+        },
+        {
+          "part": "col",
+          "ko": "풀로 붙이다"
+        }
+      ],
+      "origin": "그리스어 prōtokollon (문서 맨 앞에 붙인 장)",
+      "story": "문서 맨 앞(proto)에 붙여(col) 둔 공식 기록이 지킬 규범이 됨 → 약속된 규약, 프로토콜",
+      "family": [
+        "prototype",
+        "protagonist",
+        "collagen"
+      ]
+    }
   },
   {
     "id": "prototype",
@@ -5559,7 +7360,26 @@
       "mock-up",
       "pilot"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "proto-",
+          "ko": "맨 처음"
+        },
+        {
+          "part": "type",
+          "ko": "틀, 본"
+        }
+      ],
+      "origin": "그리스어 prōtotypon (최초의 본)",
+      "story": "맨 처음(proto) 찍어 보는 본(type) → 시제품, 프로토타입",
+      "family": [
+        "protocol",
+        "typical",
+        "archetype"
+      ]
+    }
   },
   {
     "id": "prove",
@@ -5687,7 +7507,26 @@
       "give",
       "offer"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "pro-",
+          "ko": "미리"
+        },
+        {
+          "part": "vide",
+          "ko": "보다"
+        }
+      ],
+      "origin": "라틴어 providere (미리 내다보다)",
+      "story": "필요할 것을 미리(pro) 내다보고(vide) 챙겨 준다 → 제공하다, 주다",
+      "family": [
+        "provision",
+        "vision",
+        "evidence"
+      ]
+    }
   },
   {
     "id": "provider",
@@ -5713,7 +7552,25 @@
       "vendor",
       "source"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "provid",
+          "ko": "제공하다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 쪽"
+        }
+      ],
+      "story": "미리 내다보고 챙겨 주는(provide) 쪽(er) → 제공자, 공급자",
+      "family": [
+        "provision",
+        "supervisor",
+        "vision"
+      ]
+    }
   },
   {
     "id": "proxy",
@@ -5750,7 +7607,17 @@
       "forward",
       "intermediary"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "origin": "중세 영어 procuracy (대리 행위) 의 축약",
+      "story": "남의 일을 대신 맡아 처리하는 대리인(procuracy)이 줄어든 말 → 대신 전달하다, 대리 서버",
+      "hook": "프록시 → '프록시 서버'가 내 요청을 대신 전해 준다 → 대신 전달하다",
+      "family": [
+        "procure",
+        "procurement",
+        "curator"
+      ]
+    }
   },
   {
     "id": "publication",
@@ -5778,7 +7645,26 @@
     "synonyms": [
       "release"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "public",
+          "ko": "대중"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 publicare (대중에게 내놓다)",
+      "story": "글을 대중(public) 앞에 내놓는 일(ation) → 발행, 게시, 출판물",
+      "family": [
+        "public",
+        "publicity",
+        "republic"
+      ]
+    }
   },
   {
     "id": "publish",
@@ -5809,7 +7695,26 @@
       "release",
       "issue"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "publ",
+          "ko": "대중"
+        },
+        {
+          "part": "-ish",
+          "ko": "~하게 하다"
+        }
+      ],
+      "origin": "라틴어 publicare (대중에게 내놓다)",
+      "story": "글을 대중(public)이 다 보게 내놓는다 → 발행하다, 게시·공개하다",
+      "family": [
+        "public",
+        "publicity",
+        "republic"
+      ]
+    }
   },
   {
     "id": "pull",
@@ -5915,7 +7820,25 @@
       "buy",
       "acquire"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "pur-",
+          "ko": "끝까지, 앞으로"
+        },
+        {
+          "part": "chase",
+          "ko": "쫓다"
+        }
+      ],
+      "origin": "고대 프랑스어 porchacier (애써 쫓아 얻다)",
+      "story": "갖고 싶은 것을 끝까지(pur) 쫓아(chase) 손에 넣는다 → 구매하다, 구매",
+      "family": [
+        "chase",
+        "catch"
+      ]
+    }
   },
   {
     "id": "purchase-order",
@@ -5940,7 +7863,20 @@
     "synonyms": [
       "PO"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "purchase",
+          "ko": "구매"
+        },
+        {
+          "part": "order",
+          "ko": "주문"
+        }
+      ],
+      "story": "이만큼 구매(purchase)하겠다고 사는 쪽이 보내는 공식 주문(order) 문서 → 구매 주문서"
+    }
   },
   {
     "id": "pure",
@@ -5969,7 +7905,16 @@
       "sheer",
       "mere"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "origin": "라틴어 purus (깨끗한, 섞이지 않은)",
+      "story": "다른 것이 하나도 섞이지 않고 깨끗한(purus) → 순수한, 깨끗한",
+      "family": [
+        "purify",
+        "purity",
+        "impure"
+      ]
+    }
   },
   {
     "id": "purpose",
@@ -5999,7 +7944,26 @@
       "goal",
       "intent"
     ],
-    "domain": "계획·목표·전략"
+    "domain": "계획·목표·전략",
+    "memory": {
+      "roots": [
+        {
+          "part": "pur-",
+          "ko": "앞에"
+        },
+        {
+          "part": "pose",
+          "ko": "놓다"
+        }
+      ],
+      "origin": "고대 프랑스어 porposer (앞에 내놓다)",
+      "story": "이루려고 내 앞에(pur) 놓아 둔(pose) 것 → 목적, 의도",
+      "family": [
+        "propose",
+        "suppose",
+        "compose"
+      ]
+    }
   },
   {
     "id": "push",

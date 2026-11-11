@@ -34,7 +34,15 @@
       "acquire",
       "get"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "origin": "고대 프랑스어 gaaignier (벌다, 수확하다)",
+      "story": "밭을 갈아 수확을 거두듯 애써서 내 것으로 만든다 → 얻다, 확보하다, 이득",
+      "family": [
+        "regain",
+        "gainful"
+      ]
+    }
   },
   {
     "id": "gap",
@@ -64,7 +72,16 @@
       "omission",
       "shortfall"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "고대 노르드어 gap (벌어진 틈) ← gapa (입을 벌리다)",
+      "story": "입을 쩍 벌린(gape) 듯 사이가 벌어져 비어 있는 곳 → 빈틈, 공백",
+      "hook": "갭 → '세대 갭', '갭이 크다'의 그 갭 → 틈, 공백",
+      "family": [
+        "gape",
+        "agape"
+      ]
+    }
   },
   {
     "id": "garbage",
@@ -91,7 +108,11 @@
       "nonsense",
       "rubbish"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "story": "'garbage in, garbage out', 부엌 찌꺼기처럼 쓸모없는 출력·데이터 → 쓰레기",
+      "hook": "가비지 → '가비지 컬렉션'은 안 쓰는 메모리 쓰레기 수거 → 쓰레기"
+    }
   },
   {
     "id": "gate",
@@ -127,7 +148,12 @@
       "guard",
       "gatekeeper"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "고대 영어 geat (문, 통로)",
+      "story": "성문(gate)에서 검문을 통과해야만 안으로 들어간다 → 관문",
+      "hook": "게이트 → 공항 탑승 '게이트'를 통과해야 탄다 → 관문"
+    }
   },
   {
     "id": "gather",
@@ -163,7 +189,15 @@
       "compile",
       "assemble"
     ],
-    "domain": "검색·조회"
+    "domain": "검색·조회",
+    "memory": {
+      "origin": "고대 영어 gaderian (모으다), together와 한 뿌리",
+      "story": "흩어진 것을 한데(together) 끌어 모은다 → 모으다, 수집하다",
+      "family": [
+        "together",
+        "altogether"
+      ]
+    }
   },
   {
     "id": "general",
@@ -198,7 +232,27 @@
       "broad",
       "universal"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "gener",
+          "ko": "종류, 무리"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 generalis (종류 전체에 속하는)",
+      "story": "한 종류(gener) 전체에 두루 해당하는(al) → 일반적인, 범용의",
+      "hook": "제너럴 → 군 전체를 거느리는 '제너럴(장군)' → 전체에 걸친, 일반적인",
+      "family": [
+        "generic",
+        "genre",
+        "gender"
+      ]
+    }
   },
   {
     "id": "generalist",
@@ -228,7 +282,25 @@
       "all-rounder",
       "jack-of-all-trades"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "general",
+          "ko": "일반적인, 두루"
+        },
+        {
+          "part": "-ist",
+          "ko": "~하는 사람"
+        }
+      ],
+      "story": "한 우물만 파지 않고 두루(general) 다 하는 사람(ist) → 범용형(의)",
+      "family": [
+        "general",
+        "generalize",
+        "generic"
+      ]
+    }
   },
   {
     "id": "generalize",
@@ -260,7 +332,25 @@
       "extrapolate",
       "extend"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "general",
+          "ko": "일반적인"
+        },
+        {
+          "part": "-ize",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "story": "몇 가지 사례를 어디에나 통하는 일반(general) 규칙으로 만든다(ize) → 일반화하다",
+      "family": [
+        "general",
+        "generalist",
+        "generic"
+      ]
+    }
   },
   {
     "id": "generate",
@@ -297,7 +387,28 @@
       "create",
       "output"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "roots": [
+        {
+          "part": "gener",
+          "ko": "낳다"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 generare (낳다)",
+      "story": "없던 것을 새로 낳아(gener) 내놓는다(ate) → 생성하다, 만들어 내다",
+      "hook": "제너레이트 → 전기를 만들어 내는 '제너레이터(발전기)' → 생성하다",
+      "family": [
+        "generator",
+        "gene",
+        "genesis",
+        "regenerate"
+      ]
+    }
   },
   {
     "id": "generation",
@@ -326,7 +437,27 @@
       "creation",
       "production"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "roots": [
+        {
+          "part": "gener",
+          "ko": "낳다"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 generatio (낳음)",
+      "story": "낳아(gener) 내놓는 일(ation), 또 같은 때 태어난 무리 → 생성, 세대",
+      "hook": "제너레이션 → 세대 차이 '제너레이션 갭' → 세대, 생성",
+      "family": [
+        "generate",
+        "generator",
+        "regenerate"
+      ]
+    }
   },
   {
     "id": "generic",
@@ -356,7 +487,27 @@
       "nonspecific",
       "vague"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "gener",
+          "ko": "종류"
+        },
+        {
+          "part": "-ic",
+          "ko": "~의"
+        }
+      ],
+      "origin": "프랑스어 générique ← 라틴어 genus (종류)",
+      "story": "어느 한 상표가 아니라 그 종류(gener) 전체에 해당하는(ic) → 일반적인, 특정하지 않은",
+      "hook": "제네릭 → 상표 없는 복제약 '제네릭 의약품' → 특정하지 않은",
+      "family": [
+        "general",
+        "genre",
+        "genus"
+      ]
+    }
   },
   {
     "id": "genuine",
@@ -500,7 +651,11 @@
       "bug",
       "blip"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "story": "화면이 잠깐 지직거리다 금세 멀쩡해지는 순간 → (일시적인) 작은 오류, 결함",
+      "hook": "글리치 → 영상이 지직 깨지는 '글리치 효과' → 작은 오류"
+    }
   },
   {
     "id": "glob",
@@ -534,7 +689,11 @@
     "synonyms": [
       "wildcard pattern"
     ],
-    "domain": "검색·조회"
+    "domain": "검색·조회",
+    "memory": {
+      "origin": "초기 유닉스 프로그램 glob (global 의 줄임)",
+      "story": "별표(*) 패턴을 맞는 파일 이름 전체(global)로 펼쳐 주던 프로그램 → 글롭, 패턴으로 파일 찾기"
+    }
   },
   {
     "id": "global",
@@ -564,7 +723,27 @@
       "system-wide",
       "worldwide"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "glob",
+          "ko": "공, 지구"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 globus (공, 둥근 덩어리)",
+      "story": "둥근 지구(globe) 전체를 덮는(al) → 전역의, 세계적인",
+      "hook": "글로벌 → '글로벌 기업'처럼 온 세계에 걸친 → 세계적인, 전역의",
+      "family": [
+        "globe",
+        "globalize",
+        "globular"
+      ]
+    }
   },
   {
     "id": "go",
@@ -665,7 +844,26 @@
       "reference",
       "gold-standard"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "gold",
+          "ko": "금"
+        },
+        {
+          "part": "-en",
+          "ko": "~로 된"
+        }
+      ],
+      "story": "금(gold)으로 된(en) 듯 가장 값지고 변하지 않는 표준 → 기준 정답의",
+      "hook": "골든 → 퀴즈 '골든벨'의 정해진 정답 → 기준 정답의",
+      "family": [
+        "gold",
+        "gild",
+        "goldsmith"
+      ]
+    }
   },
   {
     "id": "good",
@@ -772,7 +970,25 @@
     "synonyms": [
       "buffer period"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "grace",
+          "ko": "호의, 봐줌"
+        },
+        {
+          "part": "period",
+          "ko": "기간"
+        }
+      ],
+      "story": "기한이 지나도 호의(grace)로 봐주는 기간(period) → 유예 기간",
+      "family": [
+        "graceful",
+        "gratitude",
+        "periodic"
+      ]
+    }
   },
   {
     "id": "gradually",
@@ -798,7 +1014,32 @@
       "incrementally",
       "slowly"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "grad",
+          "ko": "걸음, 단계"
+        },
+        {
+          "part": "-ual",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 gradus (걸음, 단계)",
+      "story": "한 걸음(grad)씩 단계를 밟아 가듯(ly) → 점차, 서서히",
+      "hook": "그래주얼리 → 색이 조금씩 변하는 '그러데이션'과 한 뿌리 → 점차",
+      "family": [
+        "grade",
+        "graduate",
+        "gradient",
+        "gradation"
+      ]
+    }
   },
   {
     "id": "grant",
@@ -835,7 +1076,16 @@
       "permit",
       "authorize"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "고대 프랑스어 graanter (승낙하다) ← 라틴어 credere (믿다)",
+      "story": "상대를 믿고(credere) 청을 승낙해 내어 준다 → (권한을) 부여하다",
+      "family": [
+        "credit",
+        "credential",
+        "creed"
+      ]
+    }
   },
   {
     "id": "grep",
@@ -867,7 +1117,11 @@
       "search",
       "scan"
     ],
-    "domain": "검색·조회"
+    "domain": "검색·조회",
+    "memory": {
+      "origin": "ed 편집기 명령 g/re/p",
+      "story": "전체에서(global) 정규식(regular expression)에 맞는 줄을 찍는다(print) → grep 검색(하다)"
+    }
   },
   {
     "id": "ground-truth",
@@ -937,7 +1191,25 @@
       "anchoring",
       "attribution"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "ground",
+          "ko": "땅, 근거"
+        },
+        {
+          "part": "-ing",
+          "ko": "~하기"
+        }
+      ],
+      "story": "답이 허공에 뜨지 않게 원문이라는 땅(ground)에 발을 붙이기(ing) → 근거 대기",
+      "family": [
+        "background",
+        "groundwork",
+        "underground"
+      ]
+    }
   },
   {
     "id": "group",
@@ -1003,7 +1275,26 @@
       "increase",
       "expansion"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "grow",
+          "ko": "자라다"
+        },
+        {
+          "part": "-th",
+          "ko": "~함(명사)"
+        }
+      ],
+      "origin": "고대 영어 grōwan (자라다)",
+      "story": "풀이 자라듯(grow) 불어나는 것(th) → 증가, 커짐",
+      "family": [
+        "grow",
+        "outgrow",
+        "grass"
+      ]
+    }
   },
   {
     "id": "guarantee",
@@ -1035,7 +1326,17 @@
       "ensure",
       "assure"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "origin": "고대 프랑스어 garant (보증인) — warrant 와 같은 뿌리",
+      "story": "탈이 나면 책임지겠다고 보증서(warranty)를 써 준다 → 보장하다, 보장",
+      "hook": "개런티 → 출연료 '개런티'는 받기로 보장된 돈 → 보장",
+      "family": [
+        "guarantor",
+        "warranty",
+        "warrant"
+      ]
+    }
   },
   {
     "id": "guard",
@@ -1071,7 +1372,18 @@
       "safeguard",
       "protection"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "고대 프랑스어 garder (지키다) — ward 와 같은 뿌리",
+      "story": "문 앞에 지켜 서서 나쁜 것이 못 들어오게 막는다 → 방지 장치, 지키다",
+      "hook": "가드 → 권투에서 팔을 올려 막는 '가드' → 막다, 지키다",
+      "family": [
+        "guardian",
+        "safeguard",
+        "ward",
+        "warden"
+      ]
+    }
   },
   {
     "id": "guardrail",
@@ -1100,7 +1412,26 @@
       "safeguard",
       "constraint"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "guard",
+          "ko": "지키다"
+        },
+        {
+          "part": "rail",
+          "ko": "난간"
+        }
+      ],
+      "story": "차가 길 밖으로 못 나가게 지키는(guard) 난간(rail) → 벗어나지 않게 하는 안전장치",
+      "hook": "가드레일 → 도로 가의 '가드레일'처럼 이탈을 막는다 → 안전장치",
+      "family": [
+        "guardian",
+        "safeguard",
+        "railway"
+      ]
+    }
   },
   {
     "id": "guess",
@@ -1189,7 +1520,25 @@
       "instructions",
       "advice"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "guid",
+          "ko": "이끌다"
+        },
+        {
+          "part": "-ance",
+          "ko": "~하는 것"
+        }
+      ],
+      "story": "어디로 갈지 이끌어(guide) 주는 것(ance) → 지침, 안내",
+      "family": [
+        "guide",
+        "guideline",
+        "misguided"
+      ]
+    }
   },
   {
     "id": "guide",
@@ -1225,7 +1574,17 @@
       "manual",
       "handbook"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "고대 프랑스어 guider (길을 보여 주다)",
+      "story": "앞장서 길을 보여 주는 사람, 또는 그런 책 → 안내서, 이끌다",
+      "hook": "가이드 → 여행 '가이드'가 앞에서 길을 잡는다 → 이끌다, 안내자",
+      "family": [
+        "guidance",
+        "guideline",
+        "misguide"
+      ]
+    }
   },
   {
     "id": "guideline",
@@ -1251,6 +1610,24 @@
       "standard",
       "principle"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "guide",
+          "ko": "이끌다"
+        },
+        {
+          "part": "line",
+          "ko": "선"
+        }
+      ],
+      "story": "벗어나지 않게 이끌어(guide) 주는 선(line) → 지침, 가이드라인",
+      "family": [
+        "guidance",
+        "outline",
+        "deadline"
+      ]
+    }
   }
 ]

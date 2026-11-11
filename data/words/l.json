@@ -25,7 +25,17 @@
     "synonyms": [
       "laboratory"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "origin": "laboratory 의 줄임 ← 라틴어 laborare (일하다)",
+      "story": "일하고(labor) 실험하는 곳(laboratory)을 줄인 말 → 실험실, 검사실",
+      "hook": "랩 → 대학원 '랩실' → 실험실, 연구소",
+      "family": [
+        "labor",
+        "elaborate",
+        "collaborate"
+      ]
+    }
   },
   {
     "id": "label",
@@ -67,7 +77,12 @@
       "tag",
       "classify"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "고대 프랑스어 label (리본, 천 조각)",
+      "story": "옷에 달린 천 조각 꼬리표처럼 무엇인지 적어 붙인다 → 라벨, 라벨을 붙이다",
+      "hook": "라벨 → 병에 붙은 '라벨' 스티커 → 분류 표시"
+    }
   },
   {
     "id": "lack",
@@ -99,7 +114,10 @@
       "be without",
       "be short of"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "story": "있어야 할 자리가 텅 비어 모자란다 → ~이 없다, 부족하다"
+    }
   },
   {
     "id": "landscape",
@@ -302,7 +320,25 @@
     "synonyms": [
       "long-context"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "larger",
+          "ko": "더 큰"
+        },
+        {
+          "part": "context",
+          "ko": "컨텍스트"
+        }
+      ],
+      "story": "한 번에 담는 컨텍스트(context) 창이 더 큰(larger) → (컨텍스트 창이) 더 큰",
+      "family": [
+        "enlarge",
+        "largely",
+        "contextual"
+      ]
+    }
   },
   {
     "id": "last",
@@ -363,7 +399,22 @@
       "delay",
       "lag"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "lat",
+          "ko": "숨다"
+        },
+        {
+          "part": "-ency",
+          "ko": "~인 상태"
+        }
+      ],
+      "origin": "라틴어 latere (숨어 있다)",
+      "story": "응답이 아직 숨어(lat) 드러나지 않은 채 기다리는 동안(ency) → 지연 시간",
+      "hook": "레이턴시 → '레이트(late, 늦은)'가 들린다 → 지연 시간"
+    }
   },
   {
     "id": "later",
@@ -434,7 +485,17 @@
       "start",
       "release"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "origin": "고대 프랑스어 lancier (창을 던지다) ← 라틴어 lancea (창)",
+      "story": "창(lance)을 힘껏 던지듯 세상에 쏘아 내보낸다 → 출시, 시작하다",
+      "hook": "론치 → 신제품 '론칭' 행사 → 출시",
+      "family": [
+        "lance",
+        "lancer",
+        "freelance"
+      ]
+    }
   },
   {
     "id": "lay-out",
@@ -468,7 +529,25 @@
       "organize",
       "set out"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "lay",
+          "ko": "놓다"
+        },
+        {
+          "part": "out",
+          "ko": "밖으로, 펼쳐"
+        }
+      ],
+      "story": "물건을 밖으로(out) 펼쳐 놓아(lay) 한눈에 보이게 한다 → 배치하다, 펼쳐 설명하다",
+      "family": [
+        "layout",
+        "layer",
+        "outline"
+      ]
+    }
   },
   {
     "id": "layer",
@@ -495,7 +574,26 @@
       "tier",
       "level"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "lay",
+          "ko": "놓다"
+        },
+        {
+          "part": "-er",
+          "ko": "~한 것"
+        }
+      ],
+      "story": "한 겹씩 깔아 놓은(lay) 것(er) → 계층, 층",
+      "hook": "레이어 → 포토샵 '레이어', 겹쳐 입는 '레이어드 룩' → 층, 계층",
+      "family": [
+        "layout",
+        "overlay",
+        "layoff"
+      ]
+    }
   },
   {
     "id": "layout",
@@ -521,7 +619,25 @@
       "structure",
       "format"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "lay",
+          "ko": "놓다"
+        },
+        {
+          "part": "out",
+          "ko": "펼쳐"
+        }
+      ],
+      "story": "펼쳐(out) 놓은(lay) 모양새 → 배치, 구성, 레이아웃",
+      "family": [
+        "layer",
+        "overlay",
+        "outline"
+      ]
+    }
   },
   {
     "id": "lazily",
@@ -605,7 +721,17 @@
       "head",
       "result in"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "origin": "고대 영어 lǣdan (이끌다, 데려가다)",
+      "story": "맨 앞에서 길을 잡고 데려간다, 그렇게 앞장서는 사람 → 이끌다, (팀의) 리드",
+      "hook": "리드 → '리더'가 팀을 리드한다 → 이끌다, 책임자",
+      "family": [
+        "leader",
+        "mislead",
+        "leadership"
+      ]
+    }
   },
   {
     "id": "leaderboard",
@@ -630,7 +756,25 @@
       "ranking",
       "rankings"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "leader",
+          "ko": "선두"
+        },
+        {
+          "part": "board",
+          "ko": "판"
+        }
+      ],
+      "story": "선두(leader)부터 차례로 이름을 적어 건 판(board) → 리더보드, 순위표",
+      "family": [
+        "leadership",
+        "scoreboard",
+        "dashboard"
+      ]
+    }
   },
   {
     "id": "leak",
@@ -732,7 +876,16 @@
     "synonyms": [
       "at minimum"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "고대 영어 lǣst (가장 작은) — less 의 최상급",
+      "story": "적은(little)·더 적은(less)·가장 적은(least), 아무리 적게 잡아도 → 적어도, 가장 적게",
+      "family": [
+        "less",
+        "lesser",
+        "lessen"
+      ]
+    }
   },
   {
     "id": "leave",
@@ -775,7 +928,11 @@
       "left",
       "leaving"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "origin": "고대 영어 lǣfan (남겨 두다)",
+      "story": "내가 떠나면 물건은 그 자리에 그대로 남는다 → 두다, 남겨 두다, 떠나다"
+    }
   },
   {
     "id": "legacy",
@@ -802,7 +959,27 @@
       "old",
       "outdated"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "leg",
+          "ko": "법으로 맡기다, 물려주다"
+        },
+        {
+          "part": "-acy",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 legare (유언으로 물려주다)",
+      "story": "앞사람이 물려주어(leg) 좋든 싫든 떠안은 유산(acy) → 레거시, 오래된 기존 시스템",
+      "family": [
+        "delegate",
+        "legate",
+        "relegate",
+        "legal"
+      ]
+    }
   },
   {
     "id": "legal",
@@ -830,7 +1007,27 @@
     "synonyms": [
       "lawful"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "leg",
+          "ko": "법"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 legalis ← lex (법)",
+      "story": "법(leg)에 관한(al) → 법률의, 법적인",
+      "family": [
+        "legislate",
+        "legitimate",
+        "illegal",
+        "loyal"
+      ]
+    }
   },
   {
     "id": "legitimate",
@@ -860,7 +1057,26 @@
       "genuine",
       "justified"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "legitim",
+          "ko": "법에 맞는"
+        },
+        {
+          "part": "-ate",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 legitimus (법에 맞는) ← lex (법)",
+      "story": "법(leg)에 비춰 봐도 떳떳해 근거가 서는 → 정당한, 타당한",
+      "family": [
+        "legal",
+        "legislate",
+        "privilege"
+      ]
+    }
   },
   {
     "id": "length",
@@ -890,7 +1106,26 @@
       "size",
       "duration"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "leng",
+          "ko": "긴(long)"
+        },
+        {
+          "part": "-th",
+          "ko": "~함(명사)"
+        }
+      ],
+      "origin": "고대 영어 lengðu ← lang (긴)",
+      "story": "얼마나 긴지(long), 긴 정도(th) → 길이, 분량",
+      "family": [
+        "long",
+        "lengthen",
+        "linger"
+      ]
+    }
   },
   {
     "id": "lengthy",
@@ -1080,7 +1315,16 @@
       "layer",
       "degree"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "라틴어 libella (수평 재는 작은 저울) ← libra (저울)",
+      "story": "저울(libra)로 수평을 맞춰 잰 높이 → 레벨, 수준",
+      "hook": "레벨 → 게임의 '레벨 업' → 수준, 단계",
+      "family": [
+        "equilibrium",
+        "deliberate"
+      ]
+    }
   },
   {
     "id": "lever",
@@ -1111,7 +1355,28 @@
       "tool",
       "knob"
     ],
-    "domain": "계획·목표·전략"
+    "domain": "계획·목표·전략",
+    "memory": {
+      "roots": [
+        {
+          "part": "lev",
+          "ko": "들어 올리다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "고대 프랑스어 levier ← 라틴어 levare (들어 올리다)",
+      "story": "작은 힘으로 큰 것을 들어 올리는(lev) 막대(er) → 지렛대, (조절) 수단",
+      "hook": "레버 → 당기면 기계가 움직이는 '레버' → 조절 수단",
+      "family": [
+        "leverage",
+        "elevate",
+        "relieve",
+        "alleviate"
+      ]
+    }
   },
   {
     "id": "library",
@@ -1144,7 +1409,25 @@
       "package",
       "module"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "libr",
+          "ko": "책"
+        },
+        {
+          "part": "-ary",
+          "ko": "~이 있는 곳"
+        }
+      ],
+      "origin": "라틴어 librarium (책 상자) ← liber (책)",
+      "story": "책(libr)을 모아 둔 곳(ary)에서 빌려 쓰듯 가져다 쓰는 코드 모음 → 라이브러리, 도서관",
+      "family": [
+        "librarian",
+        "libretto"
+      ]
+    }
   },
   {
     "id": "license",
@@ -1180,7 +1463,27 @@
       "permit",
       "authorization"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "lic",
+          "ko": "허락되다"
+        },
+        {
+          "part": "-ense",
+          "ko": "~함(명사)"
+        }
+      ],
+      "origin": "라틴어 licentia ← licere (허락되다)",
+      "story": "해도 된다(lic)는 허락을 문서로 받은 것 → 라이선스, 사용 허가, 면허",
+      "hook": "라이선스 → 운전 '라이선스(면허)' → 허가, 면허",
+      "family": [
+        "licensee",
+        "illicit",
+        "leisure"
+      ]
+    }
   },
   {
     "id": "lifecycle",
@@ -1206,7 +1509,26 @@
     "synonyms": [
       "life cycle"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "life",
+          "ko": "삶, 수명"
+        },
+        {
+          "part": "cycle",
+          "ko": "주기, 순환"
+        }
+      ],
+      "story": "만들어져 쓰이다 사라지기까지 삶(life)이 한 바퀴(cycle) 돈다 → 수명 주기",
+      "family": [
+        "lifetime",
+        "lifelong",
+        "recycle",
+        "bicycle"
+      ]
+    }
   },
   {
     "id": "lifetime",
@@ -1235,7 +1557,26 @@
       "lifespan",
       "duration"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "life",
+          "ko": "삶"
+        },
+        {
+          "part": "time",
+          "ko": "시간"
+        }
+      ],
+      "story": "살아(life) 있는 동안의 시간(time) → 수명, 유효 시간",
+      "family": [
+        "lifecycle",
+        "lifelong",
+        "timeline",
+        "overtime"
+      ]
+    }
   },
   {
     "id": "lightweight",
@@ -1258,7 +1599,25 @@
       "lean",
       "simple"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "light",
+          "ko": "가벼운"
+        },
+        {
+          "part": "weight",
+          "ko": "무게"
+        }
+      ],
+      "story": "무게(weight)가 가벼운(light), 권투의 라이트급처럼 → 가벼운, 경량의",
+      "family": [
+        "lighten",
+        "heavyweight",
+        "weigh"
+      ]
+    }
   },
   {
     "id": "like",
@@ -1383,7 +1742,17 @@
       "restrict",
       "constrain"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "라틴어 limes (밭 사이의 경계)",
+      "story": "여기까지라고 그어 놓은 경계선, 그 선을 넘지 못하게 한다 → 한도, 제한하다",
+      "hook": "리미트 → 한정판 '리미티드 에디션' → 한도, 제한",
+      "family": [
+        "limitation",
+        "unlimited",
+        "delimit"
+      ]
+    }
   },
   {
     "id": "line",
@@ -1442,7 +1811,25 @@
       "item",
       "entry"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "line",
+          "ko": "줄"
+        },
+        {
+          "part": "item",
+          "ko": "항목"
+        }
+      ],
+      "story": "청구서에서 한 줄(line)에 하나씩 적힌 항목(item) → 품목 행",
+      "family": [
+        "outline",
+        "deadline",
+        "itemize"
+      ]
+    }
   },
   {
     "id": "lint",
@@ -1471,7 +1858,11 @@
       "linter",
       "lints"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "origin": "옷의 보풀 lint 에서 딴 유닉스 검사 도구 이름",
+      "story": "옷에 붙은 보풀(lint)을 떼어 내듯 코드의 자잘한 흠을 골라낸다 → 린트(하다)"
+    }
   },
   {
     "id": "list",
@@ -1619,7 +2010,18 @@
       "reside",
       "sit"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "고대 영어 libban (살다)",
+      "story": "사람이 집에 살듯 코드도 어느 파일에 '산다', 살아 움직이는 채로 → ~에 있다, 살다, 실시간의",
+      "hook": "라이브 → 살아 있는 실시간 '라이브 방송' → 실시간의, 운영 중인",
+      "family": [
+        "life",
+        "alive",
+        "lively",
+        "livelihood"
+      ]
+    }
   },
   {
     "id": "llm",
@@ -1643,7 +2045,11 @@
     "synonyms": [
       "language model"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "Large Language Model",
+      "story": "엄청나게 큰(Large) 글 뭉치로 말(Language)을 익힌 모델(Model) → 대규모 언어 모델"
+    }
   },
   {
     "id": "load",
@@ -1687,7 +2093,18 @@
       "import",
       "read in"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "origin": "고대 영어 lād (나름, 운반)",
+      "story": "수레에 짐을 싣듯 메모리에 올려 싣는다, 실린 짐의 무게 → 불러오다, 부하",
+      "hook": "로드 → 화면의 '로딩 중…' → 불러오다",
+      "family": [
+        "unload",
+        "download",
+        "upload",
+        "overload"
+      ]
+    }
   },
   {
     "id": "load-balancer",
@@ -1710,7 +2127,25 @@
       "load balancing",
       "balancer"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "load",
+          "ko": "짐, 부하"
+        },
+        {
+          "part": "balancer",
+          "ko": "균형 잡는 것"
+        }
+      ],
+      "story": "몰려드는 짐(load)을 저울질해 고르게 나눠(balance) 주는 것(er) → 로드 밸런서",
+      "family": [
+        "overload",
+        "download",
+        "imbalance"
+      ]
+    }
   },
   {
     "id": "local",
@@ -1743,7 +2178,28 @@
       "on-device",
       "localized"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "loc",
+          "ko": "장소"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 localis ← locus (장소)",
+      "story": "먼 서버가 아니라 바로 이 장소(loc)의(al) → 로컬의, 내 컴퓨터·환경의",
+      "hook": "로컬 → 그 동네의 '로컬 맛집' → 내 자리의, 로컬의",
+      "family": [
+        "locate",
+        "location",
+        "allocate",
+        "locomotive"
+      ]
+    }
   },
   {
     "id": "locate",
@@ -1775,7 +2231,27 @@
       "pinpoint",
       "track down"
     ],
-    "domain": "검색·조회"
+    "domain": "검색·조회",
+    "memory": {
+      "roots": [
+        {
+          "part": "loc",
+          "ko": "장소"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 locare (자리에 두다)",
+      "story": "어느 장소(loc)에 있는지 짚어 낸다(ate) → (위치를) 찾아내다",
+      "family": [
+        "local",
+        "allocate",
+        "relocate",
+        "dislocate"
+      ]
+    }
   },
   {
     "id": "location",
@@ -1801,7 +2277,27 @@
       "place",
       "spot"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "loc",
+          "ko": "장소"
+        },
+        {
+          "part": "-ation",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 locatio (자리에 둠)",
+      "story": "무엇이 놓여(locate) 있는 그 자리(ion) → 위치, 장소",
+      "hook": "로케이션 → 영화 '로케(로케이션) 촬영'지 → 위치, 장소",
+      "family": [
+        "local",
+        "allocate",
+        "relocate"
+      ]
+    }
   },
   {
     "id": "lock",
@@ -1833,7 +2329,18 @@
       "mutex",
       "latch"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "고대 영어 loc (빗장, 잠금장치)",
+      "story": "내가 쓰는 동안 남이 못 들어오게 빗장을 건다 → 락, 잠금(을 걸다)",
+      "hook": "락 → 잠가 두는 사물함 '라커(locker)' → 잠금",
+      "family": [
+        "locker",
+        "unlock",
+        "deadlock",
+        "lockfile"
+      ]
+    }
   },
   {
     "id": "lockfile",
@@ -1858,7 +2365,25 @@
     "synonyms": [
       "lock file"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "lock",
+          "ko": "잠금"
+        },
+        {
+          "part": "file",
+          "ko": "파일"
+        }
+      ],
+      "story": "패키지 버전이 움직이지 않게 잠가(lock) 적어 둔 파일(file) → 락파일",
+      "family": [
+        "unlock",
+        "deadlock",
+        "filename"
+      ]
+    }
   },
   {
     "id": "log",
@@ -1891,7 +2416,17 @@
       "record",
       "journal"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "origin": "항해 일지 logbook 의 줄임 — log (통나무)",
+      "story": "통나무(log)를 바다에 던져 배 속도를 재고 날마다 적던 일지 → 로그, 기록하다",
+      "family": [
+        "logbook",
+        "login",
+        "blog",
+        "backlog"
+      ]
+    }
   },
   {
     "id": "logic",
@@ -1921,7 +2456,27 @@
       "reasoning",
       "rules"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "log",
+          "ko": "말, 이치"
+        },
+        {
+          "part": "-ic",
+          "ko": "~의 기술"
+        }
+      ],
+      "origin": "그리스어 logikē ← logos (말, 이성)",
+      "story": "말(log)의 앞뒤가 맞는지 이치를 따지는 것(ic) → 로직, 논리",
+      "family": [
+        "logical",
+        "dialogue",
+        "apology",
+        "catalog"
+      ]
+    }
   },
   {
     "id": "login",
@@ -2042,7 +2597,25 @@
       "durable",
       "persistent"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "long",
+          "ko": "긴"
+        },
+        {
+          "part": "lived",
+          "ko": "수명을 가진"
+        }
+      ],
+      "story": "긴(long) 수명(life)을 가진(d) → 수명이 긴, 오래 유효한",
+      "family": [
+        "short-lived",
+        "lifelong",
+        "longevity"
+      ]
+    }
   },
   {
     "id": "long-running",
@@ -2068,7 +2641,25 @@
       "extended",
       "prolonged"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "long",
+          "ko": "오래"
+        },
+        {
+          "part": "running",
+          "ko": "실행되는"
+        }
+      ],
+      "story": "오래(long) 달리고(running) 있는 → 장시간 실행되는, 오래 이어지는",
+      "family": [
+        "long-lived",
+        "runtime",
+        "runner"
+      ]
+    }
   },
   {
     "id": "look",
@@ -2143,7 +2734,25 @@
       "retrieval",
       "search"
     ],
-    "domain": "검색·조회"
+    "domain": "검색·조회",
+    "memory": {
+      "roots": [
+        {
+          "part": "look",
+          "ko": "보다"
+        },
+        {
+          "part": "up",
+          "ko": "찾아, 위로"
+        }
+      ],
+      "story": "사전을 펼쳐 낱말을 찾아(up) 본다(look) → 조회",
+      "family": [
+        "outlook",
+        "overlook",
+        "lookout"
+      ]
+    }
   },
   {
     "id": "loop",
@@ -2183,7 +2792,11 @@
       "cycle",
       "iteration"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "story": "끈을 둥글게 돌려 만든 고리, 끝이 처음으로 돌아와 계속 돈다 → 루프, 반복하다",
+      "hook": "루프 → 빙글 한 바퀴 도는 '루프 코스터' → 반복, 순환"
+    }
   },
   {
     "id": "loss",
@@ -2216,7 +2829,16 @@
       "losses",
       "loses"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "origin": "고대 영어 los (잃음, 파멸) — lose 와 같은 뿌리",
+      "story": "잃어(lose) 손에서 빠져나간 몫 → 손실, 잃음",
+      "family": [
+        "lose",
+        "lost",
+        "lossless"
+      ]
+    }
   },
   {
     "id": "lost-in-the-middle",
@@ -2237,7 +2859,24 @@
     "forms": [
       "lost in the middle"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "lost",
+          "ko": "잃은, 묻힌"
+        },
+        {
+          "part": "in",
+          "ko": "~에서"
+        },
+        {
+          "part": "middle",
+          "ko": "한가운데"
+        }
+      ],
+      "story": "긴 입력의 한가운데(middle)에서(in) 길을 잃고(lost) 묻힌다 → 중간 정보를 놓치는 현상"
+    }
   },
   {
     "id": "low",
@@ -2304,6 +2943,24 @@
       "decrease",
       "cut"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "low",
+          "ko": "낮은"
+        },
+        {
+          "part": "-er",
+          "ko": "더 ~한"
+        }
+      ],
+      "story": "더(er) 낮은(low) 쪽으로 끌어내린다 → 낮추다, 더 낮은",
+      "family": [
+        "low",
+        "below",
+        "lowercase"
+      ]
+    }
   }
 ]

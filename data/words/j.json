@@ -25,7 +25,25 @@
       "jailbroken",
       "jailbreaking"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "jail",
+          "ko": "감옥"
+        },
+        {
+          "part": "break",
+          "ko": "부수다"
+        }
+      ],
+      "story": "감옥(jail)을 부수고(break) 나오듯 걸어 둔 안전 규칙을 뚫는다 → 탈옥",
+      "family": [
+        "breakout",
+        "breakthrough",
+        "jailer"
+      ]
+    }
   },
   {
     "id": "jitter",
@@ -50,7 +68,10 @@
     "forms": [
       "jittered"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "story": "긴장해 손이 달달 떨리듯 재시도 간격을 일부러 조금씩 흔든다 → 지터, 무작위 지연"
+    }
   },
   {
     "id": "job",
@@ -102,7 +123,11 @@
         "ko": "JSON-RPC(원격 함수 호출 프로토콜)"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "JavaScript Object Notation + Remote Procedure Call",
+      "story": "JSON 형식으로 멀리(Remote) 있는 함수(Procedure)를 부른다(Call) → JSON 원격 호출 프로토콜"
+    }
   },
   {
     "id": "judge",
@@ -142,7 +167,17 @@
       "determine",
       "decide"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "origin": "라틴어 judex (법을 말하는 사람) ← jus (법) + dicere (말하다)",
+      "story": "법(jus)을 말해(dicere) 옳고 그름을 가려 준다 → 판단하다, 판정자",
+      "family": [
+        "justice",
+        "judicial",
+        "jury",
+        "prejudice"
+      ]
+    }
   },
   {
     "id": "junior",
@@ -170,7 +205,17 @@
       "inexperienced",
       "subordinate"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "origin": "라틴어 junior (더 젊은) ← juvenis (젊은)",
+      "story": "둘 중 더 젊은(junior) 쪽, 그만큼 경험이 적은 → (경력이) 낮은, 후배",
+      "hook": "주니어 → '주니어 개발자' → 신입의, 경력이 낮은",
+      "family": [
+        "juvenile",
+        "rejuvenate",
+        "young"
+      ]
+    }
   },
   {
     "id": "just",
@@ -227,6 +272,10 @@
     "forms": [
       "json web token"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "JSON Web Token",
+      "story": "웹(Web)에서 주고받는 JSON 모양의 증표(Token) → 서명된 JSON 인증 토큰"
+    }
   }
 ]

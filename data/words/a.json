@@ -30,7 +30,25 @@
       "discard",
       "drop"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "roots": [
+        {
+          "part": "a-",
+          "ko": "~에"
+        },
+        {
+          "part": "bandon",
+          "ko": "남의 권한, 처분"
+        }
+      ],
+      "origin": "고대 프랑스어 a bandon (남의 처분에 맡겨)",
+      "story": "남의 처분(bandon)에(a) 맡기고 손을 뗀다 → 버리다, 포기하다",
+      "family": [
+        "ban",
+        "banish"
+      ]
+    }
   },
   {
     "id": "ability",
@@ -59,7 +77,26 @@
       "capability",
       "capacity"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "abil",
+          "ko": "할 수 있는(able)"
+        },
+        {
+          "part": "-ity",
+          "ko": "~함, 성질"
+        }
+      ],
+      "origin": "라틴어 habilitas (다루기 쉬움, 적성)",
+      "story": "할 수 있는(able) 성질(ity) → 능력, 역량",
+      "family": [
+        "able",
+        "enable",
+        "disable"
+      ]
+    }
   },
   {
     "id": "able",
@@ -119,7 +156,25 @@
       "terminate",
       "halt"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "roots": [
+        {
+          "part": "ab-",
+          "ko": "떨어져, 벗어나"
+        },
+        {
+          "part": "ort",
+          "ko": "생겨나다"
+        }
+      ],
+      "origin": "라틴어 aboriri (태어나지 못하고 스러지다)",
+      "story": "생겨나던(ort) 것이 도중에 떨어져(ab) 나간다 → 중단하다, 도중에 그만두다",
+      "family": [
+        "origin",
+        "orient"
+      ]
+    }
   },
   {
     "id": "above",
@@ -234,7 +289,31 @@
       "completely",
       "totally"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "ab-",
+          "ko": "떨어져"
+        },
+        {
+          "part": "solut",
+          "ko": "풀다"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 absolutus (풀려난, 제약 없는)",
+      "story": "모든 조건에서 풀려(solut) 떨어져(ab) 걸리는 것이 없게(ly) → 완전히, 절대적으로",
+      "family": [
+        "solve",
+        "resolve",
+        "dissolve",
+        "solution"
+      ]
+    }
   },
   {
     "id": "abstraction",
@@ -260,7 +339,31 @@
       "abstractions",
       "abstract"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "abs-",
+          "ko": "떨어져"
+        },
+        {
+          "part": "tract",
+          "ko": "끌다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 abstrahere (끌어 떼어 내다)",
+      "story": "세부에서 핵심만 끌어(tract) 떼어(abs) 낸 것(ion) → 추상화",
+      "family": [
+        "attract",
+        "extract",
+        "contract",
+        "tractor"
+      ]
+    }
   },
   {
     "id": "abusive",
@@ -289,7 +392,31 @@
       "offensive",
       "insulting"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "ab-",
+          "ko": "벗어나"
+        },
+        {
+          "part": "us",
+          "ko": "쓰다(use)"
+        },
+        {
+          "part": "-ive",
+          "ko": "~하는 성질의"
+        }
+      ],
+      "origin": "라틴어 abuti (잘못 쓰다, 써서 없애다)",
+      "story": "바른 쓰임(us)에서 벗어나(ab) 말과 힘을 함부로 쓰는(ive) → 악의적인, 폭언이 담긴",
+      "family": [
+        "use",
+        "misuse",
+        "usage",
+        "utility"
+      ]
+    }
   },
   {
     "id": "academic",
@@ -318,7 +445,27 @@
     "synonyms": [
       "scholarly"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "academ",
+          "ko": "학원(academy)"
+        },
+        {
+          "part": "-ic",
+          "ko": "~의"
+        }
+      ],
+      "origin": "그리스어 Akadēmeia (플라톤이 가르친 학원)",
+      "story": "플라톤이 가르치던 학원 아카데메이아(academ)의(ic) → 학술의, 학계의",
+      "hook": "아카데믹 → '아카데미(학원)'의 것 → 학술의",
+      "family": [
+        "academy",
+        "academia",
+        "academician"
+      ]
+    }
   },
   {
     "id": "accept",
@@ -361,7 +508,27 @@
       "admit",
       "approve"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "ac-",
+          "ko": "~쪽으로"
+        },
+        {
+          "part": "cept",
+          "ko": "잡다, 받다"
+        }
+      ],
+      "origin": "라틴어 accipere (받아 쥐다)",
+      "story": "내 쪽으로(ac) 오는 것을 받아 쥔다(cept) → 받아들이다, 허용하다",
+      "family": [
+        "except",
+        "concept",
+        "receive",
+        "capture"
+      ]
+    }
   },
   {
     "id": "access",
@@ -399,7 +566,28 @@
       "permission",
       "reach"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "ac-",
+          "ko": "~쪽으로"
+        },
+        {
+          "part": "cess",
+          "ko": "가다"
+        }
+      ],
+      "origin": "라틴어 accedere (다가가다)",
+      "story": "대상 쪽으로(ac) 걸어가(cess) 닿는다 → 접근, 접근하다",
+      "hook": "액세스 → '액세스 권한'의 그 액세스 → 접근 (권한)",
+      "family": [
+        "process",
+        "success",
+        "exceed",
+        "recess"
+      ]
+    }
   },
   {
     "id": "accidental",
@@ -594,7 +782,31 @@
       "as per",
       "in accordance with"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "ac-",
+          "ko": "~에"
+        },
+        {
+          "part": "cord",
+          "ko": "마음"
+        },
+        {
+          "part": "to",
+          "ko": "~에"
+        }
+      ],
+      "origin": "라틴어 accordare (마음을 맞추다)",
+      "story": "그 말에(to) 마음(cord)을 맞춰(ac) 그대로 따른다 → ~에 따르면, ~에 따라",
+      "family": [
+        "accord",
+        "record",
+        "cordial",
+        "concord"
+      ]
+    }
   },
   {
     "id": "account",
@@ -629,7 +841,26 @@
       "accounting",
       "accountable"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "ac-",
+          "ko": "~에"
+        },
+        {
+          "part": "count",
+          "ko": "세다"
+        }
+      ],
+      "origin": "고대 프랑스어 acont (셈, 계산)",
+      "story": "누구 몫인지 하나하나 세어(count) 장부에(ac) 적고 밝힌다 → 계정, 설명",
+      "family": [
+        "count",
+        "discount",
+        "recount"
+      ]
+    }
   },
   {
     "id": "accumulate",
@@ -890,7 +1121,26 @@
       "throughout",
       "over"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "a-",
+          "ko": "~로, ~에"
+        },
+        {
+          "part": "cross",
+          "ko": "십자, 가로지름"
+        }
+      ],
+      "origin": "앵글로프랑스어 an cros (십자 모양으로)",
+      "story": "십자(cross)로(a) 이 끝에서 저 끝까지 가로지르니 → ~ 전체에 걸쳐, 두루",
+      "family": [
+        "cross",
+        "crossroad",
+        "crossing"
+      ]
+    }
   },
   {
     "id": "act",
@@ -965,7 +1215,28 @@
       "measure",
       "operation"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "act",
+          "ko": "하다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 actio ← agere (하다, 몰다)",
+      "story": "생각에 그치지 않고 실제로 하는(act) 것(ion) → 행동, 조치, 동작",
+      "hook": "액션 → '액션 영화'의 액션 → 행동, 동작",
+      "family": [
+        "act",
+        "react",
+        "agent",
+        "active"
+      ]
+    }
   },
   {
     "id": "actionable",
@@ -991,7 +1262,30 @@
       "practical",
       "usable"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "act",
+          "ko": "하다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 것"
+        },
+        {
+          "part": "-able",
+          "ko": "~할 수 있는"
+        }
+      ],
+      "story": "읽고 곧장 조치(action)를 취할 수 있는(able) → 바로 조치할 수 있는",
+      "family": [
+        "act",
+        "react",
+        "transaction",
+        "agenda"
+      ]
+    }
   },
   {
     "id": "activate",
@@ -1024,7 +1318,25 @@
       "trigger",
       "turn on"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "roots": [
+        {
+          "part": "activ",
+          "ko": "움직이는(active)"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "story": "꺼져 있던 것을 움직이는(active) 상태로 만든다(ate) → 활성화하다",
+      "family": [
+        "action",
+        "actor",
+        "react"
+      ]
+    }
   },
   {
     "id": "active",
@@ -1058,7 +1370,28 @@
       "live",
       "current"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "act",
+          "ko": "하다"
+        },
+        {
+          "part": "-ive",
+          "ko": "~하는 성질의"
+        }
+      ],
+      "origin": "라틴어 activus ← agere (하다)",
+      "story": "지금 움직이고(act) 있는(ive) → 사용 중인, 활성 상태의, 활동적인",
+      "hook": "액티브 → '액티브 유저(활동 사용자)'의 액티브 → 활성 상태의",
+      "family": [
+        "act",
+        "action",
+        "actor",
+        "react"
+      ]
+    }
   },
   {
     "id": "activity",
@@ -1109,7 +1442,27 @@
       "true",
       "genuine"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "act",
+          "ko": "행하다"
+        },
+        {
+          "part": "-ual",
+          "ko": "~의"
+        }
+      ],
+      "origin": "후기 라틴어 actualis (실제로 행해진)",
+      "story": "말뿐이 아니라 실제로 행해진(act) 것의(ual) → 실제의, 진짜의",
+      "family": [
+        "act",
+        "action",
+        "exact",
+        "agent"
+      ]
+    }
   },
   {
     "id": "actually",
@@ -1135,7 +1488,29 @@
       "really",
       "in fact"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "act",
+          "ko": "행하다"
+        },
+        {
+          "part": "-ual",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "실제로 행해진(actual) 그대로(ly) 말하자면 → 실제로, 사실은",
+      "family": [
+        "action",
+        "enact",
+        "react"
+      ]
+    }
   },
   {
     "id": "ad-hoc",
@@ -1170,7 +1545,22 @@
       "impromptu",
       "makeshift"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "ad",
+          "ko": "~을 위해"
+        },
+        {
+          "part": "hoc",
+          "ko": "이것"
+        }
+      ],
+      "origin": "라틴어 ad hoc (이것을 위해)",
+      "story": "딱 이것(hoc)만을 위해(ad) 그 자리에서 마련한 → 그때그때 임시로 하는, 즉석의",
+      "hook": "애드혹 → '애드리브'처럼 그 자리에서 → 즉석의"
+    }
   },
   {
     "id": "adaptive",
@@ -1202,7 +1592,32 @@
       "flexible",
       "dynamic"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "ad-",
+          "ko": "~에"
+        },
+        {
+          "part": "apt",
+          "ko": "꼭 맞는"
+        },
+        {
+          "part": "-ive",
+          "ko": "~하는 성질의"
+        }
+      ],
+      "origin": "라틴어 adaptare (~에 맞추다)",
+      "story": "상황에(ad) 꼭 맞게(apt) 스스로 조절하는(ive) → 적응형의",
+      "hook": "어댑티브 → '어댑터'처럼 상대에 맞춰 끼우는 → 적응형의",
+      "family": [
+        "adapt",
+        "adapter",
+        "apt",
+        "aptitude"
+      ]
+    }
   },
   {
     "id": "adaptive-thinking",
@@ -1220,7 +1635,20 @@
         "ko": "적응형 사고 (사고량을 모델이 스스로 정함)"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "adaptive",
+          "ko": "적응하는"
+        },
+        {
+          "part": "thinking",
+          "ko": "사고, 생각하기"
+        }
+      ],
+      "story": "요청마다 맞춰(adaptive) 생각(thinking)할지, 얼마나 할지 스스로 정한다 → 적응형 사고"
+    }
   },
   {
     "id": "add",
@@ -1332,7 +1760,30 @@
       "further",
       "supplementary"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "roots": [
+        {
+          "part": "add",
+          "ko": "더하다"
+        },
+        {
+          "part": "-ition",
+          "ko": "~한 것"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 addere (~에 보태다)",
+      "story": "원래 있던 데에 더해(add) 놓은 것(ition)의(al) → 추가의, 부가적인",
+      "family": [
+        "add",
+        "additive",
+        "addendum"
+      ]
+    }
   },
   {
     "id": "address",
@@ -1369,7 +1820,26 @@
       "tackle",
       "deal with"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "ad-",
+          "ko": "~쪽으로"
+        },
+        {
+          "part": "dress",
+          "ko": "곧게 향하다"
+        }
+      ],
+      "origin": "고대 프랑스어 adrecier (곧장 향하다)",
+      "story": "문제 쪽으로(ad) 똑바로 향해(dress) 손을 댄다, 편지가 향할 곳 → 다루다, 해결하다, 주소",
+      "family": [
+        "direct",
+        "dress",
+        "redress"
+      ]
+    }
   },
   {
     "id": "adequate",
@@ -1400,7 +1870,31 @@
       "enough",
       "appropriate"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "ad-",
+          "ko": "~에"
+        },
+        {
+          "part": "equ",
+          "ko": "같은"
+        },
+        {
+          "part": "-ate",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 adaequare (같게 맞추다)",
+      "story": "필요한 만큼에(ad) 딱 같게(equ) 맞춘 → 충분한, 적절한",
+      "family": [
+        "equal",
+        "equation",
+        "equivalent",
+        "equity"
+      ]
+    }
   },
   {
     "id": "adhere",
@@ -1535,7 +2029,25 @@
     "synonyms": [
       "assessor"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "adjust",
+          "ko": "맞추다, 조정하다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 사람"
+        }
+      ],
+      "story": "청구 건을 조사해 보상액을 알맞게 맞추는(adjust) 사람(er) → 손해 사정인",
+      "family": [
+        "adjust",
+        "adjustment",
+        "adjustable"
+      ]
+    }
   },
   {
     "id": "admit",
@@ -1681,7 +2193,31 @@
       "publicize",
       "expose"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "ad-",
+          "ko": "~쪽으로"
+        },
+        {
+          "part": "vert",
+          "ko": "돌리다"
+        },
+        {
+          "part": "-ise",
+          "ko": "~하게 하다"
+        }
+      ],
+      "origin": "라틴어 advertere (~쪽으로 돌리다)",
+      "story": "사람들 눈길을 이쪽으로(ad) 돌리게(vert) 한다 → 알리다, 광고하다",
+      "family": [
+        "convert",
+        "reverse",
+        "divert",
+        "version"
+      ]
+    }
   },
   {
     "id": "advisory",
@@ -1942,7 +2478,11 @@
     "synonyms": [
       "versus"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "origin": "고대 영어 ongean (맞은편에, 마주하여)",
+      "story": "기준을 맞은편(again)에 세워 놓고 마주 대어 본다 → ~에 비추어, ~을 상대로, ~에 맞서"
+    }
   },
   {
     "id": "agent",
@@ -1971,7 +2511,27 @@
     "forms": [
       "agents"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "ag",
+          "ko": "하다, 몰다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~하는 사람·것"
+        }
+      ],
+      "origin": "라틴어 agens ← agere (하다)",
+      "story": "맡은 일을 대신 해(ag) 주는 자(ent) → 에이전트, 상담원, 대리인",
+      "family": [
+        "act",
+        "agency",
+        "agenda",
+        "agile"
+      ]
+    }
   },
   {
     "id": "agentic",
@@ -1992,7 +2552,25 @@
     "synonyms": [
       "autonomous"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "agent",
+          "ko": "행위자, 에이전트"
+        },
+        {
+          "part": "-ic",
+          "ko": "~의, ~적인"
+        }
+      ],
+      "story": "스스로 도구를 골라 일하는 에이전트(agent) 같은(ic) → 에이전트형의",
+      "family": [
+        "agency",
+        "act",
+        "action"
+      ]
+    }
   },
   {
     "id": "aggregate",
@@ -2148,7 +2726,31 @@
       "contract",
       "accord"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "a-",
+          "ko": "~에"
+        },
+        {
+          "part": "gree",
+          "ko": "마음에 듦"
+        },
+        {
+          "part": "-ment",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "고대 프랑스어 a gré (마음에 들게)",
+      "story": "서로 마음에 들도록(a+gree) 맞춰 정한 것(ment) → 계약, 합의, 일치",
+      "family": [
+        "agree",
+        "grateful",
+        "grace",
+        "gratitude"
+      ]
+    }
   },
   {
     "id": "ahead",
@@ -2178,7 +2780,25 @@
       "forward",
       "in advance"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "a-",
+          "ko": "~쪽에"
+        },
+        {
+          "part": "head",
+          "ko": "머리, 앞"
+        }
+      ],
+      "story": "머리(head)가 향한 쪽으로(a) 쭉 나아간다 → 그대로 진행하여, 앞으로, 미리",
+      "family": [
+        "head",
+        "heading",
+        "headline"
+      ]
+    }
   },
   {
     "id": "ahead-of",
@@ -2243,7 +2863,26 @@
     "synonyms": [
       "carrier"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "air",
+          "ko": "하늘, 공중"
+        },
+        {
+          "part": "line",
+          "ko": "노선"
+        }
+      ],
+      "story": "하늘(air)에 정기 노선(line)을 두고 비행기를 띄우는 회사 → 항공사",
+      "hook": "에어라인 → '○○에어라인' 하는 회사 이름 → 항공사",
+      "family": [
+        "airport",
+        "aircraft",
+        "pipeline"
+      ]
+    }
   },
   {
     "id": "alert",
@@ -2281,7 +2920,11 @@
       "warning",
       "notification"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "origin": "이탈리아어 all'erta (망대로! 경계하라)",
+      "story": "'망대(erta)로!' 하고 외쳐 위험을 알리던 데서 → 경보, 알리다, 경계하는"
+    }
   },
   {
     "id": "alias",
@@ -2311,7 +2954,16 @@
       "nickname",
       "pseudonym"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "라틴어 alias (다른 때에, 달리)",
+      "story": "같은 대상을 달리(alias) 부르는 또 하나의 이름 → 별칭",
+      "family": [
+        "alien",
+        "alibi",
+        "alter"
+      ]
+    }
   },
   {
     "id": "align",
@@ -2349,7 +3001,27 @@
       "correlate",
       "line up"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "a-",
+          "ko": "~에"
+        },
+        {
+          "part": "lign",
+          "ko": "줄, 선(line)"
+        }
+      ],
+      "origin": "프랑스어 aligner (줄에 맞추다)",
+      "story": "한 줄(lign)에(a) 나란히 맞춰 세운다 → 맞추다, 정렬하다",
+      "hook": "얼라인 → 속에 '라인(line)'이 있다, 줄 맞추기 → 정렬하다",
+      "family": [
+        "line",
+        "linear",
+        "lineage"
+      ]
+    }
   },
   {
     "id": "alike",
@@ -2432,7 +3104,11 @@
       "enable",
       "let"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "고대 프랑스어 alouer (인정하다, 몫을 주다)",
+      "story": "그래도 좋다고 인정해 몫을 내준다 → 허용하다, ~하게 해 주다"
+    }
   },
   {
     "id": "allowedtools",
@@ -2454,7 +3130,20 @@
       "allowed-tools",
       "allowed_tools"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "allowed",
+          "ko": "허용된"
+        },
+        {
+          "part": "Tools",
+          "ko": "도구들"
+        }
+      ],
+      "story": "승인 없이 쓰도록 허용된(allowed) 도구들(Tools)을 적는 설정 → 허용 도구 목록"
+    }
   },
   {
     "id": "allowlist",
@@ -2484,7 +3173,25 @@
     "synonyms": [
       "whitelist"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "allow",
+          "ko": "허용하다"
+        },
+        {
+          "part": "list",
+          "ko": "목록"
+        }
+      ],
+      "story": "허용할(allow) 것만 적어 둔 목록(list), 여기 있어야 통과 → 허용 목록",
+      "family": [
+        "blocklist",
+        "denylist",
+        "whitelist"
+      ]
+    }
   },
   {
     "id": "almost",
@@ -2538,7 +3245,26 @@
       "solely",
       "by itself"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "al-",
+          "ko": "온전히(all)"
+        },
+        {
+          "part": "one",
+          "ko": "하나"
+        }
+      ],
+      "origin": "중세 영어 al one (온전히 하나)",
+      "story": "온전히(all) 하나(one)뿐, 다른 것 없이 → ~만으로, 혼자",
+      "family": [
+        "lonely",
+        "only",
+        "atone"
+      ]
+    }
   },
   {
     "id": "along",
@@ -2569,7 +3295,26 @@
       "together with",
       "beside"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "a-",
+          "ko": "맞대어"
+        },
+        {
+          "part": "long",
+          "ko": "긴"
+        }
+      ],
+      "origin": "고대 영어 andlang (길이를 따라 쭉)",
+      "story": "긴(long) 길에 몸을 맞대고(a) 나란히 간다 → ~와 함께, ~을 따라, 앞으로",
+      "family": [
+        "long",
+        "length",
+        "linger"
+      ]
+    }
   },
   {
     "id": "alongside",
@@ -2633,7 +3378,34 @@
       "alphabetical",
       "alphabet"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "alpha",
+          "ko": "첫 글자 α"
+        },
+        {
+          "part": "bet",
+          "ko": "둘째 글자 β"
+        },
+        {
+          "part": "-ical",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "그리스어 alpha + bēta (첫 두 글자)",
+      "story": "알파(alpha)·베타(bet)로 시작하는 글자 차례(ical)대로(ly) → 알파벳순으로",
+      "family": [
+        "alphabet",
+        "alphanumeric",
+        "beta"
+      ]
+    }
   },
   {
     "id": "already",
@@ -2692,7 +3464,26 @@
       "switch",
       "interchange"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "altern",
+          "ko": "번갈아(alter: 다른 쪽)"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 alternare (하나씩 번갈아 하다)",
+      "story": "이쪽 한 번, 다른 쪽(alter) 한 번, 차례를 바꿔 가며 한다(ate) → 번갈아 하다",
+      "family": [
+        "alter",
+        "alternative",
+        "altruism"
+      ]
+    }
   },
   {
     "id": "alternative",
@@ -2723,7 +3514,26 @@
       "option",
       "substitute"
     ],
-    "domain": "계획·목표·전략"
+    "domain": "계획·목표·전략",
+    "memory": {
+      "roots": [
+        {
+          "part": "altern",
+          "ko": "번갈아(alter: 다른 쪽)"
+        },
+        {
+          "part": "-ative",
+          "ko": "~하는 성질의"
+        }
+      ],
+      "origin": "라틴어 alter (둘 중 다른 하나)",
+      "story": "이것이 안 되면 고를 수 있는 다른 쪽(alter)의 것 → 대안, 다른 선택지",
+      "family": [
+        "alter",
+        "alternate",
+        "altruism"
+      ]
+    }
   },
   {
     "id": "altogether",
@@ -2815,7 +3625,20 @@
     "forms": [
       "always loaded"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "always",
+          "ko": "항상"
+        },
+        {
+          "part": "loaded",
+          "ko": "실린, 로드된"
+        }
+      ],
+      "story": "세션마다 항상(always) 컨텍스트에 실려(loaded) 있는 → 항상 로드되는"
+    }
   },
   {
     "id": "ambiguous",
@@ -2847,7 +3670,30 @@
       "vague",
       "equivocal"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "ambi-",
+          "ko": "양쪽으로"
+        },
+        {
+          "part": "ig",
+          "ko": "몰다, 가다"
+        },
+        {
+          "part": "-uous",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 ambigere (이리저리 헤매다)",
+      "story": "뜻이 양쪽(ambi)으로 왔다 갔다(ig) 해서 하나로 정해지지 않는 → 모호한",
+      "family": [
+        "ambivalent",
+        "ambidextrous",
+        "agent"
+      ]
+    }
   },
   {
     "id": "among",
@@ -2873,7 +3719,25 @@
       "between",
       "amid"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "a-",
+          "ko": "~속에(on)"
+        },
+        {
+          "part": "mong",
+          "ko": "섞인 무리"
+        }
+      ],
+      "origin": "고대 영어 on gemang (무리 속에)",
+      "story": "여럿이 섞인 무리(mong) 속에(a) 있다 → ~ 사이에서, ~ 중에서",
+      "family": [
+        "mingle",
+        "mongrel"
+      ]
+    }
   },
   {
     "id": "amount",
@@ -2907,7 +3771,27 @@
       "quantity",
       "total"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "a-",
+          "ko": "~로"
+        },
+        {
+          "part": "mount",
+          "ko": "산, 오르다"
+        }
+      ],
+      "origin": "고대 프랑스어 amonter (위로 오르다)",
+      "story": "하나씩 더해 산(mount) 위로(a) 쌓아 올린 끝에 이른 값 → 금액, 양",
+      "family": [
+        "mount",
+        "mountain",
+        "paramount",
+        "surmount"
+      ]
+    }
   },
   {
     "id": "analysis",
@@ -2945,7 +3829,26 @@
       "examination",
       "evaluation"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "ana-",
+          "ko": "낱낱이, 위로"
+        },
+        {
+          "part": "lysis",
+          "ko": "풀기"
+        }
+      ],
+      "origin": "그리스어 analysis (풀어 헤침)",
+      "story": "엉킨 덩어리를 낱낱이(ana) 풀어(lysis) 헤쳐 본다 → 분석",
+      "family": [
+        "paralysis",
+        "catalyst",
+        "dialysis"
+      ]
+    }
   },
   {
     "id": "analyst",
@@ -2966,7 +3869,26 @@
     "forms": [
       "analysts"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "analy",
+          "ko": "분석하다(analyze)"
+        },
+        {
+          "part": "-st",
+          "ko": "~하는 사람(-ist)"
+        }
+      ],
+      "story": "낱낱이 풀어 헤쳐 보는 분석(analyze)을 하는 사람(-ist) → 분석가",
+      "hook": "애널리스트 → 증권사 '애널리스트' → 분석가",
+      "family": [
+        "analysis",
+        "analyze",
+        "catalyst"
+      ]
+    }
   },
   {
     "id": "anchor",
@@ -3004,7 +3926,16 @@
       "pin",
       "ground"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "그리스어 ankyra (갈고리, 닻)",
+      "story": "갈고리 같은 닻을 내려 배를 한자리에 붙든다 → 고정하다, 기준점",
+      "hook": "앵커 → 뉴스의 중심을 잡는 '앵커' → 붙잡아 두다, 기준점",
+      "family": [
+        "angle",
+        "ankle"
+      ]
+    }
   },
   {
     "id": "anger",
@@ -3035,7 +3966,16 @@
       "rage",
       "fury"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "origin": "고대 노르드어 angr (괴로움, 비통)",
+      "story": "가슴이 꽉 조여 오는 괴로움(angr)이 치밀어 오른다 → 분노, 화",
+      "family": [
+        "angry",
+        "anguish",
+        "anxious"
+      ]
+    }
   },
   {
     "id": "annotate",
@@ -3068,7 +4008,31 @@
       "mark",
       "tag"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "an-",
+          "ko": "~에"
+        },
+        {
+          "part": "not",
+          "ko": "표시, 적다(note)"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 annotare (~에 적어 넣다)",
+      "story": "글 옆에(an) 메모(not)를 적어 넣는다(ate) → 주석·설명을 달다",
+      "family": [
+        "note",
+        "notice",
+        "notation",
+        "denote"
+      ]
+    }
   },
   {
     "id": "annual",
@@ -3285,7 +4249,25 @@
       "nevertheless",
       "anyhow"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "any",
+          "ko": "어느 ~든"
+        },
+        {
+          "part": "way",
+          "ko": "길, 방식"
+        }
+      ],
+      "story": "어느(any) 길(way)로 가든 결론은 같으니 → 어쨌든, 그건 그렇고",
+      "family": [
+        "anyhow",
+        "anywhere",
+        "always"
+      ]
+    }
   },
   {
     "id": "anywhere",
@@ -3328,7 +4310,11 @@
     "synonyms": [
       "Asia-Pacific"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "origin": "Asia-Pacific",
+      "story": "아시아(Asia)와 태평양(Pacific) 연안을 한데 묶어 부르는 말 → 아시아·태평양 지역"
+    }
   },
   {
     "id": "apart",
@@ -3399,7 +4385,11 @@
     "synonyms": [
       "interface"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "Application Programming Interface",
+      "story": "응용 프로그램(Application)을 짤(Programming) 때 쓰는 접점(Interface) → API, 기능 호출 창구"
+    }
   },
   {
     "id": "apologize",
@@ -3427,7 +4417,30 @@
     "synonyms": [
       "say sorry"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "apo-",
+          "ko": "떨어져, 벗어나"
+        },
+        {
+          "part": "log",
+          "ko": "말"
+        },
+        {
+          "part": "-ize",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "그리스어 apologia (자기를 변호하는 말)",
+      "story": "잘못에서 벗어나려고(apo) 해명의 말(log)을 건넨다(ize) → 사과하다",
+      "family": [
+        "apology",
+        "dialogue",
+        "logic"
+      ]
+    }
   },
   {
     "id": "app",
@@ -3483,7 +4496,26 @@
       "show up",
       "emerge"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "ap-",
+          "ko": "~쪽으로"
+        },
+        {
+          "part": "pear",
+          "ko": "보이다, 나오다"
+        }
+      ],
+      "origin": "라틴어 apparere (눈앞에 나타나다)",
+      "story": "눈앞 쪽으로(ap) 모습이 나와 보인다(pear) → 나타나다, ~인 것 같다",
+      "family": [
+        "apparent",
+        "transparent",
+        "disappear"
+      ]
+    }
   },
   {
     "id": "append",
@@ -3510,7 +4542,27 @@
       "add",
       "attach"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "roots": [
+        {
+          "part": "ap-",
+          "ko": "~에"
+        },
+        {
+          "part": "pend",
+          "ko": "매달다"
+        }
+      ],
+      "origin": "라틴어 appendere (~에 매달다)",
+      "story": "맨 끝에(ap) 하나 더 매단다(pend) → 덧붙이다, 추가하다",
+      "family": [
+        "depend",
+        "suspend",
+        "pendant",
+        "appendix"
+      ]
+    }
   },
   {
     "id": "application",
@@ -3543,7 +4595,32 @@
       "app",
       "program"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "ap-",
+          "ko": "~에"
+        },
+        {
+          "part": "plic",
+          "ko": "접다, 갖다 대다"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 applicare (~에 갖다 대다)",
+      "story": "실제 일에(ap) 갖다 대어(plic) 쓰는 것(ation) → 응용 프로그램, 적용, 신청",
+      "hook": "애플리케이션 → 줄여서 '앱(app)' → 응용 프로그램",
+      "family": [
+        "apply",
+        "complicate",
+        "duplicate",
+        "imply"
+      ]
+    }
   },
   {
     "id": "apply",
@@ -3583,7 +4660,27 @@
       "employ",
       "use"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "ap-",
+          "ko": "~에"
+        },
+        {
+          "part": "ply",
+          "ko": "접다, 갖다 대다"
+        }
+      ],
+      "origin": "라틴어 applicare (~에 갖다 대다)",
+      "story": "규칙을 대상에(ap) 딱 갖다 댄다(ply) → 적용하다, 반영되다",
+      "family": [
+        "reply",
+        "imply",
+        "multiply",
+        "application"
+      ]
+    }
   },
   {
     "id": "appointment",
@@ -3613,7 +4710,30 @@
       "booking",
       "reservation"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "ap-",
+          "ko": "~에"
+        },
+        {
+          "part": "point",
+          "ko": "점, 정한 때"
+        },
+        {
+          "part": "-ment",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "고대 프랑스어 a point (딱 맞게, 한 점에)",
+      "story": "만날 때를 한 점(point)에(ap) 찍어 정해 둔 것(ment) → 예약, 약속",
+      "family": [
+        "point",
+        "appoint",
+        "punctual"
+      ]
+    }
   },
   {
     "id": "approach",
@@ -3645,7 +4765,27 @@
       "method",
       "strategy"
     ],
-    "domain": "계획·목표·전략"
+    "domain": "계획·목표·전략",
+    "memory": {
+      "roots": [
+        {
+          "part": "ap-",
+          "ko": "~쪽으로"
+        },
+        {
+          "part": "proach",
+          "ko": "가까이"
+        }
+      ],
+      "origin": "후기 라틴어 appropiare (가까이 가다)",
+      "story": "문제 쪽으로(ap) 가까이(proach) 다가가는 길 → 접근법, 다가가다",
+      "hook": "어프로치 → 골프에서 홀 가까이 붙이는 '어프로치 샷' → 다가가다, 접근법",
+      "family": [
+        "reproach",
+        "proximity",
+        "approximate"
+      ]
+    }
   },
   {
     "id": "appropriate",
@@ -3731,7 +4871,31 @@
       "consent",
       "permission"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "ap-",
+          "ko": "~에"
+        },
+        {
+          "part": "prov",
+          "ko": "좋다고 인정하다"
+        },
+        {
+          "part": "-al",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 approbare (좋다고 인정하다)",
+      "story": "따져 보고 좋다고(prov) 인정해 주는 일(al) → 승인",
+      "family": [
+        "prove",
+        "proof",
+        "probe",
+        "probable"
+      ]
+    }
   },
   {
     "id": "arbitrary",
@@ -3860,7 +5024,26 @@
     "synonyms": [
       "designer"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "archi-",
+          "ko": "으뜸, 우두머리"
+        },
+        {
+          "part": "tect",
+          "ko": "짓는 사람"
+        }
+      ],
+      "origin": "그리스어 arkhitektōn (으뜸 목수)",
+      "story": "짓는 이(tect)들의 우두머리(archi)로 전체 그림을 그리는 사람 → 설계자, 건축가",
+      "family": [
+        "monarch",
+        "tectonic",
+        "technology"
+      ]
+    }
   },
   {
     "id": "architecture",
@@ -3895,7 +5078,30 @@
       "structure",
       "design"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "archi-",
+          "ko": "으뜸, 우두머리"
+        },
+        {
+          "part": "tect",
+          "ko": "짓다"
+        },
+        {
+          "part": "-ure",
+          "ko": "~한 결과"
+        }
+      ],
+      "origin": "그리스어 arkhitektōn (으뜸 목수)",
+      "story": "우두머리(archi) 목수가 짜(tect) 놓은 전체 얼개(ure) → 아키텍처, 시스템의 구조·설계",
+      "family": [
+        "architect",
+        "monarch",
+        "tectonic"
+      ]
+    }
   },
   {
     "id": "archive",
@@ -3931,7 +5137,16 @@
       "store",
       "preserve"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "origin": "그리스어 arkheion (관청, 공문서를 두는 곳)",
+      "story": "관청(arkheion)에 공문서를 쌓아 보관하던 데서 → 보관소, 기록 모음, 보관 처리하다",
+      "family": [
+        "monarch",
+        "anarchy",
+        "hierarchy"
+      ]
+    }
   },
   {
     "id": "area",
@@ -3965,7 +5180,11 @@
       "domain",
       "region"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "라틴어 area (빈터, 평평한 땅)",
+      "story": "금을 그어 놓은 빈터(area) 한 구획 → 영역, 분야, 지역"
+    }
   },
   {
     "id": "argument",
@@ -3997,7 +5216,25 @@
     "synonyms": [
       "parameter"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "argu",
+          "ko": "밝히다, 따지다"
+        },
+        {
+          "part": "-ment",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 arguere (분명히 밝히다)",
+      "story": "따질(argu) 때 내놓는 것(ment), 함수에는 값을 내놓는다 → 인자, 논거",
+      "family": [
+        "argue",
+        "arguable"
+      ]
+    }
   },
   {
     "id": "arithmetic",
@@ -4027,7 +5264,21 @@
       "calculation",
       "math"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "arithm",
+          "ko": "수"
+        },
+        {
+          "part": "-etic",
+          "ko": "~의 기술"
+        }
+      ],
+      "origin": "그리스어 arithmos (수)",
+      "story": "수(arithm)를 더하고 빼며 다루는 기술(etic) → 산술, 계산"
+    }
   },
   {
     "id": "around",
@@ -4138,7 +5389,30 @@
       "agreement",
       "deal"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "ar-",
+          "ko": "~에"
+        },
+        {
+          "part": "range",
+          "ko": "줄, 열"
+        },
+        {
+          "part": "-ment",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "고대 프랑스어 arengier (줄을 맞춰 세우다)",
+      "story": "줄(range)에(ar) 맞추듯 서로 가지런히 정해 둔 것(ment) → 약정, 배열",
+      "family": [
+        "range",
+        "rank",
+        "arrange"
+      ]
+    }
   },
   {
     "id": "array",
@@ -4166,7 +5440,15 @@
     "synonyms": [
       "list"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "고대 프랑스어 areer (가지런히 차려 놓다)",
+      "story": "병사를 줄 세우듯 값을 순서대로 늘어놓은 것 → 배열",
+      "family": [
+        "disarray",
+        "ready"
+      ]
+    }
   },
   {
     "id": "arrival",
@@ -4195,7 +5477,29 @@
       "coming",
       "receipt"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "ar-",
+          "ko": "~에"
+        },
+        {
+          "part": "riv",
+          "ko": "물가, 기슭"
+        },
+        {
+          "part": "-al",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 ad ripam (물가에 닿아)",
+      "story": "배가 물가(riv)에(ar) 닿는 일(al) → 도착, 들어옴",
+      "family": [
+        "arrive",
+        "river"
+      ]
+    }
   },
   {
     "id": "arrive",
@@ -4263,7 +5567,25 @@
       "piece",
       "story"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "art",
+          "ko": "마디, 관절"
+        },
+        {
+          "part": "-icle",
+          "ko": "작은 것"
+        }
+      ],
+      "origin": "라틴어 articulus (작은 마디)",
+      "story": "긴 글이나 법을 나눈 작은(icle) 마디(art) 하나 → 기사, 조항",
+      "family": [
+        "articulate",
+        "arthritis"
+      ]
+    }
   },
   {
     "id": "artifact",
@@ -4295,7 +5617,27 @@
     "synonyms": [
       "byproduct"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "arti",
+          "ko": "기술, 솜씨"
+        },
+        {
+          "part": "fact",
+          "ko": "만든 것"
+        }
+      ],
+      "origin": "라틴어 arte factum (솜씨로 만든 것)",
+      "story": "저절로 생긴 게 아니라 솜씨(arti)로 만들어진(fact) 것 → 부산물, 산출물, 인공물",
+      "family": [
+        "art",
+        "artificial",
+        "factory",
+        "manufacture"
+      ]
+    }
   },
   {
     "id": "as-is",
@@ -4322,7 +5664,20 @@
       "unchanged",
       "untouched"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "as",
+          "ko": "~대로"
+        },
+        {
+          "part": "is",
+          "ko": "있다"
+        }
+      ],
+      "story": "지금 있는(is) 그 모습대로(as) → 있는 그대로, 손대지 않은 채로"
+    }
   },
   {
     "id": "as-soon-as",
@@ -4344,7 +5699,20 @@
       "once",
       "immediately after"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "as",
+          "ko": "~만큼"
+        },
+        {
+          "part": "soon",
+          "ko": "곧, 이르게"
+        }
+      ],
+      "story": "그 일이 일어나는 것만큼(as) 이르게(soon), 틈 없이 곧바로 → ~하자마자, ~하는 즉시"
+    }
   },
   {
     "id": "ask",
@@ -4412,7 +5780,26 @@
       "put together",
       "gather"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "roots": [
+        {
+          "part": "as-",
+          "ko": "~에"
+        },
+        {
+          "part": "sembl",
+          "ko": "함께, 같이"
+        }
+      ],
+      "origin": "라틴어 assimulare ← simul (함께)",
+      "story": "흩어진 부분을 한곳에(as) 함께(sembl) 모은다 → 모아 구성하다, 조립하다, 모이다",
+      "family": [
+        "resemble",
+        "simultaneous",
+        "similar"
+      ]
+    }
   },
   {
     "id": "assertion",
@@ -4449,7 +5836,30 @@
     "synonyms": [
       "claim"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "as-",
+          "ko": "~에"
+        },
+        {
+          "part": "sert",
+          "ko": "잇다, 붙이다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 asserere (자기 것이라 주장하다)",
+      "story": "'결과는 이것'이라고 내 쪽에(as) 붙여(sert) 못 박는 것(ion) → 단언문, 주장",
+      "family": [
+        "insert",
+        "series",
+        "exert"
+      ]
+    }
   },
   {
     "id": "assess",
@@ -4537,7 +5947,27 @@
       "allot",
       "designate"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "as-",
+          "ko": "~에"
+        },
+        {
+          "part": "sign",
+          "ko": "표시하다"
+        }
+      ],
+      "origin": "라틴어 assignare (표시해 몫을 정하다)",
+      "story": "누구에게(as) 갈 몫인지 표시(sign)를 해 준다 → 배정하다, 할당하다",
+      "family": [
+        "sign",
+        "signal",
+        "design",
+        "signature"
+      ]
+    }
   },
   {
     "id": "assistant",
@@ -4572,7 +6002,32 @@
       "helper",
       "aide"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "as-",
+          "ko": "~곁에"
+        },
+        {
+          "part": "sist",
+          "ko": "서다"
+        },
+        {
+          "part": "-ant",
+          "ko": "~하는 사람"
+        }
+      ],
+      "origin": "라틴어 assistere (곁에 서다)",
+      "story": "곁에(as) 서서(sist) 거드는 이(ant) → 어시스턴트, 도우미, 조수",
+      "hook": "어시스턴트 → 축구의 '어시스트(도움)' 하는 쪽 → 도우미",
+      "family": [
+        "resist",
+        "consist",
+        "insist",
+        "persist"
+      ]
+    }
   },
   {
     "id": "associate",
@@ -4611,7 +6066,31 @@
       "connect",
       "relate"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "as-",
+          "ko": "~에"
+        },
+        {
+          "part": "soci",
+          "ko": "동료, 짝"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 associare (짝으로 붙이다)",
+      "story": "이것에(as) 저것을 짝(soci)으로 붙인다(ate) → 연관 짓다, 동료",
+      "family": [
+        "social",
+        "society",
+        "sociology",
+        "dissociate"
+      ]
+    }
   },
   {
     "id": "assume",
@@ -4647,7 +6126,26 @@
       "presume",
       "suppose"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "as-",
+          "ko": "~쪽으로"
+        },
+        {
+          "part": "sume",
+          "ko": "취하다"
+        }
+      ],
+      "origin": "라틴어 assumere (자기 쪽으로 취하다)",
+      "story": "확인도 없이 내 쪽으로(as) 덥석 취해(sume) 사실로 삼는다 → 가정하다, ~라고 여기다",
+      "family": [
+        "consume",
+        "resume",
+        "presume"
+      ]
+    }
   },
   {
     "id": "asterisk",
@@ -4717,7 +6215,35 @@
       "async",
       "non-blocking"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "a-",
+          "ko": "아닌"
+        },
+        {
+          "part": "syn",
+          "ko": "함께"
+        },
+        {
+          "part": "chron",
+          "ko": "시간"
+        },
+        {
+          "part": "-ous",
+          "ko": "~한"
+        }
+      ],
+      "origin": "그리스어 a- + syn + khronos (때가 같지 않은)",
+      "story": "서로 시간(chron)을 함께(syn) 맞추지 않는(a) → 비동기의",
+      "family": [
+        "synchronize",
+        "chronic",
+        "chronicle",
+        "chronology"
+      ]
+    }
   },
   {
     "id": "at-once",
@@ -4743,7 +6269,20 @@
       "simultaneously",
       "all together"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "at",
+          "ko": "~에"
+        },
+        {
+          "part": "once",
+          "ko": "한 번"
+        }
+      ],
+      "story": "나누지 않고 단 한 번(once)에(at) → 동시에, 한꺼번에, 즉시"
+    }
   },
   {
     "id": "atomic",
@@ -4776,7 +6315,30 @@
     "synonyms": [
       "indivisible"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "a-",
+          "ko": "아닌"
+        },
+        {
+          "part": "tom",
+          "ko": "자르다"
+        },
+        {
+          "part": "-ic",
+          "ko": "~의"
+        }
+      ],
+      "origin": "그리스어 atomos (자를 수 없는)",
+      "story": "더는 자를(tom) 수 없는(a) 한 덩어리의(ic) → 원자적인, 더 쪼갤 수 없는",
+      "family": [
+        "atom",
+        "anatomy",
+        "tomography"
+      ]
+    }
   },
   {
     "id": "attach",
@@ -4809,7 +6371,26 @@
       "affix",
       "append"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "at-",
+          "ko": "~에"
+        },
+        {
+          "part": "tach",
+          "ko": "말뚝, 박아 매다"
+        }
+      ],
+      "origin": "고대 프랑스어 atachier (말뚝에 매다)",
+      "story": "말뚝(tach)에(at) 붙들어 매듯 딱 붙여 둔다 → 붙이다, 첨부하다",
+      "family": [
+        "detach",
+        "attack",
+        "stake"
+      ]
+    }
   },
   {
     "id": "attacker",
@@ -4837,7 +6418,27 @@
       "assailant",
       "intruder"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "attack",
+          "ko": "공격하다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 사람"
+        }
+      ],
+      "origin": "이탈리아어 attaccare (싸움을 붙이다)",
+      "story": "싸움을 붙여(attack) 덤비는 사람(er) → 공격자",
+      "hook": "어태커 → 배구의 '어태커(공격수)' → 공격자",
+      "family": [
+        "attach",
+        "detach",
+        "counterattack"
+      ]
+    }
   },
   {
     "id": "attempt",
@@ -4916,7 +6517,31 @@
       "participant",
       "attender"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "at-",
+          "ko": "~쪽으로"
+        },
+        {
+          "part": "tend",
+          "ko": "뻗다, 향하다"
+        },
+        {
+          "part": "-ee",
+          "ko": "~하는 사람"
+        }
+      ],
+      "origin": "라틴어 attendere (~쪽으로 마음을 뻗다)",
+      "story": "모임 쪽으로(at) 발길을 뻗어(tend) 자리한 사람(ee) → 참석자",
+      "family": [
+        "attend",
+        "extend",
+        "tendency",
+        "tension"
+      ]
+    }
   },
   {
     "id": "attention",
@@ -4945,7 +6570,32 @@
       "focus",
       "concentration"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "at-",
+          "ko": "~쪽으로"
+        },
+        {
+          "part": "tent",
+          "ko": "뻗다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 attendere (~쪽으로 마음을 뻗다)",
+      "story": "마음을 대상 쪽으로(at) 쭉 뻗는(tent) 것(ion) → 주의, 집중, 어텐션",
+      "hook": "어텐션 → 안내 방송 '어텐션 플리즈(주목해 주세요)' → 주의",
+      "family": [
+        "attend",
+        "extend",
+        "intention",
+        "tension"
+      ]
+    }
   },
   {
     "id": "attribute",
@@ -4982,7 +6632,26 @@
       "characteristic",
       "ascribe"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "at-",
+          "ko": "~에"
+        },
+        {
+          "part": "tribut",
+          "ko": "나눠 주다, 돌리다"
+        }
+      ],
+      "origin": "라틴어 attribuere (~에게 돌리다)",
+      "story": "대상에(at) 딸린 것으로 돌려(tribut) 준 성질 → 속성, ~의 탓으로 보다",
+      "family": [
+        "contribute",
+        "distribute",
+        "tribute"
+      ]
+    }
   },
   {
     "id": "attribution",
@@ -5012,7 +6681,31 @@
       "credit",
       "sourcing"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "at-",
+          "ko": "~에"
+        },
+        {
+          "part": "tribut",
+          "ko": "돌리다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 attribuere (~에게 돌리다)",
+      "story": "이 말을 누구에게(at) 돌릴지(tribut) 밝혀 적는 것(ion) → 출처 표시",
+      "family": [
+        "attribute",
+        "contribute",
+        "distribute",
+        "tribute"
+      ]
+    }
   },
   {
     "id": "audience",
@@ -5041,7 +6734,27 @@
       "viewers",
       "readers"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "audi",
+          "ko": "듣다"
+        },
+        {
+          "part": "-ence",
+          "ko": "~하는 것·쪽"
+        }
+      ],
+      "origin": "라틴어 audientia ← audire (듣다)",
+      "story": "듣는(audi) 쪽(ence), 토큰이라면 그것을 받아 줄 쪽 → (토큰의) 대상, 청중",
+      "family": [
+        "audio",
+        "audit",
+        "auditorium",
+        "audition"
+      ]
+    }
   },
   {
     "id": "audit",
@@ -5079,7 +6792,26 @@
       "inspection",
       "examine"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "aud",
+          "ko": "듣다"
+        },
+        {
+          "part": "-it",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 auditus (듣기) ← audire",
+      "story": "장부를 소리 내어 읽게 하고 들으며(aud) 따지던 데서 → 점검, 감사(하다)",
+      "family": [
+        "audio",
+        "audience",
+        "auditorium"
+      ]
+    }
   },
   {
     "id": "auth",
@@ -5101,7 +6833,11 @@
       "authentication",
       "authorization"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "origin": "authentication / authorization",
+      "story": "누구인지 확인(authentication)하고 권한을 허락(authorization)하는 일을 줄여서 → 인증·인가"
+    }
   },
   {
     "id": "authenticate",
@@ -5133,7 +6869,25 @@
       "verify",
       "validate"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "authentic",
+          "ko": "진짜의, 본인의"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하게 하다"
+        }
+      ],
+      "origin": "그리스어 authentikos (본인이 직접 한, 진짜의)",
+      "story": "진짜(authentic) 본인이 맞는지 가려낸다(ate) → 인증하다",
+      "family": [
+        "authentic",
+        "authenticity"
+      ]
+    }
   },
   {
     "id": "author",
@@ -5166,7 +6920,17 @@
       "writer",
       "creator"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "origin": "라틴어 auctor (만들어 낸 사람, 창시자)",
+      "story": "없던 것을 키워(augere) 세상에 내놓은 사람(auctor) → 작성자, 저자, 작성하다",
+      "family": [
+        "authority",
+        "authorize",
+        "augment",
+        "auction"
+      ]
+    }
   },
   {
     "id": "authoritative",
@@ -5253,7 +7017,26 @@
       "permission",
       "jurisdiction"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "author",
+          "ko": "만든 이, 책임자"
+        },
+        {
+          "part": "-ity",
+          "ko": "~의 힘, 성질"
+        }
+      ],
+      "origin": "라틴어 auctoritas (창시자의 힘, 위신)",
+      "story": "만든 이(author)라서 갖는 결정할 힘(ity) → 권한, 권위",
+      "family": [
+        "author",
+        "authorize",
+        "augment"
+      ]
+    }
   },
   {
     "id": "authorization",
@@ -5291,7 +7074,25 @@
       "approval",
       "clearance"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "author",
+          "ko": "권한을 가진 이"
+        },
+        {
+          "part": "-ization",
+          "ko": "~하게 하는 것"
+        }
+      ],
+      "story": "권한(authority)을 내주어 해도 된다고 허락하는 것(ization) → 인가, 권한 부여",
+      "family": [
+        "author",
+        "authority",
+        "authorize"
+      ]
+    }
   },
   {
     "id": "auto",
@@ -5316,7 +7117,18 @@
     "synonyms": [
       "automatic"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "그리스어 autos (스스로)",
+      "story": "사람이 정해 주지 않아도 스스로(autos) 알아서 정하고 움직인다 → 자동(의)",
+      "hook": "오토 → '오토 차량(자동 변속)'의 오토 → 자동",
+      "family": [
+        "automatic",
+        "automobile",
+        "autonomy",
+        "autograph"
+      ]
+    }
   },
   {
     "id": "auto-accepted",
@@ -5340,7 +7152,24 @@
     "synonyms": [
       "automatically accepted"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "auto",
+          "ko": "자동으로"
+        },
+        {
+          "part": "accept",
+          "ko": "받아들이다"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "story": "사람 검토 없이 자동으로(auto) 받아들여진(accepted) → 자동으로 승인·수락된"
+    }
   },
   {
     "id": "auto-issued",
@@ -5364,7 +7193,24 @@
     "synonyms": [
       "automatically issued"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "auto",
+          "ko": "자동으로"
+        },
+        {
+          "part": "issu",
+          "ko": "내보내다, 발급하다(issue)"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "story": "사람 승인 없이 자동으로(auto) 내보내진(issued) → 자동으로 지급·발급된"
+    }
   },
   {
     "id": "automate",
@@ -5401,7 +7247,27 @@
     "synonyms": [
       "mechanize"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "auto-",
+          "ko": "스스로"
+        },
+        {
+          "part": "mat",
+          "ko": "움직이려 하다"
+        }
+      ],
+      "origin": "그리스어 automatos (스스로 움직이는)",
+      "story": "사람 손 없이 스스로(auto) 움직이게(mat) 만든다 → 자동화하다",
+      "family": [
+        "automatic",
+        "automation",
+        "autonomy",
+        "automobile"
+      ]
+    }
   },
   {
     "id": "autonomous",
@@ -5431,7 +7297,31 @@
       "independent",
       "self-directed"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "auto-",
+          "ko": "스스로"
+        },
+        {
+          "part": "nom",
+          "ko": "법, 규칙"
+        },
+        {
+          "part": "-ous",
+          "ko": "~한"
+        }
+      ],
+      "origin": "그리스어 autonomos (자기 법으로 사는)",
+      "story": "남이 아니라 스스로(auto) 세운 규칙(nom)대로 움직이는(ous) → 자율적인",
+      "family": [
+        "autonomy",
+        "economy",
+        "astronomy",
+        "automatic"
+      ]
+    }
   },
   {
     "id": "available",
@@ -5465,7 +7355,31 @@
       "accessible",
       "usable"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "a-",
+          "ko": "~에"
+        },
+        {
+          "part": "vail",
+          "ko": "쓸모·가치 있다"
+        },
+        {
+          "part": "-able",
+          "ko": "~할 수 있는"
+        }
+      ],
+      "origin": "라틴어 valere (가치 있다, 힘 있다)",
+      "story": "지금 가져다 쓸모(vail) 있게 쓸 수 있는(able) → 이용할 수 있는, 쓸 수 있는",
+      "family": [
+        "avail",
+        "value",
+        "valid",
+        "prevail"
+      ]
+    }
   },
   {
     "id": "average",
@@ -5501,7 +7415,12 @@
     "synonyms": [
       "mean"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "프랑스어 avarie (해상 화물 손해, 그 분담금)",
+      "story": "배의 화물 손해를 화주들이 고르게 나눠 내던 데서 → 평균, 평균을 내다",
+      "hook": "애버리지 → 볼링 '애버리지(평균 점수)' → 평균"
+    }
   },
   {
     "id": "avoid",
@@ -5530,7 +7449,26 @@
       "evade",
       "steer clear of"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "a-",
+          "ko": "밖으로"
+        },
+        {
+          "part": "void",
+          "ko": "빈, 비우다"
+        }
+      ],
+      "origin": "앵글로프랑스어 avoider (비우고 나가다)",
+      "story": "자리를 비우고(void) 밖으로(a) 빠져 마주치지 않는다 → 피하다, 막다",
+      "family": [
+        "void",
+        "devoid",
+        "vacant"
+      ]
+    }
   },
   {
     "id": "away",

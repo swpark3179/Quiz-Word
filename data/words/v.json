@@ -64,7 +64,26 @@
       "legitimate",
       "acceptable"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "val",
+          "ko": "힘, 가치"
+        },
+        {
+          "part": "-id",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 validus (힘 있는) ← valere (가치 있다)",
+      "story": "규칙에 맞아 효력(val)이 있는(-id) → 유효한, 타당한",
+      "family": [
+        "value",
+        "validate",
+        "prevail"
+      ]
+    }
   },
   {
     "id": "validation",
@@ -97,7 +116,25 @@
       "verification",
       "checking"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "valid",
+          "ko": "유효한"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하게 하는 일"
+        }
+      ],
+      "story": "유효한지(valid) 따져 확인하는 일(-ation) → 검증",
+      "family": [
+        "validate",
+        "value",
+        "evaluate"
+      ]
+    }
   },
   {
     "id": "value",
@@ -127,7 +164,18 @@
       "figure",
       "worth"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "고대 프랑스어 value ← 라틴어 valere (가치 있다)",
+      "story": "얼마만큼의 값어치(valere)가 있는지 나타낸 것 → 값, 수치 / 가치",
+      "hook": "밸류 → '기업 밸류(가치)' → 가치, 값",
+      "family": [
+        "valid",
+        "evaluate",
+        "valuable",
+        "equivalent"
+      ]
+    }
   },
   {
     "id": "vanish",
@@ -201,7 +249,26 @@
     "synonyms": [
       "parameter"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "vari",
+          "ko": "바뀌다, 가지각색"
+        },
+        {
+          "part": "-able",
+          "ko": "~할 수 있는"
+        }
+      ],
+      "origin": "라틴어 variabilis (바뀔 수 있는)",
+      "story": "담긴 값이 바뀔(vari) 수 있는(-able) 것 → 변수 / 변하기 쉬운, 가변적인",
+      "family": [
+        "vary",
+        "various",
+        "variety"
+      ]
+    }
   },
   {
     "id": "variant",
@@ -230,7 +297,26 @@
       "version",
       "variation"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "vari",
+          "ko": "바뀌다, 가지각색"
+        },
+        {
+          "part": "-ant",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 varians (바뀌는) ← variare (바꾸다)",
+      "story": "원래 것에서 조금 바뀐(vari) 것(-ant) → 변형, (조금씩 다른) 버전",
+      "family": [
+        "variation",
+        "variety",
+        "variance"
+      ]
+    }
   },
   {
     "id": "vary",
@@ -266,7 +352,17 @@
       "differ",
       "fluctuate"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "origin": "라틴어 variare (바꾸다) ← varius (가지각색의)",
+      "story": "가지각색(varius)으로 저마다 달라진다 → (서로) 다르다, 달라지다",
+      "hook": "베리 → '버라이어티 쇼'는 갖가지로 달라지는 쇼 → 달라지다, 다르다",
+      "family": [
+        "various",
+        "variety",
+        "variable"
+      ]
+    }
   },
   {
     "id": "vcs",
@@ -287,7 +383,11 @@
     "synonyms": [
       "source control"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "Version Control System",
+      "story": "파일의 버전(Version)을 관리(Control)하는 시스템(System) → 버전 관리 시스템"
+    }
   },
   {
     "id": "vehicle",
@@ -316,7 +416,25 @@
       "car",
       "means"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "vehi",
+          "ko": "나르다"
+        },
+        {
+          "part": "-cle",
+          "ko": "~하는 도구"
+        }
+      ],
+      "origin": "라틴어 vehiculum (나르는 도구) ← vehere (나르다)",
+      "story": "사람과 짐을 실어 나르는(vehi) 도구(-cle) → 차량, 탈것 / (목적 달성의) 수단",
+      "family": [
+        "vector",
+        "convection"
+      ]
+    }
   },
   {
     "id": "vendor",
@@ -346,7 +464,26 @@
       "seller",
       "provider"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "vend",
+          "ko": "팔다"
+        },
+        {
+          "part": "-or",
+          "ko": "~하는 사람"
+        }
+      ],
+      "origin": "라틴어 vendere (팔다)",
+      "story": "우리에게 물건을 파는(vend) 쪽(-or) → 판매업체, 공급업체",
+      "hook": "벤더 → 유통업계의 '벤더사' → 공급업체, 판매업체",
+      "family": [
+        "vend",
+        "venal"
+      ]
+    }
   },
   {
     "id": "verb",
@@ -367,7 +504,17 @@
     "forms": [
       "verbs"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "origin": "라틴어 verbum (말, 낱말)",
+      "story": "문장의 중심이 되는 '말(verbum)' → 동사",
+      "family": [
+        "verbal",
+        "adverb",
+        "proverb",
+        "verbose"
+      ]
+    }
   },
   {
     "id": "verbally",
@@ -592,7 +739,31 @@
       "confirmation",
       "check"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "veri",
+          "ko": "참, 진실"
+        },
+        {
+          "part": "-fic",
+          "ko": "만들다"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "중세 라틴어 verificare (참임을 밝히다)",
+      "story": "참(veri)임을 분명하게 만드는(fic) 일(-ation) → 검증, 확인",
+      "family": [
+        "verify",
+        "verdict",
+        "very",
+        "veracity"
+      ]
+    }
   },
   {
     "id": "version",
@@ -622,7 +793,28 @@
       "release",
       "variant"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "vers",
+          "ko": "돌리다, 바꾸다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 versio (돌림, 바꿈) ← vertere (돌리다)",
+      "story": "한 번 돌려(vers) 바꿔 낸 것(-ion) 하나하나 → 버전, 판 / 다른 서술",
+      "hook": "버전 → '최신 버전' → 판, 버전",
+      "family": [
+        "convert",
+        "reverse",
+        "diverse",
+        "versatile"
+      ]
+    }
   },
   {
     "id": "version-controlled",
@@ -644,7 +836,20 @@
       "version controlled",
       "version control"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "version",
+          "ko": "판, 버전"
+        },
+        {
+          "part": "controlled",
+          "ko": "관리되는"
+        }
+      ],
+      "story": "고칠 때마다 버전(version)이 남도록 관리되는(controlled) → 버전 관리되는"
+    }
   },
   {
     "id": "versus",
@@ -707,7 +912,18 @@
       "by way of",
       "by means of"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "origin": "라틴어 via (길) — '~의 길로'",
+      "story": "'어디어디라는 길(via)을 지나서' → ~을 통해, ~을 거쳐",
+      "hook": "비아 → 기차표 '서울 via 대전'은 대전 경유 → ~을 거쳐",
+      "family": [
+        "trivial",
+        "obvious",
+        "deviate",
+        "previous"
+      ]
+    }
   },
   {
     "id": "viable",
@@ -835,7 +1051,26 @@
       "breach",
       "infringe"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "viol",
+          "ko": "힘으로 범하다"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 violare (힘으로 범하다)",
+      "story": "그어 놓은 선을 힘으로 짓밟고(viol) 넘는다(-ate) → 어기다, 위반하다",
+      "family": [
+        "violence",
+        "violent",
+        "inviolable"
+      ]
+    }
   },
   {
     "id": "visibility",
@@ -861,7 +1096,30 @@
       "observability",
       "transparency"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "vis",
+          "ko": "보다"
+        },
+        {
+          "part": "-ibil-",
+          "ko": "~할 수 있는 (-ible)"
+        },
+        {
+          "part": "-ity",
+          "ko": "~한 정도"
+        }
+      ],
+      "origin": "라틴어 visibilis (볼 수 있는) ← videre (보다)",
+      "story": "속을 들여다볼(vis) 수 있는(-ibil) 정도(-ity) → 가시성",
+      "family": [
+        "vision",
+        "visit",
+        "revise"
+      ]
+    }
   },
   {
     "id": "visible",
@@ -891,7 +1149,26 @@
       "noticeable",
       "evident"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "vis",
+          "ko": "보다"
+        },
+        {
+          "part": "-ible",
+          "ko": "~할 수 있는"
+        }
+      ],
+      "origin": "라틴어 visibilis (볼 수 있는) ← videre (보다)",
+      "story": "눈으로 볼(vis) 수 있는(-ible) → 보이는, 드러나 있는",
+      "family": [
+        "vision",
+        "visual",
+        "supervise"
+      ]
+    }
   },
   {
     "id": "visually",
@@ -909,7 +1186,30 @@
         "ko": "시각적으로, 눈으로 보기에"
       }
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "vis",
+          "ko": "보다"
+        },
+        {
+          "part": "-ual",
+          "ko": "~에 관한"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "눈으로 보는(vis) 것에 관해(-ual), 그런 면에서(-ly) → 시각적으로, 눈으로 보기에",
+      "hook": "비주얼리 → '비주얼이 좋다'의 비주얼(보이는 모습) → 시각적으로",
+      "family": [
+        "vision",
+        "visible",
+        "television"
+      ]
+    }
   },
   {
     "id": "voice",
@@ -977,7 +1277,27 @@
       "offer",
       "proffer"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "volunt",
+          "ko": "의지, 제 뜻"
+        },
+        {
+          "part": "-eer",
+          "ko": "~하는 사람"
+        }
+      ],
+      "origin": "라틴어 voluntarius (제 뜻으로 하는) ← voluntas (의지)",
+      "story": "시키지 않아도 제 뜻(volunt)으로 나서는 사람(-eer)처럼 → 자진해서 말하다, 먼저 제공하다",
+      "hook": "발런티어 → 자원봉사자 '볼런티어'처럼 스스로 나선다 → 자진해서 말하다",
+      "family": [
+        "voluntary",
+        "volition",
+        "benevolent"
+      ]
+    }
   },
   {
     "id": "vote",
@@ -1009,6 +1329,15 @@
       "ballot",
       "poll"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "origin": "라틴어 votum (서약, 바람)",
+      "story": "내 바람(votum)을 표 한 장에 담아 낸다 → 투표(하다)",
+      "family": [
+        "vow",
+        "devote",
+        "votive"
+      ]
+    }
   }
 ]

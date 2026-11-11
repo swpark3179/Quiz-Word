@@ -18,7 +18,11 @@
     "forms": [
       "zero data retention"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "origin": "Zero Data Retention",
+      "story": "데이터(Data)를 보관(Retention)하는 양이 0(Zero) → 데이터 무보존"
+    }
   },
   {
     "id": "zero",
@@ -63,6 +67,9 @@
         "ko": "(TypeScript) 스키마 검증 라이브러리"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "story": "들어온 값이 선언한 스키마에 맞는지 문지기처럼 검사해 주는 도구 → 스키마 검증 라이브러리(Zod)"
+    }
   }
 ]

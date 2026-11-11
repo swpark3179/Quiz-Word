@@ -26,7 +26,30 @@
       "modifier",
       "caveat"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "qual",
+          "ko": "어떤 (성질)"
+        },
+        {
+          "part": "fi",
+          "ko": "만들다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 qualificare (어떤 성질을 부여하다)",
+      "story": "'어떤(qual) 것인지' 조건을 달아(fi) 범위를 좁히는 말(er) → 한정어, 단서",
+      "family": [
+        "quality",
+        "qualify",
+        "qualitative"
+      ]
+    }
   },
   {
     "id": "quality",
@@ -51,7 +74,27 @@
     "forms": [
       "qualities"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "qual",
+          "ko": "어떤 (종류)"
+        },
+        {
+          "part": "-ity",
+          "ko": "성질"
+        }
+      ],
+      "origin": "라틴어 qualitas (어떠함) ← qualis (어떤)",
+      "story": "'어떤(qual) 물건이냐'를 말해 주는 성질(ity) → 품질, 질",
+      "hook": "퀄리티 → '퀄리티가 좋다'의 그 퀄리티 → 품질",
+      "family": [
+        "qualify",
+        "qualitative",
+        "qualification"
+      ]
+    }
   },
   {
     "id": "quarterly",
@@ -73,7 +116,26 @@
         "ko": "분기마다"
       }
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "quarter",
+          "ko": "4분의 1"
+        },
+        {
+          "part": "-ly",
+          "ko": "~마다"
+        }
+      ],
+      "origin": "라틴어 quartus (넷째)",
+      "story": "1년을 넷으로 나눈 한 쿼터(quarter)마다(ly) → 분기별의",
+      "family": [
+        "quart",
+        "quartet",
+        "headquarters"
+      ]
+    }
   },
   {
     "id": "query",
@@ -105,7 +167,18 @@
       "request",
       "lookup"
     ],
-    "domain": "검색·조회"
+    "domain": "검색·조회",
+    "memory": {
+      "origin": "라틴어 quaere (물어라) ← quaerere (묻다, 찾다)",
+      "story": "'물어라(quaere)' — 데이터베이스에 묻고 찾아 달라는 말 → 질의, 조회하다",
+      "hook": "쿼리 → DB에 날리는 '쿼리' → 질의, 조회하다",
+      "family": [
+        "question",
+        "inquiry",
+        "request",
+        "require"
+      ]
+    }
   },
   {
     "id": "question",
@@ -169,7 +242,16 @@
       "queueing",
       "queues"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "프랑스어 queue (꼬리) ← 라틴어 cauda",
+      "story": "꼬리(queue)처럼 길게 늘어서 차례를 기다리는 줄 → 대기열, 큐",
+      "hook": "큐 → Q 뒤에 u·e·u·e 가 줄 서서 기다린다 → 대기열",
+      "family": [
+        "cue",
+        "coda"
+      ]
+    }
   },
   {
     "id": "quick",
@@ -250,7 +332,26 @@
     "synonyms": [
       "silently"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "quiet",
+          "ko": "조용한"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 quietus (쉬는, 고요한)",
+      "story": "쉬는 듯 고요하게(quiet), 티 내지 않고(ly) → 조용히, 알리지 않고",
+      "family": [
+        "quit",
+        "quite",
+        "requiem"
+      ]
+    }
   },
   {
     "id": "quote",

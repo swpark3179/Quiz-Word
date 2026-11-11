@@ -35,7 +35,12 @@
       "store",
       "buffer"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "origin": "프랑스어 cache (은닉처) ← cacher (숨기다)",
+      "story": "다시 쓸 것을 가까운 곳에 숨겨(cacher) 두었다가 꺼내 쓴다 → 캐시(하다)",
+      "hook": "캐시 → 현금(cash)처럼 곁에 두고 바로 꺼내 쓴다 → 캐시, 저장해 두고 재사용하다"
+    }
   },
   {
     "id": "calendar",
@@ -152,7 +157,17 @@
     "synonyms": [
       "invoke"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "origin": "고대 노르드어 kalla (큰 소리로 부르다)",
+      "story": "이름을 크게 불러(kalla) 와서 일하게 한다 → 호출하다, 부르다, 이름 붙이다",
+      "hook": "콜 → '콜택시'·'콜센터'의 콜 → 부르다, 호출",
+      "family": [
+        "recall",
+        "caller",
+        "callback"
+      ]
+    }
   },
   {
     "id": "callback",
@@ -180,7 +195,26 @@
     "synonyms": [
       "handler"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "call",
+          "ko": "부르다, 호출"
+        },
+        {
+          "part": "back",
+          "ko": "되돌려"
+        }
+      ],
+      "story": "때가 되면 이쪽으로 되돌려(back) 불러(call) 주도록 맡겨 둔 것 → 콜백, 회신 전화",
+      "family": [
+        "call",
+        "feedback",
+        "rollback",
+        "fallback"
+      ]
+    }
   },
   {
     "id": "caller",
@@ -209,7 +243,25 @@
       "invoker",
       "client"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "call",
+          "ko": "부르다, 호출하다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 쪽"
+        }
+      ],
+      "story": "함수나 도구를 부르는(call) 쪽(er) → 호출자",
+      "family": [
+        "call",
+        "callee",
+        "recall"
+      ]
+    }
   },
   {
     "id": "candidate",
@@ -239,7 +291,26 @@
       "applicant",
       "nominee"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "candid",
+          "ko": "흰, 빛나는"
+        },
+        {
+          "part": "-ate",
+          "ko": "~한 사람"
+        }
+      ],
+      "origin": "라틴어 candidatus (흰 옷을 입은 사람)",
+      "story": "로마에서 관직에 나선 사람이 흰(candid) 토가를 입던 데서 → 후보",
+      "family": [
+        "candid",
+        "candle",
+        "incandescent"
+      ]
+    }
   },
   {
     "id": "cannot",
@@ -353,7 +424,17 @@
       "ceiling",
       "restrict"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "후기 라틴어 cappa (머리에 쓰는 덮개)",
+      "story": "머리 위에 모자(cap)를 씌워 그 위로는 못 올라가게 한다 → 상한(을 두다)",
+      "hook": "캡 → 꼭대기에 씌우는 '캡 모자' → 상한",
+      "family": [
+        "cape",
+        "escape",
+        "chapel"
+      ]
+    }
   },
   {
     "id": "capable",
@@ -444,7 +525,28 @@
       "capability",
       "limit"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "cap",
+          "ko": "잡다, 담다"
+        },
+        {
+          "part": "-acity",
+          "ko": "~하는 능력"
+        }
+      ],
+      "origin": "라틴어 capax (많이 담을 수 있는) ← capere",
+      "story": "얼마나 담아(cap) 낼 수 있는가(acity) → 용량, 처리 능력",
+      "hook": "커패시티 → 줄여서 '캐파가 모자라다'의 캐파 → 용량, 처리 능력",
+      "family": [
+        "capable",
+        "capture",
+        "captive",
+        "accept"
+      ]
+    }
   },
   {
     "id": "capture",
@@ -480,7 +582,28 @@
       "catch",
       "preserve"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "capt",
+          "ko": "잡다"
+        },
+        {
+          "part": "-ure",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 captura ← capere (잡다)",
+      "story": "흘러가 버리기 전에 붙잡아(capt) 둔다(ure) → 담아 두다, 포착하다",
+      "hook": "캡처 → '화면 캡처'로 담아 두기 → 담아 두다, 포착하다",
+      "family": [
+        "captive",
+        "capable",
+        "accept",
+        "capacity"
+      ]
+    }
   },
   {
     "id": "carefully",
@@ -506,7 +629,29 @@
       "cautiously",
       "thoroughly"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "care",
+          "ko": "주의, 마음 씀"
+        },
+        {
+          "part": "-ful",
+          "ko": "가득한"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "마음 씀(care)이 가득(ful)하게(ly) → 주의 깊게, 신중하게",
+      "family": [
+        "care",
+        "careless",
+        "caregiver"
+      ]
+    }
   },
   {
     "id": "carrier",
@@ -539,7 +684,27 @@
       "shipper",
       "courier"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "carri",
+          "ko": "나르다(carry)"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 사람·업체"
+        }
+      ],
+      "story": "맡은 짐을 실어 나르는(carry) 업체(er) → 운송업체, 배송사",
+      "hook": "캐리어 → 짐을 나르는 여행 가방 '캐리어' → 실어 나르는 쪽, 운송업체",
+      "family": [
+        "carry",
+        "carriage",
+        "cargo",
+        "car"
+      ]
+    }
   },
   {
     "id": "carry",
@@ -579,7 +744,18 @@
       "convey",
       "transfer"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "origin": "라틴어 carrus (수레) → 수레로 나르다",
+      "story": "수레(carrus)에 싣고 가듯 정보를 몸에 달고 간다 → 지니다, 달고 가다, 옮기다",
+      "hook": "캐리 → 짐 나르는 '캐리어'의 캐리 → 옮기다, 지니다",
+      "family": [
+        "car",
+        "cargo",
+        "carriage",
+        "charge"
+      ]
+    }
   },
   {
     "id": "carry-out",
@@ -659,7 +835,17 @@
       "situation",
       "matter"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "origin": "라틴어 casus (떨어짐, 일어난 일)",
+      "story": "눈앞에 뚝 떨어진(casus) 일 하나하나 → 경우, 사례, (처리할) 건",
+      "hook": "케이스 → '케이스 바이 케이스(경우에 따라)' → 경우, 사례",
+      "family": [
+        "casual",
+        "occasion",
+        "accident"
+      ]
+    }
   },
   {
     "id": "case-facts",
@@ -683,7 +869,20 @@
     "synonyms": [
       "key facts"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "case",
+          "ko": "건, 사안"
+        },
+        {
+          "part": "facts",
+          "ko": "사실들"
+        }
+      ],
+      "story": "그 건(case)에서 한 글자도 틀리면 안 되는 사실(facts)들 → 케이스 사실, 핵심 사실"
+    }
   },
   {
     "id": "catalog",
@@ -716,7 +915,26 @@
       "index",
       "inventory"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "cata-",
+          "ko": "아래로, 죽"
+        },
+        {
+          "part": "log",
+          "ko": "말하다, 세다"
+        }
+      ],
+      "origin": "그리스어 katalogos (죽 세어 적은 명부)",
+      "story": "있는 것을 위에서 아래로(cata) 죽 세어(log) 적은 것 → 카탈로그, 목록",
+      "family": [
+        "dialogue",
+        "prologue",
+        "monologue"
+      ]
+    }
   },
   {
     "id": "catch",
@@ -756,7 +974,17 @@
       "spot",
       "find"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "origin": "라틴어 captare (잡으려고 쫓다)",
+      "story": "빠져나가려는 문제를 쫓아가 붙잡는다 → 잡아내다, 발견하다",
+      "hook": "캐치 → 야구에서 공을 '캐치'하듯 → 잡아내다",
+      "family": [
+        "chase",
+        "capture",
+        "captive"
+      ]
+    }
   },
   {
     "id": "category",
@@ -790,7 +1018,25 @@
       "type",
       "group"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "cat-",
+          "ko": "~에 대해(kata)"
+        },
+        {
+          "part": "egor",
+          "ko": "광장에서 말하다"
+        }
+      ],
+      "origin": "그리스어 katēgoria (~라고 단정해 말함)",
+      "story": "사물에 대해(cat) '이건 무엇'이라 말해(egor) 가른 갈래 → 범주, 카테고리",
+      "family": [
+        "allegory",
+        "agora"
+      ]
+    }
   },
   {
     "id": "cause",
@@ -823,7 +1069,17 @@
       "source",
       "trigger"
     ],
-    "domain": "원인·결과·영향"
+    "domain": "원인·결과·영향",
+    "memory": {
+      "origin": "라틴어 causa (이유, 까닭)",
+      "story": "왜 그렇게 됐는지의 까닭(causa) → 원인, 일으키다",
+      "hook": "코즈 → 비'코즈'(because, 왜냐하면)의 그 cause → 원인",
+      "family": [
+        "because",
+        "excuse",
+        "accuse"
+      ]
+    }
   },
   {
     "id": "caveat",
@@ -934,7 +1190,17 @@
       "field",
       "slot"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "라틴어 cella (작은 방)",
+      "story": "벌집의 작은 방(cella) 하나하나처럼 나뉜 한 칸 → (표의) 칸, 셀, 세포",
+      "hook": "셀 → 엑셀 시트의 '셀' 한 칸 → 표의 칸",
+      "family": [
+        "cellar",
+        "cellular",
+        "conceal"
+      ]
+    }
   },
   {
     "id": "certain",
@@ -964,7 +1230,27 @@
       "sure",
       "confident"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "cert",
+          "ko": "가려낸, 확실한"
+        },
+        {
+          "part": "-ain",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 certus (가려져 정해진) ← cernere",
+      "story": "체로 쳐서 가려낸(cert) 듯 틀림없는(ain) → 확실한, 확신하는, 특정한",
+      "family": [
+        "certify",
+        "certificate",
+        "ascertain",
+        "concern"
+      ]
+    }
   },
   {
     "id": "certainty",
@@ -1057,7 +1343,16 @@
       "pipeline",
       "series"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "origin": "라틴어 catena (사슬)",
+      "story": "고리가 줄줄이 물린 사슬(catena)처럼 단계를 순서대로 잇는다 → 체인, 연쇄, 잇다",
+      "hook": "체인 → 자전거 '체인'·'체인점'처럼 줄줄이 이어진 → 연쇄",
+      "family": [
+        "concatenate",
+        "catenary"
+      ]
+    }
   },
   {
     "id": "challenge",
@@ -1097,7 +1392,12 @@
       "question",
       "dispute"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "origin": "고대 프랑스어 chalenge (비난, 이의 제기)",
+      "story": "상대의 말에 '정말 그런가' 하고 따지고 든다 → 이의를 제기하다, 도전하다",
+      "hook": "챌린지 → SNS '○○ 챌린지'의 도전 → 어려운 과제, 도전"
+    }
   },
   {
     "id": "chance",
@@ -1131,7 +1431,17 @@
       "probability",
       "possibility"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "라틴어 cadentia (떨어짐, 주사위가 나온 결과)",
+      "story": "던진 주사위가 어떻게 떨어질지(cadere) 모르는 일 → 가능성, 확률, 우연",
+      "hook": "찬스 → '찬스가 왔다'의 찬스 → 기회, 가능성",
+      "family": [
+        "case",
+        "accident",
+        "cadence"
+      ]
+    }
   },
   {
     "id": "change",
@@ -1209,7 +1519,17 @@
       "medium",
       "path"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "origin": "라틴어 canalis (물길, 도랑)",
+      "story": "물이 흐르는 길(canalis)처럼 말과 물건이 오가는 길 → 경로, 채널, (한쪽으로) 돌리다",
+      "hook": "채널 → TV '채널'도 전파가 흐르는 길 → 경로, 채널",
+      "family": [
+        "canal",
+        "cane",
+        "canyon"
+      ]
+    }
   },
   {
     "id": "character",
@@ -1244,7 +1564,16 @@
       "symbol",
       "letter"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "그리스어 kharaktēr (새긴 표시)",
+      "story": "돌에 새긴 표시(kharaktēr) 하나, 사람에게 새겨진 됨됨이 → 문자, 성격, 등장인물",
+      "hook": "캐릭터 → 만화 '캐릭터'마다 뚜렷한 성격 → 성격, 등장인물",
+      "family": [
+        "characteristic",
+        "characterize"
+      ]
+    }
   },
   {
     "id": "charge",
@@ -1283,7 +1612,17 @@
     "synonyms": [
       "recharge"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "origin": "후기 라틴어 carricare (수레에 짐을 싣다)",
+      "story": "수레에 짐을 싣듯(carricare) 전기를 싣고 값을 지운다 → 충전하다, 청구하다, 요금",
+      "family": [
+        "car",
+        "carry",
+        "cargo",
+        "discharge"
+      ]
+    }
   },
   {
     "id": "charger",
@@ -1304,7 +1643,26 @@
     "forms": [
       "chargers"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "charg",
+          "ko": "싣다, 채우다(charge)"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "story": "배터리에 전기를 채워(charge) 넣는 기기(er) → 충전기",
+      "family": [
+        "charge",
+        "recharge",
+        "discharge",
+        "cargo"
+      ]
+    }
   },
   {
     "id": "chat",
@@ -1360,7 +1718,25 @@
     "synonyms": [
       "bot"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "chat",
+          "ko": "잡담, 대화"
+        },
+        {
+          "part": "bot",
+          "ko": "로봇(robot)"
+        }
+      ],
+      "story": "사람과 수다(chat) 떨듯 대화하며 답하는 로봇(bot) → 챗봇",
+      "family": [
+        "chat",
+        "chatter",
+        "robot"
+      ]
+    }
   },
   {
     "id": "cheap",
@@ -1492,7 +1868,25 @@
     "synonyms": [
       "verifiable"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "check",
+          "ko": "확인하다"
+        },
+        {
+          "part": "-able",
+          "ko": "~할 수 있는"
+        }
+      ],
+      "story": "맞는지 틀리는지 확인(check)할 수 있는(able) → 확인할 수 있는, 검증 가능한",
+      "family": [
+        "check",
+        "checkup",
+        "recheck"
+      ]
+    }
   },
   {
     "id": "checker",
@@ -1521,7 +1915,25 @@
       "validator",
       "inspector"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "check",
+          "ko": "확인하다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것·사람"
+        }
+      ],
+      "story": "조건이 맞는지 확인(check)하는 것·사람(er) → 검사기, 검사원",
+      "family": [
+        "check",
+        "checklist",
+        "checkpoint"
+      ]
+    }
   },
   {
     "id": "checklist",
@@ -1542,7 +1954,25 @@
     "forms": [
       "checklists"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "check",
+          "ko": "확인(표시)"
+        },
+        {
+          "part": "list",
+          "ko": "목록"
+        }
+      ],
+      "story": "하나씩 확인(check) 표시를 해 나가는 목록(list) → 체크리스트, 점검 목록",
+      "family": [
+        "checkbox",
+        "checkpoint",
+        "wishlist"
+      ]
+    }
   },
   {
     "id": "checkout",
@@ -1570,7 +2000,21 @@
     "synonyms": [
       "working copy"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "check",
+          "ko": "확인하다"
+        },
+        {
+          "part": "out",
+          "ko": "밖으로"
+        }
+      ],
+      "story": "확인(check)을 거쳐 밖(out)으로 꺼내 온다, 저장소에서도 가게에서도 → 체크아웃, 결제 단계",
+      "hook": "체크아웃 → 호텔 '체크아웃'처럼 정산하고 나온다 → 결제 단계"
+    }
   },
   {
     "id": "checkpoint",
@@ -1598,7 +2042,26 @@
     "synonyms": [
       "snapshot"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "check",
+          "ko": "확인하다"
+        },
+        {
+          "part": "point",
+          "ko": "지점"
+        }
+      ],
+      "story": "멈춰서 확인(check)하고 가는 지점(point), 여기까지는 저장 → 체크포인트, 검문소",
+      "family": [
+        "check",
+        "breakpoint",
+        "endpoint",
+        "viewpoint"
+      ]
+    }
   },
   {
     "id": "chip",
@@ -1627,7 +2090,12 @@
       "microchip",
       "semiconductor"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "고대 영어 cipp (나무토막, 깎인 조각)",
+      "story": "깎아 낸 얇은 조각(chip), 실리콘 조각 위에 회로를 새겼다 → (반도체) 칩, 조각",
+      "hook": "칩 → 감자'칩'도 얇게 썬 조각 → 조각, 칩"
+    }
   },
   {
     "id": "choice",
@@ -1721,7 +2189,10 @@
       "piece",
       "segment"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "story": "큰 덩어리를 한입 크기로 뚝뚝 썰어 낸 토막 하나 → 청크, 조각, 조각으로 나누다"
+    }
   },
   {
     "id": "ci",
@@ -1745,7 +2216,11 @@
     "synonyms": [
       "continuous integration"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "Continuous Integration",
+      "story": "커밋할 때마다 끊임없이(Continuous) 코드를 합쳐(Integration) 빌드·테스트한다 → 지속적 통합"
+    }
   },
   {
     "id": "circumstance",
@@ -1832,7 +2307,16 @@
       "quote",
       "reference"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "라틴어 citare (불러내다)",
+      "story": "증인을 불러내듯(citare) 근거가 되는 글을 불러온다 → 인용하다, 근거로 들다",
+      "family": [
+        "recite",
+        "excite",
+        "incite"
+      ]
+    }
   },
   {
     "id": "city",
@@ -1897,7 +2381,18 @@
       "allege",
       "contend"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "origin": "라틴어 clamare (크게 외치다)",
+      "story": "'이건 사실이다, 내 몫이다' 하고 크게 외친다(clamare) → 주장(하다), 청구",
+      "hook": "클레임 → '고객 클레임'처럼 내 권리를 내세운다 → 주장, 청구",
+      "family": [
+        "exclaim",
+        "proclaim",
+        "acclaim",
+        "clamor"
+      ]
+    }
   },
   {
     "id": "claim-to-source",
@@ -1915,7 +2410,24 @@
         "ko": "주장과 출처를 짝지은"
       }
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "claim",
+          "ko": "주장"
+        },
+        {
+          "part": "to",
+          "ko": "~에"
+        },
+        {
+          "part": "source",
+          "ko": "출처"
+        }
+      ],
+      "story": "주장(claim) 하나하나를 그 근거 출처(source)에(to) 짝지어 놓은 → 주장-출처 (대응)의"
+    }
   },
   {
     "id": "clarify",
@@ -1947,7 +2459,26 @@
       "explain",
       "specify"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "clar",
+          "ko": "맑은, 분명한"
+        },
+        {
+          "part": "-ify",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "origin": "라틴어 clarificare (맑게 만들다)",
+      "story": "흐릿한 것을 맑게(clar) 만든다(ify) → 명확히 하다, 분명히 묻다",
+      "family": [
+        "clear",
+        "clarity",
+        "declare"
+      ]
+    }
   },
   {
     "id": "class",
@@ -1981,7 +2512,17 @@
       "kind",
       "type"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "라틴어 classis (로마 시민을 나눈 등급)",
+      "story": "시민을 등급(classis)으로 나누듯 같은 것끼리 묶은 갈래 → 클래스, 종류, 부류, 학급",
+      "hook": "클래스 → '클래스가 다르다(급이 다르다)'의 클래스 → 부류, 종류",
+      "family": [
+        "classic",
+        "classify",
+        "classical"
+      ]
+    }
   },
   {
     "id": "classifier",
@@ -2005,7 +2546,29 @@
     "synonyms": [
       "categorizer"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "class",
+          "ko": "부류"
+        },
+        {
+          "part": "-ifi",
+          "ko": "~로 만들다(-ify)"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "story": "입력을 정해진 부류(class)로 나눠 주는(ify) 것(er) → 분류기",
+      "family": [
+        "classify",
+        "class",
+        "classic"
+      ]
+    }
   },
   {
     "id": "classify",
@@ -2038,7 +2601,25 @@
       "sort",
       "label"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "class",
+          "ko": "부류"
+        },
+        {
+          "part": "-ify",
+          "ko": "~로 만들다"
+        }
+      ],
+      "story": "뒤섞인 것을 기준에 따라 부류(class)별로 만든다(ify) → 분류하다",
+      "family": [
+        "class",
+        "classic",
+        "declassify"
+      ]
+    }
   },
   {
     "id": "clause",
@@ -2145,7 +2726,25 @@
       "neatly",
       "smoothly"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "clean",
+          "ko": "깨끗한"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "섞이거나 꼬인 데 없이 깨끗(clean)하게(ly) 딱 떨어지게 → 깔끔하게, 깨끗이",
+      "family": [
+        "clean",
+        "cleanse",
+        "cleaner"
+      ]
+    }
   },
   {
     "id": "cleanup",
@@ -2173,7 +2772,25 @@
     "synonyms": [
       "tidying"
     ],
-    "domain": "삭제·제거"
+    "domain": "삭제·제거",
+    "memory": {
+      "roots": [
+        {
+          "part": "clean",
+          "ko": "깨끗이 하다"
+        },
+        {
+          "part": "up",
+          "ko": "완전히, 싹"
+        }
+      ],
+      "story": "어질러진 것을 깨끗이(clean) 싹(up) 치우는 일 → 정리, 정제, 청소",
+      "family": [
+        "clean",
+        "cleanse",
+        "cleaner"
+      ]
+    }
   },
   {
     "id": "clear",
@@ -2211,7 +2828,17 @@
       "explicit",
       "plain"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "origin": "라틴어 clarus (맑은, 밝은)",
+      "story": "안개 없이 맑아(clarus) 훤히 보인다, 걸려 있던 것이 걷힌다 → 분명한, 해소되다, 지우다",
+      "hook": "클리어 → 게임 스테이지 '클리어' → 해소되다, 깨끗이 지우다",
+      "family": [
+        "clarify",
+        "clarity",
+        "declare"
+      ]
+    }
   },
   {
     "id": "clear-cut",
@@ -2274,7 +2901,26 @@
       "obviously",
       "evidently"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "clear",
+          "ko": "맑은, 분명한"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "흐린 데 없이 맑게(clear) 훤히 보이도록(ly) → 분명히, 또렷하게",
+      "family": [
+        "clear",
+        "clarify",
+        "clarity",
+        "unclear"
+      ]
+    }
   },
   {
     "id": "cli",
@@ -2298,7 +2944,11 @@
     "synonyms": [
       "command line"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "Command-Line Interface",
+      "story": "명령(Command)을 한 줄(Line)씩 쳐 넣어 쓰는 접점(Interface) → 명령줄 인터페이스"
+    }
   },
   {
     "id": "client",
@@ -2326,7 +2976,11 @@
     "synonyms": [
       "customer"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "라틴어 cliens (유력자에게 의지하는 사람)",
+      "story": "유력자에게 의지해 도움을 청하던 사람(cliens), 서버에 요청하는 쪽 → 클라이언트, 고객"
+    }
   },
   {
     "id": "clinical",
@@ -2435,7 +3089,12 @@
       "copy",
       "duplicate"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "origin": "그리스어 klōn (잔가지)",
+      "story": "잔가지(klōn)를 꺾어 심으면 똑같은 나무가 자란다 → 복제하다, 복제본",
+      "hook": "클론 → SF 영화의 '클론(복제 인간)' → 복제본, 복제하다"
+    }
   },
   {
     "id": "close",
@@ -2626,7 +3285,17 @@
     "synonyms": [
       "source code"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "라틴어 codex (나무판 책, 법전)",
+      "story": "법을 체계 있게 적은 법전(codex)처럼 약속된 기호로 적은 것 → 코드, 부호, 규약",
+      "family": [
+        "codex",
+        "codify",
+        "encode",
+        "decode"
+      ]
+    }
   },
   {
     "id": "code-intelligence",
@@ -2647,7 +3316,20 @@
     "forms": [
       "code intelligence"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "code",
+          "ko": "코드"
+        },
+        {
+          "part": "intelligence",
+          "ko": "지능, 이해력"
+        }
+      ],
+      "story": "코드(code)의 심볼과 참조 관계를 이해하는 지능(intelligence) → 코드 인텔리전스"
+    }
   },
   {
     "id": "code-review",
@@ -2669,7 +3351,24 @@
       "code review",
       "code reviews"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "code",
+          "ko": "코드"
+        },
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "view",
+          "ko": "보다"
+        }
+      ],
+      "story": "바뀐 코드(code)를 다시(re) 들여다보며(view) 결함을 찾는다 → 코드 리뷰"
+    }
   },
   {
     "id": "codebase",
@@ -2693,7 +3392,25 @@
     "synonyms": [
       "source code"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "code",
+          "ko": "코드"
+        },
+        {
+          "part": "base",
+          "ko": "바탕, 기반"
+        }
+      ],
+      "story": "한 프로젝트의 바탕(base)을 이루는 코드(code) 전체 → 코드베이스",
+      "family": [
+        "database",
+        "baseline",
+        "encode"
+      ]
+    }
   },
   {
     "id": "coding",
@@ -2718,7 +3435,26 @@
     "synonyms": [
       "programming"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "cod",
+          "ko": "코드(code)"
+        },
+        {
+          "part": "-ing",
+          "ko": "~하는 일"
+        }
+      ],
+      "story": "코드(code)를 짜거나 부호를 매기는 일(ing) → 코딩, 부호화",
+      "family": [
+        "code",
+        "encode",
+        "decode",
+        "codec"
+      ]
+    }
   },
   {
     "id": "coexist",
@@ -2853,7 +3589,31 @@
       "cooperate",
       "work together"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "col-",
+          "ko": "함께"
+        },
+        {
+          "part": "labor",
+          "ko": "일하다"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 collaborare (함께 일하다)",
+      "story": "한 가지 일을 놓고 함께(col) 일한다(labor) → 협업하다",
+      "hook": "컬래버레이트 → 브랜드끼리 '콜라보' → 협업하다",
+      "family": [
+        "labor",
+        "laboratory",
+        "elaborate"
+      ]
+    }
   },
   {
     "id": "colleague",
@@ -2878,7 +3638,26 @@
       "coworker",
       "teammate"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "col-",
+          "ko": "함께"
+        },
+        {
+          "part": "leag",
+          "ko": "뽑아 맡기다"
+        }
+      ],
+      "origin": "라틴어 collega (함께 뽑혀 일을 맡은 사람)",
+      "story": "함께(col) 뽑혀(leag) 같은 일을 맡은 사람 → (직장) 동료",
+      "family": [
+        "college",
+        "delegate",
+        "legacy"
+      ]
+    }
   },
   {
     "id": "collect",
@@ -2909,7 +3688,27 @@
       "gather",
       "compile"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "col-",
+          "ko": "함께, 한데"
+        },
+        {
+          "part": "lect",
+          "ko": "모으다, 고르다"
+        }
+      ],
+      "origin": "라틴어 colligere (한데 모으다)",
+      "story": "흩어져 있는 것을 한데(col) 모은다(lect) → 모으다, 수집하다, (돈을) 걷다",
+      "family": [
+        "select",
+        "elect",
+        "lecture",
+        "neglect"
+      ]
+    }
   },
   {
     "id": "collection",
@@ -2938,7 +3737,31 @@
       "gathering",
       "set"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "col-",
+          "ko": "함께, 한데"
+        },
+        {
+          "part": "lect",
+          "ko": "모으다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 colligere (한데 모으다)",
+      "story": "한데(col) 모으는(lect) 일, 또 모아 놓은 것(ion) → 수집, 모음",
+      "hook": "컬렉션 → 패션 '컬렉션'·소장품 '컬렉션' → 모음",
+      "family": [
+        "collect",
+        "select",
+        "elect"
+      ]
+    }
   },
   {
     "id": "colon",
@@ -2959,7 +3782,11 @@
     "forms": [
       "colons"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "그리스어 kōlon (팔다리, 문장의 한 마디)",
+      "story": "문장의 한 마디(kōlon)가 끝나는 자리에 찍던 표 → 콜론, 쌍점 (:)"
+    }
   },
   {
     "id": "column",
@@ -2991,7 +3818,17 @@
     "synonyms": [
       "field"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "라틴어 columna (기둥)",
+      "story": "기둥(columna)처럼 위아래로 길게 선 줄 → 열, 칼럼, 기둥",
+      "hook": "칼럼 → 신문 '칼럼'도 세로로 긴 기둥 모양 난 → 열, 기고란",
+      "family": [
+        "colonnade",
+        "columnist",
+        "colonel"
+      ]
+    }
   },
   {
     "id": "combine",
@@ -3032,7 +3869,27 @@
       "join",
       "unite"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "함께"
+        },
+        {
+          "part": "bin",
+          "ko": "둘씩"
+        }
+      ],
+      "origin": "후기 라틴어 combinare (둘씩 짝짓다)",
+      "story": "따로 있던 둘(bin)을 함께(com) 짝지어 하나로 만든다 → 결합하다, 합치다",
+      "hook": "콤바인 → 베기와 털기를 합친 농기계 '콤바인' → 합치다",
+      "family": [
+        "binary",
+        "binoculars",
+        "combination"
+      ]
+    }
   },
   {
     "id": "come",
@@ -3195,7 +4052,11 @@
     "forms": [
       "commas"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "그리스어 komma (잘라 낸 조각, 짧은 구절)",
+      "story": "문장을 짧게 잘라(komma) 끊어 읽는 자리에 찍는 표 → 쉼표, 콤마 (,)"
+    }
   },
   {
     "id": "command",
@@ -3228,7 +4089,27 @@
       "instruction",
       "directive"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "완전히(강조)"
+        },
+        {
+          "part": "mand",
+          "ko": "맡기다, 명하다"
+        }
+      ],
+      "origin": "라틴어 commendare (맡기다) ← mandare",
+      "story": "'이 일을 하라'고 단단히(com) 맡겨 시킨다(mand) → 명령(어), 커맨드",
+      "family": [
+        "demand",
+        "mandate",
+        "mandatory",
+        "recommend"
+      ]
+    }
   },
   {
     "id": "comment",
@@ -3265,7 +4146,27 @@
       "note",
       "annotation"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "함께, 곰곰이"
+        },
+        {
+          "part": "ment",
+          "ko": "생각, 마음"
+        }
+      ],
+      "origin": "라틴어 commentum (생각해 낸 것, 풀이)",
+      "story": "읽고 곰곰이(com) 생각한(ment) 바를 곁에 적어 둔다 → 의견, 주석, 의견을 달다",
+      "hook": "코멘트 → '노코멘트(할 말 없음)'의 코멘트 → 의견",
+      "family": [
+        "mental",
+        "mention",
+        "commentary"
+      ]
+    }
   },
   {
     "id": "commentary",
@@ -3291,7 +4192,25 @@
       "remarks",
       "explanation"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "comment",
+          "ko": "의견, 풀이"
+        },
+        {
+          "part": "-ary",
+          "ko": "~에 관한 것"
+        }
+      ],
+      "story": "본 내용 곁에 풀이(comment)를 덧붙여 놓은 것(ary) → 설명, 논평",
+      "family": [
+        "comment",
+        "commentator",
+        "mental"
+      ]
+    }
   },
   {
     "id": "commit",
@@ -3331,7 +4250,27 @@
       "check in",
       "pledge"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "함께, 완전히"
+        },
+        {
+          "part": "mit",
+          "ko": "보내다, 맡기다"
+        }
+      ],
+      "origin": "라틴어 committere (한데 보내다, 맡기다)",
+      "story": "변경을 저장소에 완전히(com) 맡겨 보낸다(mit), 이제 물릴 수 없다 → 커밋하다, 확정하다",
+      "family": [
+        "submit",
+        "permit",
+        "transmit",
+        "mission"
+      ]
+    }
   },
   {
     "id": "common",
@@ -3361,7 +4300,27 @@
       "typical",
       "widespread"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "함께"
+        },
+        {
+          "part": "mon",
+          "ko": "주고받다, 나누다"
+        }
+      ],
+      "origin": "라틴어 communis (모두가 함께 나누는)",
+      "story": "모두가 함께(com) 나눠(mon) 가져 어디에나 있는 → 흔한, 공통의",
+      "family": [
+        "community",
+        "communicate",
+        "commune",
+        "municipal"
+      ]
+    }
   },
   {
     "id": "compact",
@@ -3398,7 +4357,26 @@
       "condense",
       "compress"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "함께, 한데"
+        },
+        {
+          "part": "pact",
+          "ko": "단단히 죄다"
+        }
+      ],
+      "origin": "라틴어 compingere (한데 죄어 맞추다)",
+      "story": "긴 것을 한데(com) 꾹꾹 죄어(pact) 작게 만든다 → 압축하다, 간결한",
+      "hook": "콤팩트 → 작게 눌러 담은 '콤팩트 카메라' → 압축하다, 간결한",
+      "family": [
+        "impact",
+        "pact"
+      ]
+    }
   },
   {
     "id": "company",
@@ -3460,7 +4438,26 @@
       "contrast",
       "match"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "함께"
+        },
+        {
+          "part": "par",
+          "ko": "같은, 짝"
+        }
+      ],
+      "origin": "라틴어 comparare (짝지어 견주다)",
+      "story": "둘을 함께(com) 나란히 놓고 같은지(par) 견준다 → 비교하다, 비유하다",
+      "family": [
+        "pair",
+        "peer",
+        "parity"
+      ]
+    }
   },
   {
     "id": "compete",
@@ -3542,7 +4539,31 @@
     "synonyms": [
       "rival"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "함께"
+        },
+        {
+          "part": "pet",
+          "ko": "구하다, 달려들다"
+        },
+        {
+          "part": "-itive",
+          "ko": "~하는 성질의"
+        }
+      ],
+      "origin": "라틴어 competere (함께 구하다)",
+      "story": "같은 것을 여럿이 함께(com) 구하려(pet) 다투는 → 경쟁의",
+      "family": [
+        "compete",
+        "petition",
+        "appetite",
+        "repeat"
+      ]
+    }
   },
   {
     "id": "competitor",
@@ -3621,7 +4642,25 @@
     "synonyms": [
       "build"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "함께, 한데"
+        },
+        {
+          "part": "pile",
+          "ko": "눌러 담다(pilare)"
+        }
+      ],
+      "origin": "라틴어 compilare (한데 그러모으다)",
+      "story": "여러 자료를 한데(com) 그러모아(pile) 하나로 엮는다 → 컴파일하다, 모아 엮다",
+      "family": [
+        "compiler",
+        "compilation"
+      ]
+    }
   },
   {
     "id": "complaint",
@@ -3711,7 +4750,27 @@
       "whole",
       "entire"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "완전히"
+        },
+        {
+          "part": "plete",
+          "ko": "채우다"
+        }
+      ],
+      "origin": "라틴어 complere (가득 채우다)",
+      "story": "빈 데 없이 완전히(com) 채웠다(plete) → 완료하다, 완전한",
+      "family": [
+        "deplete",
+        "plenty",
+        "supply",
+        "complement"
+      ]
+    }
   },
   {
     "id": "completeness",
@@ -3733,7 +4792,29 @@
       "thoroughness",
       "entirety"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "완전히"
+        },
+        {
+          "part": "plete",
+          "ko": "채우다"
+        },
+        {
+          "part": "-ness",
+          "ko": "~한 상태"
+        }
+      ],
+      "story": "빈 데 없이 완전히(com) 채워진(plete) 상태(ness) → 완전성, 빠짐없음",
+      "family": [
+        "complete",
+        "deplete",
+        "plenty"
+      ]
+    }
   },
   {
     "id": "complex",
@@ -3767,7 +4848,27 @@
       "complicated",
       "intricate"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "함께"
+        },
+        {
+          "part": "plex",
+          "ko": "엮다, 꼬다"
+        }
+      ],
+      "origin": "라틴어 complexus (함께 엮인)",
+      "story": "여러 가닥이 함께(com) 엮여(plex) 얽힌 → 복잡한",
+      "hook": "콤플렉스 → 여러 시설이 얽힌 '복합 단지(콤플렉스)' → 복잡한",
+      "family": [
+        "perplex",
+        "duplex",
+        "multiplex"
+      ]
+    }
   },
   {
     "id": "compliance",
@@ -3799,7 +4900,26 @@
       "adherence",
       "conformity"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "compli",
+          "ko": "채우다, 따르다(comply)"
+        },
+        {
+          "part": "-ance",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 complere (가득 채우다)",
+      "story": "규정이 요구하는 바를 다 채워(comply) 따르는 일(ance) → (규정) 준수",
+      "family": [
+        "comply",
+        "compliant",
+        "complete"
+      ]
+    }
   },
   {
     "id": "complicated",
@@ -3825,7 +4945,30 @@
       "complex",
       "intricate"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "함께"
+        },
+        {
+          "part": "plic",
+          "ko": "접다"
+        },
+        {
+          "part": "-ated",
+          "ko": "~된"
+        }
+      ],
+      "origin": "라틴어 complicare (함께 접다)",
+      "story": "여러 겹이 함께(com) 접혀(plic) 풀기 어려워진 → 복잡한, 까다로운",
+      "family": [
+        "duplicate",
+        "explicit",
+        "implicit"
+      ]
+    }
   },
   {
     "id": "component",
@@ -3855,7 +4998,31 @@
       "part",
       "element"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "함께"
+        },
+        {
+          "part": "pon",
+          "ko": "놓다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 componere (함께 놓다)",
+      "story": "함께(com) 놓여(pon) 전체를 이루는 것(ent) 하나하나 → 구성 요소, 컴포넌트",
+      "family": [
+        "compose",
+        "opponent",
+        "postpone",
+        "position"
+      ]
+    }
   },
   {
     "id": "composite",
@@ -3881,7 +5048,27 @@
       "combined",
       "compound"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "함께"
+        },
+        {
+          "part": "posit",
+          "ko": "놓다"
+        }
+      ],
+      "origin": "라틴어 compositus (함께 놓인)",
+      "story": "여러 요소를 함께(com) 놓아(posit) 하나로 만든 → 여러 요소를 합친, 복합의",
+      "family": [
+        "compose",
+        "position",
+        "deposit",
+        "opposite"
+      ]
+    }
   },
   {
     "id": "comprehensive",
@@ -3907,7 +5094,30 @@
       "exhaustive",
       "complete"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "모두, 함께"
+        },
+        {
+          "part": "prehens",
+          "ko": "붙잡다"
+        },
+        {
+          "part": "-ive",
+          "ko": "~하는 성질의"
+        }
+      ],
+      "origin": "라틴어 comprehendere (모두 붙잡다)",
+      "story": "하나도 빠뜨리지 않고 모두(com) 붙잡아(prehens) 담는(ive) → 포괄적인",
+      "family": [
+        "comprehend",
+        "apprehend",
+        "prison"
+      ]
+    }
   },
   {
     "id": "compute",
@@ -3939,7 +5149,28 @@
       "calculate",
       "work out"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "com-",
+          "ko": "함께"
+        },
+        {
+          "part": "pute",
+          "ko": "셈하다, 생각하다"
+        }
+      ],
+      "origin": "라틴어 computare (모아서 셈하다)",
+      "story": "숫자를 한데(com) 모아 셈한다(pute) → 계산하다, 산출하다",
+      "hook": "컴퓨트 → 계산하는 기계가 '컴퓨터' → 계산하다",
+      "family": [
+        "computer",
+        "dispute",
+        "reputation",
+        "count"
+      ]
+    }
   },
   {
     "id": "concatenate",
@@ -3968,7 +5199,29 @@
       "append",
       "chain"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "caten",
+          "ko": "사슬"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 concatenare (사슬로 잇다)",
+      "story": "사슬(caten) 고리처럼 함께(con) 줄줄이 잇는다(ate) → 이어 붙이다",
+      "family": [
+        "chain",
+        "catenary"
+      ]
+    }
   },
   {
     "id": "conceivable",
@@ -4050,7 +5303,31 @@
       "focus",
       "cluster"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "centr",
+          "ko": "중심"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 con- + centrum (한가운데로)",
+      "story": "흩어진 것을 모두 한(con) 가운데(centr)로 모은다(ate) → 집중하다, 모이다",
+      "family": [
+        "center",
+        "central",
+        "eccentric",
+        "concentric"
+      ]
+    }
   },
   {
     "id": "concern",
@@ -4092,7 +5369,26 @@
       "worry",
       "matter"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "cern",
+          "ko": "체로 치다, 가려 보다"
+        }
+      ],
+      "origin": "라틴어 concernere (함께 섞어 체로 치다)",
+      "story": "나와 얽혀(con) 있어 따져 가려 봐야(cern) 하는 일 → 문의 사항, 용건, 우려",
+      "family": [
+        "discern",
+        "certain",
+        "certify"
+      ]
+    }
   },
   {
     "id": "concise",
@@ -4176,7 +5472,27 @@
       "infer",
       "determine"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "완전히"
+        },
+        {
+          "part": "clude",
+          "ko": "닫다"
+        }
+      ],
+      "origin": "라틴어 concludere (완전히 닫다)",
+      "story": "열려 있던 논의를 완전히(con) 닫는다(clude) → 결론을 내리다, 끝맺다",
+      "family": [
+        "include",
+        "exclude",
+        "close",
+        "closure"
+      ]
+    }
   },
   {
     "id": "concrete",
@@ -4256,7 +5572,35 @@
       "simultaneously",
       "in parallel"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "curr",
+          "ko": "달리다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~하는"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 concurrere (함께 달리다)",
+      "story": "여러 작업이 함께(con) 나란히 달리듯(curr) → 동시에, 병렬로",
+      "family": [
+        "current",
+        "occur",
+        "cursor",
+        "course"
+      ]
+    }
   },
   {
     "id": "condense",
@@ -4338,7 +5682,32 @@
       "situation",
       "requirement"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "dit",
+          "ko": "말하다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 condicio (서로 말해 정한 것, 처지)",
+      "story": "서로 함께(con) 말해(dit) 정해 둔 것(ion), 그렇게 놓인 처지 → 상황, 상태, 조건",
+      "hook": "컨디션 → '오늘 컨디션이 좋다'의 컨디션 → 상태",
+      "family": [
+        "dictate",
+        "predict",
+        "dictionary",
+        "contradict"
+      ]
+    }
   },
   {
     "id": "conditional",
@@ -4362,7 +5731,34 @@
     "synonyms": [
       "contingent"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "dit",
+          "ko": "말하다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~한 것"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "story": "미리 말해 둔 조건(condition)이 맞을 때만 따라붙는(al) → 조건부의",
+      "family": [
+        "condition",
+        "unconditional",
+        "dictate",
+        "predict"
+      ]
+    }
   },
   {
     "id": "conduct",
@@ -4397,7 +5793,28 @@
       "carry out",
       "perform"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "duct",
+          "ko": "이끌다"
+        }
+      ],
+      "origin": "라틴어 conducere (함께 이끌다)",
+      "story": "사람과 절차를 함께(con) 이끌어(duct) 일을 치러 낸다 → 실시하다, 수행하다",
+      "hook": "컨덕트 → 악단을 이끄는 '컨덕터(지휘자)' → 이끌어 수행하다",
+      "family": [
+        "conductor",
+        "produce",
+        "introduce",
+        "educate"
+      ]
+    }
   },
   {
     "id": "confidence",
@@ -4485,7 +5902,26 @@
     "synonyms": [
       "set up"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "figure",
+          "ko": "모양, 꼴을 잡다"
+        }
+      ],
+      "origin": "라틴어 configurare (맞춰서 모양을 잡다)",
+      "story": "값들을 함께(con) 맞춰 쓸 꼴(figure)을 잡는다 → 구성하다, 설정하다",
+      "family": [
+        "figure",
+        "disfigure",
+        "figurative"
+      ]
+    }
   },
   {
     "id": "confirm",
@@ -4517,7 +5953,27 @@
       "verify",
       "validate"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "완전히"
+        },
+        {
+          "part": "firm",
+          "ko": "단단한"
+        }
+      ],
+      "origin": "라틴어 confirmare (단단히 다지다)",
+      "story": "흔들리지 않게 완전히(con) 단단하게(firm) 다진다 → 확인하다, 확정하다",
+      "hook": "컨펌 → 회사에서 '컨펌 받다' → 확인하다, 확정하다",
+      "family": [
+        "firm",
+        "affirm",
+        "infirm"
+      ]
+    }
   },
   {
     "id": "conflict",
@@ -4553,7 +6009,25 @@
       "clash",
       "contradiction"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께, 서로"
+        },
+        {
+          "part": "flict",
+          "ko": "치다"
+        }
+      ],
+      "origin": "라틴어 confligere (서로 맞부딪치다)",
+      "story": "둘이 서로(con) 맞부딪쳐 친다(flict) → 충돌, 상충(하다)",
+      "family": [
+        "inflict",
+        "afflict"
+      ]
+    }
   },
   {
     "id": "confuse",
@@ -4589,7 +6063,27 @@
       "puzzle",
       "mix up"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "fuse",
+          "ko": "붓다"
+        }
+      ],
+      "origin": "라틴어 confundere (함께 부어 섞다)",
+      "story": "이것저것 함께(con) 부어(fuse) 뒤섞이니 분간이 안 된다 → 헷갈리게 하다, 혼동하다",
+      "family": [
+        "fuse",
+        "refuse",
+        "diffuse",
+        "fusion"
+      ]
+    }
   },
   {
     "id": "connect",
@@ -4620,7 +6114,26 @@
       "link",
       "attach"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "nect",
+          "ko": "묶다, 잇다"
+        }
+      ],
+      "origin": "라틴어 connectere (함께 묶다)",
+      "story": "떨어져 있던 둘을 함께(con) 묶어 잇는다(nect) → 연결하다, 접속하다, 잇다",
+      "family": [
+        "nexus",
+        "annex",
+        "disconnect"
+      ]
+    }
   },
   {
     "id": "connection",
@@ -4648,7 +6161,30 @@
     "synonyms": [
       "link"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "nect",
+          "ko": "묶다, 잇다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 connectere (함께 묶다)",
+      "story": "둘을 함께(con) 묶어(nect) 이어 놓은 것(ion) → 연결, 접속, 관련",
+      "family": [
+        "connect",
+        "nexus",
+        "annex"
+      ]
+    }
   },
   {
     "id": "connector",
@@ -4676,7 +6212,29 @@
     "synonyms": [
       "plug"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "nect",
+          "ko": "묶다, 잇다"
+        },
+        {
+          "part": "-or",
+          "ko": "~하는 것"
+        }
+      ],
+      "story": "둘을 함께(con) 이어(nect) 주는 것(or) → 커넥터, 연결 단자, 연결 모듈",
+      "family": [
+        "connect",
+        "connection",
+        "nexus"
+      ]
+    }
   },
   {
     "id": "consecutive",
@@ -4758,7 +6316,27 @@
       "approval",
       "agree"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "sent",
+          "ko": "느끼다"
+        }
+      ],
+      "origin": "라틴어 consentire (함께 느끼다)",
+      "story": "상대와 같은 마음을 함께(con) 느껴(sent) '좋다'고 한다 → 동의(하다), 허락",
+      "family": [
+        "sense",
+        "sentiment",
+        "resent",
+        "dissent"
+      ]
+    }
   },
   {
     "id": "consequently",
@@ -4902,7 +6480,26 @@
       "evaluate",
       "regard"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께, 꼼꼼히"
+        },
+        {
+          "part": "sider",
+          "ko": "별"
+        }
+      ],
+      "origin": "라틴어 considerare (별을 꼼꼼히 살피다)",
+      "story": "별(sider)을 꼼꼼히(con) 살피며 점치듯 이모저모 따져 본다 → 고려하다, 검토하다",
+      "family": [
+        "considerate",
+        "desire",
+        "sidereal"
+      ]
+    }
   },
   {
     "id": "consistent",
@@ -5049,7 +6646,27 @@
       "constantly",
       "constants"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께, 굳게"
+        },
+        {
+          "part": "stant",
+          "ko": "서 있는"
+        }
+      ],
+      "origin": "라틴어 constare (굳게 서 있다)",
+      "story": "늘 그 자리에 굳게(con) 서(stant) 있어 변하지 않는 → 일정한, 끊임없는, 상수",
+      "family": [
+        "instant",
+        "distant",
+        "stand",
+        "circumstance"
+      ]
+    }
   },
   {
     "id": "constrained-decoding",
@@ -5170,7 +6787,26 @@
       "build",
       "assemble"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "struct",
+          "ko": "쌓다"
+        }
+      ],
+      "origin": "라틴어 construere (함께 쌓아 올리다)",
+      "story": "부품을 함께(con) 쌓아(struct) 올린다, 코드를 쌓는 벽돌 하나 → 구성하다, 구문 요소",
+      "family": [
+        "structure",
+        "instruct",
+        "destruction"
+      ]
+    }
   },
   {
     "id": "consult",
@@ -5245,7 +6881,27 @@
       "use up",
       "spend"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "완전히"
+        },
+        {
+          "part": "sume",
+          "ko": "취하다"
+        }
+      ],
+      "origin": "라틴어 consumere (다 써 없애다)",
+      "story": "완전히(con) 가져가(sume) 남김없이 쓴다 → 소모하다, 써 버리다",
+      "hook": "컨슘 → 컨슈머(소비자)가 사서 써 버린다 → 소모하다",
+      "family": [
+        "assume",
+        "resume",
+        "presume"
+      ]
+    }
   },
   {
     "id": "contact",
@@ -5280,7 +6936,28 @@
     "synonyms": [
       "get in touch"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "서로"
+        },
+        {
+          "part": "tact",
+          "ko": "닿다"
+        }
+      ],
+      "origin": "라틴어 contactus (서로 닿음)",
+      "story": "서로(con) 닿는다(tact), 닿을 수 있는 번호·주소 → 접촉, 연락(처), 연락하다",
+      "hook": "콘택트 → 눈에 닿는 콘택트렌즈 → 접촉",
+      "family": [
+        "tactile",
+        "intact",
+        "tangible",
+        "contagious"
+      ]
+    }
   },
   {
     "id": "contain",
@@ -5311,7 +6988,27 @@
       "include",
       "hold"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "tain",
+          "ko": "붙잡다"
+        }
+      ],
+      "origin": "라틴어 continere (한데 붙잡아 두다)",
+      "story": "한데(con) 붙잡아(tain) 안에 둔다 → 담고 있다, 포함하다",
+      "family": [
+        "obtain",
+        "maintain",
+        "retain",
+        "sustain"
+      ]
+    }
   },
   {
     "id": "container",
@@ -5336,7 +7033,26 @@
     "forms": [
       "containers"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "contain",
+          "ko": "담다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "story": "담는(contain) 것(er), 앱과 실행 환경을 통째로 담아 격리한 상자 → 컨테이너, 그릇",
+      "hook": "컨테이너 → 항구의 화물 컨테이너처럼 통째로 담는 상자 → 컨테이너",
+      "family": [
+        "contain",
+        "content",
+        "retain"
+      ]
+    }
   },
   {
     "id": "content",
@@ -5364,7 +7080,27 @@
     "synonyms": [
       "material"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "tent",
+          "ko": "붙잡힌, 담긴"
+        }
+      ],
+      "origin": "라틴어 contentum (안에 담긴 것)",
+      "story": "그릇 안에 함께(con) 담겨(tent) 있는 것 → 내용(물), 콘텐츠",
+      "family": [
+        "contain",
+        "container",
+        "retention",
+        "continent"
+      ]
+    }
   },
   {
     "id": "contested",
@@ -5444,7 +7180,27 @@
     "synonyms": [
       "background"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "text",
+          "ko": "짜다"
+        }
+      ],
+      "origin": "라틴어 contextus (함께 짜인 것)",
+      "story": "앞뒤 글이 함께(con) 짜여(text) 이룬 전체 → 맥락, 컨텍스트",
+      "family": [
+        "text",
+        "texture",
+        "textile",
+        "pretext"
+      ]
+    }
   },
   {
     "id": "continue",
@@ -5510,7 +7266,30 @@
       "uninterrupted",
       "ongoing"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "서로"
+        },
+        {
+          "part": "tin",
+          "ko": "붙잡다"
+        },
+        {
+          "part": "-ous",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 continuus (끊김 없이 이어진)",
+      "story": "서로(con) 꽉 붙잡고(tin) 있어 틈이 없는(ous) → 지속적인, 끊김 없이 이어지는",
+      "family": [
+        "continue",
+        "continent",
+        "contain"
+      ]
+    }
   },
   {
     "id": "contract",
@@ -5646,7 +7425,30 @@
     "synonyms": [
       "participant"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "함께"
+        },
+        {
+          "part": "tribut",
+          "ko": "내주다"
+        },
+        {
+          "part": "-or",
+          "ko": "~하는 사람"
+        }
+      ],
+      "origin": "라틴어 contribuere (함께 내놓다)",
+      "story": "함께(con) 제 몫을 내놓는(tribut) 사람(or) → 기여하는 사람, 기여 요인",
+      "family": [
+        "tribute",
+        "distribute",
+        "attribute"
+      ]
+    }
   },
   {
     "id": "control",
@@ -5683,7 +7485,28 @@
       "manage",
       "govern"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "contr",
+          "ko": "맞대어(contra)"
+        },
+        {
+          "part": "rol",
+          "ko": "두루마리(roll)"
+        }
+      ],
+      "origin": "중세 라틴어 contrarotulus (대조용 두루마리 장부)",
+      "story": "장부 사본(rol)을 맞대어(contr) 대조하며 단속한다 → 통제하다, 제어, 관리",
+      "hook": "컨트롤 → 리모컨(리모트 컨트롤)으로 조종한다 → 제어",
+      "family": [
+        "roll",
+        "role",
+        "contrast",
+        "rotate"
+      ]
+    }
   },
   {
     "id": "controller",
@@ -5712,7 +7535,26 @@
     "forms": [
       "controllers"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "control",
+          "ko": "제어하다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "story": "들어온 요청을 받아 흐름을 제어하는(control) 것(er) → 컨트롤러, 제어 장치",
+      "hook": "컨트롤러 → 게임기 컨트롤러로 조종한다 → 제어 장치",
+      "family": [
+        "control",
+        "roll",
+        "contrast"
+      ]
+    }
   },
   {
     "id": "convention",
@@ -5890,7 +7732,28 @@
       "change",
       "turn into"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "con-",
+          "ko": "완전히"
+        },
+        {
+          "part": "vert",
+          "ko": "돌리다"
+        }
+      ],
+      "origin": "라틴어 convertere (완전히 돌려 바꾸다)",
+      "story": "완전히(con) 돌려(vert) 다른 모양으로 만든다 → 변환하다, 바꾸다",
+      "hook": "컨버트 → 지붕 모양이 바뀌는 컨버터블 자동차 → 바꾸다",
+      "family": [
+        "reverse",
+        "version",
+        "invert",
+        "divert"
+      ]
+    }
   },
   {
     "id": "coordinate",
@@ -6024,7 +7887,32 @@
     "synonyms": [
       "orchestrator"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "co-",
+          "ko": "함께"
+        },
+        {
+          "part": "ordin",
+          "ko": "순서, 질서"
+        },
+        {
+          "part": "-ator",
+          "ko": "~하는 사람"
+        }
+      ],
+      "origin": "중세 라틴어 coordinare (함께 질서를 잡다)",
+      "story": "여럿이 함께(co) 순서(ordin) 있게 움직이도록 맞추는 사람(ator) → 코디네이터, 조정 역할",
+      "hook": "코디네이터 → 옷을 맞춰 주는 '코디'처럼 일을 맞춰 준다 → 조정 역할",
+      "family": [
+        "order",
+        "ordinary",
+        "subordinate",
+        "ordinal"
+      ]
+    }
   },
   {
     "id": "copy",
@@ -6095,7 +7983,11 @@
       "key",
       "essential"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "story": "사과 한가운데 씨가 든 단단한 속심(core) → 핵심, 중심이 되는",
+      "hook": "코어 → 몸의 중심 '코어 근육' → 핵심, 중심"
+    }
   },
   {
     "id": "correct",
@@ -6177,7 +8069,26 @@
     "synonyms": [
       "accuracy"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "correct",
+          "ko": "올바른"
+        },
+        {
+          "part": "-ness",
+          "ko": "~함, 정도"
+        }
+      ],
+      "story": "올바른(correct) 정도(ness), 코드가 맞게 도는지 → 정확성, 올바름",
+      "family": [
+        "correction",
+        "incorrect",
+        "direct",
+        "rectify"
+      ]
+    }
   },
   {
     "id": "correlation",
@@ -6213,7 +8124,26 @@
       "association",
       "link"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "cor-",
+          "ko": "서로"
+        },
+        {
+          "part": "relation",
+          "ko": "관계"
+        }
+      ],
+      "origin": "중세 라틴어 correlatio (서로의 관계)",
+      "story": "서로(cor) 맺은 관계(relation), 하나가 변하면 다른 것도 따라 변한다 → 상관관계, 대응",
+      "family": [
+        "relate",
+        "relative",
+        "translate"
+      ]
+    }
   },
   {
     "id": "correspond",
@@ -6395,7 +8325,20 @@
       "expensive",
       "pricey"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "cost",
+          "ko": "비용"
+        },
+        {
+          "part": "-ly",
+          "ko": "~한"
+        }
+      ],
+      "story": "비용(cost)이 잔뜩 붙는(ly) → 비용이 많이 드는, 대가가 큰"
+    }
   },
   {
     "id": "count",
@@ -6436,7 +8379,18 @@
       "total",
       "tally"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "라틴어 computare (셈하다) → 고대 프랑스어 conter",
+      "story": "컴퓨터(compute)와 한 뿌리, 하나씩 셈에 넣는다 → 세다, 개수, (셈에 들어가) 인정되다",
+      "hook": "카운트 → 카운트다운 '셋, 둘, 하나' → 세다, 횟수",
+      "family": [
+        "compute",
+        "account",
+        "discount",
+        "recount"
+      ]
+    }
   },
   {
     "id": "counter",
@@ -6466,7 +8420,26 @@
     "forms": [
       "counters"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "count",
+          "ko": "세다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것, 곳"
+        }
+      ],
+      "story": "횟수를 세는(count) 것(er), 돈을 세어 주고받는 탁자 → 카운터, 계수기, 계산대",
+      "hook": "카운터 → 가게 카운터에서 돈을 센다 → 계산대, 계수기",
+      "family": [
+        "count",
+        "account",
+        "compute"
+      ]
+    }
   },
   {
     "id": "couple",
@@ -6538,7 +8511,17 @@
       "encompass",
       "span"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "라틴어 cooperire (완전히 덮다)",
+      "story": "이불로 덮듯 범위를 빠짐없이 덮는다 → 다루다, 포함하다, 아우르다",
+      "hook": "커버 → 책 '커버'가 책 전체를 덮는다 → 아우르다",
+      "family": [
+        "discover",
+        "uncover",
+        "covert"
+      ]
+    }
   },
   {
     "id": "coverage",
@@ -6572,7 +8555,26 @@
       "scope",
       "extent"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "cover",
+          "ko": "덮다"
+        },
+        {
+          "part": "-age",
+          "ko": "~하는 범위, 양"
+        }
+      ],
+      "story": "덮는(cover) 범위(age), 어디까지 덮였나 → 다루는 범위, 포괄 정도",
+      "hook": "커버리지 → 통신사 '커버리지'(전파가 닿는 범위) → 다루는 범위",
+      "family": [
+        "cover",
+        "discover",
+        "uncover"
+      ]
+    }
   },
   {
     "id": "crash",
@@ -6608,7 +8610,11 @@
       "fail",
       "go down"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "origin": "중세 영어 crasschen (부서지는 소리를 흉내 낸 말)",
+      "story": "'와장창' 부서지는 소리에서, 프로그램이 쾅 하고 쓰러진다 → 갑자기 죽다, 충돌"
+    }
   },
   {
     "id": "create",
@@ -6666,7 +8672,31 @@
     "forms": [
       "credentials"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "cred",
+          "ko": "믿다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~하는 것"
+        },
+        {
+          "part": "-ial",
+          "ko": "~의"
+        }
+      ],
+      "origin": "중세 라틴어 credentialis ← credere (믿다)",
+      "story": "이 사람을 믿어도(cred) 된다고 보여 주는 증표 → 자격 증명",
+      "family": [
+        "credit",
+        "credible",
+        "incredible",
+        "creed"
+      ]
+    }
   },
   {
     "id": "credible",
@@ -6746,7 +8776,28 @@
     "forms": [
       "credits"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "cred",
+          "ko": "믿다"
+        },
+        {
+          "part": "-it",
+          "ko": "~된 것"
+        }
+      ],
+      "origin": "라틴어 creditum (믿고 맡긴 것)",
+      "story": "믿고(cred) 맡겨 둔 돈, 내 몫으로 쌓여 있는 금액 → 크레딧, 적립금",
+      "hook": "크레딧 → 신용(크레딧)카드, 게임 속 '크레딧' → 적립금",
+      "family": [
+        "credential",
+        "credible",
+        "creditor",
+        "incredible"
+      ]
+    }
   },
   {
     "id": "crisis",
@@ -6770,7 +8821,26 @@
     "synonyms": [
       "emergency"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "cri",
+          "ko": "가르다, 판가름하다"
+        },
+        {
+          "part": "-sis",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "그리스어 krisis (판가름, 병의 고비)",
+      "story": "병이 나을지 나빠질지 판가름(cri) 나는 고비 → 위기, 중대 국면",
+      "family": [
+        "critic",
+        "critical",
+        "criterion"
+      ]
+    }
   },
   {
     "id": "crisp",
@@ -6892,7 +8962,31 @@
       "crucial",
       "vital"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "crit",
+          "ko": "가르다, 판단하다"
+        },
+        {
+          "part": "-ic",
+          "ko": "~의"
+        },
+        {
+          "part": "-al",
+          "ko": "~한"
+        }
+      ],
+      "origin": "그리스어 kritikos (판단할 줄 아는)",
+      "story": "생사가 갈리는(crit) 고비처럼 → 심각한, 치명적인 · 잘잘못을 가려 따지는 → 비판적인",
+      "family": [
+        "crisis",
+        "critic",
+        "criterion",
+        "criticize"
+      ]
+    }
   },
   {
     "id": "critique",
@@ -6925,7 +9019,27 @@
       "review",
       "evaluate"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "crit",
+          "ko": "가르다, 판단하다"
+        },
+        {
+          "part": "-ique",
+          "ko": "~의 기술(프랑스어식 -ic)"
+        }
+      ],
+      "origin": "그리스어 kritike (판단하는 기술) → 프랑스어 critique",
+      "story": "잘된 곳과 문제인 곳을 가려(crit) 판단해 짚어 준다 → 비평(하다)",
+      "family": [
+        "critic",
+        "criticize",
+        "crisis",
+        "criterion"
+      ]
+    }
   },
   {
     "id": "crm",
@@ -6943,7 +9057,11 @@
         "ko": "고객 관계 관리 시스템"
       }
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "origin": "Customer Relationship Management",
+      "story": "고객(Customer)과의 관계(Relationship)를 관리(Management)하는 시스템 → 고객 관계 관리"
+    }
   },
   {
     "id": "cross",
@@ -6992,7 +9110,18 @@
       "pass",
       "traverse"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "origin": "라틴어 crux (십자가) → 고대 노르드어 kross",
+      "story": "두 선이 십자(+)로 엇갈리며 서로를 가로지른다 → 넘다, 건너다, 교차하는, 십자",
+      "hook": "크로스 → 축구에서 공을 반대편으로 넘기는 '크로스' → 가로질러 넘다",
+      "family": [
+        "across",
+        "crucial",
+        "crusade",
+        "crucify"
+      ]
+    }
   },
   {
     "id": "cross-contamination",
@@ -7055,7 +9184,25 @@
         "ko": "여러 파일에 걸친, 파일 간의"
       }
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "cross",
+          "ko": "가로질러, 걸친"
+        },
+        {
+          "part": "file",
+          "ko": "파일"
+        }
+      ],
+      "story": "파일(file) 하나에 머물지 않고 여러 파일을 가로지르는(cross) → 여러 파일에 걸친, 파일 간의",
+      "family": [
+        "cross-check",
+        "cross-platform",
+        "crossover"
+      ]
+    }
   },
   {
     "id": "cumulative",
@@ -7199,7 +9346,25 @@
     "synonyms": [
       "currency exchange"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "currency",
+          "ko": "통화"
+        },
+        {
+          "part": "conversion",
+          "ko": "변환"
+        }
+      ],
+      "story": "시중에 흐르는(curr) 돈인 통화(currency)를 다른 통화로 바꾼다(conversion) → 통화 변환, 환전",
+      "family": [
+        "current",
+        "convert",
+        "converter"
+      ]
+    }
   },
   {
     "id": "currency-formatting",
@@ -7217,7 +9382,25 @@
         "ko": "통화 표기 형식"
       }
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "currency",
+          "ko": "통화"
+        },
+        {
+          "part": "formatting",
+          "ko": "형식 맞추기"
+        }
+      ],
+      "story": "통화(currency) 금액을 ₩1,000·$10.00처럼 형식(format)에 맞춰 적는다 → 통화 표기 형식",
+      "family": [
+        "current",
+        "format",
+        "formal"
+      ]
+    }
   },
   {
     "id": "current",
@@ -7250,7 +9433,27 @@
       "present",
       "existing"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "curr",
+          "ko": "달리다, 흐르다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~하고 있는"
+        }
+      ],
+      "origin": "라틴어 currens (달리고 있는)",
+      "story": "지금 눈앞에서 흐르고(curr) 있는(ent) → 현재의, 지금의",
+      "family": [
+        "currency",
+        "occur",
+        "course",
+        "curriculum"
+      ]
+    }
   },
   {
     "id": "custom",
@@ -7287,7 +9490,18 @@
       "tailored",
       "user-defined"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "origin": "라틴어 consuetudo (습관) → 고대 프랑스어 custume",
+      "story": "단골(customer)의 습관·취향에 맞춰 따로 만들어 준다 → 맞춤(형)의, 직접 정의한",
+      "hook": "커스텀 → '커스텀 키보드'처럼 내 입맛대로 만든 → 맞춤의",
+      "family": [
+        "customer",
+        "customize",
+        "costume",
+        "accustomed"
+      ]
+    }
   },
   {
     "id": "customer",
@@ -7335,7 +9549,24 @@
     "synonyms": [
       "user-friendly"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "customer",
+          "ko": "고객"
+        },
+        {
+          "part": "friendly",
+          "ko": "친근한, 친화적인"
+        }
+      ],
+      "story": "고객(customer)에게 친구처럼(friendly) 다가가 알기 쉽고 받아들이기 편한 → 고객 친화적인",
+      "family": [
+        "user-friendly",
+        "eco-friendly"
+      ]
+    }
   },
   {
     "id": "cut",
@@ -7408,7 +9639,26 @@
       "threshold",
       "truncate"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "cut",
+          "ko": "자르다"
+        },
+        {
+          "part": "off",
+          "ko": "떨어져"
+        }
+      ],
+      "story": "싹둑 잘라(cut) 떼어 낸다(off), 그렇게 잘리는 선 → 도중에 잘리다 · 기준점, 마감 시점",
+      "hook": "컷오프 → 예선 '컷오프'(탈락 기준선) → 기준점",
+      "family": [
+        "shortcut",
+        "cutback",
+        "cutout"
+      ]
+    }
   },
   {
     "id": "cycle",
@@ -7445,6 +9695,17 @@
       "period",
       "iteration"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "origin": "그리스어 kyklos (원, 바퀴)",
+      "story": "바퀴(kyklos)가 한 바퀴 돌아 제자리로 오고 또 돈다 → 주기, 순환, 반복되다",
+      "hook": "사이클 → 자전거(사이클) 바퀴가 돌고 돈다 → 순환, 주기",
+      "family": [
+        "bicycle",
+        "recycle",
+        "cyclone",
+        "encyclopedia"
+      ]
+    }
   }
 ]

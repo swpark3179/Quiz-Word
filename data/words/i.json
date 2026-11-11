@@ -18,7 +18,11 @@
     "synonyms": [
       "identity and access management"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "Identity and Access Management",
+      "story": "누구인지(Identity)와 무엇에 접근하는지(Access)를 관리(Management) → ID·접근 관리"
+    }
   },
   {
     "id": "identical",
@@ -89,7 +93,25 @@
       "ID",
       "key"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "identifi",
+          "ko": "식별하다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "story": "이것이 바로 그것임을 알아보게(identify) 해 주는 것(er) → 식별자",
+      "family": [
+        "identity",
+        "identical",
+        "identification"
+      ]
+    }
   },
   {
     "id": "identify",
@@ -122,7 +144,26 @@
       "recognize",
       "pinpoint"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "ident",
+          "ko": "같은"
+        },
+        {
+          "part": "-ify",
+          "ko": "~로 만들다"
+        }
+      ],
+      "origin": "중세 라틴어 identificare (같은 것으로 만들다)",
+      "story": "눈앞의 것이 찾던 것과 같다(ident)고 짚어 낸다(ify) → 찾아내다, 식별하다",
+      "family": [
+        "identity",
+        "identical",
+        "identifier"
+      ]
+    }
   },
   {
     "id": "identity",
@@ -150,7 +191,27 @@
     "synonyms": [
       "ID"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "ident",
+          "ko": "같은"
+        },
+        {
+          "part": "-ity",
+          "ko": "~임(명사)"
+        }
+      ],
+      "origin": "라틴어 identitas ← idem (같은 것)",
+      "story": "어제도 오늘도 같은(ident) 그 사람임(ity) → 신원, 본인",
+      "hook": "아이덴티티 → 줄이면 'ID(아이디)' → 신원, 식별 정보",
+      "family": [
+        "identical",
+        "identify",
+        "identifier"
+      ]
+    }
   },
   {
     "id": "idiomatic",
@@ -230,7 +291,26 @@
       "overlook",
       "neglect"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "i-",
+          "ko": "아닌(in-)"
+        },
+        {
+          "part": "gnor",
+          "ko": "알다"
+        }
+      ],
+      "origin": "라틴어 ignorare (알지 못하다)",
+      "story": "알면서도 모르는(i+gnor) 척 지나친다 → 무시하다, 따르지 않다",
+      "family": [
+        "ignorant",
+        "recognize",
+        "diagnose"
+      ]
+    }
   },
   {
     "id": "illustrate",
@@ -344,7 +424,35 @@
       "right away",
       "at once"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "im-",
+          "ko": "아닌"
+        },
+        {
+          "part": "medi",
+          "ko": "중간"
+        },
+        {
+          "part": "-ate",
+          "ko": "~한"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 immediatus (사이에 낀 것이 없는)",
+      "story": "중간(medi)에 끼는 것이 하나도 없이(im) 곧장(ly) → 즉시, 바로 옆에",
+      "family": [
+        "medium",
+        "mediate",
+        "intermediate",
+        "media"
+      ]
+    }
   },
   {
     "id": "impact",
@@ -380,7 +488,26 @@
       "effect",
       "influence"
     ],
-    "domain": "원인·결과·영향"
+    "domain": "원인·결과·영향",
+    "memory": {
+      "roots": [
+        {
+          "part": "im-",
+          "ko": "안으로"
+        },
+        {
+          "part": "pact",
+          "ko": "쳐서 박다"
+        }
+      ],
+      "origin": "라틴어 impactus (세게 들이받은)",
+      "story": "안으로(im) 쾅 박히며(pact) 흔들어 놓는다 → 영향, 충격",
+      "hook": "임팩트 → '임팩트 있다'고 할 때의 그 임팩트 → 강한 영향",
+      "family": [
+        "compact",
+        "impinge"
+      ]
+    }
   },
   {
     "id": "implement",
@@ -413,7 +540,31 @@
       "execute",
       "build"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "im-",
+          "ko": "안에"
+        },
+        {
+          "part": "ple",
+          "ko": "채우다"
+        },
+        {
+          "part": "-ment",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 implere (가득 채우다)",
+      "story": "빈 설계도 안(im)을 실물로 채워(ple) 넣는다 → 구현하다, 실제로 적용하다",
+      "family": [
+        "complete",
+        "supplement",
+        "plenty",
+        "complement"
+      ]
+    }
   },
   {
     "id": "implication",
@@ -442,7 +593,31 @@
       "consequence",
       "ramification"
     ],
-    "domain": "원인·결과·영향"
+    "domain": "원인·결과·영향",
+    "memory": {
+      "roots": [
+        {
+          "part": "im-",
+          "ko": "안으로"
+        },
+        {
+          "part": "plic",
+          "ko": "접다"
+        },
+        {
+          "part": "-ation",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 implicare (안으로 접어 넣다)",
+      "story": "결정 안(im)에 접혀(plic) 들어 있다가 나중에 펼쳐지는 뒷일 → 영향, 함의",
+      "family": [
+        "imply",
+        "complicate",
+        "explicit",
+        "duplicate"
+      ]
+    }
   },
   {
     "id": "imply",
@@ -531,7 +706,27 @@
       "load",
       "pull in"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "im-",
+          "ko": "안으로"
+        },
+        {
+          "part": "port",
+          "ko": "나르다"
+        }
+      ],
+      "origin": "라틴어 importare (안으로 들여오다)",
+      "story": "밖에 있는 것을 안으로(im) 날라(port) 온다 → 불러오다, 가져오다, 수입하다",
+      "family": [
+        "export",
+        "transport",
+        "portable",
+        "support"
+      ]
+    }
   },
   {
     "id": "important",
@@ -644,7 +839,11 @@
       "boost",
       "better"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "origin": "앵글로프랑스어 emprouwer (이익이 되게 하다)",
+      "story": "더 이익(prou)이 나도록 손봐 낫게 만든다 → 개선하다, 나아지다"
+    }
   },
   {
     "id": "in-advance",
@@ -667,7 +866,24 @@
       "ahead of time",
       "upfront"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "in",
+          "ko": "~에"
+        },
+        {
+          "part": "advance",
+          "ko": "앞서 나아감"
+        }
+      ],
+      "story": "때가 오기 전 앞선(advance) 시점에(in) 해 둔다 → 미리, 사전에",
+      "family": [
+        "advanced",
+        "advantage"
+      ]
+    }
   },
   {
     "id": "in-place",
@@ -728,7 +944,25 @@
       "embedded",
       "in-proc"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "in",
+          "ko": "~안에"
+        },
+        {
+          "part": "process",
+          "ko": "프로세스"
+        }
+      ],
+      "story": "따로 띄우지 않고 같은 프로세스(process) 안에서(in) 돈다 → 인프로세스의",
+      "family": [
+        "processor",
+        "proceed",
+        "procedure"
+      ]
+    }
   },
   {
     "id": "inactive",
@@ -758,7 +992,30 @@
       "dormant",
       "idle"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "아닌"
+        },
+        {
+          "part": "act",
+          "ko": "움직이다, 하다"
+        },
+        {
+          "part": "-ive",
+          "ko": "~한"
+        }
+      ],
+      "story": "움직이지(act) 않는(in) 상태인(ive) → 비활성의",
+      "family": [
+        "active",
+        "activate",
+        "action",
+        "react"
+      ]
+    }
   },
   {
     "id": "inbound",
@@ -779,7 +1036,25 @@
     "synonyms": [
       "incoming"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "in",
+          "ko": "안으로"
+        },
+        {
+          "part": "bound",
+          "ko": "~로 향하는"
+        }
+      ],
+      "story": "안쪽(in)을 향해(bound) 오는 → 안으로 들어오는, 수신의",
+      "family": [
+        "outbound",
+        "homebound",
+        "northbound"
+      ]
+    }
   },
   {
     "id": "incentive",
@@ -808,7 +1083,31 @@
       "inducement",
       "motivation"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "안에"
+        },
+        {
+          "part": "cent",
+          "ko": "노래하다"
+        },
+        {
+          "part": "-ive",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 incentivus (가락을 잡아 주는, 부추기는)",
+      "story": "마음 안(in)에 흥겨운 가락(cent)을 넣어 움직이게 한다 → 장려책, 인센티브",
+      "hook": "인센티브 → 성과가 좋으면 받는 '인센티브(성과급)' → 장려책",
+      "family": [
+        "chant",
+        "accent",
+        "enchant"
+      ]
+    }
   },
   {
     "id": "incident",
@@ -837,7 +1136,30 @@
       "outage",
       "accident"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "위에"
+        },
+        {
+          "part": "cid",
+          "ko": "떨어지다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 incidere (위에 떨어지다, 일어나다)",
+      "story": "느닷없이 머리 위로(in) 뚝 떨어진(cid) 일 → 사고, 장애",
+      "family": [
+        "accident",
+        "coincide",
+        "occasion"
+      ]
+    }
   },
   {
     "id": "include",
@@ -874,7 +1196,27 @@
       "incorporate",
       "cover"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "안에"
+        },
+        {
+          "part": "clude",
+          "ko": "닫다"
+        }
+      ],
+      "origin": "라틴어 includere (안에 넣고 닫다)",
+      "story": "안에(in) 넣고 문을 닫는다(clude) → 포함하다, 넣다",
+      "family": [
+        "exclude",
+        "conclude",
+        "close",
+        "closet"
+      ]
+    }
   },
   {
     "id": "incoming",
@@ -900,7 +1242,25 @@
       "arriving",
       "inbound"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "in",
+          "ko": "안으로"
+        },
+        {
+          "part": "coming",
+          "ko": "오는"
+        }
+      ],
+      "story": "지금 안으로(in) 오고(coming) 있는 → 들어오는, 새로 도착하는",
+      "family": [
+        "income",
+        "upcoming",
+        "newcomer"
+      ]
+    }
   },
   {
     "id": "incompatible",
@@ -1061,7 +1421,31 @@
       "integrate",
       "embed"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "안으로"
+        },
+        {
+          "part": "corpor",
+          "ko": "몸"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 incorporare (한 몸 안에 넣다)",
+      "story": "한 몸(corpor) 안으로(in) 받아들여 일부로 삼는다(ate) → 포함시키다, 반영하다",
+      "family": [
+        "corporation",
+        "corporal",
+        "corpse",
+        "corps"
+      ]
+    }
   },
   {
     "id": "incorrect",
@@ -1085,7 +1469,26 @@
       "erroneous",
       "mistaken"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "아닌"
+        },
+        {
+          "part": "correct",
+          "ko": "올바른"
+        }
+      ],
+      "story": "올바르지(correct) 않은(in) → 틀린, 잘못된",
+      "family": [
+        "correct",
+        "correction",
+        "direct",
+        "rectify"
+      ]
+    }
   },
   {
     "id": "incorrectly",
@@ -1108,7 +1511,29 @@
       "mistakenly",
       "erroneously"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "아닌"
+        },
+        {
+          "part": "correct",
+          "ko": "올바른"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "올바르지(correct) 않게(in+ly) → 잘못, 틀리게",
+      "family": [
+        "correct",
+        "correction",
+        "rectify"
+      ]
+    }
   },
   {
     "id": "increase",
@@ -1151,7 +1576,27 @@
       "expand",
       "grow"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "안에서, 위로"
+        },
+        {
+          "part": "crease",
+          "ko": "자라다"
+        }
+      ],
+      "origin": "라틴어 increscere (안에서 자라나다)",
+      "story": "속(in)에서부터 자라(crease) 불어난다 → 늘리다, 증가",
+      "family": [
+        "decrease",
+        "crescent",
+        "concrete",
+        "recruit"
+      ]
+    }
   },
   {
     "id": "incrementally",
@@ -1294,7 +1739,30 @@
     "synonyms": [
       "indent"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "안으로"
+        },
+        {
+          "part": "dent",
+          "ko": "이빨"
+        },
+        {
+          "part": "-ation",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "중세 라틴어 indentare (이빨 자국을 내다)",
+      "story": "줄 머리를 이빨(dent)로 베어 문 듯 안으로(in) 쏙 들인 것 → 들여쓰기",
+      "family": [
+        "indent",
+        "dentist",
+        "dental"
+      ]
+    }
   },
   {
     "id": "independent",
@@ -1330,7 +1798,35 @@
       "self-contained",
       "unrelated"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "아닌"
+        },
+        {
+          "part": "de-",
+          "ko": "아래로"
+        },
+        {
+          "part": "pend",
+          "ko": "매달리다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~한"
+        }
+      ],
+      "story": "남에게 매달려(de+pend) 있지 않은(in) → 독립적인, 서로 의존하지 않는",
+      "hook": "인디펜던트 → 줄이면 '인디', 기획사에 기대지 않는 인디 밴드 → 독립적인",
+      "family": [
+        "depend",
+        "pendant",
+        "suspend",
+        "pending"
+      ]
+    }
   },
   {
     "id": "index",
@@ -1367,7 +1863,26 @@
       "catalog",
       "directory"
     ],
-    "domain": "검색·조회"
+    "domain": "검색·조회",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "~쪽으로"
+        },
+        {
+          "part": "dex",
+          "ko": "가리키다"
+        }
+      ],
+      "origin": "라틴어 index (가리키는 것, 집게손가락)",
+      "story": "집게손가락으로 '여기!' 하고(in) 가리켜(dex) 주는 목록 → 색인, 인덱스",
+      "family": [
+        "indicate",
+        "indicator",
+        "dictate"
+      ]
+    }
   },
   {
     "id": "indicate",
@@ -1463,7 +1978,30 @@
       "particular",
       "each"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "아닌"
+        },
+        {
+          "part": "divid",
+          "ko": "나누다"
+        },
+        {
+          "part": "-ual",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 individuus (나눌 수 없는)",
+      "story": "더는 나눌(divid) 수 없는(in) 낱낱의 하나 → 개별의, 개인",
+      "family": [
+        "divide",
+        "division",
+        "dividend"
+      ]
+    }
   },
   {
     "id": "individually",
@@ -1545,7 +2083,27 @@
       "field",
       "business"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "indu-",
+          "ko": "안에"
+        },
+        {
+          "part": "str",
+          "ko": "쌓다, 짓다"
+        }
+      ],
+      "origin": "라틴어 industria (부지런함)",
+      "story": "안에서(indu) 부지런히 쌓아(str) 올리는 일, 그런 일이 모인 판 → 근면, 산업, 업계",
+      "family": [
+        "structure",
+        "construct",
+        "instrument",
+        "destroy"
+      ]
+    }
   },
   {
     "id": "infer",
@@ -1579,7 +2137,27 @@
       "derive",
       "figure out"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "안으로"
+        },
+        {
+          "part": "fer",
+          "ko": "나르다"
+        }
+      ],
+      "origin": "라틴어 inferre (안으로 가져오다)",
+      "story": "흩어진 단서를 머릿속으로(in) 날라(fer) 와 결론을 낸다 → 추론하다",
+      "family": [
+        "transfer",
+        "refer",
+        "differ",
+        "offer"
+      ]
+    }
   },
   {
     "id": "infinite",
@@ -1605,7 +2183,32 @@
       "unlimited",
       "boundless"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "아닌"
+        },
+        {
+          "part": "fin",
+          "ko": "끝"
+        },
+        {
+          "part": "-ite",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 infinitus (끝이 없는)",
+      "story": "끝(fin)이 없는(in) → 무한한, 끝이 없는",
+      "hook": "인피니트 → 무한대 기호(∞) '인피니티' → 무한한",
+      "family": [
+        "finish",
+        "final",
+        "finite",
+        "define"
+      ]
+    }
   },
   {
     "id": "inflate",
@@ -1709,7 +2312,31 @@
       "foundation",
       "backbone"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "infra-",
+          "ko": "아래"
+        },
+        {
+          "part": "struct",
+          "ko": "쌓다, 짓다"
+        },
+        {
+          "part": "-ure",
+          "ko": "~한 것"
+        }
+      ],
+      "story": "서비스 밑(infra)에 깔려 받쳐 주는 구조물(structure) → 인프라, 기반 시설",
+      "hook": "인프라스트럭처 → 줄여서 '인프라' → 기반 시설",
+      "family": [
+        "structure",
+        "construct",
+        "instruct",
+        "infrared"
+      ]
+    }
   },
   {
     "id": "ingestion",
@@ -1907,7 +2534,30 @@
       "boot",
       "prepare"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "roots": [
+        {
+          "part": "init",
+          "ko": "시작"
+        },
+        {
+          "part": "-ial",
+          "ko": "~의"
+        },
+        {
+          "part": "-ize",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "origin": "라틴어 initium (시작)",
+      "story": "쓰기 전에 맨 처음(initial) 상태로 갖춰 놓는다(ize) → 초기화하다",
+      "family": [
+        "initial",
+        "initiate",
+        "initiative"
+      ]
+    }
   },
   {
     "id": "initially",
@@ -1933,7 +2583,31 @@
       "originally",
       "first"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "init",
+          "ko": "시작"
+        },
+        {
+          "part": "-ial",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 initium (시작)",
+      "story": "맨 처음(initial)에(ly) → 처음에, 초기에",
+      "hook": "이니셜리 → 이름 첫 글자 '이니셜'처럼 맨 앞에 → 처음에",
+      "family": [
+        "initial",
+        "initiate",
+        "initiative"
+      ]
+    }
   },
   {
     "id": "initiate",
@@ -2031,7 +2705,27 @@
       "introduce",
       "feed"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "안으로"
+        },
+        {
+          "part": "ject",
+          "ko": "던지다"
+        }
+      ],
+      "origin": "라틴어 injectus (안으로 던져 넣은)",
+      "story": "주사기로 약을 넣듯 안으로(in) 던져(ject) 넣는다 → 주입하다, 끼워 넣다",
+      "family": [
+        "project",
+        "reject",
+        "eject",
+        "object"
+      ]
+    }
   },
   {
     "id": "inline",
@@ -2062,7 +2756,25 @@
       "in place",
       "directly"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "in",
+          "ko": "~안에"
+        },
+        {
+          "part": "line",
+          "ko": "줄"
+        }
+      ],
+      "story": "따로 빼지 않고 지금 흐르는 줄(line) 안에서(in) 바로 → 그 자리에서 바로",
+      "family": [
+        "online",
+        "outline",
+        "underline"
+      ]
+    }
   },
   {
     "id": "input",
@@ -2096,7 +2808,24 @@
       "entry",
       "data"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "in",
+          "ko": "안으로"
+        },
+        {
+          "part": "put",
+          "ko": "놓다"
+        }
+      ],
+      "story": "안으로(in) 넣는(put) 것 → 입력, 입력값",
+      "family": [
+        "output",
+        "throughput"
+      ]
+    }
   },
   {
     "id": "input-output",
@@ -2122,7 +2851,20 @@
     "synonyms": [
       "input-to-output"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "input",
+          "ko": "입력"
+        },
+        {
+          "part": "output",
+          "ko": "출력"
+        }
+      ],
+      "story": "넣은 것(input)과 나온 것(output)을 한 쌍으로 묶은 → 입력-출력의, 입출력"
+    }
   },
   {
     "id": "input-to-output",
@@ -2143,7 +2885,24 @@
     "synonyms": [
       "input-output"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "input",
+          "ko": "입력"
+        },
+        {
+          "part": "to",
+          "ko": "~로"
+        },
+        {
+          "part": "output",
+          "ko": "출력"
+        }
+      ],
+      "story": "입력(input)에서 출력(output)으로(to) 가는 짝을 보여 주는 → 입력→출력의"
+    }
   },
   {
     "id": "insert",
@@ -2179,7 +2938,28 @@
       "put in",
       "embed"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "안에"
+        },
+        {
+          "part": "sert",
+          "ko": "잇다, 꽂다"
+        }
+      ],
+      "origin": "라틴어 inserere (안에 끼워 잇다)",
+      "story": "줄지은 것들 사이(in)에 꽂아(sert) 잇는다 → 끼워 넣다, 삽입하다",
+      "hook": "인서트 → 키보드의 'Insert' 키 → 끼워 넣다",
+      "family": [
+        "series",
+        "assert",
+        "desert",
+        "exert"
+      ]
+    }
   },
   {
     "id": "inside",
@@ -2244,7 +3024,30 @@
       "astute",
       "illuminating"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "in",
+          "ko": "안"
+        },
+        {
+          "part": "sight",
+          "ko": "봄, 시야"
+        },
+        {
+          "part": "-ful",
+          "ko": "가득한"
+        }
+      ],
+      "story": "속(in)까지 꿰뚫어 보는(sight) 눈이 가득한(ful) → 통찰력 있는, 핵심을 짚는",
+      "family": [
+        "insight",
+        "foresight",
+        "oversight",
+        "eyesight"
+      ]
+    }
   },
   {
     "id": "inspect",
@@ -2334,7 +3137,31 @@
       "case",
       "occurrence"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "곁에, 위에"
+        },
+        {
+          "part": "stan",
+          "ko": "서다"
+        },
+        {
+          "part": "-ce",
+          "ko": "~함(명사)"
+        }
+      ],
+      "origin": "라틴어 instantia (바로 앞에 서 있음)",
+      "story": "지금 눈앞에(in) 서 있는(stan) 실제 하나 → 인스턴스, 사례",
+      "family": [
+        "instant",
+        "stand",
+        "distance",
+        "constant"
+      ]
+    }
   },
   {
     "id": "instead",
@@ -2363,7 +3190,26 @@
       "rather",
       "alternatively"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "in",
+          "ko": "~에"
+        },
+        {
+          "part": "stead",
+          "ko": "자리"
+        }
+      ],
+      "origin": "중세 영어 in stede (그 자리에)",
+      "story": "원래 것의 자리(stead)에(in) 다른 것을 놓는다 → 대신에",
+      "family": [
+        "steady",
+        "homestead",
+        "steadfast"
+      ]
+    }
   },
   {
     "id": "instruct",
@@ -2449,7 +3295,25 @@
     "synonyms": [
       "compliant"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "instruction",
+          "ko": "지시"
+        },
+        {
+          "part": "following",
+          "ko": "따르기"
+        }
+      ],
+      "story": "받은 지시(instruction)를 그대로 따르는(following) 능력 → 지시 이행(능력)",
+      "family": [
+        "instruct",
+        "instructor",
+        "follower"
+      ]
+    }
   },
   {
     "id": "insurance",
@@ -2663,7 +3527,27 @@
     "synonyms": [
       "whole number"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "아닌"
+        },
+        {
+          "part": "teg",
+          "ko": "손대다"
+        }
+      ],
+      "origin": "라틴어 integer (손대지 않은, 온전한)",
+      "story": "쪼개려고 손대지(teg) 않은(in) 온전한 수 → 정수",
+      "family": [
+        "integrate",
+        "integrity",
+        "entire",
+        "intact"
+      ]
+    }
   },
   {
     "id": "integration",
@@ -2700,7 +3584,27 @@
       "incorporation",
       "combination"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "integr",
+          "ko": "온전한"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 integrare (온전하게 하다)",
+      "story": "따로 놀던 것들을 온전한(integr) 하나로 잇는 일(ation) → 연동, 통합",
+      "family": [
+        "integer",
+        "integrity",
+        "integral",
+        "entire"
+      ]
+    }
   },
   {
     "id": "integrity",
@@ -2774,7 +3678,32 @@
       "information",
       "insight"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "intel-",
+          "ko": "사이에서"
+        },
+        {
+          "part": "lig",
+          "ko": "고르다, 읽다"
+        },
+        {
+          "part": "-ence",
+          "ko": "~함(명사)"
+        }
+      ],
+      "origin": "라틴어 intelligere (사이에서 골라 이해하다)",
+      "story": "여럿 사이에서(intel) 알맞은 것을 골라내는(lig) 힘 → 지능, (분석된) 정보",
+      "hook": "인텔리전스 → 'AI'의 I 가 바로 인텔리전스 → 지능",
+      "family": [
+        "intellect",
+        "select",
+        "collect",
+        "elect"
+      ]
+    }
   },
   {
     "id": "intelligent",
@@ -2977,7 +3906,26 @@
       "engage",
       "cooperate"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "inter-",
+          "ko": "서로"
+        },
+        {
+          "part": "act",
+          "ko": "하다, 움직이다"
+        }
+      ],
+      "story": "서로(inter) 주고받으며 움직인다(act) → 상호 작용하다",
+      "family": [
+        "action",
+        "react",
+        "transact",
+        "active"
+      ]
+    }
   },
   {
     "id": "intercept",
@@ -3009,7 +3957,28 @@
       "catch",
       "capture"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "inter-",
+          "ko": "사이에서"
+        },
+        {
+          "part": "cept",
+          "ko": "잡다"
+        }
+      ],
+      "origin": "라틴어 intercipere (중간에서 붙잡다)",
+      "story": "가는 길 사이(inter)에서 낚아챈다(cept) → 가로채다",
+      "hook": "인터셉트 → 미식축구에서 패스를 끊는 '인터셉트' → 가로채다",
+      "family": [
+        "accept",
+        "except",
+        "concept",
+        "receive"
+      ]
+    }
   },
   {
     "id": "interdependent",
@@ -3086,7 +4055,29 @@
     "forms": [
       "interleaved-thinking"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "inter-",
+          "ko": "사이에"
+        },
+        {
+          "part": "leaved",
+          "ko": "낱장을 끼운"
+        },
+        {
+          "part": "thinking",
+          "ko": "사고"
+        }
+      ],
+      "story": "책장 사이(inter)에 낱장(leaf)을 끼우듯 도구 호출 사이에 사고를 끼운다 → 인터리브드 사고",
+      "family": [
+        "leaf",
+        "leaflet",
+        "interlace"
+      ]
+    }
   },
   {
     "id": "intermediary",
@@ -3169,7 +4160,31 @@
       "middle",
       "in-between"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "inter-",
+          "ko": "사이에"
+        },
+        {
+          "part": "medi",
+          "ko": "중간"
+        },
+        {
+          "part": "-ate",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 intermedius (사이 한가운데의)",
+      "story": "처음과 끝 사이(inter) 한가운데(medi)에 있는 → 중간(단계)의",
+      "family": [
+        "medium",
+        "immediate",
+        "mediate",
+        "median"
+      ]
+    }
   },
   {
     "id": "intermittently",
@@ -3257,7 +4272,27 @@
       "in-house",
       "interior"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "intern",
+          "ko": "안쪽의"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 internus (안쪽의)",
+      "story": "안쪽(intern)에 속한(al) → 내부의, 사내의",
+      "hook": "인터널 → 회사 안에 들어와 배우는 '인턴'과 한 뿌리 → 내부의",
+      "family": [
+        "intern",
+        "interior",
+        "internalize"
+      ]
+    }
   },
   {
     "id": "internalize",
@@ -3347,7 +4382,17 @@
       "read",
       "construe"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "origin": "라틴어 interpres (중개인, 통역자)",
+      "story": "두 사람 사이(inter)에서 말을 옮겨 주는 통역자처럼 뜻을 풀어낸다 → 해석하다",
+      "hook": "인터프리트 → 코드를 한 줄씩 풀어 실행하는 '인터프리터' → 해석하다",
+      "family": [
+        "interpreter",
+        "interpretation",
+        "misinterpret"
+      ]
+    }
   },
   {
     "id": "interval",
@@ -3377,7 +4422,22 @@
       "period",
       "span"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "inter-",
+          "ko": "사이"
+        },
+        {
+          "part": "val",
+          "ko": "성벽, 울타리"
+        }
+      ],
+      "origin": "라틴어 intervallum (성벽 말뚝 사이의 틈)",
+      "story": "성벽(val)과 성벽 사이(inter)에 벌어진 틈 → 간격, 주기",
+      "hook": "인터벌 → 뛰다 쉬다를 되풀이하는 '인터벌 트레이닝' → 간격"
+    }
   },
   {
     "id": "intervention",
@@ -3404,7 +4464,31 @@
       "interference",
       "intercession"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "inter-",
+          "ko": "사이에"
+        },
+        {
+          "part": "vent",
+          "ko": "오다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 intervenire (사이에 끼어들다)",
+      "story": "돌아가는 일 사이(inter)로 걸어 들어와(vent) 손을 쓴다 → 개입",
+      "family": [
+        "intervene",
+        "event",
+        "prevent",
+        "convention"
+      ]
+    }
   },
   {
     "id": "interview",
@@ -3438,7 +4522,27 @@
       "consult",
       "ask"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "inter-",
+          "ko": "서로"
+        },
+        {
+          "part": "view",
+          "ko": "보다"
+        }
+      ],
+      "origin": "프랑스어 entrevue (서로 봄)",
+      "story": "서로(inter) 마주 보고(view) 묻고 답한다 → 의견을 묻다, 면접, 인터뷰",
+      "family": [
+        "review",
+        "preview",
+        "viewpoint",
+        "vision"
+      ]
+    }
   },
   {
     "id": "introduce",
@@ -3684,7 +4788,32 @@
       "catalog",
       "stock"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "~에"
+        },
+        {
+          "part": "vent",
+          "ko": "오다"
+        },
+        {
+          "part": "-ory",
+          "ko": "~한 것, 곳"
+        }
+      ],
+      "origin": "중세 라틴어 inventorium (찾아낸 것의 목록)",
+      "story": "창고에서 찾아낸(invent, 마주친) 물건을 죄다 적은 것(ory) → 목록, 재고",
+      "hook": "인벤토리 → 게임 가방 화면 '인벤토리(인벤)' → 가진 것 목록, 재고",
+      "family": [
+        "invent",
+        "invention",
+        "event",
+        "venue"
+      ]
+    }
   },
   {
     "id": "investigate",
@@ -3824,7 +4953,27 @@
       "run",
       "execute"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "~을 향해"
+        },
+        {
+          "part": "voke",
+          "ko": "부르다"
+        }
+      ],
+      "origin": "라틴어 invocare (불러내다)",
+      "story": "이름을 대고(in) 불러(voke) 일을 시킨다 → 호출하다, 실행하다",
+      "family": [
+        "revoke",
+        "provoke",
+        "evoke",
+        "vocal"
+      ]
+    }
   },
   {
     "id": "involve",
@@ -3865,7 +5014,27 @@
       "include",
       "require"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "in-",
+          "ko": "안으로"
+        },
+        {
+          "part": "volve",
+          "ko": "말다, 굴리다"
+        }
+      ],
+      "origin": "라틴어 involvere (안으로 말아 넣다)",
+      "story": "안으로(in) 돌돌 말아(volve) 함께 끌어들인다 → 수반하다, 관여시키다",
+      "family": [
+        "evolve",
+        "revolve",
+        "volume",
+        "revolution"
+      ]
+    }
   },
   {
     "id": "irritated",
@@ -3938,7 +5107,27 @@
       "sandbox",
       "segregate"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "isol",
+          "ko": "섬"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "이탈리아어 isolato ← 라틴어 insula (섬)",
+      "story": "섬(isol)처럼 뚝 떨어뜨려 놓는다(ate) → 격리하다, 따로 떼어 놓다",
+      "family": [
+        "isle",
+        "insulate",
+        "peninsula",
+        "insular"
+      ]
+    }
   },
   {
     "id": "issue",
@@ -3975,7 +5164,17 @@
       "problem",
       "concern"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "origin": "고대 프랑스어 issue (나감) ← 라틴어 exire (나가다)",
+      "story": "밖으로 나온 것 — 불거져 나온 문제, 내보낸 발행물 → 문제, 이슈, 내주다",
+      "hook": "이슈 → 뉴스의 '이슈'는 불거져 나온 문제 → 문제",
+      "family": [
+        "exit",
+        "transit",
+        "itinerary"
+      ]
+    }
   },
   {
     "id": "item",
@@ -4005,7 +5204,12 @@
       "element",
       "article"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "라틴어 item (마찬가지로, 또한)",
+      "story": "목록을 적을 때 줄마다 '또한(item) …' 하고 시작하던 데서 → 항목, 품목",
+      "hook": "아이템 → 게임에서 줍는 '아이템' 하나하나 → 항목, 물품"
+    }
   },
   {
     "id": "itemize",
@@ -4091,7 +5295,26 @@
       "pass",
       "repetition"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "iter",
+          "ko": "다시"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 iterare (다시 하다) ← iterum (다시)",
+      "story": "고쳐서 다시(iter) 해 보는 일(ation) → 반복, 한 회차",
+      "family": [
+        "iterate",
+        "reiterate",
+        "iterative"
+      ]
+    }
   },
   {
     "id": "itinerary",
@@ -4117,7 +5340,26 @@
       "route",
       "travel plan"
     ],
-    "domain": "계획·목표·전략"
+    "domain": "계획·목표·전략",
+    "memory": {
+      "roots": [
+        {
+          "part": "itiner",
+          "ko": "여정, 길"
+        },
+        {
+          "part": "-ary",
+          "ko": "~에 관한 것"
+        }
+      ],
+      "origin": "라틴어 itinerarium (여정 기록) ← iter (길, 여행)",
+      "story": "갈 길(itiner)을 차례대로 적은 것(ary) → 여행 일정(표)",
+      "family": [
+        "itinerant",
+        "exit",
+        "transit"
+      ]
+    }
   },
   {
     "id": "itpm",
@@ -4135,6 +5377,10 @@
         "ko": "분당 입력 토큰 한도"
       }
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "Input Tokens Per Minute",
+      "story": "1분(Minute)마다(Per) 넣을 수 있는 입력(Input) 토큰(Tokens) 수 → 분당 입력 토큰 한도"
+    }
   }
 ]

@@ -15,7 +15,11 @@
         "ko": "카프카(분산 메시지 스트리밍 플랫폼)"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "소설가 프란츠 카프카(Franz Kafka)의 이름",
+      "story": "만든 이가 '쓰기에 최적화된 시스템'이라며 작가 이름을 붙였다 → 메시지 스트리밍 플랫폼 카프카"
+    }
   },
   {
     "id": "keep",
@@ -91,7 +95,16 @@
       "crucial",
       "essential"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "고대 영어 cǣg (열쇠)",
+      "story": "잠긴 문을 여는 열쇠, 문제를 푸는 열쇠는 가장 중요한 것 → 키, 핵심적인",
+      "family": [
+        "keyboard",
+        "keyword",
+        "keynote"
+      ]
+    }
   },
   {
     "id": "key-facts",
@@ -240,7 +253,25 @@
       "understanding",
       "expertise"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "know",
+          "ko": "알다"
+        },
+        {
+          "part": "-ledge",
+          "ko": "~함(명사)"
+        }
+      ],
+      "story": "알고(know) 있는 것(ledge) → 지식",
+      "family": [
+        "know",
+        "acknowledge",
+        "unknown"
+      ]
+    }
   },
   {
     "id": "knowledge-base",
@@ -262,6 +293,24 @@
       "knowledge-base",
       "knowledge bases"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "knowledge",
+          "ko": "지식"
+        },
+        {
+          "part": "base",
+          "ko": "기반, 저장소"
+        }
+      ],
+      "story": "지식(knowledge)을 쌓아 둔 기반(base), 데이터베이스의 지식판 → 지식베이스",
+      "family": [
+        "database",
+        "acknowledge",
+        "basis"
+      ]
+    }
   }
 ]

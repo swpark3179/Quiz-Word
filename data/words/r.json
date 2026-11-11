@@ -19,7 +19,11 @@
       "rag-based",
       "retrieval-augmented generation"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "Retrieval-Augmented Generation",
+      "story": "문서를 검색해(Retrieval) 보강한(Augmented) 뒤 답을 생성(Generation) → 검색 증강 생성"
+    }
   },
   {
     "id": "raise",
@@ -54,7 +58,16 @@
       "increase",
       "boost"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "origin": "고대 노르드어 reisa (일으켜 세우다)",
+      "story": "낮게 있던 것을 위로 일으켜 세운다(reisa) → 올리다, 제기하다",
+      "family": [
+        "rise",
+        "arise",
+        "rear"
+      ]
+    }
   },
   {
     "id": "ramp",
@@ -82,7 +95,16 @@
       "ramping",
       "ramps"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "프랑스어 rampe (경사로) ← ramper (기어오르다)",
+      "story": "경사로(ramp)를 타고 오르듯 조금씩 끌어올린다 → 점차 늘리다, 점진적 증가",
+      "hook": "램프 → 고속도로 진입 '램프'로 서서히 올라탄다 → 점차 늘리다",
+      "family": [
+        "rampant",
+        "rampage"
+      ]
+    }
   },
   {
     "id": "random",
@@ -115,7 +137,16 @@
       "arbitrary",
       "haphazard"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "origin": "고대 프랑스어 randon (마구 내달림)",
+      "story": "방향 없이 마구 내달리듯(randon) 정해진 것 없이 → 무작위의, 임의의",
+      "hook": "랜덤 → '랜덤 뽑기'의 랜덤 → 무작위의",
+      "family": [
+        "randomize",
+        "randomness"
+      ]
+    }
   },
   {
     "id": "randomly",
@@ -136,7 +167,25 @@
     "synonyms": [
       "arbitrarily"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "random",
+          "ko": "무작위의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "방향 없이 마구 내달리듯(random) 아무거나 고르게(ly) → 무작위로, 임의로",
+      "hook": "랜덤리 → '랜덤으로' 뽑는다 → 무작위로",
+      "family": [
+        "randomize",
+        "randomness"
+      ]
+    }
   },
   {
     "id": "range",
@@ -167,7 +216,16 @@
       "scope",
       "span"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "고대 프랑스어 range (줄, 열)",
+      "story": "한 줄(range)로 늘어선 이 끝에서 저 끝까지 → 범위, 폭",
+      "family": [
+        "arrange",
+        "rank",
+        "ranger"
+      ]
+    }
   },
   {
     "id": "rank",
@@ -199,7 +257,16 @@
       "order",
       "prioritize"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "origin": "고대 프랑스어 ranc (줄, 열)",
+      "story": "한 줄(ranc)로 세우면 앞뒤 차례가 생긴다 → 순위를 매기다, 순위",
+      "hook": "랭크 → '랭킹 1위'의 랭크 → 순위",
+      "family": [
+        "range",
+        "arrange"
+      ]
+    }
   },
   {
     "id": "rarely",
@@ -221,7 +288,26 @@
       "seldom",
       "hardly ever"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "rare",
+          "ko": "드문"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 rarus (성긴, 드문드문한)",
+      "story": "듬성듬성(rare) 어쩌다 한 번씩만(ly) → 드물게, 거의 ~하지 않는",
+      "hook": "레얼리 → '레어템'처럼 좀처럼 안 나온다 → 드물게",
+      "family": [
+        "rarity",
+        "rarefy"
+      ]
+    }
   },
   {
     "id": "rate",
@@ -258,7 +344,16 @@
       "assess",
       "evaluate"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "origin": "중세 라틴어 rata (셈해 정한 몫) ← reri (셈하다)",
+      "story": "셈해서(rata) 정한 몫, 그 값어치를 따져 매긴다 → 평가하다, 비율, 요금",
+      "family": [
+        "ratio",
+        "ration",
+        "rational"
+      ]
+    }
   },
   {
     "id": "rate-limit",
@@ -287,7 +382,20 @@
     "synonyms": [
       "throttle"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "rate",
+          "ko": "속도, 비율"
+        },
+        {
+          "part": "limit",
+          "ko": "한도"
+        }
+      ],
+      "story": "일정 시간에 보내는 요청 속도(rate)에 걸어 둔 한도(limit) → 요청 한도, 속도 제한"
+    }
   },
   {
     "id": "rather",
@@ -394,7 +502,12 @@
       "unprocessed",
       "unrefined"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "고대 영어 hrēaw (익히지 않은)",
+      "story": "불에 익히지 않은 날것(raw) 그대로 → 가공하지 않은, 원본 그대로의",
+      "hook": "로 → 카메라 'RAW 파일'은 보정 전 원본 → 가공하지 않은"
+    }
   },
   {
     "id": "re-describe",
@@ -470,7 +583,29 @@
       "reactivate",
       "turn back on"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "en-",
+          "ko": "~하게 만들다"
+        },
+        {
+          "part": "able",
+          "ko": "할 수 있는"
+        }
+      ],
+      "story": "꺼 둔 것을 다시(re) 쓸 수 있게(able) 만든다(en) → 다시 켜다, 재활성화하다",
+      "family": [
+        "disable",
+        "ability",
+        "unable"
+      ]
+    }
   },
   {
     "id": "re-gather",
@@ -496,7 +631,24 @@
     "synonyms": [
       "recollect"
     ],
-    "domain": "검색·조회"
+    "domain": "검색·조회",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "gather",
+          "ko": "모으다"
+        }
+      ],
+      "story": "흩어진 것을 다시(re) 한데 모은다(gather) → 다시 모으다, 다시 수집하다",
+      "family": [
+        "together",
+        "gathering"
+      ]
+    }
   },
   {
     "id": "re-read",
@@ -524,7 +676,25 @@
     "synonyms": [
       "reread"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "read",
+          "ko": "읽다"
+        }
+      ],
+      "story": "읽은 글을 다시(re) 한 번 읽는다(read) → 다시 읽다",
+      "family": [
+        "reader",
+        "readable",
+        "misread"
+      ]
+    }
   },
   {
     "id": "re-run",
@@ -559,7 +729,25 @@
       "repeat",
       "redo"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "run",
+          "ko": "실행하다"
+        }
+      ],
+      "story": "한 번 돌린 것을 다시(re) 돌린다(run) → 다시 실행하다, 재실행",
+      "family": [
+        "runner",
+        "runtime",
+        "outrun"
+      ]
+    }
   },
   {
     "id": "reach",
@@ -595,7 +783,16 @@
       "access",
       "arrive at"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "origin": "고대 영어 rǣcan (손을 뻗다)",
+      "story": "손을 쭉 뻗어(rǣcan) 그곳에 가 닿는다 → 닿다, 접근하다, 이르다",
+      "hook": "리치 → 권투의 '리치'는 팔이 닿는 거리 → 닿다",
+      "family": [
+        "outreach",
+        "overreach"
+      ]
+    }
   },
   {
     "id": "reaction",
@@ -623,7 +820,32 @@
     "synonyms": [
       "response"
     ],
-    "domain": "원인·결과·영향"
+    "domain": "원인·결과·영향",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "되받아"
+        },
+        {
+          "part": "act",
+          "ko": "움직이다, 하다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 re- (되받아) + actio (행함)",
+      "story": "자극을 되받아(re) 움직이는(act) 것(ion) → 반응",
+      "hook": "리액션 → 예능의 '리액션'이 그 리액션 → 반응",
+      "family": [
+        "action",
+        "active",
+        "interact",
+        "agent"
+      ]
+    }
   },
   {
     "id": "read",
@@ -671,7 +893,20 @@
         "ko": "읽기 전용의"
       }
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "read",
+          "ko": "읽다"
+        },
+        {
+          "part": "only",
+          "ko": "오직 ~만"
+        }
+      ],
+      "story": "오직(only) 읽기(read)만 되고 고칠 수는 없는 → 읽기 전용의"
+    }
   },
   {
     "id": "readable",
@@ -699,7 +934,25 @@
     "synonyms": [
       "legible"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "read",
+          "ko": "읽다"
+        },
+        {
+          "part": "-able",
+          "ko": "할 수 있는"
+        }
+      ],
+      "story": "막힘 없이 읽을(read) 수 있는(able) → 읽기 쉬운, 읽을 수 있는",
+      "family": [
+        "reader",
+        "misread",
+        "proofread"
+      ]
+    }
   },
   {
     "id": "reader",
@@ -917,7 +1170,25 @@
       "remember",
       "retrieve"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "call",
+          "ko": "부르다"
+        }
+      ],
+      "story": "묻어 둔 기억을 다시(re) 불러낸다(call), 찾을 것 중 불러낸 비율 → 떠올리다, 재현율",
+      "hook": "리콜 → 판 물건을 도로 불러들이는 '리콜'처럼 기억을 불러낸다 → 떠올리다",
+      "family": [
+        "callback",
+        "caller"
+      ]
+    }
   },
   {
     "id": "receive",
@@ -977,7 +1248,31 @@
       "recipient",
       "listener"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "되, 도로"
+        },
+        {
+          "part": "ceiv",
+          "ko": "잡다, 받다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 쪽"
+        }
+      ],
+      "origin": "라틴어 recipere (도로 받아 쥐다)",
+      "story": "건너온 것을 받아(re) 쥐는(ceiv) 쪽(er) → 받는 사람, 수신기",
+      "hook": "리시버 → 배구에서 서브를 받아 내는 '리시버' → 받는 사람",
+      "family": [
+        "receipt",
+        "reception",
+        "perceive"
+      ]
+    }
   },
   {
     "id": "recent",
@@ -999,7 +1294,11 @@
       "latest",
       "new"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "origin": "라틴어 recens (갓 생긴, 신선한)",
+      "story": "갓(recens) 생겨 아직 얼마 지나지 않은 → 최근의, 근래의"
+    }
   },
   {
     "id": "recently",
@@ -1020,7 +1319,21 @@
     "synonyms": [
       "lately"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "recent",
+          "ko": "최근의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게, ~에"
+        }
+      ],
+      "origin": "라틴어 recens (갓 생긴, 신선한)",
+      "story": "갓 생긴(recent) 일처럼 얼마 지나지 않은 때에(ly) → 최근에, 얼마 전에"
+    }
   },
   {
     "id": "recheck",
@@ -1047,7 +1360,25 @@
       "double-check",
       "re-verify"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "check",
+          "ko": "확인하다"
+        }
+      ],
+      "story": "확인한 것을 다시(re) 한 번 확인한다(check) → 다시 확인하다, 재점검하다",
+      "family": [
+        "checklist",
+        "checkpoint",
+        "checkout"
+      ]
+    }
   },
   {
     "id": "recommend",
@@ -1084,7 +1415,27 @@
       "suggest",
       "advise"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "거듭 (강조)"
+        },
+        {
+          "part": "commend",
+          "ko": "맡기다, 칭찬하다"
+        }
+      ],
+      "origin": "중세 라틴어 recommendare ← commendare (맡기다)",
+      "story": "믿고 맡길(commend) 만하다고 거듭(re) 말해 준다 → 권하다, 추천하다",
+      "family": [
+        "commend",
+        "command",
+        "mandate",
+        "demand"
+      ]
+    }
   },
   {
     "id": "recompute",
@@ -1110,7 +1461,30 @@
     "synonyms": [
       "recalculate"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "com-",
+          "ko": "함께"
+        },
+        {
+          "part": "pute",
+          "ko": "셈하다"
+        }
+      ],
+      "origin": "라틴어 computare (한데 모아 셈하다)",
+      "story": "한데(com) 모아 셈한(pute) 값을 다시(re) 셈한다 → 다시 계산하다, 재계산하다",
+      "family": [
+        "computer",
+        "computation",
+        "dispute"
+      ]
+    }
   },
   {
     "id": "reconcile",
@@ -1256,7 +1630,27 @@
       "log",
       "entry"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "cord",
+          "ko": "마음"
+        }
+      ],
+      "origin": "라틴어 recordari (마음에 다시 떠올리다)",
+      "story": "나중에 마음(cord)에 다시(re) 떠올릴 수 있게 적어 둔다 → 기록, 기록하다",
+      "hook": "레코드 → 음반 '레코드'는 소리를 기록한 판 → 기록",
+      "family": [
+        "accord",
+        "cordial",
+        "courage"
+      ]
+    }
   },
   {
     "id": "recovery",
@@ -1292,7 +1686,25 @@
     "synonyms": [
       "restoration"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "recover",
+          "ko": "되찾다"
+        },
+        {
+          "part": "-y",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 recuperare (되찾다)",
+      "story": "잃었던 상태를 도로 찾아오는(recover) 일(y) → 복구, 회복",
+      "family": [
+        "recuperate",
+        "recoverable"
+      ]
+    }
   },
   {
     "id": "recurring",
@@ -1372,7 +1784,20 @@
       "red teaming",
       "red teams"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "red",
+          "ko": "빨강 (적군 색)"
+        },
+        {
+          "part": "team",
+          "ko": "팀"
+        }
+      ],
+      "story": "모의전에서 적군 역을 맡아 쳐들어오는 빨간(red) 팀(team) → 일부러 공격해 약점을 찾는 팀, 레드팀"
+    }
   },
   {
     "id": "redirect",
@@ -1404,7 +1829,27 @@
       "reroute",
       "divert"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "direct",
+          "ko": "방향을 잡다"
+        }
+      ],
+      "origin": "라틴어 dirigere (곧게 이끌다)",
+      "story": "가던 방향(direct)을 다시(re) 잡아 딴 데로 보낸다 → 다른 곳으로 돌리다",
+      "hook": "리다이렉트 → 웹 주소 '리다이렉트'로 딴 페이지에 간다 → 다른 곳으로 돌리다",
+      "family": [
+        "direction",
+        "director",
+        "indirect"
+      ]
+    }
   },
   {
     "id": "redis",
@@ -1422,7 +1867,11 @@
         "ko": "Redis (메모리 기반 키-값 저장소)"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "Remote Dictionary Server",
+      "story": "원격(Remote)에 둔 사전(Dictionary)처럼 키로 값을 찾는 서버(Server) → 메모리 기반 키-값 저장소"
+    }
   },
   {
     "id": "rediscover",
@@ -1452,7 +1901,29 @@
     "synonyms": [
       "find again"
     ],
-    "domain": "검색·조회"
+    "domain": "검색·조회",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "dis-",
+          "ko": "벗겨 내다"
+        },
+        {
+          "part": "cover",
+          "ko": "덮개"
+        }
+      ],
+      "story": "덮개(cover)를 벗겨(dis) 찾았던 것을 또다시(re) 찾는다 → 다시 찾아내다",
+      "family": [
+        "discovery",
+        "uncover",
+        "coverage"
+      ]
+    }
   },
   {
     "id": "reduce",
@@ -1485,7 +1956,27 @@
       "decrease",
       "lower"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "뒤로"
+        },
+        {
+          "part": "duce",
+          "ko": "이끌다"
+        }
+      ],
+      "origin": "라틴어 reducere (뒤로 이끌다)",
+      "story": "불어난 것을 뒤로(re) 끌어(duce) 작게 되돌린다 → 줄이다, 낮추다",
+      "family": [
+        "produce",
+        "introduce",
+        "deduce",
+        "conduct"
+      ]
+    }
   },
   {
     "id": "redundant",
@@ -1514,7 +2005,30 @@
       "duplicate",
       "superfluous"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "red-",
+          "ko": "거듭, 다시"
+        },
+        {
+          "part": "und",
+          "ko": "물결"
+        },
+        {
+          "part": "-ant",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 redundare (물결이 넘쳐흐르다)",
+      "story": "물결(und)이 거듭(red) 밀려와 넘치도록 남아도는 → 불필요하게 중복된",
+      "family": [
+        "abundant",
+        "inundate",
+        "undulate"
+      ]
+    }
   },
   {
     "id": "refactor",
@@ -1545,7 +2059,26 @@
     "synonyms": [
       "restructure"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "factor",
+          "ko": "요소, 인수로 나누다"
+        }
+      ],
+      "origin": "라틴어 factor (만드는 것) ← facere (만들다)",
+      "story": "코드를 요소(factor)로 다시(re) 나눠 짜임새만 고친다 → 리팩터링하다",
+      "family": [
+        "factory",
+        "manufacture",
+        "fact"
+      ]
+    }
   },
   {
     "id": "refer",
@@ -1636,7 +2169,31 @@
       "refer to",
       "cite"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "되, 도로"
+        },
+        {
+          "part": "fer",
+          "ko": "나르다"
+        },
+        {
+          "part": "-ence",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 referre (되가져가다)",
+      "story": "근거가 있는 곳으로 되(re) 데려가(fer) 가리킨다 → 참조하다, 참조, 참고 자료",
+      "hook": "레퍼런스 → '레퍼런스 찾아봐'의 레퍼런스 → 참고 자료",
+      "family": [
+        "transfer",
+        "prefer",
+        "differ"
+      ]
+    }
   },
   {
     "id": "refine",
@@ -1722,7 +2279,26 @@
       "show",
       "mirror"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "되, 뒤로"
+        },
+        {
+          "part": "flect",
+          "ko": "굽히다"
+        }
+      ],
+      "origin": "라틴어 reflectere (뒤로 굽히다)",
+      "story": "빛이 되(re) 꺾여(flect) 거울에 모습이 그대로 비친다 → 반영하다, 나타내다",
+      "family": [
+        "flexible",
+        "deflect",
+        "reflex"
+      ]
+    }
   },
   {
     "id": "reformat",
@@ -1748,7 +2324,25 @@
     "synonyms": [
       "restructure"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "format",
+          "ko": "형식"
+        }
+      ],
+      "story": "형식(format)을 다시(re) 맞춘다 → 형식을 다시 맞추다, 재포맷하다",
+      "family": [
+        "formal",
+        "transform",
+        "information"
+      ]
+    }
   },
   {
     "id": "refresh",
@@ -1779,7 +2373,26 @@
       "update",
       "renew"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "fresh",
+          "ko": "신선한, 새로운"
+        }
+      ],
+      "story": "묵은 화면을 다시(re) 갓 나온 새것(fresh)으로 → 새로 고치다, 갱신하다",
+      "hook": "리프레시 → '리프레시 휴가'로 새 기분이 된다 → 새로 고치다",
+      "family": [
+        "freshen",
+        "freshman",
+        "refreshment"
+      ]
+    }
   },
   {
     "id": "refund",
@@ -1811,7 +2424,27 @@
       "reimbursement",
       "repayment"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "도로"
+        },
+        {
+          "part": "fund",
+          "ko": "붓다"
+        }
+      ],
+      "origin": "라틴어 refundere (도로 붓다, 돌려주다)",
+      "story": "받은 돈을 도로(re) 부어(fund) 돌려준다 → 환불하다, 환불",
+      "family": [
+        "refuse",
+        "fusion",
+        "confuse",
+        "infuse"
+      ]
+    }
   },
   {
     "id": "refuse",
@@ -1844,7 +2477,26 @@
       "deny",
       "reject"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "도로"
+        },
+        {
+          "part": "fuse",
+          "ko": "붓다"
+        }
+      ],
+      "origin": "라틴어 refusus (도로 부은) ← refundere",
+      "story": "내민 것을 받지 않고 도로(re) 부어(fuse) 돌려보낸다 → 거부하다, 거절하다",
+      "family": [
+        "refund",
+        "fusion",
+        "confuse"
+      ]
+    }
   },
   {
     "id": "regardless",
@@ -1925,7 +2577,30 @@
       "recreate",
       "rebuild"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "gener",
+          "ko": "낳다"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다"
+        }
+      ],
+      "origin": "라틴어 regenerare (다시 낳다)",
+      "story": "한 번 낳은(gener) 것을 다시(re) 새로 낳아 낸다 → 다시 생성하다",
+      "family": [
+        "generation",
+        "generic",
+        "gene"
+      ]
+    }
   },
   {
     "id": "regex",
@@ -1952,7 +2627,11 @@
       "regular expression",
       "regexp"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "regular expression",
+      "story": "규칙(regular)으로 문자열 패턴을 적는 표현식(expression)을 줄인 말 → 정규 표현식"
+    }
   },
   {
     "id": "region",
@@ -1982,7 +2661,27 @@
       "area",
       "zone"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "reg",
+          "ko": "다스리다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 곳"
+        }
+      ],
+      "origin": "라틴어 regio (다스리는 구역) ← regere (다스리다)",
+      "story": "한 통치자가 다스리는(reg) 구역(ion) → 지역, 영역",
+      "family": [
+        "regal",
+        "regular",
+        "regime",
+        "reign"
+      ]
+    }
   },
   {
     "id": "register",
@@ -2014,7 +2713,26 @@
       "enroll",
       "sign up"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "도로"
+        },
+        {
+          "part": "gist",
+          "ko": "나르다"
+        }
+      ],
+      "origin": "라틴어 regesta (옮겨 적은 것) ← regerere",
+      "story": "명부로 도로(re) 가져와(gist) 적어 넣는다 → 등록하다",
+      "family": [
+        "digest",
+        "gesture",
+        "suggest"
+      ]
+    }
   },
   {
     "id": "registry",
@@ -2043,7 +2761,26 @@
       "catalog",
       "directory"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "regist",
+          "ko": "등록하다"
+        },
+        {
+          "part": "-ry",
+          "ko": "~을 모아 둔 곳"
+        }
+      ],
+      "origin": "중세 라틴어 registrum (기록부)",
+      "story": "등록한(register) 항목을 모아 둔 곳(ry) → 레지스트리, 등록 목록",
+      "family": [
+        "register",
+        "registrar",
+        "registration"
+      ]
+    }
   },
   {
     "id": "regression",
@@ -2074,7 +2811,31 @@
       "relapse",
       "decline"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "뒤로"
+        },
+        {
+          "part": "gress",
+          "ko": "걷다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 regredi (뒤로 걸어가다)",
+      "story": "잘 가다가 뒤로(re) 걸어가(gress) 예전 문제로 돌아가는 것(ion) → 회귀",
+      "family": [
+        "progress",
+        "aggressive",
+        "congress",
+        "digress"
+      ]
+    }
   },
   {
     "id": "regulatory",
@@ -2221,7 +2982,27 @@
       "decline",
       "deny"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "되, 도로"
+        },
+        {
+          "part": "ject",
+          "ko": "던지다"
+        }
+      ],
+      "origin": "라틴어 reicere (되던지다)",
+      "story": "들어온 것을 되(re) 던져(ject) 버린다 → 거부하다, 받아들이지 않다",
+      "family": [
+        "inject",
+        "project",
+        "eject",
+        "object"
+      ]
+    }
   },
   {
     "id": "relate",
@@ -2252,7 +3033,26 @@
       "connect",
       "link"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "되, 도로"
+        },
+        {
+          "part": "late",
+          "ko": "나르다"
+        }
+      ],
+      "origin": "라틴어 relatus (되가져온) — referre 의 과거분사",
+      "story": "이것을 저것 곁으로 되(re) 가져다(late) 잇는다 → 관련짓다, 관련되다",
+      "family": [
+        "translate",
+        "collate",
+        "correlate"
+      ]
+    }
   },
   {
     "id": "related",
@@ -2278,7 +3078,25 @@
       "connected",
       "linked"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "relat",
+          "ko": "관련짓다"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "story": "서로 가져다 이어(relate) 놓은(ed) → 관련된, 연관된",
+      "family": [
+        "relation",
+        "relative",
+        "translate"
+      ]
+    }
   },
   {
     "id": "relationship",
@@ -2308,7 +3126,25 @@
       "link",
       "correlation"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "relation",
+          "ko": "관계"
+        },
+        {
+          "part": "-ship",
+          "ko": "~인 상태"
+        }
+      ],
+      "story": "서로 이어져 관계(relation)를 맺고 있는 상태(ship) → 관계, 관련성",
+      "family": [
+        "relate",
+        "relative",
+        "correlation"
+      ]
+    }
   },
   {
     "id": "relative",
@@ -2343,7 +3179,26 @@
       "comparative",
       "proportional"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "relat",
+          "ko": "되가져와 잇다"
+        },
+        {
+          "part": "-ive",
+          "ko": "~하는 성질의"
+        }
+      ],
+      "origin": "라틴어 relativus (~에 관계된)",
+      "story": "다른 것에 이어(relat) 놓고 견주어 보는(ive) → ~에 비해, 상대적인",
+      "family": [
+        "relation",
+        "correlate",
+        "relativity"
+      ]
+    }
   },
   {
     "id": "release",
@@ -2384,7 +3239,27 @@
       "issue",
       "launch"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "도로"
+        },
+        {
+          "part": "lease",
+          "ko": "풀어 놓다"
+        }
+      ],
+      "origin": "고대 프랑스어 relaissier ← 라틴어 relaxare (풀다)",
+      "story": "쥐고 있던 것을 느슨히 풀어(lease) 세상에 내놓는다 → 내보내다, 공개하다, 출시",
+      "hook": "릴리스 → '신곡 릴리스'의 그 릴리스 → 출시",
+      "family": [
+        "relax",
+        "lease",
+        "lax"
+      ]
+    }
   },
   {
     "id": "relevant",
@@ -2474,7 +3349,30 @@
       "dependability",
       "trustworthiness"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "reli",
+          "ko": "기대다 (rely)"
+        },
+        {
+          "part": "abil",
+          "ko": "할 수 있는"
+        },
+        {
+          "part": "-ity",
+          "ko": "성질"
+        }
+      ],
+      "origin": "rely ← 라틴어 religare (단단히 묶다)",
+      "story": "믿고 기대도(rely) 될 만한(able) 성질(ity) → 신뢰성",
+      "family": [
+        "rely",
+        "reliable",
+        "reliance"
+      ]
+    }
   },
   {
     "id": "rely",
@@ -2558,7 +3456,26 @@
       "stay",
       "continue to be"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "뒤에"
+        },
+        {
+          "part": "main",
+          "ko": "머물다"
+        }
+      ],
+      "origin": "라틴어 remanere (뒤에 머물다)",
+      "story": "남들이 떠난 뒤에도(re) 그대로 머문다(main) → 남아 있다, 계속 ~한 상태로 있다",
+      "family": [
+        "remnant",
+        "permanent",
+        "mansion"
+      ]
+    }
   },
   {
     "id": "remainder",
@@ -2584,7 +3501,26 @@
       "rest",
       "remaining part"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "뒤에"
+        },
+        {
+          "part": "main",
+          "ko": "머물다"
+        }
+      ],
+      "origin": "앵글로프랑스어 remaindre (남다) ← 라틴어 remanere",
+      "story": "덜어 내고 난 뒤에(re) 머물러(main) 남은 것 → 나머지",
+      "family": [
+        "remain",
+        "remnant",
+        "permanent"
+      ]
+    }
   },
   {
     "id": "remediation",
@@ -2614,7 +3550,30 @@
       "fix",
       "remedy"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "medi",
+          "ko": "고치다, 낫게 하다"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 remediare (고치다) ← mederi (낫게 하다)",
+      "story": "탈 난 곳을 다시(re) 고쳐(medi) 낫게 하는 일(ation) → 개선 조치, 바로잡기",
+      "family": [
+        "remedy",
+        "medicine",
+        "medical"
+      ]
+    }
   },
   {
     "id": "remedy",
@@ -2735,7 +3694,30 @@
       "notice",
       "prompt"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "mind",
+          "ko": "마음, 기억"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "story": "잊지 않게 다시(re) 마음(mind)에 떠올려 주는 것(er) → 다시 일러 주는 말, 알림",
+      "hook": "리마인더 → 폰 '리마인더' 앱이 때맞춰 다시 알려 준다 → 알림",
+      "family": [
+        "remind",
+        "mindful",
+        "mindset"
+      ]
+    }
   },
   {
     "id": "remit",
@@ -2820,7 +3802,26 @@
       "eliminate",
       "take out"
     ],
-    "domain": "삭제·제거"
+    "domain": "삭제·제거",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "뒤로, 멀리"
+        },
+        {
+          "part": "move",
+          "ko": "옮기다"
+        }
+      ],
+      "origin": "라틴어 removere (뒤로 옮기다, 치우다)",
+      "story": "있던 자리에서 멀리(re) 옮겨(move) 치워 버린다 → 없애다, 제거하다",
+      "family": [
+        "remote",
+        "motion",
+        "mobile"
+      ]
+    }
   },
   {
     "id": "rename",
@@ -2847,7 +3848,25 @@
       "retitle",
       "relabel"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "name",
+          "ko": "이름을 붙이다"
+        }
+      ],
+      "story": "이름(name)을 다시(re) 붙인다 → 이름을 바꾸다",
+      "family": [
+        "nickname",
+        "surname",
+        "namesake"
+      ]
+    }
   },
   {
     "id": "render",
@@ -2883,7 +3902,17 @@
       "display",
       "produce"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "origin": "고대 프랑스어 rendre (내주다) ← 라틴어 reddere",
+      "story": "받은 데이터를 화면에 보이는 모습으로 바꿔 내어 준다(rendre) → 그려 내다, 렌더링하다",
+      "hook": "렌더 → 3D '렌더링'으로 그림을 뽑아낸다 → 그려 내다",
+      "family": [
+        "surrender",
+        "rendition",
+        "rent"
+      ]
+    }
   },
   {
     "id": "renewal",
@@ -2913,7 +3942,29 @@
       "extension",
       "continuation"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "new",
+          "ko": "새로운"
+        },
+        {
+          "part": "-al",
+          "ko": "~하는 일"
+        }
+      ],
+      "story": "끝나 가는 기한을 다시(re) 새것(new)으로 만드는 일(al) → 갱신, 연장",
+      "family": [
+        "renew",
+        "anew",
+        "news"
+      ]
+    }
   },
   {
     "id": "reopen",
@@ -2944,7 +3995,24 @@
       "reopen",
       "restart"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "open",
+          "ko": "열다"
+        }
+      ],
+      "story": "닫았던 것을 다시(re) 연다(open) → 다시 열다",
+      "family": [
+        "opener",
+        "openly"
+      ]
+    }
   },
   {
     "id": "reorder",
@@ -2975,7 +4043,25 @@
       "rearrange",
       "resequence"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "order",
+          "ko": "순서"
+        }
+      ],
+      "story": "늘어선 순서(order)를 다시(re) 매긴다 → 순서를 바꾸다, 재배치하다",
+      "family": [
+        "disorder",
+        "orderly",
+        "ordinal"
+      ]
+    }
   },
   {
     "id": "reorganize",
@@ -3008,7 +4094,30 @@
       "rearrange",
       "revamp"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "organ",
+          "ko": "기관, 짜임"
+        },
+        {
+          "part": "-ize",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "origin": "그리스어 organon (도구, 기관)",
+      "story": "흐트러진 짜임(organ)을 다시(re) 갖추게 만든다(ize) → 다시 정리하다, 재구성하다",
+      "family": [
+        "organization",
+        "organ",
+        "organic"
+      ]
+    }
   },
   {
     "id": "repeat",
@@ -3083,7 +4192,25 @@
       "swap",
       "supersede"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "place",
+          "ko": "자리, 놓다"
+        }
+      ],
+      "story": "그 자리(place)에 다른 것을 다시(re) 놓는다 → 교체하다, 자리를 대신하다",
+      "family": [
+        "displace",
+        "misplace",
+        "placement"
+      ]
+    }
   },
   {
     "id": "replacement",
@@ -3112,7 +4239,29 @@
       "substitution",
       "substitute"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "place",
+          "ko": "자리, 놓다"
+        },
+        {
+          "part": "-ment",
+          "ko": "~하는 일·것"
+        }
+      ],
+      "story": "그 자리(place)에 다시(re) 놓는 일, 또는 놓인 것(ment) → 교체, 대체물",
+      "family": [
+        "displacement",
+        "placement",
+        "workplace"
+      ]
+    }
   },
   {
     "id": "replay",
@@ -3143,7 +4292,26 @@
       "rerun",
       "play back"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "play",
+          "ko": "재생하다"
+        }
+      ],
+      "story": "기록해 둔 것을 다시(re) 틀어(play) 본다 → 그대로 다시 재생하다",
+      "hook": "리플레이 → 스포츠 중계의 '리플레이' 화면 → 다시 재생하다",
+      "family": [
+        "player",
+        "playback",
+        "playlist"
+      ]
+    }
   },
   {
     "id": "replica",
@@ -3173,7 +4341,28 @@
       "copy",
       "duplicate"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "plic",
+          "ko": "접다"
+        }
+      ],
+      "origin": "이탈리아어 replica ← 라틴어 replicare (되접다)",
+      "story": "다시(re) 접어(plic) 겹치듯 똑같이 되풀이해 만든 것 → 복제본, 사본",
+      "hook": "레플리카 → 선수 유니폼을 본뜬 '레플리카' → 복제본",
+      "family": [
+        "replicate",
+        "duplicate",
+        "complicated",
+        "reply"
+      ]
+    }
   },
   {
     "id": "reply",
@@ -3235,7 +4424,16 @@
     "synonyms": [
       "repository"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "origin": "repository 의 줄임 ← 라틴어 repositorium (보관소)",
+      "story": "코드를 넣어 두는 보관소 repository 를 앞머리만 잘라 부르는 말 → 저장소, 리포지토리",
+      "family": [
+        "repository",
+        "deposit",
+        "position"
+      ]
+    }
   },
   {
     "id": "report",
@@ -3352,7 +4550,25 @@
       "reprocess",
       "rerun"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "process",
+          "ko": "처리하다"
+        }
+      ],
+      "story": "한 번 처리한(process) 것을 다시(re) 돌린다 → 다시 처리하다, 재처리하다",
+      "family": [
+        "processor",
+        "procedure",
+        "proceed"
+      ]
+    }
   },
   {
     "id": "reproduce",
@@ -3390,7 +4606,30 @@
       "replicate",
       "duplicate"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "pro-",
+          "ko": "앞으로"
+        },
+        {
+          "part": "duce",
+          "ko": "이끌다"
+        }
+      ],
+      "origin": "라틴어 producere (앞으로 이끌어 내다)",
+      "story": "같은 현상을 다시(re) 눈앞에(pro) 끌어내(duce) 보인다 → 재현하다",
+      "family": [
+        "production",
+        "reduce",
+        "introduce"
+      ]
+    }
   },
   {
     "id": "reputable",
@@ -3476,7 +4715,27 @@
       "call for",
       "demand"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "거듭"
+        },
+        {
+          "part": "quest",
+          "ko": "구하다, 찾다"
+        }
+      ],
+      "origin": "고대 프랑스어 requeste ← 라틴어 requirere",
+      "story": "필요한 것을 달라고 거듭(re) 구한다(quest) → 요청하다, 요청",
+      "family": [
+        "question",
+        "quest",
+        "require",
+        "inquiry"
+      ]
+    }
   },
   {
     "id": "require",
@@ -3518,7 +4777,27 @@
       "demand",
       "call for"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "거듭"
+        },
+        {
+          "part": "quire",
+          "ko": "구하다, 찾다"
+        }
+      ],
+      "origin": "라틴어 requirere (거듭 구하다, 찾다)",
+      "story": "없으면 안 된다고 거듭(re) 구한다(quire) → 요구하다, 필요로 하다",
+      "family": [
+        "acquire",
+        "inquire",
+        "request",
+        "requisite"
+      ]
+    }
   },
   {
     "id": "reschedule",
@@ -3545,7 +4824,20 @@
       "postpone",
       "move"
     ],
-    "domain": "계획·목표·전략"
+    "domain": "계획·목표·전략",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "schedule",
+          "ko": "일정"
+        }
+      ],
+      "story": "잡아 둔 일정(schedule)을 다시(re) 잡는다 → 일정을 다시 잡다, 일정을 변경하다"
+    }
   },
   {
     "id": "research",
@@ -3578,7 +4870,26 @@
       "study",
       "inquiry"
     ],
-    "domain": "검색·조회"
+    "domain": "검색·조회",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "거듭 (강조)"
+        },
+        {
+          "part": "search",
+          "ko": "찾다"
+        }
+      ],
+      "origin": "중세 프랑스어 recercher (샅샅이 찾다)",
+      "story": "거듭(re) 샅샅이 찾아(search) 파고든다 → 연구, 조사하다",
+      "family": [
+        "search",
+        "circle",
+        "circuit"
+      ]
+    }
   },
   {
     "id": "researcher",
@@ -3603,7 +4914,28 @@
       "investigator",
       "analyst"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "거듭 (강조)"
+        },
+        {
+          "part": "search",
+          "ko": "찾다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 사람"
+        }
+      ],
+      "story": "거듭(re) 샅샅이 찾아(search) 파고드는 사람(er) → 연구원, 조사하는 사람",
+      "family": [
+        "research",
+        "search"
+      ]
+    }
   },
   {
     "id": "resend",
@@ -3634,7 +4966,20 @@
       "retransmit",
       "send again"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "send",
+          "ko": "보내다"
+        }
+      ],
+      "story": "보낸 것을 다시(re) 한 번 보낸다(send) → 다시 보내다"
+    }
   },
   {
     "id": "reservation",
@@ -3662,7 +5007,30 @@
     "synonyms": [
       "booking"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "뒤에"
+        },
+        {
+          "part": "serv",
+          "ko": "지키다, 간직하다"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 reservare (뒤에 남겨 지키다)",
+      "story": "내 몫으로, 또는 속마음을 뒤에(re) 따로 간직해(serv) 두는 일(ation) → 예약, 유보",
+      "family": [
+        "preserve",
+        "conserve",
+        "observe"
+      ]
+    }
   },
   {
     "id": "reserve",
@@ -3699,7 +5067,26 @@
       "save",
       "book"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "뒤에"
+        },
+        {
+          "part": "serve",
+          "ko": "지키다, 간직하다"
+        }
+      ],
+      "origin": "라틴어 reservare (뒤에 남겨 지키다)",
+      "story": "다 쓰지 않고 뒤에(re) 따로 간직해(serve) 둔다 → 따로 남겨 두다, 예약하다",
+      "family": [
+        "preserve",
+        "conserve",
+        "reservoir"
+      ]
+    }
   },
   {
     "id": "residency",
@@ -3724,7 +5111,30 @@
     "synonyms": [
       "residence"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "뒤에, 그대로"
+        },
+        {
+          "part": "sid",
+          "ko": "앉다"
+        },
+        {
+          "part": "-ency",
+          "ko": "~인 상태"
+        }
+      ],
+      "origin": "라틴어 residere (뒤에 남아 앉다)",
+      "story": "데이터가 한 지역에 그대로(re) 눌러앉아(sid) 머무는 상태(ency) → 상주 위치, 거주",
+      "family": [
+        "resident",
+        "president",
+        "subside"
+      ]
+    }
   },
   {
     "id": "resident",
@@ -3867,7 +5277,30 @@
     "forms": [
       "resolvers"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "도로, 완전히"
+        },
+        {
+          "part": "solv",
+          "ko": "풀다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 resolvere (풀어 헤치다)",
+      "story": "이름·필드를 풀어(solv) 실제 값으로 밝혀 주는 것(er) → 리졸버, 해석하는 프로그램",
+      "family": [
+        "solve",
+        "solution",
+        "dissolve"
+      ]
+    }
   },
   {
     "id": "resource",
@@ -3895,7 +5328,27 @@
     "synonyms": [
       "asset"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "source",
+          "ko": "솟아나다, 샘"
+        }
+      ],
+      "origin": "고대 프랑스어 resourdre (다시 솟아오르다)",
+      "story": "퍼 써도 다시(re) 솟아나는(source) 샘 같은 밑천 → 자원, 리소스",
+      "hook": "리소스 → '리소스가 부족하다'의 리소스 → 자원",
+      "family": [
+        "source",
+        "surge",
+        "resurgence"
+      ]
+    }
   },
   {
     "id": "respond",
@@ -3927,7 +5380,26 @@
       "answer",
       "react"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "되, 도로"
+        },
+        {
+          "part": "spond",
+          "ko": "약속하다"
+        }
+      ],
+      "origin": "라틴어 respondere (되받아 약속하다, 답하다)",
+      "story": "상대의 말에 되(re) 받아 약속하듯(spond) 답을 돌려준다 → 응답하다, 반응하다",
+      "family": [
+        "sponsor",
+        "correspond",
+        "spouse"
+      ]
+    }
   },
   {
     "id": "response",
@@ -3957,7 +5429,26 @@
       "answer",
       "reaction"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "되, 도로"
+        },
+        {
+          "part": "sponse",
+          "ko": "약속한 말"
+        }
+      ],
+      "origin": "라틴어 responsum (답변)",
+      "story": "물음에 되(re) 돌려준 약속의 말(sponse) → 응답, 대답",
+      "family": [
+        "respond",
+        "sponsor",
+        "correspond"
+      ]
+    }
   },
   {
     "id": "responsible",
@@ -3987,7 +5478,26 @@
       "in charge",
       "accountable"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "respons",
+          "ko": "응답하다"
+        },
+        {
+          "part": "-ible",
+          "ko": "할 수 있는"
+        }
+      ],
+      "origin": "라틴어 respondere (답하다)",
+      "story": "결과를 물으면 나서서 답할(respons) 수 있어야 하는(ible) → 책임이 있는, 담당하는",
+      "family": [
+        "response",
+        "responsibility",
+        "sponsor"
+      ]
+    }
   },
   {
     "id": "restart",
@@ -4019,7 +5529,24 @@
       "reboot",
       "relaunch"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "start",
+          "ko": "시작하다"
+        }
+      ],
+      "story": "멈춘 것을 다시(re) 처음부터 시작한다(start) → 다시 시작하다, 재시작",
+      "family": [
+        "starter",
+        "startup"
+      ]
+    }
   },
   {
     "id": "restore",
@@ -4052,7 +5579,26 @@
       "reinstate",
       "bring back"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "store",
+          "ko": "세우다"
+        }
+      ],
+      "origin": "라틴어 restaurare (다시 세우다, 고쳐 짓다)",
+      "story": "무너진 것을 다시(re) 세워(store) 원래 모습으로 → 복원하다, 되살리다",
+      "family": [
+        "restaurant",
+        "restoration",
+        "store"
+      ]
+    }
   },
   {
     "id": "restrict",
@@ -4138,7 +5684,30 @@
       "rework",
       "rearrange"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "struct",
+          "ko": "쌓다, 짓다"
+        },
+        {
+          "part": "-ure",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 struere (쌓다, 짓다)",
+      "story": "쌓아 올린 짜임(structure)을 다시(re) 짠다 → 구조를 바꾸다, 재구성하다",
+      "family": [
+        "construct",
+        "instruct",
+        "infrastructure"
+      ]
+    }
   },
   {
     "id": "resubmit",
@@ -4170,7 +5739,31 @@
       "resend",
       "submit again"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "sub-",
+          "ko": "아래로"
+        },
+        {
+          "part": "mit",
+          "ko": "보내다"
+        }
+      ],
+      "origin": "라틴어 submittere (아래에 내려놓다)",
+      "story": "심사대 아래로(sub) 보냈던(mit) 것을 다시(re) 낸다 → 다시 제출하다, 재제출하다",
+      "family": [
+        "submission",
+        "transmit",
+        "permit",
+        "admit"
+      ]
+    }
   },
   {
     "id": "result",
@@ -4239,7 +5832,26 @@
       "restart",
       "pick up"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "sume",
+          "ko": "집어 들다"
+        }
+      ],
+      "origin": "라틴어 resumere (다시 집어 들다)",
+      "story": "내려놓았던 일을 다시(re) 집어 든다(sume) → 재개하다, 이어서 하다",
+      "family": [
+        "assume",
+        "consume",
+        "presume"
+      ]
+    }
   },
   {
     "id": "resume-parsing",
@@ -4257,7 +5869,20 @@
         "ko": "이력서를 분석(파싱)하는"
       }
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "resume",
+          "ko": "이력서"
+        },
+        {
+          "part": "parsing",
+          "ko": "구문 분석"
+        }
+      ],
+      "story": "이력서(resume)를 구문 분석(parsing)해 항목별 정보를 뽑아내는 → 이력서를 구문 분석하는"
+    }
   },
   {
     "id": "retail",
@@ -4431,7 +6056,25 @@
       "phase out",
       "discontinue"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "뒤로"
+        },
+        {
+          "part": "tire",
+          "ko": "끌다"
+        }
+      ],
+      "origin": "프랑스어 retirer (뒤로 끌어내다)",
+      "story": "일선에 있던 것을 뒤로(re) 끌어(tire) 물러나게 한다 → 퇴역시키다, 서비스를 종료하다",
+      "family": [
+        "retirement",
+        "retiree"
+      ]
+    }
   },
   {
     "id": "retract",
@@ -4464,7 +6107,27 @@
       "take back",
       "revoke"
     ],
-    "domain": "삭제·제거"
+    "domain": "삭제·제거",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "뒤로"
+        },
+        {
+          "part": "tract",
+          "ko": "끌다"
+        }
+      ],
+      "origin": "라틴어 retrahere (뒤로 끌어당기다)",
+      "story": "내뱉은 말을 뒤로(re) 끌어(tract) 도로 거둔다 → 철회하다, 취소하다",
+      "family": [
+        "attract",
+        "extract",
+        "contract",
+        "tractor"
+      ]
+    }
   },
   {
     "id": "retrieve",
@@ -4549,7 +6212,24 @@
       "try again",
       "reattempt"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "try",
+          "ko": "시도하다"
+        }
+      ],
+      "story": "실패한 것을 다시(re) 해 본다(try) → 재시도하다, 재시도",
+      "family": [
+        "trial",
+        "tryout"
+      ]
+    }
   },
   {
     "id": "retry-after",
@@ -4567,7 +6247,20 @@
         "ko": "Retry-After 헤더 (다시 시도할 때까지 기다릴 시간을 알려 주는 응답 헤더)"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "retry",
+          "ko": "재시도하다"
+        },
+        {
+          "part": "after",
+          "ko": "~ 뒤에"
+        }
+      ],
+      "story": "'이만큼 지난 뒤(after)에 재시도(retry)하라'고 서버가 알려 준다 → 재시도 시점을 알리는 응답 헤더"
+    }
   },
   {
     "id": "return",
@@ -4641,7 +6334,25 @@
       "recycle",
       "reapply"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "use",
+          "ko": "쓰다"
+        }
+      ],
+      "story": "한 번 쓴(use) 것을 버리지 않고 다시(re) 쓴다 → 재사용하다, 재사용",
+      "family": [
+        "useful",
+        "usage",
+        "misuse"
+      ]
+    }
   },
   {
     "id": "reveal",
@@ -4673,7 +6384,26 @@
       "expose",
       "disclose"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "도로 벗기다"
+        },
+        {
+          "part": "veal",
+          "ko": "베일, 가리개"
+        }
+      ],
+      "origin": "라틴어 revelare (베일을 벗기다) ← velum (베일)",
+      "story": "덮여 있던 베일(veal)을 걷어(re) 속을 보여 준다 → 드러내다, 밝혀 보여 주다",
+      "family": [
+        "veil",
+        "unveil",
+        "revelation"
+      ]
+    }
   },
   {
     "id": "revenue",
@@ -4758,7 +6488,27 @@
       "revert",
       "cancel"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "뒤로"
+        },
+        {
+          "part": "verse",
+          "ko": "돌리다"
+        }
+      ],
+      "origin": "라틴어 revertere (뒤로 돌리다)",
+      "story": "가던 쪽을 뒤로(re) 돌려(verse) 원래대로 → 되돌리다, 취소하다, 반대의",
+      "hook": "리버스 → 자동차 R 기어가 '리버스'(후진) → 되돌리다",
+      "family": [
+        "convert",
+        "version",
+        "diverse"
+      ]
+    }
   },
   {
     "id": "reversible",
@@ -4788,7 +6538,30 @@
       "undoable",
       "revocable"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "뒤로"
+        },
+        {
+          "part": "vers",
+          "ko": "돌리다"
+        },
+        {
+          "part": "-ible",
+          "ko": "할 수 있는"
+        }
+      ],
+      "story": "뒤로(re) 돌려(vers) 놓을 수 있는(ible) → 되돌릴 수 있는",
+      "hook": "리버서블 → 뒤집어 입는 '리버서블' 점퍼 → 되돌릴 수 있는",
+      "family": [
+        "reverse",
+        "irreversible",
+        "convert"
+      ]
+    }
   },
   {
     "id": "review",
@@ -4828,7 +6601,27 @@
       "assess",
       "audit"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "view",
+          "ko": "보다"
+        }
+      ],
+      "origin": "프랑스어 revoir (다시 보다)",
+      "story": "한 번 본 것을 다시(re) 꼼꼼히 들여다본다(view) → 검토하다, 검토",
+      "hook": "리뷰 → 상품 '리뷰'의 그 리뷰 → 검토",
+      "family": [
+        "preview",
+        "interview",
+        "overview"
+      ]
+    }
   },
   {
     "id": "revise",
@@ -4910,7 +6703,27 @@
       "withdraw",
       "rescind"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "되, 도로"
+        },
+        {
+          "part": "voke",
+          "ko": "부르다"
+        }
+      ],
+      "origin": "라틴어 revocare (되불러들이다)",
+      "story": "내주었던 키·권한을 되(re) 불러들인다(voke) → 취소하다, 폐기하다",
+      "family": [
+        "invoke",
+        "provoke",
+        "vocal",
+        "advocate"
+      ]
+    }
   },
   {
     "id": "rewrite",
@@ -4943,7 +6756,25 @@
       "redraft",
       "revise"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "re-",
+          "ko": "다시"
+        },
+        {
+          "part": "write",
+          "ko": "쓰다"
+        }
+      ],
+      "story": "써 둔(write) 글을 다시(re) 고쳐 쓴다 → 다시 쓰다, 고쳐 쓰다",
+      "family": [
+        "writer",
+        "overwrite",
+        "handwriting"
+      ]
+    }
   },
   {
     "id": "right",
@@ -5056,7 +6887,12 @@
       "hazard",
       "threat"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "origin": "프랑스어 risque ← 이탈리아어 risco (위험)",
+      "story": "잘못될 수도 있음을 알면서 걸어 보는 것 → 위험, 리스크",
+      "hook": "리스크 → '리스크 관리'의 리스크 → 위험"
+    }
   },
   {
     "id": "robust",
@@ -5121,7 +6957,17 @@
       "duty",
       "part"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "origin": "프랑스어 rôle (배우의 대사를 적은 두루마리)",
+      "story": "배우가 자기 대사가 적힌 두루마리(roll)를 받아 맡는 몫 → 역할, 맡은 일",
+      "hook": "롤 → '롤 모델'의 롤 → 역할",
+      "family": [
+        "roll",
+        "enroll",
+        "rotate"
+      ]
+    }
   },
   {
     "id": "roll",
@@ -5156,7 +7002,17 @@
       "deploy",
       "introduce"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "origin": "고대 프랑스어 roller ← 라틴어 rotula (작은 바퀴)",
+      "story": "작은 바퀴(rotula)가 구르듯 차례차례 굴려 내보낸다 → 단계적으로 배포하다, 구르다",
+      "hook": "롤 → '롤케이크'처럼 둘둘 굴려 만다 → 구르다, 굴리다",
+      "family": [
+        "rotate",
+        "enroll",
+        "control"
+      ]
+    }
   },
   {
     "id": "rollback",
@@ -5186,7 +7042,20 @@
       "reversion",
       "undo"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "roll",
+          "ko": "굴리다"
+        },
+        {
+          "part": "back",
+          "ko": "뒤로"
+        }
+      ],
+      "story": "굴려(roll) 내보낸 변경을 뒤로(back) 도로 굴려 온다 → 롤백, 이전 상태로 되돌리기"
+    }
   },
   {
     "id": "room",
@@ -5250,7 +7119,15 @@
       "origin",
       "source"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "고대 노르드어 rót (뿌리)",
+      "story": "가지가 모두 뻗어 나오는 나무의 뿌리(root)처럼 맨 처음 자리 → 루트, 최상위, 뿌리, 근원",
+      "family": [
+        "uproot",
+        "grassroots"
+      ]
+    }
   },
   {
     "id": "root-cause",
@@ -5275,7 +7152,20 @@
       "underlying cause",
       "origin"
     ],
-    "domain": "원인·결과·영향"
+    "domain": "원인·결과·영향",
+    "memory": {
+      "roots": [
+        {
+          "part": "root",
+          "ko": "뿌리"
+        },
+        {
+          "part": "cause",
+          "ko": "원인"
+        }
+      ],
+      "story": "겉으로 보이는 증상 밑, 뿌리(root)에 있는 진짜 원인(cause) → 근본 원인"
+    }
   },
   {
     "id": "rotation",
@@ -5311,7 +7201,27 @@
       "alternation",
       "cycle"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "rot",
+          "ko": "바퀴, 돌다"
+        },
+        {
+          "part": "-ation",
+          "ko": "~하는 일"
+        }
+      ],
+      "origin": "라틴어 rotare (바퀴처럼 돌다) ← rota (바퀴)",
+      "story": "바퀴(rot)가 돌듯 차례가 돌아가며 바뀌는 일(ation) → 순환",
+      "hook": "로테이션 → 야구 '선발 로테이션'처럼 돌아가며 맡는다 → 순환",
+      "family": [
+        "rotate",
+        "rotary",
+        "round"
+      ]
+    }
   },
   {
     "id": "roughly",
@@ -5341,7 +7251,26 @@
       "about",
       "around"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "rough",
+          "ko": "거친"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "고대 영어 rūh (거친, 털이 숭숭한)",
+      "story": "곱게 다듬지 않고 거칠게(rough) 어림잡아(ly) → 대략, 약",
+      "hook": "러프리 → '러프 스케치'하듯 대충 잡아서 → 대략",
+      "family": [
+        "roughen",
+        "roughness"
+      ]
+    }
   },
   {
     "id": "round",
@@ -5377,7 +7306,17 @@
       "iteration",
       "stage"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "origin": "고대 프랑스어 rond ← 라틴어 rotundus (바퀴처럼 둥근)",
+      "story": "둥글게(round) 한 바퀴 돌아 끝나는 한 판 → 한 차례, 회, 라운드",
+      "hook": "라운드 → 권투 '1라운드'의 라운드 → 한 차례",
+      "family": [
+        "around",
+        "rotate",
+        "rotund"
+      ]
+    }
   },
   {
     "id": "round-trip",
@@ -5402,7 +7341,20 @@
     "synonyms": [
       "there and back"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "round",
+          "ko": "한 바퀴"
+        },
+        {
+          "part": "trip",
+          "ko": "여정"
+        }
+      ],
+      "story": "갔다가 한 바퀴(round) 돌아 제자리로 오는 여정(trip) → 왕복, 요청 보내고 응답 받는 한 번"
+    }
   },
   {
     "id": "route",
@@ -5436,7 +7388,17 @@
       "send",
       "channel"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "origin": "고대 프랑스어 rute (길) ← 라틴어 rupta (뚫어 낸 길)",
+      "story": "숲을 뚫어(rupta) 낸 길을 따라 알맞은 곳으로 보낸다 → 보내다, 라우팅하다, 경로",
+      "hook": "루트 → '등산 루트'의 루트 → 경로",
+      "family": [
+        "routine",
+        "rupture",
+        "interrupt"
+      ]
+    }
   },
   {
     "id": "routine",
@@ -5468,7 +7430,27 @@
       "ordinary",
       "everyday"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "rout",
+          "ko": "길 (route)"
+        },
+        {
+          "part": "-ine",
+          "ko": "작은 것, ~같은"
+        }
+      ],
+      "origin": "프랑스어 routine (늘 다니는 길) ← route (길)",
+      "story": "날마다 다녀 익숙해진 길(route)처럼 늘 하는 → 일상적인, 정해진 일과",
+      "hook": "루틴 → '모닝 루틴'의 루틴 → 정해진 일과",
+      "family": [
+        "route",
+        "router",
+        "rupture"
+      ]
+    }
   },
   {
     "id": "row",
@@ -5503,7 +7485,12 @@
     "synonyms": [
       "line"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "고대 영어 rāw (줄, 열)",
+      "story": "옆으로 나란히 늘어선 한 줄(rāw), 표에서는 가로 한 줄 → 행, 줄",
+      "hook": "로 → 공연장 표의 'ROW 3'은 셋째 줄 → 줄, 행"
+    }
   },
   {
     "id": "rpm",
@@ -5525,7 +7512,11 @@
         "ko": "분당 회전수"
       }
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "Requests Per Minute",
+      "story": "1분(Minute)당(Per) 보낼 수 있는 요청(Requests) 수 → 분당 요청 수 한도"
+    }
   },
   {
     "id": "rubric",
@@ -5652,7 +7643,16 @@
       "execute",
       "launch"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "origin": "고대 영어 rinnan (달리다, 흐르다)",
+      "story": "프로그램이 멈추지 않고 달리게(run) 한다 → 실행하다, 실행, 달리다",
+      "family": [
+        "runner",
+        "runtime",
+        "runway"
+      ]
+    }
   },
   {
     "id": "runner",
@@ -5677,7 +7677,26 @@
     "forms": [
       "runners"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "run",
+          "ko": "달리다, 실행하다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것"
+        }
+      ],
+      "story": "맡은 job·테스트를 실제로 돌리는(run) 것(er) → 러너, 실행기",
+      "hook": "러너 → 달리는 사람 '러너'처럼 작업을 달리게 하는 것 → 실행기",
+      "family": [
+        "runtime",
+        "runway",
+        "rerun"
+      ]
+    }
   },
   {
     "id": "runtime",
@@ -5702,6 +7721,19 @@
     "forms": [
       "runtimes"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "run",
+          "ko": "실행하다"
+        },
+        {
+          "part": "time",
+          "ko": "때, 시간"
+        }
+      ],
+      "story": "프로그램이 도는(run) 바로 그때(time), 또 돌게 받쳐 주는 환경 → 실행 시점, 런타임(실행 환경)"
+    }
   }
 ]

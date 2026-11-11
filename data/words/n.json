@@ -156,7 +156,28 @@
       "normal",
       "native"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "natur",
+          "ko": "타고난 것, 자연"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 natura (타고난 것) ← nasci (태어나다)",
+      "story": "태어난(nat) 그대로라 꾸밈도 억지도 없는 → 자연스러운, 자연의",
+      "hook": "내추럴 → '내추럴 메이크업'처럼 꾸밈없는 → 자연스러운",
+      "family": [
+        "nature",
+        "native",
+        "nation",
+        "innate"
+      ]
+    }
   },
   {
     "id": "natural-language",
@@ -180,7 +201,20 @@
     "synonyms": [
       "plain-language"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "natural",
+          "ko": "자연의"
+        },
+        {
+          "part": "language",
+          "ko": "언어"
+        }
+      ],
+      "story": "코드가 아니라 사람이 자연스레(natural) 쓰는 말(language)로 된 → 자연어로 된"
+    }
   },
   {
     "id": "near",
@@ -271,7 +305,24 @@
       "virtually",
       "practically"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "near",
+          "ko": "가까이"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "목표에 가까이(near) 다가갔지만 살짝 못 미친 → 거의",
+      "family": [
+        "near",
+        "nearby"
+      ]
+    }
   },
   {
     "id": "necessary",
@@ -302,7 +353,31 @@
       "needed",
       "essential"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "ne-",
+          "ko": "아니"
+        },
+        {
+          "part": "cess",
+          "ko": "물러나다"
+        },
+        {
+          "part": "-ary",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 necessarius ← ne (아니) + cedere (물러나다)",
+      "story": "물러설(cess) 수 없어(ne) 빼놓지 못하는 → 필요한, 필수적인",
+      "family": [
+        "necessity",
+        "process",
+        "access",
+        "recess"
+      ]
+    }
   },
   {
     "id": "need",
@@ -366,7 +441,27 @@
       "adverse",
       "unfavorable"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "neg",
+          "ko": "아니라고 하다"
+        },
+        {
+          "part": "-ative",
+          "ko": "~하는 성질의"
+        }
+      ],
+      "origin": "라틴어 negativus ← negare (아니라고 하다)",
+      "story": "'아니'라고 하는(neg) 쪽으로 기운 → 부정적인, 음수의",
+      "hook": "네거티브 → 선거의 '네거티브' 공세 → 부정적인",
+      "family": [
+        "negate",
+        "deny",
+        "renegade"
+      ]
+    }
   },
   {
     "id": "neighbouring",
@@ -445,7 +540,27 @@
         "ko": "(neither A nor B) A도 B도 아니다"
       }
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "roots": [
+        {
+          "part": "n-",
+          "ko": "아니 (not)"
+        },
+        {
+          "part": "either",
+          "ko": "둘 중 하나"
+        }
+      ],
+      "origin": "고대 영어 nāhwæther (nā 아니 + 둘 중 어느)",
+      "story": "둘 중 하나(either) 앞에 부정의 n을 붙였다 → (둘 중) 어느 쪽도 아닌",
+      "family": [
+        "either",
+        "nor",
+        "never",
+        "none"
+      ]
+    }
   },
   {
     "id": "nested",
@@ -474,7 +589,24 @@
     "synonyms": [
       "embedded"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "nest",
+          "ko": "둥지"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "story": "둥지(nest) 안에 또 작은 둥지가 들어앉은 모양 → 중첩된",
+      "family": [
+        "nest",
+        "nestle"
+      ]
+    }
   },
   {
     "id": "network",
@@ -510,7 +642,25 @@
       "grid",
       "web"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "net",
+          "ko": "그물"
+        },
+        {
+          "part": "work",
+          "ko": "짜인 것"
+        }
+      ],
+      "story": "그물(net)처럼 얼기설기 짜여(work) 서로 이어진 것 → 네트워크, 통신망, 연결망",
+      "hook": "네트워크 → 외래어 '네트워크' 그대로 → 통신망, 연결망",
+      "family": [
+        "internet",
+        "framework"
+      ]
+    }
   },
   {
     "id": "never",
@@ -591,7 +741,25 @@
       "recently",
       "freshly"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "new",
+          "ko": "새로운"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "방금 새(new) 것이 된 상태로 → 새로, 최근에",
+      "family": [
+        "renew",
+        "news",
+        "newcomer"
+      ]
+    }
   },
   {
     "id": "news",
@@ -696,7 +864,25 @@
     "synonyms": [
       "overnight"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "night",
+          "ko": "밤"
+        },
+        {
+          "part": "-ly",
+          "ko": "~마다"
+        }
+      ],
+      "story": "밤(night)마다(-ly) 한 번씩 도는 빌드처럼 → 매일 밤의, 밤마다",
+      "family": [
+        "overnight",
+        "midnight",
+        "tonight"
+      ]
+    }
   },
   {
     "id": "nitpick",
@@ -765,7 +951,20 @@
       "not anymore",
       "no more"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "no",
+          "ko": "아니"
+        },
+        {
+          "part": "longer",
+          "ko": "더 오래"
+        }
+      ],
+      "story": "전에는 그랬지만 지금부터 더 오래(longer)는 아니다(no) → 더 이상 ~ 않다"
+    }
   },
   {
     "id": "nobody",
@@ -823,7 +1022,12 @@
     "synonyms": [
       "clutter"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "origin": "고대 프랑스어 noise (소란, 시끄러움)",
+      "story": "시끄러운 잡음에 정작 들어야 할 소리가 묻힌다 → 노이즈, 핵심을 가리는 쓸모없는 정보",
+      "hook": "노이즈 → 사진·음향에 끼는 '노이즈'(잡음) → 쓸모없는 정보"
+    }
   },
   {
     "id": "non-blocking",
@@ -841,7 +1045,24 @@
         "ko": "막지 않는, 비차단의 (오류가 나도 진행을 멈추지 않는)"
       }
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "non-",
+          "ko": "아닌"
+        },
+        {
+          "part": "block",
+          "ko": "막다"
+        },
+        {
+          "part": "-ing",
+          "ko": "~하는"
+        }
+      ],
+      "story": "오류가 나도 길을 막아(block) 세우지 않는(non) → 막지 않는, 비차단의"
+    }
   },
   {
     "id": "non-unique",
@@ -873,7 +1094,26 @@
     "synonyms": [
       "ambiguous"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "non-",
+          "ko": "아닌"
+        },
+        {
+          "part": "unique",
+          "ko": "하나뿐인"
+        }
+      ],
+      "origin": "unique ← 라틴어 unicus (하나뿐인)",
+      "story": "하나뿐(unique)이 아니라(non) 같은 것이 여럿 걸리는 → 고유하지 않은",
+      "family": [
+        "unit",
+        "union",
+        "uniform"
+      ]
+    }
   },
   {
     "id": "none",
@@ -900,7 +1140,26 @@
       "no one",
       "nothing"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "n-",
+          "ko": "아니 (not)"
+        },
+        {
+          "part": "one",
+          "ko": "하나"
+        }
+      ],
+      "origin": "고대 영어 nān (ne 아니 + ān 하나)",
+      "story": "하나(one)도 아니다(n-) → 아무것도 ~ 않다, 하나도 ~ 않다",
+      "family": [
+        "neither",
+        "never",
+        "nothing"
+      ]
+    }
   },
   {
     "id": "nor",
@@ -922,7 +1181,16 @@
         "ko": "(부정문 뒤) ~도 또한 아니다"
       }
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "origin": "중세 영어 nother (neither) 의 줄임",
+      "story": "or(또는) 앞에 부정의 n이 얹힌 모양, 앞엣것도 아니고 뒤엣것도 아니다 → A도 B도 아니다",
+      "family": [
+        "neither",
+        "never",
+        "none"
+      ]
+    }
   },
   {
     "id": "normalize",
@@ -954,7 +1222,32 @@
       "standardize",
       "unify"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "norm",
+          "ko": "기준, 표준"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        },
+        {
+          "part": "-ize",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "origin": "라틴어 norma (목수의 직각자, 기준)",
+      "story": "제각각인 형식을 직각자(norm) 같은 기준에 맞게 만든다(-ize) → 표준 형태로 맞추다, 정규화하다",
+      "hook": "노멀라이즈 → '노멀'(정상·표준) 상태로 만든다 → 정규화하다",
+      "family": [
+        "norm",
+        "normal",
+        "abnormal",
+        "enormous"
+      ]
+    }
   },
   {
     "id": "notation",
@@ -1032,7 +1325,18 @@
       "remark",
       "memo"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "라틴어 nota (표시, 기호)",
+      "story": "눈여겨볼 곳에 표시(nota)를 해 둔다 → 주목하다, 언급하다 / 메모",
+      "hook": "노트 → 공책 '노트'에 적어 둘 만한 것 → 주목하다, 메모",
+      "family": [
+        "notable",
+        "notation",
+        "annotate",
+        "denote"
+      ]
+    }
   },
   {
     "id": "nothing",
@@ -1099,7 +1403,27 @@
       "observe",
       "detect"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "not",
+          "ko": "알다"
+        },
+        {
+          "part": "-ice",
+          "ko": "~함 (명사)"
+        }
+      ],
+      "origin": "라틴어 notitia (알려짐) ← noscere (알다)",
+      "story": "눈에 띄어 알게(not) 된다 → 알아차리다 / 모두가 알게 하는 글 → 공지, 통지",
+      "hook": "노티스 → 게시판 '공지(Notice)' → 공지, 알아차리다",
+      "family": [
+        "notify",
+        "notion",
+        "notorious"
+      ]
+    }
   },
   {
     "id": "noticeably",
@@ -1239,7 +1563,26 @@
         "ko": "어디에도 ~ 없다(않다)"
       }
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "no",
+          "ko": "없는"
+        },
+        {
+          "part": "where",
+          "ko": "어디, 곳"
+        }
+      ],
+      "story": "그런 곳(where)은 없다(no) → 어디에도 ~ 없다",
+      "family": [
+        "nobody",
+        "nothing",
+        "somewhere",
+        "anywhere"
+      ]
+    }
   },
   {
     "id": "null",
@@ -1270,7 +1613,16 @@
       "nullable",
       "nulls"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "라틴어 nullus (하나도 없는) ← ne + ullus",
+      "story": "어떤 것(ullus)도 없어(ne) 칸이 비어 있다 → 값이 없음, 널",
+      "hook": "널 → 텅 비어 '널널한' 자리 → 값이 없음",
+      "family": [
+        "nullify",
+        "annul"
+      ]
+    }
   },
   {
     "id": "number",
@@ -1335,6 +1687,26 @@
     "synonyms": [
       "numerical"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "numer",
+          "ko": "수"
+        },
+        {
+          "part": "-ic",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 numerus (수)",
+      "story": "글자가 아니라 수(numer)로 이루어진 → 숫자의, 수치로 된",
+      "family": [
+        "number",
+        "numeral",
+        "numerous",
+        "enumerate"
+      ]
+    }
   }
 ]

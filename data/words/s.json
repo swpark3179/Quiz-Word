@@ -52,7 +52,26 @@
     "synonyms": [
       "securely"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "safe",
+          "ko": "안전한"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 salvus (다치지 않은, 온전한)",
+      "story": "다친 데 없이 온전하게(safe), 탈 없이(ly) → 안전하게, 문제없이",
+      "family": [
+        "save",
+        "salvage",
+        "safeguard"
+      ]
+    }
   },
   {
     "id": "safety",
@@ -77,7 +96,27 @@
     "synonyms": [
       "security"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "safe",
+          "ko": "안전한"
+        },
+        {
+          "part": "-ty",
+          "ko": "~인 상태"
+        }
+      ],
+      "origin": "라틴어 salvus (다치지 않은, 온전한)",
+      "story": "다치지 않고 온전한(safe) 상태(ty), 그렇게 지켜 주는 것 → 안전, 안전장치",
+      "hook": "세이프티 → '세이프티 존'의 세이프티 → 안전",
+      "family": [
+        "save",
+        "salvage",
+        "safeguard"
+      ]
+    }
   },
   {
     "id": "salary",
@@ -102,7 +141,27 @@
       "pay",
       "wage"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "sal",
+          "ko": "소금"
+        },
+        {
+          "part": "-ary",
+          "ko": "~에 딸린 것"
+        }
+      ],
+      "origin": "라틴어 salarium (소금 살 돈, 병사 급료)",
+      "story": "로마 병사가 소금(sal) 살 돈으로 받던 급료 → 급여, 월급",
+      "hook": "샐러리 → '샐러리맨'은 월급 받는 사람 → 급여",
+      "family": [
+        "salt",
+        "salad",
+        "sauce"
+      ]
+    }
   },
   {
     "id": "same",
@@ -163,7 +222,17 @@
       "specimen",
       "example"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "고대 프랑스어 essample ← 라틴어 exemplum (본보기)",
+      "story": "전체에서 본보기(example)로 하나 꺼내 놓은 것 → 샘플, 견본, 표본",
+      "hook": "샘플 → 화장품 '샘플'의 그 샘플 → 견본",
+      "family": [
+        "example",
+        "exemplary",
+        "exemplify"
+      ]
+    }
   },
   {
     "id": "sampling",
@@ -185,7 +254,25 @@
         "ko": "표본 추출"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "sampl",
+          "ko": "견본 (sample)"
+        },
+        {
+          "part": "-ing",
+          "ko": "~하기"
+        }
+      ],
+      "story": "여럿 가운데 견본(sample)을 하나씩 뽑아내는 일(ing) → 샘플링, 표본 추출",
+      "family": [
+        "sampler",
+        "example",
+        "exemplify"
+      ]
+    }
   },
   {
     "id": "sandbox",
@@ -215,7 +302,20 @@
     "synonyms": [
       "isolate"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "sand",
+          "ko": "모래"
+        },
+        {
+          "part": "box",
+          "ko": "상자"
+        }
+      ],
+      "story": "아이가 밖을 어지르지 않고 노는 모래(sand) 상자(box) 놀이터 → 바깥과 격리된 안전한 실행 환경"
+    }
   },
   {
     "id": "sanitize",
@@ -300,7 +400,26 @@
       "meet",
       "fulfill"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "satis",
+          "ko": "충분히"
+        },
+        {
+          "part": "-fy",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "origin": "라틴어 satisfacere (충분하게 하다)",
+      "story": "조건이 바라는 만큼 충분히(satis) 채워 준다(fy) → 충족하다, 만족시키다",
+      "family": [
+        "saturate",
+        "satiate",
+        "asset"
+      ]
+    }
   },
   {
     "id": "saturation",
@@ -483,7 +602,17 @@
     "synonyms": [
       "extent"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "라틴어 scala (사다리, 계단)",
+      "story": "사다리(scala) 칸처럼 층층이 매긴 눈금, 그 칸을 타고 키운다 → 척도, 눈금, 규모",
+      "hook": "스케일 → '스케일이 크다'의 스케일 → 규모",
+      "family": [
+        "escalate",
+        "escalator",
+        "ascend"
+      ]
+    }
   },
   {
     "id": "scan",
@@ -520,7 +649,17 @@
       "inspect",
       "examine"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "origin": "라틴어 scandere (오르다, 운율을 짚어 가다)",
+      "story": "시의 운율을 한 음절씩 짚어 가듯(scandere) 차례로 훑는다 → 훑어 검사하다, 스캔하다",
+      "hook": "스캔 → 바코드 '스캔'하듯 쭉 훑는다 → 훑어 검사하다",
+      "family": [
+        "ascend",
+        "descend",
+        "scale"
+      ]
+    }
   },
   {
     "id": "scenario",
@@ -549,7 +688,26 @@
       "situation",
       "case"
     ],
-    "domain": "계획·목표·전략"
+    "domain": "계획·목표·전략",
+    "memory": {
+      "roots": [
+        {
+          "part": "scen",
+          "ko": "무대, 장면"
+        },
+        {
+          "part": "-ario",
+          "ko": "~에 딸린 것"
+        }
+      ],
+      "origin": "이탈리아어 scenario ← 라틴어 scaena (무대)",
+      "story": "무대(scen)에 올릴 장면을 차례로 적어 둔 것 → 각본, 가상의 상황(시나리오)",
+      "family": [
+        "scene",
+        "scenery",
+        "scenic"
+      ]
+    }
   },
   {
     "id": "schedule",
@@ -581,7 +739,12 @@
       "timetable",
       "plan"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "origin": "후기 라틴어 schedula (작은 종이쪽지)",
+      "story": "언제 무엇을 할지 적어 둔 종이쪽지(schedula) → 일정표, 일정을 잡다",
+      "hook": "스케줄 → '스케줄 있어?'의 스케줄 → 일정"
+    }
   },
   {
     "id": "schema",
@@ -606,7 +769,15 @@
       "schemas",
       "schemata"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "그리스어 skhēma (모양, 형태)",
+      "story": "데이터가 갖춰야 할 모양(schema)을 미리 그려 둔 틀 → 스키마, 구조·형식 정의",
+      "family": [
+        "scheme",
+        "schematic"
+      ]
+    }
   },
   {
     "id": "schema-valid",
@@ -627,7 +798,20 @@
     "synonyms": [
       "schema-compliant"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "schema",
+          "ko": "스키마"
+        },
+        {
+          "part": "valid",
+          "ko": "유효한"
+        }
+      ],
+      "story": "스키마(schema)에 비춰 보아 유효한(valid) → 스키마에 맞는, 스키마 검증을 통과하는"
+    }
   },
   {
     "id": "scheme",
@@ -700,7 +884,17 @@
       "range",
       "extent"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "이탈리아어 scopo (과녁) ← 그리스어 skopos (겨냥하는 곳)",
+      "story": "겨냥해(skopos) 눈길이 미치는 데까지 → 범위, 적용되는 범위",
+      "hook": "스코프 → 조준경 '스코프' 안에 들어오는 데까지 → 범위",
+      "family": [
+        "telescope",
+        "microscope",
+        "horoscope"
+      ]
+    }
   },
   {
     "id": "score",
@@ -732,7 +926,16 @@
       "rating",
       "grade"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "origin": "고대 노르드어 skor (새긴 금, 눈금)",
+      "story": "막대에 금(skor)을 하나씩 새겨 수를 세던 데서 → 점수, 점수를 매기다",
+      "hook": "스코어 → 경기 '스코어'의 그 스코어 → 점수",
+      "family": [
+        "scoreboard",
+        "underscore"
+      ]
+    }
   },
   {
     "id": "scrape",
@@ -786,7 +989,20 @@
     "forms": [
       "scratchpads"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "scratch",
+          "ko": "끄적이다, 긁다"
+        },
+        {
+          "part": "pad",
+          "ko": "메모장"
+        }
+      ],
+      "story": "생각나는 대로 끄적이는(scratch) 메모장(pad) → 작업 중 적어 두는 임시 기록, 스크래치패드"
+    }
   },
   {
     "id": "screen",
@@ -824,7 +1040,17 @@
     "synonyms": [
       "filter"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "origin": "고대 프랑스어 escren (가림막, 칸막이)",
+      "story": "가림막(screen)에 그림을 비추고, 또 막아 세워 걸러 낸다 → 화면, 선별 검사하다",
+      "hook": "스크린 → 영화관 '스크린'의 스크린 → 화면",
+      "family": [
+        "screenshot",
+        "touchscreen",
+        "sunscreen"
+      ]
+    }
   },
   {
     "id": "screenshot",
@@ -845,7 +1071,20 @@
     "forms": [
       "screenshots"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "screen",
+          "ko": "화면"
+        },
+        {
+          "part": "shot",
+          "ko": "찍은 것"
+        }
+      ],
+      "story": "지금 화면(screen)을 그대로 한 장 찍은(shot) 것 → 스크린샷, 화면 캡처"
+    }
   },
   {
     "id": "script",
@@ -877,7 +1116,17 @@
       "scripted",
       "scripting"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "라틴어 scriptum (쓴 것) ← scribere (쓰다)",
+      "story": "할 일과 할 말을 차례로 써(script) 둔 글 → 스크립트, 대본",
+      "family": [
+        "describe",
+        "subscribe",
+        "manuscript",
+        "prescription"
+      ]
+    }
   },
   {
     "id": "scrutiny",
@@ -939,7 +1188,11 @@
     "forms": [
       "sdks"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "Software Development Kit",
+      "story": "소프트웨어(Software) 개발(Development)에 쓰는 도구 묶음(Kit) → 소프트웨어 개발 키트"
+    }
   },
   {
     "id": "search",
@@ -1023,7 +1276,26 @@
       "minor",
       "lesser"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "second",
+          "ko": "둘째, 뒤따르는"
+        },
+        {
+          "part": "-ary",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 secundus (뒤따르는, 둘째의) ← sequi (따르다)",
+      "story": "첫째 뒤를 따르는(second) 둘째 자리의(ary) → 부차적인, 이차적인",
+      "family": [
+        "sequence",
+        "sequel",
+        "consequence"
+      ]
+    }
   },
   {
     "id": "secret",
@@ -1056,7 +1328,27 @@
     "synonyms": [
       "confidential"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "se-",
+          "ko": "따로"
+        },
+        {
+          "part": "cret",
+          "ko": "가르다"
+        }
+      ],
+      "origin": "라틴어 secretus (따로 갈라 둔)",
+      "story": "남의 눈에서 따로(se) 갈라(cret) 숨겨 둔 값 → 비밀 값, 비밀",
+      "hook": "시크릿 → 브라우저 '시크릿 모드'의 시크릿 → 비밀",
+      "family": [
+        "secretary",
+        "discreet",
+        "secrete"
+      ]
+    }
   },
   {
     "id": "section",
@@ -1090,7 +1382,27 @@
       "part",
       "segment"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "sect",
+          "ko": "자르다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 sectio (자르기) ← secare (자르다)",
+      "story": "긴 문서를 잘라(sect) 나눈 한 토막(ion) → 부분, 섹션, 항목",
+      "family": [
+        "sector",
+        "segment",
+        "insect",
+        "intersection"
+      ]
+    }
   },
   {
     "id": "sector",
@@ -1119,7 +1431,26 @@
       "field",
       "domain"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "sect",
+          "ko": "자르다"
+        },
+        {
+          "part": "-or",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 sector (자르는 것, 부채꼴)",
+      "story": "원을 부채꼴로 잘라(sect) 나눈 한 구역(or) → 분야, 부문",
+      "family": [
+        "section",
+        "segment",
+        "bisect"
+      ]
+    }
   },
   {
     "id": "security",
@@ -1145,7 +1476,31 @@
       "safety",
       "protection"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "se-",
+          "ko": "~없이"
+        },
+        {
+          "part": "cur",
+          "ko": "걱정, 돌봄"
+        },
+        {
+          "part": "-ity",
+          "ko": "~인 상태"
+        }
+      ],
+      "origin": "라틴어 securus (걱정 없는)",
+      "story": "걱정(cur) 없이(se) 지낼 수 있게 지켜진 상태(ity) → 보안",
+      "hook": "시큐리티 → 건물 지키는 '시큐리티' → 보안",
+      "family": [
+        "secure",
+        "cure",
+        "accurate"
+      ]
+    }
   },
   {
     "id": "see",
@@ -1257,7 +1612,26 @@
       "piece",
       "section"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "seg",
+          "ko": "자르다"
+        },
+        {
+          "part": "-ment",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 segmentum (잘라 낸 조각) ← secare (자르다)",
+      "story": "전체에서 잘라(seg) 낸 한 조각(ment) → 조각, 구간, 나누다",
+      "family": [
+        "section",
+        "sector",
+        "dissect"
+      ]
+    }
   },
   {
     "id": "select",
@@ -1288,7 +1662,26 @@
       "choose",
       "pick"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "se-",
+          "ko": "따로"
+        },
+        {
+          "part": "lect",
+          "ko": "고르다, 모으다"
+        }
+      ],
+      "origin": "라틴어 seligere (따로 골라내다)",
+      "story": "여럿 가운데 따로(se) 골라(lect) 뽑는다 → 고르다, 선택하다",
+      "family": [
+        "collect",
+        "elect",
+        "neglect"
+      ]
+    }
   },
   {
     "id": "selection",
@@ -1316,7 +1709,29 @@
     "synonyms": [
       "choice"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "se-",
+          "ko": "따로"
+        },
+        {
+          "part": "lect",
+          "ko": "고르다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 일"
+        }
+      ],
+      "story": "여럿 가운데 따로(se) 골라(lect) 뽑는 일(ion) → 선택, 고르기",
+      "family": [
+        "select",
+        "election",
+        "collection"
+      ]
+    }
   },
   {
     "id": "selective",
@@ -1344,7 +1759,29 @@
     "synonyms": [
       "choosy"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "se-",
+          "ko": "따로"
+        },
+        {
+          "part": "lect",
+          "ko": "고르다"
+        },
+        {
+          "part": "-ive",
+          "ko": "~하는 성질의"
+        }
+      ],
+      "story": "다 하지 않고 따로(se) 골라(lect) 일부만 하는(ive) → 선택적인, 골라서 하는",
+      "family": [
+        "select",
+        "elective",
+        "collective"
+      ]
+    }
   },
   {
     "id": "self-correct",
@@ -1408,7 +1845,20 @@
     "synonyms": [
       "on-premises"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "self",
+          "ko": "스스로"
+        },
+        {
+          "part": "hosted",
+          "ko": "호스팅되는"
+        }
+      ],
+      "story": "남의 클라우드에 맡기지 않고 스스로(self) 호스팅하는(hosted) → 자체 호스팅의"
+    }
   },
   {
     "id": "self-review",
@@ -1429,7 +1879,20 @@
     "forms": [
       "self-reviews"
     ],
-    "domain": "확인·검증"
+    "domain": "확인·검증",
+    "memory": {
+      "roots": [
+        {
+          "part": "self",
+          "ko": "스스로"
+        },
+        {
+          "part": "review",
+          "ko": "검토"
+        }
+      ],
+      "story": "만든 쪽이 자기 결과물을 스스로(self) 다시 본다(review) → 자기 검토"
+    }
   },
   {
     "id": "semantic",
@@ -1454,7 +1917,26 @@
     "forms": [
       "semantically"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "sema",
+          "ko": "표시, 기호"
+        },
+        {
+          "part": "-tic",
+          "ko": "~의"
+        }
+      ],
+      "origin": "그리스어 sēmantikos (뜻을 나타내는) ← sēma (표시)",
+      "story": "글자 겉모양이 아니라 그 표시(sema)가 가리키는 뜻에 관한(tic) → 의미의, 의미상의",
+      "family": [
+        "semantics",
+        "semaphore",
+        "semiotics"
+      ]
+    }
   },
   {
     "id": "semiconductor",
@@ -1568,7 +2050,27 @@
     "synonyms": [
       "experienced"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "sen",
+          "ko": "나이 든"
+        },
+        {
+          "part": "-ior",
+          "ko": "더 ~한"
+        }
+      ],
+      "origin": "라틴어 senior (더 나이 든) ← senex (늙은)",
+      "story": "더(ior) 나이 들어(sen) 그만큼 경험이 쌓인 → 선임의, 경력이 많은, 연장자",
+      "hook": "시니어 → '시니어 개발자'의 시니어 → 선임의",
+      "family": [
+        "senate",
+        "seniority",
+        "sir"
+      ]
+    }
   },
   {
     "id": "sensitive",
@@ -1596,7 +2098,27 @@
     "synonyms": [
       "confidential"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "sens",
+          "ko": "느끼다"
+        },
+        {
+          "part": "-itive",
+          "ko": "~하는 성질의"
+        }
+      ],
+      "origin": "중세 라틴어 sensitivus ← sentire (느끼다)",
+      "story": "살짝만 건드려도 크게 느끼는(sens) 성질의(itive), 그래서 조심히 다룰 → 민감한, 기밀의",
+      "family": [
+        "sense",
+        "sensor",
+        "sentiment",
+        "consent"
+      ]
+    }
   },
   {
     "id": "sentence",
@@ -1713,7 +2235,30 @@
       "divide",
       "isolate"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "se-",
+          "ko": "따로"
+        },
+        {
+          "part": "par",
+          "ko": "마련하다"
+        },
+        {
+          "part": "-ate",
+          "ko": "~하다, ~한"
+        }
+      ],
+      "origin": "라틴어 separare (따로 마련해 두다)",
+      "story": "한데 두지 않고 따로(se) 떼어 마련해(par) 둔 → 별개의, 분리하다",
+      "family": [
+        "prepare",
+        "several",
+        "sever"
+      ]
+    }
   },
   {
     "id": "sequence",
@@ -1748,7 +2293,27 @@
       "order",
       "series"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "sequ",
+          "ko": "뒤따르다"
+        },
+        {
+          "part": "-ence",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 sequentia ← sequi (뒤따르다)",
+      "story": "하나가 다른 하나를 뒤따르며(sequ) 줄줄이 이어지는 것(ence) → 순서, 차례, 연속",
+      "family": [
+        "sequel",
+        "consequence",
+        "subsequent",
+        "second"
+      ]
+    }
   },
   {
     "id": "sequential",
@@ -1773,7 +2338,30 @@
       "serial",
       "successive"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "sequ",
+          "ko": "뒤따르다"
+        },
+        {
+          "part": "-ent",
+          "ko": "~하는"
+        },
+        {
+          "part": "-ial",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 sequi (뒤따르다)",
+      "story": "앞의 것을 뒤따라(sequ) 하나씩 차례로 나아가는(ial) → 순차적인",
+      "family": [
+        "sequence",
+        "sequel",
+        "consecutive"
+      ]
+    }
   },
   {
     "id": "serialize",
@@ -1801,7 +2389,26 @@
       "serialization",
       "serializes"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "serial",
+          "ko": "한 줄로 이어진"
+        },
+        {
+          "part": "-ize",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "origin": "라틴어 series (줄, 이어진 것) ← serere (잇다)",
+      "story": "흩어진 것을 한 줄(serial)로 이어지게 만든다(ize) → 순서대로 하나씩 처리하다, 직렬화하다",
+      "family": [
+        "series",
+        "serial",
+        "insert"
+      ]
+    }
   },
   {
     "id": "serve",
@@ -1835,7 +2442,17 @@
     "synonyms": [
       "provide"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "origin": "라틴어 servire (섬기다, 시중들다) ← servus (종)",
+      "story": "시중들듯(servire) 상대가 바라는 것을 내어 준다 → 서비스를 제공하다, 내어 주다",
+      "hook": "서브 → 테니스 '서브'도 공을 먼저 내어 주는 것 → 내어 주다",
+      "family": [
+        "service",
+        "servant",
+        "deserve"
+      ]
+    }
   },
   {
     "id": "server",
@@ -1860,7 +2477,25 @@
     "forms": [
       "servers"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "serv",
+          "ko": "섬기다, 내어 주다"
+        },
+        {
+          "part": "-er",
+          "ko": "~하는 것·사람"
+        }
+      ],
+      "story": "요청이 오면 그때그때 내어 주는(serve) 쪽(er) → 서버, 종업원",
+      "family": [
+        "service",
+        "servant",
+        "serverless"
+      ]
+    }
   },
   {
     "id": "server-sent-events",
@@ -1885,7 +2520,24 @@
     "synonyms": [
       "SSE"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "server",
+          "ko": "서버"
+        },
+        {
+          "part": "sent",
+          "ko": "보낸"
+        },
+        {
+          "part": "events",
+          "ko": "이벤트들"
+        }
+      ],
+      "story": "서버(server)가 연결 하나로 차례로 흘려보낸(sent) 이벤트(events) → 서버 전송 이벤트"
+    }
   },
   {
     "id": "service",
@@ -1937,7 +2589,20 @@
     "forms": [
       "service accounts"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "service",
+          "ko": "서비스"
+        },
+        {
+          "part": "account",
+          "ko": "계정"
+        }
+      ],
+      "story": "사람이 아니라 서비스(service)·자동 작업이 쓰라고 만든 계정(account) → 서비스 계정"
+    }
   },
   {
     "id": "session",
@@ -1962,7 +2627,26 @@
     "forms": [
       "sessions"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "sess",
+          "ko": "앉다"
+        },
+        {
+          "part": "-ion",
+          "ko": "~하는 것"
+        }
+      ],
+      "origin": "라틴어 sessio (앉아 있기) ← sedere (앉다)",
+      "story": "자리에 앉아(sess) 일어설 때까지 이어지는 한 회기(ion) → 세션, 시작부터 끝까지 한 단위",
+      "family": [
+        "resident",
+        "preside",
+        "sedentary"
+      ]
+    }
   },
   {
     "id": "session-level",
@@ -1980,7 +2664,20 @@
         "ko": "세션 단위의, 세션 범위의"
       }
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "session",
+          "ko": "세션"
+        },
+        {
+          "part": "level",
+          "ko": "층, 단위"
+        }
+      ],
+      "story": "세션(session) 하나를 층(level)으로 삼아 그 안에서만 적용되는 → 세션 단위의, 세션 범위의"
+    }
   },
   {
     "id": "set",
@@ -2046,7 +2743,27 @@
       "configuration",
       "option"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "roots": [
+        {
+          "part": "set",
+          "ko": "놓다, 맞추다"
+        },
+        {
+          "part": "-ing",
+          "ko": "~한 것"
+        }
+      ],
+      "story": "값을 원하는 자리에 맞춰 놓은(set) 것(ing) → 설정, 설정값",
+      "hook": "세팅 → '세팅 끝났어'의 세팅 → 설정",
+      "family": [
+        "setup",
+        "reset",
+        "preset",
+        "offset"
+      ]
+    }
   },
   {
     "id": "settle",
@@ -2117,7 +2834,25 @@
       "configuration",
       "arrangement"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "set",
+          "ko": "놓다, 맞추다"
+        },
+        {
+          "part": "up",
+          "ko": "다 갖춰, 세워"
+        }
+      ],
+      "story": "바로 쓸 수 있게 다 갖춰(up) 놓는(set) 일, 그렇게 놓인 모양 → 초기 설정 작업, 구성",
+      "family": [
+        "reset",
+        "preset",
+        "setback"
+      ]
+    }
   },
   {
     "id": "several",
@@ -2292,7 +3027,15 @@
     "synonyms": [
       "partition"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "고대 영어 sceard (깨진 조각)",
+      "story": "깨진 그릇의 조각(shard)처럼 큰 데이터베이스를 쪼갠 조각 → 샤드, 나눈 조각",
+      "family": [
+        "shear",
+        "share"
+      ]
+    }
   },
   {
     "id": "share",
@@ -2351,7 +3094,16 @@
     "synonyms": [
       "terminal"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "고대 영어 sciell (껍데기)",
+      "story": "운영체제의 알맹이(kernel)를 감싸고 명령을 받아 주는 껍데기(shell) → 셸, 껍데기",
+      "family": [
+        "eggshell",
+        "seashell",
+        "shellfish"
+      ]
+    }
   },
   {
     "id": "shift",
@@ -2388,7 +3140,12 @@
       "change",
       "switch"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "origin": "고대 영어 sciftan (나누다, 배치하다)",
+      "story": "놓여 있던 자리를 조금씩 옆으로 옮겨 간다 → 옮기다, 바꾸다, 전환",
+      "hook": "시프트 → 키보드 'Shift' 키를 누르면 글자가 바뀐다 → 바꾸다"
+    }
   },
   {
     "id": "ship",
@@ -2480,7 +3237,20 @@
       "temporary",
       "brief"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "short",
+          "ko": "짧은"
+        },
+        {
+          "part": "lived",
+          "ko": "수명을 가진"
+        }
+      ],
+      "story": "살아 있는(lived) 동안이 짧은(short) → 수명이 짧은, 잠깐만 유지되는"
+    }
   },
   {
     "id": "shortage",
@@ -2553,7 +3323,25 @@
       "reduce",
       "abbreviate"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "short",
+          "ko": "짧은"
+        },
+        {
+          "part": "-en",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "story": "길던 것을 짧게(short) 만든다(en) → 짧게 줄이다, 단축하다",
+      "family": [
+        "shortage",
+        "shortcut",
+        "shortly"
+      ]
+    }
   },
   {
     "id": "show",
@@ -2621,7 +3409,20 @@
       "appear",
       "turn up"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "show",
+          "ko": "보이다"
+        },
+        {
+          "part": "up",
+          "ko": "위로, 드러나게"
+        }
+      ],
+      "story": "안 보이던 것이 위로(up) 올라와 모습을 보인다(show) → 나타나다, 보이다"
+    }
   },
   {
     "id": "shrink",
@@ -2685,7 +3486,11 @@
       "mix up",
       "randomize"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "story": "카드를 이리저리 밀어 넣어 차례를 뒤섞는다 → (순서를) 섞다",
+      "hook": "셔플 → 음악 앱 '셔플 재생'은 곡 순서를 섞는다 → 섞다"
+    }
   },
   {
     "id": "side",
@@ -2750,7 +3555,18 @@
       "signed",
       "signing"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "origin": "라틴어 signum (표시, 표지)",
+      "story": "내 것임을 알리는 표시(signum)를 남긴다 → 서명하다, 부호, 징후",
+      "hook": "사인 → 연예인 '사인'의 그 사인 → 서명하다",
+      "family": [
+        "signal",
+        "signature",
+        "design",
+        "assign"
+      ]
+    }
   },
   {
     "id": "sign-off",
@@ -2829,7 +3645,27 @@
       "indicate",
       "flag"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "sign",
+          "ko": "표시"
+        },
+        {
+          "part": "-al",
+          "ko": "~의, ~한 것"
+        }
+      ],
+      "origin": "라틴어 signalis (표시의) ← signum (표시)",
+      "story": "약속된 표시(sign)를 보내 상태를 알게 한다 → 알리다, 신호를 보내다, 신호",
+      "hook": "시그널 → '시그널을 보낸다'의 시그널 → 신호",
+      "family": [
+        "signature",
+        "signify",
+        "design"
+      ]
+    }
   },
   {
     "id": "signature",
@@ -2854,7 +3690,27 @@
     "forms": [
       "signatures"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "sign",
+          "ko": "표시"
+        },
+        {
+          "part": "-ature",
+          "ko": "~한 결과물"
+        }
+      ],
+      "origin": "라틴어 signare (표시하다, 도장을 찍다)",
+      "story": "틀림없이 내 것이라고 표시해(sign) 남긴 것(ature) → 서명, 시그니처",
+      "family": [
+        "signal",
+        "design",
+        "assign",
+        "resign"
+      ]
+    }
   },
   {
     "id": "significant",
@@ -2885,7 +3741,30 @@
       "considerable",
       "notable"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "sign",
+          "ko": "표시"
+        },
+        {
+          "part": "ific",
+          "ko": "만들다"
+        },
+        {
+          "part": "-ant",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 significare (표시를 만들다, 뜻하다)",
+      "story": "눈에 띄는 표시(sign)를 만들(ific) 만큼 뜻이 큰(ant) → 상당한, 중요한",
+      "family": [
+        "signify",
+        "signal",
+        "signature"
+      ]
+    }
   },
   {
     "id": "silently",
@@ -2913,7 +3792,25 @@
     "synonyms": [
       "quietly"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "roots": [
+        {
+          "part": "silent",
+          "ko": "소리 없는"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 silere (잠잠하다)",
+      "story": "아무 소리도 내지 않고 잠잠하게(silent) 넘어간다(ly) → 아무 알림 없이, 조용히",
+      "family": [
+        "silence",
+        "silencer"
+      ]
+    }
   },
   {
     "id": "similar",
@@ -2938,7 +3835,26 @@
       "alike",
       "comparable"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "simil",
+          "ko": "닮은"
+        },
+        {
+          "part": "-ar",
+          "ko": "~한"
+        }
+      ],
+      "origin": "라틴어 similis (닮은, 같은)",
+      "story": "서로 닮은(simil) 데가 있는(ar) → 비슷한, 유사한",
+      "family": [
+        "simulate",
+        "assimilate",
+        "resemble"
+      ]
+    }
   },
   {
     "id": "similarity",
@@ -2963,7 +3879,25 @@
     "synonyms": [
       "resemblance"
     ],
-    "domain": "비교·평가·판단"
+    "domain": "비교·평가·판단",
+    "memory": {
+      "roots": [
+        {
+          "part": "similar",
+          "ko": "비슷한"
+        },
+        {
+          "part": "-ity",
+          "ko": "성질, 정도"
+        }
+      ],
+      "story": "서로 닮은(similar) 정도(ity) → 유사성, 유사도",
+      "family": [
+        "simulate",
+        "assimilate",
+        "simile"
+      ]
+    }
   },
   {
     "id": "simple",
@@ -3025,7 +3959,26 @@
       "merely",
       "only"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "simpl",
+          "ko": "단순한 (simple)"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 simplex (한 겹의, 단순한)",
+      "story": "한 겹(simple)뿐이라 덧붙일 것 없이(-ly) → 단지, 그냥, 간단히",
+      "family": [
+        "simplify",
+        "simplicity",
+        "simplistic"
+      ]
+    }
   },
   {
     "id": "since",
@@ -3057,7 +4010,11 @@
       "because",
       "as"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "origin": "고대 영어 siththan (그 뒤에)",
+      "story": "그 일 뒤로(since) 쭉 이어지니 그것이 곧 까닭이 된다 → ~ 이후로, ~이므로"
+    }
   },
   {
     "id": "single",
@@ -3088,7 +4045,16 @@
       "individual",
       "one"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "라틴어 singulus (하나씩의, 낱개의)",
+      "story": "하나씩 따로 떼어 놓은 낱개(singulus) → 하나의, 단일의",
+      "hook": "싱글 → '싱글 침대', '싱글 앨범' → 하나의, 독신의",
+      "family": [
+        "singular",
+        "singleton"
+      ]
+    }
   },
   {
     "id": "single-pass",
@@ -3109,7 +4075,20 @@
     "synonyms": [
       "one-pass"
     ],
-    "domain": "실행·처리"
+    "domain": "실행·처리",
+    "memory": {
+      "roots": [
+        {
+          "part": "single",
+          "ko": "하나의"
+        },
+        {
+          "part": "pass",
+          "ko": "지나감, 훑기"
+        }
+      ],
+      "story": "데이터를 한(single) 번만 훑고 지나가(pass) 끝낸다 → 한 번의 처리로 끝나는"
+    }
   },
   {
     "id": "sit",
@@ -3177,7 +4156,16 @@
       "location",
       "spot"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "라틴어 situs (놓인 자리, 위치)",
+      "story": "무언가가 놓여 있는 자리(situs) → 위치, 지점, 현장",
+      "hook": "사이트 → 웹사이트는 인터넷 위의 '자리' → 위치, 웹사이트",
+      "family": [
+        "situate",
+        "situation"
+      ]
+    }
   },
   {
     "id": "situation",
@@ -3202,7 +4190,25 @@
       "circumstance",
       "case"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "situ",
+          "ko": "자리, 위치"
+        },
+        {
+          "part": "-ation",
+          "ko": "~한 상태"
+        }
+      ],
+      "origin": "라틴어 situare (자리에 놓다) ← situs (위치)",
+      "story": "지금 내가 놓인(situ) 자리의 형편(-ation) → 상황, 처지",
+      "family": [
+        "site",
+        "situate"
+      ]
+    }
   },
   {
     "id": "sixth",
@@ -3286,7 +4292,12 @@
       "ability",
       "expertise"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "고대 노르드어 skil (분별, 구별)",
+      "story": "가려 낼 줄 아는 분별(skil)이 곧 솜씨 → 기술, 숙련 / 불러 쓰는 작업 지침 스킬",
+      "hook": "스킬 → 게임 캐릭터가 필요할 때 꺼내 쓰는 '스킬' → 스킬, 기술"
+    }
   },
   {
     "id": "skip",
@@ -3318,7 +4329,11 @@
       "bypass",
       "miss"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "story": "줄넘기하듯 폴짝 뛰어 한 칸을 넘어간다 → 건너뛰다, 빠뜨리다",
+      "hook": "스킵 → 광고 '스킵' 버튼 → 건너뛰다"
+    }
   },
   {
     "id": "sla",
@@ -3339,7 +4354,11 @@
     "forms": [
       "slas"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "origin": "Service Level Agreement",
+      "story": "서비스(Service)를 어느 수준(Level)까지 지키겠다는 약속(Agreement) → 서비스 수준 협약"
+    }
   },
   {
     "id": "slash",
@@ -3365,7 +4384,11 @@
       "slash command",
       "slashes"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "story": "칼로 비스듬히 휙 베어(slash) 그은 자국 모양의 기호 → 슬래시(/)",
+      "hook": "슬래시 → 키보드의 '/' 키 → 슬래시"
+    }
   },
   {
     "id": "slightly",
@@ -3437,7 +4460,11 @@
       "trim",
       "cut down"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "story": "군살을 빼 날씬하게 만들듯 군더더기를 덜어 낸다 → 분량을 줄여 가볍게 하다, 날씬한",
+      "hook": "슬림 → '슬림핏'처럼 날씬하게 → 줄여 가볍게 하다, 날씬한"
+    }
   },
   {
     "id": "slip",
@@ -3579,7 +4606,12 @@
       "fluent",
       "seamless"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "origin": "고대 영어 smōth (매끄러운)",
+      "story": "손으로 쓸어도 걸리는 데 없이 술술 넘어가는 → 매끄러운, 순조로운",
+      "hook": "스무드 → 음료 '스무디'처럼 부드럽게 넘어가는 → 매끄러운"
+    }
   },
   {
     "id": "snapshot",
@@ -3604,7 +4636,20 @@
     "forms": [
       "snapshots"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "roots": [
+        {
+          "part": "snap",
+          "ko": "찰칵, 재빨리"
+        },
+        {
+          "part": "shot",
+          "ko": "쏘기, 촬영"
+        }
+      ],
+      "story": "찰칵(snap) 찍은(shot) 사진 한 장처럼 그 순간을 그대로 고정 → 스냅숏, 그 시점의 사본"
+    }
   },
   {
     "id": "snippet",
@@ -3629,7 +4674,20 @@
       "excerpt",
       "fragment"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "snip",
+          "ko": "싹둑 자르다"
+        },
+        {
+          "part": "-et",
+          "ko": "작은 것"
+        }
+      ],
+      "story": "가위로 싹둑(snip) 잘라 낸 작은(-et) 조각 → 짧은 조각, 발췌"
+    }
   },
   {
     "id": "so-far",
@@ -3689,7 +4747,10 @@
     "synonyms": [
       "in order that"
     ],
-    "domain": "논리·관계·연결어"
+    "domain": "논리·관계·연결어",
+    "memory": {
+      "story": "그렇게(so) 해서 그 결과 저 일(that)이 이루어지게 → ~하도록, ~하기 위해"
+    }
   },
   {
     "id": "software",
@@ -3710,7 +4771,25 @@
     "synonyms": [
       "program"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "soft",
+          "ko": "부드러운, 무형의"
+        },
+        {
+          "part": "ware",
+          "ko": "물건, 제품"
+        }
+      ],
+      "story": "손에 잡히는 하드웨어와 달리 형체 없이 부드러운(soft) 제품(ware) → 소프트웨어",
+      "family": [
+        "hardware",
+        "firmware",
+        "middleware"
+      ]
+    }
   },
   {
     "id": "someone",
@@ -3861,7 +4940,16 @@
       "arrange",
       "categorize"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "라틴어 sors (제비, 몫) → 고대 프랑스어 sorte (종류)",
+      "story": "제비(sors)를 뽑아 몫대로 무리를 가른다 → 분류하다, 정렬하다 / 종류",
+      "family": [
+        "assort",
+        "consort",
+        "assortment"
+      ]
+    }
   },
   {
     "id": "sound",
@@ -3931,7 +5019,17 @@
       "origin",
       "reference"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "고대 프랑스어 sourse (샘) ← 라틴어 surgere (솟다)",
+      "story": "물이 솟아나는(surgere) 샘처럼 정보가 처음 나오는 곳 → 출처, 원본",
+      "hook": "소스 → '뉴스 소스', '소스 코드' → 출처, 원본",
+      "family": [
+        "surge",
+        "resource",
+        "insurgent"
+      ]
+    }
   },
   {
     "id": "source-of-truth",
@@ -3952,7 +5050,20 @@
     "forms": [
       "single source of truth"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "source",
+          "ko": "샘, 출처"
+        },
+        {
+          "part": "truth",
+          "ko": "진실, 정답"
+        }
+      ],
+      "story": "정답(truth)이 솟는 단 하나의 샘(source), 사본은 모두 여기서 길어 온다 → 기준 원본"
+    }
   },
   {
     "id": "space",
@@ -4017,7 +5128,11 @@
       "cover",
       "extend"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "고대 영어 spann (한 뼘)",
+      "story": "손을 쫙 펴 한 뼘(spann)으로 이 끝에서 저 끝까지 잰다 → 걸치다, 아우르다 / 구간"
+    }
   },
   {
     "id": "spare",
@@ -4049,7 +5164,12 @@
       "extra",
       "surplus"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "고대 영어 sparian (아끼다, 남겨 두다)",
+      "story": "쓰지 않고 아껴 둔 것이 남는다 → 여분의, 남는 / 아끼다, 내주다",
+      "hook": "스페어 → '스페어 타이어'는 여분으로 둔 타이어 → 여분의"
+    }
   },
   {
     "id": "spawn",
@@ -4081,7 +5201,17 @@
       "create",
       "start"
     ],
-    "domain": "생성·추가"
+    "domain": "생성·추가",
+    "memory": {
+      "origin": "고대 프랑스어 espandre ← 라틴어 expandere (펼치다)",
+      "story": "물고기가 알을 쏟아 퍼뜨리듯(expandere) 새 프로세스를 낳는다 → 새로 띄우다, 생성하다",
+      "hook": "스폰 → 게임에서 몬스터가 '스폰'된다 → 새로 생성하다",
+      "family": [
+        "expand",
+        "expansion",
+        "expanse"
+      ]
+    }
   },
   {
     "id": "speak",
@@ -4140,7 +5270,26 @@
     "synonyms": [
       "expert"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "special",
+          "ko": "특별한, 특정 종류의"
+        },
+        {
+          "part": "-ist",
+          "ko": "~하는 사람"
+        }
+      ],
+      "story": "특정한(special) 한 분야만 깊이 파는 사람(-ist) → 전문가, 전문 담당",
+      "hook": "스페셜리스트 → 두루 하는 '제너럴리스트'의 반대 → 전문가",
+      "family": [
+        "special",
+        "specialty",
+        "species"
+      ]
+    }
   },
   {
     "id": "specialize",
@@ -4172,7 +5321,25 @@
     "synonyms": [
       "focus"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "special",
+          "ko": "특별한, 특정 종류의"
+        },
+        {
+          "part": "-ize",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "story": "특정한(special) 일 하나에만 맞게 만든다(-ize) → 특화하다, 전문화하다",
+      "family": [
+        "special",
+        "specialty",
+        "especially"
+      ]
+    }
   },
   {
     "id": "specific",
@@ -4207,7 +5374,26 @@
       "precise",
       "concrete"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "speci",
+          "ko": "종류, 모양"
+        },
+        {
+          "part": "-fic",
+          "ko": "만드는"
+        }
+      ],
+      "origin": "라틴어 specificus (종류를 이루는)",
+      "story": "어느 종류(speci)인지 딱 집어 만들어(fic) 놓은 → 구체적인, 특정한",
+      "family": [
+        "species",
+        "specify",
+        "special"
+      ]
+    }
   },
   {
     "id": "specification",
@@ -4238,7 +5424,30 @@
       "spec",
       "requirements"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "speci",
+          "ko": "종류, 모양"
+        },
+        {
+          "part": "-fic",
+          "ko": "만들다"
+        },
+        {
+          "part": "-ation",
+          "ko": "~한 것"
+        }
+      ],
+      "story": "어떤 종류(speci)로 만들지(fic) 낱낱이 적어 둔 것(-ation) → 명세(서), 사양",
+      "hook": "스펙 → 제품 '스펙'을 적어 둔 문서 → 사양, 명세",
+      "family": [
+        "specify",
+        "specific",
+        "species"
+      ]
+    }
   },
   {
     "id": "specify",
@@ -4265,7 +5474,26 @@
       "state",
       "designate"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "speci",
+          "ko": "종류, 모양"
+        },
+        {
+          "part": "-fy",
+          "ko": "만들다"
+        }
+      ],
+      "origin": "라틴어 specificare (종류를 정하다)",
+      "story": "어느 종류(speci)인지 분명하게 만든다(-fy) → 명시하다, 지정하다",
+      "family": [
+        "specific",
+        "species",
+        "special"
+      ]
+    }
   },
   {
     "id": "speculative",
@@ -4291,7 +5519,26 @@
       "conjectural",
       "tentative"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "specul",
+          "ko": "살펴보다, 망보다"
+        },
+        {
+          "part": "-ative",
+          "ko": "~하는 성질의"
+        }
+      ],
+      "origin": "라틴어 speculari (망보다, 살피다)",
+      "story": "망루에서 멀리 내다보며(specul) 짐작만 하는(-ative) → 추측에 근거한, 확실하지 않은",
+      "family": [
+        "speculate",
+        "spectator",
+        "inspect"
+      ]
+    }
   },
   {
     "id": "speed",
@@ -4428,7 +5675,10 @@
       "surge",
       "jump"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "story": "그래프가 대못(spike)처럼 뾰족하게 솟는다 → 급증, 급등 / 급증하다"
+    }
   },
   {
     "id": "spin-up",
@@ -4502,7 +5752,11 @@
       "separate",
       "break up"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "origin": "중세 네덜란드어 splitten (쪼개다)",
+      "story": "통나무를 도끼로 쩍 갈라 둘로 만든다 → 나누다, 쪼개다 / 분할"
+    }
   },
   {
     "id": "spread",
@@ -4537,7 +5791,12 @@
       "distribute",
       "disperse"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "origin": "고대 영어 sprǣdan (펼치다, 늘이다)",
+      "story": "한곳에 뭉친 것을 넓게 펴서 고루 나눈다 → 퍼지다, 펼치다, 분산하다",
+      "hook": "스프레드 → 빵에 펴 바르는 '스프레드' → 펼치다"
+    }
   },
   {
     "id": "stabilize",
@@ -4564,7 +5823,26 @@
       "steady",
       "settle"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "stabil",
+          "ko": "굳게 선, 안정된"
+        },
+        {
+          "part": "-ize",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "origin": "라틴어 stabilis (굳게 서 있는)",
+      "story": "흔들리지 않고 굳게 서(stabil) 있게 만든다(-ize) → 안정시키다, 안정되다",
+      "family": [
+        "stable",
+        "stability",
+        "establish"
+      ]
+    }
   },
   {
     "id": "stable",
@@ -4594,7 +5872,27 @@
       "consistent",
       "fixed"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "sta",
+          "ko": "서다"
+        },
+        {
+          "part": "-ble",
+          "ko": "~할 수 있는"
+        }
+      ],
+      "origin": "라틴어 stabilis (굳게 서 있는)",
+      "story": "넘어지지 않고 서(sta) 있을 수 있는(-ble) → 안정된, 일정한",
+      "hook": "스테이블 → '스테이블 코인'은 값이 안정된 코인 → 안정된",
+      "family": [
+        "stability",
+        "establish",
+        "status"
+      ]
+    }
   },
   {
     "id": "staff",
@@ -4626,7 +5924,12 @@
       "personnel",
       "employees"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "origin": "고대 영어 stæf (지팡이, 막대)",
+      "story": "지휘관이 짚는 지팡이(stæf)처럼 조직을 받치는 사람들 → 직원, 담당자 / 배치하다",
+      "hook": "스태프 → 방송·영화 '스태프' → 직원, 담당자"
+    }
   },
   {
     "id": "stage",
@@ -4667,7 +5970,17 @@
       "phase",
       "step"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "origin": "고대 프랑스어 estage (층, 서는 곳) ← 라틴어 stare",
+      "story": "한 층(estage)씩 올라서며 나아간다 → 단계 / 커밋 전에 무대에 올려 둔다 → 스테이징하다",
+      "hook": "스테이지 → 게임 '스테이지 1, 2…' → 단계",
+      "family": [
+        "station",
+        "status",
+        "stance"
+      ]
+    }
   },
   {
     "id": "stakeholder",
@@ -4771,7 +6084,15 @@
       "halt",
       "stop"
     ],
-    "domain": "오류·실패·위험"
+    "domain": "오류·실패·위험",
+    "memory": {
+      "origin": "고대 영어 steall (서 있는 자리, 외양간)",
+      "story": "외양간 칸(stall)에 들어가 꼼짝 않고 서 있는 말처럼 → 멈춤, 지연 / 멎다",
+      "family": [
+        "install",
+        "forestall"
+      ]
+    }
   },
   {
     "id": "standalone",
@@ -4801,7 +6122,20 @@
       "independent",
       "self-contained"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "stand",
+          "ko": "서다"
+        },
+        {
+          "part": "alone",
+          "ko": "홀로"
+        }
+      ],
+      "story": "남에게 기대지 않고 홀로(alone) 선다(stand) → 단독의, 단독으로"
+    }
   },
   {
     "id": "standard",
@@ -4832,7 +6166,12 @@
       "typical",
       "norm"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "origin": "고대 프랑스어 estandart (집결용 군기)",
+      "story": "군대가 모이는 기준점이 되던 깃발(estandart) → 기준, 표준 / 표준의",
+      "hook": "스탠다드 → '스탠다드 사이즈'는 기본 규격 → 표준의"
+    }
   },
   {
     "id": "standardize",
@@ -4860,7 +6199,20 @@
       "unify",
       "normalize"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "roots": [
+        {
+          "part": "standard",
+          "ko": "표준, 기준"
+        },
+        {
+          "part": "-ize",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "story": "제각각이던 것을 한 기준(standard)에 맞게 만든다(-ize) → 표준화하다, 하나로 통일하다"
+    }
   },
   {
     "id": "standing",
@@ -4973,7 +6325,20 @@
     "synonyms": [
       "launch"
     ],
-    "domain": "시작·종료"
+    "domain": "시작·종료",
+    "memory": {
+      "roots": [
+        {
+          "part": "start",
+          "ko": "시작하다"
+        },
+        {
+          "part": "up",
+          "ko": "위로, 일으켜"
+        }
+      ],
+      "story": "시작해(start) 일으켜 세우는(up) 순간, 또는 막 일어선 회사 → 시작 시점, 스타트업"
+    }
   },
   {
     "id": "state",
@@ -5010,7 +6375,17 @@
       "declare",
       "condition"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "origin": "라틴어 status (서 있는 모양, 상태)",
+      "story": "일이 어떻게 서 있는지(status) 그 모양을 분명히 말한다 → 밝히다, 명시하다 / 상태",
+      "family": [
+        "status",
+        "statement",
+        "station",
+        "estate"
+      ]
+    }
   },
   {
     "id": "stateless",
@@ -5031,7 +6406,25 @@
     "forms": [
       "stateful"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "state",
+          "ko": "상태"
+        },
+        {
+          "part": "-less",
+          "ko": "~이 없는"
+        }
+      ],
+      "story": "앞 요청의 상태(state)를 들고 있지 않은(-less) → 무상태의",
+      "family": [
+        "stateful",
+        "statement",
+        "status"
+      ]
+    }
   },
   {
     "id": "statement",
@@ -5064,7 +6457,25 @@
       "declaration",
       "claim"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "state",
+          "ko": "밝히다, 말하다"
+        },
+        {
+          "part": "-ment",
+          "ko": "~한 것"
+        }
+      ],
+      "story": "할 일을 분명히 밝혀(state) 적은 한 줄(-ment) → (코드의) 문, 진술",
+      "family": [
+        "restate",
+        "understatement",
+        "status"
+      ]
+    }
   },
   {
     "id": "static",
@@ -5089,7 +6500,26 @@
       "fixed",
       "unchanging"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "stat",
+          "ko": "서다, 멈추다"
+        },
+        {
+          "part": "-ic",
+          "ko": "~한"
+        }
+      ],
+      "origin": "그리스어 statikos (멈춰 서게 하는)",
+      "story": "제자리에 서서(stat) 움직이지 않는(-ic) → 정적인, 고정된",
+      "family": [
+        "thermostat",
+        "ecstatic",
+        "electrostatic"
+      ]
+    }
   },
   {
     "id": "statistic",
@@ -5115,7 +6545,16 @@
     "synonyms": [
       "figure"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "독일어 Statistik ← 라틴어 status (국가, 상태)",
+      "story": "나라(state)의 형편을 숫자로 헤아리던 데서 → 통계 수치, 통계 자료",
+      "family": [
+        "state",
+        "status",
+        "statistician"
+      ]
+    }
   },
   {
     "id": "status",
@@ -5144,7 +6583,16 @@
       "state",
       "condition"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "origin": "라틴어 status (서 있는 모양) ← stare (서다)",
+      "story": "지금 어떤 모양으로 서 있는가(status) → 상태, 현황 / 사회에서 선 자리 → 지위",
+      "family": [
+        "state",
+        "statue",
+        "stature"
+      ]
+    }
   },
   {
     "id": "stay",
@@ -5198,7 +6646,11 @@
         "ko": "표준 오류 (오류 메시지 출력 통로)"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "standard error",
+      "story": "오류(error) 메시지를 따로 내보내는 표준(standard) 통로 → 표준 오류"
+    }
   },
   {
     "id": "stdin",
@@ -5216,7 +6668,11 @@
         "ko": "표준 입력 (기본 입력 통로)"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "standard input",
+      "story": "프로그램이 입력(input)을 받아들이는 표준(standard) 통로 → 표준 입력"
+    }
   },
   {
     "id": "stdio",
@@ -5234,7 +6690,11 @@
         "ko": "표준 입출력 (stdin·stdout 통신 방식)"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "standard input/output",
+      "story": "표준(standard) 입력(input)과 출력(output)을 한데 묶어 부르는 말 → 표준 입출력"
+    }
   },
   {
     "id": "stdout",
@@ -5252,7 +6712,11 @@
         "ko": "표준 출력 (기본 결과 출력 통로)"
       }
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "origin": "standard output",
+      "story": "프로그램이 결과를 내보내는(output) 표준(standard) 통로 → 표준 출력"
+    }
   },
   {
     "id": "steer",
@@ -5279,7 +6743,16 @@
       "guide",
       "direct"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "고대 영어 stīeran (배의 키를 잡다)",
+      "story": "배의 키를 잡고 가려는 쪽으로 뱃머리를 돌린다 → 이끌다, 조종하다",
+      "hook": "스티어 → 자동차 핸들 '스티어링 휠' → 조종하다",
+      "family": [
+        "starboard",
+        "stern"
+      ]
+    }
   },
   {
     "id": "step",
@@ -5492,7 +6965,17 @@
       "save",
       "keep"
     ],
-    "domain": "저장·기록"
+    "domain": "저장·기록",
+    "memory": {
+      "origin": "고대 프랑스어 estorer ← 라틴어 instaurare (갖추다)",
+      "story": "나중에 쓰려고 창고에 갖추어(instaurare) 쌓아 둔다 → 저장하다, 보관하다 / 저장소",
+      "hook": "스토어 → 물건을 쌓아 두고 파는 '스토어' → 보관하다, 저장소",
+      "family": [
+        "storage",
+        "restore",
+        "restaurant"
+      ]
+    }
   },
   {
     "id": "straight",
@@ -5527,7 +7010,16 @@
       "directly",
       "right away"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "origin": "중세 영어 streght (stretch 의 과거분사, 팽팽히 편)",
+      "story": "줄을 팽팽히 당겨 편(stretch) 모양 그대로 → 곧은, 똑바른 / 곧바로",
+      "hook": "스트레이트 → 권투 '스트레이트'는 곧게 뻗는 주먹 → 곧은, 곧바로",
+      "family": [
+        "stretch",
+        "straighten"
+      ]
+    }
   },
   {
     "id": "straightforward",
@@ -5557,7 +7049,20 @@
       "easy",
       "uncomplicated"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "straight",
+          "ko": "곧은, 곧장"
+        },
+        {
+          "part": "forward",
+          "ko": "앞으로"
+        }
+      ],
+      "story": "돌아가지 않고 곧장(straight) 앞으로(forward) 가면 되는 → 간단한, 복잡하지 않은"
+    }
   },
   {
     "id": "strategy",
@@ -5583,7 +7088,26 @@
       "plan",
       "approach"
     ],
-    "domain": "계획·목표·전략"
+    "domain": "계획·목표·전략",
+    "memory": {
+      "roots": [
+        {
+          "part": "strat",
+          "ko": "군대"
+        },
+        {
+          "part": "eg",
+          "ko": "이끌다"
+        }
+      ],
+      "origin": "그리스어 stratēgia (장군의 지휘)",
+      "story": "군대(strat)를 이끄는(eg) 장군이 그리는 큰 그림 → 전략, 방식",
+      "family": [
+        "strategic",
+        "strategist",
+        "stratagem"
+      ]
+    }
   },
   {
     "id": "stratum",
@@ -5671,7 +7195,12 @@
       "streamable",
       "streams"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "고대 영어 strēam (흐름, 물줄기)",
+      "story": "시냇물이 끊기지 않고 흘러오듯 만들어지는 대로 조금씩 보낸다 → 스트리밍하다 / 흐름",
+      "hook": "스트림 → 영상 '스트리밍'은 받는 대로 바로 흘려 보내기 → 스트리밍하다"
+    }
   },
   {
     "id": "strength",
@@ -5704,7 +7233,24 @@
       "power",
       "force"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "streng",
+          "ko": "강한 (strong)"
+        },
+        {
+          "part": "-th",
+          "ko": "~한 정도"
+        }
+      ],
+      "story": "얼마나 강한지(strong) 그 정도(-th) → 강도, 세기, 힘 / 강한 점 → 강점",
+      "family": [
+        "strong",
+        "strengthen"
+      ]
+    }
   },
   {
     "id": "strengthen",
@@ -5783,7 +7329,17 @@
       "stringent",
       "rigid"
     ],
-    "domain": "제어·제한·관리"
+    "domain": "제어·제한·관리",
+    "memory": {
+      "origin": "라틴어 strictus (팽팽히 조인) ← stringere (조이다)",
+      "story": "끈을 꽉 조여(strictus) 조금도 느슨한 데가 없는 → 엄격한",
+      "family": [
+        "restrict",
+        "district",
+        "constrict",
+        "stringent"
+      ]
+    }
   },
   {
     "id": "string",
@@ -5808,7 +7364,12 @@
     "forms": [
       "strings"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "origin": "고대 영어 streng (줄, 끈)",
+      "story": "구슬을 끈(string)에 꿰듯 글자를 한 줄로 이은 것 → 문자열 / 끈, 줄",
+      "hook": "스트링 → 기타 줄 '스트링'처럼 글자를 줄줄이 → 문자열, 줄"
+    }
   },
   {
     "id": "strip",
@@ -5844,7 +7405,11 @@
       "delete",
       "peel off"
     ],
-    "domain": "삭제·제거"
+    "domain": "삭제·제거",
+    "memory": {
+      "origin": "고대 영어 strīepan (벗기다, 빼앗다)",
+      "story": "껍질을 벗기듯 필요 없는 겉을 걷어 낸다 → 벗겨 내다, 제거하다"
+    }
   },
   {
     "id": "strong",
@@ -5921,7 +7486,26 @@
     "synonyms": [
       "framework"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "struct",
+          "ko": "쌓다, 짓다"
+        },
+        {
+          "part": "-ure",
+          "ko": "~한 것"
+        }
+      ],
+      "origin": "라틴어 structura ← struere (쌓다, 짓다)",
+      "story": "벽돌을 차곡차곡 쌓아(struct) 올린 짜임(-ure) → 구조 / 구조화하다",
+      "family": [
+        "construct",
+        "instruct",
+        "infrastructure"
+      ]
+    }
   },
   {
     "id": "study",
@@ -6007,7 +7591,20 @@
       "sub-agents",
       "subagents"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "아래"
+        },
+        {
+          "part": "agent",
+          "ko": "대신 일하는 자"
+        }
+      ],
+      "story": "상위 에이전트 아래(sub)에서 일을 받아 하는 에이전트(agent) → 서브에이전트"
+    }
   },
   {
     "id": "subfolder",
@@ -6031,7 +7628,20 @@
     "synonyms": [
       "subdirectory"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "아래"
+        },
+        {
+          "part": "folder",
+          "ko": "폴더"
+        }
+      ],
+      "story": "폴더(folder) 아래(sub)에 들어 있는 폴더 → 하위 폴더"
+    }
   },
   {
     "id": "subject",
@@ -6066,7 +7676,27 @@
       "topic",
       "theme"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "아래"
+        },
+        {
+          "part": "ject",
+          "ko": "던지다"
+        }
+      ],
+      "origin": "라틴어 subjectus (아래에 놓인)",
+      "story": "이야기 밑(sub)에 던져(ject) 깔아 둔 바탕, 곧 다뤄지는 그것 → 주제, 대상, (토큰의) 주체",
+      "family": [
+        "object",
+        "project",
+        "reject",
+        "inject"
+      ]
+    }
   },
   {
     "id": "subjective",
@@ -6155,7 +7785,27 @@
       "send in",
       "turn in"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "아래"
+        },
+        {
+          "part": "mit",
+          "ko": "보내다"
+        }
+      ],
+      "origin": "라틴어 submittere (아래로 보내다)",
+      "story": "받아 줄 쪽의 손 아래(sub)로 보낸다(mit) → 제출하다, 넣다",
+      "family": [
+        "transmit",
+        "permit",
+        "admit",
+        "mission"
+      ]
+    }
   },
   {
     "id": "subsequent",
@@ -6230,7 +7880,20 @@
       "portion",
       "part"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "아래"
+        },
+        {
+          "part": "set",
+          "ko": "집합"
+        }
+      ],
+      "story": "큰 집합(set) 아래(sub)에 들어가는 작은 집합 → 부분집합, 일부"
+    }
   },
   {
     "id": "substantially",
@@ -6256,7 +7919,34 @@
       "considerably",
       "greatly"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "아래"
+        },
+        {
+          "part": "stant",
+          "ko": "서다"
+        },
+        {
+          "part": "-ial",
+          "ko": "~의"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "origin": "라틴어 substantia (아래에 서 있는 것, 실체)",
+      "story": "겉 아래(sub)에 버티고 선(stant) 실체가 있을 만큼 두둑하게(-ly) → 상당히, 크게",
+      "family": [
+        "substance",
+        "constant",
+        "instant"
+      ]
+    }
   },
   {
     "id": "substitution",
@@ -6333,7 +8023,20 @@
     "forms": [
       "substrings"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "아래, 일부"
+        },
+        {
+          "part": "string",
+          "ko": "문자열"
+        }
+      ],
+      "story": "문자열(string) 안에 들어 있는 그 일부(sub) → 부분 문자열"
+    }
   },
   {
     "id": "subsystem",
@@ -6358,7 +8061,20 @@
       "component",
       "module"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "아래"
+        },
+        {
+          "part": "system",
+          "ko": "시스템"
+        }
+      ],
+      "story": "큰 시스템(system) 아래(sub)에서 한 기능을 맡은 작은 시스템 → 하위 시스템"
+    }
   },
   {
     "id": "subtask",
@@ -6379,7 +8095,20 @@
     "forms": [
       "subtasks"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "아래"
+        },
+        {
+          "part": "task",
+          "ko": "작업"
+        }
+      ],
+      "story": "큰 작업(task) 아래(sub)로 쪼개 놓은 작은 작업 → 하위 작업"
+    }
   },
   {
     "id": "subtle",
@@ -6435,7 +8164,20 @@
     "forms": [
       "subtopics"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "아래"
+        },
+        {
+          "part": "topic",
+          "ko": "주제"
+        }
+      ],
+      "story": "큰 주제(topic) 아래(sub)에 딸린 작은 주제 → 하위 주제, 세부 주제"
+    }
   },
   {
     "id": "subtype",
@@ -6459,7 +8201,20 @@
     "synonyms": [
       "subcategory"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "sub-",
+          "ko": "아래"
+        },
+        {
+          "part": "type",
+          "ko": "유형"
+        }
+      ],
+      "story": "한 유형(type) 아래(sub)로 다시 나눈 유형 → 하위 유형, 하위 타입"
+    }
   },
   {
     "id": "succeed",
@@ -6490,7 +8245,27 @@
       "work",
       "achieve"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "suc-",
+          "ko": "아래, 바로 뒤"
+        },
+        {
+          "part": "ceed",
+          "ko": "가다"
+        }
+      ],
+      "origin": "라틴어 succedere (뒤따라 가다, 잘되어 가다)",
+      "story": "앞사람 바로 뒤(suc)를 따라가(ceed) 자리를 잇고 뜻을 이룬다 → 성공하다, (뒤를) 잇다",
+      "family": [
+        "proceed",
+        "exceed",
+        "success",
+        "successor"
+      ]
+    }
   },
   {
     "id": "success",
@@ -6540,7 +8315,25 @@
       "effective",
       "fruitful"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "success",
+          "ko": "성공"
+        },
+        {
+          "part": "-ful",
+          "ko": "~이 가득한"
+        }
+      ],
+      "story": "뜻한 데까지 잘 가 닿은 성공(success)으로 가득한(-ful) → 성공적인",
+      "family": [
+        "succeed",
+        "succession",
+        "successor"
+      ]
+    }
   },
   {
     "id": "successfully",
@@ -6561,7 +8354,29 @@
     "synonyms": [
       "effectively"
     ],
-    "domain": "일반"
+    "domain": "일반",
+    "memory": {
+      "roots": [
+        {
+          "part": "success",
+          "ko": "성공"
+        },
+        {
+          "part": "-ful",
+          "ko": "~이 가득한"
+        },
+        {
+          "part": "-ly",
+          "ko": "~하게"
+        }
+      ],
+      "story": "성공(success)이 가득한(-ful) 모양으로(-ly) 끝까지 → 성공적으로, 문제없이",
+      "family": [
+        "succeed",
+        "succession",
+        "successor"
+      ]
+    }
   },
   {
     "id": "successive",
@@ -6751,7 +8566,26 @@
       "recommend",
       "imply"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "sug-",
+          "ko": "아래"
+        },
+        {
+          "part": "gest",
+          "ko": "나르다"
+        }
+      ],
+      "origin": "라틴어 suggerere (아래로 날라다 주다)",
+      "story": "생각을 슬쩍 밑(sug)으로 날라(gest) 내민다 → 제안하다, 시사하다",
+      "family": [
+        "gesture",
+        "digest",
+        "congestion"
+      ]
+    }
   },
   {
     "id": "suite",
@@ -6780,7 +8614,17 @@
       "set",
       "collection"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "프랑스어 suite (뒤따르는 무리) ← 라틴어 sequi (따르다)",
+      "story": "줄줄이 뒤따르는(suite) 것들을 한 벌로 묶은 것 → 묶음, 모음",
+      "hook": "스위트 → 호텔 '스위트룸'은 방 여러 개를 한 벌로 묶은 객실 → 묶음",
+      "family": [
+        "suit",
+        "sequence",
+        "pursue"
+      ]
+    }
   },
   {
     "id": "sum",
@@ -6812,7 +8656,16 @@
       "total",
       "add up"
     ],
-    "domain": "정도·양·크기"
+    "domain": "정도·양·크기",
+    "memory": {
+      "origin": "라틴어 summa (맨 위, 총계)",
+      "story": "로마인은 더한 값을 맨 위(summa) 줄에 적었다 → 합계 / 합이 ~이 되다",
+      "family": [
+        "summit",
+        "summary",
+        "consummate"
+      ]
+    }
   },
   {
     "id": "summarise",
@@ -6840,7 +8693,25 @@
       "condense",
       "sum up"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "summar",
+          "ko": "요약 (summary)"
+        },
+        {
+          "part": "-ise",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "story": "핵심만 추린 요약(summary)으로 만든다(-ise, 영국식 철자) → 요약하다",
+      "family": [
+        "summary",
+        "sum",
+        "summit"
+      ]
+    }
   },
   {
     "id": "summarize",
@@ -6875,7 +8746,25 @@
       "condense",
       "sum up"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "summar",
+          "ko": "요약 (summary)"
+        },
+        {
+          "part": "-ize",
+          "ko": "~하게 만들다"
+        }
+      ],
+      "story": "긴 내용을 핵심만 추린 요약(summary)으로 만든다(-ize) → 요약하다",
+      "family": [
+        "summary",
+        "sum",
+        "summit"
+      ]
+    }
   },
   {
     "id": "summary",
@@ -6904,7 +8793,27 @@
       "overview",
       "recap"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "summ",
+          "ko": "총계, 핵심"
+        },
+        {
+          "part": "-ary",
+          "ko": "~에 관한 것"
+        }
+      ],
+      "origin": "라틴어 summarium ← summa (총계, 요점)",
+      "story": "전체를 더한 총계(summ)처럼 핵심만 추린 것(-ary) → 요약(본)",
+      "hook": "서머리 → '회의 서머리 보내 주세요' → 요약(본)",
+      "family": [
+        "sum",
+        "summit",
+        "summarize"
+      ]
+    }
   },
   {
     "id": "superficial",
@@ -6929,7 +8838,30 @@
       "shallow",
       "cursory"
     ],
-    "domain": "정확·품질·신뢰"
+    "domain": "정확·품질·신뢰",
+    "memory": {
+      "roots": [
+        {
+          "part": "super-",
+          "ko": "위"
+        },
+        {
+          "part": "fici",
+          "ko": "얼굴, 면"
+        },
+        {
+          "part": "-al",
+          "ko": "~의"
+        }
+      ],
+      "origin": "라틴어 superficies (윗면, 겉)",
+      "story": "맨 위(super) 겉면(fici)만 스치고 속은 보지 않는(-al) → 피상적인, 겉핥기의",
+      "family": [
+        "surface",
+        "face",
+        "facade"
+      ]
+    }
   },
   {
     "id": "superseded",
@@ -7008,7 +8940,31 @@
       "manager",
       "overseer"
     ],
-    "domain": "사람·조직·역할"
+    "domain": "사람·조직·역할",
+    "memory": {
+      "roots": [
+        {
+          "part": "super-",
+          "ko": "위"
+        },
+        {
+          "part": "vis",
+          "ko": "보다"
+        },
+        {
+          "part": "-or",
+          "ko": "~하는 사람"
+        }
+      ],
+      "story": "위(super)에서 내려다보며(vis) 살피는 사람(-or) → 관리자, 상급자",
+      "hook": "슈퍼바이저 → 매장 관리 담당 '슈퍼바이저' → 관리자",
+      "family": [
+        "supervise",
+        "vision",
+        "visible",
+        "revise"
+      ]
+    }
   },
   {
     "id": "supply",
@@ -7040,7 +8996,26 @@
       "give",
       "furnish"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "sup-",
+          "ko": "아래에서"
+        },
+        {
+          "part": "ply",
+          "ko": "채우다"
+        }
+      ],
+      "origin": "라틴어 supplere (밑에서부터 채우다)",
+      "story": "모자란 곳을 밑(sup)에서부터 채워(ply) 준다 → 제공하다, 대다, 공급하다",
+      "family": [
+        "supplement",
+        "complete",
+        "plenty"
+      ]
+    }
   },
   {
     "id": "support",
@@ -7077,7 +9052,27 @@
       "help",
       "enable"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "sup-",
+          "ko": "아래"
+        },
+        {
+          "part": "port",
+          "ko": "나르다, 들다"
+        }
+      ],
+      "origin": "라틴어 supportare (밑에서 받쳐 나르다)",
+      "story": "밑(sup)에서 받쳐 들어(port) 준다 → 뒷받침하다, 지원하다 / (고객) 지원",
+      "hook": "서포트 → 게임의 '서포터'는 뒤에서 받쳐 주는 역할 → 지원하다",
+      "family": [
+        "transport",
+        "import",
+        "portable"
+      ]
+    }
   },
   {
     "id": "supposed",
@@ -7206,7 +9201,25 @@
       "extra fee",
       "additional charge"
     ],
-    "domain": "비즈니스·업무"
+    "domain": "비즈니스·업무",
+    "memory": {
+      "roots": [
+        {
+          "part": "sur-",
+          "ko": "위에, 더"
+        },
+        {
+          "part": "charge",
+          "ko": "요금"
+        }
+      ],
+      "story": "기본 요금(charge) 위에(sur) 더 얹는 돈 → 추가 요금, 할증료",
+      "family": [
+        "discharge",
+        "recharge",
+        "surplus"
+      ]
+    }
   },
   {
     "id": "surface",
@@ -7243,7 +9256,25 @@
       "expose",
       "emerge"
     ],
-    "domain": "이동·전달"
+    "domain": "이동·전달",
+    "memory": {
+      "roots": [
+        {
+          "part": "sur-",
+          "ko": "위"
+        },
+        {
+          "part": "face",
+          "ko": "얼굴, 면"
+        }
+      ],
+      "story": "잠겨 있던 것이 맨 위(sur) 면(face)으로 떠오른다 → 드러나다, 드러내다 / 표면",
+      "family": [
+        "superficial",
+        "facade",
+        "interface"
+      ]
+    }
   },
   {
     "id": "surround",
@@ -7275,7 +9306,17 @@
       "encircle",
       "enclose"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "origin": "후기 라틴어 superundare (물이 넘쳐 덮다)",
+      "story": "물결(unda)이 넘쳐(super) 사방을 덮던 말이 둥글게(round)와 겹쳐 → 둘러싸다",
+      "hook": "서라운드 → '서라운드 스피커'는 소리가 사방을 둘러싼다 → 둘러싸다",
+      "family": [
+        "abundant",
+        "inundate",
+        "undulate"
+      ]
+    }
   },
   {
     "id": "survey",
@@ -7306,7 +9347,27 @@
       "poll",
       "questionnaire"
     ],
-    "domain": "데이터·정보·문서"
+    "domain": "데이터·정보·문서",
+    "memory": {
+      "roots": [
+        {
+          "part": "sur-",
+          "ko": "위"
+        },
+        {
+          "part": "vey",
+          "ko": "보다"
+        }
+      ],
+      "origin": "고대 프랑스어 surveeir (위에서 보다)",
+      "story": "위(sur)에서 전체를 내려다본다(vey) → 살펴보다, 조사하다 / 설문 조사",
+      "hook": "서베이 → '고객 만족도 서베이' → 설문 조사",
+      "family": [
+        "view",
+        "review",
+        "surveillance"
+      ]
+    }
   },
   {
     "id": "survive",
@@ -7335,7 +9396,27 @@
       "endure",
       "remain"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "sur-",
+          "ko": "넘어"
+        },
+        {
+          "part": "vive",
+          "ko": "살다"
+        }
+      ],
+      "origin": "라틴어 supervivere (넘어서 살다)",
+      "story": "고비를 넘어(sur) 계속 살아(vive) 있다 → 살아남다, 사라지지 않고 유지되다",
+      "hook": "서바이브 → '서바이벌 게임'은 끝까지 살아남기 → 살아남다",
+      "family": [
+        "revive",
+        "vivid",
+        "vital"
+      ]
+    }
   },
   {
     "id": "sustained",
@@ -7362,7 +9443,31 @@
       "continuous",
       "prolonged"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "sus-",
+          "ko": "아래에서"
+        },
+        {
+          "part": "tain",
+          "ko": "붙들다"
+        },
+        {
+          "part": "-ed",
+          "ko": "~된"
+        }
+      ],
+      "origin": "라틴어 sustinere (밑에서 떠받치다)",
+      "story": "밑(sus)에서 계속 붙들어(tain) 끊기지 않게 한(-ed) → 지속적인, 계속 이어진",
+      "family": [
+        "maintain",
+        "contain",
+        "retain",
+        "sustainable"
+      ]
+    }
   },
   {
     "id": "swallow",
@@ -7426,7 +9531,12 @@
       "exchange",
       "interchange"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "origin": "중세 영어 swappen (탁 치다)",
+      "story": "흥정이 끝나 서로 손바닥을 탁 치고(swappen) 물건을 바꾼다 → 맞바꾸다",
+      "hook": "스왑 → '통화 스와프'는 서로 돈을 맞바꾸는 거래 → 맞바꾸다"
+    }
   },
   {
     "id": "sweep",
@@ -7499,7 +9609,11 @@
       "swap",
       "shift"
     ],
-    "domain": "변경·수정"
+    "domain": "변경·수정",
+    "memory": {
+      "story": "선로 전환기를 젖혀 열차를 다른 선로로 보내듯 → 바꾸다, 전환하다 / 전환",
+      "hook": "스위치 → 전등 '스위치'를 딸깍 → 바꾸다, 전환하다"
+    }
   },
   {
     "id": "symbol",
@@ -7527,7 +9641,27 @@
     "synonyms": [
       "sign"
     ],
-    "domain": "시스템·도구·기술"
+    "domain": "시스템·도구·기술",
+    "memory": {
+      "roots": [
+        {
+          "part": "sym-",
+          "ko": "함께"
+        },
+        {
+          "part": "bol",
+          "ko": "던지다"
+        }
+      ],
+      "origin": "그리스어 symbolon (맞춰 보는 증표)",
+      "story": "쪼갠 조각을 함께(sym) 던져(bol) 맞춰 보던 증표, 무언가를 대신 나타내는 표 → 기호, 심볼",
+      "hook": "심볼 → '평화의 심볼' → 기호, 상징",
+      "family": [
+        "parabola",
+        "hyperbole",
+        "problem"
+      ]
+    }
   },
   {
     "id": "symlink",
@@ -7559,7 +9693,21 @@
     "synonyms": [
       "symbolic link"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "roots": [
+        {
+          "part": "sym",
+          "ko": "기호의 (symbolic)"
+        },
+        {
+          "part": "link",
+          "ko": "연결"
+        }
+      ],
+      "origin": "symbolic link",
+      "story": "파일 자체가 아니라 그 이름을 가리키는 기호(symbolic) 연결(link) → 심볼릭 링크(를 걸다)"
+    }
   },
   {
     "id": "sync",
@@ -7593,7 +9741,17 @@
       "synchronize",
       "update"
     ],
-    "domain": "연결·통합"
+    "domain": "연결·통합",
+    "memory": {
+      "origin": "synchronize 의 줄임 (그리스어 syn 함께 + chronos 시간)",
+      "story": "두 곳의 시계를 함께(syn) 같은 시간(chron)에 맞추듯 내용을 맞춘다 → 동기화(하다)",
+      "hook": "싱크 → '입 모양 싱크가 안 맞는다'의 싱크 → 같게 맞추다, 동기화",
+      "family": [
+        "synchronous",
+        "chronic",
+        "chronicle"
+      ]
+    }
   },
   {
     "id": "synchronous",
@@ -7618,7 +9776,30 @@
     "synonyms": [
       "blocking"
     ],
-    "domain": "시간·순서·빈도"
+    "domain": "시간·순서·빈도",
+    "memory": {
+      "roots": [
+        {
+          "part": "syn-",
+          "ko": "함께, 같은"
+        },
+        {
+          "part": "chron",
+          "ko": "시간"
+        },
+        {
+          "part": "-ous",
+          "ko": "~한"
+        }
+      ],
+      "origin": "그리스어 synchronos (같은 때의)",
+      "story": "상대와 같은(syn) 시간(chron)에 묶여 답이 올 때까지 기다리는(-ous) → 동기의",
+      "family": [
+        "asynchronous",
+        "chronicle",
+        "chronology"
+      ]
+    }
   },
   {
     "id": "synonym",
@@ -7685,7 +9866,25 @@
     "synonyms": [
       "grammar"
     ],
-    "domain": "구조·구성·부분"
+    "domain": "구조·구성·부분",
+    "memory": {
+      "roots": [
+        {
+          "part": "syn-",
+          "ko": "함께"
+        },
+        {
+          "part": "tax",
+          "ko": "배열하다"
+        }
+      ],
+      "origin": "그리스어 syntaxis (함께 늘어놓음)",
+      "story": "낱말을 함께(syn) 줄 세워 배열하는(tax) 규칙 → 구문, 문법",
+      "family": [
+        "tactic",
+        "taxonomy"
+      ]
+    }
   },
   {
     "id": "synthesis",
@@ -7763,7 +9962,30 @@
       "artificial",
       "man-made"
     ],
-    "domain": "상태·성질"
+    "domain": "상태·성질",
+    "memory": {
+      "roots": [
+        {
+          "part": "syn-",
+          "ko": "함께"
+        },
+        {
+          "part": "thet",
+          "ko": "놓다"
+        },
+        {
+          "part": "-ic",
+          "ko": "~한"
+        }
+      ],
+      "origin": "그리스어 synthetikos (함께 놓아 만든)",
+      "story": "여러 재료를 함께(syn) 놓아(thet) 사람이 만들어 낸(-ic) → 합성의, 인공적으로 만든",
+      "family": [
+        "synthesis",
+        "thesis",
+        "hypothesis"
+      ]
+    }
   },
   {
     "id": "system",
@@ -7816,7 +10038,20 @@
     "synonyms": [
       "system message"
     ],
-    "domain": "요청·소통"
+    "domain": "요청·소통",
+    "memory": {
+      "roots": [
+        {
+          "part": "system",
+          "ko": "시스템"
+        },
+        {
+          "part": "prompt",
+          "ko": "지시문"
+        }
+      ],
+      "story": "대화가 시작되기 전 시스템(system) 차원에서 깔아 두는 지시문(prompt) → 시스템 프롬프트"
+    }
   },
   {
     "id": "systematically",
