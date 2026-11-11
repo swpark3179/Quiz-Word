@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { defaultNotebookName, sanitizeNotebooks } from '../notebook';
+import { defaultNotebookName, flashSourceName, flashSplitNotebookName, NOTEBOOK_NAME_MAX, sanitizeNotebooks } from '../notebook';
 import { createProgressStore, exportProgress } from '../progressStore';
 
 /** 웹 localStorage / 앱 kv-store 대신 쓰는 메모리 저장소 (동기) */
@@ -173,5 +173,20 @@ describe('progressStore (웹·앱 공용)', () => {
   it('기본 학습장 이름은 아직 안 쓴 번호', () => {
     expect(defaultNotebookName([])).toBe('학습장 1');
     expect(defaultNotebookName([{ name: '학습장 1' }, { name: '학습장 3' }])).toBe('학습장 2');
+  });
+
+  it('플래시카드를 하다 만 단어로 만드는 학습장 이름', () => {
+    const d = new Date('2026-11-11T09:00:00');
+    const notebooks = [{ id: 'nb-a', name: '시험 직전' }];
+    expect(flashSourceName({ set: 'notebook', notebook: 'nb-a' }, notebooks, d)).toBe('시험 직전');
+    expect(flashSourceName({ set: 'notebook', notebook: 'nb-없음' }, notebooks, d)).toBe('플래시카드 11/11');
+    expect(flashSourceName({ set: 'wrong' }, notebooks, d)).toBe('오답노트 11/11');
+    expect(flashSourceName({ set: 'core' }, notebooks, d)).toBe('플래시카드 11/11');
+    expect(flashSplitNotebookName('done', '오답노트 11/11')).toBe('오답노트 11/11 · 진행한 단어');
+    expect(flashSplitNotebookName('left', '오답노트 11/11')).toBe('오답노트 11/11 · 남은 단어');
+    // 긴 학습장 이름이어도 뒷말은 남고 길이 제한 안
+    const long = flashSplitNotebookName('left', '가'.repeat(NOTEBOOK_NAME_MAX));
+    expect(long.length).toBeLessThanOrEqual(NOTEBOOK_NAME_MAX);
+    expect(long.endsWith(' · 남은 단어')).toBe(true);
   });
 });

@@ -6,6 +6,7 @@ import { FlashSession } from '../components/FlashSession';
 import { ScopePicker, StartButton, useStoredScope } from '../components/ScopePicker';
 import { Button, Card, Empty, PageHeader } from '../components/ui';
 import { WORD_BY_ID, WORDS } from '../data/words';
+import { flashSourceName } from '../lib/notebook';
 import { scopeFromParams, scopeToParams, selectWords } from '../lib/scope';
 import { useProgress } from '../store/progress';
 
@@ -32,11 +33,13 @@ export function FlashPlay() {
   // 주소를 직접 열어 들어온 경우에는 돌아갈 이전 화면이 없으므로 범위 고르기로 보낸다
   const exit = () => (location.key === 'default' ? navigate('/flash', { replace: true }) : navigate(-1));
   const record = useProgress((s) => s.record);
-  const [ids] = useState<string[]>(() => {
+  // source: 그만할 때 만드는 학습장 이름 앞부분 (어디서 시작했는지)
+  const [{ ids, source }] = useState<{ ids: string[]; source?: string }>(() => {
     const explicit = params.get('ids');
-    if (explicit) return explicit.split(',').filter((id) => WORD_BY_ID.has(id));
+    if (explicit) return { ids: explicit.split(',').filter((id) => WORD_BY_ID.has(id)) };
     const { cards, wrong, notebooks } = useProgress.getState();
-    return selectWords(WORDS, scopeFromParams(params), { cards, wrong, notebooks }).map((w) => w.id);
+    const scope = scopeFromParams(params);
+    return { ids: selectWords(WORDS, scope, { cards, wrong, notebooks }).map((w) => w.id), source: flashSourceName(scope, notebooks) };
   });
 
   if (!ids.length) {
@@ -54,6 +57,7 @@ export function FlashPlay() {
     <FlashSession
       ids={ids}
       title="플래시카드"
+      source={source}
       onExit={exit}
       onAnswer={(id, known, first) => {
         // SRS·통계에는 이 세션의 첫 판정만 반영한다

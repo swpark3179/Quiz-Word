@@ -2,11 +2,12 @@
  * 플래시카드 진행 — 단어 → 안다/모른다 → 상세 → 다음.
  * 모른다 카드는 몇 장 뒤에 다시 나온다 (flashQueue).
  */
-import { Check, RotateCcw, Undo2, X } from 'lucide-react';
+import { BookPlus, Check, RotateCcw, Undo2, X } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { WORD_BY_ID } from '../data/words';
-import { answer, createQueue, currentId, isFinished, isRepeat, summary, type FlashQueue } from '../lib/flashQueue';
+import { answer, createQueue, currentId, isFinished, isRepeat, split, summary, type FlashQueue, type SplitPart } from '../lib/flashQueue';
+import { flashSourceName, flashSplitNotebookName } from '../lib/notebook';
 import { speak } from '../lib/tts';
 import { useProgress } from '../store/progress';
 import { isModalOpen, isTyping } from './Dialog';
@@ -17,12 +18,17 @@ import { WordBrief } from './WordInfo';
 export interface FlashSessionProps {
   ids: string[];
   title: string;
+  /** 어디서 시작했는지 (학습장 이름 등) — 그만할 때 만드는 학습장 이름 앞부분. 없으면 "플래시카드 11/11" */
+  source?: string;
   /** 판정을 확정할 때마다 (first = 이 세션에서 처음 본 카드인지) */
   onAnswer: (id: string, known: boolean, first: boolean) => void;
   onExit: () => void;
 }
 
-export function FlashSession({ ids, title, onAnswer, onExit }: FlashSessionProps) {
+/** 그만할 때 만든 학습장 — 진행이 바뀌면(key) 다시 만들 수 있다 */
+type SavedSplit = { key: string; parts: Partial<Record<SplitPart, { id: string; name: string }>> };
+
+export function FlashSession({ ids, title, source, onAnswer, onExit }: FlashSessionProps) {
   const [queue, setQueue] = useState<FlashQueue>(() => createQueue(ids));
   const [judged, setJudged] = useState<boolean | null>(null);
   const [round, setRound] = useState(0);
@@ -32,7 +38,21 @@ export function FlashSession({ ids, title, onAnswer, onExit }: FlashSessionProps
   const total = useMemo(() => new Set(queue.order.concat(queue.done)).size, [queue]);
   const spokenFor = useRef<string>('');
   const finished = isFinished(queue);
-  const { requestExit, dialog: exitDialog } = useExitGuard(onExit, !finished && queue.shown > 0);
+  const createNotebook = useProgress((s) => s.createNotebook);
+  const parts = useMemo(() => split(queue), [queue]);
+  const progressKey = `${round}:${queue.shown}`;
+  const [saved, setSaved] = useState<SavedSplit>({ key: '', parts: {} });
+  const savedNow = saved.key === progressKey ? saved.parts : {};
+  const saveSplit = (part: SplitPart) => {
+    const name = flashSplitNotebookName(part, source ?? flashSourceName({ set: '' }, []));
+    const nid = createNotebook(name, parts[part]);
+    setSaved({ key: progressKey, parts: { ...savedNow, [part]: { id: nid, name } } });
+  };
+  const { requestExit, dialog: exitDialog } = useExitGuard(
+    onExit,
+    !finished && queue.shown > 0,
+    <SplitSave parts={parts} saved={savedNow} onSave={saveSplit} />,
+  );
 
   // 새 카드가 나오면 자동 발음
   useEffect(() => {
@@ -241,6 +261,43 @@ export function FlashSession({ ids, title, onAnswer, onExit }: FlashSessionProps
         <Kbd>P</Kbd> 발음 듣기 · <Kbd>Esc</Kbd> 그만하기
       </div>
       {exitDialog}
+    </div>
+  );
+}
+
+const SPLIT_LABEL: Record<SplitPart, string> = { done: '진행한 단어', left: '남은 단어' };
+
+/** 그만하기 확인창 — 진행한 단어 / 남은 단어를 각각 학습장으로 남긴다 (만든 뒤에도 창은 그대로라 둘 다 만들 수 있다) */
+function SplitSave({ parts, saved, onSave }: { parts: Record<SplitPart, string[]>; saved: SavedSplit['parts']; onSave: (part: SplitPart) => void }) {
+  return (
+    <div className="mt-4 rounded-xl border border-line p-3.5">
+      <div className="text-[13px] font-bold text-ink">학습장으로 남기기</div>
+      <div className="mt-0.5 text-[12.5px] leading-snug text-muted">남은 단어는 나중에 이어서, 진행한 단어는 다시 볼 수 있게 따로 담아 둡니다.</div>
+      <div className="mt-3 grid gap-2">
+        {(['done', 'left'] as const).map((part) => {
+          const s = saved[part];
+          const n = parts[part].length;
+          return s ? (
+            <div key={part} role="status" className="flex items-center gap-2 rounded-xl bg-success-soft px-3 py-2 text-[13px] text-success">
+              <Check size={15} className="shrink-0" />
+              <span className="min-w-0 flex-1 truncate font-semibold">'{s.name}' 만들었어요</span>
+              <Link to={`/notebooks/${s.id}`} className="shrink-0 font-semibold underline-offset-2 hover:underline">
+                열기
+              </Link>
+            </div>
+          ) : (
+            <Button key={part} className="justify-between px-3 py-2 text-[13px]" disabled={!n} onClick={() => onSave(part)}>
+              <span className="flex items-center gap-2">
+                <BookPlus size={15} className="shrink-0" />
+                <span>
+                  {SPLIT_LABEL[part]} <b className="tabular-nums">{n}</b>개
+                </span>
+              </span>
+              <span className="font-medium text-muted">학습장 만들기</span>
+            </Button>
+          );
+        })}
+      </div>
     </div>
   );
 }
