@@ -126,6 +126,8 @@ var ID_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 var LEGACY_WORD_FIELDS = ["tier", "basic", "freq", "sources", "contexts", "note"];
 var MEMORY_LIMITS = { story: 80, hook: 60, origin: 50 };
 var MAX_EXAMPLES = 4;
+var MAX_SENSES = 4;
+var MAX_SYNONYMS = 4;
 var isObj = (v) => !!v && typeof v === "object" && !Array.isArray(v);
 var isStr = (v) => typeof v === "string";
 var strList = (v) => Array.isArray(v) && v.every(isStr);
@@ -172,7 +174,7 @@ function checkWord(r, where, out, opts = {}) {
   if (!ID_RE.test(r.id)) err("id 는 소문자·숫자·하이픈만");
   if (r.level === void 0) err(`level(1~${MAX_LEVEL}) 없음`);
   else if (typeof r.level !== "number" || !Number.isInteger(r.level) || r.level < 1 || r.level > MAX_LEVEL) err(`level 은 1~${MAX_LEVEL} 의 정수`);
-  for (const k of LEGACY_WORD_FIELDS) if (k in r) err(`"${k}" 는 사전에 적지 않는다 — 시험 폴더(data/exams)로`);
+  for (const k of LEGACY_WORD_FIELDS) if (k in r) err(strict ? `"${k}" 는 단어 항목에 적지 않는다 — 시험에 딸린 정보는 exam 쪽에` : `"${k}" 는 사전에 적지 않는다 — 시험 폴더(data/exams)로`);
   if (broken) return void 0;
   const raw = r;
   const w = normalizeWord(raw);
@@ -186,6 +188,20 @@ function checkWord(r, where, out, opts = {}) {
   if (w.short.length > 26) warn(`short 가 김 (${w.short.length}자)`);
   const dupSense = w.senses.map((s) => s.ko).filter((ko, i, all) => all.indexOf(ko) !== i);
   if (dupSense.length) (strict ? err : warn)(`senses 에 같은 뜻이 두 번: "${dupSense[0]}"`);
+  if (strict) {
+    if (w.senses.length > MAX_SENSES) warn(`senses 가 ${w.senses.length}개 — ${MAX_SENSES}개까지가 기준`);
+    if ((w.synonyms?.length ?? 0) > MAX_SYNONYMS) warn(`synonyms 가 ${w.synonyms.length}개 — ${MAX_SYNONYMS}개까지가 기준`);
+    if (w.forms?.some((f) => f.toLowerCase() === w.word.toLowerCase())) warn("forms 에 표제어 자신이 있음 — 빼도 된다");
+    const spelled = w.word.toLowerCase().replace(/[^a-z]/g, "");
+    for (const x of w.memory?.roots ?? []) {
+      const part = x.part.toLowerCase().replace(/[^a-z]/g, "");
+      if (part && !spelled.includes(part)) warn(`memory.roots 의 조각 "${x.part}" 이 철자 "${w.word}" 에 안 보임 — 단어에 보이는 대로 적는다`);
+    }
+    for (const k of ["story", "hook"]) {
+      const v = w.memory?.[k];
+      if (v && !v.includes("→")) warn(`memory.${k} 가 "→ 뜻" 으로 끝나지 않음`);
+    }
+  }
   if (raw.memory !== void 0) {
     if (!w.memory) err("memory 에 story(어원 장면)나 hook(발음 연상) 중 하나는 있어야 함");
     if (raw.memory.family?.some((f) => f.toLowerCase() === w.word.toLowerCase())) (strict ? err : warn)("memory.family 에 자기 자신이 있음");
@@ -404,21 +420,30 @@ function softChecks(exam, dict, warns) {
   if (unused.length) warns.push(`시험에서 쓰이지 않는 단어 ${unused.length}개 (index·examples·notes 어디에도 없음): ${unused.slice(0, 10).join(", ")}${unused.length > 10 ? " …" : ""}`);
   const quiz = exam.sources.filter(isQuizSource);
   for (const s of quiz) if (!exam.sentences[s.id]?.length) warns.push(`exam.sentences.${s.id}: 문제 문장이 없음 — 예문이 없는 단어에 자동으로 붙일 문장이 없다`);
+  const noSentenceKo = quiz.flatMap((s) => (exam.sentences[s.id] ?? []).map((x, i) => x.ko ? "" : `${s.id}[${i}]`)).filter(Boolean);
+  if (noSentenceKo.length) warns.push(`해석(ko)이 없는 문제 문장 ${noSentenceKo.length}개: ${noSentenceKo.slice(0, 5).join(", ")}${noSentenceKo.length > 5 ? " …" : ""}`);
   const withExample = /* @__PURE__ */ new Set();
   const noKo = [];
   const notInSentences = [];
+  const wrongCase = [];
+  const orders = /* @__PURE__ */ new Map();
   for (const [src, byWord] of Object.entries(exam.examples)) {
     const sentences = new Set((exam.sentences[src] ?? []).map((x) => x.en));
     for (const [id, list] of Object.entries(byWord)) {
       withExample.add(id);
-      const ns = list.map((x) => x.n).filter((n) => n !== void 0);
-      if (new Set(ns).size !== ns.length) warns.push(`exam.examples.${src}.${id}: n(보여 줄 순서)이 겹침`);
+      const ns = orders.get(id) ?? [];
+      orders.set(id, ns);
       list.forEach((x, i) => {
+        if (x.n !== void 0) ns.push(x.n);
+        if (!x.en.includes(x.surface)) wrongCase.push(`${src}.${id}[${i}] "${x.surface}"`);
         if (!x.ko) noKo.push(`${src}.${id}[${i}]`);
         if (sentences.size && !sentences.has(x.en)) notInSentences.push(`${src}.${id}[${i}]`);
       });
     }
   }
+  const dupOrder = [...orders].filter(([, ns]) => new Set(ns).size !== ns.length).map(([id]) => id);
+  if (dupOrder.length) warns.push(`예문의 n(보여 줄 순서)이 겹치는 단어 ${dupOrder.length}개 (문제 파일이 달라도 단어마다 0부터 이어서 센다): ${dupOrder.slice(0, 10).join(", ")}${dupOrder.length > 10 ? " …" : ""}`);
+  if (wrongCase.length) warns.push(`surface 의 대소문자가 문장과 다른 예문 ${wrongCase.length}개 (문장에 나온 그대로 적는다): ${wrongCase.slice(0, 5).join(", ")}${wrongCase.length > 5 ? " …" : ""}`);
   if (noKo.length) warns.push(`해석(ko)이 없는 예문 ${noKo.length}개: ${noKo.slice(0, 5).join(", ")}${noKo.length > 5 ? " …" : ""}`);
   if (notInSentences.length) warns.push(`예문의 en 이 그 문제 파일의 sentences 에 없음 ${notInSentences.length}개 (문장을 그대로 옮겼는지 확인): ${notInSentences.slice(0, 5).join(", ")}${notInSentences.length > 5 ? " …" : ""}`);
   const noExample = Object.keys(exam.index).filter((id) => !withExample.has(id));
@@ -442,9 +467,11 @@ function softChecks(exam, dict, warns) {
 }
 
 // scripts/docs/validate-exampack.entry.ts
-function checkExamPack(data) {
+function checkExamPack(data, fileName) {
   const { errors, warns, pack } = validateExamPack(data);
   if (!pack) return { ok: false, errors, warnings: warns };
+  const base = fileName?.split(/[\\/]/).pop();
+  if (base && base !== `${pack.exam.id}.exampack.json`) warns.push(`파일 이름이 "${base}" — "${pack.exam.id}.exampack.json" 으로 하는 것이 규칙`);
   const examples = Object.values(pack.exam.examples).reduce((a, byWord) => a + Object.values(byWord).reduce((b, list) => b + list.length, 0), 0);
   const sentences = Object.values(pack.exam.sentences).reduce((a, list) => a + list.length, 0);
   return {
@@ -470,7 +497,7 @@ async function main(argv) {
     else console.error(`ERROR  파일을 읽지 못함 (JSON 형식 오류일 수 있음): ${e.message}`);
     return 2;
   }
-  const r = checkExamPack(data);
+  const r = checkExamPack(data, file);
   if (json) console.log(JSON.stringify(r, null, 2));
   else {
     for (const w of r.warnings) console.log(`WARN   ${w}`);

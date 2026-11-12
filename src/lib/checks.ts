@@ -19,6 +19,9 @@ export const LEGACY_WORD_FIELDS = ['tier', 'basic', 'freq', 'sources', 'contexts
 export const MEMORY_LIMITS = { story: 80, hook: 60, origin: 50 } as const;
 /** 단어마다 붙이는 예문 수 */
 export const MAX_EXAMPLES = 4;
+/** 단어마다 적는 뜻·유의어 수 (넘으면 경고) */
+export const MAX_SENSES = 4;
+export const MAX_SYNONYMS = 4;
 
 const isObj = (v: unknown): v is Record<string, unknown> => !!v && typeof v === 'object' && !Array.isArray(v);
 const isStr = (v: unknown): v is string => typeof v === 'string';
@@ -81,7 +84,7 @@ export function checkWord(r: unknown, where: string, out: Issues, opts: WordChec
   if (!ID_RE.test(r.id)) err('id 는 소문자·숫자·하이픈만');
   if (r.level === undefined) err(`level(1~${MAX_LEVEL}) 없음`);
   else if (typeof r.level !== 'number' || !Number.isInteger(r.level) || r.level < 1 || r.level > MAX_LEVEL) err(`level 은 1~${MAX_LEVEL} 의 정수`);
-  for (const k of LEGACY_WORD_FIELDS) if (k in r) err(`"${k}" 는 사전에 적지 않는다 — 시험 폴더(data/exams)로`);
+  for (const k of LEGACY_WORD_FIELDS) if (k in r) err(strict ? `"${k}" 는 단어 항목에 적지 않는다 — 시험에 딸린 정보는 exam 쪽에` : `"${k}" 는 사전에 적지 않는다 — 시험 폴더(data/exams)로`);
   if (broken) return undefined;
 
   const raw = r as RawWord;
@@ -96,6 +99,21 @@ export function checkWord(r: unknown, where: string, out: Issues, opts: WordChec
   if (w.short.length > 26) warn(`short 가 김 (${w.short.length}자)`);
   const dupSense = w.senses.map((s) => s.ko).filter((ko, i, all) => all.indexOf(ko) !== i);
   if (dupSense.length) (strict ? err : warn)(`senses 에 같은 뜻이 두 번: "${dupSense[0]}"`);
+  if (strict) {
+    // 불러올 수는 있지만 가이드와 어긋나는 것
+    if (w.senses.length > MAX_SENSES) warn(`senses 가 ${w.senses.length}개 — ${MAX_SENSES}개까지가 기준`);
+    if ((w.synonyms?.length ?? 0) > MAX_SYNONYMS) warn(`synonyms 가 ${w.synonyms!.length}개 — ${MAX_SYNONYMS}개까지가 기준`);
+    if (w.forms?.some((f) => f.toLowerCase() === w.word.toLowerCase())) warn('forms 에 표제어 자신이 있음 — 빼도 된다');
+    const spelled = w.word.toLowerCase().replace(/[^a-z]/g, '');
+    for (const x of w.memory?.roots ?? []) {
+      const part = x.part.toLowerCase().replace(/[^a-z]/g, '');
+      if (part && !spelled.includes(part)) warn(`memory.roots 의 조각 "${x.part}" 이 철자 "${w.word}" 에 안 보임 — 단어에 보이는 대로 적는다`);
+    }
+    for (const k of ['story', 'hook'] as const) {
+      const v = w.memory?.[k];
+      if (v && !v.includes('→')) warn(`memory.${k} 가 "→ 뜻" 으로 끝나지 않음`);
+    }
+  }
 
   if (raw.memory !== undefined) {
     if (!w.memory) err('memory 에 story(어원 장면)나 hook(발음 연상) 중 하나는 있어야 함');

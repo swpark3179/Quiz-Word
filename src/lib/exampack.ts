@@ -166,21 +166,31 @@ function softChecks(exam: ExamData, dict: ReadonlyMap<string, Word>, warns: stri
   const quiz = exam.sources.filter(isQuizSource);
   for (const s of quiz) if (!exam.sentences[s.id]?.length) warns.push(`exam.sentences.${s.id}: 문제 문장이 없음 — 예문이 없는 단어에 자동으로 붙일 문장이 없다`);
 
+  const noSentenceKo = quiz.flatMap((s) => (exam.sentences[s.id] ?? []).map((x, i) => (x.ko ? '' : `${s.id}[${i}]`))).filter(Boolean);
+  if (noSentenceKo.length) warns.push(`해석(ko)이 없는 문제 문장 ${noSentenceKo.length}개: ${noSentenceKo.slice(0, 5).join(', ')}${noSentenceKo.length > 5 ? ' …' : ''}`);
+
   const withExample = new Set<string>();
   const noKo: string[] = [];
   const notInSentences: string[] = [];
+  const wrongCase: string[] = [];
+  const orders = new Map<string, number[]>(); // 단어 id → 모든 문제 파일에 걸친 n
   for (const [src, byWord] of Object.entries(exam.examples)) {
     const sentences = new Set((exam.sentences[src] ?? []).map((x) => x.en));
     for (const [id, list] of Object.entries(byWord)) {
       withExample.add(id);
-      const ns = list.map((x) => x.n).filter((n) => n !== undefined);
-      if (new Set(ns).size !== ns.length) warns.push(`exam.examples.${src}.${id}: n(보여 줄 순서)이 겹침`);
+      const ns = orders.get(id) ?? [];
+      orders.set(id, ns);
       list.forEach((x, i) => {
+        if (x.n !== undefined) ns.push(x.n);
+        if (!x.en.includes(x.surface)) wrongCase.push(`${src}.${id}[${i}] "${x.surface}"`);
         if (!x.ko) noKo.push(`${src}.${id}[${i}]`);
         if (sentences.size && !sentences.has(x.en)) notInSentences.push(`${src}.${id}[${i}]`);
       });
     }
   }
+  const dupOrder = [...orders].filter(([, ns]) => new Set(ns).size !== ns.length).map(([id]) => id);
+  if (dupOrder.length) warns.push(`예문의 n(보여 줄 순서)이 겹치는 단어 ${dupOrder.length}개 (문제 파일이 달라도 단어마다 0부터 이어서 센다): ${dupOrder.slice(0, 10).join(', ')}${dupOrder.length > 10 ? ' …' : ''}`);
+  if (wrongCase.length) warns.push(`surface 의 대소문자가 문장과 다른 예문 ${wrongCase.length}개 (문장에 나온 그대로 적는다): ${wrongCase.slice(0, 5).join(', ')}${wrongCase.length > 5 ? ' …' : ''}`);
   if (noKo.length) warns.push(`해석(ko)이 없는 예문 ${noKo.length}개: ${noKo.slice(0, 5).join(', ')}${noKo.length > 5 ? ' …' : ''}`);
   if (notInSentences.length) warns.push(`예문의 en 이 그 문제 파일의 sentences 에 없음 ${notInSentences.length}개 (문장을 그대로 옮겼는지 확인): ${notInSentences.slice(0, 5).join(', ')}${notInSentences.length > 5 ? ' …' : ''}`);
   const noExample = Object.keys(exam.index).filter((id) => !withExample.has(id));

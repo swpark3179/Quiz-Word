@@ -18,10 +18,15 @@ export interface CheckSummary {
   summary?: { exam: string; name: string; sources: number; words: number; examples: number; sentences: number };
 }
 
-/** 검사하고 요약까지 — 명령줄과 브라우저 검증기가 함께 쓴다 */
-export function checkExamPack(data: unknown): CheckSummary {
+/**
+ * 검사하고 요약까지 — 명령줄과 브라우저 검증기가 함께 쓴다.
+ * fileName 을 주면 파일 이름이 "<시험 id>.exampack.json" 인지도 본다 (다르면 경고).
+ */
+export function checkExamPack(data: unknown, fileName?: string): CheckSummary {
   const { errors, warns, pack } = validateExamPack(data);
   if (!pack) return { ok: false, errors, warnings: warns };
+  const base = fileName?.split(/[\\/]/).pop();
+  if (base && base !== `${pack.exam.id}.exampack.json`) warns.push(`파일 이름이 "${base}" — "${pack.exam.id}.exampack.json" 으로 하는 것이 규칙`);
   const examples = Object.values(pack.exam.examples).reduce((a, byWord) => a + Object.values(byWord).reduce((b, list) => b + list.length, 0), 0);
   const sentences = Object.values(pack.exam.sentences).reduce((a, list) => a + list.length, 0);
   return {
@@ -48,7 +53,7 @@ async function main(argv: string[]): Promise<number> {
     else console.error(`ERROR  파일을 읽지 못함 (JSON 형식 오류일 수 있음): ${(e as Error).message}`);
     return 2;
   }
-  const r = checkExamPack(data);
+  const r = checkExamPack(data, file);
   if (json) console.log(JSON.stringify(r, null, 2));
   else {
     for (const w of r.warnings) console.log(`WARN   ${w}`);

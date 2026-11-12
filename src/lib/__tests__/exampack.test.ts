@@ -35,7 +35,7 @@ describe('시험 팩: 검사', () => {
   it('예시 파일은 오류가 없다', () => {
     const r = validateExamPack(example);
     expect(r.errors).toEqual([]);
-    expect(r.pack?.exam.id).toBe('sample-exam');
+    expect(r.pack?.exam.id).toBe('example');
     expect(r.pack?.words).toHaveLength(11);
     // $schema 같은 덧붙인 필드는 버리고 정해진 필드만 남긴다
     expect(Object.keys(r.pack!)).toEqual(['app', 'kind', 'version', 'builtAt', 'exam', 'words']);
@@ -76,7 +76,7 @@ describe('시험 팩: 검사', () => {
     ['외우기가 너무 김', (p) => (word(p, 'downtime').memory.story = '가'.repeat(81)), 'memory.story 가 김 (81자, 80자 이하)'],
     ['family 에 자기 자신', (p) => (word(p, 'downtime').memory.family = ['Downtime']), 'memory.family 에 자기 자신이 있음'],
     ['roots 모양이 틀림', (p) => (word(p, 'downtime').memory.roots = [{ part: 'down' }]), 'memory.roots 항목에 part·ko 가 다 있어야 함'],
-    ['시험 전용 필드가 단어에', (p) => (word(p, 'downtime').tier = 'core'), '"tier" 는 사전에 적지 않는다'],
+    ['시험 전용 필드가 단어에', (p) => (word(p, 'downtime').tier = 'core'), '"tier" 는 단어 항목에 적지 않는다'],
     ['단어가 두 번', (p) => p.words.push(word(p, 'team')), '같은 id 가 두 번 이상 있음'],
     ['변화형이 두 단어에', (p) => (word(p, 'downtime').forms = ['outage']), '표현 "outage" 가'],
     ['forms 모양이 틀림', (p) => (word(p, 'migrate').forms = 'migrated'), 'forms 는 문자열 배열'],
@@ -128,6 +128,20 @@ describe('시험 팩: 검사', () => {
     expect(warns((p) => (p.exam.examples.part1.downtime[0].en = 'There was no downtime.'))).toContain('sentences 에 없음 1개');
     expect(warns((p) => delete p.exam.sentences.part2)).toContain('exam.sentences.part2: 문제 문장이 없음');
     expect(warns((p) => (p.extra = 1))).toContain('모르는 필드 "extra"');
+    // 가이드와 어긋나지만 불러올 수는 있는 것
+    expect(warns((p) => (p.exam.examples.part1.replicate[0].surface = 'replicate'))).toContain('surface 의 대소문자가 문장과 다른 예문 1개 (문장에 나온 그대로 적는다): part1.replicate[0] "replicate"');
+    expect(warns((p) => (p.exam.examples.part2.migrate[0].n = 0))).toContain('예문의 n(보여 줄 순서)이 겹치는 단어 1개');
+    expect(warns((p) => delete p.exam.sentences.part2[0].ko)).toContain('해석(ko)이 없는 문제 문장 1개: part2[0]');
+    expect(warns((p) => (word(p, 'migrate').forms = ['migrate', 'migrated', 'migrating', 'migration']))).toContain('forms 에 표제어 자신이 있음');
+    expect(warns((p) => (word(p, 'migrate').synonyms = ['move', 'transfer', 'shift', 'port', 'relocate']))).toContain('synonyms 가 5개 — 4개까지가 기준');
+    expect(
+      warns((p) => {
+        const senses = word(p, 'team').senses;
+        for (const ko of ['조', '단체', '무리', '편']) senses.push({ pos: '명사', ko });
+      }),
+    ).toContain('senses 가 5개 — 4개까지가 기준');
+    expect(warns((p) => (word(p, 'migrate').memory.roots[0].part = 'migro'))).toContain('memory.roots 의 조각 "migro" 이 철자 "migrate" 에 안 보임');
+    expect(warns((p) => (word(p, 'risk').memory.hook = '리스크가 크다'))).toContain('memory.hook 가 "→ 뜻" 으로 끝나지 않음');
     expect(warns((p) => (word(p, 'team').short = 'team 팀'))).toContain('short 에 영어가 있음');
   });
 
@@ -163,7 +177,7 @@ describe('시험 팩: 지금의 사전·시험 위에 얹기', () => {
   const snapshot = JSON.stringify(base);
   const merged = mergeExamPack(base, PACK);
   const get = (id: string) => merged.words.find((w) => w.id === id)!;
-  const exam = merged.exams.find((e) => e.id === 'sample-exam')!;
+  const exam = merged.exams.find((e) => e.id === 'example')!;
 
   it('있던 단어는 그대로 두고, 없는 단어만 넣는다', () => {
     expect(merged.report.keptWords.sort()).toEqual(['migrate', 'mitigation', 'outage', 'risk-2']);
@@ -223,9 +237,9 @@ describe('시험 팩: 지금의 사전·시험 위에 얹기', () => {
   });
 
   it('시험은 추가하고, 다른 시험은 그대로 둔다', () => {
-    expect(merged.exams.map((e) => e.id)).toEqual(['other', 'sample-exam']);
+    expect(merged.exams.map((e) => e.id)).toEqual(['other', 'example']);
     expect(merged.exams[0]).toBe(OTHER);
-    expect(merged.report).toMatchObject({ examId: 'sample-exam', examName: '샘플 시험', replacedExam: false, examples: 15, sources: 2 });
+    expect(merged.report).toMatchObject({ examId: 'example', examName: '샘플 시험', replacedExam: false, examples: 15, sources: 2 });
   });
 
   it('같은 id 의 시험이 있으면 그 시험만 바꾼다 (다시 불러와도 더 늘지 않는다)', () => {
@@ -233,7 +247,7 @@ describe('시험 팩: 지금의 사전·시험 위에 얹기', () => {
     expect(again.report.replacedExam).toBe(true);
     expect(again.report.addedWords).toEqual([]);
     expect(again.report.addedSenses).toEqual([]);
-    expect(again.exams.map((e) => e.id)).toEqual(['other', 'sample-exam']);
+    expect(again.exams.map((e) => e.id)).toEqual(['other', 'example']);
     expect(again.words).toEqual(merged.words);
     expect(again.exams[1]).toEqual(exam);
   });
@@ -241,11 +255,11 @@ describe('시험 팩: 지금의 사전·시험 위에 얹기', () => {
   it('합친 결과를 앱이 읽으면 시험별 횟수·예문이 나온다', () => {
     const data = buildWordData(merged.words, merged.exams);
     const outage = data.WORD_BY_ID.get('outage')!;
-    expect(outage.occ).toEqual({ other: { set1: 3 }, 'sample-exam': { part1: 2, part2: 1 } });
-    expect(data.contextsOf(outage, 4, { cat: 'sample-exam', file: 'part2' }).map((c) => `${c.src}#${c.q}`)).toEqual(['part2#1', 'part1#2']);
+    expect(outage.occ).toEqual({ other: { set1: 3 }, 'example': { part1: 2, part2: 1 } });
+    expect(data.contextsOf(outage, 4, { cat: 'example', file: 'part2' }).map((c) => `${c.src}#${c.q}`)).toEqual(['part2#1', 'part1#2']);
     // 예문을 적지 않은 단어는 그 시험의 문장에서 자동으로 찾는다 (fallback 은 2회에만 예문이 있다)
-    expect(data.corpusExamples(data.WORD_BY_ID.get('team')!, 4, { cat: 'sample-exam' }).map((c) => [c.src, c.auto])).toEqual([['part2', true]]);
-    expect(data.WORD_BY_ID.get('outage')!.notes).toEqual([{ cat: 'sample-exam', md: PACK.exam.notes.outage }]);
+    expect(data.corpusExamples(data.WORD_BY_ID.get('team')!, 4, { cat: 'example' }).map((c) => [c.src, c.auto])).toEqual([['part2', true]]);
+    expect(data.WORD_BY_ID.get('outage')!.notes).toEqual([{ cat: 'example', md: PACK.exam.notes.outage }]);
   });
 });
 

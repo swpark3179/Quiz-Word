@@ -58,7 +58,7 @@ describe('docs: 예시 파일', () => {
   it('가이드의 "완성 예시"에 그대로 들어 있다', () => {
     const guide = read('exam-pack-guide.md');
     expect(guideWithExample(guide, read('example.exampack.json'))).toBe(guide);
-    expect(guide).toContain('"id": "sample-exam"');
+    expect(guide).toContain('"id": "example"');
   });
 });
 
@@ -67,7 +67,7 @@ describe('docs: 검증기 (node validate-exampack.mjs)', () => {
     const r = runValidator(path.join(DOCS, 'example.exampack.json'));
     expect(r.code).toBe(0);
     expect(r.out).toContain(`RESULT: PASS errors=0 warnings=0 (시험 팩 형식 버전 ${EXAMPACK_VERSION})`);
-    expect(r.out).toContain('시험 sample-exam (샘플 시험) — 문제 파일 2개 · 단어 11개 · 예문 15개 · 문장 8개');
+    expect(r.out).toContain('시험 example (샘플 시험) — 문제 파일 2개 · 단어 11개 · 예문 15개 · 문장 8개');
   });
   it('틀린 파일 → 종료 코드 1, 오류마다 ERROR 줄', () => {
     const bad = example();
@@ -81,12 +81,18 @@ describe('docs: 검증기 (node validate-exampack.mjs)', () => {
   });
   it('--json → 기계가 읽을 수 있는 결과', () => {
     const ok = JSON.parse(runValidator(path.join(DOCS, 'example.exampack.json'), '--json').out);
-    expect(ok).toEqual({ ok: true, errors: [], warnings: [], summary: { exam: 'sample-exam', name: '샘플 시험', sources: 2, words: 11, examples: 15, sentences: 8 } });
+    expect(ok).toEqual({ ok: true, errors: [], warnings: [], summary: { exam: 'example', name: '샘플 시험', sources: 2, words: 11, examples: 15, sentences: 8 } });
     const bad = example();
     delete bad.words[0].level;
     const r = runValidator(writeTmp('bad2.exampack.json', bad), '--json');
     expect(r.code).toBe(1);
     expect(JSON.parse(r.out)).toMatchObject({ ok: false, errors: ['words[0] (downtime): level(1~6) 없음'] });
+  });
+  it('파일 이름이 <시험 id>.exampack.json 이 아니면 경고한다', () => {
+    const r = runValidator(writeTmp('my-pack.json', read('example.exampack.json')));
+    expect(r.code).toBe(0);
+    expect(r.out).toContain('WARN   파일 이름이 "my-pack.json" — "example.exampack.json" 으로 하는 것이 규칙');
+    expect(r.out).toContain('RESULT: PASS errors=0 warnings=1');
   });
   it('JSON 이 아니거나 파일이 없으면 종료 코드 2', () => {
     expect(runValidator(writeTmp('broken.json', '{ "app": ')).code).toBe(2);
@@ -201,7 +207,7 @@ describe('시험 팩: 저장소 데이터로', () => {
     const r = addExamPack(path.join(DOCS, 'example.exampack.json'), dataDir);
     expect(r.errors).toEqual([]);
     // mitigate·replicate 는 사전에서 mitigation·replica 의 변화형이라 그 단어로 본다 → 새 단어는 downtime 하나
-    expect(r.report).toMatchObject({ examId: 'sample-exam', replacedExam: false, addedWords: ['downtime'] });
+    expect(r.report).toMatchObject({ examId: 'example', replacedExam: false, addedWords: ['downtime'] });
     expect(r.report!.keptWords).toHaveLength(10);
     expect(r.rewritten.sort()).toEqual(['d.json', 'm.json', 'r.json']);
 
@@ -222,8 +228,8 @@ describe('시험 팩: 저장소 데이터로', () => {
     expect(now.senses.slice(0, was.senses.length)).toEqual(was.senses);
     // 다른 시험은 그대로, 새 시험 폴더가 생겼다
     expect(fs.readFileSync(path.join(dataDir, 'exams/ccar-f/index.json'), 'utf8')).toBe(ccarf);
-    expect(fs.readdirSync(path.join(dataDir, 'exams')).sort()).toEqual(['ccar-f', 'sample-exam']);
-    expect(fs.readdirSync(path.join(dataDir, 'exams/sample-exam/examples')).sort()).toEqual(['part1.json', 'part2.json']);
+    expect(fs.readdirSync(path.join(dataDir, 'exams')).sort()).toEqual(['ccar-f', 'example']);
+    expect(fs.readdirSync(path.join(dataDir, 'exams/example/examples')).sort()).toEqual(['part1.json', 'part2.json']);
     expect(validateData(dataDir, path.join(tmp, 'no-work')).errors).toEqual([]);
 
     // 한 번 더 얹어도 더 바뀌지 않는다

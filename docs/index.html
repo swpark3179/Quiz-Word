@@ -151,7 +151,7 @@
       show(file.name, { ok: false, errors: [`JSON 형식 오류: ${e.message}`], warnings: [] });
       return;
     }
-    show(file.name, checkExamPack(data));
+    show(file.name, checkExamPack(data, file.name));
   }
 
   input.addEventListener('change', () => check(input.files[0]));
