@@ -2,8 +2,7 @@
 import { router } from 'expo-router';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
-import { LEVELS } from '@shared/schema';
-import { DEFAULT_SCOPE, normalizeScope, scopeFromParams, type Scope } from '@shared/scope';
+import { DEFAULT_SCOPE, levelsLabel, levelsToParam, normalizeScope, scopeFromParams, type Scope } from '@shared/scope';
 import { EXAMS, examName, sourceName } from '@/data/words';
 import { syncStorage } from '@/lib/kv';
 import { useProgress } from '@/store/progress';
@@ -38,11 +37,7 @@ export const useScopes = create<ScopeState>()(
 /** 저장해 둔 범위 — 예전 형식(CCAR-F 전체·문제 파일별·기초 포함)이나 없어진 시험·문제 파일은 읽을 때 지금 형식으로 고친다 */
 export const scopeOf = (mode: StudyMode, scopes: Partial<Record<StudyMode, Scope>>): Scope => normalizeScope(scopes[mode], EXAMS);
 
-/** "2단계 이상" — 단계 고르기에 쓰는 말 */
-export const levelLabel = (minLevel: number) =>
-  minLevel <= 1 ? '모든 단계' : minLevel >= LEVELS.length ? `${minLevel}단계만` : `${minLevel}단계 이상`;
-
-/** "CCAR-F 전체 · 2단계 이상 · 못 익힌 단어 · 20개" */
+/** "CCAR-F 전체 · 2~6단계 · 못 익힌 단어 · 20개" */
 export function scopeSummary(s: Scope): string {
   const set =
     s.set === 'all'
@@ -58,7 +53,7 @@ export function scopeSummary(s: Scope): string {
               : '모든 단어';
   const status = { unmastered: '못 익힌 단어', new: '새 단어', learning: '학습 중', any: '전체', due: '복습할 단어' }[s.status];
   // 오답노트·학습장은 직접 고른 단어라 단계를 따지지 않는다
-  const level = (s.set === 'exam' || s.set === 'all') && s.minLevel > 1 ? ` · ${levelLabel(s.minLevel)}` : '';
+  const level = (s.set === 'exam' || s.set === 'all') && s.levels.length ? ` · ${levelsLabel(s.levels)}` : '';
   return `${set}${level} · ${status} · ${s.count ? `${s.count}개` : '전부'}`;
 }
 
@@ -66,7 +61,7 @@ export function scopeSummary(s: Scope): string {
 export function scopeQuery(s: Scope): string {
   const parts: [string, string][] = [
     ['set', s.set],
-    ['lv', String(s.minLevel)],
+    ['lvs', levelsToParam(s.levels)],
     ['status', s.status],
     ['count', String(s.count)],
     ['order', s.order],

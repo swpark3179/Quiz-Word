@@ -7,6 +7,7 @@ import { Button, Kbd, PosBadge, StatusDot } from '../components/ui';
 import { EXAMS, quizSources, WORDS_BY_FREQ } from '../data/words';
 import { freqIn, inExam, isExtra, isQuizSource, NO_EXAM } from '../lib/exams';
 import { LEVELS } from '../lib/schema';
+import { inLevels, levelsFrom, levelsFromParam, toggleLevel } from '../lib/scope';
 import { searchWords } from '../lib/search';
 import { statusOf, type WordStatus } from '../lib/srs';
 import { useProgress } from '../store/progress';
@@ -40,6 +41,39 @@ function FilterSelect({
   );
 }
 
+/** 단계 고르기 — 여러 개를 켤 수 있다. 아무것도 안 켜면(전체) 모든 단계 */
+function LevelFilter({ levels, onChange }: { levels: readonly number[]; onChange: (v: number[]) => void }) {
+  const btn = (on: boolean) =>
+    `min-w-8 border-l border-line px-2 py-1.5 tabular-nums transition first:border-l-0 ${
+      on ? 'bg-primary-soft font-semibold text-primary-text' : 'text-ink-2 hover:bg-surface-2 hover:text-ink'
+    }`;
+  return (
+    <div
+      role="group"
+      aria-label="단계"
+      className={`flex max-w-full items-stretch overflow-hidden rounded-lg border bg-surface text-[13px] transition ${levels.length ? 'border-primary' : 'border-line'}`}
+    >
+      <span className="flex items-center border-r border-line px-2.5 text-muted">단계</span>
+      <button type="button" aria-pressed={!levels.length} onClick={() => onChange([])} className={btn(!levels.length)}>
+        전체
+      </button>
+      {LEVELS.map((l) => (
+        <button
+          key={l.level}
+          type="button"
+          aria-pressed={levels.includes(l.level)}
+          aria-label={`${l.level}단계 (${l.name})`}
+          title={`${l.level}단계 · ${l.name}`}
+          onClick={() => onChange(toggleLevel(levels, l.level))}
+          className={btn(levels.includes(l.level))}
+        >
+          {l.level}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 export function WordsPage() {
   const [params, setParams] = useSearchParams();
   const navigate = useNavigate();
@@ -52,8 +86,11 @@ export function WordsPage() {
   const src = sources.some((x) => x.id === rawSrc) ? rawSrc : '';
   const pos = params.get('pos') ?? '';
   const status = (params.get('status') ?? '') as WordStatus | 'wrong' | '';
-  const minLevel = Math.min(LEVELS.length, Math.max(1, Number(params.get('lv')) || 1));
-  const lv = minLevel > 1 ? String(minLevel) : '';
+  // 단계: lvs=2,5 처럼 고른 단계들 (없으면 모든 단계). 예전 주소의 lv=N 은 "N단계 이상"으로 읽는다
+  const rawLvs = params.get('lvs');
+  const rawLv = Number(params.get('lv'));
+  const lv = (rawLvs !== null ? levelsFromParam(rawLvs) : rawLv > 1 ? levelsFrom(rawLv) : []).join(',');
+  const levels = useMemo(() => (lv ? lv.split(',').map(Number) : []), [lv]);
   const inputRef = useRef<HTMLInputElement>(null);
   const cards = useProgress((s) => s.cards);
   const wrong = useProgress((s) => s.wrong);
@@ -111,7 +148,13 @@ export function WordsPage() {
       if (v) p.set('src', v);
       else p.delete('src');
     });
-  const resetFilters = () => writeParams((p) => ['cat', 'src', 'pos', 'status', 'lv', 'tier'].forEach((k) => p.delete(k)));
+  const setLevels = (v: number[]) =>
+    writeParams((p) => {
+      p.delete('lv');
+      if (v.length) p.set('lvs', v.join(','));
+      else p.delete('lvs');
+    });
+  const resetFilters = () => writeParams((p) => ['cat', 'src', 'pos', 'status', 'lv', 'lvs', 'tier'].forEach((k) => p.delete(k)));
   const clearQuery = () => {
     setQ('');
     writeParams(undefined, '');
@@ -140,12 +183,12 @@ export function WordsPage() {
         .sort((a, b) => b.f - a.f || a.i - b.i)
         .map((x) => x.w);
     }
-    if (minLevel > 1) base = base.filter((w) => w.level >= minLevel);
+    if (levels.length) base = base.filter((w) => inLevels(w.level, levels));
     if (pos) base = base.filter((w) => (pos === '구' ? w.pos.some((p) => p.endsWith('구')) : w.pos.includes(pos)));
     if (status === 'wrong') base = base.filter((w) => wrong[w.id]);
     else if (status) base = base.filter((w) => statusOf(cards[w.id]) === status);
     return q.trim() ? searchWords(base, q) : base;
-  }, [q, cat, src, pos, minLevel, status, statusData]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [q, cat, src, pos, levels, status, statusData]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const parentRef = useRef<HTMLDivElement>(null);
   // 단어 상세에서 뒤로 돌아왔으면 보던 위치에서 이어서 본다
@@ -291,14 +334,7 @@ export function WordsPage() {
           <option value="mastered">익힘</option>
           <option value="wrong">오답노트</option>
         </FilterSelect>
-        <FilterSelect label="단계" value={lv} onChange={(v) => setParam('lv', v)}>
-          <option value="">모든 단계</option>
-          {LEVELS.slice(1).map((l) => (
-            <option key={l.level} value={l.level}>
-              {l.level === LEVELS.length ? `${l.level}단계 (${l.name})` : `${l.level}단계 이상 (${l.name}~)`}
-            </option>
-          ))}
-        </FilterSelect>
+        <LevelFilter levels={levels} onChange={setLevels} />
         {filtersOn && (
           <button onClick={resetFilters} className="text-[13px] font-medium text-muted underline-offset-2 hover:text-ink hover:underline">
             필터 초기화

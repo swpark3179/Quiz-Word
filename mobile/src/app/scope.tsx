@@ -4,12 +4,12 @@ import { useMemo, useState } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { LEVELS } from '@shared/schema';
-import { filterScope, type Scope } from '@shared/scope';
+import { filterScope, toggleLevel, type Scope } from '@shared/scope';
 import { Button, Chip, T } from '@/components/ui';
 import { EXAMS, examName, quizSources, sourceName, WORDS } from '@/data/words';
 import { showActionSheet } from '@/lib/sheet';
 import { useProgress } from '@/store/progress';
-import { levelLabel, MODE_INFO, scopeOf, sessionHref, startFromSheet, useScopes, type StudyMode } from '@/store/session';
+import { MODE_INFO, scopeOf, sessionHref, startFromSheet, useScopes, type StudyMode } from '@/store/session';
 import { SHEET_IS_SCREEN, useTheme } from '@/theme';
 import { haptic } from '@/theme/haptics';
 
@@ -49,19 +49,6 @@ export default function ScopeSheet() {
         set({ file: i === 0 ? undefined : files[i - 1].id });
       },
     );
-  const pickLevel = () =>
-    showActionSheet(
-      {
-        title: '단계',
-        options: [...LEVELS.map((l) => (l.level === 1 ? '모든 단계 (쉬운 단어 포함)' : `${levelLabel(l.level)} (${l.name}${l.level < LEVELS.length ? '~' : ''})`)), '취소'],
-        cancelButtonIndex: LEVELS.length,
-      },
-      (i) => {
-        if (i >= LEVELS.length) return;
-        void haptic.select();
-        set({ minLevel: LEVELS[i].level });
-      },
-    );
 
   const start = () => {
     setStored(mode, scope);
@@ -89,9 +76,13 @@ export default function ScopeSheet() {
             <Chip label={scope.cat && scope.file ? sourceName(scope.cat, scope.file) : `${examName(scope.cat)} 전체 ▾`} active={!!scope.file} onPress={pickFile} />
           </Row>
         )}
+        {/* 단계는 여러 개 고를 수 있다 — 아무것도 안 고르면(모든 단계 칩) 모든 단계 */}
         {scope.set !== 'wrong' && (
           <Row label="단계">
-            <Chip label={`${levelLabel(scope.minLevel)} ▾`} active={scope.minLevel > 1} onPress={pickLevel} />
+            <Chip label="모든 단계" active={!scope.levels.length} onPress={() => set({ levels: [] })} />
+            {LEVELS.map((l) => (
+              <Chip key={l.level} label={`${l.level}단계 ${l.name}`} active={scope.levels.includes(l.level)} onPress={() => set({ levels: toggleLevel(scope.levels, l.level) })} />
+            ))}
           </Row>
         )}
         <Row label="학습 상태">

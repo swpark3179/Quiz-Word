@@ -5,7 +5,7 @@ import { assembleExams, buildWordData, freqIn, inExam, type ExamData } from '../
 import { normalizeWord, shortFromMeaning, type RawWord } from '../normalize';
 import { reviewPlan } from '../reviewPlan';
 import type { ExamInfo, Word } from '../schema';
-import { DEFAULT_SCOPE, filterScope, normalizeScope, notebookScope, scopeFromParams, scopeToParams, selectWords } from '../scope';
+import { DEFAULT_SCOPE, filterScope, levelsFrom, levelsLabel, normalizeLevels, normalizeScope, notebookScope, scopeFromParams, scopeToParams, selectWords, toggleLevel } from '../scope';
 import { searchWords } from '../search';
 import { maxIntervalFor, review, statusOf } from '../srs';
 import { dice, sharesGloss } from '../text';
@@ -349,10 +349,13 @@ describe('시험 데이터 (공통 사전 + 시험별 예문)', () => {
     const p = { cards: {}, wrong: {} };
     const ids = (scope: Parameters<typeof filterScope>[1]) => selectWords(data.WORDS, { ...scope, status: 'any', count: 0 }, p).map((x) => x.id);
     expect(ids({ ...DEFAULT_SCOPE, cat: 'exam-a' })).toEqual(['escalate', 'latency']);
-    expect(ids({ ...DEFAULT_SCOPE, cat: 'exam-a', minLevel: 1 })).toEqual(['make', 'escalate', 'latency']);
+    expect(ids({ ...DEFAULT_SCOPE, cat: 'exam-a', levels: [] })).toEqual(['make', 'escalate', 'latency']);
     expect(ids({ ...DEFAULT_SCOPE, cat: 'exam-a', file: 'set2' })).toEqual(['latency', 'escalate']);
     expect(ids({ ...DEFAULT_SCOPE, cat: 'exam-b' })).toEqual(['quota', 'escalate']);
-    expect(ids({ ...DEFAULT_SCOPE, cat: 'exam-a', minLevel: 6 })).toEqual(['latency']);
+    expect(ids({ ...DEFAULT_SCOPE, cat: 'exam-a', levels: [6] })).toEqual(['latency']);
+    // 높은 단계를 빼고 골라도 된다 (예전에는 "N단계 이상"이라 6단계가 늘 들어갔다)
+    expect(ids({ ...DEFAULT_SCOPE, cat: 'exam-a', levels: [1, 5] })).toEqual(['make', 'escalate']);
+    expect(ids({ ...DEFAULT_SCOPE, cat: 'exam-a', levels: [5] })).toEqual(['escalate']);
     expect(ids({ ...DEFAULT_SCOPE, set: 'all', order: 'alpha' })).toEqual(['escalate', 'latency', 'quota', 'robust']);
   });
 
@@ -371,25 +374,30 @@ describe('예전에 저장한 학습 범위 고치기', () => {
   ];
   const base = { status: 'unmastered', count: 20, order: 'freq' } as const;
 
-  it('core → 첫 시험 전체, 기초 제외 → 2단계 이상', () => {
-    expect(normalizeScope({ set: 'core', includeBasic: false, ...base }, exams)).toEqual({ set: 'exam', cat: 'ccar-f', minLevel: 2, ...base });
+  it('core → 첫 시험 전체, 기초 제외 → 2단계부터', () => {
+    expect(normalizeScope({ set: 'core', includeBasic: false, ...base }, exams)).toEqual({ set: 'exam', cat: 'ccar-f', levels: [2, 3, 4, 5, 6], ...base });
   });
-  it('문제 파일별 → 그 파일이 있는 시험, 기초 포함 → 1단계 이상', () => {
-    expect(normalizeScope({ set: 'file', file: 'part1', includeBasic: true, ...base }, exams)).toEqual({ set: 'exam', cat: 'other', file: 'part1', minLevel: 1, ...base });
+  it('문제 파일별 → 그 파일이 있는 시험, 기초 포함 → 모든 단계', () => {
+    expect(normalizeScope({ set: 'file', file: 'part1', includeBasic: true, ...base }, exams)).toEqual({ set: 'exam', cat: 'other', file: 'part1', levels: [], ...base });
   });
   it('없어진 한글 문제 파일이면 시험 전체로', () => {
-    expect(normalizeScope({ set: 'file', file: 'mock04-kor', includeBasic: true, ...base }, exams)).toEqual({ set: 'exam', cat: 'ccar-f', minLevel: 1, ...base });
+    expect(normalizeScope({ set: 'file', file: 'mock04-kor', includeBasic: true, ...base }, exams)).toEqual({ set: 'exam', cat: 'ccar-f', levels: [], ...base });
   });
   it('확장 포함(all)·오답노트·학습장은 그대로', () => {
-    expect(normalizeScope({ set: 'all', includeBasic: false, ...base }, exams)).toEqual({ set: 'all', minLevel: 2, ...base });
-    expect(normalizeScope({ set: 'wrong', includeBasic: true, status: 'any', count: 0, order: 'random' }, exams)).toEqual({ set: 'wrong', minLevel: 1, status: 'any', count: 0, order: 'random' });
+    expect(normalizeScope({ set: 'all', includeBasic: false, ...base }, exams)).toEqual({ set: 'all', levels: [2, 3, 4, 5, 6], ...base });
+    expect(normalizeScope({ set: 'wrong', includeBasic: true, status: 'any', count: 0, order: 'random' }, exams)).toEqual({ set: 'wrong', levels: [], status: 'any', count: 0, order: 'random' });
     expect(normalizeScope({ set: 'notebook', notebook: 'nb-1', includeBasic: true, status: 'any', count: 0, order: 'random' }, exams)).toEqual(notebookScope('nb-1'));
   });
   it('새 형식은 그대로 두고, 예문 전용 파일·모르는 시험은 버린다', () => {
-    const ok = { set: 'exam', cat: 'other', file: 'part1', minLevel: 4, status: 'due', count: 0, order: 'random' } as const;
+    const ok = { set: 'exam', cat: 'other', file: 'part1', levels: [2, 4], status: 'due', count: 0, order: 'random' } as const;
     expect(normalizeScope(ok, exams)).toEqual(ok);
-    expect(normalizeScope({ set: 'exam', cat: 'ccar-f', file: 'vocab', minLevel: 3 }, exams)).toEqual({ ...DEFAULT_SCOPE, cat: 'ccar-f', minLevel: 3 });
-    expect(normalizeScope({ set: 'exam', cat: 'gone', minLevel: 9 }, exams)).toEqual({ ...DEFAULT_SCOPE, cat: 'ccar-f', minLevel: 6 });
+    expect(normalizeScope({ set: 'exam', cat: 'ccar-f', file: 'vocab', levels: [3] }, exams)).toEqual({ ...DEFAULT_SCOPE, cat: 'ccar-f', levels: [3] });
+    expect(normalizeScope({ set: 'exam', cat: 'gone', levels: [6, 9, 2, 2, 'x'] }, exams)).toEqual({ ...DEFAULT_SCOPE, cat: 'ccar-f', levels: [2, 6] });
+  });
+  it('예전 "N단계 이상"(minLevel) → N단계부터 끝까지', () => {
+    expect(normalizeScope({ set: 'exam', cat: 'ccar-f', minLevel: 4 }, exams)).toEqual({ ...DEFAULT_SCOPE, cat: 'ccar-f', levels: [4, 5, 6] });
+    expect(normalizeScope({ set: 'exam', cat: 'ccar-f', minLevel: 1 }, exams)).toEqual({ ...DEFAULT_SCOPE, cat: 'ccar-f', levels: [] });
+    expect(normalizeScope({ set: 'exam', cat: 'gone', minLevel: 9 }, exams)).toEqual({ ...DEFAULT_SCOPE, cat: 'ccar-f', levels: [6] });
   });
   it('깨진 값·빈 값이면 기본 범위 (첫 시험)', () => {
     expect(normalizeScope(null, exams)).toEqual({ ...DEFAULT_SCOPE, cat: 'ccar-f' });
@@ -397,11 +405,38 @@ describe('예전에 저장한 학습 범위 고치기', () => {
     expect(normalizeScope({}, [])).toEqual(DEFAULT_SCOPE);
   });
   it('주소: 새 형식은 오갔다 와도 같고, 예전 주소(set=core&basic=1, set=file)도 읽는다', () => {
-    const scope = { set: 'exam', cat: 'other', file: 'part1', minLevel: 3, status: 'new', count: 10, order: 'alpha' } as const;
+    const scope = { set: 'exam', cat: 'other', file: 'part1', levels: [1, 3, 5], status: 'new', count: 10, order: 'alpha' } as const;
     expect(scopeFromParams(new URLSearchParams(scopeToParams(scope)), DEFAULT_SCOPE, exams)).toEqual(scope);
-    expect(scopeFromParams(new URLSearchParams('set=core&basic=1&status=any&count=0&order=random'), DEFAULT_SCOPE, exams)).toEqual({ set: 'exam', cat: 'ccar-f', minLevel: 1, status: 'any', count: 0, order: 'random' });
+    // 모든 단계도 기본값(2단계부터)으로 돌아가지 않는다
+    const all = { ...scope, levels: [] };
+    expect(scopeFromParams(new URLSearchParams(scopeToParams(all)), DEFAULT_SCOPE, exams)).toEqual(all);
+    expect(scopeFromParams(new URLSearchParams('set=exam&cat=other&lv=5'), DEFAULT_SCOPE, exams)).toEqual({ ...DEFAULT_SCOPE, cat: 'other', levels: [5, 6] });
+    expect(scopeFromParams(new URLSearchParams('set=core&basic=1&status=any&count=0&order=random'), DEFAULT_SCOPE, exams)).toEqual({ set: 'exam', cat: 'ccar-f', levels: [], status: 'any', count: 0, order: 'random' });
     expect(scopeFromParams(new URLSearchParams('set=file&file=mock04&basic=0'), DEFAULT_SCOPE, exams)).toEqual({ ...DEFAULT_SCOPE, cat: 'ccar-f', file: 'mock04' });
     expect(scopeFromParams(new URLSearchParams('set=wrong'), { ...DEFAULT_SCOPE, cat: 'other', file: 'part1' }, exams)).toEqual({ ...DEFAULT_SCOPE, set: 'wrong' });
+  });
+});
+
+describe('단계 고르기', () => {
+  it('겹침·범위 밖 값은 버리고, 모든 단계를 골랐으면 빈 목록(= 모든 단계)', () => {
+    expect(normalizeLevels([5, 2, 5, 0, 7, 3.5, '4', ''])).toEqual([2, 4, 5]);
+    expect(normalizeLevels([1, 2, 3, 4, 5, 6])).toEqual([]);
+    expect(levelsFrom(2)).toEqual([2, 3, 4, 5, 6]);
+    expect(levelsFrom(1)).toEqual([]);
+  });
+  it('하나씩 켜고 끈다 — 모든 단계에서 누르면 그 단계만, 마지막 하나를 끄거나 다 켜면 모든 단계', () => {
+    expect(toggleLevel([], 3)).toEqual([3]);
+    expect(toggleLevel([3], 5)).toEqual([3, 5]);
+    expect(toggleLevel([3, 5], 3)).toEqual([5]);
+    expect(toggleLevel([5], 5)).toEqual([]);
+    expect(toggleLevel([1, 2, 3, 4, 6], 5)).toEqual([]);
+  });
+  it('이름', () => {
+    expect(levelsLabel([])).toBe('모든 단계');
+    expect(levelsLabel([4])).toBe('4단계');
+    expect(levelsLabel([2, 3])).toBe('2·3단계');
+    expect(levelsLabel([2, 3, 4, 5, 6])).toBe('2~6단계');
+    expect(levelsLabel([1, 3, 5])).toBe('1·3·5단계');
   });
 });
 

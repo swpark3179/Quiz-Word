@@ -3,7 +3,7 @@ import { Play } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import { EXAMS, examName, quizSources, WORDS } from '../data/words';
 import { LEVELS } from '../lib/schema';
-import { filterScope, normalizeScope, type Scope } from '../lib/scope';
+import { filterScope, normalizeScope, toggleLevel, type Scope } from '../lib/scope';
 import { useProgress } from '../store/progress';
 import { isModalOpen, isTyping } from './Dialog';
 import { Button, Kbd } from './ui';
@@ -13,6 +13,7 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
     <button
       type="button"
       onClick={onClick}
+      aria-pressed={active}
       className={`rounded-full border px-3.5 py-1.5 text-[13px] font-medium transition ${
         active ? 'border-primary bg-primary-soft text-primary-text' : 'border-line bg-surface text-ink-2 hover:border-primary/40 hover:text-ink'
       }`}
@@ -101,20 +102,17 @@ export function ScopePicker({ scope, onChange }: { scope: Scope; onChange: (s: S
           </select>
         </Row>
       )}
+      {/* 단계는 여러 개 고를 수 있다 — 아무것도 안 고르면(모든 단계 칩) 모든 단계 */}
       {scope.set !== 'wrong' && (
         <Row label="단계">
-          <select
-            aria-label="단계"
-            value={scope.minLevel}
-            onChange={(e) => set({ minLevel: Number(e.target.value) })}
-            className={`${selectCls} ${scope.minLevel > 1 ? 'border-primary bg-primary-soft text-primary-text' : 'border-line bg-surface text-ink-2'}`}
-          >
-            {LEVELS.map((l) => (
-              <option key={l.level} value={l.level}>
-                {l.level === 1 ? '모든 단계 (쉬운 단어 포함)' : l.level === LEVELS.length ? `${l.level}단계만 (${l.name})` : `${l.level}단계 이상 (${l.name}~)`}
-              </option>
-            ))}
-          </select>
+          <Chip active={!scope.levels.length} onClick={() => set({ levels: [] })}>
+            모든 단계
+          </Chip>
+          {LEVELS.map((l) => (
+            <Chip key={l.level} active={scope.levels.includes(l.level)} onClick={() => set({ levels: toggleLevel(scope.levels, l.level) })}>
+              {l.level}단계 <span className="opacity-70">{l.name}</span>
+            </Chip>
+          ))}
         </Row>
       )}
       <Row label="상태">
@@ -160,7 +158,7 @@ export function ScopePicker({ scope, onChange }: { scope: Scope; onChange: (s: S
         ) : scope.set === 'wrong' ? (
           '오답노트가 비어 있어요. 다른 범위를 골라 주세요.'
         ) : (
-          '조건에 맞는 단어가 없어요. 범위나 상태를 바꿔 주세요.'
+          '조건에 맞는 단어가 없어요. 범위·단계·상태를 바꿔 주세요.'
         )}
       </div>
     </div>
