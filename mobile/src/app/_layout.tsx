@@ -7,6 +7,8 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { enableFreeze } from 'react-native-screens';
 import { DialogHost } from '@/components/DialogHost';
 import { ToastHost } from '@/components/motion';
+import { afterFrame } from '@/lib/afterFrame';
+import { exportLexicon } from '@/lib/sharedLexicon';
 import { prepareAudio } from '@/lib/tts';
 import { useProgress } from '@/store/progress';
 import { largeHeader, sheetOptions, useTheme } from '@/theme';
@@ -26,6 +28,8 @@ export default function RootLayout() {
 
   useEffect(() => {
     void prepareAudio();
+    // 문제은행이 읽을 단어 목록 — 첫 화면을 그린 뒤에 (세트가 그대로면 아무것도 안 한다)
+    afterFrame(exportLexicon);
   }, []);
 
   const navTheme = dark

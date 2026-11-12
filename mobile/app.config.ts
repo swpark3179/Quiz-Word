@@ -48,6 +48,11 @@ const config: ExpoConfig = {
       ITSAppUsesNonExemptEncryption: false,
       CFBundleDevelopmentRegion: 'ko',
     },
+    // 문제은행 앱과 단어 목록을 나누는 공유 폴더 (src/lib/sharedLexicon.ts). App ID 와 프로비저닝 프로파일에도
+    // 같은 App Group 이 있어야 빌드된다 — README 의 '문제은행 연동' 참고
+    entitlements: {
+      'com.apple.security.application-groups': ['group.com.swpark3179.shared'],
+    },
   },
   android: {
     package: PREVIEW ? 'com.swpark3179.quizword2.preview' : 'com.swpark3179.quizword2',

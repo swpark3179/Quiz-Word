@@ -15,6 +15,7 @@ mobile/
     (tabs)/           오늘 · 단어장 · 학습 · 학습장 · 오답노트 (네이티브 탭 — 안드로이드는 _layout.android.tsx)
       notebooks/      학습장 목록 · [id] 학습장 하나 (검색창으로 담기, 쓸어서 빼기, 플래시카드·객관식·문맥 뜻)
     word/[id].tsx     단어 상세
+    +native-intent.tsx  다른 앱이 연 주소 다듬기 (quizword://lookup → 단어장 탭) — 아래 '문제은행 앱과 함께 쓰기'
     scope.tsx         범위 고르기 시트
     notebook-merge.tsx  학습장 합치기 시트 (둘 이상 골라 겹치는 단어 없이 새 학습장, 기존 학습장 남겨두기/삭제)
     session/          플래시카드 · 객관식 · 복습 (전체 화면)
@@ -23,6 +24,8 @@ mobile/
   src/lib/wordSet.ts  단어 세트 — 앱 기본(내장) 또는 불러온 파일(문서 폴더 wordset.json)을 켤 때 읽음
   src/lib/examPacks.ts 시험 팩 — 시험 하나를 지금 단어 위에 얹는 파일(문서 폴더 exampacks/)을 읽고 쓰기
   src/lib/sheet.ts    선택 메뉴 · 이름 입력창 (iOS 는 시스템 것, 안드로이드는 sheet.android.ts + DialogHost)
+  src/lib/sharedLexicon.ts  문제은행이 읽을 단어 목록 내보내기 (iOS App Group · 안드로이드 ContentProvider)
+  modules/lexicon-provider/  안드로이드 전용 로컬 모듈 — 단어 목록 ContentProvider (Kotlin)
   android-version.json  안드로이드 버전 (Release 워크플로가 올림)
   src/theme/          디자인 토큰 · 모션 곡선 · 진동
   src/generated/      ← 자동 생성 (git 제외): 웹과 공용 로직(../src/lib) + 단어 데이터(../data/words, ../data/exams)
@@ -76,6 +79,37 @@ npm start          # QR 코드가 나오면 iPhone 카메라로 찍어 Expo Go �
 - 파일 검사는 불러올 때 한 번 하고(웹의 검증기와 같은 코드), 켤 때는 다시 하지 않습니다.
 - 설정 → 시험의 **시험 팩 만드는 법**은 안내 페이지(지시문 예시·파일 검사)를 브라우저로 열고, **가이드 주소 보내기**는 에이전트에게 줄 가이드 주소를 공유 시트로 보냅니다(복사·메시지·AirDrop). 주소는 `src/lib/examPacks.ts` 에 있습니다.
 
+## 문제은행 앱과 함께 쓰기
+
+문제은행(Quiz-Bank) 앱이 이 앱의 단어를 씁니다. 두 가지입니다.
+
+**1. 등록 단어 목록 (문제은행의 '단어장 앱' 모드)** — 모바일 OS 는 앱끼리 보이지 않게 함수를 부르고 값을 돌려받을 수 없어서,
+이 앱이 켜질 때 등록 단어 목록(`lexicon.json`)을 두 앱이 함께 읽는 곳에 써 둡니다(`src/lib/sharedLexicon.ts`, 형식은 `../src/lib/lexicon.ts`).
+문제은행은 문제 텍스트를 공백으로 나눈 단어 배열을 이 목록과 맞춰 **등록된 단어만** 강조합니다.
+
+- 담기는 것: id · 표제어 · 한 줄 뜻 · 품사 · 발음 · 변화형. 진행 기록 같은 개인 데이터는 넣지 않습니다.
+- 단어 세트·시험 팩을 바꾸면 앱이 다시 시작되면서 목록도 새로 씁니다(바뀌지 않았으면 쓰지 않음). **이 앱을 한 번은 켜야** 목록이 생깁니다.
+- iOS: App Group `group.com.swpark3179.shared` 공유 폴더의 `quiz-word/lexicon.json`. 두 앱의 App ID 에 같은 App Group 이 있어야 합니다(아래 체크리스트 1번). Expo Go 에서는 공유 폴더가 없어 아무것도 하지 않습니다.
+- 안드로이드: 앱 문서 폴더의 `shared/lexicon.json` 을 `modules/lexicon-provider` 의 ContentProvider 가 읽기 전용으로 내보냅니다 —
+  `content://com.swpark3179.quizword2.lexicon/lexicon.json` (미리보기 빌드는 `com.swpark3179.quizword2.preview.lexicon`).
+  확인: `adb shell content read --uri content://com.swpark3179.quizword2.lexicon/lexicon.json`
+
+**2. 단어 상세 열기** — 다른 앱이 이 주소를 열면 단어장 탭에서 그 단어를 찾습니다 (x-callback-url 방식).
+
+```
+quizword://lookup?word=<단어>&x-source=<앱 이름>&x-error=<결과 없음일 때 열 주소, 인코딩>
+```
+
+| 찾은 결과 | 이 앱 | 부른 앱에 |
+|---|---|---|
+| 표제어·변화형이 정확히 같음 (대소문자 무시, ran → run) | 단어장 탭 검색창에 단어 → 상세 화면 | 알리지 않음 (iOS 왼쪽 위 '◀ 앱 이름'으로 돌아감) |
+| 비슷한 단어만 있음 | 단어장 탭 검색 결과 목록 | 알리지 않음 |
+| 없음 | 단어장 탭 (찾는 단어가 없어요) | `x-error` 주소에 `errorCode=not_found&errorMessage=…&word=…` 를 붙여 연다 → 그 앱이 다시 앞으로 |
+
+- `x-error` 는 아는 앱의 스킴(`quizbank`)만 엽니다 (`src/lib/wordLookup.ts` 의 `CALLBACK_SCHEMES`). 단어는 64자까지.
+- 해 보기: iPhone Safari 주소창에 `quizword://lookup?word=escalate` / 안드로이드 `adb shell am start -a android.intent.action.VIEW -d "quizword://lookup?word=escalate"`. Expo Go 에서는 `exp://<PC IP>:8081/--/lookup?word=escalate`
+- 링크가 올 때 플래시카드·객관식이 열려 있으면 단어장 탭으로 가면서 닫힐 수 있습니다 (진행 기록은 판정마다 저장되어 있음).
+
 ## 화면·로직을 고쳤을 때 → TestFlight 빌드 (안드로이드는 Release)
 
 OTA 는 쓰지 않으므로, 화면 코드나 공용 로직(`src/lib`)을 고치면 아래 **TestFlight 빌드**(안드로이드는 [Release 워크플로](#배포-release-워크플로))로 반영합니다. 빌드에는 그 시점의 `data/words` 가 앱 기본 단어로 함께 들어갑니다.
@@ -97,6 +131,9 @@ Quiz-Bank 와 같은 방식(Expo prebuild → xcodebuild → altool)이며 macOS
 1. **Apple Developer** (developer.apple.com → Certificates, IDs & Profiles)
    - Identifiers → **App ID** 추가: `com.swpark3179.quizword2`
      (번들 ID 를 바꾸면 그 ID 로 App ID·프로파일을 다시 만들고 프로파일 시크릿 2개를 바꿔야 합니다. 워크플로가 빌드 전에 검사합니다)
+   - Identifiers → **App Groups** 에 `group.com.swpark3179.shared` 를 만들고, 위 App ID 와 문제은행 App ID(`com.swpark3179.quizbank`) 의
+     Capabilities 에서 **App Groups** 를 켜 이 그룹을 고릅니다 (문제은행과 단어 목록을 나누는 데 씀).
+     이미 프로파일을 만든 뒤라면 프로파일을 **다시 만들어** 시크릿을 바꿔야 합니다 — 워크플로가 프로파일에 그룹이 있는지 빌드 전에 검사합니다
    - Profiles → **App Store** 배포 프로파일 생성 (기존 Apple Distribution 인증서 선택) → 다운로드
 2. **App Store Connect** → 앱 → `+` 새로운 앱
    - 플랫폼 iOS, 번들 ID `com.swpark3179.quizword2`, SKU 아무 값, 이름은 App Store 전체에서 유일해야 함 (예: "Quiz Word SW")
