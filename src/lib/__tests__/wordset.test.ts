@@ -39,6 +39,7 @@ describe('단어 세트 파일 (웹 → 앱)', () => {
     expect(() => parseWordSet(null)).toThrow('단어 세트 파일이 아닙니다');
     expect(() => parseWordSet({ app: 'quiz-word', version: 1, cards: {}, settings: {} })).toThrow('진행 기록 파일');
     expect(() => parseWordSet({ ...ok, kind: 'other' })).toThrow('단어 세트 파일이 아닙니다');
+    expect(() => parseWordSet({ ...ok, kind: 'exampack' })).toThrow('시험 팩 파일이에요');
     expect(() => parseWordSet({ ...ok, version: 3 })).toThrow('버전 3');
     expect(() => parseWordSet({ ...ok, version: 1, corpus: [], sources: [] })).toThrow('예전 형식');
     expect(() => parseWordSet({ ...ok, words: [] })).toThrow('단어가 하나도 없는');

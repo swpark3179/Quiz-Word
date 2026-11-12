@@ -1,0 +1,443 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://swpark3179.github.io/Quiz-Word/exampack.schema.json",
+  "title": "Quiz Word 시험 팩 (버전 1)",
+  "description": "시험 하나와 그 시험이 쓰는 단어를 담은 파일. 구조·필수 필드·허용값만 본다 — 전체 검사는 validate-exampack.mjs 로.",
+  "type": "object",
+  "required": [
+    "app",
+    "kind",
+    "version",
+    "builtAt",
+    "exam",
+    "words"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "app": {
+      "const": "quiz-word"
+    },
+    "kind": {
+      "const": "exampack"
+    },
+    "version": {
+      "const": 1
+    },
+    "builtAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "exam": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "sources",
+        "index"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "order": {
+          "type": "number"
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "enum": [
+                  "quiz",
+                  "wordbook"
+                ]
+              }
+            }
+          }
+        },
+        "index": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "propertyNames": {
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+            },
+            "additionalProperties": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "minProperties": 1,
+          "description": "단어 id → 문제 파일 id → 나온 횟수"
+        },
+        "examples": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "propertyNames": {
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+            },
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "en",
+                  "surface",
+                  "pos",
+                  "sense"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "n": {
+                    "type": "number",
+                    "description": "그 단어의 예문을 보여 줄 순서 (작은 것부터)"
+                  },
+                  "q": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "문제 번호"
+                  },
+                  "en": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "surface": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "en 안에 실제로 나온 표기"
+                  },
+                  "pos": {
+                    "enum": [
+                      "명사",
+                      "동사",
+                      "형용사",
+                      "부사",
+                      "전치사",
+                      "접속사",
+                      "대명사",
+                      "한정사",
+                      "감탄사",
+                      "약어",
+                      "명사구",
+                      "동사구",
+                      "형용사구",
+                      "부사구",
+                      "전치사구"
+                    ]
+                  },
+                  "sense": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "그 단어 senses 의 ko 중 하나와 글자 그대로 같아야 한다"
+                  },
+                  "ko": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "description": "문제 파일 id → 단어 id → 예문"
+        },
+        "sentences": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "en"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "q": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "ko": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "description": "문제 파일 id → 문제 문장"
+        },
+        "notes": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "단어 id → 마크다운 노트"
+        }
+      }
+    },
+    "words": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "word",
+          "level",
+          "pos",
+          "meaning",
+          "short",
+          "senses",
+          "domain"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "description": "표제어를 소문자로, 아포스트로피는 지우고, 영문자·숫자가 아닌 것은 하이픈 하나로"
+          },
+          "word": {
+            "type": "string",
+            "minLength": 1
+          },
+          "level": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "pos": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "enum": [
+                "명사",
+                "동사",
+                "형용사",
+                "부사",
+                "전치사",
+                "접속사",
+                "대명사",
+                "한정사",
+                "감탄사",
+                "약어",
+                "명사구",
+                "동사구",
+                "형용사구",
+                "부사구",
+                "전치사구"
+              ]
+            }
+          },
+          "ipa": {
+            "type": "string"
+          },
+          "meaning": {
+            "type": "string",
+            "minLength": 1
+          },
+          "short": {
+            "type": "string",
+            "minLength": 1
+          },
+          "senses": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "pos",
+                "ko"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "pos": {
+                  "enum": [
+                    "명사",
+                    "동사",
+                    "형용사",
+                    "부사",
+                    "전치사",
+                    "접속사",
+                    "대명사",
+                    "한정사",
+                    "감탄사",
+                    "약어",
+                    "명사구",
+                    "동사구",
+                    "형용사구",
+                    "부사구",
+                    "전치사구"
+                  ]
+                },
+                "ko": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "forms": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "synonyms": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "domain": {
+            "enum": [
+              "생성·추가",
+              "삭제·제거",
+              "변경·수정",
+              "확인·검증",
+              "실행·처리",
+              "이동·전달",
+              "저장·기록",
+              "검색·조회",
+              "비교·평가·판단",
+              "제어·제한·관리",
+              "연결·통합",
+              "요청·소통",
+              "시작·종료",
+              "오류·실패·위험",
+              "원인·결과·영향",
+              "정도·양·크기",
+              "시간·순서·빈도",
+              "구조·구성·부분",
+              "데이터·정보·문서",
+              "시스템·도구·기술",
+              "사람·조직·역할",
+              "상태·성질",
+              "정확·품질·신뢰",
+              "계획·목표·전략",
+              "비즈니스·업무",
+              "논리·관계·연결어",
+              "일반"
+            ]
+          },
+          "memory": {
+            "type": "object",
+            "description": "외우기 — story 나 hook 중 하나는 있어야 한다",
+            "additionalProperties": false,
+            "anyOf": [
+              {
+                "required": [
+                  "story"
+                ]
+              },
+              {
+                "required": [
+                  "hook"
+                ]
+              }
+            ],
+            "properties": {
+              "roots": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "part",
+                    "ko"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "part": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "ko": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              },
+              "origin": {
+                "type": "string",
+                "maxLength": 50
+              },
+              "story": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "hook": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 60
+              },
+              "family": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        },
+        "if": {
+          "properties": {
+            "level": {
+              "type": "integer",
+              "minimum": 2
+            }
+          },
+          "required": [
+            "level"
+          ]
+        },
+        "then": {
+          "required": [
+            "memory"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -27,6 +27,9 @@ export const {
   contextsOf,
 } = buildWordData(active.words, active.exams);
 
+/** 지금 쓰는 사전·시험 원본 — 시험 팩을 불러오기 전에 무엇이 바뀔지 미리 따져 보는 데 쓴다 */
+export const ACTIVE_RAW = { words: active.words, exams: active.exams };
+
 /** 주 시험 — 설정에 없거나 없어진 시험이면 첫 시험 */
 export const mainExam = (id: string | undefined) => EXAMS.find((e) => e.id === id)?.id ?? EXAMS[0]?.id;
 

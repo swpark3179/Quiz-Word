@@ -16,6 +16,9 @@
     "data:levels": "tsx scripts/apply-levels.ts",
     "data:memory": "tsx scripts/apply-memory.ts",
     "data:migrate-check": "tsx scripts/migrations/v2.ts --check",
+    "data:add-pack": "tsx scripts/add-exam-pack.ts",
+    "data:pack-exam": "tsx scripts/pack-exam.ts",
+    "docs:build": "tsx scripts/build-docs.ts",
     "smoke": "tsx scripts/smoke.ts"
   },
   "dependencies": {
@@ -35,6 +38,8 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.2.1",
+    "ajv": "^8.20.0",
+    "esbuild": "^0.28.2",
     "playwright-core": "^1.65.0",
     "tailwindcss": "^4.3.5",
     "tsx": "^4.23.15",

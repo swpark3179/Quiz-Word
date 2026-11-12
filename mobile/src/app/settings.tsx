@@ -4,15 +4,18 @@ import Constants from 'expo-constants';
 import * as DocumentPicker from 'expo-document-picker';
 import { File, Paths } from 'expo-file-system';
 import * as Sharing from 'expo-sharing';
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { ActionSheetIOS, Alert, Pressable, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
+import { mergeExamPack, type ExamPackFile } from '@shared/exampack';
+import { inExam } from '@shared/exams';
 import { dayKey } from '@shared/text';
 import { diffWordSets, type WordSetFile } from '@shared/wordset';
 import { useToast } from '@/components/motion';
 import { Icon, Segmented, T } from '@/components/ui';
-import { EXAMS, examName, mainExam, WORD_SET_INFO, WORDS } from '@/data/words';
+import { ACTIVE_RAW, EXAMS, examName, mainExam, quizSources, WORD_SET_INFO, WORDS } from '@/data/words';
+import { installExamPack, readExamPackFile, removeExamPack } from '@/lib/examPacks';
 import { englishVoices, speak, type VoiceInfo } from '@/lib/tts';
-import { canImportWordSet, installWordSet, readWordSetFile, removeImportedWordSet, restartApp } from '@/lib/wordSet';
+import { canImportWordSet, installWordSet, readWordSetFile, removeImportedWordSet, restartApp, type InstalledPack } from '@/lib/wordSet';
 import { exportProgress, useProgress } from '@/store/progress';
 import { type, useTheme } from '@/theme';
 import { haptic } from '@/theme/haptics';
@@ -188,12 +191,98 @@ export default function Settings() {
       },
     ]);
 
+  /* ───── 시험: 시험 팩으로 시험 하나를 얹기 · 얹은 시험 지우기 ───── */
+  const examRows = useMemo(
+    () =>
+      EXAMS.map((e) => ({
+        id: e.id,
+        name: e.name,
+        files: quizSources(e.id).length,
+        words: WORDS.filter((w) => inExam(w, e.id)).length,
+        pack: WORD_SET_INFO.packs.find((p) => p.id === e.id),
+      })),
+    [],
+  );
+
+  const applyExamPack = async (pack: ExamPackFile) => {
+    try {
+      installExamPack(pack);
+    } catch (e) {
+      Alert.alert('시험 팩을 저장하지 못했어요', (e as Error).message);
+      return;
+    }
+    void haptic.success();
+    await restartOrTell('시험을 추가했어요');
+  };
+
+  const doImportExamPack = async () => {
+    const res = await DocumentPicker.getDocumentAsync({ type: ['application/json', 'public.json', '*/*'], copyToCacheDirectory: true });
+    if (res.canceled || !res.assets?.[0]) return;
+    let pack: ExamPackFile;
+    try {
+      pack = await readExamPackFile(res.assets[0].uri);
+    } catch (e) {
+      Alert.alert('불러오지 못했어요', (e as Error).message);
+      return;
+    }
+    // 지금 단어 위에 얹으면 무엇이 바뀌는지 미리 따져 본다
+    const { report } = mergeExamPack(ACTIVE_RAW, pack);
+    const sensed = new Set(report.addedSenses.map((s) => s.id)).size;
+    Alert.alert(
+      report.replacedExam ? `'${report.examName}' 시험을 바꿀까요?` : `'${report.examName}' 시험을 추가할까요?`,
+      [
+        `문제 파일 ${report.sources}개 · 예문 ${report.examples.toLocaleString()}개 · ${formatDate(pack.builtAt)} 에 만든 파일`,
+        `새 단어 ${report.addedWords.length.toLocaleString()}개를 넣고, 이미 있는 단어 ${report.keptWords.length.toLocaleString()}개는 그대로 둬요${sensed ? ` (그중 ${sensed}개에 이 시험에서 쓰는 뜻을 덧붙여요)` : ''}.`,
+        report.replacedExam ? '같은 이름표(id)의 시험이 이미 있어서 그 시험의 예문·횟수가 이 파일의 것으로 바뀌어요.' : '',
+        '다른 시험·진행 기록·학습장은 그대로예요. 추가하면 앱이 다시 시작돼요.',
+      ]
+        .filter(Boolean)
+        .join('\n\n'),
+      [
+        { text: '취소', style: 'cancel' },
+        { text: report.replacedExam ? '바꾸고 다시 시작' : '추가하고 다시 시작', onPress: () => void applyExamPack(pack) },
+      ],
+    );
+  };
+
+  const removePack = (pack: InstalledPack) =>
+    Alert.alert(
+      `'${pack.name}' 시험을 지울까요?`,
+      [
+        pack.replaced ? '이 시험 팩을 지우면 앱 기본 단어에 있던 같은 시험으로 돌아가요.' : '이 시험과, 이 시험에만 있던 단어가 빠져요.',
+        '그 단어의 진행 기록은 지워지지 않고, 같은 시험 팩을 다시 불러오면 이어져요. 지우면 앱이 다시 시작돼요.',
+      ].join('\n\n'),
+      [
+        { text: '취소', style: 'cancel' },
+        {
+          text: '지우고 다시 시작',
+          style: 'destructive',
+          onPress: () => {
+            try {
+              removeExamPack(pack.id);
+            } catch (e) {
+              Alert.alert('지우지 못했어요', (e as Error).message);
+              return;
+            }
+            void restartOrTell('시험을 지웠어요');
+          },
+        },
+      ],
+    );
+
+  const examFooter = [
+    WORD_SET_INFO.packErrors.length ? `읽지 못해 건너뛴 시험 팩이 있어요 (${WORD_SET_INFO.packErrors.join(' / ')}). 그 시험 팩을 다시 불러오세요.` : '',
+    '시험 팩(*.exampack.json)은 시험 하나를 지금 단어 위에 더하는 파일이에요. 이미 있는 단어의 뜻·단계·외우기는 바뀌지 않아요. 추가한 시험은 눌러서 지울 수 있어요.',
+  ]
+    .filter(Boolean)
+    .join('\n');
+
   const imported = WORD_SET_INFO.origin === 'imported';
   const bundledNewer = imported && WORD_SET_INFO.bundledBuiltAt > WORD_SET_INFO.builtAt;
   const wordSetFooter = [
     WORD_SET_INFO.error ? `불러온 단어 세트를 읽지 못해 앱 기본 단어로 열었어요 (${WORD_SET_INFO.error}). 파일을 다시 불러오세요.` : '',
     bundledNewer ? `앱 기본 단어(${formatDate(WORD_SET_INFO.bundledBuiltAt)})가 불러온 파일보다 최근이에요. 되돌리면 앱 기본 단어를 써요.` : '',
-    '웹 설정의 "단어 세트 파일 내려받기"로 만든 파일을 AirDrop·iCloud Drive 등으로 iPhone 에 옮긴 뒤 불러오세요. 진행 기록은 단어 id 기준이라 그대로 이어집니다.',
+    '웹 설정의 "단어 세트 파일 내려받기"로 만든 파일을 AirDrop·iCloud Drive 등으로 iPhone 에 옮긴 뒤 불러오세요. 진행 기록은 단어 id 기준이라 그대로 이어집니다. 단어 세트를 바꾸거나 되돌려도 시험 팩으로 추가한 시험은 남아요.',
   ]
     .filter(Boolean)
     .join('\n');
@@ -284,6 +373,19 @@ export default function Settings() {
             ]}
           />
         </View>
+      </Group>
+
+      <Group title="시험" footer={examFooter}>
+        {examRows.map((e) => (
+          <Row
+            key={e.id}
+            label={e.name}
+            detail={`문제 파일 ${e.files}개 · 단어 ${e.words.toLocaleString()}개${e.pack ? ` · 추가한 시험 (${formatDate(e.pack.builtAt)})` : ''}`}
+            onPress={e.pack ? () => removePack(e.pack!) : undefined}
+            last={!canImportWordSet && e.id === examRows[examRows.length - 1].id}
+          />
+        ))}
+        {canImportWordSet && <Row label="시험 팩 불러오기" detail="시험 하나를 지금 단어 위에 더해요" onPress={doImportExamPack} last />}
       </Group>
 
       <Group title="단어 세트" footer={wordSetFooter}>

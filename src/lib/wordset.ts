@@ -55,6 +55,7 @@ const isStr = (v: unknown): v is string => typeof v === 'string' && v.length > 0
 export function parseWordSet(data: unknown): WordSetFile {
   if (!isObj(data)) throw new Error('단어 세트 파일이 아닙니다 (JSON 객체가 아님)');
   if (data.app === WORDSET_APP && isObj(data.cards)) throw new Error('진행 기록 파일이에요. 진행 기록은 설정 → 진행 기록 → 가져오기에서 불러오세요.');
+  if (data.app === WORDSET_APP && data.kind === 'exampack') throw new Error('시험 팩 파일이에요 (시험 하나를 더하는 파일). 설정 → 시험 → 시험 팩 불러오기로 여세요.');
   if (data.app !== WORDSET_APP || data.kind !== WORDSET_KIND) throw new Error('단어 세트 파일이 아닙니다. 웹 설정의 "단어 세트 파일 내려받기"로 만든 파일을 고르세요.');
   if (typeof data.version !== 'number' || data.version > WORDSET_VERSION) throw new Error(`이 앱이 모르는 단어 세트 형식이에요 (버전 ${String(data.version)}). 앱을 먼저 업데이트하세요.`);
   if (data.version < WORDSET_VERSION) throw new Error('예전 형식의 단어 세트 파일이에요. 웹 설정의 "단어 세트 파일 내려받기"로 새로 만들어 주세요.');

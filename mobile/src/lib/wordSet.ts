@@ -6,11 +6,13 @@
  */
 import { File, Paths } from 'expo-file-system';
 import * as Updates from 'expo-updates';
-import { DevSettings, Platform } from 'react-native';
+import { DevSettings } from 'react-native';
 import { BUNDLED_BUILT_AT, loadBundledExams, loadBundledWords } from '@/generated/wordFiles';
+import { mergeExamPack } from '@shared/exampack';
 import type { ExamData } from '@shared/exams';
 import type { RawWord } from '@shared/normalize';
 import { parseWordSet, type WordSetFile } from '@shared/wordset';
+import { canUseFiles, loadInstalledPacks } from '@/lib/examPacks';
 import { useProgress } from '@/store/progress';
 
 export interface WordSetInfo {
@@ -22,6 +24,21 @@ export interface WordSetInfo {
   bundledBuiltAt: string;
   /** 불러온 파일을 읽지 못해 앱 기본 단어로 열었을 때의 이유 */
   error?: string;
+  /** 시험 팩으로 얹은 시험 */
+  packs: InstalledPack[];
+  /** 읽지 못해 건너뛴 시험 팩 */
+  packErrors: string[];
+}
+
+/** 시험 팩으로 얹은 시험 하나 (설정 화면에 표시) */
+export interface InstalledPack {
+  id: string;
+  name: string;
+  builtAt: string;
+  /** 이 팩이 사전에 새로 넣은 단어 수 */
+  addedWords: number;
+  /** 기본 단어에 있던 같은 id 의 시험을 바꿨는지 */
+  replaced: boolean;
 }
 
 export interface ActiveWordSet {
@@ -36,10 +53,34 @@ const FILE_NAME = 'wordset.json';
 const TMP_NAME = 'wordset.tmp.json';
 
 /** 기기 파일을 쓸 수 있는지 (웹 미리보기는 expo-file-system 이 없다) */
-export const canImportWordSet = Platform.OS !== 'web';
+export const canImportWordSet = canUseFiles;
 
-/** 앱이 켜질 때 한 번 — 불러온 세트가 있으면 그것을, 없거나 읽지 못하면 앱 기본 단어를 쓴다 */
+/**
+ * 앱이 켜질 때 한 번 — 기본 단어(불러온 단어 세트가 있으면 그것, 없거나 읽지 못하면 앱에 내장된 단어) 위에
+ * 저장해 둔 시험 팩을 차례로 얹는다. 시험 팩이 없으면 기본 단어 그대로다.
+ */
 export function loadActiveWordSet(): ActiveWordSet {
+  const base = loadBaseWordSet();
+  const { packs, errors } = loadInstalledPacks();
+  let { words, exams } = base;
+  const installed: InstalledPack[] = [];
+  for (const pack of packs) {
+    try {
+      const merged = mergeExamPack({ words, exams }, pack);
+      words = merged.words;
+      exams = merged.exams;
+      installed.push({ id: pack.exam.id, name: pack.exam.name, builtAt: pack.builtAt, addedWords: merged.report.addedWords.length, replaced: merged.report.replacedExam });
+    } catch (e) {
+      errors.push(`${pack.exam?.id ?? '?'}: ${(e as Error).message || '얹지 못했어요'}`);
+    }
+  }
+  return { words, exams, info: { ...base.info, packs: installed, packErrors: errors } };
+}
+
+type BaseWordSet = Omit<ActiveWordSet, 'info'> & { info: Omit<WordSetInfo, 'packs' | 'packErrors'> };
+
+/** 기본 단어 — 불러온 단어 세트가 있으면 그것을, 없거나 읽지 못하면 앱에 내장된 단어를 쓴다 */
+function loadBaseWordSet(): BaseWordSet {
   let error: string | undefined;
   if (canImportWordSet) {
     try {

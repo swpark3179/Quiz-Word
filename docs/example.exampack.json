@@ -1,0 +1,663 @@
+{
+  "$schema": "https://swpark3179.github.io/Quiz-Word/exampack.schema.json",
+  "app": "quiz-word",
+  "kind": "exampack",
+  "version": 1,
+  "builtAt": "2026-11-12T00:00:00.000Z",
+  "exam": {
+    "id": "example",
+    "name": "샘플 시험",
+    "sources": [
+      {
+        "id": "part1",
+        "name": "1회"
+      },
+      {
+        "id": "part2",
+        "name": "2회"
+      }
+    ],
+    "index": {
+      "downtime": {
+        "part1": 1,
+        "part2": 1
+      },
+      "fallback": {
+        "part2": 1
+      },
+      "legacy": {
+        "part1": 1
+      },
+      "migrate": {
+        "part1": 2,
+        "part2": 1
+      },
+      "mitigate": {
+        "part1": 1,
+        "part2": 1
+      },
+      "outage": {
+        "part1": 2,
+        "part2": 1
+      },
+      "replicate": {
+        "part1": 1,
+        "part2": 1
+      },
+      "risk": {
+        "part1": 1,
+        "part2": 1
+      },
+      "robust": {
+        "part2": 1
+      },
+      "spike": {
+        "part1": 1
+      },
+      "team": {
+        "part1": 1,
+        "part2": 1
+      }
+    },
+    "examples": {
+      "part1": {
+        "downtime": [
+          {
+            "n": 0,
+            "q": 1,
+            "en": "Which approach minimizes downtime during the migration?",
+            "surface": "downtime",
+            "pos": "명사",
+            "sense": "(시스템의) 중단 시간",
+            "ko": "이전하는 동안 중단 시간을 가장 줄이는 방법은 무엇인가?"
+          }
+        ],
+        "legacy": [
+          {
+            "n": 0,
+            "q": 1,
+            "en": "The team decided to migrate the legacy database to the cloud.",
+            "surface": "legacy",
+            "pos": "형용사",
+            "sense": "(시스템이) 오래된 기존의",
+            "ko": "팀은 기존 데이터베이스를 클라우드로 이전하기로 했다."
+          }
+        ],
+        "migrate": [
+          {
+            "n": 0,
+            "q": 1,
+            "en": "The team decided to migrate the legacy database to the cloud.",
+            "surface": "migrate",
+            "pos": "동사",
+            "sense": "(데이터·시스템을) 옮기다, 이전하다",
+            "ko": "팀은 기존 데이터베이스를 클라우드로 이전하기로 했다."
+          },
+          {
+            "n": 1,
+            "q": 1,
+            "en": "Which approach minimizes downtime during the migration?",
+            "surface": "migration",
+            "pos": "명사",
+            "sense": "(migration) 이전 작업",
+            "ko": "이전하는 동안 중단 시간을 가장 줄이는 방법은 무엇인가?"
+          }
+        ],
+        "mitigate": [
+          {
+            "n": 0,
+            "q": 2,
+            "en": "The engineer wants to mitigate the risk of another outage.",
+            "surface": "mitigate",
+            "pos": "동사",
+            "sense": "(위험·피해를) 줄이다, 완화하다",
+            "ko": "엔지니어는 장애가 또 일어날 위험을 줄이고 싶어 한다."
+          }
+        ],
+        "outage": [
+          {
+            "n": 0,
+            "q": 2,
+            "en": "A sudden spike in traffic caused an outage.",
+            "surface": "outage",
+            "pos": "명사",
+            "sense": "(서비스) 장애, 일시 중단",
+            "ko": "트래픽이 갑자기 급증해 장애가 발생했다."
+          }
+        ],
+        "replicate": [
+          {
+            "n": 0,
+            "q": 1,
+            "en": "Replicate the data first, then switch over",
+            "surface": "Replicate",
+            "pos": "동사",
+            "sense": "(데이터를) 복제하다",
+            "ko": "먼저 데이터를 복제한 다음 전환한다"
+          }
+        ],
+        "risk": [
+          {
+            "n": 0,
+            "q": 2,
+            "en": "The engineer wants to mitigate the risk of another outage.",
+            "surface": "risk",
+            "pos": "명사",
+            "sense": "위험(성)",
+            "ko": "엔지니어는 장애가 또 일어날 위험을 줄이고 싶어 한다."
+          }
+        ],
+        "spike": [
+          {
+            "n": 0,
+            "q": 2,
+            "en": "A sudden spike in traffic caused an outage.",
+            "surface": "spike",
+            "pos": "명사",
+            "sense": "급증, 급등",
+            "ko": "트래픽이 갑자기 급증해 장애가 발생했다."
+          }
+        ],
+        "team": [
+          {
+            "n": 0,
+            "q": 1,
+            "en": "The team decided to migrate the legacy database to the cloud.",
+            "surface": "team",
+            "pos": "명사",
+            "sense": "팀",
+            "ko": "팀은 기존 데이터베이스를 클라우드로 이전하기로 했다."
+          }
+        ]
+      },
+      "part2": {
+        "fallback": [
+          {
+            "n": 0,
+            "q": 1,
+            "en": "A robust fallback can mitigate downtime.",
+            "surface": "fallback",
+            "pos": "명사",
+            "sense": "대체 수단, 예비책",
+            "ko": "견고한 대체 수단은 중단 시간을 줄일 수 있다."
+          }
+        ],
+        "migrate": [
+          {
+            "n": 2,
+            "q": 1,
+            "en": "After the outage, the team migrated the remaining services.",
+            "surface": "migrated",
+            "pos": "동사",
+            "sense": "(데이터·시스템을) 옮기다, 이전하다",
+            "ko": "장애 이후 팀은 남은 서비스를 이전했다."
+          }
+        ],
+        "outage": [
+          {
+            "n": 1,
+            "q": 1,
+            "en": "After the outage, the team migrated the remaining services.",
+            "surface": "outage",
+            "pos": "명사",
+            "sense": "(서비스) 장애, 일시 중단",
+            "ko": "장애 이후 팀은 남은 서비스를 이전했다."
+          }
+        ],
+        "replicate": [
+          {
+            "n": 1,
+            "q": 2,
+            "en": "Replicate the database across two regions to reduce risk.",
+            "surface": "Replicate",
+            "pos": "동사",
+            "sense": "(데이터를) 복제하다",
+            "ko": "위험을 줄이려면 데이터베이스를 두 리전에 복제한다."
+          }
+        ],
+        "robust": [
+          {
+            "n": 0,
+            "q": 1,
+            "en": "A robust fallback can mitigate downtime.",
+            "surface": "robust",
+            "pos": "형용사",
+            "sense": "견고한, 쉽게 깨지지 않는",
+            "ko": "견고한 대체 수단은 중단 시간을 줄일 수 있다."
+          }
+        ]
+      }
+    },
+    "sentences": {
+      "part1": [
+        {
+          "q": 1,
+          "en": "The team decided to migrate the legacy database to the cloud.",
+          "ko": "팀은 기존 데이터베이스를 클라우드로 이전하기로 했다."
+        },
+        {
+          "q": 1,
+          "en": "Which approach minimizes downtime during the migration?",
+          "ko": "이전하는 동안 중단 시간을 가장 줄이는 방법은 무엇인가?"
+        },
+        {
+          "q": 1,
+          "en": "Replicate the data first, then switch over",
+          "ko": "먼저 데이터를 복제한 다음 전환한다"
+        },
+        {
+          "q": 2,
+          "en": "A sudden spike in traffic caused an outage.",
+          "ko": "트래픽이 갑자기 급증해 장애가 발생했다."
+        },
+        {
+          "q": 2,
+          "en": "The engineer wants to mitigate the risk of another outage.",
+          "ko": "엔지니어는 장애가 또 일어날 위험을 줄이고 싶어 한다."
+        }
+      ],
+      "part2": [
+        {
+          "q": 1,
+          "en": "After the outage, the team migrated the remaining services.",
+          "ko": "장애 이후 팀은 남은 서비스를 이전했다."
+        },
+        {
+          "q": 1,
+          "en": "A robust fallback can mitigate downtime.",
+          "ko": "견고한 대체 수단은 중단 시간을 줄일 수 있다."
+        },
+        {
+          "q": 2,
+          "en": "Replicate the database across two regions to reduce risk.",
+          "ko": "위험을 줄이려면 데이터베이스를 두 리전에 복제한다."
+        }
+      ]
+    },
+    "notes": {
+      "outage": "서비스가 **멈춘 사건**을 가리킵니다. 멈춰 있던 **시간**은 downtime 입니다.\n\n## 함께 쓰는 표현\n- **cause an outage** : 장애를 일으키다\n- **a service outage** : 서비스 장애"
+    }
+  },
+  "words": [
+    {
+      "id": "downtime",
+      "word": "downtime",
+      "level": 5,
+      "pos": [
+        "명사"
+      ],
+      "ipa": "ˈdaʊntaɪm",
+      "meaning": "(시스템이) 멈춰 있는 시간, 중단 시간",
+      "short": "중단 시간",
+      "senses": [
+        {
+          "pos": "명사",
+          "ko": "(시스템의) 중단 시간"
+        }
+      ],
+      "synonyms": [
+        "outage"
+      ],
+      "domain": "오류·실패·위험",
+      "memory": {
+        "roots": [
+          {
+            "part": "down",
+            "ko": "내려간, 멈춘"
+          },
+          {
+            "part": "time",
+            "ko": "시간"
+          }
+        ],
+        "story": "시스템이 내려가(down) 있는 시간(time) → 중단 시간",
+        "family": [
+          "uptime",
+          "downturn"
+        ]
+      }
+    },
+    {
+      "id": "fallback",
+      "word": "fallback",
+      "level": 6,
+      "pos": [
+        "명사"
+      ],
+      "ipa": "ˈfɔːlbæk",
+      "meaning": "(문제가 생겼을 때 쓰는) 대체 수단, 예비책",
+      "short": "대체 수단",
+      "senses": [
+        {
+          "pos": "명사",
+          "ko": "대체 수단, 예비책"
+        }
+      ],
+      "synonyms": [
+        "backup"
+      ],
+      "domain": "오류·실패·위험",
+      "memory": {
+        "roots": [
+          {
+            "part": "fall",
+            "ko": "물러나다"
+          },
+          {
+            "part": "back",
+            "ko": "뒤로"
+          }
+        ],
+        "story": "막히면 뒤로(back) 물러나(fall) 기댈 곳 → 대체 수단",
+        "family": [
+          "setback",
+          "backup"
+        ]
+      }
+    },
+    {
+      "id": "legacy",
+      "word": "legacy",
+      "level": 5,
+      "pos": [
+        "형용사",
+        "명사"
+      ],
+      "ipa": "ˈleɡəsi",
+      "meaning": "① (시스템이) 오래된 기존의 ② 유산",
+      "short": "오래된 기존의",
+      "senses": [
+        {
+          "pos": "형용사",
+          "ko": "(시스템이) 오래된 기존의"
+        },
+        {
+          "pos": "명사",
+          "ko": "유산"
+        }
+      ],
+      "domain": "상태·성질",
+      "memory": {
+        "origin": "라틴어 legatus (위임받은 사람)",
+        "story": "앞사람이 남기고 간 것 → 유산 → 물려받은 오래된 시스템",
+        "hook": "레거시 → 물려받은 '레거시 코드' → 오래된 기존의"
+      }
+    },
+    {
+      "id": "migrate",
+      "word": "migrate",
+      "level": 5,
+      "pos": [
+        "동사"
+      ],
+      "ipa": "ˈmaɪɡreɪt",
+      "meaning": "(데이터·시스템을) 옮기다, 이전하다",
+      "short": "옮기다, 이전하다",
+      "senses": [
+        {
+          "pos": "동사",
+          "ko": "(데이터·시스템을) 옮기다, 이전하다"
+        },
+        {
+          "pos": "명사",
+          "ko": "(migration) 이전 작업"
+        }
+      ],
+      "forms": [
+        "migrated",
+        "migrating",
+        "migration"
+      ],
+      "synonyms": [
+        "move",
+        "transfer"
+      ],
+      "domain": "이동·전달",
+      "memory": {
+        "roots": [
+          {
+            "part": "migr",
+            "ko": "옮겨 가다"
+          },
+          {
+            "part": "-ate",
+            "ko": "~하다"
+          }
+        ],
+        "origin": "라틴어 migrare (옮겨 살다)",
+        "story": "철새가 살 곳을 옮겨 가듯(migr) → 데이터를 옮기다, 이전하다",
+        "family": [
+          "immigrate",
+          "emigrate",
+          "migrant"
+        ]
+      }
+    },
+    {
+      "id": "mitigate",
+      "word": "mitigate",
+      "level": 5,
+      "pos": [
+        "동사"
+      ],
+      "ipa": "ˈmɪtɪɡeɪt",
+      "meaning": "(위험·피해를) 줄이다, 완화하다",
+      "short": "줄이다, 완화하다",
+      "senses": [
+        {
+          "pos": "동사",
+          "ko": "(위험·피해를) 줄이다, 완화하다"
+        }
+      ],
+      "forms": [
+        "mitigated",
+        "mitigating",
+        "mitigation"
+      ],
+      "synonyms": [
+        "reduce",
+        "lessen"
+      ],
+      "domain": "오류·실패·위험",
+      "memory": {
+        "roots": [
+          {
+            "part": "mit",
+            "ko": "부드러운"
+          },
+          {
+            "part": "-igate",
+            "ko": "~하게 하다"
+          }
+        ],
+        "origin": "라틴어 mitigare (부드럽게 하다)",
+        "story": "거친 충격을 부드럽게(mitis) 만든다 → 완화하다, 줄이다"
+      }
+    },
+    {
+      "id": "outage",
+      "word": "outage",
+      "level": 6,
+      "pos": [
+        "명사"
+      ],
+      "ipa": "ˈaʊtɪdʒ",
+      "meaning": "(서비스·전력의) 중단, 장애",
+      "short": "(서비스) 장애",
+      "senses": [
+        {
+          "pos": "명사",
+          "ko": "(서비스) 장애, 일시 중단"
+        }
+      ],
+      "synonyms": [
+        "downtime",
+        "failure"
+      ],
+      "domain": "오류·실패·위험",
+      "memory": {
+        "roots": [
+          {
+            "part": "out",
+            "ko": "나간, 꺼진"
+          },
+          {
+            "part": "-age",
+            "ko": "~한 상태"
+          }
+        ],
+        "story": "불이 나간(out) 상태(-age) → 서비스가 멈춘 장애",
+        "family": [
+          "blackout",
+          "shortage"
+        ]
+      }
+    },
+    {
+      "id": "replicate",
+      "word": "replicate",
+      "level": 5,
+      "pos": [
+        "동사"
+      ],
+      "ipa": "ˈreplɪkeɪt",
+      "meaning": "(데이터를) 복제하다",
+      "short": "복제하다",
+      "senses": [
+        {
+          "pos": "동사",
+          "ko": "(데이터를) 복제하다"
+        }
+      ],
+      "forms": [
+        "replicated",
+        "replicating",
+        "replication"
+      ],
+      "synonyms": [
+        "copy",
+        "duplicate"
+      ],
+      "domain": "생성·추가",
+      "memory": {
+        "roots": [
+          {
+            "part": "re-",
+            "ko": "다시"
+          },
+          {
+            "part": "plic",
+            "ko": "접다"
+          },
+          {
+            "part": "-ate",
+            "ko": "~하다"
+          }
+        ],
+        "origin": "라틴어 replicare (되접다, 되풀이하다)",
+        "story": "다시(re) 접어(plic) 같은 것을 한 벌 더 만든다 → 복제하다",
+        "family": [
+          "replica",
+          "duplicate",
+          "complicate"
+        ]
+      }
+    },
+    {
+      "id": "risk",
+      "word": "risk",
+      "level": 3,
+      "pos": [
+        "명사"
+      ],
+      "ipa": "rɪsk",
+      "meaning": "위험(성), 위험 요소",
+      "short": "위험(성)",
+      "senses": [
+        {
+          "pos": "명사",
+          "ko": "위험(성)"
+        }
+      ],
+      "synonyms": [
+        "danger",
+        "hazard"
+      ],
+      "domain": "오류·실패·위험",
+      "memory": {
+        "origin": "프랑스어 risque ← 이탈리아어 risco",
+        "story": "암초 옆을 지나는 배가 무릅쓰는 것 → 위험",
+        "hook": "리스크 → '리스크가 크다'의 그 리스크 → 위험"
+      }
+    },
+    {
+      "id": "robust",
+      "word": "robust",
+      "level": 5,
+      "pos": [
+        "형용사"
+      ],
+      "ipa": "roʊˈbʌst",
+      "meaning": "견고한, 쉽게 깨지지 않는",
+      "short": "견고한",
+      "senses": [
+        {
+          "pos": "형용사",
+          "ko": "견고한, 쉽게 깨지지 않는"
+        }
+      ],
+      "synonyms": [
+        "sturdy",
+        "resilient"
+      ],
+      "domain": "정확·품질·신뢰",
+      "memory": {
+        "origin": "라틴어 robustus (참나무처럼 단단한)",
+        "story": "참나무(robur)처럼 단단해 쉽게 부러지지 않는 → 견고한"
+      }
+    },
+    {
+      "id": "spike",
+      "word": "spike",
+      "level": 5,
+      "pos": [
+        "명사"
+      ],
+      "ipa": "spaɪk",
+      "meaning": "급증, 급등",
+      "short": "급증",
+      "senses": [
+        {
+          "pos": "명사",
+          "ko": "급증, 급등"
+        }
+      ],
+      "synonyms": [
+        "surge"
+      ],
+      "domain": "정도·양·크기",
+      "memory": {
+        "story": "그래프가 못(spike)처럼 뾰족하게 솟는다 → 급증",
+        "hook": "스파이크 → 배구 스파이크처럼 확 치솟는 → 급증"
+      }
+    },
+    {
+      "id": "team",
+      "word": "team",
+      "level": 1,
+      "pos": [
+        "명사"
+      ],
+      "ipa": "tiːm",
+      "meaning": "팀, 조",
+      "short": "팀",
+      "senses": [
+        {
+          "pos": "명사",
+          "ko": "팀"
+        }
+      ],
+      "domain": "사람·조직·역할"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz Word 시험 팩</title>
+<meta name="description" content="문제 파일에서 Quiz Word 앱이 불러올 수 있는 시험 팩을 만드는 가이드와 검증기">
+<style>
+  :root {
+    --bg: #f7f7fb; --surface: #ffffff; --surface-2: #f0f0f6; --line: #dcdce8;
+    --ink: #17171f; --ink-2: #4a4a5a; --muted: #6f6f82;
+    --primary: #4f46e5; --primary-soft: #eceafd;
+    --ok: #15803d; --ok-soft: #e7f6ec; --warn: #a16207; --warn-soft: #fdf5dc; --err: #b91c1c; --err-soft: #fdeaea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101016; --surface: #191922; --surface-2: #22222e; --line: #32323f;
+      --ink: #eeeef5; --ink-2: #c3c3d0; --muted: #9292a6;
+      --primary: #a5a0ff; --primary-soft: #26244a;
+      --ok: #6ee7a0; --ok-soft: #12301f; --warn: #f5cf6b; --warn-soft: #33290e; --err: #fca5a5; --err-soft: #3a1717;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 48px 16px 80px; }
+  h1 { font-size: 30px; line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 19px; margin: 44px 0 12px; letter-spacing: -0.01em; }
+  p { margin: 0 0 12px; color: var(--ink-2); }
+  .lead { font-size: 17px; }
+  a { color: var(--primary); }
+  code { font: 0.9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--surface-2); padding: 2px 6px; border-radius: 6px; }
+  pre { margin: 0; padding: 14px 16px; background: var(--surface-2); border-radius: 12px; overflow-x: auto; font: 13.5px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; word-break: break-word; }
+  .files { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); overflow: hidden; }
+  .files li { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; padding: 13px 16px; border-top: 1px solid var(--line); }
+  .files li:first-child { border-top: 0; }
+  .files a { font-weight: 600; text-decoration: none; }
+  .files a:hover { text-decoration: underline; }
+  .files span { color: var(--muted); font-size: 14px; }
+  ol { margin: 0; padding-left: 22px; color: var(--ink-2); }
+  ol li { margin-bottom: 6px; }
+  .copy { position: relative; }
+  .copy button { position: absolute; top: 8px; right: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 8px; cursor: pointer; }
+  .copy button:hover { border-color: var(--primary); color: var(--primary); }
+  .copy pre { padding-right: 76px; }
+  #drop { display: block; border: 2px dashed var(--line); border-radius: 14px; background: var(--surface); padding: 28px 16px; text-align: center; cursor: pointer; transition: border-color .15s, background .15s; }
+  #drop:hover, #drop.over, #drop:focus-within { border-color: var(--primary); background: var(--primary-soft); }
+  #drop strong { display: block; font-size: 16px; }
+  #drop small { color: var(--muted); }
+  #file { position: absolute; width: 1px; height: 1px; opacity: 0; }
+  #result { margin-top: 14px; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 13px; font-weight: 700; }
+  .pass { background: var(--ok-soft); color: var(--ok); }
+  .fail { background: var(--err-soft); color: var(--err); }
+  .summary { margin: 10px 0; color: var(--ink-2); }
+  .issues { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 6px; }
+  .issues li { padding: 9px 12px; border-radius: 10px; font-size: 14px; line-height: 1.5; word-break: break-word; }
+  .issues .e { background: var(--err-soft); color: var(--err); }
+  .issues .w { background: var(--warn-soft); color: var(--warn); }
+  footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Quiz Word 시험 팩</h1>
+  <p class="lead">시험 문제 파일에서, Quiz Word 앱에 <strong>새 시험만 따로 얹을 수 있는 파일</strong>(시험 팩)을 만드는 방법입니다. 앱에 이미 있는 단어와 다른 시험은 그대로 두고 더해집니다.</p>
+
+  <h2>파일</h2>
+  <ul class="files">
+    <li><a href="exam-pack-guide.md">exam-pack-guide.md</a><span>에이전트용 가이드 — 형식, 작성 절차, 허용값, 완성 예시</span></li>
+    <li><a href="validate-exampack.mjs">validate-exampack.mjs</a><span>검증기 (Node 18+, 의존성 없음) — 앱이 쓰는 검사와 같은 코드</span></li>
+    <li><a href="exampack.schema.json">exampack.schema.json</a><span>JSON Schema — 구조·필수 필드·허용값</span></li>
+    <li><a href="example.exampack.json">example.exampack.json</a><span>검증기를 통과하는 작은 완성 예시</span></li>
+    <li><a href="llms.txt">llms.txt</a><span>에이전트용 길잡이</span></li>
+  </ul>
+
+  <h2>만드는 순서</h2>
+  <ol>
+    <li>코딩 에이전트에게 문제 파일과 아래 지시문을 줍니다.</li>
+    <li>에이전트가 <code>&lt;시험 id&gt;.exampack.json</code> 을 만들고 검증기를 통과시킵니다.</li>
+    <li>받은 파일을 아래 검증기에 넣어 한 번 더 확인합니다.</li>
+    <li>iPhone 앱: 파일을 폰으로 옮긴 뒤 <strong>설정 → 시험 → 시험 팩 불러오기</strong>.<br>웹(저장소): <code>npm run data:add-pack &lt;파일&gt;</code></li>
+  </ol>
+
+  <h2>에이전트에게 줄 지시문</h2>
+  <div class="copy">
+    <button type="button" id="copy">복사</button>
+    <pre id="prompt">이 폴더의 문제 파일로 Quiz Word 시험 팩을 만들어 줘.
+
+1. 가이드를 처음부터 끝까지 읽고 그대로 따라 줘:
+   https://swpark3179.github.io/Quiz-Word/exam-pack-guide.md
+2. 시험 id: (예: my-exam) / 시험 이름: (예: 내 시험)
+3. 결과는 파일 하나: &lt;시험 id&gt;.exampack.json
+4. 검증기를 받아서 돌리고, RESULT: PASS 가 나올 때까지 고쳐 줘:
+   curl -fsSLO https://swpark3179.github.io/Quiz-Word/validate-exampack.mjs
+   node validate-exampack.mjs &lt;시험 id&gt;.exampack.json
+5. 마지막에 검증기 출력(경고 포함)과, 넣지 않은 낱말의 기준을 알려 줘.</pre>
+  </div>
+
+  <h2>검증기</h2>
+  <p>시험 팩 파일을 넣으면 앱이 불러올 수 있는지 바로 확인합니다. 파일은 이 브라우저 안에서만 읽고 어디에도 보내지 않습니다.</p>
+  <label id="drop">
+    <input type="file" id="file" accept=".json,application/json">
+    <strong>시험 팩 파일을 여기에 끌어다 놓거나 눌러서 고르세요</strong>
+    <small>*.exampack.json</small>
+  </label>
+  <div id="result" role="status" aria-live="polite"></div>
+
+  <footer>명령줄에서는 <code>node validate-exampack.mjs &lt;파일&gt;</code> — 종료 코드 0 통과 · 1 오류 · 2 파일을 읽지 못함.</footer>
+</main>
+
+<script type="module">
+  import { checkExamPack } from './validate-exampack.mjs';
+
+  const drop = document.getElementById('drop');
+  const input = document.getElementById('file');
+  const result = document.getElementById('result');
+  const el = (tag, cls, text) => {
+    const node = document.createElement(tag);
+    if (cls) node.className = cls;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  };
+
+  function show(name, r) {
+    result.replaceChildren();
+    result.append(el('span', `badge ${r.ok ? 'pass' : 'fail'}`, r.ok ? '통과 — 앱이 불러올 수 있어요' : '오류 — 앱이 불러오지 않아요'));
+    const s = r.summary;
+    result.append(
+      el(
+        'p',
+        'summary',
+        s
+          ? `${name} · 시험 ${s.exam} (${s.name}) · 문제 파일 ${s.sources}개 · 단어 ${s.words}개 · 예문 ${s.examples}개 · 문장 ${s.sentences}개 · 오류 ${r.errors.length}개 · 경고 ${r.warnings.length}개`
+          : `${name} · 오류 ${r.errors.length}개 · 경고 ${r.warnings.length}개`,
+      ),
+    );
+    if (r.errors.length || r.warnings.length) {
+      const list = el('ul', 'issues');
+      for (const e of r.errors) list.append(el('li', 'e', `오류  ${e}`));
+      for (const w of r.warnings) list.append(el('li', 'w', `경고  ${w}`));
+      result.append(list);
+    }
+  }
+
+  async function check(file) {
+    if (!file) return;
+    let data;
+    try {
+      data = JSON.parse((await file.text()).replace(/^﻿/, ''));
+    } catch (e) {
+      show(file.name, { ok: false, errors: [`JSON 형식 오류: ${e.message}`], warnings: [] });
+      return;
+    }
+    show(file.name, checkExamPack(data, file.name));
+  }
+
+  input.addEventListener('change', () => check(input.files[0]));
+  for (const type of ['dragenter', 'dragover']) {
+    drop.addEventListener(type, (e) => {
+      e.preventDefault();
+      drop.classList.add('over');
+    });
+  }
+  for (const type of ['dragleave', 'drop']) {
+    drop.addEventListener(type, (e) => {
+      e.preventDefault();
+      drop.classList.remove('over');
+    });
+  }
+  drop.addEventListener('drop', (e) => check(e.dataTransfer.files[0]));
+
+  document.getElementById('copy').addEventListener('click', async (e) => {
+    await navigator.clipboard.writeText(document.getElementById('prompt').textContent);
+    e.target.textContent = '복사됨';
+    setTimeout(() => (e.target.textContent = '복사'), 1500);
+  });
+</script>
+</body>
+</html>
