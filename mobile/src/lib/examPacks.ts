@@ -2,11 +2,16 @@
  * 시험 팩 — 시험 하나를 지금 단어 위에 얹는 파일 (*.exampack.json).
  * 불러온 팩은 기기 안 문서 폴더의 exampacks/<시험 id>.json 에 두고, 앱이 켜질 때 기본 단어(내장 또는 불러온 단어 세트) 위에 차례로 얹는다.
  * 그래서 새 빌드로 앱 기본 단어가 바뀌거나 단어 세트를 통째로 바꿔도 추가한 시험은 남고, 시험별로 지울 수 있다.
- * 형식·만드는 법: https://swpark3179.github.io/Quiz-Word/exam-pack-guide.md
+ * 형식·만드는 법: EXAM_PACK_GUIDE_URL
  */
 import { Directory, File, Paths } from 'expo-file-system';
 import { Platform } from 'react-native';
 import { isExamPackFile, parseExamPack, type ExamPackFile } from '@shared/exampack';
+
+/** 시험 팩 안내 첫 화면 (사람이 읽는 쪽) — 에이전트에게 줄 지시문 예시, 파일 목록, 브라우저에서 돌리는 검증기 */
+export const EXAM_PACK_SITE_URL = 'https://swpark3179.github.io/Quiz-Word/';
+/** 시험 팩 만드는 법 (코딩 에이전트에게 주는 가이드 문서) */
+export const EXAM_PACK_GUIDE_URL = `${EXAM_PACK_SITE_URL}exam-pack-guide.md`;
 
 const DIR_NAME = 'exampacks';
 

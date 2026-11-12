@@ -8,7 +8,7 @@ import { contextsOf, sourceLabel, WORD_BY_SURFACE } from '@/data/words';
 import { useExamPref } from './ExamPref';
 import { speak, useSpeaking } from '@/lib/tts';
 import { useProgress } from '@/store/progress';
-import { type, useTheme } from '@/theme';
+import { MONO_FONT, type, useTheme } from '@/theme';
 import { Icon, PosBadge, PressableScale, SectionLabel, T } from './ui';
 
 /* ───── 🔊 — 말하는 동안 막대 3개가 출렁인다 ───── */
@@ -63,7 +63,7 @@ function renderCode(text: string, codeStyle: TextStyle, k: string) {
 
 export function Highlighted({ text, surface, style }: { text: string; surface: string; style?: StyleProp<TextStyle> }) {
   const { c } = useTheme();
-  const code: TextStyle = { fontFamily: 'Menlo', fontSize: 14, backgroundColor: c.surface3 };
+  const code: TextStyle = { fontFamily: MONO_FONT, fontSize: 14, backgroundColor: c.surface3 };
   const i = surface ? text.toLowerCase().indexOf(surface.toLowerCase()) : -1;
   if (i < 0) return <Text style={style}>{renderCode(text, code, 'p')}</Text>;
   return (

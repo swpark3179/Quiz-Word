@@ -5,10 +5,11 @@ import { useEffect } from 'react';
 import { Appearance } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { enableFreeze } from 'react-native-screens';
+import { DialogHost } from '@/components/DialogHost';
 import { ToastHost } from '@/components/motion';
 import { prepareAudio } from '@/lib/tts';
 import { useProgress } from '@/store/progress';
-import { useTheme } from '@/theme';
+import { largeHeader, sheetOptions, useTheme } from '@/theme';
 
 // 보이지 않는 탭·화면은 다시 그리지 않는다 — 학습 중 판정마다 뒤에 있는 단어장·오답노트 등이 재렌더되던 것을 막는다
 enableFreeze(true);
@@ -40,23 +41,18 @@ export default function RootLayout() {
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen
             name="word/[id]"
-            options={{ title: '', headerLargeTitle: true, headerTransparent: true, headerBlurEffect: dark ? 'systemChromeMaterialDark' : 'systemChromeMaterialLight', headerShadowVisible: false }}
+            options={{ title: '', ...largeHeader(c, dark), headerShadowVisible: false }}
           />
-          <Stack.Screen name="settings" options={{ title: '설정', headerLargeTitle: true, headerTransparent: true, headerBlurEffect: dark ? 'systemChromeMaterialDark' : 'systemChromeMaterialLight' }} />
-          <Stack.Screen
-            name="scope"
-            options={{ presentation: 'formSheet', headerShown: false, sheetAllowedDetents: [0.78, 1], sheetGrabberVisible: true, sheetCornerRadius: 28, contentStyle: { backgroundColor: c.bg } }}
-          />
+          <Stack.Screen name="settings" options={{ title: '설정', ...largeHeader(c, dark) }} />
+          <Stack.Screen name="scope" options={sheetOptions(c, [0.78, 1])} />
           {/* 이름 입력칸이 있어 키보드가 올라오므로 처음부터 크게 띄운다 */}
-          <Stack.Screen
-            name="notebook-merge"
-            options={{ presentation: 'formSheet', headerShown: false, sheetAllowedDetents: [1], sheetGrabberVisible: true, sheetCornerRadius: 28, contentStyle: { backgroundColor: c.bg } }}
-          />
+          <Stack.Screen name="notebook-merge" options={sheetOptions(c, [1])} />
           <Stack.Screen name="session/flash" options={{ presentation: 'fullScreenModal', headerShown: false, gestureEnabled: false }} />
           <Stack.Screen name="session/quiz" options={{ presentation: 'fullScreenModal', headerShown: false, gestureEnabled: false }} />
           <Stack.Screen name="session/review" options={{ presentation: 'fullScreenModal', headerShown: false, gestureEnabled: false }} />
         </Stack>
         <ToastHost />
+        <DialogHost />
       </ThemeProvider>
     </GestureHandlerRootView>
   );

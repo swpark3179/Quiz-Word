@@ -8,7 +8,7 @@ import { Button, Icon, Segmented, T } from '@/components/ui';
 import { WORD_BY_ID } from '@/data/words';
 import { useProgress } from '@/store/progress';
 import { startFromSheet } from '@/store/session';
-import { type, useTheme } from '@/theme';
+import { SHEET_IS_SCREEN, type, useTheme } from '@/theme';
 import { haptic } from '@/theme/haptics';
 
 /** 지금 단어 데이터에 있는 단어만 센다 */
@@ -58,7 +58,7 @@ export default function NotebookMergeSheet() {
   };
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, paddingTop: SHEET_IS_SCREEN ? insets.top : 0 }}>
       <ScrollView contentContainerStyle={[styles.content, { paddingBottom: 150 + insets.bottom }]} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag">
         <View style={{ gap: 4 }}>
           <T v="title2">학습장 합치기</T>

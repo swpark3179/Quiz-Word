@@ -5,7 +5,7 @@
 import { FlashList, type FlashListRef, type ListRenderItem } from '@shopify/flash-list';
 import { router, Stack, useLocalSearchParams } from 'expo-router';
 import { memo, useCallback, useDeferredValue, useMemo, useRef, useState } from 'react';
-import { ActionSheetIOS, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { FadeIn, FadeOut, runOnJS } from 'react-native-reanimated';
 import { freqIn, inExam, isExtra, isQuizSource, NO_EXAM } from '@shared/exams';
@@ -15,6 +15,7 @@ import { statusOf, type WordStatus } from '@shared/srs';
 import { useToast } from '@/components/motion';
 import { Icon, PosBadge, Segmented, StatusDot, T } from '@/components/ui';
 import { EXAMS, examName, quizSources, sourceName, WORDS, WORDS_BY_FREQ } from '@/data/words';
+import { showActionSheet } from '@/lib/sheet';
 import { speak } from '@/lib/tts';
 import { useProgress } from '@/store/progress';
 import { type, useTheme } from '@/theme';
@@ -28,7 +29,7 @@ const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const ROW_H = 64;
 
 function pick<T extends string>(title: string, options: { value: T; label: string }[], onPick: (v: T) => void) {
-  ActionSheetIOS.showActionSheetWithOptions(
+  showActionSheet(
     { title, options: [...options.map((o) => o.label), '취소'], cancelButtonIndex: options.length },
     (i) => {
       if (i < options.length) {
@@ -124,7 +125,7 @@ export default function WordsScreen() {
   const onLongPress = useCallback((w: Word) => {
     const { wrong, addWrong, removeWrong } = useProgress.getState();
     const inWrong = !!wrong[w.id];
-    ActionSheetIOS.showActionSheetWithOptions(
+    showActionSheet(
       { title: w.word, message: w.short, options: [inWrong ? '오답노트에서 빼기' : '오답노트에 담기', '발음 듣기', '취소'], cancelButtonIndex: 2, destructiveButtonIndex: inWrong ? 0 : undefined },
       (i) => {
         if (i === 0) {

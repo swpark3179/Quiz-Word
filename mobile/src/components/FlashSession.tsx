@@ -4,7 +4,7 @@
  */
 import { router } from 'expo-router';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Alert, Pressable, ScrollView, StyleSheet, Text, View, type AlertButton, type LayoutRectangle } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View, type AlertButton, type LayoutRectangle } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, {
   FadeIn,
@@ -26,7 +26,9 @@ import { Button, Icon, PosBadge, PressableScale, ProgressBar, ScreenSafeArea, T 
 import { SpeakButton, WordBrief } from '@/components/word';
 import { WORD_BY_ID } from '@/data/words';
 import { afterFrame } from '@/lib/afterFrame';
+import { alertButtons } from '@/lib/sheet';
 import { speak } from '@/lib/tts';
+import { useBackClose } from '@/lib/useBackClose';
 import { useProgress } from '@/store/progress';
 import { elevation, motion, type, useTheme } from '@/theme';
 import { haptic } from '@/theme/haptics';
@@ -124,7 +126,8 @@ export function FlashSession({ ids, title, source, onAnswer }: FlashSessionProps
       .map((part) => ({ text: `${SPLIT_LABEL[part]} ${parts[part].length}개로 학습장 만들기`, onPress: () => save(part) }));
     buttons.push({ text: '그만하기', style: 'destructive', onPress: () => router.back() }, { text: '계속하기', style: 'cancel' });
     const last = made[made.length - 1];
-    Alert.alert(
+    // 버튼이 4개까지 나온다 — 안드로이드 기본 확인창은 3개까지라 lib/sheet 의 것을 쓴다
+    alertButtons(
       last ? '학습장을 만들었어요' : '학습을 그만할까요?',
       last
         ? `'${last.name}' 학습장에 ${SPLIT_LABEL[last.part]}를 담았어요.`
@@ -139,7 +142,11 @@ export function FlashSession({ ids, title, source, onAnswer }: FlashSessionProps
     setRound((r) => r + 1);
   };
 
-  if (isFinished(queue)) {
+  // 안드로이드 뒤로 가기 — 학습 중이면 그만할지 묻고, 결과 화면이면 바로 닫는다
+  const finished = isFinished(queue);
+  useBackClose(() => (finished ? router.back() : exit()));
+
+  if (finished) {
     return <FlashSummary queue={queue} title={title} onAgain={restartWith} />;
   }
 

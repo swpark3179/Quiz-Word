@@ -1,15 +1,16 @@
 /** 범위 고르기 시트 (formSheet) — 웹 ScopePicker 와 같은 항목 */
 import { useLocalSearchParams } from 'expo-router';
 import { useMemo, useState } from 'react';
-import { ActionSheetIOS, ScrollView, StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { LEVELS } from '@shared/schema';
 import { filterScope, type Scope } from '@shared/scope';
 import { Button, Chip, T } from '@/components/ui';
 import { EXAMS, examName, quizSources, sourceName, WORDS } from '@/data/words';
+import { showActionSheet } from '@/lib/sheet';
 import { useProgress } from '@/store/progress';
 import { levelLabel, MODE_INFO, scopeOf, sessionHref, startFromSheet, useScopes, type StudyMode } from '@/store/session';
-import { useTheme } from '@/theme';
+import { SHEET_IS_SCREEN, useTheme } from '@/theme';
 import { haptic } from '@/theme/haptics';
 
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
@@ -40,7 +41,7 @@ export default function ScopeSheet() {
   const files = scope.set === 'exam' ? quizSources(scope.cat) : [];
   /** 문제 파일은 고른 시험 안에서 고른다 */
   const pickFile = () =>
-    ActionSheetIOS.showActionSheetWithOptions(
+    showActionSheet(
       { title: `${examName(scope.cat)} 문제 파일`, options: [`${examName(scope.cat)} 전체`, ...files.map((s) => s.name), '취소'], cancelButtonIndex: files.length + 1 },
       (i) => {
         if (i > files.length) return;
@@ -49,7 +50,7 @@ export default function ScopeSheet() {
       },
     );
   const pickLevel = () =>
-    ActionSheetIOS.showActionSheetWithOptions(
+    showActionSheet(
       {
         title: '단계',
         options: [...LEVELS.map((l) => (l.level === 1 ? '모든 단계 (쉬운 단어 포함)' : `${levelLabel(l.level)} (${l.name}${l.level < LEVELS.length ? '~' : ''})`)), '취소'],
@@ -68,7 +69,7 @@ export default function ScopeSheet() {
   };
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, paddingTop: SHEET_IS_SCREEN ? insets.top : 0 }}>
       <ScrollView contentContainerStyle={[styles.content, { paddingBottom: 110 + insets.bottom }]}>
         <View style={{ gap: 4 }}>
           <T v="title2">{MODE_INFO[mode].title}</T>

@@ -1,13 +1,14 @@
 /** 학습 — 모드를 고르면 범위 시트가 열린다 */
 import { router } from 'expo-router';
 import { useMemo } from 'react';
-import { ActionSheetIOS, ScrollView, StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import Animated, { FadeInDown, useReducedMotion } from 'react-native-reanimated';
 import { reviewPlan } from '@shared/reviewPlan';
 import { dayKey } from '@shared/text';
 import { Icon, PressableScale, SectionLabel, T } from '@/components/ui';
 import { mainExam, WORDS } from '@/data/words';
 import { useFocusSnapshot } from '@/lib/useFocusSnapshot';
+import { showActionSheet } from '@/lib/sheet';
 import { useProgress } from '@/store/progress';
 import { MODE_INFO, scopeOf, scopeSummary, useScopes, type StudyMode } from '@/store/session';
 import { elevation, useTheme } from '@/theme';
@@ -29,7 +30,7 @@ export default function Study() {
   const reviewTotal = plan.due.length + plan.fresh.length;
 
   const startReview = () =>
-    ActionSheetIOS.showActionSheetWithOptions(
+    showActionSheet(
       { title: `복습 ${plan.due.length}개 + 새 단어 ${plan.fresh.length}개`, options: ['플래시카드로 복습', '객관식으로 복습', '취소'], cancelButtonIndex: 2 },
       (i) => {
         if (i === 0) router.push('/session/review?style=flash');

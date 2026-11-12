@@ -14,7 +14,7 @@ import { notebookScope } from '@shared/scope';
 import { searchWords } from '@shared/search';
 import { statusOf } from '@shared/srs';
 import { timeAgo } from '@shared/text';
-import { Button, Empty, Icon, PosBadge, PressableScale, StatusDot, T } from '@/components/ui';
+import { Button, Empty, HeaderIconButton, Icon, PosBadge, StatusDot, T } from '@/components/ui';
 import { WORD_BY_ID, WORDS } from '@/data/words';
 import { notebookMenu } from '@/lib/notebookActions';
 import { useProgress } from '@/store/progress';
@@ -26,7 +26,6 @@ import { haptic } from '@/theme/haptics';
 const RESULT_LIMIT = 30;
 
 export default function NotebookScreen() {
-  const { c } = useTheme();
   const reduced = useReducedMotion();
   const { id = '' } = useLocalSearchParams<{ id: string }>();
   const nb = useProgress((s) => s.notebooks.find((n) => n.id === id));
@@ -79,11 +78,7 @@ export default function NotebookScreen() {
       options={{
         title: nb?.name ?? '학습장',
         headerRight: nb
-          ? () => (
-              <PressableScale accessibilityRole="button" accessibilityLabel="학습장 메뉴" hitSlop={10} onPress={() => notebookMenu(nb.id, () => router.back())}>
-                <Icon name="ellipsis.circle" size={21} color={c.primary} />
-              </PressableScale>
-            )
+          ? () => <HeaderIconButton icon="ellipsis.circle" label="학습장 메뉴" onPress={() => notebookMenu(nb.id, () => router.back())} />
           : undefined,
         headerSearchBarOptions: nb
           ? {

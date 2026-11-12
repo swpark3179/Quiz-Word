@@ -24,6 +24,34 @@ export function elevation(c: Colors, dark: boolean, level: 1 | 2 = 1): ViewStyle
   }) as ViewStyle;
 }
 
+/**
+ * 큰 제목 + 반투명 블러 헤더 (iOS). 안드로이드에는 large title·블러가 없고, 투명 헤더를 그대로 두면
+ * 화면 내용이 헤더 밑에 깔리므로(내용을 자동으로 밀어 주는 contentInsetAdjustmentBehavior 가 iOS 전용) 배경색을 칠한 보통 헤더를 쓴다.
+ */
+export function largeHeader(c: Colors, dark: boolean) {
+  if (Platform.OS === 'android') return { headerStyle: { backgroundColor: c.bg }, headerTitleStyle: { color: c.text } } as const;
+  return {
+    headerLargeTitle: true,
+    headerTransparent: true,
+    headerBlurEffect: dark ? 'systemChromeMaterialDark' : 'systemChromeMaterialLight',
+  } as const;
+}
+
+/**
+ * 아래에서 올라오는 시트 (범위 고르기 · 학습장 합치기). iOS 는 formSheet.
+ * 안드로이드의 formSheet 는 flex: 1 내용과 안쪽 스크롤이 제대로 놓이지 않아, 아래에서 올라오는 보통 화면으로 띄운다
+ * (화면 쪽에서 상태 표시줄만큼 위를 띄운다 — SHEET_IS_SCREEN).
+ */
+export const SHEET_IS_SCREEN = Platform.OS === 'android';
+
+export function sheetOptions(c: Colors, detents: number[]) {
+  if (SHEET_IS_SCREEN) return { presentation: 'modal', headerShown: false, contentStyle: { backgroundColor: c.bg } } as const;
+  return { presentation: 'formSheet', headerShown: false, sheetAllowedDetents: detents, sheetGrabberVisible: true, sheetCornerRadius: 28, contentStyle: { backgroundColor: c.bg } } as const;
+}
+
+/** 고정폭 글꼴 (코드 표시) — 안드로이드에는 Menlo 가 없다 */
+export const MONO_FONT = Platform.select({ ios: 'Menlo', default: 'monospace' });
+
 /** 모션 곡선 (설계 문서의 snappy / gentle / standard) */
 export const motion = {
   snappy: { damping: 22, stiffness: 320, mass: 1, reduceMotion: ReduceMotion.System },
