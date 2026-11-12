@@ -1,0 +1,84 @@
+# 안드로이드 앱(mobile/) 검사 + 미리보기 APK
+#
+# PR 에서 앱·공용 로직·단어 데이터가 바뀌면 자동으로 돌고, Actions → "Android Check" → Run workflow 로 직접 돌릴 수도 있다.
+#   1. iOS 워크플로(ios-testflight.yml)의 check 잡과 같은 검사 + 안드로이드 번들
+#   2. Expo prebuild → Gradle 로 미리보기 APK 를 만들어 아티팩트로 올린다 (실행 화면 맨 아래 Artifacts 에서 내려받아 폰에 설치)
+#
+# 미리보기 APK 는 서명 시크릿 없이 디버그 키로 서명한다 — 배포용이 아니다 (배포는 release.yml).
+# 패키지 이름이 com.swpark3179.quizword2.preview 라서 정식 앱과 나란히 깔리고, 학습 기록도 서로 따로다.
+
+name: Android Check
+
+on:
+  pull_request:
+    paths:
+      - 'mobile/**'
+      - 'src/lib/**'
+      - 'data/**'
+      - '.github/workflows/android-check.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# 같은 브랜치에 다시 푸시하면 앞선 실행은 멈춘다
+concurrency:
+  group: android-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Check · preview APK
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            mobile/package-lock.json
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Shared logic tests & data validation
+        run: |
+          npm ci
+          npx vitest run
+          npm run data:validate
+
+      - name: Mobile typecheck · lint · Android bundle
+        working-directory: mobile
+        run: |
+          npm ci
+          npx tsc --noEmit
+          npx expo lint
+          npx expo export --platform android --output-dir dist-android
+
+      - name: Expo prebuild (android)
+        working-directory: mobile
+        env:
+          APP_VARIANT: preview
+        run: npx expo prebuild --platform android --no-install --clean
+
+      # prebuild 가 만든 build.gradle 은 release 도 디버그 키로 서명한다 → 시크릿 없이 설치 가능한 APK 가 나온다
+      - name: Build preview APK
+        working-directory: mobile/android
+        env:
+          APP_VARIANT: preview
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon -PreactNativeArchitectures=armeabi-v7a,arm64-v8a
+          cp app/build/outputs/apk/release/app-release.apk "$GITHUB_WORKSPACE/quiz-word-preview.apk"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: quiz-word-preview-apk
+          path: quiz-word-preview.apk
+          retention-days: 14
