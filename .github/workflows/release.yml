@@ -196,15 +196,73 @@ jobs:
           KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: |
           set -euo pipefail
-          for v in ANDROID_KEYSTORE_BASE64 KEYSTORE_PASSWORD KEY_ALIAS KEY_PASSWORD; do
-            if [ -z "${!v}" ]; then
-              echo "::error::서명 시크릿이 없습니다 (ANDROID_KEYSTORE_BASE64 · ANDROID_KEYSTORE_PASSWORD · ANDROID_KEY_ALIAS · ANDROID_KEY_PASSWORD). 서명 없이 만든 apk/aab 는 배포할 수 없어 중단합니다."
-              exit 1
-            fi
-          done
-          # 키스토어는 저장소 밖에 풀어서 커밋 단계에 섞여 들어가지 않게 한다
-          echo "${ANDROID_KEYSTORE_BASE64}" | base64 --decode > "${RUNNER_TEMP}/upload-keystore.jks"
-          echo "KEYSTORE_PATH=${RUNNER_TEMP}/upload-keystore.jks" >> "$GITHUB_ENV"
+          # 빈 값으로 들어온 시크릿을 '시크릿 이름'으로 짚어 준다 (환경 변수 이름과 달라서 그대로 찍으면 헷갈린다)
+          missing=()
+          [ -n "$ANDROID_KEYSTORE_BASE64" ] || missing+=(ANDROID_KEYSTORE_BASE64)
+          [ -n "$KEYSTORE_PASSWORD" ]       || missing+=(ANDROID_KEYSTORE_PASSWORD)
+          [ -n "$KEY_ALIAS" ]               || missing+=(ANDROID_KEY_ALIAS)
+          [ -n "$KEY_PASSWORD" ]            || missing+=(ANDROID_KEY_PASSWORD)
+          if [ ${#missing[@]} -gt 0 ]; then
+            echo "::error::이 실행에 전달되지 않은 서명 시크릿: ${missing[*]} — 서명 없이 만든 apk/aab 는 배포할 수 없어 중단합니다."
+            echo "확인할 것 (mobile/README.md '처음 한 번만 할 일 — 서명 키'):"
+            echo "  - Settings → Secrets and variables → Actions → Secrets 탭의 'Repository secrets' 에 있어야 합니다."
+            echo "    Variables 탭 · Environment secrets · Dependabot/Codespaces secrets 에 넣은 값은 이 워크플로에 전달되지 않습니다."
+            echo "  - 이름이 한 글자도 다르지 않아야 합니다 (예: ANDROID_KEYSTORE_BASE_64 · ANDROID_KEYSTORE 는 다른 시크릿)."
+            exit 1
+          fi
+
+          # 키스토어는 저장소 밖에 풀어서 커밋 단계에 섞여 들어가지 않게 한다.
+          # 줄바꿈(Windows 의 CRLF 포함)·공백과 certutil -encode 가 붙이는 -----BEGIN/END----- 줄은 걷어내고 푼다.
+          KEYSTORE_PATH="${RUNNER_TEMP}/upload-keystore.jks"
+          if ! printf '%s\n' "$ANDROID_KEYSTORE_BASE64" | grep -v -- '-----' | tr -d '[:space:]' \
+               | base64 --decode > "$KEYSTORE_PATH" 2>/dev/null || [ ! -s "$KEYSTORE_PATH" ]; then
+            echo "::error::ANDROID_KEYSTORE_BASE64 를 base64 로 풀 수 없습니다. 키스토어(.jks) 파일 전체를 base64 로 바꾼 문자열을 그대로 넣으세요 (mobile/README.md 의 PowerShell 명령)."
+            exit 1
+          fi
+
+          # 오래 걸리는 Gradle 빌드 전에 키스토어 · 비밀번호 · 별칭이 서로 맞는지 확인한다.
+          # Gradle 서명과 같은 방식(KeyStore 로 열고 별칭의 키를 키 비밀번호로 꺼냄)이라, 여기를 통과하면 서명 단계에서 막히지 않는다.
+          # keytool 은 PKCS12 키스토어에서 키 비밀번호를 검사하지 않아서 직접 확인한다. 비밀번호는 환경 변수로만 넘긴다.
+          cat > "${RUNNER_TEMP}/CheckKeystore.java" <<'JAVA'
+          import java.io.File;
+          import java.security.KeyStore;
+          import java.util.Collections;
+
+          public class CheckKeystore {
+            public static void main(String[] args) {
+              String alias = System.getenv("KEY_ALIAS");
+              KeyStore ks;
+              try {
+                ks = KeyStore.getInstance(new File(args[0]), System.getenv("KEYSTORE_PASSWORD").toCharArray());
+              } catch (Exception e) {
+                System.out.println("keystore: " + e);
+                System.exit(2);
+                return;
+              }
+              try {
+                if (!ks.isKeyEntry(alias)) {
+                  System.out.println("aliases in keystore: " + String.join(", ", Collections.list(ks.aliases())));
+                  System.exit(3);
+                }
+                ks.getKey(alias, System.getenv("KEY_PASSWORD").toCharArray());
+              } catch (Exception e) {
+                System.out.println("key: " + e);
+                System.exit(4);
+              }
+            }
+          }
+          JAVA
+          rc=0
+          java "${RUNNER_TEMP}/CheckKeystore.java" "$KEYSTORE_PATH" || rc=$?
+          case $rc in
+            0) echo "서명 키 확인 완료" ;;
+            2) echo "::error::키스토어를 열 수 없습니다 — ANDROID_KEYSTORE_PASSWORD 가 틀렸거나, ANDROID_KEYSTORE_BASE64 가 키스토어(.jks) 파일 전체의 base64 가 아닙니다." ;;
+            3) echo "::error::키스토어에 ANDROID_KEY_ALIAS 별칭의 키가 없습니다. 위에 찍힌 별칭 중 하나로 시크릿을 고치세요." ;;
+            4) echo "::error::ANDROID_KEY_PASSWORD 로 키를 꺼낼 수 없습니다. keytool 기본값(PKCS12)으로 만든 키스토어는 키 비밀번호가 키스토어 비밀번호와 같습니다." ;;
+            *) echo "::error::서명 키를 확인하다 알 수 없는 오류가 났습니다 (exit ${rc})." ;;
+          esac
+          [ "$rc" -eq 0 ] || exit 1
+          echo "KEYSTORE_PATH=${KEYSTORE_PATH}" >> "$GITHUB_ENV"
 
       - name: "3-2. Expo prebuild (android 폴더 생성)"
         run: npx expo prebuild --platform android --no-install --clean
