@@ -205,6 +205,25 @@ function softChecks(exam: ExamData, dict: ReadonlyMap<string, Word>, warns: stri
   if (different.length) warns.push(`횟수가 문장에서 센 값과 다른 항목 ${different.length}개: ${different.slice(0, 10).join(', ')}${different.length > 10 ? ' …' : ''}`);
 }
 
+/**
+ * 시험 팩처럼 생겼는지만 가볍게 본다 — 앱이 켜질 때, 이미 검사를 거쳐 저장해 둔 팩을 다시 읽는 데 쓴다.
+ * (전체 검사는 문장마다 단어를 찾아 세기 때문에 팩이 크면 느리다. 저장하기 전에 parseExamPack 으로 한 번만 한다)
+ */
+export function isExamPackFile(data: unknown): data is ExamPackFile {
+  return (
+    isObj(data) &&
+    data.app === EXAMPACK_APP &&
+    data.kind === EXAMPACK_KIND &&
+    typeof data.version === 'number' &&
+    data.version <= EXAMPACK_VERSION &&
+    Array.isArray(data.words) &&
+    isObj(data.exam) &&
+    typeof data.exam.id === 'string' &&
+    Array.isArray(data.exam.sources) &&
+    isObj(data.exam.index)
+  );
+}
+
 /** 시험 팩을 읽는다. 형식이 틀리면 사람이 읽을 수 있는 메시지로 throw (앱의 불러오기용) */
 export function parseExamPack(data: unknown): ExamPackFile {
   const { errors, pack } = validateExamPack(data);

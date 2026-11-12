@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import example from '../../../docs/example.exampack.json';
-import { examPackFileName, mergeExamPack, packExam, parseExamPack, slugId, validateExamPack, type ExamPackFile } from '../exampack';
+import { examPackFileName, isExamPackFile, mergeExamPack, packExam, parseExamPack, slugId, validateExamPack, type ExamPackFile } from '../exampack';
 import { buildWordData, type ExamData } from '../exams';
 import type { RawWord } from '../normalize';
 
@@ -129,6 +129,16 @@ describe('시험 팩: 검사', () => {
     expect(warns((p) => delete p.exam.sentences.part2)).toContain('exam.sentences.part2: 문제 문장이 없음');
     expect(warns((p) => (p.extra = 1))).toContain('모르는 필드 "extra"');
     expect(warns((p) => (word(p, 'team').short = 'team 팀'))).toContain('short 에 영어가 있음');
+  });
+
+  it('저장해 둔 팩을 다시 읽을 때 쓰는 가벼운 확인', () => {
+    expect(isExamPackFile(example)).toBe(true);
+    expect(isExamPackFile(PACK)).toBe(true);
+    expect(isExamPackFile(broken((p) => (p.kind = 'wordset')))).toBe(false);
+    expect(isExamPackFile(broken((p) => (p.version = 2)))).toBe(false);
+    expect(isExamPackFile(broken((p) => delete p.exam.index))).toBe(false);
+    expect(isExamPackFile(null)).toBe(false);
+    expect(isExamPackFile('exampack')).toBe(false);
   });
 
   it('앱에서 읽을 때는 앞의 오류 몇 개를 메시지로 던진다', () => {
