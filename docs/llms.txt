@@ -1,0 +1,13 @@
+# Quiz Word — 시험 팩
+
+> Quiz Word 는 영어 시험 문제에 나온 단어를 익히는 단어장 앱이다. "시험 팩"은 시험 하나(문제 파일·예문·출현 횟수)와 그 시험이 쓰는 단어를 담은 JSON 파일로, 앱에 얹어 불러온다. 문제 파일에서 시험 팩을 만드는 에이전트는 아래 가이드를 따른다.
+
+## 문서
+
+- [시험 팩 만들기 — 에이전트용 가이드](https://swpark3179.github.io/Quiz-Word/exam-pack-guide.md): 형식, 작성 절차, 허용값, 검사 방법, 완성 예시. 이 문서 하나로 충분하다.
+
+## 파일
+
+- [검증기](https://swpark3179.github.io/Quiz-Word/validate-exampack.mjs): `node validate-exampack.mjs <파일.exampack.json>` — `RESULT: PASS` 가 나와야 앱이 불러온다 (Node 18+, 의존성 없음)
+- [JSON Schema](https://swpark3179.github.io/Quiz-Word/exampack.schema.json): 구조·필수 필드·허용값
+- [완성 예시](https://swpark3179.github.io/Quiz-Word/example.exampack.json): 검증기를 통과하는 작은 시험 팩

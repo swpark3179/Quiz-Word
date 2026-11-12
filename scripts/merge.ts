@@ -12,6 +12,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import { slugId } from '../src/lib/exampack';
 import type { ExamData, RawExample } from '../src/lib/exams';
 import type { VocabEntry } from '../src/lib/matcher';
 import { normalizeMemory, type RawWord } from '../src/lib/normalize';
@@ -65,13 +66,6 @@ export interface MergeOptions {
 
 /** 단어마다 붙일 예문 수 */
 const MAX_EXAMPLES = 4;
-
-const slug = (w: string) =>
-  w
-    .toLowerCase()
-    .replace(/['’]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '');
 
 function findSurface(en: string, surface: string): string | undefined {
   if (en.includes(surface)) return surface;
@@ -160,7 +154,7 @@ export function runMerge({ exam, quizDir, workDir, dataDir, quiet }: MergeOption
     if (!w) {
       const senses: Sense[] = (g.senses ?? []).filter((s) => s.ko);
       const pos = v?.pos ? v.pos.split('·').map((p) => p.trim()) : (g.pos ?? []);
-      let id = v?.id ?? slug(headword);
+      let id = v?.id ?? slugId(headword);
       const base = id;
       for (let n = 2; dict.has(id); n++) id = `${base}-${n}`;
       if (id !== base) warnings.push(`id 중복: ${base} → ${id}`);
