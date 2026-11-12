@@ -1,0 +1,60 @@
+# GitHub Pages — docs/ 폴더를 그대로 사이트 루트로 올린다 (빌드 없음)
+#
+# 사이트: https://swpark3179.github.io/Quiz-Word/  (= docs/index.html)
+# 가이드·검증기·스키마의 주소가 모두 docs/ 를 루트로 가정한다 (scripts/build-docs.ts 의 PAGES_URL).
+#
+# 저장소 루트를 올리면 안 된다 — 루트의 index.html 은 Vite 개발용 진입점(/src/main.tsx)이라 빈 화면이 되고,
+# 가이드(exam-pack-guide.md)도 /docs/ 아래로 밀려 안내된 주소에서 404 가 난다.
+# Jekyll 도 쓰지 않는다 — 에이전트가 가이드를 마크다운 원문 그대로 받아야 한다.
+#
+# 설정: 저장소 Settings → Pages → Build and deployment → Source: GitHub Actions
+
+name: Pages
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - 'docs/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 배포는 한 번에 하나만. 진행 중인 배포는 끊지 않는다
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 올리는 검증기가 실제로 돌고, 예시가 그 검증기를 통과하는지 (Node 18+, 의존성 없음)
+      - name: Check validator and example
+        run: node docs/validate-exampack.mjs docs/example.exampack.json
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload docs/
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

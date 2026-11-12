@@ -185,7 +185,7 @@ data/
 
 반대로, 저장소에 있는 시험 하나를 팩으로 내보낼 수도 있습니다: `npm run data:pack-exam -- --exam ccar-f` → `wordset/ccar-f.exampack.json`.
 
-**GitHub Pages 켜기** — 저장소 Settings → Pages → Build and deployment → *Deploy from a branch* → `main` / `/docs`. `docs/` 폴더가 그대로 올라갑니다(빌드 없음).
+**GitHub Pages 켜기** — 저장소 Settings → Pages → Build and deployment → Source: *GitHub Actions*. `main` 에서 `docs/` 가 바뀌면 `.github/workflows/pages.yml` 이 `docs/` 폴더만 그대로 사이트 루트로 올립니다(빌드 없음, Jekyll 없음 — 올리기 전에 예시가 검증기를 통과하는지만 봅니다). 저장소 루트를 올리면 안 됩니다: 루트의 `index.html` 은 Vite 개발용이라 빈 화면이 되고, 가이드 주소가 `/docs/…` 로 밀려 404 가 납니다.
 
 | `docs/` 의 파일 | 내용 | 만드는 법 |
 |---|---|---|
