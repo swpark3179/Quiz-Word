@@ -186,11 +186,15 @@ GitHub Actions → **Release** → Run workflow → 버전 증가 기준(major /
 
 1. 업로드 키스토어 만들기 (JDK 의 keytool. **이 파일과 비밀번호를 잃으면 같은 앱으로 업데이트할 수 없으니** 저장소 밖에 안전하게 보관)
    `keytool -genkey -v -keystore upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload`
-2. Settings → Secrets and variables → Actions 에 등록
-   - `ANDROID_KEYSTORE_BASE64` — 키스토어 파일의 base64. PowerShell: `[Convert]::ToBase64String([IO.File]::ReadAllBytes("upload-keystore.jks")) | Set-Clipboard`
+2. Settings → Secrets and variables → Actions → **Secrets** 탭 → **New repository secret** 으로 등록
+   - `ANDROID_KEYSTORE_BASE64` — 키스토어 파일의 base64. 키스토어가 있는 폴더의 PowerShell 에서:
+     `[Convert]::ToBase64String([IO.File]::ReadAllBytes((Resolve-Path "upload-keystore.jks"))) | Set-Clipboard`
+     (`Resolve-Path` 를 빼면 .NET 이 PowerShell 의 현재 폴더가 아닌 다른 폴더에서 파일을 찾아 실패하고, 클립보드에는 예전 내용이 남습니다. 붙여 넣기 전에 긴 영문·숫자 한 줄인지 확인)
    - `ANDROID_KEYSTORE_PASSWORD` — 키스토어 비밀번호
    - `ANDROID_KEY_ALIAS` — 키 별칭 (위 명령대로면 `upload`)
-   - `ANDROID_KEY_PASSWORD` — 키 비밀번호
+   - `ANDROID_KEY_PASSWORD` — 키 비밀번호 (keytool 기본값인 PKCS12 키스토어면 키스토어 비밀번호와 같음)
+   - **Variables 탭 · Environment secrets · Dependabot secrets 에 넣으면 Release 워크플로에 전달되지 않습니다.** Release 가 "전달되지 않은 서명 시크릿: …" 으로 멈추면 거기 찍힌 이름이 Repository secrets 목록에 똑같은 이름으로 있는지 확인하세요
+   - Release 는 Gradle 빌드 전에 키스토어 · 비밀번호 · 별칭이 서로 맞는지 먼저 확인하고, 틀리면 어느 시크릿이 문제인지 알려 주고 멈춥니다
 
 여기까지 하면 Release 워크플로로 APK 배포가 됩니다.
 
