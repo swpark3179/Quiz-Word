@@ -129,7 +129,7 @@ private 저장소는 GitHub Actions macOS 무료 사용량이 월 약 200분(빌
 
 PR 에서 `mobile/` · `src/lib/` · `data/` 가 바뀌면 **Android Check** 워크플로가 검사 후 미리보기 APK 를 만듭니다 (Actions → Android Check → Run workflow 로 직접 돌려도 됩니다).
 실행 화면 맨 아래 **Artifacts → quiz-word-preview-apk** 를 내려받아 압축을 풀고 `quiz-word-preview.apk` 를 폰에 설치합니다.
-이름이 "단어장 (미리보기)", 패키지가 `…quizword2.preview` 라서 정식 앱과 나란히 깔리고 기록도 따로입니다. 시크릿 없이 디버그 키로 서명한 것이라 배포용은 아닙니다.
+이름이 "단어장 (미리보기)", 패키지가 `…quizword2.preview` 라서 정식 앱과 나란히 깔리고 기록도 따로입니다. 시크릿 없이 디버그 키로 서명한 것이라 배포용은 아닙니다. 빌드 시간을 줄이려고 arm64(요즘 휴대폰) 전용으로 만듭니다 — 정식 Release 의 APK 는 32비트 arm 도 포함합니다.
 
 ### 배포: Release 워크플로
 
