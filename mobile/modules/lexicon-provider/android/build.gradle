@@ -1,0 +1,16 @@
+// 단어 목록 ContentProvider (안드로이드 전용 로컬 모듈) — README.md 참고
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'com.swpark3179.quizword'
+version = '1.0.0'
+
+android {
+  namespace "com.swpark3179.quizword.lexicon"
+  defaultConfig {
+    versionCode 1
+    versionName '1.0.0'
+  }
+}

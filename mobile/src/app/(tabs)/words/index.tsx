@@ -4,17 +4,20 @@
  */
 import { FlashList, type FlashListRef, type ListRenderItem } from '@shopify/flash-list';
 import { router, Stack, useLocalSearchParams } from 'expo-router';
-import { memo, useCallback, useDeferredValue, useMemo, useRef, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { memo, type RefObject, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
+import { Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { FadeIn, FadeOut, runOnJS } from 'react-native-reanimated';
+import type { SearchBarCommands } from 'react-native-screens';
 import { freqIn, inExam, isExtra, isQuizSource, NO_EXAM } from '@shared/exams';
 import { LEVELS, type Word } from '@shared/schema';
 import { searchWords } from '@shared/search';
 import { statusOf, type WordStatus } from '@shared/srs';
+import { notFoundCallbackUrl, resolveLookup } from '@shared/wordLookup';
 import { useToast } from '@/components/motion';
 import { Icon, PosBadge, Segmented, StatusDot, T } from '@/components/ui';
-import { EXAMS, examName, quizSources, sourceName, WORDS, WORDS_BY_FREQ } from '@/data/words';
+import { EXAMS, examName, quizSources, sourceName, WORD_BY_SURFACE, WORDS, WORDS_BY_FREQ } from '@/data/words';
+import { afterFrame } from '@/lib/afterFrame';
 import { showActionSheet } from '@/lib/sheet';
 import { speak } from '@/lib/tts';
 import { useProgress } from '@/store/progress';
@@ -27,6 +30,9 @@ type StatusFilter = '' | WordStatus | 'wrong';
 const POS_FILTERS = ['명사', '동사', '형용사', '부사', '구'];
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const ROW_H = 64;
+
+/** 마지막으로 처리한 다른 앱의 단어 찾기 표시(t) — 화면이 다시 만들어져도 같은 요청을 두 번 처리하지 않게 모듈에 둔다 */
+let handledLookup = '';
 
 function pick<T extends string>(title: string, options: { value: T; label: string }[], onPick: (v: T) => void) {
   showActionSheet(
@@ -42,7 +48,8 @@ function pick<T extends string>(title: string, options: { value: T; label: strin
 
 export default function WordsScreen() {
   const { c } = useTheme();
-  const params = useLocalSearchParams<{ cat?: string; src?: string }>();
+  // lookup·t·xerr: 다른 앱(문제은행)이 quizword://lookup 으로 단어를 찾을 때 (+native-intent.tsx 가 넘긴다)
+  const params = useLocalSearchParams<{ cat?: string; src?: string; lookup?: string; t?: string; xerr?: string }>();
   const [q, setQ] = useState('');
   // 시험: '' = 모든 시험, NO_EXAM = 어느 시험 문제에도 안 나온 단어(확장). 문제 파일만 넘어오면 그 파일이 있는 시험으로 맞춘다
   const [cat, setCatOnly] = useState(
@@ -63,6 +70,7 @@ export default function WordsScreen() {
   const [bubble, setBubble] = useState<string | null>(null);
   const toast = useToast((s) => s.show);
   const listRef = useRef<FlashListRef<Word>>(null);
+  const searchRef = useRef<SearchBarCommands>(null);
   // 검색어는 한 박자 늦게 반영 — 빠르게 칠 때 글자 입력이 밀리지 않게
   const dq = useDeferredValue(q);
   // 학습 상태로 거를 때만 진행 기록에 따라 목록이 바뀐다 (그 밖에는 판정해도 목록을 다시 만들지 않는다)
@@ -137,6 +145,27 @@ export default function WordsScreen() {
       },
     );
   }, [toast]);
+
+  // 다른 앱에서 단어 찾기: 모든 단어에서 검색 → 표제어·변화형이 정확히 맞으면 상세, 하나도 없으면 그 앱에 '결과 없음' 알림
+  useEffect(() => {
+    const word = params.lookup;
+    if (!word || !params.t || handledLookup === params.t) return;
+    handledLookup = params.t;
+    setCat('');
+    setPos('');
+    setStatus('');
+    setMinLevel(1);
+    setQ(word);
+    const result = resolveLookup(word, WORD_BY_SURFACE, WORDS);
+    afterFrame(() => {
+      searchRef.current?.setText(word);
+      if (result.kind === 'exact') router.push({ pathname: '/word/[id]', params: { id: result.word.id } });
+    });
+    if (result.kind === 'none' && Platform.OS !== 'web') {
+      const callback = notFoundCallbackUrl(params.xerr, word);
+      if (callback) Linking.openURL(callback).catch(() => {});
+    }
+  }, [params.lookup, params.t, params.xerr, setCat]);
 
   const filtersOn = !!(cat || pos || status || minLevel > 1);
   const showScrubber = sort === 'alpha' && !dq.trim();
@@ -230,6 +259,8 @@ export default function WordsScreen() {
       <Stack.Screen
         options={{
           headerSearchBarOptions: {
+            // react-native-screens 의 타입이 React 19 의 RefObject<T | null> 을 아직 받지 않는다
+            ref: searchRef as RefObject<SearchBarCommands>,
             placeholder: '단어 또는 뜻',
             autoCapitalize: 'none',
             hideWhenScrolling: false,

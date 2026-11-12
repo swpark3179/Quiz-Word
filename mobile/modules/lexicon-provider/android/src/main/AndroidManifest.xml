@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application>
+    <!--
+      문제은행 앱이 단어장 앱의 등록 단어 목록을 읽는 곳 (읽기 전용, lexicon.json 하나만).
+      ${applicationId} 는 앱 패키지로 바뀐다: com.swpark3179.quizword2.lexicon (미리보기 빌드는 ….preview.lexicon)
+    -->
+    <provider
+      android:name="com.swpark3179.quizword.lexicon.LexiconProvider"
+      android:authorities="${applicationId}.lexicon"
+      android:exported="true"
+      android:grantUriPermissions="false" />
+  </application>
+</manifest>

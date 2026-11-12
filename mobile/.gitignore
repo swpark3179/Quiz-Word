@@ -1,8 +1,8 @@
 node_modules/
 .expo/
 dist/
-ios/
-android/
+/ios/
+/android/
 src/generated/
 *.tsbuildinfo
 dist-android/
