@@ -1,5 +1,5 @@
 /** 공용 UI 기본 조각 */
-import { SymbolView, type SFSymbol } from 'expo-symbols';
+import type { SFSymbol } from 'expo-symbols';
 import { useEffect, type ReactNode } from 'react';
 import { Pressable, StyleSheet, Text, View, type PressableProps, type StyleProp, type TextProps, type TextStyle, type ViewStyle } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
@@ -7,6 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { STATUS_LABEL, type WordStatus } from '@shared/srs';
 import { elevation, motion, posColor, radius, type, useTheme, type Colors, type TypeVariant } from '@/theme';
 import { haptic } from '@/theme/haptics';
+import { Icon } from './Icon';
 
 /* ───── 텍스트 ───── */
 export function T({
@@ -56,10 +57,37 @@ export function PressableScale({
   );
 }
 
-/* ───── 아이콘 ───── */
-export function Icon({ name, size = 20, color, weight = 'semibold' }: { name: SFSymbol; size?: number; color?: string; weight?: 'regular' | 'medium' | 'semibold' | 'bold' }) {
+/* ───── 아이콘 (iOS: SF Symbols · 안드로이드: Icon.android.tsx) ───── */
+export { Icon };
+
+/* ───── 헤더(내비게이션 바) 아이콘 버튼 ───── */
+/**
+ * iOS 26 은 headerRight 에 넣은 뷰를 유리 동그라미(한 변 44pt)로 감싸면서 뷰를 그 크기로 늘린다.
+ * 내용이 그보다 작으면(예: 21pt 아이콘만) 늘어난 뷰의 왼쪽 위에 붙어 동그라미 안에서 치우쳐 보인다.
+ * 그래서 버튼 자체를 동그라미와 같은 크기의 정사각형으로 만들고 그 한가운데에 내용을 둔다.
+ */
+export const HEADER_BUTTON_SIZE = 44;
+
+export function HeaderIconButton({
+  icon,
+  label,
+  onPress,
+  size = 21,
+  children,
+}: {
+  /** children 을 주지 않으면 이 아이콘을 그린다 */
+  icon?: SFSymbol;
+  label: string;
+  onPress?: () => void;
+  size?: number;
+  children?: ReactNode;
+}) {
   const { c } = useTheme();
-  return <SymbolView name={name} size={size} tintColor={color ?? c.text} weight={weight} style={{ width: size, height: size }} />;
+  return (
+    <PressableScale accessibilityRole="button" accessibilityLabel={label} onPress={onPress} scaleTo={0.9} style={styles.headerBtn}>
+      {children ?? (icon ? <Icon name={icon} size={size} color={c.primary} /> : null)}
+    </PressableScale>
+  );
 }
 
 /* ───── 카드 ───── */
@@ -264,6 +292,7 @@ export function Empty({ icon, title, desc, action }: { icon: SFSymbol; title: st
 }
 
 const styles = StyleSheet.create({
+  headerBtn: { width: HEADER_BUTTON_SIZE, height: HEADER_BUTTON_SIZE, alignItems: 'center', justifyContent: 'center' },
   btn: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8, paddingHorizontal: 18 },
   chip: { borderRadius: 999, borderWidth: 1, paddingHorizontal: 14, paddingVertical: 8 },
   seg: { flexDirection: 'row', borderRadius: 10, padding: 2 },

@@ -11,12 +11,12 @@ import { statusOf } from '@shared/srs';
 import { relativeDue } from '@shared/text';
 import { ExamPrefProvider, useExamPref } from '@/components/ExamPref';
 import { useToast } from '@/components/motion';
-import { Button, Card, Empty, Icon, PosBadge, SectionLabel, StatusBadge, T } from '@/components/ui';
+import { Button, Card, Empty, HEADER_BUTTON_SIZE, Icon, PosBadge, SectionLabel, StatusBadge, T } from '@/components/ui';
 import { ContextCard, MemoryAid, SenseList, SpeakButton } from '@/components/word';
 import { contextsOf, corpusExamples, EXAMS, examName, quizSources, WORD_BY_ID, WORD_BY_SURFACE } from '@/data/words';
 import { useProgress } from '@/store/progress';
 import { sessionHref } from '@/store/session';
-import { type, useTheme } from '@/theme';
+import { MONO_FONT, type, useTheme } from '@/theme';
 import { haptic } from '@/theme/haptics';
 
 function groupBySense(contexts: Context[]) {
@@ -70,7 +70,7 @@ export default function WordDetail() {
     body: { color: c.text2, fontSize: 15, lineHeight: 23 },
     heading2: { color: c.muted, fontSize: 13, fontWeight: '700' as const, marginTop: 14, marginBottom: 4 },
     strong: { color: c.text, fontWeight: '700' as const },
-    code_inline: { backgroundColor: c.surface3, color: c.text, fontFamily: 'Menlo', fontSize: 13 },
+    code_inline: { backgroundColor: c.surface3, color: c.text, fontFamily: MONO_FONT, fontSize: 13 },
     blockquote: { backgroundColor: c.surface2, borderLeftColor: c.separator, borderLeftWidth: 3, paddingHorizontal: 10, marginVertical: 4 },
     bullet_list: { marginVertical: 2 },
     ordered_list: { marginVertical: 2 },
@@ -79,7 +79,17 @@ export default function WordDetail() {
   return (
     <ExamPrefProvider pref={pref}>
     <View style={{ flex: 1, backgroundColor: c.bg }}>
-      <Stack.Screen options={{ title: w.word, headerRight: () => <SpeakButton text={w.word} size={20} /> }} />
+      <Stack.Screen
+        options={{
+          title: w.word,
+          // 헤더의 유리 동그라미와 같은 크기의 틀 한가운데에 둔다 (HeaderIconButton 과 같은 이유)
+          headerRight: () => (
+            <View style={styles.headerBtn}>
+              <SpeakButton text={w.word} size={20} />
+            </View>
+          ),
+        }}
+      />
       <ScrollView contentInsetAdjustmentBehavior="automatic" contentContainerStyle={[styles.content, { paddingBottom: 110 + insets.bottom }]}>
         {/* 머리 */}
         <View style={{ gap: 12 }}>
@@ -271,6 +281,7 @@ function Stat({ label, value }: { label: string; value: string }) {
 }
 
 const styles = StyleSheet.create({
+  headerBtn: { width: HEADER_BUTTON_SIZE, height: HEADER_BUTTON_SIZE, alignItems: 'center', justifyContent: 'center' },
   content: { padding: 16, gap: 20 },
   wrap: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
   tag: { borderRadius: 9, paddingHorizontal: 10, paddingVertical: 5 },

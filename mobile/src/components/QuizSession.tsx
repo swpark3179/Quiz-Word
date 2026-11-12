@@ -25,6 +25,7 @@ import { Highlighted, SpeakButton, WordBrief } from '@/components/word';
 import { contextsOf, WORD_BY_ID, WORDS } from '@/data/words';
 import { afterFrame } from '@/lib/afterFrame';
 import { speak } from '@/lib/tts';
+import { useBackClose } from '@/lib/useBackClose';
 import type { ExamplePref } from '@shared/corpus';
 import { useExamPref } from '@/components/ExamPref';
 import { useProgress } from '@/store/progress';
@@ -116,6 +117,9 @@ export function QuizSession({ ids: initialIds, mode, title, onResult }: { ids: s
       { text: '그만하기', style: 'destructive', onPress: () => router.back() },
     ]);
   };
+
+  // 안드로이드 뒤로 가기 — 푸는 중이면 그만할지 묻고, 결과 화면이면 바로 닫는다
+  useBackClose(() => (index >= ids.length ? router.back() : exit()));
 
   if (index >= ids.length) return <QuizSummary ids={ids} results={results} title={title} onRestart={restart} />;
   if (!w || !q) return null;

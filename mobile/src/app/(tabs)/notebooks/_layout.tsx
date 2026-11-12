@@ -1,15 +1,9 @@
-import { Icon, PressableScale } from '@/components/ui';
+import { HeaderIconButton } from '@/components/ui';
 import { TabStack } from '@/components/TabStack';
 import { promptNewNotebook } from '@/lib/notebookActions';
-import { useTheme } from '@/theme';
 
 function AddButton() {
-  const { c } = useTheme();
-  return (
-    <PressableScale accessibilityRole="button" accessibilityLabel="새 학습장" hitSlop={10} onPress={promptNewNotebook}>
-      <Icon name="plus" size={21} color={c.primary} />
-    </PressableScale>
-  );
+  return <HeaderIconButton icon="plus" label="새 학습장" onPress={promptNewNotebook} />;
 }
 
 export default function Layout() {

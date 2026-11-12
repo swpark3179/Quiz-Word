@@ -1,4 +1,5 @@
 import type { ExpoConfig } from 'expo/config';
+import androidVersion from './android-version.json';
 
 /**
  * EAS Update(OTA) 프로젝트 id — 지금은 OTA 를 쓰지 않아 비워 둔다(앱에 들어 있는 번들만 씀).
@@ -10,11 +11,26 @@ const EAS_PROJECT_ID = '';
 /** TestFlight 빌드 번호 — GitHub Actions 가 run_number 로 넣는다 */
 const BUILD_NUMBER = process.env.BUILD_NUMBER ?? '1';
 
-/** 앱 버전 — 네이티브 패키지를 바꾸면 올린다 */
+/** 앱 버전 (iOS) — 네이티브 패키지를 바꾸면 올린다 */
 const VERSION = '1.0.0';
 
+/**
+ * 안드로이드 버전은 android-version.json 에 따로 둔다 — GitHub Actions 의 Release 워크플로가 실행할 때마다
+ * 버전 이름(version)을 올리고 versionCode 를 1 늘려 커밋한다. iOS 버전(VERSION · BUILD_NUMBER)과는 상관없다.
+ * (파일의 versionCode 0 은 아직 한 번도 릴리즈하지 않았다는 뜻 — 로컬·미리보기 빌드는 1 로 만든다)
+ */
+const ANDROID_VERSION = androidVersion.version;
+const ANDROID_VERSION_CODE = Math.max(1, androidVersion.versionCode);
+
+/**
+ * 미리보기 빌드 (안드로이드 전용, android-check.yml 이 APP_VARIANT=preview 로 만든다).
+ * 패키지 이름과 앱 이름을 달리해, 정식 앱(Release · Play)과 나란히 설치할 수 있고 서명이 달라도 충돌하지 않는다.
+ * iOS 워크플로는 이 변수를 주지 않으므로 iOS 빌드에는 영향이 없다.
+ */
+const PREVIEW = process.env.APP_VARIANT === 'preview';
+
 const config: ExpoConfig = {
-  name: '단어장',
+  name: PREVIEW ? '단어장 (미리보기)' : '단어장',
   slug: 'quiz-word',
   owner: 'swpark3179',
   version: VERSION,
@@ -32,6 +48,24 @@ const config: ExpoConfig = {
       ITSAppUsesNonExemptEncryption: false,
       CFBundleDevelopmentRegion: 'ko',
     },
+  },
+  android: {
+    package: PREVIEW ? 'com.swpark3179.quizword2.preview' : 'com.swpark3179.quizword2',
+    version: ANDROID_VERSION,
+    versionCode: ANDROID_VERSION_CODE,
+    adaptiveIcon: {
+      foregroundImage: './assets/adaptive-icon.png',
+      monochromeImage: './assets/adaptive-icon-mono.png',
+      backgroundColor: '#4F46E5',
+    },
+    // 쓰지 않는 권한을 뺀다 — 녹음(expo-audio 는 발음 재생용 오디오 설정에만 쓴다), 외부 저장소(파일은 앱 폴더와 시스템 파일 선택기로만 다룬다),
+    // 다른 앱 위에 그리기(개발 빌드의 오류 화면용)
+    blockedPermissions: [
+      'android.permission.RECORD_AUDIO',
+      'android.permission.READ_EXTERNAL_STORAGE',
+      'android.permission.WRITE_EXTERNAL_STORAGE',
+      'android.permission.SYSTEM_ALERT_WINDOW',
+    ],
   },
   plugins: [
     'expo-router',

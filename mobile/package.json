@@ -10,11 +10,13 @@
     "start:tunnel": "expo start --tunnel",
     "typecheck": "tsc --noEmit",
     "export:ios": "node scripts/sync-shared.mjs && expo export --platform ios --output-dir dist",
+    "export:android": "node scripts/sync-shared.mjs && expo export --platform android --output-dir dist-android",
     "icons": "node scripts/make-icons.mjs",
     "lint": "expo lint"
   },
   "dependencies": {
     "@expo/metro-runtime": "~6.1.2",
+    "@expo/vector-icons": "^15.0.3",
     "@react-native-community/datetimepicker": "8.4.4",
     "@ronradtke/react-native-markdown-display": "^9.0.3",
     "@shopify/flash-list": "2.0.2",
