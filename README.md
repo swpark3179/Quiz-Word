@@ -68,6 +68,7 @@
 
 `mobile/` 에 같은 단어·학습 로직을 쓰는 iOS 앱(Expo)이 있습니다. TestFlight 로 설치하고, 단어를 고치면 **단어 세트 파일**로 옮깁니다(빌드 없이):
 웹 **설정 → 단어 세트 파일 내려받기**(또는 `npm run data:pack`) → 파일을 iPhone 의 파일 앱으로 → 앱 **설정 → 단어 세트 → 파일에서 불러오기**.
+새 시험 하나만 더할 때는 **시험 팩**을 씁니다(앱 설정 → 시험 → 시험 팩 불러오기 — 아래 [새 시험 추가](#새-시험-추가)).
 자세한 내용은 [mobile/README.md](mobile/README.md) 를 보세요. 웹과 앱의 진행 기록(학습장 포함)은 설정의 내보내기/가져오기로 옮길 수 있습니다.
 
 ## 데이터 구조
@@ -106,7 +107,7 @@ data/
 ```
 
 - 예문을 적지 않아도 시험 문제 문장(`data/exams/*/sentences`)에서 이 단어가 나온 문장을 **자동으로 예문으로 붙입니다**.
-- 고친 뒤 검사: `npm run data:validate`
+- 고친 뒤 검사: `npm run data:validate` (규칙은 `src/lib/checks.ts` — 시험 팩 검사와 같은 규칙)
 - iPhone 앱에 반영: `npm run data:pack` → `wordset/` 에 생긴 파일을 앱 설정 → 단어 세트 → 파일에서 불러오기 (웹 설정의 '단어 세트 파일 내려받기'도 같은 파일)
 
 **사전 필드** (`data/words`)
@@ -157,6 +158,47 @@ data/
 
 ## 새 시험 추가
 
+두 가지 방법이 있습니다. 어느 쪽이든 **이미 있는 단어의 뜻·단계·외우기와 다른 시험은 그대로** 두고 새 시험만 더합니다.
+
+| | (가) 시험 팩 | (나) 이 저장소의 파이프라인 |
+|---|---|---|
+| 필요한 것 | 문제 파일과 코딩 에이전트 — **이 저장소·기존 사전이 없어도 됨** | 이 저장소 + 문제 원본 폴더(`QUIZ_DATA_DIR`) |
+| 결과 | `<시험 id>.exampack.json` 파일 하나 | `data/exams/<시험 id>/` 와 사전에 추가된 새 단어 |
+| 앱에 넣기 | 앱 설정 → 시험 → **시험 팩 불러오기** (그 시험만 얹음) | `npm run data:pack` → 단어 세트 파일로 통째로 바꿈 |
+
+### (가) 시험 팩으로
+
+시험 팩은 시험 하나(문제 파일 목록·출현 횟수·예문·문제 문장·노트)와 그 시험이 쓰는 단어의 사전 항목을 담은 파일입니다. 만드는 방법·형식·검증기는 GitHub Pages(`docs/`)로 서비스합니다.
+
+1. 코딩 에이전트에게 문제 파일과 **가이드 주소**를 줍니다: `https://swpark3179.github.io/Quiz-Word/exam-pack-guide.md` (지시문 예시는 `https://swpark3179.github.io/Quiz-Word/` 첫 화면에 있습니다). 문제 파일 형식은 무엇이든 됩니다.
+2. 에이전트가 `<시험 id>.exampack.json` 을 만들고 검증기(`validate-exampack.mjs`)를 `RESULT: PASS` 가 나올 때까지 통과시킵니다. 검증기는 앱이 파일을 읽을 때 쓰는 검사와 같은 코드입니다.
+3. 받은 파일을 넣습니다.
+   - **iPhone 앱**: 파일을 폰으로 옮긴 뒤 설정 → 시험 → 시험 팩 불러오기
+   - **이 저장소(웹)**: `npm run data:add-pack <파일>` → `data/exams/<시험 id>/` 가 생기고 새 단어만 `data/words` 에 들어갑니다
+
+얹는 규칙 (앱과 `data:add-pack` 이 같습니다 — `src/lib/exampack.ts` 의 `mergeExamPack`):
+
+- 팩의 단어를 id → 표제어 → (다른 단어의 변화형으로 등록된 표기) 순으로 사전에서 찾습니다. 단어 id 는 표제어를 소문자·하이픈으로 바꾼 값이라(`lay out` → `lay-out`) 사전을 모르고 만든 팩의 단어도 맞습니다.
+- **이미 있는 단어는 그대로** 둡니다. 팩의 예문이 쓰는 뜻이 사전에 없을 때만 그 뜻을 덧붙입니다(괄호 보충만 다른 뜻은 사전의 뜻에 맞춥니다). 덧붙는 뜻은 불러오기 전 확인 창과 `data:add-pack` 출력에 나옵니다.
+- 없는 단어만 사전에 넣습니다.
+- 같은 id 의 시험이 있으면 그 시험만 바꾸고, 없으면 추가합니다.
+
+반대로, 저장소에 있는 시험 하나를 팩으로 내보낼 수도 있습니다: `npm run data:pack-exam -- --exam ccar-f` → `wordset/ccar-f.exampack.json`.
+
+**GitHub Pages 켜기** — 저장소 Settings → Pages → Build and deployment → *Deploy from a branch* → `main` / `/docs`. `docs/` 폴더가 그대로 올라갑니다(빌드 없음).
+
+| `docs/` 의 파일 | 내용 | 만드는 법 |
+|---|---|---|
+| `exam-pack-guide.md` | 에이전트용 가이드 | 손으로 씀 ("완성 예시" 자리만 자동) |
+| `example.exampack.json` | 검증기를 통과하는 작은 예시 | 손으로 씀 |
+| `validate-exampack.mjs` | 검증기 (Node 18+, 의존성 없음) | `npm run docs:build` — `src/lib/exampack.ts` 를 묶음 |
+| `exampack.schema.json` | JSON Schema | `npm run docs:build` — 허용값을 `src/lib/schema.ts` 에서 가져옴 |
+| `index.html`, `llms.txt` | 사람용 첫 화면(브라우저 검증기), 에이전트용 길잡이 | 손으로 씀 |
+
+검사 규칙(`src/lib/checks.ts`, `src/lib/exampack.ts`)이나 품사·분류·단계를 고쳤으면 **`npm run docs:build` 를 다시 돌려 커밋**합니다. 잊으면 `npm test` 가 알려 줍니다.
+
+### (나) 이 저장소의 파이프라인으로
+
 문제 원본(`QUIZ_DATA_DIR`, 기본값은 PC 의 `Quiz-Bank/assets/quiz-data`)에 새 시험의 문제 파일이 있을 때 씁니다. **사전을 통째로 다시 만들지 않습니다** — 새 단어만 사전에 추가하고, 그 시험 폴더(`data/exams/<id>`)만 새로 씁니다. 이미 있는 단어의 뜻·단계·외우기와 다른 시험 데이터는 그대로입니다.
 
 1. `pipeline/exams.json` 에 시험을 적습니다.
@@ -180,11 +222,14 @@ data/
 | `npm run data:levels` | `pipeline/work/levels/scores-*.txt` 의 점수로 단계를 다시 나눔 (`-- --write` 로 사전에 반영) |
 | `npm run data:memory` | `pipeline/work/memory/out-*.json` 의 외우기를 검사해 사전에 반영 (이미 있는 것은 그대로, `-- --check` 는 검사만) |
 | `npm run data:migrate-check` | 지금 `data/` 가 구조를 바꾸기 전 데이터와 같은 내용인지 전수 비교 |
+| `npm run data:add-pack <파일>` | 시험 팩을 `data/` 에 합침 (새 시험 폴더 + 새 단어만) |
+| `npm run data:pack-exam -- --exam <id>` | `data/` 의 시험 하나를 시험 팩 파일로 |
+| `npm run docs:build` | `docs/` 의 검증기·스키마를 다시 만듦 (`-- --check` 는 최신인지 확인만) |
 
 ## 개발
 
 - `npm run dev` — 개발 서버 (`npm start -- --dev` 와 같음) · `npm run build` — 타입 검사 + 빌드
-- `npm test` — 단위 테스트 (오답 보기 생성, 플래시카드 대기열, SRS, 검색, 학습 범위·학습장, 시험 데이터·예문 고르기, 진행 기록 스토어(모아 쓰기 포함), 단어 세트 파일, 문장 분리, 실행 스크립트, 가짜 시험으로 돌리는 추출 → 병합 → 검사)
+- `npm test` — 단위 테스트 (오답 보기 생성, 플래시카드 대기열, SRS, 검색, 학습 범위·학습장, 시험 데이터·예문 고르기, 진행 기록 스토어(모아 쓰기 포함), 단어 세트 파일, 문장 분리, 실행 스크립트, 가짜 시험으로 돌리는 추출 → 병합 → 검사, 시험 팩 검사·얹기, `docs/` 의 가이드·스키마·검증기가 코드와 맞는지)
 - `npm run smoke` — 앱을 띄운 상태에서 설치된 Edge 로 주요 화면을 눌러 보고 스크린샷 저장 (`BROWSER=chrome` 또는 `BROWSER_PATH=실행 파일` 로 브라우저 지정)
 - 실행 스크립트는 `scripts/launch.mjs` 이고 `start.cmd`·`start.sh`·`npm start` 가 모두 이것을 부릅니다
 - 스택: Vite + React 19 + TypeScript, Tailwind CSS v4, zustand(localStorage), ts-fsrs, Pretendard
