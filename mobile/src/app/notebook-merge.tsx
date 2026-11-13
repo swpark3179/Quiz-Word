@@ -8,7 +8,7 @@ import { Button, Icon, Segmented, T } from '@/components/ui';
 import { WORD_BY_ID } from '@/data/words';
 import { useProgress } from '@/store/progress';
 import { startFromSheet } from '@/store/session';
-import { SHEET_IS_SCREEN, type, useTheme } from '@/theme';
+import { SHEET_IS_SCREEN, sheetFooterPad, type, useTheme } from '@/theme';
 import { haptic } from '@/theme/haptics';
 
 /** 지금 단어 데이터에 있는 단어만 센다 */
@@ -59,7 +59,7 @@ export default function NotebookMergeSheet() {
 
   return (
     <View style={{ flex: 1, paddingTop: SHEET_IS_SCREEN ? insets.top : 0 }}>
-      <ScrollView contentContainerStyle={[styles.content, { paddingBottom: 150 + insets.bottom }]} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag">
+      <ScrollView contentContainerStyle={[styles.content, { paddingBottom: 150 + sheetFooterPad(insets.bottom) }]} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag">
         <View style={{ gap: 4 }}>
           <T v="title2">학습장 합치기</T>
           <T v="subhead" color="text2">
@@ -138,7 +138,7 @@ export default function NotebookMergeSheet() {
         </View>
       </ScrollView>
 
-      <View style={[styles.footer, { paddingBottom: Math.max(16, insets.bottom), backgroundColor: c.bg, borderTopColor: c.separator }]}>
+      <View style={[styles.footer, { paddingBottom: sheetFooterPad(insets.bottom), backgroundColor: c.bg, borderTopColor: c.separator }]}>
         <T v="footnote" color="text2" style={{ textAlign: 'center' }}>
           {ready ? (
             <>
