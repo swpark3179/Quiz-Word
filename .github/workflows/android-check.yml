@@ -7,6 +7,8 @@
 # 미리보기 APK 는 서명 시크릿 없이 디버그 키로 서명한다 — 배포용이 아니다 (배포는 release.yml).
 # 패키지 이름이 com.swpark3179.quizword2.preview 라서 정식 앱과 나란히 깔리고, 학습 기록도 서로 따로다.
 # 빌드 시간을 줄이려고 arm64-v8a(요즘 휴대폰) 하나만 만든다 — 정식 Release 는 32비트 arm 도 포함한다.
+# 정식 Release 처럼 R8 로 줄이고 난독화한다(app.config.ts 의 expo-build-properties) — R8 때문에 생기는 문제를 머지 전에 폰에서 잡으려는 것.
+# 미리보기가 죽으면 같이 올라가는 quiz-word-preview-mapping 의 mapping.txt 로 스택을 원래 이름으로 되돌린다 (mobile/README.md '난독화(R8)').
 
 name: Android Check
 
@@ -98,4 +100,12 @@ jobs:
         with:
           name: quiz-word-preview-apk
           path: quiz-word-preview.apk
+          retention-days: 14
+
+      # R8 가독화 파일 — 미리보기 APK 의 크래시 스택(난독화된 이름)을 retrace 로 되돌릴 때만 쓴다
+      - uses: actions/upload-artifact@v4
+        with:
+          name: quiz-word-preview-mapping
+          path: mobile/android/app/build/outputs/mapping/release/mapping.txt
+          if-no-files-found: error
           retention-days: 14
