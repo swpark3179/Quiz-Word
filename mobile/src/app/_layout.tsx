@@ -47,7 +47,8 @@ export default function RootLayout() {
             name="word/[id]"
             options={{ title: '', ...largeHeader(c, dark), headerShadowVisible: false }}
           />
-          <Stack.Screen name="settings" options={{ title: '설정', ...largeHeader(c, dark) }} />
+          {/* 설정 버튼을 두 번 눌러도 설정 화면은 하나만 쌓는다 — 두 장이 쌓이면 뒤로 가기를 눌러도 같은 화면이 다시 보여 안 눌린 것처럼 보인다 */}
+          <Stack.Screen name="settings" dangerouslySingular options={{ title: '설정', ...largeHeader(c, dark) }} />
           <Stack.Screen name="scope" options={sheetOptions(c, [0.78, 1])} />
           {/* 이름 입력칸이 있어 키보드가 올라오므로 처음부터 크게 띄운다 */}
           <Stack.Screen name="notebook-merge" options={sheetOptions(c, [1])} />

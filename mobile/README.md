@@ -30,6 +30,7 @@ mobile/
   src/theme/          디자인 토큰 · 모션 곡선 · 진동
   src/generated/      ← 자동 생성 (git 제외): 웹과 공용 로직(../src/lib) + 단어 데이터(../data/words, ../data/exams)
   scripts/sync-shared.mjs   공용 로직·데이터 복사 (npm install / npm start 때 자동 실행)
+  patches/            라이브러리 고침 (npm install 때 patch-package 가 적용) — 아래 '라이브러리 패치'
   scripts/make-icons.mjs    아이콘·스플래시 생성
 ```
 
@@ -121,6 +122,12 @@ OTA 는 쓰지 않으므로, 화면 코드나 공용 로직(`src/lib`)을 고치
 - 진행 기록은 0.8초 동안 모아 한 번에 저장하고, 앱이 백그라운드로 가면 바로 씁니다.
 - 판정 기록은 카드가 넘어가는 프레임 뒤에, 객관식 다음 문제는 해설을 보는 동안 미리 만듭니다.
 
+## 라이브러리 패치
+
+`patches/` 의 패치는 `npm install`(`npm ci`) 때 postinstall 의 patch-package 가 `node_modules` 에 적용합니다. 패치가 맞지 않으면 설치가 실패하니 라이브러리 버전을 올릴 때 함께 확인하세요.
+
+- `react-native-screens+4.16.0.patch` — iOS 26 에서 헤더 없는 화면(탭) 위로 연 화면(설정·단어 상세)을 닫았다가 다시 열면 왼쪽 위 뒤로 버튼이 눌리지 않던 것. 4.16 이 뒤로 버튼을 누를 때 터치를 껐다가 화면이 닫힌 뒤에만 다시 켜는데, 헤더 없는 화면으로 돌아오면 다시 켜지지 않는다 ([react-native-screens#3294](https://github.com/software-mansion/react-native-screens/issues/3294), 4.17 에서 고쳐짐). 패치는 끄는 줄만 뺍니다. Expo SDK 를 올려 react-native-screens 가 4.17 이상이 되면 이 패치를 지웁니다.
+
 ## TestFlight 빌드
 
 GitHub Actions → **iOS TestFlight** → Run workflow (또는 `gh workflow run ios-testflight.yml -f upload_testflight=true`).
@@ -170,7 +177,7 @@ App Store Connect 에 넣을 이름·부제·프로모션 텍스트·설명·키
 
 ### 미리보기 APK (머지 전에 폰에서 확인)
 
-PR 에서 `mobile/` · `src/lib/` · `data/` 가 바뀌면 **Android Check** 워크플로가 검사 후 미리보기 APK 를 만듭니다 (Actions → Android Check → Run workflow 로 직접 돌려도 됩니다).
+**Android Check** 워크플로를 직접 실행하면 검사 후 미리보기 APK 를 만듭니다: Actions → Android Check → Run workflow → 확인할 브랜치를 고릅니다. PR 마다 자동으로 돌지는 않습니다.
 실행 화면 맨 아래 **Artifacts → quiz-word-preview-apk** 를 내려받아 압축을 풀고 `quiz-word-preview.apk` 를 폰에 설치합니다.
 이름이 "단어장 (미리보기)", 패키지가 `…quizword2.preview` 라서 정식 앱과 나란히 깔리고 기록도 따로입니다. 시크릿 없이 디버그 키로 서명한 것이라 배포용은 아닙니다. 빌드 시간을 줄이려고 arm64(요즘 휴대폰) 전용으로 만듭니다 — 정식 Release 의 APK 는 32비트 arm 도 포함합니다.
 정식 Release 와 똑같이 R8 로 만들므로, 릴리즈에서만 생기는 문제도 여기서 먼저 드러납니다.
@@ -234,7 +241,7 @@ GitHub Actions → **Release** → Run workflow → 버전 증가 기준(major /
 ## 디자인 메모
 
 - 네이티브 탭(iOS 26 Liquid Glass), large title, 네이티브 검색창, 시트, SF Symbols, 시스템 폰트
-- 헤더 오른쪽 버튼은 `HeaderIconButton`(44pt 정사각형)을 씁니다 — iOS 26 이 헤더 버튼을 유리 동그라미로 감싸므로, 버튼이 그보다 작으면 아이콘이 동그라미 안에서 치우칩니다
+- 헤더 오른쪽 버튼은 `HeaderIconButton`(iOS 36pt · 안드로이드 44pt 정사각형)을 씁니다 — iOS 26 은 헤더 버튼을 유리 동그라미 안의 36pt 칸에 넣는데, 버튼이 그보다 작으면 왼쪽 위로, 크면 아래로 아이콘이 치우칩니다 (`HEADER_BUTTON_SIZE`)
 - 웹과 같은 인디고 브랜드 색, 품사 색, 형광펜 예문 강조
 - 모션: 플래시카드 드래그(회전·덧칠·도장) → 판정 시 3D 뒤집기 → 위로 날아가며 뒤 카드가 앞으로 오는 딜 모션, 객관식 정답 채움·오답 흔들림, count-up·진척 링. 모든 판정에 진동
 - iPhone 의 "동작 줄이기"를 켜면 회전·뒤집기는 크로스페이드로, 흔들림은 색 변화로 바뀝니다

@@ -1,7 +1,9 @@
 /**
  * 단어장 — 네이티브 검색창, 필터 칩, 정렬, A–Z 스크러버
  * 행은 자기 단어의 학습 상태만 구독한다(WordRow) — 학습 중 판정 하나에 바뀐 행 하나만 다시 그려진다.
+ * 단어장 화면에서 단어장 탭을 한 번 더 누르면 목록 맨 위로 올라간다.
  */
+import { useScrollToTop } from '@react-navigation/native';
 import { FlashList, type FlashListRef, type ListRenderItem } from '@shopify/flash-list';
 import { router, Stack, useLocalSearchParams } from 'expo-router';
 import { memo, type RefObject, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
@@ -72,6 +74,9 @@ export default function WordsScreen() {
   const [bubble, setBubble] = useState<string | null>(null);
   const toast = useToast((s) => s.show);
   const listRef = useRef<FlashListRef<Word>>(null);
+  // 탭을 다시 누르면 맨 위로 — 안드로이드 탭은 tabPress 를 보내고 여기서 올린다.
+  // iOS 네이티브 탭은 이 이벤트 없이 탭 쪽에서 직접 맨 위로 올린다 ((tabs)/_layout.tsx 의 NativeTabs 기본 동작)
+  useScrollToTop(listRef);
   const searchRef = useRef<SearchBarCommands>(null);
   // 검색어는 한 박자 늦게 반영 — 빠르게 칠 때 글자 입력이 밀리지 않게
   const dq = useDeferredValue(q);

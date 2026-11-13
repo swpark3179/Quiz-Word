@@ -1,0 +1,22 @@
+diff --git a/node_modules/react-native-screens/ios/RNSScreenStack.mm b/node_modules/react-native-screens/ios/RNSScreenStack.mm
+index 229dc58..d0b1df4 100644
+--- a/node_modules/react-native-screens/ios/RNSScreenStack.mm
++++ b/node_modules/react-native-screens/ios/RNSScreenStack.mm
+@@ -230,13 +230,10 @@ namespace react = facebook::react;
+     // which we check indirectly by checking if transitionCoordinator is set.
+     // If it's not, we are safe to proceed.
+     if (self.transitionCoordinator == nil) {
+-      // We still need to disable interactions for back button so click effects are not applied,
+-      // and there is unfortunately no better place for it currently
+-      UIView *button = [navigationBar rnscreens_findBackButtonWrapperView];
+-      if (button != nil) {
+-        button.userInteractionEnabled = false;
+-      }
+-
++      // [quiz-word patch] Do not disable the back button here. It was re-enabled only in didPopItem,
++      // which can miss (e.g. popping back to a screen with a hidden header). iOS 26 then reuses the
++      // disabled button view on the next push and the back button stops responding.
++      // Upstream: software-mansion/react-native-screens#3294, removed in 4.17 (#3173).
+       return true;
+     }
+ 

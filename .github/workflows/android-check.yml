@@ -1,6 +1,8 @@
 # 안드로이드 앱(mobile/) 검사 + 미리보기 APK
 #
-# PR 에서 앱·공용 로직·단어 데이터가 바뀌면 자동으로 돌고, Actions → "Android Check" → Run workflow 로 직접 돌릴 수도 있다.
+# 수동으로만 돈다 (PR 마다 자동으로 돌던 것은 껐다): Actions → "Android Check" → Run workflow 에서 브랜치를 골라 실행.
+#   gh workflow run android-check.yml --ref <브랜치>
+#
 #   1. iOS 워크플로(ios-testflight.yml)의 check 잡과 같은 검사 + 안드로이드 번들
 #   2. Expo prebuild → Gradle 로 미리보기 APK 를 만들어 아티팩트로 올린다 (실행 화면 맨 아래 Artifacts 에서 내려받아 폰에 설치)
 #
@@ -13,18 +15,19 @@
 name: Android Check
 
 on:
-  pull_request:
-    paths:
-      - 'mobile/**'
-      - 'src/lib/**'
-      - 'data/**'
-      - '.github/workflows/android-check.yml'
+  # PR 자동 실행은 끔 — 미리보기 APK 가 필요할 때만 돌린다. 다시 켜려면 아래 pull_request 블록을 되살린다.
+  # pull_request:
+  #   paths:
+  #     - 'mobile/**'
+  #     - 'src/lib/**'
+  #     - 'data/**'
+  #     - '.github/workflows/android-check.yml'
   workflow_dispatch:
 
 permissions:
   contents: read
 
-# 같은 브랜치에 다시 푸시하면 앞선 실행은 멈춘다
+# 같은 브랜치로 다시 실행하면 앞선 실행은 멈춘다
 concurrency:
   group: android-check-${{ github.ref }}
   cancel-in-progress: true

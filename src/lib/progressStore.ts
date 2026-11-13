@@ -75,6 +75,8 @@ export interface ProgressState {
   record: (id: string, correct: boolean, opts?: { grade?: Grade3; srs?: boolean; source?: Source }) => void;
   addWrong: (id: string) => void;
   removeWrong: (id: string) => void;
+  /** 오답노트만 비운다 — 복습 일정·통계·학습장·설정은 그대로 */
+  clearWrong: () => void;
   updateSettings: (s: Partial<Settings>) => void;
   /** 학습장을 만들고 새 id 를 돌려준다 */
   createNotebook: (name: string, ids?: string[]) => string;
@@ -213,6 +215,10 @@ export function createProgressStore(getStorage: () => StateStorage, opts: Progre
         const next = { ...get().wrong };
         delete next[id];
         set({ wrong: next });
+      },
+
+      clearWrong() {
+        set({ wrong: {} });
       },
 
       updateSettings(s) {
