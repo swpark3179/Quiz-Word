@@ -10,6 +10,10 @@
 #   5. 4번 커밋에 태그를 달고 Release 페이지 생성 (이전 버전 이후 PR 목록 + 빌드 결과물 첨부)
 #   6. (upload_play 를 켰을 때만) aab 를 Play Console 내부 테스트 트랙에 업로드
 #
+# 릴리즈 빌드는 R8 로 줄이고 난독화한다 (app.config.ts 의 expo-build-properties).
+# R8 의 가독화 파일(mapping.txt)은 aab 안(BUNDLE-METADATA)에 들어가 Play Console 이 업로드 때 알아서 가져간다 —
+# 워크플로로 올리든 Play Console 에 직접 올리든 따로 올릴 파일이 없다. 3-2 의 '가독화 파일 확인' 단계가 aab 에 들었는지 본다.
+#
 # 필요한 시크릿
 #   RELEASE_TOKEN (선택) : 기본 브랜치에 보호 규칙이 있어 기본 토큰으로 푸시가 막힐 때만 등록
 #   ANDROID_KEYSTORE_BASE64   : 업로드 키스토어(.jks) 파일의 base64
@@ -393,6 +397,22 @@ jobs:
             fi
           done
 
+      # R8 이 꺼진 채 빌드되면 aab 에 가독화 파일이 없어 Play Console 이 "가독화 파일이 없습니다" 경고를 다시 띄운다.
+      # Release 를 만들기 전에 aab 안에 R8 매핑(mapping.txt 와 같은 내용)이 들었는지 본다.
+      - name: "3-2. 가독화 파일 확인 (aab 에 R8 매핑이 없으면 중단)"
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          ENTRY=BUNDLE-METADATA/com.android.tools.build.obfuscation/proguard.map
+          for aab in release-assets/*.aab; do
+            SIZE=$({ unzip -p "$aab" "$ENTRY" 2>/dev/null || true; } | wc -c)
+            if [ "$SIZE" -eq 0 ]; then
+              echo "::error::$aab 에 R8 가독화 파일($ENTRY)이 없습니다 — R8 이 꺼진 채 빌드됐습니다. app.config.ts 의 expo-build-properties(enableMinifyInReleaseBuilds)를 확인하세요."
+              exit 1
+            fi
+            echo "$aab → 가독화 파일 ${SIZE} bytes"
+          done
+
       - name: "3-3. 첨부할 빌드 결과물 확인"
         run: |
           set -euo pipefail
@@ -461,7 +481,14 @@ jobs:
             echo "::error::PLAY_SERVICE_ACCOUNT_JSON 시크릿이 없습니다. mobile/README.md 의 'Play 내부 테스트' 를 따라 등록하거나, Release 페이지의 aab 를 Play Console 에 직접 올리세요."
             exit 1
           fi
+          # 파일 경로나 일부만 붙여 넣으면 업로드 액션이 알아보기 힘든 인증 오류로 멈추므로 먼저 확인한다 (값은 찍지 않는다)
+          if ! jq -e '.type == "service_account" and (.client_email | type == "string") and (.private_key | type == "string")' \
+               <<< "$PLAY_SERVICE_ACCOUNT_JSON" > /dev/null 2>&1; then
+            echo "::error::PLAY_SERVICE_ACCOUNT_JSON 이 서비스 계정 JSON 키가 아닙니다. Google Cloud 콘솔에서 내려받은 .json 파일의 내용 전체({ 부터 } 까지)를 그대로 넣으세요."
+            exit 1
+          fi
 
+      # 가독화 파일은 aab 안에 들어 있어 Play 가 알아서 이 버전에 붙인다 (mappingFile 을 따로 넘기지 않는다)
       - name: "6. Play 내부 테스트 트랙에 업로드"
         if: ${{ inputs.upload_play }}
         uses: r0adkll/upload-google-play@v1

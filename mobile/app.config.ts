@@ -89,6 +89,19 @@ const config: ExpoConfig = {
         dark: { image: './assets/splash-icon.png', backgroundColor: '#1E1B4B' },
       },
     ],
+    // 안드로이드 릴리즈 빌드(Release 의 apk·aab, Android Check 의 미리보기 APK)를 R8 로 줄이고 난독화한다.
+    // R8 의 가독화 파일(mapping.txt)은 aab 에 같이 들어가 Play Console 이 알아서 가져간다 — 비정상 종료·ANR 스택이 원래 이름으로 보인다.
+    // 리소스 축소: JS 에서 require 한 이미지는 Expo CLI 가 만드는 res/raw/keep.xml 이 지켜 준다.
+    // 릴리즈에서만 생기는 크래시(ClassNotFoundException 등)는 리플렉션으로 찾는 코드가 지워진 것 — 그 클래스를 extraProguardRules 에 -keep 으로 더한다.
+    [
+      'expo-build-properties',
+      {
+        android: {
+          enableMinifyInReleaseBuilds: true,
+          enableShrinkResourcesInReleaseBuilds: true,
+        },
+      },
+    ],
   ],
   experiments: {
     typedRoutes: false,

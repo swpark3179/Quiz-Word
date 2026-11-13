@@ -166,12 +166,14 @@ App Store Connect 에 넣을 이름·부제·프로모션 텍스트·설명·키
 - 패키지 이름 `com.swpark3179.quizword2`. 버전은 `android-version.json` 에 있고 Release 워크플로가 올립니다 (`app.config.ts` 의 iOS `VERSION` 과 별개).
 - 단어 세트·시험 팩·진행 기록 파일은 iPhone 과 같은 방법으로 옮깁니다 (Google Drive·메신저·USB 로 폰에 넣고 앱 설정에서 불러오기).
 - 검사: `npm run export:android` (안드로이드 번들이 만들어지는지)
+- 릴리즈 빌드(Release 의 apk·aab, 미리보기 APK)는 R8 로 줄이고 난독화합니다 — 아래 [난독화(R8)](#난독화r8)
 
 ### 미리보기 APK (머지 전에 폰에서 확인)
 
 PR 에서 `mobile/` · `src/lib/` · `data/` 가 바뀌면 **Android Check** 워크플로가 검사 후 미리보기 APK 를 만듭니다 (Actions → Android Check → Run workflow 로 직접 돌려도 됩니다).
 실행 화면 맨 아래 **Artifacts → quiz-word-preview-apk** 를 내려받아 압축을 풀고 `quiz-word-preview.apk` 를 폰에 설치합니다.
 이름이 "단어장 (미리보기)", 패키지가 `…quizword2.preview` 라서 정식 앱과 나란히 깔리고 기록도 따로입니다. 시크릿 없이 디버그 키로 서명한 것이라 배포용은 아닙니다. 빌드 시간을 줄이려고 arm64(요즘 휴대폰) 전용으로 만듭니다 — 정식 Release 의 APK 는 32비트 arm 도 포함합니다.
+정식 Release 와 똑같이 R8 로 만들므로, 릴리즈에서만 생기는 문제도 여기서 먼저 드러납니다.
 
 ### 배포: Release 워크플로
 
@@ -214,6 +216,20 @@ GitHub Actions → **Release** → Run workflow → 버전 증가 기준(major /
 - 올린 버전은 기본으로 **초안(draft)** 상태입니다 — Play Console 의 내부 테스트에서 검토·출시를 눌러야 테스터에게 나갑니다. 앱이 아직 한 번도 검토를 통과하지 않았으면 API 가 초안만 받기 때문입니다.
   이후에는 저장소 변수(Settings → Secrets and variables → Actions → Variables) `PLAY_RELEASE_STATUS` 를 `completed` 로 두면 올리자마자 나갑니다.
 - Play 업로드 단계는 Release 페이지를 만든 뒤에 돕니다. 여기서 실패해도 apk · aab 는 Release 에 있으니 aab 를 직접 올리면 됩니다.
+- R8 가독화 파일은 aab 안에 들어 있어 따로 올리지 않습니다 (워크플로로 올리든 직접 올리든 Play 가 알아서 붙입니다). 아래 [난독화(R8)](#난독화r8)
+
+### 난독화(R8)
+
+릴리즈 빌드는 R8 로 안 쓰는 코드·리소스를 지우고 클래스·메서드 이름을 줄입니다 (앱이 작아짐). 설정은 `app.config.ts` 의 `expo-build-properties` (`enableMinifyInReleaseBuilds` · `enableShrinkResourcesInReleaseBuilds`) 입니다.
+
+- **Play Console**: R8 의 가독화 파일(`mapping.txt`)이 aab 의 `BUNDLE-METADATA/com.android.tools.build.obfuscation/proguard.map` 에 같이 들어가고, Play Console 이 업로드 때 그것을 가져갑니다. 그래서 Android vitals 의 비정상 종료·ANR 스택이 원래 이름으로 보이고, "이 App Bundle 유형과 연결된 가독화 파일이 없습니다" 경고도 뜨지 않습니다 (R8 을 켜기 전에 올린 버전에는 경고가 남아 있습니다).
+  Release 워크플로는 aab 에 이 파일이 없으면(R8 이 꺼진 채 빌드되면) Release 를 만들기 전에 멈춥니다.
+- **Release 의 apk 가 죽었을 때**: apk 와 aab 는 한 번의 빌드에서 나와 매핑이 같습니다. 같은 Release 의 aab 에서 꺼내서 씁니다 (Windows 10 이상의 PowerShell 에도 `tar` 가 있습니다. aab 는 zip 이라 확장자를 .zip 으로 바꿔 탐색기로 풀어도 됩니다)
+  `tar -xf Quiz-Word-<버전>.aab BUNDLE-METADATA/com.android.tools.build.obfuscation/proguard.map`
+  꺼낸 파일과 `adb logcat` 에서 복사한 스택으로 Android SDK 의 retrace 를 돌리면 원래 이름이 나옵니다:
+  `retrace BUNDLE-METADATA/com.android.tools.build.obfuscation/proguard.map stack.txt` (SDK 의 `cmdline-tools/latest/bin` 에 있음)
+  미리보기 APK 는 Android Check 실행 화면의 Artifacts → `quiz-word-preview-mapping` 의 `mapping.txt` 를 씁니다.
+- **릴리즈에서만 죽으면** (`ClassNotFoundException` · `NoSuchMethodError` 등): 리플렉션으로 찾는 클래스를 R8 이 지웠거나 이름을 바꾼 것입니다. 되돌린 스택에 나온 클래스를 `expo-build-properties` 의 `android.extraProguardRules` 에 `-keep class 패키지.클래스 { *; }` 로 더합니다. 원인을 찾기 전에 급하면 `enableMinifyInReleaseBuilds` · `enableShrinkResourcesInReleaseBuilds` 를 `false` 로 되돌리고 Release 의 '가독화 파일 확인' 단계를 지우면 예전처럼 빌드됩니다 (Play 경고는 다시 뜸).
 
 ## 디자인 메모
 
