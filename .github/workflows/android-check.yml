@@ -39,9 +39,9 @@ jobs:
     # 정상이면 Gradle 단계까지 20분 안팎 — 멈추면 빨리 드러나게 한다
     timeout-minutes: 40
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
@@ -49,13 +49,13 @@ jobs:
             package-lock.json
             mobile/package-lock.json
 
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '17'
 
       # Gradle 의존성·빌드 캐시를 실행 사이에 재사용한다 (캐시는 기본 브랜치 실행이 쓰고, PR 은 읽기만 한다)
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v5
 
       - name: Shared logic tests & data validation
         run: |
@@ -99,14 +99,14 @@ jobs:
             -x lintVitalAnalyzeRelease -x lintVitalReportRelease -x lintVitalRelease
           cp app/build/outputs/apk/release/app-release.apk "$GITHUB_WORKSPACE/quiz-word-preview.apk"
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: quiz-word-preview-apk
           path: quiz-word-preview.apk
           retention-days: 14
 
       # R8 가독화 파일 — 미리보기 APK 의 크래시 스택(난독화된 이름)을 retrace 로 되돌릴 때만 쓴다
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: quiz-word-preview-mapping
           path: mobile/android/app/build/outputs/mapping/release/mapping.txt
