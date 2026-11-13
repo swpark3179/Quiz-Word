@@ -150,7 +150,7 @@ private 저장소는 GitHub Actions macOS 무료 사용량이 월 약 200분(빌
 
 ### App Store 공개 출시
 
-App Store Connect 에 넣을 이름·부제·프로모션 텍스트·설명·키워드·심사 메모(영문)와 스크린샷(iPhone 6.9")은 [store/app-store-connect.md](store/app-store-connect.md) 에 있습니다.
+App Store Connect 에 넣을 이름·부제·프로모션 텍스트·설명·키워드·심사 메모(영문)와 스크린샷(iPhone 6.3" · 6.9")은 [store/app-store-connect.md](store/app-store-connect.md) 에 있습니다.
 지원 URL 과 개인정보 처리방침 URL 은 GitHub Pages 의 `docs/support.html` · `docs/privacy.html` 입니다 (main 에 머지되면 Pages 워크플로가 올립니다).
 
 ## 안드로이드
