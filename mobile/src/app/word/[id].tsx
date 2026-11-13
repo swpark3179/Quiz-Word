@@ -82,7 +82,7 @@ export default function WordDetail() {
       <Stack.Screen
         options={{
           title: w.word,
-          // 헤더의 유리 동그라미와 같은 크기의 틀 한가운데에 둔다 (HeaderIconButton 과 같은 이유)
+          // 헤더 버튼 칸(HEADER_BUTTON_SIZE)과 같은 크기의 틀 한가운데에 둔다 (HeaderIconButton 과 같은 이유)
           headerRight: () => (
             <View style={styles.headerBtn}>
               <SpeakButton text={w.word} size={20} />

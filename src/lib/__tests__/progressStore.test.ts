@@ -201,6 +201,22 @@ describe('progressStore (웹·앱 공용)', () => {
     expect(createProgressStore(() => storage).getState().notebooks).toHaveLength(1);
   });
 
+  it('오답노트 초기화는 오답노트만 비운다 — 복습 일정·통계·학습장은 남고, 다시 열어도 비어 있다', () => {
+    const storage = memoryStorage();
+    const store = createProgressStore(() => storage);
+    store.getState().record('robust', false);
+    store.getState().addWrong('issue');
+    store.getState().createNotebook('남는 학습장', ['robust']);
+    const { cards, days, history } = store.getState();
+    store.getState().clearWrong();
+    expect(store.getState().wrong).toEqual({});
+    expect(store.getState().cards).toBe(cards);
+    expect(store.getState().days).toBe(days);
+    expect(store.getState().history).toBe(history);
+    expect(store.getState().notebooks[0]).toMatchObject({ name: '남는 학습장', ids: ['robust'] });
+    expect(createProgressStore(() => storage).getState().wrong).toEqual({});
+  });
+
   it('가져온 학습장 형식 검사 — 잘못된 항목은 버리고 중복 단어는 뺀다', () => {
     const out = sanitizeNotebooks([
       { id: 'nb-a', name: 'A', ids: ['x', 'y', 'x', 3], createdAt: 1, updatedAt: 2 },

@@ -49,6 +49,7 @@ export const MD_ICON: Partial<Record<SFSymbol, MdName>> = {
   shuffle: 'shuffle-variant',
   'speaker.wave.2.fill': 'volume-high',
   'text.quote': 'format-quote-close',
+  trash: 'trash-can-outline',
   'trash.fill': 'trash-can',
   xmark: 'close',
   'xmark.circle.fill': 'close-circle',

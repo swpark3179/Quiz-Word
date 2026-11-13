@@ -1,7 +1,7 @@
 /** 공용 UI 기본 조각 */
 import type { SFSymbol } from 'expo-symbols';
 import { useEffect, type ReactNode } from 'react';
-import { Pressable, StyleSheet, Text, View, type PressableProps, type StyleProp, type TextProps, type TextStyle, type ViewStyle } from 'react-native';
+import { Platform, Pressable, StyleSheet, Text, View, type PressableProps, type StyleProp, type TextProps, type TextStyle, type ViewStyle } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { STATUS_LABEL, type WordStatus } from '@shared/srs';
@@ -62,11 +62,14 @@ export { Icon };
 
 /* ───── 헤더(내비게이션 바) 아이콘 버튼 ───── */
 /**
- * iOS 26 은 headerRight 에 넣은 뷰를 유리 동그라미(한 변 44pt)로 감싸면서 뷰를 그 크기로 늘린다.
- * 내용이 그보다 작으면(예: 21pt 아이콘만) 늘어난 뷰의 왼쪽 위에 붙어 동그라미 안에서 치우쳐 보인다.
- * 그래서 버튼 자체를 동그라미와 같은 크기의 정사각형으로 만들고 그 한가운데에 내용을 둔다.
+ * iOS 26 은 headerRight 에 넣은 뷰를 유리 동그라미 안의 36pt 높이 칸에 넣고, 폭도 36pt 보다 좁으면 36pt 로 늘린다.
+ * 그런데 뷰 안의 내용은 크기가 바뀌어도 원래 자리(왼쪽 위 기준)에 그대로 있다 (react-native-screens 4.16).
+ * - 내용이 36pt 보다 작으면(예: 21pt 아이콘만) 늘어난 칸의 왼쪽 위에 붙는다
+ * - 36pt 보다 크면(예전 44pt) 넘친 만큼 아래로 내려가 아이콘이 동그라미 아래쪽에 놓인다
+ * 그래서 버튼을 그 칸과 똑같은 36pt 정사각형으로 만들고 한가운데에 아이콘을 둔다 — iOS 가 늘리거나 줄일 것이 없다.
+ * 안드로이드 헤더에는 이런 칸이 없어 터치 영역으로 넉넉한 44pt 를 쓴다.
  */
-export const HEADER_BUTTON_SIZE = 44;
+export const HEADER_BUTTON_SIZE = Platform.OS === 'ios' ? 36 : 44;
 
 export function HeaderIconButton({
   icon,

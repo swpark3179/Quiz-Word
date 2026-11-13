@@ -1,17 +1,18 @@
 /**
- * 오답노트 — 많이 틀린 순/최근 순, 쓸어서 빼기, 오답만 학습
+ * 오답노트 — 많이 틀린 순/최근 순, 쓸어서 빼기, 오답만 학습, 오답노트만 초기화
  * 수백 개가 쌓여도 부드럽게: FlashList 로 보이는 줄만 그리고, 줄은 자기 항목이 바뀔 때만 다시 그린다.
  */
 import { FlashList, type FlashListRef, type ListRenderItem } from '@shopify/flash-list';
 import { router } from 'expo-router';
 import { memo, useCallback, useMemo, useRef, useState } from 'react';
-import { LayoutAnimation, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Alert, LayoutAnimation, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import ReanimatedSwipeable from 'react-native-gesture-handler/ReanimatedSwipeable';
 import { useReducedMotion } from 'react-native-reanimated';
 import type { WrongEntry } from '@shared/progressStore';
 import type { Word } from '@shared/schema';
 import { DEFAULT_SCOPE } from '@shared/scope';
 import { timeAgo as ago } from '@shared/text';
+import { useToast } from '@/components/motion';
 import { Button, Empty, Icon, PosBadge, Segmented, T } from '@/components/ui';
 import { WORD_BY_ID } from '@/data/words';
 import { useProgress } from '@/store/progress';
@@ -33,6 +34,7 @@ export default function Wrong() {
   const graduate = useProgress((s) => s.settings.wrongGraduate);
   const [sort, setSort] = useState<'count' | 'recent'>('count');
   const listRef = useRef<FlashListRef<WrongRowData>>(null);
+  const toast = useToast((s) => s.show);
 
   const rows = useMemo(
     () =>
@@ -56,6 +58,23 @@ export default function Wrong() {
     [reduced],
   );
 
+  // 오답노트만 비운다 — 설정의 '기록 초기화'와 달리 복습 일정·통계·학습장은 그대로
+  const confirmClear = () => {
+    const n = Object.keys(useProgress.getState().wrong).length;
+    Alert.alert('오답노트를 비울까요?', `담긴 단어 ${n}개가 오답노트에서 빠집니다. 복습 일정·통계·학습장은 그대로예요.`, [
+      { text: '취소', style: 'cancel' },
+      {
+        text: '비우기',
+        style: 'destructive',
+        onPress: () => {
+          useProgress.getState().clearWrong();
+          void haptic.warning();
+          toast('오답노트를 비웠어요');
+        },
+      },
+    ]);
+  };
+
   const renderItem = useCallback<ListRenderItem<WrongRowData>>(({ item }) => <WrongRow key={item.id} row={item} graduate={graduate} onRemove={remove} />, [graduate, remove]);
 
   if (!rows.length) {
@@ -78,23 +97,48 @@ export default function Wrong() {
       ListHeaderComponent={
         <View style={styles.top}>
           <View style={{ flexDirection: 'row', gap: 10 }}>
-            <Button title="오답 플래시카드" icon="rectangle.stack.fill" variant="primary" style={{ flex: 1 }} onPress={() => router.push(sessionHref('flash', WRONG_SCOPE) as never)} />
-            <Button title="오답 객관식" icon="list.bullet" variant="tinted" style={{ flex: 1 }} onPress={() => router.push(sessionHref('quiz-meaning', WRONG_SCOPE) as never)} />
+            {/* 오답노트 화면 안이라 '오답'을 붙이지 않는다 — 이 목록의 단어로 학습한다 */}
+            <Button title="플래시카드" icon="rectangle.stack.fill" variant="primary" style={{ flex: 1 }} onPress={() => router.push(sessionHref('flash', WRONG_SCOPE) as never)} />
+            <Button title="객관식" icon="list.bullet" variant="tinted" style={{ flex: 1 }} onPress={() => router.push(sessionHref('quiz-meaning', WRONG_SCOPE) as never)} />
           </View>
-          <Segmented
-            value={sort}
-            onChange={setSort}
-            options={[
-              { value: 'count', label: '많이 틀린 순' },
-              { value: 'recent', label: '최근 순' },
-            ]}
-          />
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+            <View style={{ flex: 1 }}>
+              <Segmented
+                value={sort}
+                onChange={setSort}
+                options={[
+                  { value: 'count', label: '많이 틀린 순' },
+                  { value: 'recent', label: '최근 순' },
+                ]}
+              />
+            </View>
+            <ClearButton onPress={confirmClear} />
+          </View>
           <T v="footnote" color="muted">
             {rows.length}개 · {graduate}번 연속으로 맞히면 자동으로 빠져요. 왼쪽으로 쓸면 바로 뺄 수 있어요.
           </T>
         </View>
       }
     />
+  );
+}
+
+/** 오답노트 비우기 — 지우는 버튼이라 빨간 글씨, 누르면 확인창 */
+function ClearButton({ onPress }: { onPress: () => void }) {
+  const { c } = useTheme();
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel="오답노트 초기화"
+      hitSlop={8}
+      onPress={onPress}
+      style={({ pressed }) => [styles.clear, { opacity: pressed ? 0.5 : 1 }]}
+    >
+      <Icon name="trash" size={14} color={c.danger} />
+      <T v="subhead" color="danger" style={{ fontWeight: '600' }}>
+        초기화
+      </T>
+    </Pressable>
   );
 }
 
@@ -154,4 +198,5 @@ const styles = StyleSheet.create({
   top: { padding: 16, gap: 12 },
   row: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 18, paddingVertical: 12, borderBottomWidth: StyleSheet.hairlineWidth },
   delete: { width: 96, alignItems: 'center', justifyContent: 'center', gap: 4 },
+  clear: { flexDirection: 'row', alignItems: 'center', gap: 4, paddingVertical: 6 },
 });
