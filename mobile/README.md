@@ -148,6 +148,11 @@ Quiz-Bank 와 같은 방식(Expo prebuild → xcodebuild → altool)이며 macOS
      `Apple Development`(개발용)는 안 되고, 1번 프로파일을 만들 때 고른 인증서와 같아야 합니다.
 private 저장소는 GitHub Actions macOS 무료 사용량이 월 약 200분(빌드 8~10회)입니다. 단어만 바뀌었으면 빌드하지 말고 단어 세트 파일로 옮기세요.
 
+### App Store 공개 출시
+
+App Store Connect 에 넣을 이름·부제·프로모션 텍스트·설명·키워드·심사 메모(영문)와 스크린샷(iPhone 6.9")은 [store/app-store-connect.md](store/app-store-connect.md) 에 있습니다.
+지원 URL 과 개인정보 처리방침 URL 은 GitHub Pages 의 `docs/support.html` · `docs/privacy.html` 입니다 (main 에 머지되면 Pages 워크플로가 올립니다).
+
 ## 안드로이드
 
 같은 코드로 안드로이드 앱도 만듭니다. iOS 빌드(TestFlight)와는 워크플로·버전이 따로라서 서로 영향을 주지 않습니다.
