@@ -1,5 +1,5 @@
 import type { ExpoConfig } from 'expo/config';
-import androidVersion from './android-version.json';
+import appVersion from './app-version.json';
 
 /**
  * EAS Update(OTA) 프로젝트 id — 지금은 OTA 를 쓰지 않아 비워 둔다(앱에 들어 있는 번들만 씀).
@@ -8,19 +8,21 @@ import androidVersion from './android-version.json';
  */
 const EAS_PROJECT_ID = '';
 
-/** TestFlight 빌드 번호 — GitHub Actions 가 run_number 로 넣는다 */
+/**
+ * 앱 버전 (iOS · 안드로이드 공통) — app-version.json 의 version.
+ * GitHub Actions 의 Release 워크플로가 실행할 때마다 올려 커밋하고, iOS TestFlight 워크플로는 올리지 않고 그대로 읽는다.
+ * 그래서 Release 다음에 iOS TestFlight 를 돌리면 두 플랫폼이 같은 버전이 된다.
+ */
+const VERSION = appVersion.version;
+
+/** iOS 빌드 번호 — iOS TestFlight 워크플로가 run_number 로 넣는다 (안드로이드 versionCode 와는 따로) */
 const BUILD_NUMBER = process.env.BUILD_NUMBER ?? '1';
 
-/** 앱 버전 (iOS) — 네이티브 패키지를 바꾸면 올린다 */
-const VERSION = '1.0.0';
-
 /**
- * 안드로이드 버전은 android-version.json 에 따로 둔다 — GitHub Actions 의 Release 워크플로가 실행할 때마다
- * 버전 이름(version)을 올리고 versionCode 를 1 늘려 커밋한다. iOS 버전(VERSION · BUILD_NUMBER)과는 상관없다.
+ * 안드로이드 versionCode — app-version.json 의 versionCode. Release 워크플로가 릴리즈마다 1 씩 늘린다.
  * (파일의 versionCode 0 은 아직 한 번도 릴리즈하지 않았다는 뜻 — 로컬·미리보기 빌드는 1 로 만든다)
  */
-const ANDROID_VERSION = androidVersion.version;
-const ANDROID_VERSION_CODE = Math.max(1, androidVersion.versionCode);
+const ANDROID_VERSION_CODE = Math.max(1, appVersion.versionCode);
 
 /**
  * 미리보기 빌드 (안드로이드 전용, android-check.yml 이 APP_VARIANT=preview 로 만든다).
@@ -56,7 +58,6 @@ const config: ExpoConfig = {
   },
   android: {
     package: PREVIEW ? 'com.swpark3179.quizword2.preview' : 'com.swpark3179.quizword2',
-    version: ANDROID_VERSION,
     versionCode: ANDROID_VERSION_CODE,
     adaptiveIcon: {
       foregroundImage: './assets/adaptive-icon.png',

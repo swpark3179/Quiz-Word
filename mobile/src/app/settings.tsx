@@ -465,10 +465,10 @@ export default function Settings() {
   );
 }
 
-/** "1.0.0 (빌드 12)" — 안드로이드는 Release 워크플로가 올리는 버전(android-version.json)과 versionCode */
+/** "1.0.1 (빌드 12)" — 버전은 두 플랫폼 공통(app-version.json), 빌드는 안드로이드 versionCode · iOS buildNumber */
 function appVersion(): string {
   const cfg = Constants.expoConfig;
-  const version = (ANDROID ? cfg?.android?.version : cfg?.ios?.version) ?? cfg?.version ?? '';
+  const version = cfg?.version ?? '';
   const build = ANDROID ? cfg?.android?.versionCode : cfg?.ios?.buildNumber;
   return `${version}${build ? ` (빌드 ${build})` : ''}`;
 }

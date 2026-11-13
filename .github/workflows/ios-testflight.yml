@@ -4,6 +4,11 @@
 #   Expo prebuild → CocoaPods → xcodebuild archive/export(수동 서명) → altool 로 TestFlight 업로드
 # EAS Build·OTA 는 쓰지 않는다. 화면·로직을 고치면 이 워크플로로 빌드하고, 단어만 바뀌면 빌드 없이 단어 세트 파일로 옮긴다(mobile/README.md).
 #
+# 버전: mobile/app-version.json 의 version 을 그대로 쓴다 (안드로이드와 공통). 이 워크플로는 버전을 올리지 않는다 —
+#   버전은 Release 워크플로(release.yml)가 올려 기본 브랜치에 커밋하므로, 새 버전으로 내보내려면 Release 를 먼저 돌리고 이걸 돌린다.
+#   빌드 번호(CFBundleVersion)는 이 워크플로의 실행 번호(run_number)라 실행할 때마다 커진다.
+#   App Store 에 이미 출시된 버전으로는 새 빌드를 올릴 수 없다 → 업로드가 거부되면 Release 로 버전을 먼저 올린다.
+#
 # 실행: Actions → "iOS TestFlight" → Run workflow
 #   gh workflow run ios-testflight.yml -f upload_testflight=true
 #
@@ -42,8 +47,8 @@ jobs:
     name: Check (tests · types · iOS bundle)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Shared logic tests & data validation
@@ -65,7 +70,7 @@ jobs:
     # App Store Connect 는 iOS 26 SDK(Xcode 26+)로 만든 빌드만 받는다
     runs-on: macos-26
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       # 프로파일이 번들 ID·팀·이름과 안 맞으면 archive 단계(약 10분 뒤)에서야 실패하므로 먼저 검사한다
       - name: Validate provisioning profile
@@ -122,7 +127,7 @@ jobs:
           rm -f "$PROFILE"
           exit $status
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: ${{ env.NODE_VERSION }}
 
@@ -144,7 +149,11 @@ jobs:
         working-directory: mobile
         env:
           BUILD_NUMBER: ${{ github.run_number }}
-        run: npx expo prebuild --platform ios --no-install --clean
+        run: |
+          VERSION=$(node -p "require('./app-version.json').version")
+          echo "버전 ${VERSION} (빌드 ${BUILD_NUMBER}) — mobile/app-version.json"
+          echo "### iOS ${VERSION} (빌드 ${BUILD_NUMBER})" >> "$GITHUB_STEP_SUMMARY"
+          npx expo prebuild --platform ios --no-install --clean
 
       - name: Install CocoaPods
         working-directory: mobile/ios
@@ -241,7 +250,7 @@ jobs:
           IPA=$(find "$PWD/build/ipa" -name "*.ipa" | head -n1)
           cp "$IPA" "$GITHUB_WORKSPACE/app-release.ipa"
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: app-release-ipa
           path: app-release.ipa
@@ -252,7 +261,7 @@ jobs:
     if: ${{ github.event.inputs.upload_testflight == 'true' }}
     runs-on: macos-26
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v7
         with:
           name: app-release-ipa
 

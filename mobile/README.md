@@ -26,7 +26,7 @@ mobile/
   src/lib/sheet.ts    선택 메뉴 · 이름 입력창 (iOS 는 시스템 것, 안드로이드는 sheet.android.ts + DialogHost)
   src/lib/sharedLexicon.ts  문제은행이 읽을 단어 목록 내보내기 (iOS App Group · 안드로이드 ContentProvider)
   modules/lexicon-provider/  안드로이드 전용 로컬 모듈 — 단어 목록 ContentProvider (Kotlin)
-  android-version.json  안드로이드 버전 (Release 워크플로가 올림)
+  app-version.json    앱 버전 — iOS · 안드로이드 공통 (Release 워크플로가 올림) + 안드로이드 versionCode
   src/theme/          디자인 토큰 · 모션 곡선 · 진동
   src/generated/      ← 자동 생성 (git 제외): 웹과 공용 로직(../src/lib) + 단어 데이터(../data/words, ../data/exams)
   scripts/sync-shared.mjs   공용 로직·데이터 복사 (npm install / npm start 때 자동 실행)
@@ -133,6 +133,15 @@ OTA 는 쓰지 않으므로, 화면 코드나 공용 로직(`src/lib`)을 고치
 GitHub Actions → **iOS TestFlight** → Run workflow (또는 `gh workflow run ios-testflight.yml -f upload_testflight=true`).
 Quiz-Bank 와 같은 방식(Expo prebuild → xcodebuild → altool)이며 macOS 러너에서 20~30분 걸립니다. 업로드 후 App Store Connect 처리(10~30분)가 끝나면 iPhone 의 TestFlight 앱에 나타납니다.
 
+### 버전 (iOS · 안드로이드 공통)
+
+앱 버전(설정 → 앱 버전의 `1.0.1`)은 `app-version.json` 하나를 두 플랫폼이 함께 읽고, **버전을 올리는 것은 [Release 워크플로](#배포-release-워크플로)뿐**입니다. iOS TestFlight 는 버전을 올리지 않고 그 파일의 버전으로 빌드합니다.
+
+- 새 버전 내보내기: **Release**(patch·minor·major 로 버전을 올려 커밋 + 안드로이드 빌드) → 끝난 뒤 기본 브랜치에서 **iOS TestFlight** → 두 플랫폼이 같은 버전
+- 빌드 번호는 플랫폼별로 따로입니다 — 안드로이드 versionCode 는 Release 마다 +1, iOS 빌드 번호는 iOS TestFlight 의 실행 번호. 그래서 설정의 "(빌드 N)" 은 두 기기에서 다를 수 있습니다
+- Release 없이 iOS TestFlight 만 돌리면 지금 버전에 빌드 번호만 늘어난 빌드가 올라갑니다 (TestFlight 테스트용으로는 괜찮음). 그 버전이 이미 App Store 에 출시됐으면 업로드가 거부되니 Release 로 버전을 먼저 올립니다
+- iOS 만 고쳤어도 버전은 Release 로 올립니다 (안드로이드 apk·aab 도 함께 Release 페이지에 올라가고, `upload_play` 를 끄면 Play 에는 안 올라감)
+
 ### 처음 한 번만 할 일 (체크리스트)
 
 1. **Apple Developer** (developer.apple.com → Certificates, IDs & Profiles)
@@ -162,7 +171,7 @@ App Store Connect 에 넣을 이름·부제·프로모션 텍스트·설명·키
 
 ## 안드로이드
 
-같은 코드로 안드로이드 앱도 만듭니다. iOS 빌드(TestFlight)와는 워크플로·버전이 따로라서 서로 영향을 주지 않습니다.
+같은 코드로 안드로이드 앱도 만듭니다. iOS 빌드(TestFlight)와는 워크플로가 따로이고, 버전만 같은 파일(`app-version.json`)을 씁니다 — 위 [버전](#버전-ios--안드로이드-공통).
 
 - iOS 전용인 것은 안드로이드용 구현이 따로 있습니다 — 파일 이름이 `*.android.tsx` 이거나 `Platform.OS` 로 갈립니다.
   - 아이콘: SF Symbols 대신 Material 아이콘 (`src/components/Icon.android.tsx` 의 대응표. **새 SF Symbol 을 쓰면 여기에도 한 줄 더하세요**)
@@ -170,7 +179,7 @@ App Store Connect 에 넣을 이름·부제·프로모션 텍스트·설명·키
   - 선택 메뉴·이름 입력창: iOS 액션 시트·입력창 대신 앱 대화상자 (`src/lib/sheet.ts` · `sheet.android.ts` · `src/components/DialogHost.android.tsx`). 화면에서는 `showActionSheet` · `promptText` · `alertButtons` 를 씁니다
   - 헤더: large title·블러 없이 보통 헤더, 범위·합치기 시트는 아래에서 올라오는 화면 (`src/theme/index.ts` 의 `largeHeader` · `sheetOptions`)
   - 세션 화면에서 뒤로 가기를 누르면 그만할지 묻습니다 (`src/lib/useBackClose.ts`)
-- 패키지 이름 `com.swpark3179.quizword2`. 버전은 `android-version.json` 에 있고 Release 워크플로가 올립니다 (`app.config.ts` 의 iOS `VERSION` 과 별개).
+- 패키지 이름 `com.swpark3179.quizword2`. 버전과 versionCode 는 `app-version.json` 에 있고 Release 워크플로가 올립니다 (버전은 iOS 와 공통, versionCode 는 안드로이드 전용).
 - 단어 세트·시험 팩·진행 기록 파일은 iPhone 과 같은 방법으로 옮깁니다 (Google Drive·메신저·USB 로 폰에 넣고 앱 설정에서 불러오기).
 - 검사: `npm run export:android` (안드로이드 번들이 만들어지는지)
 - 릴리즈 빌드(Release 의 apk·aab, 미리보기 APK)는 R8 로 줄이고 난독화합니다 — 아래 [난독화(R8)](#난독화r8)
@@ -187,9 +196,10 @@ App Store Connect 에 넣을 이름·부제·프로모션 텍스트·설명·키
 GitHub Actions → **Release** → Run workflow → 버전 증가 기준(major / minor / patch)을 고릅니다.
 
 1. Release 페이지의 가장 높은 버전에서 다음 버전을 정합니다 (처음이면 `v1.0.0`)
-2. 검사(테스트·타입·린트) → `android-version.json` 에 버전 반영(versionCode +1) → Expo prebuild → 업로드 키로 서명한 **apk · aab** 빌드
-3. `android-version.json` 을 기본 브랜치에 커밋하고, 그 커밋에 태그와 **Release 페이지**를 만들어 apk · aab 와 이전 버전 이후 PR 목록을 붙입니다
+2. 검사(테스트·타입·린트) → `app-version.json` 에 버전 반영(versionCode +1) → Expo prebuild → 업로드 키로 서명한 **apk · aab** 빌드
+3. `app-version.json` 을 기본 브랜치에 커밋하고, 그 커밋에 태그와 **Release 페이지**를 만들어 apk · aab 와 이전 버전 이후 PR 목록을 붙입니다
 4. `upload_play` 를 켰으면 aab 를 Play Console **내부 테스트** 트랙에 올립니다
+5. iOS 도 같은 버전으로 내보내려면 이어서 **iOS TestFlight** 를 실행합니다 (Release 는 iOS 를 빌드하지 않음)
 
 폰에서는 Release 페이지의 `Quiz-Word-<버전>.apk` 를 내려받아 설치합니다 (처음 한 번 "출처를 알 수 없는 앱 설치" 허용). 같은 키로 서명하므로 다음 버전은 덮어 설치됩니다.
 
