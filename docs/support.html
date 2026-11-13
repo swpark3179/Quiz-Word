@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>단어장 지원</title>
+<meta name="description" content="단어장(Quiz Word) 앱 지원 — 문의 방법과 자주 묻는 질문">
+<style>
+  :root {
+    --bg: #f7f7fb; --surface: #ffffff; --surface-2: #f0f0f6; --line: #dcdce8;
+    --ink: #17171f; --ink-2: #4a4a5a; --muted: #6f6f82;
+    --primary: #4f46e5; --primary-soft: #eceafd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101016; --surface: #191922; --surface-2: #22222e; --line: #32323f;
+      --ink: #eeeef5; --ink-2: #c3c3d0; --muted: #9292a6;
+      --primary: #a5a0ff; --primary-soft: #26244a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.7 system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; word-break: keep-all; overflow-wrap: anywhere; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 80px; }
+  nav { display: flex; gap: 16px; flex-wrap: wrap; font-size: 14px; margin-bottom: 28px; }
+  h1 { font-size: 30px; line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 19px; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  p, li { color: var(--ink-2); }
+  p { margin: 0 0 12px; }
+  ul, ol { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--primary); }
+  .lead { font-size: 17px; }
+  .contact { margin: 24px 0 8px; padding: 18px 20px; border-radius: 14px; background: var(--surface); border: 1px solid var(--line); }
+  .contact strong { display: block; font-size: 17px; color: var(--ink); margin-bottom: 4px; }
+  .contact a.btn { display: inline-block; margin-top: 8px; padding: 9px 16px; border-radius: 10px; background: var(--primary); color: #fff; text-decoration: none; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { .contact a.btn { color: #101016; } }
+  details { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); margin-bottom: 8px; }
+  summary { cursor: pointer; padding: 13px 16px; font-weight: 600; color: var(--ink); }
+  details > div { padding: 0 16px 6px; }
+  b.path { font-weight: 600; color: var(--ink); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0 40px; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="privacy.html">개인정보 처리방침 · Privacy</a><a href="#en">English</a></nav>
+
+  <h1>단어장 지원</h1>
+  <p class="lead">단어장(Quiz Word)은 시험 문제에 나온 영어 단어를 그 문제 속 문장과 함께 익히는 단어장 앱입니다. 가입 없이, 인터넷 없이 동작합니다.</p>
+
+  <div class="contact">
+    <strong>문의하기</strong>
+    버그 제보, 단어 뜻·예문 오류, 기능 제안은 GitHub Issues 에 남겨 주세요. 앱 버전(설정 → 정보)과 기기 모델을 함께 적어 주시면 빨리 확인할 수 있습니다.
+    Issues 는 공개 게시판이므로 개인정보는 적지 마세요.<br>
+    <a class="btn" href="https://github.com/swpark3179/Quiz-Word/issues/new">GitHub Issues 에 문의 남기기</a>
+  </div>
+
+  <h2>자주 묻는 질문</h2>
+
+  <details>
+    <summary>회원 가입이나 인터넷 연결이 필요한가요?</summary>
+    <div><p>아니요. 단어 데이터가 앱에 들어 있어 가입 없이, 오프라인에서 모든 기능을 쓸 수 있습니다. 학습 기록은 기기 안에만 저장됩니다.</p></div>
+  </details>
+
+  <details>
+    <summary>다른 휴대폰이나 웹 버전으로 학습 기록을 옮기고 싶어요</summary>
+    <div>
+      <ol>
+        <li>원래 기기에서 <b class="path">설정 → 진행 기록 → 내보내기</b> — JSON 파일이 만들어지면 AirDrop·iCloud Drive·메신저 등으로 보냅니다.</li>
+        <li>새 기기의 <b class="path">파일</b> 앱에 파일을 둔 뒤 <b class="path">설정 → 진행 기록 → 가져오기</b>에서 고릅니다.</li>
+      </ol>
+      <p>학습장 목록도 함께 옮겨집니다.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>새 시험의 단어를 더하고 싶어요 (시험 팩)</summary>
+    <div>
+      <p>시험 하나를 담은 시험 팩 파일(<code>*.exampack.json</code>)을 <b class="path">설정 → 시험 → 시험 팩 불러오기</b>로 더할 수 있습니다. 이미 있는 단어와 다른 시험은 그대로 남습니다.</p>
+      <p>시험 팩을 만드는 방법과 파일 검사기는 <a href="./">시험 팩 안내 페이지</a>에 있습니다. 추가한 시험은 설정 → 시험 목록에서 지울 수 있습니다.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>단어 세트 파일은 무엇인가요?</summary>
+    <div><p>앱의 단어 전체를 새 버전으로 바꾸는 파일입니다. <b class="path">설정 → 단어 세트 → 파일에서 불러오기</b>로 넣고, 언제든 <b class="path">앱 기본 단어 세트로 되돌리기</b>로 돌아갈 수 있습니다. 진행 기록은 단어 기준이라 그대로 이어집니다.</p></div>
+  </details>
+
+  <details>
+    <summary>발음이 들리지 않거나 목소리가 어색해요</summary>
+    <div>
+      <ul>
+        <li>기기 음량을 확인해 주세요. 무음 모드에서도 발음은 들리도록 되어 있습니다.</li>
+        <li>더 자연스러운 목소리는 iPhone <b class="path">설정 앱 → 손쉬운 사용 → 읽기 및 말하기 → 음성</b>에서 영어 고품질 음성을 내려받은 뒤, 앱 <b class="path">설정 → 발음 → 목소리</b>에서 고르면 됩니다.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>복습 일정은 어떻게 정해지나요?</summary>
+    <div><p>FSRS 간격 반복 알고리즘으로, 아는 단어는 간격을 넓히고 모르는 단어는 자주 보여 줍니다. <b class="path">설정 → 학습 → 시험일</b>을 정하면 복습 간격이 시험일을 넘지 않아 시험 전에 모든 단어를 한 번 더 봅니다.</p></div>
+  </details>
+
+  <details>
+    <summary>학습 기록을 지우고 싶어요</summary>
+    <div><p><b class="path">설정 → 진행 기록 → 기록 초기화</b>로 지울 수 있습니다. 앱을 삭제해도 기기 안의 기록이 모두 지워집니다.</p></div>
+  </details>
+
+  <details>
+    <summary>개인정보를 수집하나요?</summary>
+    <div><p>수집하지 않습니다. 자세한 내용은 <a href="privacy.html">개인정보 처리방침</a>을 보세요.</p></div>
+  </details>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <h1>Support</h1>
+    <p class="lead">단어장 (Quiz Word) is a vocabulary app for learning the English words that appear in exam questions, together with the sentences they appear in. It works offline and needs no account.</p>
+    <div class="contact">
+      <strong>Contact</strong>
+      For bug reports, content corrections or feature requests, please open an issue on GitHub. Including the app version (Settings → 정보) and your device model helps. Issues are public, so please do not include personal information.<br>
+      <a class="btn" href="https://github.com/swpark3179/Quiz-Word/issues/new">Open a GitHub issue</a>
+    </div>
+    <ul>
+      <li><strong>Move progress to another device</strong>: Settings → 진행 기록 → 내보내기 (Export), then 가져오기 (Import) on the other device.</li>
+      <li><strong>Add an exam</strong>: Settings → 시험 → 시험 팩 불러오기 (Import exam pack). See the <a href="./">exam pack guide</a>.</li>
+      <li><strong>Reset progress</strong>: Settings → 진행 기록 → 기록 초기화.</li>
+      <li><strong>Privacy</strong>: the app collects no personal data — see the <a href="privacy.html">privacy policy</a>.</li>
+    </ul>
+  </section>
+
+  <footer>단어장 (Quiz Word) · <a href="privacy.html">개인정보 처리방침 · Privacy</a></footer>
+</main>
+</body>
+</html>

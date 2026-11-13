@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>단어장 개인정보 처리방침</title>
+<meta name="description" content="단어장(Quiz Word) 앱의 개인정보 처리방침 — 앱은 개인정보를 수집하지 않습니다.">
+<style>
+  :root {
+    --bg: #f7f7fb; --surface: #ffffff; --surface-2: #f0f0f6; --line: #dcdce8;
+    --ink: #17171f; --ink-2: #4a4a5a; --muted: #6f6f82;
+    --primary: #4f46e5; --primary-soft: #eceafd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101016; --surface: #191922; --surface-2: #22222e; --line: #32323f;
+      --ink: #eeeef5; --ink-2: #c3c3d0; --muted: #9292a6;
+      --primary: #a5a0ff; --primary-soft: #26244a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.7 system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; word-break: keep-all; overflow-wrap: anywhere; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 80px; }
+  nav { display: flex; gap: 16px; flex-wrap: wrap; font-size: 14px; margin-bottom: 28px; }
+  h1 { font-size: 30px; line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 19px; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  p, li { color: var(--ink-2); }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--primary); }
+  .meta { color: var(--muted); font-size: 14px; }
+  .summary { margin: 24px 0 8px; padding: 18px 20px; border-radius: 14px; background: var(--primary-soft); color: var(--ink); }
+  .summary strong { display: block; font-size: 17px; margin-bottom: 4px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0 40px; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="support.html">지원 · Support</a><a href="#en">English</a></nav>
+
+  <h1>개인정보 처리방침</h1>
+  <p class="meta">단어장 (Quiz Word) · iOS · Android · 시행일 2026년 11월 13일</p>
+
+  <div class="summary">
+    <strong>이 앱은 개인정보를 수집하지 않습니다.</strong>
+    회원 가입이 없고, 서버로 아무것도 보내지 않으며, 광고·분석·추적 도구를 쓰지 않습니다. 학습 기록은 휴대폰 안에만 저장됩니다.
+  </div>
+
+  <h2>1. 수집하는 정보</h2>
+  <p>없습니다. 앱은 이름, 이메일, 전화번호, 위치, 연락처, 기기 식별자, 사용 기록 등 어떤 개인정보도 수집하거나 개발자에게 전송하지 않습니다.</p>
+
+  <h2>2. 기기 안에만 저장되는 정보</h2>
+  <p>앱이 동작하려면 아래 정보가 필요하며, 모두 <strong>사용자의 기기 안에만</strong> 저장됩니다. 개발자를 포함한 누구에게도 전송되지 않습니다.</p>
+  <ul>
+    <li>학습 기록 — 단어별 복습 일정, 오답노트, 학습장, 하루 학습량</li>
+    <li>설정 — 시험일, 하루 새 단어 수, 발음 목소리, 화면 테마 등</li>
+    <li>사용자가 불러온 파일 — 단어 세트 파일, 시험 팩 파일</li>
+  </ul>
+  <p>앱을 삭제하면 이 정보도 함께 삭제됩니다. 앱 안의 <strong>설정 → 진행 기록 → 기록 초기화</strong>로 학습 기록만 지울 수도 있습니다.</p>
+
+  <h2>3. 사용자가 직접 하는 파일 주고받기</h2>
+  <ul>
+    <li><strong>내보내기</strong>: 설정 → 진행 기록 → 내보내기를 누르면 학습 기록을 JSON 파일로 만들어 시스템 공유 시트를 엽니다. 파일을 어디로 보낼지는 사용자가 고르며, 앱은 그 파일을 따로 전송하지 않습니다.</li>
+    <li><strong>가져오기·불러오기</strong>: 진행 기록, 단어 세트, 시험 팩은 사용자가 시스템 파일 선택기에서 고른 파일만 읽습니다. 앱이 다른 파일이나 사진에 접근하지 않습니다.</li>
+  </ul>
+
+  <h2>4. 같은 개발자의 다른 앱과 나누는 단어 목록</h2>
+  <p>같은 개발자가 만든 문제은행 앱이 문제 속 단어를 표시할 수 있도록, 앱은 <strong>등록된 단어 목록</strong>(표제어·뜻·품사·발음기호·변화형)을 기기 안의 공유 위치(iOS App Group, Android 읽기 전용 ContentProvider)에 써 둡니다. 이 목록에는 학습 기록이나 개인정보가 들어 있지 않으며, 기기 밖으로 전송되지 않습니다.</p>
+
+  <h2>5. 권한</h2>
+  <ul>
+    <li><strong>마이크</strong>: 사용하지 않습니다. iOS 앱 정보에 마이크 사용 설명 문구가 들어 있는 것은 발음 재생에 쓰는 오디오 모듈에 녹음 기능 코드가 포함되어 있어 Apple 이 문구를 요구하기 때문이며, 앱은 마이크 권한을 요청하지 않습니다.</li>
+    <li><strong>발음 듣기</strong>: 기기에 내장된 음성 합성(iOS AVSpeechSynthesizer, Android TTS)을 쓰며 인터넷 없이 동작합니다. 앱은 읽어 줄 단어를 외부 서버로 보내지 않습니다.</li>
+    <li>위치, 카메라, 사진, 연락처, 알림, 추적(ATT) 권한을 요청하지 않습니다.</li>
+  </ul>
+
+  <h2>6. 외부 링크</h2>
+  <p>설정의 <strong>시험 팩 만드는 법</strong>을 누르면 이 사이트(GitHub Pages)의 안내 페이지가 기기의 기본 브라우저로 열립니다. 그 페이지의 처리는 브라우저와 <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub 의 개인정보 처리방침</a>을 따릅니다.</p>
+
+  <h2>7. 제3자 제공 · 광고 · 추적</h2>
+  <p>개인정보를 수집하지 않으므로 제3자에게 제공하거나 처리를 위탁하는 일이 없습니다. 광고, 분석, 충돌 보고 SDK 를 쓰지 않으며 다른 회사의 앱·웹사이트에 걸친 추적을 하지 않습니다.</p>
+
+  <h2>8. 아동의 개인정보</h2>
+  <p>앱은 연령과 관계없이 어떤 개인정보도 수집하지 않습니다.</p>
+
+  <h2>9. 방침의 변경</h2>
+  <p>내용이 바뀌면 이 페이지를 고치고 위의 시행일을 바꿉니다. 앱이 정보를 수집하게 되는 변경이라면 앱 업데이트 전에 이 페이지에 먼저 알립니다.</p>
+
+  <h2>10. 문의</h2>
+  <p>개인정보 처리방침에 관한 문의는 <a href="https://github.com/swpark3179/Quiz-Word/issues">GitHub Issues</a>에 남겨 주세요. Issues 는 공개 게시판이므로 개인정보는 적지 마세요. 더 자세한 안내는 <a href="support.html">지원 페이지</a>에 있습니다.</p>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="meta">단어장 (Quiz Word) · iOS · Android · Effective November 13, 2026</p>
+
+    <div class="summary">
+      <strong>This app does not collect any personal data.</strong>
+      There is no account or sign-up, nothing is sent to a server, and no advertising, analytics or tracking SDKs are used. Your study progress stays on your device.
+    </div>
+
+    <h2>1. Information we collect</h2>
+    <p>None. The app does not collect or transmit any personal information, such as name, email, phone number, location, contacts, device identifiers or usage data.</p>
+
+    <h2>2. Information stored only on your device</h2>
+    <ul>
+      <li>Study progress — review schedule per word, mistakes list, notebooks, daily activity</li>
+      <li>Settings — exam date, new words per day, voice, theme</li>
+      <li>Files you import — word set files and exam pack files</li>
+    </ul>
+    <p>This data never leaves your device. Deleting the app deletes it. You can also clear progress in <strong>Settings → 진행 기록 (Progress) → 기록 초기화 (Reset)</strong>.</p>
+
+    <h2>3. Files you choose to export or import</h2>
+    <p>Exporting progress creates a JSON file and opens the system share sheet; you decide where it goes. Importing reads only the file you pick in the system file picker.</p>
+
+    <h2>4. Word list shared with the developer's companion app</h2>
+    <p>So that the developer's companion quiz app on the same device can highlight registered words, the app writes its word list (headwords, meanings, part of speech, pronunciation, word forms) to an on-device shared location (iOS App Group / Android read-only ContentProvider). It contains no progress or personal data and is never sent off the device.</p>
+
+    <h2>5. Permissions</h2>
+    <p>The app never requests microphone access. The iOS microphone usage description exists only because the bundled audio module (used to play pronunciations) contains recording APIs. Pronunciation uses the device's built-in speech synthesis and works offline. The app does not request location, camera, photos, contacts, notifications or tracking permission.</p>
+
+    <h2>6. Third parties, ads and tracking</h2>
+    <p>No personal data is collected, so none is shared with or sold to third parties. The app contains no ads and does not track you across other companies' apps or websites. The “how to make an exam pack” link opens this GitHub Pages site in your browser, which is subject to <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+
+    <h2>7. Changes and contact</h2>
+    <p>If this policy changes, this page and its effective date will be updated. For questions, please open an issue on <a href="https://github.com/swpark3179/Quiz-Word/issues">GitHub Issues</a> (public — please do not include personal information).</p>
+  </section>
+
+  <footer>단어장 (Quiz Word) · <a href="support.html">지원 · Support</a></footer>
+</main>
+</body>
+</html>
