@@ -88,7 +88,7 @@ export default function Today() {
       danger: true,
       onPress: () =>
         wrongN
-          ? router.push(sessionHref('flash', { ...DEFAULT_SCOPE, set: 'wrong', status: 'any', count: 0, order: 'random', minLevel: 1 }) as never)
+          ? router.push(sessionHref('flash', { ...DEFAULT_SCOPE, set: 'wrong', status: 'any', count: 0, order: 'random', levels: [] }) as never)
           : router.push('/wrong'),
     },
   ];

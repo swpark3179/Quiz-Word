@@ -2,7 +2,7 @@
  * 학습 범위 — 어떤 단어를 몇 개, 어떤 순서로 공부할지.
  */
 import { freqIn, inExam, isQuizSource } from './exams';
-import { MAX_LEVEL, type ExamInfo, type Word } from './schema';
+import { LEVELS, MAX_LEVEL, type ExamInfo, type Word } from './schema';
 import { isDue, statusOf, type StoredCard } from './srs';
 import { shuffle, sortByWord } from './text';
 
@@ -15,8 +15,8 @@ export interface Scope {
   file?: string;
   /** set 이 notebook 일 때 학습장 id */
   notebook?: string;
-  /** 이 단계 이상의 단어만 (1 = 전부) */
-  minLevel: number;
+  /** 고른 단계만 — 오름차순, 겹치지 않음. 비어 있으면 모든 단계 (normalizeLevels) */
+  levels: readonly number[];
   status: 'any' | 'new' | 'learning' | 'unmastered' | 'due';
   count: number; // 0 = 전부
   order: 'freq' | 'random' | 'new-first' | 'alpha';
@@ -25,7 +25,8 @@ export interface Scope {
 /** cat 은 비워 둔다 — normalizeScope 가 첫 시험으로 채운다 */
 export const DEFAULT_SCOPE: Scope = {
   set: 'exam',
-  minLevel: 2,
+  // 1단계(초등)만 빼고
+  levels: levelsFrom(2),
   status: 'unmastered',
   count: 20,
   order: 'freq',
@@ -34,12 +35,53 @@ export const DEFAULT_SCOPE: Scope = {
 const STATUSES = ['any', 'new', 'learning', 'unmastered', 'due'] as const;
 const ORDERS = ['freq', 'random', 'new-first', 'alpha'] as const;
 
-const clampLevel = (n: number) => Math.min(MAX_LEVEL, Math.max(1, Math.round(n)));
+/* ───── 단계 고르기 (학습 범위·단어장 필터) ───── */
+
+/**
+ * 고른 단계를 1..MAX_LEVEL 안에서 겹치지 않는 오름차순으로 맞춘다.
+ * 모든 단계를 골랐으면 [] — 빈 목록이 "모든 단계"이고, 그래서 마지막 하나를 꺼도 모든 단계가 된다.
+ */
+export function normalizeLevels(raw: readonly unknown[]): number[] {
+  const picked = new Set<number>();
+  for (const v of raw) {
+    const n = typeof v === 'number' ? v : typeof v === 'string' && v.trim() ? Number(v) : NaN;
+    if (Number.isInteger(n) && n >= 1 && n <= MAX_LEVEL) picked.add(n);
+  }
+  return picked.size === MAX_LEVEL ? [] : [...picked].sort((a, b) => a - b);
+}
+
+/** 예전 "N단계 이상" → 단계 목록 (범위 밖의 N 은 1..MAX_LEVEL 로 맞춘다) */
+export function levelsFrom(min: number): number[] {
+  const from = Math.min(MAX_LEVEL, Math.max(1, Math.round(min) || 1));
+  return normalizeLevels(LEVELS.map((l) => l.level).filter((l) => l >= from));
+}
+
+/** 이 단계가 고른 단계에 드는지 (빈 목록 = 모든 단계) */
+export const inLevels = (level: number, levels: readonly number[]) => levels.length === 0 || levels.includes(level);
+
+/** 단계 하나를 켜고 끈다 — 모든 단계(빈 목록)일 때 누르면 그 단계만 고른다 */
+export function toggleLevel(levels: readonly number[], level: number): number[] {
+  if (!levels.length) return normalizeLevels([level]);
+  return normalizeLevels(levels.includes(level) ? levels.filter((l) => l !== level) : [...levels, level]);
+}
+
+/** "모든 단계" · "4단계" · "2~6단계" · "1·3·5단계" */
+export function levelsLabel(levels: readonly number[]): string {
+  if (!levels.length) return '모든 단계';
+  const first = levels[0];
+  const last = levels[levels.length - 1];
+  if (levels.length >= 3 && last - first === levels.length - 1) return `${first}~${last}단계`;
+  return `${levels.join('·')}단계`;
+}
+
+/** 주소에 적는 값 — "2,4,6", 모든 단계는 "all" */
+export const levelsToParam = (levels: readonly number[]) => (levels.length ? levels.join(',') : 'all');
+export const levelsFromParam = (v: string): number[] => (v === 'all' ? [] : normalizeLevels(v.split(',')));
 
 /**
  * 저장해 둔 범위(예전 형식 포함)나 URL 에서 읽은 범위를 지금 시험 목록에 맞는 값으로 고친다.
  *   예전 set: core → 시험 전체, file → 그 문제 파일이 있는 시험 (없어진 파일이면 시험 전체)
- *   예전 includeBasic: true → 1단계 이상, false → 2단계 이상
+ *   예전 minLevel(N단계 이상) → N..MAX_LEVEL 단계, includeBasic: true → 모든 단계, false → 2단계부터
  *   모르는 시험·문제 파일은 버리고, 시험이 비어 있으면 첫 시험을 쓴다
  */
 export function normalizeScope(raw: unknown, exams: readonly ExamInfo[]): Scope {
@@ -51,8 +93,9 @@ export function normalizeScope(raw: unknown, exams: readonly ExamInfo[]): Scope 
   if (typeof r.status === 'string' && (STATUSES as readonly string[]).includes(r.status)) s.status = r.status as Scope['status'];
   if (typeof r.order === 'string' && (ORDERS as readonly string[]).includes(r.order)) s.order = r.order as Scope['order'];
   if (typeof r.count === 'number' && r.count >= 0) s.count = Math.floor(r.count);
-  if (typeof r.minLevel === 'number' && Number.isFinite(r.minLevel)) s.minLevel = clampLevel(r.minLevel);
-  else if (typeof r.includeBasic === 'boolean') s.minLevel = r.includeBasic ? 1 : 2;
+  if (Array.isArray(r.levels)) s.levels = normalizeLevels(r.levels);
+  else if (typeof r.minLevel === 'number' && Number.isFinite(r.minLevel)) s.levels = levelsFrom(r.minLevel);
+  else if (typeof r.includeBasic === 'boolean') s.levels = r.includeBasic ? [] : levelsFrom(2);
   if (s.set === 'notebook' && typeof r.notebook === 'string') s.notebook = r.notebook;
   if (s.set === 'exam') {
     const hasFile = (e: ExamInfo, f: string) => e.sources.some((x) => x.id === f && isQuizSource(x));
@@ -82,7 +125,7 @@ export function filterScope(words: Word[], scope: Scope, p: ProgressView, now: D
       if (!p.wrong[w.id]) return false;
     } else {
       if (scope.set === 'exam' && !inExam(w, scope.cat, scope.file)) return false;
-      if (w.level < scope.minLevel) return false;
+      if (!inLevels(w.level, scope.levels)) return false;
     }
     const c = p.cards[w.id];
     const st = statusOf(c);
@@ -123,7 +166,7 @@ export function selectWords(words: Word[], scope: Scope, p: ProgressView, rng: (
 
 /**
  * URL 쿼리 ↔ 범위 (세션 페이지가 ?set=wrong 처럼 받는다).
- * exams 를 주면 시험·문제 파일이 실제로 있는지까지 맞춘다. 예전 주소(set=core·file, basic=1)도 받는다.
+ * exams 를 주면 시험·문제 파일이 실제로 있는지까지 맞춘다. 예전 주소(set=core·file, basic=1, lv=N 단계 이상)도 받는다.
  */
 export function scopeFromParams(params: URLSearchParams, base: Scope = DEFAULT_SCOPE, exams?: readonly ExamInfo[]): Scope {
   const raw: Record<string, unknown> = { ...base };
@@ -138,8 +181,10 @@ export function scopeFromParams(params: URLSearchParams, base: Scope = DEFAULT_S
   if (params.get('cat')) raw.cat = params.get('cat');
   if (params.get('file')) raw.file = params.get('file');
   if (params.get('notebook')) raw.notebook = params.get('notebook');
-  if (params.get('lv')) raw.minLevel = Number(params.get('lv')) || base.minLevel;
-  else if (params.get('basic')) raw.minLevel = params.get('basic') === '1' ? 1 : 2;
+  const lvs = params.get('lvs');
+  if (lvs !== null) raw.levels = levelsFromParam(lvs);
+  else if (Number(params.get('lv'))) raw.levels = levelsFrom(Number(params.get('lv')));
+  else if (params.get('basic')) raw.levels = params.get('basic') === '1' ? [] : levelsFrom(2);
   if (params.get('status')) raw.status = params.get('status');
   if (params.get('count')) raw.count = Number(params.get('count')) || 0;
   if (params.get('order')) raw.order = params.get('order');
@@ -160,7 +205,7 @@ export function scopeToParams(s: Scope): string {
   if (s.set === 'exam' && s.cat) p.set('cat', s.cat);
   if (s.set === 'exam' && s.file) p.set('file', s.file);
   if (s.set === 'notebook' && s.notebook) p.set('notebook', s.notebook);
-  p.set('lv', String(s.minLevel));
+  p.set('lvs', levelsToParam(s.levels));
   p.set('status', s.status);
   p.set('count', String(s.count));
   p.set('order', s.order);
@@ -169,5 +214,5 @@ export function scopeToParams(s: Scope): string {
 
 /** 학습장 하나를 통째로 무작위 순서로 — 학습장 화면의 학습 버튼 */
 export function notebookScope(id: string): Scope {
-  return { ...DEFAULT_SCOPE, set: 'notebook', notebook: id, status: 'any', count: 0, order: 'random', minLevel: 1 };
+  return { ...DEFAULT_SCOPE, set: 'notebook', notebook: id, status: 'any', count: 0, order: 'random', levels: [] };
 }

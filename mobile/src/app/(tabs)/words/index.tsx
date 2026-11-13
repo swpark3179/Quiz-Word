@@ -11,6 +11,7 @@ import Animated, { FadeIn, FadeOut, runOnJS } from 'react-native-reanimated';
 import type { SearchBarCommands } from 'react-native-screens';
 import { freqIn, inExam, isExtra, isQuizSource, NO_EXAM } from '@shared/exams';
 import { LEVELS, type Word } from '@shared/schema';
+import { inLevels, toggleLevel } from '@shared/scope';
 import { searchWords } from '@shared/search';
 import { statusOf, type WordStatus } from '@shared/srs';
 import { notFoundCallbackUrl, resolveLookup } from '@shared/wordLookup';
@@ -56,7 +57,8 @@ export default function WordsScreen() {
     () => (params.cat === NO_EXAM || EXAMS.some((e) => e.id === params.cat) ? params.cat! : (EXAMS.find((e) => params.src && e.sources.some((x) => x.id === params.src && isQuizSource(x)))?.id ?? '')),
   );
   const [src, setSrc] = useState(params.src ?? '');
-  const [minLevel, setMinLevel] = useState(1);
+  /** 고른 단계들 — 비어 있으면 모든 단계 */
+  const [levels, setLevels] = useState<readonly number[]>([]);
   /** 시험을 바꾸면 문제 파일 선택은 푼다 (문제 파일은 시험 안에서 고른다) */
   const setCat = useCallback((v: string) => {
     setCatOnly(v);
@@ -90,12 +92,12 @@ export default function WordsScreen() {
           .map((x) => x.w);
       }
     }
-    if (minLevel > 1) base = base.filter((w) => w.level >= minLevel);
+    if (levels.length) base = base.filter((w) => inLevels(w.level, levels));
     if (pos) base = base.filter((w) => (pos === '구' ? w.pos.some((p) => p.endsWith('구')) : w.pos.includes(pos)));
     if (statusWrong) base = base.filter((w) => statusWrong[w.id]);
     else if (statusCards) base = base.filter((w) => statusOf(statusCards[w.id]) === status);
     return dq.trim() ? searchWords(base, dq) : base;
-  }, [dq, cat, file, minLevel, pos, status, sort, statusCards, statusWrong]);
+  }, [dq, cat, file, levels, pos, status, sort, statusCards, statusWrong]);
 
   const letterIndex = useMemo(() => {
     const m = new Map<string, number>();
@@ -154,7 +156,7 @@ export default function WordsScreen() {
     setCat('');
     setPos('');
     setStatus('');
-    setMinLevel(1);
+    setLevels([]);
     setQ(word);
     const result = resolveLookup(word, WORD_BY_SURFACE, WORDS);
     afterFrame(() => {
@@ -167,7 +169,7 @@ export default function WordsScreen() {
     }
   }, [params.lookup, params.t, params.xerr, setCat]);
 
-  const filtersOn = !!(cat || pos || status || minLevel > 1);
+  const filtersOn = !!(cat || pos || status || levels.length);
   const showScrubber = sort === 'alpha' && !dq.trim();
 
   const examCat = cat && cat !== NO_EXAM ? cat : '';
@@ -206,27 +208,13 @@ export default function WordsScreen() {
             ], setStatus)
           }
         />
-        <FilterChip
-          label={minLevel > 1 ? (minLevel === LEVELS.length ? `${minLevel}단계` : `${minLevel}단계 이상`) : '단계'}
-          active={minLevel > 1}
-          onPress={() =>
-            pick(
-              '단계',
-              LEVELS.map((l) => ({
-                value: String(l.level),
-                label: l.level === 1 ? '모든 단계' : l.level === LEVELS.length ? `${l.level}단계 (${l.name})` : `${l.level}단계 이상 (${l.name}~)`,
-              })),
-              (v) => setMinLevel(Number(v)),
-            )
-          }
-        />
         {filtersOn && (
           <Pressable
             onPress={() => {
               setCat('');
               setPos('');
               setStatus('');
-              setMinLevel(1);
+              setLevels([]);
             }}
             style={{ justifyContent: 'center', paddingHorizontal: 6 }}
           >
@@ -235,6 +223,22 @@ export default function WordsScreen() {
             </T>
           </Pressable>
         )}
+      </ScrollView>
+      {/* 단계는 여러 개 고를 수 있다 — 아무것도 안 고르면(전체) 모든 단계 */}
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6, paddingHorizontal: 16, alignItems: 'center' }}>
+        <T v="footnote" color="muted" style={{ fontWeight: '700', marginRight: 4 }}>
+          단계
+        </T>
+        <LevelChip label="전체" active={!levels.length} onPress={() => setLevels([])} />
+        {LEVELS.map((l) => (
+          <LevelChip
+            key={l.level}
+            label={String(l.level)}
+            accessibilityLabel={`${l.level}단계 ${l.name}`}
+            active={levels.includes(l.level)}
+            onPress={() => setLevels((v) => toggleLevel(v, l.level))}
+          />
+        ))}
       </ScrollView>
       <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 16 }}>
         <View style={{ flex: 1 }}>
@@ -252,7 +256,7 @@ export default function WordsScreen() {
         </T>
       </View>
     </View>
-  ), [cat, file, files, minLevel, setCat, pos, status, sort, filtersOn, list.length]);
+  ), [cat, file, files, levels, setCat, pos, status, sort, filtersOn, list.length]);
 
   return (
     <View style={{ flex: 1, backgroundColor: c.bg }}>
@@ -359,9 +363,30 @@ function FilterChip({ label, active, onPress }: { label: string; active: boolean
   );
 }
 
+/** 단계 켜고 끄기 — 여러 개를 함께 켤 수 있다 */
+function LevelChip({ label, active, onPress, accessibilityLabel }: { label: string; active: boolean; onPress: () => void; accessibilityLabel?: string }) {
+  const { c } = useTheme();
+  return (
+    <Pressable
+      onPress={() => {
+        void haptic.select();
+        onPress();
+      }}
+      accessibilityRole="button"
+      accessibilityLabel={accessibilityLabel ?? label}
+      accessibilityState={{ selected: active }}
+      hitSlop={{ top: 4, bottom: 4 }}
+      style={[styles.levelChip, { backgroundColor: active ? c.primarySoft : c.surface, borderColor: active ? c.primary : c.separator }]}
+    >
+      <Text style={{ fontSize: 14, fontWeight: active ? '700' : '600', color: active ? c.primaryText : c.text2, fontVariant: ['tabular-nums'] }}>{label}</Text>
+    </Pressable>
+  );
+}
+
 const styles = StyleSheet.create({
   row: { height: ROW_H, flexDirection: 'row', alignItems: 'center', gap: 12, paddingLeft: 18 },
   chip: { flexDirection: 'row', alignItems: 'center', gap: 6, borderRadius: 99, borderWidth: 1, paddingHorizontal: 13, paddingVertical: 7, maxWidth: 200 },
+  levelChip: { minWidth: 38, alignItems: 'center', borderRadius: 99, borderWidth: 1, paddingHorizontal: 11, paddingVertical: 6 },
   scrubber: { position: 'absolute', right: 2, top: '28%', width: 22, alignItems: 'center' },
   scrubLetter: { height: 17, fontSize: 11, fontWeight: '700', textAlign: 'center' },
   bubble: { position: 'absolute', alignSelf: 'center', top: '42%', width: 80, height: 80, borderRadius: 20, alignItems: 'center', justifyContent: 'center' },

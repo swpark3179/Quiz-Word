@@ -10,7 +10,7 @@ import { timeAgo as ago } from '../lib/text';
 import { useProgress } from '../store/progress';
 import { setWordNav } from './wordNav';
 
-const WRONG_SCOPE = scopeToParams({ ...DEFAULT_SCOPE, set: 'wrong', status: 'any', count: 0, order: 'random', minLevel: 1 });
+const WRONG_SCOPE = scopeToParams({ ...DEFAULT_SCOPE, set: 'wrong', status: 'any', count: 0, order: 'random', levels: [] });
 
 export function WrongPage() {
   const wrong = useProgress((s) => s.wrong);
