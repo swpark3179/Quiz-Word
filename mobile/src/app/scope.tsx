@@ -10,7 +10,7 @@ import { EXAMS, examName, quizSources, sourceName, WORDS } from '@/data/words';
 import { showActionSheet } from '@/lib/sheet';
 import { useProgress } from '@/store/progress';
 import { MODE_INFO, scopeOf, sessionHref, startFromSheet, useScopes, type StudyMode } from '@/store/session';
-import { SHEET_IS_SCREEN, useTheme } from '@/theme';
+import { SHEET_IS_SCREEN, sheetFooterPad, useTheme } from '@/theme';
 import { haptic } from '@/theme/haptics';
 
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
@@ -57,7 +57,7 @@ export default function ScopeSheet() {
 
   return (
     <View style={{ flex: 1, paddingTop: SHEET_IS_SCREEN ? insets.top : 0 }}>
-      <ScrollView contentContainerStyle={[styles.content, { paddingBottom: 110 + insets.bottom }]}>
+      <ScrollView contentContainerStyle={[styles.content, { paddingBottom: 110 + sheetFooterPad(insets.bottom) }]}>
         <View style={{ gap: 4 }}>
           <T v="title2">{MODE_INFO[mode].title}</T>
           <T v="subhead" color="text2">
@@ -115,7 +115,7 @@ export default function ScopeSheet() {
         </Row>
       </ScrollView>
 
-      <View style={[styles.footer, { paddingBottom: Math.max(16, insets.bottom), backgroundColor: c.bg, borderTopColor: c.separator }]}>
+      <View style={[styles.footer, { paddingBottom: sheetFooterPad(insets.bottom), backgroundColor: c.bg, borderTopColor: c.separator }]}>
         <T v="footnote" color="text2" style={{ textAlign: 'center' }}>
           조건에 맞는 단어 <T v="footnote" style={{ fontWeight: '700' }}>{matched.toLocaleString()}</T>개
           {willStudy !== matched ? ` 중 ${willStudy}개를 학습해요` : ''}

@@ -41,13 +41,20 @@ export function largeHeader(c: Colors, dark: boolean) {
  * 아래에서 올라오는 시트 (범위 고르기 · 학습장 합치기). iOS 는 formSheet.
  * 안드로이드의 formSheet 는 flex: 1 내용과 안쪽 스크롤이 제대로 놓이지 않아, 아래에서 올라오는 보통 화면으로 띄운다
  * (화면 쪽에서 상태 표시줄만큼 위를 띄운다 — SHEET_IS_SCREEN).
+ *
+ * iOS formSheet 의 내용 감싸개는 위·좌우에만 붙고 바닥은 비어 있어(react-native-screens 4.16) 높이가 내용을 따라간다.
+ * 그러면 화면 루트의 flex: 1 이 시트 높이를 채우지 못하고, 아래 고정 버튼(position: absolute, bottom: 0)이
+ * 시트 바닥이 아니라 스크롤 내용 끝에 놓여 시트 밖으로 잘린다 — 감싸개를 바닥에도 붙여(bottom: 0) 지금 시트 높이를 채운다.
  */
 export const SHEET_IS_SCREEN = Platform.OS === 'android';
 
 export function sheetOptions(c: Colors, detents: number[]) {
   if (SHEET_IS_SCREEN) return { presentation: 'modal', headerShown: false, contentStyle: { backgroundColor: c.bg } } as const;
-  return { presentation: 'formSheet', headerShown: false, sheetAllowedDetents: detents, sheetGrabberVisible: true, sheetCornerRadius: 28, contentStyle: { backgroundColor: c.bg } } as const;
+  return { presentation: 'formSheet', headerShown: false, sheetAllowedDetents: detents, sheetGrabberVisible: true, sheetCornerRadius: 28, contentStyle: { backgroundColor: c.bg, bottom: 0 } } as const;
 }
+
+/** 시트 아래 고정 버튼 줄의 바닥 여백 — 홈 인디케이터(insets.bottom) 위로 한 번 더 띄워 버튼이 시트 바닥·모서리에 붙지 않게 */
+export const sheetFooterPad = (bottomInset: number) => bottomInset + 20;
 
 /** 고정폭 글꼴 (코드 표시) — 안드로이드에는 Menlo 가 없다 */
 export const MONO_FONT = Platform.select({ ios: 'Menlo', default: 'monospace' });
