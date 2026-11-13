@@ -193,7 +193,7 @@ GitHub Actions → **Release** → Run workflow → 버전 증가 기준(major /
    - `ANDROID_KEYSTORE_PASSWORD` — 키스토어 비밀번호
    - `ANDROID_KEY_ALIAS` — 키 별칭 (위 명령대로면 `upload`)
    - `ANDROID_KEY_PASSWORD` — 키 비밀번호 (keytool 기본값인 PKCS12 키스토어면 키스토어 비밀번호와 같음)
-   - **Variables 탭 · Environment secrets · Dependabot secrets 에 넣으면 Release 워크플로에 전달되지 않습니다.** Release 가 "전달되지 않은 서명 시크릿: …" 으로 멈추면 거기 찍힌 이름이 Repository secrets 목록에 똑같은 이름으로 있는지 확인하세요
+   - **Variables 탭 · Environment secrets · Dependabot secrets 에 넣으면 Release 워크플로에 전달되지 않습니다.** Release 가 "전달되지 않은 서명 시크릿: …" 으로 멈추면 거기 찍힌 이름이 Repository secrets 목록에 똑같은 이름으로 있는지 확인하세요. 바로 다음 단계 "빠진 서명 시크릿 진단" 이 그 실행이 실제로 받은 시크릿 이름(값은 안 찍음)을 보여 주고, Variables 탭에 들어 있거나 비슷한 이름으로 등록된 경우를 짚어 줍니다
    - Release 는 Gradle 빌드 전에 키스토어 · 비밀번호 · 별칭이 서로 맞는지 먼저 확인하고, 틀리면 어느 시크릿이 문제인지 알려 주고 멈춥니다
 
 여기까지 하면 Release 워크플로로 APK 배포가 됩니다.
